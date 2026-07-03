@@ -9,7 +9,7 @@ Native EMI recipe-viewer plugins (28 modules) for machine mods that only ship JE
 
 ## Building
 
-This mod is **built locally only** — it has no cloud CI. It integrates with ~30 other mods and compiles against their APIs, and a few of those (`anvillib 1.4.0+build.188`, `l2serial`, `confluence_magic_lib`) are **not published on any public maven**, so an ephemeral CI runner can't resolve them. To build, place the required mod jars in `libs/` (git-ignored, not redistributed here) and run `./gradlew build`.
+`./gradlew build`. Every integration dependency resolves from Modrinth's maven. A few libraries emi compiles against (anvillib, l2core, l2serial, confluence_magic_lib) aren't published standalone — they ship JarJar-embedded inside their parent mods, so the `extractJarJarLibs` Gradle task pulls those parent mods from Modrinth and extracts the nested jars at build time. Nothing third-party is committed to this repo. Requires internet access on the first build.
 
 ## License
 

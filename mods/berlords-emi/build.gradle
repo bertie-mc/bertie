@@ -9,9 +9,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
-    // NOTE: cloud CI is intentionally not configured for this mod — several of its integration
-    // dependencies (anvillib 1.4.0+build.188, l2serial, confluence_magic_lib) are not published on
-    // any public maven, so it can only be built locally with the jars present in libs/. See README.
+    maven { url = "https://api.modrinth.com/maven" }
 }
 
 base {
@@ -45,44 +43,81 @@ neoForge {
     }
 }
 
+// A few integration libraries emi compiles against (anvillib 1.4.0, l2core, l2serial, confluence_magic_lib)
+// are NOT published standalone on any maven — they ship JarJar-embedded inside their parent mods. We pull the
+// parent mods from Modrinth and extract just those nested jars at build time. Nothing third-party is committed.
+configurations {
+    jarJarParents
+}
+
+def extractedLibsDir = layout.buildDirectory.dir("extracted-jarjar-libs").get().asFile
+
 dependencies {
-    // EMI: the recipe-viewer we write native plugins for (client-side, runtime-optional via @EmiEntrypoint scan).
-    compileOnly files('libs/emi-1.1.24+1.21.1+neoforge.jar')
-    // Slag 'n' Embers API for the Slag categories (runtime-optional; guarded by ModList.isLoaded("slag")).
-    compileOnly files('libs/Slag-n-Embers-1.21.1-1.1a.jar')
-    // Create API for the Create categories (runtime-optional; guarded by ModList.isLoaded("create")).
-    compileOnly files('libs/create-1.21.1-6.0.10.jar')
-    // Phase 1 batch (all runtime-optional, ModList-guarded). compileOnly = symbols only.
-    compileOnly files("libs/L_Ender's Cataclysm 1.21.1-3.31.jar")
-    compileOnly files('libs/irons_spellbooks-1.21.1-3.16.0.jar')
-    compileOnly files('libs/forbidden_arcanus-2.6.1.jar')
-    compileOnly files('libs/terra_curio-1.1.1.jar')
-    compileOnly files('libs/org.confluence.lib.confluence_magic_lib-0.0.1.jar') // Terra Curio recipe base
-    compileOnly files('libs/enderio-8.2.11-beta.jar')
-    compileOnly files('libs/com.enderio.endercore-8.2.11-beta.jar') // Ender IO recipe base (MachineRecipe/OutputStack)
-    compileOnly files('libs/malum-1.21.1-1.8.2.jar')
-    compileOnly files('libs/lodestone-1.21.1-1.8.2.jar') // Malum recipe base (LodestoneInWorldRecipe)
-    // Phase 2 batch A (food/processing stations)
-    compileOnly files('libs/extradelight-2.6.5.jar')
-    compileOnly files('libs/neoforge-dungeonsdelight-1.21.1-1.5.0.jar')
-    compileOnly files('libs/expandeddelight-0.1.4.jar')
-    compileOnly files('libs/avaritia_delight-1.6.3.jar')
-    compileOnly files('libs/farmerspizzeria-1.1.0-neoforge-1.21.1.jar')
-    compileOnly files('libs/FarmersDelight-1.21.1-1.3.2.jar') // Delight-addon base classes
-    compileOnly files('libs/youkaisfeasts-1.1.0.jar')
-    compileOnly files('libs/l2core-3.0.8+16.jar')    // Youkai's/Twilight/Cuisine/L2C recipe base (BaseRecipe)
-    compileOnly files('libs/l2serial-3.0.9+5.jar')   // l2core serialization base
-    // Remaining genuinely-uncovered mods (own RecipeType)
-    compileOnly files('libs/Cognition-v2.4.12-1.21.1.jar')
-    compileOnly files('libs/stellaris-1.21-neoforge-1.4.23.jar')
-    compileOnly files('libs/twilightdelight-3.2.2.jar')
-    compileOnly files('libs/slavic_delight-0.3.2.jar')
-    compileOnly files('libs/cuisinedelight-1.2.8.jar')
-    compileOnly files('libs/berries_and_cherries-1.1-neoforge-1.21.1.jar')
-    compileOnly files('libs/betterarcheology-neoforge-1.21.1-1.3.4.jar')
-    compileOnly files('libs/l2complements-3.1.3.jar')
-    compileOnly files('libs/anvilcraft-neoforge-1.21.1-1.5.3.jar')
-    compileOnly files('libs/anvillib-neoforge-1.21.1-1.4.0+build.188.jar') // AnvilCraft recipe base
+    // Integration APIs, resolved from Modrinth (runtime-optional, ModList-guarded; compileOnly = symbols only).
+    compileOnly "maven.modrinth:emi:1.1.24+1.21.1+neoforge"
+    compileOnly "maven.modrinth:slag-n-embers:1.1a"
+    compileOnly "maven.modrinth:create:6.0.10+mc1.21.1"
+    compileOnly "maven.modrinth:l_enders-cataclysm:3.31"
+    compileOnly "maven.modrinth:irons-spells-n-spellbooks:1.21.1-3.16.0"
+    compileOnly "maven.modrinth:forbidden-arcanus:2.6.1"
+    compileOnly "maven.modrinth:terra-curio:1.1.1"
+    compileOnly "maven.modrinth:enderio:v8.2.11-beta"
+    compileOnly "maven.modrinth:malum:1.8.2"
+    compileOnly "maven.modrinth:lodestonelib:1.8.2"        // Malum recipe base (LodestoneInWorldRecipe)
+    compileOnly "maven.modrinth:l2library:3.0.8"
+    compileOnly "maven.modrinth:extradelight:2.6.5"
+    compileOnly "maven.modrinth:dungeons_delight:1.5.0"
+    compileOnly "maven.modrinth:expanded-delight:0.1.4-neoforge"
+    compileOnly "maven.modrinth:avaritias-delight:1.6.3"
+    compileOnly "maven.modrinth:farmers-pizzeria:1.1.0"
+    compileOnly "maven.modrinth:farmers-delight:1.21.1-1.3.2"  // Delight-addon base classes
+    compileOnly "maven.modrinth:gensokyo-delight-youkais-feasts:1.1.0"
+    compileOnly "maven.modrinth:cognition:2.4.12"
+    compileOnly "maven.modrinth:stellaris:1.4.23"
+    compileOnly "maven.modrinth:twilight-delight:3.2.2"
+    compileOnly "maven.modrinth:slavic-delight:0.3.2"
+    compileOnly "maven.modrinth:cuisine-delight:1.2.8"
+    compileOnly "maven.modrinth:berries-and-cherries:1.1"
+    compileOnly "maven.modrinth:better-archeology:1.21.1-1.3.4"
+    compileOnly "maven.modrinth:l2-complements:3.1.3"
+    compileOnly "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"   // dev.dubhe.anvilcraft.recipe.*
+
+    // Parent mods we only need for their JarJar-embedded libs (extracted by extractJarJarLibs, below):
+    jarJarParents "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"       // -> anvillib 1.4.0 (dev.anvilcraft.lib.recipe.*)
+    jarJarParents "maven.modrinth:gensokyo-delight-youkais-feasts:1.1.0"     // -> l2core (BaseRecipe) + l2serial
+    jarJarParents "maven.modrinth:terra-curio:1.1.1"                         // -> confluence_magic_lib (AbstractAmountRecipe)
+
+    // The nested libs extracted above (produced before compileJava):
+    compileOnly fileTree(dir: extractedLibsDir, include: '*.jar').builtBy('extractJarJarLibs')
+}
+
+tasks.register('extractJarJarLibs') {
+    description = 'Extract JarJar-embedded libraries from parent mods onto the compile classpath.'
+    def parents = configurations.jarJarParents
+    def outDir = extractedLibsDir
+    inputs.files(parents)
+    outputs.dir(outDir)
+    doLast {
+        outDir.deleteDir()
+        outDir.mkdirs()
+        def wanted = ['anvillib-neoforge-1.21.1-1.4.0', 'l2core-3.0.8', 'l2serial-3.0.9', 'org.confluence.lib.confluence_magic_lib']
+        parents.each { parent ->
+            def zf = new java.util.zip.ZipFile(parent)
+            try {
+                zf.entries().each { e ->
+                    if (e.name.startsWith('META-INF/jarjar/') && e.name.endsWith('.jar') && wanted.any { e.name.contains(it) }) {
+                        def target = new File(outDir, new File(e.name).name)
+                        if (!target.exists()) {
+                            target.withOutputStream { os -> zf.getInputStream(e).withStream { ins -> os << ins } }
+                            logger.lifecycle("extractJarJarLibs: extracted ${target.name} from ${parent.name}")
+                        }
+                    }
+                }
+            } finally {
+                zf.close()
+            }
+        }
+    }
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
