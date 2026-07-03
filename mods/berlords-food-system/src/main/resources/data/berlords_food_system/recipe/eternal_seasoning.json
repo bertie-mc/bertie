@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GA ",
+    "ANG",
+    "AHA"
+  ],
+  "key": {
+    "G": { "item": "minecraft:enchanted_golden_apple" },
+    "A": { "item": "minecraft:amethyst_shard" },
+    "N": { "item": "minecraft:nether_star" },
+    "H": { "item": "minecraft:heart_of_the_sea" }
+  },
+  "result": {
+    "id": "berlords_food_system:eternal_seasoning",
+    "count": 1
+  }
+}

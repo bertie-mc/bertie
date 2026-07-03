@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cake",
+    { "id": "createaddition:honey_cake", "required": false },
+    { "id": "createaddition:chocolate_cake", "required": false }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "berlords_food_system:shaped_no_remainder",
+  "category": "misc",
+  "pattern": [
+    "NSN",
+    "NBN",
+    "NSN"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_ingot" },
+    "S": { "item": "minecraft:shulker_shell" },
+    "B": { "item": "minecraft:dragon_breath" }
+  },
+  "result": {
+    "id": "berlords_food_system:stomach_extension",
+    "count": 1
+  }
+}

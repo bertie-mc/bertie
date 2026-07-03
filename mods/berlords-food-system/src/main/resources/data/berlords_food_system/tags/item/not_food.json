@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "supplementaries:soap", "required": false },
+    { "id": "#c:drinks/ominous", "required": false },
+    { "id": "supplementaries:lumisene_bottle", "required": false }
+  ]
+}

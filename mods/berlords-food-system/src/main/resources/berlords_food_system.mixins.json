@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.berlord.foodsystem.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.berlord.foodsystem.mixin.BfsMixinPlugin",
+  "mixins": [
+    "ItemStackDurabilityMixin",
+    "LivingEntityClimbMixin",
+    "FeedingUpgradeWrapperMixin",
+    "UpgradeWrapperBaseAccessor"
+  ],
+  "client": [
+    "HungerBarHiderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
