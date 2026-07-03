@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.berlord.bushtweaks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BerriesCherriesBushDamageMixin",
+    "BerriesCherriesSpeedFactorMixin",
+    "SweetBerryBushBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
