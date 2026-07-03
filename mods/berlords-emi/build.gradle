@@ -1,0 +1,103 @@
+plugins {
+    id 'java-library'
+    id 'idea'
+    id 'net.neoforged.moddev' version '2.0.134'
+}
+
+version = mod_version
+group = mod_group_id
+
+repositories {
+    mavenLocal()
+}
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    runs {
+        client {
+            client()
+        }
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    // EMI: the recipe-viewer we write native plugins for (client-side, runtime-optional via @EmiEntrypoint scan).
+    compileOnly files('libs/emi-1.1.24+1.21.1+neoforge.jar')
+    // Slag 'n' Embers API for the Slag categories (runtime-optional; guarded by ModList.isLoaded("slag")).
+    compileOnly files('libs/Slag-n-Embers-1.21.1-1.1a.jar')
+    // Create API for the Create categories (runtime-optional; guarded by ModList.isLoaded("create")).
+    compileOnly files('libs/create-1.21.1-6.0.10.jar')
+    // Phase 1 batch (all runtime-optional, ModList-guarded). compileOnly = symbols only.
+    compileOnly files("libs/L_Ender's Cataclysm 1.21.1-3.31.jar")
+    compileOnly files('libs/irons_spellbooks-1.21.1-3.16.0.jar')
+    compileOnly files('libs/forbidden_arcanus-2.6.1.jar')
+    compileOnly files('libs/terra_curio-1.1.1.jar')
+    compileOnly files('libs/org.confluence.lib.confluence_magic_lib-0.0.1.jar') // Terra Curio recipe base
+    compileOnly files('libs/enderio-8.2.11-beta.jar')
+    compileOnly files('libs/com.enderio.endercore-8.2.11-beta.jar') // Ender IO recipe base (MachineRecipe/OutputStack)
+    compileOnly files('libs/malum-1.21.1-1.8.2.jar')
+    compileOnly files('libs/lodestone-1.21.1-1.8.2.jar') // Malum recipe base (LodestoneInWorldRecipe)
+    // Phase 2 batch A (food/processing stations)
+    compileOnly files('libs/extradelight-2.6.5.jar')
+    compileOnly files('libs/neoforge-dungeonsdelight-1.21.1-1.5.0.jar')
+    compileOnly files('libs/expandeddelight-0.1.4.jar')
+    compileOnly files('libs/avaritia_delight-1.6.3.jar')
+    compileOnly files('libs/farmerspizzeria-1.1.0-neoforge-1.21.1.jar')
+    compileOnly files('libs/FarmersDelight-1.21.1-1.3.2.jar') // Delight-addon base classes
+    compileOnly files('libs/youkaisfeasts-1.1.0.jar')
+    compileOnly files('libs/l2core-3.0.8+16.jar')    // Youkai's/Twilight/Cuisine/L2C recipe base (BaseRecipe)
+    compileOnly files('libs/l2serial-3.0.9+5.jar')   // l2core serialization base
+    // Remaining genuinely-uncovered mods (own RecipeType)
+    compileOnly files('libs/Cognition-v2.4.12-1.21.1.jar')
+    compileOnly files('libs/stellaris-1.21-neoforge-1.4.23.jar')
+    compileOnly files('libs/twilightdelight-3.2.2.jar')
+    compileOnly files('libs/slavic_delight-0.3.2.jar')
+    compileOnly files('libs/cuisinedelight-1.2.8.jar')
+    compileOnly files('libs/berries_and_cherries-1.1-neoforge-1.21.1.jar')
+    compileOnly files('libs/betterarcheology-neoforge-1.21.1-1.3.4.jar')
+    compileOnly files('libs/l2complements-3.1.3.jar')
+    compileOnly files('libs/anvilcraft-neoforge-1.21.1-1.5.3.jar')
+    compileOnly files('libs/anvillib-neoforge-1.21.1-1.4.0+build.188.jar') // AnvilCraft recipe base
+}
+
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [minecraft_version      : minecraft_version,
+                             minecraft_version_range: minecraft_version_range,
+                             neo_version            : neo_version,
+                             neo_version_range      : neo_version_range,
+                             loader_version_range   : loader_version_range,
+                             mod_id                 : mod_id,
+                             mod_name               : mod_name,
+                             mod_license            : mod_license,
+                             mod_version            : mod_version,
+                             mod_authors            : mod_authors,
+                             mod_description        : mod_description]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
