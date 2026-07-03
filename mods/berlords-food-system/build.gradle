@@ -9,6 +9,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = "https://api.modrinth.com/maven" }
 }
 
 base {
@@ -43,8 +44,9 @@ neoForge {
 }
 
 dependencies {
-    compileOnly files('libs/sophisticatedcore-1.21.1-1.4.49.1966.jar')
-    compileOnly files('libs/sophisticatedbackpacks-1.21.1-3.25.55.1843.jar')
+    // Sophisticated Core is used at compile time (feeding-upgrade mixin) — resolved from Modrinth's maven so cloud CI can build without the local jar.
+    compileOnly "maven.modrinth:sophisticated-core:1.21.1-1.4.49.1966"
+    // Sophisticated Backpacks is referenced only via mixin string targets (no compile-time import), so it needs no compile dependency here.
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
