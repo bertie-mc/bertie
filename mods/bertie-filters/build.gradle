@@ -9,6 +9,9 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = "https://api.modrinth.com/maven" }
+    maven { url = "https://maven.architectury.dev/" }
+    maven { url = "https://maven.ftb.dev/releases" }
 }
 
 base {
@@ -46,12 +49,12 @@ neoForge {
 }
 
 dependencies {
-    // FTB Filter System - the CustomFilterEvent API we hook into (required at runtime)
-    compileOnly files('libs/ftb-filter-system-neoforge-21.1.4.jar')
-    // Architectury - provides dev.architectury.event.Event / EventResult used by the FFS event (required at runtime)
-    compileOnly files('libs/architectury-13.0.8-neoforge.jar')
-    // Slag-n-Embers API - the modular item components we read (optional; guarded by ModList.isLoaded)
-    compileOnly files('libs/Slag-n-Embers-1.21.1-1.1a.jar')
+    // FTB Filter System - the CustomFilterEvent API we hook into (required at runtime). From the FTB maven.
+    compileOnly "dev.ftb.mods:ftb-filter-system-neoforge:21.1.4"
+    // Architectury - provides dev.architectury.event.Event / EventResult used by the FFS event. From the Architectury maven.
+    compileOnly "dev.architectury:architectury-neoforge:13.0.8"
+    // Slag-n-Embers API - the modular item components we read (optional; guarded by ModList.isLoaded). From Modrinth.
+    compileOnly "maven.modrinth:slag-n-embers:1.1a"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
