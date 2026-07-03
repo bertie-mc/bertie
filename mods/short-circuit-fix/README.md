@@ -5,7 +5,15 @@ Registers *Short Circuit*'s circuit blocks on the translucent render layer - a s
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
 - **Mod ID:** `shortcircuitfix`
-- **Dependency:** Requires the **Short Circuit** mod (NeoForge).
+- **Requires:** **Short Circuit** (NeoForge)
+
+## Install
+
+Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus the Short Circuit mod above.
+
+## Building
+
+`./gradlew build` — the built JAR is written to `build/libs/`. This is a runtime patch, so it must be run alongside Short Circuit to have any effect.
 
 ## License
 
