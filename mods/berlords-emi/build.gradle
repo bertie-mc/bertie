@@ -73,12 +73,12 @@ dependencies {
     compileOnly "maven.modrinth:farmers-delight:1.21.1-1.3.2"  // Delight-addon base classes
     compileOnly "maven.modrinth:gensokyo-delight-youkais-feasts:1.1.0"
     compileOnly "maven.modrinth:cognition:2.4.12"
-    compileOnly "maven.modrinth:stellaris:1.4.23"
+    compileOnly "maven.modrinth:stellaris:3OXCvg6r"           // pin NeoForge version by id (1.4.23; a Fabric build shares the number)
     compileOnly "maven.modrinth:twilight-delight:3.2.2"
     compileOnly "maven.modrinth:slavic-delight:0.3.2"
     compileOnly "maven.modrinth:cuisine-delight:1.2.8"
     compileOnly "maven.modrinth:berries-and-cherries:1.1"
-    compileOnly "maven.modrinth:better-archeology:1.21.1-1.3.4"
+    compileOnly "maven.modrinth:better-archeology:rp4lPDKI"   // pin NeoForge version by id (1.21.1-1.3.4)
     compileOnly "maven.modrinth:l2-complements:3.1.3"
     compileOnly "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"   // dev.dubhe.anvilcraft.recipe.*
 
