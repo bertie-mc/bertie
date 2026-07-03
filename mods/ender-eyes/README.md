@@ -6,7 +6,15 @@ Adds the **Ender Eyes** helmet enchantment: while worn, looking directly at an E
 - **Loader:** NeoForge
 - **Mod ID:** `endereyes`
 
-Clean-room NeoForge reimplementation of the behaviour of the Fabric mod *Ender Eyes*; no upstream code was reused.
+## Install
+Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1.
+
+## Credits / Integration
+
+Clean-room NeoForge reimplementation of the Fabric mod *Ender Eyes*' behaviour; no upstream code was reused.
+
+## Building
+`./gradlew build` — the built JAR is written to `build/libs/`.
 
 ## License
 
