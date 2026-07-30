@@ -1,5 +1,5 @@
-# Rustic Engineer Fix
-Runtime patch that fixes *Rustic Engineer*'s airship and dragonfly flight — choppy turning and the pitch-dive bug.
+﻿# Rustic Engineer Fix
+Runtime patch that fixes *Rustic Engineer*'s airship and dragonfly flight â€” choppy turning and the pitch-dive bug.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
@@ -10,8 +10,8 @@ Runtime patch that fixes *Rustic Engineer*'s airship and dragonfly flight — ch
 Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus Rustic Engineer.
 
 ## Building
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`./gradlew build` â€” the built JAR is written to `build/libs/`.
 
 ## License
 
-Released under the MIT License — see [LICENSE](LICENSE).
+Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
