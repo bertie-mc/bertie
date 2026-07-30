@@ -22,7 +22,9 @@ jobs:
   boot:
     name: Dedicated server reaches Done
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # ~500 mods take a long time to load on a hosted runner. Measured: still in
+    # resource loading at 25 minutes. Give it real headroom.
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -78,12 +80,19 @@ jobs:
           ( ./run.sh nogui 2>&1 || true ) | tee boot.log &
           BOOT_PID=$!
 
-          deadline=$(( $(date +%s) + 1500 ))
+          deadline=$(( $(date +%s) + 4500 ))
           status="timeout"
+          last_report=0
           while [ "$(date +%s)" -lt "$deadline" ]; do
             if grep -qE 'Done \([0-9.]+s\)' boot.log 2>/dev/null; then status="ok"; break; fi
             if grep -qE 'Failed to start the minecraft server|A potential solution has been determined|Exception in thread "main"|Negative index in crash report handler|The server has crashed' boot.log 2>/dev/null; then status="crash"; break; fi
             if ! kill -0 "$BOOT_PID" 2>/dev/null; then status="exited"; break; fi
+            # progress heartbeat so a timeout tells us how far it actually got
+            now=$(date +%s)
+            if [ $(( now - last_report )) -ge 120 ]; then
+              last_report=$now
+              echo "--- $(( (now - (deadline - 4500)) / 60 ))m: $(tail -1 boot.log | cut -c1-160)"
+            fi
             sleep 10
           done
 
