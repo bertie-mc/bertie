@@ -232,6 +232,11 @@ hash = "82947a494445736ebc00aef7b476f6bb30387eb5d2df9c31c30ec145a4c8b416"
 metafile = true
 
 [[files]]
+file = "mods/berlords-food-system.pw.toml"
+hash = "b9d523baa5817b35e0960f7da4d939e8554cd417412dba3c81fb989a29833a27"
+metafile = true
+
+[[files]]
 file = "mods/berries-and-cherries.pw.toml"
 hash = "f42b610aefffef768aa8df56f7003216d5f2e0808bfd771ed057aca833ee1f4d"
 metafile = true
@@ -249,6 +254,11 @@ metafile = true
 [[files]]
 file = "mods/bertie-s1.pw.toml"
 hash = "69f977b9d0a994fca6dc3db2ebbab47d459580ae430af9701d6f835e151fed4c"
+metafile = true
+
+[[files]]
+file = "mods/bertie-tiers.pw.toml"
+hash = "19a1d0a3d789044bd1dfbfe6222bc32c10b33758741389e0a984b9fc1867c6e4"
 metafile = true
 
 [[files]]
@@ -354,6 +364,11 @@ metafile = true
 [[files]]
 file = "mods/burnt-basic.pw.toml"
 hash = "44302c0b9c5e79066d77346140e933c9bda958326ffdf679df98987622b2d4e4"
+metafile = true
+
+[[files]]
+file = "mods/bush-tweaks.pw.toml"
+hash = "467674525cbe93024538911ee707f257b3d61d60b2c1c9f92ace0cfd16d7ea05"
 metafile = true
 
 [[files]]
@@ -782,11 +797,6 @@ hash = "b53c40130b7c2f91237cf62480877414296fbea3525f2c824351c0c07f136ddb"
 metafile = true
 
 [[files]]
-file = "mods/emixx.pw.toml"
-hash = "4a36c2ae2b91369b7c15b42c5090c36def29400a2917fdaefefdadbcfa31f9f2"
-metafile = true
-
-[[files]]
 file = "mods/enchanting-infuser.pw.toml"
 hash = "d59b35ab8c8501db71b5c394fbfa9a76d9652171226018af255c886e64e2747f"
 metafile = true
@@ -794,6 +804,11 @@ metafile = true
 [[files]]
 file = "mods/end-remastered-additions.pw.toml"
 hash = "979f5d8d91d92ea9e5d21f4ccc1643734f30a5b7ed44fa2e02b4ca8eb3778783"
+metafile = true
+
+[[files]]
+file = "mods/ender-eyes.pw.toml"
+hash = "4a018a2cfc72f5f9949244546ca9fef7a61b98b730f0f335059e2c0d7892be93"
 metafile = true
 
 [[files]]
@@ -877,8 +892,18 @@ hash = "2b7322212c48fbc1a635096a51849dbbcbcb532da8feea9678b26d77e9150e46"
 metafile = true
 
 [[files]]
+file = "mods/explode-to-mine.pw.toml"
+hash = "66d334a5c80d3a6abace04351a50a0325d62383dfe0825f24960e4bbc1911b1c"
+metafile = true
+
+[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
+metafile = true
+
+[[files]]
+file = "mods/explosive-enhancement.pw.toml"
+hash = "ac3813973ab7bfd1b39e60d785391549d11e0052aef0fa4a914b0c3bdd7a159b"
 metafile = true
 
 [[files]]
@@ -1028,7 +1053,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-xmod-compat.pw.toml"
-hash = "ae29ec4a1d0d1678acbbf29567e05c791d9e5351c84ff0d3286554dcf4dc09ef"
+hash = "f0f01923e04154268075c38686f1f322716f91ab9bd1b59a38ae1aa8a13afa0b"
 metafile = true
 
 [[files]]
@@ -1977,6 +2002,11 @@ hash = "ea53e1f266236ded756baa6ae49292583fa5f21c5c3134dfef821b11a7f169fb"
 metafile = true
 
 [[files]]
+file = "mods/rustic-engineer-fix.pw.toml"
+hash = "ef089dc2bae78add0ed69fa7e54e42326f5e9e07a0b536acaf2ff63520434a86"
+metafile = true
+
+[[files]]
 file = "mods/rustic-engineer.pw.toml"
 hash = "524b2e13ab32a4a808db00559e308ca0f73409a1359bd0d2c7f6280c2fa22a43"
 metafile = true
@@ -2004,6 +2034,11 @@ metafile = true
 [[files]]
 file = "mods/sg-economy-api.pw.toml"
 hash = "30e95becb106d599a0f35b2bc19f5265cf74012b937c7bf9a9c6bbf11f891839"
+metafile = true
+
+[[files]]
+file = "mods/short-circuit-fix.pw.toml"
+hash = "9ba9e77864f2045dabf0f6220d10f520045173df1d50b71ffc7d6ed45c191e69"
 metafile = true
 
 [[files]]
@@ -2364,6 +2399,11 @@ metafile = true
 [[files]]
 file = "mods/wither-spawn-animation.pw.toml"
 hash = "530746f6f7dd24104cc0cfd0cf38e0b2bf1b8f816c8b9bdbdc01b74addcbb16e"
+metafile = true
+
+[[files]]
+file = "mods/withered-hearts.pw.toml"
+hash = "f36df1ab6c753d75319edf33291b77a2f908b99d5762a29f486862728e909871"
 metafile = true
 
 [[files]]

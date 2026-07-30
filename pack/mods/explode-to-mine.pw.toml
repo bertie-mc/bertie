@@ -1,0 +1,17 @@
+# STATUS: raw. explode-to-mine is shipped but unfinished - the ore/explosion balance
+# still needs work. See README "Known-raw content". Do not treat its behaviour as final.
+name = "explode-to-mine"
+filename = "explodetomine-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/explode-to-mine/releases/download/v1.0.0/explodetomine-1.0.0.jar"
+hash-format = "sha256"
+hash = "b1f95db36f03a5f54ec3d6207b1ce57845af651ea57399876e739f65a580a948"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/explode-to-mine"
+tag = "v1.0.0"
