@@ -63,16 +63,14 @@ dependencies {
     jarJarParents "maven.modrinth:create:6.0.10+mc1.21.1"     // -> ponder-neoforge-1.0.82+mc1.21.1
     compileOnly fileTree(dir: extractedLibsDir, include: '*.jar').builtBy('extractJarJarLibs')
 
-    // Compile against the exact Forbidden & Arcanus and Valhelsia Core jars
-    // already pinned by the sibling Forge Ink addon.
-    compileOnly files(
-            '../forge-ink/libs/forbidden_arcanus-2.6.1.jar',
-            '../forge-ink/libs/valhelsia_core-neoforge-1.21.1-1.1.4.jar'
-    )
-    runtimeOnly files(
-            '../forge-ink/libs/forbidden_arcanus-2.6.1.jar',
-            '../forge-ink/libs/valhelsia_core-neoforge-1.21.1-1.1.4.jar'
-    )
+    // Forbidden & Arcanus and its Valhelsia Core dependency, resolved from the Modrinth
+    // maven. These used to be read out of ../forge-ink/libs/, which made the build depend
+    // on a sibling checkout and on gitignored jars - it could not build anywhere but this
+    // machine. Same pins, reproducible source.
+    compileOnly "maven.modrinth:forbidden-arcanus:2.6.1"
+    compileOnly "maven.modrinth:valhelsia-core:1.1.4"
+    runtimeOnly "maven.modrinth:forbidden-arcanus:2.6.1"
+    runtimeOnly "maven.modrinth:valhelsia-core:1.1.4"
 
     testImplementation platform('org.junit:junit-bom:5.11.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
