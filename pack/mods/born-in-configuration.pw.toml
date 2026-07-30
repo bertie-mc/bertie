@@ -1,6 +1,6 @@
 name = "Born In Configuration"
 filename = "borninconfiguration-3.2.2.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/8rGW0cNk/versions/Y3oSuLYI/borninconfiguration-3.2.2.jar"

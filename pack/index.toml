@@ -328,7 +328,7 @@ metafile = true
 
 [[files]]
 file = "mods/born-in-configuration.pw.toml"
-hash = "3342ec5c15b4da8b0748212322ab0890c4fbaa1456f085a79204d1ffcc0d9d32"
+hash = "a6a40a84c512c8032726c7ca357461deba24ec95bade383c0d38b7ce1b64a906"
 metafile = true
 
 [[files]]
@@ -863,7 +863,7 @@ metafile = true
 
 [[files]]
 file = "mods/exclusions-lib.pw.toml"
-hash = "b755db273ddfbdafdbab2a2990188aa0e2ea88c842bd27aca5c61d42d3adfef9"
+hash = "71651e89e2a5c63ecb5e64ae79cc20b8cd37b03ce9210997443b7d64c98cdd52"
 metafile = true
 
 [[files]]
@@ -2028,7 +2028,7 @@ metafile = true
 
 [[files]]
 file = "mods/simply-tooltips.pw.toml"
-hash = "320d755339086e8fb35709328ad7b094ecbf7c500d61c08c535ec7d277fe1053"
+hash = "a57c5f9887fca29fa2c1e6989e8933b8303f61ae21ab95454f769c1926187d41"
 metafile = true
 
 [[files]]
@@ -2378,7 +2378,7 @@ metafile = true
 
 [[files]]
 file = "mods/worldedit.pw.toml"
-hash = "08d4775f8546564ad812b09062633ffc48f44b76328efe3832c021651af86b14"
+hash = "de999f6cc4c2f344e324b4f331fa9767844c31463c6e8066fcd67b613338ab8c"
 metafile = true
 
 [[files]]
