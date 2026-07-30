@@ -1,4 +1,4 @@
-# Ender Eyes
+﻿# Ender Eyes
 
 Adds the **Ender Eyes** helmet enchantment: while worn, looking directly at an Enderman will not anger it.
 
@@ -14,8 +14,8 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 Clean-room NeoForge reimplementation of the Fabric mod *Ender Eyes*' behaviour; no upstream code was reused.
 
 ## Building
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`./gradlew build` â€” the built JAR is written to `build/libs/`.
 
 ## License
 
-Released under the MIT License — see [LICENSE](LICENSE).
+Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
