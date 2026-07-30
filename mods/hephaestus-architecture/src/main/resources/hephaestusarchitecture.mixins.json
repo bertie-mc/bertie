@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.berlord.hephaestusarchitecture.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "HephaestusForgeBlockEntityAccessor",
+    "HephaestusForgeBlockMixin",
+    "RitualCodecMixin",
+    "UpdateForgeIngredientsEffectMixin",
+    "UpgradeTierResultMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
