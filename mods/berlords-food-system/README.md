@@ -1,4 +1,4 @@
-# Berlord's Food System
+﻿# Berlord's Food System
 
 A Valheim-style food system: 1-5 stomach slots, per-food buffs and abilities, a Stomach Extension potion, and native replace-oldest behaviour.
 
@@ -18,8 +18,8 @@ Optional integration with Sophisticated Backpacks (slot-aware feeding upgrades).
 
 ## Building
 
-`./gradlew build` — the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
+`./gradlew build` â€” the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
 
 ## License
 
-Released under the MIT License — see [LICENSE](LICENSE).
+Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

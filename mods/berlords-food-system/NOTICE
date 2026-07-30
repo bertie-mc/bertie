@@ -1,0 +1,25 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code and assets in this
+repository. This repository was previously released under the MIT License;
+it is now dedicated to the public domain by its author.
+
+It does not, and cannot, cover third-party material that this project merely
+depends on or interoperates with — the Minecraft client, NeoForge, and any mod
+whose blocks, items or APIs are referenced here. Those remain under their own
+licences.
+
+THIRD-PARTY ASSETS
+
+  assets/berlords_food_system/textures/screens/empty_slot.png
+
+is by **robinfrt**, from *Spice of Life: Valheim Reforged*, and is included
+here with the author's permission. It is NOT part of the public domain
+dedication above and remains under its original terms. Anyone reusing this
+repository should obtain their own permission for that file or replace it.
+
+The stomach-slot design is likewise inspired by *Spice of Life: Valheim
+Reforged*. All code in this repository is original.
+
+Compile-time dependencies are resolved from public mavens at build time.
+No third-party jar is committed.
