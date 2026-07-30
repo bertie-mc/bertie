@@ -51,6 +51,9 @@ neoForge {
 dependencies {
     // FTB Filter System - the CustomFilterEvent API we hook into (required at runtime). From the FTB maven.
     compileOnly "dev.ftb.mods:ftb-filter-system-neoforge:21.1.4"
+    // FTB Quests + Library - the CustomFilterDisplayItemsEvent API (valid-items display fix).
+    compileOnly "dev.ftb.mods:ftb-quests-neoforge:2101.1.26"
+    compileOnly "dev.ftb.mods:ftb-library-neoforge:2101.1.32"
     // Architectury - provides dev.architectury.event.Event / EventResult used by the FFS event. From the Architectury maven.
     compileOnly "dev.architectury:architectury-neoforge:13.0.8"
     // Slag-n-Embers API - the modular item components we read (optional; guarded by ModList.isLoaded). From Modrinth.

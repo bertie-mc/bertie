@@ -32,5 +32,8 @@ public class BertieFilters {
         } else {
             LOGGER.info("Slag-n-Embers not loaded - 'bertie:wooden' custom filter not registered.");
         }
+        // (The FTB Quests valid-items display fix was removed 2026-07-22 batch 2: FTB XMod Compat's
+        // FFS adapter already enumerates a smart filter's items into the valid-items screen — the
+        // custom contribution only produced duplicates.)
     }
 }
