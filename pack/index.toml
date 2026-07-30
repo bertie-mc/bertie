@@ -54,7 +54,7 @@ hash = "bbf9948f0ca93591243db6e33d8eb043ad95defb7053929dcf5e951b4e5f3e12"
 
 [[files]]
 file = "config/quark-common.toml"
-hash = "5ce1d2b6a855df49f9d5cc6c176daaeaf3133004981d6b4312ac526cc78493c5"
+hash = "6a8d7657ab5ad7954e3b991ab6597af72cb29eb72e6da2ebd3471803b619085e"
 
 [[files]]
 file = "mods/access-denied-api.pw.toml"
@@ -1248,7 +1248,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "a5dbb701e3c7e377cfbd6a595a0e743eee8471f07962712ac89ae34874f6b65d"
+hash = "f67aa60c765593a8c70f78296a460349c6aef5f4a16d173eae02e8803b545ad4"
 metafile = true
 
 [[files]]
@@ -2058,7 +2058,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "c04ad2e883943640d5bc8e519c0b90e6cdd11e5b5a6d095b5838c477021771a0"
+hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
 metafile = true
 
 [[files]]

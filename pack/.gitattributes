@@ -1,0 +1,13 @@
+# packwiz stores a sha256 of every indexed file. If git rewrites line endings between
+# commit and checkout, those hashes stop matching and the pack fails to validate — and,
+# worse, an installer sees every text file as changed. Pin the whole tree to LF so the
+# bytes are identical on every platform.
+* text=auto eol=lf
+
+# Anything genuinely binary must not be touched at all.
+*.png binary
+*.jar binary
+*.zip binary
+*.nbt binary
+*.ogg binary
+*.mrpack binary
