@@ -1,0 +1,31 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code in this repository.
+
+It does not, and cannot, cover third-party material that this project depends
+on or interoperates with — the Minecraft client, NeoForge, and any mod whose
+blocks, items or APIs are referenced here. Those remain under their own terms.
+
+THIRD-PARTY ASSET — Forbidden & Arcanus GUI texture
+
+  src/main/resources/resourcepacks/forgeink_overrides/assets/
+      forbidden_arcanus/textures/gui/container/hephaestus_forge.png
+
+This file is a **modified version of the Hephaestus Forge container texture
+from Forbidden & Arcanus**, by **stal111** (https://github.com/stal111/
+Forbidden-Arcanus). The edit re-labels the forge's experience gauge to read as
+Iron's Spells 'n Spellbooks ink, which is what this mod changes the forge to
+consume.
+
+It is a derivative of stal111's artwork and is **NOT** part of the public
+domain dedication above. Forbidden & Arcanus publishes no licence file, so its
+assets are under the author's reserved rights by default. This file is included
+here for interoperability and is credited to its original author.
+
+Anyone redistributing or reusing this repository should be aware that this one
+file carries the upstream author's rights, not ours, and should seek stal111's
+permission for any use beyond running the mod alongside Forbidden & Arcanus.
+Removing that single PNG leaves the rest of this repository fully public domain.
+
+The mod is otherwise inert without Forbidden & Arcanus installed: it ships no
+Forbidden & Arcanus code, blocks, items or other assets.
