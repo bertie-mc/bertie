@@ -1,4 +1,4 @@
-# Short Circuit Fix
+﻿# Short Circuit Fix
 
 Registers *Short Circuit*'s circuit blocks on the translucent render layer - a step the NeoForge port omits (present in its Fabric build).
 
@@ -13,8 +13,8 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 
 ## Building
 
-`./gradlew build` — the built JAR is written to `build/libs/`. This is a runtime patch, so it must be run alongside Short Circuit to have any effect.
+`./gradlew build` â€” the built JAR is written to `build/libs/`. This is a runtime patch, so it must be run alongside Short Circuit to have any effect.
 
 ## License
 
-Released under the MIT License — see [LICENSE](LICENSE).
+Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
