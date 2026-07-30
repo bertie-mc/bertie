@@ -3,11 +3,16 @@ package com.berlord.emi.create;
 import com.berlord.emi.framework.GenericEmiCategory;
 import com.berlord.emi.framework.GenericEmiRecipe;
 import com.berlord.emi.framework.MachineDescriptor;
+import com.berlord.emi.framework.Recipes;
 import com.simibubi.create.AllRecipeTypes;
+import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
 import com.simibubi.create.content.kinetics.deployer.ItemApplicationRecipe;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create.content.processing.sequenced.IAssemblyRecipe;
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
+import com.simibubi.create.content.processing.sequenced.SequencedRecipe;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
 import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
@@ -23,11 +28,17 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Native EMI categories for Create's machine recipes. 13 of Create's types share the
@@ -35,8 +46,9 @@ import java.util.Locale;
  * (~1000 recipes). Deploying / item application use {@link ItemApplicationRecipe}'s explicit
  * base/held accessors so the held item can show as a catalyst when it isn't consumed.
  *
- * <p>Not yet ported (bespoke layouts): {@code mechanical_crafting} (NxN grid) and
- * {@code sequenced_assembly} (multi-step). Only ever called when {@code create} is loaded.
+ * <p>{@code mechanical_crafting} renders as a bespoke NxN grid via
+ * {@link MechanicalCraftingEmiRecipe}, and {@code sequenced_assembly} as a bespoke step-chain via
+ * {@link SequencedAssemblyEmiRecipe}. Only ever called when {@code create} is loaded.
  */
 public final class CreateEmiModule {
     private CreateEmiModule() {
@@ -61,6 +73,9 @@ public final class CreateEmiModule {
 
         application(reg, rm, AllRecipeTypes.DEPLOYING, "create_deploying", "deployer", "Deploying");
         application(reg, rm, AllRecipeTypes.ITEM_APPLICATION, "create_item_application", "depot", "Item Application");
+
+        mechanicalCrafting(reg, rm);
+        sequencedAssembly(reg, rm);
 
         // "Bulk" fan processing reuses VANILLA recipes that EMI already shows, so we don't make new
         // categories — we just register the Encased Fan as a workstation on them. Per Create's fan types:
@@ -114,17 +129,118 @@ public final class CreateEmiModule {
         }
     }
 
+    /** The NxN Mechanical Crafter wall grid — bespoke layout, not the single-row descriptor. */
+    private static void mechanicalCrafting(EmiRegistry reg, RecipeManager rm) {
+        EmiRecipeCategory cat = category(reg, "create_mechanical_crafting", "mechanical_crafter", "Mechanical Crafting");
+        Recipes.forEach(rm, MechanicalCraftingRecipe.class, (id, r) -> {
+            int gw = r.getWidth();
+            int gh = r.getHeight();
+            List<EmiIngredient> grid = new ArrayList<>(gw * gh);
+            for (Ingredient ing : r.getIngredients()) {
+                grid.add(ing.isEmpty() ? EmiStack.EMPTY : EmiIngredient.of(ing));
+            }
+            EmiStack out = EmiStack.of(r.getResultItem(null));
+            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(NS,
+                    "create_mechanical_crafting/" + id.getNamespace() + "/" + id.getPath());
+            reg.addRecipe(new MechanicalCraftingEmiRecipe(cat, displayId, gw, gh, grid, out));
+        });
+    }
+
+    /** The multi-step Sequenced Assembly (Precision Mechanism &amp; other chain crafts) — bespoke step-chain. */
+    private static void sequencedAssembly(EmiRegistry reg, RecipeManager rm) {
+        EmiRecipeCategory cat = category(reg, "create_sequenced_assembly", "precision_mechanism", "Sequenced Assembly");
+        Recipes.forEach(rm, SequencedAssemblyRecipe.class, (id, r) -> {
+            EmiIngredient start = EmiIngredient.of(r.getIngredient());
+
+            List<SequencedAssemblyEmiRecipe.Step> steps = new ArrayList<>();
+            for (SequencedRecipe<?> sr : r.getSequence()) {
+                IAssemblyRecipe asm = sr.getAsAssemblyRecipe();
+
+                Set<ItemLike> machineSet = new LinkedHashSet<>();
+                asm.addRequiredMachines(machineSet);
+                List<EmiStack> machines = new ArrayList<>();
+                for (ItemLike m : machineSet) {
+                    machines.add(EmiStack.of(m));
+                }
+
+                List<Ingredient> ings = new ArrayList<>();
+                asm.addAssemblyIngredients(ings);
+                List<EmiIngredient> appliedItems = new ArrayList<>();
+                for (Ingredient ing : ings) {
+                    if (!ing.isEmpty()) {
+                        appliedItems.add(EmiIngredient.of(ing));
+                    }
+                }
+
+                List<SizedFluidIngredient> fluidIngs = new ArrayList<>();
+                asm.addAssemblyFluidIngredients(fluidIngs);
+                List<EmiIngredient> appliedFluids = new ArrayList<>();
+                for (SizedFluidIngredient f : fluidIngs) {
+                    appliedFluids.add(NeoForgeEmiIngredient.of(f));
+                }
+
+                Component label;
+                try {
+                    label = asm.getDescriptionForAssembly();
+                } catch (Throwable ignored) {
+                    label = null;
+                }
+                steps.add(new SequencedAssemblyEmiRecipe.Step(machines, appliedItems, appliedFluids, label));
+            }
+
+            EmiStack transitional = EmiStack.of(r.getTransitionalItem());
+            List<EmiStack> results = new ArrayList<>();
+            for (ProcessingOutput o : r.resultPool) {
+                results.add(EmiStack.of(o.getStack()).setChance(o.getChance()));
+            }
+
+            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(NS,
+                    "create_sequenced_assembly/" + id.getNamespace() + "/" + id.getPath());
+            reg.addRecipe(new SequencedAssemblyEmiRecipe(cat, displayId, start, steps,
+                    transitional, r.getLoops(), results));
+        });
+    }
+
     private static MachineDescriptor toDescriptor(ProcessingRecipe<?, ?> r) {
         MachineDescriptor d = new MachineDescriptor();
-        for (Ingredient ing : r.getIngredients()) {
-            d.itemIn(EmiIngredient.of(ing));
-        }
+        addMergedItemInputs(d, r.getIngredients());
         for (SizedFluidIngredient f : r.getFluidIngredients()) {
             d.fluidIn(NeoForgeEmiIngredient.of(f));
         }
         outputs(d, r);
         info(d, r);
         return d;
+    }
+
+    /**
+     * Add the recipe's item inputs, collapsing repeats into one slot with a count. Create lists a plain
+     * {@link Ingredient} per input item, so e.g. a compacting recipe that needs 16 of something arrives
+     * as 16 identical ingredients — which would render as 16 slots running off the panel. Identical
+     * ingredients are merged into a single {@code EmiIngredient} whose amount EMI draws as the number.
+     */
+    private static void addMergedItemInputs(MachineDescriptor d, List<Ingredient> ingredients) {
+        LinkedHashMap<String, Integer> countByKey = new LinkedHashMap<>();
+        LinkedHashMap<String, Ingredient> repByKey = new LinkedHashMap<>();
+        for (Ingredient ing : ingredients) {
+            if (ing == null || ing.isEmpty()) {
+                continue;
+            }
+            String key = ingredientKey(ing);
+            countByKey.merge(key, 1, Integer::sum);
+            repByKey.putIfAbsent(key, ing);
+        }
+        for (Map.Entry<String, Integer> e : countByKey.entrySet()) {
+            d.itemIn(EmiIngredient.of(repByKey.get(e.getKey()), e.getValue()));
+        }
+    }
+
+    /** A stable key identifying an ingredient by the items (and per-item counts) it accepts. */
+    private static String ingredientKey(Ingredient ing) {
+        StringBuilder sb = new StringBuilder();
+        for (net.minecraft.world.item.ItemStack s : ing.getItems()) {
+            sb.append(BuiltInRegistries.ITEM.getKey(s.getItem())).append('x').append(s.getCount()).append(';');
+        }
+        return sb.toString();
     }
 
     private static void outputs(MachineDescriptor d, ProcessingRecipe<?, ?> r) {

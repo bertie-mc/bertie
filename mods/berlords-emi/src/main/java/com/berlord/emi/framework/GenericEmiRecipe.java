@@ -6,8 +6,11 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.SlotWidget;
 import dev.emi.emi.api.widget.WidgetHolder;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Font;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.FormattedCharSequence;
 
 import java.util.ArrayList;
 
@@ -26,6 +29,12 @@ public class GenericEmiRecipe extends BasicEmiRecipe {
     private static final int PAD = 2;
     private static final int TEXT_H = 10;
     private static final int MIN_WIDTH = 80;
+    /**
+     * Info text grows the panel up to this width to fit on one line; anything wider word-wraps
+     * instead of widening further. Keeps short lines (e.g. "Requires at least tier 2") on one row
+     * while long instruction sentences flow to 2-3 lines rather than clipping off the edge.
+     */
+    private static final int TEXT_GROW_CAP = 200;
 
     public GenericEmiRecipe(EmiRecipeCategory category, ResourceLocation id, MachineDescriptor d) {
         super(category, id, computeWidth(d), computeHeight(d));
@@ -39,14 +48,71 @@ public class GenericEmiRecipe extends BasicEmiRecipe {
         this.outputs.addAll(d.fluidOutputs);
     }
 
-    private static int computeWidth(MachineDescriptor d) {
+    /** Width demanded by the slot row plus any explicit {@link MachineDescriptor#minWidth} floor. */
+    private static int baseWidth(MachineDescriptor d) {
         int cells = d.inputCells() + d.outputCells();
-        return Math.max(MIN_WIDTH, cells * SLOT + ARROW_W + PAD * 4);
+        return Math.max(Math.max(MIN_WIDTH, d.minWidth), cells * SLOT + ARROW_W + PAD * 4);
+    }
+
+    private static int computeWidth(MachineDescriptor d) {
+        int base = baseWidth(d);
+        int widest = widestInfoPx(d);
+        if (widest <= 0) {
+            return base;
+        }
+        // Grow to fit the widest info line, but never past the cap (or the base, if already wider):
+        // beyond the cap the info loop word-wraps instead.
+        int cap = Math.max(base, TEXT_GROW_CAP);
+        return Math.max(base, Math.min(widest + PAD * 2, cap));
     }
 
     private static int computeHeight(MachineDescriptor d) {
-        int infoH = d.info.isEmpty() ? 0 : PAD + d.info.size() * TEXT_H;
+        int lines = infoLineCount(d);
+        int infoH = lines == 0 ? 0 : PAD + lines * TEXT_H;
         return PAD + SLOT + infoH + PAD;
+    }
+
+    /** Pixel width of the widest info line (0 if there are none or the font isn't ready yet). */
+    private static int widestInfoPx(MachineDescriptor d) {
+        if (d.info.isEmpty()) {
+            return 0;
+        }
+        Font font = font();
+        if (font == null) {
+            return 0;
+        }
+        int max = 0;
+        for (Component line : d.info) {
+            max = Math.max(max, font.width(line));
+        }
+        return max;
+    }
+
+    /** Usable text width inside the panel (the wrap width for info lines). */
+    private static int wrapWidth(MachineDescriptor d) {
+        return computeWidth(d) - PAD * 2;
+    }
+
+    /** Total rendered info rows after word-wrapping each line to the panel width. */
+    private static int infoLineCount(MachineDescriptor d) {
+        if (d.info.isEmpty()) {
+            return 0;
+        }
+        Font font = font();
+        if (font == null) {
+            return d.info.size(); // font not ready: assume one row per line (no wrapping)
+        }
+        int w = wrapWidth(d);
+        int n = 0;
+        for (Component line : d.info) {
+            n += Math.max(1, font.split(line, w).size());
+        }
+        return n;
+    }
+
+    private static Font font() {
+        Minecraft mc = Minecraft.getInstance();
+        return mc == null ? null : mc.font;
     }
 
     @Override
@@ -80,9 +146,18 @@ public class GenericEmiRecipe extends BasicEmiRecipe {
         }
 
         int ty = y + SLOT + PAD;
+        Font font = font();
+        int wrapW = getDisplayWidth() - PAD * 2;
         for (Component line : d.info) {
-            w.addText(line, PAD, ty, 0xFF404040, false);
-            ty += TEXT_H;
+            if (font == null) {
+                w.addText(line, PAD, ty, 0xFF404040, false);
+                ty += TEXT_H;
+            } else {
+                for (FormattedCharSequence seq : font.split(line, wrapW)) {
+                    w.addText(seq, PAD, ty, 0xFF404040, false);
+                    ty += TEXT_H;
+                }
+            }
         }
     }
 

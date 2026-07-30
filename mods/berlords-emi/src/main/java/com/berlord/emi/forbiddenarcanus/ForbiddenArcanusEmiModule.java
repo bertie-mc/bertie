@@ -15,14 +15,17 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 /**
  * Forbidden & Arcanus — Clibano Combustion (the multi-fuel smelter). 1-2 item inputs -> result, with an
- * optional chance "residue" second output, plus fire-type / time / xp info lines. The Hephaestus Forge
- * ritual system and apply_modifier (vanilla smithing) are deferred — see PROJECT.md.
+ * optional chance "residue" second output, plus fire-type / time / xp info lines. Hephaestus Forge
+ * rituals live in {@link HephaestusRitualEmiModule} (datapack-registry recipes, added for the S1
+ * pack where rituals are the load-bearing progression bridge). apply_modifier (vanilla smithing)
+ * remains deferred — see PROJECT.md.
  */
 public final class ForbiddenArcanusEmiModule {
     private ForbiddenArcanusEmiModule() {
     }
 
     public static void register(EmiRegistry reg) {
+        HephaestusRitualEmiModule.register(reg);
         EmiRecipeCategory clibano = Categories.machine(reg,
                 "fa_clibano_combustion", "forbidden_arcanus:clibano_core", "Clibano Combustion");
         Recipes.forEach(reg.getRecipeManager(), ClibanoRecipe.class, (id, r) -> {

@@ -81,6 +81,12 @@ dependencies {
     compileOnly "maven.modrinth:better-archeology:rp4lPDKI"   // pin NeoForge version by id (1.21.1-1.3.4)
     compileOnly "maven.modrinth:l2-complements:3.1.3"
     compileOnly "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"   // dev.dubhe.anvilcraft.recipe.*
+    // Advanced Loot Info: its plugin API (com.yanny.ali.api.* + bundled com.yanny.aci.*) lets us publish
+    // Malum's hardcoded soul-reaping drops onto ALI's own mob-drop pages. Pinned by version id (1.21.1-1.12.0).
+    compileOnly "maven.modrinth:advanced-loot-info:y8p1Vq83"
+
+    // bertie_s1 is a local sibling mod (not on any maven): BedRecipes data for the Mallet Work category.
+    compileOnly fileTree(dir: '../../s1-build/bertie-s1-mod/build/libs', include: 'bertie_s1-*.jar')
 
     // Parent mods we only need for their JarJar-embedded libs (extracted by extractJarJarLibs, below):
     jarJarParents "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"       // -> anvillib 1.4.0 (dev.anvilcraft.lib.recipe.*)

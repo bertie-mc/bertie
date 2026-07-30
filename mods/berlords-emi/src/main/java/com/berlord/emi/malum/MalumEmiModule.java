@@ -19,6 +19,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Malum's magic crafting. Spirit ingredients render as their shard item with the required count.
  * Generic types only; deferred: spirit_repair (damaged->repaired N-rows) and soul_binding (output is a
@@ -34,16 +37,17 @@ public final class MalumEmiModule {
 
         EmiRecipeCategory infusion = Categories.machine(reg, "malum_spirit_infusion", "malum:spirit_altar", "Spirit Infusion");
         Recipes.forEach(rm, SpiritInfusionRecipe.class, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
-            d.itemIn(NeoForgeEmiIngredient.of(r.input));
+            EmiIngredient primary = NeoForgeEmiIngredient.of(r.input);
+            List<EmiIngredient> extras = new ArrayList<>();
             for (SizedIngredient si : r.extraInputs) {
-                d.itemIn(NeoForgeEmiIngredient.of(si));
+                extras.add(NeoForgeEmiIngredient.of(si));
             }
+            List<EmiIngredient> spirits = new ArrayList<>();
             for (SpiritIngredient sp : r.spirits) {
-                d.itemIn(spirit(sp));
+                spirits.add(spirit(sp));
             }
-            d.itemOut(EmiStack.of(r.result));
-            reg.addRecipe(new GenericEmiRecipe(infusion, id, d));
+            // Bespoke altar layout (columns) instead of the generic single row — see SpiritInfusionEmiRecipe.
+            reg.addRecipe(new SpiritInfusionEmiRecipe(infusion, id, primary, extras, spirits, EmiStack.of(r.result)));
         });
 
         EmiRecipeCategory rune = Categories.machine(reg, "malum_runeworking", "malum:runic_workbench", "Runeworking");

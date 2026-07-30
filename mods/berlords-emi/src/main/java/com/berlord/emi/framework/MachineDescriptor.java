@@ -20,6 +20,13 @@ public class MachineDescriptor {
     public final List<EmiStack> itemOutputs = new ArrayList<>();
     public final List<EmiStack> fluidOutputs = new ArrayList<>();
     public final List<Component> info = new ArrayList<>();
+    /** Optional wider floor for recipes whose info lines outrun the slot row (0 = default). */
+    public int minWidth = 0;
+
+    public MachineDescriptor minWidth(int px) {
+        this.minWidth = px;
+        return this;
+    }
 
     public MachineDescriptor itemIn(EmiIngredient i) {
         if (i != null && !i.isEmpty()) itemInputs.add(i);

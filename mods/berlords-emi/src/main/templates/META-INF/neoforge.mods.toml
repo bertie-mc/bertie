@@ -194,3 +194,21 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+# bertie_s1 — the S1 progression mod (local sibling); Mallet Work category reads its BedRecipes.
+[[dependencies.${mod_id}]]
+modId="bertie_s1"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Advanced Loot Info — we register an ALI plugin that publishes Malum's soul-reaping drops (which are
+# hardcoded, so no loot viewer can see them) onto ALI's mob-drop pages. BOTH: ALI computes loot info
+# server-side and networks it to the client.
+[[dependencies.${mod_id}]]
+modId="ali"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
