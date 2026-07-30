@@ -1,0 +1,13 @@
+name = "Simple Recall Potion"
+filename = "simplerecall-1.0.6-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/JQFS1tDC/versions/q8cRauFO/simplerecall-1.0.6-1.21.1.jar"
+hash-format = "sha512"
+hash = "f2f4fb6e0025af03b3dafaab951c842d9af7ac1236ae3cd0ae603b62a253cac8bee2da02392560367ce5d1afc151cac789a8da2c89af53502812ee3177ad0486"
+
+[update]
+[update.modrinth]
+mod-id = "JQFS1tDC"
+version = "q8cRauFO"

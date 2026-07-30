@@ -1,0 +1,13 @@
+name = "CompactMachinesPOR"
+filename = "compactmachinespor-0.9.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kgPopSTU/versions/VHDEOhC6/compactmachinespor-0.9.1.jar"
+hash-format = "sha512"
+hash = "98ed05fec43f052bcf6f4ab6704d1c869322d826a9547c6442c96c36420fc817a09deb197ee23b3626f1b610204492cd599ef242af72da44a4ae1a0018b05268"
+
+[update]
+[update.modrinth]
+mod-id = "kgPopSTU"
+version = "VHDEOhC6"

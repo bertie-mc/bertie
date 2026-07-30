@@ -1,0 +1,13 @@
+name = "Coal Explosion"
+filename = "coalexplosion-neoforge-1.21.1-1.12.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6pcjc08X/versions/rqB8YXCy/coalexplosion-neoforge-1.21.1-1.12.1.jar"
+hash-format = "sha512"
+hash = "4bd41f12f9203aae2e64397f090e391493713e4da109fc8910064cd668d3d3dd497842807cebcf2263b7c518efb68fbc7c3764e121132d09583f809ac53854af"
+
+[update]
+[update.modrinth]
+mod-id = "6pcjc08X"
+version = "rqB8YXCy"

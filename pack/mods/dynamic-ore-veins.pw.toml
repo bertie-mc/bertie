@@ -1,0 +1,13 @@
+name = "Dynamic Ore Veins"
+filename = "DOV-1.0.0+1.21.0-1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/7RCWO3Zu/versions/OWZ6aYaZ/DOV-1.0.0%2B1.21.0-1.jar"
+hash-format = "sha512"
+hash = "db8b3c3081cc33ff8377c56c307575f0e33f47310de5db5b6e6bc883d3741f28d4c2ffe66525096415d3825202ac5b694901b4560de9a344a739d625f5d049fa"
+
+[update]
+[update.modrinth]
+mod-id = "7RCWO3Zu"
+version = "OWZ6aYaZ"

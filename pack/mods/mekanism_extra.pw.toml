@@ -1,0 +1,13 @@
+name = "Mekanism Extra"
+filename = "mekanism_extras-1.21.1-1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HUZkxNTQ/versions/DsGsees0/mekanism_extras-1.21.1-1.4.0.jar"
+hash-format = "sha512"
+hash = "48a2d43f35f5113017d9867ed6eaf64f9f0a7dc7e75ed072fe73f58d3df69afa687754e5eaf19c849b19865f219a82d07b180575fe2de14c241eed2eccf47678"
+
+[update]
+[update.modrinth]
+mod-id = "HUZkxNTQ"
+version = "DsGsees0"

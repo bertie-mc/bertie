@@ -1,0 +1,210 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "concordance"
+	group: ""
+	id: "5B00000000000000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			id: "5B00000000000001"
+			rewards: [{
+				id: "5B00000002000001"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "5B00000001000001"
+						item: { count: 1 id: "minecraft:nether_star" }
+						type: "item"
+					}
+				]
+			x: 0d
+			y: 0d
+		}
+		{
+			dependencies: ["5B00000000000001"]
+			id: "5B00000000000002"
+			rewards: [{
+				id: "5B00000002000002"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						id: "5B00000001000002"
+						title: "The twelve eyes"
+						type: "checkmark"
+					}
+				]
+			x: 1.5d
+			y: 0d
+		}
+		{
+			dependencies: ["5B00000000000002"]
+			id: "5B00000000000003"
+			rewards: [{
+				id: "5B00000002000003"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						id: "5B00000001000003"
+						title: "The open way"
+						type: "checkmark"
+					}
+				]
+			x: 3.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:dragon_head"
+			}
+			dependencies: ["5B00000000000003"]
+			id: "5B00000000000004"
+			rewards: [{
+				id: "5B00000002000004"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:dragon_head"
+						}
+						id: "5B00000001000004"
+						title: "The Ender Dragon"
+						type: "checkmark"
+					}
+				]
+			x: 4.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "betterend:iron_hammer"
+			}
+			dependencies: ["5B00000000000004"]
+			id: "5B00000000000005"
+			rewards: [{
+				id: "5B00000002000005"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "5B00000001000005"
+						item: { count: 1 id: "betterend:iron_hammer" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "betterend:thallasium_anvil"
+			}
+			dependencies: ["5B00000000000005"]
+			id: "5B00000000000006"
+			rewards: [{
+				id: "5B00000002000006"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "5B00000001000006"
+						item: { count: 1 id: "betterend:thallasium_anvil" }
+						type: "item"
+					}
+				]
+			x: 7.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "betterend:end_stone_smelter"
+			}
+			dependencies: ["5B00000000000006"]
+			id: "5B00000000000007"
+			rewards: [{
+				id: "5B00000002000007"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "5B00000001000007"
+						item: { count: 1 id: "betterend:end_stone_smelter" }
+						type: "item"
+					}
+				]
+			x: 9.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "betterend:terminite_ingot"
+			}
+			dependencies: ["5B00000000000007"]
+			id: "5B00000000000008"
+			rewards: [{
+				id: "5B00000002000008"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 17L
+						id: "5B00000001000008"
+						item: { count: 1 id: "betterend:terminite_ingot" }
+						type: "item"
+					}
+				]
+			x: 10.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "betterend:aeternium_ingot"
+			}
+			dependencies: ["5B00000000000008"]
+			id: "5B00000000000009"
+			rewards: [{
+				id: "5B00000002000009"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 13L
+						id: "5B00000001000009"
+						item: { count: 1 id: "betterend:aeternium_ingot" }
+						type: "item"
+					}
+				]
+			x: 12.0d
+			y: 0d
+		}
+	]
+}

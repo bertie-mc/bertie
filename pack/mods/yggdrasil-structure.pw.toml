@@ -1,0 +1,13 @@
+name = "Yggdrasil"
+filename = "Yggdrasil-6.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hwNDseBp/versions/RPuu7Vml/Yggdrasil-6.0.0.jar"
+hash-format = "sha512"
+hash = "c2f542cb10f4e27f591e6b0529503c6db65bb9a40cd4fb233a065f2c31ee6cdc7e8c870a5527a292af667b11fccf821103b7f486414512418acae717d2de38b2"
+
+[update]
+[update.modrinth]
+mod-id = "hwNDseBp"
+version = "RPuu7Vml"

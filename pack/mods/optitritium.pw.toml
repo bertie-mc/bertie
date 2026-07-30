@@ -1,0 +1,13 @@
+name = "Tritium"
+filename = "tritium-neoforge-1.21-26.10-hotfix.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AyzF4cmc/versions/vGs5rSd0/tritium-neoforge-1.21-26.10-hotfix.jar"
+hash-format = "sha512"
+hash = "c14c42147ac0968ebff169aafc381fcc9d97bc60e8af26c7b66c45fb13da00d8eed13b60c07744b1ccabb83be9b4d0abf4fe8d3b0261287a42940a8dc1eaaca9"
+
+[update]
+[update.modrinth]
+mod-id = "AyzF4cmc"
+version = "vGs5rSd0"

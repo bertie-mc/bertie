@@ -1,0 +1,13 @@
+name = "Stellar View Mixin Renderer"
+filename = "stellarview_mixin_renderer-2.1.0-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/gJ5LPGfO/versions/HbYYFasr/stellarview_mixin_renderer-2.1.0-neoforge.jar"
+hash-format = "sha512"
+hash = "e424fe3985342c7ee77fed4c796efa8b53f0306989a29683dab02bf3da3c3e0b650d4d146ce1411ffb5d57f22d0fb2db10f7cdbffd4fce4bfacfa1a50d78eee3"
+
+[update]
+[update.modrinth]
+mod-id = "gJ5LPGfO"
+version = "HbYYFasr"

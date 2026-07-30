@@ -1,0 +1,13 @@
+name = "Malstone"
+filename = "malstone-1.0.5.0-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gCIbzByR/versions/HPZSc9em/malstone-1.0.5.0-neoforge.jar"
+hash-format = "sha512"
+hash = "71565d9e2ad375defca5e91053f60e7df50a18f2b530d2f0f2242f609429b028884b55f390738e954e11ce9470536f0c7d5568c62d7852fecd4a0f4737c3d1f8"
+
+[update]
+[update.modrinth]
+mod-id = "gCIbzByR"
+version = "HPZSc9em"

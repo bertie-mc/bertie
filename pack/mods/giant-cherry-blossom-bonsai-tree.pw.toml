@@ -1,0 +1,13 @@
+name = "Giant Cherry Blossom Bonsai Tree"
+filename = "giant_cherry_blossom_bonsai_tree-1.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uku0mmHk/versions/J0LBkbCW/giant_cherry_blossom_bonsai_tree-1.0.1-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "ea0b850fa4ed220ea42783aef1b109d6cb00108729d147957546f2eda4495b94429ecec9f8c8d122d2df5b616d96a2526f819f6cfc21724bb38a7846aac47a91"
+
+[update]
+[update.modrinth]
+mod-id = "uku0mmHk"
+version = "J0LBkbCW"

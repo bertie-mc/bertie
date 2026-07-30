@@ -1,0 +1,13 @@
+name = "Hazen 'n Stuff"
+filename = "hazennstuff-1.4.0.13.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/I94FeWYD/versions/UrjTQlC8/hazennstuff-1.4.0.13.jar"
+hash-format = "sha512"
+hash = "fe0d9d86bbe7c538c4417b1457809bbcd1d4f5b68630f1694114fd02345337ca9459d31ab461ffad15ad1d9d04d0a3ff202fefe519724ed8e70cb1165de880aa"
+
+[update]
+[update.modrinth]
+mod-id = "I94FeWYD"
+version = "UrjTQlC8"

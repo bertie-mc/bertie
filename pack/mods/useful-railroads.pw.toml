@@ -1,0 +1,13 @@
+name = "Useful Railroads"
+filename = "useful_railroads-neoforge-1.21.1-1.6.0.61.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/S0xj5NHG/versions/5cRpZ5wv/useful_railroads-neoforge-1.21.1-1.6.0.61.jar"
+hash-format = "sha512"
+hash = "cb579a0b261ad81641d78765fd3733cefa62e729ce3e45792d4e9af2258d6f83c7e3bf49264d885697f09d85c4a267307f55e0e8795d6ade811b715494900e8a"
+
+[update]
+[update.modrinth]
+mod-id = "S0xj5NHG"
+version = "5cRpZ5wv"

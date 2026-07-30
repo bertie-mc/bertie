@@ -1,0 +1,14 @@
+{
+  "wood": {
+    "helmet": "immersive_armors:wooden_helmet",
+    "chestplate": "immersive_armors:wooden_chestplate",
+    "leggings": "immersive_armors:wooden_leggings",
+    "boots": "immersive_armors:wooden_boots"
+  },
+  "bone": {
+    "helmet": "immersive_armors:bone_helmet",
+    "chestplate": "immersive_armors:bone_chestplate",
+    "leggings": "immersive_armors:bone_leggings",
+    "boots": "immersive_armors:bone_boots"
+  }
+}

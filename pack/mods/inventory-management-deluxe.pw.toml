@@ -1,0 +1,13 @@
+name = "Inventory Management Deluxe"
+filename = "inventorymanagement-1.21.1-NeoForge-1.0.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "31cebdbe8c11941804e56e12e5b337e78b1c856b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8083722
+project-id = 1293085

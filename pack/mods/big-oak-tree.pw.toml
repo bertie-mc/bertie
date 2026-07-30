@@ -1,0 +1,13 @@
+name = "Big Oak Tree"
+filename = "big_oak_tree_uploaded-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/u62Up3Gc/versions/R0kKYkDx/big_oak_tree_uploaded-1.0.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "ab5c768a937586e5f8e5903c0414f46a98f5c5300f614be245335f73bf812a28c00347492a7251ea0855d8b0f5c870ee76ad473c2ed7f96b5e9dcedc36e90218"
+
+[update]
+[update.modrinth]
+mod-id = "u62Up3Gc"
+version = "R0kKYkDx"

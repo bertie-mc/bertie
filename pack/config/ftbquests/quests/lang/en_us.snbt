@@ -1,0 +1,1734 @@
+{
+	chapter.1B00000000000000.title: "Hands and Stone"
+	chapter.1C00000000000000.title: "Dark Arts"
+	chapter.2B00000000000000.title: "Kinetic Language"
+	chapter.3B00000000000000.title: "Ash and Twilight"
+	chapter.4B00000000000000.title: "Echo and Below"
+	chapter.5B00000000000000.title: "Concordance"
+	chapter.6B00000000000000.title: "Five by Five"
+	chapter.7B00000000000000.title: "God of War"
+	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
+	quest.1B00000000000001.title: "Get wood"
+	quest.1B00000000000002.quest_desc: ["Craft a Small Wooden Slate from 4 planks in your 2x2 grid, then hold it and carve a tool head. There is no crafting table yet - shape comes before the grid."]
+	quest.1B00000000000002.title: "A blank of wood"
+	quest.1B00000000000003.quest_desc: ["A Small Wooden Slate plus a Stick makes the Opening Mallet - your bootstrap finalizer. Nearly every early world-interaction is a mallet strike."]
+	quest.1B00000000000003.title: "The Opening Mallet"
+	quest.1B00000000000004.quest_desc: ["Hold 3+ Sugar Cane with the Mallet in your offhand and strike a block touching water while carrying two Small Wooden Slates. Paper feeds the Slag blueprints."]
+	quest.1B00000000000004.title: "Pressed against water"
+	quest.1B00000000000005.quest_desc: ["3 Paper + 1 Clay Ball = a Slag Modular Blueprint. Insert a carved head and two sticks, then shift-use to assemble your first real tools."]
+	quest.1B00000000000005.title: "Modular blueprints"
+	quest.1B00000000000006.quest_desc: ["Carve the four wooden armor pieces from Big Wooden Slates - helmet, chestplate, leggings and boots. Carving now yields the wearable Immersive Armors set itself; no blueprint assembly."]
+	quest.1B00000000000006.title: "Wooden armor"
+	quest.1B00000000000007.quest_desc: ["Carve a wooden pickaxe head from a slate. The quest ticks the head; socket it into a Modular Blueprint with two sticks and shift-use to finish the pickaxe."]
+	quest.1B00000000000007.title: "Wooden pickaxe"
+	quest.1B00000000000008.quest_desc: ["Wood cannot break Arcane Crystal or Redstone. Carve a FLINT or a BONE pickaxe head - either one is the copper tier that mines them before iron."]
+	quest.1B00000000000008.title: "A harder head"
+	quest.1B00000000000009.quest_desc: ["Strike water-touching Dirt with the Mallet for Mud. Mud + Wheat = Packed Mud; four Packed Mud = Mud Bricks. You need about 19."]
+	quest.1B00000000000009.title: "Mud into brick"
+	quest.1B0000000000000A.quest_desc: ["Lay a 3x3 ring of Mud Bricks around an UNLIT campfire, put 4 stripped logs directly above the corners, and strike a ring brick with the Mallet. The forge ignites by friction - then stand close and look at the lit forge to complete this."]
+	quest.1B0000000000000A.title: "The Brick Forge"
+	quest.1B0000000000000B.quest_desc: ["Iron hides in the dark. Take your copper-tier pickaxe below, find it, and bring back an ingot - the old world still runs on it."]
+	quest.1B0000000000000B.title: "Find me"
+	quest.1B0000000000000C.quest_desc: ["The Melter's own alloy: reduce and cast Deep Alloy. It is the backbone of the Stonecutter and the tools above stone."]
+	quest.1B0000000000000C.title: "Deep Alloy"
+	quest.1B0000000000000D.quest_desc: ["Not the vanilla three-block recipe: 2 Iron Ingots and 1 Deep Alloy over 2 Smooth Stone, in your 2x2 grid. It cuts every darkstone block you are about to need."]
+	quest.1B0000000000000D.title: "The Stonecutter"
+	quest.1B0000000000000E.quest_desc: ["Armageddon's summon for its first boss. Double-smelt an Iron Ingot with any small flower on the Brick Forge, then right-click the Remote to call the Iron Colossus down on your head. (The stock 3x3 still works once you have a table.)"]
+	quest.1B0000000000000E.title: "The Iron Remote"
+	quest.1B0000000000000F.quest_desc: ["Armageddon's Iron Colossus. Find it and bring it down - iron respects only force."]
+	quest.1B0000000000000F.title: "Slay the Iron Colossus"
+	quest.1B00000000000010.quest_desc: ["Double-smelt the Colossal Iron Ingot the Colossus left you with a Gold Ingot on the Brick Forge. Right-click the Coin to summon the Goblin Lord - spend it when you are ready to fight."]
+	quest.1B00000000000010.title: "Strange Coin"
+	quest.1B00000000000011.quest_desc: ["Spend the Strange Coin and slay the Goblin Lord it summons, along with his little court."]
+	quest.1B00000000000011.title: "Slay the Goblin Lord"
+	quest.1B00000000000012.quest_desc: ["Smelt or cast Gold. Rose gold and the divine Deorum both begin here."]
+	quest.1B00000000000012.title: "Gold Ingot"
+	quest.1B00000000000013.quest_desc: ["Smelt Copper - the other half of rose gold."]
+	quest.1B00000000000013.title: "Copper Ingot"
+	quest.1B00000000000014.quest_desc: ["Alloy Copper and Gold into Rose Gold (Slag). It feeds the Deorum nugget and the serpent-scale plates."]
+	quest.1B00000000000014.title: "Rose Gold Ingot"
+	quest.1B00000000000015.quest_desc: ["With a copper-tier pickaxe, mine Arcane Crystal Ore. The crystal is the root of the whole arcane line."]
+	quest.1B00000000000015.title: "Arcane Crystal"
+	quest.1B00000000000016.quest_desc: ["Smelt Arcane Crystals in the Brick Forge - two crystals grind into one dust. (No more free dust from a mallet strike.)"]
+	quest.1B00000000000016.title: "Arcane Crystal Dust"
+	quest.1B00000000000017.quest_desc: ["Shapeless in your 2x2: Arcane Crystal Dust + Phantom Membrane + Redstone + Gunpowder makes one Mundabitur Dust. It awakens darkstone and raises the Forge."]
+	quest.1B00000000000017.title: "Mundabitur Dust"
+	quest.1B00000000000018.quest_desc: ["Gather at least 78 raw Darkstone - the full T1 Hephaestus Forge bill. (45 Polished for the structure, 9 for the Gilded, 4 for the Chiseled Arcane, and 20 for the eight pedestals.) The Stonecutter turns Darkstone into Polished and all its cut variants."]
+	quest.1B00000000000018.title: "Seventy-eight Darkstone"
+	quest.1B00000000000019.quest_desc: ["Shapeless: Mundabitur Dust + Rose Gold Ingot + Charcoal + an Arcane Crystal Dust Speck yields one Deorum Nugget. Split one dust into nine Specks in your grid. Four nuggets press into an ingot (2x2)."]
+	quest.1B00000000000019.title: "Deorum Nugget"
+	quest.1B0000000000001A.quest_desc: ["Cut and shape every piece of the T1 structure: 45 Polished Darkstone, 9 Gilded Chiseled (Polished + Gold Nugget on the forge), 4 Chiseled Arcane, an Arcane Pillar + Wall + Slab for EACH of 8 pedestals - and the Smithing Table core (2 Iron Ingots over 2 Planks in your 2x2). Gilded Chiseled opens the arcane cut-pool; arcane variants need Arcane Crystal Dust."]
+	quest.1B0000000000001A.title: "The forge in pieces"
+	quest.1B0000000000001B.quest_desc: ["Build the T1 structure per Forbidden Arcanus's Hephaestus Forge layout (check its guide/ponder). At each of the 8 pedestal spots stack an Arcane Polished Darkstone Pillar, Wall, then Slab, and apply Mundabitur Dust to the pillar - the column settles into a Darkstone Pedestal. Set the Smithing Table in the centre and apply Mundabitur Dust to it: the Hephaestus Forge Tier I rises. Rituals use up to 8 inputs - one per pedestal. Stand close and look at the risen Forge to complete this."]
+	quest.1B0000000000001B.title: "Raise the Forge"
+	quest.1B0000000000001C.quest_desc: ["Now the Forge can make one: a Tier-1 ritual binds a Stonecutter with an Amethyst Shard, a Heart of the Sea and 2 Chiseled Deepslate. (The stock Water-Bucket 2x2 recipe still works too.)"]
+	quest.1B0000000000001C.title: "The Carving Station"
+	quest.1B0000000000001D.quest_desc: ["Bank 64 Iron Ingots for everything ahead."]
+	quest.1B0000000000001D.title: "Iron by the block"
+	quest.1B0000000000001E.quest_desc: ["Cast 64 Deep Alloy."]
+	quest.1B0000000000001E.title: "Deep Alloy stockpile"
+	quest.1B0000000000001F.quest_desc: ["Mine 64 Arcane Crystal."]
+	quest.1B0000000000001F.title: "A vein of crystal"
+	quest.1B00000000000020.quest_desc: ["Press 64 Deorum Ingots - divine gold by the stack."]
+	quest.1B00000000000020.title: "Deorum hoard"
+	quest.1B00000000000021.quest_desc: ["Bank 64 Gold Ingots."]
+	quest.1B00000000000021.title: "Gold stockpile"
+	quest.1B00000000000022.quest_desc: ["Bank 64 Copper Ingots."]
+	quest.1B00000000000022.title: "Copper stockpile"
+	quest.1B00000000000023.quest_desc: ["Alloy 64 Rose Gold Ingots."]
+	quest.1B00000000000023.title: "Rose Gold stockpile"
+	quest.1C00000000000001.quest_desc: ["The Hephaestus Forge runs on four essences - Aureal, Blood, Souls and Experience. Time to farm them."]
+	quest.1C00000000000001.title: "Aura Farming"
+	quest.1C00000000000002.quest_desc: ["Souls drop from the Lost Soul family that drifts through the dark. Lost, Corrupt and Enchanted Souls all count toward this - bring back any four."]
+	quest.1C00000000000002.title: "Get Souls"
+	quest.1C00000000000003.quest_desc: ["Aureal comes bottled, and the Forge fills the bottle for nothing: a ritual on a plain Water Bottle with 4 Arcane Crystal Dust, 2 Rotten Flesh and 2 of any meat - no essence cost, because you cannot spend Aureal you do not have yet. Arcane Crystal Obelisks set into the forge multiblock also generate it passively, forever."]
+	quest.1C00000000000003.title: "Get Aureal"
+	quest.1C00000000000004.quest_desc: ["Mix it hot in a Basin: one Ender Pearl, 4 Prismarine Shards and 6 Refined Brilliance. Right-click to loose it - like an Eye of Ender, but it seeks the Weeping Well."]
+	quest.1C00000000000004.title: "The Weeping Eye"
+	quest.1C00000000000005.quest_desc: ["A Glass Bottle and a Rune make an empty Test Tube - and Glass Bottles now come two-glass at a time off the Brick Forge. Filling it is the trick: hold the empty tube in your OFFHAND and hit living mobs with your main hand. The tube becomes a blood tube and drinks blood equal to the damage you deal, up to 3000."]
+	quest.1C00000000000005.title: "A Test Tube of Blood"
+	quest.1C00000000000006.quest_desc: ["Sadly Expenite ore doesn't exist, so Common Ink will have to do - the Forge drinks it wherever raw experience is called for."]
+	quest.1C00000000000006.title: "Mine Expenite"
+	quest.1C00000000000007.quest_desc: ["With the essences in hand, raise Malum's Spirit Altar - the second bench of the dark arts, and the one every infusion runs on."]
+	quest.1C00000000000007.title: "The Spirit Altar"
+	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
+	quest.1C00000000000008.title: "Tainted Rock"
+	quest.1C00000000000009.quest_desc: ["The same trade, soured: one block of GRANITE, one Wicked and one Arcane spirit."]
+	quest.1C00000000000009.title: "Twisted Rock"
+	quest.1C0000000000000A.quest_desc: ["Build the Crucible - the attuner that grinds spirits into something finer."]
+	quest.1C0000000000000A.title: "The Spirit Crucible"
+	quest.1C0000000000000B.quest_desc: ["One coal, one Infernal spirit, one Arcane Charcoal. (Was four for four.)"]
+	quest.1C0000000000000B.title: "Arcane Charcoal"
+	quest.1C0000000000000C.quest_desc: ["Gunpowder infused with an Arcane spirit, an Arcane Crystal Dust Speck, one Arcane Charcoal Fragment and one Refined Soulstone."]
+	quest.1C0000000000000C.title: "Hex Ash"
+	quest.1C0000000000000D.quest_desc: ["Six Clay Balls down to one Calx: a Grim Talc, five Bones and three mushrooms of any kind, paid in Arcane, Earthen and Aqueous spirits."]
+	quest.1C0000000000000D.title: "Alchemical Calx"
+	quest.1C0000000000000E.quest_desc: ["Four Calx, four Earthen and four Aerial spirits, and four each of Hex Ash, Raw Soulstone, Raw Brilliance and Natural Quartz. What comes out is an Alchemical Impetus with just EIGHT durability of its eight hundred - a fraction of the power it could hold. Spend it carefully; when it breaks it leaves a Fractured Impetus behind, not nothing."]
+	quest.1C0000000000000E.title: "A fraction of Power"
+	quest.1C0000000000000F.quest_desc: ["Focus the Impetus in the Crucible with two Infernal and one Earthen spirit: four Glowstone Dust a cycle. (The stock eight-dust recipe is gone.)"]
+	quest.1C0000000000000F.title: "Glowstone Dust"
+	quest.1C00000000000010.quest_desc: ["Focus the Impetus with four Infernal and two Aerial spirits for two Blaze Powder a cycle."]
+	quest.1C00000000000010.title: "Blaze Powder"
+	quest.1C00000000000011.quest_desc: ["Bank 6 Iron Ingots. Every elemental infusion around this starts as plain iron."]
+	quest.1C00000000000011.title: "Six Iron Ingots"
+	quest.1C00000000000012.quest_desc: ["Two pieces in your 2x2: Runewood Planks over an Edelwood Stick, set corner to corner. The staff is how you carve spirit runes into a totem."]
+	quest.1C00000000000012.title: "The Totemic Staff"
+	quest.1C00000000000013.quest_desc: ["At the Spirit Altar: a Runewood Log ringed with 4 Hex Ash and 4 Runes, paid one of every spirit. Stack bases into a pole, carve them with the staff, and the totem wakes."]
+	quest.1C00000000000013.title: "The Totem Base"
+	quest.1C00000000000014.quest_desc: ["throw me into weeping well"]
+	quest.1C00000000000014.title: "The Encyclopedia Arcana"
+	quest.1C00000000000015.quest_desc: ["The Catalyzer holds a single Core Augment and feeds its effect to the crucible beside it."]
+	quest.1C00000000000015.title: "Spirit Catalyzer"
+	quest.1C00000000000016.quest_desc: ["Hold it and every resonance on the Spirit Crucible and its augments becomes visible. Use it ON the crucible to pick one attribute to strengthen - the others weaken to pay for it."]
+	quest.1C00000000000016.title: "Tuning Fork"
+	quest.1C00000000000017.quest_desc: ["The Pylon mends the gear you leave in its reach, paid for in spirits."]
+	quest.1C00000000000017.title: "Repair Pylon"
+	quest.1C00000000000018.quest_desc: ["Spirit-infuse an Iron Ingot into Fire-Infused Iron at the altar."]
+	quest.1C00000000000018.title: "Fire-Infused Iron"
+	quest.1C00000000000019.quest_desc: ["Spirit-infuse an Iron Ingot into Arcane-Infused Iron at the altar."]
+	quest.1C00000000000019.title: "Arcane-Infused Iron"
+	quest.1C0000000000001A.quest_desc: ["Spirit-infuse an Iron Ingot into Frost-Infused Iron at the altar."]
+	quest.1C0000000000001A.title: "Frost-Infused Iron"
+	quest.1C0000000000001B.quest_desc: ["Spirit-infuse an Iron Ingot into Healing-Infused Iron at the altar."]
+	quest.1C0000000000001B.title: "Healing-Infused Iron"
+	quest.1C0000000000001C.quest_desc: ["Spirit-infuse an Iron Ingot into Lightning-Infused Iron at the altar."]
+	quest.1C0000000000001C.title: "Lightning-Infused Iron"
+	quest.1C0000000000001D.quest_desc: ["Spirit-infuse an Iron Ingot into Soul-Infused Iron at the altar."]
+	quest.1C0000000000001D.title: "Soul-Infused Iron"
+	quest.1C0000000000001E.quest_desc: ["A Core Augment for the Spirit Catalyzer."]
+	quest.1C0000000000001E.title: "Caustic Catalyst"
+	quest.1C0000000000001F.quest_desc: ["A Core Augment for the Spirit Catalyzer."]
+	quest.1C0000000000001F.title: "Resonance Tuner"
+	quest.1C00000000000020.quest_desc: ["A Core Augment for the Spirit Catalyzer."]
+	quest.1C00000000000020.title: "Stellar Mechanism"
+	quest.1C00000000000021.quest_desc: ["The Arcane-and-Eldritch opposition core. Malum's own notes call it a warning, not a recommendation: Arcane floods into Eldritch and the result is a corruptive explosion that leaves Blight behind."]
+	quest.1C00000000000021.title: "Suspicious Device"
+	quest.1C00000000000022.quest_desc: ["A Core Augment for the Spirit Catalyzer."]
+	quest.1C00000000000022.title: "Sympathy Drive"
+	quest.1C00000000000023.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000023.title: "Accelerating Inlay"
+	quest.1C00000000000024.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000024.title: "Blazing Diode"
+	quest.1C00000000000025.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000025.title: "Impurity Stabilizer"
+	quest.1C00000000000026.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000026.title: "Intricate Assembly"
+	quest.1C00000000000027.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000027.title: "Mending Diffuser"
+	quest.1C00000000000028.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000028.title: "Prismatic Focus Lens"
+	quest.1C00000000000029.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C00000000000029.title: "Shielding Apparatus"
+	quest.1C0000000000002A.quest_desc: ["An Augment. Up to four sit in the crucible itself; duplicates compound."]
+	quest.1C0000000000002A.title: "Warping Engine"
+	quest.1C00000000000045.quest_desc: ["At the Spirit Altar, weave 4 Wool with Hex Ash, Spiritual Dust, 5 String and 3 Leather. Sacred, Aerial and Earthen spirits bind it into one Soulwoven Silk."]
+	quest.1C00000000000045.title: "Soulwoven Silk"
+	quest.1C00000000000046.quest_desc: ["Craft Soulwoven Silk in the centre of a 3x3 grid with 8 Arcane Essence around it."]
+	quest.1C00000000000046.title: "Arcane Cloth"
+	quest.1C00000000000047.quest_desc: ["Spirit-infuse Arcane Cloth with 2 Soulwoven Silk, 3 Phantom Membranes and 8 String, paid in Sacred, Aerial and Arcane spirits."]
+	quest.1C00000000000047.title: "Astral Weave"
+	quest.1C00000000000048.quest_desc: ["At the Hephaestus Forge, bind a Bundle with 4 Soulwoven Silk and 4 String for 30 Aureal and 1000 Blood."]
+	quest.1C00000000000048.title: "Soulwoven Pouch"
+	quest.1C00000000000049.quest_desc: ["At a Tier-I Hephaestus Forge, feed the Soulwoven Pouch 3 Raven Feathers, 2 Soulwoven Silk, Grim Talc and 2 String."]
+	quest.1C00000000000049.title: "Ravenous Pouch"
+	quest.1C0000000000004A.quest_desc: ["At the Spirit Altar, reforge a Crude Scythe with 2 Dragon Bones, 6 Soulstained Steel Plating, 12 Malignant Lead and 20 Mnemonic Fragments, paid eight of every spirit."]
+	quest.1C0000000000004A.title: "Soulstained Steel Scythe"
+	quest.2B00000000000001.quest_desc: ["Mine and gather 64 Raw Zinc - the alloy metal Create runs on."]
+	quest.2B00000000000001.title: "Zinc from the hills"
+	quest.2B00000000000002.quest_desc: ["Mine 64 Andesite. The bulk of every early machine."]
+	quest.2B00000000000002.title: "Andesite by the stack"
+	quest.2B00000000000003.quest_desc: ["Double-smelt Zinc Ingot + Andesite on the Brick Forge into Andesite Alloy (the crafting and mixing routes are gone). Bank 64."]
+	quest.2B00000000000003.title: "Andesite Alloy"
+	quest.2B00000000000004.quest_desc: ["Cut 16 Shafts from Andesite Alloy."]
+	quest.2B00000000000004.title: "Sixteen shafts"
+	quest.2B00000000000005.quest_desc: ["Assemble a windmill: one Windmill Bearing (a Hephaestus ritual of Polished Deepslate, 4 Shafts and 2 Deorum Nuggets) and sixteen Windmill Sails."]
+	quest.2B00000000000005.title: "The Windmill"
+	quest.2B00000000000006.quest_desc: ["A Hephaestus ritual stuffs String with 2 Planks and 6 Wool (20 aureal). Optional - but without them a siren's song will walk you into the sea."]
+	quest.2B00000000000006.title: "Earplugs"
+	quest.2B00000000000007.quest_desc: ["Hunt sirens off the coast - wearing the Earplugs, if you were sensible - until one yields a Siren Tear."]
+	quest.2B00000000000007.title: "A Siren's Tear"
+	quest.2B00000000000008.quest_desc: ["A Hephaestus ritual around a Siren Tear: 2 Colossal Iron, 2 Gilded Plate, a Gilded Ingot smithing template, 2 Amethyst and an Emerald (200 aureal / 10000 blood / 10 souls). Right-click it to summon Eldorath."]
+	quest.2B00000000000008.title: "Builder Stone"
+	quest.2B00000000000009.quest_desc: ["Defeat Eldorath the Ancient Builder, the diamond keeper."]
+	quest.2B00000000000009.title: "Slay Eldorath"
+	quest.2B0000000000000A.quest_desc: ["Gather 3 Diamonds from the deeps Eldorath guarded."]
+	quest.2B0000000000000A.title: "A few diamonds"
+	quest.2B0000000000000B.quest_desc: ["Carve a Diamond pickaxe head at the Carving Station."]
+	quest.2B0000000000000B.title: "Diamond pickaxe head"
+	quest.2B0000000000000C.quest_desc: ["Stockpile 64 Diamonds."]
+	quest.2B0000000000000C.title: "A king's ransom"
+	quest.2B0000000000000D.quest_desc: ["Carve an Amethyst Slate at the Carving Station - amethyst cuts cleaner than stone and holds an edge far longer."]
+	quest.2B0000000000000D.title: "An Amethyst Slate"
+	quest.2B0000000000000E.quest_desc: ["Carve the slate into an Amethyst pickaxe head, then socket it into a blueprint. It is the pickaxe that breaks Soulstone Ore - and it swings faster than anything else at its tier."]
+	quest.2B0000000000000E.title: "Amethyst pickaxe head"
+	quest.2B0000000000000F.quest_desc: ["Take the amethyst pickaxe to Soulstone Ore and bring back four Raw Soulstone. The richest seams are in and around the Weeping Well."]
+	quest.2B0000000000000F.title: "Raw Soulstone"
+	quest.2B00000000000010.quest_desc: ["A plain Brick-Forge alloy now: 1 Diamond + 1 Raw Soulstone into Refined Soulstone (the mallet strike, charcoal and furnace routes are all gone)."]
+	quest.2B00000000000010.title: "Refined Soulstone"
+	quest.2B00000000000011.quest_desc: ["At the Hephaestus Forge, bind Runewood Planks, 4 Refined Soulstone and 4 Gold Plates (500 aureal / 5000 blood / 10 souls / 100 XP) into Malum's Spirit Altar."]
+	quest.2B00000000000011.title: "The Spirit Altar"
+	quest.2B00000000000012.quest_desc: ["A Hephaestus ritual now makes Brass: a Colossal Iron core with Deorum, 2 Zinc and 2 Rose Gold yields 2 Brass Ingots. The Brick-Forge alloy route is gone."]
+	quest.2B00000000000012.title: "Brass Ingot"
+	quest.2B00000000000013.quest_desc: ["Apply a Brass Ingot onto a placed Edelwood Log - the log takes the casing."]
+	quest.2B00000000000013.title: "Brass Casing"
+	quest.2B00000000000014.quest_desc: ["The Spirit Altar now makes Electron Tubes: Natural Quartz infused with Redstone and Slag-cast Gold and Iron Plates, paid in Arcane and Aerial spirits. Bank nine."]
+	quest.2B00000000000014.title: "Nine Electron Tubes"
+	quest.2B00000000000015.quest_desc: ["Bring down Ashlord, the Infernal Dragon, atop its Dragon Tower."]
+	quest.2B00000000000015.title: "Slay the Ashlord"
+	quest.2B00000000000016.quest_desc: ["Collect 9 Dragon Bones from the Ashlord."]
+	quest.2B00000000000016.title: "Nine Dragon Bones"
+	quest.2B00000000000017.quest_desc: ["A Hephaestus ritual now: a Redstone core with 4 Iron Ingots on the pedestals, no essence cost. (The forge-strike recipe is gone and Iron's Spellbooks' 3x3 Wayward Compass recipe is disabled.)"]
+	quest.2B00000000000017.title: "Compass"
+	quest.2B00000000000018.quest_desc: ["A Hephaestus ritual binds a Compass with 2 Arcane Essence, 4 Runes and 2 Ender Pearls (4 souls / 10 XP). The trapped soul points toward its home - the catacombs."]
+	quest.2B00000000000018.title: "Wayward Compass"
+	quest.2B00000000000019.quest_desc: ["Follow the Wayward Compass into the catacombs and put the Dead King down. He always yields his Decrepit Scythe."]
+	quest.2B00000000000019.title: "The Dead King"
+	quest.2B0000000000001A.quest_desc: ["Reforge the Decrepit Scythe at the Hephaestus Forge with Colossal Iron, 3 Iron, 2 Dragon Bones, a Gilded Ingot smithing template and a Lantern (1000 aureal / 1000 blood / 10 souls) into Malum's Crude Scythe."]
+	quest.2B0000000000001A.title: "harvest time"
+	quest.2B0000000000001B.quest_desc: ["Reap 64 spirits with the scythe beside a Spirit Altar. Any combination of the eight types counts."]
+	quest.2B0000000000001B.title: "Among Us"
+	quest.2B0000000000001C.quest_desc: ["Every road ends here. The Spirit Altar binds a Brass Casing with a Dragon Bone, an Electron Tube, a Cogwheel and a Diamond (4 Eldritch / 4 Earthen / 4 Arcane) into ONE Crafter. Build nine."]
+	quest.2B0000000000001C.title: "Nine Mechanical Crafters"
+	quest.2B0000000000001D.quest_desc: ["Now the wall builds itself: a crafter-only recipe of Andesite Alloy, Electron Tube, Shafts, Brass Casing and a Cogwheel. Make sixteen more."]
+	quest.2B0000000000001D.title: "Crafters crafting crafters"
+	quest.2B0000000000001E.quest_desc: ["A 5x5 crafter wall: an Edelwood Plank ring around Null Slate corners, Cogwheel sides and a Creaking Heart at its centre. The grid, at last."]
+	quest.2B0000000000001E.title: "Crafting Crafting Table"
+	quest.2B0000000000001F.quest_desc: ["Crafting has to wait for just a little longer."]
+	quest.2B0000000000001F.title: "Not So Fast"
+	quest.2B00000000000020.quest_desc: ["The smelting road. Gather what you need above, smelt it below."]
+	quest.2B00000000000020.title: "Hey Phineas, Whatcha Smeltin'?"
+	quest.2B00000000000021.quest_desc: ["Hunt two Sea Serpents off the coast."]
+	quest.2B00000000000021.title: "Sea Serpents"
+	quest.2B00000000000022.quest_desc: ["Bring back 3 Blaze Powder from the Nether."]
+	quest.2B00000000000022.title: "Blaze Powder"
+	quest.2B00000000000023.quest_desc: ["Find or craft a Bucket."]
+	quest.2B00000000000023.title: "A Bucket"
+	quest.2B00000000000024.quest_desc: ["Forge a Fire-Infused Iron Ingot."]
+	quest.2B00000000000024.title: "Fire-Infused Iron"
+	quest.2B00000000000025.quest_desc: ["Mine 4 Runes from Runic Stones."]
+	quest.2B00000000000025.title: "Mine a Rune"
+	quest.2B00000000000026.quest_desc: ["Mine 16 Netherrack and 2 Magma Blocks."]
+	quest.2B00000000000026.title: "Into the Nether"
+	quest.2B00000000000027.quest_desc: ["Craft a Furnace - an iron frame over a cobblestone/netherrack base (crafting table or Mechanical Crafter)."]
+	quest.2B00000000000027.title: "Furnace"
+	quest.2B00000000000028.quest_desc: ["Craft a Blast Furnace: a Furnace ringed in Fire-Infused Iron over Smooth Stone and a Magma Block."]
+	quest.2B00000000000028.title: "Blast Furnace"
+	quest.2B00000000000029.quest_desc: ["Spirit-infuse a Brick Forge with Blast Furnaces, Chiseled Polished Darkstone, Runes and Fire Lilies into a Clibano Core."]
+	quest.2B00000000000029.title: "The Clibano Core"
+	quest.2B0000000000002A.quest_desc: ["Raise the Slag foundry: a Melter, a Fluid Interface, a Casting Table and Basin, two Drains and eight Crucibles."]
+	quest.2B0000000000002A.title: "Light The Forge"
+	quest.2B0000000000002B.quest_desc: ["Mine 8 Raw Brilliance."]
+	quest.2B0000000000002B.title: "Raw Brilliance"
+	quest.2B0000000000002C.quest_desc: ["Refine into 4 Refined Brilliance (Brick Forge 2->1; Furnace or Blast 1->1)."]
+	quest.2B0000000000002C.title: "Refined Brilliance"
+	quest.2B0000000000002D.quest_desc: ["Gather 4 Mnemonic Fragments."]
+	quest.2B0000000000002D.title: "Mnemonic Fragments"
+	quest.2B0000000000002E.quest_desc: ["Slay a Cyclops for its Eye."]
+	quest.2B0000000000002E.title: "The Cyclops"
+	quest.2B0000000000002F.quest_desc: ["Spirit-infuse a Cyclops Eye with Mnemonic Fragments, Null Slate, Arcane Ingots, Ender Pearls, a Stymphalian Feather, Andesite Alloy and Soulstained Steel into the Twilight Concord."]
+	quest.2B0000000000002F.title: "Twilight Concord"
+	quest.2B00000000000030.quest_desc: ["Build the portal - a Liquid Prismarine pool ringed with Fire, Frost and Lightning Lilies - throw in the Twilight Concord and step through into the Twilight Forest."]
+	quest.2B00000000000030.title: "Into the Twilight"
+	quest.2B00000000000031.quest_desc: ["Defeat the Naga in its courtyard."]
+	quest.2B00000000000031.title: "Otherworldly Serpent"
+	quest.2B00000000000032.quest_desc: ["Hephaestus-forge the Naga Trophy into a Shield Maiden (2 Firefly Jars, a Precision Mechanism, a Bound Soul Ingot, a Hippocampus Fin, a Fang of the Hound Leader, a Nightmare Claw and a Permafrost Shard). It is your key to the Lich - be sure to dupe it if you have friends :)"]
+	quest.2B00000000000032.title: "The Shield Maiden"
+	quest.2B00000000000033.quest_desc: ["Carry the Shield Maiden up the Lich Tower and break his three shield phases. His trophy is worth duping at the Spirit Altar - one trophy in, two out."]
+	quest.2B00000000000033.title: "The Twilight Lich"
+	quest.2B00000000000034.quest_desc: ["The kinetic road forks: Create's machine line (top row) and the fluid-and-fire line (below)."]
+	quest.2B00000000000034.title: "Create what?"
+	quest.2B00000000000035.quest_desc: ["Craft a Depot (Andesite Alloy around an Andesite Casing)."]
+	quest.2B00000000000035.title: "Depot"
+	quest.2B00000000000036.quest_desc: ["Craft a Basin."]
+	quest.2B00000000000036.title: "Basin"
+	quest.2B00000000000037.quest_desc: ["Craft a Mechanical Press."]
+	quest.2B00000000000037.title: "Mechanical Press"
+	quest.2B00000000000038.quest_desc: ["Press 8 each of Iron, Gold, Copper and Brass Sheets."]
+	quest.2B00000000000038.title: "Pressure Point"
+	quest.2B00000000000039.quest_desc: ["Craft a Mechanical Mixer."]
+	quest.2B00000000000039.title: "Mechanical Mixer"
+	quest.2B0000000000003A.quest_desc: ["Craft an Encased Fan."]
+	quest.2B0000000000003A.title: "Encased Fan"
+	quest.2B0000000000003B.quest_desc: ["Craft a Deployer - a Brass Hand, Andesite Casing, Shaft, Electron Tube and Cogwheel (or the 5x5 crafter version)."]
+	quest.2B0000000000003B.title: "The Deployer"
+	quest.2B0000000000003C.quest_desc: ["Build fluid handling: a Spout and an Item Drain."]
+	quest.2B0000000000003C.title: "Spout and Drain"
+	quest.2B0000000000003D.quest_desc: ["Mechanical-craft two Crushing Wheels - an Andesite Alloy ring with Obsidiansteel where the planks were and a Canopy Wood core. You need a facing pair to crush."]
+	quest.2B0000000000003D.title: "Crushing Wheels"
+	quest.2B0000000000003E.quest_desc: ["Gather a Dark Metal Ingot from the Born in Chaos line."]
+	quest.2B0000000000003E.title: "Dark Metal Ingot"
+	quest.2B0000000000003F.quest_desc: ["Forge an Empty Blaze Burner: an Iron Sheet shell and Deep Alloy base around a Netherrack core (the 3x3, or the 5x5 crafter version)."]
+	quest.2B0000000000003F.title: "Empty Blaze Burner"
+	quest.2B00000000000040.quest_desc: ["Light it - capture a Blaze the old way, or spirit-infuse the Empty Burner with 12 Nether Brick, 2 Fire-Infused Iron, a Dark Metal Ingot and a Campfire (16 Wicked / 16 Earthen / 32 Infernal)."]
+	quest.2B00000000000040.title: "Blaze Burner"
+	quest.2B00000000000041.quest_desc: ["Sequence-assemble a Precision Mechanism: on a Brass Sheet deploy a Cogwheel, a Large Cogwheel and a Lightning-Infused Iron Nugget, looped."]
+	quest.2B00000000000041.title: "Precision Mechanism"
+	quest.2B00000000000042.quest_desc: ["Mechanical-craft a Mechanical Arm - Brass Casing, a Precision Mechanism, Brass Hands and Shafts (the 3x3 uses brass sheet + brass hand)."]
+	quest.2B00000000000042.title: "Mechanical Arm"
+	quest.2B00000000000043.quest_desc: ["The first real test of your factory. HINT: automate this - hand-assembling 16 Structural Beams (shaft -> sequenced assembly) is misery. Then chain them into a Large Water Wheel."]
+	quest.2B00000000000043.title: "First Real Challenge"
+	quest.2B00000000000044.quest_desc: ["The last thing Chapter 2 asks of you. A Tier-1 Hephaestus ritual burns a Crafting Table down into a licence: 1000 Aureal, 10 Souls, 10000 Blood and 900 Ink, around eight pedestals - Exanimate Essence, a Precision Mechanism, a Bound Soul Ingot, a Totemic Gold Ingot, an Electron Tube, a Structural Beam, a Blank Runestone and a Book and Quill. Consume it and the 3x3 grid is yours for good; it survives death and follows you everywhere. Until then every crafting table refuses to open."]
+	quest.2B00000000000044.title: "The Crafting License"
+	quest.2B00000000000045.quest_desc: ["On the licensed table: Chiseled Arcane Darkstone, the three gem shards, an Arcane Spirit and a Brass Sheet (strike Brass Ingots on the forge)."]
+	quest.2B00000000000045.title: "Fusion Shrine"
+	quest.2B00000000000046.quest_desc: ["Craft a Topaz/Amethyst/Citrine pedestal, then upgrade to the All-Basic core at the pedestal itself. Pastel tiers one and two."]
+	quest.2B00000000000046.title: "BASIC pedestal"
+	quest.2B00000000000047.quest_desc: ["At midnight under a new moon, the Fusion Shrine fuses the three shards over lava into Onyx. Craft TWO Onyx Pedestals while the All-Basic core still stands."]
+	quest.2B00000000000047.title: "Lunar onyx"
+	quest.2B00000000000048.quest_desc: ["Hephaestus-forge the Lich Trophy into an Acolyte of Deflection (2 Dragon Bones, 2 Hallowed Gold Ingots, a Shattered Skull, a Precision Mechanism, a Bound Soul Ingot and a Magic Map Focus). Dupe the trophy at the Spirit Altar first if you want to keep one on the wall."]
+	quest.2B00000000000048.title: "The Acolyte of Deflection"
+	quest.3B00000000000001.quest_desc: ["A Tier-1 Forge ritual consumes the All-Basic Pedestal core with Soulstone, Hallowed Gold and a Seal. The SIMPLE era ends so the Nether can open."]
+	quest.3B00000000000001.title: "Nether Lintel Core"
+	quest.3B00000000000002.quest_desc: ["The Crafter wall sets the Core into eight Obsidian. In the full design this keys the portal; here it is your gate trophy - light the portal and go."]
+	quest.3B00000000000002.title: "The Nether Lintel"
+	quest.3B00000000000003.quest_desc: ["Break real hostile spawners in fortresses and dungeons for four Spawner Scrap. Placed or copied spawners do not count in the full design."]
+	quest.3B00000000000003.title: "Spawner scrap"
+	quest.3B00000000000004.quest_desc: ["Spirit-infuse four obelisks (Runewood + Hallowed Gold + spirits). Four around the altar is Bertie Level II - and a Resonance proves it."]
+	quest.3B00000000000004.title: "Four Runewood Obelisks"
+	quest.3B00000000000005.quest_desc: ["Infuse Refined Soulstone with Aerial spirits while the obelisks accelerate. The physical Level-II witness."]
+	quest.3B00000000000005.title: "Runewood Resonance"
+	quest.3B00000000000006.quest_desc: ["Each Pylon consumes an Obelisk, Soulstone, Hex Ash, Soulwood and a Resonance. Fuel them with Arcane Spirit: Bertie Level III."]
+	quest.3B00000000000006.title: "Four Arcana Pylons"
+	quest.3B00000000000007.quest_desc: ["Mechanical-craft it from Runewood, Hallowed Gold, Soulstone and a full Pylon. Runeworking opens."]
+	quest.3B00000000000007.title: "Runic Workbench"
+	quest.3B00000000000008.quest_desc: ["Tainted Rock + Aqueous spirits at the Runic Workbench. The physical witness Hephaestus II demands."]
+	quest.3B00000000000008.title: "Rune of Ailment Cleansing"
+	quest.3B00000000000009.quest_desc: ["Infuse Arcane Crystal Dust with Arcane spirits while four fueled Pylons run. Proof of Level III."]
+	quest.3B00000000000009.title: "Arcana Resonance"
+	quest.3B0000000000000A.quest_desc: ["The upgrade ritual: Edelwood Planks core, 4 Arcane Crystal, 4 Spawner Scrap, 4 Blaze Rods, the Rune, the Resonance - and 500 Aureal / 6000 Blood / 10 Souls."]
+	quest.3B0000000000000A.title: "Hephaestus Forge II"
+	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
+	quest.3B0000000000000B.title: "Deep Waters Key"
+	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
+	quest.3B0000000000000C.title: "Mine Aquamarine"
+	quest.3B0000000000000D.quest_desc: ["Sixteen Flaming Opal. The shrine drinks a lot of it."]
+	quest.3B0000000000000D.title: "Mine Flaming Opal"
+	quest.3B0000000000000E.quest_desc: ["Find a Pearl in the deep."]
+	quest.3B0000000000000E.title: "Get a Pearl"
+	quest.3B0000000000000F.quest_desc: ["Raise the shrine around a Conduit, down in the Deep Waters and nowhere else: a mossy floor and roof, a Flaming Opal Pillar above and below the Conduit, four diagonal posts, and aquamarine crystals ringing the base and crowning the top. Then use a Crowned Jelly on the Conduit. If it has room - water below, six blocks out, and a clear column overhead - the whole thing floods and a Stormcall Altar rises where the Conduit stood."]
+	quest.3B0000000000000F.title: "Build the Shrine"
+	quest.3B00000000000010.quest_desc: ["Hunt the Kraken in the open ocean."]
+	quest.3B00000000000010.title: "Nerakyss, The Kraken"
+	quest.3B00000000000011.quest_desc: ["Take the Abyss Eye from the drowned depths."]
+	quest.3B00000000000011.title: "Eye of the Abyss"
+	quest.3B00000000000012.quest_desc: ["Find a Desert Pyramid and go inside - mind the pressure plate. Its treasure holds a map, and the map leads to the Gorgon."]
+	quest.3B00000000000012.title: "The Desert Pyramid"
+	quest.3B00000000000013.quest_desc: ["Bring down Sirok where the sand runs deep."]
+	quest.3B00000000000013.title: "Sirok, The Sandworm"
+	quest.3B00000000000014.quest_desc: ["Take the Desert Eye from the dunes."]
+	quest.3B00000000000014.title: "Eye of the Desert"
+	quest.3B00000000000015.quest_desc: ["Climb to the Yeti Lair and put the Alpha down."]
+	quest.3B00000000000015.title: "The Alpha Yeti"
+	quest.3B00000000000016.quest_desc: ["Take the Aurora Palace and end the Snow Queen."]
+	quest.3B00000000000016.title: "The Snow Queen"
+	quest.3B00000000000017.quest_desc: ["A second yeti, and a worse one. Kill Skor."]
+	quest.3B00000000000017.title: "Skor, The Yeti"
+	quest.3B00000000000018.quest_desc: ["Take the Cursed Eye from the ice."]
+	quest.3B00000000000018.title: "Eye of the Curse"
+	quest.3B00000000000019.quest_desc: ["Take the Storm Eye out of the sky."]
+	quest.3B00000000000019.title: "Eye of the Storm"
+	quest.3B0000000000001A.quest_desc: ["Follow the pyramid's map to the Gorgon Temple and kill what lives in it. Do not look at her."]
+	quest.3B0000000000001A.title: "The Gorgon"
+	quest.3B0000000000001B.quest_desc: ["Take the Goblin Knight Stronghold and put the Knight Phantoms down - they fight in numbers."]
+	quest.3B0000000000001B.title: "The Knight Phantoms"
+	quest.3B0000000000001C.quest_desc: ["Climb the Dark Tower and bring down the Ur-Ghast."]
+	quest.3B0000000000001C.title: "The Ur-Ghast"
+	quest.3B0000000000001D.quest_desc: ["Gather the whole shrine before you start placing it, because it only counts when the last block lands: 130 Mossy Stone Bricks for the floor and roof, the aquamarine crystals that ring and crown it, two Flaming Opal Pillars, and the Conduit at its heart."]
+	quest.3B0000000000001D.title: "The Shrine in pieces"
+	quest.3B0000000000001E.quest_desc: ["The shrine is lit and the deep has noticed. Hunt down the Man O' War."]
+	quest.3B0000000000001E.title: "Man O' War"
+	quest.3B0000000000001F.quest_desc: ["Take the Gorgon's head to the bench and read the sand with it: two Death Worm Chitin above and below, Glow Ink Sacs either side of an Empty Map, Rare Ink beneath. The head is only the lens - it stays in the grid. Craft it as a player and the chart reads itself; let a machine craft it and you must right-click it yourself."]
+	quest.3B0000000000001F.title: "Sirok's Nest Map"
+	quest.3B00000000000020.quest_desc: ["Sea Serpent Scales around an Empty Map, Glow Ink either side, Rare Ink beneath - and a Black Pearl at the top, which the chart only reads and does not spend. It charts the Kraken's ship."]
+	quest.3B00000000000020.title: "The Kraken's Ship"
+	quest.3B00000000000021.quest_desc: ["The Snow Queen's Trophy reads the ice for you - it stays in the grid. Ring it with Alpha Yeti Fur around an Empty Map, Glow Ink and Rare Ink, and the chart finds the hideout."]
+	quest.3B00000000000021.title: "Skor's Hideout"
+	quest.3B00000000000022.quest_desc: ["Take a Coral Chunk out of the drowned deep."]
+	quest.3B00000000000022.title: "Coral Chunk"
+	quest.3B00000000000023.quest_desc: ["The dunes pay in two currencies: Ancient Metal and the bones of the Koboletons."]
+	quest.3B00000000000023.title: "Bone and Ancient Metal"
+	quest.3B00000000000024.quest_desc: ["Two metals come off the ice: Cursium and Black Steel."]
+	quest.3B00000000000024.title: "Cursium and Black Steel"
+	quest.3B00000000000025.quest_desc: ["The sky leaves two things behind: Lacrima, and the Essence of the Storm."]
+	quest.3B00000000000025.title: "Lacrima and Storm"
+	quest.3B00000000000026.quest_desc: ["A 7x7 crafter wall: Astral Weave at the corners, Soul-Stained Steel Plating through the frame, Flaming Opal and Blocks of Aquamarine inside it, Diamond Blocks and Coral Chunks around a Black Pearl at the centre."]
+	quest.3B00000000000026.title: "The Abyssal Core"
+	quest.3B00000000000027.quest_desc: ["A 7x7 crafter wall: Brass Sheet edge, Gilded Plate at the four mid-points, Cthonic Gold and Blocks of Rose Gold woven with bone - Koboleton or Dragon, either will do - around a Block of Ancient Metal."]
+	quest.3B00000000000027.title: "The Desert Core"
+	quest.3B00000000000028.quest_desc: ["A 7x7 crafter wall: Blocks of Deep Alloy at the corners, Imitation Flesh through the frame, Cursed Sapballs and Black Steel closing on a Cursium Ingot."]
+	quest.3B00000000000028.title: "The Cursed Core"
+	quest.3B00000000000029.quest_desc: ["A 7x7 crafter wall: Bottles o' Lightning and Lacrima along the edge, Lapis, Wind Nuclei, Lightning-Infused Iron and the Essence of the Storm around a Heart of the Sea."]
+	quest.3B00000000000029.title: "The Storm Core"
+	quest.3B0000000000002A.quest_desc: ["Four cores, four elements, one upgrade. A Carved Edelwood Log at the heart, the Abyssal, Desert, Cursed and Storm Cores on the pedestals with 4 Arcane Crystal - and every essence the Tier I forge can hold: 1000 Aureal, 10 Souls, 10000 Blood and 900 Ink. It drains the forge dry and comes back a tier higher."]
+	quest.3B0000000000002A.title: "Hephaestus Forge II"
+	quest.3B0000000000002B.quest_desc: ["Find a Fire Dragon and bring it down. Older is better - the drops scale with the dragon's size."]
+	quest.3B0000000000002B.title: "Dragon Hunt"
+	quest.3B0000000000002C.quest_desc: ["Four Fire Dragon Scales - red, green, bronze or gray, any mix. Colour follows the dragon you killed."]
+	quest.3B0000000000002C.title: "Gather Scales"
+	quest.3B0000000000002D.quest_desc: ["Two Fire Dragon Blood."]
+	quest.3B0000000000002D.title: "Gather Blood"
+	quest.3B0000000000002E.quest_desc: ["Take the Fire Dragon Heart."]
+	quest.3B0000000000002E.title: "The Dragon's Heart"
+	quest.3B0000000000002F.quest_desc: ["Placeholder root - this line has no content yet."]
+	quest.3B0000000000002F.title: "Second Line"
+	quest.3B00000000000030.quest_desc: ["Placeholder root - this line has no content yet."]
+	quest.3B00000000000030.title: "Third Line"
+	quest.3B00000000000031.quest_desc: ["Placeholder root - this line has no content yet."]
+	quest.3B00000000000031.title: "Fourth Line"
+	quest.4B00000000000001.quest_desc: ["Optional: a Tier-2 ritual binds a Compass to the nearest Ancient City. Use it and follow the pulse."]
+	quest.4B00000000000001.title: "Echoing City Compass"
+	quest.4B00000000000002.quest_desc: ["Wake it. Kill it honestly. Its guaranteed Warden Carapace becomes a reusable pattern."]
+	quest.4B00000000000002.title: "The Warden"
+	quest.4B00000000000003.quest_desc: ["On the licensed table: Carapace + Amethyst + Sculk + Phantom Membrane. One pattern replaces every future Echo Shard grind."]
+	quest.4B00000000000003.title: "Warden Echo Pattern"
+	quest.4B00000000000004.quest_desc: ["The Spirit Instiller unwinds the Pattern into 32 Reinforced Echo Shards - the whole stage bill in one ritual."]
+	quest.4B00000000000004.title: "Reinforced echoes"
+	quest.4B00000000000005.quest_desc: ["Hephaestus II builds the Spirit Crucible from a Reinforced Echo; the altar infuses its Catalyzer companion from Onyx, Hallowed Gold and Brass."]
+	quest.4B00000000000005.title: "Crucible and Catalyzer"
+	quest.4B00000000000006.quest_desc: ["Mechanical-craft Deepslate Tiles, Sculk and Onyx into the Echo Lock - the key of the deep frame."]
+	quest.4B00000000000006.title: "The Echo Lock"
+	quest.4B00000000000007.quest_desc: ["Open the reinforced-deepslate frame in the Ancient City with the Heart of the Deep and descend. Clear the Ancient Temple."]
+	quest.4B00000000000007.title: "The Otherside"
+	quest.4B00000000000008.quest_desc: ["The Temple's Soul Crystal catalyzes spirit focusing. In the full design it is team-stamped and returned; treasure it."]
+	quest.4B00000000000008.title: "Temple catalyst"
+	quest.4B00000000000009.quest_desc: ["Infuse a Reinforced Echo with the Soul Crystal and sixteen spirits. The anchor material of everything below."]
+	quest.4B00000000000009.title: "Spirit-Focused Echo"
+	quest.4B0000000000000A.quest_desc: ["Hephaestus II binds a Warden Carapace, a Twilight Lich Trophy and an Onyx Shard around a Spirit-Focused Echo. Use it to DESCEND into Imbrifer - before any Dragon."]
+	quest.4B0000000000000A.title: "The Descent Anchor"
+	quest.4B0000000000000B.quest_desc: ["Your first Moonstone Shard must come from the deep dark colors of Imbrifer. The Instiller can then grow one shard into forty."]
+	quest.4B0000000000000B.title: "Imbrifer moonstone"
+	quest.4B0000000000000C.quest_desc: ["Chiseled Polished Darkstone core, 4 Arcane Crystal, 4 Deorum, 4 Moonstone - 1000 Aureal / 9000 Blood / 50 Souls. The final Stage-1 tier."]
+	quest.4B0000000000000C.title: "Hephaestus Forge III"
+	quest.5B00000000000001.quest_desc: ["Summon and destroy it. Keep the Nether Star - you will want more than one before the end."]
+	quest.5B00000000000001.title: "The Wither"
+	quest.5B00000000000002.quest_desc: ["End Remastered replaces the vanilla eye hunt: twelve unique eyes hide across the world - dungeons, temples, barters, bosses. Check each eye in EMI and read its tooltip for where it hides. Gather all twelve."]
+	quest.5B00000000000002.title: "The twelve eyes"
+	quest.5B00000000000003.quest_desc: ["Find the stronghold and set all twelve End Remastered eyes into the portal frames. The way to the End opens."]
+	quest.5B00000000000003.title: "The open way"
+	quest.5B00000000000004.quest_desc: ["One honest kill. The End Gateway and the outer islands open."]
+	quest.5B00000000000004.title: "The Ender Dragon"
+	quest.5B00000000000005.quest_desc: ["Better End smithing begins with a humble 250-durability Iron Hammer on the licensed table."]
+	quest.5B00000000000005.title: "Iron Hammer"
+	quest.5B00000000000006.quest_desc: ["Outer-End Thallasium builds the level-2 anvil. Hammer Ender Pearls on it into Ender Dust - seventeen in all."]
+	quest.5B00000000000006.title: "Thallasium Anvil"
+	quest.5B00000000000007.quest_desc: ["Thallasium + End Stone Bricks + two furnaces. The End's own fuel-fired alloy station."]
+	quest.5B00000000000007.title: "End Stone Smelter"
+	quest.5B00000000000008.quest_desc: ["Iron + Ender Dust, 450 ticks. Seventeen ingots: thirteen for Aeternium, four for Moonsteel."]
+	quest.5B00000000000008.title: "Terminite"
+	quest.5B00000000000009.quest_desc: ["Terminite + Netherite, 850 ticks. Thirteen. The End's adventure alloy - no machine ever touched it."]
+	quest.5B00000000000009.title: "Aeternium"
+	quest.6B00000000000001.quest_desc: ["Grow moonstone (Instiller), craft the Moonstone Pedestal at ADVANCED, then raise the full COMPLEX shell with its 28 directional chiseled runes."]
+	quest.6B00000000000001.title: "COMPLEX pedestal"
+	quest.6B00000000000002.quest_desc: ["The five-color pedestal craft: Dragon's Breath + Reinforced Echo under 4 of each gem powder - four Seals per batch, eight total."]
+	quest.6B00000000000002.title: "Complex Spectrum Seals"
+	quest.6B00000000000003.quest_desc: ["Tier-3 ritual: Aeternium core, Soul-Stained Steel, Hallowed Gold and a Dragon Head (End Ship figureheads). The final Malum band opens."]
+	quest.6B00000000000003.title: "Soulbinding Brazier"
+	quest.6B00000000000004.quest_desc: ["Infuse a Dragon Head with Moonstone, Soul-Stained Steel and all eight spirits: four Authorities per ritual, eight total."]
+	quest.6B00000000000004.title: "Soulbound Authority"
+	quest.6B00000000000005.quest_desc: ["Forge the Weeping Compass, follow it to the natural Well, and return attuned. The black tear seals your oath."]
+	quest.6B00000000000005.title: "The Weeping Well"
+	quest.6B00000000000006.quest_desc: ["Clear the Burning Arena, place Burning Ashes on the Altar of Fire, and win. Three kills, nine Ignitium - rematch seals respawn him."]
+	quest.6B00000000000006.title: "Ignis, three times"
+	quest.6B00000000000007.quest_desc: ["The expanded 5x5 Crafter wall binds nine Ignitium in Kinetic Pattern Plates under Infernal spirits. Two lattices: one subdivides, one converges."]
+	quest.6B00000000000007.title: "Ignitium Lattice"
+	quest.6B00000000000008.quest_desc: ["One 3x3 pattern (plates + brass sheets around a Lattice) yields all eight Struts."]
+	quest.6B00000000000008.title: "Ignitium Struts"
+	quest.6B00000000000009.quest_desc: ["The Dragon Tower's Infernal Dragon drops 8-19 Dragon Bones per honest kill. Two kills guarantee sixteen."]
+	quest.6B00000000000009.title: "The Ashlord, twice"
+	quest.6B0000000000000A.quest_desc: ["Sixteen bones, four Aeternium, Moonstone Calcite and a Spirit-Focused Echo on the 5x5 wall. Two frames."]
+	quest.6B0000000000000A.title: "Dragonbone Frame"
+	quest.6B0000000000000B.quest_desc: ["One 3x3 pattern (Moonstone Calcite + Aeternium around a Frame) yields all eight Braces."]
+	quest.6B0000000000000B.title: "Dragonbone Braces"
+	quest.6B0000000000000C.quest_desc: ["The Instiller joins four Terminite with Moonstone Powder and Arcane Dust: the alloy of three magics. Four ingots."]
+	quest.6B0000000000000C.title: "Concordant Moonsteel"
+	quest.6B0000000000000D.quest_desc: ["Tier-3 only: Arcane Crystal core, four Deorum, eight Arcane spirits - 1000 Aureal / 2000 Blood. Four Seals."]
+	quest.6B0000000000000D.title: "Sovereign Seals"
+	quest.6B0000000000000E.quest_desc: ["A Dragon Head core with Authority, Spectrum Seal, Well Attunement, Lattice and Frame - 2500 Aureal / 12000 Blood / 64 Souls. Everything you are, twice over."]
+	quest.6B0000000000000E.title: "The Convergence Matrix"
+	quest.6B0000000000000F.quest_desc: ["The Crafter wall assembles Struts, Braces, End Stone Bricks, Reinforced Echoes and Moonstone Glass around a Matrix: Avaritia's Nether Crafting Table."]
+	quest.6B0000000000000F.title: "The 5x5 table"
+	quest.6B00000000000010.quest_desc: ["The mandatory 5x5: Struts, Braces, Spectrum Seals, Authorities, Moonsteel, Sovereign Seals around the second Matrix. Stage 1 ends here."]
+	quest.6B00000000000010.title: "MEKANISM ACCESS CORE"
+	quest.6B00000000000011.quest_desc: ["Bind the Core and be done. In the full design this handoff unlocks Tier 2 for your team - machines begin AFTER this moment, never before."]
+	quest.6B00000000000011.title: "Bind the Core"
+	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
+	quest.7B00000000000001.title: "Flimsy Journal"
+	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
+	quest.7B00000000000002.title: "Inscription Table"
+	quest.7B00000000000003.quest_desc: ["Craft the Scroll Forge - where spell scrolls are inscribed."]
+	quest.7B00000000000003.title: "Scroll Forge"
+	quest.7B00000000000004.quest_desc: ["Craft the Alchemist Cauldron - brew inks and reagents."]
+	quest.7B00000000000004.title: "Alchemist Cauldron"
+	quest.7B00000000000005.quest_desc: ["Craft the Arcane Anvil - upgrade and repair spell gear."]
+	quest.7B00000000000005.title: "Arcane Anvil"
+	quest.7B00000000000006.quest_desc: ["Obtain the Ironbound Tome."]
+	quest.7B00000000000006.title: "Book of Steel"
+	quest.7B00000000000007.quest_desc: ["Obtain the Rotten Spell Book."]
+	quest.7B00000000000007.title: "Rotten Spell Book"
+	quest.7B00000000000008.quest_desc: ["Obtain the Apprentice's Spell Book."]
+	quest.7B00000000000008.title: "Apprentice's Spell Book"
+	quest.7B00000000000009.quest_desc: ["Obtain the Enchanted Spell Book."]
+	quest.7B00000000000009.title: "Enchanted Spell Book"
+	quest.7B0000000000000A.quest_desc: ["Obtain the Necronomicon."]
+	quest.7B0000000000000A.title: "Necronomicon"
+	quest.7B0000000000000B.quest_desc: ["Obtain the Blaze Instruction Manual."]
+	quest.7B0000000000000B.title: "Blaze Instruction Manual"
+	quest.7B0000000000000C.quest_desc: ["Obtain the Frostbranded Book."]
+	quest.7B0000000000000C.title: "Frostbranded Book"
+	quest.7B0000000000000D.quest_desc: ["Obtain the Druidic Tome."]
+	quest.7B0000000000000D.title: "Druidic Tome"
+	quest.7B0000000000000E.quest_desc: ["Obtain the Villager Bible."]
+	quest.7B0000000000000E.title: "Villager Bible"
+	quest.7B0000000000000F.quest_desc: ["Obtain the Dragonskin Spell Book."]
+	quest.7B0000000000000F.title: "Dragonskin Spell Book"
+	quest.7B00000000000010.quest_desc: ["Obtain the Grimoire of Evokation."]
+	quest.7B00000000000010.title: "Grimoire of Evokation"
+	quest.7B00000000000011.quest_desc: ["Obtain the Vampiric Spell Book."]
+	quest.7B00000000000011.title: "Vampiric Spell Book"
+	quest.7B00000000000012.quest_desc: ["Obtain the Ignis Spellbook."]
+	quest.7B00000000000012.title: "Ignis Spellbook"
+	quest.7B00000000000013.quest_desc: ["Obtain the Codex of Malice."]
+	quest.7B00000000000013.title: "Codex of Malice"
+	quest.7B00000000000014.quest_desc: ["Obtain the Desert Spellbook."]
+	quest.7B00000000000014.title: "Desert Spellbook"
+	quest.7B00000000000015.quest_desc: ["Obtain the Book o' R'lyeh."]
+	quest.7B00000000000015.title: "Book o' R'lyeh"
+	quest.7B00000000000016.quest_desc: ["Obtain the Black Book."]
+	quest.7B00000000000016.title: "Black Book"
+	quest.7B00000000000017.quest_desc: ["Obtain the Volume of the Deep."]
+	quest.7B00000000000017.title: "Volume of the Deep"
+	quest.7B00000000000018.quest_desc: ["Obtain The Apocrypha."]
+	quest.7B00000000000018.title: "The Apocrypha"
+	quest.7B00000000000019.quest_desc: ["Obtain the Ancient Codex."]
+	quest.7B00000000000019.title: "Ancient Codex"
+	quest.7B0000000000001A.quest_desc: ["Obtain the Dragonmancer's Oathbook."]
+	quest.7B0000000000001A.title: "Dragonmancer's Oathbook"
+	quest.7B0000000000001B.quest_desc: ["Obtain the Grimoire of Color, vol.I."]
+	quest.7B0000000000001B.title: "Grimoire of Color, vol.I"
+	quest.7B0000000000001C.quest_desc: ["WIP"]
+	quest.7B0000000000001C.title: "one above all"
+	quest.7B0000000000001D.quest_desc: ["The Smithing Table heads the armoury below: every suit of armour in the pack, grouped by mod (a demo showcase, unlinked)."]
+	quest.7B0000000000001D.title: "Smithing Table"
+	quest.7B0000000000001E.quest_desc: ["The Carving Station heads the arsenal below: every weapon in the pack, grouped by mod (a demo showcase, unlinked)."]
+	quest.7B0000000000001E.title: "Carving Station"
+	quest.7B0000000000001F.quest_desc: ["Each Hazmat piece cuts radiation damage 25%; full set (with the Hazmat Mask) grants radiation immunity."]
+	quest.7B0000000000001F.title: "Hazmat Set"
+	quest.7B00000000000020.quest_desc: ["While worn: eating raw meat restores extra hunger and saturation (more with additional Primordial pieces)."]
+	quest.7B00000000000020.title: "Primordial Set"
+	quest.7B00000000000021.quest_desc: ["While worn: grants Water Breathing and increased swim speed."]
+	quest.7B00000000000021.title: "Diving Set"
+	quest.7B00000000000022.quest_desc: ["While worn: movement-speed boost that scales with remaining durability (largest when undamaged, shrinking as it wears down)."]
+	quest.7B00000000000022.title: "Gingerbread Set"
+	quest.7B00000000000023.quest_desc: ["While worn: bounce off the ground on landing and take no fall damage; sneak to stop bouncing."]
+	quest.7B00000000000023.title: "Rainbounce Set"
+	quest.7B00000000000024.quest_desc: ["While worn: delays imminent death, postponing an otherwise-fatal blow."]
+	quest.7B00000000000024.title: "Howling Set"
+	quest.7B00000000000025.quest_desc: ["Full set: Speed II, Jump Boost II, +3 block reach."]
+	quest.7B00000000000025.title: "Apprentice Builder Armor Set"
+	quest.7B00000000000026.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000026.title: "Arion Helmet Set"
+	quest.7B00000000000027.quest_desc: ["Full set: killing a mob heals 1 heart; immune to Hemorrhage."]
+	quest.7B00000000000027.title: "Bloody Armor Set"
+	quest.7B00000000000028.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000028.title: "Calamitous Armor Set"
+	quest.7B00000000000029.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000029.title: "Elvenite Armor Set"
+	quest.7B0000000000002A.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000002A.title: "Elvenite Halo Set"
+	quest.7B0000000000002B.quest_desc: ["Full set: Speed III, Jump Boost II, +4 block reach."]
+	quest.7B0000000000002B.title: "Expert Builder Armor Set"
+	quest.7B0000000000002C.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000002C.title: "Gilded Armor Set"
+	quest.7B0000000000002D.quest_desc: ["Full set: when hit, per-piece chance to spawn a retaliating Sunbeam (helmet 5%, other pieces 10%)."]
+	quest.7B0000000000002D.title: "Helionite Armor Set"
+	quest.7B0000000000002E.quest_desc: ["Full set: Speed I, Jump Boost I, +1.5 block reach."]
+	quest.7B0000000000002E.title: "Novice Builder Armor Set"
+	quest.7B0000000000002F.quest_desc: ["Full set: immune to Voidflame."]
+	quest.7B0000000000002F.title: "Voiderite Armor Set"
+	quest.7B00000000000030.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000030.title: "Zoranths Helmet Set"
+	quest.7B00000000000031.quest_desc: ["While standing on grass: passively refills hunger. After you eat, emits a bone-meal pulse that grows nearby plants."]
+	quest.7B00000000000031.title: "Rooted Set"
+	quest.7B00000000000032.quest_desc: ["Helmet: Unbreakable and fire-proof; grants night vision, stops endermen aggroing from eye contact, and keeps piglins neutral. Full Infinity set (all 4 pieces): immune to all damage, cannot die, creative flight, plus permanent Speed, Jump Boost, Regeneration, Resistance, Absorption, and Fire Resistance. Chestplate: Unbreakable and fire-proof. Full Infinity set (all 4 pieces): immune to all damage, cannot die, creative flight, plus permanent Speed, Jump Boost, Regeneration, Resistance, Absorption, and Fire Resistance. Boots: Unbreakable and fire-proof. Full Infinity set (all 4 pieces): immune to all damage, cannot die, creative flight, plus permanent Speed, Jump Boost, Regeneration, Resistance, Absorption, and Fire Resistance."]
+	quest.7B00000000000032.title: "Infinity Set"
+	quest.7B00000000000033.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000033.title: "Aeternium Set"
+	quest.7B00000000000034.quest_desc: ["Per piece while worn: Swiftness (boots), Dig Speed/Haste (chest), blindness resistance (helmet), +4 max health (leggings). Full set bonus: Regeneration I."]
+	quest.7B00000000000034.title: "Crystalite Set"
+	quest.7B00000000000035.quest_desc: ["Skull: Worn as a helmet: grants Night Vision; completes the Dragon Bones set (full set adds Strength and Resistance). Chestplate: On hit: ~10% chance to launch a blazing fireball at a close attacker. Adds a dodge-roll charge and reduced burn time; with the leggings, grants Speed and Fire Resistance while sneaking. Leggings: Adds a dodge-roll charge (Roll Count) and reduced burn time; with the chestplate, grants Speed and Fire Resistance while sneaking. Boots: On taking fall damage: emits a shockwave that damages nearby entities. Each piece also adds a dodge-roll charge (Roll Count) and reduces burn time; full set grants Strength and Resistance while worn."]
+	quest.7B00000000000035.title: "Dragon Bones Set"
+	quest.7B00000000000036.quest_desc: ["Cannot be removed once worn; you detonate (explode) when your health is low."]
+	quest.7B00000000000036.title: "Damned Demomans Hat Set"
+	quest.7B00000000000037.quest_desc: ["Full set: enter a rampage at low health and gain Wither Resistance."]
+	quest.7B00000000000037.title: "Dark Metal Armor Set"
+	quest.7B00000000000038.quest_desc: ["While worn: grants Jump Boost and Speed."]
+	quest.7B00000000000038.title: "Killer Rabbit Ears Set"
+	quest.7B00000000000039.quest_desc: ["While worn: enhances pumpkin weapons; immunity to fire and soul stratification; attackers are set ablaze with infernal fire."]
+	quest.7B00000000000039.title: "Lord Pumpkinheads Hat Set"
+	quest.7B0000000000003A.quest_desc: ["When a monster attacks you: summons a controlled baby skeleton and inflicts Magic Depletion on you."]
+	quest.7B0000000000003A.title: "Missionary Hat Set"
+	quest.7B0000000000003B.quest_desc: ["Full set: move faster in darkness and strengthen dark-magic weapons and items."]
+	quest.7B0000000000003B.title: "Nightmare Mantleofthe Night Set"
+	quest.7B0000000000003C.quest_desc: ["Each piece: attackers take retaliation damage. Full set: retaliation doubled and you take no spiny-shell (spike) damage."]
+	quest.7B0000000000003C.title: "Spiny Shell Armor Set"
+	quest.7B0000000000003D.quest_desc: ["While worn: strengthens baby skeletons summoned by the Bonescaller Staff."]
+	quest.7B0000000000003D.title: "Spiritual Guide Sombrero Set"
+	quest.7B0000000000003E.quest_desc: ["Helmet: Keybind: inflict Blazing Brand on the entity you target. While worn, lava-dwelling monsters won't target you unprovoked. Chestplate: Can be smithed with an elytra to form the Ignitium Elytra Chestplate. Chestplate: Chestplate fused with an elytra; grants elytra gliding. Leggings: Attackers that hit you are set on fire (Flame Reflex). Boots: Walk on the surface of lava; sneak to sink."]
+	quest.7B0000000000003E.title: "Ignitium Set"
+	quest.7B0000000000003F.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000003F.title: "Bone Reptile Set"
+	quest.7B00000000000040.quest_desc: ["Per piece: helmet keybind glows entities through walls; chestplate revives you at 5 HP with 5s invincibility on death (then a 6-minute lockout); leggings give a chance to dodge attacks (more vs projectiles); boots reduce fall damage and keybind-dash backward. No combined set bonus."]
+	quest.7B00000000000040.title: "Cursium Set"
+	quest.7B00000000000041.quest_desc: ["While worn, dropping below half health knocks back nearby entities and grants regeneration plus temporary added defense and knockback resistance."]
+	quest.7B00000000000041.title: "Monstrous Set"
+	quest.7B00000000000042.quest_desc: ["Keybind: fire amethyst clusters around you that damage nearby entities."]
+	quest.7B00000000000042.title: "Bloom Stone Pauldrons"
+	quest.7B00000000000043.quest_desc: ["+10% abyssal spell power, +5% spell power, +125 max mana."]
+	quest.7B00000000000043.title: "Abyssal Warlock Set"
+	quest.7B00000000000044.quest_desc: ["+3 nature heal, +20% nature spell power, +10% spell power, +150 max mana."]
+	quest.7B00000000000044.title: "Bloom Stone Set"
+	quest.7B00000000000045.quest_desc: ["Chestplate: +20% ice spell power, +5% spell power, +10% ice magic resist, +150 max mana. Can be smithed with an elytra for flight. Boots: +20% ice spell power, +5% spell power, +10% ice magic resist, +150 max mana. Keybind: marks nearby entities with Glowing."]
+	quest.7B00000000000045.title: "Cursium Mage Set"
+	quest.7B00000000000046.quest_desc: ["+10% technomancy spell power, +5% spell power, +125 max mana."]
+	quest.7B00000000000046.title: "Engineer's Set"
+	quest.7B00000000000047.quest_desc: ["Unlimited elytra flight with toggleable hover mode. +20% technomancy spell power, +10% spell power, +150 max mana."]
+	quest.7B00000000000047.title: "Excelsius Adversary Set"
+	quest.7B00000000000048.quest_desc: ["Unlimited elytra flight with toggleable hover mode. +20% technomancy spell power, +5% spell power, +15% spell resistance, +150 max mana."]
+	quest.7B00000000000048.title: "Excelsius Oppressor Set"
+	quest.7B00000000000049.quest_desc: ["Nullifies all fall damage. +20% technomancy spell power, +5% spell power, +5% technomancy magic resist, +150 max mana."]
+	quest.7B00000000000049.title: "Excelsius Propulsion Set"
+	quest.7B0000000000004A.quest_desc: ["Unlimited elytra flight with toggleable hover mode. +20% technomancy spell power, +5% spell power, +15% cooldown reduction, +150 max mana."]
+	quest.7B0000000000004A.title: "Excelsius Velocity Set"
+	quest.7B0000000000004B.quest_desc: ["+20% fire spell power, +5% spell power, +10% fire magic resist, +150 max mana."]
+	quest.7B0000000000004B.title: "Ignis Mage Set"
+	quest.7B0000000000004C.quest_desc: ["+20% nature spell power, +20% holy spell power, +5% spell power, +150 max mana."]
+	quest.7B0000000000004C.title: "Pharaoh Set"
+	quest.7B0000000000004D.quest_desc: ["Full set: sneak to disguise as a cardboard box; mobs may lose track of you."]
+	quest.7B0000000000004D.title: "Cardboard Set"
+	quest.7B0000000000004E.quest_desc: ["Helmet: While worn with a Backtank: grants Water Breathing, draining the tank's Air Pressure. Boots: While worn: descend faster in liquids and walk/jump along the bottom underwater; unaffected by Mechanical Belts."]
+	quest.7B0000000000004E.title: "Copper Diving Set"
+	quest.7B0000000000004F.quest_desc: ["Helmet: Full Netherite diving set with a Netherite Backtank: grants Fire and Lava immunity and clear vision in lava, draining the tank's Air Pressure. Boots: While worn: descend faster in water or lava and walk/jump along the bottom; unaffected by Mechanical Belts."]
+	quest.7B0000000000004F.title: "Netherite Diving Set"
+	quest.7B00000000000050.quest_desc: ["Worn tank that stores Pressurized Air and supplies Create equipment (diving helmet, potato cannon); refills when placed and driven by rotation."]
+	quest.7B00000000000050.title: "Copper Backtank"
+	quest.7B00000000000051.quest_desc: ["Worn tank that stores Pressurized Air and supplies Create equipment (diving helmet, potato cannon); refills when placed and driven by rotation."]
+	quest.7B00000000000051.title: "Netherite Backtank"
+	quest.7B00000000000052.quest_desc: ["Each piece: +150 max mana, +10% spell power, +10% eldritch spell power. Full set: +600 max mana, +40% spell power, +40% eldritch spell power."]
+	quest.7B00000000000052.title: "Warden Mage Set"
+	quest.7B00000000000053.quest_desc: ["Each worn piece grants +0.05 movement speed and immunity to Blindness and Darkness (full set +0.2 speed)."]
+	quest.7B00000000000053.title: "Warden Set"
+	quest.7B00000000000054.quest_desc: ["While worn: grants Dolphin's Grace (faster swimming)."]
+	quest.7B00000000000054.title: "Manowar Crown Set"
+	quest.7B00000000000055.quest_desc: ["Helmet: While worn: +150 max mana, +15% Eldritch spell power, +5% spell power, +5% spell resist; holds one imbued-spell slot. Leggings: While worn: +150 max mana, +15% Eldritch spell power, +5% spell power, +5% mana regen."]
+	quest.7B00000000000055.title: "Apothic Acolyte Set"
+	quest.7B00000000000056.quest_desc: ["While worn: +150 max mana, +15% Blood spell power, +5% Occult spell power, +5% spell power."]
+	quest.7B00000000000056.title: "Crimson Stag Set"
+	quest.7B00000000000057.quest_desc: ["Full set: builds a regenerating Etherium Shield that fully negates any hit at or below its damage threshold and grants extra resistance. Armor is invisible when worn."]
+	quest.7B00000000000057.title: "Etherium Set"
+	quest.7B00000000000058.quest_desc: ["Full set: Haste, Regeneration, Strength. Pieces also grant +2 max health."]
+	quest.7B00000000000058.title: "Chess Board Knight Set"
+	quest.7B00000000000059.quest_desc: ["Full set: Fire Resistance, Regeneration. Pieces also grant +2 max health."]
+	quest.7B00000000000059.title: "Crucible Knight Set"
+	quest.7B0000000000005A.quest_desc: ["Full set: Regeneration, Strength. Pieces also grant +10% attack speed, +1–2 max health."]
+	quest.7B0000000000005A.title: "Dark Cover Set"
+	quest.7B0000000000005B.quest_desc: ["Full set: Strength, Night Vision, Fire Resistance. Pieces also grant +2–3% attack speed."]
+	quest.7B0000000000005B.title: "Dark Lord Set"
+	quest.7B0000000000005C.quest_desc: ["Full set: Regeneration. Pieces also grant +5–10% attack damage."]
+	quest.7B0000000000005C.title: "Dead Gladiator Set"
+	quest.7B0000000000005D.quest_desc: ["Full set: Strength, Fire Resistance. Pieces also grant +10% attack speed."]
+	quest.7B0000000000005D.title: "Dragonslayer Set"
+	quest.7B0000000000005E.quest_desc: ["Full set: Strength, Resistance. Pieces also grant +10% movement speed."]
+	quest.7B0000000000005E.title: "Eclipse Soldier Set"
+	quest.7B0000000000005F.quest_desc: ["Full set: Regeneration, Night Vision. Pieces also grant +3–5% movement speed, +1 luck."]
+	quest.7B0000000000005F.title: "Evening Ghost Set"
+	quest.7B00000000000060.quest_desc: ["Full set: Resistance. Pieces also grant +1–2 max health."]
+	quest.7B00000000000060.title: "Flesh Of The Feaster Set"
+	quest.7B00000000000061.quest_desc: ["Full set: Fire Resistance, Resistance. Pieces also grant +1–10% attack speed, +1 max health."]
+	quest.7B00000000000061.title: "Fog Guard Set"
+	quest.7B00000000000062.quest_desc: ["Full set: Haste, Regeneration. Pieces also grant +2–5% movement speed, +1–2 max health, +1 luck."]
+	quest.7B00000000000062.title: "Forgotten Trace Set"
+	quest.7B00000000000063.quest_desc: ["Full set: Jump Boost, Strength. Pieces also grant +10% attack speed, +1 max health."]
+	quest.7B00000000000063.title: "Gilded Hunt Set"
+	quest.7B00000000000064.quest_desc: ["Full set: Strength. Pieces also grant +5% attack speed, +1–4 max health."]
+	quest.7B00000000000064.title: "Golden Execution Set"
+	quest.7B00000000000065.quest_desc: ["Full set: Haste II. Pieces also grant +1–4% movement speed, +10% attack speed."]
+	quest.7B00000000000065.title: "Golden Horns Set"
+	quest.7B00000000000066.quest_desc: ["Full set: Strength, Fire Resistance. Pieces also grant +3% movement speed, +2–3% attack speed."]
+	quest.7B00000000000066.title: "Grave Sentinel Set"
+	quest.7B00000000000067.quest_desc: ["Full set: Regeneration. Pieces also grant +10% attack speed, +10% attack damage."]
+	quest.7B00000000000067.title: "Hero Set"
+	quest.7B00000000000068.quest_desc: ["Full set: Strength, Regeneration. Pieces also grant +3–5% movement speed, +5% attack speed, +1 luck."]
+	quest.7B00000000000068.title: "Lady Maria Set"
+	quest.7B00000000000069.quest_desc: ["Full set: Regeneration. Pieces also grant +5–8% movement speed, +5% attack speed."]
+	quest.7B00000000000069.title: "Malenia Set"
+	quest.7B0000000000006A.quest_desc: ["Full set: Strength, Resistance. Pieces also grant +1–2 max health."]
+	quest.7B0000000000006A.title: "Old Knight Set"
+	quest.7B0000000000006B.quest_desc: ["Full set: Regeneration, Resistance. Pieces also grant +3% movement speed, +5% attack damage, +2 max health."]
+	quest.7B0000000000006B.title: "Ornstein Set"
+	quest.7B0000000000006C.quest_desc: ["Full set: Strength, Fire Resistance. Pieces also grant +2–4% movement speed, +3–5% attack speed, +2 max health, +1 luck."]
+	quest.7B0000000000006C.title: "Redeemer Set"
+	quest.7B0000000000006D.quest_desc: ["Full set: Jump Boost. Pieces also grant +3–5% movement speed, +10% attack speed."]
+	quest.7B0000000000006D.title: "Ronin Set"
+	quest.7B0000000000006E.quest_desc: ["Full set: Luck, Strength. Pieces also grant +2–3% attack speed, +1 luck."]
+	quest.7B0000000000006E.title: "Silver Knight Set"
+	quest.7B0000000000006F.quest_desc: ["Full set: Night Vision, Fire Resistance. Pieces also grant +5% movement speed, +5–10% attack speed, +1 max health."]
+	quest.7B0000000000006F.title: "Spark Of Dawn Set"
+	quest.7B00000000000070.quest_desc: ["Full set: Jump Boost. Pieces also grant +5% movement speed, +1 max health."]
+	quest.7B00000000000070.title: "Sunset Wings Set"
+	quest.7B00000000000071.quest_desc: ["Full set: Jump Boost. Pieces also grant +5–10% movement speed, +5–10% attack speed, +1 luck."]
+	quest.7B00000000000071.title: "Thief Set"
+	quest.7B00000000000072.quest_desc: ["Full set: Regeneration, Haste II. Pieces also grant +2% movement speed, +2–10% attack speed."]
+	quest.7B00000000000072.title: "Twinned Set"
+	quest.7B00000000000073.quest_desc: ["Full set: Water Breathing, Night Vision, Fire Resistance. Pieces also grant +5% movement speed, +2 luck."]
+	quest.7B00000000000073.title: "Wandering Wizard Set"
+	quest.7B00000000000074.quest_desc: ["Full set: Jump Boost. Pieces also grant +3% movement speed, +2–3% attack speed."]
+	quest.7B00000000000074.title: "Wind Worshipper Set"
+	quest.7B00000000000075.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000075.title: "Draco Arcanus Set"
+	quest.7B00000000000076.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000076.title: "Tyr Set"
+	quest.7B00000000000077.quest_desc: ["Equipment for Modular Golems (helmet, chestplate, shinguard), not player-wearable; armor stats only."]
+	quest.7B00000000000077.title: "Samurai Golem Set"
+	quest.7B00000000000078.quest_desc: ["Per piece: +15% shadow spell power, +15% eldritch spell power, +5% spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000078.title: "Abberant Predator Set"
+	quest.7B00000000000079.quest_desc: ["Per piece: +15% evocation spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000079.title: "Alchemist Supreme Set"
+	quest.7B0000000000007A.quest_desc: ["Per piece: +25% spell power, +300 max mana; chestplate grants elytra flight. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000007A.title: "Arbitrium Robes Set"
+	quest.7B0000000000007B.quest_desc: ["Per piece: +15% cosmic spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000007B.title: "Astraconic Weaver Set"
+	quest.7B0000000000007C.quest_desc: ["Per piece: +10% blood spell power, +5% spell power, +125 max mana."]
+	quest.7B0000000000007C.title: "Atlas Set"
+	quest.7B0000000000007D.quest_desc: ["Per piece: +15% fire spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000007D.title: "Blazeborne Set"
+	quest.7B0000000000007E.quest_desc: ["Per piece: +10% arrow damage, +10% arrow velocity, +5% move speed."]
+	quest.7B0000000000007E.title: "Bounty Hunter Set"
+	quest.7B0000000000007F.quest_desc: ["Per piece: +15% lightning spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000007F.title: "Charged Scourge Set"
+	quest.7B00000000000080.quest_desc: ["Headpiece sets the build: Headgear (magic), Helmet (archery), Mask (melee). Full set grants the matching Mage, Archer, or Swordmaster bonus."]
+	quest.7B00000000000080.title: "Chlorophyte Set"
+	quest.7B00000000000081.quest_desc: ["Per piece: +10% cosmic spell power, +5% spell power, +125 max mana."]
+	quest.7B00000000000081.title: "Cosmic Scholar Set"
+	quest.7B00000000000082.quest_desc: ["Per piece: +15% nature spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000082.title: "Creaking Set"
+	quest.7B00000000000083.quest_desc: ["Per piece: +15% ice spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000083.title: "Cryogenic Ruler Set"
+	quest.7B00000000000084.quest_desc: ["Per piece: +15% ice spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000084.title: "Crystal Arachnid Set"
+	quest.7B00000000000085.quest_desc: ["Per piece: +20% eldritch spell power, +150 max mana, +0.5 attack damage, +0.15 attack speed. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000085.title: "Dark Ritual Templar Set"
+	quest.7B00000000000086.quest_desc: ["Per piece: +1.5 attack damage, +15% attack speed, +2.5 max health. Full set: Mage and Swordmaster set bonuses."]
+	quest.7B00000000000086.title: "Dreadsteel Knight Set"
+	quest.7B00000000000087.quest_desc: ["Per piece: +15% hydro magic power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000087.title: "Elder Guardian Set"
+	quest.7B00000000000088.quest_desc: ["Per piece: +15% ender spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000088.title: "Ender Dragon Set"
+	quest.7B00000000000089.quest_desc: ["Per piece: +10% fire spell power, +10% nature spell power, +5% spell power, +125 max mana."]
+	quest.7B00000000000089.title: "Fireblossom Gown Set"
+	quest.7B0000000000008A.quest_desc: ["Per piece: +15% fire spell power, +15% nature spell power, +5% spell power, +200 max mana."]
+	quest.7B0000000000008A.title: "Fireblossom Knight Set"
+	quest.7B0000000000008B.quest_desc: ["Per piece: +15% blood spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000008B.title: "Flesh Mass Set"
+	quest.7B0000000000008C.quest_desc: ["Per piece: +5% spell power, +125 max mana."]
+	quest.7B0000000000008C.title: "Frieren Set"
+	quest.7B0000000000008D.quest_desc: ["Per piece: +10% ice spell power, +10% arrow damage, +10% arrow velocity, +100 max mana. Full set: +15% move speed, +10% arrow damage and velocity."]
+	quest.7B0000000000008D.title: "Frostbite Hunter Set"
+	quest.7B0000000000008E.quest_desc: ["Per piece: +15% ice spell power, +1 attack damage, +10% attack speed, +2 cold damage, +125 max mana. Full set: Mage and Swordmaster set bonuses."]
+	quest.7B0000000000008E.title: "Frostbite Knight Set"
+	quest.7B0000000000008F.quest_desc: ["Per piece: +15% holy spell power, +5% spell power, +200 max mana; chestplate grants elytra flight. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000008F.title: "Gabriel Ultrakill Set"
+	quest.7B00000000000090.quest_desc: ["Per piece: +20% fire spell power, +300 max mana. Fire spell damage stacks Immolation; at 3 stacks it explodes and spreads. Full set: Soul State and Tyrant's Grace buffs."]
+	quest.7B00000000000090.title: "Garments Of The First Flamebearer Set"
+	quest.7B00000000000091.quest_desc: ["Per piece: +5% spell power, +125 max mana."]
+	quest.7B00000000000091.title: "Giorno Giovanna Set"
+	quest.7B00000000000092.quest_desc: ["Per piece: +15% radiance spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000092.title: "Glassweaver Set"
+	quest.7B00000000000093.quest_desc: ["Per piece: +15% fire spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000093.title: "Hazel Set"
+	quest.7B00000000000094.quest_desc: ["Per piece: +12.5% ice spell power, +15% spell power, +150 max mana."]
+	quest.7B00000000000094.title: "Herta Puppet Set"
+	quest.7B00000000000095.quest_desc: ["Per piece: +15% fire spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000095.title: "How Did You Find The Hazel Set"
+	quest.7B00000000000096.quest_desc: ["Per piece: +15% holy spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000096.title: "How Did You Find The Mothic Witch Set"
+	quest.7B00000000000097.quest_desc: ["Per piece: +15% eldritch spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000097.title: "Infestation Set"
+	quest.7B00000000000098.quest_desc: ["Per piece: +25% spell power, +500 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B00000000000098.title: "Iron431 Set"
+	quest.7B00000000000099.quest_desc: ["Per piece: +15% fire spell power, +15% nature spell power, +200 max mana. Full set with Helmet: Fireblossom Warrior (15% protection shred); with Crown: Fireblossom Ruler caster buffs."]
+	quest.7B00000000000099.title: "Legacy Fireblossom Set"
+	quest.7B0000000000009A.quest_desc: ["Per piece: +5% spell resist, +1.25 max health. Full set: Tyrant's Grace (+1 attack damage, +1 attack speed, +20% cast move speed, +12% fire spell power)."]
+	quest.7B0000000000009A.title: "Legionnaire Set"
+	quest.7B0000000000009B.quest_desc: ["Per piece: +10% fire spell power, +2 fire damage, +10% attack speed, +100 max mana. Full set: Tyrant's Grace (+1 attack damage/speed, +20% cast move speed, +12% fire spell power)."]
+	quest.7B0000000000009B.title: "Legionnaire Commander Set"
+	quest.7B0000000000009C.quest_desc: ["Per piece: +10% summon damage, +10% fire spell power, +10% spell power, +1.25 max health. Full set: Tyrant's Grace (+1 attack damage/speed, +20% cast move speed, +12% fire spell power)."]
+	quest.7B0000000000009C.title: "Legionnaire Ruler Set"
+	quest.7B0000000000009D.quest_desc: ["Per piece: +20% nature spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B0000000000009D.title: "Lemon God Set"
+	quest.7B0000000000009E.quest_desc: ["Per piece: +12.5% spell resist, -20% spell power, -10% cooldown reduction."]
+	quest.7B0000000000009E.title: "Magehunter Set"
+	quest.7B0000000000009F.quest_desc: ["Per piece: +10% shadow spell power, +5% spell power, +125 max mana."]
+	quest.7B0000000000009F.title: "Masked Fool Set"
+	quest.7B000000000000A0.quest_desc: ["Per piece: +15% nature spell power, +15% eldritch spell power, +5% spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000A0.title: "Maverick Set"
+	quest.7B000000000000A1.quest_desc: ["Per piece: +5% mining speed, +5% underwater mining speed."]
+	quest.7B000000000000A1.title: "Miner Set"
+	quest.7B000000000000A2.quest_desc: ["Per piece: +150 max mana, +10% mana regen, +10% cooldown reduction, +10% cast-time reduction."]
+	quest.7B000000000000A2.title: "Mithril Battlemage Set"
+	quest.7B000000000000A3.quest_desc: ["Per piece: +15% holy spell power, +15% spell power, +150 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000A3.title: "Mothic Witch Set"
+	quest.7B000000000000A4.quest_desc: ["Per piece: +10% radiance spell power, +10% nature spell power, +5% spell power, +125 max mana."]
+	quest.7B000000000000A4.title: "Mycelium Guardian Set"
+	quest.7B000000000000A5.quest_desc: ["Per piece: +10% hydro magic power, +5% spell power, +125 max mana."]
+	quest.7B000000000000A5.title: "Nautilus Knight Set"
+	quest.7B000000000000A6.quest_desc: ["Per piece: +10% radiance spell power, +5% spell power, +125 max mana."]
+	quest.7B000000000000A6.title: "Radiant Crystal Set"
+	quest.7B000000000000A7.quest_desc: ["Per piece: +25% spell power, +500 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000A7.title: "Sacred Robes Set"
+	quest.7B000000000000A8.quest_desc: ["Per piece: +15% holy spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000A8.title: "Seraph Set"
+	quest.7B000000000000A9.quest_desc: ["Per piece: +15% shadow spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000A9.title: "Shadow Jester Set"
+	quest.7B000000000000AA.quest_desc: ["Per piece: +5% shadow spell power, +15% spell power, +5% crit chance, +150 max mana. Full set: Speed, +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000AA.title: "Shadow Scale Set"
+	quest.7B000000000000AB.quest_desc: ["Per piece: +10% ender spell power, +5% spell power, +125 max mana."]
+	quest.7B000000000000AB.title: "Shadowwalker Enderman Set"
+	quest.7B000000000000AC.quest_desc: ["Per piece: +15% holy spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000AC.title: "Slc Cat Set"
+	quest.7B000000000000AD.quest_desc: ["Per piece: +6% evocation spell power, +175 max mana, +10% mining speed, +20% underwater mining speed. Full set: permanent Night Vision."]
+	quest.7B000000000000AD.title: "Spectral Spelunker Set"
+	quest.7B000000000000AE.quest_desc: ["Per piece: +15% evocation spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000AE.title: "Supreme Witch Set"
+	quest.7B000000000000AF.quest_desc: ["Per piece: +15% blood spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000AF.title: "The Wither Set"
+	quest.7B000000000000B0.quest_desc: ["Per piece: +15% lightning spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
+	quest.7B000000000000B0.title: "Thunder Prowler Set"
+	quest.7B000000000000B1.quest_desc: ["Pure-tier headpiece; boosts magic. Full set: Mage set bonus."]
+	quest.7B000000000000B1.title: "Chlorophyte Headgear"
+	quest.7B000000000000B2.quest_desc: ["Pure-tier headpiece; boosts melee. Full set: Swordmaster set bonus."]
+	quest.7B000000000000B2.title: "Chlorophyte Mask"
+	quest.7B000000000000B3.quest_desc: ["+15% fire spell power, +15% nature spell power, +200 max mana. Full set: Fireblossom Ruler caster buffs."]
+	quest.7B000000000000B3.title: "Legacy Fireblossom Crown"
+	quest.7B000000000000B4.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
+	quest.7B000000000000B4.title: "Shadowwalker Enderman Blindfold"
+	quest.7B000000000000B5.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
+	quest.7B000000000000B5.title: "Shadowwalker Enderman Hood"
+	quest.7B000000000000B6.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
+	quest.7B000000000000B6.title: "Shadowwalker Enderman Masked"
+	quest.7B000000000000B7.quest_desc: ["Iron's Spells mage armor. Each piece: +5% spell power, +10% fire spell power, +150 max mana, +30% mana regen; a full set stacks to about +20% spell power, +40% fire spell power, +600 max mana."]
+	quest.7B000000000000B7.title: "Fire Dragon Priest Set"
+	quest.7B000000000000B8.quest_desc: ["Iron's Spells mage armor. Each piece: +5% spell power, +10% ice spell power, +150 max mana, +30% mana regen; a full set stacks to about +20% spell power, +40% ice spell power, +600 max mana."]
+	quest.7B000000000000B8.title: "Ice Dragon Priest Set"
+	quest.7B000000000000B9.quest_desc: ["Iron's Spells mage armor. Each piece: +5% spell power, +10% lightning spell power, +150 max mana, +30% mana regen; a full set stacks to about +20% spell power, +40% lightning spell power, +600 max mana."]
+	quest.7B000000000000B9.title: "Lightning Dragon Priest Set"
+	quest.7B000000000000BA.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B000000000000BA.title: "Dragon Metal (2 variants)"
+	quest.7B000000000000BB.quest_desc: ["Each piece cuts dragon-breath damage (fire/ice/lightning) 10–30%; full set blocks 70%."]
+	quest.7B000000000000BB.title: "Dragonscale (12 variants)"
+	quest.7B000000000000BC.quest_desc: ["Armor cuts dragon-breath damage (fire/ice/lightning) 10–30% per piece, 70% full set; full lightning set also nullifies lightning-bolt damage. Weapons apply their element on hit: fire ignites, ice freezes, lightning strikes."]
+	quest.7B000000000000BC.title: "Dragonsteel (3 variants)"
+	quest.7B000000000000BD.quest_desc: ["While worn: Water Breathing; while wet, Strength that scales with the number of pieces worn."]
+	quest.7B000000000000BD.title: "Sea Serpent Scales (7 variants)"
+	quest.7B000000000000BE.quest_desc: [""]
+	quest.7B000000000000BE.title: "Earplugs"
+	quest.7B000000000000BF.quest_desc: ["Full set: nearby skeletons stop targeting you, plus +8% movement speed (+2% per piece)."]
+	quest.7B000000000000BF.title: "Bone Set"
+	quest.7B000000000000C0.quest_desc: ["Full set: deflects one incoming hit per minute."]
+	quest.7B000000000000C0.title: "Divine Set"
+	quest.7B000000000000C1.quest_desc: ["Reduces movement speed (-5% per piece, -20% with a full set)."]
+	quest.7B000000000000C1.title: "Heavy Set"
+	quest.7B000000000000C2.quest_desc: ["Melee attackers take 1 spike (thorns) damage. Reduces movement speed (-2% per piece, -8% full set)."]
+	quest.7B000000000000C2.title: "Prismarine Set"
+	quest.7B000000000000C3.quest_desc: ["On attack: deals up to +20% more melee damage the lower your health; +5% damage with axes."]
+	quest.7B000000000000C3.title: "Warrior Set"
+	quest.7B000000000000C4.quest_desc: ["Melee attackers are afflicted with Wither. Full set: nearby skeletons stop targeting you, plus +4% movement speed."]
+	quest.7B000000000000C4.title: "Wither Set"
+	quest.7B000000000000C5.quest_desc: ["While worn: 15% chance to fully block arrows; reduces explosion damage 10%."]
+	quest.7B000000000000C5.title: "Wooden Set"
+	quest.7B000000000000C6.quest_desc: ["Each piece: +125 max mana, +10% evocation spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000C6.title: "Archevoker Set"
+	quest.7B000000000000C7.quest_desc: ["Each piece: +125 max mana, +10% ice spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000C7.title: "Cryomancer Set"
+	quest.7B000000000000C8.quest_desc: ["Each piece: +125 max mana, +10% blood spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000C8.title: "Cultist Set"
+	quest.7B000000000000C9.quest_desc: ["Each piece: +125 max mana, +10% lightning spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000C9.title: "Electromancer Set"
+	quest.7B000000000000CA.quest_desc: ["Fire spell damage stacks Immolation on the target; at 3 stacks it explodes and spreads Immolation. Also +150 max mana, +10% spell power."]
+	quest.7B000000000000CA.title: "Infernal Sorcerer Set"
+	quest.7B000000000000CB.quest_desc: ["Each piece: +125 max mana, +5% spell power. No set bonus."]
+	quest.7B000000000000CB.title: "Netherite Mage Set"
+	quest.7B000000000000CC.quest_desc: ["+150 max mana, +10% spell power."]
+	quest.7B000000000000CC.title: "Paladin Set"
+	quest.7B000000000000CD.quest_desc: ["Each piece: +125 max mana, +10% nature spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000CD.title: "Plagued Set"
+	quest.7B000000000000CE.quest_desc: ["Each piece: +125 max mana, +10% holy spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000CE.title: "Priest Set"
+	quest.7B000000000000CF.quest_desc: ["Each piece: +75 max mana; no set bonus. Helmet also works as a pumpkin mask (look at Endermen without angering them)."]
+	quest.7B000000000000CF.title: "Pumpkin Set"
+	quest.7B000000000000D0.quest_desc: ["Each piece: +125 max mana, +10% fire spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000D0.title: "Pyromancer Set"
+	quest.7B000000000000D1.quest_desc: ["Each piece: +125 max mana, +10% ender spell power, +5% spell power. No set bonus."]
+	quest.7B000000000000D1.title: "Shadowwalker Set"
+	quest.7B000000000000D2.quest_desc: ["+25% movement speed, +60% movement speed while casting, +150 max mana, +10% spell power."]
+	quest.7B000000000000D2.title: "Speed Set"
+	quest.7B000000000000D3.quest_desc: ["+150 max mana, +25% mana regeneration, -15% attack damage."]
+	quest.7B000000000000D3.title: "Tarnished Set"
+	quest.7B000000000000D4.quest_desc: ["Each piece: +25 max mana. No set bonus."]
+	quest.7B000000000000D4.title: "Wandering Magician Set"
+	quest.7B000000000000D5.quest_desc: ["Each piece: +125 max mana, +5% spell power. No set bonus."]
+	quest.7B000000000000D5.title: "Wizard Set"
+	quest.7B000000000000D6.quest_desc: ["Helmet: While worn: +150 max mana, +15% eldritch spell power, +5% spell power, +5% mana rend. Leggings: While worn: +150 max mana, +15% eldritch spell power, +5% spell power, +5% spell-resistance penetration."]
+	quest.7B000000000000D6.title: "Bedrock Warlock Set"
+	quest.7B000000000000D7.quest_desc: [""]
+	quest.7B000000000000D7.title: "Gilded Magician Set"
+	quest.7B000000000000D8.quest_desc: ["+15% magic proficiency (boosts magic damage); with Iron's Spells installed, also +10% spell power."]
+	quest.7B000000000000D8.title: "Soulhunter Set"
+	quest.7B000000000000D9.quest_desc: ["Armor set: each piece gives +25% magic resistance and +25% Malignant Conversion. Malignant Conversion converts intercepted magic into Malignant Aegis, a damage-absorbing barrier that grows in capacity as it soaks incoming magic; full set for maximum effect."]
+	quest.7B000000000000D9.title: "Malignant Stronghold Set"
+	quest.7B000000000000DA.quest_desc: ["Soulstained Steel gear: each armor piece adds +3 Soul Ward capacity and +15% Soul Ward recovery rate (Soul Ward is a rechargeable magic shield absorbing damage before health); its weapons and tools shatter the souls of slain mobs to drop harvestable spirits."]
+	quest.7B000000000000DA.title: "Soul Stained Steel Set"
+	quest.7B000000000000DB.quest_desc: ["Plain chainmail armor between leather and iron; no special powers."]
+	quest.7B000000000000DB.title: "Chainmail Set"
+	quest.7B000000000000DC.quest_desc: ["Strong diamond-tier armor; no special powers."]
+	quest.7B000000000000DC.title: "Diamond Set"
+	quest.7B000000000000DD.quest_desc: ["Weak but highly enchantable armor; wearing any gold piece keeps piglins from attacking on sight."]
+	quest.7B000000000000DD.title: "Golden Set"
+	quest.7B000000000000DE.quest_desc: ["Plain iron armor; no special powers."]
+	quest.7B000000000000DE.title: "Iron Set"
+	quest.7B000000000000DF.quest_desc: ["Plain leather armor, the lightest tier; dyeable, and Leather Boots let you walk on Powder Snow without sinking."]
+	quest.7B000000000000DF.title: "Leather Set"
+	quest.7B000000000000E0.quest_desc: ["Top-tier armor: every piece adds knockback resistance, and the items never burn in lava."]
+	quest.7B000000000000E0.title: "Netherite Set"
+	quest.7B000000000000E1.quest_desc: ["Grants 10 seconds of Water Breathing each time your head leaves the water."]
+	quest.7B000000000000E1.title: "Turtle Set"
+	quest.7B000000000000E2.quest_desc: ["Full set: Speed I while treading snow or ice, and immunity to freezing."]
+	quest.7B000000000000E2.title: "Frosthowl Set"
+	quest.7B000000000000E3.quest_desc: ["Full set: Strength I and Fire Resistance."]
+	quest.7B000000000000E3.title: "Infernum Warplate Set"
+	quest.7B000000000000E4.quest_desc: ["Full set: Strength I in daylight, Strength II at night."]
+	quest.7B000000000000E4.title: "Ironshade Set"
+	quest.7B000000000000E5.quest_desc: ["Full set: Speed I and Night Vision at night."]
+	quest.7B000000000000E5.title: "Soulpiercer Set"
+	quest.7B000000000000E6.quest_desc: ["Helmet: When you take a hit: inflicts Weakness and Slowness on the attacker. Chestplate: When you take a hit: grants Absorption and Resistance. Leggings: When you take a hit: grants Regeneration. Boots: When you take a hit: grants Speed and Invisibility."]
+	quest.7B000000000000E6.title: "Ferocious Set"
+	quest.7B000000000000E7.quest_desc: ["Every piece is Unbreakable and ships pre-enchanted: helmet Projectile Protection V, chestplate Protection V, leggings Blast Protection V, boots Fire Protection V; sword Sharpness VI, axe Efficiency VI, bow Power VI, crossbow Quick Charge IV, pickaxe Silk Touch, hoe Fortune IV. All stay enchantable, and the fishing rod fishes in any fluid, including lava."]
+	quest.7B000000000000E7.title: "Bedrock Set"
+	quest.7B000000000000E8.quest_desc: ["Goggles: Traveller's gear: accepts vision modifiers (night vision, item display, red-thread vision, zoom). Vest: Traveller's gear: accepts defensive modifiers (perfect dodge, stealth, auto-repair). Immune to freezing. Boots: Traveller's gear: accepts movement modifiers (water walk, slimy soles, unrestrained). Immune to freezing. Belt: Traveller's gear: accepts swappable crafted modifiers (e.g. sidestep dash, hotbar swap). Gloves: Cosmetic traveller's-gear slot with no ability; can be merged into the Vest. Wings: Traveller's gear: lets you glide; accepts modifiers such as double jump."]
+	quest.7B000000000000E8.title: "Traveller's Set"
+	quest.7B000000000000E9.quest_desc: ["While worn: chance to set attackers on fire, rising with pieces worn; immune to freezing."]
+	quest.7B000000000000E9.title: "Fiery Set"
+	quest.7B000000000000EA.quest_desc: ["Pre-enchanted: Aqua Affinity (helmet), Protection I (chest/legs), Feather Falling I (boots)."]
+	quest.7B000000000000EA.title: "Ironwood Set"
+	quest.7B000000000000EB.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B000000000000EB.title: "Knightmetal Set"
+	quest.7B000000000000EC.quest_desc: ["Two-piece set, pre-enchanted: Fire Protection III (chest), Protection III (leggings)."]
+	quest.7B000000000000EC.title: "Naga Set"
+	quest.7B000000000000ED.quest_desc: ["On melee hit: summons a homing spectral dagger dealing bonus dark-magic (desolate) damage."]
+	quest.7B000000000000ED.title: "Desolate Dagger"
+	quest.7B000000000000EE.quest_desc: ["Turns a single loaded arrow into a volley of dark arrows that rain down; a perfectly-timed release fires a stronger perfect shot."]
+	quest.7B000000000000EE.title: "Dreadbow"
+	quest.7B000000000000EF.quest_desc: ["Chargeable throwable spear; summons attacking dinosaur spirits on use and on hit."]
+	quest.7B000000000000EF.title: "Extinction Spear"
+	quest.7B000000000000F0.quest_desc: ["Chargeable melee weapon that can be thrown as a projectile."]
+	quest.7B000000000000F0.title: "Limestone Spear"
+	quest.7B000000000000F1.quest_desc: ["On melee hit: sends out a damaging wave. Charge and release to lunge forward and fan out multiple knockback waves."]
+	quest.7B000000000000F1.title: "Ortholance"
+	quest.7B000000000000F2.quest_desc: ["Punch a block or enemy to build a propulsive charge; release it to blast yourself, or the struck target, flying."]
+	quest.7B000000000000F2.title: "Ironbound Gauntlet"
+	quest.7B000000000000F3.quest_desc: ["Builds up bonus attack damage the more you attack."]
+	quest.7B000000000000F3.title: "Ravaging Claws"
+	quest.7B000000000000F4.quest_desc: ["Right-click: grants Water Breathing III for 15s."]
+	quest.7B000000000000F4.title: "Aqua Tide"
+	quest.7B000000000000F5.quest_desc: ["On kill: heals 1 heart. 3-in-1 pickaxe/axe/shovel tool."]
+	quest.7B000000000000F5.title: "Bloody Paxel"
+	quest.7B000000000000F6.quest_desc: ["On kill: heals 1 heart."]
+	quest.7B000000000000F6.title: "Bloody Sword"
+	quest.7B000000000000F7.quest_desc: ["On hit: inflicts Darkness I for 5s."]
+	quest.7B000000000000F7.title: "Broken Sword Of The Element Schulk"
+	quest.7B000000000000F8.quest_desc: ["On hit: ignites target for 8s."]
+	quest.7B000000000000F8.title: "Broken Sword Of The Elements Fire"
+	quest.7B000000000000F9.quest_desc: ["Right-click: fires a piercing grass blade."]
+	quest.7B000000000000F9.title: "Broken Sword Of The Elements Grass"
+	quest.7B000000000000FA.quest_desc: ["On hit: freezes target for 6s."]
+	quest.7B000000000000FA.title: "Broken Sword Of The Elements Ice"
+	quest.7B000000000000FB.quest_desc: ["On hit: chance to strike target with lightning."]
+	quest.7B000000000000FB.title: "Broken Sword Of The Elements Lightning"
+	quest.7B000000000000FC.quest_desc: ["Right-click a block to randomly transform into an elemental variant (fire/ice/grass/lightning/sculk)."]
+	quest.7B000000000000FC.title: "Broken Sword Ofthe Elements"
+	quest.7B000000000000FD.quest_desc: ["On hit: drains target's food and applies Slowness."]
+	quest.7B000000000000FD.title: "Cleaver Of The Starved"
+	quest.7B000000000000FE.quest_desc: ["Creative-only: right-click emits block-destroying explosions along your look direction."]
+	quest.7B000000000000FE.title: "Creative Obliterator"
+	quest.7B000000000000FF.quest_desc: ["3-in-1 pickaxe/axe/shovel tool."]
+	quest.7B000000000000FF.title: "Elvenite Paxel"
+	quest.7B00000000000100.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000100.title: "Elvenite Sword"
+	quest.7B00000000000101.quest_desc: ["3-in-1 pickaxe/axe/shovel tool."]
+	quest.7B00000000000101.title: "Gilded Paxel"
+	quest.7B00000000000102.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000102.title: "Gilded Sword"
+	quest.7B00000000000103.quest_desc: ["On hit: ignites target for 10s. 3-in-1 pickaxe/axe/shovel tool."]
+	quest.7B00000000000103.title: "Helionite Paxel"
+	quest.7B00000000000104.quest_desc: ["On hit: ignites target for 10s."]
+	quest.7B00000000000104.title: "Helionite Sword"
+	quest.7B00000000000105.quest_desc: ["On hit: inflicts Amaterasu (permanent fire). Right-click: inflicts Amaterasu, Slowness, and Darkness on nearby enemies."]
+	quest.7B00000000000105.title: "Lance Of The Veil"
+	quest.7B00000000000106.quest_desc: ["On hit while target is in water: x1.5 damage plus Slowness and Mining Fatigue. While underwater: grants Haste and Water Breathing."]
+	quest.7B00000000000106.title: "Prismatic Sword"
+	quest.7B00000000000107.quest_desc: ["On hit: chance for a radiant burst dealing bonus damage and applying Glowing."]
+	quest.7B00000000000107.title: "Radiant Sanctifier"
+	quest.7B00000000000108.quest_desc: ["On hit: chance for a freezing burst dealing bonus damage with heavy Slowness and Glowing."]
+	quest.7B00000000000108.title: "Shivering Shard"
+	quest.7B00000000000109.quest_desc: ["Right-click: deals 25 damage to all enemies within 16 blocks, ignites them, and summons Sunbeams. On hit: ignites target for 10s."]
+	quest.7B00000000000109.title: "The Eye Of The Sun"
+	quest.7B0000000000010A.quest_desc: ["On hit: chance for a wind burst that damages and launches enemies away."]
+	quest.7B0000000000010A.title: "The Gale Piercer"
+	quest.7B0000000000010B.quest_desc: ["Right-click: stuns, launches, and ignites nearby enemies, and grants you Strength I for 5s."]
+	quest.7B0000000000010B.title: "The Oathbreaker Of Chaos"
+	quest.7B0000000000010C.quest_desc: ["On hit: chance for a fire burst dealing bonus damage and igniting target for 15s."]
+	quest.7B0000000000010C.title: "The Scorchfang"
+	quest.7B0000000000010D.quest_desc: ["Right-click: stuns and ignites nearby enemies."]
+	quest.7B0000000000010D.title: "The Titans Oath"
+	quest.7B0000000000010E.quest_desc: ["On hit: chance for a toxic burst dealing bonus damage with Poison and Glowing."]
+	quest.7B0000000000010E.title: "The Whisper Of Poison"
+	quest.7B0000000000010F.quest_desc: ["3-in-1 pickaxe/axe/shovel tool."]
+	quest.7B0000000000010F.title: "Voiderite Paxel"
+	quest.7B00000000000110.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000110.title: "Voiderite Sword"
+	quest.7B00000000000111.quest_desc: ["Innate Fire Aspect (ignites on hit); right-click shoots a fireball; beheads skeletons, dropping their skull. Fire-proof item."]
+	quest.7B00000000000111.title: "Blaze Sword"
+	quest.7B00000000000112.quest_desc: ["Removes the attack-cooldown penalty, so every swing lands at full strength and connects through mobs' damage-immunity frames. Fire-proof item."]
+	quest.7B00000000000112.title: "Crystal Sword"
+	quest.7B00000000000113.quest_desc: ["One-shots virtually any entity, including bosses (near-infinite, unblockable damage that ignores invulnerability). Extended attack reach; unbreakable."]
+	quest.7B00000000000113.title: "Infinity Sword"
+	quest.7B00000000000114.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000114.title: "Aeternium Sword"
+	quest.7B00000000000115.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000115.title: "Terminite Sword"
+	quest.7B00000000000116.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000116.title: "Thallasium Sword"
+	quest.7B00000000000117.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000117.title: "Dagger"
+	quest.7B00000000000118.quest_desc: ["Right-click: throws a sword-wave projectile that damages at range."]
+	quest.7B00000000000118.title: "Knight Sword"
+	quest.7B00000000000119.quest_desc: ["Thrown; on impact, damages and pulls in nearby entities."]
+	quest.7B00000000000119.title: "Kraken Trident"
+	quest.7B0000000000011A.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000011A.title: "Large Sword"
+	quest.7B0000000000011B.quest_desc: ["Right-click (4s cooldown): summons pirate allies (a Crossbow Pirate and a Pirate Rook) to fight for you."]
+	quest.7B0000000000011B.title: "Pirate Saber"
+	quest.7B0000000000011C.quest_desc: ["Hold right-click: fires a poison barrage."]
+	quest.7B0000000000011C.title: "Sandworm Gauntlet"
+	quest.7B0000000000011D.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000011D.title: "Warrior Sword"
+	quest.7B0000000000011E.quest_desc: ["Deals extra damage to 'naughty' players."]
+	quest.7B0000000000011E.title: "Birch Branches"
+	quest.7B0000000000011F.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000011F.title: "Carrot Sword"
+	quest.7B00000000000120.quest_desc: ["Right-click an animal or minion to sacrifice it, healing you and granting Strength."]
+	quest.7B00000000000120.title: "Dark Ritual Dagger"
+	quest.7B00000000000121.quest_desc: ["While held: inflicts Overly Heavy Weapon (attacks weakened unless you have Strength); attacks carry an added on-hit effect."]
+	quest.7B00000000000121.title: "Darkwarblade"
+	quest.7B00000000000122.quest_desc: ["On hit: freezes and slows the target, stacking with repeated hits. Right-click: icy splash that freezes surrounding enemies."]
+	quest.7B00000000000122.title: "Frostbitten Blade"
+	quest.7B00000000000123.quest_desc: ["On kill: enter a rampage; consecutive kills stack it up to 5 times."]
+	quest.7B00000000000123.title: "Great Reaper Axe"
+	quest.7B00000000000124.quest_desc: ["On hit: freezes and slows the target, stacking with repeated hits. Right-click: icy splash that freezes surrounding enemies."]
+	quest.7B00000000000124.title: "Icy Sweetness"
+	quest.7B00000000000125.quest_desc: ["On hit: inflicts Intoxication."]
+	quest.7B00000000000125.title: "Intoxicating Dagger"
+	quest.7B00000000000126.quest_desc: ["Edible; eating inflicts Hunger and Poison."]
+	quest.7B00000000000126.title: "Monster Flesh"
+	quest.7B00000000000127.quest_desc: ["On hit: heals you (lifesteal), withers the target, and blocks some of its magical abilities."]
+	quest.7B00000000000127.title: "Nightmare Scythe"
+	quest.7B00000000000128.quest_desc: ["On hit: chance to knock off the target's headgear."]
+	quest.7B00000000000128.title: "Nut Hammer"
+	quest.7B00000000000129.quest_desc: ["Deals extra damage to undead."]
+	quest.7B00000000000129.title: "Sharpened Dark Metal Sword"
+	quest.7B0000000000012A.quest_desc: ["Deals extra damage to enemies in water or rain."]
+	quest.7B0000000000012A.title: "Shell Mace"
+	quest.7B0000000000012B.quest_desc: ["Jump attacks stun the target."]
+	quest.7B0000000000012B.title: "Skullbreaker Hammer"
+	quest.7B0000000000012C.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000012C.title: "Smoked Monster Flesh"
+	quest.7B0000000000012D.quest_desc: ["On hit: applies Soul Stratification, slowing the target, then dealing damage based on its current health when the effect ends."]
+	quest.7B0000000000012D.title: "Soul Cutlass"
+	quest.7B0000000000012E.quest_desc: ["On hit: applies Soul Stratification (slow, then damage based on the target's current health when it ends) and sets the target ablaze with infernal fire; gains an added effect while wearing Lord Pumpkinhead's Hat."]
+	quest.7B0000000000012E.title: "Soulbane"
+	quest.7B0000000000012F.quest_desc: ["On hit: infects the target; an infected enemy that dies may spawn a baby spider. While in inventory: baby spiders you summon are auto-tamed."]
+	quest.7B0000000000012F.title: "Spider Bite Sword"
+	quest.7B00000000000130.quest_desc: ["Deals extra damage to spirits."]
+	quest.7B00000000000130.title: "Spiritual Sword"
+	quest.7B00000000000131.quest_desc: ["Right-click to take a bite, restoring a small amount of hunger."]
+	quest.7B00000000000131.title: "Sweet Sword"
+	quest.7B00000000000132.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000132.title: "Trident Hayfork"
+	quest.7B00000000000133.quest_desc: ["Left-click: shoot a sandstorm projectile."]
+	quest.7B00000000000133.title: "Ancient Spear"
+	quest.7B00000000000134.quest_desc: ["Right-click: launch a lightning spear projectile."]
+	quest.7B00000000000134.title: "Astrape"
+	quest.7B00000000000135.quest_desc: ["Reduced attack reach (-1 block); no other special ability."]
+	quest.7B00000000000135.title: "Athame"
+	quest.7B00000000000136.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000136.title: "Black Steel Sword"
+	quest.7B00000000000137.quest_desc: ["Can be thrown as a projectile; also functions as a pickaxe."]
+	quest.7B00000000000137.title: "Brontes"
+	quest.7B00000000000138.quest_desc: ["Throwable like an anchor; sneak-use summons a fan of waves."]
+	quest.7B00000000000138.title: "Ceraunus"
+	quest.7B00000000000139.quest_desc: ["Can be thrown like a trident while in water or rain; extended melee reach (+1.5 blocks)."]
+	quest.7B00000000000139.title: "Coral Bardiche"
+	quest.7B0000000000013A.quest_desc: ["Can be thrown like a trident while in water or rain."]
+	quest.7B0000000000013A.title: "Coral Spear"
+	quest.7B0000000000013B.quest_desc: ["Hold right-click 1s to knock back nearby entities and inflict Blazing Brand; release to charge forward, damaging entities ahead."]
+	quest.7B0000000000013B.title: "Gauntlet Of Bulwark"
+	quest.7B0000000000013C.quest_desc: ["Right-click (main hand): pull entities toward you."]
+	quest.7B0000000000013C.title: "Gauntlet Of Guard"
+	quest.7B0000000000013D.quest_desc: ["Right-click: summon a void vortex."]
+	quest.7B0000000000013D.title: "Gauntlet Of Maelstrom"
+	quest.7B0000000000013E.quest_desc: ["Right-click a block (main hand): area-of-effect damage. Also a pickaxe."]
+	quest.7B0000000000013E.title: "Infernal Forge"
+	quest.7B0000000000013F.quest_desc: ["Right-click: damage entities in front, ignoring invulnerability frames."]
+	quest.7B0000000000013F.title: "Meat Shredder"
+	quest.7B00000000000140.quest_desc: ["Dash attack (Rush of Render); sneak-use summons phantom halberds in a spiral."]
+	quest.7B00000000000140.title: "Soul Render"
+	quest.7B00000000000141.quest_desc: ["Bonus critical-hit damage; hold in both hands and charge 2s for an AoE attack."]
+	quest.7B00000000000141.title: "The Annihilator"
+	quest.7B00000000000142.quest_desc: ["Forces critical hits against Blazing Brand targets; hold in both hands and charge 2s to summon a flame strike."]
+	quest.7B00000000000142.title: "The Immolator"
+	quest.7B00000000000143.quest_desc: ["Hold right-click 3s to charge, then release a flame strike ahead; its explosion can destroy nearby dropped items."]
+	quest.7B00000000000143.title: "The Incinerator"
+	quest.7B00000000000144.quest_desc: ["Right-click: fire a grappling hook. Left-click: shoot a tentacle that damages entities."]
+	quest.7B00000000000144.title: "Tidal Claws"
+	quest.7B00000000000145.quest_desc: ["Right-click a block (main hand): summon void runes in a fan. Also a pickaxe."]
+	quest.7B00000000000145.title: "Void Forge"
+	quest.7B00000000000146.quest_desc: ["Right-click casts its imbued Raise Hell spell; hits disable shields and knock back. +15% fire spell power, +5% fire magic resist."]
+	quest.7B00000000000146.title: "Hellfire Forge"
+	quest.7B00000000000147.quest_desc: ["Imbued with the Tectonic Tremble spell; +5% fire spell power. Fireproof as a dropped item."]
+	quest.7B00000000000147.title: "Monstrous Flamberge"
+	quest.7B00000000000148.quest_desc: ["Right-click to fire suitable inventory items (e.g. vegetables) as projectiles; drains Air Pressure from a worn Backtank instead of durability."]
+	quest.7B00000000000148.title: "Potato Cannon"
+	quest.7B00000000000149.quest_desc: ["Slashing summons abyssal fangs; sneak-slashing summons them in a ring around you."]
+	quest.7B00000000000149.title: "Abyssal Edge"
+	quest.7B0000000000014A.quest_desc: ["Slashing at air fires 5 piercing magic blades; sneaking makes the volley more concentrated."]
+	quest.7B0000000000014A.title: "Angelic Judgement"
+	quest.7B0000000000014B.quest_desc: ["Slashing at air launches an explosive cursed flame blade."]
+	quest.7B0000000000014B.title: "Cursed Karma"
+	quest.7B0000000000014C.quest_desc: ["Slashing at air launches a shadow blade projectile."]
+	quest.7B0000000000014C.title: "Doom Star"
+	quest.7B0000000000014D.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000014D.title: "Resonarium Sword"
+	quest.7B0000000000014E.quest_desc: ["Charge and release to fire a Warden-style sonic boom; its Volume enchantment increases damage and Reverberation increases range."]
+	quest.7B0000000000014E.title: "Sonorous Staff"
+	quest.7B0000000000014F.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000014F.title: "Warden Sword"
+	quest.7B00000000000150.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000150.title: "Amethyst Sword"
+	quest.7B00000000000151.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000151.title: "Amethyst Trident"
+	quest.7B00000000000152.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000152.title: "Aquamarine Sword"
+	quest.7B00000000000153.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000153.title: "Aquamarine Trident"
+	quest.7B00000000000154.quest_desc: ["On hit: sets the target on fire for 15 seconds."]
+	quest.7B00000000000154.title: "Fopal Trident"
+	quest.7B00000000000155.quest_desc: ["On hit: sets the target on fire for 15 seconds."]
+	quest.7B00000000000155.title: "Fopalsword"
+	quest.7B00000000000156.quest_desc: ["Right-click to summon a jellyfish companion."]
+	quest.7B00000000000156.title: "Jellyfish Staff"
+	quest.7B00000000000157.quest_desc: ["On hit: deals 3 extra damage (cactus damage type) to the target."]
+	quest.7B00000000000157.title: "Saber"
+	quest.7B00000000000158.quest_desc: ["+5% spell power; no imbued spell or on-hit effect."]
+	quest.7B00000000000158.title: "Broken Legends Blade"
+	quest.7B00000000000159.quest_desc: ["Imbued with Blades of Rancor (castable while held); +10% Occult, +5% Blood spell power, +5% Goliath Slayer. Awakens into Awakened Cataclysm using malicious energy."]
+	quest.7B00000000000159.title: "Cataclysm"
+	quest.7B0000000000015A.quest_desc: ["Imbued with Zealous Executioner. On hit, targets above 50% HP take Malignant Burn (lowers their spell resist) and are sliced by summoned blades; +20% Occult, +15% Blood, +10% Eldritch spell power, +10% Goliath Slayer, +5% spell-resist penetration."]
+	quest.7B0000000000015A.title: "Cataclysm Awakened"
+	quest.7B0000000000015B.quest_desc: ["Imbued with Planar Sight (castable while held); +5% Eldritch spell power."]
+	quest.7B0000000000015B.title: "Deep Greatsword"
+	quest.7B0000000000015C.quest_desc: ["Imbued with Blades of Rancor (castable while held); +10% Occult, +5% Blood spell power, +5 hunger steal. Awakens into Awakened Devourer using malicious energy."]
+	quest.7B0000000000015C.title: "Devourer"
+	quest.7B0000000000015D.quest_desc: ["Imbued with Ravenous Revenant. On kill, entities are consumed; after 5, the next hit spews their innards. +20% Occult, +15% Blood, +10% Eldritch spell power, +10 hunger steal, +5% spell-resist penetration."]
+	quest.7B0000000000015D.title: "Devourer Awakened"
+	quest.7B0000000000015E.quest_desc: ["Imbued with Counterspell (castable while held); +5% Eldritch spell power."]
+	quest.7B0000000000015E.title: "Forlorn Rapier"
+	quest.7B0000000000015F.quest_desc: ["+5% Eldritch spell power, +5% cooldown reduction, +5% mana steal; no imbued spell or on-hit effect."]
+	quest.7B0000000000015F.title: "Forsaken Flamberge"
+	quest.7B00000000000160.quest_desc: ["Imbued with Divine Smite (castable while held); +5% Holy spell power."]
+	quest.7B00000000000160.title: "God Spear"
+	quest.7B00000000000161.quest_desc: ["Imbued with Glacial Cleave (castable while held); +10% Ice spell power."]
+	quest.7B00000000000161.title: "Ice Spear"
+	quest.7B00000000000162.quest_desc: ["Imbued with Blades of Rancor (castable while held); +10% Occult, +5% Blood spell power, +5% mana rend. Awakens into Awakened Mourning Star using malicious energy."]
+	quest.7B00000000000162.title: "Mourning Star"
+	quest.7B00000000000163.quest_desc: ["Imbued with Libra's Judgement. On hit, targets below 50% HP have a 50% chance to take mortal damage or be cursed. +20% Occult, +15% Blood, +10% Eldritch spell power, +10% mana rend, +5% spell-resist penetration."]
+	quest.7B00000000000163.title: "Mourning Star Awakened"
+	quest.7B00000000000164.quest_desc: ["Imbued with Sacrifice (castable while held); +5% Eldritch spell power, +5% Occult spell power."]
+	quest.7B00000000000164.title: "Ritual Dagger"
+	quest.7B00000000000165.quest_desc: ["Imbued with Ice Tomb and Crystalline Carver (castable while held); +20% Ice spell power."]
+	quest.7B00000000000165.title: "Snowgrave"
+	quest.7B00000000000166.quest_desc: ["Imbued with Soul Slice and Soul Set Ablaze. Kills burn souls; after 5, all hits inflict soul fire and imbued spells are empowered. Right-click (15s cooldown, spends 5 souls): soul-fire shockwave near mobs. +15% Fire spell power, +10% fire magic resist, +5% spell-resist penetration."]
+	quest.7B00000000000166.title: "Soul Fire Scythe"
+	quest.7B00000000000167.quest_desc: ["Imbued with Esoteric Edge and Silence (castable while held); +20% Eldritch, +10% Occult spell power, +10% cooldown reduction, +10% mana steal, +25% mana rend, +10% spell-resist penetration."]
+	quest.7B00000000000167.title: "Ymir"
+	quest.7B00000000000168.quest_desc: ["Right-click a splash potion to absorb it; its arrows then apply that potion's effects on hit."]
+	quest.7B00000000000168.title: "Dragon Breath Bow"
+	quest.7B00000000000169.quest_desc: ["Extra damage against End creatures; prevents Endermen and Shulkers from teleporting; in the End, slain End creatures drop experience."]
+	quest.7B00000000000169.title: "Ender Slayer"
+	quest.7B0000000000016A.quest_desc: ["Mines a 3x3 plane of blocks (hold Shift to suppress) and deals area damage to nearby enemies on hit."]
+	quest.7B0000000000016A.title: "Etherium Hammer"
+	quest.7B0000000000016B.quest_desc: ["While held: chance to negate incoming damage; right-click to parry."]
+	quest.7B0000000000016B.title: "Etherium Sword"
+	quest.7B0000000000016C.quest_desc: ["Chance to drop a slain monster's head; Looting raises the chance."]
+	quest.7B0000000000016C.title: "Execution Axe"
+	quest.7B0000000000016D.quest_desc: ["Imbued with the Spectral Axe spell (cast and empowered while held). +10% evocation spell power, +15% crit damage."]
+	quest.7B0000000000016D.title: "Ancient Warriors Axe"
+	quest.7B0000000000016E.quest_desc: ["Imbued with the Shockwave spell (cast while held). +10% lightning spell power, +5% crit damage."]
+	quest.7B0000000000016E.title: "Beongae"
+	quest.7B0000000000016F.quest_desc: ["+15% nature spell power."]
+	quest.7B0000000000016F.title: "Blade Of Grass"
+	quest.7B00000000000170.quest_desc: ["Imbued with the Poison Splash spell (cast while held). +15% nature spell power, +10% armor and protection pierce."]
+	quest.7B00000000000170.title: "Bountiful Harvest"
+	quest.7B00000000000171.quest_desc: ["While held: +10% spell resistance, +10% mana rend."]
+	quest.7B00000000000171.title: "Dawnmaker"
+	quest.7B00000000000172.quest_desc: ["Imbued with the Divine Smite spell (cast while held). +10% holy spell power, +10% armor and protection pierce."]
+	quest.7B00000000000172.title: "Divine Greatsword"
+	quest.7B00000000000173.quest_desc: ["Imbued with the Fire Breath spell (cast and empowered while held). +15% fire spell power, +5 fire damage, +2 block reach."]
+	quest.7B00000000000173.title: "Draconic Splitter"
+	quest.7B00000000000174.quest_desc: ["Imbued with the Divine Smite spell (cast while held). +15% holy spell power; +10% armor shred, protection shred and spell-resist penetration."]
+	quest.7B00000000000174.title: "Excalibur"
+	quest.7B00000000000175.quest_desc: ["Imbued with the Divine Smite spell (cast while held). +15% holy spell power; +10% armor shred, protection shred and spell-resist penetration."]
+	quest.7B00000000000175.title: "Excalibur Divine Gold"
+	quest.7B00000000000176.quest_desc: ["Imbued with the Flaming Strike spell (cast while held). +20% fire and +20% nature spell power, +3 fire damage, +2 block reach."]
+	quest.7B00000000000176.title: "Fireblossom Rapier"
+	quest.7B00000000000177.quest_desc: ["Imbued with the Flaming Strike spell (cast and empowered while held). +15% fire spell power, +5 fire damage, +2 block reach."]
+	quest.7B00000000000177.title: "Firebrand"
+	quest.7B00000000000178.quest_desc: ["+20% ice spell power, +3 cold damage."]
+	quest.7B00000000000178.title: "Frostburn Dagger"
+	quest.7B00000000000179.quest_desc: ["Imbued with the Divine Smite spell (cast and empowered while held). +15% holy spell power; +10% armor pierce, armor shred and spell-resist penetration."]
+	quest.7B00000000000179.title: "Hammer Of Justice"
+	quest.7B0000000000017A.quest_desc: ["+15% nature and +15% radiance spell power, +15% armor shred."]
+	quest.7B0000000000017A.title: "Hammush"
+	quest.7B0000000000017B.quest_desc: ["Imbued with the Divine Smite spell (cast while held). +15% holy spell power; +10% armor shred, protection shred and spell-resist penetration."]
+	quest.7B0000000000017B.title: "Hazens Excalibur"
+	quest.7B0000000000017C.quest_desc: ["Imbued with the Ice Spikes spell (cast and empowered while held). +15% ice spell power, +5 cold damage, +2 block reach."]
+	quest.7B0000000000017C.title: "Ice Pike"
+	quest.7B0000000000017D.quest_desc: ["While held: +10% spell resistance, +15% mana rend, +15% spell-resist penetration, +15% armor pierce."]
+	quest.7B0000000000017D.title: "Legionnaire Warlock Axe"
+	quest.7B0000000000017E.quest_desc: ["+10% shadow spell power."]
+	quest.7B0000000000017E.title: "Lights Bane"
+	quest.7B0000000000017F.quest_desc: ["While held: +15% spell resistance, +15% mana rend, +15% spell-resist penetration, +15% armor pierce."]
+	quest.7B0000000000017F.title: "Mage Bane"
+	quest.7B00000000000180.quest_desc: ["Imbued with the Summon Vex spell (cast and empowered while held). +20% evocation spell power, +15% crit chance; +10% armor shred and protection pierce."]
+	quest.7B00000000000180.title: "Malice"
+	quest.7B00000000000181.quest_desc: ["+20% radiance spell power; +15% armor shred, protection pierce and protection shred."]
+	quest.7B00000000000181.title: "Meowmere"
+	quest.7B00000000000182.quest_desc: ["+5% armor pierce."]
+	quest.7B00000000000182.title: "Muramasa"
+	quest.7B00000000000183.quest_desc: ["Imbued with the Night's Edge Strike spell (cast and empowered while held). +15% spell power, +10% armor shred."]
+	quest.7B00000000000183.title: "Nights Edge"
+	quest.7B00000000000184.quest_desc: ["Imbued with the Echoing Strikes spell (cast while held). +15% ender spell power, +15% mana rend, +10% armor pierce."]
+	quest.7B00000000000184.title: "Obsidian Claymore"
+	quest.7B00000000000185.quest_desc: ["Imbued with the Scorching Slash spell (cast and empowered while held). +15% fire spell power, +5 fire damage, +3 block reach."]
+	quest.7B00000000000185.title: "Ravens Bane"
+	quest.7B00000000000186.quest_desc: ["Functions as a mace (fall smash-attack). Imbued with the Volt Strike spell (cast and empowered while held). +15% lightning spell power, +15% crit chance, +25% crit damage."]
+	quest.7B00000000000186.title: "Skyscorcher"
+	quest.7B00000000000187.quest_desc: ["+20% radiance spell power; +15% armor shred, protection shred and protection pierce."]
+	quest.7B00000000000187.title: "Spectrum"
+	quest.7B00000000000188.quest_desc: ["Imbued with the Shooting Star spell (cast and empowered while held). +15% cosmic spell power, +10% armor shred and armor pierce."]
+	quest.7B00000000000188.title: "Starfury"
+	quest.7B00000000000189.quest_desc: ["+20% eldritch spell power, +3 block reach; +15% armor shred and protection shred, +10% mana rend, +10% bonus damage vs large mobs."]
+	quest.7B00000000000189.title: "The Devourer"
+	quest.7B0000000000018A.quest_desc: ["Imbued with the Thorn Chakram spell (cast and empowered while held). +15% nature spell power, +10% armor shred and protection shred."]
+	quest.7B0000000000018A.title: "Thorn Chakram"
+	quest.7B0000000000018B.quest_desc: ["Imbued with the Night's Edge Strike spell (cast and empowered while held). +20% spell power, +20% crit chance; +15% armor shred and protection shred."]
+	quest.7B0000000000018B.title: "True Nights Edge"
+	quest.7B0000000000018C.quest_desc: ["Right-click: throws a fan of life-stealing knives. Imbued with the Blood Needles spell (cast and empowered while held). +20% blood spell power, +10% life steal, +15% armor shred."]
+	quest.7B0000000000018C.title: "Vampire Knives"
+	quest.7B0000000000018D.quest_desc: ["Imbued with the Flaming Strike spell (cast while held). +15% fire spell power."]
+	quest.7B0000000000018D.title: "Volcano"
+	quest.7B0000000000018E.quest_desc: ["Imbued with the Burning Dash spell (cast and empowered while held). +15% fire spell power, +5 fire damage, +3 block reach."]
+	quest.7B0000000000018E.title: "War Flaming Lance"
+	quest.7B0000000000018F.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000018F.title: "Copper Sword"
+	quest.7B00000000000190.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000190.title: "Dragonbone Bow"
+	quest.7B00000000000191.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000191.title: "Dragonbone Sword"
+	quest.7B00000000000192.quest_desc: ["On hit: ignites and knocks back. +8 damage vs Ice Dragons."]
+	quest.7B00000000000192.title: "Dragonbone Sword Fire"
+	quest.7B00000000000193.quest_desc: ["On hit: freezes target. +8 damage vs Fire Dragons."]
+	quest.7B00000000000193.title: "Dragonbone Sword Ice"
+	quest.7B00000000000194.quest_desc: ["On hit: strikes target with lightning. +4 damage vs Fire and Ice Dragons."]
+	quest.7B00000000000194.title: "Dragonbone Sword Lightning"
+	quest.7B00000000000195.quest_desc: ["On hit: ignites and knocks back."]
+	quest.7B00000000000195.title: "Dragonsteel Fire Sword"
+	quest.7B00000000000196.quest_desc: ["On hit: freezes target."]
+	quest.7B00000000000196.title: "Dragonsteel Ice Sword"
+	quest.7B00000000000197.quest_desc: ["On hit: also damages multiple nearby enemies."]
+	quest.7B00000000000197.title: "Dragonsteel Lightning Sword"
+	quest.7B00000000000198.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000198.title: "Dread Knight Sword"
+	quest.7B00000000000199.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000199.title: "Dread Queen Sword"
+	quest.7B0000000000019A.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B0000000000019A.title: "Dread Sword"
+	quest.7B0000000000019B.quest_desc: ["Swing fires a spinning sword projectile that passes through blocks and deals extra damage."]
+	quest.7B0000000000019B.title: "Ghost Sword"
+	quest.7B0000000000019C.quest_desc: ["Every attack is a sweeping slash that hits and knocks back all nearby enemies."]
+	quest.7B0000000000019C.title: "Hippogryph Sword"
+	quest.7B0000000000019D.quest_desc: ["+2 damage vs undead."]
+	quest.7B0000000000019D.title: "Silver Sword"
+	quest.7B0000000000019E.quest_desc: ["Attacks faster than a normal sword (~3.0 vs 1.6 hits/sec)."]
+	quest.7B0000000000019E.title: "Stymphalian Bird Dagger"
+	quest.7B0000000000019F.quest_desc: ["Thrown trident pierces multiple enemies."]
+	quest.7B0000000000019F.title: "Tide Trident"
+	quest.7B000000000001A0.quest_desc: ["Casts an imbued Echoing Strikes spell (level 5): buffs your melee hits to echo for extra damage."]
+	quest.7B000000000001A0.title: "Amethyst Rapier"
+	quest.7B000000000001A1.quest_desc: ["Auto-reloads the next available projectile from your inventory while carried; crouch-click to cancel."]
+	quest.7B000000000001A1.title: "Autoloader Crossbow"
+	quest.7B000000000001A2.quest_desc: ["Casts an imbued Frostbite spell (level 3)."]
+	quest.7B000000000001A2.title: "Boreal Blade"
+	quest.7B000000000001A3.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B000000000001A3.title: "Claymore"
+	quest.7B000000000001A4.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B000000000001A4.title: "Decrepit Scythe"
+	quest.7B000000000001A5.quest_desc: ["Casts an imbued Raise Hell spell (level 3): erupts hellfire along the ground."]
+	quest.7B000000000001A5.title: "Hellrazor"
+	quest.7B000000000001A6.quest_desc: ["While held: +4 armor."]
+	quest.7B000000000001A6.title: "Keeper Flamberge"
+	quest.7B000000000001A7.quest_desc: ["While held: +4 armor."]
+	quest.7B000000000001A7.title: "Legionnaire Flamberge"
+	quest.7B000000000001A8.quest_desc: ["While held: +15% spell resistance (reduces magic damage taken)."]
+	quest.7B000000000001A8.title: "Magehunter"
+	quest.7B000000000001A9.quest_desc: ["Casts an imbued Wither Skull spell (level 8)."]
+	quest.7B000000000001A9.title: "Misery"
+	quest.7B000000000001AA.quest_desc: ["While held: +15% cooldown reduction. Casts an imbued Counterspell spell (level 1)."]
+	quest.7B000000000001AA.title: "Spellbreaker"
+	quest.7B000000000001AB.quest_desc: ["Right-click to throw like a trident (returns to you). Casts an imbued Volt Strike spell (level 5)."]
+	quest.7B000000000001AB.title: "Twilight Gale"
+	quest.7B000000000001AC.quest_desc: ["On hit: knocks entities back and damages surrounding entities."]
+	quest.7B000000000001AC.title: "Inquisitors Gauntlet"
+	quest.7B000000000001AD.quest_desc: ["On hit: knocks entities back further and deals increased damage to surrounding entities."]
+	quest.7B000000000001AD.title: "Praetors Gauntlet"
+	quest.7B000000000001AE.quest_desc: ["Sweeps a full arc, striking every enemy in front; shatters the souls of slain mobs so they drop harvestable spirits."]
+	quest.7B000000000001AE.title: "Crude Scythe"
+	quest.7B000000000001AF.quest_desc: ["After landing a hit, your next strike auto-crits and the following strike deals reduced damage (alternating crit rhythm). Sweeps a full arc; shatters souls of slain mobs for spirits."]
+	quest.7B000000000001AF.title: "Edge Of Deliverance"
+	quest.7B000000000001B0.quest_desc: ["Fires bolts that each reduce the target's magic power and soul force by 10%, stacking up to a full magic seal; a melee hit applies two stacks."]
+	quest.7B000000000001B0.title: "Erosion Scepter"
+	quest.7B000000000001B1.quest_desc: ["Charges up, then fires a burst of ranged hex projectiles dealing magic damage; its self-recharging charge pool is shared across all your staves."]
+	quest.7B000000000001B1.title: "Mnemonic Hex Staff"
+	quest.7B000000000001B2.quest_desc: ["Shatters the souls of struck mobs, so kills drop harvestable spirits."]
+	quest.7B000000000001B2.title: "Soul Stained Steel Axe"
+	quest.7B000000000001B3.quest_desc: ["Shatters the souls of struck mobs, so kills drop harvestable spirits."]
+	quest.7B000000000001B3.title: "Soul Stained Steel Knife"
+	quest.7B000000000001B4.quest_desc: ["Sweeps a full arc, striking every enemy in front; shatters the souls of slain mobs so they drop harvestable spirits."]
+	quest.7B000000000001B4.title: "Soul Stained Steel Scythe"
+	quest.7B000000000001B5.quest_desc: ["Shatters the souls of struck mobs, so kills drop harvestable spirits."]
+	quest.7B000000000001B5.title: "Soul Stained Steel Sword"
+	quest.7B000000000001B6.quest_desc: ["Melee hits split into several cuts that deal bonus magic damage and each apply Hatred (stacks raise damage). Can be thrown: homes onto nearby foes and strikes Hated targets one by one."]
+	quest.7B000000000001B6.title: "Sundering Anchor"
+	quest.7B000000000001B7.quest_desc: ["Deals magic (soul) damage, and each strike hits twice via a delayed second burst. Cannot sweep (no Sweeping Edge)."]
+	quest.7B000000000001B7.title: "Tyrving"
+	quest.7B000000000001B8.quest_desc: ["Charges up to fire a volley of eldritch bolts that set targets burning; the burn damage it deals recharges its own charges."]
+	quest.7B000000000001B8.title: "Unwinding Chaos"
+	quest.7B000000000001B9.quest_desc: ["Occasionally lands a random critical hit; scoring a kill guarantees your next strike is a critical hit."]
+	quest.7B000000000001B9.title: "Weight Of Worlds"
+	quest.7B000000000001BA.quest_desc: ["Charged ranged weapon firing any arrow, including tipped effect arrows."]
+	quest.7B000000000001BA.title: "Bow"
+	quest.7B000000000001BB.quest_desc: ["Slower to load than a bow but holds its charge; fires arrows or fireworks, and Multishot fires a spread of three."]
+	quest.7B000000000001BB.title: "Crossbow"
+	quest.7B000000000001BC.quest_desc: ["Strong diamond-tier sword; no special powers."]
+	quest.7B000000000001BC.title: "Diamond Sword"
+	quest.7B000000000001BD.quest_desc: ["Weak but highly enchantable sword; no special powers."]
+	quest.7B000000000001BD.title: "Golden Sword"
+	quest.7B000000000001BE.quest_desc: ["Plain iron-tier sword; no special powers."]
+	quest.7B000000000001BE.title: "Iron Sword"
+	quest.7B000000000001BF.quest_desc: ["Smash attack: fall onto a foe to convert fall height into heavy bonus damage and cancel your own fall damage."]
+	quest.7B000000000001BF.title: "Mace"
+	quest.7B000000000001C0.quest_desc: ["The strongest vanilla sword; the item never burns in lava."]
+	quest.7B000000000001C0.title: "Netherite Sword"
+	quest.7B000000000001C1.quest_desc: ["Plain stone-tier sword; no special powers."]
+	quest.7B000000000001C1.title: "Stone Sword"
+	quest.7B000000000001C2.quest_desc: ["Melee or thrown; unique enchantments return it (Loyalty), strike lightning (Channeling) or launch you through water (Riptide)."]
+	quest.7B000000000001C2.title: "Trident"
+	quest.7B000000000001C3.quest_desc: ["Plain starter sword; no special powers."]
+	quest.7B000000000001C3.title: "Wooden Sword"
+	quest.7B000000000001C4.quest_desc: ["Right-click: unleash eight molten thorns (8s cooldown, 2s near intense heat)."]
+	quest.7B000000000001C4.title: "Molten Fist"
+	quest.7B000000000001C5.quest_desc: ["Right-click: fire an exploding umbral doom orb (1.5s cooldown)."]
+	quest.7B000000000001C5.title: "Umbras Whisper"
+	quest.7B000000000001C6.quest_desc: ["Unbreakable; comes pre-enchanted with Efficiency VI."]
+	quest.7B000000000001C6.title: "Bedrock Axe"
+	quest.7B000000000001C7.quest_desc: ["Unbreakable; comes pre-enchanted with Power VI."]
+	quest.7B000000000001C7.title: "Bedrock Bow"
+	quest.7B000000000001C8.quest_desc: ["Unbreakable; comes pre-enchanted with Quick Charge IV."]
+	quest.7B000000000001C8.title: "Bedrock Crossbow"
+	quest.7B000000000001C9.quest_desc: ["Unbreakable; comes pre-enchanted with Sharpness VI."]
+	quest.7B000000000001C9.title: "Bedrock Sword"
+	quest.7B000000000001CA.quest_desc: ["Throwable, and crits airborne targets. Swap to an empty offhand to split it into a pair of throwable twin daggers. A missed throw hits you."]
+	quest.7B000000000001CA.title: "Draconic Twinsword"
+	quest.7B000000000001CB.quest_desc: ["Attacks ignore invincibility frames. Offhand-use to throw and recall it; swap hands to merge it back into the twinsword."]
+	quest.7B000000000001CB.title: "Dragon Talon"
+	quest.7B000000000001CC.quest_desc: ["Deals more damage the better-armored the target is relative to you. Sneak-use on full-moon nights to overpower it, ignoring armor and draining Red Ink."]
+	quest.7B000000000001CC.title: "Dreamflayer"
+	quest.7B000000000001CD.quest_desc: ["Riptides without water; tap again mid-Riptide to launch again. Damages nearby creatures while riptide-flying."]
+	quest.7B000000000001CD.title: "Ferocious Glass Crest Bident"
+	quest.7B000000000001CE.quest_desc: ["Throwing it keeps the bident in your hand and launches a mirror-image copy that shatters on impact."]
+	quest.7B000000000001CE.title: "Fractal Glass Crest Bident"
+	quest.7B000000000001CF.quest_desc: ["Sneak-use while loaded to overcharge the shot."]
+	quest.7B000000000001CF.title: "Glass Crest Crossbow"
+	quest.7B000000000001D0.quest_desc: ["Deals part of its damage as magic. Charge to perform a ground slam, consuming Ink."]
+	quest.7B000000000001D0.title: "Glass Crest Ultra Greatsword"
+	quest.7B000000000001D1.quest_desc: ["Configurable multitool (pickaxe/axe/shovel/hoe) with a mode GUI (Silk Touch/Fortune, tool actions, Ink-powered area mining); also fires projectiles for Ink."]
+	quest.7B000000000001D1.title: "Glass Crest Workstaff"
+	quest.7B000000000001D2.quest_desc: ["Blocks attacks; a well-timed parry empowers your counter. Release a block while airborne to lunge, poisoning what it hits."]
+	quest.7B000000000001D2.title: "Knotted Sword"
+	quest.7B000000000001D3.quest_desc: ["Throwable like a trident; pre-enchanted with Impaling VI and ignores 25% of the target's armor."]
+	quest.7B000000000001D3.title: "Malachite Bident"
+	quest.7B000000000001D4.quest_desc: ["Comes pre-enchanted with Piercing V."]
+	quest.7B000000000001D4.title: "Malachite Crossbow"
+	quest.7B000000000001D5.quest_desc: ["Comes pre-enchanted with Sweeping Edge IV."]
+	quest.7B000000000001D5.title: "Malachite Ultra Greatsword"
+	quest.7B000000000001D6.quest_desc: ["Configurable multitool (pickaxe/axe/shovel/hoe) with a mode GUI (Silk Touch/Fortune, tool actions, Ink-powered area mining). Pre-enchanted with Fortune IV."]
+	quest.7B000000000001D6.title: "Malachite Workstaff"
+	quest.7B000000000001D7.quest_desc: ["One tool that mines and right-click-acts as pickaxe, axe, shovel and hoe. Pre-enchanted with Efficiency I."]
+	quest.7B000000000001D7.title: "Multitool"
+	quest.7B000000000001D8.quest_desc: ["Light greatsword that blocks and lunges. Its lunge consumes the target's status effects: detonating damage-over-time effects for bonus damage, auto-critting sleeping targets, or stealing their positive effects."]
+	quest.7B000000000001D8.title: "Nectar Lance"
+	quest.7B000000000001D9.quest_desc: ["Can be infused with a potion effect at a Potion Workshop; hits then apply that effect, consuming Ink."]
+	quest.7B000000000001D9.title: "Nightfalls Blade"
+	quest.7B000000000001DA.quest_desc: ["Comes pre-enchanted with Looting III."]
+	quest.7B000000000001DA.title: "Razor Falchion"
+	quest.7B000000000001DB.quest_desc: ["On hit: 50% chance to inflict Confusion, Blindness, Slowness, or Weakness. Each enchantment on it adds its level to the damage dealt. Increases your chance of Reliquary mob drops."]
+	quest.7B000000000001DB.title: "Magicbane"
+	quest.7B000000000001DC.quest_desc: ["Deals bonus damage to undead."]
+	quest.7B000000000001DC.title: "Mercy Cross"
+	quest.7B000000000001DD.quest_desc: ["On hit: chance to spread holy water, forming a purity aura that grants you Strength and cures your negative effects."]
+	quest.7B000000000001DD.title: "Ascended Idol"
+	quest.7B000000000001DE.quest_desc: ["On hit: chance to steal a positive effect. Sneak: blast an explosive cannonball forward (can hurt you)."]
+	quest.7B000000000001DE.title: "Black Pearl"
+	quest.7B000000000001DF.quest_desc: ["While held: aura that slows and weakens enemies the longer they linger in it, but also slows you. Sneak: solidify for bonus armor while unable to move or attack; taking a hit reverts you and stuns enemies in the aura."]
+	quest.7B000000000001DF.title: "Blade Of The Grotesque"
+	quest.7B000000000001E0.quest_desc: ["On hit: chance to constrict (suffocate + slow). Sneak-dash launches a poison blast and grants speed."]
+	quest.7B000000000001E0.title: "Boas Fang"
+	quest.7B000000000001E1.quest_desc: ["On hit: chance to summon a steam jet that flings enemies up, but the weapon oxidizes and its swing speed drops to a halt; it deoxidizes over time, sometimes sparking to stun enemies."]
+	quest.7B000000000001E1.title: "Brassturn"
+	quest.7B000000000001E2.quest_desc: ["While held: minor thorns that deal bonus fire damage to burning attackers. Sneak: spin to fling flames around you, leaving you with nausea."]
+	quest.7B000000000001E2.title: "Cindergorge"
+	quest.7B000000000001E3.quest_desc: ["On hit: chance to extend Hex. Sneak: hex a target (duration scales with their positive effects and worsens over time), or expel an existing hex to gain temporary health."]
+	quest.7B000000000001E3.title: "Culterex"
+	quest.7B000000000001E4.quest_desc: ["On hit: chance to spread unholy water, forming a corruption aura that inflicts Wither and Weakness. Sneak: curse nearby enemies so they take extra damage and are blinded and heavily slowed when hit."]
+	quest.7B000000000001E4.title: "Darksent"
+	quest.7B000000000001E5.quest_desc: ["While held: gather up to 5 crows; on hit, chance to inflict bleed and add a crow (more crows = longer, harsher bleed). Sneak: command crows to swarm one target, blinding it and healing you from the damage."]
+	quest.7B000000000001E5.title: "Deaths Eyrie"
+	quest.7B000000000001E6.quest_desc: ["Breaks shields. On hit: chance to inflict stacking Armor Crunch (reduces the target's armor). Sneak: charge and slam to launch, weaken, slow, and Armor-Crunch nearby enemies."]
+	quest.7B000000000001E6.title: "Earthshatter"
+	quest.7B000000000001E7.quest_desc: ["On hit: builds heat and has a chance (higher while mounted) to cause tremors that slow and mining-fatigue nearby foes; at full heat the next attack explodes and flings enemies. Sneak: hurl rocks that shatter to briefly stun."]
+	quest.7B000000000001E7.title: "Exedrill"
+	quest.7B000000000001E8.quest_desc: ["On hit: chance (higher while mounted) to gain Starlight stacks that grant random speed bursts. Sneak: consume all stacks to explode for damage scaling with stacks (also hits you and allies, for less)."]
+	quest.7B000000000001E8.title: "Glimmerstep"
+	quest.7B000000000001E9.quest_desc: ["On hit: chance to chill; blocking enemies are always frozen. Sneak: conjure a gale that knocks back nearby enemies, chilling and heavily slowing them."]
+	quest.7B000000000001E9.title: "Grandfrost"
+	quest.7B000000000001EA.quest_desc: ["On hit: chance to poison, or inflict venom if the target is already poisoned. Sneak: summon a cone of fangs that inflict venom and heavily slow."]
+	quest.7B000000000001EA.title: "Great Slither"
+	quest.7B000000000001EB.quest_desc: ["On hit: chance to spread holy water, forming a purity aura granting Regeneration and curing your negative effects. Sneak: bless yourself and nearby allies so the next damage taken is nullified and heals instead."]
+	quest.7B000000000001EB.title: "Holylight"
+	quest.7B000000000001EC.quest_desc: ["While held in the main hand: grants Speed, Strength, and Haste."]
+	quest.7B000000000001EC.title: "Jester Penetrate"
+	quest.7B000000000001ED.quest_desc: ["On hit: chance to apply stacking Radiant Mark; each hit deals bonus true damage equal to its level. Sneak: teleport to the nearest marked foe and erupt light to damage and knock back enemies (self-stun after)."]
+	quest.7B000000000001ED.title: "Lustrous Moxie"
+	quest.7B000000000001EE.quest_desc: ["On hit: chance to fire a beta particle that pierces walls and shields for damage. Sneak: spawn a rift that makes enemies within 10 blocks glow, slows them, and pulls them back if they try to leave."]
+	quest.7B000000000001EE.title: "Matterbane"
+	quest.7B000000000001EF.quest_desc: ["Shape-shifting Mimicry weapon (Backhand Blade form). Sneak: dash forward and stab, then rush back to your spot, inflicting blindness."]
+	quest.7B000000000001EF.title: "Mimicry Backhand Blade"
+	quest.7B000000000001F0.quest_desc: ["Shape-shifting Mimicry weapon (Chakram form). Sneak: greatly boost your movement and attack speed for a short time."]
+	quest.7B000000000001F0.title: "Mimicry Chakram"
+	quest.7B000000000001F1.quest_desc: ["Shape-shifting Mimicry weapon (Claymore form). Sneak: leap forward and slam, knocking back and heavily slowing and weakening enemies."]
+	quest.7B000000000001F1.title: "Mimicry Claymore"
+	quest.7B000000000001F2.quest_desc: ["Shape-shifting Mimicry weapon (Cutlass form). Sneak: sweeping slash that pulls enemies in and pierces shields."]
+	quest.7B000000000001F2.title: "Mimicry Cutlass"
+	quest.7B000000000001F3.quest_desc: ["Shape-shifting Mimicry weapon (Dagger form). Sneak: slash forward then jump back, gaining invisibility if you hit an enemy."]
+	quest.7B000000000001F3.title: "Mimicry Dagger"
+	quest.7B000000000001F4.quest_desc: ["Shape-shifting Mimicry weapon (Deer Horns form). Sneak: leap back with slow falling, slashing around you until you land; gain speed on hitting an enemy."]
+	quest.7B000000000001F4.title: "Mimicry Deer Horns"
+	quest.7B000000000001F5.quest_desc: ["Shape-shifting Mimicry weapon (Glaive form). Sneak: quick slash that ignores shields and dismounts enemies."]
+	quest.7B000000000001F5.title: "Mimicry Glaive"
+	quest.7B000000000001F6.quest_desc: ["Shape-shifting Mimicry weapon (Grandsword form). Sneak: rush forward slashing around you, gaining Strength and breaking shields."]
+	quest.7B000000000001F6.title: "Mimicry Grandsword"
+	quest.7B000000000001F7.quest_desc: ["Shape-shifting Mimicry weapon (Great Katana form). Sneak: teleport and slash a nearby foe; other nearby enemies are also slashed for less."]
+	quest.7B000000000001F7.title: "Mimicry Great Katana"
+	quest.7B000000000001F8.quest_desc: ["Shape-shifting Mimicry weapon (Great Spear form). Sneak: slam to fatigue and launch enemies upward, then stab forward to push them away."]
+	quest.7B000000000001F8.title: "Mimicry Great Spear"
+	quest.7B000000000001F9.quest_desc: ["Shape-shifting Mimicry weapon (Greataxe form). Sneak: slash around you, breaking shields and flinging enemies away."]
+	quest.7B000000000001F9.title: "Mimicry Greataxe"
+	quest.7B000000000001FA.quest_desc: ["Shape-shifting Mimicry weapon (Greathammer form). Sneak: slam down twice, breaking shields and inflicting heavy slowness and weakness."]
+	quest.7B000000000001FA.title: "Mimicry Greathammer"
+	quest.7B000000000001FB.quest_desc: ["Shape-shifting Mimicry weapon (Halberd form). Sneak: slash around you, then dash forward slashing; both apply heavy bleed."]
+	quest.7B000000000001FB.title: "Mimicry Halberd"
+	quest.7B000000000001FC.quest_desc: ["Shape-shifting Mimicry weapon (Katana form). Sneak: teleport forward, leaving damaging slashes in your path."]
+	quest.7B000000000001FC.title: "Mimicry Katana"
+	quest.7B000000000001FD.quest_desc: ["Shape-shifting Mimicry weapon (Khopesh form). Sneak: rush forward and slash, gaining intense speed on hitting an enemy."]
+	quest.7B000000000001FD.title: "Mimicry Khopesh"
+	quest.7B000000000001FE.quest_desc: ["Shape-shifting Mimicry weapon (Lance form). Sneak: leap forward and stab twice — the first heavily slows, the second greatly knocks back."]
+	quest.7B000000000001FE.title: "Mimicry Lance"
+	quest.7B000000000001FF.quest_desc: ["Shape-shifting Mimicry weapon (Longsword form). Sneak: sweeping slash that knocks back, dealing more damage the more enemies it hits."]
+	quest.7B000000000001FF.title: "Mimicry Longsword"
+	quest.7B00000000000200.quest_desc: ["Shape-shifting Mimicry weapon (Pernach form). Sneak: three forward slashes — the first two disable shields, the third applies slowness, weakness, and bleed."]
+	quest.7B00000000000200.title: "Mimicry Pernach"
+	quest.7B00000000000201.quest_desc: ["Shape-shifting Mimicry weapon (Quarterstaff form). Sneak: leap up and slam down, hitting enemies into the air."]
+	quest.7B00000000000201.title: "Mimicry Quarterstaff"
+	quest.7B00000000000202.quest_desc: ["Shape-shifting Mimicry weapon (Rapier form). Sneak: five rapid stabs; the first and last cause bleed."]
+	quest.7B00000000000202.title: "Mimicry Rapier"
+	quest.7B00000000000203.quest_desc: ["Shape-shifting Mimicry weapon (Sai form). Sneak: three rapid stabs applying blindness and bleed."]
+	quest.7B00000000000203.title: "Mimicry Sai"
+	quest.7B00000000000204.quest_desc: ["Shape-shifting Mimicry weapon (Scythe form). Sneak: dash forward with three wide swings, each inflicting wither."]
+	quest.7B00000000000204.title: "Mimicry Scythe"
+	quest.7B00000000000205.quest_desc: ["Shape-shifting Mimicry weapon (Spear form). Sneak: three stabs inflicting slowness; the final is stronger and breaks shields."]
+	quest.7B00000000000205.title: "Mimicry Spear"
+	quest.7B00000000000206.quest_desc: ["Shape-shifting Mimicry weapon (Twinblade form). Sneak: two spinning slashes — the first slows, the second knocks back."]
+	quest.7B00000000000206.title: "Mimicry Twinblade"
+	quest.7B00000000000207.quest_desc: ["Shape-shifting Mimicry weapon (Warglaive form). Sneak: spinning slash, then rush forward and slash again; both apply slowness."]
+	quest.7B00000000000207.title: "Mimicry Warglaive"
+	quest.7B00000000000208.quest_desc: ["On hit: chance to erupt damaging lava around you. Sneak: empower your next swing to strike much faster and erupt more fiercely."]
+	quest.7B00000000000208.title: "Molten Flare"
+	quest.7B00000000000209.quest_desc: ["While held: the hungrier you are, the more Speed and damage you gain. Sneak: grasp a foe to drain their hunger and health into your own bars and inflict Weakness and Mining Fatigue, then spit them away (you cannot attack while grasping)."]
+	quest.7B00000000000209.title: "Myrmedge"
+	quest.7B0000000000020A.quest_desc: ["On hit: gain Bloom stacks (max 15) that progressively buff your defenses. Sneak: spend 8 stacks to create a flower field that buffs allies inside it."]
+	quest.7B0000000000020A.title: "Perforiscus"
+	quest.7B0000000000020B.quest_desc: ["While held: the more health you are missing, the more damage you deal; chance on hit to inflict bleed. Sneak: charge for one of three escalating attacks whose range and damage scale with your missing health."]
+	quest.7B0000000000020B.title: "Revvengine"
+	quest.7B0000000000020C.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B0000000000020C.title: "Runic Backhand Blade"
+	quest.7B0000000000020D.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B0000000000020D.title: "Runic Dagger"
+	quest.7B0000000000020E.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B0000000000020E.title: "Runic Deer Horns"
+	quest.7B0000000000020F.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B0000000000020F.title: "Runic Grandsword"
+	quest.7B00000000000210.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000210.title: "Runic Great Katana"
+	quest.7B00000000000211.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000211.title: "Runic Great Spear"
+	quest.7B00000000000212.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000212.title: "Runic Khopesh"
+	quest.7B00000000000213.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000213.title: "Runic Lance"
+	quest.7B00000000000214.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000214.title: "Runic Pernach"
+	quest.7B00000000000215.quest_desc: ["Rune socket: a socketed runefused gem grants a random combat-triggered runic power; craft and re-roll with a Runic Tablet."]
+	quest.7B00000000000215.title: "Runic Quarterstaff"
+	quest.7B00000000000216.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
+	quest.7B00000000000216.title: "Ruptured Idol"
+	quest.7B00000000000217.quest_desc: ["Sneak: charge a slam that grows the weapon the longer it charges, increasing the blow's damage and range."]
+	quest.7B00000000000217.title: "Ruyi Jingu Bang"
+	quest.7B00000000000218.quest_desc: ["On hit: +4 damage if the target has poison or venom. Sneak: summon 4 homing poison bolts that chase down enemies."]
+	quest.7B00000000000218.title: "Serpentine Valour"
+	quest.7B00000000000219.quest_desc: ["On hit: chance to inflict Wither, adding a level of Withering Fate if the target already has it. Sneak: leap back into mist, then teleport to a target within 10 blocks ahead, leaving a slash that inflicts Withering Fate (reduced max HP)."]
+	quest.7B00000000000219.title: "Smouldering Ruin"
+	quest.7B0000000000021A.quest_desc: ["On hit: chance to steal a target's soul, draining their positive effects much faster until it returns. Sneak: return the soul early to blind, slow, and teleport the target to you."]
+	quest.7B0000000000021A.title: "Soul Foreseer"
+	quest.7B0000000000021B.quest_desc: ["On hit: chance to shock, putting the enemy's abilities on cooldown for a few seconds. Sneak: charge to erupt lightning around you (harmless to you)."]
+	quest.7B0000000000021B.title: "Stasis"
+	quest.7B0000000000021C.quest_desc: ["On hit: chance to spread unholy water, forming a corruption aura that inflicts Wither and Weakness."]
+	quest.7B0000000000021C.title: "Tarnished Idol"
+	quest.7B0000000000021D.quest_desc: ["Lifesteal on hit. Sneak: enter a harvest that boosts lifesteal, grants Speed and Haste, inflicts bleed on hit, and lets you sense nearby entities."]
+	quest.7B0000000000021D.title: "The Blood Harvester"
+	quest.7B0000000000021E.quest_desc: ["On hit: chance to knock the enemy back."]
+	quest.7B0000000000021E.title: "The Pan"
+	quest.7B0000000000021F.quest_desc: ["Lifesteal on hit. Sneak: cut yourself for a share of your health to enter a rage — you bleed but take no other damage, gain extra lifesteal and damage, and inflict bleed."]
+	quest.7B0000000000021F.title: "The Vessel Breach"
+	quest.7B00000000000220.quest_desc: ["On hit: chance to summon rainfall that inflicts insanity (random head movement, Weakness, Slowness). Sneak: swap places with the last enemy you hit, if hit recently and within range."]
+	quest.7B00000000000220.title: "Tidebreaker"
+	quest.7B00000000000221.quest_desc: ["Effect changes with time of day. Day — on hit: chance to make entities within 30 blocks glow; Sneak: blast a solar flare that blinds, burns, and knocks back. Night — on hit: chance to gain Speed and invisibility and inflict Darkness; Sneak: blast a gravity surge that launches and heavily slows foes. Cooldown shrinks nearer noon/midnight; in timeless dimensions both on-hit effects can trigger."]
+	quest.7B00000000000221.title: "Timekeeper"
+	quest.7B00000000000222.quest_desc: ["While held in the main hand: expiring status effects persist at their weakest level until you unequip. Sneak: summon a ring around you that damages and poisons enemies."]
+	quest.7B00000000000222.title: "Vipers Call"
+	quest.7B00000000000223.quest_desc: ["On hit: chance to levitate the target. Right-click: lift nearby enemies with damage-over-time, then slam them to the ground."]
+	quest.7B00000000000223.title: "Arcanethyst"
+	quest.7B00000000000224.quest_desc: ["Soul aura damages nearby enemies; right-click sends souls to strike a distant target (rapid hits, health siphon), then return granting absorption. Soul Anguish tier III (max)."]
+	quest.7B00000000000224.title: "Awakened Lichblade"
+	quest.7B00000000000225.quest_desc: ["On hit: chance to release orbiting toxic spores that inflict escalating effects on nearby enemies while a target stays in range."]
+	quest.7B00000000000225.title: "Bramblethorn"
+	quest.7B00000000000226.quest_desc: ["On hit: chance to spew explosive brimstone."]
+	quest.7B00000000000226.title: "Brimstone Claymore"
+	quest.7B00000000000227.quest_desc: ["While wielded: chance to fully avoid incoming damage. Right-click: become briefly immune to damage, then release an explosion scaling with the damage negated."]
+	quest.7B00000000000227.title: "Caelestis"
+	quest.7B00000000000228.quest_desc: ["On hit: summon axolotls that attack enemies and can perch on your shoulders for area buffs (can grant Dolphin's Grace). Right-click: summon a rare blue axolotl."]
+	quest.7B00000000000228.title: "Chompolotl"
+	quest.7B00000000000229.quest_desc: ["No combat effect. Carrying it while exploring the deepest, darkest Overworld depths transforms it into a random unique weapon."]
+	quest.7B00000000000229.title: "Decaying Relic"
+	quest.7B0000000000022A.quest_desc: ["No combat effect. A crafting relic: upgrade with a Runic Tablet into the Righteous or Tainted Relic (then Sunfire/Harbinger)."]
+	quest.7B0000000000022A.title: "Dormant Relic"
+	quest.7B0000000000022B.quest_desc: ["Right-click (channel): release fiery shrapnel at the nearest target, more damage the longer charged (a last-second release adds an extra shard); channeling may grant Speed, Haste, and Strength."]
+	quest.7B0000000000022B.title: "Emberblade"
+	quest.7B0000000000022C.quest_desc: ["On hit: inflict Smouldering; striking Smouldering enemies deals bonus damage per stack. Right-click: evade backwards and heal a percentage of max HP."]
+	quest.7B0000000000022C.title: "Emberlash"
+	quest.7B0000000000022D.quest_desc: ["Right-click: summon a twister that chases enemies, dealing more damage the longer they stay trapped; gain Haste while near it."]
+	quest.7B0000000000022D.title: "Enigma"
+	quest.7B0000000000022E.quest_desc: ["Right-click: plant a flame seed in the nearest enemy (damage-over-time) that detonates for area damage and spreads to others; gain Haste on each detonation."]
+	quest.7B0000000000022E.title: "Flamewind"
+	quest.7B0000000000022F.quest_desc: ["Right-click to throw (innate Loyalty III); airtime and angle scale impact damage. On landing it pulses 5 times, damaging, slowing, and pulling nearby enemies."]
+	quest.7B0000000000022F.title: "Frostfall"
+	quest.7B00000000000230.quest_desc: ["On hit: chance to inflict Weakness. Right-click: summon an Abyssal Battle Standard that pulls, damages, and slows enemies while periodically granting Haste to nearby allies."]
+	quest.7B00000000000230.title: "Harbinger"
+	quest.7B00000000000231.quest_desc: ["On hit: chance to ignite the target and send it flying. Right-click (channel): trade health for resistance while tremors pull enemies in; release to launch and ignite them, scaling with channel time."]
+	quest.7B00000000000231.title: "Hearthflame"
+	quest.7B00000000000232.quest_desc: ["On hit: release a bee that stings the target (limited frequency). Right-click: have your bees produce healing honey, regenerating you over time."]
+	quest.7B00000000000232.title: "Hiveheart"
+	quest.7B00000000000233.quest_desc: ["While wielded: a frost aura damages and slows nearby enemies. Right-click: drain hunger to summon a blizzard that slows and deals extra damage around you."]
+	quest.7B00000000000233.title: "Icewhisper"
+	quest.7B00000000000234.quest_desc: ["Right-click to throw (innate Loyalty III); airtime and angle scale impact damage. On return it slows and damages enemies."]
+	quest.7B00000000000234.title: "Livyatan"
+	quest.7B00000000000235.quest_desc: ["Occasionally repels approaching enemies. Right-click: after a short delay, release a sonic boom that damages enemies in its path."]
+	quest.7B00000000000235.title: "Magiblade"
+	quest.7B00000000000236.quest_desc: ["Right-click: summon a localized storm that damages nearby enemies and can refresh and intensify itself; attacking during it has a chance to repair an equipped item."]
+	quest.7B00000000000236.title: "Magiscythe"
+	quest.7B00000000000237.quest_desc: ["Right-click to throw (innate Loyalty III), leaping forward into a slam that damages nearby enemies (immune while leaping). On hit: chance for bonus magic damage."]
+	quest.7B00000000000237.title: "Magispear"
+	quest.7B00000000000238.quest_desc: ["When raining/wet, on hit: chance to call down lightning. Right-click (channel): gain resistance and create a local storm that rains lightning on nearby enemies."]
+	quest.7B00000000000238.title: "Mjolnir"
+	quest.7B00000000000239.quest_desc: ["On hit: chance to ignite the target or yourself (Regeneration instead if low HP); gain Strength and Speed the lower your HP. Right-click: roar to knock back and ignite nearby enemies, gaining resistance and onslaught."]
+	quest.7B00000000000239.title: "Molten Edge"
+	quest.7B0000000000023A.quest_desc: ["While wielded: move 5% slower but take 15% less damage. Right-click: dash forward, shrugging off the next few hits and gaining knockback resistance; your next attack deals +95% to a single target."]
+	quest.7B0000000000023A.title: "Ribboncleaver"
+	quest.7B0000000000023B.quest_desc: ["On hit: chance to gain Regeneration. Upgrades with a Runic Tablet into Sunfire."]
+	quest.7B0000000000023B.title: "Righteous Relic"
+	quest.7B0000000000023C.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B0000000000023C.title: "Runic Chakram"
+	quest.7B0000000000023D.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B0000000000023D.title: "Runic Claymore"
+	quest.7B0000000000023E.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B0000000000023E.title: "Runic Cutlass"
+	quest.7B0000000000023F.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B0000000000023F.title: "Runic Glaive"
+	quest.7B00000000000240.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000240.title: "Runic Greataxe"
+	quest.7B00000000000241.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000241.title: "Runic Greathammer"
+	quest.7B00000000000242.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000242.title: "Runic Halberd"
+	quest.7B00000000000243.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000243.title: "Runic Katana"
+	quest.7B00000000000244.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000244.title: "Runic Longsword"
+	quest.7B00000000000245.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000245.title: "Runic Rapier"
+	quest.7B00000000000246.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000246.title: "Runic Sai"
+	quest.7B00000000000247.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000247.title: "Runic Scythe"
+	quest.7B00000000000248.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000248.title: "Runic Spear"
+	quest.7B00000000000249.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B00000000000249.title: "Runic Twinblade"
+	quest.7B0000000000024A.quest_desc: ["Has a rune socket: socket a runefused gem for a random on-hit runic power; gems are identified and re-rolled with a Runic Tablet."]
+	quest.7B0000000000024A.title: "Runic Warglaive"
+	quest.7B0000000000024B.quest_desc: ["On hit: chance to deal magic damage that scales with the target's armor. Right-click: drop a blinding shadow mist and shadowstep forward."]
+	quest.7B0000000000024B.title: "Shadowsting"
+	quest.7B0000000000024C.quest_desc: ["Soul aura damages nearby enemies; right-click sends souls to strike a distant target (rapid hits, health siphon), then return granting absorption. Soul Anguish tier I of III (upgrades to Waking, then Awakened)."]
+	quest.7B0000000000024C.title: "Slumbering Lichblade"
+	quest.7B0000000000024D.quest_desc: ["On hit: chance to absorb souls, gaining toughness but reduced attack speed. Right-click: release the souls, passing the attack-speed slow to nearby foes and regenerating you."]
+	quest.7B0000000000024D.title: "Soulkeeper"
+	quest.7B0000000000024E.quest_desc: ["Right-click: form an expanding zone that pulses to heal you and damage enemies; while active, gain knockback resistance and take 50% less damage."]
+	quest.7B0000000000024E.title: "Soulpyre"
+	quest.7B0000000000024F.quest_desc: ["On hit: chance to inflict stacking weakness. Right-click: consume all stacks from nearby foes, damaging them and healing you per stack consumed."]
+	quest.7B0000000000024F.title: "Soulrender"
+	quest.7B00000000000250.quest_desc: ["On hit: chance to steal the target's soul, gaining Haste while slowing and marking it for death. Right-click: near a soulless target, return its soul, leap, and gain invisibility; from afar, blink to it, returning the soul with force to blind and damage."]
+	quest.7B00000000000250.title: "Soulstealer"
+	quest.7B00000000000251.quest_desc: ["By day, attacks deal bonus damage; by night, attacks gain lifesteal. Right-click: evade backwards gaining Speed; activate again to dash forward with resistance and Haste."]
+	quest.7B00000000000251.title: "Stars Edge"
+	quest.7B00000000000252.quest_desc: ["Right-click: briefly block incoming attacks; timing the block against an enemy swing parries, dealing damage, launching them, and cutting the cooldown. Consecutive parries scale up."]
+	quest.7B00000000000252.title: "Stormbringer"
+	quest.7B00000000000253.quest_desc: ["On hit: chance to refresh the ability cooldown. Right-click: jolt forward with brief invulnerability and lingering Speed and Haste."]
+	quest.7B00000000000253.title: "Storms Edge"
+	quest.7B00000000000254.quest_desc: ["On hit: chance to gain Regeneration. Right-click: summon a Righteous Battle Standard that ignites, damages, and slows enemies while periodically granting Strength and health to nearby allies."]
+	quest.7B00000000000254.title: "Sunfire"
+	quest.7B00000000000255.quest_desc: ["Right-click to throw it at enemies. No other special effect."]
+	quest.7B00000000000255.title: "Sword On A Stick"
+	quest.7B00000000000256.quest_desc: ["On hit: chance to inflict Weakness. Upgrades with a Runic Tablet into Harbinger."]
+	quest.7B00000000000256.title: "Tainted Relic"
+	quest.7B00000000000257.quest_desc: ["On hit: attach stacking elemental energy (damage-over-time plus element-specific debuffs). Right-click: draw nearby elements into a growing vortex around you that damages enemies."]
+	quest.7B00000000000257.title: "Tempest"
+	quest.7B00000000000258.quest_desc: ["On hit: chance to refresh the ability cooldown. Right-click: charge up, damaging nearby foes, then dash forward with Haste, dealing heavy damage to enemies in your path."]
+	quest.7B00000000000258.title: "Thunderbrand"
+	quest.7B00000000000259.quest_desc: ["On hit: chance to convert the target's positive potion effects into their negative counterparts."]
+	quest.7B00000000000259.title: "Toxic Longsword"
+	quest.7B0000000000025A.quest_desc: ["On hit: chance to gain stacking attack speed (up to 15). Right-click: consume all stacks for Strength lasting as long as the number of stacks consumed."]
+	quest.7B0000000000025A.title: "Twisted Blade"
+	quest.7B0000000000025B.quest_desc: ["Soul aura damages nearby enemies; right-click sends souls to strike a distant target (rapid hits, health siphon), then return granting absorption. Soul Anguish tier II of III (upgrades to Awakened)."]
+	quest.7B0000000000025B.title: "Waking Lichblade"
+	quest.7B0000000000025C.quest_desc: ["On hit: chance to rip life from a low-HP target for absorption, instantly executing those under a health threshold; separate chance to siphon health from nearby enemies to heal you."]
+	quest.7B0000000000025C.title: "Watcher Claymore"
+	quest.7B0000000000025D.quest_desc: ["On hit: chance to rip life from a low-HP target for absorption, instantly executing those under a health threshold; separate chance to siphon health from nearby enemies to heal you."]
+	quest.7B0000000000025D.title: "Watching Warglaive"
+	quest.7B0000000000025E.quest_desc: ["Attacking ignited enemies grants Strength and Haste. Once per long cooldown, otherwise-lethal damage instead heals you to full and grants brief resistance (mainhand only)."]
+	quest.7B0000000000025E.title: "Waxweaver"
+	quest.7B0000000000025F.quest_desc: ["On hit: chance to refresh the ability cooldown. Right-click: dash forward gaining resistance and absorption, inflicting Echo on enemies in your path (stronger per enemy hit)."]
+	quest.7B0000000000025F.title: "Whisperwind"
+	quest.7B00000000000260.quest_desc: ["Right-click to throw (innate Loyalty III), gaining frenzy stacks that grant attack speed and let you hit twice (max 5, lost when you take a hit)."]
+	quest.7B00000000000260.title: "Wickpiercer"
+	quest.7B00000000000261.quest_desc: ["Right-click to throw (innate Loyalty I) and leap to it with brief damage immunity, gaining Haste on arrival."]
+	quest.7B00000000000261.title: "Wraithfang"
+	quest.7B00000000000262.quest_desc: ["Arrows swap your position with whatever they hit."]
+	quest.7B00000000000262.title: "Ender Bow"
+	quest.7B00000000000263.quest_desc: ["Sets targets on fire on hit."]
+	quest.7B00000000000263.title: "Fiery Sword"
+	quest.7B00000000000264.quest_desc: ["+2.5 blocks of attack and block reach."]
+	quest.7B00000000000264.title: "Giant Sword"
+	quest.7B00000000000265.quest_desc: ["Breaks after a single hit; flagged Creative-Mode-only in this version."]
+	quest.7B00000000000265.title: "Glass Sword"
+	quest.7B00000000000266.quest_desc: ["Arrows chill targets, slowing them."]
+	quest.7B00000000000266.title: "Ice Bow"
+	quest.7B00000000000267.quest_desc: ["Chills targets on hit, slowing them."]
+	quest.7B00000000000267.title: "Ice Sword"
+	quest.7B00000000000268.quest_desc: ["Built-in Knockback I."]
+	quest.7B00000000000268.title: "Ironwood Sword"
+	quest.7B00000000000269.quest_desc: ["Deals extra damage to armored targets."]
+	quest.7B00000000000269.title: "Knightmetal Sword"
+	quest.7B0000000000026A.quest_desc: ["Arrows home in on the target."]
+	quest.7B0000000000026A.title: "Seeker Bow"
+	quest.7B0000000000026B.quest_desc: ["Built-in Looting II."]
+	quest.7B0000000000026B.title: "Steeleaf Sword"
+	quest.7B0000000000026C.quest_desc: ["Fires three arrows at once in a spread."]
+	quest.7B0000000000026C.title: "Triple Bow"
+}

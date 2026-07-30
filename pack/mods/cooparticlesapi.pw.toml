@@ -1,0 +1,13 @@
+name = "CooParticlesAPI"
+filename = "CooParticlesAPI-NeoForge-1.21.1-2.2.4.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/poJQVcIe/versions/7IEjbgHw/CooParticlesAPI-NeoForge-1.21.1-2.2.4.2.jar"
+hash-format = "sha512"
+hash = "781e8d00bd03f8578fc21b65c3190be0594bc397e298abd20c10a953600904a2251efe45070a1fc90d790586998bd890312b2b1cdc47bf6d043947b1dbbebedf"
+
+[update]
+[update.modrinth]
+mod-id = "poJQVcIe"
+version = "7IEjbgHw"

@@ -1,0 +1,13 @@
+name = "Stylish Effects"
+filename = "StylishEffects-v21.1.2-1.21.1-NeoForge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/onDuQF5e/versions/qaONmJ9G/StylishEffects-v21.1.2-1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "fea9c8e79ef8ce02f88a4518e078a4e0d14622b0d96b55b5ce4c6002af0f3174139c27d6537244449eeb92796516646cd516c2ba16a6bf735550cf884b602558"
+
+[update]
+[update.modrinth]
+mod-id = "onDuQF5e"
+version = "qaONmJ9G"

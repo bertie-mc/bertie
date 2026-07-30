@@ -1,0 +1,13 @@
+name = "Giant Dead Oak Tree"
+filename = "giant_dead_oak_tree-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ing64hYj/versions/9K6iqTp9/giant_dead_oak_tree-1.0.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "22395bdff4eb7c72cb9582a6fd3aa089dd4dc98b71f5b395bd530006f3b341ba3f38f240ca63ed76496f12a626f68488fa0dbb036a489e6d36d72286bf45c3c0"
+
+[update]
+[update.modrinth]
+mod-id = "ing64hYj"
+version = "9K6iqTp9"

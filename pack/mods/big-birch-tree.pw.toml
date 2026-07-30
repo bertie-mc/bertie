@@ -1,0 +1,13 @@
+name = "Big Birch Tree"
+filename = "big_birch_tree-1.0.3-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4smC3lUy/versions/hRHHud0R/big_birch_tree-1.0.3-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "eb526a1741dba76a994bd167745c7cab8f57a3e4c0e37e527d25236ab0f9bf08990e32b9d0810587f38fc8e20169f54df63a06d2f09b14e3a79ca809a58d68e9"
+
+[update]
+[update.modrinth]
+mod-id = "4smC3lUy"
+version = "hRHHud0R"

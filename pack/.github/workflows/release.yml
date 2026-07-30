@@ -1,0 +1,169 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  NEOFORGE_VERSION: "21.1.233"
+
+jobs:
+  release:
+    name: Build & publish client and server packs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: "21"
+          distribution: "temurin"
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Derive version
+        id: v
+        run: |
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then V="${GITHUB_REF_NAME#v}"; else V="$(grep -m1 '^version' pack.toml | sed 's/version = "//;s/"//')-dev"; fi
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+          echo "building bertie $V"
+
+      - name: Index is current
+        run: |
+          packwiz refresh
+          git diff --exit-code -- index.toml pack.toml \
+            || { echo "::error::index.toml is stale - run 'packwiz refresh' and commit"; exit 1; }
+
+      # ---------------------------------------------------------------- client
+      - name: Export client .mrpack
+        run: |
+          packwiz modrinth export -o "bertie-${{ steps.v.outputs.version }}.mrpack"
+          ls -lh "bertie-${{ steps.v.outputs.version }}.mrpack"
+
+      - name: Report what the .mrpack bundles
+        run: |
+          mkdir -p /tmp/inspect && cd /tmp/inspect
+          unzip -q "$GITHUB_WORKSPACE/bertie-${{ steps.v.outputs.version }}.mrpack" -d mrpack
+          linked=$(python3 -c "import json;print(len(json.load(open('mrpack/modrinth.index.json'))['files']))")
+          bundled=$(find mrpack/overrides -name '*.jar' 2>/dev/null | wc -l)
+          echo "### Client pack" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **$linked** mods referenced by URL (downloaded at install time)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **$bundled** mods embedded in \`overrides/\`" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$bundled" -gt 0 ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "<details><summary>Embedded jars — these are redistributed inside the .mrpack, check their licences</summary>" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            find mrpack/overrides -name '*.jar' -printf '%f\n' | sort >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            echo "</details>" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # ---------------------------------------------------------------- server
+      # The server zip deliberately ships NO mod jars. It carries the packwiz manifest
+      # and an installer that fetches every mod from its original host on first run, so
+      # nothing third-party is redistributed here.
+      - name: Build server pack
+        run: |
+          SRV="bertie-server-${{ steps.v.outputs.version }}"
+          mkdir -p "$SRV/pack"
+          cp -r pack.toml index.toml mods config "$SRV/pack/"
+          [ -d shaderpacks ] && rm -rf "$SRV/pack/shaderpacks"
+          curl -sSL -o "$SRV/packwiz-installer-bootstrap.jar" \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
+          cat > "$SRV/start.sh" <<'EOS'
+          #!/usr/bin/env bash
+          set -euo pipefail
+          NEOFORGE_VERSION="__NEOFORGE__"
+          cd "$(dirname "$0")"
+
+          if [ ! -f eula.txt ]; then
+            echo "You must accept the Minecraft EULA (https://aka.ms/MinecraftEULA)."
+            echo "Write 'eula=true' into eula.txt, then run this script again."
+            echo "eula=false" > eula.txt
+            exit 1
+          fi
+
+          if [ ! -f run.sh ]; then
+            echo "==> Installing NeoForge ${NEOFORGE_VERSION}"
+            curl -sSL -o neoforge-installer.jar \
+              "https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar"
+            java -jar neoforge-installer.jar --installServer
+            rm -f neoforge-installer.jar
+            [ -f user_jvm_args.txt ] || printf -- "-Xmx8G\n-Xms4G\n" > user_jvm_args.txt
+          fi
+
+          echo "==> Syncing mods and configs"
+          java -jar packwiz-installer-bootstrap.jar --no-gui -s server "file://$PWD/pack/pack.toml"
+
+          echo "==> Starting server"
+          exec ./run.sh nogui "$@"
+          EOS
+          sed -i "s/__NEOFORGE__/${NEOFORGE_VERSION}/" "$SRV/start.sh"
+          sed -i 's/^          //' "$SRV/start.sh"
+          chmod +x "$SRV/start.sh"
+
+          cat > "$SRV/start.bat" <<EOB
+          @echo off
+          cd /d "%~dp0"
+          if not exist eula.txt (
+            echo You must accept the Minecraft EULA ^(https://aka.ms/MinecraftEULA^).
+            echo Write eula=true into eula.txt, then run this script again.
+            echo eula=false> eula.txt
+            exit /b 1
+          )
+          if not exist run.bat (
+            echo ==^> Installing NeoForge ${NEOFORGE_VERSION}
+            curl -sSL -o neoforge-installer.jar "https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar"
+            java -jar neoforge-installer.jar --installServer
+            del neoforge-installer.jar
+          )
+          echo ==^> Syncing mods and configs
+          java -jar packwiz-installer-bootstrap.jar --no-gui -s server "file:///%CD:\\=/%/pack/pack.toml"
+          echo ==^> Starting server
+          call run.bat nogui
+          EOB
+          sed -i 's/^          //' "$SRV/start.bat"
+
+          cp README.md "$SRV/README.md" 2>/dev/null || true
+          zip -qr "${SRV}.zip" "$SRV"
+          ls -lh "${SRV}.zip"
+          echo "### Server pack" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Ships the manifest and an installer — **no mod jars are redistributed**." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            bertie-${{ steps.v.outputs.version }}.mrpack
+            bertie-server-${{ steps.v.outputs.version }}.zip
+          generate_release_notes: true
+          draft: false
+          prerelease: ${{ contains(github.ref_name, '-alpha') || contains(github.ref_name, '-beta') || contains(github.ref_name, '-rc') }}
+          fail_on_unmatched_files: true
+
+      - name: Upload artifacts (manual runs)
+        if: github.ref_type != 'tag'
+        uses: actions/upload-artifact@v7
+        with:
+          name: bertie-packs
+          path: |
+            bertie-*.mrpack
+            bertie-server-*.zip
+          if-no-files-found: error

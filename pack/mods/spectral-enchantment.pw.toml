@@ -1,0 +1,13 @@
+name = "Spectral Enchantment"
+filename = "spectral-enchantment-v1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8rO3GwBM/versions/8Os8G6b7/spectral-enchantment-v1.0.0.jar"
+hash-format = "sha512"
+hash = "d53f482e11ac129b933ec34211d12719da53c43fd986ce44f4efb5ecc49bc341ae90cf571b464dfd4cfe50b7cd9e05d965438f0cf748797d46b82defe9caaa49"
+
+[update]
+[update.modrinth]
+mod-id = "8rO3GwBM"
+version = "8Os8G6b7"

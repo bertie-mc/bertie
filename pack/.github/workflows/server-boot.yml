@@ -1,0 +1,120 @@
+name: Server boot
+
+# The real integration test: install the server side of the pack, boot a dedicated
+# NeoForge server headlessly, and require it to reach "Done (". This is what catches a
+# mod that downloads fine but crashes during mod loading, a registry-freeze failure, or
+# a missing dependency - none of which `validate` can see.
+
+on:
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  NEOFORGE_VERSION: "21.1.233"
+
+jobs:
+  boot:
+    name: Dedicated server reaches Done
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: "21"
+          distribution: "temurin"
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Serve the pack
+        run: |
+          packwiz serve --port 8080 &
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8080/pack.toml >/dev/null && break
+            sleep 1
+          done
+          curl -sf http://localhost:8080/pack.toml >/dev/null
+
+      - name: Install the server-side pack
+        run: |
+          mkdir -p server && cd server
+          curl -sSL -o packwiz-installer-bootstrap.jar \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+          java -jar packwiz-installer-bootstrap.jar --no-gui -s server http://localhost:8080/pack.toml
+          echo "server-side mods: $(ls mods/*.jar 2>/dev/null | wc -l)"
+
+      - name: Install NeoForge server
+        working-directory: server
+        run: |
+          curl -sSL -o neoforge-installer.jar \
+            "https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar"
+          java -jar neoforge-installer.jar --installServer
+          echo "eula=true" > eula.txt
+          echo "-Xmx8G" > user_jvm_args.txt
+          echo "-Xms2G" >> user_jvm_args.txt
+          # keep the world tiny and the boot fast
+          printf 'level-type=minecraft\\:flat\nmax-players=1\nonline-mode=false\nspawn-protection=0\nview-distance=4\nsimulation-distance=4\n' > server.properties
+
+      - name: Boot the server
+        working-directory: server
+        run: |
+          set -o pipefail
+          chmod +x run.sh || true
+          ( ./run.sh nogui 2>&1 || true ) | tee boot.log &
+          BOOT_PID=$!
+
+          deadline=$(( $(date +%s) + 1500 ))
+          status="timeout"
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            if grep -qE 'Done \([0-9.]+s\)' boot.log 2>/dev/null; then status="ok"; break; fi
+            if grep -qE 'Failed to start the minecraft server|A potential solution has been determined|Exception in thread "main"|Negative index in crash report handler|The server has crashed' boot.log 2>/dev/null; then status="crash"; break; fi
+            if ! kill -0 "$BOOT_PID" 2>/dev/null; then status="exited"; break; fi
+            sleep 10
+          done
+
+          # stop the server regardless of outcome
+          pkill -f 'net.neoforged' 2>/dev/null || true
+          pkill -f 'java .*nogui' 2>/dev/null || true
+          sleep 5
+
+          echo "### Boot result: \`$status\`" >> "$GITHUB_STEP_SUMMARY"
+          case "$status" in
+            ok)
+              echo "server reached Done"
+              grep -E 'Done \([0-9.]+s\)' boot.log | tail -1 >> "$GITHUB_STEP_SUMMARY"
+              ;;
+            *)
+              echo "::error::server did not reach 'Done (' - status=$status"
+              echo '```' >> "$GITHUB_STEP_SUMMARY"
+              tail -80 boot.log >> "$GITHUB_STEP_SUMMARY"
+              echo '```' >> "$GITHUB_STEP_SUMMARY"
+              exit 1
+              ;;
+          esac
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: server-boot-logs
+          path: |
+            server/boot.log
+            server/logs/
+            server/crash-reports/
+          if-no-files-found: warn
+          retention-days: 14
