@@ -77,6 +77,10 @@ file = "config/quark-common.toml"
 hash = "6a8d7657ab5ad7954e3b991ab6597af72cb29eb72e6da2ebd3471803b619085e"
 
 [[files]]
+file = "config/wover/client.json"
+hash = "4e1cc906b6c45e8e47ec5a653c85431afdd20b49a34b4fbdf3099603e0e97d85"
+
+[[files]]
 file = "mods/access-denied-api.pw.toml"
 hash = "bb025d63fd734e1c3859d3cd8cbf077ff9e5d9baad41fba7121d601b2f114bca"
 metafile = true
