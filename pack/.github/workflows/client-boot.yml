@@ -1,9 +1,10 @@
 name: Client boot
 
 # Install the client side of the real pack and launch its pinned NeoForge version with
-# HeadlessMC. HMC-Specifics captures text rendered by Minecraft, so this asserts that
-# the loading overlay has gone away and the actual title menu is on screen; process
-# liveness or an earlier loader message is not enough to pass.
+# HeadlessMC under Xvfb. The virtual display provides a real software OpenGL context for
+# renderer mods, while HMC-Specifics captures rendered text so this asserts that the
+# loading overlay has gone away and the actual title menu is on screen; process liveness
+# or an earlier loader message is not enough to pass.
 
 on:
   pull_request:
@@ -41,6 +42,11 @@ jobs:
         with:
           java-version: "21"
           distribution: "temurin"
+
+      - name: Install virtual display
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends --yes xvfb libgl1-mesa-dri libglx-mesa0
 
       - name: Set up Go
         uses: actions/setup-go@v6
@@ -90,11 +96,12 @@ jobs:
 
           cat > HeadlessMC/config.properties <<EOF
           hmc.java.versions=$JAVA_HOME/bin/java
-          hmc.jvmargs=-Djava.awt.headless=true -Xms2G -Xmx10G
+          hmc.jvmargs=-Xms2G -Xmx10G
           hmc.gamedir=$GITHUB_WORKSPACE/run
           hmc.mcdir=$HOME/.minecraft
           hmc.offline=true
-          hmc.assets.dummy=true
+          hmc.assets.dummy=false
+          hmc.check.xvfb=true
           hmc.jline.enabled=false
           hmc.rethrow.launch.exceptions=true
           hmc.exit.on.failed.command=true
@@ -112,7 +119,7 @@ jobs:
         uses: actions/cache@v5
         with:
           path: ~/.minecraft
-          key: ${{ runner.os }}-minecraft-${{ env.MINECRAFT_VERSION }}-neoforge-${{ env.NEOFORGE_VERSION }}-headlessmc-${{ env.HEADLESSMC_VERSION }}
+          key: ${{ runner.os }}-minecraft-${{ env.MINECRAFT_VERSION }}-neoforge-${{ env.NEOFORGE_VERSION }}-headlessmc-${{ env.HEADLESSMC_VERSION }}-xvfb
 
       - name: Install pinned Minecraft and NeoForge
         run: |
@@ -127,10 +134,13 @@ jobs:
           java -jar headlessmc-launcher.jar --command versions
 
       - name: Boot client and require the title menu
+        env:
+          LIBGL_ALWAYS_SOFTWARE: "true"
         run: |
           set -o pipefail
-          java -jar headlessmc-launcher.jar \
-            --command launch "^neoforge-${NEOFORGE_VERSION}$" -regex -lwjgl \
+          xvfb-run --auto-servernum --server-args="-screen 0 1280x720x24" \
+            java -jar headlessmc-launcher.jar \
+            --command launch "^neoforge-${NEOFORGE_VERSION}$" -regex \
             2>&1 | tee client-boot.log
 
           {
