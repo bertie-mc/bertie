@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 
 /**
- * NxN grid layout for {@code create:mechanical_crafting} (up to 9x9; the S1 pack uses at most
+ * NxN grid layout for {@code create:mechanical_crafting} (up to 9x9; the bertie pack uses at most
  * 5x5): the shaped pattern as a slot grid, filling arrow, result. The grid list is row-major
  * with {@code gw*gh} entries; empty cells render as empty slots.
  */

@@ -16,7 +16,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 /**
  * Forbidden & Arcanus — Clibano Combustion (the multi-fuel smelter). 1-2 item inputs -> result, with an
  * optional chance "residue" second output, plus fire-type / time / xp info lines. Hephaestus Forge
- * rituals live in {@link HephaestusRitualEmiModule} (datapack-registry recipes, added for the S1
+ * rituals live in {@link HephaestusRitualEmiModule} (datapack-registry recipes, added for the bertie
  * pack where rituals are the load-bearing progression bridge). apply_modifier (vanilla smithing)
  * remains deferred — see PROJECT.md.
  */
