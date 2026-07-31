@@ -90,7 +90,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_s1:weeping_eye"
+				id: "bertie_progression:weeping_eye"
 			}
 			dependencies: ["1C00000000000007"]
 			id: "1C00000000000004"
@@ -103,7 +103,7 @@
 					{
 						count: 1L
 						id: "1C00000001000004"
-						item: { count: 1 id: "bertie_s1:weeping_eye" }
+						item: { count: 1 id: "bertie_progression:weeping_eye" }
 						type: "item"
 					}
 				]

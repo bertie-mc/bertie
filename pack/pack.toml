@@ -1,13 +1,13 @@
 name = "bertie"
 author = "berlord"
 version = "0.1.0"
-description = "A NeoForge 1.21.1 modpack: the S1 progression questline on top of a large exploration/tech/magic mod set."
+description = "A large, work-in-progress NeoForge 1.21.1 exploration, technology, and magic modpack, currently focused on integrated early-to-mid-game progression."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "b5f888ce5e527da008b8a57f264bd9a1ceaac209ba3aa7e6a9c75a9c50795496"
+hash = "61439cb9f9dfb25544637ef086f800bfc1c32ad37a62646f484d09104f3dab8f"
 
 [versions]
 minecraft = "1.21.1"

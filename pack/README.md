@@ -1,7 +1,8 @@
 # bertie
 
-A **NeoForge 1.21.1** modpack: the S1 progression questline layered on top of a large
-exploration / tech / magic mod set.
+A large, work-in-progress **NeoForge 1.21.1** exploration, technology and magic modpack.
+Development currently focuses on integrating its early-to-mid-game progression into a
+coherent and engaging experience.
 
 **490 mods.** Managed with [packwiz](https://packwiz.infra.link/).
 
@@ -55,7 +56,7 @@ The mods written for this pack live in their own repositories under
 
 | Mod | Repo |
 |---|---|
-| `bertie_s1` | [bertie-s1](https://github.com/bertie-mc/bertie-s1) — the S1 progression content |
+| `bertie_progression` | [bertie-progression](https://github.com/bertie-mc/bertie-progression) — the pack's progression mod |
 | `berlords_carving` | [carving](https://github.com/bertie-mc/carving) |
 | `berlords_emi` | [berlords-emi](https://github.com/bertie-mc/berlords-emi) |
 | `bertie_filters` | [bertie-filters](https://github.com/bertie-mc/bertie-filters) |
@@ -91,9 +92,9 @@ Deliberately **not** in the pack:
 | `ftb-xmod-compat` | **21.1.8** | Newer builds require `ftblibrary` ≥ 2101.1.34 and `ftbquests` ≥ 2101.1.28, which this pack does not run. 21.1.9/21.1.10 fail server boot. Known issue; 21.1.8 is the stable combination. |
 
 The whole **FTB family** — `ftb-library` 2101.1.32, `ftb-quests` 2101.1.26, `ftb-teams`
-2101.1.10, `ftb-xmod-compat` 21.1.8, `ftb-filter-system` 21.1.4 — matches the `s1 demo`
-instance, which is where every quest and the whole progression was authored. Those are the
-authoritative versions. Do not bump one in isolation.
+2101.1.10, `ftb-xmod-compat` 21.1.8, `ftb-filter-system` 21.1.4 — matches the development
+instance where current quest and progression work is authored. These versions
+are the tested compatible set. Do not bump one in isolation.
 
 ---
 

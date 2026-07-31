@@ -10,7 +10,7 @@ hash = "8899b89a7567cf28d688d16937bfff68d53c6db572b8b5a161aa916f5e8032df"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ash_and_twilight.snbt"
-hash = "9cf43e0a767fc7ff4403d5eff3f49ffd9017e9f66f135e2be8380f536181672f"
+hash = "e55eb2d60e5635ddcefbaa9a722d991a856271ce81fbcc19edd04274c0f26a77"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/concordance.snbt"
@@ -18,15 +18,15 @@ hash = "427193b9c6e4bd9dc42cf42d27c86fce4c4b4c92d7656630a65d9dc7bbd41048"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/dark_arts.snbt"
-hash = "03d63119b4afa6b3297d6500c58dfd1dd86f5d385df77c3daa217593ea0acc51"
+hash = "b1471d601f4a3a7489393b9bd5e7438c3355955bf453edeb86f70debd5b00f36"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/echo_and_below.snbt"
-hash = "3f63270da28452faeb3131d9859fcf9b6d331b0859ae82819b6d895b6d90c45d"
+hash = "d251262ae0b1e37936ec28d0730618a045180e5746cc1fccd69a99cf94fdd257"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/five_by_five.snbt"
-hash = "39d3c7dc3f6967c8f555214e1be058fdc4222aba80c090f594a90e1eb643d869"
+hash = "ef528fad02fcae5a4cfe5e3bc59dec072e69463017e06e966e3b385bb7e84dae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/god_of_war.snbt"
@@ -34,11 +34,11 @@ hash = "340a93f2f900432230c518a71c83f55ae91bb7574aa8de3517e40e5f59e274c5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hands_and_stone.snbt"
-hash = "4037ab4b6ac64d7946c3d10727f223657aa0dac353227753cc7bf2810f39deba"
+hash = "7e93a316d77406093a9b129ddc9ddf7d5d25a42b1d9e3b62bc7239fbd4761f7c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetic_language.snbt"
-hash = "ae9ed3e0892a27949696b0645bbc48dd249f44d4d439e2898a3ef75ebbc5dc20"
+hash = "0ada23f1b87a9a8912d277c8eb443307c1b5eac1e0fef889af364658ab896edf"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -46,7 +46,7 @@ hash = "2c5e7631dfff8e2e2d615603d620e18e0de71e1bf5962e21daa0c7b48aee947b"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b429b94ff95df628c79069ec89eefeae16d00f5cfa3c6613b51e6a7a4c6036b8"
+hash = "0ae2e8a7a0e6b51d4fa991b63ef9b5a6e6ef66dd710d13cc37df025c586dba67"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -252,7 +252,7 @@ metafile = true
 
 [[files]]
 file = "mods/berlords-emi.pw.toml"
-hash = "82947a494445736ebc00aef7b476f6bb30387eb5d2df9c31c30ec145a4c8b416"
+hash = "b1151c84d98fbfaf89e72b0fa8922b1bb6c796e408d2ae778c29c00b6964604d"
 metafile = true
 
 [[files]]
@@ -276,8 +276,8 @@ hash = "c9e3db9696695d1e23db4b9b2e0072c1dae8858e3999a570d778f5e69c88dd60"
 metafile = true
 
 [[files]]
-file = "mods/bertie-s1.pw.toml"
-hash = "69f977b9d0a994fca6dc3db2ebbab47d459580ae430af9701d6f835e151fed4c"
+file = "mods/bertie-progression.pw.toml"
+hash = "f77954b168e090eea7e3f1cfe44641dc529aed93a7785a8269c2e1221218a84b"
 metafile = true
 
 [[files]]

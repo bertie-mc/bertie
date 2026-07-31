@@ -30,7 +30,7 @@
 							id: "minecraft:oak_log"
 						}
 						id: "1B00000001000001"
-						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertie_s1:natural_logs)', "minecraft:custom_name": '{"text":"Natural Logs","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertie_progression:natural_logs)', "minecraft:custom_name": '{"text":"Natural Logs","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
 						type: "item"
 					}
 				]
@@ -63,7 +63,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_s1:opening_mallet"
+				id: "bertie_progression:opening_mallet"
 			}
 			dependencies: ["1B00000000000001"]
 			id: "1B00000000000003"
@@ -76,7 +76,7 @@
 					{
 						count: 1L
 						id: "1B00000001000003"
-						item: { count: 1 id: "bertie_s1:opening_mallet" }
+						item: { count: 1 id: "bertie_progression:opening_mallet" }
 						type: "item"
 					}
 				]

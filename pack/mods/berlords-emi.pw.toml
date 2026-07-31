@@ -1,15 +1,15 @@
 name = "berlords-emi"
-filename = "berlords_emi-0.5.0.jar"
+filename = "berlords_emi-0.6.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/bertie-mc/berlords-emi/releases/download/v0.5.0/berlords_emi-0.5.0.jar"
+url = "https://github.com/bertie-mc/berlords-emi/releases/download/v0.6.0/berlords_emi-0.6.0.jar"
 hash-format = "sha256"
-hash = "1cbda00fb7c5c58c21a05e27dbacfce13ff3c8a2ef9705685b452c06a3599065"
+hash = "d3c820e28978de8d212bbb079a5919e3a5941c871fbdc70c1ca16de464100281"
 
 [update]
 [update.github]
 branch = "main"
 regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
 slug = "bertie-mc/berlords-emi"
-tag = "v0.5.0"
+tag = "v0.6.0"

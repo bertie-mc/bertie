@@ -437,7 +437,7 @@
 	quest.4B0000000000000A.title: "The Descent Anchor"
 	quest.4B0000000000000B.quest_desc: ["Your first Moonstone Shard must come from the deep dark colors of Imbrifer. The Instiller can then grow one shard into forty."]
 	quest.4B0000000000000B.title: "Imbrifer moonstone"
-	quest.4B0000000000000C.quest_desc: ["Chiseled Polished Darkstone core, 4 Arcane Crystal, 4 Deorum, 4 Moonstone - 1000 Aureal / 9000 Blood / 50 Souls. The final Stage-1 tier."]
+	quest.4B0000000000000C.quest_desc: ["Chiseled Polished Darkstone core, 4 Arcane Crystal, 4 Deorum, 4 Moonstone - 1000 Aureal / 9000 Blood / 50 Souls. The current top Forge tier."]
 	quest.4B0000000000000C.title: "Hephaestus Forge III"
 	quest.5B00000000000001.quest_desc: ["Summon and destroy it. Keep the Nether Star - you will want more than one before the end."]
 	quest.5B00000000000001.title: "The Wither"
@@ -487,7 +487,7 @@
 	quest.6B0000000000000E.title: "The Convergence Matrix"
 	quest.6B0000000000000F.quest_desc: ["The Crafter wall assembles Struts, Braces, End Stone Bricks, Reinforced Echoes and Moonstone Glass around a Matrix: Avaritia's Nether Crafting Table."]
 	quest.6B0000000000000F.title: "The 5x5 table"
-	quest.6B00000000000010.quest_desc: ["The mandatory 5x5: Struts, Braces, Spectrum Seals, Authorities, Moonsteel, Sovereign Seals around the second Matrix. Stage 1 ends here."]
+	quest.6B00000000000010.quest_desc: ["The current 5x5 culmination: Struts, Braces, Spectrum Seals, Authorities, Moonsteel, Sovereign Seals around the second Matrix. This setup remains provisional as progression develops."]
 	quest.6B00000000000010.title: "MEKANISM ACCESS CORE"
 	quest.6B00000000000011.quest_desc: ["Bind the Core and be done. In the full design this handoff unlocks Tier 2 for your team - machines begin AFTER this moment, never before."]
 	quest.6B00000000000011.title: "Bind the Core"
