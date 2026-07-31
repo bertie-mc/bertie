@@ -1,0 +1,154 @@
+name: Client boot
+
+# Install the client side of the real pack and launch its pinned NeoForge version with
+# HeadlessMC. HMC-Specifics captures text rendered by Minecraft, so this asserts that
+# the loading overlay has gone away and the actual title menu is on screen; process
+# liveness or an earlier loader message is not enough to pass.
+
+on:
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: client-boot-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  MINECRAFT_VERSION: "1.21.1"
+  NEOFORGE_VERSION: "21.1.233"
+  HEADLESSMC_VERSION: "2.10.0"
+  HMC_SPECIFICS_VERSION: "2.4.0"
+
+jobs:
+  boot:
+    name: Client reaches title menu
+    runs-on: ubuntu-latest
+    # The pack has roughly 490 mods and can spend tens of minutes in mod/resource
+    # loading on a hosted runner. The menu assertion itself allows 80 minutes.
+    timeout-minutes: 100
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v5
+        with:
+          java-version: "21"
+          distribution: "temurin"
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Serve the pack
+        run: |
+          packwiz serve --port 8080 &
+          attempt=0
+          until curl -sf http://localhost:8080/pack.toml >/dev/null; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -ge 30 ]; then
+              echo "packwiz server did not become ready" >&2
+              exit 1
+            fi
+            sleep 1
+          done
+
+      - name: Install the client-side pack
+        run: |
+          mkdir -p run
+          curl -sSL -o run/packwiz-installer-bootstrap.jar \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+          (
+            cd run
+            java -jar packwiz-installer-bootstrap.jar --no-gui -s client http://localhost:8080/pack.toml
+          )
+          echo "client-side mods: $(find run/mods -maxdepth 1 -name '*.jar' | wc -l)"
+
+      - name: Install the menu probe
+        run: |
+          mkdir -p HeadlessMC run/mods
+          curl -sSL -o headlessmc-launcher.jar \
+            "https://github.com/3arthqu4ke/headlessmc/releases/download/${HEADLESSMC_VERSION}/headlessmc-launcher-${HEADLESSMC_VERSION}.jar"
+          echo "52bd5006f478377b3893011d458562977d38c65ead6d2b31089beb4d614f13cd  headlessmc-launcher.jar" \
+            | sha256sum --check
+
+          curl -sSL -o run/mods/hmc-specifics.jar \
+            "https://github.com/headlesshq/hmc-specifics/releases/download/${HMC_SPECIFICS_VERSION}/hmc-specifics-${MINECRAFT_VERSION}-${HMC_SPECIFICS_VERSION}-neoforge-release.jar"
+          echo "e821604248d9fdb43fbe217616ba62ac7fad22af8937570dc8b8010f2051de79  run/mods/hmc-specifics.jar" \
+            | sha256sum --check
+
+          cat > HeadlessMC/config.properties <<EOF
+          hmc.java.versions=$JAVA_HOME/bin/java
+          hmc.gamedir=$GITHUB_WORKSPACE/run
+          hmc.mcdir=$HOME/.minecraft
+          hmc.offline=true
+          hmc.assets.dummy=true
+          hmc.jline.enabled=false
+          hmc.rethrow.launch.exceptions=true
+          hmc.exit.on.failed.command=true
+          hmc.crash.report.watcher=true
+          hmc.test.filename=$GITHUB_WORKSPACE/.github/client-menu-test.json
+          hmc.loglevel=INFO
+          EOF
+
+          cat >> run/options.txt <<'EOF'
+          onboardAccessibility:false
+          pauseOnLostFocus:false
+          EOF
+
+      - name: Cache Minecraft and NeoForge launcher files
+        uses: actions/cache@v5
+        with:
+          path: ~/.minecraft
+          key: ${{ runner.os }}-minecraft-${{ env.MINECRAFT_VERSION }}-neoforge-${{ env.NEOFORGE_VERSION }}-headlessmc-${{ env.HEADLESSMC_VERSION }}
+
+      - name: Install pinned Minecraft and NeoForge
+        run: |
+          if [ ! -f "$HOME/.minecraft/versions/${MINECRAFT_VERSION}/${MINECRAFT_VERSION}.json" ]; then
+            java -jar headlessmc-launcher.jar --command download "$MINECRAFT_VERSION"
+          fi
+
+          if [ ! -f "$HOME/.minecraft/versions/neoforge-${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}.json" ]; then
+            java -jar headlessmc-launcher.jar --command neoforge "$MINECRAFT_VERSION" --uid "$NEOFORGE_VERSION"
+          fi
+
+          java -jar headlessmc-launcher.jar --command versions
+
+      - name: Boot client and require the title menu
+        run: |
+          set -o pipefail
+          java -jar headlessmc-launcher.jar \
+            --command launch "^neoforge-${NEOFORGE_VERSION}$" -regex -lwjgl \
+            --jvm "-Djava.awt.headless=true -Xms2G -Xmx10G" \
+            2>&1 | tee client-boot.log
+
+          {
+            echo "### Client boot: title menu reached"
+            echo '```'
+            grep 'Screen: net.minecraft.client.gui.screens.TitleScreen' client-boot.log | tail -1
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload client logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: client-boot-logs
+          path: |
+            client-boot.log
+            run/logs/
+            run/crash-reports/
+            HeadlessMC/*.log
+            HeadlessMC/logs/
+          if-no-files-found: warn
+          retention-days: 14

@@ -125,6 +125,7 @@ what §2 exists to prevent.
 |---|---|
 | `validate.yml` | the index is stale, a metafile lacks a side, two mods target the same filename, a jar got committed, or a download no longer resolves |
 | `server-boot.yml` | the pack *installs* but does not *run* — a mod crashes during loading, a dependency is missing, or a registry freeze fails |
+| `client-boot.yml` | the client installs but crashes, stalls during mod/resource loading, or never renders the title menu |
 | `release.yml` | the published artefacts could not be built |
 
 Do not merge a red `validate`. `server-boot` takes ~20–40 minutes because it boots all ~490

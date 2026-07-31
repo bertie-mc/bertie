@@ -103,11 +103,14 @@ authoritative versions. Do not bump one in isolation.
 |---|---|---|
 | `validate.yml` | every push and PR | index is current, every download resolves, no duplicate targets, every file has a `side` |
 | `server-boot.yml` | PRs and nightly | installs NeoForge, resolves the server-side pack, boots a dedicated server headlessly and requires it to reach `Done (` |
+| `client-boot.yml` | PRs and nightly | resolves the client-side pack, launches it headlessly, and requires Minecraft to render the title menu |
 | `release.yml` | tag `v*` | exports the client `.mrpack` and a server zip, attaches both to a GitHub Release |
 
 A green `validate` means the pack is internally consistent and every mod is still
 downloadable. A green `server-boot` means the server half actually starts with all 490
-mods loaded — that is the test that catches a mod which resolves but crashes on load.
+mods loaded. A green `client-boot` means the client half completed mod and resource
+loading and rendered the title menu. Together they catch side-specific crashes that a
+download-only validation cannot.
 
 ---
 

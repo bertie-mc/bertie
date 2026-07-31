@@ -1,0 +1,43 @@
+{
+  "name": "bertie client reaches the title menu",
+  "timeout": 120,
+  "totalTimeout": 5400,
+  "implicitWaitForEnd": false,
+  "steps": [
+    {
+      "type": "ENDS_WITH",
+      "message": "HMC-Specifics initialized!",
+      "timeout": 4800
+    },
+    {
+      "type": "SEND",
+      "message": "render 4800000"
+    },
+    {
+      "type": "CONTAINS",
+      "message": "text=Singleplayer",
+      "timeout": 4800
+    },
+    {
+      "type": "SEND",
+      "message": "gui"
+    },
+    {
+      "type": "CONTAINS",
+      "message": "Screen: net.minecraft.client.gui.screens.TitleScreen",
+      "timeout": 60
+    },
+    {
+      "type": "SEND",
+      "message": "quit"
+    },
+    {
+      "type": "ENDS_WITH",
+      "message": "Quitting Minecraft...",
+      "timeout": 60
+    },
+    {
+      "type": "SUCCESS"
+    }
+  ]
+}
