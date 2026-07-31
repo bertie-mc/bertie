@@ -1,4 +1,4 @@
-﻿# CLAUDE.md
+# CLAUDE.md
 
 **Read [AGENTS.md](AGENTS.md) before doing any work here.**
 

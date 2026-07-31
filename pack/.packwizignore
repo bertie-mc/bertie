@@ -9,6 +9,7 @@
 .git/
 .gitignore
 .gitattributes
+.editorconfig
 .packwizignore
 
 # Documentation and licensing
