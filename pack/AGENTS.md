@@ -62,6 +62,46 @@ do not match the tree is worse than no index.
 
 ---
 
+## 3a. When a mixin error names a mod you do not recognise, look in `META-INF/jarjar/`
+
+Mods bundle libraries via JarJar, and those nested libraries have their own versions and
+their own bugs. The mod you can see in `mods/` is often not the thing that is broken.
+
+Worked example from this pack. The server died with:
+
+```
+MixinTransformerError: Attach error for
+  particlestorm.mixins.json:integration.geckolib.MolangQueriesMixin
+  -> INVOKESTATIC net/minecraft/client/Minecraft::getInstance
+Caused by: ClassNotFoundException: net.minecraft.client.Minecraft
+```
+
+`particlestorm` was in no metafile and no instance. It was JarJar-embedded inside
+`terra_curio-1.1.1.jar` at version **1.0.5**, and its mixin config put a geckolib mixin in
+the **common `"mixins"` array** while that mixin calls `Minecraft.getInstance()`. With
+`"required": true` the attach failure is fatal on a dedicated server rather than skipped.
+(This is the NeoForge mixin trap from `MASTER-HANDOFF.md` §6, inverted.)
+
+**Do not conclude "no upstream fix exists" from the containing mod's version.** terra_curio
+1.1.1 was the newest release, but the bug lived a level down: particle-storm **1.3.0** had
+already emptied the common array and moved every geckolib mixin into `"client"`.
+
+The fix was to add the newer library as a top-level pack mod:
+
+```bash
+unzip -p <mod>.jar META-INF/jarjar/metadata.json     # shows nested artefacts + version ranges
+packwiz curseforge add --addon-id <id> --file-id <newer>
+```
+
+terra_curio declared its dependency as range `[6390009,)`, so a newer top-level
+particle-storm satisfied it and superseded the embedded copy. The server booted with the
+mod intact.
+
+**Removing the containing mod is a last resort.** Here it would have dropped terra_curio's
+249 data entries — recipes, loot tables and tags — for a bug that was already fixed
+upstream. Marking it `side = "client"` would have been worse: the boot would pass while the
+server silently lost all of that data.
+
 ## 4. bertie's own mods come from GitHub Releases
 
 Never build a bertie mod locally and drop the jar in here. Release it from its own repo
