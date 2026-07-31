@@ -100,7 +100,7 @@ jobs:
           hmc.gamedir=$GITHUB_WORKSPACE/run
           hmc.mcdir=$HOME/.minecraft
           hmc.offline=true
-          hmc.assets.dummy=false
+          hmc.assets.dummy=true
           hmc.check.xvfb=true
           hmc.jline.enabled=false
           hmc.rethrow.launch.exceptions=true
