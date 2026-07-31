@@ -1,7 +1,7 @@
 name = "bertie"
 author = "berlord"
 version = "0.1.0"
-description = "A large, work-in-progress NeoForge 1.21.1 exploration, technology, and magic modpack, currently focused on integrated early-to-mid-game progression."
+description = "An exploration, technology, and magic modpack for NeoForge 1.21.1."
 pack-format = "packwiz:1.1.0"
 
 [index]

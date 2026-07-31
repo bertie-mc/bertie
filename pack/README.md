@@ -1,8 +1,6 @@
 # bertie
 
-A large, work-in-progress **NeoForge 1.21.1** exploration, technology and magic modpack.
-Development currently focuses on integrating its early-to-mid-game progression into a
-coherent and engaging experience.
+An exploration, technology and magic modpack for **NeoForge 1.21.1**.
 
 **490 mods.** Managed with [packwiz](https://packwiz.infra.link/).
 
