@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/artifacts/items.toml"
-hash = "7accfaa36044c50399199704628086e38e0839bd02e5c1b469aa8bc5a41dae72"
+hash = "cdd518a86598815cdeda1aa839a4d96cb2e0f6fb588c29c087d69f53dd0e5559"
 
 [[files]]
 file = "config/berlords_carving-armor-overrides.json"
