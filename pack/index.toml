@@ -2207,11 +2207,6 @@ hash = "b42b3ddd24d8a90575cf75397bd264058478d1979de92a65a49c58526f383c92"
 metafile = true
 
 [[files]]
-file = "mods/terra-curio.pw.toml"
-hash = "b6fd906ab0f2f0083e18d61e28236f24f73e3679ee1096962ce7f92fa82f95c9"
-metafile = true
-
-[[files]]
 file = "mods/terrablender.pw.toml"
 hash = "15962183bec2468058c70e87aa32e902a08489b0f86741088cdc9aa958ba4931"
 metafile = true
