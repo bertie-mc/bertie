@@ -195,9 +195,9 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
-# bertie_s1 — the S1 progression mod (local sibling); Mallet Work category reads its BedRecipes.
+# bertie_progression — the pack's progression mod; Mallet Work reads its BedRecipes.
 [[dependencies.${mod_id}]]
-modId="bertie_s1"
+modId="bertie_progression"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

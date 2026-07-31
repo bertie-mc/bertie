@@ -12,7 +12,7 @@ repositories {
     maven { url = "https://api.modrinth.com/maven" }
 
     // bertie's own mods, resolved straight from their GitHub Releases. The release
-    // asset is named <mod_id>-<version>.jar and the tag is v<version>, which maps
+    // asset is named <module>-<version>.jar and the tag is v<version>, which maps
     // onto an ivy layout cleanly. Keeps the build reproducible off this machine
     // without vendoring a jar into libs/.
     ivy {
@@ -21,7 +21,7 @@ repositories {
             artifact "/[organisation]/releases/download/v[revision]/[module]-[revision].jar"
         }
         metadataSources { artifact() }
-        content { includeGroup "bertie-s1" }
+        content { includeGroup "bertie-progression" }
     }
 }
 
@@ -98,11 +98,11 @@ dependencies {
     // Malum's hardcoded soul-reaping drops onto ALI's own mob-drop pages. Pinned by version id (1.21.1-1.12.0).
     compileOnly "maven.modrinth:advanced-loot-info:y8p1Vq83"
 
-    // bertie_s1: BedRecipes data for the Mallet Work category. Pulled from its GitHub
+    // Bertie Progression: BedRecipes data for the Mallet Work category. Pulled from its GitHub
     // Release (see the ivy repo above). This used to read the sibling project's
     // build/libs output directly, which meant the build only worked on a machine that
-    // had just built bertie_s1 by hand - CI could not compile this module at all.
-    compileOnly "bertie-s1:bertie_s1:0.21.0"
+    // had just built Bertie Progression by hand - CI could not compile this module at all.
+    compileOnly "bertie-progression:bertie-progression:0.25.1"
 
     // Parent mods we only need for their JarJar-embedded libs (extracted by extractJarJarLibs, below):
     jarJarParents "maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849"       // -> anvillib 1.4.0 (dev.anvilcraft.lib.recipe.*)

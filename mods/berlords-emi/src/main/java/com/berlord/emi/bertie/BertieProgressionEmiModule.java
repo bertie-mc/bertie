@@ -1,6 +1,6 @@
 package com.berlord.emi.bertie;
 
-import com.berlord.bertie_s1.forge.BedRecipes;
+import com.berlord.bertie_progression.forge.BedRecipes;
 import com.berlord.emi.framework.Categories;
 import com.berlord.emi.framework.GenericEmiRecipe;
 import com.berlord.emi.framework.MachineDescriptor;
@@ -20,26 +20,26 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
 
 /**
- * "Mallet Work" — bertie_s1's Opening-Mallet interactions: the data-driven Brick-Forge bed
+ * "Mallet Work" — bertie_progression's Opening-Mallet interactions: the data-driven Brick-Forge bed
  * recipes ({@link BedRecipes#RECIPES}) plus the three hardcoded world strikes (mud, paper
  * press, forge formation). Inputs are reconstructed from each predicate's {@code describe()}
  * string — the three formats ("ns:path", "#tag", "slag:dynamic_part{material,part}") are
- * owned by the same project and stable. Only ever called when {@code bertie_s1} is loaded.
+ * owned by the same project. Only ever called when {@code bertie_progression} is loaded.
  */
-public final class BertieS1EmiModule {
-    private BertieS1EmiModule() {
+public final class BertieProgressionEmiModule {
+    private BertieProgressionEmiModule() {
     }
 
     private static final int WIDE = 160; // modest floor; long strike-instructions now word-wrap (framework)
 
     public static void register(EmiRegistry reg) {
-        // Pack presentation policy (bertie_s1 present = the bertie pack): wooden/bone Slag ARMOR is
+        // Pack presentation policy (bertie_progression present = the bertie pack): wooden/bone Slag ARMOR is
         // replaced by Immersive Armors via carving overrides, so hide those part variants from EMI's
         // index. Component lookups go through the registry — no Slag classes touched (slag optional).
-        reg.removeEmiStacks(BertieS1EmiModule::isReplacedSlagArmorPart);
+        reg.removeEmiStacks(BertieProgressionEmiModule::isReplacedSlagArmorPart);
 
         EmiRecipeCategory cat = Categories.machine(reg, "bertie_mallet", "slag:brick_forge", "Mallet Work");
-        EmiStack mallet = Categories.stack("bertie_s1:opening_mallet");
+        EmiStack mallet = Categories.stack("bertie_progression:opening_mallet");
         if (!mallet.isEmpty()) {
             reg.addWorkstation(cat, mallet);
         }
@@ -78,7 +78,7 @@ public final class BertieS1EmiModule {
         MachineDescriptor forge = new MachineDescriptor().minWidth(WIDE);
         forge.itemIn(EmiStack.of(Items.MUD_BRICKS, 8));
         forge.itemIn(EmiStack.of(Items.CAMPFIRE));
-        forge.itemIn(tag("bertie_s1:stripped_logs", 4));
+        forge.itemIn(tag("bertie_progression:stripped_logs", 4));
         forge.catalyst(mallet);
         forge.itemOut(stackOf("slag:brick_forge", 1));
         forge.info(Component.literal("Build: 3x3 Mud Brick ring around an UNLIT campfire, "

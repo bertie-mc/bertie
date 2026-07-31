@@ -3,7 +3,7 @@ package com.berlord.emi;
 import com.berlord.emi.anvilcraft.AnvilCraftEmiModule;
 import com.berlord.emi.avaritiadelight.AvaritiaDelightEmiModule;
 import com.berlord.emi.berriescherries.BerriesAndCherriesEmiModule;
-import com.berlord.emi.bertie.BertieS1EmiModule;
+import com.berlord.emi.bertie.BertieProgressionEmiModule;
 import com.berlord.emi.betterarcheology.BetterArcheologyEmiModule;
 import com.berlord.emi.cataclysm.CataclysmEmiModule;
 import com.berlord.emi.cognition.CognitionEmiModule;
@@ -48,7 +48,7 @@ public class BerlordsEmiPlugin implements EmiPlugin {
     public void register(EmiRegistry registry) {
         run("slag", () -> SlagEmiModule.register(registry));
         run("create", () -> CreateEmiModule.register(registry));
-        run("bertie_s1", () -> BertieS1EmiModule.register(registry));
+        run("bertie_progression", () -> BertieProgressionEmiModule.register(registry));
         run("cataclysm", () -> CataclysmEmiModule.register(registry));
         run("irons_spellbooks", () -> IronsSpellbooksEmiModule.register(registry));
         run("forbidden_arcanus", () -> ForbiddenArcanusEmiModule.register(registry));
