@@ -1,6 +1,8 @@
 # Frozen Registry Fix
 
-Runtime patch for *Immersive Armors*: force-initializes its `Items` class before the armor-material registry freezes, fixing the "Registry is already frozen" crash that shows up in large modpacks.
+Runtime patch for *Immersive Armors*: initializes its lazy armor materials before a
+writable registry freeze when possible, with a narrowly scoped late-registration fallback
+for `immersive_armors` armor-material keys on NeoForge 21.1.233.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
@@ -11,7 +13,7 @@ Runtime patch for *Immersive Armors*: force-initializes its `Items` class before
 Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus Immersive Armors.
 
 ## Credits / Integration
-Patches a load-order bug in [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors) rather than modifying it directly. Hooks both `GameData.freezeData()` HEAD and the low-level `MappedRegistry.freeze()` of the armor_material registry, so the force-init still fires even when other coremods (e.g. railways-untold, Create) reroute the freeze around `GameData.freezeData`.
+Patches a load-order bug in [Immersive Armors](https://www.curseforge.com/minecraft/mc-mods/immersive-armors) rather than modifying it directly. The fallback bypasses only the frozen-state guard for `immersive_armors` keys in the armor-material registry; ordinary duplicate and value validation remains active.
 
 ## Building
 `./gradlew build` — the built JAR is written to `build/libs/`.

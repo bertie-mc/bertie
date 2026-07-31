@@ -15,7 +15,7 @@ import org.slf4j.Logger;
  * Known target in the bertie pack:
  *   - immersive_armors.Items   (armor_material; crashes on first client tick via ItemsClient.setupPieces)
  *
- * THE FIX is two mixins that both call {@link #forceTargets()} (idempotent, guarded so it runs once):
+ * The preferred fix is two mixins that both call {@link #forceTargets()} (idempotent, guarded so it runs once):
  *   - {@link com.berlord.frozenregfix.mixin.GameDataMixin}        @ GameData.freezeData() HEAD
  *   - {@link com.berlord.frozenregfix.mixin.MappedRegistryMixin}  @ MappedRegistry.freeze() HEAD, for the
  *     armor_material registry only.
@@ -24,14 +24,17 @@ import org.slf4j.Logger;
  * injected code never runs. The MappedRegistry hook is the backstop: it fires at the HEAD of the
  * armor_material registry's OWN freeze(), which happens however the freeze is orchestrated -- at that
  * moment armor_material is still open, so forcing IA's Items clinit lands its materials in the writable
- * window. Deterministic code injection, not a mod-bus listener, so it cannot silently fail to fire.
+ * window. NeoForge 21.1.233 performs no second low-level armor-material freeze after mod construction,
+ * so {@code MappedRegistryMixin} also bypasses only the frozen-state guard for late
+ * {@code immersive_armors} armor-material keys. All other registries and namespaces remain protected.
  *
  * v1.0.0 used a mod-bus RegisterEvent listener (never fired in big packs). v2.0.0 used GameData.freezeData
  * (defeated by railways). v2.1.0 added the MappedRegistry.freeze backstop. v2.2.0 gates that backstop with
  * {@link #modConstructed}: armor_material is frozen TWICE -- once during vanilla Bootstrap.bootStrap() (before
  * any mod is constructed; IA's Registration.Impl is still null so forcing Items there NPEs and permanently
  * poisons the class) and again during the mod-load re-freeze (after RegisterEvents). The flag skips the first
- * and only forces on the second.
+ * and only forces on the second. v2.4.0 adds the targeted fallback needed when that second freeze does
+ * not occur.
  */
 @Mod(FrozenRegFix.MOD_ID)
 public class FrozenRegFix {
