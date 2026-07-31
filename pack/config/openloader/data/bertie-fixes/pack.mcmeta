@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "bertie pack fixes - loaded globally by OpenLoader. Repairs third-party data files that break datapack loading."
+  }
+}

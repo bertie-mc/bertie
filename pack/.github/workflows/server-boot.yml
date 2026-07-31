@@ -85,7 +85,12 @@ jobs:
           last_report=0
           while [ "$(date +%s)" -lt "$deadline" ]; do
             if grep -qE 'Done \([0-9.]+s\)' boot.log 2>/dev/null; then status="ok"; break; fi
-            if grep -qE 'Failed to start the minecraft server|A potential solution has been determined|Exception in thread "main"|Negative index in crash report handler|The server has crashed' boot.log 2>/dev/null; then status="crash"; break; fi
+            # NOTE: several of these are fatal to `main` but leave worker/daemon threads
+            # running, so the JVM stays alive and a liveness check alone never fires. The
+            # datapack failure below hung a run for 75 minutes before this was added.
+            if grep -qE 'Failed to start the minecraft server|Failed to load datapacks|A potential solution has been determined|Exception in thread "main"|Negative index in crash report handler|The server has crashed|Missing or unsupported mandatory dependencies|ModLoadingException' boot.log 2>/dev/null; then status="crash"; break; fi
+            # no new output for 5 minutes while still "alive" = wedged, not slow
+            if [ -n "$(find boot.log -mmin +5 2>/dev/null)" ]; then status="stalled"; break; fi
             if ! kill -0 "$BOOT_PID" 2>/dev/null; then status="exited"; break; fi
             # progress heartbeat so a timeout tells us how far it actually got
             now=$(date +%s)

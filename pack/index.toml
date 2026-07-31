@@ -53,6 +53,26 @@ file = "config/modernfix-mixins.properties"
 hash = "bbf9948f0ca93591243db6e33d8eb043ad95defb7053929dcf5e951b4e5f3e12"
 
 [[files]]
+file = "config/openloader/data/bertie-fixes/data/minecraft/recipe/beetroot_soup.json"
+hash = "5e426bfdcbbf6b7b3513794cc22028e5ce2c6d673d0b547192d1fe57ee9c2f9b"
+
+[[files]]
+file = "config/openloader/data/bertie-fixes/data/minecraft/recipe/mushroom_stew.json"
+hash = "5e426bfdcbbf6b7b3513794cc22028e5ce2c6d673d0b547192d1fe57ee9c2f9b"
+
+[[files]]
+file = "config/openloader/data/bertie-fixes/data/minecraft/recipe/rabbit_stew_from_brown_mushroom.json"
+hash = "5e426bfdcbbf6b7b3513794cc22028e5ce2c6d673d0b547192d1fe57ee9c2f9b"
+
+[[files]]
+file = "config/openloader/data/bertie-fixes/data/minecraft/recipe/rabbit_stew_from_red_mushroom.json"
+hash = "5e426bfdcbbf6b7b3513794cc22028e5ce2c6d673d0b547192d1fe57ee9c2f9b"
+
+[[files]]
+file = "config/openloader/data/bertie-fixes/pack.mcmeta"
+hash = "8e6ebaafb7630517c0f335f0e8cf8a7e01abb35f3d56d6ee3a0750ab7291bbf4"
+
+[[files]]
 file = "config/quark-common.toml"
 hash = "6a8d7657ab5ad7954e3b991ab6597af72cb29eb72e6da2ebd3471803b619085e"
 
