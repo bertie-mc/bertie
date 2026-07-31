@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   checks:
-    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@v2
+    uses: bertie-mc/bertie-ci/.github/workflows/neoforge-mod.yml@v2.0.1
     with:
       sides: both
       fixture: rustic-engineer
