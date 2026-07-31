@@ -1052,7 +1052,7 @@ metafile = true
 
 [[files]]
 file = "mods/frozen-reg-fix.pw.toml"
-hash = "fdd2998a064574b6f0c777fd6770dab9e0f0b6af8e88c25e0eb9f9df23f845dd"
+hash = "904ff81a0eca9cd4cf0b633a5c2d80249a2b8ec8d6563e687bbbb56c5b3fe827"
 metafile = true
 
 [[files]]
