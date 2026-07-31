@@ -1822,6 +1822,11 @@ hash = "6f24e7f5ecef862b1bdb61031637e27b093f185c3219023bea94d2d954ec4180"
 metafile = true
 
 [[files]]
+file = "mods/particle-storm.pw.toml"
+hash = "9ce540c8dcd7c091d17865287809a621984f52e9c91627c065eba1ebc383b47c"
+metafile = true
+
+[[files]]
 file = "mods/pastel-mod.pw.toml"
 hash = "bdddda36c259addde0e8c6683f3d90aed915e8d13f9dfe98503388293d353c48"
 metafile = true
@@ -2204,6 +2209,11 @@ metafile = true
 [[files]]
 file = "mods/swiftness-enchantment.pw.toml"
 hash = "b42b3ddd24d8a90575cf75397bd264058478d1979de92a65a49c58526f383c92"
+metafile = true
+
+[[files]]
+file = "mods/terra-curio.pw.toml"
+hash = "b6fd906ab0f2f0083e18d61e28236f24f73e3679ee1096962ce7f92fa82f95c9"
 metafile = true
 
 [[files]]
