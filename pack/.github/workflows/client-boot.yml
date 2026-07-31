@@ -46,6 +46,7 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: "1.23"
+          cache: false
 
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
@@ -89,6 +90,7 @@ jobs:
 
           cat > HeadlessMC/config.properties <<EOF
           hmc.java.versions=$JAVA_HOME/bin/java
+          hmc.jvmargs=-Djava.awt.headless=true -Xms2G -Xmx10G
           hmc.gamedir=$GITHUB_WORKSPACE/run
           hmc.mcdir=$HOME/.minecraft
           hmc.offline=true
@@ -129,7 +131,6 @@ jobs:
           set -o pipefail
           java -jar headlessmc-launcher.jar \
             --command launch "^neoforge-${NEOFORGE_VERSION}$" -regex -lwjgl \
-            --jvm "-Djava.awt.headless=true -Xms2G -Xmx10G" \
             2>&1 | tee client-boot.log
 
           {
