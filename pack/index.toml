@@ -1182,6 +1182,11 @@ hash = "f0b5f36ff6face75c19c06d0c64e75c65f47e5d2bf5fa65d034c0a2239caf934"
 metafile = true
 
 [[files]]
+file = "mods/hide-experimental-warning.pw.toml"
+hash = "a369596a2f75e3f05871b416ddfd0419e2dc4b36576d8e2e2ccf08ee876f7d3c"
+metafile = true
+
+[[files]]
 file = "mods/highlight.pw.toml"
 hash = "554fc5e8aba13353c9b9d4ff066ec6aaf1bd559550633ef4ace120541cada94b"
 metafile = true
