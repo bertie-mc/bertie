@@ -50,7 +50,7 @@ neoForge {
 // --- Ponder (the per-tier forge layout scenes) ---------------------------------------------------
 // Ponder is NOT published standalone on any maven: it ships JarJar-embedded inside Create. So we pull
 // Create from Modrinth and extract the nested ponder jar onto the compile classpath. Same pattern as
-// bertie-s1-mod's Deep Waters Shrine scene. Nothing third-party is committed to the repo. All of it
+// Bertie Progression's Deep Waters Shrine scene. Nothing third-party is committed to the repo. All of it
 // is compileOnly + ModList-guarded at runtime, so this mod still loads fine without Create.
 configurations {
     jarJarParents
