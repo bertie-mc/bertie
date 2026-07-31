@@ -19,6 +19,7 @@ LICENSE
 NOTICE
 
 # Local build / test output (also in .gitignore)
+/.bertie-ci/
 /server/
 /build/
 /out/

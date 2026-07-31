@@ -124,12 +124,14 @@ what §2 exists to prevent.
 | Workflow | What a failure means |
 |---|---|
 | `validate.yml` | the index is stale, a metafile lacks a side, two mods target the same filename, a jar got committed, or a download no longer resolves |
-| `server-boot.yml` | the pack *installs* but does not *run* — a mod crashes during loading, a dependency is missing, or a registry freeze fails |
-| `client-boot.yml` | the client installs but crashes, stalls during mod/resource loading, or never renders the title menu |
-| `release.yml` | the published artefacts could not be built |
+| `server-boot.yml` | the server-side pack *installs* but does not reach dedicated-server readiness |
+| `client-boot.yml` | the client-side pack installs but crashes, stalls, or cannot join an integrated world |
+| `release.yml` | one of the separately exported client/server artifacts could not be published |
 
-Do not merge a red `validate`. `server-boot` takes ~20–40 minutes because it boots all ~490
-mods; that is expected, and its log artefact is the first thing to read when it fails.
+Do not merge a red `validate`. The full-pack client and server probes are scheduled and
+manually dispatchable while their timing is stabilized. They can take tens of minutes
+because they boot all ~490 mods; that is expected, and the log artifact is the first thing
+to read when either fails.
 
 ---
 

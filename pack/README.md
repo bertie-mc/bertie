@@ -102,15 +102,15 @@ authoritative versions. Do not bump one in isolation.
 | Workflow | When | What it does |
 |---|---|---|
 | `validate.yml` | every push and PR | index is current, every download resolves, no duplicate targets, every file has a `side` |
-| `server-boot.yml` | PRs and nightly | installs NeoForge, resolves the server-side pack, boots a dedicated server headlessly and requires it to reach `Done (` |
-| `client-boot.yml` | PRs and nightly | resolves the client-side pack, launches it headlessly, and requires Minecraft to render the title menu |
-| `release.yml` | tag `v*` | exports the client `.mrpack` and a server zip, attaches both to a GitHub Release |
+| `server-boot.yml` | nightly or manual | prepares the server-side pack and requires a headless dedicated server to reach readiness |
+| `client-boot.yml` | nightly or manual | prepares the client-side pack and requires a headless client to join an integrated world |
+| `release.yml` | tag `v*` or manual | independently exports the client `.mrpack` and no-mod-JAR server zip; tags publish both |
 
 A green `validate` means the pack is internally consistent and every mod is still
 downloadable. A green `server-boot` means the server half actually starts with all 490
 mods loaded. A green `client-boot` means the client half completed mod and resource
-loading and rendered the title menu. Together they catch side-specific crashes that a
-download-only validation cannot.
+loading, created an integrated server, generated a world, and joined it. Together they
+catch side-specific crashes that a download-only validation cannot.
 
 ---
 
@@ -122,7 +122,8 @@ git tag -a v0.2.0 -m "Release v0.2.0"
 git push origin v0.2.0
 ```
 
-`release.yml` builds and publishes both artifacts.
+`release.yml` composes the shared client and server exporters, then publishes their
+artifacts without duplicating either export recipe.
 
 ---
 

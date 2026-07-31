@@ -6,6 +6,7 @@
 
 # packwiz local cache and export output
 .packwizcache
+/.bertie-ci/
 /build/
 /out/
 
