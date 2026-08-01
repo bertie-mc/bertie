@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "bertie_progression:twilight_concord",
+      "required": false
+    }
+  ]
+}

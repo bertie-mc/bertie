@@ -1,0 +1,43 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 10000,
+    "souls": 10,
+    "experience": 900
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "bertie_progression:abyssal_core"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "bertie_progression:desert_core"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "bertie_progression:cursed_core"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "bertie_progression:storm_core"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:upgrade_tier",
+  "main_ingredient": {
+    "item": "forbidden_arcanus:carved_edelwood_log"
+  },
+  "match_tier_exact": true,
+  "result": {
+    "type": "forbidden_arcanus:upgrade_tier",
+    "result_tier": 2
+  }
+}

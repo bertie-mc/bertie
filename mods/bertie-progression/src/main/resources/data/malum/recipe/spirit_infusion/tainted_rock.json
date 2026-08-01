@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:diorite",
+    "count": 64
+  },
+  "extraInputs": [],
+  "spirits": [
+    {
+      "type": "malum:sacred",
+      "count": 4
+    },
+    {
+      "type": "malum:arcane",
+      "count": 4
+    },
+    {
+      "type": "malum:earthen",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "malum:tainted_rock",
+    "count": 8
+  }
+}
