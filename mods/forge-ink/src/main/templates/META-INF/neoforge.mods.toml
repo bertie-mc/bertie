@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mixins]]
+config = "${mod_id}.mixins.json"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+[[dependencies."${mod_id}"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# AFTER ordering matters: our ModifyDefaultComponentsEvent listener must run after
+# Forbidden Arcanus has attached its own essence components, so we can strip them.
+[[dependencies."${mod_id}"]]
+modId = "forbidden_arcanus"
+type = "required"
+versionRange = "[2.6,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# ISS versions are prefixed with the MC version ("1.21.1-3.16.0"), so a plain
+# semver range can't match — any installed version is fine, presence is what counts.
+[[dependencies."${mod_id}"]]
+modId = "irons_spellbooks"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
