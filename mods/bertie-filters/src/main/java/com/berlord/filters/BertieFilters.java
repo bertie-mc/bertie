@@ -21,19 +21,15 @@ import org.slf4j.LoggerFactory;
 @Mod(BertieFilters.MODID)
 public class BertieFilters {
     public static final String MODID = "bertie_filters";
-    public static final Logger LOGGER = LoggerFactory.getLogger("bertie_filters");
+    private static final Logger LOGGER = LoggerFactory.getLogger("bertie_filters");
 
     public BertieFilters(IEventBus modEventBus) {
-        // The FFS event bus is a static architectury Event - registered eagerly at construct time,
-        // not via the mod event bus. Only register the slag-touching handler if Slag is present.
+        // The FFS event bus is static, so registration happens during construction.
         if (ModList.get().isLoaded("slag")) {
             WoodenSlagFilter.register();
             LOGGER.info("Registered FTB Filter System custom filter 'bertie:wooden' (Slag-n-Embers present).");
         } else {
             LOGGER.info("Slag-n-Embers not loaded - 'bertie:wooden' custom filter not registered.");
         }
-        // (The FTB Quests valid-items display fix was removed 2026-07-22 batch 2: FTB XMod Compat's
-        // FFS adapter already enumerates a smart filter's items into the valid-items screen — the
-        // custom contribution only produced duplicates.)
     }
 }

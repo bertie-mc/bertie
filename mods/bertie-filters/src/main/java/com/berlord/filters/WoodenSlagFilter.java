@@ -8,6 +8,9 @@ import net.minecraft.core.component.DataComponentType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * The actual {@code bertie:wooden} custom-filter handler. References Slag-n-Embers types directly, so
  * it is only ever loaded/called from a path guarded by {@code ModList.isLoaded("slag")}
@@ -24,8 +27,6 @@ import net.minecraft.world.item.ItemStack;
  * type {@code slag:wooden}. Otherwise {@link EventResult#pass()}.
  */
 public final class WoodenSlagFilter {
-    private static final ResourceLocation WOODEN = ResourceLocation.fromNamespaceAndPath("slag", "wooden");
-
     private WoodenSlagFilter() {
     }
 
@@ -34,31 +35,29 @@ public final class WoodenSlagFilter {
     }
 
     private static EventResult matchItem(ItemStack stack, String eventId, String extraData) {
-        if (!"bertie:wooden".equals(eventId)) {
+        if (!WoodenFilterPolicy.handles(eventId)) {
             return EventResult.pass();
         }
 
-        // 1) the item must be a slag modular item of the requested type (extraData = e.g. "pickaxe")
         DataComponentType<ResourceLocation> modType = AllDataComponents.MODULAR_TYPE.get();
         ResourceLocation mt = stack.get(modType);
-        if (mt == null || !mt.equals(ResourceLocation.fromNamespaceAndPath("slag", extraData))) {
-            return EventResult.pass();
-        }
-
-        // 2) its nested parts must contain a WOODEN part
         DataComponentType<DataDynamicParts> dpType = AllDataComponents.DYNAMIC_PARTS.get();
         DataDynamicParts parts = stack.get(dpType);
-        if (parts == null) {
+        if (mt == null || parts == null) {
             return EventResult.pass();
         }
 
         DataComponentType<ResourceLocation> matType = AllDataComponents.MATERIAL_TYPE.get();
+        List<String> materialIds = new ArrayList<>();
         for (ItemStack part : parts.items()) {
             ResourceLocation pm = part.get(matType);
-            if (WOODEN.equals(pm)) {
-                return EventResult.interruptTrue();
+            if (pm != null) {
+                materialIds.add(pm.toString());
             }
         }
-        return EventResult.pass();
+
+        return WoodenFilterPolicy.matches(extraData, mt.toString(), materialIds)
+                ? EventResult.interruptTrue()
+                : EventResult.pass();
     }
 }

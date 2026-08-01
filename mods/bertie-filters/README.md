@@ -13,6 +13,12 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`. Dependencies (FTB Filter System, Architectury, Slag 'n' Embers) resolve from Modrinth / Architectury / FTB mavens at build time.
 
+## Tests
+
+`gradle test` runs the fast filter-policy suite. It covers exact event routing, requested
+modular types, mixed-material tools, and rejection of missing or non-wooden parts without
+launching Minecraft.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

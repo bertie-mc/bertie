@@ -1,4 +1,5 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
 
 plugins {
     `java-library`
@@ -68,13 +69,18 @@ neoForge {
 dependencies {
     // FTB Filter System - the CustomFilterEvent API we hook into (required at runtime). From the FTB maven.
     compileOnly("dev.ftb.mods:ftb-filter-system-neoforge:21.1.4")
-    // FTB Quests + Library - the CustomFilterDisplayItemsEvent API (valid-items display fix).
-    compileOnly("dev.ftb.mods:ftb-quests-neoforge:2101.1.26")
-    compileOnly("dev.ftb.mods:ftb-library-neoforge:2101.1.32")
     // Architectury - provides dev.architectury.event.Event / EventResult used by the FFS event. From the Architectury maven.
     compileOnly("dev.architectury:architectury-neoforge:13.0.8")
     // Slag-n-Embers API - the modular item components we read (optional; guarded by ModList.isLoaded). From Modrinth.
     compileOnly("maven.modrinth:slag-n-embers:1.1a")
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
