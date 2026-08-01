@@ -1,0 +1,43 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original content of this repository: the packwiz
+manifest (pack.toml, index.toml, mods/*.pw.toml), the configuration files under config/,
+the FTB Quests chapters and lang data, the CI workflows and the documentation.
+
+IT DOES NOT COVER THE MODS.
+
+This repository contains **no mod jars**. Every one of the ~490 mods in this pack is
+downloaded at install time from its original host — Modrinth, CurseForge, or the mod's own
+GitHub Release — and each remains under the licence its own author chose. Those licences
+range from permissive to all-rights-reserved. Nothing here grants you any right to any of
+them.
+
+If you fork or redistribute this pack, you are redistributing a *list of references*, not
+the mods themselves. That is deliberate.
+
+BUILT ARTEFACTS
+
+- The **server pack** published on the Releases page ships the manifest and an installer.
+  It contains no mod jars; the installer fetches each mod from its original host on first
+  run.
+
+- The **client `.mrpack`** references Modrinth-hosted mods by URL, but the Modrinth pack
+  format has no URL mechanism for mods hosted elsewhere, so mods from CurseForge and from
+  GitHub Releases are embedded in the archive's `overrides/` directory. That *is*
+  redistribution. The release workflow prints the exact list of embedded jars in its job
+  summary on every build — check it against those mods' terms before publishing a release
+  more widely than the GitHub Releases page.
+
+BERTIE'S OWN MODS
+
+The mods written for this pack live under https://github.com/bertie-mc and are consumed
+here as tagged GitHub Releases. Most are dedicated to the public domain under The
+Unlicense; two are not:
+
+- `explosive-enhancement` is MIT, being a port of Superkat32's MIT original.
+- `Nekos-Enchanted-Books` (`nebs`) carries no licence, because its upstream
+  (infernalstudios/Nekos-Enchanted-Books) publishes none — the default there is all rights
+  reserved.
+
+Each of those repositories carries its own NOTICE with the detail, including individual
+assets that are credited to other authors and excluded from the dedication.

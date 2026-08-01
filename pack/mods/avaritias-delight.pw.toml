@@ -1,0 +1,13 @@
+name = "Avaritia's Delight"
+filename = "avaritia_delight-1.6.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gtX73iTU/versions/QtdkM9Oa/avaritia_delight-1.6.3.jar"
+hash-format = "sha512"
+hash = "ea39e37b3700948bbe2bf8dd789d7a54b3c17b8ac8dbf362a2d850930e69c380bb86f26ac5989ae037c6fa81f85c0d2c6adcecb13141a81a8506c6e37783a7e6"
+
+[update]
+[update.modrinth]
+mod-id = "gtX73iTU"
+version = "QtdkM9Oa"

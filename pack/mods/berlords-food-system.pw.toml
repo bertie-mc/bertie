@@ -1,0 +1,15 @@
+name = "berlords-food-system"
+filename = "berlords_food_system-1.5.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/berlords-food-system/releases/download/v1.5.1/berlords_food_system-1.5.1.jar"
+hash-format = "sha256"
+hash = "d777a2ffb47a45ea90ec26bb0e644f507da610e5be29738ed582c9da8e30b502"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/berlords-food-system"
+tag = "v1.5.1"

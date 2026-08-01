@@ -1,0 +1,15 @@
+name = "bertie-progression"
+filename = "bertie-progression-0.25.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/bertie-progression/releases/download/v0.25.2/bertie-progression-0.25.2.jar"
+hash-format = "sha256"
+hash = "bef6cd115b14fd7645fde5b9b5421bcb1a7da7be5693c1bf9ac416715a27e26f"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/bertie-progression"
+tag = "v0.25.2"

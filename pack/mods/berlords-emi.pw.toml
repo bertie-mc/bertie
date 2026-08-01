@@ -1,0 +1,15 @@
+name = "berlords-emi"
+filename = "berlords_emi-0.6.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/berlords-emi/releases/download/v0.6.0/berlords_emi-0.6.0.jar"
+hash-format = "sha256"
+hash = "d3c820e28978de8d212bbb079a5919e3a5941c871fbdc70c1ca16de464100281"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/berlords-emi"
+tag = "v0.6.0"

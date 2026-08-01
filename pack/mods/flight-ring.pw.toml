@@ -1,0 +1,13 @@
+name = "Flight Ring"
+filename = "flightring-1.21.1-0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PQlYtuln/versions/QgrkQcVz/flightring-1.21.1-0.1.jar"
+hash-format = "sha512"
+hash = "f8fd5c27c260538552153e93fa55cc281386de38fa3ab5c7f6786e29f4cd50e75bb6dc57f06b9b2a2c1a7348c78a91815c21072d4a11e5adcd8b00de26401f89"
+
+[update]
+[update.modrinth]
+mod-id = "PQlYtuln"
+version = "QgrkQcVz"

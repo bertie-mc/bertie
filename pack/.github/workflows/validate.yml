@@ -1,0 +1,15 @@
+name: Validate
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-validate.yml@v4.0.0

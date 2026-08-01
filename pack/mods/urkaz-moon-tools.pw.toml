@@ -1,0 +1,13 @@
+name = "Urkaz Moon Tools"
+filename = "UrkazMoonTools-neoforge-2.3.1-49.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1sxtqgoT/versions/lea7gSoE/UrkazMoonTools-neoforge-2.3.1-49.jar"
+hash-format = "sha512"
+hash = "997cbd176987c1751d72e065655fe9449919844c50b22c88d9575658fb3d42cc6fd2cb501574d5da8b072b0641f59bb83585ef04cf2abcd2240678bc02a98bb9"
+
+[update]
+[update.modrinth]
+mod-id = "1sxtqgoT"
+version = "lea7gSoE"

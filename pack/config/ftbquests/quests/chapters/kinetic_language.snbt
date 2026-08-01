@@ -1,0 +1,1794 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kinetic_language"
+	group: ""
+	icon: {
+		count: 1
+		id: "minecraft:crafting_table"
+	}
+	id: "2B00000000000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				count: 1
+				id: "create:raw_zinc"
+			}
+			id: "2B00000000000001"
+			rewards: [{
+				id: "2B00000002000001"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B00000001000001"
+						item: { count: 1 id: "create:raw_zinc" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:andesite"
+			}
+			dependencies: ["2B00000000000001"]
+			id: "2B00000000000002"
+			rewards: [{
+				id: "2B00000002000002"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B00000001000002"
+						item: { count: 1 id: "minecraft:andesite" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:andesite_alloy"
+			}
+			dependencies: ["2B00000000000002"]
+			id: "2B00000000000003"
+			rewards: [{
+				id: "2B00000002000003"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B00000001000003"
+						item: { count: 1 id: "create:andesite_alloy" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:shaft"
+			}
+			dependencies: ["2B00000000000003"]
+			id: "2B00000000000004"
+			rewards: [{
+				id: "2B00000002000004"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 16L
+						id: "2B00000001000004"
+						item: { count: 1 id: "create:shaft" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:windmill_bearing"
+			}
+			dependencies: ["2B00000000000004"]
+			id: "2B00000000000005"
+			rewards: [{
+				id: "2B00000002000005"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000005"
+						item: { count: 1 id: "create:windmill_bearing" }
+						type: "item"
+					}
+					{
+						count: 16L
+						id: "2B00000001010005"
+						item: { count: 1 id: "create:white_sail" }
+						type: "item"
+					}
+				]
+			x: -12.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:earplugs"
+			}
+			optional: true
+			id: "2B00000000000006"
+			rewards: [{
+				id: "2B00000002000006"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000006"
+						item: { count: 1 id: "iceandfire:earplugs" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:siren_tear"
+			}
+			dependencies: ["2B00000000000006"]
+			id: "2B00000000000007"
+			rewards: [{
+				id: "2B00000002000007"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000007"
+						item: { count: 1 id: "iceandfire:siren_tear" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "armageddon_mod:builder_stone"
+			}
+			dependencies: ["2B00000000000007"]
+			id: "2B00000000000008"
+			rewards: [{
+				id: "2B00000002000008"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000008"
+						item: { count: 1 id: "armageddon_mod:builder_stone" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "armageddon_mod:ancient_builders_charm"
+			}
+			dependencies: ["2B00000000000008"]
+			id: "2B00000000000009"
+			rewards: [{
+				id: "2B00000002000009"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "armageddon_mod:ancient_builders_charm"
+						}
+						id: "2B00000001000009"
+						entity: "armageddon_mod:eldoraththe_ancient_builder"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: -15.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:diamond_ore"
+			}
+			dependencies: ["2B00000000000009"]
+			id: "2B0000000000000A"
+			rewards: [{
+				id: "2B0000000200000A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 3L
+						id: "2B0000000100000A"
+						item: { count: 1 id: "minecraft:diamond" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:diamond_pickaxe"
+			}
+			dependencies: ["2B0000000000000A"]
+			id: "2B0000000000000B"
+			rewards: [{
+				id: "2B0000000200000B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100000B"
+						item: { count: 1, components: { "slag:material_type": "slag:diamond", "slag:part_type": "slag:pickaxe_head" }, id: "slag:dynamic_part" }
+						match_components: "fuzzy"
+						type: "item"
+					}
+				]
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:diamond"
+			}
+			dependencies: ["2B0000000000000A"]
+			id: "2B0000000000000C"
+			rewards: [{
+				id: "2B0000000200000C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B0000000100000C"
+						item: { count: 1 id: "minecraft:diamond" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: -3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "berlords_carving:amethyst_slate"
+			}
+			id: "2B0000000000000D"
+			rewards: [{
+				id: "2B0000000200000D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100000D"
+						item: { count: 1 id: "berlords_carving:amethyst_slate" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				components: { "slag:material_type": "slag:amethyst", "slag:part_type": "slag:pickaxe_head" }
+				id: "slag:dynamic_part"
+			}
+			dependencies: ["2B0000000000000D"]
+			id: "2B0000000000000E"
+			rewards: [{
+				id: "2B0000000200000E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100000E"
+						item: { count: 1, components: { "slag:material_type": "slag:amethyst", "slag:part_type": "slag:pickaxe_head" }, id: "slag:dynamic_part" }
+						match_components: "fuzzy"
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:raw_soulstone"
+			}
+			dependencies: ["2B0000000000000E"]
+			id: "2B0000000000000F"
+			rewards: [{
+				id: "2B0000000200000F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "2B0000000100000F"
+						item: { count: 1 id: "malum:raw_soulstone" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:refined_soulstone"
+			}
+			dependencies: ["2B0000000000000F"]
+			id: "2B00000000000010"
+			rewards: [{
+				id: "2B00000002000010"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000010"
+						item: { count: 1 id: "malum:refined_soulstone" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:spirit_altar"
+			}
+			dependencies: ["2B00000000000010"]
+			id: "2B00000000000011"
+			rewards: [{
+				id: "2B00000002000011"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000011"
+						item: { count: 1 id: "malum:spirit_altar" }
+						type: "item"
+					}
+				]
+			x: -12.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:brass_ingot"
+			}
+			id: "2B00000000000012"
+			rewards: [{
+				id: "2B00000002000012"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "2B00000001000012"
+						item: { count: 1 id: "create:brass_ingot" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:brass_casing"
+			}
+			dependencies: ["2B00000000000012"]
+			id: "2B00000000000013"
+			rewards: [{
+				id: "2B00000002000013"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000013"
+						item: { count: 1 id: "create:brass_casing" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:electron_tube"
+			}
+			dependencies: ["2B00000000000013"]
+			id: "2B00000000000014"
+			rewards: [{
+				id: "2B00000002000014"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 9L
+						id: "2B00000001000014"
+						item: { count: 1 id: "create:electron_tube" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "block_factorys_bosses:dragon_bone"
+			}
+			dependencies: ["2B00000000000014"]
+			id: "2B00000000000015"
+			rewards: [{
+				id: "2B00000002000015"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "block_factorys_bosses:dragon_bone"
+						}
+						id: "2B00000001000015"
+						entity: "block_factorys_bosses:infernal_dragon"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "block_factorys_bosses:dragon_bone"
+			}
+			dependencies: ["2B00000000000015"]
+			id: "2B00000000000016"
+			rewards: [{
+				id: "2B00000002000016"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 9L
+						id: "2B00000001000016"
+						item: { count: 1 id: "block_factorys_bosses:dragon_bone" }
+						type: "item"
+					}
+				]
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:compass"
+			}
+			id: "2B00000000000017"
+			rewards: [{
+				id: "2B00000002000017"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000017"
+						item: { count: 1 id: "minecraft:compass" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:wayward_compass"
+			}
+			dependencies: ["2B00000000000017"]
+			id: "2B00000000000018"
+			rewards: [{
+				id: "2B00000002000018"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000018"
+						item: { count: 1 id: "irons_spellbooks:wayward_compass" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:decrepit_scythe"
+			}
+			dependencies: ["2B00000000000018"]
+			id: "2B00000000000019"
+			rewards: [{
+				id: "2B00000002000019"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "irons_spellbooks:decrepit_scythe"
+						}
+						id: "2B00000001000019"
+						entity: "irons_spellbooks:dead_king"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: -15.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:crude_scythe"
+			}
+			dependencies: ["2B00000000000019"]
+			id: "2B0000000000001A"
+			rewards: [{
+				id: "2B0000000200001A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100001A"
+						item: { count: 1 id: "malum:crude_scythe" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:arcane_spirit"
+			}
+			dependencies: ["2B0000000000001A"]
+			id: "2B0000000000001B"
+			rewards: [{
+				id: "2B0000000200001B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						icon: {
+							count: 1
+							id: "malum:arcane_spirit"
+						}
+						id: "2B0000000100001B"
+						item: { components: { "ftbfiltersystem:filter": 'or(item(malum:aerial_spirit)item(malum:aqueous_spirit)item(malum:arcane_spirit)item(malum:earthen_spirit)item(malum:eldritch_spirit)item(malum:infernal_spirit)item(malum:sacred_spirit)item(malum:wicked_spirit))', "minecraft:custom_name": '{"text":"Any Spirits","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						type: "item"
+					}
+				]
+			x: -12.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_crafter"
+			}
+			dependencies: [
+				"2B0000000000000B"
+				"2B00000000000005"
+				"2B00000000000011"
+				"2B00000000000016"
+				"2B0000000000001B"
+			]
+			id: "2B0000000000001C"
+			rewards: [{
+				id: "2B0000000200001C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 9L
+						id: "2B0000000100001C"
+						item: { count: 1 id: "create:mechanical_crafter" }
+						type: "item"
+					}
+				]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_crafter"
+			}
+			dependencies: ["2B0000000000001C"]
+			id: "2B0000000000001D"
+			rewards: [{
+				id: "2B0000000200001D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 16L
+						id: "2B0000000100001D"
+						item: { count: 1 id: "create:mechanical_crafter" }
+						type: "item"
+					}
+				]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:crafting_table"
+			}
+			dependencies: ["2B0000000000001D"]
+			id: "2B0000000000001E"
+			rewards: [{
+				id: "2B0000000200001E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100001E"
+						item: { count: 1 id: "minecraft:crafting_table" }
+						type: "item"
+					}
+				]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:barrier"
+			}
+			dependencies: ["2B0000000000001E"]
+			id: "2B0000000000001F"
+			rewards: [{
+				id: "2B0000000200001F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:barrier"
+						}
+						id: "2B0000000100001F"
+						title: "Not So Fast"
+						type: "checkmark"
+					}
+				]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:blast_furnace"
+			}
+			dependencies: ["2B0000000000001F"]
+			id: "2B00000000000020"
+			rewards: [{
+				id: "2B00000002000020"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:blast_furnace"
+						}
+						id: "2B00000001000020"
+						title: "Hey Phineas, Whatcha Smeltin'?"
+						type: "checkmark"
+					}
+				]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:sea_serpent_scales_red"
+			}
+			dependencies: ["2B00000000000020"]
+			id: "2B00000000000021"
+			rewards: [{
+				id: "2B00000002000021"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "iceandfire:sea_serpent_scales_red"
+						}
+						id: "2B00000001000021"
+						entity: "iceandfire:sea_serpent"
+						type: "kill"
+						value: 2L
+					}
+				]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:blaze_powder"
+			}
+			dependencies: ["2B00000000000021"]
+			id: "2B00000000000022"
+			rewards: [{
+				id: "2B00000002000022"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 3L
+						id: "2B00000001000022"
+						item: { count: 1 id: "minecraft:blaze_powder" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:bucket"
+			}
+			dependencies: ["2B00000000000022"]
+			id: "2B00000000000023"
+			rewards: [{
+				id: "2B00000002000023"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000023"
+						item: { count: 1 id: "minecraft:bucket" }
+						type: "item"
+					}
+				]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:fire_infused_iron_ingot"
+			}
+			dependencies: ["2B00000000000023"]
+			id: "2B00000000000024"
+			rewards: [{
+				id: "2B00000002000024"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000024"
+						item: { count: 1 id: "elemental_metals:fire_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:rune"
+			}
+			dependencies: ["2B00000000000024"]
+			id: "2B00000000000025"
+			rewards: [{
+				id: "2B00000002000025"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "2B00000001000025"
+						item: { count: 1 id: "forbidden_arcanus:rune" }
+						type: "item"
+					}
+				]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:netherrack"
+			}
+			dependencies: ["2B00000000000020"]
+			id: "2B00000000000026"
+			rewards: [{
+				id: "2B00000002000026"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 16L
+						id: "2B00000001000026"
+						item: { count: 1 id: "minecraft:netherrack" }
+						type: "item"
+					}
+					{
+						count: 2L
+						id: "2B00000001010026"
+						item: { count: 1 id: "minecraft:magma_block" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:furnace"
+			}
+			dependencies: ["2B00000000000026"]
+			id: "2B00000000000027"
+			rewards: [{
+				id: "2B00000002000027"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000027"
+						item: { count: 1 id: "minecraft:furnace" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:blast_furnace"
+			}
+			dependencies: ["2B00000000000027"]
+			id: "2B00000000000028"
+			rewards: [{
+				id: "2B00000002000028"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000028"
+						item: { count: 1 id: "minecraft:blast_furnace" }
+						type: "item"
+					}
+				]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:clibano_core"
+			}
+			dependencies: ["2B00000000000028"]
+			id: "2B00000000000029"
+			rewards: [{
+				id: "2B00000002000029"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000029"
+						item: { count: 1 id: "forbidden_arcanus:clibano_core" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "slag:melter"
+			}
+			dependencies: ["2B00000000000029"]
+			id: "2B0000000000002A"
+			rewards: [{
+				id: "2B0000000200002A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100002A"
+						item: { count: 1 id: "slag:melter" }
+						type: "item"
+					}
+					{
+						count: 1L
+						id: "2B0000000101002A"
+						item: { count: 1 id: "slag:crucible_interface" }
+						type: "item"
+					}
+					{
+						count: 1L
+						id: "2B0000000102002A"
+						item: { count: 1 id: "slag:table" }
+						type: "item"
+					}
+					{
+						count: 1L
+						id: "2B0000000103002A"
+						item: { count: 1 id: "slag:basin" }
+						type: "item"
+					}
+					{
+						count: 2L
+						id: "2B0000000104002A"
+						item: { count: 1 id: "slag:drain" }
+						type: "item"
+					}
+					{
+						count: 8L
+						id: "2B0000000105002A"
+						item: { count: 1 id: "slag:crucible" }
+						type: "item"
+					}
+				]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:raw_brilliance"
+			}
+			dependencies: ["2B0000000000001F"]
+			id: "2B0000000000002B"
+			rewards: [{
+				id: "2B0000000200002B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B0000000100002B"
+						item: { count: 1 id: "malum:raw_brilliance" }
+						type: "item"
+					}
+				]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:refined_brilliance"
+			}
+			dependencies: ["2B0000000000002B"]
+			id: "2B0000000000002C"
+			rewards: [{
+				id: "2B0000000200002C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "2B0000000100002C"
+						item: { count: 1 id: "malum:refined_brilliance" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:mnemonic_fragment"
+			}
+			dependencies: ["2B0000000000002C"]
+			id: "2B0000000000002D"
+			rewards: [{
+				id: "2B0000000200002D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "2B0000000100002D"
+						item: { count: 1 id: "malum:mnemonic_fragment" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:cyclops_eye"
+			}
+			dependencies: ["2B0000000000002D"]
+			id: "2B0000000000002E"
+			rewards: [{
+				id: "2B0000000200002E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "iceandfire:cyclops_eye"
+						}
+						id: "2B0000000100002E"
+						entity: "iceandfire:cyclops"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "bertie_progression:twilight_concord"
+			}
+			dependencies: ["2B0000000000002E"]
+			id: "2B0000000000002F"
+			rewards: [{
+				id: "2B0000000200002F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100002F"
+						item: { count: 1 id: "bertie_progression:twilight_concord" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "twilightforest:magic_map_focus"
+			}
+			dependencies: ["2B0000000000002F"]
+			id: "2B00000000000030"
+			rewards: [{
+				id: "2B00000002000030"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "twilightforest:magic_map_focus"
+						}
+						id: "2B00000001000030"
+						dimension: "twilightforest:twilight_forest"
+						type: "dimension"
+					}
+				]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "twilightforest:naga_trophy"
+			}
+			dependencies: ["2B00000000000030"]
+			id: "2B00000000000031"
+			rewards: [{
+				id: "2B00000002000031"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "twilightforest:naga_trophy"
+						}
+						id: "2B00000001000031"
+						entity: "twilightforest:naga"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "bertie_progression:shield_maiden"
+			}
+			dependencies: ["2B00000000000031"]
+			id: "2B00000000000032"
+			rewards: [{
+				id: "2B00000002000032"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000032"
+						item: { count: 1 id: "bertie_progression:shield_maiden" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "twilightforest:lich_trophy"
+			}
+			dependencies: ["2B00000000000032"]
+			id: "2B00000000000033"
+			rewards: [{
+				id: "2B00000002000033"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "twilightforest:lich_trophy"
+						}
+						id: "2B00000001000033"
+						entity: "twilightforest:lich"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:cogwheel"
+			}
+			dependencies: ["2B0000000000001F"]
+			id: "2B00000000000034"
+			rewards: [{
+				id: "2B00000002000034"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "create:cogwheel"
+						}
+						id: "2B00000001000034"
+						title: "Create what?"
+						type: "checkmark"
+					}
+				]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:depot"
+			}
+			dependencies: ["2B00000000000034"]
+			id: "2B00000000000035"
+			rewards: [{
+				id: "2B00000002000035"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000035"
+						item: { count: 1 id: "create:depot" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:basin"
+			}
+			dependencies: ["2B00000000000035"]
+			id: "2B00000000000036"
+			rewards: [{
+				id: "2B00000002000036"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000036"
+						item: { count: 1 id: "create:basin" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_press"
+			}
+			dependencies: ["2B00000000000036"]
+			id: "2B00000000000037"
+			rewards: [{
+				id: "2B00000002000037"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000037"
+						item: { count: 1 id: "create:mechanical_press" }
+						type: "item"
+					}
+				]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:brass_sheet"
+			}
+			dependencies: ["2B00000000000037"]
+			id: "2B00000000000038"
+			rewards: [{
+				id: "2B00000002000038"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B00000001000038"
+						item: { count: 1 id: "create:iron_sheet" }
+						type: "item"
+					}
+					{
+						count: 8L
+						id: "2B00000001010038"
+						item: { count: 1 id: "create:golden_sheet" }
+						type: "item"
+					}
+					{
+						count: 8L
+						id: "2B00000001020038"
+						item: { count: 1 id: "create:copper_sheet" }
+						type: "item"
+					}
+					{
+						count: 8L
+						id: "2B00000001030038"
+						item: { count: 1 id: "create:brass_sheet" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_mixer"
+			}
+			dependencies: ["2B00000000000038"]
+			id: "2B00000000000039"
+			rewards: [{
+				id: "2B00000002000039"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000039"
+						item: { count: 1 id: "create:mechanical_mixer" }
+						type: "item"
+					}
+				]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:encased_fan"
+			}
+			dependencies: ["2B00000000000039"]
+			id: "2B0000000000003A"
+			rewards: [{
+				id: "2B0000000200003A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100003A"
+						item: { count: 1 id: "create:encased_fan" }
+						type: "item"
+					}
+				]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:deployer"
+			}
+			dependencies: ["2B0000000000003A"]
+			id: "2B0000000000003B"
+			rewards: [{
+				id: "2B0000000200003B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100003B"
+						item: { count: 1 id: "create:deployer" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:spout"
+			}
+			dependencies: ["2B00000000000034"]
+			id: "2B0000000000003C"
+			rewards: [{
+				id: "2B0000000200003C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100003C"
+						item: { count: 1 id: "create:spout" }
+						type: "item"
+					}
+					{
+						count: 1L
+						id: "2B0000000101003C"
+						item: { count: 1 id: "create:item_drain" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:crushing_wheel"
+			}
+			dependencies: ["2B0000000000003C"]
+			id: "2B0000000000003D"
+			rewards: [{
+				id: "2B0000000200003D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "2B0000000100003D"
+						item: { count: 1 id: "create:crushing_wheel" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "born_in_chaos_v1:dark_metal_ingot"
+			}
+			dependencies: ["2B0000000000003D"]
+			id: "2B0000000000003E"
+			rewards: [{
+				id: "2B0000000200003E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100003E"
+						item: { count: 1 id: "born_in_chaos_v1:dark_metal_ingot" }
+						type: "item"
+					}
+				]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:empty_blaze_burner"
+			}
+			dependencies: ["2B0000000000003E"]
+			id: "2B0000000000003F"
+			rewards: [{
+				id: "2B0000000200003F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100003F"
+						item: { count: 1 id: "create:empty_blaze_burner" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:blaze_burner"
+			}
+			dependencies: ["2B0000000000003F"]
+			id: "2B00000000000040"
+			rewards: [{
+				id: "2B00000002000040"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000040"
+						item: { count: 1 id: "create:blaze_burner" }
+						type: "item"
+					}
+				]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:precision_mechanism"
+			}
+			dependencies: ["2B00000000000040"]
+			id: "2B00000000000041"
+			rewards: [{
+				id: "2B00000002000041"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000041"
+						item: { count: 1 id: "create:precision_mechanism" }
+						type: "item"
+					}
+				]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_arm"
+			}
+			dependencies: ["2B00000000000041"]
+			id: "2B00000000000042"
+			rewards: [{
+				id: "2B00000002000042"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000042"
+						item: { count: 1 id: "create:mechanical_arm" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:large_water_wheel"
+			}
+			dependencies: [
+				"2B0000000000003B"
+				"2B00000000000042"
+			]
+			id: "2B00000000000043"
+			rewards: [{
+				id: "2B00000002000043"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 16L
+						id: "2B00000001000043"
+						item: { count: 1 id: "bertie_progression:kinetic_vane" }
+						type: "item"
+					}
+					{
+						count: 1L
+						id: "2B00000001010043"
+						item: { count: 1 id: "create:large_water_wheel" }
+						type: "item"
+					}
+				]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "bertie_progression:crafting_license"
+			}
+			dependencies: ["2B00000000000033"]
+			id: "2B00000000000044"
+			rewards: [{
+				id: "2B00000002000044"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000044"
+						item: { count: 1 id: "bertie_progression:crafting_license" }
+						type: "item"
+					}
+				]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:fusion_shrine_basalt"
+			}
+			id: "2B00000000000045"
+			rewards: [{
+				id: "2B00000002000045"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000045"
+						item: { count: 1 id: "pastel:fusion_shrine_basalt" }
+						type: "item"
+					}
+				]
+			x: 15.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:pedestal_all_basic"
+			}
+			dependencies: ["2B00000000000045"]
+			id: "2B00000000000046"
+			rewards: [{
+				id: "2B00000002000046"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000046"
+						item: { count: 1 id: "pastel:pedestal_all_basic" }
+						type: "item"
+					}
+				]
+			x: 16.5d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:pedestal_onyx"
+			}
+			dependencies: ["2B00000000000046"]
+			id: "2B00000000000047"
+			rewards: [{
+				id: "2B00000002000047"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "2B00000001000047"
+						item: { count: 1 id: "pastel:pedestal_onyx" }
+						type: "item"
+					}
+				]
+			x: 18.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "bertie_progression:acolyte_of_deflection"
+			}
+			dependencies: ["2B00000000000033"]
+			id: "2B00000000000048"
+			rewards: [{
+				id: "2B00000002000048"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000048"
+						item: { count: 1 id: "bertie_progression:acolyte_of_deflection" }
+						type: "item"
+					}
+				]
+			x: 7.5d
+			y: 0.0d
+		}
+	]
+}

@@ -1,0 +1,14 @@
+name = "bertie"
+author = "berlord"
+version = "0.1.0"
+description = "An exploration, technology, and magic modpack for NeoForge 1.21.1."
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "32141c226fc79f3d3591f4268f78ea73a1894c29fbf46731dd3ffbe4a184b41c"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.233"

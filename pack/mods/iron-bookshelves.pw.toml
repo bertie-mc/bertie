@@ -1,0 +1,13 @@
+name = "Iron Bookshelves"
+filename = "ironbookshelves-1.21.1-1.4.13-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/QmCOBeSP/versions/A57xxobI/ironbookshelves-1.21.1-1.4.13-neoforge.jar"
+hash-format = "sha512"
+hash = "8c6538c534af7db075c6bfb1eb4582a2439a5eb48e7e25e63c80323734134581e999e5f57a25b9cc2611d2157d5e77ee1f8e19bf9e3c4d82fdc4dc0c96512f03"
+
+[update]
+[update.modrinth]
+mod-id = "QmCOBeSP"
+version = "A57xxobI"

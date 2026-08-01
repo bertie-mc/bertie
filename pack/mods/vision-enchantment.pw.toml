@@ -1,0 +1,13 @@
+name = "Vision Enchantment"
+filename = "vision-enchantment-v1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/N80xH1o5/versions/LuygpCRn/vision-enchantment-v1.0.0.jar"
+hash-format = "sha512"
+hash = "3a439a8986b93a5aa0e944534d675c847d9c1b1a4b37501572421fba591667f8db3977f95b81e2f5d9e4be7aa2993147ca19a54c0928fc080c8957e848b3e3ce"
+
+[update]
+[update.modrinth]
+mod-id = "N80xH1o5"
+version = "LuygpCRn"

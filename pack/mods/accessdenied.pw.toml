@@ -1,0 +1,13 @@
+name = "Access Denied"
+filename = "access_denied-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UqdL217I/versions/i8fZqMWD/access_denied-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "c175effd8eb1ce17d2a00a29a0ce5e21c24d8cf26607f4ebd2f5721a0c3e21647ad99a964a8bc09dcbdfd8b3d3c7f7a28ad82801e9d9a68676c59bdb43a89244"
+
+[update]
+[update.modrinth]
+mod-id = "UqdL217I"
+version = "i8fZqMWD"

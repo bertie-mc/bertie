@@ -1,0 +1,13 @@
+name = "Deep Waters"
+filename = "deepwaters-25_5 neoforge 1_21_1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/buvNMuzc/versions/Komx4VUy/deepwaters-25_5%20neoforge%201_21_1.jar"
+hash-format = "sha512"
+hash = "4a83060c3af4da799829572d0d811e481acc3bede7adce7be1071bb26a4460adeed201ef4fd4e1fdd73b40c9f8eff8fa0b9c8373fc43870e081396c254e7a8d2"
+
+[update]
+[update.modrinth]
+mod-id = "buvNMuzc"
+version = "Komx4VUy"

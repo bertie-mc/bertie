@@ -1,0 +1,13 @@
+name = "Modular Machinery Reborn"
+filename = "modular_machinery_reborn-1.21.1-3.0.17.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oPdlqv8D/versions/ThNbTOeP/modular_machinery_reborn-1.21.1-3.0.17.jar"
+hash-format = "sha512"
+hash = "97cea5c482cafed6b65e7d7181866dc1b9d378a754b2391958c7ff025ba96f7daed976a00f9a3aa06f40bfb20ba1e2ef70ddda37dfc1920f3b9da39084177b51"
+
+[update]
+[update.modrinth]
+mod-id = "oPdlqv8D"
+version = "ThNbTOeP"

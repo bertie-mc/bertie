@@ -1,0 +1,13 @@
+name = "NBT viewer"
+filename = "nbtviewer-2.0.0-mc1.21.1-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/w0xJ0EWR/versions/7Hx5sN6S/nbtviewer-2.0.0-mc1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "c0f7157af496525c3e3dec9784024e1e9b0e6a202bb201ee139d49fde46a788c428ae87d4d03fe1889ae78cc62e26fb080db9504d6cc6a04495f3a16f85bceb8"
+
+[update]
+[update.modrinth]
+mod-id = "w0xJ0EWR"
+version = "7Hx5sN6S"

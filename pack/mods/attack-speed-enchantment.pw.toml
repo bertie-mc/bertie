@@ -1,0 +1,13 @@
+name = "Attack Speed Enchantment"
+filename = "attack-speed-enchantment-v1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KeXkdmTD/versions/Ao9u8ZHo/attack-speed-enchantment-v1.0.0.jar"
+hash-format = "sha512"
+hash = "e53ba45de7d5285816d56a554332269696823b263d056685119553a26505af10dc5ac197496cc44c2d445510b53a73245a50b288596b49becf9824588c3b0df3"
+
+[update]
+[update.modrinth]
+mod-id = "KeXkdmTD"
+version = "Ao9u8ZHo"

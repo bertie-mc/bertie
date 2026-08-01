@@ -1,0 +1,15 @@
+name = "carving"
+filename = "berlords_carving-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/carving/releases/download/v1.1.0/berlords_carving-1.1.0.jar"
+hash-format = "sha256"
+hash = "634a1880b7c511a9cd5c4d6185af474165053ce7d9b556cce9f74fc1734a2d0c"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/carving"
+tag = "v1.1.0"

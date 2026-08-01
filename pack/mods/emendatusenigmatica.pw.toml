@@ -1,0 +1,13 @@
+name = "Emendatus Enigmatica"
+filename = "emendatusenigmatica-1.21.1-2.2.0-alpha-3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XB83s9jW/versions/qE7rHlZt/emendatusenigmatica-1.21.1-2.2.0-alpha-3.jar"
+hash-format = "sha512"
+hash = "7df6773edfc6fd463819321556451875afdb8ad6ed529edb51bb6eb975e0ddeb7fd3d7127ca3ca48d2ff39ad84c55e1ce9c608f75b5430a6a265fdcc1116e1c1"
+
+[update]
+[update.modrinth]
+mod-id = "XB83s9jW"
+version = "qE7rHlZt"

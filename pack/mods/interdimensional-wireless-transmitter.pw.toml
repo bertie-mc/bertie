@@ -1,0 +1,13 @@
+name = "Interdimensional Wireless Transmitter"
+filename = "interdimensionalwirelesstransmitter-neoforge-1.21.1-0.1.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nQR8XALE/versions/CcRkmcRp/interdimensionalwirelesstransmitter-neoforge-1.21.1-0.1.5.jar"
+hash-format = "sha512"
+hash = "7cb1ccf0af474c6229610e3aab81ea671d46e5380577ea194c4a9da80fa9a7eb0b318624faabeb708d82cde6129a4b43fdb4ec9eecebda1839a5d46e6f60e57d"
+
+[update]
+[update.modrinth]
+mod-id = "nQR8XALE"
+version = "CcRkmcRp"

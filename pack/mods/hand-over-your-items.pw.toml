@@ -1,0 +1,13 @@
+name = "Hand Over Your Items"
+filename = "handoveryouritems-1.21.1-3.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Z9RMqaGu/versions/GIGoRmUe/handoveryouritems-1.21.1-3.8.jar"
+hash-format = "sha512"
+hash = "7601de05d35db3c7b1f07b1e2d6ecc9d3271fddcc89f7f9fe23b481622c20b7a5715b59e8531469b427f0f519bf1c7135e061a8af6c60347c636d27d78b4f4cc"
+
+[update]
+[update.modrinth]
+mod-id = "Z9RMqaGu"
+version = "GIGoRmUe"

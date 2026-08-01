@@ -1,0 +1,13 @@
+name = "Access Denied API"
+filename = "access_denied_api-neoforge-1.21.1-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bRBQLxKF/versions/a6tw90TF/access_denied_api-neoforge-1.21.1-1.0.1.jar"
+hash-format = "sha512"
+hash = "7576c9625254098cf581d4af0082540f65bf483ec4d604a5d4eaeafda484834d37b36e22af0393ff048dd2c31f62c5fac3e96df30593bbccb5f67d8d36e82ea9"
+
+[update]
+[update.modrinth]
+mod-id = "bRBQLxKF"
+version = "a6tw90TF"

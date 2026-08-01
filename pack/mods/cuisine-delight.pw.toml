@@ -1,0 +1,13 @@
+name = "Cuisine Delight"
+filename = "cuisinedelight-1.2.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gOQjCAAD/versions/Ngn5DVCK/cuisinedelight-1.2.8.jar"
+hash-format = "sha512"
+hash = "c2d4637167a2a6a661fa0535c61ee073de1175d9f42ba9f6432f20fabc3b95c4384a6437b5c8f205d5d495b550bc55cbb655bb1c69c92dfec57a67c497a7fb57"
+
+[update]
+[update.modrinth]
+mod-id = "gOQjCAAD"
+version = "Ngn5DVCK"

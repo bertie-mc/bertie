@@ -1,0 +1,13 @@
+name = "Curse of Pandora"
+filename = "curseofpandora-3.0.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FOXoL6St/versions/fhvmJ7Xb/curseofpandora-3.0.7.jar"
+hash-format = "sha512"
+hash = "9ceddd87d224a9193cf8e079b42f7592297e68884e7ee34ad3d768906886881c3787911536fa13ad475653abb334588ec80deaa1e359f2d94010b99ccb7bab24"
+
+[update]
+[update.modrinth]
+mod-id = "FOXoL6St"
+version = "fhvmJ7Xb"

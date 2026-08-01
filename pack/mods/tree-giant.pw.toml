@@ -1,0 +1,13 @@
+name = "Tree Giant"
+filename = "taxtg-2.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8a1Ksvnk/versions/kRGU4K6D/taxtg-2.0.1-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "e84438ee7c58f497eb757bc1ffa0827025b19073e7103bbf34ddcac1487589d61716667538907a95a263b7f2f93ddd2efd1dd28c1df7ac920960ce9fc1208750"
+
+[update]
+[update.modrinth]
+mod-id = "8a1Ksvnk"
+version = "kRGU4K6D"

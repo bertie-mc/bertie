@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Only the workflow actions. The mod list is managed by packwiz, not by Dependabot -
+  # Minecraft-ecosystem version strings encode the MC version and are not semver, so a
+  # dependency bot would propose jars for entirely different Minecraft versions.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    groups:
+      github-actions:
+        patterns: ["*"]
