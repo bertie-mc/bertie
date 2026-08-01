@@ -17,7 +17,7 @@ This is a runtime patch for *fdlib*. It wraps fdlib's post-shader init in a try/
 
 ## Building
 
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`gradle build` — the built JAR is written to `build/libs/`.
 
 ## License
 
