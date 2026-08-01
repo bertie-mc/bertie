@@ -11,12 +11,13 @@ permissions:
 
 jobs:
   build:
-    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.8.0
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v4.0.0
 
   client-test:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/client-test.yml@v3.8.0
+    uses: bertie-mc/bertie-ci/.github/workflows/client-test.yml@v4.0.0
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
+      build-test-mod: true
       fixture: short-circuit
       success-marker: SHORT_CIRCUIT_RENDER_LAYERS_OK
