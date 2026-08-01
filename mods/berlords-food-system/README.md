@@ -18,7 +18,7 @@ Optional integration with Sophisticated Backpacks (slot-aware feeding upgrades).
 
 ## Building
 
-`./gradlew build` — the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
+`gradle build` — the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
 
 ## License
 
