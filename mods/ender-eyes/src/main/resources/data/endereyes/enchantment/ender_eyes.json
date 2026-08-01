@@ -1,0 +1,20 @@
+{
+  "description": {
+    "translate": "enchantment.endereyes.ender_eyes"
+  },
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "slots": [
+    "head"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8
+}
