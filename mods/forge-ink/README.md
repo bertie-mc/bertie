@@ -45,7 +45,7 @@ bypasses the tier gate by design of FA's jar system. The forge slot itself is al
 ## Build
 
 ```
-gradlew build
+gradle build
 ```
 
 Jar lands in `build/libs/forgeink-<version>.jar`.
