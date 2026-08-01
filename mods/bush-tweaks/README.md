@@ -16,6 +16,12 @@ This mod contains only original mixin code. It references the target mod's class
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle test` starts NeoForge's in-process test environment with the pack's Berries &
+Cherries version. It verifies that all 18 target blocks have vanilla movement speed and
+that the patched damage procedures distinguish moving, stationary, and crouching entities.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

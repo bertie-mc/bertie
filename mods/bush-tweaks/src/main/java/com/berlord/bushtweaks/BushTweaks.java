@@ -7,7 +7,6 @@ import net.neoforged.fml.common.Mod;
 public class BushTweaks {
     public static final String MOD_ID = "bushtweaks";
 
-    public BushTweaks(IEventBus modBus) {
-        // Mixin-only mod; all behavior is in the mixin package.
+    public BushTweaks(IEventBus ignored) {
     }
 }

@@ -1,4 +1,5 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
 
 plugins {
     `java-library`
@@ -26,6 +27,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = uri("https://api.modrinth.com/maven") }
 }
 
 base {
@@ -33,6 +35,8 @@ base {
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+val mockitoAgent by configurations.creating
 
 neoForge {
     version = neo_version
@@ -57,6 +61,28 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    unitTest {
+        enable()
+        testedMod = mods.getByName(mod_id)
+    }
+}
+
+dependencies {
+    runtimeOnly("maven.modrinth:berries-and-cherries:1.1")
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.mockito:mockito-core:5.23.0")
+    mockitoAgent("org.mockito:mockito-core:5.23.0") {
+        isTransitive = false
+    }
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+    jvmArgs("-javaagent:${mockitoAgent.singleFile.absolutePath}")
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
