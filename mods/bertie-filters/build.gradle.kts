@@ -1,0 +1,100 @@
+import org.gradle.language.jvm.tasks.ProcessResources
+
+plugins {
+    `java-library`
+    idea
+    id("net.neoforged.moddev") version "2.0.134"
+}
+
+val minecraft_version: String by project
+val minecraft_version_range: String by project
+val neo_version: String by project
+val neo_version_range: String by project
+val loader_version_range: String by project
+val parchment_mappings_version: String by project
+val parchment_minecraft_version: String by project
+val mod_id: String by project
+val mod_name: String by project
+val mod_license: String by project
+val mod_version: String by project
+val mod_group_id: String by project
+val mod_authors: String by project
+val mod_description: String by project
+
+version = mod_version
+group = mod_group_id
+
+repositories {
+    mavenLocal()
+    maven { url = uri("https://api.modrinth.com/maven") }
+    maven { url = uri("https://maven.architectury.dev/") }
+    maven { url = uri("https://maven.ftb.dev/releases") }
+}
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = neo_version
+
+    parchment {
+        mappingsVersion = parchment_mappings_version
+        minecraftVersion = parchment_minecraft_version
+    }
+
+    runs {
+        register("client") {
+            client()
+        }
+        register("server") {
+            server()
+        }
+        configureEach {
+            systemProperty("forge.logging.markers", "REGISTRIES")
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        register(mod_id) {
+            sourceSet(sourceSets.main.get())
+        }
+    }
+}
+
+dependencies {
+    // FTB Filter System - the CustomFilterEvent API we hook into (required at runtime). From the FTB maven.
+    compileOnly("dev.ftb.mods:ftb-filter-system-neoforge:21.1.4")
+    // FTB Quests + Library - the CustomFilterDisplayItemsEvent API (valid-items display fix).
+    compileOnly("dev.ftb.mods:ftb-quests-neoforge:2101.1.26")
+    compileOnly("dev.ftb.mods:ftb-library-neoforge:2101.1.32")
+    // Architectury - provides dev.architectury.event.Event / EventResult used by the FFS event. From the Architectury maven.
+    compileOnly("dev.architectury:architectury-neoforge:13.0.8")
+    // Slag-n-Embers API - the modular item components we read (optional; guarded by ModList.isLoaded). From Modrinth.
+    compileOnly("maven.modrinth:slag-n-embers:1.1a")
+}
+
+val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
+    val replaceProperties = mapOf(
+        "minecraft_version" to minecraft_version,
+        "minecraft_version_range" to minecraft_version_range,
+        "neo_version" to neo_version,
+        "neo_version_range" to neo_version_range,
+        "loader_version_range" to loader_version_range,
+        "mod_id" to mod_id,
+        "mod_name" to mod_name,
+        "mod_license" to mod_license,
+        "mod_version" to mod_version,
+        "mod_authors" to mod_authors,
+        "mod_description" to mod_description,
+    )
+    inputs.properties(replaceProperties)
+    expand(replaceProperties)
+    from("src/main/templates")
+    into("build/generated/sources/modMetadata")
+}
+sourceSets.main.get().resources.srcDir(generateModMetadata)
+neoForge.ideSyncTask(generateModMetadata)
