@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.berlord.frozenregfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "GameDataMixin",
+    "MappedRegistryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
