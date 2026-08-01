@@ -12,9 +12,7 @@ public class ExplodeToMine {
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
 
-        // Declare which existing ores are "locked" and what cracked twin they become when exploded.
-        // TEST TARGET: vanilla diamond ore -> our cracked twin.
-        // To add more later: register the source block + a matching twin in ModBlocks.
+        // Each locked source needs a matching cracked block and its packaged resources.
         LockedOres.register(Blocks.DIAMOND_ORE, ModBlocks.CRACKED_DIAMOND_ORE);
         LockedOres.register(Blocks.DEEPSLATE_DIAMOND_ORE, ModBlocks.CRACKED_DEEPSLATE_DIAMOND_ORE);
     }
