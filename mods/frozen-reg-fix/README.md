@@ -18,5 +18,12 @@ Patches a load-order bug in [Immersive Armors](https://www.curseforge.com/minecr
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle clientTestJar` builds a test-only client mod under `build/test-libs/`. The
+headless client suite loads the release JAR with Immersive Armors, reaches its post-load
+lifecycle, and verifies all ten expected armor materials are registered. Test code and
+resources are excluded from the release JAR.
+
 ## License
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
