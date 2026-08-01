@@ -20,6 +20,9 @@ Optional integration with Sophisticated Backpacks (slot-aware feeding upgrades).
 
 `gradle build` — the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
 
+`gradle test` covers stomach state and buff configuration. CI also loads the real Sophisticated
+Backpacks integration in a headless client, verifies every mixin target, and joins a world.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

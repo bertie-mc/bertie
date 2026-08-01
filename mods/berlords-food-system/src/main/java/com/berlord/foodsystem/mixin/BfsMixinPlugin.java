@@ -1,5 +1,7 @@
 package com.berlord.foodsystem.mixin;
 
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.loading.FMLLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -13,6 +15,9 @@ public class BfsMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+        if (mixinClassName.endsWith("HungerBarHiderMixin")) {
+            return FMLEnvironment.dist == Dist.CLIENT;
+        }
         if (mixinClassName.endsWith("FeedingUpgradeWrapperMixin")
                 || mixinClassName.endsWith("UpgradeWrapperBaseAccessor")) {
             return FMLLoader.getLoadingModList() != null

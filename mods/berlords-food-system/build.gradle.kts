@@ -1,4 +1,6 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
+import org.gradle.jvm.tasks.Jar
 
 plugins {
     `java-library`
@@ -35,6 +37,8 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+val clientTest = sourceSets.create("clientTest")
+
 neoForge {
     version = neo_version
 
@@ -58,12 +62,38 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    addModdingDependenciesTo(clientTest)
+
+    unitTest {
+        enable()
+        testedMod = mods.getByName(mod_id)
+    }
+}
+
+clientTest.compileClasspath += sourceSets.main.get().output + sourceSets.main.get().compileClasspath
+clientTest.runtimeClasspath += sourceSets.main.get().output + sourceSets.main.get().runtimeClasspath
+
+tasks.register<Jar>("clientTestJar") {
+    group = "verification"
+    description = "Build the test-only mod used by the headless client suite"
+    archiveFileName = "berlords-food-system-client-tests.jar"
+    destinationDirectory = layout.buildDirectory.dir("test-libs")
+    from(clientTest.output)
+    dependsOn(tasks.named(clientTest.classesTaskName))
 }
 
 dependencies {
-    // Sophisticated Core is used at compile time (feeding-upgrade mixin) — resolved from Modrinth's maven so cloud CI can build without the local jar.
+    // Compile-only because Sophisticated Backpacks integration is optional at runtime.
     compileOnly("maven.modrinth:sophisticated-core:1.21.1-1.4.49.1966")
-    // Sophisticated Backpacks is referenced only via mixin string targets (no compile-time import), so it needs no compile dependency here.
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
