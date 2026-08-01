@@ -57,14 +57,16 @@ EMAIL_CALLBACK = (
 
 MESSAGE_CALLBACK = """
 lines = message.splitlines()
-lines = [
+filtered = [
     line for line in lines
     if not (
-        line.lower().startswith(b"co-authored-by:")
+        line.lstrip().lower().startswith(b"co-authored-by:")
         and b"claude" in line.lower()
     )
 ]
-return b"\\n".join(lines).rstrip() + b"\\n"
+if len(filtered) == len(lines):
+    return message
+return b"\\n".join(filtered).rstrip(b"\\n") + b"\\n"
 """.strip()
 
 
@@ -144,9 +146,9 @@ def import_component(
             "--no-ff",
             "--no-edit",
             "-S",
-            f"{remote}/{component.branch}",
             "-m",
             f"chore(migration): import {component.repository} history",
+            f"{remote}/{component.branch}",
             cwd=target,
         )
     finally:
