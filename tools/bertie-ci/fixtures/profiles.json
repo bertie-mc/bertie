@@ -1,0 +1,33 @@
+{
+  "artifacts": [
+    "artifacts",
+    "curios"
+  ],
+  "forbidden-arcanus": [
+    "forbidden-arcanus",
+    "valhelsia-core"
+  ],
+  "ftb-filters": [
+    "architectury-api",
+    "ftb-filter-system",
+    "ftb-library-forge"
+  ],
+  "irons-spells": [
+    "curios",
+    "geckolib",
+    "irons-lib",
+    "irons-spells-n-spellbooks",
+    "playeranimator"
+  ],
+  "simply-swords": [
+    "architectury-api",
+    "fzzy-config",
+    "kotlin-for-forge",
+    "simply-swords",
+    "simply-tooltips"
+  ],
+  "rustic-engineer": [
+    "geckolib",
+    "rustic-engineer"
+  ]
+}

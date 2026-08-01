@@ -1,0 +1,54 @@
+name: Test prepared Minecraft client
+description: Join a world and run optional project-owned assertions in any prepared client
+
+inputs:
+  instance:
+    description: Prepared client instance descriptor
+    required: true
+  work-dir:
+    description: Directory for HeadlessMC state and logs
+    required: true
+  test-mod:
+    description: Optional test-only mod JAR, or directory containing one JAR
+    required: false
+  minimum-game-tests:
+    description: Minimum number of project GameTests that must be discovered
+    required: false
+    default: "0"
+  success-marker:
+    description: Optional exact project-owned text that must appear in the client runtime log
+    required: false
+  cache-dir:
+    description: Directory for downloaded Minecraft files
+    required: false
+    default: .bertie-ci/cache
+  timeout:
+    description: Timeout in seconds
+    required: false
+    default: "1500"
+  max-memory:
+    description: Maximum Java heap
+    required: false
+    default: 4G
+
+runs:
+  using: composite
+  steps:
+    - name: Test prepared client
+      shell: bash
+      env:
+        BERTIE_CI_INSTANCE: ${{ inputs.instance }}
+        BERTIE_CI_WORK_DIR: ${{ inputs.work-dir }}
+        BERTIE_CI_TEST_MOD: ${{ inputs.test-mod }}
+        BERTIE_CI_MINIMUM_GAME_TESTS: ${{ inputs.minimum-game-tests }}
+        BERTIE_CI_SUCCESS_MARKER: ${{ inputs.success-marker }}
+        BERTIE_CI_CACHE_DIR: ${{ inputs.cache-dir }}
+        BERTIE_CI_TIMEOUT: ${{ inputs.timeout }}
+        BERTIE_CI_MAX_MEMORY: ${{ inputs.max-memory }}
+      run: >-
+        bertie-ci client-test --instance "$BERTIE_CI_INSTANCE"
+        --test-mod "$BERTIE_CI_TEST_MOD"
+        --minimum-game-tests "$BERTIE_CI_MINIMUM_GAME_TESTS"
+        --require-log "$BERTIE_CI_SUCCESS_MARKER"
+        --work-dir "$BERTIE_CI_WORK_DIR" --cache-dir "$BERTIE_CI_CACHE_DIR"
+        --timeout "$BERTIE_CI_TIMEOUT" --max-memory "$BERTIE_CI_MAX_MEMORY"
