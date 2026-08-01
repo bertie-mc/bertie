@@ -47,7 +47,6 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
-# Phase 1 batch — all optional, BOTH side, ModList-guarded.
 [[dependencies.${mod_id}]]
 modId="cataclysm"
 type="optional"

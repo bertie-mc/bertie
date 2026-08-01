@@ -46,40 +46,46 @@ public class BerlordsEmiPlugin implements EmiPlugin {
 
     @Override
     public void register(EmiRegistry registry) {
-        run("slag", () -> SlagEmiModule.register(registry));
-        run("create", () -> CreateEmiModule.register(registry));
-        run("bertie_progression", () -> BertieProgressionEmiModule.register(registry));
-        run("cataclysm", () -> CataclysmEmiModule.register(registry));
-        run("irons_spellbooks", () -> IronsSpellbooksEmiModule.register(registry));
-        run("forbidden_arcanus", () -> ForbiddenArcanusEmiModule.register(registry));
-        run("terra_curio", () -> TerraCurioEmiModule.register(registry));
-        run("enderio", () -> EnderIOEmiModule.register(registry));
-        run("malum", () -> MalumEmiModule.register(registry));
-        run("extradelight", () -> ExtraDelightEmiModule.register(registry));
-        run("dungeonsdelight", () -> DungeonsDelightEmiModule.register(registry));
-        run("expandeddelight", () -> ExpandedDelightEmiModule.register(registry));
-        run("avaritia_delight", () -> AvaritiaDelightEmiModule.register(registry));
-        run("farmerspizzeria", () -> FarmersPizzeriaEmiModule.register(registry));
-        run("youkaisfeasts", () -> YoukaisFeastsEmiModule.register(registry));
-        run("cognition", () -> CognitionEmiModule.register(registry));
-        run("stellaris", () -> StellarisEmiModule.register(registry));
-        run("twilightdelight", () -> TwilightDelightEmiModule.register(registry));
-        run("slavic_delight", () -> SlavicDelightEmiModule.register(registry));
-        run("cuisinedelight", () -> CuisineDelightEmiModule.register(registry));
-        run("berries_and_cherries", () -> BerriesAndCherriesEmiModule.register(registry));
-        run("betterarcheology", () -> BetterArcheologyEmiModule.register(registry));
-        run("l2complements", () -> L2ComplementsEmiModule.register(registry));
-        run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
+        boolean success = true;
+        success &= run("slag", () -> SlagEmiModule.register(registry));
+        success &= run("create", () -> CreateEmiModule.register(registry));
+        success &= run("bertie_progression", () -> BertieProgressionEmiModule.register(registry));
+        success &= run("cataclysm", () -> CataclysmEmiModule.register(registry));
+        success &= run("irons_spellbooks", () -> IronsSpellbooksEmiModule.register(registry));
+        success &= run("forbidden_arcanus", () -> ForbiddenArcanusEmiModule.register(registry));
+        success &= run("terra_curio", () -> TerraCurioEmiModule.register(registry));
+        success &= run("enderio", () -> EnderIOEmiModule.register(registry));
+        success &= run("malum", () -> MalumEmiModule.register(registry));
+        success &= run("extradelight", () -> ExtraDelightEmiModule.register(registry));
+        success &= run("dungeonsdelight", () -> DungeonsDelightEmiModule.register(registry));
+        success &= run("expandeddelight", () -> ExpandedDelightEmiModule.register(registry));
+        success &= run("avaritia_delight", () -> AvaritiaDelightEmiModule.register(registry));
+        success &= run("farmerspizzeria", () -> FarmersPizzeriaEmiModule.register(registry));
+        success &= run("youkaisfeasts", () -> YoukaisFeastsEmiModule.register(registry));
+        success &= run("cognition", () -> CognitionEmiModule.register(registry));
+        success &= run("stellaris", () -> StellarisEmiModule.register(registry));
+        success &= run("twilightdelight", () -> TwilightDelightEmiModule.register(registry));
+        success &= run("slavic_delight", () -> SlavicDelightEmiModule.register(registry));
+        success &= run("cuisinedelight", () -> CuisineDelightEmiModule.register(registry));
+        success &= run("berries_and_cherries", () -> BerriesAndCherriesEmiModule.register(registry));
+        success &= run("betterarcheology", () -> BetterArcheologyEmiModule.register(registry));
+        success &= run("l2complements", () -> L2ComplementsEmiModule.register(registry));
+        success &= run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
+        if (success) {
+            LOGGER.info("Berlords EMI integrations registered successfully");
+        }
     }
 
-    private static void run(String modid, Runnable module) {
+    private static boolean run(String modid, Runnable module) {
         if (!ModList.get().isLoaded(modid)) {
-            return;
+            return true;
         }
         try {
             module.run();
+            return true;
         } catch (Throwable t) {
             LOGGER.error("berlords_emi: integration for '{}' failed to register", modid, t);
+            return false;
         }
     }
 }

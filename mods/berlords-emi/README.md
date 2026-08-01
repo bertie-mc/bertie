@@ -16,6 +16,9 @@ Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Malum, Sla
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`. Every integration dependency resolves from Modrinth's maven. A few libraries this mod compiles against (anvillib, l2core, l2serial, confluence_magic_lib) aren't published standalone — they ship JarJar-embedded inside their parent mods, so the `extractJarJarLibs` Gradle task pulls those parent mods from Modrinth and extracts the nested jars at build time. Nothing third-party is committed to this repo. Requires internet access on the first build.
 
+`gradle test` covers the shared machine-recipe descriptor. CI also launches EMI with Forbidden &
+Arcanus and joins a world, failing unless the production plugin completes integration registration.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

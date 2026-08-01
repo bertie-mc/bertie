@@ -8,6 +8,7 @@ import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
 import java.util.zip.ZipFile
 
 @CacheableTask
@@ -75,10 +76,7 @@ repositories {
     mavenLocal()
     maven { url = uri("https://api.modrinth.com/maven") }
 
-    // bertie's own mods, resolved straight from their GitHub Releases. The release
-    // asset is named <module>-<version>.jar and the tag is v<version>, which maps
-    // onto an ivy layout cleanly. Keeps the build reproducible off this machine
-    // without vendoring a jar into libs/.
+    // Bertie mods are consumed from their published GitHub release artifacts.
     ivy {
         url = uri("https://github.com/bertie-mc")
         patternLayout {
@@ -118,11 +116,14 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    unitTest {
+        enable()
+        testedMod = mods.getByName(mod_id)
+    }
 }
 
-// A few integration libraries emi compiles against (anvillib 1.4.0, l2core, l2serial, confluence_magic_lib)
-// are NOT published standalone on any maven — they ship JarJar-embedded inside their parent mods. We pull the
-// parent mods from Modrinth and extract just those nested jars at build time. Nothing third-party is committed.
+// These integration APIs are published only as JarJar libraries inside their parent mods.
 val jarJarParents by configurations.creating
 val extractedLibsDir = layout.buildDirectory.dir("extracted-jarjar-libs").get().asFile
 
@@ -141,7 +142,6 @@ val extractJarJarLibs = tasks.register<ExtractJarJarLibraries>("extractJarJarLib
 }
 
 dependencies {
-    // Integration APIs, resolved from Modrinth (runtime-optional, ModList-guarded; compileOnly = symbols only).
     compileOnly("maven.modrinth:emi:1.1.24+1.21.1+neoforge")
     compileOnly("maven.modrinth:slag-n-embers:1.1a")
     compileOnly("maven.modrinth:create:6.0.10+mc1.21.1")
@@ -169,14 +169,10 @@ dependencies {
     compileOnly("maven.modrinth:better-archeology:rp4lPDKI") // pin NeoForge version by id (1.21.1-1.3.4)
     compileOnly("maven.modrinth:l2-complements:3.1.3")
     compileOnly("maven.modrinth:anvilcraft:1.21.1-1.5.3+hotfix.1849") // dev.dubhe.anvilcraft.recipe.*
-    // Advanced Loot Info: its plugin API (com.yanny.ali.api.* + bundled com.yanny.aci.*) lets us publish
-    // Malum's hardcoded soul-reaping drops onto ALI's own mob-drop pages. Pinned by version id (1.21.1-1.12.0).
+    // ALI exposes Malum's hardcoded soul-reaping drops on its mob-drop pages.
     compileOnly("maven.modrinth:advanced-loot-info:y8p1Vq83")
 
-    // Bertie Progression: BedRecipes data for the Mallet Work category. Pulled from its GitHub
-    // Release (see the ivy repo above). This used to read the sibling project's
-    // build/libs output directly, which meant the build only worked on a machine that
-    // had just built Bertie Progression by hand - CI could not compile this module at all.
+    // BedRecipes supplies the Mallet Work category.
     compileOnly("bertie-progression:bertie-progression:0.25.1")
 
     // Parent mods we only need for their JarJar-embedded libs (extracted by extractJarJarLibs, below):
@@ -186,6 +182,15 @@ dependencies {
 
     // The nested libs extracted above (produced before compileJava):
     compileOnly(fileTree(extractedLibsDir) { include("*.jar") }.builtBy(extractJarJarLibs))
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("maven.modrinth:emi:1.1.24+1.21.1+neoforge")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
