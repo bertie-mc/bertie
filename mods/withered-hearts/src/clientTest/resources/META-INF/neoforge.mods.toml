@@ -1,0 +1,16 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "Unlicense"
+
+[[mods]]
+modId = "witheredheartstest"
+version = "1"
+displayName = "Withered Hearts client tests"
+description = "Test-only assertions for Withered Hearts"
+
+[[dependencies.witheredheartstest]]
+modId = "witheredhearts"
+type = "required"
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "CLIENT"
