@@ -11,20 +11,20 @@ permissions:
 
 jobs:
   build:
-    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.5.0
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v3.6.0
 
   unit-test:
-    uses: bertie-mc/bertie-ci/.github/workflows/unit-test.yml@v3.5.0
+    uses: bertie-mc/bertie-ci/.github/workflows/unit-test.yml@v3.6.0
 
   client:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/client.yml@v3.5.0
+    uses: bertie-mc/bertie-ci/.github/workflows/client.yml@v3.6.0
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
       fixture: forbidden-arcanus
   server:
     needs: build
-    uses: bertie-mc/bertie-ci/.github/workflows/server.yml@v3.5.0
+    uses: bertie-mc/bertie-ci/.github/workflows/server.yml@v3.6.0
     with:
       artifact-name: ${{ needs.build.outputs.artifact-name }}
       fixture: forbidden-arcanus

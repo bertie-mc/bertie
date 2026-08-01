@@ -50,7 +50,7 @@ datapack resource folder in this project is `structure` (singular).
 The wrapper delegates to the pinned wrapper in the sibling `forge-ink` project:
 
 ```powershell
-.\gradlew.bat build
+gradle build
 ```
 
 Output:
