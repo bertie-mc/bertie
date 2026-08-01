@@ -1,6 +1,6 @@
 # Berlord's EMI Integration
 
-Native EMI recipe-viewer plugins (28 modules) for machine mods that only ship JEI plugins.
+Native EMI recipe-viewer plugins for third-party machine mods that only ship JEI plugins.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge

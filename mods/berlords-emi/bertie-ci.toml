@@ -4,7 +4,6 @@ kind = "neoforge-mod"
 gradle-project = ":mods:berlords-emi"
 mod-id = "berlords_emi"
 pack-metafile = "mods/berlords-emi.pw.toml"
-depends-on = ["bertie-progression"]
 
 [version]
 file = "mod.properties"

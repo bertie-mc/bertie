@@ -51,10 +51,6 @@ dependencies {
     compileOnly(libs.anvilcraft)
     compileOnly(libs.advanced.loot.info)
 
-    // BedRecipes supplies the Mallet Work category. The project dependency preserves
-    // compile ordering without packaging progression inside this mod.
-    compileOnly(project(":mods:bertie-progression"))
-
     add(jarJarParents.name, libs.anvilcraft)
     add(jarJarParents.name, libs.gensokyo.delight)
     add(jarJarParents.name, libs.terra.curio)

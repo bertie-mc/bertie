@@ -16,6 +16,7 @@ runner = "client"
 automatic = false
 timeout = 4800
 max-memory = "10G"
+require-log = ["Bertie Progression EMI integration registered"]
 
 [[suite]]
 id = "readiness"

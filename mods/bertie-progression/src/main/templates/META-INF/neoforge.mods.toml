@@ -23,6 +23,14 @@ versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
 
+# EMI discovers the built-in client plugin through @EmiEntrypoint when the viewer is installed.
+[[dependencies.${mod_id}]]
+modId="emi"
+type="optional"
+versionRange="[1.1.0,)"
+ordering="AFTER"
+side="CLIENT"
+
 [[dependencies.${mod_id}]]
 modId="slag"
 type="optional"
