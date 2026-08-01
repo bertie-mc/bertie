@@ -14,7 +14,7 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 This mod contains only original mixin code. It references the target mod's classes by name to patch its bush behavior — no code from *Berries & Cherries* is included.
 
 ## Building
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`gradle build` — the built JAR is written to `build/libs/`.
 
 ## License
 
