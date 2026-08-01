@@ -1,9 +1,8 @@
-"""Generate ANIMATED item textures for Berlord's Food System from vanilla baselines.
+"""Generate the shipped item textures from vanilla baselines and pixel definitions.
 
-Each item = 8 frames of 16x16, stacked into a 16x128 vertical strip + .png.mcmeta.
-Run:  python make_textures.py
-Outputs strips to out/ + copies into the mod's assets; also renders preview GIFs
-and per-item contact sheets to out/.
+Animated items use eight 16x16 frames in a vertical strip. The lunchbox is a
+single static frame. Generated assets are copied into the mod resources; local
+previews are written to the ignored ``out`` directory.
 """
 import json
 import math
