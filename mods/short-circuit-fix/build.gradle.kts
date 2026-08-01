@@ -1,4 +1,5 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.jvm.tasks.Jar
 
 plugins {
     `java-library`
@@ -34,6 +35,8 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+val clientTest = sourceSets.create("clientTest")
+
 neoForge {
     version = neo_version
 
@@ -57,6 +60,20 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    addModdingDependenciesTo(clientTest)
+}
+
+clientTest.compileClasspath += sourceSets.main.get().output
+clientTest.runtimeClasspath += sourceSets.main.get().output
+
+val clientTestJar = tasks.register<Jar>("clientTestJar") {
+    group = "verification"
+    description = "Build the test-only mod used by the headless client suite"
+    archiveFileName = "shortcircuitfix-client-tests.jar"
+    destinationDirectory = layout.buildDirectory.dir("test-libs")
+    from(clientTest.output)
+    dependsOn(tasks.named(clientTest.classesTaskName))
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
