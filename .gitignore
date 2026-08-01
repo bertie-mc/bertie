@@ -1,0 +1,11 @@
+.bertie-ci/
+.direnv/
+.gradle/
+.idea/
+**/build/
+**/run/
+**/runs/
+*.iml
+*.jar
+result
+result-*
