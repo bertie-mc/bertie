@@ -18,6 +18,12 @@ Use Conventional Commits.
   adapter around its commands.
 - Assertions and fixtures belong to the component they test.
 
+After every pack manifest change, run `packwiz refresh` and commit the resulting index
+with the change. Use exact project slugs when adding third-party mods, verify every
+metafile's side, and inspect the diff for accidental version changes. In-repository mods
+remain fixed release references: update their URL, filename, and hash deliberately rather
+than enabling a broad GitHub updater.
+
 `bertie-mod-atlas`, private planning/workspace repositories, the organisation `.github`
 repository, and `Nekos-Enchanted-Books` are separate projects. Update their references when
 paths or public procedures change, but do not copy their source here.

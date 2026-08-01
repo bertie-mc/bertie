@@ -54,12 +54,14 @@ and others). A Patchouli field guide documents the current progression in game.
 ## Building
 
 ```bash
-gradle build
+gradle :mods:bertie-progression:assemble
+gradle :mods:bertie-progression:test
 ```
 
-Requires **JDK 21**. The jar lands in `build/libs/`.
+Run these from the monorepo root inside `nix develop`. The JAR lands in
+`mods/bertie-progression/build/libs/`.
 
-`gradle test` validates every JSON resource and local model texture reference, the current Brick
+`gradle :mods:bertie-progression:test` validates every JSON resource and local model texture reference, the current Brick
 Forge bed table, and catalyst recipe remainder behavior.
 
 Toolchain is the shared bertie harness: NeoForge `21.1.217`, ModDevGradle `2.0.134`,
@@ -67,13 +69,15 @@ Gradle `8.14.4` from Nixpkgs.
 
 ## Releasing
 
-Bump `mod_version` in `gradle.properties`, then tag:
+Bump `mod_version` in `mod.properties`, commit it, and create a namespaced tag:
 
 ```bash
-git tag v0.25.2 && git push origin v0.25.2
+git tag -s bertie-progression/v0.25.3 -m "Release bertie-progression v0.25.3"
+git push origin bertie-progression/v0.25.3
 ```
 
-`release.yml` builds the jar and attaches it to a GitHub Release.
+The root release workflow builds the JAR and attaches it to a GitHub Release. Releases are
+manual; confirm the current commit's relevant CI jobs are green before tagging.
 
 ---
 

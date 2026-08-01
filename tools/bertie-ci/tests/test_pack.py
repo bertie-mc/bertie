@@ -1,11 +1,11 @@
 import os
+import subprocess
 from pathlib import Path
 from zipfile import ZipFile
 
-import pytest
-
 import bertie_ci.pack as pack_module
-from bertie_ci.pack import export_server_pack, validate_pack
+import pytest
+from bertie_ci.pack import export_server_pack, read_pack_mod, validate_pack
 
 
 def _pack(root: Path, second_filename: str | None = None) -> None:
@@ -84,6 +84,34 @@ def test_validate_pack_rejects_generated_state_in_index(
 
     with pytest.raises(RuntimeError, match="Generated bertie-ci state is indexed"):
         validate_pack(tmp_path, Path("packwiz"))
+
+
+def test_validate_pack_rejects_jar_tracked_from_monorepo_subdirectory(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    project = tmp_path / "pack"
+    project.mkdir()
+    _pack(project)
+    tracked_jar = project / "mods" / "forbidden.jar"
+    tracked_jar.touch()
+    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "add", "pack/mods/forbidden.jar"], cwd=tmp_path, check=True)
+    monkeypatch.setattr(pack_module, "run", lambda *args, **kwargs: None)
+
+    with pytest.raises(RuntimeError, match="Tracked mod JARs are forbidden"):
+        validate_pack(project, Path("packwiz"))
+
+
+def test_pack_mod_metadata_is_side_aware(tmp_path: Path) -> None:
+    _pack(tmp_path, "client-only.jar")
+
+    common = read_pack_mod(tmp_path, Path("mods/example.pw.toml"))
+    client_only = read_pack_mod(tmp_path, Path("mods/second.pw.toml"))
+
+    assert common.applies_to("client")
+    assert common.applies_to("server")
+    assert client_only.applies_to("client")
+    assert not client_only.applies_to("server")
 
 
 def test_export_server_pack_contains_manifest_not_mod_jars(tmp_path: Path) -> None:

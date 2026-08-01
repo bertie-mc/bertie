@@ -1,0 +1,18 @@
+format = "bertie-ci.component.v1"
+subject = "bertie-weapons"
+kind = "neoforge-mod"
+gradle-project = ":mods:bertie-weapons"
+mod-id = "bertie_weapons"
+pack-metafile = "mods/bertie-weapons.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"
+
+[[suite]]
+id = "gametest"
+runner = "gametest"

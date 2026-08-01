@@ -1,0 +1,17 @@
+name: Validate pack
+description: Refresh and inspect a packwiz component in a temporary copy
+
+inputs:
+  component:
+    description: Pack component subject
+    required: false
+    default: pack
+
+runs:
+  using: composite
+  steps:
+    - name: Validate pack
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+      run: bertie-ci pack-validate --workspace . --component "$BERTIE_COMPONENT"

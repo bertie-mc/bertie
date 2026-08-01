@@ -1,0 +1,14 @@
+format = "bertie-ci.component.v1"
+subject = "primitive-refined"
+kind = "neoforge-mod"
+gradle-project = ":mods:primitive-refined"
+mod-id = "primitive_refined"
+pack-metafile = "mods/primitive-refined.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"

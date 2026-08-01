@@ -1,0 +1,21 @@
+format = "bertie-ci.component.v1"
+subject = "berlords-emi"
+kind = "neoforge-mod"
+gradle-project = ":mods:berlords-emi"
+mod-id = "berlords_emi"
+pack-metafile = "mods/berlords-emi.pw.toml"
+depends-on = ["bertie-progression"]
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"
+
+[[suite]]
+id = "emi-registration"
+runner = "client"
+fixtures = ["emi", "forbidden-arcanus"]
+require-log = ["Berlords EMI integrations registered successfully"]

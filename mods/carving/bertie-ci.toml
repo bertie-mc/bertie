@@ -1,0 +1,24 @@
+format = "bertie-ci.component.v1"
+subject = "carving"
+kind = "neoforge-mod"
+gradle-project = ":mods:carving"
+mod-id = "berlords_carving"
+pack-metafile = "mods/carving.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"
+
+[[suite]]
+id = "gametest"
+runner = "gametest"
+
+[[suite]]
+id = "emi-registration"
+runner = "client"
+fixtures = ["emi", "slag-n-embers"]
+require-log = ["Registered 148 carving recipes with EMI"]

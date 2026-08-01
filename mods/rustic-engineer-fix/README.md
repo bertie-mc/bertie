@@ -7,14 +7,18 @@ Runtime patch that fixes *Rustic Engineer*'s airship and dragonfly flight — ch
 - **Requires:** the **Rustic Engineer** mod
 
 ## Install
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus Rustic Engineer.
+Existing binaries remain on the
+[legacy release page](https://github.com/bertie-mc/rustic-engineer-fix/releases). New
+releases use `rustic-engineer-fix/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1 and Rustic Engineer.
 
 ## Building
-`gradle build` — the built JAR is written to `build/libs/`.
+`gradle :mods:rustic-engineer-fix:assemble` builds the JAR without running the independent test suite.
 
 ## Tests
 
-`gradle test` loads the exact Rustic Engineer version in NeoForge's in-process test
+`gradle :mods:rustic-engineer-fix:test` loads the exact Rustic Engineer version in NeoForge's in-process test
 environment, verifies both foreign procedure classes received the expected injections,
 and covers the yaw and vertical-composition decisions without launching a client.
 

@@ -1,0 +1,58 @@
+name: Plan affected suites
+description: Convert the provider-neutral bertie-ci plan into job matrix outputs
+
+inputs:
+  base:
+    description: Base Git revision
+    required: false
+    default: ""
+  head:
+    description: Head Git revision
+    required: false
+    default: HEAD
+  component:
+    description: Optional component subject
+    required: false
+    default: ""
+  all:
+    description: Select every component
+    required: false
+    default: "false"
+  include-manual:
+    description: Include non-automatic suites
+    required: false
+    default: "false"
+
+outputs:
+  build:
+    description: Build matrix JSON
+    value: ${{ steps.plan.outputs.build }}
+  unit:
+    description: Unit-test matrix JSON
+    value: ${{ steps.plan.outputs.unit }}
+  gametest:
+    description: GameTest matrix JSON
+    value: ${{ steps.plan.outputs.gametest }}
+  client:
+    description: Client-suite matrix JSON
+    value: ${{ steps.plan.outputs.client }}
+  server:
+    description: Server-suite matrix JSON
+    value: ${{ steps.plan.outputs.server }}
+  validate:
+    description: Pack-validation matrix JSON
+    value: ${{ steps.plan.outputs.validate }}
+
+runs:
+  using: composite
+  steps:
+    - name: Resolve affected components
+      id: plan
+      shell: bash
+      env:
+        BERTIE_PLAN_BASE: ${{ inputs.base }}
+        BERTIE_PLAN_HEAD: ${{ inputs.head }}
+        BERTIE_PLAN_COMPONENT: ${{ inputs.component }}
+        BERTIE_PLAN_ALL: ${{ inputs.all }}
+        BERTIE_PLAN_INCLUDE_MANUAL: ${{ inputs.include-manual }}
+      run: python3 "$GITHUB_ACTION_PATH/run.py"

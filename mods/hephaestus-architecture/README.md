@@ -47,10 +47,10 @@ datapack resource folder in this project is `structure` (singular).
 
 ## Build and test
 
-```powershell
-gradle build
-gradle test
-gradle clientTestJar
+```bash
+gradle :mods:hephaestus-architecture:assemble
+gradle :mods:hephaestus-architecture:test
+gradle :mods:hephaestus-architecture:clientTestJar
 ```
 
 Output:

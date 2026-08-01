@@ -1,15 +1,8 @@
 name = "short-circuit-fix"
 filename = "shortcircuitfix-1.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://github.com/bertie-mc/short-circuit-fix/releases/download/v1.0.0/shortcircuitfix-1.0.0.jar"
 hash-format = "sha256"
 hash = "08e5697264f3e389ef66179f9a7fbb9178573369dd6b49833d50f0309cab77a8"
-
-[update]
-[update.github]
-branch = "main"
-regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
-slug = "bertie-mc/short-circuit-fix"
-tag = "v1.0.0"

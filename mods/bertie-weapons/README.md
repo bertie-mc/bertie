@@ -115,10 +115,10 @@ registry picks them up for free**.
 
 ## Verification
 
-`gradle test` — 8 unit tests over `TierState` (cap behaviour, ring closure, per-tier uniqueness,
+`gradle :mods:bertie-weapons:test` — 8 unit tests over `TierState` (cap behaviour, ring closure, per-tier uniqueness,
 track independence, and that growing the ring raises the cost without code changes).
 
-`gradle runGameTestServer` — 10 GameTests from the test-only `gameTest` source set against a
+`gradle :mods:bertie-weapons:runGameTestServer` — 10 GameTests from the test-only `gameTest` source set against a
 real server with Iron's and Simply Swords loaded. The test classes and `empty.nbt` fixture are
 excluded from releases. These cover the parts that only exist at runtime:
 

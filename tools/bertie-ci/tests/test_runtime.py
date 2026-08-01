@@ -1,13 +1,11 @@
-import json
 import os
 import stat
 import subprocess
 from contextlib import nullcontext
 from pathlib import Path
 
-import pytest
-
 import bertie_ci.runtime as runtime_module
+import pytest
 from bertie_ci.config import ClientRuntimeTools, ServerRuntimeTools, Versions
 from bertie_ci.instance import Instance
 from bertie_ci.runtime import (
@@ -17,7 +15,6 @@ from bertie_ci.runtime import (
     _install_test_mods,
     _reset_runtime,
     _set_options,
-    _write_server_readiness_test,
     run_client_test,
     run_server_test,
 )
@@ -133,30 +130,6 @@ def test_accept_minecraft_eula_avoids_preliminary_server_launch(
     assert (tmp_path / "eula.txt").read_text(encoding="utf-8").splitlines()[-1] == (
         "eula=true"
     )
-
-
-def test_server_readiness_test_does_not_require_clean_shutdown(
-    tmp_path: Path,
-) -> None:
-    test = json.loads(
-        _write_server_readiness_test(tmp_path, 4500).read_text(encoding="utf-8")
-    )
-
-    assert test["timeout"] == 4350
-    assert test["implicitWaitForEnd"] is False
-    assert [step["type"] for step in test["steps"]] == [
-        "ENDS_WITH",
-        "SEND",
-        "SUCCESS",
-    ]
-
-
-def test_server_readiness_timeout_keeps_cleanup_margin(tmp_path: Path) -> None:
-    test = json.loads(
-        _write_server_readiness_test(tmp_path, 120).read_text(encoding="utf-8")
-    )
-
-    assert test["timeout"] == 108
 
 
 def test_test_mod_injection_replaces_previous_extensions(tmp_path: Path) -> None:
@@ -301,10 +274,12 @@ def test_client_test_composes_project_extensions(
         )
 
 
-def test_server_test_defaults_to_readiness(
+def test_server_test_runs_project_owned_command_suite(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     context = _context(tmp_path, "server")
+    command_test = tmp_path / "server.json"
+    command_test.write_text('{"name":"project","steps":[]}', encoding="utf-8")
     invocations: list[list[str | Path]] = []
 
     def fake_run(command: list[str | Path], **kwargs: object) -> None:
@@ -315,16 +290,9 @@ def test_server_test_defaults_to_readiness(
 
     monkeypatch.setattr(runtime_module, "run", fake_run)
 
-    run_server_test(context, 300, "3G")
+    run_server_test(context, 300, "3G", command_test=command_test)
 
-    scenario = json.loads(
-        (context.work / "server-readiness-test.json").read_text(encoding="utf-8")
-    )
-    assert [step["type"] for step in scenario["steps"]] == [
-        "ENDS_WITH",
-        "SEND",
-        "SUCCESS",
-    ]
+    assert command_test.read_text(encoding="utf-8") == ('{"name":"project","steps":[]}')
     assert any("launch" in command for command in invocations)
 
 
@@ -332,6 +300,8 @@ def test_server_test_requires_explicit_success_record_on_zero_exit(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     context = _context(tmp_path, "server")
+    command_test = tmp_path / "server.json"
+    command_test.write_text('{"name":"project","steps":[]}', encoding="utf-8")
 
     def fake_run(_command: list[str | Path], **kwargs: object) -> None:
         log = kwargs.get("log")
@@ -341,7 +311,7 @@ def test_server_test_requires_explicit_success_record_on_zero_exit(
     monkeypatch.setattr(runtime_module, "run", fake_run)
 
     with pytest.raises(RuntimeError, match="did not report scenario success"):
-        run_server_test(context, 300, "3G")
+        run_server_test(context, 300, "3G", command_test=command_test)
 
 
 def test_server_test_composes_project_extensions(
@@ -415,6 +385,8 @@ def test_server_accepts_only_recorded_post_success_exit(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch, recorded: bool
 ) -> None:
     context = _context(tmp_path, "server")
+    command_test = tmp_path / "server.json"
+    command_test.write_text('{"name":"project","steps":[]}', encoding="utf-8")
 
     def fake_run(command: list[str | Path], **kwargs: object) -> None:
         if "launch" not in command:
@@ -430,7 +402,7 @@ def test_server_accepts_only_recorded_post_success_exit(
     monkeypatch.setattr(runtime_module, "run", fake_run)
 
     if recorded:
-        run_server_test(context, 300, "3G")
+        run_server_test(context, 300, "3G", command_test=command_test)
     else:
         with pytest.raises(subprocess.CalledProcessError):
-            run_server_test(context, 300, "3G")
+            run_server_test(context, 300, "3G", command_test=command_test)

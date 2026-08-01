@@ -1,0 +1,14 @@
+format = "bertie-ci.component.v1"
+subject = "bertie-progression"
+kind = "neoforge-mod"
+gradle-project = ":mods:bertie-progression"
+mod-id = "bertie_progression"
+pack-metafile = "mods/bertie-progression.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"

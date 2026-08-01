@@ -1,0 +1,14 @@
+format = "bertie-ci.component.v1"
+subject = "bush-tweaks"
+kind = "neoforge-mod"
+gradle-project = ":mods:bush-tweaks"
+mod-id = "bushtweaks"
+pack-metafile = "mods/bush-tweaks.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"

@@ -3,11 +3,12 @@ from __future__ import annotations
 import shutil
 import subprocess
 import tempfile
-import tomllib
 import zipfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
+
+import tomllib
 
 from .instance import read_pack_versions
 from .process import run
@@ -20,6 +21,18 @@ class PackSummary:
     server: int
     both: int
     config_files: int
+
+
+PackSide = Literal["client", "server", "both"]
+
+
+@dataclass(frozen=True)
+class PackMod:
+    filename: str
+    side: PackSide
+
+    def applies_to(self, side: Literal["client", "server"]) -> bool:
+        return self.side == "both" or self.side == side
 
 
 def _toml(path: Path) -> dict[str, Any]:
@@ -74,8 +87,34 @@ def indexed_files(project: Path) -> list[tuple[Path, bool]]:
     return result
 
 
+def read_pack_mod(project: Path, relative: Path) -> PackMod:
+    path = _relative_file(project, relative.as_posix(), "pack metafile")
+    metadata = _toml(path)
+    filename = metadata.get("filename")
+    if not isinstance(filename, str) or not filename or Path(filename).name != filename:
+        raise RuntimeError(
+            f"Invalid download filename in {path.relative_to(project.resolve())}"
+        )
+    side = metadata.get("side")
+    if side not in ("client", "server", "both"):
+        raise RuntimeError(
+            "Metafile must declare side as client, server, or both: "
+            f"{path.relative_to(project.resolve())}"
+        )
+    return PackMod(filename, side)
+
+
 def _tracked_jars(project: Path) -> list[str]:
-    if not (project / ".git").exists() and not (project / ".git").is_file():
+    repository = subprocess.run(
+        ["git", "rev-parse", "--show-toplevel"],
+        cwd=project,
+        check=False,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    if repository.returncode != 0:
         return []
     result = subprocess.run(
         ["git", "ls-files", "--", "*.jar"],
@@ -133,19 +172,9 @@ def validate_pack(project: Path, packwiz: Path) -> PackSummary:
                 raise RuntimeError(f"Indexed mod JAR is forbidden: {relative}")
             continue
         metafiles += 1
-        metadata = _toml(path)
-        side = metadata.get("side")
-        if side not in sides:
-            raise RuntimeError(
-                f"Metafile must declare side as client, server, or both: {path.relative_to(project)}"
-            )
-        sides[side] += 1
-        filename = metadata.get("filename")
-        if not isinstance(filename, str) or not filename:
-            raise RuntimeError(
-                f"Metafile has no download filename: {path.relative_to(project)}"
-            )
-        filenames.setdefault(filename.casefold(), []).append(
+        metadata = read_pack_mod(project, path.relative_to(project))
+        sides[metadata.side] += 1
+        filenames.setdefault(metadata.filename.casefold(), []).append(
             path.relative_to(project).as_posix()
         )
 

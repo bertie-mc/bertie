@@ -1,0 +1,179 @@
+name: Release component
+
+on:
+  push:
+    tags:
+      - "*/v*.*.*"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    name: Validate release tag
+    runs-on: ubuntu-latest
+    outputs:
+      subject: ${{ steps.plan.outputs.subject }}
+      version: ${{ steps.plan.outputs.version }}
+      kind: ${{ steps.plan.outputs.kind }}
+      project: ${{ steps.plan.outputs.project }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Plan release
+        id: plan
+        uses: ./.github/actions/release-plan
+        with:
+          tag: ${{ github.ref_name }}
+
+  build-mod:
+    name: Build ${{ needs.plan.outputs.subject }}
+    needs: plan
+    if: needs.plan.outputs.kind == 'neoforge-mod'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Build mod
+        uses: ./.github/actions/build-mod
+        with:
+          component: ${{ needs.plan.outputs.subject }}
+
+      - name: Upload built mod
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: release-mod-${{ github.sha }}
+          path: .bertie-ci/artifacts/${{ needs.plan.outputs.subject }}/*.jar
+          if-no-files-found: error
+
+  publish-mod:
+    name: Publish ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
+    needs: [plan, build-mod]
+    if: needs.plan.outputs.kind == 'neoforge-mod'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Download built mod
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: release-mod-${{ github.sha }}
+          path: .bertie-ci/release
+
+      - name: Create GitHub release
+        uses: ./.github/actions/github-release
+        with:
+          files: .bertie-ci/release/*.jar
+          name: ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
+          body: Release of `${{ needs.plan.outputs.subject }}` v${{ needs.plan.outputs.version }}.
+
+  export-pack-client:
+    name: Export client pack
+    needs: plan
+    if: needs.plan.outputs.kind == 'pack'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Export client pack
+        uses: ./.github/actions/pack-export-client
+        with:
+          component: ${{ needs.plan.outputs.subject }}
+          output: .bertie-ci/release/bertie-pack-${{ needs.plan.outputs.version }}.mrpack
+
+      - name: Upload client pack
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: release-pack-client-${{ github.sha }}
+          path: .bertie-ci/release/*.mrpack
+          if-no-files-found: error
+
+  export-pack-server:
+    name: Export server pack
+    needs: plan
+    if: needs.plan.outputs.kind == 'pack'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Export server pack
+        uses: ./.github/actions/pack-export-server
+        with:
+          component: ${{ needs.plan.outputs.subject }}
+          output: .bertie-ci/release/bertie-server-${{ needs.plan.outputs.version }}.zip
+
+      - name: Upload server pack
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: release-pack-server-${{ github.sha }}
+          path: .bertie-ci/release/*.zip
+          if-no-files-found: error
+
+  publish-pack:
+    name: Publish pack v${{ needs.plan.outputs.version }}
+    needs: [plan, export-pack-client, export-pack-server]
+    if: needs.plan.outputs.kind == 'pack'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Download pack files
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: release-pack-*-${{ github.sha }}
+          path: .bertie-ci/release
+          merge-multiple: true
+
+      - name: Create GitHub release
+        uses: ./.github/actions/github-release
+        with:
+          files: |
+            .bertie-ci/release/*.mrpack
+            .bertie-ci/release/*.zip
+          name: Bertie pack v${{ needs.plan.outputs.version }}
+          body: Release of the Bertie modpack v${{ needs.plan.outputs.version }}.
+
+  publish-tool:
+    name: Publish ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
+    needs: plan
+    if: needs.plan.outputs.kind == 'tool'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Create source-only GitHub release
+        uses: ./.github/actions/github-release
+        with:
+          name: ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
+          body: Release of `${{ needs.plan.outputs.subject }}` v${{ needs.plan.outputs.version }}.

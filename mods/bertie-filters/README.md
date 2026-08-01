@@ -8,14 +8,19 @@ Adds an FTB Filter System custom filter (`bertie:wooden`) that matches wooden-ma
 - **Requires:** FTB Filter System, Slag 'n' Embers
 
 ## Install
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus the deps above.
+Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/bertie-filters/releases).
+New releases use `bertie-filters/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1 and the dependencies above.
 
 ## Building
-`gradle build` — the built JAR is written to `build/libs/`. Dependencies (FTB Filter System, Architectury, Slag 'n' Embers) resolve from Modrinth / Architectury / FTB mavens at build time.
+`gradle :mods:bertie-filters:assemble` builds the JAR without running tests. Dependencies (FTB Filter System,
+Architectury, Slag 'n' Embers) resolve from Modrinth, Architectury, and FTB Maven
+repositories.
 
 ## Tests
 
-`gradle test` runs the fast filter-policy suite. It covers exact event routing, requested
+`gradle :mods:bertie-filters:test` runs the fast filter-policy suite. It covers exact event routing, requested
 modular types, mixed-material tools, and rejection of missing or non-wooden parts without
 launching Minecraft.
 

@@ -82,11 +82,11 @@ The project uses Java 21, Gradle 8.14.4 from the shared Nix environment, NeoForg
 21.1.233, ModDevGradle 2.0.134, Minecraft 1.21.1, Create 6.0.10 and Refined Storage 2.0.9.
 There is intentionally no Gradle wrapper.
 
-From a shell containing the shared toolchain:
+From the monorepo root inside `nix develop`:
 
 ```bash
-bertie-ci build --project . --output-dir .bertie-ci/artifact
-bertie-ci unit-test --project .
+bertie-ci build --component primitive-refined --output-dir .bertie-ci/artifact
+bertie-ci unit-test --component primitive-refined
 ```
 
 The unit suite covers the External Reader’s multi-provider storage semantics and its scan

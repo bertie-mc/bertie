@@ -8,7 +8,11 @@ A Valheim-style food system: 1-5 stomach slots, per-food buffs and abilities, a 
 
 ## Install
 
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1.
+Existing binaries remain on the
+[legacy release page](https://github.com/bertie-mc/berlords-food-system/releases). New
+releases use `berlords-food-system/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Credits / Integration
 
@@ -18,9 +22,10 @@ Optional integration with Sophisticated Backpacks (slot-aware feeding upgrades).
 
 ## Building
 
-`gradle build` — the built JAR is written to `build/libs/`. `sophisticated-core` (needed for the optional Sophisticated Backpacks integration) resolves from Modrinth's maven at build time.
+`gradle :mods:berlords-food-system:assemble` builds the JAR without running tests. `sophisticated-core`, used by the
+optional Sophisticated Backpacks integration, resolves from Modrinth's Maven repository.
 
-`gradle test` covers stomach state and buff configuration. CI also loads the real Sophisticated
+`gradle :mods:berlords-food-system:test` covers stomach state and buff configuration. CI also loads the real Sophisticated
 Backpacks integration in a headless client, verifies every mixin target, and joins a world.
 
 ## License

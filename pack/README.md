@@ -1,149 +1,132 @@
-# bertie
+# Bertie modpack
 
-An exploration, technology and magic modpack for **NeoForge 1.21.1**.
-
-**About 500 mods.** Managed with [packwiz](https://packwiz.infra.link/).
-
----
+An exploration, technology, and magic modpack for Minecraft 1.21.1 on NeoForge. The
+roughly 500-mod manifest is managed with
+[packwiz](https://packwiz.infra.link/).
 
 ## Installing
 
-### Client
+New client and server exports are published on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases) under
+`pack/vX.Y.Z` tags. Releases made before the monorepo migration remain on the
+[legacy release page](https://github.com/bertie-mc/bertie-pack/releases).
 
-Download `bertie-<version>.mrpack` from the [Releases page](../../releases) and import it
-with a launcher that understands the Modrinth pack format — [Prism
-Launcher](https://prismlauncher.org/), the Modrinth App, or ATLauncher.
+For a client, download `bertie-pack-<version>.mrpack` and import it with Prism
+Launcher, the Modrinth App, or another launcher that supports Modrinth packs. Allocate
+8–12 GB of RAM.
 
-Allocate **8–12 GB** of RAM. This is a large pack; 4 GB will not boot it comfortably.
-
-### Server
-
-Download `bertie-server-<version>.zip` from the Releases page, unzip it, and run the
-included start script. It ships the server-side mods, the configs, and a NeoForge
-installer step — you supply Java **21**.
+For a server, download `bertie-server-<version>.zip`, extract it, and supply Java 21:
 
 ```bash
-unzip bertie-server-<version>.zip -d bertie-server
-cd bertie-server
-./start.sh          # start.bat on Windows
+unzip bertie-server-<version>.zip
+cd bertie-server-<version>
+./start.sh
 ```
 
-Accept the EULA in `eula.txt` on first run.
+The archive intentionally contains no third-party mod JARs. Its pack manifest and
+installer download the server-side files on first run. Accept the Minecraft EULA in
+`eula.txt` before starting the server.
 
----
+## Developing the manifest
 
-## Developing the pack
-
-You need the [packwiz CLI](https://packwiz.infra.link/installation/) on your PATH.
+From the monorepo root, `nix develop` supplies the pinned packwiz and test tools.
 
 ```bash
-packwiz modrinth add <slug>          # add a Modrinth mod
-packwiz curseforge add <slug>        # add a CurseForge mod
-packwiz github add bertie-mc/<repo>  # add one of bertie's own mods
-packwiz update --all                 # update everything not pinned
-packwiz refresh                      # rebuild index.toml — run after ANY change
+nix develop
+packwiz --help
 ```
 
-**Always `packwiz refresh` and commit `index.toml` together with whatever you changed.**
-An index whose hashes do not match the tree is worse than no index at all.
+Third-party mods are ordinary packwiz entries:
 
-### bertie's own mods come from GitHub Releases
+```bash
+cd pack
+packwiz modrinth add <exact-slug>
+packwiz curseforge add <exact-slug>
+packwiz refresh
+```
 
-The mods written for this pack live in their own repositories under
-[`bertie-mc`](https://github.com/bertie-mc) and are consumed here as tagged releases:
+Use exact slugs, verify the generated `side`, and inspect the diff for unrelated version
+changes. Always commit `index.toml` and `pack.toml` with the manifest files they index.
+The FTB family is a tested compatibility set; in particular, `ftb-xmod-compat` remains
+pinned to 21.1.8 because newer builds require newer FTB Library and Quests versions than
+this pack currently uses.
 
-| Mod | Repo |
-|---|---|
-| `bertie_progression` | [bertie-progression](https://github.com/bertie-mc/bertie-progression) — the pack's progression mod |
-| `berlords_carving` | [carving](https://github.com/bertie-mc/carving) |
-| `berlords_emi` | [berlords-emi](https://github.com/bertie-mc/berlords-emi) |
-| `bertie_filters` | [bertie-filters](https://github.com/bertie-mc/bertie-filters) |
-| `bertie_weapons` | [bertie-weapons](https://github.com/bertie-mc/bertie-weapons) |
-| `bertie_blackhole` | [bertie-blackhole](https://github.com/bertie-mc/bertie-blackhole) |
-| `forgeink` | [forge-ink](https://github.com/bertie-mc/forge-ink) |
-| `hephaestusarchitecture` | [hephaestus-architecture](https://github.com/bertie-mc/hephaestus-architecture) |
-| `fdshaderfix` | [fd-shader-fix](https://github.com/bertie-mc/fd-shader-fix) |
-| `frozenregfix` | [frozen-reg-fix](https://github.com/bertie-mc/frozen-reg-fix) |
+### Bertie-owned mods
 
-**Never drop a built jar into `mods/`.** Release it from its own repo and
-`packwiz github add` it. A loose jar and a metafile can resolve to the same filename,
-which makes the index list one path twice and installs two versions of the same mod.
+Owned mod source lives in [`../mods`](../mods). The pack consumes released JARs through
+fixed URL, filename, and SHA-256 metadata. There is deliberately no monorepo-wide packwiz
+GitHub updater.
 
-### Known-raw content
+After releasing an owned mod:
 
-Shipped, but not finished. Treat their behaviour as provisional:
+1. Copy the release asset URL and filename into its `mods/<subject>.pw.toml`.
+2. Calculate and update the exact SHA-256 hash.
+3. Keep the physical `side` unchanged unless the mod itself changed sides.
+4. Run `packwiz refresh` and review the complete diff.
 
-| Mod | Status |
-|---|---|
-| `explodetomine` ([explode-to-mine](https://github.com/bertie-mc/explode-to-mine)) | **Raw.** In the pack, but the ore/explosion balance still needs work. Its behaviour is not final. |
+Never place a built JAR in `pack/mods`. Local full-pack tests overlay current workspace
+artifacts only inside ignored, ephemeral test instances; those artifacts are not manifest
+inputs.
 
-Deliberately **not** in the pack:
+`explode-to-mine` is shipped but its explosion and ore balance remains provisional.
+`Nekos-Enchanted-Books` is intentionally not included.
 
-| Mod | Why |
-|---|---|
-| `nebs` ([Nekos-Enchanted-Books](https://github.com/bertie-mc/Nekos-Enchanted-Books)) | Too work-in-progress to ship. |
+## Validation and integration tests
 
-### Pinned versions — do not "update" these
+The project-owned suites are declared in [`bertie-ci.toml`](bertie-ci.toml):
 
-| Mod | Pin | Why |
-|---|---|---|
-| `ftb-xmod-compat` | **21.1.8** | Newer builds require `ftblibrary` ≥ 2101.1.34 and `ftbquests` ≥ 2101.1.28, which this pack does not run. 21.1.9/21.1.10 fail server boot. Known issue; 21.1.8 is the stable combination. |
+- `manifest` checks that packwiz hashes are current, sides and filenames are valid, and
+  no JAR is tracked.
+- `world-join` installs the client pack, overlays current monorepo mod builds, and joins
+  an integrated world under Xvfb.
+- `readiness` installs the server pack, overlays only server-applicable workspace mods,
+  and runs the command scenario in
+  [`tests/runtime/server-readiness.json`](tests/runtime/server-readiness.json).
 
-The whole **FTB family** — `ftb-library` 2101.1.32, `ftb-quests` 2101.1.26, `ftb-teams`
-2101.1.10, `ftb-xmod-compat` 21.1.8, `ftb-filter-system` 21.1.4 — matches the development
-instance where current quest and progression work is authored. These versions
-are the tested compatible set. Do not bump one in isolation.
+The same provider-neutral commands run locally:
 
----
+```bash
+bertie-ci pack-validate --workspace . --component pack
+bertie-ci build --workspace . --all-mods --output-dir .bertie-ci/artifacts
+bertie-ci prepare-pack-instance --workspace . --component pack \
+  --side server --output-dir .bertie-ci/pack-server
+bertie-ci overlay-components --workspace . --all-mods \
+  --instance .bertie-ci/pack-server/instance.json \
+  --artifact-dir .bertie-ci/artifacts --pack-component pack
+bertie-ci server-test --instance .bertie-ci/pack-server/instance.json \
+  --command-test pack/tests/runtime/server-readiness.json
+```
 
-## CI
+GitHub Actions provides thin adapters:
 
-| Workflow | When | What it does |
-|---|---|---|
-| `validate.yml` | every push and PR | index is current, target filenames are unique, every metafile has a `side`, and no JAR is tracked |
-| `server-boot.yml` | nightly or manual | prepares the server-side pack and requires a headless dedicated server to reach readiness |
-| `client-boot.yml` | nightly or manual | prepares the client-side pack and requires a headless client to join an integrated world |
-| `release.yml` | tag `v*` or manual | independently exports the client `.mrpack` and no-mod-JAR server zip; tags publish both |
+- `check.yml` validates the manifest on relevant changes.
+- `pack-client.yml` runs the full client suite nightly or on manual dispatch.
+- `pack-server.yml` runs the full server suite nightly or on manual dispatch.
+- `release.yml` independently exports the client and server artifacts.
 
-A green `validate` means the pack manifest is internally consistent. Preparing each
-runtime resolves and verifies that side's downloads before launch. A green `server-boot`
-means the complete server half actually starts; a green `client-boot` means the complete
-client half loaded resources, created an integrated server, generated a world, and joined
-it. Together the two runtime suites cover installation and side-specific composition.
-
----
+The full runtime suites are intentionally not automatic merge gates because this pack is
+large. Before releasing, manually run both against the exact commit and confirm their
+results.
 
 ## Releasing
 
-Before tagging, manually dispatch both runtime workflows for the exact commit being
-released and confirm that Client world join and Server readiness are green for that SHA.
+Bump `version` in `pack.toml`, refresh the manifest, commit, and confirm the required
+pipelines for that commit. With SSH signing configured:
 
 ```bash
-# bump `version` in pack.toml, commit, then:
-git tag -a v0.2.0 -m "Release v0.2.0"
-git push origin v0.2.0
+git tag -s pack/v0.2.0 -m "Release pack v0.2.0"
+git push origin pack/v0.2.0
 ```
 
-`release.yml` composes the shared client and server exporters, then publishes their
-artifacts without duplicating either export recipe.
+The tag must match `pack/vX.Y.Z` exactly and its version must equal `pack.toml`.
 
----
+## Versions and licensing
 
-## Versions
+- Minecraft 1.21.1
+- NeoForge 21.1.233
+- Java 21
 
-| | |
-|---|---|
-| Minecraft | 1.21.1 |
-| NeoForge | 21.1.233 |
-| Java | 21 |
-
----
-
-## Licence
-
-The pack manifest, configs and quest data in this repository are dedicated to the public
-domain under [The Unlicense](UNLICENSE).
-
-**This repository contains no mod jars.** Every mod is downloaded at install time from
-Modrinth, CurseForge, or its own GitHub Release, and each remains under its own author's
-licence. See [NOTICE](NOTICE).
+The pack manifest, configs, and quest data are dedicated to the public domain under
+[The Unlicense](UNLICENSE). The source tree contains no mod JARs. Client exports may
+embed third-party mods that the Modrinth pack format cannot reference by URL; every mod
+retains its author's licence. Review the export log and [NOTICE](NOTICE) before publishing.

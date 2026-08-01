@@ -3,8 +3,9 @@ from __future__ import annotations
 import hashlib
 import json
 import shutil
-import tomllib
 from pathlib import Path
+
+import tomllib
 
 from .config import FixtureTools, Versions
 from .process import run
@@ -201,7 +202,7 @@ def install_fixtures(
         return
     if tools.fixture_pack is None:
         raise RuntimeError(
-            "Canonical bertie-pack checkout is unavailable; set "
+            "Canonical fixture pack is unavailable; set "
             "BERTIE_CI_FIXTURE_PACK or run through the Nix flake"
         )
     pack = build_fixture_pack(

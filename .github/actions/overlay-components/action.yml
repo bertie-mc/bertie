@@ -1,0 +1,28 @@
+name: Overlay component artifacts
+description: Replace a prepared pack's published mods with current-source artifacts
+
+inputs:
+  instance:
+    description: Prepared instance descriptor
+    required: true
+  artifact-dir:
+    description: Root containing one subject directory per built mod
+    required: true
+  pack-component:
+    description: Pack component subject
+    required: false
+    default: pack
+
+runs:
+  using: composite
+  steps:
+    - name: Overlay all workspace mods
+      shell: bash
+      env:
+        BERTIE_INSTANCE: ${{ inputs.instance }}
+        BERTIE_ARTIFACT_DIR: ${{ inputs.artifact-dir }}
+        BERTIE_PACK_COMPONENT: ${{ inputs.pack-component }}
+      run: >-
+        bertie-ci overlay-components --workspace . --all-mods
+        --instance "$BERTIE_INSTANCE" --artifact-dir "$BERTIE_ARTIFACT_DIR"
+        --pack-component "$BERTIE_PACK_COMPONENT"

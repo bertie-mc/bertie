@@ -9,6 +9,12 @@ from .artifact import find_artifact, stage_artifact
 from .process import run
 
 
+def task_path(gradle_project: str | None, task: str) -> str:
+    if gradle_project is None:
+        return task
+    return f"{gradle_project.rstrip(':')}:{task}"
+
+
 def run_gradle(
     project: Path,
     java_home: Path,
@@ -32,30 +38,67 @@ def run_gradle(
     )
 
 
-def assemble_mod(project: Path, java_home: Path) -> None:
-    run_gradle(project, java_home, ["assemble"])
+def assemble_mod(
+    project: Path,
+    java_home: Path,
+    *,
+    gradle_root: Path | None = None,
+    gradle_project: str | None = None,
+) -> None:
+    run_gradle(
+        gradle_root or project,
+        java_home,
+        [task_path(gradle_project, "assemble")],
+    )
 
 
-def assemble_client_test_mod(project: Path, java_home: Path, output_dir: Path) -> Path:
+def assemble_client_test_mod(
+    project: Path,
+    java_home: Path,
+    output_dir: Path,
+    *,
+    gradle_root: Path | None = None,
+    gradle_project: str | None = None,
+) -> Path:
     """Build and stage the conventional clientTest test-only mod."""
-    run_gradle(project, java_home, ["clientTestJar"])
+    run_gradle(
+        gradle_root or project,
+        java_home,
+        [task_path(gradle_project, "clientTestJar")],
+    )
     artifact = find_artifact(project, Path("build/test-libs"))
     return stage_artifact(artifact, output_dir, "client-test-mod.jar")
 
 
-def run_unit_tests(project: Path, java_home: Path) -> None:
-    run_gradle(project, java_home, ["test"])
+def run_unit_tests(
+    project: Path,
+    java_home: Path,
+    *,
+    gradle_root: Path | None = None,
+    gradle_project: str | None = None,
+) -> None:
+    run_gradle(
+        gradle_root or project,
+        java_home,
+        [task_path(gradle_project, "test")],
+    )
 
 
 def run_gametests(
-    project: Path, java_home: Path, work: Path, timeout_seconds: int
+    project: Path,
+    java_home: Path,
+    work: Path,
+    timeout_seconds: int,
+    *,
+    gradle_root: Path | None = None,
+    gradle_project: str | None = None,
 ) -> int:
     work.mkdir(parents=True, exist_ok=True)
     log = work / "gametest.log"
     run_gradle(
-        project,
+        gradle_root or project,
         java_home,
-        ["runGameTestServer"],
+        [task_path(gradle_project, "runGameTestServer")],
         log=log,
         timeout_seconds=timeout_seconds,
     )

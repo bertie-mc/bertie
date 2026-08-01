@@ -1,0 +1,55 @@
+name: Build NeoForge mod
+description: Build and stage a releaseable component JAR
+
+inputs:
+  component:
+    description: Workspace component subject; omit for a standalone checkout
+    required: false
+    default: ""
+  all-mods:
+    description: Build every mod component
+    required: false
+    default: "false"
+  project:
+    description: Standalone mod checkout
+    required: false
+    default: .
+  artifact-dir:
+    description: Artifact directory
+    required: false
+    default: .bertie-ci/artifacts
+
+outputs:
+  artifact-dir:
+    description: Directory containing staged releaseable JARs
+    value: ${{ inputs.artifact-dir }}
+
+runs:
+  using: composite
+  steps:
+    - name: Build workspace component
+      if: inputs.component != '' && inputs.all-mods != 'true'
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+        BERTIE_ARTIFACT_DIR: ${{ inputs.artifact-dir }}
+      run: >-
+        bertie-ci build --workspace . --component "$BERTIE_COMPONENT"
+        --output-dir "$BERTIE_ARTIFACT_DIR"
+    - name: Build every workspace mod
+      if: inputs.all-mods == 'true'
+      shell: bash
+      env:
+        BERTIE_ARTIFACT_DIR: ${{ inputs.artifact-dir }}
+      run: >-
+        bertie-ci build --workspace . --all-mods
+        --output-dir "$BERTIE_ARTIFACT_DIR"
+    - name: Build standalone mod
+      if: inputs.component == '' && inputs.all-mods != 'true'
+      shell: bash
+      env:
+        BERTIE_PROJECT: ${{ inputs.project }}
+        BERTIE_ARTIFACT_DIR: ${{ inputs.artifact-dir }}
+      run: >-
+        bertie-ci build --project "$BERTIE_PROJECT"
+        --output-dir "$BERTIE_ARTIFACT_DIR"

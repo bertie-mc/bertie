@@ -1,0 +1,11 @@
+# Keep indexed text byte-identical across platforms. This is particularly important for
+# packwiz, whose index records hashes of the checked-in files.
+* text=auto eol=lf
+
+# Binary assets and release archives must never be line-ending normalized.
+*.jar binary
+*.mrpack binary
+*.nbt binary
+*.ogg binary
+*.png binary
+*.zip binary

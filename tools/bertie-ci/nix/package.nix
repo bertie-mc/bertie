@@ -4,6 +4,7 @@
   fetchurl,
   bash,
   coreutils,
+  git,
   gradle_8,
   jdk21,
   mesa-demos,
@@ -44,6 +45,7 @@ let
   runtimePath = lib.makeBinPath [
     bash
     coreutils
+    git
     gradle_8
     jdk21
     mesa-demos
@@ -87,8 +89,11 @@ python3Packages.buildPythonApplication {
 
   build-system = [ python3Packages.setuptools ];
 
-  nativeCheckInputs = [ python3Packages.pytestCheckHook ];
-  env.BERTIE_CI_FIXTURE_PACK = bertie-pack;
+  nativeCheckInputs = [
+    git
+    python3Packages.pytestCheckHook
+  ];
+  env.BERTIE_CI_FIXTURE_PACK = "${bertie-pack}";
 
   __structuredAttrs = true;
   makeWrapperArgs = [
@@ -145,7 +150,7 @@ python3Packages.buildPythonApplication {
 
   meta = {
     description = pyproject.project.description;
-    homepage = "https://github.com/bertie-mc/bertie-ci";
+    homepage = "https://github.com/bertie-mc/bertie/tree/main/tools/bertie-ci";
     license = lib.licenses.unlicense;
     mainProgram = "bertie-ci";
     platforms = lib.platforms.linux;

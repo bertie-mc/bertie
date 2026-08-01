@@ -135,6 +135,6 @@ never bundled.
 
 ## Tests
 
-`gradle test` covers config parsing, validation, cumulative exchanges, and NBT persistence.
-`gradle clientTestJar` builds a test-only mod that verifies every F&A mixin target in a headless
+`gradle :mods:bertie-blackhole:test` covers config parsing, validation, cumulative exchanges, and NBT persistence.
+`gradle :mods:bertie-blackhole:clientTestJar` builds a test-only mod that verifies every F&A mixin target in a headless
 client; it is excluded from releases.

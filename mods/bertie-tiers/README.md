@@ -215,14 +215,20 @@ Stated plainly rather than claimed away.
 ## Building
 
 ```bash
-gradle build
+gradle :mods:bertie-tiers:assemble
 ```
 
-Runs the JUnit suite (30 tests: the decision order, the JSON predicate, every validation rule, and the
-shipped config validated both with and without Slag).
+Builds the release JAR without running tests. Run the JUnit suite independently:
 
 ```bash
-gradle runGameTestServer
+gradle :mods:bertie-tiers:test
+```
+
+Its 30 tests cover the decision order, the JSON predicate, every validation rule, and the
+shipped config both with and without Slag.
+
+```bash
+gradle :mods:bertie-tiers:runGameTestServer
 ```
 
 Boots a headless dedicated server and runs 14 GameTests from the test-only `gameTest`

@@ -1,0 +1,14 @@
+format = "bertie-ci.component.v1"
+subject = "bertie-filters"
+kind = "neoforge-mod"
+gradle-project = ":mods:bertie-filters"
+mod-id = "bertie_filters"
+pack-metafile = "mods/bertie-filters.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"

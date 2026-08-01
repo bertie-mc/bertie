@@ -6,10 +6,3 @@ side = "both"
 url = "https://github.com/bertie-mc/bertie-blackhole/releases/download/v0.3.0/bertie_blackhole-0.3.0.jar"
 hash-format = "sha256"
 hash = "6ba581de1209c4190206bfbf746387e16ada179ec57d1299477eea7169f229b0"
-
-[update]
-[update.github]
-branch = "main"
-regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
-slug = "bertie-mc/bertie-blackhole"
-tag = "v0.3.0"

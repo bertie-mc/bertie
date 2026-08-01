@@ -1,0 +1,45 @@
+name: NeoForge GameTests
+
+on:
+  workflow_call:
+    inputs:
+      component:
+        description: Component subject declared by the caller's root bertie-ci.toml
+        required: true
+        type: string
+      timeout:
+        description: GameTest timeout in seconds
+        required: false
+        type: number
+        default: 900
+
+permissions:
+  contents: read
+
+jobs:
+  gametest:
+    name: GameTest / ${{ inputs.component }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: bertie-mc/bertie/.github/actions/setup@bertie-ci/v5.0.0
+
+      - name: Run GameTests
+        uses: bertie-mc/bertie/.github/actions/gametest@bertie-ci/v5.0.0
+        with:
+          component: ${{ inputs.component }}
+          work-dir: .bertie-ci/gametest
+          timeout: ${{ inputs.timeout }}
+
+      - name: Upload GameTest log
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: gametest-${{ inputs.component }}-${{ github.sha }}
+          path: .bertie-ci/gametest/gametest.log
+          if-no-files-found: warn
+          retention-days: 14

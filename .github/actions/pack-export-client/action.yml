@@ -1,0 +1,23 @@
+name: Export client pack
+description: Export a packwiz component as a Modrinth pack
+
+inputs:
+  component:
+    description: Pack component subject
+    required: false
+    default: pack
+  output:
+    description: Output .mrpack path
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Export client pack
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+        BERTIE_OUTPUT: ${{ inputs.output }}
+      run: >-
+        bertie-ci pack-export-client --workspace . --component "$BERTIE_COMPONENT"
+        --output "$BERTIE_OUTPUT"

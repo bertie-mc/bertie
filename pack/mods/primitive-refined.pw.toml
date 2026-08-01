@@ -6,10 +6,3 @@ side = "both"
 url = "https://github.com/bertie-mc/primitive-refined/releases/download/v0.2.4/primitive_refined-0.2.4.jar"
 hash-format = "sha256"
 hash = "cc17ae55352e034a0ab73065a61e2e52e10dbc57c6d97c94323d940892fe3606"
-
-[update]
-[update.github]
-branch = "main"
-regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
-slug = "bertie-mc/primitive-refined"
-tag = "v0.2.4"

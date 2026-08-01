@@ -1,0 +1,31 @@
+name: Plan component release
+description: Validate a subject/vX.Y.Z tag and expose its component metadata
+
+inputs:
+  tag:
+    description: Release tag
+    required: true
+
+outputs:
+  subject:
+    description: Component subject
+    value: ${{ steps.plan.outputs.subject }}
+  version:
+    description: Exact component version
+    value: ${{ steps.plan.outputs.version }}
+  kind:
+    description: Component kind
+    value: ${{ steps.plan.outputs.kind }}
+  project:
+    description: Component project directory
+    value: ${{ steps.plan.outputs.project }}
+
+runs:
+  using: composite
+  steps:
+    - name: Validate release tag
+      id: plan
+      shell: bash
+      env:
+        BERTIE_RELEASE_TAG: ${{ inputs.tag }}
+      run: python3 "$GITHUB_ACTION_PATH/run.py"

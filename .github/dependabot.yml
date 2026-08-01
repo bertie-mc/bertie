@@ -1,0 +1,38 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: build
+      include: scope
+    ignore:
+      # Minecraft mod coordinates encode game/loader compatibility and do not
+      # follow ordinary semantic-version ordering. Update the train deliberately.
+      - dependency-name: "maven.modrinth:*"
+      - dependency-name: "dev.ftb.mods:*"
+      - dependency-name: "dev.architectury:*"
+      - dependency-name: net.neoforged.moddev
+
+  - package-ecosystem: github-actions
+    directories:
+      - "/"
+      - "/.github/actions/*"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      github-actions:
+        patterns: ["*"]
+
+  - package-ecosystem: pip
+    directory: "/tools/bertie-ci"
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: build
+      include: scope

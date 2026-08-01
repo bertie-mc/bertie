@@ -11,6 +11,8 @@
 .gitattributes
 .editorconfig
 .packwizignore
+bertie-ci.toml
+tests/
 
 # Documentation and licensing
 *.md

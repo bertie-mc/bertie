@@ -1,0 +1,50 @@
+name: Test prepared Minecraft client
+description: Join a world and run optional project-owned assertions
+
+inputs:
+  instance:
+    description: Prepared client instance descriptor
+    required: true
+  work-dir:
+    description: Runtime state and logs directory
+    required: true
+  test-mod:
+    description: Optional test-only mod JAR or artifact directory
+    required: false
+    default: ""
+  minimum-game-tests:
+    description: Minimum project GameTests discovered by mc-runtime-test
+    required: false
+    default: "0"
+  require-log:
+    description: JSON array of exact required client log text values
+    required: false
+    default: "[]"
+  cache-dir:
+    description: Minecraft download cache
+    required: false
+    default: .bertie-ci/cache
+  timeout:
+    description: Runtime timeout in seconds
+    required: false
+    default: "1500"
+  max-memory:
+    description: Maximum Java heap
+    required: false
+    default: 4G
+
+runs:
+  using: composite
+  steps:
+    - name: Run client scenario
+      shell: bash
+      env:
+        BERTIE_INSTANCE: ${{ inputs.instance }}
+        BERTIE_WORK_DIR: ${{ inputs.work-dir }}
+        BERTIE_TEST_MOD: ${{ inputs.test-mod }}
+        BERTIE_MINIMUM_GAME_TESTS: ${{ inputs.minimum-game-tests }}
+        BERTIE_REQUIRE_LOG: ${{ inputs.require-log }}
+        BERTIE_CACHE_DIR: ${{ inputs.cache-dir }}
+        BERTIE_TIMEOUT: ${{ inputs.timeout }}
+        BERTIE_MAX_MEMORY: ${{ inputs.max-memory }}
+      run: python3 "$GITHUB_ACTION_PATH/../run-runtime.py" client

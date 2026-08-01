@@ -1,11 +1,10 @@
 import hashlib
 import json
 import os
-import tomllib
 from pathlib import Path
 
 import pytest
-
+import tomllib
 from bertie_ci.config import Versions
 from bertie_ci.fixture import build_fixture_pack
 
@@ -14,7 +13,7 @@ BUNDLED_FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
 CANONICAL_PACK = Path(
     os.environ.get(
         "BERTIE_CI_FIXTURE_PACK",
-        Path(__file__).resolve().parents[2] / "bertie-pack",
+        Path(__file__).resolve().parents[3] / "pack",
     )
 )
 

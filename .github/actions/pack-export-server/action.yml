@@ -1,0 +1,23 @@
+name: Export server pack
+description: Export a no-mod-JAR server installer archive
+
+inputs:
+  component:
+    description: Pack component subject
+    required: false
+    default: pack
+  output:
+    description: Output .zip path
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Export server pack
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+        BERTIE_OUTPUT: ${{ inputs.output }}
+      run: >-
+        bertie-ci pack-export-server --workspace . --component "$BERTIE_COMPONENT"
+        --output "$BERTIE_OUTPUT"

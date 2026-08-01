@@ -1,0 +1,96 @@
+name: Component client suites
+
+on:
+  workflow_call:
+    inputs:
+      component:
+        description: Component subject declared by the caller's root bertie-ci.toml
+        required: true
+        type: string
+      artifact-name:
+        description: Uploaded production mod JAR artifact to test
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    name: Read client suites
+    runs-on: ubuntu-latest
+    outputs:
+      client: ${{ steps.plan.outputs.client }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: bertie-mc/bertie/.github/actions/setup@bertie-ci/v5.0.0
+
+      - name: Read descriptor
+        id: plan
+        uses: bertie-mc/bertie/.github/actions/plan@bertie-ci/v5.0.0
+        with:
+          component: ${{ inputs.component }}
+
+  client:
+    name: Client / ${{ matrix.suite }}
+    needs: plan
+    if: needs.plan.outputs.client != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.client) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: bertie-mc/bertie/.github/actions/setup@bertie-ci/v5.0.0
+
+      - name: Download built mod
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: ${{ inputs.artifact-name }}
+          path: .bertie-ci/artifact
+
+      - name: Build client test mod
+        if: matrix.build_client_test_mod
+        uses: bertie-mc/bertie/.github/actions/build-client-test-mod@bertie-ci/v5.0.0
+        with:
+          component: ${{ inputs.component }}
+          artifact-dir: .bertie-ci/client-test/${{ matrix.suite }}
+
+      - name: Prepare client instance
+        uses: bertie-mc/bertie/.github/actions/prepare-mod-instance@bertie-ci/v5.0.0
+        with:
+          component: ${{ inputs.component }}
+          artifact: .bertie-ci/artifact
+          fixture: ${{ matrix.fixture }}
+          side: client
+          output-dir: .bertie-ci/client/${{ matrix.suite }}
+
+      - name: Run client suite
+        uses: bertie-mc/bertie/.github/actions/client-test@bertie-ci/v5.0.0
+        with:
+          instance: .bertie-ci/client/${{ matrix.suite }}/instance.json
+          work-dir: .bertie-ci/client/${{ matrix.suite }}
+          test-mod: ${{ matrix.build_client_test_mod && format('.bertie-ci/client-test/{0}/client-test-mod.jar', matrix.suite) || '' }}
+          minimum-game-tests: ${{ matrix.minimum_game_tests }}
+          require-log: ${{ toJSON(matrix.require_log) }}
+          timeout: ${{ matrix.timeout }}
+          max-memory: ${{ matrix.max_memory }}
+
+      - name: Upload client logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: client-${{ inputs.component }}-${{ matrix.suite }}-${{ github.sha }}
+          path: |
+            .bertie-ci/client/${{ matrix.suite }}/**/*.log
+            .bertie-ci/client/${{ matrix.suite }}/**/crash-reports/
+          if-no-files-found: warn
+          retention-days: 14

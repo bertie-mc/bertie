@@ -45,7 +45,7 @@ bypasses the tier gate by design of FA's jar system. The forge slot itself is al
 ## Build
 
 ```
-gradle build
+gradle :mods:forge-ink:assemble
 ```
 
 Jar lands in `build/libs/forgeink-<version>.jar`.
@@ -53,7 +53,7 @@ Jar lands in `build/libs/forgeink-<version>.jar`.
 ## Tests
 
 ```
-gradle test
+gradle :mods:forge-ink:test
 ```
 
 The JVM suite covers the ink tier policy, essence amounts, strict forge-tier matching,

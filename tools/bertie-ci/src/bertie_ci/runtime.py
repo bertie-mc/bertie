@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import shutil
 import subprocess
 import tempfile
@@ -119,37 +118,6 @@ def _accept_minecraft_eula(game_dir: Path) -> None:
             "eula=true",
         ],
     )
-
-
-def _write_server_readiness_test(work: Path, timeout_seconds: int) -> Path:
-    """Create a HeadlessMC test whose success boundary is server readiness."""
-    # HeadlessMC otherwise applies an independent 120-second default to the
-    # readiness marker. Keep enough of the command deadline for its process
-    # cleanup after the test sends ``stop``.
-    cleanup_margin = min(150, max(1, timeout_seconds // 10))
-    readiness_timeout = max(1, timeout_seconds - cleanup_margin)
-    target = work / "server-readiness-test.json"
-    target.write_text(
-        json.dumps(
-            {
-                "name": "Bertie server readiness",
-                "timeout": readiness_timeout,
-                "implicitWaitForEnd": False,
-                "steps": [
-                    {
-                        "type": "ENDS_WITH",
-                        "message": 'For help, type "help"',
-                    },
-                    {"type": "SEND", "message": "stop"},
-                    {"type": "SUCCESS"},
-                ],
-            },
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
-    )
-    return target
 
 
 def _command_test_was_recorded(runtime_log: Path) -> bool:
@@ -288,7 +256,7 @@ def run_server_test(
     timeout_seconds: int,
     max_memory: str,
     *,
-    command_test: Path | None = None,
+    command_test: Path,
     test_mods: tuple[Path, ...] = (),
     required_log_markers: tuple[str, ...] = (),
 ) -> None:
@@ -298,11 +266,7 @@ def run_server_test(
     _install_test_mods(game_dir / "mods", test_mods)
     minecraft = (context.cache / "minecraft").resolve()
     minecraft.mkdir(parents=True, exist_ok=True)
-    test = (
-        command_test.resolve(strict=True)
-        if command_test is not None
-        else _write_server_readiness_test(work, timeout_seconds)
-    )
+    test = command_test.resolve(strict=True)
 
     write_properties(
         work / "HeadlessMC" / "config.properties",
@@ -319,10 +283,9 @@ def run_server_test(
             "hmc.exit.on.failed.command": "true",
             "hmc.server.launch.for.eula": "true",
             "hmc.server.accept.eula": "true",
-            # The built-in server test waits for a clean shutdown. Our assertion
-            # boundary is readiness; a large pack may spend minutes in work
-            # scheduled immediately after printing Done. The custom test sends
-            # stop but treats the readiness marker itself as success.
+            # The project-owned command test defines the assertion boundary.
+            # HeadlessMC's built-in server test is intentionally disabled so
+            # projects can choose readiness or a richer scenario explicitly.
             "hmc.server.test": "false",
             "hmc.server.test.cache": "true",
             "hmc.server.test.cache.use.mc.dir": "true",
@@ -356,7 +319,7 @@ def run_server_test(
     # readiness run. A large modpack can fill that preliminary process's output
     # pipe during mod discovery, so provision the same accepted state directly.
     _accept_minecraft_eula(game_dir)
-    purpose = "readiness" if command_test is None else "project command suite"
+    purpose = "project command suite"
     print(f"Launching dedicated-server {purpose}", flush=True)
     runtime_log = work / "runtime.log"
     try:
@@ -370,7 +333,7 @@ def run_server_test(
         # HeadlessMC waits for the child after its command test succeeds. A large
         # pack can exceed the two-minute shutdown grace period and be force-
         # terminated after the selected scenario has already passed. The command
-        # test is the success boundary for default and project-owned scenarios.
+        # test is the success boundary for project-owned scenarios.
         if not _command_test_was_recorded(runtime_log):
             raise
         print(

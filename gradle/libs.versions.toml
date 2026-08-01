@@ -1,0 +1,113 @@
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.217"
+moddev = "2.0.134"
+parchment-minecraft = "1.21.11"
+parchment-mappings = "2025.12.21-nightly-SNAPSHOT"
+junit = "6.1.2"
+mockito = "5.23.0"
+gson = "2.14.0"
+
+emi = "1.1.24+1.21.1+neoforge"
+slag = "1.1a"
+create-modrinth = "6.0.10+mc1.21.1"
+create-maven = "6.0.10-281"
+ponder = "1.0.82+mc1.21.1"
+flywheel = "1.0.6"
+refined-storage = "2.0.9"
+forbidden-arcanus = "2.6.1"
+valhelsia-core = "1.1.4"
+irons-spells = "1.21.1-3.16.0"
+curios = "9.5.1+1.21.1"
+geckolib = "gFmrC8Ru"
+irons-lib = "1.21.1-1.0.2"
+playeranimator = "2.0.4+1.21.1-forge"
+simply-swords = "1.63.0-1.21.1"
+fzzy-config = "0.7.6+1.21+neoforge"
+kotlin-for-forge = "5.11.0"
+simply-tooltips = "0.1.3"
+architectury-api = "13.0.8+neoforge"
+architectury-neoforge = "13.0.8"
+ftb-filter-system = "21.1.4"
+sophisticated-core = "1.21.1-1.4.49.1966"
+rustic-engineer = "1.1.4"
+berries-and-cherries = "1.1"
+
+cataclysm = "3.31"
+terra-curio = "1.1.1"
+enderio = "v8.2.11-beta"
+malum = "1.8.2"
+lodestone = "1.8.2"
+l2library = "3.0.8"
+extra-delight = "2.6.5"
+dungeons-delight = "1.5.0"
+expanded-delight = "0.1.4-neoforge"
+avaritias-delight = "1.6.3"
+farmers-pizzeria = "1.1.0"
+farmers-delight = "1.21.1-1.3.2"
+gensokyo-delight = "1.1.0"
+cognition = "2.4.12"
+stellaris = "3OXCvg6r"
+twilight-delight = "3.2.2"
+slavic-delight = "0.3.2"
+cuisine-delight = "1.2.8"
+better-archeology = "rp4lPDKI"
+l2-complements = "3.1.3"
+anvilcraft = "1.21.1-1.5.3+hotfix.1849"
+advanced-loot-info = "y8p1Vq83"
+
+[libraries]
+moddev-gradle = { module = "net.neoforged:moddev-gradle", version.ref = "moddev" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+mockito = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+emi = { module = "maven.modrinth:emi", version.ref = "emi" }
+slag = { module = "maven.modrinth:slag-n-embers", version.ref = "slag" }
+create-modrinth = { module = "maven.modrinth:create", version.ref = "create-modrinth" }
+create-maven = { module = "com.simibubi.create:create-1.21.1", version.ref = "create-maven" }
+ponder = { module = "net.createmod.ponder:ponder-neoforge", version.ref = "ponder" }
+flywheel = { module = "dev.engine-room.flywheel:flywheel-neoforge-1.21.1", version.ref = "flywheel" }
+refined-storage = { module = "maven.modrinth:refined-storage", version.ref = "refined-storage" }
+forbidden-arcanus = { module = "maven.modrinth:forbidden-arcanus", version.ref = "forbidden-arcanus" }
+valhelsia-core = { module = "maven.modrinth:valhelsia-core", version.ref = "valhelsia-core" }
+irons-spells = { module = "maven.modrinth:irons-spells-n-spellbooks", version.ref = "irons-spells" }
+curios = { module = "maven.modrinth:curios", version.ref = "curios" }
+geckolib = { module = "maven.modrinth:geckolib", version.ref = "geckolib" }
+irons-lib = { module = "maven.modrinth:irons-lib", version.ref = "irons-lib" }
+playeranimator = { module = "maven.modrinth:playeranimator", version.ref = "playeranimator" }
+simply-swords = { module = "maven.modrinth:simply-swords", version.ref = "simply-swords" }
+fzzy-config = { module = "maven.modrinth:fzzy-config", version.ref = "fzzy-config" }
+kotlin-forge = { module = "maven.modrinth:kotlin-for-forge", version.ref = "kotlin-for-forge" }
+simply-tooltips = { module = "maven.modrinth:simply-tooltips", version.ref = "simply-tooltips" }
+architectury-api = { module = "maven.modrinth:architectury-api", version.ref = "architectury-api" }
+architectury-neoforge = { module = "dev.architectury:architectury-neoforge", version.ref = "architectury-neoforge" }
+ftb-filter-system = { module = "dev.ftb.mods:ftb-filter-system-neoforge", version.ref = "ftb-filter-system" }
+sophisticated-core = { module = "maven.modrinth:sophisticated-core", version.ref = "sophisticated-core" }
+rustic-engineer = { module = "maven.modrinth:rustic-engineer", version.ref = "rustic-engineer" }
+berries-and-cherries = { module = "maven.modrinth:berries-and-cherries", version.ref = "berries-and-cherries" }
+
+cataclysm = { module = "maven.modrinth:l_enders-cataclysm", version.ref = "cataclysm" }
+terra-curio = { module = "maven.modrinth:terra-curio", version.ref = "terra-curio" }
+enderio = { module = "maven.modrinth:enderio", version.ref = "enderio" }
+malum = { module = "maven.modrinth:malum", version.ref = "malum" }
+lodestone = { module = "maven.modrinth:lodestonelib", version.ref = "lodestone" }
+l2library = { module = "maven.modrinth:l2library", version.ref = "l2library" }
+extra-delight = { module = "maven.modrinth:extradelight", version.ref = "extra-delight" }
+dungeons-delight = { module = "maven.modrinth:dungeons_delight", version.ref = "dungeons-delight" }
+expanded-delight = { module = "maven.modrinth:expanded-delight", version.ref = "expanded-delight" }
+avaritias-delight = { module = "maven.modrinth:avaritias-delight", version.ref = "avaritias-delight" }
+farmers-pizzeria = { module = "maven.modrinth:farmers-pizzeria", version.ref = "farmers-pizzeria" }
+farmers-delight = { module = "maven.modrinth:farmers-delight", version.ref = "farmers-delight" }
+gensokyo-delight = { module = "maven.modrinth:gensokyo-delight-youkais-feasts", version.ref = "gensokyo-delight" }
+cognition = { module = "maven.modrinth:cognition", version.ref = "cognition" }
+stellaris = { module = "maven.modrinth:stellaris", version.ref = "stellaris" }
+twilight-delight = { module = "maven.modrinth:twilight-delight", version.ref = "twilight-delight" }
+slavic-delight = { module = "maven.modrinth:slavic-delight", version.ref = "slavic-delight" }
+cuisine-delight = { module = "maven.modrinth:cuisine-delight", version.ref = "cuisine-delight" }
+better-archeology = { module = "maven.modrinth:better-archeology", version.ref = "better-archeology" }
+l2-complements = { module = "maven.modrinth:l2-complements", version.ref = "l2-complements" }
+anvilcraft = { module = "maven.modrinth:anvilcraft", version.ref = "anvilcraft" }
+advanced-loot-info = { module = "maven.modrinth:advanced-loot-info", version.ref = "advanced-loot-info" }

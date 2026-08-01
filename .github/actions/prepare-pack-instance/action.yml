@@ -1,0 +1,32 @@
+name: Prepare pack instance
+description: Install one side of a packwiz component
+
+inputs:
+  component:
+    description: Pack component subject
+    required: false
+    default: pack
+  side:
+    description: client or server
+    required: true
+  output-dir:
+    description: Prepared instance directory
+    required: true
+
+outputs:
+  descriptor:
+    description: Prepared instance descriptor
+    value: ${{ inputs.output-dir }}/instance.json
+
+runs:
+  using: composite
+  steps:
+    - name: Prepare pack instance
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+        BERTIE_SIDE: ${{ inputs.side }}
+        BERTIE_OUTPUT: ${{ inputs.output-dir }}
+      run: >-
+        bertie-ci prepare-pack-instance --workspace . --component "$BERTIE_COMPONENT"
+        --side "$BERTIE_SIDE" --output-dir "$BERTIE_OUTPUT"

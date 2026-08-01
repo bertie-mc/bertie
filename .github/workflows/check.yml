@@ -1,0 +1,283 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    name: Plan affected components
+    runs-on: ubuntu-latest
+    outputs:
+      build: ${{ steps.plan.outputs.build }}
+      unit: ${{ steps.plan.outputs.unit }}
+      gametest: ${{ steps.plan.outputs.gametest }}
+      client: ${{ steps.plan.outputs.client }}
+      server: ${{ steps.plan.outputs.server }}
+      validate: ${{ steps.plan.outputs.validate }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Plan
+        id: plan
+        uses: ./.github/actions/plan
+        with:
+          base: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+          head: ${{ github.sha }}
+
+  infrastructure:
+    name: Shared infrastructure
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Check Nix flake
+        run: nix flake check
+
+  build:
+    name: Build / ${{ matrix.subject }}
+    needs: plan
+    if: needs.plan.outputs.build != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.build) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Build mod
+        uses: ./.github/actions/build-mod
+        with:
+          component: ${{ matrix.subject }}
+
+      - name: Upload built mod
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: mod-${{ matrix.subject }}-${{ github.sha }}
+          path: .bertie-ci/artifacts/${{ matrix.subject }}/*.jar
+          if-no-files-found: error
+          retention-days: 14
+
+  unit:
+    name: Unit / ${{ matrix.subject }} / ${{ matrix.suite }}
+    needs: plan
+    if: needs.plan.outputs.unit != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.unit) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run unit tests
+        uses: ./.github/actions/unit-test
+        with:
+          component: ${{ matrix.subject }}
+
+      - name: Upload unit-test reports
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: unit-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
+          path: |
+            ${{ matrix.project }}/build/reports/tests/
+            ${{ matrix.project }}/build/test-results/
+          if-no-files-found: warn
+          retention-days: 14
+
+  gametest:
+    name: GameTest / ${{ matrix.subject }} / ${{ matrix.suite }}
+    needs: plan
+    if: needs.plan.outputs.gametest != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.gametest) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run GameTests
+        uses: ./.github/actions/gametest
+        with:
+          component: ${{ matrix.subject }}
+          work-dir: .bertie-ci/gametest/${{ matrix.subject }}/${{ matrix.suite }}
+          timeout: ${{ matrix.timeout }}
+
+      - name: Upload GameTest log
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: gametest-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
+          path: .bertie-ci/gametest/${{ matrix.subject }}/${{ matrix.suite }}/gametest.log
+          if-no-files-found: warn
+          retention-days: 14
+
+  client:
+    name: Client / ${{ matrix.subject }} / ${{ matrix.suite }}
+    needs: [plan, build]
+    if: needs.plan.outputs.client != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.client) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Download built mod
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: mod-${{ matrix.subject }}-${{ github.sha }}
+          path: .bertie-ci/artifact/${{ matrix.subject }}
+
+      - name: Build client test mod
+        if: matrix.build_client_test_mod
+        uses: ./.github/actions/build-client-test-mod
+        with:
+          component: ${{ matrix.subject }}
+          artifact-dir: .bertie-ci/client-test/${{ matrix.subject }}/${{ matrix.suite }}
+
+      - name: Prepare client instance
+        uses: ./.github/actions/prepare-mod-instance
+        with:
+          component: ${{ matrix.subject }}
+          artifact: .bertie-ci/artifact/${{ matrix.subject }}
+          fixture: ${{ matrix.fixture }}
+          side: client
+          output-dir: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}
+
+      - name: Run client suite
+        uses: ./.github/actions/client-test
+        with:
+          instance: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/instance.json
+          work-dir: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}
+          test-mod: ${{ matrix.build_client_test_mod && format('.bertie-ci/client-test/{0}/{1}/client-test-mod.jar', matrix.subject, matrix.suite) || '' }}
+          minimum-game-tests: ${{ matrix.minimum_game_tests }}
+          require-log: ${{ toJSON(matrix.require_log) }}
+          timeout: ${{ matrix.timeout }}
+          max-memory: ${{ matrix.max_memory }}
+
+      - name: Upload client logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: client-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
+          path: |
+            .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/**/*.log
+            .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/**/crash-reports/
+          if-no-files-found: warn
+          retention-days: 14
+
+  server:
+    name: Server / ${{ matrix.subject }} / ${{ matrix.suite }}
+    needs: [plan, build]
+    if: needs.plan.outputs.server != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.server) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Download built mod
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: mod-${{ matrix.subject }}-${{ github.sha }}
+          path: .bertie-ci/artifact/${{ matrix.subject }}
+
+      - name: Prepare server instance
+        uses: ./.github/actions/prepare-mod-instance
+        with:
+          component: ${{ matrix.subject }}
+          artifact: .bertie-ci/artifact/${{ matrix.subject }}
+          fixture: ${{ matrix.fixture }}
+          side: server
+          output-dir: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}
+
+      - name: Run server suite
+        uses: ./.github/actions/server-test
+        with:
+          instance: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/instance.json
+          work-dir: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}
+          command-test: ${{ matrix.project }}/${{ matrix.command_test }}
+          require-log: ${{ toJSON(matrix.require_log) }}
+          timeout: ${{ matrix.timeout }}
+          max-memory: ${{ matrix.max_memory }}
+
+      - name: Upload server logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: server-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
+          path: |
+            .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/**/*.log
+            .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/**/crash-reports/
+          if-no-files-found: warn
+          retention-days: 14
+
+  validate:
+    name: Validate / ${{ matrix.subject }} / ${{ matrix.suite }}
+    needs: plan
+    if: needs.plan.outputs.validate != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.validate) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Validate pack
+        uses: ./.github/actions/pack-validate
+        with:
+          component: ${{ matrix.subject }}

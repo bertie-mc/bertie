@@ -1,231 +1,136 @@
 # Running bertie-ci on Windows
 
-Nix is the supported dependency provider on Linux, and there is no usable Nix on native
-Windows. The commands themselves are ordinary Python and do not assume a POSIX shell, so
-Windows supplies the same dependencies through environment variables instead. This
-document is the Windows equivalent of the Nix-provided setup in the README.
+The `bertie-ci` commands are portable Python and Gradle code. Nix is the supported
+dependency provider on Linux; native Windows supplies the same pinned dependencies
+explicitly.
 
-Everything here is native Windows. WSL is not required, and if you do use WSL you are on
-the Linux path and should follow the README instead.
+## Supported operations
 
-## What runs
+| Operation | Native Windows |
+| --- | --- |
+| Build, JVM tests, and GameTests | Yes |
+| Pack validation and export | Yes, with packwiz |
+| Dedicated-server runtime tests | Yes |
+| Client runtime tests | Yes, in an unlocked interactive desktop session |
 
-| Command | Windows | Extra requirements |
-| --- | --- | --- |
-| `build` | Yes | Gradle 8 and Java 21 |
-| `unit-test` | Yes | Gradle 8 and Java 21 |
-| `gametest` | Yes | Gradle 8 and Java 21 |
-| `prepare-mod-instance` | Yes | Java 21, packwiz-installer, and fixture metadata |
-| `prepare-pack-instance` | Yes | Java 21 and packwiz-installer |
-| `server-test` | Yes | Java 21 and HeadlessMC |
-| `client-test` | Yes, but not headless | Java 21, HeadlessMC, mc-runtime-test, and an interactive desktop session |
-
-`build`, `unit-test` and `gametest` invoke the Gradle executable selected by
-`BERTIE_CI_GRADLE`, falling back to `gradle` on `PATH`. Projects do not carry wrappers.
-
-`client-test` is the one command that behaves differently. Windows has no Xvfb equivalent,
-so the test runs against the desktop session you are logged into: a real Minecraft window
-opens, takes focus, and closes itself when the test finishes. It cannot run over SSH, as a
-service, or on a locked workstation. Treat `client-test` on Windows as a foreground task
-that occupies the machine for its duration; Linux with Xvfb remains the way to run it
-unattended.
+Windows has no Xvfb equivalent. A client test opens a real Minecraft window and cannot
+run unattended over SSH, as a service, or on a locked workstation. Use Linux with Nix for
+headless client CI.
 
 ## Prerequisites
 
-Gradle 8.14.4, Java 21, and Python 3.11 or newer on `PATH`, plus `JAVA_HOME` pointing at
-the JDK root. The runner reads `BERTIE_CI_JAVA_HOME` first and falls back to `JAVA_HOME`.
+Install Git, Python 3.11 or newer, JDK 21, Gradle 8.14.4, and optionally packwiz. Set
+`JAVA_HOME` to the JDK root and make `java`, `gradle`, and `python` available on
+`PATH`.
 
 ```powershell
-gradle --version; java -version; python --version; $env:JAVA_HOME
+gradle --version
+java -version
+python --version
+$env:JAVA_HOME
 ```
 
-If `JAVA_HOME` is unset, set it for the current session and persist it separately:
+Projects do not carry Gradle wrappers. `BERTIE_CI_GRADLE` can name a specific Gradle
+executable; otherwise `gradle` is resolved from `PATH`.
+
+Enable Windows long paths before creating Minecraft instances. This requires an elevated
+PowerShell and a reboot:
 
 ```powershell
-$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"
-[Environment]::SetEnvironmentVariable("JAVA_HOME", $env:JAVA_HOME, "User")
+Set-ItemProperty -Path 'HKLM:/SYSTEM/CurrentControlSet/Control/FileSystem' -Name LongPathsEnabled -Value 1
 ```
 
-Enable long paths. Minecraft's runtime directories nest deeply below the project, and the
-legacy 260-character limit is reached in ordinary use. This needs an elevated shell and a
-reboot:
+## Install the CLI from the monorepo
 
 ```powershell
-Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name LongPathsEnabled -Value 1
+git clone https://github.com/bertie-mc/bertie.git C:/src/bertie
+cd C:/src/bertie
+python -m venv .venv
+./.venv/Scripts/Activate.ps1
+python -m pip install -e ./tools/bertie-ci
+$env:BERTIE_CI_FIXTURE_PACK = (Resolve-Path ./pack)
+bertie-ci --help
 ```
 
-Confirm it took effect with:
+The editable install reads `versions.json` and `fixtures/` from
+`tools/bertie-ci`. If the package is copied elsewhere, set `BERTIE_CI_VERSIONS` and
+`BERTIE_CI_FIXTURES` to those paths explicitly.
 
-```powershell
-(Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem').LongPathsEnabled
-```
+## Runtime tool JARs
 
-## Getting the CLI
+Instance preparation needs packwiz-installer. Server tests add HeadlessMC; client tests
+also add `mc-runtime-test`. Download the versions pinned in
+[`versions.json`](../versions.json) and verify their SHA-256 values:
 
-There is no published wheel. Clone the repository and run the package from the checkout,
-which also keeps `versions.json` and `fixtures/` on the paths the runner expects:
-
-```powershell
-git clone https://github.com/bertie-mc/bertie-ci.git
-git clone https://github.com/bertie-mc/bertie-pack.git
-cd bertie-ci
-$packRev = (Get-Content .\flake.lock | ConvertFrom-Json).nodes.'bertie-pack'.locked.rev
-git -C ..\bertie-pack checkout $packRev
-$env:BERTIE_CI_FIXTURE_PACK = (Resolve-Path ..\bertie-pack)
-$env:PYTHONPATH = "$PWD\src"
-python -m bertie_ci --help
-```
-
-`uv` works too and gives you the `bertie-ci` console script:
-
-```powershell
-uv run bertie-ci --help
-```
-
-An installed copy does not carry `versions.json` or the fixture catalog, because both
-sit outside the Python package. Point `BERTIE_CI_VERSIONS` and `BERTIE_CI_FIXTURES` at the
-checkout if you install the package somewhere else. Runtime fixture commands also need
-`BERTIE_CI_FIXTURE_PACK` to identify the canonical pack checkout. The commands above use
-the exact revision pinned by `flake.lock`, matching Linux and hosted CI.
-
-## Build, unit tests, and GameTests
-
-These need no further setup. Point `--project` at a mod checkout:
-
-```powershell
-python -m bertie_ci build --project C:\src\bertie-tiers --output-dir .bertie-ci\artifact
-```
-
-```powershell
-python -m bertie_ci unit-test --project C:\src\bertie-tiers
-```
-
-```powershell
-python -m bertie_ci gametest --project C:\src\bertie-tiers
-```
-
-A relative `--output-dir` resolves against `--project`, not the current directory, so the
-command above writes to `C:\src\bertie-tiers\.bertie-ci\artifact`. GameTest logs land in
-`<project>\.bertie-ci\gametest.log`.
-
-## Tool JARs for preparation and runtime tests
-
-The commands load only the tools their operation needs: instance preparation uses
-packwiz-installer, `server-test` uses HeadlessMC, and `client-test` adds mc-runtime-test.
-Download the required JARs once and point the environment at them. The versions and
-hashes below are the ones in
-[`versions.json`](../versions.json); if that file has moved on, it is authoritative and
-this table is not.
-
-| Environment variable | File | Size |
+| Variable | Current file | SHA-256 |
 | --- | --- | --- |
-| `BERTIE_CI_HEADLESSMC_JAR` | `headlessmc-launcher-2.10.0.jar` | 12.4 MB |
-| `BERTIE_CI_MCRT_JAR` | `mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar` | 320 KB |
-| `BERTIE_CI_PACKWIZ_INSTALLER_JAR` | `packwiz-installer.jar` | 4.2 MB |
+| `BERTIE_CI_HEADLESSMC_JAR` | `headlessmc-launcher-2.10.0.jar` | `52bd5006f478377b3893011d458562977d38c65ead6d2b31089beb4d614f13cd` |
+| `BERTIE_CI_MCRT_JAR` | `mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar` | `404e566645730470dc873db88c28d483995c9b7bb6999a6a2af9630a41bf7774` |
+| `BERTIE_CI_PACKWIZ_INSTALLER_JAR` | `packwiz-installer.jar` | `c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598` |
 
-This downloads all three into `%LOCALAPPDATA%\bertie-ci\tools` and fails if any hash does
-not match the pin:
-
-```powershell
-$tools = "$env:LOCALAPPDATA\bertie-ci\tools"
-New-Item -ItemType Directory -Force $tools | Out-Null
-
-$pinned = @(
-  @{ Name = "headlessmc-launcher-2.10.0.jar"
-     Url  = "https://github.com/headlesshq/headlessmc/releases/download/2.10.0/headlessmc-launcher-2.10.0.jar"
-     Hash = "52bd5006f478377b3893011d458562977d38c65ead6d2b31089beb4d614f13cd" }
-  @{ Name = "mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar"
-     Url  = "https://github.com/headlesshq/mc-runtime-test/releases/download/4.5.1/mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar"
-     Hash = "404e566645730470dc873db88c28d483995c9b7bb6999a6a2af9630a41bf7774" }
-  @{ Name = "packwiz-installer.jar"
-     Url  = "https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar"
-     Hash = "c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598" }
-)
-
-foreach ($jar in $pinned) {
-  $path = Join-Path $tools $jar.Name
-  if (-not (Test-Path $path)) { Invoke-WebRequest -Uri $jar.Url -OutFile $path }
-  $actual = (Get-FileHash $path -Algorithm SHA256).Hash.ToLower()
-  if ($actual -ne $jar.Hash) { throw "$($jar.Name): expected $($jar.Hash), got $actual" }
-  "$($jar.Name) OK"
-}
-```
-
-Then declare them for the session:
+For example:
 
 ```powershell
-$env:BERTIE_CI_HEADLESSMC_JAR = "$tools\headlessmc-launcher-2.10.0.jar"
-$env:BERTIE_CI_MCRT_JAR = "$tools\mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar"
-$env:BERTIE_CI_PACKWIZ_INSTALLER_JAR = "$tools\packwiz-installer.jar"
+$tools = 'C:/Users/me/AppData/Local/bertie-ci/tools'
+$env:BERTIE_CI_HEADLESSMC_JAR = "$tools/headlessmc-launcher-2.10.0.jar"
+$env:BERTIE_CI_MCRT_JAR = "$tools/mc-runtime-test-1.21.1-4.5.1-neoforge-release.jar"
+$env:BERTIE_CI_PACKWIZ_INSTALLER_JAR = "$tools/packwiz-installer.jar"
 ```
 
-## Preparing and testing instances
+Use `Get-FileHash <path> -Algorithm SHA256` before running downloaded JARs. The URLs in
+`versions.json` are authoritative.
 
-Build once, prepare each desired side, then pass its provider-neutral descriptor to the
-same runtime commands used for full packs:
+## Running workspace suites
+
+The monorepo uses component subjects, just like Linux and hosted CI:
 
 ```powershell
-python -m bertie_ci build --project C:\src\bertie-tiers --output-dir .bertie-ci\artifact
-python -m bertie_ci prepare-mod-instance --project C:\src\bertie-tiers --artifact .bertie-ci\artifact --side server --output-dir .bertie-ci\server
-python -m bertie_ci server-test --instance C:\src\bertie-tiers\.bertie-ci\server\instance.json
-python -m bertie_ci prepare-mod-instance --project C:\src\bertie-tiers --artifact .bertie-ci\artifact --side client --output-dir .bertie-ci\client
-python -m bertie_ci client-test --instance C:\src\bertie-tiers\.bertie-ci\client\instance.json
+bertie-ci build --workspace . --component bertie-tiers --output-dir .bertie-ci/artifacts
+bertie-ci unit-test --workspace . --component bertie-tiers
+bertie-ci gametest --workspace . --component bertie-tiers
 ```
 
-Mods with external runtime dependencies select canonical mods or aggregate fixture
-profiles exactly as on Linux:
+For a client integration test:
 
 ```powershell
-python -m bertie_ci prepare-mod-instance --project C:\src\forge-ink --artifact .bertie-ci\artifact --fixture forbidden-arcanus,irons-spells --side client --output-dir .bertie-ci\client
-python -m bertie_ci client-test --instance C:\src\forge-ink\.bertie-ci\client\instance.json
+bertie-ci prepare-mod-instance --workspace . --component forge-ink --artifact .bertie-ci/artifacts/forge-ink --fixture forbidden-arcanus,irons-spells --side client --output-dir .bertie-ci/client
+bertie-ci client-test --instance .bertie-ci/client/instance.json
 ```
 
-The first run downloads Minecraft and the pinned NeoForge build. Both land in the cache,
-not the project, and are reused by later runs.
+For a dedicated-server scenario, prepare an instance and pass the project-owned command
+document. The full pack example is:
+
+```powershell
+bertie-ci prepare-pack-instance --workspace . --component pack --side server --output-dir .bertie-ci/server
+bertie-ci server-test --instance .bertie-ci/server/instance.json --command-test pack/tests/runtime/server-readiness.json
+```
+
+Standalone repositories use the same commands with their root component descriptor.
+`--project` remains available for direct operations that do not need descriptor
+planning.
 
 ## Environment variables
 
-| Variable | Purpose | Windows default |
-| --- | --- | --- |
-| `BERTIE_CI_JAVA_HOME` | JDK root; takes precedence over `JAVA_HOME` | unset |
-| `BERTIE_CI_GRADLE` | Gradle executable | `gradle` from `PATH` |
-| `BERTIE_CI_HEADLESSMC_JAR` | HeadlessMC launcher JAR | required for client/server tests |
-| `BERTIE_CI_MCRT_JAR` | `mc-runtime-test` JAR | required for client tests |
-| `BERTIE_CI_PACKWIZ_INSTALLER_JAR` | packwiz-installer JAR | required for instance preparation |
-| `BERTIE_CI_VERSIONS` | Path to `versions.json` | repository root |
-| `BERTIE_CI_FIXTURES` | Path to fixture aggregates and defaults | `fixtures/` in the repository |
-| `BERTIE_CI_FIXTURE_PACK` | Canonical `bertie-pack` checkout | required when installing fixtures |
-| `BERTIE_CI_XVFB` | Xvfb binary | unset, and unusable on Windows |
-| `BERTIE_CI_GLXINFO` | `glxinfo` binary for the GL preflight | unset, and unusable on Windows |
-| `XDG_CACHE_HOME` | Parent of the Minecraft cache | `%USERPROFILE%\.cache` |
+| Variable | Purpose |
+| --- | --- |
+| `BERTIE_CI_JAVA_HOME` | JDK root; takes precedence over `JAVA_HOME` |
+| `BERTIE_CI_GRADLE` | Gradle 8 executable |
+| `BERTIE_CI_PACKWIZ` | packwiz executable |
+| `BERTIE_CI_HEADLESSMC_JAR` | HeadlessMC launcher JAR |
+| `BERTIE_CI_MCRT_JAR` | `mc-runtime-test` JAR |
+| `BERTIE_CI_PACKWIZ_INSTALLER_JAR` | packwiz-installer JAR |
+| `BERTIE_CI_VERSIONS` | `versions.json` path |
+| `BERTIE_CI_FIXTURES` | fixture catalog directory |
+| `BERTIE_CI_FIXTURE_PACK` | canonical `pack/` checkout |
 
-The cache path is deliberately the same on every platform, so it is `C:\Users\<you>\.cache\bertie-ci`
-rather than somewhere under `%LOCALAPPDATA%`. Pass `--cache-dir` to put it elsewhere.
+Runtime downloads are cached under `%USERPROFILE%/.cache/bertie-ci` by default.
+`--cache-dir` selects another location.
 
-## Troubleshooting
+## Common failures
 
-**`Java not found at ...`** — `JAVA_HOME` is pointing at a JRE, at a directory one level
-too deep, or at a path that no longer exists. The runner expects `<JAVA_HOME>\bin\java.exe`.
-
-**`gradle` is not recognized** — install Gradle 8.14.4 and add it to `PATH`, or point
-`BERTIE_CI_GRADLE` at the executable. Gradle 9 is not supported by the current
-ModDevGradle setup.
-
-**A build or runtime test fails with a path that stops mid-way through, or a `Malformed \uxxxx
-encoding` error** — this was a real defect and is fixed. Windows paths were written into
-HeadlessMC's `config.properties` without escaping, and `java.util.Properties` treats a
-backslash as an escape character, so `C:\Users\berlord` was read back as `C:Usersberlord`
-and any lowercase `\u` segment threw outright. If you see this, you are on a build from
-before that fix.
-
-**`PermissionError` while clearing `.bertie-ci\client\run`** — a previous run left a
-read-only or still-locked file. Read-only files are handled; a locked one is not, and
-means a Java process from an earlier run is still alive or a virus scanner is holding the
-directory open. Close it and retry.
-
-**Antivirus makes runs very slow** — real-time scanning inspects every file Minecraft
-extracts. Excluding the cache directory and the project's `.bertie-ci` directory is the
-usual remedy.
-
-**The client test fails on a remote or locked session** — expected. See *What runs*
-above; `client-test` needs an interactive desktop.
+- A missing `JAVA_HOME/bin/java.exe` means `JAVA_HOME` points to the wrong directory.
+- Gradle 9 is not supported by the current ModDevGradle setup; use Gradle 8.14.4.
+- A locked file below `.bertie-ci` usually means an earlier Java process is still alive
+  or antivirus is holding the instance.
+- Client tests on a remote or locked desktop are expected to fail; use headless Linux
+  instead.

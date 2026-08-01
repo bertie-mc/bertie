@@ -2,9 +2,9 @@ import json
 from pathlib import Path
 
 import pytest
-
 from bertie_ci.instance import (
     Instance,
+    install_mod,
     load_instance,
     read_pack_versions,
     write_instance,
@@ -59,3 +59,37 @@ def test_read_pack_versions(tmp_path: Path) -> None:
     )
 
     assert read_pack_versions(tmp_path) == ("1.21.1", "neoforge", "21.1.233")
+
+
+def test_install_mod_replaces_an_explicit_pack_artifact(tmp_path: Path) -> None:
+    game_dir = tmp_path / "prepared" / "instance"
+    mods = game_dir / "mods"
+    mods.mkdir(parents=True)
+    (mods / "example-1.0.0.jar").write_bytes(b"published")
+    descriptor = write_instance(
+        tmp_path / "prepared",
+        Instance("client", game_dir, "1.21.1", "neoforge", "21.1.233"),
+    )
+    artifact = tmp_path / "artifact" / "example-1.1.0.jar"
+    artifact.parent.mkdir()
+    artifact.write_bytes(b"current source")
+
+    installed = install_mod(descriptor, artifact, replace_filename="example-1.0.0.jar")
+
+    assert not (mods / "example-1.0.0.jar").exists()
+    assert installed == (mods / "example-1.1.0.jar").resolve()
+    assert installed.read_bytes() == b"current source"
+
+
+def test_install_mod_fails_closed_when_replacement_is_missing(tmp_path: Path) -> None:
+    game_dir = tmp_path / "prepared" / "instance"
+    (game_dir / "mods").mkdir(parents=True)
+    descriptor = write_instance(
+        tmp_path / "prepared",
+        Instance("server", game_dir, "1.21.1", "neoforge", "21.1.233"),
+    )
+    artifact = tmp_path / "example.jar"
+    artifact.touch()
+
+    with pytest.raises(RuntimeError, match="absent mod"):
+        install_mod(descriptor, artifact, replace_filename="old.jar")

@@ -9,7 +9,10 @@ Wraps *fdlib*'s post-shader initialization in a try/catch so an intermittent sha
 
 ## Install
 
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus fdlib.
+Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/fd-shader-fix/releases).
+New releases use `fd-shader-fix/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1 and fdlib.
 
 ## Credits / Integration
 
@@ -17,12 +20,12 @@ This is a runtime patch for *fdlib*. It wraps fdlib's post-shader init in a try/
 
 ## Building
 
-`gradle build` — the built JAR is written to `build/libs/`.
+`gradle :mods:fd-shader-fix:assemble` builds the JAR without running the independent test suites.
 
 ## Tests
 
-`gradle test` verifies that successful shader initialization is preserved and failures
-are reported without escaping. `gradle clientTestJar` builds a test-only mod that checks
+`gradle :mods:fd-shader-fix:test` verifies that successful shader initialization is preserved and failures
+are reported without escaping. `gradle :mods:fd-shader-fix:clientTestJar` builds a test-only mod that checks
 the wrapper is applied to fdlib in a headless client; it is excluded from releases.
 
 ## License

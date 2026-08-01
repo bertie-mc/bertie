@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import json
-import tomllib
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
+
+import tomllib
 
 from .artifact import find_artifact
 from .config import FixtureTools, PackTools, Versions
@@ -199,3 +200,43 @@ def prepare_pack_instance(
     return write_instance(
         output, Instance(side, game_dir, minecraft, loader, loader_version)
     )
+
+
+def install_mod(
+    descriptor: Path,
+    requested_artifact: Path,
+    *,
+    replace_filename: str | None = None,
+) -> Path:
+    """Install one built mod into an existing prepared instance.
+
+    ``replace_filename`` is deliberately explicit. Instance assembly does not guess mod
+    identity from filenames or silently leave the pack's published copy beside a
+    current-source artifact.
+    """
+    instance = load_instance(descriptor)
+    artifact = find_artifact(descriptor.parent, requested_artifact)
+    mods = instance.game_dir / "mods"
+    mods.mkdir(parents=True, exist_ok=True)
+
+    if replace_filename is not None:
+        replacement = Path(replace_filename)
+        if replacement.name != replace_filename or replace_filename in ("", ".", ".."):
+            raise RuntimeError(
+                f"Replacement mod filename must be a plain filename: {replace_filename!r}"
+            )
+        installed = mods / replace_filename
+        if not installed.is_file():
+            raise RuntimeError(
+                f"Cannot replace absent mod {replace_filename!r} in {mods}"
+            )
+        if installed.name != artifact.name:
+            remove_file(installed)
+
+    destination = mods / artifact.name
+    if destination.exists() and (
+        replace_filename is None or destination.name != replace_filename
+    ):
+        raise RuntimeError(f"Mod destination already exists: {destination}")
+    replace_file(artifact, destination)
+    return destination.resolve(strict=True)

@@ -1,0 +1,27 @@
+name: Run NeoForge GameTests
+description: Run one component's registered GameTests
+
+inputs:
+  component:
+    description: Workspace component subject
+    required: true
+  work-dir:
+    description: Directory for the GameTest log
+    required: true
+  timeout:
+    description: GameTest timeout in seconds
+    required: false
+    default: "900"
+
+runs:
+  using: composite
+  steps:
+    - name: Run GameTests
+      shell: bash
+      env:
+        BERTIE_COMPONENT: ${{ inputs.component }}
+        BERTIE_WORK_DIR: ${{ inputs.work-dir }}
+        BERTIE_TIMEOUT: ${{ inputs.timeout }}
+      run: >-
+        bertie-ci gametest --workspace . --component "$BERTIE_COMPONENT"
+        --work-dir "$BERTIE_WORK_DIR" --timeout "$BERTIE_TIMEOUT"

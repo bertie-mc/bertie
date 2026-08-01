@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import pytest
-
 from bertie_ci.artifact import find_artifact, stage_artifact
 from bertie_ci.gradle import assemble_client_test_mod, run_gradle, verify_gametest_log
 

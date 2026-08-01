@@ -4,7 +4,6 @@ import subprocess
 from pathlib import Path
 
 import pytest
-
 from bertie_ci.properties import render_properties, write_properties
 
 WINDOWS_JAVA = r"C:\Program Files\Eclipse Adoptium\jdk-21\bin\java.exe"

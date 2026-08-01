@@ -81,17 +81,19 @@ in single-player.
 
 ## Install
 
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/`
-folder. Requires NeoForge for Minecraft 1.21.1.
+Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/fart-bomb/releases).
+New releases use `fart-bomb/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Building
 
-`gradle build` — the built JAR is written to `build/libs/`.
+`gradle :mods:fart-bomb:assemble` builds the JAR without running the independent test suites.
 
 ## Tests
 
-`gradle test` covers sound recognition, detonation decisions, and explosion placement.
-`gradle runGameTestServer` verifies the server mixins, fiery block tags, and a real
+`gradle :mods:fart-bomb:test` covers sound recognition, detonation decisions, and explosion placement.
+`gradle :mods:fart-bomb:runGameTestServer` verifies the server mixins, fiery block tags, and a real
 burning-player detonation. GameTest code is kept out of the release JAR.
 
 ## License

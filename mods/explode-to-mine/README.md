@@ -7,14 +7,19 @@ Locks certain ores so they must be exploded into a cracked, mineable twin block 
 - **Mod ID:** `explodetomine`
 
 ## Install
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1.
+Existing binaries remain on the
+[legacy release page](https://github.com/bertie-mc/explode-to-mine/releases). New releases
+use `explode-to-mine/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Building
-`gradle build` — the built JAR is written to `build/libs/`.
+`gradle :mods:explode-to-mine:assemble` builds the JAR without running the independent test suite.
 
 ## Testing
 
-`bertie-ci unit-test --project .` boots NeoForge’s test environment and verifies that
+From the monorepo root, `bertie-ci unit-test --component explode-to-mine` boots NeoForge’s
+test environment and verifies that
 each locked vanilla ore resolves to the intended registered cracked block while unrelated
 ores remain unchanged. CI runs this independently from artifact assembly.
 

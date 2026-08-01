@@ -8,15 +8,22 @@ Native EMI recipe-viewer plugins (28 modules) for machine mods that only ship JE
 - **Requires:** EMI
 
 ## Install
-Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus EMI.
+Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/berlords-emi/releases).
+New releases use `berlords-emi/vX.Y.Z` tags in the
+[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+`mods/` folder alongside NeoForge for Minecraft 1.21.1 and EMI.
 
 ## Credits / Integration
 Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
 
 ## Building
-`gradle build` — the built JAR is written to `build/libs/`. Every integration dependency resolves from Modrinth's maven. A few libraries this mod compiles against (anvillib, l2core, l2serial, confluence_magic_lib) aren't published standalone — they ship JarJar-embedded inside their parent mods, so the `extractJarJarLibs` Gradle task pulls those parent mods from Modrinth and extracts the nested jars at build time. Nothing third-party is committed to this repo. Requires internet access on the first build.
+`gradle :mods:berlords-emi:assemble` builds the JAR without running tests. Every integration dependency
+resolves from public Maven repositories. A few libraries this mod compiles against
+(anvillib, l2core, l2serial, and confluence_magic_lib) are published only inside their
+parent mods, so the shared `extractNestedJars` task extracts them into the ignored build
+directory. Nothing third-party is committed here; the first build requires network access.
 
-`gradle test` covers the shared machine-recipe descriptor. CI also launches EMI with Forbidden &
+`gradle :mods:berlords-emi:test` covers the shared machine-recipe descriptor. CI also launches EMI with Forbidden &
 Arcanus and joins a world, failing unless the production plugin completes integration registration.
 
 ## License

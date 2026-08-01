@@ -1,0 +1,44 @@
+format = "bertie-ci.workspace.v1"
+
+[workspace]
+component-descriptors = [
+  "mods/*/bertie-ci.toml",
+  "pack/bertie-ci.toml",
+  "tools/bertie-ci/bertie-ci.toml",
+]
+shared-mod-paths = [
+  "build.gradle.kts",
+  "settings.gradle.kts",
+  "gradle.properties",
+  "gradle/",
+  "build-logic/",
+]
+shared-all-paths = [
+  "bertie-ci.toml",
+  "flake.nix",
+  "flake.lock",
+  ".github/actions/",
+  ".github/workflows/check.yml",
+  "tools/bertie-ci/",
+]
+ignored-paths = [
+  ".github/dependabot.yml",
+  ".github/workflows/build-mod.yml",
+  ".github/workflows/client-test.yml",
+  ".github/workflows/gametest.yml",
+  ".github/workflows/github-release.yml",
+  ".github/workflows/pack-client.yml",
+  ".github/workflows/pack-server.yml",
+  ".github/workflows/release.yml",
+  ".github/workflows/server-test.yml",
+  ".github/workflows/unit-test.yml",
+  ".gitignore",
+  "README.md",
+  "**/AGENTS.md",
+  "**/CLAUDE.md",
+  "**/README.md",
+  "**/LICENSE",
+  "**/NOTICE",
+  "**/UNLICENSE",
+  "tools/migration/",
+]

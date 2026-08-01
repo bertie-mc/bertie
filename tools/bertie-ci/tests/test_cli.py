@@ -1,11 +1,12 @@
 import io
 import sys
 from pathlib import Path
-
-import pytest
+from types import SimpleNamespace
 
 import bertie_ci.cli as cli
+import pytest
 from bertie_ci.instance import Instance
+from bertie_ci.pack import PackMod
 
 
 def test_empty_adapter_path_means_omitted_optional_input() -> None:
@@ -116,6 +117,54 @@ def test_runtime_context_rejects_wrong_side_before_loading_tools(
         cli._runtime_context(descriptor, None, None, "client")
 
     assert loaded == []
+
+
+def test_workspace_overlay_skips_mods_not_installed_on_instance_side(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    descriptor = tmp_path / "instance.json"
+    descriptor.touch()
+    server_dir = tmp_path / "server"
+    server_dir.mkdir()
+    common = SimpleNamespace(subject="common", pack_metafile=Path("common.pw.toml"))
+    client = SimpleNamespace(subject="client", pack_metafile=Path("client.pw.toml"))
+    pack = SimpleNamespace(kind="pack", path=tmp_path / "pack")
+    workspace = SimpleNamespace(
+        root=tmp_path,
+        component=lambda subject: pack,
+    )
+    args = SimpleNamespace(
+        artifact_dir=Path("artifacts"),
+        instance=descriptor,
+        pack_component="pack",
+    )
+    installed: list[tuple[str, str]] = []
+    monkeypatch.setattr(
+        cli, "_selected_mods", lambda _args: (workspace, (client, common))
+    )
+    monkeypatch.setattr(
+        cli,
+        "load_instance",
+        lambda _path: Instance("server", server_dir, "1.21.1", "neoforge", "21.1.233"),
+    )
+    monkeypatch.setattr(
+        cli,
+        "_pack_mod",
+        lambda _pack, mod: PackMod(
+            f"{mod.subject}-old.jar", "client" if mod is client else "both"
+        ),
+    )
+    monkeypatch.setattr(
+        cli,
+        "install_mod",
+        lambda _descriptor, artifact, *, replace_filename: installed.append(
+            (artifact.name, replace_filename)
+        ),
+    )
+
+    cli._run_overlay_components(args)
+
+    assert installed == [("common", "common-old.jar")]
 
 
 def test_streams_survive_characters_outside_the_ansi_code_page(

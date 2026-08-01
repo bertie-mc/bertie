@@ -1,0 +1,14 @@
+format = "bertie-ci.component.v1"
+subject = "rustic-engineer-fix"
+kind = "neoforge-mod"
+gradle-project = ":mods:rustic-engineer-fix"
+mod-id = "rusticengineerfix"
+pack-metafile = "mods/rustic-engineer-fix.pw.toml"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
+
+[[suite]]
+id = "unit"
+runner = "unit"

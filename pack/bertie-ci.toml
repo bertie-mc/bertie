@@ -1,0 +1,26 @@
+format = "bertie-ci.component.v1"
+subject = "pack"
+kind = "pack"
+
+[version]
+file = "pack.toml"
+key = "version"
+
+[[suite]]
+id = "manifest"
+runner = "validate"
+
+[[suite]]
+id = "world-join"
+runner = "client"
+automatic = false
+timeout = 4800
+max-memory = "10G"
+
+[[suite]]
+id = "readiness"
+runner = "server"
+automatic = false
+command-test = "tests/runtime/server-readiness.json"
+timeout = 4500
+max-memory = "8G"
