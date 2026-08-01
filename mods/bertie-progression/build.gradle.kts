@@ -11,7 +11,7 @@ dependencies {
 
     // Ponder is published directly by Create's Maven; use the slim Create artifact so
     // its nested libraries do not have to be unpacked into this build.
-    compileOnly("com.simibubi.create:create-1.21.1:${libs.versions.create.maven.get()}:slim") {
+    compileOnly(variantOf(libs.create.maven) { classifier("slim") }) {
         isTransitive = false
     }
     compileOnly(libs.ponder) {

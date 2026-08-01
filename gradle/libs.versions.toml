@@ -10,7 +10,6 @@ gson = "2.14.0"
 
 emi = "1.1.24+1.21.1+neoforge"
 slag = "1.1a"
-create-modrinth = "6.0.10+mc1.21.1"
 create-maven = "6.0.10-281"
 ponder = "1.0.82+mc1.21.1"
 flywheel = "1.0.6"
@@ -66,7 +65,6 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 
 emi = { module = "maven.modrinth:emi", version.ref = "emi" }
 slag = { module = "maven.modrinth:slag-n-embers", version.ref = "slag" }
-create-modrinth = { module = "maven.modrinth:create", version.ref = "create-modrinth" }
 create-maven = { module = "com.simibubi.create:create-1.21.1", version.ref = "create-maven" }
 ponder = { module = "net.createmod.ponder:ponder-neoforge", version.ref = "ponder" }
 flywheel = { module = "dev.engine-room.flywheel:flywheel-neoforge-1.21.1", version.ref = "flywheel" }

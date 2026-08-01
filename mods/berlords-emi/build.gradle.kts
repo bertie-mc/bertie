@@ -24,7 +24,9 @@ val extractNestedJars = tasks.register<ExtractNestedJars>("extractNestedJars") {
 dependencies {
     compileOnly(libs.emi)
     compileOnly(libs.slag)
-    compileOnly(libs.create.modrinth)
+    compileOnly(variantOf(libs.create.maven) { classifier("slim") }) {
+        isTransitive = false
+    }
     compileOnly(libs.cataclysm)
     compileOnly(libs.irons.spells)
     compileOnly(libs.forbidden.arcanus)
