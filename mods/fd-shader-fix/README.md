@@ -19,6 +19,12 @@ This is a runtime patch for *fdlib*. It wraps fdlib's post-shader init in a try/
 
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle test` verifies that successful shader initialization is preserved and failures
+are reported without escaping. `gradle clientTestJar` builds a test-only mod that checks
+the wrapper is applied to fdlib in a headless client; it is excluded from releases.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
