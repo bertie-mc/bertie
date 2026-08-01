@@ -5,7 +5,7 @@ file = "config/artifacts/items.toml"
 hash = "cdd518a86598815cdeda1aa839a4d96cb2e0f6fb588c29c087d69f53dd0e5559"
 
 [[files]]
-file = "config/berlords_carving-armor-overrides.json"
+file = "config/berlordscarving-armor-overrides.json"
 hash = "b192d4ee4505583bd29978b475e65faab044b48193f9529431479e489824bea6"
 
 [[files]]
@@ -14,7 +14,7 @@ hash = "8899b89a7567cf28d688d16937bfff68d53c6db572b8b5a161aa916f5e8032df"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ash_and_twilight.snbt"
-hash = "635e95bd72a24fc17101cf36eb4ab9e0e4b064c39061fafe3aa0698e4f80f3c6"
+hash = "a25bc78035ca4cb093487e4771f9a0e206ae8d61db0612ed99c7bbabfeb0f390"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/concordance.snbt"
@@ -22,27 +22,27 @@ hash = "427193b9c6e4bd9dc42cf42d27c86fce4c4b4c92d7656630a65d9dc7bbd41048"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/dark_arts.snbt"
-hash = "86d439eaf3422f833bf80ae5f1ea2c7ecb6f31803ee4b4bee222b9350cb04a76"
+hash = "77848d32b70c80bb8b233b835f7d4c23501d626a9ebccdc44797e02edb19595e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/echo_and_below.snbt"
-hash = "d251262ae0b1e37936ec28d0730618a045180e5746cc1fccd69a99cf94fdd257"
+hash = "b044e883cd9b258379034377c5d0c39cc95e1d9c1452dcc416fc2622147e6298"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/five_by_five.snbt"
-hash = "ef528fad02fcae5a4cfe5e3bc59dec072e69463017e06e966e3b385bb7e84dae"
+hash = "899bc7788f450a15ed115fb2382a0c09d0dced6ac2c7e6582e64f564f5df98a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/god_of_war.snbt"
-hash = "340a93f2f900432230c518a71c83f55ae91bb7574aa8de3517e40e5f59e274c5"
+hash = "4ce4655aa7737ae41fea2547561f7895ef34098a35644727afffda30b0b1dda7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hands_and_stone.snbt"
-hash = "c2e91f758dd44d46602fc07e4e384b8a3c00537ee7326a65d21e274219001b05"
+hash = "f147d5300fdab16bbc7b4660f1883ba3cd27e901ad6d4fa4aead736a1d45d764"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetic_language.snbt"
-hash = "0ada23f1b87a9a8912d277c8eb443307c1b5eac1e0fef889af364658ab896edf"
+hash = "4e507ff727a228cec4904909ccab7885c442fa7533e933428ae3d97ef0e18f23"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -255,13 +255,18 @@ hash = "b8f9ab3c229ca511126a007b17916155252e510a25368c2277d6896503ee7d97"
 metafile = true
 
 [[files]]
+file = "mods/berlords-carving.pw.toml"
+hash = "5d6ca9d86ebc89eeebea3a1b87921f95e57f9a0aaa68f52bda8996bd202c217b"
+metafile = true
+
+[[files]]
 file = "mods/berlords-emi.pw.toml"
-hash = "bc3a1c791f566fba51c7e89666c7c91ab12e701a7011060e1e1543996d2c370f"
+hash = "a74bee8ac16b3f256fc6b402afd5b29dcb655049756ab30220d04b431dc89c23"
 metafile = true
 
 [[files]]
 file = "mods/berlords-food-system.pw.toml"
-hash = "5062a1ba9d7113a100fe6950b0a4c13e28d738bdffc45ac1afbd8772adf98528"
+hash = "15311bd0d48a75084f811222ed8d2ff05bc07f64538d8726a22db4c5c301b146"
 metafile = true
 
 [[files]]
@@ -271,27 +276,27 @@ metafile = true
 
 [[files]]
 file = "mods/bertie-blackhole.pw.toml"
-hash = "744dd8f3ae34d59a1d6bf3b0553334530473b55986eb396a9fd60628a3b126f3"
+hash = "c86c21ae9e2918193ebb1ab69cfb36e86409eae88dfafceb6e27a16787cae5e7"
 metafile = true
 
 [[files]]
 file = "mods/bertie-filters.pw.toml"
-hash = "426125306c8868fa635b852c506c3de9e5af8f9872ab56f2cb7e301af8769e28"
+hash = "4472f4def80b79eabdae825c4c28d637ca82b92647469a6647ffbc35844ae02e"
 metafile = true
 
 [[files]]
 file = "mods/bertie-progression.pw.toml"
-hash = "3c0e1c04a539f4cc585a3019bf6c4ed51ad98a99c5a5c90f631edcdd8e4b2605"
+hash = "c01abf68a13db187e630f3fa5c54d69b1f93cd201f5e26cd58804ff68b6192ec"
 metafile = true
 
 [[files]]
 file = "mods/bertie-tiers.pw.toml"
-hash = "ac785cc8cc951de604585ebf88a6b4a269d5452d359655437c5a2165c7955705"
+hash = "567f8c77e5955c5cbbc0661dbd508ec591c1de7fa1feac06698d5315922eeee7"
 metafile = true
 
 [[files]]
 file = "mods/bertie-weapons.pw.toml"
-hash = "e8aa62fbdb0a8a671d3b1d84e38655de084ff96d048ca6a2e96c18f295854ea9"
+hash = "d46ce06b4bf0b2e58ce42698922e5e3c193e726b03080bda1e4c8076a79a6544"
 metafile = true
 
 [[files]]
@@ -412,11 +417,6 @@ metafile = true
 [[files]]
 file = "mods/calcmod-neoforged.pw.toml"
 hash = "b4c34d1e24af4e5c7f299991052149ec609ecd4eea3ab29524ff0dbafa8072a0"
-metafile = true
-
-[[files]]
-file = "mods/carving.pw.toml"
-hash = "6cb636c7e4b477b25c9ce713ad019e308eba701d09ea6f596334af7aeebd389d"
 metafile = true
 
 [[files]]
@@ -1926,7 +1926,7 @@ metafile = true
 
 [[files]]
 file = "mods/primitive-refined.pw.toml"
-hash = "9a71b8f6a84b0b055e66c93a6f6028d5d6cfde196826ec2cefe58cfb6dfe319a"
+hash = "655093bf6b34f5f5a670cbfb215ac74c38593f95b237beac08dd374f840d18d8"
 metafile = true
 
 [[files]]

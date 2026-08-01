@@ -33,7 +33,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:runewood_resonance"
+				id: "bertieprogression:runewood_resonance"
 			}
 			dependencies: ["3B00000000000004"]
 			id: "3B00000000000005"
@@ -46,7 +46,7 @@
 					{
 						count: 1L
 						id: "3B00000001000005"
-						item: { count: 1 id: "bertie_progression:runewood_resonance" }
+						item: { count: 1 id: "bertieprogression:runewood_resonance" }
 						type: "item"
 					}
 				]
@@ -650,7 +650,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:sirok_nest_map"
+				id: "bertieprogression:sirok_nest_map"
 			}
 			dependencies: ["3B0000000000001A"]
 			id: "3B0000000000001F"
@@ -663,7 +663,7 @@
 					{
 						count: 1L
 						id: "3B0000000100001F"
-						item: { count: 1 id: "bertie_progression:sirok_nest_map" }
+						item: { count: 1 id: "bertieprogression:sirok_nest_map" }
 						type: "item"
 					}
 				]
@@ -673,7 +673,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:kraken_ship_map"
+				id: "bertieprogression:kraken_ship_map"
 			}
 			dependencies: ["3B0000000000001E"]
 			id: "3B00000000000020"
@@ -686,7 +686,7 @@
 					{
 						count: 1L
 						id: "3B00000001000020"
-						item: { count: 1 id: "bertie_progression:kraken_ship_map" }
+						item: { count: 1 id: "bertieprogression:kraken_ship_map" }
 						type: "item"
 					}
 				]
@@ -696,7 +696,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:yeti_hideout_map"
+				id: "bertieprogression:yeti_hideout_map"
 			}
 			dependencies: ["3B00000000000016"]
 			id: "3B00000000000021"
@@ -709,7 +709,7 @@
 					{
 						count: 1L
 						id: "3B00000001000021"
-						item: { count: 1 id: "bertie_progression:yeti_hideout_map" }
+						item: { count: 1 id: "bertieprogression:yeti_hideout_map" }
 						type: "item"
 					}
 				]
@@ -829,7 +829,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:abyssal_core"
+				id: "bertieprogression:abyssal_core"
 			}
 			dependencies: ["3B00000000000022"]
 			id: "3B00000000000026"
@@ -842,7 +842,7 @@
 					{
 						count: 1L
 						id: "3B00000001000026"
-						item: { count: 1 id: "bertie_progression:abyssal_core" }
+						item: { count: 1 id: "bertieprogression:abyssal_core" }
 						type: "item"
 					}
 				]
@@ -852,7 +852,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:desert_core"
+				id: "bertieprogression:desert_core"
 			}
 			dependencies: ["3B00000000000023"]
 			id: "3B00000000000027"
@@ -865,7 +865,7 @@
 					{
 						count: 1L
 						id: "3B00000001000027"
-						item: { count: 1 id: "bertie_progression:desert_core" }
+						item: { count: 1 id: "bertieprogression:desert_core" }
 						type: "item"
 					}
 				]
@@ -875,7 +875,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:cursed_core"
+				id: "bertieprogression:cursed_core"
 			}
 			dependencies: ["3B00000000000024"]
 			id: "3B00000000000028"
@@ -888,7 +888,7 @@
 					{
 						count: 1L
 						id: "3B00000001000028"
-						item: { count: 1 id: "bertie_progression:cursed_core" }
+						item: { count: 1 id: "bertieprogression:cursed_core" }
 						type: "item"
 					}
 				]
@@ -898,7 +898,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:storm_core"
+				id: "bertieprogression:storm_core"
 			}
 			dependencies: ["3B00000000000025"]
 			id: "3B00000000000029"
@@ -911,7 +911,7 @@
 					{
 						count: 1L
 						id: "3B00000001000029"
-						item: { count: 1 id: "bertie_progression:storm_core" }
+						item: { count: 1 id: "bertieprogression:storm_core" }
 						type: "item"
 					}
 				]
@@ -1054,7 +1054,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:netherly_meal"
+				id: "bertieprogression:netherly_meal"
 			}
 			dependencies: ["3B0000000000002E"]
 			id: "3B0000000000002F"
@@ -1067,7 +1067,7 @@
 					{
 						count: 1L
 						id: "3B0000000100002F"
-						item: { count: 1 id: "bertie_progression:netherly_meal" }
+						item: { count: 1 id: "bertieprogression:netherly_meal" }
 						type: "item"
 					}
 				]

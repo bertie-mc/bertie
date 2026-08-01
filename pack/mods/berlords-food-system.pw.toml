@@ -1,8 +1,8 @@
 name = "berlords-food-system"
-filename = "berlords_food_system-1.5.1.jar"
+filename = "berlordsfoodsystem-2.0.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/bertie-mc/berlords-food-system/releases/download/v1.5.1/berlords_food_system-1.5.1.jar"
+url = "https://github.com/bertie-mc/bertie/releases/download/berlords-food-system/v2.0.0/berlordsfoodsystem-2.0.0.jar"
 hash-format = "sha256"
-hash = "d777a2ffb47a45ea90ec26bb0e644f507da610e5be29738ed582c9da8e30b502"
+hash = "c0ebb699faff0327962b1523d0caa3e7ec57c7e48e354383e334bd0ae1df8ca4"

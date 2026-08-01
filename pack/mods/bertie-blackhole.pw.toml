@@ -1,8 +1,8 @@
 name = "bertie-blackhole"
-filename = "bertie_blackhole-0.3.0.jar"
+filename = "bertieblackhole-0.4.0.jar"
 side = "both"
 
 [download]
-url = "https://github.com/bertie-mc/bertie-blackhole/releases/download/v0.3.0/bertie_blackhole-0.3.0.jar"
+url = "https://github.com/bertie-mc/bertie/releases/download/bertie-blackhole/v0.4.0/bertieblackhole-0.4.0.jar"
 hash-format = "sha256"
-hash = "6ba581de1209c4190206bfbf746387e16ada179ec57d1299477eea7169f229b0"
+hash = "62ce37a716715c4c35cf0b5dd74a3ba9ce121fd08563b70f5851be7be9edb92e"

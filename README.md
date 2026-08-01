@@ -6,7 +6,8 @@ build logic, and the tools used to build, test, and release them.
 
 ## Repository layout
 
-- `mods/` — custom NeoForge mods, each with its own version and test descriptor
+- `mods/` — custom NeoForge mods, each with its own version and test descriptor; its runtime mod ID
+  is the directory basename with hyphens removed
 - `pack/` — the packwiz manifest and pack configuration
 - `build-logic/` — small, composable Gradle convention plugins
 - `tools/bertie-ci/` — provider-neutral build, test, instance, and release tooling
@@ -34,7 +35,7 @@ Build and tests are separate operations:
 ```bash
 gradle :mods:berlords-carving:assemble
 gradle :mods:berlords-carving:test
-bertie-ci gametest --workspace . --component carving
+bertie-ci gametest --workspace . --component berlords-carving
 ```
 
 Project-owned suites live in each component's `bertie-ci.toml`. To inspect or run the
@@ -55,7 +56,7 @@ See [bertie-ci](tools/bertie-ci/README.md) for the test model and
 ## Releases
 
 Components keep independent versions. Signed tags have the exact form
-`subject/vX.Y.Z`, for example `carving/v1.2.0`, `pack/v0.2.0`, or
+`subject/vX.Y.Z`, for example `berlords-carving/v2.0.0`, `pack/v0.2.0`, or
 `bertie-ci/v5.0.0`. Releases are started manually after the required pipelines are green
 for the commit being tagged.
 

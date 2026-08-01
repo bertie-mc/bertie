@@ -30,7 +30,7 @@
 							id: "minecraft:oak_log"
 						}
 						id: "1B00000001000001"
-						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertie_progression:natural_logs)', "minecraft:custom_name": '{"text":"Natural Logs","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertieprogression:natural_logs)', "minecraft:custom_name": '{"text":"Natural Logs","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
 						type: "item"
 					}
 				]
@@ -40,7 +40,7 @@
 		{
 			icon: {
 				count: 1
-				id: "berlords_carving:wood_slate"
+				id: "berlordscarving:wood_slate"
 			}
 			dependencies: ["1B00000000000001"]
 			id: "1B00000000000002"
@@ -53,7 +53,7 @@
 					{
 						count: 1L
 						id: "1B00000001000002"
-						item: { count: 1 id: "berlords_carving:wood_slate" }
+						item: { count: 1 id: "berlordscarving:wood_slate" }
 						type: "item"
 					}
 				]
@@ -63,7 +63,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:opening_mallet"
+				id: "bertieprogression:opening_mallet"
 			}
 			dependencies: ["1B00000000000001"]
 			id: "1B00000000000003"
@@ -76,7 +76,7 @@
 					{
 						count: 1L
 						id: "1B00000001000003"
-						item: { count: 1 id: "bertie_progression:opening_mallet" }
+						item: { count: 1 id: "bertieprogression:opening_mallet" }
 						type: "item"
 					}
 				]
@@ -703,7 +703,7 @@
 		{
 			icon: {
 				count: 1
-				id: "berlords_carving:carving_station"
+				id: "berlordscarving:carving_station"
 			}
 			dependencies: ["1B0000000000001B"]
 			id: "1B0000000000001C"
@@ -716,7 +716,7 @@
 					{
 						count: 1L
 						id: "1B0000000100001C"
-						item: { count: 1 id: "berlords_carving:carving_station" }
+						item: { count: 1 id: "berlordscarving:carving_station" }
 						type: "item"
 					}
 				]

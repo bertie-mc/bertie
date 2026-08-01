@@ -10,7 +10,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:echoing_city_compass"
+				id: "bertieprogression:echoing_city_compass"
 			}
 			id: "4B00000000000001"
 			rewards: [{
@@ -22,7 +22,7 @@
 					{
 						count: 1L
 						id: "4B00000001000001"
-						item: { count: 1 id: "bertie_progression:echoing_city_compass" }
+						item: { count: 1 id: "bertieprogression:echoing_city_compass" }
 						type: "item"
 					}
 				]
@@ -55,7 +55,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:warden_echo_pattern"
+				id: "bertieprogression:warden_echo_pattern"
 			}
 			dependencies: ["4B00000000000002"]
 			id: "4B00000000000003"
@@ -68,7 +68,7 @@
 					{
 						count: 1L
 						id: "4B00000001000003"
-						item: { count: 1 id: "bertie_progression:warden_echo_pattern" }
+						item: { count: 1 id: "bertieprogression:warden_echo_pattern" }
 						type: "item"
 					}
 				]
@@ -124,7 +124,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:echo_lock"
+				id: "bertieprogression:echo_lock"
 			}
 			dependencies: ["4B00000000000004"]
 			id: "4B00000000000006"
@@ -137,7 +137,7 @@
 					{
 						count: 1L
 						id: "4B00000001000006"
-						item: { count: 1 id: "bertie_progression:echo_lock" }
+						item: { count: 1 id: "bertieprogression:echo_lock" }
 						type: "item"
 					}
 				]
@@ -196,7 +196,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:spirit_focused_echo"
+				id: "bertieprogression:spirit_focused_echo"
 			}
 			dependencies: ["4B00000000000008"]
 			id: "4B00000000000009"
@@ -209,7 +209,7 @@
 					{
 						count: 1L
 						id: "4B00000001000009"
-						item: { count: 1 id: "bertie_progression:spirit_focused_echo" }
+						item: { count: 1 id: "bertieprogression:spirit_focused_echo" }
 						type: "item"
 					}
 				]
@@ -219,7 +219,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:descent_anchor"
+				id: "bertieprogression:descent_anchor"
 			}
 			dependencies: ["4B00000000000009"]
 			id: "4B0000000000000A"
@@ -232,7 +232,7 @@
 					{
 						count: 1L
 						id: "4B0000000100000A"
-						item: { count: 1 id: "bertie_progression:descent_anchor" }
+						item: { count: 1 id: "bertieprogression:descent_anchor" }
 						type: "item"
 					}
 				]

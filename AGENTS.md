@@ -36,6 +36,9 @@ downloads.
 Build and test operations remain separate. Target a mod with its Gradle project path, for
 example `gradle :mods:berlords-carving:assemble` or `gradle :mods:berlords-carving:test`. Use the smallest
 relevant unit, GameTest, client, or server suite, then run broader affected-project checks.
+For every owned NeoForge module directly under `mods/`, the runtime mod ID is the directory
+basename with hyphens removed; the component subject and release tag keep the readable kebab-case
+directory name.
 
 ## Releases
 

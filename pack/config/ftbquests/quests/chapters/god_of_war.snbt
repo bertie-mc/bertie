@@ -668,7 +668,7 @@
 		{
 			icon: {
 				count: 1
-				id: "berlords_carving:carving_station"
+				id: "berlordscarving:carving_station"
 			}
 			dependencies: ["7B00000000000001"]
 			id: "7B0000000000001E"
@@ -681,7 +681,7 @@
 					{
 						count: 1L
 						id: "7B0000000100001E"
-						item: { count: 1 id: "berlords_carving:carving_station" }
+						item: { count: 1 id: "berlordscarving:carving_station" }
 						type: "item"
 					}
 				]

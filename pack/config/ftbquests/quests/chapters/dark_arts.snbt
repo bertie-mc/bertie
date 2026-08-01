@@ -63,7 +63,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:weeping_eye"
+				id: "bertieprogression:weeping_eye"
 			}
 			id: "1C00000000000004"
 			rewards: [{
@@ -75,7 +75,7 @@
 					{
 						count: 1L
 						id: "1C00000001000004"
-						item: { count: 1 id: "bertie_progression:weeping_eye" }
+						item: { count: 1 id: "bertieprogression:weeping_eye" }
 						type: "item"
 					}
 				]

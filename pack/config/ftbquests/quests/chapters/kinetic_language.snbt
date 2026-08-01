@@ -300,7 +300,7 @@
 		{
 			icon: {
 				count: 1
-				id: "berlords_carving:amethyst_slate"
+				id: "berlordscarving:amethyst_slate"
 			}
 			id: "2B0000000000000D"
 			rewards: [{
@@ -312,7 +312,7 @@
 					{
 						count: 1L
 						id: "2B0000000100000D"
-						item: { count: 1 id: "berlords_carving:amethyst_slate" }
+						item: { count: 1 id: "berlordscarving:amethyst_slate" }
 						type: "item"
 					}
 				]
@@ -1149,7 +1149,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:twilight_concord"
+				id: "bertieprogression:twilight_concord"
 			}
 			dependencies: ["2B0000000000002E"]
 			id: "2B0000000000002F"
@@ -1162,7 +1162,7 @@
 					{
 						count: 1L
 						id: "2B0000000100002F"
-						item: { count: 1 id: "bertie_progression:twilight_concord" }
+						item: { count: 1 id: "bertieprogression:twilight_concord" }
 						type: "item"
 					}
 				]
@@ -1225,7 +1225,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:shield_maiden"
+				id: "bertieprogression:shield_maiden"
 			}
 			dependencies: ["2B00000000000031"]
 			id: "2B00000000000032"
@@ -1238,7 +1238,7 @@
 					{
 						count: 1L
 						id: "2B00000001000032"
-						item: { count: 1 id: "bertie_progression:shield_maiden" }
+						item: { count: 1 id: "bertieprogression:shield_maiden" }
 						type: "item"
 					}
 				]
@@ -1663,7 +1663,7 @@
 					{
 						count: 16L
 						id: "2B00000001000043"
-						item: { count: 1 id: "bertie_progression:kinetic_vane" }
+						item: { count: 1 id: "bertieprogression:kinetic_vane" }
 						type: "item"
 					}
 					{
@@ -1679,7 +1679,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:crafting_license"
+				id: "bertieprogression:crafting_license"
 			}
 			dependencies: ["2B00000000000033"]
 			id: "2B00000000000044"
@@ -1692,7 +1692,7 @@
 					{
 						count: 1L
 						id: "2B00000001000044"
-						item: { count: 1 id: "bertie_progression:crafting_license" }
+						item: { count: 1 id: "bertieprogression:crafting_license" }
 						type: "item"
 					}
 				]
@@ -1770,7 +1770,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:acolyte_of_deflection"
+				id: "bertieprogression:acolyte_of_deflection"
 			}
 			dependencies: ["2B00000000000033"]
 			id: "2B00000000000048"
@@ -1783,7 +1783,7 @@
 					{
 						count: 1L
 						id: "2B00000001000048"
-						item: { count: 1 id: "bertie_progression:acolyte_of_deflection" }
+						item: { count: 1 id: "bertieprogression:acolyte_of_deflection" }
 						type: "item"
 					}
 				]

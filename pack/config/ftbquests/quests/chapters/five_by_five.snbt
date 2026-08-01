@@ -32,7 +32,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:complex_spectrum_seal"
+				id: "bertieprogression:complex_spectrum_seal"
 			}
 			dependencies: ["6B00000000000001"]
 			id: "6B00000000000002"
@@ -45,7 +45,7 @@
 					{
 						count: 8L
 						id: "6B00000001000002"
-						item: { count: 1 id: "bertie_progression:complex_spectrum_seal" }
+						item: { count: 1 id: "bertieprogression:complex_spectrum_seal" }
 						type: "item"
 					}
 				]
@@ -77,7 +77,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:soulbound_authority"
+				id: "bertieprogression:soulbound_authority"
 			}
 			dependencies: ["6B00000000000003"]
 			id: "6B00000000000004"
@@ -90,7 +90,7 @@
 					{
 						count: 8L
 						id: "6B00000001000004"
-						item: { count: 1 id: "bertie_progression:soulbound_authority" }
+						item: { count: 1 id: "bertieprogression:soulbound_authority" }
 						type: "item"
 					}
 				]
@@ -100,7 +100,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:well_attunement"
+				id: "bertieprogression:well_attunement"
 			}
 			dependencies: ["6B00000000000004"]
 			id: "6B00000000000005"
@@ -113,7 +113,7 @@
 					{
 						count: 1L
 						id: "6B00000001000005"
-						item: { count: 1 id: "bertie_progression:well_attunement" }
+						item: { count: 1 id: "bertieprogression:well_attunement" }
 						type: "item"
 					}
 				]
@@ -146,7 +146,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:ignitium_lattice"
+				id: "bertieprogression:ignitium_lattice"
 			}
 			dependencies: ["6B00000000000006"]
 			id: "6B00000000000007"
@@ -159,7 +159,7 @@
 					{
 						count: 2L
 						id: "6B00000001000007"
-						item: { count: 1 id: "bertie_progression:ignitium_lattice" }
+						item: { count: 1 id: "bertieprogression:ignitium_lattice" }
 						type: "item"
 					}
 				]
@@ -169,7 +169,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:ignitium_strut"
+				id: "bertieprogression:ignitium_strut"
 			}
 			dependencies: ["6B00000000000007"]
 			id: "6B00000000000008"
@@ -182,7 +182,7 @@
 					{
 						count: 8L
 						id: "6B00000001000008"
-						item: { count: 1 id: "bertie_progression:ignitium_strut" }
+						item: { count: 1 id: "bertieprogression:ignitium_strut" }
 						type: "item"
 					}
 				]
@@ -215,7 +215,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:dragonbone_frame"
+				id: "bertieprogression:dragonbone_frame"
 			}
 			dependencies: ["6B00000000000009"]
 			id: "6B0000000000000A"
@@ -228,7 +228,7 @@
 					{
 						count: 2L
 						id: "6B0000000100000A"
-						item: { count: 1 id: "bertie_progression:dragonbone_frame" }
+						item: { count: 1 id: "bertieprogression:dragonbone_frame" }
 						type: "item"
 					}
 				]
@@ -238,7 +238,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:dragonbone_brace"
+				id: "bertieprogression:dragonbone_brace"
 			}
 			dependencies: ["6B0000000000000A"]
 			id: "6B0000000000000B"
@@ -251,7 +251,7 @@
 					{
 						count: 8L
 						id: "6B0000000100000B"
-						item: { count: 1 id: "bertie_progression:dragonbone_brace" }
+						item: { count: 1 id: "bertieprogression:dragonbone_brace" }
 						type: "item"
 					}
 				]
@@ -261,7 +261,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:concordant_moonsteel_ingot"
+				id: "bertieprogression:concordant_moonsteel_ingot"
 			}
 			dependencies: ["6B00000000000008"]
 			id: "6B0000000000000C"
@@ -274,7 +274,7 @@
 					{
 						count: 4L
 						id: "6B0000000100000C"
-						item: { count: 1 id: "bertie_progression:concordant_moonsteel_ingot" }
+						item: { count: 1 id: "bertieprogression:concordant_moonsteel_ingot" }
 						type: "item"
 					}
 				]
@@ -284,7 +284,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:hephaestian_sovereign_seal"
+				id: "bertieprogression:hephaestian_sovereign_seal"
 			}
 			dependencies: ["6B0000000000000C"]
 			id: "6B0000000000000D"
@@ -297,7 +297,7 @@
 					{
 						count: 4L
 						id: "6B0000000100000D"
-						item: { count: 1 id: "bertie_progression:hephaestian_sovereign_seal" }
+						item: { count: 1 id: "bertieprogression:hephaestian_sovereign_seal" }
 						type: "item"
 					}
 				]
@@ -307,7 +307,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:convergence_matrix"
+				id: "bertieprogression:convergence_matrix"
 			}
 			dependencies: [
 				"6B0000000000000D"
@@ -323,7 +323,7 @@
 					{
 						count: 2L
 						id: "6B0000000100000E"
-						item: { count: 1 id: "bertie_progression:convergence_matrix" }
+						item: { count: 1 id: "bertieprogression:convergence_matrix" }
 						type: "item"
 					}
 				]
@@ -356,7 +356,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:mekanism_access_core"
+				id: "bertieprogression:mekanism_access_core"
 			}
 			dependencies: ["6B0000000000000F"]
 			id: "6B00000000000010"
@@ -369,7 +369,7 @@
 					{
 						count: 1L
 						id: "6B00000001000010"
-						item: { count: 1 id: "bertie_progression:mekanism_access_core" }
+						item: { count: 1 id: "bertieprogression:mekanism_access_core" }
 						type: "item"
 					}
 				]

@@ -100,10 +100,10 @@ contract rather than reusing client terminology.
 Build and JVM tests are deliberately separate:
 
 ```bash
-bertie-ci build --workspace . --component carving \
+bertie-ci build --workspace . --component berlords-carving \
   --output-dir .bertie-ci/artifacts
-bertie-ci unit-test --workspace . --component carving
-bertie-ci gametest --workspace . --component carving
+bertie-ci unit-test --workspace . --component berlords-carving
+bertie-ci gametest --workspace . --component berlords-carving
 ```
 
 `build` runs `assemble` and stages exactly one releasable JAR. `unit-test` runs
