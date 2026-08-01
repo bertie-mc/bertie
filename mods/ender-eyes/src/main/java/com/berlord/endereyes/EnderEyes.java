@@ -1,6 +1,7 @@
 package com.berlord.endereyes;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -28,11 +29,8 @@ import net.neoforged.neoforge.event.entity.living.EnderManAngerEvent;
  * deliberately leaving it out of the {@code in_enchanting_table}/{@code tradeable}
  * tags and out of {@code non_treasure}.
  *
- * <p><b>Loot injection removed (2026-06-14):</b> the original shipped a global loot
- * modifier that put the book in End City treasure chests, but its loot-table condition
- * was malformed and the unconditional modifier leaked the book into unrelated loot
- * tables (e.g. dirt drops). Per berlord, the loot modifier was deleted entirely — the
- * book is now obtainable only via {@code /give} or other external means.
+ * <p>The enchantment has no built-in acquisition path. Modpacks may add it to loot,
+ * trades, or another progression system as appropriate.
  *
  * <p>The original Fabric mod implemented the anger suppression with a mixin on
  * {@code EnderMan#isLookingAtMe}. On NeoForge the dedicated {@link EnderManAngerEvent}
@@ -69,22 +67,20 @@ public class EnderEyes {
         if (player == null) {
             return;
         }
-
-        // Only the HEAD slot matters — the enchantment is helmet-only.
         ItemStack helmet = player.getItemBySlot(EquipmentSlot.HEAD);
-        if (helmet.isEmpty()) {
-            return;
-        }
-
-        // Look the enchantment holder up from the (data-driven) enchantment registry.
-        Holder<Enchantment> enchantment = player.registryAccess()
-                .lookupOrThrow(Registries.ENCHANTMENT)
-                .getOrThrow(ENDER_EYES_KEY);
-
-        // If the helmet carries any level of Ender Eyes, suppress the anger.
-        int level = EnchantmentHelper.getItemEnchantmentLevel(enchantment, helmet);
-        if (level > 0) {
+        if (protectsFromEnderman(player.registryAccess(), helmet)) {
             event.setCanceled(true);
         }
+    }
+
+    static boolean protectsFromEnderman(RegistryAccess registries, ItemStack helmet) {
+        if (helmet.isEmpty()) {
+            return false;
+        }
+
+        Holder<Enchantment> enchantment = registries
+                .lookupOrThrow(Registries.ENCHANTMENT)
+                .getOrThrow(ENDER_EYES_KEY);
+        return EnchantmentHelper.getItemEnchantmentLevel(enchantment, helmet) > 0;
     }
 }

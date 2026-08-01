@@ -14,7 +14,14 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 Clean-room NeoForge reimplementation of the Fabric mod *Ender Eyes*' behaviour; no upstream code was reused.
 
 ## Building
-`gradle build` — the built JAR is written to `build/libs/`.
+
+`gradle build` writes the JAR to `build/libs/`.
+
+## Testing
+
+`gradle test` boots NeoForge's test environment and checks the enchantment against the
+real data-driven enchantment registry. The suite covers enchanted, unenchanted, and
+empty helmet slots without launching a graphical client.
 
 ## License
 
