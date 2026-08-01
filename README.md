@@ -32,8 +32,8 @@ does not download toolchains through Gradle.
 Build and tests are separate operations:
 
 ```bash
-gradle :mods:carving:assemble
-gradle :mods:carving:test
+gradle :mods:berlords-carving:assemble
+gradle :mods:berlords-carving:test
 bertie-ci gametest --workspace . --component carving
 ```
 

@@ -1,4 +1,4 @@
-# Bertie Progression (`bertie_progression`)
+# Bertie Progression (`bertieprogression`)
 
 The progression mod for the **bertie** modpack. NeoForge **1.21.1** / Java **21**.
 
@@ -23,7 +23,7 @@ recipe changes used to connect the pack's exploration, technology and magic syst
 
 Plus the current material chain — dragonbone frames and braces, ignitium struts and lattices,
 kinetic vanes and pattern plates, seals, resonances and attunements — each with its own
-texture under `assets/bertie_progression/textures/item/`.
+texture under `assets/bertieprogression/textures/item/`.
 
 ### Blocks
 

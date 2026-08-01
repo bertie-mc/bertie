@@ -185,7 +185,7 @@ public final class PrRegistry {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("main",
             () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.primitive_refined"))
+                    .title(Component.translatable("itemGroup.primitiverefined"))
                     .icon(() -> new ItemStack(P_CONTROLLER_ITEM.get()))
                     .displayItems((params, output) -> {
                         output.accept(P_CONTROLLER_ITEM.get());

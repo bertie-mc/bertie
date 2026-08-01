@@ -30,7 +30,7 @@ ignored-paths = [".github/dependabot.yml", "README.md", "docs/**"]
 subject = "base"
 kind = "neoforge-mod"
 gradle-project = ":mods:base"
-mod-id = "base_mod"
+mod-id = "base"
 pack-metafile = "mods/base.pw.toml"
 
 [version]
@@ -58,7 +58,7 @@ max-memory = "5g"
 subject = "consumer"
 kind = "neoforge-mod"
 gradle-project = ":mods:consumer"
-mod-id = "consumer_mod"
+mod-id = "consumer"
 pack-metafile = "mods/consumer.pw.toml"
 depends-on = ["base"]
 
@@ -104,6 +104,20 @@ def test_discovers_components_and_versions(tmp_path: Path) -> None:
     assert set(workspace.components) == {"base", "consumer", "pack"}
     assert workspace.component("base").version() == "1.2.3"
     assert Workspace.find(tmp_path / "mods" / "base").root == tmp_path
+
+
+def test_owned_mod_id_matches_directory_without_hyphens(tmp_path: Path) -> None:
+    _workspace(tmp_path)
+    descriptor = tmp_path / "mods" / "base" / "bertie-ci.toml"
+    descriptor.write_text(
+        descriptor.read_text(encoding="utf-8").replace(
+            'mod-id = "base"', 'mod-id = "base_mod"'
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(RuntimeError, match="directory name without hyphens"):
+        Workspace.load(tmp_path)
 
 
 def test_affected_component_includes_reverse_dependents(tmp_path: Path) -> None:

@@ -4,7 +4,7 @@ Adds an FTB Filter System custom filter (`bertie:wooden`) that matches wooden-ma
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
-- **Mod ID:** `bertie_filters`
+- **Mod ID:** `bertiefilters`
 - **Requires:** FTB Filter System, Slag 'n' Embers
 
 ## Install

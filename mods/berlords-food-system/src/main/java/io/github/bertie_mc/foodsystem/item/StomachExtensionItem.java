@@ -35,7 +35,7 @@ public class StomachExtensionItem extends Item {
         if (Stomach.unlockedSlots(player) >= Config.maxSlots()) {
             if (!level.isClientSide()) {
                 player.displayClientMessage(
-                        Component.translatable("item.berlords_food_system.stomach_extension.at_max"), true);
+                        Component.translatable("item.berlordsfoodsystem.stomach_extension.at_max"), true);
             }
             return InteractionResultHolder.fail(player.getItemInHand(hand));
         }
@@ -59,7 +59,7 @@ public class StomachExtensionItem extends Item {
                 level.playSound(null, player.getX(), player.getY(), player.getZ(),
                         SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8F, 1.2F);
                 player.displayClientMessage(Component.translatable(
-                        "item.berlords_food_system.stomach_extension.grown",
+                        "item.berlordsfoodsystem.stomach_extension.grown",
                         Stomach.unlockedSlots(player)), true);
                 if (player instanceof ServerPlayer serverPlayer) {
                     Stomach.sync(serverPlayer);
@@ -81,6 +81,6 @@ public class StomachExtensionItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.translatable("item.berlords_food_system.stomach_extension.tooltip", Config.maxSlots()));
+        tooltip.add(Component.translatable("item.berlordsfoodsystem.stomach_extension.tooltip", Config.maxSlots()));
     }
 }

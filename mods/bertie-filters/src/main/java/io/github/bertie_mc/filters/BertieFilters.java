@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
  */
 @Mod(BertieFilters.MODID)
 public class BertieFilters {
-    public static final String MODID = "bertie_filters";
-    private static final Logger LOGGER = LoggerFactory.getLogger("bertie_filters");
+    public static final String MODID = "bertiefilters";
+    private static final Logger LOGGER = LoggerFactory.getLogger("bertiefilters");
 
     public BertieFilters(IEventBus modEventBus) {
         // The FFS event bus is static, so registration happens during construction.

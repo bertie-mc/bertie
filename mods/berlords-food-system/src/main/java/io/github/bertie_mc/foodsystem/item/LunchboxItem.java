@@ -64,10 +64,10 @@ public class LunchboxItem extends Item {
                 level.playSound(null, player.getX(), player.getY(), player.getZ(),
                         SoundEvents.ITEM_PICKUP, SoundSource.PLAYERS, 0.7F, 1.0F);
                 player.displayClientMessage(
-                        Component.translatable("item.berlords_food_system.lunchbox.packed", packed), true);
+                        Component.translatable("item.berlordsfoodsystem.lunchbox.packed", packed), true);
             } else {
                 player.displayClientMessage(
-                        Component.translatable("item.berlords_food_system.lunchbox.nothing_to_pack"), true);
+                        Component.translatable("item.berlordsfoodsystem.lunchbox.nothing_to_pack"), true);
             }
         } else {
             int eaten = dispense(box, player);
@@ -75,10 +75,10 @@ public class LunchboxItem extends Item {
                 level.playSound(null, player.getX(), player.getY(), player.getZ(),
                         SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 1.0F);
                 player.displayClientMessage(
-                        Component.translatable("item.berlords_food_system.lunchbox.ate", eaten), true);
+                        Component.translatable("item.berlordsfoodsystem.lunchbox.ate", eaten), true);
             } else {
                 player.displayClientMessage(
-                        Component.translatable("item.berlords_food_system.lunchbox.cannot_eat"), true);
+                        Component.translatable("item.berlordsfoodsystem.lunchbox.cannot_eat"), true);
             }
         }
         return InteractionResultHolder.success(box);
@@ -151,19 +151,19 @@ public class LunchboxItem extends Item {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         List<ItemStack> contents = read(stack);
         if (contents.isEmpty()) {
-            tooltip.add(Component.translatable("item.berlords_food_system.lunchbox.empty")
+            tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.empty")
                     .withStyle(ChatFormatting.GRAY));
         } else {
             int total = 0;
             for (ItemStack c : contents) total += c.getCount();
-            tooltip.add(Component.translatable("item.berlords_food_system.lunchbox.contents", total)
+            tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.contents", total)
                     .withStyle(ChatFormatting.GRAY));
             for (ItemStack c : contents) {
-                tooltip.add(Component.translatable("item.berlords_food_system.lunchbox.entry",
+                tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.entry",
                         c.getCount(), c.getHoverName()).withStyle(ChatFormatting.DARK_GRAY));
             }
         }
-        tooltip.add(Component.translatable("item.berlords_food_system.lunchbox.usage")
+        tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.usage")
                 .withStyle(ChatFormatting.DARK_GRAY));
     }
 }

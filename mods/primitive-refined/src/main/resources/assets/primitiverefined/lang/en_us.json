@@ -1,0 +1,11 @@
+{
+  "itemGroup.primitiverefined": "Primitive Refined",
+  "block.primitiverefined.p_controller": "Primitive Controller",
+  "block.primitiverefined.soulstained_shaft": "Arcanetic Shaft",
+  "block.primitiverefined.obsidiansteel_cogwheel_soulstained": "Arcanetic Cog",
+  "block.primitiverefined.p_grid": "Mechanical Grid",
+  "block.primitiverefined.p_crafting_grid": "Mechanical Crafting Grid",
+  "block.primitiverefined.external_reader": "External Reader",
+  "block.primitiverefined.arcanetic_gearbox": "Arcanetic Gearbox",
+  "item.primitiverefined.arcanetic_gearbox_vertical": "Vertical Arcanetic Gearbox"
+}

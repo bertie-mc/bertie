@@ -16,7 +16,7 @@ import java.util.List;
 import net.neoforged.fml.loading.FMLPaths;
 
 /**
- * Owns {@code config/bertie_tiers.json}: writes the shipped default on first run, loads it, and
+ * Owns {@code config/bertietiers.json}: writes the shipped default on first run, loads it, and
  * swaps the result into {@link MiningAuthority} in one go.
  *
  * <p>Load is all-or-nothing on purpose. Parsing, validation and index building all happen against
@@ -25,8 +25,8 @@ import net.neoforged.fml.loading.FMLPaths;
  * reports back to the operator.
  */
 public final class ConfigManager {
-    public static final String FILE_NAME = "bertie_tiers.json";
-    private static final String DEFAULT_RESOURCE = "/bertie_tiers/default_config.json";
+    public static final String FILE_NAME = "bertietiers.json";
+    private static final String DEFAULT_RESOURCE = "/bertietiers/default_config.json";
 
     private ConfigManager() {}
 

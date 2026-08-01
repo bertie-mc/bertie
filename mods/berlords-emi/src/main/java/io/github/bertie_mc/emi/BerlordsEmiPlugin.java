@@ -41,7 +41,7 @@ import org.slf4j.LoggerFactory;
  */
 @EmiEntrypoint
 public class BerlordsEmiPlugin implements EmiPlugin {
-    private static final Logger LOGGER = LoggerFactory.getLogger("berlords_emi");
+    private static final Logger LOGGER = LoggerFactory.getLogger("berlordsemi");
 
     @Override
     public void register(EmiRegistry registry) {
@@ -82,7 +82,7 @@ public class BerlordsEmiPlugin implements EmiPlugin {
             module.run();
             return true;
         } catch (Throwable t) {
-            LOGGER.error("berlords_emi: integration for '{}' failed to register", modid, t);
+            LOGGER.error("berlordsemi: integration for '{}' failed to register", modid, t);
             return false;
         }
     }

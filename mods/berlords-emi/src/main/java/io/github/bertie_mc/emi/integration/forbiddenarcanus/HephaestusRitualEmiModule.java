@@ -83,7 +83,7 @@ public final class HephaestusRitualEmiModule {
                     if (!tier.test(t)) {
                         continue;
                     }
-                    ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath("berlords_emi",
+                    ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath("berlordsemi",
                             "fa_hephaestus_ritual_tier_" + t + "/" + ritualId.getNamespace() + "/" + ritualId.getPath());
                     reg.addRecipe(new GenericEmiRecipe(byTier[t], displayId, d));
                 }

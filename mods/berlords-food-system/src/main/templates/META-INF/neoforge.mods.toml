@@ -10,7 +10,7 @@ authors="${mod_authors}"
 description='''${mod_description}'''
 
 [[mixins]]
-config = "berlords_food_system.mixins.json"
+config = "berlordsfoodsystem.mixins.json"
 
 [[dependencies.${mod_id}]]
 modId="neoforge"

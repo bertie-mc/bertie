@@ -449,6 +449,13 @@ class Workspace:
             raise RuntimeError(f"Invalid mod-id in {descriptor}")
         if kind == "neoforge-mod" and mod_id is None:
             raise RuntimeError(f"NeoForge component lacks mod-id: {descriptor}")
+        if kind == "neoforge-mod" and relative_path.parent == Path("mods"):
+            expected_mod_id = relative_path.name.replace("-", "")
+            if mod_id != expected_mod_id:
+                raise RuntimeError(
+                    "Owned mod id must equal its directory name without hyphens: "
+                    f"{mod_id!r} != {expected_mod_id!r} in {descriptor}"
+                )
         pack_metafile_value = data.get("pack-metafile")
         pack_metafile = (
             Path(pack_metafile_value)

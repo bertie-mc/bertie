@@ -24,13 +24,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CREATE_TEX = os.path.join(HERE, "extracted", "assets", "create", "textures", "block")
 CREATE_MODEL = os.path.join(HERE, "extracted", "assets", "create", "models", "block")
 RES = os.path.join(HERE, os.pardir, "src", "main", "resources")
-TEX_OUT = os.path.join(RES, "assets", "primitive_refined", "textures", "block")
-MODEL_OUT = os.path.join(RES, "assets", "primitive_refined", "models")
+TEX_OUT = os.path.join(RES, "assets", "primitiverefined", "textures", "block")
+MODEL_OUT = os.path.join(RES, "assets", "primitiverefined", "models")
 
 BRASS = "create:block/brass_casing"
-PANEL = "primitive_refined:block/arcanetic_gearbox"
-AXIS = "primitive_refined:block/soulstained_axis"
-AXIS_TOP = "primitive_refined:block/soulstained_axis_top"
+PANEL = "primitiverefined:block/arcanetic_gearbox"
+AXIS = "primitiverefined:block/soulstained_axis"
+AXIS_TOP = "primitiverefined:block/soulstained_axis_top"
 
 
 def is_perimeter_metal(p):
@@ -118,25 +118,25 @@ def shaft():
 
 def blockstate_and_loot():
     bs = {"variants": {
-        "axis=x": {"model": "primitive_refined:block/arcanetic_gearbox",
+        "axis=x": {"model": "primitiverefined:block/arcanetic_gearbox",
                    "uvlock": True, "x": 90, "y": 90},
-        "axis=y": {"model": "primitive_refined:block/arcanetic_gearbox", "uvlock": True},
-        "axis=z": {"model": "primitive_refined:block/arcanetic_gearbox",
+        "axis=y": {"model": "primitiverefined:block/arcanetic_gearbox", "uvlock": True},
+        "axis=z": {"model": "primitiverefined:block/arcanetic_gearbox",
                    "uvlock": True, "x": 90, "y": 180},
     }}
-    p = os.path.join(RES, "assets", "primitive_refined", "blockstates",
+    p = os.path.join(RES, "assets", "primitiverefined", "blockstates",
                      "arcanetic_gearbox.json")
     with open(p, "w", newline="\n") as fh:
         json.dump(bs, fh, indent=2)
         fh.write("\n")
     print("wrote blockstates/arcanetic_gearbox.json")
-    p = os.path.join(RES, "data", "primitive_refined", "loot_table", "blocks",
+    p = os.path.join(RES, "data", "primitiverefined", "loot_table", "blocks",
                      "arcanetic_gearbox.json")
     with open(p, "w", newline="\n") as fh:
         json.dump({"type": "minecraft:block", "pools": [{
             "rolls": 1, "bonus_rolls": 0,
             "entries": [{"type": "minecraft:item",
-                         "name": "primitive_refined:arcanetic_gearbox"}],
+                         "name": "primitiverefined:arcanetic_gearbox"}],
             "conditions": [{"condition": "minecraft:survives_explosion"}]}]}, fh, indent=2)
         fh.write("\n")
     print("wrote loot_table/blocks/arcanetic_gearbox.json")

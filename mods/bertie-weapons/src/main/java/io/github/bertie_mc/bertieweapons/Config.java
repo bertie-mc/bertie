@@ -4,7 +4,7 @@ import java.util.List;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 /**
- * Tier caps and the element ring, in {@code config/bertie_weapons-common.toml}.
+ * Tier caps and the element ring, in {@code config/bertieweapons-common.toml}.
  *
  * <p>The ring is a plain list of {@code irons_spellbooks:upgrade_orb_type} registry IDs rather
  * than anything hardcoded, because the pack keeps gaining schools - {@code cataclysm_spellbooks}

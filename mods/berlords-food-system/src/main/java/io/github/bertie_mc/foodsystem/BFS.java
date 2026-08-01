@@ -55,7 +55,7 @@ import java.util.function.Supplier;
  */
 @Mod(BFS.MODID)
 public class BFS {
-    public static final String MODID = "berlords_food_system";
+    public static final String MODID = "berlordsfoodsystem";
 
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS =
             DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, MODID);
@@ -64,10 +64,10 @@ public class BFS {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     public static final DeferredItem<Item> EMETIC =
-            ITEMS.registerItem("emetic", p -> new EmeticItem(p, false, "item.berlords_food_system.emetic.tooltip"),
+            ITEMS.registerItem("emetic", p -> new EmeticItem(p, false, "item.berlordsfoodsystem.emetic.tooltip"),
                     new Item.Properties().stacksTo(16));
     public static final DeferredItem<Item> DEMONIC_GRUEL =
-            ITEMS.registerItem("demonic_gruel", p -> new EmeticItem(p, true, "item.berlords_food_system.demonic_gruel.tooltip"),
+            ITEMS.registerItem("demonic_gruel", p -> new EmeticItem(p, true, "item.berlordsfoodsystem.demonic_gruel.tooltip"),
                     new Item.Properties().stacksTo(16));
     public static final DeferredItem<Item> STOMACH_EXTENSION =
             ITEMS.registerItem("stomach_extension", StomachExtensionItem::new, new Item.Properties().stacksTo(16));
@@ -156,7 +156,7 @@ public class BFS {
                         return Command.SINGLE_SUCCESS;
                     }))
                     .then(Commands.literal("dumpids").executes(ctx -> {
-                        java.nio.file.Path file = FMLPaths.CONFIGDIR.get().resolve("berlords-food-system-ids.txt");
+                        java.nio.file.Path file = FMLPaths.CONFIGDIR.get().resolve("berlordsfoodsystem-ids.txt");
                         StringBuilder sb = new StringBuilder();
                         sb.append("All ids usable in ").append(io.github.bertie_mc.foodsystem.buffs.BuffsConfig.FILE_NAME)
                                 .append(" (this instance, including modded)\n\n== EFFECTS (\"effects\": [{\"id\": ..., \"amplifier\": 0}]) ==\n");

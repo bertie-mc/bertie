@@ -1,4 +1,4 @@
-# Bertie Weapons (`bertie_weapons`)
+# Bertie Weapons (`bertieweapons`)
 
 Tiered, non-destructive weapon empowerment for the **bertie** modpack. NeoForge 1.21.1.
 
@@ -50,7 +50,7 @@ Almost all of this is Iron's own machinery; the mod is mostly wiring.
 
 | Piece | Where it lives |
 | --- | --- |
-| Tier magnitudes | `data/bertie_weapons/irons_spellbooks/upgrade_orb_type/{weapon_power,spell_tier}.json` |
+| Tier magnitudes | `data/bertieweapons/irons_spellbooks/upgrade_orb_type/{weapon_power,spell_tier}.json` |
 | Tier counters | Iron's `irons_spellbooks:upgrade_data` component — the per-entry count **is** the tier |
 | Attribute application | Iron's `ServerPlayerEvents.handleUpgradeModifiers` (`ItemAttributeModifierEvent`) |
 | Progression rules | `logic/TierState` — pure, no Minecraft types |
@@ -74,7 +74,7 @@ recipe, so a new station cannot accidentally break it.
 
 ## Configuration
 
-`config/bertie_weapons-common.toml`:
+`config/bertieweapons-common.toml`:
 
 | Key | Default | Meaning |
 | --- | --- | --- |
@@ -94,8 +94,8 @@ that is where Iron's reads them from.
 
 | Tag | Contents |
 | --- | --- |
-| `#bertie_weapons:upgradable_weapons` | `#simplyswords:lootable_uniques`, `#simplyswords:conditional_uniques_type_2`, `#simplymore:uniques` (all `required: false`) |
-| `#bertie_weapons:stat_catalysts` | `minecraft:diamond` — placeholder |
+| `#bertieweapons:upgradable_weapons` | `#simplyswords:lootable_uniques`, `#simplyswords:conditional_uniques_type_2`, `#simplymore:uniques` (all `required: false`) |
+| `#bertieweapons:stat_catalysts` | `minecraft:diamond` — placeholder |
 
 ---
 
@@ -130,7 +130,7 @@ excluded from releases. These cover the parts that only exist at runtime:
 - the same element is refused twice in one tier
 - enchantment, durability and custom name survive; the two tracks do not interfere
 - an unmanaged Iron's upgrade (`cooldown`) survives an upgrade
-- the real `RecipeManager` matches weapon + diamond to `bertie_weapons:stat_upgrade`
+- the real `RecipeManager` matches weapon + diamond to `bertieweapons:stat_upgrade`
 - weapon + fire orb matches; weapon + **cooldown** orb (a real orb outside the ring) does not
 - non-unique and vanilla weapons are not upgradable
 
@@ -145,7 +145,7 @@ to be copied into `run/mods/`.
   types, not crafting recipes, so each needs a thin adapter calling the same `WeaponUpgrades` entry
   points. The logic is already station-agnostic for exactly this reason.
 - **No EMI/JEI display.** `CustomRecipe`s have no fixed inputs to show. Needs a hand-written
-  category, most naturally in the existing `berlords_emi` project.
+  category, most naturally in the existing `berlordsemi` project.
 - **No custom tooltip.** Upgrades render as Iron's stock attribute lines, so a weapon mid-ring shows
   eight separate elemental entries with no "tier 3, 5/8 elements" summary.
 - **Uniques are deliberately kept out of `#irons_spellbooks:upgrade_whitelist`.** Adding them would

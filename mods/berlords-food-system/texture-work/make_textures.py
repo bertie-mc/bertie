@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VANILLA = os.path.join(HERE, "vanilla")
 OUT = os.path.join(HERE, "out")
 DEST = os.path.join(HERE, "..", "src", "main", "resources", "assets",
-                    "berlords_food_system", "textures", "item")
+                    "berlordsfoodsystem", "textures", "item")
 os.makedirs(OUT, exist_ok=True)
 
 FRAMES = 8

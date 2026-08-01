@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 @Mod(BertieBlackHole.MOD_ID)
 public class BertieBlackHole {
 
-    public static final String MOD_ID = "bertie_blackhole";
+    public static final String MOD_ID = "bertieblackhole";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public BertieBlackHole(IEventBus ignored) {

@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 EXTRACTED = os.path.join(HERE, "extracted", "assets")
 CREATE = os.path.join(EXTRACTED, "create", "textures", "block")
 OUT = os.path.join(HERE, os.pardir, "src", "main", "resources", "assets",
-                   "primitive_refined", "textures", "block")
+                   "primitiverefined", "textures", "block")
 
 # Refined Storage's controller cutout, lifted from
 # refinedstorage:block/controller/cutouts/purple. Its traces are runs of pixels with a

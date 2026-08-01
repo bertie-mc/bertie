@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "berlordscarving:item/diamond_big_slate"
+  }
+}

@@ -22,7 +22,7 @@ import net.neoforged.fml.common.Mod;
 @Mod(PrimitiveRefined.MOD_ID)
 public class PrimitiveRefined {
 
-    public static final String MOD_ID = "primitive_refined";
+    public static final String MOD_ID = "primitiverefined";
 
     public PrimitiveRefined(IEventBus modBus, ModContainer container) {
         PrRegistry.register(modBus);

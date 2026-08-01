@@ -12,7 +12,7 @@ completely alone.
 
 ## The config file
 
-`config/bertie_tiers.json` — written on first server start, hand-edited afterwards.
+`config/bertietiers.json` — written on first server start, hand-edited afterwards.
 
 ```json
 {

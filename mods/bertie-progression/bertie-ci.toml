@@ -2,7 +2,7 @@ format = "bertie-ci.component.v1"
 subject = "bertie-progression"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-progression"
-mod-id = "bertie_progression"
+mod-id = "bertieprogression"
 pack-metafile = "mods/bertie-progression.pw.toml"
 
 [version]

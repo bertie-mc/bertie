@@ -53,7 +53,7 @@ public final class WeaponUpgrades {
             ResourceKey.createRegistryKey(
                     ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "upgrade_orb_type"));
 
-    /** Our own two tier entries, shipped as datapack JSON under {@code data/bertie_weapons/}. */
+    /** Our own two tier entries, shipped as datapack JSON under {@code data/bertieweapons/}. */
     public static final ResourceKey<UpgradeOrbType> STAT_TIER =
             ResourceKey.create(UPGRADE_ORB_REGISTRY, BertieWeapons.id("weapon_power"));
     public static final ResourceKey<UpgradeOrbType> SPELL_TIER =
@@ -120,12 +120,12 @@ public final class WeaponUpgrades {
         for (String entry : raw) {
             ResourceLocation location = ResourceLocation.tryParse(entry);
             if (location == null) {
-                LOGGER.warn("[bertie_weapons] elementOrbTypes entry '{}' is not a valid ID, skipping", entry);
+                LOGGER.warn("[bertieweapons] elementOrbTypes entry '{}' is not a valid ID, skipping", entry);
                 continue;
             }
             ResourceKey<UpgradeOrbType> key = ResourceKey.create(UPGRADE_ORB_REGISTRY, location);
             if (lookup.get(key).isEmpty()) {
-                LOGGER.warn("[bertie_weapons] upgrade orb type '{}' is not loaded, dropping it from the ring", entry);
+                LOGGER.warn("[bertieweapons] upgrade orb type '{}' is not loaded, dropping it from the ring", entry);
                 continue;
             }
             ring.add(location.toString());
@@ -220,7 +220,7 @@ public final class WeaponUpgrades {
         if (state.statTier() > 0) {
             Optional<Holder.Reference<UpgradeOrbType>> holder = lookup.get().get(STAT_TIER);
             if (holder.isEmpty()) {
-                LOGGER.error("[bertie_weapons] upgrade orb type {} is missing - is the mod's datapack loaded?", STAT_TIER.location());
+                LOGGER.error("[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?", STAT_TIER.location());
                 return Optional.empty();
             }
             upgrades.put(holder.get(), state.statTier());
@@ -228,7 +228,7 @@ public final class WeaponUpgrades {
         if (state.spellTier() > 0) {
             Optional<Holder.Reference<UpgradeOrbType>> holder = lookup.get().get(SPELL_TIER);
             if (holder.isEmpty()) {
-                LOGGER.error("[bertie_weapons] upgrade orb type {} is missing - is the mod's datapack loaded?", SPELL_TIER.location());
+                LOGGER.error("[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?", SPELL_TIER.location());
                 return Optional.empty();
             }
             upgrades.put(holder.get(), state.spellTier());
@@ -270,7 +270,7 @@ public final class WeaponUpgrades {
         Optional<HolderLookup.RegistryLookup<UpgradeOrbType>> lookup = registries.lookup(UPGRADE_ORB_REGISTRY);
         if (lookup.isEmpty()) {
             LOGGER.error(
-                    "[bertie_weapons] registry {} is absent - Iron's Spells is a hard dependency, "
+                    "[bertieweapons] registry {} is absent - Iron's Spells is a hard dependency, "
                             + "so this means the registry was renamed upstream",
                     UPGRADE_ORB_REGISTRY.location());
         }

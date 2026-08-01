@@ -21,22 +21,22 @@ class PackagedResourcesTest {
 
     @Test
     void everyBlockHasItsPlayerFacingResources() throws IOException {
-        String language = read("assets/primitive_refined/lang/en_us.json");
+        String language = read("assets/primitiverefined/lang/en_us.json");
         for (String block : BLOCKS) {
-            assertResource("assets/primitive_refined/blockstates/" + block + ".json");
-            assertResource("assets/primitive_refined/models/block/" + block + ".json");
-            assertResource("assets/primitive_refined/models/item/" + block + ".json");
-            assertResource("data/primitive_refined/loot_table/blocks/" + block + ".json");
-            assertTrue(language.contains("\"block.primitive_refined." + block + "\""),
+            assertResource("assets/primitiverefined/blockstates/" + block + ".json");
+            assertResource("assets/primitiverefined/models/block/" + block + ".json");
+            assertResource("assets/primitiverefined/models/item/" + block + ".json");
+            assertResource("data/primitiverefined/loot_table/blocks/" + block + ".json");
+            assertTrue(language.contains("\"block.primitiverefined." + block + "\""),
                     () -> "Missing English name for " + block);
         }
     }
 
     @Test
     void verticalGearboxItemHasAModelAndName() throws IOException {
-        assertResource("assets/primitive_refined/models/item/arcanetic_gearbox_vertical.json");
-        assertTrue(read("assets/primitive_refined/lang/en_us.json")
-                .contains("\"item.primitive_refined.arcanetic_gearbox_vertical\""));
+        assertResource("assets/primitiverefined/models/item/arcanetic_gearbox_vertical.json");
+        assertTrue(read("assets/primitiverefined/lang/en_us.json")
+                .contains("\"item.primitiverefined.arcanetic_gearbox_vertical\""));
     }
 
     private static void assertResource(String path) {

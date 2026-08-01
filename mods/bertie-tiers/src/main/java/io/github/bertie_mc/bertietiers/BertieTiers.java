@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 /**
  * Bertie Tiers - one authoritative, data-driven mining-tier system for the Bertie modpack.
  *
- * <p>Everything lives in {@code config/bertie_tiers.json}: named tiers with a numeric level, the
+ * <p>Everything lives in {@code config/bertietiers.json}: named tiers with a numeric level, the
  * tools at that level and the blocks that require it, plus point {@code tool -> block} exceptions.
  * For any block listed there, Bertie's answer is final; it overrides vanilla tool tags, another
  * mod's mining level, a parallel tier system such as Slag n' Embers, and any "only this pickaxe
@@ -30,7 +30,7 @@ import org.slf4j.Logger;
  */
 @Mod(BertieTiers.MOD_ID)
 public class BertieTiers {
-    public static final String MOD_ID = "bertie_tiers";
+    public static final String MOD_ID = "bertietiers";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public BertieTiers(IEventBus ignored) {

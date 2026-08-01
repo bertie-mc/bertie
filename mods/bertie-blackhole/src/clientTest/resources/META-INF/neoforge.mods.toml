@@ -9,7 +9,7 @@ displayName = "Bertie Black Hole client tests"
 description = "Test-only assertions for Bertie Black Hole"
 
 [[dependencies.bertieblackholetest]]
-modId = "bertie_blackhole"
+modId = "bertieblackhole"
 type = "required"
 versionRange = "[0.3,)"
 ordering = "AFTER"

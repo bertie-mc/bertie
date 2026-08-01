@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "berlords_carving:item/deep_alloy_slate"
-  }
-}

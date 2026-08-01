@@ -34,7 +34,7 @@ Python, and headless runtime dependencies. Do not add Gradle wrappers or Foojay 
 downloads.
 
 Build and test operations remain separate. Target a mod with its Gradle project path, for
-example `gradle :mods:carving:assemble` or `gradle :mods:carving:test`. Use the smallest
+example `gradle :mods:berlords-carving:assemble` or `gradle :mods:berlords-carving:test`. Use the smallest
 relevant unit, GameTest, client, or server suite, then run broader affected-project checks.
 
 ## Releases

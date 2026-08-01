@@ -1,0 +1,291 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:shaft"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "chance": 0.7,
+      "id": "bertieprogression:kinetic_vane",
+      "count": 1
+    },
+    {
+      "chance": 0.3,
+      "id": "bertieprogression:kinetic_vane",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "create:brass_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "create:brass_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "minecraft:vine"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "malum:earthen_spirit"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "minecraft:armadillo_scute"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "minecraft:armadillo_scute"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "minecraft:armadillo_scute"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "minecraft:armadillo_scute"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 144,
+          "fluid": "slag:molten_quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        },
+        {
+          "item": "born_in_chaos_v1:diamond_termite_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_structural_beam"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_structural_beam"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "bertieprogression:incomplete_structural_beam"
+  }
+}

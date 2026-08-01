@@ -45,7 +45,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class RotationPropagatorMixin {
 
     @Inject(method = "getRotationSpeedModifier", at = @At("HEAD"), cancellable = true, remap = false)
-    private static void primitive_refined$largeCogToPrimitiveController(
+    private static void primitiverefined$largeCogToPrimitiveController(
             KineticBlockEntity from, KineticBlockEntity to, CallbackInfoReturnable<Float> cir) {
 
         // Only the exact arrangement: our controller directly beneath the cogwheel.
@@ -94,7 +94,7 @@ public class RotationPropagatorMixin {
      * destroys anything.
      */
     @Inject(method = "getRotationSpeedModifier", at = @At("HEAD"), cancellable = true, remap = false)
-    private static void primitive_refined$refuseCrossFamily(
+    private static void primitiverefined$refuseCrossFamily(
             KineticBlockEntity from, KineticBlockEntity to, CallbackInfoReturnable<Float> cir) {
 
         if (PrKinetics.vetoSuppressed()) {

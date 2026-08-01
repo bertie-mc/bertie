@@ -25,11 +25,11 @@ import java.util.Map;
 
 /**
  * Per-food buff definitions: which effects/attributes/abilities a food grants while it
- * occupies a stomach slot. config/berlords-food-buffs.json, synced to clients as raw JSON.
+ * occupies a stomach slot. config/berlordsfoodsystem-buffs.json, synced to clients as raw JSON.
  */
 public final class BuffsConfig {
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final String FILE_NAME = "berlords-food-buffs.json";
+    public static final String FILE_NAME = "berlordsfoodsystem-buffs.json";
 
     public record EffectDef(Holder<MobEffect> effect, ResourceLocation effectId, int amplifier) {}
 
@@ -236,7 +236,7 @@ public final class BuffsConfig {
                 "",
                 "All sections can be combined on one food. Reload in game with /bfs reload.",
                 "Run /bfs dumpids to write EVERY effect & attribute id available in THIS instance (incl. modded)",
-                "to config/berlords-food-system-ids.txt.",
+                "to config/berlordsfoodsystem-ids.txt.",
                 "",
                 "--- vanilla 1.21 effects, for reference (prefix with minecraft:) ---",
                 "speed, slowness, haste, mining_fatigue, strength, instant_health, instant_damage, jump_boost,",
@@ -246,7 +246,7 @@ public final class BuffsConfig {
                 "darkness, trial_omen, raid_omen, wind_charged, weaving, oozing, infested",
                 "",
                 "System settings (slot counts, replace-oldest, durations, regen, cooldowns...) live in",
-                "config/berlords_food_system-common.toml."
+                "config/berlordsfoodsystem-common.toml."
               ],
               "foods": {
                 "minecraft:golden_carrot": { "effects": [ { "id": "minecraft:night_vision", "amplifier": 0 } ] },

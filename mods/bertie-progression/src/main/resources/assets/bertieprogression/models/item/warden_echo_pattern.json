@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bertieprogression:item/warden_echo_pattern"
+  }
+}

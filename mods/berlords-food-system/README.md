@@ -4,7 +4,7 @@ A Valheim-style food system: 1-5 stomach slots, per-food buffs and abilities, a 
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
-- **Mod ID:** `berlords_food_system`
+- **Mod ID:** `berlordsfoodsystem`
 
 ## Install
 

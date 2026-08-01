@@ -9,7 +9,7 @@ displayName = "Berlords Food System client tests"
 description = "Test-only assertions for Berlords Food System"
 
 [[dependencies.berlordsfoodsystemtest]]
-modId = "berlords_food_system"
+modId = "berlordsfoodsystem"
 type = "required"
 versionRange = "[0,)"
 ordering = "AFTER"

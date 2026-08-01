@@ -20,6 +20,6 @@ changed, and you would not find out until you tried to use it.
 ## Using one
 
 Copy the `.png` and its `.mcmeta` into
-`src/main/resources/assets/bertie_progression/textures/item/` under the item's
+`src/main/resources/assets/bertieprogression/textures/item/` under the item's
 name, then register the item as usual. Better still, point its generator at
 `TEX_ITEM` in `OUTPUTS` so it keeps being regenerated in place.

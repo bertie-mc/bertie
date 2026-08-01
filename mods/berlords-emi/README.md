@@ -4,7 +4,7 @@ Native EMI recipe-viewer plugins for third-party machine mods that only ship JEI
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
-- **Mod ID:** `berlords_emi`
+- **Mod ID:** `berlordsemi`
 - **Requires:** EMI
 
 ## Install

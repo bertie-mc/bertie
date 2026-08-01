@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bertie_progression texture generator — netherly_meal (16x16), hand-placed pixel art.
+bertieprogression texture generator — netherly_meal (16x16), hand-placed pixel art.
 
 The Hephaestus ritual folds a fire dragon heart, a koboleton bone, living flesh,
 dragon blood, fire scales and a bucket of lava into a plain bowl, so the item
@@ -23,7 +23,7 @@ import os
 from PIL import Image
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-TEX_ITEM = os.path.join(ROOT, "src", "main", "resources", "assets", "bertie_progression", "textures", "item")
+TEX_ITEM = os.path.join(ROOT, "src", "main", "resources", "assets", "bertieprogression", "textures", "item")
 
 PALETTE = {
     ".": None,

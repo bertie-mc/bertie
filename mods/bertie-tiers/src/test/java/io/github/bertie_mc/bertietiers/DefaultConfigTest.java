@@ -43,7 +43,7 @@ class DefaultConfigTest {
             "minecraft:iron_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe");
 
     private static RawConfig shipped() {
-        try (InputStream in = DefaultConfigTest.class.getResourceAsStream("/bertie_tiers/default_config.json")) {
+        try (InputStream in = DefaultConfigTest.class.getResourceAsStream("/bertietiers/default_config.json")) {
             assertNotNull(in, "the shipped default config must be on the classpath");
             return ConfigParser.parse(JsonParser.parseReader(new InputStreamReader(in, StandardCharsets.UTF_8)));
         } catch (java.io.IOException e) {

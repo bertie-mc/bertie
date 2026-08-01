@@ -58,11 +58,11 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
  * {@code high} (level 200) = diamond pickaxe + gold ore + diamond ore, plus one point exception
  * letting a stone pickaxe mine diamond ore only. Coal ore is deliberately left out of the config.
  */
-@GameTestHolder("bertie_tiers")
+@GameTestHolder("bertietiers")
 @PrefixGameTestTemplate(false)
 @EventBusSubscriber(modid = BertieTiers.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public final class BertieTiersGameTests {
-    /** Resolved against the holder namespace: {@code data/bertie_tiers/structure/empty.nbt}. */
+    /** Resolved against the holder namespace: {@code data/bertietiers/structure/empty.nbt}. */
     private static final String TEMPLATE = "empty";
     private static final BlockPos ORE = new BlockPos(1, 2, 1);
 
@@ -371,8 +371,8 @@ public final class BertieTiersGameTests {
 
     private static FakePlayer miner(ServerLevel level) {
         FakePlayer player = FakePlayerFactory.get(level, new GameProfile(
-                UUID.nameUUIDFromBytes("bertie_tiers_gametest".getBytes(StandardCharsets.UTF_8)),
-                "bertie_tiers_gametest"));
+                UUID.nameUUIDFromBytes("bertietiers_gametest".getBytes(StandardCharsets.UTF_8)),
+                "bertietiers_gametest"));
         player.getInventory().clearContent();
         return player;
     }

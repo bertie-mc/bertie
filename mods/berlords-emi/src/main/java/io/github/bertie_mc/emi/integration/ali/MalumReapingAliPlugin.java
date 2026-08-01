@@ -43,7 +43,7 @@ public class MalumReapingAliPlugin implements IPlugin {
 
     @Override
     public String getModId() {
-        return "berlords_emi";
+        return "berlordsemi";
     }
 
     @Override

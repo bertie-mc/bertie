@@ -41,7 +41,7 @@ import net.neoforged.neoforge.event.RegisterGameTestsEvent;
  * and produce what {@link WeaponUpgrades} produces, and that Iron's really does turn our stored
  * counts into attack-damage and spell-power modifiers on a sword.
  */
-@GameTestHolder("bertie_weapons")
+@GameTestHolder("bertieweapons")
 @PrefixGameTestTemplate(false)
 @EventBusSubscriber(modid = BertieWeapons.MODID, bus = EventBusSubscriber.Bus.MOD)
 public final class BertieWeaponsGameTests {
@@ -54,12 +54,12 @@ public final class BertieWeaponsGameTests {
         event.register(BertieWeaponsGameTests.class);
     }
 
-    /** A Simply Swords unique, which is what {@code #bertie_weapons:upgradable_weapons} covers. */
+    /** A Simply Swords unique, which is what {@code #bertieweapons:upgradable_weapons} covers. */
     private static ItemStack weapon(GameTestHelper helper) {
         Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse("simplyswords:soulkeeper"));
         ItemStack stack = new ItemStack(item);
         if (!WeaponUpgrades.isUpgradable(stack)) {
-            helper.fail("simplyswords:soulkeeper is not in #bertie_weapons:upgradable_weapons - "
+            helper.fail("simplyswords:soulkeeper is not in #bertieweapons:upgradable_weapons - "
                     + "either Simply Swords is absent from the run or the tag did not resolve");
         }
         return stack;
@@ -78,10 +78,10 @@ public final class BertieWeaponsGameTests {
                 registries.lookupOrThrow(WeaponUpgrades.UPGRADE_ORB_REGISTRY);
 
         if (lookup.get(WeaponUpgrades.STAT_TIER).isEmpty()) {
-            helper.fail("bertie_weapons:weapon_power did not load from our datapack");
+            helper.fail("bertieweapons:weapon_power did not load from our datapack");
         }
         if (lookup.get(WeaponUpgrades.SPELL_TIER).isEmpty()) {
-            helper.fail("bertie_weapons:spell_tier did not load from our datapack");
+            helper.fail("bertieweapons:spell_tier did not load from our datapack");
         }
         // The shipped default ring must resolve in full against a pack that has Iron's.
         List<String> ring = WeaponUpgrades.elementRing(registries);
@@ -284,7 +284,7 @@ public final class BertieWeaponsGameTests {
             return;
         }
         ResourceLocation id = found.get().id();
-        if (!id.equals(ResourceLocation.parse("bertie_weapons:stat_upgrade"))) {
+        if (!id.equals(ResourceLocation.parse("bertieweapons:stat_upgrade"))) {
             helper.fail("a different recipe won the match: " + id);
             return;
         }

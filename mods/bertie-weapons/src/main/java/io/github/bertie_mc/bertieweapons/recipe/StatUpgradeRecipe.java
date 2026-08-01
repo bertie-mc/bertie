@@ -8,7 +8,7 @@ import net.minecraft.world.item.crafting.CraftingBookCategory;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 
 /**
- * Weapon + one catalyst from {@code #bertie_weapons:stat_catalysts} = one flat base-damage tier.
+ * Weapon + one catalyst from {@code #bertieweapons:stat_catalysts} = one flat base-damage tier.
  * The test build stocks that tag with a diamond; real tiers get their own materials later.
  */
 public class StatUpgradeRecipe extends UpgradeCraftingRecipe {

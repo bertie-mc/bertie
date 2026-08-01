@@ -2,7 +2,7 @@ format = "bertie-ci.component.v1"
 subject = "bertie-blackhole"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-blackhole"
-mod-id = "bertie_blackhole"
+mod-id = "bertieblackhole"
 pack-metafile = "mods/bertie-blackhole.pw.toml"
 
 [version]

@@ -38,8 +38,8 @@ public record BbhConfig(int firstOutputDelayTicks,
                          *  is read on the block entity's hot tick path. Keys are 0..maxLevel. */
                         Map<Integer, List<ExchangeDef>> exchangesByLevel) {
 
-    public static final String FILE_NAME = "bertie_blackhole.json";
-    private static final String DEFAULT_RESOURCE = "/bertie_blackhole/default_config.json";
+    public static final String FILE_NAME = "bertieblackhole.json";
+    private static final String DEFAULT_RESOURCE = "/bertieblackhole/default_config.json";
 
     private static volatile BbhConfig active;
 

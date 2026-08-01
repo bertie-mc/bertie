@@ -9,7 +9,7 @@ import net.neoforged.fml.config.ModConfig;
 
 @Mod(BertieWeapons.MODID)
 public class BertieWeapons {
-    public static final String MODID = "bertie_weapons";
+    public static final String MODID = "bertieweapons";
 
     public BertieWeapons(IEventBus modBus, ModContainer container) {
         BertieRecipeSerializers.RECIPE_SERIALIZERS.register(modBus);

@@ -15,7 +15,7 @@ Other mods' assets come from tools/extracted, which tools/extract_assets.py fill
 PR_ASSET_ROOT to override. Requires pillow and numpy.
 
     python tools/extract_assets.py path/to/create.jar
-    python tools/preview.py src/main/resources/assets/primitive_refined/models/block/p_grid.json out.png
+    python tools/preview.py src/main/resources/assets/primitiverefined/models/block/p_grid.json out.png
 
 It reproduced every fault in the first grid body without a game launch, and it renders
 Create's own mechanical_crafter correctly - which is the check to re-run if you ever
@@ -39,12 +39,12 @@ def _tex(ns, root):
 
 TEX_ROOTS = {ns: _tex(ns, ALL) for ns in
              ("create", "refinedstorage", "malum", "forbidden_arcanus", "slag")}
-TEX_ROOTS["primitive_refined"] = _tex("primitive_refined", OURS)
+TEX_ROOTS["primitiverefined"] = _tex("primitiverefined", OURS)
 # Vanilla textures a Create model may name; they ship inside Create's own jar too.
 TEX_ROOTS["minecraft"] = _tex("create", ALL)
 
 MODEL_ROOTS = {
-    "primitive_refined": os.path.join(OURS, "primitive_refined", "models"),
+    "primitiverefined": os.path.join(OURS, "primitiverefined", "models"),
     "create": os.path.join(ALL, "create", "models"),
 }
 

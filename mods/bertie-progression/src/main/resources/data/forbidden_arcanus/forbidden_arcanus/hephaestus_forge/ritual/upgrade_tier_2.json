@@ -9,25 +9,25 @@
     {
       "amount": 2,
       "ingredient": {
-        "item": "bertie_progression:abyssal_core"
+        "item": "bertieprogression:abyssal_core"
       }
     },
     {
       "amount": 2,
       "ingredient": {
-        "item": "bertie_progression:desert_core"
+        "item": "bertieprogression:desert_core"
       }
     },
     {
       "amount": 2,
       "ingredient": {
-        "item": "bertie_progression:cursed_core"
+        "item": "bertieprogression:cursed_core"
       }
     },
     {
       "amount": 2,
       "ingredient": {
-        "item": "bertie_progression:storm_core"
+        "item": "bertieprogression:storm_core"
       }
     }
   ],

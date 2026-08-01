@@ -1,7 +1,7 @@
 # Bertie Black Hole
 
 Turns Forbidden & Arcanus' Black Hole into a levelled machine. NeoForge 1.21.1, soft-depends on
-F&A 2.6.1. Everything is driven by one JSON file: `config/bertie_blackhole.json`, written on first
+F&A 2.6.1. Everything is driven by one JSON file: `config/bertieblackhole.json`, written on first
 launch from the bundled default.
 
 ## What is left alone

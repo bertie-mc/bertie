@@ -57,12 +57,12 @@ public final class TooltipHandler {
         }
 
         if (stack.has(BFS.ETERNAL.get())) {
-            tooltip.add(Component.translatable("tooltip.berlords_food_system.eternal")
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.eternal")
                     .withStyle(s -> s.withColor(ETERNAL_COLOR).withItalic(true)));
         }
 
         if (io.github.bertie_mc.foodsystem.compat.SBCompat.isAdvancedFeedingUpgrade(stack)) {
-            tooltip.add(Component.translatable("tooltip.berlords_food_system.disabled_item")
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.disabled_item")
                     .withStyle(ChatFormatting.RED));
         }
     }
@@ -95,14 +95,14 @@ public final class TooltipHandler {
         }
 
         var ab = buff.abilities;
-        if (ab.flight) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.flight").withStyle(ChatFormatting.AQUA));
-        if (ab.climbing) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.climbing").withStyle(ChatFormatting.AQUA));
-        if (ab.endermanCalm) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.enderman_calm").withStyle(ChatFormatting.AQUA));
-        if (ab.magnetRadius > 0) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.magnet",
+        if (ab.flight) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.flight").withStyle(ChatFormatting.AQUA));
+        if (ab.climbing) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.climbing").withStyle(ChatFormatting.AQUA));
+        if (ab.endermanCalm) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.enderman_calm").withStyle(ChatFormatting.AQUA));
+        if (ab.magnetRadius > 0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.magnet",
                 AMOUNT.format(ab.magnetRadius)).withStyle(ChatFormatting.AQUA));
-        if (ab.xpBoost != 1.0) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.xp_boost",
+        if (ab.xpBoost != 1.0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.xp_boost",
                 AMOUNT.format(ab.xpBoost)).withStyle(ChatFormatting.AQUA));
-        if (ab.durabilitySaver > 0) tooltip.add(Component.translatable("tooltip.berlords_food_system.ability.durability_saver",
+        if (ab.durabilitySaver > 0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.durability_saver",
                 Math.round(ab.durabilitySaver * 100)).withStyle(ChatFormatting.AQUA));
     }
 

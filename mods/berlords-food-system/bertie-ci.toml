@@ -2,7 +2,7 @@ format = "bertie-ci.component.v1"
 subject = "berlords-food-system"
 kind = "neoforge-mod"
 gradle-project = ":mods:berlords-food-system"
-mod-id = "berlords_food_system"
+mod-id = "berlordsfoodsystem"
 pack-metafile = "mods/berlords-food-system.pw.toml"
 
 [version]

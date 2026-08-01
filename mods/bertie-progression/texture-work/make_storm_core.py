@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bertie_progression texture generator — storm_core (16x16), hand-placed pixel art.
+bertieprogression texture generator — storm_core (16x16), hand-placed pixel art.
 
 A dark grey storm cloud striking downwards. The bolt starts inside the cloud
 and drops out of its underside — nothing sits above the skyline, and nothing
@@ -105,7 +105,7 @@ import sys
 from PIL import Image
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-TEX_ITEM = os.path.join(ROOT, "src", "main", "resources", "assets", "bertie_progression", "textures", "item")
+TEX_ITEM = os.path.join(ROOT, "src", "main", "resources", "assets", "bertieprogression", "textures", "item")
 # Colourings that are not in use but are being kept. Under texture-work rather
 # than under resources, so they are versioned without being packaged into the
 # jar — nothing here ships.
