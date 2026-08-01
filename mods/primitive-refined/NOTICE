@@ -1,0 +1,158 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code in this repository.
+
+It does not, and cannot, cover third-party material. Some of the textures here
+are derived from other mods' artwork and remain the property of their authors.
+
+
+THIRD-PARTY ARTWORK - USED WITH PERMISSION
+
+berlord states that permission has been obtained from the respective authors to
+ship the derived textures listed below. That permission, not any licence term,
+is what makes their inclusion here lawful - Create's assets, Malum, Forbidden &
+Arcanus are each All Rights Reserved or equivalent, and none
+of them grants this by default.
+
+Anyone forking or redistributing this repository does NOT inherit that
+permission and must seek their own.
+
+Derived from Create (The Create Team / Creators of Create):
+
+  block/soulstained_axis.png              from create:block/axis
+  block/soulstained_axis_top.png          from create:block/axis_top
+  block/soulstained_cogwheel_axis.png     from create:block/cogwheel_axis
+  block/obsidiansteel_cogwheel.png        from create:block/cogwheel
+  block/p_grid_back.png                   from create:block/brass_gearbox
+  block/p_controller_side.png             from create:block/rotation_speed_controller
+  block/p_controller_side_off.png         from create:block/rotation_speed_controller
+  block/external_reader_front.png         from create:block/threshold_switch_front
+  block/external_reader_side.png          from create:block/threshold_switch/level_0
+  block/external_reader_side_glow_a.png   from create:block/threshold_switch/level_5
+  block/external_reader_side_glow_b.png   from create:block/threshold_switch/level_5
+  block/external_reader_side_glow_full.png  from create:block/threshold_switch/level_5
+
+  block/arcanetic_gearbox.png             from create:block/gearbox, with
+                                          create:block/brass_casing and
+                                          create:block/brass_gearbox
+
+  The External Reader's front moves Create's own pixels rather than repainting
+  them: the indicator square is hue-rotated red to purple with saturation and
+  value untouched, and the ring around it is scaled down in value alone. Its
+  side glow layers are laid out on Create's indicator geometry but coloured from
+  Refined Storage (below).
+
+  The Arcanetic Gearbox panel is a per-pixel substitution into Create's own
+  gearbox panel: the light grey casing ring takes brass casing's pixel at the
+  same coordinate, and the wood and shaft socket take brass_gearbox's - the face
+  Create's sequenced gearshift puts on the two ends its axis runs through.
+  Shape and shading are Create's; only which Create material fills them changes.
+  Models additionally point at create:block/brass_casing directly for the caps.
+
+  The two controller side textures are Create's own with 50 pixels replaced by
+  Refined Storage's (10 for the paired L's, 40 for the insert).
+
+  The grid front faces below are flattened composites and contain Create pixels
+  too - create:block/railway_casing_side forms the brass frame and recess under
+  the Refined Storage screen:
+
+  block/p_grid_front.png                  block/p_grid_front_off.png
+  block/p_crafting_grid_front.png         block/p_crafting_grid_front_off.png
+
+  Each is a luminance remap: Create's shading is preserved and only the palette
+  is replaced. Models additionally reference Create's own models and textures by
+  path at runtime (parent "create:block/cogwheel", and the controller and grid
+  models take Create's own models as their parent).
+
+Palettes taken from:
+
+  Malum (soul stained steel)               - soulstained_*
+  Forbidden & Arcanus (obsidiansteel)      - obsidiansteel_cogwheel
+
+
+REFINED STORAGE - MIT
+
+  block/p_controller_side*.png
+  block/p_grid_front*.png                 block/p_grid_screen_glow.png
+  block/p_crafting_grid_front*.png        block/p_crafting_grid_screen_glow.png
+  block/external_reader_side_glow_a.png   block/external_reader_side_glow_b.png
+  block/external_reader_side_glow_full.png
+
+  The External Reader's glow layers take their colour ramp and their frame
+  cadence from block/controller/cutouts/purple - twelve frames at frametime 2,
+  and a gradient running purple to magenta to its bright peak, measured off that
+  animation rather than approximated. The controller draws traces as runs of
+  pixels with the gradient flowing along them, and the reader's panel is filled
+  the same way. The panel's outline is Create's indicator geometry; the colour
+  and the movement are Refined Storage's.
+
+Derived from Refined Storage's controller and grid cutouts by Refined Mods -
+the purple variants for the lit faces, "inactive" for the unlit ones - which is
+MIT licensed:
+
+  The MIT License (MIT)
+  Copyright (c) 2020 - 2025 Refined Mods
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+MIT permits this, provided the notice above travels with the files. It does.
+
+
+REFINED STORAGE - MIT - PORTED CODE
+
+The storage half of this mod is Refined Storage's, and three of its classes are
+Refined Storage's source rather than a reimplementation of it. Each is
+package-private upstream, which is the only reason it is copied here instead of
+called; each carries its provenance in its own class comment.
+
+  src/main/java/com/berlord/primitiverefined/content/reader/
+    CompositeExternalStorageProvider.java
+      from com.refinedmods.refinedstorage.common.storage.externalstorage
+           .CompositeExternalStorageProvider
+
+    ExternalStorageWorkRate.java
+      from com.refinedmods.refinedstorage.common.storage.externalstorage
+           .ExternalStorageWorkRate
+
+    ExternalStorageTrackedStorageRepository.java
+      from com.refinedmods.refinedstorage.common.storage.externalstorage
+           .ExternalStorageTrackedStorageRepository
+
+Two more classes are structural ports rather than copies - the same logic under
+the same method names, with the parts a rotation-powered network does not have
+left out and the parts Create needs added:
+
+  src/main/java/com/berlord/primitiverefined/network/PrNetworkNodeContainer.java
+      from com.refinedmods.refinedstorage.common.api.support.network
+           .AbstractNetworkNodeContainerBlockEntity and
+           com.refinedmods.refinedstorage.common.support.network
+           .AbstractBaseNetworkNodeContainerBlockEntity
+
+  src/main/java/com/berlord/primitiverefined/content/grid/PGridBlockEntity.java
+      the Grid implementation, from
+           com.refinedmods.refinedstorage.common.grid.AbstractGridBlockEntity
+
+The same MIT licence and copyright notice reproduced above covers all of these,
+and it travels with them. They are not covered by the Unlicense dedication.
+
+
+COMPILE-TIME DEPENDENCIES
+
+Resolved from public mavens (createmod.net, NeoForged, Modrinth) at build time.
+No third-party jar is committed.
