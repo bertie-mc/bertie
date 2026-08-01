@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   validate:
-    uses: bertie-mc/bertie-ci/.github/workflows/pack-validate.yml@v3.6.0
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-validate.yml@v3.6.1
 
   resolve:
-    uses: bertie-mc/bertie-ci/.github/workflows/pack-resolve.yml@v3.6.0
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-resolve.yml@v3.6.1
