@@ -8,9 +8,8 @@ Client-side NeoForge mod that trims the vanilla "wither" dark heart bar so it on
 
 ## Install
 
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/withered-hearts/releases).
-New releases use `withered-hearts/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `withered-hearts/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Building

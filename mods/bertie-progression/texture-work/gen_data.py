@@ -1778,7 +1778,7 @@ write(f"{RIT}/netherly_meal.json",
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
 
 # ================================================================ REMOVED ITEMS (berlord 2026-07-30)
-# Source of truth: docs/removed/<modid>.md, hand-edited. See docs/removed/README.md.
+# Edit docs/removed/<modid>.md, then run this generator. See docs/removed/README.md.
 # This section does three things:
 #   1. finds EVERY recipe in the pack whose result is a removed id and overrides it with
 #      neoforge:false - searched by RESULT, so no recipe file is ever named by hand;

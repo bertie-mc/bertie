@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
  * owns the item slots and their server-authoritative state.
  */
 public class CarvingStationMenu extends AbstractContainerMenu {
-    // GUI-local layout, single source of truth shared with CarvingStationScreen.
+    // GUI layout constants shared with CarvingStationScreen.
     public static final int IMG_W = 220, IMG_H = 324;
     public static final int TABS_LEFT = 50, TABS_Y = 18, TAB_W = 24, TAB_H = 22;
     public static final int GRID_X = 26, GRID_Y = 46, CELL = 10, GRID_PX = 16 * CELL; // 160

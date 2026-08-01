@@ -1,12 +1,11 @@
 # AGENTS.md
 
-Instructions for agents working in the public Bertie product monorepo.
+Instructions for agents working in the Bertie repository.
 
-## Source of truth
+## Repository state
 
-GitHub is the source of truth. Finish changes committed, SSH-signed, rebased on
-`origin/main`, and pushed. Never force-push. Leave a clean tree and exactly one worktree.
-Use Conventional Commits.
+Finish changes committed, SSH-signed, rebased on `origin/main`, and pushed to GitHub.
+Never force-push. Leave a clean tree and exactly one worktree. Use Conventional Commits.
 
 ## Repository boundaries
 
@@ -24,9 +23,9 @@ metafile's side, and inspect the diff for accidental version changes. In-reposit
 remain fixed release references: update their URL, filename, and hash deliberately rather
 than enabling a broad GitHub updater.
 
-`bertie-mod-atlas`, private planning/workspace repositories, the organisation `.github`
-repository, and `Nekos-Enchanted-Books` are separate projects. Update their references when
-paths or public procedures change, but do not copy their source here.
+`bertie-mod-atlas`, `bertie-progression-planning`, the organisation `.github` repository,
+and `Nekos-Enchanted-Books` are separate projects. Update their references when paths or
+public procedures change, but do not copy their source here.
 
 ## Toolchain and build
 

@@ -1,6 +1,6 @@
 # bertie-ci
 
-`bertie-ci` is the local-first build and test interface shared by Bertie projects.
+`bertie-ci` is the shared build and test interface for Bertie projects.
 The command owns repeatable mechanics—Gradle invocation, fixtures, instance assembly,
 process supervision, and result collection—while each project owns its suites and
 assertions. GitHub Actions is an adapter, not the implementation.

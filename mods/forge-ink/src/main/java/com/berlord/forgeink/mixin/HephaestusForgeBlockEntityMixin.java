@@ -16,9 +16,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Optional;
 
 /**
- * Gates the forge's EXPERIENCE ("Ink") input at the source of truth: {@code getInput}
- * backs both the item handler's slot validity (players + hoppers) and the server
- * tick's consumption, so one injection covers insertion and processing alike.
+ * Gates the forge's EXPERIENCE ("Ink") input in {@code getInput}, which backs both the
+ * item handler's slot validity (players + hoppers) and the server tick's consumption.
+ * One injection therefore covers insertion and processing alike.
  */
 @Mixin(HephaestusForgeBlockEntity.class)
 public abstract class HephaestusForgeBlockEntityMixin {

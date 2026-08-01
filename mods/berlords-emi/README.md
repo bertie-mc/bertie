@@ -8,9 +8,8 @@ Native EMI recipe-viewer plugins (28 modules) for machine mods that only ship JE
 - **Requires:** EMI
 
 ## Install
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/berlords-emi/releases).
-New releases use `berlords-emi/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `berlords-emi/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and EMI.
 
 ## Credits / Integration

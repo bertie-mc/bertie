@@ -8,9 +8,8 @@ A small mixin mod that makes *Berries & Cherries* bushes behave like vanilla swe
 - **Requires:** Berries & Cherries (has no effect without it)
 
 ## Install
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/bush-tweaks/releases).
-New releases use `bush-tweaks/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `bush-tweaks/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and Berries & Cherries.
 
 ## Credits / Integration

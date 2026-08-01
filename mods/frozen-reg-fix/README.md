@@ -10,9 +10,8 @@ for `immersive_armors` armor-material keys on NeoForge 21.1.233.
 - **Requires:** Immersive Armors
 
 ## Install
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/frozen-reg-fix/releases).
-New releases use `frozen-reg-fix/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `frozen-reg-fix/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and Immersive Armors.
 
 ## Credits / Integration

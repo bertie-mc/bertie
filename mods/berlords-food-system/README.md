@@ -8,10 +8,8 @@ A Valheim-style food system: 1-5 stomach slots, per-food buffs and abilities, a 
 
 ## Install
 
-Existing binaries remain on the
-[legacy release page](https://github.com/bertie-mc/berlords-food-system/releases). New
-releases use `berlords-food-system/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `berlords-food-system/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Credits / Integration

@@ -1,20 +1,19 @@
 # Bertie
 
-Bertie is a Minecraft 1.21.1 NeoForge modpack and the custom mods maintained for it.
-This monorepo is the public source of truth for the pack, 21 independently versioned
-mods, shared Kotlin Gradle build logic, and local-first test infrastructure.
+Bertie is a large exploration, technology, and magic modpack for Minecraft 1.21.1 on
+NeoForge. This repository contains its packwiz manifest, custom mods, shared Kotlin Gradle
+build logic, and the tools used to build, test, and release them.
 
 ## Repository layout
 
 - `mods/` — custom NeoForge mods, each with its own version and test descriptor
-- `pack/` — the canonical packwiz manifest
+- `pack/` — the packwiz manifest and pack configuration
 - `build-logic/` — small, composable Gradle convention plugins
 - `tools/bertie-ci/` — provider-neutral build, test, instance, and release tooling
 - `.github/` — thin GitHub Actions adapters around `bertie-ci`
 
-`bertie-mod-atlas`, `bertie-progression-planning`, `bertie-workspace`, the
-organisation `.github` repository, and the upstream-tracking
-`Nekos-Enchanted-Books` fork intentionally remain separate.
+`bertie-mod-atlas`, `bertie-progression-planning`, the organisation `.github`
+repository, and the `Nekos-Enchanted-Books` fork are maintained separately.
 
 ## Development environment
 
@@ -53,16 +52,12 @@ suites are deliberately scheduled or manually dispatched because the pack is lar
 See [bertie-ci](tools/bertie-ci/README.md) for the test model and
 [the pack README](pack/README.md) for pack maintenance.
 
-## Releases and history
+## Releases
 
-Components keep independent versions. New signed tags have the exact form
+Components keep independent versions. Signed tags have the exact form
 `subject/vX.Y.Z`, for example `carving/v1.2.0`, `pack/v0.2.0`, or
 `bertie-ci/v5.0.0`. Releases are started manually after the required pipelines are green
 for the commit being tagged.
-
-The former component repositories remain available as read-only archives so their
-historical tags, release assets, and links continue to work. Their imported, rewritten
-history is documented in [the migration record](docs/polyrepo-migration.md).
 
 ## Licensing
 

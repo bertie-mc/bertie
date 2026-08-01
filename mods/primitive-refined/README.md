@@ -112,8 +112,8 @@ The repository includes four optional Python tools:
 | `tools/make_reader_textures.py` | Regenerate the External Reader textures |
 | `tools/make_gearbox.py` | Regenerate the gearbox texture, models, blockstate and loot table |
 
-The generated reader and gearbox assets are checked in, but their generator scripts are
-the source of truth. Do not hand-edit generated output.
+The generated reader and gearbox assets are checked in. Change their generator scripts
+and regenerate the assets instead of editing generated output by hand.
 
 `tools/preview.py` requires Pillow and NumPy. It does not render block-entity or Flywheel
 visuals. Minecraft normalizes model UV coordinates by 16 regardless of Blockbench’s

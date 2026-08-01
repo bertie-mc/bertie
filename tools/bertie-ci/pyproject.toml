@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bertie-ci"
 version = "5.0.0"
-description = "Local-first Minecraft runtime checks for bertie-mc"
+description = "Minecraft runtime checks for bertie-mc"
 requires-python = ">=3.11"
 license = "Unlicense"
 authors = [{ name = "bertie-mc contributors" }]

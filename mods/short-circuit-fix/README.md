@@ -9,10 +9,8 @@ Registers *Short Circuit*'s circuit blocks on the translucent render layer - a s
 
 ## Install
 
-Existing binaries remain on the
-[legacy release page](https://github.com/bertie-mc/short-circuit-fix/releases). New
-releases use `short-circuit-fix/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `short-circuit-fix/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and Short Circuit.
 
 ## Building

@@ -6,10 +6,9 @@ roughly 500-mod manifest is managed with
 
 ## Installing
 
-New client and server exports are published on the
+Client and server exports are published on the
 [Bertie release page](https://github.com/bertie-mc/bertie/releases) under
-`pack/vX.Y.Z` tags. Releases made before the monorepo migration remain on the
-[legacy release page](https://github.com/bertie-mc/bertie-pack/releases).
+`pack/vX.Y.Z` tags.
 
 For a client, download `bertie-pack-<version>.mrpack` and import it with Prism
 Launcher, the Modrinth App, or another launcher that supports Modrinth packs. Allocate

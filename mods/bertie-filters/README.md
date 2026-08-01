@@ -8,9 +8,8 @@ Adds an FTB Filter System custom filter (`bertie:wooden`) that matches wooden-ma
 - **Requires:** FTB Filter System, Slag 'n' Embers
 
 ## Install
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/bertie-filters/releases).
-New releases use `bertie-filters/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `bertie-filters/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and the dependencies above.
 
 ## Building

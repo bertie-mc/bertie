@@ -1,5 +1,5 @@
 {
-  description = "Bertie modpack, custom mods, and local-first test tooling";
+  description = "Bertie modpack, custom mods, and test tooling";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -50,7 +50,6 @@
           maintainedPython = [
             ".github/actions/**/*.py"
             "tools/bertie-ci/**/*.py"
-            "tools/migration/**/*.py"
           ];
           app = {
             program = bertie-ci;

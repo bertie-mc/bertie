@@ -40,5 +40,4 @@ ignored-paths = [
   "**/LICENSE",
   "**/NOTICE",
   "**/UNLICENSE",
-  "tools/migration/",
 ]

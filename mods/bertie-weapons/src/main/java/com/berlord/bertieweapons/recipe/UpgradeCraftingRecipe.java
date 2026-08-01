@@ -49,8 +49,8 @@ public abstract class UpgradeCraftingRecipe extends CustomRecipe {
     }
 
     /**
-     * Single source of truth for both {@code matches} and {@code assemble} - computing the result
-     * twice risks the two disagreeing, which shows up as a ghost output that vanishes on pickup.
+     * Used by both {@code matches} and {@code assemble}; separate calculations could disagree
+     * and show a ghost output that vanishes on pickup.
      */
     private Optional<ItemStack> assembleFrom(CraftingInput input, HolderLookup.Provider registries) {
         ItemStack weapon = ItemStack.EMPTY;

@@ -7,9 +7,8 @@ Carve early-game tool heads and armor from material slates: place the head insid
 - **Mod ID:** `berlords_carving`
 
 ## Install
-Existing binaries remain on the [legacy release page](https://github.com/bertie-mc/carving/releases).
-New releases use `carving/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `carving/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1. Slag 'n' Embers and EMI are
 optional—install them for extra integration, or run standalone.
 

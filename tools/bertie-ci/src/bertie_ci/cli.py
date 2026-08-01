@@ -147,7 +147,7 @@ def _add_test_extensions(parser: argparse.ArgumentParser) -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="bertie-ci",
-        description="Composable local-first checks for bertie-mc projects",
+        description="Composable checks for bertie-mc projects",
     )
     subcommands = parser.add_subparsers(dest="command", required=True)
 

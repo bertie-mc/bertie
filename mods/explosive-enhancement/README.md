@@ -6,10 +6,8 @@ A NeoForge 1.21.1 reimplementation of the **Explosive Enhancement** explosion-pa
 - **Mod ID:** `explosiveenhancement`
 
 ## Install
-Existing binaries remain on the
-[legacy release page](https://github.com/bertie-mc/explosive-enhancement/releases). New
-releases use `explosive-enhancement/vX.Y.Z` tags in the
-[Bertie monorepo](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
+Releases use `explosive-enhancement/vX.Y.Z` tags on the
+[Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your
 `mods/` folder alongside NeoForge for Minecraft 1.21.1.
 
 ## Credits / Integration
