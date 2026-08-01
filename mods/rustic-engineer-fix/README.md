@@ -10,7 +10,7 @@ Runtime patch that fixes *Rustic Engineer*'s airship and dragonfly flight — ch
 Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus Rustic Engineer.
 
 ## Building
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`gradle build` — the built JAR is written to `build/libs/`.
 
 ## License
 
