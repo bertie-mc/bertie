@@ -92,8 +92,9 @@ It is generated here instead, and make_cores.py now covers the other three.
 Every pixel is placed here — nothing is copied from another mod, so there is
 no NOTICE carve-out.
 
-Writes storm_core in the v2 colouring. v1 is kept alongside it in this file,
-unused but reproducible, for if it is ever wanted — see OUTPUTS.
+Writes storm_core in the v2 colouring, and v1 into texture-work/variants as a
+full strip with its .mcmeta — kept in case it is wanted, versioned, and out of
+the jar. See OUTPUTS.
 
 Run:  python texture-work/make_storm_core.py [--ascii]
 """
@@ -105,6 +106,10 @@ from PIL import Image
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 TEX_ITEM = os.path.join(ROOT, "src", "main", "resources", "assets", "bertie_progression", "textures", "item")
+# Colourings that are not in use but are being kept. Under texture-work rather
+# than under resources, so they are versioned without being packaged into the
+# jar — nothing here ships.
+VARIANTS = os.path.join(ROOT, "texture-work", "variants")
 
 SIZE = 16
 
@@ -121,17 +126,17 @@ SIZE = 16
 # how the grey is laid on.
 CLOUD_VARIANTS = ("v1", "v2")
 
-# (texture name, variant) written on every run. Only v2 ships.
+# (directory, texture name, variant). Everything here is written on every run.
 #
-# v1 is kept deliberately — it is not dead code. berlord went with v2 but wants
-# v1 held in case it is wanted later, and holding it as a code path rather than
-# as a checked-in PNG means it cannot drift out of step with the shape, the
-# bolt or the rain. To bring it back, add a line here and register an item
-# under the same name:
-#
-#     ("storm_core_test", "v1"),
+# v2 is the live item texture. v1 is kept because berlord may want it later: it
+# lands in texture-work/variants as a real strip with its .mcmeta beside it,
+# ready to drop into an assets folder, but outside resources so it is not
+# packaged. Writing it every run rather than checking in a one-off export is
+# what stops it drifting out of step with the shape, the bolt and the rain,
+# which the two colourings share.
 OUTPUTS = (
-    ("storm_core", "v2"),
+    (TEX_ITEM, "storm_core", "v2"),
+    (VARIANTS, "storm_core_v1", "v1"),
 )
 
 CLOUD_FILL = "#4E555F"
@@ -559,19 +564,19 @@ def build_mcmeta():
 
 
 if __name__ == "__main__":
-    for name, variant in OUTPUTS:
+    for _, name, variant in OUTPUTS:
         assert variant in CLOUD_VARIANTS, "unknown variant %r for %s" % (variant, name)
 
-    os.makedirs(TEX_ITEM, exist_ok=True)
     first = None
-    for name, variant in OUTPUTS:
+    for folder, name, variant in OUTPUTS:
+        os.makedirs(folder, exist_ok=True)
         strip, frames = build_strip(variant)
-        strip.save(os.path.join(TEX_ITEM, name + ".png"))
-        with open(os.path.join(TEX_ITEM, name + ".png.mcmeta"), "w", newline="\n") as fh:
+        strip.save(os.path.join(folder, name + ".png"))
+        with open(os.path.join(folder, name + ".png.mcmeta"), "w", newline="\n") as fh:
             json.dump(build_mcmeta(), fh, indent=2)
             fh.write("\n")
-        print("wrote %s.png (%s, %d frames) and %s.png.mcmeta"
-              % (name, variant, len(frames), name))
+        print("wrote %s/%s.png (%s, %d frames) and its .mcmeta"
+              % (os.path.basename(folder), name, variant, len(frames)))
         first = first or frames[0]
     if "--ascii" in sys.argv:
         dump(first)
