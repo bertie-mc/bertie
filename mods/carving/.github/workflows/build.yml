@@ -1,0 +1,29 @@
+name: Build and test
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    uses: bertie-mc/bertie-ci/.github/workflows/build-mod.yml@v4.0.0
+
+  unit-test:
+    uses: bertie-mc/bertie-ci/.github/workflows/unit-test.yml@v4.0.0
+
+  gametest:
+    uses: bertie-mc/bertie-ci/.github/workflows/gametest.yml@v4.0.0
+
+  client-test:
+    needs: build
+    uses: bertie-mc/bertie-ci/.github/workflows/client-test.yml@v4.0.0
+    with:
+      artifact-name: ${{ needs.build.outputs.artifact-name }}
+      fixture: emi,slag-n-embers
+      build-test-mod: false
+      success-marker: Registered 148 carving recipes with EMI
