@@ -1,4 +1,5 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
 
 plugins {
     `java-library`
@@ -66,6 +67,14 @@ dependencies {
     // reproduce off this machine. Runtime is provided by the modpack.
     compileOnly("maven.modrinth:forbidden-arcanus:2.6.1")
     compileOnly("maven.modrinth:valhelsia-core:1.1.4")
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {

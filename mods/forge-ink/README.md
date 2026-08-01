@@ -50,6 +50,15 @@ gradle build
 
 Jar lands in `build/libs/forgeink-<version>.jar`.
 
+## Tests
+
+```
+gradle test
+```
+
+The JVM suite covers the ink tier policy, essence amounts, strict forge-tier matching,
+and the required mixin and built-in resource-pack wiring. It does not launch a client.
+
 ## Licence
 
 The code is released into the public domain under **The Unlicense** — see

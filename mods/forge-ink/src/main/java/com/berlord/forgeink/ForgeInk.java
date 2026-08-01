@@ -45,18 +45,13 @@ public class ForgeInk {
 
     public static final String MOD_ID = "forgeink";
     /** Tier-1 ink's essence; every following tier doubles it (40/80/160/320/640). */
-    public static final int BASE_ESSENCE_PER_INK = 40;
+    public static final int BASE_ESSENCE_PER_INK = InkPolicy.BASE_ESSENCE_PER_INK;
 
     private static final Logger LOGGER = LoggerFactory.getLogger("ForgeInk");
 
-    /** Index 0 = forge tier ONE … index 4 = forge tier FIVE. */
-    private static final ResourceLocation[] INK_BY_TIER = {
-            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "common_ink"),
-            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "uncommon_ink"),
-            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "rare_ink"),
-            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "epic_ink"),
-            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "legendary_ink")
-    };
+    private static final ResourceLocation[] INK_BY_TIER = InkPolicy.inkIds().stream()
+            .map(ResourceLocation::parse)
+            .toArray(ResourceLocation[]::new);
 
     public ForgeInk(IEventBus modBus) {
         modBus.addListener(this::modifyDefaultComponents);
@@ -64,16 +59,13 @@ public class ForgeInk {
     }
 
     private void modifyDefaultComponents(ModifyDefaultComponentsEvent event) {
-        // 1) FA gives vanilla XP bottles ESSENCE_VALUE(EXPERIENCE, 15) in its own
-        //    listener — strip it again so bottles stop being an essence item anywhere
-        //    (forge, utrem jars, JEI). Our mods.toml orders us AFTER forbidden_arcanus,
-        //    so our patch wins. The Xpetrified Orb keeps its component (its right-click
-        //    XP redeem reads it!); the EssenceDataInput mixin blocks it instead.
+        // FA gives vanilla XP bottles an experience essence component. Remove it after
+        // FA's listener; the Xpetrified Orb keeps its component for its XP redeem action
+        // and is blocked from forge input by the mixin instead.
         event.modify(Items.EXPERIENCE_BOTTLE,
                 builder -> builder.remove(ModDataComponents.ESSENCE_VALUE.get()));
 
-        // 2) Tier-N ink fills 40 × 2^(N−1) essence (40/80/160/320/640) — in its own
-        //    tier's forge only (see mixins).
+        // Tier-N ink fills 40 × 2^(N−1) essence in its matching forge tier.
         for (int i = 0; i < INK_BY_TIER.length; i++) {
             ResourceLocation id = INK_BY_TIER[i];
             Item ink = BuiltInRegistries.ITEM.get(id);
@@ -81,7 +73,7 @@ public class ForgeInk {
                 LOGGER.error("Ink item {} not found — is Iron's Spells 'n Spellbooks loaded?", id);
                 continue;
             }
-            int amount = BASE_ESSENCE_PER_INK << i;
+            int amount = InkPolicy.essenceAmount(i + 1);
             event.modify(ink, builder -> builder.set(
                     ModDataComponents.ESSENCE_VALUE.get(),
                     EssenceValue.of(EssenceType.EXPERIENCE, amount)));
@@ -104,13 +96,7 @@ public class ForgeInk {
 
     /** @return 1–5 for the five inks (Common→Legendary), or -1 for any other item. */
     public static int inkTier(Item item) {
-        ResourceLocation id = BuiltInRegistries.ITEM.getKey(item);
-        for (int i = 0; i < INK_BY_TIER.length; i++) {
-            if (INK_BY_TIER[i].equals(id)) {
-                return i + 1;
-            }
-        }
-        return -1;
+        return InkPolicy.inkTier(BuiltInRegistries.ITEM.getKey(item).toString());
     }
 
     /**
@@ -119,6 +105,6 @@ public class ForgeInk {
      * Orbs, enchanted gear (disenchanting) — is rejected.
      */
     public static boolean allowExperienceInput(ItemStack stack, HephaestusForgeLevel forgeLevel) {
-        return inkTier(stack.getItem()) == forgeLevel.getAsInt();
+        return InkPolicy.allowsInkTier(inkTier(stack.getItem()), forgeLevel.getAsInt());
     }
 }
