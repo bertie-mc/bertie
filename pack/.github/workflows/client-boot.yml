@@ -14,4 +14,4 @@ concurrency:
 
 jobs:
   world-join:
-    uses: bertie-mc/bertie-ci/.github/workflows/pack-client.yml@v3.4.1
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-client.yml@v3.5.0

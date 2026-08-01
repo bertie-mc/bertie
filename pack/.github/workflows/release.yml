@@ -10,13 +10,13 @@ permissions:
 
 jobs:
   client:
-    uses: bertie-mc/bertie-ci/.github/workflows/pack-export-client.yml@v3.4.1
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-export-client.yml@v3.5.0
     with:
       output-file: bertie-${{ github.ref_name }}.mrpack
       artifact-name: bertie-pack-client-${{ github.run_id }}
 
   server:
-    uses: bertie-mc/bertie-ci/.github/workflows/pack-export-server.yml@v3.4.1
+    uses: bertie-mc/bertie-ci/.github/workflows/pack-export-server.yml@v3.5.0
     with:
       output-file: bertie-server-${{ github.ref_name }}.zip
       artifact-name: bertie-pack-server-${{ github.run_id }}
@@ -26,7 +26,7 @@ jobs:
     needs: [client, server]
     permissions:
       contents: write
-    uses: bertie-mc/bertie-ci/.github/workflows/github-release-assets.yml@v3.4.1
+    uses: bertie-mc/bertie-ci/.github/workflows/github-release-assets.yml@v3.5.0
     with:
       artifact-pattern: bertie-pack-*-${{ github.run_id }}
       files: |
