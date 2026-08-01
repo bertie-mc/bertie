@@ -2,7 +2,7 @@
 
 An exploration, technology and magic modpack for **NeoForge 1.21.1**.
 
-**490 mods.** Managed with [packwiz](https://packwiz.infra.link/).
+**About 500 mods.** Managed with [packwiz](https://packwiz.infra.link/).
 
 ---
 
@@ -100,20 +100,23 @@ are the tested compatible set. Do not bump one in isolation.
 
 | Workflow | When | What it does |
 |---|---|---|
-| `validate.yml` | every push and PR | index is current, every download resolves, no duplicate targets, every file has a `side` |
+| `validate.yml` | every push and PR | index is current, target filenames are unique, every metafile has a `side`, and no JAR is tracked |
 | `server-boot.yml` | nightly or manual | prepares the server-side pack and requires a headless dedicated server to reach readiness |
 | `client-boot.yml` | nightly or manual | prepares the client-side pack and requires a headless client to join an integrated world |
 | `release.yml` | tag `v*` or manual | independently exports the client `.mrpack` and no-mod-JAR server zip; tags publish both |
 
-A green `validate` means the pack is internally consistent and every mod is still
-downloadable. A green `server-boot` means the server half actually starts with all 490
-mods loaded. A green `client-boot` means the client half completed mod and resource
-loading, created an integrated server, generated a world, and joined it. Together they
-catch side-specific crashes that a download-only validation cannot.
+A green `validate` means the pack manifest is internally consistent. Preparing each
+runtime resolves and verifies that side's downloads before launch. A green `server-boot`
+means the complete server half actually starts; a green `client-boot` means the complete
+client half loaded resources, created an integrated server, generated a world, and joined
+it. Together the two runtime suites cover installation and side-specific composition.
 
 ---
 
 ## Releasing
+
+Before tagging, manually dispatch both runtime workflows for the exact commit being
+released and confirm that Client world join and Server readiness are green for that SHA.
 
 ```bash
 # bump `version` in pack.toml, commit, then:

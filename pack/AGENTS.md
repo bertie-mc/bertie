@@ -2,7 +2,7 @@
 
 Instructions for AI coding agents working in the **bertie** modpack repository.
 
-This repo is a **packwiz manifest**, not a mod. It describes ~490 mods; it contains none
+This repo is a **packwiz manifest**, not a mod. It describes about 500 mods; it contains none
 of them. Minecraft **1.21.1**, NeoForge **21.1.233**, Java **21**.
 
 ---
@@ -25,7 +25,7 @@ explicitly rather than finishing silently with unpushed commits.
 
 `.gitignore` blocks `*.jar` and CI fails the build if one is tracked. This is not tidiness:
 
-- The pack references ~490 third-party mods whose licences range from permissive to
+- The pack references about 500 third-party mods whose licences range from permissive to
   **all rights reserved**. Committing their jars would redistribute them.
 - A loose jar and a `.pw.toml` can resolve to the **same filename**, so the index lists one
   target path twice and the pack installs two copies — or two *versions* — of one mod.
@@ -123,14 +123,14 @@ what §2 exists to prevent.
 
 | Workflow | What a failure means |
 |---|---|
-| `validate.yml` | the index is stale, a metafile lacks a side, two mods target the same filename, a jar got committed, or a download no longer resolves |
+| `validate.yml` | the index is stale, a metafile lacks a side, two mods target the same filename, or a JAR got committed |
 | `server-boot.yml` | the server-side pack *installs* but does not reach dedicated-server readiness |
 | `client-boot.yml` | the client-side pack installs but crashes, stalls, or cannot join an integrated world |
 | `release.yml` | one of the separately exported client/server artifacts could not be published |
 
-Do not merge a red `validate`. The full-pack client and server probes are scheduled and
+Do not merge a red `validate`. The full-pack client and server suites are scheduled and
 manually dispatchable while their timing is stabilized. They can take tens of minutes
-because they boot all ~490 mods; that is expected, and the log artifact is the first thing
+because they boot the complete pack; that is expected, and the log artifact is the first thing
 to read when either fails.
 
 ---
