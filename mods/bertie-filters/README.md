@@ -1,0 +1,24 @@
+# Bertie Filters
+
+Adds an FTB Filter System custom filter (`bertie:wooden`) that matches wooden-material Slag 'n' Embers modular tools and armor by reading nested part NBT the default component filter cannot reach.
+
+- **Minecraft:** 1.21.1
+- **Loader:** NeoForge
+- **Mod ID:** `bertie_filters`
+- **Requires:** FTB Filter System, Slag 'n' Embers
+
+## Install
+Download the latest JAR from the [Releases page](../../releases) and put it in your `mods/` folder. Requires NeoForge for Minecraft 1.21.1 plus the deps above.
+
+## Building
+`gradle build` — the built JAR is written to `build/libs/`. Dependencies (FTB Filter System, Architectury, Slag 'n' Embers) resolve from Modrinth / Architectury / FTB mavens at build time.
+
+## Tests
+
+`gradle test` runs the fast filter-policy suite. It covers exact event routing, requested
+modular types, mixed-material tools, and rejection of missing or non-wooden parts without
+launching Minecraft.
+
+## License
+
+Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
