@@ -1,0 +1,23 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "Unlicense"
+
+[[mods]]
+modId = "fdshaderfixtest"
+version = "1"
+displayName = "FdLib Post-Shader Fix client tests"
+description = "Test-only assertions for FdLib Post-Shader Fix"
+
+[[dependencies.fdshaderfixtest]]
+modId = "fdshaderfix"
+type = "required"
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.fdshaderfixtest]]
+modId = "fdlib"
+type = "required"
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "CLIENT"
