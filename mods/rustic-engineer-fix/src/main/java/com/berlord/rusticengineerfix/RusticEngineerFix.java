@@ -7,7 +7,6 @@ import net.neoforged.fml.common.Mod;
 public class RusticEngineerFix {
     public static final String MOD_ID = "rusticengineerfix";
 
-    public RusticEngineerFix(IEventBus modBus) {
-        // Mixin-only mod; all behavior is in the two procedure mixins.
+    public RusticEngineerFix(IEventBus ignored) {
     }
 }

@@ -1,4 +1,5 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
 
 plugins {
     `java-library`
@@ -26,6 +27,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = uri("https://api.modrinth.com/maven") }
 }
 
 base {
@@ -57,6 +59,25 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    unitTest {
+        enable()
+        testedMod = mods.getByName(mod_id)
+    }
+}
+
+dependencies {
+    runtimeOnly("maven.modrinth:rustic-engineer:1.1.4")
+    // Fabric and NeoForge publish the same version number; this is the pack's NeoForge file ID.
+    runtimeOnly("maven.modrinth:geckolib:gFmrC8Ru")
+
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {

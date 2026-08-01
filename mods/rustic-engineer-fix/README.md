@@ -12,6 +12,12 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle test` loads the exact Rustic Engineer version in NeoForge's in-process test
+environment, verifies both foreign procedure classes received the expected injections,
+and covers the yaw and vertical-composition decisions without launching a client.
+
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
