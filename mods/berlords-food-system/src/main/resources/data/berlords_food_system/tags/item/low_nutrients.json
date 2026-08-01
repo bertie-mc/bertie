@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "farmersdelight:apple_cider", "required": false },
+    { "id": "farmersdelight:bone_broth", "required": false },
+    { "id": "create:builders_tea", "required": false }
+  ]
+}

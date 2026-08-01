@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WFW",
+    "EEE",
+    " B "
+  ],
+  "key": {
+    "W": { "item": "minecraft:wither_rose" },
+    "E": { "item": "minecraft:echo_shard" },
+    "F": { "item": "minecraft:fermented_spider_eye" },
+    "B": { "item": "minecraft:beetroot_soup" }
+  },
+  "result": {
+    "id": "berlords_food_system:demonic_gruel",
+    "count": 1
+  }
+}
