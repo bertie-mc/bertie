@@ -14,7 +14,7 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 Clean-room NeoForge reimplementation of the Fabric mod *Ender Eyes*' behaviour; no upstream code was reused.
 
 ## Building
-`./gradlew build` — the built JAR is written to `build/libs/`.
+`gradle build` — the built JAR is written to `build/libs/`.
 
 ## License
 
