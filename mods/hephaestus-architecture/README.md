@@ -45,16 +45,20 @@ The generated world file is normally under
 Minecraft's generated folder uses `structures` (plural), while the 1.21.1
 datapack resource folder in this project is `structure` (singular).
 
-## Build
-
-The wrapper delegates to the pinned wrapper in the sibling `forge-ink` project:
+## Build and test
 
 ```powershell
 gradle build
+gradle test
+gradle clientTestJar
 ```
 
 Output:
 `build/libs/hephaestusarchitecture-0.1.0.jar`
+
+The JVM suite validates rotation and every shipped structure template. The test-only client mod
+checks that all F&A mixins still transform their upstream targets, then joins a world headlessly.
+Test classes are not included in the release JAR.
 
 ## Known integration note
 

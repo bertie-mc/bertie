@@ -11,7 +11,7 @@ public final class HephaestusArchitecture {
     public static final String MOD_ID = "hephaestusarchitecture";
     public static final Logger LOGGER = LoggerFactory.getLogger("HephaestusArchitecture");
 
-    public HephaestusArchitecture(IEventBus modBus) {
+    public HephaestusArchitecture(IEventBus ignored) {
         LOGGER.info("Tiered Hephaestus Forge structure support enabled");
     }
 }

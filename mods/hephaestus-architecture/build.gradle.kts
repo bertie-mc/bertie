@@ -9,6 +9,7 @@ import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import org.gradle.language.jvm.tasks.ProcessResources
 import org.gradle.api.tasks.testing.Test
+import org.gradle.jvm.tasks.Jar
 import java.util.zip.ZipFile
 
 @CacheableTask
@@ -84,6 +85,8 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+val clientTest = sourceSets.create("clientTest")
+
 neoForge {
     version = neo_version
 
@@ -110,13 +113,28 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    addModdingDependenciesTo(clientTest)
+
+    unitTest {
+        enable()
+        testedMod = mods.getByName(mod_id)
+    }
 }
 
-// --- Ponder (the per-tier forge layout scenes) ---------------------------------------------------
-// Ponder is NOT published standalone on any maven: it ships JarJar-embedded inside Create. So we pull
-// Create from Modrinth and extract the nested ponder jar onto the compile classpath. Same pattern as
-// Bertie Progression's Deep Waters Shrine scene. Nothing third-party is committed to the repo. All of it
-// is compileOnly + ModList-guarded at runtime, so this mod still loads fine without Create.
+clientTest.compileClasspath += sourceSets.main.get().output + sourceSets.main.get().compileClasspath
+clientTest.runtimeClasspath += sourceSets.main.get().output + sourceSets.main.get().runtimeClasspath
+
+tasks.register<Jar>("clientTestJar") {
+    group = "verification"
+    description = "Build the test-only mod used by the headless client suite"
+    archiveFileName = "hephaestus-architecture-client-tests.jar"
+    destinationDirectory = layout.buildDirectory.dir("test-libs")
+    from(clientTest.output)
+    dependsOn(tasks.named(clientTest.classesTaskName))
+}
+
+// Ponder is embedded inside Create rather than published separately.
 val jarJarParents by configurations.creating
 val extractedLibsDir = layout.buildDirectory.dir("extracted-jarjar-libs").get().asFile
 
@@ -132,10 +150,6 @@ dependencies {
     add(jarJarParents.name, "maven.modrinth:create:6.0.10+mc1.21.1") // -> ponder-neoforge-1.0.82+mc1.21.1
     compileOnly(fileTree(extractedLibsDir) { include("*.jar") }.builtBy(extractJarJarLibs))
 
-    // Forbidden & Arcanus and its Valhelsia Core dependency, resolved from the Modrinth
-    // maven. These used to be read out of ../forge-ink/libs/, which made the build depend
-    // on a sibling checkout and on gitignored jars - it could not build anywhere but this
-    // machine. Same pins, reproducible source.
     compileOnly("maven.modrinth:forbidden-arcanus:2.6.1")
     compileOnly("maven.modrinth:valhelsia-core:1.1.4")
     runtimeOnly("maven.modrinth:forbidden-arcanus:2.6.1")
