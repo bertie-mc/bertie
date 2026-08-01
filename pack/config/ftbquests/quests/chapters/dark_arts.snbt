@@ -14,35 +14,8 @@
 		{
 			icon: {
 				count: 1
-				id: "forbidden_arcanus:hephaestus_forge_tier_1"
-			}
-			dependencies: ["1B0000000000001B"]
-			id: "1C00000000000001"
-			rewards: [{
-				id: "1C00000002000001"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "forbidden_arcanus:hephaestus_forge_tier_1"
-						}
-						id: "1C00000001000001"
-						title: "Aura Farming"
-						type: "checkmark"
-					}
-				]
-			x: 0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "forbidden_arcanus:soul"
 			}
-			dependencies: ["1C00000000000001"]
 			id: "1C00000000000002"
 			rewards: [{
 				id: "1C00000002000002"
@@ -61,15 +34,15 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: -1.5d
+			x: 3.0d
+			y: 0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "forbidden_arcanus:aureal_bottle"
 			}
-			dependencies: ["1C00000000000001"]
+			dependencies: ["1C00000000000002"]
 			id: "1C00000000000003"
 			rewards: [{
 				id: "1C00000002000003"
@@ -84,7 +57,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -92,7 +65,6 @@
 				count: 1
 				id: "bertie_progression:weeping_eye"
 			}
-			dependencies: ["1C00000000000007"]
 			id: "1C00000000000004"
 			rewards: [{
 				id: "1C00000002000004"
@@ -107,15 +79,15 @@
 						type: "item"
 					}
 				]
-			x: 0d
-			y: -1.5d
+			x: -7.5d
+			y: 0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "forbidden_arcanus:test_tube"
 			}
-			dependencies: ["1C00000000000001"]
+			dependencies: ["1C00000000000003"]
 			id: "1C00000000000005"
 			rewards: [{
 				id: "1C00000002000005"
@@ -130,15 +102,15 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
-			y: -1.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "irons_spellbooks:common_ink"
 			}
-			dependencies: ["1C00000000000001"]
+			dependencies: ["1C00000000000005"]
 			id: "1C00000000000006"
 			rewards: [{
 				id: "1C00000002000006"
@@ -154,19 +126,13 @@
 					}
 				]
 			x: 3.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:spirit_altar"
 			}
-			dependencies: [
-				"1C00000000000002"
-				"1C00000000000003"
-				"1C00000000000005"
-				"1C00000000000006"
-			]
 			id: "1C00000000000007"
 			rewards: [{
 				id: "1C00000002000007"
@@ -182,14 +148,13 @@
 					}
 				]
 			x: 0d
-			y: -3.0d
+			y: 0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:tainted_rock"
 			}
-			dependencies: ["1C00000000000007"]
 			id: "1C00000000000008"
 			rewards: [{
 				id: "1C00000002000008"
@@ -204,15 +169,15 @@
 						type: "item"
 					}
 				]
-			x: -0.75d
-			y: -4.5d
+			x: 6.0d
+			y: 0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:twisted_rock"
 			}
-			dependencies: ["1C00000000000007"]
+			dependencies: ["1C00000000000008"]
 			id: "1C00000000000009"
 			rewards: [{
 				id: "1C00000002000009"
@@ -227,18 +192,15 @@
 						type: "item"
 					}
 				]
-			x: 0.75d
-			y: -4.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:spirit_crucible"
 			}
-			dependencies: [
-				"1C00000000000008"
-				"1C00000000000009"
-			]
+			dependencies: ["1C00000000000009"]
 			id: "1C0000000000000A"
 			rewards: [{
 				id: "1C0000000200000A"
@@ -253,15 +215,14 @@
 						type: "item"
 					}
 				]
-			x: 0d
-			y: -6.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:arcane_charcoal"
 			}
-			dependencies: ["1C0000000000000A"]
 			id: "1C0000000000000B"
 			rewards: [{
 				id: "1C0000000200000B"
@@ -276,7 +237,7 @@
 						type: "item"
 					}
 				]
-			x: 0d
+			x: -6.0d
 			y: -7.5d
 		}
 		{
@@ -299,7 +260,7 @@
 						type: "item"
 					}
 				]
-			x: 0d
+			x: -6.0d
 			y: -9.0d
 		}
 		{
@@ -307,7 +268,6 @@
 				count: 1
 				id: "malum:alchemical_calx"
 			}
-			dependencies: ["1C0000000000000C"]
 			id: "1C0000000000000D"
 			rewards: [{
 				id: "1C0000000200000D"
@@ -422,7 +382,6 @@
 				count: 1
 				id: "malum:totemic_staff"
 			}
-			dependencies: ["1C00000000000007"]
 			id: "1C00000000000012"
 			rewards: [{
 				id: "1C00000002000012"
@@ -437,60 +396,15 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: -4.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:runewood_totem_base"
-			}
-			dependencies: ["1C00000000000012"]
-			id: "1C00000000000013"
-			rewards: [{
-				id: "1C00000002000013"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000013"
-						item: { count: 1 id: "malum:runewood_totem_base" }
-						type: "item"
-					}
-				]
 			x: -4.5d
-			y: -4.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:encyclopedia_arcana"
-			}
-			dependencies: ["1C00000000000012"]
-			id: "1C00000000000014"
-			rewards: [{
-				id: "1C00000002000014"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000014"
-						item: { count: 1 id: "malum:encyclopedia_arcana" }
-						type: "item"
-					}
-				]
-			x: -3.0d
-			y: -3.0d
+			y: 0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:spirit_catalyzer"
 			}
+			dependencies: ["1C0000000000000A"]
 			id: "1C00000000000015"
 			rewards: [{
 				id: "1C00000002000015"
@@ -505,14 +419,38 @@
 						type: "item"
 					}
 				]
-			x: 4.5d
-			y: -1.0d
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:repair_pylon"
+			}
+			dependencies: ["1C00000000000015"]
+			id: "1C00000000000017"
+			rewards: [{
+				id: "1C00000002000017"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000017"
+						item: { count: 1 id: "malum:repair_pylon" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:tuning_fork"
 			}
+			dependencies: ["1C00000000000017"]
 			id: "1C00000000000016"
 			rewards: [{
 				id: "1C00000002000016"
@@ -528,29 +466,7 @@
 					}
 				]
 			x: 6.0d
-			y: -1.0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:repair_pylon"
-			}
-			id: "1C00000000000017"
-			rewards: [{
-				id: "1C00000002000017"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000017"
-						item: { count: 1 id: "malum:repair_pylon" }
-						type: "item"
-					}
-				]
-			x: 7.5d
-			y: -1.0d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -715,14 +631,15 @@
 						type: "item"
 					}
 				]
-			x: 7.41d
-			y: -3.91d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:resonance_tuner"
 			}
+			dependencies: ["1C0000000000001E"]
 			id: "1C0000000000001F"
 			rewards: [{
 				id: "1C0000000200001F"
@@ -737,14 +654,15 @@
 						type: "item"
 					}
 				]
-			x: 6.77d
-			y: -4.35d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:stellar_mechanism"
 			}
+			dependencies: ["1C0000000000001F"]
 			id: "1C00000000000020"
 			rewards: [{
 				id: "1C00000002000020"
@@ -759,14 +677,15 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: -4.5d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:suspicious_device"
 			}
+			dependencies: ["1C00000000000020"]
 			id: "1C00000000000021"
 			rewards: [{
 				id: "1C00000002000021"
@@ -781,14 +700,15 @@
 						type: "item"
 					}
 				]
-			x: 5.23d
-			y: -4.35d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:sympathy_drive"
 			}
+			dependencies: ["1C00000000000021"]
 			id: "1C00000000000022"
 			rewards: [{
 				id: "1C00000002000022"
@@ -803,8 +723,8 @@
 						type: "item"
 					}
 				]
-			x: 4.59d
-			y: -3.91d
+			x: 9.0d
+			y: -4.0d
 		}
 		{
 			icon: {
@@ -825,14 +745,15 @@
 						type: "item"
 					}
 				]
-			x: 8.91d
-			y: -4.94d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:blazing_diode"
 			}
+			dependencies: ["1C00000000000023"]
 			id: "1C00000000000024"
 			rewards: [{
 				id: "1C00000002000024"
@@ -847,14 +768,15 @@
 						type: "item"
 					}
 				]
-			x: 8.22d
-			y: -5.59d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:impurity_stabilizer"
 			}
+			dependencies: ["1C00000000000024"]
 			id: "1C00000000000025"
 			rewards: [{
 				id: "1C00000002000025"
@@ -869,14 +791,15 @@
 						type: "item"
 					}
 				]
-			x: 7.39d
-			y: -6.04d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:intricate_assembly"
 			}
+			dependencies: ["1C00000000000025"]
 			id: "1C00000000000026"
 			rewards: [{
 				id: "1C00000002000026"
@@ -891,14 +814,15 @@
 						type: "item"
 					}
 				]
-			x: 6.47d
-			y: -6.27d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:mending_diffuser"
 			}
+			dependencies: ["1C00000000000026"]
 			id: "1C00000000000027"
 			rewards: [{
 				id: "1C00000002000027"
@@ -913,14 +837,15 @@
 						type: "item"
 					}
 				]
-			x: 5.53d
-			y: -6.27d
+			x: 10.5d
+			y: -4.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:prismatic_focus_lens"
 			}
+			dependencies: ["1C00000000000027"]
 			id: "1C00000000000028"
 			rewards: [{
 				id: "1C00000002000028"
@@ -935,14 +860,15 @@
 						type: "item"
 					}
 				]
-			x: 4.61d
-			y: -6.04d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:shielding_apparatus"
 			}
+			dependencies: ["1C00000000000028"]
 			id: "1C00000000000029"
 			rewards: [{
 				id: "1C00000002000029"
@@ -957,14 +883,15 @@
 						type: "item"
 					}
 				]
-			x: 3.78d
-			y: -5.59d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "malum:warping_engine"
 			}
+			dependencies: ["1C00000000000029"]
 			id: "1C0000000000002A"
 			rewards: [{
 				id: "1C0000000200002A"
@@ -979,8 +906,8 @@
 						type: "item"
 					}
 				]
-			x: 3.09d
-			y: -4.94d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			icon: {
@@ -1002,7 +929,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: -7.5d
 			y: -9.75d
 		}
 		{
@@ -1025,7 +952,7 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
+			x: -9.0d
 			y: -10.5d
 		}
 		{
@@ -1048,7 +975,7 @@
 						type: "item"
 					}
 				]
-			x: -4.5d
+			x: -10.5d
 			y: -11.25d
 		}
 		{
@@ -1071,7 +998,7 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
+			x: -9.0d
 			y: -9.0d
 		}
 		{
@@ -1094,7 +1021,7 @@
 						type: "item"
 					}
 				]
-			x: -4.5d
+			x: -10.5d
 			y: -8.25d
 		}
 		{
@@ -1116,8 +1043,8 @@
 						type: "item"
 					}
 				]
-			x: -2.25d
-			y: -15.0d
+			x: -10.5d
+			y: 0d
 		}
 	]
 }

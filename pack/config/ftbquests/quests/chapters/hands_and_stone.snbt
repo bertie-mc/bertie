@@ -135,7 +135,7 @@
 		{
 			icon: {
 				count: 1
-				id: "immersive_armors:wooden_chestplate"
+				id: "immersive_armors:wooden_helmet"
 			}
 			dependencies: ["1B00000000000002"]
 			id: "1B00000000000006"
@@ -149,24 +149,6 @@
 						count: 1L
 						id: "1B00000001000006"
 						item: { count: 1 id: "immersive_armors:wooden_helmet" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "1B00000001010006"
-						item: { count: 1 id: "immersive_armors:wooden_chestplate" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "1B00000001020006"
-						item: { count: 1 id: "immersive_armors:wooden_leggings" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "1B00000001030006"
-						item: { count: 1 id: "immersive_armors:wooden_boots" }
 						type: "item"
 					}
 				]
@@ -272,6 +254,7 @@
 				count: 1
 				id: "minecraft:iron_ingot"
 			}
+			dependencies: ["1B0000000000000A"]
 			id: "1B0000000000000B"
 			rewards: [{
 				id: "1B0000000200000B"
@@ -466,6 +449,7 @@
 				count: 1
 				id: "minecraft:copper_ingot"
 			}
+			dependencies: ["1B00000000000012"]
 			id: "1B00000000000013"
 			rewards: [{
 				id: "1B00000002000013"
@@ -759,8 +743,8 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: 6.25d
+			x: 5.25d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -783,7 +767,7 @@
 					}
 				]
 			x: 8.25d
-			y: 2.1d
+			y: 2.0d
 		}
 		{
 			icon: {
@@ -897,8 +881,100 @@
 						type: "item"
 					}
 				]
-			x: 14.25d
-			y: 6.25d
+			x: 15.75d
+			y: 4.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "immersive_armors:wooden_chestplate"
+			}
+			dependencies: ["1B00000000000006"]
+			id: "1B00000000000024"
+			rewards: [{
+				id: "1B00000002000024"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000024"
+						item: { count: 1 id: "immersive_armors:wooden_chestplate" }
+						type: "item"
+					}
+				]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "immersive_armors:wooden_leggings"
+			}
+			dependencies: ["1B00000000000024"]
+			id: "1B00000000000025"
+			rewards: [{
+				id: "1B00000002000025"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000025"
+						item: { count: 1 id: "immersive_armors:wooden_leggings" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "immersive_armors:wooden_boots"
+			}
+			dependencies: ["1B00000000000025"]
+			id: "1B00000000000026"
+			rewards: [{
+				id: "1B00000002000026"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000026"
+						item: { count: 1 id: "immersive_armors:wooden_boots" }
+						type: "item"
+					}
+				]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:corrupted_arcane_crystal"
+			}
+			dependencies: ["1B0000000000001F"]
+			id: "1B00000000000027"
+			rewards: [{
+				id: "1B00000002000027"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "1B00000001000027"
+						item: { count: 1 id: "forbidden_arcanus:corrupted_arcane_crystal" }
+						type: "item"
+					}
+				]
+			x: 9.0d
+			y: -2.4d
 		}
 	]
 }

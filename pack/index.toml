@@ -14,7 +14,7 @@ hash = "8899b89a7567cf28d688d16937bfff68d53c6db572b8b5a161aa916f5e8032df"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ash_and_twilight.snbt"
-hash = "e55eb2d60e5635ddcefbaa9a722d991a856271ce81fbcc19edd04274c0f26a77"
+hash = "635e95bd72a24fc17101cf36eb4ab9e0e4b064c39061fafe3aa0698e4f80f3c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/concordance.snbt"
@@ -22,7 +22,7 @@ hash = "427193b9c6e4bd9dc42cf42d27c86fce4c4b4c92d7656630a65d9dc7bbd41048"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/dark_arts.snbt"
-hash = "b1471d601f4a3a7489393b9bd5e7438c3355955bf453edeb86f70debd5b00f36"
+hash = "86d439eaf3422f833bf80ae5f1ea2c7ecb6f31803ee4b4bee222b9350cb04a76"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/echo_and_below.snbt"
@@ -38,7 +38,7 @@ hash = "340a93f2f900432230c518a71c83f55ae91bb7574aa8de3517e40e5f59e274c5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hands_and_stone.snbt"
-hash = "7e93a316d77406093a9b129ddc9ddf7d5d25a42b1d9e3b62bc7239fbd4761f7c"
+hash = "c2e91f758dd44d46602fc07e4e384b8a3c00537ee7326a65d21e274219001b05"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/kinetic_language.snbt"
@@ -50,7 +50,7 @@ hash = "2c5e7631dfff8e2e2d615603d620e18e0de71e1bf5962e21daa0c7b48aee947b"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0ae2e8a7a0e6b51d4fa991b63ef9b5a6e6ef66dd710d13cc37df025c586dba67"
+hash = "516c0e3bf1a8700bbd6580348ccd9a36308f7573abff2c5cc18d45c269ff3a37"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -1000,6 +1000,11 @@ hash = "b3fa44452789fefacda465ad314a8e624d84a3527a834f85b25af75b80585f17"
 metafile = true
 
 [[files]]
+file = "mods/fart-bomb.pw.toml"
+hash = "ef53b9ced3b2dd399f7b3dd36a872fc81099d143c9bd550ff214a7e92cf2fa01"
+metafile = true
+
+[[files]]
 file = "mods/fd-shader-fix.pw.toml"
 hash = "6fafdf952b48ef03d8af7d12c0937e57d85814572686f1d568a3939756e4a807"
 metafile = true
@@ -1917,6 +1922,11 @@ metafile = true
 [[files]]
 file = "mods/prickle.pw.toml"
 hash = "c99c5bac469e8d6ece5aae80f08635e3bbb8367f0c586b6288573c725faefe69"
+metafile = true
+
+[[files]]
+file = "mods/primitive-refined.pw.toml"
+hash = "89dbd04cac7991b168b5b0817b385fda752957ad3d0e1269a867224c031ddcee"
 metafile = true
 
 [[files]]

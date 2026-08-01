@@ -17,8 +17,8 @@
 	quest.1B00000000000004.title: "Pressed against water"
 	quest.1B00000000000005.quest_desc: ["3 Paper + 1 Clay Ball = a Slag Modular Blueprint. Insert a carved head and two sticks, then shift-use to assemble your first real tools."]
 	quest.1B00000000000005.title: "Modular blueprints"
-	quest.1B00000000000006.quest_desc: ["Carve the four wooden armor pieces from Big Wooden Slates - helmet, chestplate, leggings and boots. Carving now yields the wearable Immersive Armors set itself; no blueprint assembly."]
-	quest.1B00000000000006.title: "Wooden armor"
+	quest.1B00000000000006.quest_desc: ["Carve a Wooden Helmet from a Big Wooden Slate. Carving yields the wearable Immersive Armors piece itself; no blueprint assembly."]
+	quest.1B00000000000006.title: "Wooden helmet"
 	quest.1B00000000000007.quest_desc: ["Carve a wooden pickaxe head from a slate. The quest ticks the head; socket it into a Modular Blueprint with two sticks and shift-use to finish the pickaxe."]
 	quest.1B00000000000007.title: "Wooden pickaxe"
 	quest.1B00000000000008.quest_desc: ["Wood cannot break Arcane Crystal or Redstone. Carve a FLINT or a BONE pickaxe head - either one is the copper tier that mines them before iron."]
@@ -77,8 +77,14 @@
 	quest.1B00000000000022.title: "Copper stockpile"
 	quest.1B00000000000023.quest_desc: ["Alloy 64 Rose Gold Ingots."]
 	quest.1B00000000000023.title: "Rose Gold stockpile"
-	quest.1C00000000000001.quest_desc: ["The Hephaestus Forge runs on four essences - Aureal, Blood, Souls and Experience. Time to farm them."]
-	quest.1C00000000000001.title: "Aura Farming"
+	quest.1B00000000000024.quest_desc: ["Carve a Wooden Chestplate from a Big Wooden Slate."]
+	quest.1B00000000000024.title: "Wooden chestplate"
+	quest.1B00000000000025.quest_desc: ["Carve Wooden Leggings from a Big Wooden Slate."]
+	quest.1B00000000000025.title: "Wooden leggings"
+	quest.1B00000000000026.quest_desc: ["Carve Wooden Boots from a Big Wooden Slate. That is the set."]
+	quest.1B00000000000026.title: "Wooden boots"
+	quest.1B00000000000027.quest_desc: ["Bank 64 Corrupted Arcane Crystal - the soured half of the vein."]
+	quest.1B00000000000027.title: "A corrupted vein"
 	quest.1C00000000000002.quest_desc: ["Souls drop from the Lost Soul family that drifts through the dark. Lost, Corrupt and Enchanted Souls all count toward this - bring back any four."]
 	quest.1C00000000000002.title: "Get Souls"
 	quest.1C00000000000003.quest_desc: ["Aureal comes bottled, and the Forge fills the bottle for nothing: a ritual on a plain Water Bottle with 4 Arcane Crystal Dust, 2 Rotten Flesh and 2 of any meat - no essence cost, because you cannot spend Aureal you do not have yet. Arcane Crystal Obelisks set into the forge multiblock also generate it passively, forever."]
@@ -113,10 +119,6 @@
 	quest.1C00000000000011.title: "Six Iron Ingots"
 	quest.1C00000000000012.quest_desc: ["Two pieces in your 2x2: Runewood Planks over an Edelwood Stick, set corner to corner. The staff is how you carve spirit runes into a totem."]
 	quest.1C00000000000012.title: "The Totemic Staff"
-	quest.1C00000000000013.quest_desc: ["At the Spirit Altar: a Runewood Log ringed with 4 Hex Ash and 4 Runes, paid one of every spirit. Stack bases into a pole, carve them with the staff, and the totem wakes."]
-	quest.1C00000000000013.title: "The Totem Base"
-	quest.1C00000000000014.quest_desc: ["throw me into weeping well"]
-	quest.1C00000000000014.title: "The Encyclopedia Arcana"
 	quest.1C00000000000015.quest_desc: ["The Catalyzer holds a single Core Augment and feeds its effect to the crucible beside it."]
 	quest.1C00000000000015.title: "Spirit Catalyzer"
 	quest.1C00000000000016.quest_desc: ["Hold it and every resonance on the Spirit Crucible and its augments becomes visible. Use it ON the crucible to pick one attribute to strengthen - the others weaken to pay for it."]
@@ -317,12 +319,6 @@
 	quest.2B00000000000047.title: "Lunar onyx"
 	quest.2B00000000000048.quest_desc: ["Hephaestus-forge the Lich Trophy into an Acolyte of Deflection (2 Dragon Bones, 2 Hallowed Gold Ingots, a Shattered Skull, a Precision Mechanism, a Bound Soul Ingot and a Magic Map Focus). Dupe the trophy at the Spirit Altar first if you want to keep one on the wall."]
 	quest.2B00000000000048.title: "The Acolyte of Deflection"
-	quest.3B00000000000001.quest_desc: ["A Tier-1 Forge ritual consumes the All-Basic Pedestal core with Soulstone, Hallowed Gold and a Seal. The SIMPLE era ends so the Nether can open."]
-	quest.3B00000000000001.title: "Nether Lintel Core"
-	quest.3B00000000000002.quest_desc: ["The Crafter wall sets the Core into eight Obsidian. In the full design this keys the portal; here it is your gate trophy - light the portal and go."]
-	quest.3B00000000000002.title: "The Nether Lintel"
-	quest.3B00000000000003.quest_desc: ["Break real hostile spawners in fortresses and dungeons for four Spawner Scrap. Placed or copied spawners do not count in the full design."]
-	quest.3B00000000000003.title: "Spawner scrap"
 	quest.3B00000000000004.quest_desc: ["Spirit-infuse four obelisks (Runewood + Hallowed Gold + spirits). Four around the altar is Bertie Level II - and a Resonance proves it."]
 	quest.3B00000000000004.title: "Four Runewood Obelisks"
 	quest.3B00000000000005.quest_desc: ["Infuse Refined Soulstone with Aerial spirits while the obelisks accelerate. The physical Level-II witness."]
@@ -333,10 +329,6 @@
 	quest.3B00000000000007.title: "Runic Workbench"
 	quest.3B00000000000008.quest_desc: ["Tainted Rock + Aqueous spirits at the Runic Workbench. The physical witness Hephaestus II demands."]
 	quest.3B00000000000008.title: "Rune of Ailment Cleansing"
-	quest.3B00000000000009.quest_desc: ["Infuse Arcane Crystal Dust with Arcane spirits while four fueled Pylons run. Proof of Level III."]
-	quest.3B00000000000009.title: "Arcana Resonance"
-	quest.3B0000000000000A.quest_desc: ["The upgrade ritual: Edelwood Planks core, 4 Arcane Crystal, 4 Spawner Scrap, 4 Blaze Rods, the Rune, the Resonance - and 500 Aureal / 6000 Blood / 10 Souls."]
-	quest.3B0000000000000A.title: "Hephaestus Forge II"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
@@ -409,12 +401,20 @@
 	quest.3B0000000000002D.title: "Gather Blood"
 	quest.3B0000000000002E.quest_desc: ["Take the Fire Dragon Heart."]
 	quest.3B0000000000002E.title: "The Dragon's Heart"
-	quest.3B0000000000002F.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B0000000000002F.title: "Second Line"
+	quest.3B0000000000002F.quest_desc: ["A Tier-II ritual boils a Bowl down with the Fire Dragon Heart, a Koboleton Bone, Living Flesh, Fire Dragon Blood, two Fire Dragon Scales and a Bucket of Lava - for the full 50 Souls and 15000 Blood the forge can hold. Eat it and the floor turns to lava under you; survive four hits of it - 35 ticks - and the fire stops mattering for a minute."]
+	quest.3B0000000000002F.title: "Netherly Meal"
 	quest.3B00000000000030.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B00000000000030.title: "Third Line"
+	quest.3B00000000000030.title: "Second Line"
 	quest.3B00000000000031.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B00000000000031.title: "Fourth Line"
+	quest.3B00000000000031.title: "Third Line"
+	quest.3B00000000000032.quest_desc: ["Placeholder root - this line has no content yet."]
+	quest.3B00000000000032.title: "Fourth Line"
+	quest.3B00000000000033.quest_desc: ["Fourteen Obsidian - ten for the frame, and four spare for the ones you will lose."]
+	quest.3B00000000000033.title: "Fourteen Obsidian"
+	quest.3B00000000000034.quest_desc: ["One Iron Ingot and one Flint. Nothing lights the frame without it."]
+	quest.3B00000000000034.title: "Flint and Steel"
+	quest.3B00000000000035.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
+	quest.3B00000000000035.title: "Enter the Nether"
 	quest.4B00000000000001.quest_desc: ["Optional: a Tier-2 ritual binds a Compass to the nearest Ancient City. Use it and follow the pulse."]
 	quest.4B00000000000001.title: "Echoing City Compass"
 	quest.4B00000000000002.quest_desc: ["Wake it. Kill it honestly. Its guaranteed Warden Carapace becomes a reusable pattern."]

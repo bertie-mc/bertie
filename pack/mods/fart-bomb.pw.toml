@@ -1,0 +1,15 @@
+name = "fart-bomb"
+filename = "fartbomb-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/fart-bomb/releases/download/v1.1.0/fartbomb-1.1.0.jar"
+hash-format = "sha256"
+hash = "acd74622cc405985f5fdf865985f58bfc5eccaf6bb48ac84f87a3f7a2a13b855"
+
+[update]
+[update.github]
+branch = "main"
+regex = "^.+(?<!-api|-dev|-dev-preshadow|-sources)\\.jar$"
+slug = "bertie-mc/fart-bomb"
+tag = "v1.1.0"

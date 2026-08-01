@@ -10,75 +10,6 @@
 		{
 			icon: {
 				count: 1
-				id: "bertie_progression:nether_lintel_core"
-			}
-			dependencies: ["2B00000000000044"]
-			id: "3B00000000000001"
-			rewards: [{
-				id: "3B00000002000001"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000001"
-						item: { count: 1 id: "bertie_progression:nether_lintel_core" }
-						type: "item"
-					}
-				]
-			x: 0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertie_progression:nether_lintel"
-			}
-			dependencies: ["3B00000000000001"]
-			id: "3B00000000000002"
-			rewards: [{
-				id: "3B00000002000002"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000002"
-						item: { count: 1 id: "bertie_progression:nether_lintel" }
-						type: "item"
-					}
-				]
-			x: 1.5d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "forbidden_arcanus:spawner_scrap"
-			}
-			dependencies: ["3B00000000000002"]
-			id: "3B00000000000003"
-			rewards: [{
-				id: "3B00000002000003"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 4L
-						id: "3B00000001000003"
-						item: { count: 1 id: "forbidden_arcanus:spawner_scrap" }
-						type: "item"
-					}
-				]
-			x: 3.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "malum:runewood_obelisk"
 			}
 			dependencies: ["2B00000000000044"]
@@ -190,59 +121,6 @@
 				]
 			x: 6.0d
 			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertie_progression:arcana_resonance"
-			}
-			dependencies: ["3B00000000000006"]
-			id: "3B00000000000009"
-			rewards: [{
-				id: "3B00000002000009"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000009"
-						item: { count: 1 id: "bertie_progression:arcana_resonance" }
-						type: "item"
-					}
-				]
-			x: 6.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "forbidden_arcanus:hephaestus_forge_tier_2"
-			}
-			dependencies: [
-				"3B00000000000003"
-				"3B00000000000008"
-				"3B00000000000009"
-			]
-			id: "3B0000000000000A"
-			rewards: [{
-				id: "3B0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "forbidden_arcanus:hephaestus_forge_tier_2"
-						}
-						id: "3B0000000100000A"
-						title: "Hephaestus Forge II"
-						type: "checkmark"
-					}
-				]
-			x: 7.5d
-			y: 0d
 		}
 		{
 			icon: {
@@ -1078,6 +956,7 @@
 				count: 1
 				id: "iceandfire:dragonscales_red"
 			}
+			dependencies: ["3B0000000000002A"]
 			id: "3B0000000000002B"
 			rewards: [{
 				id: "3B0000000200002B"
@@ -1096,8 +975,8 @@
 						value: 1L
 					}
 				]
-			x: -30.0d
-			y: 0d
+			x: -17.0d
+			y: 4.45d
 		}
 		{
 			icon: {
@@ -1123,8 +1002,8 @@
 						type: "item"
 					}
 				]
-			x: -30.0d
-			y: 1.5d
+			x: -15.87d
+			y: 5.24d
 		}
 		{
 			icon: {
@@ -1146,8 +1025,8 @@
 						type: "item"
 					}
 				]
-			x: -30.0d
-			y: 3.0d
+			x: -14.23d
+			y: 5.41d
 		}
 		{
 			icon: {
@@ -1169,14 +1048,15 @@
 						type: "item"
 					}
 				]
-			x: -30.0d
-			y: 4.5d
+			x: -12.41d
+			y: 4.7d
 		}
 		{
 			icon: {
 				count: 1
-				id: "minecraft:barrier"
+				id: "bertie_progression:netherly_meal"
 			}
+			dependencies: ["3B0000000000002E"]
 			id: "3B0000000000002F"
 			rewards: [{
 				id: "3B0000000200002F"
@@ -1185,17 +1065,14 @@
 			}]
 				tasks: [
 					{
-						icon: {
-							count: 1
-							id: "minecraft:barrier"
-						}
+						count: 1L
 						id: "3B0000000100002F"
-						title: "Second Line"
-						type: "checkmark"
+						item: { count: 1 id: "bertie_progression:netherly_meal" }
+						type: "item"
 					}
 				]
-			x: -28.5d
-			y: 0d
+			x: -10.85d
+			y: 3.06d
 		}
 		{
 			icon: {
@@ -1215,11 +1092,11 @@
 							id: "minecraft:barrier"
 						}
 						id: "3B00000001000030"
-						title: "Third Line"
+						title: "Second Line"
 						type: "checkmark"
 					}
 				]
-			x: -27.0d
+			x: -28.5d
 			y: 0d
 		}
 		{
@@ -1240,12 +1117,109 @@
 							id: "minecraft:barrier"
 						}
 						id: "3B00000001000031"
+						title: "Third Line"
+						type: "checkmark"
+					}
+				]
+			x: -27.0d
+			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:barrier"
+			}
+			id: "3B00000000000032"
+			rewards: [{
+				id: "3B00000002000032"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:barrier"
+						}
+						id: "3B00000001000032"
 						title: "Fourth Line"
 						type: "checkmark"
 					}
 				]
 			x: -25.5d
 			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:obsidian"
+			}
+			dependencies: ["3B0000000000002F"]
+			id: "3B00000000000033"
+			rewards: [{
+				id: "3B00000002000033"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 14L
+						id: "3B00000001000033"
+						item: { count: 1 id: "minecraft:obsidian" }
+						type: "item"
+					}
+				]
+			x: -9.99d
+			y: 0.61d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:flint_and_steel"
+			}
+			dependencies: ["3B00000000000033"]
+			id: "3B00000000000034"
+			rewards: [{
+				id: "3B00000002000034"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000034"
+						item: { count: 1 id: "minecraft:flint_and_steel" }
+						type: "item"
+					}
+				]
+			x: -10.18d
+			y: -2.31d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:netherrack"
+			}
+			dependencies: ["3B00000000000034"]
+			id: "3B00000000000035"
+			rewards: [{
+				id: "3B00000002000035"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:netherrack"
+						}
+						id: "3B00000001000035"
+						dimension: "minecraft:the_nether"
+						type: "dimension"
+					}
+				]
+			x: -9.31d
+			y: -8.48d
 		}
 	]
 }
