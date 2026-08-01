@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.berlord.explosiveenhancement.mixin",
+  "package": "io.github.bertie_mc.explosiveenhancement.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ClientPacketListenerMixin"

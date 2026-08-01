@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.berlord.foodsystem.mixin",
+  "package": "io.github.bertie_mc.foodsystem.mixin",
   "compatibilityLevel": "JAVA_21",
-  "plugin": "com.berlord.foodsystem.mixin.BfsMixinPlugin",
+  "plugin": "io.github.bertie_mc.foodsystem.mixin.BfsMixinPlugin",
   "mixins": [
     "ItemStackDurabilityMixin",
     "LivingEntityClimbMixin",

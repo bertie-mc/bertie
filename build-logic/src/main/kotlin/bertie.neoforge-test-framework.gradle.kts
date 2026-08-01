@@ -1,4 +1,4 @@
-import mc.bertie.gradle.BertieModMetadata
+import io.github.bertie_mc.gradle.BertieModMetadata
 
 plugins {
     id("bertie.neoforge-unit-test")

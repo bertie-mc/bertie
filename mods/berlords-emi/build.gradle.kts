@@ -1,4 +1,4 @@
-import mc.bertie.gradle.tasks.ExtractNestedJars
+import io.github.bertie_mc.gradle.tasks.ExtractNestedJars
 
 plugins {
     id("bertie.neoforge-mod")

@@ -1,4 +1,4 @@
-import mc.bertie.gradle.BertieModMetadata
+import io.github.bertie_mc.gradle.BertieModMetadata
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.language.jvm.tasks.ProcessResources
 

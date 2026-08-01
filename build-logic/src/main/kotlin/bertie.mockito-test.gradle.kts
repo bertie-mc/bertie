@@ -1,4 +1,4 @@
-import mc.bertie.gradle.JavaAgentArgumentProvider
+import io.github.bertie_mc.gradle.JavaAgentArgumentProvider
 import org.gradle.api.artifacts.ExternalModuleDependency
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.tasks.testing.Test

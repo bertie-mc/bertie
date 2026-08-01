@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.berlord.witheredhearts.mixin",
+  "package": "io.github.bertie_mc.witheredhearts.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "GuiHeartsMixin"

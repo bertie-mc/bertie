@@ -1,4 +1,4 @@
-import mc.bertie.gradle.BertieModMetadata
+import io.github.bertie_mc.gradle.BertieModMetadata
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
 import org.gradle.api.tasks.SourceSetContainer
 

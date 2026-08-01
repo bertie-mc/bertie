@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.berlord.bertieblackhole.mixin",
-  "plugin": "com.berlord.bertieblackhole.mixin.BbhMixinPlugin",
+  "package": "io.github.bertie_mc.bertieblackhole.mixin",
+  "plugin": "io.github.bertie_mc.bertieblackhole.mixin.BbhMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BlackHoleBlockEntityMixin",
