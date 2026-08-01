@@ -13,7 +13,7 @@ Download the latest JAR from the [Releases page](../../releases) and put it in y
 
 ## Building
 
-`./gradlew build` — the built JAR is written to `build/libs/`. This is a runtime patch, so it must be run alongside Short Circuit to have any effect.
+`gradle build` — the built JAR is written to `build/libs/`. This is a runtime patch, so it must be run alongside Short Circuit to have any effect.
 
 ## License
 
