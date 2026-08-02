@@ -40,7 +40,7 @@ public final class SlagEmiModule {
     private SlagEmiModule() {
     }
 
-    private static final String NS = "berlordsemi";
+    private static final String NS = "bertieemi";
 
     private static GenericEmiCategory category(String key, String iconItem, String nameKey) {
         return new GenericEmiCategory(
@@ -52,11 +52,11 @@ public final class SlagEmiModule {
     public static void register(EmiRegistry registry) {
         RecipeManager rm = registry.getRecipeManager();
 
-        GenericEmiCategory doubleSmelting = category("slag_double_smelting", "brick_forge", "emi.category.berlordsemi.slag_double_smelting");
-        GenericEmiCategory alloying = category("slag_alloying", "crucible", "emi.category.berlordsemi.slag_alloying");
-        GenericEmiCategory melting = category("slag_melting", "melter", "emi.category.berlordsemi.slag_melting");
-        GenericEmiCategory tableCasting = category("slag_table_casting", "table", "emi.category.berlordsemi.slag_table_casting");
-        GenericEmiCategory basinCasting = category("slag_basin_casting", "basin", "emi.category.berlordsemi.slag_basin_casting");
+        GenericEmiCategory doubleSmelting = category("slag_double_smelting", "brick_forge", "emi.category.bertieemi.slag_double_smelting");
+        GenericEmiCategory alloying = category("slag_alloying", "crucible", "emi.category.bertieemi.slag_alloying");
+        GenericEmiCategory melting = category("slag_melting", "melter", "emi.category.bertieemi.slag_melting");
+        GenericEmiCategory tableCasting = category("slag_table_casting", "table", "emi.category.bertieemi.slag_table_casting");
+        GenericEmiCategory basinCasting = category("slag_basin_casting", "basin", "emi.category.bertieemi.slag_basin_casting");
 
         registry.addCategory(doubleSmelting);
         registry.addCategory(alloying);

@@ -31,7 +31,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Entry point for all of Berlord's native EMI machine integrations. EMI discovers this class by an
+ * Entry point for all of bertie's native EMI machine integrations. EMI discovers this class by an
  * ASM scan for the {@link EmiEntrypoint} annotation — no service file or mods.toml entrypoint, and
  * the annotation must stay RuntimeInvisible (do NOT add {@code @Retention(RUNTIME)}).
  *
@@ -40,8 +40,8 @@ import org.slf4j.LoggerFactory;
  * can't take the rest down.
  */
 @EmiEntrypoint
-public class BerlordsEmiPlugin implements EmiPlugin {
-    private static final Logger LOGGER = LoggerFactory.getLogger("berlordsemi");
+public class BertieEmiPlugin implements EmiPlugin {
+    private static final Logger LOGGER = LoggerFactory.getLogger("bertieemi");
 
     @Override
     public void register(EmiRegistry registry) {
@@ -70,7 +70,7 @@ public class BerlordsEmiPlugin implements EmiPlugin {
         success &= run("l2complements", () -> L2ComplementsEmiModule.register(registry));
         success &= run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
         if (success) {
-            LOGGER.info("Berlords EMI integrations registered successfully");
+            LOGGER.info("Bertie EMI integrations registered successfully");
         }
     }
 
@@ -82,7 +82,7 @@ public class BerlordsEmiPlugin implements EmiPlugin {
             module.run();
             return true;
         } catch (Throwable t) {
-            LOGGER.error("berlordsemi: integration for '{}' failed to register", modid, t);
+            LOGGER.error("bertieemi: integration for '{}' failed to register", modid, t);
             return false;
         }
     }

@@ -9,12 +9,12 @@ import net.minecraft.world.item.Item;
 
 import java.util.Locale;
 
-/** Helpers for declaring machine categories (id under berlordsemi, literal name, workstation icon). */
+/** Helpers for declaring machine categories (id under bertieemi, literal name, workstation icon). */
 public final class Categories {
     private Categories() {
     }
 
-    private static final String NS = "berlordsemi";
+    private static final String NS = "bertieemi";
 
     /** Create + register a category and its workstation. {@code workstationItemId} is "namespace:path". */
     public static GenericEmiCategory machine(EmiRegistry reg, String key, String workstationItemId, String name) {

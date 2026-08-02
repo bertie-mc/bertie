@@ -145,7 +145,7 @@ to be copied into `run/mods/`.
   types, not crafting recipes, so each needs a thin adapter calling the same `WeaponUpgrades` entry
   points. The logic is already station-agnostic for exactly this reason.
 - **No EMI/JEI display.** `CustomRecipe`s have no fixed inputs to show. Needs a hand-written
-  category, most naturally in the existing `berlordsemi` project.
+  category, most naturally in the existing `bertieemi` project.
 - **No custom tooltip.** Upgrades render as Iron's stock attribute lines, so a weapon mid-ring shows
   eight separate elemental entries with no "tier 3, 5/8 elements" summary.
 - **Uniques are deliberately kept out of `#irons_spellbooks:upgrade_whitelist`.** Adding them would

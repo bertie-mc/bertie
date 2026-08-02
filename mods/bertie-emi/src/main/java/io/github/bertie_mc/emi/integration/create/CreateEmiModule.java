@@ -54,7 +54,7 @@ public final class CreateEmiModule {
     private CreateEmiModule() {
     }
 
-    private static final String NS = "berlordsemi";
+    private static final String NS = "bertieemi";
 
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();

@@ -10,9 +10,9 @@ pluginManagement {
 rootProject.name = "bertie"
 
 include(
-    ":mods:berlords-emi",
     ":mods:berlords-food-system",
     ":mods:bertie-blackhole",
+    ":mods:bertie-emi",
     ":mods:bertie-filters",
     ":mods:bertie-progression",
     ":mods:bertie-tiers",
