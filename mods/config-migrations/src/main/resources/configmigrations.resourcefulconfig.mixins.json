@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.configmigrations.integration.resourcefulconfig.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ConfiguratorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

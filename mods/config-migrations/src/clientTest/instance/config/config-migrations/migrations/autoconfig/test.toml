@@ -1,0 +1,9 @@
+config = "configmigrationstest-autoconfig"
+file = "configmigrationstest-autoconfig.json"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 73

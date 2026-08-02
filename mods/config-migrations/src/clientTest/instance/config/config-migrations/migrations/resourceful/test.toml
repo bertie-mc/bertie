@@ -1,0 +1,9 @@
+mod = "configmigrationstest"
+config = "configmigrationstest-resourceful"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 76

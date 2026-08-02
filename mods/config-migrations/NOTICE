@@ -1,0 +1,9 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code and documentation in this component.
+
+It does not, and cannot, cover third-party software that this project interoperates with,
+including Minecraft, NeoForge, FancyModLoader, NightConfig, Mixin, MixinExtras, or configured
+mods. Those remain under their own licences, and none of their content is redistributed here.
+
+Build dependencies are resolved from their public repositories. No third-party jar is committed.

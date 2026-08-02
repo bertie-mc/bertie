@@ -1,0 +1,8 @@
+file = "options.txt"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+autoJump = false

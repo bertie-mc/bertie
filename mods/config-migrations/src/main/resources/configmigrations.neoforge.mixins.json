@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.configmigrations.integration.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CommonModLoaderMixin",
+    "ModConfigSpecMixin",
+    "NeoForgeIcebergConfigSpecMixin",
+    "ServerLifecycleHooksMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

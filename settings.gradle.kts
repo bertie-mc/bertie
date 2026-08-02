@@ -19,6 +19,7 @@ include(
     ":mods:bertie-weapons",
     ":mods:bush-tweaks",
     ":mods:berlords-carving",
+    ":mods:config-migrations",
     ":mods:ender-eyes",
     ":mods:explode-to-mine",
     ":mods:explosive-enhancement",

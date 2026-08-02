@@ -23,6 +23,11 @@ irons-lib = "1.21.1-1.0.2"
 playeranimator = "2.0.4+1.21.1-forge"
 simply-swords = "1.63.0-1.21.1"
 fzzy-config = "0.7.6+1.21+neoforge"
+cloth-config = "izKINKFg"
+supermartijn642-config-lib = "1.1.8-neoforge-mc1.21"
+jankson = "1.2.2"
+resourceful-config = "lSbyRD6v"
+tomlkt = "0.3.7"
 kotlin-for-forge = "5.11.0"
 simply-tooltips = "0.1.3"
 architectury-api = "13.0.8+neoforge"
@@ -78,6 +83,11 @@ irons-lib = { module = "maven.modrinth:irons-lib", version.ref = "irons-lib" }
 playeranimator = { module = "maven.modrinth:playeranimator", version.ref = "playeranimator" }
 simply-swords = { module = "maven.modrinth:simply-swords", version.ref = "simply-swords" }
 fzzy-config = { module = "maven.modrinth:fzzy-config", version.ref = "fzzy-config" }
+cloth-config = { module = "maven.modrinth:cloth-config", version.ref = "cloth-config" }
+supermartijn642-config-lib = { module = "maven.modrinth:supermartijn642s-config-lib", version.ref = "supermartijn642-config-lib" }
+jankson = { module = "blue.endless:jankson", version.ref = "jankson" }
+resourceful-config = { module = "maven.modrinth:resourceful-config", version.ref = "resourceful-config" }
+tomlkt = { module = "net.peanuuutz.tomlkt:tomlkt-jvm", version.ref = "tomlkt" }
 kotlin-forge = { module = "maven.modrinth:kotlin-for-forge", version.ref = "kotlin-for-forge" }
 simply-tooltips = { module = "maven.modrinth:simply-tooltips", version.ref = "simply-tooltips" }
 architectury-api = { module = "maven.modrinth:architectury-api", version.ref = "architectury-api" }

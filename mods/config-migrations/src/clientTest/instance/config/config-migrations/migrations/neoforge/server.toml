@@ -1,0 +1,10 @@
+mod = "configmigrationstest"
+type = "SERVER"
+file = "configmigrationstest-server.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 72

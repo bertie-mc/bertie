@@ -1,0 +1,107 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mixins]]
+config = "${mod_id}.artifacts.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.autoconfig.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.fzzy.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.minecraft.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.neoforge.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.owoconfig.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.resourcefulconfig.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.supermartijn642.mixins.json"
+
+[[mixins]]
+config = "${mod_id}.wunderlib.mixins.json"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+[[dependencies."${mod_id}"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "artifacts"
+type = "optional"
+versionRange = "[13,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "cloth_config"
+type = "optional"
+versionRange = "[15,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "fzzy_config"
+type = "optional"
+versionRange = "[0.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "iceberg"
+type = "optional"
+versionRange = "[1.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "owo"
+type = "optional"
+versionRange = "[0.12,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "resourcefulconfig"
+type = "optional"
+versionRange = "[3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "supermartijn642configlib"
+type = "optional"
+versionRange = "[1.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "wunderlib"
+type = "optional"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
