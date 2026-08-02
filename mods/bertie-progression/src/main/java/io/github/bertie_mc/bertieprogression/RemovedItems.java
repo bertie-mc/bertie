@@ -19,7 +19,8 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Drops every id listed in {@code docs/removed/<modid>.md} from every creative tab.
+ * Drops every id listed in the generated {@code removed_items.json} resource from every creative
+ * tab.
  *
  * <p>That single act also removes them from EMI: the pack's {@code emi.css} sets
  * {@code index-source: creative}, so EMI builds its index from the creative tabs. One mechanism, no

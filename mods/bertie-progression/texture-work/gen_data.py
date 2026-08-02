@@ -20,6 +20,26 @@ import shutil
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 RES = os.path.join(ROOT, "src", "main", "resources")
 
+
+def _removed_docs_dir():
+    """Resolve the private workspace's canonical removed-item tables before writing output."""
+    workspace_root = os.environ.get("BERTIE_WORKSPACE")
+    if not workspace_root:
+        raise SystemExit(
+            "BERTIE_WORKSPACE is required; set it to the private bertie-workspace checkout"
+        )
+
+    docs = os.path.join(
+        os.path.abspath(os.path.expanduser(workspace_root)), "docs", "removed"
+    )
+    if not os.path.isdir(docs) or not os.path.isfile(os.path.join(docs, "README.md")):
+        raise SystemExit(
+            f"removed-item docs not found under BERTIE_WORKSPACE: {docs}"
+        )
+    return docs
+
+
+REMOVED_DOCS = _removed_docs_dir()
 MODID = "bertieprogression"
 
 # ---------------------------------------------------------------- helpers
@@ -1775,7 +1795,9 @@ write(f"{RIT}/netherly_meal.json",
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
 
 # ================================================================ REMOVED ITEMS (berlord 2026-07-30)
-# Edit docs/removed/<modid>.md, then run this generator. See docs/removed/README.md.
+# Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's
+# README.md. The planning records remain in the private workspace; generated runtime data remains
+# here in the public product repository.
 # This section does three things:
 #   1. finds EVERY recipe in the pack whose result is a removed id and overrides it with
 #      neoforge:false - searched by RESULT, so no recipe file is ever named by hand;
@@ -1784,7 +1806,6 @@ write(f"{RIT}/netherly_meal.json",
 #   3. rewrites the LEAKS block in each doc with the loot tables that still reference a removed id.
 # Needs a synced bertie pack instance to scan. Without it: warn and skip, never silently emit nothing.
 
-REMOVED_DOCS = os.path.normpath(os.path.join(ROOT, "..", "..", "docs", "removed"))
 INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "instances",
                              # This is a FILESYSTEM PATH, not prose - the Prism instance really is
                              # called "s1 demo". A wording sweep renamed it to "bertie demo"
@@ -1844,13 +1865,15 @@ def _result_ids(obj, out):
     return out
 
 _removed = []
-if os.path.isdir(REMOVED_DOCS):
-    for _fn in sorted(os.listdir(REMOVED_DOCS)):
-        if _fn.endswith(".md") and _fn != "README.md":
-            _removed += _parse_removed(os.path.join(REMOVED_DOCS, _fn), _fn[:-3])
+for _fn in sorted(os.listdir(REMOVED_DOCS)):
+    if _fn.endswith(".md") and _fn != "README.md":
+        _removed += _parse_removed(os.path.join(REMOVED_DOCS, _fn), _fn[:-3])
+if not _removed:
+    raise SystemExit(
+        f"no removed-item rows found in {REMOVED_DOCS}; refusing to erase generated removals"
+    )
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
-# Skipped entirely when nothing is removed, so an empty list costs nothing.
 _items, _hits, _leaks = set(), [], {}
 _scan_ok = False
 if _removed:
@@ -1943,7 +1966,22 @@ if _removed:
                                 _leaks.setdefault(_r2, []).append(f"{_jn}: {_n}")
 
 _removed_ids = sorted({i for i in (_expanded if _removed and _scan_ok else [])})
-write("removed_items.json", _removed_ids)
+if _removed and not _scan_ok:
+    # A failed jar scan must preserve both generated removal artifacts. The manifest already did
+    # this below, but removed_items.json used to be overwritten with [], making every hidden item
+    # visible again even though its recipe override survived.
+    _removed_items_path = os.path.join(RES, "removed_items.json")
+    try:
+        with open(_removed_items_path, encoding="utf-8") as _f:
+            _removed_ids = json.load(_f)
+    except (OSError, json.JSONDecodeError) as _e:
+        raise SystemExit(
+            f"cannot preserve removed items after the failed jar scan: {_removed_items_path}: {_e}"
+        )
+    if not isinstance(_removed_ids, list) or not all(isinstance(_i, str) for _i in _removed_ids):
+        raise SystemExit(f"cannot preserve malformed removed-item list: {_removed_items_path}")
+else:
+    write("removed_items.json", _removed_ids)
 
 # MANIFEST. gen_data only ever writes, so without this, deleting a row would leave its
 # neoforge:false override behind and the item would stay uncraftable forever - which defeats the
@@ -1973,7 +2011,7 @@ print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes d
 # Refresh the LEAKS block in every doc, replacing ONLY between the markers.
 _OPEN = "<!-- LEAKS: generated every build, do not edit by hand -->"
 _CLOSE = "<!-- /LEAKS -->"
-if os.path.isdir(REMOVED_DOCS) and (not _removed or _scan_ok):
+if not _removed or _scan_ok:
     for _fn in sorted(os.listdir(REMOVED_DOCS)):
         if not _fn.endswith(".md") or _fn == "README.md":
             continue
