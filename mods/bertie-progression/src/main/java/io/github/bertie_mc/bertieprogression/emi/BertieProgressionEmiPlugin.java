@@ -1,7 +1,10 @@
 package io.github.bertie_mc.bertieprogression.emi;
 
+import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
 import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
+import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
+import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
 import com.mojang.logging.LogUtils;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
@@ -24,7 +27,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/** Built-in EMI presentation for Bertie Progression's Opening Mallet and pack item policy. */
+/** Built-in EMI presentation for Bertie Progression's recipes and pack item policy. */
 @EmiEntrypoint
 public final class BertieProgressionEmiPlugin implements EmiPlugin {
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -90,7 +93,34 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
                         + "4 stripped logs above the corners - strike a ring brick")));
         recipeCount++;
 
-        LOGGER.info("Bertie Progression EMI integration registered ({} Mallet Work recipes)", recipeCount);
+        int ominousFanRecipeCount = registerOminousFan(registry);
+        LOGGER.info(
+                "Bertie Progression EMI integration registered ({} Mallet Work recipes, "
+                        + "{} Ominous Fan recipes)",
+                recipeCount, ominousFanRecipeCount);
+    }
+
+    private static int registerOminousFan(EmiRegistry registry) {
+        var recipes = registry.getRecipeManager().getAllRecipesFor(ModRecipes.OMINOUS_FAN_TYPE.get());
+        if (recipes.isEmpty()) {
+            return 0;
+        }
+
+        EmiStack icon = stackOf("twilightforest:ominous_candle", 1);
+        OminousFanEmiCategory category = new OminousFanEmiCategory(
+                ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "ominous_fan"),
+                icon, Component.literal("Ominous Fan Blowing"));
+        registry.addCategory(category);
+        if (!icon.isEmpty()) {
+            registry.addWorkstation(category, icon);
+        }
+
+        for (var holder : recipes) {
+            OminousFanRecipe recipe = holder.value();
+            registry.addRecipe(new OminousFanEmiRecipe(
+                    category, holder.id(), EmiIngredient.of(recipe.input()), EmiStack.of(recipe.result())));
+        }
+        return recipes.size();
     }
 
     private static void addRecipe(EmiRegistry registry, MalletWorkEmiCategory category, String path,

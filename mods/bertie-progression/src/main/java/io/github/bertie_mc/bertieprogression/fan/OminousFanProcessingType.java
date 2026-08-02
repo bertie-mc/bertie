@@ -23,11 +23,8 @@ import java.util.Optional;
  * A fifth Create fan-processing type, on top of the stock four (splashing = water, smoking = fire,
  * haunting = soul fire, blasting = lava). This one triggers on Twilight Forest's OMINOUS FIRE.
  *
- * <p>PROOF OF CONCEPT (berlord 2026-08-01). The conversion table is hard-coded to one entry -
- * anything in {@code #minecraft:leaves} becomes a Steeleaf Ingot - deliberately, so the type itself
- * can be proven in game before a recipe type, serialiser and EMI category are built around it.
- * Because there is no recipe behind it, <b>this conversion does not appear in EMI or JEI at all</b>;
- * it only happens when a fan actually blows through ominous fire.
+ * <p>Conversions are data-driven through {@link OminousFanRecipe}; Bertie Progression's built-in
+ * EMI plugin presents the same recipes under its Ominous Fan Blowing category.
  */
 public class OminousFanProcessingType implements FanProcessingType {
 

@@ -37,7 +37,8 @@ texture under `assets/bertieprogression/textures/item/`.
   catalyst item present but does not consume it.
 - **Hephaestus Forge integration** (`forge/`) — bed recipes, forge bed handling and
   pedestal formation rules integrated with Forbidden & Arcanus.
-- **EMI integration** (`emi/`) — built-in Mallet Work recipes and pack-specific item visibility policy.
+- **EMI integration** (`emi/`) — built-in Mallet Work and Ominous Fan recipes, plus pack-specific
+  item visibility policy.
 - **Deep Waters shrine** (`shrine/`) — the shrine handler plus a Ponder scene describing it.
 - **Allay corruption** (`AllayCorruptionHandler`).
 - **Removed items** (`RemovedItems`) — items withdrawn from the pack's progression.
