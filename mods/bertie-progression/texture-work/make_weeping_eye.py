@@ -60,6 +60,12 @@ wrong:
                   painted last, so a tear crosses a shut lid instead of
                   vanishing under it.
 
+                  The spot a bead wells from belongs to the eye, so it rides the
+                  gaze: look left and the tears start a pixel left. That ends
+                  the moment the bead lets go — from there it falls straight
+                  down the lane it detached in, and a later saccade does not
+                  drag it sideways in mid-air.
+
                   The cycle is also why no frame here can be held: park the
                   animation on the open eye and a tear stops in mid-air. The
                   rest between blinks is whole tear cycles instead, so the frame
@@ -242,25 +248,30 @@ def slit_width(frame):
     return SLIT_W_TIGHT + (SLIT_W_WIDE - SLIT_W_TIGHT) * wide
 
 
-def tear_frames(x, y0, swell):
-    """One bead's whole life, frame by frame, as {pixel: colour}.
+def tear_pixels(track, frame):
+    """One bead's pixels at this frame, as {pixel: colour}.
 
-    It grows in place on the rim, then the head steps down a row a frame with
-    the tail trailing it, until both are off the bottom of the sprite.
+    While it is still attached it sits on the eye, so it rides the gaze — the
+    spot a tear comes from belongs to the eye and travels with it. The moment it
+    lets go that stops: it falls straight down the lane it was in when it
+    detached, because a drop already in the air does not get to change lanes on
+    account of the eye having looked somewhere else.
     """
-    out = [{(x, y0): TEAR_LO}, {(x, y0): TEAR}]
-    for _ in range(swell - 2):
-        out.append({(x, y0): TEAR_HI, (x, y0 + 1): TEAR})
-    for head in range(y0, SIZE + 1):
-        frame = {(x, head): TEAR_HI, (x, head + 1): TEAR}
-        frame = {p: c for p, c in frame.items() if p[1] < SIZE}
-        if frame:
-            out.append(frame)
-    assert len(out) <= TEAR_CYCLE, "tear at x=%d outlives its cycle" % x
-    return out + [{}] * (TEAR_CYCLE - len(out))
-
-
-TEAR_LIFE = {x: tear_frames(x, y0, swell) for x, y0, swell, _ in TEARS}
+    x0, y0, swell, phase = track
+    c = (frame + phase) % TEAR_CYCLE
+    if c < swell:
+        ox, oy = gaze(frame)
+        x, y = x0 + ox, y0 + oy
+        if c == 0:
+            return {(x, y): TEAR_LO}
+        if c == 1:
+            return {(x, y): TEAR}
+        return {(x, y): TEAR_HI, (x, y + 1): TEAR}
+    fall = c - swell
+    ox, oy = gaze((frame - fall) % FRAMES)
+    head = y0 + oy + fall
+    out = {(x0 + ox, head): TEAR_HI, (x0 + ox, head + 1): TEAR}
+    return {p: col for p, col in out.items() if p[1] < SIZE}
 
 
 def paint(frame):
@@ -324,8 +335,8 @@ def paint(frame):
 
     # Tears last: one running over a shut lid is right, one disappearing under
     # it is not.
-    for x, _, _, phase in TEARS:
-        for p, c in TEAR_LIFE[x][(frame + phase) % TEAR_CYCLE].items():
+    for track in TEARS:
+        for p, c in tear_pixels(track, frame).items():
             grid[p] = c
 
     img = Image.new("RGBA", (SIZE, SIZE), (0, 0, 0, 0))
@@ -369,6 +380,11 @@ if __name__ == "__main__":
     assert BLINK_AT + len(BLINK) <= FRAMES, "the blink runs off the end of the loop"
     assert lens(0.0) == BODY, "a wide-open eye must not have a lid on it"
     assert GAZE[-1][0] == FRAMES, "the gaze schedule must cover the whole loop"
+    for _x, _y0, _swell, _ in TEARS:
+        # SIZE + 2 - y0 is the drop measured from the highest the gaze can lift
+        # the origin, which is the case that takes longest to clear the frame.
+        assert _swell + (SIZE + 2 - _y0) <= TEAR_CYCLE, \
+            "the tear at column %d is still falling when the next one wells" % _x
 
     frames = [paint(i) for i in range(FRAMES)]
 
