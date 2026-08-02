@@ -2000,11 +2000,6 @@ hash = "aaf0d7287d0b48ed96307ffa1fd8bbe7a3d6bfc837be1e6ba42c09063b988e69"
 metafile = true
 
 [[files]]
-file = "mods/reliquary-reincarnations.pw.toml"
-hash = "1696a2e185730edda5cac29e5c120f23da046645c35752cfb5432f9a6fd4dc50"
-metafile = true
-
-[[files]]
 file = "mods/resourceful-config.pw.toml"
 hash = "27721caca5a03b743bf25888e1d984142948069dace31453f103f94f7f24d2ce"
 metafile = true

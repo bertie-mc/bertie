@@ -286,12 +286,8 @@ write(f"{R}/table/mundabitur_bulk.json",                   # R28A
       shapeless(["forbidden_arcanus:arcane_crystal_dust", "minecraft:redstone", "minecraft:blaze_powder",
                  "minecraft:bone_meal", "minecraft:phantom_membrane", "minecraft:gunpowder"],
                 "forbidden_arcanus:mundabitur_dust", 4))
-write(f"{R}/table/fusion_shrine_basalt.json",              # R22
-      shaped(["TAC", "DSB"],
-             {"T": "pastel:topaz_shard", "A": "minecraft:amethyst_shard", "C": "pastel:citrine_shard",
-              "D": "forbidden_arcanus:chiseled_arcane_polished_darkstone", "S": "malum:arcane_spirit",
-              "B": "create:brass_sheet"},
-             "pastel:fusion_shrine_basalt"))
+# R22 (Fusion Shrine on the licensed table) REMOVED 2026-08-01 with the rest of the Pastel
+# overrides - the Shrine is back to Pastel's own two pedestal recipes.
 write(f"{R}/table/warden_echo_pattern.json",               # R31
       shaped(["ASA", "SCS", "AMA"],
              {"A": "minecraft:amethyst_shard", "S": "minecraft:sculk",
@@ -830,9 +826,10 @@ write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
 # Deeper and Darker: Reinforced Echo goes through the Warden Echo Pattern (R31/R31R)
 write("data/deeperdarker/recipe/reinforced_echo_shard.json", DISABLED)
 
-# Pastel: Fusion Shrine moves to the licensed table (R22)
-write("data/pastel/recipe/pedestal/tier2/fusion_shrine_basalt.json", DISABLED)
-write("data/pastel/recipe/pedestal/tier2/fusion_shrine_calcite.json", DISABLED)
+# Pastel: NOTHING under data/pastel/ is overridden any more (berlord 2026-08-01). The Fusion
+# Shrine's two stock pedestal recipes used to be disabled here so R22 could move it to the
+# licensed table; both are restored, and R22 itself is gone. berlord is bringing Pastel into the
+# progression properly and wants the mod's own recipes untouched as the starting point.
 
 # Avaritia: R41 is the sole Nether Crafting Table source
 write("data/avaritia/recipe/nether_crafting_table.json", DISABLED)
