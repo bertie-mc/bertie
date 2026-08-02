@@ -12,7 +12,8 @@ wrong:
                   as an eye at a glance. It is the argument for keeping the
                   palette short.
     cursed_eye    shuts by having the face close over the iris in fragments,
-                  never along a row. Its blink is the reference for this one.
+                  never along a row. Its blink is the reference for this one,
+                  and so is its pupil: a vertical slit, not a human round one.
     mech_eye      never holds still — the core pulses and flares even while the
                   shell does nothing. A still core reads as a bead, not an eye.
     guardian_eye  is pale, low-contrast and soft, and survives it by keeping one
@@ -27,12 +28,15 @@ wrong:
                   the orb is not a flat disc. The marble comes from one seeded
                   table shared by every frame — reroll it per frame and the
                   shell boils under the animation.
-    iris          a deeper rose disc with a soft-cornered pupil and a two-pixel
-                  glint. Everything else here is pale, so the iris is the only
-                  saturated thing in the sprite and the eye reads from across
-                  the hotbar.
+    iris          a deeper rose disc, split top to bottom by a vertical slit,
+                  with a two-pixel glint beside it. Everything else here is
+                  pale, so the iris is the only saturated thing in the sprite
+                  and the eye reads from across the hotbar. The slit runs the
+                  full height of the disc and through the rim ring rather than
+                  stopping inside it — cut short, it reads as a notch in a round
+                  pupil instead of as a split.
     core          the iris drifts a pixel at a time and holds — a gaze, not a
-                  wobble — and the pupil widens and narrows on its own slower
+                  wobble — and the slit widens and narrows on its own slower
                   cycle. The glint travels with it, because the glint is a
                   corneal reflection and the cornea is the part that turns.
                   Pinning it in place was tried first and it spends a third of
@@ -119,13 +123,15 @@ TEAR_LO = (212, 186, 210)
 
 IRIS_R = 2.65
 IRIS_RIM_R = 3.35
-PUPIL_R = 1.5               # a fixed three-by-three footprint
-# The pupil widens by its corners darkening, not by its footprint growing. There
-# is no size between a five-pixel plus and a three-by-three block at this scale,
-# and the plus reads as a cross rather than as a pupil.
-PUPIL_CORNER_TIGHT = 0.70   # constricted: the corners are nearly iris
-PUPIL_CORNER_WIDE = 0.46    # dilated: dark, but never as dark as the pupil, or
-PUPIL_CYCLE = 30            # the whole thing is a solid square again
+# The pupil is a vertical slit, not a human round one, so it is an ellipse
+# standing on end. It splits the iris top to bottom rather than sitting inside
+# it. Dilation is a real movement now — the slit widens and narrows, where the
+# round pupil could only change the tone of four corner pixels.
+SLIT_H = 3.1                # tall enough to cut the whole iris, caps included
+SLIT_W_TIGHT = 0.60         # one pixel across: a slit shut to a line
+SLIT_W_WIDE = 1.15          # three across the middle, one at the caps
+SLIT_SOFT = 0.72            # solid inside this, tapered outside it
+SLIT_CYCLE = 30
 GLINT = ((6, 6), (7, 6))
 
 # Where the eye is looking, as (last frame of the hold, iris offset). The change
@@ -230,10 +236,10 @@ def gaze(frame):
     return GAZE[-1][1]
 
 
-def pupil_corner(frame):
-    """The corner tone of the pupil this frame — how wide it is standing open."""
-    wide = 0.5 + 0.5 * math.cos(2 * math.pi * frame / PUPIL_CYCLE)
-    return shade(IRIS, PUPIL_CORNER_TIGHT + (PUPIL_CORNER_WIDE - PUPIL_CORNER_TIGHT) * wide)
+def slit_width(frame):
+    """Half-width of the slit this frame — how far the pupil stands open."""
+    wide = 0.5 + 0.5 * math.cos(2 * math.pi * frame / SLIT_CYCLE)
+    return SLIT_W_TIGHT + (SLIT_W_WIDE - SLIT_W_TIGHT) * wide
 
 
 def tear_frames(x, y0, swell):
@@ -271,12 +277,16 @@ def paint(frame):
     open_px = lens(a)
     ox, oy = gaze(frame)
     ix, iy = CX + ox, CY + oy
-    corner = pupil_corner(frame)
+    sw = slit_width(frame)
 
     for (x, y) in open_px:
         d = ((x - ix) ** 2 + (y - iy) ** 2) ** 0.5
-        if d <= PUPIL_R:
-            grid[(x, y)] = corner if d > 1.1 else PUPIL
+        # The slit is tested before the iris and wins, so it cuts the rim ring
+        # as well. Let the iris win there and the pupil ends in a notch instead
+        # of running clean through.
+        e = (((x - ix) / sw) ** 2 + ((y - iy) / SLIT_H) ** 2) ** 0.5
+        if e <= 1.0:
+            grid[(x, y)] = PUPIL if e <= SLIT_SOFT else shade(IRIS, 0.42)
         elif d <= IRIS_R:
             # Shadowed under the upper lid, brightest at the bottom, the way any
             # iris sitting under a brow is. Flat, it reads as a sticker.
