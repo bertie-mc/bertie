@@ -1,16 +1,28 @@
 hash-format = "sha256"
 
 [[files]]
-file = "config/artifacts/items.toml"
-hash = "cdd518a86598815cdeda1aa839a4d96cb2e0f6fb588c29c087d69f53dd0e5559"
-
-[[files]]
 file = "config/berlordscarving-armor-overrides.json"
 hash = "b192d4ee4505583bd29978b475e65faab044b48193f9529431479e489824bea6"
 
 [[files]]
-file = "config/create-server.toml"
-hash = "8899b89a7567cf28d688d16937bfff68d53c6db572b8b5a161aa916f5e8032df"
+file = "config/config-migrations/migrations/artifacts/items.toml"
+hash = "9ea53b45e9095212e6aab6f3b7a75bb2f138d56f2f3050ed3d697e6ae4388797"
+
+[[files]]
+file = "config/config-migrations/migrations/neoforge/create/server.toml"
+hash = "297513631ffa3bdd6beea67aebdde6b7a118daa1e4cc70314535fc48b03a5b54"
+
+[[files]]
+file = "config/config-migrations/migrations/neoforge/quark/startup.toml"
+hash = "a9184850a36de2ce3e9222f8cab04b196ae8aa6f46b4e13ff4e8ff23f6e573f9"
+
+[[files]]
+file = "config/config-migrations/migrations/neoforge/twilightforest/common.toml"
+hash = "a7a270e40ff0ae87c56f771027e0d531b042a5b51fd0167a628d05ed9f116363"
+
+[[files]]
+file = "config/config-migrations/migrations/wunderlib/worldweaver/client.toml"
+hash = "de4063f5d1cc4e29c0c80865971fad4cdb6846d595116c84e400e8117687f8e5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ash_and_twilight.snbt"
@@ -75,18 +87,6 @@ hash = "5e426bfdcbbf6b7b3513794cc22028e5ce2c6d673d0b547192d1fe57ee9c2f9b"
 [[files]]
 file = "config/openloader/packs/bertie-fixes/pack.mcmeta"
 hash = "8e6ebaafb7630517c0f335f0e8cf8a7e01abb35f3d56d6ee3a0750ab7291bbf4"
-
-[[files]]
-file = "config/quark-common.toml"
-hash = "6a8d7657ab5ad7954e3b991ab6597af72cb29eb72e6da2ebd3471803b619085e"
-
-[[files]]
-file = "config/twilightforest-common.toml"
-hash = "81e54e0f4f939ab77bc6c05f977735406f3fc8bd3930794e721b40e7da9d0b1e"
-
-[[files]]
-file = "config/wover/client.json"
-hash = "4e1cc906b6c45e8e47ec5a653c85431afdd20b49a34b4fbdf3099603e0e97d85"
 
 [[files]]
 file = "mods/access-denied-api.pw.toml"
@@ -549,8 +549,8 @@ hash = "f001dc3bc0cda34ee03ceb05a3325d0c291e20e7274270d3eb541d4b9d722530"
 metafile = true
 
 [[files]]
-file = "mods/configmanager.pw.toml"
-hash = "d8457369ac51d51d18e7bed4f343de6af4c4d633d9b320a26b3d0342897b2399"
+file = "mods/config-migrations.pw.toml"
+hash = "b732ffc3294f83c4ca7e1fb1d41e4b252d6ff22031e7bc1d46f1c971438e9f54"
 metafile = true
 
 [[files]]

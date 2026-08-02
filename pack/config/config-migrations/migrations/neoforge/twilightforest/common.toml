@@ -1,0 +1,11 @@
+mod = "twilightforest"
+type = "COMMON"
+file = "twilightforest-common.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment."Uncrafting Table"]
+disableUncrafting = true
+disableUncraftingTable = true

@@ -1,0 +1,8 @@
+name = "config-migrations"
+filename = "configmigrations-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/bertie/releases/download/config-migrations/v0.1.0/configmigrations-0.1.0.jar"
+hash-format = "sha256"
+hash = "16dd171fa9cb04fb3dcbc39846a9d44070e28fd72f31385469e565913560cca4"

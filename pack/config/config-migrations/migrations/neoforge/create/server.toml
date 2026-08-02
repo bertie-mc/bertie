@@ -1,0 +1,10 @@
+mod = "create"
+type = "SERVER"
+file = "create-server.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment.recipes]
+allowRegularCraftingInCrafter = false
