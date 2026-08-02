@@ -34,9 +34,11 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
  */
 public final class AllayCorruptionHandler {
 
-    private static final ResourceLocation INPUT =
+    /** Public so the EMI integration renders this trade from the same ids the handler acts on. */
+    public static final ResourceLocation INPUT =
             ResourceLocation.parse("forbidden_arcanus:arcane_crystal");
-    private static final ResourceLocation OUTPUT =
+
+    public static final ResourceLocation OUTPUT =
             ResourceLocation.parse("forbidden_arcanus:corrupted_arcane_crystal");
 
     private static final int DELAY_MIN = 20;

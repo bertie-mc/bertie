@@ -1,6 +1,7 @@
 package io.github.bertie_mc.bertieprogression.emi;
 
 import dev.emi.emi.api.recipe.BasicEmiRecipe;
+import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
@@ -20,7 +21,7 @@ final class OminousFanEmiRecipe extends BasicEmiRecipe {
     private final EmiIngredient input;
     private final EmiStack output;
 
-    OminousFanEmiRecipe(OminousFanEmiCategory category, ResourceLocation id,
+    OminousFanEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
                         EmiIngredient input, EmiStack output) {
         super(category, id, WIDTH, HEIGHT);
         this.input = input;

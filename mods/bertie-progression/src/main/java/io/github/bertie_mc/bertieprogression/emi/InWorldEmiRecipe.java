@@ -14,8 +14,8 @@ import net.minecraft.util.FormattedCharSequence;
 
 import java.util.List;
 
-/** One synthesized Opening Mallet interaction, including its in-world instructions. */
-final class MalletWorkEmiRecipe extends BasicEmiRecipe {
+/** One synthesized in-world interaction: inputs, non-consumed catalysts, outputs and instructions. */
+final class InWorldEmiRecipe extends BasicEmiRecipe {
     private static final int SLOT = 18;
     private static final int ARROW_WIDTH = 24;
     private static final int ARROW_HEIGHT = 17;
@@ -28,9 +28,9 @@ final class MalletWorkEmiRecipe extends BasicEmiRecipe {
     private final List<EmiStack> itemOutputs;
     private final List<Component> info;
 
-    MalletWorkEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
-                        List<EmiIngredient> itemInputs, List<EmiIngredient> catalysts,
-                        List<EmiStack> itemOutputs, List<Component> info) {
+    InWorldEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
+                     List<EmiIngredient> itemInputs, List<EmiIngredient> catalysts,
+                     List<EmiStack> itemOutputs, List<Component> info) {
         super(category, id, computeWidth(itemInputs, catalysts, itemOutputs, info),
                 computeHeight(itemInputs, catalysts, itemOutputs, info));
         this.itemInputs = List.copyOf(itemInputs);

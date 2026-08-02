@@ -1,5 +1,6 @@
 package io.github.bertie_mc.bertieprogression.emi;
 
+import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
 import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
 import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
@@ -31,7 +32,12 @@ import java.util.List;
 @EmiEntrypoint
 public final class BertieProgressionEmiPlugin implements EmiPlugin {
     private static final Logger LOGGER = LogUtils.getLogger();
-    /** Preserve the existing category and recipe identifiers across the ownership move. */
+    /**
+     * Preserves the Mallet Work category and recipe identifiers across the ownership move, and now
+     * across the companion mod's rename to {@code bertieemi} as well. No mod carries this id any
+     * more; it stays only so an existing EMI config keeps recognising the category. Categories added
+     * since the move use {@link BertieProgression#MODID}.
+     */
     private static final String LEGACY_NAMESPACE = "berlordsemi";
 
     @Override
@@ -39,7 +45,7 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
-        MalletWorkEmiCategory category = new MalletWorkEmiCategory(
+        InWorldEmiCategory category = new InWorldEmiCategory(
                 ResourceLocation.fromNamespaceAndPath(LEGACY_NAMESPACE, "bertie_mallet"),
                 brickForge, Component.literal("Mallet Work"));
         registry.addCategory(category);
@@ -94,10 +100,39 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         recipeCount++;
 
         int ominousFanRecipeCount = registerOminousFan(registry);
+        int allayRecipeCount = registerAllayCorruption(registry);
         LOGGER.info(
                 "Bertie Progression EMI integration registered ({} Mallet Work recipes, "
-                        + "{} Ominous Fan recipes)",
-                recipeCount, ominousFanRecipeCount);
+                        + "{} Ominous Fan recipes, {} Allay Corruption recipes)",
+                recipeCount, ominousFanRecipeCount, allayRecipeCount);
+    }
+
+    /**
+     * The Allay trade from {@link AllayCorruptionHandler}: it is a tick handler rather than a recipe
+     * type, so the single conversion it implements is synthesized here from the handler's own ids.
+     * The Allay is drawn as its spawn egg and listed as an input, not a catalyst — it dies.
+     */
+    private static int registerAllayCorruption(EmiRegistry registry) {
+        EmiStack input = stackOf(AllayCorruptionHandler.INPUT, 1);
+        EmiStack output = stackOf(AllayCorruptionHandler.OUTPUT, 1);
+        if (input.isEmpty() || output.isEmpty()) {
+            return 0; // Forbidden Arcanus absent: neither side of the trade exists
+        }
+
+        EmiStack allay = EmiStack.of(Items.ALLAY_SPAWN_EGG);
+        InWorldEmiCategory category = new InWorldEmiCategory(
+                ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "allay_corruption"),
+                allay, Component.literal("Allay Corruption"));
+        registry.addCategory(category);
+        registry.addWorkstation(category, allay);
+
+        registry.addRecipe(new InWorldEmiRecipe(category,
+                ResourceLocation.fromNamespaceAndPath(
+                        BertieProgression.MODID, "allay_corruption/arcane_crystal"),
+                ingredients(input, allay), List.of(), stacks(output),
+                List.of(Component.literal("Give an Allay the Arcane Crystal - it dies moments later, "
+                        + "dropping the corrupted one"))));
+        return 1;
     }
 
     private static int registerOminousFan(EmiRegistry registry) {
@@ -107,7 +142,7 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         }
 
         EmiStack icon = stackOf("twilightforest:ominous_candle", 1);
-        OminousFanEmiCategory category = new OminousFanEmiCategory(
+        InWorldEmiCategory category = new InWorldEmiCategory(
                 ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "ominous_fan"),
                 icon, Component.literal("Ominous Fan Blowing"));
         registry.addCategory(category);
@@ -123,10 +158,10 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         return recipes.size();
     }
 
-    private static void addRecipe(EmiRegistry registry, MalletWorkEmiCategory category, String path,
+    private static void addRecipe(EmiRegistry registry, InWorldEmiCategory category, String path,
                                   List<EmiIngredient> inputs, List<EmiIngredient> catalysts,
                                   List<EmiStack> outputs, List<Component> info) {
-        registry.addRecipe(new MalletWorkEmiRecipe(category, displayId(path),
+        registry.addRecipe(new InWorldEmiRecipe(category, displayId(path),
                 inputs, catalysts, outputs, info));
     }
 
@@ -184,7 +219,12 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     }
 
     private static EmiStack stackOf(String id, int count) {
-        return EmiStack.of(BuiltInRegistries.ITEM.get(ResourceLocation.parse(id)), count);
+        return stackOf(ResourceLocation.parse(id), count);
+    }
+
+    /** Empty when the id is not registered — {@code ITEM.get} answers Air for a mod that is absent. */
+    private static EmiStack stackOf(ResourceLocation id, int count) {
+        return EmiStack.of(BuiltInRegistries.ITEM.get(id), count);
     }
 
     private static ResourceLocation displayId(String path) {
