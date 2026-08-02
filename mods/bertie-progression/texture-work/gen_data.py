@@ -2302,8 +2302,10 @@ BLOCKS = {
 for item_id in ITEMS:
     write(f"assets/bertieprogression/models/item/{item_id}.json",
           {"parent": "minecraft:item/generated", "textures": {"layer0": f"bertieprogression:item/{item_id}"}})
-# Weeping Eye reuses vanilla's Eye of Ender model/texture (no bespoke texture needed).
-write("assets/bertieprogression/models/item/weeping_eye.json", {"parent": "minecraft:item/ender_eye"})
+# weeping_eye is NOT overridden here any more: it has real art now
+# (texture-work/make_weeping_eye.py, animated) and takes the generated model the
+# ITEMS loop above writes. Re-adding it would hide that texture behind vanilla's
+# Eye of Ender - the same trap storm_core is flagged for further down.
 # Crafting License borrows vanilla's paper model (no bespoke texture yet).
 write("assets/bertieprogression/models/item/crafting_license.json", {"parent": "minecraft:item/paper"})
 # Sirok's Nest Map borrows vanilla's empty-map model (no bespoke texture yet - berlord has not sent one).
