@@ -3,7 +3,7 @@ subject = "bertie-emi"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-emi"
 mod-id = "bertieemi"
-pack-metafile = "mods/bertie-emi.pw.toml"
+pack-metafile = "mods/berlords-emi.pw.toml"
 
 [version]
 file = "mod.properties"
