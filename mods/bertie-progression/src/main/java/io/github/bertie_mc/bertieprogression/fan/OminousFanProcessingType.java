@@ -15,7 +15,7 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -54,12 +54,17 @@ public class OminousFanProcessingType implements FanProcessingType {
         return find(stack, level).isPresent();
     }
 
+    /**
+     * The returned list MUST be mutable. Create's FanProcessing.applyProcessing removes from it as
+     * it places the results, so an immutable List.of(...) crashes the encased fan's tick with an
+     * UnsupportedOperationException (berlord's world, 2026-08-02).
+     */
     @Override
     public List<ItemStack> process(ItemStack stack, Level level) {
-        return find(stack, level)
-                .map(h -> List.of(h.value().assemble(new SingleRecipeInput(stack),
-                        level.registryAccess())))
-                .orElse(Collections.emptyList());
+        List<ItemStack> out = new ArrayList<>();
+        find(stack, level).ifPresent(h ->
+                out.add(h.value().assemble(new SingleRecipeInput(stack), level.registryAccess())));
+        return out;
     }
 
     @Override
