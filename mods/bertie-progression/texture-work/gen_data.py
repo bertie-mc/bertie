@@ -436,10 +436,8 @@ write(f"{RIT}/r30a_echoing_city_compass.json",
              [("pastel:onyx_shard", 1), ("minecraft:sculk", 3), ("malum:aqueous_spirit", 4)],
              "bertieprogression:echoing_city_compass", 1, tier=2,
              essences={"aureal": 250, "blood": 0, "souls": 0}))
-write(f"{RIT}/r31a_spirit_crucible.json",
-      ritual("deeperdarker:reinforced_echo_shard",
-             [("malum:refined_soulstone", 3), ("create:brass_sheet", 4), ("pastel:onyx_shard", 1)],
-             "malum:spirit_crucible", 1, tier=2))
+# R31A Spirit Crucible RITUAL REMOVED (berlord 2026-08-02): Malum's own spirit infusion
+# (furnace + 2 hex ash + 8 tainted + 8 twisted, 8 infernal / 8 aqueous) is the sole route now.
 # Note 13 (2026-07-22): additive Carving Station route via HF1 (stock 2x2 recipe untouched).
 # XP cost removed (berlord note, 2026-07-22 batch 2).
 write(f"{RIT}/carving_station.json",
@@ -1444,10 +1442,11 @@ write("data/malum/recipe/spirit_jar.json",
       shaped(["X", "Y"], {"X": "create:brass_sheet", "Y": "#c:glass_blocks"}, "malum:spirit_jar"))
 
 # --- Alchemical Calx: stock is 4 clay -> 4 on arcane/earthen/aqueous x2. berlord: 6 clay -> 1 with
-#     three new pedestal inputs; spirits untouched. ---
+#     four new pedestal inputs; spirits untouched. Hex Ash added 2026-08-02. ---
 write("data/malum/recipe/spirit_infusion/alchemical_calx.json",
       infusion("minecraft:clay_ball", 6,
-               [("malum:grim_talc", 1), ("minecraft:bone", 5), ("#c:mushrooms", 3)],
+               [("malum:grim_talc", 1), ("malum:hex_ash", 1), ("minecraft:bone", 5),
+                ("#c:mushrooms", 3)],
                [SP("arcane", 2), SP("earthen", 2), SP("aqueous", 2)],
                "malum:alchemical_calx", 1))
 
