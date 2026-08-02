@@ -1,0 +1,8 @@
+name = "bertie-emi"
+filename = "bertieemi-0.8.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/bertie-mc/bertie/releases/download/bertie-emi/v0.8.0/bertieemi-0.8.0.jar"
+hash-format = "sha256"
+hash = "c75f856d7a117710b5c71210478b25834573c0b68a402e19032a2e28034266f0"

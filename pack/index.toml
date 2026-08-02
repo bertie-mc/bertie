@@ -264,11 +264,6 @@ hash = "5d6ca9d86ebc89eeebea3a1b87921f95e57f9a0aaa68f52bda8996bd202c217b"
 metafile = true
 
 [[files]]
-file = "mods/berlords-emi.pw.toml"
-hash = "a74bee8ac16b3f256fc6b402afd5b29dcb655049756ab30220d04b431dc89c23"
-metafile = true
-
-[[files]]
 file = "mods/berlords-food-system.pw.toml"
 hash = "15311bd0d48a75084f811222ed8d2ff05bc07f64538d8726a22db4c5c301b146"
 metafile = true
@@ -281,6 +276,11 @@ metafile = true
 [[files]]
 file = "mods/bertie-blackhole.pw.toml"
 hash = "c86c21ae9e2918193ebb1ab69cfb36e86409eae88dfafceb6e27a16787cae5e7"
+metafile = true
+
+[[files]]
+file = "mods/bertie-emi.pw.toml"
+hash = "a7ab9dac5a0d65106217488df39b19e2d3f43a5607e86bbecbaa460a42172b80"
 metafile = true
 
 [[files]]
