@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8.5",
+  "package": "io.github.bertie_mc.bertieprogression.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "bertieprogression.refmap.json",
+  "mixins": [
+    "AltarOfAmethystMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

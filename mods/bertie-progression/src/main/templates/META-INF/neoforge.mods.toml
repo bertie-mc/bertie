@@ -108,3 +108,8 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+# Altar of Amethyst behaviour. required=false in the config, so a pack without
+# Cataclysm simply never applies it.
+[[mixins]]
+config="bertieprogression.mixins.json"

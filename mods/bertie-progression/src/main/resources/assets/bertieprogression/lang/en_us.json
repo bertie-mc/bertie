@@ -43,6 +43,7 @@
   "message.bertieprogression.table_unlicensed": "You do not know how to use a crafting grid yet - consume a Crafting License first.",
   "message.bertieprogression.crafting_licensed": "The crafting language settles into your hands. The 3x3 grid is yours.",
   "message.bertieprogression.already_licensed": "You already hold the crafting language.",
+  "tooltip.bertieprogression.altar_of_amethyst": "Works best under a full moon, or in lush caves.",
   "message.bertieprogression.forge_formed": "The Brick Forge roars to life!",
   "message.bertieprogression.pedestal_formed": "The darkstone column settles into a pedestal.",
   "bertieprogression.ponder.deepwaters_shrine.header": "Raising the Deep Waters Shrine",

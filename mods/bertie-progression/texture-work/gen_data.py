@@ -2315,8 +2315,10 @@ for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
 # its element, so they are at least distinguishable on sight. storm_core is NOT in this list:
 # it has real art (texture-work/make_storm_core.py) and takes the generated model written by
 # the ITEMS loop above. Re-adding it here would hide that texture behind an amethyst shard.
-for _c, _par in (("abyssal_core", "minecraft:item/heart_of_the_sea"),
-                 ("desert_core", "minecraft:item/brick"),
+# abyssal_core LEFT this list 2026-08-02: it now has real animated art (the 'reach' variant, with
+# its .mcmeta), so it takes the generated model from the ITEMS loop like storm_core does. Leaving
+# it here parented it to a Heart of the Sea and hid the texture entirely.
+for _c, _par in (("desert_core", "minecraft:item/brick"),
                  ("cursed_core", "minecraft:item/echo_shard")):
     write(f"assets/bertieprogression/models/item/{_c}.json", {"parent": _par})
 # Transitional sequenced-assembly items: beam reuses a vanilla stick; water-wheel incompletes reuse the
@@ -2345,6 +2347,9 @@ lang.update({
     "message.bertieprogression.table_unlicensed": "You do not know how to use a crafting grid yet - consume a Crafting License first.",
     "message.bertieprogression.crafting_licensed": "The crafting language settles into your hands. The 3x3 grid is yours.",
     "message.bertieprogression.already_licensed": "You already hold the crafting language.",
+    # Altar of Amethyst: none of its new conditions are discoverable in game, and Cataclysm ships
+    # no .desc key for the block, so this goes on as a tooltip line (AltarTooltipHandler).
+    "tooltip.bertieprogression.altar_of_amethyst": "Works best under a full moon, or in lush caves.",
     "message.bertieprogression.forge_formed": "The Brick Forge roars to life!",
     "message.bertieprogression.pedestal_formed": "The darkstone column settles into a pedestal.",
     # Ponder scene text. Ponder does NOT fall back to the literal passed to .text(...) — it looks up
