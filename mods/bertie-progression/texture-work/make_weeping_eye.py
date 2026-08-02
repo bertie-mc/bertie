@@ -160,7 +160,11 @@ SHUT_SEAM = 0.94            # the shut seam is this sliver of the same ellipse
 TEAR_CYCLE = 20
 FRAMES = 60                 # three tear cycles, one blink
 # (column, rim row, frames spent welling before it lets go, phase in the cycle)
-TEARS = ((5, 10, 4, 0), (11, 11, 5, 10))
+# Both origins sit one pixel out from the iris rim and against two of its
+# pixels, so a bead wells out of the eye rather than off the middle of the
+# shell. That is the constraint on these coordinates, not symmetry — the pair
+# stays deliberately unmatched.
+TEARS = ((5, 10, 4, 0), (10, 11, 5, 10))
 
 MARBLE = {}
 _rng = random.Random(20260802)
