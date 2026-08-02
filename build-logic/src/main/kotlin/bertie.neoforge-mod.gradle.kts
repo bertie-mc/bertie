@@ -90,19 +90,7 @@ neoForge {
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {
-    val replaceProperties = mapOf(
-        "minecraft_version" to catalogVersion("minecraft"),
-        "minecraft_version_range" to "[1.21.1,1.22)",
-        "neo_version" to modMetadata.neoForgeVersion,
-        "neo_version_range" to "[21,)",
-        "loader_version_range" to "[4,)",
-        "mod_id" to modMetadata.id,
-        "mod_name" to modMetadata.displayName,
-        "mod_license" to modMetadata.license,
-        "mod_version" to modMetadata.version,
-        "mod_authors" to modMetadata.authors,
-        "mod_description" to modMetadata.description,
-    )
+    val replaceProperties = modMetadata.templateProperties(catalogVersion("minecraft"))
     inputs.properties(replaceProperties)
     expand(replaceProperties)
     from("src/main/templates")

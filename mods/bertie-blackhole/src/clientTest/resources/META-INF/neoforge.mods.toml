@@ -1,21 +1,21 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
-license = "Unlicense"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 
 [[mods]]
-modId = "bertieblackholetest"
-version = "1"
-displayName = "Bertie Black Hole client tests"
-description = "Test-only assertions for Bertie Black Hole"
+modId = "${client_test_mod_id}"
+version = "${client_test_mod_version}"
+displayName = "${client_test_mod_name}"
+description = "${client_test_mod_description}"
 
-[[dependencies.bertieblackholetest]]
-modId = "bertieblackhole"
+[[dependencies."${client_test_mod_id}"]]
+modId = "${mod_id}"
 type = "required"
 versionRange = "[0.3,)"
 ordering = "AFTER"
 side = "CLIENT"
 
-[[dependencies.bertieblackholetest]]
+[[dependencies."${client_test_mod_id}"]]
 modId = "forbidden_arcanus"
 type = "required"
 versionRange = "[2.6,)"

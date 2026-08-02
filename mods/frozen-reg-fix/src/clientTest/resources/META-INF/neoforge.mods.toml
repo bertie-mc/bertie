@@ -1,21 +1,21 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
-license = "Unlicense"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 
 [[mods]]
-modId = "frozenregfixtest"
-version = "1"
-displayName = "Frozen Registry Fix client tests"
-description = "Test-only assertions for Frozen Registry Fix"
+modId = "${client_test_mod_id}"
+version = "${client_test_mod_version}"
+displayName = "${client_test_mod_name}"
+description = "${client_test_mod_description}"
 
-[[dependencies.frozenregfixtest]]
-modId = "frozenregfix"
+[[dependencies."${client_test_mod_id}"]]
+modId = "${mod_id}"
 type = "required"
 versionRange = "[2,)"
 ordering = "AFTER"
 side = "CLIENT"
 
-[[dependencies.frozenregfixtest]]
+[[dependencies."${client_test_mod_id}"]]
 modId = "immersive_armors"
 type = "required"
 versionRange = "[1.7,)"

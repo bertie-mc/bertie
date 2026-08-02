@@ -1,21 +1,21 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
-license = "Unlicense"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 
 [[mods]]
-modId = "fdshaderfixtest"
-version = "1"
-displayName = "FdLib Post-Shader Fix client tests"
-description = "Test-only assertions for FdLib Post-Shader Fix"
+modId = "${client_test_mod_id}"
+version = "${client_test_mod_version}"
+displayName = "${client_test_mod_name}"
+description = "${client_test_mod_description}"
 
-[[dependencies.fdshaderfixtest]]
-modId = "fdshaderfix"
+[[dependencies."${client_test_mod_id}"]]
+modId = "${mod_id}"
 type = "required"
 versionRange = "[1,)"
 ordering = "AFTER"
 side = "CLIENT"
 
-[[dependencies.fdshaderfixtest]]
+[[dependencies."${client_test_mod_id}"]]
 modId = "fdlib"
 type = "required"
 versionRange = "[1,)"

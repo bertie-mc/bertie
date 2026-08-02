@@ -1,15 +1,15 @@
 modLoader = "javafml"
-loaderVersion = "[4,)"
-license = "MIT"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 
 [[mods]]
-modId = "explosiveenhancementtest"
-version = "1"
-displayName = "Explosive Enhancement client tests"
-description = "Test-only assertions for Explosive Enhancement"
+modId = "${client_test_mod_id}"
+version = "${client_test_mod_version}"
+displayName = "${client_test_mod_name}"
+description = "${client_test_mod_description}"
 
-[[dependencies.explosiveenhancementtest]]
-modId = "explosiveenhancement"
+[[dependencies."${client_test_mod_id}"]]
+modId = "${mod_id}"
 type = "required"
 versionRange = "[1,)"
 ordering = "AFTER"
