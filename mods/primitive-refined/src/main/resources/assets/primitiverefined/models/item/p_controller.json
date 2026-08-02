@@ -1,3 +1,7 @@
 {
-  "parent": "create:block/rotation_speed_controller/item"
+  "__comment": "Create's rotation_speed_controller ITEM model as parent, carrying the same side-texture swap the block model does. Without it the item inherited Create's textures wholesale and the inventory and EMI drew a plain Rotation Speed Controller. NOTE the slot differs between Create's two models: in block.json the controller side is '0', but in item.json '0' is the AXIS and the controller side is '1_0'. Overriding '0' here would repaint the shaft and leave the body stock.",
+  "parent": "create:block/rotation_speed_controller/item",
+  "textures": {
+    "1_0": "primitiverefined:block/p_controller_side_off"
+  }
 }

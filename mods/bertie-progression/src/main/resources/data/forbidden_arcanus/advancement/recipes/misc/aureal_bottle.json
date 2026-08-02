@@ -1,0 +1,21 @@
+{
+  "__comment": "DISABLED (berlord 2026-08-02) alongside the recipe it unlocks. Left in place rather than orphaned: a recipe-unlock advancement whose recipe no longer loads errors on datapack load.",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "recipes": []
+  }
+}
