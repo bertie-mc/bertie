@@ -1,11 +1,13 @@
 package io.github.bertie_mc.bertieprogression;
 
-import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
+import io.github.bertie_mc.bertieprogression.fan.ModFanProcessing;
 import io.github.bertie_mc.bertieprogression.forge.ForgeBedHandler;
 import io.github.bertie_mc.bertieprogression.forge.PedestalFormationHandler;
+import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.shrine.DeepWatersShrineHandler;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 
@@ -21,7 +23,10 @@ public final class BertieProgression {
         ModAttachments.ATTACHMENTS.register(modBus);
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.TYPES.register(modBus);
-        io.github.bertie_mc.bertieprogression.fan.ModFanProcessing.TYPES.register(modBus);
+        // Create is an optional integration; do not resolve its registry classes otherwise.
+        if (ModList.get().isLoaded("create")) {
+            ModFanProcessing.TYPES.register(modBus);
+        }
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
 
