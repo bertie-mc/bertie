@@ -296,6 +296,29 @@ def test_server_test_runs_project_owned_command_suite(
     assert any("launch" in command for command in invocations)
 
 
+def test_server_test_stops_after_project_success_marker(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    context = _context(tmp_path, "server")
+    command_test = tmp_path / "server.json"
+    command_test.write_text('{"name":"project","steps":[]}', encoding="utf-8")
+    observed: dict[str, object] = {}
+
+    def fake_run(command: list[str | Path], **kwargs: object) -> None:
+        if "launch" not in command:
+            return
+        observed.update(kwargs)
+        log = kwargs.get("log")
+        assert isinstance(log, Path)
+        log.write_text("CommandTest was successful.\n", encoding="utf-8")
+
+    monkeypatch.setattr(runtime_module, "run", fake_run)
+
+    run_server_test(context, 300, "3G", command_test=command_test)
+
+    assert observed["completion_marker"] == "CommandTest was successful."
+
+
 def test_server_test_requires_explicit_success_record_on_zero_exit(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:

@@ -328,6 +328,7 @@ def run_server_test(
             cwd=work,
             log=runtime_log,
             timeout_seconds=timeout_seconds,
+            completion_marker=_COMMAND_TEST_SUCCESS,
         )
     except subprocess.CalledProcessError:
         # HeadlessMC waits for the child after its command test succeeds. A large
