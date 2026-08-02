@@ -1,0 +1,65 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deepwaters"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "primitiverefined"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "R": {
+      "item": "create:rotation_speed_controller"
+    },
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "P": {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    "B": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    },
+    "G": {
+      "item": "primitiverefined:obsidiansteel_cogwheel_soulstained"
+    },
+    "F": {
+      "item": "primitiverefined:soulstained_shaft"
+    },
+    "O": {
+      "item": "deepwaters:blackpearl"
+    }
+  },
+  "pattern": [
+    "  C  ",
+    "PSRSP",
+    "SBGBS",
+    "FFGFF",
+    "SBOBS",
+    "PSSSP"
+  ],
+  "result": {
+    "id": "primitiverefined:p_controller",
+    "count": 1
+  }
+}
