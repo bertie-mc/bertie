@@ -16,6 +16,7 @@ fun catalogVersion(name: String): String =
     }.requiredVersion
 
 val modMetadataFile = layout.projectDirectory.file("mod.properties")
+val accessTransformerFile = layout.projectDirectory.file("src/main/resources/META-INF/accesstransformer.cfg")
 val modMetadata = BertieModMetadata.parse(
     providers.fileContents(modMetadataFile).asText.get(),
     catalogVersion("neoforge"),
@@ -66,6 +67,10 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     version = modMetadata.neoForgeVersion
+
+    if (accessTransformerFile.asFile.isFile) {
+        accessTransformers.from(accessTransformerFile)
+    }
 
     parchment {
         minecraftVersion = catalogVersion("parchment-minecraft")

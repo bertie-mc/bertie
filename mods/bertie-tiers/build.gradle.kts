@@ -1,5 +1,3 @@
-import org.gradle.api.tasks.testing.Test
-
 plugins {
     id("bertie.neoforge-mod")
     id("bertie.jvm-test")
@@ -9,10 +7,4 @@ plugins {
 
 dependencies {
     testImplementation(libs.gson)
-}
-
-tasks.named<Test>("test") {
-    testLogging {
-        events("passed", "skipped", "failed")
-    }
 }

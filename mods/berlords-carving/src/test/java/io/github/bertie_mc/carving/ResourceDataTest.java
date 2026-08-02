@@ -6,6 +6,7 @@ import com.google.gson.JsonParser;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -19,8 +20,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ResourceDataTest {
     private static final String MOD_ID = "berlordscarving";
-    private static final Path RESOURCES = Path.of(System.getProperty("bertie.projectDir"),
-            "src", "main", "resources");
+    private static final Path RESOURCES = resources();
+
+    private static Path resources() {
+        try {
+            return Path.of(ResourceDataTest.class.getResource("/assets/" + MOD_ID).toURI())
+                    .getParent().getParent();
+        } catch (URISyntaxException exception) {
+            throw new IllegalStateException(exception);
+        }
+    }
 
     @Test
     void everyJsonResourceParses() throws IOException {

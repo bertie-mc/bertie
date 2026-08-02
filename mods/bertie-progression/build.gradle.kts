@@ -1,5 +1,3 @@
-import org.gradle.api.tasks.testing.Test
-
 plugins {
     id("bertie.neoforge-mod")
     id("bertie.neoforge-unit-test")
@@ -17,8 +15,4 @@ dependencies {
     compileOnly(libs.ponder) {
         isTransitive = false
     }
-}
-
-tasks.named<Test>("test") {
-    systemProperty("bertie.projectDir", layout.projectDirectory.asFile.absolutePath)
 }

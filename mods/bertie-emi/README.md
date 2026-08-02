@@ -19,10 +19,9 @@ Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Malum, Sla
 
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency
-resolves from public Maven repositories. A few libraries this mod compiles against
-(anvillib, l2core, l2serial, and confluence_magic_lib) are published only inside their
-parent mods, so the shared `extractNestedJars` task extracts them into the ignored build
-directory. Nothing third-party is committed here; the first build requires network access.
+resolves from public Maven repositories. The `jarJarCompileOnly` dependency convention makes
+libraries bundled inside parent mods available to the compiler. Nothing third-party is committed
+here; the first build requires network access.
 
 `gradle :mods:bertie-emi:test` covers the shared machine-recipe descriptor. CI also launches EMI with Forbidden &
 Arcanus and joins a world, failing unless the production plugin completes integration registration.

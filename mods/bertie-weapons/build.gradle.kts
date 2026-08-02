@@ -1,5 +1,3 @@
-import org.gradle.api.tasks.testing.Test
-
 plugins {
     id("bertie.neoforge-mod")
     id("bertie.jvm-test")
@@ -21,10 +19,4 @@ dependencies {
     runtimeOnly(libs.kotlin.forge)
     runtimeOnly(libs.simply.tooltips)
     runtimeOnly(libs.architectury.api)
-}
-
-tasks.named<Test>("test") {
-    testLogging {
-        events("passed", "skipped", "failed")
-    }
 }
