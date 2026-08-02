@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "primitiverefined"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "C": {
+      "item": "primitiverefined:obsidiansteel_cogwheel_soulstained"
+    },
+    "F": {
+      "item": "primitiverefined:soulstained_shaft"
+    },
+    "G": {
+      "item": "minecraft:purple_stained_glass"
+    },
+    "W": {
+      "item": "malum:warp_flux"
+    }
+  },
+  "pattern": [
+    "SSCSS",
+    "SWFWS",
+    "CFGFC",
+    "SWFWS",
+    "SSCSS"
+  ],
+  "result": {
+    "id": "primitiverefined:p_grid",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "primitiverefined"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "F": {
+      "item": "primitiverefined:soulstained_shaft"
+    },
+    "D": {
+      "item": "forbidden_arcanus:dark_matter"
+    },
+    "O": {
+      "item": "minecraft:observer"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "FDO",
+    "SSS"
+  ],
+  "result": {
+    "id": "primitiverefined:external_reader",
+    "count": 1
+  }
+}

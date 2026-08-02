@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "primitiverefined"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "create:cogwheel",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "malum:soul_stained_steel_plating",
+      "count": 6
+    },
+    {
+      "item": "elemental_metals:arcane_infused_iron_nugget",
+      "count": 4
+    },
+    {
+      "item": "twilightforest:exanimate_essence",
+      "count": 1
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 8
+    },
+    {
+      "type": "malum:aerial",
+      "count": 4
+    },
+    {
+      "type": "malum:earthen",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "primitiverefined:obsidiansteel_cogwheel_soulstained",
+    "count": 1
+  }
+}

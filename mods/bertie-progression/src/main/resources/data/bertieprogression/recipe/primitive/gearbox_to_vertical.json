@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "primitiverefined"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primitiverefined:arcanetic_gearbox"
+    }
+  ],
+  "result": {
+    "id": "primitiverefined:arcanetic_gearbox_vertical",
+    "count": 1
+  }
+}
