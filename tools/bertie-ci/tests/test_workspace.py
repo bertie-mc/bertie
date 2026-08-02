@@ -71,6 +71,7 @@ runner = "unit"
 id = "client-contract"
 runner = "client"
 fixtures = ["example", "library"]
+instance-files = "src/clientTest/instance"
 build-client-test-mod = true
 require-log = ["BASE_CLIENT_OK", "BASE_SECOND_ASSERTION_OK"]
 timeout = 42
@@ -205,6 +206,7 @@ def test_client_matrix_contains_project_owned_configuration(tmp_path: Path) -> N
             "build_client_test_mod": True,
             "fixture": "example,library",
             "gradle_project": ":mods:base",
+            "instance_files": "src/clientTest/instance",
             "max_memory": "5G",
             "minimum_game_tests": 0,
             "project": "mods/base",

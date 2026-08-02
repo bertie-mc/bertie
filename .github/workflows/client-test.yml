@@ -70,6 +70,7 @@ jobs:
           component: ${{ inputs.component }}
           artifact: .bertie-ci/artifact
           fixture: ${{ matrix.fixture }}
+          instance-files: ${{ matrix.instance_files }}
           side: client
           output-dir: .bertie-ci/client/${{ matrix.suite }}
 

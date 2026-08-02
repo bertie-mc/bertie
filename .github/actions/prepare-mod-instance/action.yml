@@ -17,6 +17,10 @@ inputs:
     description: Comma-separated canonical pack fixtures
     required: false
     default: ""
+  instance-files:
+    description: Component directory copied into the prepared game directory
+    required: false
+    default: ""
   side:
     description: client or server
     required: true
@@ -39,11 +43,13 @@ runs:
         BERTIE_COMPONENT: ${{ inputs.component }}
         BERTIE_ARTIFACT: ${{ inputs.artifact }}
         BERTIE_FIXTURE: ${{ inputs.fixture }}
+        BERTIE_INSTANCE_FILES: ${{ inputs.instance-files }}
         BERTIE_SIDE: ${{ inputs.side }}
         BERTIE_OUTPUT: ${{ inputs.output-dir }}
       run: >-
         bertie-ci prepare-mod-instance --workspace . --component "$BERTIE_COMPONENT"
         --artifact "$BERTIE_ARTIFACT" --fixture "$BERTIE_FIXTURE"
+        --instance-files "$BERTIE_INSTANCE_FILES"
         --side "$BERTIE_SIDE" --output-dir "$BERTIE_OUTPUT"
     - name: Prepare standalone mod instance
       if: inputs.component == ''
@@ -52,9 +58,11 @@ runs:
         BERTIE_PROJECT: ${{ inputs.project }}
         BERTIE_ARTIFACT: ${{ inputs.artifact }}
         BERTIE_FIXTURE: ${{ inputs.fixture }}
+        BERTIE_INSTANCE_FILES: ${{ inputs.instance-files }}
         BERTIE_SIDE: ${{ inputs.side }}
         BERTIE_OUTPUT: ${{ inputs.output-dir }}
       run: >-
         bertie-ci prepare-mod-instance --project "$BERTIE_PROJECT"
         --artifact "$BERTIE_ARTIFACT" --fixture "$BERTIE_FIXTURE"
+        --instance-files "$BERTIE_INSTANCE_FILES"
         --side "$BERTIE_SIDE" --output-dir "$BERTIE_OUTPUT"

@@ -71,6 +71,7 @@ runner = "gametest"
 id = "client-contract"
 runner = "client"
 fixtures = ["required-library"]
+instance-files = "src/clientTest/instance"
 build-client-test-mod = true
 require-log = ["EXAMPLE_CLIENT_ASSERTIONS_OK"]
 ```
@@ -89,6 +90,9 @@ Suites have stable names and select one modular runner:
 Runtime suite fields such as fixtures, timeout, memory, assertions, and command documents
 belong to the component descriptor. `automatic = false` keeps an expensive suite out of
 the affected-change plan while allowing scheduled and manual workflows to request it.
+For mod client and server suites, `instance-files` names a component directory whose
+contents are copied over the freshly prepared game directory before launch. This can
+provide test configs, migration state, worlds, or other runtime inputs.
 
 The descriptor's `build-client-test-mod` option is intentionally client-specific. A
 server test artifact can still be supplied directly to the lower-level `server-test`
@@ -118,6 +122,7 @@ bertie-ci build-client-test-mod --workspace . --component short-circuit-fix \
   --output-dir .bertie-ci/client-test
 bertie-ci prepare-mod-instance --workspace . --component short-circuit-fix \
   --artifact .bertie-ci/artifacts/short-circuit-fix --fixture short-circuit \
+  --instance-files src/clientTest/instance \
   --side client --output-dir .bertie-ci/client
 bertie-ci client-test --instance .bertie-ci/client/instance.json \
   --test-mod .bertie-ci/client-test/client-test-mod.jar \

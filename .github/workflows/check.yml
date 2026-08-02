@@ -182,6 +182,7 @@ jobs:
           component: ${{ matrix.subject }}
           artifact: .bertie-ci/artifact/${{ matrix.subject }}
           fixture: ${{ matrix.fixture }}
+          instance-files: ${{ matrix.instance_files }}
           side: client
           output-dir: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}
 
@@ -236,6 +237,7 @@ jobs:
           component: ${{ matrix.subject }}
           artifact: .bertie-ci/artifact/${{ matrix.subject }}
           fixture: ${{ matrix.fixture }}
+          instance-files: ${{ matrix.instance_files }}
           side: server
           output-dir: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}
 

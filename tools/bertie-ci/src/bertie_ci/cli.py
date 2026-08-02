@@ -197,6 +197,11 @@ def _parser() -> argparse.ArgumentParser:
     _add_component_target(prepare_mod)
     prepare_mod.add_argument("--artifact", type=Path)
     _add_fixture(prepare_mod)
+    prepare_mod.add_argument(
+        "--instance-files",
+        type=_optional_path,
+        help="copy this component directory into the prepared game directory",
+    )
     prepare_mod.add_argument("--side", choices=("client", "server"), required=True)
     prepare_mod.add_argument("--output-dir", type=Path, required=True)
 
@@ -603,6 +608,9 @@ def main() -> None:
                 artifact = args.artifact
                 if artifact is not None and not artifact.is_absolute():
                     artifact = base / artifact
+                instance_files = args.instance_files
+                if instance_files is not None and not instance_files.is_absolute():
+                    instance_files = project / instance_files
                 descriptor = prepare_mod_instance(
                     project,
                     artifact,
@@ -611,6 +619,7 @@ def main() -> None:
                     _under_project(base, args.output_dir),
                     load_versions(),
                     load_fixture_tools(),
+                    instance_files=instance_files,
                 )
                 print(f"Prepared instance: {descriptor}", flush=True)
             case "prepare-pack-instance":

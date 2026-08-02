@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
@@ -173,11 +174,14 @@ def prepare_mod_instance(
     output: Path,
     versions: Versions,
     tools: FixtureTools,
+    instance_files: Path | None = None,
 ) -> Path:
     output = output.resolve()
     game_dir = _reset_instance(output)
     (game_dir / "mods").mkdir()
     install_fixtures(tools, versions, game_dir, output, profiles, side)
+    if instance_files is not None:
+        shutil.copytree(instance_files, game_dir, dirs_exist_ok=True)
     artifact = find_artifact(project, requested_artifact)
     replace_file(artifact, game_dir / "mods" / "mod-under-test.jar")
     return write_instance(

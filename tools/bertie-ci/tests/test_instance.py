@@ -1,11 +1,14 @@
 import json
 from pathlib import Path
 
+import bertie_ci.instance as instance_module
 import pytest
+from bertie_ci.config import Versions
 from bertie_ci.instance import (
     Instance,
     install_mod,
     load_instance,
+    prepare_mod_instance,
     read_pack_versions,
     write_instance,
 )
@@ -59,6 +62,38 @@ def test_read_pack_versions(tmp_path: Path) -> None:
     )
 
     assert read_pack_versions(tmp_path) == ("1.21.1", "neoforge", "21.1.233")
+
+
+def test_prepare_mod_instance_copies_component_instance_files(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    project = tmp_path / "mod"
+    project.mkdir()
+    artifact = project / "example.jar"
+    artifact.write_bytes(b"mod")
+    instance_files = project / "src" / "clientTest" / "instance"
+    (instance_files / "config").mkdir(parents=True)
+    (instance_files / "config" / "example.toml").write_text(
+        "version = 1\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(instance_module, "install_fixtures", lambda *_: None)
+
+    descriptor = prepare_mod_instance(
+        project,
+        artifact,
+        [],
+        "client",
+        tmp_path / "prepared",
+        Versions("1.21.1", "21.1.233", "21", "2.10.0", "4.5.1", "0.5.14"),
+        object(),  # Fixture tools are unused because fixture installation is stubbed.
+        instance_files=instance_files,
+    )
+
+    instance = load_instance(descriptor)
+    assert (instance.game_dir / "config" / "example.toml").read_text(
+        encoding="utf-8"
+    ) == "version = 1\n"
+    assert (instance.game_dir / "mods" / "mod-under-test.jar").read_bytes() == b"mod"
 
 
 def test_install_mod_replaces_an_explicit_pack_artifact(tmp_path: Path) -> None:

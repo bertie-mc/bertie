@@ -105,6 +105,7 @@ class Suite:
     runner: str
     automatic: bool
     fixtures: tuple[str, ...] = ()
+    instance_files: Path | None = None
     build_client_test_mod: bool = False
     required_logs: tuple[str, ...] = ()
     minimum_game_tests: int = 0
@@ -123,6 +124,7 @@ class Suite:
                 "runner",
                 "automatic",
                 "fixtures",
+                "instance-files",
                 "build-client-test-mod",
                 "require-log",
                 "minimum-game-tests",
@@ -144,6 +146,16 @@ class Suite:
             raise RuntimeError(f"Suite {suite_id!r} automatic must be a boolean")
         fixtures = value.get("fixtures", [])
         parsed_fixtures = _strings(fixtures, f"Suite {suite_id!r} fixtures")
+        instance_files_value = value.get("instance-files")
+        instance_files = (
+            _relative(
+                component_root,
+                instance_files_value,
+                f"Suite {suite_id!r} instance-files",
+            )
+            if instance_files_value is not None
+            else None
+        )
         build_client_test_mod = value.get("build-client-test-mod", False)
         if not isinstance(build_client_test_mod, bool):
             raise RuntimeError(
@@ -182,6 +194,10 @@ class Suite:
             raise RuntimeError(
                 f"Suite {suite_id!r} fixtures require a client or server runner"
             )
+        if instance_files is not None and runner not in ("client", "server"):
+            raise RuntimeError(
+                f"Suite {suite_id!r} instance-files require a client or server runner"
+            )
         if required_logs and runner not in ("client", "server"):
             raise RuntimeError(
                 f"Suite {suite_id!r} require-log needs a client or server runner"
@@ -211,6 +227,7 @@ class Suite:
             runner=runner,
             automatic=automatic,
             fixtures=parsed_fixtures,
+            instance_files=instance_files,
             build_client_test_mod=build_client_test_mod,
             required_logs=required_logs,
             minimum_game_tests=minimum,
@@ -259,6 +276,10 @@ class Component:
                     or ("4G" if suite.runner == "client" else "3G"),
                 }
             )
+            if suite.instance_files is not None:
+                entry["instance_files"] = suite.instance_files.relative_to(
+                    self.path
+                ).as_posix()
             if suite.runner == "client":
                 entry["build_client_test_mod"] = suite.build_client_test_mod
                 entry["minimum_game_tests"] = suite.minimum_game_tests
@@ -482,6 +503,12 @@ class Workspace:
         if incompatible:
             raise RuntimeError(
                 f"Component kind {kind!r} cannot run suite(s): {', '.join(incompatible)}"
+            )
+        if kind != "neoforge-mod" and any(
+            suite.instance_files is not None for suite in suites
+        ):
+            raise RuntimeError(
+                "instance-files is supported only for NeoForge mod suites"
             )
         suite_ids = [suite.id for suite in suites]
         if len(set(suite_ids)) != len(suite_ids):
