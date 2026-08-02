@@ -81,6 +81,10 @@ file = "config/quark-common.toml"
 hash = "6a8d7657ab5ad7954e3b991ab6597af72cb29eb72e6da2ebd3471803b619085e"
 
 [[files]]
+file = "config/twilightforest-common.toml"
+hash = "81e54e0f4f939ab77bc6c05f977735406f3fc8bd3930794e721b40e7da9d0b1e"
+
+[[files]]
 file = "config/wover/client.json"
 hash = "4e1cc906b6c45e8e47ec5a653c85431afdd20b49a34b4fbdf3099603e0e97d85"
 
