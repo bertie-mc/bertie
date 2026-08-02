@@ -551,6 +551,13 @@ def _run_plan(args: argparse.Namespace) -> None:
         raise RuntimeError("--all cannot be combined with --component")
     selected = tuple(workspace.components) if args.all else tuple(args.component)
     changed = () if selected else workspace.changed_files(args.base, args.head)
+    if changed is None:
+        print(
+            f"bertie-ci: base Git revision {args.base!r} is unavailable; "
+            "planning all components",
+            file=sys.stderr,
+            flush=True,
+        )
     subjects = workspace.affected(changed, selected)
     print(
         plan_json(workspace.plan(subjects, include_manual=args.include_manual)),

@@ -24,7 +24,12 @@ def main() -> None:
     if enabled("BERTIE_PLAN_INCLUDE_MANUAL"):
         command.append("--include-manual")
 
-    result = subprocess.run(command, check=True, capture_output=True, text=True)
+    result = subprocess.run(
+        command,
+        check=True,
+        stdout=subprocess.PIPE,
+        text=True,
+    )
     plan = json.loads(result.stdout)
     output = Path(os.environ["GITHUB_OUTPUT"])
     with output.open("a", encoding="utf-8") as stream:

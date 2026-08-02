@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -10,6 +11,31 @@ from bertie_ci.workspace import Workspace, plan_json
 def _write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
+
+
+def _git(root: Path, *arguments: str) -> str:
+    return subprocess.run(
+        ["git", *arguments],
+        cwd=root,
+        check=True,
+        stdout=subprocess.PIPE,
+        text=True,
+    ).stdout.strip()
+
+
+def _commit_all(root: Path, message: str) -> str:
+    _git(root, "add", ".")
+    _git(
+        root,
+        "-c",
+        "user.name=Bertie CI",
+        "-c",
+        "user.email=ci@bertie.invalid",
+        "commit",
+        "-qm",
+        message,
+    )
+    return _git(root, "rev-parse", "HEAD")
 
 
 def _workspace(root: Path) -> Workspace:
@@ -213,6 +239,36 @@ def test_unknown_product_path_is_conservatively_global(tmp_path: Path) -> None:
         "consumer",
         "pack",
     }
+
+
+def test_missing_base_revision_is_conservatively_global(tmp_path: Path) -> None:
+    workspace = _workspace(tmp_path)
+    _git(tmp_path, "init", "-q")
+    _commit_all(tmp_path, "test fixture")
+
+    changed = workspace.changed_files("f" * 40, "HEAD")
+
+    assert workspace.affected(changed) == {"base", "consumer", "pack"}
+
+
+def test_missing_head_revision_still_fails(tmp_path: Path) -> None:
+    workspace = _workspace(tmp_path)
+    _git(tmp_path, "init", "-q")
+
+    with pytest.raises(RuntimeError, match="Head Git revision .* is unavailable"):
+        workspace.changed_files("f" * 40, "HEAD")
+
+
+def test_available_backward_base_uses_endpoint_diff(tmp_path: Path) -> None:
+    workspace = _workspace(tmp_path)
+    _git(tmp_path, "init", "-q")
+    parent = _commit_all(tmp_path, "base")
+    _write(tmp_path / "removed-on-rollback.txt", "content\n")
+    child = _commit_all(tmp_path, "child")
+
+    changed = workspace.changed_files(child, parent)
+
+    assert changed == ("removed-on-rollback.txt",)
 
 
 def test_component_descriptor_is_an_implicit_standalone_workspace(

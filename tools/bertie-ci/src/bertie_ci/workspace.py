@@ -534,10 +534,45 @@ class Workspace:
             project=component.relative_path.as_posix(),
         )
 
-    def changed_files(self, base: str | None, head: str) -> tuple[str, ...]:
+    def _resolve_commit(self, revision: str) -> str | None:
+        result = subprocess.run(
+            [
+                "git",
+                "rev-parse",
+                "--verify",
+                "--quiet",
+                "--end-of-options",
+                f"{revision}^{{commit}}",
+            ],
+            cwd=self.root,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+        if result.returncode == 1:
+            return None
+        detail = result.stderr.strip() or f"git rev-parse exited {result.returncode}"
+        raise RuntimeError(f"Cannot resolve Git revision {revision!r}: {detail}")
+
+    def changed_files(self, base: str | None, head: str) -> tuple[str, ...] | None:
         if base:
+            head_commit = self._resolve_commit(head)
+            if head_commit is None:
+                raise RuntimeError(f"Head Git revision {head!r} is unavailable")
+            base_commit = self._resolve_commit(base)
+            if base_commit is None:
+                return None
             result = subprocess.run(
-                ["git", "diff", "--name-only", "-z", base, head, "--"],
+                [
+                    "git",
+                    "diff",
+                    "--name-only",
+                    "-z",
+                    base_commit,
+                    head_commit,
+                    "--",
+                ],
                 cwd=self.root,
                 check=True,
                 capture_output=True,
@@ -577,10 +612,13 @@ class Workspace:
 
     def affected(
         self,
-        changed: tuple[str, ...],
+        changed: tuple[str, ...] | None,
         selected: tuple[str, ...] = (),
     ) -> set[str]:
         affected = {self.component(subject).subject for subject in selected}
+        if changed is None:
+            affected.update(self.components)
+            changed = ()
         for path in changed:
             normalized = Path(path).as_posix().removeprefix("./")
             if self._matches(normalized, self.ignored_paths):
