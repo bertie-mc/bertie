@@ -46,5 +46,10 @@ uv.lock
 **/texture-work/vanilla/
 **/texture-work/vanilla-icons/
 
+# Sprites still being drawn. Generator and output both live here until berlord
+# picks one; then the generator moves up into texture-work/ and starts writing
+# into resources. Nothing in here is versioned.
+**/texture-work/drafts/
+
 # packwiz cache and generated local instances.
 **/.packwizcache

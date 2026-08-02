@@ -1,31 +1,39 @@
 #!/usr/bin/env python3
 """
-bertieprogression texture generator — three elemental cores (16x16), hand-placed.
+bertieprogression texture generator — cursed_core (16x16), hand-placed.
 
 The cores are the 7x7 mechanical-crafter walls that feed the Hephaestus Forge
-tier 2 ritual, one per Cataclysm boss domain. The three here are glass spheres
-holding a single primary essence, and they are meant to read as a set at
-inventory size, so the glass is identical on all three and only what is trapped
-inside changes:
+tier 2 ritual, one per Cataclysm boss domain. They were a set of four glass
+spheres, identical glass with a different essence trapped in each; cursed_core
+is the last one still drawn that way. The glass and the essence bands are kept
+here as they were, so the sphere is unchanged if it is ever wanted again:
 
     glass   a 14px sphere: a dark tinted silhouette ring, a shell ring that
             catches the light at the upper left and rim-lights at the lower
             right, and a three-pixel specular glint painted last, over the
             contents, because it sits on the front of the sphere
-    essence the domain, filling the sphere on the same four depth bands:
-              abyssal  seawater, a current running through it, bubbles, coral,
-                       and the pearl that settled out of it
-              desert   sand, wind ripples across the grain, gold and pebbles
-              cursed   a skull with lit sockets, adrift in green miasma
+    essence cursed — a skull with lit sockets adrift in green miasma, filling
+            the sphere on four depth bands, with a few off-palette flecks of
+            crimson so a 10px interior still looks alive instead of like a
+            flat tinted fill
 
-Each essence carries a few off-palette flecks — coral in the water, gold in the
-sand, crimson in the miasma — so a 10px interior still looks alive instead of
-like a flat tinted fill.
+storm_core left the set first. It is now a dark grey storm cloud pierced by a
+bolt, drawn by texture-work/make_storm_core.py, and deliberately does not share
+the glass — do not add it back here or that art gets overwritten the next time
+this script runs.
 
-storm_core was the fourth sphere in this set. It is now a dark grey storm cloud
-pierced by a bolt, drawn by texture-work/make_storm_core.py, and deliberately
-does not share the glass — do not add it back here or that art gets overwritten
-the next time this script runs.
+desert_core has gone the same way and for the same reason: it is now an
+animated pyramid on a desert horizon, a 144-frame strip with a .png.mcmeta
+beside it, drawn by texture-work/make_desert_core.py. Nothing this script can
+express. **Do not add it back.**
+
+abyssal_core has gone the same way, and for the same reason. It is now an
+animated whirlpool with a tentacle hunting out of it, and it is a 32x32 strip of
+32 frames with a .png.mcmeta beside it — nothing this script can express. It was
+still listed here after that art landed, which meant one run of this script
+would have quietly replaced an animated sprite with a static glass sphere and
+left the .mcmeta pointing at frames that no longer existed. Do not add it back.
+Its generator lives outside the monorepo, in the workspace's custom-textures/.
 
 No third-party art is copied; Cataclysm, Deepwaters, Malum and Slag ingredient
 items were looked at for each domain's palette only. Nothing here needs a
@@ -78,20 +86,6 @@ def facing(x, y):
 # Per-core palettes. `edge`/`mid`/`hi`/`rim` are the glass itself; 0..3 is the
 # essence ramp, darkest to brightest; the rest are that essence's own details.
 CORES = {
-    "abyssal_core": {
-        "edge": "#08222F", "mid": "#1B5570", "hi": "#B4EEF8", "rim": "#3E9CB8",
-        "0": "#063049", "1": "#0A5578", "2": "#147EA6", "3": "#2FA8CC",
-        "F": "#DFF8FF",   # caustic flare where the light enters
-        "b": "#EAFDFF",   # bubbles
-        "P": "#12202E",   # black pearl settled at the bottom
-        "c": "#E8705A",   # coral grit
-    },
-    "desert_core": {
-        "edge": "#3E2810", "mid": "#8A6428", "hi": "#FFEEC4", "rim": "#D9A040",
-        "0": "#5C3410", "1": "#8A5418", "2": "#B47620", "3": "#E0A030",
-        "4": "#F5CF74",   # grains catching the light
-        "g": "#FFF8D8",   # gold glinting in the sand
-    },
     "cursed_core": {
         "edge": "#071B14", "mid": "#14513A", "hi": "#A8F7C6", "rim": "#2E9A64",
         "0": "#062218", "1": "#0C4128", "2": "#146B3E", "3": "#2FA55E",
@@ -107,74 +101,6 @@ CORES = {
 # The essence, as (row, first column, run) over the 10px interior. Painted in
 # order, so the flecks at the end of each list land on top of the fill.
 ESSENCE = {
-    # Seawater filling most of the sphere, foam line near the top.
-    "abyssal_core": [
-        # Water fills the whole sphere. An air gap and a foam line read as a
-        # half-empty bottle at this size, and the foam collides with the
-        # specular; depth plus a current does the same job without the blob.
-        (3,  6, "3333"),
-        (4,  4, "33333333"),
-        (5,  4, "33333333"),
-        (6,  3, "2222222222"),
-        (7,  3, "2222222222"),
-        (8,  3, "2222222222"),
-        (9,  3, "1111111111"),
-        (10, 4, "11111111"),
-        (11, 4, "00000000"),
-        (12, 6, "0000"),
-        # a current running down through the depth bands
-        (7,  4, "33"),
-        (8,  6, "33"),
-        (9,  8, "33"),
-        # light entering the top of the sphere
-        (3,  7, "FF"),
-        (4, 10, "F"),
-        # bubbles on their way up
-        (5,  6, "b"),
-        (7,  9, "b"),
-        (9,  5, "b"),
-        (10, 10, "b"),
-        # coral grit, and the pearl that settled out of it
-        (11, 5, "c"),
-        (9, 11, "c"),
-        (10, 8, "P"),
-    ],
-    # A dune drifted up the inside of the glass, grains still in the air.
-    "desert_core": [
-        # Sand fills the whole sphere, same depth bands as the water. A dune
-        # surface with sunlit air above it turns into one flat pale mass at
-        # this size; wind ripples and loose grain carry the domain instead.
-        (3,  6, "3333"),
-        (4,  4, "33333333"),
-        (5,  4, "33333333"),
-        (6,  3, "2222222222"),
-        (7,  3, "2222222222"),
-        (8,  3, "2222222222"),
-        (9,  3, "1111111111"),
-        (10, 4, "11111111"),
-        (11, 4, "00000000"),
-        (12, 6, "0000"),
-        # wind ripples drifting across the grain
-        (6,  3, "33"),
-        (6,  9, "3"),
-        (7,  6, "333"),
-        (8,  4, "33"),
-        (8, 10, "33"),
-        (9,  5, "222"),
-        (10, 8, "22"),
-        (11, 5, "11"),
-        # loose grain catching the light, gold in it, dark pebbles in the bed
-        (4,  6, "4"),
-        (5,  9, "4"),
-        (7,  4, "4"),
-        (9,  8, "4"),
-        (10, 6, "4"),
-        (8,  7, "g"),
-        (11, 9, "g"),
-        (9,  4, "0"),
-        (6, 11, "0"),
-        (10, 10, "0"),
-    ],
     # A skull adrift in miasma, something still lit behind the sockets.
     "cursed_core": [
         (3,  6, "0000"),
