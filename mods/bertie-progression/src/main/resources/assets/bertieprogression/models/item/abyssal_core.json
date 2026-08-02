@@ -2,5 +2,14 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "bertieprogression:item/abyssal_core"
+  },
+  "display": {
+    "gui": {
+      "scale": [
+        3,
+        3,
+        1
+      ]
+    }
   }
 }
