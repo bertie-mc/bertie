@@ -1,6 +1,6 @@
-package com.berlord.bertie_progression.fan;
+package io.github.bertie_mc.bertieprogression.fan;
 
-import com.berlord.bertie_progression.BertieProgression;
+import io.github.bertie_mc.bertieprogression.BertieProgression;
 import com.simibubi.create.api.registry.CreateRegistries;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
 import net.neoforged.neoforge.registries.DeferredHolder;

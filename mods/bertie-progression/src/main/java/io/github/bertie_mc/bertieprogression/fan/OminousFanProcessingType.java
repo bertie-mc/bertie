@@ -1,21 +1,23 @@
-package com.berlord.bertie_progression.fan;
+package io.github.bertie_mc.bertieprogression.fan;
 
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
+import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
+import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * A fifth Create fan-processing type, on top of the stock four (splashing = water, smoking = fire,
@@ -31,8 +33,11 @@ public class OminousFanProcessingType implements FanProcessingType {
 
     private static final ResourceLocation OMINOUS_FIRE =
             ResourceLocation.fromNamespaceAndPath("twilightforest", "ominous_fire");
-    private static final ResourceLocation STEELEAF_INGOT =
-            ResourceLocation.fromNamespaceAndPath("twilightforest", "steeleaf_ingot");
+
+    private static Optional<RecipeHolder<OminousFanRecipe>> find(ItemStack stack, Level level) {
+        return level.getRecipeManager()
+                .getRecipeFor(ModRecipes.OMINOUS_FAN_TYPE.get(), new SingleRecipeInput(stack), level);
+    }
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
@@ -49,16 +54,15 @@ public class OminousFanProcessingType implements FanProcessingType {
 
     @Override
     public boolean canProcess(ItemStack stack, Level level) {
-        return stack.is(ItemTags.LEAVES);
+        return find(stack, level).isPresent();
     }
 
     @Override
     public List<ItemStack> process(ItemStack stack, Level level) {
-        Item out = BuiltInRegistries.ITEM.getOptional(STEELEAF_INGOT).orElse(Items.AIR);
-        if (out == Items.AIR) {
-            return Collections.emptyList();
-        }
-        return List.of(new ItemStack(out, 1));
+        return find(stack, level)
+                .map(h -> List.of(h.value().assemble(new SingleRecipeInput(stack),
+                        level.registryAccess())))
+                .orElse(Collections.emptyList());
     }
 
     @Override

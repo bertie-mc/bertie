@@ -20,7 +20,8 @@ public final class BertieProgression {
         ModItems.TABS.register(modBus);
         ModAttachments.ATTACHMENTS.register(modBus);
         ModRecipes.SERIALIZERS.register(modBus);
-        com.berlord.bertie_progression.fan.ModFanProcessing.TYPES.register(modBus);
+        ModRecipes.TYPES.register(modBus);
+        io.github.bertie_mc.bertieprogression.fan.ModFanProcessing.TYPES.register(modBus);
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
 

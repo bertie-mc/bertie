@@ -2188,6 +2188,16 @@ write("data/bertieprogression/advancement/copper_pickaxe_head.json", {
 write("data/twilightforest/tags/item/portal/activator.json",
       {"replace": True, "values": [{"id": "bertieprogression:twilight_concord", "required": False}]})
 
+# --- Ominous-fire fan processing (berlord 2026-08-01). Create's four fan types are water, fire,
+#     soul fire and lava; this is a fifth, on Twilight Forest's Ominous Fire, registered into
+#     CreateRegistries.FAN_PROCESSING_TYPE. A real recipe type rather than a hard-coded pair, so
+#     it is data-driven and a recipe viewer can be pointed at it. One entry for now. ---
+write(f"{R}/ominous_fan/steeleaf_from_leaves.json",
+      {"neoforge:conditions": conds("twilightforest", "create"),
+       "type": "bertieprogression:ominous_fan",
+       "ingredient": {"tag": "minecraft:leaves"},
+       "result": {"id": "twilightforest:steeleaf_ingot", "count": 1}})
+
 # ================================================================ batch 19 (berlord 2026-07-31)
 
 # --- Ur-Ghast Trophy duplication, on the Spirit Altar. One trophy in, two out: the trophy is the

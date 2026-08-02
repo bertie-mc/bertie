@@ -7,6 +7,7 @@ import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiM
 import io.github.bertie_mc.emi.integration.cataclysm.CataclysmEmiModule;
 import io.github.bertie_mc.emi.integration.cognition.CognitionEmiModule;
 import io.github.bertie_mc.emi.integration.create.CreateEmiModule;
+import io.github.bertie_mc.emi.integration.bertieprogression.OminousFanEmiModule;
 import io.github.bertie_mc.emi.integration.cuisinedelight.CuisineDelightEmiModule;
 import io.github.bertie_mc.emi.integration.dungeonsdelight.DungeonsDelightEmiModule;
 import io.github.bertie_mc.emi.integration.enderio.EnderIOEmiModule;
@@ -69,6 +70,7 @@ public class BerlordsEmiPlugin implements EmiPlugin {
         success &= run("betterarcheology", () -> BetterArcheologyEmiModule.register(registry));
         success &= run("l2complements", () -> L2ComplementsEmiModule.register(registry));
         success &= run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
+        success &= run("bertieprogression", () -> OminousFanEmiModule.register(registry));
         if (success) {
             LOGGER.info("Berlords EMI integrations registered successfully");
         }
