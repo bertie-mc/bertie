@@ -1,0 +1,24 @@
+name: Run affected Gradle checks
+description: Build and unit-test affected components in one Gradle invocation
+
+inputs:
+  build:
+    description: Build matrix JSON from bertie-ci plan
+    required: true
+  unit:
+    description: Unit-test matrix JSON from bertie-ci plan
+    required: true
+  client:
+    description: Client-suite matrix JSON from bertie-ci plan
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Run combined Gradle tasks
+      shell: bash
+      env:
+        BERTIE_BUILD_PLAN: ${{ inputs.build }}
+        BERTIE_UNIT_PLAN: ${{ inputs.unit }}
+        BERTIE_CLIENT_PLAN: ${{ inputs.client }}
+      run: python3 "$GITHUB_ACTION_PATH/run.py"

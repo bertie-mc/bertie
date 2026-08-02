@@ -167,6 +167,77 @@ def test_workspace_overlay_skips_mods_not_installed_on_instance_side(
     assert installed == [("common", "common-old.jar")]
 
 
+def test_gradle_check_combines_tasks_and_stages_outputs(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    first = SimpleNamespace(
+        subject="first",
+        kind="neoforge-mod",
+        gradle_project=":mods:first",
+        path=tmp_path / "mods" / "first",
+    )
+    second = SimpleNamespace(
+        subject="second",
+        kind="neoforge-mod",
+        gradle_project=":mods:second",
+        path=tmp_path / "mods" / "second",
+    )
+    for component in (first, second):
+        libraries = component.path / "build" / "libs"
+        libraries.mkdir(parents=True)
+        (libraries / f"{component.subject}.jar").write_bytes(b"production")
+    test_libraries = second.path / "build" / "test-libs"
+    test_libraries.mkdir()
+    (test_libraries / "second-client-tests.jar").write_bytes(b"test")
+    components = {component.subject: component for component in (first, second)}
+    workspace = SimpleNamespace(
+        root=tmp_path,
+        component=lambda subject: components[subject],
+    )
+    observed: dict[str, object] = {}
+    monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+    monkeypatch.setattr(
+        cli,
+        "run_gradle",
+        lambda project, java, tasks: observed.update(
+            {"project": project, "java": java, "tasks": tasks}
+        ),
+    )
+    args = cli._parser().parse_args(
+        [
+            "gradle-check",
+            "--workspace",
+            str(tmp_path),
+            "--build-component",
+            "second",
+            "--build-component",
+            "first",
+            "--unit-component",
+            "first",
+            "--client-test-component",
+            "second",
+        ]
+    )
+
+    cli._run_gradle_check(args)
+
+    assert observed == {
+        "project": tmp_path,
+        "java": tmp_path / "jdk",
+        "tasks": (
+            ":mods:first:assemble",
+            ":mods:second:assemble",
+            ":mods:first:test",
+            ":mods:second:clientTestJar",
+        ),
+    }
+    assert (tmp_path / ".bertie-ci" / "artifacts" / "first" / "first.jar").is_file()
+    assert (
+        tmp_path / ".bertie-ci" / "client-test" / "second" / "client-test-mod.jar"
+    ).is_file()
+
+
 def test_streams_survive_characters_outside_the_ansi_code_page(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:

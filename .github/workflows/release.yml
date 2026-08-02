@@ -21,9 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: Set up dependencies
-        uses: ./.github/actions/setup
-
       - name: Plan release
         id: plan
         uses: ./.github/actions/release-plan
@@ -42,6 +39,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
+        with:
+          gradle-cache: true
+          gradle-cache-read-only: false
 
       - name: Build mod
         uses: ./.github/actions/build-mod

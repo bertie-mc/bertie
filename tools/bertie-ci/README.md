@@ -179,9 +179,13 @@ apply to the prepared instance's side.
 
 ## GitHub Actions adapters
 
-Every job calls the shared setup action once. It installs Nix, builds the pinned command
-environment once, and adds `bertie-ci` and Python to `PATH`; operational actions do not
-re-evaluate Nixpkgs.
+Planning actions run the provider-neutral Python source directly and do not install the
+runtime toolchain. Jobs that need it call the shared setup action once; it installs Nix,
+restores the GitHub-backed Nix cache, builds the pinned command environment, and adds
+`bertie-ci` and Python to `PATH`. Gradle jobs additionally restore a Gradle User Home
+cache. The monorepo check adapter combines affected assemble, unit-test, and client-test
+JAR tasks in one Gradle invocation while the public commands remain independently
+composable.
 
 Tagged v5 actions live under:
 

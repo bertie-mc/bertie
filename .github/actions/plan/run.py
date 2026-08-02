@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -12,7 +13,13 @@ def enabled(name: str) -> bool:
 
 
 def main() -> None:
-    command = ["bertie-ci", "plan", "--workspace", "."]
+    repository = Path(__file__).resolve().parents[3]
+    source = repository / "tools" / "bertie-ci" / "src"
+    environment = os.environ.copy()
+    environment["PYTHONPATH"] = os.pathsep.join(
+        filter(None, (str(source), environment.get("PYTHONPATH", "")))
+    )
+    command = [sys.executable, "-m", "bertie_ci.cli", "plan", "--workspace", "."]
     base = os.environ.get("BERTIE_PLAN_BASE", "")
     if base and set(base) != {"0"}:
         command.extend(("--base", base, "--head", os.environ["BERTIE_PLAN_HEAD"]))
@@ -27,6 +34,7 @@ def main() -> None:
     result = subprocess.run(
         command,
         check=True,
+        env=environment,
         stdout=subprocess.PIPE,
         text=True,
     )

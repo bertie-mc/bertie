@@ -179,6 +179,21 @@ def _parser() -> argparse.ArgumentParser:
     _add_project(unit_test, "mod checkout")
     _add_component_target(unit_test, many=True, allow_all_mods=True)
 
+    gradle_check = subcommands.add_parser(
+        "gradle-check",
+        help="run affected workspace build and unit tasks in one Gradle invocation",
+    )
+    gradle_check.add_argument("--workspace", type=Path, default=Path.cwd())
+    gradle_check.add_argument("--build-component", action="append", default=[])
+    gradle_check.add_argument("--unit-component", action="append", default=[])
+    gradle_check.add_argument("--client-test-component", action="append", default=[])
+    gradle_check.add_argument(
+        "--artifact-dir", type=Path, default=Path(".bertie-ci/artifacts")
+    )
+    gradle_check.add_argument(
+        "--client-test-dir", type=Path, default=Path(".bertie-ci/client-test")
+    )
+
     gametest = subcommands.add_parser(
         "gametest", help="run NeoForge GameTests in the Gradle development runtime"
     )
@@ -474,6 +489,66 @@ def _run_unit_test(args: argparse.Namespace) -> None:
     print(f"JVM unit tests passed: {subjects}.", flush=True)
 
 
+def _gradle_check_components(
+    workspace: Workspace, subjects: list[str]
+) -> tuple[Component, ...]:
+    components = tuple(
+        workspace.component(subject) for subject in dict.fromkeys(subjects)
+    )
+    invalid = [
+        component.subject
+        for component in components
+        if component.kind != "neoforge-mod"
+    ]
+    if invalid:
+        raise RuntimeError(
+            f"Expected NeoForge mod component(s), got: {', '.join(invalid)}"
+        )
+    return tuple(sorted(components, key=lambda component: component.subject))
+
+
+def _run_gradle_check(args: argparse.Namespace) -> None:
+    workspace = Workspace.find(args.workspace)
+    builds = _gradle_check_components(workspace, args.build_component)
+    units = _gradle_check_components(workspace, args.unit_component)
+    client_tests = _gradle_check_components(workspace, args.client_test_component)
+    tasks = tuple(
+        dict.fromkeys(
+            [task_path(component.gradle_project, "assemble") for component in builds]
+            + [task_path(component.gradle_project, "test") for component in units]
+            + [
+                task_path(component.gradle_project, "clientTestJar")
+                for component in client_tests
+            ]
+        )
+    )
+    if not tasks:
+        raise RuntimeError("gradle-check requires at least one component task")
+
+    java = load_java()
+    run_gradle(workspace.root, java.parent.parent, tasks)
+
+    artifact_root = _under_project(workspace.root, args.artifact_dir)
+    for component in builds:
+        artifact = stage_artifact(
+            find_artifact(component.path, None), artifact_root / component.subject
+        )
+        print(f"Built {component.subject}: {artifact}", flush=True)
+
+    client_test_root = _under_project(workspace.root, args.client_test_dir)
+    for component in client_tests:
+        artifact = stage_artifact(
+            find_artifact(component.path, Path("build/test-libs")),
+            client_test_root / component.subject,
+            "client-test-mod.jar",
+        )
+        print(f"Built {component.subject} client test mod: {artifact}", flush=True)
+
+    if units:
+        subjects = ", ".join(component.subject for component in units)
+        print(f"JVM unit tests passed: {subjects}.", flush=True)
+
+
 def _runtime_context(
     descriptor: Path, work: Path | None, cache: Path | None, side: str
 ) -> RuntimeContext:
@@ -600,6 +675,8 @@ def main() -> None:
                 _run_build_client_test_mod(args)
             case "unit-test":
                 _run_unit_test(args)
+            case "gradle-check":
+                _run_gradle_check(args)
             case "gametest":
                 _run_gametest(args)
             case "prepare-mod-instance":

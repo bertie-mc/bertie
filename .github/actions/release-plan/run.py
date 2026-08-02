@@ -4,13 +4,22 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 
 def main() -> None:
+    repository = Path(__file__).resolve().parents[3]
+    source = repository / "tools" / "bertie-ci" / "src"
+    environment = os.environ.copy()
+    environment["PYTHONPATH"] = os.pathsep.join(
+        filter(None, (str(source), environment.get("PYTHONPATH", "")))
+    )
     result = subprocess.run(
         [
-            "bertie-ci",
+            sys.executable,
+            "-m",
+            "bertie_ci.cli",
             "release-plan",
             "--workspace",
             ".",
@@ -19,6 +28,7 @@ def main() -> None:
         ],
         check=True,
         capture_output=True,
+        env=environment,
         text=True,
     )
     plan = json.loads(result.stdout)
