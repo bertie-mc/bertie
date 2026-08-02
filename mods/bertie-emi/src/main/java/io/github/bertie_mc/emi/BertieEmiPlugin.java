@@ -31,9 +31,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Entry point for all of bertie's native EMI machine integrations. EMI discovers this class by an
- * ASM scan for the {@link EmiEntrypoint} annotation — no service file or mods.toml entrypoint, and
- * the annotation must stay RuntimeInvisible (do NOT add {@code @Retention(RUNTIME)}).
+ * Entry point for Bertie EMI's integrations targeting third-party mods. EMI discovers this
+ * class by an ASM scan for the {@link EmiEntrypoint} annotation — no service file or mods.toml
+ * entrypoint, and the annotation must stay RuntimeInvisible (do NOT add
+ * {@code @Retention(RUNTIME)}).
  *
  * <p>Each mod's module is gated behind {@link ModList#isLoaded(String)} and wrapped in try/catch so
  * the single jar is safe with any subset of the target mods installed, and one broken integration

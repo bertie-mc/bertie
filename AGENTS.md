@@ -10,6 +10,8 @@ Never force-push. Leave a clean tree and exactly one worktree. Use Conventional 
 ## Repository boundaries
 
 - `mods/` contains the owned NeoForge mods in the current Minecraft 1.21.1 train.
+- `mods/bertie-emi/` is only for integrations targeting third-party mods.
+  Every owned mod keeps its native EMI integration in its own module; never add it to Bertie EMI.
 - `pack/` is a packwiz manifest. Never commit mod JARs or generated Minecraft instances.
 - `build-logic/` owns shared Gradle mechanics. Projects opt into small convention plugins;
   do not add root `allprojects` or `subprojects` configuration.

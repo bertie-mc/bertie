@@ -62,7 +62,7 @@ Test classes are not included in the release JAR.
 
 ## Known integration note
 
-Bertie's native EMI category handles variable-size ritual input groups. F&A's
+Bertie EMI's Forbidden & Arcanus category handles variable-size ritual input groups. F&A's
 optional built-in JEI screen still draws only eight pedestal slots, so rituals
 with more than eight total displayed items should be viewed through EMI unless
 that JEI layout is patched separately.

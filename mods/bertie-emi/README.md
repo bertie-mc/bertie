@@ -1,6 +1,8 @@
 # Bertie EMI
 
-Native EMI recipe-viewer plugins for third-party machine mods that only ship JEI plugins.
+Native EMI recipe-viewer plugins for third-party mods that only ship JEI plugins.
+This is not a shared integration module for Bertie-owned mods: each owned mod ships any native EMI
+integration from its own module.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge

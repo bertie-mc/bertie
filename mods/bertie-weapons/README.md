@@ -144,8 +144,8 @@ to be copied into `run/mods/`.
 - **Crafting-table path only.** Malum's Spirit Altar and Hephaestus Forge use their own recipe
   types, not crafting recipes, so each needs a thin adapter calling the same `WeaponUpgrades` entry
   points. The logic is already station-agnostic for exactly this reason.
-- **No EMI/JEI display.** `CustomRecipe`s have no fixed inputs to show. Needs a hand-written
-  category, most naturally in the existing `bertieemi` project.
+- **No EMI display.** `CustomRecipe`s have no fixed inputs to show. Bertie Weapons needs its own
+  native, hand-written EMI category in this module.
 - **No custom tooltip.** Upgrades render as Iron's stock attribute lines, so a weapon mid-ring shows
   eight separate elemental entries with no "tier 3, 5/8 elements" summary.
 - **Uniques are deliberately kept out of `#irons_spellbooks:upgrade_whitelist`.** Adding them would
