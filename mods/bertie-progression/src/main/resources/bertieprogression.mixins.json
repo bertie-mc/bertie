@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "bertieprogression.refmap.json",
   "mixins": [
+    "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin"
   ],
   "injectors": {
