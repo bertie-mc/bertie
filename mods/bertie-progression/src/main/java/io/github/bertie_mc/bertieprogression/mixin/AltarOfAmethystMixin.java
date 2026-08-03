@@ -43,9 +43,10 @@ public abstract class AltarOfAmethystMixin {
     @Inject(method = "cookingTick", at = @At("HEAD"), cancellable = true, remap = false)
     private static void bertieprogression$gate(Level level, BlockPos pos, BlockState state,
             @Coerce Object altar, CallbackInfo ci) {
-        if (level.isClientSide) {
-            return;
-        }
+        // Runs on BOTH sides deliberately. Skipping the client let it keep ticking while the
+        // server was cancelled: the client ran the craft to completion and drew the altar's beam
+        // for a few seconds until a sync packet reset it (berlord 2026-08-04). Every input here -
+        // day time, sky access, biome, moon phase - is available client-side, so both sides agree.
         if (AltarOfAmethystRules.speedAt(level, pos) == AltarOfAmethystRules.STOPPED) {
             ci.cancel();
         }
@@ -58,9 +59,8 @@ public abstract class AltarOfAmethystMixin {
     @Inject(method = "cookingTick", at = @At("TAIL"), remap = false)
     private static void bertieprogression$accelerate(Level level, BlockPos pos, BlockState state,
             @Coerce Object altar, CallbackInfo ci) {
-        if (level.isClientSide) {
-            return;
-        }
+        // Both sides, for the same reason as the gate: a client that advances at a different rate
+        // than the server renders progress the server does not have.
         float speed = AltarOfAmethystRules.speedAt(level, pos);
         if (speed <= 1.0F) {
             return;

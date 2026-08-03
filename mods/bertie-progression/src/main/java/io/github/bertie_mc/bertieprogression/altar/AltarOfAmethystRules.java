@@ -38,20 +38,20 @@ public final class AltarOfAmethystRules {
      * <p>1.0 is Cataclysm's stock rate.
      */
     public static float speedAt(Level level, BlockPos pos) {
-        if (!isNight(level)) {
-            return STOPPED;
-        }
         boolean lush = level.getBiome(pos).is(Biomes.LUSH_CAVES);
         // Beacon-style: the check is on the column above the block, not the block itself.
         boolean sky = level.canSeeSky(pos.above());
+        boolean night = isNight(level);
 
         if (!lush) {
-            // Out in the open the sky is mandatory, and the moon is the only modifier.
-            return sky ? moonMultiplier(level) : STOPPED;
+            // Out in the open: night AND sky are both mandatory, and the moon is the only modifier.
+            return night && sky ? moonMultiplier(level) : STOPPED;
         }
-        // Buried in a lush cave the sky requirement lifts and the moon stops mattering: a flat 2x.
-        // Open to the sky as well and both stack, so a full moon over a lush cave is 4x.
-        return sky ? 2.0F * moonMultiplier(level) : 2.0F;
+        // A lush cave lifts BOTH the sky requirement and the night one (berlord 2026-08-04 -
+        // this reverses the earlier "night only everywhere" reading). Flat 2x on its own; the
+        // moon only stacks on top when the sky is actually open and it is actually night, so a
+        // full moon over an open-air lush cave is 4x.
+        return sky && night ? 2.0F * moonMultiplier(level) : 2.0F;
     }
 
     /**
