@@ -1,0 +1,16 @@
+# Candy Cavity is cut from the pack. The biome itself is switched off by the shipped
+# config/alexscaves_biome_generation/candy_cavity.json override; this closes the other way in.
+#
+# A Candy Cavity cave tablet found in a witch hut is the head of the whole chain - translate it at
+# a Spelunkery Table for the codex entry, craft the codex into a cave biome map. Zero here means no
+# tablet, so no codex entry and no map, and none of it can be reached even by accident.
+mod = "alexscaves"
+type = "COMMON"
+file = "alexscaves-general.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment.vanilla-changes]
+candy_cavity_loot_chance = 0.0
