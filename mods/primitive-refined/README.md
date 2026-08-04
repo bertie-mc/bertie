@@ -86,7 +86,7 @@ From the monorepo root inside `nix develop`:
 
 ```bash
 bertie-ci build --component primitive-refined --output-dir .bertie-ci/artifact
-bertie-ci unit-test --component primitive-refined
+gradle :mods:primitive-refined:test
 ```
 
 The unit suite covers the External Reader’s multi-provider storage semantics and its scan

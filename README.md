@@ -1,24 +1,13 @@
 # Bertie
 
-Bertie is a large exploration, technology, and magic modpack for Minecraft 1.21.1 on
-NeoForge. This repository contains its packwiz manifest, custom mods, shared Kotlin Gradle
-build logic, and the tools used to build, test, and release them.
+Bertie is an exploration, technology, and magic modpack for Minecraft 1.21.1 on
+NeoForge. This monorepo contains the pack, its custom mods, shared build and testing
+infrastructure, and the tools used to validate and release them.
 
-## Repository layout
+## Getting started
 
-- `mods/` — custom NeoForge mods, each with its own version and test descriptor; its runtime mod ID
-  is the directory basename with hyphens removed
-- `pack/` — the packwiz manifest and pack configuration
-- `build-logic/` — small, composable Gradle convention plugins
-- `tools/bertie-ci/` — provider-neutral build, test, instance, and release tooling
-- `.github/` — thin GitHub Actions adapters around `bertie-ci`
-
-`bertie-mod-atlas`, `bertie-progression-planning`, the organisation `.github`
-repository, and the `Nekos-Enchanted-Books` fork are maintained separately.
-
-## Development environment
-
-Install Git and [Nix](https://nixos.org/download/), then enter the pinned environment:
+Install Git and [Nix](https://nixos.org/download/), then enter the pinned development
+environment:
 
 ```bash
 git clone git@github.com:bertie-mc/bertie.git
@@ -26,41 +15,37 @@ cd bertie
 nix develop
 ```
 
-Nix supplies JDK 21, Gradle 8.14.4, Python, packwiz, GitHub tooling, and the pinned
-HeadlessMC runtime dependencies. The repository deliberately has no Gradle wrapper and
-does not download toolchains through Gradle.
+The environment supplies the repository's Java, Gradle, Python, packwiz, Wayland, and
+GitHub tooling. Run `nix flake check` to verify the development environment itself.
 
-Build and tests are separate operations:
+## Documentation
 
-```bash
-gradle :mods:berlords-carving:assemble
-gradle :mods:berlords-carving:test
-bertie-ci gametest --workspace . --component berlords-carving
-```
+- [Dependencies](docs/dependencies.md) — version metadata, the Minecraft artifact
+  manifest, runtime sides, lockfiles, verification metadata, and generated pack contents.
+- [Testing](docs/testing.md) — unit tests, vanilla/NeoForge GameTests, client tests,
+  full-pack integration, local execution, and CI Wayland.
+- [CI/CD](docs/cicd.md) — Gradle tasks, `bertie-ci` commands, change-based test planning,
+  GitHub workflows, diagnostics, pack exports, and releases.
+- [Pack maintenance and installation](pack/README.md) — the `pack` component.
+- [bertie-ci command reference](tools/bertie-ci/README.md).
 
-Project-owned suites live in each component's `bertie-ci.toml`. To inspect or run the
-same affected-component plan used by CI:
+Each owned mod also has a component README describing its behavior and development notes.
 
-```bash
-bertie-ci plan --workspace . --all
-nix flake check
-```
+## Repository layout
 
-This machine does not need a desktop. Linux client integration tests launch the real
-Minecraft client under Xvfb; server tests run without a GUI. Full-pack client and server
-suites are deliberately scheduled or manually dispatched because the pack is large.
+- `mods/` — owned NeoForge mods;
+- `pack/` — the full-pack Gradle test and packaging project;
+- `testing/` — shared GameTest reporting and client-test APIs/drivers;
+- `build-logic/` — Gradle convention plugins and pack generation;
+- `tools/bertie-ci/` — CI planning, task supervision, Wayland provisioning, and release
+  packaging;
+- `docs/` — developer documentation;
+- `.github/` — workflows and reusable actions that invoke Gradle and `bertie-ci`.
 
-See [bertie-ci](tools/bertie-ci/README.md) for the test model and
-[the pack README](pack/README.md) for pack maintenance.
-
-## Releases
-
-Components keep independent versions. Signed tags have the exact form
-`subject/vX.Y.Z`, for example `berlords-carving/v2.0.0`, `pack/v0.2.0`, or
-`bertie-ci/v5.0.0`. Releases are started manually after the required pipelines are green
-for the commit being tagged.
+`bertie-mod-atlas`, `bertie-progression-planning`, the organisation `.github`
+repository, and the `Nekos-Enchanted-Books` fork are maintained separately.
 
 ## Licensing
 
-Licensing is component-specific. Consult the `UNLICENSE`, `LICENSE`, and `NOTICE`
-files inside each component; no repository-root licence overrides them.
+Licensing is component-specific. Consult the `UNLICENSE`, `LICENSE`, and `NOTICE` files
+inside each component; no repository-root licence overrides them.

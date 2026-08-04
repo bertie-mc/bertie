@@ -50,15 +50,15 @@ datapack resource folder in this project is `structure` (singular).
 ```bash
 gradle :mods:hephaestus-architecture:assemble
 gradle :mods:hephaestus-architecture:test
-gradle :mods:hephaestus-architecture:clientTestJar
+gradle :mods:hephaestus-architecture:runGameTests
 ```
 
 Output:
 `build/libs/hephaestusarchitecture-0.1.0.jar`
 
-The JVM suite validates rotation and every shipped structure template. The test-only client mod
-checks that all F&A mixins still transform their upstream targets, then joins a world headlessly.
-Test classes are not included in the release JAR.
+The JVM suite validates rotation and every shipped structure template. The GameTest suite checks
+that all F&A mixins still transform their upstream targets on a dedicated server. Test classes
+are not included in the release JAR.
 
 ## Known integration note
 

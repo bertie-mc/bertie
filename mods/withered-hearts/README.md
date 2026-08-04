@@ -19,8 +19,6 @@ Releases use `withered-hearts/vX.Y.Z` tags on the
 ## Tests
 
 `gradle :mods:withered-hearts:test` covers Wither timing and per-heart consumption without Minecraft.
-`gradle :mods:withered-hearts:clientTestJar` builds a test-only mod used by the headless client suite to
-verify both HUD wrappers are woven into `Gui`; test code is excluded from releases.
 
 ## License
 

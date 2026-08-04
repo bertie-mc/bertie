@@ -250,11 +250,10 @@ nix develop -c gradle :mods:config-migrations:test
 nix develop -c gradle :mods:config-migrations:assemble
 ```
 
-The JVM suite owns merge and lifecycle semantics. Bertie CI also runs the production JAR in two
-clients: one with every optional integration absent, and one with the current real integration
-libraries. The latter seeds migration manifests, registers real configs through every supported
-library, joins an integrated server, and verifies the live values, persisted files, and version
-state produced by the client and server lifecycle hooks.
+The JVM suite owns merge and lifecycle semantics. The client suite loads the production mod code with
+the current real integration libraries, seeds migration manifests, registers real configs through
+every supported library, joins an integrated server, and verifies the live values, persisted files,
+and version state produced by the client and server lifecycle hooks.
 
 ## License
 

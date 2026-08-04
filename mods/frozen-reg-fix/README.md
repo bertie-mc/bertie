@@ -22,10 +22,9 @@ Patches a load-order bug in [Immersive Armors](https://www.curseforge.com/minecr
 
 ## Tests
 
-`gradle :mods:frozen-reg-fix:clientTestJar` builds a test-only client mod under `build/test-libs/`. The
-headless client suite loads the release JAR with Immersive Armors, reaches its post-load
-lifecycle, and verifies all ten expected armor materials are registered. Test code and
-resources are excluded from the release JAR.
+`gradle :mods:frozen-reg-fix:runGameTests` loads the mod with Immersive Armors on a
+dedicated GameTest server and verifies all ten expected armor materials are registered.
+Test code and resources are excluded from the release JAR.
 
 ## License
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).

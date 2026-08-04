@@ -20,8 +20,6 @@ An independent NeoForge port of **[Explosive Enhancement](https://github.com/Sup
 ## Tests
 
 `gradle :mods:explosive-enhancement:test` covers explosion sizing, placement, visibility, and particle-count policy.
-`gradle :mods:explosive-enhancement:clientTestJar` builds a test-only mod that verifies the packet-handler mixin in a
-headless client; it is excluded from releases.
 
 ## License
 

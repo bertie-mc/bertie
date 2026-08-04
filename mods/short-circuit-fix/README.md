@@ -20,11 +20,9 @@ alongside Short Circuit to have any effect.
 
 ## Testing
 
-The headless client suite loads the built release JAR with the real Short Circuit mod,
-then verifies that both affected blocks use the translucent render layer. Its test-only
-mod is produced by `gradle :mods:short-circuit-fix:clientTestJar` in `build/test-libs/`; it is never included in
-the release artifact. CI composes the same `bertie-ci` commands and Gradle task that can
-be run locally on a Nix-enabled headless machine.
+`gradle :mods:short-circuit-fix:runClientTests` loads the mod with the real Short Circuit
+runtime in a graphical Minecraft client, then verifies that both affected blocks use the
+translucent render layer. Client-test code is never included in the release artifact.
 
 ## License
 

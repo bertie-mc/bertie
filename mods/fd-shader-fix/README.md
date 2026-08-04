@@ -24,8 +24,7 @@ This is a runtime patch for *fdlib*. It wraps fdlib's post-shader init in a try/
 ## Tests
 
 `gradle :mods:fd-shader-fix:test` verifies that successful shader initialization is preserved and failures
-are reported without escaping. `gradle :mods:fd-shader-fix:clientTestJar` builds a test-only mod that checks
-the wrapper is applied to fdlib in a headless client; it is excluded from releases.
+are reported without escaping.
 
 ## License
 

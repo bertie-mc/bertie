@@ -16,7 +16,7 @@ Releases use `explode-to-mine/vX.Y.Z` tags on the
 
 ## Testing
 
-From the monorepo root, `bertie-ci unit-test --component explode-to-mine` boots NeoForge’s
+From the monorepo root, `gradle :mods:explode-to-mine:test` boots NeoForge’s
 test environment and verifies that
 each locked vanilla ore resolves to the intended registered cracked block while unrelated
 ores remain unchanged. CI runs this independently from artifact assembly.

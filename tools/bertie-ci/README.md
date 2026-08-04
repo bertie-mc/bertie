@@ -1,28 +1,24 @@
 # bertie-ci
 
-`bertie-ci` is the shared build and test interface for Bertie projects.
-The command owns repeatable mechanics—Gradle invocation, fixtures, instance assembly,
-process supervision, and result collection—while each project owns its suites and
-assertions. GitHub Actions is an adapter, not the implementation.
+`bertie-ci` turns the repository's component inventory and conventional test source
+sets into a CI plan. Gradle owns building and running tests; `bertie-ci` supervises the
+planned tasks, provides an isolated Wayland compositor when CI asks for one, and keeps
+pack/release packaging independent from testing.
 
 ```mermaid
 flowchart LR
-    D[Component descriptor] --> P[bertie-ci plan]
-    P --> B[assemble artifact]
-    P --> U[JVM tests]
-    P --> G[NeoForge GameTests]
-    B --> I[prepare instance]
-    I --> C[client world join]
-    I --> S[server command scenario]
-    B --> R[manual release]
+    S[src/test] --> P[bertie-ci plan]
+    G[src/gametest] --> P
+    C[src/clienttest] --> P
+    P --> T[exact Gradle task]
+    T --> R[test reports]
+    P --> W[client task in CI]
+    W --> X[headless Sway native Wayland]
 ```
 
-Build, unit tests, GameTests, runtime tests, exports, and publishing remain separate
-operations. They compose around explicit artifacts rather than rebuilding implicitly.
+## Environment
 
-## Linux setup
-
-From the Bertie monorepo:
+From the monorepo:
 
 ```bash
 nix develop
@@ -30,204 +26,134 @@ bertie-ci --help
 nix flake check
 ```
 
-Nix supplies the supported JDK, Gradle, packwiz, Python, Xvfb, HeadlessMC, and
-`mc-runtime-test` versions. For a standalone repository, install the tagged package:
+Nix supplies JDK 21, Gradle, packwiz, Sway, Mesa, and Python. A standalone repository
+can use the tagged package and GitHub Actions at `bertie-ci/v6.0.0`.
 
-```bash
-nix build 'github:bertie-mc/bertie?ref=bertie-ci/v5.0.0#bertie-ci' \
-  --no-link --print-out-paths
-```
+Native Windows can use an installed Python package plus JDK 21 and Gradle; see the
+[Windows guide](docs/windows.md).
 
-Native Windows uses the same Python command with explicitly supplied dependencies; see
-[the Windows guide](docs/windows.md).
+## Descriptors and discovery
 
-## Component descriptors
-
-A root [workspace descriptor](../../bertie-ci.toml) discovers component descriptors.
-A separate repository can place the same component-format `bertie-ci.toml` at its root;
-`bertie-ci` then treats it as a one-component workspace.
+The root [workspace descriptor](../../bertie-ci.toml) locates components and declares
+which shared paths affect Gradle projects or every component. A standalone repository
+may put a component descriptor at its root.
 
 ```toml
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "example-mod"
 kind = "neoforge-mod"
 gradle-project = ":mods:example-mod"
-mod-id = "example_mod"
-pack-metafile = "mods/example-mod.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "world-behavior"
-runner = "gametest"
-
-[[suite]]
-id = "client-contract"
-runner = "client"
-fixtures = ["required-library"]
-instance-files = "src/clientTest/instance"
-build-client-test-mod = true
-require-log = ["EXAMPLE_CLIENT_ASSERTIONS_OK"]
 ```
 
-Suites have stable names and select one modular runner:
+`version.file` is relative to the component. Owned mods read `mod_version` from
+`mod.properties`, the pack reads `version` from `pack.properties`, and bertie-ci reads its
+tool version from `pyproject.toml`. Component descriptors point to existing component
+metadata rather than duplicating a release version.
 
-- `unit` runs ordinary JVM tests.
-- `gametest` runs registered NeoForge GameTests in the development server.
-- `client` launches a production client and joins an integrated world. It can add a
-  project-owned client test mod, required log markers, and a minimum discovered GameTest
-  count.
-- `server` launches a production dedicated server with a required project-owned
-  HeadlessMC command-test JSON document. It may also require log markers.
-- `validate` validates a packwiz manifest without changing it.
+Test declarations are the source directories themselves:
 
-Runtime suite fields such as fixtures, timeout, memory, assertions, and command documents
-belong to the component descriptor. `automatic = false` keeps an expensive suite out of
-the affected-change plan while allowing scheduled and manual workflows to request it.
-For mod client and server suites, `instance-files` names a component directory whose
-contents are copied over the freshly prepared game directory before launch. This can
-provide test configs, migration state, worlds, or other runtime inputs.
+| Source directory | Planned task | Purpose |
+| --- | --- | --- |
+| `src/test` | `test` | JVM unit tests |
+| `src/gametest` | `runGameTests` | Vanilla/NeoForge GameTests |
+| `src/clienttest` | `runClientTests` | Client integration tests |
 
-The descriptor's `build-client-test-mod` option is intentionally client-specific. A
-server test artifact can still be supplied directly to the lower-level `server-test`
-command or action; a future declarative server artifact will get its own explicit build
-contract rather than reusing client terminology.
+The `pack` component follows the same conventions, so full-pack integration tests use
+the same semantic artifact inventory. Gradle gives GameTests the `server` plus `both`
+projection and client tests the `client` plus `both` projection. The generated packwiz
+tree is not used to construct test runtimes, and CI does not select dependencies.
 
-## Local commands
+## Commands
 
-Build and JVM tests are deliberately separate:
+Inspect the complete or affected plan:
 
 ```bash
-bertie-ci build --workspace . --component berlords-carving \
+bertie-ci plan --workspace . --all
+bertie-ci plan --workspace . --base origin/main --head HEAD
+```
+
+Each matrix entry contains an exact task path. Run one or combine several in a single
+Gradle process:
+
+```bash
+bertie-ci gradle-task --workspace . --task :mods:bertie-tiers:test
+bertie-ci gradle-task --workspace . \
+  --task :mods:bertie-tiers:test \
+  --task :mods:bertie-tiers:runGameTests
+```
+
+Local client tests use the current desktop normally:
+
+```bash
+gradle :mods:short-circuit-fix:runClientTests
+```
+
+Linux CI adds `--wayland` to `gradle-task`. bertie-ci owns the resulting graphical
+session: it starts Sway on wlroots' headless backend, disables Xwayland, uses software
+rendering, attaches its own persistent evdev/pc105/us virtual keyboard to the seat,
+passes the native Wayland environment to Gradle, and tears the session down when the
+task exits. The keyboard provides seat state without synthesizing input. The compositor
+exposes both `ext-data-control` and `wlr-data-control` for native clipboard clients. A
+Wayland-capable GLFW is selected for Minecraft through `JAVA_TOOL_OPTIONS`; Gradle tasks
+remain ordinary graphical tasks.
+
+Mod release artifacts and pack exports remain separate commands:
+
+```bash
+bertie-ci build --workspace . --component bertie-tiers \
   --output-dir .bertie-ci/artifacts
-bertie-ci unit-test --workspace . --component berlords-carving
-bertie-ci gametest --workspace . --component berlords-carving
-```
-
-`build` runs `assemble` and stages exactly one releasable JAR. `unit-test` runs
-`test`. `gametest` runs `runGameTestServer`, requires at least one discovered test,
-and checks the Minecraft log rather than trusting only the Gradle exit status.
-
-Production client testing builds once, prepares a side-specific instance, and consumes
-its relocatable descriptor:
-
-```bash
-bertie-ci build-client-test-mod --workspace . --component short-circuit-fix \
-  --output-dir .bertie-ci/client-test
-bertie-ci prepare-mod-instance --workspace . --component short-circuit-fix \
-  --artifact .bertie-ci/artifacts/short-circuit-fix --fixture short-circuit \
-  --instance-files src/clientTest/instance \
-  --side client --output-dir .bertie-ci/client
-bertie-ci client-test --instance .bertie-ci/client/instance.json \
-  --test-mod .bertie-ci/client-test/client-test-mod.jar \
-  --require-log SHORT_CIRCUIT_RENDER_LAYERS_OK
-```
-
-The client runner uses HeadlessHQ `mc-runtime-test` for launch, world creation, player
-join, timeout, and clean exit. On Linux, `bertie-ci` starts Xvfb directly, so no physical
-display or desktop session is needed. Test NBT and other fixtures stay in the component's
-test resources and never enter the release JAR.
-
-A server suite supplies its own command scenario:
-
-```bash
-bertie-ci server-test --instance .bertie-ci/server/instance.json \
-  --command-test tests/runtime/server-readiness.json
-```
-
-This keeps “ready” and future scenario assertions project-owned instead of hardcoding
-them in the shared runner.
-
-### Fixtures
-
-`prepare-mod-instance` accepts canonical pack mod names or aggregate profiles:
-
-```bash
-bertie-ci prepare-mod-instance --workspace . --component forge-ink \
-  --artifact .bertie-ci/artifacts/forge-ink \
-  --fixture forbidden-arcanus,irons-spells \
-  --side client --output-dir .bertie-ci/client
-```
-
-If `pack/mods/<name>.pw.toml` exists, the name resolves directly; one-to-one profiles are
-unnecessary. [`fixtures/profiles.json`](fixtures/profiles.json) contains only useful
-multi-mod dependency closures. The official packwiz installer applies the canonical
-filename, hash, and physical side.
-
-### Full packs
-
-Pack preparation produces the same instance descriptor as mod preparation, so the
-runtime commands make no assumption about which produced it:
-
-```bash
 bertie-ci pack-validate --workspace . --component pack
-bertie-ci prepare-pack-instance --workspace . --component pack \
-  --side client --output-dir .bertie-ci/pack-client
-bertie-ci client-test --instance .bertie-ci/pack-client/instance.json \
-  --max-memory 10G
+bertie-ci pack-export-client --workspace . --component pack \
+  --output .bertie-ci/release/bertie.mrpack
+bertie-ci pack-export-server --workspace . --component pack \
+  --output .bertie-ci/release/bertie-server.zip
 ```
 
-`overlay-components` replaces released owned mods with current workspace artifacts in
-an ephemeral pack instance. It reads each pack metafile and skips artifacts that do not
-apply to the prepared instance's side.
+Each pack command first runs the component's exact `generatePackwiz` Gradle task and
+then consumes `pack/build/packwiz`. Gradle reads the semantic
+[`minecraft-artifacts.toml`](../../gradle/minecraft-artifacts.toml), applies the global
+provider policies and artifact-side metadata, builds the owned project JARs, and generates
+one side-aware packwiz tree. Gradle does not execute packwiz. `bertie-ci` neither
+resolves dependencies nor selects physical sides; after generation it refreshes a
+temporary copy for validation, asks packwiz to create the Modrinth archive, or packages
+the generated projection with the server bootstrap scripts. Server export is the only
+operation that needs the pinned packwiz-installer JAR. Owned project JARs are already
+present in the generated tree, so exports do not download or compare separately
+published owned-mod releases.
 
-## GitHub Actions adapters
+## GitHub Actions
 
-Planning actions run the provider-neutral Python source directly and do not install the
-runtime toolchain. Jobs that need it call the shared setup action once; it installs Nix,
-restores the GitHub-backed Nix cache, builds the pinned command environment, and adds
-`bertie-ci` and Python to `PATH`. Gradle jobs additionally restore a Gradle User Home
-cache. The monorepo check adapter combines affected assemble, unit-test, and client-test
-JAR tasks in one Gradle invocation while the public commands remain independently
-composable.
+The main workflow uses `plan` to produce `build`, `unit`, `gametest`, `client`, and
+`validate` matrices. Build and unit tasks may share one Gradle invocation. GameTests and
+client tests run as independent planned tasks; only client CI jobs request a headless
+Wayland session.
 
-Tagged v5 actions live under:
+Reusable actions include:
 
-- `bertie-mc/bertie/.github/actions/setup@bertie-ci/v5.0.0`
-- `build-mod`, `unit-test`, `gametest`, and `build-client-test-mod`
-- `prepare-mod-instance`, `prepare-pack-instance`, and `overlay-components`
-- `client-test` and `server-test`
-- `pack-validate`, `pack-export-client`, and `pack-export-server`
-- `plan`, `release-plan`, and `github-release`
+- `setup` for the Nix-provided command environment and optional Gradle cache;
+- `plan` for matrix generation;
+- `gradle-task` for exact task execution and optional Wayland;
+- `build-mod`, the pack validation/export actions, and release actions.
 
-Reusable workflows in `.github/workflows` provide GitHub-specific jobs for standalone
-repositories:
+Reusable workflows provide `build-mod.yml`, `unit-test.yml`, `gametest.yml`,
+`client-test.yml`, and `github-release.yml` for standalone repositories.
 
-- `build-mod.yml`
-- `unit-test.yml`
-- `gametest.yml`
-- `client-test.yml`
-- `server-test.yml`
-- `github-release.yml`
+## Environment variables
 
-Each accepts the caller's component subject and reads that repository's descriptor.
-Build workflows upload artifacts; test and release workflows consume them. Publishing
-never rebuilds. Repositories retain their own triggers and job dependency graph.
+| Variable | Purpose |
+| --- | --- |
+| `BERTIE_CI_JAVA_HOME` | JDK root; takes precedence over `JAVA_HOME` |
+| `BERTIE_CI_GRADLE` | Gradle executable |
+| `BERTIE_CI_SWAY` | Sway executable for `gradle-task --wayland` |
+| `BERTIE_CI_WAYLAND_SEAT_KEYBOARD` | bertie-ci's persistent virtual keyboard helper for the isolated Wayland seat |
+| `BERTIE_CI_WAYLAND_GLFW` | Wayland-capable GLFW shared library used by Minecraft in isolated Wayland runs |
+| `BERTIE_CI_PACKWIZ` | packwiz executable |
+| `BERTIE_CI_PACKWIZ_INSTALLER_JAR` | JAR used only for server-pack export |
 
-## Releases
-
-`release-plan` accepts only `subject/vX.Y.Z` and verifies the tag version against the
-component's declared version. The monorepo release workflow then selects exactly one
-path:
-
-- a mod is assembled and its JAR is published;
-- the pack's client and server exports are produced independently and published together;
-- `bertie-ci` receives a source-only release used to version actions and reusable
-  workflows.
-
-Tests are not implicitly chained into release jobs. Releases are manual, and the
-maintainer confirms the required pipelines for the exact commit before creating a signed
-tag.
-
-## Pins
-
-The current toolchain is Minecraft 1.21.1, NeoForge 21.1.233, Gradle 8.14.4, Java 21,
-HeadlessMC 2.10.0, `mc-runtime-test` 4.5.1, and packwiz-installer 0.5.14. Third-party
-JARs are fixed-output Nix inputs with verified SHA-256 hashes. The canonical fixture pack
-is the monorepo's `pack/` tree, built into the package by Nix.
+`release-plan` accepts only `subject/vX.Y.Z` and verifies the tag against the
+component's declared version. Release jobs package existing component outputs; they do
+not define or run test suites.

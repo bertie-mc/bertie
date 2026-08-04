@@ -23,8 +23,7 @@ Optional integration with Sophisticated Backpacks (slot-aware feeding upgrades).
 `gradle :mods:berlords-food-system:assemble` builds the JAR without running tests. `sophisticated-core`, used by the
 optional Sophisticated Backpacks integration, resolves from Modrinth's Maven repository.
 
-`gradle :mods:berlords-food-system:test` covers stomach state and buff configuration. CI also loads the real Sophisticated
-Backpacks integration in a headless client, verifies every mixin target, and joins a world.
+`gradle :mods:berlords-food-system:test` covers stomach state and buff configuration.
 
 ## License
 

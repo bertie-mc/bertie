@@ -92,7 +92,7 @@ Releases use `fart-bomb/vX.Y.Z` tags on the
 ## Tests
 
 `gradle :mods:fart-bomb:test` covers sound recognition, detonation decisions, and explosion placement.
-`gradle :mods:fart-bomb:runGameTestServer` verifies the server mixins, fiery block tags, and a real
+`gradle :mods:fart-bomb:runGameTests` verifies the server mixins, fiery block tags, and a real
 burning-player detonation. GameTest code is kept out of the release JAR.
 
 ## License

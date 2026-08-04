@@ -23,7 +23,8 @@ From the monorepo root, enter the pinned environment and run the module tasks:
 nix develop
 gradle :mods:berlords-carving:assemble
 gradle :mods:berlords-carving:test
-gradle :mods:berlords-carving:runGameTestServer
+gradle :mods:berlords-carving:runGameTests
+gradle :mods:berlords-carving:runClientTests
 ```
 
 The JAR is written to `mods/berlords-carving/build/libs/`. Optional dependencies resolve from

@@ -66,7 +66,7 @@ Run these from the monorepo root inside `nix develop`. The JAR lands in
 `gradle :mods:bertie-progression:test` validates every JSON resource and local model texture reference, the current Brick
 Forge bed table, and catalyst recipe remainder behavior.
 
-Toolchain is the shared bertie harness: NeoForge `21.1.217`, ModDevGradle `2.0.134`,
+Toolchain is the shared Bertie harness: NeoForge `21.1.233`, ModDevGradle `2.0.134`,
 Gradle `8.14.4` from Nixpkgs.
 
 ## Releasing
