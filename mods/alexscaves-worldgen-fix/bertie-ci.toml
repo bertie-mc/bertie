@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "alexscaves-worldgen-fix"
+kind = "neoforge-mod"
+gradle-project = ":mods:alexscaves-worldgen-fix"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

@@ -18,6 +18,7 @@ include(
     ":testing:client-test-api",
     ":testing:client-test-driver",
     ":testing:gametest-driver",
+    ":mods:alexscaves-worldgen-fix",
     ":mods:berlords-food-system",
     ":mods:bertie-blackhole",
     ":mods:bertie-emi",
