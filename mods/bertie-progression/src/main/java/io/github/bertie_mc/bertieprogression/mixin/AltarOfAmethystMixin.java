@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 /**
@@ -18,15 +19,17 @@ import net.minecraft.world.level.block.state.BlockState;
  * <p>Targeted by STRING: Cataclysm is an optional runtime dependency and is not on this module's
  * compile classpath, so there is no {@code AltarOfAmethyst_Block_Entity} type to name here.
  *
- * <p><b>That is also why the altar parameter is {@link Coerce} {@code Object}.</b> Mixin matches an
- * injector against the target method's EXACT descriptor, and declaring the parameter as its real
- * supertype {@code BlockEntity} is not close enough - the whole mixin is refused:
+ * <p><b>That is also why the altar parameter carries {@link Coerce}.</b> Mixin matches an injector
+ * against the target method's EXACT descriptor, so a bare {@code BlockEntity} - the real supertype -
+ * is not close enough and the whole mixin is refused:
  * <pre>
  * InvalidInjectionException: Invalid descriptor ... Expected (...AltarOfAmethyst_Block_Entity...)
  *                                                   but found (...BlockEntity...)
  * </pre>
  * That refusal took the altar's block entity down with it and its UI stopped opening (2026-08-04).
- * {@code @Coerce} is the supported way to accept a type you cannot reference.
+ * {@code @Coerce} is the supported way to accept a type you cannot reference, and it takes any
+ * supertype - {@code BlockEntity} here, on berlord's call (2026-08-04). {@code Object} also works
+ * and is the fallback if Mixin ever refuses to widen this one.
  *
  * <p>Listed in the common {@code mixins} array, never in {@code client}/{@code server} - NeoForge
  * silently fails to apply those sub-array entries (docs/gotchas.md, explosive-enhancement
@@ -42,7 +45,7 @@ public abstract class AltarOfAmethystMixin {
      */
     @Inject(method = "cookingTick", at = @At("HEAD"), cancellable = true, remap = false)
     private static void bertieprogression$gate(Level level, BlockPos pos, BlockState state,
-            @Coerce Object altar, CallbackInfo ci) {
+            @Coerce BlockEntity altar, CallbackInfo ci) {
         // Runs on BOTH sides deliberately. Skipping the client let it keep ticking while the
         // server was cancelled: the client ran the craft to completion and drew the altar's beam
         // for a few seconds until a sync packet reset it (berlord 2026-08-04). Every input here -
@@ -58,7 +61,7 @@ public abstract class AltarOfAmethystMixin {
      */
     @Inject(method = "cookingTick", at = @At("TAIL"), remap = false)
     private static void bertieprogression$accelerate(Level level, BlockPos pos, BlockState state,
-            @Coerce Object altar, CallbackInfo ci) {
+            @Coerce BlockEntity altar, CallbackInfo ci) {
         // Both sides, for the same reason as the gate: a client that advances at a different rate
         // than the server renders progress the server does not have.
         float speed = AltarOfAmethystRules.speedAt(level, pos);
