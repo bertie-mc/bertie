@@ -7,6 +7,10 @@ from pathlib import Path
 from .process import run
 
 
+def _enabled(environment: Mapping[str, str], name: str) -> bool:
+    return environment.get(name, "").lower() in {"1", "true", "yes"}
+
+
 def task_path(gradle_project: str | None, task: str) -> str:
     if gradle_project is None:
         return task
@@ -22,15 +26,17 @@ def run_gradle(
     timeout_seconds: int | None = None,
     environment: Mapping[str, str] | None = None,
 ) -> None:
+    selected_environment = (
+        dict(environment) if environment is not None else dict(os.environ)
+    )
     command: list[str | Path] = [
         os.environ.get("BERTIE_CI_GRADLE", "gradle"),
         *tasks,
         "--no-daemon",
         "--stacktrace",
     ]
-    selected_environment = (
-        dict(environment) if environment is not None else dict(os.environ)
-    )
+    if _enabled(selected_environment, "BERTIE_CI_GRADLE_OFFLINE"):
+        command.append("--offline")
     selected_environment["JAVA_HOME"] = os.fspath(java_home)
     run(
         command,

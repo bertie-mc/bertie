@@ -50,6 +50,32 @@ def test_task_path_supports_root_and_nested_projects() -> None:
     assert task_path(":mods:example", "test") == ":mods:example:test"
 
 
+def test_run_gradle_honors_offline_environment(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    invocation: dict[str, object] = {}
+
+    def fake_run(command: object, **kwargs: object) -> None:
+        invocation["command"] = command
+
+    monkeypatch.setattr("bertie_ci.gradle.run", fake_run)
+
+    run_gradle(
+        tmp_path,
+        tmp_path / "jdk",
+        ["test"],
+        environment={"BERTIE_CI_GRADLE_OFFLINE": "true"},
+    )
+
+    assert invocation["command"] == [
+        "gradle",
+        "test",
+        "--no-daemon",
+        "--stacktrace",
+        "--offline",
+    ]
+
+
 def test_find_artifact_ignores_documentation_jars(tmp_path: Path) -> None:
     libraries = tmp_path / "build" / "libs"
     libraries.mkdir(parents=True)

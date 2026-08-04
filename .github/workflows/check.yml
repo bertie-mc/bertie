@@ -38,6 +38,7 @@ jobs:
 
   infrastructure:
     name: Shared infrastructure
+    needs: dependencies
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -46,8 +47,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Check Nix flake
         run: nix flake check
@@ -76,7 +78,7 @@ jobs:
 
   gradle:
     name: Affected builds and unit tests
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.build != '[]' || needs.plan.outputs.unit != '[]'
     runs-on: ubuntu-latest
     timeout-minutes: 50
@@ -86,9 +88,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
-          gradle-cache-read-only: false
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Run affected tasks
         uses: ./.github/actions/gradle-check
@@ -111,7 +113,7 @@ jobs:
 
   gametest:
     name: GameTest / ${{ matrix.subject }}
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.gametest != '[]'
     strategy:
       fail-fast: false
@@ -125,8 +127,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Run GameTests
         uses: ./.github/actions/gradle-task
@@ -151,7 +154,7 @@ jobs:
 
   client:
     name: Client tests / ${{ matrix.subject }}
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.client != '[]'
     strategy:
       fail-fast: false
@@ -165,8 +168,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Run client tests
         uses: ./.github/actions/gradle-task
@@ -191,9 +195,14 @@ jobs:
           include-hidden-files: true
           retention-days: 14
 
+  dependencies:
+    name: Prepare Gradle dependencies
+    needs: plan
+    uses: ./.github/workflows/gradle-dependencies.yml
+
   validate:
     name: Validate / ${{ matrix.subject }}
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.validate != '[]'
     strategy:
       fail-fast: false
@@ -207,8 +216,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Structurally validate generated pack
         uses: ./.github/actions/pack-validate
@@ -217,7 +227,14 @@ jobs:
 
   required:
     name: Required checks
-    needs: [plan, infrastructure, gradle, gametest, client, validate]
+    needs:
+      - plan
+      - infrastructure
+      - gradle
+      - gametest
+      - client
+      - dependencies
+      - validate
     if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -230,6 +247,7 @@ jobs:
           GRADLE_RESULT: ${{ needs.gradle.result }}
           GAMETEST_RESULT: ${{ needs.gametest.result }}
           CLIENT_RESULT: ${{ needs.client.result }}
+          DEPENDENCIES_RESULT: ${{ needs.dependencies.result }}
           VALIDATE_RESULT: ${{ needs.validate.result }}
         run: |
           results=(
@@ -238,6 +256,7 @@ jobs:
             "Gradle:$GRADLE_RESULT"
             "GameTests:$GAMETEST_RESULT"
             "Client tests:$CLIENT_RESULT"
+            "Gradle dependencies:$DEPENDENCIES_RESULT"
             "Pack validation:$VALIDATE_RESULT"
           )
           {

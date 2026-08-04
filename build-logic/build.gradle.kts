@@ -29,6 +29,20 @@ dependencyLocking {
     lockAllConfigurations()
 }
 
+val resolvableConfigurations = configurations.matching {
+    it.isCanBeResolved && it.name != "kotlinNativeBundleConfiguration"
+}
+
+tasks.register("resolveDependencies") {
+    group = "build setup"
+    description = "Resolves dependencies used by the included build"
+    notCompatibleWithConfigurationCache("Resolves configurations at execution time")
+
+    doLast {
+        resolvableConfigurations.forEach { it.resolve() }
+    }
+}
+
 tasks.register("resolveAndLockAll") {
     group = "build setup"
     description = "Resolves every relevant dependency configuration and writes its lock state"
@@ -40,10 +54,7 @@ tasks.register("resolveAndLockAll") {
         }
     }
     doLast {
-        configurations
-            // The Kotlin JVM plugin creates this unused native-toolchain configuration.
-            .filter { it.isCanBeResolved && it.name != "kotlinNativeBundleConfiguration" }
-            .forEach { it.resolve() }
+        resolvableConfigurations.forEach { it.resolve() }
     }
 }
 

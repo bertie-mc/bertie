@@ -27,9 +27,15 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
+  dependencies:
+    name: Prepare Gradle dependencies
+    needs: plan
+    if: needs.plan.outputs.kind != 'tool'
+    uses: ./.github/workflows/gradle-dependencies.yml
+
   build-mod:
     name: Build ${{ needs.plan.outputs.subject }}
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.kind == 'neoforge-mod'
     runs-on: ubuntu-latest
     timeout-minutes: 25
@@ -39,9 +45,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
-          gradle-cache-read-only: false
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Build mod
         uses: ./.github/actions/build-mod
@@ -83,7 +89,7 @@ jobs:
 
   export-pack:
     name: Export pack
-    needs: plan
+    needs: [plan, dependencies]
     if: needs.plan.outputs.kind == 'pack'
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -93,8 +99,9 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-        with:
-          gradle-cache: true
+
+      - name: Restore prepared Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
 
       - name: Export client pack
         uses: ./.github/actions/pack-export-client

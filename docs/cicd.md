@@ -136,19 +136,43 @@ The main [`check.yml`](../.github/workflows/check.yml) workflow runs on pull req
 pushes to `main`:
 
 1. Plan affected components from the Git range.
-2. Always validate the Nix flake and shared test infrastructure.
-3. Run affected builds and unit tests.
-4. Run GameTest and client-test entries as separate jobs.
-5. Structurally validate the generated pack when affected.
-6. Combine all job outcomes into one required-check result.
+2. Resolve the repository's Gradle dependencies and prepare Minecraft artifacts and
+   assets in one job.
+3. Save the resulting isolated Gradle User Home cache under a hash of the dependency
+   inputs.
+4. Restore that exact cache in every build, unit-test, GameTest, client-test,
+   infrastructure, and pack-validation job.
+5. Run those jobs in parallel with Gradle's offline mode enabled.
+6. Combine their outcomes into one required-check result.
+
+```mermaid
+flowchart LR
+    P["affected-component plan"] --> W["prepare Gradle dependencies"]
+    W --> I["infrastructure"]
+    W --> B["build + unit tests"]
+    W --> G["GameTest matrix"]
+    W --> C["client-test matrix"]
+    W --> V["pack validation"]
+```
+
+`warmDependencies` resolves external configurations in every subproject, resolves the
+included build's dependencies, and prepares the NeoForge/Minecraft artifacts and client
+assets. CI sets `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`; the runner's home
+directory is not part of this cache. The warm-up is the workflow's only Gradle job allowed
+to fetch dependencies. The jobs after it require the matching cache and `bertie-ci` adds
+`--offline` to their Gradle commands.
 
 Jobs upload JUnit reports, run directories, logs, crash reports, client screenshots, and
 bertie-ci work directories for diagnosis. Matrix jobs use `fail-fast: false`, so one
 component failure does not hide results from the others.
 
 The [`full-pack.yml`](../.github/workflows/full-pack.yml) workflow runs nightly and on
-manual dispatch. It executes every suite declared by `:pack` and validates the generated
-pack, independently of change-based planning.
+manual dispatch. It uses the same dependency preparation job, then executes every suite
+declared by `:pack` and validates the generated pack in parallel, independently of
+change-based planning.
+
+Mod and pack release builds use the same preparation and offline execution. Source-only
+tool releases do not run Gradle.
 
 Reusable unit, GameTest, client-test, and mod-build workflows are available to standalone
 Bertie repositories through the tagged `bertie-ci` release. Their YAML delegates to the

@@ -1,0 +1,33 @@
+name: Prepare Gradle dependencies
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    name: Prepare Gradle dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Restore dependency seed
+        uses: ./.github/actions/gradle-dependency-cache
+        with:
+          warm: true
+
+      - name: Prepare all Gradle dependencies
+        uses: ./.github/actions/gradle-task
+        env:
+          GRADLE_OPTS: -Dorg.gradle.configuration-cache=false
+        with:
+          task: warmDependencies
+          work-dir: .bertie-ci/dependencies
+          timeout: 3300
