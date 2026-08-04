@@ -159,8 +159,9 @@ flowchart LR
 included build's dependencies, and prepares the NeoForge/Minecraft artifacts and client
 assets. CI sets `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`; the runner's home
 directory is not part of this cache. The warm-up is the workflow's only Gradle job allowed
-to fetch dependencies. The jobs after it require the matching cache and `bertie-ci` adds
-`--offline` to their Gradle commands.
+to fetch dependencies, and it uses one Gradle worker while populating the store. The jobs
+after it require the matching cache and `bertie-ci` adds `--offline` to their Gradle
+commands.
 
 Jobs upload JUnit reports, run directories, logs, crash reports, client screenshots, and
 bertie-ci work directories for diagnosis. Matrix jobs use `fail-fast: false`, so one

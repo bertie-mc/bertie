@@ -26,7 +26,10 @@ jobs:
       - name: Prepare all Gradle dependencies
         uses: ./.github/actions/gradle-task
         env:
-          GRADLE_OPTS: -Dorg.gradle.configuration-cache=false
+          GRADLE_OPTS: >-
+            -Dorg.gradle.configuration-cache=false
+            -Dorg.gradle.parallel=false
+            -Dorg.gradle.workers.max=1
         with:
           task: warmDependencies
           work-dir: .bertie-ci/dependencies
