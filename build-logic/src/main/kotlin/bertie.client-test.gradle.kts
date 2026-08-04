@@ -1,55 +1,101 @@
 import io.github.bertie_mc.gradle.BertieModMetadata
+import io.github.bertie_mc.gradle.BertiePlatformVersions
+import io.github.bertie_mc.gradle.BertieTestingExtension
+import io.github.bertie_mc.gradle.MinecraftArtifactSide
+import io.github.bertie_mc.gradle.clientTestCarrierId
+import io.github.bertie_mc.gradle.projectMinecraftRuntime
+import io.github.bertie_mc.gradle.requireTestReport
+import io.github.bertie_mc.gradle.runTestsTask
+import io.github.bertie_mc.gradle.tasks.GenerateSuiteModMetadata
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
-import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.tasks.SourceSetContainer
-import org.gradle.language.jvm.tasks.ProcessResources
-import org.gradle.jvm.tasks.Jar
+import org.gradle.api.tasks.Sync
 
 plugins {
-    id("bertie.neoforge-mod")
+    id("bertie.neoforge-base")
 }
 
+val platformVersions = extensions.getByType<BertiePlatformVersions>()
+val testing = extensions.getByType<BertieTestingExtension>()
 val sourceSets = extensions.getByType<SourceSetContainer>()
 val mainSourceSet = sourceSets.named("main")
-val clientTest = sourceSets.create("clientTest")
+val clienttest = sourceSets.create("clienttest")
 
-configurations.named(clientTest.implementationConfigurationName) {
+configurations.named(clienttest.implementationConfigurationName) {
     extendsFrom(configurations.getByName("implementation"))
 }
-configurations.named(clientTest.compileOnlyConfigurationName) {
+configurations.named(clienttest.compileOnlyConfigurationName) {
     extendsFrom(configurations.getByName("compileOnly"))
 }
-configurations.named(clientTest.runtimeOnlyConfigurationName) {
+configurations.named(clienttest.runtimeOnlyConfigurationName) {
     extendsFrom(configurations.getByName("runtimeOnly"))
 }
 
-clientTest.compileClasspath += mainSourceSet.get().output
-clientTest.runtimeClasspath += mainSourceSet.get().output
+clienttest.compileClasspath += mainSourceSet.get().output
+clienttest.runtimeClasspath += mainSourceSet.get().output
+projectMinecraftRuntime(clienttest, MinecraftArtifactSide.CLIENT)
 
-extensions.configure<NeoForgeExtension> {
-    addModdingDependenciesTo(clientTest)
+dependencies {
+    add(clienttest.implementationConfigurationName, project(":testing:client-test-api"))
+    add(clienttest.runtimeOnlyConfigurationName, project(":testing:client-test-driver"))
 }
 
-tasks.named<ProcessResources>(clientTest.processResourcesTaskName) {
-    val modMetadata = project.extensions.getByType<BertieModMetadata>()
-    val minecraftVersion = project.extensions.getByType<VersionCatalogsExtension>()
-        .named("libs")
-        .findVersion("minecraft")
-        .orElseThrow { IllegalStateException("Version 'minecraft' is missing from the root version catalog") }
-        .requiredVersion
-    val templateProperties = modMetadata.clientTestTemplateProperties(minecraftVersion)
+val carrierId = clientTestCarrierId(testing.subjectId.get())
+val generateClienttestMetadata = tasks.register<GenerateSuiteModMetadata>("generateClienttestMetadata") {
+    modId.set(carrierId)
+    displayName.set(testing.subjectId.map { "$it client tests" })
+    descriptionText.set(testing.subjectId.map { "Test-only client assertions for $it" })
+    license.set(testing.license)
+    minecraftVersionRange.set(platformVersions.minecraftVersionRange)
+    neoForgeVersionRange.set(platformVersions.neoForgeVersionRange)
+    javaFmlLoaderVersionRange.set(platformVersions.javaFmlLoaderVersionRange)
+    outputDirectory.set(layout.buildDirectory.dir("generated/sources/clienttestMetadata"))
+}
+pluginManager.withPlugin("bertie.neoforge-mod") {
+    generateClienttestMetadata.configure {
+        testedModId.set(project.extensions.getByType<BertieModMetadata>().id)
+    }
+}
+clienttest.resources.srcDir(generateClienttestMetadata)
 
-    inputs.properties(templateProperties)
-    filesMatching("META-INF/neoforge.mods.toml") {
-        expand(templateProperties)
+val clientTestRunDirectory = layout.buildDirectory.dir("runs/clienttest")
+val clientTestReport = layout.buildDirectory.file("test-results/clienttest/TEST-clienttest.xml")
+val clientTestDiagnostics = layout.buildDirectory.dir("test-diagnostics/clienttest")
+val prepareClienttestInstance = tasks.register<Sync>("prepareClienttestInstance") {
+    group = "verification"
+    description = "Stages the isolated client-test instance"
+    into(clientTestRunDirectory)
+    from(testing.mainInstanceDirectory)
+    from(layout.projectDirectory.dir("src/clienttest/instance"))
+}
+extensions.configure<NeoForgeExtension> {
+    addModdingDependenciesTo(clienttest)
+    mods.register(carrierId) {
+        sourceSet(clienttest)
+    }
+
+    runs.register("clientTests") {
+        client()
+        sourceSet.set(clienttest)
+        gameDirectory.set(clientTestRunDirectory)
+        systemProperties.put(
+            "bertie.clienttest.report",
+            clientTestReport.map { it.asFile.absolutePath },
+        )
+        systemProperties.put(
+            "bertie.clienttest.diagnostics",
+            clientTestDiagnostics.map { it.asFile.absolutePath },
+        )
+        taskBefore(prepareClienttestInstance)
     }
 }
 
-tasks.register<Jar>("clientTestJar") {
+tasks.named("runClientTests") {
     group = "verification"
-    description = "Build the test-only mod used by the headless client suite"
-    archiveFileName = "${project.name}-client-tests.jar"
-    destinationDirectory = layout.buildDirectory.dir("test-libs")
-    from(clientTest.output)
-    dependsOn(tasks.named(clientTest.classesTaskName))
+    description = "Runs the project's annotated client tests in Minecraft"
+    requireTestReport(clientTestReport)
+}
+
+runTestsTask().configure {
+    dependsOn(tasks.named("runClientTests"))
 }

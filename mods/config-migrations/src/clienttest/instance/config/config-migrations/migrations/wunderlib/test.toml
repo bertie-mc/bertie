@@ -1,0 +1,8 @@
+id = "configmigrations_clienttests:wunderlib"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 78

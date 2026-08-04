@@ -1,14 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "forge-ink"
 kind = "neoforge-mod"
 gradle-project = ":mods:forge-ink"
-mod-id = "forgeink"
-pack-metafile = "mods/forge-ink.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"

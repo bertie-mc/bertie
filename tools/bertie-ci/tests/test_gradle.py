@@ -2,95 +2,52 @@ from pathlib import Path
 
 import pytest
 from bertie_ci.artifact import find_artifact, stage_artifact
-from bertie_ci.gradle import assemble_client_test_mod, run_gradle, verify_gametest_log
+from bertie_ci.gradle import run_gradle, task_path
 
 
-def test_run_gradle_uses_the_managed_executable(
+def test_run_gradle_uses_managed_tools_and_passes_environment(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    invocation = {}
+    invocation: dict[str, object] = {}
 
-    def fake_run(command, **kwargs) -> None:
+    def fake_run(command: object, **kwargs: object) -> None:
         invocation["command"] = command
         invocation.update(kwargs)
 
     gradle = tmp_path / "nix-store" / "bin" / "gradle"
     java_home = tmp_path / "jdk"
+    log = tmp_path / "gradle.log"
     monkeypatch.setenv("BERTIE_CI_GRADLE", str(gradle))
+    monkeypatch.setenv("DISPLAY", ":99")
     monkeypatch.setattr("bertie_ci.gradle.run", fake_run)
 
-    run_gradle(tmp_path, java_home, ["assemble"])
+    run_gradle(
+        tmp_path,
+        java_home,
+        [":mods:example:test"],
+        log=log,
+        timeout_seconds=42,
+        environment={"WAYLAND_DISPLAY": "wayland-bertie"},
+    )
 
     assert invocation["command"] == [
         str(gradle),
-        "assemble",
+        ":mods:example:test",
         "--no-daemon",
         "--stacktrace",
     ]
     assert invocation["cwd"] == tmp_path
-    assert invocation["env"]["JAVA_HOME"] == str(java_home)
+    assert invocation["log"] == log
+    assert invocation["timeout_seconds"] == 42
+    assert invocation["env"]["JAVA_HOME"] == str(java_home)  # type: ignore[index]
+    assert invocation["env"]["WAYLAND_DISPLAY"] == "wayland-bertie"  # type: ignore[index]
+    assert "DISPLAY" not in invocation["env"]  # type: ignore[operator]
 
 
-def test_client_test_mod_build_has_a_stable_staged_name(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    test_libs = tmp_path / "build" / "test-libs"
-    test_libs.mkdir(parents=True)
-    source = test_libs / "example-client-tests.jar"
-    source.write_bytes(b"test mod")
-    tasks = []
-    monkeypatch.setattr(
-        "bertie_ci.gradle.run_gradle",
-        lambda _project, _java, requested: tasks.extend(requested),
-    )
-
-    staged = assemble_client_test_mod(
-        tmp_path, tmp_path / "jdk", tmp_path / ".bertie-ci" / "client-test-mod"
-    )
-
-    assert tasks == ["clientTestJar"]
-    assert staged.name == "client-test-mod.jar"
-    assert staged.read_bytes() == b"test mod"
-
-
-def _log(tmp_path: Path, text: str) -> Path:
-    log = tmp_path / "gametest.log"
-    log.write_text(text, encoding="utf-8")
-    return log
-
-
-def test_verify_gametest_log_requires_a_completed_run(tmp_path: Path) -> None:
-    log = _log(
-        tmp_path,
-        """
-14 tests are now running at position 1, 2, 3!
-========= 14 GAME TESTS COMPLETE IN 10 ms =========
-All 14 required tests passed :)
-Game test server shutting down
-BUILD SUCCESSFUL
-""",
-    )
-
-    assert verify_gametest_log(log) == 14
-
-
-@pytest.mark.parametrize(
-    "text, message",
-    [
-        (
-            "Failed to start the minecraft server\nBUILD SUCCESSFUL",
-            "failed before completion",
-        ),
-        ("BUILD SUCCESSFUL", "did not discover any tests"),
-        ("0 tests are now running\nBUILD SUCCESSFUL", "did not discover any tests"),
-        ("2 tests are now running\nBUILD SUCCESSFUL", "did not complete successfully"),
-    ],
-)
-def test_verify_gametest_log_fails_closed(
-    tmp_path: Path, text: str, message: str
-) -> None:
-    with pytest.raises(RuntimeError, match=message):
-        verify_gametest_log(_log(tmp_path, text))
+def test_task_path_supports_root_and_nested_projects() -> None:
+    assert task_path(None, "test") == "test"
+    assert task_path(":", "test") == ":test"
+    assert task_path(":mods:example", "test") == ":mods:example:test"
 
 
 def test_find_artifact_ignores_documentation_jars(tmp_path: Path) -> None:
@@ -101,7 +58,7 @@ def test_find_artifact_ignores_documentation_jars(tmp_path: Path) -> None:
     (libraries / "example-1.0.0-sources.jar").touch()
     (libraries / "example-1.0.0-javadoc.jar").touch()
 
-    assert find_artifact(tmp_path, None) == runtime
+    assert find_artifact(tmp_path) == runtime
 
 
 def test_stage_artifact_preserves_release_filename(tmp_path: Path) -> None:

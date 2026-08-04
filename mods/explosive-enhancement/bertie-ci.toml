@@ -1,20 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "explosive-enhancement"
 kind = "neoforge-mod"
 gradle-project = ":mods:explosive-enhancement"
-mod-id = "explosiveenhancement"
-pack-metafile = "mods/explosive-enhancement.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "mixin-contract"
-runner = "client"
-build-client-test-mod = true
-require-log = ["EXPLOSIVE_ENHANCEMENT_MIXIN_OK"]

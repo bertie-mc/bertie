@@ -1,18 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "bertie-tiers"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-tiers"
-mod-id = "bertietiers"
-pack-metafile = "mods/bertie-tiers.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "gametest"
-runner = "gametest"

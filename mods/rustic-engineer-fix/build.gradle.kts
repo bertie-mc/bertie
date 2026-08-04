@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    runtimeOnly(libs.rustic.engineer)
+    runtimeOnly(mods.rusticEngineer)
     // Fabric and NeoForge publish the same version number; this is the pack's NeoForge file ID.
-    runtimeOnly(libs.geckolib)
+    runtimeOnly(mods.geckolib)
 }

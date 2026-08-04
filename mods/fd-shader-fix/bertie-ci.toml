@@ -1,21 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "fd-shader-fix"
 kind = "neoforge-mod"
 gradle-project = ":mods:fd-shader-fix"
-mod-id = "fdshaderfix"
-pack-metafile = "mods/fd-shader-fix.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "shader-mixin"
-runner = "client"
-fixtures = ["fdlib"]
-build-client-test-mod = true
-require-log = ["FD_SHADER_FIX_MIXIN_OK"]

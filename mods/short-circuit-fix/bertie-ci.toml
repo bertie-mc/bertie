@@ -1,17 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "short-circuit-fix"
 kind = "neoforge-mod"
 gradle-project = ":mods:short-circuit-fix"
-mod-id = "shortcircuitfix"
-pack-metafile = "mods/short-circuit-fix.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "render-layers"
-runner = "client"
-fixtures = ["short-circuit"]
-build-client-test-mod = true
-require-log = ["SHORT_CIRCUIT_RENDER_LAYERS_OK"]

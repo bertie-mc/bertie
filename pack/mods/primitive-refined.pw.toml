@@ -1,8 +1,0 @@
-name = "primitive-refined"
-filename = "primitiverefined-0.3.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/bertie/releases/download/primitive-refined/v0.3.0/primitiverefined-0.3.0.jar"
-hash-format = "sha256"
-hash = "3c390f49fc6ea99f7e8d7aff2283ebd6dfd7106bbd7efed23042f8d5913e06ba"

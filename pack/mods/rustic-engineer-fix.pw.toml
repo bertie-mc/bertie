@@ -1,8 +1,0 @@
-name = "rustic-engineer-fix"
-filename = "rusticengineerfix-1.0.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/rustic-engineer-fix/releases/download/v1.0.0/rusticengineerfix-1.0.0.jar"
-hash-format = "sha256"
-hash = "634ad32380a07510aacd4f161dfce9fb5433616d05075ee20dd6b86a04468de9"

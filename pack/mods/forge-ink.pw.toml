@@ -1,8 +1,0 @@
-name = "forge-ink"
-filename = "forgeink-1.1.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/forge-ink/releases/download/v1.1.0/forgeink-1.1.0.jar"
-hash-format = "sha256"
-hash = "355f17f38275f9e9f0dd8ae867475a0b1a0224e53b2d11981289272f5aa88926"

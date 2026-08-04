@@ -1,0 +1,42 @@
+name: Run Gradle task
+description: Run an exact planned Gradle task, optionally inside an isolated Wayland session
+
+inputs:
+  task:
+    description: Exact Gradle task path from the bertie-ci plan
+    required: true
+  work-dir:
+    description: Directory for the Gradle and compositor logs
+    required: false
+    default: .bertie-ci/gradle
+  timeout:
+    description: Task timeout in seconds
+    required: false
+    default: "3600"
+  wayland:
+    description: Provide an isolated native-Wayland compositor
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - name: Run Gradle task
+      shell: bash
+      env:
+        BERTIE_GRADLE_TASK: ${{ inputs.task }}
+        BERTIE_GRADLE_WORK_DIR: ${{ inputs.work-dir }}
+        BERTIE_GRADLE_TIMEOUT: ${{ inputs.timeout }}
+        BERTIE_GRADLE_WAYLAND: ${{ inputs.wayland }}
+      run: |
+        arguments=(
+          gradle-task
+          --workspace .
+          --task "$BERTIE_GRADLE_TASK"
+          --work-dir "$BERTIE_GRADLE_WORK_DIR"
+          --timeout "$BERTIE_GRADLE_TIMEOUT"
+        )
+        if [[ "$BERTIE_GRADLE_WAYLAND" == true ]]; then
+          arguments+=(--wayland)
+        fi
+        bertie-ci "${arguments[@]}"

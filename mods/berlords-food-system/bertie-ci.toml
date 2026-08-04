@@ -1,21 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "berlords-food-system"
 kind = "neoforge-mod"
 gradle-project = ":mods:berlords-food-system"
-mod-id = "berlordsfoodsystem"
-pack-metafile = "mods/berlords-food-system.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "mixin-contract"
-runner = "client"
-fixtures = ["sophisticated-backpacks", "sophisticated-core"]
-build-client-test-mod = true
-require-log = ["BERLORDS_FOOD_SYSTEM_MIXINS_OK"]

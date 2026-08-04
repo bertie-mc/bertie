@@ -1,0 +1,9 @@
+mod = "configmigrations_clienttests"
+file = "configmigrations_clienttests-supermartijn642.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 77

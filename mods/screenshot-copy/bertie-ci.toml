@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "screenshot-copy"
+kind = "neoforge-mod"
+gradle-project = ":mods:screenshot-copy"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

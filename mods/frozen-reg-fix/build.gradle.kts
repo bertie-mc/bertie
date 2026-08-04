@@ -1,4 +1,8 @@
 plugins {
     id("bertie.neoforge-mod")
-    id("bertie.client-test")
+    id("bertie.gametest")
+}
+
+dependencies {
+    gametestRuntimeOnly(mods.immersiveArmors)
 }

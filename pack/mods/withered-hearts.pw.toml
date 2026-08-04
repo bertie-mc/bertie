@@ -1,8 +1,0 @@
-name = "withered-hearts"
-filename = "witheredhearts-1.0.0.jar"
-side = "client"
-
-[download]
-url = "https://github.com/bertie-mc/withered-hearts/releases/download/v1.0.0/witheredhearts-1.0.0.jar"
-hash-format = "sha256"
-hash = "d8c4a252797bbb161c05bf5e65fe13797399dcf6ce768e682180000227121e03"

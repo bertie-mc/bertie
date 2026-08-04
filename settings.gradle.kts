@@ -7,9 +7,17 @@ pluginManagement {
     }
 }
 
+plugins {
+    id("bertie.minecraft-artifacts")
+}
+
 rootProject.name = "bertie"
 
 include(
+    ":pack",
+    ":testing:client-test-api",
+    ":testing:client-test-driver",
+    ":testing:gametest-driver",
     ":mods:berlords-food-system",
     ":mods:bertie-blackhole",
     ":mods:bertie-emi",
@@ -30,6 +38,7 @@ include(
     ":mods:hephaestus-architecture",
     ":mods:primitive-refined",
     ":mods:rustic-engineer-fix",
+    ":mods:screenshot-copy",
     ":mods:short-circuit-fix",
     ":mods:withered-hearts",
 )

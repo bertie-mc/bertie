@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.testing.client.driver.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientChunkCacheAccessor",
+    "ClientChunkCacheStorageAccessor",
+    "CreateWorldScreenMixin",
+    "CycleButtonAccessor",
+    "DedicatedServerMixin",
+    "InputConstantsMixin",
+    "KeyboardHandlerInvoker",
+    "MinecraftMixin",
+    "MinecraftServerMixin",
+    "MouseHandlerInvoker",
+    "OptionsAccessor",
+    "OptionsMixin",
+    "ServerConnectionListenerAccessor",
+    "ServerMainMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

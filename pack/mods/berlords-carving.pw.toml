@@ -1,8 +1,0 @@
-name = "berlords-carving"
-filename = "berlordscarving-2.0.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/bertie/releases/download/berlords-carving/v2.0.0/berlordscarving-2.0.0.jar"
-hash-format = "sha256"
-hash = "858e3efca1d3e3d4debc0739ba970f4333d0202cb83ac598c0f6d2fdaa885062"

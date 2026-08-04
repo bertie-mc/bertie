@@ -1,17 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "frozen-reg-fix"
 kind = "neoforge-mod"
 gradle-project = ":mods:frozen-reg-fix"
-mod-id = "frozenregfix"
-pack-metafile = "mods/frozen-reg-fix.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "armor-materials"
-runner = "client"
-fixtures = ["immersive-armors"]
-build-client-test-mod = true
-require-log = ["FROZEN_REGISTRY_ARMOR_MATERIALS_OK"]

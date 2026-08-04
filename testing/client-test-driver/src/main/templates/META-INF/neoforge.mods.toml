@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "Unlicense"
+
+[[mods]]
+modId = "bertie_client_test_driver"
+version = "1"
+displayName = "Bertie client-test driver"
+description = "Runs Bertie's annotated client tests inside Minecraft."
+
+[[mixins]]
+config = "bertie-client-test-driver.mixins.json"
+
+[[dependencies."bertie_client_test_driver"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."bertie_client_test_driver"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"

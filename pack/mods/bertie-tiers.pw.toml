@@ -1,8 +1,0 @@
-name = "bertie-tiers"
-filename = "bertietiers-2.0.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/bertie/releases/download/bertie-tiers/v2.0.0/bertietiers-2.0.0.jar"
-hash-format = "sha256"
-hash = "639958912b07f76028819dc581ed7baf4a79bc185a2c42e9fbd79c5a660899ec"

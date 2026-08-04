@@ -1,4 +1,5 @@
 import io.github.bertie_mc.gradle.BertieModMetadata
+import io.github.bertie_mc.gradle.loadOnly
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
 
 plugins {
@@ -11,6 +12,6 @@ val modMetadata = extensions.getByType<BertieModMetadata>()
 extensions.configure<NeoForgeExtension> {
     unitTest {
         enable()
-        testedMod = mods.getByName(modMetadata.id)
+        loadOnly(mods.getByName(modMetadata.id))
     }
 }

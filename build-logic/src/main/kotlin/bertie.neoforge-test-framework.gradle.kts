@@ -1,11 +1,14 @@
-import io.github.bertie_mc.gradle.BertieModMetadata
+import org.gradle.api.artifacts.VersionCatalogsExtension
 
 plugins {
     id("bertie.neoforge-unit-test")
 }
 
-val modMetadata = extensions.getByType<BertieModMetadata>()
+val versionCatalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
+val testFramework = versionCatalog.findLibrary("neoforge-test-framework").orElseThrow {
+    IllegalStateException("Library 'neoforge-test-framework' is missing from the root version catalog")
+}
 
 dependencies {
-    add("testImplementation", "net.neoforged:testframework:${modMetadata.neoForgeVersion}")
+    testImplementation(testFramework)
 }

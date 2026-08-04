@@ -1,32 +1,45 @@
 import os
-import subprocess
 from pathlib import Path
 from zipfile import ZipFile
 
 import bertie_ci.pack as pack_module
 import pytest
-from bertie_ci.pack import export_server_pack, read_pack_mod, validate_pack
+from bertie_ci.pack import (
+    export_client_pack,
+    export_server_pack,
+    read_pack_mod,
+    validate_pack,
+)
 
 
-def _pack(root: Path, second_filename: str | None = None) -> None:
+def _pack(
+    root: Path,
+    second_filename: str | None = None,
+    *,
+    first_side: str = "both",
+    second_side: str = "client",
+) -> None:
     mods = root / "mods"
     config = root / "config"
     mods.mkdir()
     config.mkdir()
     (config / "example.json").write_text("{}\n", encoding="utf-8")
+    (mods / "owned.jar").write_bytes(b"locally built mod")
     (mods / "example.pw.toml").write_text(
-        'name = "Example"\nfilename = "example.jar"\nside = "both"\n\n'
+        f'name = "Example"\nfilename = "example.jar"\nside = "{first_side}"\n\n'
         '[download]\nurl = "https://example.invalid/example.jar"\n'
         'hash-format = "sha256"\nhash = "00"\n',
         encoding="utf-8",
     )
     entries = [
         '[[files]]\nfile = "config/example.json"\nhash = "00"',
+        '[[files]]\nfile = "mods/owned.jar"\nhash = "00"',
         '[[files]]\nfile = "mods/example.pw.toml"\nhash = "00"\nmetafile = true',
     ]
     if second_filename is not None:
         (mods / "second.pw.toml").write_text(
-            f'name = "Second"\nfilename = "{second_filename}"\nside = "client"\n\n'
+            f'name = "Second"\nfilename = "{second_filename}"\n'
+            f'side = "{second_side}"\n\n'
             '[download]\nurl = "https://example.invalid/second.jar"\n'
             'hash-format = "sha256"\nhash = "00"\n',
             encoding="utf-8",
@@ -46,22 +59,53 @@ def _pack(root: Path, second_filename: str | None = None) -> None:
     )
 
 
-def test_validate_pack_is_read_only_and_reports_sides(
+def test_validate_pack_is_read_only_and_reports_local_mod_jars(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     _pack(tmp_path)
-    before = (tmp_path / "index.toml").read_bytes()
-    monkeypatch.setattr(pack_module, "run", lambda *args, **kwargs: None)
+    before = {
+        path.relative_to(tmp_path): path.read_bytes()
+        for path in tmp_path.rglob("*")
+        if path.is_file()
+    }
+    invocation: dict[str, object] = {}
+
+    def refresh(command: object, *, cwd: Path, **_kwargs: object) -> None:
+        invocation.update(command=command, cwd=cwd)
+
+    monkeypatch.setattr(pack_module, "run", refresh)
 
     summary = validate_pack(tmp_path, Path("packwiz"))
 
     assert summary.metafiles == 1
-    assert summary.both == 1
+    assert summary.local_mod_jars == 1
     assert summary.config_files == 1
-    assert (tmp_path / "index.toml").read_bytes() == before
+    assert invocation["command"] == [Path("packwiz"), "refresh"]
+    assert invocation["cwd"] != tmp_path
+    assert {
+        path.relative_to(tmp_path): path.read_bytes()
+        for path in tmp_path.rglob("*")
+        if path.is_file()
+    } == before
 
 
-def test_validate_pack_rejects_duplicate_download_names(
+def test_validate_pack_allows_disjoint_client_and_server_download_names(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    _pack(
+        tmp_path,
+        "example.jar",
+        first_side="client",
+        second_side="server",
+    )
+    monkeypatch.setattr(pack_module, "run", lambda *args, **kwargs: None)
+
+    summary = validate_pack(tmp_path, Path("packwiz"))
+
+    assert summary.metafiles == 2
+
+
+def test_validate_pack_rejects_overlapping_both_and_client_download_names(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     _pack(tmp_path, "example.jar")
@@ -71,59 +115,87 @@ def test_validate_pack_rejects_duplicate_download_names(
         validate_pack(tmp_path, Path("packwiz"))
 
 
-def test_validate_pack_rejects_generated_state_in_index(
+def test_pack_mod_metadata_exposes_its_physical_side(tmp_path: Path) -> None:
+    _pack(tmp_path, "second.jar")
+
+    first = read_pack_mod(tmp_path, Path("mods/example.pw.toml"))
+    second = read_pack_mod(tmp_path, Path("mods/second.pw.toml"))
+
+    assert first.filename == "example.jar"
+    assert first.side == "both"
+    assert second.filename == "second.jar"
+    assert second.side == "client"
+
+
+def test_pack_mod_metadata_rejects_an_invalid_physical_side(tmp_path: Path) -> None:
+    _pack(tmp_path)
+    metafile = tmp_path / "mods" / "example.pw.toml"
+    metafile.write_text(
+        metafile.read_text(encoding="utf-8").replace(
+            'side = "both"', 'side = "somewhere"'
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(RuntimeError, match="Invalid artifact side"):
+        read_pack_mod(tmp_path, Path("mods/example.pw.toml"))
+
+
+def test_validate_pack_rejects_local_and_remote_files_with_the_same_target(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     _pack(tmp_path)
-    generated = tmp_path / ".bertie-ci" / "runtime.log"
-    generated.parent.mkdir()
-    generated.write_text("generated", encoding="utf-8")
-    with (tmp_path / "index.toml").open("a", encoding="utf-8") as index:
-        index.write('\n[[files]]\nfile = ".bertie-ci/runtime.log"\nhash = "00"\n')
+    metafile = tmp_path / "mods" / "example.pw.toml"
+    metafile.write_text(
+        metafile.read_text(encoding="utf-8").replace(
+            'filename = "example.jar"', 'filename = "owned.jar"'
+        ),
+        encoding="utf-8",
+    )
     monkeypatch.setattr(pack_module, "run", lambda *args, **kwargs: None)
 
-    with pytest.raises(RuntimeError, match="Generated bertie-ci state is indexed"):
+    with pytest.raises(RuntimeError, match="Duplicate target filenames"):
         validate_pack(tmp_path, Path("packwiz"))
 
 
-def test_validate_pack_rejects_jar_tracked_from_monorepo_subdirectory(
+def test_client_export_passes_locally_built_mods_to_packwiz(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    project = tmp_path / "pack"
+    project = tmp_path / "project"
     project.mkdir()
     _pack(project)
-    tracked_jar = project / "mods" / "forbidden.jar"
-    tracked_jar.touch()
-    subprocess.run(["git", "init", "-q"], cwd=tmp_path, check=True)
-    subprocess.run(["git", "add", "pack/mods/forbidden.jar"], cwd=tmp_path, check=True)
-    monkeypatch.setattr(pack_module, "run", lambda *args, **kwargs: None)
+    output = tmp_path / "example.mrpack"
+    observed: dict[str, object] = {}
 
-    with pytest.raises(RuntimeError, match="Tracked mod JARs are forbidden"):
-        validate_pack(project, Path("packwiz"))
+    def export(command: list[object], *, cwd: Path) -> None:
+        observed["command"] = command
+        observed["owned"] = (cwd / "mods" / "owned.jar").read_bytes()
+        Path(command[-1]).write_bytes(b"mrpack")
 
+    monkeypatch.setattr(pack_module, "run", export)
 
-def test_pack_mod_metadata_is_side_aware(tmp_path: Path) -> None:
-    _pack(tmp_path, "client-only.jar")
+    export_client_pack(project, output, Path("packwiz"))
 
-    common = read_pack_mod(tmp_path, Path("mods/example.pw.toml"))
-    client_only = read_pack_mod(tmp_path, Path("mods/second.pw.toml"))
-
-    assert common.applies_to("client")
-    assert common.applies_to("server")
-    assert client_only.applies_to("client")
-    assert not client_only.applies_to("server")
+    assert observed == {
+        "command": [Path("packwiz"), "modrinth", "export", "-o", output],
+        "owned": b"locally built mod",
+    }
 
 
-def test_export_server_pack_contains_manifest_not_mod_jars(tmp_path: Path) -> None:
+def test_export_server_pack_contains_target_aware_manifest_and_local_mod_jars(
+    tmp_path: Path,
+) -> None:
     project = tmp_path / "project"
     project.mkdir()
     _pack(project)
     installer = tmp_path / "packwiz-installer.jar"
     installer.write_bytes(b"installer")
     os.utime(installer, (0, 0))
+    readme = project / "README.md"
+    readme.write_text("# Example pack\n", encoding="utf-8")
     output = tmp_path / "example-server.zip"
 
-    export_server_pack(project, output, installer)
+    export_server_pack(project, output, installer, readme)
 
     with ZipFile(output) as archive:
         names = set(archive.namelist())
@@ -131,5 +203,6 @@ def test_export_server_pack_contains_manifest_not_mod_jars(tmp_path: Path) -> No
         assert f"{root}/pack/pack.toml" in names
         assert f"{root}/pack/mods/example.pw.toml" in names
         assert f"{root}/packwiz-installer.jar" in names
+        assert f"{root}/README.md" in names
         assert f"{root}/start.sh" in names
-        assert not any(name.endswith("example.jar") for name in names)
+        assert archive.read(f"{root}/pack/mods/owned.jar") == b"locally built mod"

@@ -1,247 +1,259 @@
 import io
+import os
+import signal
 import sys
+from contextlib import contextmanager
 from pathlib import Path
 from types import SimpleNamespace
 
 import bertie_ci.cli as cli
 import pytest
-from bertie_ci.instance import Instance
-from bertie_ci.pack import PackMod
-
-
-def test_empty_adapter_path_means_omitted_optional_input() -> None:
-    assert cli._optional_path("") is None
-    assert cli._optional_path("build/client-tests.jar") == Path(
-        "build/client-tests.jar"
-    )
+from bertie_ci.pack import PackSummary
 
 
 @pytest.mark.parametrize("value", ["0", "-1"])
-def test_runtime_timeout_must_be_positive(value: str) -> None:
+def test_gradle_timeout_must_be_positive(value: str) -> None:
     with pytest.raises(SystemExit):
-        cli._parser().parse_args(
-            ["client-test", "--instance", "instance.json", "--timeout", value]
-        )
+        cli._parser().parse_args(["gradle-task", "--task", ":test", "--timeout", value])
 
 
-def test_client_test_defaults_to_world_join(
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    args = cli._parser().parse_args(
-        [
-            "client-test",
-            "--instance",
-            "instance.json",
-            "--test-mod",
-            "",
-            "--require-log",
-            "",
-        ]
-    )
-    context = object()
-    observed: dict[str, object] = {}
-    monkeypatch.setattr(cli, "_runtime_context", lambda *_: context)
-
-    def capture_test(*test_args: object, **test_kwargs: object) -> None:
-        observed["args"] = test_args
-        observed["kwargs"] = test_kwargs
-
-    monkeypatch.setattr(cli, "run_client_test", capture_test)
-
-    cli._run_test(args, "client")
-
-    assert observed["args"] == (context, 1500, "4G")
-    assert observed["kwargs"] == {
-        "minimum_game_tests": 0,
-        "test_mods": (),
-        "required_log_markers": (),
-    }
-
-
-def test_server_test_composes_optional_extensions(
+def test_gradle_task_runs_on_the_current_desktop_by_default(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    command_test = tmp_path / "server.json"
-    test_mod = tmp_path / "server-tests.jar"
-    args = cli._parser().parse_args(
-        [
-            "server-test",
-            "--instance",
-            "instance.json",
-            "--command-test",
-            str(command_test),
-            "--test-mod",
-            str(test_mod),
-            "--require-log",
-            "SERVER_ASSERTIONS_OK",
-        ]
-    )
-    context = object()
-    observed: dict[str, object] = {}
-    monkeypatch.setattr(cli, "_runtime_context", lambda *_: context)
-
-    def capture_test(*test_args: object, **test_kwargs: object) -> None:
-        observed["args"] = test_args
-        observed["kwargs"] = test_kwargs
-
-    monkeypatch.setattr(cli, "run_server_test", capture_test)
-
-    cli._run_test(args, "server")
-
-    assert observed["args"] == (context, 900, "3G")
-    assert observed["kwargs"] == {
-        "command_test": command_test,
-        "test_mods": (test_mod,),
-        "required_log_markers": ("SERVER_ASSERTIONS_OK",),
-    }
-
-
-def test_runtime_context_rejects_wrong_side_before_loading_tools(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    descriptor = tmp_path / "instance.json"
-    descriptor.touch()
-    game_dir = tmp_path / "instance"
-    game_dir.mkdir()
-    instance = Instance("server", game_dir, "1.21.1", "neoforge", "21.1.233")
-    loaded: list[str] = []
-    monkeypatch.setattr(cli, "load_instance", lambda _path: instance)
-    monkeypatch.setattr(
-        cli, "load_client_runtime_tools", lambda: loaded.append("client")
-    )
-    monkeypatch.setattr(
-        cli, "load_server_runtime_tools", lambda: loaded.append("server")
-    )
-
-    with pytest.raises(RuntimeError, match="client test cannot consume a server"):
-        cli._runtime_context(descriptor, None, None, "client")
-
-    assert loaded == []
-
-
-def test_workspace_overlay_skips_mods_not_installed_on_instance_side(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    descriptor = tmp_path / "instance.json"
-    descriptor.touch()
-    server_dir = tmp_path / "server"
-    server_dir.mkdir()
-    common = SimpleNamespace(subject="common", pack_metafile=Path("common.pw.toml"))
-    client = SimpleNamespace(subject="client", pack_metafile=Path("client.pw.toml"))
-    pack = SimpleNamespace(kind="pack", path=tmp_path / "pack")
-    workspace = SimpleNamespace(
-        root=tmp_path,
-        component=lambda subject: pack,
-    )
-    args = SimpleNamespace(
-        artifact_dir=Path("artifacts"),
-        instance=descriptor,
-        pack_component="pack",
-    )
-    installed: list[tuple[str, str]] = []
-    monkeypatch.setattr(
-        cli, "_selected_mods", lambda _args: (workspace, (client, common))
-    )
-    monkeypatch.setattr(
-        cli,
-        "load_instance",
-        lambda _path: Instance("server", server_dir, "1.21.1", "neoforge", "21.1.233"),
-    )
-    monkeypatch.setattr(
-        cli,
-        "_pack_mod",
-        lambda _pack, mod: PackMod(
-            f"{mod.subject}-old.jar", "client" if mod is client else "both"
-        ),
-    )
-    monkeypatch.setattr(
-        cli,
-        "install_mod",
-        lambda _descriptor, artifact, *, replace_filename: installed.append(
-            (artifact.name, replace_filename)
-        ),
-    )
-
-    cli._run_overlay_components(args)
-
-    assert installed == [("common", "common-old.jar")]
-
-
-def test_gradle_check_combines_tasks_and_stages_outputs(
-    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
-    first = SimpleNamespace(
-        subject="first",
-        kind="neoforge-mod",
-        gradle_project=":mods:first",
-        path=tmp_path / "mods" / "first",
-    )
-    second = SimpleNamespace(
-        subject="second",
-        kind="neoforge-mod",
-        gradle_project=":mods:second",
-        path=tmp_path / "mods" / "second",
-    )
-    for component in (first, second):
-        libraries = component.path / "build" / "libs"
-        libraries.mkdir(parents=True)
-        (libraries / f"{component.subject}.jar").write_bytes(b"production")
-    test_libraries = second.path / "build" / "test-libs"
-    test_libraries.mkdir()
-    (test_libraries / "second-client-tests.jar").write_bytes(b"test")
-    components = {component.subject: component for component in (first, second)}
-    workspace = SimpleNamespace(
-        root=tmp_path,
-        component=lambda subject: components[subject],
-    )
+    workspace = SimpleNamespace(root=tmp_path)
     observed: dict[str, object] = {}
     monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
     monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
     monkeypatch.setattr(
         cli,
         "run_gradle",
-        lambda project, java, tasks: observed.update(
-            {"project": project, "java": java, "tasks": tasks}
-        ),
+        lambda *args, **kwargs: observed.update({"args": args, "kwargs": kwargs}),
     )
     args = cli._parser().parse_args(
         [
-            "gradle-check",
+            "gradle-task",
             "--workspace",
             str(tmp_path),
-            "--build-component",
-            "second",
-            "--build-component",
-            "first",
-            "--unit-component",
-            "first",
-            "--client-test-component",
-            "second",
+            "--task",
+            ":mods:example:test",
+            "--task",
+            ":mods:example:test",
+            "--work-dir",
+            "reports",
+            "--timeout",
+            "42",
         ]
     )
 
-    cli._run_gradle_check(args)
+    cli._run_gradle_task(args)
 
-    assert observed == {
-        "project": tmp_path,
-        "java": tmp_path / "jdk",
-        "tasks": (
-            ":mods:first:assemble",
-            ":mods:second:assemble",
-            ":mods:first:test",
-            ":mods:second:clientTestJar",
-        ),
+    assert observed["args"] == (
+        tmp_path,
+        tmp_path / "jdk",
+        (":mods:example:test",),
+    )
+    assert observed["kwargs"] == {
+        "log": tmp_path / "reports" / "gradle.log",
+        "timeout_seconds": 42,
+        "environment": None,
     }
-    assert (tmp_path / ".bertie-ci" / "artifacts" / "first" / "first.jar").is_file()
-    assert (
-        tmp_path / ".bertie-ci" / "client-test" / "second" / "client-test-mod.jar"
-    ).is_file()
 
 
-def test_streams_survive_characters_outside_the_ansi_code_page(
+def test_gradle_task_can_opt_into_an_isolated_wayland_session(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    workspace = SimpleNamespace(root=tmp_path)
+    observed: dict[str, object] = {}
+    tools = object()
+    monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+    monkeypatch.setattr(cli, "load_wayland_tools", lambda: tools)
+
+    @contextmanager
+    def session(selected: object, log: Path):
+        observed["session"] = (selected, log)
+        yield {"WAYLAND_DISPLAY": "wayland-bertie"}
+
+    monkeypatch.setattr(cli, "wayland_session", session)
+    monkeypatch.setattr(
+        cli,
+        "run_gradle",
+        lambda *args, **kwargs: observed.update({"args": args, "kwargs": kwargs}),
+    )
+    args = cli._parser().parse_args(
+        [
+            "gradle-task",
+            "--workspace",
+            str(tmp_path),
+            "--task",
+            ":runClientTests",
+            "--wayland",
+        ]
+    )
+
+    cli._run_gradle_task(args)
+
+    work = tmp_path / ".bertie-ci" / "gradle"
+    assert observed["session"] == (tools, work / "wayland.log")
+    assert observed["kwargs"]["environment"] == {  # type: ignore[index]
+        "WAYLAND_DISPLAY": "wayland-bertie"
+    }
+
+
+def test_pack_validation_generates_exact_component_task_before_reading_output(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    project = tmp_path / "pack"
+    project.mkdir()
+    component = SimpleNamespace(
+        subject="pack", kind="pack", path=project, gradle_project=":pack"
+    )
+    workspace = SimpleNamespace(
+        root=tmp_path,
+        component=lambda subject: component if subject == "pack" else None,
+    )
+    events: list[object] = []
+    monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+
+    def generate(root: Path, java_home: Path, tasks: object) -> None:
+        events.append(("gradle", root, java_home, tasks))
+        (project / "build" / "packwiz").mkdir(parents=True)
+
+    def validate(generated: Path, packwiz: Path) -> PackSummary:
+        events.append(("validate", generated, packwiz))
+        return PackSummary(1, 1, 0)
+
+    monkeypatch.setattr(cli, "run_gradle", generate)
+    monkeypatch.setattr(cli, "load_packwiz", lambda: Path("packwiz"))
+    monkeypatch.setattr(cli, "validate_pack", validate)
+    args = cli._parser().parse_args(
+        ["pack-validate", "--workspace", str(tmp_path), "--component", "pack"]
+    )
+
+    cli._run_pack_validate(args)
+
+    assert events == [
+        ("gradle", tmp_path, tmp_path / "jdk", [":pack:generatePackwiz"]),
+        ("validate", project / "build" / "packwiz", Path("packwiz")),
+    ]
+
+
+@pytest.mark.parametrize(
+    ("command", "runner_name", "loader_name", "suffix"),
+    [
+        ("pack-export-client", "_run_pack_export_client", "load_packwiz", ".mrpack"),
+        (
+            "pack-export-server",
+            "_run_pack_export_server",
+            "load_packwiz_installer",
+            ".zip",
+        ),
+    ],
+)
+def test_pack_exports_generate_standalone_project_before_export(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    command: str,
+    runner_name: str,
+    loader_name: str,
+    suffix: str,
+) -> None:
+    generated = tmp_path / "build" / "packwiz"
+    events: list[object] = []
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+
+    def generate(root: Path, java_home: Path, tasks: object) -> None:
+        events.append(("gradle", root, java_home, tasks))
+        generated.mkdir(parents=True)
+
+    def export(project: Path, output: Path, tool: Path, *extra: Path) -> Path:
+        events.append(("export", project, output, tool, *extra))
+        return output
+
+    monkeypatch.setattr(cli, "run_gradle", generate)
+    monkeypatch.setattr(cli, loader_name, lambda: Path("pack-tool"))
+    monkeypatch.setattr(
+        cli,
+        "export_client_pack" if command.endswith("client") else "export_server_pack",
+        export,
+    )
+    output = Path("release") / f"pack{suffix}"
+    args = cli._parser().parse_args(
+        [command, "--project", str(tmp_path), "--output", str(output)]
+    )
+
+    getattr(cli, runner_name)(args)
+
+    expected_export = ("export", generated, tmp_path / output, Path("pack-tool"))
+    if command.endswith("server"):
+        expected_export += (tmp_path / "README.md",)
+    assert events == [
+        ("gradle", tmp_path, tmp_path / "jdk", ["generatePackwiz"]),
+        expected_export,
+    ]
+
+
+def test_server_export_uses_component_task_and_source_readme(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    project = tmp_path / "pack"
+    project.mkdir()
+    readme = project / "README.md"
+    readme.write_text("# Pack\n", encoding="utf-8")
+    component = SimpleNamespace(
+        subject="pack", kind="pack", path=project, gradle_project=":pack"
+    )
+    workspace = SimpleNamespace(
+        root=tmp_path,
+        component=lambda subject: component if subject == "pack" else None,
+    )
+    events: list[object] = []
+    monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+
+    def generate(root: Path, java_home: Path, tasks: object) -> None:
+        events.append(("gradle", root, java_home, tasks))
+        (project / "build" / "packwiz").mkdir(parents=True)
+
+    def export(
+        generated: Path, output: Path, installer: Path, selected_readme: Path
+    ) -> Path:
+        events.append(("export", generated, output, installer, selected_readme))
+        return output
+
+    monkeypatch.setattr(cli, "run_gradle", generate)
+    monkeypatch.setattr(cli, "load_packwiz_installer", lambda: Path("installer.jar"))
+    monkeypatch.setattr(cli, "export_server_pack", export)
+    args = cli._parser().parse_args(
+        [
+            "pack-export-server",
+            "--workspace",
+            str(tmp_path),
+            "--component",
+            "pack",
+            "--output",
+            "release/pack.zip",
+        ]
+    )
+
+    cli._run_pack_export_server(args)
+
+    assert events == [
+        ("gradle", tmp_path, tmp_path / "jdk", [":pack:generatePackwiz"]),
+        (
+            "export",
+            project / "build" / "packwiz",
+            tmp_path / "release" / "pack.zip",
+            Path("installer.jar"),
+            readme,
+        ),
+    ]
+
+
+def test_streams_survive_characters_outside_the_console_code_page(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """A redirected stdout on Windows encodes as cp1252, and Minecraft logs do not."""
     buffer = io.BytesIO()
     stream = io.TextIOWrapper(buffer, encoding="cp1252")
     monkeypatch.setattr(sys, "stdout", stream)
@@ -256,3 +268,20 @@ def test_streams_survive_characters_outside_the_ansi_code_page(
     stream.flush()
 
     assert b"? progress" in buffer.getvalue()
+
+
+@pytest.mark.skipif(os.name != "posix", reason="POSIX signal behavior")
+def test_main_maps_sigterm_to_conventional_exit_code(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setattr(sys, "argv", ["bertie-ci", "plan"])
+    monkeypatch.setattr(
+        cli,
+        "_run_plan",
+        lambda _args: os.kill(os.getpid(), signal.SIGTERM),
+    )
+
+    with pytest.raises(SystemExit) as error:
+        cli.main()
+
+    assert error.value.code == 128 + signal.SIGTERM

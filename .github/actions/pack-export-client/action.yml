@@ -1,5 +1,5 @@
 name: Export client pack
-description: Export a packwiz component as a Modrinth pack
+description: Generate the side-aware packwiz tree and export it as a Modrinth pack
 
 inputs:
   component:

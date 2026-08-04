@@ -5,6 +5,7 @@ import io.github.bertie_mc.bertieprogression.altar.AltarOfAmethystRules;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Coerce;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
@@ -52,7 +53,7 @@ public abstract class AltarOfAmethystMixin {
      */
     @Inject(method = "cookingTick", at = @At("HEAD"), cancellable = true, remap = false)
     private static void bertieprogression$gate(Level level, BlockPos pos, BlockState state,
-            BlockEntity altar, CallbackInfo ci) {
+            @Coerce BlockEntity altar, CallbackInfo ci) {
         if (level.isClientSide) {
             return;
         }
@@ -67,7 +68,7 @@ public abstract class AltarOfAmethystMixin {
      */
     @Inject(method = "cookingTick", at = @At("TAIL"), remap = false)
     private static void bertieprogression$accelerate(Level level, BlockPos pos, BlockState state,
-            BlockEntity altar, CallbackInfo ci) {
+            @Coerce BlockEntity altar, CallbackInfo ci) {
         if (level.isClientSide) {
             return;
         }

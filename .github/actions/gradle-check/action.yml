@@ -8,10 +8,6 @@ inputs:
   unit:
     description: Unit-test matrix JSON from bertie-ci plan
     required: true
-  client:
-    description: Client-suite matrix JSON from bertie-ci plan
-    required: true
-
 runs:
   using: composite
   steps:
@@ -20,5 +16,4 @@ runs:
       env:
         BERTIE_BUILD_PLAN: ${{ inputs.build }}
         BERTIE_UNIT_PLAN: ${{ inputs.unit }}
-        BERTIE_CLIENT_PLAN: ${{ inputs.client }}
       run: python3 "$GITHUB_ACTION_PATH/run.py"

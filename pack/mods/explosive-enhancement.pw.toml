@@ -1,8 +1,0 @@
-name = "explosive-enhancement"
-filename = "explosiveenhancement-1.0.0.jar"
-side = "client"
-
-[download]
-url = "https://github.com/bertie-mc/explosive-enhancement/releases/download/v1.0.0/explosiveenhancement-1.0.0.jar"
-hash-format = "sha256"
-hash = "7df3d7b4bf6e8087ebcac70c190b4a457dc7dd5800062e03f81c64336e54b291"

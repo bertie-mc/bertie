@@ -29,8 +29,7 @@ extensions.configure<NeoForgeExtension> {
 }
 
 dependencies {
-    add(
-        "compileOnly",
+    compileOnly(
         fileTree(extractedLibraries) {
             include("*.jar")
         }.builtBy(extractJarJarLibraries),

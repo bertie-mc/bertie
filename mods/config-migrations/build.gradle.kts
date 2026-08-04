@@ -5,16 +5,28 @@ plugins {
 }
 
 dependencies {
-    compileOnly(libs.cloth.config)
+    compileOnly(mods.clothConfig)
     compileOnly(libs.jankson)
-    compileOnly(libs.resourceful.config)
-    compileOnly(libs.supermartijn642.config.lib)
+    compileOnly(mods.resourcefulConfig)
+    compileOnly(mods.supermartijn642sConfigLib)
     compileOnly(libs.tomlkt)
-    clientTestCompileOnly(libs.fzzy.config)
-    clientTestCompileOnly(libs.iceberg)
-    clientTestCompileOnly(libs.owo.lib)
-    clientTestCompileOnly(libs.wunderlib.neoforge)
+    clienttestCompileOnly(mods.fzzyConfig)
+    clienttestCompileOnly(mods.iceberg)
+    clienttestCompileOnly(mods.owoLib)
+    clienttestCompileOnly(mods.wunderlibNeoforge)
+
+    clienttestRuntimeOnly(mods.artifacts)
+    clienttestRuntimeOnly(mods.clothConfig)
+    clienttestRuntimeOnly(mods.curios)
+    clienttestRuntimeOnly(mods.fzzyConfig)
+    clienttestRuntimeOnly(mods.iceberg)
+    clienttestRuntimeOnly(mods.kotlinForForge)
+    clienttestRuntimeOnly(mods.owoLib)
+    clienttestRuntimeOnly(mods.resourcefulConfig)
+    clienttestRuntimeOnly(mods.supermartijn642sConfigLib)
+    clienttestRuntimeOnly(mods.wunderlibNeoforge)
+
     testImplementation(libs.jankson)
-    testImplementation(libs.supermartijn642.config.lib)
+    testImplementation(mods.supermartijn642sConfigLib)
     testImplementation(libs.tomlkt)
 }

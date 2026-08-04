@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-    compileOnly(libs.forbidden.arcanus)
-    compileOnly(libs.valhelsia.core)
+    compileOnly(mods.forbiddenArcanus)
+    compileOnly(mods.valhelsiaCore)
 }

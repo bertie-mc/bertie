@@ -17,7 +17,7 @@ val mockitoAgentDependency = dependencies.create(mockito.get()) as ExternalModul
 mockitoAgentDependency.isTransitive = false
 
 dependencies {
-    add("testImplementation", mockito)
+    testImplementation(mockito)
     add(mockitoAgent.name, mockitoAgentDependency)
 }
 

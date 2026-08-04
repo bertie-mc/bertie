@@ -22,7 +22,6 @@ jobs:
       unit: ${{ steps.plan.outputs.unit }}
       gametest: ${{ steps.plan.outputs.gametest }}
       client: ${{ steps.plan.outputs.client }}
-      server: ${{ steps.plan.outputs.server }}
       validate: ${{ steps.plan.outputs.validate }}
     steps:
       - name: Checkout
@@ -40,23 +39,47 @@ jobs:
   infrastructure:
     name: Shared infrastructure
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
+        with:
+          gradle-cache: true
 
       - name: Check Nix flake
         run: nix flake check
 
+      - name: Test Gradle infrastructure
+        uses: ./.github/actions/gradle-task
+        with:
+          task: testInfrastructure
+          work-dir: .bertie-ci/infrastructure
+          timeout: 1200
+
+      - name: Upload infrastructure-test reports
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: infrastructure-${{ github.sha }}
+          path: |
+            .bertie-ci/infrastructure/
+            build-logic/build/reports/tests/
+            build-logic/build/test-results/
+            testing/*/build/reports/tests/
+            testing/*/build/test-results/
+          if-no-files-found: warn
+          include-hidden-files: true
+          retention-days: 14
+
   gradle:
-    name: Affected Gradle checks
+    name: Affected builds and unit tests
     needs: plan
     if: needs.plan.outputs.build != '[]' || needs.plan.outputs.unit != '[]'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -67,34 +90,27 @@ jobs:
           gradle-cache: true
           gradle-cache-read-only: false
 
-      - name: Build and test affected components
+      - name: Run affected tasks
         uses: ./.github/actions/gradle-check
         with:
           build: ${{ needs.plan.outputs.build }}
           unit: ${{ needs.plan.outputs.unit }}
-          client: ${{ needs.plan.outputs.client }}
 
-      - name: Upload Gradle outputs
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: gradle-${{ github.sha }}
-          path: .bertie-ci/gradle-output/
-          if-no-files-found: error
-          retention-days: 14
-
-      - name: Upload unit-test reports
+      - name: Upload Gradle reports
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: unit-${{ github.sha }}
+          name: gradle-${{ github.sha }}
           path: |
-            mods/**/build/reports/tests/
-            mods/**/build/test-results/
+            .bertie-ci/gradle/
+            **/build/reports/tests/
+            **/build/test-results/
           if-no-files-found: warn
+          include-hidden-files: true
           retention-days: 14
 
   gametest:
-    name: GameTest / ${{ matrix.subject }} / ${{ matrix.suite }}
+    name: GameTest / ${{ matrix.subject }}
     needs: plan
     if: needs.plan.outputs.gametest != '[]'
     strategy:
@@ -102,7 +118,7 @@ jobs:
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.gametest) }}
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 85
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -113,138 +129,70 @@ jobs:
           gradle-cache: true
 
       - name: Run GameTests
-        uses: ./.github/actions/gametest
+        uses: ./.github/actions/gradle-task
         with:
-          component: ${{ matrix.subject }}
-          work-dir: .bertie-ci/gametest/${{ matrix.subject }}/${{ matrix.suite }}
+          task: ${{ matrix.task }}
+          work-dir: .bertie-ci/gametest/${{ matrix.subject }}
           timeout: ${{ matrix.timeout }}
 
-      - name: Upload GameTest log
+      - name: Upload GameTest reports
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: gametest-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
-          path: .bertie-ci/gametest/${{ matrix.subject }}/${{ matrix.suite }}/gametest.log
+          name: gametest-${{ matrix.subject }}-${{ github.sha }}
+          path: |
+            .bertie-ci/gametest/${{ matrix.subject }}/
+            ${{ matrix.project }}/build/reports/
+            ${{ matrix.project }}/build/test-results/gametest/
+            ${{ matrix.project }}/build/runs/gametest/
           if-no-files-found: warn
+          include-hidden-files: true
           retention-days: 14
 
   client:
-    name: Client / ${{ matrix.subject }} / ${{ matrix.suite }}
-    needs: [plan, gradle]
+    name: Client tests / ${{ matrix.subject }}
+    needs: plan
     if: needs.plan.outputs.client != '[]'
     strategy:
       fail-fast: false
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.client) }}
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
-
-      - name: Restore Minecraft runtime cache
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
-          path: .bertie-ci/cache/minecraft
-          key: bertie-ci-minecraft-${{ runner.os }}-client-${{ hashFiles('tools/bertie-ci/versions.json') }}
+          gradle-cache: true
 
-      - name: Download Gradle outputs
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+      - name: Run client tests
+        uses: ./.github/actions/gradle-task
         with:
-          name: gradle-${{ github.sha }}
-          path: .bertie-ci/gradle-output
-
-      - name: Prepare client instance
-        uses: ./.github/actions/prepare-mod-instance
-        with:
-          component: ${{ matrix.subject }}
-          artifact: .bertie-ci/gradle-output/artifacts/${{ matrix.subject }}
-          fixture: ${{ matrix.fixture }}
-          instance-files: ${{ matrix.instance_files }}
-          side: client
-          output-dir: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}
-
-      - name: Run client suite
-        uses: ./.github/actions/client-test
-        with:
-          instance: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/instance.json
-          work-dir: .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}
-          test-mod: ${{ matrix.build_client_test_mod && format('.bertie-ci/gradle-output/client-test/{0}/client-test-mod.jar', matrix.subject) || '' }}
-          minimum-game-tests: ${{ matrix.minimum_game_tests }}
-          require-log: ${{ toJSON(matrix.require_log) }}
+          task: ${{ matrix.task }}
+          work-dir: .bertie-ci/client/${{ matrix.subject }}
           timeout: ${{ matrix.timeout }}
-          max-memory: ${{ matrix.max_memory }}
+          wayland: true
 
-      - name: Upload client logs
+      - name: Upload client-test reports
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: client-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
+          name: client-${{ matrix.subject }}-${{ github.sha }}
           path: |
-            .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/**/*.log
-            .bertie-ci/client/${{ matrix.subject }}/${{ matrix.suite }}/**/crash-reports/
+            .bertie-ci/client/${{ matrix.subject }}/
+            ${{ matrix.project }}/build/reports/
+            ${{ matrix.project }}/build/test-results/clienttest/
+            ${{ matrix.project }}/build/test-diagnostics/clienttest/
+            ${{ matrix.project }}/build/runs/clienttest/
           if-no-files-found: warn
-          retention-days: 14
-
-  server:
-    name: Server / ${{ matrix.subject }} / ${{ matrix.suite }}
-    needs: [plan, gradle]
-    if: needs.plan.outputs.server != '[]'
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.server) }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 35
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Set up dependencies
-        uses: ./.github/actions/setup
-
-      - name: Download Gradle outputs
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-        with:
-          name: gradle-${{ github.sha }}
-          path: .bertie-ci/gradle-output
-
-      - name: Prepare server instance
-        uses: ./.github/actions/prepare-mod-instance
-        with:
-          component: ${{ matrix.subject }}
-          artifact: .bertie-ci/gradle-output/artifacts/${{ matrix.subject }}
-          fixture: ${{ matrix.fixture }}
-          instance-files: ${{ matrix.instance_files }}
-          side: server
-          output-dir: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}
-
-      - name: Run server suite
-        uses: ./.github/actions/server-test
-        with:
-          instance: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/instance.json
-          work-dir: .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}
-          command-test: ${{ matrix.project }}/${{ matrix.command_test }}
-          require-log: ${{ toJSON(matrix.require_log) }}
-          timeout: ${{ matrix.timeout }}
-          max-memory: ${{ matrix.max_memory }}
-
-      - name: Upload server logs
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: server-${{ matrix.subject }}-${{ matrix.suite }}-${{ github.sha }}
-          path: |
-            .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/**/*.log
-            .bertie-ci/server/${{ matrix.subject }}/${{ matrix.suite }}/**/crash-reports/
-          if-no-files-found: warn
+          include-hidden-files: true
           retention-days: 14
 
   validate:
-    name: Validate / ${{ matrix.subject }} / ${{ matrix.suite }}
+    name: Validate / ${{ matrix.subject }}
     needs: plan
     if: needs.plan.outputs.validate != '[]'
     strategy:
@@ -259,8 +207,58 @@ jobs:
 
       - name: Set up dependencies
         uses: ./.github/actions/setup
+        with:
+          gradle-cache: true
 
-      - name: Validate pack
+      - name: Structurally validate generated pack
         uses: ./.github/actions/pack-validate
         with:
           component: ${{ matrix.subject }}
+
+  required:
+    name: Required checks
+    needs: [plan, infrastructure, gradle, gametest, client, validate]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Summarize required jobs
+        shell: bash
+        env:
+          PLAN_RESULT: ${{ needs.plan.result }}
+          INFRASTRUCTURE_RESULT: ${{ needs.infrastructure.result }}
+          GRADLE_RESULT: ${{ needs.gradle.result }}
+          GAMETEST_RESULT: ${{ needs.gametest.result }}
+          CLIENT_RESULT: ${{ needs.client.result }}
+          VALIDATE_RESULT: ${{ needs.validate.result }}
+        run: |
+          results=(
+            "Plan:$PLAN_RESULT"
+            "Infrastructure:$INFRASTRUCTURE_RESULT"
+            "Gradle:$GRADLE_RESULT"
+            "GameTests:$GAMETEST_RESULT"
+            "Client tests:$CLIENT_RESULT"
+            "Pack validation:$VALIDATE_RESULT"
+          )
+          {
+            echo "### Required checks"
+            echo
+            echo "| Job | Result |"
+            echo "| --- | --- |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          failed=false
+          for entry in "${results[@]}"; do
+            job="${entry%%:*}"
+            result="${entry#*:}"
+            echo "| $job | $result |" >> "$GITHUB_STEP_SUMMARY"
+            case "$result" in
+              success | skipped) ;;
+              *) failed=true ;;
+            esac
+          done
+
+          if [[ "$failed" == true ]]; then
+            echo "One or more required jobs failed or were cancelled." >&2
+            exit 1
+          fi

@@ -1,38 +1,35 @@
 from __future__ import annotations
 
 import shutil
-import subprocess
 import tempfile
 import zipfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any
 
 import tomllib
 
-from .instance import read_pack_versions
 from .process import run
 
 
 @dataclass(frozen=True)
 class PackSummary:
     metafiles: int
-    client: int
-    server: int
-    both: int
+    local_mod_jars: int
     config_files: int
-
-
-PackSide = Literal["client", "server", "both"]
 
 
 @dataclass(frozen=True)
 class PackMod:
     filename: str
-    side: PackSide
+    side: str
 
-    def applies_to(self, side: Literal["client", "server"]) -> bool:
-        return self.side == "both" or self.side == side
+
+_TARGET_SIDES = {
+    "client": frozenset({"client"}),
+    "server": frozenset({"server"}),
+    "both": frozenset({"client", "server"}),
+}
 
 
 def _toml(path: Path) -> dict[str, Any]:
@@ -43,6 +40,24 @@ def _toml(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise RuntimeError(f"Invalid TOML document: {path}")
     return data
+
+
+def _pack_versions(project: Path) -> tuple[str, str, str]:
+    versions = _toml(project / "pack.toml").get("versions")
+    if not isinstance(versions, dict):
+        raise RuntimeError(f"Missing [versions] in {project / 'pack.toml'}")
+    minecraft = versions.get("minecraft")
+    loaders = [
+        (name, versions[name])
+        for name in ("neoforge",)
+        if isinstance(versions.get(name), str)
+    ]
+    if not isinstance(minecraft, str) or len(loaders) != 1:
+        raise RuntimeError(
+            "Pack must declare one supported loader and a Minecraft version"
+        )
+    loader, loader_version = loaders[0]
+    return minecraft, loader, loader_version
 
 
 def _relative_file(root: Path, value: object, label: str) -> Path:
@@ -96,51 +111,22 @@ def read_pack_mod(project: Path, relative: Path) -> PackMod:
             f"Invalid download filename in {path.relative_to(project.resolve())}"
         )
     side = metadata.get("side")
-    if side not in ("client", "server", "both"):
+    if side not in _TARGET_SIDES:
         raise RuntimeError(
-            "Metafile must declare side as client, server, or both: "
-            f"{path.relative_to(project.resolve())}"
+            f"Invalid artifact side in {path.relative_to(project.resolve())}: {side!r}"
         )
     return PackMod(filename, side)
-
-
-def _tracked_jars(project: Path) -> list[str]:
-    repository = subprocess.run(
-        ["git", "rev-parse", "--show-toplevel"],
-        cwd=project,
-        check=False,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
-    if repository.returncode != 0:
-        return []
-    result = subprocess.run(
-        ["git", "ls-files", "--", "*.jar"],
-        cwd=project,
-        check=True,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
-    return [line for line in result.stdout.splitlines() if line]
 
 
 def validate_pack(project: Path, packwiz: Path) -> PackSummary:
     project = project.resolve(strict=True)
     source_index, _ = _pack_index(project)
     source_pack = project / "pack.toml"
-    read_pack_versions(project)
+    _pack_versions(project)
 
     with tempfile.TemporaryDirectory(prefix="bertie-ci-pack-") as temporary:
         copy = Path(temporary) / "pack"
-        shutil.copytree(
-            project,
-            copy,
-            ignore=shutil.ignore_patterns(".git", ".bertie-ci", ".packwizcache"),
-        )
+        shutil.copytree(project, copy)
         copied_index, _ = _pack_index(copy)
         run([packwiz, "refresh"], cwd=copy)
         stale = [
@@ -157,43 +143,48 @@ def validate_pack(project: Path, packwiz: Path) -> PackSummary:
         ]
         if stale:
             raise RuntimeError(
-                f"Pack index is stale ({', '.join(stale)}); run packwiz refresh and commit it"
+                "Generated pack is not normalized by packwiz refresh "
+                f"({', '.join(stale)})"
             )
 
-    sides = {"client": 0, "server": 0, "both": 0}
-    filenames: dict[str, list[str]] = {}
+    targets: dict[str, list[tuple[str, frozenset[str]]]] = {}
     metafiles = 0
+    local_mod_jars = 0
     for path, is_metafile in indexed_files(project):
         relative = path.relative_to(project)
-        if relative.parts[0] == ".bertie-ci":
-            raise RuntimeError(f"Generated bertie-ci state is indexed: {relative}")
         if not is_metafile:
             if path.suffix.lower() == ".jar":
-                raise RuntimeError(f"Indexed mod JAR is forbidden: {relative}")
+                local_mod_jars += 1
+                targets.setdefault(relative.as_posix().casefold(), []).append(
+                    (relative.as_posix(), _TARGET_SIDES["both"])
+                )
             continue
         metafiles += 1
         metadata = read_pack_mod(project, path.relative_to(project))
-        sides[metadata.side] += 1
-        filenames.setdefault(metadata.filename.casefold(), []).append(
-            path.relative_to(project).as_posix()
+        target = relative.parent / metadata.filename
+        targets.setdefault(target.as_posix().casefold(), []).append(
+            (relative.as_posix(), _TARGET_SIDES[metadata.side])
         )
 
-    duplicates = {name: paths for name, paths in filenames.items() if len(paths) > 1}
+    duplicates = {
+        name: [path for path, _ in entries]
+        for name, entries in targets.items()
+        if any(
+            sides & other_sides
+            for index, (_, sides) in enumerate(entries)
+            for _, other_sides in entries[index + 1 :]
+        )
+    }
     if duplicates:
         detail = "; ".join(
             f"{name}: {', '.join(paths)}" for name, paths in duplicates.items()
         )
         raise RuntimeError(f"Duplicate target filenames: {detail}")
-    tracked = _tracked_jars(project)
-    if tracked:
-        raise RuntimeError(f"Tracked mod JARs are forbidden: {', '.join(tracked)}")
     config = project / "config"
     config_files = (
         sum(1 for path in config.rglob("*") if path.is_file()) if config.is_dir() else 0
     )
-    return PackSummary(
-        metafiles, sides["client"], sides["server"], sides["both"], config_files
-    )
+    return PackSummary(metafiles, local_mod_jars, config_files)
 
 
 def export_client_pack(project: Path, output: Path, packwiz: Path) -> Path:
@@ -203,11 +194,7 @@ def export_client_pack(project: Path, output: Path, packwiz: Path) -> Path:
     output.unlink(missing_ok=True)
     with tempfile.TemporaryDirectory(prefix="bertie-ci-client-export-") as temporary:
         copy = Path(temporary) / "pack"
-        shutil.copytree(
-            project,
-            copy,
-            ignore=shutil.ignore_patterns(".git", ".bertie-ci", ".packwizcache"),
-        )
+        shutil.copytree(project, copy)
         run([packwiz, "modrinth", "export", "-o", output], cwd=copy)
     if not output.is_file():
         raise RuntimeError(f"packwiz did not create {output}")
@@ -268,12 +255,14 @@ def _zip_tree(source: Path, output: Path) -> None:
                 archive.write(path, path.relative_to(source.parent).as_posix())
 
 
-def export_server_pack(project: Path, output: Path, installer: Path) -> Path:
+def export_server_pack(
+    project: Path, output: Path, installer: Path, readme: Path | None
+) -> Path:
     project = project.resolve(strict=True)
     output = output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
     output.unlink(missing_ok=True)
-    _, loader, loader_version = read_pack_versions(project)
+    _, loader, loader_version = _pack_versions(project)
     if loader != "neoforge":
         raise RuntimeError(f"Server export does not support loader {loader}")
     with tempfile.TemporaryDirectory(prefix="bertie-ci-server-export-") as temporary:
@@ -289,8 +278,7 @@ def export_server_pack(project: Path, output: Path, installer: Path) -> Path:
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, target)
         shutil.copy2(installer, root / "packwiz-installer.jar")
-        readme = project / "README.md"
-        if readme.is_file():
+        if readme is not None and readme.is_file():
             shutil.copy2(readme, root / "README.md")
         _write_server_scripts(root, loader_version)
         _zip_tree(root, output)

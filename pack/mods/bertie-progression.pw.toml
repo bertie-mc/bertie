@@ -1,8 +1,0 @@
-name = "bertie-progression"
-filename = "bertieprogression-0.26.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/bertie/releases/download/bertie-progression/v0.26.0/bertieprogression-0.26.0.jar"
-hash-format = "sha256"
-hash = "0b02ffa2994b48768eef9573eab2dc442d922873a62adade94192bc243851aeb"

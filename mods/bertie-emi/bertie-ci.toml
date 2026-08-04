@@ -1,20 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "bertie-emi"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-emi"
-mod-id = "bertieemi"
-pack-metafile = "mods/bertie-emi.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "emi-registration"
-runner = "client"
-fixtures = ["emi", "forbidden-arcanus"]
-require-log = ["Bertie EMI integrations registered successfully"]

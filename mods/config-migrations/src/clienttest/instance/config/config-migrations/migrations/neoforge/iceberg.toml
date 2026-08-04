@@ -1,0 +1,10 @@
+mod = "configmigrations_clienttests"
+type = "COMMON"
+file = "configmigrations_clienttests.toml"
+
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment]
+migratedValue = 79

@@ -8,7 +8,7 @@ plugins {
 dependencies {
     // The pack supplies these hard dependencies. Compile against their precise API
     // artifacts without bundling or resolving unrelated transitives.
-    compileOnly(variantOf(libs.create.maven) { classifier("slim") }) {
+    compileOnly(variantOf(mods.create) { classifier("slim") }) {
         isTransitive = false
     }
     compileOnly(libs.ponder) {
@@ -17,14 +17,14 @@ dependencies {
     compileOnly(libs.flywheel) {
         isTransitive = false
     }
-    compileOnly(libs.refined.storage) {
+    compileOnly(mods.refinedStorage) {
         isTransitive = false
     }
 
-    testImplementation(libs.refined.storage) {
+    testImplementation(mods.refinedStorage) {
         isTransitive = false
     }
-    testCompileOnly(variantOf(libs.create.maven) { classifier("slim") }) {
+    testCompileOnly(variantOf(mods.create) { classifier("slim") }) {
         isTransitive = false
     }
     testCompileOnly(libs.ponder) {
@@ -33,7 +33,7 @@ dependencies {
     testCompileOnly(libs.flywheel) {
         isTransitive = false
     }
-    testRuntimeOnly(libs.create.maven) {
+    testRuntimeOnly(mods.create) {
         isTransitive = false
     }
 }

@@ -5,5 +5,5 @@ plugins {
 }
 
 dependencies {
-    runtimeOnly(libs.berries.and.cherries)
+    runtimeOnly(mods.berriesAndCherries)
 }

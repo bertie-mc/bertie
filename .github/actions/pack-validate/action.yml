@@ -1,5 +1,5 @@
 name: Validate pack
-description: Refresh and inspect a packwiz component in a temporary copy
+description: Generate the packwiz output with Gradle, then structurally validate it read-only
 
 inputs:
   component:

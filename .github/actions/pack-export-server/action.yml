@@ -1,5 +1,5 @@
 name: Export server pack
-description: Export a no-mod-JAR server installer archive
+description: Generate the side-aware packwiz tree and export it as a server archive
 
 inputs:
   component:

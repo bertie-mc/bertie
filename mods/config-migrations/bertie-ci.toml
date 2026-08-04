@@ -1,39 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "config-migrations"
 kind = "neoforge-mod"
 gradle-project = ":mods:config-migrations"
-mod-id = "configmigrations"
-pack-metafile = "mods/config-migrations.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "minimal"
-runner = "client"
-
-[[suite]]
-id = "integrations"
-runner = "client"
-instance-files = "src/clientTest/instance"
-fixtures = [
-    "artifacts",
-    "cloth-config",
-    "fzzy-config",
-    "iceberg",
-    "kotlin-for-forge",
-    "owo-lib",
-    "resourceful-config",
-    "supermartijn642s-config-lib",
-    "wunderlib-neoforge",
-]
-build-client-test-mod = true
-require-log = [
-    "CONFIG_MIGRATIONS_CLIENT_MIGRATIONS_OK",
-    "CONFIG_MIGRATIONS_SERVER_MIGRATION_OK",
-]

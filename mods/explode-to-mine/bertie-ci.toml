@@ -1,14 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "explode-to-mine"
 kind = "neoforge-mod"
 gradle-project = ":mods:explode-to-mine"
-mod-id = "explodetomine"
-pack-metafile = "mods/explode-to-mine.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"

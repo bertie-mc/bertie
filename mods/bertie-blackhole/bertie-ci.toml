@@ -1,21 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "bertie-blackhole"
 kind = "neoforge-mod"
 gradle-project = ":mods:bertie-blackhole"
-mod-id = "bertieblackhole"
-pack-metafile = "mods/bertie-blackhole.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "mixin-contract"
-runner = "client"
-fixtures = ["forbidden-arcanus"]
-build-client-test-mod = true
-require-log = ["BERTIE_BLACKHOLE_MIXINS_OK"]

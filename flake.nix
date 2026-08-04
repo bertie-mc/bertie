@@ -37,9 +37,7 @@
           ...
         }:
         let
-          bertie-ci = pkgs.callPackage ./tools/bertie-ci/nix/package.nix {
-            bertie-pack = ./pack;
-          };
+          bertie-ci = pkgs.callPackage ./tools/bertie-ci/nix/package.nix { };
           ci-tools = pkgs.buildEnv {
             name = "bertie-ci-tools";
             paths = [

@@ -28,9 +28,6 @@ def main() -> None:
     component = os.environ.get("BERTIE_PLAN_COMPONENT", "")
     if component:
         command.extend(("--component", component))
-    if enabled("BERTIE_PLAN_INCLUDE_MANUAL"):
-        command.append("--include-manual")
-
     result = subprocess.run(
         command,
         check=True,
@@ -41,7 +38,7 @@ def main() -> None:
     plan = json.loads(result.stdout)
     output = Path(os.environ["GITHUB_OUTPUT"])
     with output.open("a", encoding="utf-8") as stream:
-        for name in ("build", "unit", "gametest", "client", "server", "validate"):
+        for name in ("build", "unit", "gametest", "client", "validate"):
             value = json.dumps(plan[name], separators=(",", ":"))
             stream.write(f"{name}={value}\n")
 

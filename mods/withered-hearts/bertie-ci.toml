@@ -1,20 +1,8 @@
-format = "bertie-ci.component.v1"
+format = "bertie-ci.component.v2"
 subject = "withered-hearts"
 kind = "neoforge-mod"
 gradle-project = ":mods:withered-hearts"
-mod-id = "witheredhearts"
-pack-metafile = "mods/withered-hearts.pw.toml"
 
 [version]
 file = "mod.properties"
 key = "mod_version"
-
-[[suite]]
-id = "unit"
-runner = "unit"
-
-[[suite]]
-id = "gui-mixin"
-runner = "client"
-build-client-test-mod = true
-require-log = ["WITHERED_HEARTS_GUI_MIXIN_OK"]

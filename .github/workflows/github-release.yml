@@ -37,7 +37,7 @@ jobs:
           path: .bertie-ci/release
 
       - name: Create GitHub release
-        uses: bertie-mc/bertie/.github/actions/github-release@bertie-ci/v5.0.0
+        uses: bertie-mc/bertie/.github/actions/github-release@bertie-ci/v6.0.0
         with:
           files: ${{ inputs.files }}
           name: ${{ inputs.name }}

@@ -1,8 +1,0 @@
-name = "bertie-filters"
-filename = "bertiefilters-2.0.0.jar"
-side = "both"
-
-[download]
-url = "https://github.com/bertie-mc/bertie/releases/download/bertie-filters/v2.0.0/bertiefilters-2.0.0.jar"
-hash-format = "sha256"
-hash = "8768f9ba52e6ace0d241e672acacff2454d4c77be2ba0721c98c605e2ec39a2f"

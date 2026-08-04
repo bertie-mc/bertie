@@ -1,7 +1,0 @@
-{
-  "client": [
-    "collective",
-    "hide-experimental-warning"
-  ],
-  "server": []
-}

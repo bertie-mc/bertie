@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    compileOnly(libs.ftb.filter.system)
-    compileOnly(libs.architectury.neoforge)
-    compileOnly(libs.slag)
+    compileOnly(mods.ftbFilterSystem)
+    compileOnly(mods.architecturyApi)
+    compileOnly(mods.slagNEmbers)
 }

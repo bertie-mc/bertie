@@ -1,46 +1,19 @@
 from __future__ import annotations
 
-import json
 import os
 import shutil
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
 
 
 @dataclass(frozen=True)
-class Versions:
-    minecraft: str
-    neoforge: str
-    java: str
-    headlessmc: str
-    mc_runtime_test: str
-    packwiz_installer: str
-
-
-@dataclass(frozen=True)
-class PackTools:
-    java: Path
-    packwiz_installer: Path
-
-
-@dataclass(frozen=True)
-class FixtureTools(PackTools):
-    fixtures: Path
-    fixture_pack: Path | None
-
-
-@dataclass(frozen=True)
-class ServerRuntimeTools:
-    java: Path
-    headlessmc: Path
-
-
-@dataclass(frozen=True)
-class ClientRuntimeTools(ServerRuntimeTools):
-    mc_runtime_test: Path
-    xvfb: Path | None
-    glxinfo: Path | None
+class WaylandTools:
+    sway: Path
+    seat_keyboard: Path
+    glfw: Path
+    library_path: str | None = None
+    gl_drivers_path: str | None = None
+    egl_vendor_library_filenames: str | None = None
 
 
 def load_packwiz() -> Path:
@@ -69,25 +42,6 @@ def load_packwiz_installer() -> Path:
     return installer
 
 
-def _versions_path() -> Path:
-    configured = os.environ.get("BERTIE_CI_VERSIONS")
-    if configured:
-        return Path(configured)
-    return Path(__file__).resolve().parents[2] / "versions.json"
-
-
-def load_versions() -> Versions:
-    data: dict[str, Any] = json.loads(_versions_path().read_text(encoding="utf-8"))
-    return Versions(
-        minecraft=data["minecraft"],
-        neoforge=data["neoforge"],
-        java=data["java"],
-        headlessmc=data["headlessmc"]["version"],
-        mc_runtime_test=data["mc_runtime_test"]["version"],
-        packwiz_installer=data["packwiz_installer"]["version"],
-    )
-
-
 def load_java() -> Path:
     java_home = os.environ.get("BERTIE_CI_JAVA_HOME") or os.environ.get("JAVA_HOME")
     java_name = "java.exe" if os.name == "nt" else "java"
@@ -101,67 +55,43 @@ def load_java() -> Path:
     return java
 
 
-def _configured_file(variable: str, label: str) -> Path:
-    configured = os.environ.get(variable)
-    if not configured:
+def load_wayland_tools() -> WaylandTools:
+    configured_sway = os.environ.get("BERTIE_CI_SWAY")
+    sway = Path(configured_sway) if configured_sway else None
+    if sway is None:
+        discovered = shutil.which("sway")
+        sway = Path(discovered) if discovered else None
+    if sway is None or not sway.is_file():
         raise RuntimeError(
-            f"{label} is unavailable; set {variable} or run through the Nix flake"
+            "Sway is unavailable; set BERTIE_CI_SWAY or run through the Nix flake"
         )
-    path = Path(configured)
-    if not path.is_file():
-        raise RuntimeError(f"{label} not found at {path}")
-    return path
 
+    configured_keyboard = os.environ.get("BERTIE_CI_WAYLAND_SEAT_KEYBOARD")
+    seat_keyboard = Path(configured_keyboard) if configured_keyboard else None
+    if seat_keyboard is None:
+        discovered = shutil.which("bertie-wayland-seat-keyboard")
+        seat_keyboard = Path(discovered) if discovered else None
+    if seat_keyboard is None or not seat_keyboard.is_file():
+        raise RuntimeError(
+            "The bertie-ci Wayland seat keyboard is unavailable; set "
+            "BERTIE_CI_WAYLAND_SEAT_KEYBOARD or run through the Nix flake"
+        )
 
-def load_pack_tools() -> PackTools:
-    return PackTools(load_java(), load_packwiz_installer())
+    configured_glfw = os.environ.get("BERTIE_CI_WAYLAND_GLFW")
+    if not configured_glfw:
+        raise RuntimeError(
+            "Wayland-capable GLFW is unavailable; set BERTIE_CI_WAYLAND_GLFW or "
+            "run through the Nix flake"
+        )
+    glfw = Path(configured_glfw)
+    if not glfw.is_file():
+        raise RuntimeError(f"Wayland-capable GLFW not found at {glfw}")
 
-
-def load_fixture_tools() -> FixtureTools:
-    fixture_root = os.environ.get("BERTIE_CI_FIXTURES")
-    fixtures = (
-        Path(fixture_root)
-        if fixture_root
-        else Path(__file__).resolve().parents[2] / "fixtures"
+    return WaylandTools(
+        sway,
+        seat_keyboard,
+        glfw,
+        os.environ.get("BERTIE_CI_WAYLAND_LIBRARY_PATH"),
+        os.environ.get("BERTIE_CI_WAYLAND_GL_DRIVERS_PATH"),
+        os.environ.get("BERTIE_CI_WAYLAND_EGL_VENDOR_LIBRARY_FILENAMES"),
     )
-    fixture_pack_root = os.environ.get("BERTIE_CI_FIXTURE_PACK")
-    tools = FixtureTools(
-        java=load_java(),
-        packwiz_installer=load_packwiz_installer(),
-        fixtures=fixtures,
-        fixture_pack=Path(fixture_pack_root) if fixture_pack_root else None,
-    )
-    if not tools.fixtures.is_dir():
-        raise RuntimeError(f"Fixture profiles not found at {tools.fixtures}")
-    if tools.fixture_pack is not None and not (
-        (tools.fixture_pack / "pack.toml").is_file()
-        and (tools.fixture_pack / "mods").is_dir()
-    ):
-        raise RuntimeError(f"Canonical fixture pack not found at {tools.fixture_pack}")
-    return tools
-
-
-def load_server_runtime_tools() -> ServerRuntimeTools:
-    return ServerRuntimeTools(
-        java=load_java(),
-        headlessmc=_configured_file("BERTIE_CI_HEADLESSMC_JAR", "HeadlessMC"),
-    )
-
-
-def load_client_runtime_tools() -> ClientRuntimeTools:
-    xvfb = os.environ.get("BERTIE_CI_XVFB")
-    glxinfo = os.environ.get("BERTIE_CI_GLXINFO")
-    tools = ClientRuntimeTools(
-        java=load_java(),
-        headlessmc=_configured_file("BERTIE_CI_HEADLESSMC_JAR", "HeadlessMC"),
-        mc_runtime_test=_configured_file("BERTIE_CI_MCRT_JAR", "mc-runtime-test"),
-        xvfb=Path(xvfb) if xvfb else None,
-        glxinfo=Path(glxinfo) if glxinfo else None,
-    )
-    for name, path in (
-        ("Xvfb", tools.xvfb),
-        ("glxinfo", tools.glxinfo),
-    ):
-        if path is not None and not path.is_file():
-            raise RuntimeError(f"{name} not found at {path}")
-    return tools

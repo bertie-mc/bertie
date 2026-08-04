@@ -5,11 +5,11 @@ plugins {
 }
 
 dependencies {
-    compileOnly(libs.emi)
+    compileOnly(mods.emi)
 
     // Ponder is published directly by Create's Maven; use the slim Create artifact so
     // its nested libraries do not have to be unpacked into this build.
-    compileOnly(variantOf(libs.create.maven) { classifier("slim") }) {
+    compileOnly(variantOf(mods.create) { classifier("slim") }) {
         isTransitive = false
     }
     compileOnly(libs.ponder) {
