@@ -40,6 +40,7 @@ repositories {
         name = "Modrinth"
         url = uri("https://api.modrinth.com/maven")
         content { includeGroup("maven.modrinth") }
+        metadataSources { artifact() }
     }
     maven {
         name = "CurseMaven"
@@ -89,8 +90,8 @@ tasks.register("resolveAndLockAll") {
 }
 
 // Minecraft 1.21.1's library manifest only names the generic Linux LWJGL natives,
-// which are x86-64 artifacts. Supply each ARM64 native together with its Java
-// module so NeoForge can assemble a complete module layer for every run.
+// which are x86-64 artifacts. Keep the Java module graph identical across
+// architectures and add the alternative native classifier on ARM64.
 val selectedLwjglNativeClassifier = lwjglNativeClassifier(
     providers.systemProperty("os.name").get(),
     providers.systemProperty("os.arch").get(),
@@ -112,11 +113,11 @@ extensions.configure<NeoForgeExtension> {
     }
 
     runs.configureEach {
-        if (selectedLwjglNativeClassifier != null) {
-            MINECRAFT_1_21_1_LWJGL_MODULES.forEach { module ->
-                additionalRuntimeClasspathConfiguration.dependencies.add(
-                    project.dependencies.create("org.lwjgl:$module:$lwjglVersion"),
-                )
+        MINECRAFT_1_21_1_LWJGL_MODULES.forEach { module ->
+            additionalRuntimeClasspathConfiguration.dependencies.add(
+                project.dependencies.create("org.lwjgl:$module:$lwjglVersion"),
+            )
+            if (selectedLwjglNativeClassifier != null) {
                 additionalRuntimeClasspathConfiguration.dependencies.add(
                     project.dependencies.create(
                         "org.lwjgl:$module:$lwjglVersion:$selectedLwjglNativeClassifier",
