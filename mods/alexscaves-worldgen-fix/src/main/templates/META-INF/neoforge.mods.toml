@@ -2,8 +2,14 @@ modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
 
+# Vanilla targets - must apply, and does so whether or not Alex's Caves is installed.
 [[mixins]]
 config = "${mod_id}.mixins.json"
+
+# Alex's Caves' own classes. Separate config so that removing the mod leaves this one unapplied
+# instead of failing the whole configuration at load.
+[[mixins]]
+config = "${mod_id}.alexscaves.mixins.json"
 
 [[mods]]
 modId = "${mod_id}"

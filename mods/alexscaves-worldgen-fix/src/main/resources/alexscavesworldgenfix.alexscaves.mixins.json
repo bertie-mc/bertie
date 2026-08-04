@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.alexscavesworldgenfix.mixin.alexscaves",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ACItemRegistryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

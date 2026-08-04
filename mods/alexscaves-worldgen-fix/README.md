@@ -1,14 +1,16 @@
 # Alex's Caves Worldgen Fix
 
-Runtime patch that stops *Alex's Caves* from killing the world-generation thread during biome
-decoration.
+Runtime patches for two *Alex's Caves* crashes on NeoForge 21.1 — one that kills world generation,
+one that kills the client.
 
 - **Minecraft:** 1.21.1
 - **Loader:** NeoForge
 - **Mod ID:** `alexscavesworldgenfix`
 - **Targets:** **Alex's Caves (Unofficial Port)** 2.0.9 and later — harmless without it
 
-## The bug
+> The name predates the second fix. It still only patches Alex's Caves.
+
+## Bug 1 — worldgen dies during biome decoration
 
 Alex's Caves redirects *every* `List.get(int)` inside `ChunkGenerator#applyBiomeDecoration` through
 a clamp that is meant to survive a stale feature index:
@@ -41,6 +43,26 @@ frame of its own stack must be Alex's Caves' clamp handler. Any other worldgen f
 unchanged, so this cannot quietly turn an unrelated bug into missing terrain.
 
 Absorbed failures are logged — the first three, then every hundredth — with the chunk position.
+
+## Bug 2 — pick block crashes the client
+
+`ACItemRegistry.getSpawnEggFor` walks Alex's Caves' own spawn eggs looking for one whose entity type
+matches, and identifies each by calling `egg.getType(null)`. Older NeoForge tolerated a null stack;
+21.1.233's `SpawnEggItem#getType` goes straight to `stack.getOrDefault(...)`:
+
+```
+NullPointerException: Cannot invoke "ItemStack.getOrDefault(...)" because "p_330335_" is null
+  at SpawnEggItem.getType(SpawnEggItem.java:150)
+  at ACItemRegistry.getSpawnEggFor(ACItemRegistry.java:389)
+```
+
+It throws on the *first* egg it examines, so the lookup is broken for every entity, not just the one
+that asked. Middle-clicking a Gum Worm segment routes through it and takes the client down.
+
+Fixed by substituting a real stack for the null one. A spawn egg with no `entity_data` component
+reports its own default type, so the search does what it was written to do and pick block yields the
+Gum Worm egg. Callers that already pass a stack are untouched, so a future Alex's Caves build that
+fixes this itself keeps working.
 
 ## Install
 
