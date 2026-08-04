@@ -1,6 +1,7 @@
 import io.github.bertie_mc.gradle.BertiePlatformVersions
 import io.github.bertie_mc.gradle.BertieTestingExtension
 import io.github.bertie_mc.gradle.MINECRAFT_1_21_1_LWJGL_MODULES
+import io.github.bertie_mc.gradle.MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES
 import io.github.bertie_mc.gradle.bertiePlatformVersions
 import io.github.bertie_mc.gradle.lwjglNativeClassifier
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
@@ -72,6 +73,10 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 dependencyLocking {
     lockAllConfigurations()
+    // Platform-gated Minecraft libraries cannot be locked: whichever host writes the lock file
+    // bakes in its own OS rules and no other host can satisfy them. Naming them here keeps one
+    // lock file valid on Linux and Windows alike while every other module stays strictly locked.
+    ignoredDependencies.addAll(MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES)
 }
 
 tasks.register("resolveAndLockAll") {
