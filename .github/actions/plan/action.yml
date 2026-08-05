@@ -34,9 +34,12 @@ outputs:
   validate:
     description: Pack-validation entries as JSON
     value: ${{ steps.plan.outputs.validate }}
-  build-unit-tasks:
-    description: Ordered JSON array of infrastructure, build, unit-test, and pack-generation tasks
-    value: ${{ steps.plan.outputs.build-unit-tasks }}
+  non-client-tasks:
+    description: Ordered JSON array of infrastructure, build, unit-test, GameTest, and pack-generation tasks
+    value: ${{ steps.plan.outputs.non-client-tasks }}
+  client-tasks:
+    description: Ordered JSON array of client-test tasks
+    value: ${{ steps.plan.outputs.client-tasks }}
   tasks:
     description: Ordered JSON array of Gradle task paths for one invocation
     value: ${{ steps.plan.outputs.tasks }}

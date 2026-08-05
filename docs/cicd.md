@@ -109,35 +109,35 @@ manually.
 flowchart LR
     E["push to main"] --> P["plan affected tasks"]
     P --> D["prepare dependency snapshot"]
-    D --> B["build + unit job"]
-    D --> G["GameTest jobs"]
-    D --> C["client-test jobs"]
-    B --> R["job artifacts"]
-    G --> R
-    C --> W["Sway + Wayland"] --> R
+    D --> N["build + unit + GameTests<br/>one Gradle graph"]
+    D --> C["client tests<br/>one Gradle graph"]
+    C --> W["one Sway session"]
+    N --> R["job artifacts"]
+    W --> R
 ```
 
 The preparation job calculates the plan, populates one immutable Gradle dependency cache
-entry, and publishes its dependency snapshot. Once it completes, the build/unit job and
-both test matrices start in parallel. Their Gradle invocations use `--offline`.
+entry, and publishes its dependency snapshot. Once it completes, two execution jobs start
+in parallel and run Gradle offline. The non-client job runs `testInfrastructure`, affected
+`assemble`, `test`, `runGameTests`, and pack-generation tasks in one Gradle invocation,
+then validates generated packs. The client job runs all affected `runClientTests` tasks
+in a second Gradle invocation inside one Sway session.
 
-The build/unit job runs `testInfrastructure`, affected `assemble` and `test` tasks, and
-pack generation in one Gradle invocation. It then validates generated packs. Each
-affected `runGameTests` task gets a separate job, and each affected `runClientTests` task
-gets a separate job with its own Sway session. Matrix jobs use `fail-fast: false`, so one
-failing component does not stop other selected components.
+Gradle runs independent project work in parallel. A shared build service limits each
+invocation to one Minecraft process at a time, so GameTests are sequential within the
+non-client graph and client tests are sequential within the client graph. The two jobs can
+run Minecraft concurrently with each other.
 
 All jobs set `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`. The prepared dependency
 cache contains downloaded modules, NeoForm Runtime artifacts, and game assets; its key is
 derived from Gradle dependency inputs and is reused across workflow runs. The preparation
-job publishes those directories as a one-day workflow artifact, and every execution job
-downloads that exact snapshot before running Gradle offline. Nightly and release jobs use
+job publishes those directories as a one-day workflow artifact, and both execution jobs
+download that exact snapshot before running Gradle offline. Nightly and release jobs use
 the persistent cache directly because they do not fan out after preparation.
 
-Each execution job also restores a platform- and task-specific work cache containing the
-Gradle build cache and artifact transformations. A job may reuse the latest cache from
-the same component or test kind. These entries improve later workflow runs; parallel
-jobs do not exchange work-cache updates during the current run. Project `build`
+Each execution job also restores a platform- and job-specific work cache containing the
+Gradle build cache and artifact transformations. These entries improve later workflow
+runs; the two jobs do not exchange work-cache updates during the current run. Project `build`
 directories and Minecraft instances are not cached.
 
 The nightly full-pack workflow keeps the pack's build, GameTest, client-test, and
@@ -148,12 +148,11 @@ Failed and successful jobs upload the useful parts of their work directories:
 
 | Test kind | Reports and runtime data |
 | --- | --- |
-| Build and unit | Unit-test HTML/XML and the supervised Gradle log |
-| GameTest | JUnit XML, Minecraft logs and crash reports, and the supervised Gradle log |
+| Non-client | Unit-test HTML/XML, GameTest JUnit XML, Minecraft logs and crash reports, and the supervised Gradle log |
 | Client | JUnit XML, screenshots, Minecraft logs and crash reports, the supervised Gradle log, and the Wayland log |
 
 Worlds, staged mods, copied configuration, game assets, and other instance contents are
-excluded. Every matrix entry has its own artifact named after the component.
+excluded.
 
 ## Add a component to CI
 

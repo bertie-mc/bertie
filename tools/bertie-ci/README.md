@@ -128,10 +128,11 @@ published owned-mod releases.
 
 The main workflow uses `plan` to select `build`, `unit`, `gametest`, `client`, and
 `validate` entries. One preparation job populates the persistent Gradle dependency cache
-and publishes the prepared directories for the current run. A build/unit job combines
-infrastructure, assembly, JUnit, and pack-generation tasks in one Gradle invocation.
-GameTest and client-test entries run as separate matrix jobs; each client-test job
-receives its own headless Wayland session.
+and publishes the prepared directories for the current run. A non-client job combines
+infrastructure, assembly, JUnit, GameTest, and pack-generation tasks in one Gradle
+invocation. A client job runs the selected client-test tasks in another Gradle invocation
+inside one headless Wayland session. The two execution jobs start together after
+preparation.
 
 Repository actions include:
 
@@ -139,7 +140,6 @@ Repository actions include:
 - `plan` for affected-task selection;
 - `gradle-dependency-cache` for persistent preparation and same-run artifact restoration;
 - `gradle-work-cache` for task outputs and artifact transformations reused by later jobs;
-- `gradle-task` for exact task execution and optional Wayland;
 - `gradle-check` for a combined Gradle invocation followed by pack validation;
 - `build-mod`, the pack validation/export actions, and release actions.
 

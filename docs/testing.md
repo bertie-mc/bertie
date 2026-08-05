@@ -245,9 +245,10 @@ bertie-ci gradle-task --workspace . \
   --wayland
 ```
 
-CI runs each affected `runClientTests` task in its own job. `bertie-ci` creates one Sway
-session around that job's Gradle invocation. GameTests use separate jobs without a
-display, while builds and JUnit tests share one Gradle invocation.
+CI runs affected client-test tasks in one Gradle invocation. `bertie-ci` creates one Sway
+session around that invocation. A separate non-client Gradle invocation runs builds,
+unit tests, and GameTests without a display. The two invocations run concurrently;
+Minecraft tasks are sequential within each invocation.
 
 ## Reports and failure files
 

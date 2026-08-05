@@ -37,7 +37,6 @@ jobs:
         uses: ./.github/actions/gradle-work-cache
         with:
           kind: full-pack
-          subject: pack
 
       - name: Run pack checks
         uses: ./.github/actions/gradle-check
