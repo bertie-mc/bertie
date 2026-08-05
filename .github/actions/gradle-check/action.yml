@@ -1,19 +1,24 @@
-name: Run affected Gradle checks
-description: Build and unit-test affected components in one Gradle invocation
+name: Run planned checks
+description: Run every planned Gradle task once and validate generated packs
 
 inputs:
-  build:
-    description: Build matrix JSON from bertie-ci plan
+  tasks:
+    description: JSON array of Gradle task paths from the plan action
     required: true
-  unit:
-    description: Unit-test matrix JSON from bertie-ci plan
+  validate:
+    description: Pack-validation entries from the plan action
     required: true
+  wayland:
+    description: Provide an isolated native-Wayland compositor
+    required: false
+    default: "false"
 runs:
   using: composite
   steps:
-    - name: Run combined Gradle tasks
+    - name: Run planned checks
       shell: bash
       env:
-        BERTIE_BUILD_PLAN: ${{ inputs.build }}
-        BERTIE_UNIT_PLAN: ${{ inputs.unit }}
+        BERTIE_GRADLE_TASKS: ${{ inputs.tasks }}
+        BERTIE_PACK_VALIDATIONS: ${{ inputs.validate }}
+        BERTIE_CHECK_WAYLAND: ${{ inputs.wayland }}
       run: python3 "$GITHUB_ACTION_PATH/run.py"

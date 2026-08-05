@@ -1,5 +1,5 @@
-name: Plan affected tests
-description: Convert source-set discovery into provider-neutral job matrices
+name: Plan affected checks
+description: Select affected components and the Gradle tasks that check them
 
 inputs:
   base:
@@ -20,20 +20,29 @@ inputs:
     default: "false"
 outputs:
   build:
-    description: Build matrix JSON
+    description: Build entries as JSON
     value: ${{ steps.plan.outputs.build }}
   unit:
-    description: Unit-test matrix JSON
+    description: Unit-test entries as JSON
     value: ${{ steps.plan.outputs.unit }}
   gametest:
-    description: GameTest matrix JSON
+    description: GameTest entries as JSON
     value: ${{ steps.plan.outputs.gametest }}
   client:
-    description: Client-test matrix JSON
+    description: Client-test entries as JSON
     value: ${{ steps.plan.outputs.client }}
   validate:
-    description: Pack-validation matrix JSON
+    description: Pack-validation entries as JSON
     value: ${{ steps.plan.outputs.validate }}
+  tasks:
+    description: Ordered JSON array of Gradle task paths for one invocation
+    value: ${{ steps.plan.outputs.tasks }}
+  has-work:
+    description: Whether the plan selected any checks
+    value: ${{ steps.plan.outputs.has-work }}
+  wayland:
+    description: Whether the selected tasks include client tests
+    value: ${{ steps.plan.outputs.wayland }}
 
 runs:
   using: composite

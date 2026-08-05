@@ -76,14 +76,15 @@ bertie-ci plan --workspace . --all
 bertie-ci plan --workspace . --base origin/main --head HEAD
 ```
 
-Each matrix entry contains an exact task path. Run one or combine several in a single
+Each plan entry contains an exact task path. Run one or combine several in a single
 Gradle process:
 
 ```bash
 bertie-ci gradle-task --workspace . --task :mods:bertie-tiers:test
 bertie-ci gradle-task --workspace . \
   --task :mods:bertie-tiers:test \
-  --task :mods:bertie-tiers:runGameTests
+  --task :mods:bertie-tiers:runGameTests \
+  --continue
 ```
 
 Local client tests use the current desktop normally:
@@ -127,15 +128,15 @@ published owned-mod releases.
 
 ## GitHub Actions
 
-The main workflow uses `plan` to produce `build`, `unit`, `gametest`, `client`, and
-`validate` matrices. Build and unit tasks may share one Gradle invocation. GameTests and
-client tests run as independent planned tasks; only client CI jobs request a headless
-Wayland session.
+The main workflow uses `plan` to select `build`, `unit`, `gametest`, `client`, and
+`validate` entries. It combines their task paths into one Gradle invocation. When the
+plan includes a client task, one headless Wayland session surrounds that invocation.
+Gradle owns task parallelism and the shared Minecraft execution slot.
 
 Reusable actions include:
 
 - `setup` for the Nix-provided command environment and optional Gradle cache;
-- `plan` for matrix generation;
+- `plan` for affected-task selection;
 - `gradle-task` for exact task execution and optional Wayland;
 - `build-mod`, the pack validation/export actions, and release actions.
 

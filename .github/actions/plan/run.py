@@ -36,11 +36,27 @@ def main() -> None:
         text=True,
     )
     plan = json.loads(result.stdout)
+    has_work = any(
+        plan[name] for name in ("build", "unit", "gametest", "client", "validate")
+    )
+    tasks: list[str] = []
+    if has_work:
+        tasks.append("testInfrastructure")
+    for name in ("build", "unit", "gametest", "client"):
+        tasks.extend(entry["task"] for entry in plan[name])
+    tasks.extend(
+        f"{entry['gradle_project'].rstrip(':')}:generatePackwiz"
+        for entry in plan["validate"]
+    )
+    tasks = list(dict.fromkeys(tasks))
     output = Path(os.environ["GITHUB_OUTPUT"])
     with output.open("a", encoding="utf-8") as stream:
         for name in ("build", "unit", "gametest", "client", "validate"):
             value = json.dumps(plan[name], separators=(",", ":"))
             stream.write(f"{name}={value}\n")
+        stream.write(f"tasks={json.dumps(tasks, separators=(',', ':'))}\n")
+        stream.write(f"has-work={str(has_work).lower()}\n")
+        stream.write(f"wayland={str(bool(plan['client'])).lower()}\n")
 
 
 if __name__ == "__main__":

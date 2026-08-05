@@ -56,6 +56,7 @@ def test_gradle_task_runs_on_the_current_desktop_by_default(
         "log": tmp_path / "reports" / "gradle.log",
         "timeout_seconds": 42,
         "environment": None,
+        "continue_after_failure": False,
     }
 
 
@@ -137,6 +138,48 @@ def test_pack_validation_generates_exact_component_task_before_reading_output(
         ("gradle", tmp_path, tmp_path / "jdk", [":pack:generatePackwiz"]),
         ("validate", project / "build" / "packwiz", Path("packwiz")),
     ]
+
+
+def test_pack_validation_can_use_existing_generated_output(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    project = tmp_path / "pack"
+    generated = project / "build" / "packwiz"
+    generated.mkdir(parents=True)
+    component = SimpleNamespace(
+        subject="pack", kind="pack", path=project, gradle_project=":pack"
+    )
+    workspace = SimpleNamespace(
+        root=tmp_path,
+        component=lambda subject: component if subject == "pack" else None,
+    )
+    observed: list[Path] = []
+    monkeypatch.setattr(cli.Workspace, "find", lambda _path: workspace)
+    monkeypatch.setattr(cli, "load_packwiz", lambda: Path("packwiz"))
+    monkeypatch.setattr(
+        cli,
+        "validate_pack",
+        lambda path, _packwiz: observed.append(path) or PackSummary(1, 0, 0),
+    )
+    monkeypatch.setattr(
+        cli,
+        "run_gradle",
+        lambda *_args, **_kwargs: pytest.fail("Gradle should not run"),
+    )
+    args = cli._parser().parse_args(
+        [
+            "pack-validate",
+            "--workspace",
+            str(tmp_path),
+            "--component",
+            "pack",
+            "--generated",
+        ]
+    )
+
+    cli._run_pack_validate(args)
+
+    assert observed == [generated]
 
 
 @pytest.mark.parametrize(

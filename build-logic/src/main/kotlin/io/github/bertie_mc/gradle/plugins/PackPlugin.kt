@@ -23,6 +23,7 @@ import org.gradle.api.tasks.bundling.Jar
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.named
 import org.gradle.kotlin.dsl.register
+import java.time.Duration
 
 class PackPlugin : Plugin<Project> {
     override fun apply(project: Project) = with(project) {
@@ -109,6 +110,9 @@ class PackPlugin : Plugin<Project> {
             tasks.named<Sync>("prepareGameTestInstance") {
                 from(layout.projectDirectory.dir("config")) { into("config") }
             }
+            tasks.named("runGameTests") {
+                timeout.set(Duration.ofMinutes(75))
+            }
             neoForge.runs.named("gameTests") {
                 jvmArgument("-Xmx8G")
             }
@@ -123,6 +127,9 @@ class PackPlugin : Plugin<Project> {
             tasks.named<Sync>("prepareClientTestInstance") {
                 from(layout.projectDirectory.dir("config")) { into("config") }
                 from(shaderpackArtifacts) { into("shaderpacks") }
+            }
+            tasks.named("runClientTests") {
+                timeout.set(Duration.ofMinutes(105))
             }
             neoForge.runs.named("clientTests") {
                 jvmArgument("-Xmx10G")

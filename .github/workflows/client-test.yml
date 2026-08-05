@@ -12,58 +12,46 @@ permissions:
   contents: read
 
 jobs:
-  plan:
-    name: Plan client tests
-    runs-on: ubuntu-latest
-    outputs:
-      client: ${{ steps.plan.outputs.client }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Read source sets
-        id: plan
-        uses: bertie-mc/bertie/.github/actions/plan@bertie-ci/v6.0.0
-        with:
-          component: ${{ inputs.component }}
-
   client:
-    name: Client tests / ${{ matrix.subject }}
-    needs: plan
-    if: needs.plan.outputs.client != '[]'
-    strategy:
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.client) }}
+    name: Client tests / ${{ inputs.component }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
+      - name: Plan client tests
+        id: plan
+        uses: bertie-mc/bertie/.github/actions/plan@bertie-ci/v6.0.0
+        with:
+          component: ${{ inputs.component }}
+
       - name: Set up dependencies
+        if: steps.plan.outputs.client != '[]'
         uses: bertie-mc/bertie/.github/actions/setup@bertie-ci/v6.0.0
         with:
           gradle-cache: true
 
       - name: Run client tests
+        if: steps.plan.outputs.client != '[]'
         uses: bertie-mc/bertie/.github/actions/gradle-task@bertie-ci/v6.0.0
         with:
-          task: ${{ matrix.task }}
+          task: ${{ fromJSON(steps.plan.outputs.client)[0].task }}
           work-dir: .bertie-ci/client
-          timeout: ${{ matrix.timeout }}
+          timeout: 6300
           wayland: true
 
       - name: Upload client-test reports
-        if: always()
+        if: always() && steps.plan.outputs.client != '[]'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: client-${{ matrix.subject }}-${{ github.sha }}
+          name: client-${{ inputs.component }}-${{ github.sha }}
           path: |
             .bertie-ci/client/
-            ${{ matrix.project }}/build/reports/
-            ${{ matrix.project }}/build/test-results/clienttest/
-            ${{ matrix.project }}/build/test-diagnostics/clienttest/
-            ${{ matrix.project }}/build/minecraft-runs/clienttest/
+            ${{ fromJSON(steps.plan.outputs.client)[0].project }}/build/reports/
+            ${{ fromJSON(steps.plan.outputs.client)[0].project }}/build/test-results/clienttest/
+            ${{ fromJSON(steps.plan.outputs.client)[0].project }}/build/test-diagnostics/clienttest/
+            ${{ fromJSON(steps.plan.outputs.client)[0].project }}/build/minecraft-runs/clienttest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14

@@ -50,7 +50,7 @@ To list every component task, regardless of changed files:
 bertie-ci plan --workspace . --all
 ```
 
-The plan contains `build`, `unit`, `gametest`, `client`, and `validate` matrices. A change
+The plan contains `build`, `unit`, `gametest`, `client`, and `validate` lists. A change
 to a component also selects components that depend on it. Shared paths are configured in
 [`bertie-ci.toml`](../bertie-ci.toml).
 
@@ -70,7 +70,7 @@ flowchart LR
 ```
 
 Documentation, licensing files, and other ignored paths intentionally produce no
-component tasks. The shared infrastructure job still runs in the main workflow.
+component tasks, so the check job finishes after planning.
 
 ## Reproduce a CI task
 
@@ -107,25 +107,26 @@ started manually.
 
 ```mermaid
 flowchart LR
-    P["plan"] --> D["prepare Gradle dependencies"]
-    D --> I["shared infrastructure"]
-    D --> B["build + unit"]
-    D --> G["GameTest matrix"]
-    D --> C["client-test matrix"]
-    D --> V["pack validation"]
-    I --> R["required check"]
-    B --> R
-    G --> R
-    C --> R
-    V --> R
+    E["push or pull request"] --> J["one Check job"]
+    J --> P["plan affected tasks"]
+    P --> D["restore or prepare dependencies"]
+    D --> W["Wayland when client tests are selected"]
+    W --> G["one Gradle task graph"]
+    G --> V["validate generated pack"]
+    V --> R["reports and diagnostics"]
 ```
 
-The dependency job seeds `.bertie-ci/gradle-user-home` from the cross-run cache, runs
-`prepareOfflineBuild` once, and uploads the prepared dependency directories as one
-workflow artifact. All downstream Gradle jobs download that artifact and run offline. If
-several otherwise unrelated jobs report a missing module, inspect the dependency job
-first. If only one task fails, download that task's artifact and reproduce its exact
-Gradle task locally.
+The job passes every selected build, unit-test, GameTest, client-test, infrastructure, and
+pack-generation task to one Gradle invocation. Gradle deduplicates shared prerequisites
+and schedules independent work in parallel. `--continue` lets independent tasks finish
+after a failure. Minecraft process tasks share one execution slot because the full-pack
+server and client runs reserve 8–10 GiB each.
+
+The job uses `.bertie-ci/gradle-user-home` and restores an immutable cache key derived
+from Gradle dependency inputs. On an exact miss it runs `prepareOfflineBuild`, saves the
+completed entry, and then executes the planned graph offline. The cache is available to
+the main check, nightly full-pack, and release workflows; there is no same-run dependency
+artifact or dependency-preparation job.
 
 Failed and successful jobs upload the useful parts of their work directories:
 
@@ -134,10 +135,10 @@ Failed and successful jobs upload the useful parts of their work directories:
 | Unit | `build/reports/tests`, `build/test-results` |
 | GameTest | `build/test-results/gametest`, `build/minecraft-runs/gametest` |
 | Client | `build/test-results/clienttest`, `build/test-diagnostics/clienttest`, `build/minecraft-runs/clienttest` |
-| Supervised task | The matching `.bertie-ci/...` work directory and Gradle log |
+| Supervised task graph | `.bertie-ci/gradle/gradle.log` and the Wayland log when used |
 
-Matrix jobs do not fail fast, so inspect every failed component before deciding that they
-share a cause.
+CI uploads one artifact for the complete job. Gradle task paths in the log and the
+project-local reports identify each failed component.
 
 ## Add a component to CI
 
@@ -154,7 +155,7 @@ file = "mod.properties"
 key = "mod_version"
 ```
 
-The root [`bertie-ci.toml`](../bertie-ci.toml) must discover the descriptor. Test matrices
+The root [`bertie-ci.toml`](../bertie-ci.toml) must discover the descriptor. Test tasks
 are inferred from directories rather than listed in the descriptor:
 
 | Directory | Planned task |

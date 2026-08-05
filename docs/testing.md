@@ -245,6 +245,11 @@ bertie-ci gradle-task --workspace . \
   --wayland
 ```
 
+The main CI job passes every affected task to one Gradle invocation. Gradle runs ordinary
+build and JUnit work in parallel and schedules one Minecraft test process at a time.
+When any client task is selected, `bertie-ci` keeps one Wayland session around the whole
+Gradle invocation.
+
 ## Reports and failure files
 
 | Output | Location |
@@ -255,7 +260,7 @@ bertie-ci gradle-task --workspace . \
 | Minecraft logs, worlds, and crash reports | `build/minecraft-runs` |
 | Supervised Gradle log | The `--work-dir` passed to `bertie-ci gradle-task` |
 
-CI uploads these directories even when the task fails. Prefer the JUnit failure first,
+CI uploads these directories even when the task graph fails. Prefer the JUnit failure first,
 then inspect the Minecraft log and crash report around the same timestamp.
 
 Use state predicates instead of fixed sleeps, and close worlds, servers, and connections
@@ -263,4 +268,4 @@ with try-with-resources. Remove or rewrite tests that no longer assert a useful 
 preserving the number of tests is not a goal.
 
 See [Managing dependencies](dependencies.md) for test dependencies and [CI/CD](cicd.md)
-for affected-task planning and GitHub job artifacts.
+for affected-task planning and the combined GitHub job artifact.

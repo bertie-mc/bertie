@@ -4,6 +4,7 @@ import io.github.bertie_mc.gradle.conventions.createTestCarrier
 import io.github.bertie_mc.gradle.conventions.registerTestCarrier
 import io.github.bertie_mc.gradle.conventions.requireTestReport
 import io.github.bertie_mc.gradle.conventions.runTestsTask
+import io.github.bertie_mc.gradle.conventions.useMinecraftTestExecutionSlot
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
 import io.github.bertie_mc.gradle.model.TestSubject
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
@@ -12,6 +13,7 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.Sync
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.register
+import java.time.Duration
 
 class GameTestPlugin : Plugin<Project> {
     override fun apply(project: Project) {
@@ -61,8 +63,10 @@ class GameTestPlugin : Plugin<Project> {
         tasks.named("runGameTests") {
             group = "verification"
             description = "Runs the project's GameTests on a NeoForge dedicated server"
+            timeout.set(Duration.ofMinutes(30))
             requireTestReport(report)
         }
+        useMinecraftTestExecutionSlot("runGameTests")
         runTestsTask().configure { dependsOn("runGameTests") }
     }
 }

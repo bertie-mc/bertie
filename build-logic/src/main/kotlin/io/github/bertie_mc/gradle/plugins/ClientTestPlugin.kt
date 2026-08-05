@@ -5,6 +5,7 @@ import io.github.bertie_mc.gradle.conventions.createTestCarrier
 import io.github.bertie_mc.gradle.conventions.registerTestCarrier
 import io.github.bertie_mc.gradle.conventions.requireTestReport
 import io.github.bertie_mc.gradle.conventions.runTestsTask
+import io.github.bertie_mc.gradle.conventions.useMinecraftTestExecutionSlot
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
 import io.github.bertie_mc.gradle.model.TestSubject
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
@@ -13,6 +14,7 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.Sync
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.register
+import java.time.Duration
 
 class ClientTestPlugin : Plugin<Project> {
     override fun apply(project: Project) {
@@ -68,8 +70,10 @@ class ClientTestPlugin : Plugin<Project> {
         tasks.named("runClientTests") {
             group = "verification"
             description = "Runs the project's annotated client tests in Minecraft"
+            timeout.set(Duration.ofMinutes(60))
             requireTestReport(report)
         }
+        useMinecraftTestExecutionSlot("runClientTests")
         runTestsTask().configure { dependsOn("runClientTests") }
     }
 }

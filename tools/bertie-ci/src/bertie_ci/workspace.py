@@ -22,11 +22,6 @@ TAG_PATTERN = re.compile(
     + r")"
 )
 
-CLIENT_TEST_TIMEOUT_SECONDS = {
-    "component": 3600,
-    "pack": 6300,
-}
-
 ComponentKind = Literal["neoforge-mod", "pack", "tool"]
 
 
@@ -125,7 +120,7 @@ class Component:
     def version(self) -> str:
         return self.version_source.read()
 
-    def matrix_entry(self, task: str | None = None) -> dict[str, object]:
+    def plan_entry(self, task: str | None = None) -> dict[str, object]:
         entry: dict[str, object] = {
             "subject": self.subject,
             "project": self.relative_path.as_posix(),
@@ -507,16 +502,11 @@ class Workspace:
         for subject in sorted(subjects):
             component = self.component(subject)
             if component.kind == "neoforge-mod":
-                result["build"].append(component.matrix_entry("assemble"))
+                result["build"].append(component.plan_entry("assemble"))
             if component.kind == "pack":
-                result["validate"].append(component.matrix_entry())
+                result["validate"].append(component.plan_entry())
             for runner, task in component.test_tasks():
-                entry = component.matrix_entry(task)
-                if runner == "gametest":
-                    entry["timeout"] = 4500 if component.kind == "pack" else 1800
-                elif runner == "client":
-                    suite = "pack" if component.kind == "pack" else "component"
-                    entry["timeout"] = CLIENT_TEST_TIMEOUT_SECONDS[suite]
+                entry = component.plan_entry(task)
                 result[runner].append(entry)
         return result
 

@@ -24,7 +24,7 @@ GitHub tooling. Run `nix flake check` to verify the development environment itse
   files, checksums, and generated pack contents.
 - [Testing](docs/testing.md) — choose a suite, write tests, run them locally, and inspect
   Minecraft failures.
-- [CI/CD](docs/cicd.md) — preview affected jobs, reproduce CI tasks, export the pack, and
+- [CI/CD](docs/cicd.md) — preview affected tasks, reproduce CI checks, export the pack, and
   publish releases.
 - [Pack maintenance and installation](pack/README.md) — the `pack` component.
 - [bertie-ci command reference](tools/bertie-ci/README.md).

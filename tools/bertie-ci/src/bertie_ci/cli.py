@@ -84,12 +84,23 @@ def _parser() -> argparse.ArgumentParser:
         action="store_true",
         help="provide an isolated native-Wayland compositor for this task",
     )
+    gradle_task.add_argument(
+        "--continue",
+        dest="continue_after_failure",
+        action="store_true",
+        help="continue running independent selected tasks after a task failure",
+    )
 
     pack_validate = subcommands.add_parser(
         "pack-validate", help="generate and validate a packwiz pack"
     )
     _add_project(pack_validate, "Gradle pack project")
     _add_component_target(pack_validate)
+    pack_validate.add_argument(
+        "--generated",
+        action="store_true",
+        help="validate the existing Gradle-generated pack without running Gradle",
+    )
 
     pack_export_client = subcommands.add_parser(
         "pack-export-client", help="generate and export a Modrinth client pack"
@@ -200,7 +211,14 @@ def _generate_pack(args: argparse.Namespace) -> tuple[Path, Path, Path]:
 
 
 def _run_pack_validate(args: argparse.Namespace) -> None:
-    generated, _, _ = _generate_pack(args)
+    if args.generated:
+        selected = _single_component(args, "pack")
+        project = _project(args) if selected is None else selected[1].path
+        generated = project / "build" / "packwiz"
+        if not generated.is_dir():
+            raise RuntimeError(f"Generated packwiz pack not found at {generated}")
+    else:
+        generated, _, _ = _generate_pack(args)
     summary = validate_pack(generated, load_packwiz())
     print(
         "Pack valid: "
@@ -278,6 +296,7 @@ def _run_gradle_task(args: argparse.Namespace) -> None:
             log=log,
             timeout_seconds=args.timeout,
             environment=environment,
+            continue_after_failure=args.continue_after_failure,
         )
     print(f"Gradle tasks passed. Log: {log}", flush=True)
 

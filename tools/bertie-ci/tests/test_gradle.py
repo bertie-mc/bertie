@@ -76,6 +76,32 @@ def test_run_gradle_honors_offline_environment(
     ]
 
 
+def test_run_gradle_can_continue_after_independent_task_failures(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    invocation: dict[str, object] = {}
+    monkeypatch.setattr(
+        "bertie_ci.gradle.run",
+        lambda command, **_kwargs: invocation.update({"command": command}),
+    )
+
+    run_gradle(
+        tmp_path,
+        tmp_path / "jdk",
+        [":one:test", ":two:test"],
+        continue_after_failure=True,
+    )
+
+    assert invocation["command"] == [
+        "gradle",
+        ":one:test",
+        ":two:test",
+        "--no-daemon",
+        "--stacktrace",
+        "--continue",
+    ]
+
+
 def test_find_artifact_ignores_documentation_jars(tmp_path: Path) -> None:
     libraries = tmp_path / "build" / "libs"
     libraries.mkdir(parents=True)

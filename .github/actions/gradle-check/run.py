@@ -4,24 +4,28 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
 
 
-def tasks(name: str) -> list[str]:
+def array(name: str) -> list[object]:
     value = json.loads(os.environ[name])
-    if not isinstance(value, list) or not all(isinstance(item, dict) for item in value):
-        raise SystemExit(f"{name} must be a JSON array of objects")
-    selected = [item.get("task") for item in value]
-    if not all(isinstance(task, str) and task for task in selected):
-        raise SystemExit(f"Every {name} entry must contain a non-empty task")
-    return selected
+    if not isinstance(value, list):
+        raise SystemExit(f"{name} must be a JSON array")
+    return value
 
 
 def main() -> None:
-    selected = list(
-        dict.fromkeys(tasks("BERTIE_BUILD_PLAN") + tasks("BERTIE_UNIT_PLAN"))
-    )
-    if not selected:
-        raise SystemExit("The combined Gradle plan is empty")
+    selected = array("BERTIE_GRADLE_TASKS")
+    if not selected or not all(isinstance(task, str) and task for task in selected):
+        raise SystemExit("BERTIE_GRADLE_TASKS must contain non-empty task paths")
+    validations = array("BERTIE_PACK_VALIDATIONS")
+    if not all(
+        isinstance(entry, dict)
+        and isinstance(entry.get("subject"), str)
+        and entry["subject"]
+        for entry in validations
+    ):
+        raise SystemExit("Every pack validation must contain a subject")
     command = [
         "bertie-ci",
         "gradle-task",
@@ -30,11 +34,33 @@ def main() -> None:
         "--work-dir",
         ".bertie-ci/gradle",
         "--timeout",
-        "2700",
+        "10500",
+        "--continue",
     ]
+    if os.environ.get("BERTIE_CHECK_WAYLAND", "false").lower() == "true":
+        command.append("--wayland")
     for task in selected:
-        command.extend(("--task", task))
-    subprocess.run(command, check=True)
+        command.extend(("--task", str(task)))
+    result = subprocess.run(command, check=False)
+
+    validation_failed = False
+    for entry in validations:
+        validation = subprocess.run(
+            [
+                "bertie-ci",
+                "pack-validate",
+                "--workspace",
+                ".",
+                "--component",
+                str(entry["subject"]),
+                "--generated",
+            ],
+            check=False,
+        )
+        validation_failed = validation.returncode != 0 or validation_failed
+
+    if result.returncode != 0 or validation_failed:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

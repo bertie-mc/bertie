@@ -25,6 +25,7 @@ def run_gradle(
     log: Path | None = None,
     timeout_seconds: int | None = None,
     environment: Mapping[str, str] | None = None,
+    continue_after_failure: bool = False,
 ) -> None:
     selected_environment = (
         dict(environment) if environment is not None else dict(os.environ)
@@ -37,6 +38,8 @@ def run_gradle(
     ]
     if _enabled(selected_environment, "BERTIE_CI_GRADLE_OFFLINE"):
         command.append("--offline")
+    if continue_after_failure:
+        command.append("--continue")
     selected_environment["JAVA_HOME"] = os.fspath(java_home)
     run(
         command,

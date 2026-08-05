@@ -13,170 +13,44 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  plan:
-    name: Plan pack tests
+  check:
+    name: Full pack
     runs-on: ubuntu-latest
-    outputs:
-      unit: ${{ steps.plan.outputs.unit }}
-      gametest: ${{ steps.plan.outputs.gametest }}
-      client: ${{ steps.plan.outputs.client }}
-      validate: ${{ steps.plan.outputs.validate }}
+    timeout-minutes: 180
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: Read pack source sets
+      - name: Plan pack checks
         id: plan
         uses: ./.github/actions/plan
         with:
           component: pack
 
-  dependencies:
-    name: Prepare Gradle dependencies
-    needs: plan
-    uses: ./.github/workflows/gradle-dependencies.yml
-
-  unit:
-    name: Pack unit tests
-    needs: [plan, dependencies]
-    if: needs.plan.outputs.unit != '[]'
-    strategy:
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.unit) }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 50
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
       - name: Set up dependencies
         uses: ./.github/actions/setup
 
-      - name: Restore prepared Gradle dependencies
+      - name: Restore Gradle dependencies
         uses: ./.github/actions/gradle-dependency-cache
 
-      - name: Run pack unit tests
-        uses: ./.github/actions/gradle-task
+      - name: Run pack checks
+        uses: ./.github/actions/gradle-check
         with:
-          task: ${{ matrix.task }}
-          work-dir: .bertie-ci/pack/unit
-          timeout: 2700
+          tasks: ${{ steps.plan.outputs.tasks }}
+          validate: ${{ steps.plan.outputs.validate }}
+          wayland: ${{ steps.plan.outputs.wayland }}
 
-      - name: Upload unit-test reports
+      - name: Upload reports and diagnostics
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: pack-unit-${{ github.sha }}
+          name: full-pack-${{ github.sha }}
           path: |
-            .bertie-ci/pack/unit/
-            pack/build/reports/tests/
+            .bertie-ci/
+            pack/build/reports/
             pack/build/test-results/
+            pack/build/test-diagnostics/
+            pack/build/minecraft-runs/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
-
-  gametest:
-    name: Pack GameTests
-    needs: [plan, dependencies]
-    if: needs.plan.outputs.gametest != '[]'
-    strategy:
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.gametest) }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 85
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Set up dependencies
-        uses: ./.github/actions/setup
-
-      - name: Restore prepared Gradle dependencies
-        uses: ./.github/actions/gradle-dependency-cache
-
-      - name: Run pack GameTests
-        uses: ./.github/actions/gradle-task
-        with:
-          task: ${{ matrix.task }}
-          work-dir: .bertie-ci/pack/gametest
-          timeout: ${{ matrix.timeout }}
-
-      - name: Upload GameTest reports
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: pack-gametest-${{ github.sha }}
-          path: |
-            .bertie-ci/pack/gametest/
-            pack/build/reports/
-            pack/build/test-results/gametest/
-            pack/build/minecraft-runs/gametest/
-          if-no-files-found: warn
-          include-hidden-files: true
-          retention-days: 14
-
-  client:
-    name: Pack client tests
-    needs: [plan, dependencies]
-    if: needs.plan.outputs.client != '[]'
-    strategy:
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.client) }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Set up dependencies
-        uses: ./.github/actions/setup
-
-      - name: Restore prepared Gradle dependencies
-        uses: ./.github/actions/gradle-dependency-cache
-
-      - name: Run pack client tests
-        uses: ./.github/actions/gradle-task
-        with:
-          task: ${{ matrix.task }}
-          work-dir: .bertie-ci/pack/client
-          timeout: ${{ matrix.timeout }}
-          wayland: true
-
-      - name: Upload client-test reports
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: pack-client-${{ github.sha }}
-          path: |
-            .bertie-ci/pack/client/
-            pack/build/reports/
-            pack/build/test-results/clienttest/
-            pack/build/test-diagnostics/clienttest/
-            pack/build/minecraft-runs/clienttest/
-          if-no-files-found: warn
-          include-hidden-files: true
-          retention-days: 14
-
-  validate:
-    name: Validate generated pack
-    needs: [plan, dependencies]
-    if: needs.plan.outputs.validate != '[]'
-    strategy:
-      matrix:
-        include: ${{ fromJSON(needs.plan.outputs.validate) }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Set up dependencies
-        uses: ./.github/actions/setup
-
-      - name: Restore prepared Gradle dependencies
-        uses: ./.github/actions/gradle-dependency-cache
-
-      - name: Validate generated pack
-        uses: ./.github/actions/pack-validate
-        with:
-          component: ${{ matrix.subject }}

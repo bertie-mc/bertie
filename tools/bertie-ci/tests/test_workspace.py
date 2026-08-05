@@ -224,14 +224,12 @@ def test_plan_infers_tasks_from_conventional_source_sets(tmp_path: Path) -> None
             "project": "mods/consumer",
             "subject": "consumer",
             "task": ":mods:consumer:runGameTests",
-            "timeout": 1800,
         },
         {
             "gradle_project": ":pack",
             "project": "pack",
             "subject": "pack",
             "task": ":pack:runGameTests",
-            "timeout": 4500,
         },
     ]
     assert plan["client"] == [
@@ -240,14 +238,12 @@ def test_plan_infers_tasks_from_conventional_source_sets(tmp_path: Path) -> None
             "project": "mods/base",
             "subject": "base",
             "task": ":mods:base:runClientTests",
-            "timeout": 3600,
         },
         {
             "gradle_project": ":pack",
             "project": "pack",
             "subject": "pack",
             "task": ":pack:runClientTests",
-            "timeout": 6300,
         },
     ]
     assert plan["validate"] == [
