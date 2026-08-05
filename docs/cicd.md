@@ -1,4 +1,4 @@
-# CI, local checks, and releases
+# CI and releases
 
 Run repository commands from the pinned development shell:
 
@@ -6,12 +6,11 @@ Run repository commands from the pinned development shell:
 nix develop
 ```
 
-The shell supplies Java 21, Gradle, Python, packwiz, Sway, Mesa, and the GitHub CLI. This
-repository does not use a Gradle wrapper.
+The repository uses the Gradle supplied by Nix rather than a Gradle wrapper.
 
 ## Check a change locally
 
-Start with the component you changed:
+Start with the project and suite you changed:
 
 ```bash
 gradle :mods:bertie-tiers:test
@@ -19,63 +18,48 @@ gradle :mods:bertie-tiers:runGameTests
 gradle :mods:bertie-tiers:runClientTests
 ```
 
-Use `runTests` to run every suite enabled by one project:
+Run every suite enabled by one project with `runTests`:
 
 ```bash
 gradle :mods:bertie-tiers:runTests
 gradle :pack:runTests
 ```
 
-Changes to shared Gradle, test-driver, Nix, or CI code should also run:
+Changes to shared Gradle plugins, test infrastructure, Nix, or CI also need:
 
 ```bash
-nix flake check
 gradle testInfrastructure
+nix flake check
 ```
 
-See [Testing](testing.md) for the source-set and task conventions.
+See [Testing](testing.md) for choosing a suite and finding its reports.
 
-## Preview the CI plan
+## Preview CI
 
-`bertie-ci` maps changed files to affected components and their Gradle tasks. Inspect the
-plan before pushing a broad change:
+`bertie-ci` can show the tasks affected by the current branch:
 
 ```bash
 bertie-ci plan --workspace . --base origin/main --head HEAD
 ```
 
-To list every component task, regardless of changed files:
+To list all component checks:
 
 ```bash
 bertie-ci plan --workspace . --all
 ```
 
-The plan contains `build`, `unit`, `gametest`, `client`, and `validate` lists. A change
-to a component also selects components that depend on it. Shared paths are configured in
-[`bertie-ci.toml`](../bertie-ci.toml).
+The output contains exact Gradle task paths. Component discovery and shared paths are
+configured in [`bertie-ci.toml`](../bertie-ci.toml).
 
-```mermaid
-flowchart LR
-    D["changed files"] --> P["bertie-ci plan"]
-    P --> B["build"]
-    P --> U["unit tests"]
-    P --> G["GameTests"]
-    P --> C["client tests"]
-    P --> V["pack validation"]
-    B --> T["Gradle tasks"]
-    U --> T
-    G --> T
-    C --> T
-    V --> K["Gradle generation + packwiz"]
-```
+A push to `main` starts the [`Check` workflow](../.github/workflows/check.yml). It runs the
+selected builds, unit tests, GameTests, client tests, and pack validation. The
+[`Full pack` workflow](../.github/workflows/full-pack.yml) performs a scheduled complete
+pack check and can also be started manually.
 
-Documentation, licensing files, and other ignored paths intentionally produce no
-component tasks, so the check job finishes after planning.
+## Reproduce a CI failure
 
-## Reproduce a CI task
-
-For fast local iteration, invoke Gradle directly. To reproduce CI timeout, process-group,
-and log handling, use the exact task from the plan:
+Run the failed Gradle task directly for normal local iteration. To use the same timeout,
+logging, and process cleanup as CI, pass the task to `bertie-ci`:
 
 ```bash
 bertie-ci gradle-task --workspace . \
@@ -84,8 +68,8 @@ bertie-ci gradle-task --workspace . \
   --timeout 1800
 ```
 
-Client tests normally use the current desktop. On Linux, add `--wayland` to reproduce the
-isolated native-Wayland session used by CI:
+Client tests use the current desktop by default. On Linux, add `--wayland` to run them in
+the isolated Wayland environment used by CI:
 
 ```bash
 bertie-ci gradle-task --workspace . \
@@ -95,68 +79,14 @@ bertie-ci gradle-task --workspace . \
   --wayland
 ```
 
-The Wayland run uses headless Sway with Xwayland disabled and software rendering. Gradle
-still receives an ordinary graphical Minecraft task; `bertie-ci` starts and stops the
-display session around it.
+Download the failed job's artifact from GitHub when the local failure does not contain
+enough information. It includes the relevant Gradle, Minecraft, JUnit, Wayland, and
+screenshot diagnostics.
 
-## GitHub checks
+## Add a component
 
-[`check.yml`](../.github/workflows/check.yml) runs after a push to `main`.
-[`full-pack.yml`](../.github/workflows/full-pack.yml) runs nightly and can also be started
-manually.
-
-```mermaid
-flowchart LR
-    E["push to main"] --> P["plan affected tasks"]
-    P --> D["prepare dependency snapshot"]
-    D --> N["build + unit + GameTests<br/>one Gradle graph"]
-    D --> C["client tests<br/>one Gradle graph"]
-    C --> W["one Sway session"]
-    N --> R["job artifacts"]
-    W --> R
-```
-
-The preparation job calculates the plan, populates one immutable Gradle dependency cache
-entry, and publishes its dependency snapshot. Once it completes, two execution jobs start
-in parallel and run Gradle offline. The non-client job runs `testInfrastructure`, affected
-`assemble`, `test`, `runGameTests`, and pack-generation tasks in one Gradle invocation,
-then validates generated packs. The client job runs all affected `runClientTests` tasks
-in a second Gradle invocation inside one Sway session.
-
-Gradle runs independent project work in parallel. A shared build service limits each
-invocation to one Minecraft process at a time, so GameTests are sequential within the
-non-client graph and client tests are sequential within the client graph. The two jobs can
-run Minecraft concurrently with each other.
-
-All jobs set `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`. The prepared dependency
-cache contains downloaded modules, NeoForm Runtime artifacts, and game assets; its key is
-derived from Gradle dependency inputs and is reused across workflow runs. The preparation
-job publishes those directories as a one-day workflow artifact, and both execution jobs
-download that exact snapshot before running Gradle offline. Nightly and release jobs use
-the persistent cache directly because they do not fan out after preparation.
-
-Each execution job also restores a platform- and job-specific work cache containing the
-Gradle build cache and artifact transformations. These entries improve later workflow
-runs; the two jobs do not exchange work-cache updates during the current run. Project `build`
-directories and Minecraft instances are not cached.
-
-The nightly full-pack workflow keeps the pack's build, GameTest, client-test, and
-validation tasks in one job. It checks the combined pack outside the push workflow's
-critical path.
-
-Failed and successful jobs upload the useful parts of their work directories:
-
-| Test kind | Reports and runtime data |
-| --- | --- |
-| Non-client | Unit-test HTML/XML, GameTest JUnit XML, Minecraft logs and crash reports, and the supervised Gradle log |
-| Client | JUnit XML, screenshots, Minecraft logs and crash reports, the supervised Gradle log, and the Wayland log |
-
-Worlds, staged mods, copied configuration, game assets, and other instance contents are
-excluded.
-
-## Add a component to CI
-
-Every releasable component has a `bertie-ci.toml`. A NeoForge mod descriptor looks like:
+Each releasable component has a `bertie-ci.toml` discovered by the root
+[`bertie-ci.toml`](../bertie-ci.toml). For a NeoForge mod:
 
 ```toml
 format = "bertie-ci.component.v2"
@@ -169,22 +99,17 @@ file = "mod.properties"
 key = "mod_version"
 ```
 
-The root [`bertie-ci.toml`](../bertie-ci.toml) must discover the descriptor. Test tasks
-are inferred from directories rather than listed in the descriptor:
+Tests are selected from the source directories present in the project:
 
-| Directory | Planned task |
+| Directory | Task |
 | --- | --- |
 | `src/test` | `test` |
 | `src/gametest` | `runGameTests` |
 | `src/clienttest` | `runClientTests` |
 
-The descriptor's `subject` is also used in release tags and artifact names. Keep the
-version in the component's existing metadata: `mod.properties` for a mod,
-and `pack.properties` for the pack.
+Keep mod versions in `mod.properties` and the pack version in `pack/pack.properties`.
 
-## Validate and export the pack
-
-Use the same commands locally and in release jobs:
+## Validate or export the pack
 
 ```bash
 bertie-ci pack-validate --workspace . --component pack
@@ -194,15 +119,14 @@ bertie-ci pack-export-server --workspace . --component pack \
   --output .bertie-ci/release/bertie-server.zip
 ```
 
-Each command runs `:pack:generatePackwiz` before invoking the required packwiz or archive
-operation. See [Managing dependencies](dependencies.md) for changing the generated pack.
+See [Managing dependencies](dependencies.md) for editing and inspecting the generated
+pack.
 
 ## Publish a release
 
 1. Update the version in the component's `mod.properties` or `pack.properties`.
-2. Run its tests and build or export commands on the release commit.
-3. Create an annotated, SSH-signed `<subject>/vX.Y.Z` tag whose version exactly matches
-   the metadata.
+2. Run its tests and build or export commands.
+3. Create an annotated, SSH-signed `<subject>/vX.Y.Z` tag matching that version.
 4. Push the tag.
 
 For example:
@@ -212,8 +136,5 @@ git tag -s pack/v0.2.0 -m "Release pack v0.2.0"
 git push origin pack/v0.2.0
 ```
 
-[`release.yml`](../.github/workflows/release.yml) checks the tag and metadata before
-publishing. Mod releases attach the built JAR to GitHub Releases. Pack releases attach a
-client `.mrpack` and server `.zip`.
-
-For all CLI options, see the [`bertie-ci` command reference](../tools/bertie-ci/README.md).
+The release workflow publishes mod JARs or the pack's client and server archives. See the
+[`bertie-ci` command reference](../tools/bertie-ci/README.md) for other command options.

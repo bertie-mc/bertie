@@ -6,16 +6,16 @@ Agent-specific instructions for the Bertie monorepo.
 
 Before changing build, test, packaging, or release infrastructure, read:
 
-- [`docs/dependencies.md`](docs/dependencies.md) for dependency ownership, runtime sides,
-  reproducibility, and pack generation;
-- [`docs/testing.md`](docs/testing.md) for source sets, test APIs, execution, and
-  diagnostics;
-- [`docs/cicd.md`](docs/cicd.md) for orchestration, affected planning, Wayland, exports,
-  and releases;
+- [`docs/dependencies.md`](docs/dependencies.md) for adding dependencies, runtime sides,
+  locks, checksums, and pack generation;
+- [`docs/testing.md`](docs/testing.md) for choosing, writing, running, and diagnosing tests;
+- [`docs/cicd.md`](docs/cicd.md) for local checks, affected planning, pack exports, and
+  releases;
 - the nearest component README for component-specific behavior and constraints.
 
-Do not recreate those policies in this file. Update the shared documentation when a
-human-facing procedure or architecture changes.
+Do not recreate those guides in this file. Update them when a developer-facing command,
+convention, or procedure changes. Keep implementation details in code and focused
+comments rather than narrating them in the guides.
 
 ## Delivery
 
