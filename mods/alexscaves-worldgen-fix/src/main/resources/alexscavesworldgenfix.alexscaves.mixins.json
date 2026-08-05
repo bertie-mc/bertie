@@ -4,7 +4,9 @@
   "package": "io.github.bertie_mc.alexscavesworldgenfix.mixin.alexscaves",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ACItemRegistryMixin"
+    "ACItemRegistryMixin",
+    "FerrocaveStructurePieceMixin",
+    "ForlornCanyonStructurePieceMixin"
   ],
   "injectors": {
     "defaultRequire": 0

@@ -15,9 +15,35 @@ public class AlexsCavesWorldgenFix {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     private static final AtomicLong ABSORBED = new AtomicLong();
+    private static final AtomicLong SUBSTITUTED = new AtomicLong();
 
     public AlexsCavesWorldgenFix() {
         LOGGER.info("[{}] loaded", MOD_ID);
+    }
+
+    /**
+     * Record one feature the sorter could not identify, skipped instead of placed.
+     *
+     * <p>Alex's Caves' biomes declare features in the {@code STRONGHOLDS} step, which nothing else
+     * populates, so that step's sorted list is empty and the lookup misses. Skipping the feature
+     * costs that one feature; before this, the miss threw and cost every later step in the chunk.
+     */
+    public static void recordSubstitutedFeature() {
+        long count = SUBSTITUTED.incrementAndGet();
+        if (!BiomeDecorationFailure.shouldReport(count)) {
+            return;
+        }
+        LOGGER.warn(
+                "[{}] skipped a decoration feature the sorter could not identify "
+                        + "(occurrence {}). Remaining steps for the chunk still run. "
+                        + "Upstream: Raguto/AlexsCaves-1.21.1#172",
+                MOD_ID,
+                count);
+    }
+
+    /** How many features have been skipped this run, for diagnostics. */
+    public static long substitutedFeatureCount() {
+        return SUBSTITUTED.get();
     }
 
     /**
