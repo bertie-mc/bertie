@@ -12,7 +12,7 @@ shared-gradle-paths = [
   "gradle.properties",
   "gradle/",
   "build-logic/",
-  "testing/",
+  "core/",
 ]
 shared-all-paths = [
   "bertie-ci.toml",

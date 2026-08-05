@@ -110,7 +110,7 @@ jobs:
             .bertie-ci/pack/gametest/
             pack/build/reports/
             pack/build/test-results/gametest/
-            pack/build/runs/gametest/
+            pack/build/minecraft-runs/gametest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
@@ -152,7 +152,7 @@ jobs:
             pack/build/reports/
             pack/build/test-results/clienttest/
             pack/build/test-diagnostics/clienttest/
-            pack/build/runs/clienttest/
+            pack/build/minecraft-runs/clienttest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14

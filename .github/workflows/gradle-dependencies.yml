@@ -31,6 +31,6 @@ jobs:
             -Dorg.gradle.parallel=false
             -Dorg.gradle.workers.max=1
         with:
-          task: warmDependencies
+          task: prepareOfflineBuild
           work-dir: .bertie-ci/dependencies
           timeout: 3300

@@ -1,16 +1,6 @@
 name: Set up bertie-ci
 description: Install Nix and add the repository-pinned bertie-ci command to PATH
 
-inputs:
-  gradle-cache:
-    description: Configure the Gradle User Home and build caches
-    required: false
-    default: "false"
-  gradle-cache-read-only:
-    description: Restore Gradle state without publishing new cache entries
-    required: false
-    default: "true"
-
 runs:
   using: composite
   steps:
@@ -22,15 +12,6 @@ runs:
       with:
         use-gha-cache: enabled
         use-flakehub: disabled
-
-    - name: Configure Gradle cache
-      if: inputs.gradle-cache == 'true'
-      uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6.3.0
-      with:
-        cache-provider: basic
-        cache-read-only: ${{ inputs.gradle-cache-read-only }}
-        validate-wrappers: false
-        add-job-summary: on-failure
 
     - name: Install bertie-ci command
       shell: bash

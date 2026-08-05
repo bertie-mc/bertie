@@ -61,7 +61,7 @@ jobs:
             .bertie-ci/gametest/
             ${{ matrix.project }}/build/reports/
             ${{ matrix.project }}/build/test-results/gametest/
-            ${{ matrix.project }}/build/runs/gametest/
+            ${{ matrix.project }}/build/minecraft-runs/gametest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14

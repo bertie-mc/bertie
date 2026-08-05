@@ -70,8 +70,8 @@ jobs:
             .bertie-ci/infrastructure/
             build-logic/build/reports/tests/
             build-logic/build/test-results/
-            testing/*/build/reports/tests/
-            testing/*/build/test-results/
+            core/*/build/reports/tests/
+            core/*/build/test-results/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
@@ -147,7 +147,7 @@ jobs:
             .bertie-ci/gametest/${{ matrix.subject }}/
             ${{ matrix.project }}/build/reports/
             ${{ matrix.project }}/build/test-results/gametest/
-            ${{ matrix.project }}/build/runs/gametest/
+            ${{ matrix.project }}/build/minecraft-runs/gametest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
@@ -190,7 +190,7 @@ jobs:
             ${{ matrix.project }}/build/reports/
             ${{ matrix.project }}/build/test-results/clienttest/
             ${{ matrix.project }}/build/test-diagnostics/clienttest/
-            ${{ matrix.project }}/build/runs/clienttest/
+            ${{ matrix.project }}/build/minecraft-runs/clienttest/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
