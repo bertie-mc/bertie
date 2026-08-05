@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import io.github.bertie_mc.testing.client.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import java.lang.reflect.Method;
 import java.nio.file.Path;
 import java.time.Duration;
@@ -44,7 +44,7 @@ final class ClientTestResultsTest {
 
         assertTrue(ClientTestDriver.matchesScannedMethod(
                 method,
-                "exampleClientTest(Lio/github/bertie_mc/testing/client/ClientTestContext;)V"));
+                "exampleClientTest(Lio/github/bertie_mc/testing/client/context/ClientTestContext;)V"));
         assertFalse(ClientTestDriver.matchesScannedMethod(method, "exampleClientTest"));
     }
 

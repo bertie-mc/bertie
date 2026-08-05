@@ -1,7 +1,7 @@
 package io.github.bertie_mc.shortcircuitfix.test;
 
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.BuiltInRegistries;

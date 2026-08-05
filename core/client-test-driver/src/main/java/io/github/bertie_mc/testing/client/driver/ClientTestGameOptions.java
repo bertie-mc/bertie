@@ -2,7 +2,7 @@ package io.github.bertie_mc.testing.client.driver;
 
 import com.google.gson.JsonParser;
 import com.mojang.serialization.JsonOps;
-import io.github.bertie_mc.testing.client.driver.mixin.OptionsAccessor;
+import io.github.bertie_mc.testing.client.driver.mixin.options.OptionsAccessor;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;

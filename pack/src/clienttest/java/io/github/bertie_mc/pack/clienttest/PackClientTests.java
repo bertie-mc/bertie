@@ -1,7 +1,7 @@
 package io.github.bertie_mc.pack.clienttest;
 
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

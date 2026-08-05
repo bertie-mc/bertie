@@ -4,8 +4,8 @@ import dev.emi.emi.api.EmiApi;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.recipe.EmiRecipeManager;
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
-import io.github.bertie_mc.testing.client.IntegratedWorldContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.IntegratedWorldContext;
 import net.minecraft.resources.ResourceLocation;
 
 /** Client integration coverage for the Forbidden & Arcanus EMI integration. */

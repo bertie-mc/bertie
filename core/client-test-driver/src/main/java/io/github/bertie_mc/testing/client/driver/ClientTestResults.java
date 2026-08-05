@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+/** Writes the client-test suite outcome in the JUnit XML format consumed by Gradle. */
 final class ClientTestResults {
     private ClientTestResults() {}
 

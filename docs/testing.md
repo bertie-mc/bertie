@@ -99,6 +99,9 @@ for a working example.
 A client test is a public static method annotated with `@ClientTest`:
 
 ```java
+import io.github.bertie_mc.testing.client.ClientTest;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
+
 public final class ExampleClientTests {
     @ClientTest
     public static void opensExpectedScreen(ClientTestContext context) {
@@ -109,10 +112,12 @@ public final class ExampleClientTests {
 }
 ```
 
-[`ClientTestContext`](../core/client-test-api/src/main/java/io/github/bertie_mc/testing/client/ClientTestContext.java)
+[`ClientTestContext`](../core/client-test-api/src/main/java/io/github/bertie_mc/testing/client/context/ClientTestContext.java)
 provides render-thread execution, state waits, screen interaction, input, worlds, servers,
 screenshots, and option reset. Use its `worldBuilder()` when a test needs a connected
-world.
+world. Client tests themselves run on a dedicated test thread; use `runOnClient` for client
+state and `runOnServer` for logical-server state. These callbacks may throw checked exceptions,
+which are rethrown on the test thread.
 
 For an integrated world:
 
@@ -125,6 +130,11 @@ try (var world = context.worldBuilder().create()) {
     });
 }
 ```
+
+Wait on observable state rather than fixed delays. The predicate, screen, and chunk wait methods
+return the number of ticks they advanced. Use packet barriers after the relevant packet has been
+sent; `waitForClientboundPackets()` covers packets already sent, while
+`waitForClientboundEntityUpdates(...)` first waits for the selected entity types' update interval.
 
 For a dedicated server connection:
 

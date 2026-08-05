@@ -14,9 +14,13 @@ import net.neoforged.fml.common.Mod;
 /** Adds a Gradle-consumable XML report without replacing the native GameTest runner. */
 @Mod(GameTestDriver.MOD_ID)
 public final class GameTestDriver {
+    /** NeoForge mod identifier for the report driver. */
     public static final String MOD_ID = "bertie_gametest_driver";
+
+    /** System property containing the report destination supplied by the Gradle GameTest task. */
     private static final String REPORT_PROPERTY = "bertie.gametest.report";
 
+    /** Installs the XML reporter when the Gradle task configured a report destination. */
     public GameTestDriver() {
         String configured = System.getProperty(REPORT_PROPERTY);
         if (configured == null || configured.isBlank()) {
@@ -35,6 +39,7 @@ public final class GameTestDriver {
         }
     }
 
+    /** Forwards each GameTest reporting callback to both delegates in order. */
     private record CompositeReporter(TestReporter first, TestReporter second)
             implements TestReporter {
         @Override

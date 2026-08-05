@@ -2,7 +2,7 @@ package io.github.bertie_mc.screenshotcopy.test;
 
 import com.mojang.blaze3d.platform.NativeImage;
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import io.github.imurx.arboard.Clipboard;
 import io.github.imurx.arboard.ImageData;
 import java.io.IOException;

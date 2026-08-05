@@ -1,8 +1,8 @@
 package io.github.bertie_mc.configmigrations.test;
 
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
-import io.github.bertie_mc.testing.client.IntegratedWorldContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.IntegratedWorldContext;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;

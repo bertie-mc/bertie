@@ -1,7 +1,11 @@
 package io.github.bertie_mc.testing.client.driver;
 
 import io.github.bertie_mc.testing.client.ClientTest;
-import io.github.bertie_mc.testing.client.ClientTestContext;
+import io.github.bertie_mc.testing.client.context.ClientTestContext;
+import io.github.bertie_mc.testing.client.driver.context.DefaultClientTestContext;
+import io.github.bertie_mc.testing.client.driver.input.ClientTestKeyDisplayNames;
+import io.github.bertie_mc.testing.client.driver.network.ClientTestNetwork;
+import io.github.bertie_mc.testing.client.driver.threading.TestScheduler;
 import java.lang.annotation.ElementType;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -5,11 +5,11 @@ import java.util.Deque;
 import java.util.Objects;
 
 /** Resources created by one client-test method, closed in reverse creation order. */
-final class ClientTestResources implements AutoCloseable {
+public final class ClientTestResources implements AutoCloseable {
     private final Deque<AutoCloseable> resources = new ArrayDeque<>();
     private boolean closed;
 
-    synchronized <T extends AutoCloseable> T own(T resource) {
+    public synchronized <T extends AutoCloseable> T own(T resource) {
         Objects.requireNonNull(resource);
         if (closed) {
             closeLateResource(resource);
@@ -50,7 +50,7 @@ final class ClientTestResources implements AutoCloseable {
         }
     }
 
-    static Throwable append(Throwable existing, Throwable additional) {
+    public static Throwable append(Throwable existing, Throwable additional) {
         if (additional == null) {
             return existing;
         }
@@ -63,7 +63,7 @@ final class ClientTestResources implements AutoCloseable {
         return existing;
     }
 
-    static void rethrow(Throwable failure) {
+    public static void rethrow(Throwable failure) {
         if (failure == null) {
             return;
         }
