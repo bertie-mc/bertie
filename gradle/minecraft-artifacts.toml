@@ -77,9 +77,27 @@ curseforge = { slug = "anti-knockback-enchantment", project-id = 1311194, file-i
 modrinth = { project-id = "vuISAWPc", version-id = "lhatdg0u", filename = "anvilcraft-neoforge-1.21.1-1.5.3.jar" }
 curseforge = { slug = "anvilcraft", project-id = 986251, file-id = 8246261 }
 
+[mods.apotheosis]
+modrinth = { project-id = "rqFWfVlz", version-id = "Vp2TR6ib", filename = "Apotheosis-1.21.1-8.5.4.jar" }
+
+[mods.apotheosis-create-recipe]
+curseforge = { slug = "apotheosis-create-recipe", project-id = 1455318, file-id = 8510023 }
+
+[mods.apotheosis-x-irons-spellbooks-compat]
+curseforge = { slug = "apotheosis-x-irons-spellbooks-compat", project-id = 1244863, file-id = 8048938 }
+
 [mods.apothic-attributes]
 modrinth = { project-id = "DGaH8Rh0", version-id = "Z0nG7STl", filename = "ApothicAttributes-1.21.1-2.9.1.jar" }
 curseforge = { slug = "apothic-attributes", project-id = 898963, file-id = 7445079 }
+
+[mods.apothic-combat]
+modrinth = { project-id = "N29BujGY", version-id = "8gwHTe22", filename = "apothiccombat-1.2.1.jar" }
+
+[mods.apothic-enchanting]
+modrinth = { project-id = "pL8MtgqY", version-id = "HpSrSsv3", filename = "ApothicEnchanting-1.21.1-1.6.0.jar" }
+
+[mods.apothic-spawners]
+modrinth = { project-id = "DfxVkOAO", version-id = "pWfxcfO2", filename = "ApothicSpawners-1.21.1-1.4.0.jar" }
 
 [mods.appleskin]
 modrinth = { project-id = "EsAfCjCV", version-id = "uAKA6Laj", filename = "appleskin-neoforge-mc1.21-3.0.9.jar" }
@@ -580,10 +598,6 @@ curseforge = { slug = "emi-professions-emip", project-id = 1065904, file-id = 62
 side = "client"
 modrinth = { project-id = "705gWllI", version-id = "S6Q6duUj", filename = "emiffect-neoforge-2.1.6+mc1.21.1.jar" }
 
-[mods.enchanting-infuser]
-modrinth = { project-id = "ePv85y52", version-id = "AoOYPAOZ", filename = "EnchantingInfuser-v21.1.4-1.21.1-NeoForge.jar" }
-curseforge = { slug = "enchanting-infuser", project-id = 551151, file-id = 7844709 }
-
 [mods.end-remastered-additions]
 modrinth = { project-id = "z3QkIKOR", version-id = "vxsfpqwm", filename = "endrem_additions-neoforge-1.1.0.jar" }
 curseforge = { slug = "end-remastered-additions", project-id = 1365790, file-id = 7147529 }
@@ -674,10 +688,6 @@ curseforge = { slug = "exposure-polaroid", project-id = 1207005, file-id = 80325
 side = "server"
 modrinth = { project-id = "bHkCoxMs", version-id = "ZVKlC4b9", filename = "extendedbonemeal-1.21.1-3.6.jar" }
 curseforge = { slug = "extended-bone-meal", project-id = 367534, file-id = 6186049 }
-
-[mods.extended-crafting]
-modrinth = { project-id = "5JMG1gql", version-id = "Pb2OHQ8E", filename = "ExtendedCrafting-1.21.1-7.0.8.jar" }
-curseforge = { slug = "extended-crafting", project-id = 268387, file-id = 7713533 }
 
 [mods.extra-disks]
 modrinth = { project-id = "Tlo2tahX", version-id = "otODJ5cv", filename = "ExtraDisks-1.21.1-4.0.15.jar" }
@@ -844,10 +854,6 @@ curseforge = { slug = "hazentouvelib", project-id = 1528722, file-id = 8099176 }
 modrinth = { project-id = "Wws4qHxK", version-id = "1dy6PZgZ", filename = "HellishTrials-neoforge-1.0.5.jar" }
 curseforge = { slug = "hellish-trials", project-id = 1414295, file-id = 7445277 }
 
-[mods.hexalia]
-modrinth = { project-id = "bkz5C0dQ", version-id = "mbGMDwcy", filename = "hexalia-1.3.2-1.21.1+neoforge.jar" }
-curseforge = { slug = "hexalia", project-id = 962878, file-id = 8082345 }
-
 [mods.hide-experimental-warning]
 side = "client"
 modrinth = { project-id = "Rm4OOdHd", version-id = "TlSbvWkK", filename = "hideexperimentalwarning-1.21.1-1.2.jar" }
@@ -857,10 +863,6 @@ curseforge = { slug = "hide-experimental-warning", project-id = 1009556, file-id
 side = "client"
 modrinth = { project-id = "Vz96hXMh", version-id = "AhmYRg22", filename = "highlight-neoforge-1.21-3.0.0.jar" }
 curseforge = { slug = "highlight", project-id = 667245, file-id = 5447146 }
-
-[mods.hole-filler-mod]
-modrinth = { project-id = "F3WCdx29", version-id = "NLWHpFiF", filename = "hole_filler_mod_1.3.0-neoforge-mc_1.21.1.jar" }
-curseforge = { slug = "hole-filler-mod", project-id = 440585, file-id = 6583948 }
 
 [mods.hooked]
 modrinth = { project-id = "RoLsCIqN", version-id = "Jwdpo3CR", filename = "hooked-neoforge-2.0.2.jar" }
@@ -1364,10 +1366,6 @@ curseforge = { slug = "packagedauto", project-id = 308380, file-id = 7329743 }
 modrinth = { project-id = "aA94MQL4", version-id = "S3poB44N", filename = "PackagedAvaritia-Re-1.21.1-3.0.1.5.jar" }
 curseforge = { slug = "packagedavaritia", project-id = 308383, file-id = 6828116 }
 
-[mods.packagedexcrafting]
-modrinth = { project-id = "qO33ACjS", version-id = "afQmIuGU", filename = "PackagedExCrafting-1.21.1-4.0.0.10.jar" }
-curseforge = { slug = "packagedexcrafting", project-id = 322861, file-id = 6824326 }
-
 [mods.packagedmekemicals]
 modrinth = { project-id = "zqykyLyX", version-id = "wZml2Fep", filename = "PackagedMekemicals-1.21.1-2.0.0.7.jar" }
 curseforge = { slug = "packagedmekemicals", project-id = 609886, file-id = 6930386 }
@@ -1468,10 +1466,6 @@ curseforge = { slug = "puzzles-lib", project-id = 495476, file-id = 8168234 }
 [mods.qliphoth-awakening]
 modrinth = { project-id = "7fqQYwaC", version-id = "mubOR5lN", filename = "fdbosses-3.1.0.3-1.21.1.jar" }
 curseforge = { slug = "qliphoth-awakening", project-id = 1271707, file-id = 7653113 }
-
-[mods.quality-equipment]
-modrinth = { project-id = "mAvAL1oG", version-id = "iJgehS1Q", filename = "quality_equipment-2.0-neoforge-1.21.1.jar" }
-curseforge = { slug = "quality-equipment", project-id = 667174, file-id = 7323970 }
 
 [mods.quark]
 modrinth = { project-id = "qnQsVE2z", version-id = "hMLnxKZx", filename = "Quark-4.1-480.jar" }
@@ -1714,10 +1708,6 @@ curseforge = { slug = "time-in-a-bottle-universal", project-id = 895919, file-id
 side = "client"
 modrinth = { project-id = "wMkevcSR", version-id = "mSJPeo1D", filename = "tia-neoforge-1.21-1.2.1.jar" }
 curseforge = { slug = "tiny-item-animations", project-id = 1360659, file-id = 7121755 }
-
-[mods.tiny-mob-farm-remastered]
-modrinth = { project-id = "fhAM8VCH", version-id = "57z0vz3m", filename = "tinymobfarm-1.5.2-1.21-neoforge.jar" }
-curseforge = { slug = "tiny-mob-farm-remastered", project-id = 986607, file-id = 8109100 }
 
 [mods.tiny-skeletons]
 modrinth = { project-id = "A2xcMSUn", version-id = "QO99Qp79", filename = "TinySkeletons-v21.1.0-1.21.1-NeoForge.jar" }
