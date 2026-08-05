@@ -1884,8 +1884,8 @@ modrinth = { project-id = "1u6JkXh5", version-id = "WTAFvuRx", filename = "world
 curseforge = { slug = "worldedit", project-id = 225608, file-id = 5830452 }
 
 [mods.worldweaver-neoforge]
-modrinth = { project-id = "R8uGDQpB", version-id = "jJJtSGMZ", filename = "worldweaver-21.0.21.jar" }
-curseforge = { slug = "worldweaver-neoforge", project-id = 1422284, file-id = 8194810 }
+modrinth = { project-id = "R8uGDQpB", version-id = "d8e9QsHt", filename = "worldweaver-21.0.24.jar" }
+curseforge = { slug = "worldweaver-neoforge", project-id = 1422284, file-id = 8519405 }
 
 [mods.wunderlib-neoforge]
 modrinth = { project-id = "HZmhgdJk", version-id = "5db3GZzg", filename = "wunderlib-21.0.10.jar" }
