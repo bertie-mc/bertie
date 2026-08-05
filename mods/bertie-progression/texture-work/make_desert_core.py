@@ -11,8 +11,8 @@ time that script runs.
     form     Forbidden & Arcanus draws its prisms — sea, smelter, terrastomp,
              whirlwind — as a symmetric diamond: a pointed apex, straight edges
              widening to the widest course, then a steeper taper closing back
-             under it. That is the shape berlord picked, measured off theirs.
-             No pixel is copied and none of their colours are used.
+             under it. This pyramid follows those proportions without copying
+             any pixel or colour from the prism textures.
 
              Every edge holds one constant step — a column a row on the way up,
              two columns a row on the way back in — and every course is
@@ -235,8 +235,7 @@ for _y, _span in PYRAMID.items():
         "row %d is not symmetric — the reference prisms are, and the angled "
         "view they replaced is gone" % _y)
 # No two courses may share a span apart from the pair at the widest point.
-# Anywhere else a repeat is a flat spot in a slope, which is what berlord kept
-# seeing as a lumpy outline.
+# Anywhere else a repeat is a flat spot that makes the sloped outline look lumpy.
 for _y in sorted(PYRAMID)[1:]:
     if _y == WIDEST_ROW:
         continue
@@ -813,12 +812,10 @@ def build_cycle(field=False):
 #
 # (directory, texture name, take). Everything here is written on every run.
 #
-# The collapse is the live item texture. The other two are kept because berlord
-# may want them later: they land in texture-work/variants as real strips with
-# their .mcmeta beside them, ready to drop into an assets folder, but outside
-# resources so they are not packaged. Writing them every run rather than
-# checking in a one-off export is what stops them drifting out of step with the
-# silhouette, the scene and the storm, which all three takes share.
+# The collapse is the live item texture. The other two are maintained as ready-to-use alternatives
+# under texture-work/variants, with their .mcmeta files beside them but outside resources so they
+# are not packaged. Writing them every run keeps them aligned with the silhouette, scene and storm
+# shared by all three takes.
 OUTPUTS = (
     (TEX_ITEM, "desert_core", "collapse"),
     (VARIANTS, "desert_core_still", "still"),

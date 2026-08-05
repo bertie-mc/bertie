@@ -28,8 +28,8 @@ import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
  * anything the wheels actually kill and for nothing else. Other Create hazards - the saw, the
  * roller, run_over - each have their own damage type and are untouched.
  *
- * <p>Rates (berlord 2026-08-02): passive 1%, hostile 5%, player 50%. The player rate is deliberately
- * the outlier - feeding yourself to the wheels is meant to be the fast route and cost accordingly.
+ * <p>Rates are 1% for passive mobs, 5% for hostile mobs and 50% for players. The player rate is
+ * deliberately the outlier: feeding yourself to the wheels is the fast route and costs accordingly.
  */
 public final class CrushingEssenceHandler {
 

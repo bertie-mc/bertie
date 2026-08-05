@@ -55,9 +55,8 @@ public class OminousFanProcessingType implements FanProcessingType {
     }
 
     /**
-     * The returned list MUST be mutable. Create's FanProcessing.applyProcessing removes from it as
-     * it places the results, so an immutable List.of(...) crashes the encased fan's tick with an
-     * UnsupportedOperationException (berlord's world, 2026-08-02).
+     * The returned list must be mutable. Create's FanProcessing.applyProcessing removes from it as
+     * it places the results, so an immutable list throws {@link UnsupportedOperationException}.
      */
     @Override
     public List<ItemStack> process(ItemStack stack, Level level) {
@@ -86,6 +85,6 @@ public class OminousFanProcessingType implements FanProcessingType {
 
     @Override
     public void affectEntity(Entity entity, Level level) {
-        // Deliberately inert for the proof of concept - the point is item processing, not a hazard.
+        // Ominous airflow processes items but deliberately has no effect on entities.
     }
 }

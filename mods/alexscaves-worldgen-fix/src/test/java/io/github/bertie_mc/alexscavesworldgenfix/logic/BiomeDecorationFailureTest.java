@@ -27,7 +27,7 @@ class BiomeDecorationFailureTest {
 
     @Test
     void upstreamClampThrowsOnAnEmptyList() {
-        // max(0, min(-1, -1)) == 0, and get(0) on an empty list is the crash berlord hit.
+        // max(0, min(-1, -1)) == 0, so the clamp still calls get(0) on an empty list.
         IndexOutOfBoundsException thrown = assertThrows(
                 IndexOutOfBoundsException.class,
                 () -> alexsCavesClamp(List.of(), -1));

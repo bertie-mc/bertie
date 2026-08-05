@@ -268,14 +268,13 @@ write(f"{R}/inventory_2x2/stone_pour_channel.json",        # R02D
                 "bertieprogression:stone_pour_channel"))
 write(f"{R}/inventory_2x2/hand_crank.json",                # R14D  (PP/PA)
       shaped(["PP", "PA"], {"P": "#minecraft:planks", "A": "create:andesite_alloy"}, "create:hand_crank"))
-# R18 (Licensed Crafting Plinth) removed — block dropped, berlord batch 4.
-# Note 4 (2026-07-22): pre-table Mundabitur Dust — shapeless 4 -> 1 (the R28A table bulk 6->4 stays).
+# R18 (Licensed Crafting Plinth) was removed with the block.
+# Pre-table Mundabitur Dust is shapeless 4 -> 1; the R28A table bulk route remains 6 -> 4.
 write(f"{R}/inventory_2x2/mundabitur_dust_pretable.json",
       shapeless(["forbidden_arcanus:arcane_crystal_dust", "minecraft:phantom_membrane",
                  "minecraft:redstone", "minecraft:gunpowder"],
                 "forbidden_arcanus:mundabitur_dust", 1))
-# Note 6: pre-table Deorum Nugget — shapeless dust + rose gold + charcoal + arcane SPECK -> 1 nugget.
-# (berlord 2026-07-22 batch 2: arcane ingredient downgraded dust -> speck, 1/9 of a dust.)
+# Pre-table Deorum Nugget: dust + rose gold + charcoal + one arcane speck -> one nugget.
 write(f"{R}/inventory_2x2/deorum_nugget_pretable.json",
       shapeless(["forbidden_arcanus:mundabitur_dust", "slag:rose_gold_ingot",
                  "minecraft:charcoal", "forbidden_arcanus:arcane_crystal_dust_speck"],
@@ -285,8 +284,7 @@ write(f"{R}/inventory_2x2/deorum_nugget_pretable.json",
 write(f"{R}/inventory_2x2/arcane_crystal_dust_split.json",
       shapeless(["forbidden_arcanus:arcane_crystal_dust"],
                 "forbidden_arcanus:arcane_crystal_dust_speck", 9))
-# Weeping Eye (C2, berlord 2026-07-22 batch 2): locates the Weeping Well. Recipe unspecified by
-# Weeping Eye (berlord 2026-07-25): the 2x2 shapeless is replaced by a HEATED Create mixing —
+# Weeping Eye locates the Weeping Well. Its heated Create mixing recipe uses
 # 1 Ender Pearl + 4 Prismarine Shards + 6 Refined Brilliance. (Basin recipes allow up to 64
 # ingredient entries — BasinRecipe.getMaxInputCount, jar-verified — so 11 entries is fine.)
 write(f"{R}/create/weeping_eye_mixing.json",
@@ -296,7 +294,7 @@ write(f"{R}/create/weeping_eye_mixing.json",
                        + [{"item": "minecraft:prismarine_shard"} for _ in range(4)]
                        + [{"item": "malum:refined_brilliance"} for _ in range(6)]),
        "results": [{"id": "bertieprogression:weeping_eye"}]})
-# Note 7: Stonecutter (replaces stock, see override below) — shaped 2x2 fits the pre-table grid.
+# Stonecutter replaces the stock recipe with a shaped 2x2 that fits the pre-table grid.
 write(f"{R}/inventory_2x2/stonecutter.json",
       shaped(["ID", "SS"], {"I": "minecraft:iron_ingot", "D": "slag:deep_alloy",
                             "S": "minecraft:smooth_stone"}, "minecraft:stonecutter"))
@@ -306,8 +304,8 @@ write(f"{R}/table/mundabitur_bulk.json",                   # R28A
       shapeless(["forbidden_arcanus:arcane_crystal_dust", "minecraft:redstone", "minecraft:blaze_powder",
                  "minecraft:bone_meal", "minecraft:phantom_membrane", "minecraft:gunpowder"],
                 "forbidden_arcanus:mundabitur_dust", 4))
-# R22 (Fusion Shrine on the licensed table) REMOVED 2026-08-01 with the rest of the Pastel
-# overrides - the Shrine is back to Pastel's own two pedestal recipes.
+# R22 (Fusion Shrine on the licensed table) was removed with the Pastel overrides. The Shrine uses
+# Pastel's two pedestal recipes.
 write(f"{R}/table/warden_echo_pattern.json",               # R31
       shaped(["ASA", "SCS", "AMA"],
              {"A": "minecraft:amethyst_shard", "S": "minecraft:sculk",
@@ -315,7 +313,7 @@ write(f"{R}/table/warden_echo_pattern.json",               # R31
              "bertieprogression:warden_echo_pattern"))
 
 # ---- Brick Forge double smelting (SLAG) ----
-# Ore double-smelts are 2 raw -> 1 ingot (berlord batch 5: "make all ore smelting brick forge 2->1").
+# Ore double-smelts consume two raw materials per ingot.
 write(f"{R}/slag/first_copper_ingots.json",  double_smelting("minecraft:raw_copper", "minecraft:raw_copper", "minecraft:copper_ingot", 1))   # R05D1
 write(f"{R}/slag/first_iron_ingots.json",    double_smelting("minecraft:raw_iron", "minecraft:raw_iron", "minecraft:iron_ingot", 1))         # R05D2
 write(f"{R}/slag/first_gold_ingots.json",    double_smelting("minecraft:raw_gold", "minecraft:raw_gold", "minecraft:gold_ingot", 1))         # R05D3
@@ -324,14 +322,13 @@ write(f"{R}/slag/first_zinc_ingots.json",    double_smelting("create:raw_zinc", 
 write(f"{R}/slag/runes.json",
       double_smelting("#forbidden_arcanus:runic_stones", "#forbidden_arcanus:runic_stones",
                       "forbidden_arcanus:rune", 2))
-# R12 removed (berlord batch 3): Brass is no longer a Brick-Forge double-smelt — it is now a
-# Hephaestus ritual (see brass_ingot.json below).
-# R18A removed (berlord 2026-07-22 batch 2): Refined Soulstone now via Brick-Forge bed recipe
+# R12 was removed because Brass now uses the Hephaestus ritual below.
+# R18A was removed because Refined Soulstone now uses a Brick-Forge bed recipe
 # (4 Raw Soulstone + 1 Diamond, see BedRecipes.refined_soulstone). Charcoal + vanilla-smelt routes gone.
-# Note 10 (2026-07-22): Arcane Crystal Dust now smelted in the Brick Forge, 2 crystal -> 1 dust
-# (replaces the removed Mallet+crystal->4dust bed recipe R06C). NOTE: slag:double_smelting has no
-# secondary/chance output field, so the requested "+25% bonus dust" is NOT expressible here — shipped
-# as a flat 2->1. Revisit if a bonus is wanted (needs a different recipe type / code).
+# Arcane Crystal Dust is smelted in the Brick Forge, 2 crystal -> 1 dust
+# (replaces the removed Mallet+crystal->4dust bed recipe R06C). The slag:double_smelting format has
+# no secondary/chance output field, so this is a flat 2->1. A bonus would need a different recipe
+# type or custom code.
 write(f"{R}/slag/arcane_crystal_dust.json",
       double_smelting("forbidden_arcanus:arcane_crystal", "forbidden_arcanus:arcane_crystal",
                       "forbidden_arcanus:arcane_crystal_dust", 1, 200, 0.5))
@@ -339,7 +336,7 @@ write(f"{R}/slag/arcane_crystal_dust.json",
 # ---- Hephaestus rituals (HF1+, data-driven demo of the retained-recipe list) ----
 RIT = "data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual"
 
-# R13 Electron Tubes MOVED to the Spirit Altar (berlord batch 3: "spirit crafts are better suited").
+# R13 Electron Tubes use the Spirit Altar.
 # Same recipe feel: Natural Quartz core + Redstone + Slag-cast Gold/Iron Plates, paid in spirits.
 r13 = infusion("malum:natural_quartz", 1, [("minecraft:redstone", 2)],
                [SP("arcane", 2), SP("aerial", 2)], "create:electron_tube", 3)
@@ -348,7 +345,7 @@ for _comps in (GOLD_PLATE, IRON_PLATE):
                                "components": _comps, "count": 1})
 write(f"{R}/malum/electron_tube.json", r13)
 
-# Brass Ingot (berlord batch 3): Hephaestus ritual — Colossal Iron core + Deorum + 2 Zinc + 2 Rose
+# Brass Ingot: Hephaestus ritual with a Colossal Iron core, Deorum, 2 Zinc and 2 Rose
 # Gold -> 2 Brass. Replaces the removed Brick-Forge double-smelt.
 write(f"{RIT}/brass_ingot.json",
       ritual("armageddon_mod:colossal_iron_ingot",
@@ -356,7 +353,7 @@ write(f"{RIT}/brass_ingot.json",
               ("slag:rose_gold_ingot", 2)],
              "create:brass_ingot", 2, tier=1))
 
-# Brass Casing (berlord batch 3): apply a Brass Ingot onto an Edelwood Log (Create item application).
+# Brass Casing: apply a Brass Ingot to an Edelwood Log with Create item application.
 write(f"{R}/create/brass_casing_edelwood.json", {
     "neoforge:conditions": conds("create", "forbidden_arcanus"),
     "type": "create:item_application",
@@ -364,18 +361,18 @@ write(f"{R}/create/brass_casing_edelwood.json", {
     "results": [{"id": "create:brass_casing"}],
 })
 
-# r14_water_wheel ritual REMOVED (berlord batch 8): Water Wheel is now the bound-soul sequenced assembly.
+# r14_water_wheel was removed because Water Wheels now use bound-soul sequenced assembly.
 # (Stale ritual file is rm'd; rituals are a hard registry so it must be deleted, not condition-disabled.)
 # r14a (Brass Casing ritual) removed — Brass Casing is now the Edelwood-Log item application above.
-# r14a0 andesite_casing_blank ritual REMOVED (berlord 2026-07-24): custom casing chain scrapped;
+# r14a0 andesite_casing_blank was removed with the custom casing chain;
 # create:andesite_casing restored to its Create default item-application (see the DISABLED block below).
 write(f"{RIT}/r14b_kinetic_pattern_plates.json",
       ritual("berlordscarving:stone_big_slate",
              [("create:brass_nugget", 4), ("forbidden_arcanus:arcane_crystal_dust", 1)],
              "bertieprogression:kinetic_pattern_plate", 4, tier=1))
-# r14c gearbox-from-blank ritual REMOVED (berlord 2026-07-24): gearbox reverts to Create's default
+# r14c gearbox-from-blank was removed; the gearbox uses Create's default
 # recipe (andesite casing + 4 shafts), which works again now that andesite casing is restored.
-# R15 Mechanical Crafter MOVED to the Spirit Altar (berlord batch 4), now yields ONE:
+# R15 Mechanical Crafter uses the Spirit Altar and yields one:
 # Brass Casing core + Dragon Bone + Electron Tube + Cogwheel, paid in Eldritch/Earthen/Arcane.
 write(f"{R}/malum/mechanical_crafter.json",
       infusion("create:brass_casing", 1,
@@ -383,10 +380,10 @@ write(f"{R}/malum/mechanical_crafter.json",
                 ("create:cogwheel", 1), ("minecraft:diamond", 1)],
                [SP("eldritch", 4), SP("earthen", 4), SP("arcane", 4)],
                "create:mechanical_crafter", 1))
-# R16 (Crafting Language Seals) removed with the Seal/Witness/Slate (berlord batch 4).
-# The 3x3 gate is now the consumable Crafting License — RECIPE STILL NEEDED (berlord to supply).
+# R16 was removed with the Crafting Language Seal, Witness and Slate. The consumable Crafting
+# License defined below is now the 3x3 gate.
 
-# Earplugs (berlord batch 4, overwrites Ice & Fire's): String core + 2 Planks + 6 Wool, 20 aureal.
+# Earplugs overwrite Ice & Fire's recipe: String core + 2 Planks + 6 Wool, 20 aureal.
 write(f"{RIT}/earplugs.json",
       ritual("minecraft:string",
              [("#minecraft:planks", 2), ("#minecraft:wool", 6)],
@@ -394,7 +391,7 @@ write(f"{RIT}/earplugs.json",
              essences={"aureal": 20, "blood": 0, "souls": 0}))
 write("data/iceandfire/recipe/earplugs.json", DISABLED)
 
-# Builder Stone (berlord batch 4, overwrites Armageddon's): Siren Tear core + 2 Colossal Iron +
+# Builder Stone overwrites Armageddon's recipe: Siren Tear core + 2 Colossal Iron +
 # 2 Gilded Plate + Gilded Ingot smithing template + 2 Amethyst + 1 Emerald (8 = full pedestal ring).
 write(f"{RIT}/builder_stone.json",
       ritual("iceandfire:siren_tear",
@@ -405,10 +402,9 @@ write(f"{RIT}/builder_stone.json",
              essences={"aureal": 200, "blood": 10000, "souls": 10}))
 write("data/armageddon_mod/recipe/builderstonerecipe.json", DISABLED)
 
-# Spirit Altar (berlord 2026-07-22 batch 2): Runewood Planks core + 4 Refined Soulstone + 4 gold
-# plate, 100 XP / 5000 blood / 10 souls / 500 aureal. NOTE "gilded plate" read as the Slag GOLDEN
-# plate (dynamic_part{golden,plate}) — matches the old altar recipe and keeps C2 self-contained;
-# swap to armageddon_mod:gilded_plate (a goblin-lord drop) if the boss loot was meant instead.
+# Spirit Altar: Runewood Planks core + 4 Refined Soulstone + 4 Slag golden plates,
+# 100 XP / 5000 blood / 10 souls / 500 aureal. Using the Slag dynamic golden plate matches the old
+# altar recipe and keeps this progression stage self-contained.
 r19 = ritual("malum:runewood_planks",
              [("malum:refined_soulstone", 4), ("placeholder", 4)],
              "malum:spirit_altar", 1, tier=1,
@@ -416,12 +412,12 @@ r19 = ritual("malum:runewood_planks",
 ritual_component_input(r19, 1, "slag:dynamic_part", GOLD_PLATE, 4)
 write(f"{RIT}/r19_spirit_altar.json", r19)
 
-# R26A Nether Lintel Core RITUAL REMOVED (berlord 2026-07-31) together with the Nether Lintel and
+# R26A Nether Lintel Core ritual was removed with the Nether Lintel and
 # the Core themselves - both items are obsolete now the Nether is entered through the Netherly Meal.
 # This also closes the long-open "what replaces the Crafting Language Seal as its third input"
 # question: there is no ritual left to have a third input.
 
-# R29B Ritual Burner Cage REMOVED (berlord 2026-07-26) along with the item itself.
+# R29B Ritual Burner Cage was removed with the item.
 
 write(f"{RIT}/r29_spirit_instiller.json",
       ritual("pastel:pedestal_onyx",
@@ -429,17 +425,16 @@ write(f"{RIT}/r29_spirit_instiller.json",
               ("malum:arcane_spirit", 2), ("malum:eldritch_spirit", 1),
               ("malum:sacred_spirit", 1), ("malum:wicked_spirit", 1)],
              "pastel:spirit_instiller", 1, tier=2))
-# R30 Twilight Concord RITUAL REMOVED (berlord 2026-07-26): it consumed the Serpent Scale Blank and
+# R30 Twilight Concord ritual was removed because it consumed the deleted Serpent Scale Blank and
 # the Ritual Burner Cage, both now deleted. The Concord's spirit-infusion route (C2) is the sole one.
 write(f"{RIT}/r30a_echoing_city_compass.json",
       ritual("minecraft:compass",
              [("pastel:onyx_shard", 1), ("minecraft:sculk", 3), ("malum:aqueous_spirit", 4)],
              "bertieprogression:echoing_city_compass", 1, tier=2,
              essences={"aureal": 250, "blood": 0, "souls": 0}))
-# R31A Spirit Crucible RITUAL REMOVED (berlord 2026-08-02): Malum's own spirit infusion
+# R31A Spirit Crucible ritual was removed; Malum's own spirit infusion
 # (furnace + 2 hex ash + 8 tainted + 8 twisted, 8 infernal / 8 aqueous) is the sole route now.
-# Note 13 (2026-07-22): additive Carving Station route via HF1 (stock 2x2 recipe untouched).
-# XP cost removed (berlord note, 2026-07-22 batch 2).
+# The Carving Station has an additive HF1 route while its stock 2x2 recipe remains, with no XP cost.
 write(f"{RIT}/carving_station.json",
       ritual("minecraft:stonecutter",
              [("minecraft:amethyst_shard", 1), ("minecraft:heart_of_the_sea", 1),
@@ -473,10 +468,10 @@ write(f"{RIT}/r40_convergence_matrix.json",
              essences={"aureal": 2500, "blood": 12000, "souls": 64}))
 
 # ---- Malum spirit infusions ----
-# R19A (Spirit Altar Witness) removed — item dropped, berlord batch 4.
+# R19A was removed with the Spirit Altar Witness item.
 write(f"{R}/malum/runewood_resonance.json",                # R20A
       infusion("malum:refined_soulstone", 1, [], [SP("aerial", 4)], "bertieprogression:runewood_resonance"))
-# R21C Arcana Resonance REMOVED (berlord 2026-07-31): nothing ever consumed it. The Arcana Pylon
+# R21C Arcana Resonance was removed because nothing consumed it. The Arcana Pylon
 # takes the RUNEWOOD Resonance (R20A above), which stays.
 write(f"{R}/malum/sculk_blocks.json",                      # R30S
       infusion("minecraft:deepslate", 1, [("malum:refined_soulstone", 1)], [SP("aqueous", 8)],
@@ -501,15 +496,14 @@ write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
                [SP("infernal", 16)], "bertieprogression:boss_rematch_seal"))
 
 # ---- Mechanical Crafter recipes ----
-# R17 removed with the Seal. The vanilla Crafting Table currently has NO recipe (its stock one is
-# disabled below) — RECIPE STILL NEEDED (berlord to supply), along with the Crafting License.
+# R17 was removed with the Seal. The stock Crafting Table recipe is disabled below; the 5x5
+# mechanical recipe is its sole route.
 write(f"{R}/mechanical/exclusive/runic_workbench.json",         # R21A
       mech(["RGR", "SPS", "RGR"],
            {"R": "malum:runewood_planks", "G": "malum:hallowed_gold_ingot",
             "S": "malum:refined_soulstone", "P": "malum:arcana_pylon"},
            "malum:runic_workbench"))
-# R24A Victory Ledger recipe removed (berlord 2026-07-25) along with the block itself.
-# R27 Nether Lintel recipe removed (berlord 2026-07-31) along with the item and its Core.
+# R24A Victory Ledger and R27 Nether Lintel recipes were removed with their blocks and items.
 write(f"{R}/mechanical/exclusive/echo_lock.json",               # R31C
       mech(["DSD", "SOS", "DSD"],
            {"D": "minecraft:deepslate_tiles", "S": "minecraft:sculk", "O": "pastel:onyx_shard"},
@@ -554,7 +548,7 @@ write(f"{R}/pastel/concordant_moonsteel.json",             # R37B
       instiller("betterend:terminite_ingot", 4, "pastel:moonstone_powder", "forbidden_arcanus:arcane_crystal_dust",
                 "bertieprogression:concordant_moonsteel_ingot", 4, 400, 4.0))
 
-# (R25 proof-replication family removed with the proof items — berlord 2026-07-22.)
+# R25 proof-replication family was removed with the proof items.
 
 # ---- Avaritia capstone ----
 write(f"{R}/avaritia/mekanism_access_core.json", {         # R42 — exact §8.5
@@ -580,23 +574,23 @@ write(f"{R}/avaritia/mekanism_access_core.json", {         # R42 — exact §8.5
 write("data/minecraft/recipe/crafting_table.json", DISABLED)
 
 # Smithing Table loses its bottom plank row -> fits the 2x2 inventory grid
-# (replaces the Field Smithing Core route; berlord 2026-07-22)
+# Replaces the Field Smithing Core route.
 write("data/minecraft/recipe/smithing_table.json",
       shaped(["II", "PP"], {"I": "minecraft:iron_ingot", "P": "#minecraft:planks"},
              "minecraft:smithing_table"))
 
-# Note 7: replace the vanilla Stonecutter recipe with the authored 2x2 (iron+deep_alloy over smooth stone).
+# Replace the vanilla Stonecutter recipe with the 2x2 iron/deep-alloy recipe over smooth stone.
 write("data/minecraft/recipe/stonecutter.json", DISABLED)
 
-# Note 6: Deorum ingot <-> nugget becomes 4:1 (stock FA is the 9-grid). Override both stock recipes.
+# Deorum ingot <-> nugget uses a 4:1 ratio instead of FA's stock 9:1; override both recipes.
 write("data/forbidden_arcanus/recipe/deorum_nugget_from_deorum_ingot.json",
       shapeless(["forbidden_arcanus:deorum_ingot"], "forbidden_arcanus:deorum_nugget", 4))
-# Note (2026-07-22 batch 2): nugget -> ingot is a SHAPED 2x2 (4 nuggets), not shapeless.
+# Nugget -> ingot is a shaped 2x2 using four nuggets, not shapeless.
 write("data/forbidden_arcanus/recipe/deorum_ingot_from_deorum_nugget.json",
       shaped(["NN", "NN"], {"N": "forbidden_arcanus:deorum_nugget"},
              "forbidden_arcanus:deorum_ingot", 1))
 
-# Note 8: darkstone stonecutter exchange — two isolated pools (normal / arcane). Gilded Chiseled
+# Darkstone stonecutter exchange has two isolated pools (normal and arcane). Gilded Chiseled
 # Polished Darkstone is the ARCANE entry point (obtainable early via the forge bed R07B).
 FA = "forbidden_arcanus"
 darkstone_pool("normal", [f"{FA}:{b}" for b in [
@@ -617,12 +611,11 @@ for p in ["crafting/kinetics/water_wheel", "crafting/kinetics/hand_crank",
           "crafting/materials/electron_tube", "crafting/kinetics/mechanical_crafter",
           "item_application/brass_casing_from_log", "item_application/brass_casing_from_wood"]:
     write(f"data/create/recipe/{p}.json", DISABLED)
-# batch 8 (berlord 2026-07-24): empty_blaze_burner is NO LONGER disabled — it gets a real 3x3 + 5x5
-# recipe (see batch 8 below). Lighting it by capturing a blaze is a Create interaction, unaffected.
-# Note 16 (berlord 2026-07-24): andesite_casing_from_log/wood are NO LONGER disabled — Create's
-# default item-application (Andesite Alloy on a stripped log/wood) is the restored andesite casing route.
+# empty_blaze_burner remains enabled and receives the 3x3 and 5x5 recipes below. Lighting it by
+# capturing a blaze remains a Create interaction. Create's default andesite-casing item applications
+# also remain enabled as the intended casing route.
 
-# Note 18 (berlord 2026-07-24): Copper Casing accepts ONLY stripped twilight oak as its wood, gating
+# Copper Casing accepts only stripped twilight oak as its wood, gating
 # it behind the Twilight Forest. Overrides Create's any-stripped-log/wood item-applications.
 def _copper_casing(wood_id, suffix):
     write(f"data/create/recipe/item_application/copper_casing_from_{suffix}.json",
@@ -633,18 +626,18 @@ def _copper_casing(wood_id, suffix):
 _copper_casing("twilightforest:stripped_twilight_oak_log", "log")
 _copper_casing("twilightforest:stripped_twilight_oak_wood", "wood")
 
-# Note 8 (berlord 2026-07-24): Furnace replaces vanilla — iron frame with a cobble/netherrack base.
+# Furnace replaces vanilla with an iron frame and a cobble/netherrack base.
 # On the crafting table (overwrites the vanilla recipe id) and the Mechanical Crafter.
 _FURNACE_PAT = ["III", "I I", "CNC"]
 _FURNACE_KEY = {"I": "minecraft:iron_ingot", "C": "minecraft:cobblestone", "N": "minecraft:netherrack"}
 write("data/minecraft/recipe/furnace.json", shaped(_FURNACE_PAT, _FURNACE_KEY, "minecraft:furnace"))
 write(f"{R}/mechanical/pre_table/furnace.json", mech(_FURNACE_PAT, _FURNACE_KEY, "minecraft:furnace"))
 
-# ==================================================== berlord batch 6 (2026-07-24, "build all")
+# ==================================================== Progression machine recipes
 # Every id below was verified in the pack instance jars (elemental_metals, iceandfire, malum,
 # forbidden_arcanus, irons_spellbooks, slag, create, twilightforest).
 
-# --- Note 9: Blast Furnace (table + mecha), Clibano Core, Refined Brilliance smelts ---
+# --- Blast Furnace (table + mechanical), Clibano Core, Refined Brilliance smelts ---
 _BLAST_PAT = ["FFF", "FUF", "SMS"]
 _BLAST_KEY = {"F": "elemental_metals:fire_infused_iron_ingot", "U": "minecraft:furnace",
               "S": "minecraft:smooth_stone", "M": "minecraft:magma_block"}
@@ -669,7 +662,7 @@ def _cook(kind, tid, src, dst, time):
 _cook("minecraft:smelting", "refined_brilliance_smelt", "malum:raw_brilliance", "malum:refined_brilliance", 200)
 _cook("minecraft:blasting", "refined_brilliance_blast", "malum:raw_brilliance", "malum:refined_brilliance", 100)
 
-# --- Note 11: elemental infused-iron ingots (Spirit Altar; input iron ingot, +4 uncommon ink last) ---
+# --- Elemental infused-iron ingots (Spirit Altar; input iron ingot, +4 uncommon ink last) ---
 _INK = ("irons_spellbooks:uncommon_ink", 4)
 def _elem(out, scale, mid, mcount, extra_id, sp1, sp2):
     write(f"{R}/malum/elem_{out}.json",
@@ -682,8 +675,8 @@ _elem("fire", "red", "minecraft:blaze_powder", 3, "minecraft:lava_bucket", "infe
 _elem("frost", "blue", "minecraft:snowball", 3, "minecraft:packed_ice", "aqueous", "wicked")
 _elem("lightning", "bronze", "minecraft:glowstone_dust", 3, "irons_spellbooks:lightning_bottle", "aerial", "infernal")
 _elem("soul", "teal", "minecraft:soul_sand", 3, "forbidden_arcanus:corrupt_soul", "sacred", "aerial")
-# Healing (berlord): the component-matched regen potion never matched (Malum read it component-blind, so
-# EMI showed the base "Uncraftable Potion"). Use a plain potion — clean infusion() like the others.
+# Healing uses a plain potion because Malum ignores the potion component; a component-matched
+# regeneration potion appears in EMI as the base "Uncraftable Potion" instead.
 write(f"{R}/malum/elem_healing.json",
       infusion("minecraft:iron_ingot", 1,
                [("iceandfire:sea_serpent_scales_green", 1), ("minecraft:seagrass", 3),
@@ -691,7 +684,7 @@ write(f"{R}/malum/elem_healing.json",
                [SP("earthen", 8), SP("sacred", 4)],
                "elemental_metals:healing_infused_iron_ingot", 1))
 
-# --- Note 12/13: Twilight Concord, Arcane Ingot, Soulstained Steel (all Spirit Altar) ---
+# --- Twilight Concord, Arcane Ingot, Soulstained Steel (all Spirit Altar) ---
 write(f"{R}/malum/twilight_concord.json",
       infusion("iceandfire:cyclops_eye", 1,
                [("malum:mnemonic_fragment", 27), ("malum:null_slate", 9), ("irons_spellbooks:arcane_ingot", 3),
@@ -708,7 +701,7 @@ write(f"{R}/malum/soulstained_steel.json",
                [("malum:earthen", 3), ("malum:arcane", 6), ("malum:wicked", 9)],
                "malum:soul_stained_steel_ingot", 1))
 
-# --- Note 12: Twilight Forest portal reconfig (tag overrides; replace=true drops the vanilla entries) ---
+# --- Twilight Forest portal reconfiguration; replace=true drops the vanilla entries ---
 write("data/twilightforest/tags/item/portal/activator.json",
       {"replace": True, "values": ["bertieprogression:twilight_concord"]})
 write("data/twilightforest/tags/block/portal/fluid.json",
@@ -716,7 +709,7 @@ write("data/twilightforest/tags/block/portal/fluid.json",
 write("data/twilightforest/tags/block/portal/decoration.json",
       {"replace": True, "values": ["iceandfire:fire_lily", "iceandfire:frost_lily", "iceandfire:lightning_lily"]})
 
-# --- Note 19: Slag foundry — mecha versions, block-of-deep-alloy, crucible->1, drain/interface, melter ritual ---
+# --- Slag foundry: mechanical versions, Deep Alloy block, crucible, drain/interface and melter ---
 _DA = "#c:ingots/deep_alloy"
 # Block of Deep Alloy: Create compacting (press + basin), 9 deep alloy.
 write(f"{R}/create/deep_alloy_block_compacting.json",
@@ -747,7 +740,7 @@ write(f"{RIT}/melter.json",
               ("forbidden_arcanus:smelter_prism", 1), ("slag:drain", 1)],
              "slag:melter", 1, tier=1, essences={"aureal": 500, "blood": 0, "souls": 10}))
 
-# ==================================================== Note 17: quest line 3 — Create kinetics
+# ==================================================== Quest line 3 — Create kinetics
 # Table recipes OVERWRITE Create's own (same resource path); Mechanical Crafter versions are added.
 # Symbols: A andesite_alloy, B andesite_casing, S shaft, C cogwheel, W large_cogwheel, H whisk,
 # F propeller, R iron_bars, V wool, E iron_sheet, I iron_block (press) / iron_ingot (chute). N=empty.
@@ -755,20 +748,20 @@ _CK = "data/create/recipe/crafting/kinetics"
 _AA, _AC, _SH, _CG, _LC = "create:andesite_alloy", "create:andesite_casing", "create:shaft", "create:cogwheel", "create:large_cogwheel"
 _ISH, _BS, _CS = "create:iron_sheet", "create:brass_sheet", "create:copper_sheet"
 _ET, _PR = "create:electron_tube", "create:propeller"
-def _p(rows):  # note used 'N' for empty; Minecraft patterns use spaces
+def _p(rows):  # Recipe diagrams use N for empty; Minecraft patterns use spaces.
     return [r.replace("N", " ") for r in rows]
 
 # Depot
 _dk = {"A": _AA, "B": _AC}
-# Note batch 7: depot — 3 casings on the bottom row. batch 8 (berlord 2026-07-24): remove the TOP ROW.
+# Depot uses three casings on the bottom row and no top row.
 write(f"{_CK}/depot.json", shaped(_p(["AAA", "BBB"]), _dk, "create:depot"))
 write(f"{R}/mechanical/kinetics/depot.json", mech(_p(["ANNNA", "AAAAA", "NBBBN"]), _dk, "create:depot"))
 # Mechanical Press (I = iron BLOCK)
 _pk = {"S": _SH, "C": _CG, "B": _AC, "I": "minecraft:iron_block"}
-# Note batch 7: press table — top-middle stays a shaft, cogwheels -> casings.
+# Press table: the top-middle remains a shaft and the cogwheels become casings.
 write(f"{_CK}/mechanical_press.json", shaped(_p(["NSN", "BBB", "NIN"]), {"S": _SH, "B": _AC, "I": "minecraft:iron_block"}, "create:mechanical_press"))
-# batch 8 (berlord 2026-07-24): 5x5 press — top-middle casing->shaft, small cogwheels->casings (my
-# read of the terse note; flagged for berlord). Large cogwheel (W) centre kept; no small cogwheels left.
+# The 5x5 press keeps a shaft at the top-middle and a large cogwheel at the centre, with casings in
+# place of the small cogwheels.
 write(f"{R}/mechanical/kinetics/mechanical_press.json",
       mech(_p(["NBSBN", "SBWBS", "NBSBN", "NNSNN", "NIIIN"]),
            {"S": _SH, "B": _AC, "I": "minecraft:iron_block", "W": _LC}, "create:mechanical_press"))
@@ -789,7 +782,7 @@ write(f"{_CK}/encased_fan.json", shaped(_p(["EEE", "SBF", "EEE"]), _fk, "create:
 write(f"{R}/mechanical/kinetics/encased_fan.json",
       mech(_p(["BBBBB", "BCCCR", "SSNCF", "BCCCR", "BBBBB"]), {"B": _AC, "C": _CG, "R": "minecraft:iron_bars", "S": _SH, "F": _PR}, "create:encased_fan"))
 
-# --- Note 17 recipe changes (not quests) — overwrite Create's crafting recipes ---
+# --- Recipe changes that overwrite Create's crafting recipes ---
 # Brass ingot via mixing: Zinc + Rose Gold.
 write("data/create/recipe/mixing/brass_ingot.json",
       {"neoforge:conditions": conds("create", "slag"), "type": "create:mixing",
@@ -798,19 +791,20 @@ write("data/create/recipe/mixing/brass_ingot.json",
 write(f"{_CK}/chute.json", shaped(_p(["INI", "INI", "ENE"]), {"I": "minecraft:iron_ingot", "E": _ISH}, "create:chute"))
 write(f"{_CK}/smart_chute.json", shaped(_p(["PNP", "PKP", "PTP"]), {"P": _BS, "K": "create:chute", "T": _ET}, "create:smart_chute"))
 write(f"{_CK}/fluid_pipe.json", shaped(_p(["SNS", "INI", "SNS"]), {"S": _CS, "I": "minecraft:copper_ingot"}, "create:fluid_pipe"))
-# batch 8 (berlord 2026-07-24): remove the horizontal fluid-pipe recipe.
+# Remove the horizontal fluid-pipe recipe.
 write(f"{R}/create/fluid_pipe_horizontal.json", DISABLED)
-# Note batch 7: remove the OLD 4-output fluid pipe recipe. Create ships TWO — fluid_pipe.json is
+# Remove the old four-output fluid pipe recipe. Create ships two: fluid_pipe.json is
 # overridden with the copper recipe above; fluid_pipe_vertical.json is the leftover, so disable it.
 write("data/create/recipe/crafting/kinetics/fluid_pipe_vertical.json", DISABLED)
-# Note batch 7: smart fluid pipe — electron tube in the middle, a fluid pipe top and bottom.
+# Smart fluid pipe: electron tube in the middle, fluid pipes above and below.
 write(f"{_CK}/smart_fluid_pipe.json", shaped(_p(["PFP", "PTP", "PFP"]), {"P": _BS, "F": "create:fluid_pipe", "T": _ET}, "create:smart_fluid_pipe"))
 write(f"{_CK}/fluid_valve.json", shaped(_p(["IFI", "ISI", "IFI"]), {"I": _ISH, "F": "create:fluid_pipe", "S": "create:speedometer"}, "create:fluid_valve"))
 write(f"{_CK}/mechanical_pump.json", shaped(_p(["IFI", "ICI", "IFI"]), {"I": _ISH, "F": "create:fluid_pipe", "C": _CG}, "create:mechanical_pump"))
 write(f"{_CK}/weighted_ejector.json", shaped(_p(["GGG", "SDS", "NCN"]), {"G": "create:golden_sheet", "S": _SH, "D": "create:depot", "C": _CG}, "create:weighted_ejector"))
 write(f"{_CK}/copper_valve_handle.json", shaped(_p(["ZNZ", "ZAZ", "NZN"]), {"Z": _CS, "A": _AA}, "create:copper_valve_handle"))
 write(f"{_CK}/nozzle.json", shaped(_p(["AAA", "VNV", "AAA"]), {"A": _AA, "V": "#minecraft:wool"}, "create:nozzle"))
-# Note batch 7: Propeller (5x5 mecha) + Wrench (5x5 mecha, ADDITIVE — Create's normal recipe kept).
+# Propeller and Wrench receive additive 5x5 mechanical recipes; Create's normal Wrench recipe
+# remains.
 write(f"{R}/mechanical/kinetics/propeller.json",
       mech(_p(["NEENN", "NNENE", "EEAEE", "ENENN", "NNEEN"]), {"E": _ISH, "A": _AA}, "create:propeller"))
 write(f"{R}/mechanical/kinetics/wrench.json",
@@ -818,7 +812,7 @@ write(f"{R}/mechanical/kinetics/wrench.json",
            {"G": "create:golden_sheet", "S": "minecraft:stick", "C": _CG}, "create:wrench"))
 
 # ==================================================== "slow Clibano" (was the ignitium demo)
-# berlord batch 8 (2026-07-24): repurposed. Slow soul-fire Clibano alloy — Hallowed Gold + Soulstained
+# Slow soul-fire Clibano alloy: Hallowed Gold + Soulstained
 # Steel -> Bound Soul Ingot (mythsandlegends), cooking_time 9000, with an Arcane Crystal Dust residue.
 # Filename/residue_type id kept as "ignitium" to avoid stale files; ids are internal. Bound Soul Ingot
 # keeps its own original recipe too (this is an extra route). NEEDS A RESTART (residue_type = dynamic
@@ -835,7 +829,7 @@ write(f"{R}/ignitium_ingot_from_clibano_combustion.json", {
     "residue": {"type": "bertieprogression:ignitium", "chance": 0.1},
     "result": {"count": 1, "id": "mythsandlegends:bound_soul_ingot"},
 })
-# Slow-clibano residue is Arcane Crystal Dust (berlord's explicit exception to "secondary = primary").
+# Slow-clibano residue is Arcane Crystal Dust rather than the secondary input.
 write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
     "combine_info": {"required_amount": 1, "result": {"count": 1, "id": "forbidden_arcanus:arcane_crystal_dust"}},
     "name": {"text": "Arcane Crystal Residue"},
@@ -844,10 +838,8 @@ write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
 # Deeper and Darker: Reinforced Echo goes through the Warden Echo Pattern (R31/R31R)
 write("data/deeperdarker/recipe/reinforced_echo_shard.json", DISABLED)
 
-# Pastel: NOTHING under data/pastel/ is overridden any more (berlord 2026-08-01). The Fusion
-# Shrine's two stock pedestal recipes used to be disabled here so R22 could move it to the
-# licensed table; both are restored, and R22 itself is gone. berlord is bringing Pastel into the
-# progression properly and wants the mod's own recipes untouched as the starting point.
+# Pastel's own recipes remain untouched. In particular, the Fusion Shrine keeps both stock pedestal
+# recipes and R22 no longer moves it to the licensed table.
 
 # Avaritia: R41 is the sole Nether Crafting Table source
 write("data/avaritia/recipe/nether_crafting_table.json", DISABLED)
@@ -855,7 +847,7 @@ write("data/avaritia/recipe/nether_crafting_table.json", DISABLED)
 # Forbidden Arcanus: pedestal via Brick-Forge bed (R09A); stock 3x3 disabled
 write("data/forbidden_arcanus/recipe/darkstone_pedestal.json", DISABLED)
 
-# Slag armor swap (berlord 2026-07-22 batch 2): wooden/bone Slag ARMOR is replaced by Immersive
+# Slag armor swap: wooden/bone Slag armor is replaced by Immersive
 # Armors' sets (carving armor-overrides config). Slag's own 2x2 part recipes for those 8 armor
 # parts are disabled; TOOL parts (pickaxe heads etc.) are untouched.
 for _part in ["helmet", "chestplate", "leggings", "boots"]:
@@ -879,7 +871,7 @@ write("data/malum/recipe/spirit_infusion/spirit_catalyzer.json",
                [("malum:hallowed_gold_ingot", 4), ("create:brass_sheet", 4)],
                ALL8x8, "malum:spirit_catalyzer"))
 
-# God of War chapter (berlord 2026-07-22 batch 2): both spellbook entry recipes REPLACE the
+# God of War chapter: both spellbook entry recipes replace the
 # stock 3x3 recipes with 2x2 pre-table shapes.
 # Flimsy Journal (copper spell book): Copper Ingot + Leather over String + Paper.
 write("data/irons_spellbooks/recipe/copper_spell_book.json",
@@ -892,7 +884,7 @@ write("data/irons_spellbooks/recipe/inscription_table.json",
              "irons_spellbooks:inscription_table"))
 
 # FA: augmented tier upgrades (stock essences/main/magic_circle preserved; inputs appended)
-# HF2 upgrade (berlord 2026-07-29): the four elemental cores converge here. 8 pedestals exactly.
+# HF2 upgrade: the four elemental cores converge here, filling all eight pedestals.
 # "all essence maxed" = the TIER I ceiling (1000/10/10000/900, jar-verified from HephaestusForgeLevel):
 # the T1->T2 ritual is performed ON a tier-I forge, which physically cannot hold more than that.
 write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_2.json", {
@@ -902,7 +894,7 @@ write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_
         {"amount": 2, "ingredient": {"item": "bertieprogression:desert_core"}},
         {"amount": 2, "ingredient": {"item": "bertieprogression:cursed_core"}},
         {"amount": 2, "ingredient": {"item": "bertieprogression:storm_core"}},
-        # berlord 2026-07-31: "double all cores required". 2x4 = 8 pedestals, the hard cap - so the
+        # Two of each core fill all eight pedestals, so the
         # 4 Arcane Crystal that used to fill the last four slots had to come out. There is no
         # arrangement of doubled cores that keeps them: 2+2+2+2+4 = 12 > 8.
     ],
@@ -924,7 +916,7 @@ write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_
     "result": {"type": "forbidden_arcanus:upgrade_tier", "result_tier": 3},
 })
 
-# ================= Chapter 2 recipe overhaul (berlord 2026-07-22 batch 2) =================
+# ================= Chapter 2 recipe overhaul =================
 
 # Spirit Altar stock craft removed -> only the Hephaestus ritual (r19 above) makes it.
 write("data/malum/recipe/spirit_altar.json", DISABLED)
@@ -938,7 +930,7 @@ write("data/malum/recipe/soulstone_from_raw_blasting.json", DISABLED)
 # crafting-table routes (iron-nugget AND zinc-nugget) and both mixing routes.
 write(f"{R}/slag/andesite_alloy.json",
       double_smelting("create:zinc_ingot", "minecraft:andesite", "create:andesite_alloy", 1, 200, 0.2))
-# NOTE: the ZINC mixing route stays ENABLED (berlord batch 4) — only the iron-nugget mixing recipe
+# The zinc mixing route remains enabled; only the iron-nugget mixing recipe
 # and both crafting-table routes are removed.
 for _p in ["crafting/materials/andesite_alloy", "crafting/materials/andesite_alloy_from_zinc",
            "mixing/andesite_alloy"]:
@@ -968,7 +960,7 @@ write(f"{RIT}/windmill_bearing.json",
              essences={"aureal": 120, "blood": 0, "souls": 5}))
 write("data/create/recipe/crafting/kinetics/windmill_bearing.json", DISABLED)
 
-# ================= Chapter 2 row 5 + crafter wall (berlord batch 5) =================
+# ================= Chapter 2 row 5 + crafter wall =================
 
 # Mundabitur: FA's stock 6-ingredient shapeless is identical in inputs to our R28A bulk (which yields
 # 4), so EMI showed two identical recipes. Disable the stock one.
@@ -1026,11 +1018,9 @@ write(f"{R}/mechanical/exclusive/mechanical_crafter_wall.json",
             "B": "create:brass_casing", "C": "create:cogwheel"},
            "create:mechanical_crafter", 1))
 
-# THE CRAFTING TABLE: a 5x5 crafter wall — Edelwood Planks ring, Null Slate corners, Cogwheel sides,
-# Creaking Heart centre (berlord's original spec). 2026-07-24: vanillabackport 1.1.7.10 added to the
-# pack; contrary to the earlier session's check it DOES register the Creaking Heart — as
-# minecraft:creaking_heart (blockstate, item model and loot table all minecraft-namespace, verified
-# in the jar), so that id is used here.
+# THE CRAFTING TABLE: a 5x5 crafter wall — Edelwood Planks ring, Null Slate corners, Cogwheel sides
+# and a Creaking Heart centre. vanillabackport registers the heart as minecraft:creaking_heart, with
+# its blockstate, item model and loot table all in the Minecraft namespace.
 CENTRE_ITEM = "minecraft:creaking_heart"
 write(f"{R}/mechanical/pre_table/vanilla_crafting_table.json",
       mech(["PPPPP", "PNCNP", "PCHCP", "PNCNP", "PPPPP"],
@@ -1038,13 +1028,12 @@ write(f"{R}/mechanical/pre_table/vanilla_crafting_table.json",
             "C": "create:cogwheel", "H": CENTRE_ITEM},
            "minecraft:crafting_table", 1))
 
-# ==================================================== berlord batch 8 (2026-07-24, "build" session)
-# Create machines + magic. Ids jar-verified this session; grids transcribed from berlord's notes/imgs.
+# ==================================================== Create machines + magic
 # belt ITEM = create:belt_connector (create:belt is the placed block, not craftable).
 _BELT = "create:belt_connector"
 _p = lambda rows: [r.replace("N", " ") for r in rows]  # restore _p (a loop at ~L927 rebinds it to a str)
 
-# --- Tunnels: 3x3 = CRAFTING TABLE (berlord: not mech crafters); 4x4 = mechanical crafting.
+# --- Tunnels: 3x3 crafting-table recipe; 4x4 mechanical crafting.
 #     Brass = swap andesite_alloy->brass_ingot, top-middle->electron_tube. (paths kept to avoid stale files) ---
 write(f"{R}/mechanical/kinetics/andesite_tunnel_3x3.json",
       shaped(["AAA", "ABA", "ABA"], {"A": _AA, "B": _BELT}, "create:andesite_tunnel"))
@@ -1055,7 +1044,7 @@ write(f"{R}/mechanical/kinetics/brass_tunnel_3x3.json",
 write(f"{R}/mechanical/kinetics/brass_tunnel_4x4.json",
       mech(["ATTA", "ABBA", "ABBA", "ABBA"], {"A": "create:brass_ingot", "B": _BELT, "T": _ET}, "create:brass_tunnel"))
 
-# --- Funnels: 3x3 crafting table (bottom row ANA per berlord's correction); 4x4 mech ---
+# --- Funnels: 3x3 crafting table with ANA on the bottom row; 4x4 mechanical crafting ---
 write(f"{R}/mechanical/kinetics/andesite_funnel_3x3.json",
       shaped(_p(["NAN", "ABA", "ANA"]), {"A": _AA, "B": _BELT}, "create:andesite_funnel"))
 write(f"{R}/mechanical/kinetics/andesite_funnel_4x4.json",
@@ -1064,7 +1053,7 @@ write(f"{R}/mechanical/kinetics/brass_funnel_3x3.json",
       shaped(_p(["NTN", "ABA", "ANA"]), {"A": "create:brass_ingot", "B": _BELT, "T": _ET}, "create:brass_funnel"))
 write(f"{R}/mechanical/kinetics/brass_funnel_4x4.json",
       mech(_p(["NTTN", "ABBA", "ANNA", "ANNA"]), {"A": "create:brass_ingot", "B": _BELT, "T": _ET}, "create:brass_funnel"))
-# berlord batch 8: remove Create's stock tunnel/funnel crafting recipes so only the recipes above make them.
+# Remove Create's stock tunnel and funnel recipes so the recipes above are the only routes.
 for _tf in ["andesite_tunnel", "brass_tunnel", "andesite_funnel", "brass_funnel"]:
     write(f"data/create/recipe/crafting/logistics/{_tf}.json", DISABLED)
 
@@ -1072,9 +1061,9 @@ for _tf in ["andesite_tunnel", "brass_tunnel", "andesite_funnel", "brass_funnel"
 write(f"{R}/mechanical/kinetics/brass_hand.json",
       mech(_p(["NAAN", "NAAN", "BBBB", "NBNN"]), {"A": _AA, "B": _BS}, "create:brass_hand"))
 
-# --- Crushing Wheel: OVERRIDE Create's own 5x5 mech recipe (stock: 16 andesite_alloy + 4 planks +
-#     1 stone centre -> 2). berlord: planks->obsidiansteel ingot, centre->canopy wood, output 1;
-#     andesite-alloy filler kept (berlord's screenshot IS the stock recipe). ---
+# --- Crushing Wheel: override Create's 5x5 mechanical recipe. Keep the andesite-alloy filler,
+#     replace planks with obsidiansteel ingots and the stone centre with canopy wood, and yield
+#     one. ---
 write("data/create/recipe/mechanical_crafting/crushing_wheel.json",
       mech(_p(["NAAAN", "AAOAA", "AOCOA", "AAOAA", "NAAAN"]),
            {"A": _AA, "O": "forbidden_arcanus:obsidiansteel_ingot", "C": "twilightforest:canopy_wood"},
@@ -1104,29 +1093,29 @@ write(f"{R}/malum/blaze_burner.json",
                [SP("wicked", 16), SP("earthen", 16), SP("infernal", 32)],
                "create:blaze_burner", 1))
 
-# --- Rose Quartz: additive Mixing route (berlord batch 8: 8 redstone + 1 quartz). ---
+# --- Rose Quartz: additive mixing route with 8 redstone and 1 quartz. ---
 write(f"{R}/create/rose_quartz_mixing.json",
       {"neoforge:conditions": conds("create"), "type": "create:mixing",
        "ingredients": ([{"item": "minecraft:redstone"} for _ in range(8)] + [{"item": "minecraft:quartz"}]),
        "results": [{"id": "create:rose_quartz"}]})
 
-# --- Mechanical Saw: 3x3 OVERRIDES Create's (stock " A "/"AIA"/" C " = iron plate/iron ingot/casing),
-#     iron ingot -> propeller; plus a 5x4 mech version (berlord's grid). ---
+# --- Mechanical Saw: the 3x3 overrides Create's recipe by replacing the iron ingot with a
+#     propeller; an additive 5x4 mechanical version uses the same ingredients. ---
 write("data/create/recipe/crafting/kinetics/mechanical_saw.json",
       shaped(_p(["NAN", "APA", "NCN"]), {"A": "#c:plates/iron", "P": _PR, "C": _AC}, "create:mechanical_saw"))
 write(f"{R}/mechanical/kinetics/mechanical_saw.json",
       mech(_p(["NSSSN", "SSISS", "SIPIS", "BBBBB"]),
            {"S": _ISH, "I": "minecraft:iron_ingot", "P": _PR, "B": _AC}, "create:mechanical_saw"))
 
-# --- Deployer: 3x3 OVERRIDES Create's (stock column electron_tube/casing/brass_hand) + shafts in the
-#     empty spots; plus a 5x5 mech version (berlord's grid). ---
+# --- Deployer: the 3x3 overrides Create's stock column with shafts in the empty spots; an additive
+#     5x5 mechanical version uses the same ingredients. ---
 write("data/create/recipe/crafting/kinetics/deployer.json",
       shaped(["SBS", "SCS", "SIS"], {"S": _SH, "B": _ET, "C": _AC, "I": "create:brass_hand"}, "create:deployer"))
 write(f"{R}/mechanical/kinetics/deployer.json",
       mech(_p(["NNBNN", "NACAN", "SACAS", "NATAN", "NNSNN"]),
            {"B": "create:brass_hand", "A": _AC, "S": _SH, "T": _ET, "C": _CG}, "create:deployer"))
 
-# --- Fluid machines (berlord batch 8): table versions OVERRIDE Create; mech versions additive.
+# --- Fluid machines: table versions override Create; mechanical versions are additive.
 #     "casing" here = copper_casing; "copper pipe" = create:fluid_pipe (no create:copper_pipe exists). ---
 _COC = "create:copper_casing"
 # Spout: 3x3 table + 5x5 mech
@@ -1155,8 +1144,9 @@ write("data/create/recipe/crafting/kinetics/item_drain.json",
 write(f"{R}/mechanical/kinetics/item_drain.json",
       mech(_p(["CBBBC", "CNNNC", "DDDDD"]), {"C": _CS, "B": "minecraft:iron_bars", "D": _COC}, "create:item_drain"))
 
-# --- Precision Mechanism: OVERRIDE Create's sequenced assembly. berlord: input BRASS sheet; 3rd deploy
-#     -> Lightning-Infused Iron Nugget; cog deploys + output/chances kept as-is. ---
+# --- Precision Mechanism: override Create's sequenced assembly with a brass-sheet input and a
+#     Lightning-Infused Iron Nugget for the third deploy; keep the other steps and output
+#     chances. ---
 _INC = "create:incomplete_precision_mechanism"
 def _deploy(item):
     return {"type": "create:deploying", "ingredients": [{"item": _INC}, {"item": item}], "results": [{"id": _INC}]}
@@ -1181,8 +1171,8 @@ write("data/create/recipe/sequenced_assembly/precision_mechanism.json", {
     "transitional_item": {"id": _INC},
 })
 
-# --- Mechanical Arm: 3x3 OVERRIDES Create (LLA/L__/IC_; A: andesite_alloy -> brass_hand per berlord);
-#     5x5 mech additive. 's' = brass sheet (berlord). ---
+# --- Mechanical Arm: the 3x3 overrides Create by replacing andesite alloy with a brass hand;
+#     the 5x5 mechanical recipe is additive and uses brass sheets. ---
 write("data/create/recipe/crafting/kinetics/mechanical_arm.json",
       shaped(["LLA", "L  ", "IC "],
              {"L": "#c:plates/brass", "A": "create:brass_hand",
@@ -1192,8 +1182,8 @@ write(f"{R}/mechanical/kinetics/mechanical_arm.json",
            {"S": _BS, "H": "create:brass_hand", "P": "create:precision_mechanism", "B": "create:brass_casing"},
            "create:mechanical_arm"))
 
-# --- Structural Beam + Water Wheel Create sequenced assemblies (berlord batch 8). Each needs its own
-#     registered transitional item (ModItems incomplete_*). loops=1 (single pass; berlord gave no loop). ---
+# --- Structural Beam and Water Wheel sequenced assemblies. Each has its own registered transitional
+#     item and runs one loop. ---
 def _seq_assembly(path, transitional, ingredient, steps, results, mods=(), loops=1):
     def _step(s):
         kind = s[0]
@@ -1231,19 +1221,18 @@ _seq_assembly(f"{R}/create/large_water_wheel_assembly.json", "bertieprogression:
               "create:water_wheel", [("deploy", "bertieprogression:kinetic_vane")] * 8,
               [{"id": "create:large_water_wheel", "count": 1}])
 
-# --- Shield Maiden (berlord batch 8): Hephaestus ritual on a Naga Trophy (grants Lich access). 8 pedestals. ---
+# --- Shield Maiden: eight-pedestal Hephaestus ritual on a Naga Trophy that grants Lich access. ---
 write(f"{RIT}/shield_maiden.json",
       ritual("twilightforest:naga_trophy",
              [("twilightforest:firefly_jar", 2), ("create:precision_mechanism", 1),
               ("mythsandlegends:bound_soul_ingot", 1), ("iceandfire:hippocampus_fin", 1),
               ("born_in_chaos_v1:fangofthe_hound_leader", 1), ("born_in_chaos_v1:nightmare_claw", 1),
               ("born_in_chaos_v1:permafrost_shard", 1)],
-             "bertieprogression:shield_maiden", 1, tier=1,   # berlord 2026-07-29: was tier=2
+             "bertieprogression:shield_maiden", 1, tier=1,
              essences={"aureal": 100, "blood": 3000, "souls": 10}, xp=100))
 
-# --- Naga Trophy dupe (berlord batch 8): Spirit Infusion -> 2 trophies ("dupe it if you have friends"). ---
-#     (berlord 2026-07-25: dropped the shattered skull + dark atrium, added cactus and green scales.)
-#     Extra order = berlord's display order (EMI lays extras out in list order).
+# --- Naga Trophy duplication: Spirit Infusion consumes one trophy and produces two. Extra inputs
+#     stay in display order because EMI lays them out in list order. ---
 write(f"{R}/malum/naga_trophy_dupe.json",
       infusion("twilightforest:naga_trophy", 1,
                [("born_in_chaos_v1:ethereal_spirit", 2), ("minecraft:cactus", 12),
@@ -1252,12 +1241,13 @@ write(f"{R}/malum/naga_trophy_dupe.json",
                [SP("wicked", 6), SP("eldritch", 6), SP("aerial", 6), SP("earthen", 6)],
                "twilightforest:naga_trophy", 2))
 
-# --- Mason Jar: mechanical-crafting recipe (berlord: identical to TF's default log-ring, yields 4). ---
+# --- Mason Jar: mechanical-crafting version of Twilight Forest's log-ring recipe, yielding
+#     four. ---
 write(f"{R}/mechanical/kinetics/mason_jar.json",
       mech(_p(["GWG", "GNG", "GGG"]), {"G": "minecraft:glass", "W": "twilightforest:twilight_oak_log"},
            "twilightforest:mason_jar", 4))
 
-# --- Water Wheels: berlord — the sequenced assemblies are the sole route; disable Create's defaults.
+# --- Water Wheels: the sequenced assemblies are the sole route, so disable Create's defaults.
 #     (The r14 Hephaestus ritual is also removed above.) ---
 write("data/create/recipe/crafting/kinetics/water_wheel.json", DISABLED)
 write("data/create/recipe/crafting/kinetics/large_water_wheel.json", DISABLED)
@@ -1272,8 +1262,8 @@ write(f"{R}/create/colossal_iron_compacting.json",
                        + [{"type": "neoforge:single", "amount": 250, "fluid": "irons_spellbooks:common_ink"}]),
        "results": [{"id": "armageddon_mod:colossal_iron_ingot"}]})
 
-# --- Clibano: stock FA "secondary output" = its residue, a residue_type whose combine_info.result was a
-#     BLOCK. berlord: make it the PRIMARY item. Override each shared residue_type -> result = the ingot/
+# --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
+#     Change each shared residue type to produce the corresponding primary ingot or
 #     item, required_amount 1 (recipe chances untouched). Each residue_type maps 1:1 to its primary, so
 #     copper->copper_ingot, iron->iron_ingot, etc. CAVEAT (jar-decompiled): FA only pays residue on
 #     SOUL/ENCHANTED fire; on PLAIN fire there is NO secondary at all — that gate needs a mixin. ---
@@ -1302,35 +1292,34 @@ write("data/forbidden_arcanus/recipe/clibano_combustion/obsidiansteel_ingot_from
                        "second": {"item": "minecraft:obsidian"}},
        "result": {"count": 1, "id": "forbidden_arcanus:obsidiansteel_ingot"}})
 
-# Remove the iron -> "soulsteel" route (berlord: "soulsteel" = malum:soul_stained_steel_ingot; the
-# Spirit-Infusion of 1 iron ingot + 4 refined soulstone + spirits). Disable Malum's recipe.
+# Remove Malum's iron-to-soul-stained-steel Spirit Infusion route.
 write("data/malum/recipe/spirit_infusion/soul_stained_steel_ingot.json", DISABLED)
 
 # Hallowed Gold: replace Malum's default production (gold ingot + 4 quartz + spirits) with our brass
 # Spirit-Infusion above. (Block/nugget round-trip recipes left intact.)
 write("data/malum/recipe/spirit_infusion/hallowed_gold_ingot.json", DISABLED)
 
-# Remove the crafting recipe for Arcane Ingot (berlord): Iron's Spellbooks' 3x3 (8 Arcane Essence
+# Remove Iron's Spellbooks' 3x3 Arcane Ingot recipe (8 Arcane Essence
 # around an arcane-ingot-base). Disabled; the deorum-core Spirit Infusion (arcane_ingot.json) remains.
 write("data/irons_spellbooks/recipe/arcane_ingot.json", DISABLED)
 
-# Deorum Ingot 3x3 (berlord: gold -> brass ingot). Override FA's #*#/MXM/#*# with brass at the centre.
+# Deorum Ingot 3x3: override FA's #*#/MXM/#*# recipe with brass at the centre instead of gold.
 write("data/forbidden_arcanus/recipe/deorum_ingot.json",
       shaped(["#*#", "MXM", "#*#"],
              {"#": "minecraft:charcoal", "*": "forbidden_arcanus:arcane_crystal_dust",
               "M": "forbidden_arcanus:mundabitur_dust", "X": "create:brass_ingot"},
              "forbidden_arcanus:deorum_ingot"))
 
-# ================================================================ batch 9 (berlord 2026-07-25)
+# ================================================= Crafting License and trophy duplication
 
 # --- Glass Bottle: 2 Glass double-smelted on the Brick Forge. ---
 write(f"{R}/slag/glass_bottle.json",
       double_smelting("minecraft:glass", "minecraft:glass", "minecraft:glass_bottle", 1))
 
-# --- THE CRAFTING LICENSE (OWED #1, closed by berlord 2026-07-25). Hephaestus ritual, Tier I:
+# --- THE CRAFTING LICENSE. Tier-I Hephaestus ritual:
 #     forge_tier omitted = any tier, matching FA's own early rituals (ferrognetic_mixture etc.).
 #     Chapter 2's finale, so it must be reachable on the T1 forge the player raised in Chapter 1.
-#     900 "experience" is berlord's ink-for-XP swap mod paying the XP cost in common ink.
+#     forge-ink pays the 900-experience cost in common ink.
 #     Exactly 8 inputs = exactly 8 pedestals (the ritual() assert is at its ceiling). ---
 write(f"{RIT}/crafting_license.json",
       ritual("minecraft:crafting_table",
@@ -1341,8 +1330,8 @@ write(f"{RIT}/crafting_license.json",
              "bertieprogression:crafting_license", 1,
              essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=900))
 
-# --- Lich Trophy dupe (berlord): Spirit Infusion, 1 trophy -> 2, same shape as the Naga dupe. ---
-#     Extra order = berlord's display order (EMI lays extras out in list order).
+# --- Lich Trophy duplication: Spirit Infusion consumes one trophy and produces two, using the same
+#     structure as the Naga route. Extra inputs remain in EMI display order. ---
 write(f"{R}/malum/lich_trophy_dupe.json",
       infusion("twilightforest:lich_trophy", 1,
                [("iceandfire:stymphalian_bird_feather", 2), ("born_in_chaos_v1:shattered_skull", 1),
@@ -1351,7 +1340,7 @@ write(f"{R}/malum/lich_trophy_dupe.json",
                [SP("wicked", 6), SP("eldritch", 6), SP("arcane", 6), SP("aerial", 6)],
                "twilightforest:lich_trophy", 2))
 
-# ================================================================ batch 10 (berlord 2026-07-25)
+# ================================================================ Pre-table summons and materials
 
 # --- Armageddon summons, ported to the Brick Forge so they are reachable PRE-TABLE. Both stock
 #     recipes are 3x3 (table-gated) with these exact ingredients, so these are additive early routes,
@@ -1363,7 +1352,7 @@ write(f"{R}/slag/strange_coin.json",
       double_smelting("armageddon_mod:colossal_iron_ingot", "minecraft:gold_ingot",
                       "armageddon_mod:strange_coin", 1))
 
-# berlord 2026-07-31: both stock 3x3 routes are OUT, so the two Brick Forge recipes above are now
+# Both stock 3x3 routes are disabled, so the two Brick Forge recipes above are
 # the only way to either item. The Iron Remote also narrows from #minecraft:small_flowers to the
 # Sunflower specifically - which is a TALL flower and was never in that tag, so this is a real
 # tightening, not a restatement. armageddon_mod:infinite_iron_remote_recipe is a DIFFERENT item and
@@ -1371,8 +1360,7 @@ write(f"{R}/slag/strange_coin.json",
 write("data/armageddon_mod/recipe/iron_remote_recipe.json", DISABLED)
 write("data/armageddon_mod/recipe/strange_coin_recipe.json", DISABLED)
 
-# --- Refined Soulstone: was a Mallet bed recipe (4 raw + diamond); berlord moved it to a plain
-#     Brick-Forge alloy, 1 Diamond + 1 Raw Soulstone. ---
+# --- Refined Soulstone: a Brick-Forge alloy of one Diamond and one Raw Soulstone. ---
 write(f"{R}/slag/refined_soulstone.json",
       double_smelting("minecraft:diamond", "malum:raw_soulstone", "malum:refined_soulstone", 1))
 
@@ -1398,10 +1386,10 @@ write(f"{RIT}/aureal_bottle.json",
 #     Scythe (r_harvest ritual) is the sole route. ---
 write("data/malum/recipe/crude_scythe.json", DISABLED)
 
-# ================================================================ batch 13 (berlord 2026-07-27)
+# ================================================================ Malum recipe replacements
 # Malum totemic branch + crucible line.
 
-# --- Totemic Staff: berlord's 2x2 replaces Malum's 3x3 diagonal. Grid is
+# --- Totemic Staff: a 2x2 replaces Malum's 3x3 diagonal. Grid is
 #     N B / A N  (N = empty), B = runewood planks tag, A = FA edelwood stick. ---
 write("data/malum/recipe/totemic_staff.json",
       shaped([" B", "A "], {"B": "#malum:runewood_planks", "A": "forbidden_arcanus:edelwood_stick"},
@@ -1424,12 +1412,12 @@ write("data/malum/recipe/spirit_infusion/hex_ash.json",
                 ("malum:refined_soulstone", 1)],
                [SP("arcane", 1)], "malum:hex_ash", 1))
 
-# --- Arcane Charcoal: was 4 coal -> 4 on arcane + 2 infernal. berlord: 1 -> 1, one infernal only. ---
+# --- Arcane Charcoal: one coal produces one charcoal using one infernal spirit. ---
 write("data/malum/recipe/spirit_infusion/arcane_charcoal.json",
       infusion("#minecraft:coals", 1, [], [SP("infernal", 1)], "malum:arcane_charcoal", 1))
 
-# --- Tainted / Twisted Rock: 16 stone -> 16, then 1 -> 1, and now (berlord 2026-07-31) a bulk
-#     64 -> 8, with an Earthen spirit added to both and every spirit count raised to 4. Each still
+# --- Tainted / Twisted Rock: use a bulk 64 -> 8 route, adding an Earthen spirit to both and
+#     raising every spirit count to 4. Each still
 #     takes its own stone - Tainted from DIORITE, Twisted from GRANITE. ---
 for _rock, _sp, _stone in (("tainted", "sacred", "minecraft:diorite"),
                            ("twisted", "wicked", "minecraft:granite")):
@@ -1437,12 +1425,12 @@ for _rock, _sp, _stone in (("tainted", "sacred", "minecraft:diorite"),
           infusion(_stone, 64, [], [SP(_sp, 4), SP("arcane", 4), SP("earthen", 4)],
                    f"malum:{_rock}_rock", 8))
 
-# --- Spirit Jar: Malum's 1x2 is Hallowed Gold over glass; berlord swaps in a Create brass sheet. ---
+# --- Spirit Jar: replace Hallowed Gold in Malum's 1x2 with a Create brass sheet. ---
 write("data/malum/recipe/spirit_jar.json",
       shaped(["X", "Y"], {"X": "create:brass_sheet", "Y": "#c:glass_blocks"}, "malum:spirit_jar"))
 
-# --- Alchemical Calx: stock is 4 clay -> 4 on arcane/earthen/aqueous x2. berlord: 6 clay -> 1 with
-#     four new pedestal inputs; spirits untouched. Hex Ash added 2026-08-02. ---
+# --- Alchemical Calx: replace the stock 4 clay -> 4 route with 6 clay -> 1 using four pedestal
+#     inputs including Hex Ash; keep the original spirit costs. ---
 write("data/malum/recipe/spirit_infusion/alchemical_calx.json",
       infusion("minecraft:clay_ball", 6,
                [("malum:grim_talc", 1), ("malum:hex_ash", 1), ("minecraft:bone", 5),
@@ -1479,11 +1467,11 @@ write(f"{R}/malum/focusing_blaze_powder.json",
       focusing("malum:alchemical_impetus", "minecraft:blaze_powder", 2,
                [SP("infernal", 4), SP("aerial", 2)]))
 
-# ================================================================ batch 11 (berlord 2026-07-26)
+# ================================================================ Cooking and plating replacements
 
 # --- Refined Brilliance: Malum's raw-brilliance smelt AND blast both yield 2, duplicating our own
-#     1-output cooking recipes in EMI. berlord: kill the x2 pair. (The brilliant_stone and crushed/
-#     deepslate variants are untouched - they take different inputs.) ---
+#     one-output cooking recipes in EMI. Disable the duplicate pair. The brilliant_stone and
+#     crushed/deepslate variants are untouched because they take different inputs. ---
 write("data/malum/recipe/brilliance_from_raw_blasting.json", DISABLED)
 write("data/malum/recipe/brilliance_from_raw_smelting.json", DISABLED)
 
@@ -1496,7 +1484,7 @@ for _metal in ("soul_stained_steel", "malignant_pewter"):
            "ingredients": [{"item": f"malum:{_metal}_ingot"}],
            "results": [{"id": f"malum:{_metal}_plating"}]})
 
-# ================================================================ batch 17 (berlord 2026-07-29)
+# ================================================================ Finder and boss-gate recipes
 
 # --- Acolyte of Deflection: the Lich-Trophy counterpart of the Shield Maiden. Same shape as
 #     shield_maiden.json above - a boss trophy is forged into the key that opens the next path,
@@ -1513,8 +1501,8 @@ write(f"{RIT}/acolyte_of_deflection.json",
              "bertieprogression:acolyte_of_deflection", 1, tier=1,
              essences={"aureal": 100, "blood": 6000, "souls": 10}, xp=400))
 
-# --- Deep Waters Key: was a plain 3x3 (clay/sand/cobbled deepslate, deepwaters:hovaport). berlord
-#     moves it onto the Hephaestus Forge. 8 pedestals exactly (4 + 2 + 2). "200 ink" = the xp field.
+# --- Deep Waters Key: replace the plain 3x3 with a Hephaestus ritual using eight pedestals
+#     (4 + 2 + 2). The 200-experience cost is paid in ink through forge-ink.
 #     forge_tier omitted = any tier: it is the ROOT of the C3 water path, so it must be reachable on
 #     the T1 forge, same reasoning as crafting_license. ---
 write(f"{RIT}/deepwaters_key.json",
@@ -1524,8 +1512,8 @@ write(f"{RIT}/deepwaters_key.json",
              essences={"aureal": 60, "blood": 0, "souls": 4}, xp=200))
 write("data/deepwaters/recipe/hovaport.json", DISABLED)
 
-# --- Crowned Jelly (deepwaters:howa_crow_j): stock is Pearl/Gold/Medusabucket in a plus. berlord
-#     swaps the gold for Hallowed Gold and fills the four corners with Flaming Opal. ---
+# --- Crowned Jelly: replace the stock recipe's gold with Hallowed Gold and fill the four corners
+#     with Flaming Opal. ---
 write("data/deepwaters/recipe/howa_crow_j.json",
       shaped(["dad", "bcb", "dad"],
              {"a": "deepwaters:pearl", "b": "malum:hallowed_gold_ingot",
@@ -1533,13 +1521,13 @@ write("data/deepwaters/recipe/howa_crow_j.json",
              "deepwaters:crownedjelly"))
 
 # --- Block of Flaming Opal (deepwaters:howafopalblock): the mod already trades 4 gems for the block,
-#     but SHAPELESS. berlord wants the 2x2 shape. Same 4-in/1-out ratio, so the mod's own unblock
-#     recipe (1 block -> 4 gems) stays balanced and is left alone. ---
+#     but shapeless. Keep the explicit 2x2 shape. The same 4-in/1-out ratio means the mod's own
+#     unblock recipe (1 block -> 4 gems) stays balanced and is left alone. ---
 write("data/deepwaters/recipe/howafopalblock.json",
       shaped(["ff", "ff"], {"f": "deepwaters:fopal"}, "deepwaters:fopal_block"))
 
-# --- Snow Queen Trophy dupe: 1 trophy -> 2, same shape as the Naga and Lich dupes above.
-#     Extra order = berlord's display order (EMI lays extras out in list order). ---
+# --- Snow Queen Trophy duplication: one trophy produces two using the same structure as the Naga
+#     and Lich routes. Extra inputs remain in EMI display order. ---
 write(f"{R}/malum/snow_queen_trophy_dupe.json",
       infusion("twilightforest:snow_queen_trophy", 1,
                [("minecraft:bone", 12), ("minecraft:blue_ice", 1),
@@ -1548,7 +1536,7 @@ write(f"{R}/malum/snow_queen_trophy_dupe.json",
                [SP("wicked", 6), SP("eldritch", 6), SP("aqueous", 6), SP("aerial", 6)],
                "twilightforest:snow_queen_trophy", 2))
 
-# --- Sirok's Nest map (berlord 2026-07-29, note 1 of the finder series). A FINDER item, not a map:
+# --- Sirok's Nest map. A finder item rather than a filled map:
 #     a recipe result cannot be a structure map (Recipe.assemble gets no level/position), so the craft
 #     yields bertieprogression:sirok_nest_map and FinderItem resolves it. See FinderItem's class comment.
 #     The Gorgon Head is a CATALYST - matched, required, returned to the grid - which is why this uses
@@ -1572,11 +1560,10 @@ write(f"{R}/sirok_nest_map.json",
        "result": {"id": "bertieprogression:sirok_nest_map", "count": 1},
        "catalyst": {"item": "iceandfire:gorgon_head"}})
 
-# --- The four Cataclysm eyes: Hephaestus rituals REPLACING Cataclysm's own 3x3 crafts (berlord
-#     2026-07-29). Each is core + 8 pedestals (2+2+2+2), and each core is the trophy or gauntlet the
+# --- The four Cataclysm eyes: Hephaestus rituals replace Cataclysm's 3x3 crafts. Each uses a core
+#     plus eight pedestals (2+2+2+2), and each core is the trophy or gauntlet the
 #     boss at the end of that C3 row drops - so every row now spends its own kill.
-#     NOTE: berlord gave no essence cost and no forge tier for any of the four. They ship free and
-#     any-tier, as specified; flagged to him. ---
+#     These rituals intentionally have no essence cost or forge-tier restriction. ---
 # "any coral - not block, not dead, not fan": #minecraft:coral_plants is exactly that set, but vanilla
 # ships it only as a BLOCK tag (verified against the 1.21.1 client jar), so we ship the item tag.
 write("data/bertieprogression/tags/item/corals.json",
@@ -1607,7 +1594,7 @@ write(f"{RIT}/abyss_eye.json",
               ("iceandfire:sea_serpent_fang", 2), ("minecraft:crying_obsidian", 2)],
              "cataclysm:abyss_eye", 1))
 
-# --- batch 17c (berlord 2026-07-29): the two remaining finders and the four elemental CORES. ---
+# --- The two remaining finders and the four elemental cores. ---
 # Kraken map: Black Pearl is the catalyst. "any sea serpent goes" -> Ice and Fire's OWN tag, which
 # already lists all seven scale colours; no bertie tag needed here.
 write(f"{R}/kraken_ship_map.json",
@@ -1635,10 +1622,9 @@ write(f"{R}/yeti_hideout_map.json",
        "result": {"id": "bertieprogression:yeti_hideout_map", "count": 1},
        "catalyst": {"item": "twilightforest:snow_queen_trophy"}})
 
-# --- The four elemental cores. 7x7 mechanical-crafter walls, transcribed from berlord's screenshots
-#     (all four are 4-fold symmetric, which is the check that the transcription is right).
-#     Each wall yields TWO (berlord 2026-07-31), which is exactly what the doubled HF2 ritual eats,
-#     so one wall per core still upgrades the forge once. ---
+# --- The four elemental cores use fourfold-symmetric 7x7 mechanical-crafter walls. Each wall yields
+#     two, exactly what the doubled HF2 ritual consumes, so one wall per core upgrades the
+#     forge. ---
 write(f"{R}/mechanical/abyssal_core.json",
       mech(["WWPPPWW", "WPOAOPW", "PODCDOP", "PACBCAP", "PODCDOP", "WPOAOPW", "WWPPPWW"],
            {"W": "malum:astral_weave", "P": "malum:soul_stained_steel_plating",
@@ -1666,11 +1652,11 @@ write(f"{R}/mechanical/storm_core.json",
             "E": "cataclysm:essence_of_the_storm", "H": "minecraft:heart_of_the_sea"},
            "bertieprogression:storm_core", 2))
 
-# ================================================================ batch 18 (berlord 2026-07-29)
+# ================================================================ Dark Arts materials
 # Dark Arts textile/pouch/scythe branch and Imitation Heart rewrite.
 
 # Any Ice and Fire dragon heart is the core. The mod's own dragon_hearts tag contains fire, ice and
-# lightning hearts (jar-verified); all four requested pedestal stacks are unbounded Malum extras.
+# lightning hearts (jar-verified); all four pedestal stacks are unbounded Malum extras.
 write("data/malum/recipe/spirit_infusion/imitation_heart.json",
       infusion("#iceandfire:dragon_hearts", 1,
                [("malum:imitation_flesh", 4), ("malum:warp_flux", 2),
@@ -1728,7 +1714,7 @@ _soulstained_scythe["carryOverComponentData"] = True
 write("data/malum/recipe/spirit_infusion/soul_stained_steel_scythe.json",
       _soulstained_scythe)
 
-# --- Living Flesh (berlord 2026-07-30): Malum's own spirit_infusion for it is overridden. The
+# --- Living Flesh: override Malum's spirit infusion. The
 #     block round-trip (living_flesh_from_block) is LEFT ALONE - killing it would strand any
 #     Block of Living Flesh a player already owns. ---
 # "dragon flesh (any of 3)": the three share no stem and no mod ships a tag, so we ship one.
@@ -1742,7 +1728,7 @@ write("data/malum/recipe/spirit_infusion/living_flesh.json",
                [SP("sacred", 6), SP("wicked", 6), SP("aqueous", 6)],
                "malum:living_flesh", 1))
 
-# --- Sturdy Sheet + Powdered Obsidian (berlord 2026-07-30) -------------------------------------
+# --- Sturdy Sheet + Powdered Obsidian -----------------------------------------------------------
 # Sheet: the assembly now starts from an Obsidiansteel Ingot instead of obsidian dust, with two
 # deploy steps applying Powdered Obsidian in front of Create's original fill/press/press. Written out
 # by hand rather than through _seq_assembly so the absence of `loops` matches stock exactly - the
@@ -1781,7 +1767,7 @@ write("data/create/recipe/crushing/obsidian.json", {
                 {"chance": 0.1, "id": "minecraft:obsidian"}],
 })
 
-# --- Netherly Meal (berlord 2026-07-31): Hephaestus T2, Bowl core, 7 pedestals.
+# --- Netherly Meal: Tier-II Hephaestus ritual with a Bowl core and seven pedestals.
 #     "max souls, max blood" = the TIER II ceiling (50 / 15000), jar-verified from HephaestusForgeLevel
 #     - the ritual runs ON a T2 forge, so those are the most it can hold. Aureal and ink unspecified,
 #     so both are zero. ---
@@ -1793,7 +1779,7 @@ write(f"{RIT}/netherly_meal.json",
              "bertieprogression:netherly_meal", 1, tier=2,
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
 
-# ================================================================ REMOVED ITEMS (berlord 2026-07-30)
+# ================================================================ REMOVED ITEMS
 # Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's
 # README.md. The planning records remain in the private workspace; generated runtime data remains
 # here in the public product repository.
@@ -1806,11 +1792,8 @@ write(f"{RIT}/netherly_meal.json",
 # Needs a synced bertie pack instance to scan. Without it: warn and skip, never silently emit nothing.
 
 INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "instances",
-                             # This is a FILESYSTEM PATH, not prose - the Prism instance really is
-                             # called "s1 demo". A wording sweep renamed it to "bertie demo"
-                             # (322e5a7), an instance that does not exist, and the generator then
-                             # scanned only the vanilla jar and died claiming a real item was
-                             # unregistered. berlord ruled 2026-08-01: put it back.
+                             # This is a filesystem path, not prose: the Prism instance is named
+                             # "s1 demo" and changing it makes the generator scan the wrong jars.
                              "s1 demo", ".minecraft", "mods")
 
 def _parse_removed(path, modid):
@@ -1904,7 +1887,7 @@ if _removed:
                         _items.add(f"{_parts[1]}:{'/'.join(_parts[4:])[:-5]}")
         # Brace expansion first: `foo_{a,b}` -> `foo_a`, `foo_b`. Lets one row say "this material,
         # these slots", which a bare `*` cannot - and a bare material glob over-matches every tool
-        # and ingot in the mod (berlord 2026-07-30: l2complements:eternium_* is 12 items, not 4).
+        # and ingot in the mod; l2complements:eternium_* is 12 items rather than four.
         def _braces(pat):
             i = pat.find("{")
             if i < 0:
@@ -2170,7 +2153,7 @@ write("data/bertieprogression/advancement/got_wood.json", {
     }
 })
 
-# Note 5 (2026-07-22): "copper tier" of minability. NOTE/DEVIATION: vanilla has no native tier
+# "Copper tier" minability: vanilla has no native tier
 # between stone and iron, and Slag makes copper/bone = stone tier and flint <= stone (jar-verified
 # tiers copper/bone/stone=3, flint=2, iron=4), so a true STONE-EXCLUDING copper tier isn't possible
 # without custom Tier code + Slag tool overrides. Shipped as a STONE-tier gate: these ores drop out
@@ -2185,8 +2168,8 @@ write("data/minecraft/tags/block/needs_iron_tool.json",
 write("data/minecraft/tags/block/needs_stone_tool.json", {"replace": False, "values": COPPER_TIER_ORES})
 write("data/bertieprogression/tags/block/needs_copper_tool.json", {"replace": False, "values": COPPER_TIER_ORES})
 
-# Ch1 gear quests detect the wooden PARTS (decision 2026-07-22: assembled modular gear has
-# no stable predicate surface — no Slag triggers/advancements exist, and assembled component
+# Chapter 1 gear quests detect wooden parts because assembled modular gear has no stable predicate
+# surface: no Slag triggers or advancements exist, and assembled component
 # values are per-instance). Part component values are jar-verified from Slag-n-Embers 1.1a
 # data/slag/recipe/crafting/parts/*_wooden.json; detection is source-agnostic (carved or crafted).
 def _wooden_part(part):
@@ -2207,7 +2190,7 @@ write("data/bertieprogression/advancement/wooden_pickaxe_head.json", {
     "criteria": {"head": _wooden_part("pickaxe_head")},
 })
 
-# Note 11: copper-tier pickaxe = flint OR bone pickaxe (either satisfies). Detect the head part.
+# A copper-tier pickaxe may use either a flint or bone head; detect the head part.
 def _mat_part(material, part):
     return {
         "trigger": "minecraft:inventory_changed",
@@ -2225,7 +2208,7 @@ write("data/bertieprogression/advancement/copper_pickaxe_head.json", {
 write("data/twilightforest/tags/item/portal/activator.json",
       {"replace": True, "values": [{"id": "bertieprogression:twilight_concord", "required": False}]})
 
-# --- Ominous-fire fan processing (berlord 2026-08-01). Create's four fan types are water, fire,
+# --- Ominous-fire fan processing. Create's four fan types are water, fire,
 #     soul fire and lava; this is a fifth, on Twilight Forest's Ominous Fire, registered into
 #     CreateRegistries.FAN_PROCESSING_TYPE. A real recipe type rather than a hard-coded pair, so
 #     it is data-driven and a recipe viewer can be pointed at it. One entry for now. ---
@@ -2235,7 +2218,7 @@ write(f"{R}/ominous_fan/steeleaf_from_leaves.json",
        "ingredient": {"tag": "minecraft:leaves"},
        "result": {"id": "twilightforest:steeleaf_ingot", "count": 1}})
 
-# ================================================================ batch 19 (berlord 2026-07-31)
+# ================================================================ Ur-Ghast Trophy duplication
 
 # --- Ur-Ghast Trophy duplication, on the Spirit Altar. One trophy in, two out: the trophy is the
 #     infusion INPUT (Malum consumes it) so the recipe pays for itself once and profits thereafter.
@@ -2305,24 +2288,24 @@ for item_id in ITEMS:
 # weeping_eye is NOT overridden here any more: it has real art now
 # (texture-work/make_weeping_eye.py, animated) and takes the generated model the
 # ITEMS loop above writes. Re-adding it would hide that texture behind vanilla's
-# Eye of Ender - the same trap storm_core is flagged for further down.
+# Eye of Ender, the same model-parent trap described for storm_core below.
 # Crafting License borrows vanilla's paper model (no bespoke texture yet).
 write("assets/bertieprogression/models/item/crafting_license.json", {"parent": "minecraft:item/paper"})
-# Sirok's Nest Map borrows vanilla's empty-map model (no bespoke texture yet - berlord has not sent one).
+# Finder maps use vanilla's empty-map model; no bespoke textures are registered.
 for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
     write(f"assets/bertieprogression/models/item/{_m}.json", {"parent": "minecraft:item/map"})
 # These cores have no bespoke texture yet - each borrows a vanilla item that reads close to
 # its element, so they are at least distinguishable on sight. storm_core is NOT in this list:
 # it has real art (texture-work/make_storm_core.py) and takes the generated model written by
 # the ITEMS loop above. Re-adding it here would hide that texture behind an amethyst shard.
-# abyssal_core LEFT this list 2026-08-02: it now has real animated art (the 'reach' variant, with
-# its .mcmeta), so it takes the generated model from the ITEMS loop like storm_core does. Leaving
-# it here parented it to a Heart of the Sea and hid the texture entirely.
+# abyssal_core has real animated art (the reach variant with its .mcmeta), so it takes the generated
+# model from the ITEMS loop like storm_core. Parenting it to a Heart of the Sea would hide the
+# texture.
 for _c, _par in (("desert_core", "minecraft:item/brick"),
                  ("cursed_core", "minecraft:item/echo_shard")):
     write(f"assets/bertieprogression/models/item/{_c}.json", {"parent": _par})
-# Transitional sequenced-assembly items: beam reuses a vanilla stick; water-wheel incompletes reuse the
-# real wheel item models (berlord: "incomplete [large/small] water wheel uses [large/small] water wheel").
+# Transitional sequenced-assembly items: the beam reuses a vanilla stick, while incomplete water
+# wheels reuse the corresponding finished wheel models.
 write("assets/bertieprogression/models/item/incomplete_structural_beam.json",
       {"parent": "minecraft:item/generated", "textures": {"layer0": "minecraft:item/stick"}})
 write("assets/bertieprogression/models/item/incomplete_small_water_wheel.json", {"parent": "create:item/water_wheel"})
@@ -2376,7 +2359,7 @@ lang.update({
     "message.bertieprogression.locator_missing": "Target structure %s is not present in this world.",
     "message.bertieprogression.locator_none": "No target found within range.",
     "message.bertieprogression.locator_found": "%s located near X=%s, Z=%s.",
-    # FinderItem (batch 17). Separate keys from the locator's: a finder consumes itself into a map.
+    # FinderItem uses separate keys from the locator because a finder consumes itself into a map.
     "message.bertieprogression.finder_searching": "The chart darkens, reading the land...",
     "message.bertieprogression.finder_missing": "Nothing like %s exists in this world.",
     "message.bertieprogression.finder_none": "Nothing within range. Carry the chart further and try again.",

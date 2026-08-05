@@ -228,10 +228,9 @@ public class PrNetworkNodeContainer {
      * <p>Overstressed counts as unpowered however fast the shaft says it is going, because
      * overstressed means the stress units are not in fact being supplied.
      *
-     * <p>One controller is Refined Storage's rule and berlord's. Zero means nothing is
-     * feeding it; more than one and every node goes inactive rather than one of them being
-     * picked as the real one, because which one that would be is not a question with an
-     * answer.
+     * <p>Refined Storage requires exactly one controller. Zero means nothing is feeding the
+     * network; with more than one, every node goes inactive rather than choosing one controller
+     * arbitrarily.
      */
     public boolean calculateActive() {
         return blockEntity.getSpeed() != 0

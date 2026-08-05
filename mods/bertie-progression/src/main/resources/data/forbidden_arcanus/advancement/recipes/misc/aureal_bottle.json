@@ -1,5 +1,5 @@
 {
-  "__comment": "DISABLED (berlord 2026-08-02) alongside the recipe it unlocks. Left in place rather than orphaned: a recipe-unlock advancement whose recipe no longer loads errors on datapack load.",
+  "__comment": "Disables the recipe-unlock advancement with its removed recipe; otherwise it references a recipe that does not load.",
   "neoforge:conditions": [
     {
       "type": "neoforge:false"

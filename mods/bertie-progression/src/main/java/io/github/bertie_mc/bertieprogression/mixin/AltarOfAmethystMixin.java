@@ -19,21 +19,12 @@ import net.minecraft.world.level.block.state.BlockState;
  * <p>Targeted by STRING: Cataclysm is an optional runtime dependency and is not on this module's
  * compile classpath, so there is no {@code AltarOfAmethyst_Block_Entity} type to name here.
  *
- * <p><b>That is also why the altar parameter carries {@link Coerce}.</b> Mixin matches an injector
- * against the target method's EXACT descriptor, so a bare {@code BlockEntity} - the real supertype -
- * is not close enough and the whole mixin is refused:
- * <pre>
- * InvalidInjectionException: Invalid descriptor ... Expected (...AltarOfAmethyst_Block_Entity...)
- *                                                   but found (...BlockEntity...)
- * </pre>
- * That refusal took the altar's block entity down with it and its UI stopped opening (2026-08-04).
- * {@code @Coerce} is the supported way to accept a type you cannot reference, and it takes any
- * supertype - {@code BlockEntity} here, on berlord's call (2026-08-04). {@code Object} also works
- * and is the fallback if Mixin ever refuses to widen this one.
+ * <p>The altar parameter carries {@link Coerce} because the target method's descriptor contains
+ * Cataclysm's concrete block-entity class. Coercion lets the injector bind that optional subclass
+ * to its {@link BlockEntity} supertype without adding Cataclysm to the compile classpath.
  *
- * <p>Listed in the common {@code mixins} array, never in {@code client}/{@code server} - NeoForge
- * silently fails to apply those sub-array entries (docs/gotchas.md, explosive-enhancement
- * 2026-06-14). Cooking runs on the logical server anyway.
+ * <p>Listed in the common {@code mixins} array so the same injector applies on both physical sides.
+ * The client and server must advance and gate altar progress consistently.
  */
 @Mixin(targets = "com.github.L_Ender.cataclysm.blockentities.AltarOfAmethyst_Block_Entity",
         remap = false)
@@ -46,10 +37,8 @@ public abstract class AltarOfAmethystMixin {
     @Inject(method = "cookingTick", at = @At("HEAD"), cancellable = true, remap = false)
     private static void bertieprogression$gate(Level level, BlockPos pos, BlockState state,
             @Coerce BlockEntity altar, CallbackInfo ci) {
-        // Runs on BOTH sides deliberately. Skipping the client let it keep ticking while the
-        // server was cancelled: the client ran the craft to completion and drew the altar's beam
-        // for a few seconds until a sync packet reset it (berlord 2026-08-04). Every input here -
-        // day time, sky access, biome, moon phase - is available client-side, so both sides agree.
+        // Run the deterministic rule on both sides. If only the server cancels, the client keeps
+        // advancing and briefly renders progress and a beam that the next sync packet removes.
         if (AltarOfAmethystRules.speedAt(level, pos) == AltarOfAmethystRules.STOPPED) {
             ci.cancel();
         }

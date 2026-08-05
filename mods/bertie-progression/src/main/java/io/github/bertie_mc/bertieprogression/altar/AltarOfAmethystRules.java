@@ -11,13 +11,12 @@ import net.minecraft.world.level.biome.Biomes;
  * <p>Pure arithmetic on the level and position - no mixin state - so the rules can be read and
  * tested on their own. {@link AltarOfAmethystMixin} is the only caller.
  *
- * <p>berlord's spec (2026-08-02):
+ * <p>Rules:
  * <ul>
- *   <li><b>Night only, everywhere.</b> A lush cave does not exempt an altar from this.</li>
- *   <li><b>Line of sight to the sky</b>, beacon-style - <i>except</i> in a lush cave.</li>
- *   <li><b>Moon phase</b> scales speed linearly from 100% at new moon to 200% at full.</li>
- *   <li><b>Lush cave</b> doubles speed. With the sky blocked the moon is ignored and it is a flat
- *       200%; with the sky open both apply and it reaches 400%.</li>
+ *   <li>Outside a lush cave, the altar requires both night and line of sight to the sky.</li>
+ *   <li>Moon phase scales speed linearly from 100% at new moon to 200% at full.</li>
+ *   <li>A lush cave always runs at 200%, without requiring night or sky access.</li>
+ *   <li>At night with sky access, the lush-cave and moon multipliers stack up to 400%.</li>
  * </ul>
  */
 public final class AltarOfAmethystRules {
@@ -44,13 +43,12 @@ public final class AltarOfAmethystRules {
         boolean night = isNight(level);
 
         if (!lush) {
-            // Out in the open: night AND sky are both mandatory, and the moon is the only modifier.
+            // Outside a lush cave, night and sky access are mandatory; only the moon modifies
+            // speed.
             return night && sky ? moonMultiplier(level) : STOPPED;
         }
-        // A lush cave lifts BOTH the sky requirement and the night one (berlord 2026-08-04 -
-        // this reverses the earlier "night only everywhere" reading). Flat 2x on its own; the
-        // moon only stacks on top when the sky is actually open and it is actually night, so a
-        // full moon over an open-air lush cave is 4x.
+        // A lush cave runs at 2x. Its multiplier stacks with the moon only at night with sky
+        // access.
         return sky && night ? 2.0F * moonMultiplier(level) : 2.0F;
     }
 

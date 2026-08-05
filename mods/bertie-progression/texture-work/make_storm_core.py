@@ -9,14 +9,12 @@ is only drawn where it is in open air; the stretch still inside the cloud is
 occluded and marked by a glow alone. Paint that stretch on top and it stops
 being a bolt in a cloud and becomes a bolt lying in front of one.
 
-    cloud   rows 0..7, two crowns over a body on a flat base, after berlord's
-            reference. Two colourings of that one silhouette exist here; v2 is
-            the one that ships.
+    cloud   rows 0..7, two crowns over a body on a flat base. Two colourings of
+            that one silhouette exist here; v2 is the one that ships.
 
               v2  a per-column gradient from a lit cap down to a shadowed
                   base, with a lighter outline along the skyline than round
-                  the sides. Predates the reference; berlord picked it over
-                  v1 once the two could be seen side by side in game.
+                  the sides. Selected after both variants were compared in game.
               v1  flat mid-grey fill, compact lighter blocks scattered through
                   the upper body, a darker band along the underside, one edge
                   colour all the way round. Follows the reference most
@@ -118,9 +116,9 @@ SIZE = 16
 #   v2  the default, and what ships. A per-column gradient from a lit cap down
 #       to a shadowed base, with a lighter outline along the skyline than
 #       round the sides and bottom.
-#   v1  closest to berlord's reference. A flat mid fill, compact lighter
-#       blocks scattered through the upper body, a darker band along the
-#       underside, one edge colour all the way round.
+#   v1  a flat mid fill, compact lighter blocks scattered through the upper
+#       body, a darker band along the underside, one edge colour all the way
+#       round.
 #
 # Silhouette, bolt, rain and animation are identical either way — this is only
 # how the grey is laid on.
@@ -128,12 +126,10 @@ CLOUD_VARIANTS = ("v1", "v2")
 
 # (directory, texture name, variant). Everything here is written on every run.
 #
-# v2 is the live item texture. v1 is kept because berlord may want it later: it
-# lands in texture-work/variants as a real strip with its .mcmeta beside it,
-# ready to drop into an assets folder, but outside resources so it is not
-# packaged. Writing it every run rather than checking in a one-off export is
-# what stops it drifting out of step with the shape, the bolt and the rain,
-# which the two colourings share.
+# v2 is the live item texture. v1 is maintained as a ready-to-use alternative in
+# texture-work/variants, with its .mcmeta beside it but outside resources so it is
+# not packaged. Writing it every run keeps it aligned with the shape, bolt and rain
+# shared by both colourings.
 OUTPUTS = (
     (TEX_ITEM, "storm_core", "v2"),
     (VARIANTS, "storm_core_v1", "v1"),
@@ -171,10 +167,9 @@ GLOW = "#C89020"
 GLOW_AURA = (0.09, 0.05, 0.025)
 GLOW_BREAK = (0.22, 0.10, 0.04)
 
-# The cloud, as inclusive x spans per row: a stepped dome on a flat base,
-# after berlord's reference. Circle unions were tried and abandoned — at this
-# size circles either merge into a slab or leave spurs and holes, and neither
-# gives the clean stepped skyline the reference has.
+# The cloud, as inclusive x spans per row: a stepped dome on a flat base. Circle
+# unions were tried and abandoned — at this size they either merge into a slab or
+# leave spurs and holes instead of a clean stepped skyline.
 CLOUD = {
     0: [(4, 6), (9, 11)],
     1: [(3, 7), (9, 12)],

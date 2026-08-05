@@ -23,9 +23,9 @@ import org.spongepowered.asm.mixin.injection.At;
  *   at ACItemRegistry.getSpawnEggFor(ACItemRegistry.java:389)
  * </pre>
  *
- * <p>It throws on the FIRST egg it examines, so the lookup is broken for every entity - not only
- * the one that happened to ask. berlord hit it by middle-clicking a Gum Worm segment, whose
- * {@code getPickResult} routes through here; the crash killed the client (2026-08-05).
+ * <p>It throws on the first egg it examines, so the lookup is broken for every entity.
+ * Pick-blocking a Gum Worm segment is one reproducer because its {@code getPickResult} routes
+ * through this lookup.
  *
  * <p>Handing over a real stack restores the behaviour Alex's Caves wrote the method for: a spawn
  * egg with no {@code entity_data} component reports its own default type, so the search now matches

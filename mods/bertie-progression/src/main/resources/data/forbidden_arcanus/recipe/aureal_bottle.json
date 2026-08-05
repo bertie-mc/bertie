@@ -1,5 +1,5 @@
 {
-  "__comment": "DISABLED (berlord 2026-08-02): the Aureal Bottle's 3x3 crafting recipe - 8 Arcane Crystal Dust around a Strong Regeneration potion - is gone. The Hephaestus Forge ritual is the only route now. Overrides forbidden_arcanus's own recipe at this exact path.",
+  "__comment": "Disables Forbidden & Arcanus's 3x3 Aureal Bottle recipe. The Hephaestus Forge ritual is the only production route.",
   "neoforge:conditions": [
     {
       "type": "neoforge:false"
