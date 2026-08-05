@@ -25,7 +25,7 @@ public final class InProcessDedicatedServer {
     private static final AtomicReference<Launch> ACTIVE = new AtomicReference<>();
     private static final Properties DEFAULT_PROPERTIES = Util.make(new Properties(), properties -> {
         properties.setProperty("online-mode", "false");
-        properties.setProperty("server-ip", "127.0.0.1");
+        properties.setProperty("server-ip", "::1");
         properties.setProperty("server-port", "0");
         properties.setProperty("sync-chunk-writes", String.valueOf(Util.getPlatform() == Util.OS.WINDOWS));
         properties.setProperty("spawn-protection", "0");
