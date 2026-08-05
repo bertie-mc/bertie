@@ -120,9 +120,10 @@ flowchart LR
     V --> R
 ```
 
-The dependency job runs `prepareOfflineBuild` once and saves an isolated Gradle User Home
-from `.bertie-ci/gradle-user-home`. All downstream Gradle jobs restore it and run offline.
-If several otherwise unrelated jobs report a missing module, inspect the dependency job
+The dependency job seeds `.bertie-ci/gradle-user-home` from the cross-run cache, runs
+`prepareOfflineBuild` once, and uploads the prepared dependency directories as one
+workflow artifact. All downstream Gradle jobs download that artifact and run offline. If
+several otherwise unrelated jobs report a missing module, inspect the dependency job
 first. If only one task fails, download that task's artifact and reproduce its exact
 Gradle task locally.
 

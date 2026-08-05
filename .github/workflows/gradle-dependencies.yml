@@ -34,3 +34,16 @@ jobs:
           task: prepareOfflineBuild
           work-dir: .bertie-ci/dependencies
           timeout: 3300
+
+      - name: Upload prepared Gradle dependencies
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: gradle-dependencies-${{ github.sha }}
+          path: |
+            .bertie-ci/gradle-user-home/caches/modules-2
+            .bertie-ci/gradle-user-home/caches/neoformruntime/artifacts
+            .bertie-ci/gradle-user-home/caches/neoformruntime/assets
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 1
+          compression-level: 0
