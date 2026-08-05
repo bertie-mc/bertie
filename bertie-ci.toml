@@ -4,7 +4,6 @@ format = "bertie-ci.workspace.v2"
 component-descriptors = [
   "mods/*/bertie-ci.toml",
   "pack/bertie-ci.toml",
-  "tools/bertie-ci/bertie-ci.toml",
 ]
 shared-gradle-paths = [
   "build.gradle.kts",
@@ -24,12 +23,7 @@ shared-all-paths = [
 ]
 ignored-paths = [
   ".github/dependabot.yml",
-  ".github/workflows/build-mod.yml",
-  ".github/workflows/client-test.yml",
-  ".github/workflows/gametest.yml",
-  ".github/workflows/github-release.yml",
   ".github/workflows/release.yml",
-  ".github/workflows/unit-test.yml",
   ".gitignore",
   "README.md",
   "docs/**",

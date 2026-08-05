@@ -22,7 +22,7 @@ TAG_PATTERN = re.compile(
     + r")"
 )
 
-ComponentKind = Literal["neoforge-mod", "pack", "tool"]
+ComponentKind = Literal["neoforge-mod", "pack"]
 
 
 def _document(path: Path) -> dict[str, Any]:
@@ -187,19 +187,12 @@ class Workspace:
         candidate = start.resolve(strict=True)
         if candidate.is_file():
             candidate = candidate.parent
-        standalone: tuple[Path, Path] | None = None
         for root in (candidate, *candidate.parents):
             config = root / WORKSPACE_FILE
             if config.is_file():
                 data = _document(config)
                 if data.get("format") == WORKSPACE_FORMAT:
                     return cls.load(root)
-                if data.get("format") == COMPONENT_FORMAT and standalone is None:
-                    standalone = (root, config)
-        if standalone is not None:
-            root, config = standalone
-            component = cls._load_component(root, config)
-            return cls(root, {component.subject: component}, (), (), ())
         raise RuntimeError(
             f"No {WORKSPACE_FORMAT} descriptor found from {start.resolve()}"
         )
@@ -292,7 +285,7 @@ class Workspace:
             raise RuntimeError(
                 f"Invalid component subject in {descriptor}: {subject!r}"
             )
-        if kind not in ("neoforge-mod", "pack", "tool"):
+        if kind not in ("neoforge-mod", "pack"):
             raise RuntimeError(f"Invalid component kind in {descriptor}: {kind!r}")
         component_root = descriptor.parent.resolve()
         try:

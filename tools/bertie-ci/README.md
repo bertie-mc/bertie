@@ -26,8 +26,7 @@ bertie-ci --help
 nix flake check
 ```
 
-Nix supplies JDK 21, Gradle, packwiz, Sway, Mesa, and Python. A standalone repository
-can use the tagged package and GitHub Actions at `bertie-ci/v6.0.0`.
+Nix supplies JDK 21, Gradle, packwiz, Sway, Mesa, and Python.
 
 Native Windows can use an installed Python package plus JDK 21 and Gradle; see the
 [Windows guide](docs/windows.md).
@@ -35,8 +34,7 @@ Native Windows can use an installed Python package plus JDK 21 and Gradle; see t
 ## Descriptors and discovery
 
 The root [workspace descriptor](../../bertie-ci.toml) locates components and declares
-which shared paths affect Gradle projects or every component. A standalone repository
-may put a component descriptor at its root.
+which shared paths affect Gradle projects or every component.
 
 ```toml
 format = "bertie-ci.component.v2"
@@ -50,9 +48,9 @@ key = "mod_version"
 ```
 
 `version.file` is relative to the component. Owned mods read `mod_version` from
-`mod.properties`, the pack reads `version` from `pack.properties`, and bertie-ci reads its
-tool version from `pyproject.toml`. Component descriptors point to existing component
-metadata rather than duplicating a release version.
+`mod.properties`, and the pack reads `version` from `pack.properties`. Component
+descriptors point to existing component metadata rather than duplicating a release
+version.
 
 Test declarations are the source directories themselves:
 
@@ -133,15 +131,12 @@ The main workflow uses `plan` to select `build`, `unit`, `gametest`, `client`, a
 plan includes a client task, one headless Wayland session surrounds that invocation.
 Gradle owns task parallelism and the shared Minecraft execution slot.
 
-Reusable actions include:
+Repository actions include:
 
 - `setup` for the Nix-provided command environment and optional Gradle cache;
 - `plan` for affected-task selection;
 - `gradle-task` for exact task execution and optional Wayland;
 - `build-mod`, the pack validation/export actions, and release actions.
-
-Reusable workflows provide `build-mod.yml`, `unit-test.yml`, `gametest.yml`,
-`client-test.yml`, and `github-release.yml` for standalone repositories.
 
 ## Environment variables
 

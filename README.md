@@ -40,7 +40,8 @@ Each owned mod also has a component README describing its behavior and developme
 - `tools/bertie-ci/` — CI planning, task supervision, Wayland provisioning, and release
   packaging;
 - `docs/` — developer documentation;
-- `.github/` — workflows and reusable actions that invoke Gradle and `bertie-ci`.
+- `.github/` — repository workflows and composite actions that invoke Gradle and
+  `bertie-ci`.
 
 `bertie-mod-atlas`, `bertie-progression-planning`, the organisation `.github`
 repository, and the `Nekos-Enchanted-Books` fork are maintained separately.

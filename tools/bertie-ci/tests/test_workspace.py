@@ -307,30 +307,6 @@ def test_available_backward_base_uses_endpoint_diff(tmp_path: Path) -> None:
     assert workspace.changed_files(child, parent) == ("removed-on-rollback.txt",)
 
 
-def test_component_descriptor_is_a_standalone_workspace(tmp_path: Path) -> None:
-    _write(
-        tmp_path / "bertie-ci.toml",
-        """format = "bertie-ci.component.v2"
-subject = "standalone"
-kind = "neoforge-mod"
-gradle-project = ":"
-
-[version]
-file = "mod.properties"
-key = "mod_version"
-""",
-    )
-    _write(tmp_path / "mod.properties", "mod_version=1.0.0\n")
-    _write(tmp_path / "src" / "test" / "Unit.java", "class Unit {}\n")
-
-    workspace = Workspace.find(tmp_path)
-
-    component = workspace.component("standalone")
-    assert component.path == tmp_path
-    assert component.relative_path == Path(".")
-    assert workspace.plan({"standalone"})["unit"][0]["task"] == ":test"
-
-
 def test_rejects_legacy_suite_configuration(tmp_path: Path) -> None:
     _workspace(tmp_path)
     descriptor = tmp_path / "mods" / "base" / "bertie-ci.toml"

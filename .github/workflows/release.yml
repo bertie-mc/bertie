@@ -145,21 +145,3 @@ jobs:
             .bertie-ci/release/*.zip
           name: Bertie pack v${{ needs.plan.outputs.version }}
           body: Release of the Bertie modpack v${{ needs.plan.outputs.version }}.
-
-  publish-tool:
-    name: Publish ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
-    needs: plan
-    if: needs.plan.outputs.kind == 'tool'
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-
-      - name: Create source-only GitHub release
-        uses: ./.github/actions/github-release
-        with:
-          name: ${{ needs.plan.outputs.subject }} v${{ needs.plan.outputs.version }}
-          body: Release of `${{ needs.plan.outputs.subject }}` v${{ needs.plan.outputs.version }}.

@@ -166,7 +166,7 @@ are inferred from directories rather than listed in the descriptor:
 
 The descriptor's `subject` is also used in release tags and artifact names. Keep the
 version in the component's existing metadata: `mod.properties` for a mod,
-`pack.properties` for the pack, and `pyproject.toml` for `bertie-ci`.
+and `pack.properties` for the pack.
 
 ## Validate and export the pack
 
@@ -185,8 +185,7 @@ operation. See [Managing dependencies](dependencies.md) for changing the generat
 
 ## Publish a release
 
-1. Update the version in the component's `mod.properties`, `pack.properties`, or
-   `pyproject.toml`.
+1. Update the version in the component's `mod.properties` or `pack.properties`.
 2. Run its tests and build or export commands on the release commit.
 3. Create an annotated, SSH-signed `<subject>/vX.Y.Z` tag whose version exactly matches
    the metadata.
@@ -201,7 +200,6 @@ git push origin pack/v0.2.0
 
 [`release.yml`](../.github/workflows/release.yml) checks the tag and metadata before
 publishing. Mod releases attach the built JAR to GitHub Releases. Pack releases attach a
-client `.mrpack` and server `.zip`. A source-only `bertie-ci` release publishes the tagged
-tool release.
+client `.mrpack` and server `.zip`.
 
 For all CLI options, see the [`bertie-ci` command reference](../tools/bertie-ci/README.md).

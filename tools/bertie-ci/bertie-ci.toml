@@ -1,7 +1,0 @@
-format = "bertie-ci.component.v2"
-subject = "bertie-ci"
-kind = "tool"
-
-[version]
-file = "pyproject.toml"
-key = "project.version"
