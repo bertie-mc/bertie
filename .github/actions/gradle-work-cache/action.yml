@@ -1,0 +1,25 @@
+name: Restore Gradle work cache
+description: Reuse cacheable Gradle task outputs and artifact transformations for one CI job
+
+inputs:
+  kind:
+    description: Job kind such as build-unit, gametest, or client-test
+    required: true
+  subject:
+    description: Component subject, or a fixed name for a repository-wide job
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Restore Gradle work cache
+      uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
+      with:
+        path: |
+          ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/build-cache-1
+          ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/*/transforms
+          ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/transforms-*
+        key: bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-${{ inputs.subject }}-${{ github.sha }}
+        restore-keys: |
+          bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-${{ inputs.subject }}-
+          bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-

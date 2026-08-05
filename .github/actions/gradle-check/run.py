@@ -32,9 +32,9 @@ def main() -> None:
         "--workspace",
         ".",
         "--work-dir",
-        ".bertie-ci/gradle",
+        os.environ["BERTIE_GRADLE_WORK_DIR"],
         "--timeout",
-        "10500",
+        os.environ["BERTIE_GRADLE_TIMEOUT"],
         "--continue",
     ]
     if os.environ.get("BERTIE_CHECK_WAYLAND", "false").lower() == "true":

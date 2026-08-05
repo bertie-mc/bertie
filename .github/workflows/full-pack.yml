@@ -33,12 +33,19 @@ jobs:
       - name: Restore Gradle dependencies
         uses: ./.github/actions/gradle-dependency-cache
 
+      - name: Restore Gradle work cache
+        uses: ./.github/actions/gradle-work-cache
+        with:
+          kind: full-pack
+          subject: pack
+
       - name: Run pack checks
         uses: ./.github/actions/gradle-check
         with:
           tasks: ${{ steps.plan.outputs.tasks }}
           validate: ${{ steps.plan.outputs.validate }}
           wayland: ${{ steps.plan.outputs.wayland }}
+          work-dir: .bertie-ci/gradle/full-pack
 
       - name: Upload reports and diagnostics
         if: always()
@@ -46,11 +53,19 @@ jobs:
         with:
           name: full-pack-${{ github.sha }}
           path: |
-            .bertie-ci/
+            .bertie-ci/dependencies/gradle.log
+            .bertie-ci/gradle/full-pack/gradle.log
+            .bertie-ci/gradle/full-pack/wayland.log
             pack/build/reports/
             pack/build/test-results/
             pack/build/test-diagnostics/
-            pack/build/minecraft-runs/
+            pack/build/minecraft-runs/gametest/logs/
+            pack/build/minecraft-runs/gametest/crash-reports/
+            pack/build/minecraft-runs/gametest/hs_err_pid*.log
+            pack/build/minecraft-runs/clienttest/logs/
+            pack/build/minecraft-runs/clienttest/crash-reports/
+            pack/build/minecraft-runs/clienttest/screenshots/
+            pack/build/minecraft-runs/clienttest/hs_err_pid*.log
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14

@@ -245,10 +245,9 @@ bertie-ci gradle-task --workspace . \
   --wayland
 ```
 
-The main CI job passes every affected task to one Gradle invocation. Gradle runs ordinary
-build and JUnit work in parallel and schedules one Minecraft test process at a time.
-When any client task is selected, `bertie-ci` keeps one Wayland session around the whole
-Gradle invocation.
+CI runs each affected `runClientTests` task in its own job. `bertie-ci` creates one Sway
+session around that job's Gradle invocation. GameTests use separate jobs without a
+display, while builds and JUnit tests share one Gradle invocation.
 
 ## Reports and failure files
 
@@ -257,15 +256,16 @@ Gradle invocation.
 | GameTest JUnit XML | `build/test-results/gametest/TEST-gametest.xml` |
 | Client-test JUnit XML | `build/test-results/clienttest/TEST-clienttest.xml` |
 | Client screenshots and diagnostics | `build/test-diagnostics/clienttest` |
-| Minecraft logs, worlds, and crash reports | `build/minecraft-runs` |
+| Minecraft logs and crash reports | `build/minecraft-runs/<suite>/logs` and `build/minecraft-runs/<suite>/crash-reports` |
 | Supervised Gradle log | The `--work-dir` passed to `bertie-ci gradle-task` |
 
-CI uploads these directories even when the task graph fails. Prefer the JUnit failure first,
-then inspect the Minecraft log and crash report around the same timestamp.
+CI uploads these files for each job even when its Gradle task fails. Runtime worlds,
+staged mods, copied configuration, and game assets are not included. Prefer the JUnit
+failure first, then inspect the Minecraft log and crash report around the same timestamp.
 
 Use state predicates instead of fixed sleeps, and close worlds, servers, and connections
 with try-with-resources. Remove or rewrite tests that no longer assert a useful behavior;
 preserving the number of tests is not a goal.
 
 See [Managing dependencies](dependencies.md) for test dependencies and [CI/CD](cicd.md)
-for affected-task planning and the combined GitHub job artifact.
+for affected-task planning and GitHub job artifacts.

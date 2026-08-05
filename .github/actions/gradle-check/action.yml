@@ -1,5 +1,5 @@
 name: Run planned checks
-description: Run every planned Gradle task once and validate generated packs
+description: Run planned Gradle tasks in one invocation and validate generated packs
 
 inputs:
   tasks:
@@ -12,6 +12,14 @@ inputs:
     description: Provide an isolated native-Wayland compositor
     required: false
     default: "false"
+  work-dir:
+    description: Directory for the Gradle and compositor logs
+    required: false
+    default: .bertie-ci/gradle
+  timeout:
+    description: Invocation timeout in seconds
+    required: false
+    default: "10500"
 runs:
   using: composite
   steps:
@@ -21,4 +29,6 @@ runs:
         BERTIE_GRADLE_TASKS: ${{ inputs.tasks }}
         BERTIE_PACK_VALIDATIONS: ${{ inputs.validate }}
         BERTIE_CHECK_WAYLAND: ${{ inputs.wayland }}
+        BERTIE_GRADLE_WORK_DIR: ${{ inputs.work-dir }}
+        BERTIE_GRADLE_TIMEOUT: ${{ inputs.timeout }}
       run: python3 "$GITHUB_ACTION_PATH/run.py"

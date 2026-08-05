@@ -101,44 +101,57 @@ display session around it.
 
 ## GitHub checks
 
-[`check.yml`](../.github/workflows/check.yml) runs for pull requests and pushes to
-`main`. [`full-pack.yml`](../.github/workflows/full-pack.yml) runs nightly and can also be
-started manually.
+[`check.yml`](../.github/workflows/check.yml) runs after a push to `main`.
+[`full-pack.yml`](../.github/workflows/full-pack.yml) runs nightly and can also be started
+manually.
 
 ```mermaid
 flowchart LR
-    E["push or pull request"] --> J["one Check job"]
-    J --> P["plan affected tasks"]
-    P --> D["restore or prepare dependencies"]
-    D --> W["Wayland when client tests are selected"]
-    W --> G["one Gradle task graph"]
-    G --> V["validate generated pack"]
-    V --> R["reports and diagnostics"]
+    E["push to main"] --> P["plan affected tasks"]
+    P --> D["prepare dependency cache"]
+    D --> B["build + unit job"]
+    D --> G["GameTest jobs"]
+    D --> C["client-test jobs"]
+    B --> R["job artifacts"]
+    G --> R
+    C --> W["Sway + Wayland"] --> R
 ```
 
-The job passes every selected build, unit-test, GameTest, client-test, infrastructure, and
-pack-generation task to one Gradle invocation. Gradle deduplicates shared prerequisites
-and schedules independent work in parallel. `--continue` lets independent tasks finish
-after a failure. Minecraft process tasks share one execution slot because the full-pack
-server and client runs reserve 8–10 GiB each.
+The preparation job calculates the plan and populates one immutable Gradle dependency
+cache entry. Once it completes, the build/unit job and both test matrices start in
+parallel. Their Gradle invocations use `--offline`.
 
-The job uses `.bertie-ci/gradle-user-home` and restores an immutable cache key derived
-from Gradle dependency inputs. On an exact miss it runs `prepareOfflineBuild`, saves the
-completed entry, and then executes the planned graph offline. The cache is available to
-the main check, nightly full-pack, and release workflows; there is no same-run dependency
-artifact or dependency-preparation job.
+The build/unit job runs `testInfrastructure`, affected `assemble` and `test` tasks, and
+pack generation in one Gradle invocation. It then validates generated packs. Each
+affected `runGameTests` task gets a separate job, and each affected `runClientTests` task
+gets a separate job with its own Sway session. Matrix jobs use `fail-fast: false`, so one
+failing component does not stop other selected components.
+
+All jobs set `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`. The prepared dependency
+cache contains downloaded modules, NeoForm Runtime artifacts, and game assets; its key is
+derived from Gradle dependency inputs and is shared with nightly and release workflows.
+Execution jobs restore only the exact entry created or found by the preparation job.
+
+Each execution job also restores a platform- and task-specific work cache containing the
+Gradle build cache and artifact transformations. A job may reuse the latest cache from
+the same component or test kind. These entries improve later workflow runs; parallel
+jobs do not exchange work-cache updates during the current run. Project `build`
+directories and Minecraft instances are not cached.
+
+The nightly full-pack workflow keeps the pack's build, GameTest, client-test, and
+validation tasks in one job. It checks the combined pack outside the push workflow's
+critical path.
 
 Failed and successful jobs upload the useful parts of their work directories:
 
 | Test kind | Reports and runtime data |
 | --- | --- |
-| Unit | `build/reports/tests`, `build/test-results` |
-| GameTest | `build/test-results/gametest`, `build/minecraft-runs/gametest` |
-| Client | `build/test-results/clienttest`, `build/test-diagnostics/clienttest`, `build/minecraft-runs/clienttest` |
-| Supervised task graph | `.bertie-ci/gradle/gradle.log` and the Wayland log when used |
+| Build and unit | Unit-test HTML/XML and the supervised Gradle log |
+| GameTest | JUnit XML, Minecraft logs and crash reports, and the supervised Gradle log |
+| Client | JUnit XML, screenshots, Minecraft logs and crash reports, the supervised Gradle log, and the Wayland log |
 
-CI uploads one artifact for the complete job. Gradle task paths in the log and the
-project-local reports identify each failed component.
+Worlds, staged mods, copied configuration, game assets, and other instance contents are
+excluded. Every matrix entry has its own artifact named after the component.
 
 ## Add a component to CI
 

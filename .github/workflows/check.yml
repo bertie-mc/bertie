@@ -3,21 +3,25 @@ name: Check
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 permissions:
   contents: read
 
 concurrency:
-  group: check-${{ github.event.pull_request.number || github.ref }}
+  group: check-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  check:
-    name: Check
+  prepare:
+    name: Plan and prepare dependencies
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 60
+    outputs:
+      build-unit-tasks: ${{ steps.plan.outputs.build-unit-tasks }}
+      gametest: ${{ steps.plan.outputs.gametest }}
+      client: ${{ steps.plan.outputs.client }}
+      validate: ${{ steps.plan.outputs.validate }}
+      has-work: ${{ steps.plan.outputs.has-work }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -28,55 +32,190 @@ jobs:
         id: plan
         uses: ./.github/actions/plan
         with:
-          base: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+          base: ${{ github.event.before }}
           head: ${{ github.sha }}
 
       - name: Set up dependencies
         if: steps.plan.outputs.has-work == 'true'
         uses: ./.github/actions/setup
 
-      - name: Restore Gradle dependencies
+      - name: Prepare Gradle dependencies
         if: steps.plan.outputs.has-work == 'true'
         uses: ./.github/actions/gradle-dependency-cache
 
+      - name: Upload dependency preparation log
+        if: failure() && steps.plan.outputs.has-work == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: dependency-preparation-${{ github.sha }}
+          path: .bertie-ci/dependencies/gradle.log
+          if-no-files-found: ignore
+          include-hidden-files: true
+          retention-days: 14
+
+  build-unit:
+    name: Build and unit tests
+    needs: prepare
+    if: needs.prepare.outputs.has-work == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Restore Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
+        with:
+          prepare: "false"
+
+      - name: Restore Gradle work cache
+        uses: ./.github/actions/gradle-work-cache
+        with:
+          kind: build-unit
+          subject: repository
+
       - name: Check Nix flake
         id: nix
-        if: steps.plan.outputs.has-work == 'true'
         continue-on-error: true
         run: nix flake check
 
-      - name: Run planned checks
-        id: planned
-        if: steps.plan.outputs.has-work == 'true'
+      - name: Build and run unit tests
+        id: gradle
         continue-on-error: true
         uses: ./.github/actions/gradle-check
         with:
-          tasks: ${{ steps.plan.outputs.tasks }}
-          validate: ${{ steps.plan.outputs.validate }}
-          wayland: ${{ steps.plan.outputs.wayland }}
+          tasks: ${{ needs.prepare.outputs.build-unit-tasks }}
+          validate: ${{ needs.prepare.outputs.validate }}
+          work-dir: .bertie-ci/gradle/build-unit
+          timeout: "5400"
 
       - name: Upload reports and diagnostics
-        if: always() && steps.plan.outputs.has-work == 'true'
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          name: check-${{ github.sha }}
+          name: build-unit-${{ github.sha }}
           path: |
-            .bertie-ci/
-            **/build/reports/
-            **/build/test-results/
-            **/build/test-diagnostics/
-            **/build/minecraft-runs/
+            .bertie-ci/gradle/build-unit/gradle.log
+            **/build/reports/tests/test/
+            **/build/test-results/test/
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 14
 
-      - name: Conclude checks
-        if: always() && steps.plan.outputs.has-work == 'true'
+      - name: Conclude build and unit tests
+        if: always()
         shell: bash
         env:
           NIX_OUTCOME: ${{ steps.nix.outcome }}
-          PLANNED_OUTCOME: ${{ steps.planned.outcome }}
+          GRADLE_OUTCOME: ${{ steps.gradle.outcome }}
         run: |
-          if [[ "$NIX_OUTCOME" == failure || "$PLANNED_OUTCOME" == failure ]]; then
+          if [[ "$NIX_OUTCOME" == failure || "$GRADLE_OUTCOME" == failure ]]; then
             exit 1
           fi
+
+  gametest:
+    name: GameTest (${{ matrix.entry.subject }})
+    needs: prepare
+    if: needs.prepare.outputs.gametest != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        entry: ${{ fromJSON(needs.prepare.outputs.gametest) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Restore Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
+        with:
+          prepare: "false"
+
+      - name: Restore Gradle work cache
+        uses: ./.github/actions/gradle-work-cache
+        with:
+          kind: gametest
+          subject: ${{ matrix.entry.subject }}
+
+      - name: Run GameTests
+        uses: ./.github/actions/gradle-task
+        with:
+          task: ${{ matrix.entry.task }}
+          work-dir: .bertie-ci/gradle/${{ matrix.entry.subject }}-gametest
+          timeout: "3600"
+
+      - name: Upload reports and diagnostics
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: gametest-${{ matrix.entry.subject }}-${{ github.sha }}
+          path: |
+            .bertie-ci/gradle/${{ matrix.entry.subject }}-gametest/gradle.log
+            ${{ matrix.entry.project }}/build/test-results/gametest/
+            ${{ matrix.entry.project }}/build/minecraft-runs/gametest/logs/
+            ${{ matrix.entry.project }}/build/minecraft-runs/gametest/crash-reports/
+            ${{ matrix.entry.project }}/build/minecraft-runs/gametest/hs_err_pid*.log
+          if-no-files-found: warn
+          include-hidden-files: true
+          retention-days: 14
+
+  client-test:
+    name: Client test (${{ matrix.entry.subject }})
+    needs: prepare
+    if: needs.prepare.outputs.client != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        entry: ${{ fromJSON(needs.prepare.outputs.client) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up dependencies
+        uses: ./.github/actions/setup
+
+      - name: Restore Gradle dependencies
+        uses: ./.github/actions/gradle-dependency-cache
+        with:
+          prepare: "false"
+
+      - name: Restore Gradle work cache
+        uses: ./.github/actions/gradle-work-cache
+        with:
+          kind: client-test
+          subject: ${{ matrix.entry.subject }}
+
+      - name: Run client tests
+        uses: ./.github/actions/gradle-task
+        with:
+          task: ${{ matrix.entry.task }}
+          work-dir: .bertie-ci/gradle/${{ matrix.entry.subject }}-client-test
+          timeout: "5400"
+          wayland: "true"
+
+      - name: Upload reports and diagnostics
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: client-test-${{ matrix.entry.subject }}-${{ github.sha }}
+          path: |
+            .bertie-ci/gradle/${{ matrix.entry.subject }}-client-test/gradle.log
+            .bertie-ci/gradle/${{ matrix.entry.subject }}-client-test/wayland.log
+            ${{ matrix.entry.project }}/build/test-results/clienttest/
+            ${{ matrix.entry.project }}/build/test-diagnostics/clienttest/
+            ${{ matrix.entry.project }}/build/minecraft-runs/clienttest/logs/
+            ${{ matrix.entry.project }}/build/minecraft-runs/clienttest/crash-reports/
+            ${{ matrix.entry.project }}/build/minecraft-runs/clienttest/screenshots/
+            ${{ matrix.entry.project }}/build/minecraft-runs/clienttest/hs_err_pid*.log
+          if-no-files-found: warn
+          include-hidden-files: true
+          retention-days: 14

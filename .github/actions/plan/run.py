@@ -39,21 +39,29 @@ def main() -> None:
     has_work = any(
         plan[name] for name in ("build", "unit", "gametest", "client", "validate")
     )
-    tasks: list[str] = []
+    build_unit_tasks: list[str] = []
     if has_work:
-        tasks.append("testInfrastructure")
-    for name in ("build", "unit", "gametest", "client"):
-        tasks.extend(entry["task"] for entry in plan[name])
-    tasks.extend(
+        build_unit_tasks.append("testInfrastructure")
+    for name in ("build", "unit"):
+        build_unit_tasks.extend(entry["task"] for entry in plan[name])
+    generation_tasks = [
         f"{entry['gradle_project'].rstrip(':')}:generatePackwiz"
         for entry in plan["validate"]
-    )
+    ]
+    build_unit_tasks.extend(generation_tasks)
+    build_unit_tasks = list(dict.fromkeys(build_unit_tasks))
+    tasks = list(build_unit_tasks)
+    for name in ("gametest", "client"):
+        tasks.extend(entry["task"] for entry in plan[name])
     tasks = list(dict.fromkeys(tasks))
     output = Path(os.environ["GITHUB_OUTPUT"])
     with output.open("a", encoding="utf-8") as stream:
         for name in ("build", "unit", "gametest", "client", "validate"):
             value = json.dumps(plan[name], separators=(",", ":"))
             stream.write(f"{name}={value}\n")
+        stream.write(
+            f"build-unit-tasks={json.dumps(build_unit_tasks, separators=(',', ':'))}\n"
+        )
         stream.write(f"tasks={json.dumps(tasks, separators=(',', ':'))}\n")
         stream.write(f"has-work={str(has_work).lower()}\n")
         stream.write(f"wayland={str(bool(plan['client'])).lower()}\n")
