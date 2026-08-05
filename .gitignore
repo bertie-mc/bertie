@@ -2,6 +2,7 @@
 .direnv/
 .gradle/
 .idea/
+.kotlin/
 .pytest_cache/
 .ruff_cache/
 .settings/

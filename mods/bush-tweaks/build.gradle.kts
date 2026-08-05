@@ -1,9 +1,9 @@
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.neoforge-unit-test")
-    id("bertie.mockito-test")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
 }
 
 dependencies {
+    testImplementation(libs.mockito)
     runtimeOnly(mods.berriesAndCherries)
 }

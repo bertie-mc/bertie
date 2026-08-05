@@ -1,6 +1,10 @@
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.neoforge-test-framework")
-    id("bertie.server-run")
-    id("bertie.data-generation")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
+    id("bertie.dev-runs")
+    id("bertie.datagen")
+}
+
+dependencies {
+    testImplementation(libs.neoforge.test.framework)
 }

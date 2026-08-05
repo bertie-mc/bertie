@@ -45,7 +45,7 @@ def _workspace(root: Path) -> Workspace:
 
 [workspace]
 component-descriptors = ["mods/*/bertie-ci.toml", "pack/bertie-ci.toml"]
-shared-gradle-paths = ["build-logic/", "settings.gradle.kts", "testing/"]
+shared-gradle-paths = ["build-logic/", "settings.gradle.kts", "core/"]
 shared-all-paths = ["flake.nix", ".github/actions/", "tools/bertie-ci/"]
 ignored-paths = [".github/dependabot.yml", "README.md", "docs/**"]
 """,

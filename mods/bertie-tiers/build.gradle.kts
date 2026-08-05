@@ -1,8 +1,7 @@
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.jvm-test")
+    id("bertie.mod")
     id("bertie.gametest")
-    id("bertie.server-run")
+    id("bertie.dev-runs")
 }
 
 dependencies {

@@ -1,6 +1,8 @@
 package io.github.bertie_mc.gradle.tasks
 
-import io.github.bertie_mc.gradle.MinecraftArtifactSide
+import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
+import io.github.bertie_mc.gradle.model.PackwizArtifact
+import io.github.bertie_mc.gradle.model.PackwizProvider
 import org.gradle.api.tasks.PathSensitive
 import org.gradle.api.tasks.PathSensitivity
 import org.gradle.testfixtures.ProjectBuilder

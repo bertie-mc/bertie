@@ -1,4 +1,4 @@
-# Authoritative third-party Minecraft artifact manifest.
+# Third-party Minecraft artifact manifest.
 #
 # Gradle resolves Maven when available, then Modrinth, then CurseForge.
 # Packwiz metadata uses Modrinth when available, then CurseForge.

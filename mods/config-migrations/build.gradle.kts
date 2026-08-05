@@ -1,10 +1,11 @@
 plugins {
-    id("bertie.neoforge-unit-test")
-    id("bertie.mockito-test")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
     id("bertie.client-test")
 }
 
 dependencies {
+    testImplementation(libs.mockito)
     compileOnly(mods.clothConfig)
     compileOnly(libs.jankson)
     compileOnly(mods.resourcefulConfig)

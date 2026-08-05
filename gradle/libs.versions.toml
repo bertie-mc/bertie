@@ -3,8 +3,8 @@ minecraft = "1.21.1"
 neoforge = "21.1.233"
 javafml-loader = "4"
 moddev = "2.0.134"
-parchment-minecraft = "1.21.11"
-parchment-mappings = "2025.12.20"
+neoform-runtime = "2.0.18"
+parchment-mappings = "2024.11.17"
 junit = "6.1.2"
 mockito = "5.23.0"
 gson = "2.14.0"
@@ -21,6 +21,9 @@ tomlkt = "0.3.7"
 
 [libraries]
 moddev-gradle = { module = "net.neoforged:moddev-gradle", version.ref = "moddev" }
+neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
+minecraft-dependencies = { module = "net.neoforged:minecraft-dependencies", version.ref = "minecraft" }
+parchment-data = { module = "org.parchmentmc.data:parchment-1.21.1", version.ref = "parchment-mappings" }
 neoforge-test-framework = { module = "net.neoforged:testframework", version.ref = "neoforge" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
@@ -36,3 +39,23 @@ ponder = { module = "net.createmod.ponder:ponder-neoforge", version.ref = "ponde
 flywheel = { module = "dev.engine-room.flywheel:flywheel-neoforge-1.21.1", version.ref = "flywheel" }
 jankson = { module = "blue.endless:jankson", version.ref = "jankson" }
 tomlkt = { module = "net.peanuuutz.tomlkt:tomlkt-jvm", version.ref = "tomlkt" }
+lwjgl = { module = "org.lwjgl:lwjgl", version.ref = "lwjgl" }
+lwjgl-freetype = { module = "org.lwjgl:lwjgl-freetype", version.ref = "lwjgl" }
+lwjgl-glfw = { module = "org.lwjgl:lwjgl-glfw", version.ref = "lwjgl" }
+lwjgl-jemalloc = { module = "org.lwjgl:lwjgl-jemalloc", version.ref = "lwjgl" }
+lwjgl-openal = { module = "org.lwjgl:lwjgl-openal", version.ref = "lwjgl" }
+lwjgl-opengl = { module = "org.lwjgl:lwjgl-opengl", version.ref = "lwjgl" }
+lwjgl-stb = { module = "org.lwjgl:lwjgl-stb", version.ref = "lwjgl" }
+lwjgl-tinyfd = { module = "org.lwjgl:lwjgl-tinyfd", version.ref = "lwjgl" }
+
+[bundles]
+lwjgl-natives = [
+  "lwjgl",
+  "lwjgl-freetype",
+  "lwjgl-glfw",
+  "lwjgl-jemalloc",
+  "lwjgl-openal",
+  "lwjgl-opengl",
+  "lwjgl-stb",
+  "lwjgl-tinyfd",
+]

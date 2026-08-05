@@ -1,11 +1,12 @@
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.neoforge-test-framework")
-    id("bertie.mockito-test")
-    id("bertie.server-run")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
+    id("bertie.dev-runs")
 }
 
 dependencies {
+    testImplementation(libs.mockito)
+    testImplementation(libs.neoforge.test.framework)
     // The pack supplies these hard dependencies. Compile against their precise API
     // artifacts without bundling or resolving unrelated transitives.
     compileOnly(variantOf(mods.create) { classifier("slim") }) {

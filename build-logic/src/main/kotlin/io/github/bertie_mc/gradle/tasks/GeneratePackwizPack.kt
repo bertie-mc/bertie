@@ -1,6 +1,8 @@
 package io.github.bertie_mc.gradle.tasks
 
-import io.github.bertie_mc.gradle.MinecraftArtifactSide
+import io.github.bertie_mc.gradle.model.PackMetadata
+import io.github.bertie_mc.gradle.model.PackwizArtifact
+import io.github.bertie_mc.gradle.model.PackwizProvider
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.ConfigurableFileCollection
 import org.gradle.api.file.DirectoryProperty
@@ -19,33 +21,12 @@ import org.gradle.api.tasks.PathSensitive
 import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.TaskAction
 import java.io.File
-import java.io.Serializable
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Path
 import java.security.MessageDigest
-import java.util.Properties
 import javax.inject.Inject
-
-enum class PackwizProvider {
-    MODRINTH,
-    CURSEFORGE,
-}
-
-data class PackwizArtifact(
-    @get:Input val id: String,
-    @get:Input val displayName: String,
-    @get:Input val installedName: String,
-    @get:Input val destination: String,
-    @get:Input val side: MinecraftArtifactSide,
-    @get:Input val provider: PackwizProvider,
-    @get:Input val projectId: String,
-    @get:Input val versionId: String,
-    @get:InputFile
-    @get:PathSensitive(PathSensitivity.NONE)
-    val file: File,
-) : Serializable
 
 private val PACKWIZ_ARTIFACT_ID = Regex("[a-z0-9][a-z0-9_-]*")
 private const val MODRINTH_CDN_BASE_URL = "https://cdn.modrinth.com/data"
@@ -83,6 +64,7 @@ abstract class GeneratePackwizPack : DefaultTask() {
     fun generate() {
         val output = outputDirectory.get().asFile.toPath()
         fileSystemOperations.delete { delete(output) }
+        Files.createDirectories(output)
         fileSystemOperations.copy {
             from(contentDirectory)
             into(output.resolve("config"))
@@ -134,12 +116,14 @@ abstract class GeneratePackwizPack : DefaultTask() {
         val indexFile = output.resolve("index.toml")
         write(indexFile, index)
 
-        val identity = readProperties(packProperties.get().asFile.toPath())
+        val identity = PackMetadata.parse(
+            Files.readString(packProperties.get().asFile.toPath(), StandardCharsets.UTF_8),
+        )
         val pack = buildString {
-            append("name = ").append(toml(identity.required("name"))).append('\n')
-            append("author = ").append(toml(identity.required("author"))).append('\n')
-            append("version = ").append(toml(identity.required("version"))).append('\n')
-            append("description = ").append(toml(identity.required("description"))).append('\n')
+            append("name = ").append(toml(identity.name)).append('\n')
+            append("author = ").append(toml(identity.author)).append('\n')
+            append("version = ").append(toml(identity.version)).append('\n')
+            append("description = ").append(toml(identity.description)).append('\n')
             append("pack-format = \"packwiz:1.1.0\"\n")
             append("\n[index]\n")
             append("file = \"index.toml\"\n")
@@ -207,14 +191,6 @@ private fun hash(path: Path, algorithm: String): String {
     }
     return digest.digest().joinToString("") { byte -> "%02x".format(byte) }
 }
-
-private fun readProperties(path: Path): Properties = Properties().apply {
-    Files.newBufferedReader(path, StandardCharsets.UTF_8).use(::load)
-}
-
-private fun Properties.required(name: String): String =
-    getProperty(name)?.takeIf(String::isNotBlank)
-        ?: error("Required pack property '$name' is missing")
 
 private fun toml(value: String): String = buildString {
     append('"')

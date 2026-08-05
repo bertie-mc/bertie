@@ -1,3 +1,5 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 pluginManagement {
     includeBuild("build-logic")
 
@@ -8,16 +10,63 @@ pluginManagement {
 }
 
 plugins {
-    id("bertie.minecraft-artifacts")
+    id("bertie.settings")
 }
 
 rootProject.name = "bertie"
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        val central = mavenCentral()
+        exclusiveContent {
+            forRepositories(central)
+            filter { includeGroup("org.lwjgl") }
+        }
+        maven {
+            name = "Parchment"
+            url = uri("https://maven.parchmentmc.org")
+            content { includeGroup("org.parchmentmc.data") }
+        }
+        maven {
+            name = "Modrinth"
+            url = uri("https://api.modrinth.com/maven")
+            content { includeGroup("maven.modrinth") }
+            metadataSources { artifact() }
+        }
+        maven {
+            name = "CurseMaven"
+            url = uri("https://www.cursemaven.com")
+            content { includeGroup("curse.maven") }
+        }
+        maven {
+            name = "Create"
+            url = uri("https://maven.createmod.net")
+            content {
+                includeGroup("com.simibubi.create")
+                includeGroup("net.createmod.ponder")
+                includeGroup("dev.engine-room.flywheel")
+            }
+        }
+        maven {
+            name = "Architectury"
+            url = uri("https://maven.architectury.dev")
+            content { includeGroup("dev.architectury") }
+        }
+        maven {
+            name = "FTB"
+            url = uri("https://maven.ftb.dev/releases")
+            content { includeGroup("dev.ftb.mods") }
+        }
+    }
+}
+
 include(
+    ":core:minecraft",
     ":pack",
-    ":testing:client-test-api",
-    ":testing:client-test-driver",
-    ":testing:gametest-driver",
+    ":core:client-test-api",
+    ":core:client-test-driver",
+    ":core:gametest-driver",
     ":mods:alexscaves-worldgen-fix",
     ":mods:berlords-food-system",
     ":mods:bertie-blackhole",

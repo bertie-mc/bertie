@@ -1,10 +1,11 @@
 plugins {
-    id("bertie.neoforge-unit-test")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
     id("bertie.client-test")
-    id("bertie.embedded-library")
+    id("bertie.shaded-mod")
 }
 
 dependencies {
-    embeddedLibrary(libs.arboard)
-    embeddedLibrary(libs.native.utils)
+    shadedLibrary(libs.arboard)
+    shadedLibrary(libs.native.utils)
 }

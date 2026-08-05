@@ -1,5 +1,3 @@
-import io.github.bertie_mc.gradle.packRuntime
-
 plugins {
     id("bertie.pack")
     id("bertie.gametest")
@@ -7,29 +5,27 @@ plugins {
 }
 
 dependencies {
-    packRuntime(
-        project(":mods:berlords-carving"),
-        project(":mods:berlords-food-system"),
-        project(":mods:bertie-blackhole"),
-        project(":mods:bertie-emi"),
-        project(":mods:bertie-filters"),
-        project(":mods:bertie-progression"),
-        project(":mods:bertie-tiers"),
-        project(":mods:bertie-weapons"),
-        project(":mods:bush-tweaks"),
-        project(":mods:config-migrations"),
-        project(":mods:ender-eyes"),
-        project(":mods:explode-to-mine"),
-        project(":mods:fart-bomb"),
-        project(":mods:forge-ink"),
-        project(":mods:frozen-reg-fix"),
-        project(":mods:hephaestus-architecture"),
-        project(":mods:primitive-refined"),
-        project(":mods:rustic-engineer-fix"),
-        project(":mods:explosive-enhancement"),
-        project(":mods:fd-shader-fix"),
-        project(":mods:screenshot-copy"),
-        project(":mods:short-circuit-fix"),
-        project(":mods:withered-hearts"),
-    )
+    packMods(project(":mods:berlords-carving"))
+    packMods(project(":mods:berlords-food-system"))
+    packMods(project(":mods:bertie-blackhole"))
+    packMods(project(":mods:bertie-emi"))
+    packMods(project(":mods:bertie-filters"))
+    packMods(project(":mods:bertie-progression"))
+    packMods(project(":mods:bertie-tiers"))
+    packMods(project(":mods:bertie-weapons"))
+    packMods(project(":mods:bush-tweaks"))
+    packMods(project(":mods:config-migrations"))
+    packMods(project(":mods:ender-eyes"))
+    packMods(project(":mods:explode-to-mine"))
+    packMods(project(":mods:fart-bomb"))
+    packMods(project(":mods:forge-ink"))
+    packMods(project(":mods:frozen-reg-fix"))
+    packMods(project(":mods:hephaestus-architecture"))
+    packMods(project(":mods:primitive-refined"))
+    packMods(project(":mods:rustic-engineer-fix"))
+    packMods(project(":mods:explosive-enhancement"))
+    packMods(project(":mods:fd-shader-fix"))
+    packMods(project(":mods:screenshot-copy"))
+    packMods(project(":mods:short-circuit-fix"))
+    packMods(project(":mods:withered-hearts"))
 }

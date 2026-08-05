@@ -1,5 +1,5 @@
 plugins {
-    id("bertie.neoforge-mod")
+    id("bertie.mod")
     id("bertie.client-test")
 }
 

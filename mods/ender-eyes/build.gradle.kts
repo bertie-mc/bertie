@@ -1,4 +1,8 @@
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.neoforge-test-framework")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
+}
+
+dependencies {
+    testImplementation(libs.neoforge.test.framework)
 }
