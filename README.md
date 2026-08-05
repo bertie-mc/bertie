@@ -20,12 +20,12 @@ GitHub tooling. Run `nix flake check` to verify the development environment itse
 
 ## Documentation
 
-- [Dependencies](docs/dependencies.md) — version metadata, the Minecraft artifact
-  manifest, runtime sides, lockfiles, verification metadata, and generated pack contents.
-- [Testing](docs/testing.md) — unit tests, vanilla/NeoForge GameTests, client tests,
-  full-pack integration, local execution, and CI Wayland.
-- [CI/CD](docs/cicd.md) — Gradle tasks, `bertie-ci` commands, change-based test planning,
-  GitHub workflows, diagnostics, pack exports, and releases.
+- [Dependencies](docs/dependencies.md) — add or update libraries, mods, shaderpacks, lock
+  files, checksums, and generated pack contents.
+- [Testing](docs/testing.md) — choose a suite, write tests, run them locally, and inspect
+  Minecraft failures.
+- [CI/CD](docs/cicd.md) — preview affected jobs, reproduce CI tasks, export the pack, and
+  publish releases.
 - [Pack maintenance and installation](pack/README.md) — the `pack` component.
 - [bertie-ci command reference](tools/bertie-ci/README.md).
 
@@ -35,7 +35,7 @@ Each owned mod also has a component README describing its behavior and developme
 
 - `mods/` — owned NeoForge mods;
 - `pack/` — the full-pack Gradle test and packaging project;
-- `testing/` — shared GameTest reporting and client-test APIs/drivers;
+- `core/` — Minecraft input preparation and reusable in-game test APIs/drivers;
 - `build-logic/` — Gradle convention plugins and pack generation;
 - `tools/bertie-ci/` — CI planning, task supervision, Wayland provisioning, and release
   packaging;

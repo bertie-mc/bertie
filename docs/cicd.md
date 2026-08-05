@@ -1,59 +1,146 @@
-# CI/CD
+# CI, local checks, and releases
 
-Local commands and GitHub Actions invoke the same Gradle tasks. Gradle builds and launches
-the projects. Java drivers run in-game tests. `bertie-ci` plans and supervises CI work.
-
-## Development shell
-
-Enter the pinned environment before running repository commands:
+Run repository commands from the pinned development shell:
 
 ```bash
 nix develop
 ```
 
-Nix supplies JDK 21, Gradle, Python, packwiz, Sway, Mesa, and the GitHub tooling. The
-repository has no Gradle wrapper and does not ask Gradle to download a Java toolchain.
+The shell supplies Java 21, Gradle, Python, packwiz, Sway, Mesa, and the GitHub CLI. This
+repository does not use a Gradle wrapper.
 
-Run the shared environment and workflow checks with:
+## Check a change locally
+
+Start with the component you changed:
+
+```bash
+gradle :mods:bertie-tiers:test
+gradle :mods:bertie-tiers:runGameTests
+gradle :mods:bertie-tiers:runClientTests
+```
+
+Use `runTests` to run every suite enabled by one project:
+
+```bash
+gradle :mods:bertie-tiers:runTests
+gradle :pack:runTests
+```
+
+Changes to shared Gradle, test-driver, Nix, or CI code should also run:
 
 ```bash
 nix flake check
 gradle testInfrastructure
 ```
 
-## What each tool does
+See [Testing](testing.md) for the source-set and task conventions.
 
-| Component | Work |
-| --- | --- |
-| Gradle and `build-logic` | Resolve and verify dependencies, compile projects, stage isolated instances, launch test processes, publish reports, and generate the packwiz tree |
-| Java test drivers | Discover in-game tests, coordinate Minecraft threads and lifecycle, manage client options and embedded servers, and write per-test results |
-| `bertie-ci` | Discover components, plan affected tasks, supervise process groups and timeouts, provision CI Wayland, and run packwiz validation or exports |
-| GitHub Actions | Supply hosted runners, pass plan entries to bertie-ci/Gradle, upload diagnostics, and publish releases |
+## Preview the CI plan
+
+`bertie-ci` maps changed files to affected components and their Gradle tasks. Inspect the
+plan before pushing a broad change:
+
+```bash
+bertie-ci plan --workspace . --base origin/main --head HEAD
+```
+
+To list every component task, regardless of changed files:
+
+```bash
+bertie-ci plan --workspace . --all
+```
+
+The plan contains `build`, `unit`, `gametest`, `client`, and `validate` matrices. A change
+to a component also selects components that depend on it. Shared paths are configured in
+[`bertie-ci.toml`](../bertie-ci.toml).
 
 ```mermaid
 flowchart LR
-    GH["GitHub Actions<br/>hosted adapter"] --> CI["bertie-ci<br/>plan and supervise"]
-    CI -->|Gradle task path| G["Gradle<br/>resolve, build, stage, launch"]
-    G --> J["JUnit JVM"]
-    G --> S["NeoForge GameTest server"]
-    G --> C["Minecraft client JVM"]
-    C --> D["Java client-test driver"]
-    CI -. "Wayland environment<br/>client CI only" .-> C
-    J --> R["reports and diagnostics"]
-    S --> R
-    D --> R
-    G --> W["generated packwiz tree"]
-    W -->|"validate or export"| CI
+    D["changed files"] --> P["bertie-ci plan"]
+    P --> B["build"]
+    P --> U["unit tests"]
+    P --> G["GameTests"]
+    P --> C["client tests"]
+    P --> V["pack validation"]
+    B --> T["Gradle tasks"]
+    U --> T
+    G --> T
+    C --> T
+    V --> K["Gradle generation + packwiz"]
 ```
 
-CI does not maintain a second dependency graph, and Gradle does not configure Wayland or
-invoke packwiz.
+Documentation, licensing files, and other ignored paths intentionally produce no
+component tasks. The shared infrastructure job still runs in the main workflow.
 
-## Components and versions
+## Reproduce a CI task
 
-The root [`bertie-ci.toml`](../bertie-ci.toml) discovers component descriptors and defines
-which shared paths affect Gradle projects or every component. Each component descriptor
-records its subject, kind, optional Gradle path, and version file:
+For fast local iteration, invoke Gradle directly. To reproduce CI timeout, process-group,
+and log handling, use the exact task from the plan:
+
+```bash
+bertie-ci gradle-task --workspace . \
+  --task :mods:bertie-tiers:runGameTests \
+  --work-dir .bertie-ci/local/bertie-tiers \
+  --timeout 1800
+```
+
+Client tests normally use the current desktop. On Linux, add `--wayland` to reproduce the
+isolated native-Wayland session used by CI:
+
+```bash
+bertie-ci gradle-task --workspace . \
+  --task :mods:short-circuit-fix:runClientTests \
+  --work-dir .bertie-ci/local/short-circuit-fix \
+  --timeout 1800 \
+  --wayland
+```
+
+The Wayland run uses headless Sway with Xwayland disabled and software rendering. Gradle
+still receives an ordinary graphical Minecraft task; `bertie-ci` starts and stops the
+display session around it.
+
+## GitHub checks
+
+[`check.yml`](../.github/workflows/check.yml) runs for pull requests and pushes to
+`main`. [`full-pack.yml`](../.github/workflows/full-pack.yml) runs nightly and can also be
+started manually.
+
+```mermaid
+flowchart LR
+    P["plan"] --> D["prepare Gradle dependencies"]
+    D --> I["shared infrastructure"]
+    D --> B["build + unit"]
+    D --> G["GameTest matrix"]
+    D --> C["client-test matrix"]
+    D --> V["pack validation"]
+    I --> R["required check"]
+    B --> R
+    G --> R
+    C --> R
+    V --> R
+```
+
+The dependency job runs `prepareOfflineBuild` once and saves an isolated Gradle User Home
+from `.bertie-ci/gradle-user-home`. All downstream Gradle jobs restore it and run offline.
+If several otherwise unrelated jobs report a missing module, inspect the dependency job
+first. If only one task fails, download that task's artifact and reproduce its exact
+Gradle task locally.
+
+Failed and successful jobs upload the useful parts of their work directories:
+
+| Test kind | Reports and runtime data |
+| --- | --- |
+| Unit | `build/reports/tests`, `build/test-results` |
+| GameTest | `build/test-results/gametest`, `build/minecraft-runs/gametest` |
+| Client | `build/test-results/clienttest`, `build/test-diagnostics/clienttest`, `build/minecraft-runs/clienttest` |
+| Supervised task | The matching `.bertie-ci/...` work directory and Gradle log |
+
+Matrix jobs do not fail fast, so inspect every failed component before deciding that they
+share a cause.
+
+## Add a component to CI
+
+Every releasable component has a `bertie-ci.toml`. A NeoForge mod descriptor looks like:
 
 ```toml
 format = "bertie-ci.component.v2"
@@ -66,147 +153,22 @@ file = "mod.properties"
 key = "mod_version"
 ```
 
-Each component reads its version from its own directory:
+The root [`bertie-ci.toml`](../bertie-ci.toml) must discover the descriptor. Test matrices
+are inferred from directories rather than listed in the descriptor:
 
-| Component kind | Version source |
+| Directory | Planned task |
 | --- | --- |
-| NeoForge mod | `mod.properties`, key `mod_version` |
-| Pack | `pack.properties`, key `version` |
-| bertie-ci tool | `pyproject.toml`, key `project.version` |
+| `src/test` | `test` |
+| `src/gametest` | `runGameTests` |
+| `src/clienttest` | `runClientTests` |
 
-Source-set directories declare which test suites exist. Component descriptors do not
-duplicate test lists, mod IDs, dependency sides, or Minecraft launch configuration.
+The descriptor's `subject` is also used in release tags and artifact names. Keep the
+version in the component's existing metadata: `mod.properties` for a mod,
+`pack.properties` for the pack, and `pyproject.toml` for `bertie-ci`.
 
-## Change-based test planning
+## Validate and export the pack
 
-Inspect the same plan CI uses:
-
-```bash
-bertie-ci plan --workspace . --all
-bertie-ci plan --workspace . --base origin/main --head HEAD
-```
-
-The plan has five matrices:
-
-| Matrix | Work |
-| --- | --- |
-| `build` | Assemble affected owned mods |
-| `unit` | Run affected `test` tasks |
-| `gametest` | Run affected `runGameTests` tasks |
-| `client` | Run affected `runClientTests` tasks |
-| `validate` | Validate affected generated packs |
-
-A changed component also selects its downstream dependents. Changes to shared Gradle or
-testing infrastructure select every Gradle project; changes to repository-wide CI tooling
-select every component. Paths matched by `ignored-paths`, including documentation and
-licensing files, produce no plan entries. The patterns live in the root workspace
-descriptor.
-
-```mermaid
-flowchart LR
-    D["changed paths"] --> P["bertie-ci plan"]
-    W["workspace scopes"] --> P
-    C["component descriptors"] --> P
-    P --> B["build matrix"]
-    P --> U["unit matrix"]
-    P --> G["GameTest matrix"]
-    P --> T["client-test matrix"]
-    P --> V["pack-validation matrix"]
-    B --> E["Gradle tasks"]
-    U --> E
-    G --> E
-    T --> E
-    V --> X["Gradle generation + packwiz validation"]
-```
-
-To reproduce one planned task with bertie-ci's timeout and log handling:
-
-```bash
-bertie-ci gradle-task --workspace . \
-  --task :mods:bertie-tiers:runGameTests \
-  --work-dir .bertie-ci/local/bertie-tiers \
-  --timeout 1800
-```
-
-For local iteration, run the Gradle task directly.
-
-## CI checks
-
-The main [`check.yml`](../.github/workflows/check.yml) workflow runs on pull requests and
-pushes to `main`:
-
-1. Plan affected components from the Git range.
-2. Resolve the repository's Gradle dependencies and prepare Minecraft artifacts and
-   assets in one job.
-3. Save the resulting isolated Gradle User Home cache under a hash of the dependency
-   inputs.
-4. Restore that exact cache in every build, unit-test, GameTest, client-test,
-   infrastructure, and pack-validation job.
-5. Run those jobs in parallel with Gradle's offline mode enabled.
-6. Combine their outcomes into one required-check result.
-
-```mermaid
-flowchart LR
-    P["affected-component plan"] --> W["prepare Gradle dependencies"]
-    W --> I["infrastructure"]
-    W --> B["build + unit tests"]
-    W --> G["GameTest matrix"]
-    W --> C["client-test matrix"]
-    W --> V["pack validation"]
-```
-
-`warmDependencies` resolves external configurations in every subproject, resolves the
-included build's dependencies, and prepares the NeoForge/Minecraft artifacts and client
-assets. CI sets `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`; the runner's home
-directory is not part of this cache. The warm-up is the workflow's only Gradle job allowed
-to fetch dependencies, and it uses one Gradle worker while populating the store. The jobs
-after it require the matching cache and `bertie-ci` adds `--offline` to their Gradle
-commands.
-
-Jobs upload JUnit reports, run directories, logs, crash reports, client screenshots, and
-bertie-ci work directories for diagnosis. Matrix jobs use `fail-fast: false`, so one
-component failure does not hide results from the others.
-
-The [`full-pack.yml`](../.github/workflows/full-pack.yml) workflow runs nightly and on
-manual dispatch. It uses the same dependency preparation job, then executes every suite
-declared by `:pack` and validates the generated pack in parallel, independently of
-change-based planning.
-
-Mod and pack release builds use the same preparation and offline execution. Source-only
-tool releases do not run Gradle.
-
-Reusable unit, GameTest, client-test, and mod-build workflows are available to standalone
-Bertie repositories through the tagged `bertie-ci` release. Their YAML delegates to the
-same actions and commands used by this monorepo.
-
-## Native Wayland in CI
-
-Client-test Gradle tasks launch graphical Minecraft. Locally they inherit the current
-desktop. For a Linux CI client matrix entry, the Gradle action asks `bertie-ci` for an
-isolated native-Wayland session.
-
-`bertie-ci` starts Sway on wlroots' headless backend with Xwayland disabled, provides a
-Wayland-capable GLFW and software rendering, attaches a persistent virtual keyboard to
-the Wayland seat, starts Gradle in that environment, and terminates its process group
-afterward. Neither Gradle nor the Java driver contains display-backend policy.
-
-## Pack validation and export
-
-Pack validation and export start with Gradle generation:
-
-```mermaid
-flowchart LR
-    M["Minecraft artifact manifest"] --> G["Gradle :pack:generatePackwiz"]
-    O["owned project JARs"] --> G
-    K["pack/config and pack.properties"] --> G
-    G --> T["one side-aware tree<br/>pack/build/packwiz"]
-    T --> V["bertie-ci + packwiz<br/>validate"]
-    T --> C["bertie-ci + packwiz<br/>client .mrpack"]
-    T --> S["bertie-ci<br/>server archive + installer"]
-```
-
-Gradle generates the tree without executing packwiz. `bertie-ci` then invokes packwiz or
-packages the generated files:
+Use the same commands locally and in release jobs:
 
 ```bash
 bertie-ci pack-validate --workspace . --component pack
@@ -216,35 +178,28 @@ bertie-ci pack-export-server --workspace . --component pack \
   --output .bertie-ci/release/bertie-server.zip
 ```
 
-Both exports use the generated side-aware tree. Owned JARs come from local Gradle project
-outputs; publishing does not look up or compare separately released copies of owned mods.
+Each command runs `:pack:generatePackwiz` before invoking the required packwiz or archive
+operation. See [Managing dependencies](dependencies.md) for changing the generated pack.
 
-## Releases
+## Publish a release
 
-Each component has its own version and release tag. A release starts when an annotated,
-SSH-signed tag in the exact form `<subject>/vX.Y.Z` is pushed:
+1. Update the version in the component's `mod.properties`, `pack.properties`, or
+   `pyproject.toml`.
+2. Run its tests and build or export commands on the release commit.
+3. Create an annotated, SSH-signed `<subject>/vX.Y.Z` tag whose version exactly matches
+   the metadata.
+4. Push the tag.
+
+For example:
 
 ```bash
 git tag -s pack/v0.2.0 -m "Release pack v0.2.0"
 git push origin pack/v0.2.0
 ```
 
-Before tagging:
+[`release.yml`](../.github/workflows/release.yml) checks the tag and metadata before
+publishing. Mod releases attach the built JAR to GitHub Releases. Pack releases attach a
+client `.mrpack` and server `.zip`. A source-only `bertie-ci` release publishes the tagged
+tool release.
 
-1. Update the component's local version metadata.
-2. Run the component's required build and test pipelines for that commit.
-3. Confirm that the tag subject matches its `bertie-ci.toml` subject and the tag version
-   exactly matches the component metadata.
-
-The release workflow validates the tag before doing any publishing:
-
-- a mod release builds its JAR and publishes it to GitHub Releases;
-- a pack release generates and publishes the client `.mrpack` and server `.zip`;
-- a tool release publishes the tagged source release.
-
-Never create a release by editing generated packwiz files or by substituting separately
-published owned-mod JARs.
-
-See [Dependencies](dependencies.md) for lock/checksum maintenance, [Testing](testing.md)
-for suite authoring, and the [bertie-ci command reference](../tools/bertie-ci/README.md)
-for CLI usage.
+For all CLI options, see the [`bertie-ci` command reference](../tools/bertie-ci/README.md).

@@ -1,128 +1,128 @@
-# Testing
+# Writing and running tests
 
-Bertie tests use three source sets. Select one based on the required Minecraft runtime.
-The pack uses the same runners as the mods.
+Bertie projects use JUnit, vanilla GameTests, and client tests. Put the test in the
+component that implements the behavior. Use `pack/src/...` only when the assertion needs
+the complete modpack.
 
-## Test types
+## Choose a suite
 
-| Source set | Runner | Use it for |
+| Source directory | Use it for | Gradle task |
 | --- | --- | --- |
-| `src/test` | JUnit 5 | Pure Java behavior, parsing, validation, serialization, and small loader-aware contracts |
-| `src/gametest` | Vanilla GameTest on a NeoForge dedicated server | Registries, recipes, blocks, entities, structures, events, data packs, and logical-server world behavior |
-| `src/clienttest` | Bertie client-test driver in a NeoForge client | Screens, input, resources, rendering, client integrations, singleplayer, and networked client behavior |
+| `src/test` | Pure Java behavior, parsing, serialization, validation, and small loader-aware tests | `test` |
+| `src/gametest` | Registries, recipes, blocks, entities, structures, events, data packs, and logical-server world behavior | `runGameTests` |
+| `src/clienttest` | Screens, input, resources, rendering, client integrations, singleplayer, and networked client behavior | `runClientTests` |
 
 ```mermaid
 flowchart LR
-    A["Behavior to test"] --> B{"Needs a ticking Minecraft world?"}
-    B -- No --> U["src/test<br/>JUnit"]
-    B -- Yes --> C{"Needs physical client state?"}
-    C -- No --> G["src/gametest<br/>vanilla GameTest"]
-    C -- Yes --> T["src/clienttest<br/>Bertie client tests"]
-    G --> P{"Only visible with the full pack?"}
-    T --> P
-    P -- No --> M["Place it in the owning mod"]
-    P -- Yes --> F["Place it under pack/src"]
+    A["behavior"] --> W{"needs a ticking world?"}
+    W -- no --> U["src/test"]
+    W -- yes --> C{"needs client state?"}
+    C -- no --> G["src/gametest"]
+    C -- yes --> T["src/clienttest"]
+    U --> O["owning component"]
+    G --> O
+    T --> O
+    O --> P{"requires the complete pack?"}
+    P -- yes --> F["pack/src"]
 ```
 
-Put each test in the component that implements the tested behavior. Use `pack/src/...`
-only for startup, configuration, or cross-mod contracts that require the full pack
-inventory.
+## Enable suites in a project
 
-## Source sets and Gradle tasks
-
-Apply a convention plugin for each test source set:
+Apply the plugin for each source directory the project contains:
 
 ```kotlin
 plugins {
-    id("bertie.neoforge-mod")
-    id("bertie.neoforge-unit-test")
+    id("bertie.mod")
+    id("bertie.neoforge-test")
     id("bertie.gametest")
     id("bertie.client-test")
 }
 ```
 
-Source layout:
+`bertie.mod` configures ordinary JUnit 5 tests. Add `bertie.neoforge-test` when a JUnit
+test needs FML initialization or NeoForge transformations. `bertie.gametest` and
+`bertie.client-test` add their source sets, test carrier mods, Minecraft runs, and reports.
+
+A mod may therefore contain:
 
 ```text
-mods/<component>/
-  src/main
-  src/test
-  src/gametest
-  src/clienttest
-
-pack/
-  src/test
-  src/gametest
-  src/clienttest
+mods/example/
+  src/main/
+  src/test/
+  src/gametest/
+  src/clienttest/
 ```
 
-Test code is packaged as a test-only NeoForge carrier mod. It is not included in the
-production mod JAR.
+Test carrier mods are build output and are not included in the production mod JAR.
 
-| Gradle task | Result |
-| --- | --- |
-| `test` | Runs the project's JUnit suite |
-| `runGameTests` | Starts the project's NeoForge GameTest server |
-| `runClientTests` | Starts one Minecraft client and runs annotated client tests |
-| `runTests` | Aggregates the suites enabled by that project |
-| `testInfrastructure` | Tests shared build logic and the reusable test APIs/drivers |
-
-Run tasks by project path:
+Run one suite or all suites enabled by a project:
 
 ```bash
 gradle :mods:berlords-carving:test
 gradle :mods:berlords-carving:runGameTests
 gradle :mods:berlords-carving:runClientTests
-gradle :pack:runTests
+gradle :mods:berlords-carving:runTests
 ```
 
-## Unit tests
+Run shared build-logic and test-driver tests with:
 
-Use JUnit when the contract does not require a live world or physical client. This covers
-algorithms, mappings, parsers, resource formats, and isolated mod behavior.
-`bertie.neoforge-unit-test` enables NeoForge class transformation for tests that load
-Minecraft or transformed mod classes.
+```bash
+gradle testInfrastructure
+```
 
-Do not start Minecraft for a contract that a JVM test can cover.
+## JUnit tests
+
+Use `src/test` whenever the assertion does not need a ticking Minecraft world. This keeps
+the feedback loop short and makes failures available through the normal Gradle test
+report.
+
+If the test imports an optional third-party mod, add that dependency to the appropriate
+test configuration:
+
+```kotlin
+dependencies {
+    testImplementation(mods.exampleApi)
+    testRuntimeOnly(mods.exampleRuntime)
+}
+```
+
+Move the test to `src/gametest` or `src/clienttest` once it needs lifecycle, world ticks,
+networking, rendering, or input.
 
 ## GameTests
 
-GameTests use the vanilla framework and NeoForge's class-level holder annotation:
+GameTests use NeoForge's `@GameTestHolder` and the vanilla GameTest annotations:
 
 ```java
 @GameTestHolder("examplemod")
 public final class ExampleGameTests {
     @GameTest(template = "empty", timeoutTicks = 200)
     public static void machineProcessesInput(GameTestHelper helper) {
-        // Arrange blocks and entities through the helper.
-        // Assert observable world behavior.
+        // Place blocks, advance the test, and inspect server-visible state.
         helper.succeed();
     }
 }
 ```
 
-`@GameTestHolder`, `@GameTest`, and `@GameTestGenerator` are the discovery mechanism.
-There is no Bertie entrypoint file or parallel registry. Structure templates live under
-the suite's resources, for example:
+Add structure templates to the GameTest resources:
 
 ```text
 src/gametest/resources/data/examplemod/structure/empty.nbt
 ```
 
-Gradle starts a physical dedicated-server process with the project's server dependency
-projection (`server` plus `both`). The reporting bridge collects results from the vanilla
-GameTest runner and writes JUnit XML.
+Use `@GameTestGenerator` when one method needs to generate several tests. The normal
+NeoForge and vanilla annotations handle discovery; no extra entrypoint file is needed.
 
-Use GameTests for logical server and world behavior even when that behavior can also be
-triggered from an interactive client with `/test`. Their dedicated-server process also
-catches accidental client linkage.
+`runGameTests` starts a NeoForge dedicated server and writes the vanilla runner results as
+JUnit XML. Dependencies marked `client` in `gradle/minecraft-artifacts.toml` are absent
+from this run.
 
 See [Berlord's Carving GameTests](../mods/berlords-carving/src/gametest/java/io/github/bertie_mc/carving/gametest/CarvingGameTests.java)
-for an example.
+for a working example.
 
 ## Client tests
 
-A client test is a public static method marked with `@ClientTest`:
+A client test is a public static method annotated with `@ClientTest`:
 
 ```java
 public final class ExampleClientTests {
@@ -135,116 +135,132 @@ public final class ExampleClientTests {
 }
 ```
 
-`@ClientTest` is the only discovery declaration. There is no holder annotation, entrypoint
-list, generated method registry, or descriptor file.
+The driver discovers annotated methods on the test carrier mod. `ClientTestContext`
+provides these groups of operations:
 
-`ClientTestContext` provides operations for Minecraft's thread and tick model:
+| API | Use |
+| --- | --- |
+| `runOnClient`, `computeOnClient` | Read or mutate state on the render thread |
+| `waitTick`, `waitTicks`, `waitFor` | Wait for game state without sleeping the process |
+| `setScreen`, `waitForScreen`, `clickScreenButton` | Open screens and interact with translated buttons |
+| `input()` | Keyboard, mouse, cursor, text, and scroll input through Minecraft handlers |
+| `worldBuilder()` | Create an integrated world or an in-process dedicated server |
+| `takeScreenshot` | Save a named diagnostic image |
+| `restoreDefaultGameOptions` | Reset options changed by the current test |
 
-- `runOnClient` and `computeOnClient` for render-thread work;
-- tick waits and state-oriented `waitFor` methods;
-- `setScreen`, `waitForScreen`, and translated-button helpers;
-- Minecraft-window keyboard and mouse input through `input()`;
-- integrated and dedicated worlds through `worldBuilder()`;
-- screenshots and failure diagnostics.
+The driver restores its captured game-option defaults before each test. A test can call
+`restoreDefaultGameOptions()` again after changing options.
 
-The driver captures game-option defaults after mod loading and restores them before each
-test. A test that changes options can call `restoreDefaultGameOptions()` itself. Gradle
-does not generate `options.txt` or decide Minecraft client settings.
+### Integrated worlds
 
-### Worlds and connections
+Create an integrated world as a scoped resource:
 
-Worlds, connections, and servers are scoped resources:
+```java
+try (var world = context.worldBuilder().create()) {
+    world.connection().waitForChunksRender();
+    world.server().runCommand("time set noon");
+    context.runOnClient(client -> {
+        // Assert client-visible state.
+    });
+}
+```
+
+The [Carving EMI client test](../mods/berlords-carving/src/clienttest/java/io/github/bertie_mc/carving/test/CarvingEmiClientTests.java)
+is an integrated-world example.
+
+### Dedicated servers
+
+A client test can create and connect to a dedicated server inside the client process:
 
 ```java
 try (var server = context.worldBuilder().createServer()) {
     try (var connection = server.connect()) {
         connection.waitForChunksRender();
+        server.runOnServer(minecraftServer -> {
+            // Inspect dedicated-server state.
+        });
         context.runOnClient(client -> {
-            // Assert client-visible networked behavior.
+            // Inspect the connected client.
         });
     }
 }
 ```
 
-The Java driver creates the dedicated server inside the client JVM, waits for readiness,
-connects through Minecraft networking, and stops the server when its context closes.
-Gradle launches only the client process; it does not provision a companion server task or
-endpoint.
+Closing the connection and server stops their networking and server lifecycle. Gradle
+launches the client test process; the Java driver creates the server when the test asks
+for it.
 
 ```mermaid
 flowchart LR
-    G["Gradle<br/>runClientTests"] --> C["Minecraft client JVM"]
-    C --> D["driver discovers<br/>@ClientTest methods"]
-    D --> S["create in-process<br/>dedicated server"]
-    S --> N["connect client and<br/>run test"]
-    N --> X["close server"]
-    N --> R["JUnit XML result"]
+    G["runClientTests"] --> C["Minecraft client"]
+    C --> D["discover @ClientTest"]
+    D --> S["optional in-process server"]
+    S --> N["connect and assert"]
+    D --> R["JUnit XML"]
+    N --> R
 ```
 
-The in-process server is a `MinecraftServer` inside a `Dist.CLIENT` process, so it uses the
-client dependency projection. Use GameTests for loading and behavior in a physical
-dedicated-server environment.
+Use a GameTest when the assertion requires a separate `Dist.DEDICATED_SERVER` process.
 
-See [the Carving EMI client test](../mods/berlords-carving/src/clienttest/java/io/github/bertie_mc/carving/test/CarvingEmiClientTests.java)
-for an integrated-world example.
+### Extending the client-test API
 
-## Full-pack integration
+The client API takes design cues from Fabric API 26.2's screen, input, option, world, and
+dedicated-server helpers. When adding an operation, compare the relevant Fabric behavior
+before inventing another calling convention:
 
-The `:pack` project runs GameTests and client tests with the pack's dependency inventory:
+- [`ClientGameTestContext`](https://github.com/FabricMC/fabric-api/blob/26.2/fabric-client-gametest-api-v1/src/client/java/net/fabricmc/fabric/api/client/gametest/v1/context/ClientGameTestContext.java)
+- [`ClientGameTestContextImpl`](https://github.com/FabricMC/fabric-api/blob/26.2/fabric-client-gametest-api-v1/src/client/java/net/fabricmc/fabric/impl/client/gametest/context/ClientGameTestContextImpl.java)
+- [`DedicatedServerImplUtil`](https://github.com/FabricMC/fabric-api/blob/26.2/fabric-client-gametest-api-v1/src/client/java/net/fabricmc/fabric/impl/client/gametest/util/DedicatedServerImplUtil.java)
 
-- `:pack:runGameTests` uses the physical server projection and verifies pack startup plus
-  server or cross-mod contracts;
-- `:pack:runClientTests` uses the client projection and verifies resources, client
-  integrations, and client-visible dedicated-server behavior;
-- component behavior remains in component suites instead of being copied into the pack.
+Fabric is a reference for the test API, not a Bertie runtime dependency.
 
-Tests resolve dependencies directly through Gradle. They do not build or install the
-generated packwiz tree.
+## Full-pack tests
 
-## Local desktops and CI Wayland
+The `:pack` project uses the same three source directories. Put a test there only when it
+needs pack startup, pack configuration, or several mods together:
 
-Client-test tasks launch graphical Minecraft. Locally, Gradle inherits the current desktop
-and imposes no display-backend requirement.
-
-In Linux CI, `bertie-ci` starts an isolated native-Wayland Sway session with Xwayland
-disabled, supplies software rendering and a Wayland-capable GLFW, runs the same Gradle
-task, and tears the session down. Gradle and the Java driver receive that environment;
-neither configures the display backend.
-
-## Results and diagnostics
-
-Minecraft suites write JUnit XML under the owning project:
-
-```text
-build/test-results/gametest/TEST-gametest.xml
-build/test-results/clienttest/TEST-clienttest.xml
+```bash
+gradle :pack:test
+gradle :pack:runGameTests
+gradle :pack:runClientTests
+gradle :pack:runTests
 ```
 
-Client screenshots and other failure artifacts are written under
-`build/test-diagnostics/clienttest`. Run directories, worlds, logs, and crash reports stay
-under `build/runs`. Gradle fails a task when the game exits unsuccessfully, a report is
-missing or invalid, or a test reports a failure.
+Pack tests resolve the declared runtime dependencies directly through Gradle. Generating
+or installing the packwiz pack is not part of a test run.
 
-In CI, these files and the corresponding bertie-ci work directory are uploaded as job
-artifacts.
+## Client displays
 
-## Writing tests
+On a developer desktop, `runClientTests` uses the current graphical session. It works on
+Wayland or X11 according to the installed environment and GLFW selection.
 
-- Assert an observable contract, not the implementation path used to reach it.
-- Keep a test in the component that owns the behavior.
-- Wait for a named state predicate instead of sleeping for a fixed duration.
-- Close worlds, servers, and connections with try-with-resources.
-- Rewrite, move, combine, or remove brittle and wrongly layered tests; preserving an
-  assertion count is not a goal.
-- Add pack coverage only when the behavior depends on the full installation.
+Linux CI runs the same Gradle task through an isolated native-Wayland Sway session. To
+reproduce that environment locally:
 
-The client API is inspired by Fabric API 26.2's client GameTest contexts, input helpers,
-live option handling, and in-process dedicated-server lifecycle. Fabric is a design
-reference, not a runtime dependency or compatibility target. Developers extending the
-driver can refer to Fabric's
-[`ClientGameTestContext`](https://github.com/FabricMC/fabric-api/blob/26.2/fabric-client-gametest-api-v1/src/client/java/net/fabricmc/fabric/api/client/gametest/v1/context/ClientGameTestContext.java)
-and
-[`DedicatedServerImplUtil`](https://github.com/FabricMC/fabric-api/blob/26.2/fabric-client-gametest-api-v1/src/client/java/net/fabricmc/fabric/impl/client/gametest/util/DedicatedServerImplUtil.java).
+```bash
+bertie-ci gradle-task --workspace . \
+  --task :pack:runClientTests \
+  --work-dir .bertie-ci/local/pack-client \
+  --timeout 3600 \
+  --wayland
+```
 
-See [Dependencies](dependencies.md) for runtime projection rules and [CI/CD](cicd.md) for
-planning, Wayland supervision, and uploaded reports.
+## Reports and failure files
+
+| Output | Location |
+| --- | --- |
+| GameTest JUnit XML | `build/test-results/gametest/TEST-gametest.xml` |
+| Client-test JUnit XML | `build/test-results/clienttest/TEST-clienttest.xml` |
+| Client screenshots and diagnostics | `build/test-diagnostics/clienttest` |
+| Minecraft logs, worlds, and crash reports | `build/minecraft-runs` |
+| Supervised Gradle log | The `--work-dir` passed to `bertie-ci gradle-task` |
+
+CI uploads these directories even when the task fails. Prefer the JUnit failure first,
+then inspect the Minecraft log and crash report around the same timestamp.
+
+Use state predicates instead of fixed sleeps, and close worlds, servers, and connections
+with try-with-resources. Remove or rewrite tests that no longer assert a useful behavior;
+preserving the number of tests is not a goal.
+
+See [Managing dependencies](dependencies.md) for test dependencies and [CI/CD](cicd.md)
+for affected-task planning and GitHub job artifacts.
