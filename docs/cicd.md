@@ -108,7 +108,7 @@ manually.
 ```mermaid
 flowchart LR
     E["push to main"] --> P["plan affected tasks"]
-    P --> D["prepare dependency cache"]
+    P --> D["prepare dependency snapshot"]
     D --> B["build + unit job"]
     D --> G["GameTest jobs"]
     D --> C["client-test jobs"]
@@ -117,9 +117,9 @@ flowchart LR
     C --> W["Sway + Wayland"] --> R
 ```
 
-The preparation job calculates the plan and populates one immutable Gradle dependency
-cache entry. Once it completes, the build/unit job and both test matrices start in
-parallel. Their Gradle invocations use `--offline`.
+The preparation job calculates the plan, populates one immutable Gradle dependency cache
+entry, and publishes its dependency snapshot. Once it completes, the build/unit job and
+both test matrices start in parallel. Their Gradle invocations use `--offline`.
 
 The build/unit job runs `testInfrastructure`, affected `assemble` and `test` tasks, and
 pack generation in one Gradle invocation. It then validates generated packs. Each
@@ -129,8 +129,10 @@ failing component does not stop other selected components.
 
 All jobs set `GRADLE_USER_HOME` to `.bertie-ci/gradle-user-home`. The prepared dependency
 cache contains downloaded modules, NeoForm Runtime artifacts, and game assets; its key is
-derived from Gradle dependency inputs and is shared with nightly and release workflows.
-Execution jobs restore only the exact entry created or found by the preparation job.
+derived from Gradle dependency inputs and is reused across workflow runs. The preparation
+job publishes those directories as a one-day workflow artifact, and every execution job
+downloads that exact snapshot before running Gradle offline. Nightly and release jobs use
+the persistent cache directly because they do not fan out after preparation.
 
 Each execution job also restores a platform- and task-specific work cache containing the
 Gradle build cache and artifact transformations. A job may reuse the latest cache from
