@@ -1,54 +1,37 @@
+# Build and tool output.
+build/
+out/
+result
+result-*
 .bertie-ci/
-.direnv/
 .gradle/
-.idea/
 .kotlin/
 .pytest_cache/
 .ruff_cache/
+__pycache__/
+*.egg-info/
+*.log
+*.py[cod]
+
+# Local environments and editor metadata.
+.direnv/
+.idea/
+.vscode/
 .settings/
 .venv/
-.vscode/
-__pycache__/
-**/build/
-**/crash-reports/
-**/eclipse/
-**/libs/
-**/logs/
-**/out/
-**/run/
-**/runs/
-**/extracted/
-**/*-decompile/
-**/decompiled-src/
-*.py[cod]
-*.egg-info/
 *.classpath
-*.project
 *.iml
-*.jar
-*.mrpack
-*.zip
+*.project
+
+# Local asset-authoring inputs and caches, never redistributed.
+/mods/berlords-carving/texture-work/slag-ref/
+/mods/berlords-food-system/texture-work/vanilla/
+/mods/bertie-progression/texture-work/drafts/
+/mods/primitive-refined/tools/extracted/
+
+# Packwiz cache.
+.packwizcache/
+
+# Operating-system metadata.
 .DS_Store
 Thumbs.db
-eula.txt
-libraries/
-result
-result-*
-run.bat
-run.sh
-user_jvm_args.txt
-uv.lock
-
-# Local reference art used by authoring tools, never redistributed.
-**/texture-work/materials/
-**/texture-work/slag-ref/
-**/texture-work/vanilla/
-**/texture-work/vanilla-icons/
-
-# Sprites still being drawn. Generator and output both live here until berlord
-# picks one; then the generator moves up into texture-work/ and starts writing
-# into resources. Nothing in here is versioned.
-**/texture-work/drafts/
-
-# packwiz cache and generated local instances.
-**/.packwizcache
