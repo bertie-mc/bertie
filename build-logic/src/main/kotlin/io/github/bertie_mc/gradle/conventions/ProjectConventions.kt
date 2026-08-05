@@ -55,13 +55,16 @@ internal fun Project.configureJvmRole() {
         dependsOn("test")
     }
 
-    val prepareOfflineBuild = tasks.register<ResolveDependencies>("prepareOfflineBuild") {
+    val externalDependencyArtifacts = objects.fileCollection()
+    tasks.register<ResolveDependencies>("prepareOfflineBuild") {
         group = "build setup"
         description = "Prepares this project's dependencies for an offline build"
+        dependencies.from(externalDependencyArtifacts)
     }
-    val resolveAndLockAll = tasks.register<ResolveDependencies>("resolveAndLockAll") {
+    tasks.register<ResolveDependencies>("resolveAndLockAll") {
         group = "build setup"
         description = "Resolves this project's dependencies and writes lock state"
+        dependencies.from(externalDependencyArtifacts)
     }
 
     configurations.configureEach {
@@ -76,8 +79,7 @@ internal fun Project.configureJvmRole() {
                     .toList()
             }
         }
-        prepareOfflineBuild.configure { dependencies.from(externalArtifacts) }
-        resolveAndLockAll.configure { dependencies.from(externalArtifacts) }
+        externalDependencyArtifacts.from(externalArtifacts)
     }
 }
 
