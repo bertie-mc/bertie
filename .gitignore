@@ -1,10 +1,7 @@
 # Build and tool output.
 build/
 out/
-# Gradle dev-run working directories: runClient, runServer, runData. Wildcarded on
-# purpose - a per-mod list drifts the moment a mod is renamed, and the stale entry then
-# reads as somebody's uncommitted work.
-/mods/*/run/
+run/
 result
 result-*
 .bertie-ci/
@@ -28,12 +25,8 @@ __pycache__/
 *.project
 
 # Local asset-authoring inputs and caches, never redistributed.
-# /mods/carving/ is a scratch area, not a mod - decompiled reference and render output
-# only, no source. Ignored whole; the slag-ref entry that used to sit under
-# berlords-carving moved here and its old path no longer exists.
-/mods/carving/texture-work/
+/mods/berlords-carving/texture-work/slag-ref/
 /mods/berlords-food-system/texture-work/vanilla/
-/mods/berlords-food-system/texture-work/materials/
 /mods/bertie-progression/texture-work/drafts/
 /mods/primitive-refined/tools/extracted/
 
