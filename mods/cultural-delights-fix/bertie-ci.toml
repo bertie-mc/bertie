@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "cultural-delights-fix"
+kind = "neoforge-mod"
+gradle-project = ":mods:cultural-delights-fix"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

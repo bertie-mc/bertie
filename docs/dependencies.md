@@ -35,28 +35,14 @@ Use release-specific IDs and the exact filename from the provider. Gradle prefer
 Maven coordinate for development. Generated packwiz metadata uses Modrinth when available
 and otherwise CurseForge.
 
-Some projects publish pack-only data through loader-compatible JARs. If either Modrinth or
-CurseForge does not offer a genuine standalone pack distribution, keep the artifact under
-`[mods.*]` and mark the artifact itself as `fakePack = true`:
+Use `[mods.*]` for artifacts installed under `mods/`. Use `[datapacks.*]`,
+`[resourcepacks.*]`, or `[shaderpacks.*]` for archives installed in the matching directory.
+Paxi loads entries from `datapacks/` and `resourcepacks/` globally. All provider records for an
+artifact must use the same installation type; if a project does not publish a pack archive on
+every declared provider, use its loader-compatible JAR releases under `[mods.*]`.
 
-```toml
-[mods.example-worldgen]
-fakePack = true
-modrinth = { project-id = "example", version-id = "jar-release", filename = "example.jar" }
-curseforge = { slug = "example-worldgen", project-id = 123, file-id = 456 }
-```
-
-This deliberately chooses the mod-container release even if one provider also offers a `.zip`,
-so switching providers cannot change how the artifact is installed. `fakePack` documents why a
-pack-only archive appears in `mods/` and lets the pack classification test distinguish it from an
-accidentally misclassified mod. It also fits CurseForge `manifest.json` semantics: the export
-retains the project and file IDs and lets the launcher derive the upstream file type and location.
-
-The table name becomes its `mods` alias only for entries under `[mods.*]`. For example,
-`[mods.slag-n-embers]` becomes `mods.slagNEmbers`. Put standalone pack archives under
-`[datapacks.*]`, `[resourcepacks.*]`, or `[shaderpacks.*]`. Ordinary pack distributions are
-installed into the matching top-level Minecraft directory and are not exposed as Java
-dependencies. Use those tables only when every declared provider is a genuine standalone pack.
+Entries under `[mods.*]` become aliases in the generated `mods` catalog. For example,
+`[mods.slag-n-embers]` becomes `mods.slagNEmbers`.
 
 ### Restrict a file to one physical side
 

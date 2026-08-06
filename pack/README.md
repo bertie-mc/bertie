@@ -33,28 +33,15 @@ packwiz generation uses Modrinth, then CurseForge. Provider records have no per-
 source selectors. A logical artifact may declare lowercase `side = "client"`, `"server"`,
 or `"both"`; omission means `"both"`.
 
-Pack-only projects stay under `[mods.*]` with `fakePack = true` when either Modrinth or CurseForge
-lacks a genuine standalone pack release. In that case the manifest selects loader-compatible JAR
-releases consistently on every provider. The flag records that the artifact intentionally has no
-executable code while preserving provider portability and future CurseForge `manifest.json`
-exports.
+Entries under `[datapacks.*]` and `[resourcepacks.*]` are staged in the corresponding instance-root
+directories and loaded globally by Paxi. See [Managing dependencies](../docs/dependencies.md) for
+artifact placement rules.
 
 The settings plugin exposes selected modules through the provider-neutral `mods` catalog;
 component build files do not repeat side buckets. Build logic centrally derives physical
 runtimes: clients receive `client` and `both` third-party artifacts, while dedicated
 servers receive `server` and `both`. Owned project artifacts remain present in both and
-must use NeoForge entrypoints and mixins safely.
-
-Standalone datapacks and resourcepacks are staged in the instance-root `datapacks/` and
-`resourcepacks/` directories and loaded globally by Paxi. These packs do not appear on Java
-classpaths. Fake pack mods are instead loaded from `mods/`, so one archive can expose both its
-data and assets without being duplicated into both pack directories.
-
-The pack's JUnit suite also inspects every resolved third-party `[mods.*]` archive. An
-archive with `pack.mcmeta` and only `data/` or `assets/` content fails the build unless it
-contains executable classes itself or in a nested JAR, or its `[mods.*]` artifact explicitly sets
-`fakePack = true`. This keeps intentional pack-only mod containers visible without hiding newly
-misclassified dependencies.
+must load safely on both physical sides.
 
 The full-pack GameTest launch verifies the server projection on a physical dedicated
 server. An incorrectly classified dependency is reclassified, fixed, replaced, or removed.

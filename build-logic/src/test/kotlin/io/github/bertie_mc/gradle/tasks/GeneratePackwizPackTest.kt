@@ -35,7 +35,7 @@ class GeneratePackwizPackTest {
         val fixture = fixture("providers")
         val modrinthFile = fixture.file("artifacts/modrinth.jar", "modrinth artifact")
         val modrinthZip = fixture.file("artifacts/modrinth.zip", "modrinth zip")
-        val modDatapack = fixture.file("artifacts/datapack.jar", "datapack jar")
+        val datapackZip = fixture.file("artifacts/datapack.zip", "datapack zip")
         val curseForgeFile = fixture.file("artifacts/curseforge.jar", "curseforge artifact")
         val ownedFile = fixture.file("artifacts/owned-1.2.3.jar", "owned artifact")
         val modrinthHash = sha512(modrinthFile)
@@ -69,12 +69,13 @@ class GeneratePackwizPackTest {
                     side = MinecraftArtifactSide.SERVER,
                 ),
                 artifact(
-                    id = "mod-datapack",
-                    file = modDatapack,
+                    id = "standalone-datapack",
+                    file = datapackZip,
                     provider = PackwizProvider.MODRINTH,
                     projectId = "datapack-project",
                     versionId = "datapack-version",
-                    filename = "provider-datapack.jar",
+                    destination = "datapacks",
+                    filename = "standalone-datapack.zip",
                 ),
             ),
         )
@@ -124,12 +125,12 @@ class GeneratePackwizPackTest {
         )
         assertTrue(modrinthShader.contains("side = \"client\""))
 
-        val datapack = fixture.generated("mods/mod-datapack.pw.toml")
-        assertTrue(datapack.contains("filename = \"provider-datapack.jar\""))
+        val datapack = fixture.generated("datapacks/standalone-datapack.pw.toml")
+        assertTrue(datapack.contains("filename = \"standalone-datapack.zip\""))
         assertTrue(
             datapack.contains(
                 "url = \"https://cdn.modrinth.com/data/datapack-project/versions/" +
-                    "datapack-version/provider-datapack.jar\"",
+                    "datapack-version/standalone-datapack.zip\"",
             ),
         )
 

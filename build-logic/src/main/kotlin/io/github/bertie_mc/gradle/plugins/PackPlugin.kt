@@ -13,20 +13,16 @@ import io.github.bertie_mc.gradle.model.TestSubject
 import io.github.bertie_mc.gradle.model.fileExtension
 import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
 import io.github.bertie_mc.gradle.tasks.GeneratePackwizPack
-import io.github.bertie_mc.gradle.tasks.WriteArtifactInventory
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Configuration
-import org.gradle.api.artifacts.component.ModuleComponentIdentifier
 import org.gradle.api.attributes.Bundling
 import org.gradle.api.attributes.Category
 import org.gradle.api.attributes.LibraryElements
 import org.gradle.api.attributes.Usage
 import org.gradle.api.provider.Provider
-import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.Sync
 import org.gradle.api.tasks.bundling.Jar
-import org.gradle.api.tasks.testing.Test
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.named
 import org.gradle.kotlin.dsl.register
@@ -162,43 +158,6 @@ class PackPlugin : Plugin<Project> {
                     shaderpacks,
                 )
 
-            val modArtifactInventory =
-                layout.buildDirectory.file("test-inputs/external-mod-artifacts.tsv")
-            val declaredModCoordinates =
-                externalMods
-                    .get()
-                    .map { artifact -> artifact.gradleSource.coordinate() }
-                    .toSet()
-            val externalModArtifacts =
-                modArtifacts.incoming
-                    .artifactView {
-                        componentFilter { identifier ->
-                            identifier is ModuleComponentIdentifier &&
-                                identifier.coordinate() in declaredModCoordinates
-                        }
-                    }.files
-            val writeModArtifactInventory =
-                tasks.register<WriteArtifactInventory>("writeModArtifactInventory") {
-                    artifacts.from(externalModArtifacts)
-                    artifactIdsByFileName.set(externalMods.map(::artifactIdsByResolvedFile))
-                    fakePackArtifactIds.set(
-                        externalMods.map { artifacts ->
-                            artifacts.filter(MinecraftArtifact::fakePack).map(MinecraftArtifact::id).toSet()
-                        },
-                    )
-                    outputFile.set(modArtifactInventory)
-                }
-            tasks.named<Test>("test") {
-                dependsOn(writeModArtifactInventory)
-                inputs
-                    .file(writeModArtifactInventory.flatMap(WriteArtifactInventory::outputFile))
-                    .withPathSensitivity(PathSensitivity.NONE)
-                systemProperty(
-                    "bertie.pack.modArtifactInventory",
-                    modArtifactInventory.get().asFile.absolutePath,
-                )
-            }
-
             val platform = extensions.getByType<PlatformVersions>()
             tasks.register<GeneratePackwizPack>("generatePackwiz") {
                 group = "distribution"
@@ -315,17 +274,8 @@ private fun filenamesByResolvedFile(artifacts: List<MinecraftArtifact>): Map<Str
         resolvedFileName(artifact) to artifact.filename(artifact.gradleSource)
     }
 
-private fun artifactIdsByResolvedFile(artifacts: List<MinecraftArtifact>): Map<String, String> =
-    artifacts.associate { artifact ->
-        resolvedFileName(artifact) to artifact.id
-    }
-
 private fun resolvedFileName(artifact: MinecraftArtifact): String {
     val source = artifact.gradleSource
     val extension = source.fileExtension ?: artifact.kind.extension
     return "${source.module}-${source.version}.$extension"
 }
-
-private fun io.github.bertie_mc.gradle.model.MinecraftArtifactSource.coordinate(): String = "$group:$module:$version"
-
-private fun ModuleComponentIdentifier.coordinate(): String = "$group:$module:$version"

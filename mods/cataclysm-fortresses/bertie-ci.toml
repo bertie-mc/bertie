@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "cataclysm-fortresses"
+kind = "neoforge-mod"
+gradle-project = ":mods:cataclysm-fortresses"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

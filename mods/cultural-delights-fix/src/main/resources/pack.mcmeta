@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "Replaces Cultural Delights' invalid soup recipe overrides with valid disabled recipes."
+  }
+}

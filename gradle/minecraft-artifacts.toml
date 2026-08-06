@@ -7,9 +7,7 @@
 # The optional lowercase side field describes physical installation compatibility.
 # It defaults to "both"; only client- or server-only artifacts specify it.
 # Put loader-compatible artifacts under [mods.*] and standalone pack archives under
-# [datapacks.*], [resourcepacks.*], or [shaderpacks.*]. Set fakePack = true on a
-# [mods.*] artifact that contains only pack data and is installed as a mod because at
-# least one provider does not offer a portable standalone pack distribution.
+# [datapacks.*], [resourcepacks.*], or [shaderpacks.*].
 
 [mods.access-denied-api]
 modrinth = { project-id = "bRBQLxKF", version-id = "a6tw90TF", filename = "access_denied_api-neoforge-1.21.1-1.0.1.jar" }
@@ -41,7 +39,6 @@ modrinth = { project-id = "9NM0dXub", version-id = "OWylG33I", filename = "Advan
 curseforge = { slug = "advancement-plaques", project-id = 499826, file-id = 5905995 }
 
 [mods.air-jump-enchantment]
-fakePack = true
 modrinth = { project-id = "kK4odxRI", version-id = "9F3QZPK4", filename = "air-jump-enchantment-v1.0.2.jar" }
 curseforge = { slug = "air-jump-enchantment", project-id = 1292199, file-id = 6823792 }
 
@@ -55,7 +52,6 @@ curseforge = { slug = "alexs-mobs-1-21-1", project-id = 1415721, file-id = 75281
 
 [mods.alexs-mobs-extra-music]
 side = "server"
-fakePack = true
 modrinth = { project-id = "ynxotL0Y", version-id = "AJtKB7Bj", filename = "alexs-mobs-extra-music-1.1.0.jar" }
 curseforge = { slug = "alexs-mobs-extra-music", project-id = 500532, file-id = 7771969 }
 
@@ -76,7 +72,6 @@ modrinth = { project-id = "rciLBWn7", version-id = "NuDwgHaO", filename = "ancie
 curseforge = { slug = "ancient-forgemastery", project-id = 1210419, file-id = 7969743 }
 
 [mods.anti-knockback-enchantment]
-fakePack = true
 modrinth = { project-id = "jEBwcptt", version-id = "hdAhP4ok", filename = "anti-knockback-enchantment-v1.0.0.jar" }
 curseforge = { slug = "anti-knockback-enchantment", project-id = 1311194, file-id = 6794882 }
 
@@ -146,7 +141,6 @@ modrinth = { project-id = "b1ZV3DIJ", version-id = "dJgL278E", filename = "athen
 curseforge = { slug = "athena-ctm", project-id = 841890, file-id = 8061947 }
 
 [mods.attack-speed-enchantment]
-fakePack = true
 modrinth = { project-id = "KeXkdmTD", version-id = "Ao9u8ZHo", filename = "attack-speed-enchantment-v1.0.0.jar" }
 curseforge = { slug = "attack-speed-enchantment", project-id = 1353978, file-id = 7035655 }
 
@@ -284,7 +278,6 @@ modrinth = { project-id = "7apv0bAM", version-id = "nCs17mDT", filename = "catac
 curseforge = { slug = "cataclysm-tools", project-id = 1037520, file-id = 6709296 }
 
 [mods.cataclysm-x-bettercombat-compat]
-fakePack = true
 modrinth = { project-id = "53TJSd8P", version-id = "CGWHkq5m", filename = "cataclysm_compat_1.21.1-1.0.2.jar" }
 curseforge = { slug = "cataclysm-x-bettercombat-compat", project-id = 1335102, file-id = 7350924 }
 
@@ -526,7 +519,6 @@ modrinth = { project-id = "s8dABaWE", version-id = "qtBEk2XT", filename = "draco
 curseforge = { slug = "dracolotl", project-id = 1111965, file-id = 6991479 }
 
 [mods.dungeons-and-taverns-woodland-mansion-overhaul]
-fakePack = true
 modrinth = { project-id = "3GfxWFCy", version-id = "LEkxbqdY", filename = "dungeons-and-taverns-woodland-mansion-replacement-v1.2.jar" }
 curseforge = { slug = "dungeons-and-taverns-woodland-mansion-overhaul", project-id = 1053222, file-id = 5724452 }
 
@@ -564,7 +556,6 @@ modrinth = { project-id = "m3pkVbY8", version-id = "S5sNyRsY", filename = "EchoC
 curseforge = { slug = "echo-chest", project-id = 857972, file-id = 6406106 }
 
 [mods.echoes-of-the-end-structures]
-fakePack = true
 modrinth = { project-id = "eVpstLY3", version-id = "latIOBBs", filename = "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar" }
 curseforge = { slug = "echoes-of-the-end-structures", project-id = 1218690, file-id = 8083843 }
 
@@ -652,7 +643,6 @@ modrinth = { project-id = "rylMOguI", version-id = "q3eBZMG4", filename = "entan
 curseforge = { slug = "entangled", project-id = 301034, file-id = 7783144 }
 
 [mods.epic-structures-witch-huts]
-fakePack = true
 modrinth = { project-id = "7KOwcKlK", version-id = "nRl1Bn5j", filename = "epic-structures-witch-huts-1.3.0.jar" }
 curseforge = { slug = "epic-structures-witch-huts", project-id = 1335768, file-id = 7996218 }
 
@@ -878,12 +868,10 @@ modrinth = { project-id = "RoLsCIqN", version-id = "Jwdpo3CR", filename = "hooke
 curseforge = { slug = "hooked", project-id = 297209, file-id = 7131932 }
 
 [mods.hopo-better-ruined-portals]
-fakePack = true
 modrinth = { project-id = "hIpLSyga", version-id = "JosVVZQn", filename = "HopoBetterRuinedPortals-[1.21.1-1.21.3]-1.4.4b.jar" }
 curseforge = { slug = "hopo-better-ruined-portals", project-id = 632624, file-id = 6420137 }
 
 [mods.hopo-better-underwater-ruins]
-fakePack = true
 modrinth = { project-id = "BuWCQzqf", version-id = "cCUmdH6y", filename = "HopoBetterUnderwaterRuins-[1.21.1-1.21.3]-1.2.1b.jar" }
 curseforge = { slug = "hopo-better-underwater-ruins", project-id = 632622, file-id = 6420141 }
 
@@ -928,7 +916,6 @@ modrinth = { project-id = "KpICtuVx", version-id = "TBI4EWjs", filename = "incon
 curseforge = { slug = "in-control", project-id = 257356, file-id = 7436215 }
 
 [mods.incendium]
-fakePack = true
 modrinth = { project-id = "ZVzW5oNS", version-id = "7mVvV9Th", filename = "Incendium_1.21.x_v5.4.4.jar" }
 curseforge = { slug = "incendium", project-id = 591388, file-id = 5962249 }
 
@@ -1093,12 +1080,10 @@ modrinth = { project-id = "EltpO5cN", version-id = "C2tLycH2", filename = "lootr
 curseforge = { slug = "lootr", project-id = 361276, file-id = 8041234 }
 
 [mods.lukis-ancient-cities]
-fakePack = true
 modrinth = { project-id = "13uF4XO7", version-id = "8jJSPQok", filename = "lukis-ancient-cities-v1.2.jar" }
 curseforge = { slug = "lukis-ancient-cities", project-id = 1190728, file-id = 7179736 }
 
 [mods.lukis-crazy-chambers]
-fakePack = true
 modrinth = { project-id = "JeZoobNU", version-id = "CPFsfPNM", filename = "lukis-crazy-chambers-1.0.3.jar" }
 curseforge = { slug = "lukis-crazy-chambers", project-id = 1082929, file-id = 7456313 }
 
@@ -1182,7 +1167,6 @@ curseforge = { slug = "melody", project-id = 938643, file-id = 5453382 }
 
 [mods.mes-moogs-end-structures]
 side = "server"
-fakePack = true
 modrinth = { project-id = "r4PuRGfV", version-id = "JW80uvhz", filename = "MoogsEndStructures-1.21-2.0.3.jar" }
 curseforge = { slug = "mes-moogs-end-structures", project-id = 892382, file-id = 8128039 }
 
@@ -1244,7 +1228,6 @@ curseforge = { slug = "moogs-structure-lib", project-id = 1337167, file-id = 818
 
 [mods.moogs-voyager-structures]
 side = "server"
-fakePack = true
 modrinth = { project-id = "OQAgZMH1", version-id = "cvepxaBC", filename = "MoogsVoyagerStructures-1.21-5.0.11.jar" }
 curseforge = { slug = "moogs-voyager-structures", project-id = 656977, file-id = 8128022 }
 
@@ -1302,7 +1285,6 @@ modrinth = { project-id = "vI1QKJro", version-id = "otPmhdts", filename = "nethe
 curseforge = { slug = "nether-depths-upgrade", project-id = 670011, file-id = 6430271 }
 
 [mods.nightvision-spyglass]
-fakePack = true
 modrinth = { project-id = "mOl6kTX8", version-id = "i24czOXq", filename = "nightvision-spyglass-1.0.jar" }
 curseforge = { slug = "nightvision-spyglass", project-id = 1247782, file-id = 6445156 }
 
@@ -1325,7 +1307,6 @@ modrinth = { project-id = "bQh7xzFq", version-id = "8SBaRv1t", filename = "Not E
 curseforge = { slug = "notenoughrecipebook", project-id = 738663, file-id = 6880047 }
 
 [mods.nullscape]
-fakePack = true
 modrinth = { project-id = "LPjGiSO4", version-id = "3fv8O3xX", filename = "Nullscape_1.21.x_v1.2.14.jar" }
 curseforge = { slug = "nullscape", project-id = 570354, file-id = 7078265 }
 
@@ -1650,7 +1631,6 @@ modrinth = { project-id = "qwvI41y9", version-id = "MoJZpi20", filename = "spars
 curseforge = { slug = "sparsestructures", project-id = 911437, file-id = 6456912 }
 
 [mods.spectral-enchantment]
-fakePack = true
 modrinth = { project-id = "8rO3GwBM", version-id = "8Os8G6b7", filename = "spectral-enchantment-v1.0.0.jar" }
 curseforge = { slug = "spectral-enchantment", project-id = 1254715, file-id = 6684333 }
 
@@ -1696,7 +1676,6 @@ modrinth = { project-id = "rOUBggPv", version-id = "hcYSe7v7", filename = "super
 curseforge = { slug = "supermartijn642s-core-lib", project-id = 454372, file-id = 7783425 }
 
 [mods.swiftness-enchantment]
-fakePack = true
 modrinth = { project-id = "81LiVMcA", version-id = "RQGA8ER4", filename = "swiftness-enchantment-v1.0.1.jar" }
 curseforge = { slug = "swiftness-enchantment", project-id = 1259949, file-id = 6952974 }
 
@@ -1708,7 +1687,6 @@ curseforge = { slug = "terra-curio", project-id = 1027625, file-id = 6775102 }
 modrinth = { project-id = "kkmrDlKT", version-id = "6e8GCrLb", filename = "TerraBlender-neoforge-1.21.1-4.1.0.8.jar" }
 
 [mods.terralith]
-fakePack = true
 modrinth = { project-id = "8oi3bsk5", version-id = "MuJMtPGQ", filename = "Terralith_1.21.x_v2.5.8.jar" }
 curseforge = { slug = "terralith", project-id = 513688, file-id = 6090387 }
 
@@ -1765,12 +1743,10 @@ modrinth = { project-id = "8a1Ksvnk", version-id = "kRGU4K6D", filename = "taxtg
 curseforge = { slug = "tree-giant", project-id = 1038018, file-id = 6226763 }
 
 [mods.tree-vein-miner]
-fakePack = true
 modrinth = { project-id = "wEhW4ceB", version-id = "raCJZcnp", filename = "tree-vein-miner-2.0.0.jar" }
 curseforge = { slug = "tree-vein-miner", project-id = 1356258, file-id = 8167342 }
 
 [mods.trek]
-fakePack = true
 modrinth = { project-id = "h2jngREY", version-id = "O1utQuJh", filename = "trek-B0.6.1.1.jar" }
 
 [mods.tslatentitystatus]
@@ -1840,7 +1816,6 @@ modrinth = { project-id = "klXONLDA", version-id = "3BGfKjMb", filename = "villa
 curseforge = { slug = "villages-and-pillages", project-id = 915531, file-id = 6266438 }
 
 [mods.vision-enchantment]
-fakePack = true
 modrinth = { project-id = "N80xH1o5", version-id = "LuygpCRn", filename = "vision-enchantment-v1.0.0.jar" }
 curseforge = { slug = "vision-enchantment", project-id = 1268078, file-id = 6684338 }
 
@@ -1880,7 +1855,6 @@ modrinth = { project-id = "Vr6UqBIT", version-id = "i70oR8c3", filename = "withe
 curseforge = { slug = "wither-spawn-animation", project-id = 1084564, file-id = 7638136 }
 
 [mods.withering-heights]
-fakePack = true
 modrinth = { project-id = "NCPLOWlF", version-id = "oUMl3Kzr", filename = "withering-heights-v1.1b.jar" }
 
 [mods.wits]
@@ -1926,7 +1900,6 @@ modrinth = { project-id = "Z2RtCqwR", version-id = "t1rtOqca", filename = "yarrp
 curseforge = { slug = "yarrp", project-id = 1385339, file-id = 7233669 }
 
 [mods.yggdrasil-structure]
-fakePack = true
 modrinth = { project-id = "hwNDseBp", version-id = "RPuu7Vml", filename = "Yggdrasil-6.0.0.jar" }
 curseforge = { slug = "yggdrasil-structure", project-id = 1135665, file-id = 7658653 }
 
