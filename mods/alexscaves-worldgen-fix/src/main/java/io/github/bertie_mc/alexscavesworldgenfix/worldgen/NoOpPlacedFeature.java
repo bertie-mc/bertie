@@ -1,7 +1,6 @@
 package io.github.bertie_mc.alexscavesworldgenfix.worldgen;
 
 import java.util.List;
-
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -23,8 +22,7 @@ public final class NoOpPlacedFeature {
 
     private static final PlacedFeature INSTANCE = create();
 
-    private NoOpPlacedFeature() {
-    }
+    private NoOpPlacedFeature() {}
 
     public static PlacedFeature get() {
         return INSTANCE;

@@ -2,7 +2,6 @@ package io.github.bertie_mc.alexscavesworldgenfix.mixin.alexscaves;
 
 import io.github.bertie_mc.alexscavesworldgenfix.logic.CaveBiomePin;
 import io.github.bertie_mc.alexscavesworldgenfix.worldgen.AlexsCavesBiomes;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
@@ -13,7 +12,6 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.minecraft.world.level.levelgen.structure.StructurePiece;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -39,9 +37,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * <p>Harmless if Alex's Caves adds the call itself: {@code replaceBiomes} only assigns section
  * biome containers, so running it twice writes the same value twice.
  */
-@Mixin(
-        targets = "com.github.alexmodguy.alexscaves.server.level.structure.piece.FerrocaveStructurePiece",
-        remap = false)
+@Mixin(targets = "com.github.alexmodguy.alexscaves.server.level.structure.piece.FerrocaveStructurePiece", remap = false)
 public abstract class FerrocaveStructurePieceMixin {
 
     @Shadow

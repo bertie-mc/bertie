@@ -2,7 +2,6 @@ package io.github.bertie_mc.alexscavesworldgenfix.mixin.alexscaves;
 
 import io.github.bertie_mc.alexscavesworldgenfix.logic.CaveBiomePin;
 import io.github.bertie_mc.alexscavesworldgenfix.worldgen.AlexsCavesBiomes;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
@@ -13,7 +12,6 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.minecraft.world.level.levelgen.structure.StructurePiece;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,8 +25,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * safe.
  */
 @Mixin(
-        targets = "com.github.alexmodguy.alexscaves.server.level.structure.piece."
-                + "ForlornCanyonStructurePiece",
+        targets = "com.github.alexmodguy.alexscaves.server.level.structure.piece." + "ForlornCanyonStructurePiece",
         remap = false)
 public abstract class ForlornCanyonStructurePieceMixin {
 

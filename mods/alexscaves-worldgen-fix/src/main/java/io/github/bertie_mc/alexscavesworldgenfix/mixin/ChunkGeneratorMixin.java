@@ -3,21 +3,17 @@ package io.github.bertie_mc.alexscavesworldgenfix.mixin;
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-
 import io.github.bertie_mc.alexscavesworldgenfix.AlexsCavesWorldgenFix;
 import io.github.bertie_mc.alexscavesworldgenfix.logic.BiomeDecorationFailure;
 import io.github.bertie_mc.alexscavesworldgenfix.logic.TolerantIndexList;
 import io.github.bertie_mc.alexscavesworldgenfix.worldgen.NoOpPlacedFeature;
-
 import java.util.List;
-
 import net.minecraft.world.level.StructureManager;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.biome.FeatureSorter;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
@@ -58,16 +54,15 @@ public abstract class ChunkGeneratorMixin {
      */
     @WrapOperation(
             method = "applyBiomeDecoration",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/world/level/biome/FeatureSorter$StepFeatureData;"
-                            + "features()Ljava/util/List;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/minecraft/world/level/biome/FeatureSorter$StepFeatureData;"
+                                    + "features()Ljava/util/List;"))
     private List<PlacedFeature> alexscavesworldgenfix$tolerateAnUnknownFeatureIndex(
             FeatureSorter.StepFeatureData step, Operation<List<PlacedFeature>> original) {
         return TolerantIndexList.wrap(
-                original.call(step),
-                NoOpPlacedFeature.get(),
-                AlexsCavesWorldgenFix::recordSubstitutedFeature);
+                original.call(step), NoOpPlacedFeature.get(), AlexsCavesWorldgenFix::recordSubstitutedFeature);
     }
 
     /**

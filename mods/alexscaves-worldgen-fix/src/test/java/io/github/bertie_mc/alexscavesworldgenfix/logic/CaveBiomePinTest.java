@@ -47,8 +47,8 @@ class CaveBiomePinTest {
 
         int offset = CaveBiomePin.offsetBelowSeaLevel(SEA_LEVEL, caveTop);
 
-        assertEquals(caveTop + CaveBiomePin.HEADROOM - CaveBiomePin.STRIDE,
-                CaveBiomePin.firstWrittenY(SEA_LEVEL, offset));
+        assertEquals(
+                caveTop + CaveBiomePin.HEADROOM - CaveBiomePin.STRIDE, CaveBiomePin.firstWrittenY(SEA_LEVEL, offset));
     }
 
     @Test

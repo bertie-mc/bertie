@@ -21,8 +21,7 @@ public final class CaveBiomePin {
     /** Blocks of clearance kept above the cave's bounding box, so the roof's section is covered. */
     public static final int HEADROOM = 16;
 
-    private CaveBiomePin() {
-    }
+    private CaveBiomePin() {}
 
     /**
      * The {@code offset} that makes {@code replaceBiomes} begin {@value #HEADROOM} blocks above

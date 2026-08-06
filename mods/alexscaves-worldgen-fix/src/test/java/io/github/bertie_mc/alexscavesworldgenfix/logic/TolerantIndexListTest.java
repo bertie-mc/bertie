@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
 import org.junit.jupiter.api.Test;
 
 class TolerantIndexListTest {
@@ -25,14 +24,14 @@ class TolerantIndexListTest {
     void theEmptyStepNoLongerThrowsThroughUpstreamsClamp() {
         // STRONGHOLDS is empty and the index mapping misses, so the clamp reaches get(0) on
         // nothing. That is the crash that used to cost the chunk every step after this one.
-        List<String> wrapped = TolerantIndexList.wrap(List.of(), FALLBACK, () -> { });
+        List<String> wrapped = TolerantIndexList.wrap(List.of(), FALLBACK, () -> {});
 
         assertEquals(FALLBACK, assertDoesNotThrow(() -> alexsCavesClamp(wrapped, -1)));
     }
 
     @Test
     void aPopulatedStepIsUntouched() {
-        List<String> wrapped = TolerantIndexList.wrap(List.of("first", "second"), FALLBACK, () -> { });
+        List<String> wrapped = TolerantIndexList.wrap(List.of("first", "second"), FALLBACK, () -> {});
 
         assertEquals("first", wrapped.get(0));
         assertEquals("second", wrapped.get(1));
@@ -44,7 +43,7 @@ class TolerantIndexListTest {
         // size() still reports the truth, so the clamp picks exactly what it picked before. Only
         // the empty case behaves differently; this mod does not get to redirect worldgen.
         List<String> raw = List.of("first", "second");
-        List<String> wrapped = TolerantIndexList.wrap(raw, FALLBACK, () -> { });
+        List<String> wrapped = TolerantIndexList.wrap(raw, FALLBACK, () -> {});
 
         assertEquals(alexsCavesClamp(raw, 1), alexsCavesClamp(wrapped, 1));
         assertEquals("first", alexsCavesClamp(wrapped, -1));
@@ -54,8 +53,7 @@ class TolerantIndexListTest {
     @Test
     void reportsOnlyTheIndicesItHadToSubstitute() {
         AtomicInteger substitutions = new AtomicInteger();
-        List<String> wrapped =
-                TolerantIndexList.wrap(List.of("first"), FALLBACK, substitutions::incrementAndGet);
+        List<String> wrapped = TolerantIndexList.wrap(List.of("first"), FALLBACK, substitutions::incrementAndGet);
 
         wrapped.get(0);
         assertEquals(0, substitutions.get());
@@ -68,7 +66,7 @@ class TolerantIndexListTest {
     @Test
     void negativeIndicesFallBackRatherThanThrow() {
         // Without Alex's Caves in front of it, vanilla hands the raw -1 straight to get.
-        List<String> wrapped = TolerantIndexList.wrap(List.of("first"), FALLBACK, () -> { });
+        List<String> wrapped = TolerantIndexList.wrap(List.of("first"), FALLBACK, () -> {});
 
         assertEquals(FALLBACK, assertDoesNotThrow(() -> wrapped.get(-1)));
     }
