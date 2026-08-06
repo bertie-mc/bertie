@@ -1,6 +1,5 @@
 package io.github.bertie_mc.testing.client.driver.mixin.server;
 
-import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import io.github.bertie_mc.testing.client.driver.server.InProcessDedicatedServer;
 import java.util.function.Function;
 import net.minecraft.Util;
@@ -14,13 +13,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 /** Makes the vanilla/NeoForge server entrypoint reusable inside the client process. */
 @Mixin(Main.class)
 abstract class ServerMainMixin {
-    @ModifyExpressionValue(
-            method = "main",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/server/Eula;hasAgreedToEULA()Z"))
-    private static boolean bertie$acceptEulaForOwnedClientTestServer(boolean agreed) {
-        return agreed || InProcessDedicatedServer.ownsCurrentServerLifecycle();
-    }
-
     @Redirect(
             method = "main",
             at =

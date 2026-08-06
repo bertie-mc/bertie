@@ -14,6 +14,7 @@
     "options.OptionsMixin",
     "screenshot.MinecraftMixin",
     "server.DedicatedServerMixin",
+    "server.EulaMixin",
     "server.ServerConnectionListenerAccessor",
     "server.ServerMainMixin",
     "threading.MinecraftMixin",
