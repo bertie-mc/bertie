@@ -4,6 +4,7 @@ import io.github.bertie_mc.gradle.conventions.requiredBundle
 import io.github.bertie_mc.gradle.conventions.requiredLibrary
 import io.github.bertie_mc.gradle.conventions.requiredVersion
 import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_LWJGL_NATIVE_CLASSIFIERS
+import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES
 import io.github.bertie_mc.gradle.tasks.DownloadMinecraftArtifacts
 import io.github.bertie_mc.gradle.tasks.ResolveDependencies
 import net.neoforged.minecraftdependencies.MinecraftDependenciesPlugin
@@ -34,6 +35,9 @@ class MinecraftInputsPlugin : Plugin<Project> {
             pluginManager.apply(MinecraftDependenciesPlugin::class.java)
             pluginManager.apply(NeoFormRuntimePlugin::class.java)
             dependencyLocking.lockAllConfigurations()
+            dependencyLocking.ignoredDependencies.addAll(
+                MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES,
+            )
 
             val catalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
             val minecraftVersion = catalog.requiredVersion("minecraft")
