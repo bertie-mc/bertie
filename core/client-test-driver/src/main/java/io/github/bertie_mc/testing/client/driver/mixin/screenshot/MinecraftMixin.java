@@ -12,12 +12,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 abstract class MinecraftMixin {
     @Inject(
             method = "runTick",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/renderer/GameRenderer;render(Lnet/minecraft/client/DeltaTracker;Z)V",
-                    shift = At.Shift.AFTER))
-    private void bertie$captureScreenshotAfterRender(
-            boolean renderLevel, CallbackInfo callback) {
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/client/renderer/GameRenderer;render(Lnet/minecraft/client/DeltaTracker;Z)V",
+                            shift = At.Shift.AFTER))
+    private void bertie$captureScreenshotAfterRender(boolean renderLevel, CallbackInfo callback) {
         ClientTestScreenshots.afterRender((Minecraft) (Object) this);
     }
 }

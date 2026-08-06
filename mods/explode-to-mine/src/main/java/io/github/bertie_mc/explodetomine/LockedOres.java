@@ -1,11 +1,10 @@
 package io.github.bertie_mc.explodetomine;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Registry of "locked" ores: ores that drop nothing when hand-mined and must first be exposed

@@ -33,12 +33,11 @@ public class ShrinePonderPlugin implements PonderPlugin {
 
     private static final String MODID = "bertieprogression";
     /** assets/bertieprogression/ponder/deepwaters_shrine.nbt */
-    private static final ResourceLocation SCHEMATIC =
-            ResourceLocation.fromNamespaceAndPath(MODID, "deepwaters_shrine");
+    private static final ResourceLocation SCHEMATIC = ResourceLocation.fromNamespaceAndPath(MODID, "deepwaters_shrine");
+
     private static final ResourceLocation ALTAR =
             ResourceLocation.fromNamespaceAndPath("deepwaters", "stormcall_altar");
-    private static final ResourceLocation JELLY =
-            ResourceLocation.fromNamespaceAndPath("deepwaters", "crownedjelly");
+    private static final ResourceLocation JELLY = ResourceLocation.fromNamespaceAndPath("deepwaters", "crownedjelly");
 
     public static void register() {
         PonderIndex.addPlugin(new ShrinePonderPlugin());
@@ -67,8 +66,10 @@ public class ShrinePonderPlugin implements PonderPlugin {
         scene.idle(10);
 
         // --- L1: the floor (the base plate itself) -------------------------------------------
-        scene.overlay().showText(80)
-                .text("Seven by seven of Mossy Stone Bricks. Build it underwater, in the Deep Waters - nowhere else works.")
+        scene.overlay()
+                .showText(80)
+                .text(
+                        "Seven by seven of Mossy Stone Bricks. Build it underwater, in the Deep Waters - nowhere else works.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(3, 0, 3));
@@ -77,13 +78,16 @@ public class ShrinePonderPlugin implements PonderPlugin {
         // --- L2: pillar, posts, and the ring of crystals ---------------------------------------
         scene.world().showSection(util.select().layer(1), Direction.DOWN);
         scene.idle(15);
-        scene.overlay().showText(90)
-                .text("A Flaming Opal Pillar at the centre, wrapped in a solid three by three, with four posts on the diagonals.")
+        scene.overlay()
+                .showText(90)
+                .text(
+                        "A Flaming Opal Pillar at the centre, wrapped in a solid three by three, with four posts on the diagonals.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().centerOf(3, 1, 3));
         scene.idle(100);
-        scene.overlay().showText(80)
+        scene.overlay()
+                .showText(80)
                 .colored(PonderPalette.BLUE)
                 .text("Aquamarine crystals ring the edge - Small at the corners of each face, a Bundle in the middle.")
                 .placeNearTarget()
@@ -94,9 +98,11 @@ public class ShrinePonderPlugin implements PonderPlugin {
         // --- L3: the conduit ------------------------------------------------------------------
         scene.world().showSection(util.select().layer(2), Direction.DOWN);
         scene.idle(15);
-        scene.overlay().showText(90)
+        scene.overlay()
+                .showText(90)
                 .colored(PonderPalette.OUTPUT)
-                .text("The Conduit sits at the very centre, held in a diagonal lattice. This is the heart of the shrine.")
+                .text(
+                        "The Conduit sits at the very centre, held in a diagonal lattice. This is the heart of the shrine.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().centerOf(3, 2, 3));
@@ -105,7 +111,8 @@ public class ShrinePonderPlugin implements PonderPlugin {
         // --- L4: mirror of L2, no crystals ------------------------------------------------------
         scene.world().showSection(util.select().layer(3), Direction.DOWN);
         scene.idle(15);
-        scene.overlay().showText(80)
+        scene.overlay()
+                .showText(80)
                 .text("Above the Conduit, the pillar and the posts repeat - but no crystals this time.")
                 .placeNearTarget()
                 .attachKeyFrame()
@@ -115,7 +122,8 @@ public class ShrinePonderPlugin implements PonderPlugin {
         // --- L5: the roof -----------------------------------------------------------------------
         scene.world().showSection(util.select().layer(4), Direction.DOWN);
         scene.idle(15);
-        scene.overlay().showText(70)
+        scene.overlay()
+                .showText(70)
                 .text("Cap it with a second seven by seven roof.")
                 .placeNearTarget()
                 .attachKeyFrame()
@@ -125,16 +133,20 @@ public class ShrinePonderPlugin implements PonderPlugin {
         // --- L6: the crown ----------------------------------------------------------------------
         scene.world().showSection(util.select().layer(5), Direction.DOWN);
         scene.idle(15);
-        scene.overlay().showText(100)
+        scene.overlay()
+                .showText(100)
                 .colored(PonderPalette.BLUE)
-                .text("Crown it with crystals. This layer is NOT symmetrical - copy it exactly. The centre stays empty.")
+                .text(
+                        "Crown it with crystals. This layer is NOT symmetrical - copy it exactly. The centre stays empty.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(3, 5, 3));
         scene.idle(110);
 
-        scene.overlay().showText(90)
-                .text("Any rotation works. Leave water around the shrine and a clear column above it, or nothing will happen.")
+        scene.overlay()
+                .showText(90)
+                .text(
+                        "Any rotation works. Leave water around the shrine and a clear column above it, or nothing will happen.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(3, 5, 0));
@@ -144,11 +156,13 @@ public class ShrinePonderPlugin implements PonderPlugin {
         BlockPos conduit = util.grid().at(3, 2, 3);
         Vec3 conduitTop = util.vector().topOf(conduit);
         scene.addKeyframe();
-        scene.overlay().showControls(conduitTop, Pointing.DOWN, 60)
+        scene.overlay()
+                .showControls(conduitTop, Pointing.DOWN, 60)
                 .withItem(itemStack(JELLY))
                 .rightClick();
         scene.idle(10);
-        scene.overlay().showText(80)
+        scene.overlay()
+                .showText(80)
                 .colored(PonderPalette.INPUT)
                 .text("Use a Crowned Jelly on the Conduit.")
                 .placeNearTarget()
@@ -171,9 +185,11 @@ public class ShrinePonderPlugin implements PonderPlugin {
         scene.world().setBlock(conduit, altarState(), false);
         scene.idle(20);
 
-        scene.overlay().showText(120)
+        scene.overlay()
+                .showText(120)
                 .colored(PonderPalette.OUTPUT)
-                .text("The shrine floods, and a Stormcall Altar rises on a pyramid of Polished Azure Seastone where the Conduit stood.")
+                .text(
+                        "The shrine floods, and a Stormcall Altar rises on a pyramid of Polished Azure Seastone where the Conduit stood.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(conduit));

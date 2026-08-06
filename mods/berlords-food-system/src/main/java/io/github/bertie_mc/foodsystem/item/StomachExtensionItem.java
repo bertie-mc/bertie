@@ -2,6 +2,7 @@ package io.github.bertie_mc.foodsystem.item;
 
 import io.github.bertie_mc.foodsystem.Config;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -17,8 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-
-import java.util.List;
 
 /**
  * Potion that permanently grows the stomach by one slot, up to the configured maximum.
@@ -56,11 +55,19 @@ public class StomachExtensionItem extends Item {
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (!level.isClientSide() && entity instanceof Player player) {
             if (Stomach.addSlot(player)) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.8F, 1.2F);
-                player.displayClientMessage(Component.translatable(
-                        "item.berlordsfoodsystem.stomach_extension.grown",
-                        Stomach.unlockedSlots(player)), true);
+                level.playSound(
+                        null,
+                        player.getX(),
+                        player.getY(),
+                        player.getZ(),
+                        SoundEvents.PLAYER_LEVELUP,
+                        SoundSource.PLAYERS,
+                        0.8F,
+                        1.2F);
+                player.displayClientMessage(
+                        Component.translatable(
+                                "item.berlordsfoodsystem.stomach_extension.grown", Stomach.unlockedSlots(player)),
+                        true);
                 if (player instanceof ServerPlayer serverPlayer) {
                     Stomach.sync(serverPlayer);
                 }

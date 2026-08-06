@@ -35,12 +35,13 @@ public class ServerPlayerGameModeMixin {
 
     @Redirect(
             method = "destroyBlock",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/world/level/block/state/BlockState;canHarvestBlock(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Z"
-            )
-    )
-    private boolean bertietiers$authoritativeHarvestCheck(BlockState state, BlockGetter level, BlockPos pos, Player player) {
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/world/level/block/state/BlockState;canHarvestBlock(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;)Z"))
+    private boolean bertietiers$authoritativeHarvestCheck(
+            BlockState state, BlockGetter level, BlockPos pos, Player player) {
         // Run the original check first so mods that only hook it still see their callback, and so
         // an unlisted block gets exactly the answer it would have had without this mod.
         boolean original = state.canHarvestBlock(level, pos, player);

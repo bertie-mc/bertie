@@ -24,32 +24,27 @@ abstract class CommonModLoaderMixin {
 
     @WrapOperation(
             method = "begin(Ljava/lang/Runnable;Z)V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/fml/ModLoader;gatherAndInitializeMods("
-                            + "Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;"
-                            + "Ljava/lang/Runnable;)V"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/neoforged/fml/ModLoader;gatherAndInitializeMods("
+                                    + "Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;"
+                                    + "Ljava/lang/Runnable;)V"))
     private static void configmigrations$runRegistrationPhase(
-            Executor syncExecutor,
-            Executor parallelExecutor,
-            Runnable periodicTask,
-            Operation<Void> original) {
+            Executor syncExecutor, Executor parallelExecutor, Runnable periodicTask, Operation<Void> original) {
         MigrationRuntime.runNeoForgeRegistrationPhase(
                 () -> original.call(syncExecutor, parallelExecutor, periodicTask));
     }
 
     @WrapOperation(
             method = "lambda$begin$1()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/fml/config/ConfigTracker;loadConfigs("
-                            + "Lnet/neoforged/fml/config/ModConfig$Type;Ljava/nio/file/Path;)V"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/neoforged/fml/config/ConfigTracker;loadConfigs("
+                                    + "Lnet/neoforged/fml/config/ModConfig$Type;Ljava/nio/file/Path;)V"))
     private static void configmigrations$runClientOrCommonLoad(
-            ConfigTracker tracker,
-            ModConfig.Type type,
-            Path basePath,
-            Operation<Void> original) {
-        MigrationRuntime.runNeoForgeLoadPhase(
-                type, () -> original.call(tracker, type, basePath));
+            ConfigTracker tracker, ModConfig.Type type, Path basePath, Operation<Void> original) {
+        MigrationRuntime.runNeoForgeLoadPhase(type, () -> original.call(tracker, type, basePath));
     }
 }

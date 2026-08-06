@@ -11,6 +11,9 @@ gson = "2.14.0"
 asm = "9.8"
 lwjgl = "3.3.3"
 shadow = "9.2.2"
+spotless = "8.9.0"
+palantir-java-format = "2.92.0"
+ktlint = "1.8.0"
 arboard = "1.1.3"
 native-utils = "1.0.0"
 night-config = "3.8.3"
@@ -32,6 +35,7 @@ mockito = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
 shadow-gradle-plugin = { module = "com.gradleup.shadow:shadow-gradle-plugin", version.ref = "shadow" }
+spotless-gradle-plugin = { module = "com.diffplug.spotless:com.diffplug.spotless.gradle.plugin", version.ref = "spotless" }
 arboard = { module = "io.github.imurx:arboard", version.ref = "arboard" }
 native-utils = { module = "com.github.ramanrajarathinam:native-utils", version.ref = "native-utils" }
 night-config-toml = { module = "com.electronwill.night-config:toml", version.ref = "night-config" }

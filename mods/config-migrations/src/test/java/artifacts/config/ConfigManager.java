@@ -49,7 +49,8 @@ public final class ConfigManager implements AutoCloseable {
         enabledWhenConsumed = config.get(List.of("settings", "enabled"));
         countWhenConsumed = config.<Number>get(List.of("settings", "count")).intValue();
         try {
-            stateWhenConsumed = Files.exists(statePath) ? Files.readString(statePath).strip() : null;
+            stateWhenConsumed =
+                    Files.exists(statePath) ? Files.readString(statePath).strip() : null;
         } catch (IOException exception) {
             throw new UncheckedIOException(exception);
         }

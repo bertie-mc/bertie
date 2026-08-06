@@ -29,8 +29,7 @@ class GridMenuTest {
     void serverCraftingGridMenuContainsMatrixResultAndPlayerSlots(MinecraftServer server) {
         Inventory inventory = serverInventory();
 
-        PCraftingGridContainerMenu menu =
-                new PCraftingGridContainerMenu(1, inventory, mock(CraftingGrid.class));
+        PCraftingGridContainerMenu menu = new PCraftingGridContainerMenu(1, inventory, mock(CraftingGrid.class));
 
         assertEquals(46, menu.slots.size());
     }

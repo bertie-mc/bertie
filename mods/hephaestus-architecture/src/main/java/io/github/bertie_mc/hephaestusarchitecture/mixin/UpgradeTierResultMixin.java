@@ -14,9 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class UpgradeTierResultMixin {
 
     @Inject(method = "executeLevelEffect", at = @At("TAIL"), remap = false)
-    private void hephaestusarchitecture$validateUpgradedLayout(Level level,
-                                                               BlockPos pos,
-                                                               CallbackInfo ci) {
+    private void hephaestusarchitecture$validateUpgradedLayout(Level level, BlockPos pos, CallbackInfo ci) {
         BlockState state = level.getBlockState(pos);
         if (state.getBlock() instanceof HephaestusForgeBlock forgeBlock) {
             forgeBlock.updateState(state, level, pos);

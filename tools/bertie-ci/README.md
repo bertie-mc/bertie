@@ -29,7 +29,7 @@ nix flake check
 Nix supplies JDK 21, Gradle, packwiz, Sway, Mesa, and Python.
 
 Native Windows can use an installed Python package plus JDK 21 and Gradle; see the
-[Windows guide](docs/windows.md).
+[Windows guide](../../docs/windows.md).
 
 ## Descriptors and discovery
 

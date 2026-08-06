@@ -16,10 +16,7 @@ public class ConfigFile extends AbstractConfig<ConfigFile> {
         this(versionProvider, versionProvider.getNamespace(), category);
     }
 
-    public ConfigFile(
-            Version.ModVersionProvider versionProvider,
-            String basePath,
-            String category) {
+    public ConfigFile(Version.ModVersionProvider versionProvider, String basePath, String category) {
         super(versionProvider, basePath, category);
         File directory = FMLPaths.CONFIGDIR.get().resolve(basePath).toFile();
         path = new File(directory, category + ".json");

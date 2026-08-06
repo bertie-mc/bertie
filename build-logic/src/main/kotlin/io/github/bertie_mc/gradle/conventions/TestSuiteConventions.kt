@@ -54,22 +54,25 @@ internal fun Project.createTestCarrier(
 
     val subject = extensions.getByType<TestSubject>()
     val carrierId = "${subject.id}_$modIdSuffix"
-    val platform = extensions.getByType<VersionCatalogsExtension>()
-        .named("libs")
-        .platformVersions()
-    val metadata = tasks.register<GenerateSuiteModMetadata>(
-        "generate${sourceSetName.replaceFirstChar(Char::uppercaseChar)}Metadata",
-    ) {
-        modId.set(carrierId)
-        this.displayName.set(displayName)
-        this.descriptionText.set(descriptionText)
-        license.set(subject.license)
-        minecraftVersionRange.set(platform.minecraftVersionRange)
-        neoForgeVersionRange.set(platform.neoForgeVersionRange)
-        javaFmlLoaderVersionRange.set(platform.javaFmlLoaderVersionRange)
-        subject.testedModId?.let(testedModId::set)
-        outputDirectory.set(layout.buildDirectory.dir("generated/$sourceSetName/metadata"))
-    }
+    val platform =
+        extensions
+            .getByType<VersionCatalogsExtension>()
+            .named("libs")
+            .platformVersions()
+    val metadata =
+        tasks.register<GenerateSuiteModMetadata>(
+            "generate${sourceSetName.replaceFirstChar(Char::uppercaseChar)}Metadata",
+        ) {
+            modId.set(carrierId)
+            this.displayName.set(displayName)
+            this.descriptionText.set(descriptionText)
+            license.set(subject.license)
+            minecraftVersionRange.set(platform.minecraftVersionRange)
+            neoForgeVersionRange.set(platform.neoForgeVersionRange)
+            javaFmlLoaderVersionRange.set(platform.javaFmlLoaderVersionRange)
+            subject.testedModId?.let(testedModId::set)
+            outputDirectory.set(layout.buildDirectory.dir("generated/$sourceSetName/metadata"))
+        }
     sourceSet.resources.srcDir(metadata)
 
     return TestCarrier(sourceSet, carrierId, subject)
@@ -80,9 +83,11 @@ internal fun Project.registerTestCarrier(
     carrier: TestCarrier,
 ): Set<ModModel> {
     neoForge.addModdingDependenciesTo(carrier.sourceSet)
-    val carrierMod = neoForge.mods.register(carrier.modId) {
-        sourceSet(carrier.sourceSet)
-    }.get()
+    val carrierMod =
+        neoForge.mods
+            .register(carrier.modId) {
+                sourceSet(carrier.sourceSet)
+            }.get()
     return buildSet {
         carrier.subject.testedModId?.let { add(neoForge.mods.getByName(it)) }
         add(carrierMod)
@@ -108,9 +113,11 @@ private fun validateTestReport(report: File) {
 
     val document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(report)
     val testCases = document.getElementsByTagName("testcase").length
-    val declaredTests = document.documentElement.getAttribute("tests")
-        .takeIf(String::isNotBlank)
-        ?.toIntOrNull()
+    val declaredTests =
+        document.documentElement
+            .getAttribute("tests")
+            .takeIf(String::isNotBlank)
+            ?.toIntOrNull()
     require((declaredTests ?: testCases) > 0) {
         "Test report ${report.absolutePath} contains no tests"
     }

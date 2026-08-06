@@ -45,9 +45,8 @@ public class EnderEyes {
      * definition lives in {@code data/endereyes/enchantment/ender_eyes.json}; this key
      * is only used to look the registered holder back up at runtime.
      */
-    public static final ResourceKey<Enchantment> ENDER_EYES_KEY = ResourceKey.create(
-            Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath(MOD_ID, "ender_eyes"));
+    public static final ResourceKey<Enchantment> ENDER_EYES_KEY =
+            ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.fromNamespaceAndPath(MOD_ID, "ender_eyes"));
 
     public EnderEyes(IEventBus modBus) {
         // Register the anger-suppression handler on the NeoForge game event bus.
@@ -78,9 +77,8 @@ public class EnderEyes {
             return false;
         }
 
-        Holder<Enchantment> enchantment = registries
-                .lookupOrThrow(Registries.ENCHANTMENT)
-                .getOrThrow(ENDER_EYES_KEY);
+        Holder<Enchantment> enchantment =
+                registries.lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ENDER_EYES_KEY);
         return EnchantmentHelper.getItemEnchantmentLevel(enchantment, helmet) > 0;
     }
 }

@@ -2,14 +2,6 @@ package io.github.bertie_mc.bertieprogression;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -17,6 +9,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
 /**
  * Drops content from every creative tab: single ids listed in the generated
@@ -68,9 +67,10 @@ public final class RemovedItems {
         Set<ResourceLocation> parsed = new HashSet<>();
         try (InputStream in = RemovedItems.class.getResourceAsStream(resource)) {
             if (in != null) {
-                List<String> raw = new Gson().fromJson(
-                        new InputStreamReader(in, StandardCharsets.UTF_8),
-                        new TypeToken<List<String>>() {}.getType());
+                List<String> raw = new Gson()
+                        .fromJson(
+                                new InputStreamReader(in, StandardCharsets.UTF_8),
+                                new TypeToken<List<String>>() {}.getType());
                 if (raw != null) {
                     for (String s : raw) {
                         ResourceLocation rl = ResourceLocation.tryParse(s);

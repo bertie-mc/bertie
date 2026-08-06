@@ -2,8 +2,7 @@ package me.shedaniel.autoconfig;
 
 /** Minimal AutoConfig API fixture used without a runtime Cloth Config dependency. */
 public interface ConfigData {
-    default void validatePostLoad() throws ValidationException {
-    }
+    default void validatePostLoad() throws ValidationException {}
 
     final class ValidationException extends Exception {
         public ValidationException(String message) {

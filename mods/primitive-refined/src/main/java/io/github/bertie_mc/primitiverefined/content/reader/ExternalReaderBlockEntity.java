@@ -1,11 +1,5 @@
 package io.github.bertie_mc.primitiverefined.content.reader;
 
-import java.util.List;
-import java.util.Objects;
-
-import io.github.bertie_mc.primitiverefined.PrStress;
-import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
-import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import com.refinedmods.refinedstorage.api.core.Action;
 import com.refinedmods.refinedstorage.api.network.Network;
 import com.refinedmods.refinedstorage.api.network.impl.node.externalstorage.ExternalStorageNetworkNode;
@@ -14,7 +8,11 @@ import com.refinedmods.refinedstorage.common.api.RefinedStorageApi;
 import com.refinedmods.refinedstorage.common.api.storage.PlayerActor;
 import com.refinedmods.refinedstorage.common.support.resource.ItemResource;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.PrStress;
+import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
+import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
+import java.util.List;
+import java.util.Objects;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -66,8 +64,7 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
 
     private final ExternalStorageWorkRate workRate = new ExternalStorageWorkRate();
 
-    private final PrNetworkNodeContainer node =
-            new PrNetworkNodeContainer(this, storageNode, "external_reader");
+    private final PrNetworkNodeContainer node = new PrNetworkNodeContainer(this, storageNode, "external_reader");
 
     /** Whether the provider has been resolved once. RS's flag, and RS's use for it. */
     private boolean initialized;
@@ -75,6 +72,7 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
     // --- Readout, computed on the server and shipped to the goggles --------------
     /** Slots in the target's item handler, or -1 if it has none on the face we touch. */
     private int targetSlots = -1;
+
     private int targetEmptySlots;
     /** Whether the network would take a resource it does not already hold. */
     private boolean networkAccepts;
@@ -153,7 +151,7 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
         return oldBlockState.hasProperty(ExternalReaderBlock.HORIZONTAL_FACING)
                 && newBlockState.hasProperty(ExternalReaderBlock.HORIZONTAL_FACING)
                 && oldBlockState.getValue(ExternalReaderBlock.HORIZONTAL_FACING)
-                != newBlockState.getValue(ExternalReaderBlock.HORIZONTAL_FACING);
+                        != newBlockState.getValue(ExternalReaderBlock.HORIZONTAL_FACING);
     }
 
     /**
@@ -229,8 +227,7 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
         Direction incomingDirection = facing.getOpposite();
 
         storageNode.initialize(new CompositeExternalStorageProvider(
-                RefinedStorageApi.INSTANCE.getExternalStorageProviderFactories()
-                        .stream()
+                RefinedStorageApi.INSTANCE.getExternalStorageProviderFactories().stream()
                         .map(factory -> factory.create(serverLevel, target, incomingDirection))
                         .filter(Objects::nonNull)
                         .toList()));
@@ -252,8 +249,7 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
             return;
         }
         Direction side = state.getValue(ExternalReaderBlock.HORIZONTAL_FACING).getOpposite();
-        IItemHandler handler = serverLevel.getCapability(
-                Capabilities.ItemHandler.BLOCK, targetPos(state), side);
+        IItemHandler handler = serverLevel.getCapability(Capabilities.ItemHandler.BLOCK, targetPos(state), side);
 
         int slots = handler == null ? -1 : handler.getSlots();
         int empty = 0;
@@ -292,9 +288,13 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
             return false;
         }
         try {
-            return network.getComponent(StorageNetworkComponent.class).insert(
-                    ItemResource.ofItemStack(new ItemStack(Items.STONE)), 1,
-                    Action.SIMULATE, new PlayerActor("goggles")) > 0;
+            return network.getComponent(StorageNetworkComponent.class)
+                            .insert(
+                                    ItemResource.ofItemStack(new ItemStack(Items.STONE)),
+                                    1,
+                                    Action.SIMULATE,
+                                    new PlayerActor("goggles"))
+                    > 0;
         } catch (RuntimeException e) {
             return false;
         }
@@ -327,18 +327,29 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
 
         BlockState targetState = level.getBlockState(targetPos(state));
 
-        tooltip.add(Component.literal(" ").append(
-                Component.literal("External Reader").withStyle(ChatFormatting.GRAY)));
-        line(tooltip, "reading", !targetState.isAir(),
-                targetState.isAir() ? "nothing in front" : targetState.getBlock().getName().getString());
-        line(tooltip, "item handler", targetSlots >= 0,
-                targetSlots < 0 ? "none on the face this touches"
+        tooltip.add(Component.literal(" ")
+                .append(Component.literal("External Reader").withStyle(ChatFormatting.GRAY)));
+        line(
+                tooltip,
+                "reading",
+                !targetState.isAir(),
+                targetState.isAir()
+                        ? "nothing in front"
+                        : targetState.getBlock().getName().getString());
+        line(
+                tooltip,
+                "item handler",
+                targetSlots >= 0,
+                targetSlots < 0
+                        ? "none on the face this touches"
                         : targetSlots + " slots, " + targetEmptySlots + " empty");
         line(tooltip, "turning", getSpeed() != 0, String.format("%.1f rpm", getSpeed()));
         line(tooltip, "not overstressed", !isOverStressed(), isOverStressed() ? "overstressed" : "ok");
-        line(tooltip, "would accept 1 stone", networkAccepts,
-                networkAccepts ? "yes - the storage is willing"
-                        : "no - nothing on this network will take it");
+        line(
+                tooltip,
+                "would accept 1 stone",
+                networkAccepts,
+                networkAccepts ? "yes - the storage is willing" : "no - nothing on this network will take it");
         return true;
     }
 
@@ -362,15 +373,13 @@ public class ExternalReaderBlockEntity extends KineticBlockEntity implements PrN
         targetEmptySlots = tag.getInt("TargetEmptySlots");
         networkAccepts = tag.getBoolean("NetworkAccepts");
         if (!clientPacket && tag.contains(TAG_TRACKED_RESOURCES)) {
-            trackedStorageRepository.fromTag(
-                    Objects.requireNonNull(tag.get(TAG_TRACKED_RESOURCES)), registries);
+            trackedStorageRepository.fromTag(Objects.requireNonNull(tag.get(TAG_TRACKED_RESOURCES)), registries);
         }
     }
 
     private static void line(List<Component> tooltip, String label, boolean ok, String detail) {
         tooltip.add(Component.literal("    ")
-                .append(Component.literal(ok ? "✔ " : "✘ ")
-                        .withStyle(ok ? ChatFormatting.GREEN : ChatFormatting.RED))
+                .append(Component.literal(ok ? "✔ " : "✘ ").withStyle(ok ? ChatFormatting.GREEN : ChatFormatting.RED))
                 .append(Component.literal(label + ": ").withStyle(ChatFormatting.GRAY))
                 .append(Component.literal(detail).withStyle(ChatFormatting.WHITE)));
     }

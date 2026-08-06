@@ -18,11 +18,7 @@ abstract class ModConfigSpecMixin {
     }
 
     @WrapMethod(method = "acceptConfig(Lnet/neoforged/fml/config/IConfigSpec$ILoadedConfig;)V")
-    private void configmigrations$accept(
-            IConfigSpec.ILoadedConfig loadedConfig, Operation<Void> original) {
-        MigrationRuntime.acceptNeoForge(
-                (IConfigSpec) (Object) this,
-                loadedConfig,
-                () -> original.call(loadedConfig));
+    private void configmigrations$accept(IConfigSpec.ILoadedConfig loadedConfig, Operation<Void> original) {
+        MigrationRuntime.acceptNeoForge((IConfigSpec) (Object) this, loadedConfig, () -> original.call(loadedConfig));
     }
 }

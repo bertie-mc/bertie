@@ -13,7 +13,9 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> ECHO_LOCK = BLOCKS.register(
             "echo_lock",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_CYAN).strength(3.0f).sound(SoundType.SCULK_SHRIEKER)));
+                    .mapColor(MapColor.COLOR_CYAN)
+                    .strength(3.0f)
+                    .sound(SoundType.SCULK_SHRIEKER)));
 
     private ModBlocks() {}
 }

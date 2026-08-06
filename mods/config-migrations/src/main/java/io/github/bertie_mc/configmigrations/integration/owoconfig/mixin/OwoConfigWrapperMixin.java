@@ -6,11 +6,11 @@ import blue.endless.jankson.api.SyntaxError;
 import io.github.bertie_mc.configmigrations.integration.MigrationRuntime;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
-import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
@@ -43,9 +43,11 @@ abstract class OwoConfigWrapperMixin {
 
     @Redirect(
             method = "load()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lblue/endless/jankson/Jankson;load(Ljava/lang/String;)Lblue/endless/jankson/JsonObject;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lblue/endless/jankson/Jankson;load(Ljava/lang/String;)Lblue/endless/jankson/JsonObject;"))
     private JsonObject configmigrations$merge(Jankson parser, String source) throws SyntaxError {
         JsonObject document = parser.load(source);
         return (JsonObject) MigrationRuntime.mergeOwoConfigDocument(name(), document);
@@ -53,11 +55,12 @@ abstract class OwoConfigWrapperMixin {
 
     @Inject(
             method = "load()V",
-            at = @At(
-                    value = "FIELD",
-                    target = "Lio/wispforest/owo/config/ConfigWrapper;loading:Z",
-                    opcode = Opcodes.PUTFIELD,
-                    ordinal = 1))
+            at =
+                    @At(
+                            value = "FIELD",
+                            target = "Lio/wispforest/owo/config/ConfigWrapper;loading:Z",
+                            opcode = Opcodes.PUTFIELD,
+                            ordinal = 1))
     private void configmigrations$markSuccessfulLoad(CallbackInfo callbackInfo) {
         configmigrations$loadSucceeded = true;
     }

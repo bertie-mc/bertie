@@ -11,9 +11,13 @@ class BertieSettingsPlugin : Plugin<Settings> {
         settings.pluginManager.apply("net.neoforged.moddev.repositories")
 
         val manifestFile = settings.layout.settingsDirectory.file(MINECRAFT_ARTIFACTS_PATH)
-        val manifest = parseMinecraftArtifacts(
-            settings.providers.fileContents(manifestFile).asText.get(),
-        )
+        val manifest =
+            parseMinecraftArtifacts(
+                settings.providers
+                    .fileContents(manifestFile)
+                    .asText
+                    .get(),
+            )
         settings.dependencyResolutionManagement.versionCatalogs.create("mods") {
             manifest.mods.forEach { artifact ->
                 val source = artifact.gradleSource

@@ -26,5 +26,4 @@ public class Config {
     public void fixtureDocument(TomlTable document) {
         this.document = document;
     }
-
 }

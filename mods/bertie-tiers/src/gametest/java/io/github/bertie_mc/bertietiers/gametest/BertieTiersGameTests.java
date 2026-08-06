@@ -1,5 +1,8 @@
 package io.github.bertie_mc.bertietiers.gametest;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import com.mojang.authlib.GameProfile;
 import io.github.bertie_mc.bertietiers.config.ConfigException;
 import io.github.bertie_mc.bertietiers.config.ConfigParser;
 import io.github.bertie_mc.bertietiers.config.ConfigValidator;
@@ -8,9 +11,6 @@ import io.github.bertie_mc.bertietiers.config.RawConfig;
 import io.github.bertie_mc.bertietiers.config.ValidatedConfig;
 import io.github.bertie_mc.bertietiers.logic.MiningAuthority;
 import io.github.bertie_mc.bertietiers.logic.RuntimeConfig;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.mojang.authlib.GameProfile;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.UUID;
@@ -59,10 +59,12 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 public final class BertieTiersGameTests {
     /** Resolved against the holder namespace: {@code data/bertietiers/structure/empty.nbt}. */
     private static final String TEMPLATE = "empty";
+
     private static final BlockPos ORE = new BlockPos(1, 2, 1);
 
     /** Flips the stand-in "another mod vetoes this block" listener on for one test. */
     private static volatile boolean vetoIronOre = false;
+
     private static final AtomicBoolean VETO_LISTENER_INSTALLED = new AtomicBoolean();
 
     private BertieTiersGameTests() {}
@@ -135,7 +137,10 @@ public final class BertieTiersGameTests {
     public static void exceptionDoesNotLeak(GameTestHelper helper) {
         withFixture(helper, () -> {
             mine(helper, Blocks.GOLD_ORE, new ItemStack(Items.STONE_PICKAXE));
-            assertDropped(helper, Items.RAW_GOLD, false,
+            assertDropped(
+                    helper,
+                    Items.RAW_GOLD,
+                    false,
                     "the diamond-ore exception must not also unlock gold ore in the same tier");
         });
     }
@@ -207,7 +212,10 @@ public final class BertieTiersGameTests {
         withFixture(helper, () -> {
             ItemStack pickaxe = new ItemStack(Items.STONE_PICKAXE);
             pickaxe.enchant(
-                    helper.getLevel().registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH),
+                    helper.getLevel()
+                            .registryAccess()
+                            .lookupOrThrow(Registries.ENCHANTMENT)
+                            .getOrThrow(Enchantments.SILK_TOUCH),
                     1);
             mine(helper, Blocks.IRON_ORE, pickaxe);
             assertDropped(helper, Items.IRON_ORE, true, "Silk Touch should still yield the ore block itself");
@@ -331,7 +339,8 @@ public final class BertieTiersGameTests {
     private static void install(String json) {
         JsonElement root = JsonParser.parseString(json);
         RawConfig raw = ConfigParser.parse(root);
-        ValidatedConfig validated = ConfigValidator.validate(raw, LiveRegistryProbe.INSTANCE).config();
+        ValidatedConfig validated =
+                ConfigValidator.validate(raw, LiveRegistryProbe.INSTANCE).config();
         MiningAuthority.install(new RuntimeConfig(validated));
     }
 
@@ -360,9 +369,11 @@ public final class BertieTiersGameTests {
     }
 
     private static FakePlayer miner(ServerLevel level) {
-        FakePlayer player = FakePlayerFactory.get(level, new GameProfile(
-                UUID.nameUUIDFromBytes("bertietiers_gametest".getBytes(StandardCharsets.UTF_8)),
-                "bertietiers_gametest"));
+        FakePlayer player = FakePlayerFactory.get(
+                level,
+                new GameProfile(
+                        UUID.nameUUIDFromBytes("bertietiers_gametest".getBytes(StandardCharsets.UTF_8)),
+                        "bertietiers_gametest"));
         player.getInventory().clearContent();
         return player;
     }

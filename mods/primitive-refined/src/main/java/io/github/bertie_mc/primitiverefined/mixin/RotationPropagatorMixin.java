@@ -1,20 +1,18 @@
 package io.github.bertie_mc.primitiverefined.mixin;
 
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-import io.github.bertie_mc.primitiverefined.content.controller.PControllerBlock;
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.IRotate;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import io.github.bertie_mc.primitiverefined.content.controller.PControllerBlock;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Lets a large cogwheel drive the Primitive Controller sitting under it.
@@ -64,8 +62,7 @@ public class RotationPropagatorMixin {
         }
 
         Direction.Axis cogAxis = cog.getRotationAxis(cogState);
-        if (cogAxis.isVertical()
-                || cogAxis == controllerState.getValue(PControllerBlock.HORIZONTAL_AXIS)) {
+        if (cogAxis.isVertical() || cogAxis == controllerState.getValue(PControllerBlock.HORIZONTAL_AXIS)) {
             return;
         }
 

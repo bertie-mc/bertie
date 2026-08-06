@@ -1,8 +1,8 @@
 package io.github.bertie_mc.bertieprogression.fan;
 
-import io.github.bertie_mc.bertieprogression.BertieProgression;
 import com.simibubi.create.api.registry.CreateRegistries;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
+import io.github.bertie_mc.bertieprogression.BertieProgression;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -15,6 +15,5 @@ public final class ModFanProcessing {
     public static final DeferredHolder<FanProcessingType, OminousFanProcessingType> OMINOUS =
             TYPES.register("ominous", OminousFanProcessingType::new);
 
-    private ModFanProcessing() {
-    }
+    private ModFanProcessing() {}
 }

@@ -15,10 +15,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ItemStackDurabilityMixin {
 
     @Inject(
-            method = "hurtAndBreak(ILnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/EquipmentSlot;)V",
+            method =
+                    "hurtAndBreak(ILnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/EquipmentSlot;)V",
             at = @At("HEAD"),
-            cancellable = true
-    )
+            cancellable = true)
     private void bfs$saveDurability(int amount, LivingEntity entity, EquipmentSlot slot, CallbackInfo ci) {
         if (!(entity instanceof Player player) || player.level().isClientSide()) return;
         if (slot != EquipmentSlot.MAINHAND && slot != EquipmentSlot.OFFHAND) return;

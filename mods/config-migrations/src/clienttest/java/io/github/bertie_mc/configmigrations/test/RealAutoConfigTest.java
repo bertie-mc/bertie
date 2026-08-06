@@ -14,8 +14,7 @@ public final class RealAutoConfigTest {
 
     private static ConfigHolder<TestConfig> holder;
 
-    private RealAutoConfigTest() {
-    }
+    private RealAutoConfigTest() {}
 
     public static void register() {
         holder = AutoConfig.register(TestConfig.class, GsonConfigSerializer::new);
@@ -24,8 +23,7 @@ public final class RealAutoConfigTest {
     public static void assertMigrated() {
         int actual = holder.getConfig().migratedValue;
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "AutoConfig migration did not reach the live config: " + actual);
+            throw new IllegalStateException("AutoConfig migration did not reach the live config: " + actual);
         }
     }
 

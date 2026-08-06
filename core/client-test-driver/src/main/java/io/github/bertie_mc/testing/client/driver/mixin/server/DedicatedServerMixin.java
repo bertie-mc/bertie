@@ -16,19 +16,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 abstract class DedicatedServerMixin {
     @Inject(
             method = "initServer",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/server/dedicated/DedicatedServer;loadLevel()V"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/server/dedicated/DedicatedServer;loadLevel()V"))
     private void bertie$captureReadyServer(CallbackInfoReturnable<Boolean> callback) {
         InProcessDedicatedServer.onServerReadyToLoad((DedicatedServer) (Object) this);
     }
 
-    @Redirect(
-            method = "initServer",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Ljava/lang/Thread;start()V",
-                    ordinal = 0))
+    @Redirect(method = "initServer", at = @At(value = "INVOKE", target = "Ljava/lang/Thread;start()V", ordinal = 0))
     private void bertie$doNotStartConsoleHandler(Thread thread) {
         if (!InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             thread.start();
@@ -37,9 +30,11 @@ abstract class DedicatedServerMixin {
 
     @Redirect(
             method = "stopServer",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/bus/api/IEventBus;post(Lnet/neoforged/bus/api/Event;)Lnet/neoforged/bus/api/Event;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/neoforged/bus/api/IEventBus;post(Lnet/neoforged/bus/api/Event;)Lnet/neoforged/bus/api/Event;"))
     private Event bertie$doNotPostPhysicalShutdown(IEventBus eventBus, Event event) {
         if (InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             return event;
@@ -47,11 +42,7 @@ abstract class DedicatedServerMixin {
         return eventBus.post(event);
     }
 
-    @Redirect(
-            method = "stopServer",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/Util;shutdownExecutors()V"))
+    @Redirect(method = "stopServer", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;shutdownExecutors()V"))
     private void bertie$doNotStopClientExecutors() {
         if (!InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             Util.shutdownExecutors();

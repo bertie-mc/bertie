@@ -9,6 +9,7 @@ dependencies {
     implementation(libs.night.config.toml)
     implementation(libs.gson)
     implementation(libs.shadow.gradle.plugin)
+    implementation(libs.spotless.gradle.plugin)
     testImplementation(platform(libs.junit.bom))
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly(libs.junit.launcher)
@@ -92,15 +93,17 @@ dependencyLocking {
     lockAllConfigurations()
 }
 
-val resolveDependencies = tasks.register("resolveDependencies") {
-    group = "build setup"
-    description = "Resolves dependencies used by the included build"
-}
+val resolveDependencies =
+    tasks.register("resolveDependencies") {
+        group = "build setup"
+        description = "Resolves dependencies used by the included build"
+    }
 
-val resolveAndLockAll = tasks.register("resolveAndLockAll") {
-    group = "build setup"
-    description = "Resolves every relevant dependency configuration and writes its lock state"
-}
+val resolveAndLockAll =
+    tasks.register("resolveAndLockAll") {
+        group = "build setup"
+        description = "Resolves every relevant dependency configuration and writes its lock state"
+    }
 
 listOf(
     "compileClasspath",
@@ -116,12 +119,15 @@ listOf(
 ).forEach { configurationName ->
     configurations.named(configurationName) {
         val resolvedArtifacts = incoming.artifacts.resolvedArtifacts
-        val externalArtifacts = providers.provider {
-            resolvedArtifacts.get().asSequence()
-                .filter { it.id.componentIdentifier is ModuleComponentIdentifier }
-                .map { it.file }
-                .toList()
-        }
+        val externalArtifacts =
+            providers.provider {
+                resolvedArtifacts
+                    .get()
+                    .asSequence()
+                    .filter { it.id.componentIdentifier is ModuleComponentIdentifier }
+                    .map { it.file }
+                    .toList()
+            }
         resolveDependencies.configure { inputs.files(externalArtifacts) }
         resolveAndLockAll.configure { inputs.files(externalArtifacts) }
     }

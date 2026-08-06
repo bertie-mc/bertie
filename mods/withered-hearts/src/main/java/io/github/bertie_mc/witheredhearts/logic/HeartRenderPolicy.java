@@ -3,8 +3,7 @@ package io.github.bertie_mc.witheredhearts.logic;
 /** Dependency-free Wither damage and per-heart rendering policy. */
 public final class HeartRenderPolicy {
 
-    private HeartRenderPolicy() {
-    }
+    private HeartRenderPolicy() {}
 
     public static int remainingHalfHearts(int durationTicks, int amplifier) {
         int damageInterval = Math.max(40 >> amplifier, 10);
@@ -19,6 +18,5 @@ public final class HeartRenderPolicy {
         return new Draw(true, remainingHalfHearts - consumed);
     }
 
-    public record Draw(boolean withered, int remainingHalfHearts) {
-    }
+    public record Draw(boolean withered, int remainingHalfHearts) {}
 }

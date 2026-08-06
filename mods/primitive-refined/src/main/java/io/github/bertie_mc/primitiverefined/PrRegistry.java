@@ -8,12 +8,11 @@ import io.github.bertie_mc.primitiverefined.content.gearbox.ArcaneticGearboxBloc
 import io.github.bertie_mc.primitiverefined.content.gearbox.VerticalArcaneticGearboxItem;
 import io.github.bertie_mc.primitiverefined.content.grid.PCraftingGridBlockEntity;
 import io.github.bertie_mc.primitiverefined.content.grid.PGridBlock;
+import io.github.bertie_mc.primitiverefined.content.grid.PGridBlockEntity;
 import io.github.bertie_mc.primitiverefined.content.reader.ExternalReaderBlock;
 import io.github.bertie_mc.primitiverefined.content.reader.ExternalReaderBlockEntity;
-import io.github.bertie_mc.primitiverefined.content.grid.PGridBlockEntity;
 import io.github.bertie_mc.primitiverefined.content.shaft.SoulstainedShaftBlock;
 import io.github.bertie_mc.primitiverefined.network.ArcaneticRelayBlockEntity;
-
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -32,13 +31,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class PrRegistry {
 
-    private PrRegistry() {
-    }
+    private PrRegistry() {}
 
-    public static final DeferredRegister.Blocks BLOCKS =
-            DeferredRegister.createBlocks(PrimitiveRefined.MOD_ID);
-    public static final DeferredRegister.Items ITEMS =
-            DeferredRegister.createItems(PrimitiveRefined.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(PrimitiveRefined.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PrimitiveRefined.MOD_ID);
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, PrimitiveRefined.MOD_ID);
     public static final DeferredRegister<CreativeModeTab> TABS =
@@ -46,7 +42,8 @@ public final class PrRegistry {
 
     // --- Blocks -----------------------------------------------------------------
 
-    public static final DeferredBlock<PControllerBlock> P_CONTROLLER = BLOCKS.register("p_controller",
+    public static final DeferredBlock<PControllerBlock> P_CONTROLLER = BLOCKS.register(
+            "p_controller",
             () -> new PControllerBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PODZOL)
                     .sound(SoundType.WOOD)
@@ -55,26 +52,28 @@ public final class PrRegistry {
                     // this can never be treated as a full cube for lighting or culling.
                     .noOcclusion()));
 
-    public static final DeferredBlock<SoulstainedShaftBlock> SOULSTAINED_SHAFT = BLOCKS.register("soulstained_shaft",
+    public static final DeferredBlock<SoulstainedShaftBlock> SOULSTAINED_SHAFT = BLOCKS.register(
+            "soulstained_shaft",
             () -> new SoulstainedShaftBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_PURPLE)
                     .sound(SoundType.METAL)
                     .strength(0.5F)
                     .noOcclusion()));
 
-    public static final DeferredBlock<PGridBlock> P_GRID = BLOCKS.register("p_grid",
-            () -> new PGridBlock(gridProperties(), PrStress.GRID, () -> PrRegistry.P_GRID_BE.get()));
+    public static final DeferredBlock<PGridBlock> P_GRID = BLOCKS.register(
+            "p_grid", () -> new PGridBlock(gridProperties(), PrStress.GRID, () -> PrRegistry.P_GRID_BE.get()));
 
-    public static final DeferredBlock<PGridBlock> P_CRAFTING_GRID = BLOCKS.register("p_crafting_grid",
+    public static final DeferredBlock<PGridBlock> P_CRAFTING_GRID = BLOCKS.register(
+            "p_crafting_grid",
             () -> new PGridBlock(gridProperties(), PrStress.CRAFTING_GRID, () -> PrRegistry.P_CRAFTING_GRID_BE.get()));
-
 
     /**
      * The External Reader. {@code noOcclusion} for the same reason the grids have it: its
      * shaft is a Flywheel instance, and an instance is lit from the light at the block's
      * own position, which an occluding block leaves at zero.
      */
-    public static final DeferredBlock<ExternalReaderBlock> EXTERNAL_READER = BLOCKS.register("external_reader",
+    public static final DeferredBlock<ExternalReaderBlock> EXTERNAL_READER = BLOCKS.register(
+            "external_reader",
             () -> new ExternalReaderBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PODZOL)
                     .sound(SoundType.WOOD)
@@ -82,13 +81,13 @@ public final class PrRegistry {
                     .strength(2.0F)));
 
     /** Create's gearbox in our materials. Not a full cube - the core is inset. */
-    public static final DeferredBlock<ArcaneticGearboxBlock> ARCANETIC_GEARBOX =
-            BLOCKS.register("arcanetic_gearbox", () -> new ArcaneticGearboxBlock(
-                    BlockBehaviour.Properties.of()
-                            .mapColor(MapColor.PODZOL)
-                            .sound(SoundType.WOOD)
-                            .noOcclusion()
-                            .strength(2.0F)));
+    public static final DeferredBlock<ArcaneticGearboxBlock> ARCANETIC_GEARBOX = BLOCKS.register(
+            "arcanetic_gearbox",
+            () -> new ArcaneticGearboxBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PODZOL)
+                    .sound(SoundType.WOOD)
+                    .noOcclusion()
+                    .strength(2.0F)));
 
     private static BlockBehaviour.Properties gridProperties() {
         return BlockBehaviour.Properties.of()
@@ -114,8 +113,7 @@ public final class PrRegistry {
     public static final DeferredItem<BlockItem> SOULSTAINED_SHAFT_ITEM =
             ITEMS.registerSimpleBlockItem("soulstained_shaft", SOULSTAINED_SHAFT);
 
-    public static final DeferredItem<BlockItem> P_GRID_ITEM =
-            ITEMS.registerSimpleBlockItem("p_grid", P_GRID);
+    public static final DeferredItem<BlockItem> P_GRID_ITEM = ITEMS.registerSimpleBlockItem("p_grid", P_GRID);
 
     public static final DeferredItem<BlockItem> P_CRAFTING_GRID_ITEM =
             ITEMS.registerSimpleBlockItem("p_crafting_grid", P_CRAFTING_GRID);
@@ -130,19 +128,21 @@ public final class PrRegistry {
      * The same block, placed on a horizontal axis. One block, two items - which is how
      * Create ships its own vertical gearbox, and why this needs no second block entity.
      */
-    public static final DeferredItem<VerticalArcaneticGearboxItem> ARCANETIC_GEARBOX_VERTICAL_ITEM =
-            ITEMS.register("arcanetic_gearbox_vertical",
-                    () -> new VerticalArcaneticGearboxItem(ARCANETIC_GEARBOX.get(),
-                            new net.minecraft.world.item.Item.Properties()));
-
+    public static final DeferredItem<VerticalArcaneticGearboxItem> ARCANETIC_GEARBOX_VERTICAL_ITEM = ITEMS.register(
+            "arcanetic_gearbox_vertical",
+            () -> new VerticalArcaneticGearboxItem(
+                    ARCANETIC_GEARBOX.get(), new net.minecraft.world.item.Item.Properties()));
 
     // --- Block entities ---------------------------------------------------------
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PControllerBlockEntity>> P_CONTROLLER_BE =
-            BLOCK_ENTITIES.register("p_controller", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new PControllerBlockEntity(PrRegistry.P_CONTROLLER_BE.get(), pos, state),
-                            P_CONTROLLER.get())
-                    .build(null));
+            BLOCK_ENTITIES.register(
+                    "p_controller",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) ->
+                                            new PControllerBlockEntity(PrRegistry.P_CONTROLLER_BE.get(), pos, state),
+                                    P_CONTROLLER.get())
+                            .build(null));
 
     /**
      * Create's own shaft uses {@code BracketedKineticBlockEntity}, and
@@ -151,39 +151,55 @@ public final class PrRegistry {
      * {@link ArcaneticRelayBlockEntity} extends that class rather than replacing it, so the
      * shaft stays behaviourally identical and gains a network node.
      */
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ArcaneticRelayBlockEntity>> SOULSTAINED_SHAFT_BE =
-            BLOCK_ENTITIES.register("soulstained_shaft", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new ArcaneticRelayBlockEntity(PrRegistry.SOULSTAINED_SHAFT_BE.get(), pos, state),
-                            SOULSTAINED_SHAFT.get())
-                    .build(null));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ArcaneticRelayBlockEntity>>
+            SOULSTAINED_SHAFT_BE = BLOCK_ENTITIES.register(
+                    "soulstained_shaft",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) -> new ArcaneticRelayBlockEntity(
+                                            PrRegistry.SOULSTAINED_SHAFT_BE.get(), pos, state),
+                                    SOULSTAINED_SHAFT.get())
+                            .build(null));
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PGridBlockEntity>> P_GRID_BE =
-            BLOCK_ENTITIES.register("p_grid", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new PGridBlockEntity(PrRegistry.P_GRID_BE.get(), pos, state), P_GRID.get())
-                    .build(null));
+            BLOCK_ENTITIES.register(
+                    "p_grid",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) -> new PGridBlockEntity(PrRegistry.P_GRID_BE.get(), pos, state),
+                                    P_GRID.get())
+                            .build(null));
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PCraftingGridBlockEntity>> P_CRAFTING_GRID_BE =
-            BLOCK_ENTITIES.register("p_crafting_grid", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new PCraftingGridBlockEntity(PrRegistry.P_CRAFTING_GRID_BE.get(), pos, state),
-                            P_CRAFTING_GRID.get())
-                    .build(null));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PCraftingGridBlockEntity>>
+            P_CRAFTING_GRID_BE = BLOCK_ENTITIES.register(
+                    "p_crafting_grid",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) -> new PCraftingGridBlockEntity(
+                                            PrRegistry.P_CRAFTING_GRID_BE.get(), pos, state),
+                                    P_CRAFTING_GRID.get())
+                            .build(null));
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ExternalReaderBlockEntity>> EXTERNAL_READER_BE =
-            BLOCK_ENTITIES.register("external_reader", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new ExternalReaderBlockEntity(PrRegistry.EXTERNAL_READER_BE.get(), pos, state),
-                            EXTERNAL_READER.get())
-                    .build(null));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ExternalReaderBlockEntity>>
+            EXTERNAL_READER_BE = BLOCK_ENTITIES.register(
+                    "external_reader",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) -> new ExternalReaderBlockEntity(
+                                            PrRegistry.EXTERNAL_READER_BE.get(), pos, state),
+                                    EXTERNAL_READER.get())
+                            .build(null));
 
     /** Create's own GearboxBlockEntity, extended with a network node. */
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ArcaneticGearboxBlockEntity>> ARCANETIC_GEARBOX_BE =
-            BLOCK_ENTITIES.register("arcanetic_gearbox", () -> BlockEntityType.Builder
-                    .of((pos, state) -> new ArcaneticGearboxBlockEntity(PrRegistry.ARCANETIC_GEARBOX_BE.get(), pos, state),
-                            ARCANETIC_GEARBOX.get())
-                    .build(null));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ArcaneticGearboxBlockEntity>>
+            ARCANETIC_GEARBOX_BE = BLOCK_ENTITIES.register(
+                    "arcanetic_gearbox",
+                    () -> BlockEntityType.Builder.of(
+                                    (pos, state) -> new ArcaneticGearboxBlockEntity(
+                                            PrRegistry.ARCANETIC_GEARBOX_BE.get(), pos, state),
+                                    ARCANETIC_GEARBOX.get())
+                            .build(null));
 
     // --- Creative tab -----------------------------------------------------------
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("main",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register(
+            "main",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.primitiverefined"))
                     .icon(() -> new ItemStack(P_CONTROLLER_ITEM.get()))
@@ -213,6 +229,6 @@ public final class PrRegistry {
 
     /** Convenience for anything that wants the block list without touching the holders. */
     public static Block[] allBlocks() {
-        return new Block[] { P_CONTROLLER.get(), SOULSTAINED_SHAFT.get() };
+        return new Block[] {P_CONTROLLER.get(), SOULSTAINED_SHAFT.get()};
     }
 }

@@ -35,9 +35,7 @@ public record MigrationManifest(Path source, UnmodifiableConfig settings, List<C
 
     public static MigrationManifest load(Path path) {
         try {
-            CommentedConfig root = TomlFormat.instance()
-                    .createParser()
-                    .parse(path, FileNotFoundAction.THROW_ERROR);
+            CommentedConfig root = TomlFormat.instance().createParser().parse(path, FileNotFoundAction.THROW_ERROR);
             List<Change> changes = new ArrayList<>();
             int previousVersion = 0;
             for (UnmodifiableConfig entry : tables(root, "changes")) {
@@ -92,6 +90,5 @@ public record MigrationManifest(Path source, UnmodifiableConfig settings, List<C
         return ((Number) config.getRaw(key)).intValue();
     }
 
-    public record Change(int version, UnmodifiableConfig fragment) {
-    }
+    public record Change(int version, UnmodifiableConfig fragment) {}
 }

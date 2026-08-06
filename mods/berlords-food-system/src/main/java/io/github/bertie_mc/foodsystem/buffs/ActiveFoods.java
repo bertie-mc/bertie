@@ -2,10 +2,9 @@ package io.github.bertie_mc.foodsystem.buffs;
 
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
 import io.github.bertie_mc.foodsystem.stomach.StomachData;
-import net.minecraft.world.entity.player.Player;
-
 import java.util.ArrayList;
 import java.util.List;
+import net.minecraft.world.entity.player.Player;
 
 /** Buffs granted by foods currently active in the player's stomach. Both logical sides. */
 public final class ActiveFoods {

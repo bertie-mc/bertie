@@ -9,14 +9,13 @@ import com.yanny.ali.api.IOperation;
 import com.yanny.ali.api.IPlugin;
 import com.yanny.ali.api.IServerRegistry;
 import com.yanny.ali.plugin.common.nodes.ItemNode;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.neoforged.fml.ModList;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Publishes Malum's <b>soul-reaping</b> drops onto Advanced Loot Info's mob-drop pages.
@@ -88,8 +87,7 @@ public class MalumReapingAliPlugin implements IPlugin {
     }
 
     /** Adds one reaping drop to every entity of a given type. */
-    private record ReapingModifier(EntityType<?> type, List<IOperation> operations)
-            implements ILootModifier<Entity> {
+    private record ReapingModifier(EntityType<?> type, List<IOperation> operations) implements ILootModifier<Entity> {
 
         @Override
         public boolean predicate(Entity entity) {

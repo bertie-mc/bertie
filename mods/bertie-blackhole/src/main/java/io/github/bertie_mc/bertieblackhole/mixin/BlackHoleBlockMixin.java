@@ -1,10 +1,10 @@
 package io.github.bertie_mc.bertieblackhole.mixin;
 
+import com.stal111.forbidden_arcanus.common.block.BlackHoleBlock;
 import io.github.bertie_mc.bertieblackhole.StatefulBlackHole;
 import io.github.bertie_mc.bertieblackhole.client.BbhParticles;
 import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
 import io.github.bertie_mc.bertieblackhole.config.LevelDef;
-import com.stal111.forbidden_arcanus.common.block.BlackHoleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;

@@ -22,12 +22,14 @@ final class ClientTestResultsTest {
     @Test
     void writesParseableJUnitXmlForPassesAndFailures() throws Exception {
         Path report = temporaryDirectory.resolve("TEST-clienttest.xml");
-        ClientTestResults.write(report, List.of(
-                TestResult.passed("example.Passing.test", Duration.ofMillis(25)),
-                TestResult.failed(
-                        "example.Failing.test",
-                        Duration.ofMillis(50),
-                        new AssertionError("expected <left> & \"right\""))));
+        ClientTestResults.write(
+                report,
+                List.of(
+                        TestResult.passed("example.Passing.test", Duration.ofMillis(25)),
+                        TestResult.failed(
+                                "example.Failing.test",
+                                Duration.ofMillis(50),
+                                new AssertionError("expected <left> & \"right\""))));
 
         var document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(report.toFile());
         Element suite = document.getDocumentElement();
@@ -39,15 +41,12 @@ final class ClientTestResultsTest {
 
     @Test
     void matchesTheDescriptorStoredByNeoForgeAnnotationScanning() throws Exception {
-        Method method = ClientTestResultsTest.class.getDeclaredMethod(
-                "exampleClientTest", ClientTestContext.class);
+        Method method = ClientTestResultsTest.class.getDeclaredMethod("exampleClientTest", ClientTestContext.class);
 
         assertTrue(ClientTestDriver.matchesScannedMethod(
-                method,
-                "exampleClientTest(Lio/github/bertie_mc/testing/client/context/ClientTestContext;)V"));
+                method, "exampleClientTest(Lio/github/bertie_mc/testing/client/context/ClientTestContext;)V"));
         assertFalse(ClientTestDriver.matchesScannedMethod(method, "exampleClientTest"));
     }
 
-    private static void exampleClientTest(ClientTestContext context) {
-    }
+    private static void exampleClientTest(ClientTestContext context) {}
 }

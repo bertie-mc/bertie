@@ -15,19 +15,14 @@ import org.spongepowered.asm.mixin.injection.At;
 abstract class ServerLifecycleHooksMixin {
     @WrapOperation(
             method = "handleServerAboutToStart(Lnet/minecraft/server/MinecraftServer;)V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/fml/config/ConfigTracker;loadConfigs("
-                            + "Lnet/neoforged/fml/config/ModConfig$Type;Ljava/nio/file/Path;"
-                            + "Ljava/nio/file/Path;)V"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/neoforged/fml/config/ConfigTracker;loadConfigs("
+                                    + "Lnet/neoforged/fml/config/ModConfig$Type;Ljava/nio/file/Path;"
+                                    + "Ljava/nio/file/Path;)V"))
     private static void configmigrations$runServerLoad(
-            ConfigTracker tracker,
-            ModConfig.Type type,
-            Path basePath,
-            Path overridePath,
-            Operation<Void> original) {
-        MigrationRuntime.runNeoForgeLoadPhase(
-                type,
-                () -> original.call(tracker, type, basePath, overridePath));
+            ConfigTracker tracker, ModConfig.Type type, Path basePath, Path overridePath, Operation<Void> original) {
+        MigrationRuntime.runNeoForgeLoadPhase(type, () -> original.call(tracker, type, basePath, overridePath));
     }
 }

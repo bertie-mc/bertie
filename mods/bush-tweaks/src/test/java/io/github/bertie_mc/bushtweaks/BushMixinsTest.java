@@ -1,5 +1,15 @@
 package io.github.bertie_mc.bushtweaks;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -10,17 +20,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 class BushMixinsTest {
 
@@ -42,8 +41,7 @@ class BushMixinsTest {
             "black_grape_tree_bottom",
             "black_grape_tree_top",
             "none_black_grape_tree_bottom",
-            "none_black_grape_tree_top"
-    );
+            "none_black_grape_tree_top");
 
     @Test
     void everyBerriesAndCherriesTargetUsesVanillaSpeed() {
@@ -73,11 +71,13 @@ class BushMixinsTest {
             when(stationary.getX()).thenReturn(0.0D);
             when(stationary.getZ()).thenReturn(0.0D);
             invokeProcedure(procedure, level, stationary);
-            verify(stationary, never()).hurt(org.mockito.ArgumentMatchers.any(), org.mockito.ArgumentMatchers.anyFloat());
+            verify(stationary, never())
+                    .hurt(org.mockito.ArgumentMatchers.any(), org.mockito.ArgumentMatchers.anyFloat());
 
             LivingEntity crouching = movingEntity(true);
             invokeProcedure(procedure, level, crouching);
-            verify(crouching, never()).hurt(org.mockito.ArgumentMatchers.any(), org.mockito.ArgumentMatchers.anyFloat());
+            verify(crouching, never())
+                    .hurt(org.mockito.ArgumentMatchers.any(), org.mockito.ArgumentMatchers.anyFloat());
             verify(crouching).resetFallDistance();
         }
     }

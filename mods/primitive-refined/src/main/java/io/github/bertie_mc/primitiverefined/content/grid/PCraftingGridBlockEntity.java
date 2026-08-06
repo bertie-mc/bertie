@@ -1,7 +1,5 @@
 package io.github.bertie_mc.primitiverefined.content.grid;
 
-import java.util.List;
-
 import com.refinedmods.refinedstorage.api.core.Action;
 import com.refinedmods.refinedstorage.api.network.storage.StorageNetworkComponent;
 import com.refinedmods.refinedstorage.api.storage.root.RootStorage;
@@ -13,7 +11,7 @@ import com.refinedmods.refinedstorage.common.grid.SnapshotExtractTransaction;
 import com.refinedmods.refinedstorage.common.support.RecipeMatrix;
 import com.refinedmods.refinedstorage.common.support.RecipeMatrixContainer;
 import com.refinedmods.refinedstorage.common.support.resource.ItemResource;
-
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
@@ -114,15 +112,19 @@ public class PCraftingGridBlockEntity extends PGridBlockEntity implements Crafti
             return;
         }
         RootStorage rootStorage = rootStorage();
-        long inserted = rootStorage == null ? 0L : rootStorage.insert(
-                ItemResource.ofItemStack(stack), stack.getCount(), Action.EXECUTE, new PlayerActor(player));
+        long inserted = rootStorage == null
+                ? 0L
+                : rootStorage.insert(
+                        ItemResource.ofItemStack(stack), stack.getCount(), Action.EXECUTE, new PlayerActor(player));
         if (inserted < stack.getCount()) {
             player.drop(stack.copyWithCount((int) (stack.getCount() - inserted)), false);
         }
     }
 
     private RootStorage rootStorage() {
-        return network().map(n -> (RootStorage) n.getComponent(StorageNetworkComponent.class)).orElse(null);
+        return network()
+                .map(n -> (RootStorage) n.getComponent(StorageNetworkComponent.class))
+                .orElse(null);
     }
 
     // --- Persistence ------------------------------------------------------------

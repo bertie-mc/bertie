@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined;
 
-import io.github.bertie_mc.primitiverefined.content.grid.PCraftingGridContainerMenu;
-import io.github.bertie_mc.primitiverefined.content.grid.PGridContainerMenu;
 import com.refinedmods.refinedstorage.common.grid.AbstractCraftingGridContainerMenu;
 import com.refinedmods.refinedstorage.common.grid.GridData;
-
+import io.github.bertie_mc.primitiverefined.content.grid.PCraftingGridContainerMenu;
+import io.github.bertie_mc.primitiverefined.content.grid.PGridContainerMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.MenuType;
 import net.neoforged.bus.api.IEventBus;
@@ -26,16 +25,15 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  */
 public final class PrMenus {
 
-    private PrMenus() {
-    }
+    private PrMenus() {}
 
     public static final DeferredRegister<MenuType<?>> MENUS =
             DeferredRegister.create(Registries.MENU, PrimitiveRefined.MOD_ID);
 
-    public static final DeferredHolder<MenuType<?>, MenuType<PGridContainerMenu>> GRID =
-            MENUS.register("p_grid", () -> IMenuTypeExtension.create(
-                    (syncId, inventory, buf) ->
-                            new PGridContainerMenu(syncId, inventory, GridData.STREAM_CODEC.decode(buf))));
+    public static final DeferredHolder<MenuType<?>, MenuType<PGridContainerMenu>> GRID = MENUS.register(
+            "p_grid",
+            () -> IMenuTypeExtension.create((syncId, inventory, buf) ->
+                    new PGridContainerMenu(syncId, inventory, GridData.STREAM_CODEC.decode(buf))));
 
     /**
      * Typed as the abstract menu, not ours.
@@ -49,8 +47,9 @@ public final class PrMenus {
      * explicit type argument at the registration site instead.
      */
     public static final DeferredHolder<MenuType<?>, MenuType<AbstractCraftingGridContainerMenu>> CRAFTING_GRID =
-            MENUS.register("p_crafting_grid", () -> IMenuTypeExtension.<AbstractCraftingGridContainerMenu>create(
-                    (syncId, inventory, buf) ->
+            MENUS.register(
+                    "p_crafting_grid",
+                    () -> IMenuTypeExtension.<AbstractCraftingGridContainerMenu>create((syncId, inventory, buf) ->
                             new PCraftingGridContainerMenu(syncId, inventory, GridData.STREAM_CODEC.decode(buf))));
 
     public static void register(IEventBus modBus) {

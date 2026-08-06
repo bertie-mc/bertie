@@ -5,10 +5,9 @@ import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-
-import java.util.List;
 
 /**
  * Bespoke layout for {@code create:sequenced_assembly} (Precision Mechanism &amp; other chain crafts):
@@ -26,9 +25,11 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
      * step (either list may be empty, e.g. pressing/cutting apply nothing), and a short operation label
      * ("Deploying"/"Pressing"/...) shown as the machine's tooltip.
      */
-    public record Step(List<EmiStack> machines, List<EmiIngredient> appliedItems,
-                       List<EmiIngredient> appliedFluids, Component label) {
-    }
+    public record Step(
+            List<EmiStack> machines,
+            List<EmiIngredient> appliedItems,
+            List<EmiIngredient> appliedFluids,
+            Component label) {}
 
     private static final int SLOT = 18;
     private static final int ARROW_W = 24;
@@ -43,8 +44,14 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
     private final int loops;
     private final List<EmiStack> results;
 
-    public SequencedAssemblyEmiRecipe(EmiRecipeCategory category, ResourceLocation id, EmiIngredient start,
-                                      List<Step> steps, EmiStack transitional, int loops, List<EmiStack> results) {
+    public SequencedAssemblyEmiRecipe(
+            EmiRecipeCategory category,
+            ResourceLocation id,
+            EmiIngredient start,
+            List<Step> steps,
+            EmiStack transitional,
+            int loops,
+            List<EmiStack> results) {
         super(category, id, computeWidth(start, steps, results), computeHeight(loops));
         this.start = start;
         this.steps = steps;
@@ -76,14 +83,14 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
         for (Step s : steps) {
             x += flowSlots(s) * SLOT + STEP_GAP;
         }
-        x += ARROW_W + PAD * 2;                 // arrow to results
+        x += ARROW_W + PAD * 2; // arrow to results
         x += Math.max(1, results.size()) * SLOT;
         return x + PAD;
     }
 
     private static int computeHeight(int loops) {
         int infoH = loops > 1 ? PAD + TEXT_H : 0; // single "Repeats Nx" line
-        return PAD + SLOT + SLOT + infoH + PAD;   // machine/transitional row + flow row
+        return PAD + SLOT + SLOT + infoH + PAD; // machine/transitional row + flow row
     }
 
     @Override
@@ -107,7 +114,10 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
             if (applied > 0) {
                 int mx = x;
                 for (EmiStack m : s.machines()) {
-                    w.addSlot(m, mx, yTop).catalyst(true).appendTooltip(labelOf(s)).recipeContext(this);
+                    w.addSlot(m, mx, yTop)
+                            .catalyst(true)
+                            .appendTooltip(labelOf(s))
+                            .recipeContext(this);
                     mx += SLOT;
                 }
                 int drawn = 0;
@@ -117,7 +127,9 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
                     drawn++;
                 }
                 for (EmiIngredient f : s.appliedFluids()) {
-                    w.addTank(f, x, yFlow, SLOT, SLOT, (int) Math.max(1L, f.getAmount())).drawBack(true).recipeContext(this);
+                    w.addTank(f, x, yFlow, SLOT, SLOT, (int) Math.max(1L, f.getAmount()))
+                            .drawBack(true)
+                            .recipeContext(this);
                     x += SLOT;
                     drawn++;
                 }
@@ -126,7 +138,10 @@ public final class SequencedAssemblyEmiRecipe extends BasicEmiRecipe {
                 x += SLOT; // reserve an empty column for a step with neither machine nor applied item
             } else {
                 for (EmiStack m : s.machines()) {
-                    w.addSlot(m, x, yFlow).catalyst(true).appendTooltip(labelOf(s)).recipeContext(this);
+                    w.addSlot(m, x, yFlow)
+                            .catalyst(true)
+                            .appendTooltip(labelOf(s))
+                            .recipeContext(this);
                     x += SLOT;
                 }
             }

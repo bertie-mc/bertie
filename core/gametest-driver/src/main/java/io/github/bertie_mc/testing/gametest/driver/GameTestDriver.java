@@ -32,16 +32,15 @@ public final class GameTestDriver {
             if (parent != null) {
                 Files.createDirectories(parent);
             }
-            GlobalTestReporter.replaceWith(new CompositeReporter(
-                    new LogTestReporter(), new JUnitLikeTestReporter(report.toFile())));
+            GlobalTestReporter.replaceWith(
+                    new CompositeReporter(new LogTestReporter(), new JUnitLikeTestReporter(report.toFile())));
         } catch (IOException | ParserConfigurationException exception) {
             throw new IllegalStateException("Cannot prepare GameTest report " + report, exception);
         }
     }
 
     /** Forwards each GameTest reporting callback to both delegates in order. */
-    private record CompositeReporter(TestReporter first, TestReporter second)
-            implements TestReporter {
+    private record CompositeReporter(TestReporter first, TestReporter second) implements TestReporter {
         @Override
         public void onTestFailed(GameTestInfo testInfo) {
             first.onTestFailed(testInfo);

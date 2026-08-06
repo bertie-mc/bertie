@@ -4,12 +4,11 @@ import dev.architectury.event.EventResult;
 import dev.ftb.mods.ftbfiltersystem.api.event.CustomFilterEvent;
 import dev.lopyluna.slag.content.items.modular.DataDynamicParts;
 import dev.lopyluna.slag.register.AllDataComponents;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * The actual {@code bertie:wooden} custom-filter handler. References Slag-n-Embers types directly, so
@@ -27,8 +26,7 @@ import java.util.List;
  * type {@code slag:wooden}. Otherwise {@link EventResult#pass()}.
  */
 public final class WoodenSlagFilter {
-    private WoodenSlagFilter() {
-    }
+    private WoodenSlagFilter() {}
 
     public static void register() {
         CustomFilterEvent.MATCH_ITEM.register(WoodenSlagFilter::matchItem);

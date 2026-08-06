@@ -38,11 +38,11 @@ public class CarvingStationBlock extends BaseEntityBlock implements SimpleWaterl
 
     // tabletop (top 4px, full footprint) on four 6px chiseled-deepslate corner legs -- hollow below.
     private static final VoxelShape SHAPE = Shapes.or(
-            Block.box(0, 12, 0, 16, 16, 16),    // tabletop
-            Block.box(0, 0, 0, 6, 12, 6),       // NW leg
-            Block.box(10, 0, 0, 16, 12, 6),     // NE leg
-            Block.box(0, 0, 10, 6, 12, 16),     // SW leg
-            Block.box(10, 0, 10, 16, 12, 16));  // SE leg
+            Block.box(0, 12, 0, 16, 16, 16), // tabletop
+            Block.box(0, 0, 0, 6, 12, 6), // NW leg
+            Block.box(10, 0, 0, 16, 12, 6), // NE leg
+            Block.box(0, 0, 10, 6, 12, 16), // SW leg
+            Block.box(10, 0, 10, 16, 12, 16)); // SE leg
 
     public CarvingStationBlock(Properties properties) {
         super(properties);
@@ -95,7 +95,8 @@ public class CarvingStationBlock extends BaseEntityBlock implements SimpleWaterl
     }
 
     @Override
-    protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    protected VoxelShape getCollisionShape(
+            BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
 
@@ -111,9 +112,10 @@ public class CarvingStationBlock extends BaseEntityBlock implements SimpleWaterl
     }
 
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
-                                               Player player, BlockHitResult hit) {
-        if (!level.isClientSide && player instanceof ServerPlayer sp
+    protected InteractionResult useWithoutItem(
+            BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
+        if (!level.isClientSide
+                && player instanceof ServerPlayer sp
                 && level.getBlockEntity(pos) instanceof CarvingStationBlockEntity be) {
             sp.openMenu(be, buf -> buf.writeBlockPos(pos));
         }

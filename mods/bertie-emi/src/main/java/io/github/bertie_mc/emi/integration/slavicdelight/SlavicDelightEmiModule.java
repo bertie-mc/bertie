@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.slavicdelight;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.legomanchik.slavic_delight.common.crafting.BrewBarrelRecipe;
 import com.legomanchik.slavic_delight.common.crafting.ClayPotRecipe;
 import com.legomanchik.slavic_delight.common.crafting.JarRecipe;
@@ -11,6 +7,10 @@ import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -19,15 +19,15 @@ import net.minecraft.world.item.crafting.RecipeManager;
 
 /** Slavic Delight — Clay Pot, Brew Barrel, Jar (pickling). */
 public final class SlavicDelightEmiModule {
-    private SlavicDelightEmiModule() {
-    }
+    private SlavicDelightEmiModule() {}
 
     private static final RegistryAccess REG = RegistryAccess.EMPTY;
 
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
 
-        EmiRecipeCategory pot = Categories.machine(reg, "slavic_clay_pot", "slavic_delight:clay_pot", "Clay Pot Cooking");
+        EmiRecipeCategory pot =
+                Categories.machine(reg, "slavic_clay_pot", "slavic_delight:clay_pot", "Clay Pot Cooking");
         Recipes.forEach(rm, ClayPotRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -36,7 +36,8 @@ public final class SlavicDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(pot, id, d));
         });
 
-        EmiRecipeCategory barrel = Categories.machine(reg, "slavic_brewing", "slavic_delight:brew_barrel", "Brew Barrel");
+        EmiRecipeCategory barrel =
+                Categories.machine(reg, "slavic_brewing", "slavic_delight:brew_barrel", "Brew Barrel");
         Recipes.forEach(rm, BrewBarrelRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));

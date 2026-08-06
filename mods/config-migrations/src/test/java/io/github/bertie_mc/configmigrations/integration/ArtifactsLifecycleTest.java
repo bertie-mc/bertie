@@ -21,8 +21,7 @@ class ArtifactsLifecycleTest {
     @Test
     void migrationRunsAfterNativeLoadAndBeforeArtifactsConsumesValues() throws Exception {
         Path gameDirectory = FMLPaths.GAMEDIR.get().toAbsolutePath().normalize();
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/artifacts/tests/items.toml");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/artifacts/tests/items.toml");
         Path target = gameDirectory.resolve("config/artifacts/configmigrations-test-items.toml");
         Path state = gameDirectory.resolve(
                 "config/config-migrations/state/config/artifacts/configmigrations-test-items.toml.version");

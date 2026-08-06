@@ -1,13 +1,13 @@
 package io.github.bertie_mc.emi.integration.berriescherries;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.mcreator.berriesandcherries.jei_recipes.BPressCherryRecipe;
 import net.mcreator.berriesandcherries.jei_recipes.BpressRecipe;
 import net.minecraft.core.RegistryAccess;
@@ -15,8 +15,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 /** Berries & Cherries — Berry Press (bpress + b_press_cherry). */
 public final class BerriesAndCherriesEmiModule {
-    private BerriesAndCherriesEmiModule() {
-    }
+    private BerriesAndCherriesEmiModule() {}
 
     private static final String PRESS = "berries_and_cherries:berry_press";
     private static final RegistryAccess REG = RegistryAccess.EMPTY;

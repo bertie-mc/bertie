@@ -26,9 +26,9 @@ class DefaultServerConnection implements ServerConnection {
     DefaultServerConnection(DefaultClientTestContext context, DefaultServerContext serverContext) {
         this.context = Objects.requireNonNull(context);
         this.serverContext = Objects.requireNonNull(serverContext);
-        this.playerId = context.computeOnClient(client -> Objects.requireNonNull(
-                        client.player, "The connected client player is not available")
-                .getUUID());
+        this.playerId = context.computeOnClient(
+                client -> Objects.requireNonNull(client.player, "The connected client player is not available")
+                        .getUUID());
     }
 
     @Override
@@ -43,13 +43,10 @@ class DefaultServerConnection implements ServerConnection {
     @Override
     public int waitForChunksRender(boolean waitForDownload, int timeoutTicks) {
         int requiredDistance = waitForDownload ? requiredChunkDistance() : 0;
-        String description = waitForDownload
-                ? "client chunks to download and render"
-                : "client chunks to render";
+        String description = waitForDownload ? "client chunks to download and render" : "client chunks to render";
         return context.waitFor(
                 description,
-                client -> (!waitForDownload
-                                || areClientChunksDownloaded(client, requiredDistance))
+                client -> (!waitForDownload || areClientChunksDownloaded(client, requiredDistance))
                         && areClientChunksRendered(client),
                 timeoutTicks);
     }
@@ -73,15 +70,13 @@ class DefaultServerConnection implements ServerConnection {
     }
 
     @Override
-    public void waitForClientboundEntityUpdates(
-            EntityType<?> entityType, EntityType<?>... additionalEntityTypes) {
+    public void waitForClientboundEntityUpdates(EntityType<?> entityType, EntityType<?>... additionalEntityTypes) {
         Objects.requireNonNull(entityType);
         Objects.requireNonNull(additionalEntityTypes);
         int maximumUpdateInterval = Math.max(0, entityType.updateInterval());
         for (int index = 0; index < additionalEntityTypes.length; index++) {
-            EntityType<?> additional = Objects.requireNonNull(
-                    additionalEntityTypes[index],
-                    "additionalEntityTypes[" + index + "]");
+            EntityType<?> additional =
+                    Objects.requireNonNull(additionalEntityTypes[index], "additionalEntityTypes[" + index + "]");
             maximumUpdateInterval = Math.max(maximumUpdateInterval, additional.updateInterval());
         }
         context.waitTicks(maximumUpdateInterval);
@@ -103,15 +98,13 @@ class DefaultServerConnection implements ServerConnection {
     @Override
     public LocalPlayer clientPlayer() {
         requireClientThread();
-        return Objects.requireNonNull(
-                Minecraft.getInstance().player, "The client player is not available");
+        return Objects.requireNonNull(Minecraft.getInstance().player, "The client player is not available");
     }
 
     @Override
     public ClientLevel clientLevel() {
         requireClientThread();
-        return Objects.requireNonNull(
-                Minecraft.getInstance().level, "The client level is not available");
+        return Objects.requireNonNull(Minecraft.getInstance().level, "The client level is not available");
     }
 
     @Override
@@ -138,17 +131,14 @@ class DefaultServerConnection implements ServerConnection {
         }
     }
 
-    private static boolean areClientChunksDownloaded(
-            Minecraft client, int renderDistance) {
+    private static boolean areClientChunksDownloaded(Minecraft client, int renderDistance) {
         ClientLevel level = client.level;
         if (level == null) {
             return false;
         }
 
-        ClientChunkCache.Storage storage =
-                ((ClientChunkCacheAccessor) level.getChunkSource()).bertie$getStorage();
-        ClientChunkCacheStorageAccessor storageAccessor =
-                (ClientChunkCacheStorageAccessor) (Object) storage;
+        ClientChunkCache.Storage storage = ((ClientChunkCacheAccessor) level.getChunkSource()).bertie$getStorage();
+        ClientChunkCacheStorageAccessor storageAccessor = (ClientChunkCacheStorageAccessor) (Object) storage;
         int centerX = storageAccessor.bertie$getViewCenterX();
         int centerZ = storageAccessor.bertie$getViewCenterZ();
         for (int z = centerZ - renderDistance; z <= centerZ + renderDistance; z++) {
@@ -163,8 +153,6 @@ class DefaultServerConnection implements ServerConnection {
 
     private static boolean areClientChunksRendered(Minecraft client) {
         ClientLevel level = client.level;
-        return level != null
-                && level.isLightUpdateQueueEmpty()
-                && client.levelRenderer.hasRenderedAllSections();
+        return level != null && level.isLightUpdateQueueEmpty() && client.levelRenderer.hasRenderedAllSections();
     }
 }

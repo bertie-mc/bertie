@@ -1,8 +1,8 @@
 package io.github.bertie_mc.bertieblackhole;
 
+import com.mojang.logging.LogUtils;
 import io.github.bertie_mc.bertieblackhole.command.BbhCommand;
 import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
-import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;

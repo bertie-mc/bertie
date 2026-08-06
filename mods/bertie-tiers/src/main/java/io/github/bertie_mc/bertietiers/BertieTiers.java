@@ -1,14 +1,13 @@
 package io.github.bertie_mc.bertietiers;
 
+import com.mojang.logging.LogUtils;
 import io.github.bertie_mc.bertietiers.command.BertieTiersCommand;
 import io.github.bertie_mc.bertietiers.config.ConfigManager;
 import io.github.bertie_mc.bertietiers.logic.MiningAuthority;
-import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
@@ -33,8 +32,7 @@ public class BertieTiers {
     public static final String MOD_ID = "bertietiers";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public BertieTiers(IEventBus ignored) {
-    }
+    public BertieTiers(IEventBus ignored) {}
 
     /** Game-bus listeners (the default bus). The whole system is logical-server only. */
     @EventBusSubscriber(modid = MOD_ID)
@@ -54,7 +52,8 @@ public class BertieTiers {
             } else {
                 MiningAuthority.install(io.github.bertie_mc.bertietiers.logic.RuntimeConfig.EMPTY);
                 LOGGER.error("Bertie Tiers: {}", result.message());
-                LOGGER.error("Bertie Tiers: no tier rules are active. Fix {} and run /bertietiers reload.",
+                LOGGER.error(
+                        "Bertie Tiers: no tier rules are active. Fix {} and run /bertietiers reload.",
                         ConfigManager.configPath());
             }
         }

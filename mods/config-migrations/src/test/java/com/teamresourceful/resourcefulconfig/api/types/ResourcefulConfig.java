@@ -18,6 +18,5 @@ public interface ResourcefulConfig {
 
     void save();
 
-    default void load(Consumer<?> patchHandler) {
-    }
+    default void load(Consumer<?> patchHandler) {}
 }

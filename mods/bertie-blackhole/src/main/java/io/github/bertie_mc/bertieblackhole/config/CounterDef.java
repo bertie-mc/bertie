@@ -1,9 +1,8 @@
 package io.github.bertie_mc.bertieblackhole.config;
 
-import net.minecraft.world.item.ItemStack;
-
 import java.util.List;
 import java.util.Map;
+import net.minecraft.world.item.ItemStack;
 
 /**
  * One named counter on a level's requirement list. Several items can feed the same counter with

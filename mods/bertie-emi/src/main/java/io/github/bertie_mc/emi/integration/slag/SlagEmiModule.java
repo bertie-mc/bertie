@@ -1,8 +1,5 @@
 package io.github.bertie_mc.emi.integration.slag;
 
-import io.github.bertie_mc.emi.framework.GenericEmiCategory;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
@@ -14,6 +11,12 @@ import dev.lopyluna.slag.content.blocks.forge.DoubleSmeltingRecipe;
 import dev.lopyluna.slag.content.blocks.melter.MeltingRecipe;
 import dev.lopyluna.slag.content.blocks.table.TableCastingRecipe;
 import dev.lopyluna.slag.register.AllRecipes;
+import io.github.bertie_mc.emi.framework.GenericEmiCategory;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import java.util.List;
+import java.util.Locale;
+import java.util.function.Function;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -27,36 +30,32 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.List;
-import java.util.Locale;
-import java.util.function.Function;
-
 /**
  * Native EMI categories for Slag 'n' Embers' 5 machine recipe types. Recipes are read from the live
  * {@link RecipeManager} (never re-parsed), each mapped to a {@link MachineDescriptor}. Only ever
  * called when {@code slag} is loaded, so referencing Slag classes here is safe.
  */
 public final class SlagEmiModule {
-    private SlagEmiModule() {
-    }
+    private SlagEmiModule() {}
 
     private static final String NS = "bertieemi";
 
     private static GenericEmiCategory category(String key, String iconItem, String nameKey) {
         return new GenericEmiCategory(
-                ResourceLocation.fromNamespaceAndPath(NS, key),
-                slagStack(iconItem),
-                Component.translatable(nameKey));
+                ResourceLocation.fromNamespaceAndPath(NS, key), slagStack(iconItem), Component.translatable(nameKey));
     }
 
     public static void register(EmiRegistry registry) {
         RecipeManager rm = registry.getRecipeManager();
 
-        GenericEmiCategory doubleSmelting = category("slag_double_smelting", "brick_forge", "emi.category.bertieemi.slag_double_smelting");
+        GenericEmiCategory doubleSmelting =
+                category("slag_double_smelting", "brick_forge", "emi.category.bertieemi.slag_double_smelting");
         GenericEmiCategory alloying = category("slag_alloying", "crucible", "emi.category.bertieemi.slag_alloying");
         GenericEmiCategory melting = category("slag_melting", "melter", "emi.category.bertieemi.slag_melting");
-        GenericEmiCategory tableCasting = category("slag_table_casting", "table", "emi.category.bertieemi.slag_table_casting");
-        GenericEmiCategory basinCasting = category("slag_basin_casting", "basin", "emi.category.bertieemi.slag_basin_casting");
+        GenericEmiCategory tableCasting =
+                category("slag_table_casting", "table", "emi.category.bertieemi.slag_table_casting");
+        GenericEmiCategory basinCasting =
+                category("slag_basin_casting", "basin", "emi.category.bertieemi.slag_basin_casting");
 
         registry.addCategory(doubleSmelting);
         registry.addCategory(alloying);
@@ -121,9 +120,13 @@ public final class SlagEmiModule {
     }
 
     /** Read every recipe of {@code typeHolder}, map it to a descriptor, and register a generic recipe. */
-    private static <R> void emit(EmiRegistry registry, RecipeManager rm,
-                                 DeferredHolder<RecipeType<?>, ?> typeHolder, EmiRecipeCategory category,
-                                 Class<R> recipeClass, Function<R, MachineDescriptor> mapper) {
+    private static <R> void emit(
+            EmiRegistry registry,
+            RecipeManager rm,
+            DeferredHolder<RecipeType<?>, ?> typeHolder,
+            EmiRecipeCategory category,
+            Class<R> recipeClass,
+            Function<R, MachineDescriptor> mapper) {
         for (RecipeHolder<?> holder : recipesFor(rm, typeHolder)) {
             Object value = holder.value();
             if (!recipeClass.isInstance(value)) continue;

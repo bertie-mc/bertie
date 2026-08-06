@@ -55,6 +55,8 @@ class NightConfigMergeTest {
         CommentedConfig second = TomlFormat.newConfig();
         NightConfigMerge.apply(second, List.of(change));
         assertEquals(List.of(1, 2), second.get("values"));
-        assertEquals("original", second.<List<CommentedConfig>>get("items").getFirst().get("name"));
+        assertEquals(
+                "original",
+                second.<List<CommentedConfig>>get("items").getFirst().get("name"));
     }
 }

@@ -3,7 +3,6 @@ package io.github.bertie_mc.gradle.conventions
 import io.github.bertie_mc.gradle.model.MinecraftArtifactManifest
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
 import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
-
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -30,14 +29,15 @@ class MinecraftRuntimeSidesTest {
 
     @Test
     fun `projection uses the Gradle provider coordinate`() {
-        val manifest = parseMinecraftArtifacts(
-            """
-            [mods.client-only]
-            side = "client"
-            maven = { module = "example.maven:client-only", version = "1" }
-            modrinth = { project-id = "modrinth-id", version-id = "version-id", filename = "client-only.jar" }
-            """.trimIndent(),
-        )
+        val manifest =
+            parseMinecraftArtifacts(
+                """
+                [mods.client-only]
+                side = "client"
+                maven = { module = "example.maven:client-only", version = "1" }
+                modrinth = { project-id = "modrinth-id", version-id = "version-id", filename = "client-only.jar" }
+                """.trimIndent(),
+            )
 
         assertEquals(
             setOf(MinecraftModule("example.maven", "client-only")),
@@ -45,18 +45,19 @@ class MinecraftRuntimeSidesTest {
         )
     }
 
-    private fun manifest(): MinecraftArtifactManifest = parseMinecraftArtifacts(
-        """
-        [mods.shared]
-        maven = { module = "example.shared:shared", version = "1" }
+    private fun manifest(): MinecraftArtifactManifest =
+        parseMinecraftArtifacts(
+            """
+            [mods.shared]
+            maven = { module = "example.shared:shared", version = "1" }
 
-        [mods.client-only]
-        side = "client"
-        maven = { module = "example.client:client-only", version = "1" }
+            [mods.client-only]
+            side = "client"
+            maven = { module = "example.client:client-only", version = "1" }
 
-        [mods.server-only]
-        side = "server"
-        maven = { module = "example.server:server-only", version = "1" }
-        """.trimIndent(),
-    )
+            [mods.server-only]
+            side = "server"
+            maven = { module = "example.server:server-only", version = "1" }
+            """.trimIndent(),
+        )
 }

@@ -1,12 +1,12 @@
 package io.github.bertie_mc.bertieblackhole.mixin;
 
-import io.github.bertie_mc.bertieblackhole.StatefulBlackHole;
-import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
-import io.github.bertie_mc.bertieblackhole.config.LevelDef;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.stal111.forbidden_arcanus.client.renderer.block.BlackHoleRenderer;
 import com.stal111.forbidden_arcanus.common.block.entity.BlackHoleBlockEntity;
+import io.github.bertie_mc.bertieblackhole.StatefulBlackHole;
+import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
+import io.github.bertie_mc.bertieblackhole.config.LevelDef;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,16 +20,28 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(BlackHoleRenderer.class)
 public class BlackHoleRendererMixin {
 
-    @Redirect(method = "render(Lcom/stal111/forbidden_arcanus/common/block/entity/BlackHoleBlockEntity;"
-            + "FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/client/model/geom/ModelPart;render("
-                            + "Lcom/mojang/blaze3d/vertex/PoseStack;"
-                            + "Lcom/mojang/blaze3d/vertex/VertexConsumer;II)V",
-                    ordinal = 1))
-    private void bbh$tintAura(ModelPart part, PoseStack pose, VertexConsumer consumer, int light, int overlay,
-                              BlackHoleBlockEntity blockEntity, float partialTick, PoseStack outerPose,
-                              MultiBufferSource buffers, int outerLight, int outerOverlay) {
+    @Redirect(
+            method = "render(Lcom/stal111/forbidden_arcanus/common/block/entity/BlackHoleBlockEntity;"
+                    + "FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V",
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/minecraft/client/model/geom/ModelPart;render("
+                                    + "Lcom/mojang/blaze3d/vertex/PoseStack;"
+                                    + "Lcom/mojang/blaze3d/vertex/VertexConsumer;II)V",
+                            ordinal = 1))
+    private void bbh$tintAura(
+            ModelPart part,
+            PoseStack pose,
+            VertexConsumer consumer,
+            int light,
+            int overlay,
+            BlackHoleBlockEntity blockEntity,
+            float partialTick,
+            PoseStack outerPose,
+            MultiBufferSource buffers,
+            int outerLight,
+            int outerOverlay) {
         part.render(pose, consumer, light, overlay, bbh$tintFor(blockEntity));
     }
 

@@ -46,9 +46,7 @@ abstract class MinecraftMixin {
 
     @ModifyExpressionValue(
             method = "runTick",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/DeltaTracker$Timer;advanceTime(JZ)I"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/DeltaTracker$Timer;advanceTime(JZ)I"))
     private int bertie$limitTicksPerFrame(int ticksPerFrame) {
         return TestScheduler.capClientTicksPerFrame(ticksPerFrame);
     }
@@ -77,11 +75,7 @@ abstract class MinecraftMixin {
         }
     }
 
-    @Inject(
-            method = "doWorldLoad",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/Minecraft;runTick(Z)V"))
+    @Inject(method = "doWorldLoad", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;runTick(Z)V"))
     private void bertie$coordinateIntegratedServerStart(
             LevelStorageSource.LevelStorageAccess storage,
             PackRepository packs,
@@ -91,12 +85,8 @@ abstract class MinecraftMixin {
         bertie$runClientPhase();
     }
 
-    @Inject(
-            method = "disconnect(Lnet/minecraft/client/gui/screens/Screen;Z)V",
-            at = @At("HEAD"),
-            cancellable = true)
-    private void bertie$deferIntegratedServerStop(
-            Screen nextScreen, boolean keepResourcePacks, CallbackInfo callback) {
+    @Inject(method = "disconnect(Lnet/minecraft/client/gui/screens/Screen;Z)V", at = @At("HEAD"), cancellable = true)
+    private void bertie$deferIntegratedServerStop(Screen nextScreen, boolean keepResourcePacks, CallbackInfo callback) {
         Minecraft self = (Minecraft) (Object) this;
         if (self.getSingleplayerServer() != null && TestScheduler.isClientTaskRunning()) {
             bertie$deferredTestTask = () -> self.disconnect(nextScreen, keepResourcePacks);
@@ -106,9 +96,7 @@ abstract class MinecraftMixin {
 
     @Inject(
             method = "disconnect(Lnet/minecraft/client/gui/screens/Screen;Z)V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/Minecraft;runTick(Z)V"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Minecraft;runTick(Z)V"))
     private void bertie$coordinateIntegratedServerStop(
             Screen nextScreen, boolean keepResourcePacks, CallbackInfo callback) {
         bertie$runClientPhase();

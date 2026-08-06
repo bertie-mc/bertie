@@ -1,12 +1,11 @@
 package io.github.bertie_mc.emi.integration.ali;
 
 import com.sammy.malum.core.listeners.ReapingDataReloadListener;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 
 /**
  * Reads Malum's soul-reaping drop table ({@code ReapingDataReloadListener.REAPING_DATA}, populated from
@@ -17,12 +16,10 @@ import java.util.Map;
  */
 final class MalumReapingSource {
 
-    private MalumReapingSource() {
-    }
+    private MalumReapingSource() {}
 
     /** One reaped drop: which entity drops what, with the roll chance and count range. */
-    record Drop(ResourceLocation entityId, ItemStack stack, float chance, int min, int max) {
-    }
+    record Drop(ResourceLocation entityId, ItemStack stack, float chance, int min, int max) {}
 
     /**
      * Snapshot the current reaping table. Called lazily (when ALI builds loot info) rather than at

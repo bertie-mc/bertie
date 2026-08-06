@@ -3,8 +3,7 @@ package io.github.bertie_mc.screenshotcopy;
 final class RgbaPixels {
     private static final int CHANNELS = 4;
 
-    private RgbaPixels() {
-    }
+    private RgbaPixels() {}
 
     static byte[] fromAbgr(int[] pixels) {
         byte[] rgba = new byte[pixels.length * CHANNELS];

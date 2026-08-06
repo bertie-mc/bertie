@@ -18,8 +18,7 @@ public class DragonflyFlyingProcedureMixin {
     @ModifyConstant(
             method = "execute(Lnet/minecraft/world/level/LevelAccessor;DDDLnet/minecraft/world/entity/Entity;)V",
             constant = @Constant(doubleValue = -0.03D),
-            remap = false
-    )
+            remap = false)
     private static double rusticengineerfix$levelForwardFlight(double original) {
         return 0.0D;
     }
@@ -27,9 +26,9 @@ public class DragonflyFlyingProcedureMixin {
     @Inject(
             method = "execute(Lnet/minecraft/world/level/LevelAccessor;DDDLnet/minecraft/world/entity/Entity;)V",
             at = @At("RETURN"),
-            remap = false
-    )
-    private static void rusticengineerfix$combineVertical(LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
+            remap = false)
+    private static void rusticengineerfix$combineVertical(
+            LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
         if (entity == null) {
             return;
         }

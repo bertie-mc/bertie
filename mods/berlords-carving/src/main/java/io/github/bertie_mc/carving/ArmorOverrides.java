@@ -29,8 +29,7 @@ import net.neoforged.fml.loading.FMLPaths;
 public final class ArmorOverrides {
     private static volatile Map<CarvingMaterial, Map<ArmorKind, String>> overrides;
 
-    private ArmorOverrides() {
-    }
+    private ArmorOverrides() {}
 
     /** The override item id for (material, kind), or null for normal carve behavior. */
     public static String get(CarvingMaterial material, ArmorKind kind) {
@@ -78,7 +77,9 @@ public final class ArmorOverrides {
             Map<ArmorKind, String> kinds = new EnumMap<>(ArmorKind.class);
             for (ArmorKind kind : ArmorKind.values()) {
                 JsonElement id = entry.getAsJsonObject().get(kind.id);
-                if (id != null && id.isJsonPrimitive() && id.getAsJsonPrimitive().isString()) {
+                if (id != null
+                        && id.isJsonPrimitive()
+                        && id.getAsJsonPrimitive().isString()) {
                     kinds.put(kind, id.getAsString().toLowerCase(Locale.ROOT));
                 }
             }

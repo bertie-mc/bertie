@@ -1,6 +1,11 @@
 package io.github.bertie_mc.foodsystem.buffs;
 
 import io.github.bertie_mc.foodsystem.BFS;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -17,12 +22,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerXpEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
 
 /**
  * Server-side reconciler: keeps mob effects, attribute modifiers and abilities in sync
@@ -56,7 +55,9 @@ public final class BuffEngine {
 
         for (BuffsConfig.FoodBuff buff : activeBuffs) {
             for (BuffsConfig.EffectDef def : buff.effects) {
-                desiredEffects.merge(def.effectId(), new EffectTarget(def.effect(), def.amplifier()),
+                desiredEffects.merge(
+                        def.effectId(),
+                        new EffectTarget(def.effect(), def.amplifier()),
                         (a, b) -> a.amplifier >= b.amplifier ? a : b);
             }
             for (BuffsConfig.AttributeDef def : buff.attributes) {
@@ -79,7 +80,8 @@ public final class BuffEngine {
                         && current.getDuration() < REFRESH_BELOW;
             }
             if (apply) {
-                player.addEffect(new MobEffectInstance(target.effect, APPLY_TICKS, target.amplifier, true, false, true));
+                player.addEffect(
+                        new MobEffectInstance(target.effect, APPLY_TICKS, target.amplifier, true, false, true));
                 MobEffectInstance applied = player.getEffect(target.effect);
                 if (applied != null && applied.isAmbient()) {
                     applied.getCures().clear();
@@ -90,7 +92,9 @@ public final class BuffEngine {
             if (desiredEffects.containsKey(known.getKey())) continue;
             Holder<MobEffect> holder = known.getValue();
             MobEffectInstance current = player.getEffect(holder);
-            if (current != null && current.isAmbient() && !current.isInfiniteDuration()
+            if (current != null
+                    && current.isAmbient()
+                    && !current.isInfiniteDuration()
                     && current.getDuration() <= APPLY_TICKS + 5) {
                 player.removeEffect(holder);
             }
@@ -167,9 +171,11 @@ public final class BuffEngine {
      * created with visible=false; this catches every remaining path.
      */
     @SubscribeEvent
-    public static void onEffectParticles(net.neoforged.neoforge.event.entity.living.EffectParticleModificationEvent event) {
+    public static void onEffectParticles(
+            net.neoforged.neoforge.event.entity.living.EffectParticleModificationEvent event) {
         if (!(event.getEntity() instanceof Player player)) return;
-        ResourceLocation id = BuiltInRegistries.MOB_EFFECT.getKey(event.getEffect().getEffect().value());
+        ResourceLocation id = BuiltInRegistries.MOB_EFFECT.getKey(
+                event.getEffect().getEffect().value());
         if (id != null && ActiveFoods.grantsEffect(player, id)) {
             event.setVisible(false);
         }

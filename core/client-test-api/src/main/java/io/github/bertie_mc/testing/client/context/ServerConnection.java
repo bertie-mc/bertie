@@ -97,8 +97,7 @@ public interface ServerConnection {
      * @param entityType the first entity type whose updates must be sent
      * @param additionalEntityTypes any additional entity types whose update intervals matter
      */
-    void waitForClientboundEntityUpdates(
-            EntityType<?> entityType, EntityType<?>... additionalEntityTypes);
+    void waitForClientboundEntityUpdates(EntityType<?> entityType, EntityType<?>... additionalEntityTypes);
 
     /**
      * Returns the client player.

@@ -75,7 +75,8 @@ class MigrationManagerTest {
         Files.createDirectories(versionFile(target).getParent());
         Files.writeString(versionFile(target), "2\n");
 
-        MigrationManager.Migration migration = MigrationManager.load(gameDirectory).prepare(manifest, target);
+        MigrationManager.Migration migration =
+                MigrationManager.load(gameDirectory).prepare(manifest, target);
         CommentedConfig document = TomlFormat.newConfig();
         document.set("old", true);
         NightConfigMerge.apply(document, migration.changes());

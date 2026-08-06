@@ -42,15 +42,14 @@ abstract class ConfigApiImplMixin {
             method = "writeFile(Ljava/lang/Object;"
                     + "Lme/fzzyhmstrs/fzzy_config/impl/ConfigApiImpl$FileResult;"
                     + "Ljava/lang/String;Ljava/lang/String;)V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Ljava/util/concurrent/CompletableFuture;runAsync("
-                            + "Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)"
-                            + "Ljava/util/concurrent/CompletableFuture;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Ljava/util/concurrent/CompletableFuture;runAsync("
+                                    + "Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)"
+                                    + "Ljava/util/concurrent/CompletableFuture;"))
     private CompletableFuture<Void> configmigrations$joinMigrationWrite(
-            Runnable task,
-            Executor executor,
-            Operation<CompletableFuture<Void>> original) {
+            Runnable task, Executor executor, Operation<CompletableFuture<Void>> original) {
         CompletableFuture<Void> write = original.call(task, executor);
         MigrationRuntime.joinFzzyConfigWrite(write);
         return write;

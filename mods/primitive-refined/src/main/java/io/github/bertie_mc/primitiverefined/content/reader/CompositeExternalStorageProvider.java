@@ -1,14 +1,13 @@
 package io.github.bertie_mc.primitiverefined.content.reader;
 
-import java.util.Iterator;
-import java.util.List;
-
 import com.google.common.collect.Iterators;
 import com.refinedmods.refinedstorage.api.core.Action;
 import com.refinedmods.refinedstorage.api.resource.ResourceAmount;
 import com.refinedmods.refinedstorage.api.resource.ResourceKey;
 import com.refinedmods.refinedstorage.api.storage.Actor;
 import com.refinedmods.refinedstorage.api.storage.external.ExternalStorageProvider;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Every way of reading the block in front, tried in turn.
@@ -38,7 +37,10 @@ final class CompositeExternalStorageProvider implements ExternalStorageProvider 
 
     @Override
     public Iterator<ResourceAmount> iterator() {
-        return Iterators.concat(providers.stream().map(ExternalStorageProvider::iterator).toList().iterator());
+        return Iterators.concat(providers.stream()
+                .map(ExternalStorageProvider::iterator)
+                .toList()
+                .iterator());
     }
 
     @Override

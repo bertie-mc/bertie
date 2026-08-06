@@ -13,10 +13,12 @@ class GenerateSuiteModMetadataTest {
     @Test
     fun `writes conventional NeoForge metadata`() {
         val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
-        val task = project.tasks.register(
-            "generateSuiteMetadata",
-            GenerateSuiteModMetadata::class.java,
-        ).get()
+        val task =
+            project.tasks
+                .register(
+                    "generateSuiteMetadata",
+                    GenerateSuiteModMetadata::class.java,
+                ).get()
         task.modId.set("example_gametests")
         task.displayName.set("Example GameTests")
         task.descriptionText.set("GameTests for Example")

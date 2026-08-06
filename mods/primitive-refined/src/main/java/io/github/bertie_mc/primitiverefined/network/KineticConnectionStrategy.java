@@ -1,11 +1,10 @@
 package io.github.bertie_mc.primitiverefined.network;
 
-import io.github.bertie_mc.primitiverefined.PrKinetics;
 import com.refinedmods.refinedstorage.common.api.support.network.ConnectionSink;
 import com.refinedmods.refinedstorage.common.api.support.network.ConnectionStrategy;
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;

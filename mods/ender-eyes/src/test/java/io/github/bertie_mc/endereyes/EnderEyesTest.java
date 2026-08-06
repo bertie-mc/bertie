@@ -17,26 +17,22 @@ import org.junit.jupiter.api.extension.ExtendWith;
 class EnderEyesTest {
     @Test
     void enchantedHelmetSuppressesAnger(MinecraftServer server) {
-        assertTrue(EnderEyes.protectsFromEnderman(
-                server.registryAccess(), enchantedHelmet(server)));
+        assertTrue(EnderEyes.protectsFromEnderman(server.registryAccess(), enchantedHelmet(server)));
     }
 
     @Test
     void unenchantedHelmetDoesNotSuppressAnger(MinecraftServer server) {
-        assertFalse(EnderEyes.protectsFromEnderman(
-                server.registryAccess(), new ItemStack(Items.DIAMOND_HELMET)));
+        assertFalse(EnderEyes.protectsFromEnderman(server.registryAccess(), new ItemStack(Items.DIAMOND_HELMET)));
     }
 
     @Test
     void emptyHeadSlotDoesNotSuppressAnger(MinecraftServer server) {
-        assertFalse(EnderEyes.protectsFromEnderman(
-                server.registryAccess(), ItemStack.EMPTY));
+        assertFalse(EnderEyes.protectsFromEnderman(server.registryAccess(), ItemStack.EMPTY));
     }
 
     private static ItemStack enchantedHelmet(MinecraftServer server) {
-        Holder<Enchantment> enchantment = server.registryAccess()
-                .lookupOrThrow(Registries.ENCHANTMENT)
-                .getOrThrow(EnderEyes.ENDER_EYES_KEY);
+        Holder<Enchantment> enchantment =
+                server.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(EnderEyes.ENDER_EYES_KEY);
         ItemStack helmet = new ItemStack(Items.DIAMOND_HELMET);
         helmet.enchant(enchantment, 1);
         return helmet;

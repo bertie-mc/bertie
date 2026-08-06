@@ -1,6 +1,7 @@
 package io.github.bertie_mc.bertieprogression.item;
 
 import com.mojang.datafixers.util.Pair;
+import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
@@ -20,8 +21,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
-
-import java.util.Optional;
 
 /**
  * Eye-of-Ender-style locator: on use it finds the nearest instance of a target structure and
@@ -49,16 +48,20 @@ public class WeepingEyeItem extends Item {
             return InteractionResultHolder.sidedSuccess(stack, true);
         }
         ResourceKey<Structure> key = ResourceKey.create(Registries.STRUCTURE, structureId);
-        Optional<Holder.Reference<Structure>> holder =
-                serverLevel.registryAccess().registryOrThrow(Registries.STRUCTURE).getHolder(key);
+        Optional<Holder.Reference<Structure>> holder = serverLevel
+                .registryAccess()
+                .registryOrThrow(Registries.STRUCTURE)
+                .getHolder(key);
         if (holder.isEmpty()) {
             serverPlayer.displayClientMessage(
                     Component.translatable("message.bertieprogression.locator_missing", structureId.toString()), true);
             return InteractionResultHolder.fail(stack);
         }
-        Pair<BlockPos, Holder<Structure>> found = serverLevel.getChunkSource().getGenerator()
-                .findNearestMapStructure(serverLevel, HolderSet.direct(holder.get()),
-                        serverPlayer.blockPosition(), searchRadius, false);
+        Pair<BlockPos, Holder<Structure>> found = serverLevel
+                .getChunkSource()
+                .getGenerator()
+                .findNearestMapStructure(
+                        serverLevel, HolderSet.direct(holder.get()), serverPlayer.blockPosition(), searchRadius, false);
         if (found == null) {
             serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.locator_none"), true);
             return InteractionResultHolder.fail(stack);
@@ -70,8 +73,15 @@ public class WeepingEyeItem extends Item {
         eye.signalTo(pos);
         level.addFreshEntity(eye);
 
-        level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.ENDER_EYE_LAUNCH, SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
+        level.playSound(
+                null,
+                player.getX(),
+                player.getY(),
+                player.getZ(),
+                SoundEvents.ENDER_EYE_LAUNCH,
+                SoundSource.NEUTRAL,
+                0.5F,
+                0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
         player.awardStat(net.minecraft.stats.Stats.ITEM_USED.get(this));
         player.getCooldowns().addCooldown(this, 20);
         if (!player.getAbilities().instabuild) {

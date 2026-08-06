@@ -1,19 +1,10 @@
 package io.github.bertie_mc.foodsystem.buffs;
 
-import io.github.bertie_mc.foodsystem.BFS;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.mojang.logging.LogUtils;
-import net.minecraft.core.Holder;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.item.Item;
-import org.slf4j.Logger;
-
+import io.github.bertie_mc.foodsystem.BFS;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -22,6 +13,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.Item;
+import org.slf4j.Logger;
 
 /**
  * Per-food buff definitions: which effects/attributes/abilities a food grants while it
@@ -58,8 +57,11 @@ public final class BuffsConfig {
         public final List<AttributeDef> knownModifiers;
         public final String rawJson;
 
-        Runtime(Map<Item, FoodBuff> foods, Map<ResourceLocation, Holder<MobEffect>> knownEffects,
-                List<AttributeDef> knownModifiers, String rawJson) {
+        Runtime(
+                Map<Item, FoodBuff> foods,
+                Map<ResourceLocation, Holder<MobEffect>> knownEffects,
+                List<AttributeDef> knownModifiers,
+                String rawJson) {
             this.foods = foods;
             this.knownEffects = knownEffects;
             this.knownModifiers = knownModifiers;
@@ -110,7 +112,8 @@ public final class BuffsConfig {
         List<AttributeDef> knownModifiers = new ArrayList<>();
 
         if (root.has("foods")) {
-            for (Map.Entry<String, JsonElement> entry : root.getAsJsonObject("foods").entrySet()) {
+            for (Map.Entry<String, JsonElement> entry :
+                    root.getAsJsonObject("foods").entrySet()) {
                 if (entry.getKey().startsWith("_")) continue;
                 ResourceLocation itemId = ResourceLocation.tryParse(entry.getKey());
                 if (itemId == null) {
@@ -122,7 +125,9 @@ public final class BuffsConfig {
                     LOGGER.warn("[bfs] unknown item '{}' (mod not installed?), skipped", itemId);
                     continue;
                 }
-                foods.put(itemOpt.get(), parseFood(itemId, entry.getValue().getAsJsonObject(), knownEffects, knownModifiers));
+                foods.put(
+                        itemOpt.get(),
+                        parseFood(itemId, entry.getValue().getAsJsonObject(), knownEffects, knownModifiers));
             }
         }
         // every effect/attribute a synergy may emit must be in the known sets so BuffEngine's
@@ -131,8 +136,11 @@ public final class BuffsConfig {
         return new Runtime(foods, knownEffects, knownModifiers, json);
     }
 
-    private static FoodBuff parseFood(ResourceLocation itemId, JsonObject obj,
-                                      Map<ResourceLocation, Holder<MobEffect>> knownEffects, List<AttributeDef> knownModifiers) {
+    private static FoodBuff parseFood(
+            ResourceLocation itemId,
+            JsonObject obj,
+            Map<ResourceLocation, Holder<MobEffect>> knownEffects,
+            List<AttributeDef> knownModifiers) {
         FoodBuff buff = new FoodBuff();
 
         if (obj.has("category") && obj.get("category").isJsonPrimitive()) {
@@ -167,12 +175,14 @@ public final class BuffsConfig {
                     continue;
                 }
                 double amount = a.get("amount").getAsDouble();
-                AttributeModifier.Operation op = switch (a.has("operation") ? a.get("operation").getAsString() : "add_value") {
-                    case "add_multiplied_base" -> AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
-                    case "add_multiplied_total" -> AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL;
-                    default -> AttributeModifier.Operation.ADD_VALUE;
-                };
-                ResourceLocation modifierId = ResourceLocation.fromNamespaceAndPath(BFS.MODID,
+                AttributeModifier.Operation op =
+                        switch (a.has("operation") ? a.get("operation").getAsString() : "add_value") {
+                            case "add_multiplied_base" -> AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
+                            case "add_multiplied_total" -> AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL;
+                            default -> AttributeModifier.Operation.ADD_VALUE;
+                        };
+                ResourceLocation modifierId = ResourceLocation.fromNamespaceAndPath(
+                        BFS.MODID,
                         (itemId.getNamespace() + "_" + itemId.getPath()).replaceAll("[^a-z0-9_]", "_") + "_a" + i);
                 AttributeDef def = new AttributeDef(holder.get(), new AttributeModifier(modifierId, amount, op));
                 buff.attributes.add(def);
@@ -185,10 +195,12 @@ public final class BuffsConfig {
             JsonObject ab = obj.getAsJsonObject("abilities");
             if (ab.has("flight")) buff.abilities.flight = ab.get("flight").getAsBoolean();
             if (ab.has("climbing")) buff.abilities.climbing = ab.get("climbing").getAsBoolean();
-            if (ab.has("enderman_calm")) buff.abilities.endermanCalm = ab.get("enderman_calm").getAsBoolean();
+            if (ab.has("enderman_calm"))
+                buff.abilities.endermanCalm = ab.get("enderman_calm").getAsBoolean();
             if (ab.has("magnet")) buff.abilities.magnetRadius = ab.get("magnet").getAsDouble();
             if (ab.has("xp_boost")) buff.abilities.xpBoost = ab.get("xp_boost").getAsDouble();
-            if (ab.has("durability_saver")) buff.abilities.durabilitySaver = ab.get("durability_saver").getAsDouble();
+            if (ab.has("durability_saver"))
+                buff.abilities.durabilitySaver = ab.get("durability_saver").getAsDouble();
         }
         return buff;
     }

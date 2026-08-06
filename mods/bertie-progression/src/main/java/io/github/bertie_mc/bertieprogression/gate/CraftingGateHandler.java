@@ -33,8 +33,7 @@ public final class CraftingGateHandler {
 
         event.setCanceled(true);
         if (!level.isClientSide) {
-            player.displayClientMessage(
-                    Component.translatable("message.bertieprogression.table_unlicensed"), true);
+            player.displayClientMessage(Component.translatable("message.bertieprogression.table_unlicensed"), true);
         }
     }
 

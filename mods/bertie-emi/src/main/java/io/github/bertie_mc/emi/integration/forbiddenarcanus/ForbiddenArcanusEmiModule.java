@@ -1,14 +1,14 @@
 package io.github.bertie_mc.emi.integration.forbiddenarcanus;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.stal111.forbidden_arcanus.common.item.crafting.ClibanoRecipe;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -21,13 +21,12 @@ import net.minecraft.world.item.crafting.Ingredient;
  * remains deferred — see PROJECT.md.
  */
 public final class ForbiddenArcanusEmiModule {
-    private ForbiddenArcanusEmiModule() {
-    }
+    private ForbiddenArcanusEmiModule() {}
 
     public static void register(EmiRegistry reg) {
         HephaestusRitualEmiModule.register(reg);
-        EmiRecipeCategory clibano = Categories.machine(reg,
-                "fa_clibano_combustion", "forbidden_arcanus:clibano_core", "Clibano Combustion");
+        EmiRecipeCategory clibano = Categories.machine(
+                reg, "fa_clibano_combustion", "forbidden_arcanus:clibano_core", "Clibano Combustion");
         Recipes.forEach(reg.getRecipeManager(), ClibanoRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) {
@@ -46,7 +45,8 @@ public final class ForbiddenArcanusEmiModule {
             }
             try {
                 if (r.requiredFireType() != null) {
-                    d.info(Component.literal("Fire: " + Categories.capitalize(r.requiredFireType().getSerializedName())));
+                    d.info(Component.literal("Fire: "
+                            + Categories.capitalize(r.requiredFireType().getSerializedName())));
                 }
             } catch (Throwable ignored) {
             }

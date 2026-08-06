@@ -2,25 +2,23 @@ package io.github.bertie_mc.emi.framework;
 
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.stack.EmiStack;
+import java.util.Locale;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 
-import java.util.Locale;
-
 /** Helpers for declaring machine categories (id under bertieemi, literal name, workstation icon). */
 public final class Categories {
-    private Categories() {
-    }
+    private Categories() {}
 
     private static final String NS = "bertieemi";
 
     /** Create + register a category and its workstation. {@code workstationItemId} is "namespace:path". */
     public static GenericEmiCategory machine(EmiRegistry reg, String key, String workstationItemId, String name) {
         EmiStack icon = stack(workstationItemId);
-        GenericEmiCategory cat = new GenericEmiCategory(
-                ResourceLocation.fromNamespaceAndPath(NS, key), icon, Component.literal(name));
+        GenericEmiCategory cat =
+                new GenericEmiCategory(ResourceLocation.fromNamespaceAndPath(NS, key), icon, Component.literal(name));
         reg.addCategory(cat);
         if (!icon.isEmpty()) {
             reg.addWorkstation(cat, icon);

@@ -5,9 +5,8 @@ import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
-import net.minecraft.resources.ResourceLocation;
-
 import java.util.List;
+import net.minecraft.resources.ResourceLocation;
 
 /**
  * NxN grid layout for {@code create:mechanical_crafting} (up to 9x9; the bertie pack uses at most
@@ -24,10 +23,9 @@ public final class MechanicalCraftingEmiRecipe extends BasicEmiRecipe {
     private final int gh;
     private final List<EmiIngredient> grid;
 
-    public MechanicalCraftingEmiRecipe(EmiRecipeCategory cat, ResourceLocation id,
-                                       int gw, int gh, List<EmiIngredient> grid, EmiStack result) {
-        super(cat, id, PAD * 2 + gw * SLOT + PAD + ARROW_W + PAD + SLOT + PAD,
-                PAD * 2 + Math.max(gh, 1) * SLOT);
+    public MechanicalCraftingEmiRecipe(
+            EmiRecipeCategory cat, ResourceLocation id, int gw, int gh, List<EmiIngredient> grid, EmiStack result) {
+        super(cat, id, PAD * 2 + gw * SLOT + PAD + ARROW_W + PAD + SLOT + PAD, PAD * 2 + Math.max(gh, 1) * SLOT);
         this.gw = gw;
         this.gh = gh;
         this.grid = grid;

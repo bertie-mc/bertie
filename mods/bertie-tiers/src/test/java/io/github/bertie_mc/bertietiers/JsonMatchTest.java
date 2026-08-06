@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import io.github.bertie_mc.bertietiers.config.JsonMatch;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import io.github.bertie_mc.bertietiers.config.JsonMatch;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

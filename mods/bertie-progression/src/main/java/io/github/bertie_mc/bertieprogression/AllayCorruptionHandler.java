@@ -1,13 +1,13 @@
 package io.github.bertie_mc.bertieprogression;
 
+import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.EquipmentSlot;
-import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
 import net.minecraft.world.entity.animal.allay.Allay;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -35,11 +35,9 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
 public final class AllayCorruptionHandler {
 
     /** Public so the EMI integration renders this trade from the same ids the handler acts on. */
-    public static final ResourceLocation INPUT =
-            ResourceLocation.parse("forbidden_arcanus:arcane_crystal");
+    public static final ResourceLocation INPUT = ResourceLocation.parse("forbidden_arcanus:arcane_crystal");
 
-    public static final ResourceLocation OUTPUT =
-            ResourceLocation.parse("forbidden_arcanus:corrupted_arcane_crystal");
+    public static final ResourceLocation OUTPUT = ResourceLocation.parse("forbidden_arcanus:corrupted_arcane_crystal");
 
     private static final int DELAY_MIN = 20;
     private static final int DELAY_MAX = 50;
@@ -62,8 +60,8 @@ public final class AllayCorruptionHandler {
             // not doomed yet: arm the countdown the moment it is holding an Arcane Crystal
             ItemStack held = allay.getItemBySlot(EquipmentSlot.MAINHAND);
             if (!held.isEmpty() && BuiltInRegistries.ITEM.getKey(held.getItem()).equals(INPUT)) {
-                allay.setData(ModAttachments.ALLAY_DOOM,
-                        DELAY_MIN + allay.getRandom().nextInt(DELAY_MAX - DELAY_MIN + 1));
+                allay.setData(
+                        ModAttachments.ALLAY_DOOM, DELAY_MIN + allay.getRandom().nextInt(DELAY_MAX - DELAY_MIN + 1));
             }
             return;
         }
@@ -77,8 +75,9 @@ public final class AllayCorruptionHandler {
 
         Item out = BuiltInRegistries.ITEM.get(OUTPUT);
         if (out != null) {
-            allay.level().addFreshEntity(new ItemEntity(allay.level(),
-                    allay.getX(), allay.getY() + 0.25, allay.getZ(), new ItemStack(out)));
+            allay.level()
+                    .addFreshEntity(new ItemEntity(
+                            allay.level(), allay.getX(), allay.getY() + 0.25, allay.getZ(), new ItemStack(out)));
         }
         allay.hurt(allay.damageSources().source(DamageTypes.GENERIC), Float.MAX_VALUE);
     }

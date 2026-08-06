@@ -17,10 +17,9 @@ public final class PackGameTests {
 
     @GameTest(template = "empty", timeoutTicks = 100)
     public static void packArmorOverrideConnectsCarvingAndImmersiveArmors(GameTestHelper helper) {
-        var expected = BuiltInRegistries.ITEM.get(
-                ResourceLocation.fromNamespaceAndPath("immersive_armors", "wooden_helmet"));
-        var carved = Carving.resultStack(
-                CarvingMaterial.WOOD, true, ArmorKind.HELMET.ordinal(), 0, 0);
+        var expected =
+                BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("immersive_armors", "wooden_helmet"));
+        var carved = Carving.resultStack(CarvingMaterial.WOOD, true, ArmorKind.HELMET.ordinal(), 0, 0);
         if (carved.getItem() != expected) {
             helper.fail("Pack armor override did not map a carved wood helmet to Immersive Armors");
             return;

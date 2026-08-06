@@ -33,23 +33,15 @@ public class MappedRegistryMixin {
      * only the frozen-state guard for those exact keys; duplicate and value validation in
      * MappedRegistry.register() remains intact.
      */
-    @Inject(
-        method = "validateWrite(Lnet/minecraft/resources/ResourceKey;)V",
-        at = @At("HEAD"),
-        cancellable = true
-    )
-    private void frozenregfix$allowImmersiveArmorMaterial(
-        ResourceKey<?> requestedKey,
-        CallbackInfo ci
-    ) {
+    @Inject(method = "validateWrite(Lnet/minecraft/resources/ResourceKey;)V", at = @At("HEAD"), cancellable = true)
+    private void frozenregfix$allowImmersiveArmorMaterial(ResourceKey<?> requestedKey, CallbackInfo ci) {
         if (this.frozen
-            && ((Registry<?>) (Object) this).key() == Registries.ARMOR_MATERIAL
-            && requestedKey.location().getNamespace().equals("immersive_armors")) {
+                && ((Registry<?>) (Object) this).key() == Registries.ARMOR_MATERIAL
+                && requestedKey.location().getNamespace().equals("immersive_armors")) {
             FrozenRegFix.LOGGER.warn(
-                "[{}] allowing targeted late armor-material registration for {}",
-                FrozenRegFix.MOD_ID,
-                requestedKey.location()
-            );
+                    "[{}] allowing targeted late armor-material registration for {}",
+                    FrozenRegFix.MOD_ID,
+                    requestedKey.location());
             ci.cancel();
         }
     }

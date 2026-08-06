@@ -16,8 +16,7 @@ import java.util.Map;
 
 /** Recursive merge over AutoConfig's serializer-independent Java data model. */
 final class AutoConfigTreeMerge {
-    private AutoConfigTreeMerge() {
-    }
+    private AutoConfigTreeMerge() {}
 
     static void apply(Object target, List<Change> changes) {
         for (Change change : changes) {
@@ -36,14 +35,12 @@ final class AutoConfigTreeMerge {
                     field.set(target, merged);
                 }
             } catch (ReflectiveOperationException exception) {
-                throw new ConfigMigrationException(
-                        "Failed to merge AutoConfig field " + field.getName(), exception);
+                throw new ConfigMigrationException("Failed to merge AutoConfig field " + field.getName(), exception);
             }
         }
     }
 
-    private static Object mergeValue(Object current, Object fragment, Type type)
-            throws ReflectiveOperationException {
+    private static Object mergeValue(Object current, Object fragment, Type type) throws ReflectiveOperationException {
         if (!(fragment instanceof UnmodifiableConfig table)) {
             return convert(fragment, type);
         }

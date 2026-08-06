@@ -22,7 +22,8 @@ final class MigrationStateStore {
             return 0;
         }
         try {
-            return Integer.parseInt(Files.readString(path, StandardCharsets.UTF_8).strip());
+            return Integer.parseInt(
+                    Files.readString(path, StandardCharsets.UTF_8).strip());
         } catch (IOException | NumberFormatException exception) {
             throw new ConfigMigrationException("Failed to read migration state " + path, exception);
         }

@@ -19,19 +19,14 @@ public final class SuperMartijn642Integration {
     private final List<Target> targets;
     private final Map<Selector, MigrationManager.Migration> pending = new HashMap<>();
 
-    private SuperMartijn642Integration(
-            MigrationManager migrations,
-            Path configDirectory,
-            List<Target> targets) {
+    private SuperMartijn642Integration(MigrationManager migrations, Path configDirectory, List<Target> targets) {
         this.migrations = migrations;
         this.configDirectory = configDirectory;
         this.targets = targets;
     }
 
     public static SuperMartijn642Integration load(
-            MigrationManager migrations,
-            Path configDirectory,
-            Path manifestDirectory) {
+            MigrationManager migrations, Path configDirectory, Path manifestDirectory) {
         List<Target> targets = new ArrayList<>();
         Set<Selector> selectors = new HashSet<>();
         for (MigrationManifest manifest : MigrationManifest.loadDirectory(manifestDirectory)) {
@@ -52,9 +47,8 @@ public final class SuperMartijn642Integration {
             return;
         }
 
-        MigrationManager.Migration migration = migrations.prepare(
-                target.manifest(),
-                configDirectory.resolve(identifier));
+        MigrationManager.Migration migration =
+                migrations.prepare(target.manifest(), configDirectory.resolve(identifier));
         if (migration == null) {
             return;
         }
@@ -88,6 +82,5 @@ public final class SuperMartijn642Integration {
         }
     }
 
-    private record Selector(String modId, String file) {
-    }
+    private record Selector(String modId, String file) {}
 }

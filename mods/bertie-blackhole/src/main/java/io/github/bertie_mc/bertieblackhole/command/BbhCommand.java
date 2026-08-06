@@ -1,13 +1,14 @@
 package io.github.bertie_mc.bertieblackhole.command;
 
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.context.CommandContext;
 import io.github.bertie_mc.bertieblackhole.BlackHoleState;
 import io.github.bertie_mc.bertieblackhole.StatefulBlackHole;
 import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
 import io.github.bertie_mc.bertieblackhole.config.CounterDef;
 import io.github.bertie_mc.bertieblackhole.config.ExchangeDef;
 import io.github.bertie_mc.bertieblackhole.config.LevelDef;
-import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.context.CommandContext;
+import javax.annotation.Nullable;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -16,15 +17,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
-import javax.annotation.Nullable;
-
 /** {@code /bertieblackhole reload} and {@code /bertieblackhole info} - there is no GUI. */
 public final class BbhCommand {
 
     private static final int SEARCH_RADIUS = 8;
 
-    private BbhCommand() {
-    }
+    private BbhCommand() {}
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(Commands.literal("bertieblackhole")
@@ -36,8 +34,11 @@ public final class BbhCommand {
     private static int reload(CommandContext<CommandSourceStack> context) {
         try {
             BbhConfig config = BbhConfig.reload();
-            context.getSource().sendSuccess(() -> Component.literal(
-                    "Reloaded " + BbhConfig.FILE_NAME + " - " + config.levels().size() + " level(s)"), true);
+            context.getSource()
+                    .sendSuccess(
+                            () -> Component.literal("Reloaded " + BbhConfig.FILE_NAME + " - "
+                                    + config.levels().size() + " level(s)"),
+                            true);
             return 1;
         } catch (Exception e) {
             context.getSource().sendFailure(Component.literal("Reload failed: " + e.getMessage()));
@@ -54,7 +55,8 @@ public final class BbhCommand {
         StatefulBlackHole found = null;
         double best = Double.MAX_VALUE;
 
-        for (BlockPos pos : BlockPos.betweenClosed(origin.offset(-SEARCH_RADIUS, -SEARCH_RADIUS, -SEARCH_RADIUS),
+        for (BlockPos pos : BlockPos.betweenClosed(
+                origin.offset(-SEARCH_RADIUS, -SEARCH_RADIUS, -SEARCH_RADIUS),
                 origin.offset(SEARCH_RADIUS, SEARCH_RADIUS, SEARCH_RADIUS))) {
             if (!level.isLoaded(pos)) {
                 continue;
@@ -90,24 +92,32 @@ public final class BbhCommand {
         } else {
             for (CounterDef counter : next.requires().values()) {
                 int current = state.counters().getOrDefault(counter.id(), 0);
-                send(source, "  counter " + counter.id() + ": " + current + " / " + counter.max(),
+                send(
+                        source,
+                        "  counter " + counter.id() + ": " + current + " / " + counter.max(),
                         current >= counter.max() ? ChatFormatting.GREEN : ChatFormatting.GRAY);
             }
         }
 
         for (ExchangeDef exchange : config.exchangesFor(level)) {
             int banked = state.buffers().getOrDefault(exchange.id(), 0);
-            send(source, "  exchange " + exchange.id() + ": " + banked + " / " + exchange.count()
-                    + " banked -> " + exchange.outputCount() + "x " + exchange.output(), ChatFormatting.GRAY);
+            send(
+                    source,
+                    "  exchange " + exchange.id() + ": " + banked + " / " + exchange.count() + " banked -> "
+                            + exchange.outputCount() + "x " + exchange.output(),
+                    ChatFormatting.GRAY);
         }
 
         if (state.pendingExchange() != null) {
-            send(source, "  converting " + state.pendingExchange() + " in " + state.outputTimer() + " ticks",
+            send(
+                    source,
+                    "  converting " + state.pendingExchange() + " in " + state.outputTimer() + " ticks",
                     ChatFormatting.AQUA);
         }
     }
 
     private static void send(CommandSourceStack source, String text, @Nullable ChatFormatting colour) {
-        source.sendSuccess(() -> Component.literal(text).withStyle(colour == null ? ChatFormatting.WHITE : colour), false);
+        source.sendSuccess(
+                () -> Component.literal(text).withStyle(colour == null ? ChatFormatting.WHITE : colour), false);
     }
 }

@@ -24,8 +24,7 @@ public final class ScreenshotCopy {
             clipboard.copy(event.getImage());
         } catch (RuntimeException exception) {
             LOGGER.error("Could not copy screenshot to the native clipboard", exception);
-            event.setResultMessage(Component.translatable(
-                    "message.screenshotcopy.copy_failed", exception.toString()));
+            event.setResultMessage(Component.translatable("message.screenshotcopy.copy_failed", exception.toString()));
         }
     }
 }

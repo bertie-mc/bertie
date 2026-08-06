@@ -30,8 +30,8 @@ class MigrationStateStoreTest {
 
     @Test
     void rejectsPathsOutsideTheGameDirectory() {
-        MigrationStateStore state = new MigrationStateStore(
-                gameDirectory, gameDirectory.resolve("config/config-migrations/state"));
+        MigrationStateStore state =
+                new MigrationStateStore(gameDirectory, gameDirectory.resolve("config/config-migrations/state"));
 
         assertThrows(
                 ConfigMigrationException.class,

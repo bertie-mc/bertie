@@ -24,14 +24,12 @@ class FzzyConfigLifecycleTest {
     @Test
     void wrapsNativeLoadAndCommitsAfterItsPersistence() throws Exception {
         Path gameDirectory = FMLPaths.GAMEDIR.get().toAbsolutePath().normalize();
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/fzzy/tests/client.toml");
-        Path target = FMLPaths.CONFIGDIR.get()
-                .resolve(FOLDER)
-                .resolve(SUBFOLDER)
-                .resolve(NAME + ".json");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/fzzy/tests/client.toml");
+        Path target =
+                FMLPaths.CONFIGDIR.get().resolve(FOLDER).resolve(SUBFOLDER).resolve(NAME + ".json");
         Path stateRoot = gameDirectory.resolve("config/config-migrations/state");
-        Path state = stateRoot.resolve(gameDirectory.relativize(target.toAbsolutePath().normalize()))
+        Path state = stateRoot
+                .resolve(gameDirectory.relativize(target.toAbsolutePath().normalize()))
                 .resolveSibling(NAME + ".json.version");
         Files.createDirectories(manifest.getParent());
         Files.createDirectories(target.getParent());
@@ -82,17 +80,14 @@ class FzzyConfigLifecycleTest {
     void leavesTheMissingFileBranchAvailableForCompatibilityImport() throws Exception {
         String name = "compat";
         Path gameDirectory = FMLPaths.GAMEDIR.get().toAbsolutePath().normalize();
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/fzzy/tests/compat.toml");
-        Path target = FMLPaths.CONFIGDIR.get()
-                .resolve(FOLDER)
-                .resolve(SUBFOLDER)
-                .resolve(name + ".json");
-        Path compatibility = FMLPaths.CONFIGDIR.get()
-                .resolve("configmigrations-fzzy-legacy")
-                .resolve(name + ".toml");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/fzzy/tests/compat.toml");
+        Path target =
+                FMLPaths.CONFIGDIR.get().resolve(FOLDER).resolve(SUBFOLDER).resolve(name + ".json");
+        Path compatibility =
+                FMLPaths.CONFIGDIR.get().resolve("configmigrations-fzzy-legacy").resolve(name + ".toml");
         Path stateRoot = gameDirectory.resolve("config/config-migrations/state");
-        Path state = stateRoot.resolve(gameDirectory.relativize(target.toAbsolutePath().normalize()))
+        Path state = stateRoot
+                .resolve(gameDirectory.relativize(target.toAbsolutePath().normalize()))
                 .resolveSibling(name + ".json.version");
         Files.createDirectories(manifest.getParent());
         Files.createDirectories(target.getParent());
@@ -106,9 +101,7 @@ class FzzyConfigLifecycleTest {
                 [changes.fragment.settings]
                 enabled = false
                 """.formatted(FOLDER, SUBFOLDER, name));
-        Files.writeString(
-                compatibility,
-                "{\"settings\":{\"enabled\":true,\"kept\":\"legacy player value\"}}");
+        Files.writeString(compatibility, "{\"settings\":{\"enabled\":true,\"kept\":\"legacy player value\"}}");
         Files.deleteIfExists(target);
         Files.deleteIfExists(state);
         ConfigApiImpl api = ConfigApiImpl.INSTANCE;

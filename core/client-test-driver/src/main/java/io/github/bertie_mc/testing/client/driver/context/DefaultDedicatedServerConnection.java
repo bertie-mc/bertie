@@ -8,40 +8,26 @@ import net.minecraft.client.multiplayer.ServerData;
 import net.minecraft.client.multiplayer.resolver.ServerAddress;
 
 /** Owns the client's connection to an in-process dedicated server. */
-final class DefaultDedicatedServerConnection extends DefaultServerConnection
-        implements DedicatedServerConnection {
+final class DefaultDedicatedServerConnection extends DefaultServerConnection implements DedicatedServerConnection {
     private final InetSocketAddress address;
     private boolean closed;
 
     private DefaultDedicatedServerConnection(
-            DefaultClientTestContext context,
-            DefaultDedicatedServerContext server,
-            InetSocketAddress address) {
+            DefaultClientTestContext context, DefaultDedicatedServerContext server, InetSocketAddress address) {
         super(context, server);
         this.address = address;
     }
 
     static DefaultDedicatedServerConnection connect(
-            DefaultClientTestContext context,
-            DefaultDedicatedServerContext server,
-            InetSocketAddress address) {
+            DefaultClientTestContext context, DefaultDedicatedServerContext server, InetSocketAddress address) {
         String addressText = formatAddress(address);
         ServerAddress parsed = ServerAddress.parseString(addressText);
         context.runOnClient(client -> {
-            ServerData data = new ServerData(
-                    "Bertie client-test server", addressText, ServerData.Type.OTHER);
-            ConnectScreen.startConnecting(
-                    client.screen,
-                    client,
-                    parsed,
-                    data,
-                    false,
-                    null);
+            ServerData data = new ServerData("Bertie client-test server", addressText, ServerData.Type.OTHER);
+            ConnectScreen.startConnecting(client.screen, client, parsed, data, false, null);
         });
         ClientWorldLoading.waitForWorld(
-                context,
-                "the dedicated-server connection",
-                client -> client.level != null && client.player != null);
+                context, "the dedicated-server connection", client -> client.level != null && client.player != null);
         return new DefaultDedicatedServerConnection(context, server, address);
     }
 

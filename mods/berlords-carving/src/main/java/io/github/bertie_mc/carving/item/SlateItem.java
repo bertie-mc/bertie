@@ -2,6 +2,7 @@ package io.github.bertie_mc.carving.item;
 
 import io.github.bertie_mc.carving.CarvingMaterial;
 import io.github.bertie_mc.carving.net.OpenCarvingPayload;
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -13,8 +14,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.network.PacketDistributor;
-
-import java.util.List;
 
 /**
  * A blank "slate" of a given material. A small slate carves tool heads; a big slate carves armor
@@ -38,16 +37,16 @@ public class SlateItem extends Item {
             return InteractionResultHolder.pass(stack); // tier 2 slates are worked at the carving station
         }
         if (!level.isClientSide && player instanceof ServerPlayer sp) {
-            PacketDistributor.sendToPlayer(sp,
-                    new OpenCarvingPayload(material.ordinal(), big, hand == InteractionHand.MAIN_HAND));
+            PacketDistributor.sendToPlayer(
+                    sp, new OpenCarvingPayload(material.ordinal(), big, hand == InteractionHand.MAIN_HAND));
         }
         return InteractionResultHolder.success(stack);
     }
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.translatable("berlordscarving.tier." + material.tier)
-                .withStyle(ChatFormatting.GRAY));
+        tooltip.add(
+                Component.translatable("berlordscarving.tier." + material.tier).withStyle(ChatFormatting.GRAY));
         super.appendHoverText(stack, context, tooltip, flag);
     }
 }

@@ -1,19 +1,16 @@
 package io.github.bertie_mc.primitiverefined.content.controller;
 
-import java.util.function.Predicate;
-
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-import io.github.bertie_mc.primitiverefined.PrRegistry;
 import com.simibubi.create.content.kinetics.base.HorizontalAxisKineticBlock;
 import com.simibubi.create.content.kinetics.base.IRotate;
 import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
 import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
 import com.simibubi.create.foundation.block.IBE;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
+import java.util.function.Predicate;
 import net.createmod.catnip.placement.IPlacementHelper;
 import net.createmod.catnip.placement.PlacementHelpers;
 import net.createmod.catnip.placement.PlacementOffset;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -125,8 +122,14 @@ public class PControllerBlock extends HorizontalAxisKineticBlock
      * placement helper and so do we - it is the same interaction players already know.
      */
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
-                                              Player player, InteractionHand hand, BlockHitResult ray) {
+    protected ItemInteractionResult useItemOn(
+            ItemStack stack,
+            BlockState state,
+            Level level,
+            BlockPos pos,
+            Player player,
+            InteractionHand hand,
+            BlockHitResult ray) {
         IPlacementHelper helper = PlacementHelpers.get(PLACEMENT_HELPER_ID);
         if (helper.matchesItem(stack)) {
             return helper.getOffset(player, level, state, pos, ray)
@@ -148,18 +151,16 @@ public class PControllerBlock extends HorizontalAxisKineticBlock
         }
 
         @Override
-        public PlacementOffset getOffset(Player player, Level level, BlockState state, BlockPos pos,
-                                         BlockHitResult ray) {
+        public PlacementOffset getOffset(
+                Player player, Level level, BlockState state, BlockPos pos, BlockHitResult ray) {
             BlockPos above = pos.above();
             if (!level.getBlockState(above).canBeReplaced()) {
                 return PlacementOffset.fail();
             }
             // Perpendicular to the controller, which is the only orientation that meshes.
-            Direction.Axis cogAxis = state.getValue(HORIZONTAL_AXIS) == Direction.Axis.X
-                    ? Direction.Axis.Z
-                    : Direction.Axis.X;
-            return PlacementOffset.success(above,
-                    placed -> placed.setValue(RotatedPillarKineticBlock.AXIS, cogAxis));
+            Direction.Axis cogAxis =
+                    state.getValue(HORIZONTAL_AXIS) == Direction.Axis.X ? Direction.Axis.Z : Direction.Axis.X;
+            return PlacementOffset.success(above, placed -> placed.setValue(RotatedPillarKineticBlock.AXIS, cogAxis));
         }
     }
 
@@ -169,7 +170,8 @@ public class PControllerBlock extends HorizontalAxisKineticBlock
     }
 
     @Override
-    public net.minecraft.world.level.block.entity.BlockEntityType<? extends PControllerBlockEntity> getBlockEntityType() {
+    public net.minecraft.world.level.block.entity.BlockEntityType<? extends PControllerBlockEntity>
+            getBlockEntityType() {
         return PrRegistry.P_CONTROLLER_BE.get();
     }
 }

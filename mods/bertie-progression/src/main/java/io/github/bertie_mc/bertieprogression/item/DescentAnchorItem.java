@@ -45,8 +45,13 @@ public class DescentAnchorItem extends Item {
                 back = GlobalPos.of(backLevel.dimension(), backLevel.getSharedSpawnPos());
             }
             BlockPos p = back.pos();
-            serverPlayer.teleportTo(backLevel, p.getX() + 0.5, p.getY() + 0.1, p.getZ() + 0.5,
-                    serverPlayer.getYRot(), serverPlayer.getXRot());
+            serverPlayer.teleportTo(
+                    backLevel,
+                    p.getX() + 0.5,
+                    p.getY() + 0.1,
+                    p.getZ() + 0.5,
+                    serverPlayer.getYRot(),
+                    serverPlayer.getXRot());
             stack.remove(ModItems.RETURN_POS.get());
             return InteractionResultHolder.consume(stack);
         }
@@ -56,11 +61,17 @@ public class DescentAnchorItem extends Item {
             serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.no_imbrifer"), true);
             return InteractionResultHolder.fail(stack);
         }
-        stack.set(ModItems.RETURN_POS.get(), GlobalPos.of(serverPlayer.level().dimension(),
-                serverPlayer.blockPosition()));
+        stack.set(
+                ModItems.RETURN_POS.get(),
+                GlobalPos.of(serverPlayer.level().dimension(), serverPlayer.blockPosition()));
         BlockPos landing = findLanding(target, serverPlayer.blockPosition());
-        serverPlayer.teleportTo(target, landing.getX() + 0.5, landing.getY(), landing.getZ() + 0.5,
-                serverPlayer.getYRot(), serverPlayer.getXRot());
+        serverPlayer.teleportTo(
+                target,
+                landing.getX() + 0.5,
+                landing.getY(),
+                landing.getZ() + 0.5,
+                serverPlayer.getYRot(),
+                serverPlayer.getXRot());
         serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.descended"), true);
         return InteractionResultHolder.consume(stack);
     }
@@ -77,7 +88,8 @@ public class DescentAnchorItem extends Item {
             BlockPos head = new BlockPos(x, y + 1, z);
             if (!level.getBlockState(ground).isAir()
                     && level.getBlockState(ground).isSolidRender(level, ground)
-                    && level.getBlockState(feet).isAir() && level.getBlockState(head).isAir()
+                    && level.getBlockState(feet).isAir()
+                    && level.getBlockState(head).isAir()
                     && level.getFluidState(feet).isEmpty()) {
                 return feet;
             }
@@ -85,8 +97,8 @@ public class DescentAnchorItem extends Item {
         BlockPos shelf = new BlockPos(x, 64, z);
         for (int dx = -1; dx <= 1; dx++)
             for (int dz = -1; dz <= 1; dz++)
-                level.setBlockAndUpdate(shelf.offset(dx, -1, dz),
-                        net.minecraft.world.level.block.Blocks.OBSIDIAN.defaultBlockState());
+                level.setBlockAndUpdate(
+                        shelf.offset(dx, -1, dz), net.minecraft.world.level.block.Blocks.OBSIDIAN.defaultBlockState());
         level.setBlockAndUpdate(shelf, net.minecraft.world.level.block.Blocks.AIR.defaultBlockState());
         level.setBlockAndUpdate(shelf.above(), net.minecraft.world.level.block.Blocks.AIR.defaultBlockState());
         return shelf;

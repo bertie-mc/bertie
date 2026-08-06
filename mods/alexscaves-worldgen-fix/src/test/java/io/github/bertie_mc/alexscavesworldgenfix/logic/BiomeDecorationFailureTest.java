@@ -7,14 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.junit.jupiter.api.Test;
 
 class BiomeDecorationFailureTest {
 
     /** The runtime name observed in the crash log - Mixin's rename of the handler. */
-    private static final String RUNTIME_HANDLER_NAME =
-            "redirect$dfj000$alexscaves$ac_clampBiomeDecorationIndex";
+    private static final String RUNTIME_HANDLER_NAME = "redirect$dfj000$alexscaves$ac_clampBiomeDecorationIndex";
 
     /** Alex's Caves 2.0.10, transcribed from the shipped bytecode. */
     private static Object alexsCavesClamp(List<?> list, int index) {
@@ -28,9 +26,8 @@ class BiomeDecorationFailureTest {
     @Test
     void upstreamClampThrowsOnAnEmptyList() {
         // max(0, min(-1, -1)) == 0, so the clamp still calls get(0) on an empty list.
-        IndexOutOfBoundsException thrown = assertThrows(
-                IndexOutOfBoundsException.class,
-                () -> alexsCavesClamp(List.of(), -1));
+        IndexOutOfBoundsException thrown =
+                assertThrows(IndexOutOfBoundsException.class, () -> alexsCavesClamp(List.of(), -1));
 
         assertEquals("Index 0 out of bounds for length 0", thrown.getMessage());
     }
@@ -106,9 +103,8 @@ class BiomeDecorationFailureTest {
 
     /** The real failure: the upstream clamp thrown from a frame Mixin has renamed. */
     private static IndexOutOfBoundsException clampFailure() {
-        IndexOutOfBoundsException thrown = assertThrows(
-                IndexOutOfBoundsException.class,
-                () -> alexsCavesClamp(new ArrayList<>(), -1));
+        IndexOutOfBoundsException thrown =
+                assertThrows(IndexOutOfBoundsException.class, () -> alexsCavesClamp(new ArrayList<>(), -1));
         thrown.setStackTrace(new StackTraceElement[] {
             frame("java.util.ArrayList", "get"),
             frame("net.minecraft.world.level.chunk.ChunkGenerator", RUNTIME_HANDLER_NAME),

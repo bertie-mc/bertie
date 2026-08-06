@@ -1,7 +1,6 @@
 package io.github.bertie_mc.bertieprogression;
 
 import java.util.Optional;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -33,15 +32,13 @@ import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
  */
 public final class CrushingEssenceHandler {
 
-    private CrushingEssenceHandler() {
-    }
+    private CrushingEssenceHandler() {}
 
     /** Create's Crushing Wheel damage type. Not the saw, roller or run_over types. */
     private static final ResourceKey<net.minecraft.world.damagesource.DamageType> CRUSH =
             ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("create:crush"));
 
-    private static final ResourceLocation ESSENCE =
-            ResourceLocation.parse("twilightforest:exanimate_essence");
+    private static final ResourceLocation ESSENCE = ResourceLocation.parse("twilightforest:exanimate_essence");
 
     private static final float CHANCE_PASSIVE = 0.01F;
     private static final float CHANCE_HOSTILE = 0.05F;
@@ -78,8 +75,7 @@ public final class CrushingEssenceHandler {
     }
 
     private static ItemEntity dropAt(LivingEntity victim, ItemStack stack) {
-        ItemEntity entity = new ItemEntity(victim.level(), victim.getX(), victim.getY(),
-                victim.getZ(), stack);
+        ItemEntity entity = new ItemEntity(victim.level(), victim.getX(), victim.getY(), victim.getZ(), stack);
         entity.setDefaultPickUpDelay();
         return entity;
     }

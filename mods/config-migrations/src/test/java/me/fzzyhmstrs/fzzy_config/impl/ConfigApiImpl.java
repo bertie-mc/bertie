@@ -25,15 +25,10 @@ public final class ConfigApiImpl {
     private File compatibilityFile;
     private FileType compatibilityType = FileType.TOML;
 
-    private ConfigApiImpl() {
-    }
+    private ConfigApiImpl() {}
 
     public <T extends Config> T readOrCreateAndValidate$fzzy_config(
-            Function0<? extends T> configClass,
-            T classInstance,
-            String name,
-            String folder,
-            String subfolder) {
+            Function0<? extends T> configClass, T classInstance, String name, String folder, String subfolder) {
         nativeLoads++;
         Path directory = FMLPaths.CONFIGDIR.get();
         if (!folder.isEmpty()) {
@@ -58,14 +53,16 @@ public final class ConfigApiImpl {
         try {
             T loaded = classInstance;
             if (Files.exists(input)) {
-                TomlTable document = (TomlTable) type(input).decode(Files.readString(input)).get();
+                TomlTable document =
+                        (TomlTable) type(input).decode(Files.readString(input)).get();
                 loaded.fixtureDocument(document);
             } else {
                 Pair<File, FileType> compatibility =
                         getCompat(Reflection.getOrCreateKotlinClass(classInstance.getClass()));
                 if (compatibility.getFirst() != null && compatibility.getFirst().exists()) {
                     input = compatibility.getFirst().toPath();
-                    TomlTable document = (TomlTable) compatibility.getSecond()
+                    TomlTable document = (TomlTable) compatibility
+                            .getSecond()
                             .decode(Files.readString(input))
                             .get();
                     loaded.fixtureDocument(document);
@@ -109,19 +106,23 @@ public final class ConfigApiImpl {
     }
 
     private void writeFile(Object config, FileResult files, String name, String error) {
-        lastWrite = CompletableFuture.runAsync(() -> {
-            try {
-                Files.createDirectories(files.output().getParent());
-                Files.writeString(
-                        files.output(),
-                        files.outputType().encode(((Config) config).fixtureDocument()).get());
-                if (!files.input().equals(files.output())) {
-                    Files.deleteIfExists(files.input());
-                }
-            } catch (IOException exception) {
-                throw new UncheckedIOException(exception);
-            }
-        }, ForkJoinPool.commonPool());
+        lastWrite = CompletableFuture.runAsync(
+                () -> {
+                    try {
+                        Files.createDirectories(files.output().getParent());
+                        Files.writeString(
+                                files.output(),
+                                files.outputType()
+                                        .encode(((Config) config).fixtureDocument())
+                                        .get());
+                        if (!files.input().equals(files.output())) {
+                            Files.deleteIfExists(files.input());
+                        }
+                    } catch (IOException exception) {
+                        throw new UncheckedIOException(exception);
+                    }
+                },
+                ForkJoinPool.commonPool());
     }
 
     private static FileType type(Path path) {
@@ -133,6 +134,5 @@ public final class ConfigApiImpl {
         throw new IllegalArgumentException(path.toString());
     }
 
-    private record FileResult(Path input, Path output, FileType outputType) {
-    }
+    private record FileResult(Path input, Path output, FileType outputType) {}
 }

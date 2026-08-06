@@ -7,11 +7,12 @@ import org.junit.jupiter.api.Test
 class ModMetadataTest {
     @Test
     fun `derives metadata ranges from exact platform versions`() {
-        val platform = PlatformVersions(
-            minecraft = "1.20.4",
-            neoForge = "20.4.237",
-            javaFmlLoader = "3",
-        )
+        val platform =
+            PlatformVersions(
+                minecraft = "1.20.4",
+                neoForge = "20.4.237",
+                javaFmlLoader = "3",
+            )
 
         assertEquals("[1.20.4,1.21)", platform.minecraftVersionRange)
         assertEquals("[20.4,)", platform.neoForgeVersionRange)
@@ -31,22 +32,24 @@ class ModMetadataTest {
 
     @Test
     fun `mod metadata uses the shared platform properties`() {
-        val platform = PlatformVersions(
-            minecraft = "1.20.4",
-            neoForge = "20.4.237",
-            javaFmlLoader = "3",
-        )
-        val metadata = ModMetadata(
-            id = "example",
-            displayName = "Example",
-            license = "Unlicense",
-            version = "1.0.0",
-            group = "example",
-            authors = "Example",
-            description = "Example mod",
-            archiveName = "example",
-            gameTestNamespace = "example",
-        )
+        val platform =
+            PlatformVersions(
+                minecraft = "1.20.4",
+                neoForge = "20.4.237",
+                javaFmlLoader = "3",
+            )
+        val metadata =
+            ModMetadata(
+                id = "example",
+                displayName = "Example",
+                license = "Unlicense",
+                version = "1.0.0",
+                group = "example",
+                authors = "Example",
+                description = "Example mod",
+                archiveName = "example",
+                gameTestNamespace = "example",
+            )
 
         val properties = metadata.templateProperties(platform)
 

@@ -4,11 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.google.gson.JsonParser;
 import io.github.bertie_mc.bertietiers.config.ConfigParser;
 import io.github.bertie_mc.bertietiers.config.ConfigValidator;
 import io.github.bertie_mc.bertietiers.config.RawConfig;
 import io.github.bertie_mc.bertietiers.config.ValidatedConfig;
-import com.google.gson.JsonParser;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -27,20 +27,33 @@ import org.junit.jupiter.api.Test;
 class DefaultConfigTest {
 
     private static final List<String> VANILLA_ORES = List.of(
-            "minecraft:coal_ore", "minecraft:deepslate_coal_ore",
-            "minecraft:nether_gold_ore", "minecraft:nether_quartz_ore",
-            "minecraft:copper_ore", "minecraft:deepslate_copper_ore",
-            "minecraft:iron_ore", "minecraft:deepslate_iron_ore",
-            "minecraft:lapis_ore", "minecraft:deepslate_lapis_ore",
-            "minecraft:gold_ore", "minecraft:deepslate_gold_ore",
-            "minecraft:redstone_ore", "minecraft:deepslate_redstone_ore",
-            "minecraft:diamond_ore", "minecraft:deepslate_diamond_ore",
-            "minecraft:emerald_ore", "minecraft:deepslate_emerald_ore",
+            "minecraft:coal_ore",
+            "minecraft:deepslate_coal_ore",
+            "minecraft:nether_gold_ore",
+            "minecraft:nether_quartz_ore",
+            "minecraft:copper_ore",
+            "minecraft:deepslate_copper_ore",
+            "minecraft:iron_ore",
+            "minecraft:deepslate_iron_ore",
+            "minecraft:lapis_ore",
+            "minecraft:deepslate_lapis_ore",
+            "minecraft:gold_ore",
+            "minecraft:deepslate_gold_ore",
+            "minecraft:redstone_ore",
+            "minecraft:deepslate_redstone_ore",
+            "minecraft:diamond_ore",
+            "minecraft:deepslate_diamond_ore",
+            "minecraft:emerald_ore",
+            "minecraft:deepslate_emerald_ore",
             "minecraft:ancient_debris");
 
     private static final List<String> VANILLA_PICKAXES = List.of(
-            "minecraft:wooden_pickaxe", "minecraft:golden_pickaxe", "minecraft:stone_pickaxe",
-            "minecraft:iron_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe");
+            "minecraft:wooden_pickaxe",
+            "minecraft:golden_pickaxe",
+            "minecraft:stone_pickaxe",
+            "minecraft:iron_pickaxe",
+            "minecraft:diamond_pickaxe",
+            "minecraft:netherite_pickaxe");
 
     private static RawConfig shipped() {
         try (InputStream in = DefaultConfigTest.class.getResourceAsStream("/bertietiers/default_config.json")) {
@@ -69,9 +82,11 @@ class DefaultConfigTest {
         assertEquals(List.of(), result.warnings(), "the shipped config should load cleanly");
 
         ValidatedConfig config = result.config();
-        assertEquals(List.of("wood", "stone", "iron", "diamond", "netherite"),
+        assertEquals(
+                List.of("wood", "stone", "iron", "diamond", "netherite"),
                 config.tiers().stream().map(ValidatedConfig.Tier::id).toList());
-        assertEquals(List.of(100, 200, 300, 400, 500),
+        assertEquals(
+                List.of(100, 200, 300, 400, 500),
                 config.tiers().stream().map(ValidatedConfig.Tier::level).toList());
         assertEquals(VANILLA_ORES.size(), config.controlledBlockCount(), "every vanilla ore should be controlled");
         assertEquals(6 + 102, config.toolMatcherCount(), "6 vanilla pickaxes plus 17 Slag materials x 6 shapes");
@@ -95,17 +110,32 @@ class DefaultConfigTest {
     @DisplayName("every vanilla ore sits at the tier vanilla itself requires")
     void oresKeepVanillaTiers() {
         ValidatedConfig config = ConfigValidator.validate(shipped(), withSlag()).config();
-        assertEquals(List.of("minecraft:coal_ore", "minecraft:deepslate_coal_ore",
-                        "minecraft:nether_gold_ore", "minecraft:nether_quartz_ore"),
+        assertEquals(
+                List.of(
+                        "minecraft:coal_ore",
+                        "minecraft:deepslate_coal_ore",
+                        "minecraft:nether_gold_ore",
+                        "minecraft:nether_quartz_ore"),
                 blocksOf(config, "wood"));
-        assertEquals(List.of("minecraft:copper_ore", "minecraft:deepslate_copper_ore",
-                        "minecraft:iron_ore", "minecraft:deepslate_iron_ore",
-                        "minecraft:lapis_ore", "minecraft:deepslate_lapis_ore"),
+        assertEquals(
+                List.of(
+                        "minecraft:copper_ore",
+                        "minecraft:deepslate_copper_ore",
+                        "minecraft:iron_ore",
+                        "minecraft:deepslate_iron_ore",
+                        "minecraft:lapis_ore",
+                        "minecraft:deepslate_lapis_ore"),
                 blocksOf(config, "stone"));
-        assertEquals(List.of("minecraft:gold_ore", "minecraft:deepslate_gold_ore",
-                        "minecraft:redstone_ore", "minecraft:deepslate_redstone_ore",
-                        "minecraft:diamond_ore", "minecraft:deepslate_diamond_ore",
-                        "minecraft:emerald_ore", "minecraft:deepslate_emerald_ore"),
+        assertEquals(
+                List.of(
+                        "minecraft:gold_ore",
+                        "minecraft:deepslate_gold_ore",
+                        "minecraft:redstone_ore",
+                        "minecraft:deepslate_redstone_ore",
+                        "minecraft:diamond_ore",
+                        "minecraft:deepslate_diamond_ore",
+                        "minecraft:emerald_ore",
+                        "minecraft:deepslate_emerald_ore"),
                 blocksOf(config, "iron"));
         assertEquals(List.of("minecraft:ancient_debris"), blocksOf(config, "diamond"));
         assertEquals(List.of(), blocksOf(config, "netherite"));

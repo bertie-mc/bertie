@@ -20,9 +20,8 @@ public final class MigrationManager {
 
     public static MigrationManager load(Path gameDirectory) {
         Path normalized = gameDirectory.toAbsolutePath().normalize();
-        Path stateDirectory = normalized.resolve("config")
-                .resolve(CONTROL_DIRECTORY)
-                .resolve("state");
+        Path stateDirectory =
+                normalized.resolve("config").resolve(CONTROL_DIRECTORY).resolve("state");
         return new MigrationManager(new MigrationStateStore(normalized, stateDirectory));
     }
 

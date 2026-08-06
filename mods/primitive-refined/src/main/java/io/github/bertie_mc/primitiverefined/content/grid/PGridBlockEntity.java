@@ -1,12 +1,5 @@
 package io.github.bertie_mc.primitiverefined.content.grid;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
-import java.util.concurrent.CompletableFuture;
-
-import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
-import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import com.refinedmods.refinedstorage.api.autocrafting.calculation.CancellationToken;
 import com.refinedmods.refinedstorage.api.autocrafting.preview.Preview;
 import com.refinedmods.refinedstorage.api.autocrafting.preview.TreePreview;
@@ -31,9 +24,13 @@ import com.refinedmods.refinedstorage.common.grid.FuzzyGridOperations;
 import com.refinedmods.refinedstorage.common.grid.GridData;
 import com.refinedmods.refinedstorage.common.support.containermenu.ExtendedMenuProvider;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
+import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -66,8 +63,7 @@ import net.minecraft.world.level.block.state.BlockState;
  * so RS's own code returns nothing here without needing to be told to. That is a better
  * answer than a stub: it is right for the same reason RS's is, rather than by assertion.
  */
-public class PGridBlockEntity extends KineticBlockEntity
-        implements PrNodeHost, Grid, ExtendedMenuProvider<GridData> {
+public class PGridBlockEntity extends KineticBlockEntity implements PrNodeHost, Grid, ExtendedMenuProvider<GridData> {
 
     private final GridNetworkNode gridNode = new GridNetworkNode(0L);
     private final PrNetworkNodeContainer node;
@@ -190,9 +186,7 @@ public class PGridBlockEntity extends KineticBlockEntity
         if (network == null) {
             return Set.of();
         }
-        return network.getComponent(AutocraftingNetworkComponent.class)
-                .getOutputs()
-                .stream()
+        return network.getComponent(AutocraftingNetworkComponent.class).getOutputs().stream()
                 .filter(PlatformResourceKey.class::isInstance)
                 .map(PlatformResourceKey.class::cast)
                 .collect(Collectors.toSet());
@@ -236,16 +230,16 @@ public class PGridBlockEntity extends KineticBlockEntity
     // every one of these answers "nothing" of its own accord.
 
     @Override
-    public CompletableFuture<Optional<Preview>> getPreview(ResourceKey resource, long amount,
-                                                           CancellationToken cancellationToken) {
+    public CompletableFuture<Optional<Preview>> getPreview(
+            ResourceKey resource, long amount, CancellationToken cancellationToken) {
         return autocrafting()
                 .map(component -> component.getPreview(resource, amount, cancellationToken))
                 .orElseGet(() -> CompletableFuture.completedFuture(Optional.empty()));
     }
 
     @Override
-    public CompletableFuture<Optional<TreePreview>> getTreePreview(ResourceKey resource, long amount,
-                                                                   CancellationToken cancellationToken) {
+    public CompletableFuture<Optional<TreePreview>> getTreePreview(
+            ResourceKey resource, long amount, CancellationToken cancellationToken) {
         return autocrafting()
                 .map(component -> component.getTreePreview(resource, amount, cancellationToken))
                 .orElseGet(() -> CompletableFuture.completedFuture(Optional.empty()));
@@ -259,8 +253,8 @@ public class PGridBlockEntity extends KineticBlockEntity
     }
 
     @Override
-    public Optional<TaskId> startTask(ResourceKey resource, long amount, Actor actor, boolean notify,
-                                      CancellationToken cancellationToken) {
+    public Optional<TaskId> startTask(
+            ResourceKey resource, long amount, Actor actor, boolean notify, CancellationToken cancellationToken) {
         return autocrafting()
                 .flatMap(component -> component.startTask(resource, amount, actor, notify, cancellationToken));
     }

@@ -1,8 +1,8 @@
 package io.github.bertie_mc.bertieblackhole.mixin;
 
+import com.stal111.forbidden_arcanus.common.block.entity.BlackHoleBlockEntity;
 import io.github.bertie_mc.bertieblackhole.BlackHoleState;
 import io.github.bertie_mc.bertieblackhole.StatefulBlackHole;
-import com.stal111.forbidden_arcanus.common.block.entity.BlackHoleBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -59,12 +59,21 @@ public abstract class BlackHoleBlockEntityMixin extends BlockEntity implements S
      * needs no sweep and no radius of its own. Items are handed to the state machine; everything
      * else still burns.
      */
-    @Redirect(method = "serverTick",
-            at = @At(value = "INVOKE",
-                    target = "Lnet/minecraft/world/entity/Entity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z"))
-    private static boolean bbh$onReachCentre(Entity entity, DamageSource source, float amount,
-                                             Level level, BlockPos pos, BlockState state,
-                                             BlackHoleBlockEntity blockEntity) {
+    @Redirect(
+            method = "serverTick",
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/world/entity/Entity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z"))
+    private static boolean bbh$onReachCentre(
+            Entity entity,
+            DamageSource source,
+            float amount,
+            Level level,
+            BlockPos pos,
+            BlockState state,
+            BlackHoleBlockEntity blockEntity) {
         if (entity instanceof ItemEntity item) {
             StatefulBlackHole hole = (StatefulBlackHole) (Object) blockEntity;
             hole.bbh$state().onItemReachedCentre(level, pos, hole, item);
@@ -74,8 +83,8 @@ public abstract class BlackHoleBlockEntityMixin extends BlockEntity implements S
     }
 
     @Inject(method = "serverTick", at = @At("TAIL"))
-    private static void bbh$serverTick(Level level, BlockPos pos, BlockState state,
-                                       BlackHoleBlockEntity blockEntity, CallbackInfo ci) {
+    private static void bbh$serverTick(
+            Level level, BlockPos pos, BlockState state, BlackHoleBlockEntity blockEntity, CallbackInfo ci) {
         StatefulBlackHole hole = (StatefulBlackHole) (Object) blockEntity;
         hole.bbh$state().serverTick(level, hole);
     }

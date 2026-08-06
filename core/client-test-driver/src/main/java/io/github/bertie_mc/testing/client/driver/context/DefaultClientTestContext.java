@@ -4,10 +4,10 @@ import io.github.bertie_mc.testing.client.TestInput;
 import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import io.github.bertie_mc.testing.client.driver.ClientTestGameOptions;
 import io.github.bertie_mc.testing.client.driver.ClientTestResources;
+import io.github.bertie_mc.testing.client.driver.input.DefaultTestInput;
 import io.github.bertie_mc.testing.client.driver.mixin.context.CycleButtonAccessor;
 import io.github.bertie_mc.testing.client.driver.screenshot.ClientTestScreenshots;
 import io.github.bertie_mc.testing.client.driver.threading.TestScheduler;
-import io.github.bertie_mc.testing.client.driver.input.DefaultTestInput;
 import io.github.bertie_mc.testing.client.driver.world.DefaultTestWorldBuilder;
 import io.github.bertie_mc.testing.client.world.TestWorldBuilder;
 import java.nio.file.Path;
@@ -79,21 +79,16 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
     }
 
     @Override
-    public int waitFor(
-            String description, Predicate<Minecraft> condition, int timeoutTicks) {
+    public int waitFor(String description, Predicate<Minecraft> condition, int timeoutTicks) {
         Objects.requireNonNull(condition);
-        return waitForCondition(
-                description,
-                () -> computeOnClient(client -> condition.test(client)),
-                timeoutTicks);
+        return waitForCondition(description, () -> computeOnClient(client -> condition.test(client)), timeoutTicks);
     }
 
     public int waitForCondition(String description, BooleanSupplier condition) {
         return waitForCondition(description, condition, DEFAULT_TIMEOUT_TICKS);
     }
 
-    public int waitForCondition(
-            String description, BooleanSupplier condition, int timeoutTicks) {
+    public int waitForCondition(String description, BooleanSupplier condition, int timeoutTicks) {
         Objects.requireNonNull(description);
         Objects.requireNonNull(condition);
         if (timeoutTicks == NO_TIMEOUT) {
@@ -114,8 +109,7 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
             TestScheduler.runTick();
         }
         if (!condition.getAsBoolean()) {
-            throw new AssertionError(
-                    "Timed out after " + timeoutTicks + " ticks waiting for " + description);
+            throw new AssertionError("Timed out after " + timeoutTicks + " ticks waiting for " + description);
         }
         return timeoutTicks;
     }
@@ -131,16 +125,11 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
     }
 
     @Override
-    public int waitForScreen(
-            @Nullable Class<? extends Screen> screenType, int timeoutTicks) {
-        String description = screenType == null
-                ? "no open screen"
-                : screenType.getSimpleName();
+    public int waitForScreen(@Nullable Class<? extends Screen> screenType, int timeoutTicks) {
+        String description = screenType == null ? "no open screen" : screenType.getSimpleName();
         return waitFor(
                 description,
-                current -> screenType == null
-                        ? current.screen == null
-                        : screenType.isInstance(current.screen),
+                current -> screenType == null ? current.screen == null : screenType.isInstance(current.screen),
                 timeoutTicks);
     }
 
@@ -156,11 +145,9 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
         if (tryClickScreenButton(translationKey)) {
             return;
         }
-        String screenName = computeOnClient(current -> current.screen == null
-                ? "null"
-                : current.screen.getClass().getName());
-        throw new AssertionError(
-                "No button for translation key " + translationKey + " on " + screenName);
+        String screenName = computeOnClient(current ->
+                current.screen == null ? "null" : current.screen.getClass().getName());
+        throw new AssertionError("No button for translation key " + translationKey + " on " + screenName);
     }
 
     @Override
@@ -171,15 +158,13 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
     }
 
     @Override
-    public <E extends Throwable> void runOnClient(
-            FailableConsumer<Minecraft, E> action) throws E {
+    public <E extends Throwable> void runOnClient(FailableConsumer<Minecraft, E> action) throws E {
         Objects.requireNonNull(action);
         TestScheduler.runOnClient(() -> action.accept(client));
     }
 
     @Override
-    public <T, E extends Throwable> T computeOnClient(
-            FailableFunction<Minecraft, T, E> action) throws E {
+    public <T, E extends Throwable> T computeOnClient(FailableFunction<Minecraft, T, E> action) throws E {
         Objects.requireNonNull(action);
         return TestScheduler.computeOnClient(() -> action.apply(client));
     }
@@ -201,8 +186,7 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
         if (!target.startsWith(diagnostics.toAbsolutePath().normalize())) {
             throw new IllegalArgumentException("Screenshot name escapes the diagnostics directory");
         }
-        CompletionStage<Path> screenshot = computeOnClient(
-                current -> ClientTestScreenshots.afterNextFrame(target));
+        CompletionStage<Path> screenshot = computeOnClient(current -> ClientTestScreenshots.afterNextFrame(target));
         return awaitInfrastructure("the screenshot frame", screenshot);
     }
 
@@ -249,9 +233,7 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
 
     void disconnectToTitle() {
         runOnClient(current -> {
-            if (current.level != null
-                    || current.getConnection() != null
-                    || current.hasSingleplayerServer()) {
+            if (current.level != null || current.getConnection() != null || current.hasSingleplayerServer()) {
                 if (current.level != null) {
                     current.level.disconnect();
                 }
@@ -262,9 +244,8 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
         });
         waitForInfrastructure(
                 "the client to return to the title screen",
-                () -> computeOnClient(current -> current.level == null
-                        && current.getConnection() == null
-                        && !current.hasSingleplayerServer()));
+                () -> computeOnClient(current ->
+                        current.level == null && current.getConnection() == null && !current.hasSingleplayerServer()));
         runOnClient(current -> {
             if (!(current.screen instanceof TitleScreen)) {
                 current.setScreen(new TitleScreen());
@@ -274,8 +255,7 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
 
     void requireClientThread() {
         if (!client.isSameThread()) {
-            throw new IllegalStateException(
-                    "Client state must be accessed through ClientTestContext.runOnClient");
+            throw new IllegalStateException("Client state must be accessed through ClientTestContext.runOnClient");
         }
     }
 
@@ -284,8 +264,7 @@ public final class DefaultClientTestContext implements ClientTestContext, AutoCl
             return false;
         }
         for (var renderable : screen.renderables) {
-            if (renderable instanceof AbstractButton button
-                    && pressMatchingButton(button, expected)) {
+            if (renderable instanceof AbstractButton button && pressMatchingButton(button, expected)) {
                 return true;
             }
             if (renderable instanceof LayoutElement layout) {

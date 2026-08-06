@@ -69,16 +69,19 @@ internal fun Project.configureJvmRole() {
 
     configurations.configureEach {
         val configuration = this
-        val externalArtifacts = providers.provider {
-            if (!configuration.isCanBeResolved) {
-                emptyList()
-            } else {
-                configuration.incoming.artifacts.resolvedArtifacts.get().asSequence()
-                    .filter { it.id.componentIdentifier is ModuleComponentIdentifier }
-                    .map { it.file }
-                    .toList()
+        val externalArtifacts =
+            providers.provider {
+                if (!configuration.isCanBeResolved) {
+                    emptyList()
+                } else {
+                    configuration.incoming.artifacts.resolvedArtifacts
+                        .get()
+                        .asSequence()
+                        .filter { it.id.componentIdentifier is ModuleComponentIdentifier }
+                        .map { it.file }
+                        .toList()
+                }
             }
-        }
         externalDependencyArtifacts.from(externalArtifacts)
     }
 }
@@ -99,10 +102,11 @@ internal fun Project.addArm64LwjglNatives(run: RunModel) {
 }
 
 internal fun Project.addArm64LwjglNatives(configuration: Configuration) {
-    val classifier = lwjglNativeClassifier(
-        providers.systemProperty("os.name").get(),
-        providers.systemProperty("os.arch").get(),
-    ) ?: return
+    val classifier =
+        lwjglNativeClassifier(
+            providers.systemProperty("os.name").get(),
+            providers.systemProperty("os.arch").get(),
+        ) ?: return
     val catalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
     catalog.requiredBundle("lwjgl-natives").forEach { module ->
         configuration.dependencies.add(
@@ -114,19 +118,21 @@ internal fun Project.addArm64LwjglNatives(configuration: Configuration) {
 }
 
 internal fun VersionCatalog.requiredVersion(name: String): String =
-    findVersion(name).orElseThrow {
-        IllegalStateException("Version '$name' is missing from the root version catalog")
-    }.requiredVersion
+    findVersion(name)
+        .orElseThrow {
+            IllegalStateException("Version '$name' is missing from the root version catalog")
+        }.requiredVersion
 
 internal fun VersionCatalog.requiredLibrary(name: String): MinimalExternalModuleDependency =
-    findLibrary(name).orElseThrow {
-        IllegalStateException("Library '$name' is missing from the root version catalog")
-    }.get()
+    findLibrary(name)
+        .orElseThrow {
+            IllegalStateException("Library '$name' is missing from the root version catalog")
+        }.get()
 
 internal fun VersionCatalog.requiredBundle(name: String): List<MinimalExternalModuleDependency> =
-    findBundle(name).orElseThrow {
-        IllegalStateException("Bundle '$name' is missing from the root version catalog")
-    }.get()
+    findBundle(name)
+        .orElseThrow {
+            IllegalStateException("Bundle '$name' is missing from the root version catalog")
+        }.get()
 
-private fun MinimalExternalModuleDependency.notation(): String =
-    "${module.group}:${module.name}:${versionConstraint.requiredVersion}"
+private fun MinimalExternalModuleDependency.notation(): String = "${module.group}:${module.name}:${versionConstraint.requiredVersion}"

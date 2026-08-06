@@ -49,7 +49,8 @@ public final class TestScheduler {
         CLIENT_STOP_REQUESTED.set(false);
         if (!CLIENT_REGISTERED.compareAndSet(false, true)) {
             ACTIVE.set(false);
-            throw new IllegalStateException("The Minecraft client is already registered with the client-test scheduler");
+            throw new IllegalStateException(
+                    "The Minecraft client is already registered with the client-test scheduler");
         }
         PHASER.bulkRegister(2);
         CountDownLatch termination = new CountDownLatch(1);
@@ -116,8 +117,7 @@ public final class TestScheduler {
         server = null;
         PHASER.arriveAndDeregister();
         cancelPendingTask(
-                TaskTarget.SERVER,
-                new IllegalStateException("The logical server stopped before running a test task"));
+                TaskTarget.SERVER, new IllegalStateException("The logical server stopped before running a test task"));
     }
 
     public static boolean canAcceptServerTasks(MinecraftServer target) {
@@ -127,8 +127,7 @@ public final class TestScheduler {
     public static void requireNoServerRunning() {
         checkTestThread("create a test world");
         if (SERVER_REGISTERED.get()) {
-            throw new IllegalStateException(
-                    "Cannot create a test world while another logical server is running");
+            throw new IllegalStateException("Cannot create a test world while another logical server is running");
         }
     }
 
@@ -141,16 +140,16 @@ public final class TestScheduler {
         if (!CLIENT_REGISTERED.get()) {
             return;
         }
-        Throwable actual = Objects.requireNonNullElseGet(
-                failure, () -> new IllegalStateException("The Minecraft client failed"));
+        Throwable actual =
+                Objects.requireNonNullElseGet(failure, () -> new IllegalStateException("The Minecraft client failed"));
         recordFailure(actual);
         clientTerminated(actual);
     }
 
     /** Called when the Minecraft render loop returns, normally or exceptionally. */
     public static void clientStopped() {
-        IllegalStateException unexpectedStop = new IllegalStateException(
-                "The Minecraft client stopped before the client-test suite completed");
+        IllegalStateException unexpectedStop =
+                new IllegalStateException("The Minecraft client stopped before the client-test suite completed");
         if (CLIENT_REGISTERED.get() && ACTIVE.get() && !CLIENT_STOP_REQUESTED.get()) {
             recordFailure(unexpectedStop);
         }
@@ -187,8 +186,7 @@ public final class TestScheduler {
     }
 
     public static synchronized void recordTerminalFailure(Throwable failure) {
-        terminalFailure = ClientTestResources.append(
-                terminalFailure, Objects.requireNonNull(failure));
+        terminalFailure = ClientTestResources.append(terminalFailure, Objects.requireNonNull(failure));
     }
 
     public static boolean isClientTaskRunning() {
@@ -223,16 +221,14 @@ public final class TestScheduler {
         }
     }
 
-    public static <E extends Throwable> void runOnClient(
-            FailableRunnable<E> action) throws E {
+    public static <E extends Throwable> void runOnClient(FailableRunnable<E> action) throws E {
         computeOnClient(() -> {
             action.run();
             return null;
         });
     }
 
-    public static <T, E extends Throwable> T computeOnClient(
-            FailableSupplier<T, E> action) throws E {
+    public static <T, E extends Throwable> T computeOnClient(FailableSupplier<T, E> action) throws E {
         Objects.requireNonNull(action);
         Minecraft currentClient = Objects.requireNonNull(client, "The client is not running");
         if (currentClient.isSameThread()) {
@@ -245,16 +241,15 @@ public final class TestScheduler {
         return dispatch(action, TaskTarget.CLIENT);
     }
 
-    public static <E extends Throwable> void runOnServer(
-            MinecraftServer target, FailableRunnable<E> action) throws E {
+    public static <E extends Throwable> void runOnServer(MinecraftServer target, FailableRunnable<E> action) throws E {
         computeOnServer(target, () -> {
             action.run();
             return null;
         });
     }
 
-    public static <T, E extends Throwable> T computeOnServer(
-            MinecraftServer target, FailableSupplier<T, E> action) throws E {
+    public static <T, E extends Throwable> T computeOnServer(MinecraftServer target, FailableSupplier<T, E> action)
+            throws E {
         Objects.requireNonNull(target);
         Objects.requireNonNull(action);
         if (target.isSameThread()) {
@@ -267,8 +262,7 @@ public final class TestScheduler {
         return dispatch(action, TaskTarget.SERVER);
     }
 
-    private static <T, E extends Throwable> T dispatch(
-            FailableSupplier<T, E> action, TaskTarget target) throws E {
+    private static <T, E extends Throwable> T dispatch(FailableSupplier<T, E> action, TaskTarget target) throws E {
         DispatchedTask<T> task = new DispatchedTask<>(target, action);
         if (!PENDING_TASK.compareAndSet(null, task)) {
             throw new IllegalStateException("Another Minecraft test task is already pending");
@@ -276,8 +270,8 @@ public final class TestScheduler {
         if (target.canAcceptTasks()) {
             target.semaphore().release();
         } else {
-            task.cancel(new IllegalStateException(
-                    "The " + target.description() + " stopped before running a test task"));
+            task.cancel(
+                    new IllegalStateException("The " + target.description() + " stopped before running a test task"));
         }
         return task.await();
     }

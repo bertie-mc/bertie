@@ -13,17 +13,14 @@ public final class CarvingEmiClientTests {
     private static final ResourceLocation CARVING_CATEGORY =
             ResourceLocation.fromNamespaceAndPath("berlordscarving", "carving");
 
-    private CarvingEmiClientTests() {
-    }
+    private CarvingEmiClientTests() {}
 
     @ClientTest
     public static void registersCarvingRecipesWithEmi(ClientTestContext context) {
         try (IntegratedWorldContext world = context.worldBuilder()
                 .adjustSettings(settings -> settings.setName("berlords-carving"))
                 .create()) {
-            context.waitFor(
-                    "Carving EMI category registration",
-                    client -> findCategory() != null);
+            context.waitFor("Carving EMI category registration", client -> findCategory() != null);
 
             context.runOnClient(client -> {
                 EmiRecipeManager manager = EmiApi.getRecipeManager();

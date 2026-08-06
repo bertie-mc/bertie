@@ -2,10 +2,9 @@ package io.github.bertie_mc.emi.framework;
 
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
-import net.minecraft.network.chat.Component;
-
 import java.util.ArrayList;
 import java.util.List;
+import net.minecraft.network.chat.Component;
 
 /**
  * A declarative description of one machine recipe: N item/fluid inputs, optional non-consumed

@@ -14,8 +14,7 @@ import net.neoforged.fml.loading.FMLPaths;
 
 /** Exercises every supported migration against its real config-system lifecycle. */
 public final class ConfigMigrationsClientTests {
-    private ConfigMigrationsClientTests() {
-    }
+    private ConfigMigrationsClientTests() {}
 
     @ClientTest
     public static void migratesRealConfigSystems(ClientTestContext context) {
@@ -87,10 +86,7 @@ public final class ConfigMigrationsClientTests {
         if (config == null) {
             throw new AssertionError("NeoForge server config was not loaded");
         }
-        assertPersisted(
-                config,
-                "migratedValue",
-                Integer.toString(RealNeoForgeConfigTest.SERVER_MIGRATED_VALUE));
+        assertPersisted(config, "migratedValue", Integer.toString(RealNeoForgeConfigTest.SERVER_MIGRATED_VALUE));
     }
 
     private static void assertMinecraftOptionsMigrated(Minecraft client) {
@@ -107,8 +103,7 @@ public final class ConfigMigrationsClientTests {
             Object value = items.getClass().getField("whoopeeCushionFartChance").get(items);
             double actual = ((Number) value.getClass().getMethod("get").invoke(value)).doubleValue();
             if (actual != 0.79) {
-                throw new AssertionError(
-                        "Artifacts migration did not reach the live config: " + actual);
+                throw new AssertionError("Artifacts migration did not reach the live config: " + actual);
             }
         } catch (ClassNotFoundException
                 | NoSuchFieldException
@@ -126,11 +121,9 @@ public final class ConfigMigrationsClientTests {
     private static void assertPersisted(Path target, String key, String value) {
         try {
             String contents = Files.readString(target, StandardCharsets.UTF_8);
-            Pattern assignment = Pattern.compile(
-                    Pattern.quote(key) + "\"?\\s*[:=]\\s*" + Pattern.quote(value));
+            Pattern assignment = Pattern.compile(Pattern.quote(key) + "\"?\\s*[:=]\\s*" + Pattern.quote(value));
             if (!assignment.matcher(contents).find()) {
-                throw new AssertionError(
-                        "Migrated value " + key + "=" + value + " is absent from " + target);
+                throw new AssertionError("Migrated value " + key + "=" + value + " is absent from " + target);
             }
 
             Path gameDirectory = FMLPaths.GAMEDIR.get();

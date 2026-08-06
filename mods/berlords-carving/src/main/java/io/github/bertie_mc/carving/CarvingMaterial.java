@@ -33,13 +33,13 @@ public enum CarvingMaterial {
     public final String id;
     /** Slag material_type id (without the slag: namespace), or null if there's no Slag equivalent. */
     public final String slagId;
+
     public final int tier;
     public final boolean hasTools;
     public final String vanillaTool;
     public final String vanillaArmor;
 
-    CarvingMaterial(String id, String slagId, int tier, boolean hasTools,
-                    String vanillaTool, String vanillaArmor) {
+    CarvingMaterial(String id, String slagId, int tier, boolean hasTools, String vanillaTool, String vanillaArmor) {
         this.id = id;
         this.slagId = slagId;
         this.tier = tier;

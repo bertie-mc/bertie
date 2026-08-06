@@ -21,10 +21,10 @@ class WunderLibLifecycleTest {
     @Test
     void constructorMigratesBeforeTheConcreteConfigConsumesValues() throws Exception {
         Path gameDirectory = FMLPaths.GAMEDIR.get().toAbsolutePath().normalize();
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/wunderlib/tests/client.toml");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/wunderlib/tests/client.toml");
         Path target = FMLPaths.CONFIGDIR.get().resolve(NAMESPACE).resolve(CATEGORY + ".json");
-        Path state = gameDirectory.resolve("config/config-migrations/state")
+        Path state = gameDirectory
+                .resolve("config/config-migrations/state")
                 .resolve(gameDirectory.relativize(target.toAbsolutePath().normalize()))
                 .resolveSibling(CATEGORY + ".json.version");
         Files.createDirectories(manifest.getParent());
@@ -40,10 +40,9 @@ class WunderLibLifecycleTest {
 
             assertFalse(first.enabledWhenConstructed);
             assertEquals(1, first.fixtureSaveCount());
-            assertEquals("player", first.fixtureRoot()
-                    .getAsJsonObject("settings")
-                    .get("kept")
-                    .getAsString());
+            assertEquals(
+                    "player",
+                    first.fixtureRoot().getAsJsonObject("settings").get("kept").getAsString());
             assertEquals("2\n", Files.readString(state));
             assertFalse(JsonParser.parseString(Files.readString(target))
                     .getAsJsonObject()
@@ -81,10 +80,8 @@ class WunderLibLifecycleTest {
 
         private ConsumingConfig() {
             super(new Provider(), NAMESPACE, CATEGORY);
-            enabledWhenConstructed = fixtureRoot()
-                    .getAsJsonObject("settings")
-                    .get("enabled")
-                    .getAsBoolean();
+            enabledWhenConstructed =
+                    fixtureRoot().getAsJsonObject("settings").get("enabled").getAsBoolean();
         }
     }
 

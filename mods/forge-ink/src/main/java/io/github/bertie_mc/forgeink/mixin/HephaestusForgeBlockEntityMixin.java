@@ -1,10 +1,11 @@
 package io.github.bertie_mc.forgeink.mixin;
 
-import io.github.bertie_mc.forgeink.ForgeInk;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.HephaestusForgeBlockEntity;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.HephaestusForgeLevel;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.essence.EssenceType;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.input.HephaestusForgeInput;
+import io.github.bertie_mc.forgeink.ForgeInk;
+import java.util.Optional;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,8 +13,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.Optional;
 
 /**
  * Gates the forge's EXPERIENCE ("Ink") input in {@code getInput}, which backs both the
@@ -27,8 +26,11 @@ public abstract class HephaestusForgeBlockEntityMixin {
     private HephaestusForgeLevel forgeLevel;
 
     @Inject(method = "getInput", at = @At("HEAD"), cancellable = true, remap = false)
-    private void forgeink$onlyMatchingInk(Level level, ItemStack stack, EssenceType type,
-                                          CallbackInfoReturnable<Optional<HephaestusForgeInput>> cir) {
+    private void forgeink$onlyMatchingInk(
+            Level level,
+            ItemStack stack,
+            EssenceType type,
+            CallbackInfoReturnable<Optional<HephaestusForgeInput>> cir) {
         if (type == EssenceType.EXPERIENCE && !ForgeInk.allowExperienceInput(stack, this.forgeLevel)) {
             cir.setReturnValue(Optional.empty());
         }

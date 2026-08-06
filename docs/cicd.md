@@ -7,8 +7,15 @@ nix develop
 ```
 
 The repository uses the Gradle supplied by Nix rather than a Gradle wrapper.
+For native Windows setup and equivalent commands, see [Development on Windows](windows.md).
 
 ## Check a change locally
+
+Format Java, Kotlin, and Gradle Kotlin files with:
+
+```bash
+gradle spotlessApply
+```
 
 Start with the project and suite you changed:
 
@@ -25,10 +32,18 @@ gradle :mods:bertie-tiers:runTests
 gradle :pack:runTests
 ```
 
+Before finishing, run the repository checks:
+
+```bash
+gradle :check
+```
+
+This runs `spotlessCheck` and `testInfrastructure`. It does not run component tests,
+GameTests, or client tests; run those through their project tasks as shown above.
+
 Changes to shared Gradle plugins, test infrastructure, Nix, or CI also need:
 
 ```bash
-gradle testInfrastructure
 nix flake check
 ```
 
@@ -51,7 +66,8 @@ bertie-ci plan --workspace . --all
 The output contains exact Gradle task paths. Component discovery and shared paths are
 configured in [`bertie-ci.toml`](../bertie-ci.toml).
 
-A push to `main` starts the [`Check` workflow](../.github/workflows/check.yml). It runs the
+A pull request or push to `main` starts the
+[`Check` workflow](../.github/workflows/check.yml). It runs `gradle :check` and the
 selected builds, unit tests, GameTests, client tests, and pack validation. The
 [`Full pack` workflow](../.github/workflows/full-pack.yml) performs a scheduled complete
 pack check and can also be started manually.

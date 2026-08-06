@@ -1,11 +1,5 @@
 package io.github.bertie_mc.bertieprogression.emi;
 
-import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
-import io.github.bertie_mc.bertieprogression.BertieProgression;
-import io.github.bertie_mc.bertieprogression.ModItems;
-import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
-import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
-import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
 import com.mojang.logging.LogUtils;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
@@ -13,6 +7,15 @@ import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
+import io.github.bertie_mc.bertieprogression.BertieProgression;
+import io.github.bertie_mc.bertieprogression.ModItems;
+import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
+import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
+import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,10 +26,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
 import org.slf4j.Logger;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /** Built-in EMI presentation for Bertie Progression's recipes and pack item policy. */
 @EmiEntrypoint
@@ -47,7 +46,8 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(
                 ResourceLocation.fromNamespaceAndPath(LEGACY_NAMESPACE, "bertie_mallet"),
-                brickForge, Component.literal("Mallet Work"));
+                brickForge,
+                Component.literal("Mallet Work"));
         registry.addCategory(category);
         if (!brickForge.isEmpty()) {
             registry.addWorkstation(category, brickForge);
@@ -73,28 +73,40 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
             if (recipe.extraReturnId() != null) {
                 addStack(outputs, stackOf(recipe.extraReturnId(), recipe.extraReturnCount()));
             }
-            addRecipe(registry, category, "bed/" + recipe.id(), inputs,
-                    ingredients(mallet), outputs, info);
+            addRecipe(registry, category, "bed/" + recipe.id(), inputs, ingredients(mallet), outputs, info);
             recipeCount++;
         }
 
-        addRecipe(registry, category, "world/mud",
-                ingredients(EmiStack.of(Items.DIRT)), ingredients(mallet),
+        addRecipe(
+                registry,
+                category,
+                "world/mud",
+                ingredients(EmiStack.of(Items.DIRT)),
+                ingredients(mallet),
                 stacks(EmiStack.of(Items.MUD)),
                 List.of(Component.literal("Strike placed Dirt that touches water")));
         recipeCount++;
 
-        addRecipe(registry, category, "world/paper",
+        addRecipe(
+                registry,
+                category,
+                "world/paper",
                 ingredients(EmiStack.of(Items.SUGAR_CANE, 3)),
                 ingredients(mallet, sized("berlordscarving:wood_slate", 2)),
                 stacks(EmiStack.of(Items.PAPER, 3)),
                 List.of(Component.literal("Strike a block touching water; the two slates are kept")));
         recipeCount++;
 
-        addRecipe(registry, category, "world/brick_forge",
-                ingredients(EmiStack.of(Items.MUD_BRICKS, 8), EmiStack.of(Items.CAMPFIRE),
+        addRecipe(
+                registry,
+                category,
+                "world/brick_forge",
+                ingredients(
+                        EmiStack.of(Items.MUD_BRICKS, 8),
+                        EmiStack.of(Items.CAMPFIRE),
                         tag("bertieprogression:stripped_logs", 4)),
-                ingredients(mallet), stacks(stackOf("slag:brick_forge", 1)),
+                ingredients(mallet),
+                stacks(stackOf("slag:brick_forge", 1)),
                 List.of(Component.literal("Build: 3x3 Mud Brick ring around an UNLIT campfire, "
                         + "4 stripped logs above the corners - strike a ring brick")));
         recipeCount++;
@@ -104,7 +116,9 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         LOGGER.info(
                 "Bertie Progression EMI integration registered ({} Mallet Work recipes, "
                         + "{} Ominous Fan recipes, {} Allay Corruption recipes)",
-                recipeCount, ominousFanRecipeCount, allayRecipeCount);
+                recipeCount,
+                ominousFanRecipeCount,
+                allayRecipeCount);
     }
 
     /**
@@ -122,16 +136,19 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         EmiStack allay = EmiStack.of(Items.ALLAY_SPAWN_EGG);
         InWorldEmiCategory category = new InWorldEmiCategory(
                 ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "allay_corruption"),
-                allay, Component.literal("Allay Corruption"));
+                allay,
+                Component.literal("Allay Corruption"));
         registry.addCategory(category);
         registry.addWorkstation(category, allay);
 
-        registry.addRecipe(new InWorldEmiRecipe(category,
-                ResourceLocation.fromNamespaceAndPath(
-                        BertieProgression.MODID, "allay_corruption/arcane_crystal"),
-                ingredients(input, allay), List.of(), stacks(output),
-                List.of(Component.literal("Give an Allay the Arcane Crystal - it dies moments later, "
-                        + "dropping the corrupted one"))));
+        registry.addRecipe(new InWorldEmiRecipe(
+                category,
+                ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "allay_corruption/arcane_crystal"),
+                ingredients(input, allay),
+                List.of(),
+                stacks(output),
+                List.of(Component.literal(
+                        "Give an Allay the Arcane Crystal - it dies moments later, " + "dropping the corrupted one"))));
         return 1;
     }
 
@@ -144,7 +161,8 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         EmiStack icon = stackOf("twilightforest:ominous_candle", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(
                 ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "ominous_fan"),
-                icon, Component.literal("Ominous Fan Blowing"));
+                icon,
+                Component.literal("Ominous Fan Blowing"));
         registry.addCategory(category);
         if (!icon.isEmpty()) {
             registry.addWorkstation(category, icon);
@@ -158,11 +176,15 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         return recipes.size();
     }
 
-    private static void addRecipe(EmiRegistry registry, InWorldEmiCategory category, String path,
-                                  List<EmiIngredient> inputs, List<EmiIngredient> catalysts,
-                                  List<EmiStack> outputs, List<Component> info) {
-        registry.addRecipe(new InWorldEmiRecipe(category, displayId(path),
-                inputs, catalysts, outputs, info));
+    private static void addRecipe(
+            EmiRegistry registry,
+            InWorldEmiCategory category,
+            String path,
+            List<EmiIngredient> inputs,
+            List<EmiIngredient> catalysts,
+            List<EmiStack> outputs,
+            List<Component> info) {
+        registry.addRecipe(new InWorldEmiRecipe(category, displayId(path), inputs, catalysts, outputs, info));
     }
 
     private static void addInput(List<EmiIngredient> inputs, List<Component> info, BedRecipes.Input input) {
@@ -173,8 +195,9 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         if (description.startsWith("#")) {
             addIngredient(inputs, tag(description.substring(1), input.count()));
         } else if (description.contains("{")) {
-            String[] materialAndPart = description.substring(
-                    description.indexOf('{') + 1, description.indexOf('}')).split(",");
+            String[] materialAndPart = description
+                    .substring(description.indexOf('{') + 1, description.indexOf('}'))
+                    .split(",");
             addIngredient(inputs, sized("slag:dynamic_part", input.count()));
             info.add(Component.literal("Needs the exact Slag-cast "
                     + capitalize(materialAndPart[0].replace("slag:", "")) + " "
@@ -232,16 +255,16 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     }
 
     private static String capitalize(String value) {
-        return value == null || value.isEmpty()
-                ? value
-                : Character.toUpperCase(value.charAt(0)) + value.substring(1);
+        return value == null || value.isEmpty() ? value : Character.toUpperCase(value.charAt(0)) + value.substring(1);
     }
 
     private static boolean isReplacedSlagArmorPart(EmiStack stack) {
         try {
             var itemStack = stack.getItemStack();
-            if (itemStack.isEmpty() || !BuiltInRegistries.ITEM.getKey(itemStack.getItem())
-                    .equals(ResourceLocation.parse("slag:dynamic_part"))) {
+            if (itemStack.isEmpty()
+                    || !BuiltInRegistries.ITEM
+                            .getKey(itemStack.getItem())
+                            .equals(ResourceLocation.parse("slag:dynamic_part"))) {
                 return false;
             }
             String material = componentString(itemStack, "slag:material_type");
@@ -249,8 +272,10 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
                 return false;
             }
             String part = componentString(itemStack, "slag:part_type");
-            return "slag:helmet".equals(part) || "slag:chestplate".equals(part)
-                    || "slag:leggings".equals(part) || "slag:boots".equals(part);
+            return "slag:helmet".equals(part)
+                    || "slag:chestplate".equals(part)
+                    || "slag:leggings".equals(part)
+                    || "slag:boots".equals(part);
         } catch (Throwable throwable) {
             return false;
         }

@@ -1,12 +1,9 @@
 package io.github.bertie_mc.primitiverefined.content.cogwheel;
 
-import java.util.function.Supplier;
-
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import java.util.function.Supplier;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,8 +20,8 @@ public class PrCogWheelBlock extends CogWheelBlock implements PrKinetics.Arcanet
 
     private final Supplier<BlockEntityType<? extends KineticBlockEntity>> blockEntityType;
 
-    public PrCogWheelBlock(Properties properties,
-                           Supplier<BlockEntityType<? extends KineticBlockEntity>> blockEntityType) {
+    public PrCogWheelBlock(
+            Properties properties, Supplier<BlockEntityType<? extends KineticBlockEntity>> blockEntityType) {
         super(false, properties);
         this.blockEntityType = blockEntityType;
     }

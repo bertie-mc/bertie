@@ -18,14 +18,12 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> CRACKED_DIAMOND_ORE = BLOCKS.registerBlock(
             "cracked_diamond_ore",
             props -> new DropExperienceBlock(UniformInt.of(3, 7), props),
-            BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)
-    );
+            BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE));
 
     public static final DeferredBlock<Block> CRACKED_DEEPSLATE_DIAMOND_ORE = BLOCKS.registerBlock(
             "cracked_deepslate_diamond_ore",
             props -> new DropExperienceBlock(UniformInt.of(3, 7), props),
-            BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)
-    );
+            BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE));
 
     private ModBlocks() {}
 }

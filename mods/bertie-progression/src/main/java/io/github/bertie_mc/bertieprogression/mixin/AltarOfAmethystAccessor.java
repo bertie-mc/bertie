@@ -10,8 +10,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
  * instance to this type; casting to the mixin CLASS instead does not work, because that class never
  * exists at runtime.
  */
-@Mixin(targets = "com.github.L_Ender.cataclysm.blockentities.AltarOfAmethyst_Block_Entity",
-        remap = false)
+@Mixin(targets = "com.github.L_Ender.cataclysm.blockentities.AltarOfAmethyst_Block_Entity", remap = false)
 public interface AltarOfAmethystAccessor {
 
     @Accessor("cookingTime")

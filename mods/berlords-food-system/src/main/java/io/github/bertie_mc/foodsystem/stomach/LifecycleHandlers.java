@@ -95,7 +95,9 @@ public final class LifecycleHandlers {
     @SubscribeEvent
     public static void onWorldLoad(LevelEvent.Load event) {
         if (Config.DISABLE_NATURAL_REGEN_RULE.get() && event.getLevel().getServer() != null) {
-            event.getLevel().getLevelData().getGameRules()
+            event.getLevel()
+                    .getLevelData()
+                    .getGameRules()
                     .getRule(GameRules.RULE_NATURAL_REGENERATION)
                     .set(false, event.getLevel().getServer());
         }

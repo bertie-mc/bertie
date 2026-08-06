@@ -235,9 +235,9 @@ public final class Stomach {
         long now = player.level().getGameTime();
         double external = player.getAbsorptionAmount() - afterglowSum(data);
         if (external > 0.01) {
-            data.afterglow.add(new double[]{external, now + AFTERGLOW_TICKS});
+            data.afterglow.add(new double[] {external, now + AFTERGLOW_TICKS});
         }
-        data.afterglow.add(new double[]{overflow, now + AFTERGLOW_TICKS});
+        data.afterglow.add(new double[] {overflow, now + AFTERGLOW_TICKS});
         applyAfterglow(player, data, now);
     }
 
@@ -295,8 +295,8 @@ public final class Stomach {
     }
 
     public static void sync(ServerPlayer player) {
-        PacketDistributor.sendToPlayer(player,
-                new StomachSyncPayload(get(player).serializeNBT(player.registryAccess())));
+        PacketDistributor.sendToPlayer(
+                player, new StomachSyncPayload(get(player).serializeNBT(player.registryAccess())));
     }
 
     private Stomach() {}

@@ -1,14 +1,14 @@
 package io.github.bertie_mc.emi.integration.ironsspellbooks;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.BrewAlchemistCauldronRecipe;
 import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.EmptyAlchemistCauldronRecipe;
 import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.FillAlchemistCauldronRecipe;
@@ -19,8 +19,7 @@ import net.neoforged.neoforge.fluids.FluidStack;
  * brew (fluid + item -> fluids [+ byproduct]), fill (item -> fluid + returned item), empty (item + fluid -> item).
  */
 public final class IronsSpellbooksEmiModule {
-    private IronsSpellbooksEmiModule() {
-    }
+    private IronsSpellbooksEmiModule() {}
 
     private static final String CAULDRON = "irons_spellbooks:alchemist_cauldron";
 
@@ -46,7 +45,8 @@ public final class IronsSpellbooksEmiModule {
             reg.addRecipe(new GenericEmiRecipe(fill, id, d));
         });
 
-        EmiRecipeCategory empty = Categories.machine(reg, "irons_cauldron_empty", CAULDRON, "Alchemist Cauldron: Empty");
+        EmiRecipeCategory empty =
+                Categories.machine(reg, "irons_cauldron_empty", CAULDRON, "Alchemist Cauldron: Empty");
         Recipes.forEach(reg.getRecipeManager(), EmptyAlchemistCauldronRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.input()));

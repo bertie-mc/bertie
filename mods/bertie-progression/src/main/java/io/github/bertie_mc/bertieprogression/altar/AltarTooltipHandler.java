@@ -14,16 +14,15 @@ import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
  */
 public final class AltarTooltipHandler {
 
-    private AltarTooltipHandler() {
-    }
+    private AltarTooltipHandler() {}
 
     @SubscribeEvent
     public static void onTooltip(ItemTooltipEvent event) {
-        if (!BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem())
-                .equals(AltarOfAmethystRules.ALTAR_ITEM)) {
+        if (!BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem()).equals(AltarOfAmethystRules.ALTAR_ITEM)) {
             return;
         }
-        event.getToolTip().add(Component.translatable("tooltip.bertieprogression.altar_of_amethyst")
-                .withStyle(ChatFormatting.GRAY));
+        event.getToolTip()
+                .add(Component.translatable("tooltip.bertieprogression.altar_of_amethyst")
+                        .withStyle(ChatFormatting.GRAY));
     }
 }

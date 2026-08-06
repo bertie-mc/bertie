@@ -12,8 +12,7 @@ public final class DefaultIntegratedWorldContext implements IntegratedWorldConte
     private final DefaultServerConnection connection;
     private boolean closed;
 
-    public DefaultIntegratedWorldContext(
-            DefaultClientTestContext context, IntegratedServer integratedServer) {
+    public DefaultIntegratedWorldContext(DefaultClientTestContext context, IntegratedServer integratedServer) {
         this.context = context;
         this.server = new DefaultServerContext(context, integratedServer);
         this.connection = new DefaultServerConnection(context, server);

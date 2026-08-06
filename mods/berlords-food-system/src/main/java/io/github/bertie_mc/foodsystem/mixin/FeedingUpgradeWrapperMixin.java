@@ -6,6 +6,7 @@ import io.github.bertie_mc.foodsystem.compat.FeedingContext;
 import io.github.bertie_mc.foodsystem.compat.SBCompat;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
 import io.github.bertie_mc.foodsystem.stomach.StomachData;
+import java.util.function.IntConsumer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.Entity;
@@ -23,8 +24,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.function.IntConsumer;
 
 /**
  * Slot-aware gate for Sophisticated Backpacks feeding upgrades: the stomach pins the
@@ -49,13 +48,20 @@ import java.util.function.IntConsumer;
 public abstract class FeedingUpgradeWrapperMixin {
 
     @Inject(method = "tryFeedingStack", at = @At("HEAD"), cancellable = true)
-    private void bfs$gateFeeding(Level level, int hungerLevel, Player player, Integer slot, ItemStack stack,
-                                 ITrackedContentsItemHandler inventory, CallbackInfoReturnable<Boolean> cir) {
+    private void bfs$gateFeeding(
+            Level level,
+            int hungerLevel,
+            Player player,
+            Integer slot,
+            ItemStack stack,
+            ITrackedContentsItemHandler inventory,
+            CallbackInfoReturnable<Boolean> cir) {
         if (!Config.SB_FEEDING.get() || SBCompat.isAdvancedFeedingUpgrade(((IUpgradeWrapper) this).getUpgradeStack())) {
             cir.setReturnValue(false);
             return;
         }
-        if (!stack.has(DataComponents.FOOD) || stack.is(Stomach.NOT_FOOD)
+        if (!stack.has(DataComponents.FOOD)
+                || stack.is(Stomach.NOT_FOOD)
                 || stack.has(BFS.ETERNAL.get())) { // eternal foods are eaten by choice, never by machine
             cir.setReturnValue(false);
             return;
@@ -75,8 +81,14 @@ public abstract class FeedingUpgradeWrapperMixin {
     }
 
     @Inject(method = "tryFeedingStack", at = @At("RETURN"))
-    private void bfs$endFeeding(Level level, int hungerLevel, Player player, Integer slot, ItemStack stack,
-                                ITrackedContentsItemHandler inventory, CallbackInfoReturnable<Boolean> cir) {
+    private void bfs$endFeeding(
+            Level level,
+            int hungerLevel,
+            Player player,
+            Integer slot,
+            ItemStack stack,
+            ITrackedContentsItemHandler inventory,
+            CallbackInfoReturnable<Boolean> cir) {
         FeedingContext.end();
     }
 
@@ -115,7 +127,8 @@ public abstract class FeedingUpgradeWrapperMixin {
         if (bfs$wakePending) {
             bfs$wakePending = false;
             if (bfs$hasFeedOpportunity(player)) {
-                ((UpgradeWrapperBaseAccessor) (Object) this).bfs$setCooldown(0L); // -> isInCooldown false -> scans this tick
+                ((UpgradeWrapperBaseAccessor) (Object) this)
+                        .bfs$setCooldown(0L); // -> isInCooldown false -> scans this tick
             }
         }
     }
@@ -181,7 +194,10 @@ public abstract class FeedingUpgradeWrapperMixin {
      *    common cases (food added, slot freed) into a next-tick scan, so this is just the backstop.
      * The original constant tells us the outcome: SB passes 10 only after a successful feed.
      */
-    @ModifyArg(method = "tick", at = @At(value = "INVOKE", target = "setCooldown(Lnet/minecraft/world/level/Level;I)V"), index = 1)
+    @ModifyArg(
+            method = "tick",
+            at = @At(value = "INVOKE", target = "setCooldown(Lnet/minecraft/world/level/Level;I)V"),
+            index = 1)
     private int bfs$scanCadence(int original) {
         Player player = bfs$tickPlayer.get();
         if (player != null && original == 10 && Stomach.findEmptySlot(player) >= 0) {

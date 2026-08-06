@@ -15,8 +15,7 @@ public record StomachSyncPayload(CompoundTag nbt) implements CustomPacketPayload
             new Type<>(ResourceLocation.fromNamespaceAndPath(BFS.MODID, "stomach_sync"));
 
     public static final StreamCodec<RegistryFriendlyByteBuf, StomachSyncPayload> STREAM_CODEC = StreamCodec.of(
-            (buf, payload) -> buf.writeNbt(payload.nbt()),
-            buf -> new StomachSyncPayload((CompoundTag) buf.readNbt()));
+            (buf, payload) -> buf.writeNbt(payload.nbt()), buf -> new StomachSyncPayload((CompoundTag) buf.readNbt()));
 
     @Override
     public Type<StomachSyncPayload> type() {

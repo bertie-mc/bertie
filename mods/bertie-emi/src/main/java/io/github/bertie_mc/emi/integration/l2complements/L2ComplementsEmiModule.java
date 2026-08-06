@@ -1,26 +1,26 @@
 package io.github.bertie_mc.emi.integration.l2complements;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.xkmc.l2complements.content.recipe.BurntRecipe;
 import dev.xkmc.l2complements.content.recipe.DiffusionRecipe;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 
 /**
  * L2 Complements — Burning (item -> essence) and Diffusion (block + base block -> block, via the
  * Diffusion Wand). Recipe base = l2core BaseRecipe (public fields). Diffusion fields are Blocks.
  */
 public final class L2ComplementsEmiModule {
-    private L2ComplementsEmiModule() {
-    }
+    private L2ComplementsEmiModule() {}
 
     public static void register(EmiRegistry reg) {
-        EmiRecipeCategory burnt = Categories.machineNoStation(reg, "l2complements_burnt", "minecraft:lava_bucket", "Burning");
+        EmiRecipeCategory burnt =
+                Categories.machineNoStation(reg, "l2complements_burnt", "minecraft:lava_bucket", "Burning");
         Recipes.forEach(reg.getRecipeManager(), BurntRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.ingredient));
@@ -28,10 +28,11 @@ public final class L2ComplementsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(burnt, id, d));
         });
 
-        EmiRecipeCategory diff = Categories.machine(reg, "l2complements_diffusion", "l2complements:diffusion_wand", "Diffusion");
+        EmiRecipeCategory diff =
+                Categories.machine(reg, "l2complements_diffusion", "l2complements:diffusion_wand", "Diffusion");
         Recipes.forEach(reg.getRecipeManager(), DiffusionRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
-            d.itemIn(EmiStack.of(r.ingredient));   // Block is an ItemLike
+            d.itemIn(EmiStack.of(r.ingredient)); // Block is an ItemLike
             d.catalyst(EmiStack.of(r.base));
             d.itemOut(EmiStack.of(r.result));
             reg.addRecipe(new GenericEmiRecipe(diff, id, d));

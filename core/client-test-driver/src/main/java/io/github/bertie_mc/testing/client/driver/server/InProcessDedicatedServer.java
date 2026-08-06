@@ -1,7 +1,7 @@
 package io.github.bertie_mc.testing.client.driver.server;
 
-import io.github.bertie_mc.testing.client.driver.world.PreparedDedicatedWorld;
 import io.github.bertie_mc.testing.client.driver.mixin.server.ServerConnectionListenerAccessor;
+import io.github.bertie_mc.testing.client.driver.world.PreparedDedicatedWorld;
 import io.netty.channel.ChannelFuture;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -52,11 +52,8 @@ public final class InProcessDedicatedServer {
 
         Thread.ofPlatform().name("bertie-client-test-server-bootstrap").start(() -> {
             try {
-                Main.main(new String[] {
-                    "--nogui",
-                    "--universe",
-                    world.universe().toString()
-                });
+                Main.main(
+                        new String[] {"--nogui", "--universe", world.universe().toString()});
                 launch.bootstrapReturned();
             } catch (Throwable failure) {
                 launch.fail(failure);
@@ -131,8 +128,7 @@ public final class InProcessDedicatedServer {
         private final CompletableFuture<DedicatedServer> started = new CompletableFuture<>();
         private final CompletableFuture<Void> bootstrapTermination = new CompletableFuture<>();
         private final CompletableFuture<Void> serverTermination = new CompletableFuture<>();
-        private final CompletableFuture<Void> stopped = CompletableFuture
-                .allOf(bootstrapTermination, serverTermination)
+        private final CompletableFuture<Void> stopped = CompletableFuture.allOf(bootstrapTermination, serverTermination)
                 .whenComplete((ignored, failure) -> ACTIVE.compareAndSet(this, null));
 
         private Launch() {}
@@ -147,8 +143,7 @@ public final class InProcessDedicatedServer {
 
         public InetSocketAddress boundAddress() {
             DedicatedServer dedicatedServer = server();
-            var channels = ((ServerConnectionListenerAccessor) dedicatedServer.getConnection())
-                    .bertie$getChannels();
+            var channels = ((ServerConnectionListenerAccessor) dedicatedServer.getConnection()).bertie$getChannels();
             synchronized (channels) {
                 for (ChannelFuture channel : channels) {
                     SocketAddress address = channel.channel().localAddress();
@@ -188,8 +183,7 @@ public final class InProcessDedicatedServer {
 
         private void bootstrapReturned() {
             if (server.get() == null) {
-                fail(new IllegalStateException(
-                        "The dedicated-server entrypoint returned before creating a server"));
+                fail(new IllegalStateException("The dedicated-server entrypoint returned before creating a server"));
             }
         }
 
@@ -199,8 +193,8 @@ public final class InProcessDedicatedServer {
 
         private void serverTerminated() {
             if (!started.isDone()) {
-                started.completeExceptionally(new IllegalStateException(
-                        "The dedicated server terminated before startup completed"));
+                started.completeExceptionally(
+                        new IllegalStateException("The dedicated server terminated before startup completed"));
             }
             serverTermination.complete(null);
         }

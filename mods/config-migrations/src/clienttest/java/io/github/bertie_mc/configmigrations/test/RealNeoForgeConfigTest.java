@@ -34,8 +34,7 @@ public final class RealNeoForgeConfigTest {
         SERVER_SPEC = server.build();
     }
 
-    private RealNeoForgeConfigTest() {
-    }
+    private RealNeoForgeConfigTest() {}
 
     public static void register(ModContainer container) {
         container.registerConfig(ModConfig.Type.STARTUP, STARTUP_SPEC, STARTUP_FILE);
@@ -57,8 +56,7 @@ public final class RealNeoForgeConfigTest {
 
     private static void assertValue(String config, int expected, int actual) {
         if (actual != expected) {
-            throw new IllegalStateException(
-                    config + " migration did not reach the live config: " + actual);
+            throw new IllegalStateException(config + " migration did not reach the live config: " + actual);
         }
     }
 }

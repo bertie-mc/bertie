@@ -3,6 +3,9 @@ package io.github.bertie_mc.bertieprogression.fan;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -14,10 +17,6 @@ import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 /**
  * A fifth Create fan-processing type, on top of the stock four (splashing = water, smoking = fire,
@@ -38,7 +37,8 @@ public class OminousFanProcessingType implements FanProcessingType {
 
     @Override
     public boolean isValidAt(Level level, BlockPos pos) {
-        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(level.getBlockState(pos).getBlock());
+        ResourceLocation id =
+                BuiltInRegistries.BLOCK.getKey(level.getBlockState(pos).getBlock());
         return OMINOUS_FIRE.equals(id);
     }
 
@@ -61,8 +61,8 @@ public class OminousFanProcessingType implements FanProcessingType {
     @Override
     public List<ItemStack> process(ItemStack stack, Level level) {
         List<ItemStack> out = new ArrayList<>();
-        find(stack, level).ifPresent(h ->
-                out.add(h.value().assemble(new SingleRecipeInput(stack), level.registryAccess())));
+        find(stack, level)
+                .ifPresent(h -> out.add(h.value().assemble(new SingleRecipeInput(stack), level.registryAccess())));
         return out;
     }
 

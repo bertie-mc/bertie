@@ -12,11 +12,9 @@ final class InkPolicy {
             "irons_spellbooks:uncommon_ink",
             "irons_spellbooks:rare_ink",
             "irons_spellbooks:epic_ink",
-            "irons_spellbooks:legendary_ink"
-    );
+            "irons_spellbooks:legendary_ink");
 
-    private InkPolicy() {
-    }
+    private InkPolicy() {}
 
     static List<String> inkIds() {
         return INK_IDS;

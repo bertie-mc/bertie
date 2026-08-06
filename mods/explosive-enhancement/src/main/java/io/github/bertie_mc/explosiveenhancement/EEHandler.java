@@ -9,8 +9,7 @@ import net.minecraft.world.level.Level;
 /** Spawns the configured surface or underwater particle composition. */
 public final class EEHandler {
 
-    private EEHandler() {
-    }
+    private EEHandler() {}
 
     public static void spawnEnhancedParticles(Level level, double x, double y, double z, float power) {
         ExplosiveConfig cfg = ExplosiveConfig.get();
@@ -38,9 +37,16 @@ public final class EEHandler {
                 double dx = Math.cos(angle);
                 double dz = Math.sin(angle);
                 double speed = (p * 1.75) * 0.02;
-                addParticle(level, cfg, ParticleTypes.POOF,
-                        x + dx * radius, y, z + dz * radius,
-                        dx * speed, 0.0, dz * speed);
+                addParticle(
+                        level,
+                        cfg,
+                        ParticleTypes.POOF,
+                        x + dx * radius,
+                        y,
+                        z + dz * radius,
+                        dx * speed,
+                        0.0,
+                        dz * speed);
             }
         }
 
@@ -81,9 +87,8 @@ public final class EEHandler {
                 double angle = (Math.PI * 2.0) * i / ringCount;
                 double dx = Math.cos(angle);
                 double dz = Math.sin(angle);
-                addParticle(level, cfg, ParticleTypes.BUBBLE_COLUMN_UP,
-                        x + dx * radius, y, z + dz * radius,
-                        0.0, 0.0, 0.0);
+                addParticle(
+                        level, cfg, ParticleTypes.BUBBLE_COLUMN_UP, x + dx * radius, y, z + dz * radius, 0.0, 0.0, 0.0);
             }
         }
 
@@ -119,9 +124,8 @@ public final class EEHandler {
     }
 
     /** Six rising particles: one slow center, one vertical, and four diagonal. */
-    private static void spawnMushroomCloud(Level level, ExplosiveConfig cfg,
-                                           double x, double y, double z, float p,
-                                           ParticleOptions smoke) {
+    private static void spawnMushroomCloud(
+            Level level, ExplosiveConfig cfg, double x, double y, double z, float p, ParticleOptions smoke) {
         double velY = p * 0.4 / 1.85;
         double centerVelY = (p * 0.25) / 1.85;
         double xzVel = 0.15 * p * 0.5;
@@ -134,9 +138,16 @@ public final class EEHandler {
         addParticle(level, cfg, smoke, x, y, z, 0.0, velY, -xzVel);
     }
 
-    private static void addParticle(Level level, ExplosiveConfig cfg, ParticleOptions particle,
-                                    double x, double y, double z,
-                                    double vx, double vy, double vz) {
+    private static void addParticle(
+            Level level,
+            ExplosiveConfig cfg,
+            ParticleOptions particle,
+            double x,
+            double y,
+            double z,
+            double vx,
+            double vy,
+            double vz) {
         if (cfg.alwaysShow) {
             level.addAlwaysVisibleParticle(particle, x, y, z, vx, vy, vz);
         } else {

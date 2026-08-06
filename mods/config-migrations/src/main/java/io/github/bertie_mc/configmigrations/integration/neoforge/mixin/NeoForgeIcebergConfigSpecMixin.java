@@ -10,9 +10,7 @@ import org.spongepowered.asm.mixin.Pseudo;
 
 /** Connects Iceberg's NeoForge config specification to the migration lifecycle. */
 @Pseudo
-@Mixin(
-        targets = "com.anthonyhilyard.iceberg.neoforge.config.NeoForgeIcebergConfigSpec",
-        remap = false)
+@Mixin(targets = "com.anthonyhilyard.iceberg.neoforge.config.NeoForgeIcebergConfigSpec", remap = false)
 abstract class NeoForgeIcebergConfigSpecMixin {
     @WrapMethod(method = "validateSpec(Lnet/neoforged/fml/config/ModConfig;)V")
     private void configmigrations$registerSpec(ModConfig modConfig, Operation<Void> original) {
@@ -21,11 +19,7 @@ abstract class NeoForgeIcebergConfigSpecMixin {
     }
 
     @WrapMethod(method = "acceptConfig(Lnet/neoforged/fml/config/IConfigSpec$ILoadedConfig;)V")
-    private void configmigrations$accept(
-            IConfigSpec.ILoadedConfig loadedConfig, Operation<Void> original) {
-        MigrationRuntime.acceptNeoForge(
-                (IConfigSpec) (Object) this,
-                loadedConfig,
-                () -> original.call(loadedConfig));
+    private void configmigrations$accept(IConfigSpec.ILoadedConfig loadedConfig, Operation<Void> original) {
+        MigrationRuntime.acceptNeoForge((IConfigSpec) (Object) this, loadedConfig, () -> original.call(loadedConfig));
     }
 }

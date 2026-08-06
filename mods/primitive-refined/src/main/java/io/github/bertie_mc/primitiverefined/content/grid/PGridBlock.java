@@ -1,13 +1,10 @@
 package io.github.bertie_mc.primitiverefined.content.grid;
 
-import java.util.function.Supplier;
-
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-
 import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
 import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
 import com.simibubi.create.foundation.block.IBE;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
@@ -48,8 +45,10 @@ public class PGridBlock extends HorizontalKineticBlock
     private final float stressImpact;
     private final Supplier<BlockEntityType<? extends PGridBlockEntity>> blockEntityType;
 
-    public PGridBlock(Properties properties, float stressImpact,
-                      Supplier<BlockEntityType<? extends PGridBlockEntity>> blockEntityType) {
+    public PGridBlock(
+            Properties properties,
+            float stressImpact,
+            Supplier<BlockEntityType<? extends PGridBlockEntity>> blockEntityType) {
         super(properties);
         this.stressImpact = stressImpact;
         this.blockEntityType = blockEntityType;
@@ -96,8 +95,8 @@ public class PGridBlock extends HorizontalKineticBlock
      * screen in the player's face is not.
      */
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player,
-                                               BlockHitResult hit) {
+    protected InteractionResult useWithoutItem(
+            BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
         }
@@ -111,10 +110,8 @@ public class PGridBlock extends HorizontalKineticBlock
 
     /** The crafting grid's 3x3 is a real inventory, so breaking the block has to give it back. */
     @Override
-    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState,
-                         boolean movedByPiston) {
-        if (!state.is(newState.getBlock())
-                && level.getBlockEntity(pos) instanceof PCraftingGridBlockEntity crafting) {
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
+        if (!state.is(newState.getBlock()) && level.getBlockEntity(pos) instanceof PCraftingGridBlockEntity crafting) {
             crafting.dropMatrix();
         }
         super.onRemove(state, level, pos, newState, movedByPiston);

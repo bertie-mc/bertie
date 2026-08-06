@@ -4,12 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.google.gson.JsonParser;
 import io.github.bertie_mc.bertietiers.config.ConfigException;
 import io.github.bertie_mc.bertietiers.config.ConfigParser;
 import io.github.bertie_mc.bertietiers.config.ConfigValidator;
 import io.github.bertie_mc.bertietiers.config.RawConfig;
 import io.github.bertie_mc.bertietiers.config.ValidatedConfig;
-import com.google.gson.JsonParser;
 import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -49,7 +49,8 @@ class ConfigTest {
                                "blocks": [ "minecraft:iron_ore" ] } ] }
                 """).config();
         assertEquals(1, config.tiers().size());
-        assertEquals("minecraft:stone_pickaxe", config.tiers().get(0).tools().get(0).item());
+        assertEquals(
+                "minecraft:stone_pickaxe", config.tiers().get(0).tools().get(0).item());
         assertTrue(config.tiers().get(0).tools().get(0).components().isEmpty());
     }
 
@@ -216,9 +217,8 @@ class ConfigTest {
                 """;
         RawConfig raw = ConfigParser.parse(JsonParser.parseString(json));
         // no ".mod(\"slag\")" here - Slag and someothermod are both absent
-        ConfigValidator.Result result = ConfigValidator.validate(raw, new FakeRegistryProbe()
-                .block("minecraft:iron_ore")
-                .item("minecraft:iron_pickaxe"));
+        ConfigValidator.Result result = ConfigValidator.validate(
+                raw, new FakeRegistryProbe().block("minecraft:iron_ore").item("minecraft:iron_pickaxe"));
 
         ValidatedConfig.Tier tier = result.config().tiers().get(0);
         assertEquals(1, tier.tools().size(), "only the vanilla pickaxe should survive");
@@ -254,8 +254,11 @@ class ConfigTest {
                 """;
         assertEquals(2, validate(before).config().tiers().size());
         ValidatedConfig updated = validate(after).config();
-        assertEquals(List.of("stone", "bronze", "iron"),
+        assertEquals(
+                List.of("stone", "bronze", "iron"),
                 updated.tiers().stream().map(ValidatedConfig.Tier::id).toList());
-        assertEquals(List.of(200, 300, 400), updated.tiers().stream().map(ValidatedConfig.Tier::level).toList());
+        assertEquals(
+                List.of(200, 300, 400),
+                updated.tiers().stream().map(ValidatedConfig.Tier::level).toList());
     }
 }

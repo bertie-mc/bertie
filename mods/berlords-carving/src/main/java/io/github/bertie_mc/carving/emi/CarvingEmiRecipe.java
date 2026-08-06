@@ -6,10 +6,9 @@ import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-
-import java.util.List;
 
 /**
  * One synthesized carving "recipe": a material slate becomes a tool head or armor part. Carving has
@@ -27,8 +26,8 @@ public class CarvingEmiRecipe extends BasicEmiRecipe {
     private final EmiStack output;
     private final Component tierLine;
 
-    public CarvingEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
-                            EmiIngredient input, EmiStack output, Component tierLine) {
+    public CarvingEmiRecipe(
+            EmiRecipeCategory category, ResourceLocation id, EmiIngredient input, EmiStack output, Component tierLine) {
         super(category, id, PAD + SLOT + PAD + ARROW_W + PAD + SLOT + PAD, PAD + SLOT + PAD + 10 + PAD);
         this.input = input;
         this.output = output;

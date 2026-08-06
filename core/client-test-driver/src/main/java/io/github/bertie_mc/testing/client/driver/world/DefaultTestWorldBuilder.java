@@ -48,16 +48,13 @@ public final class DefaultTestWorldBuilder implements TestWorldBuilder {
         TestScheduler.requireNoServerRunning();
         openCreateWorldScreen("bertie-client-test-world");
         context.clickScreenButton("selectWorld.create");
-        ClientWorldLoading.waitForWorld(
-                context,
-                "the integrated world to load",
-                client -> {
-                    var server = client.getSingleplayerServer();
-                    return client.level != null
-                            && client.player != null
-                            && server != null
-                            && TestScheduler.canAcceptServerTasks(server);
-                });
+        ClientWorldLoading.waitForWorld(context, "the integrated world to load", client -> {
+            var server = client.getSingleplayerServer();
+            return client.level != null
+                    && client.player != null
+                    && server != null
+                    && TestScheduler.canAcceptServerTasks(server);
+        });
 
         var server = context.computeOnClient(client -> client.getSingleplayerServer());
         if (server == null) {
@@ -78,26 +75,20 @@ public final class DefaultTestWorldBuilder implements TestWorldBuilder {
             openCreateWorldScreen(properties.getProperty("level-name", "world"));
             context.clickScreenButton("selectWorld.create");
             world = ClientWorldLoading.awaitCreation(
-                    context,
-                    "the dedicated world data to be written",
-                    request.result());
+                    context, "the dedicated world data to be written", request.result());
         }
         context.setScreen(TitleScreen::new);
 
         InProcessDedicatedServer.Launch launch = InProcessDedicatedServer.begin(world, properties);
         try {
-            DedicatedServer server = context.awaitInfrastructure(
-                    "the dedicated server to start",
-                    launch.started());
+            DedicatedServer server = context.awaitInfrastructure("the dedicated server to start", launch.started());
             context.waitForInfrastructure(
-                    "the dedicated server test phase",
-                    () -> TestScheduler.canAcceptServerTasks(server));
+                    "the dedicated server test phase", () -> TestScheduler.canAcceptServerTasks(server));
             return context.own(new DefaultDedicatedServerContext(context, launch));
         } catch (Throwable failure) {
             launch.abort();
             try {
-                context.awaitInfrastructure(
-                        "the failed dedicated server to stop", launch.stopped());
+                context.awaitInfrastructure("the failed dedicated server to stop", launch.stopped());
             } catch (Throwable cleanupFailure) {
                 failure.addSuppressed(cleanupFailure);
             }

@@ -27,17 +27,16 @@ import net.neoforged.fml.loading.LoadingModList;
 
 /** Creates the shared migration engine and delegates hooks to concrete integrations. */
 public final class MigrationRuntime {
-    private static final Set<String> INTEGRATIONS =
-            Set.of(
-                    "minecraft",
-                    "neoforge",
-                    "artifacts",
-                    "autoconfig",
-                    "fzzy",
-                    "owo",
-                    "resourceful",
-                    "supermartijn642",
-                    "wunderlib");
+    private static final Set<String> INTEGRATIONS = Set.of(
+            "minecraft",
+            "neoforge",
+            "artifacts",
+            "autoconfig",
+            "fzzy",
+            "owo",
+            "resourceful",
+            "supermartijn642",
+            "wunderlib");
 
     private static NeoForgeIntegration neoForge;
     private static ArtifactsIntegration artifacts;
@@ -48,8 +47,7 @@ public final class MigrationRuntime {
     private static SuperMartijn642Integration superMartijn642;
     private static WunderLibIntegration wunderLib;
 
-    private MigrationRuntime() {
-    }
+    private MigrationRuntime() {}
 
     public static void initializeLaunch(boolean datagen) {
         if (datagen) {
@@ -71,25 +69,16 @@ public final class MigrationRuntime {
         neoForge = NeoForgeIntegration.load(migrations, manifests.resolve("neoforge"));
         artifacts = ArtifactsIntegration.load(migrations, manifests.resolve("artifacts"));
         autoConfig = AutoConfigIntegration.load(
-                migrations,
-                manifests.resolve("autoconfig"),
-                gameDirectory.resolve("config"));
-        fzzyConfig = FzzyConfigIntegration.load(
-                migrations,
-                gameDirectory.resolve("config"),
-                manifests.resolve("fzzy"));
+                migrations, manifests.resolve("autoconfig"), gameDirectory.resolve("config"));
+        fzzyConfig = FzzyConfigIntegration.load(migrations, gameDirectory.resolve("config"), manifests.resolve("fzzy"));
         owoConfig = LoadingModList.get().getModFileById("owo") != null
                 ? OwoConfigIntegration.load(migrations, manifests.resolve("owo"))
                 : null;
         resourcefulConfig = ResourcefulConfigIntegration.load(
-                migrations,
-                manifests.resolve("resourceful"),
-                gameDirectory.resolve("config"));
+                migrations, manifests.resolve("resourceful"), gameDirectory.resolve("config"));
         superMartijn642 = LoadingModList.get().getModFileById("supermartijn642configlib") != null
                 ? SuperMartijn642Integration.load(
-                        migrations,
-                        gameDirectory.resolve("config"),
-                        manifests.resolve("supermartijn642"))
+                        migrations, gameDirectory.resolve("config"), manifests.resolve("supermartijn642"))
                 : null;
         wunderLib = WunderLibIntegration.load(migrations, manifests.resolve("wunderlib"));
     }
@@ -120,9 +109,7 @@ public final class MigrationRuntime {
     }
 
     public static void acceptNeoForge(
-            IConfigSpec spec,
-            IConfigSpec.ILoadedConfig loadedConfig,
-            Runnable nativeAcceptance) {
+            IConfigSpec spec, IConfigSpec.ILoadedConfig loadedConfig, Runnable nativeAcceptance) {
         NeoForgeIntegration integration = neoForge;
         if (integration == null) {
             nativeAcceptance.run();
@@ -187,11 +174,7 @@ public final class MigrationRuntime {
         }
     }
 
-    public static void migrateResourcefulConfig(
-            String modId,
-            String configId,
-            Object config,
-            Runnable nativeSave) {
+    public static void migrateResourcefulConfig(String modId, String configId, Object config, Runnable nativeSave) {
         ResourcefulConfigIntegration integration = resourcefulConfig;
         if (integration == null) {
             nativeSave.run();
@@ -214,8 +197,7 @@ public final class MigrationRuntime {
         }
     }
 
-    public static void migrateWunderLib(
-            ResourceLocation id, Path path, JsonObject document, Runnable nativeSave) {
+    public static void migrateWunderLib(ResourceLocation id, Path path, JsonObject document, Runnable nativeSave) {
         WunderLibIntegration integration = wunderLib;
         if (integration != null) {
             integration.migrate(id, path, document, nativeSave);
@@ -239,7 +221,8 @@ public final class MigrationRuntime {
         }
         try (var entries = Files.list(manifests)) {
             for (Path entry : entries.toList()) {
-                if (!Files.isDirectory(entry) || !INTEGRATIONS.contains(entry.getFileName().toString())) {
+                if (!Files.isDirectory(entry)
+                        || !INTEGRATIONS.contains(entry.getFileName().toString())) {
                     throw new ConfigMigrationException("Unknown config migration integration " + entry.getFileName());
                 }
             }

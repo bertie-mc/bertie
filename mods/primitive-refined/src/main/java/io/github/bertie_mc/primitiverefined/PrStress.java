@@ -1,12 +1,11 @@
 package io.github.bertie_mc.primitiverefined;
 
-import io.github.bertie_mc.primitiverefined.content.grid.PGridBlock;
-import io.github.bertie_mc.primitiverefined.content.reader.ExternalReaderBlock;
 import com.refinedmods.refinedstorage.api.network.Network;
 import com.refinedmods.refinedstorage.api.network.node.GraphNetworkComponent;
 import com.refinedmods.refinedstorage.api.network.node.container.NetworkNodeContainer;
 import com.refinedmods.refinedstorage.common.api.support.network.InWorldNetworkNodeContainer;
-
+import io.github.bertie_mc.primitiverefined.content.grid.PGridBlock;
+import io.github.bertie_mc.primitiverefined.content.reader.ExternalReaderBlock;
 import javax.annotation.Nullable;
 
 /**
@@ -26,8 +25,7 @@ import javax.annotation.Nullable;
  */
 public final class PrStress {
 
-    private PrStress() {
-    }
+    private PrStress() {}
 
     /** Cables only carry the network; they cost nothing to keep turning. */
     public static final float CABLE = 0f;
@@ -59,7 +57,8 @@ public final class PrStress {
             return CONTROLLER;
         }
         float total = CONTROLLER;
-        for (NetworkNodeContainer container : network.getComponent(GraphNetworkComponent.class).getContainers()) {
+        for (NetworkNodeContainer container :
+                network.getComponent(GraphNetworkComponent.class).getContainers()) {
             if (!(container instanceof InWorldNetworkNodeContainer inWorld)) {
                 continue;
             }

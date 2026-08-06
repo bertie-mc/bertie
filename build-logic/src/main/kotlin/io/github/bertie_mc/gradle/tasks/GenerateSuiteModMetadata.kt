@@ -68,55 +68,58 @@ internal fun renderSuiteModMetadata(
     javaFmlLoaderVersionRange: String,
     testedModId: String? = null,
 ): String {
-    val testedModDependency = testedModId?.let {
+    val testedModDependency =
+        testedModId?.let {
+            """
+            [[dependencies.${tomlString(modId)}]]
+            modId = ${tomlString(it)}
+            type = "required"
+            versionRange = "*"
+            ordering = "AFTER"
+            side = "BOTH"
+            """.trimIndent()
+        }
+    val base =
         """
+        modLoader = "javafml"
+        loaderVersion = ${tomlString(javaFmlLoaderVersionRange)}
+        license = ${tomlString(license)}
+
+        [[mods]]
+        modId = ${tomlString(modId)}
+        version = "1"
+        displayName = ${tomlString(displayName)}
+        description = ${tomlString(description)}
+
         [[dependencies.${tomlString(modId)}]]
-        modId = ${tomlString(it)}
+        modId = "neoforge"
         type = "required"
-        versionRange = "*"
-        ordering = "AFTER"
+        versionRange = ${tomlString(neoForgeVersionRange)}
+        ordering = "NONE"
+        side = "BOTH"
+
+        [[dependencies.${tomlString(modId)}]]
+        modId = "minecraft"
+        type = "required"
+        versionRange = ${tomlString(minecraftVersionRange)}
+        ordering = "NONE"
         side = "BOTH"
         """.trimIndent()
-    }
-    val base = """
-    modLoader = "javafml"
-    loaderVersion = ${tomlString(javaFmlLoaderVersionRange)}
-    license = ${tomlString(license)}
-
-    [[mods]]
-    modId = ${tomlString(modId)}
-    version = "1"
-    displayName = ${tomlString(displayName)}
-    description = ${tomlString(description)}
-
-    [[dependencies.${tomlString(modId)}]]
-    modId = "neoforge"
-    type = "required"
-    versionRange = ${tomlString(neoForgeVersionRange)}
-    ordering = "NONE"
-    side = "BOTH"
-
-    [[dependencies.${tomlString(modId)}]]
-    modId = "minecraft"
-    type = "required"
-    versionRange = ${tomlString(minecraftVersionRange)}
-    ordering = "NONE"
-    side = "BOTH"
-    """.trimIndent()
     return listOfNotNull(base, testedModDependency).joinToString("\n\n", postfix = "\n")
 }
 
-internal fun tomlString(value: String): String = buildString {
-    append('"')
-    value.forEach { character ->
-        when (character) {
-            '\\' -> append("\\\\")
-            '"' -> append("\\\"")
-            '\n' -> append("\\n")
-            '\r' -> append("\\r")
-            '\t' -> append("\\t")
-            else -> append(character)
+internal fun tomlString(value: String): String =
+    buildString {
+        append('"')
+        value.forEach { character ->
+            when (character) {
+                '\\' -> append("\\\\")
+                '"' -> append("\\\"")
+                '\n' -> append("\\n")
+                '\r' -> append("\\r")
+                '\t' -> append("\\t")
+                else -> append(character)
+            }
         }
+        append('"')
     }
-    append('"')
-}

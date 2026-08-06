@@ -8,14 +8,12 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 
 /** Adapts an in-process dedicated-server launch to the client-test context API. */
-public final class DefaultDedicatedServerContext extends DefaultServerContext
-        implements DedicatedServerContext {
+public final class DefaultDedicatedServerContext extends DefaultServerContext implements DedicatedServerContext {
     private final InProcessDedicatedServer.Launch launch;
     private final ClientTestResources connections = new ClientTestResources();
     private boolean closed;
 
-    public DefaultDedicatedServerContext(
-            DefaultClientTestContext context, InProcessDedicatedServer.Launch launch) {
+    public DefaultDedicatedServerContext(DefaultClientTestContext context, InProcessDedicatedServer.Launch launch) {
         super(context, launch.server());
         this.launch = launch;
     }
@@ -26,8 +24,7 @@ public final class DefaultDedicatedServerContext extends DefaultServerContext
             throw new IllegalStateException("The dedicated server context is closed");
         }
         InetSocketAddress address = connectableAddress(launch.boundAddress());
-        return connections.own(DefaultDedicatedServerConnection.connect(
-                context, this, address));
+        return connections.own(DefaultDedicatedServerConnection.connect(context, this, address));
     }
 
     @Override
@@ -45,8 +42,7 @@ public final class DefaultDedicatedServerContext extends DefaultServerContext
         }
         try {
             launch.abort();
-            context.awaitInfrastructure(
-                    "the dedicated server threads to terminate", launch.stopped());
+            context.awaitInfrastructure("the dedicated server threads to terminate", launch.stopped());
         } catch (Throwable closeFailure) {
             failure = ClientTestResources.append(failure, closeFailure);
         }

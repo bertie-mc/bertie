@@ -4,14 +4,15 @@ Agent-specific instructions for the Bertie monorepo.
 
 ## Required reading
 
-Before changing build, test, packaging, or release infrastructure, read:
+Before changing code, read [`docs/overview.md`](docs/overview.md) for repository
+boundaries and the nearest component README for component-specific behavior and
+constraints. Before changing build, test, packaging, or release infrastructure, also read:
 
 - [`docs/dependencies.md`](docs/dependencies.md) for adding dependencies, runtime sides,
   locks, checksums, and pack generation;
 - [`docs/testing.md`](docs/testing.md) for choosing, writing, running, and diagnosing tests;
 - [`docs/cicd.md`](docs/cicd.md) for local checks, affected planning, pack exports, and
-  releases;
-- the nearest component README for component-specific behavior and constraints.
+  releases.
 
 Do not recreate those guides in this file. Update them when a developer-facing command,
 convention, or procedure changes. Keep implementation details in code and focused

@@ -12,27 +12,26 @@ import org.spongepowered.asm.mixin.Mixin;
  */
 @Mixin(
         targets = {
-                "net.mcreator.berriesandcherries.block.RaspberrybushBlock",
-                "net.mcreator.berriesandcherries.block.RaspberryBushTopBlock",
-                "net.mcreator.berriesandcherries.block.RaspberrybushnoneBlock",
-                "net.mcreator.berriesandcherries.block.RaspberrybushnonetopBlock",
-                "net.mcreator.berriesandcherries.block.StrawberrybushBlock",
-                "net.mcreator.berriesandcherries.block.StrawberryBushNoneBlock",
-                "net.mcreator.berriesandcherries.block.BlueberryBushBottomBlock",
-                "net.mcreator.berriesandcherries.block.BlueberryBushTopBlock",
-                "net.mcreator.berriesandcherries.block.NoneBlueberryBushBottomBlock",
-                "net.mcreator.berriesandcherries.block.NoneBlueberryBushTopBlock",
-                "net.mcreator.berriesandcherries.block.GreenGrapeTreeBottomBlock",
-                "net.mcreator.berriesandcherries.block.GreenGrapeTreeTopBlock",
-                "net.mcreator.berriesandcherries.block.NoneGreenGrapeTreeBottomBlock",
-                "net.mcreator.berriesandcherries.block.NoneGreenGrapeTreeTopBlock",
-                "net.mcreator.berriesandcherries.block.BlackGrapeTreeBottomBlock",
-                "net.mcreator.berriesandcherries.block.BlackGrapeTreeTopBlock",
-                "net.mcreator.berriesandcherries.block.NoneBlackGrapeTreeBottomBlock",
-                "net.mcreator.berriesandcherries.block.NoneBlackGrapeTreeTopBlock"
+            "net.mcreator.berriesandcherries.block.RaspberrybushBlock",
+            "net.mcreator.berriesandcherries.block.RaspberryBushTopBlock",
+            "net.mcreator.berriesandcherries.block.RaspberrybushnoneBlock",
+            "net.mcreator.berriesandcherries.block.RaspberrybushnonetopBlock",
+            "net.mcreator.berriesandcherries.block.StrawberrybushBlock",
+            "net.mcreator.berriesandcherries.block.StrawberryBushNoneBlock",
+            "net.mcreator.berriesandcherries.block.BlueberryBushBottomBlock",
+            "net.mcreator.berriesandcherries.block.BlueberryBushTopBlock",
+            "net.mcreator.berriesandcherries.block.NoneBlueberryBushBottomBlock",
+            "net.mcreator.berriesandcherries.block.NoneBlueberryBushTopBlock",
+            "net.mcreator.berriesandcherries.block.GreenGrapeTreeBottomBlock",
+            "net.mcreator.berriesandcherries.block.GreenGrapeTreeTopBlock",
+            "net.mcreator.berriesandcherries.block.NoneGreenGrapeTreeBottomBlock",
+            "net.mcreator.berriesandcherries.block.NoneGreenGrapeTreeTopBlock",
+            "net.mcreator.berriesandcherries.block.BlackGrapeTreeBottomBlock",
+            "net.mcreator.berriesandcherries.block.BlackGrapeTreeTopBlock",
+            "net.mcreator.berriesandcherries.block.NoneBlackGrapeTreeBottomBlock",
+            "net.mcreator.berriesandcherries.block.NoneBlackGrapeTreeTopBlock"
         },
-        remap = false
-)
+        remap = false)
 public class BerriesCherriesSpeedFactorMixin {
 
     // merged into each target class, overriding BlockBehaviour.getSpeedFactor

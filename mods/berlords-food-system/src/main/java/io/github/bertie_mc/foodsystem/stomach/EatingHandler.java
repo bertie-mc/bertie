@@ -81,7 +81,6 @@ public final class EatingHandler {
     }
 
     private static void removeIfPresent(Player player, String id) {
-        BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.parse(id))
-                .ifPresent(player::removeEffect);
+        BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.parse(id)).ifPresent(player::removeEffect);
     }
 }

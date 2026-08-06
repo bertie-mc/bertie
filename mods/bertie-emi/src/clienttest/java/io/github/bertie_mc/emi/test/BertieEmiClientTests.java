@@ -15,17 +15,14 @@ public final class BertieEmiClientTests {
     private static final ResourceLocation HEPHAESTUS_CATEGORY =
             ResourceLocation.fromNamespaceAndPath("bertieemi", "fa_hephaestus_ritual_tier_1");
 
-    private BertieEmiClientTests() {
-    }
+    private BertieEmiClientTests() {}
 
     @ClientTest
     public static void registersForbiddenArcanusIntegration(ClientTestContext context) {
         try (IntegratedWorldContext world = context.worldBuilder()
                 .adjustSettings(settings -> settings.setName("bertie-emi"))
                 .create()) {
-            context.waitFor(
-                    "Forbidden & Arcanus EMI category registration",
-                    client -> categoriesReady());
+            context.waitFor("Forbidden & Arcanus EMI category registration", client -> categoriesReady());
             context.runOnClient(client -> assertCategories());
         }
     }

@@ -37,12 +37,7 @@ final class FzzyConfigFile {
     private final Method resultGet;
 
     private FzzyConfigFile(
-            Path configDirectory,
-            Object api,
-            Object classInstance,
-            String name,
-            String folder,
-            String subfolder) {
+            Path configDirectory, Object api, Object classInstance, String name, String folder, String subfolder) {
         this.api = api;
         this.classInstance = classInstance;
         this.name = name;
@@ -57,7 +52,8 @@ final class FzzyConfigFile {
             resultGet = result.getMethod("get");
 
             directory = directory(configDirectory, folder, subfolder);
-            canonicalPath = directory.resolve(name + suffix(preferredType))
+            canonicalPath = directory
+                    .resolve(name + suffix(preferredType))
                     .toAbsolutePath()
                     .normalize();
         } catch (ReflectiveOperationException exception) {
@@ -66,14 +62,8 @@ final class FzzyConfigFile {
     }
 
     static FzzyConfigFile open(
-            Path configDirectory,
-            Object api,
-            Object classInstance,
-            String name,
-            String folder,
-            String subfolder) {
-        return new FzzyConfigFile(
-                configDirectory, api, classInstance, name, folder, subfolder);
+            Path configDirectory, Object api, Object classInstance, String name, String folder, String subfolder) {
+        return new FzzyConfigFile(configDirectory, api, classInstance, name, folder, subfolder);
     }
 
     Path canonicalPath() {
@@ -111,9 +101,7 @@ final class FzzyConfigFile {
                 }
             }
             Input compatibility = compatibilityInput();
-            return compatibility != null
-                    ? compatibility
-                    : new Input(canonicalPath, preferredType);
+            return compatibility != null ? compatibility : new Input(canonicalPath, preferredType);
         } catch (ReflectiveOperationException exception) {
             throw failure("discover Fzzy Config file " + canonicalPath, exception);
         }
@@ -123,9 +111,8 @@ final class FzzyConfigFile {
         ClassLoader loader = api.getClass().getClassLoader();
         Class<?> kClass = Class.forName("kotlin.reflect.KClass", false, loader);
         Class<?> reflection = Class.forName("kotlin.jvm.internal.Reflection", false, loader);
-        Object configClass = reflection
-                .getMethod("getOrCreateKotlinClass", Class.class)
-                .invoke(null, classInstance.getClass());
+        Object configClass =
+                reflection.getMethod("getOrCreateKotlinClass", Class.class).invoke(null, classInstance.getClass());
         Method getCompat = api.getClass().getDeclaredMethod("getCompat", kClass);
         getCompat.setAccessible(true);
         Object compatibility = getCompat.invoke(api, configClass);
@@ -169,9 +156,7 @@ final class FzzyConfigFile {
             for (Object entry : list) {
                 values.add(element(entry));
             }
-            return new TomlArray(
-                    values,
-                    Collections.nCopies(values.size(), List.<Annotation>of()));
+            return new TomlArray(values, Collections.nCopies(values.size(), List.<Annotation>of()));
         }
         if (value instanceof String string) {
             return new TomlLiteral(string, TomlLiteral.Type.String);
@@ -245,12 +230,10 @@ final class FzzyConfigFile {
     }
 
     private static ConfigMigrationException failure(String action, ReflectiveOperationException exception) {
-        Throwable cause = exception instanceof InvocationTargetException invocation
-                ? invocation.getTargetException()
-                : exception;
+        Throwable cause =
+                exception instanceof InvocationTargetException invocation ? invocation.getTargetException() : exception;
         return new ConfigMigrationException("Failed to " + action, cause);
     }
 
-    private record Input(Path path, Object type) {
-    }
+    private record Input(Path path, Object type) {}
 }

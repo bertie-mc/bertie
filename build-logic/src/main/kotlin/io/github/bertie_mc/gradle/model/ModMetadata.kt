@@ -15,20 +15,22 @@ data class ModMetadata(
     val gameTestNamespace: String,
 ) {
     fun templateProperties(platform: PlatformVersions): Map<String, String> =
-        platform.templateProperties() + mapOf(
-            "mod_id" to id,
-            "mod_name" to displayName,
-            "mod_license" to license,
-            "mod_version" to version,
-            "mod_authors" to authors,
-            "mod_description" to description,
-        )
+        platform.templateProperties() +
+            mapOf(
+                "mod_id" to id,
+                "mod_name" to displayName,
+                "mod_license" to license,
+                "mod_version" to version,
+                "mod_authors" to authors,
+                "mod_description" to description,
+            )
 
     companion object {
         fun parse(text: String): ModMetadata {
-            val properties = Properties().apply {
-                StringReader(text).use(::load)
-            }
+            val properties =
+                Properties().apply {
+                    StringReader(text).use(::load)
+                }
 
             fun required(name: String): String =
                 properties.getProperty(name)?.takeIf(String::isNotBlank)

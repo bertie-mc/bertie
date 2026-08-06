@@ -17,8 +17,7 @@ public final class RealIcebergConfigTest extends IcebergConfig<RealIcebergConfig
     }
 
     public static void register() {
-        registered = IcebergConfig.register(
-                RealIcebergConfigTest.class, ConfigMigrationsClientTestMod.MOD_ID);
+        registered = IcebergConfig.register(RealIcebergConfigTest.class, ConfigMigrationsClientTestMod.MOD_ID);
     }
 
     public static void assertMigrated() {
@@ -27,8 +26,7 @@ public final class RealIcebergConfigTest extends IcebergConfig<RealIcebergConfig
         }
         int actual = migratedValue.get();
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "Iceberg migration did not reach the live config: " + actual);
+            throw new IllegalStateException("Iceberg migration did not reach the live config: " + actual);
         }
     }
 }

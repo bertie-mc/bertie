@@ -5,8 +5,7 @@ import java.util.function.Consumer;
 /** Failure boundary used around fdlib's post-shader initialization. */
 public final class ShaderInitialization {
 
-    private ShaderInitialization() {
-    }
+    private ShaderInitialization() {}
 
     public static void run(Attempt initialization, Consumer<Throwable> failureHandler) {
         try {

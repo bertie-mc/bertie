@@ -19,8 +19,7 @@ import net.minecraft.world.level.Level;
  */
 public final class BbhParticles {
 
-    private BbhParticles() {
-    }
+    private BbhParticles() {}
 
     public static void spawn(Level level, BlockPos pos, RandomSource random, LevelDef def) {
         int rgb = def.particleColor();
@@ -33,14 +32,16 @@ public final class BbhParticles {
             int spreadX = random.nextInt(2) * 2 - 1;
             int spreadZ = random.nextInt(2) * 2 - 1;
 
-            Particle particle = Minecraft.getInstance().particleEngine.createParticle(
-                    ParticleTypes.PORTAL,
-                    pos.getX() + 0.5D + 0.25D * spreadX,
-                    pos.getY() + 0.5D,
-                    pos.getZ() + 0.5D + 0.25D * spreadZ,
-                    random.nextFloat() * spreadX,
-                    (random.nextFloat() - 0.5D) * 0.125D,
-                    random.nextFloat() * spreadZ);
+            Particle particle = Minecraft.getInstance()
+                    .particleEngine
+                    .createParticle(
+                            ParticleTypes.PORTAL,
+                            pos.getX() + 0.5D + 0.25D * spreadX,
+                            pos.getY() + 0.5D,
+                            pos.getZ() + 0.5D + 0.25D * spreadZ,
+                            random.nextFloat() * spreadX,
+                            (random.nextFloat() - 0.5D) * 0.125D,
+                            random.nextFloat() * spreadZ);
 
             if (particle != null) {
                 float shade = 1.0F + (random.nextFloat() * 2.0F - 1.0F) * jitter;

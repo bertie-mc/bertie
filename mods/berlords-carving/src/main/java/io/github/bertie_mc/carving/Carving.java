@@ -1,5 +1,6 @@
 package io.github.bertie_mc.carving;
 
+import com.mojang.serialization.Codec;
 import io.github.bertie_mc.carving.block.CarvingStationBlock;
 import io.github.bertie_mc.carving.block.CarvingStationBlockEntity;
 import io.github.bertie_mc.carving.compat.SlagCompat;
@@ -8,7 +9,9 @@ import io.github.bertie_mc.carving.menu.CarvingStationMenu;
 import io.github.bertie_mc.carving.net.CarveResultPayload;
 import io.github.bertie_mc.carving.net.OpenCarvingPayload;
 import io.github.bertie_mc.carving.net.StationCarveResultPayload;
-import com.mojang.serialization.Codec;
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.function.Supplier;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -43,10 +46,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.EnumMap;
-import java.util.Map;
-import java.util.function.Supplier;
-
 /**
  * Carving - shape tool heads & armor from material slates instead of crafting.
  *
@@ -65,40 +64,60 @@ public class Carving {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
-    public static final DeferredRegister<MenuType<?>> MENUS =
-            DeferredRegister.create(Registries.MENU, MODID);
+    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(Registries.MENU, MODID);
     public static final DeferredRegister<DataComponentType<?>> COMPONENTS =
             DeferredRegister.create(Registries.DATA_COMPONENT_TYPE, MODID);
 
     /** Tier-1 carving error count carried by the result: -25% current durability per flaw. */
-    public static final Supplier<DataComponentType<Integer>> FLAWS = COMPONENTS.register("flaws",
+    public static final Supplier<DataComponentType<Integer>> FLAWS = COMPONENTS.register(
+            "flaws",
             () -> DataComponentType.<Integer>builder()
-                    .persistent(Codec.INT).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+                    .persistent(Codec.INT)
+                    .networkSynchronized(ByteBufCodecs.VAR_INT)
+                    .build());
     /** Tier-2 (water-jet) penalty steps carried by the result: -30% current durability per step. */
-    public static final Supplier<DataComponentType<Integer>> PENALTY = COMPONENTS.register("penalty",
+    public static final Supplier<DataComponentType<Integer>> PENALTY = COMPONENTS.register(
+            "penalty",
             () -> DataComponentType.<Integer>builder()
-                    .persistent(Codec.INT).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+                    .persistent(Codec.INT)
+                    .networkSynchronized(ByteBufCodecs.VAR_INT)
+                    .build());
     /** Marker: this assembled Slag tool has already taken its one-time carving penalty. */
-    public static final Supplier<DataComponentType<Unit>> PENALIZED = COMPONENTS.register("penalized",
+    public static final Supplier<DataComponentType<Unit>> PENALIZED = COMPONENTS.register(
+            "penalized",
             () -> DataComponentType.<Unit>builder()
-                    .persistent(Codec.unit(Unit.INSTANCE)).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)).build());
+                    .persistent(Codec.unit(Unit.INSTANCE))
+                    .networkSynchronized(StreamCodec.unit(Unit.INSTANCE))
+                    .build());
 
-    public static final DeferredBlock<CarvingStationBlock> CARVING_STATION =
-            BLOCKS.registerBlock("carving_station", CarvingStationBlock::new,
-                    BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).strength(3.5F)
-                            .sound(SoundType.METAL).requiresCorrectToolForDrops().noOcclusion());
+    public static final DeferredBlock<CarvingStationBlock> CARVING_STATION = BLOCKS.registerBlock(
+            "carving_station",
+            CarvingStationBlock::new,
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.DIAMOND)
+                    .strength(3.5F)
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion());
     public static final DeferredItem<BlockItem> CARVING_STATION_ITEM =
             ITEMS.registerSimpleBlockItem("carving_station", CARVING_STATION);
 
     /** Block of Flint (9 flint); the flint carving-canvas background, now a real block. */
-    public static final DeferredBlock<Block> FLINT_BLOCK = BLOCKS.registerSimpleBlock("flint_block",
-            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).strength(1.5F, 6.0F).sound(SoundType.STONE));
+    public static final DeferredBlock<Block> FLINT_BLOCK = BLOCKS.registerSimpleBlock(
+            "flint_block",
+            BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .strength(1.5F, 6.0F)
+                    .sound(SoundType.STONE));
+
     public static final DeferredItem<BlockItem> FLINT_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem("flint_block", FLINT_BLOCK);
 
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CarvingStationBlockEntity>>
-            CARVING_STATION_BE = BLOCK_ENTITIES.register("carving_station",
-            () -> BlockEntityType.Builder.of(CarvingStationBlockEntity::new, CARVING_STATION.get()).build(null));
+            CARVING_STATION_BE = BLOCK_ENTITIES.register(
+                    "carving_station",
+                    () -> BlockEntityType.Builder.of(CarvingStationBlockEntity::new, CARVING_STATION.get())
+                            .build(null));
     public static final DeferredHolder<MenuType<?>, MenuType<CarvingStationMenu>> CARVING_STATION_MENU =
             MENUS.register("carving_station", () -> IMenuTypeExtension.create(CarvingStationMenu::new));
 
@@ -115,12 +134,18 @@ public class Carving {
         boolean slag = ModList.get().isLoaded("slag");
         for (CarvingMaterial m : CarvingMaterial.values()) {
             if (m.hasTools && (slag || m.vanillaTool != null)) {
-                SMALL_SLATES.put(m, ITEMS.registerItem(m.id + "_slate",
-                        p -> new SlateItem(p, m, false), new Item.Properties().stacksTo(16)));
+                SMALL_SLATES.put(
+                        m,
+                        ITEMS.registerItem(
+                                m.id + "_slate", p -> new SlateItem(p, m, false), new Item.Properties().stacksTo(16)));
             }
             if (slag || m.vanillaArmor != null) {
-                BIG_SLATES.put(m, ITEMS.registerItem(m.id + "_big_slate",
-                        p -> new SlateItem(p, m, true), new Item.Properties().stacksTo(16)));
+                BIG_SLATES.put(
+                        m,
+                        ITEMS.registerItem(
+                                m.id + "_big_slate",
+                                p -> new SlateItem(p, m, true),
+                                new Item.Properties().stacksTo(16)));
             }
         }
     }
@@ -140,7 +165,9 @@ public class Carving {
         PayloadRegistrar r = event.registrar("1");
         r.playToClient(OpenCarvingPayload.TYPE, OpenCarvingPayload.STREAM_CODEC, OpenCarvingPayload::handle);
         r.playToServer(CarveResultPayload.TYPE, CarveResultPayload.STREAM_CODEC, CarveResultPayload::handle);
-        r.playToServer(StationCarveResultPayload.TYPE, StationCarveResultPayload.STREAM_CODEC,
+        r.playToServer(
+                StationCarveResultPayload.TYPE,
+                StationCarveResultPayload.STREAM_CODEC,
                 StationCarveResultPayload::handle);
     }
 

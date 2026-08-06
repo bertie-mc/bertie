@@ -1,8 +1,8 @@
 package io.github.bertie_mc.bertieweapons.logic;
 
+import com.mojang.logging.LogUtils;
 import io.github.bertie_mc.bertieweapons.BertieWeapons;
 import io.github.bertie_mc.bertieweapons.Config;
-import com.mojang.logging.LogUtils;
 import io.redspace.ironsspellbooks.api.item.UpgradeData;
 import io.redspace.ironsspellbooks.item.armor.UpgradeOrbType;
 import io.redspace.ironsspellbooks.registries.ComponentRegistry;
@@ -49,23 +49,21 @@ public final class WeaponUpgrades {
      * referenced so we never trigger Iron's registry class-init from our own; a rename upstream
      * surfaces as the loud lookup failure in {@link #orbRegistry}.
      */
-    public static final ResourceKey<Registry<UpgradeOrbType>> UPGRADE_ORB_REGISTRY =
-            ResourceKey.createRegistryKey(
-                    ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "upgrade_orb_type"));
+    public static final ResourceKey<Registry<UpgradeOrbType>> UPGRADE_ORB_REGISTRY = ResourceKey.createRegistryKey(
+            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "upgrade_orb_type"));
 
     /** Our own two tier entries, shipped as datapack JSON under {@code data/bertieweapons/}. */
     public static final ResourceKey<UpgradeOrbType> STAT_TIER =
             ResourceKey.create(UPGRADE_ORB_REGISTRY, BertieWeapons.id("weapon_power"));
+
     public static final ResourceKey<UpgradeOrbType> SPELL_TIER =
             ResourceKey.create(UPGRADE_ORB_REGISTRY, BertieWeapons.id("spell_tier"));
 
     /** What may be upgraded at all. Datapack-editable; defaults to the Simply Swords uniques. */
-    public static final TagKey<Item> UPGRADABLE_WEAPONS =
-            ItemTags.create(BertieWeapons.id("upgradable_weapons"));
+    public static final TagKey<Item> UPGRADABLE_WEAPONS = ItemTags.create(BertieWeapons.id("upgradable_weapons"));
 
     /** What pays for a stat tier. One tag for the test build; per-tier costs come later. */
-    public static final TagKey<Item> STAT_CATALYSTS =
-            ItemTags.create(BertieWeapons.id("stat_catalysts"));
+    public static final TagKey<Item> STAT_CATALYSTS = ItemTags.create(BertieWeapons.id("stat_catalysts"));
 
     private WeaponUpgrades() {}
 
@@ -208,7 +206,8 @@ public final class WeaponUpgrades {
 
         // Carry over everything that is not ours to manage.
         if (existing != UpgradeData.NONE) {
-            for (Map.Entry<Holder<UpgradeOrbType>, Integer> entry : existing.upgrades().entrySet()) {
+            for (Map.Entry<Holder<UpgradeOrbType>, Integer> entry :
+                    existing.upgrades().entrySet()) {
                 String id = idOf(entry.getKey());
                 if (id == null || isManaged(id, ring)) {
                     continue;
@@ -220,7 +219,9 @@ public final class WeaponUpgrades {
         if (state.statTier() > 0) {
             Optional<Holder.Reference<UpgradeOrbType>> holder = lookup.get().get(STAT_TIER);
             if (holder.isEmpty()) {
-                LOGGER.error("[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?", STAT_TIER.location());
+                LOGGER.error(
+                        "[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?",
+                        STAT_TIER.location());
                 return Optional.empty();
             }
             upgrades.put(holder.get(), state.statTier());
@@ -228,7 +229,9 @@ public final class WeaponUpgrades {
         if (state.spellTier() > 0) {
             Optional<Holder.Reference<UpgradeOrbType>> holder = lookup.get().get(SPELL_TIER);
             if (holder.isEmpty()) {
-                LOGGER.error("[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?", SPELL_TIER.location());
+                LOGGER.error(
+                        "[bertieweapons] upgrade orb type {} is missing - is the mod's datapack loaded?",
+                        SPELL_TIER.location());
                 return Optional.empty();
             }
             upgrades.put(holder.get(), state.spellTier());
@@ -265,8 +268,7 @@ public final class WeaponUpgrades {
         return key == null ? null : key.location().toString();
     }
 
-    private static Optional<HolderLookup.RegistryLookup<UpgradeOrbType>> orbRegistry(
-            HolderLookup.Provider registries) {
+    private static Optional<HolderLookup.RegistryLookup<UpgradeOrbType>> orbRegistry(HolderLookup.Provider registries) {
         Optional<HolderLookup.RegistryLookup<UpgradeOrbType>> lookup = registries.lookup(UPGRADE_ORB_REGISTRY);
         if (lookup.isEmpty()) {
             LOGGER.error(

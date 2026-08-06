@@ -7,6 +7,5 @@ import net.neoforged.fml.common.Mod;
 public class BushTweaks {
     public static final String MOD_ID = "bushtweaks";
 
-    public BushTweaks(IEventBus ignored) {
-    }
+    public BushTweaks(IEventBus ignored) {}
 }

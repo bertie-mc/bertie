@@ -1,5 +1,8 @@
 package io.github.bertie_mc.explodetomine;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -8,10 +11,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
 import net.neoforged.neoforge.event.level.ExplosionEvent;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 @EventBusSubscriber(modid = ExplodeToMine.MOD_ID)
 public final class OreEvents {

@@ -3,8 +3,7 @@ package de.ambertation.wunderlib.utils;
 import net.minecraft.resources.ResourceLocation;
 
 public final class Version {
-    private Version() {
-    }
+    private Version() {}
 
     public interface ModVersionProvider {
         String getNamespace();

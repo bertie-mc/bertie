@@ -22,9 +22,10 @@ class ModPlugin : Plugin<Project> {
             configureJvmRole()
             val neoForge = configureNeoForgeRole()
 
-            val metadata = ModMetadata.parse(
-                providers.fileContents(layout.projectDirectory.file("mod.properties")).asText.get(),
-            )
+            val metadata =
+                ModMetadata.parse(
+                    providers.fileContents(layout.projectDirectory.file("mod.properties")).asText.get(),
+                )
             extensions.add(ModMetadata::class.java, "bertieMod", metadata)
             extensions.add(
                 TestSubject::class.java,
@@ -41,14 +42,17 @@ class ModPlugin : Plugin<Project> {
             group = metadata.group
             extensions.getByType<BasePluginExtension>().archivesName.set(metadata.archiveName)
 
-            val platform = extensions.getByType<VersionCatalogsExtension>()
-                .named("libs")
-                .platformVersions()
-            val generateModMetadata = tasks.register<GenerateModMetadata>("generateModMetadata") {
-                templateDirectory.set(layout.projectDirectory.dir("src/main/templates"))
-                replacements.set(metadata.templateProperties(platform))
-                outputDirectory.set(layout.buildDirectory.dir("generated/modMetadata"))
-            }
+            val platform =
+                extensions
+                    .getByType<VersionCatalogsExtension>()
+                    .named("libs")
+                    .platformVersions()
+            val generateModMetadata =
+                tasks.register<GenerateModMetadata>("generateModMetadata") {
+                    templateDirectory.set(layout.projectDirectory.dir("src/main/templates"))
+                    replacements.set(metadata.templateProperties(platform))
+                    outputDirectory.set(layout.buildDirectory.dir("generated/modMetadata"))
+                }
             extensions.getByType<SourceSetContainer>().named("main") {
                 resources.srcDir(generateModMetadata)
             }

@@ -6,13 +6,12 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.SlotWidget;
 import dev.emi.emi.api.widget.WidgetHolder;
+import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
-
-import java.util.List;
 
 /** One synthesized in-world interaction: inputs, non-consumed catalysts, outputs and instructions. */
 final class InWorldEmiRecipe extends BasicEmiRecipe {
@@ -28,10 +27,17 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
     private final List<EmiStack> itemOutputs;
     private final List<Component> info;
 
-    InWorldEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
-                     List<EmiIngredient> itemInputs, List<EmiIngredient> catalysts,
-                     List<EmiStack> itemOutputs, List<Component> info) {
-        super(category, id, computeWidth(itemInputs, catalysts, itemOutputs, info),
+    InWorldEmiRecipe(
+            EmiRecipeCategory category,
+            ResourceLocation id,
+            List<EmiIngredient> itemInputs,
+            List<EmiIngredient> catalysts,
+            List<EmiStack> itemOutputs,
+            List<Component> info) {
+        super(
+                category,
+                id,
+                computeWidth(itemInputs, catalysts, itemOutputs, info),
                 computeHeight(itemInputs, catalysts, itemOutputs, info));
         this.itemInputs = List.copyOf(itemInputs);
         this.recipeCatalysts = List.copyOf(catalysts);
@@ -42,8 +48,8 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
         this.outputs = this.itemOutputs;
     }
 
-    private static int computeWidth(List<EmiIngredient> inputs, List<EmiIngredient> catalysts,
-                                    List<EmiStack> outputs, List<Component> info) {
+    private static int computeWidth(
+            List<EmiIngredient> inputs, List<EmiIngredient> catalysts, List<EmiStack> outputs, List<Component> info) {
         int cells = inputs.size() + catalysts.size() + outputs.size();
         int base = Math.max(160, cells * SLOT + ARROW_WIDTH + PADDING * 4);
         Font font = font();
@@ -57,13 +63,15 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
         return Math.max(base, Math.min(widest + PADDING * 2, Math.max(base, TEXT_GROW_CAP)));
     }
 
-    private static int computeHeight(List<EmiIngredient> inputs, List<EmiIngredient> catalysts,
-                                     List<EmiStack> outputs, List<Component> info) {
+    private static int computeHeight(
+            List<EmiIngredient> inputs, List<EmiIngredient> catalysts, List<EmiStack> outputs, List<Component> info) {
         int width = computeWidth(inputs, catalysts, outputs, info);
         Font font = font();
         int lines = 0;
         for (Component line : info) {
-            lines += font == null ? 1 : Math.max(1, font.split(line, width - PADDING * 2).size());
+            lines += font == null
+                    ? 1
+                    : Math.max(1, font.split(line, width - PADDING * 2).size());
         }
         int infoHeight = lines == 0 ? 0 : PADDING + lines * TEXT_HEIGHT;
         return PADDING + SLOT + infoHeight + PADDING;

@@ -1,17 +1,16 @@
 package io.github.bertie_mc.bertieprogression;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class ResourceDataTest {
 
@@ -19,8 +18,11 @@ class ResourceDataTest {
 
     private static Path resources() {
         try {
-            return Path.of(ResourceDataTest.class.getResource("/assets/bertieprogression").toURI())
-                    .getParent().getParent();
+            return Path.of(ResourceDataTest.class
+                            .getResource("/assets/bertieprogression")
+                            .toURI())
+                    .getParent()
+                    .getParent();
         } catch (URISyntaxException exception) {
             throw new IllegalStateException(exception);
         }
@@ -31,7 +33,8 @@ class ResourceDataTest {
         List<String> failures = new ArrayList<>();
         long count;
         try (var files = Files.walk(RESOURCES)) {
-            List<Path> jsonFiles = files.filter(path -> path.toString().endsWith(".json")).toList();
+            List<Path> jsonFiles =
+                    files.filter(path -> path.toString().endsWith(".json")).toList();
             count = jsonFiles.size();
             for (Path path : jsonFiles) {
                 try {
@@ -50,17 +53,22 @@ class ResourceDataTest {
         Path models = RESOURCES.resolve("assets/bertieprogression/models/item");
         List<String> missing = new ArrayList<>();
         try (var files = Files.walk(models)) {
-            for (Path model : files.filter(path -> path.toString().endsWith(".json")).toList()) {
+            for (Path model :
+                    files.filter(path -> path.toString().endsWith(".json")).toList()) {
                 JsonElement parsed = JsonParser.parseString(Files.readString(model));
                 if (!parsed.getAsJsonObject().has("textures")) {
                     continue;
                 }
-                for (JsonElement texture : parsed.getAsJsonObject().getAsJsonObject("textures").asMap().values()) {
+                for (JsonElement texture : parsed.getAsJsonObject()
+                        .getAsJsonObject("textures")
+                        .asMap()
+                        .values()) {
                     String id = texture.getAsString();
                     if (!id.startsWith("bertieprogression:")) {
                         continue;
                     }
-                    Path image = RESOURCES.resolve("assets/bertieprogression/textures/")
+                    Path image = RESOURCES
+                            .resolve("assets/bertieprogression/textures/")
                             .resolve(id.substring("bertieprogression:".length()) + ".png");
                     if (!Files.isRegularFile(image)) {
                         missing.add(RESOURCES.relativize(model) + " -> " + RESOURCES.relativize(image));

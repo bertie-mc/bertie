@@ -58,12 +58,11 @@ class NeoForgePhaseLifecycleTest {
             NeoForgeIcebergConfigSpec spec = new NeoForgeIcebergConfigSpec();
             ModContainer container = mock(ModContainer.class);
             when(container.getModId()).thenReturn(MOD_ID);
-            MigrationRuntime.runNeoForgeRegistrationPhase(() -> tracker.registerConfig(
-                    ModConfig.Type.SERVER, spec, container, SERVER_FILE));
+            MigrationRuntime.runNeoForgeRegistrationPhase(
+                    () -> tracker.registerConfig(ModConfig.Type.SERVER, spec, container, SERVER_FILE));
 
             MigrationRuntime.runNeoForgeLoadPhase(
-                    ModConfig.Type.SERVER,
-                    () -> tracker.loadConfigs(ModConfig.Type.SERVER, globalBase, firstWorld));
+                    ModConfig.Type.SERVER, () -> tracker.loadConfigs(ModConfig.Type.SERVER, globalBase, firstWorld));
 
             assertFalse(read(firstWorldTarget).<Boolean>get("settings.enabled"));
             assertEquals(3, read(firstWorldTarget).<Number>get("settings.count").intValue());
@@ -71,8 +70,7 @@ class NeoForgePhaseLifecycleTest {
 
             tracker.unloadConfigs(ModConfig.Type.SERVER);
             MigrationRuntime.runNeoForgeLoadPhase(
-                    ModConfig.Type.SERVER,
-                    () -> tracker.loadConfigs(ModConfig.Type.SERVER, globalBase, secondWorld));
+                    ModConfig.Type.SERVER, () -> tracker.loadConfigs(ModConfig.Type.SERVER, globalBase, secondWorld));
 
             assertFalse(Files.exists(secondWorldTarget));
             assertFalse(read(globalTarget).<Boolean>get("settings.enabled"));
@@ -98,7 +96,8 @@ class NeoForgePhaseLifecycleTest {
     }
 
     private static int state(Path gameDirectory, Path target) throws IOException {
-        return Integer.parseInt(Files.readString(versionFile(gameDirectory, target)).strip());
+        return Integer.parseInt(
+                Files.readString(versionFile(gameDirectory, target)).strip());
     }
 
     private static Path versionFile(Path gameDirectory, Path target) {

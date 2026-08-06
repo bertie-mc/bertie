@@ -27,10 +27,11 @@ abstract class ArtifactsConfigManagerMixin {
 
     @Inject(
             method = "setup()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lcom/electronwill/nightconfig/core/file/FileWatcher;defaultInstance()"
-                            + "Lcom/electronwill/nightconfig/core/file/FileWatcher;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lcom/electronwill/nightconfig/core/file/FileWatcher;defaultInstance()"
+                                    + "Lcom/electronwill/nightconfig/core/file/FileWatcher;"))
     private void configmigrations$migrate(CallbackInfo callbackInfo) {
         MigrationRuntime.migrateArtifacts(getName(), config, spec);
     }

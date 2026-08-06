@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.extradelight;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.lance5057.extradelight.workstations.chiller.ChillerRecipe;
 import com.lance5057.extradelight.workstations.doughshaping.recipes.DoughShapingRecipe;
 import com.lance5057.extradelight.workstations.dryingrack.DryingRackRecipe;
@@ -18,6 +14,10 @@ import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -27,8 +27,7 @@ import net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient;
 
 /** ExtraDelight workstations. Deferred (bespoke): feast, vat (multi-stage), evaporator (loot-table), bottle_fluid, tool_on_block. */
 public final class ExtraDelightEmiModule {
-    private ExtraDelightEmiModule() {
-    }
+    private ExtraDelightEmiModule() {}
 
     private static final RegistryAccess REG = RegistryAccess.EMPTY;
 
@@ -44,7 +43,8 @@ public final class ExtraDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(oven, id, d));
         });
 
-        EmiRecipeCategory mix = Categories.machine(reg, "extradelight_mixing_bowl", "extradelight:mixing_bowl", "Mixing Bowl");
+        EmiRecipeCategory mix =
+                Categories.machine(reg, "extradelight_mixing_bowl", "extradelight:mixing_bowl", "Mixing Bowl");
         Recipes.forEach(rm, MixingBowlRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -64,7 +64,8 @@ public final class ExtraDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(chill, id, d));
         });
 
-        EmiRecipeCategory mortar = Categories.machine(reg, "extradelight_mortar", "extradelight:mortar_stone", "Mortar and Pestle");
+        EmiRecipeCategory mortar =
+                Categories.machine(reg, "extradelight_mortar", "extradelight:mortar_stone", "Mortar and Pestle");
         Recipes.forEach(rm, MortarRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -73,7 +74,8 @@ public final class ExtraDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(mortar, id, d));
         });
 
-        EmiRecipeCategory dough = Categories.machine(reg, "extradelight_dough_shaping", "extradelight:dough_shaping", "Dough Shaping");
+        EmiRecipeCategory dough =
+                Categories.machine(reg, "extradelight_dough_shaping", "extradelight:dough_shaping", "Dough Shaping");
         Recipes.forEach(rm, DoughShapingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -81,7 +83,8 @@ public final class ExtraDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(dough, id, d));
         });
 
-        EmiRecipeCategory melt = Categories.machine(reg, "extradelight_melting_pot", "extradelight:melting_pot", "Melting Pot");
+        EmiRecipeCategory melt =
+                Categories.machine(reg, "extradelight_melting_pot", "extradelight:melting_pot", "Melting Pot");
         Recipes.forEach(rm, MeltingPotRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.input));
@@ -101,7 +104,8 @@ public final class ExtraDelightEmiModule {
             reg.addRecipe(new GenericEmiRecipe(juicer, id, d));
         });
 
-        EmiRecipeCategory dry = Categories.machine(reg, "extradelight_drying_rack", "extradelight:drying_rack", "Drying Rack");
+        EmiRecipeCategory dry =
+                Categories.machine(reg, "extradelight_drying_rack", "extradelight:drying_rack", "Drying Rack");
         Recipes.forEach(rm, DryingRackRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));

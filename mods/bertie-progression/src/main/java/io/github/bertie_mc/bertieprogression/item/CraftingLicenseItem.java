@@ -29,18 +29,15 @@ public class CraftingLicenseItem extends Item {
             return InteractionResultHolder.sidedSuccess(stack, true);
         }
         if (Boolean.TRUE.equals(player.getData(ModAttachments.CRAFTING_LICENSED.get()))) {
-            player.displayClientMessage(
-                    Component.translatable("message.bertieprogression.already_licensed"), true);
+            player.displayClientMessage(Component.translatable("message.bertieprogression.already_licensed"), true);
             return InteractionResultHolder.fail(stack);
         }
         player.setData(ModAttachments.CRAFTING_LICENSED.get(), Boolean.TRUE);
         if (!player.getAbilities().instabuild) {
             stack.shrink(1);
         }
-        level.playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP,
-                SoundSource.PLAYERS, 0.7F, 1.2F);
-        player.displayClientMessage(
-                Component.translatable("message.bertieprogression.crafting_licensed"), false);
+        level.playSound(null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.7F, 1.2F);
+        player.displayClientMessage(Component.translatable("message.bertieprogression.crafting_licensed"), false);
         return InteractionResultHolder.success(stack);
     }
 }

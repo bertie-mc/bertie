@@ -17,8 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class EssenceStorageInputMixin {
 
     @Inject(method = "canInput", at = @At("HEAD"), cancellable = true, remap = false)
-    private void forgeink$noStoredExperience(EssenceType type, ItemStack stack,
-                                             CallbackInfoReturnable<Boolean> cir) {
+    private void forgeink$noStoredExperience(EssenceType type, ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
         if (type == EssenceType.EXPERIENCE) {
             cir.setReturnValue(false);
         }

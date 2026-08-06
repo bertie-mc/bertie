@@ -1,14 +1,10 @@
 package io.github.bertie_mc.alexscavesworldgenfix;
 
 import com.mojang.logging.LogUtils;
-
 import io.github.bertie_mc.alexscavesworldgenfix.logic.BiomeDecorationFailure;
-
 import java.util.concurrent.atomic.AtomicLong;
-
 import net.minecraft.world.level.ChunkPos;
 import net.neoforged.fml.common.Mod;
-
 import org.slf4j.Logger;
 
 /** Keeps worldgen alive through Alex's Caves' empty-list biome-decoration clamp. */

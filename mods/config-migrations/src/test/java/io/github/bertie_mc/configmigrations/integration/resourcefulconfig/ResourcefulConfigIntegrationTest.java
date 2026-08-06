@@ -65,17 +65,14 @@ class ResourcefulConfigIntegrationTest {
                 count = 9
                 """);
         ParsedConfig config = new ParsedConfig("sample", gameDirectory.resolve("config/sample.jsonc"));
-        TestValueEntry count = new TestValueEntry(
-                EntryType.INTEGER, false, 1, value -> ((Integer) value) <= 5);
+        TestValueEntry count = new TestValueEntry(EntryType.INTEGER, false, 1, value -> ((Integer) value) <= 5);
         config.entries().put("count", count);
 
         integration.migrate("samplemod", "sample", config, config::save);
 
         assertEquals(1, count.get());
         assertEquals(1, config.saves());
-        assertEquals(
-                Writer.save(config).toString(),
-                Files.readString(gameDirectory.resolve("config/sample.jsonc")));
+        assertEquals(Writer.save(config).toString(), Files.readString(gameDirectory.resolve("config/sample.jsonc")));
         assertEquals("2", Files.readString(state()).strip());
     }
 
@@ -115,8 +112,7 @@ class ResourcefulConfigIntegrationTest {
         Path legacy = gameDirectory.resolve("config/nested/sample.json");
         Files.createDirectories(legacy.getParent());
         Files.writeString(legacy, "legacy");
-        ParsedConfig config = new ParsedConfig(
-                "nested/sample", gameDirectory.resolve("config/nested/sample.jsonc"));
+        ParsedConfig config = new ParsedConfig("nested/sample", gameDirectory.resolve("config/nested/sample.jsonc"));
         TestValueEntry count = scalar(EntryType.INTEGER, 1);
         config.entries().put("count", count);
 
@@ -124,8 +120,8 @@ class ResourcefulConfigIntegrationTest {
 
         assertEquals(1, count.get());
         assertEquals(Writer.save(config).toString(), Files.readString(legacy));
-        assertFalse(Files.exists(gameDirectory.resolve(
-                "config/config-migrations/state/config/nested/sample.jsonc.version")));
+        assertFalse(Files.exists(
+                gameDirectory.resolve("config/config-migrations/state/config/nested/sample.jsonc.version")));
     }
 
     private ResourcefulConfigIntegration integration(String manifest) throws IOException {
@@ -137,8 +133,7 @@ class ResourcefulConfigIntegrationTest {
     }
 
     private Path state() {
-        return gameDirectory.resolve(
-                "config/config-migrations/state/config/sample.jsonc.version");
+        return gameDirectory.resolve("config/config-migrations/state/config/sample.jsonc.version");
     }
 
     private static String manifest() {
@@ -230,8 +225,7 @@ class ResourcefulConfigIntegrationTest {
         private final Predicate<Object> accepts;
         private Object value;
 
-        private TestValueEntry(
-                EntryType type, boolean array, Object value, Predicate<Object> accepts) {
+        private TestValueEntry(EntryType type, boolean array, Object value, Predicate<Object> accepts) {
             this.type = type;
             this.array = array;
             this.value = value;

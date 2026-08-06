@@ -11,8 +11,7 @@ public final class RealFzzyConfigTest {
 
     private static TestConfig config;
 
-    private RealFzzyConfigTest() {
-    }
+    private RealFzzyConfigTest() {}
 
     public static void load() {
         config = ConfigApiJava.readOrCreateAndValidate(TestConfig::new);
@@ -21,8 +20,7 @@ public final class RealFzzyConfigTest {
     public static void assertMigrated() {
         int actual = config.migratedValue;
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "Fzzy Config migration did not reach the live config: " + actual);
+            throw new IllegalStateException("Fzzy Config migration did not reach the live config: " + actual);
         }
     }
 
@@ -31,8 +29,7 @@ public final class RealFzzyConfigTest {
 
         public TestConfig() {
             super(
-                    ResourceLocation.fromNamespaceAndPath(
-                            "configmigrationstest", "fzzy"),
+                    ResourceLocation.fromNamespaceAndPath("configmigrationstest", "fzzy"),
                     "",
                     "",
                     "configmigrationstest-fzzy");

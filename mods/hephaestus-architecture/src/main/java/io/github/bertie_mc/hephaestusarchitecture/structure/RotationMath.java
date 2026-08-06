@@ -6,8 +6,7 @@ package io.github.bertie_mc.hephaestusarchitecture.structure;
  */
 final class RotationMath {
 
-    private RotationMath() {
-    }
+    private RotationMath() {}
 
     static Offset rotate(int x, int y, int z, int clockwiseQuarterTurns) {
         return switch (Math.floorMod(clockwiseQuarterTurns, 4)) {
@@ -18,6 +17,5 @@ final class RotationMath {
         };
     }
 
-    record Offset(int x, int y, int z) {
-    }
+    record Offset(int x, int y, int z) {}
 }

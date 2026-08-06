@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined.content.shaft;
 
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-import io.github.bertie_mc.primitiverefined.PrRegistry;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.AbstractSimpleShaftBlock;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;

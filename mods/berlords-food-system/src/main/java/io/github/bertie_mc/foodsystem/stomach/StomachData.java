@@ -53,6 +53,7 @@ public class StomachData implements INBTSerializable<CompoundTag> {
     public final FoodSlot[] slots = new FoodSlot[MAX_SLOTS];
     /** 0 = "unset", resolved against config defaults via Stomach.unlockedSlots() */
     public int unlockedSlots = 0;
+
     public double regenCooldown = 0.0;
     public long regenCounter = 0;
     public long eatCounter = 0;
@@ -94,7 +95,8 @@ public class StomachData implements INBTSerializable<CompoundTag> {
         unlockedSlots = other.unlockedSlots;
         regenCooldown = other.regenCooldown;
         eatCounter = other.eatCounter;
-        // regenCounter, syncDirty, feedWakeStamp and afterglow are transient/server-runtime and intentionally not copied
+        // regenCounter, syncDirty, feedWakeStamp and afterglow are transient/server-runtime and intentionally not
+        // copied
     }
 
     @Override

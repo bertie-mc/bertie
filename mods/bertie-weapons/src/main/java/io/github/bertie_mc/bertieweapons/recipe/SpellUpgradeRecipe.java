@@ -35,10 +35,8 @@ public class SpellUpgradeRecipe extends UpgradeCraftingRecipe {
     }
 
     @Override
-    protected Optional<ItemStack> upgrade(
-            ItemStack weapon, ItemStack catalyst, HolderLookup.Provider registries) {
-        return WeaponUpgrades.orbTypeOf(catalyst)
-                .flatMap(orb -> WeaponUpgrades.applyElement(weapon, orb, registries));
+    protected Optional<ItemStack> upgrade(ItemStack weapon, ItemStack catalyst, HolderLookup.Provider registries) {
+        return WeaponUpgrades.orbTypeOf(catalyst).flatMap(orb -> WeaponUpgrades.applyElement(weapon, orb, registries));
     }
 
     @Override

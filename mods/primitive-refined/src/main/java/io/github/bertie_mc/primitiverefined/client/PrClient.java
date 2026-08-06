@@ -1,22 +1,19 @@
 package io.github.bertie_mc.primitiverefined.client;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import io.github.bertie_mc.primitiverefined.PrMenus;
-import io.github.bertie_mc.primitiverefined.PrRegistry;
-import io.github.bertie_mc.primitiverefined.content.cogwheel.PrCogwheels;
-import io.github.bertie_mc.primitiverefined.PrimitiveRefined;
-import io.github.bertie_mc.primitiverefined.content.grid.PGridContainerMenu;
 import com.refinedmods.refinedstorage.common.grid.screen.CraftingGridScreen;
 import com.refinedmods.refinedstorage.common.grid.screen.GridScreen;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntityRenderer;
 import com.simibubi.create.content.kinetics.base.OrientedRotatingVisual;
 import com.simibubi.create.content.kinetics.base.SingleAxisRotatingVisual;
-
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import dev.engine_room.flywheel.lib.visualization.SimpleBlockEntityVisualizer;
-
+import io.github.bertie_mc.primitiverefined.PrMenus;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
+import io.github.bertie_mc.primitiverefined.PrimitiveRefined;
+import io.github.bertie_mc.primitiverefined.content.cogwheel.PrCogwheels;
+import io.github.bertie_mc.primitiverefined.content.grid.PGridContainerMenu;
+import java.util.HashMap;
+import java.util.Map;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -27,8 +24,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 @EventBusSubscriber(modid = PrimitiveRefined.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class PrClient {
 
-    private PrClient() {
-    }
+    private PrClient() {}
 
     /**
      * Declared as a static field so it is created while this class is loaded during mod
@@ -52,8 +48,7 @@ public final class PrClient {
             PartialModel.of(PrimitiveRefined.id("block/p_controller_shaft_stubs"));
 
     /** The grid's rear shaft and the cogwheel in its gap - one partial, one rotation. */
-    private static final PartialModel GRID_KINETICS =
-            PartialModel.of(PrimitiveRefined.id("block/p_grid_kinetics"));
+    private static final PartialModel GRID_KINETICS = PartialModel.of(PrimitiveRefined.id("block/p_grid_kinetics"));
 
     /** The External Reader's rear shaft. */
     private static final PartialModel READER_SHAFT =
@@ -78,8 +73,7 @@ public final class PrClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.SOULSTAINED_SHAFT_BE.get())
+            SimpleBlockEntityVisualizer.builder(PrRegistry.SOULSTAINED_SHAFT_BE.get())
                     .factory(SingleAxisRotatingVisual.of(SOULSTAINED_SHAFT_MODEL))
                     .apply();
 
@@ -87,14 +81,13 @@ public final class PrClient {
             // coming from the chunk mesh, which a visual does not suppress (that is why
             // the shaft used to spin and stand still at once, and why the controller does
             // not vanish now).
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.P_CONTROLLER_BE.get())
+            SimpleBlockEntityVisualizer.builder(PrRegistry.P_CONTROLLER_BE.get())
                     .factory(SingleAxisRotatingVisual.of(CONTROLLER_SHAFT_STUBS))
                     .apply();
 
             for (String name : PrCogwheels.NAMES) {
-                SimpleBlockEntityVisualizer
-                        .builder(PrCogwheels.BLOCK_ENTITIES.get(name).get())
+                SimpleBlockEntityVisualizer.builder(
+                                PrCogwheels.BLOCK_ENTITIES.get(name).get())
                         .factory(SingleAxisRotatingVisual.of(COGWHEEL_MODELS.get(name)))
                         .apply();
             }
@@ -106,27 +99,22 @@ public final class PrClient {
             // backHorizontal turns SOUTH onto HORIZONTAL_FACING.getOpposite() instead,
             // which is a direction, and is the face our shaft is on. It is what Create
             // drives its own mechanical crafter with.
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.P_GRID_BE.get())
+            SimpleBlockEntityVisualizer.builder(PrRegistry.P_GRID_BE.get())
                     .factory(OrientedRotatingVisual.backHorizontal(GRID_KINETICS))
                     .apply();
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.P_CRAFTING_GRID_BE.get())
+            SimpleBlockEntityVisualizer.builder(PrRegistry.P_CRAFTING_GRID_BE.get())
                     .factory(OrientedRotatingVisual.backHorizontal(GRID_KINETICS))
                     .apply();
 
             // The External Reader's shaft, on the same footing as the grids': one end
             // only, so it needs the direction-aware visual rather than the axis one.
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.EXTERNAL_READER_BE.get())
+            SimpleBlockEntityVisualizer.builder(PrRegistry.EXTERNAL_READER_BE.get())
                     .factory(OrientedRotatingVisual.backHorizontal(READER_SHAFT))
                     .apply();
 
             // Four shafts at four different speeds, so none of the stock visuals fit.
-            SimpleBlockEntityVisualizer
-                    .builder(PrRegistry.ARCANETIC_GEARBOX_BE.get())
-                    .factory((ctx, be, partialTick) ->
-                            new ArcaneticGearboxVisual(ctx, be, partialTick, GEARBOX_SHAFT))
+            SimpleBlockEntityVisualizer.builder(PrRegistry.ARCANETIC_GEARBOX_BE.get())
+                    .factory((ctx, be, partialTick) -> new ArcaneticGearboxVisual(ctx, be, partialTick, GEARBOX_SHAFT))
                     .apply();
         });
     }
@@ -159,11 +147,10 @@ public final class PrClient {
      */
     @SubscribeEvent
     static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerBlockEntityRenderer(PrRegistry.SOULSTAINED_SHAFT_BE.get(),
-                KineticBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(PrRegistry.SOULSTAINED_SHAFT_BE.get(), KineticBlockEntityRenderer::new);
         for (String name : PrCogwheels.NAMES) {
-            event.registerBlockEntityRenderer(PrCogwheels.BLOCK_ENTITIES.get(name).get(),
-                    KineticBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(
+                    PrCogwheels.BLOCK_ENTITIES.get(name).get(), KineticBlockEntityRenderer::new);
         }
     }
 }

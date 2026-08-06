@@ -14,38 +14,22 @@ final class ClientWorldLoadingTest {
     @Test
     void recognizesOnlyTheWorldConfirmationsOwnedByTheTestDriver() {
         var experimental = new ConfirmScreen(
-                ignored -> {},
-                Component.translatable("selectWorld.warning.experimental.title"),
-                Component.empty());
-        var unrelated = new ConfirmScreen(
-                ignored -> {}, Component.translatable("disconnect.lost"), Component.empty());
+                ignored -> {}, Component.translatable("selectWorld.warning.experimental.title"), Component.empty());
+        var unrelated = new ConfirmScreen(ignored -> {}, Component.translatable("disconnect.lost"), Component.empty());
         var backup = new BackupConfirmScreen(
-                () -> {},
-                (proceed, eraseCache) -> {},
-                Component.empty(),
-                Component.empty(),
-                false);
+                () -> {}, (proceed, eraseCache) -> {}, Component.empty(), Component.empty(), false);
 
         assertEquals(
-                ClientWorldLoading.Confirmation.EXPERIMENTAL_WORLD,
-                ClientWorldLoading.confirmationFor(experimental));
-        assertEquals(
-                ClientWorldLoading.Confirmation.JOIN_WITHOUT_BACKUP,
-                ClientWorldLoading.confirmationFor(backup));
-        assertEquals(
-                ClientWorldLoading.Confirmation.NONE,
-                ClientWorldLoading.confirmationFor(unrelated));
-        assertEquals(
-                ClientWorldLoading.Confirmation.NONE,
-                ClientWorldLoading.confirmationFor(null));
+                ClientWorldLoading.Confirmation.EXPERIMENTAL_WORLD, ClientWorldLoading.confirmationFor(experimental));
+        assertEquals(ClientWorldLoading.Confirmation.JOIN_WITHOUT_BACKUP, ClientWorldLoading.confirmationFor(backup));
+        assertEquals(ClientWorldLoading.Confirmation.NONE, ClientWorldLoading.confirmationFor(unrelated));
+        assertEquals(ClientWorldLoading.Confirmation.NONE, ClientWorldLoading.confirmationFor(null));
     }
 
     @Test
     void reportsAConnectionFailureInsteadOfWaitingForever() {
         var screen = new DisconnectedScreen(
-                null,
-                Component.literal("Connection failed"),
-                Component.literal("Connection refused"));
+                null, Component.literal("Connection failed"), Component.literal("Connection refused"));
 
         String failure = ClientWorldLoading.terminalFailureFor(screen);
 

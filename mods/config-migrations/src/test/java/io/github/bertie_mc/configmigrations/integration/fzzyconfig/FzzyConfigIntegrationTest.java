@@ -174,12 +174,7 @@ class FzzyConfigIntegrationTest {
         assertThrows(
                 IllegalStateException.class,
                 () -> integration.runLoad(
-                        ConfigApiImpl.INSTANCE,
-                        new Config(FileType.JSON),
-                        NAME,
-                        FOLDER,
-                        SUBFOLDER,
-                        () -> {
+                        ConfigApiImpl.INSTANCE, new Config(FileType.JSON), NAME, FOLDER, SUBFOLDER, () -> {
                             throw new IllegalStateException("native load failed");
                         }));
         assertFalse(Files.exists(state(target)));
@@ -199,12 +194,7 @@ class FzzyConfigIntegrationTest {
         fallback.fixtureDocument(decodeString("{\"settings\":{\"enabled\":true}}", FileType.JSON));
 
         Object loaded = integration.runLoad(
-                ConfigApiImpl.INSTANCE,
-                new Config(FileType.JSON),
-                NAME,
-                FOLDER,
-                SUBFOLDER,
-                () -> fallback);
+                ConfigApiImpl.INSTANCE, new Config(FileType.JSON), NAME, FOLDER, SUBFOLDER, () -> fallback);
 
         assertEquals(fallback, loaded);
         TomlTable persisted = decode(target, FileType.JSON);
@@ -223,13 +213,13 @@ class FzzyConfigIntegrationTest {
         assertThrows(
                 ConfigMigrationException.class,
                 () -> FzzyConfigIntegration.load(
-                        MigrationManager.load(gameDirectory),
-                        gameDirectory.resolve("config"),
-                        manifests));
+                        MigrationManager.load(gameDirectory), gameDirectory.resolve("config"), manifests));
     }
 
     private Path state(Path target) {
-        Path relative = gameDirectory.toAbsolutePath().normalize()
+        Path relative = gameDirectory
+                .toAbsolutePath()
+                .normalize()
                 .relativize(target.toAbsolutePath().normalize());
         Path state = gameDirectory.resolve("config/config-migrations/state").resolve(relative);
         return state.resolveSibling(state.getFileName() + ".version");
@@ -247,8 +237,7 @@ class FzzyConfigIntegrationTest {
         return (TomlTable) type.decode(contents).get();
     }
 
-    private static TomlTable withInteger(
-            TomlTable root, String table, String key, int value) {
+    private static TomlTable withInteger(TomlTable root, String table, String key, int value) {
         TomlTable current = (TomlTable) root.get(table);
         Map<String, TomlElement> child = new LinkedHashMap<>(current.getContent());
         child.put(key, new TomlLiteral(Integer.toString(value), TomlLiteral.Type.Integer));

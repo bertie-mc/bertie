@@ -63,14 +63,16 @@ public record OminousFanRecipe(Ingredient input, ItemStack result) implements Re
     public static final class Serializer implements RecipeSerializer<OminousFanRecipe> {
 
         private static final MapCodec<OminousFanRecipe> CODEC = RecordCodecBuilder.mapCodec(i -> i.group(
-                Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(OminousFanRecipe::input),
-                ItemStack.CODEC.fieldOf("result").forGetter(OminousFanRecipe::result)
-        ).apply(i, OminousFanRecipe::new));
+                        Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(OminousFanRecipe::input),
+                        ItemStack.CODEC.fieldOf("result").forGetter(OminousFanRecipe::result))
+                .apply(i, OminousFanRecipe::new));
 
         private static final StreamCodec<RegistryFriendlyByteBuf, OminousFanRecipe> STREAM_CODEC =
                 StreamCodec.composite(
-                        Ingredient.CONTENTS_STREAM_CODEC, OminousFanRecipe::input,
-                        ItemStack.STREAM_CODEC, OminousFanRecipe::result,
+                        Ingredient.CONTENTS_STREAM_CODEC,
+                        OminousFanRecipe::input,
+                        ItemStack.STREAM_CODEC,
+                        OminousFanRecipe::result,
                         OminousFanRecipe::new);
 
         @Override

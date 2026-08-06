@@ -63,10 +63,7 @@ public final class NeoForgeIntegration {
         }
     }
 
-    public void accept(
-            IConfigSpec spec,
-            IConfigSpec.ILoadedConfig loadedConfig,
-            Runnable nativeAcceptance) {
+    public void accept(IConfigSpec spec, IConfigSpec.ILoadedConfig loadedConfig, Runnable nativeAcceptance) {
         Selection selection = currentSelection(spec);
         MigrationManager.Migration migration = null;
         if (selection != null) {
@@ -128,14 +125,9 @@ public final class NeoForgeIntegration {
         }
     }
 
-    private record Selection(ModConfig config, Target target) {
-    }
+    private record Selection(ModConfig config, Target target) {}
 
-    private record Target(
-            String modId,
-            ModConfig.Type type,
-            String file,
-            MigrationManifest manifest) {
+    private record Target(String modId, ModConfig.Type type, String file, MigrationManifest manifest) {
         private Selector selector() {
             return new Selector(modId, type, file);
         }
@@ -145,6 +137,5 @@ public final class NeoForgeIntegration {
         }
     }
 
-    private record Selector(String modId, ModConfig.Type type, String file) {
-    }
+    private record Selector(String modId, ModConfig.Type type, String file) {}
 }

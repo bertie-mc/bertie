@@ -1,9 +1,9 @@
 package io.github.bertie_mc.carving.compat;
 
-import io.github.bertie_mc.carving.Carving;
 import com.mojang.datafixers.util.Pair;
 import dev.lopyluna.slag.content.items.dynamic_part.IModularItem;
 import dev.lopyluna.slag.register.AllDataComponents;
+import io.github.bertie_mc.carving.Carving;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Unit;
@@ -21,8 +21,7 @@ import net.minecraft.world.item.Items;
  * repairable), and mark the tool so it never re-applies.
  */
 public final class SlagCompat {
-    private SlagCompat() {
-    }
+    private SlagCompat() {}
 
     /**
      * Build a {@code slag:dynamic_part} ItemStack carrying material_type/part_type. This is exactly what

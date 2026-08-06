@@ -1,11 +1,11 @@
 package io.github.bertie_mc.bertietiers.logic;
 
-import io.github.bertie_mc.bertietiers.config.ConfigException;
-import io.github.bertie_mc.bertietiers.config.JsonMatch;
 import com.google.gson.JsonElement;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.DynamicOps;
+import io.github.bertie_mc.bertietiers.config.ConfigException;
+import io.github.bertie_mc.bertietiers.config.JsonMatch;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

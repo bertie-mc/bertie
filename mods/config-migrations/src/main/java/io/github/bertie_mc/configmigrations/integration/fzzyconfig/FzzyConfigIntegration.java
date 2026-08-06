@@ -18,8 +18,7 @@ public final class FzzyConfigIntegration {
     private final List<Target> targets;
     private final ThreadLocal<Integer> nativeLoadDepth = new ThreadLocal<>();
 
-    private FzzyConfigIntegration(
-            MigrationManager migrations, Path configDirectory, List<Target> targets) {
+    private FzzyConfigIntegration(MigrationManager migrations, Path configDirectory, List<Target> targets) {
         this.migrations = migrations;
         this.configDirectory = configDirectory.toAbsolutePath().normalize();
         this.targets = targets;
@@ -50,8 +49,7 @@ public final class FzzyConfigIntegration {
         if (targets.isEmpty()) {
             return nativeLoad.get();
         }
-        FzzyConfigFile file = FzzyConfigFile.open(
-                configDirectory, api, classInstance, name, folder, subfolder);
+        FzzyConfigFile file = FzzyConfigFile.open(configDirectory, api, classInstance, name, folder, subfolder);
         Target target = targets.stream()
                 .filter(candidate -> candidate.file().equals(file.canonicalPath()))
                 .findFirst()
@@ -88,6 +86,5 @@ public final class FzzyConfigIntegration {
         }
     }
 
-    private record Target(Path file, MigrationManifest manifest) {
-    }
+    private record Target(Path file, MigrationManifest manifest) {}
 }

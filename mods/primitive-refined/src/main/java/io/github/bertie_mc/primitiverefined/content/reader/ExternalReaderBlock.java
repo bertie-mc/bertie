@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined.content.reader;
 
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-import io.github.bertie_mc.primitiverefined.PrRegistry;
 import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
 import com.simibubi.create.foundation.block.IBE;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -72,8 +71,13 @@ public class ExternalReaderBlock extends HorizontalKineticBlock
      * happening.
      */
     @Override
-    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock,
-                                   BlockPos neighborPos, boolean movedByPiston) {
+    protected void neighborChanged(
+            BlockState state,
+            Level level,
+            BlockPos pos,
+            Block neighborBlock,
+            BlockPos neighborPos,
+            boolean movedByPiston) {
         super.neighborChanged(state, level, pos, neighborBlock, neighborPos, movedByPiston);
         if (!level.isClientSide && level.getBlockEntity(pos) instanceof ExternalReaderBlockEntity reader) {
             reader.neighborChanged();

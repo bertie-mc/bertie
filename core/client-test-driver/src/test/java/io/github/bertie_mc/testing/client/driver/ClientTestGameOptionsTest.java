@@ -36,15 +36,9 @@ final class ClientTestGameOptionsTest {
             assertEquals(true, access.process("boolean", false));
             assertEquals("ready tick", access.process("string", "changed"));
             assertEquals(0.75F, access.process("float", 1.0F));
-            assertEquals(
-                    "ready tick",
-                    access.process("generic", "changed", identity, identity));
-            assertEquals(
-                    "registered",
-                    access.process("mod option", "changed", identity, identity));
-            assertEquals(
-                    "preserved",
-                    access.process("registered later", "preserved", identity, identity));
+            assertEquals("ready tick", access.process("generic", "changed", identity, identity));
+            assertEquals("registered", access.process("mod option", "changed", identity, identity));
+            assertEquals("preserved", access.process("registered later", "preserved", identity, identity));
         });
     }
 
@@ -69,8 +63,7 @@ final class ClientTestGameOptionsTest {
         assertNotSame(firstRestore, secondRestore);
     }
 
-    private static List<String> restoreList(
-            ClientTestGameOptions.GameOptionsBaseline baseline) {
+    private static List<String> restoreList(ClientTestGameOptions.GameOptionsBaseline baseline) {
         var restored = new AtomicReference<List<String>>();
         baseline.restore(access -> restored.set(access.process(
                 "resourcePacks",

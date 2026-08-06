@@ -5,7 +5,6 @@ import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import io.github.bertie_mc.configmigrations.integration.minecraft.options.MinecraftOptionsIntegration;
 import java.io.File;
-import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Options;
 import net.minecraft.nbt.CompoundTag;
 import org.spongepowered.asm.mixin.Final;
@@ -40,7 +39,8 @@ abstract class OptionsMixin {
         }
 
         if (configmigrations$integration == null) {
-            configmigrations$integration = MinecraftOptionsIntegration.load(optionsFile.toPath().getParent());
+            configmigrations$integration =
+                    MinecraftOptionsIntegration.load(optionsFile.toPath().getParent());
         }
         MinecraftOptionsIntegration.PendingMigration pending =
                 configmigrations$integration.prepare(optionsFile.toPath());
@@ -64,7 +64,9 @@ abstract class OptionsMixin {
         }
     }
 
-    @ModifyReturnValue(method = "dataFix(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;", at = @At("RETURN"))
+    @ModifyReturnValue(
+            method = "dataFix(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;",
+            at = @At("RETURN"))
     private CompoundTag configmigrations$merge(CompoundTag options) {
         MinecraftOptionsIntegration.PendingMigration pending = configmigrations$pending;
         if (pending != null) {
@@ -75,10 +77,11 @@ abstract class OptionsMixin {
 
     @Inject(
             method = "load(Z)V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/KeyMapping;resetMapping()V",
-                    shift = At.Shift.AFTER))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/minecraft/client/KeyMapping;resetMapping()V",
+                            shift = At.Shift.AFTER))
     private void configmigrations$markLoaded(boolean limited, CallbackInfo callbackInfo) {
         if (!limited && configmigrations$pending != null) {
             configmigrations$loaded = true;

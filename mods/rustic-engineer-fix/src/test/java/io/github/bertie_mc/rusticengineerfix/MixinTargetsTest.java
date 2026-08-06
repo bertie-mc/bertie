@@ -1,13 +1,12 @@
 package io.github.bertie_mc.rusticengineerfix;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class MixinTargetsTest {
 
@@ -32,7 +31,7 @@ class MixinTargetsTest {
     }
 
     private static void assertHasMixinMethod(Set<String> methods, String prefix) {
-        assertTrue(methods.stream().anyMatch(name -> name.contains(prefix)),
-                () -> "Missing " + prefix + " in " + methods);
+        assertTrue(
+                methods.stream().anyMatch(name -> name.contains(prefix)), () -> "Missing " + prefix + " in " + methods);
     }
 }

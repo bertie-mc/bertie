@@ -34,8 +34,8 @@ public record CarveResultPayload(int material, boolean armor, int kind, int erro
                 buf.writeVarInt(p.errors());
                 buf.writeBoolean(p.mainHand());
             },
-            buf -> new CarveResultPayload(buf.readVarInt(), buf.readBoolean(), buf.readVarInt(),
-                    buf.readVarInt(), buf.readBoolean()));
+            buf -> new CarveResultPayload(
+                    buf.readVarInt(), buf.readBoolean(), buf.readVarInt(), buf.readVarInt(), buf.readBoolean()));
 
     @Override
     public Type<CarveResultPayload> type() {
@@ -61,8 +61,16 @@ public record CarveResultPayload(int material, boolean armor, int kind, int erro
             held.shrink(1);
 
             if (errors >= 3) {
-                player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 0.8F, 0.9F);
+                player.level()
+                        .playSound(
+                                null,
+                                player.getX(),
+                                player.getY(),
+                                player.getZ(),
+                                SoundEvents.ITEM_BREAK,
+                                SoundSource.PLAYERS,
+                                0.8F,
+                                0.9F);
                 return;
             }
 
@@ -71,8 +79,16 @@ public record CarveResultPayload(int material, boolean armor, int kind, int erro
             if (part.isEmpty()) {
                 return;
             }
-            player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.AXE_STRIP, SoundSource.PLAYERS, 0.7F, 1.0F);
+            player.level()
+                    .playSound(
+                            null,
+                            player.getX(),
+                            player.getY(),
+                            player.getZ(),
+                            SoundEvents.AXE_STRIP,
+                            SoundSource.PLAYERS,
+                            0.7F,
+                            1.0F);
             if (!player.getInventory().add(part)) {
                 player.drop(part, false);
             }

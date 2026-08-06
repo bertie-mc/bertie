@@ -1,10 +1,10 @@
 package io.github.bertie_mc.bertietiers.logic;
 
+import com.google.gson.JsonElement;
+import com.mojang.serialization.DynamicOps;
 import io.github.bertie_mc.bertietiers.BertieTiers;
 import io.github.bertie_mc.bertietiers.config.RawConfig;
 import io.github.bertie_mc.bertietiers.config.ValidatedConfig;
-import com.google.gson.JsonElement;
-import com.mojang.serialization.DynamicOps;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -64,7 +64,9 @@ public final class RuntimeConfig {
                         tier.id(),
                         matcher.path(),
                         matcher.specificity());
-                this.toolRules.computeIfAbsent(item, unused -> new ArrayList<>()).add(rule);
+                this.toolRules
+                        .computeIfAbsent(item, unused -> new ArrayList<>())
+                        .add(rule);
             }
         }
 
@@ -82,7 +84,10 @@ public final class RuntimeConfig {
             }
             this.exceptionRules
                     .computeIfAbsent(item, unused -> new ArrayList<>())
-                    .add(new ExceptionRule(ComponentPredicate.build(rule.tool().components(), rule.tool().path()), blocks));
+                    .add(new ExceptionRule(
+                            ComponentPredicate.build(
+                                    rule.tool().components(), rule.tool().path()),
+                            blocks));
         }
     }
 
@@ -173,7 +178,10 @@ public final class RuntimeConfig {
                     "Two equally specific tool matchers both match the same stack but sit in different tiers: {} (tier '{}')"
                             + " and {} (tier '{}'). Using the lower level. Give one of them a component predicate that tells"
                             + " them apart.",
-                    a.path(), a.tierId(), b.path(), b.tierId());
+                    a.path(),
+                    a.tierId(),
+                    b.path(),
+                    b.tierId());
         }
     }
 

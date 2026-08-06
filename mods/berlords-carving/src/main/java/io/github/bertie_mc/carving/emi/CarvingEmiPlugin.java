@@ -1,14 +1,14 @@
 package io.github.bertie_mc.carving.emi;
 
-import io.github.bertie_mc.carving.ArmorKind;
-import io.github.bertie_mc.carving.Carving;
-import io.github.bertie_mc.carving.CarvingMaterial;
-import io.github.bertie_mc.carving.ToolKind;
 import com.mojang.logging.LogUtils;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.carving.ArmorKind;
+import io.github.bertie_mc.carving.Carving;
+import io.github.bertie_mc.carving.CarvingMaterial;
+import io.github.bertie_mc.carving.ToolKind;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -24,15 +24,14 @@ import org.slf4j.Logger;
 @EmiEntrypoint
 public class CarvingEmiPlugin implements EmiPlugin {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final ResourceLocation CATEGORY_ID =
-            ResourceLocation.fromNamespaceAndPath(Carving.MODID, "carving");
+    private static final ResourceLocation CATEGORY_ID = ResourceLocation.fromNamespaceAndPath(Carving.MODID, "carving");
 
     @Override
     public void register(EmiRegistry registry) {
         int recipeCount = 0;
         EmiStack station = EmiStack.of(Carving.CARVING_STATION_ITEM.get());
-        CarvingEmiCategory category = new CarvingEmiCategory(CATEGORY_ID, station,
-                Component.translatable("emi.category.berlordscarving.carving"));
+        CarvingEmiCategory category = new CarvingEmiCategory(
+                CATEGORY_ID, station, Component.translatable("emi.category.berlordscarving.carving"));
         registry.addCategory(category);
         registry.addWorkstation(category, station);
 
@@ -54,14 +53,21 @@ public class CarvingEmiPlugin implements EmiPlugin {
         LOGGER.info("Registered {} carving recipes with EMI", recipeCount);
     }
 
-    private static int addRecipe(EmiRegistry registry, CarvingEmiCategory category, CarvingMaterial m,
-                                 EmiStack slate, boolean armor, int kindIndex, String kindId, Component tier) {
+    private static int addRecipe(
+            EmiRegistry registry,
+            CarvingEmiCategory category,
+            CarvingMaterial m,
+            EmiStack slate,
+            boolean armor,
+            int kindIndex,
+            String kindId,
+            Component tier) {
         ItemStack result = Carving.resultStack(m, armor, kindIndex, 0, 0);
         if (result.isEmpty()) {
             return 0; // e.g. a Slag-only material with Slag absent
         }
-        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(Carving.MODID,
-                "carving/" + (armor ? "armor/" : "tool/") + m.id + "_" + kindId);
+        ResourceLocation id = ResourceLocation.fromNamespaceAndPath(
+                Carving.MODID, "carving/" + (armor ? "armor/" : "tool/") + m.id + "_" + kindId);
         registry.addRecipe(new CarvingEmiRecipe(category, id, slate, EmiStack.of(result), tier));
         return 1;
     }

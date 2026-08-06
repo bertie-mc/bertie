@@ -3,8 +3,7 @@ package com.teamresourceful.resourcefulconfig.common.config;
 import java.util.Locale;
 
 public final class ParsingUtils {
-    private ParsingUtils() {
-    }
+    private ParsingUtils() {}
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     public static Enum<?> parseEnum(Class<?> type, String value) {

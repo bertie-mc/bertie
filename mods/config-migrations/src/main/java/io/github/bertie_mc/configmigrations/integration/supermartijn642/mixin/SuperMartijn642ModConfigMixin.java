@@ -26,20 +26,22 @@ abstract class SuperMartijn642ModConfigMixin {
 
     @Inject(
             method = "initialize()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lcom/supermartijn642/configlib/ConfigFile;readFile()V",
-                    shift = At.Shift.AFTER))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lcom/supermartijn642/configlib/ConfigFile;readFile()V",
+                            shift = At.Shift.AFTER))
     private void configmigrations$apply(CallbackInfo callbackInfo) {
         MigrationRuntime.applySuperMartijn642Config(getModid(), getIdentifier(), configFile);
     }
 
     @Inject(
             method = "initialize()V",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lcom/supermartijn642/configlib/ConfigFile;writeFile()V",
-                    shift = At.Shift.AFTER))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lcom/supermartijn642/configlib/ConfigFile;writeFile()V",
+                            shift = At.Shift.AFTER))
     private void configmigrations$commit(CallbackInfo callbackInfo) {
         MigrationRuntime.commitSuperMartijn642Config(getModid(), getIdentifier());
     }

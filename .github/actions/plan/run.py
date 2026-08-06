@@ -41,7 +41,7 @@ def main() -> None:
     )
     non_client_tasks: list[str] = []
     if has_work:
-        non_client_tasks.append("testInfrastructure")
+        non_client_tasks.append(":check")
     for name in ("build", "unit"):
         non_client_tasks.extend(entry["task"] for entry in plan[name])
     generation_tasks = [

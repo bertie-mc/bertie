@@ -2,11 +2,10 @@ package io.github.bertie_mc.explosiveenhancement;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import net.neoforged.fml.loading.FMLPaths;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import net.neoforged.fml.loading.FMLPaths;
 
 /**
  * Simple GSON-backed config, mirroring the original mod's {@code ExplosiveConfig}.

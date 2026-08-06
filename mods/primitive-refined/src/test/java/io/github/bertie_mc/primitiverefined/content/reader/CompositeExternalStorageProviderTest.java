@@ -28,8 +28,7 @@ class CompositeExternalStorageProviderTest {
         FakeProvider second = new FakeProvider(0, 0, secondAmount);
 
         List<ResourceAmount> resources = new ArrayList<>();
-        new CompositeExternalStorageProvider(List.of(first, second)).iterator()
-                .forEachRemaining(resources::add);
+        new CompositeExternalStorageProvider(List.of(first, second)).iterator().forEachRemaining(resources::add);
 
         assertEquals(2, resources.size());
         assertSame(firstAmount, resources.get(0));
@@ -70,8 +69,7 @@ class CompositeExternalStorageProviderTest {
     void movesNothingWhenNoProviderWill() {
         FakeProvider first = new FakeProvider(0, 0);
         FakeProvider second = new FakeProvider(0, 0);
-        CompositeExternalStorageProvider composite =
-                new CompositeExternalStorageProvider(List.of(first, second));
+        CompositeExternalStorageProvider composite = new CompositeExternalStorageProvider(List.of(first, second));
 
         assertEquals(0, composite.insert(RESOURCE, 5, Action.EXECUTE, Actor.EMPTY));
         assertEquals(0, composite.extract(RESOURCE, 5, Action.EXECUTE, Actor.EMPTY));

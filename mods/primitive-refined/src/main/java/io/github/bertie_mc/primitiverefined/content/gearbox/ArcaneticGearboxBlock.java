@@ -1,12 +1,10 @@
 package io.github.bertie_mc.primitiverefined.content.gearbox;
 
-import java.util.List;
-
-import io.github.bertie_mc.primitiverefined.PrKinetics;
-import io.github.bertie_mc.primitiverefined.PrRegistry;
 import com.simibubi.create.content.kinetics.gearbox.GearboxBlock;
 import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
+import java.util.List;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;

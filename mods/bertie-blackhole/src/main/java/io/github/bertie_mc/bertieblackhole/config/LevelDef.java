@@ -1,9 +1,8 @@
 package io.github.bertie_mc.bertieblackhole.config;
 
-import net.minecraft.resources.ResourceLocation;
-
 import java.util.List;
 import java.util.Map;
+import net.minecraft.resources.ResourceLocation;
 
 /**
  * One rung of the ladder.
@@ -15,12 +14,12 @@ import java.util.Map;
  * @param particleColor packed 0xRRGGBB, or -1 to leave the vanilla purple portal particles alone
  * @param shadeJitter   how far each particle's brightness drifts from the base colour, 0..1
  */
-public record LevelDef(int level,
-                       Map<String, CounterDef> requires,
-                       ResourceLocation sound,
-                       float soundVolume,
-                       float soundPitch,
-                       int particleColor,
-                       float shadeJitter,
-                       List<ExchangeDef> exchanges) {
-}
+public record LevelDef(
+        int level,
+        Map<String, CounterDef> requires,
+        ResourceLocation sound,
+        float soundVolume,
+        float soundPitch,
+        int particleColor,
+        float shadeJitter,
+        List<ExchangeDef> exchanges) {}

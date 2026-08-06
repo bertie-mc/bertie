@@ -1,7 +1,8 @@
 package io.github.bertie_mc.bertieprogression.item;
 
-import io.github.bertie_mc.bertieprogression.ModItems;
 import com.mojang.datafixers.util.Pair;
+import io.github.bertie_mc.bertieprogression.ModItems;
+import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
@@ -24,8 +25,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.saveddata.maps.MapDecorationTypes;
 import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
-
-import java.util.Optional;
 
 /**
  * A "finder": a craftable chart that turns itself into a real exploration map of one structure.
@@ -60,8 +59,7 @@ public class FinderItem extends Item {
     private final String mapNameKey;
     private final int searchRadius;
 
-    public FinderItem(Properties properties, ResourceLocation structureId, String mapNameKey,
-                      int searchRadius) {
+    public FinderItem(Properties properties, ResourceLocation structureId, String mapNameKey, int searchRadius) {
         super(properties);
         this.structureId = structureId;
         this.mapNameKey = mapNameKey;
@@ -76,7 +74,7 @@ public class FinderItem extends Item {
         }
         ItemStack map = resolve(serverLevel, serverPlayer);
         if (map == null) {
-            return InteractionResultHolder.fail(stack);   // still a finder, nothing lost
+            return InteractionResultHolder.fail(stack); // still a finder, nothing lost
         }
         // MUST go through ItemUtils, NOT shrink()+inventory.add(). Shrinking a single-item stack frees
         // the held slot, Inventory.add then drops the map straight into that slot, and vanilla's
@@ -108,7 +106,7 @@ public class FinderItem extends Item {
         stack.remove(ModItems.PLAYER_CRAFTED.get());
         ItemStack map = resolve(serverLevel, serverPlayer);
         if (map == null) {
-            return;   // stays a finder; right-click retries it somewhere better
+            return; // stays a finder; right-click retries it somewhere better
         }
         // Add BEFORE shrinking: shrinking first frees this slot and Inventory.add would reuse it,
         // which is the same slot-collision that broke the use() path.
@@ -122,14 +120,15 @@ public class FinderItem extends Item {
         Optional<Holder.Reference<Structure>> holder =
                 level.registryAccess().registryOrThrow(Registries.STRUCTURE).getHolder(key);
         if (holder.isEmpty()) {
-            player.displayClientMessage(Component.translatable(
-                    "message.bertieprogression.finder_missing", structureId.toString()), true);
+            player.displayClientMessage(
+                    Component.translatable("message.bertieprogression.finder_missing", structureId.toString()), true);
             return null;
         }
         player.displayClientMessage(Component.translatable("message.bertieprogression.finder_searching"), true);
-        Pair<BlockPos, Holder<Structure>> found = level.getChunkSource().getGenerator()
-                .findNearestMapStructure(level, HolderSet.direct(holder.get()),
-                        player.blockPosition(), searchRadius, false);
+        Pair<BlockPos, Holder<Structure>> found = level.getChunkSource()
+                .getGenerator()
+                .findNearestMapStructure(
+                        level, HolderSet.direct(holder.get()), player.blockPosition(), searchRadius, false);
         if (found == null) {
             player.displayClientMessage(Component.translatable("message.bertieprogression.finder_none"), true);
             return null;
@@ -141,8 +140,8 @@ public class FinderItem extends Item {
         MapItem.renderBiomePreviewMap(level, map);
         MapItemSavedData.addTargetDecoration(map, pos, "+", MapDecorationTypes.RED_X);
         map.set(DataComponents.ITEM_NAME, Component.translatable(mapNameKey));
-        player.displayClientMessage(Component.translatable(
-                "message.bertieprogression.finder_found", pos.getX(), pos.getZ()), false);
+        player.displayClientMessage(
+                Component.translatable("message.bertieprogression.finder_found", pos.getX(), pos.getZ()), false);
         return map;
     }
 

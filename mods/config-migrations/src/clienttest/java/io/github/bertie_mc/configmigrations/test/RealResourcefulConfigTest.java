@@ -10,8 +10,7 @@ public final class RealResourcefulConfigTest {
     public static final String FILE_NAME = CONFIG_NAME + ".jsonc";
     public static final int MIGRATED_VALUE = 76;
 
-    private RealResourcefulConfigTest() {
-    }
+    private RealResourcefulConfigTest() {}
 
     public static void register() {
         new Configurator(ConfigMigrationsClientTestMod.MOD_ID).register(TestConfig.class);
@@ -20,8 +19,7 @@ public final class RealResourcefulConfigTest {
     public static void assertMigrated() {
         int actual = TestConfig.migratedValue;
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "Resourceful Config migration did not reach the live config: " + actual);
+            throw new IllegalStateException("Resourceful Config migration did not reach the live config: " + actual);
         }
     }
 
@@ -30,7 +28,6 @@ public final class RealResourcefulConfigTest {
         @ConfigEntry(id = "migratedValue")
         public static int migratedValue = 1;
 
-        private TestConfig() {
-        }
+        private TestConfig() {}
     }
 }

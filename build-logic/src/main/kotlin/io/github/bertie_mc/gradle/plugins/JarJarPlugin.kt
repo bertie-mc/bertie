@@ -10,25 +10,30 @@ class JarJarPlugin : Plugin<Project> {
         project.pluginManager.withPlugin("bertie.mod") { configure(project) }
     }
 
-    private fun configure(project: Project) = with(project) {
-        val dependenciesToExtract = configurations.dependencyScope("jarJarCompileOnly") {
-            description = "Mods whose nested libraries are needed for compilation"
+    private fun configure(project: Project) =
+        with(project) {
+            val dependenciesToExtract =
+                configurations.dependencyScope("jarJarCompileOnly") {
+                    description = "Mods whose nested libraries are needed for compilation"
+                }
+            val archives =
+                configurations
+                    .resolvable("jarJarCompileClasspath") {
+                        extendsFrom(dependenciesToExtract.get())
+                        isTransitive = false
+                    }.get()
+            configurations.named("compileOnly") {
+                extendsFrom(dependenciesToExtract.get())
+            }
+            val destination = layout.buildDirectory.dir("jarjar-compile")
+            val extract =
+                tasks.register<ExtractNestedJars>("extractJarJarLibraries") {
+                    this.archives.from(archives)
+                    destinationDirectory.set(destination)
+                }
+            dependencies.add(
+                "compileOnly",
+                fileTree(destination) { include("*.jar") }.builtBy(extract),
+            )
         }
-        val archives = configurations.resolvable("jarJarCompileClasspath") {
-            extendsFrom(dependenciesToExtract.get())
-            isTransitive = false
-        }.get()
-        configurations.named("compileOnly") {
-            extendsFrom(dependenciesToExtract.get())
-        }
-        val destination = layout.buildDirectory.dir("jarjar-compile")
-        val extract = tasks.register<ExtractNestedJars>("extractJarJarLibraries") {
-            this.archives.from(archives)
-            destinationDirectory.set(destination)
-        }
-        dependencies.add(
-            "compileOnly",
-            fileTree(destination) { include("*.jar") }.builtBy(extract),
-        )
-    }
 }

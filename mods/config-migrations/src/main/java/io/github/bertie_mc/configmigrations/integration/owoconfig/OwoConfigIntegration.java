@@ -135,8 +135,7 @@ public final class OwoConfigIntegration {
         throw new ConfigMigrationException("Unsupported value in an owo-config fragment");
     }
 
-    private record Target(String config, MigrationManifest manifest) {
-    }
+    private record Target(String config, MigrationManifest manifest) {}
 
     private static final class Session {
         private final MigrationManager.Migration migration;

@@ -19,8 +19,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 class WunderLibIntegrationTest {
-    private static final ResourceLocation ID =
-            ResourceLocation.fromNamespaceAndPath("example", "client");
+    private static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath("example", "client");
 
     @TempDir
     Path gameDirectory;
@@ -29,8 +28,7 @@ class WunderLibIntegrationTest {
     void recursivelyMergesAndSavesBeforeCommitting() throws Exception {
         Path directory = gameDirectory.resolve("migrations/wunderlib");
         Path target = gameDirectory.resolve("config/example/client.json");
-        Path state = gameDirectory.resolve(
-                "config/config-migrations/state/config/example/client.json.version");
+        Path state = gameDirectory.resolve("config/config-migrations/state/config/example/client.json.version");
         Files.createDirectories(directory);
         Files.writeString(directory.resolve("client.toml"), manifest());
 
@@ -42,8 +40,7 @@ class WunderLibIntegrationTest {
         document.addProperty("replace", 1);
         document.add("values", array(1, 2));
         AtomicInteger saves = new AtomicInteger();
-        WunderLibIntegration integration =
-                WunderLibIntegration.load(MigrationManager.load(gameDirectory), directory);
+        WunderLibIntegration integration = WunderLibIntegration.load(MigrationManager.load(gameDirectory), directory);
 
         integration.migrate(ID, target, document, () -> {
             saves.incrementAndGet();
@@ -54,7 +51,8 @@ class WunderLibIntegrationTest {
         });
 
         assertEquals(1, saves.get());
-        assertEquals("player value", document.getAsJsonObject("settings").get("kept").getAsString());
+        assertEquals(
+                "player value", document.getAsJsonObject("settings").get("kept").getAsString());
         assertEquals(2, document.getAsJsonObject("replace").get("child").getAsInt());
         assertEquals(array(3, 4), document.getAsJsonArray("values"));
         assertEquals(5, document.get("literal.dot").getAsInt());
@@ -70,8 +68,7 @@ class WunderLibIntegrationTest {
     void throwingNativeSaveDoesNotCommit() throws Exception {
         Path directory = gameDirectory.resolve("migrations/wunderlib");
         Path target = gameDirectory.resolve("config/example/client.json");
-        Path state = gameDirectory.resolve(
-                "config/config-migrations/state/config/example/client.json.version");
+        Path state = gameDirectory.resolve("config/config-migrations/state/config/example/client.json.version");
         Files.createDirectories(directory);
         Files.createDirectories(target.getParent());
         Files.writeString(directory.resolve("client.toml"), manifest());
@@ -81,8 +78,7 @@ class WunderLibIntegrationTest {
         settings.addProperty("enabled", true);
         document.add("settings", settings);
         Files.writeString(target, document.toString());
-        WunderLibIntegration integration =
-                WunderLibIntegration.load(MigrationManager.load(gameDirectory), directory);
+        WunderLibIntegration integration = WunderLibIntegration.load(MigrationManager.load(gameDirectory), directory);
 
         assertThrows(
                 UncheckedIOException.class,

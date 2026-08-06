@@ -1,19 +1,18 @@
 package io.github.bertie_mc.carving.client;
 
-import io.github.bertie_mc.carving.Carving;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.mojang.logging.LogUtils;
+import io.github.bertie_mc.carving.Carving;
+import java.io.BufferedReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.util.GsonHelper;
 import org.slf4j.Logger;
-
-import java.io.BufferedReader;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 
 /**
  * Loads carving form maps from {@code assets/berlordscarving/shapes/slag/<part>.json}.
@@ -28,8 +27,7 @@ public final class ShapeLibrary {
     private static final Logger LOG = LogUtils.getLogger();
     private static final Map<String, int[]> CACHE = new HashMap<>();
 
-    private ShapeLibrary() {
-    }
+    private ShapeLibrary() {}
 
     /** levels[i] = -1 for empty, else 0-7 palette level, for the shape file {@code shapes/<id>.json}. */
     public static int[] levels(String id) {
@@ -43,7 +41,8 @@ public final class ShapeLibrary {
     private static int[] load(String id) {
         ResourceLocation rl = ResourceLocation.fromNamespaceAndPath(Carving.MODID, "shapes/" + id + ".json");
         try {
-            Optional<Resource> res = Minecraft.getInstance().getResourceManager().getResource(rl);
+            Optional<Resource> res =
+                    Minecraft.getInstance().getResourceManager().getResource(rl);
             if (res.isPresent()) {
                 try (BufferedReader reader = res.get().openAsReader()) {
                     JsonObject json = GsonHelper.parse(reader);

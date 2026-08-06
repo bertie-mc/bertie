@@ -13,8 +13,7 @@ public final class RealWunderLibConfigTest {
 
     private static TestConfig config;
 
-    private RealWunderLibConfigTest() {
-    }
+    private RealWunderLibConfigTest() {}
 
     public static void load() {
         config = new TestConfig();
@@ -23,8 +22,7 @@ public final class RealWunderLibConfigTest {
     public static void assertMigrated() {
         int actual = config.migratedValue.get();
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "WunderLib migration did not reach the live config: " + actual);
+            throw new IllegalStateException("WunderLib migration did not reach the live config: " + actual);
         }
     }
 

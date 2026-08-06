@@ -21,8 +21,7 @@ import org.lwjgl.glfw.GLFW;
 
 /** Delivers simulated keyboard and mouse events through Minecraft's normal handlers. */
 public final class DefaultTestInput implements TestInput, AutoCloseable {
-    private static final Set<InputConstants.Key> SIMULATED_KEYS_DOWN =
-            ConcurrentHashMap.newKeySet();
+    private static final Set<InputConstants.Key> SIMULATED_KEYS_DOWN = ConcurrentHashMap.newKeySet();
 
     private final DefaultClientTestContext context;
     private final Set<InputConstants.Key> heldKeys = new HashSet<>();
@@ -48,8 +47,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
     @Override
     public synchronized void holdKey(Function<Options, KeyMapping> keyMappingGetter) {
         Objects.requireNonNull(keyMappingGetter);
-        KeyMapping keyMapping =
-                context.computeOnClient(client -> keyMappingGetter.apply(client.options));
+        KeyMapping keyMapping = context.computeOnClient(client -> keyMappingGetter.apply(client.options));
         holdKey(keyMapping);
     }
 
@@ -78,9 +76,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
 
     @Override
     public synchronized void holdControl() {
-        holdKey(Util.getPlatform() == Util.OS.OSX
-                ? GLFW.GLFW_KEY_LEFT_SUPER
-                : InputConstants.KEY_LCONTROL);
+        holdKey(Util.getPlatform() == Util.OS.OSX ? GLFW.GLFW_KEY_LEFT_SUPER : InputConstants.KEY_LCONTROL);
     }
 
     @Override
@@ -101,8 +97,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
     @Override
     public synchronized void releaseKey(Function<Options, KeyMapping> keyMappingGetter) {
         Objects.requireNonNull(keyMappingGetter);
-        KeyMapping keyMapping =
-                context.computeOnClient(client -> keyMappingGetter.apply(client.options));
+        KeyMapping keyMapping = context.computeOnClient(client -> keyMappingGetter.apply(client.options));
         releaseKey(keyMapping);
     }
 
@@ -131,9 +126,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
 
     @Override
     public synchronized void releaseControl() {
-        releaseKey(Util.getPlatform() == Util.OS.OSX
-                ? GLFW.GLFW_KEY_LEFT_SUPER
-                : InputConstants.KEY_LCONTROL);
+        releaseKey(Util.getPlatform() == Util.OS.OSX ? GLFW.GLFW_KEY_LEFT_SUPER : InputConstants.KEY_LCONTROL);
     }
 
     @Override
@@ -154,8 +147,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
     @Override
     public synchronized void pressKey(Function<Options, KeyMapping> keyMappingGetter) {
         Objects.requireNonNull(keyMappingGetter);
-        KeyMapping keyMapping =
-                context.computeOnClient(client -> keyMappingGetter.apply(client.options));
+        KeyMapping keyMapping = context.computeOnClient(client -> keyMappingGetter.apply(client.options));
         pressKey(keyMapping);
     }
 
@@ -184,11 +176,9 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
     }
 
     @Override
-    public synchronized void holdKeyFor(
-            Function<Options, KeyMapping> keyMappingGetter, int ticks) {
+    public synchronized void holdKeyFor(Function<Options, KeyMapping> keyMappingGetter, int ticks) {
         Objects.requireNonNull(keyMappingGetter);
-        KeyMapping keyMapping =
-                context.computeOnClient(client -> keyMappingGetter.apply(client.options));
+        KeyMapping keyMapping = context.computeOnClient(client -> keyMappingGetter.apply(client.options));
         holdKeyFor(keyMapping, ticks);
     }
 
@@ -240,8 +230,7 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
             if (client.player == null) {
                 throw new IllegalStateException("A client player must be present to look around");
             }
-            client.player.lookAt(
-                    EntityAnchorArgument.Anchor.EYES, Vec3.atCenterOf(position));
+            client.player.lookAt(EntityAnchorArgument.Anchor.EYES, Vec3.atCenterOf(position));
         });
     }
 
@@ -276,10 +265,8 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
     @Override
     public synchronized void moveCursor(double deltaX, double deltaY) {
         ensureOpen();
-        context.runOnClient(client -> moveCursorTo(
-                client,
-                client.mouseHandler.xpos() + deltaX,
-                client.mouseHandler.ypos() + deltaY));
+        context.runOnClient(client ->
+                moveCursorTo(client, client.mouseHandler.xpos() + deltaX, client.mouseHandler.ypos() + deltaY));
     }
 
     @Override
@@ -307,19 +294,17 @@ public final class DefaultTestInput implements TestInput, AutoCloseable {
         long window = client.getWindow().getWindow();
         int modifiers = modifiers(window);
         switch (key.getType()) {
-            case KEYSYM -> client.keyboardHandler.keyPress(
-                    window, key.getValue(), 0, action, modifiers);
-            case SCANCODE -> client.keyboardHandler.keyPress(
-                    window, GLFW.GLFW_KEY_UNKNOWN, key.getValue(), action, modifiers);
-            case MOUSE -> ((MouseHandlerInvoker) client.mouseHandler)
-                    .bertie$onPress(window, key.getValue(), action, modifiers);
+            case KEYSYM -> client.keyboardHandler.keyPress(window, key.getValue(), 0, action, modifiers);
+            case SCANCODE ->
+                client.keyboardHandler.keyPress(window, GLFW.GLFW_KEY_UNKNOWN, key.getValue(), action, modifiers);
+            case MOUSE ->
+                ((MouseHandlerInvoker) client.mouseHandler).bertie$onPress(window, key.getValue(), action, modifiers);
         }
     }
 
     private static void typeChar(Minecraft client, int codePoint) {
         long window = client.getWindow().getWindow();
-        ((KeyboardHandlerInvoker) client.keyboardHandler)
-                .bertie$charTyped(window, codePoint, modifiers(window));
+        ((KeyboardHandlerInvoker) client.keyboardHandler).bertie$charTyped(window, codePoint, modifiers(window));
     }
 
     private static InputConstants.Key boundKey(KeyMapping keyMapping, String action) {

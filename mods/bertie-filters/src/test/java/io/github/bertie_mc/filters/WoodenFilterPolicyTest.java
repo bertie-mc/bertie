@@ -1,11 +1,10 @@
 package io.github.bertie_mc.filters;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.List;
+import org.junit.jupiter.api.Test;
 
 class WoodenFilterPolicyTest {
 
@@ -20,10 +19,7 @@ class WoodenFilterPolicyTest {
     @Test
     void matchesARequestedToolWithAtLeastOneWoodenPart() {
         assertTrue(WoodenFilterPolicy.matches(
-                "pickaxe",
-                "slag:pickaxe",
-                List.of("slag:stone", "slag:wooden", "slag:iron")
-        ));
+                "pickaxe", "slag:pickaxe", List.of("slag:stone", "slag:wooden", "slag:iron")));
     }
 
     @Test
@@ -36,10 +32,6 @@ class WoodenFilterPolicyTest {
     @Test
     void rejectsItemsWithoutAWoodenSlagPart() {
         assertFalse(WoodenFilterPolicy.matches("helmet", "slag:helmet", List.of()));
-        assertFalse(WoodenFilterPolicy.matches(
-                "helmet",
-                "slag:helmet",
-                List.of("slag:iron", "other:wooden")
-        ));
+        assertFalse(WoodenFilterPolicy.matches("helmet", "slag:helmet", List.of("slag:iron", "other:wooden")));
     }
 }

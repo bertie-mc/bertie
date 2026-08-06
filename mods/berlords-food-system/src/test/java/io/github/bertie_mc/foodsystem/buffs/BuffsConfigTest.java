@@ -1,12 +1,12 @@
 package io.github.bertie_mc.foodsystem.buffs;
 
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.item.Items;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.Items;
+import org.junit.jupiter.api.Test;
 
 class BuffsConfigTest {
 
@@ -28,7 +28,8 @@ class BuffsConfigTest {
         assertEquals(1, apple.effects.size());
         assertEquals(1, apple.effects.getFirst().amplifier());
         assertEquals(1, apple.attributes.size());
-        assertEquals(AttributeModifier.Operation.ADD_MULTIPLIED_BASE,
+        assertEquals(
+                AttributeModifier.Operation.ADD_MULTIPLIED_BASE,
                 apple.attributes.getFirst().modifier().operation());
         assertTrue(apple.abilities.flight);
         assertTrue(apple.abilities.climbing);

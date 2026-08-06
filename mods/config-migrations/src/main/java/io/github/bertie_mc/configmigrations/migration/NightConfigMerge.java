@@ -8,8 +8,7 @@ import java.util.List;
 
 /** Recursive merge shared by NightConfig-based integrations. */
 public final class NightConfigMerge {
-    private NightConfigMerge() {
-    }
+    private NightConfigMerge() {}
 
     public static void apply(CommentedConfig target, List<Change> changes) {
         for (Change change : changes) {

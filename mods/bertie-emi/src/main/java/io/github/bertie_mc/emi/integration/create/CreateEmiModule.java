@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.create;
 
-import io.github.bertie_mc.emi.framework.GenericEmiCategory;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.kinetics.crafter.MechanicalCraftingRecipe;
 import com.simibubi.create.content.kinetics.deployer.ItemApplicationRecipe;
@@ -20,6 +16,17 @@ import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.recipe.VanillaEmiRecipeCategories;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.GenericEmiCategory;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -32,14 +39,6 @@ import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * Native EMI categories for Create's machine recipes. 13 of Create's types share the
  * {@link ProcessingRecipe} base, so one {@link #toDescriptor} mapper covers them all
@@ -51,8 +50,7 @@ import java.util.Set;
  * {@link SequencedAssemblyEmiRecipe}. Only ever called when {@code create} is loaded.
  */
 public final class CreateEmiModule {
-    private CreateEmiModule() {
-    }
+    private CreateEmiModule() {}
 
     private static final String NS = "bertieemi";
 
@@ -67,7 +65,8 @@ public final class CreateEmiModule {
         processing(reg, rm, AllRecipeTypes.CUTTING, "create_cutting", "mechanical_saw", "Cutting");
         processing(reg, rm, AllRecipeTypes.SPLASHING, "create_splashing", "encased_fan", "Bulk Washing");
         processing(reg, rm, AllRecipeTypes.HAUNTING, "create_haunting", "encased_fan", "Bulk Haunting");
-        processing(reg, rm, AllRecipeTypes.SANDPAPER_POLISHING, "create_sandpaper", "sand_paper", "Sandpaper Polishing");
+        processing(
+                reg, rm, AllRecipeTypes.SANDPAPER_POLISHING, "create_sandpaper", "sand_paper", "Sandpaper Polishing");
         processing(reg, rm, AllRecipeTypes.FILLING, "create_filling", "spout", "Filling");
         processing(reg, rm, AllRecipeTypes.EMPTYING, "create_emptying", "item_drain", "Emptying");
 
@@ -90,8 +89,8 @@ public final class CreateEmiModule {
     }
 
     /** The 11 plain ProcessingRecipe categories. */
-    private static void processing(EmiRegistry reg, RecipeManager rm, AllRecipeTypes type,
-                                   String key, String workstation, String name) {
+    private static void processing(
+            EmiRegistry reg, RecipeManager rm, AllRecipeTypes type, String key, String workstation, String name) {
         EmiRecipeCategory cat = category(reg, key, workstation, name);
         for (RecipeHolder<?> h : recipesFor(rm, type)) {
             if (!(h.value() instanceof ProcessingRecipe<?, ?> r)) {
@@ -105,8 +104,8 @@ public final class CreateEmiModule {
     }
 
     /** Deployer / manual application: base item + held item (catalyst if kept) -> output. */
-    private static void application(EmiRegistry reg, RecipeManager rm, AllRecipeTypes type,
-                                    String key, String workstation, String name) {
+    private static void application(
+            EmiRegistry reg, RecipeManager rm, AllRecipeTypes type, String key, String workstation, String name) {
         EmiRecipeCategory cat = category(reg, key, workstation, name);
         for (RecipeHolder<?> h : recipesFor(rm, type)) {
             if (!(h.value() instanceof ItemApplicationRecipe r)) {
@@ -131,7 +130,8 @@ public final class CreateEmiModule {
 
     /** The NxN Mechanical Crafter wall grid — bespoke layout, not the single-row descriptor. */
     private static void mechanicalCrafting(EmiRegistry reg, RecipeManager rm) {
-        EmiRecipeCategory cat = category(reg, "create_mechanical_crafting", "mechanical_crafter", "Mechanical Crafting");
+        EmiRecipeCategory cat =
+                category(reg, "create_mechanical_crafting", "mechanical_crafter", "Mechanical Crafting");
         Recipes.forEach(rm, MechanicalCraftingRecipe.class, (id, r) -> {
             int gw = r.getWidth();
             int gh = r.getHeight();
@@ -140,8 +140,8 @@ public final class CreateEmiModule {
                 grid.add(ing.isEmpty() ? EmiStack.EMPTY : EmiIngredient.of(ing));
             }
             EmiStack out = EmiStack.of(r.getResultItem(null));
-            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(NS,
-                    "create_mechanical_crafting/" + id.getNamespace() + "/" + id.getPath());
+            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(
+                    NS, "create_mechanical_crafting/" + id.getNamespace() + "/" + id.getPath());
             reg.addRecipe(new MechanicalCraftingEmiRecipe(cat, displayId, gw, gh, grid, out));
         });
     }
@@ -194,10 +194,10 @@ public final class CreateEmiModule {
                 results.add(EmiStack.of(o.getStack()).setChance(o.getChance()));
             }
 
-            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(NS,
-                    "create_sequenced_assembly/" + id.getNamespace() + "/" + id.getPath());
-            reg.addRecipe(new SequencedAssemblyEmiRecipe(cat, displayId, start, steps,
-                    transitional, r.getLoops(), results));
+            ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(
+                    NS, "create_sequenced_assembly/" + id.getNamespace() + "/" + id.getPath());
+            reg.addRecipe(
+                    new SequencedAssemblyEmiRecipe(cat, displayId, start, steps, transitional, r.getLoops(), results));
         });
     }
 
@@ -238,7 +238,10 @@ public final class CreateEmiModule {
     private static String ingredientKey(Ingredient ing) {
         StringBuilder sb = new StringBuilder();
         for (net.minecraft.world.item.ItemStack s : ing.getItems()) {
-            sb.append(BuiltInRegistries.ITEM.getKey(s.getItem())).append('x').append(s.getCount()).append(';');
+            sb.append(BuiltInRegistries.ITEM.getKey(s.getItem()))
+                    .append('x')
+                    .append(s.getCount())
+                    .append(';');
         }
         return sb.toString();
     }
@@ -265,8 +268,8 @@ public final class CreateEmiModule {
 
     private static EmiRecipeCategory category(EmiRegistry reg, String key, String workstation, String name) {
         EmiStack icon = createStack(workstation);
-        GenericEmiCategory cat = new GenericEmiCategory(
-                ResourceLocation.fromNamespaceAndPath(NS, key), icon, Component.literal(name));
+        GenericEmiCategory cat =
+                new GenericEmiCategory(ResourceLocation.fromNamespaceAndPath(NS, key), icon, Component.literal(name));
         reg.addCategory(cat);
         if (!icon.isEmpty()) {
             reg.addWorkstation(cat, icon);

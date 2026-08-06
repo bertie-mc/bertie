@@ -18,8 +18,7 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 public final class CarvingGameTests {
     private static final String EMPTY_TEMPLATE = "empty";
 
-    private CarvingGameTests() {
-    }
+    private CarvingGameTests() {}
 
     @GameTest(template = EMPTY_TEMPLATE)
     public static void waterloggedStationAcceptsOnlyTierTwoSlates(GameTestHelper helper) {
@@ -29,25 +28,30 @@ public final class CarvingGameTests {
         BlockState dry = station.defaultBlockState();
         helper.getLevel().setBlock(worldPos, dry, 3);
 
-        helper.assertTrue(station.placeLiquid(helper.getLevel(), worldPos, dry,
-                Fluids.WATER.getSource(false)), "station should accept water");
+        helper.assertTrue(
+                station.placeLiquid(helper.getLevel(), worldPos, dry, Fluids.WATER.getSource(false)),
+                "station should accept water");
         BlockState waterlogged = helper.getLevel().getBlockState(worldPos);
-        helper.assertTrue(waterlogged.getValue(CarvingStationBlock.WATERLOGGED),
-                "station should retain the waterlogged state");
-        helper.assertTrue(waterlogged.getFluidState().is(Fluids.WATER),
-                "waterlogged station should expose a water fluid state");
+        helper.assertTrue(
+                waterlogged.getValue(CarvingStationBlock.WATERLOGGED), "station should retain the waterlogged state");
+        helper.assertTrue(
+                waterlogged.getFluidState().is(Fluids.WATER), "waterlogged station should expose a water fluid state");
 
         var blockEntity = helper.getLevel().getBlockEntity(worldPos);
-        helper.assertTrue(blockEntity instanceof CarvingStationBlockEntity,
-                "station block entity is missing");
+        helper.assertTrue(blockEntity instanceof CarvingStationBlockEntity, "station block entity is missing");
         CarvingStationBlockEntity stationEntity = (CarvingStationBlockEntity) blockEntity;
-        ItemStack diamondSlate = new ItemStack(Carving.SMALL_SLATES.get(CarvingMaterial.DIAMOND).get());
-        ItemStack woodSlate = new ItemStack(Carving.SMALL_SLATES.get(CarvingMaterial.WOOD).get());
-        helper.assertTrue(stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_INPUT, diamondSlate),
+        ItemStack diamondSlate =
+                new ItemStack(Carving.SMALL_SLATES.get(CarvingMaterial.DIAMOND).get());
+        ItemStack woodSlate =
+                new ItemStack(Carving.SMALL_SLATES.get(CarvingMaterial.WOOD).get());
+        helper.assertTrue(
+                stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_INPUT, diamondSlate),
                 "tier-two slate should be accepted");
-        helper.assertFalse(stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_INPUT, woodSlate),
+        helper.assertFalse(
+                stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_INPUT, woodSlate),
                 "tier-one slate should be rejected");
-        helper.assertFalse(stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_OUTPUT, diamondSlate),
+        helper.assertFalse(
+                stationEntity.inv.isItemValid(CarvingStationBlockEntity.SLOT_OUTPUT, diamondSlate),
                 "players must not insert into the output slot");
         helper.succeed();
     }

@@ -54,7 +54,8 @@ public final class ConfigValidator {
             if (previousOwner != null) {
                 throw new ConfigException(
                         tier.path() + ".level",
-                        "level " + tier.level() + " is already used by tier '" + previousOwner + "' - levels must be unique");
+                        "level " + tier.level() + " is already used by tier '" + previousOwner
+                                + "' - levels must be unique");
             }
 
             List<RawConfig.RawToolMatcher> tools = new ArrayList<>();
@@ -74,13 +75,15 @@ public final class ConfigValidator {
                 }
                 String blockId = resolveBlock(ref, probe);
                 if (!blocks.add(blockId)) {
-                    throw new ConfigException(ref.path(), "block '" + blockId + "' is listed twice in tier '" + tier.id() + "'");
+                    throw new ConfigException(
+                            ref.path(), "block '" + blockId + "' is listed twice in tier '" + tier.id() + "'");
                 }
                 String owner = blockOwner.put(blockId, tier.id());
                 if (owner != null) {
                     throw new ConfigException(
                             ref.path(),
-                            "block '" + blockId + "' already belongs to tier '" + owner + "' - a block may belong to exactly one tier");
+                            "block '" + blockId + "' already belongs to tier '" + owner
+                                    + "' - a block may belong to exactly one tier");
                 }
             }
 
@@ -204,8 +207,8 @@ public final class ConfigValidator {
                     if (a.tierId().equals(b.tierId())) {
                         throw new ConfigException(
                                 b.matcher().path(),
-                                "duplicate tool matcher for '" + b.matcher().item() + "' inside tier '" + b.tierId() + "'"
-                                        + " (first seen at " + a.matcher().path() + ")");
+                                "duplicate tool matcher for '" + b.matcher().item() + "' inside tier '" + b.tierId()
+                                        + "'" + " (first seen at " + a.matcher().path() + ")");
                     }
                     throw new ConfigException(
                             b.matcher().path(),

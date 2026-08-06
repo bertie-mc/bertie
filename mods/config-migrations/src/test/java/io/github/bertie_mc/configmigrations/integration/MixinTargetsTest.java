@@ -11,8 +11,7 @@ import org.junit.jupiter.api.Test;
 
 class MixinTargetsTest {
     @Test
-    void commonLoaderScopesRegistrationAndClientCommonLoads()
-            throws ClassNotFoundException {
+    void commonLoaderScopesRegistrationAndClientCommonLoads() throws ClassNotFoundException {
         Set<String> methods = methodNames("net.neoforged.neoforge.internal.CommonModLoader");
         assertHasMixinMethod(methods, "configmigrations$initializeLaunchPolicy");
         assertHasMixinMethod(methods, "configmigrations$runRegistrationPhase");
@@ -20,8 +19,7 @@ class MixinTargetsTest {
     }
 
     @Test
-    void standardSpecConnectsRegistrationAndAcceptanceToTheActivePhase()
-            throws ClassNotFoundException {
+    void standardSpecConnectsRegistrationAndAcceptanceToTheActivePhase() throws ClassNotFoundException {
         Set<String> methods = methodNames("net.neoforged.neoforge.common.ModConfigSpec");
         assertHasMixinMethod(methods, "configmigrations$registerSpec");
         assertHasMixinMethod(methods, "configmigrations$accept");
@@ -30,10 +28,8 @@ class MixinTargetsTest {
     }
 
     @Test
-    void icebergSpecConnectsRegistrationAndAcceptanceToTheActivePhase()
-            throws ClassNotFoundException {
-        Set<String> methods = methodNames(
-                "com.anthonyhilyard.iceberg.neoforge.config.NeoForgeIcebergConfigSpec");
+    void icebergSpecConnectsRegistrationAndAcceptanceToTheActivePhase() throws ClassNotFoundException {
+        Set<String> methods = methodNames("com.anthonyhilyard.iceberg.neoforge.config.NeoForgeIcebergConfigSpec");
         assertHasMixinMethod(methods, "configmigrations$registerSpec");
         assertHasMixinMethod(methods, "configmigrations$accept");
         assertNoMixinMethod(methods, "configmigrations$requirePendingMigrations");
@@ -43,8 +39,7 @@ class MixinTargetsTest {
     @Test
     void serverLifecycleScopesThePhysicalServerLoad() throws ClassNotFoundException {
         assertHasMixinMethod(
-                methodNames("net.neoforged.neoforge.server.ServerLifecycleHooks"),
-                "configmigrations$runServerLoad");
+                methodNames("net.neoforged.neoforge.server.ServerLifecycleHooks"), "configmigrations$runServerLoad");
     }
 
     private static Set<String> methodNames(String className) throws ClassNotFoundException {

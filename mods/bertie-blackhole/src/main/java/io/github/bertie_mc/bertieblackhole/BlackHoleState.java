@@ -4,6 +4,10 @@ import io.github.bertie_mc.bertieblackhole.config.BbhConfig;
 import io.github.bertie_mc.bertieblackhole.config.CounterDef;
 import io.github.bertie_mc.bertieblackhole.config.ExchangeDef;
 import io.github.bertie_mc.bertieblackhole.config.LevelDef;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import javax.annotation.Nullable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
@@ -15,11 +19,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-
-import javax.annotation.Nullable;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * Everything this mod adds to a single black hole: how far it has been levelled, how full each
@@ -38,6 +37,7 @@ public class BlackHoleState {
 
     /** Ticks until the pending conversion pops; 0 when nothing is queued. */
     private int outputTimer;
+
     @Nullable
     private String pendingExchange;
 
@@ -110,8 +110,8 @@ public class BlackHoleState {
      * @return true when some counter claimed this item - either it was absorbed, or the counter
      *         is full and is ignoring it. False means no counter wants it at all.
      */
-    private boolean intoCounter(BbhConfig cfg, LevelDef next, StatefulBlackHole hole,
-                                ItemEntity entity, ItemStack stack) {
+    private boolean intoCounter(
+            BbhConfig cfg, LevelDef next, StatefulBlackHole hole, ItemEntity entity, ItemStack stack) {
         for (CounterDef def : next.requires().values()) {
             int value = def.valueOf(stack);
             if (value <= 0) {

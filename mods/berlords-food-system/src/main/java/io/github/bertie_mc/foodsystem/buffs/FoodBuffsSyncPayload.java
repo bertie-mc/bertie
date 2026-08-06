@@ -14,8 +14,8 @@ public record FoodBuffsSyncPayload(String json) implements CustomPacketPayload {
     public static final Type<FoodBuffsSyncPayload> TYPE =
             new Type<>(ResourceLocation.fromNamespaceAndPath(BFS.MODID, "food_buffs_sync"));
 
-    public static final StreamCodec<RegistryFriendlyByteBuf, FoodBuffsSyncPayload> STREAM_CODEC =
-            StreamCodec.composite(ByteBufCodecs.stringUtf8(1 << 20), FoodBuffsSyncPayload::json, FoodBuffsSyncPayload::new);
+    public static final StreamCodec<RegistryFriendlyByteBuf, FoodBuffsSyncPayload> STREAM_CODEC = StreamCodec.composite(
+            ByteBufCodecs.stringUtf8(1 << 20), FoodBuffsSyncPayload::json, FoodBuffsSyncPayload::new);
 
     @Override
     public Type<FoodBuffsSyncPayload> type() {

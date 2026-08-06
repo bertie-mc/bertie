@@ -1,12 +1,11 @@
 package io.github.bertie_mc.bertieprogression.recipe;
 
 import io.github.bertie_mc.bertieprogression.BertieProgression;
+import java.util.function.Supplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 public final class ModRecipes {
 
@@ -24,10 +23,10 @@ public final class ModRecipes {
     public static final Supplier<OminousFanRecipe.Serializer> OMINOUS_FAN =
             SERIALIZERS.register("ominous_fan", OminousFanRecipe.Serializer::new);
 
-    public static final Supplier<RecipeType<OminousFanRecipe>> OMINOUS_FAN_TYPE =
-            TYPES.register("ominous_fan", () -> RecipeType.simple(
-                    net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(
-                            BertieProgression.MODID, "ominous_fan")));
+    public static final Supplier<RecipeType<OminousFanRecipe>> OMINOUS_FAN_TYPE = TYPES.register(
+            "ominous_fan",
+            () -> RecipeType.simple(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(
+                    BertieProgression.MODID, "ominous_fan")));
 
     private ModRecipes() {}
 }

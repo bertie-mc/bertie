@@ -1,5 +1,6 @@
 package io.github.bertie_mc.hephaestusarchitecture.ponder;
 
+import java.util.List;
 import net.createmod.ponder.api.PonderPalette;
 import net.createmod.ponder.api.registration.PonderPlugin;
 import net.createmod.ponder.api.registration.PonderSceneRegistrationHelper;
@@ -8,8 +9,6 @@ import net.createmod.ponder.api.scene.SceneBuildingUtil;
 import net.createmod.ponder.foundation.PonderIndex;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-
-import java.util.List;
 
 /**
  * Ponder scenes for the tier 2-4 Hephaestus Forge layouts.
@@ -64,8 +63,8 @@ public class ForgePonderPlugin implements PonderPlugin {
      * One revealed step of a build. {@code fromLayer}/{@code toLayer} are inclusive Y indices into
      * the schematic; {@code pointY} is the Y the caption arrow points at.
      */
-    private record Step(int fromLayer, int toLayer, int pointX, int pointY, int pointZ,
-                        PonderPalette color, String text) {
+    private record Step(
+            int fromLayer, int toLayer, int pointX, int pointY, int pointZ, PonderPalette color, String text) {
 
         static Step of(int layer, int px, int pz, String text) {
             return new Step(layer, layer, px, layer, pz, null, text);
@@ -81,8 +80,8 @@ public class ForgePonderPlugin implements PonderPlugin {
      * anything Create ponders (most of its scenes are 5x2..4), so each one is scaled down and pushed
      * down the screen. NEGATIVE offsetY moves the scene DOWN.
      */
-    private record Tier(String id, String title, int size, float scale, float offsetY,
-                        int pedestals, List<Step> steps) {
+    private record Tier(
+            String id, String title, int size, float scale, float offsetY, int pedestals, List<Step> steps) {
 
         void build(SceneBuilder scene, SceneBuildingUtil util) {
             scene.title(id, title);
@@ -96,13 +95,15 @@ public class ForgePonderPlugin implements PonderPlugin {
 
             for (Step step : steps) {
                 if (step.fromLayer() > 0) {
-                    scene.world().showSection(
-                            util.select().fromTo(0, step.fromLayer(), 0, size - 1, step.toLayer(), size - 1),
-                            Direction.DOWN);
+                    scene.world()
+                            .showSection(
+                                    util.select().fromTo(0, step.fromLayer(), 0, size - 1, step.toLayer(), size - 1),
+                                    Direction.DOWN);
                     scene.idle(15);
                 }
 
-                var text = scene.overlay().showText(90)
+                var text = scene.overlay()
+                        .showText(90)
                         .text(step.text())
                         .placeNearTarget()
                         .attachKeyFrame()
@@ -113,7 +114,8 @@ public class ForgePonderPlugin implements PonderPlugin {
                 scene.idle(100);
             }
 
-            scene.overlay().showText(90)
+            scene.overlay()
+                    .showText(90)
                     .colored(PonderPalette.INPUT)
                     .text(pedestals + " pedestals feed this forge. Any pedestal counts - plain or magnetized.")
                     .placeNearTarget()
@@ -121,7 +123,8 @@ public class ForgePonderPlugin implements PonderPlugin {
                     .pointAt(util.vector().topOf(centre, 1, 0));
             scene.idle(100);
 
-            scene.overlay().showText(90)
+            scene.overlay()
+                    .showText(90)
                     .colored(PonderPalette.OUTPUT)
                     .text("Build it in any of the four rotations. Mirror images are NOT accepted.")
                     .placeNearTarget()
@@ -133,35 +136,107 @@ public class ForgePonderPlugin implements PonderPlugin {
     }
 
     private static final List<Tier> TIERS = List.of(
-            new Tier("tier_2", "Hephaestus Forge - Tier 2 Layout", 9, 0.75f, -0.5f, 8, List.of(
-                    Step.of(0, 4, 4,
-                            "Tier 2 replaces the stock base entirely. Nine by nine of Polished Darkstone with the corners cut away."),
-                    Step.of(0, 0, 4, 0, PonderPalette.BLUE,
-                            "Soulstone on the diagonals, Gilded Chiseled Darkstone on the arms, and Chiseled Resin Bricks at the four points."),
-                    Step.of(1, 4, 4,
-                            "The forge sits dead centre, ringed by eight pedestals and four corner stairs."),
-                    Step.of(2, 2, 1, 1, PonderPalette.OUTPUT,
-                            "Cap the four corners with Arcane Crystal Blocks."))),
-
-            new Tier("tier_3", "Hephaestus Forge - Tier 3 Layout", 13, 0.55f, -1.0f, 12, List.of(
-                    Step.of(0, 6, 6,
-                            "Tier 3 widens to a thirteen by thirteen octagon, edged all the way round with Darkstone Slabs."),
-                    Step.of(0, 0, 6, 0, PonderPalette.RED,
-                            "Blocks of Living Flesh mark the inner ring, with Arcane Polished Darkstone threading between them."),
-                    Step.of(1, 6, 6,
-                            "The forge at centre, now with twelve pedestals on a wider ring - four more inputs than tier 2."),
-                    Step.of(2, 4, 3, 3, PonderPalette.OUTPUT,
-                            "Four pillars rise at the diagonals: Gilded Chiseled Darkstone, an Arcane Crystal Block, then Gilded again."))),
-
-            new Tier("tier_4", "Hephaestus Forge - Tier 4 Layout", 13, 0.5f, -1.5f, 12, List.of(
-                    Step.of(0, 6, 6,
-                            "Tier 4 keeps the thirteen by thirteen footprint but inlays it with Frost Infused Netherite."),
-                    Step.of(0, 0, 6, 6, PonderPalette.RED,
-                            "Voiderite and Stellarite sit at the heart of the floor, directly under the forge."),
-                    Step.of(1, 6, 6,
-                            "Twelve pedestals again - tier 4 buys you a harder build and taller structure, not more inputs."),
-                    Step.of(2, 4, 3, 3, PonderPalette.BLUE,
-                            "Neolith Blocks stack into four pillars at the diagonals. Watch their facing - up, up, down."),
-                    Step.of(5, 6, 3, 3, PonderPalette.OUTPUT,
-                            "Crown the pillars with a canopy of upside-down stairs and slabs."))));
+            new Tier(
+                    "tier_2",
+                    "Hephaestus Forge - Tier 2 Layout",
+                    9,
+                    0.75f,
+                    -0.5f,
+                    8,
+                    List.of(
+                            Step.of(
+                                    0,
+                                    4,
+                                    4,
+                                    "Tier 2 replaces the stock base entirely. Nine by nine of Polished Darkstone with the corners cut away."),
+                            Step.of(
+                                    0,
+                                    0,
+                                    4,
+                                    0,
+                                    PonderPalette.BLUE,
+                                    "Soulstone on the diagonals, Gilded Chiseled Darkstone on the arms, and Chiseled Resin Bricks at the four points."),
+                            Step.of(
+                                    1,
+                                    4,
+                                    4,
+                                    "The forge sits dead centre, ringed by eight pedestals and four corner stairs."),
+                            Step.of(
+                                    2,
+                                    2,
+                                    1,
+                                    1,
+                                    PonderPalette.OUTPUT,
+                                    "Cap the four corners with Arcane Crystal Blocks."))),
+            new Tier(
+                    "tier_3",
+                    "Hephaestus Forge - Tier 3 Layout",
+                    13,
+                    0.55f,
+                    -1.0f,
+                    12,
+                    List.of(
+                            Step.of(
+                                    0,
+                                    6,
+                                    6,
+                                    "Tier 3 widens to a thirteen by thirteen octagon, edged all the way round with Darkstone Slabs."),
+                            Step.of(
+                                    0,
+                                    0,
+                                    6,
+                                    0,
+                                    PonderPalette.RED,
+                                    "Blocks of Living Flesh mark the inner ring, with Arcane Polished Darkstone threading between them."),
+                            Step.of(
+                                    1,
+                                    6,
+                                    6,
+                                    "The forge at centre, now with twelve pedestals on a wider ring - four more inputs than tier 2."),
+                            Step.of(
+                                    2,
+                                    4,
+                                    3,
+                                    3,
+                                    PonderPalette.OUTPUT,
+                                    "Four pillars rise at the diagonals: Gilded Chiseled Darkstone, an Arcane Crystal Block, then Gilded again."))),
+            new Tier(
+                    "tier_4",
+                    "Hephaestus Forge - Tier 4 Layout",
+                    13,
+                    0.5f,
+                    -1.5f,
+                    12,
+                    List.of(
+                            Step.of(
+                                    0,
+                                    6,
+                                    6,
+                                    "Tier 4 keeps the thirteen by thirteen footprint but inlays it with Frost Infused Netherite."),
+                            Step.of(
+                                    0,
+                                    0,
+                                    6,
+                                    6,
+                                    PonderPalette.RED,
+                                    "Voiderite and Stellarite sit at the heart of the floor, directly under the forge."),
+                            Step.of(
+                                    1,
+                                    6,
+                                    6,
+                                    "Twelve pedestals again - tier 4 buys you a harder build and taller structure, not more inputs."),
+                            Step.of(
+                                    2,
+                                    4,
+                                    3,
+                                    3,
+                                    PonderPalette.BLUE,
+                                    "Neolith Blocks stack into four pillars at the diagonals. Watch their facing - up, up, down."),
+                            Step.of(
+                                    5,
+                                    6,
+                                    3,
+                                    3,
+                                    PonderPalette.OUTPUT,
+                                    "Crown the pillars with a canopy of upside-down stairs and slabs."))));
 }

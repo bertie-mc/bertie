@@ -38,7 +38,8 @@ public final class JsonMatch {
                 return false;
             }
             JsonObject actualObj = actual.getAsJsonObject();
-            for (Map.Entry<String, JsonElement> entry : expected.getAsJsonObject().entrySet()) {
+            for (Map.Entry<String, JsonElement> entry :
+                    expected.getAsJsonObject().entrySet()) {
                 if (!actualObj.has(entry.getKey())) {
                     return false;
                 }
@@ -114,7 +115,8 @@ public final class JsonMatch {
         }
         if (element.isJsonObject()) {
             int total = 0;
-            for (Map.Entry<String, JsonElement> entry : element.getAsJsonObject().entrySet()) {
+            for (Map.Entry<String, JsonElement> entry :
+                    element.getAsJsonObject().entrySet()) {
                 total += specificity(entry.getValue());
             }
             return total;

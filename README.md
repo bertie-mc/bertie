@@ -17,9 +17,13 @@ nix develop
 
 The environment supplies the repository's Java, Gradle, Python, packwiz, Wayland, and
 GitHub tooling. Run `nix flake check` to verify the development environment itself.
+For native Windows development, see the
+[Windows guide](docs/windows.md).
 
 ## Documentation
 
+- [Repository overview](docs/overview.md) — understand repository boundaries, dependency
+  direction, and where code belongs.
 - [Dependencies](docs/dependencies.md) — add or update libraries, mods, shaderpacks, lock
   files, checksums, and generated pack contents.
 - [Testing](docs/testing.md) — choose a suite, write tests, run them locally, and inspect

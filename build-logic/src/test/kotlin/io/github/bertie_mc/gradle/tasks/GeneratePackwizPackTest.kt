@@ -22,9 +22,10 @@ class GeneratePackwizPackTest {
 
     @Test
     fun `owned mod filenames participate in the task fingerprint`() {
-        val annotation = GeneratePackwizPack::class.java
-            .getMethod("getLocalModFiles")
-            .getAnnotation(PathSensitive::class.java)
+        val annotation =
+            GeneratePackwizPack::class.java
+                .getMethod("getLocalModFiles")
+                .getAnnotation(PathSensitive::class.java)
 
         assertEquals(PathSensitivity.NAME_ONLY, annotation.value)
     }
@@ -75,9 +76,12 @@ class GeneratePackwizPackTest {
         fixture.task.generate()
 
         assertEquals(firstOutput, snapshot(fixture.output))
-        assertEquals(2L, Files.walk(fixture.output.resolve("config")).use { paths ->
-            paths.filter(Files::isRegularFile).count()
-        })
+        assertEquals(
+            2L,
+            Files.walk(fixture.output.resolve("config")).use { paths ->
+                paths.filter(Files::isRegularFile).count()
+            },
+        )
         assertFalse(Files.exists(fixture.output.resolve("file-0.toml")))
 
         val modrinth = fixture.generated("mods/modrinth-example.pw.toml")
@@ -112,9 +116,11 @@ class GeneratePackwizPackTest {
         val copiedOwnedMod = fixture.output.resolve("mods/owned-1.2.3.jar")
         assertEquals("owned artifact", Files.readString(copiedOwnedMod))
         assertFalse(Files.exists(fixture.output.resolve("mods/owned-example.pw.toml")))
-        val ownedIndexEntry = fixture.generated("index.toml")
-            .split("[[files]]")
-            .single { entry -> entry.contains("file = \"mods/owned-1.2.3.jar\"") }
+        val ownedIndexEntry =
+            fixture
+                .generated("index.toml")
+                .split("[[files]]")
+                .single { entry -> entry.contains("file = \"mods/owned-1.2.3.jar\"") }
         assertFalse(ownedIndexEntry.contains("metafile = true"))
 
         assertTrue(fixture.generated("pack.toml").contains("version = \"0.1.0\""))
@@ -179,9 +185,10 @@ class GeneratePackwizPackTest {
             ),
         )
 
-        val failure = assertThrows(IllegalArgumentException::class.java) {
-            fixture.task.generate()
-        }
+        val failure =
+            assertThrows(IllegalArgumentException::class.java) {
+                fixture.task.generate()
+            }
 
         assertTrue(failure.message.orEmpty().contains("metafile paths collide"))
     }
@@ -220,38 +227,47 @@ class GeneratePackwizPackTest {
         destination: String = "mods",
         installedName: String = "$id.${file.fileName.toString().substringAfterLast('.')}",
         side: MinecraftArtifactSide = MinecraftArtifactSide.BOTH,
-    ): PackwizArtifact = PackwizArtifact(
-        id = id,
-        displayName = id,
-        installedName = installedName,
-        destination = destination,
-        side = side,
-        provider = provider,
-        projectId = projectId,
-        versionId = versionId,
-        file = file.toFile(),
-    )
+    ): PackwizArtifact =
+        PackwizArtifact(
+            id = id,
+            displayName = id,
+            installedName = installedName,
+            destination = destination,
+            side = side,
+            provider = provider,
+            projectId = projectId,
+            versionId = versionId,
+            file = file.toFile(),
+        )
 
     private fun sha512(path: Path): String =
-        MessageDigest.getInstance("SHA-512").digest(Files.readAllBytes(path))
+        MessageDigest
+            .getInstance("SHA-512")
+            .digest(Files.readAllBytes(path))
             .joinToString("") { byte -> "%02x".format(byte) }
 
-    private fun snapshot(root: Path): Map<String, String> = Files.walk(root).use { paths ->
-        paths.filter(Files::isRegularFile)
-            .sorted()
-            .toList()
-            .associate { path -> root.relativize(path).toString() to Files.readString(path) }
-    }
+    private fun snapshot(root: Path): Map<String, String> =
+        Files.walk(root).use { paths ->
+            paths
+                .filter(Files::isRegularFile)
+                .sorted()
+                .toList()
+                .associate { path -> root.relativize(path).toString() to Files.readString(path) }
+        }
 
     private data class Fixture(
         val root: Path,
         val output: Path,
         val task: GeneratePackwizPack,
     ) {
-        fun file(relative: String, contents: String): Path = root.resolve(relative).also { path ->
-            Files.createDirectories(path.parent)
-            Files.writeString(path, contents)
-        }
+        fun file(
+            relative: String,
+            contents: String,
+        ): Path =
+            root.resolve(relative).also { path ->
+                Files.createDirectories(path.parent)
+                Files.writeString(path, contents)
+            }
 
         fun generated(relative: String): String = Files.readString(output.resolve(relative))
     }

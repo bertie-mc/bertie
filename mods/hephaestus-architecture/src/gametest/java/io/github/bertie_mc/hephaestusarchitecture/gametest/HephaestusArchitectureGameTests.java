@@ -10,14 +10,13 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @GameTestHolder("hephaestusarchitecture")
 @PrefixGameTestTemplate(false)
 public final class HephaestusArchitectureGameTests {
-    private HephaestusArchitectureGameTests() {
-    }
+    private HephaestusArchitectureGameTests() {}
 
     @GameTest(template = "empty")
     public static void loadsPackagedTierLayouts(GameTestHelper helper) {
         for (int tier = 2; tier <= 4; tier++) {
-            ResourceLocation id = ResourceLocation.fromNamespaceAndPath(
-                    "hephaestusarchitecture", "hephaestus_forge/tier_" + tier);
+            ResourceLocation id =
+                    ResourceLocation.fromNamespaceAndPath("hephaestusarchitecture", "hephaestus_forge/tier_" + tier);
             if (helper.getLevel().getStructureManager().get(id).isEmpty()) {
                 helper.fail("Missing runtime structure template " + id);
                 return;

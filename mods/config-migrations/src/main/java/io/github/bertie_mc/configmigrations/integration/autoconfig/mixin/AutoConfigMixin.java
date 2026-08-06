@@ -18,11 +18,12 @@ abstract class AutoConfigMixin {
     @WrapOperation(
             method = "register(Ljava/lang/Class;Lme/shedaniel/autoconfig/serializer/"
                     + "ConfigSerializer$Factory;)Lme/shedaniel/autoconfig/ConfigHolder;",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lme/shedaniel/autoconfig/serializer/ConfigSerializer$Factory;create("
-                            + "Lme/shedaniel/autoconfig/annotation/Config;Ljava/lang/Class;)"
-                            + "Lme/shedaniel/autoconfig/serializer/ConfigSerializer;"))
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lme/shedaniel/autoconfig/serializer/ConfigSerializer$Factory;create("
+                                    + "Lme/shedaniel/autoconfig/annotation/Config;Ljava/lang/Class;)"
+                                    + "Lme/shedaniel/autoconfig/serializer/ConfigSerializer;"))
     @SuppressWarnings("unchecked")
     private static <T extends ConfigData> ConfigSerializer<T> configmigrations$wrapSerializer(
             ConfigSerializer.Factory<T> factory,

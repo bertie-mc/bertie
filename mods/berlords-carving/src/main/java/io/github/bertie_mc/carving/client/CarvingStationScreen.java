@@ -1,30 +1,5 @@
 package io.github.bertie_mc.carving.client;
 
-import io.github.bertie_mc.carving.ArmorKind;
-import io.github.bertie_mc.carving.Carving;
-import io.github.bertie_mc.carving.CarvingMaterial;
-import io.github.bertie_mc.carving.ToolKind;
-import io.github.bertie_mc.carving.block.CarvingStationBlock;
-import io.github.bertie_mc.carving.menu.CarvingStationMenu;
-import io.github.bertie_mc.carving.net.StationCarveResultPayload;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.math.Axis;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.Util;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.network.PacketDistributor;
-import org.lwjgl.glfw.GLFW;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import static io.github.bertie_mc.carving.client.ShapeLibrary.CELLS;
 import static io.github.bertie_mc.carving.client.ShapeLibrary.GRID;
 import static io.github.bertie_mc.carving.menu.CarvingStationMenu.CELL;
@@ -41,6 +16,30 @@ import static io.github.bertie_mc.carving.menu.CarvingStationMenu.TABS_Y;
 import static io.github.bertie_mc.carving.menu.CarvingStationMenu.TAB_H;
 import static io.github.bertie_mc.carving.menu.CarvingStationMenu.TAB_W;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.math.Axis;
+import io.github.bertie_mc.carving.ArmorKind;
+import io.github.bertie_mc.carving.Carving;
+import io.github.bertie_mc.carving.CarvingMaterial;
+import io.github.bertie_mc.carving.ToolKind;
+import io.github.bertie_mc.carving.block.CarvingStationBlock;
+import io.github.bertie_mc.carving.menu.CarvingStationMenu;
+import io.github.bertie_mc.carving.net.StationCarveResultPayload;
+import java.util.ArrayList;
+import java.util.List;
+import net.minecraft.Util;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.renderer.texture.TextureAtlas;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.network.PacketDistributor;
+import org.lwjgl.glfw.GLFW;
+
 /**
  * Tier-2 carving station: a water-jet cutter. The jet sits at the canvas centre; W/S drive it
  * (screen-fixed), A/D rotate the canvas, SPACE toggles it (only while the station is waterlogged).
@@ -52,21 +51,21 @@ import static io.github.bertie_mc.carving.menu.CarvingStationMenu.TAB_W;
  * cell is an error: 1 free, 2 = -30% durability, 3 = break.
  */
 public class CarvingStationScreen extends AbstractContainerScreen<CarvingStationMenu> {
-    private static final int BREAK_AT = 3;            // 1 free, 2 = -30% durability, 3 = break
-    private static final double MOVE_SPEED = 5.0;     // jet travel, cells per second
-    private static final double ROT_SPEED = 3.0;      // canvas rotation, rad/s (A/D)
-    private static final int CONNECTOR_DROP = 2;      // boots bridge: cells the connector is pushed down
-    private static final double JET_MARGIN = 1.5;     // how far off-grid the jet may travel
-    private static final double MIN_SEG = 0.06;       // min jet travel before a new path point is logged
-    private static final int MOVE_SIGN = -1;          // W/S direction (kept as the in-game build had it)
+    private static final int BREAK_AT = 3; // 1 free, 2 = -30% durability, 3 = break
+    private static final double MOVE_SPEED = 5.0; // jet travel, cells per second
+    private static final double ROT_SPEED = 3.0; // canvas rotation, rad/s (A/D)
+    private static final int CONNECTOR_DROP = 2; // boots bridge: cells the connector is pushed down
+    private static final double JET_MARGIN = 1.5; // how far off-grid the jet may travel
+    private static final double MIN_SEG = 0.06; // min jet travel before a new path point is logged
+    private static final int MOVE_SIGN = -1; // W/S direction (kept as the in-game build had it)
     private static final double[] BREAK = {Double.NaN, Double.NaN}; // stroke separator in committedPath
 
     private final boolean[] keep = new boolean[CELLS];
     private final boolean[] present = new boolean[CELLS];
-    private final boolean[] mistake = new boolean[CELLS];     // good cells touched or cut off = errors
-    private final List<double[]> path = new ArrayList<>();    // current free-form cut stroke (live)
+    private final boolean[] mistake = new boolean[CELLS]; // good cells touched or cut off = errors
+    private final List<double[]> path = new ArrayList<>(); // current free-form cut stroke (live)
     private final List<double[]> committedPath = new ArrayList<>(); // past strokes, kept drawn (persist on toggle)
-    private int anchor = -1;                                  // single centre of interest (keep centroid)
+    private int anchor = -1; // single centre of interest (keep centroid)
 
     private CarvingMaterial mat;
     private boolean armor;
@@ -118,7 +117,8 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
     }
 
     private boolean hasSlate() {
-        return inputStack().getItem() instanceof io.github.bertie_mc.carving.item.SlateItem si && si.material.isStationOnly();
+        return inputStack().getItem() instanceof io.github.bertie_mc.carving.item.SlateItem si
+                && si.material.isStationOnly();
     }
 
     private boolean outputEmpty() {
@@ -144,7 +144,9 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
 
     private void refreshSprite() {
         ResourceLocation tex = ResourceLocation.parse(bgTexture(mat == null ? CarvingMaterial.IRON : mat));
-        this.blockSprite = Minecraft.getInstance().getTextureAtlas(TextureAtlas.LOCATION_BLOCKS).apply(tex);
+        this.blockSprite = Minecraft.getInstance()
+                .getTextureAtlas(TextureAtlas.LOCATION_BLOCKS)
+                .apply(tex);
     }
 
     private static String bgTexture(CarvingMaterial m) {
@@ -203,10 +205,22 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
                 int c = stack[--sp];
                 comp.add(c);
                 int col = c % GRID, row = c / GRID;
-                if (col > 0 && keep[c - 1] && !seen[c - 1]) { seen[c - 1] = true; stack[sp++] = c - 1; }
-                if (col < GRID - 1 && keep[c + 1] && !seen[c + 1]) { seen[c + 1] = true; stack[sp++] = c + 1; }
-                if (row > 0 && keep[c - GRID] && !seen[c - GRID]) { seen[c - GRID] = true; stack[sp++] = c - GRID; }
-                if (row < GRID - 1 && keep[c + GRID] && !seen[c + GRID]) { seen[c + GRID] = true; stack[sp++] = c + GRID; }
+                if (col > 0 && keep[c - 1] && !seen[c - 1]) {
+                    seen[c - 1] = true;
+                    stack[sp++] = c - 1;
+                }
+                if (col < GRID - 1 && keep[c + 1] && !seen[c + 1]) {
+                    seen[c + 1] = true;
+                    stack[sp++] = c + 1;
+                }
+                if (row > 0 && keep[c - GRID] && !seen[c - GRID]) {
+                    seen[c - GRID] = true;
+                    stack[sp++] = c - GRID;
+                }
+                if (row < GRID - 1 && keep[c + GRID] && !seen[c + GRID]) {
+                    seen[c + GRID] = true;
+                    stack[sp++] = c + GRID;
+                }
             }
             comps.add(comp);
         }
@@ -337,10 +351,10 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
             return;
         }
         boolean now = active() && jetOn;
-        if (now && !tracing) {            // pen down: start a fresh live stroke
+        if (now && !tracing) { // pen down: start a fresh live stroke
             path.clear();
-            path.add(new double[]{jetX, jetY});
-        } else if (!now && tracing) {      // pen up
+            path.add(new double[] {jetX, jetY});
+        } else if (!now && tracing) { // pen up
             // Persist only an OPEN, in-progress cut -- one paused with the jet still over present
             // material. A stroke that ends in the void is a finished (or empty) gesture, so its line is
             // discarded: anything it severed already shows as holes, and a void->void cut that severed
@@ -371,7 +385,7 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
 
     private void extendPath() {
         if (path.isEmpty()) {
-            path.add(new double[]{jetX, jetY});
+            path.add(new double[] {jetX, jetY});
             return;
         }
         double[] last = path.get(path.size() - 1);
@@ -393,7 +407,7 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
                 x = p;
             }
         }
-        path.add(new double[]{jetX, jetY});
+        path.add(new double[] {jetX, jetY});
         if (hit >= 0) {
             resolveLoop(hit, x);
             return;
@@ -461,7 +475,7 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         // from the crossing point x.
         if (hitI >= 1) {
             List<double[]> tail = new ArrayList<>(path.subList(0, hitI + 1));
-            tail.add(new double[]{x[0], x[1]});
+            tail.add(new double[] {x[0], x[1]});
             commitLine(tail);
         }
         path.clear();
@@ -530,8 +544,8 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         }
     }
 
-    private static double[] segIntersect(double ax, double ay, double bx, double by,
-                                         double cx, double cy, double dx, double dy) {
+    private static double[] segIntersect(
+            double ax, double ay, double bx, double by, double cx, double cy, double dx, double dy) {
         double rx = bx - ax, ry = by - ay, sx = dx - cx, sy = dy - cy;
         double denom = rx * sy - ry * sx;
         if (Math.abs(denom) < 1e-9) {
@@ -540,7 +554,7 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         double t = ((cx - ax) * sy - (cy - ay) * sx) / denom;
         double u = ((cx - ax) * ry - (cy - ay) * rx) / denom;
         if (t >= 0 && t <= 1 && u >= 0 && u <= 1) {
-            return new double[]{ax + t * rx, ay + t * ry};
+            return new double[] {ax + t * rx, ay + t * ry};
         }
         return null;
     }
@@ -578,8 +592,9 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
     }
 
     private void playClick(float pitch) {
-        Minecraft.getInstance().getSoundManager().play(
-                net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(
+        Minecraft.getInstance()
+                .getSoundManager()
+                .play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(
                         net.minecraft.sounds.SoundEvents.GRINDSTONE_USE, pitch, 0.2F));
     }
 
@@ -623,11 +638,11 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
     public boolean keyPressed(int key, int scan, int mods) {
         if (key == GLFW.GLFW_KEY_SPACE) {
             if (jetOn) {
-                jetOn = false;                          // stopping the jet is always allowed
+                jetOn = false; // stopping the jet is always allowed
             } else if (active() && hasWater()) {
-                jetOn = true;                           // the jet only starts when the station has water
+                jetOn = true; // the jet only starts when the station has water
             } else if (active()) {
-                playClick(0.4F);                        // denied: no water in the station
+                playClick(0.4F); // denied: no water in the station
             }
             return true;
         }
@@ -738,8 +753,13 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         if (!stationReady() || !hasSlate()) {
             g.fill(gx, gy, gx + GRID_PX, gy + GRID_PX, 0xFF8B8B8B);
             Component msg = Component.translatable("berlordscarving.station.insert");
-            g.drawString(this.font, msg, gx + GRID_PX / 2 - this.font.width(msg) / 2,
-                    gy + GRID_PX / 2 - 4, 0xFF3A3A3A, false);
+            g.drawString(
+                    this.font,
+                    msg,
+                    gx + GRID_PX / 2 - this.font.width(msg) / 2,
+                    gy + GRID_PX / 2 - 4,
+                    0xFF3A3A3A,
+                    false);
             return;
         }
 
@@ -770,13 +790,13 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         double cx = leftPos + GRID_X + GRID_PX / 2.0, cy = topPos + GRID_Y + GRID_PX / 2.0;
         double dx = (px - jetX) * CELL, dy = (py - jetY) * CELL;
         double cos = Math.cos(theta), sin = Math.sin(theta);
-        return new double[]{cx + dx * cos - dy * sin, cy + dx * sin + dy * cos};
+        return new double[] {cx + dx * cos - dy * sin, cy + dx * sin + dy * cos};
     }
 
     /** Draw the free-form cut line, but ONLY where it is over present material (no lines over holes). */
     private void renderPath(GuiGraphics g) {
         drawStrokes(g, committedPath); // past strokes (persist across jet toggle)
-        drawStrokes(g, path);          // the live stroke
+        drawStrokes(g, path); // the live stroke
     }
 
     /** Draw a stroke list as a red line clipped to present material; BREAK points separate sub-strokes. */
@@ -843,9 +863,7 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
         int pip = 9, gap = 4;
         for (int k = 0; k < BREAK_AT; k++) {
             int y = py + k * (pip + gap);
-            int col = k < errors
-                    ? (k == 0 ? 0xFFE0A020 : (k == BREAK_AT - 1 ? 0xFF8E1410 : 0xFFB02018))
-                    : 0xFF8F8F8F;
+            int col = k < errors ? (k == 0 ? 0xFFE0A020 : (k == BREAK_AT - 1 ? 0xFF8E1410 : 0xFFB02018)) : 0xFF8F8F8F;
             g.fill(px, y, px + pip, y + pip, col);
             g.renderOutline(px, y, pip, pip, 0xFF555555);
         }
@@ -853,12 +871,22 @@ public class CarvingStationScreen extends AbstractContainerScreen<CarvingStation
 
     private void renderControls(GuiGraphics g) {
         Component c = Component.translatable("berlordscarving.station.controls");
-        g.drawString(this.font, c, leftPos + (imageWidth - this.font.width(c)) / 2,
-                topPos + GRID_Y + GRID_PX + 4, 0xFF3A3A3A, false);
+        g.drawString(
+                this.font,
+                c,
+                leftPos + (imageWidth - this.font.width(c)) / 2,
+                topPos + GRID_Y + GRID_PX + 4,
+                0xFF3A3A3A,
+                false);
         if (active() && !hasWater()) {
             Component w = Component.translatable("berlordscarving.station.needs_water");
-            g.drawString(this.font, w, leftPos + (imageWidth - this.font.width(w)) / 2,
-                    topPos + GRID_Y + GRID_PX + 14, 0xFFB02018, false);
+            g.drawString(
+                    this.font,
+                    w,
+                    leftPos + (imageWidth - this.font.width(w)) / 2,
+                    topPos + GRID_Y + GRID_PX + 14,
+                    0xFFB02018,
+                    false);
         }
     }
 

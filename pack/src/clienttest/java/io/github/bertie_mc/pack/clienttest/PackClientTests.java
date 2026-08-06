@@ -12,11 +12,11 @@ public final class PackClientTests {
 
     @ClientTest
     public static void shaderpackIsStaged(ClientTestContext context) {
-        Path shaderpacks = context.computeOnClient(
-                client -> client.gameDirectory.toPath().resolve("shaderpacks"));
+        Path shaderpacks =
+                context.computeOnClient(client -> client.gameDirectory.toPath().resolve("shaderpacks"));
         try (Stream<Path> contents = Files.list(shaderpacks)) {
-            if (contents.noneMatch(path -> Files.isRegularFile(path)
-                    && path.getFileName().toString().endsWith(".zip"))) {
+            if (contents.noneMatch(path ->
+                    Files.isRegularFile(path) && path.getFileName().toString().endsWith(".zip"))) {
                 throw new AssertionError("No shaderpack archive was staged in " + shaderpacks);
             }
         } catch (IOException exception) {

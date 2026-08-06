@@ -3,8 +3,7 @@ package io.github.bertie_mc.explosiveenhancement;
 /** Dependency-free decisions shared by the packet hook and particle renderer. */
 public final class ExplosionPolicy {
 
-    private ExplosionPolicy() {
-    }
+    private ExplosionPolicy() {}
 
     public static float effectivePower(boolean dynamicSize, float packetPower) {
         return dynamicSize ? packetPower : 4.0F;

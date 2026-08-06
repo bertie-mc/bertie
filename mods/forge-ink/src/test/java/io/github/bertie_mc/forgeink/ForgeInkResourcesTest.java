@@ -1,16 +1,15 @@
 package io.github.bertie_mc.forgeink;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class ForgeInkResourcesTest {
 
@@ -26,13 +25,14 @@ class ForgeInkResourcesTest {
         }
 
         assertTrue(config.contains("\"required\": true"));
-        assertEquals(Set.of(
-                "EssenceDataInputMixin",
-                "EssenceStorageInputMixin",
-                "ExtractEnchantmentsInputMixin",
-                "HephaestusForgeBlockEntityMixin",
-                "HephaestusForgeMenuMixin"
-        ), declared);
+        assertEquals(
+                Set.of(
+                        "EssenceDataInputMixin",
+                        "EssenceStorageInputMixin",
+                        "ExtractEnchantmentsInputMixin",
+                        "HephaestusForgeBlockEntityMixin",
+                        "HephaestusForgeMenuMixin"),
+                declared);
     }
 
     @Test
@@ -41,8 +41,8 @@ class ForgeInkResourcesTest {
         assertTrue(resourceText(root + "pack.mcmeta").contains("\"pack_format\": 34"));
         assertTrue(resourceText(root + "assets/forbidden_arcanus/lang/en_us.json")
                 .contains("\"essence.forbidden_arcanus.experience\": \"Ink\""));
-        assertNotNull(getClass().getResource(root
-                + "assets/forbidden_arcanus/textures/gui/container/hephaestus_forge.png"));
+        assertNotNull(
+                getClass().getResource(root + "assets/forbidden_arcanus/textures/gui/container/hephaestus_forge.png"));
     }
 
     private String resourceText(String path) throws IOException {

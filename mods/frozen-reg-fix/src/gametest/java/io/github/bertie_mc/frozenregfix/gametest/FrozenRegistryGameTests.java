@@ -1,5 +1,6 @@
 package io.github.bertie_mc.frozenregfix.gametest;
 
+import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
@@ -7,26 +8,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 
-import java.util.List;
-
 @GameTestHolder("frozenregfix")
 @PrefixGameTestTemplate(false)
 public final class FrozenRegistryGameTests {
     private static final List<String> MATERIALS = List.of(
-            "bone",
-            "wither",
-            "warrior",
-            "heavy",
-            "robe",
-            "slime",
-            "divine",
-            "prismarine",
-            "wooden",
-            "steampunk"
-    );
+            "bone", "wither", "warrior", "heavy", "robe", "slime", "divine", "prismarine", "wooden", "steampunk");
 
-    private FrozenRegistryGameTests() {
-    }
+    private FrozenRegistryGameTests() {}
 
     @GameTest(template = "empty")
     public static void registersLateImmersiveArmorMaterials(GameTestHelper helper) {

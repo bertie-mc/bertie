@@ -1,19 +1,16 @@
 package io.github.bertie_mc.primitiverefined.client;
 
-import java.util.EnumMap;
-import java.util.function.Consumer;
-
 import com.simibubi.create.content.kinetics.base.KineticBlockEntityVisual;
 import com.simibubi.create.content.kinetics.base.RotatingInstance;
 import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
 import com.simibubi.create.foundation.render.AllInstanceTypes;
-
 import dev.engine_room.flywheel.api.instance.Instance;
 import dev.engine_room.flywheel.api.instance.Instancer;
 import dev.engine_room.flywheel.api.visualization.VisualizationContext;
 import dev.engine_room.flywheel.lib.model.Models;
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
-
+import java.util.EnumMap;
+import java.util.function.Consumer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -38,8 +35,8 @@ public class ArcaneticGearboxVisual extends KineticBlockEntityVisual<GearboxBloc
     private final Direction.Axis axis;
     private Direction sourceFacing;
 
-    public ArcaneticGearboxVisual(VisualizationContext context, GearboxBlockEntity blockEntity,
-                                  float partialTick, PartialModel shaft) {
+    public ArcaneticGearboxVisual(
+            VisualizationContext context, GearboxBlockEntity blockEntity, float partialTick, PartialModel shaft) {
         super(context, blockEntity, partialTick);
         axis = blockState.getValue(BlockStateProperties.AXIS);
         updateSourceFacing();
@@ -51,7 +48,8 @@ public class ArcaneticGearboxVisual extends KineticBlockEntityVisual<GearboxBloc
                 continue;
             }
             RotatingInstance shaftInstance = instancer.createInstance();
-            shaftInstance.setup(blockEntity, direction.getAxis(), speedOf(direction))
+            shaftInstance
+                    .setup(blockEntity, direction.getAxis(), speedOf(direction))
                     .setPosition(getVisualPosition())
                     // The partial points south, so each copy is turned onto its own face.
                     .rotateToFace(Direction.SOUTH, direction)
@@ -87,8 +85,8 @@ public class ArcaneticGearboxVisual extends KineticBlockEntityVisual<GearboxBloc
     @Override
     public void update(float partialTick) {
         updateSourceFacing();
-        shafts.forEach((direction, instance) ->
-                instance.setup(blockEntity, direction.getAxis(), speedOf(direction)).setChanged());
+        shafts.forEach((direction, instance) -> instance.setup(blockEntity, direction.getAxis(), speedOf(direction))
+                .setChanged());
     }
 
     @Override

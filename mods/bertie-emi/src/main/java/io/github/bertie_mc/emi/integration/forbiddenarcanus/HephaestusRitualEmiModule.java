@@ -1,8 +1,5 @@
 package io.github.bertie_mc.emi.integration.forbiddenarcanus;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.TierPredicate;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.Ritual;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.RitualInput;
@@ -11,9 +8,13 @@ import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.result.Rit
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.result.TransmuteInputResult;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.result.UpgradeTierResult;
 import dev.emi.emi.api.EmiRegistry;
+import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.Registry;
@@ -25,7 +26,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
-import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
 
 /**
  * Hephaestus Forge rituals. Unlike every other Forbidden & Arcanus recipe these live in a
@@ -47,17 +47,18 @@ public final class HephaestusRitualEmiModule {
      * With Bertie Forge Ink installed the forge's experience essence is fueled by (and renamed to)
      * Ink, so the ritual cost line mirrors that; without it the stock "XP" wording stays.
      */
-    private static final boolean FORGE_INK_LOADED = net.neoforged.fml.ModList.get().isLoaded("forgeink");
+    private static final boolean FORGE_INK_LOADED =
+            net.neoforged.fml.ModList.get().isLoaded("forgeink");
 
-    private HephaestusRitualEmiModule() {
-    }
+    private HephaestusRitualEmiModule() {}
 
     public static void register(EmiRegistry reg) {
         ClientLevel level = Minecraft.getInstance().level;
         if (level == null) {
             return;
         }
-        Registry<Ritual> rituals = level.registryAccess().registry(RITUAL_REGISTRY).orElse(null);
+        Registry<Ritual> rituals =
+                level.registryAccess().registry(RITUAL_REGISTRY).orElse(null);
         if (rituals == null) {
             return;
         }
@@ -69,8 +70,11 @@ public final class HephaestusRitualEmiModule {
         // rituals, the Tier 5 Forge shows every tier-progressive ritual, etc.
         EmiRecipeCategory[] byTier = new EmiRecipeCategory[MAX_TIER + 1];
         for (int t = 1; t <= MAX_TIER; t++) {
-            byTier[t] = Categories.machine(reg, "fa_hephaestus_ritual_tier_" + t,
-                    "forbidden_arcanus:hephaestus_forge_tier_" + t, "Hephaestus Ritual (Tier " + t + ")");
+            byTier[t] = Categories.machine(
+                    reg,
+                    "fa_hephaestus_ritual_tier_" + t,
+                    "forbidden_arcanus:hephaestus_forge_tier_" + t,
+                    "Hephaestus Ritual (Tier " + t + ")");
         }
 
         rituals.entrySet().forEach(entry -> {
@@ -83,8 +87,10 @@ public final class HephaestusRitualEmiModule {
                     if (!tier.test(t)) {
                         continue;
                     }
-                    ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath("bertieemi",
-                            "fa_hephaestus_ritual_tier_" + t + "/" + ritualId.getNamespace() + "/" + ritualId.getPath());
+                    ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(
+                            "bertieemi",
+                            "fa_hephaestus_ritual_tier_" + t + "/" + ritualId.getNamespace() + "/"
+                                    + ritualId.getPath());
                     reg.addRecipe(new GenericEmiRecipe(byTier[t], displayId, d));
                 }
             } catch (Throwable ignored) {

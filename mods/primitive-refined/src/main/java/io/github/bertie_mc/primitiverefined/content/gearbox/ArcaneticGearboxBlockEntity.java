@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined.content.gearbox;
 
-import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
-import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import com.refinedmods.refinedstorage.api.network.impl.node.SimpleNetworkNode;
 import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
+import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;

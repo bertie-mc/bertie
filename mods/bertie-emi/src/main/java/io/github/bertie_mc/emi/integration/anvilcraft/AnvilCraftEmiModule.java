@@ -1,14 +1,9 @@
 package io.github.bertie_mc.emi.integration.anvilcraft;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.anvilcraft.lib.recipe.component.ChanceBlockState;
 import dev.anvilcraft.lib.recipe.component.ChanceItemStack;
 import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
-import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
 import dev.dubhe.anvilcraft.recipe.JewelCraftingRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.MassInjectRecipe;
@@ -32,6 +27,7 @@ import dev.dubhe.anvilcraft.recipe.anvil.wrap.StampingRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.SuperHeatingRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.TimeWarpRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.wrap.UnpackRecipe;
+import dev.dubhe.anvilcraft.recipe.component.HasCauldronSimple;
 import dev.dubhe.anvilcraft.recipe.mineral.MineralFountainChanceRecipe;
 import dev.dubhe.anvilcraft.recipe.mineral.MineralFountainRecipe;
 import dev.dubhe.anvilcraft.recipe.multiblock.MultiblockConversionRecipe;
@@ -44,6 +40,13 @@ import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -56,10 +59,6 @@ import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 /**
  * AnvilCraft — recipes triggered by a falling anvil. The "process" types (item-based, block-based and
@@ -78,8 +77,7 @@ import java.util.Locale;
  * <p>Most types have no machine block, so the workstation falls back to the Anvil.
  */
 public final class AnvilCraftEmiModule {
-    private AnvilCraftEmiModule() {
-    }
+    private AnvilCraftEmiModule() {}
 
     private static final String ANVIL = "minecraft:anvil";
     private static final String CAULDRON = "minecraft:cauldron";
@@ -107,7 +105,8 @@ public final class AnvilCraftEmiModule {
         process(reg, rm, ItemInjectRecipe.class, "anvilcraft_item_inject", ANVIL, "Item Inject");
         process(reg, rm, SqueezingRecipe.class, "anvilcraft_squeezing", CAULDRON, "Squeezing");
 
-        EmiRecipeCategory jewel = Categories.machine(reg, "anvilcraft_jewel", "anvilcraft:jewelcrafting_table", "Jewel Crafting");
+        EmiRecipeCategory jewel =
+                Categories.machine(reg, "anvilcraft_jewel", "anvilcraft:jewelcrafting_table", "Jewel Crafting");
         Recipes.forEach(rm, JewelCraftingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -115,7 +114,8 @@ public final class AnvilCraftEmiModule {
             reg.addRecipe(new GenericEmiRecipe(jewel, id, d));
         });
 
-        EmiRecipeCategory su = Categories.machine(reg, "anvilcraft_stamping_unique", "anvilcraft:stamping_platform", "Stamping (Unique)");
+        EmiRecipeCategory su = Categories.machine(
+                reg, "anvilcraft_stamping_unique", "anvilcraft:stamping_platform", "Stamping (Unique)");
         Recipes.forEach(rm, StampingUniqueItemsRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -165,8 +165,8 @@ public final class AnvilCraftEmiModule {
 
     /** Feed items to a falling anvil to bank mass; the machine emits its product once the total is met. */
     private static void massInject(EmiRegistry reg, RecipeManager rm) {
-        EmiRecipeCategory cat = Categories.machine(
-                reg, "anvilcraft_mass_inject", "anvilcraft:space_overcompressor", "Mass Inject");
+        EmiRecipeCategory cat =
+                Categories.machine(reg, "anvilcraft_mass_inject", "anvilcraft:space_overcompressor", "Mass Inject");
         Recipes.forEach(rm, MassInjectRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.getIngredient()));
@@ -230,12 +230,13 @@ public final class AnvilCraftEmiModule {
      * recipe when a mob has no spawn egg (Giant, for one).
      */
     private static void mobTransform(EmiRegistry reg, RecipeManager rm) {
-        EmiRecipeCategory cat = Categories.machine(
-                reg, "anvilcraft_mob_transform", "anvilcraft:corrupted_beacon", "Mob Transform");
+        EmiRecipeCategory cat =
+                Categories.machine(reg, "anvilcraft_mob_transform", "anvilcraft:corrupted_beacon", "Mob Transform");
         Recipes.forEach(rm, MobTransformRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(spawnEgg(r.input()));
-            MutableComponent line = Component.empty().append(r.input().getDescription()).append(" -> ");
+            MutableComponent line =
+                    Component.empty().append(r.input().getDescription()).append(" -> ");
             boolean first = true;
             for (TransformResult res : r.results()) {
                 d.itemOut(spawnEgg(res.resultEntityType()));
@@ -254,7 +255,8 @@ public final class AnvilCraftEmiModule {
             d.itemIn(spawnEgg(r.input()));
             for (ItemIngredientPredicate p : r.itemIngredients()) d.itemIn(predIn(p));
             TransformResult res = r.specialResult();
-            MutableComponent line = Component.empty().append(r.input().getDescription()).append(" -> ");
+            MutableComponent line =
+                    Component.empty().append(r.input().getDescription()).append(" -> ");
             if (res != null) {
                 d.itemOut(spawnEgg(res.resultEntityType()));
                 line.append(res.resultEntityType().getDescription());
@@ -279,8 +281,8 @@ public final class AnvilCraftEmiModule {
             reg.addRecipe(new GenericEmiRecipe(craft, id, d));
         });
 
-        EmiRecipeCategory conv = Categories.machine(
-                reg, "anvilcraft_multiblock_conversion", ANVIL, "Multiblock Conversion");
+        EmiRecipeCategory conv =
+                Categories.machine(reg, "anvilcraft_multiblock_conversion", ANVIL, "Multiblock Conversion");
         Recipes.forEach(rm, MultiblockConversionRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (ItemStack s : r.getInputPattern().toIngredientList()) d.itemIn(EmiStack.of(s));
@@ -295,8 +297,8 @@ public final class AnvilCraftEmiModule {
      * so one enumeration by the base class covers them; the input count is what tells them apart.
      */
     private static void multipleToOneSmithing(EmiRegistry reg, RecipeManager rm) {
-        EmiRecipeCategory cat = Categories.machine(reg, "anvilcraft_multi_smithing",
-                "anvilcraft:royal_smithing_table", "Multiple To One Smithing");
+        EmiRecipeCategory cat = Categories.machine(
+                reg, "anvilcraft_multi_smithing", "anvilcraft:royal_smithing_table", "Multiple To One Smithing");
         EmiStack ember = Categories.stack("anvilcraft:ember_smithing_table");
         if (!ember.isEmpty()) {
             reg.addWorkstation(cat, ember);
@@ -359,9 +361,7 @@ public final class AnvilCraftEmiModule {
 
     private static String percent(double probability) {
         double pct = probability * 100.0;
-        return (pct == Math.floor(pct)
-                ? String.valueOf((long) pct)
-                : String.format(Locale.ROOT, "%.1f", pct)) + "%";
+        return (pct == Math.floor(pct) ? String.valueOf((long) pct) : String.format(Locale.ROOT, "%.1f", pct)) + "%";
     }
 
     private static EmiStack fluid(ResourceLocation rl) {

@@ -22,20 +22,18 @@ class DefaultServerContext implements ServerContext {
     @Override
     public void runCommand(String command) {
         Objects.requireNonNull(command);
-        runOnServer(current -> current.getCommands()
-                .performPrefixedCommand(current.createCommandSourceStack(), command));
+        runOnServer(
+                current -> current.getCommands().performPrefixedCommand(current.createCommandSourceStack(), command));
     }
 
     @Override
-    public <E extends Throwable> void runOnServer(
-            FailableConsumer<MinecraftServer, E> action) throws E {
+    public <E extends Throwable> void runOnServer(FailableConsumer<MinecraftServer, E> action) throws E {
         Objects.requireNonNull(action);
         TestScheduler.runOnServer(server, () -> action.accept(server));
     }
 
     @Override
-    public <T, E extends Throwable> T computeOnServer(
-            FailableFunction<MinecraftServer, T, E> action) throws E {
+    public <T, E extends Throwable> T computeOnServer(FailableFunction<MinecraftServer, T, E> action) throws E {
         Objects.requireNonNull(action);
         return TestScheduler.computeOnServer(server, () -> action.apply(server));
     }
@@ -56,12 +54,9 @@ class DefaultServerContext implements ServerContext {
     }
 
     @Override
-    public int waitFor(
-            String description, Predicate<MinecraftServer> condition, int timeoutTicks) {
+    public int waitFor(String description, Predicate<MinecraftServer> condition, int timeoutTicks) {
         Objects.requireNonNull(condition);
         return context.waitForCondition(
-                description,
-                () -> computeOnServer(server -> condition.test(server)),
-                timeoutTicks);
+                description, () -> computeOnServer(server -> condition.test(server)), timeoutTicks);
     }
 }

@@ -3,8 +3,7 @@ package io.github.bertie_mc.rusticengineerfix.logic;
 /** Dependency-free decisions shared by the injected adapters and JVM tests. */
 public final class FlightAdjustmentPolicy {
 
-    private FlightAdjustmentPolicy() {
-    }
+    private FlightAdjustmentPolicy() {}
 
     public static boolean yawChanged(float previousYaw, float currentYaw) {
         return previousYaw != currentYaw;

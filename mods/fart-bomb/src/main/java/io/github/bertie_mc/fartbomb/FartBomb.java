@@ -29,13 +29,11 @@ public class FartBomb {
     private static final ResourceLocation ARTIFACTS_FART =
             ResourceLocation.fromNamespaceAndPath("artifacts", "item.whoopee_cushion.fart");
 
-    private static final DeferredRegister<SoundEvent> SOUNDS =
-            DeferredRegister.create(Registries.SOUND_EVENT, MOD_ID);
+    private static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(Registries.SOUND_EVENT, MOD_ID);
 
     public static final DeferredHolder<SoundEvent, SoundEvent> GOD_VOICE_FART = SOUNDS.register(
             "god_voice_fart",
-            () -> SoundEvent.createVariableRangeEvent(
-                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "god_voice_fart")));
+            () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(MOD_ID, "god_voice_fart")));
 
     public FartBomb(IEventBus modBus, ModContainer container) {
         SOUNDS.register(modBus);
@@ -43,7 +41,8 @@ public class FartBomb {
     }
 
     public static boolean onFart(ServerLevel level, Holder<SoundEvent> sound, Player player) {
-        if (!FartPolicy.isFartSound(sound.value().getLocation().getNamespace(),
+        if (!FartPolicy.isFartSound(
+                sound.value().getLocation().getNamespace(),
                 sound.value().getLocation().getPath())) {
             return false;
         }
@@ -88,14 +87,21 @@ public class FartBomb {
 
     private static void detonate(Player player, ServerLevel level) {
         FartPlacement.Position position = FartPlacement.behindPlayer(
-                player.getX(), player.getY(), player.getZ(), player.getBbHeight(), player.getYRot(),
-                FartBombConfig.OFFSET_BEHIND.getAsDouble(), FartBombConfig.OFFSET_BELOW.getAsDouble());
+                player.getX(),
+                player.getY(),
+                player.getZ(),
+                player.getBbHeight(),
+                player.getYRot(),
+                FartBombConfig.OFFSET_BEHIND.getAsDouble(),
+                FartBombConfig.OFFSET_BELOW.getAsDouble());
         Vec3 at = new Vec3(position.x(), position.y(), position.z());
 
         if (FartBombConfig.REPLACE_SOUND.getAsBoolean()) {
             level.playSound(
                     null,
-                    player.getX(), player.getY(), player.getZ(),
+                    player.getX(),
+                    player.getY(),
+                    player.getZ(),
                     GOD_VOICE_FART.get(),
                     SoundSource.PLAYERS,
                     (float) FartBombConfig.SOUND_VOLUME.getAsDouble(),
@@ -104,7 +110,9 @@ public class FartBomb {
 
         level.explode(
                 player,
-                at.x, at.y, at.z,
+                at.x,
+                at.y,
+                at.z,
                 (float) FartBombConfig.POWER.getAsDouble(),
                 FartBombConfig.START_FIRES.getAsBoolean(),
                 FartBombConfig.BREAK_BLOCKS.getAsBoolean()

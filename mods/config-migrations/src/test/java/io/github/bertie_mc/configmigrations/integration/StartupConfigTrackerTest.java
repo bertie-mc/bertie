@@ -63,8 +63,7 @@ class StartupConfigTrackerTest {
             MigrationRuntime.runNeoForgeRegistrationPhase(() -> {
                 ModContainer existingContainer = mock(ModContainer.class);
                 when(existingContainer.getModId()).thenReturn(MOD_ID);
-                tracker.registerConfig(
-                        ModConfig.Type.STARTUP, existing.spec(), existingContainer, EXISTING_FILE);
+                tracker.registerConfig(ModConfig.Type.STARTUP, existing.spec(), existingContainer, EXISTING_FILE);
 
                 assertFalse(existing.enabled().get());
                 assertFalse(read(existingTarget).<Boolean>get("settings.enabled"));
@@ -76,20 +75,19 @@ class StartupConfigTrackerTest {
                 ModContainer copiedContainer = mock(ModContainer.class);
                 when(copiedContainer.getModId()).thenReturn(MOD_ID);
                 doAnswer(invocation -> {
-                    ModConfigEvent event = invocation.getArgument(0);
-                    events.add(event.getClass());
-                    if (event instanceof ModConfigEvent.Loading) {
-                        assertFalse(copied.enabled());
-                        assertFalse(read(copiedTarget).<Boolean>get("settings.enabled"));
-                        assertEquals(
-                                1,
-                                state(gameDirectory, copiedTarget));
-                    }
-                    return null;
-                }).when(copiedContainer).acceptEvent(any(ModConfigEvent.class));
+                            ModConfigEvent event = invocation.getArgument(0);
+                            events.add(event.getClass());
+                            if (event instanceof ModConfigEvent.Loading) {
+                                assertFalse(copied.enabled());
+                                assertFalse(read(copiedTarget).<Boolean>get("settings.enabled"));
+                                assertEquals(1, state(gameDirectory, copiedTarget));
+                            }
+                            return null;
+                        })
+                        .when(copiedContainer)
+                        .acceptEvent(any(ModConfigEvent.class));
 
-                tracker.registerConfig(
-                        ModConfig.Type.STARTUP, copied, copiedContainer, COPIED_FILE);
+                tracker.registerConfig(ModConfig.Type.STARTUP, copied, copiedContainer, COPIED_FILE);
 
                 assertEquals(8, copied.count());
                 assertEquals(8, read(copiedTarget).<Number>get("settings.count").intValue());
@@ -146,9 +144,9 @@ class StartupConfigTrackerTest {
             return;
         }
         try (var paths = Files.list(configDirectory)) {
-            for (Path path : paths.filter(candidate -> candidate.getFileName()
-                    .toString()
-                    .startsWith("configmigrations-startup-")).toList()) {
+            for (Path path : paths.filter(
+                            candidate -> candidate.getFileName().toString().startsWith("configmigrations-startup-"))
+                    .toList()) {
                 Files.deleteIfExists(path);
             }
         }
@@ -180,6 +178,5 @@ class StartupConfigTrackerTest {
                 """.formatted(MOD_ID, file);
     }
 
-    private record SpecFixture(ModConfigSpec spec, ModConfigSpec.BooleanValue enabled) {
-    }
+    private record SpecFixture(ModConfigSpec spec, ModConfigSpec.BooleanValue enabled) {}
 }

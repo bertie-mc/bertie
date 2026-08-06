@@ -1,8 +1,5 @@
 package io.github.bertie_mc.primitiverefined.network;
 
-import java.util.function.Consumer;
-
-import io.github.bertie_mc.primitiverefined.PrKinetics;
 import com.refinedmods.refinedstorage.api.network.Network;
 import com.refinedmods.refinedstorage.api.network.impl.node.AbstractNetworkNode;
 import com.refinedmods.refinedstorage.api.network.node.GraphNetworkComponent;
@@ -11,9 +8,9 @@ import com.refinedmods.refinedstorage.common.api.RefinedStorageApi;
 import com.refinedmods.refinedstorage.common.api.support.network.NetworkNodeContainerProvider;
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-
+import io.github.bertie_mc.primitiverefined.PrKinetics;
+import java.util.function.Consumer;
 import javax.annotation.Nullable;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
@@ -73,8 +70,7 @@ public class PrNetworkNodeContainer {
     @Nullable
     private Consumer<Boolean> activenessListener;
 
-    public PrNetworkNodeContainer(KineticBlockEntity blockEntity, AbstractNetworkNode mainNetworkNode,
-                                  String name) {
+    public PrNetworkNodeContainer(KineticBlockEntity blockEntity, AbstractNetworkNode mainNetworkNode, String name) {
         this(blockEntity, mainNetworkNode, name, 0);
     }
 
@@ -84,8 +80,8 @@ public class PrNetworkNodeContainer {
      *                 an open grid seeds the network it ends up on rather than being handed
      *                 whichever one a cable happened to form first.
      */
-    public PrNetworkNodeContainer(KineticBlockEntity blockEntity, AbstractNetworkNode mainNetworkNode,
-                                  String name, int priority) {
+    public PrNetworkNodeContainer(
+            KineticBlockEntity blockEntity, AbstractNetworkNode mainNetworkNode, String name, int priority) {
         this.blockEntity = blockEntity;
         this.mainNetworkNode = mainNetworkNode;
         this.containers = RefinedStorageApi.INSTANCE.createNetworkNodeContainerProvider();
@@ -131,7 +127,7 @@ public class PrNetworkNodeContainer {
         if (level == null || level.isClientSide) {
             return;
         }
-        containers.initialize(level, () -> { });
+        containers.initialize(level, () -> {});
         joined = true;
         // Deliberately not currentConnections(level). This runs while the chunk's block
         // entities are still being created, and asking the level for a neighbour's block
@@ -194,7 +190,8 @@ public class PrNetworkNodeContainer {
         if (mainNetworkNode.isActive() != newActive) {
             activenessChanged(newActive);
         }
-        if (activenessProperty != null && state.hasProperty(activenessProperty)
+        if (activenessProperty != null
+                && state.hasProperty(activenessProperty)
                 && state.getValue(activenessProperty) != newActive) {
             updateActivenessBlockState(state, activenessProperty, newActive);
         }
@@ -212,12 +209,11 @@ public class PrNetworkNodeContainer {
      * state without tearing down and rebuilding the kinetic network the block is part of,
      * which setting the block outright would do once a second, forever.
      */
-    private void updateActivenessBlockState(BlockState state, BooleanProperty activenessProperty,
-                                            boolean active) {
+    private void updateActivenessBlockState(BlockState state, BooleanProperty activenessProperty, boolean active) {
         Level level = blockEntity.getLevel();
         if (level != null) {
-            KineticBlockEntity.switchToBlockState(level, blockEntity.getBlockPos(),
-                    state.setValue(activenessProperty, active));
+            KineticBlockEntity.switchToBlockState(
+                    level, blockEntity.getBlockPos(), state.setValue(activenessProperty, active));
         }
     }
 
@@ -233,9 +229,7 @@ public class PrNetworkNodeContainer {
      * arbitrarily.
      */
     public boolean calculateActive() {
-        return blockEntity.getSpeed() != 0
-                && !blockEntity.isOverStressed()
-                && hasExactlyOneController();
+        return blockEntity.getSpeed() != 0 && !blockEntity.isOverStressed() && hasExactlyOneController();
     }
 
     public boolean hasExactlyOneController() {

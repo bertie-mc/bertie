@@ -13,10 +13,7 @@ public abstract class AbstractConfig<C extends AbstractConfig<C>> {
     private JsonObject root;
     private int saveCount;
 
-    protected AbstractConfig(
-            Version.ModVersionProvider versionProvider,
-            String namespace,
-            String category) {
+    protected AbstractConfig(Version.ModVersionProvider versionProvider, String namespace, String category) {
         location = versionProvider.mk(category);
     }
 

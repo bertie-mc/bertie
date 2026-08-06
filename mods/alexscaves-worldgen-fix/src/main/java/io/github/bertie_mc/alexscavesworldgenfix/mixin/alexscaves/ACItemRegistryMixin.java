@@ -2,11 +2,9 @@ package io.github.bertie_mc.alexscavesworldgenfix.mixin.alexscaves;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
@@ -36,11 +34,12 @@ public abstract class ACItemRegistryMixin {
 
     @WrapOperation(
             method = "getSpawnEggFor",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/neoforge/common/DeferredSpawnEggItem;"
-                            + "getType(Lnet/minecraft/world/item/ItemStack;)"
-                            + "Lnet/minecraft/world/entity/EntityType;"),
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target = "Lnet/neoforged/neoforge/common/DeferredSpawnEggItem;"
+                                    + "getType(Lnet/minecraft/world/item/ItemStack;)"
+                                    + "Lnet/minecraft/world/entity/EntityType;"),
             remap = false)
     private static EntityType<?> alexscavesworldgenfix$identifyEggWithARealStack(
             DeferredSpawnEggItem egg, ItemStack stack, Operation<EntityType<?>> original) {

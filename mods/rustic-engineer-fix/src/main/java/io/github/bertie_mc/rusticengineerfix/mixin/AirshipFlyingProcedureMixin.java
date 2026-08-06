@@ -20,9 +20,9 @@ public class AirshipFlyingProcedureMixin {
     @Inject(
             method = "execute(Lnet/minecraft/world/level/LevelAccessor;DDDLnet/minecraft/world/entity/Entity;)V",
             at = @At("HEAD"),
-            remap = false
-    )
-    private static void rusticengineerfix$captureYaw(LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
+            remap = false)
+    private static void rusticengineerfix$captureYaw(
+            LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
         if (entity != null) {
             rusticengineerfix$prevYaw.set(entity.getYRot());
         } else {
@@ -33,9 +33,9 @@ public class AirshipFlyingProcedureMixin {
     @Inject(
             method = "execute(Lnet/minecraft/world/level/LevelAccessor;DDDLnet/minecraft/world/entity/Entity;)V",
             at = @At("RETURN"),
-            remap = false
-    )
-    private static void rusticengineerfix$restoreOldYaw(LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
+            remap = false)
+    private static void rusticengineerfix$restoreOldYaw(
+            LevelAccessor world, double x, double y, double z, Entity entity, CallbackInfo ci) {
         Float previousYaw = rusticengineerfix$prevYaw.get();
         rusticengineerfix$prevYaw.remove();
         if (entity == null || previousYaw == null) {

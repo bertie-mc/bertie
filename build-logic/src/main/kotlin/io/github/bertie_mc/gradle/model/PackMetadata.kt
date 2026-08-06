@@ -17,9 +17,11 @@ data class PackMetadata(
 ) {
     companion object {
         fun parse(contents: String): PackMetadata {
-            val properties = Properties().apply {
-                StringReader(contents).use(::load)
-            }
+            val properties =
+                Properties().apply {
+                    StringReader(contents).use(::load)
+                }
+
             fun required(name: String): String =
                 properties.getProperty(name)?.takeIf(String::isNotBlank)
                     ?: error("Required pack property '$name' is missing")

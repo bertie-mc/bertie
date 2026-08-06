@@ -10,9 +10,7 @@ public final class TomlArray extends AbstractList<TomlElement> implements TomlEl
     private final List<List<Annotation>> annotations;
 
     @SuppressWarnings("unchecked")
-    public TomlArray(
-            List<? extends TomlElement> content,
-            List<? extends List<? extends Annotation>> annotations) {
+    public TomlArray(List<? extends TomlElement> content, List<? extends List<? extends Annotation>> annotations) {
         this.content = new ArrayList<>(content);
         this.annotations = (List<List<Annotation>>) (List<?>) annotations;
     }

@@ -1,21 +1,19 @@
 package io.github.bertie_mc.hephaestusarchitecture.structure;
 
-import io.github.bertie_mc.hephaestusarchitecture.mixin.HephaestusForgeBlockEntityAccessor;
 import com.stal111.forbidden_arcanus.common.block.HephaestusForgeBlock;
 import com.stal111.forbidden_arcanus.common.block.entity.PedestalBlockEntity;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ForgeDataCache;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.HephaestusForgeBlockEntity;
+import io.github.bertie_mc.hephaestusarchitecture.mixin.HephaestusForgeBlockEntityAccessor;
+import java.util.List;
+import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.List;
-import java.util.Optional;
-
 public final class PedestalRouter {
 
-    private PedestalRouter() {
-    }
+    private PedestalRouter() {}
 
     /**
      * Routes a pedestal update only when that pedestal occupies an input marker in
@@ -25,10 +23,8 @@ public final class PedestalRouter {
         findForge(level, pedestalPos).ifPresent(forge -> forge.updatePedestalStack(pedestalPos, stack));
     }
 
-    public static void rebuild(ServerLevel level,
-                               BlockPos forgePos,
-                               HephaestusForgeBlockEntity forge,
-                               ForgeLayout.Match match) {
+    public static void rebuild(
+            ServerLevel level, BlockPos forgePos, HephaestusForgeBlockEntity forge, ForgeLayout.Match match) {
         HephaestusForgeBlockEntityAccessor accessor = (HephaestusForgeBlockEntityAccessor) forge;
         ForgeDataCache cache = accessor.hephaestusarchitecture$getDataCache();
         cache.cachedIngredients().clear();
@@ -49,8 +45,7 @@ public final class PedestalRouter {
     }
 
     private static Optional<HephaestusForgeBlockEntity> findForge(ServerLevel level, BlockPos pedestalPos) {
-        record Candidate(HephaestusForgeBlockEntity forge, double distance) {
-        }
+        record Candidate(HephaestusForgeBlockEntity forge, double distance) {}
 
         java.util.ArrayList<Candidate> candidates = new java.util.ArrayList<>();
 

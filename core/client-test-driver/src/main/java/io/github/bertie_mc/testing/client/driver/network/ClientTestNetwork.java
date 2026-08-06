@@ -15,16 +15,14 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 /** Implements bidirectional packet barriers for client/server synchronization. */
 public final class ClientTestNetwork {
     private static final AtomicLong NEXT_BARRIER = new AtomicLong();
-    private static final ConcurrentMap<Long, CompletableFuture<Void>> BARRIERS =
-            new ConcurrentHashMap<>();
+    private static final ConcurrentMap<Long, CompletableFuture<Void>> BARRIERS = new ConcurrentHashMap<>();
 
     private ClientTestNetwork() {}
 
     public static void register(RegisterPayloadHandlersEvent event) {
-        event.registrar("1").playBidirectional(
-                SyncPayload.TYPE,
-                SyncPayload.STREAM_CODEC,
-                (payload, context) -> complete(payload.id()));
+        event.registrar("1")
+                .playBidirectional(
+                        SyncPayload.TYPE, SyncPayload.STREAM_CODEC, (payload, context) -> complete(payload.id()));
     }
 
     public static Barrier newBarrier() {
@@ -50,8 +48,8 @@ public final class ClientTestNetwork {
 
     /** Sequence-tagged payload used in both directions by packet barriers. */
     public record SyncPayload(long id) implements CustomPacketPayload {
-        private static final Type<SyncPayload> TYPE = new Type<>(
-                ResourceLocation.fromNamespaceAndPath(ClientTestDriver.MOD_ID, "packet_barrier"));
+        private static final Type<SyncPayload> TYPE =
+                new Type<>(ResourceLocation.fromNamespaceAndPath(ClientTestDriver.MOD_ID, "packet_barrier"));
         private static final StreamCodec<RegistryFriendlyByteBuf, SyncPayload> STREAM_CODEC =
                 StreamCodec.composite(ByteBufCodecs.VAR_LONG, SyncPayload::id, SyncPayload::new);
 

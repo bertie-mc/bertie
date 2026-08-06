@@ -80,13 +80,14 @@ abstract class GeneratePackwizPack : DefaultTask() {
                 "Pack artifact id '${artifact.id}' is unsafe"
             }
         }
-        val duplicateMetafilePaths = artifacts.groupingBy { artifact ->
-            "${artifact.destination}/${artifact.id}.pw.toml"
-        }
-            .eachCount()
-            .filterValues { count -> count > 1 }
-            .keys
-            .sorted()
+        val duplicateMetafilePaths =
+            artifacts
+                .groupingBy { artifact ->
+                    "${artifact.destination}/${artifact.id}.pw.toml"
+                }.eachCount()
+                .filterValues { count -> count > 1 }
+                .keys
+                .sorted()
         require(duplicateMetafilePaths.isEmpty()) {
             "Pack artifact metafile paths collide: ${duplicateMetafilePaths.joinToString()}"
         }
@@ -95,57 +96,63 @@ abstract class GeneratePackwizPack : DefaultTask() {
             write(path, metafile(artifact))
         }
 
-        val indexedFiles = Files.walk(output).use { paths ->
-            paths.filter(Files::isRegularFile)
-                .filter { it.fileName.toString() !in setOf("index.toml", "pack.toml") }
-                .map { output.relativize(it) }
-                .sorted(compareBy(Path::toString))
-                .toList()
-        }
-        val index = buildString {
-            hashSection("sha256")
-            indexedFiles.forEach { relative ->
-                append("\n[[files]]\n")
-                append("file = ").append(toml(relative.toString().replace(File.separatorChar, '/'))).append('\n')
-                append("hash = ").append(toml(hash(output.resolve(relative), "SHA-256"))).append('\n')
-                if (relative.fileName.toString().endsWith(".pw.toml")) {
-                    append("metafile = true\n")
+        val indexedFiles =
+            Files.walk(output).use { paths ->
+                paths
+                    .filter(Files::isRegularFile)
+                    .filter { it.fileName.toString() !in setOf("index.toml", "pack.toml") }
+                    .map { output.relativize(it) }
+                    .sorted(compareBy(Path::toString))
+                    .toList()
+            }
+        val index =
+            buildString {
+                hashSection("sha256")
+                indexedFiles.forEach { relative ->
+                    append("\n[[files]]\n")
+                    append("file = ").append(toml(relative.toString().replace(File.separatorChar, '/'))).append('\n')
+                    append("hash = ").append(toml(hash(output.resolve(relative), "SHA-256"))).append('\n')
+                    if (relative.fileName.toString().endsWith(".pw.toml")) {
+                        append("metafile = true\n")
+                    }
                 }
             }
-        }
         val indexFile = output.resolve("index.toml")
         write(indexFile, index)
 
-        val identity = PackMetadata.parse(
-            Files.readString(packProperties.get().asFile.toPath(), StandardCharsets.UTF_8),
-        )
-        val pack = buildString {
-            append("name = ").append(toml(identity.name)).append('\n')
-            append("author = ").append(toml(identity.author)).append('\n')
-            append("version = ").append(toml(identity.version)).append('\n')
-            append("description = ").append(toml(identity.description)).append('\n')
-            append("pack-format = \"packwiz:1.1.0\"\n")
-            append("\n[index]\n")
-            append("file = \"index.toml\"\n")
-            append("hash-format = \"sha256\"\n")
-            append("hash = ").append(toml(hash(indexFile, "SHA-256"))).append('\n')
-            append("\n[versions]\n")
-            append("minecraft = ").append(toml(minecraftVersion.get())).append('\n')
-            append("neoforge = ").append(toml(neoForgeVersion.get())).append('\n')
-        }
+        val identity =
+            PackMetadata.parse(
+                Files.readString(packProperties.get().asFile.toPath(), StandardCharsets.UTF_8),
+            )
+        val pack =
+            buildString {
+                append("name = ").append(toml(identity.name)).append('\n')
+                append("author = ").append(toml(identity.author)).append('\n')
+                append("version = ").append(toml(identity.version)).append('\n')
+                append("description = ").append(toml(identity.description)).append('\n')
+                append("pack-format = \"packwiz:1.1.0\"\n")
+                append("\n[index]\n")
+                append("file = \"index.toml\"\n")
+                append("hash-format = \"sha256\"\n")
+                append("hash = ").append(toml(hash(indexFile, "SHA-256"))).append('\n')
+                append("\n[versions]\n")
+                append("minecraft = ").append(toml(minecraftVersion.get())).append('\n')
+                append("neoforge = ").append(toml(neoForgeVersion.get())).append('\n')
+            }
         write(output.resolve("pack.toml"), pack)
     }
 
-    private fun metafile(artifact: PackwizArtifact): String = buildString {
-        append("name = ").append(toml(artifact.displayName)).append('\n')
-        append("filename = ").append(toml(artifact.installedName)).append('\n')
-        append("side = ").append(toml(artifact.side.value)).append('\n')
-        append("\n[download]\n")
-        when (artifact.provider) {
-            PackwizProvider.CURSEFORGE -> appendCurseForge(artifact)
-            PackwizProvider.MODRINTH -> appendModrinth(artifact)
+    private fun metafile(artifact: PackwizArtifact): String =
+        buildString {
+            append("name = ").append(toml(artifact.displayName)).append('\n')
+            append("filename = ").append(toml(artifact.installedName)).append('\n')
+            append("side = ").append(toml(artifact.side.value)).append('\n')
+            append("\n[download]\n")
+            when (artifact.provider) {
+                PackwizProvider.CURSEFORGE -> appendCurseForge(artifact)
+                PackwizProvider.MODRINTH -> appendModrinth(artifact)
+            }
         }
-    }
 
     private fun StringBuilder.appendCurseForge(artifact: PackwizArtifact) {
         append("hash-format = \"sha1\"\n")
@@ -158,8 +165,9 @@ abstract class GeneratePackwizPack : DefaultTask() {
     }
 
     private fun StringBuilder.appendModrinth(artifact: PackwizArtifact) {
-        val url = "$MODRINTH_CDN_BASE_URL/${urlPath(artifact.projectId)}/versions/" +
-            "${urlPath(artifact.versionId)}/${urlPath(artifact.installedName)}"
+        val url =
+            "$MODRINTH_CDN_BASE_URL/${urlPath(artifact.projectId)}/versions/" +
+                "${urlPath(artifact.versionId)}/${urlPath(artifact.installedName)}"
         append("url = ").append(toml(url)).append('\n')
         append("hash-format = \"sha512\"\n")
         append("hash = ").append(toml(hash(artifact.file.toPath(), "SHA-512"))).append('\n')
@@ -174,12 +182,18 @@ abstract class GeneratePackwizPack : DefaultTask() {
     }
 }
 
-private fun write(path: Path, contents: String) {
+private fun write(
+    path: Path,
+    contents: String,
+) {
     Files.createDirectories(path.parent)
     Files.writeString(path, contents, StandardCharsets.UTF_8)
 }
 
-private fun hash(path: Path, algorithm: String): String {
+private fun hash(
+    path: Path,
+    algorithm: String,
+): String {
     val digest = MessageDigest.getInstance(algorithm)
     Files.newInputStream(path).buffered().use { input ->
         val buffer = ByteArray(DEFAULT_BUFFER_SIZE)
@@ -192,22 +206,22 @@ private fun hash(path: Path, algorithm: String): String {
     return digest.digest().joinToString("") { byte -> "%02x".format(byte) }
 }
 
-private fun toml(value: String): String = buildString {
-    append('"')
-    value.forEach { character ->
-        append(
-            when (character) {
-                '\\' -> "\\\\"
-                '"' -> "\\\""
-                '\n' -> "\\n"
-                '\r' -> "\\r"
-                '\t' -> "\\t"
-                else -> character
-            },
-        )
+private fun toml(value: String): String =
+    buildString {
+        append('"')
+        value.forEach { character ->
+            append(
+                when (character) {
+                    '\\' -> "\\\\"
+                    '"' -> "\\\""
+                    '\n' -> "\\n"
+                    '\r' -> "\\r"
+                    '\t' -> "\\t"
+                    else -> character
+                },
+            )
+        }
+        append('"')
     }
-    append('"')
-}
 
-private fun urlPath(value: String): String =
-    URLEncoder.encode(value, StandardCharsets.UTF_8).replace("+", "%20")
+private fun urlPath(value: String): String = URLEncoder.encode(value, StandardCharsets.UTF_8).replace("+", "%20")

@@ -22,21 +22,22 @@ internal fun Project.packagingClasspath(
     name: String,
     selectedArtifacts: Provider<List<MinecraftArtifact>>,
 ): Provider<out Configuration> {
-    val bucket = configurations.dependencyScope(name.removeSuffix("Artifacts")) {
-        description = "Packwiz provider artifacts selected from the Minecraft manifest"
-        useDirectArtifactsOnly()
-        defaultDependencies {
-            selectedArtifacts.get().forEach { artifact ->
-                val source = artifact.packwizSource
-                val extension = artifact.kind.extension.takeUnless { it == "jar" }
-                add(
-                    this@packagingClasspath.dependencies.create(
-                        source.notation(extension),
-                    ),
-                )
+    val bucket =
+        configurations.dependencyScope(name.removeSuffix("Artifacts")) {
+            description = "Packwiz provider artifacts selected from the Minecraft manifest"
+            useDirectArtifactsOnly()
+            defaultDependencies {
+                selectedArtifacts.get().forEach { artifact ->
+                    val source = artifact.packwizSource
+                    val extension = artifact.kind.extension.takeUnless { it == "jar" }
+                    add(
+                        this@packagingClasspath.dependencies.create(
+                            source.notation(extension),
+                        ),
+                    )
+                }
             }
         }
-    }
     return configurations.resolvable(name) {
         description = "Resolved artifacts from ${bucket.get().name}"
         extendsFrom(bucket.get())
@@ -58,45 +59,55 @@ internal fun Configuration.externalPackwizArtifacts(
     selectedArtifacts.zip(incoming.artifacts.resolvedArtifacts) { artifacts, resolvedArtifacts ->
         val byCoordinate = artifacts.associateBy { artifact -> artifact.packwizSource.coordinate() }
         resolvedArtifacts.map { resolved ->
-            val component = resolved.id.componentIdentifier as? ModuleComponentIdentifier
-                ?: error("Packaging configuration resolved a non-module artifact: ${resolved.id}")
-            val artifact = byCoordinate[component.coordinate()]
-                ?: error("Resolved undeclared packaging artifact: $component")
+            val component =
+                resolved.id.componentIdentifier as? ModuleComponentIdentifier
+                    ?: error("Packaging configuration resolved a non-module artifact: ${resolved.id}")
+            val artifact =
+                byCoordinate[component.coordinate()]
+                    ?: error("Resolved undeclared packaging artifact: $component")
             when (val source = artifact.packwizSource) {
-                is ModrinthArtifactSource -> PackwizArtifact(
-                    id = artifact.id,
-                    displayName = artifact.id.replace('-', ' '),
-                    installedName = source.filename,
-                    destination = artifact.kind.destination,
-                    side = artifact.side,
-                    provider = PackwizProvider.MODRINTH,
-                    projectId = source.projectId,
-                    versionId = source.versionId,
-                    file = resolved.file,
-                )
+                is ModrinthArtifactSource -> {
+                    PackwizArtifact(
+                        id = artifact.id,
+                        displayName = artifact.id.replace('-', ' '),
+                        installedName = source.filename,
+                        destination = artifact.kind.destination,
+                        side = artifact.side,
+                        provider = PackwizProvider.MODRINTH,
+                        projectId = source.projectId,
+                        versionId = source.versionId,
+                        file = resolved.file,
+                    )
+                }
 
-                is CurseForgeArtifactSource -> PackwizArtifact(
-                    id = artifact.id,
-                    displayName = artifact.id.replace('-', ' '),
-                    installedName = "${artifact.id}.${resolved.file.extension}",
-                    destination = artifact.kind.destination,
-                    side = artifact.side,
-                    provider = PackwizProvider.CURSEFORGE,
-                    projectId = source.projectId.toString(),
-                    versionId = source.fileId.toString(),
-                    file = resolved.file,
-                )
+                is CurseForgeArtifactSource -> {
+                    PackwizArtifact(
+                        id = artifact.id,
+                        displayName = artifact.id.replace('-', ' '),
+                        installedName = "${artifact.id}.${resolved.file.extension}",
+                        destination = artifact.kind.destination,
+                        side = artifact.side,
+                        provider = PackwizProvider.CURSEFORGE,
+                        projectId = source.projectId.toString(),
+                        versionId = source.fileId.toString(),
+                        file = resolved.file,
+                    )
+                }
 
-                is MavenArtifactSource -> error(
-                    "Packwiz cannot package Maven-only artifact '${artifact.id}'",
-                )
+                is MavenArtifactSource -> {
+                    error(
+                        "Packwiz cannot package Maven-only artifact '${artifact.id}'",
+                    )
+                }
             }
         }
     }
 
-internal fun Configuration.ownedPackFiles(): FileCollection = incoming.artifactView {
-    componentFilter { identifier -> identifier is org.gradle.api.artifacts.component.ProjectComponentIdentifier }
-}.files
+internal fun Configuration.ownedPackFiles(): FileCollection =
+    incoming
+        .artifactView {
+            componentFilter { identifier -> identifier is org.gradle.api.artifacts.component.ProjectComponentIdentifier }
+        }.files
 
 private fun MinecraftArtifactSource.coordinate(): String = "$group:$module:$version"
 

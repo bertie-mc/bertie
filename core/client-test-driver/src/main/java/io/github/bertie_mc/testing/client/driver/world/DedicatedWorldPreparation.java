@@ -33,7 +33,8 @@ public final class DedicatedWorldPreparation {
             return false;
         }
 
-        Path levelPath = storage.getLevelPath(LevelResource.ROOT).toAbsolutePath().normalize();
+        Path levelPath =
+                storage.getLevelPath(LevelResource.ROOT).toAbsolutePath().normalize();
         Path universe = storage.parent().getBaseDir().toAbsolutePath().normalize();
         String levelName = storage.getLevelId();
         try {

@@ -23,16 +23,14 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
  */
 public final class PedestalFormationHandler {
 
-    private static final ResourceLocation MUNDABITUR =
-            ResourceLocation.parse("forbidden_arcanus:mundabitur_dust");
+    private static final ResourceLocation MUNDABITUR = ResourceLocation.parse("forbidden_arcanus:mundabitur_dust");
     private static final ResourceLocation PILLAR =
             ResourceLocation.parse("forbidden_arcanus:arcane_polished_darkstone_pillar");
     private static final ResourceLocation WALL =
             ResourceLocation.parse("forbidden_arcanus:arcane_polished_darkstone_wall");
     private static final ResourceLocation SLAB =
             ResourceLocation.parse("forbidden_arcanus:arcane_polished_darkstone_slab");
-    private static final ResourceLocation PEDESTAL =
-            ResourceLocation.parse("forbidden_arcanus:darkstone_pedestal");
+    private static final ResourceLocation PEDESTAL = ResourceLocation.parse("forbidden_arcanus:darkstone_pedestal");
 
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {

@@ -13,8 +13,7 @@ public final class TomlTable extends AbstractMap<String, TomlElement> implements
 
     @SuppressWarnings("unchecked")
     public TomlTable(
-            Map<String, ? extends TomlElement> content,
-            Map<String, ? extends List<? extends Annotation>> annotations) {
+            Map<String, ? extends TomlElement> content, Map<String, ? extends List<? extends Annotation>> annotations) {
         this.content = new LinkedHashMap<>(content);
         this.annotations = (Map<String, List<Annotation>>) (Map<?, ?>) annotations;
     }

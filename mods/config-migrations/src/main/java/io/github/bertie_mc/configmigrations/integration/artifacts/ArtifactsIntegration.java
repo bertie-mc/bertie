@@ -55,6 +55,5 @@ public final class ArtifactsIntegration {
         migration.commit();
     }
 
-    private record Target(String config, MigrationManifest manifest) {
-    }
+    private record Target(String config, MigrationManifest manifest) {}
 }

@@ -1,13 +1,11 @@
 package io.github.bertie_mc.primitiverefined.content.cogwheel;
 
+import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
+import io.github.bertie_mc.primitiverefined.PrRegistry;
+import io.github.bertie_mc.primitiverefined.network.ArcaneticRelayBlockEntity;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import io.github.bertie_mc.primitiverefined.PrRegistry;
-import io.github.bertie_mc.primitiverefined.network.ArcaneticRelayBlockEntity;
-import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
-
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -20,8 +18,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 /** Registers the configured arcanetic cogwheel variants and their Flywheel block entities. */
 public final class PrCogwheels {
 
-    private PrCogwheels() {
-    }
+    private PrCogwheels() {}
 
     /** Registration ids, which are also the model and texture names. */
     public static final List<String> NAMES = List.of("obsidiansteel_cogwheel_soulstained");
@@ -34,16 +31,20 @@ public final class PrCogwheels {
      * against the clicked face, as if it were not a cogwheel at all.
      */
     public static final Map<String, DeferredItem<CogwheelBlockItem>> ITEMS = new LinkedHashMap<>();
+
     public static final Map<String, DeferredHolder<BlockEntityType<?>, BlockEntityType<ArcaneticRelayBlockEntity>>>
             BLOCK_ENTITIES = new LinkedHashMap<>();
 
     private static BlockBehaviour.Properties properties(String name) {
         return BlockBehaviour.Properties.of()
-                .mapColor(name.startsWith("obsidiansteel") ? MapColor.COLOR_BLACK
-                        : name.startsWith("rose_gold") ? MapColor.COLOR_PINK
-                        : MapColor.PODZOL)
-                .sound(name.equals("cogwheel") || name.equals("cogwheel_soulstained")
-                        ? SoundType.WOOD : SoundType.METAL)
+                .mapColor(
+                        name.startsWith("obsidiansteel")
+                                ? MapColor.COLOR_BLACK
+                                : name.startsWith("rose_gold") ? MapColor.COLOR_PINK : MapColor.PODZOL)
+                .sound(
+                        name.equals("cogwheel") || name.equals("cogwheel_soulstained")
+                                ? SoundType.WOOD
+                                : SoundType.METAL)
                 .strength(0.5F)
                 .noOcclusion();
     }
@@ -52,23 +53,31 @@ public final class PrCogwheels {
         for (String name : NAMES) {
             // Registered before the block so the block's supplier can close over it; both
             // resolve lazily, so the mutual reference is fine.
-            BLOCK_ENTITIES.put(name, PrRegistry.BLOCK_ENTITIES.register(name,
-                    () -> BlockEntityType.Builder
-                            .of((pos, state) -> new ArcaneticRelayBlockEntity(
-                                            BLOCK_ENTITIES.get(name).get(), pos, state),
-                                    BLOCKS.get(name).get())
-                            .build(null)));
+            BLOCK_ENTITIES.put(
+                    name,
+                    PrRegistry.BLOCK_ENTITIES.register(
+                            name,
+                            () -> BlockEntityType.Builder.of(
+                                            (pos, state) -> new ArcaneticRelayBlockEntity(
+                                                    BLOCK_ENTITIES.get(name).get(), pos, state),
+                                            BLOCKS.get(name).get())
+                                    .build(null)));
 
-            BLOCKS.put(name, PrRegistry.BLOCKS.register(name,
-                    () -> new PrCogWheelBlock(properties(name),
-                            () -> BLOCK_ENTITIES.get(name).get())));
+            BLOCKS.put(
+                    name,
+                    PrRegistry.BLOCKS.register(
+                            name,
+                            () -> new PrCogWheelBlock(
+                                    properties(name),
+                                    () -> BLOCK_ENTITIES.get(name).get())));
 
-            ITEMS.put(name, PrRegistry.ITEMS.register(name,
-                    () -> new CogwheelBlockItem(BLOCKS.get(name).get(), new Item.Properties())));
+            ITEMS.put(
+                    name,
+                    PrRegistry.ITEMS.register(
+                            name, () -> new CogwheelBlockItem(BLOCKS.get(name).get(), new Item.Properties())));
         }
     }
 
     /** Touching this class runs the static block above. Called from {@link PrRegistry}. */
-    public static void init() {
-    }
+    public static void init() {}
 }

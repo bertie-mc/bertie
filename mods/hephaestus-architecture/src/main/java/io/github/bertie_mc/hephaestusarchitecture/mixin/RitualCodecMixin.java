@@ -1,9 +1,9 @@
 package io.github.bertie_mc.hephaestusarchitecture.mixin;
 
-import io.github.bertie_mc.hephaestusarchitecture.ritual.ExpandedRitualCodecs;
 import com.mojang.serialization.Codec;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.Ritual;
 import com.stal111.forbidden_arcanus.core.registry.FARegistries;
+import io.github.bertie_mc.hephaestusarchitecture.ritual.ExpandedRitualCodecs;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.RegistryFileCodec;
 import org.spongepowered.asm.mixin.Final;

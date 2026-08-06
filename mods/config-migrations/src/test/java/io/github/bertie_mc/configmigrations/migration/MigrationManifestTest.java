@@ -43,12 +43,14 @@ class MigrationManifestTest {
         assertEquals("create", manifest.text("mod"));
         assertEquals(1, manifest.changes().size());
         assertEquals(2, manifest.changes().getFirst().version());
-        assertEquals(
-                false,
-                manifest.changes().getFirst().fragment().get("recipes.allowRegularCraftingInCrafter"));
+        assertEquals(false, manifest.changes().getFirst().fragment().get("recipes.allowRegularCraftingInCrafter"));
         assertEquals(
                 256,
-                manifest.changes().getFirst().fragment().<Number>get("recipes.maxRotationSpeed").intValue());
+                manifest.changes()
+                        .getFirst()
+                        .fragment()
+                        .<Number>get("recipes.maxRotationSpeed")
+                        .intValue());
     }
 
     @Test

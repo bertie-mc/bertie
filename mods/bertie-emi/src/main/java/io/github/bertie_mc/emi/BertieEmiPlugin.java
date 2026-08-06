@@ -1,5 +1,8 @@
 package io.github.bertie_mc.emi;
 
+import dev.emi.emi.api.EmiEntrypoint;
+import dev.emi.emi.api.EmiPlugin;
+import dev.emi.emi.api.EmiRegistry;
 import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
 import io.github.bertie_mc.emi.integration.avaritiadelight.AvaritiaDelightEmiModule;
 import io.github.bertie_mc.emi.integration.berriescherries.BerriesAndCherriesEmiModule;
@@ -23,9 +26,6 @@ import io.github.bertie_mc.emi.integration.stellaris.StellarisEmiModule;
 import io.github.bertie_mc.emi.integration.terracurio.TerraCurioEmiModule;
 import io.github.bertie_mc.emi.integration.twilightdelight.TwilightDelightEmiModule;
 import io.github.bertie_mc.emi.integration.youkaisfeasts.YoukaisFeastsEmiModule;
-import dev.emi.emi.api.EmiEntrypoint;
-import dev.emi.emi.api.EmiPlugin;
-import dev.emi.emi.api.EmiRegistry;
 import net.neoforged.fml.ModList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -3,13 +3,13 @@ package io.github.bertie_mc.bertieprogression.forge;
 import io.github.bertie_mc.bertieprogression.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -65,9 +65,13 @@ public final class ForgeBedHandler {
         // --- R02A: paper press — strike water-adjacent block with 3 Sugar Cane, 2 Wood Slates carried ---
         if (primary.is(net.minecraft.world.item.Items.SUGAR_CANE)
                 && (touchesWater(level, pos) || level.getFluidState(pos).is(FluidTags.WATER))) {
-            if (primary.getCount() < 3) { hint(player, level, "message.bertieprogression.paper_need_cane"); return; }
+            if (primary.getCount() < 3) {
+                hint(player, level, "message.bertieprogression.paper_need_cane");
+                return;
+            }
             if (countItem(player, "berlordscarving:wood_slate") < 2) {
-                hint(player, level, "message.bertieprogression.paper_need_slates"); return;
+                hint(player, level, "message.bertieprogression.paper_need_slates");
+                return;
             }
             event.setCanceled(true);
             if (level.isClientSide) return;
@@ -89,8 +93,7 @@ public final class ForgeBedHandler {
     }
 
     private static boolean isBrickForge(BlockState state) {
-        return BuiltInRegistries.BLOCK.getKey(state.getBlock())
-                .equals(ResourceLocation.parse("slag:brick_forge"));
+        return BuiltInRegistries.BLOCK.getKey(state.getBlock()).equals(ResourceLocation.parse("slag:brick_forge"));
     }
 
     private static boolean touchesWater(Level level, BlockPos pos) {
@@ -100,14 +103,23 @@ public final class ForgeBedHandler {
         return false;
     }
 
-    private static void handleBed(PlayerInteractEvent.RightClickBlock event, Player player,
-                                  Level level, BlockPos pos, ItemStack primary, InteractionHand malletHand) {
+    private static void handleBed(
+            PlayerInteractEvent.RightClickBlock event,
+            Player player,
+            Level level,
+            BlockPos pos,
+            ItemStack primary,
+            InteractionHand malletHand) {
         boolean sneak = player.isShiftKeyDown();
         for (BedRecipes.BedRecipe r : BedRecipes.RECIPES) {
             if (r.sneak() != sneak) continue;
-            if (!r.primary().what().test(primary) || primary.getCount() < r.primary().count()) continue;
-            if (r.secondary() != null && countMatching(player, r.secondary().what()) < r.secondary().count()) continue;
-            if (r.tertiary() != null && countMatching(player, r.tertiary().what()) < r.tertiary().count()) continue;
+            if (!r.primary().what().test(primary)
+                    || primary.getCount() < r.primary().count()) continue;
+            if (r.secondary() != null
+                    && countMatching(player, r.secondary().what())
+                            < r.secondary().count()) continue;
+            if (r.tertiary() != null
+                    && countMatching(player, r.tertiary().what()) < r.tertiary().count()) continue;
 
             Item result = BuiltInRegistries.ITEM.get(ResourceLocation.parse(r.resultId()));
             if (result == net.minecraft.world.item.Items.AIR) return; // target mod absent
@@ -116,13 +128,14 @@ public final class ForgeBedHandler {
             if (level.isClientSide) return;
 
             primary.shrink(r.primary().count());
-            if (r.secondary() != null) consumeMatching(player, r.secondary().what(), r.secondary().count());
-            if (r.tertiary() != null) consumeMatching(player, r.tertiary().what(), r.tertiary().count());
+            if (r.secondary() != null)
+                consumeMatching(player, r.secondary().what(), r.secondary().count());
+            if (r.tertiary() != null)
+                consumeMatching(player, r.tertiary().what(), r.tertiary().count());
             give(player, new ItemStack(result, r.resultCount()));
             if (r.extraReturnId() != null) {
                 Item ret = BuiltInRegistries.ITEM.get(ResourceLocation.parse(r.extraReturnId()));
-                if (ret != net.minecraft.world.item.Items.AIR)
-                    give(player, new ItemStack(ret, r.extraReturnCount()));
+                if (ret != net.minecraft.world.item.Items.AIR) give(player, new ItemStack(ret, r.extraReturnCount()));
             }
             finishStrike(player, level, pos, malletHand);
             return;
@@ -134,8 +147,12 @@ public final class ForgeBedHandler {
      * four stripped logs directly above the corner bricks. Striking any ring brick
      * consumes the build and forms the Brick Forge at the center.
      */
-    private static boolean tryFormBrickForge(PlayerInteractEvent.RightClickBlock event, Player player,
-                                             Level level, BlockPos struck, InteractionHand malletHand) {
+    private static boolean tryFormBrickForge(
+            PlayerInteractEvent.RightClickBlock event,
+            Player player,
+            Level level,
+            BlockPos struck,
+            InteractionHand malletHand) {
         Block forge = BuiltInRegistries.BLOCK.get(ResourceLocation.parse("slag:brick_forge"));
         if (BuiltInRegistries.BLOCK.getKey(forge).getPath().equals("air")) return false;
 
@@ -222,9 +239,12 @@ public final class ForgeBedHandler {
         level.playSound(null, pos, SoundEvents.STONE_HIT, SoundSource.BLOCKS, 0.8f, 1.1f);
         ItemStack mallet = player.getItemInHand(malletHand);
         if (mallet.is(ModItems.OPENING_MALLET.get())) {
-            mallet.hurtAndBreak(1, player, malletHand == InteractionHand.MAIN_HAND
-                    ? net.minecraft.world.entity.EquipmentSlot.MAINHAND
-                    : net.minecraft.world.entity.EquipmentSlot.OFFHAND);
+            mallet.hurtAndBreak(
+                    1,
+                    player,
+                    malletHand == InteractionHand.MAIN_HAND
+                            ? net.minecraft.world.entity.EquipmentSlot.MAINHAND
+                            : net.minecraft.world.entity.EquipmentSlot.OFFHAND);
         }
     }
 

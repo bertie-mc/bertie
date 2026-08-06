@@ -4,6 +4,12 @@ import io.github.bertie_mc.foodsystem.BFS;
 import io.github.bertie_mc.foodsystem.Config;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
 import io.github.bertie_mc.foodsystem.stomach.StomachData;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -15,13 +21,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Food synergy: each tick the categories of the active stomach foods are resolved and ONE
@@ -39,8 +38,14 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class SynergyEngine {
 
     // counting categories (variety distinctness, mono specialization)
-    public static final String MEAT = "meat", FISH = "fish", VEGETABLE = "vegetable", FRUIT = "fruit",
-            GRAIN = "grain", SWEET = "sweet", MEAL = "meal", SPECIAL = "special";
+    public static final String MEAT = "meat",
+            FISH = "fish",
+            VEGETABLE = "vegetable",
+            FRUIT = "fruit",
+            GRAIN = "grain",
+            SWEET = "sweet",
+            MEAL = "meal",
+            SPECIAL = "special";
     // non-counting flag: suppresses variety entirely and breaks any mono diet
     public static final String CURSED = "cursed";
 
@@ -48,6 +53,7 @@ public final class SynergyEngine {
 
     /** added to the food regen sum (lowers ticks-per-heal) — see {@link Stomach#regenFactor} */
     private static final double REGEN_BONUS_3 = 40.0;
+
     private static final double REGEN_BONUS_5 = 80.0;
 
     // ---- convention (c:) item tags, NeoForge 21.1.x singular spelling ----
@@ -110,13 +116,44 @@ public final class SynergyEngine {
     }
 
     private static String heuristic(String path) {
-        if (containsAny(path, "beef", "pork", "chicken", "mutton", "rabbit", "bacon", "steak", "ham", "meat", "venison")) return MEAT;
-        if (containsAny(path, "fish", "cod", "salmon", "tuna", "sushi", "calamari", "shrimp", "crab", "clam")) return FISH;
-        if (containsAny(path, "potato", "carrot", "beet", "cabbage", "tomato", "onion", "lettuce", "corn", "mushroom", "kale", "vegetable")) return VEGETABLE;
-        if (containsAny(path, "apple", "berry", "melon", "grape", "peach", "cherry", "banana", "orange", "mango", "fruit")) return FRUIT;
-        if (containsAny(path, "bread", "wheat", "rice", "dough", "toast", "bun", "bagel", "cracker", "pasta", "noodle")) return GRAIN;
-        if (containsAny(path, "cookie", "cake", "candy", "chocolate", "sugar", "pie", "donut", "pudding", "muffin", "jam", "sweet")) return SWEET;
-        if (containsAny(path, "soup", "stew", "salad", "sandwich", "burger", "pizza", "curry", "_bowl", "meal")) return MEAL;
+        if (containsAny(
+                path, "beef", "pork", "chicken", "mutton", "rabbit", "bacon", "steak", "ham", "meat", "venison"))
+            return MEAT;
+        if (containsAny(path, "fish", "cod", "salmon", "tuna", "sushi", "calamari", "shrimp", "crab", "clam"))
+            return FISH;
+        if (containsAny(
+                path,
+                "potato",
+                "carrot",
+                "beet",
+                "cabbage",
+                "tomato",
+                "onion",
+                "lettuce",
+                "corn",
+                "mushroom",
+                "kale",
+                "vegetable")) return VEGETABLE;
+        if (containsAny(
+                path, "apple", "berry", "melon", "grape", "peach", "cherry", "banana", "orange", "mango", "fruit"))
+            return FRUIT;
+        if (containsAny(path, "bread", "wheat", "rice", "dough", "toast", "bun", "bagel", "cracker", "pasta", "noodle"))
+            return GRAIN;
+        if (containsAny(
+                path,
+                "cookie",
+                "cake",
+                "candy",
+                "chocolate",
+                "sugar",
+                "pie",
+                "donut",
+                "pudding",
+                "muffin",
+                "jam",
+                "sweet")) return SWEET;
+        if (containsAny(path, "soup", "stew", "salad", "sandwich", "burger", "pizza", "curry", "_bowl", "meal"))
+            return MEAL;
         return null;
     }
 
@@ -136,26 +173,68 @@ public final class SynergyEngine {
         if (built) return;
 
         // VARIETY tiers (regen tier 3 is handled in Stomach.regenFactor, not here)
-        VAR4 = buff(null, new BuffsConfig.AttributeDef[]{
-                attr("synergy_variety_health4", "minecraft:generic.max_health", 0.10, Operation.ADD_MULTIPLIED_TOTAL)});
-        VAR5 = buff(new BuffsConfig.EffectDef[]{eff("minecraft:speed", 0)}, new BuffsConfig.AttributeDef[]{
-                attr("synergy_variety_health5", "minecraft:generic.max_health", 0.15, Operation.ADD_MULTIPLIED_TOTAL)});
+        VAR4 = buff(null, new BuffsConfig.AttributeDef[] {
+            attr("synergy_variety_health4", "minecraft:generic.max_health", 0.10, Operation.ADD_MULTIPLIED_TOTAL)
+        });
+        VAR5 = buff(new BuffsConfig.EffectDef[] {eff("minecraft:speed", 0)}, new BuffsConfig.AttributeDef[] {
+            attr("synergy_variety_health5", "minecraft:generic.max_health", 0.15, Operation.ADD_MULTIPLIED_TOTAL)
+        });
 
         // MONO specializations: perk(s) + a negative-attribute downside
-        MONO.put(MEAT, buff(new BuffsConfig.EffectDef[]{eff("minecraft:strength", 0)}, new BuffsConfig.AttributeDef[]{
-                attr("synergy_mono_meat_attack_speed", "minecraft:generic.attack_speed", 0.20, Operation.ADD_MULTIPLIED_TOTAL),
-                attr("synergy_mono_meat_block_break", "minecraft:player.block_break_speed", -0.20, Operation.ADD_MULTIPLIED_TOTAL)}));
-        MONO.put(FISH, buff(new BuffsConfig.EffectDef[]{eff("minecraft:luck", 0), eff("minecraft:water_breathing", 0)},
-                new BuffsConfig.AttributeDef[]{
-                        attr("synergy_mono_fish_speed", "minecraft:generic.movement_speed", -0.10, Operation.ADD_MULTIPLIED_TOTAL)}));
-        MONO.put(VEGETABLE, buff(new BuffsConfig.EffectDef[]{eff("minecraft:haste", 0)}, new BuffsConfig.AttributeDef[]{
-                attr("synergy_mono_veg_step_height", "minecraft:generic.step_height", 1.0, Operation.ADD_VALUE),
-                attr("synergy_mono_veg_attack_damage", "minecraft:generic.attack_damage", -0.20, Operation.ADD_MULTIPLIED_TOTAL)}));
-        MONO.put(FRUIT, buff(new BuffsConfig.EffectDef[]{eff("minecraft:jump_boost", 0)}, new BuffsConfig.AttributeDef[]{
-                attr("synergy_mono_fruit_speed", "minecraft:generic.movement_speed", 0.15, Operation.ADD_MULTIPLIED_TOTAL),
-                attr("synergy_mono_fruit_health", "minecraft:generic.max_health", -0.10, Operation.ADD_MULTIPLIED_TOTAL)}));
-        MONO.put(SWEET, buff(new BuffsConfig.EffectDef[]{eff("minecraft:speed", 0), eff("minecraft:haste", 0),
-                eff("minecraft:weakness", 0)}, null));
+        MONO.put(MEAT, buff(new BuffsConfig.EffectDef[] {eff("minecraft:strength", 0)}, new BuffsConfig.AttributeDef[] {
+            attr(
+                    "synergy_mono_meat_attack_speed",
+                    "minecraft:generic.attack_speed",
+                    0.20,
+                    Operation.ADD_MULTIPLIED_TOTAL),
+            attr(
+                    "synergy_mono_meat_block_break",
+                    "minecraft:player.block_break_speed",
+                    -0.20,
+                    Operation.ADD_MULTIPLIED_TOTAL)
+        }));
+        MONO.put(
+                FISH,
+                buff(
+                        new BuffsConfig.EffectDef[] {eff("minecraft:luck", 0), eff("minecraft:water_breathing", 0)},
+                        new BuffsConfig.AttributeDef[] {
+                            attr(
+                                    "synergy_mono_fish_speed",
+                                    "minecraft:generic.movement_speed",
+                                    -0.10,
+                                    Operation.ADD_MULTIPLIED_TOTAL)
+                        }));
+        MONO.put(
+                VEGETABLE,
+                buff(new BuffsConfig.EffectDef[] {eff("minecraft:haste", 0)}, new BuffsConfig.AttributeDef[] {
+                    attr("synergy_mono_veg_step_height", "minecraft:generic.step_height", 1.0, Operation.ADD_VALUE),
+                    attr(
+                            "synergy_mono_veg_attack_damage",
+                            "minecraft:generic.attack_damage",
+                            -0.20,
+                            Operation.ADD_MULTIPLIED_TOTAL)
+                }));
+        MONO.put(
+                FRUIT,
+                buff(new BuffsConfig.EffectDef[] {eff("minecraft:jump_boost", 0)}, new BuffsConfig.AttributeDef[] {
+                    attr(
+                            "synergy_mono_fruit_speed",
+                            "minecraft:generic.movement_speed",
+                            0.15,
+                            Operation.ADD_MULTIPLIED_TOTAL),
+                    attr(
+                            "synergy_mono_fruit_health",
+                            "minecraft:generic.max_health",
+                            -0.10,
+                            Operation.ADD_MULTIPLIED_TOTAL)
+                }));
+        MONO.put(
+                SWEET,
+                buff(
+                        new BuffsConfig.EffectDef[] {
+                            eff("minecraft:speed", 0), eff("minecraft:haste", 0), eff("minecraft:weakness", 0)
+                        },
+                        null));
 
         built = true;
     }
@@ -169,7 +248,8 @@ public final class SynergyEngine {
 
     private static BuffsConfig.EffectDef eff(String id, int amp) {
         ResourceLocation rl = ResourceLocation.parse(id);
-        Holder<MobEffect> h = BuiltInRegistries.MOB_EFFECT.getHolder(rl)
+        Holder<MobEffect> h = BuiltInRegistries.MOB_EFFECT
+                .getHolder(rl)
                 .orElseThrow(() -> new IllegalStateException("[bfs] synergy effect missing: " + id));
         BuffsConfig.EffectDef def = new BuffsConfig.EffectDef(h, rl, amp);
         ALL_EFFECTS.add(def);
@@ -177,7 +257,8 @@ public final class SynergyEngine {
     }
 
     private static BuffsConfig.AttributeDef attr(String modPath, String attrId, double amount, Operation op) {
-        Holder<Attribute> h = BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse(attrId))
+        Holder<Attribute> h = BuiltInRegistries.ATTRIBUTE
+                .getHolder(ResourceLocation.parse(attrId))
                 .orElseThrow(() -> new IllegalStateException("[bfs] synergy attribute missing: " + attrId));
         ResourceLocation modId = ResourceLocation.fromNamespaceAndPath(BFS.MODID, modPath);
         BuffsConfig.AttributeDef def = new BuffsConfig.AttributeDef(h, new AttributeModifier(modId, amount, op));
@@ -190,8 +271,8 @@ public final class SynergyEngine {
      * {@link BuffEngine}'s stale-sweep removes a tier the moment it stops being desired. Called
      * once per config (re)load. The ~10-line engine touch the whole design hinges on.
      */
-    public static void registerKnown(Map<ResourceLocation, Holder<MobEffect>> knownEffects,
-                                     List<BuffsConfig.AttributeDef> knownModifiers) {
+    public static void registerKnown(
+            Map<ResourceLocation, Holder<MobEffect>> knownEffects, List<BuffsConfig.AttributeDef> knownModifiers) {
         ensureDefs();
         for (BuffsConfig.EffectDef e : ALL_EFFECTS) knownEffects.put(e.effectId(), e.effect());
         knownModifiers.addAll(ALL_ATTRS);

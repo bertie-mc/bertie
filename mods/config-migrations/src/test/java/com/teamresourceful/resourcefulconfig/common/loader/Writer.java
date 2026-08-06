@@ -10,8 +10,7 @@ import java.util.Map;
 
 /** Deterministic stand-in for Resourceful Config's native writer. */
 public final class Writer {
-    private Writer() {
-    }
+    private Writer() {}
 
     public static JsoncObject save(ResourcefulConfig config) {
         StringBuilder output = new StringBuilder();
@@ -35,8 +34,7 @@ public final class Writer {
         output.append('}');
     }
 
-    private static void writeEntries(
-            StringBuilder output, Map<String, ResourcefulConfigEntry> entries) {
+    private static void writeEntries(StringBuilder output, Map<String, ResourcefulConfigEntry> entries) {
         output.append('{');
         boolean first = true;
         for (var entry : entries.entrySet()) {
@@ -46,8 +44,7 @@ public final class Writer {
         output.append('}');
     }
 
-    private static void writeEntry(
-            StringBuilder output, String name, ResourcefulConfigEntry entry) {
+    private static void writeEntry(StringBuilder output, String name, ResourcefulConfigEntry entry) {
         string(output, name);
         output.append(':');
         if (entry instanceof ResourcefulConfigObjectEntry object) {

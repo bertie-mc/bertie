@@ -11,8 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.client.ChunkRenderTypeSet;
 
 public final class ShortCircuitClientTests {
-    private ShortCircuitClientTests() {
-    }
+    private ShortCircuitClientTests() {}
 
     @ClientTest
     public static void registersTranslucentRenderLayers(ClientTestContext context) {
@@ -31,8 +30,7 @@ public final class ShortCircuitClientTests {
         }
         ChunkRenderTypeSet actual = ItemBlockRenderTypes.getRenderLayers(block.defaultBlockState());
         if (!actual.contains(RenderType.translucent()) || actual.asList().size() != 1) {
-            throw new AssertionError(
-                    id + " uses " + actual.asList() + " instead of only the translucent render layer");
+            throw new AssertionError(id + " uses " + actual.asList() + " instead of only the translucent render layer");
         }
     }
 }

@@ -56,9 +56,7 @@ public record TierState(int statTier, int spellTier, Set<String> filledElements)
      * in the tier being worked on, and there is a tier left to complete.
      */
     public boolean canApplyElement(String element, List<String> elements, int maxSpellTier) {
-        return elements.contains(element)
-                && !filledElements.contains(element)
-                && spellTier < maxSpellTier;
+        return elements.contains(element) && !filledElements.contains(element) && spellTier < maxSpellTier;
     }
 
     /**

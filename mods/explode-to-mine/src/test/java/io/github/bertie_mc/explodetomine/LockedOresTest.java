@@ -16,11 +16,12 @@ class LockedOresTest {
     @Test
     void diamondOresResolveToTheirCrackedTwins(MinecraftServer server) {
         assertTrue(LockedOres.isLocked(Blocks.DIAMOND_ORE.defaultBlockState()));
-        assertSame(ModBlocks.CRACKED_DIAMOND_ORE.get(),
-                LockedOres.crackedTwinFor(Blocks.DIAMOND_ORE.defaultBlockState()));
+        assertSame(
+                ModBlocks.CRACKED_DIAMOND_ORE.get(), LockedOres.crackedTwinFor(Blocks.DIAMOND_ORE.defaultBlockState()));
 
         assertTrue(LockedOres.isLocked(Blocks.DEEPSLATE_DIAMOND_ORE.defaultBlockState()));
-        assertSame(ModBlocks.CRACKED_DEEPSLATE_DIAMOND_ORE.get(),
+        assertSame(
+                ModBlocks.CRACKED_DEEPSLATE_DIAMOND_ORE.get(),
                 LockedOres.crackedTwinFor(Blocks.DEEPSLATE_DIAMOND_ORE.defaultBlockState()));
     }
 

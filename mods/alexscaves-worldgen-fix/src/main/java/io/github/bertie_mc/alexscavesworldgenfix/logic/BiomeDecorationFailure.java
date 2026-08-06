@@ -39,8 +39,7 @@ public final class BiomeDecorationFailure {
     /** Cause chains here are two deep; the bound only stops a self-referential one from hanging. */
     private static final int MAX_CAUSE_DEPTH = 16;
 
-    private BiomeDecorationFailure() {
-    }
+    private BiomeDecorationFailure() {}
 
     /**
      * True only when {@code thrown} carries Alex's Caves' empty-list clamp failure.

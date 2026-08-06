@@ -2,6 +2,8 @@ package io.github.bertie_mc.foodsystem.item;
 
 import io.github.bertie_mc.foodsystem.BFS;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -14,9 +16,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Lunchbox: a non-stackable food container for the stomach system.
@@ -61,8 +60,15 @@ public class LunchboxItem extends Item {
         if (player.isSecondaryUseActive()) {
             int packed = pack(box, player);
             if (packed > 0) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.ITEM_PICKUP, SoundSource.PLAYERS, 0.7F, 1.0F);
+                level.playSound(
+                        null,
+                        player.getX(),
+                        player.getY(),
+                        player.getZ(),
+                        SoundEvents.ITEM_PICKUP,
+                        SoundSource.PLAYERS,
+                        0.7F,
+                        1.0F);
                 player.displayClientMessage(
                         Component.translatable("item.berlordsfoodsystem.lunchbox.packed", packed), true);
             } else {
@@ -72,8 +78,15 @@ public class LunchboxItem extends Item {
         } else {
             int eaten = dispense(box, player);
             if (eaten > 0) {
-                level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 1.0F);
+                level.playSound(
+                        null,
+                        player.getX(),
+                        player.getY(),
+                        player.getZ(),
+                        SoundEvents.GENERIC_EAT,
+                        SoundSource.PLAYERS,
+                        0.8F,
+                        1.0F);
                 player.displayClientMessage(
                         Component.translatable("item.berlordsfoodsystem.lunchbox.ate", eaten), true);
             } else {
@@ -159,11 +172,12 @@ public class LunchboxItem extends Item {
             tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.contents", total)
                     .withStyle(ChatFormatting.GRAY));
             for (ItemStack c : contents) {
-                tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.entry",
-                        c.getCount(), c.getHoverName()).withStyle(ChatFormatting.DARK_GRAY));
+                tooltip.add(
+                        Component.translatable("item.berlordsfoodsystem.lunchbox.entry", c.getCount(), c.getHoverName())
+                                .withStyle(ChatFormatting.DARK_GRAY));
             }
         }
-        tooltip.add(Component.translatable("item.berlordsfoodsystem.lunchbox.usage")
-                .withStyle(ChatFormatting.DARK_GRAY));
+        tooltip.add(
+                Component.translatable("item.berlordsfoodsystem.lunchbox.usage").withStyle(ChatFormatting.DARK_GRAY));
     }
 }

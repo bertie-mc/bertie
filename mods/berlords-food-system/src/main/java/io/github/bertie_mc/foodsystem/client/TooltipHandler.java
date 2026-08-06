@@ -3,6 +3,8 @@ package io.github.bertie_mc.foodsystem.client;
 import io.github.bertie_mc.foodsystem.BFS;
 import io.github.bertie_mc.foodsystem.buffs.BuffsConfig;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
+import java.text.DecimalFormat;
+import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -13,9 +15,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
-
-import java.text.DecimalFormat;
-import java.util.List;
 
 /**
  * Food tooltips: hearts/regen/minutes the food provides in a stomach slot, an automatic
@@ -35,23 +34,28 @@ public final class TooltipHandler {
         List<Component> tooltip = event.getToolTip();
 
         var food = stack.getFoodProperties(null);
-        boolean isSystemFood = food != null && food.nutrition() > 0 && food.saturation() > 0 && !stack.is(Stomach.NOT_FOOD);
+        boolean isSystemFood =
+                food != null && food.nutrition() > 0 && food.saturation() > 0 && !stack.is(Stomach.NOT_FOOD);
 
         if (isSystemFood) {
             Stomach.FoodStats stats = Stomach.foodStats(stack);
-            tooltip.add(Component.literal("❤ " + HEARTS.format(stats.healthBoost() * 0.5) + " Hearts").withStyle(ChatFormatting.RED));
-            tooltip.add(Component.literal("☀ " + Math.round(stats.regenFactor()) + " Regen").withStyle(ChatFormatting.DARK_RED));
+            tooltip.add(Component.literal("❤ " + HEARTS.format(stats.healthBoost() * 0.5) + " Hearts")
+                    .withStyle(ChatFormatting.RED));
+            tooltip.add(Component.literal("☀ " + Math.round(stats.regenFactor()) + " Regen")
+                    .withStyle(ChatFormatting.DARK_RED));
             if (stack.has(BFS.ETERNAL.get())) {
                 tooltip.add(Component.literal("⌚ ∞").withStyle(s -> s.withColor(ETERNAL_COLOR)));
             } else {
-                tooltip.add(Component.literal("⌚ " + Math.round(stats.duration() / 1200.0) + " Minutes").withStyle(ChatFormatting.GOLD));
+                tooltip.add(Component.literal("⌚ " + Math.round(stats.duration() / 1200.0) + " Minutes")
+                        .withStyle(ChatFormatting.GOLD));
             }
             appendBuffLines(stack, tooltip);
             if (stack.is(Stomach.ALWAYS_EDIBLE)) {
                 tooltip.add(Component.literal("Always edible").withStyle(ChatFormatting.GRAY));
             }
         } else if (stack.is(Stomach.SLICEABLE)) {
-            tooltip.add(Component.literal("Heals 2 ").withStyle(ChatFormatting.GRAY)
+            tooltip.add(Component.literal("Heals 2 ")
+                    .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal("❤ ").withStyle(ChatFormatting.RED))
                     .append(Component.literal("per slice").withStyle(ChatFormatting.GRAY)));
         }
@@ -75,11 +79,12 @@ public final class TooltipHandler {
         for (BuffsConfig.EffectDef def : buff.effects) {
             MutableComponent name = Component.translatable(def.effect().value().getDescriptionId());
             if (def.amplifier() > 0) {
-                name = Component.translatable("potion.withAmplifier", name,
-                        Component.translatable("potion.potency." + def.amplifier()));
+                name = Component.translatable(
+                        "potion.withAmplifier", name, Component.translatable("potion.potency." + def.amplifier()));
             }
             ChatFormatting color = def.effect().value().getCategory() == MobEffectCategory.HARMFUL
-                    ? ChatFormatting.RED : ChatFormatting.BLUE;
+                    ? ChatFormatting.RED
+                    : ChatFormatting.BLUE;
             tooltip.add(Component.literal("✦ ").append(name).withStyle(color));
         }
 
@@ -95,15 +100,26 @@ public final class TooltipHandler {
         }
 
         var ab = buff.abilities;
-        if (ab.flight) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.flight").withStyle(ChatFormatting.AQUA));
-        if (ab.climbing) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.climbing").withStyle(ChatFormatting.AQUA));
-        if (ab.endermanCalm) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.enderman_calm").withStyle(ChatFormatting.AQUA));
-        if (ab.magnetRadius > 0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.magnet",
-                AMOUNT.format(ab.magnetRadius)).withStyle(ChatFormatting.AQUA));
-        if (ab.xpBoost != 1.0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.xp_boost",
-                AMOUNT.format(ab.xpBoost)).withStyle(ChatFormatting.AQUA));
-        if (ab.durabilitySaver > 0) tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.durability_saver",
-                Math.round(ab.durabilitySaver * 100)).withStyle(ChatFormatting.AQUA));
+        if (ab.flight)
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.flight")
+                    .withStyle(ChatFormatting.AQUA));
+        if (ab.climbing)
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.climbing")
+                    .withStyle(ChatFormatting.AQUA));
+        if (ab.endermanCalm)
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.enderman_calm")
+                    .withStyle(ChatFormatting.AQUA));
+        if (ab.magnetRadius > 0)
+            tooltip.add(
+                    Component.translatable("tooltip.berlordsfoodsystem.ability.magnet", AMOUNT.format(ab.magnetRadius))
+                            .withStyle(ChatFormatting.AQUA));
+        if (ab.xpBoost != 1.0)
+            tooltip.add(Component.translatable("tooltip.berlordsfoodsystem.ability.xp_boost", AMOUNT.format(ab.xpBoost))
+                    .withStyle(ChatFormatting.AQUA));
+        if (ab.durabilitySaver > 0)
+            tooltip.add(Component.translatable(
+                            "tooltip.berlordsfoodsystem.ability.durability_saver", Math.round(ab.durabilitySaver * 100))
+                    .withStyle(ChatFormatting.AQUA));
     }
 
     private TooltipHandler() {}

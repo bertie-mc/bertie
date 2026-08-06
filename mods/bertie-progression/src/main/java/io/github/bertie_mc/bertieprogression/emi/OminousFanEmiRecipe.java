@@ -5,9 +5,8 @@ import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
-import net.minecraft.resources.ResourceLocation;
-
 import java.util.List;
+import net.minecraft.resources.ResourceLocation;
 
 /** One data-driven Ominous Fan conversion displayed as a simple input-to-output recipe. */
 final class OminousFanEmiRecipe extends BasicEmiRecipe {
@@ -21,8 +20,7 @@ final class OminousFanEmiRecipe extends BasicEmiRecipe {
     private final EmiIngredient input;
     private final EmiStack output;
 
-    OminousFanEmiRecipe(EmiRecipeCategory category, ResourceLocation id,
-                        EmiIngredient input, EmiStack output) {
+    OminousFanEmiRecipe(EmiRecipeCategory category, ResourceLocation id, EmiIngredient input, EmiStack output) {
         super(category, id, WIDTH, HEIGHT);
         this.input = input;
         this.output = output;

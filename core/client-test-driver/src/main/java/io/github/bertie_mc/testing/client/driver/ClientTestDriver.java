@@ -52,8 +52,7 @@ public final class ClientTestDriver {
 
     private void onClientTick(ClientTickEvent.Post event) {
         Minecraft client = Minecraft.getInstance();
-        if (isStartupReady(armed.get(), client.getOverlay() != null)
-                && started.compareAndSet(false, true)) {
+        if (isStartupReady(armed.get(), client.getOverlay() != null) && started.compareAndSet(false, true)) {
             TestScheduler.start(client, () -> runTests(client));
         }
     }
@@ -67,9 +66,7 @@ public final class ClientTestDriver {
         List<TestResult> outcomes = collectReportedOutcomes(
                 () -> initializeRuntime(client),
                 collected -> runDiscoveredTests(
-                        client,
-                        configuredPath(DIAGNOSTICS_PROPERTY, "clienttest-diagnostics"),
-                        collected));
+                        client, configuredPath(DIAGNOSTICS_PROPERTY, "clienttest-diagnostics"), collected));
         ClientTestResults.write(results, outcomes);
     }
 
@@ -80,8 +77,7 @@ public final class ClientTestDriver {
         });
     }
 
-    private void runDiscoveredTests(
-            Minecraft client, Path diagnostics, List<TestResult> outcomes) {
+    private void runDiscoveredTests(Minecraft client, Path diagnostics, List<TestResult> outcomes) {
         List<TestMethod> tests = discoverTests();
         if (tests.isEmpty()) {
             throw new IllegalStateException("No @ClientTest methods were discovered");
@@ -91,8 +87,7 @@ public final class ClientTestDriver {
         }
     }
 
-    static List<TestResult> collectReportedOutcomes(
-            Runnable initialization, Consumer<List<TestResult>> suite) {
+    static List<TestResult> collectReportedOutcomes(Runnable initialization, Consumer<List<TestResult>> suite) {
         List<TestResult> outcomes = new ArrayList<>();
         try {
             initialization.run();
@@ -163,24 +158,22 @@ public final class ClientTestDriver {
                 .flatMap(annotations -> annotations.stream())
                 .filter(annotation -> annotation.targetType() == ElementType.METHOD)
                 .filter(annotation -> CLIENT_TEST_TYPE.equals(annotation.annotationType()))
-                .forEach(annotation -> collectMethods(
-                        annotation.clazz().getClassName(), annotation.memberName(), methods));
+                .forEach(annotation ->
+                        collectMethods(annotation.clazz().getClassName(), annotation.memberName(), methods));
         methods.sort(Comparator.comparing(TestMethod::name));
         return List.copyOf(methods);
     }
 
     private static void collectMethods(String className, String memberName, List<TestMethod> target) {
         try {
-            Class<?> declaringClass = Class.forName(
-                    className, true, ClientTestDriver.class.getClassLoader());
+            Class<?> declaringClass = Class.forName(className, true, ClientTestDriver.class.getClassLoader());
             for (Method method : declaringClass.getDeclaredMethods()) {
                 ClientTest annotation = method.getAnnotation(ClientTest.class);
                 if (annotation == null || !matchesScannedMethod(method, memberName)) {
                     continue;
                 }
                 validate(method);
-                target.add(new TestMethod(
-                        declaringClass.getName() + "." + method.getName(), method));
+                target.add(new TestMethod(declaringClass.getName() + "." + method.getName(), method));
             }
         } catch (ClassNotFoundException exception) {
             throw new IllegalStateException("Cannot load client test class " + className, exception);

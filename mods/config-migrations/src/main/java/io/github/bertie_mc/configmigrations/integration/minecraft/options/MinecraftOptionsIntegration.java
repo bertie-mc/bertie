@@ -76,7 +76,9 @@ public final class MinecraftOptionsIntegration {
                 }
                 options.putString(
                         "version",
-                        Integer.toString(SharedConstants.getCurrentVersion().getDataVersion().getVersion()));
+                        Integer.toString(SharedConstants.getCurrentVersion()
+                                .getDataVersion()
+                                .getVersion()));
                 write(options);
             } catch (RuntimeException exception) {
                 failure = exception;

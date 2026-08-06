@@ -7,8 +7,7 @@ final class WoodenFilterPolicy {
     private static final String SLAG_NAMESPACE = "slag:";
     private static final String WOODEN_MATERIAL = "slag:wooden";
 
-    private WoodenFilterPolicy() {
-    }
+    private WoodenFilterPolicy() {}
 
     static boolean handles(String eventId) {
         return EVENT_ID.equals(eventId);

@@ -16,21 +16,20 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 abstract class ServerMainMixin {
     @ModifyExpressionValue(
             method = "main",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/server/Eula;hasAgreedToEULA()Z"))
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/server/Eula;hasAgreedToEULA()Z"))
     private static boolean bertie$acceptEulaForOwnedClientTestServer(boolean agreed) {
         return agreed || InProcessDedicatedServer.ownsCurrentServerLifecycle();
     }
 
     @Redirect(
             method = "main",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/server/MinecraftServer;spin(Ljava/util/function/Function;)Lnet/minecraft/server/MinecraftServer;",
-                    ordinal = 1))
-    private static MinecraftServer bertie$trackServerThread(
-            Function<Thread, MinecraftServer> serverFactory) {
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/server/MinecraftServer;spin(Ljava/util/function/Function;)Lnet/minecraft/server/MinecraftServer;",
+                            ordinal = 1))
+    private static MinecraftServer bertie$trackServerThread(Function<Thread, MinecraftServer> serverFactory) {
         MinecraftServer server = MinecraftServer.spin(serverFactory);
         InProcessDedicatedServer.onServerThreadCreated(server);
         return server;
@@ -38,20 +37,14 @@ abstract class ServerMainMixin {
 
     @Redirect(
             method = "main",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/neoforged/neoforge/server/loading/ServerModLoader;load()V"))
+            at = @At(value = "INVOKE", target = "Lnet/neoforged/neoforge/server/loading/ServerModLoader;load()V"))
     private static void bertie$doNotReloadMods() {
         if (!InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             ServerModLoader.load();
         }
     }
 
-    @Redirect(
-            method = "main",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/Util;startTimerHackThread()V"))
+    @Redirect(method = "main", at = @At(value = "INVOKE", target = "Lnet/minecraft/Util;startTimerHackThread()V"))
     private static void bertie$doNotStartAnotherTimerThread() {
         if (!InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             Util.startTimerHackThread();
@@ -60,9 +53,7 @@ abstract class ServerMainMixin {
 
     @Redirect(
             method = "main",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Ljava/lang/Runtime;addShutdownHook(Ljava/lang/Thread;)V"))
+            at = @At(value = "INVOKE", target = "Ljava/lang/Runtime;addShutdownHook(Ljava/lang/Thread;)V"))
     private static void bertie$doNotRetainServerShutdownHook(Runtime runtime, Thread hook) {
         if (!InProcessDedicatedServer.ownsCurrentServerLifecycle()) {
             runtime.addShutdownHook(hook);

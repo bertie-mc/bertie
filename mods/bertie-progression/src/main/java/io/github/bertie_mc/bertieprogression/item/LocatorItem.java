@@ -1,6 +1,7 @@
 package io.github.bertie_mc.bertieprogression.item;
 
 import com.mojang.datafixers.util.Pair;
+import java.util.Optional;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
@@ -17,8 +18,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
-
-import java.util.Optional;
 
 /**
  * Single-target structure locator (R30A Echoing City Compass -> minecraft:ancient_city,
@@ -43,24 +42,30 @@ public class LocatorItem extends Item {
             return InteractionResultHolder.sidedSuccess(stack, true);
         }
         ResourceKey<Structure> key = ResourceKey.create(Registries.STRUCTURE, structureId);
-        Optional<Holder.Reference<Structure>> holder =
-                serverLevel.registryAccess().registryOrThrow(Registries.STRUCTURE).getHolder(key);
+        Optional<Holder.Reference<Structure>> holder = serverLevel
+                .registryAccess()
+                .registryOrThrow(Registries.STRUCTURE)
+                .getHolder(key);
         if (holder.isEmpty()) {
             serverPlayer.displayClientMessage(
                     Component.translatable("message.bertieprogression.locator_missing", structureId.toString()), true);
             return InteractionResultHolder.fail(stack);
         }
         serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.locator_searching"), true);
-        Pair<BlockPos, Holder<Structure>> found = serverLevel.getChunkSource().getGenerator()
-                .findNearestMapStructure(serverLevel, HolderSet.direct(holder.get()),
-                        serverPlayer.blockPosition(), searchRadius, false);
+        Pair<BlockPos, Holder<Structure>> found = serverLevel
+                .getChunkSource()
+                .getGenerator()
+                .findNearestMapStructure(
+                        serverLevel, HolderSet.direct(holder.get()), serverPlayer.blockPosition(), searchRadius, false);
         if (found == null) {
             serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.locator_none"), true);
             return InteractionResultHolder.fail(stack);
         }
         BlockPos pos = found.getFirst();
-        serverPlayer.displayClientMessage(Component.translatable("message.bertieprogression.locator_found",
-                structureId.toString(), pos.getX(), pos.getZ()), false);
+        serverPlayer.displayClientMessage(
+                Component.translatable(
+                        "message.bertieprogression.locator_found", structureId.toString(), pos.getX(), pos.getZ()),
+                false);
         return InteractionResultHolder.consume(stack);
     }
 }

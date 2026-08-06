@@ -1,13 +1,13 @@
 package io.github.bertie_mc.emi.integration.terracurio;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.confluence.terra_curio.common.recipe.WorkshopRecipe;
 
@@ -17,12 +17,11 @@ import org.confluence.terra_curio.common.recipe.WorkshopRecipe;
  * is vanilla smithing (already shown by EMI) and is skipped.
  */
 public final class TerraCurioEmiModule {
-    private TerraCurioEmiModule() {
-    }
+    private TerraCurioEmiModule() {}
 
     public static void register(EmiRegistry reg) {
-        EmiRecipeCategory workshop = Categories.machine(reg,
-                "terra_curio_workshop", "terra_curio:workshop", "Workshop");
+        EmiRecipeCategory workshop =
+                Categories.machine(reg, "terra_curio_workshop", "terra_curio:workshop", "Workshop");
         Recipes.forEach(reg.getRecipeManager(), WorkshopRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.ingredients) {

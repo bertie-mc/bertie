@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined.content.grid;
 
-import io.github.bertie_mc.primitiverefined.PrMenus;
 import com.refinedmods.refinedstorage.common.grid.AbstractCraftingGridContainerMenu;
 import com.refinedmods.refinedstorage.common.grid.CraftingGrid;
 import com.refinedmods.refinedstorage.common.grid.GridData;
-
+import io.github.bertie_mc.primitiverefined.PrMenus;
 import net.minecraft.world.entity.player.Inventory;
 
 /**

@@ -11,8 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(InputConstants.class)
 abstract class InputConstantsMixin {
     @Inject(method = "isKeyDown", at = @At("HEAD"), cancellable = true)
-    private static void bertie$includeSimulatedKeys(
-            long window, int keyCode, CallbackInfoReturnable<Boolean> result) {
+    private static void bertie$includeSimulatedKeys(long window, int keyCode, CallbackInfoReturnable<Boolean> result) {
         if (DefaultTestInput.isKeyDown(keyCode)) {
             result.setReturnValue(true);
         }

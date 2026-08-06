@@ -26,8 +26,7 @@ public interface ServerContext {
      * @param <E> the checked exception thrown by the action
      * @throws E if the action throws it
      */
-    <E extends Throwable> void runOnServer(
-            FailableConsumer<MinecraftServer, E> action) throws E;
+    <E extends Throwable> void runOnServer(FailableConsumer<MinecraftServer, E> action) throws E;
 
     /**
      * Computes a value on the logical-server thread and waits for it. If called from that server
@@ -39,8 +38,7 @@ public interface ServerContext {
      * @return the function result
      * @throws E if the function throws it
      */
-    <T, E extends Throwable> T computeOnServer(
-            FailableFunction<MinecraftServer, T, E> function) throws E;
+    <T, E extends Throwable> T computeOnServer(FailableFunction<MinecraftServer, T, E> function) throws E;
 
     /**
      * Waits for a server predicate using {@link ClientTestContext#DEFAULT_TIMEOUT_TICKS}.

@@ -49,9 +49,8 @@ public class ForgeInk {
 
     private static final Logger LOGGER = LoggerFactory.getLogger("ForgeInk");
 
-    private static final ResourceLocation[] INK_BY_TIER = InkPolicy.inkIds().stream()
-            .map(ResourceLocation::parse)
-            .toArray(ResourceLocation[]::new);
+    private static final ResourceLocation[] INK_BY_TIER =
+            InkPolicy.inkIds().stream().map(ResourceLocation::parse).toArray(ResourceLocation[]::new);
 
     public ForgeInk(IEventBus modBus) {
         modBus.addListener(this::modifyDefaultComponents);
@@ -62,8 +61,7 @@ public class ForgeInk {
         // FA gives vanilla XP bottles an experience essence component. Remove it after
         // FA's listener; the Xpetrified Orb keeps its component for its XP redeem action
         // and is blocked from forge input by the mixin instead.
-        event.modify(Items.EXPERIENCE_BOTTLE,
-                builder -> builder.remove(ModDataComponents.ESSENCE_VALUE.get()));
+        event.modify(Items.EXPERIENCE_BOTTLE, builder -> builder.remove(ModDataComponents.ESSENCE_VALUE.get()));
 
         // Tier-N ink fills 40 × 2^(N−1) essence in its matching forge tier.
         for (int i = 0; i < INK_BY_TIER.length; i++) {
@@ -74,9 +72,10 @@ public class ForgeInk {
                 continue;
             }
             int amount = InkPolicy.essenceAmount(i + 1);
-            event.modify(ink, builder -> builder.set(
-                    ModDataComponents.ESSENCE_VALUE.get(),
-                    EssenceValue.of(EssenceType.EXPERIENCE, amount)));
+            event.modify(
+                    ink,
+                    builder -> builder.set(
+                            ModDataComponents.ESSENCE_VALUE.get(), EssenceValue.of(EssenceType.EXPERIENCE, amount)));
         }
     }
 

@@ -14,8 +14,7 @@ import java.util.List;
 
 /** Converts manifest leaves into Config Lib's two native document representations. */
 final class SuperMartijn642Merge {
-    private SuperMartijn642Merge() {
-    }
+    private SuperMartijn642Merge() {}
 
     static void apply(ConfigFile<?> document, List<Change> changes) {
         if (document instanceof TomlConfigFile toml) {

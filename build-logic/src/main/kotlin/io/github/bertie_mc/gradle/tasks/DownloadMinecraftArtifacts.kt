@@ -17,13 +17,14 @@ abstract class DownloadMinecraftArtifacts : NeoFormRuntimeTask() {
     @TaskAction
     fun download() {
         val output = outputDirectory.get().asFile
-        val arguments = mutableListOf(
-            "download-artifacts",
-            "--minecraft-version",
-            minecraftVersion.get(),
-            "--write-version-manifest",
-            output.resolve("version.json").absolutePath,
-        )
+        val arguments =
+            mutableListOf(
+                "download-artifacts",
+                "--minecraft-version",
+                minecraftVersion.get(),
+                "--write-version-manifest",
+                output.resolve("version.json").absolutePath,
+            )
         mapOf(
             "client" to "client.jar",
             "server" to "server.jar",

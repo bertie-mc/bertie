@@ -1,10 +1,12 @@
 package io.github.bertie_mc.foodsystem.client;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import io.github.bertie_mc.foodsystem.BFS;
 import io.github.bertie_mc.foodsystem.Config;
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
 import io.github.bertie_mc.foodsystem.stomach.StomachData;
-import com.mojang.blaze3d.systems.RenderSystem;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -15,9 +17,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Stomach slot HUD: 20px (scaled) spacing, foods sorted by remaining time with the

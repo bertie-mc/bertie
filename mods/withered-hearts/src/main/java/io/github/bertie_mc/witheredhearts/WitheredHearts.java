@@ -9,6 +9,5 @@ import net.neoforged.fml.common.Mod;
 public class WitheredHearts {
     public static final String MOD_ID = "witheredhearts";
 
-    public WitheredHearts(IEventBus ignored) {
-    }
+    public WitheredHearts(IEventBus ignored) {}
 }

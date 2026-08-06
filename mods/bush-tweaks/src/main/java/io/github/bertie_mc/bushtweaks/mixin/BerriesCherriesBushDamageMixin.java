@@ -28,19 +28,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  */
 @Mixin(
         targets = {
-                "net.mcreator.berriesandcherries.procedures.RaspberryBushDamageProcedure",
-                "net.mcreator.berriesandcherries.procedures.BlueberryBushDamageProcedure"
+            "net.mcreator.berriesandcherries.procedures.RaspberryBushDamageProcedure",
+            "net.mcreator.berriesandcherries.procedures.BlueberryBushDamageProcedure"
         },
-        remap = false
-)
+        remap = false)
 public class BerriesCherriesBushDamageMixin {
 
     @Inject(
             method = "execute(Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/world/entity/Entity;)V",
             at = @At("HEAD"),
             cancellable = true,
-            remap = false
-    )
+            remap = false)
     private static void bushtweaks$vanillaBushBehavior(LevelAccessor world, Entity entity, CallbackInfo ci) {
         ci.cancel();
         if (!(entity instanceof LivingEntity)) {

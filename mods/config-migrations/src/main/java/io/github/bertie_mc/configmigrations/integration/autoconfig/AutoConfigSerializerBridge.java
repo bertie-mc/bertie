@@ -12,8 +12,7 @@ import me.shedaniel.autoconfig.serializer.ConfigSerializer;
 
 /** Isolates optional AutoConfig API linkage from the always-loaded migration catalog. */
 final class AutoConfigSerializerBridge {
-    private AutoConfigSerializerBridge() {
-    }
+    private AutoConfigSerializerBridge() {}
 
     static Object wrap(MigrationManager migrations, List<Target> targets, Object serializer) {
         return new MigratingSerializer<>(migrations, cast(serializer), targets);
@@ -46,16 +45,14 @@ final class AutoConfigSerializerBridge {
         return null;
     }
 
-    private static final class MigratingSerializer<T extends ConfigData>
-            implements ConfigSerializer<T> {
+    private static final class MigratingSerializer<T extends ConfigData> implements ConfigSerializer<T> {
         private final MigrationManager migrations;
         private final ConfigSerializer<T> serializer;
         private final List<Target> targets;
         private T pendingRoot;
         private List<MigrationManager.Migration> pending = List.of();
 
-        private MigratingSerializer(
-                MigrationManager migrations, ConfigSerializer<T> serializer, List<Target> targets) {
+        private MigratingSerializer(MigrationManager migrations, ConfigSerializer<T> serializer, List<Target> targets) {
             this.migrations = migrations;
             this.serializer = serializer;
             this.targets = targets;
@@ -87,8 +84,7 @@ final class AutoConfigSerializerBridge {
                 if (data == null) {
                     continue;
                 }
-                MigrationManager.Migration migration =
-                        migrations.prepare(target.manifest(), target.file());
+                MigrationManager.Migration migration = migrations.prepare(target.manifest(), target.file());
                 if (migration != null) {
                     AutoConfigTreeMerge.apply(data, migration.changes());
                     prepared.add(migration);

@@ -45,11 +45,14 @@ public final class Config {
                 .defineInRange("max_slots", 5, 1, 5);
         REPLACE_OLDEST = common.comment("Eating with a full stomach replaces the food with the least remaining time")
                 .define("replace_oldest_when_full", true);
-        DISABLE_SPRINT_WHEN_EMPTY = common.comment("Disable sprinting while the stomach is completely empty (vanilla-style: an empty stomach can't start or sustain a sprint)")
+        DISABLE_SPRINT_WHEN_EMPTY = common.comment(
+                        "Disable sprinting while the stomach is completely empty (vanilla-style: an empty stomach can't start or sustain a sprint)")
                 .define("disable_sprint_when_empty", true);
-        EAT_COOLDOWN_TICKS = common.comment("Item cooldown after eating a food. To avoid accidental waste. Foods tagged always_edible have no cooldown.")
+        EAT_COOLDOWN_TICKS = common.comment(
+                        "Item cooldown after eating a food. To avoid accidental waste. Foods tagged always_edible have no cooldown.")
                 .defineInRange("eat_cooldown_ticks", 100, 0, 1200);
-        SAME_FOOD_REFRESH_TICKS = common.comment("Sophisticated Backpacks feeding upgrades only re-feed a food already in a slot once its remaining time drops below this many ticks (prevents auto-feeders from burning food)")
+        SAME_FOOD_REFRESH_TICKS = common.comment(
+                        "Sophisticated Backpacks feeding upgrades only re-feed a food already in a slot once its remaining time drops below this many ticks (prevents auto-feeders from burning food)")
                 .defineInRange("same_food_refresh_ticks", 600, 0, 72000);
         common.pop();
 
@@ -61,13 +64,16 @@ public final class Config {
         common.pop();
 
         common.push("regen");
-        BASE_REGEN_RATE = common.comment("Base ticks per 1 health of passive regeneration with an empty stomach (lowered by food regen values, floor 10). Default 200 = 1 HP / 10s.")
+        BASE_REGEN_RATE = common.comment(
+                        "Base ticks per 1 health of passive regeneration with an empty stomach (lowered by food regen values, floor 10). Default 200 = 1 HP / 10s.")
                 .defineInRange("base_regen_rate", 200.0, 20.0, 600.0);
-        REGEN_COOLDOWN = common.comment("Ticks after taking damage before regeneration resumes (0 = no cooldown). Default 160 = 8s.")
+        REGEN_COOLDOWN = common.comment(
+                        "Ticks after taking damage before regeneration resumes (0 = no cooldown). Default 160 = 8s.")
                 .defineInRange("regen_cooldown", 160.0, 0.0, 600.0);
-        DISABLE_REGENERATION = common.comment("Disable passive regeneration entirely")
-                .define("disable_regeneration", false);
-        DISABLE_NATURAL_REGEN_RULE = common.comment("Force the naturalRegeneration gamerule off on world load (vanilla regen would bypass the food system)")
+        DISABLE_REGENERATION =
+                common.comment("Disable passive regeneration entirely").define("disable_regeneration", false);
+        DISABLE_NATURAL_REGEN_RULE = common.comment(
+                        "Force the naturalRegeneration gamerule off on world load (vanilla regen would bypass the food system)")
                 .define("disable_natural_regeneration_gamerule", true);
         common.pop();
 
@@ -78,21 +84,26 @@ public final class Config {
                 .define("unstackable_food_bonus_duration", true);
         SLEEP_DEPLETION = common.comment("Sleeping consumes half the remaining duration of eaten foods")
                 .define("food_depletion_during_sleep", false);
-        ALLOW_SATURATION = common.comment("Allow food to apply saturation and food-related effects like Farmer's Delight nourishment")
+        ALLOW_SATURATION = common.comment(
+                        "Allow food to apply saturation and food-related effects like Farmer's Delight nourishment")
                 .define("allow_saturation", false);
         common.pop();
 
         common.push("compat");
-        SB_FEEDING = common.comment("Sophisticated Backpacks feeding upgrades feed only when a stomach slot is actually free (prevents wasted food); false blocks them entirely")
+        SB_FEEDING = common.comment(
+                        "Sophisticated Backpacks feeding upgrades feed only when a stomach slot is actually free (prevents wasted food); false blocks them entirely")
                 .define("sophisticated_backpacks_feeding", true);
-        SB_FEEDING_SCAN_TICKS = common.comment("Fallback scan interval (ticks) when a feeding upgrade has nothing to do — stomach full, OR empty slots but nothing eligible to feed. The stomach pins hunger, so SB would otherwise rescan every 2-5s forever. The feeder is woken immediately when the backpack contents change or a stomach slot frees up, so this is just the backstop; 580 still guarantees a refresh inside the 600-tick re-feed window = 100% buff uptime.")
+        SB_FEEDING_SCAN_TICKS = common.comment(
+                        "Fallback scan interval (ticks) when a feeding upgrade has nothing to do — stomach full, OR empty slots but nothing eligible to feed. The stomach pins hunger, so SB would otherwise rescan every 2-5s forever. The feeder is woken immediately when the backpack contents change or a stomach slot frees up, so this is just the backstop; 580 still guarantees a refresh inside the 600-tick re-feed window = 100% buff uptime.")
                 .defineInRange("sophisticated_backpacks_scan_ticks", 580, 20, 6000);
         common.pop();
 
         common.push("synergy");
-        SYNERGY_VARIETY = common.comment("Variety synergy: 3+ DIFFERENT food categories (meat, fish, vegetable, fruit, grain, sweet, meal, special) in the stomach grant faster regen, then bonus max health (4) and Speed (5). A cursed food (e.g. rotten flesh) suppresses it. Needs 3+ stomach slots.")
+        SYNERGY_VARIETY = common.comment(
+                        "Variety synergy: 3+ DIFFERENT food categories (meat, fish, vegetable, fruit, grain, sweet, meal, special) in the stomach grant faster regen, then bonus max health (4) and Speed (5). A cursed food (e.g. rotten flesh) suppresses it. Needs 3+ stomach slots.")
                 .define("variety_synergy", true);
-        SYNERGY_MONO = common.comment("Mono-diet synergy: filling EVERY stomach slot with one category grants a specialization with a downside (all meat = Carnivore: Strength + attack speed, slower mining; all fish = Mariner: Luck + water breathing, slower; all vegetable = Forager; all fruit = Pathfinder; all sweet = Sugar Rush). Needs 3+ stomach slots.")
+        SYNERGY_MONO = common.comment(
+                        "Mono-diet synergy: filling EVERY stomach slot with one category grants a specialization with a downside (all meat = Carnivore: Strength + attack speed, slower mining; all fish = Mariner: Luck + water breathing, slower; all vegetable = Forager; all fruit = Pathfinder; all sweet = Sugar Rush). Needs 3+ stomach slots.")
                 .define("mono_synergy", true);
         common.pop();
 
@@ -100,14 +111,15 @@ public final class Config {
 
         ModConfigSpec.Builder client = new ModConfigSpec.Builder();
         client.push("hud");
-        HUD_PRESET = client.comment("Position of the stomach slots on the HUD (default, bottom_right, bottom_left, custom)")
+        HUD_PRESET = client.comment(
+                        "Position of the stomach slots on the HUD (default, bottom_right, bottom_left, custom)")
                 .define("preset", "default");
-        HUD_X = client.comment("Custom preset: X offset from screen center of the LEFT slot when 3 slots are unlocked (extra slots grow further left)")
+        HUD_X = client.comment(
+                        "Custom preset: X offset from screen center of the LEFT slot when 3 slots are unlocked (extra slots grow further left)")
                 .defineInRange("x", 47.0, -10000.0, 10000.0);
         HUD_Y = client.comment("Custom preset: Y offset from screen bottom")
                 .defineInRange("y", -39.0, -10000.0, 10000.0);
-        HUD_SCALE = client.comment("HUD scale")
-                .defineInRange("scale", 0.9, 0.1, 5.0);
+        HUD_SCALE = client.comment("HUD scale").defineInRange("scale", 0.9, 0.1, 5.0);
         client.pop();
         CLIENT_SPEC = client.build();
     }

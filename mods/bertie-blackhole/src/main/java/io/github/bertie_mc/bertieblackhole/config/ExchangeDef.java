@@ -13,5 +13,4 @@ import net.minecraft.resources.ResourceLocation;
  * @param output      item spat back out
  * @param outputCount stack size of one output
  */
-public record ExchangeDef(String id, ItemMatcher input, int count, ResourceLocation output, int outputCount) {
-}
+public record ExchangeDef(String id, ItemMatcher input, int count, ResourceLocation output, int outputCount) {}

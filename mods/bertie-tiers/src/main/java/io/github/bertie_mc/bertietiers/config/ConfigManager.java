@@ -1,10 +1,10 @@
 package io.github.bertie_mc.bertietiers.config;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import io.github.bertie_mc.bertietiers.BertieTiers;
 import io.github.bertie_mc.bertietiers.logic.MiningAuthority;
 import io.github.bertie_mc.bertietiers.logic.RuntimeConfig;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;

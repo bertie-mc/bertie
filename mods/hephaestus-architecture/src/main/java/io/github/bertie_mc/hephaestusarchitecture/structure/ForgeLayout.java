@@ -2,13 +2,12 @@ package io.github.bertie_mc.hephaestusarchitecture.structure;
 
 import com.stal111.forbidden_arcanus.common.block.HephaestusForgeBlock;
 import com.stal111.forbidden_arcanus.util.ModTags;
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 /**
  * A structure template normalized around its one Hephaestus Forge block.
@@ -16,9 +15,7 @@ import java.util.List;
  * <p>Forge blocks and pedestals are semantic markers. Structure Void is ignored;
  * air and every other saved block state are exact requirements.</p>
  */
-public record ForgeLayout(int tier,
-                          List<Requirement> requirements,
-                          List<BlockPos> pedestalOffsets) {
+public record ForgeLayout(int tier, List<Requirement> requirements, List<BlockPos> pedestalOffsets) {
 
     public ForgeLayout {
         requirements = List.copyOf(requirements);
@@ -65,14 +62,14 @@ public record ForgeLayout(int tier,
     }
 
     static BlockPos rotate(BlockPos offset, Rotation rotation) {
-        int turns = switch (rotation) {
-            case CLOCKWISE_90 -> 1;
-            case CLOCKWISE_180 -> 2;
-            case COUNTERCLOCKWISE_90 -> 3;
-            default -> 0;
-        };
-        RotationMath.Offset rotated = RotationMath.rotate(
-                offset.getX(), offset.getY(), offset.getZ(), turns);
+        int turns =
+                switch (rotation) {
+                    case CLOCKWISE_90 -> 1;
+                    case CLOCKWISE_180 -> 2;
+                    case COUNTERCLOCKWISE_90 -> 3;
+                    default -> 0;
+                };
+        RotationMath.Offset rotated = RotationMath.rotate(offset.getX(), offset.getY(), offset.getZ(), turns);
         return new BlockPos(rotated.x(), rotated.y(), rotated.z());
     }
 

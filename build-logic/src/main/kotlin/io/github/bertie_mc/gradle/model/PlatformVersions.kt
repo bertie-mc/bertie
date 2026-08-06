@@ -26,26 +26,29 @@ data class PlatformVersions(
         javaFmlLoaderVersionRange = "[${loaderParts.single()},)"
     }
 
-    fun templateProperties(): Map<String, String> = mapOf(
-        "minecraft_version" to minecraft,
-        "minecraft_version_range" to minecraftVersionRange,
-        "neo_version" to neoForge,
-        "neo_version_range" to neoForgeVersionRange,
-        "loader_version" to javaFmlLoader,
-        "loader_version_range" to javaFmlLoaderVersionRange,
-    )
+    fun templateProperties(): Map<String, String> =
+        mapOf(
+            "minecraft_version" to minecraft,
+            "minecraft_version_range" to minecraftVersionRange,
+            "neo_version" to neoForge,
+            "neo_version_range" to neoForgeVersionRange,
+            "loader_version" to javaFmlLoader,
+            "loader_version_range" to javaFmlLoaderVersionRange,
+        )
 }
 
-fun VersionCatalog.platformVersions(): PlatformVersions = PlatformVersions(
-    minecraft = requiredVersion("minecraft"),
-    neoForge = requiredVersion("neoforge"),
-    javaFmlLoader = requiredVersion("javafml-loader"),
-)
+fun VersionCatalog.platformVersions(): PlatformVersions =
+    PlatformVersions(
+        minecraft = requiredVersion("minecraft"),
+        neoForge = requiredVersion("neoforge"),
+        javaFmlLoader = requiredVersion("javafml-loader"),
+    )
 
 private fun VersionCatalog.requiredVersion(name: String): String =
-    findVersion(name).orElseThrow {
-        IllegalStateException("Version '$name' is missing from the root version catalog")
-    }.requiredVersion
+    findVersion(name)
+        .orElseThrow {
+            IllegalStateException("Version '$name' is missing from the root version catalog")
+        }.requiredVersion
 
 private fun numericVersion(
     label: String,

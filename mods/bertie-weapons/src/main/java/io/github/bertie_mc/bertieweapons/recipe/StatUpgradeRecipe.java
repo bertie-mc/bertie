@@ -23,8 +23,7 @@ public class StatUpgradeRecipe extends UpgradeCraftingRecipe {
     }
 
     @Override
-    protected Optional<ItemStack> upgrade(
-            ItemStack weapon, ItemStack catalyst, HolderLookup.Provider registries) {
+    protected Optional<ItemStack> upgrade(ItemStack weapon, ItemStack catalyst, HolderLookup.Provider registries) {
         return WeaponUpgrades.applyStatTier(weapon, registries);
     }
 

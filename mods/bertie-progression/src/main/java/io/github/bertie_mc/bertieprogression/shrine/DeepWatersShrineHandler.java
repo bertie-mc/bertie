@@ -1,9 +1,10 @@
 package io.github.bertie_mc.bertieprogression.shrine;
 
+import java.util.HashSet;
+import java.util.Set;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -16,9 +17,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
-
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Build the 7x7 Deep Waters Shrine around a Conduit in the Deep Waters dimension, then use a
@@ -37,6 +35,7 @@ public final class DeepWatersShrineHandler {
 
     /** The shrine only works in Deep Waters. */
     private static final ResourceLocation DIMENSION = ResourceLocation.parse("deepwaters:endlesscaves");
+
     private static final ResourceLocation TRIGGER = ResourceLocation.parse("deepwaters:crownedjelly");
 
     private static final ResourceLocation MOSSY = ResourceLocation.parse("minecraft:mossy_stone_bricks");
@@ -47,70 +46,39 @@ public final class DeepWatersShrineHandler {
     private static final ResourceLocation SMALL = ResourceLocation.parse("deepwaters:cryssmaquamarine");
 
     private static final ResourceLocation ALTAR = ResourceLocation.parse("deepwaters:stormcall_altar");
-    private static final ResourceLocation SEASTONE =
-            ResourceLocation.parse("cataclysm:polished_azure_seastone");
+    private static final ResourceLocation SEASTONE = ResourceLocation.parse("cataclysm:polished_azure_seastone");
 
     /** Layers bottom to top. Rows north->south, chars west->east. */
     private static final String[][] LAYERS = {
-            {   // L1 floor
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM"},
-            {   // L2 pillar in a solid 3x3, four diagonal posts, crystals on the outer edge
-                "..SBS..",
-                ".M...M.",
-                "S.MMM.S",
-                "B.MPM.B",
-                "S.MMM.S",
-                ".M...M.",
-                "..SBS.."},
-            {   // L3 conduit at centre, diagonal lattice
-                ".......",
-                ".M...M.",
-                "..M.M..",
-                "...C...",
-                "..M.M..",
-                ".M...M.",
-                "......."},
-            {   // L4 = L2 without the external crystals
-                ".......",
-                ".M...M.",
-                "..MMM..",
-                "..MPM..",
-                "..MMM..",
-                ".M...M.",
-                "......."},
-            {   // L5 roof
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM",
-                "MMMMMMM"},
-            {   // L6 top crystals - ASYMMETRIC, and the centre is deliberately EMPTY
-                "..SLS..",
-                ".....B.",
-                "S.S.S.S",
-                "L...S.L",
-                "SS...SS",
-                ".......",
-                "..SLS.."},
+        { // L1 floor
+            "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM"
+        },
+        { // L2 pillar in a solid 3x3, four diagonal posts, crystals on the outer edge
+            "..SBS..", ".M...M.", "S.MMM.S", "B.MPM.B", "S.MMM.S", ".M...M.", "..SBS.."
+        },
+        { // L3 conduit at centre, diagonal lattice
+            ".......", ".M...M.", "..M.M..", "...C...", "..M.M..", ".M...M.", "......."
+        },
+        { // L4 = L2 without the external crystals
+            ".......", ".M...M.", "..MMM..", "..MPM..", "..MMM..", ".M...M.", "......."
+        },
+        { // L5 roof
+            "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM"
+        },
+        { // L6 top crystals - ASYMMETRIC, and the centre is deliberately EMPTY
+            "..SLS..", ".....B.", "S.S.S.S", "L...S.L", "SS...SS", ".......", "..SLS.."
+        },
     };
 
     private static final int SIZE = 7;
-    private static final int CONDUIT_LAYER = 2;   // L3, zero-indexed
-    private static final int CENTRE = 3;          // d4, zero-indexed
+    private static final int CONDUIT_LAYER = 2; // L3, zero-indexed
+    private static final int CENTRE = 3; // d4, zero-indexed
 
     // Cuboid centred on the conduit that may contain only shrine blocks and water.
     private static final int WATER_DOWN = 1;
     private static final int WATER_HORIZONTAL = 6;
     private static final int WATER_UP = 5;
-    private static final int CLEAR_UP = 10;       // water OR air
+    private static final int CLEAR_UP = 10; // water OR air
 
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -130,16 +98,16 @@ public final class DeepWatersShrineHandler {
         if (altar == Blocks.AIR || seastone == Blocks.AIR) return;
 
         int rotation = findRotation(level, conduitPos);
-        if (rotation < 0) return;   // not our structure - leave the interaction alone
+        if (rotation < 0) return; // not our structure - leave the interaction alone
 
         event.setCanceled(true);
         if (level.isClientSide) return;
 
         Set<BlockPos> shrine = shrineBlocks(conduitPos, rotation);
         if (!hasSpace(level, conduitPos, shrine)) {
-            event.getEntity().displayClientMessage(
-                    Component.translatable("message.bertieprogression.shrine_no_space"), true);
-            return;   // jelly untouched on failure
+            event.getEntity()
+                    .displayClientMessage(Component.translatable("message.bertieprogression.shrine_no_space"), true);
+            return; // jelly untouched on failure
         }
 
         transform(level, conduitPos, shrine, altar, seastone);
@@ -166,7 +134,7 @@ public final class DeepWatersShrineHandler {
                 for (int col = 0; col < SIZE; col++) {
                     ResourceLocation expected = idFor(LAYERS[layer][row].charAt(col));
                     BlockPos pos = cellPos(conduitPos, layer, row, col, rot);
-                    if (expected == null) continue;   // '.' - contents irrelevant to the match
+                    if (expected == null) continue; // '.' - contents irrelevant to the match
                     if (!isBlock(level, pos, expected)) return false;
                 }
             }
@@ -183,10 +151,22 @@ public final class DeepWatersShrineHandler {
         int dz = row - CENTRE;
         int rx, rz;
         switch (rot) {
-            case 1  -> { rx = -dz; rz = dx; }
-            case 2  -> { rx = -dx; rz = -dz; }
-            case 3  -> { rx = dz;  rz = -dx; }
-            default -> { rx = dx;  rz = dz; }
+            case 1 -> {
+                rx = -dz;
+                rz = dx;
+            }
+            case 2 -> {
+                rx = -dx;
+                rz = -dz;
+            }
+            case 3 -> {
+                rx = dz;
+                rz = -dx;
+            }
+            default -> {
+                rx = dx;
+                rz = dz;
+            }
         }
         return conduitPos.offset(rx, layer - CONDUIT_LAYER, rz);
     }
@@ -199,7 +179,7 @@ public final class DeepWatersShrineHandler {
             case 'L' -> LARGE;
             case 'B' -> BUNDLE;
             case 'S' -> SMALL;
-            default  -> null;
+            default -> null;
         };
     }
 
@@ -242,8 +222,8 @@ public final class DeepWatersShrineHandler {
                     pos.set(conduit.getX() + dx, conduit.getY() + dy, conduit.getZ() + dz);
                     if (shrine.contains(pos)) continue;
                     BlockState state = level.getBlockState(pos);
-                    if (!state.getFluidState().isEmpty()) continue;          // water: always fine
-                    if (dy > WATER_UP && state.isAir()) continue;            // air: only up high
+                    if (!state.getFluidState().isEmpty()) continue; // water: always fine
+                    if (dy > WATER_UP && state.isAir()) continue; // air: only up high
                     return false;
                 }
             }
@@ -257,18 +237,15 @@ public final class DeepWatersShrineHandler {
      * Beacon-style pyramid with the altar where the conduit was: 5x5 two layers down, 3x3 one
      * layer down, altar at the conduit. Everything else the shrine occupied becomes water.
      */
-    private static void transform(Level level, BlockPos conduit, Set<BlockPos> shrine,
-                                  Block altar, Block seastone) {
+    private static void transform(Level level, BlockPos conduit, Set<BlockPos> shrine, Block altar, Block seastone) {
         for (BlockPos pos : shrine) {
             level.setBlock(pos, Blocks.WATER.defaultBlockState(), Block.UPDATE_CLIENTS);
         }
         for (int dx = -2; dx <= 2; dx++) {
             for (int dz = -2; dz <= 2; dz++) {
-                level.setBlock(conduit.offset(dx, -2, dz), seastone.defaultBlockState(),
-                        Block.UPDATE_CLIENTS);
+                level.setBlock(conduit.offset(dx, -2, dz), seastone.defaultBlockState(), Block.UPDATE_CLIENTS);
                 if (Math.abs(dx) <= 1 && Math.abs(dz) <= 1) {
-                    level.setBlock(conduit.offset(dx, -1, dz), seastone.defaultBlockState(),
-                            Block.UPDATE_CLIENTS);
+                    level.setBlock(conduit.offset(dx, -1, dz), seastone.defaultBlockState(), Block.UPDATE_CLIENTS);
                 }
             }
         }

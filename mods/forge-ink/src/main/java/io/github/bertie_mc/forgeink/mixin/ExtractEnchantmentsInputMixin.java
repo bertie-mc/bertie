@@ -17,8 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ExtractEnchantmentsInputMixin {
 
     @Inject(method = "canInput", at = @At("HEAD"), cancellable = true, remap = false)
-    private void forgeink$disable(EssenceType type, ItemStack stack,
-                                  CallbackInfoReturnable<Boolean> cir) {
+    private void forgeink$disable(EssenceType type, ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(false);
     }
 }

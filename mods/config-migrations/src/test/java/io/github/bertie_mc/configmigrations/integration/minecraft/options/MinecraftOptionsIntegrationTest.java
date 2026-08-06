@@ -21,8 +21,7 @@ class MinecraftOptionsIntegrationTest {
 
     @Test
     void flatFragmentsMergeIntoDataFixedOptionsAndPersistOnce() throws Exception {
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/minecraft/options.toml");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/minecraft/options.toml");
         Path optionsFile = gameDirectory.resolve("options.txt");
         Path state = gameDirectory.resolve("config/config-migrations/state/options.txt.version");
         Files.createDirectories(manifest.getParent());
@@ -57,8 +56,7 @@ class MinecraftOptionsIntegrationTest {
 
     @Test
     void aPendingMigrationCreatesTheOtherwiseMissingOptionsFile() throws Exception {
-        Path manifest = gameDirectory.resolve(
-                "config/config-migrations/migrations/minecraft/options.toml");
+        Path manifest = gameDirectory.resolve("config/config-migrations/migrations/minecraft/options.toml");
         Path optionsFile = gameDirectory.resolve("options.txt");
         Files.createDirectories(manifest.getParent());
         Files.writeString(manifest, manifest());
@@ -87,9 +85,7 @@ class MinecraftOptionsIntegrationTest {
         Files.writeString(directory.resolve("first.toml"), manifest());
         Files.writeString(directory.resolve("nested/second.toml"), manifest());
 
-        assertThrows(
-                ConfigMigrationException.class,
-                () -> MinecraftOptionsIntegration.load(gameDirectory));
+        assertThrows(ConfigMigrationException.class, () -> MinecraftOptionsIntegration.load(gameDirectory));
     }
 
     private static Map<String, String> readOptions(Path path) throws Exception {

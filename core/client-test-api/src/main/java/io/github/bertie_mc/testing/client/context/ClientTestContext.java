@@ -150,8 +150,7 @@ public interface ClientTestContext {
      * @return the function result
      * @throws E if the function throws it
      */
-    <T, E extends Throwable> T computeOnClient(
-            FailableFunction<Minecraft, T, E> function) throws E;
+    <T, E extends Throwable> T computeOnClient(FailableFunction<Minecraft, T, E> function) throws E;
 
     /**
      * Creates a fresh builder for an integrated world or in-process dedicated server.

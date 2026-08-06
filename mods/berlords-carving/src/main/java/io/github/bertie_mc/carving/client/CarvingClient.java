@@ -15,8 +15,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 @EventBusSubscriber(modid = Carving.MODID, value = Dist.CLIENT)
 public final class CarvingClient {
 
-    private CarvingClient() {
-    }
+    private CarvingClient() {}
 
     /** Called from OpenCarvingPayload.handle (client thread). */
     public static void openScreen(OpenCarvingPayload payload) {
@@ -28,8 +27,7 @@ public final class CarvingClient {
     @SubscribeEvent
     public static void onRegisterReloadListeners(RegisterClientReloadListenersEvent event) {
         // Re-read shape JSONs on resource reload (F3+T) so silhouette edits take effect live.
-        event.registerReloadListener(
-                (ResourceManagerReloadListener) resourceManager -> ShapeLibrary.clear());
+        event.registerReloadListener((ResourceManagerReloadListener) resourceManager -> ShapeLibrary.clear());
     }
 
     @SubscribeEvent

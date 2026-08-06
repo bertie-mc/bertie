@@ -1,10 +1,10 @@
 package io.github.bertie_mc.carving;
 
-import com.google.gson.JsonParser;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+
+import com.google.gson.JsonParser;
+import org.junit.jupiter.api.Test;
 
 class ArmorOverridesTest {
 
@@ -21,7 +21,8 @@ class ArmorOverridesTest {
                 }
                 """).getAsJsonObject());
 
-        assertEquals("immersive_armors:wooden_helmet",
+        assertEquals(
+                "immersive_armors:wooden_helmet",
                 parsed.get(CarvingMaterial.WOOD).get(ArmorKind.HELMET));
         assertFalse(parsed.get(CarvingMaterial.WOOD).containsKey(ArmorKind.BOOTS));
         assertEquals(1, parsed.size());

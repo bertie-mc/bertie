@@ -23,7 +23,6 @@ final class ClientTestTest {
 
     private static final class Example {
         @ClientTest
-        public static void example(ClientTestContext context) {
-        }
+        public static void example(ClientTestContext context) {}
     }
 }

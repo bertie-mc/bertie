@@ -25,12 +25,13 @@ abstract class ExtractNestedJars : DefaultTask() {
 
         archives.files.forEach { parent ->
             ZipFile(parent).use { archive ->
-                archive.entries().asSequence()
+                archive
+                    .entries()
+                    .asSequence()
                     .filter { entry ->
                         entry.name.startsWith("META-INF/jarjar/") &&
                             entry.name.endsWith(".jar")
-                    }
-                    .forEach { entry ->
+                    }.forEach { entry ->
                         val target = destination.resolve(entry.name.substringAfterLast('/'))
                         archive.getInputStream(entry).use { input ->
                             target.outputStream().use(input::copyTo)

@@ -22,9 +22,7 @@ public final class TomlLiteral implements TomlElement {
 
     @Override
     public boolean equals(Object other) {
-        return other instanceof TomlLiteral literal
-                && type == literal.type
-                && content.equals(literal.content);
+        return other instanceof TomlLiteral literal && type == literal.type && content.equals(literal.content);
     }
 
     @Override

@@ -22,58 +22,61 @@ class ClientTestPlugin : Plugin<Project> {
         project.pluginManager.withPlugin("bertie.pack") { configure(project) }
     }
 
-    private fun configure(project: Project) = with(project) {
-        val subject = extensions.getByType<TestSubject>()
-        val carrier = createTestCarrier(
-            sourceSetName = "clienttest",
-            modIdSuffix = "clienttests",
-            displayName = "${subject.id} client tests",
-            descriptionText = "Client tests for ${subject.id}",
-            side = MinecraftArtifactSide.CLIENT,
-        )
-        dependencies.add(
-            carrier.sourceSet.implementationConfigurationName,
-            dependencies.project(mapOf("path" to ":core:client-test-api")),
-        )
-        dependencies.add(
-            carrier.sourceSet.runtimeOnlyConfigurationName,
-            dependencies.project(mapOf("path" to ":core:client-test-driver")),
-        )
-
-        val neoForge = extensions.getByType<NeoForgeExtension>()
-        val loadedMods = registerTestCarrier(neoForge, carrier)
-        val runDirectory = layout.buildDirectory.dir("minecraft-runs/clienttest")
-        val report = layout.buildDirectory.file("test-results/clienttest/TEST-clienttest.xml")
-        val diagnostics = layout.buildDirectory.dir("test-diagnostics/clienttest")
-        val prepareInstance = tasks.register<Sync>("prepareClientTestInstance") {
-            into(runDirectory)
-            from(layout.projectDirectory.dir("src/main/instance"))
-            from(layout.projectDirectory.dir("src/clienttest/instance"))
-        }
-        neoForge.runs.register("clientTests") {
-            client()
-            sourceSet.set(carrier.sourceSet)
-            gameDirectory.set(runDirectory)
-            this.loadedMods.set(loadedMods)
-            systemProperties.put(
-                "bertie.clienttest.report",
-                report.map { it.asFile.absolutePath },
+    private fun configure(project: Project) =
+        with(project) {
+            val subject = extensions.getByType<TestSubject>()
+            val carrier =
+                createTestCarrier(
+                    sourceSetName = "clienttest",
+                    modIdSuffix = "clienttests",
+                    displayName = "${subject.id} client tests",
+                    descriptionText = "Client tests for ${subject.id}",
+                    side = MinecraftArtifactSide.CLIENT,
+                )
+            dependencies.add(
+                carrier.sourceSet.implementationConfigurationName,
+                dependencies.project(mapOf("path" to ":core:client-test-api")),
             )
-            systemProperties.put(
-                "bertie.clienttest.diagnostics",
-                diagnostics.map { it.asFile.absolutePath },
+            dependencies.add(
+                carrier.sourceSet.runtimeOnlyConfigurationName,
+                dependencies.project(mapOf("path" to ":core:client-test-driver")),
             )
-            taskBefore(prepareInstance)
-            addArm64LwjglNatives(this)
-        }
 
-        tasks.named("runClientTests") {
-            group = "verification"
-            description = "Runs the project's annotated client tests in Minecraft"
-            timeout.set(Duration.ofMinutes(60))
-            requireTestReport(report)
+            val neoForge = extensions.getByType<NeoForgeExtension>()
+            val loadedMods = registerTestCarrier(neoForge, carrier)
+            val runDirectory = layout.buildDirectory.dir("minecraft-runs/clienttest")
+            val report = layout.buildDirectory.file("test-results/clienttest/TEST-clienttest.xml")
+            val diagnostics = layout.buildDirectory.dir("test-diagnostics/clienttest")
+            val prepareInstance =
+                tasks.register<Sync>("prepareClientTestInstance") {
+                    into(runDirectory)
+                    from(layout.projectDirectory.dir("src/main/instance"))
+                    from(layout.projectDirectory.dir("src/clienttest/instance"))
+                }
+            neoForge.runs.register("clientTests") {
+                client()
+                sourceSet.set(carrier.sourceSet)
+                gameDirectory.set(runDirectory)
+                this.loadedMods.set(loadedMods)
+                systemProperties.put(
+                    "bertie.clienttest.report",
+                    report.map { it.asFile.absolutePath },
+                )
+                systemProperties.put(
+                    "bertie.clienttest.diagnostics",
+                    diagnostics.map { it.asFile.absolutePath },
+                )
+                taskBefore(prepareInstance)
+                addArm64LwjglNatives(this)
+            }
+
+            tasks.named("runClientTests") {
+                group = "verification"
+                description = "Runs the project's annotated client tests in Minecraft"
+                timeout.set(Duration.ofMinutes(60))
+                requireTestReport(report)
+            }
+            useMinecraftTestExecutionSlot("runClientTests")
+            runTestsTask().configure { dependsOn("runClientTests") }
         }
-        useMinecraftTestExecutionSlot("runClientTests")
-        runTestsTask().configure { dependsOn("runClientTests") }
-    }
 }

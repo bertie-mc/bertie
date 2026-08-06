@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.youkaisfeasts;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
@@ -17,6 +13,10 @@ import dev.xkmc.youkaishomecoming.content.pot.rack.DryingRackRecipe;
 import dev.xkmc.youkaishomecoming.content.pot.steamer.SteamingRecipe;
 import dev.xkmc.youkaishomecoming.content.pot.table.recipe.MixedCuisineRecipe;
 import dev.xkmc.youkaishomecoming.content.pot.table.recipe.OrderedCuisineRecipe;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -29,15 +29,15 @@ import net.neoforged.neoforge.fluids.FluidStack;
  * cuisine_fixed (no inputs, transforms a prior cuisine), immediate_soup (defines a liquid base, no item output).
  */
 public final class YoukaisFeastsEmiModule {
-    private YoukaisFeastsEmiModule() {
-    }
+    private YoukaisFeastsEmiModule() {}
 
     private static final RegistryAccess REG = RegistryAccess.EMPTY;
 
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
 
-        EmiRecipeCategory board = Categories.machine(reg, "youkaisfeasts_cuisine", "youkaisfeasts:cuisine_board", "Cuisine Board");
+        EmiRecipeCategory board =
+                Categories.machine(reg, "youkaisfeasts_cuisine", "youkaisfeasts:cuisine_board", "Cuisine Board");
         Recipes.forEach(rm, OrderedCuisineRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.input) d.itemIn(EmiIngredient.of(ing));
@@ -51,7 +51,8 @@ public final class YoukaisFeastsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(board, id, d));
         });
 
-        EmiRecipeCategory pot = Categories.machine(reg, "youkaisfeasts_cooking", "youkaisfeasts:small_iron_pot", "Pot Cooking");
+        EmiRecipeCategory pot =
+                Categories.machine(reg, "youkaisfeasts_cooking", "youkaisfeasts:small_iron_pot", "Pot Cooking");
         Recipes.forEach(rm, UnorderedCookingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getInput()) d.itemIn(EmiIngredient.of(ing));
@@ -60,7 +61,8 @@ public final class YoukaisFeastsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(pot, id, d));
         });
 
-        EmiRecipeCategory ferment = Categories.machine(reg, "youkaisfeasts_fermentation", "youkaisfeasts:fermentation_tank", "Fermentation");
+        EmiRecipeCategory ferment = Categories.machine(
+                reg, "youkaisfeasts_fermentation", "youkaisfeasts:fermentation_tank", "Fermentation");
         Recipes.forEach(rm, SimpleFermentationRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.ingredients) d.itemIn(EmiIngredient.of(ing));
@@ -81,7 +83,8 @@ public final class YoukaisFeastsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(kettle, id, d));
         });
 
-        EmiRecipeCategory basin = Categories.machine(reg, "youkaisfeasts_basin", "youkaisfeasts:wood_basin", "Wood Basin");
+        EmiRecipeCategory basin =
+                Categories.machine(reg, "youkaisfeasts_basin", "youkaisfeasts:wood_basin", "Wood Basin");
         Recipes.forEach(rm, SimpleBasinRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.input));
@@ -89,7 +92,8 @@ public final class YoukaisFeastsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(basin, id, d));
         });
 
-        EmiRecipeCategory steam = Categories.machine(reg, "youkaisfeasts_steaming", "youkaisfeasts:steamer_pot", "Steaming");
+        EmiRecipeCategory steam =
+                Categories.machine(reg, "youkaisfeasts_steaming", "youkaisfeasts:steamer_pot", "Steaming");
         Recipes.forEach(rm, SteamingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
@@ -98,7 +102,8 @@ public final class YoukaisFeastsEmiModule {
             reg.addRecipe(new GenericEmiRecipe(steam, id, d));
         });
 
-        EmiRecipeCategory dry = Categories.machine(reg, "youkaisfeasts_drying", "youkaisfeasts:drying_rack", "Drying Rack");
+        EmiRecipeCategory dry =
+                Categories.machine(reg, "youkaisfeasts_drying", "youkaisfeasts:drying_rack", "Drying Rack");
         Recipes.forEach(rm, DryingRackRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));

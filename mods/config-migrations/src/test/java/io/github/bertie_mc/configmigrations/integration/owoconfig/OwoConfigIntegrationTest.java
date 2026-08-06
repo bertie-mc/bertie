@@ -70,9 +70,7 @@ class OwoConfigIntegrationTest {
         integration.mergeDocument("demo", read(configPath));
 
         ConfigModel constrainedLiveValue = new ConfigModel();
-        integration.finishLoad(
-                "demo",
-                () -> save(configPath, constrainedLiveValue));
+        integration.finishLoad("demo", () -> save(configPath, constrainedLiveValue));
 
         assertEquals(4, read(configPath).getInt("value", -1));
         assertFalse(integration.prepareLoad("demo", configPath));
@@ -81,9 +79,7 @@ class OwoConfigIntegrationTest {
     private OwoConfigIntegration integration(int value) throws IOException {
         Path manifests = gameDirectory.resolve("manifests");
         Files.createDirectories(manifests);
-        Files.writeString(
-                manifests.resolve("demo.toml"),
-                """
+        Files.writeString(manifests.resolve("demo.toml"), """
                 config = "demo"
 
                 [[changes]]
@@ -103,10 +99,7 @@ class OwoConfigIntegrationTest {
     private void save(Path path, ConfigModel model) {
         try {
             Files.createDirectories(path.getParent());
-            Files.writeString(
-                    path,
-                    jankson.toJson(model).toJson(JsonGrammar.JANKSON),
-                    StandardCharsets.UTF_8);
+            Files.writeString(path, jankson.toJson(model).toJson(JsonGrammar.JANKSON), StandardCharsets.UTF_8);
         } catch (IOException exception) {
             throw new UncheckedIOException(exception);
         }

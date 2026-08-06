@@ -7,6 +7,5 @@ import net.neoforged.fml.common.Mod;
 public class RusticEngineerFix {
     public static final String MOD_ID = "rusticengineerfix";
 
-    public RusticEngineerFix(IEventBus ignored) {
-    }
+    public RusticEngineerFix(IEventBus ignored) {}
 }

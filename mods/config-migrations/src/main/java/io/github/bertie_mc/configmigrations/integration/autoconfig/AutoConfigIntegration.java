@@ -21,8 +21,7 @@ public final class AutoConfigIntegration {
         this.targets = targets;
     }
 
-    public static AutoConfigIntegration load(
-            MigrationManager migrations, Path directory, Path configDirectory) {
+    public static AutoConfigIntegration load(MigrationManager migrations, Path directory, Path configDirectory) {
         Map<String, List<Target>> targets = new HashMap<>();
         Set<Selector> selectors = new HashSet<>();
         for (MigrationManifest manifest : MigrationManifest.loadDirectory(directory)) {
@@ -35,8 +34,7 @@ public final class AutoConfigIntegration {
             }
 
             Path file = configDirectory.resolve(manifest.text("file"));
-            targets.computeIfAbsent(config, ignored -> new ArrayList<>())
-                    .add(new Target(partition, file, manifest));
+            targets.computeIfAbsent(config, ignored -> new ArrayList<>()).add(new Target(partition, file, manifest));
         }
         targets.replaceAll((ignored, value) -> List.copyOf(value));
         return new AutoConfigIntegration(migrations, Map.copyOf(targets));
@@ -57,6 +55,5 @@ public final class AutoConfigIntegration {
         }
     }
 
-    record Target(String partition, Path file, MigrationManifest manifest) {
-    }
+    record Target(String partition, Path file, MigrationManifest manifest) {}
 }

@@ -9,9 +9,9 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -22,24 +22,29 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
  * with no output (3rd error = break, or Esc-abandon). Error curve: 1 free, 2 = -30% durability,
  * 3 = break. The penalty (0-1 steps, -30%) rides on the carved part via {@link Carving#PENALTY}.
  */
-public record StationCarveResultPayload(BlockPos pos, int material, boolean armor, int kind,
-                                        int errors, boolean success) implements CustomPacketPayload {
+public record StationCarveResultPayload(
+        BlockPos pos, int material, boolean armor, int kind, int errors, boolean success)
+        implements CustomPacketPayload {
 
     public static final Type<StationCarveResultPayload> TYPE =
             new Type<>(ResourceLocation.fromNamespaceAndPath(Carving.MODID, "station_carve_result"));
 
-    public static final StreamCodec<RegistryFriendlyByteBuf, StationCarveResultPayload> STREAM_CODEC =
-            StreamCodec.of(
-                    (buf, p) -> {
-                        buf.writeBlockPos(p.pos());
-                        buf.writeVarInt(p.material());
-                        buf.writeBoolean(p.armor());
-                        buf.writeVarInt(p.kind());
-                        buf.writeVarInt(p.errors());
-                        buf.writeBoolean(p.success());
-                    },
-                    buf -> new StationCarveResultPayload(buf.readBlockPos(), buf.readVarInt(),
-                            buf.readBoolean(), buf.readVarInt(), buf.readVarInt(), buf.readBoolean()));
+    public static final StreamCodec<RegistryFriendlyByteBuf, StationCarveResultPayload> STREAM_CODEC = StreamCodec.of(
+            (buf, p) -> {
+                buf.writeBlockPos(p.pos());
+                buf.writeVarInt(p.material());
+                buf.writeBoolean(p.armor());
+                buf.writeVarInt(p.kind());
+                buf.writeVarInt(p.errors());
+                buf.writeBoolean(p.success());
+            },
+            buf -> new StationCarveResultPayload(
+                    buf.readBlockPos(),
+                    buf.readVarInt(),
+                    buf.readBoolean(),
+                    buf.readVarInt(),
+                    buf.readVarInt(),
+                    buf.readBoolean()));
 
     @Override
     public Type<StationCarveResultPayload> type() {
@@ -54,15 +59,19 @@ public record StationCarveResultPayload(BlockPos pos, int material, boolean armo
             if (!(player.level().getBlockEntity(payload.pos()) instanceof CarvingStationBlockEntity be)) {
                 return;
             }
-            if (player.distanceToSqr(payload.pos().getX() + 0.5, payload.pos().getY() + 0.5,
-                    payload.pos().getZ() + 0.5) >= 64.0) {
+            if (player.distanceToSqr(
+                            payload.pos().getX() + 0.5,
+                            payload.pos().getY() + 0.5,
+                            payload.pos().getZ() + 0.5)
+                    >= 64.0) {
                 return;
             }
             ItemStack input = be.inv.getStackInSlot(CarvingStationBlockEntity.SLOT_INPUT);
             CarvingMaterial mat = CarvingMaterial.byIndex(payload.material());
             // Validate the input is genuinely the claimed tier-2 slate (anti-spoof).
             if (!(input.getItem() instanceof SlateItem slate)
-                    || slate.material != mat || !slate.material.isStationOnly()
+                    || slate.material != mat
+                    || !slate.material.isStationOnly()
                     || slate.big != payload.armor()) {
                 return;
             }
@@ -79,8 +88,16 @@ public record StationCarveResultPayload(BlockPos pos, int material, boolean armo
             be.inv.extractItem(CarvingStationBlockEntity.SLOT_INPUT, 1, false);
 
             if (!payload.success() || !waterlogged) {
-                player.level().playSound(null, payload.pos().getX() + 0.5, payload.pos().getY() + 0.5,
-                        payload.pos().getZ() + 0.5, SoundEvents.ITEM_BREAK, SoundSource.BLOCKS, 0.8F, 0.9F);
+                player.level()
+                        .playSound(
+                                null,
+                                payload.pos().getX() + 0.5,
+                                payload.pos().getY() + 0.5,
+                                payload.pos().getZ() + 0.5,
+                                SoundEvents.ITEM_BREAK,
+                                SoundSource.BLOCKS,
+                                0.8F,
+                                0.9F);
                 return;
             }
 
@@ -91,8 +108,16 @@ public record StationCarveResultPayload(BlockPos pos, int material, boolean armo
                 return;
             }
             be.inv.setStackInSlot(CarvingStationBlockEntity.SLOT_OUTPUT, part);
-            player.level().playSound(null, payload.pos().getX() + 0.5, payload.pos().getY() + 0.5,
-                    payload.pos().getZ() + 0.5, SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS, 0.7F, 1.2F);
+            player.level()
+                    .playSound(
+                            null,
+                            payload.pos().getX() + 0.5,
+                            payload.pos().getY() + 0.5,
+                            payload.pos().getZ() + 0.5,
+                            SoundEvents.GRINDSTONE_USE,
+                            SoundSource.BLOCKS,
+                            0.7F,
+                            1.2F);
         });
     }
 }

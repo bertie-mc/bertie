@@ -113,8 +113,7 @@ class AutoConfigIntegrationTest {
         PartitionedConfig root = new PartitionedConfig();
         RecordingSerializer<PartitionedConfig> nativeSerializer =
                 new RecordingSerializer<>(root, new PartitionedConfig());
-        ConfigSerializer<PartitionedConfig> serializer =
-                wrap(integration, "partitioned", nativeSerializer);
+        ConfigSerializer<PartitionedConfig> serializer = wrap(integration, "partitioned", nativeSerializer);
 
         assertFalse(serializer.deserialize().server.enabled);
         assertTrue(root.client.enabled);
@@ -180,8 +179,7 @@ class AutoConfigIntegrationTest {
         private boolean enabled = true;
     }
 
-    private static final class RecordingSerializer<T extends ConfigData>
-            implements ConfigSerializer<T> {
+    private static final class RecordingSerializer<T extends ConfigData> implements ConfigSerializer<T> {
         private final T loaded;
         private final T defaults;
         private T serialized;

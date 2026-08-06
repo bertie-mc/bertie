@@ -1,13 +1,13 @@
 package io.github.bertie_mc.bertietiers.command;
 
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import io.github.bertie_mc.bertietiers.BertieTiers;
 import io.github.bertie_mc.bertietiers.config.ConfigManager;
 import io.github.bertie_mc.bertietiers.logic.Decision;
 import io.github.bertie_mc.bertietiers.logic.MiningAuthority;
 import io.github.bertie_mc.bertietiers.logic.RuntimeConfig;
-import com.mojang.brigadier.CommandDispatcher;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -32,8 +32,8 @@ public final class BertieTiersCommand {
     private BertieTiersCommand() {}
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
-        LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("bertietiers")
-                .requires(source -> source.hasPermission(2));
+        LiteralArgumentBuilder<CommandSourceStack> root =
+                Commands.literal("bertietiers").requires(source -> source.hasPermission(2));
 
         root.then(Commands.literal("reload").executes(BertieTiersCommand::reload));
         root.then(Commands.literal("status").executes(BertieTiersCommand::status));
@@ -50,12 +50,15 @@ public final class BertieTiersCommand {
     private static int reload(com.mojang.brigadier.context.CommandContext<CommandSourceStack> context) {
         ConfigManager.LoadResult result = ConfigManager.loadAndInstall();
         if (result.success()) {
-            context.getSource().sendSuccess(
-                    () -> Component.literal("Bertie Tiers reloaded: " + result.message()).withStyle(ChatFormatting.GREEN),
-                    true);
+            context.getSource()
+                    .sendSuccess(
+                            () -> Component.literal("Bertie Tiers reloaded: " + result.message())
+                                    .withStyle(ChatFormatting.GREEN),
+                            true);
             for (String warning : result.warnings()) {
-                context.getSource().sendSuccess(
-                        () -> Component.literal("warning: " + warning).withStyle(ChatFormatting.YELLOW), false);
+                context.getSource()
+                        .sendSuccess(
+                                () -> Component.literal("warning: " + warning).withStyle(ChatFormatting.YELLOW), false);
                 BertieTiers.LOGGER.warn("Bertie Tiers: {}", warning);
             }
             BertieTiers.LOGGER.info("Bertie Tiers reloaded: {}", result.message());
@@ -71,17 +74,22 @@ public final class BertieTiersCommand {
         RuntimeConfig config = MiningAuthority.config();
         context.getSource().sendSuccess(() -> Component.literal("Bertie Tiers"), false);
         context.getSource().sendSuccess(() -> Component.literal("  file: " + ConfigManager.configPath()), false);
-        context.getSource().sendSuccess(
-                () -> Component.literal("  tiers: " + config.source().tiers().size()
-                        + ", controlled blocks: " + config.controlledBlockCount()
-                        + ", tool matchers: " + config.source().toolMatcherCount()
-                        + ", exceptions: " + config.source().exceptions().size()),
-                false);
+        context.getSource()
+                .sendSuccess(
+                        () -> Component.literal(
+                                "  tiers: " + config.source().tiers().size()
+                                        + ", controlled blocks: " + config.controlledBlockCount()
+                                        + ", tool matchers: " + config.source().toolMatcherCount()
+                                        + ", exceptions: "
+                                        + config.source().exceptions().size()),
+                        false);
         for (var tier : config.source().tiers()) {
-            context.getSource().sendSuccess(
-                    () -> Component.literal("  - " + tier.id() + " (level " + tier.level() + "): "
-                            + tier.tools().size() + " tool(s), " + tier.blocks().size() + " block(s)"),
-                    false);
+            context.getSource()
+                    .sendSuccess(
+                            () -> Component.literal("  - " + tier.id() + " (level " + tier.level() + "): "
+                                    + tier.tools().size() + " tool(s), "
+                                    + tier.blocks().size() + " block(s)"),
+                            false);
         }
         return 1;
     }
@@ -95,8 +103,8 @@ public final class BertieTiersCommand {
         for (var tier : config.source().tiers()) {
             BertieTiers.LOGGER.info("tier '{}' level {}", tier.id(), tier.level());
             for (var tool : tier.tools()) {
-                BertieTiers.LOGGER.info("    tool  {}{}", tool.item(),
-                        tool.components().isEmpty() ? "" : " " + tool.components());
+                BertieTiers.LOGGER.info(
+                        "    tool  {}{}", tool.item(), tool.components().isEmpty() ? "" : " " + tool.components());
             }
             for (String blockId : tier.blocks()) {
                 BertieTiers.LOGGER.info("    block {}", blockId);
@@ -106,10 +114,11 @@ public final class BertieTiersCommand {
             BertieTiers.LOGGER.info("exception {} -> {}", rule.tool().item(), rule.blocks());
         }
         BertieTiers.LOGGER.info("=== end ===");
-        context.getSource().sendSuccess(
-                () -> Component.literal("Bertie Tiers table written to the server log ("
-                        + config.controlledBlockCount() + " controlled blocks)."),
-                false);
+        context.getSource()
+                .sendSuccess(
+                        () -> Component.literal("Bertie Tiers table written to the server log ("
+                                + config.controlledBlockCount() + " controlled blocks)."),
+                        false);
         return 1;
     }
 
@@ -126,31 +135,44 @@ public final class BertieTiersCommand {
         RuntimeConfig config = MiningAuthority.config();
 
         Integer blockLevel = config.blockLevel(block);
-        Decision decision = MiningAuthority.decide(tool, block.defaultBlockState(), player.level().registryAccess());
-        Integer toolLevel = config.toolLevel(tool, MiningAuthority.ops(player.level().registryAccess()));
+        Decision decision = MiningAuthority.decide(
+                tool, block.defaultBlockState(), player.level().registryAccess());
+        Integer toolLevel =
+                config.toolLevel(tool, MiningAuthority.ops(player.level().registryAccess()));
 
-        context.getSource().sendSuccess(() -> Component.literal("block  " + id + ": "
-                + (blockLevel == null ? "not controlled by Bertie" : "tier level " + blockLevel)), false);
-        context.getSource().sendSuccess(() -> Component.literal("tool   "
-                + BuiltInRegistries.ITEM.getKey(tool.getItem())
-                + (toolLevel == null ? ": in no tier" : ": tier level " + toolLevel)), false);
-        ChatFormatting colour = switch (decision) {
-            case ALLOW -> ChatFormatting.GREEN;
-            case DENY -> ChatFormatting.RED;
-            case PASS -> ChatFormatting.GRAY;
-        };
-        String explanation = switch (decision) {
-            case ALLOW -> blockLevel == null
-                    ? "ALLOW (not reachable)"
-                    : (toolLevel == null || toolLevel < blockLevel
-                            ? "ALLOW - granted by a point exception"
-                            : "ALLOW - tool level >= block level");
-            case DENY -> toolLevel == null
-                    ? "DENY - the block is controlled and this tool is in no tier"
-                    : "DENY - tool level " + toolLevel + " < block level " + blockLevel;
-            case PASS -> "PASS - Bertie does not control this block, original behaviour applies";
-        };
-        context.getSource().sendSuccess(() -> Component.literal("result " + explanation).withStyle(colour), false);
+        context.getSource()
+                .sendSuccess(
+                        () -> Component.literal("block  " + id + ": "
+                                + (blockLevel == null ? "not controlled by Bertie" : "tier level " + blockLevel)),
+                        false);
+        context.getSource()
+                .sendSuccess(
+                        () -> Component.literal("tool   "
+                                + BuiltInRegistries.ITEM.getKey(tool.getItem())
+                                + (toolLevel == null ? ": in no tier" : ": tier level " + toolLevel)),
+                        false);
+        ChatFormatting colour =
+                switch (decision) {
+                    case ALLOW -> ChatFormatting.GREEN;
+                    case DENY -> ChatFormatting.RED;
+                    case PASS -> ChatFormatting.GRAY;
+                };
+        String explanation =
+                switch (decision) {
+                    case ALLOW ->
+                        blockLevel == null
+                                ? "ALLOW (not reachable)"
+                                : (toolLevel == null || toolLevel < blockLevel
+                                        ? "ALLOW - granted by a point exception"
+                                        : "ALLOW - tool level >= block level");
+                    case DENY ->
+                        toolLevel == null
+                                ? "DENY - the block is controlled and this tool is in no tier"
+                                : "DENY - tool level " + toolLevel + " < block level " + blockLevel;
+                    case PASS -> "PASS - Bertie does not control this block, original behaviour applies";
+                };
+        context.getSource()
+                .sendSuccess(() -> Component.literal("result " + explanation).withStyle(colour), false);
         return 1;
     }
 }

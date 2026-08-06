@@ -26,8 +26,7 @@ import net.neoforged.neoforge.event.level.BlockEvent;
 @EventBusSubscriber(modid = PrimitiveRefined.MOD_ID)
 public final class PrFamilyGuard {
 
-    private PrFamilyGuard() {
-    }
+    private PrFamilyGuard() {}
 
     @SubscribeEvent
     static void onBlockPlaced(BlockEvent.EntityPlaceEvent event) {

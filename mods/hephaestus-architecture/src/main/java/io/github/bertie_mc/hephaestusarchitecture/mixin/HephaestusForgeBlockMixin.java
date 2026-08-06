@@ -1,17 +1,17 @@
 package io.github.bertie_mc.hephaestusarchitecture.mixin;
 
-import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayout;
-import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayouts;
-import io.github.bertie_mc.hephaestusarchitecture.structure.PedestalRouter;
 import com.stal111.forbidden_arcanus.common.block.HephaestusForgeBlock;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.HephaestusForgeBlockEntity;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.HephaestusForgeLevel;
 import com.stal111.forbidden_arcanus.common.block.properties.ModBlockStateProperties;
+import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayout;
+import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayouts;
+import io.github.bertie_mc.hephaestusarchitecture.structure.PedestalRouter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -33,10 +33,8 @@ public abstract class HephaestusForgeBlockMixin {
     private HephaestusForgeLevel level;
 
     @Inject(method = "updateState", at = @At("HEAD"), cancellable = true, remap = false)
-    private void hephaestusarchitecture$validateTierLayout(BlockState state,
-                                                            Level level,
-                                                            BlockPos pos,
-                                                            CallbackInfo ci) {
+    private void hephaestusarchitecture$validateTierLayout(
+            BlockState state, Level level, BlockPos pos, CallbackInfo ci) {
         if (!(level instanceof ServerLevel serverLevel)) {
             return;
         }
@@ -65,14 +63,15 @@ public abstract class HephaestusForgeBlockMixin {
      * multiblock could still start one ritual before the deactivation sync lands.
      */
     @Inject(method = "useItemOn", at = @At("HEAD"), cancellable = true, remap = false)
-    private void hephaestusarchitecture$rejectRitualOnInvalidLayout(ItemStack stack,
-                                                                    BlockState state,
-                                                                    Level level,
-                                                                    BlockPos pos,
-                                                                    Player player,
-                                                                    InteractionHand hand,
-                                                                    BlockHitResult hit,
-                                                                    CallbackInfoReturnable<ItemInteractionResult> cir) {
+    private void hephaestusarchitecture$rejectRitualOnInvalidLayout(
+            ItemStack stack,
+            BlockState state,
+            Level level,
+            BlockPos pos,
+            Player player,
+            InteractionHand hand,
+            BlockHitResult hit,
+            CallbackInfoReturnable<ItemInteractionResult> cir) {
         if (level instanceof ServerLevel serverLevel
                 && ForgeLayouts.match(serverLevel, pos, this.level.getAsInt()) == null) {
             if (state.getValue(ModBlockStateProperties.ACTIVATED)) {
@@ -86,12 +85,13 @@ public abstract class HephaestusForgeBlockMixin {
     }
 
     @Inject(method = "useWithoutItem", at = @At("HEAD"), cancellable = true, remap = false)
-    private void hephaestusarchitecture$rejectMenuOnInvalidLayout(BlockState state,
-                                                                  Level level,
-                                                                  BlockPos pos,
-                                                                  Player player,
-                                                                  BlockHitResult hit,
-                                                                  CallbackInfoReturnable<InteractionResult> cir) {
+    private void hephaestusarchitecture$rejectMenuOnInvalidLayout(
+            BlockState state,
+            Level level,
+            BlockPos pos,
+            Player player,
+            BlockHitResult hit,
+            CallbackInfoReturnable<InteractionResult> cir) {
         if (level instanceof ServerLevel serverLevel
                 && ForgeLayouts.match(serverLevel, pos, this.level.getAsInt()) == null) {
             if (state.getValue(ModBlockStateProperties.ACTIVATED)) {

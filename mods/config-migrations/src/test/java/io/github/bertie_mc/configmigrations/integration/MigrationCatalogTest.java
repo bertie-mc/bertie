@@ -31,9 +31,7 @@ class MigrationCatalogTest {
         Path migrations = gameDirectory.resolve("migrations");
         Files.createDirectories(migrations.resolve("neoforgee"));
 
-        assertThrows(
-                ConfigMigrationException.class,
-                () -> MigrationRuntime.validateIntegrationDirectories(migrations));
+        assertThrows(ConfigMigrationException.class, () -> MigrationRuntime.validateIntegrationDirectories(migrations));
     }
 
     private static String manifest() {

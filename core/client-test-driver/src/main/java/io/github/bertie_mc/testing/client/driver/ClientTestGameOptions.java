@@ -33,13 +33,11 @@ public final class ClientTestGameOptions {
     }
 
     static void captureBaseline(Options options) {
-        DEFAULTS.capture(
-                access -> ((OptionsAccessor) options).bertie$processOptions(access));
+        DEFAULTS.capture(access -> ((OptionsAccessor) options).bertie$processOptions(access));
     }
 
     public static void restore(Options options) {
-        DEFAULTS.restore(
-                access -> ((OptionsAccessor) options).bertie$processOptions(access));
+        DEFAULTS.restore(access -> ((OptionsAccessor) options).bertie$processOptions(access));
     }
 
     static final class GameOptionsBaseline {
@@ -56,8 +54,7 @@ public final class ClientTestGameOptions {
         }
     }
 
-    private record CapturingFieldAccess(Map<String, String> values)
-            implements Options.FieldAccess {
+    private record CapturingFieldAccess(Map<String, String> values) implements Options.FieldAccess {
         @Override
         public int process(String name, int value) {
             values.put(name, Integer.toString(value));
@@ -83,11 +80,7 @@ public final class ClientTestGameOptions {
         }
 
         @Override
-        public <T> T process(
-                String name,
-                T value,
-                Function<String, T> decoder,
-                Function<T, String> encoder) {
+        public <T> T process(String name, T value, Function<String, T> decoder, Function<T, String> encoder) {
             values.put(name, encoder.apply(value));
             return value;
         }
@@ -96,15 +89,13 @@ public final class ClientTestGameOptions {
         public <T> void process(String name, OptionInstance<T> option) {
             String encoded = option.codec()
                     .encodeStart(JsonOps.INSTANCE, option.get())
-                    .getOrThrow(message -> new IllegalStateException(
-                            "Cannot capture option " + name + ": " + message))
+                    .getOrThrow(message -> new IllegalStateException("Cannot capture option " + name + ": " + message))
                     .toString();
             values.put(name, encoded);
         }
     }
 
-    private record RestoringFieldAccess(Map<String, String> values)
-            implements Options.FieldAccess {
+    private record RestoringFieldAccess(Map<String, String> values) implements Options.FieldAccess {
         @Override
         public int process(String name, int value) {
             String encoded = values.get(name);
@@ -129,11 +120,7 @@ public final class ClientTestGameOptions {
         }
 
         @Override
-        public <T> T process(
-                String name,
-                T value,
-                Function<String, T> decoder,
-                Function<T, String> encoder) {
+        public <T> T process(String name, T value, Function<String, T> decoder, Function<T, String> encoder) {
             String encoded = values.get(name);
             return encoded == null ? value : decoder.apply(encoded);
         }
@@ -144,8 +131,8 @@ public final class ClientTestGameOptions {
             if (encoded != null) {
                 T restored = option.codec()
                         .parse(JsonOps.INSTANCE, JsonParser.parseString(encoded))
-                        .getOrThrow(message -> new IllegalStateException(
-                                "Cannot restore option " + name + ": " + message));
+                        .getOrThrow(
+                                message -> new IllegalStateException("Cannot restore option " + name + ": " + message));
                 option.set(restored);
             }
         }

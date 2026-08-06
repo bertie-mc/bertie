@@ -20,11 +20,11 @@ public class SweetBerryBushBlockMixin {
 
     @Redirect(
             method = "entityInside",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/world/entity/Entity;makeStuckInBlock(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/Vec3;)V"
-            )
-    )
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/world/entity/Entity;makeStuckInBlock(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/phys/Vec3;)V"))
     private void bushtweaks$noSlowdownWhileCrouching(Entity entity, BlockState state, Vec3 multiplier) {
         if (entity.isSteppingCarefully()) {
             // keep the fall-damage cushion the slowdown would have given

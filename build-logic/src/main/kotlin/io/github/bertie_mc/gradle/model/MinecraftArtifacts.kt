@@ -13,22 +13,24 @@ enum class MinecraftArtifactKind(
     SHADERPACK("shaderpacks", "shaderpacks", "zip"),
 }
 
-enum class MinecraftArtifactSide(val value: String) {
+enum class MinecraftArtifactSide(
+    val value: String,
+) {
     BOTH("both"),
     CLIENT("client"),
     SERVER("server"),
     ;
 
-    fun isIncludedOn(target: MinecraftArtifactSide): Boolean =
-        this == BOTH || this == target
+    fun isIncludedOn(target: MinecraftArtifactSide): Boolean = this == BOTH || this == target
 
     companion object {
-        fun parse(value: String): MinecraftArtifactSide = values().singleOrNull { side ->
-            side.value == value
-        } ?: throw IllegalArgumentException(
-            "Minecraft artifact side '$value' must be one of: " +
-                values().joinToString { side -> side.value },
-        )
+        fun parse(value: String): MinecraftArtifactSide =
+            values().singleOrNull { side ->
+                side.value == value
+            } ?: throw IllegalArgumentException(
+                "Minecraft artifact side '$value' must be one of: " +
+                    values().joinToString { side -> side.value },
+            )
     }
 }
 
@@ -37,8 +39,7 @@ sealed interface MinecraftArtifactSource {
     val module: String
     val version: String
 
-    fun notation(extension: String? = null): String =
-        "$group:$module:$version" + extension?.let { "@$it" }.orEmpty()
+    fun notation(extension: String? = null): String = "$group:$module:$version" + extension?.let { "@$it" }.orEmpty()
 }
 
 data class MavenArtifactSource(
@@ -78,19 +79,23 @@ data class MinecraftArtifact(
     val curseForge: CurseForgeArtifactSource?,
 ) {
     val gradleSource: MinecraftArtifactSource
-        get() = maven ?: modrinth ?: curseForge
-        ?: error("Minecraft artifact '$id' has no Gradle source")
+        get() =
+            maven ?: modrinth ?: curseForge
+                ?: error("Minecraft artifact '$id' has no Gradle source")
 
     val packwizSource: MinecraftArtifactSource
-        get() = modrinth ?: curseForge
-        ?: error("Minecraft artifact '$id' has no Modrinth or CurseForge source")
+        get() =
+            modrinth ?: curseForge
+                ?: error("Minecraft artifact '$id' has no Modrinth or CurseForge source")
 
     val catalogAlias: String
-        get() = id.split('-', '_').let { words ->
-            words.first() + words.drop(1).joinToString("") { word ->
-                word.replaceFirstChar(Char::uppercaseChar)
+        get() =
+            id.split('-', '_').let { words ->
+                words.first() +
+                    words.drop(1).joinToString("") { word ->
+                        word.replaceFirstChar(Char::uppercaseChar)
+                    }
             }
-        }
 }
 
 data class MinecraftArtifactManifest(
@@ -105,8 +110,10 @@ fun parseMinecraftArtifacts(contents: String): MinecraftArtifactManifest {
     val root = TomlParser().parse(StringReader(contents))
     val mods = root.artifacts(MinecraftArtifactKind.MOD)
     val shaderpacks = root.artifacts(MinecraftArtifactKind.SHADERPACK)
-    val aliases = mods.groupBy(MinecraftArtifact::catalogAlias)
-        .filterValues { artifacts -> artifacts.size > 1 }
+    val aliases =
+        mods
+            .groupBy(MinecraftArtifact::catalogAlias)
+            .filterValues { artifacts -> artifacts.size > 1 }
     require(aliases.isEmpty()) {
         "Minecraft artifact IDs produce colliding Gradle aliases: " +
             aliases.values.flatten().joinToString { artifact -> artifact.id }
@@ -116,42 +123,49 @@ fun parseMinecraftArtifacts(contents: String): MinecraftArtifactManifest {
 
 private fun UnmodifiableConfig.artifacts(kind: MinecraftArtifactKind): List<MinecraftArtifact> {
     val section = config(kind.table) ?: return emptyList()
-    return section.entrySet().map { entry ->
-        val id = entry.key
-        val artifact = entry.getRawValue<Any?>() as? UnmodifiableConfig
-            ?: error("Minecraft artifact '$id' must be a TOML table")
-        MinecraftArtifact(
-            id = id,
-            kind = kind,
-            side = artifact.optionalString("side")
-                ?.let(MinecraftArtifactSide::parse)
-                ?: MinecraftArtifactSide.BOTH,
-            maven = artifact.config("maven")?.let { source ->
-                MavenArtifactSource(
-                    coordinate = source.string("module"),
-                    version = source.string("version"),
-                )
-            },
-            modrinth = artifact.config("modrinth")?.let { source ->
-                ModrinthArtifactSource(
-                    projectId = source.string("project-id"),
-                    versionId = source.string("version-id"),
-                    filename = source.string("filename"),
-                )
-            },
-            curseForge = artifact.config("curseforge")?.let { source ->
-                CurseForgeArtifactSource(
-                    slug = source.string("slug"),
-                    projectId = source.long("project-id"),
-                    fileId = source.long("file-id"),
-                )
-            },
-        )
-    }.sortedBy(MinecraftArtifact::id)
+    return section
+        .entrySet()
+        .map { entry ->
+            val id = entry.key
+            val artifact =
+                entry.getRawValue<Any?>() as? UnmodifiableConfig
+                    ?: error("Minecraft artifact '$id' must be a TOML table")
+            MinecraftArtifact(
+                id = id,
+                kind = kind,
+                side =
+                    artifact
+                        .optionalString("side")
+                        ?.let(MinecraftArtifactSide::parse)
+                        ?: MinecraftArtifactSide.BOTH,
+                maven =
+                    artifact.config("maven")?.let { source ->
+                        MavenArtifactSource(
+                            coordinate = source.string("module"),
+                            version = source.string("version"),
+                        )
+                    },
+                modrinth =
+                    artifact.config("modrinth")?.let { source ->
+                        ModrinthArtifactSource(
+                            projectId = source.string("project-id"),
+                            versionId = source.string("version-id"),
+                            filename = source.string("filename"),
+                        )
+                    },
+                curseForge =
+                    artifact.config("curseforge")?.let { source ->
+                        CurseForgeArtifactSource(
+                            slug = source.string("slug"),
+                            projectId = source.long("project-id"),
+                            fileId = source.long("file-id"),
+                        )
+                    },
+            )
+        }.sortedBy(MinecraftArtifact::id)
 }
 
-private fun UnmodifiableConfig.config(name: String): UnmodifiableConfig? =
-    get<Any?>(name) as? UnmodifiableConfig
+private fun UnmodifiableConfig.config(name: String): UnmodifiableConfig? = get<Any?>(name) as? UnmodifiableConfig
 
 private fun UnmodifiableConfig.string(name: String): String =
     get<Any?>(name) as? String

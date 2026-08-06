@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.malum;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.sammy.malum.common.recipe.RuneworkingRecipe;
 import com.sammy.malum.common.recipe.SpiritFocusingRecipe;
 import com.sammy.malum.common.recipe.SpiritInfusionRecipe;
@@ -15,12 +11,15 @@ import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Malum's magic crafting. Spirit ingredients render as their shard item with the required count.
@@ -29,13 +28,13 @@ import java.util.List;
  * Reads each recipe's own public fields per research/malum-recipe-spec.md.
  */
 public final class MalumEmiModule {
-    private MalumEmiModule() {
-    }
+    private MalumEmiModule() {}
 
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
 
-        EmiRecipeCategory infusion = Categories.machine(reg, "malum_spirit_infusion", "malum:spirit_altar", "Spirit Infusion");
+        EmiRecipeCategory infusion =
+                Categories.machine(reg, "malum_spirit_infusion", "malum:spirit_altar", "Spirit Infusion");
         Recipes.forEach(rm, SpiritInfusionRecipe.class, (id, r) -> {
             EmiIngredient primary = NeoForgeEmiIngredient.of(r.input);
             List<EmiIngredient> extras = new ArrayList<>();
@@ -59,7 +58,8 @@ public final class MalumEmiModule {
             reg.addRecipe(new GenericEmiRecipe(rune, id, d));
         });
 
-        EmiRecipeCategory focus = Categories.machine(reg, "malum_spirit_focusing", "malum:spirit_crucible", "Spirit Focusing");
+        EmiRecipeCategory focus =
+                Categories.machine(reg, "malum_spirit_focusing", "malum:spirit_crucible", "Spirit Focusing");
         Recipes.forEach(rm, SpiritFocusingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.input));
@@ -73,7 +73,8 @@ public final class MalumEmiModule {
             reg.addRecipe(new GenericEmiRecipe(focus, id, d));
         });
 
-        EmiRecipeCategory trans = Categories.machine(reg, "malum_transmutation", "malum:arcane_spirit", "Spirit Transmutation");
+        EmiRecipeCategory trans =
+                Categories.machine(reg, "malum_transmutation", "malum:arcane_spirit", "Spirit Transmutation");
         Recipes.forEach(rm, UnchainedTransmutationRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.ingredient));

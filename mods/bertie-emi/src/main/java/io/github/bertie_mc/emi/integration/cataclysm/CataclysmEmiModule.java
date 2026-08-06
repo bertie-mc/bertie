@@ -1,15 +1,15 @@
 package io.github.bertie_mc.emi.integration.cataclysm;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.github.L_Ender.cataclysm.crafting.AltarOfAmethystRecipe;
 import com.github.L_Ender.cataclysm.crafting.WeaponfusionRecipe;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -20,12 +20,11 @@ import net.minecraft.world.item.crafting.Ingredient;
  * {@code getResultItem} (fixed stacks, so {@link RegistryAccess#EMPTY} suffices as the provider).
  */
 public final class CataclysmEmiModule {
-    private CataclysmEmiModule() {
-    }
+    private CataclysmEmiModule() {}
 
     public static void register(EmiRegistry reg) {
-        EmiRecipeCategory fusion = Categories.machine(reg,
-                "cataclysm_weapon_fusion", "cataclysm:mechanical_fusion_anvil", "Weapon Fusion");
+        EmiRecipeCategory fusion = Categories.machine(
+                reg, "cataclysm_weapon_fusion", "cataclysm:mechanical_fusion_anvil", "Weapon Fusion");
         Recipes.forEach(reg.getRecipeManager(), WeaponfusionRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             d.itemIn(EmiIngredient.of(r.getbaseIngredient()));
@@ -34,8 +33,8 @@ public final class CataclysmEmiModule {
             reg.addRecipe(new GenericEmiRecipe(fusion, id, d));
         });
 
-        EmiRecipeCategory amethyst = Categories.machine(reg,
-                "cataclysm_amethyst_bless", "cataclysm:altar_of_amethyst", "Amethyst Bless");
+        EmiRecipeCategory amethyst =
+                Categories.machine(reg, "cataclysm_amethyst_bless", "cataclysm:altar_of_amethyst", "Amethyst Bless");
         Recipes.forEach(reg.getRecipeManager(), AltarOfAmethystRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.getIngredients()) {

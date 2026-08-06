@@ -27,7 +27,8 @@ class PackagedResourcesTest {
             assertResource("assets/primitiverefined/models/block/" + block + ".json");
             assertResource("assets/primitiverefined/models/item/" + block + ".json");
             assertResource("data/primitiverefined/loot_table/blocks/" + block + ".json");
-            assertTrue(language.contains("\"block.primitiverefined." + block + "\""),
+            assertTrue(
+                    language.contains("\"block.primitiverefined." + block + "\""),
                     () -> "Missing English name for " + block);
         }
     }
@@ -40,7 +41,8 @@ class PackagedResourcesTest {
     }
 
     private static void assertResource(String path) {
-        assertNotNull(PackagedResourcesTest.class.getClassLoader().getResource(path),
+        assertNotNull(
+                PackagedResourcesTest.class.getClassLoader().getResource(path),
                 () -> "Missing packaged resource " + path);
     }
 

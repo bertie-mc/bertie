@@ -1,8 +1,5 @@
 package io.github.bertie_mc.primitiverefined.content.reader;
 
-import java.util.Collections;
-import java.util.List;
-
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.refinedmods.refinedstorage.api.resource.ResourceKey;
@@ -11,7 +8,8 @@ import com.refinedmods.refinedstorage.api.storage.tracked.InMemoryTrackedStorage
 import com.refinedmods.refinedstorage.common.api.storage.PlayerActor;
 import com.refinedmods.refinedstorage.common.api.support.resource.PlatformResourceKey;
 import com.refinedmods.refinedstorage.common.support.resource.ResourceCodecs;
-
+import java.util.Collections;
+import java.util.List;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.NbtOps;
@@ -32,10 +30,10 @@ import net.minecraft.nbt.Tag;
 final class ExternalStorageTrackedStorageRepository extends InMemoryTrackedStorageRepository {
 
     private static final Codec<ChangedByAt> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            ResourceCodecs.CODEC.fieldOf("resource").forGetter(ChangedByAt::resource),
-            Codec.STRING.fieldOf("changedBy").forGetter(ChangedByAt::changedBy),
-            Codec.LONG.fieldOf("changedAt").forGetter(ChangedByAt::changedAt)
-    ).apply(instance, ChangedByAt::new));
+                    ResourceCodecs.CODEC.fieldOf("resource").forGetter(ChangedByAt::resource),
+                    Codec.STRING.fieldOf("changedBy").forGetter(ChangedByAt::changedBy),
+                    Codec.LONG.fieldOf("changedAt").forGetter(ChangedByAt::changedAt))
+            .apply(instance, ChangedByAt::new));
 
     private static final Codec<List<ChangedByAt>> LIST_CODEC = Codec.list(CODEC);
 
@@ -58,18 +56,17 @@ final class ExternalStorageTrackedStorageRepository extends InMemoryTrackedStora
     }
 
     void fromTag(Tag tag, HolderLookup.Provider provider) {
-        LIST_CODEC.decode(provider.createSerializationContext(NbtOps.INSTANCE), tag).ifSuccess(result ->
-                result.getFirst().forEach(changedByAt -> super.update(
-                        changedByAt.resource(),
-                        new PlayerActor(changedByAt.changedBy()),
-                        changedByAt.changedAt())));
+        LIST_CODEC
+                .decode(provider.createSerializationContext(NbtOps.INSTANCE), tag)
+                .ifSuccess(result -> result.getFirst()
+                        .forEach(changedByAt -> super.update(
+                                changedByAt.resource(),
+                                new PlayerActor(changedByAt.changedBy()),
+                                changedByAt.changedAt())));
     }
 
     private List<ChangedByAt> trackedResources() {
-        return trackedResourcesByActorType
-                .getOrDefault(PlayerActor.class, Collections.emptyMap())
-                .entrySet()
-                .stream()
+        return trackedResourcesByActorType.getOrDefault(PlayerActor.class, Collections.emptyMap()).entrySet().stream()
                 .filter(entry -> entry.getKey() instanceof PlatformResourceKey)
                 .map(entry -> new ChangedByAt(
                         (PlatformResourceKey) entry.getKey(),
@@ -78,6 +75,5 @@ final class ExternalStorageTrackedStorageRepository extends InMemoryTrackedStora
                 .toList();
     }
 
-    private record ChangedByAt(PlatformResourceKey resource, String changedBy, long changedAt) {
-    }
+    private record ChangedByAt(PlatformResourceKey resource, String changedBy, long changedAt) {}
 }

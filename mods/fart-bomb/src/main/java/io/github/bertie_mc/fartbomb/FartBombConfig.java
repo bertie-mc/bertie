@@ -28,24 +28,20 @@ public final class FartBombConfig {
         builder.comment("Whoopee Cushion farts detonate when the wearer is on fire or standing on something hot.")
                 .push("explosion");
 
-        ENABLED = builder
-                .comment("Whether a fart can detonate at all.")
-                .define("enabled", true);
+        ENABLED = builder.comment("Whether a fart can detonate at all.").define("enabled", true);
 
-        POWER = builder
-                .comment("Explosion radius. A creeper is 3.0, TNT is 4.0. Damage reaches 2x this many blocks.")
+        POWER = builder.comment("Explosion radius. A creeper is 3.0, TNT is 4.0. Damage reaches 2x this many blocks.")
                 .defineInRange("power", 3.0, 0.0, 32.0);
 
-        BREAK_BLOCKS = builder
-                .comment("Whether the explosion destroys terrain. False still damages entities.")
+        BREAK_BLOCKS = builder.comment("Whether the explosion destroys terrain. False still damages entities.")
                 .define("breakBlocks", true);
 
-        START_FIRES = builder
-                .comment("Whether the explosion leaves fire behind. Compounds, since fire is itself a trigger.")
+        START_FIRES = builder.comment(
+                        "Whether the explosion leaves fire behind. Compounds, since fire is itself a trigger.")
                 .define("startFires", false);
 
-        TRIGGER_WHEN_BURNING = builder
-                .comment("Whether being on fire is enough on its own, with no hot block underfoot.")
+        TRIGGER_WHEN_BURNING = builder.comment(
+                        "Whether being on fire is enough on its own, with no hot block underfoot.")
                 .define("triggerWhenBurning", true);
 
         builder.pop();
@@ -53,12 +49,11 @@ public final class FartBombConfig {
         builder.comment("The deeper fart that replaces the normal one when a fart detonates.")
                 .push("sound");
 
-        REPLACE_SOUND = builder
-                .comment("Swap the normal fart for the deeper one. False keeps the normal fart and still explodes.")
+        REPLACE_SOUND = builder.comment(
+                        "Swap the normal fart for the deeper one. False keeps the normal fart and still explodes.")
                 .define("replaceSound", true);
 
-        SOUND_VOLUME = builder
-                .comment(
+        SOUND_VOLUME = builder.comment(
                         "How far the detonation fart carries. This is range, NOT loudness:",
                         "Minecraft clamps a sound's final volume to 1.0, so values above 1.0 only widen",
                         "the radius over which it can be heard. 1.0 matches a normal fart.")
@@ -69,12 +64,10 @@ public final class FartBombConfig {
         builder.comment("Where the explosion is centred, relative to the midpoint of the player's hitbox.")
                 .push("placement");
 
-        OFFSET_BEHIND = builder
-                .comment("Blocks behind the player, along the direction they face.")
+        OFFSET_BEHIND = builder.comment("Blocks behind the player, along the direction they face.")
                 .defineInRange("offsetBehind", 0.3, 0.0, 4.0);
 
-        OFFSET_BELOW = builder
-                .comment("Blocks below the midpoint of the player's hitbox.")
+        OFFSET_BELOW = builder.comment("Blocks below the midpoint of the player's hitbox.")
                 .defineInRange("offsetBelow", 0.3, 0.0, 4.0);
 
         builder.pop();

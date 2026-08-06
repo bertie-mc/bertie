@@ -17,8 +17,7 @@ public final class NeoForgeIcebergConfigSpec implements IConfigSpec {
     }
 
     @Override
-    public void validateSpec(ModConfig config) {
-    }
+    public void validateSpec(ModConfig config) {}
 
     @Override
     public boolean isCorrect(UnmodifiableCommentedConfig config) {
@@ -49,9 +48,7 @@ public final class NeoForgeIcebergConfigSpec implements IConfigSpec {
             settings.set(List.of("enabled"), true);
         }
         Object count = settings.getRaw(List.of("count"));
-        if (!(count instanceof Number number)
-                || number.intValue() < 1
-                || number.intValue() > 10) {
+        if (!(count instanceof Number number) || number.intValue() < 1 || number.intValue() > 10) {
             settings.set(List.of("count"), 3);
         }
     }

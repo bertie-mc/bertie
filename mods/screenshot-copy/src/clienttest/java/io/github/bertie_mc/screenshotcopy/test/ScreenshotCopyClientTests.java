@@ -20,32 +20,27 @@ public final class ScreenshotCopyClientTests {
     private static final String SCREENSHOT_NAME = "bertie-screenshot-copy-clienttest.png";
     private static final byte[] SENTINEL_PIXEL = {0x13, 0x37, 0x42, (byte) 0xFF};
 
-    private ScreenshotCopyClientTests() {
-    }
+    private ScreenshotCopyClientTests() {}
 
     @ClientTest
     public static void copiesScreenshotThroughNeoForgeEvent(ClientTestContext context) {
-        Path screenshot = context.computeOnClient(client -> client.gameDirectory.toPath()
-                .resolve(Screenshot.SCREENSHOT_DIR)
-                .resolve(SCREENSHOT_NAME));
+        Path screenshot = context.computeOnClient(client ->
+                client.gameDirectory.toPath().resolve(Screenshot.SCREENSHOT_DIR).resolve(SCREENSHOT_NAME));
         try {
             Files.deleteIfExists(screenshot);
         } catch (IOException exception) {
             throw new AssertionError("Could not clear the previous client-test screenshot", exception);
         }
 
-        try (Clipboard clipboard = new Clipboard(); ImageData sentinel = new ImageData(1, 1, SENTINEL_PIXEL)) {
+        try (Clipboard clipboard = new Clipboard();
+                ImageData sentinel = new ImageData(1, 1, SENTINEL_PIXEL)) {
             clipboard.setImage(sentinel);
         }
 
         CompletableFuture<Component> saved = new CompletableFuture<>();
         int[] expectedSize = context.computeOnClient(client -> {
             var target = client.getMainRenderTarget();
-            Screenshot.grab(
-                    client.gameDirectory,
-                    SCREENSHOT_NAME,
-                    target,
-                    saved::complete);
+            Screenshot.grab(client.gameDirectory, SCREENSHOT_NAME, target, saved::complete);
             return new int[] {target.width, target.height};
         });
 
@@ -59,9 +54,8 @@ public final class ScreenshotCopyClientTests {
                 Clipboard clipboard = new Clipboard();
                 ImageData clipboardImage = clipboard.getImage()) {
             if (savedImage.getWidth() != expectedSize[0] || savedImage.getHeight() != expectedSize[1]) {
-                throw new AssertionError(
-                        "Saved screenshot size was " + savedImage.getWidth() + "x" + savedImage.getHeight()
-                                + "; expected " + expectedSize[0] + "x" + expectedSize[1]);
+                throw new AssertionError("Saved screenshot size was " + savedImage.getWidth() + "x"
+                        + savedImage.getHeight() + "; expected " + expectedSize[0] + "x" + expectedSize[1]);
             }
 
             byte[] expectedPixels = rgbaBytes(savedImage.getPixelsRGBA());

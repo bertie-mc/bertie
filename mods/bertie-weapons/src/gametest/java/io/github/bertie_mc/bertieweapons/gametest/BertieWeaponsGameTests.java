@@ -89,11 +89,10 @@ public final class BertieWeaponsGameTests {
         ItemStack base = weapon(helper);
         double baseDamage = attackDamageAddValue(base);
 
-        ItemStack upgraded = WeaponUpgrades.applyStatTier(base, registries)
-                .orElseGet(() -> {
-                    helper.fail("first stat tier was refused");
-                    return ItemStack.EMPTY;
-                });
+        ItemStack upgraded = WeaponUpgrades.applyStatTier(base, registries).orElseGet(() -> {
+            helper.fail("first stat tier was refused");
+            return ItemStack.EMPTY;
+        });
 
         if (WeaponUpgrades.readState(upgraded, List.of()).statTier() != 1) {
             helper.fail("stat tier did not reach 1");
@@ -144,7 +143,8 @@ public final class BertieWeaponsGameTests {
 
         for (int i = 0; i < ring.size(); i++) {
             String element = ring.get(i);
-            stack = WeaponUpgrades.applyElement(stack, orbKey(element), registries).orElse(ItemStack.EMPTY);
+            stack = WeaponUpgrades.applyElement(stack, orbKey(element), registries)
+                    .orElse(ItemStack.EMPTY);
             if (stack.isEmpty()) {
                 helper.fail("element " + element + " was refused");
                 return;
@@ -176,8 +176,7 @@ public final class BertieWeaponsGameTests {
     public static void anElementIsRefusedTwiceInOneTier(GameTestHelper helper) {
         HolderLookup.Provider registries = registries(helper);
         List<String> ring = WeaponUpgrades.elementRing(registries);
-        ItemStack stack = WeaponUpgrades
-                .applyElement(weapon(helper), orbKey(ring.get(0)), registries)
+        ItemStack stack = WeaponUpgrades.applyElement(weapon(helper), orbKey(ring.get(0)), registries)
                 .orElse(ItemStack.EMPTY);
         if (stack.isEmpty()) {
             helper.fail("first element was refused");
@@ -198,10 +197,10 @@ public final class BertieWeaponsGameTests {
 
         ItemStack stack = weapon(helper);
         stack.enchant(
-                server.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS),
-                3);
+                server.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS), 3);
         stack.setDamageValue(17);
-        stack.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,
+        stack.set(
+                net.minecraft.core.component.DataComponents.CUSTOM_NAME,
                 net.minecraft.network.chat.Component.literal("Berlord's Toothpick"));
 
         ItemStack upgraded = WeaponUpgrades.applyStatTier(stack, registries).orElse(ItemStack.EMPTY);
@@ -211,14 +210,18 @@ public final class BertieWeaponsGameTests {
         }
         // One more pass through the other track, to prove the two do not clobber each other.
         List<String> ring = WeaponUpgrades.elementRing(registries);
-        upgraded = WeaponUpgrades.applyElement(upgraded, orbKey(ring.get(0)), registries).orElse(ItemStack.EMPTY);
+        upgraded = WeaponUpgrades.applyElement(upgraded, orbKey(ring.get(0)), registries)
+                .orElse(ItemStack.EMPTY);
         if (upgraded.isEmpty()) {
             helper.fail("element was refused after a stat tier");
             return;
         }
 
-        if (upgraded.getEnchantments().getLevel(
-                server.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SHARPNESS)) != 3) {
+        if (upgraded.getEnchantments()
+                        .getLevel(server.registryAccess()
+                                .lookupOrThrow(Registries.ENCHANTMENT)
+                                .getOrThrow(Enchantments.SHARPNESS))
+                != 3) {
             helper.fail("enchantment was lost");
         }
         if (upgraded.getDamageValue() != 17) {
@@ -239,10 +242,10 @@ public final class BertieWeaponsGameTests {
         HolderLookup.Provider registries = registries(helper);
         HolderLookup.RegistryLookup<io.redspace.ironsspellbooks.item.armor.UpgradeOrbType> lookup =
                 registries.lookupOrThrow(WeaponUpgrades.UPGRADE_ORB_REGISTRY);
-        Holder<io.redspace.ironsspellbooks.item.armor.UpgradeOrbType> cooldown = lookup
-                .get(net.minecraft.resources.ResourceKey.create(
-                        WeaponUpgrades.UPGRADE_ORB_REGISTRY,
-                        ResourceLocation.parse("irons_spellbooks:cooldown")))
+        Holder<io.redspace.ironsspellbooks.item.armor.UpgradeOrbType> cooldown = lookup.get(
+                        net.minecraft.resources.ResourceKey.create(
+                                WeaponUpgrades.UPGRADE_ORB_REGISTRY,
+                                ResourceLocation.parse("irons_spellbooks:cooldown")))
                 .orElseThrow();
 
         ItemStack stack = weapon(helper);
@@ -289,10 +292,12 @@ public final class BertieWeaponsGameTests {
     public static void spellCraftMatchesAndRejectsOffRingOrbs(GameTestHelper helper) {
         MinecraftServer server = helper.getLevel().getServer();
 
-        ItemStack fireOrb = new ItemStack(
-                BuiltInRegistries.ITEM.get(ResourceLocation.parse("irons_spellbooks:fire_upgrade_orb")));
+        ItemStack fireOrb =
+                new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("irons_spellbooks:fire_upgrade_orb")));
         CraftingInput good = CraftingInput.of(2, 1, List.of(weapon(helper), fireOrb));
-        if (server.getRecipeManager().getRecipeFor(RecipeType.CRAFTING, good, helper.getLevel()).isEmpty()) {
+        if (server.getRecipeManager()
+                .getRecipeFor(RecipeType.CRAFTING, good, helper.getLevel())
+                .isEmpty()) {
             helper.fail("weapon + fire upgrade orb did not match");
             return;
         }
@@ -301,7 +306,9 @@ public final class BertieWeaponsGameTests {
         ItemStack cooldownOrb = new ItemStack(
                 BuiltInRegistries.ITEM.get(ResourceLocation.parse("irons_spellbooks:cooldown_upgrade_orb")));
         CraftingInput bad = CraftingInput.of(2, 1, List.of(weapon(helper), cooldownOrb));
-        if (server.getRecipeManager().getRecipeFor(RecipeType.CRAFTING, bad, helper.getLevel()).isPresent()) {
+        if (server.getRecipeManager()
+                .getRecipeFor(RecipeType.CRAFTING, bad, helper.getLevel())
+                .isPresent()) {
             helper.fail("an orb outside the ring was accepted");
         }
         helper.succeed();
@@ -309,8 +316,8 @@ public final class BertieWeaponsGameTests {
 
     @GameTest(template = TEMPLATE)
     public static void nonUniqueWeaponsAreNotUpgradable(GameTestHelper helper) {
-        ItemStack plain = new ItemStack(
-                BuiltInRegistries.ITEM.get(ResourceLocation.parse("simplyswords:iron_longsword")));
+        ItemStack plain =
+                new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("simplyswords:iron_longsword")));
         if (WeaponUpgrades.isUpgradable(plain)) {
             helper.fail("a non-unique Simply Swords weapon is in the upgradable tag");
         }
@@ -322,8 +329,8 @@ public final class BertieWeaponsGameTests {
 
     // ---- helpers ----------------------------------------------------------------------------
 
-    private static net.minecraft.resources.ResourceKey<io.redspace.ironsspellbooks.item.armor.UpgradeOrbType>
-            orbKey(String id) {
+    private static net.minecraft.resources.ResourceKey<io.redspace.ironsspellbooks.item.armor.UpgradeOrbType> orbKey(
+            String id) {
         return net.minecraft.resources.ResourceKey.create(
                 WeaponUpgrades.UPGRADE_ORB_REGISTRY, ResourceLocation.parse(id));
     }
@@ -346,8 +353,7 @@ public final class BertieWeaponsGameTests {
      * {@code getAttributeModifiers}, which fires {@code ItemAttributeModifierEvent} and therefore
      * runs Iron's upgrade handler. This is the path a real player's damage goes through.
      */
-    private static double modifierAmount(
-            ItemStack stack, String attributeId, AttributeModifier.Operation operation) {
+    private static double modifierAmount(ItemStack stack, String attributeId, AttributeModifier.Operation operation) {
         Holder<Attribute> attribute = BuiltInRegistries.ATTRIBUTE
                 .getHolder(ResourceLocation.parse(attributeId))
                 .orElseThrow();

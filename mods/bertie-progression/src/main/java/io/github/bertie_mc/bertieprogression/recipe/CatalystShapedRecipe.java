@@ -2,7 +2,6 @@ package io.github.bertie_mc.bertieprogression.recipe;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -30,8 +29,13 @@ public class CatalystShapedRecipe extends ShapedRecipe {
     private final ItemStack output;
     private final Ingredient catalyst;
 
-    public CatalystShapedRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern,
-                                ItemStack result, boolean showNotification, Ingredient catalyst) {
+    public CatalystShapedRecipe(
+            String group,
+            CraftingBookCategory category,
+            ShapedRecipePattern pattern,
+            ItemStack result,
+            boolean showNotification,
+            Ingredient catalyst) {
         super(group, category, pattern, result, showNotification);
         this.output = result;
         this.catalyst = catalyst;
@@ -61,16 +65,19 @@ public class CatalystShapedRecipe extends ShapedRecipe {
     public static class Serializer implements RecipeSerializer<CatalystShapedRecipe> {
 
         public static final MapCodec<CatalystShapedRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
-                com.mojang.serialization.Codec.STRING.optionalFieldOf("group", "")
-                        .forGetter(ShapedRecipe::getGroup),
-                CraftingBookCategory.CODEC.optionalFieldOf("category", CraftingBookCategory.MISC)
-                        .forGetter(ShapedRecipe::category),
-                ShapedRecipePattern.MAP_CODEC.forGetter(r -> r.pattern),
-                ItemStack.STRICT_CODEC.fieldOf("result").forGetter(r -> r.output),
-                com.mojang.serialization.Codec.BOOL.optionalFieldOf("show_notification", true)
-                        .forGetter(ShapedRecipe::showNotification),
-                Ingredient.CODEC.fieldOf("catalyst").forGetter(CatalystShapedRecipe::catalyst)
-        ).apply(inst, CatalystShapedRecipe::new));
+                        com.mojang.serialization.Codec.STRING
+                                .optionalFieldOf("group", "")
+                                .forGetter(ShapedRecipe::getGroup),
+                        CraftingBookCategory.CODEC
+                                .optionalFieldOf("category", CraftingBookCategory.MISC)
+                                .forGetter(ShapedRecipe::category),
+                        ShapedRecipePattern.MAP_CODEC.forGetter(r -> r.pattern),
+                        ItemStack.STRICT_CODEC.fieldOf("result").forGetter(r -> r.output),
+                        com.mojang.serialization.Codec.BOOL
+                                .optionalFieldOf("show_notification", true)
+                                .forGetter(ShapedRecipe::showNotification),
+                        Ingredient.CODEC.fieldOf("catalyst").forGetter(CatalystShapedRecipe::catalyst))
+                .apply(inst, CatalystShapedRecipe::new));
 
         public static final StreamCodec<RegistryFriendlyByteBuf, CatalystShapedRecipe> STREAM_CODEC =
                 StreamCodec.of(Serializer::toNetwork, Serializer::fromNetwork);

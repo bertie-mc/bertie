@@ -18,8 +18,7 @@ import java.util.List;
 
 /** Isolates optional Resourceful Config API linkage from the migration catalog. */
 final class ResourcefulConfigBridge {
-    private ResourcefulConfigBridge() {
-    }
+    private ResourcefulConfigBridge() {}
 
     static void migrate(
             MigrationManager migrations,
@@ -50,15 +49,12 @@ final class ResourcefulConfigBridge {
         migration.commit();
     }
 
-    private static void mergeConfig(
-            ResourcefulConfig config, UnmodifiableConfig fragment, List<String> path) {
+    private static void mergeConfig(ResourcefulConfig config, UnmodifiableConfig fragment, List<String> path) {
         merge(fragment, path, config.entries(), config.categories());
     }
 
     private static void mergeObject(
-            ResourcefulConfigObjectEntry object,
-            UnmodifiableConfig fragment,
-            List<String> path) {
+            ResourcefulConfigObjectEntry object, UnmodifiableConfig fragment, List<String> path) {
         merge(fragment, path, object.entries(), new LinkedHashMap<>());
     }
 
@@ -91,8 +87,7 @@ final class ResourcefulConfigBridge {
         }
     }
 
-    private static void set(
-            ResourcefulConfigValueEntry entry, Object value, List<String> path) {
+    private static void set(ResourcefulConfigValueEntry entry, Object value, List<String> path) {
         if (value instanceof List<?> values) {
             Object[] converted = new Object[values.size()];
             for (int index = 0; index < values.size(); index++) {
@@ -115,8 +110,7 @@ final class ResourcefulConfigBridge {
         }
     }
 
-    private static Object scalar(
-            ResourcefulConfigValueEntry entry, Object value, List<String> path) {
+    private static Object scalar(ResourcefulConfigValueEntry entry, Object value, List<String> path) {
         return switch (entry.type()) {
             case BYTE -> number(value, path).byteValue();
             case SHORT -> number(value, path).shortValue();
@@ -152,8 +146,7 @@ final class ResourcefulConfigBridge {
         throw unsupported(path);
     }
 
-    private static Enum<?> enumValue(
-            ResourcefulConfigValueEntry entry, Object value, List<String> path) {
+    private static Enum<?> enumValue(ResourcefulConfigValueEntry entry, Object value, List<String> path) {
         Enum<?> parsed = ParsingUtils.parseEnum(entry.objectType(), string(value, path));
         if (parsed != null) {
             return parsed;
@@ -167,8 +160,7 @@ final class ResourcefulConfigBridge {
     }
 
     private static ConfigMigrationException unknown(List<String> path) {
-        return new ConfigMigrationException(
-                "Unknown Resourceful Config setting " + String.join(".", path));
+        return new ConfigMigrationException("Unknown Resourceful Config setting " + String.join(".", path));
     }
 
     private static ConfigMigrationException unsupported(List<String> path) {

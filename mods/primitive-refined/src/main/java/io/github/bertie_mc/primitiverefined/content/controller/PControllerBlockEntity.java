@@ -1,16 +1,14 @@
 package io.github.bertie_mc.primitiverefined.content.controller;
 
-import io.github.bertie_mc.primitiverefined.PrStress;
-import io.github.bertie_mc.primitiverefined.network.PrControllerNode;
-import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
-import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import com.refinedmods.refinedstorage.api.network.Network;
 import com.simibubi.create.content.kinetics.base.IRotate;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
-
+import io.github.bertie_mc.primitiverefined.PrStress;
+import io.github.bertie_mc.primitiverefined.network.PrControllerNode;
+import io.github.bertie_mc.primitiverefined.network.PrNetworkNodeContainer;
+import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import java.util.List;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -130,14 +128,13 @@ public class PControllerBlockEntity extends KineticBlockEntity implements PrNode
             return;
         }
 
-        boolean shouldBeLit = node.isActive()
-                && PControllerBlock.hasValidCogwheelAbove(level, worldPosition, state);
+        boolean shouldBeLit = node.isActive() && PControllerBlock.hasValidCogwheelAbove(level, worldPosition, state);
 
         if (state.getValue(PControllerBlock.LIT) != shouldBeLit) {
             // switchToBlockState rather than setBlock: it swaps the state without tearing
             // down and rebuilding the kinetic network the controller is part of.
-            KineticBlockEntity.switchToBlockState(level, worldPosition,
-                    state.setValue(PControllerBlock.LIT, shouldBeLit));
+            KineticBlockEntity.switchToBlockState(
+                    level, worldPosition, state.setValue(PControllerBlock.LIT, shouldBeLit));
         }
     }
 
@@ -155,8 +152,13 @@ public class PControllerBlockEntity extends KineticBlockEntity implements PrNode
      * would need the mirror case on Create's own cogwheel entity, which we cannot touch.
      */
     @Override
-    public float propagateRotationTo(KineticBlockEntity target, BlockState stateFrom, BlockState stateTo,
-                                     BlockPos diff, boolean connectedViaAxes, boolean connectedViaCogs) {
+    public float propagateRotationTo(
+            KineticBlockEntity target,
+            BlockState stateFrom,
+            BlockState stateTo,
+            BlockPos diff,
+            boolean connectedViaAxes,
+            boolean connectedViaCogs) {
         if (!isCogwheelAbove(diff, stateFrom, stateTo)) {
             return 0;
         }
@@ -180,8 +182,7 @@ public class PControllerBlockEntity extends KineticBlockEntity implements PrNode
             return false;
         }
         Direction.Axis cogAxis = ((IRotate) cogState.getBlock()).getRotationAxis(cogState);
-        return !cogAxis.isVertical()
-                && cogAxis != controllerState.getValue(PControllerBlock.HORIZONTAL_AXIS);
+        return !cogAxis.isVertical() && cogAxis != controllerState.getValue(PControllerBlock.HORIZONTAL_AXIS);
     }
 
     /**
@@ -203,28 +204,46 @@ public class PControllerBlockEntity extends KineticBlockEntity implements PrNode
         boolean isController = state.getBlock() instanceof PControllerBlock;
         boolean cogOk = isController && PControllerBlock.hasValidCogwheelAbove(level, worldPosition, state);
 
-        tooltip.add(Component.literal(" ").append(
-                Component.literal("Primitive Controller").withStyle(ChatFormatting.GRAY)));
-        line(tooltip, "cogwheel above", cogOk,
-                above.isAir() ? "nothing there"
+        tooltip.add(Component.literal(" ")
+                .append(Component.literal("Primitive Controller").withStyle(ChatFormatting.GRAY)));
+        line(
+                tooltip,
+                "cogwheel above",
+                cogOk,
+                above.isAir()
+                        ? "nothing there"
                         : above.getBlock().getName().getString()
-                          + (above.hasProperty(com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock.AXIS)
-                             ? " axis=" + above.getValue(
-                                     com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock.AXIS)
-                             : ""));
+                                + (above.hasProperty(
+                                                com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock
+                                                        .AXIS)
+                                        ? " axis="
+                                                + above.getValue(
+                                                        com.simibubi.create.content.kinetics.base
+                                                                .RotatedPillarKineticBlock.AXIS)
+                                        : ""));
         if (isController) {
-            line(tooltip, "controller axis", true,
+            line(
+                    tooltip,
+                    "controller axis",
+                    true,
                     state.getValue(PControllerBlock.HORIZONTAL_AXIS).toString());
         }
         line(tooltip, "speed", getSpeed() != 0, String.format("%.1f rpm", getSpeed()));
         line(tooltip, "not overstressed", !isOverStressed(), isOverStressed() ? "overstressed" : "ok");
 
-        line(tooltip, "controllers on network", controllers == 1,
-                controllers == 0 ? "none - not on a network"
+        line(
+                tooltip,
+                "controllers on network",
+                controllers == 1,
+                controllers == 0
+                        ? "none - not on a network"
                         : controllers == 1 ? "1" : controllers + " - a system takes one");
         line(tooltip, "network demand", true, String.format("%.1f su", demand));
         if (isController) {
-            line(tooltip, "lit", state.getValue(PControllerBlock.LIT),
+            line(
+                    tooltip,
+                    "lit",
+                    state.getValue(PControllerBlock.LIT),
                     state.getValue(PControllerBlock.LIT) ? "on" : "off");
         }
         return true;
@@ -246,8 +265,7 @@ public class PControllerBlockEntity extends KineticBlockEntity implements PrNode
 
     private static void line(List<Component> tooltip, String label, boolean ok, String detail) {
         tooltip.add(Component.literal("    ")
-                .append(Component.literal(ok ? "✔ " : "✘ ")
-                        .withStyle(ok ? ChatFormatting.GREEN : ChatFormatting.RED))
+                .append(Component.literal(ok ? "✔ " : "✘ ").withStyle(ok ? ChatFormatting.GREEN : ChatFormatting.RED))
                 .append(Component.literal(label + ": ").withStyle(ChatFormatting.GRAY))
                 .append(Component.literal(detail).withStyle(ChatFormatting.WHITE)));
     }

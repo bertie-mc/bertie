@@ -1,15 +1,10 @@
 package io.github.bertie_mc.bertieblackhole.config;
 
-import io.github.bertie_mc.bertieblackhole.BertieBlackHole;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.neoforged.fml.loading.FMLPaths;
-
-import javax.annotation.Nullable;
+import io.github.bertie_mc.bertieblackhole.BertieBlackHole;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -20,6 +15,10 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Nullable;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.fml.loading.FMLPaths;
 
 /**
  * The whole mod's tuning surface: one JSON file in config/, loaded per side.
@@ -29,14 +28,15 @@ import java.util.Map;
  * file; if you edit it on a dedicated server, push the same file to clients or the particles
  * will disagree with the server's idea of the level.
  */
-public record BbhConfig(int firstOutputDelayTicks,
-                        int subsequentOutputDelayTicks,
-                        boolean acceptOverCap,
-                        boolean eatUnlisted,
-                        Map<Integer, LevelDef> levels,
-                        /** Level -> every exchange available at it, accumulated. Precomputed: this
-                         *  is read on the block entity's hot tick path. Keys are 0..maxLevel. */
-                        Map<Integer, List<ExchangeDef>> exchangesByLevel) {
+public record BbhConfig(
+        int firstOutputDelayTicks,
+        int subsequentOutputDelayTicks,
+        boolean acceptOverCap,
+        boolean eatUnlisted,
+        Map<Integer, LevelDef> levels,
+        /** Level -> every exchange available at it, accumulated. Precomputed: this
+         *  is read on the block entity's hot tick path. Keys are 0..maxLevel. */
+        Map<Integer, List<ExchangeDef>> exchangesByLevel) {
 
     public static final String FILE_NAME = "bertieblackhole.json";
     private static final String DEFAULT_RESOURCE = "/bertieblackhole/default_config.json";
@@ -116,8 +116,8 @@ public record BbhConfig(int firstOutputDelayTicks,
             BertieBlackHole.LOGGER.info("Loaded {} ({} level(s) defined)", FILE_NAME, parsed.levels.size());
             return parsed;
         } catch (Exception e) {
-            BertieBlackHole.LOGGER.error("Failed to read {} - falling back to the built-in defaults. {}",
-                    FILE_NAME, e.toString());
+            BertieBlackHole.LOGGER.error(
+                    "Failed to read {} - falling back to the built-in defaults. {}", FILE_NAME, e.toString());
             return builtinDefault();
         }
     }
@@ -192,7 +192,8 @@ public record BbhConfig(int firstOutputDelayTicks,
 
         Map<String, CounterDef> requires = new LinkedHashMap<>();
         if (obj.has("requires")) {
-            for (Map.Entry<String, JsonElement> e : obj.getAsJsonObject("requires").entrySet()) {
+            for (Map.Entry<String, JsonElement> e :
+                    obj.getAsJsonObject("requires").entrySet()) {
                 requires.put(e.getKey(), parseCounter(e.getKey(), e.getValue().getAsJsonObject(), where));
             }
         }
@@ -218,7 +219,8 @@ public record BbhConfig(int firstOutputDelayTicks,
             }
         }
 
-        return new LevelDef(level,
+        return new LevelDef(
+                level,
                 requires,
                 sound,
                 floatOr(obj, "soundVolume", 2.0f),
@@ -246,8 +248,7 @@ public record BbhConfig(int firstOutputDelayTicks,
             if (value <= 0) {
                 throw new ConfigException(at + ".items." + e.getKey() + ": value must be 1 or greater");
             }
-            items.add(new AbstractMap.SimpleImmutableEntry<>(
-                    ItemMatcher.parse(e.getKey(), at + ".items"), value));
+            items.add(new AbstractMap.SimpleImmutableEntry<>(ItemMatcher.parse(e.getKey(), at + ".items"), value));
         }
         if (items.isEmpty()) {
             throw new ConfigException(at + ": \"items\" is empty, this counter could never fill");
@@ -261,7 +262,7 @@ public record BbhConfig(int firstOutputDelayTicks,
             throw new ConfigException(where + ".exchanges: every entry needs a non-empty \"id\"");
         }
         String at = where + ".exchanges." + id;
-        for (String key : new String[]{"input", "count", "output"}) {
+        for (String key : new String[] {"input", "count", "output"}) {
             if (!obj.has(key)) {
                 throw new ConfigException(at + ": missing \"" + key + "\"");
             }
@@ -291,9 +292,9 @@ public record BbhConfig(int firstOutputDelayTicks,
         if (raw.isEmpty() || raw.equalsIgnoreCase("none")) {
             return -1;
         }
-        String body = raw.startsWith("#") ? raw.substring(1)
-                : raw.regionMatches(true, 0, "0x", 0, 2) ? raw.substring(2)
-                : raw;
+        String body = raw.startsWith("#")
+                ? raw.substring(1)
+                : raw.regionMatches(true, 0, "0x", 0, 2) ? raw.substring(2) : raw;
         try {
             return Integer.parseInt(body, 16) & 0xFFFFFF;
         } catch (NumberFormatException e) {

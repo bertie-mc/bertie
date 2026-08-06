@@ -43,16 +43,17 @@ class MinecraftInputsPlugin : Plugin<Project> {
 
             val nativeSeedDependencies =
                 configurations.dependencyScope("minecraftNativeSeedDependencies")
-            val nativeSeed = configurations.resolvable("minecraftNativeSeed") {
-                description = "Minecraft native artifacts cached for supported platforms"
-                extendsFrom(nativeSeedDependencies.get())
-            }.get()
+            val nativeSeed =
+                configurations
+                    .resolvable("minecraftNativeSeed") {
+                        description = "Minecraft native artifacts cached for supported platforms"
+                        extendsFrom(nativeSeedDependencies.get())
+                    }.get()
             catalog.requiredBundle("lwjgl-natives").forEach { module ->
                 MINECRAFT_1_21_1_LWJGL_NATIVE_CLASSIFIERS
                     .filterNot {
                         module.module.name == "lwjgl-freetype" && it == "natives-macos"
-                    }
-                    .forEach { classifier ->
+                    }.forEach { classifier ->
                         dependencies.add(
                             nativeSeedDependencies.name,
                             (dependencies.create(module) as ExternalModuleDependency).apply {
@@ -64,43 +65,48 @@ class MinecraftInputsPlugin : Plugin<Project> {
 
             val linuxSeedDependencies =
                 configurations.dependencyScope("minecraftLinuxNativeSeedDependencies")
-            val linuxSeed = configurations.resolvable("minecraftLinuxNativeSeed") {
-                description =
-                    "Minecraft's Linux native variant, including both Netty epoll artifacts"
-                extendsFrom(linuxSeedDependencies.get())
-                attributes {
-                    named(this@with, Category.CATEGORY_ATTRIBUTE, Category.LIBRARY)
-                    named(this@with, Usage.USAGE_ATTRIBUTE, Usage.JAVA_RUNTIME)
-                    named(
-                        this@with,
-                        MinecraftDistribution.ATTRIBUTE,
-                        MinecraftDistribution.CLIENT,
-                    )
-                    named(this@with, OperatingSystem.ATTRIBUTE, OperatingSystem.LINUX)
-                }
-            }.get()
+            val linuxSeed =
+                configurations
+                    .resolvable("minecraftLinuxNativeSeed") {
+                        description =
+                            "Minecraft's Linux native variant, including both Netty epoll artifacts"
+                        extendsFrom(linuxSeedDependencies.get())
+                        attributes {
+                            named(this@with, Category.CATEGORY_ATTRIBUTE, Category.LIBRARY)
+                            named(this@with, Usage.USAGE_ATTRIBUTE, Usage.JAVA_RUNTIME)
+                            named(
+                                this@with,
+                                MinecraftDistribution.ATTRIBUTE,
+                                MinecraftDistribution.CLIENT,
+                            )
+                            named(this@with, OperatingSystem.ATTRIBUTE, OperatingSystem.LINUX)
+                        }
+                    }.get()
             dependencies.add(
                 linuxSeedDependencies.name,
                 catalog.requiredLibrary("minecraft-dependencies"),
             )
 
-            val resolveInputs = tasks.register<ResolveDependencies>("resolveMinecraftInputs") {
-                dependencies.from(nativeSeed, linuxSeed)
-                dependencies.from(configurations.named("neoFormRuntimeTool"))
-                dependencies.from(configurations.named("neoFormRuntimeExternalTools"))
-            }
-            val downloadArtifacts = tasks.register<DownloadMinecraftArtifacts>(
-                "downloadMinecraftArtifacts",
-            ) {
-                this.minecraftVersion.set(minecraftVersion)
-                outputDirectory.set(layout.buildDirectory.dir("minecraft/downloads"))
-            }
-            val downloadAssets = tasks.register<DownloadAssets>("downloadAssets") {
-                this.minecraftVersion.set(minecraftVersion)
-                assetPropertiesFile.set(
-                    layout.buildDirectory.file("minecraft/assets/minecraft-assets.properties"),
-                )
-            }
+            val resolveInputs =
+                tasks.register<ResolveDependencies>("resolveMinecraftInputs") {
+                    dependencies.from(nativeSeed, linuxSeed)
+                    dependencies.from(configurations.named("neoFormRuntimeTool"))
+                    dependencies.from(configurations.named("neoFormRuntimeExternalTools"))
+                }
+            val downloadArtifacts =
+                tasks.register<DownloadMinecraftArtifacts>(
+                    "downloadMinecraftArtifacts",
+                ) {
+                    this.minecraftVersion.set(minecraftVersion)
+                    outputDirectory.set(layout.buildDirectory.dir("minecraft/downloads"))
+                }
+            val downloadAssets =
+                tasks.register<DownloadAssets>("downloadAssets") {
+                    this.minecraftVersion.set(minecraftVersion)
+                    assetPropertiesFile.set(
+                        layout.buildDirectory.file("minecraft/assets/minecraft-assets.properties"),
+                    )
+                }
 
             tasks.register("prepareOfflineBuild") {
                 group = "build setup"

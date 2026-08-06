@@ -22,16 +22,15 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public final class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    public static final ModConfigSpec.IntValue MAX_STAT_TIER = BUILDER
-            .comment("How many flat base-damage tiers a weapon can take. Each is worth +20% of base attack damage.")
+    public static final ModConfigSpec.IntValue MAX_STAT_TIER = BUILDER.comment(
+                    "How many flat base-damage tiers a weapon can take. Each is worth +20% of base attack damage.")
             .defineInRange("maxStatTier", 12, 0, 256);
 
-    public static final ModConfigSpec.IntValue MAX_SPELL_TIER = BUILDER
-            .comment("How many spell-power tiers a weapon can take. Each completed ring is worth +5% spell power.")
+    public static final ModConfigSpec.IntValue MAX_SPELL_TIER = BUILDER.comment(
+                    "How many spell-power tiers a weapon can take. Each completed ring is worth +5% spell power.")
             .defineInRange("maxSpellTier", 12, 0, 256);
 
-    public static final ModConfigSpec.ConfigValue<List<? extends String>> ELEMENT_ORB_TYPES = BUILDER
-            .comment(
+    public static final ModConfigSpec.ConfigValue<List<? extends String>> ELEMENT_ORB_TYPES = BUILDER.comment(
                     "The element ring: irons_spellbooks:upgrade_orb_type IDs, each addable once per tier.",
                     "Filling every entry converts the tier into generic spell power and frees the ring.",
                     "IDs that do not resolve at runtime are skipped with a warning, so listing an orb",

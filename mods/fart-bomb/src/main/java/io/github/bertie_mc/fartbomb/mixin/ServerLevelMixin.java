@@ -16,7 +16,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ServerLevel.class)
 public abstract class ServerLevelMixin {
     @Inject(
-            method = "playSeededSound(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FFJ)V",
+            method =
+                    "playSeededSound(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FFJ)V",
             at = @At("HEAD"),
             cancellable = true)
     private void fartbomb$onSoundAtEntity(
@@ -28,14 +29,14 @@ public abstract class ServerLevelMixin {
             float pitch,
             long seed,
             CallbackInfo ci) {
-        if (source instanceof Player player
-                && FartBomb.onFart((ServerLevel)(Object)this, sound, player)) {
+        if (source instanceof Player player && FartBomb.onFart((ServerLevel) (Object) this, sound, player)) {
             ci.cancel();
         }
     }
 
     @Inject(
-            method = "playSeededSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FFJ)V",
+            method =
+                    "playSeededSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/core/Holder;Lnet/minecraft/sounds/SoundSource;FFJ)V",
             at = @At("HEAD"),
             cancellable = true)
     private void fartbomb$onSoundAtPosition(
@@ -49,7 +50,7 @@ public abstract class ServerLevelMixin {
             float pitch,
             long seed,
             CallbackInfo ci) {
-        if (FartBomb.onFartAt((ServerLevel)(Object)this, sound, x, y, z)) {
+        if (FartBomb.onFartAt((ServerLevel) (Object) this, sound, x, y, z)) {
             ci.cancel();
         }
     }

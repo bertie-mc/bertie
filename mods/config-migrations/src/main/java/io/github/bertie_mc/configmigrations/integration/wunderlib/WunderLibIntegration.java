@@ -38,11 +38,7 @@ public final class WunderLibIntegration {
         return new WunderLibIntegration(migrations, targets);
     }
 
-    public void migrate(
-            ResourceLocation id,
-            Path path,
-            JsonObject document,
-            Runnable nativeSave) {
+    public void migrate(ResourceLocation id, Path path, JsonObject document, Runnable nativeSave) {
         Target target = targets.stream()
                 .filter(candidate -> candidate.id().equals(id))
                 .findFirst()
@@ -67,8 +63,7 @@ public final class WunderLibIntegration {
         for (var entry : fragment.entrySet()) {
             Object value = entry.getValue();
             JsonElement current = target.get(entry.getKey());
-            if (current instanceof JsonObject currentObject
-                    && value instanceof UnmodifiableConfig fragmentObject) {
+            if (current instanceof JsonObject currentObject && value instanceof UnmodifiableConfig fragmentObject) {
                 merge(currentObject, fragmentObject);
             } else {
                 target.add(entry.getKey(), json(value));
@@ -99,6 +94,5 @@ public final class WunderLibIntegration {
         throw new ConfigMigrationException("Unsupported WunderLib migration value " + value);
     }
 
-    private record Target(ResourceLocation id, MigrationManifest manifest) {
-    }
+    private record Target(ResourceLocation id, MigrationManifest manifest) {}
 }

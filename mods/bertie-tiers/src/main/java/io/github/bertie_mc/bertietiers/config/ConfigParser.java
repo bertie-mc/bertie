@@ -117,7 +117,8 @@ public final class ConfigParser {
                 }
             }
             if (!known) {
-                throw new ConfigException(path + "." + key, "unknown field (allowed: " + String.join(", ", allowed) + ")");
+                throw new ConfigException(
+                        path + "." + key, "unknown field (allowed: " + String.join(", ", allowed) + ")");
             }
         }
     }
@@ -130,7 +131,9 @@ public final class ConfigParser {
     }
 
     private static String expectString(JsonElement element, String path) {
-        if (element == null || !element.isJsonPrimitive() || !element.getAsJsonPrimitive().isString()) {
+        if (element == null
+                || !element.isJsonPrimitive()
+                || !element.getAsJsonPrimitive().isString()) {
             throw new ConfigException(path, "expected a string");
         }
         return element.getAsString();

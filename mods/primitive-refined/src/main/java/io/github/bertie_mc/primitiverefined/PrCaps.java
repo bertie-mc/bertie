@@ -1,10 +1,9 @@
 package io.github.bertie_mc.primitiverefined;
 
-import io.github.bertie_mc.primitiverefined.content.cogwheel.PrCogwheels;
-import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import com.refinedmods.refinedstorage.common.api.support.network.NetworkNodeContainerProvider;
 import com.refinedmods.refinedstorage.neoforge.api.RefinedStorageNeoForgeApi;
-
+import io.github.bertie_mc.primitiverefined.content.cogwheel.PrCogwheels;
+import io.github.bertie_mc.primitiverefined.network.PrNodeHost;
 import net.minecraft.core.Direction;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -24,8 +23,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 @EventBusSubscriber(modid = PrimitiveRefined.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public final class PrCaps {
 
-    private PrCaps() {
-    }
+    private PrCaps() {}
 
     @SubscribeEvent
     static void registerCapabilities(RegisterCapabilitiesEvent event) {
@@ -39,7 +37,8 @@ public final class PrCaps {
         event.registerBlockEntity(capability, PrRegistry.P_CRAFTING_GRID_BE.get(), PrCaps::provider);
         event.registerBlockEntity(capability, PrRegistry.EXTERNAL_READER_BE.get(), PrCaps::provider);
         for (String name : PrCogwheels.NAMES) {
-            event.registerBlockEntity(capability, PrCogwheels.BLOCK_ENTITIES.get(name).get(), PrCaps::provider);
+            event.registerBlockEntity(
+                    capability, PrCogwheels.BLOCK_ENTITIES.get(name).get(), PrCaps::provider);
         }
     }
 

@@ -5,8 +5,7 @@ public final class FartPolicy {
     private static final String ARTIFACTS_NAMESPACE = "artifacts";
     private static final String FART_PATH = "item.whoopee_cushion.fart";
 
-    private FartPolicy() {
-    }
+    private FartPolicy() {}
 
     public static boolean isFartSound(String namespace, String path) {
         return ARTIFACTS_NAMESPACE.equals(namespace) && FART_PATH.equals(path);

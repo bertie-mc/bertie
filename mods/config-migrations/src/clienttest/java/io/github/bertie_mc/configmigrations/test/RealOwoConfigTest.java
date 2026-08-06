@@ -12,8 +12,7 @@ public final class RealOwoConfigTest {
 
     private static TestWrapper wrapper;
 
-    private RealOwoConfigTest() {
-    }
+    private RealOwoConfigTest() {}
 
     public static void load() {
         wrapper = new TestWrapper();
@@ -23,8 +22,7 @@ public final class RealOwoConfigTest {
     public static void assertMigrated() {
         int actual = wrapper.migratedValue();
         if (actual != MIGRATED_VALUE) {
-            throw new IllegalStateException(
-                    "owo-config migration did not reach the live config: " + actual);
+            throw new IllegalStateException("owo-config migration did not reach the live config: " + actual);
         }
     }
 

@@ -1,9 +1,5 @@
 package io.github.bertie_mc.emi.integration.enderio;
 
-import io.github.bertie_mc.emi.framework.Categories;
-import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
-import io.github.bertie_mc.emi.framework.MachineDescriptor;
-import io.github.bertie_mc.emi.framework.Recipes;
 import com.enderio.enderio.content.machines.alloy.AlloySmeltingRecipe;
 import com.enderio.enderio.content.machines.painting.PaintingRecipe;
 import com.enderio.enderio.content.machines.sag_mill.SagMillingRecipe;
@@ -16,6 +12,10 @@ import dev.emi.emi.api.neoforge.NeoForgeEmiStack;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import io.github.bertie_mc.emi.framework.Categories;
+import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
+import io.github.bertie_mc.emi.framework.MachineDescriptor;
+import io.github.bertie_mc.emi.framework.Recipes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeManager;
@@ -26,8 +26,7 @@ import net.neoforged.neoforge.common.crafting.SizedIngredient;
  * enchanting (per-level computed) and fire_crafting (in-world) — see research/enderio-recipe-spec.md.
  */
 public final class EnderIOEmiModule {
-    private EnderIOEmiModule() {
-    }
+    private EnderIOEmiModule() {}
 
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
@@ -43,7 +42,8 @@ public final class EnderIOEmiModule {
             reg.addRecipe(new GenericEmiRecipe(sag, id, d));
         });
 
-        EmiRecipeCategory alloy = Categories.machine(reg, "enderio_alloy_smelting", "enderio:alloy_smelter", "Alloy Smelting");
+        EmiRecipeCategory alloy =
+                Categories.machine(reg, "enderio_alloy_smelting", "enderio:alloy_smelter", "Alloy Smelting");
         Recipes.forEach(rm, AlloySmeltingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (SizedIngredient si : r.inputs()) {
@@ -74,7 +74,8 @@ public final class EnderIOEmiModule {
             reg.addRecipe(new GenericEmiRecipe(soul, id, d));
         });
 
-        EmiRecipeCategory slice = Categories.machine(reg, "enderio_slicing", "enderio:slice_and_splice", "Slice 'N' Splice");
+        EmiRecipeCategory slice =
+                Categories.machine(reg, "enderio_slicing", "enderio:slice_and_splice", "Slice 'N' Splice");
         Recipes.forEach(rm, SlicingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (Ingredient ing : r.inputs()) {

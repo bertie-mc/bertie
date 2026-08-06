@@ -1,10 +1,12 @@
 package io.github.bertie_mc.carving;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -13,10 +15,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class ResourceDataTest {
     private static final String MOD_ID = "berlordscarving";
@@ -24,8 +23,11 @@ class ResourceDataTest {
 
     private static Path resources() {
         try {
-            return Path.of(ResourceDataTest.class.getResource("/assets/" + MOD_ID).toURI())
-                    .getParent().getParent();
+            return Path.of(ResourceDataTest.class
+                            .getResource("/assets/" + MOD_ID)
+                            .toURI())
+                    .getParent()
+                    .getParent();
         } catch (URISyntaxException exception) {
             throw new IllegalStateException(exception);
         }
@@ -62,9 +64,11 @@ class ResourceDataTest {
 
         Set<String> actual = new HashSet<>();
         try (var files = Files.list(shapes)) {
-            for (Path path : files.filter(file -> file.toString().endsWith(".json")).toList()) {
+            for (Path path :
+                    files.filter(file -> file.toString().endsWith(".json")).toList()) {
                 actual.add(path.getFileName().toString().replaceFirst("\\.json$", ""));
-                var pattern = JsonParser.parseString(Files.readString(path)).getAsJsonObject()
+                var pattern = JsonParser.parseString(Files.readString(path))
+                        .getAsJsonObject()
                         .getAsJsonArray("pattern");
                 assertEquals(16, pattern.size(), path.toString());
                 boolean occupied = false;
@@ -85,17 +89,21 @@ class ResourceDataTest {
         Path models = RESOURCES.resolve("assets/" + MOD_ID + "/models");
         List<String> missing = new ArrayList<>();
         try (var files = Files.walk(models)) {
-            for (Path model : files.filter(path -> path.toString().endsWith(".json")).toList()) {
-                JsonObject json = JsonParser.parseString(Files.readString(model)).getAsJsonObject();
+            for (Path model :
+                    files.filter(path -> path.toString().endsWith(".json")).toList()) {
+                JsonObject json =
+                        JsonParser.parseString(Files.readString(model)).getAsJsonObject();
                 if (!json.has("textures")) {
                     continue;
                 }
-                for (JsonElement texture : json.getAsJsonObject("textures").asMap().values()) {
+                for (JsonElement texture :
+                        json.getAsJsonObject("textures").asMap().values()) {
                     String id = texture.getAsString();
                     if (!id.startsWith(MOD_ID + ":")) {
                         continue;
                     }
-                    Path image = RESOURCES.resolve("assets/" + MOD_ID + "/textures")
+                    Path image = RESOURCES
+                            .resolve("assets/" + MOD_ID + "/textures")
                             .resolve(id.substring(MOD_ID.length() + 1) + ".png");
                     if (!Files.isRegularFile(image)) {
                         missing.add(RESOURCES.relativize(model) + " -> " + RESOURCES.relativize(image));
@@ -118,8 +126,10 @@ class ResourceDataTest {
             JsonObject json = JsonParser.parseString(Files.readString(recipe)).getAsJsonObject();
             var conditions = json.getAsJsonArray("neoforge:conditions");
             assertFalse(conditions.isEmpty(), recipe.toString());
-            assertEquals("neoforge:false",
-                    conditions.get(0).getAsJsonObject().get("type").getAsString(), recipe.toString());
+            assertEquals(
+                    "neoforge:false",
+                    conditions.get(0).getAsJsonObject().get("type").getAsString(),
+                    recipe.toString());
         }
     }
 }

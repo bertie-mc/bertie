@@ -18,60 +18,66 @@ class DevelopmentRunsPlugin : Plugin<Project> {
         project.pluginManager.withPlugin("bertie.mod") { configure(project) }
     }
 
-    private fun configure(project: Project) = with(project) {
-        val metadata = extensions.getByType<ModMetadata>()
-        val neoForge = extensions.getByType<NeoForgeExtension>()
-        val sourceSets = extensions.getByType<SourceSetContainer>()
-        val main = sourceSets.getByName(SourceSet.MAIN_SOURCE_SET_NAME)
-        val subjectMod = neoForge.mods.getByName(metadata.id)
+    private fun configure(project: Project) =
+        with(project) {
+            val metadata = extensions.getByType<ModMetadata>()
+            val neoForge = extensions.getByType<NeoForgeExtension>()
+            val sourceSets = extensions.getByType<SourceSetContainer>()
+            val main = sourceSets.getByName(SourceSet.MAIN_SOURCE_SET_NAME)
+            val subjectMod = neoForge.mods.getByName(metadata.id)
 
-        fun runtimeProjection(name: String, side: MinecraftArtifactSide): SourceSet {
-            val projection = sourceSets.create("${name}runtime") {
-                java.setSrcDirs(emptyList<String>())
-                resources.setSrcDirs(emptyList<String>())
+            fun runtimeProjection(
+                name: String,
+                side: MinecraftArtifactSide,
+            ): SourceSet {
+                val projection =
+                    sourceSets.create("${name}runtime") {
+                        java.setSrcDirs(emptyList<String>())
+                        resources.setSrcDirs(emptyList<String>())
+                    }
+                configurations.getByName(projection.implementationConfigurationName).extendsFrom(
+                    configurations.getByName(main.implementationConfigurationName),
+                )
+                configurations.getByName(projection.runtimeOnlyConfigurationName).extendsFrom(
+                    configurations.getByName(main.runtimeOnlyConfigurationName),
+                )
+                projection.runtimeClasspath += main.output
+                projectMinecraftRuntime(
+                    configurations.getByName(projection.runtimeClasspathConfigurationName),
+                    side,
+                )
+                neoForge.addModdingDependenciesTo(projection)
+                return projection
             }
-            configurations.getByName(projection.implementationConfigurationName).extendsFrom(
-                configurations.getByName(main.implementationConfigurationName),
-            )
-            configurations.getByName(projection.runtimeOnlyConfigurationName).extendsFrom(
-                configurations.getByName(main.runtimeOnlyConfigurationName),
-            )
-            projection.runtimeClasspath += main.output
-            projectMinecraftRuntime(
-                configurations.getByName(projection.runtimeClasspathConfigurationName),
-                side,
-            )
-            neoForge.addModdingDependenciesTo(projection)
-            return projection
-        }
 
-        fun prepareInstance(name: String) = tasks.register<Sync>(
-            "prepare${name.replaceFirstChar(Char::uppercaseChar)}Instance",
-        ) {
-            into(layout.buildDirectory.dir("minecraft-runs/$name"))
-            from(layout.projectDirectory.dir("src/main/instance"))
-        }
+            fun prepareInstance(name: String) =
+                tasks.register<Sync>(
+                    "prepare${name.replaceFirstChar(Char::uppercaseChar)}Instance",
+                ) {
+                    into(layout.buildDirectory.dir("minecraft-runs/$name"))
+                    from(layout.projectDirectory.dir("src/main/instance"))
+                }
 
-        val client = runtimeProjection("client", MinecraftArtifactSide.CLIENT)
-        val prepareClient = prepareInstance("client")
-        neoForge.runs.register("client") {
-            client()
-            sourceSet.set(client)
-            loadedMods.set(setOf(subjectMod))
-            gameDirectory.set(layout.buildDirectory.dir("minecraft-runs/client"))
-            taskBefore(prepareClient)
-            addArm64LwjglNatives(this)
-        }
+            val client = runtimeProjection("client", MinecraftArtifactSide.CLIENT)
+            val prepareClient = prepareInstance("client")
+            neoForge.runs.register("client") {
+                client()
+                sourceSet.set(client)
+                loadedMods.set(setOf(subjectMod))
+                gameDirectory.set(layout.buildDirectory.dir("minecraft-runs/client"))
+                taskBefore(prepareClient)
+                addArm64LwjglNatives(this)
+            }
 
-        val server = runtimeProjection("server", MinecraftArtifactSide.SERVER)
-        val prepareServer = prepareInstance("server")
-        neoForge.runs.register("server") {
-            server()
-            sourceSet.set(server)
-            loadedMods.set(setOf(subjectMod))
-            gameDirectory.set(layout.buildDirectory.dir("minecraft-runs/server"))
-            programArgument("--nogui")
-            taskBefore(prepareServer)
+            val server = runtimeProjection("server", MinecraftArtifactSide.SERVER)
+            val prepareServer = prepareInstance("server")
+            neoForge.runs.register("server") {
+                server()
+                sourceSet.set(server)
+                loadedMods.set(setOf(subjectMod))
+                gameDirectory.set(layout.buildDirectory.dir("minecraft-runs/server"))
+                programArgument("--nogui")
+                taskBefore(prepareServer)
+            }
         }
-    }
 }

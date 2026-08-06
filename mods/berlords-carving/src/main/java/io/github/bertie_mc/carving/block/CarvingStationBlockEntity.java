@@ -1,7 +1,6 @@
 package io.github.bertie_mc.carving.block;
 
 import io.github.bertie_mc.carving.Carving;
-import io.github.bertie_mc.carving.CarvingMaterial;
 import io.github.bertie_mc.carving.item.SlateItem;
 import io.github.bertie_mc.carving.menu.CarvingStationMenu;
 import net.minecraft.core.BlockPos;

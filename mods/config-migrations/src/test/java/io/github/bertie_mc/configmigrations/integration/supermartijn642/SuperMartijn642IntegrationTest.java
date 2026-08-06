@@ -20,8 +20,7 @@ class SuperMartijn642IntegrationTest {
     void nativeDocumentIsMergedAndStateCommitsAfterNativeSave() throws Exception {
         Path manifests = gameDirectory.resolve("migrations/supermartijn642");
         Path target = gameDirectory.resolve("config").resolve(FILE);
-        Path state = gameDirectory.resolve(
-                "config/config-migrations/state/config/sample-common.toml.version");
+        Path state = gameDirectory.resolve("config/config-migrations/state/config/sample-common.toml.version");
         Files.createDirectories(manifests);
         Files.createDirectories(target.getParent());
         Files.writeString(manifests.resolve("sample.toml"), manifest());
@@ -29,9 +28,7 @@ class SuperMartijn642IntegrationTest {
         TomlConfigFile document = new TomlConfigFile(target.toFile());
         document.readFile();
         SuperMartijn642Integration integration = SuperMartijn642Integration.load(
-                MigrationManager.load(gameDirectory),
-                gameDirectory.resolve("config"),
-                manifests);
+                MigrationManager.load(gameDirectory), gameDirectory.resolve("config"), manifests);
 
         integration.apply("sample", FILE, document);
 

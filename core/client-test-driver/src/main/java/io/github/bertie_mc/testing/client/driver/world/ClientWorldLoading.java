@@ -15,15 +15,11 @@ import net.minecraft.network.chat.contents.TranslatableContents;
 
 /** Handles Minecraft's world-confirmation screens and complete client-side world loading. */
 public final class ClientWorldLoading {
-    private static final String EXPERIMENTAL_WORLD_TITLE =
-            "selectWorld.warning.experimental.title";
+    private static final String EXPERIMENTAL_WORLD_TITLE = "selectWorld.warning.experimental.title";
 
     private ClientWorldLoading() {}
 
-    static <T> T awaitCreation(
-            DefaultClientTestContext context,
-            String description,
-            CompletionStage<T> completion) {
+    static <T> T awaitCreation(DefaultClientTestContext context, String description, CompletionStage<T> completion) {
         Objects.requireNonNull(completion);
         var future = completion.toCompletableFuture();
         context.waitForInfrastructure(description, () -> {
@@ -37,9 +33,7 @@ public final class ClientWorldLoading {
     }
 
     public static void waitForWorld(
-            DefaultClientTestContext context,
-            String description,
-            Predicate<Minecraft> readiness) {
+            DefaultClientTestContext context, String description, Predicate<Minecraft> readiness) {
         Objects.requireNonNull(readiness);
         context.waitForInfrastructure(description, () -> {
             if (handleConfirmation(context)) {
@@ -58,8 +52,7 @@ public final class ClientWorldLoading {
     }
 
     private static boolean handleConfirmation(DefaultClientTestContext context) {
-        Confirmation confirmation =
-                context.computeOnClient(client -> confirmationFor(client.screen));
+        Confirmation confirmation = context.computeOnClient(client -> confirmationFor(client.screen));
         return switch (confirmation) {
             case EXPERIMENTAL_WORLD -> {
                 context.clickScreenButton("gui.yes");

@@ -1,14 +1,13 @@
 package io.github.bertie_mc.bertieprogression.forge;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import org.junit.jupiter.api.Test;
-
-import java.util.HashSet;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.HashSet;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import org.junit.jupiter.api.Test;
 
 class BedRecipesTest {
 

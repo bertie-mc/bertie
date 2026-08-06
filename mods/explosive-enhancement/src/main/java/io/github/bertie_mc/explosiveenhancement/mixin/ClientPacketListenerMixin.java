@@ -1,17 +1,17 @@
 package io.github.bertie_mc.explosiveenhancement.mixin;
 
 import io.github.bertie_mc.explosiveenhancement.EEHandler;
-import io.github.bertie_mc.explosiveenhancement.ExplosiveConfig;
 import io.github.bertie_mc.explosiveenhancement.ExplosionPolicy;
+import io.github.bertie_mc.explosiveenhancement.ExplosiveConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
-import net.minecraft.tags.FluidTags;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.network.protocol.PacketUtils;
 import net.minecraft.network.protocol.game.ClientboundExplodePacket;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.world.level.Explosion;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -58,17 +58,11 @@ public abstract class ClientPacketListenerMixin {
                 packet.getBlockInteraction(),
                 packet.getSmallExplosionParticles(),
                 packet.getLargeExplosionParticles(),
-                packet.getExplosionSound()
-        );
+                packet.getExplosionSound());
         explosion.finalizeExplosion(keepVanillaParticle);
 
         player.setDeltaMovement(
-                player.getDeltaMovement().add(
-                        packet.getKnockbackX(),
-                        packet.getKnockbackY(),
-                        packet.getKnockbackZ()
-                )
-        );
+                player.getDeltaMovement().add(packet.getKnockbackX(), packet.getKnockbackY(), packet.getKnockbackZ()));
 
         EEHandler.spawnEnhancedParticles(level, x, y, z, power);
         ci.cancel();

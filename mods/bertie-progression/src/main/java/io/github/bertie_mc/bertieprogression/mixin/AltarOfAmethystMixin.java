@@ -1,17 +1,15 @@
 package io.github.bertie_mc.bertieprogression.mixin;
 
 import io.github.bertie_mc.bertieprogression.altar.AltarOfAmethystRules;
-
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Coerce;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Applies {@link AltarOfAmethystRules} to Cataclysm's Altar of Amethyst.
@@ -26,8 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
  * <p>Listed in the common {@code mixins} array so the same injector applies on both physical sides.
  * The client and server must advance and gate altar progress consistently.
  */
-@Mixin(targets = "com.github.L_Ender.cataclysm.blockentities.AltarOfAmethyst_Block_Entity",
-        remap = false)
+@Mixin(targets = "com.github.L_Ender.cataclysm.blockentities.AltarOfAmethyst_Block_Entity", remap = false)
 public abstract class AltarOfAmethystMixin {
 
     /**
@@ -35,8 +32,8 @@ public abstract class AltarOfAmethystMixin {
      * the sky outside a lush cave.
      */
     @Inject(method = "cookingTick", at = @At("HEAD"), cancellable = true, remap = false)
-    private static void bertieprogression$gate(Level level, BlockPos pos, BlockState state,
-            @Coerce BlockEntity altar, CallbackInfo ci) {
+    private static void bertieprogression$gate(
+            Level level, BlockPos pos, BlockState state, @Coerce BlockEntity altar, CallbackInfo ci) {
         // Run the deterministic rule on both sides. If only the server cancels, the client keeps
         // advancing and briefly renders progress and a beam that the next sync packet removes.
         if (AltarOfAmethystRules.speedAt(level, pos) == AltarOfAmethystRules.STOPPED) {
@@ -49,8 +46,8 @@ public abstract class AltarOfAmethystMixin {
      * on top, clamped so a fast altar cannot overshoot its own total.
      */
     @Inject(method = "cookingTick", at = @At("TAIL"), remap = false)
-    private static void bertieprogression$accelerate(Level level, BlockPos pos, BlockState state,
-            @Coerce BlockEntity altar, CallbackInfo ci) {
+    private static void bertieprogression$accelerate(
+            Level level, BlockPos pos, BlockState state, @Coerce BlockEntity altar, CallbackInfo ci) {
         // Both sides, for the same reason as the gate: a client that advances at a different rate
         // than the server renders progress the server does not have.
         float speed = AltarOfAmethystRules.speedAt(level, pos);
@@ -64,7 +61,6 @@ public abstract class AltarOfAmethystMixin {
             return;
         }
         int total = access.bertieprogression$cookingTimeTotal();
-        access.bertieprogression$setCookingTime(
-                Math.min(current + (Math.round(speed) - 1), total));
+        access.bertieprogression$setCookingTime(Math.min(current + (Math.round(speed) - 1), total));
     }
 }

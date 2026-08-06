@@ -6,7 +6,6 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -25,7 +24,7 @@ public class CarvingStationMenu extends AbstractContainerMenu {
     public static final int GRID_X = 26, GRID_Y = 46, CELL = 10, GRID_PX = 16 * CELL; // 160
     public static final int INV_X = 29, INV_Y = 242, HOTBAR_Y = 300;
     // function slots raised above the inventory, x-aligned to inventory columns 1 and 7 (anvil-style)
-    public static final int INPUT_X = INV_X + 18, INPUT_Y = INV_Y - 22;       // 47, 220
+    public static final int INPUT_X = INV_X + 18, INPUT_Y = INV_Y - 22; // 47, 220
     public static final int OUTPUT_X = INV_X + 7 * 18, OUTPUT_Y = INV_Y - 22; // 155, 220
 
     @Nullable
@@ -87,8 +86,8 @@ public class CarvingStationMenu extends AbstractContainerMenu {
             slot.onQuickCraft(stack, copy);
         } else {
             // player inventory -> input slot (only tier-2 slates are accepted)
-            if (!this.moveItemStackTo(stack, CarvingStationBlockEntity.SLOT_INPUT,
-                    CarvingStationBlockEntity.SLOT_INPUT + 1, false)) {
+            if (!this.moveItemStackTo(
+                    stack, CarvingStationBlockEntity.SLOT_INPUT, CarvingStationBlockEntity.SLOT_INPUT + 1, false)) {
                 return ItemStack.EMPTY;
             }
         }
@@ -109,7 +108,10 @@ public class CarvingStationMenu extends AbstractContainerMenu {
         if (be == null || be.getLevel() == null) {
             return false;
         }
-        return player.distanceToSqr(be.getBlockPos().getX() + 0.5,
-                be.getBlockPos().getY() + 0.5, be.getBlockPos().getZ() + 0.5) < 64.0;
+        return player.distanceToSqr(
+                        be.getBlockPos().getX() + 0.5,
+                        be.getBlockPos().getY() + 0.5,
+                        be.getBlockPos().getZ() + 0.5)
+                < 64.0;
     }
 }

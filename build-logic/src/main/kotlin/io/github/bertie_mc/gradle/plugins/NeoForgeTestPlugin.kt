@@ -15,21 +15,22 @@ class NeoForgeTestPlugin : Plugin<Project> {
         project.pluginManager.withPlugin("bertie.mod") { configure(project) }
     }
 
-    private fun configure(project: Project) = with(project) {
-        val metadata = extensions.getByType<ModMetadata>()
-        val neoForge = extensions.getByType<NeoForgeExtension>()
-        val subjectMod = neoForge.mods.getByName(metadata.id)
-        neoForge.unitTest {
-            enable()
-            testedMod.set(subjectMod)
-            loadedMods.set(setOf(subjectMod))
-        }
+    private fun configure(project: Project) =
+        with(project) {
+            val metadata = extensions.getByType<ModMetadata>()
+            val neoForge = extensions.getByType<NeoForgeExtension>()
+            val subjectMod = neoForge.mods.getByName(metadata.id)
+            neoForge.unitTest {
+                enable()
+                testedMod.set(subjectMod)
+                loadedMods.set(setOf(subjectMod))
+            }
 
-        val test = extensions.getByType<SourceSetContainer>().getByName("test")
-        projectMinecraftRuntime(
-            configurations.getByName(test.runtimeClasspathConfigurationName),
-            MinecraftArtifactSide.CLIENT,
-        )
-        addArm64LwjglNatives(configurations.getByName(test.runtimeOnlyConfigurationName))
-    }
+            val test = extensions.getByType<SourceSetContainer>().getByName("test")
+            projectMinecraftRuntime(
+                configurations.getByName(test.runtimeClasspathConfigurationName),
+                MinecraftArtifactSide.CLIENT,
+            )
+            addArm64LwjglNatives(configurations.getByName(test.runtimeOnlyConfigurationName))
+        }
 }

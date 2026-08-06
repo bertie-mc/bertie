@@ -1,8 +1,8 @@
 package io.github.bertie_mc.forgeink.mixin;
 
-import io.github.bertie_mc.forgeink.ForgeInk;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.essence.EssenceType;
 import com.stal111.forbidden_arcanus.common.block.entity.forge.input.EssenceDataInput;
+import io.github.bertie_mc.forgeink.ForgeInk;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,8 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class EssenceDataInputMixin {
 
     @Inject(method = "canInput", at = @At("HEAD"), cancellable = true, remap = false)
-    private void forgeink$onlyInkForExperience(EssenceType type, ItemStack stack,
-                                               CallbackInfoReturnable<Boolean> cir) {
+    private void forgeink$onlyInkForExperience(EssenceType type, ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
         if (type == EssenceType.EXPERIENCE && ForgeInk.inkTier(stack.getItem()) == -1) {
             cir.setReturnValue(false);
         }

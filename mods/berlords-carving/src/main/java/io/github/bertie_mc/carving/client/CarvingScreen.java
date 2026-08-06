@@ -1,11 +1,19 @@
 package io.github.bertie_mc.carving.client;
 
+import static io.github.bertie_mc.carving.client.ShapeLibrary.CELLS;
+import static io.github.bertie_mc.carving.client.ShapeLibrary.GRID;
+
+import com.mojang.blaze3d.systems.RenderSystem;
 import io.github.bertie_mc.carving.ArmorKind;
 import io.github.bertie_mc.carving.Carving;
 import io.github.bertie_mc.carving.CarvingMaterial;
 import io.github.bertie_mc.carving.ToolKind;
 import io.github.bertie_mc.carving.net.CarveResultPayload;
-import com.mojang.blaze3d.systems.RenderSystem;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -19,15 +27,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.SoundType;
 import net.neoforged.neoforge.network.PacketDistributor;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
-import static io.github.bertie_mc.carving.client.ShapeLibrary.CELLS;
-import static io.github.bertie_mc.carving.client.ShapeLibrary.GRID;
 
 /**
  * Client-side carving on the 16x16 canvas. Per (slate, tool) a deterministic seed fixes a random
@@ -44,18 +43,29 @@ public class CarvingScreen extends Screen {
     private static final int RUIN_AT = 3;
     private static final int LINE = 0x9A9A9A; // all borders, every variant
 
-    private static final int FX_FLUID = 0;   // "fluid": one traced+smoothed undulating perimeter loop
-    private static final int FX_NOISE = 1;   // "noise": all edges (incl. internal) jitter in parallel
-    private static final int FX_DYNO = 2;    // "dyno": perimeter outline breathes/pans; background static
-    private static final int FX_COMBO = 3;   // bg zoom + shape shake + blur on/off, all out of sync
-    private static final int FX_COUNT = 3;   // FX_FLUID, FX_NOISE, FX_DYNO (FX_COMBO removed)
+    private static final int FX_FLUID = 0; // "fluid": one traced+smoothed undulating perimeter loop
+    private static final int FX_NOISE = 1; // "noise": all edges (incl. internal) jitter in parallel
+    private static final int FX_DYNO = 2; // "dyno": perimeter outline breathes/pans; background static
+    private static final int FX_COMBO = 3; // bg zoom + shape shake + blur on/off, all out of sync
+    private static final int FX_COUNT = 3; // FX_FLUID, FX_NOISE, FX_DYNO (FX_COMBO removed)
 
     private static final double AMP = 0.40 * CELL;
 
     // sample offsets for the box-blur (unit disc), scaled by radius
     private static final double[][] BLUR_OFF = {
-            {0, 0}, {1, 0}, {-1, 0}, {0, 1}, {0, -1}, {0.7, 0.7}, {-0.7, 0.7}, {0.7, -0.7}, {-0.7, -0.7},
-            {0.5, 0}, {-0.5, 0}, {0, 0.5}, {0, -0.5}
+        {0, 0},
+        {1, 0},
+        {-1, 0},
+        {0, 1},
+        {0, -1},
+        {0.7, 0.7},
+        {-0.7, 0.7},
+        {0.7, -0.7},
+        {-0.7, -0.7},
+        {0.5, 0},
+        {-0.5, 0},
+        {0, 0.5},
+        {0, -0.5}
     };
 
     private final CarvingMaterial material;
@@ -71,7 +81,7 @@ public class CarvingScreen extends Screen {
     private int anchor = -1;
     private int effect = FX_NOISE;
     private double centroidX, centroidY;
-    private final List<Edge> edges = new ArrayList<>();   // cell-edge segments (for non-wave variants)
+    private final List<Edge> edges = new ArrayList<>(); // cell-edge segments (for non-wave variants)
     private final List<double[]> waveLoops = new ArrayList<>(); // smoothed perimeter loops, corner-space
 
     private int slips = 0;
@@ -120,8 +130,7 @@ public class CarvingScreen extends Screen {
         };
     }
 
-    private record Edge(boolean vert, int fixed, int s, int e, boolean silh, int nrm, double ang) {
-    }
+    private record Edge(boolean vert, int fixed, int s, int e, boolean silh, int nrm, double ang) {}
 
     @Override
     protected void init() {
@@ -137,7 +146,8 @@ public class CarvingScreen extends Screen {
             this.directTex = ResourceLocation.fromNamespaceAndPath(Carving.MODID, "textures/block/flint_surface.png");
         } else {
             this.directTex = null;
-            this.blockSprite = Minecraft.getInstance().getTextureAtlas(TextureAtlas.LOCATION_BLOCKS)
+            this.blockSprite = Minecraft.getInstance()
+                    .getTextureAtlas(TextureAtlas.LOCATION_BLOCKS)
                     .apply(ResourceLocation.parse(bgTexture(material)));
         }
         if (!transformBuilt) {
@@ -179,10 +189,22 @@ public class CarvingScreen extends Screen {
             }
             int sr = (i / GRID) - minR, sc = (i % GRID) - minC, rr, rc;
             switch (rot) {
-                case 1 -> { rr = sc; rc = bh - 1 - sr; }
-                case 2 -> { rr = bh - 1 - sr; rc = bw - 1 - sc; }
-                case 3 -> { rr = bw - 1 - sc; rc = sr; }
-                default -> { rr = sr; rc = sc; }
+                case 1 -> {
+                    rr = sc;
+                    rc = bh - 1 - sr;
+                }
+                case 2 -> {
+                    rr = bh - 1 - sr;
+                    rc = bw - 1 - sc;
+                }
+                case 3 -> {
+                    rr = bw - 1 - sc;
+                    rc = sr;
+                }
+                default -> {
+                    rr = sr;
+                    rc = sc;
+                }
             }
             if (flipY) {
                 rr = rh - 1 - rr;
@@ -222,13 +244,15 @@ public class CarvingScreen extends Screen {
             if (lv != rn) {
                 boolean silh = lv < 0 || rn < 0;
                 int nrm = (lv >= 0 && rn < 0) ? 1 : (lv < 0 ? -1 : 0);
-                edges.add(new Edge(true, x + CELL, y, y + CELL, silh, nrm, Math.atan2((y + CELL / 2.0) - cy, (x + CELL) - cx)));
+                edges.add(new Edge(
+                        true, x + CELL, y, y + CELL, silh, nrm, Math.atan2((y + CELL / 2.0) - cy, (x + CELL) - cx)));
             }
             int dn = (r < GRID - 1) ? tLevels[i + GRID] : -1;
             if (lv != dn) {
                 boolean silh = lv < 0 || dn < 0;
                 int nrm = (lv >= 0 && dn < 0) ? 1 : (lv < 0 ? -1 : 0);
-                edges.add(new Edge(false, y + CELL, x, x + CELL, silh, nrm, Math.atan2((y + CELL) - cy, (x + CELL / 2.0) - cx)));
+                edges.add(new Edge(
+                        false, y + CELL, x, x + CELL, silh, nrm, Math.atan2((y + CELL) - cy, (x + CELL / 2.0) - cx)));
             }
             if (c == 0 && lv >= 0) {
                 edges.add(new Edge(true, x, y, y + CELL, true, -1, 0));
@@ -256,10 +280,10 @@ public class CarvingScreen extends Screen {
             boolean dn = r < GRID - 1 && keep[i + GRID];
             boolean lf = c > 0 && keep[i - 1];
             boolean rt = c < GRID - 1 && keep[i + 1];
-            if (!dn) addEdge(all, out, c + (r + 1) * n, (c + 1) + (r + 1) * n, 1, 0);   // bottom, RIGHT
-            if (!rt) addEdge(all, out, (c + 1) + (r + 1) * n, (c + 1) + r * n, 0, -1);  // right, UP
-            if (!up) addEdge(all, out, (c + 1) + r * n, c + r * n, -1, 0);              // top, LEFT
-            if (!lf) addEdge(all, out, c + r * n, c + (r + 1) * n, 0, 1);               // left, DOWN
+            if (!dn) addEdge(all, out, c + (r + 1) * n, (c + 1) + (r + 1) * n, 1, 0); // bottom, RIGHT
+            if (!rt) addEdge(all, out, (c + 1) + (r + 1) * n, (c + 1) + r * n, 0, -1); // right, UP
+            if (!up) addEdge(all, out, (c + 1) + r * n, c + r * n, -1, 0); // top, LEFT
+            if (!lf) addEdge(all, out, c + r * n, c + (r + 1) * n, 0, 1); // left, DOWN
         }
         for (int[] e0 : all) {
             if (e0[4] == 1) {
@@ -270,7 +294,7 @@ public class CarvingScreen extends Screen {
             int guard = 0;
             while (e != null && e[4] == 0 && guard++ < CELLS * 8) {
                 e[4] = 1;
-                pts.add(new int[]{e[0] % n, e[0] / n});
+                pts.add(new int[] {e[0] % n, e[0] / n});
                 List<int[]> outs = out.get(e[1]);
                 int[] nextE = null;
                 if (outs != null) {
@@ -308,15 +332,15 @@ public class CarvingScreen extends Screen {
     private double[] smoothLoop(List<int[]> pts) {
         List<double[]> cur = new ArrayList<>();
         for (int[] p : pts) {
-            cur.add(new double[]{p[0], p[1]});
+            cur.add(new double[] {p[0], p[1]});
         }
         for (int it = 0; it < 2; it++) {
             List<double[]> nx = new ArrayList<>();
             int m = cur.size();
             for (int i = 0; i < m; i++) {
                 double[] a = cur.get(i), b = cur.get((i + 1) % m);
-                nx.add(new double[]{0.75 * a[0] + 0.25 * b[0], 0.75 * a[1] + 0.25 * b[1]});
-                nx.add(new double[]{0.25 * a[0] + 0.75 * b[0], 0.25 * a[1] + 0.75 * b[1]});
+                nx.add(new double[] {0.75 * a[0] + 0.25 * b[0], 0.75 * a[1] + 0.25 * b[1]});
+                nx.add(new double[] {0.25 * a[0] + 0.75 * b[0], 0.25 * a[1] + 0.75 * b[1]});
             }
             cur = nx;
         }
@@ -356,8 +380,12 @@ public class CarvingScreen extends Screen {
             int c = stack[--sp];
             count++;
             int row = c / GRID, col = c % GRID;
-            int[] nb = {col > 0 ? c - 1 : -1, col < GRID - 1 ? c + 1 : -1,
-                    row > 0 ? c - GRID : -1, row < GRID - 1 ? c + GRID : -1};
+            int[] nb = {
+                col > 0 ? c - 1 : -1,
+                col < GRID - 1 ? c + 1 : -1,
+                row > 0 ? c - GRID : -1,
+                row < GRID - 1 ? c + GRID : -1
+            };
             for (int nn : nb) {
                 if (nn >= 0 && present[nn] && !vis[nn]) {
                     vis[nn] = true;
@@ -459,8 +487,10 @@ public class CarvingScreen extends Screen {
         long now = Util.getMillis();
         if (now - lastSoundMs >= 35) {
             lastSoundMs = now;
-            Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(
-                    bgSound(material).getPlaceSound(), 0.8F + pitchRnd.nextFloat() * 0.4F, 0.35F));
+            Minecraft.getInstance()
+                    .getSoundManager()
+                    .play(SimpleSoundInstance.forUI(
+                            bgSound(material).getPlaceSound(), 0.8F + pitchRnd.nextFloat() * 0.4F, 0.35F));
         }
         pruneDisconnected();
         if (totalErrors() >= RUIN_AT) {
@@ -477,8 +507,8 @@ public class CarvingScreen extends Screen {
             return;
         }
         finished = true;
-        PacketDistributor.sendToServer(new CarveResultPayload(
-                material.ordinal(), armor, selected, flaws, hand == InteractionHand.MAIN_HAND));
+        PacketDistributor.sendToServer(
+                new CarveResultPayload(material.ordinal(), armor, selected, flaws, hand == InteractionHand.MAIN_HAND));
         Minecraft.getInstance().setScreen(null);
     }
 
@@ -713,7 +743,13 @@ public class CarvingScreen extends Screen {
         g.fill(left, top, left + 2, top + PANEL_H, 0xFFFFFFFF);
         g.fill(left, top + PANEL_H - 2, left + PANEL_W, top + PANEL_H, 0xFF555555);
         g.fill(left + PANEL_W - 2, top, left + PANEL_W, top + PANEL_H, 0xFF555555);
-        g.drawString(this.font, this.title, left + PANEL_W / 2 - this.font.width(this.title) / 2, top + 8, 0xFF222222, false);
+        g.drawString(
+                this.font,
+                this.title,
+                left + PANEL_W / 2 - this.font.width(this.title) / 2,
+                top + 8,
+                0xFF222222,
+                false);
 
         ItemStack hoveredTab = ItemStack.EMPTY;
         for (int k = 0; k < kindCount(); k++) {
@@ -757,8 +793,13 @@ public class CarvingScreen extends Screen {
         g.disableScissor();
 
         int footerY = gridTop + gridSize + 8;
-        g.drawString(this.font, Component.translatable("berlordscarving.screen.slips", slips),
-                left + 10, footerY, 0xFF202020, false);
+        g.drawString(
+                this.font,
+                Component.translatable("berlordscarving.screen.slips", slips),
+                left + 10,
+                footerY,
+                0xFF202020,
+                false);
         int pipX = left + PANEL_W - 10 - RUIN_AT * 11;
         for (int k = 0; k < RUIN_AT; k++) {
             int px = pipX + k * 11;
@@ -768,7 +809,8 @@ public class CarvingScreen extends Screen {
         Component hint = Component.translatable("berlordscarving.screen.hint");
         g.drawString(this.font, hint, left + PANEL_W / 2 - this.font.width(hint) / 2, footerY + 15, 0xFF2E2E2E, false);
         Component cancel = Component.translatable("berlordscarving.screen.cancel");
-        g.drawString(this.font, cancel, left + PANEL_W / 2 - this.font.width(cancel) / 2, footerY + 27, 0xFF8A1410, false);
+        g.drawString(
+                this.font, cancel, left + PANEL_W / 2 - this.font.width(cancel) / 2, footerY + 27, 0xFF8A1410, false);
 
         if (!hoveredTab.isEmpty()) {
             g.renderTooltip(this.font, hoveredTab, mouseX, mouseY);

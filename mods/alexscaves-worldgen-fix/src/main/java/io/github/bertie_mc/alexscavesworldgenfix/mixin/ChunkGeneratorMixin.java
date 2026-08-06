@@ -2,15 +2,12 @@ package io.github.bertie_mc.alexscavesworldgenfix.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-
 import io.github.bertie_mc.alexscavesworldgenfix.AlexsCavesWorldgenFix;
 import io.github.bertie_mc.alexscavesworldgenfix.logic.BiomeDecorationFailure;
-
 import net.minecraft.world.level.StructureManager;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ChunkGenerator;
-
 import org.spongepowered.asm.mixin.Mixin;
 
 /**
@@ -33,10 +30,7 @@ public abstract class ChunkGeneratorMixin {
 
     @WrapMethod(method = "applyBiomeDecoration")
     private void alexscavesworldgenfix$surviveClampFailure(
-            WorldGenLevel level,
-            ChunkAccess chunk,
-            StructureManager structureManager,
-            Operation<Void> original) {
+            WorldGenLevel level, ChunkAccess chunk, StructureManager structureManager, Operation<Void> original) {
         try {
             original.call(level, chunk, structureManager);
         } catch (Throwable thrown) {

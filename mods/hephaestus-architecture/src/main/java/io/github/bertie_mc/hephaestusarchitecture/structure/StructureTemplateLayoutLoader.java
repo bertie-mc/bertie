@@ -1,8 +1,10 @@
 package io.github.bertie_mc.hephaestusarchitecture.structure;
 
-import io.github.bertie_mc.hephaestusarchitecture.HephaestusArchitecture;
 import com.stal111.forbidden_arcanus.common.block.HephaestusForgeBlock;
 import com.stal111.forbidden_arcanus.util.ModTags;
+import io.github.bertie_mc.hephaestusarchitecture.HephaestusArchitecture;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -14,13 +16,9 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 
-import java.util.ArrayList;
-import java.util.List;
-
 final class StructureTemplateLayoutLoader {
 
-    private StructureTemplateLayoutLoader() {
-    }
+    private StructureTemplateLayoutLoader() {}
 
     static ForgeLayout load(ServerLevel level, StructureTemplate template, int tier) {
         CompoundTag root = template.save(new CompoundTag());

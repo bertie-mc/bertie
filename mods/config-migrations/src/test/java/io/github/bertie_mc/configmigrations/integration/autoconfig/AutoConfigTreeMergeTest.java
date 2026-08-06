@@ -43,8 +43,7 @@ class AutoConfigTreeMergeTest {
 
         assertThrows(
                 ConfigMigrationException.class,
-                () -> AutoConfigTreeMerge.apply(
-                        new SampleConfig(), List.of(new Change(1, fragment))));
+                () -> AutoConfigTreeMerge.apply(new SampleConfig(), List.of(new Change(1, fragment))));
     }
 
     private enum Relation {

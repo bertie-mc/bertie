@@ -21,12 +21,10 @@ import net.minecraft.world.level.biome.Biomes;
  */
 public final class AltarOfAmethystRules {
 
-    private AltarOfAmethystRules() {
-    }
+    private AltarOfAmethystRules() {}
 
     /** Tooltip line on the altar item. */
-    public static final ResourceLocation ALTAR_ITEM =
-            ResourceLocation.parse("cataclysm:altar_of_amethyst");
+    public static final ResourceLocation ALTAR_ITEM = ResourceLocation.parse("cataclysm:altar_of_amethyst");
 
     /** Multiplier meaning "does not run at all". */
     public static final float STOPPED = 0.0F;

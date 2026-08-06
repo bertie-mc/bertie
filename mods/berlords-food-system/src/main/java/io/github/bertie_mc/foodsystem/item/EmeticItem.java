@@ -1,6 +1,7 @@
 package io.github.bertie_mc.foodsystem.item;
 
 import io.github.bertie_mc.foodsystem.stomach.Stomach;
+import java.util.List;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -17,8 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-
-import java.util.List;
 
 /**
  * Drink to empty your stomach: clears food slots (and with them all food buffs),
@@ -66,8 +65,15 @@ public class EmeticItem extends Item {
             } else {
                 player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0, false, true, true));
             }
-            level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.PLAYER_BURP, SoundSource.PLAYERS, 1.0F, 0.6F);
+            level.playSound(
+                    null,
+                    player.getX(),
+                    player.getY(),
+                    player.getZ(),
+                    SoundEvents.PLAYER_BURP,
+                    SoundSource.PLAYERS,
+                    1.0F,
+                    0.6F);
 
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);

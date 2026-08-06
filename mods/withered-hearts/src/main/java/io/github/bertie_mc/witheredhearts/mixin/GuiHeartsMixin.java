@@ -1,10 +1,10 @@
 package io.github.bertie_mc.witheredhearts.mixin;
 
-import io.github.bertie_mc.witheredhearts.logic.HeartRenderPolicy;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Share;
 import com.llamalad7.mixinextras.sugar.ref.LocalIntRef;
+import io.github.bertie_mc.witheredhearts.logic.HeartRenderPolicy;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -19,14 +19,13 @@ public class GuiHeartsMixin {
 
     @WrapOperation(
             method = "renderHearts",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/gui/Gui$HeartType;forPlayer(Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/client/gui/Gui$HeartType;"
-            )
-    )
-    private Gui.HeartType witheredhearts$wrapForPlayer(Player player,
-                                                       Operation<Gui.HeartType> original,
-                                                       @Share("witheredCount") LocalIntRef witheredCount) {
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/client/gui/Gui$HeartType;forPlayer(Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/client/gui/Gui$HeartType;"))
+    private Gui.HeartType witheredhearts$wrapForPlayer(
+            Player player, Operation<Gui.HeartType> original, @Share("witheredCount") LocalIntRef witheredCount) {
         Gui.HeartType type = original.call(player);
 
         MobEffectInstance wither = player.getEffect(MobEffects.WITHER);
@@ -43,23 +42,24 @@ public class GuiHeartsMixin {
 
     @WrapOperation(
             method = "renderHearts",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/client/gui/Gui;renderHeart(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Gui$HeartType;IIZZZ)V"
-            )
-    )
-    private void witheredhearts$wrapRenderHeart(Gui self,
-                                                GuiGraphics graphics,
-                                                Gui.HeartType type,
-                                                int x,
-                                                int y,
-                                                boolean hardcore,
-                                                boolean blinking,
-                                                boolean half,
-                                                Operation<Void> original,
-                                                @Share("witheredCount") LocalIntRef witheredCount) {
-        HeartRenderPolicy.Draw draw = HeartRenderPolicy.nextDraw(
-                type == Gui.HeartType.CONTAINER, witheredCount.get(), half);
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/client/gui/Gui;renderHeart(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Gui$HeartType;IIZZZ)V"))
+    private void witheredhearts$wrapRenderHeart(
+            Gui self,
+            GuiGraphics graphics,
+            Gui.HeartType type,
+            int x,
+            int y,
+            boolean hardcore,
+            boolean blinking,
+            boolean half,
+            Operation<Void> original,
+            @Share("witheredCount") LocalIntRef witheredCount) {
+        HeartRenderPolicy.Draw draw =
+                HeartRenderPolicy.nextDraw(type == Gui.HeartType.CONTAINER, witheredCount.get(), half);
         Gui.HeartType drawType = draw.withered() ? Gui.HeartType.WITHERED : type;
         witheredCount.set(draw.remainingHalfHearts());
 

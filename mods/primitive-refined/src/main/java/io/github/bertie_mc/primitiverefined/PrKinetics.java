@@ -1,14 +1,11 @@
 package io.github.bertie_mc.primitiverefined;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.simibubi.create.content.kinetics.RotationPropagator;
 import com.simibubi.create.content.kinetics.base.IRotate;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
-
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.Nullable;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
@@ -30,8 +27,7 @@ import net.minecraft.world.level.block.state.BlockState;
  */
 public final class PrKinetics {
 
-    private PrKinetics() {
-    }
+    private PrKinetics() {}
 
     /**
      * Implemented by every block in the arcanetic family.

@@ -1,13 +1,13 @@
 package io.github.bertie_mc.foodsystem.stomach;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import org.junit.jupiter.api.Test;
 
 class StomachDataTest {
 
@@ -44,7 +44,7 @@ class StomachDataTest {
         source.eatCounter = 12;
         source.regenCounter = 99;
         source.feedWakeStamp = 7;
-        source.afterglow.add(new double[]{2, 400});
+        source.afterglow.add(new double[] {2, 400});
 
         StomachData copy = new StomachData();
         copy.copyFrom(source);
