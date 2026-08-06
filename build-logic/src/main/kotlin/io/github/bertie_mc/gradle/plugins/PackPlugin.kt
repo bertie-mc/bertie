@@ -6,20 +6,27 @@ import io.github.bertie_mc.gradle.conventions.externalPackwizArtifacts
 import io.github.bertie_mc.gradle.conventions.ownedPackFiles
 import io.github.bertie_mc.gradle.conventions.packagingClasspath
 import io.github.bertie_mc.gradle.conventions.useDirectArtifactsOnly
+import io.github.bertie_mc.gradle.model.MinecraftArtifact
+import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
 import io.github.bertie_mc.gradle.model.PlatformVersions
 import io.github.bertie_mc.gradle.model.TestSubject
+import io.github.bertie_mc.gradle.model.fileExtension
 import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
 import io.github.bertie_mc.gradle.tasks.GeneratePackwizPack
+import io.github.bertie_mc.gradle.tasks.WriteArtifactInventory
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Configuration
+import org.gradle.api.artifacts.component.ModuleComponentIdentifier
 import org.gradle.api.attributes.Bundling
 import org.gradle.api.attributes.Category
 import org.gradle.api.attributes.LibraryElements
 import org.gradle.api.attributes.Usage
 import org.gradle.api.provider.Provider
+import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.Sync
 import org.gradle.api.tasks.bundling.Jar
+import org.gradle.api.tasks.testing.Test
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.kotlin.dsl.named
 import org.gradle.kotlin.dsl.register
@@ -51,6 +58,8 @@ class PackPlugin : Plugin<Project> {
                     ).asText
                     .map(::parseMinecraftArtifacts)
             val externalMods = manifest.map { it.mods }
+            val datapacks = manifest.map { it.datapacks }
+            val resourcepacks = manifest.map { it.resourcepacks }
             val shaderpacks = manifest.map { it.shaderpacks }
 
             val packMods =
@@ -63,6 +72,26 @@ class PackPlugin : Plugin<Project> {
                     description = "Shaderpacks included in the generated pack"
                     useDirectArtifactsOnly()
                 }
+            val packDatapacks =
+                configurations.dependencyScope("packDatapacks") {
+                    description = "Datapacks included in the generated pack"
+                    useDirectArtifactsOnly()
+                }
+            val packResourcepacks =
+                configurations.dependencyScope("packResourcepacks") {
+                    description = "Resourcepacks included in the generated pack"
+                    useDirectArtifactsOnly()
+                }
+            val gameTestDatapacks =
+                configurations.dependencyScope("gametestDatapacks") {
+                    description = "Server-side datapacks included in the game test instance"
+                    useDirectArtifactsOnly()
+                }
+            val clientTestDatapacks =
+                configurations.dependencyScope("clienttestDatapacks") {
+                    description = "Client-side datapacks included in the client test instance"
+                    useDirectArtifactsOnly()
+                }
             val gameTestRuntimeMods =
                 configurations.dependencyScope("gametestRuntimeMods") {
                     extendsFrom(packMods.get())
@@ -73,23 +102,102 @@ class PackPlugin : Plugin<Project> {
                 }
 
             externalMods.get().forEach { artifact ->
-                dependencies.add(packMods.name, artifact.gradleSource.notation())
+                dependencies.add(packMods.name, artifact.notation(artifact.gradleSource))
             }
             shaderpacks.get().forEach { artifact ->
                 dependencies.add(
                     packShaderpacks.name,
-                    artifact.gradleSource.notation(artifact.kind.extension),
+                    artifact.notation(artifact.gradleSource),
+                )
+            }
+            datapacks.get().forEach { artifact ->
+                dependencies.add(
+                    packDatapacks.name,
+                    artifact.notation(artifact.gradleSource),
+                )
+                if (artifact.side.isIncludedOn(MinecraftArtifactSide.SERVER)) {
+                    dependencies.add(
+                        gameTestDatapacks.name,
+                        artifact.notation(artifact.gradleSource),
+                    )
+                }
+                if (artifact.side.isIncludedOn(MinecraftArtifactSide.CLIENT)) {
+                    dependencies.add(
+                        clientTestDatapacks.name,
+                        artifact.notation(artifact.gradleSource),
+                    )
+                }
+            }
+            resourcepacks.get().forEach { artifact ->
+                dependencies.add(
+                    packResourcepacks.name,
+                    artifact.notation(artifact.gradleSource),
                 )
             }
 
             val modArtifacts = artifactClasspath("packModArtifacts", packMods)
+            val gameTestDatapackArtifacts =
+                artifactClasspath("gametestDatapackArtifacts", gameTestDatapacks)
+            val clientTestDatapackArtifacts =
+                artifactClasspath("clienttestDatapackArtifacts", clientTestDatapacks)
+            val resourcepackArtifacts = artifactClasspath("packResourcepackArtifacts", packResourcepacks)
             val shaderpackArtifacts = artifactClasspath("packShaderpackArtifacts", packShaderpacks)
+            val datapackFilenames = datapacks.map(::filenamesByResolvedFile)
+            val resourcepackFilenames = resourcepacks.map(::filenamesByResolvedFile)
+            val shaderpackFilenames = shaderpacks.map(::filenamesByResolvedFile)
             val modPackagingArtifacts = packagingClasspath("packModPackagingArtifacts", externalMods)
+            val datapackPackagingArtifacts =
+                packagingClasspath(
+                    "packDatapackPackagingArtifacts",
+                    datapacks,
+                )
+            val resourcepackPackagingArtifacts =
+                packagingClasspath(
+                    "packResourcepackPackagingArtifacts",
+                    resourcepacks,
+                )
             val shaderpackPackagingArtifacts =
                 packagingClasspath(
                     "packShaderpackPackagingArtifacts",
                     shaderpacks,
                 )
+
+            val modArtifactInventory =
+                layout.buildDirectory.file("test-inputs/external-mod-artifacts.tsv")
+            val declaredModCoordinates =
+                externalMods
+                    .get()
+                    .map { artifact -> artifact.gradleSource.coordinate() }
+                    .toSet()
+            val externalModArtifacts =
+                modArtifacts.incoming
+                    .artifactView {
+                        componentFilter { identifier ->
+                            identifier is ModuleComponentIdentifier &&
+                                identifier.coordinate() in declaredModCoordinates
+                        }
+                    }.files
+            val writeModArtifactInventory =
+                tasks.register<WriteArtifactInventory>("writeModArtifactInventory") {
+                    artifacts.from(externalModArtifacts)
+                    artifactIdsByFileName.set(externalMods.map(::artifactIdsByResolvedFile))
+                    fakePackArtifactIds.set(
+                        externalMods.map { artifacts ->
+                            artifacts.filter(MinecraftArtifact::fakePack).map(MinecraftArtifact::id).toSet()
+                        },
+                    )
+                    outputFile.set(modArtifactInventory)
+                }
+            tasks.named<Test>("test") {
+                dependsOn(writeModArtifactInventory)
+                inputs
+                    .file(writeModArtifactInventory.flatMap(WriteArtifactInventory::outputFile))
+                    .withPathSensitivity(PathSensitivity.NONE)
+                systemProperty(
+                    "bertie.pack.modArtifactInventory",
+                    modArtifactInventory.get().asFile.absolutePath,
+                )
+            }
 
             val platform = extensions.getByType<PlatformVersions>()
             tasks.register<GeneratePackwizPack>("generatePackwiz") {
@@ -97,11 +205,23 @@ class PackPlugin : Plugin<Project> {
                 description = "Generates the packwiz pack from the declared runtime inventory"
                 packProperties.set(layout.projectDirectory.file("pack.properties"))
                 contentDirectory.set(layout.projectDirectory.dir("config"))
+                layout.projectDirectory.dir("datapacks").takeIf { it.asFile.isDirectory }?.let {
+                    datapackDirectory.set(it)
+                }
+                layout.projectDirectory.dir("resourcepacks").takeIf { it.asFile.isDirectory }?.let {
+                    resourcepackDirectory.set(it)
+                }
                 minecraftVersion.set(platform.minecraft)
                 neoForgeVersion.set(platform.neoForge)
                 outputDirectory.set(layout.buildDirectory.dir("packwiz"))
                 packArtifacts.addAll(
                     modPackagingArtifacts.get().externalPackwizArtifacts(externalMods),
+                )
+                packArtifacts.addAll(
+                    datapackPackagingArtifacts.get().externalPackwizArtifacts(datapacks),
+                )
+                packArtifacts.addAll(
+                    resourcepackPackagingArtifacts.get().externalPackwizArtifacts(resourcepacks),
                 )
                 packArtifacts.addAll(
                     shaderpackPackagingArtifacts.get().externalPackwizArtifacts(shaderpacks),
@@ -118,6 +238,11 @@ class PackPlugin : Plugin<Project> {
                 }
                 tasks.named<Sync>("prepareGameTestInstance") {
                     from(layout.projectDirectory.dir("config")) { into("config") }
+                    from(layout.projectDirectory.dir("datapacks")) { into("datapacks") }
+                    from(gameTestDatapackArtifacts) {
+                        into("datapacks")
+                        eachFile { name = datapackFilenames.get()[name] ?: name }
+                    }
                 }
                 tasks.named("runGameTests") {
                     timeout.set(Duration.ofMinutes(75))
@@ -135,7 +260,20 @@ class PackPlugin : Plugin<Project> {
                 }
                 tasks.named<Sync>("prepareClientTestInstance") {
                     from(layout.projectDirectory.dir("config")) { into("config") }
-                    from(shaderpackArtifacts) { into("shaderpacks") }
+                    from(layout.projectDirectory.dir("datapacks")) { into("datapacks") }
+                    from(layout.projectDirectory.dir("resourcepacks")) { into("resourcepacks") }
+                    from(clientTestDatapackArtifacts) {
+                        into("datapacks")
+                        eachFile { name = datapackFilenames.get()[name] ?: name }
+                    }
+                    from(resourcepackArtifacts) {
+                        into("resourcepacks")
+                        eachFile { name = resourcepackFilenames.get()[name] ?: name }
+                    }
+                    from(shaderpackArtifacts) {
+                        into("shaderpacks")
+                        eachFile { name = shaderpackFilenames.get()[name] ?: name }
+                    }
                 }
                 tasks.named("runClientTests") {
                     timeout.set(Duration.ofMinutes(105))
@@ -171,3 +309,23 @@ class PackPlugin : Plugin<Project> {
                 }
             }.get()
 }
+
+private fun filenamesByResolvedFile(artifacts: List<MinecraftArtifact>): Map<String, String> =
+    artifacts.associate { artifact ->
+        resolvedFileName(artifact) to artifact.filename(artifact.gradleSource)
+    }
+
+private fun artifactIdsByResolvedFile(artifacts: List<MinecraftArtifact>): Map<String, String> =
+    artifacts.associate { artifact ->
+        resolvedFileName(artifact) to artifact.id
+    }
+
+private fun resolvedFileName(artifact: MinecraftArtifact): String {
+    val source = artifact.gradleSource
+    val extension = source.fileExtension ?: artifact.kind.extension
+    return "${source.module}-${source.version}.$extension"
+}
+
+private fun io.github.bertie_mc.gradle.model.MinecraftArtifactSource.coordinate(): String = "$group:$module:$version"
+
+private fun ModuleComponentIdentifier.coordinate(): String = "$group:$module:$version"

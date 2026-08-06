@@ -10,6 +10,8 @@ enum class MinecraftArtifactKind(
     val extension: String,
 ) {
     MOD("mods", "mods", "jar"),
+    DATAPACK("datapacks", "datapacks", "zip"),
+    RESOURCEPACK("resourcepacks", "resourcepacks", "zip"),
     SHADERPACK("shaderpacks", "shaderpacks", "zip"),
 }
 
@@ -77,7 +79,14 @@ data class MinecraftArtifact(
     val maven: MavenArtifactSource?,
     val modrinth: ModrinthArtifactSource?,
     val curseForge: CurseForgeArtifactSource?,
+    val fakePack: Boolean = false,
 ) {
+    init {
+        require(!fakePack || kind == MinecraftArtifactKind.MOD) {
+            "Minecraft artifact '$id' may set fakePack only under [mods.*]"
+        }
+    }
+
     val gradleSource: MinecraftArtifactSource
         get() =
             maven ?: modrinth ?: curseForge
@@ -87,6 +96,18 @@ data class MinecraftArtifact(
         get() =
             modrinth ?: curseForge
                 ?: error("Minecraft artifact '$id' has no Modrinth or CurseForge source")
+
+    fun filename(source: MinecraftArtifactSource): String =
+        when (source) {
+            is ModrinthArtifactSource -> source.filename
+            is CurseForgeArtifactSource -> "$id.${kind.extension}"
+            is MavenArtifactSource -> error("Packwiz cannot package Maven-only artifact '$id'")
+        }
+
+    fun notation(source: MinecraftArtifactSource): String {
+        val extension = source.fileExtension ?: kind.extension
+        return source.notation(extension.takeUnless { it == "jar" })
+    }
 
     val catalogAlias: String
         get() =
@@ -100,15 +121,19 @@ data class MinecraftArtifact(
 
 data class MinecraftArtifactManifest(
     val mods: List<MinecraftArtifact>,
+    val datapacks: List<MinecraftArtifact>,
+    val resourcepacks: List<MinecraftArtifact>,
     val shaderpacks: List<MinecraftArtifact>,
 ) {
     val all: List<MinecraftArtifact>
-        get() = mods + shaderpacks
+        get() = mods + datapacks + resourcepacks + shaderpacks
 }
 
 fun parseMinecraftArtifacts(contents: String): MinecraftArtifactManifest {
     val root = TomlParser().parse(StringReader(contents))
     val mods = root.artifacts(MinecraftArtifactKind.MOD)
+    val datapacks = root.artifacts(MinecraftArtifactKind.DATAPACK)
+    val resourcepacks = root.artifacts(MinecraftArtifactKind.RESOURCEPACK)
     val shaderpacks = root.artifacts(MinecraftArtifactKind.SHADERPACK)
     val aliases =
         mods
@@ -118,7 +143,7 @@ fun parseMinecraftArtifacts(contents: String): MinecraftArtifactManifest {
         "Minecraft artifact IDs produce colliding Gradle aliases: " +
             aliases.values.flatten().joinToString { artifact -> artifact.id }
     }
-    return MinecraftArtifactManifest(mods, shaderpacks)
+    return MinecraftArtifactManifest(mods, datapacks, resourcepacks, shaderpacks)
 }
 
 private fun UnmodifiableConfig.artifacts(kind: MinecraftArtifactKind): List<MinecraftArtifact> {
@@ -138,6 +163,7 @@ private fun UnmodifiableConfig.artifacts(kind: MinecraftArtifactKind): List<Mine
                         .optionalString("side")
                         ?.let(MinecraftArtifactSide::parse)
                         ?: MinecraftArtifactSide.BOTH,
+                fakePack = artifact.optionalBoolean("fakePack") ?: false,
                 maven =
                     artifact.config("maven")?.let { source ->
                         MavenArtifactSource(
@@ -177,6 +203,20 @@ private fun UnmodifiableConfig.optionalString(name: String): String? {
         ?: error("Minecraft artifact field '$name' must be a string")
 }
 
+private fun UnmodifiableConfig.optionalBoolean(name: String): Boolean? {
+    val value = get<Any?>(name) ?: return null
+    return value as? Boolean
+        ?: error("Minecraft artifact field '$name' must be a boolean")
+}
+
 private fun UnmodifiableConfig.long(name: String): Long =
     (get<Any?>(name) as? Number)?.toLong()
         ?: error("Minecraft artifact field '$name' must be an integer")
+
+val MinecraftArtifactSource.fileExtension: String?
+    get() =
+        when (this) {
+            is MavenArtifactSource -> null
+            is ModrinthArtifactSource -> filename.substringAfterLast('.', missingDelimiterValue = "")
+            is CurseForgeArtifactSource -> null
+        }?.takeIf(String::isNotEmpty)

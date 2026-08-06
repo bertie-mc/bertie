@@ -92,4 +92,87 @@ class PackDependenciesTest {
         assertEquals(MinecraftArtifactSide.CLIENT, packaged.side)
         assertEquals("shaderpacks", packaged.destination)
     }
+
+    @Test
+    fun `packaging preserves datapack destination`() {
+        val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val repository = Files.createDirectory(temporaryDirectory.resolve("datapack-repository"))
+        Files.writeString(repository.resolve("artifact-1.zip"), "zip payload")
+        project.repositories.flatDir { dirs(repository.toFile()) }
+        val selectedArtifacts =
+            project.providers.provider {
+                listOf(
+                    MinecraftArtifact(
+                        id = "example",
+                        kind = MinecraftArtifactKind.DATAPACK,
+                        side = MinecraftArtifactSide.BOTH,
+                        maven = null,
+                        modrinth =
+                            ModrinthArtifactSource(
+                                projectId = "artifact",
+                                versionId = "1",
+                                filename = "example-datapack.zip",
+                            ),
+                        curseForge = null,
+                    ),
+                )
+            }
+        val packaging =
+            project.packagingClasspath(
+                "exampleDatapackPackagingArtifacts",
+                selectedArtifacts,
+            )
+
+        val packaged =
+            packaging
+                .get()
+                .externalPackwizArtifacts(selectedArtifacts)
+                .get()
+                .single()
+
+        assertEquals("datapacks", packaged.destination)
+        assertEquals("example-datapack.zip", packaged.filename)
+    }
+
+    @Test
+    fun `packaging preserves a fake pack mod destination and filename`() {
+        val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val repository = Files.createDirectory(temporaryDirectory.resolve("mod-datapack-repository"))
+        Files.writeString(repository.resolve("artifact-1.jar"), "jar payload")
+        project.repositories.flatDir { dirs(repository.toFile()) }
+        val selectedArtifacts =
+            project.providers.provider {
+                listOf(
+                    MinecraftArtifact(
+                        id = "example",
+                        kind = MinecraftArtifactKind.MOD,
+                        side = MinecraftArtifactSide.BOTH,
+                        maven = null,
+                        modrinth =
+                            ModrinthArtifactSource(
+                                projectId = "artifact",
+                                versionId = "1",
+                                filename = "example-datapack.jar",
+                            ),
+                        curseForge = null,
+                        fakePack = true,
+                    ),
+                )
+            }
+        val packaging =
+            project.packagingClasspath(
+                "exampleModDatapackPackagingArtifacts",
+                selectedArtifacts,
+            )
+
+        val packaged =
+            packaging
+                .get()
+                .externalPackwizArtifacts(selectedArtifacts)
+                .get()
+                .single()
+
+        assertEquals("mods", packaged.destination)
+        assertEquals("example-datapack.jar", packaged.filename)
+    }
 }

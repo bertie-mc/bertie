@@ -11,7 +11,7 @@ nix develop
 | Dependency | File |
 | --- | --- |
 | Java library, Gradle plugin, Minecraft, NeoForge, or shared tool version | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
-| Third-party mod or shaderpack | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
+| Third-party mod, datapack, resourcepack, or shaderpack | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
 | Another project in this repository | The consumer's `build.gradle.kts` |
 | Owned mod version | The mod's `mod.properties` |
 | Pack version | [`pack/pack.properties`](../pack/pack.properties) |
@@ -35,8 +35,28 @@ Use release-specific IDs and the exact filename from the provider. Gradle prefer
 Maven coordinate for development. Generated packwiz metadata uses Modrinth when available
 and otherwise CurseForge.
 
-The table name becomes its `mods` alias. For example, `[mods.slag-n-embers]` becomes
-`mods.slagNEmbers`. Put shaderpack archives under `[shaderpacks.*]`.
+Some projects publish pack-only data through loader-compatible JARs. If either Modrinth or
+CurseForge does not offer a genuine standalone pack distribution, keep the artifact under
+`[mods.*]` and mark the artifact itself as `fakePack = true`:
+
+```toml
+[mods.example-worldgen]
+fakePack = true
+modrinth = { project-id = "example", version-id = "jar-release", filename = "example.jar" }
+curseforge = { slug = "example-worldgen", project-id = 123, file-id = 456 }
+```
+
+This deliberately chooses the mod-container release even if one provider also offers a `.zip`,
+so switching providers cannot change how the artifact is installed. `fakePack` documents why a
+pack-only archive appears in `mods/` and lets the pack classification test distinguish it from an
+accidentally misclassified mod. It also fits CurseForge `manifest.json` semantics: the export
+retains the project and file IDs and lets the launcher derive the upstream file type and location.
+
+The table name becomes its `mods` alias only for entries under `[mods.*]`. For example,
+`[mods.slag-n-embers]` becomes `mods.slagNEmbers`. Put standalone pack archives under
+`[datapacks.*]`, `[resourcepacks.*]`, or `[shaderpacks.*]`. Ordinary pack distributions are
+installed into the matching top-level Minecraft directory and are not exposed as Java
+dependencies. Use those tables only when every declared provider is a genuine standalone pack.
 
 ### Restrict a file to one physical side
 

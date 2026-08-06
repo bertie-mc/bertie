@@ -12,7 +12,10 @@ class MinecraftRuntimeSidesTest {
         val manifest = manifest()
 
         assertEquals(
-            setOf(MinecraftModule("example.server", "server-only")),
+            setOf(
+                MinecraftModule("example.server", "server-only"),
+                MinecraftModule("maven.modrinth", "server-pack-mod"),
+            ),
             manifest.modulesExcludedFrom(MinecraftArtifactSide.CLIENT),
         )
     }
@@ -58,6 +61,15 @@ class MinecraftRuntimeSidesTest {
             [mods.server-only]
             side = "server"
             maven = { module = "example.server:server-only", version = "1" }
+
+            [mods.server-pack-mod]
+            side = "server"
+            fakePack = true
+            modrinth = { project-id = "server-pack-mod", version-id = "1", filename = "server-pack-mod.jar" }
+
+            [datapacks.server-standalone-pack]
+            side = "server"
+            modrinth = { project-id = "server-standalone-pack", version-id = "1", filename = "server-standalone-pack.zip" }
             """.trimIndent(),
         )
 }

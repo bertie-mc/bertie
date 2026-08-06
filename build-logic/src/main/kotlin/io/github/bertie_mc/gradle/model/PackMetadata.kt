@@ -44,7 +44,7 @@ enum class PackwizProvider {
 data class PackwizArtifact(
     @get:Input val id: String,
     @get:Input val displayName: String,
-    @get:Input val installedName: String,
+    @get:Input val filename: String,
     @get:Input val destination: String,
     @get:Input val side: MinecraftArtifactSide,
     @get:Input val provider: PackwizProvider,

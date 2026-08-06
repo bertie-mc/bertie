@@ -12,15 +12,24 @@ public final class PackClientTests {
 
     @ClientTest
     public static void shaderpackIsStaged(ClientTestContext context) {
-        Path shaderpacks =
-                context.computeOnClient(client -> client.gameDirectory.toPath().resolve("shaderpacks"));
-        try (Stream<Path> contents = Files.list(shaderpacks)) {
+        assertZipIsStaged(context, "shaderpacks");
+    }
+
+    @ClientTest
+    public static void datapackIsStaged(ClientTestContext context) {
+        assertZipIsStaged(context, "datapacks");
+    }
+
+    private static void assertZipIsStaged(ClientTestContext context, String directory) {
+        Path packs =
+                context.computeOnClient(client -> client.gameDirectory.toPath().resolve(directory));
+        try (Stream<Path> contents = Files.list(packs)) {
             if (contents.noneMatch(path ->
                     Files.isRegularFile(path) && path.getFileName().toString().endsWith(".zip"))) {
-                throw new AssertionError("No shaderpack archive was staged in " + shaderpacks);
+                throw new AssertionError("No pack archive was staged in " + packs);
             }
         } catch (IOException exception) {
-            throw new AssertionError("Could not inspect staged shaderpacks in " + shaderpacks, exception);
+            throw new AssertionError("Could not inspect staged packs in " + packs, exception);
         }
     }
 

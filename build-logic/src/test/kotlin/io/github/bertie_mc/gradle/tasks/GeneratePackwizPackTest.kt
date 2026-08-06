@@ -35,6 +35,7 @@ class GeneratePackwizPackTest {
         val fixture = fixture("providers")
         val modrinthFile = fixture.file("artifacts/modrinth.jar", "modrinth artifact")
         val modrinthZip = fixture.file("artifacts/modrinth.zip", "modrinth zip")
+        val modDatapack = fixture.file("artifacts/datapack.jar", "datapack jar")
         val curseForgeFile = fixture.file("artifacts/curseforge.jar", "curseforge artifact")
         val ownedFile = fixture.file("artifacts/owned-1.2.3.jar", "owned artifact")
         val modrinthHash = sha512(modrinthFile)
@@ -46,7 +47,7 @@ class GeneratePackwizPackTest {
                     provider = PackwizProvider.MODRINTH,
                     projectId = "project-id",
                     versionId = "version-id",
-                    installedName = "example-release.jar",
+                    filename = "example-release.jar",
                     side = MinecraftArtifactSide.BOTH,
                 ),
                 artifact(
@@ -56,7 +57,7 @@ class GeneratePackwizPackTest {
                     projectId = "shader-project",
                     versionId = "shader-version",
                     destination = "shaderpacks",
-                    installedName = "shader-release.zip",
+                    filename = "shader-release.zip",
                     side = MinecraftArtifactSide.CLIENT,
                 ),
                 artifact(
@@ -66,6 +67,14 @@ class GeneratePackwizPackTest {
                     projectId = "123",
                     versionId = "456",
                     side = MinecraftArtifactSide.SERVER,
+                ),
+                artifact(
+                    id = "mod-datapack",
+                    file = modDatapack,
+                    provider = PackwizProvider.MODRINTH,
+                    projectId = "datapack-project",
+                    versionId = "datapack-version",
+                    filename = "provider-datapack.jar",
                 ),
             ),
         )
@@ -81,6 +90,14 @@ class GeneratePackwizPackTest {
             Files.walk(fixture.output.resolve("config")).use { paths ->
                 paths.filter(Files::isRegularFile).count()
             },
+        )
+        assertEquals(
+            "owned datapack",
+            Files.readString(fixture.output.resolve("datapacks/owned/pack.mcmeta")),
+        )
+        assertEquals(
+            "owned resourcepack",
+            Files.readString(fixture.output.resolve("resourcepacks/owned/pack.mcmeta")),
         )
         assertFalse(Files.exists(fixture.output.resolve("file-0.toml")))
 
@@ -106,6 +123,15 @@ class GeneratePackwizPackTest {
             ),
         )
         assertTrue(modrinthShader.contains("side = \"client\""))
+
+        val datapack = fixture.generated("mods/mod-datapack.pw.toml")
+        assertTrue(datapack.contains("filename = \"provider-datapack.jar\""))
+        assertTrue(
+            datapack.contains(
+                "url = \"https://cdn.modrinth.com/data/datapack-project/versions/" +
+                    "datapack-version/provider-datapack.jar\"",
+            ),
+        )
 
         val curseForge = fixture.generated("mods/curseforge-example.pw.toml")
         assertTrue(curseForge.contains("mode = \"metadata:curseforge\""))
@@ -208,10 +234,18 @@ class GeneratePackwizPackTest {
             Files.createDirectories(file.parent)
             Files.writeString(file, "value = $index\n")
         }
+        val datapack = projectDirectory.resolve("datapacks/owned/pack.mcmeta")
+        Files.createDirectories(datapack.parent)
+        Files.writeString(datapack, "owned datapack")
+        val resourcepack = projectDirectory.resolve("resourcepacks/owned/pack.mcmeta")
+        Files.createDirectories(resourcepack.parent)
+        Files.writeString(resourcepack, "owned resourcepack")
         val output = projectDirectory.resolve("build/packwiz")
         val task = project.tasks.register("generatePackwiz", GeneratePackwizPack::class.java).get()
         task.packProperties.set(properties.toFile())
         task.contentDirectory.set(config.toFile())
+        task.datapackDirectory.set(projectDirectory.resolve("datapacks").toFile())
+        task.resourcepackDirectory.set(projectDirectory.resolve("resourcepacks").toFile())
         task.minecraftVersion.set("1.21.1")
         task.neoForgeVersion.set("21.1.233")
         task.outputDirectory.set(output.toFile())
@@ -225,13 +259,13 @@ class GeneratePackwizPackTest {
         projectId: String,
         versionId: String,
         destination: String = "mods",
-        installedName: String = "$id.${file.fileName.toString().substringAfterLast('.')}",
+        filename: String = "$id.${file.fileName.toString().substringAfterLast('.')}",
         side: MinecraftArtifactSide = MinecraftArtifactSide.BOTH,
     ): PackwizArtifact =
         PackwizArtifact(
             id = id,
             displayName = id,
-            installedName = installedName,
+            filename = filename,
             destination = destination,
             side = side,
             provider = provider,

@@ -29,10 +29,9 @@ internal fun Project.packagingClasspath(
             defaultDependencies {
                 selectedArtifacts.get().forEach { artifact ->
                     val source = artifact.packwizSource
-                    val extension = artifact.kind.extension.takeUnless { it == "jar" }
                     add(
                         this@packagingClasspath.dependencies.create(
-                            source.notation(extension),
+                            artifact.notation(source),
                         ),
                     )
                 }
@@ -70,7 +69,7 @@ internal fun Configuration.externalPackwizArtifacts(
                     PackwizArtifact(
                         id = artifact.id,
                         displayName = artifact.id.replace('-', ' '),
-                        installedName = source.filename,
+                        filename = artifact.filename(source),
                         destination = artifact.kind.destination,
                         side = artifact.side,
                         provider = PackwizProvider.MODRINTH,
@@ -84,7 +83,7 @@ internal fun Configuration.externalPackwizArtifacts(
                     PackwizArtifact(
                         id = artifact.id,
                         displayName = artifact.id.replace('-', ' '),
-                        installedName = "${artifact.id}.${resolved.file.extension}",
+                        filename = artifact.filename(source),
                         destination = artifact.kind.destination,
                         side = artifact.side,
                         provider = PackwizProvider.CURSEFORGE,

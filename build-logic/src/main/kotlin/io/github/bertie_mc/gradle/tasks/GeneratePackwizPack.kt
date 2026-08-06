@@ -16,6 +16,7 @@ import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.InputFiles
 import org.gradle.api.tasks.Nested
+import org.gradle.api.tasks.Optional
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.PathSensitive
 import org.gradle.api.tasks.PathSensitivity
@@ -40,6 +41,16 @@ abstract class GeneratePackwizPack : DefaultTask() {
     @get:InputDirectory
     @get:PathSensitive(PathSensitivity.RELATIVE)
     abstract val contentDirectory: DirectoryProperty
+
+    @get:InputDirectory
+    @get:Optional
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val datapackDirectory: DirectoryProperty
+
+    @get:InputDirectory
+    @get:Optional
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val resourcepackDirectory: DirectoryProperty
 
     @get:Input
     abstract val minecraftVersion: Property<String>
@@ -68,6 +79,18 @@ abstract class GeneratePackwizPack : DefaultTask() {
         fileSystemOperations.copy {
             from(contentDirectory)
             into(output.resolve("config"))
+        }
+        if (datapackDirectory.isPresent) {
+            fileSystemOperations.copy {
+                from(datapackDirectory)
+                into(output.resolve("datapacks"))
+            }
+        }
+        if (resourcepackDirectory.isPresent) {
+            fileSystemOperations.copy {
+                from(resourcepackDirectory)
+                into(output.resolve("resourcepacks"))
+            }
         }
         fileSystemOperations.copy {
             from(localModFiles)
@@ -145,7 +168,7 @@ abstract class GeneratePackwizPack : DefaultTask() {
     private fun metafile(artifact: PackwizArtifact): String =
         buildString {
             append("name = ").append(toml(artifact.displayName)).append('\n')
-            append("filename = ").append(toml(artifact.installedName)).append('\n')
+            append("filename = ").append(toml(artifact.filename)).append('\n')
             append("side = ").append(toml(artifact.side.value)).append('\n')
             append("\n[download]\n")
             when (artifact.provider) {
@@ -167,7 +190,7 @@ abstract class GeneratePackwizPack : DefaultTask() {
     private fun StringBuilder.appendModrinth(artifact: PackwizArtifact) {
         val url =
             "$MODRINTH_CDN_BASE_URL/${urlPath(artifact.projectId)}/versions/" +
-                "${urlPath(artifact.versionId)}/${urlPath(artifact.installedName)}"
+                "${urlPath(artifact.versionId)}/${urlPath(artifact.filename)}"
         append("url = ").append(toml(url)).append('\n')
         append("hash-format = \"sha512\"\n")
         append("hash = ").append(toml(hash(artifact.file.toPath(), "SHA-512"))).append('\n')

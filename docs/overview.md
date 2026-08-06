@@ -64,7 +64,7 @@ to its `bertie-ci.toml` so CI also follows the dependency.
 | --- | --- |
 | Included Gradle projects | [`settings.gradle.kts`](../settings.gradle.kts) |
 | Java libraries, Gradle plugins, Minecraft, or NeoForge versions | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
-| External mods, shaderpacks, download providers, or physical sides | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
+| External mods, datapacks, resourcepacks, shaderpacks, download providers, or physical sides | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
 | An owned mod's identity or version | That mod's `mod.properties` |
 | Owned mods included in the pack | [`pack/build.gradle.kts`](../pack/build.gradle.kts) |
 | Pack identity or version | [`pack/pack.properties`](../pack/pack.properties) |

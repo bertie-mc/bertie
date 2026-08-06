@@ -63,6 +63,37 @@ class MinecraftArtifactsTest {
                 project-id = "shader"
                 version-id = "release"
                 filename = "shader.zip"
+
+                [datapacks.worldgen.modrinth]
+                project-id = "worldgen"
+                version-id = "release"
+                filename = "worldgen.zip"
+
+                [datapacks.worldgen.curseforge]
+                slug = "worldgen"
+                project-id = 123
+                file-id = 456
+
+                [mods.fake-pack]
+                fakePack = true
+
+                [mods.fake-pack.modrinth]
+                project-id = "fake-pack-project"
+                version-id = "fake-pack-release"
+                filename = "fake-pack.jar"
+
+                [mods.fake-pack.curseforge]
+                slug = "fake-pack"
+                project-id = 789
+                file-id = 1011
+
+                [resourcepacks.textures]
+                side = "client"
+
+                [resourcepacks.textures.modrinth]
+                project-id = "textures"
+                version-id = "release"
+                filename = "textures.zip"
                 """.trimIndent(),
             )
 
@@ -97,6 +128,30 @@ class MinecraftArtifactsTest {
         assertEquals(MinecraftArtifactSide.CLIENT, shaderpack.side)
         assertEquals("shaderpacks", shaderpack.kind.destination)
         assertEquals("zip", shaderpack.kind.extension)
+
+        val datapack = manifest.datapacks.single { artifact -> artifact.id == "worldgen" }
+        assertEquals(MinecraftArtifactKind.DATAPACK, datapack.kind)
+        assertEquals(MinecraftArtifactSide.BOTH, datapack.side)
+        assertEquals("datapacks", datapack.kind.destination)
+        assertEquals("zip", datapack.kind.extension)
+        assertEquals("worldgen.zip", datapack.filename(datapack.modrinth!!))
+        assertEquals("worldgen.zip", datapack.filename(datapack.curseForge!!))
+
+        val fakePack = manifest.mods.single { artifact -> artifact.id == "fake-pack" }
+        assertTrue(fakePack.fakePack)
+        assertEquals("mods", fakePack.kind.destination)
+        assertEquals("fake-pack.jar", fakePack.filename(fakePack.gradleSource))
+        assertEquals("fake-pack.jar", fakePack.filename(fakePack.curseForge!!))
+        assertEquals(
+            "maven.modrinth:fake-pack-project:fake-pack-release",
+            fakePack.notation(fakePack.gradleSource),
+        )
+
+        val resourcepack = manifest.resourcepacks.single()
+        assertEquals(MinecraftArtifactKind.RESOURCEPACK, resourcepack.kind)
+        assertEquals(MinecraftArtifactSide.CLIENT, resourcepack.side)
+        assertEquals("resourcepacks", resourcepack.kind.destination)
+        assertEquals("zip", resourcepack.kind.extension)
     }
 
     @Test
@@ -182,5 +237,41 @@ class MinecraftArtifactsTest {
             }
 
         assertTrue(failure.message.orEmpty().contains("field 'side' must be a string"))
+    }
+
+    @Test
+    fun `rejects non-boolean fake pack metadata`() {
+        val failure =
+            assertThrows(IllegalStateException::class.java) {
+                parseMinecraftArtifacts(
+                    """
+                    [mods.example]
+                    fakePack = "true"
+
+                    [mods.example.modrinth]
+                    project-id = "example"
+                    version-id = "1"
+                    filename = "example.jar"
+                    """.trimIndent(),
+                )
+            }
+
+        assertTrue(failure.message.orEmpty().contains("field 'fakePack' must be a boolean"))
+    }
+
+    @Test
+    fun `rejects fake pack metadata outside mods`() {
+        val failure =
+            assertThrows(IllegalArgumentException::class.java) {
+                parseMinecraftArtifacts(
+                    """
+                    [datapacks.example]
+                    fakePack = true
+                    modrinth = { project-id = "example", version-id = "1", filename = "example.zip" }
+                    """.trimIndent(),
+                )
+            }
+
+        assertTrue(failure.message.orEmpty().contains("may set fakePack only under [mods.*]"))
     }
 }
