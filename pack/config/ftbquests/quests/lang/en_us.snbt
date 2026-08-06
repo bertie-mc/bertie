@@ -319,16 +319,6 @@
 	quest.2B00000000000047.title: "Lunar onyx"
 	quest.2B00000000000048.quest_desc: ["Hephaestus-forge the Lich Trophy into an Acolyte of Deflection (2 Dragon Bones, 2 Hallowed Gold Ingots, a Shattered Skull, a Precision Mechanism, a Bound Soul Ingot and a Magic Map Focus). Dupe the trophy at the Spirit Altar first if you want to keep one on the wall."]
 	quest.2B00000000000048.title: "The Acolyte of Deflection"
-	quest.3B00000000000004.quest_desc: ["Spirit-infuse four obelisks (Runewood + Hallowed Gold + spirits). Four around the altar is Bertie Level II - and a Resonance proves it."]
-	quest.3B00000000000004.title: "Four Runewood Obelisks"
-	quest.3B00000000000005.quest_desc: ["Infuse Refined Soulstone with Aerial spirits while the obelisks accelerate. The physical Level-II witness."]
-	quest.3B00000000000005.title: "Runewood Resonance"
-	quest.3B00000000000006.quest_desc: ["Each Pylon consumes an Obelisk, Soulstone, Hex Ash, Soulwood and a Resonance. Fuel them with Arcane Spirit: Bertie Level III."]
-	quest.3B00000000000006.title: "Four Arcana Pylons"
-	quest.3B00000000000007.quest_desc: ["Mechanical-craft it from Runewood, Hallowed Gold, Soulstone and a full Pylon. Runeworking opens."]
-	quest.3B00000000000007.title: "Runic Workbench"
-	quest.3B00000000000008.quest_desc: ["Tainted Rock + Aqueous spirits at the Runic Workbench. The physical witness Hephaestus II demands."]
-	quest.3B00000000000008.title: "Rune of Ailment Cleansing"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
@@ -415,6 +405,30 @@
 	quest.3B00000000000034.title: "Flint and Steel"
 	quest.3B00000000000035.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
 	quest.3B00000000000035.title: "Enter the Nether"
+	quest.3B00000000000036.quest_desc: ["Cut the flesh off the carcass. Rotten enough on its own; the infusion is what makes it worth carrying."]
+	quest.3B00000000000036.title: "Dragon Flesh"
+	quest.3B00000000000037.quest_desc: ["Spirit-infuse the Dragon Flesh with 64 Rotten Flesh, 16 Blood Vials and 4 Monster Flesh over Sacred, Wicked and Aqueous spirits. The Netherly Meal needs it."]
+	quest.3B00000000000037.title: "Living Flesh"
+	quest.3B00000000000038.quest_desc: ["Loot the Eye of Monstrous and let it point you at the Ruined Citadel."]
+	quest.3B00000000000038.title: "Eye of Monstrous"
+	quest.3B00000000000039.quest_desc: ["Wake the thing sleeping in the Citadel and put it back down."]
+	quest.3B00000000000039.title: "The Netherite Monstrosity"
+	quest.3B0000000000003A.quest_desc: ["The Eye of Flame reads the Nether for the Burning Arena."]
+	quest.3B0000000000003A.title: "Eye of Flame"
+	quest.3B0000000000003B.quest_desc: ["Ignis does not turn up on his own - the Ashes are the summons."]
+	quest.3B0000000000003B.title: "Burning Ashes"
+	quest.3B0000000000003C.quest_desc: ["Burn the Ashes in the Arena and kill what walks out. Ignited Berserkers start appearing in the fortresses afterwards."]
+	quest.3B0000000000003C.title: "Ignis"
+	quest.3B0000000000003D.quest_desc: ["Find the Underworld Arena. The door stays shut for now."]
+	quest.3B0000000000003D.title: "The Underworld Arena"
+	quest.3B0000000000003E.quest_desc: ["The Arena Door only opens for its own key."]
+	quest.3B0000000000003E.title: "Underworld Arena Key"
+	quest.3B0000000000003F.quest_desc: ["Open the door, and finish what is behind it."]
+	quest.3B0000000000003F.title: "Helvar, the Underworld Knight"
+	quest.3B00000000000040.quest_desc: ["Any of the three starter Pigment Pedestals - Topaz, Amethyst or Citrine. The Onyx and Moonstone upgrades do not count."]
+	quest.3B00000000000040.title: "A Pigment Pedestal"
+	quest.3B00000000000041.quest_desc: ["Get inside a Nether Fortress."]
+	quest.3B00000000000041.title: "Into the Fortress"
 	quest.4B00000000000001.quest_desc: ["Optional: a Tier-2 ritual binds a Compass to the nearest Ancient City. Use it and follow the pulse."]
 	quest.4B00000000000001.title: "Echoing City Compass"
 	quest.4B00000000000002.quest_desc: ["Wake it. Kill it honestly. Its guaranteed Warden Carapace becomes a reusable pattern."]

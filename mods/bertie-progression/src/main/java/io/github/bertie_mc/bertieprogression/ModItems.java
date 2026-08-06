@@ -95,9 +95,6 @@ public final class ModItems {
             "descent_anchor",
             () -> new DescentAnchorItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
-    // --- Altar witnesses / resonances ---
-    public static final DeferredItem<Item> RUNEWOOD_RESONANCE = simple("runewood_resonance", 1);
-
     // --- Deep dark / echo chain ---
     public static final DeferredItem<Item> WARDEN_ECHO_PATTERN = rare("warden_echo_pattern", 1, Rarity.UNCOMMON);
     public static final DeferredItem<Item> SPIRIT_FOCUSED_ECHO = simple("spirit_focused_echo", 16);

@@ -269,7 +269,6 @@ ITEM_PAINTERS = {
     "twilight_concord": lambda: shard((92, 160, 96, 255), 15),
     "spirit_focused_echo": lambda: shard(TEAL, 23),
     "spirit_altar_witness": lambda: seal(shade(WOOD, 1.1), TEAL, 24, 2),
-    "runewood_resonance": lambda: seal(WOOD_D, SOUL_GOLD, 25, 2),
     "warden_echo_pattern": lambda: tablet(SCULK, SCULK_L, 27),
     "echoing_city_compass": lambda: compass(SCULK_L, 28),
     "weeping_compass": lambda: compass(VIOLET, 29),

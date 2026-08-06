@@ -469,10 +469,8 @@ write(f"{RIT}/r40_convergence_matrix.json",
 
 # ---- Malum spirit infusions ----
 # R19A was removed with the Spirit Altar Witness item.
-write(f"{R}/malum/runewood_resonance.json",                # R20A
-      infusion("malum:refined_soulstone", 1, [], [SP("aerial", 4)], "bertieprogression:runewood_resonance"))
-# R21C Arcana Resonance was removed because nothing consumed it. The Arcana Pylon
-# takes the RUNEWOOD Resonance (R20A above), which stays.
+# R20A Runewood Resonance and R21C Arcana Resonance were both removed; the Obelisk, Pylon,
+# Runic Workbench and every rune are back on Malum's own recipes.
 write(f"{R}/malum/sculk_blocks.json",                      # R30S
       infusion("minecraft:deepslate", 1, [("malum:refined_soulstone", 1)], [SP("aqueous", 8)],
                "minecraft:sculk", 8))
@@ -496,13 +494,8 @@ write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
                [SP("infernal", 16)], "bertieprogression:boss_rematch_seal"))
 
 # ---- Mechanical Crafter recipes ----
-# R17 was removed with the Seal. The stock Crafting Table recipe is disabled below; the 5x5
-# mechanical recipe is its sole route.
-write(f"{R}/mechanical/exclusive/runic_workbench.json",         # R21A
-      mech(["RGR", "SPS", "RGR"],
-           {"R": "malum:runewood_planks", "G": "malum:hallowed_gold_ingot",
-            "S": "malum:refined_soulstone", "P": "malum:arcana_pylon"},
-           "malum:runic_workbench"))
+# R17 was removed with the Seal.
+# R21A Runic Workbench was removed: Malum's own spirit infusion is the only route again.
 # R24A Victory Ledger and R27 Nether Lintel recipes were removed with their blocks and items.
 write(f"{R}/mechanical/exclusive/echo_lock.json",               # R31C
       mech(["DSD", "SOS", "DSD"],
@@ -860,12 +853,8 @@ for _piece in ["helmet", "chestplate", "leggings", "boots"]:
     for _set in ["wooden", "bone"]:
         write(f"data/immersive_armors/recipe/{_set}_{_piece}.json", DISABLED)
 
-# Malum: pylon gains the resonance witness (R21); catalyzer becomes the authored R31A2
-write("data/malum/recipe/spirit_infusion/arcana_pylon.json",
-      infusion("malum:runewood_obelisk", 1,
-               [("malum:refined_soulstone", 8), ("malum:hex_ash", 4), ("malum:soulwood_planks", 2),
-                ("bertieprogression:runewood_resonance", 1)],
-               EARLY8, "malum:arcana_pylon"))
+# Malum: the pylon override was dropped with the resonance witness; catalyzer becomes the
+# authored R31A2
 write("data/malum/recipe/spirit_infusion/spirit_catalyzer.json",
       infusion("pastel:onyx_shard", 1,
                [("malum:hallowed_gold_ingot", 4), ("create:brass_sheet", 4)],
@@ -1723,7 +1712,7 @@ write("data/bertieprogression/tags/item/dragon_flesh.json",
                   "iceandfire:lightning_dragon_flesh"]})
 write("data/malum/recipe/spirit_infusion/living_flesh.json",
       infusion("#bertieprogression:dragon_flesh", 1,
-               [("minecraft:rotten_flesh", 64), ("irons_spellbooks:blood_vial", 8),
+               [("minecraft:rotten_flesh", 64), ("irons_spellbooks:blood_vial", 16),
                 ("born_in_chaos_v1:monster_flesh", 4)],
                [SP("sacred", 6), SP("wicked", 6), SP("aqueous", 6)],
                "malum:living_flesh", 1))
@@ -1778,6 +1767,18 @@ write(f"{RIT}/netherly_meal.json",
               ("#iceandfire:scales/dragon/fire", 2), ("minecraft:lava_bucket", 1)],
              "bertieprogression:netherly_meal", 1, tier=2,
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
+
+# --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
+# The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
+# pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
+write("data/bertieprogression/tags/item/basic_pigment_pedestals.json",
+      {"values": ["pastel:pedestal_basic_topaz", "pastel:pedestal_basic_amethyst",
+                  "pastel:pedestal_basic_citrine"]})
+# YUNG's Better Nether Fortresses replaces the vanilla fortress in the full pack but is absent from
+# smaller test packs, so both ids are listed and neither is required.
+write("data/bertieprogression/tags/worldgen/structure/nether_fortress.json",
+      {"values": [{"id": "minecraft:fortress", "required": False},
+                  {"id": "betterfortresses:fortress", "required": False}]})
 
 # ================================================================ REMOVED ITEMS
 # Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's
@@ -2258,7 +2259,6 @@ ITEMS = {
     "crafting_license": "Crafting License",
     "twilight_concord": "Twilight Concord",
     "spirit_focused_echo": "Spirit-Focused Echo",
-    "runewood_resonance": "Runewood Resonance",
     "warden_echo_pattern": "Warden Echo Pattern",
     "echoing_city_compass": "Echoing City Compass",
     "weeping_compass": "Weeping Compass",

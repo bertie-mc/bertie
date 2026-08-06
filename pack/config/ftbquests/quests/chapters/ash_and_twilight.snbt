@@ -10,121 +10,6 @@
 		{
 			icon: {
 				count: 1
-				id: "malum:runewood_obelisk"
-			}
-			dependencies: ["2B00000000000044"]
-			id: "3B00000000000004"
-			rewards: [{
-				id: "3B00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 4L
-						id: "3B00000001000004"
-						item: { count: 1 id: "malum:runewood_obelisk" }
-						type: "item"
-					}
-				]
-			x: 0d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertieprogression:runewood_resonance"
-			}
-			dependencies: ["3B00000000000004"]
-			id: "3B00000000000005"
-			rewards: [{
-				id: "3B00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000005"
-						item: { count: 1 id: "bertieprogression:runewood_resonance" }
-						type: "item"
-					}
-				]
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:arcana_pylon"
-			}
-			dependencies: ["3B00000000000005"]
-			id: "3B00000000000006"
-			rewards: [{
-				id: "3B00000002000006"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 4L
-						id: "3B00000001000006"
-						item: { count: 1 id: "malum:arcana_pylon" }
-						type: "item"
-					}
-				]
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:runic_workbench"
-			}
-			dependencies: ["3B00000000000006"]
-			id: "3B00000000000007"
-			rewards: [{
-				id: "3B00000002000007"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000007"
-						item: { count: 1 id: "malum:runic_workbench" }
-						type: "item"
-					}
-				]
-			x: 4.5d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:rune_of_ailment_cleansing"
-			}
-			dependencies: ["3B00000000000007"]
-			id: "3B00000000000008"
-			rewards: [{
-				id: "3B00000002000008"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000008"
-						item: { count: 1 id: "malum:rune_of_ailment_cleansing" }
-						type: "item"
-					}
-				]
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
 				id: "deepwaters:endlesscaves"
 			}
 			id: "3B0000000000000B"
@@ -141,8 +26,8 @@
 						type: "item"
 					}
 				]
-			x: -3.81d
-			y: 1.81d
+			x: -26.64d
+			y: -6.77d
 		}
 		{
 			icon: {
@@ -164,8 +49,8 @@
 						type: "item"
 					}
 				]
-			x: -5.45d
-			y: 6.17d
+			x: -22.4d
+			y: -8.69d
 		}
 		{
 			icon: {
@@ -187,8 +72,8 @@
 						type: "item"
 					}
 				]
-			x: -8.34d
-			y: 9.35d
+			x: -18.1d
+			y: -8.89d
 		}
 		{
 			icon: {
@@ -210,8 +95,8 @@
 						type: "item"
 					}
 				]
-			x: -11.9d
-			y: 11.08d
+			x: -14.36d
+			y: -7.6d
 		}
 		{
 			icon: {
@@ -233,8 +118,8 @@
 						type: "item"
 					}
 				]
-			x: -18.6d
-			y: 10.29d
+			x: -10.18d
+			y: -2.3d
 		}
 		{
 			icon: {
@@ -260,8 +145,8 @@
 						value: 1L
 					}
 				]
-			x: -21.98d
-			y: 3.76d
+			x: -12.41d
+			y: 4.7d
 		}
 		{
 			icon: {
@@ -283,8 +168,8 @@
 						type: "item"
 					}
 				]
-			x: -21.19d
-			y: 1.98d
+			x: -14.23d
+			y: 5.4d
 		}
 		{
 			icon: {
@@ -308,8 +193,8 @@
 						type: "structure"
 					}
 				]
-			x: -8.96d
-			y: 3.85d
+			x: -12.45d
+			y: 9.07d
 		}
 		{
 			icon: {
@@ -335,8 +220,8 @@
 						value: 1L
 					}
 				]
-			x: -15.49d
-			y: 7.23d
+			x: -19.45d
+			y: 6.84d
 		}
 		{
 			icon: {
@@ -358,8 +243,8 @@
 						type: "item"
 					}
 				]
-			x: -17.27d
-			y: 6.44d
+			x: -20.15d
+			y: 5.02d
 		}
 		{
 			icon: {
@@ -384,8 +269,8 @@
 						value: 1L
 					}
 				]
-			x: -15.4d
-			y: -5.79d
+			x: -21.55d
+			y: -4.57d
 		}
 		{
 			icon: {
@@ -411,8 +296,8 @@
 						value: 1L
 					}
 				]
-			x: -13.2d
-			y: -3.86d
+			x: -18.63d
+			y: -4.76d
 		}
 		{
 			icon: {
@@ -438,8 +323,8 @@
 						value: 1L
 					}
 				]
-			x: -12.02d
-			y: 0.74d
+			x: -14.55d
+			y: -2.34d
 		}
 		{
 			icon: {
@@ -461,8 +346,8 @@
 						type: "item"
 					}
 				]
-			x: -12.81d
-			y: 2.52d
+			x: -13.85d
+			y: -0.52d
 		}
 		{
 			icon: {
@@ -484,8 +369,8 @@
 						type: "item"
 					}
 				]
-			x: -16.73d
-			y: -1.94d
+			x: -19.77d
+			y: -0.9d
 		}
 		{
 			icon: {
@@ -511,8 +396,8 @@
 						value: 1L
 					}
 				]
-			x: -10.89d
-			y: 6.05d
+			x: -15.37d
+			y: 9.26d
 		}
 		{
 			icon: {
@@ -537,8 +422,8 @@
 						value: 1L
 					}
 				]
-			x: -20.77d
-			y: -2.67d
+			x: -23.14d
+			y: 1.44d
 		}
 		{
 			icon: {
@@ -564,8 +449,8 @@
 						value: 1L
 					}
 				]
-			x: -18.51d
-			y: -2.73d
+			x: -21.59d
+			y: -0.2d
 		}
 		{
 			icon: {
@@ -617,8 +502,8 @@
 						type: "item"
 					}
 				]
-			x: -15.5d
-			y: 11.33d
+			x: -11.64d
+			y: -5.23d
 		}
 		{
 			icon: {
@@ -644,8 +529,8 @@
 						value: 1L
 					}
 				]
-			x: -20.8d
-			y: 8.36d
+			x: -9.99d
+			y: 0.62d
 		}
 		{
 			icon: {
@@ -667,8 +552,8 @@
 						type: "item"
 					}
 				]
-			x: -13.23d
-			y: 7.17d
+			x: -17.81d
+			y: 8.39d
 		}
 		{
 			icon: {
@@ -690,8 +575,8 @@
 						type: "item"
 					}
 				]
-			x: -21.92d
-			y: 6.02d
+			x: -10.86d
+			y: 3.06d
 		}
 		{
 			icon: {
@@ -713,8 +598,8 @@
 						type: "item"
 					}
 				]
-			x: -12.08d
-			y: -1.52d
+			x: -16.19d
+			y: -3.89d
 		}
 		{
 			icon: {
@@ -736,8 +621,8 @@
 						type: "item"
 					}
 				]
-			x: -19.91d
-			y: 0.93d
+			x: -15.88d
+			y: 5.24d
 		}
 		{
 			icon: {
@@ -765,8 +650,8 @@
 						type: "item"
 					}
 				]
-			x: -18.32d
-			y: 5.16d
+			x: -19.99d
+			y: 3.37d
 		}
 		{
 			icon: {
@@ -794,8 +679,8 @@
 						type: "item"
 					}
 				]
-			x: -14.09d
-			y: 3.57d
+			x: -14.01d
+			y: 1.13d
 		}
 		{
 			icon: {
@@ -823,8 +708,8 @@
 						type: "item"
 					}
 				]
-			x: -15.68d
-			y: -0.66d
+			x: -18.12d
+			y: -0.74d
 		}
 		{
 			icon: {
@@ -846,8 +731,8 @@
 						type: "item"
 					}
 				]
-			x: -18.56d
-			y: 0.69d
+			x: -17.0d
+			y: 4.46d
 		}
 		{
 			icon: {
@@ -869,8 +754,8 @@
 						type: "item"
 					}
 				]
-			x: -18.56d
-			y: 3.81d
+			x: -19.21d
+			y: 2.25d
 		}
 		{
 			icon: {
@@ -892,8 +777,8 @@
 						type: "item"
 					}
 				]
-			x: -15.44d
-			y: 3.81d
+			x: -14.79d
+			y: 2.25d
 		}
 		{
 			icon: {
@@ -915,8 +800,8 @@
 						type: "item"
 					}
 				]
-			x: -15.44d
-			y: 0.69d
+			x: -17.0d
+			y: 0.04d
 		}
 		{
 			icon: {
@@ -975,15 +860,15 @@
 						value: 1L
 					}
 				]
-			x: -17.0d
-			y: 4.45d
+			x: -18.56d
+			y: 3.81d
 		}
 		{
 			icon: {
 				count: 1
 				id: "iceandfire:dragonscales_red"
 			}
-			dependencies: ["3B0000000000002B"]
+			dependencies: ["3B0000000000002E"]
 			id: "3B0000000000002C"
 			rewards: [{
 				id: "3B0000000200002C"
@@ -1002,15 +887,15 @@
 						type: "item"
 					}
 				]
-			x: -15.87d
-			y: 5.24d
+			x: -16.19d
+			y: 6.92d
 		}
 		{
 			icon: {
 				count: 1
 				id: "iceandfire:fire_dragon_blood"
 			}
-			dependencies: ["3B0000000000002C"]
+			dependencies: ["3B0000000000002B"]
 			id: "3B0000000000002D"
 			rewards: [{
 				id: "3B0000000200002D"
@@ -1025,8 +910,8 @@
 						type: "item"
 					}
 				]
-			x: -14.23d
-			y: 5.41d
+			x: -18.3d
+			y: 5.18d
 		}
 		{
 			icon: {
@@ -1048,15 +933,15 @@
 						type: "item"
 					}
 				]
-			x: -12.41d
-			y: 4.7d
+			x: -17.41d
+			y: 6.28d
 		}
 		{
 			icon: {
 				count: 1
 				id: "bertieprogression:netherly_meal"
 			}
-			dependencies: ["3B0000000000002E"]
+			dependencies: ["3B00000000000037"]
 			id: "3B0000000000002F"
 			rewards: [{
 				id: "3B0000000200002F"
@@ -1071,8 +956,8 @@
 						type: "item"
 					}
 				]
-			x: -10.85d
-			y: 3.06d
+			x: -12.15d
+			y: 6.66d
 		}
 		{
 			icon: {
@@ -1096,8 +981,8 @@
 						type: "checkmark"
 					}
 				]
-			x: -28.5d
-			y: 0d
+			x: -26.72d
+			y: 8.79d
 		}
 		{
 			icon: {
@@ -1121,8 +1006,8 @@
 						type: "checkmark"
 					}
 				]
-			x: -27.0d
-			y: 0d
+			x: -25.66d
+			y: 7.73d
 		}
 		{
 			icon: {
@@ -1146,8 +1031,8 @@
 						type: "checkmark"
 					}
 				]
-			x: -25.5d
-			y: 0d
+			x: -24.6d
+			y: 6.67d
 		}
 		{
 			icon: {
@@ -1169,8 +1054,8 @@
 						type: "item"
 					}
 				]
-			x: -9.99d
-			y: 0.61d
+			x: -10.88d
+			y: 6.05d
 		}
 		{
 			icon: {
@@ -1192,8 +1077,8 @@
 						type: "item"
 					}
 				]
-			x: -10.18d
-			y: -2.31d
+			x: -8.95d
+			y: 3.85d
 		}
 		{
 			icon: {
@@ -1218,8 +1103,306 @@
 						type: "dimension"
 					}
 				]
-			x: -9.31d
-			y: -8.48d
+			x: -3.98d
+			y: 0.1d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:fire_dragon_flesh"
+			}
+			dependencies: ["3B0000000000002C"]
+			id: "3B00000000000036"
+			rewards: [{
+				id: "3B00000002000036"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000036"
+						item: { count: 1 id: "iceandfire:fire_dragon_flesh" }
+						type: "item"
+					}
+				]
+			x: -14.84d
+			y: 7.21d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:living_flesh"
+			}
+			dependencies: ["3B00000000000036"]
+			id: "3B00000000000037"
+			rewards: [{
+				id: "3B00000002000037"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000037"
+						item: { count: 1 id: "malum:living_flesh" }
+						type: "item"
+					}
+				]
+			x: -13.44d
+			y: 7.18d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:monstrous_eye"
+			}
+			dependencies: ["3B00000000000035"]
+			id: "3B00000000000038"
+			rewards: [{
+				id: "3B00000002000038"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000038"
+						item: { count: 1 id: "cataclysm:monstrous_eye" }
+						type: "item"
+					}
+				]
+			x: -2.18d
+			y: -3.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:monstrous_horn"
+			}
+			dependencies: ["3B00000000000038"]
+			id: "3B00000000000039"
+			rewards: [{
+				id: "3B00000002000039"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "cataclysm:monstrous_horn"
+						}
+						id: "3B00000001000039"
+						entity: "cataclysm:netherite_monstrosity"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: -0.68d
+			y: -3.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:flame_eye"
+			}
+			dependencies: ["3B00000000000039"]
+			id: "3B0000000000003A"
+			rewards: [{
+				id: "3B0000000200003A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100003A"
+						item: { count: 1 id: "cataclysm:flame_eye" }
+						type: "item"
+					}
+				]
+			x: 0.82d
+			y: -3.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:burning_ashes"
+			}
+			dependencies: ["3B0000000000003A"]
+			id: "3B0000000000003B"
+			rewards: [{
+				id: "3B0000000200003B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100003B"
+						item: { count: 1 id: "cataclysm:burning_ashes" }
+						type: "item"
+					}
+				]
+			x: 2.32d
+			y: -3.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:ignitium_ingot"
+			}
+			dependencies: ["3B0000000000003B"]
+			id: "3B0000000000003C"
+			rewards: [{
+				id: "3B0000000200003C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "cataclysm:ignitium_ingot"
+						}
+						id: "3B0000000100003C"
+						entity: "cataclysm:ignis"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 3.82d
+			y: -3.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "block_factorys_bosses:underworld_arena_door"
+			}
+			dependencies: ["3B00000000000035"]
+			id: "3B0000000000003D"
+			rewards: [{
+				id: "3B0000000200003D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "block_factorys_bosses:underworld_arena_door"
+						}
+						id: "3B0000000100003D"
+						structure: "block_factorys_bosses:underworld_arena"
+						type: "structure"
+					}
+				]
+			x: -2.18d
+			y: -1.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "block_factorys_bosses:underworld_arena_key"
+			}
+			dependencies: ["3B0000000000003D"]
+			id: "3B0000000000003E"
+			rewards: [{
+				id: "3B0000000200003E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100003E"
+						item: { count: 1 id: "block_factorys_bosses:underworld_arena_key" }
+						type: "item"
+					}
+				]
+			x: -0.68d
+			y: -1.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "block_factorys_bosses:knight_sword"
+			}
+			dependencies: ["3B0000000000003E"]
+			id: "3B0000000000003F"
+			rewards: [{
+				id: "3B0000000200003F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "block_factorys_bosses:knight_sword"
+						}
+						id: "3B0000000100003F"
+						entity: "block_factorys_bosses:underworld_knight"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 0.82d
+			y: -1.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:pedestal_basic_topaz"
+			}
+			dependencies: ["3B00000000000035"]
+			id: "3B00000000000040"
+			rewards: [{
+				id: "3B00000002000040"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						icon: {
+							count: 1
+							id: "pastel:pedestal_basic_topaz"
+						}
+						id: "3B00000001000040"
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertieprogression:basic_pigment_pedestals)', "minecraft:custom_name": '{"text":"Pigment Pedestal","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						type: "item"
+					}
+				]
+			x: -2.18d
+			y: 1.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:nether_bricks"
+			}
+			dependencies: ["3B00000000000035"]
+			id: "3B00000000000041"
+			rewards: [{
+				id: "3B00000002000041"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:nether_bricks"
+						}
+						id: "3B00000001000041"
+						structure: "#bertieprogression:nether_fortress"
+						type: "structure"
+					}
+				]
+			x: -2.18d
+			y: 3.6d
 		}
 	]
 }
