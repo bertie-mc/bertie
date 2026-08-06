@@ -79,6 +79,7 @@ curseforge = { slug = "anvilcraft", project-id = 986251, file-id = 8246261 }
 
 [mods.apotheosis]
 modrinth = { project-id = "rqFWfVlz", version-id = "Vp2TR6ib", filename = "Apotheosis-1.21.1-8.5.4.jar" }
+curseforge = { slug = "apotheosis", project-id = 313970, file-id = 8182695 }
 
 [mods.apotheosis-create-recipe]
 curseforge = { slug = "apotheosis-create-recipe", project-id = 1455318, file-id = 8510023 }
@@ -92,12 +93,15 @@ curseforge = { slug = "apothic-attributes", project-id = 898963, file-id = 74450
 
 [mods.apothic-combat]
 modrinth = { project-id = "N29BujGY", version-id = "8gwHTe22", filename = "apothiccombat-1.2.1.jar" }
+curseforge = { slug = "apothic-combat", project-id = 986982, file-id = 6105085 }
 
 [mods.apothic-enchanting]
 modrinth = { project-id = "pL8MtgqY", version-id = "HpSrSsv3", filename = "ApothicEnchanting-1.21.1-1.6.0.jar" }
+curseforge = { slug = "apothic-enchanting", project-id = 1063926, file-id = 8469450 }
 
 [mods.apothic-spawners]
 modrinth = { project-id = "DfxVkOAO", version-id = "pWfxcfO2", filename = "ApothicSpawners-1.21.1-1.4.0.jar" }
+curseforge = { slug = "apothic-spawners", project-id = 986583, file-id = 8469405 }
 
 [mods.appleskin]
 modrinth = { project-id = "EsAfCjCV", version-id = "uAKA6Laj", filename = "appleskin-neoforge-mc1.21-3.0.9.jar" }
