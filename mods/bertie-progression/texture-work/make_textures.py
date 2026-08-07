@@ -246,23 +246,6 @@ def core(seed):
     px.noise(3, 3, 12, 12, TEAL, seed)
     return px
 
-def null_cube(seed):
-    """A cube with the fire gone out of it - grey body, cold rod-cross, one dead ember."""
-    px = Px()
-    body = (104, 100, 104, 255)
-    px.rect(2, 2, 13, 13, body)
-    px.frame(2, 2, 13, 13, shade(body, 0.55))
-    px.frame(3, 3, 12, 12, shade(body, 1.25))
-    # the rods, drained
-    px.rect(7, 4, 8, 11, shade(body, 0.7))
-    px.rect(4, 7, 11, 8, shade(body, 0.7))
-    # the ember that never lit
-    px.rect(7, 7, 8, 8, (58, 54, 58, 255))
-    for x, y in [(4, 4), (11, 4), (4, 11), (11, 11)]:
-        px.set(x, y, shade(body, 1.4))
-    px.noise(2, 2, 13, 13, body, seed)
-    return px
-
 def quad_matrix(seed):
     px = Px()
     cols = [FIRE, IVORY, VIOLET, TEAL]
@@ -283,7 +266,6 @@ ITEM_PAINTERS = {
     "kinetic_pattern_plate": lambda: plate(ANDESITE, True, 10),
     "twilight_concord": lambda: shard((92, 160, 96, 255), 15),
     "spirit_focused_echo": lambda: shard(TEAL, 23),
-    "null_blaze_cube": lambda: null_cube(26),
     "warden_echo_pattern": lambda: tablet(SCULK, SCULK_L, 27),
     "echoing_city_compass": lambda: compass(SCULK_L, 28),
     "weeping_compass": lambda: compass(VIOLET, 29),
