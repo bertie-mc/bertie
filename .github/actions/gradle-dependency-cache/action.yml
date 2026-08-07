@@ -6,6 +6,10 @@ inputs:
     description: Populate and save the exact cache entry when it is absent
     required: false
     default: "true"
+  offline:
+    description: Require subsequent Gradle invocations to use only the prepared snapshot
+    required: false
+    default: "true"
 
 runs:
   using: composite
@@ -62,6 +66,7 @@ runs:
         path: ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches
 
     - name: Use prepared dependencies offline
+      if: inputs.offline == 'true'
       shell: bash
       run: |
         printf '%s\n' 'BERTIE_CI_GRADLE_OFFLINE=true' >> "$GITHUB_ENV"

@@ -147,7 +147,8 @@ infrastructure, assembly, JUnit, GameTest, and pack-generation tasks in one Grad
 invocation. A client job runs the selected client-test tasks in another Gradle invocation
 inside one headless Wayland session. The two execution jobs start together after
 preparation. Separate Windows and macOS leaf jobs use the native host variants to resolve
-the complete shared Gradle lock state; they do not reuse the Linux dependency snapshot.
+the complete shared Gradle lock state. They reuse the common Linux dependency snapshot
+and stay online to restore the remaining host-specific artifacts.
 
 Repository actions include:
 
