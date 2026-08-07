@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "TdN6LxjM"
+version-id = "3lQWjtXT"
+filename = "Lychee-1.21.1-NeoForge-6.5.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lychee"
+project-id = 567403
+file-id = 7441857
+filename = "Lychee-1.21.1-NeoForge-6.5.0.jar"

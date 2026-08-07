@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "uKJX4EfN"
+version-id = "SCc0MUEv"
+filename = "mekanismcurios-1.21.1-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-curios"
+project-id = 1251061
+file-id = 6602973
+filename = "mekanismcurios-1.21.1-1.2.1.jar"

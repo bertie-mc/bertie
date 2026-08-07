@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "u62Up3Gc"
+version-id = "R0kKYkDx"
+filename = "big_oak_tree_uploaded-1.0.0-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "big-oak-tree"
+project-id = 1201492
+file-id = 6198731
+filename = "big_oak_tree_uploaded-1.0.0-neoforge-1.21.1.jar"

@@ -1,0 +1,13 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "h2jngREY"
+version-id = "O1utQuJh"
+filename = "trek-B0.6.1.1.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "h2jngREY"
+version-id = "JnzRBH1v"
+filename = "Trek 1.21-26.1.2 B0.6.1.1.zip"

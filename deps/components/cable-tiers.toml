@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "UsLNxQgK"
+version-id = "Z5dW5Iux"
+filename = "cabletiers-neoforge-1.21.1-0.6.12.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cable-tiers"
+project-id = 454382
+file-id = 8142187
+filename = "cabletiers-neoforge-1.21.1-0.6.12.jar"

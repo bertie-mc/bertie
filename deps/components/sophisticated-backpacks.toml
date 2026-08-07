@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "TyCTlI4b"
+version-id = "At57qCDT"
+filename = "sophisticatedbackpacks-1.21.1-3.25.55.1843.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "sophisticated-backpacks"
+project-id = 422301
+file-id = 8213467
+filename = "sophisticatedbackpacks-1.21.1-3.25.55.1843.jar"

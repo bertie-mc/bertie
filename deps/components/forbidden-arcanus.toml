@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "MdlnLS7Q"
+version-id = "fNjxgZPH"
+filename = "forbidden_arcanus-2.6.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "forbidden-arcanus"
+project-id = 309858
+file-id = 6875895
+filename = "forbidden_arcanus-2.6.1.jar"

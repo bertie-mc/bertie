@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ZVzW5oNS"
+version-id = "7mVvV9Th"
+filename = "Incendium_1.21.x_v5.4.4.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "ZVzW5oNS"
+version-id = "pwe1kTJE"
+filename = "Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "incendium"
+project-id = 591388
+file-id = 5962249
+filename = "Incendium_1.21.x_v5.4.4.jar"

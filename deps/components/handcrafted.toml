@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "pJmCFF0p"
+version-id = "JfqnpP2Z"
+filename = "handcrafted-neoforge-1.21.1-4.0.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "handcrafted"
+project-id = 538214
+file-id = 6330030
+filename = "handcrafted-neoforge-1.21.1-4.0.3.jar"

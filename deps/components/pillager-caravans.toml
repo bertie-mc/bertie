@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8jJHxtdz"
+version-id = "LoE1S6Fk"
+filename = "caravans-neoforge-1.21.1-2.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "pillager-caravans"
+project-id = 1356772
+file-id = 7315954
+filename = "caravans-neoforge-1.21.1-2.1.1.jar"

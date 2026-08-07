@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "SrNny2Go"
+version-id = "yn1ptBI4"
+filename = "stellaris_stellarview_compatibility-1.0.0-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "stellaris-stellarview-compatibility"
+project-id = 1482048
+file-id = 7735743
+filename = "stellaris_stellarview_compatibility-1.0.0-neoforge.jar"

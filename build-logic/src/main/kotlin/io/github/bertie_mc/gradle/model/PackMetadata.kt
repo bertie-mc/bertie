@@ -2,6 +2,7 @@ package io.github.bertie_mc.gradle.model
 
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputFile
+import org.gradle.api.tasks.Optional
 import org.gradle.api.tasks.PathSensitive
 import org.gradle.api.tasks.PathSensitivity
 import java.io.File
@@ -53,4 +54,19 @@ data class PackwizArtifact(
     @get:InputFile
     @get:PathSensitive(PathSensitivity.NONE)
     val file: File,
+    @get:Input
+    @get:Optional
+    val component: String? = null,
 ) : Serializable
+
+data class CurseForgeManifestArtifact(
+    @get:Input val projectId: Long,
+    @get:Input val fileId: Long,
+) : Serializable
+
+val PackwizArtifact.identity: String
+    get() =
+        when (provider) {
+            PackwizProvider.MODRINTH -> "modrinth:$projectId:$versionId"
+            PackwizProvider.CURSEFORGE -> "curseforge:$projectId:$versionId"
+        }

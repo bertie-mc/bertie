@@ -1,0 +1,33 @@
+# Cataclysm declares Lionfish API with legacy mandatory metadata that inherited
+# lock evidence omitted.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "46KJle7n"
+version-id = "uvjXrHuz"
+filename = "L_Ender's Cataclysm 1.21.1-3.31.jar"
+
+[distributions.modrinth-mod.dependency-corrections.lionfish-api-is-required]
+action = "require"
+mod-id = "lionfishapi"
+component = "lionfish-api"
+version-range = "[3.0,)"
+side = "both"
+applies-to = "modrinth:46KJle7n:uvjXrHuz"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "l-enders-cataclysm"
+project-id = 551586
+file-id = 8246034
+filename = "L_Ender's Cataclysm 1.21.1-3.31.jar"
+
+[distributions.curseforge-mod.dependency-corrections.lionfish-api-is-required]
+action = "require"
+mod-id = "lionfishapi"
+component = "lionfish-api"
+version-range = "[3.0,)"
+side = "both"
+applies-to = "curseforge:551586:8246034"

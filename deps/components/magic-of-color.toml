@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EjTIg7n8"
+version-id = "XxWieIYF"
+filename = "magic_of_color-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "magic-of-color"
+project-id = 1396284
+file-id = 7782881
+filename = "magic_of_color-1.2.1.jar"

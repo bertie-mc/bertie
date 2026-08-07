@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "QmCOBeSP"
+version-id = "A57xxobI"
+filename = "ironbookshelves-1.21.1-1.4.13-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "iron-bookshelves"
+project-id = 651738
+file-id = 8173294
+filename = "ironbookshelves-1.21.1-1.4.13-neoforge.jar"

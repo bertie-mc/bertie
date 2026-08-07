@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "pzCY6C3e"
+version-id = "sGVDl8zH"
+filename = "MindfulDarkness-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "mindful-darkness"
+project-id = 852669
+file-id = 6740165
+filename = "MindfulDarkness-v21.1.0-1.21.1-NeoForge.jar"

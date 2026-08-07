@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "5Zusp48B"
+version-id = "EkvVbxeM"
+filename = "rottencreatures-neoforge-1.21.1-1.1.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "rottencreatures"
+project-id = 371033
+file-id = 6677062
+filename = "rottencreatures-neoforge-1.21.1-1.1.2.jar"

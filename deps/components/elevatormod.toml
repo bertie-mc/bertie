@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hi2dSXTu"
+version-id = "NKEMiRIu"
+filename = "elevatorid-neoforge-1.21.1-1.11.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "elevatormod"
+project-id = 250832
+file-id = 6199696
+filename = "elevatorid-neoforge-1.21.1-1.11.4.jar"

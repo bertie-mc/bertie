@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "6cpT8CUC"
+version-id = "U6kExSSz"
+filename = "cosmeticarmorreworkedforked-neoforge-1.21.1-0.0.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cosmetic-armor-reworked-forked"
+project-id = 1434118
+file-id = 7685857
+filename = "cosmeticarmorreworkedforked-neoforge-1.21.1-0.0.4.jar"

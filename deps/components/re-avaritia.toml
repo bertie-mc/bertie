@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "QeB3NRC5"
+version-id = "VXmzsQD6"
+filename = "Re-Avaritia-neoforge-1.21.1-1.3.9.9-release.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "re-avaritia"
+project-id = 623969
+file-id = 8090665
+filename = "Re-Avaritia-neoforge-1.21.1-1.3.9.9-release.jar"

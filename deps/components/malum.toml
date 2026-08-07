@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "jgzwYsAN"
+version-id = "BIbVs1fo"
+filename = "malum-1.21.1-1.8.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "malum"
+project-id = 484064
+file-id = 7307339
+filename = "malum-1.21.1-1.8.2.jar"

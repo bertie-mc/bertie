@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "9NM0dXub"
+version-id = "OWylG33I"
+filename = "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "advancement-plaques"
+project-id = 499826
+file-id = 5905995
+filename = "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar"

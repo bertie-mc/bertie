@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "3dT9sgt4"
+version-id = "yFjEcj2g"
+filename = "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-ocean-monuments"
+project-id = 1015115
+file-id = 5924487
+filename = "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar"

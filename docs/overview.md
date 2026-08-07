@@ -31,7 +31,8 @@ flowchart TB
 | [`pack/`](../pack) | The mod selection, installation configuration, full-pack tests, and client/server exports |
 | [`core/`](../core) | Shared Minecraft downloads and reusable GameTest and client-test support |
 | [`build-logic/`](../build-logic) | Gradle plugins and tasks shared by the other projects |
-| [`gradle/`](../gradle) | Shared versions, external Minecraft artifacts, locks, and checksums |
+| [`deps/`](../deps) | Intentional Minecraft components, resolution profiles, and generated profile locks |
+| [`gradle/`](../gradle) | JVM/build-tool versions, Gradle locks, and dependency checksums |
 | [`tools/bertie-ci/`](../tools/bertie-ci) | CI planning, process supervision, diagnostics, Wayland setup, and release packaging |
 | [`.github/`](../.github) | Workflow triggers, caches, artifact uploads, and release publication |
 | [`flake.nix`](../flake.nix) and [`flake.lock`](../flake.lock) | The development and CI tools supplied by Nix |
@@ -63,8 +64,9 @@ to its `bertie-ci.toml` so CI also follows the dependency.
 | To change | Edit |
 | --- | --- |
 | Included Gradle projects | [`settings.gradle.kts`](../settings.gradle.kts) |
-| Java libraries, Gradle plugins, Minecraft, or NeoForge versions | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
-| External mods, datapacks, resourcepacks, shaderpacks, download providers, or physical sides | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
+| Java libraries or Gradle plugins | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
+| Minecraft and NeoForge versions | [`deps/platform.toml`](../deps/platform.toml) |
+| External mods, datapacks, resourcepacks, shaderpacks, providers, or physical sides | [`deps/components/`](../deps/components) |
 | An owned mod's identity or version | That mod's `mod.properties` |
 | Owned mods included in the pack | [`pack/build.gradle.kts`](../pack/build.gradle.kts) |
 | Pack identity or version | [`pack/pack.properties`](../pack/pack.properties) |
@@ -98,33 +100,35 @@ See [Writing and running tests](testing.md) for choosing and running a test suit
 
 ```mermaid
 flowchart LR
-    A["External artifacts<br/>gradle/minecraft-artifacts.toml"] --> G["Gradle"]
+    A["Component roots + profile lock<br/>deps/ and pack/build.gradle.kts"] --> G["Gradle"]
     M["Owned mods<br/>pack/build.gradle.kts"] --> G
     C["Installation files<br/>pack/config/"] --> G
     V["Pack details<br/>pack/pack.properties"] --> G
 
     G -->|server dependencies| S["Full-pack GameTests"]
     G -->|client dependencies| T["Full-pack client tests"]
-    G -->|generatePackwiz| W["pack/build/packwiz/"]
+    G -->|generateMrpack| X["Client .mrpack"]
+    G -->|generateCurseForgePack| Y["CurseForge client .zip"]
+    G -->|generatePackwiz| W["packwiz/server conversion"]
 
     W --> Q["bertie-ci"]
     Q --> K["Validation"]
-    Q --> X["Client .mrpack"]
     Q --> Z["Server .zip"]
 ```
 
-The settings plugin turns `minecraft-artifacts.toml` into the `mods` version catalog
-used by component build files. The pack plugin adds every external pack artifact and the
-owned projects listed in `pack/build.gradle.kts`.
+The settings plugin turns intentional component manifests into the `deps` version catalog.
+`pack/build.gradle.kts` explicitly names external component roots and owned projects. The
+development lock supplies reachable required dependencies; registering a component alone
+does not install it anywhere.
 
 External artifacts may be marked `client`, `server`, or `both`. Full-pack GameTests use
 the server set, and client tests use the client set. Owned mods are installed on both
 sides and must load safely on both.
 
-Tests resolve their dependencies directly with Gradle; they do not use the generated
-packwiz directory. `generatePackwiz` writes third-party metadata, locally built owned-mod
-JARs, pack details, and installation files under `pack/build/packwiz`. `bertie-ci` checks
-that directory or turns it into the two release archives.
+Tests resolve the `development` projection directly with Gradle. `generateMrpack` and
+`generateCurseForgePack` write client archives from their provider-specific release locks;
+`generatePackwiz` remains `release-modrinth` conversion output used for validation and the
+server installer.
 
 See [Pack maintenance and installation](../pack/README.md) for pack and export details.
 
@@ -157,7 +161,8 @@ and releases.
 | Shared GameTest reporting | `core/gametest-driver` |
 | Minecraft files prepared for offline jobs | `core/minecraft` |
 | Shared Gradle behavior or repository build tasks | `build-logic/` |
-| Shared dependencies or platform versions | `gradle/` and the relevant lock or checksum file |
+| Minecraft components or platform versions | `deps/` and the relevant profile lock |
+| JVM/build dependencies | `gradle/` and the relevant Gradle lock or checksum file |
 | CI planning, process handling, Wayland support, or packaging | `tools/bertie-ci/` |
 | Workflow triggers, caches, uploads, or GitHub releases | `.github/` |
 | Development or CI tool versions | `flake.nix` and `flake.lock` |

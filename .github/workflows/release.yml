@@ -103,6 +103,12 @@ jobs:
           component: ${{ needs.plan.outputs.subject }}
           output: .bertie-ci/release/bertie-pack-${{ needs.plan.outputs.version }}.mrpack
 
+      - name: Export CurseForge client pack
+        uses: ./.github/actions/pack-export-curseforge
+        with:
+          component: ${{ needs.plan.outputs.subject }}
+          output: .bertie-ci/release/bertie-pack-${{ needs.plan.outputs.version }}-curseforge.zip
+
       - name: Export server pack
         uses: ./.github/actions/pack-export-server
         with:

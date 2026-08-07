@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "v4lB1xDz"
+version-id = "2Smosh3T"
+filename = "aquatic_creepers-neoforge-1.0.0+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "aquatic-creepers"
+project-id = 1331880
+file-id = 6918744
+filename = "aquatic_creepers-neoforge-1.0.0+1.21.jar"

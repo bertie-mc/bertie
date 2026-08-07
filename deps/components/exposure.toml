@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hB899VmG"
+version-id = "OJ3DFzQc"
+filename = "exposure-neoforge-1.21.1-1.9.16.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "exposure"
+project-id = 871755
+file-id = 7862664
+filename = "exposure-neoforge-1.21.1-1.9.16.jar"

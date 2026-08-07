@@ -1,14 +1,13 @@
 package io.github.bertie_mc.gradle.conventions
 
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
+import io.github.bertie_mc.gradle.model.PlatformVersions
 import io.github.bertie_mc.gradle.model.TestSubject
-import io.github.bertie_mc.gradle.model.platformVersions
 import io.github.bertie_mc.gradle.tasks.GenerateSuiteModMetadata
 import net.neoforged.moddevgradle.dsl.ModModel
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
 import org.gradle.api.Project
 import org.gradle.api.Task
-import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.file.RegularFile
 import org.gradle.api.provider.Provider
 import org.gradle.api.tasks.SourceSet
@@ -54,11 +53,7 @@ internal fun Project.createTestCarrier(
 
     val subject = extensions.getByType<TestSubject>()
     val carrierId = "${subject.id}_$modIdSuffix"
-    val platform =
-        extensions
-            .getByType<VersionCatalogsExtension>()
-            .named("libs")
-            .platformVersions()
+    val platform = extensions.getByType<PlatformVersions>()
     val metadata =
         tasks.register<GenerateSuiteModMetadata>(
             "generate${sourceSetName.replaceFirstChar(Char::uppercaseChar)}Metadata",

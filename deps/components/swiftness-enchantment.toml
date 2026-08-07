@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "81LiVMcA"
+version-id = "RQGA8ER4"
+filename = "swiftness-enchantment-v1.0.1.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "81LiVMcA"
+version-id = "wm08Fn0N"
+filename = "Swiftness Enchantment v1.0.1 [1.21-1.21.1].zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "swiftness-enchantment"
+project-id = 1259949
+file-id = 6952974
+filename = "swiftness-enchantment-v1.0.1.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "P0Mu4wcQ"
+version-id = "rGPw090r"
+filename = "artifacts-neoforge-13.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "artifacts"
+project-id = 312353
+file-id = 7875426
+filename = "artifacts-neoforge-13.2.1.jar"

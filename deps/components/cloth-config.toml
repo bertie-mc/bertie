@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "9s6osm5g"
+version-id = "izKINKFg"
+filename = "cloth-config-15.0.140-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cloth-config"
+project-id = 348521
+file-id = 5729127
+filename = "cloth-config-15.0.140-neoforge.jar"

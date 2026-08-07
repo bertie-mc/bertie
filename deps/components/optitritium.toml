@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "AyzF4cmc"
+version-id = "vGs5rSd0"
+filename = "tritium-neoforge-1.21-26.10-hotfix.jar"

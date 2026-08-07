@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "gCIbzByR"
+version-id = "HPZSc9em"
+filename = "malstone-1.0.5.0-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "malstone"
+project-id = 1462863
+file-id = 8020558
+filename = "malstone-1.0.5.0-neoforge.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "O53VhQoZ"
+version-id = "qBUSJw5Z"
+filename = "MyNethersDelight-1.21.1-1.10.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "my-nethers-delight"
+project-id = 1003673
+file-id = 8029219
+filename = "MyNethersDelight-1.21.1-1.10.2.jar"

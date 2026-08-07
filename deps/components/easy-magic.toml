@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "9hx3AbJM"
+version-id = "MxbfrOEv"
+filename = "EasyMagic-v21.1.4-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "easy-magic"
+project-id = 456239
+file-id = 7151100
+filename = "EasyMagic-v21.1.4-1.21.1-NeoForge.jar"

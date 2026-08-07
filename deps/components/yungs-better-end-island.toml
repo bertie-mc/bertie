@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "2BwBOmBQ"
+version-id = "I52NZ1qK"
+filename = "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-end-island"
+project-id = 1015127
+file-id = 6300968
+filename = "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"

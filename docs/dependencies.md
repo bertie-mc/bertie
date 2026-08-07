@@ -6,143 +6,254 @@ Enter the development shell before running commands from this page:
 nix develop
 ```
 
-## Choose the file
+## Dependency ownership
 
-| Dependency | File |
+| Dependency | Source of truth |
 | --- | --- |
-| Java library, Gradle plugin, Minecraft, NeoForge, or shared tool version | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
-| Third-party mod, datapack, resourcepack, or shaderpack | [`gradle/minecraft-artifacts.toml`](../gradle/minecraft-artifacts.toml) |
-| Another project in this repository | The consumer's `build.gradle.kts` |
-| Owned mod version | The mod's `mod.properties` |
-| Pack version | [`pack/pack.properties`](../pack/pack.properties) |
+| Minecraft/NeoForge target | [`deps/platform.toml`](../deps/platform.toml) |
+| Intentional external mod or pack | One file under [`deps/components/`](../deps/components) |
+| Development/release selection and transitive graph | Generated files under [`deps/locks/`](../deps/locks) |
+| Pack membership | [`pack/build.gradle.kts`](../pack/build.gradle.kts) |
+| Owned-mod compile, runtime, or test use | That project's `build.gradle.kts` |
+| Java library or Gradle plugin | [`gradle/libs.versions.toml`](../gradle/libs.versions.toml) |
 
-Use the generated `libs` catalog for entries in `libs.versions.toml` and the generated
-`mods` catalog for entries in `minecraft-artifacts.toml`.
-
-## Add or update a third-party file
-
-Add one table to `gradle/minecraft-artifacts.toml`. Include every provider that publishes
-the selected file:
+A component is a logical dependency with one or more equivalent exact distributions.
+Provider and file kind belong to the distribution:
 
 ```toml
-[mods.create]
-maven = { module = "com.simibubi.create:create-1.21.1", version = "6.0.10-281" }
-modrinth = { project-id = "LNytGWDc", version-id = "UjX6dr61", filename = "create-1.21.1-6.0.10.jar" }
-curseforge = { slug = "create", project-id = 328085, file-id = 7963363 }
+# deps/components/create.toml
+[distributions.maven-mod]
+provider = "maven"
+kind = "mod"
+module = "com.simibubi.create:create-1.21.1"
+version = "6.0.10-281"
+filename = "create-1.21.1-6.0.10.jar"
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LNytGWDc"
+version-id = "UjX6dr61"
+filename = "create-1.21.1-6.0.10.jar"
 ```
 
-Use release-specific IDs and the exact filename from the provider. Gradle prefers the
-Maven coordinate for development. Generated packwiz metadata uses Modrinth when available
-and otherwise CurseForge.
+The manifest filename must match the component ID. Adding a file creates the provider-neutral
+catalog alias `deps.create`; it does not add Create to the pack or any classpath.
 
-Use `[mods.*]` for artifacts installed under `mods/`. Use `[datapacks.*]`,
-`[resourcepacks.*]`, or `[shaderpacks.*]` for archives installed in the matching directory.
-Paxi loads entries from `datapacks/` and `resourcepacks/` globally. All provider records for an
-artifact must use the same installation type; if a project does not publish a pack archive on
-every declared provider, use its loader-compatible JAR releases under `[mods.*]`.
+Profiles under `deps/profiles/` choose a representation/provider. Development prefers a
+mod wrapper. `release-modrinth` and `release-curseforge` prefer their matching provider,
+then a native pack representation. A selected native datapack/resourcepack gains the
+profile's Paxi loader dependency.
 
-Entries under `[mods.*]` become aliases in the generated `mods` catalog. For example,
-`[mods.slag-n-embers]` becomes `mods.slagNEmbers`.
-
-### Restrict a file to one physical side
-
-Omit `side` when a file can load on both client and dedicated server. Set it only for a
-file that cannot load on one side:
+Some provider files are hybrid packs. Their primary `kind` participates in profile
+selection, while `additional-kinds` records the other installation locations needed by
+the same bytes:
 
 ```toml
-[mods.tweakerge]
-side = "client"
-modrinth = { project-id = "yke6wdGF", version-id = "701i2Xre", filename = "tweakerge-0.4.3+mc1.21.1.jar" }
-curseforge = { slug = "tweakerge", project-id = 915857, file-id = 7971130 }
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+additional-kinds = ["resourcepack"]
+project-id = "example"
+version-id = "release"
+filename = "example.zip"
 ```
 
-Allowed values are `client`, `server`, and `both`; omission means `both`. This field is
-for third-party files. Bertie-owned mods must load safely on both physical sides.
+The exporter installs that immutable file in every required location. Native resource
+packs go under `config/paxi/resourcepacks/` so the profile's Paxi dependency loads them
+automatically; datapacks remain in the conventional instance-level `datapacks/`
+directory.
 
-## Use a dependency in a project
+Locks preserve required and optional archive relationships, missing optional mod IDs,
+physical sides, bundled mod IDs, and edge origins. Gradle reads the development lock and
+adds its required relationships as ordinary transitive module metadata. Gradle never
+writes `deps/` or contacts provider APIs on behalf of the manifest.
 
-Reference the generated alias in `build.gradle.kts`:
+### Describe optional addons
+
+A component-level relationship records stable pack intent without pretending that every
+provider release declares the same dependency metadata. Declare it on the addon so the
+manifest explains why that component exists:
+
+```toml
+# deps/components/sparkles.toml
+# Provides Incendium textures and Stardust Labs localization fixes.
+
+[relationships.incendium]
+kind = "optional-addon-for"
+```
+
+Relationships are reporting-only: they do not install either component transitively.
+Both components remain intentional Gradle roots. Generated profile locks keep the
+relationship separate from artifact dependency evidence, so reports can distinguish a
+stable addon relationship from a provider-origin optional edge.
+
+### Correct invalid dependency metadata
+
+If one exact release marks a dependency optional but cannot load without it, attach a
+release-specific `require` correction to that distribution. The target remains a normal
+component, but it does not become a pack root:
+
+```toml
+[distributions.modrinth-mod.dependency-corrections.geckolib-is-required]
+# The release loads GeoItem while constructing the mod.
+action = "require"
+mod-id = "geckolib"
+component = "geckolib"
+version-range = "[4.8.4]"
+side = "both"
+applies-to = "modrinth:8KT9aVZC:sSsuuNws"
+```
+
+`applies-to` must match the containing immutable distribution. The lock refresh verifies
+that the selected target provides the named mod ID, preserves any original optional edge,
+and adds the correction as a required edge with its own origin.
+
+Comments are reserved for context that helps a maintainer understand a non-obvious
+component or correction. There is no required prose field: routine catalog entries are
+self-explanatory from their consumers and coordinates.
+
+Provider edges that identify a known Modrinth or CurseForge project without pinning a
+version are resolved to that component's profile selection. Corrections remain reserved
+for exact release-resolution defects rather than stable pack intent.
+
+## Declare a consumer
+
+Use `packComponents` only for external logical roots of the complete pack:
 
 ```kotlin
 dependencies {
-    implementation(mods.create)
-    compileOnly(mods.emi)
-    clienttestRuntimeOnly(mods.emi)
-}
-```
-
-Choose the configuration that matches where the dependency is needed:
-
-| Configuration | Use |
-| --- | --- |
-| `implementation`, `compileOnly`, `runtimeOnly` | Production code |
-| `testImplementation`, `testRuntimeOnly` | JUnit only |
-| `gametestImplementation`, `gametestRuntimeOnly` | GameTests only |
-| `clienttestImplementation`, `clienttestRuntimeOnly` | Client tests only |
-
-Suite configuration names describe test scope, not physical installation side.
-
-Use project dependencies for owned mods:
-
-```kotlin
-dependencies {
-    implementation(project(":mods:bertie-tiers"))
-}
-```
-
-Add an owned mod to the pack with `packMods` in
-[`pack/build.gradle.kts`](../pack/build.gradle.kts):
-
-```kotlin
-dependencies {
+    packComponents(deps.create)
     packMods(project(":mods:bertie-tiers"))
 }
 ```
 
-## Update locks and checksums
+The pack's full test suites explicitly inherit those logical roots:
 
-After an intentional dependency change, regenerate the lock files and SHA-256 entries:
+```kotlin
+configurations.named("gametestComponents") {
+    extendsFrom(configurations.named("packComponents").get())
+}
+```
+
+Owned mods declare only what they consume. Required runtime relationships propagate;
+optional test installations do not:
+
+```kotlin
+dependencies {
+    compileOnly(deps.ironsSpellsNSpellbooks)
+    runtimeOnly(deps.ironsSpellsNSpellbooks)
+    gametestRuntimeOnly(deps.simplySwords)
+}
+```
+
+Use `compileOnly` for an optional API that source imports, `runtimeOnly` for a hard runtime
+dependency, and the suite-specific configurations for integrations installed only in that
+test. Required libraries of those roots come from the lock and must not be repeated.
+
+## Validate and refresh
+
+Validate committed inputs and locks without network access:
+
+```bash
+bertie-ci deps-check --workspace .
+```
+
+Run the separate advisory provider audit when network access is available:
+
+```bash
+bertie-ci deps-audit --workspace .
+```
+
+`deps-audit` compares declared Modrinth files with current provider metadata and reports
+possible missing mod/datapack/resourcepack representations. Provider loader tags are
+discovery hints rather than compatibility evidence: when a tag omits the configured
+loader, the audit inspects the JAR descriptor before reporting the selected file or an
+alternate mod representation. Contradictions are reported as provider metadata
+discrepancies, not artifact incompatibilities. Audit findings do not change manifests or
+fail normal dependency validation.
+
+Redistribution evidence for files embedded by an exporter lives in
+`deps/redistribution.toml`. Evidence records hold the decision and its human-readable
+support. Export-specific assignments connect exact embedded files to those records:
+
+```toml
+strict = false
+
+[evidence.author-permission]
+allowed = true
+text = """
+The author permits these files to be redistributed in modpacks.
+Discussion: https://example.com/permission
+"""
+
+[exports.modrinth.artifacts."curseforge:123456:789012"]
+name = "example-library"
+evidence = ["author-permission"]
+
+[exports.curseforge.artifacts."modrinth:project-a:version-a"]
+name = "example-addon"
+component = "example-addon"
+evidence = ["author-permission"]
+```
+
+`allowed` records the conclusion supported by the free-form evidence: `false` is useful
+for licenses that permit provider-native modpack references but prohibit directly
+bundling the file. An assignment has the artifact name from the lock, its component when
+it is a component selection, and one or more evidence IDs. Transitive-only artifacts omit
+`component`; they do not need artificial root components. An artifact may reference more
+than one record, and a denial wins if records conflict.
+
+Assignments are scoped to the export that embeds the file. Wildcards and project- or
+component-wide coverage are intentionally unsupported: selecting a new immutable file is
+a review point even when it can reuse existing evidence. Unused evidence, unknown
+references, stale assignments, and names or components that disagree with the resolved
+lock are rejected. Strict mode additionally rejects both denied files and embedded files
+without assignments; it remains disabled while release evidence is incomplete.
+
+This also verifies that every required external mod ID in an owned mod's NeoForge
+metadata has a direct runtime dependency in that mod's `build.gradle.kts`.
+
+Reselect distributions and prune unreachable locked evidence after editing existing
+component/profile inputs:
+
+```bash
+bertie-ci deps-lock --workspace .
+```
+
+The initial producer deliberately reuses committed evidence for immutable artifacts. A
+new provider distribution may reuse the inspected archive metadata of an equivalent
+distribution of the same component and kind; its immutable provider coordinates still
+come from the component manifest. A component with no locked equivalent is rejected
+instead of receiving invented metadata. Provider discovery remains outside this tool.
+
+After dependency changes, update and review Gradle locks/checksums as usual:
 
 ```bash
 gradle resolveAndLockAll --write-locks --write-verification-metadata sha256
 ```
 
-Review what changed before committing:
+## Generate and inspect releases
 
 ```bash
-git diff -- '**/gradle.lockfile' '**/settings-gradle.lockfile' \
-  gradle/verification-metadata.xml
-```
-
-The diff should contain only the modules and artifacts introduced by your change. Do not
-approve an unexplained checksum.
-
-Run the affected project's tests. For a pack dependency, also run:
-
-```bash
-gradle :pack:runGameTests
-gradle :pack:runClientTests
-bertie-ci pack-validate --workspace . --component pack
-```
-
-## Generate and inspect the pack
-
-```bash
+gradle :pack:generateMrpack
+gradle :pack:generateCurseForgePack
 gradle :pack:generatePackwiz
 ```
 
-Inspect `pack/build/packwiz`. Generated packwiz metadata, downloaded files, and owned mod
-JARs are build output and must not be added to Git.
-
-Validate or export the generated pack with:
+`generateMrpack` serializes `release-modrinth` directly. Modrinth files become native
+index entries; other selected files are embedded and listed in the redistribution audit
+under `pack/build/reports/dependencies/`. `generateCurseForgePack` does the corresponding
+work for `release-curseforge`: CurseForge project/file IDs become native `manifest.json`
+entries, while owned mods and non-CurseForge fallbacks are placed in `overrides/`.
+`generatePackwiz` encodes `release-modrinth` for validation/server conversion.
 
 ```bash
 bertie-ci pack-validate --workspace . --component pack
 bertie-ci pack-export-client --workspace . --component pack \
   --output .bertie-ci/release/bertie.mrpack
+bertie-ci pack-export-curseforge --workspace . --component pack \
+  --output .bertie-ci/release/bertie-curseforge.zip
 bertie-ci pack-export-server --workspace . --component pack \
   --output .bertie-ci/release/bertie-server.zip
 ```
-
-See [Testing](testing.md) for choosing tests and [CI and releases](cicd.md) for publishing
-the result.

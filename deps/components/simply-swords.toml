@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bK3Ubu9p"
+version-id = "eREhvVpQ"
+filename = "simplyswords-neoforge-1.63.0-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "simply-swords"
+project-id = 659887
+file-id = 7704396
+filename = "simplyswords-neoforge-1.63.0-1.21.1.jar"

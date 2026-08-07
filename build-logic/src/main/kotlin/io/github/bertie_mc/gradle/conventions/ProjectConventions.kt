@@ -2,8 +2,8 @@ package io.github.bertie_mc.gradle.conventions
 
 import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES
 import io.github.bertie_mc.gradle.model.PlatformVersions
+import io.github.bertie_mc.gradle.model.loadPlatformVersions
 import io.github.bertie_mc.gradle.model.lwjglNativeClassifier
-import io.github.bertie_mc.gradle.model.platformVersions
 import io.github.bertie_mc.gradle.tasks.ResolveDependencies
 import net.neoforged.moddevgradle.dsl.NeoForgeExtension
 import net.neoforged.moddevgradle.dsl.RunModel
@@ -36,7 +36,7 @@ internal fun Project.configureJvmRole() {
     extensions.add(
         PlatformVersions::class.java,
         "bertiePlatform",
-        catalog.platformVersions(),
+        loadPlatformVersions(layout.settingsDirectory.asFile, catalog),
     )
     dependencies.add(
         "testImplementation",
@@ -92,8 +92,9 @@ internal fun Project.configureNeoForgeRole(): NeoForgeExtension {
     pluginManager.apply("net.neoforged.moddev")
 
     val catalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
+    val platform = extensions.getByType<PlatformVersions>()
     return extensions.getByType<NeoForgeExtension>().apply {
-        setVersion(catalog.requiredVersion("neoforge"))
+        setVersion(platform.neoForge)
         parchment.parchmentArtifact.set(catalog.requiredLibrary("parchment-data").notation())
         parchment.conflictResolutionPrefix.set("p_")
     }

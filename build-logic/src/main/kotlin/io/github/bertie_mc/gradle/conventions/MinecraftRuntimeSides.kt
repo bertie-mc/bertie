@@ -2,7 +2,7 @@ package io.github.bertie_mc.gradle.conventions
 
 import io.github.bertie_mc.gradle.model.MinecraftArtifactManifest
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
-import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
+import io.github.bertie_mc.gradle.model.loadMinecraftArtifacts
 import org.gradle.api.Project
 import org.gradle.api.artifacts.Configuration
 
@@ -27,12 +27,9 @@ internal fun Project.projectMinecraftRuntime(
     target: MinecraftArtifactSide,
 ) {
     val manifest =
-        parseMinecraftArtifacts(
-            providers
-                .fileContents(
-                    layout.settingsDirectory.file("gradle/minecraft-artifacts.toml"),
-                ).asText
-                .get(),
+        loadMinecraftArtifacts(
+            layout.settingsDirectory.asFile,
+            profile = "development",
         )
     runtimeClasspath.excludeModules(manifest.modulesExcludedFrom(target))
 }

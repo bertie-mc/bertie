@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "XB83s9jW"
+version-id = "qE7rHlZt"
+filename = "emendatusenigmatica-1.21.1-2.2.0-alpha-3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "emendatusenigmatica"
+project-id = 399630
+file-id = 6618485
+filename = "emendatusenigmatica-1.21.1-2.2.0-alpha-3.jar"

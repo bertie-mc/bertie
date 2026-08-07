@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "fnAffV0n"
+version-id = "TuD0Zvi3"
+filename = "deeperdarker-neoforge-1.21.1-1.4.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "deeperdarker"
+project-id = 659011
+file-id = 8201775
+filename = "deeperdarker-neoforge-1.21.1-1.4.1.jar"

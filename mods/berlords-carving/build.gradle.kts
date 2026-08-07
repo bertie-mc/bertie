@@ -7,9 +7,9 @@ plugins {
 }
 
 dependencies {
-    compileOnly(mods.slagNEmbers)
-    compileOnly(mods.emi)
+    compileOnly(deps.slagNEmbers)
+    compileOnly(deps.emi)
 
-    clienttestRuntimeOnly(mods.emi)
-    clienttestRuntimeOnly(mods.slagNEmbers)
+    clienttestRuntimeOnly(deps.emi)
+    clienttestRuntimeOnly(deps.slagNEmbers)
 }

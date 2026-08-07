@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mOl6kTX8"
+version-id = "i24czOXq"
+filename = "nightvision-spyglass-1.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "mOl6kTX8"
+version-id = "RjV5R8g8"
+filename = "Nightvision Spyglass_1.21.1_v1.0.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "nightvision-spyglass"
+project-id = 1247782
+file-id = 6445156
+filename = "nightvision-spyglass-1.0.jar"

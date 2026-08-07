@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "HZmhgdJk"
+version-id = "5db3GZzg"
+filename = "wunderlib-21.0.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "wunderlib-neoforge"
+project-id = 1422273
+file-id = 7469725
+filename = "wunderlib-21.0.10.jar"

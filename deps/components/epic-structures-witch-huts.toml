@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7KOwcKlK"
+version-id = "nRl1Bn5j"
+filename = "epic-structures-witch-huts-1.3.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "7KOwcKlK"
+version-id = "m0fTMwwj"
+filename = "Epic Witch Huts v1.3.0 (1.21+).zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "epic-structures-witch-huts"
+project-id = 1335768
+file-id = 7996218
+filename = "epic-structures-witch-huts-1.3.0.jar"

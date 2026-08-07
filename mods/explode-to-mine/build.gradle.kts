@@ -6,5 +6,5 @@ plugins {
 }
 
 dependencies {
-    testImplementation(libs.neoforge.test.framework)
+    testImplementation("net.neoforged:testframework:${bertiePlatform.neoForge}")
 }

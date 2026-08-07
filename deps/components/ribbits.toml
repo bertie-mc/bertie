@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8YcE8y4T"
+version-id = "XrUKaWrw"
+filename = "Ribbits-1.21.1-NeoForge-4.1.6.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ribbits"
+project-id = 622967
+file-id = 7355196
+filename = "Ribbits-1.21.1-NeoForge-4.1.6.jar"

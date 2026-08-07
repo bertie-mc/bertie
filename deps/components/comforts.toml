@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "SaCpeal4"
+version-id = "3kpPjcTc"
+filename = "comforts-neoforge-9.0.5+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "comforts"
+project-id = 276951
+file-id = 7515858
+filename = "comforts-neoforge-9.0.5+1.21.1.jar"

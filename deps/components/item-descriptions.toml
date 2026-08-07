@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "UaizcMKP"
+version-id = "KEOf5Mq4"
+filename = "item-descriptions-1.11+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "item-descriptions"
+project-id = 1101501
+file-id = 5812270
+filename = "item-descriptions-1.11+1.21.jar"

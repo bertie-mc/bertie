@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "QQXAdCzh"
+version-id = "Zrh2Fmn9"
+filename = "Ping-Wheel-1.12.2-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ping-wheel"
+project-id = 734339
+file-id = 7996932
+filename = "Ping-Wheel-1.12.2-neoforge-1.21.1.jar"

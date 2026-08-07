@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "a48R8AGk"
+version-id = "Mk8hYics"
+filename = "lendersdelight-1.21.1-1.0.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "l-enders-cataclysm-delight"
+project-id = 1165928
+file-id = 6901287
+filename = "lendersdelight-1.21.1-1.0.10.jar"

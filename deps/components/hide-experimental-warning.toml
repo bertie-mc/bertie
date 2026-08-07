@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Rm4OOdHd"
+version-id = "TlSbvWkK"
+filename = "hideexperimentalwarning-1.21.1-1.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "hide-experimental-warning"
+project-id = 1009556
+file-id = 5609644
+filename = "hideexperimentalwarning-1.21.1-1.2.jar"

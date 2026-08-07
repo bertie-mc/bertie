@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8BmcQJ2H"
+version-id = "gFmrC8Ru"
+filename = "geckolib-neoforge-1.21.1-4.8.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "geckolib"
+project-id = 388172
+file-id = 7707149
+filename = "geckolib-neoforge-1.21.1-4.8.4.jar"

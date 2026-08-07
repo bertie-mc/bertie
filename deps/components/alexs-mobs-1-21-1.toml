@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EmNhnNnt"
+version-id = "KSgki4uc"
+filename = "alexsmobs-1.22.17.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "alexs-mobs-1-21-1"
+project-id = 1415721
+file-id = 7528193
+filename = "alexsmobs-1.22.17.jar"

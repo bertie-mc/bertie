@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "oIjj1Fan"
+version-id = "sE5KVcHA"
+filename = "enigmaticlegacyplus-1.21.1-1.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "enigmaticlegacy"
+project-id = 1391021
+file-id = 8067612
+filename = "enigmaticlegacyplus-1.21.1-1.0.0.jar"

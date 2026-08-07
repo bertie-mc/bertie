@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LPjGiSO4"
+version-id = "3fv8O3xX"
+filename = "Nullscape_1.21.x_v1.2.14.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "LPjGiSO4"
+version-id = "JuMNLwUQ"
+filename = "Nullscape_1.21_v1.2.14.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "nullscape"
+project-id = 570354
+file-id = 7078265
+filename = "Nullscape_1.21.x_v1.2.14.jar"

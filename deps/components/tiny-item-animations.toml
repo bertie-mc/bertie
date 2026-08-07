@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "wMkevcSR"
+version-id = "mSJPeo1D"
+filename = "tia-neoforge-1.21-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "tiny-item-animations"
+project-id = 1360659
+file-id = 7121755
+filename = "tia-neoforge-1.21-1.2.1.jar"

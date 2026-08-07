@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "PLAGcSFJ"
+version-id = "ewh5dAkH"
+filename = "ParticleEffects-1.4.0+1.21.1+neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "particle-effects"
+project-id = 1120746
+file-id = 8017633
+filename = "ParticleEffects-1.4.0+1.21.1+neoforge.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "JtifUr64"
+version-id = "2y01mBUy"
+filename = "TravelersTitles-1.21.1-NeoForge-5.1.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "travelers-titles"
+project-id = 1015155
+file-id = 6294123
+filename = "TravelersTitles-1.21.1-NeoForge-5.1.3.jar"

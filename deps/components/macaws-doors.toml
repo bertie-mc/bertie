@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "kNxa8z3e"
+version-id = "u7BRX44F"
+filename = "mcw-doors-1.1.5-mc1.21.1neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "macaws-doors"
+project-id = 378646
+file-id = 7618651
+filename = "mcw-doors-1.1.5-mc1.21.1neoforge.jar"

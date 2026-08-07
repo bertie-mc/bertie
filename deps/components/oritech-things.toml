@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "C7tBAibK"
+version-id = "o9jlbTqB"
+filename = "oritechthings-0.0.43.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "oritech-things"
+project-id = 1166849
+file-id = 8058690
+filename = "oritechthings-0.0.43.jar"

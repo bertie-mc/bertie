@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8rGW0cNk"
+version-id = "Y3oSuLYI"
+filename = "borninconfiguration-3.2.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "born-in-configuration"
+project-id = 1019091
+file-id = 8122961
+filename = "borninconfiguration-3.2.2.jar"

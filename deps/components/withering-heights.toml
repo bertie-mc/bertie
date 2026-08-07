@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "NCPLOWlF"
+version-id = "oUMl3Kzr"
+filename = "withering-heights-v1.1b.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+additional-kinds = ["resourcepack"]
+project-id = "NCPLOWlF"
+version-id = "4Mx0MqUO"
+filename = "Withering Heights v1.1b (Resource Pack Inside).zip"

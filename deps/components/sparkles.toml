@@ -1,0 +1,12 @@
+# Provides Incendium textures and Stardust Labs localization fixes.
+
+[relationships.incendium]
+kind = "optional-addon-for"
+
+[distributions.modrinth-resourcepack]
+provider = "modrinth"
+kind = "resourcepack"
+side = "client"
+project-id = "HfNmMQ9E"
+version-id = "vpqshSqq"
+filename = "Sparkles_26.2_v1.1.10.zip"

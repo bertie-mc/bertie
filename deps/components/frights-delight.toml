@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "awWvXlb2"
+version-id = "4BABsmeb"
+filename = "frightsdelight-neoforge-1.21.1-1.4.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "frights-delight"
+project-id = 927591
+file-id = 8058022
+filename = "frightsdelight-neoforge-1.21.1-1.4.8.jar"

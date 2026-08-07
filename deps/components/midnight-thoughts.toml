@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "rZVE31wM"
+version-id = "Hrn8svh7"
+filename = "midnightthoughts-1.4.05.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "midnight-thoughts"
+project-id = 1401318
+file-id = 8212380
+filename = "midnightthoughts-1.4.05.jar"

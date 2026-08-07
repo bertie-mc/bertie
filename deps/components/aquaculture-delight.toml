@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "U9GJqWrI"
+version-id = "VFpyJiVp"
+filename = "aquaculturedelight-1.2.0-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "aquaculture-delight"
+project-id = 961988
+file-id = 6179576
+filename = "aquaculturedelight-1.2.0-neoforge-1.21.1.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "AVq17PqV"
+version-id = "kAbmpvF3"
+filename = "LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "leaves-be-gone"
+project-id = 686435
+file-id = 8036398
+filename = "LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar"

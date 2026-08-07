@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Fsvx2bdR"
+version-id = "ZgAHzqRi"
+filename = "ParCool-1.21.1-3.4.3.3-NF.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "parcool"
+project-id = 482378
+file-id = 7760593
+filename = "ParCool-1.21.1-3.4.3.3-NF.jar"

@@ -1,5 +1,5 @@
-name: Export client pack
-description: Generate the side-aware packwiz tree and export it as a Modrinth pack
+name: Export Modrinth pack
+description: Generate a Modrinth client pack directly from its release profile
 
 inputs:
   component:
@@ -13,7 +13,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Export client pack
+    - name: Export Modrinth client pack
       shell: bash
       env:
         BERTIE_COMPONENT: ${{ inputs.component }}

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "N29BujGY"
+version-id = "8gwHTe22"
+filename = "apothiccombat-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "apothic-combat"
+project-id = 986982
+file-id = 6105085
+filename = "apothiccombat-1.2.1.jar"

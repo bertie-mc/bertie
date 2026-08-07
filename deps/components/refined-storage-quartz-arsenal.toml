@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "gnwGOmBf"
+version-id = "toDdIhGu"
+filename = "refinedstorage-quartz-arsenal-neoforge-1.0.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "refined-storage-quartz-arsenal"
+project-id = 1230483
+file-id = 8103101
+filename = "refinedstorage-quartz-arsenal-neoforge-1.0.8.jar"

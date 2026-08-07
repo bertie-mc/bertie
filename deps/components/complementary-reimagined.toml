@@ -1,0 +1,16 @@
+[distributions.modrinth-shaderpack]
+provider = "modrinth"
+kind = "shaderpack"
+side = "client"
+project-id = "HVnmMxH1"
+version-id = "yCCduG44"
+filename = "ComplementaryReimagined_r5.8.1.zip"
+
+[distributions.curseforge-shaderpack]
+provider = "curseforge"
+kind = "shaderpack"
+side = "client"
+slug = "complementary-reimagined"
+project-id = 627557
+file-id = 8123287
+filename = "ComplementaryReimagined_r5.8.1.zip"

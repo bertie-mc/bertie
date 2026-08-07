@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "5lr6fnw0"
+version-id = "GGU6zOUH"
+filename = "Pastel-1.1.5.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "pastel-mod"
+project-id = 1264556
+file-id = 7591337
+filename = "Pastel-1.1.5.5.jar"

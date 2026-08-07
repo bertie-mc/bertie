@@ -1,0 +1,14 @@
+[distributions.maven-mod]
+provider = "maven"
+kind = "mod"
+module = "dev.ftb.mods:ftb-quests-neoforge"
+version = "2101.1.26"
+filename = "ftb-quests-neoforge-2101.1.26.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ftb-quests-forge"
+project-id = 289412
+file-id = 8216578
+filename = "ftb-quests-neoforge-2101.1.26.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Ohy0TgO2"
+version-id = "psYvbkuW"
+filename = "youkaisfeasts-1.1.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "gensokyo-delight-youkais-feasts"
+project-id = 1309991
+file-id = 8004770
+filename = "youkaisfeasts-1.1.0.jar"

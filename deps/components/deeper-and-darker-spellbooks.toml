@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bY4q13Xr"
+version-id = "oBllvIgO"
+filename = "darkermagic-1.3.3-1.21.1-ver.b.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "deeper-and-darker-spellbooks"
+project-id = 1432746
+file-id = 7897469
+filename = "darkermagic-1.3.3-1.21.1-ver.b.jar"

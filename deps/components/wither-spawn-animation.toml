@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Vr6UqBIT"
+version-id = "i70oR8c3"
+filename = "wither_spawn_animation-1.6.2-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "wither-spawn-animation"
+project-id = 1084564
+file-id = 7638136
+filename = "wither_spawn_animation-1.6.2-neoforge-1.21.1.jar"

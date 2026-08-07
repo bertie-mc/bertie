@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "kidLKymU"
+version-id = "8U0dIfSM"
+filename = "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-strongholds"
+project-id = 1015105
+file-id = 6272264
+filename = "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar"

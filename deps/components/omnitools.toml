@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "X6LCQe7U"
+version-id = "ygWA0CO7"
+filename = "omnitools-1.21.1-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "omnitools"
+project-id = 1401075
+file-id = 7437224
+filename = "omnitools-1.21.1-1.2.1.jar"

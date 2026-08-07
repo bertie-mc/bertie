@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "R2OftAxM"
+version-id = "GbNuOZ4S"
+filename = "FarmersDelight-1.21.1-1.3.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "farmers-delight"
+project-id = 398521
+file-id = 8083481
+filename = "FarmersDelight-1.21.1-1.3.2.jar"

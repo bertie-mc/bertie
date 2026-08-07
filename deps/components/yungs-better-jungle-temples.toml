@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "z9Ve58Ih"
+version-id = "P00i2hJn"
+filename = "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-jungle-temples"
+project-id = 1015123
+file-id = 5924482
+filename = "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar"

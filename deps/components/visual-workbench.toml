@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "kfqD1JRw"
+version-id = "Jy5V5FNj"
+filename = "VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "visual-workbench"
+project-id = 500273
+file-id = 6798196
+filename = "VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar"

@@ -16,6 +16,6 @@ runs:
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/build-cache-1
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/*/transforms
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/transforms-*
-        key: bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-${{ github.sha }}
+        key: bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'deps/**', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-${{ github.sha }}
         restore-keys: |
-          bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-
+          bertie-gradle-work-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('flake.lock', 'deps/**', 'gradle/libs.versions.toml', 'gradle.properties') }}-${{ inputs.kind }}-

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "UqdL217I"
+version-id = "i8fZqMWD"
+filename = "access_denied-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "accessdenied"
+project-id = 917449
+file-id = 8082280
+filename = "access_denied-neoforge-1.21.1.jar"

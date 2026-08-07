@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "DGiq4ZSW"
+version-id = "ja5Qg1xw"
+filename = "oceansdelight-neoforge-1.0.4-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "oceans-delight"
+project-id = 841262
+file-id = 7939973
+filename = "oceansdelight-neoforge-1.0.4-1.21.1.jar"

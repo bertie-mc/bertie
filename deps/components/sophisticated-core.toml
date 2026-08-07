@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "nmoqTijg"
+version-id = "8TQbwhEU"
+filename = "sophisticatedcore-1.21.1-1.4.49.1966.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "sophisticated-core"
+project-id = 618298
+file-id = 8213443
+filename = "sophisticatedcore-1.21.1-1.4.49.1966.jar"

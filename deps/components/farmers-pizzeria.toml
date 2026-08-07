@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "L4BVXQ8I"
+version-id = "UeG8IjD7"
+filename = "farmerspizzeria-1.1.0-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "farmers-pizzeria"
+project-id = 1449102
+file-id = 7750927
+filename = "farmerspizzeria-1.1.0-neoforge-1.21.1.jar"

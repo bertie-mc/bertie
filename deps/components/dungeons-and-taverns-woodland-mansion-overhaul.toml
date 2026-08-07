@@ -1,0 +1,22 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "3GfxWFCy"
+version-id = "LEkxbqdY"
+filename = "dungeons-and-taverns-woodland-mansion-replacement-v1.2.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+additional-kinds = ["resourcepack"]
+project-id = "3GfxWFCy"
+version-id = "g485D38Q"
+filename = "DnT Woodland Mansion Replacement v1.2.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "dungeons-and-taverns-woodland-mansion-overhaul"
+project-id = 1053222
+file-id = 5724452
+filename = "dungeons-and-taverns-woodland-mansion-replacement-v1.2.jar"

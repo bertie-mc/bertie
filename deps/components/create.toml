@@ -1,0 +1,21 @@
+[distributions.maven-mod]
+provider = "maven"
+kind = "mod"
+module = "com.simibubi.create:create-1.21.1"
+version = "6.0.10-281"
+filename = "create-1.21.1-6.0.10.jar"
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LNytGWDc"
+version-id = "UjX6dr61"
+filename = "create-1.21.1-6.0.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "create"
+project-id = 328085
+file-id = 7963363
+filename = "create-1.21.1-6.0.10.jar"

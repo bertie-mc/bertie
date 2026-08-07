@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "VpmCsizY"
+version-id = "kdvvFM7V"
+filename = "iceandfire-2.0-beta.17.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "iceandfire-ce"
+project-id = 1040076
+file-id = 8147245
+filename = "iceandfire-2.0-beta.17.jar"

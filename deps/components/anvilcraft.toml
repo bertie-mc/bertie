@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vuISAWPc"
+version-id = "lhatdg0u"
+filename = "anvilcraft-neoforge-1.21.1-1.5.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "anvilcraft"
+project-id = 986251
+file-id = 8246261
+filename = "anvilcraft-neoforge-1.21.1-1.5.3.jar"

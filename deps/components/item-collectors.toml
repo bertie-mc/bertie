@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "y9vDr4Th"
+version-id = "V19vXCQ0"
+filename = "itemcollectors-1.1.10-neoforge-mc1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "item-collectors"
+project-id = 395620
+file-id = 5550187
+filename = "itemcollectors-1.1.10-neoforge-mc1.21.jar"

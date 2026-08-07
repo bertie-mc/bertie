@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bA1tmmcv"
+version-id = "DZOuNCHD"
+filename = "discerning_the_eldritch-1.4.3-1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "discerning-the-eldritch"
+project-id = 1143065
+file-id = 7469786
+filename = "discerning_the_eldritch-1.4.3-1.21.jar"

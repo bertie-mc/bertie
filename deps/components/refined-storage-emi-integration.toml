@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "TCSDwmbf"
+version-id = "zpz6Pcxn"
+filename = "refinedstorage-emi-integration-neoforge-1.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "refined-storage-emi-integration"
+project-id = 1230691
+file-id = 6360283
+filename = "refinedstorage-emi-integration-neoforge-1.0.0.jar"

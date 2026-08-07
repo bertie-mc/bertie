@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "CbV689EN"
+version-id = "hsGoGiGk"
+filename = "l2hostility-3.0.18.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "l2hostility"
+project-id = 909207
+file-id = 7815611
+filename = "l2hostility-3.0.18.jar"

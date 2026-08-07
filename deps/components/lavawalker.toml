@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "pWoC2eCi"
+version-id = "Vw9DzVIJ"
+filename = "LavaWalkerMod.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lavawalker"
+project-id = 580033
+file-id = 5701644
+filename = "LavaWalkerMod.jar"

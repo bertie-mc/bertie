@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "o1C1Dkj5"
+version-id = "D6aZn0Em"
+filename = "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-dungeons"
+project-id = 1015112
+file-id = 5954804
+filename = "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"

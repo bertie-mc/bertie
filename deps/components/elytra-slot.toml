@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mSQF1NpT"
+version-id = "RX6A02W1"
+filename = "elytraslot-neoforge-9.0.2+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "elytra-slot"
+project-id = 317716
+file-id = 5778461
+filename = "elytraslot-neoforge-9.0.2+1.21.1.jar"

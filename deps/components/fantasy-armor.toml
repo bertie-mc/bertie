@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "oVmpjYQ5"
+version-id = "Ibkb2q3C"
+filename = "fantasy_armor-neoforge-1.2.4-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "fantasy-armor"
+project-id = 1083998
+file-id = 7850813
+filename = "fantasy_armor-neoforge-1.2.4-1.21.1.jar"

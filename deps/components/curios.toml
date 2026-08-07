@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vvuO3ImH"
+version-id = "yohfFbgD"
+filename = "curios-neoforge-9.5.1+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "curios"
+project-id = 309927
+file-id = 6529130
+filename = "curios-neoforge-9.5.1+1.21.1.jar"

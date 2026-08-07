@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "4QG5lev4"
+version-id = "8aToYlt2"
+filename = "SolarFluxReborn-1.21.1-21.1.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "solar-flux-reborn"
+project-id = 246974
+file-id = 6776635
+filename = "SolarFluxReborn-1.21.1-21.1.8.jar"

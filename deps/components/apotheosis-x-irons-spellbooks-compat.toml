@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "apotheosis-x-irons-spellbooks-compat"
+project-id = 1244863
+file-id = 8048938
+filename = "apotheosis-x-irons-spellbooks-compat-1244863-8048938.jar"

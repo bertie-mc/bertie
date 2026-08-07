@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "Ci8bgONi"
+version-id = "E1rW2s1e"
+filename = "nightworld-neoforge-1.21-5.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "nightworld"
+project-id = 865641
+file-id = 6042876
+filename = "nightworld-neoforge-1.21-5.0.0.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "s6zjL86N"
+version-id = "Mth1azz7"
+filename = "refinedstorage-curios-integration-1.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "refined-storage-curios-integration"
+project-id = 1230729
+file-id = 6360514
+filename = "refinedstorage-curios-integration-1.0.0.jar"

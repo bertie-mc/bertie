@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EsAfCjCV"
+version-id = "uAKA6Laj"
+filename = "appleskin-neoforge-mc1.21-3.0.9.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "appleskin"
+project-id = 248787
+file-id = 7854442
+filename = "appleskin-neoforge-mc1.21-3.0.9.jar"

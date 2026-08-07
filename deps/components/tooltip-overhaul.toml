@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "vRFcG5n6"
+version-id = "4s26zfjH"
+filename = "tooltipoverhaul-neoforge-1.21.1-1.4.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "tooltip-overhaul"
+project-id = 1327508
+file-id = 7907475
+filename = "tooltipoverhaul-neoforge-1.21.1-1.4.4.jar"

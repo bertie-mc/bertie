@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "FQgc8dib"
+version-id = "2k3GCxEt"
+filename = "DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "diagonal-walls"
+project-id = 969422
+file-id = 5918894
+filename = "DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar"

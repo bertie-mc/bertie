@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "5pzBXDS3"
+version-id = "haHsKT7H"
+filename = "connectiblechains-neoforge-1.21.1-1.2.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "reconnectible-chains"
+project-id = 1451848
+file-id = 7711309
+filename = "connectiblechains-neoforge-1.21.1-1.2.5.jar"

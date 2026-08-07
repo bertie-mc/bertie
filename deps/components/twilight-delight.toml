@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "d6cSefpO"
+version-id = "HNXR3CwJ"
+filename = "twilightdelight-3.2.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "twilights-flavors-delight"
+project-id = 871735
+file-id = 8208673
+filename = "twilightdelight-3.2.2.jar"

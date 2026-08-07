@@ -26,6 +26,12 @@ def main() -> None:
         for entry in validations
     ):
         raise SystemExit("Every pack validation must contain a subject")
+    dependency_check = subprocess.run(
+        ["bertie-ci", "deps-check", "--workspace", "."],
+        check=False,
+    )
+    if dependency_check.returncode != 0:
+        sys.exit(dependency_check.returncode)
     command = [
         "bertie-ci",
         "gradle-task",

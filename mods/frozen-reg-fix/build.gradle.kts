@@ -4,5 +4,5 @@ plugins {
 }
 
 dependencies {
-    gametestRuntimeOnly(mods.immersiveArmors)
+    gametestRuntimeOnly(deps.immersiveArmors)
 }

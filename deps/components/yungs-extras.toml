@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "ZYgyPyfq"
+version-id = "N2EpMhR7"
+filename = "YungsExtras-1.21.1-NeoForge-5.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-extras"
+project-id = 1015146
+file-id = 5812546
+filename = "YungsExtras-1.21.1-NeoForge-5.1.1.jar"

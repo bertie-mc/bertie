@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LQdpBqdS"
+version-id = "rG10hU1G"
+filename = "tiab-neoforge-6.5.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "time-in-a-bottle-universal"
+project-id = 895919
+file-id = 7555622
+filename = "tiab-neoforge-6.5.4.jar"

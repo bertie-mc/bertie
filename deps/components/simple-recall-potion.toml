@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "JQFS1tDC"
+version-id = "q8cRauFO"
+filename = "simplerecall-1.0.6-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "simple-recall-potion"
+project-id = 1234653
+file-id = 7952799
+filename = "simplerecall-1.0.6-1.21.1.jar"

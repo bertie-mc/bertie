@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "CU0PAyzb"
+version-id = "CLZfFbCx"
+filename = "Paxi-1.21.1-NeoForge-5.1.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "paxi-neoforge"
+project-id = 1015157
+file-id = 6485740
+filename = "Paxi-1.21.1-NeoForge-5.1.3.jar"

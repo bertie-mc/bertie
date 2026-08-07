@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "4sYI62kA"
+version-id = "zFfb3a7Q"
+filename = "oritech-neoforge-1.21.1-1.2.7.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "oritech"
+project-id = 1030830
+file-id = 8211754
+filename = "oritech-neoforge-1.21.1-1.2.7.jar"

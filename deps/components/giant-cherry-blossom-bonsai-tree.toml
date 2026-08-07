@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "uku0mmHk"
+version-id = "J0LBkbCW"
+filename = "giant_cherry_blossom_bonsai_tree-1.0.1-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "giant-cherry-blossom-bonsai-tree"
+project-id = 1338198
+file-id = 7577781
+filename = "giant_cherry_blossom_bonsai_tree-1.0.1-neoforge-1.21.1.jar"

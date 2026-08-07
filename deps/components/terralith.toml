@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8oi3bsk5"
+version-id = "MuJMtPGQ"
+filename = "Terralith_1.21.x_v2.5.8.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "8oi3bsk5"
+version-id = "urbokcOc"
+filename = "Terralith_1.21_v2.5.8.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "terralith"
+project-id = 513688
+file-id = 6090387
+filename = "Terralith_1.21.x_v2.5.8.jar"

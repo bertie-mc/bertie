@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "fPetb5Kh"
+version-id = "nFniEtJV"
+filename = "NaturesCompass-1.21.1-3.4.0-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "natures-compass"
+project-id = 252848
+file-id = 7892954
+filename = "NaturesCompass-1.21.1-3.4.0-neoforge.jar"

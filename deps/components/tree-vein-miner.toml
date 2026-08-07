@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "wEhW4ceB"
+version-id = "raCJZcnp"
+filename = "tree-vein-miner-2.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "wEhW4ceB"
+version-id = "u1f0LENh"
+filename = "TreeVeinMiner (1.21.1).zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "tree-vein-miner"
+project-id = 1356258
+file-id = 8167342
+filename = "tree-vein-miner-2.0.0.jar"

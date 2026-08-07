@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "56bnCCwq"
+version-id = "CGRQn5ML"
+filename = "Slag-n-Embers-1.21.1-1.1a.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "slag-n-embers"
+project-id = 1360010
+file-id = 7786962
+filename = "Slag-n-Embers-1.21.1-1.1a.jar"

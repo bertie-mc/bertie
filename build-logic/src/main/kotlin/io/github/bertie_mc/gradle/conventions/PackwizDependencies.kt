@@ -57,7 +57,7 @@ internal fun Configuration.externalPackwizArtifacts(
 ): Provider<List<PackwizArtifact>> =
     selectedArtifacts.zip(incoming.artifacts.resolvedArtifacts) { artifacts, resolvedArtifacts ->
         val byCoordinate = artifacts.associateBy { artifact -> artifact.packwizSource.coordinate() }
-        resolvedArtifacts.map { resolved ->
+        resolvedArtifacts.flatMap { resolved ->
             val component =
                 resolved.id.componentIdentifier as? ModuleComponentIdentifier
                     ?: error("Packaging configuration resolved a non-module artifact: ${resolved.id}")
@@ -66,31 +66,37 @@ internal fun Configuration.externalPackwizArtifacts(
                     ?: error("Resolved undeclared packaging artifact: $component")
             when (val source = artifact.packwizSource) {
                 is ModrinthArtifactSource -> {
-                    PackwizArtifact(
-                        id = artifact.id,
-                        displayName = artifact.id.replace('-', ' '),
-                        filename = artifact.filename(source),
-                        destination = artifact.kind.destination,
-                        side = artifact.side,
-                        provider = PackwizProvider.MODRINTH,
-                        projectId = source.projectId,
-                        versionId = source.versionId,
-                        file = resolved.file,
-                    )
+                    artifact.installationKinds.map { kind ->
+                        PackwizArtifact(
+                            id = artifact.id,
+                            displayName = artifact.id.replace('-', ' '),
+                            filename = artifact.filename(source),
+                            destination = kind.destination,
+                            side = artifact.side,
+                            provider = PackwizProvider.MODRINTH,
+                            projectId = source.projectId,
+                            versionId = source.versionId,
+                            file = resolved.file,
+                            component = artifact.component,
+                        )
+                    }
                 }
 
                 is CurseForgeArtifactSource -> {
-                    PackwizArtifact(
-                        id = artifact.id,
-                        displayName = artifact.id.replace('-', ' '),
-                        filename = artifact.filename(source),
-                        destination = artifact.kind.destination,
-                        side = artifact.side,
-                        provider = PackwizProvider.CURSEFORGE,
-                        projectId = source.projectId.toString(),
-                        versionId = source.fileId.toString(),
-                        file = resolved.file,
-                    )
+                    artifact.installationKinds.map { kind ->
+                        PackwizArtifact(
+                            id = artifact.id,
+                            displayName = artifact.id.replace('-', ' '),
+                            filename = artifact.filename(source),
+                            destination = kind.destination,
+                            side = artifact.side,
+                            provider = PackwizProvider.CURSEFORGE,
+                            projectId = source.projectId.toString(),
+                            versionId = source.fileId.toString(),
+                            file = resolved.file,
+                            component = artifact.component,
+                        )
+                    }
                 }
 
                 is MavenArtifactSource -> {

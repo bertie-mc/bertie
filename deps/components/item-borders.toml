@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "b1fMg6sH"
+version-id = "WjErgKWV"
+filename = "ItemBorders-1.21-neoforge-1.2.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "item-borders"
+project-id = 513769
+file-id = 5591010
+filename = "ItemBorders-1.21-neoforge-1.2.5.jar"

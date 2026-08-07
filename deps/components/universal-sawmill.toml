@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "WRaRZdTd"
+version-id = "J9bHjnTh"
+filename = "sawmill-1.21-1.7.2-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "universal-sawmill"
+project-id = 964817
+file-id = 7130272
+filename = "sawmill-1.21-1.7.2-neoforge.jar"

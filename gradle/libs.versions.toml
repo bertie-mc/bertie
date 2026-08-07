@@ -1,6 +1,4 @@
 [versions]
-minecraft = "1.21.1"
-neoforge = "21.1.233"
 javafml-loader = "4"
 moddev = "2.0.134"
 neoform-runtime = "2.0.18"
@@ -24,10 +22,7 @@ tomlkt = "0.3.7"
 
 [libraries]
 moddev-gradle = { module = "net.neoforged:moddev-gradle", version.ref = "moddev" }
-neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
-minecraft-dependencies = { module = "net.neoforged:minecraft-dependencies", version.ref = "minecraft" }
 parchment-data = { module = "org.parchmentmc.data:parchment-1.21.1", version.ref = "parchment-mappings" }
-neoforge-test-framework = { module = "net.neoforged:testframework", version.ref = "neoforge" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
 junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }

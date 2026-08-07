@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "49ZofO4f"
+version-id = "Tfs8aJPH"
+filename = "enderio-8.2.11-beta.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "enderio"
+project-id = 64578
+file-id = 8192838
+filename = "enderio-8.2.11-beta.jar"

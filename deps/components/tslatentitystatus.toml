@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "4A86JsDZ"
+version-id = "BAUwDzXj"
+filename = "TES-neoforge-1.21.1-1.8.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "tslatentitystatus"
+project-id = 830420
+file-id = 7115952
+filename = "TES-neoforge-1.21.1-1.8.3.jar"

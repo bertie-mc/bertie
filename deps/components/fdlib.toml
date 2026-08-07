@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LcmGQfK2"
+version-id = "eGbrbFqp"
+filename = "fdlib-1.0.9-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "fdlib"
+project-id = 1271749
+file-id = 7844741
+filename = "fdlib-1.0.9-1.21.1.jar"

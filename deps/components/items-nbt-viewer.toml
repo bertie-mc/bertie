@@ -1,0 +1,7 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "w0xJ0EWR"
+version-id = "7Hx5sN6S"
+filename = "nbtviewer-2.0.0-mc1.21.1-neoforge.jar"

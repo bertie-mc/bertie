@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "the-twilight-forest"
+project-id = 227639
+file-id = 7797302
+filename = "the-twilight-forest-227639-7797302.jar"

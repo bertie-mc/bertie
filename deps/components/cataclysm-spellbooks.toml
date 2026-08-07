@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "3FEg0A8D"
+version-id = "5NYz9vZy"
+filename = "cataclysm_spellbooks-1.1.12-1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cataclysm-spellbooks"
+project-id = 1099461
+file-id = 8176463
+filename = "cataclysm_spellbooks-1.1.12-1.21.jar"

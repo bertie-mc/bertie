@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Ov2r3aVY"
+version-id = "mgDpAA4x"
+filename = "xaerotrainmap-1.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "xaero-train-map"
+project-id = 1295594
+file-id = 6702496
+filename = "xaerotrainmap-1.0.0.jar"

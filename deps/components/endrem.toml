@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ZJTGwAND"
+version-id = "aqYxfNAS"
+filename = "endrem-neoforge-1.21.X-6.0.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "endrem"
+project-id = 404183
+file-id = 5625392
+filename = "endrem-neoforge-1.21.X-6.0.2.jar"

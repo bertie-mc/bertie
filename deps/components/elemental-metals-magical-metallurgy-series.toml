@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mqF8xISJ"
+version-id = "qkJeD0T9"
+filename = "elemental_metals-nf-0.0.4-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "elemental-metals-magical-metallurgy-series"
+project-id = 1034373
+file-id = 7543231
+filename = "elemental_metals-nf-0.0.4-1.21.1.jar"

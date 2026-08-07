@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vRYk0bv7"
+version-id = "HY8Ybozd"
+filename = "trashslot-neoforge-1.21.1-21.1.11.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "trashslot"
+project-id = 235577
+file-id = 8163135
+filename = "trashslot-neoforge-1.21.1-21.1.11.jar"

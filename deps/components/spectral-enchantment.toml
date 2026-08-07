@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8rO3GwBM"
+version-id = "8Os8G6b7"
+filename = "spectral-enchantment-v1.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "8rO3GwBM"
+version-id = "yducMee6"
+filename = "Spectral Enchantment v1.0.0 [1.21-1.21.6].zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "spectral-enchantment"
+project-id = 1254715
+file-id = 6684333
+filename = "spectral-enchantment-v1.0.0.jar"

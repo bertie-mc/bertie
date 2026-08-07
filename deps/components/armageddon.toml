@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "6EBQAueX"
+version-id = "Nj8fQTfb"
+filename = "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "armageddon"
+project-id = 1110642
+file-id = 7045393
+filename = "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "rylMOguI"
+version-id = "q3eBZMG4"
+filename = "entangled-1.3.21-neoforge-mc1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "entangled"
+project-id = 301034
+file-id = 7783144
+filename = "entangled-1.3.21-neoforge-mc1.21.jar"

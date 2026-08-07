@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ing64hYj"
+version-id = "9K6iqTp9"
+filename = "giant_dead_oak_tree-1.0.0-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "giant-dead-oak-tree"
+project-id = 1327495
+file-id = 6888081
+filename = "giant_dead_oak_tree-1.0.0-neoforge-1.21.1.jar"

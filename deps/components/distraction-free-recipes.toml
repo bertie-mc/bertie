@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "gbJLUhZP"
+version-id = "H0rFJIiC"
+filename = "distraction_free_recipes-neoforge-1.2.1-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "distraction-free-recipes"
+project-id = 1167848
+file-id = 6110175
+filename = "distraction_free_recipes-neoforge-1.2.1-1.21.1.jar"

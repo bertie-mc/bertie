@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ftOBbnu8"
+version-id = "Qsj3YEUS"
+filename = "MobLassos-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mob-lassos"
+project-id = 852670
+file-id = 7021571
+filename = "MobLassos-v21.1.1-1.21.1-NeoForge.jar"

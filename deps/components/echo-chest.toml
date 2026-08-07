@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "m3pkVbY8"
+version-id = "S5sNyRsY"
+filename = "EchoChest-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "echo-chest"
+project-id = 857972
+file-id = 6406106
+filename = "EchoChest-v21.1.1-1.21.1-NeoForge.jar"

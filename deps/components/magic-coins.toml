@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "qgQomU7L"
+version-id = "lc8t2DTb"
+filename = "magic_coins-1.1.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "magic-coins"
+project-id = 597281
+file-id = 8176618
+filename = "magic_coins-1.1.3.jar"

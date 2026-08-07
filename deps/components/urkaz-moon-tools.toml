@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1sxtqgoT"
+version-id = "lea7gSoE"
+filename = "UrkazMoonTools-neoforge-2.3.1-49.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "urkaz-moon-tools"
+project-id = 362825
+file-id = 7951944
+filename = "UrkazMoonTools-neoforge-2.3.1-49.jar"

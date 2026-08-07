@@ -4,5 +4,5 @@ plugins {
 }
 
 dependencies {
-    clienttestRuntimeOnly(mods.shortCircuit)
+    clienttestRuntimeOnly(deps.shortCircuit)
 }

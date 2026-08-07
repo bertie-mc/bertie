@@ -8,6 +8,7 @@ from types import SimpleNamespace
 
 import bertie_ci.cli as cli
 import pytest
+from bertie_ci.deps_audit import DependencyAudit
 from bertie_ci.pack import PackSummary
 
 
@@ -15,6 +16,30 @@ from bertie_ci.pack import PackSummary
 def test_gradle_timeout_must_be_positive(value: str) -> None:
     with pytest.raises(SystemExit):
         cli._parser().parse_args(["gradle-task", "--task", ":test", "--timeout", value])
+
+
+def test_dependency_audit_prints_advisory_findings(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setattr(
+        cli.Workspace, "find", lambda _path: SimpleNamespace(root=tmp_path)
+    )
+    monkeypatch.setattr(
+        cli,
+        "audit_modrinth",
+        lambda _root: DependencyAudit(2, 1, ("example finding",)),
+    )
+    args = cli._parser().parse_args(["deps-audit", "--workspace", str(tmp_path)])
+
+    cli._run_deps_audit(args)
+
+    assert capsys.readouterr().out == (
+        "Audited 2 Modrinth distributions across 1 projects.\n"
+        "Advisory findings:\n"
+        "- example finding\n"
+    )
 
 
 def test_gradle_task_runs_on_the_current_desktop_by_default(
@@ -185,7 +210,6 @@ def test_pack_validation_can_use_existing_generated_output(
 @pytest.mark.parametrize(
     ("command", "runner_name", "loader_name", "suffix"),
     [
-        ("pack-export-client", "_run_pack_export_client", "load_packwiz", ".mrpack"),
         (
             "pack-export-server",
             "_run_pack_export_server",
@@ -235,6 +259,68 @@ def test_pack_exports_generate_standalone_project_before_export(
         ("gradle", tmp_path, tmp_path / "jdk", ["generatePackwiz"]),
         expected_export,
     ]
+
+
+def test_client_export_copies_direct_gradle_mrpack(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    generated = tmp_path / "build" / "distributions" / "bertie.mrpack"
+    events: list[object] = []
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+
+    def generate(root: Path, java_home: Path, tasks: object) -> None:
+        events.append(("gradle", root, java_home, tasks))
+        generated.parent.mkdir(parents=True)
+        generated.write_bytes(b"mrpack")
+
+    monkeypatch.setattr(cli, "run_gradle", generate)
+    args = cli._parser().parse_args(
+        [
+            "pack-export-client",
+            "--project",
+            str(tmp_path),
+            "--output",
+            "release/pack.mrpack",
+        ]
+    )
+
+    cli._run_pack_export_client(args)
+
+    assert events == [
+        ("gradle", tmp_path, tmp_path / "jdk", ["generateMrpack"]),
+    ]
+    assert (tmp_path / "release/pack.mrpack").read_bytes() == b"mrpack"
+
+
+def test_curseforge_export_copies_direct_gradle_archive(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    generated = tmp_path / "build" / "distributions" / "bertie-curseforge.zip"
+    events: list[object] = []
+    monkeypatch.setattr(cli, "load_java", lambda: tmp_path / "jdk" / "bin" / "java")
+
+    def generate(root: Path, java_home: Path, tasks: object) -> None:
+        events.append(("gradle", root, java_home, tasks))
+        generated.parent.mkdir(parents=True)
+        generated.write_bytes(b"curseforge")
+
+    monkeypatch.setattr(cli, "run_gradle", generate)
+    args = cli._parser().parse_args(
+        [
+            "pack-export-curseforge",
+            "--project",
+            str(tmp_path),
+            "--output",
+            "release/pack.zip",
+        ]
+    )
+
+    cli._run_pack_export_curseforge(args)
+
+    assert events == [
+        ("gradle", tmp_path, tmp_path / "jdk", ["generateCurseForgePack"]),
+    ]
+    assert (tmp_path / "release/pack.zip").read_bytes() == b"curseforge"
 
 
 def test_server_export_uses_component_task_and_source_readme(

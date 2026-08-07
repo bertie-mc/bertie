@@ -1,0 +1,16 @@
+# Enables configuration screens for Rolling Down in the Deep, Do a Barrel Roll, and Particle Effects.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1eAoo2KR"
+version-id = "7TVdVtxF"
+filename = "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "yacl"
+project-id = 667299
+file-id = 7437845
+filename = "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar"

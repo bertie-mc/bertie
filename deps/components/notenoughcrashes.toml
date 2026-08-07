@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "yM94ont6"
+version-id = "alR8L7vF"
+filename = "notenoughcrashes-neoforge-4.4.9+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "notenoughcrashes"
+project-id = 442354
+file-id = 6598103
+filename = "notenoughcrashes-neoforge-4.4.9+1.21.1.jar"

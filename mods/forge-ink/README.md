@@ -39,8 +39,9 @@ bypasses the tier gate by design of FA's jar system. The forge slot itself is al
 - 5 tiny mixins: tier gate in `HephaestusForgeBlockEntity#getInput` +
   `HephaestusForgeMenu#canInput`, whitelists/kills in the three stock
   `HephaestusForgeInput` implementations.
-- Forbidden & Arcanus and Valhelsia Core are resolved from the Modrinth maven for
-  `compileOnly`; mods.toml orders us `AFTER` forbidden_arcanus so our component patch wins.
+- Forbidden & Arcanus and Valhelsia Core are compile-time APIs. Forbidden & Arcanus and
+  Iron's Spells are explicit runtime dependencies; mods.toml orders us `AFTER`
+  forbidden_arcanus so our component patch wins.
 
 ## Build
 

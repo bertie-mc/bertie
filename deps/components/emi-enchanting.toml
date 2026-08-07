@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "wbWoo11W"
+version-id = "ZyJ6TKvh"
+filename = "emi_enchanting-0.1.2+1.21+neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "emi-enchanting"
+project-id = 936713
+file-id = 5733125
+filename = "emi_enchanting-0.1.2+1.21+neoforge.jar"

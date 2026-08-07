@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "aC3cM3Vq"
+version-id = "9I21YYxf"
+filename = "MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "mouse-tweaks"
+project-id = 60089
+file-id = 5637846
+filename = "MouseTweaks-neoforge-mc1.21-2.26.1.jar"

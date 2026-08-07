@@ -6,10 +6,10 @@ plugins {
 
 dependencies {
     testImplementation(libs.mockito)
-    testImplementation(libs.neoforge.test.framework)
+    testImplementation("net.neoforged:testframework:${bertiePlatform.neoForge}")
     // The pack supplies these hard dependencies. Compile against their precise API
     // artifacts without bundling or resolving unrelated transitives.
-    compileOnly(variantOf(mods.create) { classifier("slim") }) {
+    compileOnly(variantOf(deps.create) { classifier("slim") }) {
         isTransitive = false
     }
     compileOnly(libs.ponder) {
@@ -18,14 +18,16 @@ dependencies {
     compileOnly(libs.flywheel) {
         isTransitive = false
     }
-    compileOnly(mods.refinedStorage) {
+    compileOnly(deps.refinedStorage) {
         isTransitive = false
     }
+    runtimeOnly(deps.create)
+    runtimeOnly(deps.refinedStorage)
 
-    testImplementation(mods.refinedStorage) {
+    testImplementation(deps.refinedStorage) {
         isTransitive = false
     }
-    testCompileOnly(variantOf(mods.create) { classifier("slim") }) {
+    testCompileOnly(variantOf(deps.create) { classifier("slim") }) {
         isTransitive = false
     }
     testCompileOnly(libs.ponder) {
@@ -34,7 +36,7 @@ dependencies {
     testCompileOnly(libs.flywheel) {
         isTransitive = false
     }
-    testRuntimeOnly(mods.create) {
+    testRuntimeOnly(deps.create) {
         isTransitive = false
     }
 }

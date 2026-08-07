@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "KbZj5UH0"
+version-id = "l9G08nkn"
+filename = "giant_tree_stump-1.0.1-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "giant-tree-stump"
+project-id = 1249645
+file-id = 6794782
+filename = "giant_tree_stump-1.0.1-neoforge-1.21.1.jar"

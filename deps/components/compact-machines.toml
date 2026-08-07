@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "compact-machines"
+project-id = 224218
+file-id = 7621553
+filename = "compact-machines-224218-7621553.jar"

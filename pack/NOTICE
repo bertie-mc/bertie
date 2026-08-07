@@ -7,7 +7,7 @@ config/, the FTB Quests chapters and lang data, the CI workflows and the documen
 IT DOES NOT COVER THE MODS.
 
 This source tree contains **no mod jars**. Third-party pack dependencies are recorded as
-immutable provider coordinates in `gradle/minecraft-artifacts.toml`, while Bertie's own
+immutable provider coordinates in `deps/components/` and generated profile locks, while Bertie's own
 mods are Gradle project dependencies. Generated outputs download external artifacts from
 their declared providers and include the locally built Bertie mod JARs directly. Each mod
 remains under the licence its author chose. Those licences range from permissive to
@@ -27,6 +27,10 @@ BUILT ARTEFACTS
   archive's `overrides/` directory. That *is* redistribution. Check embedded external
   artifacts against their terms before publishing a release more widely than the GitHub
   Releases page.
+
+- The **CurseForge client ZIP** references CurseForge-hosted files by project and file ID.
+  Bertie's locally built JARs and non-CurseForge fallback files are embedded under
+  `overrides/`; the same redistribution warning applies to those external fallback files.
 
 BERTIE'S OWN MODS
 

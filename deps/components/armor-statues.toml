@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bbGCtEvb"
+version-id = "SGpwIu7v"
+filename = "ArmorStatues-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "armor-statues"
+project-id = 682566
+file-id = 5732769
+filename = "ArmorStatues-v21.1.0-1.21.1-NeoForge.jar"

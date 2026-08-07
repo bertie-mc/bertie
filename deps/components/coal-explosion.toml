@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "6pcjc08X"
+version-id = "rqB8YXCy"
+filename = "coalexplosion-neoforge-1.21.1-1.12.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "coal-explosion"
+project-id = 410164
+file-id = 7762176
+filename = "coalexplosion-neoforge-1.21.1-1.12.1.jar"

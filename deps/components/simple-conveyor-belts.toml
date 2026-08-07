@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "kNthsBTM"
+version-id = "JVTAtiHj"
+filename = "belts-neoforge-0.2.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "simple-conveyor-belts"
+project-id = 1292980
+file-id = 7195755
+filename = "belts-neoforge-0.2.2.jar"

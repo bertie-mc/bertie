@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "I94FeWYD"
+version-id = "UrjTQlC8"
+filename = "hazennstuff-1.4.0.13.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hazen-n-stuff"
+project-id = 1231627
+file-id = 8099442
+filename = "hazennstuff-1.4.0.13.jar"

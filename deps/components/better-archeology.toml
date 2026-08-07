@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "zCh7omyG"
+version-id = "rp4lPDKI"
+filename = "betterarcheology-neoforge-1.21.1-1.3.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "better-archeology"
+project-id = 835687
+file-id = 7756575
+filename = "betterarcheology-neoforge-1.21.1-1.3.4.jar"

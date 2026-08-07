@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "yHN0njMr"
+version-id = "La8SvoPm"
+filename = "ends_delight-2.6+neoforge.1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ends-delight"
+project-id = 662675
+file-id = 8175167
+filename = "ends_delight-2.6+neoforge.1.21.1.jar"

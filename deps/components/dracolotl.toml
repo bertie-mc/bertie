@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "s8dABaWE"
+version-id = "qtBEk2XT"
+filename = "dracolotl-1.0.3-neoforge-1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "dracolotl"
+project-id = 1111965
+file-id = 6991479
+filename = "dracolotl-1.0.3-neoforge-1.21.jar"

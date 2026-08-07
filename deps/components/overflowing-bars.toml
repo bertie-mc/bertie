@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "XD7XOrAF"
+version-id = "PYRrjTaY"
+filename = "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "overflowing-bars"
+project-id = 852662
+file-id = 5770623
+filename = "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar"

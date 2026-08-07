@@ -108,21 +108,35 @@ bertie-ci build --workspace . --component bertie-tiers \
 bertie-ci pack-validate --workspace . --component pack
 bertie-ci pack-export-client --workspace . --component pack \
   --output .bertie-ci/release/bertie.mrpack
+bertie-ci pack-export-curseforge --workspace . --component pack \
+  --output .bertie-ci/release/bertie-curseforge.zip
 bertie-ci pack-export-server --workspace . --component pack \
   --output .bertie-ci/release/bertie-server.zip
 ```
 
-Each pack command first runs the component's exact `generatePackwiz` Gradle task and
-then consumes `pack/build/packwiz`. Gradle reads the semantic
-[`minecraft-artifacts.toml`](../../gradle/minecraft-artifacts.toml), applies the global
-provider policies and artifact-side metadata, builds the owned project JARs, and generates
-one side-aware packwiz tree. Gradle does not execute packwiz. `bertie-ci` neither
-resolves dependencies nor selects physical sides; after generation it refreshes a
-temporary copy for validation, asks packwiz to create the Modrinth archive, or packages
-the generated projection with the server bootstrap scripts. Server export is the only
-operation that needs the pinned packwiz-installer JAR. Owned project JARs are already
-present in the generated tree, so exports do not download or compare separately
-published owned-mod releases.
+The client export commands run `generateMrpack` or `generateCurseForgePack` and copy the
+direct Gradle-generated archives.
+Validation and server export run `generatePackwiz` and consume the conversion tree under
+`pack/build/packwiz`; server export alone needs the pinned packwiz-installer JAR. Modrinth
+and packwiz use `release-modrinth`, while the CurseForge archive uses
+`release-curseforge`. Gradle does not write profile locks or invoke packwiz. Owned project
+JARs come from the same checkout rather than separately published releases.
+
+Dependency inputs are maintained by three non-Gradle commands:
+
+```bash
+bertie-ci deps-lock --workspace .
+bertie-ci deps-check --workspace .
+bertie-ci deps-audit --workspace .
+```
+
+The lock command reselects and prunes committed immutable evidence; the check command is
+read-only and validates every component/profile input and reference. The advisory audit
+is explicitly networked: it checks current Modrinth metadata and reports possible missing
+representations without changing manifests or making normal validation depend on a
+provider. Modrinth loader tags are only discovery hints; the audit inspects JAR
+descriptors when those tags omit the configured loader and reports contradictions as
+provider metadata discrepancies.
 
 ## GitHub Actions
 

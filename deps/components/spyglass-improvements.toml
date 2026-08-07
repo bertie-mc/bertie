@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Z6ykjRlM"
+version-id = "F2s6rUr5"
+filename = "spyglass_improvements-1.5.7+mc1.21+neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "spyglass-improvements"
+project-id = 571264
+file-id = 5634604
+filename = "spyglass_improvements-1.5.7+mc1.21+neoforge.jar"

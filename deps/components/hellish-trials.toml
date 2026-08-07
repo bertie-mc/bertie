@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Wws4qHxK"
+version-id = "1dy6PZgZ"
+filename = "HellishTrials-neoforge-1.0.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hellish-trials"
+project-id = 1414295
+file-id = 7445277
+filename = "HellishTrials-neoforge-1.0.5.jar"

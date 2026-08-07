@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import shutil
 import signal
 import subprocess
 import sys
@@ -9,8 +10,10 @@ from pathlib import Path
 
 from .artifact import find_artifact, stage_artifact
 from .config import load_java, load_packwiz, load_packwiz_installer, load_wayland_tools
+from .deps import check_locks, refresh_locks
+from .deps_audit import audit_modrinth
 from .gradle import run_gradle, task_path
-from .pack import export_client_pack, export_server_pack, validate_pack
+from .pack import export_server_pack, validate_pack
 from .process import TerminationRequested, unwind_on_sigterm
 from .wayland import wayland_session
 from .workspace import Component, Workspace, plan_json
@@ -61,6 +64,22 @@ def _parser() -> argparse.ArgumentParser:
     )
     subcommands = parser.add_subparsers(dest="command", required=True)
 
+    deps_lock = subcommands.add_parser(
+        "deps-lock", help="refresh committed Minecraft dependency profile locks"
+    )
+    deps_lock.add_argument("--workspace", type=Path, default=Path.cwd())
+
+    deps_check = subcommands.add_parser(
+        "deps-check", help="validate committed Minecraft dependency profile locks"
+    )
+    deps_check.add_argument("--workspace", type=Path, default=Path.cwd())
+
+    deps_audit = subcommands.add_parser(
+        "deps-audit",
+        help="report current provider metadata and possible missing distributions",
+    )
+    deps_audit.add_argument("--workspace", type=Path, default=Path.cwd())
+
     build = subcommands.add_parser("build", help="build and stage NeoForge mod JARs")
     _add_project(build, "mod checkout")
     _add_component_target(build, many=True, allow_all_mods=True)
@@ -108,6 +127,13 @@ def _parser() -> argparse.ArgumentParser:
     _add_project(pack_export_client, "Gradle pack project")
     _add_component_target(pack_export_client)
     pack_export_client.add_argument("--output", type=Path, required=True)
+
+    pack_export_curseforge = subcommands.add_parser(
+        "pack-export-curseforge", help="generate and export a CurseForge client pack"
+    )
+    _add_project(pack_export_curseforge, "Gradle pack project")
+    _add_component_target(pack_export_curseforge)
+    pack_export_curseforge.add_argument("--output", type=Path, required=True)
 
     pack_export_server = subcommands.add_parser(
         "pack-export-server",
@@ -230,9 +256,56 @@ def _run_pack_validate(args: argparse.Namespace) -> None:
 
 
 def _run_pack_export_client(args: argparse.Namespace) -> None:
-    generated, _, base = _generate_pack(args)
-    output = export_client_pack(generated, _under(base, args.output), load_packwiz())
-    print(f"Exported client pack: {output}", flush=True)
+    _copy_generated_client_pack(
+        args,
+        task_name="generateMrpack",
+        filename="bertie.mrpack",
+        format_name="Modrinth",
+    )
+
+
+def _run_pack_export_curseforge(args: argparse.Namespace) -> None:
+    _copy_generated_client_pack(
+        args,
+        task_name="generateCurseForgePack",
+        filename="bertie-curseforge.zip",
+        format_name="CurseForge",
+    )
+
+
+def _copy_generated_client_pack(
+    args: argparse.Namespace,
+    *,
+    task_name: str,
+    filename: str,
+    format_name: str,
+) -> None:
+    selected = _single_component(args, "pack")
+    if selected is None:
+        project = _project(args)
+        gradle_root = project
+        task = task_name
+        base = project
+    else:
+        workspace, component = selected
+        if component.gradle_project is None:
+            raise RuntimeError(
+                f"Pack component {component.subject!r} is not a Gradle project"
+            )
+        project = component.path
+        gradle_root = workspace.root
+        task = task_path(component.gradle_project, task_name)
+        base = workspace.root
+    run_gradle(gradle_root, load_java().parent.parent, [task])
+    generated = project / "build" / "distributions" / filename
+    if not generated.is_file():
+        raise RuntimeError(
+            f"Gradle did not generate the {format_name} pack at {generated}"
+        )
+    output = _under(base, args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(generated, output)
+    print(f"Exported {format_name} client pack: {output}", flush=True)
 
 
 def _run_pack_export_server(args: argparse.Namespace) -> None:
@@ -322,6 +395,41 @@ def _run_plan(args: argparse.Namespace) -> None:
     print(plan_json(workspace.plan(subjects)), flush=True)
 
 
+def _run_deps_lock(args: argparse.Namespace) -> None:
+    root = Workspace.find(args.workspace).root
+    refresh_locks(root)
+    errors = check_locks(root)
+    if errors:
+        raise RuntimeError(
+            "Dependency lock refresh produced invalid output:\n" + "\n".join(errors)
+        )
+    print(f"Refreshed dependency locks under {root / 'deps' / 'locks'}", flush=True)
+
+
+def _run_deps_check(args: argparse.Namespace) -> None:
+    root = Workspace.find(args.workspace).root
+    errors = check_locks(root)
+    if errors:
+        raise RuntimeError("Dependency lock validation failed:\n" + "\n".join(errors))
+    print(f"Dependency locks valid under {root / 'deps' / 'locks'}", flush=True)
+
+
+def _run_deps_audit(args: argparse.Namespace) -> None:
+    root = Workspace.find(args.workspace).root
+    audit = audit_modrinth(root)
+    print(
+        f"Audited {audit.distributions} Modrinth distributions across "
+        f"{audit.projects} projects.",
+        flush=True,
+    )
+    if audit.findings:
+        print("Advisory findings:", flush=True)
+        for finding in audit.findings:
+            print(f"- {finding}", flush=True)
+    else:
+        print("No Modrinth metadata or representation findings.", flush=True)
+
+
 def tolerate_unencodable_output() -> None:
     """Keep mirrored process output from failing on a narrow console encoding."""
     for stream in (sys.stdout, sys.stderr):
@@ -339,12 +447,20 @@ def main() -> None:
             match args.command:
                 case "build":
                     _run_build(args)
+                case "deps-lock":
+                    _run_deps_lock(args)
+                case "deps-check":
+                    _run_deps_check(args)
+                case "deps-audit":
+                    _run_deps_audit(args)
                 case "gradle-task":
                     _run_gradle_task(args)
                 case "pack-validate":
                     _run_pack_validate(args)
                 case "pack-export-client":
                     _run_pack_export_client(args)
+                case "pack-export-curseforge":
+                    _run_pack_export_curseforge(args)
                 case "pack-export-server":
                     _run_pack_export_server(args)
                 case "plan":

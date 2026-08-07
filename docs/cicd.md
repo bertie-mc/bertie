@@ -131,6 +131,8 @@ Keep mod versions in `mod.properties` and the pack version in `pack/pack.propert
 bertie-ci pack-validate --workspace . --component pack
 bertie-ci pack-export-client --workspace . --component pack \
   --output .bertie-ci/release/bertie.mrpack
+bertie-ci pack-export-curseforge --workspace . --component pack \
+  --output .bertie-ci/release/bertie-curseforge.zip
 bertie-ci pack-export-server --workspace . --component pack \
   --output .bertie-ci/release/bertie-server.zip
 ```

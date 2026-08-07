@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "S0xj5NHG"
+version-id = "5cRpZ5wv"
+filename = "useful_railroads-neoforge-1.21.1-1.6.0.61.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "useful-railroads"
+project-id = 306475
+file-id = 6556521
+filename = "useful_railroads-neoforge-1.21.1-1.6.0.61.jar"

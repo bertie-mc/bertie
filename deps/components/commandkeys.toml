@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "65UyswbY"
+version-id = "qLs63EFi"
+filename = "commandkeys-neoforge-2.4.0+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "commandkeys"
+project-id = 873388
+file-id = 7793147
+filename = "commandkeys-neoforge-2.4.0+1.21.1.jar"

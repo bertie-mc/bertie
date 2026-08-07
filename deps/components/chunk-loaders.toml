@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "t1VgucWo"
+version-id = "xC7Vc2qa"
+filename = "chunkloaders-1.2.8-neoforge-mc1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "chunk-loaders"
+project-id = 402924
+file-id = 5550217
+filename = "chunkloaders-1.2.8-neoforge-mc1.21.jar"

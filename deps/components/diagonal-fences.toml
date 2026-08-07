@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "IKARgflD"
+version-id = "bgR1e0O5"
+filename = "DiagonalFences-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "diagonal-fences"
+project-id = 458048
+file-id = 5918197
+filename = "DiagonalFences-v21.1.1-1.21.1-NeoForge.jar"

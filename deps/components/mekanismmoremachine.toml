@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "qDJXZJTz"
+version-id = "3EMTKSFL"
+filename = "mekmm-1.21.1-1.3.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanismmoremachine"
+project-id = 1275257
+file-id = 7919872
+filename = "mekmm-1.21.1-1.3.3.jar"

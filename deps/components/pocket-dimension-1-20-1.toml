@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bHr7Oesy"
+version-id = "CrhflvIg"
+filename = "pocket_dimension-2.9-neoforge-1.21.1.jar"

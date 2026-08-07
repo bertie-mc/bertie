@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "buvNMuzc"
+version-id = "Komx4VUy"
+filename = "deepwaters-25_5 neoforge 1_21_1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "deep-waters"
+project-id = 1204184
+file-id = 7329367
+filename = "deepwaters-25_5 neoforge 1_21_1.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "qRG5vR8U"
+version-id = "oBjuO3Ki"
+filename = "feur_extension_desert-1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "feur-extension-desert"
+project-id = 1117054
+file-id = 7232473
+filename = "feur_extension_desert-1.21.1-neoforge.jar"

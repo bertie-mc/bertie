@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "xv94TkTM"
+version-id = "FaNppCJJ"
+filename = "Controlling-neoforge-1.21.1-19.0.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "controlling"
+project-id = 250398
+file-id = 6368976
+filename = "Controlling-neoforge-1.21.1-19.0.5.jar"

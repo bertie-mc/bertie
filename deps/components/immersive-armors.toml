@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "eE2Db4YU"
+version-id = "B2YtQYCh"
+filename = "immersive_armors-1.7.6+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "immersive-armors"
+project-id = 580681
+file-id = 8076920
+filename = "immersive_armors-1.7.6+1.21.1-neoforge.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "gtX73iTU"
+version-id = "QtdkM9Oa"
+filename = "avaritia_delight-1.6.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "avaritias-delight"
+project-id = 1289374
+file-id = 8133384
+filename = "avaritia_delight-1.6.3.jar"

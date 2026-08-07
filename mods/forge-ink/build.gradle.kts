@@ -3,6 +3,8 @@ plugins {
 }
 
 dependencies {
-    compileOnly(mods.forbiddenArcanus)
-    compileOnly(mods.valhelsiaCore)
+    compileOnly(deps.forbiddenArcanus)
+    compileOnly(deps.valhelsiaCore)
+    runtimeOnly(deps.forbiddenArcanus)
+    runtimeOnly(deps.ironsSpellsNSpellbooks)
 }

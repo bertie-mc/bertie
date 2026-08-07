@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "5IIKsxiL"
+version-id = "m5je0Rop"
+filename = "ExtremeSoundMuffler-3.56_NeoForge-1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "extreme-sound-muffler"
+project-id = 363363
+file-id = 7895926
+filename = "ExtremeSoundMuffler-3.56_NeoForge-1.21.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mMTOWOaA"
+version-id = "KNtnADP6"
+filename = "zombieawareness-neoforge-1.21.0-1.13.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "zombie-awareness"
+project-id = 237754
+file-id = 5731744
+filename = "zombieawareness-neoforge-1.21.0-1.13.2.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "AANobbMI"
+version-id = "Pb3OXVqC"
+filename = "sodium-neoforge-0.6.13+mc1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "sodium"
+project-id = 394468
+file-id = 6382651
+filename = "sodium-neoforge-0.6.13+mc1.21.1.jar"

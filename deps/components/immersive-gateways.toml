@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "3hZmBMYA"
+version-id = "Et29a8lw"
+filename = "immersive_gateways-neoforge-0.0.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "immersive-gateways"
+project-id = 1307924
+file-id = 8089431
+filename = "immersive_gateways-neoforge-0.0.5.jar"

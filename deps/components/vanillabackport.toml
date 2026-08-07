@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "6xwxDTgf"
+version-id = "rUSWdBok"
+filename = "VanillaBackport-neoforge-1.21.1-1.1.7.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "vanillabackport"
+project-id = 417430
+file-id = 8229724
+filename = "VanillaBackport-neoforge-1.21.1-1.1.7.10.jar"

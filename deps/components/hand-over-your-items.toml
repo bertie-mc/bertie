@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Z9RMqaGu"
+version-id = "GIGoRmUe"
+filename = "handoveryouritems-1.21.1-3.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hand-over-your-items"
+project-id = 450270
+file-id = 8211979
+filename = "handoveryouritems-1.21.1-3.8.jar"

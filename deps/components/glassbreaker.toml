@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vY7Ka6pe"
+version-id = "2YPMqEiY"
+filename = "glassbreaker-2.0.0+1.21+neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "glassbreaker"
+project-id = 819494
+file-id = 5681247
+filename = "glassbreaker-2.0.0+1.21+neoforge.jar"

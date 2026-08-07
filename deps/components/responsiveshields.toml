@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "MBmh0f9A"
+version-id = "mNqXF51P"
+filename = "responsiveshields-2.4-neoforge-mc1.21.x.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "responsiveshields"
+project-id = 557556
+file-id = 5591264
+filename = "responsiveshields-2.4-neoforge-mc1.21.x.jar"

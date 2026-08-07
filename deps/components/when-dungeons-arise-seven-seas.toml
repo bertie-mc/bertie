@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "ZsrrjDbP"
+version-id = "erk04BGa"
+filename = "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "when-dungeons-arise-seven-seas"
+project-id = 953637
+file-id = 7142896
+filename = "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar"

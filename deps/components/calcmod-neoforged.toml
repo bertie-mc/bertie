@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7uxk5PIo"
+version-id = "M1zFfB1p"
+filename = "calcmod-neoforged-1.4.2+neoforge.1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "calcmod-neoforged"
+project-id = 1544803
+file-id = 8103104
+filename = "calcmod-neoforged-1.4.2+neoforge.1.21.1.jar"

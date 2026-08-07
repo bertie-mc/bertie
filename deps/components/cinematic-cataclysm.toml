@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1WAsDg6d"
+version-id = "ZHoI7B98"
+filename = "cinematiccataclysm-1.0.1-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cinematic-cataclysm"
+project-id = 1399324
+file-id = 7550281
+filename = "cinematiccataclysm-1.0.1-1.21.1.jar"

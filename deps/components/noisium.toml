@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "KuNKN7d2"
+version-id = "nJBE6tif"
+filename = "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "noisium"
+project-id = 930207
+file-id = 5650508
+filename = "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar"

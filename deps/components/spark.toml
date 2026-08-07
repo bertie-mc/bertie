@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "l6YH9Als"
+version-id = "v5qtqRQi"
+filename = "spark-1.10.124-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "spark"
+project-id = 361579
+file-id = 6225208
+filename = "spark-1.10.124-neoforge.jar"

@@ -4,7 +4,9 @@ plugins {
 }
 
 dependencies {
-    compileOnly(mods.ftbFilterSystem)
-    compileOnly(mods.architecturyApi)
-    compileOnly(mods.slagNEmbers)
+    compileOnly(deps.ftbFilterSystem)
+    compileOnly(deps.architecturyApi)
+    compileOnly(deps.slagNEmbers)
+    runtimeOnly(deps.ftbFilterSystem)
+    runtimeOnly(deps.architecturyApi)
 }

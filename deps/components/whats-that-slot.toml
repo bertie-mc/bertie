@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "7b5VoITI"
+version-id = "4ZgLLUNk"
+filename = "whats-that-slot-neoforge-1.3.6+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "whats-that-slot"
+project-id = 247895
+file-id = 5658694
+filename = "whats-that-slot-neoforge-1.3.6+1.21.jar"

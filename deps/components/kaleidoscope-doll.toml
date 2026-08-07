@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vQLjjxNs"
+version-id = "FV2DGV0P"
+filename = "kaleidoscopedoll-1.4.1-neoforge+mc1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "kaleidoscope-doll"
+project-id = 1233277
+file-id = 8196011
+filename = "kaleidoscopedoll-1.4.1-neoforge+mc1.21.1.jar"

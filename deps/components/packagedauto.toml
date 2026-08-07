@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ugIdhQx4"
+version-id = "ErYy5Im9"
+filename = "PackagedAuto-1.21.1-4.0.8.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "packagedauto"
+project-id = 308380
+file-id = 7329743
+filename = "PackagedAuto-1.21.1-4.0.8.21.jar"

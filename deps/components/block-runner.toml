@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1VSGxqkt"
+version-id = "Cb7KF5iF"
+filename = "BlockRunner-v21.1.2-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "block-runner"
+project-id = 442842
+file-id = 6215039
+filename = "BlockRunner-v21.1.2-1.21.1-NeoForge.jar"

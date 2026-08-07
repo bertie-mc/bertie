@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "jSV9w0J5"
+version-id = "9bEpNrvK"
+filename = "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "illager-invasion"
+project-id = 891324
+file-id = 6492670
+filename = "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar"

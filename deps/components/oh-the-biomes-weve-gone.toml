@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "NTi7d3Xc"
+version-id = "6cLkgRgD"
+filename = "Oh-The-Biomes-Weve-Gone-NeoForge-2.5.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "oh-the-biomes-weve-gone"
+project-id = 1070751
+file-id = 7745142
+filename = "Oh-The-Biomes-Weve-Gone-NeoForge-2.5.5.jar"

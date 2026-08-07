@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Lq6ojcWv"
+version-id = "TH9YXp9r"
+filename = "endermanoverhaul-neoforge-1.21.1-2.0.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "enderman-overhaul"
+project-id = 574409
+file-id = 7661859
+filename = "endermanoverhaul-neoforge-1.21.1-2.0.3.jar"

@@ -5,5 +5,5 @@ plugins {
 
 dependencies {
     // Sophisticated Backpacks integration is optional at runtime.
-    compileOnly(mods.sophisticatedCore)
+    compileOnly(deps.sophisticatedCore)
 }

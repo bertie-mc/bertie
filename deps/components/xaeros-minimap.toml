@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1bokaNcj"
+version-id = "CklXEjmp"
+filename = "xaerominimap-neoforge-1.21.1-25.3.13.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "xaeros-minimap"
+project-id = 263420
+file-id = 8046966
+filename = "xaerominimap-neoforge-1.21.1-25.3.13.jar"

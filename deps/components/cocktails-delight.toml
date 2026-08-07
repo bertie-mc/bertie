@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hzcliQdE"
+version-id = "HX9wHN0y"
+filename = "Cocktails-Delight-1.21.1-NeoForge-1.1.7.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cocktails-delight"
+project-id = 1198178
+file-id = 8106251
+filename = "Cocktails-Delight-1.21.1-NeoForge-1.1.7.jar"

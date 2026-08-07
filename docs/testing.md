@@ -61,8 +61,8 @@ Declare optional test dependencies in the matching test configuration:
 
 ```kotlin
 dependencies {
-    testImplementation(mods.exampleApi)
-    testRuntimeOnly(mods.exampleRuntime)
+    testImplementation(deps.exampleApi)
+    testRuntimeOnly(deps.exampleRuntime)
 }
 ```
 

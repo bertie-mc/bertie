@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "OFVYKsAk"
+version-id = "a6gl7srE"
+filename = "MekanismGenerators-1.21.1-10.7.19.85.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-generators"
+project-id = 268566
+file-id = 7904061
+filename = "MekanismGenerators-1.21.1-10.7.19.85.jar"

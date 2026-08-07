@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "oPdlqv8D"
+version-id = "ThNbTOeP"
+filename = "modular_machinery_reborn-1.21.1-3.0.17.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "modular-machinery-reborn"
+project-id = 1083840
+file-id = 8064444
+filename = "modular_machinery_reborn-1.21.1-3.0.17.jar"

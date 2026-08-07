@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "SZUNJJPJ"
+version-id = "Dcq65PMy"
+filename = "Wings Of Fire V1.0 - NeoForge 1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "wings-of-fire"
+project-id = 1419633
+file-id = 7413992
+filename = "Wings Of Fire V1.0 - NeoForge 1.21.1.jar"

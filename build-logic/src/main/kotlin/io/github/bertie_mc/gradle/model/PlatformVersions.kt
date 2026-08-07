@@ -1,6 +1,9 @@
 package io.github.bertie_mc.gradle.model
 
+import com.electronwill.nightconfig.toml.TomlParser
 import org.gradle.api.artifacts.VersionCatalog
+import java.io.File
+import java.io.StringReader
 
 /** Exact platform versions and the NeoForge metadata ranges derived from them. */
 data class PlatformVersions(
@@ -37,18 +40,34 @@ data class PlatformVersions(
         )
 }
 
-fun VersionCatalog.platformVersions(): PlatformVersions =
-    PlatformVersions(
-        minecraft = requiredVersion("minecraft"),
-        neoForge = requiredVersion("neoforge"),
-        javaFmlLoader = requiredVersion("javafml-loader"),
+fun loadPlatformVersions(
+    rootDirectory: File,
+    libraries: VersionCatalog,
+): PlatformVersions {
+    val path = rootDirectory.resolve("deps/platform.toml")
+    require(path.isFile) { "Minecraft platform manifest not found: ${path.absolutePath}" }
+    val root = TomlParser().parse(StringReader(path.readText()))
+    val loader = root.get<Any?>("loader") as? String
+    require(loader == "neoforge") { "Minecraft loader must be 'neoforge', got '$loader'" }
+    return PlatformVersions(
+        minecraft = root.requiredPlatformString("minecraft", path),
+        neoForge = root.requiredPlatformString("loader-version", path),
+        javaFmlLoader = libraries.requiredVersion("javafml-loader"),
     )
+}
 
-private fun VersionCatalog.requiredVersion(name: String): String =
+internal fun VersionCatalog.requiredVersion(name: String): String =
     findVersion(name)
         .orElseThrow {
             IllegalStateException("Version '$name' is missing from the root version catalog")
         }.requiredVersion
+
+private fun com.electronwill.nightconfig.core.UnmodifiableConfig.requiredPlatformString(
+    name: String,
+    path: File,
+): String =
+    (get<Any?>(name) as? String)?.takeIf(String::isNotBlank)
+        ?: error("Minecraft platform field '$name' must be a non-empty string in ${path.absolutePath}")
 
 private fun numericVersion(
     label: String,

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "zhpyD8Y0"
+version-id = "naW264bf"
+filename = "simplymore-neoforge-1.2.2+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "simplymore"
+project-id = 1095252
+file-id = 7726482
+filename = "simplymore-neoforge-1.2.2+1.21.1.jar"

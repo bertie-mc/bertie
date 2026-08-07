@@ -1,67 +1,70 @@
 package io.github.bertie_mc.gradle.conventions
 
+import io.github.bertie_mc.gradle.model.CurseForgeArtifactSource
+import io.github.bertie_mc.gradle.model.MinecraftArtifact
+import io.github.bertie_mc.gradle.model.MinecraftArtifactKind
 import io.github.bertie_mc.gradle.model.MinecraftArtifactManifest
 import io.github.bertie_mc.gradle.model.MinecraftArtifactSide
-import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
+import io.github.bertie_mc.gradle.model.MinecraftComponent
+import io.github.bertie_mc.gradle.model.MinecraftComponentSelection
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class MinecraftRuntimeSidesTest {
     @Test
-    fun `client runtime excludes only server modules`() {
-        val manifest = manifest()
-
+    fun `client projection excludes server-only locked modules`() {
         assertEquals(
-            setOf(MinecraftModule("example.server", "server-only")),
-            manifest.modulesExcludedFrom(MinecraftArtifactSide.CLIENT),
+            setOf(MinecraftModule("curse.maven", "server-2")),
+            manifest().modulesExcludedFrom(MinecraftArtifactSide.CLIENT),
         )
     }
 
     @Test
-    fun `server runtime excludes only client modules`() {
-        val manifest = manifest()
-
+    fun `server projection excludes client-only locked modules`() {
         assertEquals(
-            setOf(MinecraftModule("example.client", "client-only")),
-            manifest.modulesExcludedFrom(MinecraftArtifactSide.SERVER),
+            setOf(MinecraftModule("curse.maven", "client-1")),
+            manifest().modulesExcludedFrom(MinecraftArtifactSide.SERVER),
         )
     }
 
-    @Test
-    fun `projection uses the Gradle provider coordinate`() {
-        val manifest =
-            parseMinecraftArtifacts(
-                """
-                [mods.client-only]
-                side = "client"
-                maven = { module = "example.maven:client-only", version = "1" }
-                modrinth = { project-id = "modrinth-id", version-id = "version-id", filename = "client-only.jar" }
-                """.trimIndent(),
-            )
-
-        assertEquals(
-            setOf(MinecraftModule("example.maven", "client-only")),
-            manifest.modulesExcludedFrom(MinecraftArtifactSide.SERVER),
+    private fun manifest(): MinecraftArtifactManifest {
+        val artifacts =
+            listOf(
+                artifact("client", 1, MinecraftArtifactSide.CLIENT),
+                artifact("server", 2, MinecraftArtifactSide.SERVER),
+                artifact("both", 3, MinecraftArtifactSide.BOTH),
+            ).associateBy(MinecraftArtifact::identity)
+        return MinecraftArtifactManifest(
+            profile = "development",
+            inputHash = "fixture",
+            components =
+                artifacts.values.associate { artifact ->
+                    artifact.id to MinecraftComponent(artifact.id)
+                },
+            selections =
+                artifacts.values.associate { artifact ->
+                    artifact.id to MinecraftComponentSelection(artifact.identity, artifact.identity)
+                },
+            artifacts = artifacts,
         )
     }
 
-    private fun manifest(): MinecraftArtifactManifest =
-        parseMinecraftArtifacts(
-            """
-            [mods.shared]
-            maven = { module = "example.shared:shared", version = "1" }
-
-            [mods.client-only]
-            side = "client"
-            maven = { module = "example.client:client-only", version = "1" }
-
-            [mods.server-only]
-            side = "server"
-            maven = { module = "example.server:server-only", version = "1" }
-
-            [datapacks.server-standalone-pack]
-            side = "server"
-            modrinth = { project-id = "server-standalone-pack", version-id = "1", filename = "server-standalone-pack.zip" }
-            """.trimIndent(),
+    private fun artifact(
+        id: String,
+        projectId: Long,
+        side: MinecraftArtifactSide,
+    ): MinecraftArtifact =
+        MinecraftArtifact(
+            identity = "curseforge:$projectId:$projectId",
+            id = id,
+            component = id,
+            kind = MinecraftArtifactKind.MOD,
+            side = side,
+            source = CurseForgeArtifactSource(id, projectId, projectId),
+            filename = "$id.jar",
+            provides = listOf(id),
+            bundledProvides = emptyList(),
+            required = emptyList(),
+            optional = emptyList(),
         )
 }

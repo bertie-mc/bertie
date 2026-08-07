@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Adega8YN"
+version-id = "nnQq1ivl"
+filename = "dummmmmmy-1.21-2.0.12-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mmmmmmmmmmmm"
+project-id = 225738
+file-id = 7943676
+filename = "dummmmmmy-1.21-2.0.12-neoforge.jar"

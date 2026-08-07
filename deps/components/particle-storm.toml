@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "particle-storm"
+project-id = 1124172
+file-id = 8154439
+filename = "particle-storm-1124172-8154439.jar"

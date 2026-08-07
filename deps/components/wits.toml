@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "AVo2esap"
+version-id = "pNHwZjEV"
+filename = "wits-1.3.0+1.21-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "wits"
+project-id = 909375
+file-id = 5426237
+filename = "wits-1.3.0+1.21-neoforge.jar"

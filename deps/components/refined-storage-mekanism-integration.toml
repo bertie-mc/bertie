@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "QHMDf0Sd"
+version-id = "m5pFB06e"
+filename = "refinedstorage-mekanism-integration-1.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "refined-storage-mekanism-integration"
+project-id = 1230504
+file-id = 7163500
+filename = "refinedstorage-mekanism-integration-1.1.1.jar"

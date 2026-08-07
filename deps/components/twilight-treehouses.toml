@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "lkU3QIjf"
+version-id = "AYZoDZat"
+filename = "TwilightTreehouses-1.0.2-1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "twilight-treehouses"
+project-id = 1227052
+file-id = 6341110
+filename = "TwilightTreehouses-1.0.2-1.21.1-neoforge.jar"

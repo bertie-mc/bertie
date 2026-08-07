@@ -1,0 +1,16 @@
+# Compile-time API for bertie-emi's optional L2 integration; selected L2 mods provide it at runtime.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "4Vh3BQ3F"
+version-id = "640EOvKh"
+filename = "l2library-3.0.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "l2library"
+project-id = 620203
+file-id = 7584599
+filename = "l2library-3.0.8.jar"

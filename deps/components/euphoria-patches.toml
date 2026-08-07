@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "4H6sumDB"
+version-id = "9Q9EA4jQ"
+filename = "EuphoriaPatcher-1.9.3-r5.8.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "euphoria-patches"
+project-id = 915902
+file-id = 8177588
+filename = "EuphoriaPatcher-1.9.3-r5.8.1-neoforge.jar"

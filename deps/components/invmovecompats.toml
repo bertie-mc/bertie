@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "6IpcGP7T"
+version-id = "GjTuFGdp"
+filename = "InvMoveCompats-0.5.0+1.21.8-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "invmovecompats"
+project-id = 581875
+file-id = 7219799
+filename = "InvMoveCompats-0.5.0+1.21.8-NeoForge.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "AMCbgyVw"
+version-id = "dFBz1Le7"
+filename = "tipsmod-neoforge-1.21.1-21.1.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "tips"
+project-id = 306549
+file-id = 7126358
+filename = "tipsmod-neoforge-1.21.1-21.1.3.jar"

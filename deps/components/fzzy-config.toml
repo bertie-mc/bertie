@@ -1,0 +1,32 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hYykXjDp"
+version-id = "MAPG6cXE"
+filename = "fzzy_config-0.7.6+1.21+neoforge.jar"
+
+[distributions.modrinth-mod.dependency-corrections.kotlin-for-forge-is-required]
+# The archive requires Kotlin for Forge but inherited evidence classified it as bundled.
+action = "require"
+mod-id = "kotlinforforge"
+component = "kotlin-for-forge"
+version-range = "[5.3.0,)"
+side = "both"
+applies-to = "modrinth:hYykXjDp:MAPG6cXE"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "fzzy-config"
+project-id = 1005914
+file-id = 7568897
+filename = "fzzy_config-0.7.6+1.21+neoforge.jar"
+
+[distributions.curseforge-mod.dependency-corrections.kotlin-for-forge-is-required]
+# The archive requires Kotlin for Forge but inherited evidence classified it as bundled.
+action = "require"
+mod-id = "kotlinforforge"
+component = "kotlin-for-forge"
+version-range = "[5.3.0,)"
+side = "both"
+applies-to = "curseforge:1005914:7568897"

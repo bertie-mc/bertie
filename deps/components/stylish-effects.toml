@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "onDuQF5e"
+version-id = "qaONmJ9G"
+filename = "StylishEffects-v21.1.2-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "stylish-effects"
+project-id = 543661
+file-id = 7239283
+filename = "StylishEffects-v21.1.2-1.21.1-NeoForge.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "qPfNr476"
+version-id = "aFluEQDH"
+filename = "neoforge-dungeonsdelight-1.21.1-1.5.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "dungeons-delight"
+project-id = 1258923
+file-id = 8041434
+filename = "neoforge-dungeonsdelight-1.21.1-1.5.0.jar"

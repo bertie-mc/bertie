@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Xg35A4rS"
+version-id = "BVOSHJwc"
+filename = "CraftTweaker-neoforge-1.21.1-21.0.38.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "crafttweaker"
+project-id = 239197
+file-id = 7772819
+filename = "CraftTweaker-neoforge-1.21.1-21.0.38.jar"

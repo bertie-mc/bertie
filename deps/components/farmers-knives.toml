@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "uc3VdfLM"
+version-id = "zEYCrbJz"
+filename = "farmersknives-neoforge-1.21.1-4.2.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "farmers-knives"
+project-id = 628972
+file-id = 7933578
+filename = "farmersknives-neoforge-1.21.1-4.2.0.jar"

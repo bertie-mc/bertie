@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "ynxotL0Y"
+version-id = "AJtKB7Bj"
+filename = "alexs-mobs-extra-music-1.1.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "alexs-mobs-extra-music"
+project-id = 500532
+file-id = 7771969
+filename = "alexs-mobs-extra-music-1.1.0.jar"

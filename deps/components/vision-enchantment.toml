@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "N80xH1o5"
+version-id = "LuygpCRn"
+filename = "vision-enchantment-v1.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "N80xH1o5"
+version-id = "zVFNq3oY"
+filename = "Vision Enchantment v1.0.0 [1.21-1.21.6].zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "vision-enchantment"
+project-id = 1268078
+file-id = 6684338
+filename = "vision-enchantment-v1.0.0.jar"

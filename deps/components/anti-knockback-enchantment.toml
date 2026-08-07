@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "jEBwcptt"
+version-id = "hdAhP4ok"
+filename = "anti-knockback-enchantment-v1.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "jEBwcptt"
+version-id = "VsfPmdTG"
+filename = "Anti Knockback Enchantment v1.0.0 [1.21-1.21.1].zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "anti-knockback-enchantment"
+project-id = 1311194
+file-id = 6794882
+filename = "anti-knockback-enchantment-v1.0.0.jar"

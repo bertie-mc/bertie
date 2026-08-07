@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Tlo2tahX"
+version-id = "otODJ5cv"
+filename = "ExtraDisks-1.21.1-4.0.15.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "extra-disks"
+project-id = 351491
+file-id = 8031115
+filename = "ExtraDisks-1.21.1-4.0.15.jar"

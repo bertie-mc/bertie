@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "a6F3uASn"
+version-id = "6mkdykZa"
+filename = "MekanismAdditions-1.21.1-10.7.19.85.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-additions"
+project-id = 345425
+file-id = 7904060
+filename = "MekanismAdditions-1.21.1-10.7.19.85.jar"

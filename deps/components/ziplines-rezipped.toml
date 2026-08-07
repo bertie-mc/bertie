@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "C1MoWQlb"
+version-id = "emIYdkrI"
+filename = "zipline-neoforge-1.21.1-1.2.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ziplines-rezipped"
+project-id = 1454717
+file-id = 8223467
+filename = "zipline-neoforge-1.21.1-1.2.2.jar"

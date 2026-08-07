@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mO6KzcvH"
+version-id = "J6h1bEpa"
+filename = "fishingoverhaul-1.21.1-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "fishingoverhaul"
+project-id = 491332
+file-id = 6297564
+filename = "fishingoverhaul-1.21.1-1.2.1.jar"

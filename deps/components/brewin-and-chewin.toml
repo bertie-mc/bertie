@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hIu9KJTT"
+version-id = "CKLYp96Y"
+filename = "BrewinAndChewin-neoforge-4.4.2+1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "brewin-and-chewin"
+project-id = 637808
+file-id = 7523542
+filename = "BrewinAndChewin-neoforge-4.4.2+1.21.1.jar"

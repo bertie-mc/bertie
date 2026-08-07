@@ -1,0 +1,600 @@
+# Embedded external files are audited, but unknown or denied redistribution is not
+# release-blocking yet.
+
+strict = false
+
+[evidence.modrinth-mit]
+allowed = true
+text = """
+The listed Modrinth projects declare the MIT license. It permits redistribution
+provided its copyright and permission notices are retained.
+https://opensource.org/license/mit
+"""
+
+[evidence.modrinth-apache-2]
+allowed = true
+text = """
+The listed Modrinth projects declare Apache-2.0. It permits redistribution subject to
+its license and NOTICE requirements.
+https://www.apache.org/licenses/LICENSE-2.0
+"""
+
+[evidence.modrinth-bsd-3]
+allowed = true
+text = """
+Sparkles declares BSD-3-Clause on Modrinth. It permits redistribution provided its
+copyright, license conditions, and disclaimer are retained.
+https://opensource.org/license/bsd-3-clause
+"""
+
+[evidence.modrinth-gpl-3]
+allowed = true
+text = """
+The listed Modrinth projects declare GPL-3.0-only. It permits redistribution subject to
+the GPL's notice, license, and corresponding-source requirements.
+https://www.gnu.org/licenses/gpl-3.0.html
+"""
+
+[evidence.modrinth-lgpl-2-1]
+allowed = true
+text = """
+The listed Modrinth projects declare LGPL-2.1-only. It permits redistribution subject
+to the LGPL's notice, license, and source requirements.
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+"""
+
+[evidence.modrinth-lgpl-3]
+allowed = true
+text = """
+The listed Modrinth projects declare LGPL-3.0-only. It permits redistribution subject
+to the LGPL's notice, license, and source requirements.
+https://www.gnu.org/licenses/lgpl-3.0.html
+"""
+
+[evidence.modrinth-lgpl-3-or-later]
+allowed = true
+text = """
+The listed Modrinth projects declare LGPL-3.0-or-later. It permits redistribution
+subject to the LGPL's notice, license, and source requirements.
+https://www.gnu.org/licenses/lgpl-3.0.html
+"""
+
+[evidence.guideme-lgpl-3]
+allowed = true
+text = """
+GuideME's repository declares LGPL-3.0 for the project. It permits redistribution
+subject to the LGPL's notice, license, and source requirements.
+https://github.com/AppliedEnergistics/GuideME/blob/main/LICENSE.md
+"""
+
+[evidence.modrinth-mpl-2]
+allowed = true
+text = """
+The listed Modrinth projects declare MPL-2.0. It permits redistribution subject to the
+MPL's notice, license, and source requirements for covered files.
+https://www.mozilla.org/MPL/2.0/
+"""
+
+[evidence.modrinth-unlicense]
+allowed = true
+text = """
+MonoLib declares the Unlicense on Modrinth, granting unrestricted copying and distribution.
+https://unlicense.org/
+"""
+
+[evidence.modrinth-cc-by]
+allowed = true
+text = """
+Exclusions Lib declares CC-BY-4.0 on Modrinth. It permits redistribution with
+attribution and a license link.
+https://creativecommons.org/licenses/by/4.0/
+"""
+
+[evidence.modrinth-cc-by-nc-nd]
+allowed = true
+text = """
+Prism declares CC-BY-NC-ND-4.0 on Modrinth. It permits unmodified, noncommercial
+redistribution with attribution and a license link.
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+"""
+
+[evidence.modrinth-cc-by-nc-sa-3]
+allowed = true
+text = """
+Zeta declares CC-BY-NC-SA-3.0 on Modrinth. It permits noncommercial redistribution with
+attribution, a license link, and ShareAlike compliance.
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+"""
+
+[evidence.modrinth-cc-by-nc-sa-4]
+allowed = true
+text = """
+The listed Modrinth projects declare CC-BY-NC-SA-4.0. It permits noncommercial
+redistribution with attribution, a license link, and ShareAlike compliance.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+"""
+
+[evidence.modonomicon-mixed-open-licenses]
+allowed = true
+text = """
+Modonomicon declares MIT for code and CC-BY-4.0 for assets. Both permit redistribution
+when their respective notice and attribution conditions are met.
+https://github.com/klikli-dev/modonomicon#licensing
+"""
+
+[evidence.azurune-modpack-permission]
+allowed = true
+text = """
+The AZURUNE license grants modpack inclusion when the unmodified copy comes from the
+author's Modrinth or CurseForge project and the required notice is included.
+https://github.com/Yirmiri/Yirmiri/blob/main/AZURUNE-LICENSE.md
+"""
+
+[evidence.obscuria-platform-modpack-permission]
+allowed = true
+text = """
+The Obscuria Ecosystem license permits unmodified inclusion in modpacks distributed
+through Modrinth, CurseForge, or similar mod platforms.
+https://obscurialithium.github.io/license/
+"""
+
+[evidence.polyform-shield]
+allowed = true
+text = """
+HazentouveLib declares PolyForm Shield 1.0.0. It permits noncompeting redistribution
+provided the license notice is included.
+https://polyformproject.org/licenses/shield/1.0.0/
+"""
+
+[evidence.xaero-modpack-permission]
+allowed = true
+text = """
+Xaero's World Map explicitly permits modpack inclusion, with distribution and
+monetization conditions documented on its project page. This output remains within the
+CurseForge ecosystem.
+https://modrinth.com/mod/xaeros-world-map
+"""
+
+[evidence.hammerlib-modpack-permission]
+allowed = true
+text = """
+HammerLib's project page explicitly permits use in modpacks and separately prohibits
+unrelated reposts without permission and an official download link.
+https://modrinth.com/mod/hammer-lib
+"""
+
+[evidence.collective-platform-modpack-permission]
+allowed = true
+text = """
+Collective's project page permits modpack use while the download remains hosted within
+the CurseForge or Modrinth ecosystem. This artifact is embedded only in the CurseForge
+release profile.
+https://modrinth.com/mod/collective
+"""
+
+[evidence.general-modpack-permission]
+allowed = true
+text = """
+The CoroUtil and SuperMartijn642's Core Lib project pages explicitly permit use in
+modpacks.
+https://modrinth.com/mod/coroutil
+https://modrinth.com/mod/supermartijn642s-core-lib
+"""
+
+[evidence.curseforge-gpl-3]
+allowed = true
+text = """
+AlfinoLib declares GPLv3 on its CurseForge project page. It permits redistribution
+subject to the GPL's notice, license, and corresponding-source requirements.
+https://www.curseforge.com/minecraft/mc-mods/alfinolib
+"""
+
+[evidence.curseforge-mit]
+allowed = true
+text = """
+Compact Machines and Inventory Management Deluxe declare MIT on their CurseForge
+project pages. It permits redistribution provided its copyright and permission notices
+are retained.
+https://www.curseforge.com/minecraft/mc-mods/compact-machines
+https://www.curseforge.com/minecraft/mc-mods/inventory-management-deluxe
+"""
+
+[evidence.curseforge-lgpl-3]
+allowed = true
+text = """
+Particle Storm declares LGPLv3 on its CurseForge project page. It permits redistribution
+subject to the LGPL's notice, license, and source requirements.
+https://www.curseforge.com/minecraft/mc-mods/particle-storm
+"""
+
+[evidence.apotheosis-irons-compat-open-licenses]
+allowed = true
+text = """
+The Apotheosis x Iron's Spellbooks compatibility project's source repository licenses
+code under MIT and assets and documentation under CC-BY-4.0. Both permit redistribution
+when their notice and attribution conditions are met.
+https://github.com/muon-rw/Apotheosis-Irons-Spells
+"""
+
+[evidence.ftb-curseforge-only]
+allowed = false
+text = """
+FTB reserves redistribution rights and states that CurseForge is the only authorized
+distributor of FTB mods and modpacks containing them. Native CurseForge manifest
+references are allowed; embedding these JARs in a Modrinth pack is not.
+https://feed-the-beast.com/raw/docs/mod-license
+https://www.feed-the-beast.com/policies/modpacks-mods-policy
+"""
+
+[evidence.crystal-nest-direct-packaging-prohibited]
+allowed = false
+text = """
+The Crystal Nest Community License permits external references but prohibits directly
+packaging or publicly redistributing the files.
+https://github.com/Crystal-Nest/.github/blob/main/LICENSE
+"""
+
+[evidence.balm-rehosting-prohibited]
+allowed = false
+text = """
+Twelve Iterations permits Balm in modpacks but explicitly prohibits publicly reuploading
+or rehosting the mod file. A native provider reference would be allowed; embedding the
+JAR is not.
+https://mods.twelveiterations.com/permissions
+"""
+
+[evidence.moonlight-direct-packaging-prohibited]
+allowed = false
+text = """
+Moonlight's license permits modpack use only when the file is obtained from an official
+source and is not directly bundled, and prohibits public redistribution without written
+permission.
+https://github.com/MehVahdJukaar/Moonlight/blob/1.20/license.md
+"""
+
+[evidence.sirgrantd-direct-packaging-prohibited]
+allowed = false
+text = """
+The SirGrantd license permits modpack use only for unmodified official copies that are
+not directly bundled.
+https://github.com/SirGrantd/MagicCoins/blob/main/LICENSE.md
+"""
+
+[evidence.timefall-manifest-only]
+allowed = false
+text = """
+The Timefall Development License permits modpack inclusion only through a manifest that
+downloads from the official project page; direct integration requires written
+permission.
+https://github.com/Sweenus/simplytooltips/blob/master/LICENSE.txt
+"""
+
+[exports.modrinth.artifacts."curseforge:1554698:8196186"]
+name = "alfinolib"
+evidence = ["curseforge-gpl-3"]
+
+[exports.modrinth.artifacts."curseforge:1244863:8048938"]
+name = "apotheosis-x-irons-spellbooks-compat"
+component = "apotheosis-x-irons-spellbooks-compat"
+evidence = ["apotheosis-irons-compat-open-licenses"]
+
+[exports.modrinth.artifacts."curseforge:224218:7621553"]
+name = "compact-machines"
+component = "compact-machines"
+evidence = ["curseforge-mit"]
+
+[exports.modrinth.artifacts."curseforge:943925:7429011"]
+name = "ftb-filter-system"
+component = "ftb-filter-system"
+evidence = ["ftb-curseforge-only"]
+
+[exports.modrinth.artifacts."curseforge:404465:8226923"]
+name = "ftb-library-forge"
+evidence = ["ftb-curseforge-only"]
+
+[exports.modrinth.artifacts."curseforge:289412:8216578"]
+name = "ftb-quests-forge"
+component = "ftb-quests-forge"
+evidence = ["ftb-curseforge-only"]
+
+[exports.modrinth.artifacts."curseforge:404468:7878281"]
+name = "ftb-teams-forge"
+evidence = ["ftb-curseforge-only"]
+
+[exports.modrinth.artifacts."curseforge:889915:7715134"]
+name = "ftb-xmod-compat"
+component = "ftb-xmod-compat"
+evidence = ["ftb-curseforge-only"]
+
+[exports.modrinth.artifacts."curseforge:1293085:8083722"]
+name = "inventory-management-deluxe"
+component = "inventory-management-deluxe"
+evidence = ["curseforge-mit"]
+
+[exports.modrinth.artifacts."curseforge:1124172:8154439"]
+name = "particle-storm"
+component = "particle-storm"
+evidence = ["curseforge-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:jtmvUHXj:Fb55Fgjz"]
+name = "accessories"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:7Jy4rK9m:zSD21doG"]
+name = "aces-spell-utils"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:DGaH8Rh0:Z0nG7STl"]
+name = "apothic-attributes"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:b1ZV3DIJ:dJgL278E"]
+name = "athena-ctm"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:lOOpEntO:TyNITLDY"]
+name = "attributefix"
+evidence = ["modrinth-lgpl-2-1"]
+
+[exports.curseforge.artifacts."modrinth:7zlUOZvb:4GgJN1LU"]
+name = "azurelib"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:MBAkmtvl:3XiinKbh"]
+name = "balm"
+evidence = ["balm-rehosting-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:7bdKEtKC:OaVg9Swk"]
+name = "bclib-neoforge"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:uy4Cnpcm:1sdJl7J1"]
+name = "bookshelf-lib"
+evidence = ["modrinth-lgpl-2-1"]
+
+[exports.curseforge.artifacts."modrinth:40FYwb4z:KsfI4QsR"]
+name = "caelus"
+evidence = ["modrinth-lgpl-3-or-later"]
+
+[exports.curseforge.artifacts."modrinth:XjY0RcQj:mIylVpkN"]
+name = "citadel-1-21-1-port"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:dQcfqGbl:c10AZba0"]
+name = "cobweb"
+evidence = ["crystal-nest-direct-packaging-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:e0M1UDsY:IocRsdQH"]
+name = "collective"
+evidence = ["collective-platform-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:ziOp6EO8:nqrTa84r"]
+name = "corgilib"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:rLLJ1OZM:H2YXCYUY"]
+name = "coroutil"
+evidence = ["general-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:2Ct0NAxj:btze5IVe"]
+name = "databank"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:WQaxNzFg:SW2WCTYz"]
+name = "deimos"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:rmDY6fYt:wCR4QGbG"]
+name = "delight-lib"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:6FtRfnLg:Zj604q5O"]
+name = "do-a-barrel-roll"
+evidence = ["modrinth-gpl-3"]
+
+[exports.curseforge.artifacts."modrinth:705gWllI:S6Q6duUj"]
+name = "emiffect"
+component = "emiffect"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:OqRYBfuW:4g8ImxvH"]
+name = "exclusions-lib"
+evidence = ["modrinth-cc-by"]
+
+[exports.curseforge.artifacts."modrinth:SglcIh0L:xrg5MjEA"]
+name = "experiencelib"
+evidence = ["modrinth-gpl-3"]
+
+[exports.curseforge.artifacts."modrinth:49C5QgTK:CUGxFf8Z"]
+name = "fragmentum"
+evidence = ["obscuria-platform-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:Ck4E7v7R:bFr2FBaJ"]
+name = "guideme"
+evidence = ["guideme-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:PlkSuVtM:9fbv71EY"]
+name = "hammer-lib"
+evidence = ["hammerlib-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:nZaIUw7C:TN2jtJDF"]
+name = "hazentouvelib"
+evidence = ["polyform-shield"]
+
+[exports.curseforge.artifacts."modrinth:REfW2AEX:C7ePwvWW"]
+name = "invmove"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:w0xJ0EWR:7Hx5sN6S"]
+name = "items-nbt-viewer"
+component = "items-nbt-viewer"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:nvQzSEkH:yd8FKCmx"]
+name = "jade"
+evidence = ["modrinth-cc-by-nc-sa-4"]
+
+[exports.curseforge.artifacts."modrinth:XbiLGMMU:Jpcw76rq"]
+name = "jupiter"
+evidence = ["modrinth-lgpl-3-or-later"]
+
+[exports.curseforge.artifacts."modrinth:ufdDoWPd:Zr2eBMyy"]
+name = "kiwi"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:SKI34J7B:CgDQ0u0Q"]
+name = "mafglib"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:Ce6I4WUE:5KzzycBT"]
+name = "mekanism"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:692GClaE:Uw0AZJKz"]
+name = "modonomicon"
+evidence = ["modonomicon-mixed-open-licenses"]
+
+[exports.curseforge.artifacts."modrinth:gtGDlsAD:TOZNxPlx"]
+name = "modular-golems"
+evidence = ["modrinth-lgpl-2-1"]
+
+[exports.curseforge.artifacts."modrinth:9leXt4A5:Es84N2XL"]
+name = "monolib"
+evidence = ["modrinth-unlicense"]
+
+[exports.curseforge.artifacts."modrinth:twkfQtEc:er7S98Q1"]
+name = "moonlight"
+evidence = ["moonlight-direct-packaging-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:P1Kv5EAO:4iO8Tbfj"]
+name = "necronomicon"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:AyzF4cmc:vGs5rSd0"]
+name = "optitritium"
+component = "optitritium"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:tCkE8p2N:kb8pGRQR"]
+name = "placebo"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:i6fiqm5y:v7P0nBi2"]
+name = "platform"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:gedNE4y2:HJZB6bmA"]
+name = "playeranimator"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:bHr7Oesy:CrhflvIg"]
+name = "pocket-dimension-1-20-1"
+component = "pocket-dimension-1-20-1"
+evidence = ["modrinth-apache-2"]
+
+[exports.curseforge.artifacts."modrinth:J9pKOkxP:EEjnSxLK"]
+name = "potentials"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:aaRl8GiW:EE1FHDyD"]
+name = "prickle"
+evidence = ["modrinth-lgpl-2-1"]
+
+[exports.curseforge.artifacts."modrinth:1OE8wbN0:kMcz2lDj"]
+name = "prism-lib"
+evidence = ["modrinth-cc-by-nc-nd"]
+
+[exports.curseforge.artifacts."modrinth:7Z7a9JyH:sGtURzAz"]
+name = "prometheus-api"
+evidence = ["crystal-nest-direct-packaging-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:QAGBst4M:PRF4qcdp"]
+name = "puzzles-lib"
+evidence = ["modrinth-mpl-2"]
+
+[exports.curseforge.artifacts."modrinth:G1hIVOrD:x99nCLTm"]
+name = "resourceful-lib"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:mk0Htq87:tk5EQpUG"]
+name = "runiclib"
+evidence = ["azurune-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:fuuu3xnx:iEE85X0w"]
+name = "searchables"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:pZEK2gvF:Rclw6KAf"]
+name = "sg-economy-api"
+evidence = ["sirgrantd-direct-packaging-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:6avVoBVB:Ic73EcJ6"]
+name = "simply-tooltips"
+evidence = ["timefall-manifest-only"]
+
+[exports.curseforge.artifacts."modrinth:d6MhxwRo:j16Kori6"]
+name = "soul-fire-d"
+evidence = ["crystal-nest-direct-packaging-prohibited"]
+
+[exports.curseforge.artifacts."modrinth:HfNmMQ9E:vpqshSqq"]
+name = "sparkles"
+component = "sparkles"
+evidence = ["modrinth-bsd-3"]
+
+[exports.curseforge.artifacts."modrinth:gJ5LPGfO:HbYYFasr"]
+name = "stellar-view-mixin-renderer"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:Iairjv0A:QD13LaRR"]
+name = "stellarview"
+evidence = ["modrinth-cc-by-nc-sa-4"]
+
+[exports.curseforge.artifacts."modrinth:rOUBggPv:hcYSe7v7"]
+name = "supermartijn642s-core-lib"
+evidence = ["general-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:kkmrDlKT:6e8GCrLb"]
+name = "terrablender"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:h2jngREY:JnzRBH1v"]
+name = "trek"
+component = "trek"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:vBbPDuOs:M1CyD3Uu"]
+name = "txnilib"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:g2FGQs4R:A0Rx4Pvw"]
+name = "u-team-core"
+evidence = ["modrinth-apache-2"]
+
+[exports.curseforge.artifacts."modrinth:3Acxy864:1YdU56pR"]
+name = "uranus"
+evidence = ["modrinth-lgpl-3-or-later"]
+
+[exports.curseforge.artifacts."modrinth:NCPLOWlF:4Mx0MqUO"]
+name = "withering-heights"
+component = "withering-heights"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:R8uGDQpB:d8e9QsHt"]
+name = "worldweaver-neoforge"
+evidence = ["modrinth-mit"]
+
+[exports.curseforge.artifacts."modrinth:NcUtCpym:EupKCSdU"]
+name = "xaeros-world-map"
+evidence = ["xaero-modpack-permission"]
+
+[exports.curseforge.artifacts."modrinth:Z2RtCqwR:t1rtOqca"]
+name = "yarrp"
+evidence = ["modrinth-mpl-2"]
+
+[exports.curseforge.artifacts."modrinth:Ua7DFN59:ZB22DE9q"]
+name = "yungs-api"
+evidence = ["modrinth-lgpl-3"]
+
+[exports.curseforge.artifacts."modrinth:MVARlG2f:9GjNW2Gf"]
+name = "zeta"
+evidence = ["modrinth-cc-by-nc-sa-3"]

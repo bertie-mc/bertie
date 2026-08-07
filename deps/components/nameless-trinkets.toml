@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "yGp7IenE"
+version-id = "hMLb3f4W"
+filename = "Nameless Trinkets-neoforge-1.21.1-1.2.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "nameless-trinkets"
+project-id = 541466
+file-id = 8195531
+filename = "Nameless Trinkets-neoforge-1.21.1-1.2.4.jar"

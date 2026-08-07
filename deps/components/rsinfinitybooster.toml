@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Sjzdj2cy"
+version-id = "1OFYdaiQ"
+filename = "rsinfinitybooster-neoforge-1.21.1-1.0.0.48.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "rsinfinitybooster"
+project-id = 446870
+file-id = 6487415
+filename = "rsinfinitybooster-neoforge-1.21.1-1.0.0.48.jar"

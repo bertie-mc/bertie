@@ -4,11 +4,9 @@ import io.github.bertie_mc.gradle.conventions.configureJvmRole
 import io.github.bertie_mc.gradle.conventions.configureNeoForgeRole
 import io.github.bertie_mc.gradle.model.ModMetadata
 import io.github.bertie_mc.gradle.model.TestSubject
-import io.github.bertie_mc.gradle.model.platformVersions
 import io.github.bertie_mc.gradle.tasks.GenerateModMetadata
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.plugins.BasePluginExtension
 import org.gradle.api.tasks.SourceSetContainer
 import org.gradle.jvm.tasks.Jar
@@ -42,11 +40,7 @@ class ModPlugin : Plugin<Project> {
             group = metadata.group
             extensions.getByType<BasePluginExtension>().archivesName.set(metadata.archiveName)
 
-            val platform =
-                extensions
-                    .getByType<VersionCatalogsExtension>()
-                    .named("libs")
-                    .platformVersions()
+            val platform = extensions.getByType<io.github.bertie_mc.gradle.model.PlatformVersions>()
             val generateModMetadata =
                 tasks.register<GenerateModMetadata>("generateModMetadata") {
                     templateDirectory.set(layout.projectDirectory.dir("src/main/templates"))

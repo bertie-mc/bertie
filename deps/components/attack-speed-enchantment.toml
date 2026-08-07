@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "KeXkdmTD"
+version-id = "Ao9u8ZHo"
+filename = "attack-speed-enchantment-v1.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "KeXkdmTD"
+version-id = "KRfxrYTP"
+filename = "Attack Speed Enchantment v1.0.0 [1.21-1.21.1].zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "attack-speed-enchantment"
+project-id = 1353978
+file-id = 7035655
+filename = "attack-speed-enchantment-v1.0.0.jar"

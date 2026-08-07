@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "rciLBWn7"
+version-id = "NuDwgHaO"
+filename = "ancient_forgemastery-1.4.1-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ancient-forgemastery"
+project-id = 1210419
+file-id = 7969743
+filename = "ancient_forgemastery-1.4.1-neoforge-1.21.1.jar"

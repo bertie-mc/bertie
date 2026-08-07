@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "13uF4XO7"
+version-id = "8jJSPQok"
+filename = "lukis-ancient-cities-v1.2.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "13uF4XO7"
+version-id = "AMGQoG9N"
+filename = "lukis-ancient-cities-v1.2.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lukis-ancient-cities"
+project-id = 1190728
+file-id = 7179736
+filename = "lukis-ancient-cities-v1.2.jar"

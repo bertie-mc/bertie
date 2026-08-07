@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "FoVacERa"
+version-id = "mWkKVbyd"
+filename = "lionfishapi-3.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lionfish-api"
+project-id = 1001614
+file-id = 8230518
+filename = "lionfishapi-3.0.jar"

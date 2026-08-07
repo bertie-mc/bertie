@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LBa22RMa"
+version-id = "JL6kDyww"
+filename = "[1.21.1] roll_delight-1.2.4-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "roll-delight"
+project-id = 1496416
+file-id = 7952403
+filename = "[1.21.1] roll_delight-1.2.4-neoforge.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "M2nf1STC"
+version-id = "pNBKpSzw"
+filename = "giant_snowy_tree-1.0.1-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "giant-snowy-tree"
+project-id = 1307351
+file-id = 6908781
+filename = "giant_snowy_tree-1.0.1-neoforge-1.21.1.jar"

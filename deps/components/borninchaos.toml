@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "1kcHy4de"
+version-id = "SmoP64vt"
+filename = "born_in_chaos_[Neoforge]_1.21.1_1.7.5.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "borninchaos"
+project-id = 686437
+file-id = 7917953
+filename = "born_in_chaos_[Neoforge]_1.21.1_1.7.5.jar"

@@ -1,0 +1,32 @@
+# Rustic Engineer marks GeckoLib optional but loads GeoItem while constructing the mod.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "8KT9aVZC"
+version-id = "sSsuuNws"
+filename = "rustic_engineer-1.1.4-neoforge-1.21.1.jar"
+
+[distributions.modrinth-mod.dependency-corrections.geckolib-is-required]
+action = "require"
+mod-id = "geckolib"
+component = "geckolib"
+version-range = "[4.8.4]"
+side = "both"
+applies-to = "modrinth:8KT9aVZC:sSsuuNws"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "rustic-engineer"
+project-id = 1026067
+file-id = 7121058
+filename = "rustic_engineer-1.1.4-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod.dependency-corrections.geckolib-is-required]
+action = "require"
+mod-id = "geckolib"
+component = "geckolib"
+version-range = "[4.8.4]"
+side = "both"
+applies-to = "curseforge:1026067:7121058"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "5BPpCYUe"
+version-id = "Pq4OMDNA"
+filename = "certain_questing_additions-neoforge-1.1.7+mc1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "certain-questing-additions"
+project-id = 1372051
+file-id = 8048066
+filename = "certain_questing_additions-neoforge-1.1.7+mc1.21.1.jar"

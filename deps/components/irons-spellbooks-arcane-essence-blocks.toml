@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Pkj2hNRk"
+version-id = "Amnk4kDG"
+filename = "arcaneessenceblock-1.0.1-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "irons-spellbooks-arcane-essence-blocks"
+project-id = 1083218
+file-id = 6107642
+filename = "arcaneessenceblock-1.0.1-neoforge-1.21.1.jar"

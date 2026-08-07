@@ -1,0 +1,16 @@
+# Deduplicates block state data to keep the full pack within its memory budget.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "uXXizFIs"
+version-id = "x7kQWVju"
+filename = "ferritecore-7.0.3-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ferrite-core"
+project-id = 429235
+file-id = 7524151
+filename = "ferritecore-7.0.3-neoforge.jar"

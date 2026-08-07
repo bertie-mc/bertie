@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Wnxd13zP"
+version-id = "jo7lDoK4"
+filename = "Clumps-neoforge-1.21.1-19.0.0.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "clumps"
+project-id = 256717
+file-id = 5623731
+filename = "Clumps-neoforge-1.21.1-19.0.0.1.jar"

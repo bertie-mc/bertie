@@ -1,0 +1,22 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hwNDseBp"
+version-id = "RPuu7Vml"
+filename = "Yggdrasil-6.0.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+additional-kinds = ["resourcepack"]
+project-id = "hwNDseBp"
+version-id = "2gnwMPSD"
+filename = "Yggdrasil-6.0.0.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "yggdrasil-structure"
+project-id = 1135665
+file-id = 7658653
+filename = "Yggdrasil-6.0.0.jar"

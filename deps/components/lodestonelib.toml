@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bN3xUWdo"
+version-id = "CohX6yP1"
+filename = "lodestone-1.21.1-1.8.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lodestonelib"
+project-id = 616457
+file-id = 7264731
+filename = "lodestone-1.21.1-1.8.2.jar"

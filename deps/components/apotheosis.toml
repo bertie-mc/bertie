@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "rqFWfVlz"
+version-id = "Vp2TR6ib"
+filename = "Apotheosis-1.21.1-8.5.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "apotheosis"
+project-id = 313970
+file-id = 8182695
+filename = "Apotheosis-1.21.1-8.5.4.jar"

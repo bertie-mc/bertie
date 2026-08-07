@@ -8,211 +8,269 @@ import org.junit.jupiter.api.Test
 
 class MinecraftArtifactsTest {
     @Test
-    fun `provider presence determines Gradle and packwiz sources`() {
-        val manifest =
-            parseMinecraftArtifacts(
-                """
-                [mods.create]
-                side = "client"
+    fun `lock preserves selected representations and transitive evidence`() {
+        val manifest = parseLock(lock(), components())
 
-                [mods.create.maven]
-                module = "com.example:create"
-                version = "1.0"
-
-                [mods.create.modrinth]
-                project-id = "project"
-                version-id = "version"
-                filename = "create.jar"
-
-                [mods.create.curseforge]
-                slug = "create"
-                project-id = 12
-                file-id = 34
-
-                [mods.curse-only.curseforge]
-                slug = "curse-only"
-                project-id = 56
-                file-id = 78
-
-                [mods.maven-and-curse]
-                side = "server"
-
-                [mods.maven-and-curse.maven]
-                module = "com.example:maven-and-curse"
-                version = "2.0"
-
-                [mods.maven-and-curse.curseforge]
-                slug = "maven-and-curse"
-                project-id = 90
-                file-id = 12
-
-                [mods.modrinth-and-curse.modrinth]
-                project-id = "preferred-project"
-                version-id = "preferred-version"
-                filename = "preferred.jar"
-
-                [mods.modrinth-and-curse.curseforge]
-                slug = "modrinth-and-curse"
-                project-id = 34
-                file-id = 56
-
-                [shaderpacks.example]
-                side = "client"
-
-                [shaderpacks.example.modrinth]
-                project-id = "shader"
-                version-id = "release"
-                filename = "shader.zip"
-
-                [datapacks.worldgen.modrinth]
-                project-id = "worldgen"
-                version-id = "release"
-                filename = "worldgen.zip"
-
-                [datapacks.worldgen.curseforge]
-                slug = "worldgen"
-                project-id = 123
-                file-id = 456
-
-                [resourcepacks.textures]
-                side = "client"
-
-                [resourcepacks.textures.modrinth]
-                project-id = "textures"
-                version-id = "release"
-                filename = "textures.zip"
-                """.trimIndent(),
-            )
-
-        val create = manifest.mods.single { artifact -> artifact.id == "create" }
-        assertEquals(MinecraftArtifactSide.CLIENT, create.side)
-        assertInstanceOf(MavenArtifactSource::class.java, create.gradleSource)
-        assertInstanceOf(ModrinthArtifactSource::class.java, create.packwizSource)
-
-        val curseOnly = manifest.mods.single { artifact -> artifact.id == "curse-only" }
-        assertEquals(MinecraftArtifactSide.BOTH, curseOnly.side)
-        assertInstanceOf(CurseForgeArtifactSource::class.java, curseOnly.gradleSource)
-        assertInstanceOf(CurseForgeArtifactSource::class.java, curseOnly.packwizSource)
-        assertEquals("curseOnly", curseOnly.catalogAlias)
-
-        val mavenAndCurse =
-            manifest.mods.single { artifact ->
-                artifact.id == "maven-and-curse"
-            }
-        assertEquals(MinecraftArtifactSide.SERVER, mavenAndCurse.side)
-        assertInstanceOf(MavenArtifactSource::class.java, mavenAndCurse.gradleSource)
-        assertInstanceOf(CurseForgeArtifactSource::class.java, mavenAndCurse.packwizSource)
-
-        val modrinthAndCurse =
-            manifest.mods.single { artifact ->
-                artifact.id == "modrinth-and-curse"
-            }
-        assertInstanceOf(ModrinthArtifactSource::class.java, modrinthAndCurse.gradleSource)
-        assertInstanceOf(ModrinthArtifactSource::class.java, modrinthAndCurse.packwizSource)
-
-        val shaderpack = manifest.shaderpacks.single()
-        assertEquals(MinecraftArtifactKind.SHADERPACK, shaderpack.kind)
-        assertEquals(MinecraftArtifactSide.CLIENT, shaderpack.side)
-        assertEquals("shaderpacks", shaderpack.kind.destination)
-        assertEquals("zip", shaderpack.kind.extension)
-
-        val datapack = manifest.datapacks.single()
-        assertEquals(MinecraftArtifactKind.DATAPACK, datapack.kind)
-        assertEquals(MinecraftArtifactSide.BOTH, datapack.side)
-        assertEquals("datapacks", datapack.kind.destination)
-        assertEquals("zip", datapack.kind.extension)
-        assertEquals("worldgen.zip", datapack.filename(datapack.modrinth!!))
-        assertEquals("worldgen.zip", datapack.filename(datapack.curseForge!!))
-
-        val resourcepack = manifest.resourcepacks.single()
-        assertEquals(MinecraftArtifactKind.RESOURCEPACK, resourcepack.kind)
-        assertEquals(MinecraftArtifactSide.CLIENT, resourcepack.side)
-        assertEquals("resourcepacks", resourcepack.kind.destination)
-        assertEquals("zip", resourcepack.kind.extension)
-    }
-
-    @Test
-    fun `lower camel aliases keep prefix-related artifact ids independent`() {
-        val manifest =
-            parseMinecraftArtifacts(
-                """
-                [mods.accessories.modrinth]
-                project-id = "base"
-                version-id = "1"
-                filename = "accessories.jar"
-
-                [mods.accessories-compat-layer.modrinth]
-                project-id = "compat"
-                version-id = "1"
-                filename = "accessories-compat-layer.jar"
-                """.trimIndent(),
-            )
-
+        val content = manifest.selectedArtifact("content")
+        assertEquals(MinecraftArtifactKind.DATAPACK, content.kind)
         assertEquals(
-            listOf("accessories", "accessoriesCompatLayer"),
-            manifest.mods.map(MinecraftArtifact::catalogAlias),
+            listOf(MinecraftArtifactKind.DATAPACK, MinecraftArtifactKind.RESOURCEPACK),
+            content.installationKinds,
+        )
+        assertInstanceOf(ModrinthArtifactSource::class.java, content.source)
+        assertEquals("content.zip", content.filename)
+
+        val mod = manifest.selectedArtifact("content", requireMod = true)
+        assertEquals(MinecraftArtifactKind.MOD, mod.kind)
+        assertInstanceOf(CurseForgeArtifactSource::class.java, mod.source)
+
+        val reachable = manifest.reachableArtifacts(listOf("content")).map { it.id }
+        assertEquals(listOf("content-data", "paxi"), reachable)
+        assertEquals(
+            listOf("content-mod"),
+            manifest.reachableArtifacts(listOf("content"), requireMod = true).map { it.id },
+        )
+        assertEquals("jei", mod.optional.single().missingModId)
+        assertEquals("[19,)", mod.optional.single().versionRange)
+        assertEquals(
+            MinecraftComponentRelationship(
+                source = "content",
+                target = "paxi",
+                kind = MinecraftComponentRelationshipKind.OPTIONAL_ADDON_FOR,
+            ),
+            manifest.relationships.single(),
         )
     }
 
     @Test
-    fun `rejects artifact ids that collapse to the same catalog alias`() {
+    fun `component requires at least one distribution`() {
+        val missingDistribution =
+            assertThrows(IllegalArgumentException::class.java) {
+                parseComponent("example", "# No distributions.")
+            }
+        assertTrue(missingDistribution.message.orEmpty().contains("distribution"))
+    }
+
+    @Test
+    fun `lock rejects unresolved required dependency`() {
         val failure =
             assertThrows(IllegalArgumentException::class.java) {
-                parseMinecraftArtifacts(
-                    """
-                    [mods.some-mod.modrinth]
-                    project-id = "first"
-                    version-id = "1"
-                    filename = "first.jar"
+                parseLock(
+                    lock().replace(
+                        "artifact = \"modrinth:paxi:paxi-version\"",
+                        "artifact = \"modrinth:missing:version\"",
+                    ),
+                    components(),
+                )
+            }
 
-                    [mods.someMod.modrinth]
-                    project-id = "second"
-                    version-id = "1"
-                    filename = "second.jar"
+        assertTrue(failure.message.orEmpty().contains("unresolved required edge"))
+    }
+
+    @Test
+    fun `lower camel aliases keep prefix-related component ids independent`() {
+        assertEquals(
+            listOf("accessories", "accessoriesCompatLayer"),
+            listOf("accessories", "accessories-compat-layer")
+                .map { id -> parseComponent(id, component()).catalogAlias },
+        )
+    }
+
+    @Test
+    fun `redistribution assignments reuse evidence across exports`() {
+        val policy =
+            parseRedistributionPolicy(
+                """
+                strict = true
+
+                [evidence.additional-context]
+                allowed = true
+                text = "Project license"
+
+                [evidence.shared-permission]
+                allowed = false
+                text = "The author permits both files to be redistributed."
+
+                [exports.modrinth.artifacts."curseforge:12:34"]
+                name = "first"
+                evidence = ["shared-permission"]
+
+                [exports.curseforge.artifacts."modrinth:project:version"]
+                name = "second"
+                component = "second"
+                evidence = ["additional-context", "shared-permission"]
+                """.trimIndent(),
+            )
+
+        assertTrue(policy.strict)
+        assertEquals(listOf("additional-context", "shared-permission"), policy.evidence.map { it.id })
+        val modrinthAssignment = policy.artifactsFor("modrinth").single()
+        assertEquals(
+            RedistributionArtifactPolicy(
+                identity = "curseforge:12:34",
+                name = "first",
+                component = null,
+                evidence = listOf("shared-permission"),
+            ),
+            modrinthAssignment,
+        )
+        val curseForgeAssignment = policy.artifactsFor("curseforge").single()
+        assertEquals(
+            listOf("additional-context", "shared-permission"),
+            curseForgeAssignment.evidence,
+        )
+        assertEquals("second", curseForgeAssignment.component)
+        assertEquals(false, policy.evidence.single { it.id == "shared-permission" }.allowed)
+    }
+
+    @Test
+    fun `redistribution evidence rejects non-exact artifact identities`() {
+        val failure =
+            assertThrows(IllegalArgumentException::class.java) {
+                parseRedistributionPolicy(
+                    """
+                    strict = false
+
+                    [evidence.wildcard]
+                    allowed = true
+                    text = "Too broad"
+
+                    [exports.modrinth.artifacts."modrinth:project:*"]
+                    name = "wildcard"
+                    evidence = ["wildcard"]
                     """.trimIndent(),
                 )
             }
 
-        assertTrue(failure.message.orEmpty().contains("colliding Gradle aliases"))
+        assertTrue(failure.message.orEmpty().contains("invalid immutable identity"))
     }
 
     @Test
-    fun `rejects artifact sides that are not lowercase canonical values`() {
-        val failure =
-            assertThrows(IllegalArgumentException::class.java) {
-                parseMinecraftArtifacts(
-                    """
-                    [mods.example]
-                    side = "CLIENT"
-
-                    [mods.example.modrinth]
-                    project-id = "example"
-                    version-id = "1"
-                    filename = "example.jar"
-                    """.trimIndent(),
-                )
-            }
-
-        assertTrue(failure.message.orEmpty().contains("must be one of: both, client, server"))
-    }
-
-    @Test
-    fun `rejects non-string artifact sides`() {
+    fun `redistribution evidence requires an explicit allowed decision`() {
         val failure =
             assertThrows(IllegalStateException::class.java) {
-                parseMinecraftArtifacts(
+                parseRedistributionPolicy(
                     """
-                    [mods.example]
-                    side = true
+                    strict = false
 
-                    [mods.example.modrinth]
-                    project-id = "example"
-                    version-id = "1"
-                    filename = "example.jar"
+                    [evidence.permission]
+                    text = "Permission"
+
+                    [exports.modrinth.artifacts."modrinth:project:version"]
+                    name = "project"
+                    evidence = ["permission"]
                     """.trimIndent(),
                 )
             }
 
-        assertTrue(failure.message.orEmpty().contains("field 'side' must be a string"))
+        assertTrue(failure.message.orEmpty().contains("field 'allowed' must be a boolean"))
     }
+
+    @Test
+    fun `redistribution assignment rejects unknown evidence`() {
+        val failure =
+            assertThrows(IllegalArgumentException::class.java) {
+                parseRedistributionPolicy(
+                    """
+                    strict = false
+
+                    [exports.curseforge.artifacts."modrinth:project:version"]
+                    name = "project"
+                    evidence = ["missing"]
+                    """.trimIndent(),
+                )
+            }
+
+        assertTrue(failure.message.orEmpty().contains("unknown evidence 'missing'"))
+    }
+
+    private fun components(): Map<String, MinecraftComponent> =
+        mapOf(
+            "content" to parseComponent("content", component()),
+            "paxi" to parseComponent("paxi", component()),
+        )
+
+    private fun component(): String =
+        """
+        [distributions.fixture]
+        provider = "modrinth"
+        kind = "mod"
+        """.trimIndent()
+
+    private fun lock(): String =
+        """
+        profile = "release-modrinth"
+        inputs-hash = "fixture"
+        relationships = [{ source = "content", target = "paxi", kind = "optional-addon-for" }]
+
+        [components.content]
+        any = "modrinth:content:data-version"
+        mod = "curseforge:10:20"
+
+        [components.paxi]
+        any = "modrinth:paxi:paxi-version"
+        mod = "modrinth:paxi:paxi-version"
+
+        [artifacts."modrinth:content:data-version"]
+        name = "content-data"
+        component = "content"
+        provider = "modrinth"
+        kind = "datapack"
+        side = "both"
+        group = "maven.modrinth"
+        module = "content"
+        version = "data-version"
+        filename = "content.zip"
+        project-id = "content"
+        version-id = "data-version"
+        additional-kinds = ["resourcepack"]
+        provides = []
+        bundled-provides = []
+        required = [{ artifact = "modrinth:paxi:paxi-version", mod-id = "paxi", side = "both", origin = "profile:release-modrinth:native-packs.datapack" }]
+        optional = []
+        incompatible = []
+        bundled = []
+        integrations = []
+
+        [artifacts."curseforge:10:20"]
+        name = "content-mod"
+        component = "content"
+        provider = "curseforge"
+        kind = "mod"
+        side = "both"
+        group = "curse.maven"
+        module = "content-10"
+        version = "20"
+        filename = "content.jar"
+        slug = "content"
+        project-id = 10
+        file-id = 20
+        provides = ["content"]
+        bundled-provides = []
+        required = []
+        optional = [{ missing = "jei", mod-id = "jei", version-range = "[19,)", side = "both", origin = "archive" }]
+        incompatible = []
+        bundled = []
+        integrations = []
+
+        [artifacts."modrinth:paxi:paxi-version"]
+        name = "paxi"
+        component = "paxi"
+        provider = "modrinth"
+        kind = "mod"
+        side = "both"
+        group = "maven.modrinth"
+        module = "paxi"
+        version = "paxi-version"
+        filename = "paxi.jar"
+        project-id = "paxi"
+        version-id = "paxi-version"
+        provides = ["paxi"]
+        bundled-provides = []
+        required = []
+        optional = []
+        incompatible = []
+        bundled = []
+        integrations = []
+        """.trimIndent()
 }

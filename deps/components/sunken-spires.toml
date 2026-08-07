@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "annHP7q0"
+version-id = "z8rNnW0F"
+filename = "sunken-spires-1.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "annHP7q0"
+version-id = "zikRIvHl"
+filename = "Sunken_Spires_1.21.zip"
+
+[distributions.curseforge-datapack]
+provider = "curseforge"
+kind = "datapack"
+slug = "sunken-spires"
+project-id = 1367962
+file-id = 7123675
+filename = "Sunken_Spires_1.21.zip"

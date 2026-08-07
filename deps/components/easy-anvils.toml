@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "OZBR5JT5"
+version-id = "fSQSKhdF"
+filename = "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "easy-anvils"
+project-id = 682567
+file-id = 5733955
+filename = "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"

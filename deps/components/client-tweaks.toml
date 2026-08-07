@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "vPNqo58Q"
+version-id = "zMZWFyiK"
+filename = "clienttweaks-neoforge-1.21.1-21.1.11.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "client-tweaks"
+project-id = 251407
+file-id = 7966145
+filename = "clienttweaks-neoforge-1.21.1-21.1.11.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "KZO4S4DO"
+version-id = "1prWLuga"
+filename = "Powah-6.2.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "powah"
+project-id = 633483
+file-id = 8011715
+filename = "Powah-6.2.10.jar"

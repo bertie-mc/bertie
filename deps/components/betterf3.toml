@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "8shC1gFX"
+version-id = "maXNB1dn"
+filename = "BetterF3-11.0.3-NeoForge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "betterf3"
+project-id = 401648
+file-id = 5873258
+filename = "BetterF3-11.0.3-NeoForge-1.21.1.jar"

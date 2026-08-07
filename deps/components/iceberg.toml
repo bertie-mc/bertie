@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "5faXoLqX"
+version-id = "IMssx9du"
+filename = "Iceberg-1.21.1-neoforge-1.3.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "iceberg"
+project-id = 520110
+file-id = 6423863
+filename = "Iceberg-1.21.1-neoforge-1.3.2.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bQh7xzFq"
+version-id = "8SBaRv1t"
+filename = "Not Enough Recipe Book-NEOFORGE-0.4.3+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "notenoughrecipebook"
+project-id = 738663
+file-id = 6880047
+filename = "Not Enough Recipe Book-NEOFORGE-0.4.3+1.21.jar"

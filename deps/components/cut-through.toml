@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Dk6su9JN"
+version-id = "5P5tLHSh"
+filename = "CutThrough-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "cut-through"
+project-id = 969423
+file-id = 5731913
+filename = "CutThrough-v21.1.0-1.21.1-NeoForge.jar"

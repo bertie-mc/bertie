@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "eUma2vmY"
+version-id = "DnclMSEE"
+filename = "mysticaloaktree-1.21-1.14-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mystical-oak-tree"
+project-id = 691002
+file-id = 6958399
+filename = "mysticaloaktree-1.21-1.14-neoforge.jar"

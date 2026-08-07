@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "tqQpq1lt"
+version-id = "v5zlSE9s"
+filename = "MekanismTools-1.21.1-10.7.19.85.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-tools"
+project-id = 268567
+file-id = 7904062
+filename = "MekanismTools-1.21.1-10.7.19.85.jar"

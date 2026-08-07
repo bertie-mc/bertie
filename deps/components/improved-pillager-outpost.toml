@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "WQxwMPH5"
+version-id = "UqNxyorq"
+filename = "ImprovedPillagerOutpost-v5.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "WQxwMPH5"
+version-id = "QmgBowqy"
+filename = "ImprovedPillagerOutpost-v5.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "improved-pillager-outpost"
+project-id = 1093283
+file-id = 6269462
+filename = "ImprovedPillagerOutpost-v5.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "TBVbrjYL"
+version-id = "iLp3LKvw"
+filename = "ditr-1.21.1-4.0.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "diamond-in-the-rough"
+project-id = 898993
+file-id = 5624841
+filename = "ditr-1.21.1-4.0.1.jar"

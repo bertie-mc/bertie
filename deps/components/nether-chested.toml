@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bHJp2GRg"
+version-id = "fII2Ezk6"
+filename = "NetherChested-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "nether-chested"
+project-id = 857971
+file-id = 7255815
+filename = "NetherChested-v21.1.1-1.21.1-NeoForge.jar"

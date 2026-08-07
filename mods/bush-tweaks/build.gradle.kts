@@ -5,5 +5,5 @@ plugins {
 
 dependencies {
     testImplementation(libs.mockito)
-    runtimeOnly(mods.berriesAndCherries)
+    testRuntimeOnly(deps.berriesAndCherries)
 }

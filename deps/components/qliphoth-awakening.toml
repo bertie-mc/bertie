@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7fqQYwaC"
+version-id = "mubOR5lN"
+filename = "fdbosses-3.1.0.3-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "qliphoth-awakening"
+project-id = 1271707
+file-id = 7653113
+filename = "fdbosses-3.1.0.3-1.21.1.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "jorDmSKv"
+version-id = "BZAhwo2r"
+filename = "MagnumTorch-v21.1.1-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "magnum-torch"
+project-id = 593981
+file-id = 7359251
+filename = "MagnumTorch-v21.1.1-1.21.1-NeoForge.jar"

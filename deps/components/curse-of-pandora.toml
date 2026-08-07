@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "FOXoL6St"
+version-id = "fhvmJ7Xb"
+filename = "curseofpandora-3.0.7.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "curse-of-pandora"
+project-id = 968311
+file-id = 7516965
+filename = "curseofpandora-3.0.7.jar"

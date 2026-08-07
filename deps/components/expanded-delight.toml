@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "e9V6wFcR"
+version-id = "RTRYPIJp"
+filename = "expandeddelight-0.1.4.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "expanded-delight"
+project-id = 620770
+file-id = 7441587
+filename = "expandeddelight-0.1.4.jar"

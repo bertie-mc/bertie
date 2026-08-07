@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "KDvYkUg3"
+version-id = "lHHiI26k"
+filename = "refinedstorage-neoforge-2.0.9.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "refined-storage"
+project-id = 243076
+file-id = 8211701
+filename = "refinedstorage-neoforge-2.0.9.jar"

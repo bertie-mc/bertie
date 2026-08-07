@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "fRiHVvU7"
+version-id = "5sIPA1To"
+filename = "emi-1.1.24+1.21.1+neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "emi"
+project-id = 580555
+file-id = 8081408
+filename = "emi-1.1.24+1.21.1+neoforge.jar"

@@ -10,6 +10,7 @@ shared-gradle-paths = [
   "settings.gradle.kts",
   "gradle.properties",
   "gradle/",
+  "deps/",
   "build-logic/",
   "core/",
 ]

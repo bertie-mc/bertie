@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "uHWrqYcS"
+version-id = "nLff2PaZ"
+filename = "HangGlider-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hang-glider"
+project-id = 852668
+file-id = 5733836
+filename = "HangGlider-v21.1.0-1.21.1-NeoForge.jar"

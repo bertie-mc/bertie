@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "DRRYP3ch"
+version-id = "VqDqcyCj"
+filename = "combat_effects-neoforge-1.0.0-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "combat-effects"
+project-id = 1148519
+file-id = 5940871
+filename = "combat_effects-neoforge-1.0.0-1.21.1.jar"

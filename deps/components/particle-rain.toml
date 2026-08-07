@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "nrikgvxm"
+version-id = "CJeVXIae"
+filename = "particlerain-4.0.0-beta.10+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "particle-rain"
+project-id = 421897
+file-id = 8055433
+filename = "particlerain-4.0.0-beta.10+1.21.1-neoforge.jar"

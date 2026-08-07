@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "qnQsVE2z"
+version-id = "hMLnxKZx"
+filename = "Quark-4.1-480.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "quark"
+project-id = 243121
+file-id = 8146177
+filename = "Quark-4.1-480.jar"

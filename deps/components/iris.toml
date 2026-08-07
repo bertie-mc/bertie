@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "YL57xq9U"
+version-id = "t3ruzodq"
+filename = "iris-neoforge-1.8.12+mc1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "iris"
+project-id = 455508
+file-id = 6661598
+filename = "iris-neoforge-1.8.12+mc1.21.1.jar"

@@ -1,27 +1,48 @@
 package io.github.bertie_mc.gradle.settings
 
-import io.github.bertie_mc.gradle.model.parseMinecraftArtifacts
+import io.github.bertie_mc.gradle.model.MinecraftArtifactKind
+import io.github.bertie_mc.gradle.model.loadMinecraftArtifacts
 import org.gradle.api.Plugin
 import org.gradle.api.initialization.Settings
-
-private const val MINECRAFT_ARTIFACTS_PATH = "gradle/minecraft-artifacts.toml"
 
 class BertieSettingsPlugin : Plugin<Settings> {
     override fun apply(settings: Settings) {
         settings.pluginManager.apply("net.neoforged.moddev.repositories")
 
-        val manifestFile = settings.layout.settingsDirectory.file(MINECRAFT_ARTIFACTS_PATH)
         val manifest =
-            parseMinecraftArtifacts(
-                settings.providers
-                    .fileContents(manifestFile)
-                    .asText
-                    .get(),
+            loadMinecraftArtifacts(
+                settings.layout.settingsDirectory.asFile,
+                profile = "development",
             )
-        settings.dependencyResolutionManagement.versionCatalogs.create("mods") {
-            manifest.mods.forEach { artifact ->
-                val source = artifact.gradleSource
-                library(artifact.catalogAlias, source.group, source.module).version(source.version)
+        settings.dependencyResolutionManagement.versionCatalogs.create("deps") {
+            manifest.components.values.sortedBy { it.id }.forEach { component ->
+                val artifact = manifest.selectedArtifact(component.id)
+                val source = artifact.source
+                library(component.catalogAlias, source.group, source.module).version(source.version)
+            }
+        }
+        settings.dependencyResolutionManagement.components {
+            manifest.artifacts.values.forEach { artifact ->
+                val source = artifact.source
+                withModule("${source.group}:${source.module}") {
+                    if (id.version == source.version) {
+                        allVariants {
+                            withDependencies {
+                                removeAll { true }
+                                artifact.required.forEach { edge ->
+                                    val target = manifest.artifacts.getValue(edge.artifact!!)
+                                    add(target.notation())
+                                }
+                            }
+                            if (artifact.kind != MinecraftArtifactKind.MOD) {
+                                withFiles {
+                                    removeAllFiles()
+                                    addFile("${source.module}-${source.version}.${artifact.kind.extension}")
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

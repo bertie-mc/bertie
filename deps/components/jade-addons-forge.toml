@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "xuDOzCLy"
+version-id = "Z9s9lM56"
+filename = "JadeAddons-1.21.1-NeoForge-6.1.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "jade-addons-forge"
+project-id = 583345
+file-id = 6315149
+filename = "JadeAddons-1.21.1-NeoForge-6.1.0.jar"

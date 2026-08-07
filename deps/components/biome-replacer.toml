@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "DAXbR0Wj"
+version-id = "jlYrkpXH"
+filename = "biomereplacer-2.2-hippo-neo.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "biome-replacer"
+project-id = 910274
+file-id = 7200635
+filename = "biomereplacer-2.2-hippo-neo.jar"

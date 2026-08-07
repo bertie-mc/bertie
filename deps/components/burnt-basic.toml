@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "aclfPzta"
+version-id = "MOcryEOO"
+filename = "burnt_basic-1.10.3.7-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "burnt-basic"
+project-id = 1001031
+file-id = 8199853
+filename = "burnt_basic-1.10.3.7-neoforge-1.21.1.jar"

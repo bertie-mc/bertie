@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "YttyNOFA"
+version-id = "yNIrDVfJ"
+filename = "culturaldelights-0.17.8.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cultural-delights"
+project-id = 574622
+file-id = 8126191
+filename = "culturaldelights-0.17.8.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "OQAgZMH1"
+version-id = "cvepxaBC"
+filename = "MoogsVoyagerStructures-1.21-5.0.11.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "moogs-voyager-structures"
+project-id = 656977
+file-id = 8128022
+filename = "MoogsVoyagerStructures-1.21-5.0.11.jar"

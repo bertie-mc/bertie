@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "DfWQAvS4"
+version-id = "dAYfyhxT"
+filename = "immersiveenchanting-6.0.0-neoforge-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "immersive-enchanting"
+project-id = 1354719
+file-id = 8197612
+filename = "immersiveenchanting-6.0.0-neoforge-1.21.1.jar"

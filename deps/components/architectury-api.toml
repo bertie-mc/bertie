@@ -1,0 +1,21 @@
+[distributions.maven-mod]
+provider = "maven"
+kind = "mod"
+module = "dev.architectury:architectury-neoforge"
+version = "13.0.8"
+filename = "architectury-13.0.8-neoforge.jar"
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "lhGA9TYQ"
+version-id = "ZxYGwlk0"
+filename = "architectury-13.0.8-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "architectury-api"
+project-id = 419699
+file-id = 5786327
+filename = "architectury-13.0.8-neoforge.jar"

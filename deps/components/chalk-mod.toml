@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "YWGP4Y1d"
+version-id = "FO0SZRP2"
+filename = "chalk-1.6.12.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "chalk-mod"
+project-id = 533748
+file-id = 8191901
+filename = "chalk-1.6.12.jar"

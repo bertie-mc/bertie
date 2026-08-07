@@ -41,6 +41,7 @@ io.netty:netty-transport-native-unix-common:4.1.97.Final=additionalRuntimeClassp
 io.netty:netty-transport:4.1.97.Final=additionalRuntimeClasspath,compileClasspath,neoFormRuntimeDependenciesCompileClasspath,neoFormRuntimeDependenciesRuntimeClasspath,runtimeClasspath
 it.unimi.dsi:fastutil:8.3.1=neoFormRuntimeExternalTools
 it.unimi.dsi:fastutil:8.5.12=additionalRuntimeClasspath,compileClasspath,neoFormRuntimeDependenciesCompileClasspath,neoFormRuntimeDependenciesRuntimeClasspath,runtimeClasspath
+maven.modrinth:LcmGQfK2:eGbrbFqp=runtimeClasspath,testRuntimeClasspath
 net.covers1624:Quack:0.4.10.101=neoFormRuntimeExternalTools
 net.fabricmc:sponge-mixin:0.15.2+mixin.0.8.7=additionalRuntimeClasspath,compileClasspath,neoFormRuntimeDependenciesCompileClasspath,neoFormRuntimeDependenciesRuntimeClasspath,runtimeClasspath
 net.java.dev.jna:jna-platform:5.14.0=additionalRuntimeClasspath,compileClasspath,neoFormRuntimeDependenciesCompileClasspath,neoFormRuntimeDependenciesRuntimeClasspath,runtimeClasspath

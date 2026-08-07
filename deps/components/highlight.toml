@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Vz96hXMh"
+version-id = "AhmYRg22"
+filename = "highlight-neoforge-1.21-3.0.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "highlight"
+project-id = 667245
+file-id = 5447146
+filename = "highlight-neoforge-1.21-3.0.0.jar"

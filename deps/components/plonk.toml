@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EUmBPkQn"
+version-id = "Y8aicJfZ"
+filename = "plonk-1.21.1-10.0.6-neo.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "plonk"
+project-id = 345779
+file-id = 6343120
+filename = "plonk-1.21.1-10.0.6-neo.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "61XQmq6p"
+version-id = "jXl8swWT"
+filename = "exposure_expanded-neoforge-1.0.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "exposure-expanded"
+project-id = 1266524
+file-id = 6959722
+filename = "exposure_expanded-neoforge-1.0.1.jar"

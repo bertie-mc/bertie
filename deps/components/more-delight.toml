@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "znHQQtuU"
+version-id = "DpW4EgJo"
+filename = "moredelight-26.05.20a-1.21-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "more-delight"
+project-id = 977515
+file-id = 8123964
+filename = "moredelight-26.05.20a-1.21-neoforge.jar"

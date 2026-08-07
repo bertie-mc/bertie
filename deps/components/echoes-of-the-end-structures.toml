@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "eVpstLY3"
+version-id = "latIOBBs"
+filename = "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "echoes-of-the-end-structures"
+project-id = 1218690
+file-id = 8083843
+filename = "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar"

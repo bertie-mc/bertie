@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "z3QkIKOR"
+version-id = "vxsfpqwm"
+filename = "endrem_additions-neoforge-1.1.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "end-remastered-additions"
+project-id = 1365790
+file-id = 7147529
+filename = "endrem_additions-neoforge-1.1.0.jar"

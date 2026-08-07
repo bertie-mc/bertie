@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "iRE67WIn"
+version-id = "Xm2VFMY1"
+filename = "piglinproliferation-1.21.1-2.0.14.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "piglin-proliferation"
+project-id = 657831
+file-id = 8065411
+filename = "piglinproliferation-1.21.1-2.0.14.jar"

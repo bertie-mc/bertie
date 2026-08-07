@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "ahQrpeXp"
+version-id = "tKu2fTKc"
+filename = "despawntweaks-neoforge-1.0.0-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "despawn-tweaks"
+project-id = 1191080
+file-id = 6145369
+filename = "despawntweaks-neoforge-1.0.0-1.21.1.jar"

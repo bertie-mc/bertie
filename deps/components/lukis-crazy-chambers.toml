@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "JeZoobNU"
+version-id = "CPFsfPNM"
+filename = "lukis-crazy-chambers-1.0.3.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "JeZoobNU"
+version-id = "pqREvNGl"
+filename = "lukis-crazy-chambers-v1.0.3.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lukis-crazy-chambers"
+project-id = 1082929
+file-id = 7456313
+filename = "lukis-crazy-chambers-1.0.3.jar"

@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "53TJSd8P"
+version-id = "CGWHkq5m"
+filename = "cataclysm_compat_1.21.1-1.0.2.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "53TJSd8P"
+version-id = "uz9NjyLr"
+filename = "cataclysm_compat_1.21.1-1.0.2.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cataclysm-x-bettercombat-compat"
+project-id = 1335102
+file-id = 7350924
+filename = "cataclysm_compat_1.21.1-1.0.2.jar"

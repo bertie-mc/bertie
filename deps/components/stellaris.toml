@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ItTQpuBn"
+version-id = "3OXCvg6r"
+filename = "stellaris-1.21-neoforge-1.4.23.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "stellaris"
+project-id = 1036270
+file-id = 8154670
+filename = "stellaris-1.21-neoforge-1.4.23.jar"

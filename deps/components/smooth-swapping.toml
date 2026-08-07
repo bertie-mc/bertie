@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "ydZic5r4"
+version-id = "tnvwgXE6"
+filename = "smoothswapping-0.9.3.2-1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "smooth-swapping"
+project-id = 513689
+file-id = 7274625
+filename = "smoothswapping-0.9.3.2-1.21.1-neoforge.jar"

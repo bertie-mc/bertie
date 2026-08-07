@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7e5g0K9D"
+version-id = "H66d5NDi"
+filename = "rangedwirelessredstone-1.21.1-5.0.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ranged-wireless-redstone"
+project-id = 530779
+file-id = 8138083
+filename = "rangedwirelessredstone-1.21.1-5.0.3.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "kSsLSjEt"
+version-id = "pC1MYhqR"
+filename = "alexscaves-2.0.10.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "alexs-caves-unofficial-port"
+project-id = 1420348
+file-id = 7981977
+filename = "alexscaves-2.0.10.jar"

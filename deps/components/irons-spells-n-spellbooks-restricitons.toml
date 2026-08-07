@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Hrfqig7V"
+version-id = "ySi6ZEae"
+filename = "irons_restrictions-1.21.1-5.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "irons-spells-n-spellbooks-restricitons"
+project-id = 1330168
+file-id = 7820087
+filename = "irons_restrictions-1.21.1-5.1.1.jar"

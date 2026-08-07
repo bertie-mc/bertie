@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bZRPxKjL"
+version-id = "OrCz6Ku6"
+filename = "caveoverhaul-nf-1.21.1-1.3.3.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "wfs-cave-overhaul"
+project-id = 946171
+file-id = 5984314
+filename = "caveoverhaul-nf-1.21.1-1.3.3.1.jar"

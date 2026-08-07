@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "zqykyLyX"
+version-id = "wZml2Fep"
+filename = "PackagedMekemicals-1.21.1-2.0.0.7.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "packagedmekemicals"
+project-id = 609886
+file-id = 6930386
+filename = "PackagedMekemicals-1.21.1-2.0.0.7.jar"

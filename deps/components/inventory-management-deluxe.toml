@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "inventory-management-deluxe"
+project-id = 1293085
+file-id = 8083722
+filename = "inventory-management-deluxe-1293085-8083722.jar"

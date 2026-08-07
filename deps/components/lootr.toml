@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EltpO5cN"
+version-id = "C2tLycH2"
+filename = "lootr-neoforge-1.21.1-1.11.37.120.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "lootr"
+project-id = 361276
+file-id = 8041234
+filename = "lootr-neoforge-1.21.1-1.11.37.120.jar"

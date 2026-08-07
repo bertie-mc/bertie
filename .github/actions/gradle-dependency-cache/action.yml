@@ -25,7 +25,7 @@ runs:
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/modules-2
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/neoformruntime/artifacts
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/neoformruntime/assets
-        key: bertie-gradle-${{ hashFiles('**/*.gradle.kts', '**/*.lockfile', 'build-logic/src/**', 'gradle/**', 'gradle.properties', 'flake.nix', 'flake.lock') }}
+        key: bertie-gradle-${{ hashFiles('**/*.gradle.kts', '**/*.lockfile', 'build-logic/src/**', 'deps/**', 'gradle/**', 'gradle.properties', 'flake.nix', 'flake.lock') }}
         restore-keys: |
           bertie-gradle-
 
@@ -52,7 +52,7 @@ runs:
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/modules-2
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/neoformruntime/artifacts
           ${{ github.workspace }}/.bertie-ci/gradle-user-home/caches/neoformruntime/assets
-        key: bertie-gradle-${{ hashFiles('**/*.gradle.kts', '**/*.lockfile', 'build-logic/src/**', 'gradle/**', 'gradle.properties', 'flake.nix', 'flake.lock') }}
+        key: bertie-gradle-${{ hashFiles('**/*.gradle.kts', '**/*.lockfile', 'build-logic/src/**', 'deps/**', 'gradle/**', 'gradle.properties', 'flake.nix', 'flake.lock') }}
 
     - name: Download prepared dependencies
       if: inputs.prepare != 'true'

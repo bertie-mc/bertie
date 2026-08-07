@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "9rlXSyLg"
+version-id = "YYynf5qc"
+filename = "cratedelight-25.09.22-1.21-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "crate-delight"
+project-id = 958291
+file-id = 7024451
+filename = "cratedelight-25.09.22-1.21-neoforge.jar"

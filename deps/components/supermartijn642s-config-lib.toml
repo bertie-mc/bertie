@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "LN9BxssP"
+version-id = "qKL9jM75"
+filename = "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "supermartijn642s-config-lib"
+project-id = 438332
+file-id = 5546996
+filename = "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar"

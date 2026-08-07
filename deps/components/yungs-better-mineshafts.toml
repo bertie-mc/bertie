@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "HjmxVlSr"
+version-id = "Go3nbneL"
+filename = "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "yungs-better-mineshafts"
+project-id = 1015096
+file-id = 5812193
+filename = "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"

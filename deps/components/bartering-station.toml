@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "EOig9U0j"
+version-id = "GOAgiH0l"
+filename = "BarteringStation-v21.1.0-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "bartering-station"
+project-id = 666940
+file-id = 5733754
+filename = "BarteringStation-v21.1.0-1.21.1-NeoForge.jar"

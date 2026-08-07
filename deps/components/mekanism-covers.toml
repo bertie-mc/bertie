@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "E3sGVcD8"
+version-id = "89QaQ0n0"
+filename = "mekanismcovers-1.3-BETA+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-covers"
+project-id = 1119874
+file-id = 6071684
+filename = "mekanismcovers-1.3-BETA+1.21.jar"

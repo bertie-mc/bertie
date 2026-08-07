@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "zQqsEeqy"
+version-id = "EAZy6MA3"
+filename = "rolling-down-in-the-deep-0.2.1+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "rolling-down-in-the-deep"
+project-id = 1006270
+file-id = 7076987
+filename = "rolling-down-in-the-deep-0.2.1+1.21.1-neoforge.jar"

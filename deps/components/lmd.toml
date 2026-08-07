@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "vE2FN5qn"
+version-id = "fgcMDg9B"
+filename = "letmedespawn-1.21.x-neoforge-1.5.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "lmd"
+project-id = 663477
+file-id = 6311236
+filename = "letmedespawn-1.21.x-neoforge-1.5.0.jar"

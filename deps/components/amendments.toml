@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "6iTJugQR"
+version-id = "8xf6Wpxs"
+filename = "amendments-1.21-2.0.15-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "amendments"
+project-id = 896746
+file-id = 7461027
+filename = "amendments-1.21-2.0.15-neoforge.jar"

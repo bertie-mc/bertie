@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ZtdULK5c"
+version-id = "Zk30hv74"
+filename = "eccentrictome-1.21.1-1.1.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "eccentric-tome"
+project-id = 597522
+file-id = 6008768
+filename = "eccentrictome-1.21.1-1.1.0.jar"

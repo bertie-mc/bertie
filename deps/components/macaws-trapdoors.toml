@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "n2fvCDlM"
+version-id = "StnP0RNi"
+filename = "mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "macaws-trapdoors"
+project-id = 400933
+file-id = 7256148
+filename = "mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar"

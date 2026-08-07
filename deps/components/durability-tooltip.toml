@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "smUP7V3r"
+version-id = "mmYe9e5V"
+filename = "durabilitytooltip-1.1.6-neoforge-mc1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "durability-tooltip"
+project-id = 511040
+file-id = 6833316
+filename = "durabilitytooltip-1.1.6-neoforge-mc1.21.jar"

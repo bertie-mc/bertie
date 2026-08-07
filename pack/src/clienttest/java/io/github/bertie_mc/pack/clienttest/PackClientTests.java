@@ -16,8 +16,8 @@ public final class PackClientTests {
     }
 
     @ClientTest
-    public static void datapackIsStaged(ClientTestContext context) {
-        assertZipIsStaged(context, "datapacks");
+    public static void resourcepackIsStaged(ClientTestContext context) {
+        assertZipIsStaged(context, "config/paxi/resourcepacks");
     }
 
     private static void assertZipIsStaged(ClientTestContext context, String directory) {

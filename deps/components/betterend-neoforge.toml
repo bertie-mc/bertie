@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "IcERKldh"
+version-id = "mf7D5Bcy"
+filename = "BetterEnd-21.0.25.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "betterend-neoforge"
+project-id = 1422294
+file-id = 8194832
+filename = "BetterEnd-21.0.25.jar"

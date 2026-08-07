@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ccKDOlHs"
+version-id = "NMCHU6DZ"
+filename = "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "owo-lib"
+project-id = 532610
+file-id = 6785734
+filename = "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar"

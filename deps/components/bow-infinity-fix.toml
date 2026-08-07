@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "BFENfScW"
+version-id = "sxYEU4oi"
+filename = "bowinfinityfix-1.21-neo-3.1.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "bow-infinity-fix"
+project-id = 224713
+file-id = 6389356
+filename = "bowinfinityfix-1.21-neo-3.1.1.jar"

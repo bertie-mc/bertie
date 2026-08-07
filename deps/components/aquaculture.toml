@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Vl1uNAuy"
+version-id = "5pbz0ETj"
+filename = "Aquaculture-1.21.1-2.7.21.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "aquaculture"
+project-id = 60028
+file-id = 7901588
+filename = "Aquaculture-1.21.1-2.7.21.jar"

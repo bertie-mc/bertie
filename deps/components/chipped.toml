@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "BAscRYKm"
+version-id = "eqVowbGc"
+filename = "chipped-neoforge-1.21.1-4.0.2.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "chipped"
+project-id = 456956
+file-id = 5813117
+filename = "chipped-neoforge-1.21.1-4.0.2.jar"

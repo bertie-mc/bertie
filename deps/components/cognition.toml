@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "9GdSY2FZ"
+version-id = "McC1NEfu"
+filename = "Cognition-v2.4.12-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "cognition"
+project-id = 579484
+file-id = 8127023
+filename = "Cognition-v2.4.12-1.21.1.jar"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "PEPVViac"
+version-id = "y8p1Vq83"
+filename = "AdvancedLootInfo-neoforge-1.21.1-1.12.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "advanced-loot-info"
+project-id = 1205426
+file-id = 8168901
+filename = "AdvancedLootInfo-neoforge-1.21.1-1.12.0.jar"

@@ -1,0 +1,81 @@
+# Hooked requires Kotlin for Forge and three LibrarianLib modules, but inherited
+# evidence classified those external artifacts as bundled.
+
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "RoLsCIqN"
+version-id = "Jwdpo3CR"
+filename = "hooked-neoforge-2.0.2.jar"
+
+[distributions.modrinth-mod.dependency-corrections.kotlin-for-forge-is-required]
+action = "require"
+mod-id = "kotlinforforge"
+component = "kotlin-for-forge"
+version-range = "[5.4.0,)"
+side = "both"
+applies-to = "modrinth:RoLsCIqN:Jwdpo3CR"
+
+[distributions.modrinth-mod.dependency-corrections.liblib-mosaic-is-required]
+action = "require"
+mod-id = "liblib_mosaic"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "modrinth:RoLsCIqN:Jwdpo3CR"
+
+[distributions.modrinth-mod.dependency-corrections.liblib-glitter-is-required]
+action = "require"
+mod-id = "liblib_glitter"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "modrinth:RoLsCIqN:Jwdpo3CR"
+
+[distributions.modrinth-mod.dependency-corrections.liblib-etcetera-is-required]
+action = "require"
+mod-id = "liblib_etcetera"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "modrinth:RoLsCIqN:Jwdpo3CR"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hooked"
+project-id = 297209
+file-id = 7131932
+filename = "hooked-neoforge-2.0.2.jar"
+
+[distributions.curseforge-mod.dependency-corrections.kotlin-for-forge-is-required]
+action = "require"
+mod-id = "kotlinforforge"
+component = "kotlin-for-forge"
+version-range = "[5.4.0,)"
+side = "both"
+applies-to = "curseforge:297209:7131932"
+
+[distributions.curseforge-mod.dependency-corrections.liblib-mosaic-is-required]
+action = "require"
+mod-id = "liblib_mosaic"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "curseforge:297209:7131932"
+
+[distributions.curseforge-mod.dependency-corrections.liblib-glitter-is-required]
+action = "require"
+mod-id = "liblib_glitter"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "curseforge:297209:7131932"
+
+[distributions.curseforge-mod.dependency-corrections.liblib-etcetera-is-required]
+action = "require"
+mod-id = "liblib_etcetera"
+component = "librarianlib"
+version-range = "[5.0.0,)"
+side = "both"
+applies-to = "curseforge:297209:7131932"

@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "q2bV1Tm1"
+version-id = "lE9PF6Wp"
+filename = "block_factorys_bosses-2.1.2-neo-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "bossesrise"
+project-id = 1314084
+file-id = 8123167
+filename = "block_factorys_bosses-2.1.2-neo-1.21.1.jar"

@@ -1,0 +1,21 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "hIpLSyga"
+version-id = "JosVVZQn"
+filename = "HopoBetterRuinedPortals-[1.21.1-1.21.3]-1.4.4b.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "hIpLSyga"
+version-id = "LPzbrvx2"
+filename = "hopobetterruinedportals-1-21-3-1-4-4b.zip"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "hopo-better-ruined-portals"
+project-id = 632624
+file-id = 6420137
+filename = "HopoBetterRuinedPortals-[1.21.1-1.21.3]-1.4.4b.jar"

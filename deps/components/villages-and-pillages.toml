@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "server"
+project-id = "klXONLDA"
+version-id = "3BGfKjMb"
+filename = "villagesandpillages-neoforge-mc1.21.1-1.0.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "server"
+slug = "villages-and-pillages"
+project-id = 915531
+file-id = 6266438
+filename = "villagesandpillages-neoforge-mc1.21.1-1.0.3.jar"

@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "Vt8TI045"
+version-id = "6p5bt7QM"
+filename = "better_smithing_table-2.1.0+1.21-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "bettersmithingtable"
+project-id = 875744
+file-id = 6869177
+filename = "better_smithing_table-2.1.0+1.21-neoforge.jar"

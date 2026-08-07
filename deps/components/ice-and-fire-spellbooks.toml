@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "aw5e7yPa"
+version-id = "YFXb3T9X"
+filename = "ice_and_fire_spellbooks-2.3.3-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "ice-and-fire-spellbooks"
+project-id = 977855
+file-id = 8079745
+filename = "ice_and_fire_spellbooks-2.3.3-1.21.1.jar"

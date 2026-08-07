@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "ordsPcFz"
+version-id = "NrSebcsG"
+filename = "kotlinforforge-5.11.0-all.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "kotlin-for-forge"
+project-id = 351264
+file-id = 7471280
+filename = "kotlinforforge-5.11.0-all.jar"

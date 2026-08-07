@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "vqnOCHgM"
+version-id = "vepgm8XF"
+filename = "boatview360-v1.0.5-mc1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "boatview360"
+project-id = 1322431
+file-id = 7517866
+filename = "boatview360-v1.0.5-mc1.21.1-neoforge.jar"

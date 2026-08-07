@@ -1,0 +1,11 @@
+selection-priority = ["provider", "representation"]
+representation-preference = ["datapack", "resourcepack", "shaderpack", "mod"]
+provider-preference = ["modrinth", "curseforge"]
+
+[native-packs.datapack]
+mode = "loader"
+component = "paxi"
+
+[native-packs.resourcepack]
+mode = "loader"
+component = "paxi"
