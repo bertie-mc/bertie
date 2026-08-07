@@ -181,14 +181,14 @@
 	quest.1C00000000000049.title: "Ravenous Pouch"
 	quest.1C0000000000004A.quest_desc: ["At the Spirit Altar, reforge a Crude Scythe with 2 Dragon Bones, 6 Soulstained Steel Plating, 12 Malignant Lead and 20 Mnemonic Fragments, paid eight of every spirit."]
 	quest.1C0000000000004A.title: "Soulstained Steel Scythe"
-	quest.1C0000000000004B.quest_desc: ["Find an Ancient City and go in. Everything past this point is sculk."]
-	quest.1C0000000000004B.title: "Enter the Ancient City"
-	quest.1C0000000000004C.quest_desc: ["One Echo Shard out of the city's chests."]
-	quest.1C0000000000004C.title: "Echo Shard"
-	quest.1C0000000000004D.quest_desc: ["Soul-Infused Iron at the corners, an Ancient Knowledge Fragment either side, a Sculk Shrieker above and a Bound Soul Ingot below, around a Double Compressed Crafting Table."]
-	quest.1C0000000000004D.title: "Sculk Crafting Table"
-	quest.1C0000000000004E.quest_desc: ["On the Sculk table: an Amethyst Cluster, an Ignitium Ingot and a Divine Soulshard over Totemic Gold, Dragon Scales and Deep Alloy. It only works at night, and only under open sky or in a lush cave."]
-	quest.1C0000000000004E.title: "The Altar of Amethyst"
+	quest.1C00000000000058.quest_desc: ["Find an Ancient City and go in. Everything past this point is sculk."]
+	quest.1C00000000000058.title: "Enter the Ancient City"
+	quest.1C00000000000059.quest_desc: ["One Echo Shard out of the city's chests."]
+	quest.1C00000000000059.title: "Echo Shard"
+	quest.1C0000000000005A.quest_desc: ["Soul-Infused Iron at the corners, an Ancient Knowledge Fragment either side, a Sculk Shrieker above and a Bound Soul Ingot below, around a Double Compressed Crafting Table."]
+	quest.1C0000000000005A.title: "Sculk Crafting Table"
+	quest.1C0000000000005B.quest_desc: ["On the Sculk table: an Amethyst Cluster, an Ignitium Ingot and a Divine Soulshard over Totemic Gold, Dragon Scales and Deep Alloy. It only works at night, and only under open sky or in a lush cave."]
+	quest.1C0000000000005B.title: "The Altar of Amethyst"
 	quest.2B00000000000001.quest_desc: ["Mine and gather 64 Raw Zinc - the alloy metal Create runs on."]
 	quest.2B00000000000001.title: "Zinc from the hills"
 	quest.2B00000000000002.quest_desc: ["Mine 64 Andesite. The bulk of every early machine."]
