@@ -268,6 +268,11 @@ write(f"{R}/inventory_2x2/stone_pour_channel.json",        # R02D
                 "bertieprogression:stone_pour_channel"))
 write(f"{R}/inventory_2x2/hand_crank.json",                # R14D  (PP/PA)
       shaped(["PP", "PA"], {"P": "#minecraft:planks", "A": "create:andesite_alloy"}, "create:hand_crank"))
+# A chest without a crafting table. Vanilla's 8-plank ring is untouched; this is a second route.
+write(f"{R}/inventory_2x2/chest.json",
+      shaped(["SW", "PP"], {"S": "minecraft:stick", "W": "#minecraft:wooden_pressure_plates",
+                            "P": "#minecraft:planks"},
+             "minecraft:chest"))
 # R18 (Licensed Crafting Plinth) was removed with the block.
 # Pre-table Mundabitur Dust is shapeless 4 -> 1; the R28A table bulk route remains 6 -> 4.
 write(f"{R}/inventory_2x2/mundabitur_dust_pretable.json",
@@ -318,6 +323,10 @@ write(f"{R}/slag/first_copper_ingots.json",  double_smelting("minecraft:raw_copp
 write(f"{R}/slag/first_iron_ingots.json",    double_smelting("minecraft:raw_iron", "minecraft:raw_iron", "minecraft:iron_ingot", 1))         # R05D2
 write(f"{R}/slag/first_gold_ingots.json",    double_smelting("minecraft:raw_gold", "minecraft:raw_gold", "minecraft:gold_ingot", 1))         # R05D3
 write(f"{R}/slag/first_zinc_ingots.json",    double_smelting("create:raw_zinc", "create:raw_zinc", "create:zinc_ingot", 1))                  # R05D4
+write(f"{R}/slag/first_silver_ingots.json",  double_smelting("#c:raw_materials/silver", "#c:raw_materials/silver", "iceandfire:silver_ingot", 1))
+# Rose Gold: Slag's own bed gives 2 per copper+gold pair. One.
+write("data/slag/recipe/double_smelting/rose_gold_ingot.json",
+      double_smelting("#c:ingots/copper", "#c:ingots/gold", "slag:rose_gold_ingot", 1, 200, 1.4))
 # Runes: two Runic Stones double-smelt into 2 Runes on the Brick Forge.
 write(f"{R}/slag/runes.json",
       double_smelting("#forbidden_arcanus:runic_stones", "#forbidden_arcanus:runic_stones",
@@ -519,12 +528,17 @@ write(f"{R}/mechanical/exclusive/dragonbone_braces_3x3.json",   # R39A (single r
            {"M": "pastel:moonstone_chiseled_calcite", "A": "betterend:aeternium_ingot",
             "F": "bertieprogression:dragonbone_frame"},
            "bertieprogression:dragonbone_brace", 8))
-write(f"{R}/mechanical/exclusive/avaritia_nether_crafting_table.json",  # R41
-      mech(["IPEPD", "PRIDP", "EIMDE", "PRDIP", "RPEPR"],
-           {"I": "bertieprogression:ignitium_strut", "D": "bertieprogression:dragonbone_brace",
-            "E": "minecraft:end_stone_bricks", "R": "deeperdarker:reinforced_echo_shard",
-            "P": "pastel:moonstone_glass", "M": "bertieprogression:convergence_matrix"},
-           "avaritia:nether_crafting_table"))
+# R41 Nether Crafting Table went back to Avaritia's own recipe.
+# The two compressed tables become crafter walls instead of 3x3 stacks of themselves: nine tables
+# by hand was never the interesting part.
+write(f"{R}/mechanical/exclusive/compressed_crafting_table.json",       # R41A
+      mech(["CCCC", "CCCC", "CCCC", "CCCC"],
+           {"C": "minecraft:crafting_table"},
+           "avaritia:compressed_crafting_table"))
+write(f"{R}/mechanical/exclusive/double_compressed_crafting_table.json",  # R41B
+      mech(["CCCCC", "CCCCC", "CCCCC", "CCCCC", "CCCCC"],
+           {"C": "avaritia:compressed_crafting_table"},
+           "avaritia:double_compressed_crafting_table"))
 
 # ---- Pastel ----
 write(f"{R}/pastel/complex_spectrum_seals.json",           # R37A
@@ -559,6 +573,55 @@ write(f"{R}/avaritia/mekanism_access_core.json", {         # R42 — exact §8.5
     },
     "pattern": ["IDPDI", "BOSOB", "PSCSP", "BOSOB", "IDPDI"],
     "result": {"id": "bertieprogression:mekanism_access_core", "count": 1},
+})
+
+# Sculk Crafting Table: still a plain 3x3, but it now costs the soul-infused metal and the two
+# relics rather than a ring of sculk. Overrides Avaritia's own file.
+write("data/avaritia/recipe/sculk_crafting_table.json",
+      shaped(["SKS", "FDF", "SBS"],
+             {"S": "elemental_metals:soul_infused_iron_ingot", "K": "minecraft:sculk_shrieker",
+              "F": "irons_spellbooks:ancient_knowledge_fragment",
+              "D": "avaritia:double_compressed_crafting_table",
+              "B": "mythsandlegends:bound_soul_ingot"},
+             "avaritia:sculk_crafting_table"))
+
+# Altar of Amethyst had no recipe at all - Cataclysm only places it in structures. On the Sculk
+# table (avaritia:shaped_table tier 1: SCULK, NETHER, END, EXTREME are tiers 1-4).
+write(f"{R}/avaritia/altar_of_amethyst.json", {
+    "neoforge:conditions": conds("avaritia", "cataclysm", "irons_spellbooks", "l2complements",
+                                 "iceandfire", "slag"),
+    "type": "avaritia:shaped_table",
+    "tier": 1,
+    "key": {
+        "A": {"item": "minecraft:amethyst_cluster"},
+        "I": {"item": "cataclysm:ignitium_ingot"},
+        "S": {"item": "irons_spellbooks:divine_soulshard"},
+        "T": {"item": "l2complements:totemic_gold_block"},
+        "R": {"item": "iceandfire:dragonscale_red"},
+        "D": {"item": "slag:deep_alloy_block"},
+    },
+    "pattern": ["AIS", "TRT", "DRD"],
+    "result": {"id": "cataclysm:altar_of_amethyst", "count": 1},
+})
+
+# Null Blaze Cube: Avaritia's own 5x5 now yields the inert cube, and the live one is blessed out of
+# it on the Altar of Amethyst over a full Minecraft day.
+write("data/avaritia/recipe/blaze_cube.json", {
+    "neoforge:conditions": conds("avaritia"),
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "key": {"a": {"item": "minecraft:ancient_debris"}, "b": {"item": "minecraft:blaze_powder"},
+            "c": {"item": "minecraft:fire_charge"}, "x": {"item": "minecraft:blaze_rod"},
+            "y": {"item": "minecraft:bone"}},
+    "pattern": [" bcb ", "byxyb", "cxaxc", "byxyb", " bcb "],
+    "result": {"id": "bertieprogression:null_blaze_cube", "count": 1},
+})
+write(f"{R}/cataclysm/blaze_cube.json", {
+    "neoforge:conditions": conds("avaritia", "cataclysm"),
+    "type": "cataclysm:amethyst_bless",
+    "ingredient": {"item": "bertieprogression:null_blaze_cube"},
+    "result": {"id": "avaritia:blaze_cube"},
+    "time": 24000,
 })
 
 # ---------------------------------------------------------------- stock overrides
@@ -822,6 +885,26 @@ write(f"{R}/ignitium_ingot_from_clibano_combustion.json", {
     "residue": {"type": "bertieprogression:ignitium", "chance": 0.1},
     "result": {"count": 1, "id": "mythsandlegends:bound_soul_ingot"},
 })
+# Silver and zinc get a Clibano route as well as the Brick Forge one (zinc's forge bed is R05D4).
+write(f"{R}/silver_ingot_from_clibano_combustion.json", {
+    "type": "forbidden_arcanus:clibano_combustion",
+    "category": "misc",
+    "cooking_time": 200,
+    "experience": 0.7,
+    "fire_type": "fire",
+    "ingredients": {"first": {"tag": "c:raw_materials/silver"},
+                    "second": {"tag": "c:raw_materials/silver"}},
+    "result": {"count": 3, "id": "iceandfire:silver_ingot"},
+})
+write(f"{R}/zinc_ingot_from_clibano_combustion.json", {
+    "type": "forbidden_arcanus:clibano_combustion",
+    "category": "misc",
+    "cooking_time": 200,
+    "experience": 0.7,
+    "fire_type": "fire",
+    "ingredients": {"first": {"item": "create:raw_zinc"}, "second": {"item": "create:raw_zinc"}},
+    "result": {"count": 3, "id": "create:zinc_ingot"},
+})
 # Slow-clibano residue is Arcane Crystal Dust rather than the secondary input.
 write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
     "combine_info": {"required_amount": 1, "result": {"count": 1, "id": "forbidden_arcanus:arcane_crystal_dust"}},
@@ -831,11 +914,26 @@ write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
 # Deeper and Darker: Reinforced Echo goes through the Warden Echo Pattern (R31/R31R)
 write("data/deeperdarker/recipe/reinforced_echo_shard.json", DISABLED)
 
+# Sophisticated Backpacks: the plain backpack drops from a 3x3 to the 2x2 grid, so it lands with the
+# chest rather than after it. Keeps sophisticatedbackpacks:basic_backpack - the type carries the
+# upgrade slots and the item-enabled condition, and a vanilla shaped recipe would lose both.
+write("data/sophisticatedbackpacks/recipe/backpack.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": "sophisticatedbackpacks:backpack"}],
+    "type": "sophisticatedbackpacks:basic_backpack",
+    "category": "misc",
+    "key": {"L": {"tag": "c:leathers"}, "S": {"tag": "c:strings"}, "C": {"tag": "c:chests/wooden"}},
+    "pattern": ["LS", "CS"],
+    "result": {"count": 1, "id": "sophisticatedbackpacks:backpack"},
+})
+
 # Pastel's own recipes remain untouched. In particular, the Fusion Shrine keeps both stock pedestal
 # recipes and R22 no longer moves it to the licensed table.
 
-# Avaritia: R41 is the sole Nether Crafting Table source
-write("data/avaritia/recipe/nether_crafting_table.json", DISABLED)
+# Avaritia: both compressed tables are crafter-wall only (R41A/R41B); the stock 3x3 stacks go.
+# The reverse "uncrafting" recipes are left alone - they only give back what you put in.
+write("data/minecraft/recipe/compressed_crafting_table.json", DISABLED)
+write("data/minecraft/recipe/double_compressed_crafting_table.json", DISABLED)
 
 # Forbidden Arcanus: pedestal via Brick-Forge bed (R09A); stock 3x3 disabled
 write("data/forbidden_arcanus/recipe/darkstone_pedestal.json", DISABLED)
@@ -1768,6 +1866,28 @@ write(f"{RIT}/netherly_meal.json",
              "bertieprogression:netherly_meal", 1, tier=2,
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
 
+# --- Pastel's opening moves become forge work. ---
+# Paintbrush: a Tier-I ritual on the Totemic Staff, two of each starter shard, 500 ink. The stock
+# stick-copper-wool craft goes, so the brush arrives with the forge rather than before it.
+write(f"{RIT}/paintbrush.json",
+      ritual("malum:totemic_staff",
+             [("minecraft:amethyst_shard", 2), ("pastel:citrine_shard", 2),
+              ("pastel:topaz_shard", 2)],
+             "pastel:paintbrush", 1, tier=1, xp=500))
+write("data/pastel/recipe/crafting_table/paintbrush.json", DISABLED)
+# The three starter Pigment Pedestals: Tier-II, a Compressed Crafting Table at the core, four of the
+# matching shard and two of its wool. 50 souls and 1350 ink are the TIER II ceilings (jar-verified
+# from HephaestusForgeLevel: 3000/50/15000/1350); the aureal cost is deliberate, not a ceiling.
+for _gem, _shard, _wool in (("topaz", "pastel:topaz_shard", "minecraft:cyan_wool"),
+                            ("amethyst", "minecraft:amethyst_shard", "minecraft:purple_wool"),
+                            ("citrine", "pastel:citrine_shard", "minecraft:yellow_wool")):
+    write(f"{RIT}/pedestal_basic_{_gem}.json",
+          ritual("avaritia:compressed_crafting_table",
+                 [(_shard, 4), (_wool, 2), ("minecraft:red_nether_bricks", 1)],
+                 f"pastel:pedestal_basic_{_gem}", 1, tier=2,
+                 essences={"aureal": 360, "blood": 0, "souls": 50}, xp=1350))
+    write(f"data/pastel/recipe/crafting_table/pedestal_basic_{_gem}.json", DISABLED)
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
@@ -1780,6 +1900,130 @@ write("data/bertieprogression/tags/worldgen/structure/nether_fortress.json",
       {"values": [{"id": "minecraft:fortress", "required": False},
                   {"id": "betterfortresses:fortress", "required": False}]})
 
+INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "instances",
+                             # This is a filesystem path, not prose: the Prism instance is named
+                             # "s1 demo" and changing it makes the generator scan the wrong jars.
+                             "s1 demo", ".minecraft", "mods")
+
+# ================================================================ BRICK FORGE ORE BONUS
+# Every Brick Forge ore smelt gets a 1% chance of also dropping a storage block of what it made.
+# slag:double_smelting has no secondary-output field, so BrickForgeBonus.java reads this table and
+# rolls it when the forge finishes; the table is generated, never hand-written.
+#
+# What counts as an "ore smelt" is decided by the pack's own data rather than by a list here: the
+# recipe's result has to be a member of some `c:ingots/*` or `c:gems/*` tag. That is what makes a
+# result a smelted MATERIAL, and it is why the terracotta, brick, stone and dye double-smelts are
+# not in the table. A material with no storage block is skipped, as asked.
+BRICK_FORGE_BONUS_PATH = "brick_forge_bonus.json"
+
+def _brick_forge_bonus():
+    import zipfile
+    jars = ([os.path.join(INSTANCE_MODS, f) for f in sorted(os.listdir(INSTANCE_MODS))
+             if f.endswith(".jar")] if os.path.isdir(INSTANCE_MODS) else [])
+    vanilla = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "libraries", "com",
+                           "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
+    if os.path.isfile(vanilla):
+        jars.append(vanilla)
+    if not jars:
+        return None
+
+    items, tags, results = set(), {}, {}
+
+    def take_recipe(text):
+        try:
+            obj = json.loads(text)
+        except ValueError:
+            return
+        if obj.get("type") != "slag:double_smelting":
+            return
+        res = obj.get("result") or {}
+        if not (isinstance(res, dict) and isinstance(res.get("id"), str)):
+            return
+        ins = set()
+        for side in ("ingredientA", "ingredientB"):
+            ing = obj.get(side) or {}
+            if isinstance(ing, dict):
+                ins.update(v for v in (ing.get("item"), ing.get("tag")) if isinstance(v, str))
+        results.setdefault(res["id"], set()).update(ins)
+
+    for jp in jars:
+        try:
+            zf = zipfile.ZipFile(jp)
+        except zipfile.BadZipFile:
+            continue
+        with zf:
+            for n in zf.namelist():
+                p = n.split("/")
+                if (len(p) >= 5 and p[0] == "assets" and p[2] == "models" and p[3] == "item"
+                        and n.endswith(".json")):
+                    items.add(f"{p[1]}:{'/'.join(p[4:])[:-5]}")
+                elif n.startswith("data/c/tags/item/") and n.endswith(".json"):
+                    key = n[len("data/c/tags/item/"):-5]
+                    try:
+                        vals = json.loads(zf.read(n).decode("utf-8")).get("values", [])
+                    except (ValueError, UnicodeDecodeError):
+                        continue
+                    tags.setdefault(key, set()).update(
+                        v if isinstance(v, str) else v.get("id") for v in vals)
+                elif "/recipe" in n and n.endswith(".json"):
+                    try:
+                        take_recipe(zf.read(n).decode("utf-8"))
+                    except (KeyError, UnicodeDecodeError):
+                        pass
+
+    # This run's own recipes are not in any jar yet.
+    for rel in written:
+        if "/recipe/" in rel or rel.startswith("data/slag/recipe/"):
+            try:
+                with io.open(os.path.join(RES, rel.replace("/", os.sep)), encoding="utf-8") as f:
+                    take_recipe(f.read())
+            except OSError:
+                pass
+
+    material_of = {}
+    for key, vals in tags.items():
+        if key.startswith(("ingots/", "gems/")):
+            for v in vals:
+                if v:
+                    material_of.setdefault(v, key.split("/", 1)[1])
+
+    bonus, skipped = {}, []
+    for res, ins in sorted(results.items()):
+        ns, name = res.split(":", 1)
+        mat = material_of.get(res)
+        # Three ways to be an ore smelt: the result is a c:-tagged material, it is an ingot (the
+        # vanilla metals are in no c: tag), or it was smelted out of raw ore.
+        from_raw = any("raw_" in i or i.startswith("c:raw_materials/") for i in ins)
+        if not mat and not name.endswith("_ingot") and not from_raw:
+            continue
+        stem = name[:-6] if name.endswith("_ingot") else name
+        stems = [stem] + ([stem[len("refined_"):]] if stem.startswith("refined_") else [])
+        # Same namespace first: several mods tag a c:storage_blocks/<mat> and picking whichever
+        # sorts first hands Create's zinc to AnvilCraft's block.
+        rank = {ns: 0, "minecraft": 1}
+        candidates = sorted(tags.get(f"storage_blocks/{mat}", set()) if mat else (),
+                            key=lambda c: (rank.get(c.split(":", 1)[0], 2), c))
+        candidates += [f"{ns}:{s}{suffix}" for s in stems
+                       for suffix in ("_block",)] + [f"{ns}:block_of_{s}" for s in stems]
+        block = next((c for c in candidates if c and c in items), None)
+        if block:
+            bonus[res] = block
+        else:
+            skipped.append(res)
+    return bonus, skipped
+
+_bf = _brick_forge_bonus()
+if _bf is None:
+    print("  !! brick forge bonus: no jars found - table left as it was.")
+else:
+    _bonus, _skipped = _bf
+    write(BRICK_FORGE_BONUS_PATH, dict(sorted(_bonus.items())))
+    print(f"  brick forge bonus: {len(_bonus)} ore smelts got a 1% block")
+    for _r, _b in sorted(_bonus.items()):
+        print(f"      {_r}  ->  {_b}")
+    for _r in _skipped:
+        print(f"      {_r}  ->  (no storage block, skipped)")
+
 # ================================================================ REMOVED ITEMS
 # Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's
 # README.md. The planning records remain in the private workspace; generated runtime data remains
@@ -1791,11 +2035,6 @@ write("data/bertieprogression/tags/worldgen/structure/nether_fortress.json",
 #      every creative tab (and therefore from EMI, whose index-source is `creative`);
 #   3. rewrites the LEAKS block in each doc with the loot tables that still reference a removed id.
 # Needs a synced bertie pack instance to scan. Without it: warn and skip, never silently emit nothing.
-
-INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "instances",
-                             # This is a filesystem path, not prose: the Prism instance is named
-                             # "s1 demo" and changing it makes the generator scan the wrong jars.
-                             "s1 demo", ".minecraft", "mods")
 
 def _parse_removed(path, modid):
     """Strict pipe-table parser. A malformed row is a build error, never a silent skip."""
@@ -2259,6 +2498,7 @@ ITEMS = {
     "crafting_license": "Crafting License",
     "twilight_concord": "Twilight Concord",
     "spirit_focused_echo": "Spirit-Focused Echo",
+    "null_blaze_cube": "Null Blaze Cube",
     "warden_echo_pattern": "Warden Echo Pattern",
     "echoing_city_compass": "Echoing City Compass",
     "weeping_compass": "Weeping Compass",

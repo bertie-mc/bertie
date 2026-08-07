@@ -1,0 +1,40 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 0,
+    "souls": 0,
+    "experience": 500
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "pastel:citrine_shard"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "pastel:topaz_shard"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "malum:totemic_staff"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "pastel:paintbrush",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

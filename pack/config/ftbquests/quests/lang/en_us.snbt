@@ -175,6 +175,14 @@
 	quest.1C00000000000049.title: "Ravenous Pouch"
 	quest.1C0000000000004A.quest_desc: ["At the Spirit Altar, reforge a Crude Scythe with 2 Dragon Bones, 6 Soulstained Steel Plating, 12 Malignant Lead and 20 Mnemonic Fragments, paid eight of every spirit."]
 	quest.1C0000000000004A.title: "Soulstained Steel Scythe"
+	quest.1C0000000000004B.quest_desc: ["Find an Ancient City and go in. Everything past this point is sculk."]
+	quest.1C0000000000004B.title: "Enter the Ancient City"
+	quest.1C0000000000004C.quest_desc: ["One Echo Shard out of the city's chests."]
+	quest.1C0000000000004C.title: "Echo Shard"
+	quest.1C0000000000004D.quest_desc: ["Soul-Infused Iron at the corners, an Ancient Knowledge Fragment either side, a Sculk Shrieker above and a Bound Soul Ingot below, around a Double Compressed Crafting Table."]
+	quest.1C0000000000004D.title: "Sculk Crafting Table"
+	quest.1C0000000000004E.quest_desc: ["On the Sculk table: an Amethyst Cluster, an Ignitium Ingot and a Divine Soulshard over Totemic Gold, Dragon Scales and Deep Alloy. It only works at night, and only under open sky or in a lush cave."]
+	quest.1C0000000000004E.title: "The Altar of Amethyst"
 	quest.2B00000000000001.quest_desc: ["Mine and gather 64 Raw Zinc - the alloy metal Create runs on."]
 	quest.2B00000000000001.title: "Zinc from the hills"
 	quest.2B00000000000002.quest_desc: ["Mine 64 Andesite. The bulk of every early machine."]
@@ -311,12 +319,6 @@
 	quest.2B00000000000043.title: "First Real Challenge"
 	quest.2B00000000000044.quest_desc: ["The last thing Chapter 2 asks of you. A Tier-1 Hephaestus ritual burns a Crafting Table down into a licence: 1000 Aureal, 10 Souls, 10000 Blood and 900 Ink, around eight pedestals - Exanimate Essence, a Precision Mechanism, a Bound Soul Ingot, a Totemic Gold Ingot, an Electron Tube, a Structural Beam, a Blank Runestone and a Book and Quill. Consume it and the 3x3 grid is yours for good; it survives death and follows you everywhere. Until then every crafting table refuses to open."]
 	quest.2B00000000000044.title: "The Crafting License"
-	quest.2B00000000000045.quest_desc: ["On the licensed table: Chiseled Arcane Darkstone, the three gem shards, an Arcane Spirit and a Brass Sheet (strike Brass Ingots on the forge)."]
-	quest.2B00000000000045.title: "Fusion Shrine"
-	quest.2B00000000000046.quest_desc: ["Craft a Topaz/Amethyst/Citrine pedestal, then upgrade to the All-Basic core at the pedestal itself. Pastel tiers one and two."]
-	quest.2B00000000000046.title: "BASIC pedestal"
-	quest.2B00000000000047.quest_desc: ["At midnight under a new moon, the Fusion Shrine fuses the three shards over lava into Onyx. Craft TWO Onyx Pedestals while the All-Basic core still stands."]
-	quest.2B00000000000047.title: "Lunar onyx"
 	quest.2B00000000000048.quest_desc: ["Hephaestus-forge the Lich Trophy into an Acolyte of Deflection (2 Dragon Bones, 2 Hallowed Gold Ingots, a Shattered Skull, a Precision Mechanism, a Bound Soul Ingot and a Magic Map Focus). Dupe the trophy at the Spirit Altar first if you want to keep one on the wall."]
 	quest.2B00000000000048.title: "The Acolyte of Deflection"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
@@ -429,6 +431,20 @@
 	quest.3B00000000000040.title: "A Pigment Pedestal"
 	quest.3B00000000000041.quest_desc: ["Get inside a Nether Fortress."]
 	quest.3B00000000000041.title: "Into the Fortress"
+	quest.3B00000000000042.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
+	quest.3B00000000000042.title: "Three Wither Skulls"
+	quest.3B00000000000043.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
+	quest.3B00000000000043.title: "The Wither"
+	quest.3B00000000000044.quest_desc: ["What the Wither leaves behind."]
+	quest.3B00000000000044.title: "The Nether Star"
+	quest.3B00000000000045.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
+	quest.3B00000000000045.title: "Eye of Mech"
+	quest.3B00000000000046.quest_desc: ["Follow the eye and get inside."]
+	quest.3B00000000000046.title: "The Ancient Factory"
+	quest.3B00000000000047.quest_desc: ["The last thing in the factory. It drops Witherite."]
+	quest.3B00000000000047.title: "The Harbinger"
+	quest.3B00000000000048.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
+	quest.3B00000000000048.title: "The Paintbrush"
 	quest.4B00000000000001.quest_desc: ["Optional: a Tier-2 ritual binds a Compass to the nearest Ancient City. Use it and follow the pulse."]
 	quest.4B00000000000001.title: "Echoing City Compass"
 	quest.4B00000000000002.quest_desc: ["Wake it. Kill it honestly. Its guaranteed Warden Carapace becomes a reusable pattern."]

@@ -1,0 +1,19 @@
+{
+  "type": "forbidden_arcanus:clibano_combustion",
+  "category": "misc",
+  "cooking_time": 200,
+  "experience": 0.7,
+  "fire_type": "fire",
+  "ingredients": {
+    "first": {
+      "item": "create:raw_zinc"
+    },
+    "second": {
+      "item": "create:raw_zinc"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "create:zinc_ingot"
+  }
+}

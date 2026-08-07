@@ -514,7 +514,7 @@
 						type: "item"
 					}
 				]
-			x: 0.562d
+			x: -0.562d
 			y: -15.974d
 		}
 		{
@@ -609,7 +609,7 @@
 						type: "item"
 					}
 				]
-			x: -0.562d
+			x: 0.562d
 			y: -15.974d
 		}
 		{
@@ -1045,6 +1045,101 @@
 				]
 			x: -10.5d
 			y: 0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:sculk_catalyst"
+			}
+			dependencies: ["1C0000000000000C"]
+			id: "1C0000000000004B"
+			rewards: [{
+				id: "1C0000000200004B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:sculk_catalyst"
+						}
+						id: "1C0000000100004B"
+						structure: "minecraft:ancient_city"
+						type: "structure"
+					}
+				]
+			x: -7.3d
+			y: -11.25d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			dependencies: ["1C0000000000004B"]
+			id: "1C0000000000004C"
+			rewards: [{
+				id: "1C0000000200004C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100004C"
+						item: { count: 1 id: "minecraft:echo_shard" }
+						type: "item"
+					}
+				]
+			x: -8.05d
+			y: -12.55d
+		}
+		{
+			icon: {
+				count: 1
+				id: "avaritia:sculk_crafting_table"
+			}
+			dependencies: ["1C0000000000004C", "1C0000000000001D"]
+			id: "1C0000000000004D"
+			rewards: [{
+				id: "1C0000000200004D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100004D"
+						item: { count: 1 id: "avaritia:sculk_crafting_table" }
+						type: "item"
+					}
+				]
+			x: -8.8d
+			y: -13.85d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:altar_of_amethyst"
+			}
+			dependencies: ["1C0000000000004D"]
+			id: "1C0000000000004E"
+			rewards: [{
+				id: "1C0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100004E"
+						item: { count: 1 id: "cataclysm:altar_of_amethyst" }
+						type: "item"
+					}
+				]
+			x: -9.55d
+			y: -15.15d
 		}
 	]
 }

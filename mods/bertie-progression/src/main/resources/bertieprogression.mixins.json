@@ -6,7 +6,8 @@
   "refmap": "bertieprogression.refmap.json",
   "mixins": [
     "AltarOfAmethystAccessor",
-    "AltarOfAmethystMixin"
+    "AltarOfAmethystMixin",
+    "ForgeBEMixin"
   ],
   "injectors": {
     "defaultRequire": 0

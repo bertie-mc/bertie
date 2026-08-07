@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "elemental_metals:soul_infused_iron_ingot"
+    },
+    "K": {
+      "item": "minecraft:sculk_shrieker"
+    },
+    "F": {
+      "item": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    "D": {
+      "item": "avaritia:double_compressed_crafting_table"
+    },
+    "B": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  },
+  "pattern": [
+    "SKS",
+    "FDF",
+    "SBS"
+  ],
+  "result": {
+    "id": "avaritia:sculk_crafting_table",
+    "count": 1
+  }
+}

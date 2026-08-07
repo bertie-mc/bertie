@@ -1,0 +1,40 @@
+{
+  "essences": {
+    "aureal": 360,
+    "blood": 0,
+    "souls": 50,
+    "experience": 1350
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:purple_wool"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:red_nether_bricks"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "avaritia:compressed_crafting_table"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "pastel:pedestal_basic_amethyst",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

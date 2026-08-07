@@ -1404,5 +1404,177 @@
 			x: -2.18d
 			y: 3.6d
 		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:wither_skeleton_skull"
+			}
+			dependencies: ["3B00000000000041"]
+			id: "3B00000000000042"
+			rewards: [{
+				id: "3B00000002000042"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 3L
+						id: "3B00000001000042"
+						item: { count: 1 id: "minecraft:wither_skeleton_skull" }
+						type: "item"
+					}
+				]
+			x: -0.68d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:wither_rose"
+			}
+			dependencies: ["3B00000000000042"]
+			id: "3B00000000000043"
+			rewards: [{
+				id: "3B00000002000043"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:wither_rose"
+						}
+						id: "3B00000001000043"
+						entity: "minecraft:wither"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 0.82d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			dependencies: ["3B00000000000043"]
+			id: "3B00000000000044"
+			rewards: [{
+				id: "3B00000002000044"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000044"
+						item: { count: 1 id: "minecraft:nether_star" }
+						type: "item"
+					}
+				]
+			x: 2.32d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:mech_eye"
+			}
+			dependencies: ["3B00000000000044"]
+			id: "3B00000000000045"
+			rewards: [{
+				id: "3B00000002000045"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000045"
+						item: { count: 1 id: "cataclysm:mech_eye" }
+						type: "item"
+					}
+				]
+			x: 3.82d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:laser_gatling"
+			}
+			dependencies: ["3B00000000000045"]
+			id: "3B00000000000046"
+			rewards: [{
+				id: "3B00000002000046"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "cataclysm:laser_gatling"
+						}
+						id: "3B00000001000046"
+						structure: "cataclysm:ancient_factory"
+						type: "structure"
+					}
+				]
+			x: 5.32d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:witherite_block"
+			}
+			dependencies: ["3B00000000000046"]
+			id: "3B00000000000047"
+			rewards: [{
+				id: "3B00000002000047"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "cataclysm:witherite_block"
+						}
+						id: "3B00000001000047"
+						entity: "cataclysm:the_harbinger"
+						type: "kill"
+						value: 1L
+					}
+				]
+			x: 6.82d
+			y: 3.6d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:paintbrush"
+			}
+			dependencies: ["3B00000000000040"]
+			id: "3B00000000000048"
+			rewards: [{
+				id: "3B00000002000048"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000048"
+						item: { count: 1 id: "pastel:paintbrush" }
+						type: "item"
+					}
+				]
+			x: -0.68d
+			y: 1.3d
+		}
 	]
 }

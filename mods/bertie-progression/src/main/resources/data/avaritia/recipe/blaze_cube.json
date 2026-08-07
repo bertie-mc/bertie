@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "key": {
+    "a": {
+      "item": "minecraft:ancient_debris"
+    },
+    "b": {
+      "item": "minecraft:blaze_powder"
+    },
+    "c": {
+      "item": "minecraft:fire_charge"
+    },
+    "x": {
+      "item": "minecraft:blaze_rod"
+    },
+    "y": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern": [
+    " bcb ",
+    "byxyb",
+    "cxaxc",
+    "byxyb",
+    " bcb "
+  ],
+  "result": {
+    "id": "bertieprogression:null_blaze_cube",
+    "count": 1
+  }
+}

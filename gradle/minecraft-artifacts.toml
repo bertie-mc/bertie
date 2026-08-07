@@ -813,10 +813,6 @@ curseforge = { slug = "glassbreaker", project-id = 819494, file-id = 5681247 }
 modrinth = { project-id = "s3dmwKy5", version-id = "S2TfWrZR", filename = "GlitchCore-neoforge-1.21.1-2.1.0.2.jar" }
 curseforge = { slug = "glitchcore", project-id = 955399, file-id = 8109792 }
 
-[mods.golem-dungeons]
-modrinth = { project-id = "5OrL8C4a", version-id = "tQhakMGs", filename = "golemdungeons-2.0.9.jar" }
-curseforge = { slug = "golem-dungeons", project-id = 1328313, file-id = 7903491 }
-
 [mods.gravelminer]
 modrinth = { project-id = "iAzrhsju", version-id = "8QA0TT89", filename = "gravelminer-neoforge-1.21.1-21.1.3.jar" }
 curseforge = { slug = "gravelminer", project-id = 244759, file-id = 7966182 }
@@ -1204,10 +1200,6 @@ curseforge = { slug = "modernfix", project-id = 790626, file-id = 8224323 }
 [mods.modonomicon]
 modrinth = { project-id = "692GClaE", version-id = "Uw0AZJKz", filename = "modonomicon-1.21.1-neoforge-1.120.1.jar" }
 curseforge = { slug = "modonomicon", project-id = 538392, file-id = 7771524 }
-
-[mods.modular-golems]
-modrinth = { project-id = "gtGDlsAD", version-id = "TOZNxPlx", filename = "modulargolems-3.1.38.jar" }
-curseforge = { slug = "modulargolems", project-id = 690937, file-id = 8158491 }
 
 [mods.modular-machinery-reborn]
 modrinth = { project-id = "oPdlqv8D", version-id = "ThNbTOeP", filename = "modular_machinery_reborn-1.21.1-3.0.17.jar" }

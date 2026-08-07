@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:double_smelting",
+  "ingredientA": {
+    "tag": "c:ingots/copper"
+  },
+  "ingredientB": {
+    "tag": "c:ingots/gold"
+  },
+  "result": {
+    "id": "slag:rose_gold_ingot",
+    "count": 1
+  },
+  "experience": 1.4,
+  "cookingTime": 200
+}

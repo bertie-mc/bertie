@@ -1,0 +1,19 @@
+{
+  "type": "forbidden_arcanus:clibano_combustion",
+  "category": "misc",
+  "cooking_time": 200,
+  "experience": 0.7,
+  "fire_type": "fire",
+  "ingredients": {
+    "first": {
+      "tag": "c:raw_materials/silver"
+    },
+    "second": {
+      "tag": "c:raw_materials/silver"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "iceandfire:silver_ingot"
+  }
+}

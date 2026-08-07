@@ -95,6 +95,9 @@ public final class ModItems {
             "descent_anchor",
             () -> new DescentAnchorItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
+    // --- Avaritia ---
+    public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
+
     // --- Deep dark / echo chain ---
     public static final DeferredItem<Item> WARDEN_ECHO_PATTERN = rare("warden_echo_pattern", 1, Rarity.UNCOMMON);
     public static final DeferredItem<Item> SPIRIT_FOCUSED_ECHO = simple("spirit_focused_echo", 16);

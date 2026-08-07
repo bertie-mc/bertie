@@ -1,0 +1,11 @@
+{
+  "create:zinc_ingot": "create:zinc_block",
+  "iceandfire:silver_ingot": "iceandfire:silver_block",
+  "malum:refined_brilliance": "malum:block_of_brilliance",
+  "malum:refined_soulstone": "malum:block_of_soulstone",
+  "minecraft:copper_ingot": "minecraft:copper_block",
+  "minecraft:gold_ingot": "minecraft:gold_block",
+  "minecraft:iron_ingot": "minecraft:iron_block",
+  "slag:deep_alloy": "slag:deep_alloy_block",
+  "slag:rose_gold_ingot": "slag:rose_gold_block"
+}

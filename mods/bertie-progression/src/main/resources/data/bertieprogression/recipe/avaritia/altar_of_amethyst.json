@@ -1,0 +1,59 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "iceandfire"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 1,
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "I": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "S": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "T": {
+      "item": "l2complements:totemic_gold_block"
+    },
+    "R": {
+      "item": "iceandfire:dragonscale_red"
+    },
+    "D": {
+      "item": "slag:deep_alloy_block"
+    }
+  },
+  "pattern": [
+    "AIS",
+    "TRT",
+    "DRD"
+  ],
+  "result": {
+    "id": "cataclysm:altar_of_amethyst",
+    "count": 1
+  }
+}
