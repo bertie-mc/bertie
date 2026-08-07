@@ -85,6 +85,12 @@
 	quest.1B00000000000026.title: "Wooden boots"
 	quest.1B00000000000027.quest_desc: ["Bank 64 Corrupted Arcane Crystal - the soured half of the vein."]
 	quest.1B00000000000027.title: "A corrupted vein"
+	quest.1B0000000000002F.quest_desc: ["Leather and string over a chest and a Bundle, in the 2x2 grid. It fits before a crafting table does."]
+	quest.1B0000000000002F.title: "A Backpack"
+	quest.1B00000000000030.quest_desc: ["Two Blocks of Copper and a Rabbit Hide around the backpack, still in the 2x2 grid. The upgrade carries whatever is inside it."]
+	quest.1B00000000000030.title: "Copper Backpack"
+	quest.1B00000000000031.quest_desc: ["A Tier-I ritual on the Copper Backpack: 4 Blocks of Iron, 2 Colossal Iron and 2 Kangaroo Hide, for 5000 blood and 50 aureal. Empty it first - the forge does not carry contents across."]
+	quest.1B00000000000031.title: "Iron Backpack"
 	quest.1C00000000000002.quest_desc: ["Souls drop from the Lost Soul family that drifts through the dark. Lost, Corrupt and Enchanted Souls all count toward this - bring back any four."]
 	quest.1C00000000000002.title: "Get Souls"
 	quest.1C00000000000003.quest_desc: ["Aureal comes bottled, and the Forge fills the bottle for nothing: a ritual on a plain Water Bottle with 4 Arcane Crystal Dust, 2 Rotten Flesh and 2 of any meat - no essence cost, because you cannot spend Aureal you do not have yet. Arcane Crystal Obelisks set into the forge multiblock also generate it passively, forever."]

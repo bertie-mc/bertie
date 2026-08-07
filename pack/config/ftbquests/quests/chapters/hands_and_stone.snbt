@@ -976,5 +976,74 @@
 			x: 9.0d
 			y: -2.4d
 		}
+		{
+			icon: {
+				count: 1
+				id: "sophisticatedbackpacks:backpack"
+			}
+			dependencies: ["1B00000000000001"]
+			id: "1B0000000000002F"
+			rewards: [{
+				id: "1B0000000200002F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B0000000100002F"
+						item: { count: 1 id: "sophisticatedbackpacks:backpack" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "sophisticatedbackpacks:copper_backpack"
+			}
+			dependencies: ["1B00000000000013", "1B0000000000002F"]
+			id: "1B00000000000030"
+			rewards: [{
+				id: "1B00000002000030"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000030"
+						item: { count: 1 id: "sophisticatedbackpacks:copper_backpack" }
+						type: "item"
+					}
+				]
+			x: 15.0d
+			y: 6.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "sophisticatedbackpacks:iron_backpack"
+			}
+			dependencies: ["1B0000000000001B", "1B00000000000030"]
+			id: "1B00000000000031"
+			rewards: [{
+				id: "1B00000002000031"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000031"
+						item: { count: 1 id: "sophisticatedbackpacks:iron_backpack" }
+						type: "item"
+					}
+				]
+			x: 15.0d
+			y: 1.5d
+		}
 	]
 }

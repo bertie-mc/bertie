@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "# #",
-    "###"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "minecraft:echo_shard"
+      "item": "berlordscarving:echo_slate"
     }
   },
   "result": {

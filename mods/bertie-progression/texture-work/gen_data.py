@@ -922,10 +922,46 @@ write("data/sophisticatedbackpacks/recipe/backpack.json", {
                              "itemRegistryName": "sophisticatedbackpacks:backpack"}],
     "type": "sophisticatedbackpacks:basic_backpack",
     "category": "misc",
-    "key": {"L": {"tag": "c:leathers"}, "S": {"tag": "c:strings"}, "C": {"tag": "c:chests/wooden"}},
-    "pattern": ["LS", "CS"],
+    "key": {"L": {"tag": "c:leathers"}, "S": {"tag": "c:strings"},
+            "C": {"tag": "c:chests/wooden"}, "U": {"item": "minecraft:bundle"}},
+    "pattern": ["LS", "CU"],
     "result": {"count": 1, "id": "sophisticatedbackpacks:backpack"},
 })
+# The tiers above it stop being rings of ingots and become one step each of the pack's own systems.
+# All four keep sophisticatedbackpacks' own recipe types where a type exists: backpack_upgrade is
+# what moves a full backpack's contents into the new one, and a plain shaped recipe would hand the
+# player an empty pack and eat what was inside.
+write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": "sophisticatedbackpacks:copper_backpack"}],
+    "type": "sophisticatedbackpacks:backpack_upgrade",
+    "category": "misc",
+    "key": {"C": {"tag": "c:storage_blocks/copper"}, "R": {"item": "minecraft:rabbit_hide"},
+            "B": {"item": "sophisticatedbackpacks:backpack"}},
+    "pattern": ["CR", "BC"],
+    "result": {"count": 1, "id": "sophisticatedbackpacks:copper_backpack"},
+})
+# Iron: a Tier-I ritual. 5000 blood and 50 aureal are both inside the T1 ceiling (1000/10/10000/900),
+# and the eight pedestals are exactly full.
+write(f"{RIT}/iron_backpack.json",
+      ritual("sophisticatedbackpacks:copper_backpack",
+             [("minecraft:iron_block", 4), ("armageddon_mod:colossal_iron_ingot", 2),
+              ("alexsmobs:kangaroo_hide", 2)],
+             "sophisticatedbackpacks:iron_backpack", 1, tier=1,
+             essences={"aureal": 50, "blood": 5000, "souls": 0}))
+write("data/sophisticatedbackpacks/recipe/iron_backpack.json", DISABLED)
+# Gold: the Spirit Altar, carrying components across so the pack keeps what is in it.
+_gold_backpack = infusion("sophisticatedbackpacks:iron_backpack", 1,
+                          [("minecraft:gold_block", 3), ("armageddon_mod:gilded_plate", 3),
+                           ("malum:block_of_hallowed_gold", 1), ("slag:rose_gold_block", 1),
+                           ("l2complements:totemic_gold_ingot", 3), ("alexscaves:tough_hide", 3),
+                           ("armageddon_mod:gilded_ingot_smithing_template", 1)],
+                          [SP("sacred", 6), SP("aqueous", 12), SP("earthen", 12)],
+                          "sophisticatedbackpacks:gold_backpack", 1)
+_gold_backpack["carryOverComponentData"] = True
+write(f"{R}/malum/gold_backpack.json", _gold_backpack)
+write("data/sophisticatedbackpacks/recipe/gold_backpack.json", DISABLED)
+# Diamond is a sequenced assembly and lives with the other ones, below.
 
 # Pastel's own recipes remain untouched. In particular, the Fusion Shrine keeps both stock pedestal
 # recipes and R22 no longer moves it to the licensed table.
@@ -1303,6 +1339,18 @@ _seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:in
 _seq_assembly(f"{R}/create/small_water_wheel_assembly.json", "bertieprogression:incomplete_small_water_wheel",
               "mythsandlegends:bound_soul_ingot", [("deploy", "bertieprogression:kinetic_vane")] * 8,
               [{"id": "create:water_wheel", "count": 1}], mods=("mythsandlegends",))
+# Diamond: a sequenced assembly. Create's transitional item is a real registered item, so this one
+# needs its own; it reuses a vanilla diamond model rather than new art.
+_seq_assembly(f"{R}/create/diamond_backpack_assembly.json",
+              "bertieprogression:incomplete_diamond_backpack",
+              "sophisticatedbackpacks:gold_backpack",
+              [("deploy", "minecraft:diamond_block")] * 4
+              + [("fill", "slag:molten_diamond", 2592), ("press",)]
+              + [("deploy", "born_in_chaos_v1:diamond_termite_shard")] * 4,
+              [{"id": "sophisticatedbackpacks:diamond_backpack", "count": 1}],
+              mods=("sophisticatedbackpacks", "slag", "born_in_chaos_v1"))
+write("data/sophisticatedbackpacks/recipe/diamond_backpack.json", DISABLED)
+
 # Large Water Wheel: small water wheel + 8x deploy structural beam.
 _seq_assembly(f"{R}/create/large_water_wheel_assembly.json", "bertieprogression:incomplete_large_water_wheel",
               "create:water_wheel", [("deploy", "bertieprogression:kinetic_vane")] * 8,
@@ -1339,14 +1387,14 @@ write(f"{R}/mechanical/kinetics/mason_jar.json",
 write("data/create/recipe/crafting/kinetics/water_wheel.json", DISABLED)
 write("data/create/recipe/crafting/kinetics/large_water_wheel.json", DISABLED)
 
-# --- Colossal Iron Ingot: Create compacting (press over basin), 16 iron ingots + 250 mb Common Ink.
+# --- Colossal Iron Ingot: Create compacting (press over basin), 16 iron ingots + 1000 mb Common Ink.
 #     Fluid ingredient format verified from Create's diorite_from_flint compacting recipe. ---
 write(f"{R}/create/colossal_iron_compacting.json",
       {"neoforge:conditions": conds("create", "armageddon_mod", "irons_spellbooks"),
        "type": "create:compacting",
        "heat_requirement": "heated",
        "ingredients": ([{"item": "minecraft:iron_ingot"} for _ in range(16)]
-                       + [{"type": "neoforge:single", "amount": 250, "fluid": "irons_spellbooks:common_ink"}]),
+                       + [{"type": "neoforge:single", "amount": 1000, "fluid": "irons_spellbooks:common_ink"}]),
        "results": [{"id": "armageddon_mod:colossal_iron_ingot"}]})
 
 # --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
@@ -2484,6 +2532,7 @@ ITEMS = {
     "incomplete_structural_beam": "Incomplete Structural Beam",
     "incomplete_small_water_wheel": "Incomplete Water Wheel",
     "incomplete_large_water_wheel": "Incomplete Large Water Wheel",
+    "incomplete_diamond_backpack": "Incomplete Diamond Backpack",
     "shield_maiden": "Shield Maiden",
     "acolyte_of_deflection": "Acolyte of Deflection",
     "netherly_meal": "Netherly Meal",
@@ -2550,6 +2599,8 @@ write("assets/bertieprogression/models/item/incomplete_structural_beam.json",
       {"parent": "minecraft:item/generated", "textures": {"layer0": "minecraft:item/stick"}})
 write("assets/bertieprogression/models/item/incomplete_small_water_wheel.json", {"parent": "create:item/water_wheel"})
 write("assets/bertieprogression/models/item/incomplete_large_water_wheel.json", {"parent": "create:item/large_water_wheel"})
+write("assets/bertieprogression/models/item/incomplete_diamond_backpack.json",
+      {"parent": "minecraft:item/generated", "textures": {"layer0": "minecraft:item/diamond"}})
 
 # block models + blockstates + block items
 for block_id in BLOCKS:

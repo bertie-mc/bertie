@@ -66,7 +66,7 @@
     },
     {
       "type": "neoforge:single",
-      "amount": 250,
+      "amount": 1000,
       "fluid": "irons_spellbooks:common_ink"
     }
   ],

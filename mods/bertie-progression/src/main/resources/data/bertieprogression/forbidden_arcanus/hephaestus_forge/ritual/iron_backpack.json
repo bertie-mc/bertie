@@ -1,0 +1,39 @@
+{
+  "essences": {
+    "aureal": 50,
+    "blood": 5000,
+    "souls": 0
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "armageddon_mod:colossal_iron_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "alexsmobs:kangaroo_hide"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:copper_backpack"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:iron_backpack",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

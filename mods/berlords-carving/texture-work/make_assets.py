@@ -243,11 +243,14 @@ def main():
                 r["neoforge:conditions"] = [MOD_LOADED_SLAG]
             write_json(os.path.join(rec, f"{mat}_slate.json"), r)
             n_small += 1
-        # Echo has no block form (reinforced deepslate is uncraftable), so its big slate is a
-        # donut of 8 echo shards (3x3 ring, empty centre) instead of the standard 2x2 block.
-        big_pattern = ["###", "# #", "###"] if mat == "echo" else ["##", "##"]
-        rb = {"type": "minecraft:crafting_shaped", "pattern": big_pattern,
-              "key": {"#": BIG_INGREDIENT[mat]}, "result": {"id": f"{MODID}:{mat}_big_slate", "count": 1}}
+        # A big slate is four small ones, whatever the material. That means the block form of a
+        # material is only ever spent through its small slate, and echo no longer needs the 3x3
+        # donut it used to have for want of an echo block. Leather is the one exception: it has no
+        # tools, so it has no small slate, and its big slate keeps the raw ingredient.
+        small_slate = HAS_TOOLS[mat]
+        rb = {"type": "minecraft:crafting_shaped", "pattern": ["##", "##"],
+              "key": {"#": {"item": f"{MODID}:{mat}_slate"} if small_slate else BIG_INGREDIENT[mat]},
+              "result": {"id": f"{MODID}:{mat}_big_slate", "count": 1}}
         if mat != "leather" and V_ARMOR[mat] is None:
             rb["neoforge:conditions"] = [MOD_LOADED_SLAG]
         write_json(os.path.join(rec, f"{mat}_big_slate.json"), rb)

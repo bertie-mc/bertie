@@ -77,6 +77,7 @@ public final class ModItems {
     public static final DeferredItem<Item> INCOMPLETE_STRUCTURAL_BEAM = simple("incomplete_structural_beam", 64);
     public static final DeferredItem<Item> INCOMPLETE_SMALL_WATER_WHEEL = simple("incomplete_small_water_wheel", 64);
     public static final DeferredItem<Item> INCOMPLETE_LARGE_WATER_WHEEL = simple("incomplete_large_water_wheel", 64);
+    public static final DeferredItem<Item> INCOMPLETE_DIAMOND_BACKPACK = simple("incomplete_diamond_backpack", 64);
     // Naga-trophy ritual output that grants access to the Twilight Lich.
     public static final DeferredItem<Item> SHIELD_MAIDEN = simple("shield_maiden", 16);
     // Lich-trophy ritual output that gates the progression following the Lich.

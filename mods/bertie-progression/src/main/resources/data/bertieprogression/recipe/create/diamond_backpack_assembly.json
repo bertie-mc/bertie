@@ -1,0 +1,195 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sophisticatedbackpacks"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "sophisticatedbackpacks:gold_backpack"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "sophisticatedbackpacks:diamond_backpack",
+      "count": 1
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 2592,
+          "fluid": "slag:molten_diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "born_in_chaos_v1:diamond_termite_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "born_in_chaos_v1:diamond_termite_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "born_in_chaos_v1:diamond_termite_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_diamond_backpack"
+        },
+        {
+          "item": "born_in_chaos_v1:diamond_termite_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_diamond_backpack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "bertieprogression:incomplete_diamond_backpack"
+  }
+}

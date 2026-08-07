@@ -16,11 +16,14 @@
     },
     "C": {
       "tag": "c:chests/wooden"
+    },
+    "U": {
+      "item": "minecraft:bundle"
     }
   },
   "pattern": [
     "LS",
-    "CS"
+    "CU"
   ],
   "result": {
     "count": 1,
