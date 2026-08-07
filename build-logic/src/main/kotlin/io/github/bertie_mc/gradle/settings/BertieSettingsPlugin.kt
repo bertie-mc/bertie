@@ -22,6 +22,7 @@ class BertieSettingsPlugin : Plugin<Settings> {
             }
         }
         settings.dependencyResolutionManagement.components {
+            normalizeMinecraftDependencyMetadata()
             manifest.artifacts.values.forEach { artifact ->
                 val source = artifact.source
                 withModule("${source.group}:${source.module}") {

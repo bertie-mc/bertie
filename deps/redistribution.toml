@@ -454,10 +454,6 @@ evidence = ["modrinth-mit"]
 name = "modonomicon"
 evidence = ["modonomicon-mixed-open-licenses"]
 
-[exports.curseforge.artifacts."modrinth:gtGDlsAD:TOZNxPlx"]
-name = "modular-golems"
-evidence = ["modrinth-lgpl-2-1"]
-
 [exports.curseforge.artifacts."modrinth:9leXt4A5:Es84N2XL"]
 name = "monolib"
 evidence = ["modrinth-unlicense"]

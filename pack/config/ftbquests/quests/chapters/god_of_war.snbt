@@ -3423,29 +3423,6 @@
 		{
 			icon: {
 				count: 1
-				id: "golemdungeons:samurai_golem_chestplate"
-			}
-			id: "7B00000000000077"
-				tasks: [
-					{
-						count: 1L
-						id: "7B00000001000077"
-						item: { count: 1 id: "golemdungeons:samurai_golem_helmet" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "7B00000001010077"
-						item: { count: 1 id: "golemdungeons:samurai_golem_chestplate" }
-						type: "item"
-					}
-				]
-			x: -37d
-			y: 10d
-		}
-		{
-			icon: {
-				count: 1
 				id: "hazennstuff:abberant_predator_chestplate"
 			}
 			id: "7B00000000000078"

@@ -18,10 +18,17 @@ rootProject.name = "bertie"
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
-        val central = mavenCentral()
+        val central =
+            mavenCentral {
+                // Mojang's patched macOS FreeType native is not published to Maven Central.
+                artifactUrls("https://libraries.minecraft.net")
+            }
         exclusiveContent {
             forRepositories(central)
-            filter { includeGroup("org.lwjgl") }
+            filter {
+                includeGroup("io.netty")
+                includeGroup("org.lwjgl")
+            }
         }
         maven {
             name = "Parchment"

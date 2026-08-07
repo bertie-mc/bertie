@@ -68,7 +68,10 @@ configured in [`bertie-ci.toml`](../bertie-ci.toml).
 
 A pull request or push to `main` starts the
 [`Check` workflow](../.github/workflows/check.yml). It runs `gradle :check` and the
-selected builds, unit tests, GameTests, client tests, and pack validation. The
+selected builds, unit tests, GameTests, client tests, and pack validation. Terminal
+Windows and macOS jobs also resolve the complete locked dependency graph on their native
+platforms, ensuring the shared Gradle locks can restore every platform-specific module.
+The
 [`Full pack` workflow](../.github/workflows/full-pack.yml) performs a scheduled complete
 pack check and can also be started manually.
 

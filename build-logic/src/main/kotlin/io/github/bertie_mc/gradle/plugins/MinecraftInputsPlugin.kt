@@ -1,23 +1,18 @@
 package io.github.bertie_mc.gradle.plugins
 
-import io.github.bertie_mc.gradle.conventions.requiredBundle
-import io.github.bertie_mc.gradle.conventions.requiredLibrary
+import io.github.bertie_mc.gradle.conventions.configureMinecraftOperatingSystemOverride
 import io.github.bertie_mc.gradle.conventions.requiredVersion
-import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_LWJGL_NATIVE_CLASSIFIERS
-import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES
 import io.github.bertie_mc.gradle.model.loadPlatformVersions
 import io.github.bertie_mc.gradle.tasks.DownloadMinecraftArtifacts
 import io.github.bertie_mc.gradle.tasks.ResolveDependencies
 import net.neoforged.minecraftdependencies.MinecraftDependenciesPlugin
 import net.neoforged.minecraftdependencies.MinecraftDistribution
-import net.neoforged.minecraftdependencies.OperatingSystem
 import net.neoforged.nfrtgradle.DownloadAssets
 import net.neoforged.nfrtgradle.NeoFormRuntimeExtension
 import net.neoforged.nfrtgradle.NeoFormRuntimePlugin
 import org.gradle.api.Named
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.artifacts.ExternalModuleDependency
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.attributes.Attribute
 import org.gradle.api.attributes.AttributeContainer
@@ -36,9 +31,7 @@ class MinecraftInputsPlugin : Plugin<Project> {
             pluginManager.apply(MinecraftDependenciesPlugin::class.java)
             pluginManager.apply(NeoFormRuntimePlugin::class.java)
             dependencyLocking.lockAllConfigurations()
-            dependencyLocking.ignoredDependencies.addAll(
-                MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES,
-            )
+            configureMinecraftOperatingSystemOverride()
 
             val catalog = extensions.getByType<VersionCatalogsExtension>().named("libs")
             val minecraftVersion =
@@ -47,36 +40,13 @@ class MinecraftInputsPlugin : Plugin<Project> {
                 catalog.requiredVersion("neoform-runtime"),
             )
 
-            val nativeSeedDependencies =
-                configurations.dependencyScope("minecraftNativeSeedDependencies")
-            val nativeSeed =
+            val clientDependencies =
+                configurations.dependencyScope("minecraftClientDependencies")
+            val client =
                 configurations
-                    .resolvable("minecraftNativeSeed") {
-                        description = "Minecraft native artifacts cached for supported platforms"
-                        extendsFrom(nativeSeedDependencies.get())
-                    }.get()
-            catalog.requiredBundle("lwjgl-natives").forEach { module ->
-                MINECRAFT_1_21_1_LWJGL_NATIVE_CLASSIFIERS
-                    .filterNot {
-                        module.module.name == "lwjgl-freetype" && it == "natives-macos"
-                    }.forEach { classifier ->
-                        dependencies.add(
-                            nativeSeedDependencies.name,
-                            (dependencies.create(module) as ExternalModuleDependency).apply {
-                                artifact { this.classifier = classifier }
-                            },
-                        )
-                    }
-            }
-
-            val linuxSeedDependencies =
-                configurations.dependencyScope("minecraftLinuxNativeSeedDependencies")
-            val linuxSeed =
-                configurations
-                    .resolvable("minecraftLinuxNativeSeed") {
-                        description =
-                            "Minecraft's Linux native variant, including both Netty epoll artifacts"
-                        extendsFrom(linuxSeedDependencies.get())
+                    .resolvable("minecraftClient") {
+                        description = "Minecraft client libraries and native artifacts"
+                        extendsFrom(clientDependencies.get())
                         attributes {
                             named(this@with, Category.CATEGORY_ATTRIBUTE, Category.LIBRARY)
                             named(this@with, Usage.USAGE_ATTRIBUTE, Usage.JAVA_RUNTIME)
@@ -85,17 +55,16 @@ class MinecraftInputsPlugin : Plugin<Project> {
                                 MinecraftDistribution.ATTRIBUTE,
                                 MinecraftDistribution.CLIENT,
                             )
-                            named(this@with, OperatingSystem.ATTRIBUTE, OperatingSystem.LINUX)
                         }
                     }.get()
             dependencies.add(
-                linuxSeedDependencies.name,
+                clientDependencies.name,
                 "net.neoforged:minecraft-dependencies:$minecraftVersion",
             )
 
             val resolveInputs =
                 tasks.register<ResolveDependencies>("resolveMinecraftInputs") {
-                    dependencies.from(nativeSeed, linuxSeed)
+                    dependencies.from(client)
                     dependencies.from(configurations.named("neoFormRuntimeTool"))
                     dependencies.from(configurations.named("neoFormRuntimeExternalTools"))
                 }

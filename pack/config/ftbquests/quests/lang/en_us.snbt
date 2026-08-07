@@ -757,8 +757,6 @@
 	quest.7B00000000000075.title: "Draco Arcanus Set"
 	quest.7B00000000000076.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
 	quest.7B00000000000076.title: "Tyr Set"
-	quest.7B00000000000077.quest_desc: ["Equipment for Modular Golems (helmet, chestplate, shinguard), not player-wearable; armor stats only."]
-	quest.7B00000000000077.title: "Samurai Golem Set"
 	quest.7B00000000000078.quest_desc: ["Per piece: +15% shadow spell power, +15% eldritch spell power, +5% spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]
 	quest.7B00000000000078.title: "Abberant Predator Set"
 	quest.7B00000000000079.quest_desc: ["Per piece: +15% evocation spell power, +5% spell power, +5% eldritch spell power, +200 max mana. Full set: +15% cast move speed, +10% spell resist."]

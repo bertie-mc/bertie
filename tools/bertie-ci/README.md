@@ -146,7 +146,8 @@ and publishes the prepared directories for the current run. A non-client job com
 infrastructure, assembly, JUnit, GameTest, and pack-generation tasks in one Gradle
 invocation. A client job runs the selected client-test tasks in another Gradle invocation
 inside one headless Wayland session. The two execution jobs start together after
-preparation.
+preparation. Separate Windows and macOS leaf jobs use the native host variants to resolve
+the complete shared Gradle lock state; they do not reuse the Linux dependency snapshot.
 
 Repository actions include:
 

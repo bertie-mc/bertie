@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "edb6878708d898dc563c84e1220eef656a61a7a5cf03e3ff09563201cc140a3f"
+inputs-hash = "963e0732b13ada32117430c6760866b102276964520cefbed83d1d2bcf59f355"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -624,10 +624,6 @@ mod = "curseforge:1249645:6794782"
 [components."glassbreaker"]
 any = "curseforge:819494:5681247"
 mod = "curseforge:819494:5681247"
-
-[components."golem-dungeons"]
-any = "curseforge:1328313:7903491"
-mod = "curseforge:1328313:7903491"
 
 [components."gravelminer"]
 any = "curseforge:244759:7966182"
@@ -3843,27 +3839,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:1328313:7903491"]
-name = "golem-dungeons"
-component = "golem-dungeons"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "golem-dungeons-1328313"
-version = "7903491"
-filename = "golemdungeons-2.0.9.jar"
-project-id = 1328313
-slug = "golem-dungeons"
-file-id = 7903491
-provides = ["golemdungeons"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:620203:7584599", "mod-id" = "l2library", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gtGDlsAD:TOZNxPlx", "mod-id" = "modulargolems", "version-range" = "[3.1.29,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:551586:8246034", "namespace" = "cataclysm", "reason" = "ships data/cataclysm/", "origin" = "archive-data" }, { "artifact" = "curseforge:227639:7797302", "namespace" = "twilightforest", "reason" = "ships data/twilightforest/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:1330168:7820087"]
 name = "irons-spells-n-spellbooks-restricitons"
@@ -10702,25 +10677,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:gtGDlsAD:TOZNxPlx"]
-name = "modular-golems"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "gtGDlsAD"
-version = "TOZNxPlx"
-filename = "modulargolems-3.1.38.jar"
-project-id = "gtGDlsAD"
-version-id = "TOZNxPlx"
-provides = ["modulargolems"]
-bundled-provides = ["cataclysm_mux", "cataclysm_mux_0316", "cataclysm_mux_0327", "l2damagetracker", "l2itemselector", "l2tabs", "mob_weapon_api"]
-required = [{ "artifact" = "curseforge:620203:7584599", "mod-id" = "l2library", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "curseforge:328085:7963363", "mod-id" = "create", "version-range" = "[6.0.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:1040076:8147245", "mod-id" = "iceandfire", "version-range" = "[2.0-beta.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:551586:8246034", "mod-id" = "cataclysm", "version-range" = "[3.16,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:758349:7923864", "mod-id" = "l2complements", "version-range" = "[3.1.2,)", "side" = "both", "origin" = "archive" }, { "missing" = "l2archery", "mod-id" = "l2archery", "version-range" = "[3.0.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "mod-id" = "accessories", "version-range" = "[1.1.0-beta.5+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:227639:7797302", "namespace" = "twilightforest", "reason" = "ships data/twilightforest/", "origin" = "archive-data" }, { "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "curseforge:909207:7815611", "namespace" = "l2hostility", "reason" = "ships data/l2hostility/", "origin" = "archive-data" }, { "artifact" = "curseforge:855414:8202148", "namespace" = "irons_spellbooks", "reason" = "ships data/irons_spellbooks/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:h2jngREY:JnzRBH1v"]
 name = "trek"

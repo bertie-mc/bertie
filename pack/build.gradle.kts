@@ -164,7 +164,6 @@ dependencies {
     packComponents(deps.giantSnowyTree)
     packComponents(deps.giantTreeStump)
     packComponents(deps.glassbreaker)
-    packComponents(deps.golemDungeons)
     packComponents(deps.gravelminer)
     packComponents(deps.handOverYourItems)
     packComponents(deps.handcrafted)

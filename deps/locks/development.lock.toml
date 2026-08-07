@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "5e59b61c2899d0c1545f8d3be43a8cd3d50fca1a21a632ff6c3e8e75240d3735"
+inputs-hash = "a3ba67ebe9dba083635ec0b73373ed5314644c407fea0f110ef8fcb9911e866e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -624,10 +624,6 @@ mod = "modrinth:KbZj5UH0:l9G08nkn"
 [components."glassbreaker"]
 any = "modrinth:vY7Ka6pe:2YPMqEiY"
 mod = "modrinth:vY7Ka6pe:2YPMqEiY"
-
-[components."golem-dungeons"]
-any = "modrinth:5OrL8C4a:tQhakMGs"
-mod = "modrinth:5OrL8C4a:tQhakMGs"
 
 [components."gravelminer"]
 any = "modrinth:iAzrhsju:8QA0TT89"
@@ -2479,26 +2475,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:5OrL8C4a:tQhakMGs"]
-name = "golem-dungeons"
-component = "golem-dungeons"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "5OrL8C4a"
-version = "tQhakMGs"
-filename = "golemdungeons-2.0.9.jar"
-project-id = "5OrL8C4a"
-version-id = "tQhakMGs"
-provides = ["golemdungeons"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:4Vh3BQ3F:640EOvKh", "mod-id" = "l2library", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gtGDlsAD:TOZNxPlx", "mod-id" = "modulargolems", "version-range" = "[3.1.29,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:46KJle7n:uvjXrHuz", "namespace" = "cataclysm", "reason" = "ships data/cataclysm/", "origin" = "archive-data" }, { "artifact" = "curseforge:227639:7797302", "namespace" = "twilightforest", "reason" = "ships data/twilightforest/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:5Zusp48B:EkvVbxeM"]
 name = "rottencreatures"
@@ -7931,25 +7907,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:gtGDlsAD:TOZNxPlx"]
-name = "modular-golems"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "gtGDlsAD"
-version = "TOZNxPlx"
-filename = "modulargolems-3.1.38.jar"
-project-id = "gtGDlsAD"
-version-id = "TOZNxPlx"
-provides = ["modulargolems"]
-bundled-provides = ["cataclysm_mux", "cataclysm_mux_0316", "cataclysm_mux_0327", "l2damagetracker", "l2itemselector", "l2tabs", "mob_weapon_api"]
-required = [{ "artifact" = "modrinth:4Vh3BQ3F:640EOvKh", "mod-id" = "l2library", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "mod-id" = "create", "version-range" = "[6.0.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:VpmCsizY:kdvvFM7V", "mod-id" = "iceandfire", "version-range" = "[2.0-beta.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:46KJle7n:uvjXrHuz", "mod-id" = "cataclysm", "version-range" = "[3.16,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:oPrh2Lz3:KTaffFua", "mod-id" = "l2complements", "version-range" = "[3.1.2,)", "side" = "both", "origin" = "archive" }, { "missing" = "l2archery", "mod-id" = "l2archery", "version-range" = "[3.0.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "mod-id" = "accessories", "version-range" = "[1.1.0-beta.5+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:227639:7797302", "namespace" = "twilightforest", "reason" = "ships data/twilightforest/", "origin" = "archive-data" }, { "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "modrinth:CbV689EN:hsGoGiGk", "namespace" = "l2hostility", "reason" = "ships data/l2hostility/", "origin" = "archive-data" }, { "artifact" = "modrinth:s4OWxYQQ:AvHIYbZi", "namespace" = "irons_spellbooks", "reason" = "ships data/irons_spellbooks/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:gtX73iTU:QtdkM9Oa"]
 name = "avaritias-delight"

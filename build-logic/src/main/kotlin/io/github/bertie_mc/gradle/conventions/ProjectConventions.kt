@@ -1,6 +1,5 @@
 package io.github.bertie_mc.gradle.conventions
 
-import io.github.bertie_mc.gradle.model.MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES
 import io.github.bertie_mc.gradle.model.PlatformVersions
 import io.github.bertie_mc.gradle.model.loadPlatformVersions
 import io.github.bertie_mc.gradle.model.lwjglNativeClassifier
@@ -26,7 +25,7 @@ import org.gradle.kotlin.dsl.withType
 internal fun Project.configureJvmRole() {
     pluginManager.apply(JavaLibraryPlugin::class.java)
     dependencyLocking.lockAllConfigurations()
-    dependencyLocking.ignoredDependencies.addAll(MINECRAFT_1_21_1_PLATFORM_CONDITIONAL_MODULES)
+    configureMinecraftOperatingSystemOverride()
 
     extensions.getByType<JavaPluginExtension>().toolchain.languageVersion.set(
         JavaLanguageVersion.of(21),
