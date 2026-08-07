@@ -943,12 +943,16 @@ write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
 })
 # Iron: a Tier-I ritual. 5000 blood and 50 aureal are both inside the T1 ceiling (1000/10/10000/900),
 # and the eight pedestals are exactly full.
-write(f"{RIT}/iron_backpack.json",
-      ritual("sophisticatedbackpacks:copper_backpack",
-             [("minecraft:iron_block", 4), ("armageddon_mod:colossal_iron_ingot", 2),
-              ("alexsmobs:kangaroo_hide", 2)],
-             "sophisticatedbackpacks:iron_backpack", 1, tier=1,
-             essences={"aureal": 50, "blood": 5000, "souls": 0}))
+_iron_backpack = ritual("sophisticatedbackpacks:copper_backpack",
+                        [("minecraft:iron_block", 4), ("armageddon_mod:colossal_iron_ingot", 2),
+                         ("alexsmobs:kangaroo_hide", 2)],
+                        "sophisticatedbackpacks:iron_backpack", 1, tier=1,
+                        essences={"aureal": 50, "blood": 5000, "souls": 0})
+# upgrade_storage instead of create_item: it hands the copper pack's identity to the iron one, so
+# the ritual keeps whatever was inside. See BackpackHandover.
+_iron_backpack["result"] = {"type": "bertieprogression:upgrade_storage",
+                            "result_item": "sophisticatedbackpacks:iron_backpack"}
+write(f"{RIT}/iron_backpack.json", _iron_backpack)
 write("data/sophisticatedbackpacks/recipe/iron_backpack.json", DISABLED)
 # Gold: the Spirit Altar, carrying components across so the pack keeps what is in it.
 _gold_backpack = infusion("sophisticatedbackpacks:iron_backpack", 1,

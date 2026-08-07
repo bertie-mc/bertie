@@ -27,6 +27,11 @@ public final class BertieProgression {
         if (ModList.get().isLoaded("create")) {
             ModFanProcessing.TYPES.register(modBus);
         }
+        // Same rule for Forbidden Arcanus: the ritual result type lives in ITS registry, so naming
+        // the class at all without the mod present would fail to link.
+        if (ModList.get().isLoaded("forbidden_arcanus")) {
+            io.github.bertie_mc.bertieprogression.backpack.ModRitualResults.TYPES.register(modBus);
+        }
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
 

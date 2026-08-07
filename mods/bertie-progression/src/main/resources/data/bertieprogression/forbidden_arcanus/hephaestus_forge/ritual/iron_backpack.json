@@ -29,11 +29,8 @@
     "item": "sophisticatedbackpacks:copper_backpack"
   },
   "result": {
-    "type": "forbidden_arcanus:create_item",
-    "result_item": {
-      "id": "sophisticatedbackpacks:iron_backpack",
-      "count": 1
-    }
+    "type": "bertieprogression:upgrade_storage",
+    "result_item": "sophisticatedbackpacks:iron_backpack"
   },
   "forge_tier": 1
 }

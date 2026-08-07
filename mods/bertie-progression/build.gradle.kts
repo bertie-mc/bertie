@@ -16,4 +16,10 @@ dependencies {
     compileOnly(libs.ponder) {
         isTransitive = false
     }
+
+    // Both optional at runtime: the ritual result type and the sequenced-assembly mixin that carry
+    // a backpack's contents between tiers only load when their mods do.
+    compileOnly(deps.forbiddenArcanus)
+    compileOnly(deps.sophisticatedBackpacks)
+    compileOnly(deps.sophisticatedCore)
 }
