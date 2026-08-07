@@ -1004,7 +1004,7 @@
 				count: 1
 				id: "sophisticatedbackpacks:copper_backpack"
 			}
-			dependencies: ["1B00000000000013", "1B0000000000002F"]
+			dependencies: ["1B00000000000013"]
 			id: "1B00000000000030"
 			rewards: [{
 				id: "1B00000002000030"
@@ -1027,7 +1027,7 @@
 				count: 1
 				id: "sophisticatedbackpacks:iron_backpack"
 			}
-			dependencies: ["1B0000000000001B", "1B00000000000030"]
+			dependencies: ["1B0000000000001B"]
 			id: "1B00000000000031"
 			rewards: [{
 				id: "1B00000002000031"
