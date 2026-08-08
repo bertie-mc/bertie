@@ -10,7 +10,7 @@
 		{
 			icon: {
 				count: 1
-				id: "bertieprogression:echoing_city_compass"
+				id: "minecraft:barrier"
 			}
 			id: "4B00000000000001"
 			rewards: [{
@@ -20,19 +20,22 @@
 			}]
 				tasks: [
 					{
-						count: 1L
+						icon: {
+							count: 1
+							id: "minecraft:barrier"
+						}
 						id: "4B00000001000001"
-						item: { count: 1 id: "bertieprogression:echoing_city_compass" }
-						type: "item"
+						title: "Placeholder"
+						type: "checkmark"
 					}
 				]
-			x: 0d
-			y: 0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
-				id: "deeperdarker:warden_carapace"
+				id: "deeperdarker:soul_crystal"
 			}
 			dependencies: ["4B00000000000001"]
 			id: "4B00000000000002"
@@ -43,21 +46,24 @@
 			}]
 				tasks: [
 					{
-						count: 1L
+						icon: {
+							count: 1
+							id: "deeperdarker:soul_crystal"
+						}
 						id: "4B00000001000002"
-						item: { count: 1 id: "deeperdarker:warden_carapace" }
-						type: "item"
+						dimension: "deeperdarker:otherside"
+						type: "dimension"
 					}
 				]
 			x: 1.5d
-			y: 0d
+			y: -1.0d
 		}
 		{
 			icon: {
 				count: 1
-				id: "bertieprogression:warden_echo_pattern"
+				id: "pastel:moonstone_shard"
 			}
-			dependencies: ["4B00000000000002"]
+			dependencies: ["4B00000000000001"]
 			id: "4B00000000000003"
 			rewards: [{
 				id: "4B00000002000003"
@@ -66,219 +72,17 @@
 			}]
 				tasks: [
 					{
-						count: 1L
-						id: "4B00000001000003"
-						item: { count: 1 id: "bertieprogression:warden_echo_pattern" }
-						type: "item"
-					}
-				]
-			x: 3.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "deeperdarker:reinforced_echo_shard"
-			}
-			dependencies: ["4B00000000000003"]
-			id: "4B00000000000004"
-			rewards: [{
-				id: "4B00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 32L
-						id: "4B00000001000004"
-						item: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
-						type: "item"
-					}
-				]
-			x: 4.5d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "malum:spirit_crucible"
-			}
-			dependencies: ["4B00000000000004"]
-			id: "4B00000000000005"
-			rewards: [{
-				id: "4B00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B00000001000005"
-						item: { count: 1 id: "malum:spirit_crucible" }
-						type: "item"
-					}
-				]
-			x: 6.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertieprogression:echo_lock"
-			}
-			dependencies: ["4B00000000000004"]
-			id: "4B00000000000006"
-			rewards: [{
-				id: "4B00000002000006"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B00000001000006"
-						item: { count: 1 id: "bertieprogression:echo_lock" }
-						type: "item"
-					}
-				]
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "minecraft:echo_shard"
-			}
-			dependencies: ["4B00000000000005"]
-			id: "4B00000000000007"
-			rewards: [{
-				id: "4B00000002000007"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
 						icon: {
 							count: 1
-							id: "minecraft:echo_shard"
+							id: "pastel:moonstone_shard"
 						}
-						id: "4B00000001000007"
-						title: "The Otherside"
-						type: "checkmark"
+						id: "4B00000001000003"
+						dimension: "pastel:deeper_down"
+						type: "dimension"
 					}
 				]
-			x: 7.5d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "deeperdarker:soul_crystal"
-			}
-			dependencies: ["4B00000000000007"]
-			id: "4B00000000000008"
-			rewards: [{
-				id: "4B00000002000008"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B00000001000008"
-						item: { count: 1 id: "deeperdarker:soul_crystal" }
-						type: "item"
-					}
-				]
-			x: 9.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertieprogression:spirit_focused_echo"
-			}
-			dependencies: ["4B00000000000008"]
-			id: "4B00000000000009"
-			rewards: [{
-				id: "4B00000002000009"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B00000001000009"
-						item: { count: 1 id: "bertieprogression:spirit_focused_echo" }
-						type: "item"
-					}
-				]
-			x: 10.5d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "bertieprogression:descent_anchor"
-			}
-			dependencies: ["4B00000000000009"]
-			id: "4B0000000000000A"
-			rewards: [{
-				id: "4B0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B0000000100000A"
-						item: { count: 1 id: "bertieprogression:descent_anchor" }
-						type: "item"
-					}
-				]
-			x: 12.0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:moonstone_shard"
-			}
-			dependencies: ["4B0000000000000A"]
-			id: "4B0000000000000B"
-			rewards: [{
-				id: "4B0000000200000B"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "4B0000000100000B"
-						item: { count: 1 id: "pastel:moonstone_shard" }
-						type: "item"
-					}
-				]
-			x: 13.5d
-			y: 0d
-		}
-		{
-			dependencies: ["4B0000000000000B"]
-			id: "4B0000000000000C"
-			rewards: [{
-				id: "4B0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						id: "4B0000000100000C"
-						title: "Hephaestus Forge III"
-						type: "checkmark"
-					}
-				]
-			x: 15.0d
-			y: 0d
+			x: 1.5d
+			y: 1.0d
 		}
 	]
 }

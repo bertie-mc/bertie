@@ -451,48 +451,50 @@
 	quest.3B00000000000047.title: "The Harbinger"
 	quest.3B00000000000048.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
 	quest.3B00000000000048.title: "The Paintbrush"
-	quest.4B00000000000001.quest_desc: ["Optional: a Tier-2 ritual binds a Compass to the nearest Ancient City. Use it and follow the pulse."]
-	quest.4B00000000000001.title: "Echoing City Compass"
-	quest.4B00000000000002.quest_desc: ["Wake it. Kill it honestly. Its guaranteed Warden Carapace becomes a reusable pattern."]
-	quest.4B00000000000002.title: "The Warden"
-	quest.4B00000000000003.quest_desc: ["On the licensed table: Carapace + Amethyst + Sculk + Phantom Membrane. One pattern replaces every future Echo Shard grind."]
-	quest.4B00000000000003.title: "Warden Echo Pattern"
-	quest.4B00000000000004.quest_desc: ["The Spirit Instiller unwinds the Pattern into 32 Reinforced Echo Shards - the whole stage bill in one ritual."]
-	quest.4B00000000000004.title: "Reinforced echoes"
-	quest.4B00000000000005.quest_desc: ["Hephaestus II builds the Spirit Crucible from a Reinforced Echo; the altar infuses its Catalyzer companion from Onyx, Hallowed Gold and Brass."]
-	quest.4B00000000000005.title: "Crucible and Catalyzer"
-	quest.4B00000000000006.quest_desc: ["Mechanical-craft Deepslate Tiles, Sculk and Onyx into the Echo Lock - the key of the deep frame."]
-	quest.4B00000000000006.title: "The Echo Lock"
-	quest.4B00000000000007.quest_desc: ["Open the reinforced-deepslate frame in the Ancient City with the Heart of the Deep and descend. Clear the Ancient Temple."]
-	quest.4B00000000000007.title: "The Otherside"
-	quest.4B00000000000008.quest_desc: ["The Temple's Soul Crystal catalyzes spirit focusing. In the full design it is team-stamped and returned; treasure it."]
-	quest.4B00000000000008.title: "Temple catalyst"
-	quest.4B00000000000009.quest_desc: ["Infuse a Reinforced Echo with the Soul Crystal and sixteen spirits. The anchor material of everything below."]
-	quest.4B00000000000009.title: "Spirit-Focused Echo"
-	quest.4B0000000000000A.quest_desc: ["Hephaestus II binds a Warden Carapace, a Twilight Lich Trophy and an Onyx Shard around a Spirit-Focused Echo. Use it to DESCEND into Imbrifer - before any Dragon."]
-	quest.4B0000000000000A.title: "The Descent Anchor"
-	quest.4B0000000000000B.quest_desc: ["Your first Moonstone Shard must come from the deep dark colors of Imbrifer. The Instiller can then grow one shard into forty."]
-	quest.4B0000000000000B.title: "Imbrifer moonstone"
-	quest.4B0000000000000C.quest_desc: ["Chiseled Polished Darkstone core, 4 Arcane Crystal, 4 Deorum, 4 Moonstone - 1000 Aureal / 9000 Blood / 50 Souls. The current top Forge tier."]
-	quest.4B0000000000000C.title: "Hephaestus Forge III"
-	quest.5B00000000000001.quest_desc: ["Summon and destroy it. Keep the Nether Star - you will want more than one before the end."]
-	quest.5B00000000000001.title: "The Wither"
-	quest.5B00000000000002.quest_desc: ["End Remastered replaces the vanilla eye hunt: twelve unique eyes hide across the world - dungeons, temples, barters, bosses. Check each eye in EMI and read its tooltip for where it hides. Gather all twelve."]
-	quest.5B00000000000002.title: "The twelve eyes"
-	quest.5B00000000000003.quest_desc: ["Find the stronghold and set all twelve End Remastered eyes into the portal frames. The way to the End opens."]
-	quest.5B00000000000003.title: "The open way"
-	quest.5B00000000000004.quest_desc: ["One honest kill. The End Gateway and the outer islands open."]
-	quest.5B00000000000004.title: "The Ender Dragon"
-	quest.5B00000000000005.quest_desc: ["Better End smithing begins with a humble 250-durability Iron Hammer on the licensed table."]
-	quest.5B00000000000005.title: "Iron Hammer"
-	quest.5B00000000000006.quest_desc: ["Outer-End Thallasium builds the level-2 anvil. Hammer Ender Pearls on it into Ender Dust - seventeen in all."]
-	quest.5B00000000000006.title: "Thallasium Anvil"
-	quest.5B00000000000007.quest_desc: ["Thallasium + End Stone Bricks + two furnaces. The End's own fuel-fired alloy station."]
-	quest.5B00000000000007.title: "End Stone Smelter"
-	quest.5B00000000000008.quest_desc: ["Iron + Ender Dust, 450 ticks. Seventeen ingots: thirteen for Aeternium, four for Moonsteel."]
-	quest.5B00000000000008.title: "Terminite"
-	quest.5B00000000000009.quest_desc: ["Terminite + Netherite, 850 ticks. Thirteen. The End's adventure alloy - no machine ever touched it."]
-	quest.5B00000000000009.title: "Aeternium"
+	quest.3B00000000000049.quest_desc: ["Find the Minotaur's Labyrinth under the Twilight Forest and get inside."]
+	quest.3B00000000000049.title: "The Labyrinth"
+	quest.3B0000000000004A.quest_desc: ["The Labyrinth's own dish. The Netherly Meal is boiled down from it."]
+	quest.3B0000000000004A.title: "Meef Stroganoff"
+	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
+	quest.4B00000000000001.title: "Echo and Below"
+	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
+	quest.4B00000000000002.title: "The Otherside"
+	quest.4B00000000000003.quest_desc: ["Reach Imbrifer, the Deeper Down."]
+	quest.4B00000000000003.title: "Deeper Down"
+	quest.5B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
+	quest.5B00000000000001.title: "Concordance"
+	quest.5B00000000000002.quest_desc: ["Find the Nether Eye."]
+	quest.5B00000000000002.title: "Nether Eye"
+	quest.5B00000000000003.quest_desc: ["Find the Cold Eye."]
+	quest.5B00000000000003.title: "Cold Eye"
+	quest.5B00000000000004.quest_desc: ["Find the Old Eye."]
+	quest.5B00000000000004.title: "Old Eye"
+	quest.5B00000000000005.quest_desc: ["Find the Wither Eye."]
+	quest.5B00000000000005.title: "Wither Eye"
+	quest.5B00000000000006.quest_desc: ["Find the Rogue Eye."]
+	quest.5B00000000000006.title: "Rogue Eye"
+	quest.5B00000000000007.quest_desc: ["Find the Magical Eye."]
+	quest.5B00000000000007.title: "Magical Eye"
+	quest.5B00000000000008.quest_desc: ["Find the Black Eye."]
+	quest.5B00000000000008.title: "Black Eye"
+	quest.5B00000000000009.quest_desc: ["Find the Lost Eye."]
+	quest.5B00000000000009.title: "Lost Eye"
+	quest.5B0000000000000A.quest_desc: ["Find the Guardian Eye."]
+	quest.5B0000000000000A.title: "Guardian Eye"
+	quest.5B0000000000000B.quest_desc: ["Find the Cursed Eye."]
+	quest.5B0000000000000B.title: "Cursed Eye"
+	quest.5B0000000000000C.quest_desc: ["Find the Undead Eye."]
+	quest.5B0000000000000C.title: "Undead Eye"
+	quest.5B0000000000000D.quest_desc: ["Find the Corrupted Eye."]
+	quest.5B0000000000000D.title: "Corrupted Eye"
+	quest.5B0000000000000E.quest_desc: ["Find the Exotic Eye."]
+	quest.5B0000000000000E.title: "Exotic Eye"
+	quest.5B0000000000000F.quest_desc: ["Find the Witch Eye."]
+	quest.5B0000000000000F.title: "Witch Eye"
+	quest.5B00000000000010.quest_desc: ["Find the Cryptic Eye."]
+	quest.5B00000000000010.title: "Cryptic Eye"
+	quest.5B00000000000011.quest_desc: ["Find the Evil Eye."]
+	quest.5B00000000000011.title: "Evil Eye"
 	quest.6B00000000000001.quest_desc: ["Grow moonstone (Instiller), craft the Moonstone Pedestal at ADVANCED, then raise the full COMPLEX shell with its 28 directional chiseled runes."]
 	quest.6B00000000000001.title: "COMPLEX pedestal"
 	quest.6B00000000000002.quest_desc: ["The five-color pedestal craft: Dragon's Breath + Reinforced Echo under 4 of each gem powder - four Seals per batch, eight total."]

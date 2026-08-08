@@ -44,7 +44,7 @@
   ],
   "magic_circle": "forbidden_arcanus:create_item",
   "main_ingredient": {
-    "item": "minecraft:bowl"
+    "item": "twilightforest:meef_stroganoff"
   },
   "result": {
     "type": "forbidden_arcanus:create_item",

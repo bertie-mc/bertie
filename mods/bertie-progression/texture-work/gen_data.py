@@ -311,11 +311,7 @@ write(f"{R}/table/mundabitur_bulk.json",                   # R28A
                 "forbidden_arcanus:mundabitur_dust", 4))
 # R22 (Fusion Shrine on the licensed table) was removed with the Pastel overrides. The Shrine uses
 # Pastel's two pedestal recipes.
-write(f"{R}/table/warden_echo_pattern.json",               # R31
-      shaped(["ASA", "SCS", "AMA"],
-             {"A": "minecraft:amethyst_shard", "S": "minecraft:sculk",
-              "C": "deeperdarker:warden_carapace", "M": "minecraft:phantom_membrane"},
-             "bertieprogression:warden_echo_pattern"))
+# R31 Warden Echo Pattern went with the Echo and Below questline.
 
 # ---- Brick Forge double smelting (SLAG) ----
 # Ore double-smelts consume two raw materials per ingot.
@@ -436,11 +432,7 @@ write(f"{RIT}/r29_spirit_instiller.json",
              "pastel:spirit_instiller", 1, tier=2))
 # R30 Twilight Concord ritual was removed because it consumed the deleted Serpent Scale Blank and
 # the Ritual Burner Cage, both now deleted. The Concord's spirit-infusion route (C2) is the sole one.
-write(f"{RIT}/r30a_echoing_city_compass.json",
-      ritual("minecraft:compass",
-             [("pastel:onyx_shard", 1), ("minecraft:sculk", 3), ("malum:aqueous_spirit", 4)],
-             "bertieprogression:echoing_city_compass", 1, tier=2,
-             essences={"aureal": 250, "blood": 0, "souls": 0}))
+# R30A Echoing City Compass went with the Echo and Below questline.
 # R31A Spirit Crucible ritual was removed; Malum's own spirit infusion
 # (furnace + 2 hex ash + 8 tainted + 8 twisted, 8 infernal / 8 aqueous) is the sole route now.
 # The Carving Station has an additive HF1 route while its stock 2x2 recipe remains, with no XP cost.
@@ -506,10 +498,7 @@ write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
 # R17 was removed with the Seal.
 # R21A Runic Workbench was removed: Malum's own spirit infusion is the only route again.
 # R24A Victory Ledger and R27 Nether Lintel recipes were removed with their blocks and items.
-write(f"{R}/mechanical/exclusive/echo_lock.json",               # R31C
-      mech(["DSD", "SOS", "DSD"],
-           {"D": "minecraft:deepslate_tiles", "S": "minecraft:sculk", "O": "pastel:onyx_shard"},
-           "bertieprogression:echo_lock"))
+# R31C Echo Lock went with the Echo and Below questline.
 write(f"{R}/mechanical/exclusive/ignitium_lattice_5x5.json",    # R38 (x2 output)
       mech(["KSSSK", "SIIIS", "SIIIS", "SIIIS", "KSSSK"],
            {"K": "bertieprogression:kinetic_pattern_plate", "S": "malum:infernal_spirit", "I": "cataclysm:ignitium_ingot"},
@@ -548,9 +537,7 @@ write(f"{R}/pastel/complex_spectrum_seals.json",           # R37A
 write(f"{R}/pastel/moonstone_synthesis.json",              # R32A
       instiller("pastel:moonstone_shard", 1, "pastel:bismuth_flake", "pastel:onyx_powder",
                 "pastel:moonstone_shard", 4, 400, 4.0))
-write(f"{R}/pastel/warden_reinforced_echo_batch.json",     # R31R (one 32-batch — demo economy)
-      instiller("bertieprogression:warden_echo_pattern", 1, "minecraft:amethyst_shard", "minecraft:sculk",
-                "deeperdarker:reinforced_echo_shard", 32, 600, 8.0))
+# R31R the 32-shard echo batch went with R31.
 write(f"{R}/pastel/concordant_moonsteel.json",             # R37B
       instiller("betterend:terminite_ingot", 4, "pastel:moonstone_powder", "forbidden_arcanus:arcane_crystal_dust",
                 "bertieprogression:concordant_moonsteel_ingot", 4, 400, 4.0))
@@ -911,8 +898,8 @@ write("data/bertieprogression/forbidden_arcanus/residue_type/ignitium.json", {
     "name": {"text": "Arcane Crystal Residue"},
 })
 
-# Deeper and Darker: Reinforced Echo goes through the Warden Echo Pattern (R31/R31R)
-write("data/deeperdarker/recipe/reinforced_echo_shard.json", DISABLED)
+# Deeper and Darker's own Reinforced Echo recipe is restored: R31/R31R, which replaced it, went
+# with the Echo and Below questline, and two late recipes still need the shard.
 
 # Sophisticated Backpacks: the plain backpack drops from a 3x3 to the 2x2 grid, so it lands with the
 # chest rather than after it. Keeps sophisticatedbackpacks:basic_backpack - the type carries the
@@ -1911,7 +1898,7 @@ write("data/create/recipe/crushing/obsidian.json", {
 #     - the ritual runs ON a T2 forge, so those are the most it can hold. Aureal and ink unspecified,
 #     so both are zero. ---
 write(f"{RIT}/netherly_meal.json",
-      ritual("minecraft:bowl",
+      ritual("twilightforest:meef_stroganoff",
              [("iceandfire:fire_dragon_heart", 1), ("cataclysm:koboleton_bone", 1),
               ("malum:living_flesh", 1), ("iceandfire:fire_dragon_blood", 1),
               ("#iceandfire:scales/dragon/fire", 2), ("minecraft:lava_bucket", 1)],
@@ -1939,6 +1926,35 @@ for _gem, _shard, _wool in (("topaz", "pastel:topaz_shard", "minecraft:cyan_wool
                  f"pastel:pedestal_basic_{_gem}", 1, tier=2,
                  essences={"aureal": 360, "blood": 0, "souls": 50}, xp=1350))
     write(f"data/pastel/recipe/crafting_table/pedestal_basic_{_gem}.json", DISABLED)
+
+# --- Pastel: a crushed shard yields one powder, not two. ---
+# Overrides carry every field of the stock recipe because the crushing bench reads all of them -
+# the damage rate, sound, particle and advancement gate are not defaults. The sound and the gate
+# differ per gem in ways no formula predicts (onyx and moonstone sit under different advancement
+# trees, and amethyst's break sound is vanilla's), so each is copied from its own stock file.
+for _gem, _shard, _sound, _adv in (
+        ("topaz", "pastel:topaz_shard", "pastel:block.small_topaz_bud.break",
+         "pastel:hidden/collect_shards/topaz"),
+        ("citrine", "pastel:citrine_shard", "pastel:block.small_citrine_bud.break",
+         "pastel:hidden/collect_shards/citrine"),
+        ("amethyst", "minecraft:amethyst_shard", "block.small_amethyst_bud.break",
+         "pastel:hidden/collect_shards/amethyst"),
+        ("onyx", "pastel:onyx_shard", "pastel:block.small_onyx_bud.break",
+         "pastel:create_onyx_shard"),
+        ("moonstone", "pastel:moonstone_shard", "pastel:block.small_moonstone_bud.break",
+         "pastel:lategame/collect_moonstone")):
+    write(f"data/pastel/recipe/anvil_crushing/gemstone_powder/"
+          f"{_gem}_powder_from_{_shard.split(':')[1]}.json", {
+              "type": "pastel:anvil_crushing",
+              "ingredient": [{"item": _shard}],
+              "crushedItemsPerPointOfDamage": 0.6,
+              "experience": 0.4,
+              "result": {"id": f"pastel:{_gem}_powder", "count": 1},
+              "particleEffectIdentifier": "explosion",
+              "soundEventIdentifier": _sound,
+              "group": "gemstone_crushing",
+              "required_advancement": _adv,
+          })
 
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own

@@ -841,7 +841,7 @@
 				count: 1
 				id: "iceandfire:dragonscales_red"
 			}
-			dependencies: ["3B0000000000002A"]
+			dependencies: ["3B0000000000004A"]
 			id: "3B0000000000002B"
 			rewards: [{
 				id: "3B0000000200002B"
@@ -860,8 +860,8 @@
 						value: 1L
 					}
 				]
-			x: -18.56d
-			y: 3.81d
+			x: -17.81d
+			y: 5.78d
 		}
 		{
 			icon: {
@@ -887,8 +887,8 @@
 						type: "item"
 					}
 				]
-			x: -16.19d
-			y: 6.92d
+			x: -14.98d
+			y: 7.18d
 		}
 		{
 			icon: {
@@ -910,8 +910,8 @@
 						type: "item"
 					}
 				]
-			x: -18.3d
-			y: 5.18d
+			x: -17.01d
+			y: 6.49d
 		}
 		{
 			icon: {
@@ -933,8 +933,8 @@
 						type: "item"
 					}
 				]
-			x: -17.41d
-			y: 6.28d
+			x: -16.04d
+			y: 6.95d
 		}
 		{
 			icon: {
@@ -956,8 +956,8 @@
 						type: "item"
 					}
 				]
-			x: -12.15d
-			y: 6.66d
+			x: -11.86d
+			y: 6.52d
 		}
 		{
 			icon: {
@@ -1126,8 +1126,8 @@
 						type: "item"
 					}
 				]
-			x: -14.84d
-			y: 7.21d
+			x: -13.9d
+			y: 7.19d
 		}
 		{
 			icon: {
@@ -1149,8 +1149,8 @@
 						type: "item"
 					}
 				]
-			x: -13.44d
-			y: 7.18d
+			x: -12.86d
+			y: 6.94d
 		}
 		{
 			icon: {
@@ -1575,6 +1575,55 @@
 				]
 			x: -0.68d
 			y: 1.3d
+		}
+		{
+			icon: {
+				count: 1
+				id: "twilightforest:maze_map_focus"
+			}
+			dependencies: ["3B0000000000002A"]
+			id: "3B00000000000049"
+			rewards: [{
+				id: "3B00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "twilightforest:maze_map_focus"
+						}
+						id: "3B00000001000049"
+						structure: "twilightforest:labyrinth"
+						type: "structure"
+					}
+				]
+			x: -18.56d
+			y: 3.81d
+		}
+		{
+			icon: {
+				count: 1
+				id: "twilightforest:meef_stroganoff"
+			}
+			dependencies: ["3B00000000000049"]
+			id: "3B0000000000004A"
+			rewards: [{
+				id: "3B0000000200004A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100004A"
+						item: { count: 1 id: "twilightforest:meef_stroganoff" }
+						type: "item"
+					}
+				]
+			x: -18.36d
+			y: 4.88d
 		}
 	]
 }
