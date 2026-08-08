@@ -5,7 +5,6 @@
 	chapter.3B00000000000000.title: "Ash and Twilight"
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.5B00000000000000.title: "Concordance"
-	chapter.6B00000000000000.title: "Five by Five"
 	chapter.7B00000000000000.title: "God of War"
 	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
 	quest.1B00000000000001.title: "Get wood"
@@ -495,40 +494,6 @@
 	quest.5B00000000000010.title: "Cryptic Eye"
 	quest.5B00000000000011.quest_desc: ["Find the Evil Eye."]
 	quest.5B00000000000011.title: "Evil Eye"
-	quest.6B00000000000001.quest_desc: ["Grow moonstone (Instiller), craft the Moonstone Pedestal at ADVANCED, then raise the full COMPLEX shell with its 28 directional chiseled runes."]
-	quest.6B00000000000001.title: "COMPLEX pedestal"
-	quest.6B00000000000002.quest_desc: ["The five-color pedestal craft: Dragon's Breath + Reinforced Echo under 4 of each gem powder - four Seals per batch, eight total."]
-	quest.6B00000000000002.title: "Complex Spectrum Seals"
-	quest.6B00000000000003.quest_desc: ["Tier-3 ritual: Aeternium core, Soul-Stained Steel, Hallowed Gold and a Dragon Head (End Ship figureheads). The final Malum band opens."]
-	quest.6B00000000000003.title: "Soulbinding Brazier"
-	quest.6B00000000000004.quest_desc: ["Infuse a Dragon Head with Moonstone, Soul-Stained Steel and all eight spirits: four Authorities per ritual, eight total."]
-	quest.6B00000000000004.title: "Soulbound Authority"
-	quest.6B00000000000005.quest_desc: ["Forge the Weeping Compass, follow it to the natural Well, and return attuned. The black tear seals your oath."]
-	quest.6B00000000000005.title: "The Weeping Well"
-	quest.6B00000000000006.quest_desc: ["Clear the Burning Arena, place Burning Ashes on the Altar of Fire, and win. Three kills, nine Ignitium - rematch seals respawn him."]
-	quest.6B00000000000006.title: "Ignis, three times"
-	quest.6B00000000000007.quest_desc: ["The expanded 5x5 Crafter wall binds nine Ignitium in Kinetic Pattern Plates under Infernal spirits. Two lattices: one subdivides, one converges."]
-	quest.6B00000000000007.title: "Ignitium Lattice"
-	quest.6B00000000000008.quest_desc: ["One 3x3 pattern (plates + brass sheets around a Lattice) yields all eight Struts."]
-	quest.6B00000000000008.title: "Ignitium Struts"
-	quest.6B00000000000009.quest_desc: ["The Dragon Tower's Infernal Dragon drops 8-19 Dragon Bones per honest kill. Two kills guarantee sixteen."]
-	quest.6B00000000000009.title: "The Ashlord, twice"
-	quest.6B0000000000000A.quest_desc: ["Sixteen bones, four Aeternium, Moonstone Calcite and a Spirit-Focused Echo on the 5x5 wall. Two frames."]
-	quest.6B0000000000000A.title: "Dragonbone Frame"
-	quest.6B0000000000000B.quest_desc: ["One 3x3 pattern (Moonstone Calcite + Aeternium around a Frame) yields all eight Braces."]
-	quest.6B0000000000000B.title: "Dragonbone Braces"
-	quest.6B0000000000000C.quest_desc: ["The Instiller joins four Terminite with Moonstone Powder and Arcane Dust: the alloy of three magics. Four ingots."]
-	quest.6B0000000000000C.title: "Concordant Moonsteel"
-	quest.6B0000000000000D.quest_desc: ["Tier-3 only: Arcane Crystal core, four Deorum, eight Arcane spirits - 1000 Aureal / 2000 Blood. Four Seals."]
-	quest.6B0000000000000D.title: "Sovereign Seals"
-	quest.6B0000000000000E.quest_desc: ["A Dragon Head core with Authority, Spectrum Seal, Well Attunement, Lattice and Frame - 2500 Aureal / 12000 Blood / 64 Souls. Everything you are, twice over."]
-	quest.6B0000000000000E.title: "The Convergence Matrix"
-	quest.6B0000000000000F.quest_desc: ["The Crafter wall assembles Struts, Braces, End Stone Bricks, Reinforced Echoes and Moonstone Glass around a Matrix: Avaritia's Nether Crafting Table."]
-	quest.6B0000000000000F.title: "The 5x5 table"
-	quest.6B00000000000010.quest_desc: ["The current 5x5 culmination: Struts, Braces, Spectrum Seals, Authorities, Moonsteel, Sovereign Seals around the second Matrix. This setup remains provisional as progression develops."]
-	quest.6B00000000000010.title: "MEKANISM ACCESS CORE"
-	quest.6B00000000000011.quest_desc: ["Bind the Core and be done. In the full design this handoff unlocks Tier 2 for your team - machines begin AFTER this moment, never before."]
-	quest.6B00000000000011.title: "Bind the Core"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]

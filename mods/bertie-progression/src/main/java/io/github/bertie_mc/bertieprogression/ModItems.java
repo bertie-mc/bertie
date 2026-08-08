@@ -4,7 +4,6 @@ import com.mojang.serialization.Codec;
 import io.github.bertie_mc.bertieprogression.item.CraftingLicenseItem;
 import io.github.bertie_mc.bertieprogression.item.DescentAnchorItem;
 import io.github.bertie_mc.bertieprogression.item.FinderItem;
-import io.github.bertie_mc.bertieprogression.item.LocatorItem;
 import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
 import io.github.bertie_mc.bertieprogression.item.WeepingEyeItem;
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -100,27 +98,13 @@ public final class ModItems {
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
 
     // --- Deep dark / echo chain ---
-    public static final DeferredItem<Item> WARDEN_ECHO_PATTERN = rare("warden_echo_pattern", 1, Rarity.UNCOMMON);
     public static final DeferredItem<Item> SPIRIT_FOCUSED_ECHO = simple("spirit_focused_echo", 16);
-    public static final DeferredItem<LocatorItem> ECHOING_CITY_COMPASS = ITEMS.register(
-            "echoing_city_compass",
-            () -> new LocatorItem(
-                    new Item.Properties().stacksTo(1),
-                    ResourceLocation.parse("minecraft:ancient_city"),
-                    FinderItem.STANDARD_RADIUS));
-    public static final DeferredItem<LocatorItem> WEEPING_COMPASS = ITEMS.register(
-            "weeping_compass",
-            () -> new LocatorItem(
-                    new Item.Properties().stacksTo(1),
-                    ResourceLocation.parse("malum:weeping_well"),
-                    FinderItem.STANDARD_RADIUS));
     public static final DeferredItem<WeepingEyeItem> WEEPING_EYE = ITEMS.register(
             "weeping_eye",
             () -> new WeepingEyeItem(
                     new Item.Properties().stacksTo(16),
                     ResourceLocation.parse("malum:weeping_well"),
                     FinderItem.STANDARD_RADIUS));
-    public static final DeferredItem<Item> WELL_ATTUNEMENT = rare("well_attunement", 1, Rarity.RARE);
 
     /**
      * Netherly Meal: 8 nutrition, saturation 20. Vanilla stores saturation as a MODIFIER, and the
@@ -164,42 +148,23 @@ public final class ModItems {
     public static final DeferredItem<Item> CURSED_CORE = simple("cursed_core", 16);
     public static final DeferredItem<Item> STORM_CORE = simple("storm_core", 16);
 
-    // --- Final altars / capstone ---
-    public static final DeferredItem<Item> COMPLEX_SPECTRUM_SEAL = rare("complex_spectrum_seal", 16, Rarity.RARE);
-    public static final DeferredItem<Item> SOULBOUND_AUTHORITY = rare("soulbound_authority", 16, Rarity.RARE);
-    public static final DeferredItem<Item> IGNITIUM_LATTICE = rare("ignitium_lattice", 4, Rarity.RARE);
-    public static final DeferredItem<Item> IGNITIUM_STRUT = rare("ignitium_strut", 16, Rarity.UNCOMMON);
-    public static final DeferredItem<Item> DRAGONBONE_FRAME = rare("dragonbone_frame", 4, Rarity.RARE);
-    public static final DeferredItem<Item> DRAGONBONE_BRACE = rare("dragonbone_brace", 16, Rarity.UNCOMMON);
-    public static final DeferredItem<Item> CONCORDANT_MOONSTEEL_INGOT =
-            rare("concordant_moonsteel_ingot", 64, Rarity.RARE);
-    public static final DeferredItem<Item> HEPHAESTIAN_SOVEREIGN_SEAL =
-            rare("hephaestian_sovereign_seal", 16, Rarity.RARE);
-    public static final DeferredItem<Item> CONVERGENCE_MATRIX = rare("convergence_matrix", 4, Rarity.EPIC);
-    public static final DeferredItem<Item> MEKANISM_ACCESS_CORE = rare("mekanism_access_core", 1, Rarity.EPIC);
     public static final DeferredItem<Item> BOSS_REMATCH_SEAL = simple("boss_rematch_seal", 16);
-
-    // --- Block items ---
-    public static final DeferredItem<BlockItem> ECHO_LOCK_ITEM = ITEMS.registerSimpleBlockItem(ModBlocks.ECHO_LOCK);
 
     public static final Supplier<CreativeModeTab> MAIN_TAB = TABS.register(
             "main",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.bertieprogression"))
-                    .icon(() -> new ItemStack(MEKANISM_ACCESS_CORE.get()))
+                    .icon(() -> new ItemStack(NETHERLY_MEAL.get()))
                     .displayItems((params, out) -> {
                         out.accept(OPENING_MALLET.get());
                         for (DeferredItem<? extends Item> it : ALL) out.accept(it.get());
                         out.accept(DESCENT_ANCHOR.get());
-                        out.accept(ECHOING_CITY_COMPASS.get());
-                        out.accept(WEEPING_COMPASS.get());
                         out.accept(WEEPING_EYE.get());
                         out.accept(NETHERLY_MEAL.get());
                         out.accept(SIROK_NEST_MAP.get());
                         out.accept(KRAKEN_SHIP_MAP.get());
                         out.accept(YETI_HIDEOUT_MAP.get());
                         out.accept(CRAFTING_LICENSE.get());
-                        out.accept(ECHO_LOCK_ITEM.get());
                     })
                     .build());
 

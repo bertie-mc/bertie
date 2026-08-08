@@ -451,22 +451,10 @@ write(f"{RIT}/r36a_soulbinding_brazier.json",
              [("malum:soul_stained_steel_ingot", 4), ("malum:hallowed_gold_ingot", 2),
               ("minecraft:dragon_head", 1)],
              "malum:soulbinding_brazier", 1, tier=3))
-write(f"{RIT}/r37c_sovereign_seals.json",
-      ritual("forbidden_arcanus:arcane_crystal",
-             [("forbidden_arcanus:deorum_ingot", 4), ("malum:arcane_spirit", 4)],
-             "bertieprogression:hephaestian_sovereign_seal", 4, tier=3,
-             essences={"aureal": 1000, "blood": 2000, "souls": 0}))
 write(f"{RIT}/r37f_ignis_rematch_seal.json",
       ritual("minecraft:blaze_powder",
              [("minecraft:blaze_powder", 3), ("minecraft:nether_bricks", 3), ("malum:infernal_spirit", 2)],
              "bertieprogression:boss_rematch_seal", 1, tier=3))
-write(f"{RIT}/r40_convergence_matrix.json",
-      ritual("minecraft:dragon_head",
-             [("bertieprogression:soulbound_authority", 1), ("bertieprogression:complex_spectrum_seal", 1),
-              ("bertieprogression:well_attunement", 1), ("bertieprogression:ignitium_lattice", 1),
-              ("bertieprogression:dragonbone_frame", 1)],
-             "bertieprogression:convergence_matrix", 2, tier=3,
-             essences={"aureal": 2500, "blood": 12000, "souls": 64}))
 
 # ---- Malum spirit infusions ----
 # R19A was removed with the Spirit Altar Witness item.
@@ -478,17 +466,6 @@ write(f"{R}/malum/sculk_blocks.json",                      # R30S
 write(f"{R}/malum/spirit_focused_echo.json",               # R31B (soul crystal consumed — demo deviation)
       infusion("deeperdarker:reinforced_echo_shard", 1, [("deeperdarker:soul_crystal", 1)],
                [SP("arcane", 8), SP("aqueous", 8)], "bertieprogression:spirit_focused_echo"))
-write(f"{R}/malum/soulbound_authority.json",               # R37 (Brazier band demo: altar infusion)
-      infusion("minecraft:dragon_head", 1,
-               [("pastel:moonstone_shard", 1), ("malum:soul_stained_steel_ingot", 4)],
-               ALL8x8, "bertieprogression:soulbound_authority", 4))
-write(f"{R}/malum/weeping_compass.json",                   # R37D
-      infusion("bertieprogression:soulbound_authority", 1,
-               [("bertieprogression:spirit_focused_echo", 1), ("malum:refined_soulstone", 4), ("pastel:moonstone_shard", 4)],
-               [], "bertieprogression:weeping_compass"))
-write(f"{R}/malum/well_attunement.json",                   # R37E (natural-Well offering deferred)
-      infusion("bertieprogression:weeping_compass", 1, [("bertieprogression:soulbound_authority", 1)],
-               [SP("arcane", 8)], "bertieprogression:well_attunement"))
 write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
       infusion("deeperdarker:sculk_bone", 4,
                [("minecraft:end_stone_bricks", 4), ("bertieprogression:spirit_focused_echo", 1)],
@@ -499,24 +476,6 @@ write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
 # R21A Runic Workbench was removed: Malum's own spirit infusion is the only route again.
 # R24A Victory Ledger and R27 Nether Lintel recipes were removed with their blocks and items.
 # R31C Echo Lock went with the Echo and Below questline.
-write(f"{R}/mechanical/exclusive/ignitium_lattice_5x5.json",    # R38 (x2 output)
-      mech(["KSSSK", "SIIIS", "SIIIS", "SIIIS", "KSSSK"],
-           {"K": "bertieprogression:kinetic_pattern_plate", "S": "malum:infernal_spirit", "I": "cataclysm:ignitium_ingot"},
-           "bertieprogression:ignitium_lattice", 2))
-write(f"{R}/mechanical/exclusive/ignitium_struts_3x3.json",     # R38A (single run -> 8)
-      mech(["KBK", "BLB", "KBK"],
-           {"K": "bertieprogression:kinetic_pattern_plate", "B": "create:brass_sheet", "L": "bertieprogression:ignitium_lattice"},
-           "bertieprogression:ignitium_strut", 8))
-write(f"{R}/mechanical/exclusive/dragonbone_frame_5x5.json",    # R39 (x2 output)
-      mech(["ABMBA", "BBBBB", "MBEBM", "BBBBB", "ABMBA"],
-           {"A": "betterend:aeternium_ingot", "B": "block_factorys_bosses:dragon_bone",
-            "M": "pastel:moonstone_chiseled_calcite", "E": "bertieprogression:spirit_focused_echo"},
-           "bertieprogression:dragonbone_frame", 2))
-write(f"{R}/mechanical/exclusive/dragonbone_braces_3x3.json",   # R39A (single run -> 8)
-      mech(["MAM", "AFA", "MAM"],
-           {"M": "pastel:moonstone_chiseled_calcite", "A": "betterend:aeternium_ingot",
-            "F": "bertieprogression:dragonbone_frame"},
-           "bertieprogression:dragonbone_brace", 8))
 # R41 Nether Crafting Table went back to Avaritia's own recipe.
 # The two compressed tables become crafter walls instead of 3x3 stacks of themselves: nine tables
 # by hand was never the interesting part.
@@ -530,37 +489,14 @@ write(f"{R}/mechanical/exclusive/double_compressed_crafting_table.json",  # R41B
            "avaritia:double_compressed_crafting_table"))
 
 # ---- Pastel ----
-write(f"{R}/pastel/complex_spectrum_seals.json",           # R37A
-      pedestal(["DR"], {"D": "minecraft:dragon_breath", "R": "deeperdarker:reinforced_echo_shard"},
-               {"pastel:cyan": 4, "pastel:magenta": 4, "pastel:yellow": 4, "pastel:black": 4, "pastel:white": 4},
-               "bertieprogression:complex_spectrum_seal", 4))
 write(f"{R}/pastel/moonstone_synthesis.json",              # R32A
       instiller("pastel:moonstone_shard", 1, "pastel:bismuth_flake", "pastel:onyx_powder",
                 "pastel:moonstone_shard", 4, 400, 4.0))
 # R31R the 32-shard echo batch went with R31.
-write(f"{R}/pastel/concordant_moonsteel.json",             # R37B
-      instiller("betterend:terminite_ingot", 4, "pastel:moonstone_powder", "forbidden_arcanus:arcane_crystal_dust",
-                "bertieprogression:concordant_moonsteel_ingot", 4, 400, 4.0))
 
 # R25 proof-replication family was removed with the proof items.
 
 # ---- Avaritia capstone ----
-write(f"{R}/avaritia/mekanism_access_core.json", {         # R42 — exact §8.5
-    "neoforge:conditions": conds("avaritia"),
-    "type": "avaritia:shaped_table",
-    "tier": 2,
-    "key": {
-        "I": {"item": "bertieprogression:ignitium_strut"},
-        "D": {"item": "bertieprogression:dragonbone_brace"},
-        "P": {"item": "bertieprogression:complex_spectrum_seal"},
-        "B": {"item": "bertieprogression:soulbound_authority"},
-        "O": {"item": "bertieprogression:concordant_moonsteel_ingot"},
-        "S": {"item": "bertieprogression:hephaestian_sovereign_seal"},
-        "C": {"item": "bertieprogression:convergence_matrix"},
-    },
-    "pattern": ["IDPDI", "BOSOB", "PSCSP", "BOSOB", "IDPDI"],
-    "result": {"id": "bertieprogression:mekanism_access_core", "count": 1},
-})
 
 # Sculk Crafting Table: still a plain 3x3, but it now costs the soul-infused metal and the two
 # relics rather than a ring of sculk. Overrides Avaritia's own file.
@@ -2568,26 +2504,11 @@ ITEMS = {
     "twilight_concord": "Twilight Concord",
     "spirit_focused_echo": "Spirit-Focused Echo",
     "null_blaze_cube": "Null Blaze Cube",
-    "warden_echo_pattern": "Warden Echo Pattern",
-    "echoing_city_compass": "Echoing City Compass",
-    "weeping_compass": "Weeping Compass",
-    "well_attunement": "Well Attunement",
     "descent_anchor": "Descent Anchor",
-    "complex_spectrum_seal": "Complex Spectrum Seal",
-    "soulbound_authority": "Soulbound Authority",
-    "ignitium_lattice": "Ignitium Lattice",
-    "ignitium_strut": "Ignitium Strut",
-    "dragonbone_frame": "Dragonbone Frame",
-    "dragonbone_brace": "Dragonbone Brace",
-    "concordant_moonsteel_ingot": "Concordant Moonsteel Ingot",
-    "hephaestian_sovereign_seal": "Hephaestian Sovereign Seal",
-    "convergence_matrix": "Convergence Matrix",
-    "mekanism_access_core": "Mekanism Access Core",
     "boss_rematch_seal": "Boss Rematch Seal",
 }
 
 BLOCKS = {
-    "echo_lock": "Echo Lock",
 }
 
 # item models

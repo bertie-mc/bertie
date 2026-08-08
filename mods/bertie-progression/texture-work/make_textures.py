@@ -266,21 +266,7 @@ ITEM_PAINTERS = {
     "kinetic_pattern_plate": lambda: plate(ANDESITE, True, 10),
     "twilight_concord": lambda: shard((92, 160, 96, 255), 15),
     "spirit_focused_echo": lambda: shard(TEAL, 23),
-    "warden_echo_pattern": lambda: tablet(SCULK, SCULK_L, 27),
-    "echoing_city_compass": lambda: compass(SCULK_L, 28),
-    "weeping_compass": lambda: compass(VIOLET, 29),
-    "well_attunement": lambda: shard((60, 30, 90, 255), 30),
     "descent_anchor": lambda: anchor(31),
-    "complex_spectrum_seal": lambda: seal((80, 60, 110, 255), MOON, 33, 3),
-    "soulbound_authority": lambda: tablet(SOUL_GOLD, BLACKISH, 34),
-    "ignitium_lattice": lambda: lattice(FIRE_D, FIRE, 35),
-    "ignitium_strut": lambda: ingot(FIRE_D, 36, FIRE),
-    "dragonbone_frame": lambda: lattice(shade(IVORY, 0.85), MOON, 37),
-    "dragonbone_brace": lambda: ingot(IVORY, 38),
-    "concordant_moonsteel_ingot": lambda: ingot((44, 110, 118, 255), 39, MOON),
-    "hephaestian_sovereign_seal": lambda: seal(DARKSTONE, GOLD, 40, 3),
-    "convergence_matrix": lambda: quad_matrix(41),
-    "mekanism_access_core": lambda: core(42),
     "boss_rematch_seal": lambda: seal((110, 40, 40, 255), IVORY, 43, 2),
 }
 
@@ -295,7 +281,6 @@ def block_tex(base, accent, seed):
 # Painters for items the pack has since removed are deleted with them: make_textures.py writes
 # every entry here on every run, so a stale one keeps re-appearing as an untracked PNG.
 BLOCK_PAINTERS = {
-    "echo_lock": lambda: block_tex(SCULK, SCULK_L, 103),
 }
 
 for name, painter in ITEM_PAINTERS.items():

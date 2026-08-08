@@ -27,7 +27,7 @@ texture under `assets/bertieprogression/textures/item/`.
 
 ### Blocks
 
-`echo_lock` and the victory ledger, registered through `ModBlocks`.
+None. `ModBlocks` is empty since the Echo Lock left with the Echo and Below questline.
 
 ### Systems
 
