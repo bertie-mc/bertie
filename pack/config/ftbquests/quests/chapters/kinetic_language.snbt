@@ -54,7 +54,7 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
+			x: -18.0d
 			y: -0.5d
 		}
 		{
@@ -549,6 +549,7 @@
 				count: 1
 				id: "minecraft:compass"
 			}
+			dependencies: ["2B00000000000049"]
 			id: "2B00000000000017"
 			rewards: [{
 				id: "2B00000002000017"
