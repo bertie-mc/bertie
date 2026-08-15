@@ -63,14 +63,13 @@ final class AnvilCraftGuideEmiModule {
             page(
                     reg,
                     "heater",
-                    List.of("anvilcraft:heater", "anvilcraft:burning_heater"),
+                    // The fuel-burning Heater is a 1.6 addition; 1.5.3 ships only the electric one.
+                    List.of("anvilcraft:heater"),
                     "Heats whatever sits on top of it. With a cauldron up there, that is Super Heating.",
                     "Super Heating runs furnace and blast furnace recipes a batch at a time, adds recipes"
                             + " of its own, and doubles what ore smelting gives you.",
                     "It will not cook food. Put a lit Campfire under the cauldron instead.",
-                    "Burning Heater: banks fuel up to 1200s, needs 240s in hand before it will run, and"
-                            + " spends 240s per batch.",
-                    "Electric Heater: draws 16 kW without pause and stops the moment power runs short.");
+                    "Draws 16 kW without pause and stops the moment power runs short.");
             page(
                     reg,
                     "crushing_table",
@@ -124,11 +123,12 @@ final class AnvilCraftGuideEmiModule {
                     "The Charger pushes energy into an item and the Discharger pulls it back out, which"
                             + " is how capacitors are filled and emptied.",
                     "Both also run a few recipes that nothing but raw energy can perform.");
+            AnvilCraftBlockGuide.register(reg);
         });
     }
 
     /** One Information page, attached to every one of the given items that this pack actually has. */
-    private static void page(EmiRegistry reg, String key, List<String> itemIds, String... lines) {
+    static void page(EmiRegistry reg, String key, List<String> itemIds, String... lines) {
         List<EmiIngredient> stacks = new ArrayList<>();
         for (String id : itemIds) {
             EmiStack stack = Categories.stack(id);
