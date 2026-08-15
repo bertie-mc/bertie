@@ -14,9 +14,9 @@
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B00000000000049"]
-			id: "create:raw_zinc"
+				id: "create:raw_zinc"
 			}
+			dependencies: ["2B00000000000052"]
 			id: "2B00000000000001"
 			rewards: [{
 				id: "2B00000002000001"
@@ -39,7 +39,7 @@
 				count: 1
 				id: "minecraft:andesite"
 			}
-			dependencies: ["2B00000000000001"]
+			dependencies: ["2B00000000000052"]
 			id: "2B00000000000002"
 			rewards: [{
 				id: "2B00000002000002"
@@ -55,14 +55,17 @@
 					}
 				]
 			x: -16.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:andesite_alloy"
 			}
-			dependencies: ["2B00000000000002"]
+			dependencies: [
+				"2B0000000000004A"
+				"2B00000000000002"
+			]
 			id: "2B00000000000003"
 			rewards: [{
 				id: "2B00000002000003"
@@ -135,10 +138,10 @@
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B00000000000049"]
-			id: "iceandfire:earplugs"
+				id: "iceandfire:earplugs"
 			}
 			optional: true
+			dependencies: ["2B00000000000049"]
 			id: "2B00000000000006"
 			rewards: [{
 				id: "2B00000002000006"
@@ -153,8 +156,8 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
-			y: -2.5d
+			x: -19.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -176,8 +179,8 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
-			y: -2.5d
+			x: -18.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -199,8 +202,8 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
-			y: -2.5d
+			x: -16.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -226,8 +229,8 @@
 						value: 1L
 					}
 				]
-			x: -13.5d
-			y: -2.5d
+			x: -15.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -249,8 +252,8 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
-			y: -2.5d
+			x: -13.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -273,8 +276,8 @@
 						type: "item"
 					}
 				]
-			x: -10.5d
-			y: -2.5d
+			x: -11.25d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -296,15 +299,15 @@
 						type: "item"
 					}
 				]
-			x: -12.75d
-			y: -4.5d
+			x: -13.5d
+			y: -6.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B00000000000049"]
-			id: "berlordscarving:amethyst_slate"
+				id: "berlordscarving:amethyst_slate"
 			}
+			dependencies: ["2B00000000000049"]
 			id: "2B0000000000000D"
 			rewards: [{
 				id: "2B0000000200000D"
@@ -320,7 +323,7 @@
 					}
 				]
 			x: -18.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -345,7 +348,7 @@
 					}
 				]
 			x: -16.5d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -368,14 +371,17 @@
 					}
 				]
 			x: -15.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B0000000000000F", "2B0000000000000A"]
-			id: "malum:refined_soulstone"
+				id: "malum:refined_soulstone"
 			}
+			dependencies: [
+				"2B0000000000000F"
+				"2B0000000000000A"
+			]
 			id: "2B00000000000010"
 			rewards: [{
 				id: "2B00000002000010"
@@ -391,7 +397,7 @@
 					}
 				]
 			x: -13.5d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -414,14 +420,14 @@
 					}
 				]
 			x: -12.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B0000000000004A"]
-			id: "create:brass_ingot"
+				id: "create:brass_ingot"
 			}
+			dependencies: ["2B0000000000004A"]
 			id: "2B00000000000012"
 			rewards: [{
 				id: "2B00000002000012"
@@ -436,15 +442,18 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
-			y: 3.5d
+			x: -16.5d
+			y: 2.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B0000000000004B"]
-			id: "create:brass_casing"
+				id: "create:brass_casing"
 			}
+			dependencies: [
+				"2B00000000000012"
+				"2B0000000000004B"
+			]
 			id: "2B00000000000013"
 			rewards: [{
 				id: "2B00000002000013"
@@ -459,7 +468,7 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
+			x: -16.5d
 			y: 3.5d
 		}
 		{
@@ -482,7 +491,7 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
+			x: -15.0d
 			y: 3.5d
 		}
 		{
@@ -509,7 +518,7 @@
 						value: 1L
 					}
 				]
-			x: -12.0d
+			x: -13.5d
 			y: 3.5d
 		}
 		{
@@ -532,7 +541,7 @@
 						type: "item"
 					}
 				]
-			x: -10.5d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
@@ -554,7 +563,7 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
+			x: -19.5d
 			y: 5.5d
 		}
 		{
@@ -562,7 +571,10 @@
 				count: 1
 				id: "irons_spellbooks:wayward_compass"
 			}
-			dependencies: ["2B00000000000017"]
+			dependencies: [
+				"2B00000000000017"
+				"2B00000000000052"
+			]
 			id: "2B00000000000018"
 			rewards: [{
 				id: "2B00000002000018"
@@ -577,15 +589,15 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
+			x: -18.0d
 			y: 5.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B0000000000004C"]
-			id: "irons_spellbooks:decrepit_scythe"
+				id: "irons_spellbooks:decrepit_scythe"
 			}
+			dependencies: ["2B0000000000004C"]
 			id: "2B00000000000019"
 			rewards: [{
 				id: "2B00000002000019"
@@ -604,15 +616,18 @@
 						value: 1L
 					}
 				]
-			x: -13.5d
+			x: -15.0d
 			y: 5.5d
 		}
 		{
 			icon: {
 				count: 1
-				dependencies: ["2B00000000000019", "2B0000000000004D"]
-			id: "malum:crude_scythe"
+				id: "malum:crude_scythe"
 			}
+			dependencies: [
+				"2B00000000000019"
+				"2B0000000000004D"
+			]
 			id: "2B0000000000001A"
 			rewards: [{
 				id: "2B0000000200001A"
@@ -627,7 +642,7 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
+			x: -13.5d
 			y: 5.5d
 		}
 		{
@@ -654,7 +669,7 @@
 						type: "item"
 					}
 				]
-			x: -9.0d
+			x: -11.25d
 			y: 5.5d
 		}
 		{
@@ -1745,8 +1760,8 @@
 						type: "item"
 					}
 				]
-			x: -19.5d
-			y: -0.5d
+			x: -21.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -1768,15 +1783,15 @@
 						type: "item"
 					}
 				]
-			x: -19.5d
-			y: 2.5d
+			x: -16.5d
+			y: 1.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "forbidden_arcanus:edelwood_log"
 			}
-			dependencies: ["2B00000000000012"]
+			dependencies: ["2B00000000000052"]
 			id: "2B0000000000004B"
 			rewards: [{
 				id: "2B0000000200004B"
@@ -1791,7 +1806,7 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
+			x: -18.0d
 			y: 3.5d
 		}
 		{
@@ -1817,7 +1832,7 @@
 						type: "structure"
 					}
 				]
-			x: -15.0d
+			x: -16.5d
 			y: 5.5d
 		}
 		{
@@ -1840,7 +1855,7 @@
 						type: "item"
 					}
 				]
-			x: -11.25d
+			x: -13.5d
 			y: 4.5d
 		}
 		{
@@ -1863,7 +1878,7 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
+			x: -13.5d
 			y: 0.5d
 		}
 		{
@@ -1886,8 +1901,8 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
-			y: 4.5d
+			x: -15.0d
+			y: 2.5d
 		}
 		{
 			icon: {
@@ -1932,8 +1947,31 @@
 						type: "item"
 					}
 				]
-			x: -21.0d
+			x: -18.0d
 			y: 2.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:arcane_essence"
+			}
+			dependencies: ["2B00000000000049"]
+			id: "2B00000000000052"
+			rewards: [{
+				id: "2B00000002000052"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B00000001000052"
+						item: { count: 1 id: "irons_spellbooks:arcane_essence" }
+						type: "item"
+					}
+				]
+			x: -19.5d
+			y: 1.5d
 		}
 	]
 }

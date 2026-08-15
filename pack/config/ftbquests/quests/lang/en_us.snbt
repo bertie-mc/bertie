@@ -6,6 +6,7 @@
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.7B00000000000000.title: "God of War"
+	chapter.8B00000000000000.title: "Cinder and Bone"
 	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
 	quest.1B00000000000001.title: "Get wood"
 	quest.1B00000000000002.quest_desc: ["Craft a Small Wooden Slate from 4 planks in your 2x2 grid, then hold it and carve a tool head. There is no crafting table yet - shape comes before the grid."]
@@ -186,11 +187,11 @@
 	quest.1C0000000000005A.title: "Sculk Crafting Table"
 	quest.1C0000000000005B.quest_desc: ["On the Sculk table: an Amethyst Cluster, an Ignitium Ingot and a Divine Soulshard over Totemic Gold, Dragon Scales and Deep Alloy. It only works at night, and only under open sky or in a lush cave."]
 	quest.1C0000000000005B.title: "The Altar of Amethyst"
-	quest.2B00000000000001.quest_desc: ["Mine and gather 64 Raw Zinc - the alloy metal Create runs on."]
+	quest.2B00000000000001.quest_desc: ["Mine and gather 16 Raw Zinc - the alloy metal Create runs on."]
 	quest.2B00000000000001.title: "Zinc from the hills"
 	quest.2B00000000000002.quest_desc: ["Mine 64 Andesite. The bulk of every early machine."]
 	quest.2B00000000000002.title: "Andesite by the stack"
-	quest.2B00000000000003.quest_desc: ["Double-smelt Zinc Ingot + Andesite on the Brick Forge into Andesite Alloy (the crafting and mixing routes are gone). Bank 64."]
+	quest.2B00000000000003.quest_desc: ["Double-smelt Zinc Ingot + Andesite on the Brick Forge into Andesite Alloy (the crafting and mixing routes are gone). Eight to start."]
 	quest.2B00000000000003.title: "Andesite Alloy"
 	quest.2B00000000000004.quest_desc: ["Cut 16 Shafts from Andesite Alloy."]
 	quest.2B00000000000004.title: "Sixteen shafts"
@@ -342,6 +343,8 @@
 	quest.2B00000000000050.title: "Refined Soulstone stockpile"
 	quest.2B00000000000051.quest_desc: ["Sixty-four Zinc Ingots."]
 	quest.2B00000000000051.title: "Zinc stockpile"
+	quest.2B00000000000052.quest_desc: ["Eight Arcane Essence. It falls out of magic-touched mobs and turns up in almost any chest worth opening - and nothing in Iron's Spellbooks binds without it."]
+	quest.2B00000000000052.title: "Arcane Essence"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
@@ -416,60 +419,20 @@
 	quest.3B0000000000002E.title: "The Dragon's Heart"
 	quest.3B0000000000002F.quest_desc: ["A Tier-II ritual boils a Bowl down with the Fire Dragon Heart, a Koboleton Bone, Living Flesh, Fire Dragon Blood, two Fire Dragon Scales and a Bucket of Lava - for the full 50 Souls and 15000 Blood the forge can hold. Eat it and the floor turns to lava under you; survive four hits of it - 35 ticks - and the fire stops mattering for a minute."]
 	quest.3B0000000000002F.title: "Netherly Meal"
-	quest.3B00000000000030.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B00000000000030.title: "Second Line"
-	quest.3B00000000000031.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B00000000000031.title: "Third Line"
-	quest.3B00000000000032.quest_desc: ["Placeholder root - this line has no content yet."]
-	quest.3B00000000000032.title: "Fourth Line"
 	quest.3B00000000000033.quest_desc: ["Fourteen Obsidian - ten for the frame, and four spare for the ones you will lose."]
 	quest.3B00000000000033.title: "Fourteen Obsidian"
 	quest.3B00000000000034.quest_desc: ["One Iron Ingot and one Flint. Nothing lights the frame without it."]
 	quest.3B00000000000034.title: "Flint and Steel"
-	quest.3B00000000000035.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
-	quest.3B00000000000035.title: "Enter the Nether"
 	quest.3B00000000000036.quest_desc: ["Cut the flesh off the carcass. Rotten enough on its own; the infusion is what makes it worth carrying."]
 	quest.3B00000000000036.title: "Dragon Flesh"
 	quest.3B00000000000037.quest_desc: ["Spirit-infuse the Dragon Flesh with 64 Rotten Flesh, 16 Blood Vials and 4 Monster Flesh over Sacred, Wicked and Aqueous spirits. The Netherly Meal needs it."]
 	quest.3B00000000000037.title: "Living Flesh"
-	quest.3B00000000000038.quest_desc: ["Loot the Eye of Monstrous and let it point you at the Ruined Citadel."]
-	quest.3B00000000000038.title: "Eye of Monstrous"
-	quest.3B00000000000039.quest_desc: ["Wake the thing sleeping in the Citadel and put it back down."]
-	quest.3B00000000000039.title: "The Netherite Monstrosity"
-	quest.3B0000000000003A.quest_desc: ["The Eye of Flame reads the Nether for the Burning Arena."]
-	quest.3B0000000000003A.title: "Eye of Flame"
-	quest.3B0000000000003B.quest_desc: ["Ignis does not turn up on his own - the Ashes are the summons."]
-	quest.3B0000000000003B.title: "Burning Ashes"
-	quest.3B0000000000003C.quest_desc: ["Burn the Ashes in the Arena and kill what walks out. Ignited Berserkers start appearing in the fortresses afterwards."]
-	quest.3B0000000000003C.title: "Ignis"
-	quest.3B0000000000003D.quest_desc: ["Find the Underworld Arena. The door stays shut for now."]
-	quest.3B0000000000003D.title: "The Underworld Arena"
-	quest.3B0000000000003E.quest_desc: ["The Arena Door only opens for its own key."]
-	quest.3B0000000000003E.title: "Underworld Arena Key"
-	quest.3B0000000000003F.quest_desc: ["Open the door, and finish what is behind it."]
-	quest.3B0000000000003F.title: "Helvar, the Underworld Knight"
-	quest.3B00000000000040.quest_desc: ["Any of the three starter Pigment Pedestals - Topaz, Amethyst or Citrine. The Onyx and Moonstone upgrades do not count."]
-	quest.3B00000000000040.title: "A Pigment Pedestal"
-	quest.3B00000000000041.quest_desc: ["Get inside a Nether Fortress."]
-	quest.3B00000000000041.title: "Into the Fortress"
-	quest.3B00000000000042.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
-	quest.3B00000000000042.title: "Three Wither Skulls"
-	quest.3B00000000000043.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
-	quest.3B00000000000043.title: "The Wither"
-	quest.3B00000000000044.quest_desc: ["What the Wither leaves behind."]
-	quest.3B00000000000044.title: "The Nether Star"
-	quest.3B00000000000045.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
-	quest.3B00000000000045.title: "Eye of Mech"
-	quest.3B00000000000046.quest_desc: ["Follow the eye and get inside."]
-	quest.3B00000000000046.title: "The Ancient Factory"
-	quest.3B00000000000047.quest_desc: ["The last thing in the factory. It drops Witherite."]
-	quest.3B00000000000047.title: "The Harbinger"
-	quest.3B00000000000048.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
-	quest.3B00000000000048.title: "The Paintbrush"
 	quest.3B00000000000049.quest_desc: ["Find the Minotaur's Labyrinth under the Twilight Forest and get inside."]
 	quest.3B00000000000049.title: "The Labyrinth"
 	quest.3B0000000000004A.quest_desc: ["The Labyrinth's own dish. The Netherly Meal is boiled down from it."]
 	quest.3B0000000000004A.title: "Meef Stroganoff"
+	quest.3B0000000000004B.quest_desc: ["Strike the frame and watch it catch. Stand and look at the lit portal for a moment - whatever is on the other side is looking back."]
+	quest.3B0000000000004B.title: "The Nether?"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
@@ -1748,4 +1711,40 @@
 	quest.7B0000000000026B.title: "Steeleaf Sword"
 	quest.7B0000000000026C.quest_desc: ["Fires three arrows at once in a spread."]
 	quest.7B0000000000026C.title: "Triple Bow"
+	quest.8B00000000000001.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
+	quest.8B00000000000001.title: "Enter the Nether"
+	quest.8B00000000000002.quest_desc: ["Loot the Eye of Monstrous and let it point you at the Ruined Citadel."]
+	quest.8B00000000000002.title: "Eye of Monstrous"
+	quest.8B00000000000003.quest_desc: ["Wake the thing sleeping in the Citadel and put it back down."]
+	quest.8B00000000000003.title: "The Netherite Monstrosity"
+	quest.8B00000000000004.quest_desc: ["The Eye of Flame reads the Nether for the Burning Arena."]
+	quest.8B00000000000004.title: "Eye of Flame"
+	quest.8B00000000000005.quest_desc: ["Ignis does not turn up on his own - the Ashes are the summons."]
+	quest.8B00000000000005.title: "Burning Ashes"
+	quest.8B00000000000006.quest_desc: ["Burn the Ashes in the Arena and kill what walks out. Ignited Berserkers start appearing in the fortresses afterwards."]
+	quest.8B00000000000006.title: "Ignis"
+	quest.8B00000000000007.quest_desc: ["Find the Underworld Arena. The door stays shut for now."]
+	quest.8B00000000000007.title: "The Underworld Arena"
+	quest.8B00000000000008.quest_desc: ["The Arena Door only opens for its own key."]
+	quest.8B00000000000008.title: "Underworld Arena Key"
+	quest.8B00000000000009.quest_desc: ["Open the door, and finish what is behind it."]
+	quest.8B00000000000009.title: "Helvar, the Underworld Knight"
+	quest.8B0000000000000A.quest_desc: ["Any of the three starter Pigment Pedestals - Topaz, Amethyst or Citrine. The Onyx and Moonstone upgrades do not count."]
+	quest.8B0000000000000A.title: "A Pigment Pedestal"
+	quest.8B0000000000000B.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
+	quest.8B0000000000000B.title: "The Paintbrush"
+	quest.8B0000000000000C.quest_desc: ["Get inside a Nether Fortress."]
+	quest.8B0000000000000C.title: "Into the Fortress"
+	quest.8B0000000000000D.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
+	quest.8B0000000000000D.title: "Three Wither Skulls"
+	quest.8B0000000000000E.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
+	quest.8B0000000000000E.title: "The Wither"
+	quest.8B0000000000000F.quest_desc: ["What the Wither leaves behind."]
+	quest.8B0000000000000F.title: "The Nether Star"
+	quest.8B00000000000010.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
+	quest.8B00000000000010.title: "Eye of Mech"
+	quest.8B00000000000011.quest_desc: ["Follow the eye and get inside."]
+	quest.8B00000000000011.title: "The Ancient Factory"
+	quest.8B00000000000012.quest_desc: ["The last thing in the factory. It drops Witherite."]
+	quest.8B00000000000012.title: "The Harbinger"
 }

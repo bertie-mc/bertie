@@ -1002,9 +1002,9 @@
 		{
 			icon: {
 				count: 1
-				dependencies: ["1B0000000000001B"]
-			id: "sophisticatedbackpacks:iron_backpack"
+				id: "sophisticatedbackpacks:iron_backpack"
 			}
+			dependencies: ["1B0000000000001B"]
 			id: "1B00000000000031"
 			rewards: [{
 				id: "1B00000002000031"

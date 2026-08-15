@@ -1093,6 +1093,12 @@ write(f"{R}/mechanical/pre_table/vanilla_crafting_table.json",
             "C": "create:cogwheel", "H": CENTRE_ITEM},
            "minecraft:crafting_table", 1))
 
+# Once the wall has made the first one, a table copies itself out of nine planks. The stock 2x2
+# recipe stays disabled — this one needs a grid you can only have by owning a table already.
+write(f"{R}/table/crafting_table.json",
+      shaped(["PPP", "PPP", "PPP"], {"P": "#minecraft:planks"},
+             "minecraft:crafting_table", 1))
+
 # ==================================================== Create machines + magic
 # belt ITEM = create:belt_connector (create:belt is the placed block, not craftable).
 _BELT = "create:belt_connector"
