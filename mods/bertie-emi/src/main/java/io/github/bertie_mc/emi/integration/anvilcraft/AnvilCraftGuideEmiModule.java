@@ -126,6 +126,7 @@ final class AnvilCraftGuideEmiModule {
             AnvilCraftBlockGuide.register(reg);
             AnvilCraftMaterialGuide.register(reg);
             AnvilCraftFeatureGuide.register(reg);
+            AnvilCraftToolGuide.register(reg);
         });
     }
 
