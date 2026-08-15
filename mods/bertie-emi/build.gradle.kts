@@ -35,6 +35,7 @@ dependencies {
     compileOnly(deps.betterArcheology)
     compileOnly(deps.l2Complements)
     jarJarCompileOnly(deps.anvilcraft)
+    compileOnly(deps.magitech)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)

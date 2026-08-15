@@ -19,6 +19,7 @@ import io.github.bertie_mc.emi.integration.farmerspizzeria.FarmersPizzeriaEmiMod
 import io.github.bertie_mc.emi.integration.forbiddenarcanus.ForbiddenArcanusEmiModule;
 import io.github.bertie_mc.emi.integration.ironsspellbooks.IronsSpellbooksEmiModule;
 import io.github.bertie_mc.emi.integration.l2complements.L2ComplementsEmiModule;
+import io.github.bertie_mc.emi.integration.magitech.MagitechEmiModule;
 import io.github.bertie_mc.emi.integration.malum.MalumEmiModule;
 import io.github.bertie_mc.emi.integration.slag.SlagEmiModule;
 import io.github.bertie_mc.emi.integration.slavicdelight.SlavicDelightEmiModule;
@@ -70,6 +71,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("betterarcheology", () -> BetterArcheologyEmiModule.register(registry));
         success &= run("l2complements", () -> L2ComplementsEmiModule.register(registry));
         success &= run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
+        success &= run("magitech", () -> MagitechEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");
         }

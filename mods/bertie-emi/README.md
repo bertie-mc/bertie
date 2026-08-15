@@ -15,7 +15,7 @@ Releases use `bertie-emi/vX.Y.Z` tags on the
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and EMI.
 
 ## Credits / Integration
-Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
+Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Magitech, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
 
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency

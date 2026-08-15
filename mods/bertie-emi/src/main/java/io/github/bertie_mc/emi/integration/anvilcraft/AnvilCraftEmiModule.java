@@ -4,8 +4,10 @@ import dev.anvilcraft.lib.recipe.component.BlockStatePredicate;
 import dev.anvilcraft.lib.recipe.component.ChanceBlockState;
 import dev.anvilcraft.lib.recipe.component.ChanceItemStack;
 import dev.anvilcraft.lib.recipe.component.ItemIngredientPredicate;
+import dev.dubhe.anvilcraft.recipe.CanningFoodRecipe;
 import dev.dubhe.anvilcraft.recipe.ChargerChargingRecipe;
 import dev.dubhe.anvilcraft.recipe.JewelCraftingRecipe;
+import dev.dubhe.anvilcraft.recipe.PillRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.MassInjectRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.StampingUniqueItemsRecipe;
 import dev.dubhe.anvilcraft.recipe.anvil.collision.AnvilCollisionCraftRecipe;
@@ -37,6 +39,7 @@ import dev.dubhe.anvilcraft.recipe.transform.MobTransformRecipe;
 import dev.dubhe.anvilcraft.recipe.transform.MobTransformWithItemRecipe;
 import dev.dubhe.anvilcraft.recipe.transform.TransformResult;
 import dev.emi.emi.api.EmiRegistry;
+import dev.emi.emi.api.recipe.EmiCraftingRecipe;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
@@ -47,18 +50,29 @@ import io.github.bertie_mc.emi.framework.Recipes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Supplier;
+import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
+import net.neoforged.neoforge.common.Tags;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * AnvilCraft — recipes triggered by a falling anvil. The "process" types (item-based, block-based and
@@ -70,14 +84,20 @@ import net.minecraft.world.level.material.Fluids;
  * <p>Category names follow AnvilCraft's own {@code gui.anvilcraft.category.*} strings so the EMI tabs
  * read the same as the mod's JEI ones.
  *
- * <p>Still deferred (nothing to usefully render): {@code cooling} (a raw anvillib in-world recipe
- * with bespoke outcomes), and the dynamic {@code CanningFoodRecipe}/{@code PillRecipe}, which are
- * vanilla {@code CustomRecipe}s matching any food / any potion.
+ * <p>{@code CanningFoodRecipe} and {@code PillRecipe} are vanilla {@code CustomRecipe}s, so EMI's own
+ * crafting handler cannot read them; they are enumerated here and added to EMI's Crafting category
+ * where they belong, rather than being given a tab of their own. The conversions with no recipe file
+ * at all live in {@link AnvilCraftBehaviorEmiModule}.
+ *
+ * <p>Still deferred (nothing to usefully render): {@code cooling}, a raw anvillib in-world recipe
+ * with bespoke outcomes.
  *
  * <p>Most types have no machine block, so the workstation falls back to the Anvil.
  */
 public final class AnvilCraftEmiModule {
     private AnvilCraftEmiModule() {}
+
+    private static final Logger LOGGER = LoggerFactory.getLogger("bertieemi");
 
     private static final String ANVIL = "minecraft:anvil";
     private static final String CAULDRON = "minecraft:cauldron";
@@ -85,26 +105,63 @@ public final class AnvilCraftEmiModule {
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
 
-        process(reg, rm, BulgingRecipe.class, "anvilcraft_bulging", CAULDRON, "Bulging");
-        process(reg, rm, ItemCrushRecipe.class, "anvilcraft_item_crush", "anvilcraft:crushing_table", "Item Crushing");
-        process(reg, rm, SuperHeatingRecipe.class, "anvilcraft_super_heating", CAULDRON, "Super Heating");
-        process(reg, rm, TimeWarpRecipe.class, "anvilcraft_time_warp", ANVIL, "Time Warp");
-        process(reg, rm, StampingRecipe.class, "anvilcraft_stamping", "anvilcraft:stamping_platform", "Stamping");
-        process(reg, rm, UnpackRecipe.class, "anvilcraft_unpack", ANVIL, "Unpacking");
-        process(reg, rm, MeshRecipe.class, "anvilcraft_mesh", ANVIL, "Mesh Sifting");
-        process(reg, rm, ItemCompressRecipe.class, "anvilcraft_item_compress", ANVIL, "Item Compress");
-        process(reg, rm, NeutronIrradiationRecipe.class, "anvilcraft_neutron", ANVIL, "Neutron Irradiation");
-        process(reg, rm, CookingRecipe.class, "anvilcraft_cooking", ANVIL, "Anvil Cooking");
-        process(reg, rm, BoilingRecipe.class, "anvilcraft_boiling", CAULDRON, "Boiling");
+        process(reg, rm, () -> BulgingRecipe.class, "anvilcraft_bulging", CAULDRON, "Bulging");
+        process(
+                reg,
+                rm,
+                () -> ItemCrushRecipe.class,
+                "anvilcraft_item_crush",
+                "anvilcraft:crushing_table",
+                "Item Crushing");
+        process(reg, rm, () -> SuperHeatingRecipe.class, "anvilcraft_super_heating", CAULDRON, "Super Heating");
+        process(reg, rm, () -> TimeWarpRecipe.class, "anvilcraft_time_warp", ANVIL, "Time Warp");
+        process(reg, rm, () -> StampingRecipe.class, "anvilcraft_stamping", "anvilcraft:stamping_platform", "Stamping");
+        process(reg, rm, () -> UnpackRecipe.class, "anvilcraft_unpack", ANVIL, "Unpacking");
+        process(reg, rm, () -> MeshRecipe.class, "anvilcraft_mesh", ANVIL, "Mesh Sifting");
+        process(reg, rm, () -> ItemCompressRecipe.class, "anvilcraft_item_compress", ANVIL, "Item Compress");
+        process(reg, rm, () -> NeutronIrradiationRecipe.class, "anvilcraft_neutron", ANVIL, "Neutron Irradiation");
+        process(reg, rm, () -> CookingRecipe.class, "anvilcraft_cooking", ANVIL, "Anvil Cooking");
+        process(reg, rm, () -> BoilingRecipe.class, "anvilcraft_boiling", CAULDRON, "Boiling");
 
-        process(reg, rm, BlockSmearRecipe.class, "anvilcraft_block_smear", ANVIL, "Block Smear");
-        process(reg, rm, BlockCrushRecipe.class, "anvilcraft_block_crush", ANVIL, "Block Crushing");
-        process(reg, rm, BlockCompressRecipe.class, "anvilcraft_block_compress", ANVIL, "Block Compress");
+        process(reg, rm, () -> BlockSmearRecipe.class, "anvilcraft_block_smear", ANVIL, "Block Smear");
+        process(reg, rm, () -> BlockCrushRecipe.class, "anvilcraft_block_crush", ANVIL, "Block Crushing");
+        process(reg, rm, () -> BlockCompressRecipe.class, "anvilcraft_block_compress", ANVIL, "Block Compress");
 
         // Mixed: these two carry item AND block sides at once, which is why the mapper is unified.
-        process(reg, rm, ItemInjectRecipe.class, "anvilcraft_item_inject", ANVIL, "Item Inject");
-        process(reg, rm, SqueezingRecipe.class, "anvilcraft_squeezing", CAULDRON, "Squeezing");
+        process(reg, rm, () -> ItemInjectRecipe.class, "anvilcraft_item_inject", ANVIL, "Item Inject");
+        process(reg, rm, () -> SqueezingRecipe.class, "anvilcraft_squeezing", CAULDRON, "Squeezing");
 
+        safely("Jewel Crafting", () -> jewelCrafting(reg, rm));
+        safely("Stamping (Unique)", () -> stampingUnique(reg, rm));
+        safely("Charger Charging", () -> chargerCharging(reg, rm));
+        safely("Mass Inject", () -> massInject(reg, rm));
+        safely("Anvil Collision", () -> anvilCollision(reg, rm));
+        safely("Mineral Fountain", () -> mineralFountain(reg, rm));
+        safely("Mob Transform", () -> mobTransform(reg, rm));
+        safely("Multiblock", () -> multiblock(reg, rm));
+        safely("Multiple To One Smithing", () -> multipleToOneSmithing(reg, rm));
+        safely("Canning Food", () -> canningFood(reg, rm));
+        safely("Pill", () -> pills(reg, rm));
+        AnvilCraftBehaviorEmiModule.register(reg);
+    }
+
+    /**
+     * AnvilCraft reshapes its recipe classes between releases — 1.6 folded bulging, boiling and
+     * cooking into other types, and took anvillib from 1.x to 2.x with them. Every category is
+     * registered through here so that a pack running a build other than the one this was compiled
+     * against loses only the categories that actually moved, instead of losing the whole mod's tabs
+     * to the first missing class. Class literals therefore have to stay inside the lambda, where the
+     * JVM resolves them lazily.
+     */
+    static void safely(String category, Runnable body) {
+        try {
+            body.run();
+        } catch (Throwable t) {
+            LOGGER.warn("bertieemi: AnvilCraft '{}' is not in this build of the mod, skipping it", category, t);
+        }
+    }
+
+    private static void jewelCrafting(EmiRegistry reg, RecipeManager rm) {
         EmiRecipeCategory jewel =
                 Categories.machine(reg, "anvilcraft_jewel", "anvilcraft:jewelcrafting_table", "Jewel Crafting");
         Recipes.forEach(rm, JewelCraftingRecipe.class, (id, r) -> {
@@ -113,7 +170,9 @@ public final class AnvilCraftEmiModule {
             d.itemOut(EmiStack.of(r.getResult()));
             reg.addRecipe(new GenericEmiRecipe(jewel, id, d));
         });
+    }
 
+    private static void stampingUnique(EmiRegistry reg, RecipeManager rm) {
         EmiRecipeCategory su = Categories.machine(
                 reg, "anvilcraft_stamping_unique", "anvilcraft:stamping_platform", "Stamping (Unique)");
         Recipes.forEach(rm, StampingUniqueItemsRecipe.class, (id, r) -> {
@@ -122,7 +181,9 @@ public final class AnvilCraftEmiModule {
             for (ChanceItemStack c : r.getResults()) out(d, c);
             reg.addRecipe(new GenericEmiRecipe(su, id, d));
         });
+    }
 
+    private static void chargerCharging(EmiRegistry reg, RecipeManager rm) {
         EmiRecipeCategory charger = Categories.machine(reg, "anvilcraft_charger", ANVIL, "Charger Charging");
         Recipes.forEach(rm, ChargerChargingRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
@@ -131,13 +192,72 @@ public final class AnvilCraftEmiModule {
             if (r.getTime() > 0) d.info(Component.literal(Categories.seconds(r.getTime())));
             reg.addRecipe(new GenericEmiRecipe(charger, id, d));
         });
+    }
 
-        massInject(reg, rm);
-        anvilCollision(reg, rm);
-        mineralFountain(reg, rm);
-        mobTransform(reg, rm);
-        multiblock(reg, rm);
-        multipleToOneSmithing(reg, rm);
+    /**
+     * A tin can plus any food. The recipe itself only carries the predicate, so the food slot is the
+     * {@code c:foods} tag filtered by it — the same list AnvilCraft's JEI extension builds.
+     */
+    private static void canningFood(EmiRegistry reg, RecipeManager rm) {
+        Recipes.forEach(rm, CanningFoodRecipe.class, (id, r) -> {
+            List<EmiStack> foods = new ArrayList<>();
+            BuiltInRegistries.ITEM.getTag(Tags.Items.FOODS).ifPresent(tag -> {
+                for (Holder<Item> holder : tag) {
+                    ItemStack stack = holder.value().getDefaultInstance();
+                    if (!stack.isEmpty() && r.isFood(stack)) {
+                        foods.add(EmiStack.of(stack));
+                    }
+                }
+            });
+            if (foods.isEmpty()) {
+                return;
+            }
+            crafting(
+                    reg,
+                    id,
+                    List.of(Categories.stack("anvilcraft:tin_can"), EmiIngredient.of(foods)),
+                    "anvilcraft:canned_food");
+        });
+    }
+
+    /**
+     * A pill plus a potion of any kind, which the pill then carries. Water/mundane/thick/awkward are
+     * left out because they hold no effect to transfer.
+     */
+    private static void pills(EmiRegistry reg, RecipeManager rm) {
+        Recipes.forEach(rm, PillRecipe.class, (id, r) -> {
+            List<EmiStack> potions = new ArrayList<>();
+            for (Item bottle : List.of(Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION)) {
+                for (Holder.Reference<Potion> potion :
+                        BuiltInRegistries.POTION.holders().toList()) {
+                    if (potion.is(Potions.WATER)
+                            || potion.is(Potions.MUNDANE)
+                            || potion.is(Potions.THICK)
+                            || potion.is(Potions.AWKWARD)) {
+                        continue;
+                    }
+                    ItemStack stack = bottle.getDefaultInstance();
+                    stack.set(DataComponents.POTION_CONTENTS, new PotionContents(potion));
+                    potions.add(EmiStack.of(stack));
+                }
+            }
+            if (potions.isEmpty()) {
+                return;
+            }
+            crafting(
+                    reg,
+                    id,
+                    List.of(EmiIngredient.of(potions), Categories.stack("anvilcraft:pill")),
+                    "anvilcraft:pill");
+        });
+    }
+
+    private static void crafting(EmiRegistry reg, ResourceLocation id, List<EmiIngredient> inputs, String result) {
+        EmiStack out = Categories.stack(result);
+        if (out.isEmpty()) {
+            return;
+        }
+        reg.addRecipe(new EmiCraftingRecipe(inputs, out, id, true));
     }
 
     /**
@@ -146,20 +266,25 @@ public final class AnvilCraftEmiModule {
      * the item-only, block-only and mixed types alike.
      */
     private static <R extends AbstractProcessRecipe<?>> void process(
-            EmiRegistry reg, RecipeManager rm, Class<R> cls, String key, String ws, String name) {
-        EmiRecipeCategory cat = Categories.machine(reg, key, ws, name);
-        Recipes.forEach(rm, cls, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
-            for (ItemIngredientPredicate p : r.getInputItems()) d.itemIn(predIn(p));
-            for (BlockStatePredicate bp : r.getInputBlocks()) d.itemIn(blockIn(bp));
-            HasCauldronSimple c = r.getHasCauldron();
-            if (c != null) {
-                d.fluidIn(fluid(c.fluid()));
-                d.fluidOut(fluid(c.transform()));
-            }
-            for (ChanceItemStack o : r.getResultItems()) out(d, o);
-            for (ChanceBlockState cb : r.getResultBlocks()) d.itemOut(blockOut(cb));
-            reg.addRecipe(new GenericEmiRecipe(cat, id, d));
+            EmiRegistry reg, RecipeManager rm, Supplier<Class<R>> cls, String key, String ws, String name) {
+        safely(name, () -> {
+            // Resolve the recipe class before declaring the category, so a type this build of
+            // AnvilCraft no longer has leaves no empty tab behind.
+            Class<R> type = cls.get();
+            EmiRecipeCategory cat = Categories.machine(reg, key, ws, name);
+            Recipes.forEach(rm, type, (id, r) -> {
+                MachineDescriptor d = new MachineDescriptor();
+                for (ItemIngredientPredicate p : r.getInputItems()) d.itemIn(predIn(p));
+                for (BlockStatePredicate bp : r.getInputBlocks()) d.itemIn(blockIn(bp));
+                HasCauldronSimple c = r.getHasCauldron();
+                if (c != null) {
+                    d.fluidIn(fluid(c.fluid()));
+                    d.fluidOut(fluid(c.transform()));
+                }
+                for (ChanceItemStack o : r.getResultItems()) out(d, o);
+                for (ChanceBlockState cb : r.getResultBlocks()) d.itemOut(blockOut(cb));
+                reg.addRecipe(new GenericEmiRecipe(cat, id, d));
+            });
         });
     }
 
