@@ -124,14 +124,14 @@ public final class AnvilCraftEmiModule {
                 () -> BulgingRecipe.class,
                 "anvilcraft_bulging",
                 "Bulging",
-                new Setup(CAULDRON, false, DROP + "in a filled cauldron"));
+                new Setup(CAULDRON, false, DROP + "in a water-filled cauldron"));
         process(
                 reg,
                 rm,
                 () -> SqueezingRecipe.class,
                 "anvilcraft_squeezing",
                 "Squeezing",
-                new Setup(CAULDRON, false, DROP + "in a filled cauldron"));
+                new Setup(CAULDRON, false, "Anvil onto a block sitting above a cauldron"));
         process(
                 reg,
                 rm,
@@ -181,14 +181,14 @@ public final class AnvilCraftEmiModule {
                 () -> NeutronIrradiationRecipe.class,
                 "anvilcraft_neutron",
                 "Neutron Irradiation",
-                machine("anvilcraft:neutron_irradiator", DROP + "on a Neutron Irradiator"));
+                machine("anvilcraft:neutron_irradiator", DROP + "in a cauldron on a Neutron Irradiator"));
         process(
                 reg,
                 rm,
                 () -> CookingRecipe.class,
                 "anvilcraft_cooking",
                 "Anvil Cooking",
-                machine("minecraft:campfire", DROP + "on a lit Campfire"));
+                machine("minecraft:campfire", DROP + "in a cauldron on a lit Campfire"));
         process(
                 reg,
                 rm,
@@ -202,7 +202,7 @@ public final class AnvilCraftEmiModule {
                 () -> ItemCompressRecipe.class,
                 "anvilcraft_item_compress",
                 "Item Compress",
-                transforms(DROP + "lying on the ground"));
+                new Setup(CAULDRON, false, DROP + "in a cauldron"));
 
         process(
                 reg,
@@ -247,6 +247,7 @@ public final class AnvilCraftEmiModule {
         safely("Canning Food", () -> canningFood(reg, rm));
         safely("Pill", () -> pills(reg, rm));
         AnvilCraftBehaviorEmiModule.register(reg);
+        AnvilCraftGuideEmiModule.register(reg);
     }
 
     /**
