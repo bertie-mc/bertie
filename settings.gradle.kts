@@ -100,4 +100,5 @@ include(
     ":mods:screenshot-copy",
     ":mods:short-circuit-fix",
     ":mods:withered-hearts",
+    ":mods:withering-waver",
 )

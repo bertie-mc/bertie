@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "witheringwaver:item/withering_waver_spawn_egg"
+  }
+}

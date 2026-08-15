@@ -405,4 +405,5 @@ dependencies {
     packMods(project(":mods:screenshot-copy"))
     packMods(project(":mods:short-circuit-fix"))
     packMods(project(":mods:withered-hearts"))
+    packMods(project(":mods:withering-waver"))
 }

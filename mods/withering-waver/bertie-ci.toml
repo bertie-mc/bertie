@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "withering-waver"
+kind = "neoforge-mod"
+gradle-project = ":mods:withering-waver"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
