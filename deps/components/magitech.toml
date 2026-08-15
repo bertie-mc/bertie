@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "mJ7yWnrA"
+version-id = "rpgkSjm0"
+filename = "magitech-1.1.3.jar"

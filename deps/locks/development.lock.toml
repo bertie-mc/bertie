@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "a3ba67ebe9dba083635ec0b73373ed5314644c407fea0f110ef8fcb9911e866e"
+inputs-hash = "dc1413f617c2a03f4c3ac30d21b2a8b7cc4ffb22871c2cc42ca03eb621eed2ed"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -577,6 +577,10 @@ mod = "modrinth:PQlYtuln:QgrkQcVz"
 any = "modrinth:MdlnLS7Q:fNjxgZPH"
 mod = "modrinth:MdlnLS7Q:fNjxgZPH"
 
+[components."forgified-fabric-api"]
+any = "modrinth:Aqlf1Shp:7nHK7hMg"
+mod = "modrinth:Aqlf1Shp:7nHK7hMg"
+
 [components."frights-delight"]
 any = "modrinth:awWvXlb2:4BABsmeb"
 mod = "modrinth:awWvXlb2:4BABsmeb"
@@ -860,6 +864,10 @@ mod = "modrinth:qgQomU7L:lc8t2DTb"
 [components."magic-of-color"]
 any = "modrinth:EjTIg7n8:XxWieIYF"
 mod = "modrinth:EjTIg7n8:XxWieIYF"
+
+[components."magitech"]
+any = "modrinth:mJ7yWnrA:rpgkSjm0"
+mod = "modrinth:mJ7yWnrA:rpgkSjm0"
 
 [components."magnum-torch"]
 any = "modrinth:jorDmSKv:BZAhwo2r"
@@ -3581,6 +3589,26 @@ version-id = "nnQq1ivl"
 provides = ["dummmmmmy"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:twkfQtEc:er7S98Q1", "mod-id" = "moonlight", "version-range" = "*", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:Aqlf1Shp:7nHK7hMg"]
+name = "forgified-fabric-api"
+component = "forgified-fabric-api"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "Aqlf1Shp"
+version = "7nHK7hMg"
+filename = "forgified-fabric-api-0.116.7+2.2.4+1.21.1.jar"
+project-id = "Aqlf1Shp"
+version-id = "7nHK7hMg"
+provides = ["fabric_api", "forgified_fabric_api"]
+bundled-provides = ["fabric_api_base", "fabric_api_lookup_api_v1", "fabric_biome_api_v1", "fabric_block_api_v1", "fabric_block_view_api_v2", "fabric_blockrenderlayer_v1", "fabric_client_tags_api_v1", "fabric_command_api_v2", "fabric_content_registries_v0", "fabric_convention_tags_v1", "fabric_convention_tags_v2", "fabric_data_attachment_api_v1", "fabric_data_generation_api_v1", "fabric_entity_events_v1", "fabric_events_interaction_v0", "fabric_game_rule_api_v1", "fabric_gametest_api_v1", "fabric_item_api_v1", "fabric_item_group_api_v1", "fabric_key_binding_api_v1", "fabric_lifecycle_events_v1", "fabric_loot_api_v2", "fabric_loot_api_v3", "fabric_message_api_v1", "fabric_model_loading_api_v1", "fabric_networking_api_v1", "fabric_object_builder_api_v1", "fabric_particles_v1", "fabric_recipe_api_v1", "fabric_registry_sync_v0", "fabric_renderer_api_v1", "fabric_renderer_indigo", "fabric_rendering_data_attachment_v1", "fabric_rendering_fluids_v1", "fabric_rendering_v1", "fabric_resource_conditions_api_v1", "fabric_resource_loader_v0", "fabric_screen_api_v1", "fabric_screen_handler_api_v1", "fabric_sound_api_v1", "fabric_transfer_api_v1", "fabric_transitive_access_wideners_v1"]
+required = []
 optional = []
 incompatible = []
 bundled = []
@@ -8539,6 +8567,26 @@ version-id = "S5sNyRsY"
 provides = ["echochest"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.8,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:mJ7yWnrA:rpgkSjm0"]
+name = "magitech"
+component = "magitech"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "mJ7yWnrA"
+version = "rpgkSjm0"
+filename = "magitech-1.1.3.jar"
+project-id = "mJ7yWnrA"
+version-id = "rpgkSjm0"
+provides = ["magitech"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:692GClaE:Uw0AZJKz", "mod-id" = "modonomicon", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:Aqlf1Shp:7nHK7hMg", "mod-id" = "fabric_api", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:ccKDOlHs:NMCHU6DZ", "mod-id" = "owo", "version-range" = "TODO", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

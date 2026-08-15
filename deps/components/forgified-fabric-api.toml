@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Aqlf1Shp"
+version-id = "7nHK7hMg"
+filename = "forgified-fabric-api-0.116.7+2.2.4+1.21.1.jar"
