@@ -185,7 +185,8 @@ public final class MagitechEmiModule {
 
     /**
      * The Athanor pads its pedestal list out with air, so an ingredient that resolves to nothing has
-     * to be dropped rather than turned into an empty slot.
+     * to be dropped rather than turned into an empty slot. Repeats are merged, because a ring of
+     * twelve pedestals asking for four of one thing reads far better as a single "x4".
      */
     private static void itemIn(MachineDescriptor d, Ingredient ing) {
         if (ing == null || ing.isEmpty()) {
@@ -193,7 +194,7 @@ public final class MagitechEmiModule {
         }
         for (ItemStack s : ing.getItems()) {
             if (!s.isEmpty()) {
-                d.itemIn(EmiIngredient.of(ing));
+                d.itemInMerged(EmiIngredient.of(ing));
                 return;
             }
         }

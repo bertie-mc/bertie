@@ -32,6 +32,39 @@ public class MachineDescriptor {
         return this;
     }
 
+    /**
+     * Add an item input, folding it into an identical slot already present instead of opening a new
+     * one. A twelve-pedestal Athanor recipe that asks for four of the same thing then reads as one
+     * slot of "x4" rather than four slots showing the same icon.
+     */
+    public MachineDescriptor itemInMerged(EmiIngredient i) {
+        if (i == null || i.isEmpty()) {
+            return this;
+        }
+        for (EmiIngredient existing : itemInputs) {
+            if (sameStacks(existing, i)) {
+                existing.setAmount(existing.getAmount() + i.getAmount());
+                return this;
+            }
+        }
+        return itemIn(i);
+    }
+
+    /** Same set of stacks, ignoring how many of each — that is what makes two slots mergeable. */
+    private static boolean sameStacks(EmiIngredient a, EmiIngredient b) {
+        List<EmiStack> left = a.getEmiStacks();
+        List<EmiStack> right = b.getEmiStacks();
+        if (left.size() != right.size()) {
+            return false;
+        }
+        for (int n = 0; n < left.size(); n++) {
+            if (!left.get(n).isEqual(right.get(n))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public MachineDescriptor fluidIn(EmiIngredient s) {
         if (s != null && !s.isEmpty()) fluidInputs.add(s);
         return this;
