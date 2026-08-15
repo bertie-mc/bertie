@@ -124,6 +124,7 @@ final class AnvilCraftGuideEmiModule {
                             + " is how capacitors are filled and emptied.",
                     "Both also run a few recipes that nothing but raw energy can perform.");
             AnvilCraftBlockGuide.register(reg);
+            AnvilCraftMaterialGuide.register(reg);
         });
     }
 
