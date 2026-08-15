@@ -7,15 +7,15 @@
   },
   "inputs": [
     {
-      "amount": 2,
-      "ingredient": {
-        "item": "irons_spellbooks:arcane_essence"
-      }
-    },
-    {
       "amount": 4,
       "ingredient": {
         "item": "forbidden_arcanus:rune"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:arcane_essence"
       }
     },
     {

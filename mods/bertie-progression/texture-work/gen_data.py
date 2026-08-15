@@ -345,10 +345,25 @@ RIT = "data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual"
 # Same recipe feel: Natural Quartz core + Redstone + Slag-cast Gold/Iron Plates, paid in spirits.
 r13 = infusion("malum:natural_quartz", 1, [("minecraft:redstone", 2)],
                [SP("arcane", 2), SP("aerial", 2)], "create:electron_tube", 3)
-for _comps in (GOLD_PLATE, IRON_PLATE):
-    r13["extraInputs"].append({"type": "neoforge:components", "items": "slag:dynamic_part",
-                               "components": _comps, "count": 1})
+# Either route to a plate counts: Slag's carved one, or Create's pressed sheet. neoforge:compound
+# is an any-of over ingredients, which is the only way to say that - the Slag plate is a component
+# match on slag:dynamic_part and so cannot go in a tag beside a plain item.
+for _comps, _sheet in ((GOLD_PLATE, "create:golden_sheet"), (IRON_PLATE, "create:iron_sheet")):
+    r13["extraInputs"].append({
+        "type": "neoforge:compound",
+        "ingredients": [
+            {"type": "neoforge:components", "items": "slag:dynamic_part", "components": _comps},
+            {"item": _sheet},
+        ],
+        "count": 1,
+    })
 write(f"{R}/malum/electron_tube.json", r13)
+
+# Ashlord bone into Ice and Fire's: the Ashlord is killable long before a dragon is, and the
+# progression asks for dragon bone either way. Bone Meal is the binder.
+write(f"{R}/inventory_2x2/dragonbone_from_ashlord_bone.json",
+      shapeless(["block_factorys_bosses:dragon_bone", "minecraft:bone_meal"],
+                "iceandfire:dragonbone", 1))
 
 # Brass Ingot: Hephaestus ritual with a Colossal Iron core, Deorum, 2 Zinc and 2 Rose
 # Gold -> 2 Brass. Replaces the removed Brick-Forge double-smelt.
@@ -1019,7 +1034,7 @@ write("data/forbidden_arcanus/recipe/mundabitur_dust.json", DISABLED)
 # Wayward Compass: Hephaestus — Compass core + 2 Arcane Essence + 4 Runes + 2 Ender Pearls (=8).
 write(f"{RIT}/wayward_compass.json",
       ritual("minecraft:compass",
-             [("irons_spellbooks:arcane_essence", 2), ("forbidden_arcanus:rune", 4),
+             [("forbidden_arcanus:rune", 4), ("irons_spellbooks:arcane_essence", 2),
               ("minecraft:ender_pearl", 2)],
              "irons_spellbooks:wayward_compass", 1, tier=1,
              essences={"aureal": 0, "blood": 0, "souls": 4}, xp=10))
@@ -1064,7 +1079,7 @@ write("data/irons_spellbooks/loot_table/entities/dead_king.json", {
 # Mechanical Crafters crafting Mechanical Crafters — additive, crafter-wall only, yields 1.
 write(f"{R}/mechanical/exclusive/mechanical_crafter_wall.json",
       mech(["AEA", "SBS", "ACA"],
-           {"A": "create:andesite_alloy", "E": "create:electron_tube", "S": "create:shaft",
+           {"A": "create:brass_ingot", "E": "create:electron_tube", "S": "create:shaft",
             "B": "create:brass_casing", "C": "create:cogwheel"},
            "create:mechanical_crafter", 1))
 

@@ -14,7 +14,8 @@
 		{
 			icon: {
 				count: 1
-				id: "create:raw_zinc"
+				dependencies: ["2B00000000000049"]
+			id: "create:raw_zinc"
 			}
 			id: "2B00000000000001"
 			rewards: [{
@@ -24,14 +25,14 @@
 			}]
 				tasks: [
 					{
-						count: 64L
+						count: 16L
 						id: "2B00000001000001"
 						item: { count: 1 id: "create:raw_zinc" }
 						type: "item"
 					}
 				]
 			x: -18.0d
-			y: 0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -54,7 +55,7 @@
 					}
 				]
 			x: -16.5d
-			y: 0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -70,14 +71,14 @@
 			}]
 				tasks: [
 					{
-						count: 64L
+						count: 8L
 						id: "2B00000001000003"
 						item: { count: 1 id: "create:andesite_alloy" }
 						type: "item"
 					}
 				]
 			x: -15.0d
-			y: 0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -100,7 +101,7 @@
 					}
 				]
 			x: -13.5d
-			y: 0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -129,12 +130,13 @@
 					}
 				]
 			x: -12.0d
-			y: 0d
+			y: 1.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "iceandfire:earplugs"
+				dependencies: ["2B00000000000049"]
+			id: "iceandfire:earplugs"
 			}
 			optional: true
 			id: "2B00000000000006"
@@ -152,7 +154,7 @@
 					}
 				]
 			x: -18.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -174,8 +176,8 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
-			y: -1.5d
+			x: -16.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -197,8 +199,8 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
-			y: -1.5d
+			x: -15.0d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -224,8 +226,8 @@
 						value: 1L
 					}
 				]
-			x: -15.0d
-			y: -1.5d
+			x: -13.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -247,8 +249,8 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
-			y: -1.5d
+			x: -12.0d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -271,8 +273,8 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
-			y: -1.5d
+			x: -10.5d
+			y: -2.5d
 		}
 		{
 			icon: {
@@ -294,13 +296,14 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
-			y: -3.0d
+			x: -12.75d
+			y: -4.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "berlordscarving:amethyst_slate"
+				dependencies: ["2B00000000000049"]
+			id: "berlordscarving:amethyst_slate"
 			}
 			id: "2B0000000000000D"
 			rewards: [{
@@ -317,7 +320,7 @@
 					}
 				]
 			x: -18.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
@@ -342,7 +345,7 @@
 					}
 				]
 			x: -16.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
@@ -365,14 +368,14 @@
 					}
 				]
 			x: -15.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "malum:refined_soulstone"
+				dependencies: ["2B0000000000000F", "2B0000000000000A"]
+			id: "malum:refined_soulstone"
 			}
-			dependencies: ["2B0000000000000F"]
 			id: "2B00000000000010"
 			rewards: [{
 				id: "2B00000002000010"
@@ -388,7 +391,7 @@
 					}
 				]
 			x: -13.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
@@ -411,12 +414,13 @@
 					}
 				]
 			x: -12.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "create:brass_ingot"
+				dependencies: ["2B0000000000004A"]
+			id: "create:brass_ingot"
 			}
 			id: "2B00000000000012"
 			rewards: [{
@@ -433,14 +437,14 @@
 					}
 				]
 			x: -18.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "create:brass_casing"
+				dependencies: ["2B0000000000004B"]
+			id: "create:brass_casing"
 			}
-			dependencies: ["2B00000000000012"]
 			id: "2B00000000000013"
 			rewards: [{
 				id: "2B00000002000013"
@@ -455,8 +459,8 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
-			y: 3.0d
+			x: -15.0d
+			y: 3.5d
 		}
 		{
 			icon: {
@@ -478,13 +482,13 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
-			y: 3.0d
+			x: -13.5d
+			y: 3.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "block_factorys_bosses:dragon_bone"
+				id: "block_factorys_bosses:dragon_skull"
 			}
 			dependencies: ["2B00000000000014"]
 			id: "2B00000000000015"
@@ -505,8 +509,8 @@
 						value: 1L
 					}
 				]
-			x: -13.5d
-			y: 3.0d
+			x: -12.0d
+			y: 3.5d
 		}
 		{
 			icon: {
@@ -528,8 +532,8 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
-			y: 3.0d
+			x: -10.5d
+			y: 3.5d
 		}
 		{
 			icon: {
@@ -551,7 +555,7 @@
 					}
 				]
 			x: -18.0d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			icon: {
@@ -574,14 +578,14 @@
 					}
 				]
 			x: -16.5d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "irons_spellbooks:decrepit_scythe"
+				dependencies: ["2B0000000000004C"]
+			id: "irons_spellbooks:decrepit_scythe"
 			}
-			dependencies: ["2B00000000000018"]
 			id: "2B00000000000019"
 			rewards: [{
 				id: "2B00000002000019"
@@ -600,15 +604,15 @@
 						value: 1L
 					}
 				]
-			x: -15.0d
-			y: 4.5d
+			x: -13.5d
+			y: 5.5d
 		}
 		{
 			icon: {
 				count: 1
-				id: "malum:crude_scythe"
+				dependencies: ["2B00000000000019", "2B0000000000004D"]
+			id: "malum:crude_scythe"
 			}
-			dependencies: ["2B00000000000019"]
 			id: "2B0000000000001A"
 			rewards: [{
 				id: "2B0000000200001A"
@@ -623,8 +627,8 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
-			y: 4.5d
+			x: -12.0d
+			y: 5.5d
 		}
 		{
 			icon: {
@@ -650,8 +654,8 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
-			y: 4.5d
+			x: -9.0d
+			y: 5.5d
 		}
 		{
 			icon: {
@@ -1721,6 +1725,215 @@
 				]
 			x: 7.5d
 			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "berlordscarving:carving_station"
+			}
+			id: "2B00000000000049"
+			rewards: [{
+				id: "2B00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000049"
+						item: { count: 1 id: "berlordscarving:carving_station" }
+						type: "item"
+					}
+				]
+			x: -19.5d
+			y: -0.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:zinc_ingot"
+			}
+			dependencies: ["2B00000000000001"]
+			id: "2B0000000000004A"
+			rewards: [{
+				id: "2B0000000200004A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B0000000100004A"
+						item: { count: 1 id: "create:zinc_ingot" }
+						type: "item"
+					}
+				]
+			x: -19.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:edelwood_log"
+			}
+			dependencies: ["2B00000000000012"]
+			id: "2B0000000000004B"
+			rewards: [{
+				id: "2B0000000200004B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "2B0000000100004B"
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(forbidden_arcanus:edelwood_logs)', "minecraft:custom_name": '{"text":"Edelwood Log","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 3.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:bone_vault"
+			}
+			dependencies: ["2B00000000000018"]
+			id: "2B0000000000004C"
+			rewards: [{
+				id: "2B0000000200004C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "irons_spellbooks:bone_vault"
+						}
+						id: "2B0000000100004C"
+						structure: "irons_spellbooks:catacombs"
+						type: "structure"
+					}
+				]
+			x: -15.0d
+			y: 5.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "iceandfire:dragonbone"
+			}
+			dependencies: ["2B00000000000016"]
+			id: "2B0000000000004D"
+			rewards: [{
+				id: "2B0000000200004D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "2B0000000100004D"
+						item: { count: 1 id: "iceandfire:dragonbone" }
+						type: "item"
+					}
+				]
+			x: -11.25d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:andesite_alloy"
+			}
+			dependencies: ["2B00000000000003"]
+			id: "2B0000000000004E"
+			rewards: [{
+				id: "2B0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B0000000100004E"
+						item: { count: 1 id: "create:andesite_alloy" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:brass_ingot"
+			}
+			dependencies: ["2B00000000000012"]
+			id: "2B0000000000004F"
+			rewards: [{
+				id: "2B0000000200004F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B0000000100004F"
+						item: { count: 1 id: "create:brass_ingot" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:refined_soulstone"
+			}
+			dependencies: ["2B00000000000010"]
+			id: "2B00000000000050"
+			rewards: [{
+				id: "2B00000002000050"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B00000001000050"
+						item: { count: 1 id: "malum:refined_soulstone" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:zinc_ingot"
+			}
+			dependencies: ["2B0000000000004A"]
+			id: "2B00000000000051"
+			rewards: [{
+				id: "2B00000002000051"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 64L
+						id: "2B00000001000051"
+						item: { count: 1 id: "create:zinc_ingot" }
+						type: "item"
+					}
+				]
+			x: -21.0d
+			y: 2.5d
 		}
 	]
 }

@@ -60,8 +60,6 @@
 	quest.1B0000000000001A.title: "The forge in pieces"
 	quest.1B0000000000001B.quest_desc: ["Build the T1 structure per Forbidden Arcanus's Hephaestus Forge layout (check its guide/ponder). At each of the 8 pedestal spots stack an Arcane Polished Darkstone Pillar, Wall, then Slab, and apply Mundabitur Dust to the pillar - the column settles into a Darkstone Pedestal. Set the Smithing Table in the centre and apply Mundabitur Dust to it: the Hephaestus Forge Tier I rises. Rituals use up to 8 inputs - one per pedestal. Stand close and look at the risen Forge to complete this."]
 	quest.1B0000000000001B.title: "Raise the Forge"
-	quest.1B0000000000001C.quest_desc: ["Now the Forge can make one: a Tier-1 ritual binds a Stonecutter with an Amethyst Shard, a Heart of the Sea and 2 Chiseled Deepslate. (The stock Water-Bucket 2x2 recipe still works too.)"]
-	quest.1B0000000000001C.title: "The Carving Station"
 	quest.1B0000000000001D.quest_desc: ["Bank 64 Iron Ingots for everything ahead."]
 	quest.1B0000000000001D.title: "Iron by the block"
 	quest.1B0000000000001E.quest_desc: ["Cast 64 Deep Alloy."]
@@ -216,7 +214,7 @@
 	quest.2B0000000000000D.title: "An Amethyst Slate"
 	quest.2B0000000000000E.quest_desc: ["Carve the slate into an Amethyst pickaxe head, then socket it into a blueprint. It is the pickaxe that breaks Soulstone Ore - and it swings faster than anything else at its tier."]
 	quest.2B0000000000000E.title: "Amethyst pickaxe head"
-	quest.2B0000000000000F.quest_desc: ["Take the amethyst pickaxe to Soulstone Ore and bring back four Raw Soulstone. The richest seams are in and around the Weeping Well."]
+	quest.2B0000000000000F.quest_desc: ["Take the amethyst pickaxe to Soulstone Ore and bring back four Raw Soulstone."]
 	quest.2B0000000000000F.title: "Raw Soulstone"
 	quest.2B00000000000010.quest_desc: ["A plain Brick-Forge alloy now: 1 Diamond + 1 Raw Soulstone into Refined Soulstone (the mallet strike, charcoal and furnace routes are all gone)."]
 	quest.2B00000000000010.title: "Refined Soulstone"
@@ -326,6 +324,24 @@
 	quest.2B00000000000044.title: "The Crafting License"
 	quest.2B00000000000048.quest_desc: ["Hephaestus-forge the Lich Trophy into an Acolyte of Deflection (2 Dragon Bones, 2 Hallowed Gold Ingots, a Shattered Skull, a Precision Mechanism, a Bound Soul Ingot and a Magic Map Focus). Dupe the trophy at the Spirit Altar first if you want to keep one on the wall."]
 	quest.2B00000000000048.title: "The Acolyte of Deflection"
+	quest.2B00000000000049.quest_desc: ["The bench every slate is cut on, and this chapter opens on it. The stock Water-Bucket 2x2 recipe makes one; once the Forge is up, a Tier-1 ritual binds a Stonecutter with an Amethyst Shard, a Heart of the Sea and 2 Chiseled Deepslate instead."]
+	quest.2B00000000000049.title: "The Carving Station"
+	quest.2B0000000000004A.quest_desc: ["Brass needs zinc, and the Brick Forge smelts two raw into one ingot."]
+	quest.2B0000000000004A.title: "Eight Zinc Ingots"
+	quest.2B0000000000004B.quest_desc: ["Any four logs of the Edelwood family. The casing is wrapped in them."]
+	quest.2B0000000000004B.title: "Four Edelwood"
+	quest.2B0000000000004C.quest_desc: ["The compass points at them. Go and stand in one."]
+	quest.2B0000000000004C.title: "Find the Catacombs"
+	quest.2B0000000000004D.quest_desc: ["If you struggle to find dead dragons, you can spare some of ashlord bones."]
+	quest.2B0000000000004D.title: "Two Dragon Bones"
+	quest.2B0000000000004E.quest_desc: ["Sixty-four. Everything Create asks for starts here."]
+	quest.2B0000000000004E.title: "Andesite Alloy stockpile"
+	quest.2B0000000000004F.quest_desc: ["Sixty-four Brass Ingots."]
+	quest.2B0000000000004F.title: "Brass stockpile"
+	quest.2B00000000000050.quest_desc: ["Sixty-four. Malum spends it by the stack."]
+	quest.2B00000000000050.title: "Refined Soulstone stockpile"
+	quest.2B00000000000051.quest_desc: ["Sixty-four Zinc Ingots."]
+	quest.2B00000000000051.title: "Zinc stockpile"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]

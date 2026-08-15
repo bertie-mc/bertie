@@ -703,29 +703,6 @@
 		{
 			icon: {
 				count: 1
-				id: "berlordscarving:carving_station"
-			}
-			dependencies: ["1B0000000000001B"]
-			id: "1B0000000000001C"
-			rewards: [{
-				id: "1B0000000200001C"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100001C"
-						item: { count: 1 id: "berlordscarving:carving_station" }
-						type: "item"
-					}
-				]
-			x: 16.5d
-			y: 3.0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "minecraft:iron_ingot"
 			}
 			dependencies: ["1B0000000000000B"]
@@ -996,7 +973,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -1025,9 +1002,9 @@
 		{
 			icon: {
 				count: 1
-				id: "sophisticatedbackpacks:iron_backpack"
+				dependencies: ["1B0000000000001B"]
+			id: "sophisticatedbackpacks:iron_backpack"
 			}
-			dependencies: ["1B0000000000001B"]
 			id: "1B00000000000031"
 			rewards: [{
 				id: "1B00000002000031"

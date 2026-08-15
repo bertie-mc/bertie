@@ -20,21 +20,37 @@
       "count": 2
     },
     {
-      "type": "neoforge:components",
-      "items": "slag:dynamic_part",
-      "components": {
-        "slag:material_type": "slag:golden",
-        "slag:part_type": "slag:plate"
-      },
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "type": "neoforge:components",
+          "items": "slag:dynamic_part",
+          "components": {
+            "slag:material_type": "slag:golden",
+            "slag:part_type": "slag:plate"
+          }
+        },
+        {
+          "item": "create:golden_sheet"
+        }
+      ],
       "count": 1
     },
     {
-      "type": "neoforge:components",
-      "items": "slag:dynamic_part",
-      "components": {
-        "slag:material_type": "slag:iron",
-        "slag:part_type": "slag:plate"
-      },
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "type": "neoforge:components",
+          "items": "slag:dynamic_part",
+          "components": {
+            "slag:material_type": "slag:iron",
+            "slag:part_type": "slag:plate"
+          }
+        },
+        {
+          "item": "create:iron_sheet"
+        }
+      ],
       "count": 1
     }
   ],
