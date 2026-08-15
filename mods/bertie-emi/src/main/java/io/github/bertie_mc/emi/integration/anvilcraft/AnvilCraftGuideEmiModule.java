@@ -125,6 +125,7 @@ final class AnvilCraftGuideEmiModule {
                     "Both also run a few recipes that nothing but raw energy can perform.");
             AnvilCraftBlockGuide.register(reg);
             AnvilCraftMaterialGuide.register(reg);
+            AnvilCraftFeatureGuide.register(reg);
         });
     }
 
