@@ -7,6 +7,11 @@ license = "${mod_license}"
 [[mixins]]
 config = "${mod_id}.magitech.mixins.json"
 
+# Berlord's Carving, likewise in its own config: the reroute to Magitech parts is Bertie policy and
+# must not stop the mod loading when carving is not in the pack.
+[[mixins]]
+config = "${mod_id}.carving.mixins.json"
+
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"
@@ -40,6 +45,15 @@ side = "BOTH"
 # Slag keeps its metallurgy; we only switch off its parts and tool ladder via recipe conditions.
 [[dependencies."${mod_id}"]]
 modId = "slag"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Carving shapes the heads. Without it the parts are still craftable at Magitech's own part cutter,
+# so this stays optional.
+[[dependencies."${mod_id}"]]
+modId = "berlordscarving"
 type = "optional"
 versionRange = "[0,)"
 ordering = "AFTER"

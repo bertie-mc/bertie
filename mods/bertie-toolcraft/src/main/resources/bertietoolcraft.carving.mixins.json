@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.toolcraft.mixin.carving",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CarvingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

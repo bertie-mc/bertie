@@ -47,14 +47,15 @@ public abstract class PartToolItemUseOnMixin {
             return InteractionResult.PASS;
         }
 
-        ItemAbility[] abilities = switch (type.getId()) {
-            case ToolcraftPolicy.SCYTHE -> new ItemAbility[] {ItemAbilities.HOE_TILL};
-            case ToolcraftPolicy.AXE -> new ItemAbility[] {
-                ItemAbilities.AXE_STRIP, ItemAbilities.AXE_SCRAPE, ItemAbilities.AXE_WAX_OFF
-            };
-            case ToolcraftPolicy.SHOVEL -> new ItemAbility[] {ItemAbilities.SHOVEL_FLATTEN};
-            default -> null;
-        };
+        ItemAbility[] abilities =
+                switch (type.getId()) {
+                    case ToolcraftPolicy.SCYTHE -> new ItemAbility[] {ItemAbilities.HOE_TILL};
+                    case ToolcraftPolicy.AXE ->
+                        new ItemAbility[] {ItemAbilities.AXE_STRIP, ItemAbilities.AXE_SCRAPE, ItemAbilities.AXE_WAX_OFF
+                        };
+                    case ToolcraftPolicy.SHOVEL -> new ItemAbility[] {ItemAbilities.SHOVEL_FLATTEN};
+                    default -> null;
+                };
         if (abilities == null) {
             return InteractionResult.PASS;
         }
@@ -72,7 +73,8 @@ public abstract class PartToolItemUseOnMixin {
             // Flattening needs headroom. Tilling deliberately does not get the same check: the
             // headroom rule belongs to individual tillables (grass, dirt, path) and is already
             // applied inside getToolModifiedState, while rooted dirt tills with a block above it.
-            if (ability == ItemAbilities.SHOVEL_FLATTEN && !level.getBlockState(pos.above()).isAir()) {
+            if (ability == ItemAbilities.SHOVEL_FLATTEN
+                    && !level.getBlockState(pos.above()).isAir()) {
                 continue;
             }
 

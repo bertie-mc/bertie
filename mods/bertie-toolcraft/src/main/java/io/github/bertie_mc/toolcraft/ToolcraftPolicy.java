@@ -56,6 +56,61 @@ public final class ToolcraftPolicy {
     }
 
     /**
+     * The Magitech part item a carved tool head becomes, keyed by Berlord's Carving {@code ToolKind}
+     * id.
+     *
+     * <p>Carving shapes a head and hands over a part; which part system consumes it is pack policy.
+     * Bertie's is Magitech's, so the five carving tabs land on five of Magitech's six kept parts.
+     * The item ids look mismatched because Magitech's part enum is fixed at twelve values and cannot
+     * be extended: the four heads ride on the assembly-only parts, renamed in lang. Item ids are
+     * never shown to the player.
+     *
+     * <p>{@code sword} is the odd one. Carving's sword-blade shape is close enough to a handle that
+     * berlord took it as one rather than have a shape drawn; it carves the handle, not a blade.
+     * Binding has no carving tab yet.
+     *
+     * @return a Magitech item path, or null if that carving kind has no part here
+     */
+    public static String magitechPart(String carvingToolId) {
+        return switch (carvingToolId) {
+            case "pickaxe" -> "spike_head";
+            case "axe" -> "strike_head";
+            case "shovel" -> "light_blade";
+            case "hoe" -> "heavy_blade"; // the scythe head
+            case "sword" -> "heavy_handle";
+            default -> null;
+        };
+    }
+
+    /**
+     * The Magitech tool material a carving material becomes.
+     *
+     * <p>Magitech has thirty-one materials and carving seventeen, and the overlap is eleven. The six
+     * that do not map are flint, obsidian, echo, deep alloy, rose gold — Magitech has no equivalent
+     * — and leather, which carves armour only. Naming a near-neighbour instead would be a lie on the
+     * tooltip, so they map to nothing and their tool slates are switched off in data until those
+     * materials are registered with Magitech.
+     *
+     * @return a Magitech material path, or null if this material has no Magitech equivalent
+     */
+    public static String magitechMaterial(String carvingMaterialId) {
+        return switch (carvingMaterialId) {
+            case "wood" -> "wood";
+            case "stone" -> "stone";
+            case "bone" -> "bone";
+            case "copper" -> "copper";
+            case "iron" -> "iron";
+            case "golden" -> "gold";
+            case "diamond" -> "diamond";
+            case "emerald" -> "emerald";
+            case "amethyst" -> "amethyst";
+            case "lapis" -> "lapis";
+            case "quartz" -> "quartz";
+            default -> null;
+        };
+    }
+
+    /**
      * Whether a block should be swept up by the scythe's area harvest.
      *
      * <p>Magitech's stock scythe clears up to 20 blocks of whatever it hits, which turns it into a
