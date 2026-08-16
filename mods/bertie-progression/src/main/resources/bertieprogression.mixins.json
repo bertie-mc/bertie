@@ -8,6 +8,7 @@
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
     "BasinRecipeMixin",
+    "BlazeBurnerBlockEntityMixin",
     "ForgeBEMixin",
     "SequencedAssemblyRecipeMixin"
   ],

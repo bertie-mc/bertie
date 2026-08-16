@@ -1177,6 +1177,10 @@ write(f"{R}/malum/blaze_burner.json",
 # stopgap you feed by hand, never a way to run a superheated basin unattended.
 write("data/create/data_maps/item/superheated_blaze_burner_fuels.json",
       {"values": {"minecraft:egg": {"burn_time": 10}}})
+# ...and then it goes OUT. Create would drop a spent special fuel to a lit burner with 5000 ticks
+# left; that fallback is the Blaze Cake's reward and nothing else's. See BlazeBurnerBlockEntityMixin.
+write("data/bertieprogression/tags/item/snuffing_blaze_fuel.json",
+      {"replace": False, "values": ["minecraft:egg"]})
 
 # --- Rose Quartz: additive mixing route with 8 redstone and 1 quartz. ---
 write(f"{R}/create/rose_quartz_mixing.json",
