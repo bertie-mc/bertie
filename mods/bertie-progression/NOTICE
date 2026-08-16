@@ -13,7 +13,17 @@ Architectury, FTB) at build time. No third-party jar is committed.
 
 THIRD-PARTY DERIVATIVE WORK
 
-One asset in this repository is not original and is not covered by the dedication:
+  assets/bertieprogression/ponder/athanor_altar.nbt
+
+is a copy of Magitech's `data/magitech/structure/athanor_altar.nbt`, the blueprint
+its Athanor Pillar validates against. It is shipped so the Ponder scene can show
+players the finished altar; Ponder resolves a scene's schematic from assets by
+ResourceLocation and offers no way to hand it a structure loaded at runtime, so
+the file has to live here. Magitech is by Stln and is distributed under
+CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/), which permits the
+copy provided attribution travels with it and derivatives share alike.
+
+The following assets are not original and are not covered by the dedication:
 
   assets/bertieprogression/textures/item/null_blaze_cube.png
   assets/bertieprogression/textures/item/null_blaze_cube.png.mcmeta
