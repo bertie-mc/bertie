@@ -81,6 +81,7 @@ include(
     ":mods:bertie-filters",
     ":mods:bertie-progression",
     ":mods:bertie-tiers",
+    ":mods:bertie-toolcraft",
     ":mods:bertie-weapons",
     ":mods:bush-tweaks",
     ":mods:berlords-carving",

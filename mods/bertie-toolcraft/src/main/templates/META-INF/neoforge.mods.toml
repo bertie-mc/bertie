@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+# Magitech's own classes. Kept in its own config with defaultRequire 0 so that removing Magitech
+# leaves these unapplied instead of failing mixin configuration at load.
+[[mixins]]
+config = "${mod_id}.magitech.mixins.json"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+[[dependencies."${mod_id}"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# Magitech supplies the parts, the assembly workbench and the four tools we keep. Without it this
+# mod has nothing to reshape, but it stays inert rather than crashing.
+[[dependencies."${mod_id}"]]
+modId = "magitech"
+type = "optional"
+versionRange = "[1.1.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Slag keeps its metallurgy; we only switch off its parts and tool ladder via recipe conditions.
+[[dependencies."${mod_id}"]]
+modId = "slag"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"

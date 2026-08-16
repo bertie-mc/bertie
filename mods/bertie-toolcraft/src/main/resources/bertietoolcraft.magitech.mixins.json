@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.toolcraft.mixin.magitech",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PartToolItemMixin",
+    "BlockBreakEventMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

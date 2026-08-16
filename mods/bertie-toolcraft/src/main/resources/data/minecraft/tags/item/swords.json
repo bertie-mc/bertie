@@ -1,0 +1,8 @@
+{
+  "remove": [
+    { "id": "magitech:dagger", "required": false },
+    { "id": "magitech:light_sword", "required": false },
+    { "id": "magitech:heavy_sword", "required": false },
+    { "id": "magitech:scythe", "required": false }
+  ]
+}

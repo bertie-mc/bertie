@@ -1,0 +1,9 @@
+{
+  "type": "magitech:tool_assembly",
+  "ingredients": [
+    { "item": "magitech:light_blade" },
+    { "item": "magitech:heavy_handle" },
+    { "item": "magitech:tool_binding" }
+  ],
+  "result": { "count": 1, "id": "magitech:shovel" }
+}
