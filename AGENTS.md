@@ -36,8 +36,9 @@ clean tree, and keep exactly one worktree.
   actions and commands.
 - Never commit generated packwiz files, dependency JARs, Minecraft instances, or other
   build outputs.
-- Never vendor third-party dependencies or assets. Preserve each component's licence and
-  NOTICE.
+- Preserve each component's licence and NOTICE. Third-party assets may be included or
+  derived from when their licence allows it; record the source, the author and the licence
+  in the component's NOTICE, and keep them outside any public-domain dedication.
 - Work only in this repository unless the user explicitly includes one of the separately
   maintained Bertie projects in scope.
 

@@ -11,6 +11,18 @@ licences.
 
 THIRD-PARTY ASSETS
 
+Magitech (by Stln) is licensed CC-BY-SA-4.0. The 124 head-part textures under
+assets/magitech/textures/item/part/ in Bertie Toolcraft are DERIVED FROM Magitech's
+own tool artwork: each is cut from an assembled Magitech tool, reduced to one shape
+per head type, and recoloured from that material's own palette.
+
+Those files are therefore licensed CC-BY-SA-4.0, attributed to Stln, and are NOT
+covered by the public domain dedication in UNLICENSE. Anyone redistributing them,
+or works derived from them, must keep that licence and attribution. Every other
+asset and all code in this component remain under the dedication.
+
+  Magitech - https://modrinth.com/mod/mJ7yWnrA - CC-BY-SA-4.0 - (c) Stln
+
 Slag 'n' Embers (by LopyLuna) is All Rights Reserved. When it is installed,
 Carving loads Slag's parts and art **at runtime from the user's own installed
 copy**. No Slag asset is contained in or redistributed by this repository or
