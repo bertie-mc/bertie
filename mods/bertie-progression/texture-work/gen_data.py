@@ -645,6 +645,8 @@ write(f"{R}/malum/clibano_core.json",
                [("malum:infernal", 48), ("malum:wicked", 32), ("malum:sacred", 32),
                 ("malum:earthen", 16), ("malum:aerial", 16)],
                "forbidden_arcanus:clibano_core", 1))
+# ...and only that. FA's own 3x3 for the core is gone.
+write("data/forbidden_arcanus/recipe/clibano_core.json", DISABLED)
 # Refined Brilliance: Brick Forge 2->1; Furnace + Blast 1->1. (Clibano 1->1.5 NOT done — FA's clibano
 # recipe only supports a typed `residue`, not a 50%-chance copy of the result; needs a mixin.)
 write(f"{R}/slag/refined_brilliance_forge.json",
@@ -991,6 +993,13 @@ write("data/malum/recipe/spirit_altar.json", DISABLED)
 write("data/malum/recipe/soulstone_from_raw_smelting.json", DISABLED)
 write("data/malum/recipe/soulstone_from_raw_blasting.json", DISABLED)
 
+# Malignant Lead: still the Weeping Well's favour, but paid in lead rather than Cthonic Gold.
+write("data/malum/recipe/void_favor/malignant_lead.json", {
+    "type": "malum:void_favor",
+    "input": {"tag": "c:ingots/lead"},
+    "result": {"count": 1, "id": "malum:malignant_lead"},
+})
+
 # Andesite Alloy: only via the Brick Forge (Zinc Ingot + Andesite double-smelt). Disable Create's
 # crafting-table routes (iron-nugget AND zinc-nugget) and both mixing routes.
 write(f"{R}/slag/andesite_alloy.json",
@@ -1163,6 +1172,11 @@ write(f"{R}/malum/blaze_burner.json",
                 ("born_in_chaos_v1:dark_metal_ingot", 1), ("minecraft:campfire", 1)],
                [SP("wicked", 16), SP("earthen", 16), SP("infernal", 32)],
                "create:blaze_burner", 1))
+
+# An egg superheats the burner instead of merely lighting it — but only for a moment, so it is a
+# stopgap you feed by hand, never a way to run a superheated basin unattended.
+write("data/create/data_maps/item/superheated_blaze_burner_fuels.json",
+      {"values": {"minecraft:egg": {"burn_time": 10}}})
 
 # --- Rose Quartz: additive mixing route with 8 redstone and 1 quartz. ---
 write(f"{R}/create/rose_quartz_mixing.json",

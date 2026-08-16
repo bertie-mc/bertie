@@ -778,35 +778,8 @@
 		{
 			icon: {
 				count: 1
-				id: "minecraft:blast_furnace"
-			}
-			dependencies: ["2B0000000000001F"]
-			id: "2B00000000000020"
-			rewards: [{
-				id: "2B00000002000020"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:blast_furnace"
-						}
-						id: "2B00000001000020"
-						title: "Hey Phineas, Whatcha Smeltin'?"
-						type: "checkmark"
-					}
-				]
-			x: -4.5d
-			y: -1.5d
-		}
-		{
-			icon: {
-				count: 1
 				id: "iceandfire:sea_serpent_scales_red"
 			}
-			dependencies: ["2B00000000000020"]
 			id: "2B00000000000021"
 			rewards: [{
 				id: "2B00000002000021"
@@ -925,7 +898,6 @@
 				count: 1
 				id: "minecraft:netherrack"
 			}
-			dependencies: ["2B00000000000020"]
 			id: "2B00000000000026"
 			rewards: [{
 				id: "2B00000002000026"
@@ -2020,6 +1992,29 @@
 				]
 			x: -15.0d
 			y: 7.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "magitech:zardius_crucible"
+			}
+			dependencies: ["2B00000000000036"]
+			id: "2B00000000000055"
+			rewards: [{
+				id: "2B00000002000055"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000055"
+						item: { count: 1 id: "magitech:zardius_crucible" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 6.0d
 		}
 	]
 }

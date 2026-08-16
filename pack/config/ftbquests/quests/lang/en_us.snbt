@@ -249,8 +249,6 @@
 	quest.2B0000000000001E.title: "Crafting Crafting Table"
 	quest.2B0000000000001F.quest_desc: ["Crafting has to wait for just a little longer."]
 	quest.2B0000000000001F.title: "Not So Fast"
-	quest.2B00000000000020.quest_desc: ["The smelting road. Gather what you need above, smelt it below."]
-	quest.2B00000000000020.title: "Hey Phineas, Whatcha Smeltin'?"
 	quest.2B00000000000021.quest_desc: ["Hunt two Sea Serpents off the coast."]
 	quest.2B00000000000021.title: "Sea Serpents"
 	quest.2B00000000000022.quest_desc: ["Bring back 3 Blaze Powder from the Nether."]
@@ -349,6 +347,8 @@
 	quest.2B00000000000053.title: "An Emerald"
 	quest.2B00000000000054.quest_desc: ["One Lantern. The scythe is reforged around a light."]
 	quest.2B00000000000054.title: "A Lantern"
+	quest.2B00000000000055.quest_desc: ["Magitech's crucible - three iron and a tourmaline around the rim. Everything Zardius alchemy asks for goes through it."]
+	quest.2B00000000000055.title: "The Zardius Crucible"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]

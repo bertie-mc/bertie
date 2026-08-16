@@ -1,0 +1,10 @@
+{
+  "type": "malum:void_favor",
+  "input": {
+    "tag": "c:ingots/lead"
+  },
+  "result": {
+    "count": 1,
+    "id": "malum:malignant_lead"
+  }
+}
