@@ -5,16 +5,12 @@ import io.github.bertie_mc.emi.framework.InfoPages;
 import java.util.List;
 
 /**
- * Where Magitech items come from when no recipe makes them.
+ * The two things about Magitech's items that nothing else in the pack can tell you.
  *
- * <p>Of Magitech 1.1.3's 169 registered items and blocks, 48 are produced by no recipe anywhere in
- * this pack. Almost all of those are mined, harvested, dropped or filled, and an empty recipe tab
- * tells you none of that. These pages say which.
- *
- * <p>Six of them are produced by nothing at all: registered, given a model and placed in the
- * creative tab, then referenced by no recipe, no loot table and no code path in the mod. They get a
- * page saying so, because "no recipe" and "unfinished" look identical in EMI and only one of them is
- * worth spending time hunting for.
+ * <p>Of its 169 registered items and blocks, 48 are produced by no recipe. Most of those are mined,
+ * harvested or dropped, and Advanced Loot Info already gives them a proper page from their loot
+ * table — ores, clusters, trees, mana berries, the Weaver's drops. Nothing is added by repeating
+ * that here, so this covers only the two cases a loot table cannot express.
  */
 final class MagitechSourceGuide {
     private MagitechSourceGuide() {}
@@ -27,12 +23,14 @@ final class MagitechSourceGuide {
 
     static void register(EmiRegistry reg) {
         unused(reg);
-        mined(reg);
-        dropped(reg);
         flasks(reg);
     }
 
-    /** Registered, in the creative tab, and referenced by nothing else in the mod. */
+    /**
+     * Registered, in the creative tab, and referenced by nothing else in the mod. Worth saying out
+     * loud: an empty recipe tab looks the same whether an item is mined, dropped or simply never
+     * finished, and only one of those is worth going to look for.
+     */
     private static void unused(EmiRegistry reg) {
         page(reg, "chromium_ingot", List.of("magitech:chromium_ingot"), UNUSED_1, UNUSED_2);
         page(
@@ -50,69 +48,7 @@ final class MagitechSourceGuide {
                         + " building block with an ordinary crafting recipe.");
     }
 
-    private static void mined(EmiRegistry reg) {
-        page(
-                reg,
-                "redstone_crystal",
-                List.of("magitech:redstone_crystal"),
-                "Mined, not crafted. Break a Redstone Crystal Cluster to get them.",
-                "They also generate in the barrels of Engineer Lodges.",
-                "Redstone Crystals convert back into ordinary redstone, so a cluster is worth taking.");
-        page(
-                reg,
-                "sulfur",
-                List.of("magitech:sulfur"),
-                "Mined, not crafted. Break a Sulfur Crystal Cluster to get it.",
-                "Sulfur is what Gunpowder and Sulfuric Acid are made from here.");
-        page(
-                reg,
-                "clusters",
-                List.of(
-                        "magitech:redstone_crystal_cluster",
-                        "magitech:sulfur_crystal_cluster",
-                        "magitech:fluorite_crystal_cluster"),
-                "Generated in the world, like amethyst. Break one for its crystals; the cluster itself"
-                        + " is not craftable.");
-        page(
-                reg,
-                "ores",
-                List.of(
-                        "magitech:zinc_ore",
-                        "magitech:deepslate_zinc_ore",
-                        "magitech:fluorite_ore",
-                        "magitech:deepslate_fluorite_ore",
-                        "magitech:tourmaline_ore",
-                        "magitech:deepslate_tourmaline_ore"),
-                "Ordinary worldgen ore — dig for it. Smelting or blasting the ore gives the material,"
-                        + " and Raw Zinc comes from the zinc ore directly.");
-        page(
-                reg,
-                "trees",
-                List.of(
-                        "magitech:celifern_log",
-                        "magitech:celifern_sapling",
-                        "magitech:charcoal_birch_log",
-                        "magitech:charcoal_birch_sapling"),
-                "Magitech's trees grow in the world; chop the logs and replant the saplings.",
-                "The stripped logs come from using an axe on a placed log, which is an interaction rather"
-                        + " than a recipe, so they show nothing here either.");
-        page(
-                reg,
-                "foraged",
-                List.of("magitech:mana_berries", "magitech:mistalia_petals"),
-                "Harvested from their own plants out in the world.",
-                "Mana Berries also turn up in Engineer Lodge chests, and they are an ingredient in the"
-                        + " Zardius Crucible's Mana Potion.");
-    }
-
-    private static void dropped(EmiRegistry reg) {
-        page(
-                reg,
-                "aggregated",
-                List.of("magitech:aggregated_fluxia", "magitech:aggregated_luminis", "magitech:aggregated_noctis"),
-                "Dropped by the Weaver. There is no recipe for any of the three — you have to go and kill" + " one.");
-    }
-
+    /** Filled through a fluid-handler capability, so there is neither a recipe nor a loot table. */
     private static void flasks(EmiRegistry reg) {
         page(
                 reg,
