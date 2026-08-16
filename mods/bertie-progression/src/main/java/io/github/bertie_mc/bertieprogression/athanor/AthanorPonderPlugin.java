@@ -30,11 +30,9 @@ public class AthanorPonderPlugin implements PonderPlugin {
 
     private static final String MODID = "bertieprogression";
     /** assets/bertieprogression/ponder/athanor_altar.nbt */
-    private static final ResourceLocation SCHEMATIC =
-            ResourceLocation.fromNamespaceAndPath(MODID, "athanor_altar");
+    private static final ResourceLocation SCHEMATIC = ResourceLocation.fromNamespaceAndPath(MODID, "athanor_altar");
 
-    private static final ResourceLocation PILLAR =
-            ResourceLocation.fromNamespaceAndPath("magitech", "athanor_pillar");
+    private static final ResourceLocation PILLAR = ResourceLocation.fromNamespaceAndPath("magitech", "athanor_pillar");
 
     public static void register() {
         PonderIndex.addPlugin(new AthanorPonderPlugin());
@@ -77,7 +75,8 @@ public class AthanorPonderPlugin implements PonderPlugin {
         scene.overlay()
                 .showText(100)
                 .colored(PonderPalette.OUTPUT)
-                .text("The Athanor Pillar stands dead centre. The substrate goes on TOP of it - the frame you are upgrading.")
+                .text(
+                        "The Athanor Pillar stands dead centre. The substrate goes on TOP of it - the frame you are upgrading.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(pillar));
@@ -85,7 +84,8 @@ public class AthanorPonderPlugin implements PonderPlugin {
         scene.overlay()
                 .showText(100)
                 .colored(PonderPalette.INPUT)
-                .text("Four Alchemetric Pylons on the diagonals, two out. These hold MATERIALS, one item each - not the pillar.")
+                .text(
+                        "Four Alchemetric Pylons on the diagonals, two out. These hold MATERIALS, one item each - not the pillar.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(2, 1, 2));
@@ -154,14 +154,16 @@ public class AthanorPonderPlugin implements PonderPlugin {
         scene.overlay()
                 .showText(120)
                 .colored(PonderPalette.OUTPUT)
-                .text("Substrate on the pillar, one material on each of the twelve pylons. The recipe's three ingredient rows are the three rings, innermost first.")
+                .text(
+                        "Substrate on the pillar, one material on each of the twelve pylons. The recipe's three ingredient rows are the three rings, innermost first.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(pillar));
         scene.idle(130);
         scene.overlay()
                 .showText(100)
-                .text("Boots need 500 mana. Until every block matches, the pillar marks ONE wrong position in red at a time.")
+                .text(
+                        "Boots need 500 mana. Until every block matches, the pillar marks ONE wrong position in red at a time.")
                 .placeNearTarget()
                 .attachKeyFrame()
                 .pointAt(util.vector().topOf(4, 0, 4));

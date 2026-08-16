@@ -30,9 +30,6 @@ public class BertieToolcraft {
             LOGGER.info("Neither Magitech nor Slag-n-Embers is present - Bertie Toolcraft is inert.");
             return;
         }
-        LOGGER.info(
-                "Bertie Toolcraft active (magitech={}, slag={}): one part system, four tools.",
-                magitech,
-                slag);
+        LOGGER.info("Bertie Toolcraft active (magitech={}, slag={}): one part system, four tools.", magitech, slag);
     }
 }

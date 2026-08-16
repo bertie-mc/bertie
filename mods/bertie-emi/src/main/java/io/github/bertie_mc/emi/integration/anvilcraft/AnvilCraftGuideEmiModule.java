@@ -1,15 +1,8 @@
 package io.github.bertie_mc.emi.integration.anvilcraft;
 
 import dev.emi.emi.api.EmiRegistry;
-import dev.emi.emi.api.recipe.EmiInfoRecipe;
-import dev.emi.emi.api.stack.EmiIngredient;
-import dev.emi.emi.api.stack.EmiStack;
-import io.github.bertie_mc.emi.framework.Categories;
-import java.util.ArrayList;
-import java.util.Arrays;
+import io.github.bertie_mc.emi.framework.InfoPages;
 import java.util.List;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 
 /**
  * The "how does this actually work" layer for AnvilCraft: an EMI Information page on each machine
@@ -132,21 +125,6 @@ final class AnvilCraftGuideEmiModule {
 
     /** One Information page, attached to every one of the given items that this pack actually has. */
     static void page(EmiRegistry reg, String key, List<String> itemIds, String... lines) {
-        List<EmiIngredient> stacks = new ArrayList<>();
-        for (String id : itemIds) {
-            EmiStack stack = Categories.stack(id);
-            if (!stack.isEmpty()) {
-                stacks.add(stack);
-            }
-        }
-        if (stacks.isEmpty()) {
-            return;
-        }
-        List<Component> text = Arrays.stream(lines)
-                .map(Component::literal)
-                .map(Component.class::cast)
-                .toList();
-        reg.addRecipe(new EmiInfoRecipe(
-                stacks, text, ResourceLocation.fromNamespaceAndPath("bertieemi", "anvilcraft/guide/" + key)));
+        InfoPages.page(reg, "anvilcraft/guide/" + key, itemIds, lines);
     }
 }

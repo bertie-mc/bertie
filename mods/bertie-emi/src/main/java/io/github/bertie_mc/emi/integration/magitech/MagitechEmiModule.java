@@ -70,6 +70,7 @@ public final class MagitechEmiModule {
         zardiusAlchemy(reg, rm);
         athanorInfusion(reg, rm);
         spellConversion(reg, rm);
+        MagitechSourceGuide.register(reg);
     }
 
     /** One entry per part x material: the cut part keeps the material it was cut from. */

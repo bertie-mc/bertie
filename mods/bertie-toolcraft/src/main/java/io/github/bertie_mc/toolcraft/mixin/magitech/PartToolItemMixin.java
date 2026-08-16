@@ -55,8 +55,7 @@ public abstract class PartToolItemMixin {
             return; // not a kept tool - leave Magitech's "no enchanting" answer in place
         }
         Item proxy = BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace(proxyPath));
-        cir.setReturnValue(
-                enchantment.value().definition().supportedItems().contains(proxy.builtInRegistryHolder()));
+        cir.setReturnValue(enchantment.value().definition().supportedItems().contains(proxy.builtInRegistryHolder()));
     }
 
     /**

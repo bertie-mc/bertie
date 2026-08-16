@@ -31,12 +31,7 @@ public abstract class BlockBreakEventMixin {
 
     @Inject(method = "addScytheMine", at = @At("HEAD"), cancellable = true)
     private static void bertietoolcraft$onlySweepInstantBlocks(
-            Player player,
-            ItemStack stack,
-            BlockPos pos,
-            Set<BlockPos> collected,
-            Block block,
-            CallbackInfo ci) {
+            Player player, ItemStack stack, BlockPos pos, Set<BlockPos> collected, Block block, CallbackInfo ci) {
         if (player == null) {
             return;
         }

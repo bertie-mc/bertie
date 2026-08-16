@@ -14,6 +14,7 @@ public final class ToolcraftPolicy {
 
     /** Magitech's {@code ToolType.getId()} values for the tools Bertie keeps. */
     public static final String PICKAXE = "pickaxe";
+
     public static final String AXE = "axe";
     public static final String SHOVEL = "shovel";
     public static final String SCYTHE = "scythe";
