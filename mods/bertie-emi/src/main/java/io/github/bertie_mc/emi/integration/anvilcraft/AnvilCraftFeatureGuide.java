@@ -136,21 +136,9 @@ final class AnvilCraftFeatureGuide {
                 reg,
                 "transmission_pole",
                 List.of("anvilcraft:transmission_pole", "anvilcraft:remote_transmission_pole"),
-                "Everything generating or consuming inside a pole's range joins the same grid, and two"
-                        + " poles join their grids wherever their ranges overlap.",
-                "A Transmission Pole reaches 8 blocks; the Remote version reaches 16.");
-        page(
-                reg,
-                "power_converter",
-                List.of(
-                        "anvilcraft:power_converter_small",
-                        "anvilcraft:power_converter_middle",
-                        "anvilcraft:power_converter_big",
-                        "anvilcraft:fe_collector"),
-                "AnvilCraft's power is not FE, so it needs converting before anything else in the pack"
-                        + " can drink it.",
-                "Conversion runs one way only, into FE, and loses some along the way. The three sizes"
-                        + " differ in throughput.");
+                "Two poles join their grids wherever their ranges overlap, so a line of them is one"
+                        + " network rather than several — which is how you get power across a base without"
+                        + " cables.");
         page(
                 reg,
                 "heat_collector",
@@ -174,11 +162,11 @@ final class AnvilCraftFeatureGuide {
                 reg,
                 "mineral_fountain",
                 List.of("anvilcraft:impact_pile", "anvilcraft:mineral_fountain"),
-                "The mod's ores do not generate in the world; this is where the rarer ones come from.",
-                "Craft an Impact Pile and place it on bedrock or deepslate, no more than eight blocks"
-                        + " above the bottom of the world.",
-                "Drop an undamaged anvil onto it from at least twenty blocks up. Both are consumed and a"
-                        + " fountain structure forms in their place.");
+                "The two conditions the tooltip leaves out: the Impact Pile must sit no more than eight"
+                        + " blocks above the bottom of the world, and the anvil has to be undamaged and"
+                        + " fall at least twenty blocks.",
+                "Both are consumed and a fountain structure forms in their place. This is where the"
+                        + " mod's rarer ores come from, since none of them generate naturally.");
         page(
                 reg,
                 "mineral_ores",

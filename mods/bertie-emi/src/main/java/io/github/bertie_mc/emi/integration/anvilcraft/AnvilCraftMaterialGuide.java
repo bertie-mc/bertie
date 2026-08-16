@@ -208,7 +208,6 @@ final class AnvilCraftMaterialGuide {
                         "anvilcraft:charged_neutronium_ingot"),
                 "Made by banking mass in a Space Overcompressor: put metal on top, strike with an anvil,"
                         + " and the ingot drops out once enough has accumulated.",
-                "It is so dense that ordinary blocks do not stop it — only bedrock, end stone and end" + " dust will.",
                 "The charged form is the input to Transcendium.");
         page(
                 reg,
