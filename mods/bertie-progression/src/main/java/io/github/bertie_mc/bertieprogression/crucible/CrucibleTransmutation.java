@@ -36,8 +36,7 @@ public final class CrucibleTransmutation {
     private static final ResourceLocation CRUCIBLE =
             ResourceLocation.fromNamespaceAndPath("magitech", "zardius_crucible");
 
-    private CrucibleTransmutation() {
-    }
+    private CrucibleTransmutation() {}
 
     /**
      * Ours iff a processing recipe rolls a crucible. No other recipe in the pack produces one, and
@@ -87,14 +86,16 @@ public final class CrucibleTransmutation {
     }
 
     private static void clear(BasinBlockEntity basin) {
-        for (var inventory : new com.simibubi.create.foundation.item.SmartInventory[]{
-                basin.getInputInventory(), basin.getOutputInventory()}) {
+        for (var inventory : new com.simibubi.create.foundation.item.SmartInventory[] {
+            basin.getInputInventory(), basin.getOutputInventory()
+        }) {
             for (int slot = 0; slot < inventory.getSlots(); slot++) {
                 inventory.setStackInSlot(slot, ItemStack.EMPTY);
             }
         }
-        basin.getTanks().forEach(behaviour ->
-                behaviour.getCapability().drain(Integer.MAX_VALUE, IFluidHandler.FluidAction.EXECUTE));
+        basin.getTanks()
+                .forEach(behaviour ->
+                        behaviour.getCapability().drain(Integer.MAX_VALUE, IFluidHandler.FluidAction.EXECUTE));
     }
 
     private static Block crucible() {

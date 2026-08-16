@@ -33,8 +33,7 @@ public abstract class BlazeBurnerBlockEntityMixin {
 
     @Unique
     private static final TagKey<Item> bertieprogression$SNUFFING = TagKey.create(
-            Registries.ITEM,
-            ResourceLocation.fromNamespaceAndPath("bertieprogression", "snuffing_blaze_fuel"));
+            Registries.ITEM, ResourceLocation.fromNamespaceAndPath("bertieprogression", "snuffing_blaze_fuel"));
 
     @Unique
     private boolean bertieprogression$snuffOut;
@@ -50,10 +49,7 @@ public abstract class BlazeBurnerBlockEntityMixin {
 
     @Inject(method = "tryUpdateFuel", at = @At("RETURN"), remap = false)
     private void bertieprogression$rememberFuel(
-            ItemStack stack,
-            boolean forceOverflow,
-            boolean simulate,
-            CallbackInfoReturnable<Boolean> cir) {
+            ItemStack stack, boolean forceOverflow, boolean simulate, CallbackInfoReturnable<Boolean> cir) {
         if (simulate || !cir.getReturnValueZ()) {
             return;
         }

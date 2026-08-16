@@ -31,10 +31,7 @@ public abstract class BasinRecipeMixin {
             cancellable = true,
             remap = false)
     private static void bertieprogression$becomeCrucible(
-            BasinBlockEntity basin,
-            Recipe<?> recipe,
-            boolean simulate,
-            CallbackInfoReturnable<Boolean> cir) {
+            BasinBlockEntity basin, Recipe<?> recipe, boolean simulate, CallbackInfoReturnable<Boolean> cir) {
         if (simulate || !CrucibleTransmutation.isCrucibleRecipe(recipe)) {
             return;
         }

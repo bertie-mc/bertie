@@ -13,6 +13,7 @@ import io.github.bertie_mc.emi.framework.Recipes;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -55,6 +56,18 @@ import net.stln.magitech.util.ComponentHelper;
 public final class MagitechEmiModule {
     private MagitechEmiModule() {}
 
+    /**
+     * Tool materials whose source item nothing in Magitech 1.1.3 produces. Each is registered as a
+     * material, so expanding Part Cutting across every material would otherwise mint a dozen entries
+     * apiece for parts that cannot be made — and give the dead item a convincing list of "uses" in
+     * EMI, which is exactly the wrong signal.
+     *
+     * <p>This has to be a list rather than a check, because "no recipe makes it" is also true of
+     * Diamond and every other mined material. Revisit it when Magitech updates.
+     */
+    private static final Set<String> UNOBTAINABLE_MATERIALS =
+            Set.of("abyssite", "frigidite", "resonite", "translucium");
+
     private static final String ENGINEERING_WORKBENCH = "magitech:engineering_workbench";
     private static final String ASSEMBLY_WORKBENCH = "magitech:assembly_workbench";
     private static final String THREAD_PAGE = "magitech:thread_page";
@@ -62,7 +75,11 @@ public final class MagitechEmiModule {
     public static void register(EmiRegistry reg) {
         RecipeManager rm = reg.getRecipeManager();
         List<ToolMaterialRecipe> materials = new ArrayList<>();
-        Recipes.forEach(rm, ToolMaterialRecipe.class, (id, r) -> materials.add(r));
+        Recipes.forEach(rm, ToolMaterialRecipe.class, (id, r) -> {
+            if (!UNOBTAINABLE_MATERIALS.contains(r.getToolMaterial().getId().getPath())) {
+                materials.add(r);
+            }
+        });
         materials.sort(Comparator.comparing(r -> r.getToolMaterial().getId()));
 
         partCutting(reg, rm, materials);
