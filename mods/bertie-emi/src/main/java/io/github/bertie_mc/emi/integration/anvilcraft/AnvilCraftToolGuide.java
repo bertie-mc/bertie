@@ -112,17 +112,15 @@ final class AnvilCraftToolGuide {
                 reg,
                 "crab_claw",
                 List.of("anvilcraft:crab_claw"),
-                "Comes out of a Crab Trap.",
-                "Held in either hand it adds three blocks to your reach, which is worth more than it"
-                        + " sounds when placing anvils.",
+                "Three blocks of extra reach, which is worth more than it sounds when you are placing"
+                        + " anvils overhead.",
                 "Right-click to force a shulker open.");
         page(
                 reg,
                 "hand_magnet",
                 List.of("anvilcraft:magnet"),
-                "Right-click to drag nearby dropped items and experience orbs to your feet.",
-                "Sneak-right-click a block face to leave a magnetised node there, which does the same"
-                        + " job without you.",
+                "Sneak-right-click a block face to leave a magnetised node there, which pulls items in"
+                        + " without you holding anything.",
                 "Takes Mending, Unbreaking and Curse of Vanishing.");
         page(
                 reg,
@@ -130,16 +128,8 @@ final class AnvilCraftToolGuide {
                 List.of("anvilcraft:geode"),
                 "From mining budding amethyst — Fortune does nothing — or from a Jeweler, or the bonus"
                         + " chest if you enabled one.",
-                "Use it to locate amethyst geodes in the world, which is how you get enough amethyst to" + " matter.",
-                "Stamping one has a chance at each of the mod's three gems, so keep some spare.");
-        page(
-                reg,
-                "filter",
-                List.of("anvilcraft:filter"),
-                "Right-click to open it, in hand or inside another screen.",
-                "The eighteen slots on the right are markers only — dropping items in does not consume"
-                        + " them. The two on the left toggle NBT matching and invert the whole filter.",
-                "Chutes and most machines take one to narrow what they accept.");
+                "Stamping one has a chance at each of the mod's three gems, so keep some spare rather"
+                        + " than spending them all on locating.");
         page(
                 reg,
                 "disk",
@@ -151,8 +141,8 @@ final class AnvilCraftToolGuide {
                 reg,
                 "resin_block",
                 List.of("anvilcraft:resin_block"),
-                "Right-click a creature with one to trap it, provided it is under 1.5 blocks wide and 2" + " tall.",
-                "Hostile and neutral mobs have to be weakened first — apply Weakness before trying.",
+                "The creature has to be under 1.5 blocks wide and 2 tall, and anything hostile or neutral"
+                        + " must be under Weakness first.",
                 "Right-click the ground to let it out again. This is how you move villagers, and how you"
                         + " hold a zombie still while it becomes a Giant Zombie.");
         page(

@@ -181,13 +181,6 @@ final class AnvilCraftFeatureGuide {
                         + " fountain structure forms in their place.");
         page(
                 reg,
-                "overseer",
-                List.of("anvilcraft:overseer"),
-                "Keeps chunks loaded so your machines keep running while you are away.",
-                "It needs a multiblock under it: up to three 3x3 layers of Royal Steel or Frost Metal"
-                        + " blocks. More layers reach further; with none it holds only its own chunk.");
-        page(
-                reg,
                 "mineral_ores",
                 List.of(
                         "anvilcraft:deepslate_zinc_ore",

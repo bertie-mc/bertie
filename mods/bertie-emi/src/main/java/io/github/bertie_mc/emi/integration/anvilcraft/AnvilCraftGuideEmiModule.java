@@ -61,8 +61,7 @@ final class AnvilCraftGuideEmiModule {
                     "Heats whatever sits on top of it. With a cauldron up there, that is Super Heating.",
                     "Super Heating runs furnace and blast furnace recipes a batch at a time, adds recipes"
                             + " of its own, and doubles what ore smelting gives you.",
-                    "It will not cook food. Put a lit Campfire under the cauldron instead.",
-                    "Draws 16 kW without pause and stops the moment power runs short.");
+                    "It will not cook food. Put a lit Campfire under the cauldron instead.");
             page(
                     reg,
                     "crushing_table",
