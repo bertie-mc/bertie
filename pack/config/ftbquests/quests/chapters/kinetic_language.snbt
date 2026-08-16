@@ -31,7 +31,7 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
+			x: -18.0d
 			y: 1.5d
 		}
 		{
@@ -54,7 +54,7 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
+			x: -16.5d
 			y: 1.5d
 		}
 		{
@@ -80,7 +80,7 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
+			x: -15.0d
 			y: 1.5d
 		}
 		{
@@ -103,8 +103,8 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
-			y: 1.5d
+			x: -13.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -133,7 +133,7 @@
 					}
 				]
 			x: -12.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -157,7 +157,7 @@
 					}
 				]
 			x: -21.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -180,14 +180,14 @@
 					}
 				]
 			x: -19.5d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "armageddon_mod:builder_stone"
 			}
-			dependencies: ["2B00000000000007"]
+			dependencies: ["2B00000000000053"]
 			id: "2B00000000000008"
 			rewards: [{
 				id: "2B00000002000008"
@@ -202,8 +202,8 @@
 						type: "item"
 					}
 				]
-			x: -18.0d
-			y: -3.0d
+			x: -16.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -229,8 +229,8 @@
 						value: 1L
 					}
 				]
-			x: -16.5d
-			y: -3.0d
+			x: -15.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -252,8 +252,8 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
-			y: -3.0d
+			x: -13.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -276,8 +276,8 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
-			y: -3.0d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -299,8 +299,8 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
-			y: -4.5d
+			x: -12.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -323,7 +323,7 @@
 					}
 				]
 			x: -19.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -469,7 +469,7 @@
 					}
 				]
 			x: -18.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -565,7 +565,7 @@
 					}
 				]
 			x: -21.0d
-			y: 7.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -591,7 +591,7 @@
 					}
 				]
 			x: -19.5d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -626,7 +626,7 @@
 				id: "malum:crude_scythe"
 			}
 			dependencies: [
-				"2B00000000000019"
+				"2B00000000000054"
 				"2B0000000000004D"
 			]
 			id: "2B0000000000001A"
@@ -643,7 +643,7 @@
 						type: "item"
 					}
 				]
-			x: -15.0d
+			x: -13.5d
 			y: 7.5d
 		}
 		{
@@ -670,7 +670,7 @@
 						type: "item"
 					}
 				]
-			x: -12.0d
+			x: -10.5d
 			y: 7.5d
 		}
 		{
@@ -1809,7 +1809,7 @@
 					}
 				]
 			x: -18.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1835,7 +1835,7 @@
 					}
 				]
 			x: -18.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1881,7 +1881,7 @@
 					}
 				]
 			x: -13.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -1927,7 +1927,7 @@
 					}
 				]
 			x: -13.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -1973,7 +1973,53 @@
 					}
 				]
 			x: -19.5d
-			y: 1.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+			dependencies: ["2B00000000000007"]
+			id: "2B00000000000053"
+			rewards: [{
+				id: "2B00000002000053"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000053"
+						item: { count: 1 id: "minecraft:emerald" }
+						type: "item"
+					}
+				]
+			x: -18.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:lantern"
+			}
+			dependencies: ["2B00000000000019"]
+			id: "2B00000000000054"
+			rewards: [{
+				id: "2B00000002000054"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000054"
+						item: { count: 1 id: "minecraft:lantern" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 7.5d
 		}
 	]
 }

@@ -345,6 +345,10 @@
 	quest.2B00000000000051.title: "Zinc stockpile"
 	quest.2B00000000000052.quest_desc: ["Eight Arcane Essence. It falls out of magic-touched mobs and turns up in almost any chest worth opening - and nothing in Iron's Spellbooks binds without it."]
 	quest.2B00000000000052.title: "Arcane Essence"
+	quest.2B00000000000053.quest_desc: ["One Emerald. The Builder Stone will not bind without it - trade a villager down or go and dig."]
+	quest.2B00000000000053.title: "An Emerald"
+	quest.2B00000000000054.quest_desc: ["One Lantern. The scythe is reforged around a light."]
+	quest.2B00000000000054.title: "A Lantern"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
