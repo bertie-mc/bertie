@@ -1,0 +1,118 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "malum:arcane_spirit"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "magitech:fluorite"
+    },
+    {
+      "item": "forbidden_arcanus:mundabitur_dust"
+    },
+    {
+      "item": "forbidden_arcanus:mundabitur_dust"
+    },
+    {
+      "item": "forbidden_arcanus:mundabitur_dust"
+    },
+    {
+      "item": "forbidden_arcanus:mundabitur_dust"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "magitech:zardius_crucible"
+    }
+  ]
+}

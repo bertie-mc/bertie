@@ -1359,6 +1359,20 @@ write(f"{R}/create/colossal_iron_compacting.json",
                        + [{"type": "neoforge:single", "amount": 1000, "fluid": "irons_spellbooks:common_ink"}]),
        "results": [{"id": "armageddon_mod:colossal_iron_ingot"}]})
 
+# --- Zardius Crucible: a heated basin under a mixer, charged with 16 arcane spirits, 8 fluorite,
+#     4 mundabitur dust and a bucket of lava. The declared result is the crucible, but
+#     CrucibleTransmutation intercepts the craft and turns the BASIN into one, dropping the mixer.
+#     Magitech's own bench recipe stays; this is the second route. ---
+write(f"{R}/create/zardius_crucible_mixing.json",
+      {"neoforge:conditions": conds("create", "magitech", "malum", "forbidden_arcanus"),
+       "type": "create:mixing",
+       "heat_requirement": "heated",
+       "ingredients": ([{"item": "malum:arcane_spirit"} for _ in range(16)]
+                       + [{"item": "magitech:fluorite"} for _ in range(8)]
+                       + [{"item": "forbidden_arcanus:mundabitur_dust"} for _ in range(4)]
+                       + [{"type": "neoforge:single", "amount": 1000, "fluid": "minecraft:lava"}]),
+       "results": [{"id": "magitech:zardius_crucible"}]})
+
 # --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
 #     Change each shared residue type to produce the corresponding primary ingot or
 #     item, required_amount 1 (recipe chances untouched). Each residue_type maps 1:1 to its primary, so
