@@ -259,7 +259,7 @@
 	quest.2B00000000000024.title: "Fire-Infused Iron"
 	quest.2B00000000000025.quest_desc: ["Mine 4 Runes from Runic Stones."]
 	quest.2B00000000000025.title: "Mine a Rune"
-	quest.2B00000000000026.quest_desc: ["Mine 16 Netherrack and 2 Magma Blocks."]
+	quest.2B00000000000026.quest_desc: ["Mine 16 Netherrack."]
 	quest.2B00000000000026.title: "Into the Nether"
 	quest.2B00000000000027.quest_desc: ["Craft a Furnace - an iron frame over a cobblestone/netherrack base (crafting table or Mechanical Crafter)."]
 	quest.2B00000000000027.title: "Furnace"
@@ -349,6 +349,8 @@
 	quest.2B00000000000054.title: "A Lantern"
 	quest.2B00000000000055.quest_desc: ["Magitech's crucible - three iron and a tourmaline around the rim. Everything Zardius alchemy asks for goes through it."]
 	quest.2B00000000000055.title: "The Zardius Crucible"
+	quest.2B00000000000056.quest_desc: ["Two Magma Blocks, cut out of the floor of the Nether."]
+	quest.2B00000000000056.title: "Magma Blocks"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]

@@ -907,12 +907,6 @@
 						item: { count: 1 id: "minecraft:netherrack" }
 						type: "item"
 					}
-					{
-						count: 2L
-						id: "2B00000001010026"
-						item: { count: 1 id: "minecraft:magma_block" }
-						type: "item"
-					}
 				]
 			x: -4.5d
 			y: -1.5d
@@ -2007,6 +2001,28 @@
 				]
 			x: -1.5d
 			y: 6.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:magma_block"
+			}
+			id: "2B00000000000056"
+			rewards: [{
+				id: "2B00000002000056"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "2B00000001000056"
+						item: { count: 1 id: "minecraft:magma_block" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: -1.5d
 		}
 	]
 }
