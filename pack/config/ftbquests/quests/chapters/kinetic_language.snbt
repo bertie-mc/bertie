@@ -806,7 +806,6 @@
 				count: 1
 				id: "minecraft:blaze_powder"
 			}
-			dependencies: ["2B00000000000021"]
 			id: "2B00000000000022"
 			rewards: [{
 				id: "2B00000002000022"
@@ -829,7 +828,6 @@
 				count: 1
 				id: "minecraft:bucket"
 			}
-			dependencies: ["2B00000000000022"]
 			id: "2B00000000000023"
 			rewards: [{
 				id: "2B00000002000023"
@@ -852,7 +850,6 @@
 				count: 1
 				id: "elemental_metals:fire_infused_iron_ingot"
 			}
-			dependencies: ["2B00000000000023"]
 			id: "2B00000000000024"
 			rewards: [{
 				id: "2B00000002000024"
@@ -875,7 +872,6 @@
 				count: 1
 				id: "forbidden_arcanus:rune"
 			}
-			dependencies: ["2B00000000000024"]
 			id: "2B00000000000025"
 			rewards: [{
 				id: "2B00000002000025"
@@ -918,7 +914,7 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
@@ -926,7 +922,6 @@
 				count: 1
 				id: "minecraft:furnace"
 			}
-			dependencies: ["2B00000000000026"]
 			id: "2B00000000000027"
 			rewards: [{
 				id: "2B00000002000027"
@@ -949,7 +944,6 @@
 				count: 1
 				id: "minecraft:blast_furnace"
 			}
-			dependencies: ["2B00000000000027"]
 			id: "2B00000000000028"
 			rewards: [{
 				id: "2B00000002000028"
@@ -972,7 +966,6 @@
 				count: 1
 				id: "forbidden_arcanus:clibano_core"
 			}
-			dependencies: ["2B00000000000028"]
 			id: "2B00000000000029"
 			rewards: [{
 				id: "2B00000002000029"
@@ -995,7 +988,6 @@
 				count: 1
 				id: "slag:melter"
 			}
-			dependencies: ["2B00000000000029"]
 			id: "2B0000000000002A"
 			rewards: [{
 				id: "2B0000000200002A"
