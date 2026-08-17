@@ -117,8 +117,6 @@
 	quest.1C0000000000000E.title: "A fraction of Power"
 	quest.1C0000000000000F.quest_desc: ["Focus the Impetus in the Crucible with two Infernal and one Earthen spirit: four Glowstone Dust a cycle. (The stock eight-dust recipe is gone.)"]
 	quest.1C0000000000000F.title: "Glowstone Dust"
-	quest.1C00000000000010.quest_desc: ["Focus the Impetus with four Infernal and two Aerial spirits for two Blaze Powder a cycle."]
-	quest.1C00000000000010.title: "Blaze Powder"
 	quest.1C00000000000011.quest_desc: ["Bank 6 Iron Ingots. Every elemental infusion around this starts as plain iron."]
 	quest.1C00000000000011.title: "Six Iron Ingots"
 	quest.1C00000000000012.quest_desc: ["Two pieces in your 2x2: Runewood Planks over an Edelwood Stick, set corner to corner. The staff is how you carve spirit runes into a totem."]
@@ -129,8 +127,6 @@
 	quest.1C00000000000016.title: "Tuning Fork"
 	quest.1C00000000000017.quest_desc: ["The Pylon mends the gear you leave in its reach, paid for in spirits."]
 	quest.1C00000000000017.title: "Repair Pylon"
-	quest.1C00000000000018.quest_desc: ["Spirit-infuse an Iron Ingot into Fire-Infused Iron at the altar."]
-	quest.1C00000000000018.title: "Fire-Infused Iron"
 	quest.1C00000000000019.quest_desc: ["Spirit-infuse an Iron Ingot into Arcane-Infused Iron at the altar."]
 	quest.1C00000000000019.title: "Arcane-Infused Iron"
 	quest.1C0000000000001A.quest_desc: ["Spirit-infuse an Iron Ingot into Frost-Infused Iron at the altar."]
@@ -253,13 +249,13 @@
 	quest.2B00000000000021.title: "Sea Serpents"
 	quest.2B00000000000022.quest_desc: ["Bring back 3 Blaze Powder from the Nether."]
 	quest.2B00000000000022.title: "Blaze Powder"
-	quest.2B00000000000023.quest_desc: ["Find or craft a Bucket."]
-	quest.2B00000000000023.title: "A Bucket"
+	quest.2B00000000000023.quest_desc: ["Find me."]
+	quest.2B00000000000023.title: "A Bucket of Lava"
 	quest.2B00000000000024.quest_desc: ["Forge a Fire-Infused Iron Ingot."]
 	quest.2B00000000000024.title: "Fire-Infused Iron"
 	quest.2B00000000000025.quest_desc: ["Mine 4 Runes from Runic Stones."]
 	quest.2B00000000000025.title: "Mine a Rune"
-	quest.2B00000000000026.quest_desc: ["Mine 16 Netherrack."]
+	quest.2B00000000000026.quest_desc: ["Find me."]
 	quest.2B00000000000026.title: "Into the Nether"
 	quest.2B00000000000027.quest_desc: ["Craft a Furnace - an iron frame over a cobblestone/netherrack base (crafting table or Mechanical Crafter)."]
 	quest.2B00000000000027.title: "Furnace"
@@ -349,7 +345,7 @@
 	quest.2B00000000000054.title: "A Lantern"
 	quest.2B00000000000055.quest_desc: ["Magitech's crucible - three iron and a tourmaline around the rim. Everything Zardius alchemy asks for goes through it."]
 	quest.2B00000000000055.title: "The Zardius Crucible"
-	quest.2B00000000000056.quest_desc: ["Two Magma Blocks, cut out of the floor of the Nether."]
+	quest.2B00000000000056.quest_desc: ["Find me."]
 	quest.2B00000000000056.title: "Magma Blocks"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"

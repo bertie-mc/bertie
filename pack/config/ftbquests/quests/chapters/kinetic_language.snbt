@@ -826,7 +826,7 @@
 		{
 			icon: {
 				count: 1
-				id: "minecraft:bucket"
+				id: "minecraft:lava_bucket"
 			}
 			id: "2B00000000000023"
 			rewards: [{
@@ -838,7 +838,7 @@
 					{
 						count: 1L
 						id: "2B00000001000023"
-						item: { count: 1 id: "minecraft:bucket" }
+						item: { count: 1 id: "minecraft:lava_bucket" }
 						type: "item"
 					}
 				]
@@ -916,6 +916,7 @@
 				count: 1
 				id: "minecraft:furnace"
 			}
+			dependencies: ["2B00000000000026"]
 			id: "2B00000000000027"
 			rewards: [{
 				id: "2B00000002000027"
@@ -938,6 +939,11 @@
 				count: 1
 				id: "minecraft:blast_furnace"
 			}
+			dependencies: [
+				"2B00000000000027"
+				"2B00000000000056"
+				"2B00000000000024"
+			]
 			id: "2B00000000000028"
 			rewards: [{
 				id: "2B00000002000028"
@@ -960,6 +966,10 @@
 				count: 1
 				id: "forbidden_arcanus:clibano_core"
 			}
+			dependencies: [
+				"2B00000000000028"
+				"2B00000000000025"
+			]
 			id: "2B00000000000029"
 			rewards: [{
 				id: "2B00000002000029"
@@ -982,6 +992,7 @@
 				count: 1
 				id: "slag:melter"
 			}
+			dependencies: ["2B00000000000029"]
 			id: "2B0000000000002A"
 			rewards: [{
 				id: "2B0000000200002A"
@@ -2023,6 +2034,632 @@
 				]
 			x: -3.0d
 			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:tainted_rock"
+			}
+			id: "1C00000000000008"
+			rewards: [{
+				id: "1C00000002000008"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000008"
+						item: { count: 1 id: "malum:tainted_rock" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 20.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:twisted_rock"
+			}
+			dependencies: ["1C00000000000008"]
+			id: "1C00000000000009"
+			rewards: [{
+				id: "1C00000002000009"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000009"
+						item: { count: 1 id: "malum:twisted_rock" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 18.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:spirit_crucible"
+			}
+			dependencies: ["1C00000000000009"]
+			id: "1C0000000000000A"
+			rewards: [{
+				id: "1C0000000200000A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100000A"
+						item: { count: 1 id: "malum:spirit_crucible" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 17.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:arcane_charcoal"
+			}
+			id: "1C0000000000000B"
+			rewards: [{
+				id: "1C0000000200000B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100000B"
+						item: { count: 1 id: "malum:arcane_charcoal" }
+						type: "item"
+					}
+				]
+			x: -6.0d
+			y: 12.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:hex_ash"
+			}
+			dependencies: ["1C0000000000000B"]
+			id: "1C0000000000000C"
+			rewards: [{
+				id: "1C0000000200000C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100000C"
+						item: { count: 1 id: "malum:hex_ash" }
+						type: "item"
+					}
+				]
+			x: -6.0d
+			y: 11.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:alchemical_calx"
+			}
+			id: "1C0000000000000D"
+			rewards: [{
+				id: "1C0000000200000D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100000D"
+						item: { count: 1 id: "malum:alchemical_calx" }
+						type: "item"
+					}
+				]
+			x: 0d
+			y: 9.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:alchemical_impetus"
+			}
+			dependencies: ["1C0000000000000D"]
+			id: "1C0000000000000E"
+			rewards: [{
+				id: "1C0000000200000E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100000E"
+						item: { count: 1 id: "malum:alchemical_impetus" }
+						type: "item"
+					}
+				]
+			x: 0d
+			y: 8.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:glowstone_dust"
+			}
+			dependencies: ["1C0000000000000E"]
+			id: "1C0000000000000F"
+			rewards: [{
+				id: "1C0000000200000F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 4L
+						id: "1C0000000100000F"
+						item: { count: 1 id: "minecraft:glowstone_dust" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 8.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:iron_ingot"
+			}
+			dependencies: ["1C0000000000000E"]
+			id: "1C00000000000011"
+			rewards: [{
+				id: "1C00000002000011"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 6L
+						id: "1C00000001000011"
+						item: { count: 1 id: "minecraft:iron_ingot" }
+						type: "item"
+					}
+				]
+			x: 0d
+			y: 5.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:totemic_staff"
+			}
+			id: "1C00000000000012"
+			rewards: [{
+				id: "1C00000002000012"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000012"
+						item: { count: 1 id: "malum:totemic_staff" }
+						type: "item"
+					}
+				]
+			x: -4.5d
+			y: 20.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:spirit_catalyzer"
+			}
+			dependencies: ["1C0000000000000A"]
+			id: "1C00000000000015"
+			rewards: [{
+				id: "1C00000002000015"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000015"
+						item: { count: 1 id: "malum:spirit_catalyzer" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 15.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:repair_pylon"
+			}
+			dependencies: ["1C00000000000015"]
+			id: "1C00000000000017"
+			rewards: [{
+				id: "1C00000002000017"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000017"
+						item: { count: 1 id: "malum:repair_pylon" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 14.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:tuning_fork"
+			}
+			dependencies: ["1C00000000000017"]
+			id: "1C00000000000016"
+			rewards: [{
+				id: "1C00000002000016"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000016"
+						item: { count: 1 id: "malum:tuning_fork" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 12.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:arcane_infused_iron_ingot"
+			}
+			dependencies: ["1C00000000000011"]
+			id: "1C00000000000019"
+			rewards: [{
+				id: "1C00000002000019"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000019"
+						item: { count: 1 id: "elemental_metals:arcane_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: 0.562d
+			y: 4.43d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:frost_infused_iron_ingot"
+			}
+			dependencies: ["1C00000000000011"]
+			id: "1C0000000000001A"
+			rewards: [{
+				id: "1C0000000200001A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100001A"
+						item: { count: 1 id: "elemental_metals:frost_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: 1.125d
+			y: 5.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:healing_infused_iron_ingot"
+			}
+			dependencies: ["1C00000000000011"]
+			id: "1C0000000000001B"
+			rewards: [{
+				id: "1C0000000200001B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100001B"
+						item: { count: 1 id: "elemental_metals:healing_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: -1.125d
+			y: 5.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:lightning_infused_iron_ingot"
+			}
+			dependencies: [
+				"1C00000000000011"
+				"1C0000000000000F"
+			]
+			id: "1C0000000000001C"
+			rewards: [{
+				id: "1C0000000200001C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100001C"
+						item: { count: 1 id: "elemental_metals:lightning_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: -0.562d
+			y: 6.37d
+		}
+		{
+			icon: {
+				count: 1
+				id: "elemental_metals:soul_infused_iron_ingot"
+			}
+			dependencies: ["1C00000000000011"]
+			id: "1C0000000000001D"
+			rewards: [{
+				id: "1C0000000200001D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100001D"
+						item: { count: 1 id: "elemental_metals:soul_infused_iron_ingot" }
+						type: "item"
+					}
+				]
+			x: -0.562d
+			y: 4.43d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:soulwoven_silk"
+			}
+			dependencies: ["1C0000000000000C"]
+			id: "1C00000000000045"
+			rewards: [{
+				id: "1C00000002000045"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000045"
+						item: { count: 1 id: "malum:soulwoven_silk" }
+						type: "item"
+					}
+				]
+			x: -7.5d
+			y: 10.65d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:magic_cloth"
+			}
+			dependencies: ["1C00000000000045"]
+			id: "1C00000000000046"
+			rewards: [{
+				id: "1C00000002000046"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000046"
+						item: { count: 1 id: "irons_spellbooks:magic_cloth" }
+						type: "item"
+					}
+				]
+			x: -9.0d
+			y: 9.9d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:astral_weave"
+			}
+			dependencies: ["1C00000000000046"]
+			id: "1C00000000000047"
+			rewards: [{
+				id: "1C00000002000047"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000047"
+						item: { count: 1 id: "malum:astral_weave" }
+						type: "item"
+					}
+				]
+			x: -10.5d
+			y: 9.15d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:soulwoven_pouch"
+			}
+			dependencies: ["1C00000000000045"]
+			id: "1C00000000000048"
+			rewards: [{
+				id: "1C00000002000048"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000048"
+						item: { count: 1 id: "malum:soulwoven_pouch" }
+						type: "item"
+					}
+				]
+			x: -9.0d
+			y: 11.4d
+		}
+		{
+			icon: {
+				count: 1
+				id: "malum:ravenous_pouch"
+			}
+			dependencies: ["1C00000000000048"]
+			id: "1C00000000000049"
+			rewards: [{
+				id: "1C00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000049"
+						item: { count: 1 id: "malum:ravenous_pouch" }
+						type: "item"
+					}
+				]
+			x: -10.5d
+			y: 12.15d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:sculk_catalyst"
+			}
+			dependencies: ["1C0000000000000C"]
+			id: "1C00000000000058"
+			rewards: [{
+				id: "1C00000002000058"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:sculk_catalyst"
+						}
+						id: "1C00000001000058"
+						structure: "minecraft:ancient_city"
+						type: "structure"
+					}
+				]
+			x: -7.3d
+			y: 9.15d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			dependencies: ["1C00000000000058"]
+			id: "1C00000000000059"
+			rewards: [{
+				id: "1C00000002000059"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000059"
+						item: { count: 1 id: "minecraft:echo_shard" }
+						type: "item"
+					}
+				]
+			x: -8.05d
+			y: 7.85d
+		}
+		{
+			icon: {
+				count: 1
+				id: "avaritia:sculk_crafting_table"
+			}
+			dependencies: [
+				"1C00000000000059"
+				"1C0000000000001D"
+			]
+			id: "1C0000000000005A"
+			rewards: [{
+				id: "1C0000000200005A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100005A"
+						item: { count: 1 id: "avaritia:sculk_crafting_table" }
+						type: "item"
+					}
+				]
+			x: -8.8d
+			y: 6.55d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:altar_of_amethyst"
+			}
+			dependencies: ["1C0000000000005A"]
+			id: "1C0000000000005B"
+			rewards: [{
+				id: "1C0000000200005B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100005B"
+						item: { count: 1 id: "cataclysm:altar_of_amethyst" }
+						type: "item"
+					}
+				]
+			x: -9.55d
+			y: 5.25d
 		}
 	]
 }
