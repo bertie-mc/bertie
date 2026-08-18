@@ -780,6 +780,7 @@
 				count: 1
 				id: "iceandfire:sea_serpent_scales_red"
 			}
+			dependencies: ["2B00000000000023"]
 			id: "2B00000000000021"
 			rewards: [{
 				id: "2B00000002000021"
@@ -798,8 +799,8 @@
 						value: 2L
 					}
 				]
-			x: 6.5d
-			y: -6.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -821,14 +822,15 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
-			y: -18.0d
+			x: -3.0d
+			y: -7.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "minecraft:lava_bucket"
 			}
+			dependencies: ["2B00000000000026"]
 			id: "2B00000000000023"
 			rewards: [{
 				id: "2B00000002000023"
@@ -843,8 +845,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: -4.5d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -852,7 +854,7 @@
 				id: "elemental_metals:fire_infused_iron_ingot"
 			}
 			dependencies: [
-				"1C00000000000011"
+				"2B00000000000021"
 				"2B00000000000022"
 			]
 			id: "2B00000000000024"
@@ -869,8 +871,8 @@
 						type: "item"
 					}
 				]
-			x: 0.562d
-			y: -20.026d
+			x: -1.5d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -891,14 +893,15 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: -4.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "minecraft:netherrack"
 			}
+			dependencies: ["2B0000000000001F"]
 			id: "2B00000000000026"
 			rewards: [{
 				id: "2B00000002000026"
@@ -936,7 +939,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -963,7 +966,7 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -989,7 +992,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -1042,7 +1045,7 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -2023,6 +2026,7 @@
 				count: 1
 				id: "minecraft:magma_block"
 			}
+			dependencies: ["2B00000000000026"]
 			id: "2B00000000000056"
 			rewards: [{
 				id: "2B00000002000056"
@@ -2038,7 +2042,7 @@
 					}
 				]
 			x: -3.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -2128,8 +2132,8 @@
 						type: "item"
 					}
 				]
-			x: -1.0d
-			y: -6.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -2151,8 +2155,8 @@
 						type: "item"
 					}
 				]
-			x: -6.0d
-			y: -15.0d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -2173,8 +2177,8 @@
 						type: "item"
 					}
 				]
-			x: 0d
-			y: -16.5d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -2196,8 +2200,8 @@
 						type: "item"
 					}
 				]
-			x: 0d
-			y: -18.0d
+			x: -4.5d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -2219,38 +2223,14 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: -18.0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "minecraft:iron_ingot"
-			}
-			dependencies: ["1C0000000000000E"]
-			id: "1C00000000000011"
-			rewards: [{
-				id: "1C00000002000011"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 6L
-						id: "1C00000001000011"
-						item: { count: 1 id: "minecraft:iron_ingot" }
-						type: "item"
-					}
-				]
-			x: 0d
-			y: -21.0d
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:arcane_infused_iron_ingot"
 			}
-			dependencies: ["1C00000000000011"]
 			id: "1C00000000000019"
 			rewards: [{
 				id: "1C00000002000019"
@@ -2265,15 +2245,14 @@
 						type: "item"
 					}
 				]
-			x: 0.562d
-			y: -21.97d
+			x: -7.5d
+			y: -10.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:frost_infused_iron_ingot"
 			}
-			dependencies: ["1C00000000000011"]
 			id: "1C0000000000001A"
 			rewards: [{
 				id: "1C0000000200001A"
@@ -2288,15 +2267,14 @@
 						type: "item"
 					}
 				]
-			x: 1.125d
-			y: -21.0d
+			x: -3.0d
+			y: -9.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:healing_infused_iron_ingot"
 			}
-			dependencies: ["1C00000000000011"]
 			id: "1C0000000000001B"
 			rewards: [{
 				id: "1C0000000200001B"
@@ -2311,18 +2289,15 @@
 						type: "item"
 					}
 				]
-			x: -1.125d
-			y: -21.0d
+			x: -6.0d
+			y: -9.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:lightning_infused_iron_ingot"
 			}
-			dependencies: [
-				"1C00000000000011"
-				"1C0000000000000F"
-			]
+			dependencies: ["1C0000000000000F"]
 			id: "1C0000000000001C"
 			rewards: [{
 				id: "1C0000000200001C"
@@ -2337,15 +2312,14 @@
 						type: "item"
 					}
 				]
-			x: -0.562d
-			y: -20.03d
+			x: -7.5d
+			y: -7.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:soul_infused_iron_ingot"
 			}
-			dependencies: ["1C00000000000011"]
 			id: "1C0000000000001D"
 			rewards: [{
 				id: "1C0000000200001D"
@@ -2360,8 +2334,8 @@
 						type: "item"
 					}
 				]
-			x: -0.562d
-			y: -21.97d
+			x: -1.5d
+			y: -10.5d
 		}
 	]
 }

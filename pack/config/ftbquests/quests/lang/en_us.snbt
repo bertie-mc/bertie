@@ -117,8 +117,6 @@
 	quest.1C0000000000000E.title: "A fraction of Power"
 	quest.1C0000000000000F.quest_desc: ["Focus the Impetus in the Crucible with two Infernal and one Earthen spirit: four Glowstone Dust a cycle. (The stock eight-dust recipe is gone.)"]
 	quest.1C0000000000000F.title: "Glowstone Dust"
-	quest.1C00000000000011.quest_desc: ["Bank 6 Iron Ingots. Every elemental infusion around this starts as plain iron."]
-	quest.1C00000000000011.title: "Six Iron Ingots"
 	quest.1C00000000000012.quest_desc: ["Two pieces in your 2x2: Runewood Planks over an Edelwood Stick, set corner to corner. The staff is how you carve spirit runes into a totem."]
 	quest.1C00000000000012.title: "The Totemic Staff"
 	quest.1C00000000000015.quest_desc: ["The Catalyzer holds a single Core Augment and feeds its effect to the crucible beside it."]
