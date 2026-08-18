@@ -799,7 +799,7 @@
 						value: 2L
 					}
 				]
-			x: -4.5d
+			x: -1.5d
 			y: -4.5d
 		}
 		{
@@ -846,7 +846,7 @@
 					}
 				]
 			x: -1.5d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -867,8 +867,8 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -966,7 +966,7 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -1022,7 +1022,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -1126,7 +1126,10 @@
 				count: 1
 				id: "bertieprogression:twilight_concord"
 			}
-			dependencies: ["2B0000000000002E"]
+			dependencies: [
+				"2B0000000000002E"
+				"2B0000000000002A"
+			]
 			id: "2B0000000000002F"
 			rewards: [{
 				id: "2B0000000200002F"
@@ -1301,7 +1304,7 @@
 				count: 1
 				id: "create:basin"
 			}
-			dependencies: ["2B00000000000035"]
+			dependencies: ["2B00000000000038"]
 			id: "2B00000000000036"
 			rewards: [{
 				id: "2B00000002000036"
@@ -1316,7 +1319,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -1324,7 +1327,7 @@
 				count: 1
 				id: "create:mechanical_press"
 			}
-			dependencies: ["2B00000000000036"]
+			dependencies: ["2B00000000000035"]
 			id: "2B00000000000037"
 			rewards: [{
 				id: "2B00000002000037"
@@ -1339,7 +1342,7 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -1380,7 +1383,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -1388,7 +1391,7 @@
 				count: 1
 				id: "create:mechanical_mixer"
 			}
-			dependencies: ["2B00000000000038"]
+			dependencies: ["2B00000000000036"]
 			id: "2B00000000000039"
 			rewards: [{
 				id: "2B00000002000039"
@@ -1638,7 +1641,6 @@
 			dependencies: [
 				"2B0000000000003B"
 				"2B00000000000042"
-				"2B0000000000002A"
 			]
 			id: "2B00000000000043"
 			rewards: [{
