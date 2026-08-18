@@ -780,7 +780,7 @@
 				count: 1
 				id: "iceandfire:sea_serpent_scales_red"
 			}
-			dependencies: ["2B00000000000023"]
+			dependencies: ["2B00000000000022"]
 			id: "2B00000000000021"
 			rewards: [{
 				id: "2B00000002000021"
@@ -823,40 +823,14 @@
 					}
 				]
 			x: -3.0d
-			y: -7.5d
-		}
-		{
-			icon: {
-				count: 1
-				id: "minecraft:lava_bucket"
-			}
-			dependencies: ["2B00000000000026"]
-			id: "2B00000000000023"
-			rewards: [{
-				id: "2B00000002000023"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "2B00000001000023"
-						item: { count: 1 id: "minecraft:lava_bucket" }
-						type: "item"
-					}
-				]
-			x: -4.5d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "elemental_metals:fire_infused_iron_ingot"
 			}
-			dependencies: [
-				"2B00000000000021"
-				"2B00000000000022"
-			]
+			dependencies: ["2B00000000000021"]
 			id: "2B00000000000024"
 			rewards: [{
 				id: "2B00000002000024"
@@ -872,7 +846,7 @@
 					}
 				]
 			x: -1.5d
-			y: -7.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -893,8 +867,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: -3.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -966,7 +940,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -2334,7 +2308,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: 4.5d
 			y: -9.0d
 		}
 		{

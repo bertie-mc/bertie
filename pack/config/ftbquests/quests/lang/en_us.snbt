@@ -247,8 +247,6 @@
 	quest.2B00000000000021.title: "Sea Serpents"
 	quest.2B00000000000022.quest_desc: ["Bring back 3 Blaze Powder from the Nether."]
 	quest.2B00000000000022.title: "Blaze Powder"
-	quest.2B00000000000023.quest_desc: ["Find me."]
-	quest.2B00000000000023.title: "A Bucket of Lava"
 	quest.2B00000000000024.quest_desc: ["Forge a Fire-Infused Iron Ingot."]
 	quest.2B00000000000024.title: "Fire-Infused Iron"
 	quest.2B00000000000025.quest_desc: ["Mine 4 Runes from Runic Stones."]
