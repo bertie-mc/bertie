@@ -1000,7 +1000,10 @@
 				count: 1
 				id: "slag:melter"
 			}
-			dependencies: ["2B00000000000029"]
+			dependencies: [
+				"2B00000000000029"
+				"2B00000000000037"
+			]
 			id: "2B0000000000002A"
 			rewards: [{
 				id: "2B0000000200002A"
@@ -1480,7 +1483,11 @@
 				count: 1
 				id: "create:spout"
 			}
-			dependencies: ["2B00000000000034"]
+			dependencies: [
+				"2B00000000000034"
+				"2B00000000000037"
+				"2B0000000000002F"
+			]
 			id: "2B0000000000003C"
 			rewards: [{
 				id: "2B0000000200003C"
@@ -1509,7 +1516,10 @@
 				count: 1
 				id: "create:crushing_wheel"
 			}
-			dependencies: ["2B0000000000003C"]
+			dependencies: [
+				"2B0000000000003C"
+				"2B00000000000029"
+			]
 			id: "2B0000000000003D"
 			rewards: [{
 				id: "2B0000000200003D"
@@ -1601,7 +1611,11 @@
 				count: 1
 				id: "create:precision_mechanism"
 			}
-			dependencies: ["2B00000000000040"]
+			dependencies: [
+				"2B00000000000040"
+				"2B0000000000003B"
+				"1C0000000000001C"
+			]
 			id: "2B00000000000041"
 			rewards: [{
 				id: "2B00000002000041"
@@ -1650,6 +1664,7 @@
 			dependencies: [
 				"2B0000000000003B"
 				"2B00000000000042"
+				"2B0000000000002A"
 			]
 			id: "2B00000000000043"
 			rewards: [{
@@ -2003,7 +2018,11 @@
 				count: 1
 				id: "magitech:zardius_crucible"
 			}
-			dependencies: ["2B00000000000036"]
+			dependencies: [
+				"2B00000000000036"
+				"2B00000000000039"
+				"2B00000000000040"
+			]
 			id: "2B00000000000055"
 			rewards: [{
 				id: "2B00000002000055"
@@ -2094,7 +2113,10 @@
 				count: 1
 				id: "malum:spirit_crucible"
 			}
-			dependencies: ["1C00000000000009"]
+			dependencies: [
+				"1C00000000000009"
+				"2B00000000000027"
+			]
 			id: "1C0000000000000A"
 			rewards: [{
 				id: "1C0000000200000A"
