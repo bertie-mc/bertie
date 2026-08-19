@@ -976,7 +976,7 @@
 			}
 			dependencies: [
 				"2B00000000000029"
-				"2B00000000000037"
+				"2B00000000000058"
 			]
 			id: "2B0000000000002A"
 			rewards: [{
@@ -1253,35 +1253,9 @@
 		{
 			icon: {
 				count: 1
-				id: "create:cogwheel"
-			}
-			dependencies: ["2B0000000000001F"]
-			id: "2B00000000000034"
-			rewards: [{
-				id: "2B00000002000034"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "create:cogwheel"
-						}
-						id: "2B00000001000034"
-						title: "Create what?"
-						type: "checkmark"
-					}
-				]
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			icon: {
-				count: 1
 				id: "create:depot"
 			}
-			dependencies: ["2B00000000000034"]
+			dependencies: ["2B0000000000001F"]
 			id: "2B00000000000035"
 			rewards: [{
 				id: "2B00000002000035"
@@ -1296,15 +1270,15 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: 4.5d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:basin"
 			}
-			dependencies: ["2B00000000000034"]
+			dependencies: ["2B0000000000001F"]
 			id: "2B00000000000036"
 			rewards: [{
 				id: "2B00000002000036"
@@ -1319,7 +1293,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: -4.5d
 			y: 4.5d
 		}
 		{
@@ -1327,7 +1301,7 @@
 				count: 1
 				id: "create:mechanical_press"
 			}
-			dependencies: ["2B00000000000034"]
+			dependencies: ["2B0000000000001F"]
 			id: "2B00000000000037"
 			rewards: [{
 				id: "2B00000002000037"
@@ -1342,13 +1316,13 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: 4.5d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			icon: {
 				count: 1
-				id: "create:brass_sheet"
+				id: "create:iron_sheet"
 			}
 			dependencies: ["2B00000000000037"]
 			id: "2B00000000000038"
@@ -1364,26 +1338,8 @@
 						item: { count: 1 id: "create:iron_sheet" }
 						type: "item"
 					}
-					{
-						count: 8L
-						id: "2B00000001010038"
-						item: { count: 1 id: "create:golden_sheet" }
-						type: "item"
-					}
-					{
-						count: 8L
-						id: "2B00000001020038"
-						item: { count: 1 id: "create:copper_sheet" }
-						type: "item"
-					}
-					{
-						count: 8L
-						id: "2B00000001030038"
-						item: { count: 1 id: "create:brass_sheet" }
-						type: "item"
-					}
 				]
-			x: 0.0d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -1391,7 +1347,7 @@
 				count: 1
 				id: "create:mechanical_mixer"
 			}
-			dependencies: ["2B00000000000037"]
+			dependencies: ["2B00000000000038"]
 			id: "2B00000000000039"
 			rewards: [{
 				id: "2B00000002000039"
@@ -1406,15 +1362,15 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: 4.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:encased_fan"
 			}
-			dependencies: ["2B00000000000037"]
+			dependencies: ["2B00000000000038"]
 			id: "2B0000000000003A"
 			rewards: [{
 				id: "2B0000000200003A"
@@ -1429,15 +1385,15 @@
 						type: "item"
 					}
 				]
-			x: 4.5d
-			y: 4.5d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:deployer"
 			}
-			dependencies: ["2B00000000000037"]
+			dependencies: ["2B00000000000059"]
 			id: "2B0000000000003B"
 			rewards: [{
 				id: "2B0000000200003B"
@@ -1452,8 +1408,8 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: 4.5d
+			x: -1.5d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -1461,7 +1417,7 @@
 				id: "create:spout"
 			}
 			dependencies: [
-				"2B00000000000037"
+				"2B00000000000058"
 				"2B0000000000002F"
 			]
 			id: "2B0000000000003C"
@@ -1484,8 +1440,8 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: 7.5d
+			x: -1.5d
+			y: 10.5d
 		}
 		{
 			icon: {
@@ -1507,8 +1463,8 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: 7.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1530,8 +1486,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: 7.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -1539,7 +1495,7 @@
 				id: "create:empty_blaze_burner"
 			}
 			dependencies: [
-				"2B00000000000037"
+				"2B00000000000038"
 				"2B00000000000026"
 			]
 			id: "2B0000000000003F"
@@ -1556,15 +1512,18 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
-			y: 7.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:blaze_burner"
 			}
-			dependencies: ["2B0000000000003F"]
+			dependencies: [
+				"2B0000000000003F"
+				"2B0000000000003E"
+			]
 			id: "2B00000000000040"
 			rewards: [{
 				id: "2B00000002000040"
@@ -1579,8 +1538,8 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: 7.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1605,8 +1564,8 @@
 						type: "item"
 					}
 				]
-			x: 4.5d
-			y: 7.5d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
 			icon: {
@@ -1628,8 +1587,8 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: 7.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -1639,6 +1598,8 @@
 			dependencies: [
 				"2B0000000000003B"
 				"2B0000000000003C"
+				"2B0000000000005A"
+				"2B0000000000002A"
 			]
 			id: "2B00000000000043"
 			rewards: [{
@@ -1660,8 +1621,8 @@
 						type: "item"
 					}
 				]
-			x: 7.5d
-			y: 4.5d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -2011,8 +1972,8 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: 6.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -2332,6 +2293,98 @@
 				]
 			x: -1.5d
 			y: -10.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:golden_sheet"
+			}
+			dependencies: ["2B00000000000037"]
+			id: "2B00000000000057"
+			rewards: [{
+				id: "2B00000002000057"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B00000001000057"
+						item: { count: 1 id: "create:golden_sheet" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:copper_sheet"
+			}
+			dependencies: ["2B00000000000037"]
+			id: "2B00000000000058"
+			rewards: [{
+				id: "2B00000002000058"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B00000001000058"
+						item: { count: 1 id: "create:copper_sheet" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:brass_sheet"
+			}
+			dependencies: ["2B00000000000037"]
+			id: "2B00000000000059"
+			rewards: [{
+				id: "2B00000002000059"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 8L
+						id: "2B00000001000059"
+						item: { count: 1 id: "create:brass_sheet" }
+						type: "item"
+					}
+				]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:mechanical_saw"
+			}
+			dependencies: ["2B00000000000038"]
+			id: "2B0000000000005A"
+			rewards: [{
+				id: "2B0000000200005A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100005A"
+						item: { count: 1 id: "create:mechanical_saw" }
+						type: "item"
+					}
+				]
+			x: -1.5d
+			y: 7.5d
 		}
 	]
 }

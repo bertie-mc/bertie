@@ -993,6 +993,10 @@ write("data/malum/recipe/spirit_altar.json", DISABLED)
 write("data/malum/recipe/soulstone_from_raw_smelting.json", DISABLED)
 write("data/malum/recipe/soulstone_from_raw_blasting.json", DISABLED)
 
+# Mnemonic Fragments: the Weeping Well only trades for Refined Brilliance. The raw-cluster favour
+# handed out two fragments for unrefined ore and skipped the forge entirely.
+write("data/malum/recipe/void_favor/mnemonic_fragment_from_cluster.json", DISABLED)
+
 # Malignant Lead: still the Weeping Well's favour, but paid in lead rather than Cthonic Gold.
 write("data/malum/recipe/void_favor/malignant_lead.json", {
     "type": "malum:void_favor",

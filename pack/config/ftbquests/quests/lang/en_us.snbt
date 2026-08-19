@@ -279,16 +279,14 @@
 	quest.2B00000000000032.title: "The Shield Maiden"
 	quest.2B00000000000033.quest_desc: ["Carry the Shield Maiden up the Lich Tower and break his three shield phases. His trophy is worth duping at the Spirit Altar - one trophy in, two out."]
 	quest.2B00000000000033.title: "The Twilight Lich"
-	quest.2B00000000000034.quest_desc: ["The kinetic road forks: Create's machine line (top row) and the fluid-and-fire line (below)."]
-	quest.2B00000000000034.title: "Create what?"
 	quest.2B00000000000035.quest_desc: ["Craft a Depot (Andesite Alloy around an Andesite Casing)."]
 	quest.2B00000000000035.title: "Depot"
 	quest.2B00000000000036.quest_desc: ["Craft a Basin."]
 	quest.2B00000000000036.title: "Basin"
 	quest.2B00000000000037.quest_desc: ["Craft a Mechanical Press."]
 	quest.2B00000000000037.title: "Mechanical Press"
-	quest.2B00000000000038.quest_desc: ["Press 8 each of Iron, Gold, Copper and Brass Sheets."]
-	quest.2B00000000000038.title: "Pressure Point"
+	quest.2B00000000000038.quest_desc: ["Press 8 Iron Sheets."]
+	quest.2B00000000000038.title: "Iron Sheet"
 	quest.2B00000000000039.quest_desc: ["Craft a Mechanical Mixer."]
 	quest.2B00000000000039.title: "Mechanical Mixer"
 	quest.2B0000000000003A.quest_desc: ["Craft an Encased Fan."]
@@ -343,6 +341,14 @@
 	quest.2B00000000000055.title: "The Zardius Crucible"
 	quest.2B00000000000056.quest_desc: ["Find me."]
 	quest.2B00000000000056.title: "Magma Blocks"
+	quest.2B00000000000057.quest_desc: ["Press 8 Golden Sheets."]
+	quest.2B00000000000057.title: "Golden Sheet"
+	quest.2B00000000000058.quest_desc: ["Press 8 Copper Sheets."]
+	quest.2B00000000000058.title: "Copper Sheet"
+	quest.2B00000000000059.quest_desc: ["Press 8 Brass Sheets."]
+	quest.2B00000000000059.title: "Brass Sheet"
+	quest.2B0000000000005A.quest_desc: ["Craft a Mechanical Saw - an Andesite Casing, a Propeller, a Shaft and an Iron Sheet."]
+	quest.2B0000000000005A.title: "Mechanical Saw"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
