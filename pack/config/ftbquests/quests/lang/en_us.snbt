@@ -357,6 +357,8 @@
 	quest.2B0000000000005D.title: "Wrench"
 	quest.2B0000000000005E.quest_desc: ["Craft a Rotational Speed Controller - set any shaft to the rpm you want."]
 	quest.2B0000000000005E.title: "Rotational Speed Controller"
+	quest.2B0000000000005F.quest_desc: ["Craft a Fluid Tank - Copper Sheets around Glass."]
+	quest.2B0000000000005F.title: "Fluid Tank"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
