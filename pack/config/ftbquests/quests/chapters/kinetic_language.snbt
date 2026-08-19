@@ -1304,7 +1304,7 @@
 				count: 1
 				id: "create:basin"
 			}
-			dependencies: ["2B00000000000038"]
+			dependencies: ["2B00000000000034"]
 			id: "2B00000000000036"
 			rewards: [{
 				id: "2B00000002000036"
@@ -1327,7 +1327,7 @@
 				count: 1
 				id: "create:mechanical_press"
 			}
-			dependencies: ["2B00000000000035"]
+			dependencies: ["2B00000000000034"]
 			id: "2B00000000000037"
 			rewards: [{
 				id: "2B00000002000037"
@@ -1391,7 +1391,7 @@
 				count: 1
 				id: "create:mechanical_mixer"
 			}
-			dependencies: ["2B00000000000036"]
+			dependencies: ["2B00000000000037"]
 			id: "2B00000000000039"
 			rewards: [{
 				id: "2B00000002000039"
@@ -1414,7 +1414,7 @@
 				count: 1
 				id: "create:encased_fan"
 			}
-			dependencies: ["2B00000000000039"]
+			dependencies: ["2B00000000000037"]
 			id: "2B0000000000003A"
 			rewards: [{
 				id: "2B0000000200003A"
@@ -1437,7 +1437,7 @@
 				count: 1
 				id: "create:deployer"
 			}
-			dependencies: ["2B0000000000003A"]
+			dependencies: ["2B00000000000037"]
 			id: "2B0000000000003B"
 			rewards: [{
 				id: "2B0000000200003B"
@@ -1461,7 +1461,6 @@
 				id: "create:spout"
 			}
 			dependencies: [
-				"2B00000000000034"
 				"2B00000000000037"
 				"2B0000000000002F"
 			]
@@ -1493,10 +1492,7 @@
 				count: 1
 				id: "create:crushing_wheel"
 			}
-			dependencies: [
-				"2B0000000000003C"
-				"2B00000000000029"
-			]
+			dependencies: ["2B0000000000002F"]
 			id: "2B0000000000003D"
 			rewards: [{
 				id: "2B0000000200003D"
@@ -1519,7 +1515,7 @@
 				count: 1
 				id: "born_in_chaos_v1:dark_metal_ingot"
 			}
-			dependencies: ["2B0000000000003D"]
+			dependencies: ["2B00000000000028"]
 			id: "2B0000000000003E"
 			rewards: [{
 				id: "2B0000000200003E"
@@ -1542,7 +1538,10 @@
 				count: 1
 				id: "create:empty_blaze_burner"
 			}
-			dependencies: ["2B0000000000003E"]
+			dependencies: [
+				"2B00000000000037"
+				"2B00000000000026"
+			]
 			id: "2B0000000000003F"
 			rewards: [{
 				id: "2B0000000200003F"
@@ -1589,7 +1588,6 @@
 				id: "create:precision_mechanism"
 			}
 			dependencies: [
-				"2B00000000000040"
 				"2B0000000000003B"
 				"1C0000000000001C"
 			]
@@ -1640,7 +1638,7 @@
 			}
 			dependencies: [
 				"2B0000000000003B"
-				"2B00000000000042"
+				"2B0000000000003C"
 			]
 			id: "2B00000000000043"
 			rewards: [{
@@ -2013,7 +2011,7 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
