@@ -349,6 +349,14 @@
 	quest.2B00000000000059.title: "Brass Sheet"
 	quest.2B0000000000005A.quest_desc: ["Craft a Mechanical Saw - an Andesite Casing, a Propeller, a Shaft and an Iron Sheet."]
 	quest.2B0000000000005A.title: "Mechanical Saw"
+	quest.2B0000000000005B.quest_desc: ["Mix over heat: an Ender Pearl, 4 Prismarine Shards and 6 Refined Brilliance."]
+	quest.2B0000000000005B.title: "Weeping Eye"
+	quest.2B0000000000005C.quest_desc: ["Craft a pair of Engineer's Goggles - they read stress and speed off a shaft."]
+	quest.2B0000000000005C.title: "Engineer's Goggles"
+	quest.2B0000000000005D.quest_desc: ["Craft a Wrench. Rotates a placed block, or picks it back up."]
+	quest.2B0000000000005D.title: "Wrench"
+	quest.2B0000000000005E.quest_desc: ["Craft a Rotational Speed Controller - set any shaft to the rpm you want."]
+	quest.2B0000000000005E.title: "Rotational Speed Controller"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]

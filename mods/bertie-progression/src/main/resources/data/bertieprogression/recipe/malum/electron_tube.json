@@ -11,7 +11,15 @@
   ],
   "type": "malum:spirit_infusion",
   "input": {
-    "item": "malum:natural_quartz",
+    "type": "neoforge:compound",
+    "ingredients": [
+      {
+        "item": "malum:natural_quartz"
+      },
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
     "count": 1
   },
   "extraInputs": [
@@ -66,6 +74,6 @@
   ],
   "result": {
     "id": "create:electron_tube",
-    "count": 3
+    "count": 1
   }
 }

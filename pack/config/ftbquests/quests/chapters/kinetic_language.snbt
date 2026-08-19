@@ -1045,7 +1045,7 @@
 						type: "item"
 					}
 				]
-			x: -4.5d
+			x: 9.0d
 			y: 1.5d
 		}
 		{
@@ -1068,7 +1068,7 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -1076,7 +1076,7 @@
 				count: 1
 				id: "malum:mnemonic_fragment"
 			}
-			dependencies: ["2B0000000000002C"]
+			dependencies: ["2B0000000000005B"]
 			id: "2B0000000000002D"
 			rewards: [{
 				id: "2B0000000200002D"
@@ -1091,7 +1091,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -1118,7 +1118,7 @@
 						value: 1L
 					}
 				]
-			x: 0.0d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -1144,7 +1144,7 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
+			x: 16.5d
 			y: 1.5d
 		}
 		{
@@ -1170,7 +1170,7 @@
 						type: "dimension"
 					}
 				]
-			x: 3.0d
+			x: 18.0d
 			y: 1.5d
 		}
 		{
@@ -1197,7 +1197,7 @@
 						value: 1L
 					}
 				]
-			x: 4.5d
+			x: 19.5d
 			y: 1.5d
 		}
 		{
@@ -1220,7 +1220,7 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
+			x: 21.0d
 			y: 1.5d
 		}
 		{
@@ -1247,7 +1247,7 @@
 						value: 1L
 					}
 				]
-			x: 7.5d
+			x: 22.5d
 			y: 1.5d
 		}
 		{
@@ -1293,15 +1293,15 @@
 						type: "item"
 					}
 				]
-			x: -4.5d
-			y: 4.5d
+			x: -6.0d
+			y: 6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "create:mechanical_press"
 			}
-			dependencies: ["2B0000000000001F"]
+			dependencies: ["2B00000000000035"]
 			id: "2B00000000000037"
 			rewards: [{
 				id: "2B00000002000037"
@@ -1317,7 +1317,7 @@
 					}
 				]
 			x: -4.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -1362,7 +1362,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
@@ -1385,8 +1385,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: 7.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1408,8 +1408,8 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: 9.0d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -1441,7 +1441,7 @@
 					}
 				]
 			x: -1.5d
-			y: 10.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1464,7 +1464,7 @@
 					}
 				]
 			x: 1.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1486,8 +1486,8 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: 4.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1512,7 +1512,7 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -1564,8 +1564,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: 10.5d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -1587,8 +1587,8 @@
 						type: "item"
 					}
 				]
-			x: 1.5d
-			y: 9.0d
+			x: 3.5d
+			y: 9.5d
 		}
 		{
 			icon: {
@@ -1599,7 +1599,6 @@
 				"2B0000000000003B"
 				"2B0000000000003C"
 				"2B0000000000005A"
-				"2B0000000000002A"
 			]
 			id: "2B00000000000043"
 			rewards: [{
@@ -1621,8 +1620,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: 9.0d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			icon: {
@@ -1644,7 +1643,7 @@
 						type: "item"
 					}
 				]
-			x: 9.0d
+			x: 24.0d
 			y: 1.5d
 		}
 		{
@@ -1667,7 +1666,7 @@
 						type: "item"
 					}
 				]
-			x: 7.5d
+			x: 22.5d
 			y: -1.5d
 		}
 		{
@@ -1972,8 +1971,8 @@
 						type: "item"
 					}
 				]
-			x: 0.0d
-			y: 4.5d
+			x: -4.5d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -2314,8 +2313,8 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: 3.0d
+			x: -7.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -2338,7 +2337,7 @@
 					}
 				]
 			x: -3.0d
-			y: 7.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -2384,7 +2383,96 @@
 					}
 				]
 			x: -1.5d
-			y: 7.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "bertieprogression:weeping_eye"
+			}
+			dependencies: ["2B0000000000002C"]
+			id: "2B0000000000005B"
+			rewards: [{
+				id: "2B0000000200005B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100005B"
+						item: { count: 1 id: "bertieprogression:weeping_eye" }
+						type: "item"
+					}
+				]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:goggles"
+			}
+			id: "2B0000000000005C"
+			rewards: [{
+				id: "2B0000000200005C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100005C"
+						item: { count: 1 id: "create:goggles" }
+						type: "item"
+					}
+				]
+			x: -10.5d
+			y: 9.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:wrench"
+			}
+			id: "2B0000000000005D"
+			rewards: [{
+				id: "2B0000000200005D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100005D"
+						item: { count: 1 id: "create:wrench" }
+						type: "item"
+					}
+				]
+			x: -9.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "create:rotation_speed_controller"
+			}
+			id: "2B0000000000005E"
+			rewards: [{
+				id: "2B0000000200005E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B0000000100005E"
+						item: { count: 1 id: "create:rotation_speed_controller" }
+						type: "item"
+					}
+				]
+			x: -7.5d
+			y: 9.0d
 		}
 	]
 }

@@ -342,9 +342,15 @@ write(f"{R}/slag/arcane_crystal_dust.json",
 RIT = "data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual"
 
 # R13 Electron Tubes use the Spirit Altar.
-# Same recipe feel: Natural Quartz core + Redstone + Slag-cast Gold/Iron Plates, paid in spirits.
+# Same recipe feel: a quartz core + Redstone + Slag-cast Gold/Iron Plates, paid in spirits.
 r13 = infusion("malum:natural_quartz", 1, [("minecraft:redstone", 2)],
-               [SP("arcane", 2), SP("aerial", 2)], "create:electron_tube", 3)
+               [SP("arcane", 2), SP("aerial", 2)], "create:electron_tube", 1)
+# Either quartz works - Malum's Natural Quartz or the vanilla stone.
+r13["input"] = {
+    "type": "neoforge:compound",
+    "ingredients": [{"item": "malum:natural_quartz"}, {"item": "minecraft:quartz"}],
+    "count": 1,
+}
 # Either route to a plate counts: Slag's carved one, or Create's pressed sheet. neoforge:compound
 # is an any-of over ingredients, which is the only way to say that - the Slag plate is a component
 # match on slag:dynamic_part and so cannot go in a tag beside a plain item.
