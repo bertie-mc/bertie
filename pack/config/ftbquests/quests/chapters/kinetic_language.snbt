@@ -1091,8 +1091,8 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: 1.5d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1118,8 +1118,8 @@
 						value: 1L
 					}
 				]
-			x: 7.5d
-			y: 1.5d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1144,7 +1144,7 @@
 						type: "item"
 					}
 				]
-			x: 9.0d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
@@ -1170,7 +1170,7 @@
 						type: "dimension"
 					}
 				]
-			x: 18.0d
+			x: 10.5d
 			y: 1.5d
 		}
 		{
@@ -1197,7 +1197,7 @@
 						value: 1L
 					}
 				]
-			x: 19.5d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
@@ -1205,7 +1205,10 @@
 				count: 1
 				id: "bertieprogression:shield_maiden"
 			}
-			dependencies: ["2B00000000000031"]
+			dependencies: [
+				"2B00000000000031"
+				"2B00000000000041"
+			]
 			id: "2B00000000000032"
 			rewards: [{
 				id: "2B00000002000032"
@@ -1220,7 +1223,7 @@
 						type: "item"
 					}
 				]
-			x: 21.0d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -1247,7 +1250,7 @@
 						value: 1L
 					}
 				]
-			x: 22.5d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -1440,8 +1443,8 @@
 						type: "item"
 					}
 				]
-			x: 7.5d
-			y: 4.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -1463,8 +1466,8 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
-			y: 3.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			icon: {
@@ -1548,10 +1551,7 @@
 				count: 1
 				id: "create:precision_mechanism"
 			}
-			dependencies: [
-				"2B0000000000003B"
-				"1C0000000000001C"
-			]
+			dependencies: ["1C0000000000001C"]
 			id: "2B00000000000041"
 			rewards: [{
 				id: "2B00000002000041"
@@ -1566,8 +1566,8 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: 3.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1589,8 +1589,8 @@
 						type: "item"
 					}
 				]
-			x: 4.5d
-			y: 3.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -1600,7 +1600,6 @@
 			dependencies: [
 				"2B0000000000003B"
 				"2B0000000000003C"
-				"2B0000000000005A"
 			]
 			id: "2B00000000000043"
 			rewards: [{
@@ -1622,7 +1621,7 @@
 						type: "item"
 					}
 				]
-			x: 6.0d
+			x: 7.5d
 			y: 6.0d
 		}
 		{
@@ -1645,7 +1644,7 @@
 						type: "item"
 					}
 				]
-			x: 24.0d
+			x: 16.5d
 			y: 1.5d
 		}
 		{
@@ -1668,8 +1667,8 @@
 						type: "item"
 					}
 				]
-			x: 22.5d
-			y: -1.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -2269,8 +2268,8 @@
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: -1.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -2406,7 +2405,7 @@
 						type: "item"
 					}
 				]
-			x: 4.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
