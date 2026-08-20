@@ -2203,7 +2203,7 @@
 					}
 				]
 			x: -7.5d
-			y: -10.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -2224,8 +2224,8 @@
 						type: "item"
 					}
 				]
-			x: -3.0d
-			y: -10.5d
+			x: -9.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -2247,7 +2247,7 @@
 					}
 				]
 			x: -6.0d
-			y: -9.0d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -2291,8 +2291,8 @@
 						type: "item"
 					}
 				]
-			x: -1.5d
-			y: -10.5d
+			x: -10.5d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -2500,6 +2500,29 @@
 				]
 			x: 6.0d
 			y: 4.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "mythsandlegends:bound_soul_ingot"
+			}
+			dependencies: ["2B0000000000002A"]
+			id: "2B00000000000060"
+			rewards: [{
+				id: "2B00000002000060"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "2B00000001000060"
+						item: { count: 1 id: "mythsandlegends:bound_soul_ingot" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 }

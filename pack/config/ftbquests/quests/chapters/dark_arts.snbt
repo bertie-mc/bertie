@@ -63,28 +63,6 @@
 		{
 			icon: {
 				count: 1
-				id: "bertieprogression:weeping_eye"
-			}
-			id: "1C00000000000004"
-			rewards: [{
-				id: "1C00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000004"
-						item: { count: 1 id: "bertieprogression:weeping_eye" }
-						type: "item"
-					}
-				]
-			x: -7.5d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "forbidden_arcanus:test_tube"
 			}
 			dependencies: ["1C00000000000003"]
@@ -674,101 +652,6 @@
 				]
 			x: -10.5d
 			y: -8.25d
-		}
-		{
-			icon: {
-				count: 1
-				id: "minecraft:sculk_catalyst"
-			}
-			dependencies: ["1C0000000000000C"]
-			id: "1C00000000000058"
-			rewards: [{
-				id: "1C00000002000058"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:sculk_catalyst"
-						}
-						id: "1C00000001000058"
-						structure: "minecraft:ancient_city"
-						type: "structure"
-					}
-				]
-			x: -7.3d
-			y: -11.25d
-		}
-		{
-			icon: {
-				count: 1
-				id: "minecraft:echo_shard"
-			}
-			dependencies: ["1C00000000000058"]
-			id: "1C00000000000059"
-			rewards: [{
-				id: "1C00000002000059"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000059"
-						item: { count: 1 id: "minecraft:echo_shard" }
-						type: "item"
-					}
-				]
-			x: -8.05d
-			y: -12.55d
-		}
-		{
-			icon: {
-				count: 1
-				id: "avaritia:sculk_crafting_table"
-			}
-			dependencies: ["1C00000000000059", "1C0000000000001D"]
-			id: "1C0000000000005A"
-			rewards: [{
-				id: "1C0000000200005A"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C0000000100005A"
-						item: { count: 1 id: "avaritia:sculk_crafting_table" }
-						type: "item"
-					}
-				]
-			x: -8.8d
-			y: -13.85d
-		}
-		{
-			icon: {
-				count: 1
-				id: "cataclysm:altar_of_amethyst"
-			}
-			dependencies: ["1C0000000000005A"]
-			id: "1C0000000000005B"
-			rewards: [{
-				id: "1C0000000200005B"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C0000000100005B"
-						item: { count: 1 id: "cataclysm:altar_of_amethyst" }
-						type: "item"
-					}
-				]
-			x: -9.55d
-			y: -15.15d
 		}
 	]
 }

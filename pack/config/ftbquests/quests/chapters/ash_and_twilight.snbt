@@ -26,8 +26,8 @@
 						type: "item"
 					}
 				]
-			x: -26.64d
-			y: -6.77d
+			x: -18.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -49,8 +49,8 @@
 						type: "item"
 					}
 				]
-			x: -22.4d
-			y: -8.69d
+			x: -16.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -72,8 +72,8 @@
 						type: "item"
 					}
 				]
-			x: -18.1d
-			y: -8.89d
+			x: -15.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -95,8 +95,8 @@
 						type: "item"
 					}
 				]
-			x: -14.36d
-			y: -7.6d
+			x: -13.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -118,8 +118,8 @@
 						type: "item"
 					}
 				]
-			x: -10.18d
-			y: -2.3d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -145,8 +145,8 @@
 						value: 1L
 					}
 				]
-			x: -12.41d
-			y: 4.7d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -168,8 +168,8 @@
 						type: "item"
 					}
 				]
-			x: -14.23d
-			y: 5.4d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -193,8 +193,8 @@
 						type: "structure"
 					}
 				]
-			x: -12.45d
-			y: 9.07d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -220,8 +220,8 @@
 						value: 1L
 					}
 				]
-			x: -19.45d
-			y: 6.84d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -243,8 +243,8 @@
 						type: "item"
 					}
 				]
-			x: -20.15d
-			y: 5.02d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -269,8 +269,8 @@
 						value: 1L
 					}
 				]
-			x: -21.55d
-			y: -4.57d
+			x: -10.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -296,8 +296,8 @@
 						value: 1L
 					}
 				]
-			x: -18.63d
-			y: -4.76d
+			x: -9.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -323,8 +323,8 @@
 						value: 1L
 					}
 				]
-			x: -14.55d
-			y: -2.34d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -346,8 +346,8 @@
 						type: "item"
 					}
 				]
-			x: -13.85d
-			y: -0.52d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -369,8 +369,8 @@
 						type: "item"
 					}
 				]
-			x: -19.77d
-			y: -0.9d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -396,8 +396,8 @@
 						value: 1L
 					}
 				]
-			x: -15.37d
-			y: 9.26d
+			x: -9.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -422,8 +422,8 @@
 						value: 1L
 					}
 				]
-			x: -23.14d
-			y: 1.44d
+			x: -7.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -449,8 +449,8 @@
 						value: 1L
 					}
 				]
-			x: -21.59d
-			y: -0.2d
+			x: -6.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -502,8 +502,8 @@
 						type: "item"
 					}
 				]
-			x: -11.64d
-			y: -5.23d
+			x: -12.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -529,8 +529,8 @@
 						value: 1L
 					}
 				]
-			x: -9.99d
-			y: 0.62d
+			x: -9.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -552,8 +552,8 @@
 						type: "item"
 					}
 				]
-			x: -17.81d
-			y: 8.39d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -575,8 +575,8 @@
 						type: "item"
 					}
 				]
-			x: -10.86d
-			y: 3.06d
+			x: -7.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -598,8 +598,8 @@
 						type: "item"
 					}
 				]
-			x: -16.19d
-			y: -3.89d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -621,8 +621,8 @@
 						type: "item"
 					}
 				]
-			x: -15.88d
-			y: 5.24d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -650,8 +650,8 @@
 						type: "item"
 					}
 				]
-			x: -19.99d
-			y: 3.37d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -679,8 +679,8 @@
 						type: "item"
 					}
 				]
-			x: -14.01d
-			y: 1.13d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -708,8 +708,8 @@
 						type: "item"
 					}
 				]
-			x: -18.12d
-			y: -0.74d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -731,8 +731,8 @@
 						type: "item"
 					}
 				]
-			x: -17.0d
-			y: 4.46d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -754,8 +754,8 @@
 						type: "item"
 					}
 				]
-			x: -19.21d
-			y: 2.25d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -777,8 +777,8 @@
 						type: "item"
 					}
 				]
-			x: -14.79d
-			y: 2.25d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -800,8 +800,8 @@
 						type: "item"
 					}
 				]
-			x: -17.0d
-			y: 0.04d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -833,8 +833,8 @@
 						type: "observation"
 					}
 				]
-			x: -17.0d
-			y: 2.25d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -860,8 +860,8 @@
 						value: 1L
 					}
 				]
-			x: -17.81d
-			y: 5.78d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -887,8 +887,8 @@
 						type: "item"
 					}
 				]
-			x: -14.98d
-			y: 7.18d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -910,8 +910,8 @@
 						type: "item"
 					}
 				]
-			x: -17.01d
-			y: 6.49d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -933,8 +933,8 @@
 						type: "item"
 					}
 				]
-			x: -16.04d
-			y: 6.95d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -956,8 +956,8 @@
 						type: "item"
 					}
 				]
-			x: -11.86d
-			y: 6.52d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -979,8 +979,8 @@
 						type: "item"
 					}
 				]
-			x: -10.88d
-			y: 6.05d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1002,8 +1002,8 @@
 						type: "item"
 					}
 				]
-			x: -8.95d
-			y: 3.85d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1025,8 +1025,8 @@
 						type: "item"
 					}
 				]
-			x: -13.9d
-			y: 7.19d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1048,8 +1048,8 @@
 						type: "item"
 					}
 				]
-			x: -12.86d
-			y: 6.94d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1074,8 +1074,8 @@
 						type: "structure"
 					}
 				]
-			x: -18.56d
-			y: 3.81d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1097,8 +1097,8 @@
 						type: "item"
 					}
 				]
-			x: -18.36d
-			y: 4.88d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1125,8 +1125,101 @@
 						type: "observation"
 					}
 				]
-			x: -7.02d
-			y: 1.65d
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:sculk_catalyst"
+			}
+			dependencies: ["1C0000000000000C"]
+			id: "1C00000000000058"
+			rewards: [{
+				id: "1C00000002000058"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:sculk_catalyst"
+						}
+						id: "1C00000001000058"
+						structure: "minecraft:ancient_city"
+						type: "structure"
+					}
+				]
+			x: -18.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			dependencies: ["1C00000000000058"]
+			id: "1C00000000000059"
+			rewards: [{
+				id: "1C00000002000059"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C00000001000059"
+						item: { count: 1 id: "minecraft:echo_shard" }
+						type: "item"
+					}
+				]
+			x: -16.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "avaritia:sculk_crafting_table"
+			}
+			id: "1C0000000000005A"
+			rewards: [{
+				id: "1C0000000200005A"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100005A"
+						item: { count: 1 id: "avaritia:sculk_crafting_table" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "cataclysm:altar_of_amethyst"
+			}
+			id: "1C0000000000005B"
+			rewards: [{
+				id: "1C0000000200005B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1C0000000100005B"
+						item: { count: 1 id: "cataclysm:altar_of_amethyst" }
+						type: "item"
+					}
+				]
+			x: -10.5d
+			y: 7.5d
 		}
 	]
 }

@@ -93,8 +93,6 @@
 	quest.1C00000000000002.title: "Get Souls"
 	quest.1C00000000000003.quest_desc: ["Aureal comes bottled, and the Forge fills the bottle for nothing: a ritual on a plain Water Bottle with 4 Arcane Crystal Dust, 2 Rotten Flesh and 2 of any meat - no essence cost, because you cannot spend Aureal you do not have yet. Arcane Crystal Obelisks set into the forge multiblock also generate it passively, forever."]
 	quest.1C00000000000003.title: "Get Aureal"
-	quest.1C00000000000004.quest_desc: ["Mix it hot in a Basin: one Ender Pearl, 4 Prismarine Shards and 6 Refined Brilliance. Right-click to loose it - like an Eye of Ender, but it seeks the Weeping Well."]
-	quest.1C00000000000004.title: "The Weeping Eye"
 	quest.1C00000000000005.quest_desc: ["A Glass Bottle and a Rune make an empty Test Tube - and Glass Bottles now come two-glass at a time off the Brick Forge. Filling it is the trick: hold the empty tube in your OFFHAND and hit living mobs with your main hand. The tube becomes a blood tube and drinks blood equal to the damage you deal, up to 3000."]
 	quest.1C00000000000005.title: "A Test Tube of Blood"
 	quest.1C00000000000006.quest_desc: ["Sadly Expenite ore doesn't exist, so Common Ink will have to do - the Forge drinks it wherever raw experience is called for."]
@@ -359,6 +357,8 @@
 	quest.2B0000000000005E.title: "Rotational Speed Controller"
 	quest.2B0000000000005F.quest_desc: ["Craft a Fluid Tank - Copper Sheets around Glass."]
 	quest.2B0000000000005F.title: "Fluid Tank"
+	quest.2B00000000000060.quest_desc: ["You will need a lot of them. It's a good idea to start production sooner."]
+	quest.2B00000000000060.title: "Bound Soul Ingot"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
