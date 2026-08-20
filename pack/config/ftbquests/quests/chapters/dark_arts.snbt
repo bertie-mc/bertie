@@ -109,28 +109,6 @@
 		{
 			icon: {
 				count: 1
-				id: "malum:spirit_altar"
-			}
-			id: "1C00000000000007"
-			rewards: [{
-				id: "1C00000002000007"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000007"
-						item: { count: 1 id: "malum:spirit_altar" }
-						type: "item"
-					}
-				]
-			x: 0d
-			y: 0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "malum:caustic_catalyst"
 			}
 			id: "1C0000000000001E"
@@ -452,6 +430,7 @@
 				count: 1
 				id: "malum:totemic_staff"
 			}
+			dependencies: ["2B00000000000011"]
 			id: "1C00000000000012"
 			rewards: [{
 				id: "1C00000002000012"

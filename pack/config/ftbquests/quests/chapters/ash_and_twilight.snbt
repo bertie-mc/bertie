@@ -12,6 +12,7 @@
 				count: 1
 				id: "deepwaters:endlesscaves"
 			}
+			dependencies: ["1C0000000000005A"]
 			id: "3B0000000000000B"
 			rewards: [{
 				id: "3B0000000200000B"
@@ -27,7 +28,7 @@
 					}
 				]
 			x: -18.0d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -50,7 +51,7 @@
 					}
 				]
 			x: -16.5d
-			y: 4.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -73,7 +74,7 @@
 					}
 				]
 			x: -15.0d
-			y: 4.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -96,7 +97,7 @@
 					}
 				]
 			x: -13.5d
-			y: 4.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -119,7 +120,7 @@
 					}
 				]
 			x: -10.5d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -146,7 +147,7 @@
 					}
 				]
 			x: -6.0d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -169,7 +170,7 @@
 					}
 				]
 			x: -4.5d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -194,7 +195,7 @@
 					}
 				]
 			x: -10.5d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -221,7 +222,7 @@
 					}
 				]
 			x: -6.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -244,7 +245,7 @@
 					}
 				]
 			x: -4.5d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -270,7 +271,7 @@
 					}
 				]
 			x: -10.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -297,7 +298,7 @@
 					}
 				]
 			x: -9.0d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -324,7 +325,7 @@
 					}
 				]
 			x: -6.0d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -347,7 +348,7 @@
 					}
 				]
 			x: -4.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -370,7 +371,7 @@
 					}
 				]
 			x: -4.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -397,7 +398,7 @@
 					}
 				]
 			x: -9.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -423,7 +424,7 @@
 					}
 				]
 			x: -7.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -450,14 +451,17 @@
 					}
 				]
 			x: -6.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "minecraft:conduit"
 			}
-			dependencies: ["3B0000000000000E"]
+			dependencies: [
+				"3B0000000000000E"
+				"3B00000000000050"
+			]
 			id: "3B0000000000001D"
 			rewards: [{
 				id: "3B0000000200001D"
@@ -503,7 +507,7 @@
 					}
 				]
 			x: -12.0d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -530,7 +534,7 @@
 					}
 				]
 			x: -9.0d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -553,7 +557,7 @@
 					}
 				]
 			x: -7.5d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -576,7 +580,7 @@
 					}
 				]
 			x: -7.5d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -599,7 +603,7 @@
 					}
 				]
 			x: -7.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -622,7 +626,7 @@
 					}
 				]
 			x: -3.0d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -651,7 +655,7 @@
 					}
 				]
 			x: -3.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -680,7 +684,7 @@
 					}
 				]
 			x: -3.0d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -709,7 +713,7 @@
 					}
 				]
 			x: -3.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -732,7 +736,7 @@
 					}
 				]
 			x: -1.5d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -755,7 +759,7 @@
 					}
 				]
 			x: -1.5d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -778,7 +782,7 @@
 					}
 				]
 			x: -1.5d
-			y: 1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -801,7 +805,7 @@
 					}
 				]
 			x: -1.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -1133,7 +1137,6 @@
 				count: 1
 				id: "minecraft:sculk_catalyst"
 			}
-			dependencies: ["1C0000000000000C"]
 			id: "1C00000000000058"
 			rewards: [{
 				id: "1C00000002000058"
@@ -1151,8 +1154,8 @@
 						type: "structure"
 					}
 				]
-			x: -18.0d
-			y: 7.5d
+			x: -22.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1174,14 +1177,18 @@
 						type: "item"
 					}
 				]
-			x: -16.5d
-			y: 7.5d
+			x: -21.0d
+			y: -3.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "avaritia:sculk_crafting_table"
 			}
+			dependencies: [
+				"3B0000000000004C"
+				"3B0000000000004D"
+			]
 			id: "1C0000000000005A"
 			rewards: [{
 				id: "1C0000000200005A"
@@ -1196,8 +1203,8 @@
 						type: "item"
 					}
 				]
-			x: -13.5d
-			y: 7.5d
+			x: -19.5d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -1218,8 +1225,126 @@
 						type: "item"
 					}
 				]
-			x: -10.5d
-			y: 7.5d
+			x: -22.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "irons_spellbooks:ancient_knowledge_fragment"
+			}
+			dependencies: ["1C00000000000058"]
+			id: "3B0000000000004C"
+			rewards: [{
+				id: "3B0000000200004C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 2L
+						id: "3B0000000100004C"
+						item: { count: 1 id: "irons_spellbooks:ancient_knowledge_fragment" }
+						type: "item"
+					}
+				]
+			x: -21.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:sculk_shrieker"
+			}
+			dependencies: ["1C00000000000058"]
+			id: "3B0000000000004D"
+			rewards: [{
+				id: "3B0000000200004D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100004D"
+						item: { count: 1 id: "minecraft:sculk_shrieker" }
+						type: "item"
+					}
+				]
+			x: -21.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:map"
+			}
+			dependencies: ["3B0000000000000B"]
+			id: "3B0000000000004E"
+			rewards: [{
+				id: "3B0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						icon: {
+							count: 1
+							id: "minecraft:map"
+						}
+						id: "3B0000000100004E"
+						structure: "minecraft:shipwreck"
+						type: "structure"
+					}
+				]
+			x: -16.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:heart_of_the_sea"
+			}
+			dependencies: ["3B0000000000004E"]
+			id: "3B0000000000004F"
+			rewards: [{
+				id: "3B0000000200004F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B0000000100004F"
+						item: { count: 1 id: "minecraft:heart_of_the_sea" }
+						type: "item"
+					}
+				]
+			x: -15.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:conduit"
+			}
+			dependencies: ["3B0000000000004F"]
+			id: "3B00000000000050"
+			rewards: [{
+				id: "3B00000002000050"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "3B00000001000050"
+						item: { count: 1 id: "minecraft:conduit" }
+						type: "item"
+					}
+				]
+			x: -13.5d
+			y: 1.5d
 		}
 	]
 }

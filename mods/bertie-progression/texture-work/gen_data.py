@@ -1377,6 +1377,19 @@ write(f"{R}/create/colossal_iron_compacting.json",
 #     4 mundabitur dust and a bucket of lava. The declared result is the crucible, but
 #     CrucibleTransmutation intercepts the craft and turns the BASIN into one, dropping the mixer.
 #     Magitech's own bench recipe stays; this is the second route. ---
+# Deep Waters Key on the Sculk Crafting Table (Avaritia tier 1, a 3x3): a Nautilus Shell core,
+# Deep Alloy corners, Sea Serpent Fangs either side, Mermaid's Gems above and below.
+write(f"{R}/avaritia/deep_waters_key.json",
+      {"neoforge:conditions": conds("avaritia", "slag", "pastel", "iceandfire", "deepwaters"),
+       "type": "avaritia:shaped_table",
+       "tier": 1,
+       "key": {"D": {"item": "slag:deep_alloy"},
+               "M": {"item": "pastel:mermaids_gem"},
+               "F": {"item": "iceandfire:sea_serpent_fang"},
+               "N": {"item": "minecraft:nautilus_shell"}},
+       "pattern": ["DMD", "FNF", "DMD"],
+       "result": {"count": 1, "id": "deepwaters:endlesscaves"}})
+
 write(f"{R}/create/zardius_crucible_mixing.json",
       {"neoforge:conditions": conds("create", "magitech", "malum", "forbidden_arcanus"),
        "type": "create:mixing",
