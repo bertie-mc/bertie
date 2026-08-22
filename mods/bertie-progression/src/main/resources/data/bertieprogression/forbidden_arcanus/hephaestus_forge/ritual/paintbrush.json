@@ -23,6 +23,12 @@
       "ingredient": {
         "item": "pastel:topaz_shard"
       }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:brush"
+      }
     }
   ],
   "magic_circle": "forbidden_arcanus:create_item",

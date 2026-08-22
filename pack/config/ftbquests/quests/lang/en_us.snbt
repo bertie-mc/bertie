@@ -5,8 +5,8 @@
 	chapter.3B00000000000000.title: "Ash and Twilight"
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.5B00000000000000.title: "Concordance"
+	chapter.6B00000000000000.title: "The Nether"
 	chapter.7B00000000000000.title: "God of War"
-	chapter.8B00000000000000.title: "Cinder and Bone"
 	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
 	quest.1B00000000000001.title: "Get wood"
 	quest.1B00000000000002.quest_desc: ["Craft a Small Wooden Slate from 4 planks in your 2x2 grid, then hold it and carve a tool head. There is no crafting table yet - shape comes before the grid."]
@@ -495,6 +495,44 @@
 	quest.5B00000000000010.title: "Cryptic Eye"
 	quest.5B00000000000011.quest_desc: ["Find the Evil Eye."]
 	quest.5B00000000000011.title: "Evil Eye"
+	quest.6B00000000000001.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
+	quest.6B00000000000001.title: "Enter the Nether"
+	quest.6B00000000000002.quest_desc: ["Loot the Eye of Monstrous and let it point you at the Ruined Citadel."]
+	quest.6B00000000000002.title: "Eye of Monstrous"
+	quest.6B00000000000003.quest_desc: ["Wake the thing sleeping in the Citadel and put it back down."]
+	quest.6B00000000000003.title: "The Netherite Monstrosity"
+	quest.6B00000000000004.quest_desc: ["The Eye of Flame reads the Nether for the Burning Arena."]
+	quest.6B00000000000004.title: "Eye of Flame"
+	quest.6B00000000000005.quest_desc: ["Ignis does not turn up on his own - the Ashes are the summons."]
+	quest.6B00000000000005.title: "Burning Ashes"
+	quest.6B00000000000006.quest_desc: ["Burn the Ashes in the Arena and kill what walks out. Ignited Berserkers start appearing in the fortresses afterwards."]
+	quest.6B00000000000006.title: "Ignis"
+	quest.6B00000000000007.quest_desc: ["Find the Underworld Arena. The door stays shut for now."]
+	quest.6B00000000000007.title: "The Underworld Arena"
+	quest.6B00000000000008.quest_desc: ["The Arena Door only opens for its own key."]
+	quest.6B00000000000008.title: "Underworld Arena Key"
+	quest.6B00000000000009.quest_desc: ["Open the door, and finish what is behind it."]
+	quest.6B00000000000009.title: "Helvar, the Underworld Knight"
+	quest.6B0000000000000A.quest_desc: ["Any of the three starter Pigment Pedestals - Topaz, Amethyst or Citrine. The Onyx and Moonstone upgrades do not count."]
+	quest.6B0000000000000A.title: "A Pigment Pedestal"
+	quest.6B0000000000000B.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
+	quest.6B0000000000000B.title: "The Paintbrush"
+	quest.6B0000000000000C.quest_desc: ["Get inside a Nether Fortress."]
+	quest.6B0000000000000C.title: "Into the Fortress"
+	quest.6B0000000000000D.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
+	quest.6B0000000000000D.title: "Three Wither Skulls"
+	quest.6B0000000000000E.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
+	quest.6B0000000000000E.title: "The Wither"
+	quest.6B0000000000000F.quest_desc: ["What the Wither leaves behind."]
+	quest.6B0000000000000F.title: "The Nether Star"
+	quest.6B00000000000010.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
+	quest.6B00000000000010.title: "Eye of Mech"
+	quest.6B00000000000011.quest_desc: ["Follow the eye and get inside."]
+	quest.6B00000000000011.title: "The Ancient Factory"
+	quest.6B00000000000012.quest_desc: ["The last thing in the factory. It drops Witherite."]
+	quest.6B00000000000012.title: "The Harbinger"
+	quest.6B00000000000013.quest_desc: ["Thirty-two each of Amethyst, Topaz and Citrine Shards. The pedestal runs on them."]
+	quest.6B00000000000013.title: "Three Kinds of Shard"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
@@ -1733,40 +1771,4 @@
 	quest.7B0000000000026B.title: "Steeleaf Sword"
 	quest.7B0000000000026C.quest_desc: ["Fires three arrows at once in a spread."]
 	quest.7B0000000000026C.title: "Triple Bow"
-	quest.8B00000000000001.quest_desc: ["Light the frame and step through. The Netherly Meal is what lets you survive the other side."]
-	quest.8B00000000000001.title: "Enter the Nether"
-	quest.8B00000000000002.quest_desc: ["Loot the Eye of Monstrous and let it point you at the Ruined Citadel."]
-	quest.8B00000000000002.title: "Eye of Monstrous"
-	quest.8B00000000000003.quest_desc: ["Wake the thing sleeping in the Citadel and put it back down."]
-	quest.8B00000000000003.title: "The Netherite Monstrosity"
-	quest.8B00000000000004.quest_desc: ["The Eye of Flame reads the Nether for the Burning Arena."]
-	quest.8B00000000000004.title: "Eye of Flame"
-	quest.8B00000000000005.quest_desc: ["Ignis does not turn up on his own - the Ashes are the summons."]
-	quest.8B00000000000005.title: "Burning Ashes"
-	quest.8B00000000000006.quest_desc: ["Burn the Ashes in the Arena and kill what walks out. Ignited Berserkers start appearing in the fortresses afterwards."]
-	quest.8B00000000000006.title: "Ignis"
-	quest.8B00000000000007.quest_desc: ["Find the Underworld Arena. The door stays shut for now."]
-	quest.8B00000000000007.title: "The Underworld Arena"
-	quest.8B00000000000008.quest_desc: ["The Arena Door only opens for its own key."]
-	quest.8B00000000000008.title: "Underworld Arena Key"
-	quest.8B00000000000009.quest_desc: ["Open the door, and finish what is behind it."]
-	quest.8B00000000000009.title: "Helvar, the Underworld Knight"
-	quest.8B0000000000000A.quest_desc: ["Any of the three starter Pigment Pedestals - Topaz, Amethyst or Citrine. The Onyx and Moonstone upgrades do not count."]
-	quest.8B0000000000000A.title: "A Pigment Pedestal"
-	quest.8B0000000000000B.quest_desc: ["A Tier-I ritual on the Totemic Staff with two each of Amethyst, Citrine and Topaz Shards, for 500 Ink. Nothing in the Pedestal runs without it."]
-	quest.8B0000000000000B.title: "The Paintbrush"
-	quest.8B0000000000000C.quest_desc: ["Get inside a Nether Fortress."]
-	quest.8B0000000000000C.title: "Into the Fortress"
-	quest.8B0000000000000D.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
-	quest.8B0000000000000D.title: "Three Wither Skulls"
-	quest.8B0000000000000E.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
-	quest.8B0000000000000E.title: "The Wither"
-	quest.8B0000000000000F.quest_desc: ["What the Wither leaves behind."]
-	quest.8B0000000000000F.title: "The Nether Star"
-	quest.8B00000000000010.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
-	quest.8B00000000000010.title: "Eye of Mech"
-	quest.8B00000000000011.quest_desc: ["Follow the eye and get inside."]
-	quest.8B00000000000011.title: "The Ancient Factory"
-	quest.8B00000000000012.quest_desc: ["The last thing in the factory. It drops Witherite."]
-	quest.8B00000000000012.title: "The Harbinger"
 }

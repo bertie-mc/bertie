@@ -7,7 +7,7 @@
 		count: 1
 		id: "minecraft:wither_skeleton_skull"
 	}
-	id: "8B00000000000000"
+	id: "6B00000000000000"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -17,9 +17,9 @@
 				id: "minecraft:netherrack"
 			}
 			dependencies: ["3B0000000000004B"]
-			id: "8B00000000000001"
+			id: "6B00000000000001"
 			rewards: [{
-				id: "8B00000002000001"
+				id: "6B00000002000001"
 				type: "xp"
 				xp: 25
 			}]
@@ -29,7 +29,7 @@
 							count: 1
 							id: "minecraft:netherrack"
 						}
-						id: "8B00000001000001"
+						id: "6B00000001000001"
 						dimension: "minecraft:the_nether"
 						type: "dimension"
 					}
@@ -42,17 +42,17 @@
 				count: 1
 				id: "cataclysm:monstrous_eye"
 			}
-			dependencies: ["8B00000000000001"]
-			id: "8B00000000000002"
+			dependencies: ["6B00000000000001"]
+			id: "6B00000000000002"
 			rewards: [{
-				id: "8B00000002000002"
+				id: "6B00000002000002"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B00000001000002"
+						id: "6B00000001000002"
 						item: { count: 1 id: "cataclysm:monstrous_eye" }
 						type: "item"
 					}
@@ -65,10 +65,10 @@
 				count: 1
 				id: "cataclysm:monstrous_horn"
 			}
-			dependencies: ["8B00000000000002"]
-			id: "8B00000000000003"
+			dependencies: ["6B00000000000002"]
+			id: "6B00000000000003"
 			rewards: [{
-				id: "8B00000002000003"
+				id: "6B00000002000003"
 				type: "xp"
 				xp: 25
 			}]
@@ -78,7 +78,7 @@
 							count: 1
 							id: "cataclysm:monstrous_horn"
 						}
-						id: "8B00000001000003"
+						id: "6B00000001000003"
 						entity: "cataclysm:netherite_monstrosity"
 						type: "kill"
 						value: 1L
@@ -92,17 +92,16 @@
 				count: 1
 				id: "cataclysm:flame_eye"
 			}
-			dependencies: ["8B00000000000003"]
-			id: "8B00000000000004"
+			id: "6B00000000000004"
 			rewards: [{
-				id: "8B00000002000004"
+				id: "6B00000002000004"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B00000001000004"
+						id: "6B00000001000004"
 						item: { count: 1 id: "cataclysm:flame_eye" }
 						type: "item"
 					}
@@ -115,17 +114,17 @@
 				count: 1
 				id: "cataclysm:burning_ashes"
 			}
-			dependencies: ["8B00000000000004"]
-			id: "8B00000000000005"
+			dependencies: ["6B00000000000004"]
+			id: "6B00000000000005"
 			rewards: [{
-				id: "8B00000002000005"
+				id: "6B00000002000005"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B00000001000005"
+						id: "6B00000001000005"
 						item: { count: 1 id: "cataclysm:burning_ashes" }
 						type: "item"
 					}
@@ -138,10 +137,10 @@
 				count: 1
 				id: "cataclysm:ignitium_ingot"
 			}
-			dependencies: ["8B00000000000005"]
-			id: "8B00000000000006"
+			dependencies: ["6B00000000000005"]
+			id: "6B00000000000006"
 			rewards: [{
-				id: "8B00000002000006"
+				id: "6B00000002000006"
 				type: "xp"
 				xp: 25
 			}]
@@ -151,7 +150,7 @@
 							count: 1
 							id: "cataclysm:ignitium_ingot"
 						}
-						id: "8B00000001000006"
+						id: "6B00000001000006"
 						entity: "cataclysm:ignis"
 						type: "kill"
 						value: 1L
@@ -165,10 +164,10 @@
 				count: 1
 				id: "block_factorys_bosses:underworld_arena_door"
 			}
-			dependencies: ["8B00000000000001"]
-			id: "8B00000000000007"
+			dependencies: ["6B00000000000001"]
+			id: "6B00000000000007"
 			rewards: [{
-				id: "8B00000002000007"
+				id: "6B00000002000007"
 				type: "xp"
 				xp: 25
 			}]
@@ -178,7 +177,7 @@
 							count: 1
 							id: "block_factorys_bosses:underworld_arena_door"
 						}
-						id: "8B00000001000007"
+						id: "6B00000001000007"
 						structure: "block_factorys_bosses:underworld_arena"
 						type: "structure"
 					}
@@ -191,17 +190,17 @@
 				count: 1
 				id: "block_factorys_bosses:underworld_arena_key"
 			}
-			dependencies: ["8B00000000000007"]
-			id: "8B00000000000008"
+			dependencies: ["6B00000000000007"]
+			id: "6B00000000000008"
 			rewards: [{
-				id: "8B00000002000008"
+				id: "6B00000002000008"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B00000001000008"
+						id: "6B00000001000008"
 						item: { count: 1 id: "block_factorys_bosses:underworld_arena_key" }
 						type: "item"
 					}
@@ -214,10 +213,10 @@
 				count: 1
 				id: "block_factorys_bosses:knight_sword"
 			}
-			dependencies: ["8B00000000000008"]
-			id: "8B00000000000009"
+			dependencies: ["6B00000000000008"]
+			id: "6B00000000000009"
 			rewards: [{
-				id: "8B00000002000009"
+				id: "6B00000002000009"
 				type: "xp"
 				xp: 25
 			}]
@@ -227,7 +226,7 @@
 							count: 1
 							id: "block_factorys_bosses:knight_sword"
 						}
-						id: "8B00000001000009"
+						id: "6B00000001000009"
 						entity: "block_factorys_bosses:underworld_knight"
 						type: "kill"
 						value: 1L
@@ -241,10 +240,10 @@
 				count: 1
 				id: "pastel:pedestal_basic_topaz"
 			}
-			dependencies: ["8B00000000000001"]
-			id: "8B0000000000000A"
+			dependencies: ["6B00000000000013"]
+			id: "6B0000000000000A"
 			rewards: [{
-				id: "8B0000000200000A"
+				id: "6B0000000200000A"
 				type: "xp"
 				xp: 25
 			}]
@@ -255,46 +254,46 @@
 							count: 1
 							id: "pastel:pedestal_basic_topaz"
 						}
-						id: "8B0000000100000A"
+						id: "6B0000000100000A"
 						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertieprogression:basic_pigment_pedestals)', "minecraft:custom_name": '{"text":"Pigment Pedestal","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
 						type: "item"
 					}
 				]
-			x: 1.5d
-			y: 1.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "pastel:paintbrush"
 			}
-			dependencies: ["8B0000000000000A"]
-			id: "8B0000000000000B"
+			dependencies: ["6B0000000000000A"]
+			id: "6B0000000000000B"
 			rewards: [{
-				id: "8B0000000200000B"
+				id: "6B0000000200000B"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B0000000100000B"
+						id: "6B0000000100000B"
 						item: { count: 1 id: "pastel:paintbrush" }
 						type: "item"
 					}
 				]
-			x: 3.0d
-			y: 1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			icon: {
 				count: 1
 				id: "minecraft:nether_bricks"
 			}
-			dependencies: ["8B00000000000001"]
-			id: "8B0000000000000C"
+			dependencies: ["6B00000000000001"]
+			id: "6B0000000000000C"
 			rewards: [{
-				id: "8B0000000200000C"
+				id: "6B0000000200000C"
 				type: "xp"
 				xp: 25
 			}]
@@ -304,7 +303,7 @@
 							count: 1
 							id: "minecraft:nether_bricks"
 						}
-						id: "8B0000000100000C"
+						id: "6B0000000100000C"
 						structure: "#bertieprogression:nether_fortress"
 						type: "structure"
 					}
@@ -317,17 +316,16 @@
 				count: 1
 				id: "minecraft:wither_skeleton_skull"
 			}
-			dependencies: ["8B0000000000000C"]
-			id: "8B0000000000000D"
+			id: "6B0000000000000D"
 			rewards: [{
-				id: "8B0000000200000D"
+				id: "6B0000000200000D"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 3L
-						id: "8B0000000100000D"
+						id: "6B0000000100000D"
 						item: { count: 1 id: "minecraft:wither_skeleton_skull" }
 						type: "item"
 					}
@@ -340,10 +338,10 @@
 				count: 1
 				id: "minecraft:wither_rose"
 			}
-			dependencies: ["8B0000000000000D"]
-			id: "8B0000000000000E"
+			dependencies: ["6B0000000000000D"]
+			id: "6B0000000000000E"
 			rewards: [{
-				id: "8B0000000200000E"
+				id: "6B0000000200000E"
 				type: "xp"
 				xp: 25
 			}]
@@ -353,7 +351,7 @@
 							count: 1
 							id: "minecraft:wither_rose"
 						}
-						id: "8B0000000100000E"
+						id: "6B0000000100000E"
 						entity: "minecraft:wither"
 						type: "kill"
 						value: 1L
@@ -367,17 +365,17 @@
 				count: 1
 				id: "minecraft:nether_star"
 			}
-			dependencies: ["8B0000000000000E"]
-			id: "8B0000000000000F"
+			dependencies: ["6B0000000000000E"]
+			id: "6B0000000000000F"
 			rewards: [{
-				id: "8B0000000200000F"
+				id: "6B0000000200000F"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B0000000100000F"
+						id: "6B0000000100000F"
 						item: { count: 1 id: "minecraft:nether_star" }
 						type: "item"
 					}
@@ -390,17 +388,16 @@
 				count: 1
 				id: "cataclysm:mech_eye"
 			}
-			dependencies: ["8B0000000000000F"]
-			id: "8B00000000000010"
+			id: "6B00000000000010"
 			rewards: [{
-				id: "8B00000002000010"
+				id: "6B00000002000010"
 				type: "xp"
 				xp: 25
 			}]
 				tasks: [
 					{
 						count: 1L
-						id: "8B00000001000010"
+						id: "6B00000001000010"
 						item: { count: 1 id: "cataclysm:mech_eye" }
 						type: "item"
 					}
@@ -413,10 +410,10 @@
 				count: 1
 				id: "cataclysm:laser_gatling"
 			}
-			dependencies: ["8B00000000000010"]
-			id: "8B00000000000011"
+			dependencies: ["6B00000000000010"]
+			id: "6B00000000000011"
 			rewards: [{
-				id: "8B00000002000011"
+				id: "6B00000002000011"
 				type: "xp"
 				xp: 25
 			}]
@@ -426,7 +423,7 @@
 							count: 1
 							id: "cataclysm:laser_gatling"
 						}
-						id: "8B00000001000011"
+						id: "6B00000001000011"
 						structure: "cataclysm:ancient_factory"
 						type: "structure"
 					}
@@ -439,10 +436,10 @@
 				count: 1
 				id: "cataclysm:witherite_block"
 			}
-			dependencies: ["8B00000000000011"]
-			id: "8B00000000000012"
+			dependencies: ["6B00000000000011"]
+			id: "6B00000000000012"
 			rewards: [{
-				id: "8B00000002000012"
+				id: "6B00000002000012"
 				type: "xp"
 				xp: 25
 			}]
@@ -452,7 +449,7 @@
 							count: 1
 							id: "cataclysm:witherite_block"
 						}
-						id: "8B00000001000012"
+						id: "6B00000001000012"
 						entity: "cataclysm:the_harbinger"
 						type: "kill"
 						value: 1L
@@ -460,6 +457,41 @@
 				]
 			x: 10.5d
 			y: 3.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:topaz_shard"
+			}
+			dependencies: ["6B00000000000001"]
+			id: "6B00000000000013"
+			rewards: [{
+				id: "6B00000002000013"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 32L
+						id: "6B00000001000013"
+						item: { count: 1 id: "minecraft:amethyst_shard" }
+						type: "item"
+					}
+					{
+						count: 32L
+						id: "6B00000001010013"
+						item: { count: 1 id: "pastel:topaz_shard" }
+						type: "item"
+					}
+					{
+						count: 32L
+						id: "6B00000001020013"
+						item: { count: 1 id: "pastel:citrine_shard" }
+						type: "item"
+					}
+				]
+			x: 1.5d
+			y: 0.0d
 		}
 	]
 }

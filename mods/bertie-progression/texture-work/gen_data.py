@@ -1918,12 +1918,12 @@ write(f"{RIT}/netherly_meal.json",
              essences={"aureal": 0, "blood": 15000, "souls": 50}))
 
 # --- Pastel's opening moves become forge work. ---
-# Paintbrush: a Tier-I ritual on the Totemic Staff, two of each starter shard, 500 ink. The stock
-# stick-copper-wool craft goes, so the brush arrives with the forge rather than before it.
+# Paintbrush: a Tier-I ritual on the Totemic Staff, two of each starter shard and a Brush, 500 ink.
+# The stock stick-copper-wool craft goes, so the brush arrives with the forge rather than before it.
 write(f"{RIT}/paintbrush.json",
       ritual("malum:totemic_staff",
              [("minecraft:amethyst_shard", 2), ("pastel:citrine_shard", 2),
-              ("pastel:topaz_shard", 2)],
+              ("pastel:topaz_shard", 2), ("minecraft:brush", 1)],
              "pastel:paintbrush", 1, tier=1, xp=500))
 write("data/pastel/recipe/crafting_table/paintbrush.json", DISABLED)
 # The three starter Pigment Pedestals: Tier-II, a Compressed Crafting Table at the core, four of the
