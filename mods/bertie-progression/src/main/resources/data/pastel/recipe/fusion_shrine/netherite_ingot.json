@@ -21,16 +21,24 @@
   },
   "ingredients": [
     "hazennstuff:rose_gold_ingot",
-    "minecraft:netherite_scrap",
-    "minecraft:netherite_scrap",
-    "minecraft:netherite_scrap",
-    "minecraft:netherite_scrap",
-    "pastel:neolith",
-    "pastel:neolith"
+    {
+      "item": "minecraft:netherite_scrap",
+      "count": 4
+    },
+    {
+      "item": "pastel:neolith",
+      "count": 2
+    }
   ],
   "result": {
     "id": "minecraft:netherite_ingot",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/blocks/fusion_shrine"
+  "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine"
+  ],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine"
 }

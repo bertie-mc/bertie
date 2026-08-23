@@ -2079,17 +2079,20 @@ _failing = pedestal(["FSF", "DBD", "FSF"],
 _failing["required_advancement"] = "pastel:unlocks/items/bottle_of_failing"
 write("data/pastel/recipe/pedestal/tier3/bottle_of_failing.json", _failing)
 
-# A second route to Netherite that skips the smithing table entirely. Vanilla's own recipe stays.
+# A route to Netherite through the Fusion Shrine. The three crafting-effect fields are not
+# optional: leave any of them out and the whole recipe fails to parse.
 write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",
       {"neoforge:conditions": conds("pastel", "slag", "hazennstuff"),
        "type": "pastel:fusion_shrine", "time": 400, "experience": 4.0,
        "fluid": {"fluid": "slag:molten_gold"},
        "ingredients": ["hazennstuff:rose_gold_ingot",
-                       "minecraft:netherite_scrap", "minecraft:netherite_scrap",
-                       "minecraft:netherite_scrap", "minecraft:netherite_scrap",
-                       "pastel:neolith", "pastel:neolith"],
+                       {"item": "minecraft:netherite_scrap", "count": 4},
+                       {"item": "pastel:neolith", "count": 2}],
        "result": {"id": "minecraft:netherite_ingot", "count": 1},
-       "required_advancement": "pastel:unlocks/blocks/fusion_shrine"})
+       "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
+       "start_crafting_effect": "nothing",
+       "during_crafting_effects": ["nothing", "visual_explosions_on_shrine"],
+       "finish_crafting_effect": "single_visual_explosion_on_shrine"})
 
 # Two mods ship a Rose Gold Ingot. Haze n Stuff's gets a name of its own so the pack can tell
 # them apart at a glance, and it is no longer a crafting-table item: the Clibano cooks Slag n'
@@ -2109,9 +2112,10 @@ write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
     "result": {"count": 1, "id": "hazennstuff:rose_gold_ingot"},
 })
 
-# Netherite has one source now, and it is the Fusion Shrine. The vanilla four-scrap-four-gold
-# shapeless goes with it.
+# The vanilla four-scrap-four-gold shapeless goes, and so does Re-Avaritia's two-and-two, which
+# is the same recipe made cheaper on the Nether Crafting Table.
 write("data/minecraft/recipe/netherite_ingot.json", DISABLED)
+write("data/avaritia/recipe/netherite_ingot_too.json", DISABLED)
 
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
