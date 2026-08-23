@@ -1,0 +1,39 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 0,
+    "souls": 0
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:gilded_blackstone"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "alexsmobs:lava_bottle"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "minecraft:ender_eye"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm:monstrous_eye",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

@@ -1383,6 +1383,15 @@ write(f"{R}/create/colossal_iron_compacting.json",
 #     4 mundabitur dust and a bucket of lava. The declared result is the crucible, but
 #     CrucibleTransmutation intercepts the craft and turns the BASIN into one, dropping the mixer.
 #     Magitech's own bench recipe stays; this is the second route. ---
+# Eye of Monstrous: Cataclysm's stock 3x3 goes; the same idea becomes a Tier-I ritual with an
+# Ender Eye at the core and the eight pedestals filled exactly.
+write("data/cataclysm/recipe/monstrous_eye.json", DISABLED)
+write(f"{RIT}/monstrous_eye.json",
+      ritual("minecraft:ender_eye",
+             [("minecraft:netherite_ingot", 2), ("minecraft:gilded_blackstone", 2),
+              ("alexsmobs:lava_bottle", 4)],
+             "cataclysm:monstrous_eye", 1, tier=1))
+
 # Onyx Shard: Pastel's midnight new-moon fusion, but bathed in Molten Netherite rather than lava
 # and asking for four more things on the shrine.
 write("data/pastel/recipe/fusion_shrine/onyx_shard.json",

@@ -1350,7 +1350,7 @@
 		{
 			icon: {
 				count: 1
-				id: "pastel:fusion_shrine_calcite"
+				id: "pastel:fusion_shrine_basalt"
 			}
 			dependencies: ["6B00000000000016"]
 			id: "6B00000000000039"
@@ -1363,7 +1363,7 @@
 					{
 						count: 1L
 						id: "6B00000001000039"
-						item: { count: 1 id: "pastel:fusion_shrine_calcite" }
+						item: { count: 1 id: "pastel:fusion_shrine_basalt" }
 						type: "item"
 					}
 				]
