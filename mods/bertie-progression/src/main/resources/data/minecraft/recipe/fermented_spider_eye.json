@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_wart"
+    },
+    "M": {
+      "tag": "c:mushrooms"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "E": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "NMN",
+    "SES",
+    "NMN"
+  ],
+  "result": {
+    "id": "minecraft:fermented_spider_eye",
+    "count": 1
+  }
+}

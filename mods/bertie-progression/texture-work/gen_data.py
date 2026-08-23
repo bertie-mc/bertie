@@ -1377,6 +1377,34 @@ write(f"{R}/create/colossal_iron_compacting.json",
 #     4 mundabitur dust and a bucket of lava. The declared result is the crucible, but
 #     CrucibleTransmutation intercepts the craft and turns the BASIN into one, dropping the mixer.
 #     Magitech's own bench recipe stays; this is the second route. ---
+# Bottle of Fading: an Ominous Bottle between two Rotting Essences on a basic pedestal, paid for
+# in pigment rather than in shimmerstone and blaze powder.
+_fading = pedestal(["   ", "RBR", "   "],
+                   {"R": "malum:rotting_essence", "B": "minecraft:ominous_bottle"},
+                   {"pastel:cyan": 3, "pastel:magenta": 3, "pastel:yellow": 3,
+                    "pastel:black": 3, "pastel:white": 3},
+                   "pastel:bottle_of_fading", 1, tier="basic", time=400, xp=2.0)
+_fading["skip_recipe_remainders"] = True
+_fading["required_advancement"] = "pastel:unlocks/items/bottle_of_fading"
+write("data/pastel/recipe/pedestal/tier1/bottle_of_fading.json", _fading)
+
+# Fermented Spider Eye: the vanilla eye-sugar-wart shapeless goes; it is a full 3x3 now, and the
+# Mechanical Mixer will churn one out of the same parts in water.
+write("data/minecraft/recipe/fermented_spider_eye.json",
+      shaped(["NMN", "SES", "NMN"],
+             {"N": "minecraft:nether_wart", "M": "#c:mushrooms",
+              "S": "minecraft:sugar", "E": "minecraft:spider_eye"},
+             "minecraft:fermented_spider_eye", 1))
+write(f"{R}/create/fermented_spider_eye_mixing.json",
+      {"neoforge:conditions": conds("create"),
+       "type": "create:mixing",
+       "ingredients": [{"item": "minecraft:spider_eye"},
+                       {"tag": "c:mushrooms"},
+                       {"item": "minecraft:sugar"}, {"item": "minecraft:sugar"},
+                       {"item": "minecraft:nether_wart"}, {"item": "minecraft:nether_wart"},
+                       {"type": "neoforge:single", "amount": 1000, "fluid": "minecraft:water"}],
+       "results": [{"id": "minecraft:fermented_spider_eye"}]})
+
 # Deep Waters Key on the Sculk Crafting Table (Avaritia tier 1, a 3x3): a Nautilus Shell core,
 # Deep Alloy corners, Sea Serpent Fangs either side, Mermaid's Gems above and below.
 write(f"{R}/avaritia/deep_waters_key.json",

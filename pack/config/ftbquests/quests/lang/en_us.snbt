@@ -533,6 +533,16 @@
 	quest.6B00000000000012.title: "The Harbinger"
 	quest.6B00000000000013.quest_desc: ["Thirty-two each of Amethyst, Topaz and Citrine Shards. The pedestal runs on them."]
 	quest.6B00000000000013.title: "Three Kinds of Shard"
+	quest.6B00000000000014.quest_desc: ["Shimmerstone Gems glow in the dark rock. The pigment work runs on them."]
+	quest.6B00000000000014.title: "Shimmerstone"
+	quest.6B00000000000015.quest_desc: ["An Ominous Bottle between two Rotting Essences on a Pigment Pedestal."]
+	quest.6B00000000000015.title: "Bottle of Fading"
+	quest.6B00000000000016.quest_desc: ["Sixteen Vegetal. Growth given a shape."]
+	quest.6B00000000000016.title: "Sixteen Vegetal"
+	quest.6B00000000000017.quest_desc: ["Nether Wart grows on soul sand in the fortress stairwells."]
+	quest.6B00000000000017.title: "Nether Wart"
+	quest.6B00000000000018.quest_desc: ["A Spider Eye ringed with Nether Wart, Sugar and Mushrooms - or churn one in a Mixer."]
+	quest.6B00000000000018.title: "Fermented Spider Eye"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]

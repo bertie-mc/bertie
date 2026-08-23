@@ -183,7 +183,7 @@
 					}
 				]
 			x: 1.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -206,7 +206,7 @@
 					}
 				]
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -233,7 +233,7 @@
 					}
 				]
 			x: 4.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -491,6 +491,124 @@
 					}
 				]
 			x: 1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:shimmerstone_gem"
+			}
+			dependencies: ["6B0000000000000B"]
+			id: "6B00000000000014"
+			rewards: [{
+				id: "6B00000002000014"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B00000001000014"
+						item: { count: 1 id: "pastel:shimmerstone_gem" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:nether_wart"
+			}
+			dependencies: ["6B0000000000000C"]
+			id: "6B00000000000017"
+			rewards: [{
+				id: "6B00000002000017"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B00000001000017"
+						item: { count: 1 id: "minecraft:nether_wart" }
+						type: "item"
+					}
+				]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:fermented_spider_eye"
+			}
+			dependencies: ["6B00000000000017"]
+			id: "6B00000000000018"
+			rewards: [{
+				id: "6B00000002000018"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B00000001000018"
+						item: { count: 1 id: "minecraft:fermented_spider_eye" }
+						type: "item"
+					}
+				]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:bottle_of_fading"
+			}
+			dependencies: [
+				"6B00000000000014"
+				"6B00000000000018"
+			]
+			id: "6B00000000000015"
+			rewards: [{
+				id: "6B00000002000015"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B00000001000015"
+						item: { count: 1 id: "pastel:bottle_of_fading" }
+						type: "item"
+					}
+				]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:vegetal"
+			}
+			dependencies: ["6B00000000000015"]
+			id: "6B00000000000016"
+			rewards: [{
+				id: "6B00000002000016"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 16L
+						id: "6B00000001000016"
+						item: { count: 1 id: "pastel:vegetal" }
+						type: "item"
+					}
+				]
+			x: 9.0d
 			y: 0.0d
 		}
 	]

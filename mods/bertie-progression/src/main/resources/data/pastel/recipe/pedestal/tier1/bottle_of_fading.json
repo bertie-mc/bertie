@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "basic",
+  "time": 400,
+  "experience": 2.0,
+  "colors": {
+    "pastel:cyan": 3,
+    "pastel:magenta": 3,
+    "pastel:yellow": 3,
+    "pastel:black": 3,
+    "pastel:white": 3
+  },
+  "pattern": [
+    "   ",
+    "RBR",
+    "   "
+  ],
+  "key": {
+    "R": "malum:rotting_essence",
+    "B": "minecraft:ominous_bottle"
+  },
+  "result": {
+    "id": "pastel:bottle_of_fading",
+    "count": 1
+  },
+  "skip_recipe_remainders": true,
+  "required_advancement": "pastel:unlocks/items/bottle_of_fading"
+}
