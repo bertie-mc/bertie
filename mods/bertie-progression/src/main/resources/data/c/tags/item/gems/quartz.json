@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:quartz",
+    {
+      "id": "malum:natural_quartz",
+      "required": false
+    },
+    {
+      "id": "#forge:gems/quartz",
+      "required": false
+    }
+  ]
+}

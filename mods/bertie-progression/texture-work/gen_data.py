@@ -2034,11 +2034,14 @@ for _gem, _shard, _sound, _adv in (
           })
 
 # --- The late Pastel chain: CMY pedestal, rose quartz, failing, netherite. ---
-# c:gems/quartz is no use here: it holds Rose Quartz itself and Natural Quartz, but not Nether
-# Quartz. This tag is the plain "either quartz" the recipes below want.
-write("data/bertieprogression/tags/item/quartz.json",
-      {"values": [{"id": "minecraft:quartz", "required": False},
-                  {"id": "malum:natural_quartz", "required": False}]})
+# c:gems/quartz collected three things: NeoForge's Nether Quartz, Malum's Natural Quartz and Haze
+# n Stuff's Rose Quartz. Rose Quartz is a crafted material, not a quartz, and having it in there
+# made every "any quartz" recipe accept it. The tag is replaced with the two real ones.
+write("data/c/tags/item/gems/quartz.json",
+      {"replace": True,
+       "values": ["minecraft:quartz",
+                  {"id": "malum:natural_quartz", "required": False},
+                  {"id": "#forge:gems/quartz", "required": False}]})
 
 # The CMY Pedestal: the three polished gem blocks across the top, a Vegetal Block bedded in
 # polished calcite. It costs a full sixteen of every pigment.
@@ -2061,7 +2064,7 @@ _rq = pedestal(["PDP", "OQO", "PDP"],
                {"pastel:cyan": 0, "pastel:magenta": 6, "pastel:yellow": 4,
                 "pastel:black": 0, "pastel:white": 0},
                "hazennstuff:rose_quartz", 1, tier="advanced", time=40, xp=2.0)
-_rq["key"]["Q"] = {"tag": "bertieprogression:quartz"}
+_rq["key"]["Q"] = {"tag": "c:gems/quartz"}
 _rq["required_advancement"] = "pastel:midgame/build_advanced_pedestal_structure"
 write("data/pastel/recipe/pedestal/tier3/rose_quartz.json", _rq)
 
@@ -2089,10 +2092,26 @@ write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",
        "required_advancement": "pastel:unlocks/blocks/fusion_shrine"})
 
 # Two mods ship a Rose Gold Ingot. Haze n Stuff's gets a name of its own so the pack can tell
-# them apart at a glance.
+# them apart at a glance, and it is no longer a crafting-table item: the Clibano cooks Slag n'
+# Embers' Rose Gold together with a Rose Quartz to make it.
 write("assets/hazennstuff/lang/en_us.json",
       {"item.hazennstuff.rose_gold_ingot": "Rosest Gold Ingot",
        "material.hazennstuff.rose_gold": "Rosest Gold"})
+write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
+write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
+    "type": "forbidden_arcanus:clibano_combustion",
+    "category": "misc",
+    "cooking_time": 400,
+    "experience": 1.0,
+    "fire_type": "fire",
+    "ingredients": {"first": {"item": "slag:rose_gold_ingot"},
+                    "second": {"item": "hazennstuff:rose_quartz"}},
+    "result": {"count": 1, "id": "hazennstuff:rose_gold_ingot"},
+})
+
+# Netherite has one source now, and it is the Fusion Shrine. The vanilla four-scrap-four-gold
+# shapeless goes with it.
+write("data/minecraft/recipe/netherite_ingot.json", DISABLED)
 
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own

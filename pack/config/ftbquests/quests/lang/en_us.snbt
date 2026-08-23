@@ -543,70 +543,6 @@
 	quest.6B00000000000017.title: "Nether Wart"
 	quest.6B00000000000018.quest_desc: ["A Spider Eye ringed with Nether Wart, Sugar and Mushrooms - or churn one in a Mixer."]
 	quest.6B00000000000018.title: "Fermented Spider Eye"
-	quest.6B00000000000019.quest_desc: ["A Red Sapling. Colour grows."]
-	quest.6B00000000000019.title: "Red Sapling"
-	quest.6B0000000000001A.quest_desc: ["A Orange Sapling. Colour grows."]
-	quest.6B0000000000001A.title: "Orange Sapling"
-	quest.6B0000000000001B.quest_desc: ["A Yellow Sapling. Colour grows."]
-	quest.6B0000000000001B.title: "Yellow Sapling"
-	quest.6B0000000000001C.quest_desc: ["A Lime Sapling. Colour grows."]
-	quest.6B0000000000001C.title: "Lime Sapling"
-	quest.6B0000000000001D.quest_desc: ["A Green Sapling. Colour grows."]
-	quest.6B0000000000001D.title: "Green Sapling"
-	quest.6B0000000000001E.quest_desc: ["A Cyan Sapling. Colour grows."]
-	quest.6B0000000000001E.title: "Cyan Sapling"
-	quest.6B0000000000001F.quest_desc: ["A Light Blue Sapling. Colour grows."]
-	quest.6B0000000000001F.title: "Light Blue Sapling"
-	quest.6B00000000000020.quest_desc: ["A Blue Sapling. Colour grows."]
-	quest.6B00000000000020.title: "Blue Sapling"
-	quest.6B00000000000021.quest_desc: ["A Purple Sapling. Colour grows."]
-	quest.6B00000000000021.title: "Purple Sapling"
-	quest.6B00000000000022.quest_desc: ["A Magenta Sapling. Colour grows."]
-	quest.6B00000000000022.title: "Magenta Sapling"
-	quest.6B00000000000023.quest_desc: ["A Pink Sapling. Colour grows."]
-	quest.6B00000000000023.title: "Pink Sapling"
-	quest.6B00000000000024.quest_desc: ["A Brown Sapling. Colour grows."]
-	quest.6B00000000000024.title: "Brown Sapling"
-	quest.6B00000000000025.quest_desc: ["A Black Sapling. Colour grows."]
-	quest.6B00000000000025.title: "Black Sapling"
-	quest.6B00000000000026.quest_desc: ["A Gray Sapling. Colour grows."]
-	quest.6B00000000000026.title: "Gray Sapling"
-	quest.6B00000000000027.quest_desc: ["A Light Gray Sapling. Colour grows."]
-	quest.6B00000000000027.title: "Light Gray Sapling"
-	quest.6B00000000000028.quest_desc: ["A White Sapling. Colour grows."]
-	quest.6B00000000000028.title: "White Sapling"
-	quest.6B00000000000029.quest_desc: ["Crush the red tree's yield into Pigment."]
-	quest.6B00000000000029.title: "Red Pigment"
-	quest.6B0000000000002A.quest_desc: ["Crush the orange tree's yield into Pigment."]
-	quest.6B0000000000002A.title: "Orange Pigment"
-	quest.6B0000000000002B.quest_desc: ["Crush the yellow tree's yield into Pigment."]
-	quest.6B0000000000002B.title: "Yellow Pigment"
-	quest.6B0000000000002C.quest_desc: ["Crush the lime tree's yield into Pigment."]
-	quest.6B0000000000002C.title: "Lime Pigment"
-	quest.6B0000000000002D.quest_desc: ["Crush the green tree's yield into Pigment."]
-	quest.6B0000000000002D.title: "Green Pigment"
-	quest.6B0000000000002E.quest_desc: ["Crush the cyan tree's yield into Pigment."]
-	quest.6B0000000000002E.title: "Cyan Pigment"
-	quest.6B0000000000002F.quest_desc: ["Crush the light blue tree's yield into Pigment."]
-	quest.6B0000000000002F.title: "Light Blue Pigment"
-	quest.6B00000000000030.quest_desc: ["Crush the blue tree's yield into Pigment."]
-	quest.6B00000000000030.title: "Blue Pigment"
-	quest.6B00000000000031.quest_desc: ["Crush the purple tree's yield into Pigment."]
-	quest.6B00000000000031.title: "Purple Pigment"
-	quest.6B00000000000032.quest_desc: ["Crush the magenta tree's yield into Pigment."]
-	quest.6B00000000000032.title: "Magenta Pigment"
-	quest.6B00000000000033.quest_desc: ["Crush the pink tree's yield into Pigment."]
-	quest.6B00000000000033.title: "Pink Pigment"
-	quest.6B00000000000034.quest_desc: ["Crush the brown tree's yield into Pigment."]
-	quest.6B00000000000034.title: "Brown Pigment"
-	quest.6B00000000000035.quest_desc: ["Crush the black tree's yield into Pigment."]
-	quest.6B00000000000035.title: "Black Pigment"
-	quest.6B00000000000036.quest_desc: ["Crush the gray tree's yield into Pigment."]
-	quest.6B00000000000036.title: "Gray Pigment"
-	quest.6B00000000000037.quest_desc: ["Crush the light gray tree's yield into Pigment."]
-	quest.6B00000000000037.title: "Light Gray Pigment"
-	quest.6B00000000000038.quest_desc: ["Crush the white tree's yield into Pigment."]
-	quest.6B00000000000038.title: "White Pigment"
 	quest.6B00000000000039.quest_desc: ["Build a Fusion Shrine. It works under the open sky, and it watches the moon."]
 	quest.6B00000000000039.title: "The Fusion Shrine"
 	quest.6B0000000000003A.quest_desc: ["Fuse one at midnight on a new moon, in Molten Netherite."]
@@ -621,6 +557,10 @@
 	quest.6B0000000000003E.title: "Neolith"
 	quest.6B0000000000003F.quest_desc: ["The Fusion Shrine will pull one out of molten gold, rosest gold and scrap."]
 	quest.6B0000000000003F.title: "Netherite Ingot"
+	quest.6B00000000000040.quest_desc: ["Vegetal will grow into any of the sixteen colours."]
+	quest.6B00000000000040.title: "Any Coloured Sapling"
+	quest.6B00000000000041.quest_desc: ["Every colour has a pigment of its own, and you will want all of them before long."]
+	quest.6B00000000000041.title: "Any Pigment"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]

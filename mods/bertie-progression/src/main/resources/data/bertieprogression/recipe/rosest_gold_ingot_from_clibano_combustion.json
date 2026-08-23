@@ -1,0 +1,19 @@
+{
+  "type": "forbidden_arcanus:clibano_combustion",
+  "category": "misc",
+  "cooking_time": 400,
+  "experience": 1.0,
+  "fire_type": "fire",
+  "ingredients": {
+    "first": {
+      "item": "slag:rose_gold_ingot"
+    },
+    "second": {
+      "item": "hazennstuff:rose_quartz"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "hazennstuff:rose_gold_ingot"
+  }
+}

@@ -610,744 +610,8 @@
 						type: "item"
 					}
 				]
-			x: 21.0d
+			x: 9.0d
 			y: 0.0d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:red_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000019"
-			rewards: [{
-				id: "6B00000002000019"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000019"
-						item: { count: 1 id: "pastel:red_sapling" }
-						type: "item"
-					}
-				]
-			x: 17.05d
-			y: -1.41d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:red_pigment"
-			}
-			dependencies: ["6B00000000000019"]
-			id: "6B00000000000029"
-			rewards: [{
-				id: "6B00000002000029"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000029"
-						item: { count: 1 id: "pastel:red_pigment" }
-						type: "item"
-					}
-				]
-			x: 15.66d
-			y: -1.98d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:orange_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001A"
-			rewards: [{
-				id: "6B0000000200001A"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001A"
-						item: { count: 1 id: "pastel:orange_sapling" }
-						type: "item"
-					}
-				]
-			x: 17.81d
-			y: -2.73d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:orange_pigment"
-			}
-			dependencies: ["6B0000000000001A"]
-			id: "6B0000000000002A"
-			rewards: [{
-				id: "6B0000000200002A"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002A"
-						item: { count: 1 id: "pastel:orange_pigment" }
-						type: "item"
-					}
-				]
-			x: 16.64d
-			y: -3.67d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:yellow_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001B"
-			rewards: [{
-				id: "6B0000000200001B"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001B"
-						item: { count: 1 id: "pastel:yellow_sapling" }
-						type: "item"
-					}
-				]
-			x: 18.94d
-			y: -3.66d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:yellow_pigment"
-			}
-			dependencies: ["6B0000000000001B"]
-			id: "6B0000000000002B"
-			rewards: [{
-				id: "6B0000000200002B"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002B"
-						item: { count: 1 id: "pastel:yellow_pigment" }
-						type: "item"
-					}
-				]
-			x: 18.13d
-			y: -4.92d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:lime_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001C"
-			rewards: [{
-				id: "6B0000000200001C"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001C"
-						item: { count: 1 id: "pastel:lime_sapling" }
-						type: "item"
-					}
-				]
-			x: 20.24d
-			y: -4.13d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:lime_pigment"
-			}
-			dependencies: ["6B0000000000001C"]
-			id: "6B0000000000002C"
-			rewards: [{
-				id: "6B0000000200002C"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002C"
-						item: { count: 1 id: "pastel:lime_pigment" }
-						type: "item"
-					}
-				]
-			x: 20.01d
-			y: -5.61d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:green_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001D"
-			rewards: [{
-				id: "6B0000000200001D"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001D"
-						item: { count: 1 id: "pastel:green_sapling" }
-						type: "item"
-					}
-				]
-			x: 21.76d
-			y: -4.13d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:green_pigment"
-			}
-			dependencies: ["6B0000000000001D"]
-			id: "6B0000000000002D"
-			rewards: [{
-				id: "6B0000000200002D"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002D"
-						item: { count: 1 id: "pastel:green_pigment" }
-						type: "item"
-					}
-				]
-			x: 21.99d
-			y: -5.61d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:cyan_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001E"
-			rewards: [{
-				id: "6B0000000200001E"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001E"
-						item: { count: 1 id: "pastel:cyan_sapling" }
-						type: "item"
-					}
-				]
-			x: 23.06d
-			y: -3.66d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:cyan_pigment"
-			}
-			dependencies: ["6B0000000000001E"]
-			id: "6B0000000000002E"
-			rewards: [{
-				id: "6B0000000200002E"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002E"
-						item: { count: 1 id: "pastel:cyan_pigment" }
-						type: "item"
-					}
-				]
-			x: 23.87d
-			y: -4.92d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:light_blue_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000001F"
-			rewards: [{
-				id: "6B0000000200001F"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100001F"
-						item: { count: 1 id: "pastel:light_blue_sapling" }
-						type: "item"
-					}
-				]
-			x: 24.19d
-			y: -2.73d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:light_blue_pigment"
-			}
-			dependencies: ["6B0000000000001F"]
-			id: "6B0000000000002F"
-			rewards: [{
-				id: "6B0000000200002F"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B0000000100002F"
-						item: { count: 1 id: "pastel:light_blue_pigment" }
-						type: "item"
-					}
-				]
-			x: 25.36d
-			y: -3.67d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:blue_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000020"
-			rewards: [{
-				id: "6B00000002000020"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000020"
-						item: { count: 1 id: "pastel:blue_sapling" }
-						type: "item"
-					}
-				]
-			x: 24.95d
-			y: -1.41d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:blue_pigment"
-			}
-			dependencies: ["6B00000000000020"]
-			id: "6B00000000000030"
-			rewards: [{
-				id: "6B00000002000030"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000030"
-						item: { count: 1 id: "pastel:blue_pigment" }
-						type: "item"
-					}
-				]
-			x: 26.34d
-			y: -1.98d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:purple_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000021"
-			rewards: [{
-				id: "6B00000002000021"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000021"
-						item: { count: 1 id: "pastel:purple_sapling" }
-						type: "item"
-					}
-				]
-			x: 24.95d
-			y: 1.41d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:purple_pigment"
-			}
-			dependencies: ["6B00000000000021"]
-			id: "6B00000000000031"
-			rewards: [{
-				id: "6B00000002000031"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000031"
-						item: { count: 1 id: "pastel:purple_pigment" }
-						type: "item"
-					}
-				]
-			x: 26.34d
-			y: 1.98d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:magenta_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000022"
-			rewards: [{
-				id: "6B00000002000022"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000022"
-						item: { count: 1 id: "pastel:magenta_sapling" }
-						type: "item"
-					}
-				]
-			x: 24.19d
-			y: 2.73d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:magenta_pigment"
-			}
-			dependencies: ["6B00000000000022"]
-			id: "6B00000000000032"
-			rewards: [{
-				id: "6B00000002000032"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000032"
-						item: { count: 1 id: "pastel:magenta_pigment" }
-						type: "item"
-					}
-				]
-			x: 25.36d
-			y: 3.67d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:pink_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000023"
-			rewards: [{
-				id: "6B00000002000023"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000023"
-						item: { count: 1 id: "pastel:pink_sapling" }
-						type: "item"
-					}
-				]
-			x: 23.06d
-			y: 3.66d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:pink_pigment"
-			}
-			dependencies: ["6B00000000000023"]
-			id: "6B00000000000033"
-			rewards: [{
-				id: "6B00000002000033"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000033"
-						item: { count: 1 id: "pastel:pink_pigment" }
-						type: "item"
-					}
-				]
-			x: 23.87d
-			y: 4.92d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:brown_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000024"
-			rewards: [{
-				id: "6B00000002000024"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000024"
-						item: { count: 1 id: "pastel:brown_sapling" }
-						type: "item"
-					}
-				]
-			x: 21.76d
-			y: 4.13d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:brown_pigment"
-			}
-			dependencies: ["6B00000000000024"]
-			id: "6B00000000000034"
-			rewards: [{
-				id: "6B00000002000034"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000034"
-						item: { count: 1 id: "pastel:brown_pigment" }
-						type: "item"
-					}
-				]
-			x: 21.99d
-			y: 5.61d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:black_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000025"
-			rewards: [{
-				id: "6B00000002000025"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000025"
-						item: { count: 1 id: "pastel:black_sapling" }
-						type: "item"
-					}
-				]
-			x: 20.24d
-			y: 4.13d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:black_pigment"
-			}
-			dependencies: ["6B00000000000025"]
-			id: "6B00000000000035"
-			rewards: [{
-				id: "6B00000002000035"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000035"
-						item: { count: 1 id: "pastel:black_pigment" }
-						type: "item"
-					}
-				]
-			x: 20.01d
-			y: 5.61d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:gray_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000026"
-			rewards: [{
-				id: "6B00000002000026"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000026"
-						item: { count: 1 id: "pastel:gray_sapling" }
-						type: "item"
-					}
-				]
-			x: 18.94d
-			y: 3.66d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:gray_pigment"
-			}
-			dependencies: ["6B00000000000026"]
-			id: "6B00000000000036"
-			rewards: [{
-				id: "6B00000002000036"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000036"
-						item: { count: 1 id: "pastel:gray_pigment" }
-						type: "item"
-					}
-				]
-			x: 18.13d
-			y: 4.92d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:light_gray_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000027"
-			rewards: [{
-				id: "6B00000002000027"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000027"
-						item: { count: 1 id: "pastel:light_gray_sapling" }
-						type: "item"
-					}
-				]
-			x: 17.81d
-			y: 2.73d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:light_gray_pigment"
-			}
-			dependencies: ["6B00000000000027"]
-			id: "6B00000000000037"
-			rewards: [{
-				id: "6B00000002000037"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000037"
-						item: { count: 1 id: "pastel:light_gray_pigment" }
-						type: "item"
-					}
-				]
-			x: 16.64d
-			y: 3.67d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:white_sapling"
-			}
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000028"
-			rewards: [{
-				id: "6B00000002000028"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000028"
-						item: { count: 1 id: "pastel:white_sapling" }
-						type: "item"
-					}
-				]
-			x: 17.05d
-			y: 1.41d
-		}
-		{
-			icon: {
-				count: 1
-				id: "pastel:white_pigment"
-			}
-			dependencies: ["6B00000000000028"]
-			id: "6B00000000000038"
-			rewards: [{
-				id: "6B00000002000038"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "6B00000001000038"
-						item: { count: 1 id: "pastel:white_pigment" }
-						type: "item"
-					}
-				]
-			x: 15.66d
-			y: 1.98d
 		}
 		{
 			icon: {
@@ -1369,7 +633,7 @@
 						type: "item"
 					}
 				]
-			x: 30.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -1392,7 +656,7 @@
 						type: "item"
 					}
 				]
-			x: 31.5d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -1400,7 +664,7 @@
 				count: 1
 				id: "pastel:pedestal_all_basic"
 			}
-			dependencies: ["6B00000000000016"]
+			dependencies: ["6B00000000000041"]
 			id: "6B0000000000003B"
 			rewards: [{
 				id: "6B0000000200003B"
@@ -1415,7 +679,7 @@
 						type: "item"
 					}
 				]
-			x: 28.5d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -1438,7 +702,7 @@
 						type: "item"
 					}
 				]
-			x: 33.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -1461,7 +725,7 @@
 						type: "item"
 					}
 				]
-			x: 34.5d
+			x: 19.5d
 			y: 0.0d
 		}
 		{
@@ -1484,7 +748,7 @@
 						type: "item"
 					}
 				]
-			x: 36.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -1507,7 +771,61 @@
 						type: "item"
 					}
 				]
-			x: 37.5d
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:lime_sapling"
+			}
+			dependencies: ["6B00000000000016"]
+			id: "6B00000000000040"
+			rewards: [{
+				id: "6B00000002000040"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						icon: {
+							count: 1
+							id: "pastel:lime_sapling"
+						}
+						id: "6B00000001000040"
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(pastel:colored_saplings)', "minecraft:custom_name": '{"text":"Coloured Sapling","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						type: "item"
+					}
+				]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:cyan_pigment"
+			}
+			dependencies: ["6B00000000000040"]
+			id: "6B00000000000041"
+			rewards: [{
+				id: "6B00000002000041"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						icon: {
+							count: 1
+							id: "pastel:cyan_pigment"
+						}
+						id: "6B00000001000041"
+						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(pastel:pigments)', "minecraft:custom_name": '{"text":"Pigment","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
+						type: "item"
+					}
+				]
+			x: 12.0d
 			y: 0.0d
 		}
 	]
