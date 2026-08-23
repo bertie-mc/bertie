@@ -1,0 +1,111 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "cognition:cognitive_crystal"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "cognition:astute_assembly",
+      "count": 1
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cognition:cognitive_crystal"
+        },
+        {
+          "item": "cognition:cognitive_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "cognition:cognitive_crystal"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cognition:cognitive_crystal"
+        },
+        {
+          "item": "cognition:cognitive_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "cognition:cognitive_crystal"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "cognition:cognitive_crystal"
+        },
+        {
+          "item": "cognition:cognitive_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "cognition:cognitive_crystal"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "cognition:cognitive_crystal"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "irons_spellbooks:timeless_slurry"
+        }
+      ],
+      "results": [
+        {
+          "id": "cognition:cognitive_crystal"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "cognition:cognitive_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "cognition:cognitive_crystal"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "cognition:cognitive_crystal"
+  }
+}

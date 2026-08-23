@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cognition:cognitive_amalgam"
+    },
+    "I": {
+      "item": "twilightforest:ironwood_ingot"
+    },
+    "L": {
+      "tag": "c:ingots/lead"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ILI",
+    "AAA"
+  ],
+  "result": {
+    "id": "cognition:cognitive_alloy",
+    "count": 1
+  }
+}

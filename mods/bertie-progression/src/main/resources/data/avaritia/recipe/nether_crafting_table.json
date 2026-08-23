@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 1,
+  "key": {
+    "I": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "pastel:stratine_gem"
+    },
+    "D": {
+      "item": "avaritia:double_compressed_crafting_table"
+    },
+    "B": {
+      "item": "cataclysm:black_steel_block"
+    },
+    "E": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "pattern": [
+    "INI",
+    "SDS",
+    "BEB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "avaritia:nether_crafting_table"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "tag": "c:gems/quartz"
+    }
+  ],
+  "results": [
+    {
+      "id": "cognition:cognitive_flux",
+      "count": 4
+    }
+  ]
+}

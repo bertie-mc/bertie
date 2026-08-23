@@ -2033,6 +2033,50 @@ for _gem, _shard, _sound, _adv in (
               "required_advancement": _adv,
           })
 
+# --- Cognition: the cognitive chain is rebuilt from the flux up. ---
+# Flux is mixed rather than crafted, the alloy and the crystal both want a full ring of amalgam,
+# and the Astute Assembly stops being a 3x3 and becomes a sequenced assembly.
+write("data/cognition/recipe/cognitive_flux.json", DISABLED)
+write(f"{R}/cognition/cognitive_flux_mixing.json",
+      {"neoforge:conditions": conds("create", "cognition"),
+       "type": "create:mixing",
+       "ingredients": [{"tag": "c:dusts/copper"}, {"tag": "c:dusts/copper"},
+                       {"item": "minecraft:lapis_lazuli"}, {"tag": "c:gems/quartz"}],
+       "results": [{"id": "cognition:cognitive_flux", "count": 4}]})
+
+write("data/cognition/recipe/cognitive_alloy.json",
+      shaped(["AAA", "ILI", "AAA"],
+             {"A": "cognition:cognitive_amalgam", "I": "twilightforest:ironwood_ingot",
+              "L": "#c:ingots/lead"},
+             "cognition:cognitive_alloy", 1))
+
+write("data/cognition/recipe/cognitive_crystal.json",
+      shaped(["AAA", "AEA", "AAA"],
+             {"A": "cognition:cognitive_amalgam", "E": "minecraft:emerald_block"},
+             "cognition:cognitive_crystal", 1))
+
+write("data/cognition/recipe/astute_assembly.json", DISABLED)
+_seq_assembly(f"{R}/cognition/astute_assembly.json",
+              "cognition:cognitive_crystal", "cognition:cognitive_crystal",
+              [("deploy", "cognition:cognitive_alloy"), ("deploy", "cognition:cognitive_alloy"),
+               ("deploy", "cognition:cognitive_alloy"),
+               ("fill", "irons_spellbooks:timeless_slurry", 250), ("press",)],
+              [{"id": "cognition:astute_assembly", "count": 1}],
+              mods=("cognition", "irons_spellbooks"))
+
+# --- The Nether Crafting Table stops being a netherrack-and-skulls build. ---
+write("data/avaritia/recipe/nether_crafting_table.json",
+      {"neoforge:conditions": conds("avaritia", "cataclysm", "pastel"),
+       "type": "avaritia:shaped_table", "tier": 1,
+       "key": {"I": {"item": "cataclysm:ignitium_ingot"},
+               "N": {"item": "minecraft:nether_star"},
+               "S": {"item": "pastel:stratine_gem"},
+               "D": {"item": "avaritia:double_compressed_crafting_table"},
+               "B": {"item": "cataclysm:black_steel_block"},
+               "E": {"item": "minecraft:netherite_block"}},
+       "pattern": ["INI", "SDS", "BEB"],
+       "result": {"count": 1, "id": "avaritia:nether_crafting_table"}})
+
 # --- The late Pastel chain: CMY pedestal, rose quartz, failing, netherite. ---
 # c:gems/quartz collected three things: NeoForge's Nether Quartz, Malum's Natural Quartz and Haze
 # n Stuff's Rose Quartz. Rose Quartz is a crafted material, not a quartz, and having it in there

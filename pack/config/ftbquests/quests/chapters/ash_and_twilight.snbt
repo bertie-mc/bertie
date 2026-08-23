@@ -1209,28 +1209,6 @@
 		{
 			icon: {
 				count: 1
-				id: "cataclysm:altar_of_amethyst"
-			}
-			id: "1C0000000000005B"
-			rewards: [{
-				id: "1C0000000200005B"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C0000000100005B"
-						item: { count: 1 id: "cataclysm:altar_of_amethyst" }
-						type: "item"
-					}
-				]
-			x: -22.5d
-			y: 3.0d
-		}
-		{
-			icon: {
-				count: 1
 				id: "irons_spellbooks:ancient_knowledge_fragment"
 			}
 			dependencies: ["1C00000000000058"]
@@ -1345,6 +1323,106 @@
 				]
 			x: -12.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["1C00000000000059"]
+			icon: {
+				id: "cognition:cognitive_flux"
+			}
+			id: "3B00000000000051"
+			rewards: [{
+				id: "3B00000002000051"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "3B00000001000051"
+				item: { count: 1 id: "cognition:cognitive_flux" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B00000000000051"]
+			icon: {
+				id: "cognition:cognitive_amalgam"
+			}
+			id: "3B00000000000052"
+			rewards: [{
+				id: "3B00000002000052"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "3B00000001000052"
+				item: { count: 1 id: "cognition:cognitive_amalgam" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B00000000000052"]
+			icon: {
+				id: "cognition:cognitive_alloy"
+			}
+			id: "3B00000000000053"
+			rewards: [{
+				id: "3B00000002000053"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "3B00000001000053"
+				item: { count: 1 id: "cognition:cognitive_alloy" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B00000000000053"]
+			icon: {
+				id: "cognition:cognitive_crystal"
+			}
+			id: "3B00000000000054"
+			rewards: [{
+				id: "3B00000002000054"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "3B00000001000054"
+				item: { count: 1 id: "cognition:cognitive_crystal" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B00000000000054"]
+			icon: {
+				id: "cognition:astute_assembly"
+			}
+			id: "3B00000000000055"
+			rewards: [{
+				id: "3B00000002000055"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "3B00000001000055"
+				item: { count: 1 id: "cognition:astute_assembly" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
 		}
 	]
 }

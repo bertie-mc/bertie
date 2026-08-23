@@ -2,6 +2,7 @@
 	chapter.1B00000000000000.title: "Hands and Stone"
 	chapter.1C00000000000000.title: "Dark Arts"
 	chapter.2B00000000000000.title: "Kinetic Language"
+	chapter.2C00000000000000.title: "Glyph and Gloom"
 	chapter.3B00000000000000.title: "Ash and Twilight"
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.5B00000000000000.title: "Concordance"
@@ -357,6 +358,69 @@
 	quest.2B0000000000005F.title: "Fluid Tank"
 	quest.2B00000000000060.quest_desc: ["You will need a lot of them. It's a good idea to start production sooner."]
 	quest.2B00000000000060.title: "Bound Soul Ingot"
+	quest.2C00000000000001.quest_desc: ["Every tablet you find is written in a language nobody speaks. This is where you break it."]
+	quest.2C00000000000001.title: "The Spelunkery Table"
+	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
+	quest.2C00000000000002.title: "A Magnetic Tablet"
+	quest.2C00000000000003.title: "The Magnetic Caves"
+	quest.2C00000000000004.title: "Azure Magnet"
+	quest.2C00000000000005.title: "Scarlet Magnet"
+	quest.2C00000000000006.title: "Azure Neodymium"
+	quest.2C00000000000007.title: "Scarlet Neodymium"
+	quest.2C00000000000008.title: "Energized Galena"
+	quest.2C00000000000009.title: "Azure Energized Galena"
+	quest.2C0000000000000A.title: "Scarlet Energized Galena"
+	quest.2C0000000000000B.title: "Ferrouslimeball"
+	quest.2C0000000000000C.title: "Heart of Iron"
+	quest.2C0000000000000D.title: "Heavyweight"
+	quest.2C0000000000000E.title: "Notor Gizmo"
+	quest.2C0000000000000F.title: "Telecore"
+	quest.2C00000000000010.title: "Tesla Bulb"
+	quest.2C00000000000011.title: "Depth Charge"
+	quest.2C00000000000012.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
+	quest.2C00000000000012.title: "A Primordial Tablet"
+	quest.2C00000000000013.title: "The Primordial Caves"
+	quest.2C00000000000014.title: "Amber Curiosity"
+	quest.2C00000000000015.title: "Heavy Bone"
+	quest.2C00000000000016.title: "Tough Hide"
+	quest.2C00000000000017.title: "Tectonic Shard"
+	quest.2C00000000000018.title: "Pewen Sap"
+	quest.2C00000000000019.title: "Tree Star"
+	quest.2C0000000000001A.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
+	quest.2C0000000000001A.title: "A Toxic Tablet"
+	quest.2C0000000000001B.title: "The Toxic Caves"
+	quest.2C0000000000001C.title: "Uranium"
+	quest.2C0000000000001D.title: "Uranium Rod"
+	quest.2C0000000000001E.title: "Sulfur Dust"
+	quest.2C0000000000001F.title: "Toxic Paste"
+	quest.2C00000000000020.title: "Polymer Plate"
+	quest.2C00000000000021.title: "Fissile Core"
+	quest.2C00000000000022.title: "Charred Remnant"
+	quest.2C00000000000023.title: "Bottle of Radon"
+	quest.2C00000000000024.title: "Cinder Brick"
+	quest.2C00000000000025.title: "Waste Drum"
+	quest.2C00000000000026.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
+	quest.2C00000000000026.title: "An Abyssal Tablet"
+	quest.2C00000000000027.title: "The Abyssal Chasm"
+	quest.2C00000000000028.title: "Mussel"
+	quest.2C00000000000029.title: "Sea Glass Shards"
+	quest.2C0000000000002A.title: "Marine Snow"
+	quest.2C0000000000002B.title: "Bioluminesscence"
+	quest.2C0000000000002C.title: "Magic Conch"
+	quest.2C0000000000002D.title: "Gazing Pearl"
+	quest.2C0000000000002E.title: "Immortal Embryo"
+	quest.2C0000000000002F.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
+	quest.2C0000000000002F.title: "A Forlorn Tablet"
+	quest.2C00000000000030.title: "The Forlorn Hollows"
+	quest.2C00000000000031.title: "Thornwood Branch"
+	quest.2C00000000000032.title: "Guano"
+	quest.2C00000000000033.title: "Moth Dust"
+	quest.2C00000000000034.title: "Vesper Wing"
+	quest.2C00000000000035.title: "Corrodent Teeth"
+	quest.2C00000000000036.title: "Dark Tatters"
+	quest.2C00000000000037.title: "Shadow Silk"
+	quest.2C00000000000038.title: "Occult Gem"
+	quest.2C00000000000039.title: "Pure Darkness"
 	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
 	quest.3B0000000000000B.title: "Deep Waters Key"
 	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
@@ -455,6 +519,14 @@
 	quest.3B0000000000004F.title: "Heart of the Sea"
 	quest.3B00000000000050.quest_desc: ["Craft a Conduit - a Heart of the Sea inside eight Nautilus Shells."]
 	quest.3B00000000000050.title: "Conduit"
+	quest.3B00000000000051.quest_desc: ["Mixed, not crafted: two copper dusts, lapis, and a quartz of either kind."]
+	quest.3B00000000000051.title: "Cognitive Flux"
+	quest.3B00000000000052.quest_desc: ["Smelt the flux."]
+	quest.3B00000000000052.title: "Cognitive Amalgam"
+	quest.3B00000000000053.title: "Cognitive Alloy"
+	quest.3B00000000000054.title: "Cognitive Crystal"
+	quest.3B00000000000055.quest_desc: ["Three alloys onto a crystal, a splash of Timeless Slurry, and a press."]
+	quest.3B00000000000055.title: "The Astute Assembly"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
