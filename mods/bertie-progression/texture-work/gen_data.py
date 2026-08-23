@@ -1413,10 +1413,11 @@ write("data/pastel/recipe/fusion_shrine/onyx_shard.json",
        "description": {"type": "translatable",
                        "translate": "pastel.recipe.fusion_shrine.explanation.onyx_shard"}})
 
-# Bottle of Fading: an Ominous Bottle between two Rotting Essences on a basic pedestal, paid for
-# in pigment rather than in shimmerstone and blaze powder.
-_fading = pedestal(["   ", "RBR", "   "],
-                   {"R": "malum:rotting_essence", "B": "minecraft:ominous_bottle"},
+# Bottle of Fading: Pastel's own pedestal recipe, with the Honey Bottle swapped for an Ominous
+# Bottle and the Blaze Powder either side for Rotting Essence. Now costs pigment as well.
+_fading = pedestal(["FSF", "RBR", "FSF"],
+                   {"F": "minecraft:fermented_spider_eye", "S": "pastel:shimmerstone_gem",
+                    "R": "malum:rotting_essence", "B": "minecraft:ominous_bottle"},
                    {"pastel:cyan": 3, "pastel:magenta": 3, "pastel:yellow": 3,
                     "pastel:black": 3, "pastel:white": 3},
                    "pastel:bottle_of_fading", 1, tier="basic", time=400, xp=2.0)

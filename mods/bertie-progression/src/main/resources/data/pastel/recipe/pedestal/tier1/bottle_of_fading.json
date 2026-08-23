@@ -21,11 +21,13 @@
     "pastel:white": 3
   },
   "pattern": [
-    "   ",
+    "FSF",
     "RBR",
-    "   "
+    "FSF"
   ],
   "key": {
+    "F": "minecraft:fermented_spider_eye",
+    "S": "pastel:shimmerstone_gem",
     "R": "malum:rotting_essence",
     "B": "minecraft:ominous_bottle"
   },
