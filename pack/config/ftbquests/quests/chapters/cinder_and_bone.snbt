@@ -900,7 +900,7 @@
 		{
 			dependencies: ["6B0000000000003B"]
 			icon: {
-				id: "irons_spellbooks:citadel_map"
+				id: "irons_spellbooks:cinderous_vault"
 			}
 			id: "6B00000000000045"
 			rewards: [{
@@ -910,7 +910,7 @@
 			}]
 			tasks: [{
 				icon: {
-					id: "irons_spellbooks:citadel_map"
+					id: "irons_spellbooks:cinderous_vault"
 				}
 				id: "6B00000001000045"
 				structure: "irons_spellbooks:citadel"
