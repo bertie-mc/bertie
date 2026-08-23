@@ -1160,13 +1160,19 @@ write("data/create/recipe/mechanical_crafting/crushing_wheel.json",
            "create:crushing_wheel", 1))
 
 # --- Hallowed Gold Ingot: Spirit Infusion (brass core + magic metals + 4 quartz + mnemonic) ---
-write(f"{R}/malum/hallowed_gold_ingot.json",
-      infusion("create:brass_ingot", 1,
+_hg = infusion("create:brass_ingot", 1,
                [("malum:cthonic_gold", 1), ("forbidden_arcanus:deorum_ingot", 1),
                 ("irons_spellbooks:arcane_ingot", 1), ("armageddon_mod:gilded_nugget", 1),
                 ("minecraft:quartz", 4), ("malum:mnemonic_fragment", 1)],
                [SP("sacred", 9), SP("eldritch", 6), SP("infernal", 3)],
-               "malum:hallowed_gold_ingot", 1))
+               "malum:hallowed_gold_ingot", 1)
+# Either quartz works here too - Malum's Natural Quartz or the vanilla stone.
+_hg["extraInputs"][4] = {
+    "type": "neoforge:compound",
+    "ingredients": [{"item": "minecraft:quartz"}, {"item": "malum:natural_quartz"}],
+    "count": 4,
+}
+write(f"{R}/malum/hallowed_gold_ingot.json", _hg)
 
 # --- Empty Blaze Burner: 3x3 table + 5x5 mech (replaces Create's craft; blaze-capture lighting stays) ---
 _EBB = {"S": _ISH, "R": "minecraft:netherrack", "I": "slag:deep_alloy"}
@@ -1377,6 +1383,27 @@ write(f"{R}/create/colossal_iron_compacting.json",
 #     4 mundabitur dust and a bucket of lava. The declared result is the crucible, but
 #     CrucibleTransmutation intercepts the craft and turns the BASIN into one, dropping the mixer.
 #     Magitech's own bench recipe stays; this is the second route. ---
+# Onyx Shard: Pastel's midnight new-moon fusion, but bathed in Molten Netherite rather than lava
+# and asking for four more things on the shrine.
+write("data/pastel/recipe/fusion_shrine/onyx_shard.json",
+      {"neoforge:conditions": conds("pastel", "slag", "malum", "deepwaters"),
+       "type": "pastel:fusion_shrine",
+       "time": 480,
+       "experience": 2.0,
+       "fluid": {"fluid": "slag:molten_netherite"},
+       "ingredients": ["pastel:topaz_shard", "minecraft:amethyst_shard", "pastel:citrine_shard",
+                       "pastel:shimmerstone_gem", "malum:mnemonic_fragment",
+                       "deepwaters:aquamarine", "minecraft:prismarine_shard"],
+       "result": {"id": "pastel:onyx_shard"},
+       "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
+       "world_conditions": {"time_of_day": "midnight", "moon_phase": "new_moon"},
+       "start_crafting_effect": "weather_thunder_short",
+       "during_crafting_effects": ["visual_explosions_on_shrine", "nothing",
+                                   "visual_explosions_on_shrine"],
+       "finish_crafting_effect": "lightning_on_shrine",
+       "description": {"type": "translatable",
+                       "translate": "pastel.recipe.fusion_shrine.explanation.onyx_shard"}})
+
 # Bottle of Fading: an Ominous Bottle between two Rotting Essences on a basic pedestal, paid for
 # in pigment rather than in shimmerstone and blaze powder.
 _fading = pedestal(["   ", "RBR", "   "],

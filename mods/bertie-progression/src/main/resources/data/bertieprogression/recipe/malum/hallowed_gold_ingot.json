@@ -44,7 +44,15 @@
       "count": 1
     },
     {
-      "item": "minecraft:quartz",
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "minecraft:quartz"
+        },
+        {
+          "item": "malum:natural_quartz"
+        }
+      ],
       "count": 4
     },
     {
