@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "simple",
+  "time": 300,
+  "experience": 4.0,
+  "colors": {
+    "pastel:cyan": 0,
+    "pastel:magenta": 0,
+    "pastel:yellow": 15,
+    "pastel:black": 0,
+    "pastel:white": 0
+  },
+  "pattern": [
+    "CNN",
+    "CBN",
+    "CCC"
+  ],
+  "key": {
+    "C": "irons_spellbooks:cinder_essence",
+    "N": "minecraft:netherite_scrap",
+    "B": "minecraft:bell"
+  },
+  "result": {
+    "id": "irons_spellbooks:cinderous_soulcaller",
+    "count": 1
+  },
+  "required_advancement": "pastel:unlocks/blocks/cmy_pedestal"
+}

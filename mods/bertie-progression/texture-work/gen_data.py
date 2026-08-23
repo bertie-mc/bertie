@@ -2079,6 +2079,38 @@ _failing = pedestal(["FSF", "DBD", "FSF"],
 _failing["required_advancement"] = "pastel:unlocks/items/bottle_of_failing"
 write("data/pastel/recipe/pedestal/tier3/bottle_of_failing.json", _failing)
 
+# Ink storage gets more expensive: the flask wants tinted glass, and the assortment is built out
+# of flasks and Deorum Glass rather than loose pigment.
+_flask = pedestal(["SGS", "GPG", "SGS"],
+                  {"P": "#pastel:pigments", "G": "minecraft:tinted_glass",
+                   "S": "pastel:shimmerstone_gem"},
+                  {"pastel:cyan": 4, "pastel:magenta": 4, "pastel:yellow": 4,
+                   "pastel:black": 0, "pastel:white": 0},
+                  "pastel:ink_flask", 1, tier="simple", time=300, xp=1.0)
+_flask["required_advancement"] = "pastel:unlocks/items/basic_ink_storage_items"
+write("data/pastel/recipe/pedestal/tier2/ink_flask.json", _flask)
+
+_assort = pedestal(["SCS", "PPP", "GGG"],
+                   {"P": "pastel:ink_flask", "G": "forbidden_arcanus:deorum_glass",
+                    "C": "pastel:four_leaf_clover", "S": "pastel:shimmerstone_gem"},
+                   {"pastel:cyan": 16, "pastel:magenta": 16, "pastel:yellow": 16,
+                    "pastel:black": 0, "pastel:white": 0},
+                   "pastel:ink_assortment", 1, tier="simple", time=600, xp=4.0)
+_assort["required_advancement"] = "pastel:unlocks/items/ink_assortment"
+write("data/pastel/recipe/pedestal/tier2/ink_assortment.json", _assort)
+
+# The Cinderous Soulcaller comes off the crafting table and onto the CMY Pedestal, with a Bell at
+# its heart and the netherite scrap gathered into the top-right corner.
+write("data/irons_spellbooks/recipe/cinderous_soulcaller.json", DISABLED)
+_soul = pedestal(["CNN", "CBN", "CCC"],
+                 {"C": "irons_spellbooks:cinder_essence", "N": "minecraft:netherite_scrap",
+                  "B": "minecraft:bell"},
+                 {"pastel:cyan": 0, "pastel:magenta": 0, "pastel:yellow": 15,
+                  "pastel:black": 0, "pastel:white": 0},
+                 "irons_spellbooks:cinderous_soulcaller", 1, tier="simple", time=300, xp=4.0)
+_soul["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
+write("data/pastel/recipe/pedestal/tier2/cinderous_soulcaller.json", _soul)
+
 # A route to Netherite through the Fusion Shrine. The three crafting-effect fields are not
 # optional: leave any of them out and the whole recipe fails to parse.
 write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",

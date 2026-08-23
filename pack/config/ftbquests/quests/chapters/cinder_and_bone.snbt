@@ -799,7 +799,7 @@
 					}
 				]
 			x: 10.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -826,7 +826,190 @@
 					}
 				]
 			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000041"]
+			icon: {
+				id: "pastel:ink_flask"
+			}
+			id: "6B00000000000042"
+			rewards: [{
+				id: "6B00000002000042"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "pastel:ink_flask"
+				}
+				id: "6B00000001000042"
+				item: { count: 1 id: "pastel:ink_flask" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000042"]
+			icon: {
+				id: "pastel:ink_assortment"
+			}
+			id: "6B00000000000043"
+			rewards: [{
+				id: "6B00000002000043"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "pastel:ink_assortment"
+				}
+				id: "6B00000001000043"
+				item: { count: 1 id: "pastel:ink_assortment" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000043"]
+			icon: {
+				id: "pastel:pigment_palette"
+			}
+			id: "6B00000000000044"
+			rewards: [{
+				id: "6B00000002000044"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "pastel:pigment_palette"
+				}
+				id: "6B00000001000044"
+				item: { count: 1 id: "pastel:pigment_palette" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B0000000000003B"]
+			icon: {
+				id: "irons_spellbooks:citadel_map"
+			}
+			id: "6B00000000000045"
+			rewards: [{
+				id: "6B00000002000045"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				icon: {
+					id: "irons_spellbooks:citadel_map"
+				}
+				id: "6B00000001000045"
+				structure: "irons_spellbooks:citadel"
+				type: "structure"
+			}]
+			x: 12.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["6B00000000000045"]
+			icon: {
+				id: "irons_spellbooks:cinder_essence"
+			}
+			id: "6B00000000000046"
+			rewards: [{
+				id: "6B00000002000046"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "irons_spellbooks:cinder_essence"
+				}
+				id: "6B00000001000046"
+				item: { count: 1 id: "irons_spellbooks:cinder_essence" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B00000000000046"]
+			icon: {
+				id: "irons_spellbooks:cinderous_soulcaller"
+			}
+			id: "6B00000000000047"
+			rewards: [{
+				id: "6B00000002000047"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "irons_spellbooks:cinderous_soulcaller"
+				}
+				id: "6B00000001000047"
+				item: { count: 1 id: "irons_spellbooks:cinderous_soulcaller" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B00000000000047"]
+			icon: {
+				id: "irons_spellbooks:divine_soulshard"
+			}
+			id: "6B00000000000048"
+			rewards: [{
+				id: "6B00000002000048"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				entity: "irons_spellbooks:fire_boss"
+				icon: {
+					id: "irons_spellbooks:divine_soulshard"
+				}
+				id: "6B00000001000048"
+				type: "kill"
+				value: 1L
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B0000000000003F"]
+			icon: {
+				id: "sophisticatedbackpacks:netherite_backpack"
+			}
+			id: "6B00000000000049"
+			rewards: [{
+				id: "6B00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				icon: {
+					id: "sophisticatedbackpacks:netherite_backpack"
+				}
+				id: "6B00000001000049"
+				item: { count: 1 id: "sophisticatedbackpacks:netherite_backpack" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 1.5d
 		}
 	]
 }

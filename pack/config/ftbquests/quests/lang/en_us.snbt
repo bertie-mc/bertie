@@ -561,6 +561,22 @@
 	quest.6B00000000000040.title: "Any Coloured Sapling"
 	quest.6B00000000000041.quest_desc: ["Every colour has a pigment of its own, and you will want all of them before long."]
 	quest.6B00000000000041.title: "Any Pigment"
+	quest.6B00000000000042.quest_desc: ["One pigment, bottled - and it holds a great deal more than the dust it was made from."]
+	quest.6B00000000000042.title: "Ink Flask"
+	quest.6B00000000000043.quest_desc: ["Every flask in one case."]
+	quest.6B00000000000043.title: "Ink Assortment"
+	quest.6B00000000000044.quest_desc: ["Carry your ink with you. The Fusion Shrine makes it, in liquid crystal."]
+	quest.6B00000000000044.title: "The Pigment Palette"
+	quest.6B00000000000045.quest_desc: ["Find it. Something is still awake in there."]
+	quest.6B00000000000045.title: "The Lost Citadel"
+	quest.6B00000000000046.quest_desc: ["The soulcaller wants five of these, so do not stop at one."]
+	quest.6B00000000000046.title: "Cinder Essence"
+	quest.6B00000000000047.quest_desc: ["A bell wrapped in ash. Ring it and something answers."]
+	quest.6B00000000000047.title: "The Cinderous Soulcaller"
+	quest.6B00000000000048.quest_desc: ["The First Flamebearer. Bring the soulcaller, and bring help."]
+	quest.6B00000000000048.title: "Echo of Tyros"
+	quest.6B00000000000049.quest_desc: ["The last upgrade your pack will ever take."]
+	quest.6B00000000000049.title: "The Netherite Backpack"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
