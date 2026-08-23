@@ -63,11 +63,11 @@ public final class HephaestusRitualEmiModule {
             return;
         }
 
-        // One category per Hephaestus Forge tier. Each tier's category (whose workstation is that tier's
-        // Forge block) holds exactly the rituals that tier can perform, decided by the ritual's own
-        // TierPredicate: an "at least tier N" ritual appears for tiers N..5, a tier-exact ritual (the
-        // Forge upgrades) only for its exact tier. So viewing the Tier 2 Forge shows tier 1 + tier 2
-        // rituals, the Tier 5 Forge shows every tier-progressive ritual, etc.
+        // One category per Hephaestus Forge tier, each holding only the rituals introduced AT that tier
+        // (the tier named by the ritual's own TierPredicate), never the lower-tier ones it inherits.
+        // A higher-tier Forge really does still perform every ritual below it, but listing them again
+        // on every tier above made the tabs near-identical; the tier a ritual unlocks at is the useful
+        // fact, so that is the only place it is shown.
         EmiRecipeCategory[] byTier = new EmiRecipeCategory[MAX_TIER + 1];
         for (int t = 1; t <= MAX_TIER; t++) {
             byTier[t] = Categories.machine(
@@ -81,18 +81,18 @@ public final class HephaestusRitualEmiModule {
             ResourceLocation ritualId = entry.getKey().location();
             Ritual ritual = entry.getValue();
             try {
-                MachineDescriptor d = describe(ritual);
                 TierPredicate tier = ritual.requirements().tier();
-                for (int t = 1; t <= MAX_TIER; t++) {
-                    if (!tier.test(t)) {
-                        continue;
-                    }
-                    ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(
-                            "bertieemi",
-                            "fa_hephaestus_ritual_tier_" + t + "/" + ritualId.getNamespace() + "/"
-                                    + ritualId.getPath());
-                    reg.addRecipe(new GenericEmiRecipe(byTier[t], displayId, d));
+                // A datapack may omit "forge_tier" (defaults to 1) or aim past the highest Forge we
+                // build categories for; the latter is unreachable in game, so it gets no entry.
+                int t = Math.max(1, tier.tier());
+                if (t > MAX_TIER) {
+                    return;
                 }
+                MachineDescriptor d = describe(ritual);
+                ResourceLocation displayId = ResourceLocation.fromNamespaceAndPath(
+                        "bertieemi",
+                        "fa_hephaestus_ritual_tier_" + t + "/" + ritualId.getNamespace() + "/" + ritualId.getPath());
+                reg.addRecipe(new GenericEmiRecipe(byTier[t], displayId, d));
             } catch (Throwable ignored) {
                 // one malformed ritual must not take down the categories
             }

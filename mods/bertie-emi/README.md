@@ -17,6 +17,9 @@ Releases use `bertie-emi/vX.Y.Z` tags on the
 ## Credits / Integration
 Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Magitech, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
 
+A few integrations instead reshape a plugin the target mod already ships: Pastel's single pedestal-crafting
+category is replaced by one per pedestal tier, reusing Pastel's own recipe rendering.
+
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency
 resolves from public Maven repositories. The `jarJarCompileOnly` dependency convention makes
