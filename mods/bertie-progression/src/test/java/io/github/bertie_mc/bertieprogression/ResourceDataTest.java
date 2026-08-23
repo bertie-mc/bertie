@@ -3,6 +3,7 @@ package io.github.bertie_mc.bertieprogression;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -77,5 +78,39 @@ class ResourceDataTest {
             }
         }
         assertTrue(missing.isEmpty(), String.join("\n", missing));
+    }
+
+    /**
+     * Every Hephaestus Forge tier upgrade must start from the tier below the one it grants, so the
+     * chain from Tier 1 has no gap and no branch. Forbidden &amp; Arcanus defaults a missing
+     * {@code forge_tier} to 1, which is silent and correct only for the very first upgrade; an
+     * override that drops the field from a later one strands the player on whichever tier they
+     * reached (upgrade_tier_3 did exactly that).
+     */
+    @Test
+    void forgeTierUpgradesFormAContinuousChain() throws IOException {
+        Path rituals = RESOURCES.resolve("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual");
+        List<String> broken = new ArrayList<>();
+        try (var files = Files.walk(rituals)) {
+            for (Path ritual :
+                    files.filter(path -> path.toString().endsWith(".json")).toList()) {
+                JsonObject parsed =
+                        JsonParser.parseString(Files.readString(ritual)).getAsJsonObject();
+                JsonObject result = parsed.getAsJsonObject("result");
+                if (result == null
+                        || !"forbidden_arcanus:upgrade_tier"
+                                .equals(result.get("type").getAsString())) {
+                    continue;
+                }
+                int granted = result.get("result_tier").getAsInt();
+                int required =
+                        parsed.has("forge_tier") ? parsed.get("forge_tier").getAsInt() : 1;
+                if (required != granted - 1) {
+                    broken.add(RESOURCES.relativize(ritual) + ": runs on Tier " + required + " but grants Tier "
+                            + granted);
+                }
+            }
+        }
+        assertTrue(broken.isEmpty(), String.join("\n", broken));
     }
 }
