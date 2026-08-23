@@ -316,6 +316,7 @@
 				count: 1
 				id: "minecraft:wither_skeleton_skull"
 			}
+			dependencies: ["6B0000000000000C"]
 			id: "6B0000000000000D"
 			rewards: [{
 				id: "6B0000000200000D"
@@ -388,6 +389,7 @@
 				count: 1
 				id: "cataclysm:mech_eye"
 			}
+			dependencies: ["6B0000000000000F"]
 			id: "6B00000000000010"
 			rewards: [{
 				id: "6B00000002000010"
@@ -631,8 +633,8 @@
 						type: "item"
 					}
 				]
-			x: 16.8d
-			y: -1.5d
+			x: 17.05d
+			y: -1.41d
 		}
 		{
 			icon: {
@@ -654,8 +656,8 @@
 						type: "item"
 					}
 				]
-			x: 14.0d
-			y: -2.6d
+			x: 15.66d
+			y: -1.98d
 		}
 		{
 			icon: {
@@ -677,8 +679,8 @@
 						type: "item"
 					}
 				]
-			x: 17.6d
-			y: -2.9d
+			x: 17.81d
+			y: -2.73d
 		}
 		{
 			icon: {
@@ -700,8 +702,8 @@
 						type: "item"
 					}
 				]
-			x: 15.3d
-			y: -4.8d
+			x: 16.64d
+			y: -3.67d
 		}
 		{
 			icon: {
@@ -723,8 +725,8 @@
 						type: "item"
 					}
 				]
-			x: 18.8d
-			y: -3.9d
+			x: 18.94d
+			y: -3.66d
 		}
 		{
 			icon: {
@@ -746,8 +748,8 @@
 						type: "item"
 					}
 				]
-			x: 17.2d
-			y: -6.5d
+			x: 18.13d
+			y: -4.92d
 		}
 		{
 			icon: {
@@ -769,8 +771,8 @@
 						type: "item"
 					}
 				]
-			x: 20.2d
-			y: -4.4d
+			x: 20.24d
+			y: -4.13d
 		}
 		{
 			icon: {
@@ -792,8 +794,8 @@
 						type: "item"
 					}
 				]
-			x: 19.7d
-			y: -7.4d
+			x: 20.01d
+			y: -5.61d
 		}
 		{
 			icon: {
@@ -815,8 +817,8 @@
 						type: "item"
 					}
 				]
-			x: 21.8d
-			y: -4.4d
+			x: 21.76d
+			y: -4.13d
 		}
 		{
 			icon: {
@@ -838,8 +840,8 @@
 						type: "item"
 					}
 				]
-			x: 22.3d
-			y: -7.4d
+			x: 21.99d
+			y: -5.61d
 		}
 		{
 			icon: {
@@ -861,8 +863,8 @@
 						type: "item"
 					}
 				]
-			x: 23.2d
-			y: -3.9d
+			x: 23.06d
+			y: -3.66d
 		}
 		{
 			icon: {
@@ -884,8 +886,8 @@
 						type: "item"
 					}
 				]
-			x: 24.8d
-			y: -6.5d
+			x: 23.87d
+			y: -4.92d
 		}
 		{
 			icon: {
@@ -907,8 +909,8 @@
 						type: "item"
 					}
 				]
-			x: 24.4d
-			y: -2.9d
+			x: 24.19d
+			y: -2.73d
 		}
 		{
 			icon: {
@@ -930,8 +932,8 @@
 						type: "item"
 					}
 				]
-			x: 26.7d
-			y: -4.8d
+			x: 25.36d
+			y: -3.67d
 		}
 		{
 			icon: {
@@ -953,8 +955,8 @@
 						type: "item"
 					}
 				]
-			x: 25.2d
-			y: -1.5d
+			x: 24.95d
+			y: -1.41d
 		}
 		{
 			icon: {
@@ -976,8 +978,8 @@
 						type: "item"
 					}
 				]
-			x: 28.0d
-			y: -2.6d
+			x: 26.34d
+			y: -1.98d
 		}
 		{
 			icon: {
@@ -999,8 +1001,8 @@
 						type: "item"
 					}
 				]
-			x: 25.2d
-			y: 1.5d
+			x: 24.95d
+			y: 1.41d
 		}
 		{
 			icon: {
@@ -1022,8 +1024,8 @@
 						type: "item"
 					}
 				]
-			x: 28.0d
-			y: 2.6d
+			x: 26.34d
+			y: 1.98d
 		}
 		{
 			icon: {
@@ -1045,8 +1047,8 @@
 						type: "item"
 					}
 				]
-			x: 24.4d
-			y: 2.9d
+			x: 24.19d
+			y: 2.73d
 		}
 		{
 			icon: {
@@ -1068,8 +1070,8 @@
 						type: "item"
 					}
 				]
-			x: 26.7d
-			y: 4.8d
+			x: 25.36d
+			y: 3.67d
 		}
 		{
 			icon: {
@@ -1091,8 +1093,8 @@
 						type: "item"
 					}
 				]
-			x: 23.2d
-			y: 3.9d
+			x: 23.06d
+			y: 3.66d
 		}
 		{
 			icon: {
@@ -1114,8 +1116,8 @@
 						type: "item"
 					}
 				]
-			x: 24.8d
-			y: 6.5d
+			x: 23.87d
+			y: 4.92d
 		}
 		{
 			icon: {
@@ -1137,8 +1139,8 @@
 						type: "item"
 					}
 				]
-			x: 21.8d
-			y: 4.4d
+			x: 21.76d
+			y: 4.13d
 		}
 		{
 			icon: {
@@ -1160,8 +1162,8 @@
 						type: "item"
 					}
 				]
-			x: 22.3d
-			y: 7.4d
+			x: 21.99d
+			y: 5.61d
 		}
 		{
 			icon: {
@@ -1183,8 +1185,8 @@
 						type: "item"
 					}
 				]
-			x: 20.2d
-			y: 4.4d
+			x: 20.24d
+			y: 4.13d
 		}
 		{
 			icon: {
@@ -1206,8 +1208,8 @@
 						type: "item"
 					}
 				]
-			x: 19.7d
-			y: 7.4d
+			x: 20.01d
+			y: 5.61d
 		}
 		{
 			icon: {
@@ -1229,8 +1231,8 @@
 						type: "item"
 					}
 				]
-			x: 18.8d
-			y: 3.9d
+			x: 18.94d
+			y: 3.66d
 		}
 		{
 			icon: {
@@ -1252,8 +1254,8 @@
 						type: "item"
 					}
 				]
-			x: 17.2d
-			y: 6.5d
+			x: 18.13d
+			y: 4.92d
 		}
 		{
 			icon: {
@@ -1275,8 +1277,8 @@
 						type: "item"
 					}
 				]
-			x: 17.6d
-			y: 2.9d
+			x: 17.81d
+			y: 2.73d
 		}
 		{
 			icon: {
@@ -1298,8 +1300,8 @@
 						type: "item"
 					}
 				]
-			x: 15.3d
-			y: 4.8d
+			x: 16.64d
+			y: 3.67d
 		}
 		{
 			icon: {
@@ -1321,8 +1323,8 @@
 						type: "item"
 					}
 				]
-			x: 16.8d
-			y: 1.5d
+			x: 17.05d
+			y: 1.41d
 		}
 		{
 			icon: {
@@ -1344,15 +1346,15 @@
 						type: "item"
 					}
 				]
-			x: 14.0d
-			y: 2.6d
+			x: 15.66d
+			y: 1.98d
 		}
 		{
 			icon: {
 				count: 1
 				id: "pastel:fusion_shrine_basalt"
 			}
-			dependencies: ["6B00000000000016"]
+			dependencies: ["6B0000000000003B"]
 			id: "6B00000000000039"
 			rewards: [{
 				id: "6B00000002000039"
@@ -1391,6 +1393,121 @@
 					}
 				]
 			x: 31.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:pedestal_all_basic"
+			}
+			dependencies: ["6B00000000000016"]
+			id: "6B0000000000003B"
+			rewards: [{
+				id: "6B0000000200003B"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B0000000100003B"
+						item: { count: 1 id: "pastel:pedestal_all_basic" }
+						type: "item"
+					}
+				]
+			x: 28.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:pedestal_onyx"
+			}
+			dependencies: ["6B0000000000003A"]
+			id: "6B0000000000003C"
+			rewards: [{
+				id: "6B0000000200003C"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B0000000100003C"
+						item: { count: 1 id: "pastel:pedestal_onyx" }
+						type: "item"
+					}
+				]
+			x: 33.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:bottle_of_failing"
+			}
+			dependencies: ["6B0000000000003C"]
+			id: "6B0000000000003D"
+			rewards: [{
+				id: "6B0000000200003D"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B0000000100003D"
+						item: { count: 1 id: "pastel:bottle_of_failing" }
+						type: "item"
+					}
+				]
+			x: 34.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "pastel:neolith"
+			}
+			dependencies: ["6B0000000000003D"]
+			id: "6B0000000000003E"
+			rewards: [{
+				id: "6B0000000200003E"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B0000000100003E"
+						item: { count: 1 id: "pastel:neolith" }
+						type: "item"
+					}
+				]
+			x: 36.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				count: 1
+				id: "minecraft:netherite_ingot"
+			}
+			dependencies: ["6B0000000000003E"]
+			id: "6B0000000000003F"
+			rewards: [{
+				id: "6B0000000200003F"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "6B0000000100003F"
+						item: { count: 1 id: "minecraft:netherite_ingot" }
+						type: "item"
+					}
+				]
+			x: 37.5d
 			y: 0.0d
 		}
 	]

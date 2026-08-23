@@ -611,6 +611,16 @@
 	quest.6B00000000000039.title: "The Fusion Shrine"
 	quest.6B0000000000003A.quest_desc: ["Fuse one at midnight on a new moon, in Molten Netherite."]
 	quest.6B0000000000003A.title: "Onyx Shard"
+	quest.6B0000000000003B.quest_desc: ["Cyan, magenta and yellow at once. Three pedestals folded into one."]
+	quest.6B0000000000003B.title: "The CMY Pedestal"
+	quest.6B0000000000003C.quest_desc: ["Black joins the other three."]
+	quest.6B0000000000003C.title: "The Onyx Pedestal"
+	quest.6B0000000000003D.quest_desc: ["Fading was the first experiment. This one is hungrier."]
+	quest.6B0000000000003D.title: "Bottle of Failing"
+	quest.6B0000000000003E.quest_desc: ["No pedestal will make this. Brew it in the Potion Workshop."]
+	quest.6B0000000000003E.title: "Neolith"
+	quest.6B0000000000003F.quest_desc: ["The Fusion Shrine will pull one out of molten gold, rosest gold and scrap."]
+	quest.6B0000000000003F.title: "Netherite Ingot"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]

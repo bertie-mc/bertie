@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "advanced",
+  "time": 1200,
+  "experience": 2.0,
+  "colors": {
+    "pastel:cyan": 16,
+    "pastel:magenta": 16,
+    "pastel:yellow": 16,
+    "pastel:black": 16,
+    "pastel:white": 16
+  },
+  "pattern": [
+    "FSF",
+    "DBD",
+    "FSF"
+  ],
+  "key": {
+    "F": "minecraft:fermented_spider_eye",
+    "S": "pastel:stratine_gem",
+    "D": "forbidden_arcanus:dark_matter",
+    "B": "pastel:bottle_of_fading"
+  },
+  "result": {
+    "id": "pastel:bottle_of_failing",
+    "count": 1
+  },
+  "required_advancement": "pastel:unlocks/items/bottle_of_failing"
+}

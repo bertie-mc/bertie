@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "pastel:fusion_shrine",
+  "time": 400,
+  "experience": 4.0,
+  "fluid": {
+    "fluid": "slag:molten_gold"
+  },
+  "ingredients": [
+    "hazennstuff:rose_gold_ingot",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "pastel:neolith",
+    "pastel:neolith"
+  ],
+  "result": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+  },
+  "required_advancement": "pastel:unlocks/blocks/fusion_shrine"
+}

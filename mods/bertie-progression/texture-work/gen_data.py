@@ -2033,6 +2033,67 @@ for _gem, _shard, _sound, _adv in (
               "required_advancement": _adv,
           })
 
+# --- The late Pastel chain: CMY pedestal, rose quartz, failing, netherite. ---
+# c:gems/quartz is no use here: it holds Rose Quartz itself and Natural Quartz, but not Nether
+# Quartz. This tag is the plain "either quartz" the recipes below want.
+write("data/bertieprogression/tags/item/quartz.json",
+      {"values": [{"id": "minecraft:quartz", "required": False},
+                  {"id": "malum:natural_quartz", "required": False}]})
+
+# The CMY Pedestal: the three polished gem blocks across the top, a Vegetal Block bedded in
+# polished calcite. It costs a full sixteen of every pigment.
+_cmy = pedestal(["TAC", "RVR", "RRR"],
+                {"T": "pastel:polished_topaz_block", "A": "pastel:polished_amethyst_block",
+                 "C": "pastel:polished_citrine_block", "R": "pastel:polished_calcite",
+                 "V": "pastel:vegetal_block"},
+                {"pastel:cyan": 16, "pastel:magenta": 16, "pastel:yellow": 16,
+                 "pastel:black": 16, "pastel:white": 16},
+                "pastel:pedestal_all_basic", 1, tier="basic", time=480, xp=4.0)
+_cmy["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
+_cmy["disable_yield_upgrades"] = True
+write("data/pastel/recipe/pedestal/tier1/pedestal_all_basic.json", _cmy)
+
+# Rose Quartz stops being two items off a shapeless craft and moves onto the Onyx Pedestal.
+write("data/hazennstuff/recipe/crafting/materials/rose_quartz.json", DISABLED)
+_rq = pedestal(["PDP", "OQO", "PDP"],
+               {"P": "pastel:pink_pigment", "D": "irons_spellbooks:divine_pearl",
+                "O": "pastel:orange_pigment", "Q": "minecraft:quartz"},
+               {"pastel:cyan": 0, "pastel:magenta": 6, "pastel:yellow": 4,
+                "pastel:black": 0, "pastel:white": 0},
+               "hazennstuff:rose_quartz", 1, tier="advanced", time=40, xp=2.0)
+_rq["key"]["Q"] = {"tag": "bertieprogression:quartz"}
+_rq["required_advancement"] = "pastel:midgame/build_advanced_pedestal_structure"
+write("data/pastel/recipe/pedestal/tier3/rose_quartz.json", _rq)
+
+# Bottle of Failing: Pastel's own frame, but a Bottle of Fading at the heart, Stratine Gems
+# instead of fragments and Dark Matter where the prismarine was.
+_failing = pedestal(["FSF", "DBD", "FSF"],
+                    {"F": "minecraft:fermented_spider_eye", "S": "pastel:stratine_gem",
+                     "D": "forbidden_arcanus:dark_matter", "B": "pastel:bottle_of_fading"},
+                    {"pastel:cyan": 16, "pastel:magenta": 16, "pastel:yellow": 16,
+                     "pastel:black": 16, "pastel:white": 16},
+                    "pastel:bottle_of_failing", 1, tier="advanced", time=1200, xp=2.0)
+_failing["required_advancement"] = "pastel:unlocks/items/bottle_of_failing"
+write("data/pastel/recipe/pedestal/tier3/bottle_of_failing.json", _failing)
+
+# A second route to Netherite that skips the smithing table entirely. Vanilla's own recipe stays.
+write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",
+      {"neoforge:conditions": conds("pastel", "slag", "hazennstuff"),
+       "type": "pastel:fusion_shrine", "time": 400, "experience": 4.0,
+       "fluid": {"fluid": "slag:molten_gold"},
+       "ingredients": ["hazennstuff:rose_gold_ingot",
+                       "minecraft:netherite_scrap", "minecraft:netherite_scrap",
+                       "minecraft:netherite_scrap", "minecraft:netherite_scrap",
+                       "pastel:neolith", "pastel:neolith"],
+       "result": {"id": "minecraft:netherite_ingot", "count": 1},
+       "required_advancement": "pastel:unlocks/blocks/fusion_shrine"})
+
+# Two mods ship a Rose Gold Ingot. Haze n Stuff's gets a name of its own so the pack can tell
+# them apart at a glance.
+write("assets/hazennstuff/lang/en_us.json",
+      {"item.hazennstuff.rose_gold_ingot": "Rosest Gold Ingot",
+       "material.hazennstuff.rose_gold": "Rosest Gold"})
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.

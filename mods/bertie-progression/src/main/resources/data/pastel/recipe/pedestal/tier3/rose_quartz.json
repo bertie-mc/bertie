@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "advanced",
+  "time": 40,
+  "experience": 2.0,
+  "colors": {
+    "pastel:cyan": 0,
+    "pastel:magenta": 6,
+    "pastel:yellow": 4,
+    "pastel:black": 0,
+    "pastel:white": 0
+  },
+  "pattern": [
+    "PDP",
+    "OQO",
+    "PDP"
+  ],
+  "key": {
+    "P": "pastel:pink_pigment",
+    "D": "irons_spellbooks:divine_pearl",
+    "O": "pastel:orange_pigment",
+    "Q": {
+      "tag": "bertieprogression:quartz"
+    }
+  },
+  "result": {
+    "id": "hazennstuff:rose_quartz",
+    "count": 1
+  },
+  "required_advancement": "pastel:midgame/build_advanced_pedestal_structure"
+}
