@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "eezo_ingot",
+  "ingredient": {
+    "item": "bertieprogression:raw_eezo"
+  },
+  "result": {
+    "id": "bertieprogression:eezo_ingot"
+  }
+}

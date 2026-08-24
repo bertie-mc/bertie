@@ -55,4 +55,16 @@ permits the derivative provided the notice below travels with it:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
+The eezo sprites
+
+  assets/bertieprogression/textures/block/eezo_ore.png
+  assets/bertieprogression/textures/item/raw_eezo.png
+  assets/bertieprogression/textures/item/eezo_ingot.png
+
+are original and are drawn by texture-work/make_eezo.py. They deliberately use
+the same five greys as vanilla bedrock, read off that texture with a histogram,
+because the ore is meant to be mistaken for bedrock. No Mojang pixels are
+copied: the arrangement, the silhouettes and the shading are all drawn here, and
+a palette of RGB values carries no licence of its own.
+
 Every other asset here is original.

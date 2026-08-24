@@ -16,6 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -148,6 +149,11 @@ public final class ModItems {
     public static final DeferredItem<Item> CURSED_CORE = simple("cursed_core", 16);
     public static final DeferredItem<Item> STORM_CORE = simple("storm_core", 16);
 
+    // --- Eezo: the bedrock-lookalike ore, its raw drop and the ingot it smelts into. ---
+    public static final DeferredItem<BlockItem> EEZO_ORE = ITEMS.registerSimpleBlockItem(ModBlocks.EEZO_ORE);
+    public static final DeferredItem<Item> RAW_EEZO = simple("raw_eezo", 64);
+    public static final DeferredItem<Item> EEZO_INGOT = simple("eezo_ingot", 64);
+
     public static final DeferredItem<Item> BOSS_REMATCH_SEAL = simple("boss_rematch_seal", 16);
 
     public static final Supplier<CreativeModeTab> MAIN_TAB = TABS.register(
@@ -165,6 +171,7 @@ public final class ModItems {
                         out.accept(KRAKEN_SHIP_MAP.get());
                         out.accept(YETI_HIDEOUT_MAP.get());
                         out.accept(CRAFTING_LICENSE.get());
+                        out.accept(EEZO_ORE.get());
                     })
                     .build());
 
