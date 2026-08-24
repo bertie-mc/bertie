@@ -60,15 +60,18 @@ ORE_VIOLET = {
 }
 
 # Eight tones for the items, plus three violets and an outline.
+# Pulled down from the first attempt at these: eezo comes out of a bedrock seam, and a ramp
+# topping out near white read as polished steel. The highlight is now a light grey, not a
+# white, and the body sits in the lower half.
 ITEM = {
-    "1": (0xEE, 0xEE, 0xF2),
-    "2": (0xCB, 0xCB, 0xD3),
-    "3": (0xA8, 0xA8, 0xB1),
-    "4": (0x88, 0x88, 0x91),
-    "5": (0x6B, 0x6B, 0x74),
-    "6": (0x51, 0x51, 0x59),
-    "7": (0x3A, 0x3A, 0x42),
-    "8": (0x22, 0x22, 0x29),
+    "1": (0xC4, 0xC4, 0xCC),
+    "2": (0xA6, 0xA6, 0xAF),
+    "3": (0x8B, 0x8B, 0x95),
+    "4": (0x72, 0x72, 0x7B),
+    "5": (0x5C, 0x5C, 0x65),
+    "6": (0x48, 0x48, 0x50),
+    "7": (0x35, 0x35, 0x3C),
+    "8": (0x1F, 0x1F, 0x25),
     "p": (0x2C, 0x24, 0x4C),
     "P": (0x45, 0x37, 0x77),
     "Q": (0x6A, 0x57, 0xA8),
@@ -89,6 +92,36 @@ SPECKS = [
     (11, 7, "V"), (12, 7, "v"),
     (7, 12, "v"), (8, 12, "V"), (8, 13, "v"),
 ]
+
+
+def inside(polygon, px, py):
+    """Point-in-convex-polygon: every edge has to keep the point on the same side."""
+    sign = None
+    for index in range(len(polygon)):
+        ax, ay = polygon[index]
+        bx, by = polygon[(index + 1) % len(polygon)]
+        cross = (bx - ax) * (py - ay) - (by - ay) * (px - ax)
+        if abs(cross) < 1e-9:
+            continue
+        if sign is None:
+            sign = cross > 0
+        elif (cross > 0) != sign:
+            return False
+    return True
+
+
+def face(polygon, tone):
+    return [
+        [tone if inside(polygon, x + 0.5, y + 0.5) else "." for x in range(16)]
+        for y in range(16)
+    ]
+
+
+def over(base, top):
+    return [
+        [top[y][x] if top[y][x] != "." else base[y][x] for x in range(16)]
+        for y in range(16)
+    ]
 
 
 def ring(rows):
@@ -185,47 +218,116 @@ def ore_rows():
 # The dark end of the ramp lives INSIDE the silhouette, not along its edge. Shading down to
 # 6 at the rim and letting ring() overwrite it leaves a body of nothing but tones 1-3, which
 # is precisely how the last pass ended up with no gradient at all.
+# Dented and patchy on purpose. A raw ore is a piece broken out of rock: vanilla's all have
+# notched outlines and cavities, and a smooth blob with one clean left-to-right gradient
+# reads as a pebble. The edges step in and out, and the shading has light spots inside the
+# dark half and hollows inside the lit half rather than one uniform sweep.
+# The gradient that worked, with noise and dents added to it rather than a redraw. Two things
+# a raw ore needs that a clean blob does not: an outline that steps in and out instead of
+# running in long unbroken lines, and shading that is patchy - a hollow inside the lit half, a
+# catch of light inside the shadow - rather than one even sweep across the piece.
+#
+# Dents are cheap to overdo. Every notch turns its neighbours into boundary, and boundary
+# becomes outline, so a shape this size takes about four before the interior starts to
+# disappear under its own edge.
 RAW_EEZO = ring(parse([
     "................",
     "...1112222......",
-    "..111122233.....",
-    ".11112223344....",
-    ".11P12233445....",
+    "..112122334.....",
+    ".11132223344....",
+    ".11P12243455....",
     ".1PQ12233455....",
-    ".11PQ2334556....",
-    ".1122334556.....",
+    ".11PQ2354456....",
+    ".1132334556.....",
     ".1223345667.....",
     "..23445611223...",
-    "...456671PQ23...",
-    ".....66773455...",
+    "...456674PQ23...",
+    ".....66573455...",
     "......774456....",
     ".......5667.....",
     "................",
     "................",
 ]))
 
-# A triangular prism at an ingot's angle, its triangular end towards the camera. The left end
-# is tall and the body recedes up and to the right, so the near cap reads as a face rather
-# than as the end of a bar. Three bands - bright top, mid cap, dark right - because it is the
-# STEP between facets that reads as volume. The violet is the core rod in section.
-EEZO_INGOT = ring(parse([
-    "................",
-    "................",
-    "................",
-    ".........22222..",
-    ".......11222222.",
-    ".....1111222222.",
-    "...33112222667..",
-    "..34411222667...",
-    ".3PQ44226677....",
-    ".3PQ4466577.....",
-    ".344466577......",
-    "..4466577.......",
-    "...66577........",
-    "................",
-    "................",
-    "................",
-]))
+
+PRISM_YAW = -55.0
+PRISM_PITCH = -20.0
+PRISM_LENGTH = 2.4
+PRISM_SCALE = 8.5
+
+
+def eezo_ingot_rows():
+    """
+    A triangular prism, projected rather than drawn.
+
+    Four hand-drawn attempts at this came out as a fang, because a prism at an angle is not a
+    silhouette anyone eyeballs correctly on a 16x16 grid - the ridge and the end cap have to
+    agree with each other or the eye refuses to read it as a solid. So the real thing is built
+    in three dimensions, turned to face the camera down its axis, and orthographically
+    projected. Back-faces drop out on their own, which leaves exactly what should be visible:
+    the triangular end and the roof running back from it.
+
+    The two faces are then given tones by hand rather than by the light angle. Lambert put
+    them within one step of each other and the crease disappeared; a solid needs the STEP.
+    """
+    import math
+
+    apex, left, right = (0.5, 0.95), (0.0, 0.0), (1.0, 0.0)
+    near = [(0.0, y, z) for y, z in (apex, left, right)]
+    far = [(PRISM_LENGTH, y, z) for y, z in (apex, left, right)]
+    points = near + far
+    centre = [sum(p[i] for p in points) / 6.0 for i in range(3)]
+    points = [tuple(p[i] - centre[i] for i in range(3)) for p in points]
+
+    yaw, pitch = math.radians(PRISM_YAW), math.radians(PRISM_PITCH)
+
+    def turn(p):
+        x, y, z = p
+        x, y = x * math.cos(yaw) - y * math.sin(yaw), x * math.sin(yaw) + y * math.cos(yaw)
+        y, z = y * math.cos(pitch) - z * math.sin(pitch), y * math.sin(pitch) + z * math.cos(pitch)
+        return x, y, z
+
+    turned = [turn(p) for p in points]
+
+    def flat(p):
+        return 8.0 + p[0] * PRISM_SCALE, 8.6 - p[2] * PRISM_SCALE
+
+    # (vertices, tone). The camera looks along +y, so a face whose normal has a negative y
+    # component is pointing at it; everything else is the far side and never drawn.
+    plan = (([0, 1, 2], "2"), ([3, 5, 4], "2"), ([0, 3, 4, 1], "4"), ([0, 2, 5, 3], "5"), ([1, 4, 5, 2], "6"))
+    drawn = []
+    for indices, tone in plan:
+        a, b, c = (turned[i] for i in indices[:3])
+        u = [b[i] - a[i] for i in range(3)]
+        v = [c[i] - a[i] for i in range(3)]
+        normal_y = u[2] * v[0] - u[0] * v[2]
+        if normal_y >= 0.0:
+            continue
+        depth = sum(turned[i][1] for i in indices) / len(indices)
+        drawn.append((depth, [flat(turned[i]) for i in indices], tone, tuple(indices)))
+    drawn.sort(key=lambda item: -item[0])
+
+    rows = [["." for _ in range(16)] for _ in range(16)]
+    for _, polygon, tone, _ in drawn:
+        for y in range(16):
+            for x in range(16):
+                if inside(polygon, x + 0.5, y + 0.5):
+                    rows[y][x] = tone
+
+    # The core rod, in section, on the TRIANGULAR END - the whole point of showing that face.
+    # Taking the nearest polygon instead put it on the roof, where it reads as a stain.
+    cap = next((poly for _, poly, _, idx in drawn if idx == (0, 1, 2)), None)
+    if cap:
+        cx = sum(p[0] for p in cap) / len(cap)
+        cy = sum(p[1] for p in cap) / len(cap)
+        for dx, dy, tone in ((0, 0, "Q"), (1, 0, "P"), (0, 1, "P"), (1, 1, "p")):
+            x, y = int(cx) + dx, int(cy) + dy
+            if 0 <= x < 16 and 0 <= y < 16 and rows[y][x] == "2":
+                rows[y][x] = tone
+    return rows
+
+
+EEZO_INGOT = ring(eezo_ingot_rows())
 
 
 def main():
