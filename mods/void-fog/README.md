@@ -46,12 +46,12 @@ either way.
 | `depth.enabled` | `true` | draw the fog at all |
 | `depth.dimensions` | `["minecraft:overworld"]` | dimensions that get it; anything unlisted is untouched |
 | `depth.fadeDepth` | `10` | blocks above the floor where it starts to show (overworld y=-54) |
-| `depth.fullDepth` | `3` | blocks above the floor where it is at full strength, measured to the eye |
+| `depth.fullDepth` | `5` | blocks above the floor where it is at full strength, measured to the eye |
 | `sky.radius` | `24` | how far an opening to the sky holds it off; `0` ignores daylight |
 | `sky.scanInterval` | `10` | ticks between sky scans; the result is eased between them |
 | `appearance.fogStart` | `0.0` | distance from the camera where the fog begins |
-| `appearance.fogClear` | `48.0` | how far you see at the top of the band; the scale's other end |
-| `appearance.fogEnd` | `12.0` | distance where it is solid; lower is thicker |
+| `appearance.fogClear` | `28.0` | how far you see at the top of the band; the scale's other end |
+| `appearance.fogEnd` | `8.0` | distance where it is solid; lower is thicker |
 | `appearance.darkness` | `1.0` | how far the colour is pulled to black; 1.0 is pitch black |
 | `particles.enabled` | `true` | draw the motes |
 | `particles.perTick` | `6` | motes per tick at full strength, scaling down with the fog |

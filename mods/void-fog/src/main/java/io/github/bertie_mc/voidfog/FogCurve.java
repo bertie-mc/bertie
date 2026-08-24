@@ -54,6 +54,26 @@ public final class FogCurve {
     }
 
     /**
+     * How much of the world's own colour survives at a given fog strength.
+     *
+     * <p>Deliberately NOT linear. Linear meant that standing on the ordinary bedrock floor -
+     * which works out around a third of full strength - kept two thirds of the original fog
+     * colour, so distance faded to grey and a torch-lit tunnel stayed perfectly readable
+     * thirty blocks down. Raising the strength to a power below one drives the colour to
+     * black across the top of the band instead of only at the very bottom, which is what
+     * makes light stop rescuing you.
+     */
+    public static float colourKept(float strength, float darkness) {
+        if (strength <= 0.0F) {
+            return 1.0F;
+        }
+        return 1.0F - darkness * (float) Math.pow(Math.min(1.0F, strength), COLOUR_FALLOFF);
+    }
+
+    /** Lower drives the fog to black sooner in the band. */
+    private static final double COLOUR_FALLOFF = 0.4;
+
+    /**
      * How much the fog survives being near a column that is open to the sky.
      *
      * <p>Zero when a sky-lit column is at hand and one once the nearest is {@code radius} away or

@@ -67,7 +67,7 @@ public final class VoidFogRenderer {
             return;
         }
 
-        float keep = 1.0F - strength * (float) VoidFogConfig.DARKNESS.getAsDouble();
+        float keep = FogCurve.colourKept(strength, (float) VoidFogConfig.DARKNESS.getAsDouble());
         event.setRed(event.getRed() * keep);
         event.setGreen(event.getGreen() * keep);
         event.setBlue(event.getBlue() * keep);

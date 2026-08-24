@@ -57,7 +57,7 @@ public final class VoidFogConfig {
                         "player's EYE, so this has to be a height someone can actually stand at: the",
                         "lowest floor is the y=-64 bedrock layer, which puts an eye at about 2.6, so 3.",
                         "Setting this to 0 means full strength is only reached inside solid rock.")
-                .defineInRange("fullDepth", 3, 0, 512);
+                .defineInRange("fullDepth", 5, 0, 512);
 
         builder.pop();
 
@@ -89,10 +89,10 @@ public final class VoidFogConfig {
                         "here down to fogEnd, and is deliberately NOT the render distance - anchoring",
                         "to the render distance made the fog mean something different on every",
                         "machine, and left a tunnel readable eighty blocks down at a third strength.")
-                .defineInRange("fogClear", 48.0, 4.0, 512.0);
+                .defineInRange("fogClear", 28.0, 4.0, 512.0);
 
         FOG_END = builder.comment("Distance where the fog is solid, in blocks. Lower is thicker.")
-                .defineInRange("fogEnd", 12.0, 1.0, 512.0);
+                .defineInRange("fogEnd", 8.0, 1.0, 512.0);
 
         DARKNESS = builder.comment(
                         "How far the fog colour is pulled towards black. 1.0 is pitch black, which is",

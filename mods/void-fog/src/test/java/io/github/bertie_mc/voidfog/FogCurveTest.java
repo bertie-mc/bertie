@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class FogCurveTest {
     private static final int OVERWORLD_FLOOR = -64;
     private static final int FADE = 10;
-    private static final int FULL = 3;
+    private static final int FULL = 5;
 
     /** Eye height above the block a player stands on. */
     private static final double EYE = 1.62;
@@ -39,7 +39,7 @@ class FogCurveTest {
 
     @Test
     void measuresDepthFromEachDimensionsOwnFloor() {
-        assertEquals(1.0F, FogCurve.strength(3.0, 0, FADE, FULL));
+        assertEquals(1.0F, FogCurve.strength(5.0, 0, FADE, FULL));
         assertEquals(0.0F, FogCurve.strength(10.0, 0, FADE, FULL));
     }
 
@@ -80,6 +80,26 @@ class FogCurveTest {
     @Test
     void distanceFallsBackToLerpWhenAnEndIsZero() {
         assertEquals(8.0F, FogCurve.distance(16.0F, 0.0F, 0.5F), 1.0e-4F);
+    }
+
+    /**
+     * The reason a lit tunnel stayed readable: linear colour meant the ordinary bedrock floor,
+     * around half strength, still kept half the world's colour, so distance faded to grey
+     * rather than to black and every torch down the tunnel stayed visible.
+     */
+    @Test
+    void colourGoesToBlackAcrossTheBandNotOnlyAtTheBottom() {
+        assertEquals(1.0F, FogCurve.colourKept(0.0F, 1.0F));
+        assertEquals(0.0F, FogCurve.colourKept(1.0F, 1.0F), 1.0e-6F);
+
+        float onBedrock = FogCurve.colourKept(0.48F, 1.0F);
+        assertTrue(onBedrock < 0.3F, "half strength should be mostly black, was " + onBedrock);
+        assertTrue(onBedrock > 0.0F, "and not fully black yet, was " + onBedrock);
+    }
+
+    @Test
+    void colourIsUntouchedWhenDarknessIsZero() {
+        assertEquals(1.0F, FogCurve.colourKept(1.0F, 0.0F), 1.0e-6F);
     }
 
     @Test
