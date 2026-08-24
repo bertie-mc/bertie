@@ -55,17 +55,25 @@ permits the derivative provided the notice below travels with it:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-The eezo sprites
+THIRD-PARTY DERIVATIVE WORK - EEZO ORE
 
   assets/bertieprogression/textures/block/eezo_ore.png
+
+is a derivative of Mojang's bedrock.png. The ore has to be mistaken for bedrock
+at a glance, and a texture merely built to bedrock's palette and histogram still
+reads as deepslate, so this one starts from the real pattern: about ten per cent
+of its pixels are moved to other positions in bedrock's own palette, and a few
+dark violet specks are added. texture-work/make_eezo.py performs both steps and
+reads the source from the client jar. This file is NOT covered by the public
+domain dedication in UNLICENSE; Minecraft assets remain Mojang's, used here under
+their terms for modifications of the game.
+
+The two eezo item sprites
+
   assets/bertieprogression/textures/item/raw_eezo.png
   assets/bertieprogression/textures/item/eezo_ingot.png
 
-are original and are drawn by texture-work/make_eezo.py. The ore deliberately
-uses the same five greys as vanilla bedrock, read off that texture with a
-histogram, because it is meant to be mistaken for bedrock; the two items use a
-wider ramp of their own. No Mojang pixels are copied: the arrangement, the
-silhouettes and the shading are all drawn here, and a palette of RGB values
-carries no licence of its own.
+are original, drawn pixel by pixel in make_eezo.py, and are covered by the
+dedication.
 
 Every other asset here is original.

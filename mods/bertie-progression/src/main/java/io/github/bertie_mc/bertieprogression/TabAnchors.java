@@ -40,8 +40,7 @@ public final class TabAnchors {
         }
         for (Item anchor : ANCHORS) {
             ItemStack plain = new ItemStack(anchor);
-            if (contains(event.getParentEntries(), plain)
-                    && contains(event.getSearchEntries(), plain)) {
+            if (contains(event.getParentEntries(), plain) && contains(event.getSearchEntries(), plain)) {
                 continue;
             }
             event.accept(plain, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
