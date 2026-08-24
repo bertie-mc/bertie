@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "void-fog"
+kind = "neoforge-mod"
+gradle-project = ":mods:void-fog"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

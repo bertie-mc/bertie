@@ -1,8 +1,0 @@
-format = "bertie-ci.component.v2"
-subject = "bedrock-fog"
-kind = "neoforge-mod"
-gradle-project = ":mods:bedrock-fog"
-
-[version]
-file = "mod.properties"
-key = "mod_version"

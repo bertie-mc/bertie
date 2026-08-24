@@ -75,7 +75,6 @@ include(
     ":core:client-test-driver",
     ":core:gametest-driver",
     ":mods:alexscaves-worldgen-fix",
-    ":mods:bedrock-fog",
     ":mods:berlords-food-system",
     ":mods:bertie-blackhole",
     ":mods:bertie-emi",
@@ -101,6 +100,7 @@ include(
     ":mods:rustic-engineer-fix",
     ":mods:screenshot-copy",
     ":mods:short-circuit-fix",
+    ":mods:void-fog",
     ":mods:withered-hearts",
     ":mods:withering-waver",
 )
