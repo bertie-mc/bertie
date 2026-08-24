@@ -47,9 +47,11 @@ public final class VoidFogRenderer {
         }
 
         float start = (float) VoidFogConfig.FOG_START.getAsDouble();
-        float end = (float) VoidFogConfig.FOG_END.getAsDouble();
+        float far = FogCurve.distance(
+                (float) VoidFogConfig.FOG_CLEAR.getAsDouble(), (float) VoidFogConfig.FOG_END.getAsDouble(), strength);
         event.setNearPlaneDistance(FogCurve.lerp(event.getNearPlaneDistance(), start, strength));
-        event.setFarPlaneDistance(FogCurve.approach(event.getFarPlaneDistance(), end, strength));
+        // Never draw FURTHER than the game was going to; a low render distance still wins.
+        event.setFarPlaneDistance(Math.min(event.getFarPlaneDistance(), far));
         event.setFogShape(FogShape.SPHERE);
         // The event carries the new distances only when it is cancelled.
         event.setCanceled(true);

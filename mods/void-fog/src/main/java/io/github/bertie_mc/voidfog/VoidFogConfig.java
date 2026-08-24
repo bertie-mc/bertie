@@ -22,6 +22,7 @@ public final class VoidFogConfig {
     public static final ModConfigSpec.IntValue SKY_INTERVAL;
 
     public static final ModConfigSpec.DoubleValue FOG_START;
+    public static final ModConfigSpec.DoubleValue FOG_CLEAR;
     public static final ModConfigSpec.DoubleValue FOG_END;
     public static final ModConfigSpec.DoubleValue DARKNESS;
 
@@ -51,8 +52,12 @@ public final class VoidFogConfig {
                         "y=-64, so 10 begins the fade at y=-54 - a little above the highest bedrock.")
                 .defineInRange("fadeDepth", 10, 0, 512);
 
-        FULL_DEPTH = builder.comment("Blocks above the floor where the fog is at full strength.")
-                .defineInRange("fullDepth", 0, 0, 512);
+        FULL_DEPTH = builder.comment(
+                        "Blocks above the floor where the fog is at full strength. Measured to the",
+                        "player's EYE, so this has to be a height someone can actually stand at: the",
+                        "lowest floor is the y=-64 bedrock layer, which puts an eye at about 2.6, so 3.",
+                        "Setting this to 0 means full strength is only reached inside solid rock.")
+                .defineInRange("fullDepth", 3, 0, 512);
 
         builder.pop();
 
@@ -79,11 +84,20 @@ public final class VoidFogConfig {
         FOG_START = builder.comment("Distance from the camera where the fog begins, in blocks.")
                 .defineInRange("fogStart", 0.0, 0.0, 512.0);
 
-        FOG_END = builder.comment("Distance where the fog is solid, in blocks. Lower is thicker.")
-                .defineInRange("fogEnd", 14.0, 1.0, 512.0);
+        FOG_CLEAR = builder.comment(
+                        "How far you see at the very top of the band, in blocks. The scale runs from",
+                        "here down to fogEnd, and is deliberately NOT the render distance - anchoring",
+                        "to the render distance made the fog mean something different on every",
+                        "machine, and left a tunnel readable eighty blocks down at a third strength.")
+                .defineInRange("fogClear", 48.0, 4.0, 512.0);
 
-        DARKNESS = builder.comment("How far the fog colour is pulled towards black. 1.0 is pitch black.")
-                .defineInRange("darkness", 0.92, 0.0, 1.0);
+        FOG_END = builder.comment("Distance where the fog is solid, in blocks. Lower is thicker.")
+                .defineInRange("fogEnd", 12.0, 1.0, 512.0);
+
+        DARKNESS = builder.comment(
+                        "How far the fog colour is pulled towards black. 1.0 is pitch black, which is",
+                        "what makes a torch further off than fogEnd invisible rather than dim.")
+                .defineInRange("darkness", 1.0, 0.0, 1.0);
 
         builder.pop();
 

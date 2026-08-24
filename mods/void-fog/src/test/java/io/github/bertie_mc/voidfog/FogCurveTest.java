@@ -8,7 +8,10 @@ import org.junit.jupiter.api.Test;
 class FogCurveTest {
     private static final int OVERWORLD_FLOOR = -64;
     private static final int FADE = 10;
-    private static final int FULL = 0;
+    private static final int FULL = 3;
+
+    /** Eye height above the block a player stands on. */
+    private static final double EYE = 1.62;
 
     @Test
     void isAbsentAboveTheFadeDepth() {
@@ -16,26 +19,33 @@ class FogCurveTest {
         assertEquals(0.0F, FogCurve.strength(-54.0, OVERWORLD_FLOOR, FADE, FULL));
     }
 
+    /**
+     * Full strength has to be reachable by a PLAYER, not by a point in the rock. The lowest
+     * floor anyone stands on is the y=-64 bedrock layer, which puts an eye at -62.38. A
+     * fullDepth of 0 asks for an eye at y=-64 and can never be met, which is why the fog
+     * topped out around a third and a tunnel stayed readable eighty blocks down.
+     */
     @Test
-    void isFullOnTheFloor() {
-        assertEquals(1.0F, FogCurve.strength(-64.0, OVERWORLD_FLOOR, FADE, FULL));
+    void isFullWhereTheLowestFloorPutsAnEye() {
+        assertEquals(1.0F, FogCurve.strength(-63.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
     }
 
-    /** The highest bedrock sits at y=-59, halfway down the band. */
+    /** Standing on the highest bedrock, y=-59, is the weakest the fog gets underfoot. */
     @Test
-    void isHalfwayAtTheTopOfTheBedrockLayer() {
-        assertEquals(0.5F, FogCurve.strength(-59.0, OVERWORLD_FLOOR, FADE, FULL), 1.0e-6F);
+    void isPartialOnTheHighestBedrock() {
+        float s = FogCurve.strength(-58.0 + EYE, OVERWORLD_FLOOR, FADE, FULL);
+        assertTrue(s > 0.3F && s < 0.55F, "expected a moderate fog on the top bedrock, was " + s);
     }
 
     @Test
     void measuresDepthFromEachDimensionsOwnFloor() {
-        assertEquals(1.0F, FogCurve.strength(0.0, 0, FADE, FULL));
+        assertEquals(1.0F, FogCurve.strength(3.0, 0, FADE, FULL));
         assertEquals(0.0F, FogCurve.strength(10.0, 0, FADE, FULL));
     }
 
     @Test
     void collapsesToAHardSwitchWhenTheBandIsInverted() {
-        assertEquals(1.0F, FogCurve.strength(-64.0, OVERWORLD_FLOOR, FULL, FADE));
+        assertEquals(1.0F, FogCurve.strength(-60.0, OVERWORLD_FLOOR, FULL, FADE));
         assertEquals(0.0F, FogCurve.strength(-20.0, OVERWORLD_FLOOR, FULL, FADE));
     }
 
@@ -47,22 +57,29 @@ class FogCurveTest {
     }
 
     /**
-     * The point of approach() over lerp(): half strength has to look half fogged. Straight
-     * interpolation leaves 104 blocks of clear view, which reads as no fog at all.
+     * The reference is a fixed clear distance, not the render distance. Anchoring to the
+     * render distance is what left a tunnel readable at a third strength: a third of the way
+     * from 192 blocks is still 79 blocks of clear view.
      */
     @Test
-    void approachClosesTheViewInByRatio() {
-        assertEquals(192.0F, FogCurve.approach(192.0F, 16.0F, 0.0F), 1.0e-3F);
-        assertEquals(16.0F, FogCurve.approach(192.0F, 16.0F, 1.0F), 1.0e-3F);
+    void distanceRunsFromTheReferenceDownToTheThickest() {
+        assertEquals(48.0F, FogCurve.distance(48.0F, 12.0F, 0.0F), 1.0e-3F);
+        assertEquals(12.0F, FogCurve.distance(48.0F, 12.0F, 1.0F), 1.0e-3F);
+        assertEquals(24.0F, FogCurve.distance(48.0F, 12.0F, 0.5F), 1.0e-2F);
+    }
 
-        float half = FogCurve.approach(192.0F, 16.0F, 0.5F);
-        assertEquals(Math.sqrt(192.0 * 16.0), half, 1.0e-2F);
-        assertTrue(half < 60.0F, "half strength should already be a wall of fog, was " + half);
+    /** The two readings that have to match: on the top bedrock, and on the lowest floor. */
+    @Test
+    void distanceAtTheDepthsAPlayerActuallyReaches() {
+        float top = FogCurve.distance(48.0F, 12.0F, FogCurve.strength(-58.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
+        float bottom = FogCurve.distance(48.0F, 12.0F, FogCurve.strength(-63.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
+        assertTrue(top > 20.0F && top < 32.0F, "top bedrock should still show a room, was " + top);
+        assertTrue(bottom <= 14.0F, "the lowest floor should be near pitch black, was " + bottom);
     }
 
     @Test
-    void approachFallsBackToLerpWhenAnEndIsZero() {
-        assertEquals(8.0F, FogCurve.approach(16.0F, 0.0F, 0.5F), 1.0e-4F);
+    void distanceFallsBackToLerpWhenAnEndIsZero() {
+        assertEquals(8.0F, FogCurve.distance(16.0F, 0.0F, 0.5F), 1.0e-4F);
     }
 
     @Test

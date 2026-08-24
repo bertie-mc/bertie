@@ -70,7 +70,7 @@ public final class SkyProximity {
                 }
                 int x = eye.getX() + dx;
                 int z = eye.getZ() + dz;
-                if (!level.hasChunkAt(new BlockPos(x, eyeY, z))) {
+                if (!level.hasChunkAt(x, z)) {
                     continue;
                 }
                 if (level.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z) <= eyeY) {

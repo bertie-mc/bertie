@@ -34,18 +34,23 @@ public final class FogCurve {
     }
 
     /**
-     * Interpolates a view distance the way it is perceived: by ratio, not by amount.
+     * The distance you can see at a given fog strength, in blocks.
      *
-     * <p>Halfway between a 192-block view and a 16-block one is not 104 blocks - that still looks
-     * completely clear. Geometrically it is 55, which is the wall of fog a player expects at half
-     * strength. This is the difference between the fog appearing over the last two blocks of descent
-     * and appearing across the whole band.
+     * <p>Geometric between {@code clear} and {@code thickest}, because a view distance is
+     * perceived by ratio and not by amount: halfway between 48 blocks and 12 is not 30, it is
+     * 24.
+     *
+     * <p>{@code clear} is a fixed reference, NOT the render distance, and that is the whole
+     * point. Interpolating from the render distance meant a player on the bedrock - where the
+     * strength works out at about a third - still saw eighty blocks down a tunnel, because a
+     * third of the way from 192 is nowhere near fogged. Anchoring to a reference makes the
+     * strength mean the same thing whatever the render distance is set to.
      */
-    public static float approach(float from, float to, float strength) {
-        if (from <= 0.0F || to <= 0.0F) {
-            return lerp(from, to, strength);
+    public static float distance(float clear, float thickest, float strength) {
+        if (clear <= 0.0F || thickest <= 0.0F) {
+            return lerp(clear, thickest, strength);
         }
-        return (float) (from * Math.pow(to / (double) from, strength));
+        return (float) (clear * Math.pow(thickest / (double) clear, strength));
     }
 
     /**
