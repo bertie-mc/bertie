@@ -116,6 +116,15 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Antarchy anchors its Duct Tape on vanilla shears in the Tools and Utilities tab and hard-crashes
+# on load if that anchor is missing, so we go first and make sure it is there. See TabAnchors.
+[[dependencies.${mod_id}]]
+modId="antarchy"
+type="optional"
+versionRange="[0,)"
+ordering="BEFORE"
+side="BOTH"
+
 # Altar of Amethyst behaviour. required=false in the config, so a pack without
 # Cataclysm simply never applies it.
 [[mixins]]
