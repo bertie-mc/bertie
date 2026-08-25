@@ -1010,5 +1010,29 @@
 			x: 4.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6B00000000000050"]
+			icon: {
+				id: "forbidden_arcanus:dark_nether_star"
+			}
+			id: "6B00000000000051"
+			rewards: [{
+				id: "6B00000002000051"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				icon: {
+					id: "forbidden_arcanus:dark_nether_star"
+				}
+				id: "6B00000001000051"
+				observe_type: 0
+				timer: 20L
+				to_observe: "forbidden_arcanus:black_hole"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
 	]
 }

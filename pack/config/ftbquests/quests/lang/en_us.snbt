@@ -689,6 +689,8 @@
 	quest.6B0000000000004E.title: "Steel Casing"
 	quest.6B0000000000004F.title: "Corrupti Dust"
 	quest.6B00000000000050.title: "Dark Matter"
+	quest.6B00000000000051.quest_desc: ["Throw Corrupti Dust and Dark Matter down together and stand well back. It leaves no drop - looking at it is the whole quest."]
+	quest.6B00000000000051.title: "Witness a Black Hole"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
