@@ -89,10 +89,10 @@ public final class VoidFogConfig {
                         "effect does - how near the view closes in and how black it goes - is driven",
                         "by this one curve, so the two always arrive together. Higher holds the fog",
                         "off until you are deeper, then brings it in faster.")
-                .defineInRange("falloff", 3.5, 1.0, 8.0);
+                .defineInRange("falloff", 3.0, 1.0, 8.0);
 
         FOG_END = builder.comment("Distance where the fog is solid, in blocks. Lower is thicker.")
-                .defineInRange("fogEnd", 10.0, 1.0, 512.0);
+                .defineInRange("fogEnd", 8.0, 1.0, 512.0);
 
         DARKNESS = builder.comment(
                         "How far the fog colour is pulled towards black. 1.0 is pitch black, which is",

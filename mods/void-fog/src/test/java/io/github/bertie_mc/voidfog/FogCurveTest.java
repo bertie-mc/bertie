@@ -78,7 +78,7 @@ class FogCurveTest {
         assertEquals(104.0F, FogCurve.lerp(192.0F, 16.0F, 0.5F));
     }
 
-    private static final double FALLOFF = 3.5;
+    private static final double FALLOFF = 3.0;
 
     /**
      * The fault this curve exists to fix. The far plane used to interpolate from a FIXED
