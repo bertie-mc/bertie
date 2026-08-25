@@ -1,0 +1,16 @@
+{
+  "type": "l2core:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:villager"
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    }
+  ],
+  "item": "bertieprogression:innocent_soul"
+}

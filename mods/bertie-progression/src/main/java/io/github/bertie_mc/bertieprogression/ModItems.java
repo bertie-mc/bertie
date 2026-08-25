@@ -156,6 +156,9 @@ public final class ModItems {
 
     public static final DeferredItem<Item> BOSS_REMATCH_SEAL = simple("boss_rematch_seal", 16);
 
+    /** Dropped by villagers killed by a player - loot_modifiers/innocent_soul.json. */
+    public static final DeferredItem<Item> INNOCENT_SOUL = simple("innocent_soul", 64);
+
     public static final Supplier<CreativeModeTab> MAIN_TAB = TABS.register(
             "main",
             () -> CreativeModeTab.builder()
