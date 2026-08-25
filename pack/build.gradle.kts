@@ -387,6 +387,7 @@ dependencies {
     packMods(project(":mods:bertie-filters"))
     packMods(project(":mods:bertie-progression"))
     packMods(project(":mods:bertie-tiers"))
+    packMods(project(":mods:bertie-toolcraft"))
     packMods(project(":mods:bertie-weapons"))
     packMods(project(":mods:bush-tweaks"))
     packMods(project(":mods:cataclysm-fortresses"))
