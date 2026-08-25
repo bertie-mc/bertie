@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bertieprogression texture generator - eezo_ore (block), raw_eezo, eezo_ingot (16x16).
+bertieprogression texture generator - eezo_ore (block, 16x16).
 
     the ore       is vanilla bedrock with about a tenth of its pixels moved and a few dark
                   violet specks added. Generating a bedrock-ALIKE was tried and does not
@@ -206,137 +206,17 @@ def ore_rows():
 
 # --------------------------------------------------------------------------- the items
 #
-# Lit from the upper left. 1 is the highlight, 8 the outline; p/P/Q are the violet.
-
-# Fat, the way vanilla raw ores are: a big mass with a smaller lobe growing out of its
-# lower right, overlapping rather than sitting beside it. A thin shape is all boundary once
-# it is ringed, and what is left reads as wire.
-# Fat, the way vanilla raw ores are: a big mass with a smaller lobe growing out of its lower
-# right, overlapping rather than sitting beside it. A thin shape is all boundary once it is
-# ringed, and what is left reads as wire.
-#
-# The dark end of the ramp lives INSIDE the silhouette, not along its edge. Shading down to
-# 6 at the rim and letting ring() overwrite it leaves a body of nothing but tones 1-3, which
-# is precisely how the last pass ended up with no gradient at all.
-# Dented and patchy on purpose. A raw ore is a piece broken out of rock: vanilla's all have
-# notched outlines and cavities, and a smooth blob with one clean left-to-right gradient
-# reads as a pebble. The edges step in and out, and the shading has light spots inside the
-# dark half and hollows inside the lit half rather than one uniform sweep.
-# The gradient that worked, with noise and dents added to it rather than a redraw. Two things
-# a raw ore needs that a clean blob does not: an outline that steps in and out instead of
-# running in long unbroken lines, and shading that is patchy - a hollow inside the lit half, a
-# catch of light inside the shadow - rather than one even sweep across the piece.
-#
-# Dents are cheap to overdo. Every notch turns its neighbours into boundary, and boundary
-# becomes outline, so a shape this size takes about four before the interior starts to
-# disappear under its own edge.
-RAW_EEZO = ring(parse([
-    "................",
-    "...1112222......",
-    "..112122334.....",
-    ".11132223344....",
-    ".11P12243455....",
-    ".1PQ12233455....",
-    ".11PQ2354456....",
-    ".1132334556.....",
-    ".1223345667.....",
-    "..23445611223...",
-    "...456674PQ23...",
-    ".....66573455...",
-    "......774456....",
-    ".......5667.....",
-    "................",
-    "................",
-]))
-
-
-PRISM_YAW = -55.0
-PRISM_PITCH = -20.0
-PRISM_LENGTH = 2.4
-PRISM_SCALE = 8.5
-
-
-def eezo_ingot_rows():
-    """
-    A triangular prism, projected rather than drawn.
-
-    Four hand-drawn attempts at this came out as a fang, because a prism at an angle is not a
-    silhouette anyone eyeballs correctly on a 16x16 grid - the ridge and the end cap have to
-    agree with each other or the eye refuses to read it as a solid. So the real thing is built
-    in three dimensions, turned to face the camera down its axis, and orthographically
-    projected. Back-faces drop out on their own, which leaves exactly what should be visible:
-    the triangular end and the roof running back from it.
-
-    The two faces are then given tones by hand rather than by the light angle. Lambert put
-    them within one step of each other and the crease disappeared; a solid needs the STEP.
-    """
-    import math
-
-    apex, left, right = (0.5, 0.95), (0.0, 0.0), (1.0, 0.0)
-    near = [(0.0, y, z) for y, z in (apex, left, right)]
-    far = [(PRISM_LENGTH, y, z) for y, z in (apex, left, right)]
-    points = near + far
-    centre = [sum(p[i] for p in points) / 6.0 for i in range(3)]
-    points = [tuple(p[i] - centre[i] for i in range(3)) for p in points]
-
-    yaw, pitch = math.radians(PRISM_YAW), math.radians(PRISM_PITCH)
-
-    def turn(p):
-        x, y, z = p
-        x, y = x * math.cos(yaw) - y * math.sin(yaw), x * math.sin(yaw) + y * math.cos(yaw)
-        y, z = y * math.cos(pitch) - z * math.sin(pitch), y * math.sin(pitch) + z * math.cos(pitch)
-        return x, y, z
-
-    turned = [turn(p) for p in points]
-
-    def flat(p):
-        return 8.0 + p[0] * PRISM_SCALE, 8.6 - p[2] * PRISM_SCALE
-
-    # (vertices, tone). The camera looks along +y, so a face whose normal has a negative y
-    # component is pointing at it; everything else is the far side and never drawn.
-    plan = (([0, 1, 2], "2"), ([3, 5, 4], "2"), ([0, 3, 4, 1], "4"), ([0, 2, 5, 3], "5"), ([1, 4, 5, 2], "6"))
-    drawn = []
-    for indices, tone in plan:
-        a, b, c = (turned[i] for i in indices[:3])
-        u = [b[i] - a[i] for i in range(3)]
-        v = [c[i] - a[i] for i in range(3)]
-        normal_y = u[2] * v[0] - u[0] * v[2]
-        if normal_y >= 0.0:
-            continue
-        depth = sum(turned[i][1] for i in indices) / len(indices)
-        drawn.append((depth, [flat(turned[i]) for i in indices], tone, tuple(indices)))
-    drawn.sort(key=lambda item: -item[0])
-
-    rows = [["." for _ in range(16)] for _ in range(16)]
-    for _, polygon, tone, _ in drawn:
-        for y in range(16):
-            for x in range(16):
-                if inside(polygon, x + 0.5, y + 0.5):
-                    rows[y][x] = tone
-
-    # The core rod, in section, on the TRIANGULAR END - the whole point of showing that face.
-    # Taking the nearest polygon instead put it on the roof, where it reads as a stain.
-    cap = next((poly for _, poly, _, idx in drawn if idx == (0, 1, 2)), None)
-    if cap:
-        cx = sum(p[0] for p in cap) / len(cap)
-        cy = sum(p[1] for p in cap) / len(cap)
-        for dx, dy, tone in ((0, 0, "Q"), (1, 0, "P"), (0, 1, "P"), (1, 1, "p")):
-            x, y = int(cx) + dx, int(cy) + dy
-            if 0 <= x < 16 and 0 <= y < 16 and rows[y][x] == "2":
-                rows[y][x] = tone
-    return rows
-
-
-EEZO_INGOT = ring(eezo_ingot_rows())
+# raw_eezo.png and eezo_ingot.png are NOT generated. berlord drew them by hand, and this
+# script deliberately does not write those filenames: five generated attempts never got
+# there, and a stray run of this file would quietly destroy the ones that did. The maps and
+# the shading helpers that produced them are gone with them - keeping dead code that still
+# knows those paths is how the accident happens.
 
 
 def main():
     ASSETS.joinpath("textures/block").mkdir(parents=True, exist_ok=True)
-    ASSETS.joinpath("textures/item").mkdir(parents=True, exist_ok=True)
     to_image(ore_rows()).save(ASSETS / "textures/block/eezo_ore.png")
-    to_image(RAW_EEZO).save(ASSETS / "textures/item/raw_eezo.png")
-    to_image(EEZO_INGOT).save(ASSETS / "textures/item/eezo_ingot.png")
-    print("wrote eezo_ore, raw_eezo and eezo_ingot under " + str(ASSETS))
+    print("wrote eezo_ore under " + str(ASSETS))
 
 
 if __name__ == "__main__":

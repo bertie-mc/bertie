@@ -55,7 +55,10 @@ permits the derivative provided the notice below travels with it:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-THIRD-PARTY DERIVATIVE WORK - EEZO ORE
+THIRD-PARTY DERIVATIVE WORK - THE EEZO SPRITES
+
+All three start from someone else's pixels and none of them are covered by the
+public domain dedication in UNLICENSE.
 
   assets/bertieprogression/textures/block/eezo_ore.png
 
@@ -64,16 +67,22 @@ at a glance, and a texture merely built to bedrock's palette and histogram still
 reads as deepslate, so this one starts from the real pattern: about ten per cent
 of its pixels are moved to other positions in bedrock's own palette, and a few
 dark violet specks are added. texture-work/make_eezo.py performs both steps and
-reads the source from the client jar. This file is NOT covered by the public
-domain dedication in UNLICENSE; Minecraft assets remain Mojang's, used here under
-their terms for modifications of the game.
-
-The two eezo item sprites
+reads the source from the client jar.
 
   assets/bertieprogression/textures/item/raw_eezo.png
+
+follows the silhouette of Mojang's raw_iron.png pixel for pixel, recoloured into
+the ore's greys and violets. Minecraft assets remain Mojang's, used here under
+their terms for modifications of the game.
+
   assets/bertieprogression/textures/item/eezo_ingot.png
 
-are original, drawn pixel by pixel in make_eezo.py, and are covered by the
-dedication.
+follows the silhouette and per-pixel value structure of AnvilCraft's
+titanium_ingot.png, recoloured the same way. AnvilCraft is by Gugle and XeKr and
+is distributed under the LGPL-3.0 (https://www.anvilcraft.dev/), which permits
+the derivative provided the licence travels with it and the source is named.
+
+Both item sprites are drawn by texture-work/make_eezo_items.py, which holds the
+symbol maps and the recolouring tables.
 
 Every other asset here is original.
