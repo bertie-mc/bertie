@@ -976,8 +976,8 @@
 				item: { count: 1, id: "ancient_forgemastery:howling_helmet" }
 				type: "item"
 			}]
-			x: -48.0d
-			y: 5.0d
+			x: -62.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1006,8 +1006,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 5.0d
+			x: -45.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1019,7 +1019,7 @@
 				item: { count: 1, id: "armageddon_mod:arion_helmet_helmet" }
 				type: "item"
 			}]
-			x: -45.0d
+			x: -62.0d
 			y: 5.0d
 		}
 		{
@@ -1122,8 +1122,8 @@
 				item: { count: 1, id: "armageddon_mod:elvenite_halo_helmet" }
 				type: "item"
 			}]
-			x: -45.0d
-			y: 6.0d
+			x: -57.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1152,8 +1152,8 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
-			y: 6.0d
+			x: -45.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1243,7 +1243,7 @@
 				}
 			]
 			x: -45.0d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1285,8 +1285,8 @@
 				item: { count: 1, id: "armageddon_mod:zoranths_helmet_helmet" }
 				type: "item"
 			}]
-			x: -43.0d
-			y: 7.0d
+			x: -60.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -1423,7 +1423,7 @@
 				item: { count: 1, id: "born_in_chaos_v1:damned_demomans_hat_helmet" }
 				type: "item"
 			}]
-			x: -32.0d
+			x: -58.0d
 			y: 5.0d
 		}
 		{
@@ -1466,8 +1466,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:killer_rabbit_ears_helmet" }
 				type: "item"
 			}]
-			x: -30.0d
-			y: 5.0d
+			x: -59.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1479,8 +1479,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
 				type: "item"
 			}]
-			x: -32.0d
-			y: 6.0d
+			x: -57.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1492,8 +1492,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:missionary_hat_helmet" }
 				type: "item"
 			}]
-			x: -31.0d
-			y: 6.0d
+			x: -61.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1542,8 +1542,8 @@
 					type: "item"
 				}
 			]
-			x: -32.0d
-			y: 7.0d
+			x: -59.0d
+			y: 12.0d
 		}
 		{
 			icon: {
@@ -1555,8 +1555,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
 				type: "item"
 			}]
-			x: -31.0d
-			y: 7.0d
+			x: -58.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -1610,8 +1610,8 @@
 					type: "item"
 				}
 			]
-			x: -27.0d
-			y: 5.0d
+			x: -62.0d
+			y: 12.0d
 		}
 		{
 			icon: {
@@ -1653,8 +1653,8 @@
 				item: { count: 1, id: "cataclysm:monstrous_helm" }
 				type: "item"
 			}]
-			x: -28.0d
-			y: 6.0d
+			x: -60.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1926,8 +1926,8 @@
 					type: "item"
 				}
 			]
-			x: -22.0d
-			y: 6.0d
+			x: -61.0d
+			y: 12.0d
 		}
 		{
 			icon: {
@@ -2233,8 +2233,8 @@
 				item: { count: 1, id: "deepwaters:manowar_crown_helmet" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 5.0d
+			x: -62.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -4471,8 +4471,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_hazel_chestplate" }
 				type: "item"
 			}]
-			x: -30.0d
-			y: 13.0d
+			x: -58.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -4492,8 +4492,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_mothic_witch_chestplate" }
 				type: "item"
 			}]
-			x: -29.0d
-			y: 13.0d
+			x: -57.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -5538,8 +5538,8 @@
 				item: { count: 1, id: "hazennstuff:chlorophyte_mask" }
 				type: "item"
 			}]
-			x: -33.0d
-			y: 17.0d
+			x: -60.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -5559,8 +5559,8 @@
 				item: { components: { "azurelib:az_id": [I; -1302380326, 725042193, -1993785292, -425827875 ] }, count: 1, id: "hazennstuff:legacy_fireblossom_crown" }
 				type: "item"
 			}]
-			x: -32.0d
-			y: 17.0d
+			x: -58.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -5585,8 +5585,8 @@
 				item: { count: 1, id: "hazennstuff:shadowwalker_enderman_hood" }
 				type: "item"
 			}]
-			x: -30.0d
-			y: 17.0d
+			x: -60.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -6276,8 +6276,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 11.0d
+			x: -61.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -6335,8 +6335,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 11.0d
+			x: -57.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -6530,8 +6530,8 @@
 				item: { count: 1, id: "irons_spellbooks:speed_boots" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 13.0d
+			x: -59.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -6551,8 +6551,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:tarnished_helmet" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 13.0d
+			x: -62.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -6980,8 +6980,8 @@
 				item: { count: 1, id: "minecraft:turtle_helmet" }
 				type: "item"
 			}]
-			x: -49.0d
-			y: 22.0d
+			x: -61.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -12757,6 +12757,946 @@
 			}]
 			x: 41.0d
 			y: 22.0d
+		}
+		{
+			icon: {
+				id: "antarchy:fallen_king_crown"
+			}
+			id: "7B00000000000266"
+			tasks: [
+				{
+					id: "7B00000001000266"
+					item: { count: 1, id: "antarchy:fallen_king_crown" }
+					type: "item"
+				}
+			]
+			x: -62.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "antarchy:jumpy_boots"
+			}
+			id: "7B00000000000267"
+			tasks: [
+				{
+					id: "7B00000001000267"
+					item: { count: 1, id: "antarchy:jumpy_boots" }
+					type: "item"
+				}
+			]
+			x: -60.0d
+			y: 7.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:centipede_leggings"
+			}
+			id: "7B00000000000268"
+			tasks: [
+				{
+					id: "7B00000001000268"
+					item: { count: 1, id: "alexsmobs:centipede_leggings" }
+					type: "item"
+				}
+			]
+			x: -61.0d
+			y: 5.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:crocodile_chestplate"
+			}
+			id: "7B00000000000269"
+			tasks: [
+				{
+					id: "7B00000001000269"
+					item: { count: 1, id: "alexsmobs:crocodile_chestplate" }
+					type: "item"
+				}
+			]
+			x: -59.0d
+			y: 5.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:emu_leggings"
+			}
+			id: "7B0000000000026A"
+			tasks: [
+				{
+					id: "7B0000000100026A"
+					item: { count: 1, id: "alexsmobs:emu_leggings" }
+					type: "item"
+				}
+			]
+			x: -58.0d
+			y: 8.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:flying_fish_boots"
+			}
+			id: "7B0000000000026B"
+			tasks: [
+				{
+					id: "7B0000000100026B"
+					item: { count: 1, id: "alexsmobs:flying_fish_boots" }
+					type: "item"
+				}
+			]
+			x: -61.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:frontier_cap"
+			}
+			id: "7B0000000000026C"
+			tasks: [
+				{
+					id: "7B0000000100026C"
+					item: { count: 1, id: "alexsmobs:frontier_cap" }
+					type: "item"
+				}
+			]
+			x: -60.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:froststalker_helmet"
+			}
+			id: "7B0000000000026D"
+			tasks: [
+				{
+					id: "7B0000000100026D"
+					item: { count: 1, id: "alexsmobs:froststalker_helmet" }
+					type: "item"
+				}
+			]
+			x: -59.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:novelty_hat"
+			}
+			id: "7B0000000000026E"
+			tasks: [
+				{
+					id: "7B0000000100026E"
+					item: { count: 1, id: "alexsmobs:novelty_hat" }
+					type: "item"
+				}
+			]
+			x: -59.0d
+			y: 8.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:roadrunner_boots"
+			}
+			id: "7B0000000000026F"
+			tasks: [
+				{
+					id: "7B0000000100026F"
+					item: { count: 1, id: "alexsmobs:roadrunner_boots" }
+					type: "item"
+				}
+			]
+			x: -62.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:rocky_chestplate"
+			}
+			id: "7B00000000000270"
+			tasks: [
+				{
+					id: "7B00000001000270"
+					item: { count: 1, id: "alexsmobs:rocky_chestplate" }
+					type: "item"
+				}
+			]
+			x: -61.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:straddle_helmet"
+			}
+			id: "7B00000000000271"
+			tasks: [
+				{
+					id: "7B00000001000271"
+					item: { count: 1, id: "alexsmobs:straddle_helmet" }
+					type: "item"
+				}
+			]
+			x: -57.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "mekanism:scuba_mask"
+			}
+			id: "7B00000000000272"
+			tasks: [
+				{
+					id: "7B00000001000272"
+					item: { count: 1, id: "mekanism:scuba_mask" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010272"
+					item: { count: 1, id: "mekanism:scuba_tank" }
+					type: "item"
+				}
+			]
+			x: -60.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "antarchy:blood_crystal_helmet"
+			}
+			id: "7B00000000000273"
+			tasks: [
+				{
+					id: "7B00000001000273"
+					item: { count: 1, id: "antarchy:blood_crystal_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010273"
+					item: { count: 1, id: "antarchy:blood_crystal_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020273"
+					item: { count: 1, id: "antarchy:blood_crystal_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030273"
+					item: { count: 1, id: "antarchy:blood_crystal_boots" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:blood_crystal_katana"
+			}
+			id: "7B00000000000274"
+			tasks: [
+				{
+					id: "7B00000001000274"
+					item: { count: 1, id: "antarchy:blood_crystal_katana" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:nightmare_helmet"
+			}
+			id: "7B00000000000275"
+			tasks: [
+				{
+					id: "7B00000001000275"
+					item: { count: 1, id: "antarchy:nightmare_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010275"
+					item: { count: 1, id: "antarchy:nightmare_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020275"
+					item: { count: 1, id: "antarchy:nightmare_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030275"
+					item: { count: 1, id: "antarchy:nightmare_boots" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:nightmare_sword"
+			}
+			id: "7B00000000000276"
+			tasks: [
+				{
+					id: "7B00000001000276"
+					item: { count: 1, id: "antarchy:nightmare_sword" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:primordial_helmet"
+			}
+			id: "7B00000000000277"
+			tasks: [
+				{
+					id: "7B00000001000277"
+					item: { count: 1, id: "antarchy:primordial_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010277"
+					item: { count: 1, id: "antarchy:primordial_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020277"
+					item: { count: 1, id: "antarchy:primordial_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030277"
+					item: { count: 1, id: "antarchy:primordial_boots" }
+					type: "item"
+				}
+			]
+			x: -48.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:tigers_eye_helmet"
+			}
+			id: "7B00000000000278"
+			tasks: [
+				{
+					id: "7B00000001000278"
+					item: { count: 1, id: "antarchy:tigers_eye_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010278"
+					item: { count: 1, id: "antarchy:tigers_eye_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020278"
+					item: { count: 1, id: "antarchy:tigers_eye_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030278"
+					item: { count: 1, id: "antarchy:tigers_eye_boots" }
+					type: "item"
+				}
+			]
+			x: -47.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_helmet"
+			}
+			id: "7B00000000000279"
+			tasks: [
+				{
+					id: "7B00000001000279"
+					item: { count: 1, id: "antarchy:ultimate_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010279"
+					item: { count: 1, id: "antarchy:ultimate_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020279"
+					item: { count: 1, id: "antarchy:ultimate_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030279"
+					item: { count: 1, id: "antarchy:ultimate_boots" }
+					type: "item"
+				}
+			]
+			x: -46.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_sword"
+			}
+			id: "7B0000000000027A"
+			tasks: [
+				{
+					id: "7B0000000100027A"
+					item: { count: 1, id: "antarchy:ultimate_sword" }
+					type: "item"
+				}
+			]
+			x: -45.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_axe"
+			}
+			id: "7B0000000000027B"
+			tasks: [
+				{
+					id: "7B0000000100027B"
+					item: { count: 1, id: "antarchy:ultimate_axe" }
+					type: "item"
+				}
+			]
+			x: -44.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_bow"
+			}
+			id: "7B0000000000027C"
+			tasks: [
+				{
+					id: "7B0000000100027C"
+					item: { count: 1, id: "antarchy:ultimate_bow" }
+					type: "item"
+				}
+			]
+			x: -43.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_crossbow"
+			}
+			id: "7B0000000000027D"
+			tasks: [
+				{
+					id: "7B0000000100027D"
+					item: { count: 1, id: "antarchy:ultimate_crossbow" }
+					type: "item"
+				}
+			]
+			x: -42.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:ultimate_mace"
+			}
+			id: "7B0000000000027E"
+			tasks: [
+				{
+					id: "7B0000000100027E"
+					item: { count: 1, id: "antarchy:ultimate_mace" }
+					type: "item"
+				}
+			]
+			x: -41.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:basilisk_dagger"
+			}
+			id: "7B0000000000027F"
+			tasks: [
+				{
+					id: "7B0000000100027F"
+					item: { count: 1, id: "antarchy:basilisk_dagger" }
+					type: "item"
+				}
+			]
+			x: -40.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:battle_axe"
+			}
+			id: "7B00000000000280"
+			tasks: [
+				{
+					id: "7B00000001000280"
+					item: { count: 1, id: "antarchy:battle_axe" }
+					type: "item"
+				}
+			]
+			x: -39.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:big_bertha_blade"
+			}
+			id: "7B00000000000281"
+			tasks: [
+				{
+					id: "7B00000001000281"
+					item: { count: 1, id: "antarchy:big_bertha_blade" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 30.0d
+		}
+		{
+			icon: {
+				id: "antarchy:gravity_gun"
+			}
+			id: "7B00000000000282"
+			tasks: [
+				{
+					id: "7B00000001000282"
+					item: { count: 1, id: "antarchy:gravity_gun" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 30.0d
+		}
+		{
+			icon: {
+				id: "antarchy:scorpion_whip"
+			}
+			id: "7B00000000000283"
+			tasks: [
+				{
+					id: "7B00000001000283"
+					item: { count: 1, id: "antarchy:scorpion_whip" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 30.0d
+		}
+		{
+			icon: {
+				id: "antarchy:water_cannon"
+			}
+			id: "7B00000000000284"
+			tasks: [
+				{
+					id: "7B00000001000284"
+					item: { count: 1, id: "antarchy:water_cannon" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: 30.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:ember_metal_sword"
+			}
+			id: "7B00000000000285"
+			tasks: [
+				{
+					id: "7B00000001000285"
+					item: { count: 1, id: "anvilcraft:ember_metal_sword" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010285"
+					item: { count: 1, id: "anvilcraft:ember_metal_axe" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020285"
+					item: { count: 1, id: "anvilcraft:ember_metal_heavy_halberd" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:frost_metal_sword"
+			}
+			id: "7B00000000000286"
+			tasks: [
+				{
+					id: "7B00000001000286"
+					item: { count: 1, id: "anvilcraft:frost_metal_sword" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010286"
+					item: { count: 1, id: "anvilcraft:frost_metal_axe" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020286"
+					item: { count: 1, id: "anvilcraft:frost_metal_heavy_halberd" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:royal_steel_sword"
+			}
+			id: "7B00000000000287"
+			tasks: [
+				{
+					id: "7B00000001000287"
+					item: { count: 1, id: "anvilcraft:royal_steel_sword" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010287"
+					item: { count: 1, id: "anvilcraft:royal_steel_axe" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:transcendence_anvil_hammer"
+			}
+			id: "7B00000000000288"
+			tasks: [
+				{
+					id: "7B00000001000288"
+					item: { count: 1, id: "anvilcraft:transcendence_anvil_hammer" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010288"
+					item: { count: 1, id: "anvilcraft:transcendence_heavy_halberd" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:anvil_hammer"
+			}
+			id: "7B00000000000289"
+			tasks: [
+				{
+					id: "7B00000001000289"
+					item: { count: 1, id: "anvilcraft:anvil_hammer" }
+					type: "item"
+				}
+			]
+			x: -48.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:ember_anvil_hammer"
+			}
+			id: "7B0000000000028A"
+			tasks: [
+				{
+					id: "7B0000000100028A"
+					item: { count: 1, id: "anvilcraft:ember_anvil_hammer" }
+					type: "item"
+				}
+			]
+			x: -47.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:royal_anvil_hammer"
+			}
+			id: "7B0000000000028B"
+			tasks: [
+				{
+					id: "7B0000000100028B"
+					item: { count: 1, id: "anvilcraft:royal_anvil_hammer" }
+					type: "item"
+				}
+			]
+			x: -46.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:prismarine_blade"
+			}
+			id: "7B0000000000028C"
+			tasks: [
+				{
+					id: "7B0000000100028C"
+					item: { count: 1, id: "anvilcraft:prismarine_blade" }
+					type: "item"
+				}
+			]
+			x: -45.0d
+			y: 33.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:skelewag_sword"
+			}
+			id: "7B0000000000028D"
+			tasks: [
+				{
+					id: "7B0000000100028D"
+					item: { count: 1, id: "alexsmobs:skelewag_sword" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 35.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:tendon_whip"
+			}
+			id: "7B0000000000028E"
+			tasks: [
+				{
+					id: "7B0000000100028E"
+					item: { count: 1, id: "alexsmobs:tendon_whip" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 35.0d
+		}
+		{
+			icon: {
+				id: "mekanism:mekasuit_helmet"
+			}
+			id: "7B0000000000028F"
+			tasks: [
+				{
+					id: "7B0000000100028F"
+					item: { count: 1, id: "mekanism:mekasuit_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B0000000101028F"
+					item: { count: 1, id: "mekanism:mekasuit_bodyarmor" }
+					type: "item"
+				}
+				{
+					id: "7B0000000102028F"
+					item: { count: 1, id: "mekanism:mekasuit_pants" }
+					type: "item"
+				}
+				{
+					id: "7B0000000103028F"
+					item: { count: 1, id: "mekanism:mekasuit_boots" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 37.0d
+		}
+		{
+			icon: {
+				id: "mekanism:hazmat_mask"
+			}
+			id: "7B00000000000290"
+			tasks: [
+				{
+					id: "7B00000001000290"
+					item: { count: 1, id: "mekanism:hazmat_mask" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010290"
+					item: { count: 1, id: "mekanism:hazmat_gown" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020290"
+					item: { count: 1, id: "mekanism:hazmat_pants" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030290"
+					item: { count: 1, id: "mekanism:hazmat_boots" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 37.0d
+		}
+		{
+			icon: {
+				id: "mekanism:electric_bow"
+			}
+			id: "7B00000000000291"
+			tasks: [
+				{
+					id: "7B00000001000291"
+					item: { count: 1, id: "mekanism:electric_bow" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 37.0d
+		}
+		{
+			icon: {
+				id: "oritech:exo_helmet"
+			}
+			id: "7B00000000000292"
+			tasks: [
+				{
+					id: "7B00000001000292"
+					item: { count: 1, id: "oritech:exo_helmet" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010292"
+					item: { count: 1, id: "oritech:exo_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7B00000001020292"
+					item: { count: 1, id: "oritech:exo_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001030292"
+					item: { count: 1, id: "oritech:exo_boots" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 39.0d
+		}
+		{
+			icon: {
+				id: "oritech:exo_jetpack"
+			}
+			id: "7B00000000000293"
+			tasks: [
+				{
+					id: "7B00000001000293"
+					item: { count: 1, id: "oritech:exo_jetpack" }
+					type: "item"
+				}
+				{
+					id: "7B00000001010293"
+					item: { count: 1, id: "oritech:jetpack_exo_elytra" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 39.0d
+		}
+		{
+			icon: {
+				id: "oritech:electric_mace"
+			}
+			id: "7B00000000000294"
+			tasks: [
+				{
+					id: "7B00000001000294"
+					item: { count: 1, id: "oritech:electric_mace" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 39.0d
+		}
+		{
+			icon: {
+				id: "oritech:promethium_axe"
+			}
+			id: "7B00000000000295"
+			tasks: [
+				{
+					id: "7B00000001000295"
+					item: { count: 1, id: "oritech:promethium_axe" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: 39.0d
+		}
+		{
+			icon: {
+				id: "cataclysm_tools:cursium_sword"
+			}
+			id: "7B00000000000296"
+			tasks: [
+				{
+					id: "7B00000001000296"
+					item: { count: 1, id: "cataclysm_tools:cursium_sword" }
+					type: "item"
+				}
+			]
+			x: -52.0d
+			y: 41.0d
+		}
+		{
+			icon: {
+				id: "cataclysm_tools:cursium_axe"
+			}
+			id: "7B00000000000297"
+			tasks: [
+				{
+					id: "7B00000001000297"
+					item: { count: 1, id: "cataclysm_tools:cursium_axe" }
+					type: "item"
+				}
+			]
+			x: -51.0d
+			y: 41.0d
+		}
+		{
+			icon: {
+				id: "cataclysm_tools:ignitium_axe"
+			}
+			id: "7B00000000000298"
+			tasks: [
+				{
+					id: "7B00000001000298"
+					item: { count: 1, id: "cataclysm_tools:ignitium_axe" }
+					type: "item"
+				}
+			]
+			x: -50.0d
+			y: 41.0d
+		}
+		{
+			icon: {
+				id: "enderio:dark_steel_sword"
+			}
+			id: "7B00000000000299"
+			tasks: [
+				{
+					id: "7B00000001000299"
+					item: { count: 1, id: "enderio:dark_steel_sword" }
+					type: "item"
+				}
+			]
+			x: -49.0d
+			y: 41.0d
 		}
 	]
 }
