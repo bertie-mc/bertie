@@ -908,7 +908,7 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
+			x: -51.0d
 			y: 5.0d
 		}
 		{
@@ -933,7 +933,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -50.0d
 			y: 5.0d
 		}
 		{
@@ -963,7 +963,7 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
+			x: -52.0d
 			y: 5.0d
 		}
 		{
@@ -976,7 +976,7 @@
 				item: { count: 1, id: "ancient_forgemastery:howling_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
+			x: -57.0d
 			y: 7.0d
 		}
 		{
@@ -1006,8 +1006,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 6.0d
+			x: -44.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1049,7 +1049,7 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
+			x: -46.0d
 			y: 5.0d
 		}
 		{
@@ -1079,8 +1079,8 @@
 					type: "item"
 				}
 			]
-			x: -43.0d
-			y: 5.0d
+			x: -46.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1109,7 +1109,7 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
+			x: -45.0d
 			y: 6.0d
 		}
 		{
@@ -1122,8 +1122,8 @@
 				item: { count: 1, id: "armageddon_mod:elvenite_halo_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 5.0d
+			x: -60.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1152,8 +1152,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 7.0d
+			x: -43.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1182,7 +1182,7 @@
 					type: "item"
 				}
 			]
-			x: -43.0d
+			x: -44.0d
 			y: 6.0d
 		}
 		{
@@ -1212,8 +1212,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 7.0d
+			x: -43.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1272,7 +1272,7 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
+			x: -46.0d
 			y: 7.0d
 		}
 		{
@@ -1285,8 +1285,8 @@
 				item: { count: 1, id: "armageddon_mod:zoranths_helmet_helmet" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 10.0d
+			x: -62.0d
+			y: 11.0d
 		}
 		{
 			icon: {
@@ -1423,8 +1423,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:damned_demomans_hat_helmet" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 5.0d
+			x: -62.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1466,8 +1466,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:killer_rabbit_ears_helmet" }
 				type: "item"
 			}]
-			x: -59.0d
-			y: 7.0d
+			x: -60.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1479,8 +1479,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 7.0d
+			x: -58.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1492,8 +1492,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:missionary_hat_helmet" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 8.0d
+			x: -62.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -1542,8 +1542,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 12.0d
+			x: -57.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -1555,8 +1555,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 9.0d
+			x: -60.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -1611,7 +1611,7 @@
 				}
 			]
 			x: -62.0d
-			y: 12.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -1653,8 +1653,8 @@
 				item: { count: 1, id: "cataclysm:monstrous_helm" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 8.0d
+			x: -61.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -1666,8 +1666,8 @@
 				item: { count: 1, id: "cataclysm:bloom_stone_pauldrons" }
 				type: "item"
 			}]
-			x: -27.0d
-			y: 6.0d
+			x: -61.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1867,8 +1867,8 @@
 					type: "item"
 				}
 			]
-			x: -24.0d
-			y: 6.0d
+			x: -61.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -1906,8 +1906,8 @@
 					type: "item"
 				}
 			]
-			x: -23.0d
-			y: 6.0d
+			x: -60.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -1926,8 +1926,8 @@
 					type: "item"
 				}
 			]
-			x: -61.0d
-			y: 12.0d
+			x: -59.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1965,8 +1965,8 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
-			y: 6.0d
+			x: -59.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -2100,6 +2100,11 @@
 					item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
 					type: "item"
 				}
+				{
+					id: "7B0000000103004E"
+					item: { count: 1, id: "create:copper_backtank" }
+					type: "item"
+				}
 			]
 			x: -18.0d
 			y: 5.0d
@@ -2125,35 +2130,14 @@
 					item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
 					type: "item"
 				}
+				{
+					id: "7B0000000103004F"
+					item: { count: 1, id: "create:netherite_backtank" }
+					type: "item"
+				}
 			]
 			x: -17.0d
 			y: 5.0d
-		}
-		{
-			icon: {
-				id: "create:copper_backtank"
-			}
-			id: "7B00000000000050"
-			tasks: [{
-				id: "7B00000001000050"
-				item: { count: 1, id: "create:copper_backtank" }
-				type: "item"
-			}]
-			x: -19.0d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "create:netherite_backtank"
-			}
-			id: "7B00000000000051"
-			tasks: [{
-				id: "7B00000001000051"
-				item: { count: 1, id: "create:netherite_backtank" }
-				type: "item"
-			}]
-			x: -18.0d
-			y: 6.0d
 		}
 		{
 			icon: {
@@ -2233,7 +2217,7 @@
 				item: { count: 1, id: "deepwaters:manowar_crown_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
+			x: -57.0d
 			y: 8.0d
 		}
 		{
@@ -4471,8 +4455,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_hazel_chestplate" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 6.0d
+			x: -59.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -4492,8 +4476,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_mothic_witch_chestplate" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 6.0d
+			x: -58.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -4536,7 +4520,7 @@
 					type: "item"
 				}
 			]
-			x: -28.0d
+			x: -30.0d
 			y: 13.0d
 		}
 		{
@@ -4574,8 +4558,8 @@
 					type: "item"
 				}
 			]
-			x: -35.0d
-			y: 14.0d
+			x: -29.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -4618,8 +4602,8 @@
 					type: "item"
 				}
 			]
-			x: -34.0d
-			y: 14.0d
+			x: -28.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -4689,7 +4673,7 @@
 					type: "item"
 				}
 			]
-			x: -32.0d
+			x: -35.0d
 			y: 14.0d
 		}
 		{
@@ -4727,7 +4711,7 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
+			x: -34.0d
 			y: 14.0d
 		}
 		{
@@ -4771,7 +4755,7 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
+			x: -32.0d
 			y: 14.0d
 		}
 		{
@@ -4809,7 +4793,7 @@
 					type: "item"
 				}
 			]
-			x: -29.0d
+			x: -31.0d
 			y: 14.0d
 		}
 		{
@@ -4847,7 +4831,7 @@
 					type: "item"
 				}
 			]
-			x: -28.0d
+			x: -30.0d
 			y: 14.0d
 		}
 		{
@@ -4885,8 +4869,8 @@
 					type: "item"
 				}
 			]
-			x: -35.0d
-			y: 15.0d
+			x: -29.0d
+			y: 14.0d
 		}
 		{
 			icon: {
@@ -4923,8 +4907,8 @@
 					type: "item"
 				}
 			]
-			x: -34.0d
-			y: 15.0d
+			x: -28.0d
+			y: 14.0d
 		}
 		{
 			icon: {
@@ -4961,7 +4945,7 @@
 					type: "item"
 				}
 			]
-			x: -33.0d
+			x: -35.0d
 			y: 15.0d
 		}
 		{
@@ -4999,7 +4983,7 @@
 					type: "item"
 				}
 			]
-			x: -32.0d
+			x: -34.0d
 			y: 15.0d
 		}
 		{
@@ -5037,7 +5021,7 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
+			x: -33.0d
 			y: 15.0d
 		}
 		{
@@ -5075,7 +5059,7 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
+			x: -32.0d
 			y: 15.0d
 		}
 		{
@@ -5113,7 +5097,7 @@
 					type: "item"
 				}
 			]
-			x: -29.0d
+			x: -31.0d
 			y: 15.0d
 		}
 		{
@@ -5151,7 +5135,7 @@
 					type: "item"
 				}
 			]
-			x: -28.0d
+			x: -30.0d
 			y: 15.0d
 		}
 		{
@@ -5195,8 +5179,8 @@
 					type: "item"
 				}
 			]
-			x: -35.0d
-			y: 16.0d
+			x: -29.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -5233,8 +5217,8 @@
 					type: "item"
 				}
 			]
-			x: -34.0d
-			y: 16.0d
+			x: -28.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -5271,7 +5255,7 @@
 					type: "item"
 				}
 			]
-			x: -33.0d
+			x: -35.0d
 			y: 16.0d
 		}
 		{
@@ -5303,8 +5287,23 @@
 					item: { count: 1, id: "hazennstuff:shadowwalker_enderman_boots" }
 					type: "item"
 				}
+				{
+					id: "7B000000010300AB"
+					item: { count: 1, id: "hazennstuff:shadowwalker_enderman_blindfold" }
+					type: "item"
+				}
+				{
+					id: "7B000000010400AB"
+					item: { count: 1, id: "hazennstuff:shadowwalker_enderman_hood" }
+					type: "item"
+				}
+				{
+					id: "7B000000010500AB"
+					item: { count: 1, id: "hazennstuff:shadowwalker_enderman_masked" }
+					type: "item"
+				}
 			]
-			x: -32.0d
+			x: -34.0d
 			y: 16.0d
 		}
 		{
@@ -5348,7 +5347,7 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
+			x: -33.0d
 			y: 16.0d
 		}
 		{
@@ -5386,7 +5385,7 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
+			x: -32.0d
 			y: 16.0d
 		}
 		{
@@ -5430,7 +5429,7 @@
 					type: "item"
 				}
 			]
-			x: -29.0d
+			x: -31.0d
 			y: 16.0d
 		}
 		{
@@ -5474,7 +5473,7 @@
 					type: "item"
 				}
 			]
-			x: -28.0d
+			x: -30.0d
 			y: 16.0d
 		}
 		{
@@ -5512,8 +5511,8 @@
 					type: "item"
 				}
 			]
-			x: -35.0d
-			y: 17.0d
+			x: -29.0d
+			y: 16.0d
 		}
 		{
 			icon: {
@@ -5525,8 +5524,8 @@
 				item: { count: 1, id: "hazennstuff:chlorophyte_headgear" }
 				type: "item"
 			}]
-			x: -34.0d
-			y: 17.0d
+			x: -59.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -5538,7 +5537,7 @@
 				item: { count: 1, id: "hazennstuff:chlorophyte_mask" }
 				type: "item"
 			}]
-			x: -60.0d
+			x: -58.0d
 			y: 5.0d
 		}
 		{
@@ -5559,47 +5558,8 @@
 				item: { components: { "azurelib:az_id": [I; -1302380326, 725042193, -1993785292, -425827875 ] }, count: 1, id: "hazennstuff:legacy_fireblossom_crown" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 7.0d
-		}
-		{
-			icon: {
-				id: "hazennstuff:shadowwalker_enderman_blindfold"
-			}
-			id: "7B000000000000B4"
-			tasks: [{
-				id: "7B000000010000B4"
-				item: { count: 1, id: "hazennstuff:shadowwalker_enderman_blindfold" }
-				type: "item"
-			}]
-			x: -31.0d
-			y: 17.0d
-		}
-		{
-			icon: {
-				id: "hazennstuff:shadowwalker_enderman_hood"
-			}
-			id: "7B000000000000B5"
-			tasks: [{
-				id: "7B000000010000B5"
-				item: { count: 1, id: "hazennstuff:shadowwalker_enderman_hood" }
-				type: "item"
-			}]
-			x: -60.0d
-			y: 9.0d
-		}
-		{
-			icon: {
-				id: "hazennstuff:shadowwalker_enderman_masked"
-			}
-			id: "7B000000000000B6"
-			tasks: [{
-				id: "7B000000010000B6"
-				item: { count: 1, id: "hazennstuff:shadowwalker_enderman_masked" }
-				type: "item"
-			}]
-			x: -29.0d
-			y: 17.0d
+			x: -59.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -5893,8 +5853,8 @@
 				item: { count: 1, id: "iceandfire:earplugs" }
 				type: "item"
 			}]
-			x: -22.0d
-			y: 11.0d
+			x: -61.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -6276,8 +6236,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 7.0d
+			x: -62.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -6314,7 +6274,7 @@
 					type: "item"
 				}
 			]
-			x: -14.0d
+			x: -15.0d
 			y: 11.0d
 		}
 		{
@@ -6335,8 +6295,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 8.0d
+			x: -58.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -6373,7 +6333,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -14.0d
 			y: 11.0d
 		}
 		{
@@ -6411,8 +6371,8 @@
 					type: "item"
 				}
 			]
-			x: -15.0d
-			y: 12.0d
+			x: -13.0d
+			y: 11.0d
 		}
 		{
 			icon: {
@@ -6441,8 +6401,8 @@
 					type: "item"
 				}
 			]
-			x: -14.0d
-			y: 12.0d
+			x: -12.0d
+			y: 11.0d
 		}
 		{
 			icon: {
@@ -6479,7 +6439,7 @@
 					type: "item"
 				}
 			]
-			x: -13.0d
+			x: -15.0d
 			y: 12.0d
 		}
 		{
@@ -6517,7 +6477,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -14.0d
 			y: 12.0d
 		}
 		{
@@ -6530,8 +6490,8 @@
 				item: { count: 1, id: "irons_spellbooks:speed_boots" }
 				type: "item"
 			}]
-			x: -59.0d
-			y: 9.0d
+			x: -61.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -6551,7 +6511,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:tarnished_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
+			x: -58.0d
 			y: 10.0d
 		}
 		{
@@ -6582,7 +6542,7 @@
 				}
 			]
 			x: -13.0d
-			y: 13.0d
+			y: 12.0d
 		}
 		{
 			icon: {
@@ -6625,7 +6585,7 @@
 				}
 			]
 			x: -12.0d
-			y: 13.0d
+			y: 12.0d
 		}
 		{
 			icon: {
@@ -6697,8 +6657,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: 10.0d
+			x: -60.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -6728,7 +6688,7 @@
 				}
 			]
 			x: -52.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -6757,7 +6717,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -52.0d
 			y: 20.0d
 		}
 		{
@@ -6787,8 +6747,8 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 21.0d
+			x: -51.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -6980,7 +6940,7 @@
 				item: { count: 1, id: "minecraft:turtle_helmet" }
 				type: "item"
 			}]
-			x: -61.0d
+			x: -57.0d
 			y: 10.0d
 		}
 		{
@@ -7130,7 +7090,7 @@
 					type: "item"
 				}
 			]
-			x: -42.0d
+			x: -41.0d
 			y: 20.0d
 		}
 		{
@@ -7160,7 +7120,7 @@
 					type: "item"
 				}
 			]
-			x: -41.0d
+			x: -42.0d
 			y: 20.0d
 		}
 		{
@@ -12770,7 +12730,7 @@
 					type: "item"
 				}
 			]
-			x: -62.0d
+			x: -58.0d
 			y: 6.0d
 		}
 		{
@@ -12785,8 +12745,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 7.0d
+			x: -61.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -12800,7 +12760,7 @@
 					type: "item"
 				}
 			]
-			x: -61.0d
+			x: -60.0d
 			y: 5.0d
 		}
 		{
@@ -12815,7 +12775,7 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
+			x: -57.0d
 			y: 5.0d
 		}
 		{
@@ -12830,8 +12790,8 @@
 					type: "item"
 				}
 			]
-			x: -58.0d
-			y: 8.0d
+			x: -59.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -12845,7 +12805,7 @@
 					type: "item"
 				}
 			]
-			x: -61.0d
+			x: -57.0d
 			y: 6.0d
 		}
 		{
@@ -12860,8 +12820,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 6.0d
+			x: -62.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -12875,8 +12835,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 6.0d
+			x: -61.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -12890,8 +12850,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 8.0d
+			x: -60.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -12905,7 +12865,7 @@
 					type: "item"
 				}
 			]
-			x: -62.0d
+			x: -57.0d
 			y: 9.0d
 		}
 		{
@@ -12920,8 +12880,8 @@
 					type: "item"
 				}
 			]
-			x: -61.0d
-			y: 9.0d
+			x: -62.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -12935,8 +12895,8 @@
 					type: "item"
 				}
 			]
-			x: -57.0d
-			y: 9.0d
+			x: -59.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -12955,8 +12915,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 12.0d
+			x: -58.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -12986,7 +12946,7 @@
 				}
 			]
 			x: -52.0d
-			y: 29.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13000,8 +12960,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 29.0d
+			x: -52.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13030,8 +12990,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 29.0d
+			x: -51.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13045,8 +13005,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 29.0d
+			x: -51.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13075,8 +13035,8 @@
 					type: "item"
 				}
 			]
-			x: -48.0d
-			y: 29.0d
+			x: -50.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13105,8 +13065,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 29.0d
+			x: -49.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13135,8 +13095,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 29.0d
+			x: -48.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13150,8 +13110,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 29.0d
+			x: -50.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13165,8 +13125,8 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
-			y: 29.0d
+			x: -49.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13180,8 +13140,8 @@
 					type: "item"
 				}
 			]
-			x: -43.0d
-			y: 29.0d
+			x: -48.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13195,23 +13155,8 @@
 					type: "item"
 				}
 			]
-			x: -42.0d
-			y: 29.0d
-		}
-		{
-			icon: {
-				id: "antarchy:ultimate_mace"
-			}
-			id: "7B0000000000027E"
-			tasks: [
-				{
-					id: "7B0000000100027E"
-					item: { count: 1, id: "antarchy:ultimate_mace" }
-					type: "item"
-				}
-			]
-			x: -41.0d
-			y: 29.0d
+			x: -47.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13225,8 +13170,8 @@
 					type: "item"
 				}
 			]
-			x: -40.0d
-			y: 29.0d
+			x: -46.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13240,23 +13185,23 @@
 					type: "item"
 				}
 			]
-			x: -39.0d
-			y: 29.0d
+			x: -45.0d
+			y: 47.0d
 		}
 		{
 			icon: {
-				id: "antarchy:big_bertha_blade"
+				id: "antarchy:big_bertha"
 			}
 			id: "7B00000000000281"
 			tasks: [
 				{
 					id: "7B00000001000281"
-					item: { count: 1, id: "antarchy:big_bertha_blade" }
+					item: { count: 1, id: "antarchy:big_bertha" }
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 30.0d
+			x: -44.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13270,8 +13215,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 30.0d
+			x: -43.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13285,8 +13230,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 30.0d
+			x: -42.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13300,8 +13245,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 30.0d
+			x: -41.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13325,8 +13270,8 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 33.0d
+			x: -40.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13350,8 +13295,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 33.0d
+			x: -39.0d
+			y: 47.0d
 		}
 		{
 			icon: {
@@ -13370,8 +13315,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 33.0d
+			x: -52.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13390,8 +13335,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 33.0d
+			x: -51.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13405,8 +13350,8 @@
 					type: "item"
 				}
 			]
-			x: -48.0d
-			y: 33.0d
+			x: -50.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13420,8 +13365,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 33.0d
+			x: -49.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13435,8 +13380,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 33.0d
+			x: -48.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13450,8 +13395,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 33.0d
+			x: -47.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13465,8 +13410,8 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 35.0d
+			x: -46.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13480,8 +13425,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 35.0d
+			x: -45.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13510,8 +13455,8 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 37.0d
+			x: -47.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13540,8 +13485,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 37.0d
+			x: -46.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13555,8 +13500,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 37.0d
+			x: -44.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13584,29 +13529,19 @@
 					item: { count: 1, id: "oritech:exo_boots" }
 					type: "item"
 				}
-			]
-			x: -52.0d
-			y: 39.0d
-		}
-		{
-			icon: {
-				id: "oritech:exo_jetpack"
-			}
-			id: "7B00000000000293"
-			tasks: [
 				{
-					id: "7B00000001000293"
+					id: "7B00000001040292"
 					item: { count: 1, id: "oritech:exo_jetpack" }
 					type: "item"
 				}
 				{
-					id: "7B00000001010293"
+					id: "7B00000001050292"
 					item: { count: 1, id: "oritech:jetpack_exo_elytra" }
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 39.0d
+			x: -45.0d
+			y: 44.0d
 		}
 		{
 			icon: {
@@ -13620,8 +13555,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 39.0d
+			x: -43.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13635,8 +13570,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 39.0d
+			x: -42.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13650,8 +13585,8 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
-			y: 41.0d
+			x: -41.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13665,8 +13600,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 41.0d
+			x: -40.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13680,8 +13615,8 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
-			y: 41.0d
+			x: -39.0d
+			y: 48.0d
 		}
 		{
 			icon: {
@@ -13695,8 +13630,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 41.0d
+			x: -52.0d
+			y: 49.0d
 		}
 	]
 }

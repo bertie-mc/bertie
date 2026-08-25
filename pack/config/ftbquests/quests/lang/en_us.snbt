@@ -843,10 +843,6 @@
 	quest.7B0000000000004E.title: "Copper Diving Set"
 	quest.7B0000000000004F.quest_desc: ["Helmet: Full Netherite diving set with a Netherite Backtank: grants Fire and Lava immunity and clear vision in lava, draining the tank's Air Pressure. Boots: While worn: descend faster in water or lava and walk/jump along the bottom; unaffected by Mechanical Belts."]
 	quest.7B0000000000004F.title: "Netherite Diving Set"
-	quest.7B00000000000050.quest_desc: ["Worn tank that stores Pressurized Air and supplies Create equipment (diving helmet, potato cannon); refills when placed and driven by rotation."]
-	quest.7B00000000000050.title: "Copper Backtank"
-	quest.7B00000000000051.quest_desc: ["Worn tank that stores Pressurized Air and supplies Create equipment (diving helmet, potato cannon); refills when placed and driven by rotation."]
-	quest.7B00000000000051.title: "Netherite Backtank"
 	quest.7B00000000000052.quest_desc: ["Each piece: +150 max mana, +10% spell power, +10% eldritch spell power. Full set: +600 max mana, +40% spell power, +40% eldritch spell power."]
 	quest.7B00000000000052.title: "Warden Mage Set"
 	quest.7B00000000000053.quest_desc: ["Each worn piece grants +0.05 movement speed and immunity to Blindness and Darkness (full set +0.2 speed)."]
@@ -1041,12 +1037,6 @@
 	quest.7B000000000000B2.title: "Chlorophyte Mask"
 	quest.7B000000000000B3.quest_desc: ["+15% fire spell power, +15% nature spell power, +200 max mana. Full set: Fireblossom Ruler caster buffs."]
 	quest.7B000000000000B3.title: "Legacy Fireblossom Crown"
-	quest.7B000000000000B4.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
-	quest.7B000000000000B4.title: "Shadowwalker Enderman Blindfold"
-	quest.7B000000000000B5.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
-	quest.7B000000000000B5.title: "Shadowwalker Enderman Hood"
-	quest.7B000000000000B6.quest_desc: ["While worn (per piece): +125 max mana, +10% ender spell power, +5% spell power."]
-	quest.7B000000000000B6.title: "Shadowwalker Enderman Masked"
 	quest.7B000000000000B7.quest_desc: ["Iron's Spells mage armor. Each piece: +5% spell power, +10% fire spell power, +150 max mana, +30% mana regen; a full set stacks to about +20% spell power, +40% fire spell power, +600 max mana."]
 	quest.7B000000000000B7.title: "Fire Dragon Priest Set"
 	quest.7B000000000000B8.quest_desc: ["Iron's Spells mage armor. Each piece: +5% spell power, +10% ice spell power, +150 max mana, +30% mana regen; a full set stacks to about +20% spell power, +40% ice spell power, +600 max mana."]
@@ -1921,10 +1911,9 @@
 	quest.7B0000000000027B.title: "Ultimate Axe"
 	quest.7B0000000000027C.title: "Ultimate Bow"
 	quest.7B0000000000027D.title: "Ultimate Crossbow"
-	quest.7B0000000000027E.title: "Ultimate Mace"
 	quest.7B0000000000027F.title: "Basilisk Dagger"
 	quest.7B00000000000280.title: "Battle Axe"
-	quest.7B00000000000281.title: "Big Bertha Blade"
+	quest.7B00000000000281.title: "Big Bertha"
 	quest.7B00000000000282.title: "Gravity Gun"
 	quest.7B00000000000283.title: "Emperor Scorpion Whip"
 	quest.7B00000000000284.title: "Water Cannon"
@@ -1942,7 +1931,6 @@
 	quest.7B00000000000290.title: "Hazmat Suit"
 	quest.7B00000000000291.title: "Electric Bow"
 	quest.7B00000000000292.title: "Exo Set"
-	quest.7B00000000000293.title: "Exo Jetpack"
 	quest.7B00000000000294.title: "Electric Mace"
 	quest.7B00000000000295.title: "Prometheum Battleaxe"
 	quest.7B00000000000296.title: "Cursium Sword"
