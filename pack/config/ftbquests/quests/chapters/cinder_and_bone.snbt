@@ -1034,5 +1034,27 @@
 			x: 6.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6B0000000000003F"]
+			icon: {
+				id: "sophisticatedbackpacks:netherite_backpack"
+			}
+			id: "6B00000000000049"
+			rewards: [{
+				id: "6B00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				icon: {
+					id: "sophisticatedbackpacks:netherite_backpack"
+				}
+				id: "6B00000001000049"
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 1.5d
+		}
 	]
 }

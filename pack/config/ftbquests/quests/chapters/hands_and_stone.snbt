@@ -1002,5 +1002,28 @@
 			x: 15.0d
 			y: 1.5d
 		}
+		{
+			icon: {
+				count: 1
+				id: "sophisticatedbackpacks:copper_backpack"
+			}
+			dependencies: ["1B00000000000013"]
+			id: "1B00000000000030"
+			rewards: [{
+				id: "1B00000002000030"
+				type: "xp"
+				xp: 25
+			}]
+				tasks: [
+					{
+						count: 1L
+						id: "1B00000001000030"
+						item: { count: 1 id: "sophisticatedbackpacks:copper_backpack" }
+						type: "item"
+					}
+				]
+			x: 15.0d
+			y: 6.5d
+		}
 	]
 }

@@ -100,6 +100,8 @@
 	quest.1B0000000000002E.title: "Get Aureal"
 	quest.1B0000000000002F.quest_desc: ["Leather and string over a chest and a Bundle, in the 2x2 grid. It fits before a crafting table does."]
 	quest.1B0000000000002F.title: "A Backpack"
+	quest.1B00000000000030.quest_desc: ["Two Blocks of Copper and a Rabbit Hide around the backpack, still in the 2x2 grid. The upgrade carries whatever is inside it."]
+	quest.1B00000000000030.title: "Copper Backpack"
 	quest.1B00000000000031.quest_desc: ["A Tier-I ritual on the Copper Backpack: 4 Blocks of Iron, 2 Colossal Iron and 2 Kangaroo Hide, for 5000 blood and 50 aureal. The forge hands the old pack's contents to the new one."]
 	quest.1B00000000000031.title: "Iron Backpack"
 	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
@@ -677,6 +679,8 @@
 	quest.6B00000000000047.title: "The Cinderous Soulcaller"
 	quest.6B00000000000048.quest_desc: ["The First Flamebearer. Bring the soulcaller, and bring help."]
 	quest.6B00000000000048.title: "Echo of Tyros"
+	quest.6B00000000000049.quest_desc: ["The last upgrade your pack will ever take."]
+	quest.6B00000000000049.title: "The Netherite Backpack"
 	quest.6B0000000000004A.quest_desc: ["Ignitium, stratine and black steel around a doubly compressed table. Everything past here is built on it."]
 	quest.6B0000000000004A.title: "The Nether Crafting Table"
 	quest.6B0000000000004B.quest_desc: ["Four soulstained steel around a netherite ingot, on the Spirit Altar."]
