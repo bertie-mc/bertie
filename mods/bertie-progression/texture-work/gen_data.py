@@ -2033,6 +2033,15 @@ for _gem, _shard, _sound, _adv in (
               "required_advancement": _adv,
           })
 
+# --- Malignant Pewter: iron and scrap give way to soulstained steel and a netherite ingot. ---
+write("data/malum/recipe/spirit_infusion/malignant_pewter_ingot.json", DISABLED)
+write(f"{R}/malum/malignant_pewter_ingot.json",
+      infusion("malum:soul_stained_steel_ingot", 4,
+               [("minecraft:netherite_ingot", 1), ("pastel:onyx_powder", 2),
+                ("malum:malignant_lead", 2), ("malum:null_slate", 6)],
+               [SP("earthen", 16), SP("eldritch", 16)],
+               "malum:malignant_pewter_ingot", 1))
+
 # --- Cognition: the cognitive chain is rebuilt from the flux up. ---
 # Flux is mixed rather than crafted, the alloy and the crystal both want a full ring of amalgam,
 # and the Astute Assembly stops being a 3x3 and becomes a sequenced assembly.

@@ -89,7 +89,7 @@
 				item: { count: 1 id: "alexscaves:azure_magnet" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 12.0d
 			y: -6.0d
 		}
 		{
@@ -108,12 +108,12 @@
 				item: { count: 1 id: "alexscaves:scarlet_magnet" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 13.5d
 			y: -6.0d
 		}
 		{
 			icon: {
-				id: "alexscaves:azure_neodymium"
+				id: "alexscaves:azure_neodymium_ingot"
 			}
 			id: "2C00000000000006"
 			rewards: [{
@@ -124,15 +124,15 @@
 			tasks: [{
 				count: 1L
 				id: "2C00000001000006"
-				item: { count: 1 id: "alexscaves:azure_neodymium" }
+				item: { count: 1 id: "alexscaves:azure_neodymium_ingot" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -6.0d
 		}
 		{
 			icon: {
-				id: "alexscaves:scarlet_neodymium"
+				id: "alexscaves:scarlet_neodymium_ingot"
 			}
 			id: "2C00000000000007"
 			rewards: [{
@@ -143,10 +143,10 @@
 			tasks: [{
 				count: 1L
 				id: "2C00000001000007"
-				item: { count: 1 id: "alexscaves:scarlet_neodymium" }
+				item: { count: 1 id: "alexscaves:scarlet_neodymium_ingot" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: -6.0d
 		}
 		{
@@ -165,7 +165,7 @@
 				item: { count: 1 id: "alexscaves:energized_galena_neutral" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 7.5d
 			y: -6.0d
 		}
 		{
@@ -184,7 +184,7 @@
 				item: { count: 1 id: "alexscaves:energized_galena_azure" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 4.5d
 			y: -6.0d
 		}
 		{
@@ -203,7 +203,7 @@
 				item: { count: 1 id: "alexscaves:energized_galena_scarlet" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 6.0d
 			y: -6.0d
 		}
 		{

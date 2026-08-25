@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "malum:soul_stained_steel_ingot",
+    "count": 4
+  },
+  "extraInputs": [
+    {
+      "item": "minecraft:netherite_ingot",
+      "count": 1
+    },
+    {
+      "item": "pastel:onyx_powder",
+      "count": 2
+    },
+    {
+      "item": "malum:malignant_lead",
+      "count": 2
+    },
+    {
+      "item": "malum:null_slate",
+      "count": 6
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 16
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "malum:malignant_pewter_ingot",
+    "count": 1
+  }
+}

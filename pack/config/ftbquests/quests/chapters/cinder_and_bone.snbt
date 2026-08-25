@@ -914,5 +914,85 @@
 			x: 21.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["6B0000000000003F"]
+			icon: {
+				id: "malum:malignant_pewter_ingot"
+			}
+			id: "6B0000000000004B"
+			rewards: [{
+				id: "6B0000000200004B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B0000000100004B"
+				item: { count: 1 id: "malum:malignant_pewter_ingot" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B0000000000004A"]
+			icon: {
+				id: "bertieprogression:null_blaze_cube"
+			}
+			id: "6B0000000000004C"
+			rewards: [{
+				id: "6B0000000200004C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B0000000100004C"
+				item: { count: 1 id: "bertieprogression:null_blaze_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B0000000000004C", "1C0000000000005B"]
+			icon: {
+				id: "avaritia:blaze_cube"
+			}
+			id: "6B0000000000004D"
+			rewards: [{
+				id: "6B0000000200004D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B0000000100004D"
+				item: { count: 1 id: "avaritia:blaze_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B0000000000004A"]
+			icon: {
+				id: "mekanism:steel_casing"
+			}
+			id: "6B0000000000004E"
+			rewards: [{
+				id: "6B0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B0000000100004E"
+				item: { count: 1 id: "mekanism:steel_casing" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
 	]
 }

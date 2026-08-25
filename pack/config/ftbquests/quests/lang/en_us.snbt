@@ -365,8 +365,8 @@
 	quest.2C00000000000003.title: "The Magnetic Caves"
 	quest.2C00000000000004.title: "Azure Magnet"
 	quest.2C00000000000005.title: "Scarlet Magnet"
-	quest.2C00000000000006.title: "Azure Neodymium"
-	quest.2C00000000000007.title: "Scarlet Neodymium"
+	quest.2C00000000000006.title: "Azure Neodymium Ingot"
+	quest.2C00000000000007.title: "Scarlet Neodymium Ingot"
 	quest.2C00000000000008.title: "Energized Galena"
 	quest.2C00000000000009.title: "Azure Energized Galena"
 	quest.2C0000000000000A.title: "Scarlet Energized Galena"
@@ -651,6 +651,14 @@
 	quest.6B00000000000049.title: "The Netherite Backpack"
 	quest.6B0000000000004A.quest_desc: ["Ignitium, stratine and black steel around a doubly compressed table. Everything past here is built on it."]
 	quest.6B0000000000004A.title: "The Nether Crafting Table"
+	quest.6B0000000000004B.quest_desc: ["Four soulstained steel around a netherite ingot, on the Spirit Altar."]
+	quest.6B0000000000004B.title: "Malignant Pewter Ingot"
+	quest.6B0000000000004C.quest_desc: ["Inert until the amethyst gets at it."]
+	quest.6B0000000000004C.title: "The Null Blaze Cube"
+	quest.6B0000000000004D.quest_desc: ["Bless the null cube on the Altar of Amethyst."]
+	quest.6B0000000000004D.title: "The Blaze Cube"
+	quest.6B0000000000004E.quest_desc: ["The shell every Mekanism machine is built in."]
+	quest.6B0000000000004E.title: "Steel Casing"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
