@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deepwaters"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "simple",
+  "time": 200,
+  "experience": 4.0,
+  "colors": {
+    "pastel:cyan": 6,
+    "pastel:magenta": 0,
+    "pastel:yellow": 6,
+    "pastel:black": 0,
+    "pastel:white": 0
+  },
+  "pattern": [
+    "BSA",
+    "BXA",
+    "BSA"
+  ],
+  "key": {
+    "B": "minecraft:blaze_powder",
+    "S": "minecraft:netherite_scrap",
+    "A": "deepwaters:aquamarine",
+    "X": "forbidden_arcanus:xpetrified_orb"
+  },
+  "result": {
+    "id": "cataclysm:flame_eye",
+    "count": 1
+  },
+  "required_advancement": "pastel:unlocks/blocks/cmy_pedestal"
+}

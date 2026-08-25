@@ -1225,5 +1225,175 @@
 			x: -10.5d
 			y: 3.0d
 		}
+		{
+			icon: {
+				id: "primitiverefined:soulstained_shaft"
+			}
+			id: "1C0000000000004E"
+			rewards: [{
+				id: "1C0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C0000000100004E"
+				item: { count: 1, id: "primitiverefined:soulstained_shaft" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1C0000000000004E"]
+			icon: {
+				id: "primitiverefined:obsidiansteel_cogwheel_soulstained"
+			}
+			id: "1C0000000000004F"
+			rewards: [{
+				id: "1C0000000200004F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C0000000100004F"
+				item: { count: 1, id: "primitiverefined:obsidiansteel_cogwheel_soulstained" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C0000000000004F"]
+			icon: {
+				id: "primitiverefined:p_grid"
+			}
+			id: "1C0000000000004B"
+			rewards: [{
+				id: "1C0000000200004B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C0000000100004B"
+				item: { count: 1, id: "primitiverefined:p_grid" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1C0000000000004B"]
+			icon: {
+				id: "primitiverefined:external_reader"
+			}
+			id: "1C0000000000004D"
+			rewards: [{
+				id: "1C0000000200004D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C0000000100004D"
+				item: { count: 1, id: "primitiverefined:external_reader" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1C0000000000004D"]
+			icon: {
+				id: "primitiverefined:p_controller"
+			}
+			id: "1C00000000000052"
+			rewards: [{
+				id: "1C00000002000052"
+				type: "xp"
+				xp: 25
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1C00000001000052"
+				item: { count: 1, id: "primitiverefined:p_controller" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1C0000000000004F", "1C00000000000056"]
+			icon: {
+				id: "primitiverefined:arcanetic_gearbox"
+			}
+			id: "1C00000000000050"
+			rewards: [{
+				id: "1C00000002000050"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C00000001000050"
+				item: { count: 1, id: "primitiverefined:arcanetic_gearbox" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C00000000000050", "1C00000000000056"]
+			icon: {
+				id: "primitiverefined:arcanetic_gearbox_vertical"
+			}
+			id: "1C00000000000051"
+			rewards: [{
+				id: "1C00000002000051"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C00000001000051"
+				item: { count: 1, id: "primitiverefined:arcanetic_gearbox_vertical" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			icon: {
+				id: "create:sturdy_sheet"
+			}
+			id: "1C00000000000056"
+			rewards: [{
+				id: "1C00000002000056"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C00000001000056"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1C0000000000004B"]
+			icon: {
+				id: "primitiverefined:p_crafting_grid"
+			}
+			id: "1C0000000000004C"
+			rewards: [{
+				id: "1C0000000200004C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1C0000000100004C"
+				item: { count: 1, id: "primitiverefined:p_crafting_grid" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.5d
+		}
 	]
 }

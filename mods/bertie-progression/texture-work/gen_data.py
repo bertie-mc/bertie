@@ -2161,6 +2161,25 @@ _soul = pedestal(["CNN", "CBN", "CCC"],
 _soul["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
 write("data/pastel/recipe/pedestal/tier2/cinderous_soulcaller.json", _soul)
 
+# The Flame Eye leaves Cataclysm's own table for the CMY Pedestal: blaze powder down the left,
+# aquamarine down the right, ancient scrap above and below, an Xpetrified Orb at the heart.
+write("data/cataclysm/recipe/flame_eye.json", DISABLED)
+_flame = pedestal(["BSA", "BXA", "BSA"],
+                  {"B": "minecraft:blaze_powder", "S": "minecraft:netherite_scrap",
+                   "A": "deepwaters:aquamarine", "X": "forbidden_arcanus:xpetrified_orb"},
+                  {"pastel:cyan": 6, "pastel:magenta": 0, "pastel:yellow": 6,
+                   "pastel:black": 0, "pastel:white": 0},
+                  "cataclysm:flame_eye", 1, tier="simple", time=200, xp=4.0)
+_flame["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
+write("data/pastel/recipe/pedestal/tier2/flame_eye.json", _flame)
+
+# Decay spreads and multiplies, so anything it drops is free: one Bottle of Fading turns into a
+# field of Vegetal, one Bottle of Failing into a field of Neolith. The blocks stay breakable and
+# stay cleanable with Decay Away - they just no longer hand anything back.
+for _decay in ("fading", "failing", "ruin", "forfeiture"):
+    write(f"data/pastel/loot_table/blocks/{_decay}.json",
+          {"type": "minecraft:block", "pools": []})
+
 # A route to Netherite through the Fusion Shrine. The three crafting-effect fields are not
 # optional: leave any of them out and the whole recipe fails to parse.
 write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",

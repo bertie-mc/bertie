@@ -4,6 +4,7 @@
 	chapter.2B00000000000000.title: "Kinetic Language"
 	chapter.2C00000000000000.title: "Glyph and Gloom"
 	chapter.3B00000000000000.title: "Ash and Twilight"
+	chapter.3C00000000000000.title: "Buffs"
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.6B00000000000000.title: "The Nether"
@@ -200,8 +201,6 @@
 	quest.1C00000000000055.title: "Grim Talc"
 	quest.1C00000000000056.quest_desc: ["Press Obsidian into a Sturdy Sheet. The Train Casing at the centre of both Arcanetic Gearboxes is built from them."]
 	quest.1C00000000000056.title: "Sturdy Sheet"
-	quest.1C00000000000057.quest_desc: ["I shouldn't stick my hand in there."]
-	quest.1C00000000000057.title: "Exanimate Essence"
 	quest.1C00000000000058.quest_desc: ["Find an Ancient City and go in. Everything past this point is sculk."]
 	quest.1C00000000000058.title: "Enter the Ancient City"
 	quest.1C00000000000059.quest_desc: ["One Echo Shard out of the city's chests."]
@@ -559,6 +558,25 @@
 	quest.3B00000000000054.title: "Cognitive Crystal"
 	quest.3B00000000000055.quest_desc: ["Three alloys onto a crystal, a splash of Timeless Slurry, and a press."]
 	quest.3B00000000000055.title: "The Astute Assembly"
+	quest.3C00000000000001.title: "The Enchanting Table"
+	quest.3C00000000000002.title: "Enchanters"
+	quest.3C00000000000003.title: "The Experience Obelisk"
+	quest.3C00000000000004.title: "The Experience Fountain"
+	quest.3C00000000000005.title: "The Precision Dispeller"
+	quest.3C00000000000006.title: "The Soulbinding Brazier"
+	quest.3C00000000000007.title: "The Runic Workbench"
+	quest.3C00000000000008.title: "The Apothic Enchanting Table"
+	quest.3C00000000000009.title: "Enchanting Table of the Raven"
+	quest.3C0000000000000A.title: "The Salvaging Table"
+	quest.3C0000000000000B.title: "The Gem Cutting Table"
+	quest.3C0000000000000C.title: "The Simple Reforging Table"
+	quest.3C0000000000000D.title: "The Reforging Table"
+	quest.3C0000000000000E.title: "The Augmenting Table"
+	quest.3C0000000000000F.title: "Gem Cases"
+	quest.3C00000000000010.title: "The Enchantment Library"
+	quest.3C00000000000011.title: "The Library of Alexandria"
+	quest.3C00000000000012.title: "The Infusion Pedestal"
+	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
