@@ -10,7 +10,7 @@ connection and a player may turn it off without desyncing.
 
 Below a fade depth the fog closes in - terrain and sky alike, so a cave mouth does not cut a
 bright edge through it - its colour is pulled towards black and pale motes drift through it. The
-effect eases in rather than ramping: nothing at y=-54, half at the top of the bedrock layer, full on
+effect eases in rather than ramping: nothing at y=-45, half at the top of the bedrock layer, full on
 the floor.
 
 Two things soften it, both gradually:
@@ -46,7 +46,7 @@ either way.
 | --- | --- | --- |
 | `depth.enabled` | `true` | draw the fog at all |
 | `depth.dimensions` | `["minecraft:overworld"]` | dimensions that get it; anything unlisted is untouched |
-| `depth.fadeDepth` | `10` | blocks above the floor where it starts to show (overworld y=-54) |
+| `depth.fadeDepth` | `19` | blocks above the floor where it starts to show (overworld y=-45) |
 | `depth.fullDepth` | `5` | blocks above the floor where it is at full strength, measured to the eye |
 | `sky.radius` | `24` | how far an opening to the sky holds it off; `0` ignores daylight |
 | `sky.scanInterval` | `10` | ticks between sky scans; the result is eased between them |

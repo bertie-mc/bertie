@@ -49,8 +49,10 @@ public final class VoidFogConfig {
 
         FADE_DEPTH = builder.comment(
                         "Blocks above the floor where the fog starts to show. The overworld floor is",
-                        "y=-64, so 10 begins the fade at y=-54 - a little above the highest bedrock.")
-                .defineInRange("fadeDepth", 10, 0, 512);
+                        "y=-64, so 19 begins the fade at y=-45. Widening this does not just move the",
+                        "start: the ramp stretches over the whole band, so the depths in between get",
+                        "more fog too, not the same fog sooner.")
+                .defineInRange("fadeDepth", 19, 0, 512);
 
         FULL_DEPTH = builder.comment(
                         "Blocks above the floor where the fog is at full strength. Measured to the",

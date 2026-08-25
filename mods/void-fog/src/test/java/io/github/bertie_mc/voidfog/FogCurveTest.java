@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class FogCurveTest {
     private static final int OVERWORLD_FLOOR = -64;
-    private static final int FADE = 10;
+    private static final int FADE = 19;
     private static final int FULL = 5;
 
     /** Eye height above the block a player stands on. */
@@ -16,7 +16,7 @@ class FogCurveTest {
     @Test
     void isAbsentAboveTheFadeDepth() {
         assertEquals(0.0F, FogCurve.strength(64.0, OVERWORLD_FLOOR, FADE, FULL));
-        assertEquals(0.0F, FogCurve.strength(-54.0, OVERWORLD_FLOOR, FADE, FULL));
+        assertEquals(0.0F, FogCurve.strength(-45.0, OVERWORLD_FLOOR, FADE, FULL));
     }
 
     /**
@@ -30,11 +30,15 @@ class FogCurveTest {
         assertEquals(1.0F, FogCurve.strength(-63.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
     }
 
-    /** Standing on the highest bedrock, y=-59, is the weakest the fog gets underfoot. */
+    /**
+     * Standing on the highest bedrock is the weakest the fog gets underfoot, and with the band
+     * reaching up to y=-45 that is no longer "moderate" - by the time you are on bedrock at
+     * all you are nearly at full strength.
+     */
     @Test
-    void isPartialOnTheHighestBedrock() {
+    void isNearlyFullOnTheHighestBedrock() {
         float s = FogCurve.strength(-58.0 + EYE, OVERWORLD_FLOOR, FADE, FULL);
-        assertTrue(s > 0.3F && s < 0.55F, "expected a moderate fog on the top bedrock, was " + s);
+        assertTrue(s > 0.85F, "expected near-full fog on the top bedrock, was " + s);
     }
 
     /**
@@ -43,14 +47,14 @@ class FogCurveTest {
      */
     @Test
     void theBandEasesAtBothEndsRatherThanRamping() {
-        float justInside = FogCurve.strength(-64.0 + 9.0, OVERWORLD_FLOOR, FADE, FULL);
+        float justInside = FogCurve.strength(-64.0 + (FADE - 1), OVERWORLD_FLOOR, FADE, FULL);
         float justAboveFull = FogCurve.strength(-64.0 + 6.0, OVERWORLD_FLOOR, FADE, FULL);
         assertTrue(justInside < 0.12F, "should barely start at the top of the band, was " + justInside);
         assertTrue(justAboveFull > 0.88F, "should be nearly full just above fullDepth, was " + justAboveFull);
 
         // Still monotonic, and still pinned at both ends.
         float previous = 1.1F;
-        for (int tenths = 50; tenths <= 100; tenths++) {
+        for (int tenths = FULL * 10; tenths <= FADE * 10; tenths++) {
             float here = FogCurve.strength(-64.0 + tenths / 10.0, OVERWORLD_FLOOR, FADE, FULL);
             assertTrue(here <= previous, "strength must not rise as you go up, at " + tenths / 10.0);
             previous = here;
@@ -61,8 +65,8 @@ class FogCurveTest {
 
     @Test
     void measuresDepthFromEachDimensionsOwnFloor() {
-        assertEquals(1.0F, FogCurve.strength(5.0, 0, FADE, FULL));
-        assertEquals(0.0F, FogCurve.strength(10.0, 0, FADE, FULL));
+        assertEquals(1.0F, FogCurve.strength(FULL, 0, FADE, FULL));
+        assertEquals(0.0F, FogCurve.strength(FADE, 0, FADE, FULL));
     }
 
     @Test
@@ -89,10 +93,10 @@ class FogCurveTest {
     @Test
     void theViewDistanceIsContinuousWhereTheBandBegins() {
         float renderFar = 192.0F;
-        float above = FogCurve.strength(-54.0, OVERWORLD_FLOOR, FADE, FULL);
-        assertEquals(0.0F, above, "the band should not have started at y=-54");
+        float above = FogCurve.strength(-45.0, OVERWORLD_FLOOR, FADE, FULL);
+        assertEquals(0.0F, above, "the band should not have started at y=-45");
 
-        float justInside = FogCurve.strength(-54.2, OVERWORLD_FLOOR, FADE, FULL);
+        float justInside = FogCurve.strength(-45.2, OVERWORLD_FLOOR, FADE, FULL);
         float far = FogCurve.distance(renderFar, 8.0F, justInside, FALLOFF);
         assertTrue(
                 far > renderFar * 0.93F,
@@ -130,7 +134,7 @@ class FogCurveTest {
         assertEquals(1.0F, FogCurve.colourKept(0.0F, 1.0F, FALLOFF), 1.0e-6F);
         assertEquals(0.0F, FogCurve.colourKept(1.0F, 1.0F, FALLOFF), 1.0e-6F);
 
-        float justInside = FogCurve.strength(-54.2, OVERWORLD_FLOOR, FADE, FULL);
+        float justInside = FogCurve.strength(-45.2, OVERWORLD_FLOOR, FADE, FULL);
         float keep = FogCurve.colourKept(justInside, 1.0F, FALLOFF);
         assertTrue(keep > 0.97F, "entering the band must barely darken it, was " + keep);
     }
