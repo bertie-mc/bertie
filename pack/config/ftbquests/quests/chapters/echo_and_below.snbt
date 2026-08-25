@@ -9,7 +9,6 @@
 	quests: [
 		{
 			icon: {
-				count: 1
 				id: "minecraft:barrier"
 			}
 			id: "4B00000000000001"
@@ -18,69 +17,57 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:barrier"
-						}
-						id: "4B00000001000001"
-						title: "Placeholder"
-						type: "checkmark"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "minecraft:barrier"
+				}
+				id: "4B00000001000001"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["4B00000000000001"]
 			icon: {
-				count: 1
 				id: "deeperdarker:soul_crystal"
 			}
-			dependencies: ["4B00000000000001"]
 			id: "4B00000000000002"
 			rewards: [{
 				id: "4B00000002000002"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "deeperdarker:soul_crystal"
-						}
-						id: "4B00000001000002"
-						dimension: "deeperdarker:otherside"
-						type: "dimension"
-					}
-				]
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				icon: {
+					id: "deeperdarker:soul_crystal"
+				}
+				id: "4B00000001000002"
+				type: "dimension"
+			}]
 			x: 1.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["4B00000000000001"]
 			icon: {
-				count: 1
 				id: "pastel:moonstone_shard"
 			}
-			dependencies: ["4B00000000000001"]
 			id: "4B00000000000003"
 			rewards: [{
 				id: "4B00000002000003"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "pastel:moonstone_shard"
-						}
-						id: "4B00000001000003"
-						dimension: "pastel:deeper_down"
-						type: "dimension"
-					}
-				]
+			tasks: [{
+				dimension: "pastel:deeper_down"
+				icon: {
+					id: "pastel:moonstone_shard"
+				}
+				id: "4B00000001000003"
+				type: "dimension"
+			}]
 			x: 1.5d
 			y: 1.0d
 		}

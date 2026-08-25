@@ -4,7 +4,6 @@
 	filename: "hands_and_stone"
 	group: ""
 	icon: {
-		count: 1
 		id: "slag:brick_forge"
 	}
 	id: "1B00000000000000"
@@ -13,7 +12,6 @@
 	quests: [
 		{
 			icon: {
-				count: 1
 				id: "minecraft:oak_log"
 			}
 			id: "1B00000000000001"
@@ -22,160 +20,134 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 8L
-						icon: {
-							count: 1
-							id: "minecraft:oak_log"
-						}
-						id: "1B00000001000001"
-						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(bertieprogression:natural_logs)', "minecraft:custom_name": '{"text":"Natural Logs","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 8L
+				icon: {
+					id: "minecraft:oak_log"
+				}
+				id: "1B00000001000001"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(bertieprogression:natural_logs)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Natural Logs\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B00000000000001"]
 			icon: {
-				count: 1
 				id: "berlordscarving:wood_slate"
 			}
-			dependencies: ["1B00000000000001"]
 			id: "1B00000000000002"
 			rewards: [{
 				id: "1B00000002000002"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000002"
-						item: { count: 1 id: "berlordscarving:wood_slate" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000002"
+				item: { count: 1, id: "berlordscarving:wood_slate" }
+				type: "item"
+			}]
 			x: 1.5d
 			y: 1.5d
 		}
 		{
+			dependencies: ["1B00000000000001"]
 			icon: {
-				count: 1
 				id: "bertieprogression:opening_mallet"
 			}
-			dependencies: ["1B00000000000001"]
 			id: "1B00000000000003"
 			rewards: [{
 				id: "1B00000002000003"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000003"
-						item: { count: 1 id: "bertieprogression:opening_mallet" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000003"
+				item: { count: 1, id: "bertieprogression:opening_mallet" }
+				type: "item"
+			}]
 			x: 1.5d
 			y: 3.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "minecraft:paper"
-			}
 			dependencies: [
 				"1B00000000000003"
 				"1B00000000000002"
 			]
+			icon: {
+				id: "minecraft:paper"
+			}
 			id: "1B00000000000004"
 			rewards: [{
 				id: "1B00000002000004"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 3L
-						id: "1B00000001000004"
-						item: { count: 1 id: "minecraft:paper" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 3L
+				id: "1B00000001000004"
+				item: { count: 1, id: "minecraft:paper" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
+			dependencies: ["1B00000000000004"]
 			icon: {
-				count: 1
 				id: "slag:modular_item"
 			}
-			dependencies: ["1B00000000000004"]
 			id: "1B00000000000005"
 			rewards: [{
 				id: "1B00000002000005"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000005"
-						item: { count: 1 id: "slag:modular_item" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000005"
+				item: { count: 1, id: "slag:modular_item" }
+				type: "item"
+			}]
 			x: 4.5d
 			y: 1.5d
 		}
 		{
+			dependencies: ["1B00000000000002"]
 			icon: {
-				count: 1
 				id: "immersive_armors:wooden_helmet"
 			}
-			dependencies: ["1B00000000000002"]
 			id: "1B00000000000006"
 			rewards: [{
 				id: "1B00000002000006"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000006"
-						item: { count: 1 id: "immersive_armors:wooden_helmet" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000006"
+				item: { count: 1, id: "immersive_armors:wooden_helmet" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B00000000000005"]
 			icon: {
-				count: 1
 				id: "minecraft:wooden_pickaxe"
 			}
-			dependencies: ["1B00000000000005"]
 			id: "1B00000000000007"
 			rewards: [{
 				id: "1B00000002000007"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000007"
-						item: { count: 1, components: { "slag:material_type": "slag:wooden", "slag:part_type": "slag:pickaxe_head" }, id: "slag:dynamic_part" }
-						match_components: "fuzzy"
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000007"
+				item: { components: { "slag:material_type": "slag:wooden", "slag:part_type": "slag:pickaxe_head" }, count: 1, id: "slag:dynamic_part" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
 			x: 6.0d
 			y: 1.5d
 		}
@@ -187,838 +159,846 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000008"
-						item: { components: { "ftbfiltersystem:filter": 'or(and(item(slag:dynamic_part)component(fuzzy:{"slag:material_type":"slag:flint","slag:part_type":"slag:pickaxe_head"}))and(item(slag:dynamic_part)component(fuzzy:{"slag:material_type":"slag:bone","slag:part_type":"slag:pickaxe_head"})))', "minecraft:custom_name": '{"text":"Flint or Bone Pickaxe Head","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000008"
+				item: { components: { "ftbfiltersystem:filter": "or(and(item(slag:dynamic_part)component(fuzzy:{\"slag:material_type\":\"slag:flint\",\"slag:part_type\":\"slag:pickaxe_head\"}))and(item(slag:dynamic_part)component(fuzzy:{\"slag:material_type\":\"slag:bone\",\"slag:part_type\":\"slag:pickaxe_head\"})))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Flint or Bone Pickaxe Head\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 1.5d
 		}
 		{
+			dependencies: ["1B00000000000003"]
 			icon: {
-				count: 1
 				id: "minecraft:mud_bricks"
 			}
-			dependencies: ["1B00000000000003"]
 			id: "1B00000000000009"
 			rewards: [{
 				id: "1B00000002000009"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 8L
-						id: "1B00000001000009"
-						item: { count: 1 id: "minecraft:mud_bricks" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 8L
+				id: "1B00000001000009"
+				item: { count: 1, id: "minecraft:mud_bricks" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B00000000000009"]
 			icon: {
-				count: 1
 				id: "slag:brick_forge"
 			}
-			dependencies: ["1B00000000000009"]
 			id: "1B0000000000000A"
 			rewards: [{
 				id: "1B0000000200000A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "slag:brick_forge"
-						}
-						id: "1B0000000100000A"
-						observe_type: "block"
-						timer: 60L
-						to_observe: "slag:brick_forge"
-						type: "observation"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "slag:brick_forge"
+				}
+				id: "1B0000000100000A"
+				observation_type: "block"
+				observe_type: 0
+				timer: 60L
+				to_observe: "slag:brick_forge"
+				type: "observation"
+			}]
 			x: 4.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B0000000000000A"]
 			icon: {
-				count: 1
 				id: "minecraft:iron_ingot"
 			}
-			dependencies: ["1B0000000000000A"]
 			id: "1B0000000000000B"
 			rewards: [{
 				id: "1B0000000200000B"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100000B"
-						item: { count: 1 id: "minecraft:iron_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B0000000100000B"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "slag:deep_alloy"
-			}
 			dependencies: [
 				"1B0000000000000A"
 				"1B0000000000000B"
 			]
+			icon: {
+				id: "slag:deep_alloy"
+			}
 			id: "1B0000000000000C"
 			rewards: [{
 				id: "1B0000000200000C"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100000C"
-						item: { count: 1 id: "slag:deep_alloy" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B0000000100000C"
+				item: { count: 1, id: "slag:deep_alloy" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B0000000000000C"]
 			icon: {
-				count: 1
 				id: "minecraft:stonecutter"
 			}
-			dependencies: ["1B0000000000000C"]
 			id: "1B0000000000000D"
 			rewards: [{
 				id: "1B0000000200000D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100000D"
-						item: { count: 1 id: "minecraft:stonecutter" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B0000000100000D"
+				item: { count: 1, id: "minecraft:stonecutter" }
+				type: "item"
+			}]
 			x: 9.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B0000000000000B"]
 			icon: {
-				count: 1
 				id: "armageddon_mod:iron_remote"
 			}
-			dependencies: ["1B0000000000000B"]
 			id: "1B0000000000000E"
 			rewards: [{
 				id: "1B0000000200000E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100000E"
-						item: { count: 1 id: "armageddon_mod:iron_remote" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B0000000100000E"
+				item: { count: 1, id: "armageddon_mod:iron_remote" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B0000000000000E"]
 			icon: {
-				count: 1
 				id: "armageddon_mod:colossal_iron_ingot"
 			}
-			dependencies: ["1B0000000000000E"]
 			id: "1B0000000000000F"
 			rewards: [{
 				id: "1B0000000200000F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "armageddon_mod:colossal_iron_ingot"
-						}
-						id: "1B0000000100000F"
-						entity: "armageddon_mod:the_iron_colossus"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "armageddon_mod:the_iron_colossus"
+				icon: {
+					id: "armageddon_mod:colossal_iron_ingot"
+				}
+				id: "1B0000000100000F"
+				type: "kill"
+				value: 1L
+			}]
 			x: 9.0d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B0000000000000F"]
 			icon: {
-				count: 1
 				id: "armageddon_mod:strange_coin"
 			}
-			dependencies: ["1B0000000000000F"]
 			id: "1B00000000000010"
 			rewards: [{
 				id: "1B00000002000010"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000010"
-						item: { count: 1 id: "armageddon_mod:strange_coin" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000010"
+				item: { count: 1, id: "armageddon_mod:strange_coin" }
+				type: "item"
+			}]
 			x: 10.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B00000000000010"]
 			icon: {
-				count: 1
 				id: "armageddon_mod:gilded_plate"
 			}
-			dependencies: ["1B00000000000010"]
 			id: "1B00000000000011"
 			rewards: [{
 				id: "1B00000002000011"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "armageddon_mod:gilded_plate"
-						}
-						id: "1B00000001000011"
-						entity: "armageddon_mod:the_gobelin_lord"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "armageddon_mod:the_gobelin_lord"
+				icon: {
+					id: "armageddon_mod:gilded_plate"
+				}
+				id: "1B00000001000011"
+				type: "kill"
+				value: 1L
+			}]
 			x: 12.0d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B00000000000011"]
 			icon: {
-				count: 1
 				id: "minecraft:gold_ingot"
 			}
-			dependencies: ["1B00000000000011"]
 			id: "1B00000000000012"
 			rewards: [{
 				id: "1B00000002000012"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000012"
-						item: { count: 1 id: "minecraft:gold_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000012"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
 			x: 13.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B00000000000012"]
 			icon: {
-				count: 1
 				id: "minecraft:copper_ingot"
 			}
-			dependencies: ["1B00000000000012"]
 			id: "1B00000000000013"
 			rewards: [{
 				id: "1B00000002000013"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000013"
-						item: { count: 1 id: "minecraft:copper_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000013"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
 			x: 15.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "slag:rose_gold_ingot"
-			}
 			dependencies: [
 				"1B00000000000012"
 				"1B00000000000013"
 			]
+			icon: {
+				id: "slag:rose_gold_ingot"
+			}
 			id: "1B00000000000014"
 			rewards: [{
 				id: "1B00000002000014"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000014"
-						item: { count: 1 id: "slag:rose_gold_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000014"
+				item: { count: 1, id: "slag:rose_gold_ingot" }
+				type: "item"
+			}]
 			x: 14.25d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1B00000000000008"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:arcane_crystal_ore"
 			}
-			dependencies: ["1B00000000000008"]
 			id: "1B00000000000015"
 			rewards: [{
 				id: "1B00000002000015"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 8L
-						id: "1B00000001000015"
-						item: { count: 1 id: "forbidden_arcanus:arcane_crystal" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 8L
+				id: "1B00000001000015"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal" }
+				type: "item"
+			}]
 			x: 9.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B00000000000015"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:arcane_crystal_dust"
 			}
-			dependencies: ["1B00000000000015"]
 			id: "1B00000000000016"
 			rewards: [{
 				id: "1B00000002000016"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 4L
-						id: "1B00000001000016"
-						item: { count: 1 id: "forbidden_arcanus:arcane_crystal_dust" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 4L
+				id: "1B00000001000016"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal_dust" }
+				type: "item"
+			}]
 			x: 10.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B00000000000016"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:mundabitur_dust"
 			}
-			dependencies: ["1B00000000000016"]
 			id: "1B00000000000017"
 			rewards: [{
 				id: "1B00000002000017"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 2L
-						id: "1B00000001000017"
-						item: { count: 1 id: "forbidden_arcanus:mundabitur_dust" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 2L
+				id: "1B00000001000017"
+				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B0000000000000D"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:darkstone"
 			}
-			dependencies: ["1B0000000000000D"]
 			id: "1B00000000000018"
 			rewards: [{
 				id: "1B00000002000018"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 78L
-						id: "1B00000001000018"
-						item: { count: 1 id: "forbidden_arcanus:darkstone" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 78L
+				id: "1B00000001000018"
+				item: { count: 1, id: "forbidden_arcanus:darkstone" }
+				type: "item"
+			}]
 			x: 10.5d
 			y: 3.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "forbidden_arcanus:deorum_nugget"
-			}
 			dependencies: [
 				"1B00000000000018"
 				"1B00000000000017"
 				"1B00000000000014"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "forbidden_arcanus:deorum_nugget"
+			}
 			id: "1B00000000000019"
 			rewards: [{
 				id: "1B00000002000019"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 4L
-						id: "1B00000001000019"
-						item: { count: 1 id: "forbidden_arcanus:deorum_nugget" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 4L
+				id: "1B00000001000019"
+				item: { count: 1, id: "forbidden_arcanus:deorum_nugget" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B00000000000019"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:gilded_chiseled_polished_darkstone"
 			}
-			dependencies: ["1B00000000000019"]
 			id: "1B0000000000001A"
 			rewards: [{
 				id: "1B0000000200001A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 45L
-						id: "1B0000000100001A"
-						item: { count: 1 id: "forbidden_arcanus:polished_darkstone" }
-						type: "item"
-					}
-					{
-						count: 9L
-						id: "1B0000000101001A"
-						item: { count: 1 id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
-						type: "item"
-					}
-					{
-						count: 4L
-						id: "1B0000000102001A"
-						item: { count: 1 id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
-						type: "item"
-					}
-					{
-						count: 8L
-						id: "1B0000000103001A"
-						item: { count: 1 id: "forbidden_arcanus:arcane_polished_darkstone_pillar" }
-						type: "item"
-					}
-					{
-						count: 8L
-						id: "1B0000000104001A"
-						item: { count: 1 id: "forbidden_arcanus:arcane_polished_darkstone_wall" }
-						type: "item"
-					}
-					{
-						count: 8L
-						id: "1B0000000105001A"
-						item: { count: 1 id: "forbidden_arcanus:arcane_polished_darkstone_slab" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "1B0000000106001A"
-						item: { count: 1 id: "minecraft:smithing_table" }
-						type: "item"
-					}
-				]
+			tasks: [
+				{
+					count: 45L
+					id: "1B0000000100001A"
+					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1B0000000101001A"
+					item: { count: 1, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1B0000000102001A"
+					item: { count: 1, id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B0000000103001A"
+					item: { count: 1, id: "forbidden_arcanus:arcane_polished_darkstone_pillar" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B0000000104001A"
+					item: { count: 1, id: "forbidden_arcanus:arcane_polished_darkstone_wall" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B0000000105001A"
+					item: { count: 1, id: "forbidden_arcanus:arcane_polished_darkstone_slab" }
+					type: "item"
+				}
+				{
+					id: "1B0000000106001A"
+					item: { count: 1, id: "minecraft:smithing_table" }
+					type: "item"
+				}
+			]
 			x: 13.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B0000000000001A"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:hephaestus_forge_tier_1"
 			}
-			dependencies: ["1B0000000000001A"]
 			id: "1B0000000000001B"
 			rewards: [{
 				id: "1B0000000200001B"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "forbidden_arcanus:hephaestus_forge_tier_1"
-						}
-						id: "1B0000000100001B"
-						observe_type: "block"
-						timer: 60L
-						to_observe: "forbidden_arcanus:hephaestus_forge_tier_1"
-						type: "observation"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "forbidden_arcanus:hephaestus_forge_tier_1"
+				}
+				id: "1B0000000100001B"
+				observation_type: "block"
+				observe_type: 0
+				timer: 60L
+				to_observe: "forbidden_arcanus:hephaestus_forge_tier_1"
+				type: "observation"
+			}]
 			x: 15.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["1B0000000000000B"]
 			icon: {
-				count: 1
 				id: "minecraft:iron_ingot"
 			}
-			dependencies: ["1B0000000000000B"]
 			id: "1B0000000000001D"
 			rewards: [{
 				id: "1B0000000200001D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B0000000100001D"
-						item: { count: 1 id: "minecraft:iron_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B0000000100001D"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
 			x: 5.25d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1B0000000000000C"]
 			icon: {
-				count: 1
 				id: "slag:deep_alloy"
 			}
-			dependencies: ["1B0000000000000C"]
 			id: "1B0000000000001E"
 			rewards: [{
 				id: "1B0000000200001E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B0000000100001E"
-						item: { count: 1 id: "slag:deep_alloy" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B0000000100001E"
+				item: { count: 1, id: "slag:deep_alloy" }
+				type: "item"
+			}]
 			x: 8.25d
 			y: 2.0d
 		}
 		{
+			dependencies: ["1B00000000000015"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:arcane_crystal"
 			}
-			dependencies: ["1B00000000000015"]
 			id: "1B0000000000001F"
 			rewards: [{
 				id: "1B0000000200001F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B0000000100001F"
-						item: { count: 1 id: "forbidden_arcanus:arcane_crystal" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B0000000100001F"
+				item: { count: 1, id: "forbidden_arcanus:arcane_crystal" }
+				type: "item"
+			}]
 			x: 9.0d
 			y: -1.2d
 		}
 		{
+			dependencies: ["1B00000000000019"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:deorum_ingot"
 			}
-			dependencies: ["1B00000000000019"]
 			id: "1B00000000000020"
 			rewards: [{
 				id: "1B00000002000020"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B00000001000020"
-						item: { count: 1 id: "forbidden_arcanus:deorum_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B00000001000020"
+				item: { count: 1, id: "forbidden_arcanus:deorum_ingot" }
+				type: "item"
+			}]
 			x: 13.5d
 			y: 1.9d
 		}
 		{
+			dependencies: ["1B00000000000012"]
 			icon: {
-				count: 1
 				id: "minecraft:gold_ingot"
 			}
-			dependencies: ["1B00000000000012"]
 			id: "1B00000000000021"
 			rewards: [{
 				id: "1B00000002000021"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B00000001000021"
-						item: { count: 1 id: "minecraft:gold_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B00000001000021"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
 			x: 12.75d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1B00000000000013"]
 			icon: {
-				count: 1
 				id: "minecraft:copper_ingot"
 			}
-			dependencies: ["1B00000000000013"]
 			id: "1B00000000000022"
 			rewards: [{
 				id: "1B00000002000022"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B00000001000022"
-						item: { count: 1 id: "minecraft:copper_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B00000001000022"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
 			x: 16.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1B00000000000014"]
 			icon: {
-				count: 1
 				id: "slag:rose_gold_ingot"
 			}
-			dependencies: ["1B00000000000014"]
 			id: "1B00000000000023"
 			rewards: [{
 				id: "1B00000002000023"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B00000001000023"
-						item: { count: 1 id: "slag:rose_gold_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B00000001000023"
+				item: { count: 1, id: "slag:rose_gold_ingot" }
+				type: "item"
+			}]
 			x: 15.75d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1B00000000000006"]
 			icon: {
-				count: 1
 				id: "immersive_armors:wooden_chestplate"
 			}
-			dependencies: ["1B00000000000006"]
 			id: "1B00000000000024"
 			rewards: [{
 				id: "1B00000002000024"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000024"
-						item: { count: 1 id: "immersive_armors:wooden_chestplate" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000024"
+				item: { count: 1, id: "immersive_armors:wooden_chestplate" }
+				type: "item"
+			}]
 			x: 4.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B00000000000024"]
 			icon: {
-				count: 1
 				id: "immersive_armors:wooden_leggings"
 			}
-			dependencies: ["1B00000000000024"]
 			id: "1B00000000000025"
 			rewards: [{
 				id: "1B00000002000025"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000025"
-						item: { count: 1 id: "immersive_armors:wooden_leggings" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000025"
+				item: { count: 1, id: "immersive_armors:wooden_leggings" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B00000000000025"]
 			icon: {
-				count: 1
 				id: "immersive_armors:wooden_boots"
 			}
-			dependencies: ["1B00000000000025"]
 			id: "1B00000000000026"
 			rewards: [{
 				id: "1B00000002000026"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000026"
-						item: { count: 1 id: "immersive_armors:wooden_boots" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000026"
+				item: { count: 1, id: "immersive_armors:wooden_boots" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1B0000000000001F"]
 			icon: {
-				count: 1
 				id: "forbidden_arcanus:corrupted_arcane_crystal"
 			}
-			dependencies: ["1B0000000000001F"]
 			id: "1B00000000000027"
 			rewards: [{
 				id: "1B00000002000027"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 64L
-						id: "1B00000001000027"
-						item: { count: 1 id: "forbidden_arcanus:corrupted_arcane_crystal" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 64L
+				id: "1B00000001000027"
+				item: { count: 1, id: "forbidden_arcanus:corrupted_arcane_crystal" }
+				type: "item"
+			}]
 			x: 9.0d
 			y: -2.4d
 		}
 		{
+			dependencies: ["1B0000000000000A"]
 			icon: {
-				count: 1
+				id: "forbidden_arcanus:rune"
+			}
+			id: "1B00000000000028"
+			rewards: [{
+				id: "1B00000002000028"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000028"
+				item: { count: 1, id: "forbidden_arcanus:rune" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B0000000000000A"]
+			icon: {
+				id: "minecraft:glass"
+			}
+			id: "1B00000000000029"
+			rewards: [{
+				id: "1B00000002000029"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "1B00000001000029"
+				item: { count: 1, id: "minecraft:glass" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B00000000000029"]
+			icon: {
+				id: "minecraft:glass_bottle"
+			}
+			id: "1B0000000000002A"
+			rewards: [{
+				id: "1B0000000200002A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 2L
+				id: "1B0000000100002A"
+				item: { count: 1, id: "minecraft:glass_bottle" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1B00000000000028"]
+			icon: {
+				id: "forbidden_arcanus:test_tube"
+			}
+			id: "1B0000000000002B"
+			rewards: [{
+				id: "1B0000000200002B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100002B"
+				item: { count: 1, id: "forbidden_arcanus:test_tube" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B0000000000002B"]
+			icon: {
+				id: "irons_spellbooks:common_ink"
+			}
+			id: "1B0000000000002C"
+			rewards: [{
+				id: "1B0000000200002C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				id: "1B0000000100002C"
+				item: { count: 1, id: "irons_spellbooks:common_ink" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B0000000000002C"]
+			icon: {
+				id: "forbidden_arcanus:soul"
+			}
+			id: "1B0000000000002D"
+			rewards: [{
+				id: "1B0000000200002D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 4L
+				icon: {
+					id: "forbidden_arcanus:soul"
+				}
+				id: "1B0000000100002D"
+				item: { components: { "ftbfiltersystem:filter": "or(item(forbidden_arcanus:soul)item(forbidden_arcanus:corrupt_soul)item(forbidden_arcanus:enchanted_soul))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Any Soul\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1B0000000000002D"
+				"1B00000000000016"
+				"1B0000000000002A"
+			]
+			icon: {
+				id: "forbidden_arcanus:aureal_bottle"
+			}
+			id: "1B0000000000002E"
+			rewards: [{
+				id: "1B0000000200002E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100002E"
+				item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.75d
+		}
+		{
+			dependencies: ["1B00000000000001"]
+			icon: {
 				id: "sophisticatedbackpacks:backpack"
 			}
-			dependencies: ["1B00000000000001"]
 			id: "1B0000000000002F"
 			rewards: [{
 				id: "1B0000000200002F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B0000000100002F"
-						item: { count: 1 id: "sophisticatedbackpacks:backpack" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B0000000100002F"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["1B0000000000001B"]
 			icon: {
-				count: 1
-				id: "sophisticatedbackpacks:copper_backpack"
-			}
-			dependencies: ["1B00000000000013"]
-			id: "1B00000000000030"
-			rewards: [{
-				id: "1B00000002000030"
-				type: "xp"
-				xp: 25
-			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000030"
-						item: { count: 1 id: "sophisticatedbackpacks:copper_backpack" }
-						type: "item"
-					}
-				]
-			x: 15.0d
-			y: 6.5d
-		}
-		{
-			icon: {
-				count: 1
 				id: "sophisticatedbackpacks:iron_backpack"
 			}
-			dependencies: ["1B0000000000001B"]
 			id: "1B00000000000031"
 			rewards: [{
 				id: "1B00000002000031"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1B00000001000031"
-						item: { count: 1 id: "sophisticatedbackpacks:iron_backpack" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "1B00000001000031"
+				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+				type: "item"
+			}]
 			x: 15.0d
 			y: 1.5d
 		}

@@ -4,7 +4,6 @@
 	filename: "glyph_and_gloom"
 	group: ""
 	icon: {
-		count: 1
 		id: "alexscaves:spelunkery_table"
 	}
 	id: "2C00000000000000"
@@ -22,9 +21,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000001"
-				item: { count: 1 id: "alexscaves:spelunkery_table" }
+				item: { count: 1, id: "alexscaves:spelunkery_table" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -42,7 +40,6 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000002"
 				item: { components: { "minecraft:custom_data": { CaveBiome: "alexscaves:magnetic_caves" } }, count: 1, id: "alexscaves:cave_tablet" }
 				match_components: "fuzzy"
@@ -84,9 +81,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000004"
-				item: { count: 1 id: "alexscaves:azure_magnet" }
+				item: { count: 1, id: "alexscaves:azure_magnet" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -103,9 +99,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000005"
-				item: { count: 1 id: "alexscaves:scarlet_magnet" }
+				item: { count: 1, id: "alexscaves:scarlet_magnet" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -113,7 +108,10 @@
 		}
 		{
 			icon: {
-				id: "alexscaves:azure_neodymium_ingot"
+				components: {
+					"ftbquests:missing_item": "alexscaves:azure_neodymium_ingot"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "2C00000000000006"
 			rewards: [{
@@ -122,9 +120,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000006"
-				item: { count: 1 id: "alexscaves:azure_neodymium_ingot" }
+				item: { components: { "ftbquests:missing_item": "alexscaves:azure_neodymium_ingot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -132,7 +129,10 @@
 		}
 		{
 			icon: {
-				id: "alexscaves:scarlet_neodymium_ingot"
+				components: {
+					"ftbquests:missing_item": "alexscaves:scarlet_neodymium_ingot"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "2C00000000000007"
 			rewards: [{
@@ -141,9 +141,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000007"
-				item: { count: 1 id: "alexscaves:scarlet_neodymium_ingot" }
+				item: { components: { "ftbquests:missing_item": "alexscaves:scarlet_neodymium_ingot" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -160,9 +159,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000008"
-				item: { count: 1 id: "alexscaves:energized_galena_neutral" }
+				item: { count: 1, id: "alexscaves:energized_galena_neutral" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -179,9 +177,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000009"
-				item: { count: 1 id: "alexscaves:energized_galena_azure" }
+				item: { count: 1, id: "alexscaves:energized_galena_azure" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -198,9 +195,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000A"
-				item: { count: 1 id: "alexscaves:energized_galena_scarlet" }
+				item: { count: 1, id: "alexscaves:energized_galena_scarlet" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -217,9 +213,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000B"
-				item: { count: 1 id: "alexscaves:ferrouslime_ball" }
+				item: { count: 1, id: "alexscaves:ferrouslime_ball" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -236,9 +231,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000C"
-				item: { count: 1 id: "alexscaves:heart_of_iron" }
+				item: { count: 1, id: "alexscaves:heart_of_iron" }
 				type: "item"
 			}]
 			x: 16.5d
@@ -255,9 +249,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000D"
-				item: { count: 1 id: "alexscaves:heavyweight" }
+				item: { count: 1, id: "alexscaves:heavyweight" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -274,9 +267,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000E"
-				item: { count: 1 id: "alexscaves:notor_gizmo" }
+				item: { count: 1, id: "alexscaves:notor_gizmo" }
 				type: "item"
 			}]
 			x: 19.5d
@@ -293,9 +285,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100000F"
-				item: { count: 1 id: "alexscaves:telecore" }
+				item: { count: 1, id: "alexscaves:telecore" }
 				type: "item"
 			}]
 			x: 21.0d
@@ -312,9 +303,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000010"
-				item: { count: 1 id: "alexscaves:tesla_bulb" }
+				item: { count: 1, id: "alexscaves:tesla_bulb" }
 				type: "item"
 			}]
 			x: 22.5d
@@ -331,9 +321,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000011"
-				item: { count: 1 id: "alexscaves:depth_charge" }
+				item: { count: 1, id: "alexscaves:depth_charge" }
 				type: "item"
 			}]
 			x: 24.0d
@@ -351,7 +340,6 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000012"
 				item: { components: { "minecraft:custom_data": { CaveBiome: "alexscaves:primordial_caves" } }, count: 1, id: "alexscaves:cave_tablet" }
 				match_components: "fuzzy"
@@ -393,9 +381,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000014"
-				item: { count: 1 id: "alexscaves:amber_curiosity" }
+				item: { count: 1, id: "alexscaves:amber_curiosity" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -412,9 +399,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000015"
-				item: { count: 1 id: "alexscaves:heavy_bone" }
+				item: { count: 1, id: "alexscaves:heavy_bone" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -431,9 +417,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000016"
-				item: { count: 1 id: "alexscaves:tough_hide" }
+				item: { count: 1, id: "alexscaves:tough_hide" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -450,9 +435,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000017"
-				item: { count: 1 id: "alexscaves:tectonic_shard" }
+				item: { count: 1, id: "alexscaves:tectonic_shard" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -469,9 +453,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000018"
-				item: { count: 1 id: "alexscaves:pewen_sap" }
+				item: { count: 1, id: "alexscaves:pewen_sap" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -488,9 +471,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000019"
-				item: { count: 1 id: "alexscaves:tree_star" }
+				item: { count: 1, id: "alexscaves:tree_star" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -508,7 +490,6 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100001A"
 				item: { components: { "minecraft:custom_data": { CaveBiome: "alexscaves:toxic_caves" } }, count: 1, id: "alexscaves:cave_tablet" }
 				match_components: "fuzzy"
@@ -550,9 +531,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100001C"
-				item: { count: 1 id: "alexscaves:uranium" }
+				item: { count: 1, id: "alexscaves:uranium" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -569,9 +549,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100001D"
-				item: { count: 1 id: "alexscaves:uranium_rod" }
+				item: { count: 1, id: "alexscaves:uranium_rod" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -588,9 +567,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100001E"
-				item: { count: 1 id: "alexscaves:sulfur_dust" }
+				item: { count: 1, id: "alexscaves:sulfur_dust" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -607,9 +585,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100001F"
-				item: { count: 1 id: "alexscaves:toxic_paste" }
+				item: { count: 1, id: "alexscaves:toxic_paste" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -626,9 +603,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000020"
-				item: { count: 1 id: "alexscaves:polymer_plate" }
+				item: { count: 1, id: "alexscaves:polymer_plate" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -645,9 +621,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000021"
-				item: { count: 1 id: "alexscaves:fissile_core" }
+				item: { count: 1, id: "alexscaves:fissile_core" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -664,9 +639,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000022"
-				item: { count: 1 id: "alexscaves:charred_remnant" }
+				item: { count: 1, id: "alexscaves:charred_remnant" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -683,9 +657,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000023"
-				item: { count: 1 id: "alexscaves:radon_bottle" }
+				item: { count: 1, id: "alexscaves:radon_bottle" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -702,9 +675,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000024"
-				item: { count: 1 id: "alexscaves:cinder_brick" }
+				item: { count: 1, id: "alexscaves:cinder_brick" }
 				type: "item"
 			}]
 			x: 16.5d
@@ -721,9 +693,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000025"
-				item: { count: 1 id: "alexscaves:waste_drum" }
+				item: { count: 1, id: "alexscaves:waste_drum" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -741,7 +712,6 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000026"
 				item: { components: { "minecraft:custom_data": { CaveBiome: "alexscaves:abyssal_chasm" } }, count: 1, id: "alexscaves:cave_tablet" }
 				match_components: "fuzzy"
@@ -783,9 +753,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000028"
-				item: { count: 1 id: "alexscaves:mussel" }
+				item: { count: 1, id: "alexscaves:mussel" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -802,9 +771,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000029"
-				item: { count: 1 id: "alexscaves:sea_glass_shards" }
+				item: { count: 1, id: "alexscaves:sea_glass_shards" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -821,9 +789,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002A"
-				item: { count: 1 id: "alexscaves:marine_snow" }
+				item: { count: 1, id: "alexscaves:marine_snow" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -840,9 +807,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002B"
-				item: { count: 1 id: "alexscaves:bioluminesscence" }
+				item: { count: 1, id: "alexscaves:bioluminesscence" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -859,9 +825,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002C"
-				item: { count: 1 id: "alexscaves:magic_conch" }
+				item: { count: 1, id: "alexscaves:magic_conch" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -878,9 +843,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002D"
-				item: { count: 1 id: "alexscaves:gazing_pearl" }
+				item: { count: 1, id: "alexscaves:gazing_pearl" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -897,9 +861,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002E"
-				item: { count: 1 id: "alexscaves:immortal_embryo" }
+				item: { count: 1, id: "alexscaves:immortal_embryo" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -917,7 +880,6 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C0000000100002F"
 				item: { components: { "minecraft:custom_data": { CaveBiome: "alexscaves:forlorn_hollows" } }, count: 1, id: "alexscaves:cave_tablet" }
 				match_components: "fuzzy"
@@ -959,9 +921,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000031"
-				item: { count: 1 id: "alexscaves:thornwood_branch" }
+				item: { count: 1, id: "alexscaves:thornwood_branch" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -978,9 +939,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000032"
-				item: { count: 1 id: "alexscaves:guano" }
+				item: { count: 1, id: "alexscaves:guano" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -997,9 +957,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000033"
-				item: { count: 1 id: "alexscaves:moth_dust" }
+				item: { count: 1, id: "alexscaves:moth_dust" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -1016,9 +975,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000034"
-				item: { count: 1 id: "alexscaves:vesper_wing" }
+				item: { count: 1, id: "alexscaves:vesper_wing" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -1035,9 +993,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000035"
-				item: { count: 1 id: "alexscaves:corrodent_teeth" }
+				item: { count: 1, id: "alexscaves:corrodent_teeth" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -1054,9 +1011,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000036"
-				item: { count: 1 id: "alexscaves:dark_tatters" }
+				item: { count: 1, id: "alexscaves:dark_tatters" }
 				type: "item"
 			}]
 			x: 12.0d
@@ -1073,9 +1029,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000037"
-				item: { count: 1 id: "alexscaves:shadow_silk" }
+				item: { count: 1, id: "alexscaves:shadow_silk" }
 				type: "item"
 			}]
 			x: 13.5d
@@ -1092,9 +1047,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000038"
-				item: { count: 1 id: "alexscaves:occult_gem" }
+				item: { count: 1, id: "alexscaves:occult_gem" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -1111,9 +1065,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "2C00000001000039"
-				item: { count: 1 id: "alexscaves:pure_darkness" }
+				item: { count: 1, id: "alexscaves:pure_darkness" }
 				type: "item"
 			}]
 			x: 16.5d

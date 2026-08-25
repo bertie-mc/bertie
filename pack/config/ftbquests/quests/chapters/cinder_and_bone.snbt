@@ -280,7 +280,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B0000000000000D"]
@@ -303,7 +303,7 @@
 				value: 1L
 			}]
 			x: 4.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B0000000000000E"]
@@ -322,7 +322,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B0000000000000F"]
@@ -341,7 +341,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B00000000000010"]
@@ -363,7 +363,7 @@
 				type: "structure"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B00000000000011"]
@@ -386,7 +386,7 @@
 				value: 1L
 			}]
 			x: 10.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B00000000000001"]
@@ -854,28 +854,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B0000000000003F"]
-			icon: {
-				id: "sophisticatedbackpacks:netherite_backpack"
-			}
-			id: "6B00000000000049"
-			rewards: [{
-				id: "6B00000002000049"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "sophisticatedbackpacks:netherite_backpack"
-				}
-				id: "6B00000001000049"
-				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["6B00000000000006"]
 			icon: {
 				id: "cataclysm:altar_of_amethyst"
@@ -906,9 +884,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004A"
-				item: { count: 1 id: "avaritia:nether_crafting_table" }
+				item: { count: 1, id: "avaritia:nether_crafting_table" }
 				type: "item"
 			}]
 			x: 21.0d
@@ -926,9 +903,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004B"
-				item: { count: 1 id: "malum:malignant_pewter_ingot" }
+				item: { count: 1, id: "malum:malignant_pewter_ingot" }
 				type: "item"
 			}]
 			x: 19.5d
@@ -946,16 +922,18 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004C"
-				item: { count: 1 id: "bertieprogression:null_blaze_cube" }
+				item: { count: 1, id: "bertieprogression:null_blaze_cube" }
 				type: "item"
 			}]
 			x: 21.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B0000000000004C", "1C0000000000005B"]
+			dependencies: [
+				"6B0000000000004C"
+				"1C0000000000005B"
+			]
 			icon: {
 				id: "avaritia:blaze_cube"
 			}
@@ -966,9 +944,8 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004D"
-				item: { count: 1 id: "avaritia:blaze_cube" }
+				item: { count: 1, id: "avaritia:blaze_cube" }
 				type: "item"
 			}]
 			x: 21.0d
@@ -986,13 +963,52 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004E"
-				item: { count: 1 id: "mekanism:steel_casing" }
+				item: { count: 1, id: "mekanism:steel_casing" }
 				type: "item"
 			}]
 			x: 22.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6B00000000000017"]
+			icon: {
+				id: "forbidden_arcanus:corrupti_dust"
+			}
+			id: "6B0000000000004F"
+			rewards: [{
+				id: "6B0000000200004F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B0000000100004F"
+				item: { count: 1 id: "forbidden_arcanus:corrupti_dust" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B0000000000004F"]
+			icon: {
+				id: "forbidden_arcanus:dark_matter"
+			}
+			id: "6B00000000000050"
+			rewards: [{
+				id: "6B00000002000050"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 1L
+				id: "6B00000001000050"
+				item: { count: 1 id: "forbidden_arcanus:dark_matter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
 		}
 	]
 }

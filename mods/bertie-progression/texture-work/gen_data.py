@@ -2033,6 +2033,13 @@ for _gem, _shard, _sound, _adv in (
               "required_advancement": _adv,
           })
 
+# --- Corrupti Dust: the same five ingredients, but one dust instead of four. ---
+write("data/forbidden_arcanus/recipe/corrupti_dust.json",
+      shapeless(["forbidden_arcanus:obsidiansteel_ingot", "minecraft:blaze_powder",
+                 "minecraft:nether_wart", "forbidden_arcanus:arcane_crystal_dust",
+                 "forbidden_arcanus:ender_pearl_fragment"],
+                "forbidden_arcanus:corrupti_dust", 1))
+
 # --- Malignant Pewter: iron and scrap give way to soulstained steel and a netherite ingot. ---
 write("data/malum/recipe/spirit_infusion/malignant_pewter_ingot.json", DISABLED)
 write(f"{R}/malum/malignant_pewter_ingot.json",
