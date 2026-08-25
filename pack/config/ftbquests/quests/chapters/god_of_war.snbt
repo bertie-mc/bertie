@@ -976,8 +976,8 @@
 				item: { count: 1, id: "ancient_forgemastery:howling_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 7.0d
+			x: -58.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1122,8 +1122,8 @@
 				item: { count: 1, id: "armageddon_mod:elvenite_halo_helmet" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 6.0d
+			x: -57.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1285,8 +1285,8 @@
 				item: { count: 1, id: "armageddon_mod:zoranths_helmet_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 11.0d
+			x: -58.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1423,8 +1423,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:damned_demomans_hat_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 6.0d
+			x: -59.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1466,8 +1466,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:killer_rabbit_ears_helmet" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 8.0d
+			x: -57.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1479,8 +1479,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 8.0d
+			x: -61.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1492,8 +1492,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:missionary_hat_helmet" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 9.0d
+			x: -59.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1543,7 +1543,7 @@
 				}
 			]
 			x: -57.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -1555,8 +1555,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 10.0d
+			x: -62.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -1611,7 +1611,7 @@
 				}
 			]
 			x: -62.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -1653,8 +1653,8 @@
 				item: { count: 1, id: "cataclysm:monstrous_helm" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 9.0d
+			x: -58.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -1666,8 +1666,8 @@
 				item: { count: 1, id: "cataclysm:bloom_stone_pauldrons" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 5.0d
+			x: -62.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -1868,7 +1868,7 @@
 				}
 			]
 			x: -61.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -1907,7 +1907,7 @@
 				}
 			]
 			x: -60.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -1926,8 +1926,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 6.0d
+			x: -61.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -1966,7 +1966,7 @@
 				}
 			]
 			x: -59.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -2207,8 +2207,8 @@
 				item: { count: 1, id: "deepwaters:manowar_crown_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 8.0d
+			x: -60.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -4445,8 +4445,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_hazel_chestplate" }
 				type: "item"
 			}]
-			x: -59.0d
-			y: 7.0d
+			x: -60.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -4466,8 +4466,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:how_did_you_find_the_mothic_witch_chestplate" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 7.0d
+			x: -59.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -5514,7 +5514,7 @@
 				item: { count: 1, id: "hazennstuff:chlorophyte_headgear" }
 				type: "item"
 			}]
-			x: -59.0d
+			x: -61.0d
 			y: 5.0d
 		}
 		{
@@ -5527,7 +5527,7 @@
 				item: { count: 1, id: "hazennstuff:chlorophyte_mask" }
 				type: "item"
 			}]
-			x: -58.0d
+			x: -60.0d
 			y: 5.0d
 		}
 		{
@@ -5548,8 +5548,8 @@
 				item: { components: { "azurelib:az_id": [I; -1302380326, 725042193, -1993785292, -425827875 ] }, count: 1, id: "hazennstuff:legacy_fireblossom_crown" }
 				type: "item"
 			}]
-			x: -59.0d
-			y: 8.0d
+			x: -62.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -5843,8 +5843,8 @@
 				item: { count: 1, id: "iceandfire:earplugs" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 6.0d
+			x: -58.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -6226,8 +6226,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 8.0d
+			x: -58.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -6285,8 +6285,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 9.0d
+			x: -57.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -6480,8 +6480,8 @@
 				item: { count: 1, id: "irons_spellbooks:speed_boots" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 10.0d
+			x: -59.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -6501,8 +6501,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:tarnished_helmet" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 10.0d
+			x: -60.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -6647,8 +6647,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 7.0d
+			x: -59.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -6930,8 +6930,8 @@
 				item: { count: 1, id: "minecraft:turtle_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 10.0d
+			x: -59.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -12720,7 +12720,7 @@
 					type: "item"
 				}
 			]
-			x: -58.0d
+			x: -62.0d
 			y: 6.0d
 		}
 		{
@@ -12736,7 +12736,7 @@
 				}
 			]
 			x: -61.0d
-			y: 8.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -12750,8 +12750,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 5.0d
+			x: -62.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -12765,8 +12765,8 @@
 					type: "item"
 				}
 			]
-			x: -57.0d
-			y: 5.0d
+			x: -61.0d
+			y: 10.0d
 		}
 		{
 			icon: {
@@ -12780,8 +12780,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 9.0d
+			x: -60.0d
+			y: 13.0d
 		}
 		{
 			icon: {
@@ -12795,8 +12795,8 @@
 					type: "item"
 				}
 			]
-			x: -57.0d
-			y: 6.0d
+			x: -62.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -12810,8 +12810,8 @@
 					type: "item"
 				}
 			]
-			x: -62.0d
-			y: 7.0d
+			x: -61.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -12825,8 +12825,8 @@
 					type: "item"
 				}
 			]
-			x: -61.0d
-			y: 7.0d
+			x: -60.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -12840,8 +12840,8 @@
 					type: "item"
 				}
 			]
-			x: -60.0d
-			y: 9.0d
+			x: -57.0d
+			y: 7.0d
 		}
 		{
 			icon: {
@@ -12855,8 +12855,8 @@
 					type: "item"
 				}
 			]
-			x: -57.0d
-			y: 9.0d
+			x: -60.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -12871,7 +12871,7 @@
 				}
 			]
 			x: -62.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			icon: {
@@ -12885,8 +12885,8 @@
 					type: "item"
 				}
 			]
-			x: -59.0d
-			y: 10.0d
+			x: -61.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -12906,7 +12906,7 @@
 				}
 			]
 			x: -58.0d
-			y: 13.0d
+			y: 17.0d
 		}
 		{
 			icon: {
