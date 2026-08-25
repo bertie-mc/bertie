@@ -15,12 +15,7 @@
     {
       "amount": 4,
       "ingredient": {
-        "type": "neoforge:components",
-        "items": "slag:dynamic_part",
-        "components": {
-          "slag:material_type": "slag:golden",
-          "slag:part_type": "slag:plate"
-        }
+        "item": "forbidden_arcanus:deorum_ingot"
       }
     }
   ],

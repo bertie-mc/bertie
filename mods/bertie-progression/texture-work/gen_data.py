@@ -342,8 +342,11 @@ write(f"{R}/slag/arcane_crystal_dust.json",
 RIT = "data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual"
 
 # R13 Electron Tubes use the Spirit Altar.
-# Same recipe feel: a quartz core + Redstone + Slag-cast Gold/Iron Plates, paid in spirits.
-r13 = infusion("malum:natural_quartz", 1, [("minecraft:redstone", 2)],
+# Same recipe feel: a quartz core + Redstone + Create's pressed Gold/Iron Sheets, paid in spirits.
+# The Slag plate used to be an alternative here; Slag's parts are out of the pack, so the sheet is
+# the only route and the compound wrapper went with it.
+r13 = infusion("malum:natural_quartz", 1,
+               [("minecraft:redstone", 2), ("create:golden_sheet", 1), ("create:iron_sheet", 1)],
                [SP("arcane", 2), SP("aerial", 2)], "create:electron_tube", 1)
 # Either quartz works - Malum's Natural Quartz or the vanilla stone.
 r13["input"] = {
@@ -351,18 +354,6 @@ r13["input"] = {
     "ingredients": [{"item": "malum:natural_quartz"}, {"item": "minecraft:quartz"}],
     "count": 1,
 }
-# Either route to a plate counts: Slag's carved one, or Create's pressed sheet. neoforge:compound
-# is an any-of over ingredients, which is the only way to say that - the Slag plate is a component
-# match on slag:dynamic_part and so cannot go in a tag beside a plain item.
-for _comps, _sheet in ((GOLD_PLATE, "create:golden_sheet"), (IRON_PLATE, "create:iron_sheet")):
-    r13["extraInputs"].append({
-        "type": "neoforge:compound",
-        "ingredients": [
-            {"type": "neoforge:components", "items": "slag:dynamic_part", "components": _comps},
-            {"item": _sheet},
-        ],
-        "count": 1,
-    })
 write(f"{R}/malum/electron_tube.json", r13)
 
 # Ashlord bone into Ice and Fire's: the Ashlord is killable long before a dragon is, and the
@@ -428,15 +419,14 @@ write(f"{RIT}/builder_stone.json",
              essences={"aureal": 200, "blood": 10000, "souls": 10}))
 write("data/armageddon_mod/recipe/builderstonerecipe.json", DISABLED)
 
-# Spirit Altar: Runewood Planks core + 4 Refined Soulstone + 4 Slag golden plates,
-# 100 XP / 5000 blood / 10 souls / 500 aureal. Using the Slag dynamic golden plate matches the old
-# altar recipe and keeps this progression stage self-contained.
-r19 = ritual("malum:runewood_planks",
-             [("malum:refined_soulstone", 4), ("placeholder", 4)],
+# Spirit Altar: Runewood Planks core + 4 Refined Soulstone + 4 Deorum Ingots,
+# 100 XP / 5000 blood / 10 souls / 500 aureal. The four Slag golden plates were the original fourth
+# input; Deorum replaces them now that Slag's parts are out of the pack.
+write(f"{RIT}/r19_spirit_altar.json",
+      ritual("malum:runewood_planks",
+             [("malum:refined_soulstone", 4), ("forbidden_arcanus:deorum_ingot", 4)],
              "malum:spirit_altar", 1, tier=1,
-             essences={"aureal": 500, "blood": 5000, "souls": 10}, xp=100)
-ritual_component_input(r19, 1, "slag:dynamic_part", GOLD_PLATE, 4)
-write(f"{RIT}/r19_spirit_altar.json", r19)
+             essences={"aureal": 500, "blood": 5000, "souls": 10}, xp=100))
 
 # R26A Nether Lintel Core ritual was removed with the Nether Lintel and
 # the Core themselves - both items are obsolete now the Nether is entered through the Netherly Meal.
@@ -2823,6 +2813,7 @@ ITEMS = {
     "null_blaze_cube": "Null Blaze Cube",
     "descent_anchor": "Descent Anchor",
     "boss_rematch_seal": "Boss Rematch Seal",
+    "innocent_soul": "Innocent Soul",
 }
 
 BLOCKS = {

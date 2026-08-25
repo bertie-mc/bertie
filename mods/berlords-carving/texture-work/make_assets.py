@@ -53,7 +53,11 @@ ARMORS = ["helmet", "chestplate", "leggings", "boots"]
 
 # Slag ships craftable crafting-table recipes for the tool heads AND armor of ALL 16 materials
 # (verified in-jar: crafting/parts/<part>_<mat>.json for every material). Disable them all so carving
-# is the route when Slag is present; Slag's CASTING (smeltery) path + plate/guard are left untouched.
+# is the route when Slag is present; Slag's CASTING (smeltery) path is left untouched.
+# Plates and guards go too (2026-08-25): nothing consumes them any more now the Spirit Altar takes
+# Deorum and the Electron Tube takes Create sheets, so they were the last dynamic parts still
+# craftable - and so still showing up in the recipe viewer as outputs.
+MISC_PARTS = ["plate", "guard"]
 SLAG_ARMOR_CRAFT_MATS = [SLAG_ID[m] for m in MATERIALS if SLAG_ID[m]]
 SLAG_TOOL_CRAFT_MATS = SLAG_ARMOR_CRAFT_MATS
 
@@ -268,11 +272,13 @@ def main():
                 "C": {"item": "minecraft:chiseled_deepslate"}},
         "result": {"id": f"{MODID}:carving_station", "count": 1}})
 
-    # remove Slag's own crafting/parts recipes for the parts carving replaces (leave plate/guard + casting)
+    # remove Slag's own crafting/parts recipes: everything carving replaces, plus the plates and
+    # guards nothing needs any more (casting is still left alone)
     parts_dir = os.path.join(SLAG_DATA, "recipe", "crafting", "parts")
     n_over = 0
     overrides = ([(TOOL_PART[t], sm) for t in TOOLS for sm in SLAG_TOOL_CRAFT_MATS]
-                 + [(p, sm) for p in ARMORS for sm in SLAG_ARMOR_CRAFT_MATS])
+                 + [(p, sm) for p in ARMORS for sm in SLAG_ARMOR_CRAFT_MATS]
+                 + [(p, sm) for p in MISC_PARTS for sm in SLAG_ARMOR_CRAFT_MATS])
     for part, sm in overrides:
         write_json(os.path.join(parts_dir, f"{part}_{sm}.json"), {
             "neoforge:conditions": [COND_FALSE], "type": "minecraft:crafting_shapeless",
