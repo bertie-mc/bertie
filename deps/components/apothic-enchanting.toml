@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "pL8MtgqY"
+version-id = "HpSrSsv3"
+filename = "ApothicEnchanting-1.21.1-1.6.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "apothic-enchanting"
+project-id = 1063926
+file-id = 8469450
+filename = "ApothicEnchanting-1.21.1-1.6.0.jar"

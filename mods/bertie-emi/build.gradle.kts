@@ -37,6 +37,7 @@ dependencies {
     jarJarCompileOnly(deps.anvilcraft)
     compileOnly(deps.magitech)
     compileOnly(deps.pastelMod)
+    compileOnly(deps.apothicEnchanting)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)

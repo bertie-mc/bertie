@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "dc1413f617c2a03f4c3ac30d21b2a8b7cc4ffb22871c2cc42ca03eb621eed2ed"
+inputs-hash = "472190910a182e7fae74e1146fe5d9fa3402693a76a936afcdfcd96b6efd3a8f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -61,6 +61,10 @@ mod = "curseforge:1244863:8048938"
 [components."apothic-combat"]
 any = "modrinth:N29BujGY:8gwHTe22"
 mod = "modrinth:N29BujGY:8gwHTe22"
+
+[components."apothic-enchanting"]
+any = "modrinth:pL8MtgqY:HpSrSsv3"
+mod = "modrinth:pL8MtgqY:HpSrSsv3"
 
 [components."appleskin"]
 any = "modrinth:EsAfCjCV:uAKA6Laj"
@@ -9031,6 +9035,7 @@ integrations = []
 
 [artifacts."modrinth:pL8MtgqY:HpSrSsv3"]
 name = "apothic-enchanting"
+component = "apothic-enchanting"
 provider = "modrinth"
 kind = "mod"
 side = "both"

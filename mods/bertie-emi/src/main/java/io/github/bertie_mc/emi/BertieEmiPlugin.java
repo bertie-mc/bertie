@@ -4,6 +4,7 @@ import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
+import io.github.bertie_mc.emi.integration.apothicenchanting.ApothicEnchantingEmiModule;
 import io.github.bertie_mc.emi.integration.avaritiadelight.AvaritiaDelightEmiModule;
 import io.github.bertie_mc.emi.integration.berriescherries.BerriesAndCherriesEmiModule;
 import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiModule;
@@ -74,6 +75,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("anvilcraft", () -> AnvilCraftEmiModule.register(registry));
         success &= run("magitech", () -> MagitechEmiModule.register(registry));
         success &= run("pastel", () -> PastelEmiModule.register(registry));
+        success &= run("apothic_enchanting", () -> ApothicEnchantingEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");
         }

@@ -26,6 +26,22 @@ public final class InfoPages {
      * do not appear rather than showing empty.
      */
     public static void page(EmiRegistry reg, String idPath, List<String> itemIds, String... lines) {
+        translated(
+                reg,
+                idPath,
+                itemIds,
+                Arrays.stream(lines)
+                        .map(Component::literal)
+                        .map(Component.class::cast)
+                        .toArray(Component[]::new));
+    }
+
+    /**
+     * The same page from ready-made components, for the case where the target mod already ships the
+     * wording in its own lang file. Referencing its key beats restating the sentence here: the page
+     * then follows the player's language and stays correct if the mod rewords it.
+     */
+    public static void translated(EmiRegistry reg, String idPath, List<String> itemIds, Component... lines) {
         List<EmiIngredient> stacks = new ArrayList<>();
         for (String id : itemIds) {
             EmiStack stack = Categories.stack(id);
@@ -36,10 +52,6 @@ public final class InfoPages {
         if (stacks.isEmpty()) {
             return;
         }
-        List<Component> text = Arrays.stream(lines)
-                .map(Component::literal)
-                .map(Component.class::cast)
-                .toList();
-        reg.addRecipe(new EmiInfoRecipe(stacks, text, ResourceLocation.fromNamespaceAndPath(NS, idPath)));
+        reg.addRecipe(new EmiInfoRecipe(stacks, List.of(lines), ResourceLocation.fromNamespaceAndPath(NS, idPath)));
     }
 }
