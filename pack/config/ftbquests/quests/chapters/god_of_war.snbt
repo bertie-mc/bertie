@@ -60,8 +60,8 @@
 				item: { count: 1, id: "irons_spellbooks:inscription_table" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7B00000000000002"]
@@ -80,7 +80,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B00000000000002"]
@@ -98,8 +98,8 @@
 				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B00000000000002"]
@@ -118,7 +118,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B00000000000001"]
@@ -145,7 +145,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B00000000000006"]
@@ -171,7 +171,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:rotten_spell_book" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.25d
 			y: -3.0d
 		}
 		{
@@ -198,8 +198,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:gold_spell_book" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -0.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B00000000000006"]
@@ -225,7 +225,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:diamond_spell_book" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.75d
 			y: -3.0d
 		}
 		{
@@ -282,7 +282,7 @@
 				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:raise_dead": 2 } }, "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:blood_slash", index: 0, level: 5, locked: 1b }, { id: "irons_spellbooks:blood_step", index: 1, level: 5, locked: 1b }, { id: "irons_spellbooks:ray_of_siphoning", index: 2, level: 5, locked: 1b }, { id: "irons_spellbooks:blaze_storm", index: 3, level: 5, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:necronomicon_spell_book" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.25d
 			y: -3.0d
 		}
 		{
@@ -308,8 +308,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:blaze_spell_book" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -335,7 +335,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -360,8 +360,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:druidic_spell_book" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -387,7 +387,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -412,8 +412,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:dragonskin_spell_book" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -458,7 +458,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -489,8 +489,8 @@
 				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:blood_slash": 1, "irons_spellbooks:blood_step": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["7B0000000000000B"]
@@ -516,7 +516,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:ignis_spell_book" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -6.0d
 		}
 		{
@@ -543,7 +543,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:codex_of_malice_spell_book" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -6.0d
 		}
 		{
@@ -604,8 +604,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "cataclysm_spellbooks:monolith_crash", index: 0, level: 5, locked: 1b }, { id: "cataclysm_spellbooks:desert_winds", index: 1, level: 3, locked: 1b }, { id: "cataclysm_spellbooks:sandstorm", index: 2, level: 3, locked: 1b }, { id: "cataclysm_spellbooks:thoths_witness", index: 3, level: 1, locked: 1b }, { id: "cataclysm_spellbooks:pharaohs_wrath", index: 4, level: 3, locked: 1b } ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:desert_spell_book" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -7.0d
+			x: -0.75d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -630,8 +630,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 14, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:abyss_spell_book" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -687,8 +687,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:sculk_tentacles", index: 0, level: 3, locked: 1b }, { id: "discerning_the_eldritch:conjure_forsaken_aid", index: 1, level: 3, locked: 1b }, { id: "irons_spellbooks:sonic_boom", index: 2, level: 3, locked: 1b }, { id: "irons_spellbooks:counterspell", index: 3, level: 1, locked: 1b }, { id: "irons_spellbooks:abyssal_shroud", index: 4, level: 2, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:black_book_spellbook" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B00000000000016"]
@@ -720,8 +720,8 @@
 				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:sculk_tentacles": 1, "irons_spellbooks:sonic_boom": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "darkermagic:volume_of_the_deep" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["7B00000000000017"]
@@ -747,7 +747,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 13, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:the_apocrypha_spellbook" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: -6.0d
 		}
 		{
@@ -773,8 +773,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:netherite_spell_book" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.0d
+			x: 6.5d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -799,8 +799,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "ice_and_fire_spellbooks:dragonmancers_oathbook" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.0d
+			x: 1.5d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -825,8 +825,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 13, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "magic_of_color:bedrock_book" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -7.0d
+			x: -1.5d
+			y: -7.5d
 		}
 		{
 			icon: {
@@ -860,7 +860,7 @@
 				type: "item"
 			}]
 			x: -32.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7B00000000000001"]
@@ -879,7 +879,7 @@
 				type: "item"
 			}]
 			x: 28.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			icon: {
@@ -908,7 +908,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -52.0d
 			y: 5.0d
 		}
 		{
@@ -933,7 +933,7 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
+			x: -51.0d
 			y: 5.0d
 		}
 		{
@@ -963,7 +963,7 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
+			x: -50.0d
 			y: 5.0d
 		}
 		{
@@ -1006,7 +1006,7 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
+			x: -46.0d
 			y: 5.0d
 		}
 		{
@@ -1049,7 +1049,7 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
+			x: -45.0d
 			y: 5.0d
 		}
 		{
@@ -1079,8 +1079,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 6.0d
+			x: -44.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1109,8 +1109,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 6.0d
+			x: -43.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1152,8 +1152,8 @@
 					type: "item"
 				}
 			]
-			x: -43.0d
-			y: 5.0d
+			x: -46.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -1182,7 +1182,7 @@
 					type: "item"
 				}
 			]
-			x: -44.0d
+			x: -45.0d
 			y: 6.0d
 		}
 		{
@@ -1212,7 +1212,7 @@
 					type: "item"
 				}
 			]
-			x: -43.0d
+			x: -44.0d
 			y: 6.0d
 		}
 		{
@@ -1242,8 +1242,8 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
-			y: 5.0d
+			x: -43.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -4625,7 +4625,7 @@
 					type: "item"
 				}
 			]
-			x: -33.0d
+			x: -35.0d
 			y: 14.0d
 		}
 		{
@@ -4663,7 +4663,7 @@
 					type: "item"
 				}
 			]
-			x: -35.0d
+			x: -34.0d
 			y: 14.0d
 		}
 		{
@@ -4701,7 +4701,7 @@
 					type: "item"
 				}
 			]
-			x: -34.0d
+			x: -33.0d
 			y: 14.0d
 		}
 		{
@@ -6678,7 +6678,7 @@
 				}
 			]
 			x: -52.0d
-			y: 21.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -6707,7 +6707,7 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
+			x: -51.0d
 			y: 20.0d
 		}
 		{
@@ -6737,8 +6737,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 20.0d
+			x: -52.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -7080,7 +7080,7 @@
 					type: "item"
 				}
 			]
-			x: -41.0d
+			x: -42.0d
 			y: 20.0d
 		}
 		{
@@ -7110,7 +7110,7 @@
 					type: "item"
 				}
 			]
-			x: -42.0d
+			x: -41.0d
 			y: 20.0d
 		}
 		{
@@ -12950,7 +12950,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 0.0d
 			y: 29.0d
 		}
 		{
@@ -12980,7 +12980,7 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
+			x: -51.0d
 			y: 23.0d
 		}
 		{
@@ -12995,8 +12995,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 30.0d
+			x: 1.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -13025,7 +13025,7 @@
 					type: "item"
 				}
 			]
-			x: -48.0d
+			x: -50.0d
 			y: 23.0d
 		}
 		{
@@ -13055,7 +13055,7 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
+			x: -49.0d
 			y: 23.0d
 		}
 		{
@@ -13085,7 +13085,7 @@
 					type: "item"
 				}
 			]
-			x: -45.0d
+			x: -48.0d
 			y: 23.0d
 		}
 		{
@@ -13101,7 +13101,7 @@
 				}
 			]
 			x: 2.0d
-			y: 32.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -13115,8 +13115,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 31.0d
+			x: 3.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -13130,8 +13130,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 32.0d
+			x: 4.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -13145,8 +13145,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 32.0d
+			x: 5.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -13160,7 +13160,7 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: 6.0d
 			y: 29.0d
 		}
 		{
@@ -13175,7 +13175,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 7.0d
 			y: 29.0d
 		}
 		{
@@ -13190,8 +13190,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 29.0d
+			x: 0.0d
+			y: 30.0d
 		}
 		{
 			icon: {
@@ -13205,7 +13205,7 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
+			x: 1.0d
 			y: 30.0d
 		}
 		{
@@ -13220,7 +13220,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 2.0d
 			y: 30.0d
 		}
 		{
@@ -13236,7 +13236,7 @@
 				}
 			]
 			x: 3.0d
-			y: 32.0d
+			y: 30.0d
 		}
 		{
 			icon: {
@@ -13260,7 +13260,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 30.0d
 		}
 		{
@@ -13285,7 +13285,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 5.0d
 			y: 30.0d
 		}
 		{
@@ -13305,8 +13305,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 31.0d
+			x: 6.0d
+			y: 30.0d
 		}
 		{
 			icon: {
@@ -13325,8 +13325,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 31.0d
+			x: 7.0d
+			y: 30.0d
 		}
 		{
 			icon: {
@@ -13341,7 +13341,7 @@
 				}
 			]
 			x: 0.0d
-			y: 29.0d
+			y: 31.0d
 		}
 		{
 			icon: {
@@ -13356,7 +13356,7 @@
 				}
 			]
 			x: 1.0d
-			y: 30.0d
+			y: 31.0d
 		}
 		{
 			icon: {
@@ -13370,7 +13370,7 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: 2.0d
 			y: 31.0d
 		}
 		{
@@ -13460,7 +13460,7 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
+			x: -46.0d
 			y: 23.0d
 		}
 		{
@@ -13475,8 +13475,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 29.0d
+			x: 5.0d
+			y: 31.0d
 		}
 		{
 			icon: {
@@ -13515,7 +13515,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -45.0d
 			y: 23.0d
 		}
 		{
@@ -13530,8 +13530,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 30.0d
+			x: 6.0d
+			y: 31.0d
 		}
 		{
 			icon: {
@@ -13545,7 +13545,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 7.0d
 			y: 31.0d
 		}
 		{
@@ -13560,8 +13560,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 29.0d
+			x: 0.0d
+			y: 32.0d
 		}
 		{
 			icon: {
@@ -13575,8 +13575,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 29.0d
+			x: 1.0d
+			y: 32.0d
 		}
 		{
 			icon: {
@@ -13590,8 +13590,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 30.0d
+			x: 2.0d
+			y: 32.0d
 		}
 		{
 			icon: {
@@ -13605,8 +13605,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 31.0d
+			x: 3.0d
+			y: 32.0d
 		}
 	]
 }
