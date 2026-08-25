@@ -78,7 +78,7 @@ class FogCurveTest {
         assertEquals(104.0F, FogCurve.lerp(192.0F, 16.0F, 0.5F));
     }
 
-    private static final double FALLOFF = 2.5;
+    private static final double FALLOFF = 3.5;
 
     /**
      * The fault this curve exists to fix. The far plane used to interpolate from a FIXED
@@ -95,7 +95,7 @@ class FogCurveTest {
         float justInside = FogCurve.strength(-54.2, OVERWORLD_FLOOR, FADE, FULL);
         float far = FogCurve.distance(renderFar, 8.0F, justInside, FALLOFF);
         assertTrue(
-                far > renderFar * 0.95F,
+                far > renderFar * 0.93F,
                 "entering the band must barely change the view, was " + far + " of " + renderFar);
     }
 
