@@ -3,178 +3,153 @@
 	default_quest_shape: ""
 	filename: "ash_and_twilight"
 	group: ""
+	icon: {
+		id: "forbidden_arcanus:hephaestus_forge_tier_2"
+	}
 	id: "3B00000000000000"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1C0000000000005A"]
 			icon: {
-				count: 1
 				id: "deepwaters:endlesscaves"
 			}
-			dependencies: ["1C0000000000005A"]
 			id: "3B0000000000000B"
 			rewards: [{
 				id: "3B0000000200000B"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100000B"
-						item: { count: 1 id: "deepwaters:endlesscaves" }
-						type: "item"
-					}
-				]
-			x: -16.5d
+			tasks: [{
+				id: "3B0000000100000B"
+				item: { count: 1, id: "deepwaters:endlesscaves" }
+				type: "item"
+			}]
+			x: -13.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000000B"]
 			icon: {
-				count: 1
 				id: "deepwaters:aquamarine"
 			}
-			dependencies: ["3B0000000000000B"]
 			id: "3B0000000000000C"
 			rewards: [{
 				id: "3B0000000200000C"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100000C"
-						item: { count: 1 id: "deepwaters:aquamarine" }
-						type: "item"
-					}
-				]
-			x: -15.0d
+			tasks: [{
+				id: "3B0000000100000C"
+				item: { count: 1, id: "deepwaters:aquamarine" }
+				type: "item"
+			}]
+			x: -13.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["3B0000000000000C"]
 			icon: {
-				count: 1
 				id: "deepwaters:fopal"
 			}
-			dependencies: ["3B0000000000000C"]
 			id: "3B0000000000000D"
 			rewards: [{
 				id: "3B0000000200000D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 16L
-						id: "3B0000000100000D"
-						item: { count: 1 id: "deepwaters:fopal" }
-						type: "item"
-					}
-				]
-			x: -13.5d
+			tasks: [{
+				count: 16L
+				id: "3B0000000100000D"
+				item: { count: 1, id: "deepwaters:fopal" }
+				type: "item"
+			}]
+			x: -12.0d
 			y: -1.5d
 		}
 		{
+			dependencies: ["3B0000000000000D"]
 			icon: {
-				count: 1
 				id: "deepwaters:pearl"
 			}
-			dependencies: ["3B0000000000000D"]
 			id: "3B0000000000000E"
 			rewards: [{
 				id: "3B0000000200000E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100000E"
-						item: { count: 1 id: "deepwaters:pearl" }
-						type: "item"
-					}
-				]
-			x: -12.0d
+			tasks: [{
+				id: "3B0000000100000E"
+				item: { count: 1, id: "deepwaters:pearl" }
+				type: "item"
+			}]
+			x: -10.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["3B0000000000001D"]
 			icon: {
-				count: 1
 				id: "deepwaters:stormcall_altar"
 			}
-			dependencies: ["3B0000000000001D"]
 			id: "3B0000000000000F"
 			rewards: [{
 				id: "3B0000000200000F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100000F"
-						item: { count: 1 id: "deepwaters:stormcall_altar" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B0000000100000F"
+				item: { count: 1, id: "deepwaters:stormcall_altar" }
+				type: "item"
+			}]
 			x: -10.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000020"]
 			icon: {
-				count: 1
 				id: "block_factorys_bosses:kraken_tooth"
 			}
-			dependencies: ["3B00000000000020"]
 			id: "3B00000000000010"
 			rewards: [{
 				id: "3B00000002000010"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "block_factorys_bosses:kraken_tooth"
-						}
-						id: "3B00000001000010"
-						entity: "block_factorys_bosses:kraken"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "block_factorys_bosses:kraken"
+				icon: {
+					id: "block_factorys_bosses:kraken_tooth"
+				}
+				id: "3B00000001000010"
+				type: "kill"
+				value: 1L
+			}]
 			x: -6.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000010"]
 			icon: {
-				count: 1
 				id: "cataclysm:abyss_eye"
 			}
-			dependencies: ["3B00000000000010"]
 			id: "3B00000000000011"
 			rewards: [{
 				id: "3B00000002000011"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000011"
-						item: { count: 1 id: "cataclysm:abyss_eye" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000011"
+				item: { count: 1, id: "cataclysm:abyss_eye" }
+				type: "item"
+			}]
 			x: -4.5d
 			y: 0.0d
 		}
 		{
 			icon: {
-				count: 1
 				id: "minecraft:chiseled_sandstone"
 			}
 			id: "3B00000000000012"
@@ -183,73 +158,61 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:chiseled_sandstone"
-						}
-						id: "3B00000001000012"
-						structure: "minecraft:desert_pyramid"
-						type: "structure"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "minecraft:chiseled_sandstone"
+				}
+				id: "3B00000001000012"
+				structure: "minecraft:desert_pyramid"
+				type: "structure"
+			}]
 			x: -9.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["3B0000000000001F"]
 			icon: {
-				count: 1
 				id: "block_factorys_bosses:sandworm_gauntlet"
 			}
-			dependencies: ["3B0000000000001F"]
 			id: "3B00000000000013"
 			rewards: [{
 				id: "3B00000002000013"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "block_factorys_bosses:sandworm_gauntlet"
-						}
-						id: "3B00000001000013"
-						entity: "block_factorys_bosses:sandworm"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "block_factorys_bosses:sandworm"
+				icon: {
+					id: "block_factorys_bosses:sandworm_gauntlet"
+				}
+				id: "3B00000001000013"
+				type: "kill"
+				value: 1L
+			}]
 			x: -6.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["3B00000000000013"]
 			icon: {
-				count: 1
 				id: "cataclysm:desert_eye"
 			}
-			dependencies: ["3B00000000000013"]
 			id: "3B00000000000014"
 			rewards: [{
 				id: "3B00000002000014"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000014"
-						item: { count: 1 id: "cataclysm:desert_eye" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000014"
+				item: { count: 1, id: "cataclysm:desert_eye" }
+				type: "item"
+			}]
 			x: -4.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			icon: {
-				count: 1
 				id: "twilightforest:alpha_yeti_fur"
 			}
 			id: "3B00000000000015"
@@ -258,151 +221,127 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "twilightforest:alpha_yeti_fur"
-						}
-						id: "3B00000001000015"
-						entity: "twilightforest:alpha_yeti"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				icon: {
+					id: "twilightforest:alpha_yeti_fur"
+				}
+				id: "3B00000001000015"
+				type: "kill"
+				value: 1L
+			}]
 			x: -9.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["3B00000000000015"]
 			icon: {
-				count: 1
 				id: "twilightforest:snow_queen_trophy"
 			}
-			dependencies: ["3B00000000000015"]
 			id: "3B00000000000016"
 			rewards: [{
 				id: "3B00000002000016"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "twilightforest:snow_queen_trophy"
-						}
-						id: "3B00000001000016"
-						entity: "twilightforest:snow_queen"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				icon: {
+					id: "twilightforest:snow_queen_trophy"
+				}
+				id: "3B00000001000016"
+				type: "kill"
+				value: 1L
+			}]
 			x: -9.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B00000000000021"]
 			icon: {
-				count: 1
 				id: "block_factorys_bosses:ice_gauntlet"
 			}
-			dependencies: ["3B00000000000021"]
 			id: "3B00000000000017"
 			rewards: [{
 				id: "3B00000002000017"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "block_factorys_bosses:ice_gauntlet"
-						}
-						id: "3B00000001000017"
-						entity: "block_factorys_bosses:yeti"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "block_factorys_bosses:yeti"
+				icon: {
+					id: "block_factorys_bosses:ice_gauntlet"
+				}
+				id: "3B00000001000017"
+				type: "kill"
+				value: 1L
+			}]
 			x: -6.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B00000000000017"]
 			icon: {
-				count: 1
 				id: "cataclysm:cursed_eye"
 			}
-			dependencies: ["3B00000000000017"]
 			id: "3B00000000000018"
 			rewards: [{
 				id: "3B00000002000018"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000018"
-						item: { count: 1 id: "cataclysm:cursed_eye" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000018"
+				item: { count: 1, id: "cataclysm:cursed_eye" }
+				type: "item"
+			}]
 			x: -4.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B0000000000001C"]
 			icon: {
-				count: 1
 				id: "cataclysm:storm_eye"
 			}
-			dependencies: ["3B0000000000001C"]
 			id: "3B00000000000019"
 			rewards: [{
 				id: "3B00000002000019"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000019"
-						item: { count: 1 id: "cataclysm:storm_eye" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000019"
+				item: { count: 1, id: "cataclysm:storm_eye" }
+				type: "item"
+			}]
 			x: -4.5d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["3B00000000000012"]
 			icon: {
-				count: 1
 				id: "iceandfire:gorgon_head"
 			}
-			dependencies: ["3B00000000000012"]
 			id: "3B0000000000001A"
 			rewards: [{
 				id: "3B0000000200001A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "iceandfire:gorgon_head"
-						}
-						id: "3B0000000100001A"
-						entity: "iceandfire:gorgon"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				icon: {
+					id: "iceandfire:gorgon_head"
+				}
+				id: "3B0000000100001A"
+				type: "kill"
+				value: 1L
+			}]
 			x: -9.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			icon: {
-				count: 1
 				id: "twilightforest:knight_phantom_trophy"
 			}
 			id: "3B0000000000001B"
@@ -411,730 +350,627 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "twilightforest:knight_phantom_trophy"
-						}
-						id: "3B0000000100001B"
-						entity: "twilightforest:knight_phantom"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				icon: {
+					id: "twilightforest:knight_phantom_trophy"
+				}
+				id: "3B0000000100001B"
+				type: "kill"
+				value: 1L
+			}]
 			x: -7.5d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["3B0000000000001B"]
 			icon: {
-				count: 1
 				id: "twilightforest:ur_ghast_trophy"
 			}
-			dependencies: ["3B0000000000001B"]
 			id: "3B0000000000001C"
 			rewards: [{
 				id: "3B0000000200001C"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "twilightforest:ur_ghast_trophy"
-						}
-						id: "3B0000000100001C"
-						entity: "twilightforest:ur_ghast"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				icon: {
+					id: "twilightforest:ur_ghast_trophy"
+				}
+				id: "3B0000000100001C"
+				type: "kill"
+				value: 1L
+			}]
 			x: -6.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "minecraft:conduit"
-			}
 			dependencies: [
 				"3B0000000000000E"
 				"3B00000000000050"
 			]
+			icon: {
+				id: "minecraft:conduit"
+			}
 			id: "3B0000000000001D"
 			rewards: [{
 				id: "3B0000000200001D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 130L
-						id: "3B0000000100001D"
-						item: { count: 1 id: "minecraft:mossy_stone_bricks" }
-						type: "item"
-					}
-					{
-						count: 21L
-						id: "3B0000000101001D"
-						item: { count: 1 id: "deepwaters:cryssmaquamarine" }
-						type: "item"
-					}
-					{
-						count: 5L
-						id: "3B0000000102001D"
-						item: { count: 1 id: "deepwaters:crysmeaquamarine" }
-						type: "item"
-					}
-					{
-						count: 4L
-						id: "3B0000000103001D"
-						item: { count: 1 id: "deepwaters:cryslaaquamarine" }
-						type: "item"
-					}
-					{
-						count: 2L
-						id: "3B0000000104001D"
-						item: { count: 1 id: "deepwaters:fopal_pillar" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "3B0000000105001D"
-						item: { count: 1 id: "minecraft:conduit" }
-						type: "item"
-					}
-				]
+			tasks: [
+				{
+					count: 130L
+					id: "3B0000000100001D"
+					item: { count: 1, id: "minecraft:mossy_stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "3B0000000101001D"
+					item: { count: 1, id: "deepwaters:cryssmaquamarine" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3B0000000102001D"
+					item: { count: 1, id: "deepwaters:crysmeaquamarine" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B0000000103001D"
+					item: { count: 1, id: "deepwaters:cryslaaquamarine" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3B0000000104001D"
+					item: { count: 1, id: "deepwaters:fopal_pillar" }
+					type: "item"
+				}
+				{
+					id: "3B0000000105001D"
+					item: { count: 1, id: "minecraft:conduit" }
+					type: "item"
+				}
+			]
 			x: -12.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000000F"]
 			icon: {
-				count: 1
 				id: "deepwaters:blackpearl"
 			}
-			dependencies: ["3B0000000000000F"]
 			id: "3B0000000000001E"
 			rewards: [{
 				id: "3B0000000200001E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "deepwaters:blackpearl"
-						}
-						id: "3B0000000100001E"
-						entity: "deepwaters:cianea_capillada"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "deepwaters:cianea_capillada"
+				icon: {
+					id: "deepwaters:blackpearl"
+				}
+				id: "3B0000000100001E"
+				type: "kill"
+				value: 1L
+			}]
 			x: -9.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000001A"]
 			icon: {
-				count: 1
 				id: "bertieprogression:sirok_nest_map"
 			}
-			dependencies: ["3B0000000000001A"]
 			id: "3B0000000000001F"
 			rewards: [{
 				id: "3B0000000200001F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100001F"
-						item: { count: 1 id: "bertieprogression:sirok_nest_map" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B0000000100001F"
+				item: { count: 1, id: "bertieprogression:sirok_nest_map" }
+				type: "item"
+			}]
 			x: -7.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["3B0000000000001E"]
 			icon: {
-				count: 1
 				id: "bertieprogression:kraken_ship_map"
 			}
-			dependencies: ["3B0000000000001E"]
 			id: "3B00000000000020"
 			rewards: [{
 				id: "3B00000002000020"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000020"
-						item: { count: 1 id: "bertieprogression:kraken_ship_map" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000020"
+				item: { count: 1, id: "bertieprogression:kraken_ship_map" }
+				type: "item"
+			}]
 			x: -7.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000016"]
 			icon: {
-				count: 1
 				id: "bertieprogression:yeti_hideout_map"
 			}
-			dependencies: ["3B00000000000016"]
 			id: "3B00000000000021"
 			rewards: [{
 				id: "3B00000002000021"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000021"
-						item: { count: 1 id: "bertieprogression:yeti_hideout_map" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000021"
+				item: { count: 1, id: "bertieprogression:yeti_hideout_map" }
+				type: "item"
+			}]
 			x: -7.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B00000000000011"]
 			icon: {
-				count: 1
 				id: "cataclysm:coral_chunk"
 			}
-			dependencies: ["3B00000000000011"]
 			id: "3B00000000000022"
 			rewards: [{
 				id: "3B00000002000022"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000022"
-						item: { count: 1 id: "cataclysm:coral_chunk" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000022"
+				item: { count: 1, id: "cataclysm:coral_chunk" }
+				type: "item"
+			}]
 			x: -3.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000014"]
 			icon: {
-				count: 1
 				id: "cataclysm:ancient_metal_ingot"
 			}
-			dependencies: ["3B00000000000014"]
 			id: "3B00000000000023"
 			rewards: [{
 				id: "3B00000002000023"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000023"
-						item: { count: 1 id: "cataclysm:ancient_metal_ingot" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "3B00000001010023"
-						item: { count: 1 id: "cataclysm:koboleton_bone" }
-						type: "item"
-					}
-				]
+			tasks: [
+				{
+					id: "3B00000001000023"
+					item: { count: 1, id: "cataclysm:ancient_metal_ingot" }
+					type: "item"
+				}
+				{
+					id: "3B00000001010023"
+					item: { count: 1, id: "cataclysm:koboleton_bone" }
+					type: "item"
+				}
+			]
 			x: -3.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["3B00000000000018"]
 			icon: {
-				count: 1
 				id: "cataclysm:cursium_ingot"
 			}
-			dependencies: ["3B00000000000018"]
 			id: "3B00000000000024"
 			rewards: [{
 				id: "3B00000002000024"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000024"
-						item: { count: 1 id: "cataclysm:cursium_ingot" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "3B00000001010024"
-						item: { count: 1 id: "cataclysm:black_steel_ingot" }
-						type: "item"
-					}
-				]
+			tasks: [
+				{
+					id: "3B00000001000024"
+					item: { count: 1, id: "cataclysm:cursium_ingot" }
+					type: "item"
+				}
+				{
+					id: "3B00000001010024"
+					item: { count: 1, id: "cataclysm:black_steel_ingot" }
+					type: "item"
+				}
+			]
 			x: -3.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B00000000000019"]
 			icon: {
-				count: 1
 				id: "cataclysm:essence_of_the_storm"
 			}
-			dependencies: ["3B00000000000019"]
 			id: "3B00000000000025"
 			rewards: [{
 				id: "3B00000002000025"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000025"
-						item: { count: 1 id: "cataclysm:lacrima" }
-						type: "item"
-					}
-					{
-						count: 1L
-						id: "3B00000001010025"
-						item: { count: 1 id: "cataclysm:essence_of_the_storm" }
-						type: "item"
-					}
-				]
+			tasks: [
+				{
+					id: "3B00000001000025"
+					item: { count: 1, id: "cataclysm:lacrima" }
+					type: "item"
+				}
+				{
+					id: "3B00000001010025"
+					item: { count: 1, id: "cataclysm:essence_of_the_storm" }
+					type: "item"
+				}
+			]
 			x: -3.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["3B00000000000022"]
 			icon: {
-				count: 1
 				id: "bertieprogression:abyssal_core"
 			}
-			dependencies: ["3B00000000000022"]
 			id: "3B00000000000026"
 			rewards: [{
 				id: "3B00000002000026"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000026"
-						item: { count: 1 id: "bertieprogression:abyssal_core" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000026"
+				item: { count: 1, id: "bertieprogression:abyssal_core" }
+				type: "item"
+			}]
 			x: -1.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000023"]
 			icon: {
-				count: 1
 				id: "bertieprogression:desert_core"
 			}
-			dependencies: ["3B00000000000023"]
 			id: "3B00000000000027"
 			rewards: [{
 				id: "3B00000002000027"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000027"
-						item: { count: 1 id: "bertieprogression:desert_core" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000027"
+				item: { count: 1, id: "bertieprogression:desert_core" }
+				type: "item"
+			}]
 			x: -1.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["3B00000000000024"]
 			icon: {
-				count: 1
 				id: "bertieprogression:cursed_core"
 			}
-			dependencies: ["3B00000000000024"]
 			id: "3B00000000000028"
 			rewards: [{
 				id: "3B00000002000028"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000028"
-						item: { count: 1 id: "bertieprogression:cursed_core" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000028"
+				item: { count: 1, id: "bertieprogression:cursed_core" }
+				type: "item"
+			}]
 			x: -1.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["3B00000000000025"]
 			icon: {
-				count: 1
 				id: "bertieprogression:storm_core"
 			}
-			dependencies: ["3B00000000000025"]
 			id: "3B00000000000029"
 			rewards: [{
 				id: "3B00000002000029"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000029"
-						item: { count: 1 id: "bertieprogression:storm_core" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000029"
+				item: { count: 1, id: "bertieprogression:storm_core" }
+				type: "item"
+			}]
 			x: -1.5d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "forbidden_arcanus:hephaestus_forge_tier_2"
-			}
 			dependencies: [
 				"3B00000000000026"
 				"3B00000000000027"
 				"3B00000000000028"
 				"3B00000000000029"
 			]
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_2"
+			}
 			id: "3B0000000000002A"
 			rewards: [{
 				id: "3B0000000200002A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "forbidden_arcanus:hephaestus_forge_tier_2"
-						}
-						id: "3B0000000100002A"
-						observe_type: "block"
-						timer: 60L
-						to_observe: "forbidden_arcanus:hephaestus_forge_tier_2"
-						type: "observation"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "forbidden_arcanus:hephaestus_forge_tier_2"
+				}
+				id: "3B0000000100002A"
+				observation_type: "block"
+				observe_type: 0
+				timer: 60L
+				to_observe: "forbidden_arcanus:hephaestus_forge_tier_2"
+				type: "observation"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000004A"]
 			icon: {
-				count: 1
 				id: "iceandfire:dragonscales_red"
 			}
-			dependencies: ["3B0000000000004A"]
 			id: "3B0000000000002B"
 			rewards: [{
 				id: "3B0000000200002B"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "iceandfire:dragonscales_red"
-						}
-						id: "3B0000000100002B"
-						entity: "iceandfire:fire_dragon"
-						type: "kill"
-						value: 1L
-					}
-				]
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				icon: {
+					id: "iceandfire:dragonscales_red"
+				}
+				id: "3B0000000100002B"
+				type: "kill"
+				value: 1L
+			}]
 			x: 4.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002E"]
 			icon: {
-				count: 1
 				id: "iceandfire:dragonscales_red"
 			}
-			dependencies: ["3B0000000000002E"]
 			id: "3B0000000000002C"
 			rewards: [{
 				id: "3B0000000200002C"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 4L
-						icon: {
-							count: 1
-							id: "iceandfire:dragonscales_red"
-						}
-						id: "3B0000000100002C"
-						item: { components: { "ftbfiltersystem:filter": 'ftbfiltersystem:item_tag(iceandfire:scales/dragon/fire)', "minecraft:custom_name": '{"text":"Fire Dragon Scales","italic":false}' }, count: 1, id: "ftbfiltersystem:smart_filter" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 4L
+				icon: {
+					id: "iceandfire:dragonscales_red"
+				}
+				id: "3B0000000100002C"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/dragon/fire)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Fire Dragon Scales\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
 			x: 9.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002B"]
 			icon: {
-				count: 1
 				id: "iceandfire:fire_dragon_blood"
 			}
-			dependencies: ["3B0000000000002B"]
 			id: "3B0000000000002D"
 			rewards: [{
 				id: "3B0000000200002D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 2L
-						id: "3B0000000100002D"
-						item: { count: 1 id: "iceandfire:fire_dragon_blood" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 2L
+				id: "3B0000000100002D"
+				item: { count: 1, id: "iceandfire:fire_dragon_blood" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002D"]
 			icon: {
-				count: 1
 				id: "iceandfire:fire_dragon_heart"
 			}
-			dependencies: ["3B0000000000002D"]
 			id: "3B0000000000002E"
 			rewards: [{
 				id: "3B0000000200002E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100002E"
-						item: { count: 1 id: "iceandfire:fire_dragon_heart" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B0000000100002E"
+				item: { count: 1, id: "iceandfire:fire_dragon_heart" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000037"]
 			icon: {
-				count: 1
 				id: "bertieprogression:netherly_meal"
 			}
-			dependencies: ["3B00000000000037"]
 			id: "3B0000000000002F"
 			rewards: [{
 				id: "3B0000000200002F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100002F"
-						item: { count: 1 id: "bertieprogression:netherly_meal" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B0000000100002F"
+				item: { count: 1, id: "bertieprogression:netherly_meal" }
+				type: "item"
+			}]
 			x: 13.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002F"]
 			icon: {
-				count: 1
 				id: "minecraft:obsidian"
 			}
-			dependencies: ["3B0000000000002F"]
 			id: "3B00000000000033"
 			rewards: [{
 				id: "3B00000002000033"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 14L
-						id: "3B00000001000033"
-						item: { count: 1 id: "minecraft:obsidian" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				count: 14L
+				id: "3B00000001000033"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
 			x: 15.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000033"]
 			icon: {
-				count: 1
 				id: "minecraft:flint_and_steel"
 			}
-			dependencies: ["3B00000000000033"]
 			id: "3B00000000000034"
 			rewards: [{
 				id: "3B00000002000034"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000034"
-						item: { count: 1 id: "minecraft:flint_and_steel" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000034"
+				item: { count: 1, id: "minecraft:flint_and_steel" }
+				type: "item"
+			}]
 			x: 16.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002C"]
 			icon: {
-				count: 1
 				id: "iceandfire:fire_dragon_flesh"
 			}
-			dependencies: ["3B0000000000002C"]
 			id: "3B00000000000036"
 			rewards: [{
 				id: "3B00000002000036"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000036"
-						item: { count: 1 id: "iceandfire:fire_dragon_flesh" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000036"
+				item: { count: 1, id: "iceandfire:fire_dragon_flesh" }
+				type: "item"
+			}]
 			x: 10.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000036"]
 			icon: {
-				count: 1
 				id: "malum:living_flesh"
 			}
-			dependencies: ["3B00000000000036"]
 			id: "3B00000000000037"
 			rewards: [{
 				id: "3B00000002000037"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000037"
-						item: { count: 1 id: "malum:living_flesh" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B00000001000037"
+				item: { count: 1, id: "malum:living_flesh" }
+				type: "item"
+			}]
 			x: 12.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B0000000000002A"]
 			icon: {
-				count: 1
 				id: "twilightforest:maze_map_focus"
 			}
-			dependencies: ["3B0000000000002A"]
 			id: "3B00000000000049"
 			rewards: [{
 				id: "3B00000002000049"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "twilightforest:maze_map_focus"
-						}
-						id: "3B00000001000049"
-						structure: "twilightforest:labyrinth"
-						type: "structure"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "twilightforest:maze_map_focus"
+				}
+				id: "3B00000001000049"
+				structure: "twilightforest:labyrinth"
+				type: "structure"
+			}]
 			x: 1.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000049"]
 			icon: {
-				count: 1
 				id: "twilightforest:meef_stroganoff"
 			}
-			dependencies: ["3B00000000000049"]
 			id: "3B0000000000004A"
 			rewards: [{
 				id: "3B0000000200004A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100004A"
-						item: { count: 1 id: "twilightforest:meef_stroganoff" }
-						type: "item"
-					}
-				]
+			tasks: [{
+				id: "3B0000000100004A"
+				item: { count: 1, id: "twilightforest:meef_stroganoff" }
+				type: "item"
+			}]
 			x: 3.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["3B00000000000034"]
 			icon: {
-				count: 1
 				id: "minecraft:crying_obsidian"
 			}
-			dependencies: ["3B00000000000034"]
 			id: "3B0000000000004B"
 			rewards: [{
 				id: "3B0000000200004B"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:crying_obsidian"
-						}
-						id: "3B0000000100004B"
-						observe_type: "block"
-						timer: 60L
-						to_observe: "minecraft:nether_portal"
-						type: "observation"
-					}
-				]
+			tasks: [{
+				icon: {
+					id: "minecraft:crying_obsidian"
+				}
+				id: "3B0000000100004B"
+				observation_type: "block"
+				observe_type: 0
+				timer: 60L
+				to_observe: "minecraft:nether_portal"
+				type: "observation"
+			}]
 			x: 18.0d
 			y: 0.0d
 		}
 		{
 			icon: {
-				count: 1
 				id: "minecraft:sculk_catalyst"
 			}
 			id: "1C00000000000058"
@@ -1143,185 +979,155 @@
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:sculk_catalyst"
-						}
-						id: "1C00000001000058"
-						structure: "minecraft:ancient_city"
-						type: "structure"
-					}
-				]
-			x: -21.0d
+			tasks: [{
+				icon: {
+					id: "minecraft:sculk_catalyst"
+				}
+				id: "1C00000001000058"
+				structure: "minecraft:ancient_city"
+				type: "structure"
+			}]
+			x: -18.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1C00000000000058"]
 			icon: {
-				count: 1
 				id: "minecraft:echo_shard"
 			}
-			dependencies: ["1C00000000000058"]
 			id: "1C00000000000059"
 			rewards: [{
 				id: "1C00000002000059"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C00000001000059"
-						item: { count: 1 id: "minecraft:echo_shard" }
-						type: "item"
-					}
-				]
-			x: -19.5d
+			tasks: [{
+				id: "1C00000001000059"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: -16.5d
 			y: 0.0d
 		}
 		{
-			icon: {
-				count: 1
-				id: "avaritia:sculk_crafting_table"
-			}
 			dependencies: [
 				"3B0000000000004C"
 				"3B0000000000004D"
 			]
+			icon: {
+				id: "avaritia:sculk_crafting_table"
+			}
 			id: "1C0000000000005A"
 			rewards: [{
 				id: "1C0000000200005A"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "1C0000000100005A"
-						item: { count: 1 id: "avaritia:sculk_crafting_table" }
-						type: "item"
-					}
-				]
-			x: -18.0d
+			tasks: [{
+				id: "1C0000000100005A"
+				item: { count: 1, id: "avaritia:sculk_crafting_table" }
+				type: "item"
+			}]
+			x: -15.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1C00000000000058"]
 			icon: {
-				count: 1
 				id: "irons_spellbooks:ancient_knowledge_fragment"
 			}
-			dependencies: ["1C00000000000058"]
 			id: "3B0000000000004C"
 			rewards: [{
 				id: "3B0000000200004C"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 2L
-						id: "3B0000000100004C"
-						item: { count: 1 id: "irons_spellbooks:ancient_knowledge_fragment" }
-						type: "item"
-					}
-				]
-			x: -19.5d
+			tasks: [{
+				count: 2L
+				id: "3B0000000100004C"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -16.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["1C00000000000058"]
 			icon: {
-				count: 1
 				id: "minecraft:sculk_shrieker"
 			}
-			dependencies: ["1C00000000000058"]
 			id: "3B0000000000004D"
 			rewards: [{
 				id: "3B0000000200004D"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100004D"
-						item: { count: 1 id: "minecraft:sculk_shrieker" }
-						type: "item"
-					}
-				]
-			x: -19.5d
+			tasks: [{
+				id: "3B0000000100004D"
+				item: { count: 1, id: "minecraft:sculk_shrieker" }
+				type: "item"
+			}]
+			x: -16.5d
 			y: 1.5d
 		}
 		{
+			dependencies: ["3B0000000000000B"]
 			icon: {
-				count: 1
 				id: "minecraft:map"
 			}
-			dependencies: ["3B0000000000000B"]
 			id: "3B0000000000004E"
 			rewards: [{
 				id: "3B0000000200004E"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						icon: {
-							count: 1
-							id: "minecraft:map"
-						}
-						id: "3B0000000100004E"
-						structure: "minecraft:shipwreck"
-						type: "structure"
-					}
-				]
-			x: -15.0d
+			tasks: [{
+				icon: {
+					id: "minecraft:map"
+				}
+				id: "3B0000000100004E"
+				structure: "minecraft:shipwreck"
+				type: "structure"
+			}]
+			x: -13.5d
 			y: 1.5d
 		}
 		{
+			dependencies: ["3B0000000000004E"]
 			icon: {
-				count: 1
 				id: "minecraft:heart_of_the_sea"
 			}
-			dependencies: ["3B0000000000004E"]
 			id: "3B0000000000004F"
 			rewards: [{
 				id: "3B0000000200004F"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B0000000100004F"
-						item: { count: 1 id: "minecraft:heart_of_the_sea" }
-						type: "item"
-					}
-				]
-			x: -13.5d
+			tasks: [{
+				id: "3B0000000100004F"
+				item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				type: "item"
+			}]
+			x: -12.0d
 			y: 1.5d
 		}
 		{
+			dependencies: ["3B0000000000004F"]
 			icon: {
-				count: 1
 				id: "minecraft:conduit"
 			}
-			dependencies: ["3B0000000000004F"]
 			id: "3B00000000000050"
 			rewards: [{
 				id: "3B00000002000050"
 				type: "xp"
 				xp: 25
 			}]
-				tasks: [
-					{
-						count: 1L
-						id: "3B00000001000050"
-						item: { count: 1 id: "minecraft:conduit" }
-						type: "item"
-					}
-				]
-			x: -12.0d
+			tasks: [{
+				id: "3B00000001000050"
+				item: { count: 1, id: "minecraft:conduit" }
+				type: "item"
+			}]
+			x: -10.5d
 			y: 1.5d
 		}
 		{
@@ -1336,13 +1142,12 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "3B00000001000051"
-				item: { count: 1 id: "cognition:cognitive_flux" }
+				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: -3.0d
+			x: -15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3B00000000000051"]
@@ -1356,13 +1161,12 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "3B00000001000052"
-				item: { count: 1 id: "cognition:cognitive_amalgam" }
+				item: { count: 1, id: "cognition:cognitive_amalgam" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: -3.0d
+			x: -15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B00000000000052"]
@@ -1376,13 +1180,12 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "3B00000001000053"
-				item: { count: 1 id: "cognition:cognitive_alloy" }
+				item: { count: 1, id: "cognition:cognitive_alloy" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: -3.0d
+			x: -13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B00000000000053"]
@@ -1396,13 +1199,12 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "3B00000001000054"
-				item: { count: 1 id: "cognition:cognitive_crystal" }
+				item: { count: 1, id: "cognition:cognitive_crystal" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -3.0d
+			x: -12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B00000000000054"]
@@ -1416,13 +1218,12 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "3B00000001000055"
-				item: { count: 1 id: "cognition:astute_assembly" }
+				item: { count: 1, id: "cognition:astute_assembly" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: -3.0d
+			x: -10.5d
+			y: 3.0d
 		}
 	]
 }
