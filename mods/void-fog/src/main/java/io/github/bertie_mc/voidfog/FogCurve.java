@@ -25,7 +25,11 @@ public final class FogCurve {
         if (depth >= fadeDepth) {
             return 0.0F;
         }
-        return (float) ((fadeDepth - depth) / (fadeDepth - (double) fullDepth));
+        double t = (fadeDepth - depth) / (fadeDepth - (double) fullDepth);
+        // Smoothstep, not a straight ramp. A linear band has a corner at each end - the fog starts
+        // and stops changing abruptly - and on a five block band that corner is visible as you walk
+        // down into it. This flattens the curve where it meets both ends.
+        return (float) (t * t * (3.0 - 2.0 * t));
     }
 
     /** Straight interpolation, for values that may legitimately be zero. */

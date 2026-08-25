@@ -8,8 +8,9 @@ connection and a player may turn it off without desyncing.
 
 ## What it does
 
-Below a fade depth the terrain fog closes in, its colour is pulled towards black and pale motes
-drift through it. The effect ramps: nothing at y=-54, half at the top of the bedrock layer, full on
+Below a fade depth the fog closes in - terrain and sky alike, so a cave mouth does not cut a
+bright edge through it - its colour is pulled towards black and pale motes drift through it. The
+effect eases in rather than ramping: nothing at y=-54, half at the top of the bedrock layer, full on
 the floor.
 
 Two things soften it, both gradually:

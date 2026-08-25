@@ -10,7 +10,6 @@ import java.util.Set;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.material.FogType;
@@ -34,11 +33,16 @@ public final class VoidFogRenderer {
     private VoidFogRenderer() {}
 
     /**
-     * Only terrain fog is touched. Sky fog is left alone because reshaping it while the fog colour
-     * is already near-black bands the horizon on the rare deep spot that can still see sky.
+     * Both fog modes, terrain and sky.
+     *
+     * <p>Sky fog used to be left alone, on the theory that reshaping it under a near-black colour
+     * would band the horizon. The opposite happened: the terrain went black while the sky behind it
+     * kept its own pale colour, and the join between them - a cave mouth, a gap in a ceiling - drew
+     * a hard bright edge through the effect. The sky has to be pulled in with everything else or
+     * the fog has a visible boundary wherever the world does not fill the view.
      */
     public static void onRenderFog(ViewportEvent.RenderFog event) {
-        if (event.getMode() != FogRenderer.FogMode.FOG_TERRAIN || event.getType() != FogType.NONE) {
+        if (event.getType() != FogType.NONE) {
             return;
         }
         float strength = strength(event.getCamera());

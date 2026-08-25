@@ -37,6 +37,28 @@ class FogCurveTest {
         assertTrue(s > 0.3F && s < 0.55F, "expected a moderate fog on the top bedrock, was " + s);
     }
 
+    /**
+     * The band eases in and out rather than ramping straight. A linear band has a corner at
+     * each end, and on a five block band that corner is visible as you walk down into it.
+     */
+    @Test
+    void theBandEasesAtBothEndsRatherThanRamping() {
+        float justInside = FogCurve.strength(-64.0 + 9.0, OVERWORLD_FLOOR, FADE, FULL);
+        float justAboveFull = FogCurve.strength(-64.0 + 6.0, OVERWORLD_FLOOR, FADE, FULL);
+        assertTrue(justInside < 0.12F, "should barely start at the top of the band, was " + justInside);
+        assertTrue(justAboveFull > 0.88F, "should be nearly full just above fullDepth, was " + justAboveFull);
+
+        // Still monotonic, and still pinned at both ends.
+        float previous = 1.1F;
+        for (int tenths = 50; tenths <= 100; tenths++) {
+            float here = FogCurve.strength(-64.0 + tenths / 10.0, OVERWORLD_FLOOR, FADE, FULL);
+            assertTrue(here <= previous, "strength must not rise as you go up, at " + tenths / 10.0);
+            previous = here;
+        }
+        assertEquals(1.0F, FogCurve.strength(-64.0 + FULL, OVERWORLD_FLOOR, FADE, FULL));
+        assertEquals(0.0F, FogCurve.strength(-64.0 + FADE, OVERWORLD_FLOOR, FADE, FULL));
+    }
+
     @Test
     void measuresDepthFromEachDimensionsOwnFloor() {
         assertEquals(1.0F, FogCurve.strength(5.0, 0, FADE, FULL));
