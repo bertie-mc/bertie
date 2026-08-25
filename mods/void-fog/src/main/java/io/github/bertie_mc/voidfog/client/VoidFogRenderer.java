@@ -110,6 +110,21 @@ public final class VoidFogRenderer {
                 y, level.getMinBuildHeight(), VoidFogConfig.FADE_DEPTH.getAsInt(), VoidFogConfig.FULL_DEPTH.getAsInt());
     }
 
+    /**
+     * How much of the sky's own colour survives, for the mixin that dims the dome.
+     *
+     * <p>Uses the camera the world is actually drawn from, so the sky dims in step with the fog
+     * rather than on its own schedule.
+     */
+    public static float skyKept() {
+        Minecraft client = Minecraft.getInstance();
+        if (client.gameRenderer == null || client.gameRenderer.getMainCamera() == null) {
+            return 1.0F;
+        }
+        float strength = strength(client.gameRenderer.getMainCamera().getPosition().y);
+        return FogCurve.colourKept(strength, (float) VoidFogConfig.DARKNESS.getAsDouble());
+    }
+
     private static boolean appliesTo(Level level) {
         List<? extends String> configured = VoidFogConfig.DIMENSIONS.get();
         if (configured != parsedFrom) {
