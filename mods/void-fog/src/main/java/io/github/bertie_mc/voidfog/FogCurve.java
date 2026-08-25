@@ -38,44 +38,52 @@ public final class FogCurve {
     }
 
     /**
-     * The distance you can see at a given fog strength, in blocks.
+     * The shared 0-to-1 shaping that everything the fog does is driven by.
      *
-     * <p>Geometric between {@code clear} and {@code thickest}, because a view distance is
-     * perceived by ratio and not by amount: halfway between 48 blocks and 12 is not 30, it is
-     * 24.
-     *
-     * <p>{@code clear} is a fixed reference, NOT the render distance, and that is the whole
-     * point. Interpolating from the render distance meant a player on the bedrock - where the
-     * strength works out at about a third - still saw eighty blocks down a tunnel, because a
-     * third of the way from 192 is nowhere near fogged. Anchoring to a reference makes the
-     * strength mean the same thing whatever the render distance is set to.
+     * <p>One curve for the view distance and the colour both, so they arrive together rather
+     * than on separate schedules. It leaves zero with a finite slope, which is the whole
+     * point: a curve that leaves zero steeply - a power below one, say - is continuous on
+     * paper and still reads as a step on screen.
      */
-    public static float distance(float clear, float thickest, float strength) {
-        if (clear <= 0.0F || thickest <= 0.0F) {
-            return lerp(clear, thickest, strength);
+    public static float ramp(float strength, double falloff) {
+        if (strength <= 0.0F) {
+            return 0.0F;
         }
-        return (float) (clear * Math.pow(thickest / (double) clear, strength));
+        if (strength >= 1.0F) {
+            return 1.0F;
+        }
+        return (float) (1.0 - Math.pow(1.0 - strength, falloff));
+    }
+
+    /**
+     * The distance you can see, interpolated from {@code clear} down to {@code thickest}.
+     *
+     * <p>Geometric, because a view distance is perceived by ratio and not by amount: halfway
+     * between 192 blocks and 8 is not 100, it is 39.
+     *
+     * <p>{@code clear} is the far plane the game was ABOUT to use, and passing anything else
+     * is what put a cut in the effect. A fixed reference meant the far plane jumped from the
+     * render distance to that reference the moment strength rose above zero - 192 blocks to
+     * 28 within a tenth of a block of descent, which is exactly the edge you could see. Start
+     * from where the view already was and there is nothing to step over.
+     */
+    public static float distance(float clear, float thickest, float strength, double falloff) {
+        if (clear <= 0.0F || thickest <= 0.0F) {
+            return lerp(clear, thickest, ramp(strength, falloff));
+        }
+        return (float) (clear * Math.pow(thickest / (double) clear, ramp(strength, falloff)));
     }
 
     /**
      * How much of the world's own colour survives at a given fog strength.
      *
-     * <p>Deliberately NOT linear. Linear meant that standing on the ordinary bedrock floor -
-     * which works out around a third of full strength - kept two thirds of the original fog
-     * colour, so distance faded to grey and a torch-lit tunnel stayed perfectly readable
-     * thirty blocks down. Raising the strength to a power below one drives the colour to
-     * black across the top of the band instead of only at the very bottom, which is what
-     * makes light stop rescuing you.
+     * <p>Driven by the same ramp as the distance, so the world darkens at the rate it closes
+     * in. This used to be its own power curve, which left zero steeply and darkened the view
+     * by a sixth the instant you crossed into the band.
      */
-    public static float colourKept(float strength, float darkness) {
-        if (strength <= 0.0F) {
-            return 1.0F;
-        }
-        return 1.0F - darkness * (float) Math.pow(Math.min(1.0F, strength), COLOUR_FALLOFF);
+    public static float colourKept(float strength, float darkness, double falloff) {
+        return 1.0F - darkness * ramp(strength, falloff);
     }
-
-    /** Lower drives the fog to black sooner in the band. */
-    private static final double COLOUR_FALLOFF = 0.4;
 
     /**
      * How much the fog survives being near a column that is open to the sky.

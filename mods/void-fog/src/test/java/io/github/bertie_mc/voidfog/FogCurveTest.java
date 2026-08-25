@@ -78,50 +78,78 @@ class FogCurveTest {
         assertEquals(104.0F, FogCurve.lerp(192.0F, 16.0F, 0.5F));
     }
 
+    private static final double FALLOFF = 2.5;
+
     /**
-     * The reference is a fixed clear distance, not the render distance. Anchoring to the
-     * render distance is what left a tunnel readable at a third strength: a third of the way
-     * from 192 blocks is still 79 blocks of clear view.
+     * The fault this curve exists to fix. The far plane used to interpolate from a FIXED
+     * reference, so the moment strength rose above zero it snapped from the render distance
+     * to that reference - 192 blocks to 28 within a tenth of a block of descent. Starting
+     * from the far plane the game was about to use leaves nothing to step over.
      */
     @Test
-    void distanceRunsFromTheReferenceDownToTheThickest() {
-        assertEquals(48.0F, FogCurve.distance(48.0F, 12.0F, 0.0F), 1.0e-3F);
-        assertEquals(12.0F, FogCurve.distance(48.0F, 12.0F, 1.0F), 1.0e-3F);
-        assertEquals(24.0F, FogCurve.distance(48.0F, 12.0F, 0.5F), 1.0e-2F);
+    void theViewDistanceIsContinuousWhereTheBandBegins() {
+        float renderFar = 192.0F;
+        float above = FogCurve.strength(-54.0, OVERWORLD_FLOOR, FADE, FULL);
+        assertEquals(0.0F, above, "the band should not have started at y=-54");
+
+        float justInside = FogCurve.strength(-54.2, OVERWORLD_FLOOR, FADE, FULL);
+        float far = FogCurve.distance(renderFar, 8.0F, justInside, FALLOFF);
+        assertTrue(
+                far > renderFar * 0.95F,
+                "entering the band must barely change the view, was " + far + " of " + renderFar);
     }
 
-    /** The two readings that have to match: on the top bedrock, and on the lowest floor. */
     @Test
-    void distanceAtTheDepthsAPlayerActuallyReaches() {
-        float top = FogCurve.distance(48.0F, 12.0F, FogCurve.strength(-58.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
-        float bottom = FogCurve.distance(48.0F, 12.0F, FogCurve.strength(-63.0 + EYE, OVERWORLD_FLOOR, FADE, FULL));
-        assertTrue(top > 20.0F && top < 32.0F, "top bedrock should still show a room, was " + top);
-        assertTrue(bottom <= 14.0F, "the lowest floor should be near pitch black, was " + bottom);
+    void theViewDistanceClosesDownToTheThickestAtFullStrength() {
+        assertEquals(192.0F, FogCurve.distance(192.0F, 8.0F, 0.0F, FALLOFF), 1.0e-3F);
+        assertEquals(8.0F, FogCurve.distance(192.0F, 8.0F, 1.0F, FALLOFF), 1.0e-3F);
+    }
+
+    /** Deep down the answer is the same whatever the render distance is set to. */
+    @Test
+    void theDeepEndDoesNotDependOnRenderDistance() {
+        float deep = FogCurve.strength(-58.0, OVERWORLD_FLOOR, FADE, FULL);
+        float wide = FogCurve.distance(192.0F, 8.0F, deep, FALLOFF);
+        float narrow = FogCurve.distance(128.0F, 8.0F, deep, FALLOFF);
+        assertTrue(Math.abs(wide - narrow) < 1.0F, "expected agreement, got " + wide + " and " + narrow);
+        assertTrue(wide < 10.0F, "should be nearly solid down there, was " + wide);
     }
 
     @Test
     void distanceFallsBackToLerpWhenAnEndIsZero() {
-        assertEquals(8.0F, FogCurve.distance(16.0F, 0.0F, 0.5F), 1.0e-4F);
+        assertEquals(0.0F, FogCurve.distance(16.0F, 0.0F, 1.0F, FALLOFF), 1.0e-4F);
     }
 
     /**
-     * The reason a lit tunnel stayed readable: linear colour meant the ordinary bedrock floor,
-     * around half strength, still kept half the world's colour, so distance faded to grey
-     * rather than to black and every torch down the tunnel stayed visible.
+     * Colour rides the same ramp as the distance, so the two arrive together. It used to be
+     * its own power curve, which left zero steeply and darkened the view by a sixth the
+     * instant the band was entered.
      */
     @Test
-    void colourGoesToBlackAcrossTheBandNotOnlyAtTheBottom() {
-        assertEquals(1.0F, FogCurve.colourKept(0.0F, 1.0F));
-        assertEquals(0.0F, FogCurve.colourKept(1.0F, 1.0F), 1.0e-6F);
+    void colourRidesTheSameRampAsTheDistance() {
+        assertEquals(1.0F, FogCurve.colourKept(0.0F, 1.0F, FALLOFF), 1.0e-6F);
+        assertEquals(0.0F, FogCurve.colourKept(1.0F, 1.0F, FALLOFF), 1.0e-6F);
 
-        float onBedrock = FogCurve.colourKept(0.48F, 1.0F);
-        assertTrue(onBedrock < 0.3F, "half strength should be mostly black, was " + onBedrock);
-        assertTrue(onBedrock > 0.0F, "and not fully black yet, was " + onBedrock);
+        float justInside = FogCurve.strength(-54.2, OVERWORLD_FLOOR, FADE, FULL);
+        float keep = FogCurve.colourKept(justInside, 1.0F, FALLOFF);
+        assertTrue(keep > 0.97F, "entering the band must barely darken it, was " + keep);
     }
 
     @Test
     void colourIsUntouchedWhenDarknessIsZero() {
-        assertEquals(1.0F, FogCurve.colourKept(1.0F, 0.0F), 1.0e-6F);
+        assertEquals(1.0F, FogCurve.colourKept(1.0F, 0.0F, FALLOFF), 1.0e-6F);
+    }
+
+    @Test
+    void theRampIsPinnedAtBothEndsAndRisesThroughout() {
+        assertEquals(0.0F, FogCurve.ramp(0.0F, FALLOFF));
+        assertEquals(1.0F, FogCurve.ramp(1.0F, FALLOFF));
+        float previous = -1.0F;
+        for (int step = 0; step <= 100; step++) {
+            float here = FogCurve.ramp(step / 100.0F, FALLOFF);
+            assertTrue(here >= previous, "ramp must not fall, at " + step);
+            previous = here;
+        }
     }
 
     @Test

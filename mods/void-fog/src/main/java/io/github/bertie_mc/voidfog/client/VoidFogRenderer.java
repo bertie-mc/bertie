@@ -50,11 +50,16 @@ public final class VoidFogRenderer {
             return;
         }
 
+        float ramp = FogCurve.ramp(strength, VoidFogConfig.FALLOFF.getAsDouble());
         float start = (float) VoidFogConfig.FOG_START.getAsDouble();
+        // Interpolated from the far plane the game was ABOUT to use, so there is no distance
+        // to step over as the band is entered - see FogCurve.distance.
         float far = FogCurve.distance(
-                (float) VoidFogConfig.FOG_CLEAR.getAsDouble(), (float) VoidFogConfig.FOG_END.getAsDouble(), strength);
-        event.setNearPlaneDistance(FogCurve.lerp(event.getNearPlaneDistance(), start, strength));
-        // Never draw FURTHER than the game was going to; a low render distance still wins.
+                event.getFarPlaneDistance(),
+                (float) VoidFogConfig.FOG_END.getAsDouble(),
+                strength,
+                VoidFogConfig.FALLOFF.getAsDouble());
+        event.setNearPlaneDistance(FogCurve.lerp(event.getNearPlaneDistance(), start, ramp));
         event.setFarPlaneDistance(Math.min(event.getFarPlaneDistance(), far));
         event.setFogShape(FogShape.SPHERE);
         // The event carries the new distances only when it is cancelled.
@@ -71,7 +76,8 @@ public final class VoidFogRenderer {
             return;
         }
 
-        float keep = FogCurve.colourKept(strength, (float) VoidFogConfig.DARKNESS.getAsDouble());
+        float keep = FogCurve.colourKept(
+                strength, (float) VoidFogConfig.DARKNESS.getAsDouble(), VoidFogConfig.FALLOFF.getAsDouble());
         event.setRed(event.getRed() * keep);
         event.setGreen(event.getGreen() * keep);
         event.setBlue(event.getBlue() * keep);
@@ -122,7 +128,8 @@ public final class VoidFogRenderer {
             return 1.0F;
         }
         float strength = strength(client.gameRenderer.getMainCamera().getPosition().y);
-        return FogCurve.colourKept(strength, (float) VoidFogConfig.DARKNESS.getAsDouble());
+        return FogCurve.colourKept(
+                strength, (float) VoidFogConfig.DARKNESS.getAsDouble(), VoidFogConfig.FALLOFF.getAsDouble());
     }
 
     private static boolean appliesTo(Level level) {

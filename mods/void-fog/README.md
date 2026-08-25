@@ -51,7 +51,7 @@ either way.
 | `sky.radius` | `24` | how far an opening to the sky holds it off; `0` ignores daylight |
 | `sky.scanInterval` | `10` | ticks between sky scans; the result is eased between them |
 | `appearance.fogStart` | `0.0` | distance from the camera where the fog begins |
-| `appearance.fogClear` | `28.0` | how far you see at the top of the band; the scale's other end |
+| `appearance.falloff` | `2.5` | how sharply the fog arrives; drives distance and darkness together |
 | `appearance.fogEnd` | `8.0` | distance where it is solid; lower is thicker |
 | `appearance.darkness` | `1.0` | how far the colour is pulled to black; 1.0 is pitch black |
 | `particles.enabled` | `true` | draw the motes |

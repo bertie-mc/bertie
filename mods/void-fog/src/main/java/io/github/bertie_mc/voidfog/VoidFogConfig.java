@@ -22,7 +22,7 @@ public final class VoidFogConfig {
     public static final ModConfigSpec.IntValue SKY_INTERVAL;
 
     public static final ModConfigSpec.DoubleValue FOG_START;
-    public static final ModConfigSpec.DoubleValue FOG_CLEAR;
+    public static final ModConfigSpec.DoubleValue FALLOFF;
     public static final ModConfigSpec.DoubleValue FOG_END;
     public static final ModConfigSpec.DoubleValue DARKNESS;
 
@@ -84,12 +84,12 @@ public final class VoidFogConfig {
         FOG_START = builder.comment("Distance from the camera where the fog begins, in blocks.")
                 .defineInRange("fogStart", 0.0, 0.0, 512.0);
 
-        FOG_CLEAR = builder.comment(
-                        "How far you see at the very top of the band, in blocks. The scale runs from",
-                        "here down to fogEnd, and is deliberately NOT the render distance - anchoring",
-                        "to the render distance made the fog mean something different on every",
-                        "machine, and left a tunnel readable eighty blocks down at a third strength.")
-                .defineInRange("fogClear", 28.0, 4.0, 512.0);
+        FALLOFF = builder.comment(
+                        "How sharply the fog arrives as you descend through the band. Everything the",
+                        "effect does - how near the view closes in and how black it goes - is driven",
+                        "by this one curve, so the two always arrive together. Higher holds the fog",
+                        "off until you are deeper, then brings it in faster.")
+                .defineInRange("falloff", 2.5, 1.0, 8.0);
 
         FOG_END = builder.comment("Distance where the fog is solid, in blocks. Lower is thicker.")
                 .defineInRange("fogEnd", 8.0, 1.0, 512.0);
