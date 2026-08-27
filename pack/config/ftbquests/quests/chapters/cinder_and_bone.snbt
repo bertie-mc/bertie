@@ -48,8 +48,8 @@
 				item: { count: 1, id: "cataclysm:monstrous_eye" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -4.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6B00000000000002"]
@@ -71,7 +71,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 13.5d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -457,7 +457,7 @@
 				item: { count: 1, id: "minecraft:nether_wart" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
@@ -598,7 +598,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B0000000000003C", "6B00000000000050"]
+			dependencies: [
+				"6B0000000000003C"
+				"6B00000000000050"
+			]
 			icon: {
 				id: "pastel:bottle_of_failing"
 			}
@@ -854,7 +857,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000006", "6B00000000000048"]
+			dependencies: [
+				"6B00000000000006"
+				"6B00000000000048"
+			]
 			icon: {
 				id: "cataclysm:altar_of_amethyst"
 			}
@@ -908,7 +914,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6B0000000000004A"]
@@ -982,12 +988,11 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B0000000100004F"
-				item: { count: 1 id: "forbidden_arcanus:corrupti_dust" }
+				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -1002,12 +1007,11 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 1L
 				id: "6B00000001000050"
-				item: { count: 1 id: "forbidden_arcanus:dark_matter" }
+				item: { count: 1, id: "forbidden_arcanus:dark_matter" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 16.5d
 			y: 3.0d
 		}
 		{
@@ -1026,12 +1030,13 @@
 					id: "forbidden_arcanus:dark_nether_star"
 				}
 				id: "6B00000001000051"
+				observation_type: "block"
 				observe_type: 0
 				timer: 20L
 				to_observe: "forbidden_arcanus:black_hole"
 				type: "observation"
 			}]
-			x: 6.0d
+			x: 18.0d
 			y: 3.0d
 		}
 		{
@@ -1054,7 +1059,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 1.5d
+			y: -1.5d
 		}
 	]
 }

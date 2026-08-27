@@ -108,10 +108,7 @@
 		}
 		{
 			icon: {
-				components: {
-					"ftbquests:missing_item": "alexscaves:azure_neodymium_ingot"
-				}
-				id: "ftbquests:missing_item"
+				id: "alexscaves:azure_neodymium_ingot"
 			}
 			id: "2C00000000000006"
 			rewards: [{
@@ -121,7 +118,7 @@
 			}]
 			tasks: [{
 				id: "2C00000001000006"
-				item: { components: { "ftbquests:missing_item": "alexscaves:azure_neodymium_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "alexscaves:azure_neodymium_ingot" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -129,10 +126,7 @@
 		}
 		{
 			icon: {
-				components: {
-					"ftbquests:missing_item": "alexscaves:scarlet_neodymium_ingot"
-				}
-				id: "ftbquests:missing_item"
+				id: "alexscaves:scarlet_neodymium_ingot"
 			}
 			id: "2C00000000000007"
 			rewards: [{
@@ -142,7 +136,7 @@
 			}]
 			tasks: [{
 				id: "2C00000001000007"
-				item: { components: { "ftbquests:missing_item": "alexscaves:scarlet_neodymium_ingot" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "alexscaves:scarlet_neodymium_ingot" }
 				type: "item"
 			}]
 			x: 10.5d

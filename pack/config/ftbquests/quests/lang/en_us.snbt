@@ -572,11 +572,12 @@
 	quest.3C0000000000000C.title: "The Simple Reforging Table"
 	quest.3C0000000000000D.title: "The Reforging Table"
 	quest.3C0000000000000E.title: "The Augmenting Table"
-	quest.3C0000000000000F.title: "Gem Cases"
+	quest.3C0000000000000F.title: "The Gem Case"
 	quest.3C00000000000010.title: "The Enchantment Library"
 	quest.3C00000000000011.title: "The Library of Alexandria"
 	quest.3C00000000000012.title: "The Infusion Pedestal"
 	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
+	quest.3C00000000000014.title: "The Gem Case of House Fabergé"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
@@ -1958,4 +1959,8 @@
 	quest.7B00000000000297.title: "Cursium Axe"
 	quest.7B00000000000298.title: "Ignitium Axe"
 	quest.7B00000000000299.title: "The Ender"
+	task.2B0000000100001F.title: "Not So Fast"
+	task.4B00000001000001.title: "Placeholder"
+	task.5B00000001000001.title: "Placeholder"
+	task.7B0000000100001C.title: "one above all"
 }

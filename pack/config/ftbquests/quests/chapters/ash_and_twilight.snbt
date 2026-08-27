@@ -1321,7 +1321,10 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["1C0000000000004F", "1C00000000000056"]
+			dependencies: [
+				"1C0000000000004F"
+				"1C00000000000056"
+			]
 			icon: {
 				id: "primitiverefined:arcanetic_gearbox"
 			}
@@ -1340,7 +1343,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1C00000000000050", "1C00000000000056"]
+			dependencies: [
+				"1C00000000000050"
+				"1C00000000000056"
+			]
 			icon: {
 				id: "primitiverefined:arcanetic_gearbox_vertical"
 			}
