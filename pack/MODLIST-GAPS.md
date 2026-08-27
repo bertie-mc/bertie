@@ -1,16 +1,15 @@
 # Modlist gaps
 
-Every mod that at least one of the four big lists does not have. **92 of 579.**
+Every mod that at least one of the four big lists does not have. **85 of 579.**
 The four are the online doc (417), `docs/modlist.md` (402), the atlas (426) and the
 full test pack (481). None of them is the authority - each is missing things the others have.
 
 **7 rows have no known reason.** Those are the ones only berlord can settle.
 
-39 mods cut on 2026-08-27 are left out - they are settled. So are the 88 libraries that only ever appear in a pack.
+49 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
 
 | Mod | Missing from | Reason |
 |---|---|---|
-| `hole-filler-mod` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
 | `wings-of-fire` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
 | `bad-wither-no-cookie` | full-test |  |
 | `distanthorizons` | full-test | wishlist entry in the doc's WIP sections; never installed |
@@ -21,11 +20,8 @@ full test pack (481). None of them is the authority - each is missing things the
 | `i-dont-want-to-cheat` | full-test |  |
 | `magitech_mod` | full-test | added after the full test pack was last synced (it is in a newer pack) |
 | `mekanism-fission-recipe` | full-test | wishlist entry in the doc's WIP sections; never installed |
-| `mob-plaques` | full-test | lost the `tslatentitystatus OR neat OR mob-plaques` choice |
 | `mobtimizations` | full-test |  |
-| `neat` | full-test | lost the `tslatentitystatus OR neat OR mob-plaques` choice |
 | `nekos-enchanted-books` | full-test | ours - the third-party lists never covered our own mods |
-| `neoforge-carpet` | full-test | the doc marks it `//hard crash` |
 | `railways-untold` | full-test |  |
 | `true-ending` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `typewriter-daycounter` | full-test | ships as a datapack, not a mod jar |
@@ -45,7 +41,6 @@ full test pack (481). None of them is the authority - each is missing things the
 | `withered-hearts` | online doc, full-test | ours - the third-party lists never covered our own mods |
 | `2primogem-craft` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `allaybottle` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
-| `better-stats` | modlist.md, full-test | Fabric original dropped; the custom NeoForge build was scrapped 2026-06-14, still on the TODO |
 | `create-deep-dark` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `diamethysts` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `dragon-scale` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
@@ -63,14 +58,12 @@ full test pack (481). None of them is the authority - each is missing things the
 | `oxidized` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `quest-items` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `runes` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
-| `too-many-bricks` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `warden-tools` | modlist.md, full-test | asset donor - harvested for parts, never meant to ship |
 | `berlords_carving` | online doc, modlist.md, atlas | ours - the third-party lists never covered our own mods |
 | `fdshaderfix` | online doc, modlist.md, atlas | ours - the third-party lists never covered our own mods |
 | `frozenregfix` | online doc, modlist.md, atlas | ours - the third-party lists never covered our own mods |
 | `berlords-food-system` | online doc, modlist.md, full-test | ours - the third-party lists never covered our own mods |
 | `custom-experience-orbs` | online doc, modlist.md, full-test | atlas classification only; never on berlord's own list |
-| `embeddium` | online doc, modlist.md, full-test | superseded by the optitritium/sodium line |
 | `apotheosis` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apotheosis-x-irons-spellbooks-compat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-combat` | online doc, atlas, full-test | added after the online doc was last touched |

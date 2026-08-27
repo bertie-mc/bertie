@@ -6,13 +6,13 @@ Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 
 | | |
 |---|---|
-| **cut 2026-08-27** - out of the pack for good | 39 |
-| in the full test pack | 369 |
+| **cut 2026-08-27** - out of the pack for good | 49 |
+| in the full test pack | 368 |
 | in a pack, added after the full test pack | 10 |
-| libraries and dependencies (in a pack, on no curated list) | 88 |
+| libraries and dependencies (in a pack, on no curated list) | 85 |
 | our own mods, datapacks and ports | 31 |
-| asset donors (Deconstruct) - never shipped | 20 |
-| on a list, in no pack | 15 |
+| asset donors (Deconstruct) - never shipped | 19 |
+| on a list, in no pack | 10 |
 | wishlist (the doc's WIP sections) | 7 |
 
 ## Where this came from
@@ -86,12 +86,13 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `pastel-mod` - Pastel  _(in `s1 demo`)_
 - `usefulmagic`  _(**not installed** - no note anywhere says why)_
 
-## Technology (9)
+## Technology (10)
 
 - `anvilcraft`  _(in `s1 demo`)_
 - `cognition`  _(in `s1 demo`)_
 - `enderio` - Ender IO  _(in `s1 demo`)_
 - `enderio-endergy` - Ender IO - Endergy
+- `magitech_mod` - Magitech -Arcane Engineering-  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `oritech`  _(in `s1 demo`)_
 - `oritech-things` - Oritech Things
 - `powah` - Powah!  _(in `s1 demo`)_
@@ -187,13 +188,12 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `trailtales-delight` - Trail&Tales Delight
 - `twilight-delight` - Twilight's Flavor & Delight
 
-## GUI & information (41)
+## GUI & information (38)
 
 - `advanced-loot-info` - Advanced Loot Info  _(in `s1 demo`)_
 - `advancement-plaques` - Advancement Plaques
 - `appleskin`  _(in `s1 demo`)_
 - `better-advancements` - Better Advancements  _(in `s1 demo`)_
-- `better-stats`  _(**not installed** - Fabric original dropped; a custom NeoForge build was scrapped 2026-06-14 (still on the TODO))_
 - `betterf3`
 - `durability-tooltip` - Durability Tooltip
 - `emi`  _(in `s1 demo`)_
@@ -212,8 +212,6 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `jade` - Jade 🔍  _(in `s1 demo`)_
 - `jade-addons-forge` - Jade Addons (Neo/Forge)
 - `mindful-darkness` - Mindful Darkness
-- `mob-plaques`  _(**not installed** - one of `tslatentitystatus OR neat OR mob-plaques`; tslatentitystatus won)_
-- `neat`  _(**not installed** - one of `tslatentitystatus OR neat OR mob-plaques`; tslatentitystatus won)_
 - `notenoughrecipebook` - Not Enough Recipe Book [NERB]
 - `overflowing-bars` - Overflowing Bars
 - `pick-up-notifier` - Pick Up Notifier
@@ -268,7 +266,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `visual-workbench` - Visual Workbench
 - `wits` - WITS (What Is This Structure?)
 
-## Small stuff (42)
+## Small stuff (41)
 
 - `armor-statues` - Armor Statues
 - `bartering-station` - Bartering Station  _(in `s1 demo`)_
@@ -290,7 +288,6 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `exposure-expanded` - Exposure: Expanded
 - `exposure-polaroid` - Exposure: Polaroid
 - `hang-glider` - Hang Glider  _(in `s1 demo`)_
-- `hole-filler-mod` - Hole Filler Mod
 - `hooked`  _(in `s1 demo`)_
 - `item-collectors` - Item Collectors  _(in `s1 demo`)_
 - `kaleidoscope-doll` - Kaleidoscope Doll
@@ -337,13 +334,12 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `more-concrete` - More Concrete
 - `reconnectible-chains` - Reconnectible Chains
 
-## Tweaks (7)
+## Tweaks (6)
 
 - `attributefix`  _(in `s1 demo`)_
 - `bad-wither-no-cookie`  _(**not installed** - no note anywhere says why)_
 - `client-tweaks` - Client Tweaks
 - `i-dont-want-to-cheat`  _(**not installed** - no note anywhere says why)_
-- `neoforge-carpet`  _(**not installed** - the list marks it `//hard crash`)_
 - `too-fast` - Too Fast
 - `tweakerge`
 
@@ -444,30 +440,6 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `yungs-bridges` - YUNG's Bridges
 - `yungs-extras` - YUNG's Extras
 
-## Deconstruct (21)
-
-- `2primogem-craft`  _(asset donor - harvested for parts, never shipped)_
-- `allaybottle`  _(asset donor - harvested for parts, never shipped)_
-- `create-deep-dark`  _(asset donor - harvested for parts, never shipped)_
-- `diamethysts`  _(asset donor - harvested for parts, never shipped)_
-- `dragon-scale`  _(asset donor - harvested for parts, never shipped)_
-- `dragon-scale-loot`  _(asset donor - harvested for parts, never shipped)_
-- `dragonsteel-more-magic-series`  _(asset donor - harvested for parts, never shipped)_
-- `etheria`  _(asset donor - harvested for parts, never shipped)_
-- `evolved-mekanism`  _(asset donor - harvested for parts, never shipped)_
-- `genshincraft`  _(asset donor - harvested for parts, never shipped)_
-- `keepers-of-the-stones-2`  _(asset donor - harvested for parts, never shipped)_
-- `knight-quest`  _(asset donor - harvested for parts, never shipped)_
-- `lne-wizards`  _(asset donor - harvested for parts, never shipped)_
-- `magitech_mod` - Magitech -Arcane Engineering-  _(**added after the full test pack was last synced**; in `s1 demo`)_
-- `more-ores-more-gem`  _(asset donor - harvested for parts, never shipped)_
-- `oceanic-weaponry`  _(asset donor - harvested for parts, never shipped)_
-- `oxidized`  _(asset donor - harvested for parts, never shipped)_
-- `quest-items`  _(asset donor - harvested for parts, never shipped)_
-- `runes`  _(asset donor - harvested for parts, never shipped)_
-- `too-many-bricks`  _(asset donor - harvested for parts, never shipped)_
-- `warden-tools`  _(asset donor - harvested for parts, never shipped)_
-
 ## WIP - content (9)
 
 - `deep-waters` - Deep Waters  _(in `s1 demo`)_
@@ -517,10 +489,67 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `iron-bookshelves` - Iron Bookshelves  _(in `s1 demo`)_
 - `ziplines-rezipped` - Ziplines: Rezipped!
 
-## Cut 2026-08-27 (39)
+## Asset donors (19)
+
+- `2primogem-craft`  _(asset donor - harvested for parts, never shipped)_
+- `allaybottle`  _(asset donor - harvested for parts, never shipped)_
+- `create-deep-dark`  _(asset donor - harvested for parts, never shipped)_
+- `diamethysts`  _(asset donor - harvested for parts, never shipped)_
+- `dragon-scale`  _(asset donor - harvested for parts, never shipped)_
+- `dragon-scale-loot`  _(asset donor - harvested for parts, never shipped)_
+- `dragonsteel-more-magic-series`  _(asset donor - harvested for parts, never shipped)_
+- `etheria`  _(asset donor - harvested for parts, never shipped)_
+- `evolved-mekanism`  _(asset donor - harvested for parts, never shipped)_
+- `genshincraft`  _(asset donor - harvested for parts, never shipped)_
+- `keepers-of-the-stones-2`  _(asset donor - harvested for parts, never shipped)_
+- `knight-quest`  _(asset donor - harvested for parts, never shipped)_
+- `lne-wizards`  _(asset donor - harvested for parts, never shipped)_
+- `more-ores-more-gem`  _(asset donor - harvested for parts, never shipped)_
+- `oceanic-weaponry`  _(asset donor - harvested for parts, never shipped)_
+- `oxidized`  _(asset donor - harvested for parts, never shipped)_
+- `quest-items`  _(asset donor - harvested for parts, never shipped)_
+- `runes`  _(asset donor - harvested for parts, never shipped)_
+- `warden-tools`  _(asset donor - harvested for parts, never shipped)_
+
+## Our own mods (31)
+
+- `alexscavesworldgenfix`  _(ours - alexscavesworldgenfix 1.2.0; in `s1 demo`)_
+- `berlords-food-system`  _(ours - berlordsfoodsystem 2.0.0)_
+- `berlords_carving`  _(ours - berlordscarving 2.0.0; in `s1 demo`)_
+- `bertie-blackhole`  _(ours - bertieblackhole 0.4.0; in `s1 demo`)_
+- `bertie-emi`  _(ours - bertieemi 0.11.1; in `s1 demo`)_
+- `bertie-filters`  _(ours - bertiefilters 2.0.0; in `s1 demo`)_
+- `bertie-progression`  _(ours - bertieprogression 0.27.0; in `s1 demo`)_
+- `bertie-tiers`  _(ours - bertietiers 2.0.0)_
+- `bertie-weapons`  _(ours - bertieweapons 0.2.0; in `s1 demo`)_
+- `bertietoolcraft`  _(ours - bertietoolcraft 0.1.0; in `s1 demo`)_
+- `bush-tweaks`  _(ours - bushtweaks 1.0.1)_
+- `cataclysm-fortresses`  _(ours - cataclysmfortresses 1.0.0)_
+- `config-migrations`  _(ours - configmigrations 0.1.0)_
+- `cultural-delights-fix`  _(ours - culturaldelightsfix 1.0.0)_
+- `dread-queen`  _(ours - incubator)_
+- `ender-eyes`  _(ours - endereyes 1.0.0)_
+- `explode-to-mine`  _(ours - explodetomine 1.0.0)_
+- `explosive-enhancement`  _(ours - explosiveenhancement 1.0.0)_
+- `fart-bomb`  _(ours - fartbomb 1.3.0; in `s1 demo`)_
+- `fdshaderfix`  _(ours - fdshaderfix 1.0.0)_
+- `forge-ink`  _(ours - forgeink 1.1.0; in `s1 demo`)_
+- `frozenregfix`  _(ours - frozenregfix 2.4.0)_
+- `hephaestus-architecture`  _(ours - hephaestusarchitecture 0.1.0; in `s1 demo`)_
+- `nekos-enchanted-books`  _(ours - own NeoForge port (separate repo))_
+- `primitive-refined`  _(ours - primitiverefined 0.3.0; in `s1 demo`)_
+- `rustic-engineer-fix`  _(ours - rusticengineerfix 1.0.0)_
+- `screenshot-copy`  _(ours - screenshotcopy 1.0.0)_
+- `short-circuit-fix`  _(ours - shortcircuitfix 1.0.0)_
+- `voidfog`  _(ours - voidfog 0.11.0; in `s1 demo`)_
+- `withered-hearts`  _(ours - witheredhearts 1.0.0)_
+- `withering-waver`  _(ours - witheringwaver 0.8.0; in `s1 demo`)_
+
+## Cut 2026-08-27 (49)
 
 - `apotheosis-create-recipe`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `ashen-witch-broom`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `better-stats`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `cerbons-api` - CERBON's API  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `champions-unofficial`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `cooparticlesapi`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
@@ -529,6 +558,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `deep-underground`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `dimensional-dungeons`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `dynamictrees` - Dynamic Trees  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
+- `embeddium`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `enchanting-infuser` - Enchanting Infuser  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `extended-crafting` - Extended Crafting  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `forge-config-api-port` - Forge Config API Port  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
@@ -536,8 +566,10 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `golem-dungeons` - Golem Dungeons  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `guideme`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it; in `s1 demo`)_
 - `hexalia`  _(**cut** - 2026-08-27 dropped on berlord's order; **still pinned in a pack** despite the removal note: 2026-07-04 REMOVED from pack + list)_
+- `hole-filler-mod` - Hole Filler Mod  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `iceandfire_smithing` - Ice And Fire Smithing  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `jamlib`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
+- `kiwi` - Kiwi 🥝  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `konkrete`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `librarianlib`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it; in `s1 demo`)_
 - `life-of-spice-food-queue`  _(**cut** - 2026-08-27 dropped on berlord's order)_
@@ -545,7 +577,11 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `lithostitched`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `lychee`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `melody`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
+- `mob-plaques`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `modular-golems` - Modular Golems  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `moogs-structure-lib` - Moog's Structure Lib (moogs_structures)  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
+- `neat`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `neoforge-carpet`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `neoreplaymod`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `open-loader` - Open Loader  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `packagedexcrafting`  _(**cut** - 2026-08-27 dropped on berlord's order)_
@@ -555,11 +591,13 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `spice-of-life-valheim-reforged`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `tiny-mob-farm-remastered` - Tiny Mob Farm Remastered  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `tmrv`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `too-many-bricks`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `true-darkness-refabricated`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `ui-lib` - UI Lib  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `yacl` - YetAnotherConfigLib (YACL)  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `yaml-config` - YAML Config  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 
-## Libraries & dependencies (88)
+## Libraries & dependencies (85)
 
 - `access-denied-api` - Access Denied API
 - `accessories`  _(in `s1 demo`)_
@@ -599,14 +637,12 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `integrated-api` - Integrated API  _(in `s1 demo`)_
 - `irons-lib` - Iron's Lib  _(in `s1 demo`)_
 - `jupiter`  _(in `s1 demo`)_
-- `kiwi` - Kiwi 🥝
 - `kotlin-for-forge` - Kotlin for Forge  _(in `s1 demo`)_
 - `l2-complements` - L2 Complements  _(in `s1 demo`)_
 - `l2library` - L2 Library  _(in `s1 demo`)_
 - `lodestonelib` - Lodestone  _(in `s1 demo`)_
 - `mafglib`
 - `modonomicon`  _(in `s1 demo`)_
-- `modular-golems` - Modular Golems
 - `monolib`
 - `moonlight` - Moonlight Lib  _(in `s1 demo`)_
 - `necronomicon` - Necronomicon API
@@ -641,7 +677,6 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `terrablender`  _(in `s1 demo`)_
 - `txnilib`
 - `u-team-core` - U Team Core
-- `ui-lib` - UI Lib
 - `uranus`  _(in `s1 demo`)_
 - `valhelsia-core` - Valhelsia Core  _(in `s1 demo`)_
 - `worldweaver-neoforge` - WorldWeaver Neoforge  _(in `s1 demo`)_
@@ -665,44 +700,9 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `ftb-teams` - FTB Teams (NeoForge)  _(in `s1 demo`)_
 - `ftb-xmod-compat` - FTB XMod Compat  _(**added after the full test pack was last synced**; in `s1 demo`)_
 
-## Listed only in the atlas (5)
+## Listed only in the atlas (4)
 
 - `custom-experience-orbs`  _(**not installed** - atlas only - never on berlord's own list)_
-- `embeddium`  _(**not installed** - atlas only - superseded by the optitritium/sodium line)_
 - `ferrite-core` - FerriteCore  _(in `s1 demo`)_
 - `modernfix`  _(in `s1 demo`)_
 - `noisium`
-
-## Ours (31)
-
-- `alexscavesworldgenfix`  _(ours - alexscavesworldgenfix 1.2.0; in `s1 demo`)_
-- `berlords-food-system`  _(ours - berlordsfoodsystem 2.0.0)_
-- `berlords_carving`  _(ours - berlordscarving 2.0.0; in `s1 demo`)_
-- `bertie-blackhole`  _(ours - bertieblackhole 0.4.0; in `s1 demo`)_
-- `bertie-emi`  _(ours - bertieemi 0.11.1; in `s1 demo`)_
-- `bertie-filters`  _(ours - bertiefilters 2.0.0; in `s1 demo`)_
-- `bertie-progression`  _(ours - bertieprogression 0.27.0; in `s1 demo`)_
-- `bertie-tiers`  _(ours - bertietiers 2.0.0)_
-- `bertie-weapons`  _(ours - bertieweapons 0.2.0; in `s1 demo`)_
-- `bertietoolcraft`  _(ours - bertietoolcraft 0.1.0; in `s1 demo`)_
-- `bush-tweaks`  _(ours - bushtweaks 1.0.1)_
-- `cataclysm-fortresses`  _(ours - cataclysmfortresses 1.0.0)_
-- `config-migrations`  _(ours - configmigrations 0.1.0)_
-- `cultural-delights-fix`  _(ours - culturaldelightsfix 1.0.0)_
-- `dread-queen`  _(ours - incubator)_
-- `ender-eyes`  _(ours - endereyes 1.0.0)_
-- `explode-to-mine`  _(ours - explodetomine 1.0.0)_
-- `explosive-enhancement`  _(ours - explosiveenhancement 1.0.0)_
-- `fart-bomb`  _(ours - fartbomb 1.3.0; in `s1 demo`)_
-- `fdshaderfix`  _(ours - fdshaderfix 1.0.0)_
-- `forge-ink`  _(ours - forgeink 1.1.0; in `s1 demo`)_
-- `frozenregfix`  _(ours - frozenregfix 2.4.0)_
-- `hephaestus-architecture`  _(ours - hephaestusarchitecture 0.1.0; in `s1 demo`)_
-- `nekos-enchanted-books`  _(ours - own NeoForge port (separate repo))_
-- `primitive-refined`  _(ours - primitiverefined 0.3.0; in `s1 demo`)_
-- `rustic-engineer-fix`  _(ours - rusticengineerfix 1.0.0)_
-- `screenshot-copy`  _(ours - screenshotcopy 1.0.0)_
-- `short-circuit-fix`  _(ours - shortcircuitfix 1.0.0)_
-- `voidfog`  _(ours - voidfog 0.11.0; in `s1 demo`)_
-- `withered-hearts`  _(ours - witheredhearts 1.0.0)_
-- `withering-waver`  _(ours - witheringwaver 0.8.0; in `s1 demo`)_
