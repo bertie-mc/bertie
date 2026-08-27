@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "easy-magic-apotheosis-compat"
+project-id = 1531461
+file-id = 8552325
+filename = "easyapothcompat-1.0.0.jar"

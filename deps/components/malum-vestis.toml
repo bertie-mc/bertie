@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "malum-vestis"
+project-id = 836208
+file-id = 8376734
+filename = "vestis-1.1.0.jar"

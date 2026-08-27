@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "kEcg2xYc"
+version-id = "QAqYAkRv"
+filename = "vanity-neoforge-1.21.1-5.0.3.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "vanity"
+project-id = 548155
+file-id = 8103793
+filename = "vanity-neoforge-1.21.1-5.0.3.jar"

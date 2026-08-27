@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "87bcc575daa6d6fb89ddd30651f611cb280bddaa62c8fec671bbc78716f63798"
+inputs-hash = "c91aae10c9bc99c9b31d1cdba03df25eec8e7f393950d565c863a293ddc9f98b"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -396,6 +396,10 @@ mod = "modrinth:OZBR5JT5:fSQSKhdF"
 [components."easy-magic"]
 any = "modrinth:9hx3AbJM:MxbfrOEv"
 mod = "modrinth:9hx3AbJM:MxbfrOEv"
+
+[components."easy-magic-apotheosis-compat"]
+any = "curseforge:1531461:8552325"
+mod = "curseforge:1531461:8552325"
 
 [components."eccentric-tome"]
 any = "modrinth:ZtdULK5c:Zk30hv74"
@@ -884,6 +888,10 @@ mod = "modrinth:gCIbzByR:HPZSc9em"
 [components."malum"]
 any = "modrinth:jgzwYsAN:BIbVs1fo"
 mod = "modrinth:jgzwYsAN:BIbVs1fo"
+
+[components."malum-vestis"]
+any = "curseforge:836208:8376734"
+mod = "curseforge:836208:8376734"
 
 [components."mekanism-additions"]
 any = "modrinth:a6F3uASn:6mkdykZa"
@@ -1416,6 +1424,10 @@ mod = "modrinth:HsdNFinx:cttRekq9"
 any = "modrinth:6xwxDTgf:rUSWdBok"
 mod = "modrinth:6xwxDTgf:rUSWdBok"
 
+[components."vanity-core"]
+any = "modrinth:kEcg2xYc:QAqYAkRv"
+mod = "modrinth:kEcg2xYc:QAqYAkRv"
+
 [components."villages-and-pillages"]
 any = "modrinth:klXONLDA:3BGfKjMb"
 mod = "modrinth:klXONLDA:3BGfKjMb"
@@ -1628,6 +1640,27 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."curseforge:1531461:8552325"]
+name = "easy-magic-apotheosis-compat"
+component = "easy-magic-apotheosis-compat"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "easy-magic-apotheosis-compat-1531461"
+version = "8552325"
+filename = "easyapothcompat-1.0.0.jar"
+project-id = 1531461
+slug = "easy-magic-apotheosis-compat"
+file-id = 8552325
+provides = ["easyapothcompat"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:pL8MtgqY:HpSrSsv3", "mod-id" = "apothic_enchanting", "version-range" = "[1.6.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:9hx3AbJM:MxbfrOEv", "mod-id" = "easymagic", "version-range" = "[21.1.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "modrinth:9hx3AbJM:MxbfrOEv", "namespace" = "easymagic", "reason" = "ships data/easymagic/", "origin" = "archive-data" }]
+
 [artifacts."curseforge:1554698:8196186"]
 name = "alfinolib"
 provider = "curseforge"
@@ -1746,6 +1779,27 @@ file-id = 7878281
 provides = ["ftbteams"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:lhGA9TYQ:ZxYGwlk0", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:404465:8226923", "mod-id" = "ftblibrary", "version-range" = "[2101.1.30,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:836208:8376734"]
+name = "malum-vestis"
+component = "malum-vestis"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "malum-vestis-836208"
+version = "8376734"
+filename = "vestis-1.1.0.jar"
+project-id = 836208
+slug = "malum-vestis"
+file-id = 8376734
+provides = ["vestis"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:jgzwYsAN:BIbVs1fo", "mod-id" = "malum", "version-range" = "[1.8.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:kEcg2xYc:QAqYAkRv", "mod-id" = "vanity", "version-range" = "[1.0.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -8697,6 +8751,26 @@ bundled-provides = []
 required = [{ "artifact" = "modrinth:ccKDOlHs:NMCHU6DZ", "mod-id" = "owo", "version-range" = "[0.12.15.0+1.21,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = [{ "artifact" = "modrinth:ySnjMzLg:JMgVNypu", "mod-id" = "accessories_compat_layer", "version-range" = "(,0.1.9]", "side" = "both", "origin" = "archive" }]
+bundled = []
+integrations = []
+
+[artifacts."modrinth:kEcg2xYc:QAqYAkRv"]
+name = "vanity-core"
+component = "vanity-core"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "kEcg2xYc"
+version = "QAqYAkRv"
+filename = "vanity-neoforge-1.21.1-5.0.3.jar"
+project-id = "kEcg2xYc"
+version-id = "QAqYAkRv"
+provides = ["vanity"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
 bundled = []
 integrations = []
 

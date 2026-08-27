@@ -14,6 +14,7 @@ Kept so nothing quietly comes back. Not part of the modlist.
 | `cooparticlesapi` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `creativecore` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `cucumber` | 2026-08-27 dropped - orphaned library, nothing requires it |
+| `custom-experience-orbs` | 2026-08-27 dropped on berlord's order |
 | `deep-underground` | 2026-08-27 dropped on berlord's order |
 | `dimensional-dungeons` | 2026-08-27 dropped on berlord's order |
 | `dynamictrees` | 2026-08-27 dropped - orphaned library, nothing requires it |
@@ -27,6 +28,7 @@ Kept so nothing quietly comes back. Not part of the modlist.
 | `guideme` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `hexalia` | 2026-08-27 dropped on berlord's order |
 | `hole-filler-mod` | 2026-08-27 dropped on berlord's order |
+| `i-dont-want-to-cheat` | 2026-08-27 dropped on berlord's order |
 | `iceandfire_smithing` | 2026-08-27 dropped on berlord's order |
 | `jamlib` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `kiwi` | 2026-08-27 dropped - orphaned library, nothing requires it |
@@ -38,6 +40,7 @@ Kept so nothing quietly comes back. Not part of the modlist.
 | `lychee` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `melody` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `mob-plaques` | 2026-08-27 dropped on berlord's order |
+| `mobtimizations` | 2026-08-27 dropped on berlord's order |
 | `modular-golems` | 2026-08-27 dropped on berlord's order |
 | `moogs-structure-lib` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `neat` | 2026-08-27 dropped on berlord's order |

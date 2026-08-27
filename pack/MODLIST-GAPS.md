@@ -1,13 +1,13 @@
 # Modlist gaps
 
-Every mod that at least one of the five big lists does not have. **91 of 583.**
+Every mod that at least one of the five big lists does not have. **89 of 584.**
 The five are the online doc (417), `docs/modlist.md` (400), the atlas (426), the full test
 pack (481) and `deps` (461 - components plus the artifacts its locks pin). None of them is
 the authority - each is missing things the others have.
 
 **0 rows have no known reason.** Those are the ones only berlord can settle.
 
-54 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
+57 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
 
 | Mod | Missing from | Reason |
 |---|---|---|
@@ -22,15 +22,14 @@ the authority - each is missing things the others have.
 | `ftb-library` | online doc, atlas | added after the online doc was last touched |
 | `ftb-quests` | online doc, atlas | added after the online doc was last touched |
 | `ftb-teams` | online doc, atlas | added after the online doc was last touched |
+| `malum-vestis` | modlist.md, full-test | CurseForge only; never added |
 | `bad-wither-no-cookie` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `distanthorizons` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `dragonkind-evolved` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `drippy-loading-screen` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `edf-remastered` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `fancymenu` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
-| `i-dont-want-to-cheat` | full-test, deps manifest | no 1.21.1 release exists (checked against Modrinth 2026-08-28) |
 | `mekanism-fission-recipe` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
-| `mobtimizations` | full-test, deps manifest | no 1.21.1 release exists - Fabric only (checked against Modrinth 2026-08-28) |
 | `nekos-enchanted-books` | full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `railways-untold` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `true-ending` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
@@ -44,6 +43,7 @@ the authority - each is missing things the others have.
 | `apothic-combat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-enchanting` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-spawners` | online doc, atlas, full-test | added after the online doc was last touched |
+| `easy-magic-apotheosis-compat` | online doc, atlas, full-test | CurseForge only; listed 2026-08-05, never added to a pack |
 | `ftb-filter-system` | online doc, atlas, full-test | added after the online doc was last touched |
 | `ftb-xmod-compat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `ender-eyes` | online doc, full-test, deps manifest | ours - the third-party lists never covered our own mods |
@@ -62,7 +62,6 @@ the authority - each is missing things the others have.
 | `keepers-of-the-stones-2` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `knight-quest` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `lne-wizards` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
-| `malum-vestis` | modlist.md, full-test, deps manifest | CurseForge only; never added |
 | `more-ores-more-gem` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `oceanic-weaponry` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `oxidized` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
@@ -73,12 +72,11 @@ the authority - each is missing things the others have.
 | `particle-storm` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
 | `paxi` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
 | `sparkles` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
+| `vanity-core` | online doc, modlist.md, atlas, full-test | added 2026-08-28 - Malum: Vestis requires it |
 | `berlords_carving` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `fdshaderfix` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `frozenregfix` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `berlords-food-system` | online doc, modlist.md, full-test, deps manifest | ours - the third-party lists never covered our own mods |
-| `custom-experience-orbs` | online doc, modlist.md, full-test, deps manifest | atlas classification only; never on berlord's own list |
-| `easy-magic-apotheosis-compat` | online doc, atlas, full-test, deps manifest | CurseForge only; listed 2026-08-05, never added to a pack |
 | `alexscavesworldgenfix` | online doc, modlist.md, atlas, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `bertie-blackhole` | online doc, modlist.md, atlas, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `bertie-emi` | online doc, modlist.md, atlas, full-test, deps manifest | ours - the third-party lists never covered our own mods |

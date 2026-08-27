@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (479)
+## Mods (477)
 
 | Mod |
 |---|
@@ -107,7 +107,6 @@
 | `cultural-delights` |
 | `curios` |
 | `curse-of-pandora` |
-| `custom-experience-orbs` |
 | `cut-through` |
 | `dark-doppelganger` |
 | `databank` |
@@ -217,7 +216,6 @@
 | `hopo-better-ruined-portals` |
 | `hopo-better-underwater-ruins` |
 | `hostile-neural-networks` |
-| `i-dont-want-to-cheat` |
 | `ice-and-fire-spellbooks` |
 | `iceandfire-ce` |
 | `iceberg` |
@@ -289,7 +287,6 @@
 | `miners-delight` |
 | `mmmmmmmmmmmm` |
 | `mob-lassos` |
-| `mobtimizations` |
 | `modelfix` |
 | `modernfix` |
 | `modonomicon` |
@@ -445,6 +442,7 @@
 | `usefulmagic` |
 | `valhelsia-core` |
 | `vanillabackport` |
+| `vanity-core` |
 | `villages-and-pillages` |
 | `vision-enchantment` |
 | `visual-workbench` |

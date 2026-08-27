@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "0b39973f6868c296043935dc1fa3afbaf95481c02dee7868799cff68c67f655e"
+inputs-hash = "0b6f9d5787160204cbd91e3957fecf6034ad42f77f5461129ad81bce9560b3b9"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -396,6 +396,10 @@ mod = "curseforge:682567:5733955"
 [components."easy-magic"]
 any = "curseforge:456239:7151100"
 mod = "curseforge:456239:7151100"
+
+[components."easy-magic-apotheosis-compat"]
+any = "curseforge:1531461:8552325"
+mod = "curseforge:1531461:8552325"
 
 [components."eccentric-tome"]
 any = "curseforge:597522:6008768"
@@ -884,6 +888,10 @@ mod = "curseforge:1462863:8020558"
 [components."malum"]
 any = "curseforge:484064:7307339"
 mod = "curseforge:484064:7307339"
+
+[components."malum-vestis"]
+any = "curseforge:836208:8376734"
+mod = "curseforge:836208:8376734"
 
 [components."mekanism-additions"]
 any = "curseforge:345425:7904060"
@@ -1415,6 +1423,10 @@ mod = "curseforge:416935:5847440"
 [components."vanillabackport"]
 any = "curseforge:417430:8229724"
 mod = "curseforge:417430:8229724"
+
+[components."vanity-core"]
+any = "curseforge:548155:8103793"
+mod = "curseforge:548155:8103793"
 
 [components."villages-and-pillages"]
 any = "curseforge:915531:6266438"
@@ -4588,6 +4600,27 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."curseforge:1531461:8552325"]
+name = "easy-magic-apotheosis-compat"
+component = "easy-magic-apotheosis-compat"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "easy-magic-apotheosis-compat-1531461"
+version = "8552325"
+filename = "easyapothcompat-1.0.0.jar"
+project-id = 1531461
+slug = "easy-magic-apotheosis-compat"
+file-id = 8552325
+provides = ["easyapothcompat"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:1063926:8469450", "mod-id" = "apothic_enchanting", "version-range" = "[1.6.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:456239:7151100", "mod-id" = "easymagic", "version-range" = "[21.1.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "curseforge:456239:7151100", "namespace" = "easymagic", "reason" = "ships data/easymagic/", "origin" = "archive-data" }]
+
 [artifacts."curseforge:1534635:8062363"]
 name = "compactmachinespor"
 component = "compactmachinespor"
@@ -7063,6 +7096,27 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."curseforge:548155:8103793"]
+name = "vanity-core"
+component = "vanity-core"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "vanity-548155"
+version = "8103793"
+filename = "vanity-neoforge-1.21.1-5.0.3.jar"
+project-id = 548155
+slug = "vanity"
+file-id = 8103793
+provides = ["vanity"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."curseforge:548647:5733732"]
 name = "tiny-skeletons"
 component = "tiny-skeletons"
@@ -8486,6 +8540,27 @@ file-id = 7756575
 provides = ["betterarcheology"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:714059:6467772", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.3,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:836208:8376734"]
+name = "malum-vestis"
+component = "malum-vestis"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "malum-vestis-836208"
+version = "8376734"
+filename = "vestis-1.1.0.jar"
+project-id = 836208
+slug = "malum-vestis"
+file-id = 8376734
+provides = ["vestis"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:484064:7307339", "mod-id" = "malum", "version-range" = "[1.8.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:548155:8103793", "mod-id" = "vanity", "version-range" = "[1.0.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
