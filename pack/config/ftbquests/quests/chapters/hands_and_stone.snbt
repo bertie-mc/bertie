@@ -49,7 +49,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000001"]
@@ -71,12 +71,9 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"1B00000000000003"
-				"1B00000000000002"
-			]
+			dependencies: ["1B00000000000003", "1B00000000000002"]
 			icon: {
-				id: "minecraft:paper"
+				id: "minecraft:flint"
 			}
 			id: "1B00000000000004"
 			rewards: [{
@@ -85,18 +82,18 @@
 				xp: 25
 			}]
 			tasks: [{
-				count: 3L
+				count: 2L
 				id: "1B00000001000004"
-				item: { count: 1, id: "minecraft:paper" }
+				item: { count: 1, id: "minecraft:flint" }
 				type: "item"
 			}]
 			x: 3.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000004"]
 			icon: {
-				id: "slag:modular_item"
+				id: "magitech:assembly_workbench"
 			}
 			id: "1B00000000000005"
 			rewards: [{
@@ -106,14 +103,14 @@
 			}]
 			tasks: [{
 				id: "1B00000001000005"
-				item: { count: 1, id: "slag:modular_item" }
+				item: { count: 1, id: "magitech:assembly_workbench" }
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["1B00000000000002"]
+			dependencies: ["1B00000000000032"]
 			icon: {
 				id: "immersive_armors:wooden_helmet"
 			}
@@ -129,12 +126,15 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000005"]
 			icon: {
-				id: "minecraft:wooden_pickaxe"
+				components: {
+					"magitech:part_material_component": ["magitech:wood", "magitech:wood", "magitech:wood"]
+				}
+				id: "magitech:pickaxe"
 			}
 			id: "1B00000000000007"
 			rewards: [{
@@ -142,17 +142,37 @@
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "1B00000001000007"
-				item: { components: { "slag:material_type": "slag:wooden", "slag:part_type": "slag:pickaxe_head" }, count: 1, id: "slag:dynamic_part" }
-				match_components: "fuzzy"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1B00000001000007"
+					item: { components: { "magitech:material_component": "magitech:wood" }, count: 1, id: "magitech:spike_head" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					id: "1B00000001010007"
+					item: { components: { "magitech:material_component": "magitech:wood" }, count: 1, id: "magitech:tool_binding" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+				{
+					id: "1B00000001020007"
+					item: { components: { "magitech:material_component": "magitech:wood" }, count: 1, id: "magitech:heavy_handle" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+			]
 			x: 6.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000007"]
+			icon: {
+				components: {
+					"magitech:material_component": "magitech:bone"
+				}
+				id: "magitech:spike_head"
+			}
 			id: "1B00000000000008"
 			rewards: [{
 				id: "1B00000002000008"
@@ -161,11 +181,12 @@
 			}]
 			tasks: [{
 				id: "1B00000001000008"
-				item: { components: { "ftbfiltersystem:filter": "or(and(item(slag:dynamic_part)component(fuzzy:{\"slag:material_type\":\"slag:flint\",\"slag:part_type\":\"slag:pickaxe_head\"}))and(item(slag:dynamic_part)component(fuzzy:{\"slag:material_type\":\"slag:bone\",\"slag:part_type\":\"slag:pickaxe_head\"})))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Flint or Bone Pickaxe Head\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "magitech:material_component": "magitech:bone" }, count: 1, id: "magitech:spike_head" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000003"]
@@ -417,7 +438,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["1B00000000000008"]
+			dependencies: ["1B00000000000033"]
 			icon: {
 				id: "forbidden_arcanus:arcane_crystal_ore"
 			}
@@ -434,7 +455,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000015"]
@@ -454,7 +475,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000016"]
@@ -474,7 +495,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B0000000000000D"]
@@ -661,7 +682,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -1.2d
+			y: -4.2d
 		}
 		{
 			dependencies: ["1B00000000000019"]
@@ -760,7 +781,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000024"]
@@ -779,7 +800,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000025"]
@@ -798,7 +819,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B0000000000001F"]
@@ -818,7 +839,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -2.4d
+			y: -5.4d
 		}
 		{
 			dependencies: ["1B0000000000000A"]
@@ -837,7 +858,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B0000000000000A"]
@@ -857,7 +878,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B00000000000029"]
@@ -877,7 +898,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B00000000000028"]
@@ -896,7 +917,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B0000000000002B"]
@@ -916,7 +937,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B0000000000002C"]
@@ -939,7 +960,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -962,7 +983,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.75d
+			y: 0.75d
 		}
 		{
 			dependencies: ["1B00000000000001"]
@@ -1020,6 +1041,44 @@
 			}]
 			x: 15.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["1B00000000000002"]
+			icon: {
+				id: "berlordscarving:wood_big_slate"
+			}
+			id: "1B00000000000032"
+			rewards: [{
+				id: "1B00000002000032"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000032"
+				item: { count: 1, id: "berlordscarving:wood_big_slate" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000008"]
+			icon: {
+				id: "magitech:upgrade_workbench"
+			}
+			id: "1B00000000000033"
+			rewards: [{
+				id: "1B00000002000033"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000033"
+				item: { count: 1, id: "magitech:upgrade_workbench" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
 		}
 	]
 }

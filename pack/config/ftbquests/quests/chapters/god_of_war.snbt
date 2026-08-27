@@ -768,44 +768,6 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["7B00000000000001"]
-			icon: {
-				id: "minecraft:smithing_table"
-			}
-			id: "7B0000000000001D"
-			rewards: [{
-				id: "7B0000000200001D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100001D"
-				item: { count: 1, id: "minecraft:smithing_table" }
-				type: "item"
-			}]
-			x: -32.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["7B00000000000001"]
-			icon: {
-				id: "berlordscarving:carving_station"
-			}
-			id: "7B0000000000001E"
-			rewards: [{
-				id: "7B0000000200001E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100001E"
-				item: { count: 1, id: "berlordscarving:carving_station" }
-				type: "item"
-			}]
-			x: 28.0d
-			y: 2.5d
-		}
-		{
 			icon: {
 				id: "alexscaves:hazmat_chestplate"
 			}
@@ -931,19 +893,6 @@
 				}
 			]
 			x: -46.0d
-			y: 5.0d
-		}
-		{
-			icon: {
-				id: "armageddon_mod:arion_helmet_helmet"
-			}
-			id: "7B00000000000026"
-			tasks: [{
-				id: "7B00000001000026"
-				item: { count: 1, id: "armageddon_mod:arion_helmet_helmet" }
-				type: "item"
-			}]
-			x: -62.0d
 			y: 5.0d
 		}
 		{
@@ -1790,107 +1739,39 @@
 					item: { components: { "azurelib:az_id": [I; 1540066700, 2059748049, -1498648732, -1098029882 ], "irons_spellbooks:spell_container": { data: [{ id: "cataclysm_spellbooks:overcharged", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:excelsius_power_chestplate" }
 					type: "item"
 				}
-			]
-			x: -61.0d
-			y: 17.0d
-		}
-		{
-			icon: {
-				components: {
-					"azurelib:az_id": [I;
-						-330105551
-						1989692413
-						-1100620179
-						611469884
-					]
-					"irons_spellbooks:spell_container": {
-						data: [{
-							id: "cataclysm_spellbooks:overcharged"
-							index: 0
-							level: 1
-							locked: 1b
-						}]
-						maxSpells: 1
-						mustEquip: 0b
-						spellWheel: 1b
-					}
-				}
-				id: "cataclysm_spellbooks:excelsius_resist_chestplate"
-			}
-			id: "7B00000000000048"
-			tasks: [
 				{
-					id: "7B00000001000048"
+					id: "7B00000001020047"
 					item: { components: { "azurelib:az_id": [I; 1555511239, -798079703, -1318687500, 169596418 ], "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:excelsius_resist_visors" }
 					type: "item"
 				}
 				{
-					id: "7B00000001010048"
+					id: "7B00000001030047"
 					item: { components: { "azurelib:az_id": [I; 1069970357, -282964776, -1696819891, 243876941 ], "irons_spellbooks:spell_container": { data: [{ id: "cataclysm_spellbooks:overcharged", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:excelsius_resist_chestplate" }
 					type: "item"
 				}
-			]
-			x: -60.0d
-			y: 17.0d
-		}
-		{
-			icon: {
-				id: "cataclysm_spellbooks:excelsius_leggings"
-			}
-			id: "7B00000000000049"
-			tasks: [
 				{
-					id: "7B00000001000049"
-					item: { count: 1, id: "cataclysm_spellbooks:excelsius_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010049"
-					item: { count: 1, id: "cataclysm_spellbooks:excelsius_greaves" }
-					type: "item"
-				}
-			]
-			x: -61.0d
-			y: 13.0d
-		}
-		{
-			icon: {
-				components: {
-					"azurelib:az_id": [I;
-						-1322109692
-						1050824336
-						-1684306300
-						-1963353224
-					]
-					"irons_spellbooks:spell_container": {
-						data: [{
-							id: "cataclysm_spellbooks:overcharged"
-							index: 0
-							level: 1
-							locked: 1b
-						}]
-						maxSpells: 1
-						mustEquip: 0b
-						spellWheel: 1b
-					}
-				}
-				id: "cataclysm_spellbooks:excelsius_speed_chestplate"
-			}
-			id: "7B0000000000004A"
-			tasks: [
-				{
-					id: "7B0000000100004A"
+					id: "7B00000001040047"
 					item: { components: { "azurelib:az_id": [I; 474281039, -1445510424, -1316257542, -1187299469 ], "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:excelsius_speed_visors" }
 					type: "item"
 				}
 				{
-					id: "7B0000000101004A"
+					id: "7B00000001050047"
 					item: { components: { "azurelib:az_id": [I; 1450052471, -1757854536, -1671137720, -1481095145 ], "irons_spellbooks:spell_container": { data: [{ id: "cataclysm_spellbooks:overcharged", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:excelsius_speed_chestplate" }
 					type: "item"
 				}
+				{
+					id: "7B00000001060047"
+					item: { count: 1, id: "cataclysm_spellbooks:excelsius_leggings" }
+					type: "item"
+				}
+				{
+					id: "7B00000001070047"
+					item: { count: 1, id: "cataclysm_spellbooks:excelsius_greaves" }
+					type: "item"
+				}
 			]
-			x: -59.0d
-			y: 17.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -10471,7 +10352,7 @@
 				item: { count: 1, id: "mythsandlegends:molten_fist" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 13.0d
 			y: 20.0d
 		}
 		{
@@ -10484,7 +10365,7 @@
 				item: { count: 1, id: "mythsandlegends:umbras_whisper" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.0d
 			y: 20.0d
 		}
 		{
@@ -10497,7 +10378,7 @@
 				item: { count: 1, id: "pastel:bedrock_axe" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 18.0d
 			y: 20.0d
 		}
 		{
@@ -10510,7 +10391,7 @@
 				item: { count: 1, id: "pastel:bedrock_bow" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 19.0d
 			y: 20.0d
 		}
 		{
@@ -10523,7 +10404,7 @@
 				item: { count: 1, id: "pastel:bedrock_crossbow" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 20.0d
 			y: 20.0d
 		}
 		{
@@ -10536,7 +10417,7 @@
 				item: { count: 1, id: "pastel:bedrock_sword" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 21.0d
 			y: 20.0d
 		}
 		{
@@ -10549,7 +10430,7 @@
 				item: { count: 1, id: "pastel:draconic_twinsword" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 22.0d
 			y: 20.0d
 		}
 		{
@@ -10562,7 +10443,7 @@
 				item: { count: 1, id: "pastel:dragon_talon" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 18.0d
 			y: 21.0d
 		}
 		{
@@ -10575,7 +10456,7 @@
 				item: { count: 1, id: "pastel:dreamflayer" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 19.0d
 			y: 21.0d
 		}
 		{
@@ -10588,7 +10469,7 @@
 				item: { count: 1, id: "pastel:ferocious_glass_crest_bident" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 20.0d
 			y: 21.0d
 		}
 		{
@@ -10601,7 +10482,7 @@
 				item: { count: 1, id: "pastel:fractal_glass_crest_bident" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 21.0d
 			y: 21.0d
 		}
 		{
@@ -10614,7 +10495,7 @@
 				item: { count: 1, id: "pastel:glass_crest_crossbow" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 22.0d
 			y: 21.0d
 		}
 		{
@@ -10627,7 +10508,7 @@
 				item: { count: 1, id: "pastel:glass_crest_ultra_greatsword" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 18.0d
 			y: 22.0d
 		}
 		{
@@ -10640,7 +10521,7 @@
 				item: { count: 1, id: "pastel:glass_crest_workstaff" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 19.0d
 			y: 22.0d
 		}
 		{
@@ -10653,7 +10534,7 @@
 				item: { count: 1, id: "pastel:knotted_sword" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 20.0d
 			y: 22.0d
 		}
 		{
@@ -10666,7 +10547,7 @@
 				item: { count: 1, id: "pastel:malachite_bident" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 21.0d
 			y: 22.0d
 		}
 		{
@@ -10679,7 +10560,7 @@
 				item: { count: 1, id: "pastel:malachite_crossbow" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 22.0d
 			y: 22.0d
 		}
 		{
@@ -10692,7 +10573,7 @@
 				item: { count: 1, id: "pastel:malachite_ultra_greatsword" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 18.0d
 			y: 23.0d
 		}
 		{
@@ -10705,7 +10586,7 @@
 				item: { count: 1, id: "pastel:malachite_workstaff" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 19.0d
 			y: 23.0d
 		}
 		{
@@ -10718,7 +10599,7 @@
 				item: { count: 1, id: "pastel:multitool" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 20.0d
 			y: 23.0d
 		}
 		{
@@ -10731,7 +10612,7 @@
 				item: { count: 1, id: "pastel:nectar_lance" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 21.0d
 			y: 23.0d
 		}
 		{
@@ -10744,7 +10625,7 @@
 				item: { count: 1, id: "pastel:nightfalls_blade" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 22.0d
 			y: 23.0d
 		}
 		{
@@ -10757,7 +10638,7 @@
 				item: { count: 1, id: "pastel:razor_falchion" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 18.0d
 			y: 24.0d
 		}
 		{
@@ -10770,7 +10651,7 @@
 				item: { count: 1, id: "simplymore:ascended_idol" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 20.0d
 		}
 		{
@@ -10783,7 +10664,7 @@
 				item: { count: 1, id: "simplymore:black_pearl" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 20.0d
 		}
 		{
@@ -10796,7 +10677,7 @@
 				item: { count: 1, id: "simplymore:blade_of_the_grotesque" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 20.0d
 		}
 		{
@@ -10809,7 +10690,7 @@
 				item: { count: 1, id: "simplymore:boas_fang" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 20.0d
 		}
 		{
@@ -10822,7 +10703,7 @@
 				item: { count: 1, id: "simplymore:brassturn" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 20.0d
 		}
 		{
@@ -10835,7 +10716,7 @@
 				item: { count: 1, id: "simplymore:cindergorge" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 20.0d
 		}
 		{
@@ -10848,7 +10729,7 @@
 				item: { count: 1, id: "simplymore:culterex" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 20.0d
 		}
 		{
@@ -10861,7 +10742,7 @@
 				item: { count: 1, id: "simplymore:darksent" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 20.0d
 		}
 		{
@@ -10874,7 +10755,7 @@
 				item: { count: 1, id: "simplymore:deaths_eyrie" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 20.0d
 		}
 		{
@@ -10887,7 +10768,7 @@
 				item: { count: 1, id: "simplymore:earthshatter" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 21.0d
 		}
 		{
@@ -10900,7 +10781,7 @@
 				item: { count: 1, id: "simplymore:exedrill" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 21.0d
 		}
 		{
@@ -10913,7 +10794,7 @@
 				item: { count: 1, id: "simplymore:glimmerstep" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 21.0d
 		}
 		{
@@ -10926,7 +10807,7 @@
 				item: { count: 1, id: "simplymore:grandfrost" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 21.0d
 		}
 		{
@@ -10939,7 +10820,7 @@
 				item: { count: 1, id: "simplymore:great_slither" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 21.0d
 		}
 		{
@@ -10952,7 +10833,7 @@
 				item: { count: 1, id: "simplymore:holylight" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 21.0d
 		}
 		{
@@ -10965,7 +10846,7 @@
 				item: { count: 1, id: "simplymore:jester_penetrate" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 21.0d
 		}
 		{
@@ -10978,7 +10859,7 @@
 				item: { count: 1, id: "simplymore:lustrous_moxie" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 21.0d
 		}
 		{
@@ -10991,7 +10872,7 @@
 				item: { count: 1, id: "simplymore:matterbane" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 21.0d
 		}
 		{
@@ -11004,7 +10885,7 @@
 				item: { count: 1, id: "simplymore:mimicry_backhand_blade" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 22.0d
 		}
 		{
@@ -11017,7 +10898,7 @@
 				item: { count: 1, id: "simplymore:mimicry_chakram" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 22.0d
 		}
 		{
@@ -11030,7 +10911,7 @@
 				item: { count: 1, id: "simplymore:mimicry_claymore" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 22.0d
 		}
 		{
@@ -11043,7 +10924,7 @@
 				item: { count: 1, id: "simplymore:mimicry_cutlass" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 22.0d
 		}
 		{
@@ -11056,7 +10937,7 @@
 				item: { count: 1, id: "simplymore:mimicry_dagger" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 22.0d
 		}
 		{
@@ -11069,7 +10950,7 @@
 				item: { count: 1, id: "simplymore:mimicry_deer_horns" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 22.0d
 		}
 		{
@@ -11082,7 +10963,7 @@
 				item: { count: 1, id: "simplymore:mimicry_glaive" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 22.0d
 		}
 		{
@@ -11095,7 +10976,7 @@
 				item: { count: 1, id: "simplymore:mimicry_grandsword" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 22.0d
 		}
 		{
@@ -11108,7 +10989,7 @@
 				item: { count: 1, id: "simplymore:mimicry_great_katana" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 22.0d
 		}
 		{
@@ -11121,7 +11002,7 @@
 				item: { count: 1, id: "simplymore:mimicry_great_spear" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 23.0d
 		}
 		{
@@ -11134,7 +11015,7 @@
 				item: { count: 1, id: "simplymore:mimicry_greataxe" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 23.0d
 		}
 		{
@@ -11147,7 +11028,7 @@
 				item: { count: 1, id: "simplymore:mimicry_greathammer" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 23.0d
 		}
 		{
@@ -11160,7 +11041,7 @@
 				item: { count: 1, id: "simplymore:mimicry_halberd" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 23.0d
 		}
 		{
@@ -11173,7 +11054,7 @@
 				item: { count: 1, id: "simplymore:mimicry_katana" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 23.0d
 		}
 		{
@@ -11186,7 +11067,7 @@
 				item: { count: 1, id: "simplymore:mimicry_khopesh" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 23.0d
 		}
 		{
@@ -11199,7 +11080,7 @@
 				item: { count: 1, id: "simplymore:mimicry_lance" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 23.0d
 		}
 		{
@@ -11212,7 +11093,7 @@
 				item: { count: 1, id: "simplymore:mimicry_longsword" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 23.0d
 		}
 		{
@@ -11225,7 +11106,7 @@
 				item: { count: 1, id: "simplymore:mimicry_pernach" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 23.0d
 		}
 		{
@@ -11238,7 +11119,7 @@
 				item: { count: 1, id: "simplymore:mimicry_quarterstaff" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 24.0d
 		}
 		{
@@ -11251,7 +11132,7 @@
 				item: { count: 1, id: "simplymore:mimicry_rapier" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 24.0d
 		}
 		{
@@ -11264,7 +11145,7 @@
 				item: { count: 1, id: "simplymore:mimicry_sai" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 24.0d
 		}
 		{
@@ -11277,7 +11158,7 @@
 				item: { count: 1, id: "simplymore:mimicry_scythe" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 24.0d
 		}
 		{
@@ -11290,7 +11171,7 @@
 				item: { count: 1, id: "simplymore:mimicry_spear" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 24.0d
 		}
 		{
@@ -11303,7 +11184,7 @@
 				item: { count: 1, id: "simplymore:mimicry_twinblade" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 24.0d
 		}
 		{
@@ -11316,7 +11197,7 @@
 				item: { count: 1, id: "simplymore:mimicry_warglaive" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 24.0d
 		}
 		{
@@ -11329,7 +11210,7 @@
 				item: { count: 1, id: "simplymore:molten_flare" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 24.0d
 		}
 		{
@@ -11342,7 +11223,7 @@
 				item: { count: 1, id: "simplymore:myrmedge" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 24.0d
 		}
 		{
@@ -11355,7 +11236,7 @@
 				item: { count: 1, id: "simplymore:perforiscus" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 25.0d
 		}
 		{
@@ -11368,7 +11249,7 @@
 				item: { count: 1, id: "simplymore:revvengine" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 25.0d
 		}
 		{
@@ -11381,7 +11262,7 @@
 				item: { count: 1, id: "simplymore:runic_backhand_blade" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 25.0d
 		}
 		{
@@ -11394,7 +11275,7 @@
 				item: { count: 1, id: "simplymore:runic_dagger" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 25.0d
 		}
 		{
@@ -11407,7 +11288,7 @@
 				item: { count: 1, id: "simplymore:runic_deer_horns" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 25.0d
 		}
 		{
@@ -11420,7 +11301,7 @@
 				item: { count: 1, id: "simplymore:runic_grandsword" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 25.0d
 		}
 		{
@@ -11433,7 +11314,7 @@
 				item: { count: 1, id: "simplymore:runic_great_katana" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 25.0d
 		}
 		{
@@ -11446,7 +11327,7 @@
 				item: { count: 1, id: "simplymore:runic_great_spear" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 25.0d
 		}
 		{
@@ -11459,7 +11340,7 @@
 				item: { count: 1, id: "simplymore:runic_khopesh" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 25.0d
 		}
 		{
@@ -11472,7 +11353,7 @@
 				item: { count: 1, id: "simplymore:runic_lance" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 26.0d
 		}
 		{
@@ -11485,7 +11366,7 @@
 				item: { count: 1, id: "simplymore:runic_pernach" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 26.0d
 		}
 		{
@@ -11498,7 +11379,7 @@
 				item: { count: 1, id: "simplymore:runic_quarterstaff" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 26.0d
 		}
 		{
@@ -11511,7 +11392,7 @@
 				item: { count: 1, id: "simplymore:ruptured_idol" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 26.0d
 		}
 		{
@@ -11524,7 +11405,7 @@
 				item: { count: 1, id: "simplymore:ruyi_jingu_bang" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 26.0d
 		}
 		{
@@ -11537,7 +11418,7 @@
 				item: { count: 1, id: "simplymore:serpentine_valour" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 26.0d
 		}
 		{
@@ -11550,7 +11431,7 @@
 				item: { count: 1, id: "simplymore:smouldering_ruin" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 26.0d
 		}
 		{
@@ -11563,7 +11444,7 @@
 				item: { count: 1, id: "simplymore:soul_foreseer" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 33.0d
 			y: 26.0d
 		}
 		{
@@ -11576,7 +11457,7 @@
 				item: { count: 1, id: "simplymore:stasis" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 34.0d
 			y: 26.0d
 		}
 		{
@@ -11589,7 +11470,7 @@
 				item: { count: 1, id: "simplymore:tarnished_idol" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 26.0d
 			y: 27.0d
 		}
 		{
@@ -11602,7 +11483,7 @@
 				item: { count: 1, id: "simplymore:the_blood_harvester" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 27.0d
 			y: 27.0d
 		}
 		{
@@ -11615,7 +11496,7 @@
 				item: { count: 1, id: "simplymore:the_pan" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 28.0d
 			y: 27.0d
 		}
 		{
@@ -11628,7 +11509,7 @@
 				item: { count: 1, id: "simplymore:the_vessel_breach" }
 				type: "item"
 			}]
-			x: 23.0d
+			x: 29.0d
 			y: 27.0d
 		}
 		{
@@ -11641,7 +11522,7 @@
 				item: { count: 1, id: "simplymore:tidebreaker" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 30.0d
 			y: 27.0d
 		}
 		{
@@ -11654,7 +11535,7 @@
 				item: { count: 1, id: "simplymore:timekeeper" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 31.0d
 			y: 27.0d
 		}
 		{
@@ -11667,7 +11548,7 @@
 				item: { count: 1, id: "simplymore:vipers_call" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 27.0d
 		}
 		{
@@ -11680,7 +11561,7 @@
 				item: { count: 1, id: "simplyswords:arcanethyst" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 20.0d
 		}
 		{
@@ -11693,7 +11574,7 @@
 				item: { count: 1, id: "simplyswords:awakened_lichblade" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 20.0d
 		}
 		{
@@ -11706,7 +11587,7 @@
 				item: { count: 1, id: "simplyswords:bramblethorn" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 20.0d
 		}
 		{
@@ -11719,7 +11600,7 @@
 				item: { count: 1, id: "simplyswords:brimstone_claymore" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 20.0d
 		}
 		{
@@ -11732,7 +11613,7 @@
 				item: { count: 1, id: "simplyswords:caelestis" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 20.0d
 		}
 		{
@@ -11745,7 +11626,7 @@
 				item: { count: 1, id: "simplyswords:chompolotl" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 20.0d
 		}
 		{
@@ -11758,7 +11639,7 @@
 				item: { count: 1, id: "simplyswords:decaying_relic" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 20.0d
 		}
 		{
@@ -11771,7 +11652,7 @@
 				item: { count: 1, id: "simplyswords:dormant_relic" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 20.0d
 		}
 		{
@@ -11784,7 +11665,7 @@
 				item: { count: 1, id: "simplyswords:emberblade" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 21.0d
 		}
 		{
@@ -11797,7 +11678,7 @@
 				item: { count: 1, id: "simplyswords:emberlash" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 21.0d
 		}
 		{
@@ -11810,7 +11691,7 @@
 				item: { count: 1, id: "simplyswords:enigma" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 21.0d
 		}
 		{
@@ -11823,7 +11704,7 @@
 				item: { count: 1, id: "simplyswords:flamewind" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 21.0d
 		}
 		{
@@ -11836,7 +11717,7 @@
 				item: { count: 1, id: "simplyswords:frostfall" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 21.0d
 		}
 		{
@@ -11849,7 +11730,7 @@
 				item: { count: 1, id: "simplyswords:harbinger" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 21.0d
 		}
 		{
@@ -11862,7 +11743,7 @@
 				item: { count: 1, id: "simplyswords:hearthflame" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 21.0d
 		}
 		{
@@ -11875,7 +11756,7 @@
 				item: { count: 1, id: "simplyswords:hiveheart" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 21.0d
 		}
 		{
@@ -11888,7 +11769,7 @@
 				item: { count: 1, id: "simplyswords:icewhisper" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 22.0d
 		}
 		{
@@ -11901,7 +11782,7 @@
 				item: { count: 1, id: "simplyswords:livyatan" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 22.0d
 		}
 		{
@@ -11914,7 +11795,7 @@
 				item: { count: 1, id: "simplyswords:magiblade" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 22.0d
 		}
 		{
@@ -11927,7 +11808,7 @@
 				item: { count: 1, id: "simplyswords:magiscythe" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 22.0d
 		}
 		{
@@ -11940,7 +11821,7 @@
 				item: { count: 1, id: "simplyswords:magispear" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 22.0d
 		}
 		{
@@ -11953,7 +11834,7 @@
 				item: { count: 1, id: "simplyswords:mjolnir" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 22.0d
 		}
 		{
@@ -11966,7 +11847,7 @@
 				item: { count: 1, id: "simplyswords:molten_edge" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 22.0d
 		}
 		{
@@ -11979,7 +11860,7 @@
 				item: { count: 1, id: "simplyswords:ribboncleaver" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 22.0d
 		}
 		{
@@ -11992,7 +11873,7 @@
 				item: { count: 1, id: "simplyswords:righteous_relic" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 23.0d
 		}
 		{
@@ -12005,7 +11886,7 @@
 				item: { count: 1, id: "simplyswords:runic_chakram" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 23.0d
 		}
 		{
@@ -12018,7 +11899,7 @@
 				item: { count: 1, id: "simplyswords:runic_claymore" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 23.0d
 		}
 		{
@@ -12031,7 +11912,7 @@
 				item: { count: 1, id: "simplyswords:runic_cutlass" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 23.0d
 		}
 		{
@@ -12044,7 +11925,7 @@
 				item: { count: 1, id: "simplyswords:runic_glaive" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 23.0d
 		}
 		{
@@ -12057,7 +11938,7 @@
 				item: { count: 1, id: "simplyswords:runic_greataxe" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 23.0d
 		}
 		{
@@ -12070,7 +11951,7 @@
 				item: { count: 1, id: "simplyswords:runic_greathammer" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 23.0d
 		}
 		{
@@ -12083,7 +11964,7 @@
 				item: { count: 1, id: "simplyswords:runic_halberd" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 23.0d
 		}
 		{
@@ -12096,7 +11977,7 @@
 				item: { count: 1, id: "simplyswords:runic_katana" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 24.0d
 		}
 		{
@@ -12109,7 +11990,7 @@
 				item: { count: 1, id: "simplyswords:runic_longsword" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 24.0d
 		}
 		{
@@ -12122,7 +12003,7 @@
 				item: { count: 1, id: "simplyswords:runic_rapier" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 24.0d
 		}
 		{
@@ -12135,7 +12016,7 @@
 				item: { count: 1, id: "simplyswords:runic_sai" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 24.0d
 		}
 		{
@@ -12148,7 +12029,7 @@
 				item: { count: 1, id: "simplyswords:runic_scythe" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 24.0d
 		}
 		{
@@ -12161,7 +12042,7 @@
 				item: { count: 1, id: "simplyswords:runic_spear" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 24.0d
 		}
 		{
@@ -12174,7 +12055,7 @@
 				item: { count: 1, id: "simplyswords:runic_twinblade" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 24.0d
 		}
 		{
@@ -12187,7 +12068,7 @@
 				item: { count: 1, id: "simplyswords:runic_warglaive" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 24.0d
 		}
 		{
@@ -12200,7 +12081,7 @@
 				item: { count: 1, id: "simplyswords:shadowsting" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 25.0d
 		}
 		{
@@ -12213,7 +12094,7 @@
 				item: { count: 1, id: "simplyswords:slumbering_lichblade" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 25.0d
 		}
 		{
@@ -12226,7 +12107,7 @@
 				item: { count: 1, id: "simplyswords:soulkeeper" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 25.0d
 		}
 		{
@@ -12239,7 +12120,7 @@
 				item: { count: 1, id: "simplyswords:soulpyre" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 25.0d
 		}
 		{
@@ -12252,7 +12133,7 @@
 				item: { count: 1, id: "simplyswords:soulrender" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 25.0d
 		}
 		{
@@ -12265,7 +12146,7 @@
 				item: { count: 1, id: "simplyswords:soulstealer" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 25.0d
 		}
 		{
@@ -12278,7 +12159,7 @@
 				item: { count: 1, id: "simplyswords:stars_edge" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 25.0d
 		}
 		{
@@ -12291,7 +12172,7 @@
 				item: { count: 1, id: "simplyswords:stormbringer" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 25.0d
 		}
 		{
@@ -12304,7 +12185,7 @@
 				item: { count: 1, id: "simplyswords:storms_edge" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 26.0d
 		}
 		{
@@ -12317,7 +12198,7 @@
 				item: { count: 1, id: "simplyswords:sunfire" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 26.0d
 		}
 		{
@@ -12330,7 +12211,7 @@
 				item: { count: 1, id: "simplyswords:sword_on_a_stick" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 26.0d
 		}
 		{
@@ -12343,7 +12224,7 @@
 				item: { count: 1, id: "simplyswords:tainted_relic" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 26.0d
 		}
 		{
@@ -12356,7 +12237,7 @@
 				item: { count: 1, id: "simplyswords:tempest" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 26.0d
 		}
 		{
@@ -12369,7 +12250,7 @@
 				item: { count: 1, id: "simplyswords:thunderbrand" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 26.0d
 		}
 		{
@@ -12382,7 +12263,7 @@
 				item: { count: 1, id: "simplyswords:toxic_longsword" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 26.0d
 		}
 		{
@@ -12395,7 +12276,7 @@
 				item: { count: 1, id: "simplyswords:twisted_blade" }
 				type: "item"
 			}]
-			x: 37.0d
+			x: 45.0d
 			y: 26.0d
 		}
 		{
@@ -12408,7 +12289,7 @@
 				item: { count: 1, id: "simplyswords:waking_lichblade" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 38.0d
 			y: 27.0d
 		}
 		{
@@ -12421,7 +12302,7 @@
 				item: { count: 1, id: "simplyswords:watcher_claymore" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 39.0d
 			y: 27.0d
 		}
 		{
@@ -12434,7 +12315,7 @@
 				item: { count: 1, id: "simplyswords:watching_warglaive" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 40.0d
 			y: 27.0d
 		}
 		{
@@ -12447,7 +12328,7 @@
 				item: { count: 1, id: "simplyswords:waxweaver" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 41.0d
 			y: 27.0d
 		}
 		{
@@ -12460,7 +12341,7 @@
 				item: { count: 1, id: "simplyswords:whisperwind" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 42.0d
 			y: 27.0d
 		}
 		{
@@ -12473,7 +12354,7 @@
 				item: { count: 1, id: "simplyswords:wickpiercer" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 43.0d
 			y: 27.0d
 		}
 		{
@@ -12486,7 +12367,7 @@
 				item: { count: 1, id: "simplyswords:wraithfang" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 44.0d
 			y: 27.0d
 		}
 		{
@@ -12499,7 +12380,7 @@
 				item: { count: 1, id: "twilightforest:ender_bow" }
 				type: "item"
 			}]
-			x: 39.0d
+			x: 49.0d
 			y: 20.0d
 		}
 		{
@@ -12512,7 +12393,7 @@
 				item: { count: 1, id: "twilightforest:fiery_sword" }
 				type: "item"
 			}]
-			x: 40.0d
+			x: 50.0d
 			y: 20.0d
 		}
 		{
@@ -12525,7 +12406,7 @@
 				item: { count: 1, id: "twilightforest:giant_sword" }
 				type: "item"
 			}]
-			x: 41.0d
+			x: 51.0d
 			y: 20.0d
 		}
 		{
@@ -12538,7 +12419,7 @@
 				item: { count: 1, id: "twilightforest:glass_sword" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 52.0d
 			y: 20.0d
 		}
 		{
@@ -12551,7 +12432,7 @@
 				item: { count: 1, id: "twilightforest:ice_bow" }
 				type: "item"
 			}]
-			x: 39.0d
+			x: 49.0d
 			y: 21.0d
 		}
 		{
@@ -12564,7 +12445,7 @@
 				item: { count: 1, id: "twilightforest:ice_sword" }
 				type: "item"
 			}]
-			x: 40.0d
+			x: 50.0d
 			y: 21.0d
 		}
 		{
@@ -12577,7 +12458,7 @@
 				item: { count: 1, id: "twilightforest:ironwood_sword" }
 				type: "item"
 			}]
-			x: 41.0d
+			x: 51.0d
 			y: 21.0d
 		}
 		{
@@ -12590,7 +12471,7 @@
 				item: { count: 1, id: "twilightforest:knightmetal_sword" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 52.0d
 			y: 21.0d
 		}
 		{
@@ -12603,7 +12484,7 @@
 				item: { count: 1, id: "twilightforest:seeker_bow" }
 				type: "item"
 			}]
-			x: 39.0d
+			x: 49.0d
 			y: 22.0d
 		}
 		{
@@ -12616,7 +12497,7 @@
 				item: { count: 1, id: "twilightforest:steeleaf_sword" }
 				type: "item"
 			}]
-			x: 40.0d
+			x: 50.0d
 			y: 22.0d
 		}
 		{
@@ -12629,7 +12510,7 @@
 				item: { count: 1, id: "twilightforest:triple_bow" }
 				type: "item"
 			}]
-			x: 41.0d
+			x: 51.0d
 			y: 22.0d
 		}
 		{

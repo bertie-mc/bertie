@@ -1456,6 +1456,15 @@ write(f"{R}/create/zardius_crucible_mixing.json",
                        + [{"type": "neoforge:single", "amount": 1000, "fluid": "minecraft:lava"}]),
        "results": [{"id": "magitech:zardius_crucible"}]})
 
+# --- Magitech's two early benches come down to a 2x2, so the tool line opens before a crafting
+#     table exists: flint over logs assembles, andesite over logs upgrades. ---
+write("data/magitech/recipe/assembly_workbench.json",
+      shaped(["FF", "LL"], {"F": "minecraft:flint", "L": "#minecraft:logs"},
+             "magitech:assembly_workbench"))
+write("data/magitech/recipe/upgrade_workbench.json",
+      shaped(["AA", "LL"], {"A": "minecraft:andesite", "L": "#minecraft:logs"},
+             "magitech:upgrade_workbench"))
+
 # --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
 #     Change each shared residue type to produce the corresponding primary ingot or
 #     item, required_amount 1 (recipe chances untouched). Each residue_type maps 1:1 to its primary, so
