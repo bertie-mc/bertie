@@ -1,6 +1,6 @@
 # The bertie modlist
 
-**579 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
+**583 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
 This file is the definitive one - the others are snapshots and drift.
 Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 
@@ -12,7 +12,7 @@ Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 | libraries and dependencies (in a pack, on no curated list) | 85 |
 | our own mods, datapacks and ports | 31 |
 | asset donors (Deconstruct) - never shipped | 19 |
-| on a list, in no pack | 10 |
+| on a list, in no pack | 14 |
 | wishlist (the doc's WIP sections) | 7 |
 
 ## Where this came from
@@ -27,10 +27,11 @@ Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 | `berlords-workspace/packs/worldgen-pack` | 65 | worldgen subset |
 | `s1 demo` instance | 166 jars | what actually runs |
 | `bertie/mods` + incubator + NEBS | 31 | our own |
+| `bertie/deps/components` | 386 | the monorepo's own manifest - one toml per component |
 | `berlords-workspace/datapacks` | 2 | shipped as datapacks, not jars |
 | removal notes inside `docs/modlist.md` | 9 | mods that exist nowhere else - only in a dated "REMOVED" line |
 
-No source was complete on its own. The public monorepo held **no modlist at all** before this file.
+No source was complete on its own - `deps/components` included, which is missing base mods whose addons it carries (mekanism, jade, invmove, ftb-library, ftb-teams).
 
 ## Refined Storage (10)
 
@@ -92,7 +93,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `cognition`  _(in `s1 demo`)_
 - `enderio` - Ender IO  _(in `s1 demo`)_
 - `enderio-endergy` - Ender IO - Endergy
-- `magitech_mod` - Magitech -Arcane Engineering-  _(**added after the full test pack was last synced**; in `s1 demo`)_
+- `magitech` - Magitech -Arcane Engineering-  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `oritech`  _(in `s1 demo`)_
 - `oritech-things` - Oritech Things
 - `powah` - Powah!  _(in `s1 demo`)_
@@ -597,7 +598,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `yacl` - YetAnotherConfigLib (YACL)  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `yaml-config` - YAML Config  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 
-## Libraries & dependencies (85)
+## Libraries & dependencies (89)
 
 - `access-denied-api` - Access Denied API
 - `accessories`  _(in `s1 demo`)_
@@ -633,6 +634,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `glitchcore`
 - `hammer-lib` - HammerLib
 - `hazentouvelib`  _(in `s1 demo`)_
+- `hide-experimental-warning`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `iceberg`
 - `integrated-api` - Integrated API  _(in `s1 demo`)_
 - `irons-lib` - Iron's Lib  _(in `s1 demo`)_
@@ -650,7 +652,9 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `oh-the-trees-youll-grow` - Oh The Trees You'll Grow
 - `owo-lib` - oωo (owo-lib)  _(in `s1 demo`)_
 - `packagedauto`
+- `particle-storm`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `patchouli`  _(in `s1 demo`)_
+- `paxi`  _(**not installed** - only in `deps/components` - the datapack/resourcepack loader the deps profiles name under `[native-packs]`)_
 - `placebo`  _(in `s1 demo`)_
 - `platform`  _(in `s1 demo`)_
 - `playeranimator`  _(in `s1 demo`)_
@@ -670,6 +674,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `sodium`
 - `sophisticated-core` - Sophisticated Core  _(in `s1 demo`)_
 - `soul-fire-d` - Soul Fire'd  _(in `s1 demo`)_
+- `sparkles`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `stellar-view-mixin-renderer` - Stellar View Mixin Renderer
 - `superflat-world-no-slimes` - Superflat World No Slimes
 - `supermartijn642s-config-lib` - SuperMartijn642's Config Lib  _(in `s1 demo`)_
