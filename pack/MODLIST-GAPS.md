@@ -28,9 +28,9 @@ the authority - each is missing things the others have.
 | `drippy-loading-screen` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `edf-remastered` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `fancymenu` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
-| `i-dont-want-to-cheat` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `i-dont-want-to-cheat` | full-test, deps manifest | no 1.21.1 release exists (checked against Modrinth 2026-08-28) |
 | `mekanism-fission-recipe` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
-| `mobtimizations` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `mobtimizations` | full-test, deps manifest | no 1.21.1 release exists - Fabric only (checked against Modrinth 2026-08-28) |
 | `nekos-enchanted-books` | full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `railways-untold` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `true-ending` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
