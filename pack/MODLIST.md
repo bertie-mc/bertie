@@ -335,18 +335,20 @@ No source was complete on its own - `deps/components` included, which is missing
 - `more-concrete` - More Concrete
 - `reconnectible-chains` - Reconnectible Chains
 
-## Tweaks (6)
+## Tweaks (7)
 
 - `attributefix`  _(in `s1 demo`)_
 - `bad-wither-no-cookie`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `client-tweaks` - Client Tweaks
+- `hide-experimental-warning`  _(in `deps/components`; not in a pack yet)_
 - `i-dont-want-to-cheat`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `too-fast` - Too Fast
 - `tweakerge`
 
-## Utility (3)
+## Utility (4)
 
 - `commandkeys` - Command Keys
+- `paxi`  _(in `deps/components`; not in a pack yet)_
 - `spark`
 - `worldedit`  _(in `s1 demo`)_
 
@@ -390,6 +392,11 @@ No source was complete on its own - `deps/components` included, which is missing
 - `mobtimizations`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `notenoughcrashes` - Not Enough Crashes
 - `optitritium` - Tritium
+
+## Visual (2)
+
+- `particle-storm`  _(in `deps/components`; not in a pack yet)_
+- `sparkles`  _(in `deps/components`; not in a pack yet)_
 
 ## World generation (47)
 
@@ -598,7 +605,7 @@ No source was complete on its own - `deps/components` included, which is missing
 - `yacl` - YetAnotherConfigLib (YACL)  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `yaml-config` - YAML Config  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 
-## Libraries & dependencies (89)
+## Libraries & dependencies (85)
 
 - `access-denied-api` - Access Denied API
 - `accessories`  _(in `s1 demo`)_
@@ -634,7 +641,6 @@ No source was complete on its own - `deps/components` included, which is missing
 - `glitchcore`
 - `hammer-lib` - HammerLib
 - `hazentouvelib`  _(in `s1 demo`)_
-- `hide-experimental-warning`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `iceberg`
 - `integrated-api` - Integrated API  _(in `s1 demo`)_
 - `irons-lib` - Iron's Lib  _(in `s1 demo`)_
@@ -652,9 +658,7 @@ No source was complete on its own - `deps/components` included, which is missing
 - `oh-the-trees-youll-grow` - Oh The Trees You'll Grow
 - `owo-lib` - oωo (owo-lib)  _(in `s1 demo`)_
 - `packagedauto`
-- `particle-storm`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `patchouli`  _(in `s1 demo`)_
-- `paxi`  _(**not installed** - only in `deps/components` - the datapack/resourcepack loader the deps profiles name under `[native-packs]`)_
 - `placebo`  _(in `s1 demo`)_
 - `platform`  _(in `s1 demo`)_
 - `playeranimator`  _(in `s1 demo`)_
@@ -674,7 +678,6 @@ No source was complete on its own - `deps/components` included, which is missing
 - `sodium`
 - `sophisticated-core` - Sophisticated Core  _(in `s1 demo`)_
 - `soul-fire-d` - Soul Fire'd  _(in `s1 demo`)_
-- `sparkles`  _(**not installed** - only in `deps/components` - added straight to the manifest, never to a list or a pack)_
 - `stellar-view-mixin-renderer` - Stellar View Mixin Renderer
 - `superflat-world-no-slimes` - Superflat World No Slimes
 - `supermartijn642s-config-lib` - SuperMartijn642's Config Lib  _(in `s1 demo`)_

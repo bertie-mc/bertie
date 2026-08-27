@@ -80,10 +80,10 @@ things the others have.
 | `quest-items` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `runes` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
 | `warden-tools` | modlist.md, full-test, deps manifest | asset donor - harvested for parts, never meant to ship |
-| `hide-experimental-warning` | online doc, modlist.md, atlas, full-test | only in `deps/components` - added straight to the manifest, never to a list or a pack |
-| `particle-storm` | online doc, modlist.md, atlas, full-test | only in `deps/components` - added straight to the manifest, never to a list or a pack |
-| `paxi` | online doc, modlist.md, atlas, full-test | only in `deps/components` - the datapack/resourcepack loader the deps profiles name under `[native-packs]` |
-| `sparkles` | online doc, modlist.md, atlas, full-test | only in `deps/components` - added straight to the manifest, never to a list or a pack |
+| `hide-experimental-warning` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
+| `particle-storm` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
+| `paxi` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
+| `sparkles` | online doc, modlist.md, atlas, full-test | adopted onto the list 2026-08-27; it came from `deps/components` and is not in a pack yet |
 | `berlords_carving` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `fdshaderfix` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `frozenregfix` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
