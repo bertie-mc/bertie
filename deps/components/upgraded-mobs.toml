@@ -1,0 +1,13 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "iaFWBDP2"
+version-id = "pIl7Bbfy"
+filename = "upgraded-mobs-1.4.0.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "iaFWBDP2"
+version-id = "w8D6achd"
+filename = "upgraded-mobs-1.4.0.zip"

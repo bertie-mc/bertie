@@ -1,20 +1,25 @@
 # Modlist gaps
 
-Every mod that at least one of the five big lists does not have. **89 of 584.**
+Every mod that at least one of the five big lists does not have. **87 of 584.**
 The five are the online doc (417), `docs/modlist.md` (400), the atlas (426), the full test
 pack (481) and `deps` (461 - components plus the artifacts its locks pin). None of them is
 the authority - each is missing things the others have.
 
 **0 rows have no known reason.** Those are the ones only berlord can settle.
 
-57 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
+56 mods cut on 2026-08-27 are left out - they are settled. So are the 86 libraries that only ever appear in a pack.
 
 | Mod | Missing from | Reason |
 |---|---|---|
 | `wings-of-fire` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
+| `bad-wither-no-cookie` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `magitech` | full-test | added after the full test pack was last synced (it is in a newer pack) |
-| `dynamic-ore-veins` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
-| `mekanism-ponders` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `railways-untold` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `typewriter-daycounter` | full-test | ships as a datapack, not a mod jar |
+| `upgraded-mobs` | full-test | ships as a datapack, not a mod jar |
+| `usefulmagic` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `what-are-they-up-to` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `wingscontracts` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `ferrite-core` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `modernfix` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `noisium` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
@@ -23,7 +28,6 @@ the authority - each is missing things the others have.
 | `ftb-quests` | online doc, atlas | added after the online doc was last touched |
 | `ftb-teams` | online doc, atlas | added after the online doc was last touched |
 | `malum-vestis` | modlist.md, full-test | CurseForge only; never added |
-| `bad-wither-no-cookie` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `distanthorizons` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `dragonkind-evolved` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `drippy-loading-screen` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
@@ -31,13 +35,7 @@ the authority - each is missing things the others have.
 | `fancymenu` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `mekanism-fission-recipe` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `nekos-enchanted-books` | full-test, deps manifest | ours - the third-party lists never covered our own mods |
-| `railways-untold` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `true-ending` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
-| `typewriter-daycounter` | full-test, deps manifest | ships as a datapack, not a mod jar |
-| `upgraded-mobs` | full-test, deps manifest | ships as a datapack, not a mod jar |
-| `usefulmagic` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
-| `what-are-they-up-to` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
-| `wingscontracts` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `apotheosis` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apotheosis-x-irons-spellbooks-compat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-combat` | online doc, atlas, full-test | added after the online doc was last touched |

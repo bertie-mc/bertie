@@ -1,0 +1,13 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "j6YEKDZd"
+version-id = "aGfAC8xt"
+filename = "vr_typewriter_daycounter_v1.2.jar"
+
+[distributions.modrinth-datapack]
+provider = "modrinth"
+kind = "datapack"
+project-id = "j6YEKDZd"
+version-id = "bnFmuIDZ"
+filename = "vr_typewriter_daycounter_v1.2.zip"

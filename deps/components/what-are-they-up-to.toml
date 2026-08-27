@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "AtB5mHky"
+version-id = "uWr2aTW9"
+filename = "watut-neoforge-1.21.0-1.2.7.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "what-are-they-up-to"
+project-id = 945479
+file-id = 6418577
+filename = "watut-neoforge-1.21.0-1.2.7.jar"

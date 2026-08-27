@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "9f60fc633b56c59b3528b691a6545cd3f1b69a2cf77c3912e987b4df3356ffba"
+inputs-hash = "9ee203e95d6bf6ff33ba90c5b540c2398b37b5585100eee573284dfda319f384"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -41,6 +41,10 @@ mod = "modrinth:6iTJugQR:8xf6Wpxs"
 [components."ancient-forgemastery"]
 any = "modrinth:rciLBWn7:NuDwgHaO"
 mod = "modrinth:rciLBWn7:NuDwgHaO"
+
+[components."antarchy"]
+any = "modrinth:bnrJEOg5:3JGGQowP"
+mod = "modrinth:bnrJEOg5:3JGGQowP"
 
 [components."anti-knockback-enchantment"]
 any = "modrinth:jEBwcptt:hdAhP4ok"
@@ -105,6 +109,10 @@ mod = "modrinth:KeXkdmTD:Ao9u8ZHo"
 [components."avaritias-delight"]
 any = "modrinth:gtX73iTU:QtdkM9Oa"
 mod = "modrinth:gtX73iTU:QtdkM9Oa"
+
+[components."bad-wither-no-cookie"]
+any = "modrinth:lL2MtE37:FRuLJsBp"
+mod = "modrinth:lL2MtE37:FRuLJsBp"
 
 [components."bartering-station"]
 any = "modrinth:EOig9U0j:GOAgiH0l"
@@ -277,6 +285,10 @@ any = "modrinth:HVnmMxH1:yCCduG44"
 any = "modrinth:xv94TkTM:FaNppCJJ"
 mod = "modrinth:xv94TkTM:FaNppCJJ"
 
+[components."cooparticlesapi"]
+any = "modrinth:poJQVcIe:2fPzW7KM"
+mod = "modrinth:poJQVcIe:2fPzW7KM"
+
 [components."cosmetic-armor-reworked-forked"]
 any = "modrinth:6cpT8CUC:U6kExSSz"
 mod = "modrinth:6cpT8CUC:U6kExSSz"
@@ -388,6 +400,10 @@ mod = "modrinth:qPfNr476:aFluEQDH"
 [components."durability-tooltip"]
 any = "modrinth:smUP7V3r:mmYe9e5V"
 mod = "modrinth:smUP7V3r:mmYe9e5V"
+
+[components."dynamic-ore-veins"]
+any = "modrinth:7RCWO3Zu:OWZ6aYaZ"
+mod = "modrinth:7RCWO3Zu:OWZ6aYaZ"
 
 [components."easy-anvils"]
 any = "modrinth:OZBR5JT5:fSQSKhdF"
@@ -686,8 +702,8 @@ any = "modrinth:6bLUlbZn:ikdLP02G"
 mod = "modrinth:6bLUlbZn:ikdLP02G"
 
 [components."ice-and-fire-spellbooks"]
-any = "modrinth:aw5e7yPa:YFXb3T9X"
-mod = "modrinth:aw5e7yPa:YFXb3T9X"
+any = "curseforge:977855:8079745"
+mod = "curseforge:977855:8079745"
 
 [components."iceandfire-ce"]
 any = "modrinth:VpmCsizY:kdvvFM7V"
@@ -706,8 +722,8 @@ any = "modrinth:eE2Db4YU:B2YtQYCh"
 mod = "modrinth:eE2Db4YU:B2YtQYCh"
 
 [components."immersive-enchanting"]
-any = "modrinth:DfWQAvS4:dAYfyhxT"
-mod = "modrinth:DfWQAvS4:dAYfyhxT"
+any = "curseforge:1354719:8197612"
+mod = "curseforge:1354719:8197612"
 
 [components."immersive-gateways"]
 any = "modrinth:3hZmBMYA:Et29a8lw"
@@ -724,6 +740,10 @@ mod = "modrinth:KpICtuVx:TBI4EWjs"
 [components."incendium"]
 any = "modrinth:ZVzW5oNS:7mVvV9Th"
 mod = "modrinth:ZVzW5oNS:7mVvV9Th"
+
+[components."integrated-api"]
+any = "modrinth:V6fKbpBN:cKHoMnZX"
+mod = "modrinth:V6fKbpBN:cKHoMnZX"
 
 [components."interdimensional-wireless-transmitter"]
 any = "modrinth:nQR8XALE:CcRkmcRp"
@@ -912,6 +932,10 @@ mod = "modrinth:HUZkxNTQ:DsGsees0"
 [components."mekanism-generators"]
 any = "modrinth:OFVYKsAk:a6gl7srE"
 mod = "modrinth:OFVYKsAk:a6gl7srE"
+
+[components."mekanism-ponders"]
+any = "modrinth:yriKr10n:5RMWQ3C0"
+mod = "modrinth:yriKr10n:5RMWQ3C0"
 
 [components."mekanism-tools"]
 any = "modrinth:tqQpq1lt:v5zlSE9s"
@@ -1149,6 +1173,10 @@ mod = "modrinth:7fqQYwaC:mubOR5lN"
 any = "modrinth:qnQsVE2z:hMLnxKZx"
 mod = "modrinth:qnQsVE2z:hMLnxKZx"
 
+[components."railways-untold"]
+any = "modrinth:R7r9n6Wu:Vrf31Ytf"
+mod = "modrinth:R7r9n6Wu:Vrf31Ytf"
+
 [components."ranged-wireless-redstone"]
 any = "modrinth:7e5g0K9D:H66d5NDi"
 mod = "modrinth:7e5g0K9D:H66d5NDi"
@@ -1236,6 +1264,10 @@ mod = "modrinth:bK3Ubu9p:eREhvVpQ"
 [components."simplymore"]
 any = "modrinth:zhpyD8Y0:naW264bf"
 mod = "modrinth:zhpyD8Y0:naW264bf"
+
+[components."sizeable-foliage"]
+any = "modrinth:lgD8igI0:vkS4djbn"
+mod = "modrinth:lgD8igI0:vkS4djbn"
 
 [components."slag-n-embers"]
 any = "modrinth:56bnCCwq:CGRQn5ML"
@@ -1400,6 +1432,10 @@ mod = "curseforge:1267766:7273092"
 any = "modrinth:lkU3QIjf:AYZoDZat"
 mod = "modrinth:lkU3QIjf:AYZoDZat"
 
+[components."typewriter-daycounter"]
+any = "modrinth:j6YEKDZd:aGfAC8xt"
+mod = "modrinth:j6YEKDZd:aGfAC8xt"
+
 [components."universal-grid"]
 any = "modrinth:kpMfA312:fa0WBjoC"
 mod = "modrinth:kpMfA312:fa0WBjoC"
@@ -1408,6 +1444,10 @@ mod = "modrinth:kpMfA312:fa0WBjoC"
 any = "modrinth:WRaRZdTd:J9bHjnTh"
 mod = "modrinth:WRaRZdTd:J9bHjnTh"
 
+[components."upgraded-mobs"]
+any = "modrinth:iaFWBDP2:pIl7Bbfy"
+mod = "modrinth:iaFWBDP2:pIl7Bbfy"
+
 [components."urkaz-moon-tools"]
 any = "modrinth:1sxtqgoT:lea7gSoE"
 mod = "modrinth:1sxtqgoT:lea7gSoE"
@@ -1415,6 +1455,10 @@ mod = "modrinth:1sxtqgoT:lea7gSoE"
 [components."useful-railroads"]
 any = "modrinth:S0xj5NHG:5cRpZ5wv"
 mod = "modrinth:S0xj5NHG:5cRpZ5wv"
+
+[components."usefulmagic"]
+any = "modrinth:T5YpEgSg:tkuwx9YJ"
+mod = "modrinth:T5YpEgSg:tkuwx9YJ"
 
 [components."valhelsia-core"]
 any = "modrinth:HsdNFinx:cttRekq9"
@@ -1448,6 +1492,10 @@ mod = "modrinth:LOpKHB2A:CfDlUc6j"
 any = "modrinth:bZRPxKjL:OrCz6Ku6"
 mod = "modrinth:bZRPxKjL:OrCz6Ku6"
 
+[components."what-are-they-up-to"]
+any = "modrinth:AtB5mHky:uWr2aTW9"
+mod = "modrinth:AtB5mHky:uWr2aTW9"
+
 [components."whats-that-slot"]
 any = "modrinth:7b5VoITI:4ZgLLUNk"
 mod = "modrinth:7b5VoITI:4ZgLLUNk"
@@ -1463,6 +1511,10 @@ mod = "modrinth:ZsrrjDbP:erk04BGa"
 [components."wings-of-fire"]
 any = "modrinth:SZUNJJPJ:Dcq65PMy"
 mod = "modrinth:SZUNJJPJ:Dcq65PMy"
+
+[components."wingscontracts"]
+any = "modrinth:aeLVgBaJ:9QTFBGqW"
+mod = "modrinth:aeLVgBaJ:9QTFBGqW"
 
 [components."wither-spawn-animation"]
 any = "modrinth:Vr6UqBIT:i70oR8c3"
@@ -1640,6 +1692,27 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."curseforge:1354719:8197612"]
+name = "immersive-enchanting"
+component = "immersive-enchanting"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "immersive-enchanting-1354719"
+version = "8197612"
+filename = "immersiveenchanting-6.0.0-neoforge-1.21.1.jar"
+project-id = 1354719
+slug = "immersive-enchanting"
+file-id = 8197612
+provides = ["immersiveenchanting"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:1554698:8196186", "mod-id" = "alfinolib", "version-range" = "[1.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."curseforge:1531461:8552325"]
 name = "easy-magic-apotheosis-compat"
 component = "easy-magic-apotheosis-compat"
@@ -1743,6 +1816,27 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
+
+[artifacts."curseforge:977855:8079745"]
+name = "ice-and-fire-spellbooks"
+component = "ice-and-fire-spellbooks"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "ice-and-fire-spellbooks-977855"
+version = "8079745"
+filename = "ice_and_fire_spellbooks-2.3.3-1.21.1.jar"
+project-id = 977855
+slug = "ice-and-fire-spellbooks"
+file-id = 8079745
+provides = ["ice_and_fire_spellbooks"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:s4OWxYQQ:AvHIYbZi", "mod-id" = "irons_spellbooks", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:VpmCsizY:kdvvFM7V", "mod-id" = "iceandfire", "version-range" = "[2.0-beta.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."maven:com.simibubi.create:create-1.21.1:6.0.10-281"]
 name = "create"
@@ -2957,6 +3051,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:7RCWO3Zu:OWZ6aYaZ"]
+name = "dynamic-ore-veins"
+component = "dynamic-ore-veins"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "7RCWO3Zu"
+version = "OWZ6aYaZ"
+filename = "DOV-1.0.0+1.21.0-1.jar"
+project-id = "7RCWO3Zu"
+version-id = "OWZ6aYaZ"
+provides = ["dynamic_ore_veins"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:7Z7a9JyH:sGtURzAz"]
 name = "prometheus-api"
 provider = "modrinth"
@@ -3672,6 +3786,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:AtB5mHky:uWr2aTW9"]
+name = "what-are-they-up-to"
+component = "what-are-they-up-to"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "AtB5mHky"
+version = "uWr2aTW9"
+filename = "watut-neoforge-1.21.0-1.2.7.jar"
+project-id = "AtB5mHky"
+version-id = "uWr2aTW9"
+provides = ["watut"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:rLLJ1OZM:H2YXCYUY", "mod-id" = "coroutil", "version-range" = "[1.21.0-1.3.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:AyzF4cmc:vGs5rSd0"]
 name = "optitritium"
 component = "optitritium"
@@ -4003,26 +4137,6 @@ version-id = "VqDqcyCj"
 provides = ["combat_effects"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:P1Kv5EAO:4iO8Tbfj", "mod-id" = "necronomicon", "version-range" = ">=1.6.0", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:DfWQAvS4:dAYfyhxT"]
-name = "immersive-enchanting"
-component = "immersive-enchanting"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "DfWQAvS4"
-version = "dAYfyhxT"
-filename = "immersiveenchanting-6.0.0-neoforge-1.21.1.jar"
-project-id = "DfWQAvS4"
-version-id = "dAYfyhxT"
-provides = ["immersiveenchanting"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:1554698:8196186", "mod-id" = "alfinolib", "version-range" = "[1.1.7,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -5795,6 +5909,26 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "modrinth:e0bNACJD:SPj5bJoM", "namespace" = "sereneseasons", "reason" = "ships data/sereneseasons/", "origin" = "archive-data" }]
 
+[artifacts."modrinth:R7r9n6Wu:Vrf31Ytf"]
+name = "railways-untold"
+component = "railways-untold"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "R7r9n6Wu"
+version = "Vrf31Ytf"
+filename = "railwaysuntold-1.21.1-neoforge-1.2.1.jar"
+project-id = "R7r9n6Wu"
+version-id = "Vrf31Ytf"
+provides = ["railwaysuntold"]
+bundled-provides = []
+required = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "mod-id" = "create", "version-range" = "[0.5.1,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:R8uGDQpB:d8e9QsHt"]
 name = "worldweaver-neoforge"
 provider = "modrinth"
@@ -6045,6 +6179,26 @@ version-id = "yn1ptBI4"
 provides = ["stellaris_stellarview_compatibility"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:ItTQpuBn:3OXCvg6r", "mod-id" = "stellaris", "version-range" = "[1.4.20,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:gJ5LPGfO:HbYYFasr", "mod-id" = "stellarview_mixin_renderer", "version-range" = "[2.0.1,)", "side" = "client", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:T5YpEgSg:tkuwx9YJ"]
+name = "usefulmagic"
+component = "usefulmagic"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "T5YpEgSg"
+version = "tkuwx9YJ"
+filename = "UsefulMagic-NeoForge-1.21.1-3.1.1.jar"
+project-id = "T5YpEgSg"
+version-id = "tkuwx9YJ"
+provides = ["usefulmagic"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.9.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:poJQVcIe:2fPzW7KM", "mod-id" = "cooparticlesapi", "version-range" = "[2.5.5.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -6305,6 +6459,26 @@ provides = ["cabletiers"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:KDvYkUg3:lHHiI26k", "mod-id" = "refinedstorage", "version-range" = "2.0.0-beta.17", "side" = "both", "origin" = "archive" }]
 optional = [{ "missing" = "refinedtypes", "mod-id" = "refinedtypes", "version-range" = "[1.21.1-0.2.8,)", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:V6fKbpBN:cKHoMnZX"]
+name = "integrated-api"
+component = "integrated-api"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "V6fKbpBN"
+version = "cKHoMnZX"
+filename = "integrated_api-neoforge-1.21.1-1.8.0.jar"
+project-id = "V6fKbpBN"
+version-id = "cKHoMnZX"
+provides = ["integrated_api"]
+bundled-provides = []
+required = []
+optional = []
 incompatible = []
 bundled = []
 integrations = []
@@ -7064,6 +7238,26 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:NTi7d3Xc:6cLkgRgD", "namespace" = "biomeswevegone", "reason" = "ships data/biomeswevegone/", "origin" = "archive-data" }]
 
+[artifacts."modrinth:aeLVgBaJ:9QTFBGqW"]
+name = "wingscontracts"
+component = "wingscontracts"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "aeLVgBaJ"
+version = "9QTFBGqW"
+filename = "wingscontracts-neoforge-1.0.0.jar"
+project-id = "aeLVgBaJ"
+version-id = "9QTFBGqW"
+provides = ["wingscontracts"]
+bundled-provides = []
+required = [{ "artifact" = "maven:dev.architectury:architectury-neoforge:13.0.8", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.8.0]", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "mod-id" = "create", "version-range" = "6.+", "side" = "both", "origin" = "archive" }, { "missing" = "cc_tweaked", "mod-id" = "cc_tweaked", "version-range" = "[1.111.0]", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:ahQrpeXp:tKu2fTKc"]
 name = "despawn-tweaks"
 component = "despawn-tweaks"
@@ -7103,26 +7297,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:aw5e7yPa:YFXb3T9X"]
-name = "ice-and-fire-spellbooks"
-component = "ice-and-fire-spellbooks"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "aw5e7yPa"
-version = "YFXb3T9X"
-filename = "ice_and_fire_spellbooks-2.3.3-1.21.1.jar"
-project-id = "aw5e7yPa"
-version-id = "YFXb3T9X"
-provides = ["ice_and_fire_spellbooks"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:s4OWxYQQ:AvHIYbZi", "mod-id" = "irons_spellbooks", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:VpmCsizY:kdvvFM7V", "mod-id" = "iceandfire", "version-range" = "[2.0-beta.7,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:awWvXlb2:4BABsmeb"]
 name = "frights-delight"
@@ -7421,6 +7595,26 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
+
+[artifacts."modrinth:bnrJEOg5:3JGGQowP"]
+name = "antarchy"
+component = "antarchy"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "bnrJEOg5"
+version = "3JGGQowP"
+filename = "antarchy-1.1.1+1.21.1-neoforge.jar"
+project-id = "bnrJEOg5"
+version-id = "3JGGQowP"
+provides = ["antarchy"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:V6fKbpBN:cKHoMnZX", "mod-id" = "integrated_api", "version-range" = "[1.6.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:lgD8igI0:vkS4djbn", "mod-id" = "sizeable_foliage", "version-range" = "*", "side" = "both", "origin" = "archive" }]
+optional = [{ "missing" = "infinity", "mod-id" = "infinity", "version-range" = "(,2.7.2)", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "modrinth:V6fKbpBN:cKHoMnZX", "namespace" = "integrated_api", "reason" = "ships data/integrated_api/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:bpRHnWUb:bxgGyUjY"]
 name = "extra-mod-integrations"
@@ -8233,6 +8427,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:iaFWBDP2:pIl7Bbfy"]
+name = "upgraded-mobs"
+component = "upgraded-mobs"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "iaFWBDP2"
+version = "pIl7Bbfy"
+filename = "upgraded-mobs-1.4.0.jar"
+project-id = "iaFWBDP2"
+version-id = "pIl7Bbfy"
+provides = []
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:ing64hYj:9K6iqTp9"]
 name = "giant-dead-oak-tree"
 component = "giant-dead-oak-tree"
@@ -8246,6 +8460,26 @@ filename = "giant_dead_oak_tree-1.0.0-neoforge-1.21.1.jar"
 project-id = "ing64hYj"
 version-id = "9K6iqTp9"
 provides = ["giant_dead_oak_tree"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:j6YEKDZd:aGfAC8xt"]
+name = "typewriter-daycounter"
+component = "typewriter-daycounter"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "j6YEKDZd"
+version = "aGfAC8xt"
+filename = "vr_typewriter_daycounter_v1.2.jar"
+project-id = "j6YEKDZd"
+version-id = "aGfAC8xt"
+provides = []
 bundled-provides = []
 required = []
 optional = []
@@ -8591,6 +8825,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:lL2MtE37:FRuLJsBp"]
+name = "bad-wither-no-cookie"
+component = "bad-wither-no-cookie"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "lL2MtE37"
+version = "FRuLJsBp"
+filename = "bwncr-neoforge-1.21.1-3.20.4.jar"
+project-id = "lL2MtE37"
+version-id = "FRuLJsBp"
+provides = ["bwncr"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:lOOpEntO:TyNITLDY"]
 name = "attributefix"
 provider = "modrinth"
@@ -8605,6 +8859,26 @@ version-id = "TyNITLDY"
 provides = ["attributefix"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:uy4Cnpcm:1sdJl7J1", "mod-id" = "bookshelf", "version-range" = "[21.1, 21.2)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:aaRl8GiW:EE1FHDyD", "mod-id" = "prickle", "version-range" = "[21.1, 21.2)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:lgD8igI0:vkS4djbn"]
+name = "sizeable-foliage"
+component = "sizeable-foliage"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "lgD8igI0"
+version = "vkS4djbn"
+filename = "sizeable_foliage-neoforge-1.21.1-1.2.1.jar"
+project-id = "lgD8igI0"
+version-id = "vkS4djbn"
+provides = ["sizeable_foliage"]
+bundled-provides = []
+required = []
 optional = []
 incompatible = []
 bundled = []
@@ -9162,6 +9436,26 @@ provides = ["sg_economy"]
 bundled-provides = []
 required = []
 optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:poJQVcIe:2fPzW7KM"]
+name = "cooparticlesapi"
+component = "cooparticlesapi"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "poJQVcIe"
+version = "2fPzW7KM"
+filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"
+project-id = "poJQVcIe"
+version-id = "2fPzW7KM"
+provides = ["cooparticlesapi"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.7.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
 incompatible = []
 bundled = []
 integrations = []
@@ -10573,6 +10867,26 @@ provides = ["mr_alexs_mobsextramusic"]
 bundled-provides = []
 required = []
 optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:yriKr10n:5RMWQ3C0"]
+name = "mekanism-ponders"
+component = "mekanism-ponders"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "yriKr10n"
+version = "5RMWQ3C0"
+filename = "mekanism_ponders-1.0.3-1.21.1.jar"
+project-id = "yriKr10n"
+version-id = "5RMWQ3C0"
+provides = ["mekanism_ponders"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "mod-id" = "mekanism", "version-range" = "[10.7.9,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:56bnCCwq:CGRQn5ML", "mod-id" = "flywheel", "version-range" = "[1.0.0,2.0)", "side" = "client", "origin" = "archive" }]
+optional = [{ "artifact" = "modrinth:OFVYKsAk:a6gl7srE", "mod-id" = "mekanismgenerators", "version-range" = "[10.7.9,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "lL2MtE37"
+version-id = "FRuLJsBp"
+filename = "bwncr-neoforge-1.21.1-3.20.4.jar"

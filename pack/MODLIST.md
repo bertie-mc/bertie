@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (477)
+## Mods (478)
 
 | Mod |
 |---|
@@ -94,6 +94,7 @@
 | `compactmachinespor` |
 | `complementary-reimagined` |
 | `controlling` |
+| `cooparticlesapi` |
 | `corgilib` |
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |

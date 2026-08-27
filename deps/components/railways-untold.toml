@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "R7r9n6Wu"
+version-id = "Vrf31Ytf"
+filename = "railwaysuntold-1.21.1-neoforge-1.2.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "railways-untold"
+project-id = 1470432
+file-id = 8452775
+filename = "railwaysuntold-1.21.1-neoforge-1.2.1.jar"

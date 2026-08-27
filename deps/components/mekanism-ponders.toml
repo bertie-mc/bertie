@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "yriKr10n"
+version-id = "5RMWQ3C0"
+filename = "mekanism_ponders-1.0.3-1.21.1.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "mekanism-ponders"
+project-id = 1448575
+file-id = 8007326
+filename = "mekanism_ponders-1.0.3-1.21.1.jar"

@@ -11,7 +11,6 @@ Kept so nothing quietly comes back. Not part of the modlist.
 | `cerbons-api` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `champions-unofficial` | 2026-08-27 dropped on berlord's order |
 | `configmanager` | 2026-08-27 dropped on berlord's order |
-| `cooparticlesapi` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `creativecore` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `cucumber` | 2026-08-27 dropped - orphaned library, nothing requires it |
 | `custom-experience-orbs` | 2026-08-27 dropped on berlord's order |

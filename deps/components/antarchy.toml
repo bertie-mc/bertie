@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "bnrJEOg5"
+version-id = "3JGGQowP"
+filename = "antarchy-1.1.1+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "antarchy"
+project-id = 1504802
+file-id = 8613871
+filename = "antarchy-1.1.1+1.21.1-neoforge.jar"

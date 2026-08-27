@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "V6fKbpBN"
+version-id = "cKHoMnZX"
+filename = "integrated_api-neoforge-1.21.1-1.8.0.jar"

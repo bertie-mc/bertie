@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7RCWO3Zu"
+version-id = "OWZ6aYaZ"
+filename = "DOV-1.0.0+1.21.0-1.jar"
