@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "betterfortresses:fortress",
-      "required": false
-    }
+    "betterfortresses:fortress"
   ]
 }
