@@ -27,11 +27,11 @@ Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 | `berlords-workspace/packs/worldgen-pack` | 65 | worldgen subset |
 | `s1 demo` instance | 166 jars | what actually runs |
 | `bertie/mods` + incubator + NEBS | 31 | our own |
-| `bertie/deps/components` | 386 | the monorepo's own manifest - one toml per component |
+| `bertie/deps` | 461 | the monorepo's own manifest: 386 declared components plus 75 transitive artifacts pinned in the locks |
 | `berlords-workspace/datapacks` | 2 | shipped as datapacks, not jars |
 | removal notes inside `docs/modlist.md` | 9 | mods that exist nowhere else - only in a dated "REMOVED" line |
 
-No source was complete on its own - `deps/components` included, which is missing base mods whose addons it carries (mekanism, jade, invmove, ftb-library, ftb-teams).
+No source was complete on its own. `deps` comes closest once the locks are read alongside the components - 14 things sit in a pack with no trace in either.
 
 ## Refined Storage (10)
 

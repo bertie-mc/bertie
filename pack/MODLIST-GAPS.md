@@ -1,9 +1,9 @@
 # Modlist gaps
 
-Every mod that at least one of the five big lists does not have. **103 of 583.**
+Every mod that at least one of the five big lists does not have. **96 of 583.**
 The five are the online doc (417), `docs/modlist.md` (400), the atlas (426), the full test
-pack (481) and `deps/components` (386). None of them is the authority - each is missing
-things the others have.
+pack (481) and `deps` (461 - components plus the artifacts its locks pin). None of them is
+the authority - each is missing things the others have.
 
 **0 rows have no known reason.** Those are the ones only berlord can settle.
 
@@ -13,24 +13,20 @@ things the others have.
 |---|---|---|
 | `wings-of-fire` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
 | `magitech` | full-test | added after the full test pack was last synced (it is in a newer pack) |
-| `attributefix` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `cataclysm-x-yungs` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `configmanager` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `do-a-barrel-roll` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `dynamic-ore-veins` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `emixx` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `invmove` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `jade` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `mekanism` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `mekanism-ponders` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `reliquary-reincarnations` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `screenshot-to-clipboard` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `stellarview` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
-| `xaeros-world-map` | deps manifest | **a hole in `deps/components`** - the mod is in the pack but the manifest has no component for it |
+| `cataclysm-x-yungs` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `configmanager` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `dynamic-ore-veins` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `emixx` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `mekanism-ponders` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `reliquary-reincarnations` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
+| `screenshot-to-clipboard` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
 | `ferrite-core` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `modernfix` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `noisium` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
+| `apothic-attributes` | online doc, atlas | added after the online doc was last touched |
+| `ftb-library` | online doc, atlas | added after the online doc was last touched |
 | `ftb-quests` | online doc, atlas | added after the online doc was last touched |
+| `ftb-teams` | online doc, atlas | added after the online doc was last touched |
 | `bad-wither-no-cookie` | full-test, deps manifest | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `distanthorizons` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
 | `dragonkind-evolved` | full-test, deps manifest | wishlist entry in the doc's WIP sections; never installed |
@@ -52,11 +48,9 @@ things the others have.
 | `apotheosis-x-irons-spellbooks-compat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-combat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-enchanting` | online doc, atlas, full-test | added after the online doc was last touched |
+| `apothic-spawners` | online doc, atlas, full-test | added after the online doc was last touched |
 | `ftb-filter-system` | online doc, atlas, full-test | added after the online doc was last touched |
 | `ftb-xmod-compat` | online doc, atlas, full-test | added after the online doc was last touched |
-| `apothic-attributes` | online doc, atlas, deps manifest | added after the online doc was last touched |
-| `ftb-library` | online doc, atlas, deps manifest | added after the online doc was last touched |
-| `ftb-teams` | online doc, atlas, deps manifest | added after the online doc was last touched |
 | `ender-eyes` | online doc, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `explosive-enhancement` | online doc, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `withered-hearts` | online doc, full-test, deps manifest | ours - the third-party lists never covered our own mods |
@@ -89,7 +83,6 @@ things the others have.
 | `frozenregfix` | online doc, modlist.md, atlas, deps manifest | ours - the third-party lists never covered our own mods |
 | `berlords-food-system` | online doc, modlist.md, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `custom-experience-orbs` | online doc, modlist.md, full-test, deps manifest | atlas classification only; never on berlord's own list |
-| `apothic-spawners` | online doc, atlas, full-test, deps manifest | added after the online doc was last touched |
 | `easy-magic-apotheosis-compat` | online doc, atlas, full-test, deps manifest | CurseForge only; listed 2026-08-05, never added to a pack |
 | `alexscavesworldgenfix` | online doc, modlist.md, atlas, full-test, deps manifest | ours - the third-party lists never covered our own mods |
 | `bertie-blackhole` | online doc, modlist.md, atlas, full-test, deps manifest | ours - the third-party lists never covered our own mods |
