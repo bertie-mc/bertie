@@ -28,6 +28,7 @@ import io.github.bertie_mc.emi.integration.slavicdelight.SlavicDelightEmiModule;
 import io.github.bertie_mc.emi.integration.stellaris.StellarisEmiModule;
 import io.github.bertie_mc.emi.integration.terracurio.TerraCurioEmiModule;
 import io.github.bertie_mc.emi.integration.twilightdelight.TwilightDelightEmiModule;
+import io.github.bertie_mc.emi.integration.twilightforest.TwilightForestEmiModule;
 import io.github.bertie_mc.emi.integration.youkaisfeasts.YoukaisFeastsEmiModule;
 import net.neoforged.fml.ModList;
 import org.slf4j.Logger;
@@ -67,6 +68,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("cognition", () -> CognitionEmiModule.register(registry));
         success &= run("stellaris", () -> StellarisEmiModule.register(registry));
         success &= run("twilightdelight", () -> TwilightDelightEmiModule.register(registry));
+        success &= run("twilightforest", () -> TwilightForestEmiModule.register(registry));
         success &= run("slavic_delight", () -> SlavicDelightEmiModule.register(registry));
         success &= run("cuisinedelight", () -> CuisineDelightEmiModule.register(registry));
         success &= run("berries_and_cherries", () -> BerriesAndCherriesEmiModule.register(registry));

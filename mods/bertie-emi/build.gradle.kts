@@ -29,6 +29,7 @@ dependencies {
     compileOnly(deps.cognition)
     compileOnly(deps.stellaris)
     compileOnly(deps.twilightDelight)
+    compileOnly(deps.theTwilightForest)
     compileOnly(deps.slavicDelight)
     compileOnly(deps.cuisineDelight)
     compileOnly(deps.berriesAndCherries)
