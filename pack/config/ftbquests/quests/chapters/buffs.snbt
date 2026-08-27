@@ -116,11 +116,6 @@
 					item: { count: 1, id: "pastel:enchanter" }
 					type: "item"
 				}
-				{
-					id: "3C00000001010002"
-					item: { count: 1, id: "enderio:enchanter" }
-					type: "item"
-				}
 			]
 			x: 7.5d
 			y: 3.0d
@@ -194,8 +189,8 @@
 				item: { count: 1, id: "malum:soulbinding_brazier" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
+			x: -7.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -212,8 +207,8 @@
 				item: { count: 1, id: "malum:runic_workbench" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.0d
+			x: -7.5d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -351,13 +346,11 @@
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [
-				{
-					id: "3C0000000100000F"
-					item: { count: 1, id: "apotheosis:gem_case" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3C0000000100000F"
+				item: { count: 1, id: "apotheosis:gem_case" }
+				type: "item"
+			}]
 			x: 6.0d
 			y: 4.5d
 		}
@@ -446,6 +439,24 @@
 			tasks: [{
 				id: "3C00000001000014"
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "enderio:enchanter"
+			}
+			id: "3C00000000000015"
+			rewards: [{
+				id: "3C00000002000015"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000015"
+				item: { count: 1, id: "enderio:enchanter" }
 				type: "item"
 			}]
 			x: 7.5d

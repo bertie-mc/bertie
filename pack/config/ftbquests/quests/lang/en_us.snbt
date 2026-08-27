@@ -559,7 +559,7 @@
 	quest.3B00000000000055.quest_desc: ["Three alloys onto a crystal, a splash of Timeless Slurry, and a press."]
 	quest.3B00000000000055.title: "The Astute Assembly"
 	quest.3C00000000000001.title: "The Enchanting Table"
-	quest.3C00000000000002.title: "Enchanters"
+	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.title: "The Experience Obelisk"
 	quest.3C00000000000004.title: "The Experience Fountain"
 	quest.3C00000000000005.title: "The Precision Dispeller"
@@ -578,6 +578,7 @@
 	quest.3C00000000000012.title: "The Infusion Pedestal"
 	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
 	quest.3C00000000000014.title: "The Gem Case of House Fabergé"
+	quest.3C00000000000015.title: "The EnderIO Enchanter"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
