@@ -130,7 +130,7 @@ The tag must match `pack/vX.Y.Z` exactly and its version must equal the `version
 ## Versions and licensing
 
 - Minecraft 1.21.1
-- NeoForge 21.1.233
+- NeoForge 21.1.235
 - Java 21
 
 The pack declarations, configs, and quest data are dedicated to the public domain under

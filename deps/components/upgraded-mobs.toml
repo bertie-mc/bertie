@@ -1,10 +1,5 @@
-[distributions.modrinth-mod]
-provider = "modrinth"
-kind = "mod"
-project-id = "iaFWBDP2"
-version-id = "pIl7Bbfy"
-filename = "upgraded-mobs-1.4.0.jar"
-
+# The mod wrapper declares Forge's lowcodefml [37,), which NeoForge's 4.x
+# loader cannot satisfy. Use the native datapack through Paxi instead.
 [distributions.modrinth-datapack]
 provider = "modrinth"
 kind = "datapack"

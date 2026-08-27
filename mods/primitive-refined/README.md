@@ -79,7 +79,7 @@ trying to inspect server-only network or inventory data.
 ## Building and testing
 
 The project uses Java 21, Gradle 8.14.4 from the shared Nix environment, NeoForge
-21.1.233, ModDevGradle 2.0.134, Minecraft 1.21.1, Create 6.0.10 and Refined Storage 2.0.9.
+21.1.235, ModDevGradle 2.0.134, Minecraft 1.21.1, Create 6.0.10 and Refined Storage 2.0.9.
 There is intentionally no Gradle wrapper.
 
 From the monorepo root inside `nix develop`:

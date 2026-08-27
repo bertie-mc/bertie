@@ -121,7 +121,7 @@ class ResourceDataTest {
         try (var files = Files.list(overrides)) {
             recipes = files.filter(path -> path.toString().endsWith(".json")).toList();
         }
-        assertEquals(144, recipes.size());
+        assertEquals(176, recipes.size());
         for (Path recipe : recipes) {
             JsonObject json = JsonParser.parseString(Files.readString(recipe)).getAsJsonObject();
             var conditions = json.getAsJsonArray("neoforge:conditions");

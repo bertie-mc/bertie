@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "65c9cfcf0b47d1e11277dcd23fa5263b8f72276b323a14fa90784a2e79abdecd"
+inputs-hash = "5a94c3102290bb3cc28fce81d965ebf09d72400ab2412f997150b8b6277cfa43"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1434,7 +1434,6 @@ mod = "curseforge:964817:7130272"
 
 [components."upgraded-mobs"]
 any = "modrinth:iaFWBDP2:w8D6achd"
-mod = "modrinth:iaFWBDP2:pIl7Bbfy"
 
 [components."urkaz-moon-tools"]
 any = "curseforge:362825:7951944"
@@ -1443,10 +1442,6 @@ mod = "curseforge:362825:7951944"
 [components."useful-railroads"]
 any = "curseforge:306475:6556521"
 mod = "curseforge:306475:6556521"
-
-[components."usefulmagic"]
-any = "modrinth:T5YpEgSg:tkuwx9YJ"
-mod = "modrinth:T5YpEgSg:tkuwx9YJ"
 
 [components."valhelsia-core"]
 any = "curseforge:416935:5847440"
@@ -1495,10 +1490,6 @@ mod = "curseforge:953637:7142896"
 [components."wings-of-fire"]
 any = "curseforge:1419633:7413992"
 mod = "curseforge:1419633:7413992"
-
-[components."wingscontracts"]
-any = "modrinth:aeLVgBaJ:9QTFBGqW"
-mod = "modrinth:aeLVgBaJ:9QTFBGqW"
 
 [components."wither-spawn-animation"]
 any = "curseforge:1084564:7638136"
@@ -10600,26 +10591,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:T5YpEgSg:tkuwx9YJ"]
-name = "usefulmagic"
-component = "usefulmagic"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "T5YpEgSg"
-version = "tkuwx9YJ"
-filename = "UsefulMagic-NeoForge-1.21.1-3.1.1.jar"
-project-id = "T5YpEgSg"
-version-id = "tkuwx9YJ"
-provides = ["usefulmagic"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:351264:7471280", "mod-id" = "kotlinforforge", "version-range" = "[5.9.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:poJQVcIe:2fPzW7KM", "mod-id" = "cooparticlesapi", "version-range" = "[2.5.5.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:Ua7DFN59:ZB22DE9q"]
 name = "yungs-api"
 provider = "modrinth"
@@ -10749,26 +10720,6 @@ provides = ["prickle"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:aeLVgBaJ:9QTFBGqW"]
-name = "wingscontracts"
-component = "wingscontracts"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "aeLVgBaJ"
-version = "9QTFBGqW"
-filename = "wingscontracts-neoforge-1.0.0.jar"
-project-id = "aeLVgBaJ"
-version-id = "9QTFBGqW"
-provides = ["wingscontracts"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:351264:7471280", "mod-id" = "kotlinforforge", "version-range" = "[5.8.0]", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "curseforge:328085:7963363", "mod-id" = "create", "version-range" = "6.+", "side" = "both", "origin" = "archive" }, { "missing" = "cc_tweaked", "mod-id" = "cc_tweaked", "version-range" = "[1.111.0]", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -11043,26 +10994,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:iaFWBDP2:pIl7Bbfy"]
-name = "upgraded-mobs"
-component = "upgraded-mobs"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "iaFWBDP2"
-version = "pIl7Bbfy"
-filename = "upgraded-mobs-1.4.0.jar"
-project-id = "iaFWBDP2"
-version-id = "pIl7Bbfy"
-provides = []
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:iaFWBDP2:w8D6achd"]
 name = "upgraded-mobs"
 component = "upgraded-mobs"
@@ -11311,25 +11242,6 @@ provides = ["sg_economy"]
 bundled-provides = []
 required = []
 optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:poJQVcIe:2fPzW7KM"]
-name = "cooparticlesapi"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "poJQVcIe"
-version = "2fPzW7KM"
-filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"
-project-id = "poJQVcIe"
-version-id = "2fPzW7KM"
-provides = ["cooparticlesapi"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:351264:7471280", "mod-id" = "kotlinforforge", "version-range" = "[5.7.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
 incompatible = []
 bundled = []
 integrations = []

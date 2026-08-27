@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (478)
+## Mods (475)
 
 | Mod |
 |---|
@@ -94,7 +94,6 @@
 | `compactmachinespor` |
 | `complementary-reimagined` |
 | `controlling` |
-| `cooparticlesapi` |
 | `corgilib` |
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |
@@ -440,7 +439,6 @@
 | `uranus` |
 | `urkaz-moon-tools` |
 | `useful-railroads` |
-| `usefulmagic` |
 | `valhelsia-core` |
 | `vanillabackport` |
 | `vanity-core` |
@@ -454,7 +452,6 @@
 | `when-dungeons-arise` |
 | `when-dungeons-arise-seven-seas` |
 | `wings-of-fire` |
-| `wingscontracts` |
 | `wither-spawn-animation` |
 | `withering-heights` |
 | `wits` |

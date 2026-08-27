@@ -968,6 +968,7 @@ write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_
 })
 write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_3.json", {
     "essences": {"aureal": 1000, "blood": 9000, "souls": 50},
+    "forge_tier": 2,
     "inputs": [
         {"amount": 3, "ingredient": {"item": "forbidden_arcanus:arcane_crystal"}},
         {"amount": 3, "ingredient": {"item": "forbidden_arcanus:deorum_ingot"}},

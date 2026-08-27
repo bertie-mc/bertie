@@ -4,6 +4,7 @@
     "blood": 9000,
     "souls": 50
   },
+  "forge_tier": 2,
   "inputs": [
     {
       "amount": 3,
