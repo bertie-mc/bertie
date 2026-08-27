@@ -1,6 +1,6 @@
 # The bertie modlist
 
-**571 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
+**579 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
 This file is the definitive one - the others are snapshots and drift.
 
 | | |
@@ -12,7 +12,7 @@ This file is the definitive one - the others are snapshots and drift.
 | asset donors (Deconstruct) - never shipped | 20 |
 | on a list, in no pack | 17 |
 | wishlist (the doc's WIP sections) | 8 |
-| dropped, with a dated note | 2 |
+| dropped, with a dated note | 10 |
 
 ## Where this came from
 
@@ -27,6 +27,7 @@ This file is the definitive one - the others are snapshots and drift.
 | `s1 demo` instance | 166 jars | what actually runs |
 | `bertie/mods` + incubator + NEBS | 31 | our own |
 | `berlords-workspace/datapacks` | 2 | shipped as datapacks, not jars |
+| removal notes inside `docs/modlist.md` | 9 | mods that exist nowhere else - only in a dated "REMOVED" line |
 
 No source was complete on its own. The public monorepo held **no modlist at all** before this file.
 
@@ -527,7 +528,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `iron-bookshelves` - Iron Bookshelves  _(in `s1 demo`)_
 - `ziplines-rezipped` - Ziplines: Rezipped!
 
-## Libraries & dependencies (107)
+## Libraries & dependencies (106)
 
 - `access-denied-api` - Access Denied API
 - `accessories`  _(in `s1 demo`)_
@@ -570,7 +571,6 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `guideme`  _(in `s1 demo`)_
 - `hammer-lib` - HammerLib
 - `hazentouvelib`  _(in `s1 demo`)_
-- `hexalia`
 - `iceberg`
 - `integrated-api` - Integrated API  _(in `s1 demo`)_
 - `irons-lib` - Iron's Lib  _(in `s1 demo`)_
@@ -693,3 +693,15 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `voidfog`  _(ours - voidfog 0.11.0; in `s1 demo`)_
 - `withered-hearts`  _(ours - witheredhearts 1.0.0)_
 - `withering-waver`  _(ours - witheringwaver 0.8.0; in `s1 demo`)_
+
+## Removed - recorded only in a removal note (9)
+
+- `apotheosis-create-recipe`  _(**dropped** - 2026-08-06 REMOVED as a recipe-only dependency)_
+- `ashen-witch-broom`  _(**dropped** - 2026-07-04 REMOVED)_
+- `champions-unofficial`  _(**dropped** - rejected - 'has issues'; l2hostility chosen instead)_
+- `deep-underground`  _(**dropped** - Fabric-only, dropped; a NeoForge mining dimension is still on the TODO)_
+- `fruits-delight`  _(**dropped** - 2026-06-21 REMOVED)_
+- `hexalia`  _(**still pinned in a pack** despite the removal note: 2026-07-04 REMOVED from pack + list)_
+- `spell-engine`  _(**dropped** - 2026-07-04 DROPPED from pack + list)_
+- `spice-of-life-valheim-reforged`  _(**dropped** - 2026-06-14 dropped - superseded by the Food System)_
+- `true-darkness-refabricated`  _(**dropped** - Fabric-only, dropped; a NeoForge alternative is still on the TODO)_
