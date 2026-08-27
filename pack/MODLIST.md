@@ -60,7 +60,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 ## Create (3)
 
 - `create`  _(in `s1 demo`)_
-- `railways-untold`  _(**not installed** - no note anywhere says why)_
+- `railways-untold`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `xaero-train-map` - Xaero Train Map
 
 ## Iron's Spells (9)
@@ -84,7 +84,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `malum`  _(in `s1 demo`)_
 - `malum-vestis`  _(**not installed** - CurseForge only; never added)_
 - `pastel-mod` - Pastel  _(in `s1 demo`)_
-- `usefulmagic`  _(**not installed** - no note anywhere says why)_
+- `usefulmagic`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 
 ## Technology (10)
 
@@ -107,7 +107,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `packagedavaritia`
 - `packagedmekemicals`
 - `re-avaritia` - Re:Avaritia  _(in `s1 demo`)_
-- `wingscontracts`  _(**not installed** - no note anywhere says why)_
+- `wingscontracts`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 
 ## Dimensions (7)
 
@@ -223,7 +223,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `travelers-titles` - Traveler's Titles
 - `tslatentitystatus`
 - `typewriter-daycounter`  _(**added after the full test pack was last synced**)_
-- `what-are-they-up-to`  _(**not installed** - no note anywhere says why)_
+- `what-are-they-up-to`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `whats-that-slot` - What's That Slot?
 - `xaeros-minimap` - Xaero's Minimap  _(in `s1 demo`)_
 - `xaeros-world-map` - Xaero's World Map  _(in `s1 demo`)_
@@ -337,9 +337,9 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 ## Tweaks (6)
 
 - `attributefix`  _(in `s1 demo`)_
-- `bad-wither-no-cookie`  _(**not installed** - no note anywhere says why)_
+- `bad-wither-no-cookie`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `client-tweaks` - Client Tweaks
-- `i-dont-want-to-cheat`  _(**not installed** - no note anywhere says why)_
+- `i-dont-want-to-cheat`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `too-fast` - Too Fast
 - `tweakerge`
 
@@ -386,7 +386,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `despawn-tweaks` - Despawn Tweaks
 - `does-it-tick` - Does It Tick?
 - `lmd` - Let Me Despawn
-- `mobtimizations`  _(**not installed** - no note anywhere says why)_
+- `mobtimizations`  _(**not installed** - **wanted**, confirmed 2026-08-27; it simply never got installed)_
 - `notenoughcrashes` - Not Enough Crashes
 - `optitritium` - Tritium
 

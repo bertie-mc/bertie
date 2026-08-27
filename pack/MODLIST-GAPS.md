@@ -4,31 +4,31 @@ Every mod that at least one of the four big lists does not have. **85 of 579.**
 The four are the online doc (417), `docs/modlist.md` (402), the atlas (426) and the
 full test pack (481). None of them is the authority - each is missing things the others have.
 
-**7 rows have no known reason.** Those are the ones only berlord can settle.
+**0 rows have no known reason.** Those are the ones only berlord can settle.
 
 49 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
 
 | Mod | Missing from | Reason |
 |---|---|---|
 | `wings-of-fire` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
-| `bad-wither-no-cookie` | full-test |  |
+| `bad-wither-no-cookie` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `distanthorizons` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `dragonkind-evolved` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `drippy-loading-screen` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `edf-remastered` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `fancymenu` | full-test | wishlist entry in the doc's WIP sections; never installed |
-| `i-dont-want-to-cheat` | full-test |  |
+| `i-dont-want-to-cheat` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `magitech_mod` | full-test | added after the full test pack was last synced (it is in a newer pack) |
 | `mekanism-fission-recipe` | full-test | wishlist entry in the doc's WIP sections; never installed |
-| `mobtimizations` | full-test |  |
+| `mobtimizations` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `nekos-enchanted-books` | full-test | ours - the third-party lists never covered our own mods |
-| `railways-untold` | full-test |  |
+| `railways-untold` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `true-ending` | full-test | wishlist entry in the doc's WIP sections; never installed |
 | `typewriter-daycounter` | full-test | ships as a datapack, not a mod jar |
 | `upgraded-mobs` | full-test | ships as a datapack, not a mod jar |
-| `usefulmagic` | full-test |  |
-| `what-are-they-up-to` | full-test |  |
-| `wingscontracts` | full-test |  |
+| `usefulmagic` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `what-are-they-up-to` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
+| `wingscontracts` | full-test | wanted - berlord confirmed 2026-08-27; it simply never got installed |
 | `ferrite-core` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `modernfix` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `noisium` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
