@@ -43,8 +43,8 @@
 				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -61,8 +61,8 @@
 				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 0.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -79,8 +79,8 @@
 				item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -97,8 +97,8 @@
 				item: { count: 1, id: "minecraft:enchanting_table" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.0d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -110,15 +110,13 @@
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [
-				{
-					id: "3C00000001000002"
-					item: { count: 1, id: "pastel:enchanter" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: 3.0d
+			tasks: [{
+				id: "3C00000001000002"
+				item: { count: 1, id: "pastel:enchanter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -135,8 +133,8 @@
 				item: { count: 1, id: "cognition:experience_obelisk" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			icon: {
@@ -153,8 +151,8 @@
 				item: { count: 1, id: "cognition:experience_fountain" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 1.5d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -171,8 +169,8 @@
 				item: { count: 1, id: "cognition:precision_dispeller" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.5d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -189,7 +187,7 @@
 				item: { count: 1, id: "malum:soulbinding_brazier" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
@@ -207,8 +205,8 @@
 				item: { count: 1, id: "malum:runic_workbench" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.0d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -243,8 +241,8 @@
 				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -261,7 +259,7 @@
 				item: { count: 1, id: "apotheosis:salvaging_table" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -280,7 +278,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -297,8 +295,8 @@
 				item: { count: 1, id: "apotheosis:simple_reforging_table" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -315,8 +313,8 @@
 				item: { count: 1, id: "apotheosis:reforging_table" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.0d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -333,8 +331,8 @@
 				item: { count: 1, id: "apotheosis:augmenting_table" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -351,7 +349,7 @@
 				item: { count: 1, id: "apotheosis:gem_case" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -369,8 +367,8 @@
 				item: { count: 1, id: "apothic_enchanting:library" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			icon: {
@@ -387,8 +385,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: 4.5d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -405,8 +403,8 @@
 				item: { count: 1, id: "betterend:infusion_pedestal" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 8.5d
+			y: 8.5d
 		}
 		{
 			icon: {
@@ -423,8 +421,8 @@
 				item: { count: 1, id: "cataclysm:mechanical_fusion_anvil" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			icon: {
@@ -441,7 +439,7 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -459,8 +457,8 @@
 				item: { count: 1, id: "enderio:enchanter" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 3.0d
+			y: 6.0d
 		}
 	]
 }

@@ -166,8 +166,8 @@
 				structure: "minecraft:desert_pyramid"
 				type: "structure"
 			}]
-			x: -9.0d
-			y: -3.0d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3B0000000000001F"]
@@ -189,7 +189,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -208,7 +208,7 @@
 				item: { count: 1, id: "cataclysm:desert_eye" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -230,8 +230,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
-			y: 3.0d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3B00000000000015"]
@@ -253,7 +253,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
+			x: -6.0d
 			y: 1.5d
 		}
 		{
@@ -276,7 +276,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -295,7 +295,7 @@
 				item: { count: 1, id: "cataclysm:cursed_eye" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -337,7 +337,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
@@ -478,7 +478,7 @@
 				item: { count: 1, id: "bertieprogression:sirok_nest_map" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
@@ -516,7 +516,7 @@
 				item: { count: 1, id: "bertieprogression:yeti_hideout_map" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -561,7 +561,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -587,7 +587,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: 0.0d
 			y: 1.5d
 		}
 		{
@@ -651,7 +651,7 @@
 				item: { count: 1, id: "bertieprogression:desert_core" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -670,7 +670,7 @@
 				item: { count: 1, id: "bertieprogression:cursed_core" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
