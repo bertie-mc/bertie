@@ -1,6 +1,6 @@
 # Modlist gaps
 
-Every mod that at least one of the four big lists does not have. **221 of 581.**
+Every mod that at least one of the four big lists does not have. **219 of 579.**
 The four are the online doc (417), `docs/modlist.md` (402), the atlas (426) and the
 full test pack (481). None of them is the authority - each is missing things the others have.
 
@@ -188,11 +188,9 @@ full test pack (481). None of them is the authority - each is missing things the
 | `apothic-combat` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-enchanting` | online doc, atlas, full-test | added after the online doc was last touched |
 | `apothic-spawners` | online doc, atlas, full-test | added after the online doc was last touched |
-| `crash` | online doc, atlas, full-test | added after the online doc was last touched |
 | `easy-magic-apotheosis-compat` | online doc, atlas, full-test | CurseForge only; listed 2026-08-05, never added to a pack |
 | `ftb-filter-system` | online doc, atlas, full-test | added after the online doc was last touched |
 | `ftb-xmod-compat` | online doc, atlas, full-test | added after the online doc was last touched |
-| `see` | online doc, atlas, full-test | added after the online doc was last touched |
 | `spice-of-life-valheim-reforged` | online doc, atlas, full-test | 2026-06-14 dropped - superseded by the Food System |
 | `alexscavesworldgenfix` | online doc, modlist.md, atlas, full-test | ours - the third-party lists never covered our own mods |
 | `antarchy` | online doc, modlist.md, atlas, full-test | dependency pulled in with something else; the curated lists never tracked libraries |
