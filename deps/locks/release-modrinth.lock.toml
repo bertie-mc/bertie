@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "3aa13dd1abbd982b309dca485be17aa784fd718ae6b016d86f0d4f67409c606f"
+inputs-hash = "3f920c26efca5fc273e8b74a2b8bcbc25648f938c0c07be54ef7f7aceaf8e42e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -284,10 +284,6 @@ any = "modrinth:HVnmMxH1:yCCduG44"
 [components."controlling"]
 any = "modrinth:xv94TkTM:FaNppCJJ"
 mod = "modrinth:xv94TkTM:FaNppCJJ"
-
-[components."cooparticlesapi"]
-any = "modrinth:poJQVcIe:2fPzW7KM"
-mod = "modrinth:poJQVcIe:2fPzW7KM"
 
 [components."cosmetic-armor-reworked-forked"]
 any = "modrinth:6cpT8CUC:U6kExSSz"
@@ -740,10 +736,6 @@ mod = "modrinth:KpICtuVx:TBI4EWjs"
 [components."incendium"]
 any = "modrinth:ZVzW5oNS:pwe1kTJE"
 mod = "modrinth:ZVzW5oNS:7mVvV9Th"
-
-[components."integrated-api"]
-any = "modrinth:V6fKbpBN:cKHoMnZX"
-mod = "modrinth:V6fKbpBN:cKHoMnZX"
 
 [components."interdimensional-wireless-transmitter"]
 any = "modrinth:nQR8XALE:CcRkmcRp"
@@ -1265,10 +1257,6 @@ mod = "modrinth:bK3Ubu9p:eREhvVpQ"
 any = "modrinth:zhpyD8Y0:naW264bf"
 mod = "modrinth:zhpyD8Y0:naW264bf"
 
-[components."sizeable-foliage"]
-any = "modrinth:lgD8igI0:vkS4djbn"
-mod = "modrinth:lgD8igI0:vkS4djbn"
-
 [components."slag-n-embers"]
 any = "modrinth:56bnCCwq:CGRQn5ML"
 mod = "modrinth:56bnCCwq:CGRQn5ML"
@@ -1467,10 +1455,6 @@ mod = "modrinth:HsdNFinx:cttRekq9"
 [components."vanillabackport"]
 any = "modrinth:6xwxDTgf:rUSWdBok"
 mod = "modrinth:6xwxDTgf:rUSWdBok"
-
-[components."vanity-core"]
-any = "modrinth:kEcg2xYc:QAqYAkRv"
-mod = "modrinth:kEcg2xYc:QAqYAkRv"
 
 [components."villages-and-pillages"]
 any = "modrinth:klXONLDA:3BGfKjMb"
@@ -6726,7 +6710,6 @@ integrations = []
 
 [artifacts."modrinth:V6fKbpBN:cKHoMnZX"]
 name = "integrated-api"
-component = "integrated-api"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9030,7 +9013,6 @@ integrations = []
 
 [artifacts."modrinth:kEcg2xYc:QAqYAkRv"]
 name = "vanity-core"
-component = "vanity-core"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9328,7 +9310,6 @@ integrations = []
 
 [artifacts."modrinth:lgD8igI0:vkS4djbn"]
 name = "sizeable-foliage"
-component = "sizeable-foliage"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9944,7 +9925,6 @@ integrations = []
 
 [artifacts."modrinth:poJQVcIe:2fPzW7KM"]
 name = "cooparticlesapi"
-component = "cooparticlesapi"
 provider = "modrinth"
 kind = "mod"
 side = "both"

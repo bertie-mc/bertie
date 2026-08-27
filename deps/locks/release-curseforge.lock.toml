@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "8291329c8aa63fbf3a8daf85caad44a957de5a8d216ee3fec71536bd24a05a63"
+inputs-hash = "65c9cfcf0b47d1e11277dcd23fa5263b8f72276b323a14fa90784a2e79abdecd"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -284,10 +284,6 @@ any = "curseforge:627557:8123287"
 [components."controlling"]
 any = "curseforge:250398:6368976"
 mod = "curseforge:250398:6368976"
-
-[components."cooparticlesapi"]
-any = "modrinth:poJQVcIe:2fPzW7KM"
-mod = "modrinth:poJQVcIe:2fPzW7KM"
 
 [components."cosmetic-armor-reworked-forked"]
 any = "curseforge:1434118:7685857"
@@ -740,10 +736,6 @@ mod = "curseforge:257356:7436215"
 [components."incendium"]
 any = "curseforge:591388:5962249"
 mod = "curseforge:591388:5962249"
-
-[components."integrated-api"]
-any = "modrinth:V6fKbpBN:cKHoMnZX"
-mod = "modrinth:V6fKbpBN:cKHoMnZX"
 
 [components."interdimensional-wireless-transmitter"]
 any = "curseforge:452645:6845967"
@@ -1265,10 +1257,6 @@ mod = "curseforge:659887:7704396"
 any = "curseforge:1095252:7726482"
 mod = "curseforge:1095252:7726482"
 
-[components."sizeable-foliage"]
-any = "modrinth:lgD8igI0:vkS4djbn"
-mod = "modrinth:lgD8igI0:vkS4djbn"
-
 [components."slag-n-embers"]
 any = "curseforge:1360010:7786962"
 mod = "curseforge:1360010:7786962"
@@ -1467,10 +1455,6 @@ mod = "curseforge:416935:5847440"
 [components."vanillabackport"]
 any = "curseforge:417430:8229724"
 mod = "curseforge:417430:8229724"
-
-[components."vanity-core"]
-any = "curseforge:548155:8103793"
-mod = "curseforge:548155:8103793"
 
 [components."villages-and-pillages"]
 any = "curseforge:915531:6266438"
@@ -7213,7 +7197,6 @@ integrations = []
 
 [artifacts."curseforge:548155:8103793"]
 name = "vanity-core"
-component = "vanity-core"
 provider = "curseforge"
 kind = "mod"
 side = "both"
@@ -10658,7 +10641,6 @@ integrations = []
 
 [artifacts."modrinth:V6fKbpBN:cKHoMnZX"]
 name = "integrated-api"
-component = "integrated-api"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -11220,7 +11202,6 @@ integrations = []
 
 [artifacts."modrinth:lgD8igI0:vkS4djbn"]
 name = "sizeable-foliage"
-component = "sizeable-foliage"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -11336,7 +11317,6 @@ integrations = []
 
 [artifacts."modrinth:poJQVcIe:2fPzW7KM"]
 name = "cooparticlesapi"
-component = "cooparticlesapi"
 provider = "modrinth"
 kind = "mod"
 side = "both"
