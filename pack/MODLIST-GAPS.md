@@ -1,25 +1,20 @@
 # Modlist gaps
 
-Every mod that at least one of the five big lists does not have. **96 of 583.**
+Every mod that at least one of the five big lists does not have. **91 of 583.**
 The five are the online doc (417), `docs/modlist.md` (400), the atlas (426), the full test
 pack (481) and `deps` (461 - components plus the artifacts its locks pin). None of them is
 the authority - each is missing things the others have.
 
 **0 rows have no known reason.** Those are the ones only berlord can settle.
 
-49 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
+54 mods cut on 2026-08-27 are left out - they are settled. So are the 85 libraries that only ever appear in a pack.
 
 | Mod | Missing from | Reason |
 |---|---|---|
 | `wings-of-fire` | modlist.md | the modlist.md mirror is partial - it never transcribed everything |
 | `magitech` | full-test | added after the full test pack was last synced (it is in a newer pack) |
-| `cataclysm-x-yungs` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
-| `configmanager` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
 | `dynamic-ore-veins` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
-| `emixx` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
 | `mekanism-ponders` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
-| `reliquary-reincarnations` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
-| `screenshot-to-clipboard` | deps manifest | **a hole in `deps`** - in a pack, but neither `components/` nor any lock mentions it |
 | `ferrite-core` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `modernfix` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |
 | `noisium` | online doc, modlist.md | in the pack and classified by the atlas, but never written back to the doc or its mirror |

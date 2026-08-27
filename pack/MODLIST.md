@@ -6,8 +6,8 @@ Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 
 | | |
 |---|---|
-| **cut 2026-08-27** - out of the pack for good | 49 |
-| in the full test pack | 368 |
+| **cut 2026-08-27** - out of the pack for good | 54 |
+| in the full test pack | 363 |
 | in a pack, added after the full test pack | 10 |
 | libraries and dependencies (in a pack, on no curated list) | 85 |
 | our own mods, datapacks and ports | 31 |
@@ -128,7 +128,7 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `stellaris-stellarview-compatibility` - Stellaris StellarView Compatibility
 - `stellarview` - Stellar View
 
-## Stuff (13)
+## Stuff (12)
 
 - `ancient-forgemastery` - Ancient Forgemastery  _(in `s1 demo`)_
 - `better-archeology` - Better Archeology
@@ -139,7 +139,6 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `fantasy_armor` - Fantasy Armor (Medieval Series)  _(in `s1 demo`)_
 - `immersive-armors` - Immersive Armors  _(in `s1 demo`)_
 - `midnight-thoughts` - Midnight Thoughts
-- `reliquary-reincarnations` - Reliquary Reincarnations
 - `rustic-engineer` - Rustic Engineer
 - `simply-swords` - Simply Swords  _(in `s1 demo`)_
 - `simplymore` - Simply More  _(in `s1 demo`)_
@@ -189,7 +188,7 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `trailtales-delight` - Trail&Tales Delight
 - `twilight-delight` - Twilight's Flavor & Delight
 
-## GUI & information (38)
+## GUI & information (37)
 
 - `advanced-loot-info` - Advanced Loot Info  _(in `s1 demo`)_
 - `advancement-plaques` - Advancement Plaques
@@ -202,7 +201,6 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `emi-ores` - EMI Ores  _(in `s1 demo`)_
 - `emi-professions` - EMI professions (EMIP)
 - `emiffect`
-- `emixx`
 - `extra-mod-integrations` - EMI Addon: Extra Mod Integrations
 - `invmove`
 - `invmovecompats`
@@ -230,7 +228,7 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `xaeros-world-map` - Xaero's World Map  _(in `s1 demo`)_
 - `yukamis-sophisticated-backpack-tab` - Yukami's Sophisticated Backpack Tab  _(in `s1 demo`)_
 
-## QoL (34)
+## QoL (33)
 
 - `better-beacon-placement` - Better Beacon Placement
 - `better-climbing` - Better Climbing
@@ -260,7 +258,6 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `plonk`
 - `responsiveshields` - Responsive Shields
 - `rolling-down-in-the-deep` - Rolling Down in the Deep
-- `screenshot-to-clipboard` - Screenshot to Clipboard
 - `sneak-through-berries` - Sneak Through Berries
 - `spyglass-improvements` - Spyglass Improvements
 - `trashslot`
@@ -352,7 +349,7 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `spark`
 - `worldedit`  _(in `s1 demo`)_
 
-## Mobs & bosses (28)
+## Mobs & bosses (27)
 
 - `alexs-caves-` - Alex's Caves (Unofficial Port)  _(in `s1 demo`)_
 - `alexs-mobs` - Alex's Mobs (Unofficial Port)  _(in `s1 demo`)_
@@ -364,7 +361,6 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `bossesrise` - Bosses'Rise  _(in `s1 demo`)_
 - `cataclysm-tools` - Cataclysm Tools  _(in `s1 demo`)_
 - `cataclysm-x-bettercombat-compat` - Cataclysm & BetterCombat - Compatibility
-- `cataclysm-x-yungs` - Cataclysm x YUNG's Better Nether Fortresses Compat
 - `creeper-overhaul` - Creeper Overhaul
 - `enderman-overhaul` - Enderman Overhaul
 - `iceandfire-ce` - IceAndFire Community Edition  _(in `s1 demo`)_
@@ -477,12 +473,11 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `tiny-item-animations` - Tiny Item Animations
 - `wither-spawn-animation` - Wither Spawn Animation
 
-## WIP - customization (9)
+## WIP - customization (8)
 
 - `accessdenied` - Access Denied
 - `biome-replacer` - Biome Replacer
 - `certain-questing-additions` - Certain Questing Additions
-- `configmanager` - Config Manager
 - `crafttweaker`
 - `drippy-loading-screen`  _(wishlist - never installed)_
 - `emendatusenigmatica` - Emendatus Enigmatica
@@ -553,13 +548,15 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `withered-hearts`  _(ours - witheredhearts 1.0.0)_
 - `withering-waver`  _(ours - witheringwaver 0.8.0; in `s1 demo`)_
 
-## Cut 2026-08-27 (49)
+## Cut 2026-08-27 (54)
 
 - `apotheosis-create-recipe`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `ashen-witch-broom`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `better-stats`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `cataclysm-x-yungs` - Cataclysm x YUNG's Better Nether Fortresses Compat  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `cerbons-api` - CERBON's API  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `champions-unofficial`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `configmanager` - Config Manager  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `cooparticlesapi`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `creativecore`  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `cucumber` - Cucumber Library  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
@@ -567,6 +564,7 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `dimensional-dungeons`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `dynamictrees` - Dynamic Trees  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `embeddium`  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `emixx`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `enchanting-infuser` - Enchanting Infuser  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `extended-crafting` - Extended Crafting  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `forge-config-api-port` - Forge Config API Port  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
@@ -594,6 +592,8 @@ No source was complete on its own. `deps` comes closest once the locks are read 
 - `open-loader` - Open Loader  _(**cut** - 2026-08-27 dropped - orphaned library, nothing requires it)_
 - `packagedexcrafting`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `quality-equipment` - Quality Equipment  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `reliquary-reincarnations` - Reliquary Reincarnations  _(**cut** - 2026-08-27 dropped on berlord's order)_
+- `screenshot-to-clipboard` - Screenshot to Clipboard  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `spell-engine`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `spice-of-life-onion`  _(**cut** - 2026-08-27 dropped on berlord's order)_
 - `spice-of-life-valheim-reforged`  _(**cut** - 2026-08-27 dropped on berlord's order)_
