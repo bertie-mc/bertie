@@ -1,7 +1,8 @@
 # The bertie modlist
 
-**579 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
+**581 mods.** The union of every list bertie has ever kept, reconciled on 2026-08-27.
 This file is the definitive one - the others are snapshots and drift.
+Which list is missing what, and why, is in [MODLIST-GAPS.md](MODLIST-GAPS.md).
 
 | | |
 |---|---|
@@ -10,7 +11,7 @@ This file is the definitive one - the others are snapshots and drift.
 | libraries and dependencies (in a pack, on no curated list) | 107 |
 | our own mods, datapacks and ports | 31 |
 | asset donors (Deconstruct) - never shipped | 20 |
-| on a list, in no pack | 17 |
+| on a list, in no pack | 19 |
 | wishlist (the doc's WIP sections) | 8 |
 | dropped, with a dated note | 10 |
 
@@ -19,8 +20,8 @@ This file is the definitive one - the others are snapshots and drift.
 | Source | Entries | State |
 |---|---|---|
 | the online doc (pasted by berlord) | 417 | last touched ~2 months ago; oldest |
-| `berlords-workspace/docs/modlist.md` | 336 | mirror of that doc, kept newer, carries dated removal notes |
-| `berlords-workspace/atlas/bertie-mod-stages.md` | 396 | the content/fluff/configurations/deconstruct buckets |
+| `berlords-workspace/docs/modlist.md` | 402 | mirror of that doc, kept newer, carries dated removal notes |
+| `berlords-workspace/atlas/bertie-mod-stages.md` | 426 | the content/fluff/configurations/deconstruct buckets |
 | `berlords-workspace/packs/full-test-pack` | 481 | the big packwiz pack; the closest thing to the real list |
 | `berlords-workspace/packs/s1-pack` | 163 | the demo pack |
 | `berlords-workspace/packs/worldgen-pack` | 65 | worldgen subset |
@@ -637,7 +638,7 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `yungs-api` - YUNG's API
 - `zeta`
 
-## Listed only in docs/modlist.md (12)
+## Listed only in docs/modlist.md (14)
 
 - `apotheosis`  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `apotheosis-x-irons-spellbooks-compat` - Apotheosis x Iron's Spellbooks Compat  _(**added after the full test pack was last synced**; in `s1 demo`)_
@@ -645,12 +646,14 @@ No source was complete on its own. The public monorepo held **no modlist at all*
 - `apothic-combat` - Apothic Combat  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `apothic-enchanting` - Apothic Enchanting  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `apothic-spawners` - Apothic Spawners  _(**added after the full test pack was last synced**; in `s1 demo`)_
+- `crash`  _(**not installed** - no note anywhere says why)_
 - `easy-magic-apotheosis-compat`  _(**not installed** - CurseForge only; added to the list 2026-08-05, not to a pack)_
 - `ftb-filter-system` - FTB Filter System  _(**added after the full test pack was last synced**; in `s1 demo`)_
 - `ftb-library` - FTB Library (NeoForge)  _(in `s1 demo`)_
 - `ftb-quests` - FTB Quests (NeoForge)  _(in `s1 demo`)_
 - `ftb-teams` - FTB Teams (NeoForge)  _(in `s1 demo`)_
 - `ftb-xmod-compat` - FTB XMod Compat  _(**added after the full test pack was last synced**; in `s1 demo`)_
+- `see`  _(**not installed** - no note anywhere says why)_
 
 ## Listed only in the atlas (5)
 
