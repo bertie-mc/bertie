@@ -1467,12 +1467,13 @@ write("data/magitech/recipe/upgrade_workbench.json",
 
 
 # --- Curios slots. Cataclysm's "rings" and "waist" duplicate the standard ring and belt slots, so
-#     both are closed and their items move across. Every elytra leaves the back slot for wings;
-#     the back slot keeps the backpacks and the two cloaks. ---
+#     both are closed and their items move across. "talisman" is closed outright: it held two items
+#     and both are removed, so the slot would sit empty forever. Every elytra leaves the back slot
+#     for wings; the back slot keeps the backpacks and the two cloaks. ---
 write("data/cataclysm/curios/entities/slots.json",
       {"entities": ["player"],
-       "slots": ["head", "necklace", "talisman", "hands", "feet"]})
-for _closed in ("rings", "waist"):
+       "slots": ["head", "necklace", "hands", "feet"]})
+for _closed in ("rings", "waist", "talisman"):
     write(f"data/cataclysm/curios/slots/{_closed}.json", {"operation": "SET", "size": 0})
     write(f"data/curios/tags/item/{_closed}.json", {"replace": True, "values": []})
 
@@ -2304,9 +2305,10 @@ write("data/bertieprogression/tags/worldgen/structure/nether_fortress.json",
                   {"id": "betterfortresses:fortress", "required": False}]})
 
 INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "instances",
-                             # This is a filesystem path, not prose: the Prism instance is named
-                             # "s1 demo" and changing it makes the generator scan the wrong jars.
-                             "s1 demo", ".minecraft", "mods")
+                             # This is a filesystem path, not prose. The instance is named
+                             # "bertie-no-worldgen" and its game directory is "minecraft", not
+                             # ".minecraft"; changing either makes the generator scan the wrong jars.
+                             "bertie-no-worldgen", "minecraft", "mods")
 
 # ================================================================ BRICK FORGE ORE BONUS
 # Every Brick Forge ore smelt gets a 1% chance of also dropping a storage block of what it made.
@@ -2643,7 +2645,9 @@ if not _removed or _scan_ok:
         _p = os.path.join(REMOVED_DOCS, _fn)
         _src = io.open(_p, encoding="utf-8").read()
         if _OPEN not in _src or _CLOSE not in _src:
-            continue
+            # A doc written by hand has no markers yet, and skipping it meant a brand new mod's
+            # table never reported a leak. Give it an empty pair and fill it in the same pass.
+            _src = _src.rstrip() + "\n\n" + _OPEN + "\n" + _CLOSE + "\n"
         _body = []
         for _i in sorted(i for i in _removed_ids if i.split(":")[0] == _fn[:-3]):
             _l = _leaks.get(_i)
@@ -2754,7 +2758,9 @@ def _write_shrine_nbt():
 
     path = os.path.join(RES, "assets", MODID, "ponder", "deepwaters_shrine.nbt")
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with gzip.open(path, "wb") as f:
+    # mtime=0: gzip writes the clock into its header, which made every run rewrite this
+    # file with identical content and show up as a change in git.
+    with gzip.GzipFile(path, "wb", mtime=0) as f:
         f.write(root)
     written.append("assets/bertieprogression/ponder/deepwaters_shrine.nbt")
 
@@ -2915,6 +2921,13 @@ BLOCKS = {
 for item_id in ITEMS:
     write(f"assets/bertieprogression/models/item/{item_id}.json",
           {"parent": "minecraft:item/generated", "textures": {"layer0": f"bertieprogression:item/{item_id}"}})
+# The abyssal core sprite is 48x48 and renders at scale 3 so a texel lands on a GUI pixel; the
+# whirlpool then fills its slot and the tentacle reaches into the neighbouring ones. Render size is
+# set by the model, not the texture, so this transform has to survive the ITEMS loop above.
+write("assets/bertieprogression/models/item/abyssal_core.json",
+      {"parent": "minecraft:item/generated",
+       "textures": {"layer0": "bertieprogression:item/abyssal_core"},
+       "display": {"gui": {"scale": [3, 3, 1]}}})
 # weeping_eye is NOT overridden here any more: it has real art now
 # (texture-work/make_weeping_eye.py, animated) and takes the generated model the
 # ITEMS loop above writes. Re-adding it would hide that texture behind vanilla's
@@ -2931,8 +2944,8 @@ for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
 # abyssal_core has real animated art (the reach variant with its .mcmeta), so it takes the generated
 # model from the ITEMS loop like storm_core. Parenting it to a Heart of the Sea would hide the
 # texture.
-for _c, _par in (("desert_core", "minecraft:item/brick"),
-                 ("cursed_core", "minecraft:item/echo_shard")):
+# desert_core left this list when it got its own animated sprite; only cursed_core still borrows.
+for _c, _par in (("cursed_core", "minecraft:item/echo_shard"),):
     write(f"assets/bertieprogression/models/item/{_c}.json", {"parent": _par})
 # Transitional sequenced-assembly items: the beam reuses a vanilla stick, while incomplete water
 # wheels reuse the corresponding finished wheel models.

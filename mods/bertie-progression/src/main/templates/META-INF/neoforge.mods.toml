@@ -223,6 +223,15 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# The culled TerraCurio accessories are disabled by overriding TerraCurio's own recipe files, so
+# we have to load after it or its originals win.
+[[dependencies.${mod_id}]]
+modId="terra_curio"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 [[dependencies.${mod_id}]]
 modId="nameless_trinkets"
 type="optional"
