@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "a0e50d0aaf25f542c2ab6691a4705430623762c57511e1bed8987030a67e7024"
+inputs-hash = "a071ac8162e03214814897051ca324d0f9d727e23a7b3fc383d9efd8619f41b7"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -740,10 +740,6 @@ mod = "curseforge:591388:5962249"
 [components."interdimensional-wireless-transmitter"]
 any = "curseforge:452645:6845967"
 mod = "curseforge:452645:6845967"
-
-[components."inventorio"]
-any = "curseforge:497122:7268713"
-mod = "curseforge:497122:7268713"
 
 [components."inventory-management-deluxe"]
 any = "curseforge:1293085:8083722"
@@ -6745,27 +6741,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:497122:7268713"]
-name = "inventorio"
-component = "inventorio"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "inventorio-497122"
-version = "7268713"
-filename = "inventorio-mc1.21.1-neoforge-v1.11.0.jar"
-project-id = 497122
-slug = "inventorio"
-file-id = 7268713
-provides = ["inventorio"]
-bundled-provides = ["conditional_mixin"]
-required = [{ "artifact" = "curseforge:348521:5729127", "mod-id" = "cloth_config", "version-range" = "[14,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:Z2RtCqwR:t1rtOqca", "mod-id" = "yarrp", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:499826:5905995"]
 name = "advancement-plaques"
 component = "advancement-plaques"
@@ -10658,25 +10633,6 @@ project-id = "XjY0RcQj"
 version-id = "mIylVpkN"
 provides = ["citadel"]
 bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:Z2RtCqwR:t1rtOqca"]
-name = "yarrp"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "Z2RtCqwR"
-version = "t1rtOqca"
-filename = "yarrp-mc1.21.1-neoforge-v0.2.0.jar"
-project-id = "Z2RtCqwR"
-version-id = "t1rtOqca"
-provides = ["yarrp"]
-bundled-provides = ["conditional_mixin"]
 required = []
 optional = []
 incompatible = []

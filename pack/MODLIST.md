@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (476)
+## Mods (474)
 
 | Mod |
 |---|
@@ -228,7 +228,6 @@
 | `incendium` |
 | `integrated-api` |
 | `interdimensional-wireless-transmitter` |
-| `inventorio` |
 | `inventory-management-deluxe` |
 | `invmove` |
 | `invmovecompats` |
@@ -462,7 +461,6 @@
 | `xaero-train-map` |
 | `xaeros-minimap` |
 | `xaeros-world-map` |
-| `yarrp` |
 | `yggdrasil-structure` |
 | `yukamis-sophisticated-backpack-tab` |
 | `yungs-api` |

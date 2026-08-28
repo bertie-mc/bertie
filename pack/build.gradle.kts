@@ -192,7 +192,6 @@ dependencies {
     packComponents(deps.incendium)
     packComponents(deps.inControl)
     packComponents(deps.interdimensionalWirelessTransmitter)
-    packComponents(deps.inventorio)
     packComponents(deps.inventoryManagementDeluxe)
     packComponents(deps.invmovecompats)
     packComponents(deps.iris)

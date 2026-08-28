@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "48423c406000559b01f504244929da40dada727d877ea5e63b40e726c68db60e"
+inputs-hash = "1461ec19db175effc88dc613357d2e326eec73588cb7e205322f7dcf48781263"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -740,10 +740,6 @@ mod = "modrinth:ZVzW5oNS:7mVvV9Th"
 [components."interdimensional-wireless-transmitter"]
 any = "modrinth:nQR8XALE:CcRkmcRp"
 mod = "modrinth:nQR8XALE:CcRkmcRp"
-
-[components."inventorio"]
-any = "modrinth:LcafSQPm:pxvyXSjJ"
-mod = "modrinth:LcafSQPm:pxvyXSjJ"
 
 [components."inventory-management-deluxe"]
 any = "curseforge:1293085:8083722"
@@ -5112,26 +5108,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:LcafSQPm:pxvyXSjJ"]
-name = "inventorio"
-component = "inventorio"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "LcafSQPm"
-version = "pxvyXSjJ"
-filename = "inventorio-mc1.21.1-neoforge-v1.11.0.jar"
-project-id = "LcafSQPm"
-version-id = "pxvyXSjJ"
-provides = ["inventorio"]
-bundled-provides = ["conditional_mixin"]
-required = [{ "artifact" = "modrinth:9s6osm5g:izKINKFg", "mod-id" = "cloth_config", "version-range" = "[14,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:Z2RtCqwR:t1rtOqca", "mod-id" = "yarrp", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:LcmGQfK2:eGbrbFqp"]
 name = "fdlib"
 component = "fdlib"
@@ -6849,25 +6825,6 @@ version-id = "yNIrDVfJ"
 provides = ["culturaldelights"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "mod-id" = "farmersdelight", "version-range" = "[1.2.3,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:Z2RtCqwR:t1rtOqca"]
-name = "yarrp"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "Z2RtCqwR"
-version = "t1rtOqca"
-filename = "yarrp-mc1.21.1-neoforge-v0.2.0.jar"
-project-id = "Z2RtCqwR"
-version-id = "t1rtOqca"
-provides = ["yarrp"]
-bundled-provides = ["conditional_mixin"]
-required = []
 optional = []
 incompatible = []
 bundled = []
