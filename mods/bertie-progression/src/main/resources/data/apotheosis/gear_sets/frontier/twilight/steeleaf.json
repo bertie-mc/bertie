@@ -1,0 +1,56 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "placebo:gear_set",
+  "boots": [],
+  "chestplates": [],
+  "helmets": [],
+  "leggings": [],
+  "mainhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:steeleaf_sword"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:steeleaf_axe"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:steeleaf_pickaxe"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:steeleaf_shovel"
+      },
+      "weight": 10
+    }
+  ],
+  "offhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "minecraft:shield"
+      },
+      "weight": 10
+    }
+  ],
+  "tags": [
+    "frontier_melee"
+  ],
+  "weight": 35
+}

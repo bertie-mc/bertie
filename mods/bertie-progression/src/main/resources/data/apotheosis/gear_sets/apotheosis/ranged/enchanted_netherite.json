@@ -1,0 +1,80 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "placebo:gear_set",
+  "boots": [],
+  "chestplates": [],
+  "helmets": [],
+  "leggings": [],
+  "mainhands": [
+    {
+      "stack": {
+        "components": {
+          "apotheosis:durability_bonus": 0.8,
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:power": 15
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:triple_bow"
+      },
+      "weight": 2
+    },
+    {
+      "stack": {
+        "components": {
+          "apotheosis:durability_bonus": 0.8,
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:power": 15
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:ender_bow"
+      },
+      "weight": 2
+    },
+    {
+      "stack": {
+        "components": {
+          "apotheosis:durability_bonus": 0.8,
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:power": 15
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:seeker_bow"
+      },
+      "weight": 2
+    },
+    {
+      "stack": {
+        "components": {
+          "apotheosis:durability_bonus": 0.8,
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:power": 15
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:ice_bow"
+      },
+      "weight": 2
+    }
+  ],
+  "quality": 5.0,
+  "tags": [
+    "pinnacle_ranged"
+  ],
+  "weight": 35
+}

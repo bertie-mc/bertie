@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "placebo:gear_set",
+  "boots": [],
+  "chestplates": [],
+  "helmets": [],
+  "leggings": [],
+  "mainhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:ice_sword"
+      },
+      "weight": 10
+    }
+  ],
+  "offhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "minecraft:shield"
+      },
+      "weight": 10
+    }
+  ],
+  "quality": 2.5,
+  "tags": [
+    "ascent_melee"
+  ],
+  "weight": 25
+}

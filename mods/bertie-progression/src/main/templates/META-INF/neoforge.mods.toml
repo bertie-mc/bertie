@@ -223,6 +223,39 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Apotheosis rolls affixed gear and dresses its bosses from its own data, so removed armour
+# has to be taken out of those lists too.
+[[dependencies.${mod_id}]]
+modId="apotheosis"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Loot override: the Rooted Boots leave the mimic's loot table.
+[[dependencies.${mod_id}]]
+modId="artifacts"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Loot override: four removed drops leave its boss loot tables.
+[[dependencies.${mod_id}]]
+modId="block_factorys_bosses"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Loot override: the Castle Keeper stops dropping Phantom armour.
+[[dependencies.${mod_id}]]
+modId="twilight_forest_final_boss"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # The culled TerraCurio accessories are disabled by overriding TerraCurio's own recipe files, so
 # we have to load after it or its originals win.
 [[dependencies.${mod_id}]]

@@ -927,1167 +927,1165 @@
 	quest.4C000000000000A8.quest_desc: ["Accessory slot."]
 	quest.4C000000000000A8.title: "Step Stool"
 	quest.4C000000000000A9.quest_desc: ["Accessory slot."]
-	quest.4C000000000000A9.title: "Stinger Necklace"
+	quest.4C000000000000A9.title: "Stopwatch"
 	quest.4C000000000000AA.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AA.title: "Stopwatch"
+	quest.4C000000000000AA.title: "Sun Stone"
 	quest.4C000000000000AB.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AB.title: "Sun Stone"
+	quest.4C000000000000AB.title: "Sweetheart Necklace"
 	quest.4C000000000000AC.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AC.title: "Sweetheart Necklace"
+	quest.4C000000000000AC.title: "Tabi"
 	quest.4C000000000000AD.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AD.title: "Tabi"
+	quest.4C000000000000AD.title: "Base Point"
 	quest.4C000000000000AE.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AE.title: "Base Point"
+	quest.4C000000000000AE.title: "Terraspark Boots"
 	quest.4C000000000000AF.quest_desc: ["Accessory slot."]
-	quest.4C000000000000AF.title: "Terraspark Boots"
+	quest.4C000000000000AF.title: "The Heart"
 	quest.4C000000000000B0.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B0.title: "The Heart"
+	quest.4C000000000000B0.title: "The Plan"
 	quest.4C000000000000B1.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B1.title: "The Plan"
+	quest.4C000000000000B1.title: "Thorned Requital"
 	quest.4C000000000000B2.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B2.title: "Thorned Requital"
+	quest.4C000000000000B2.title: "Tiger Climbing Gear"
 	quest.4C000000000000B3.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B3.title: "Tiger Climbing Gear"
+	quest.4C000000000000B3.title: "Titan Glove"
 	quest.4C000000000000B4.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B4.title: "Titan Glove"
+	quest.4C000000000000B4.title: "Toolbelt"
 	quest.4C000000000000B5.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B5.title: "Toolbelt"
+	quest.4C000000000000B5.title: "Toolbox"
 	quest.4C000000000000B6.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B6.title: "Toolbox"
+	quest.4C000000000000B6.title: "Treasure Magnet"
 	quest.4C000000000000B7.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B7.title: "Treasure Magnet"
+	quest.4C000000000000B7.title: "Trifold Map"
 	quest.4C000000000000B8.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B8.title: "Trifold Map"
+	quest.4C000000000000B8.title: "Tsunami In A Bottle"
 	quest.4C000000000000B9.quest_desc: ["Accessory slot."]
-	quest.4C000000000000B9.title: "Tsunami In A Bottle"
+	quest.4C000000000000B9.title: "Vagabond's Hood"
 	quest.4C000000000000BA.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BA.title: "Vagabond's Hood"
+	quest.4C000000000000BA.title: "Vampiric Talisman"
 	quest.4C000000000000BB.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BB.title: "Vampiric Talisman"
+	quest.4C000000000000BB.title: "Vitamins"
 	quest.4C000000000000BC.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BC.title: "Vitamins"
+	quest.4C000000000000BC.title: "Voidcall Ward"
 	quest.4C000000000000BD.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BD.title: "Voidcall Ward"
+	quest.4C000000000000BD.title: "Warrior Emblem"
 	quest.4C000000000000BE.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BE.title: "Warrior Emblem"
+	quest.4C000000000000BE.title: "Water Walking Boots"
 	quest.4C000000000000BF.quest_desc: ["Accessory slot."]
-	quest.4C000000000000BF.title: "Water Walking Boots"
+	quest.4C000000000000BF.title: "White Horseshoe Balloon"
 	quest.4C000000000000C0.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C0.title: "White Horseshoe Balloon"
+	quest.4C000000000000C0.title: "Wither's Spine"
 	quest.4C000000000000C1.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C1.title: "Wither's Spine"
+	quest.4C000000000000C1.title: "Withered Bone Effigy"
 	quest.4C000000000000C2.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C2.title: "Withered Bone Effigy"
+	quest.4C000000000000C2.title: "Worm Scarf"
 	quest.4C000000000000C3.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C3.title: "Worm Scarf"
+	quest.4C000000000000C3.title: "Yellow Horseshoe Balloon"
 	quest.4C000000000000C4.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C4.title: "Yellow Horseshoe Balloon"
+	quest.4C000000000000C4.title: "Zenithian's Skull"
 	quest.4C000000000000C5.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C5.title: "Zenithian's Skull"
-	quest.4C000000000000C6.quest_desc: ["Accessory slot."]
-	quest.4C000000000000C6.title: "Zoranth's Hand"
+	quest.4C000000000000C5.title: "Zoranth's Hand"
+	quest.4C000000000000C6.quest_desc: ["Pandora slot."]
+	quest.4C000000000000C6.title: "Abyssal Crown"
 	quest.4C000000000000C7.quest_desc: ["Pandora slot."]
-	quest.4C000000000000C7.title: "Abyssal Crown"
+	quest.4C000000000000C7.title: "Abyssal Shell"
 	quest.4C000000000000C8.quest_desc: ["Pandora slot."]
-	quest.4C000000000000C8.title: "Abyssal Shell"
+	quest.4C000000000000C8.title: "Abyssal Treasure"
 	quest.4C000000000000C9.quest_desc: ["Pandora slot."]
-	quest.4C000000000000C9.title: "Abyssal Treasure"
+	quest.4C000000000000C9.title: "Abyssal Watcher"
 	quest.4C000000000000CA.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CA.title: "Abyssal Watcher"
+	quest.4C000000000000CA.title: "Abyssal Will"
 	quest.4C000000000000CB.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CB.title: "Abyssal Will"
+	quest.4C000000000000CB.title: "Angelic Bless"
 	quest.4C000000000000CC.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CC.title: "Angelic Bless"
+	quest.4C000000000000CC.title: "Angelic Descent"
 	quest.4C000000000000CD.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CD.title: "Angelic Descent"
+	quest.4C000000000000CD.title: "Angelic Protection"
 	quest.4C000000000000CE.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CE.title: "Angelic Protection"
+	quest.4C000000000000CE.title: "Angelic Punishment"
 	quest.4C000000000000CF.quest_desc: ["Pandora slot."]
-	quest.4C000000000000CF.title: "Angelic Punishment"
+	quest.4C000000000000CF.title: "Angelic Wing"
 	quest.4C000000000000D0.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D0.title: "Angelic Wing"
+	quest.4C000000000000D0.title: "Barbaric Blade"
 	quest.4C000000000000D1.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D1.title: "Barbaric Blade"
+	quest.4C000000000000D1.title: "Barbaric Instinct"
 	quest.4C000000000000D2.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D2.title: "Barbaric Instinct"
+	quest.4C000000000000D2.title: "Barbaric Roar"
 	quest.4C000000000000D3.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D3.title: "Barbaric Roar"
+	quest.4C000000000000D3.title: "Barbaric Wrath"
 	quest.4C000000000000D4.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D4.title: "Barbaric Wrath"
+	quest.4C000000000000D4.title: "Bless of Lava Walker"
 	quest.4C000000000000D5.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D5.title: "Bless of Lava Walker"
+	quest.4C000000000000D5.title: "Bless of Snow Walker"
 	quest.4C000000000000D6.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D6.title: "Bless of Snow Walker"
+	quest.4C000000000000D6.title: "Charm Of Accuracy"
 	quest.4C000000000000D7.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D7.title: "Charm Of Accuracy"
+	quest.4C000000000000D7.title: "Charm Of Archery"
 	quest.4C000000000000D8.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D8.title: "Charm Of Archery"
+	quest.4C000000000000D8.title: "Charm Of Armor"
 	quest.4C000000000000D9.quest_desc: ["Pandora slot."]
-	quest.4C000000000000D9.title: "Charm Of Armor"
+	quest.4C000000000000D9.title: "Charm of Calmness"
 	quest.4C000000000000DA.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DA.title: "Charm of Calmness"
+	quest.4C000000000000DA.title: "Charm Of Critical"
 	quest.4C000000000000DB.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DB.title: "Charm Of Critical"
+	quest.4C000000000000DB.title: "Charm Of Damage"
 	quest.4C000000000000DC.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DC.title: "Charm Of Damage"
+	quest.4C000000000000DC.title: "Charm Of Explosion"
 	quest.4C000000000000DD.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DD.title: "Charm Of Explosion"
+	quest.4C000000000000DD.title: "Charm Of Health"
 	quest.4C000000000000DE.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DE.title: "Charm Of Health"
+	quest.4C000000000000DE.title: "Charm Of Heavy Weapon"
 	quest.4C000000000000DF.quest_desc: ["Pandora slot."]
-	quest.4C000000000000DF.title: "Charm Of Heavy Weapon"
+	quest.4C000000000000DF.title: "Charm Of Luck"
 	quest.4C000000000000E0.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E0.title: "Charm Of Luck"
+	quest.4C000000000000E0.title: "Charm Of Magic"
 	quest.4C000000000000E1.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E1.title: "Charm Of Magic"
+	quest.4C000000000000E1.title: "Charm Of Night Vision"
 	quest.4C000000000000E2.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E2.title: "Charm Of Night Vision"
+	quest.4C000000000000E2.title: "Charm Of Protection"
 	quest.4C000000000000E3.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E3.title: "Charm Of Protection"
+	quest.4C000000000000E3.title: "Charm Of Speed"
 	quest.4C000000000000E4.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E4.title: "Charm Of Speed"
+	quest.4C000000000000E4.title: "Crown of Demon"
 	quest.4C000000000000E5.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E5.title: "Crown of Demon"
+	quest.4C000000000000E5.title: "Curse Of Flesh"
 	quest.4C000000000000E6.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E6.title: "Curse Of Flesh"
+	quest.4C000000000000E6.title: "Curse Of Inertia"
 	quest.4C000000000000E7.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E7.title: "Curse Of Inertia"
+	quest.4C000000000000E7.title: "Curse Of Metabolism"
 	quest.4C000000000000E8.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E8.title: "Curse Of Metabolism"
+	quest.4C000000000000E8.title: "Curse Of Proximity"
 	quest.4C000000000000E9.quest_desc: ["Pandora slot."]
-	quest.4C000000000000E9.title: "Curse Of Proximity"
+	quest.4C000000000000E9.title: "Curse Of Prudence"
 	quest.4C000000000000EA.quest_desc: ["Pandora slot."]
-	quest.4C000000000000EA.title: "Curse Of Prudence"
+	quest.4C000000000000EA.title: "Curse Of Spell"
 	quest.4C000000000000EB.quest_desc: ["Pandora slot."]
-	quest.4C000000000000EB.title: "Curse Of Spell"
+	quest.4C000000000000EB.title: "Curse Of Tension"
 	quest.4C000000000000EC.quest_desc: ["Pandora slot."]
-	quest.4C000000000000EC.title: "Curse Of Tension"
+	quest.4C000000000000EC.title: "Curse Redirection"
 	quest.4C000000000000ED.quest_desc: ["Pandora slot."]
-	quest.4C000000000000ED.title: "Curse Redirection"
+	quest.4C000000000000ED.title: "Cursed Soul Crystal"
 	quest.4C000000000000EE.quest_desc: ["Pandora slot."]
-	quest.4C000000000000EE.title: "Cursed Soul Crystal"
+	quest.4C000000000000EE.title: "Earth Crush"
 	quest.4C000000000000EF.quest_desc: ["Pandora slot."]
-	quest.4C000000000000EF.title: "Earth Crush"
+	quest.4C000000000000EF.title: "Evil Spirit Awakening"
 	quest.4C000000000000F0.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F0.title: "Evil Spirit Awakening"
+	quest.4C000000000000F0.title: "Evil Spirit Curse"
 	quest.4C000000000000F1.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F1.title: "Evil Spirit Curse"
+	quest.4C000000000000F1.title: "Evil Spirit Evoke"
 	quest.4C000000000000F2.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F2.title: "Evil Spirit Evoke"
+	quest.4C000000000000F2.title: "Evil Spirit Ritual"
 	quest.4C000000000000F3.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F3.title: "Evil Spirit Ritual"
+	quest.4C000000000000F3.title: "Evil Spirit Walk"
 	quest.4C000000000000F4.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F4.title: "Evil Spirit Walk"
+	quest.4C000000000000F4.title: "Eye of Cursed Souls"
 	quest.4C000000000000F5.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F5.title: "Eye of Cursed Souls"
+	quest.4C000000000000F5.title: "Flaming Explosion"
 	quest.4C000000000000F6.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F6.title: "Flaming Explosion"
+	quest.4C000000000000F6.title: "Golden Heart"
 	quest.4C000000000000F7.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F7.title: "Golden Heart"
+	quest.4C000000000000F7.title: "Hellfire Reformation"
 	quest.4C000000000000F8.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F8.title: "Hellfire Reformation"
+	quest.4C000000000000F8.title: "Hellfire Skull"
 	quest.4C000000000000F9.quest_desc: ["Pandora slot."]
-	quest.4C000000000000F9.title: "Hellfire Skull"
+	quest.4C000000000000F9.title: "Mini Beacon"
 	quest.4C000000000000FA.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FA.title: "Mini Beacon"
+	quest.4C000000000000FA.title: "Mini Beacon: Haste"
 	quest.4C000000000000FB.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FB.title: "Mini Beacon: Haste"
+	quest.4C000000000000FB.title: "Mini Beacon: Jump Boost"
 	quest.4C000000000000FC.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FC.title: "Mini Beacon: Jump Boost"
+	quest.4C000000000000FC.title: "Mini Beacon: Regeneration"
 	quest.4C000000000000FD.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FD.title: "Mini Beacon: Regeneration"
+	quest.4C000000000000FD.title: "Mini Beacon: Resistance"
 	quest.4C000000000000FE.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FE.title: "Mini Beacon: Resistance"
+	quest.4C000000000000FE.title: "Mini Beacon: Speed"
 	quest.4C000000000000FF.quest_desc: ["Pandora slot."]
-	quest.4C000000000000FF.title: "Mini Beacon: Speed"
+	quest.4C000000000000FF.title: "Mini Beacon: Strength"
 	quest.4C00000000000100.quest_desc: ["Pandora slot."]
-	quest.4C00000000000100.title: "Mini Beacon: Strength"
+	quest.4C00000000000100.title: "Orb Of Executor"
 	quest.4C00000000000101.quest_desc: ["Pandora slot."]
-	quest.4C00000000000101.title: "Orb Of Executor"
+	quest.4C00000000000101.title: "Orb of Explosion Rejection"
 	quest.4C00000000000102.quest_desc: ["Pandora slot."]
-	quest.4C00000000000102.title: "Orb of Explosion Rejection"
+	quest.4C00000000000102.title: "Orb of Fire Rejection"
 	quest.4C00000000000103.quest_desc: ["Pandora slot."]
-	quest.4C00000000000103.title: "Orb of Fire Rejection"
+	quest.4C00000000000103.title: "Orb of Magic Rejection"
 	quest.4C00000000000104.quest_desc: ["Pandora slot."]
-	quest.4C00000000000104.title: "Orb of Magic Rejection"
+	quest.4C00000000000104.title: "Orb of Master"
 	quest.4C00000000000105.quest_desc: ["Pandora slot."]
-	quest.4C00000000000105.title: "Orb of Master"
+	quest.4C00000000000105.title: "Orb of Nature"
 	quest.4C00000000000106.quest_desc: ["Pandora slot."]
-	quest.4C00000000000106.title: "Orb of Nature"
+	quest.4C00000000000106.title: "Orb of Projectile Rejection"
 	quest.4C00000000000107.quest_desc: ["Pandora slot."]
-	quest.4C00000000000107.title: "Orb of Projectile Rejection"
+	quest.4C00000000000107.title: "Orb Of Prosecutor"
 	quest.4C00000000000108.quest_desc: ["Pandora slot."]
-	quest.4C00000000000108.title: "Orb Of Prosecutor"
+	quest.4C00000000000108.title: "Orb Of Soulguard"
 	quest.4C00000000000109.quest_desc: ["Pandora slot."]
-	quest.4C00000000000109.title: "Orb Of Soulguard"
+	quest.4C00000000000109.title: "Orb of Stability"
 	quest.4C0000000000010A.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010A.title: "Orb of Stability"
+	quest.4C0000000000010A.title: "Primal Force"
 	quest.4C0000000000010B.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010B.title: "Primal Force"
+	quest.4C0000000000010B.title: "Seal Of Swords"
 	quest.4C0000000000010C.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010C.title: "Seal Of Swords"
+	quest.4C0000000000010C.title: "Shadow Consolidation"
 	quest.4C0000000000010D.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010D.title: "Shadow Consolidation"
+	quest.4C0000000000010D.title: "Shadow Convergence"
 	quest.4C0000000000010E.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010E.title: "Shadow Convergence"
+	quest.4C0000000000010E.title: "Shadow Core"
 	quest.4C0000000000010F.quest_desc: ["Pandora slot."]
-	quest.4C0000000000010F.title: "Shadow Core"
+	quest.4C0000000000010F.title: "Shadow Reformation"
 	quest.4C00000000000110.quest_desc: ["Pandora slot."]
-	quest.4C00000000000110.title: "Shadow Reformation"
+	quest.4C00000000000110.title: "Spell Singularity"
 	quest.4C00000000000111.quest_desc: ["Pandora slot."]
-	quest.4C00000000000111.title: "Spell Singularity"
+	quest.4C00000000000111.title: "Void Overflow"
 	quest.4C00000000000112.quest_desc: ["Pandora slot."]
-	quest.4C00000000000112.title: "Void Overflow"
+	quest.4C00000000000112.title: "Waving Spell"
 	quest.4C00000000000113.quest_desc: ["Pandora slot."]
-	quest.4C00000000000113.title: "Waving Spell"
-	quest.4C00000000000114.quest_desc: ["Pandora slot."]
-	quest.4C00000000000114.title: "Wind Thrust"
+	quest.4C00000000000113.title: "Wind Thrust"
+	quest.4C00000000000114.quest_desc: ["Charm slot."]
+	quest.4C00000000000114.title: "Abnormal Amulet"
 	quest.4C00000000000115.quest_desc: ["Charm slot."]
-	quest.4C00000000000115.title: "Abnormal Amulet"
+	quest.4C00000000000115.title: "Anvil Amulet"
 	quest.4C00000000000116.quest_desc: ["Charm slot."]
-	quest.4C00000000000116.title: "Anvil Amulet"
+	quest.4C00000000000116.title: "Blade of the Legate"
 	quest.4C00000000000117.quest_desc: ["Charm slot."]
-	quest.4C00000000000117.title: "Blade of the Legate"
+	quest.4C00000000000117.title: "Cat Amulet"
 	quest.4C00000000000118.quest_desc: ["Charm slot."]
-	quest.4C00000000000118.title: "Cat Amulet"
+	quest.4C00000000000118.title: "Chaotic Looting Charm"
 	quest.4C00000000000119.quest_desc: ["Charm slot."]
-	quest.4C00000000000119.title: "Chaotic Looting Charm"
+	quest.4C00000000000119.title: "Potion Charm"
 	quest.4C0000000000011A.quest_desc: ["Charm slot."]
-	quest.4C0000000000011A.title: "Potion Charm"
+	quest.4C0000000000011A.title: "Charm of Hell Blade"
 	quest.4C0000000000011B.quest_desc: ["Charm slot."]
-	quest.4C0000000000011B.title: "Charm of Hell Blade"
+	quest.4C0000000000011B.title: "Charm of Keeping I"
 	quest.4C0000000000011C.quest_desc: ["Charm slot."]
-	quest.4C0000000000011C.title: "Charm of Keeping I"
+	quest.4C0000000000011C.title: "Charm of Keeping II"
 	quest.4C0000000000011D.quest_desc: ["Charm slot."]
-	quest.4C0000000000011D.title: "Charm of Keeping II"
+	quest.4C0000000000011D.title: "Charm of Keeping III"
 	quest.4C0000000000011E.quest_desc: ["Charm slot."]
-	quest.4C0000000000011E.title: "Charm of Keeping III"
+	quest.4C0000000000011E.title: "Charm of Life I"
 	quest.4C0000000000011F.quest_desc: ["Charm slot."]
-	quest.4C0000000000011F.title: "Charm of Life I"
+	quest.4C0000000000011F.title: "Charm of Life II"
 	quest.4C00000000000120.quest_desc: ["Charm slot."]
-	quest.4C00000000000120.title: "Charm of Life II"
+	quest.4C00000000000120.title: "Charm of Scorched Sun"
 	quest.4C00000000000121.quest_desc: ["Charm slot."]
-	quest.4C00000000000121.title: "Charm of Scorched Sun"
+	quest.4C00000000000121.title: "Charm of Treasure Hunter"
 	quest.4C00000000000122.quest_desc: ["Charm slot."]
-	quest.4C00000000000122.title: "Charm of Treasure Hunter"
+	quest.4C00000000000122.title: "Comrade Amulet"
 	quest.4C00000000000123.quest_desc: ["Charm slot."]
-	quest.4C00000000000123.title: "Comrade Amulet"
+	quest.4C00000000000123.title: "Dog Amulet"
 	quest.4C00000000000124.quest_desc: ["Charm slot."]
-	quest.4C00000000000124.title: "Dog Amulet"
+	quest.4C00000000000124.title: "Electromagnet"
 	quest.4C00000000000125.quest_desc: ["Charm slot."]
-	quest.4C00000000000125.title: "Electromagnet"
+	quest.4C00000000000125.title: "Emblem of Bloodstained Valor"
 	quest.4C00000000000126.quest_desc: ["Charm slot."]
-	quest.4C00000000000126.title: "Emblem of Bloodstained Valor"
+	quest.4C00000000000126.title: "Emblem of Monster Slayer"
 	quest.4C00000000000127.quest_desc: ["Charm slot."]
-	quest.4C00000000000127.title: "Emblem of Monster Slayer"
+	quest.4C00000000000127.title: "Emerald Amulet"
 	quest.4C00000000000128.quest_desc: ["Charm slot."]
-	quest.4C00000000000128.title: "Emerald Amulet"
+	quest.4C00000000000128.title: "Enchanter's Pearl"
 	quest.4C00000000000129.quest_desc: ["Charm slot."]
-	quest.4C00000000000129.title: "Enchanter's Pearl"
+	quest.4C00000000000129.title: "Enigmatic Eye"
 	quest.4C0000000000012A.quest_desc: ["Charm slot."]
-	quest.4C0000000000012A.title: "Enigmatic Eye"
+	quest.4C0000000000012A.title: "Eternal Totem Of Dream"
 	quest.4C0000000000012B.quest_desc: ["Charm slot."]
-	quest.4C0000000000012B.title: "Eternal Totem Of Dream"
+	quest.4C0000000000012B.title: "Ethereal Forging Charm"
 	quest.4C0000000000012C.quest_desc: ["Charm slot."]
-	quest.4C0000000000012C.title: "Ethereal Forging Charm"
+	quest.4C0000000000012C.title: "Evil Engine"
 	quest.4C0000000000012D.quest_desc: ["Charm slot."]
-	quest.4C0000000000012D.title: "Evil Engine"
+	quest.4C0000000000012D.title: "Feather Amulet"
 	quest.4C0000000000012E.quest_desc: ["Charm slot."]
-	quest.4C0000000000012E.title: "Feather Amulet"
+	quest.4C0000000000012E.title: "Gem Amulet"
 	quest.4C0000000000012F.quest_desc: ["Charm slot."]
-	quest.4C0000000000012F.title: "Gem Amulet"
+	quest.4C0000000000012F.title: "Hydra Heart"
 	quest.4C00000000000130.quest_desc: ["Charm slot."]
-	quest.4C00000000000130.title: "Hydra Heart"
+	quest.4C00000000000130.title: "Infinity Totem"
 	quest.4C00000000000131.quest_desc: ["Charm slot."]
-	quest.4C00000000000131.title: "Infinity Totem"
+	quest.4C00000000000131.title: "Magical Looting Charm"
 	quest.4C00000000000132.quest_desc: ["Charm slot."]
-	quest.4C00000000000132.title: "Magical Looting Charm"
+	quest.4C00000000000132.title: "Miraculous Looting Charm"
 	quest.4C00000000000133.quest_desc: ["Charm slot."]
-	quest.4C00000000000133.title: "Miraculous Looting Charm"
+	quest.4C00000000000133.title: "Nature Amulet"
 	quest.4C00000000000134.quest_desc: ["Charm slot."]
-	quest.4C00000000000134.title: "Nature Amulet"
+	quest.4C00000000000134.title: "Pendant of Harmony"
 	quest.4C00000000000135.quest_desc: ["Charm slot."]
-	quest.4C00000000000135.title: "Pendant of Harmony"
+	quest.4C00000000000135.title: "Pewter Monolith"
 	quest.4C00000000000136.quest_desc: ["Charm slot."]
-	quest.4C00000000000136.title: "Pewter Monolith"
+	quest.4C00000000000136.title: "Pocket Of Restoration"
 	quest.4C00000000000137.quest_desc: ["Charm slot."]
-	quest.4C00000000000137.title: "Pocket Of Restoration"
+	quest.4C00000000000137.title: "Prosperity Amulet"
 	quest.4C00000000000138.quest_desc: ["Charm slot."]
-	quest.4C00000000000138.title: "Prosperity Amulet"
+	quest.4C00000000000138.title: "Ruby Amulet"
 	quest.4C00000000000139.quest_desc: ["Charm slot."]
-	quest.4C00000000000139.title: "Ruby Amulet"
+	quest.4C00000000000139.title: "Sapphire Amulet"
 	quest.4C0000000000013A.quest_desc: ["Charm slot."]
-	quest.4C0000000000013A.title: "Sapphire Amulet"
+	quest.4C0000000000013A.title: "Silence Amulet"
 	quest.4C0000000000013B.quest_desc: ["Charm slot."]
-	quest.4C0000000000013B.title: "Silence Amulet"
+	quest.4C0000000000013B.title: "soul device"
 	quest.4C0000000000013C.quest_desc: ["Charm slot."]
-	quest.4C0000000000013C.title: "soul device"
+	quest.4C0000000000013C.title: "Soul Steel Component"
 	quest.4C0000000000013D.quest_desc: ["Charm slot."]
-	quest.4C0000000000013D.title: "Soul Steel Component"
+	quest.4C0000000000013D.title: "Spelltuner"
 	quest.4C0000000000013E.quest_desc: ["Charm slot."]
-	quest.4C0000000000013E.title: "Spelltuner"
+	quest.4C0000000000013E.title: "Staff of Travelling"
 	quest.4C0000000000013F.quest_desc: ["Charm slot."]
-	quest.4C0000000000013F.title: "Staff of Travelling"
+	quest.4C0000000000013F.title: "The Forger's Gem"
 	quest.4C00000000000140.quest_desc: ["Charm slot."]
-	quest.4C00000000000140.title: "The Forger's Gem"
+	quest.4C00000000000140.title: "The Prefect's Ring"
 	quest.4C00000000000141.quest_desc: ["Charm slot."]
-	quest.4C00000000000141.title: "The Prefect's Ring"
+	quest.4C00000000000141.title: "The Tribune's Medallion"
 	quest.4C00000000000142.quest_desc: ["Charm slot."]
-	quest.4C00000000000142.title: "The Tribune's Medallion"
+	quest.4C00000000000142.title: "Token of Gratitude"
 	quest.4C00000000000143.quest_desc: ["Charm slot."]
-	quest.4C00000000000143.title: "Token of Gratitude"
+	quest.4C00000000000143.title: "Topaz Amulet"
 	quest.4C00000000000144.quest_desc: ["Charm slot."]
-	quest.4C00000000000144.title: "Topaz Amulet"
+	quest.4C00000000000144.title: "Tophat"
 	quest.4C00000000000145.quest_desc: ["Charm slot."]
-	quest.4C00000000000145.title: "Tophat"
+	quest.4C00000000000145.title: "Totem Of Dream"
 	quest.4C00000000000146.quest_desc: ["Charm slot."]
-	quest.4C00000000000146.title: "Totem Of Dream"
+	quest.4C00000000000146.title: "Totem Of The Sea"
 	quest.4C00000000000147.quest_desc: ["Charm slot."]
-	quest.4C00000000000147.title: "Totem Of The Sea"
-	quest.4C00000000000148.quest_desc: ["Charm slot."]
-	quest.4C00000000000148.title: "Unpolished Looting Charm"
+	quest.4C00000000000147.title: "Unpolished Looting Charm"
+	quest.4C00000000000148.quest_desc: ["Ring slot."]
+	quest.4C00000000000148.title: "Chargebind Ring"
 	quest.4C00000000000149.quest_desc: ["Ring slot."]
-	quest.4C00000000000149.title: "Chargebind Ring"
+	quest.4C00000000000149.title: "Dawn Ring"
 	quest.4C0000000000014A.quest_desc: ["Ring slot."]
-	quest.4C0000000000014A.title: "Dawn Ring"
+	quest.4C0000000000014A.title: "Emerald Stoneplate Ring"
 	quest.4C0000000000014B.quest_desc: ["Ring slot."]
-	quest.4C0000000000014B.title: "Emerald Stoneplate Ring"
+	quest.4C0000000000014B.title: "Fireward Ring"
 	quest.4C0000000000014C.quest_desc: ["Ring slot."]
-	quest.4C0000000000014C.title: "Fireward Ring"
+	quest.4C0000000000014C.title: "Fluxbound Ring"
 	quest.4C0000000000014D.quest_desc: ["Ring slot."]
-	quest.4C0000000000014D.title: "Fluxbound Ring"
+	quest.4C0000000000014D.title: "Frostward Ring"
 	quest.4C0000000000014E.quest_desc: ["Ring slot."]
-	quest.4C0000000000014E.title: "Frostward Ring"
+	quest.4C0000000000014E.title: "Galevent Ring"
 	quest.4C0000000000014F.quest_desc: ["Ring slot."]
-	quest.4C0000000000014F.title: "Galevent Ring"
+	quest.4C0000000000014F.title: "Gilded Ring"
 	quest.4C00000000000150.quest_desc: ["Ring slot."]
-	quest.4C00000000000150.title: "Gilded Ring"
+	quest.4C00000000000150.title: "Mana Ring"
 	quest.4C00000000000151.quest_desc: ["Ring slot."]
-	quest.4C00000000000151.title: "Mana Ring"
+	quest.4C00000000000151.title: "Ornate Ring"
 	quest.4C00000000000152.quest_desc: ["Ring slot."]
-	quest.4C00000000000152.title: "Ornate Ring"
+	quest.4C00000000000152.title: "Poisonward Ring"
 	quest.4C00000000000153.quest_desc: ["Ring slot."]
-	quest.4C00000000000153.title: "Poisonward Ring"
+	quest.4C00000000000153.title: "Affinity Ring"
 	quest.4C00000000000154.quest_desc: ["Ring slot."]
-	quest.4C00000000000154.title: "Affinity Ring"
+	quest.4C00000000000154.title: "Ring of Alchemical Mastery"
 	quest.4C00000000000155.quest_desc: ["Ring slot."]
-	quest.4C00000000000155.title: "Ring of Alchemical Mastery"
+	quest.4C00000000000155.title: "Ring of Arcane Prowess"
 	quest.4C00000000000156.quest_desc: ["Ring slot."]
-	quest.4C00000000000156.title: "Ring of Arcane Prowess"
+	quest.4C00000000000156.title: "Ring Of Corrosion"
 	quest.4C00000000000157.quest_desc: ["Ring slot."]
-	quest.4C00000000000157.title: "Ring Of Corrosion"
+	quest.4C00000000000157.title: "Ring of Curative Talent"
 	quest.4C00000000000158.quest_desc: ["Ring slot."]
-	quest.4C00000000000158.title: "Ring of Curative Talent"
+	quest.4C00000000000158.title: "Ring of Desperate Voracity"
 	quest.4C00000000000159.quest_desc: ["Ring slot."]
-	quest.4C00000000000159.title: "Ring of Desperate Voracity"
+	quest.4C00000000000159.title: "Ring of Distorted Authority"
 	quest.4C0000000000015A.quest_desc: ["Ring slot."]
-	quest.4C0000000000015A.title: "Ring of Distorted Authority"
+	quest.4C0000000000015A.title: "Ring Of Divinity"
 	quest.4C0000000000015B.quest_desc: ["Ring slot."]
-	quest.4C0000000000015B.title: "Ring Of Divinity"
+	quest.4C0000000000015B.title: "Ring of Echoing Arcana"
 	quest.4C0000000000015C.quest_desc: ["Ring slot."]
-	quest.4C0000000000015C.title: "Ring of Echoing Arcana"
+	quest.4C0000000000015C.title: "Ring of Efficiency"
 	quest.4C0000000000015D.quest_desc: ["Ring slot."]
-	quest.4C0000000000015D.title: "Ring of Efficiency"
+	quest.4C0000000000015D.title: "Ring of Esoteric Spoils"
 	quest.4C0000000000015E.quest_desc: ["Ring slot."]
-	quest.4C0000000000015E.title: "Ring of Esoteric Spoils"
+	quest.4C0000000000015E.title: "Ring of Expediency"
 	quest.4C0000000000015F.quest_desc: ["Ring slot."]
-	quest.4C0000000000015F.title: "Ring of Expediency"
+	quest.4C0000000000015F.title: "Ring of Expulsion"
 	quest.4C00000000000160.quest_desc: ["Ring slot."]
-	quest.4C00000000000160.title: "Ring of Expulsion"
+	quest.4C00000000000160.title: "Ring of Growing Flesh"
 	quest.4C00000000000161.quest_desc: ["Ring slot."]
-	quest.4C00000000000161.title: "Ring of Growing Flesh"
+	quest.4C00000000000161.title: "Ring of Grudged"
 	quest.4C00000000000162.quest_desc: ["Ring slot."]
-	quest.4C00000000000162.title: "Ring of Grudged"
+	quest.4C00000000000162.title: "Ring of Gruesome Concentration"
 	quest.4C00000000000163.quest_desc: ["Ring slot."]
-	quest.4C00000000000163.title: "Ring of Gruesome Concentration"
+	quest.4C00000000000163.title: "Ring Of Healing"
 	quest.4C00000000000164.quest_desc: ["Ring slot."]
-	quest.4C00000000000164.title: "Ring Of Healing"
+	quest.4C00000000000164.title: "Ring Of Incarceration"
 	quest.4C00000000000165.quest_desc: ["Ring slot."]
-	quest.4C00000000000165.title: "Ring Of Incarceration"
+	quest.4C00000000000165.title: "Ring of Invisibility"
 	quest.4C00000000000166.quest_desc: ["Ring slot."]
-	quest.4C00000000000166.title: "Ring of Invisibility"
+	quest.4C00000000000166.title: "Ring Of Life"
 	quest.4C00000000000167.quest_desc: ["Ring slot."]
-	quest.4C00000000000167.title: "Ring Of Life"
+	quest.4C00000000000167.title: "Ring of Mana"
 	quest.4C00000000000168.quest_desc: ["Ring slot."]
-	quest.4C00000000000168.title: "Ring of Mana"
+	quest.4C00000000000168.title: "Ring of Manaweaving"
 	quest.4C00000000000169.quest_desc: ["Ring slot."]
-	quest.4C00000000000169.title: "Ring of Manaweaving"
+	quest.4C00000000000169.title: "Ring Of Ocean"
 	quest.4C0000000000016A.quest_desc: ["Ring slot."]
-	quest.4C0000000000016A.title: "Ring Of Ocean"
+	quest.4C0000000000016A.title: "Ring of Recovery"
 	quest.4C0000000000016B.quest_desc: ["Ring slot."]
-	quest.4C0000000000016B.title: "Ring of Recovery"
+	quest.4C0000000000016B.title: "Ring Of Reflection"
 	quest.4C0000000000016C.quest_desc: ["Ring slot."]
-	quest.4C0000000000016C.title: "Ring Of Reflection"
+	quest.4C0000000000016C.title: "Ring of the Demolitionist"
 	quest.4C0000000000016D.quest_desc: ["Ring slot."]
-	quest.4C0000000000016D.title: "Ring of the Demolitionist"
+	quest.4C0000000000016D.title: "Ring of the Endless Well"
 	quest.4C0000000000016E.quest_desc: ["Ring slot."]
-	quest.4C0000000000016E.title: "Ring of the Endless Well"
+	quest.4C0000000000016E.title: "Ring of the Hoarder"
 	quest.4C0000000000016F.quest_desc: ["Ring slot."]
-	quest.4C0000000000016F.title: "Ring of the Hoarder"
+	quest.4C0000000000016F.title: "Ring of the Howling Maelstrom"
 	quest.4C00000000000170.quest_desc: ["Ring slot."]
-	quest.4C00000000000170.title: "Ring of the Howling Maelstrom"
+	quest.4C00000000000170.title: "Ring of the Lurker"
 	quest.4C00000000000171.quest_desc: ["Ring slot."]
-	quest.4C00000000000171.title: "Ring of the Lurker"
+	quest.4C00000000000171.title: "Ring of the Rising Edge"
 	quest.4C00000000000172.quest_desc: ["Ring slot."]
-	quest.4C00000000000172.title: "Ring of the Rising Edge"
+	quest.4C00000000000172.title: "Ring of Visibility"
 	quest.4C00000000000173.quest_desc: ["Ring slot."]
-	quest.4C00000000000173.title: "Ring of Visibility"
+	quest.4C00000000000173.title: "Signet of the Betrayer"
 	quest.4C00000000000174.quest_desc: ["Ring slot."]
-	quest.4C00000000000174.title: "Signet of the Betrayer"
+	quest.4C00000000000174.title: "Silver Ring"
 	quest.4C00000000000175.quest_desc: ["Ring slot."]
-	quest.4C00000000000175.title: "Silver Ring"
+	quest.4C00000000000175.title: "Svarog's Ring"
 	quest.4C00000000000176.quest_desc: ["Ring slot."]
-	quest.4C00000000000176.title: "Svarog's Ring"
+	quest.4C00000000000176.title: "Torsion Ring"
 	quest.4C00000000000177.quest_desc: ["Ring slot."]
-	quest.4C00000000000177.title: "Torsion Ring"
+	quest.4C00000000000177.title: "Umbral Ring"
 	quest.4C00000000000178.quest_desc: ["Ring slot."]
-	quest.4C00000000000178.title: "Umbral Ring"
-	quest.4C00000000000179.quest_desc: ["Ring slot."]
-	quest.4C00000000000179.title: "Wicked Bone Ring"
+	quest.4C00000000000178.title: "Wicked Bone Ring"
+	quest.4C00000000000179.quest_desc: ["Necklace slot."]
+	quest.4C00000000000179.title: "Amethyst Resonance Charm"
 	quest.4C0000000000017A.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017A.title: "Amethyst Resonance Charm"
+	quest.4C0000000000017A.title: "Amulet of Concentration"
 	quest.4C0000000000017B.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017B.title: "Amulet of Concentration"
+	quest.4C0000000000017B.title: "Amulet of Hidden Treasure"
 	quest.4C0000000000017C.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017C.title: "Amulet of Hidden Treasure"
+	quest.4C0000000000017C.title: "Amulet of Teleportation"
 	quest.4C0000000000017D.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017D.title: "Amulet of Teleportation"
+	quest.4C0000000000017D.title: "Amulet of Warding"
 	quest.4C0000000000017E.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017E.title: "Amulet of Warding"
+	quest.4C0000000000017E.title: "Berserker Soul Amulet"
 	quest.4C0000000000017F.quest_desc: ["Necklace slot."]
-	quest.4C0000000000017F.title: "Berserker Soul Amulet"
+	quest.4C0000000000017F.title: "Broken Ankh"
 	quest.4C00000000000180.quest_desc: ["Necklace slot."]
-	quest.4C00000000000180.title: "Broken Ankh"
+	quest.4C00000000000180.title: "Burning Core"
 	quest.4C00000000000181.quest_desc: ["Necklace slot."]
-	quest.4C00000000000181.title: "Burning Core"
+	quest.4C00000000000181.title: "Charm of Shrinking"
 	quest.4C00000000000182.quest_desc: ["Necklace slot."]
-	quest.4C00000000000182.title: "Charm of Shrinking"
+	quest.4C00000000000182.title: "Charm of Sinking"
 	quest.4C00000000000183.quest_desc: ["Necklace slot."]
-	quest.4C00000000000183.title: "Charm of Sinking"
+	quest.4C00000000000183.title: "Conjurer's Talisman"
 	quest.4C00000000000184.quest_desc: ["Necklace slot."]
-	quest.4C00000000000184.title: "Conjurer's Talisman"
+	quest.4C00000000000184.title: "Cross Necklace"
 	quest.4C00000000000185.quest_desc: ["Necklace slot."]
-	quest.4C00000000000185.title: "Cross Necklace"
+	quest.4C00000000000185.title: "Elder's Necklace"
 	quest.4C00000000000186.quest_desc: ["Necklace slot."]
-	quest.4C00000000000186.title: "Elder's Necklace"
+	quest.4C00000000000186.title: "Enlightened Amulet"
 	quest.4C00000000000187.quest_desc: ["Necklace slot."]
-	quest.4C00000000000187.title: "Enlightened Amulet"
+	quest.4C00000000000187.title: "Falling well"
 	quest.4C00000000000188.quest_desc: ["Necklace slot."]
-	quest.4C00000000000188.title: "Falling well"
+	quest.4C00000000000188.title: "Flame Pendant"
 	quest.4C00000000000189.quest_desc: ["Necklace slot."]
-	quest.4C00000000000189.title: "Flame Pendant"
+	quest.4C00000000000189.title: "Fortuitous Amulet"
 	quest.4C0000000000018A.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018A.title: "Fortuitous Amulet"
+	quest.4C0000000000018A.title: "Gills"
 	quest.4C0000000000018B.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018B.title: "Gills"
+	quest.4C0000000000018B.title: "Greater Conjurer's Talisman"
 	quest.4C0000000000018C.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018C.title: "Greater Conjurer's Talisman"
+	quest.4C0000000000018C.title: "Greater Potion Pendant"
 	quest.4C0000000000018D.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018D.title: "Greater Potion Pendant"
+	quest.4C0000000000018D.title: "Heavy Chain"
 	quest.4C0000000000018E.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018E.title: "Heavy Chain"
+	quest.4C0000000000018E.title: "Laurels of Serenity"
 	quest.4C0000000000018F.quest_desc: ["Necklace slot."]
-	quest.4C0000000000018F.title: "Laurels of Serenity"
+	quest.4C0000000000018F.title: "Lesser Potion Pendant"
 	quest.4C00000000000190.quest_desc: ["Necklace slot."]
-	quest.4C00000000000190.title: "Lesser Potion Pendant"
+	quest.4C00000000000190.title: "Life-Severing Blade"
 	quest.4C00000000000191.quest_desc: ["Necklace slot."]
-	quest.4C00000000000191.title: "Life-Severing Blade"
+	quest.4C00000000000191.title: "Lucky Scarf"
 	quest.4C00000000000192.quest_desc: ["Necklace slot."]
-	quest.4C00000000000192.title: "Lucky Scarf"
+	quest.4C00000000000192.title: "Necklace of Blissful Harmony"
 	quest.4C00000000000193.quest_desc: ["Necklace slot."]
-	quest.4C00000000000193.title: "Necklace of Blissful Harmony"
+	quest.4C00000000000193.title: "Necklace of the Hidden Blade"
 	quest.4C00000000000194.quest_desc: ["Necklace slot."]
-	quest.4C00000000000194.title: "Necklace of the Hidden Blade"
+	quest.4C00000000000194.title: "Necklace of the Mystic Mirror"
 	quest.4C00000000000195.quest_desc: ["Necklace slot."]
-	quest.4C00000000000195.title: "Necklace of the Mystic Mirror"
+	quest.4C00000000000195.title: "Necklace of the Narrow Edge"
 	quest.4C00000000000196.quest_desc: ["Necklace slot."]
-	quest.4C00000000000196.title: "Necklace of the Narrow Edge"
+	quest.4C00000000000196.title: "Necklace of the Watcher"
 	quest.4C00000000000197.quest_desc: ["Necklace slot."]
-	quest.4C00000000000197.title: "Necklace of the Watcher"
+	quest.4C00000000000197.title: "Necklace of Torngarsuk"
 	quest.4C00000000000198.quest_desc: ["Necklace slot."]
-	quest.4C00000000000198.title: "Necklace of Torngarsuk"
+	quest.4C00000000000198.title: "Ornate Necklace"
 	quest.4C00000000000199.quest_desc: ["Necklace slot."]
-	quest.4C00000000000199.title: "Ornate Necklace"
+	quest.4C00000000000199.title: "Panic Necklace"
 	quest.4C0000000000019A.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019A.title: "Panic Necklace"
+	quest.4C0000000000019A.title: "Pewter Blade Necklace"
 	quest.4C0000000000019B.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019B.title: "Pewter Blade Necklace"
+	quest.4C0000000000019B.title: "Resonant Heart"
 	quest.4C0000000000019C.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019C.title: "Resonant Heart"
+	quest.4C0000000000019C.title: "Scarab Amulet"
 	quest.4C0000000000019D.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019D.title: "Scarab Amulet"
+	quest.4C0000000000019D.title: "Scarf of Invisibility"
 	quest.4C0000000000019E.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019E.title: "Scarf of Invisibility"
+	quest.4C0000000000019E.title: "Shieldgrasp Amulet"
 	quest.4C0000000000019F.quest_desc: ["Necklace slot."]
-	quest.4C0000000000019F.title: "Shieldgrasp Amulet"
+	quest.4C0000000000019F.title: "Shock Pendant"
 	quest.4C000000000001A0.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A0.title: "Shock Pendant"
+	quest.4C000000000001A0.title: "Skull Pendant"
 	quest.4C000000000001A1.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A1.title: "Skull Pendant"
+	quest.4C000000000001A1.title: "Summoner's Necklace"
 	quest.4C000000000001A2.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A2.title: "Summoner's Necklace"
+	quest.4C000000000001A2.title: "Thorn Pendant"
 	quest.4C000000000001A3.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A3.title: "Thorn Pendant"
+	quest.4C000000000001A3.title: "Totem Pendant"
 	quest.4C000000000001A4.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A4.title: "Totem Pendant"
+	quest.4C000000000001A4.title: "Vitality Ankh"
 	quest.4C000000000001A5.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A5.title: "Vitality Ankh"
-	quest.4C000000000001A6.quest_desc: ["Necklace slot."]
-	quest.4C000000000001A6.title: "Woundbearer"
+	quest.4C000000000001A5.title: "Woundbearer"
+	quest.4C000000000001A6.quest_desc: ["Head slot."]
+	quest.4C000000000001A6.title: "Alpha Yeti Trophy"
 	quest.4C000000000001A7.quest_desc: ["Head slot."]
-	quest.4C000000000001A7.title: "Alpha Yeti Trophy"
+	quest.4C000000000001A7.title: "Angler's Hat"
 	quest.4C000000000001A8.quest_desc: ["Head slot."]
-	quest.4C000000000001A8.title: "Angler's Hat"
+	quest.4C000000000001A8.title: "Anvil Hammer"
 	quest.4C000000000001A9.quest_desc: ["Head slot."]
-	quest.4C000000000001A9.title: "Anvil Hammer"
+	quest.4C000000000001A9.title: "Aptrgangr Head"
 	quest.4C000000000001AA.quest_desc: ["Head slot."]
-	quest.4C000000000001AA.title: "Aptrgangr Head"
+	quest.4C000000000001AA.title: "Ashen Circlet"
 	quest.4C000000000001AB.quest_desc: ["Head slot."]
-	quest.4C000000000001AB.title: "Ashen Circlet"
+	quest.4C000000000001AB.title: "Cicada"
 	quest.4C000000000001AC.quest_desc: ["Head slot."]
-	quest.4C000000000001AC.title: "Cicada"
+	quest.4C000000000001AC.title: "Circlet of Arrogance"
 	quest.4C000000000001AD.quest_desc: ["Head slot."]
-	quest.4C000000000001AD.title: "Circlet of Arrogance"
+	quest.4C000000000001AD.title: "Cowboy Hat"
 	quest.4C000000000001AE.quest_desc: ["Head slot."]
-	quest.4C000000000001AE.title: "Cowboy Hat"
+	quest.4C000000000001AE.title: "Creeper Skull Candle"
 	quest.4C000000000001AF.quest_desc: ["Head slot."]
-	quest.4C000000000001AF.title: "Creeper Skull Candle"
+	quest.4C000000000001AF.title: "Detector Glasses"
 	quest.4C000000000001B0.quest_desc: ["Head slot."]
-	quest.4C000000000001B0.title: "Detector Glasses"
+	quest.4C000000000001B0.title: "Draugr Head"
 	quest.4C000000000001B1.quest_desc: ["Head slot."]
-	quest.4C000000000001B1.title: "Draugr Head"
+	quest.4C000000000001B1.title: "Ember Anvil Hammer"
 	quest.4C000000000001B2.quest_desc: ["Head slot."]
-	quest.4C000000000001B2.title: "Ember Anvil Hammer"
+	quest.4C000000000001B2.title: "Engineer's Goggles"
 	quest.4C000000000001B3.quest_desc: ["Head slot."]
-	quest.4C000000000001B3.title: "Engineer's Goggles"
+	quest.4C000000000001B3.title: "Firefly"
 	quest.4C000000000001B4.quest_desc: ["Head slot."]
-	quest.4C000000000001B4.title: "Firefly"
+	quest.4C000000000001B4.title: "Hydra Trophy"
 	quest.4C000000000001B5.quest_desc: ["Head slot."]
-	quest.4C000000000001B5.title: "Hydra Trophy"
+	quest.4C000000000001B5.title: "Knight Phantom Trophy"
 	quest.4C000000000001B6.quest_desc: ["Head slot."]
-	quest.4C000000000001B6.title: "Knight Phantom Trophy"
+	quest.4C000000000001B6.title: "Kobolediator Skull"
 	quest.4C000000000001B7.quest_desc: ["Head slot."]
-	quest.4C000000000001B7.title: "Kobolediator Skull"
+	quest.4C000000000001B7.title: "Minoshroom Trophy"
 	quest.4C000000000001B8.quest_desc: ["Head slot."]
-	quest.4C000000000001B8.title: "Minoshroom Trophy"
+	quest.4C000000000001B8.title: "Moonworm"
 	quest.4C000000000001B9.quest_desc: ["Head slot."]
-	quest.4C000000000001B9.title: "Moonworm"
+	quest.4C000000000001B9.title: "Naga Trophy"
 	quest.4C000000000001BA.quest_desc: ["Head slot."]
-	quest.4C000000000001BA.title: "Naga Trophy"
+	quest.4C000000000001BA.title: "Night Vision Goggles"
 	quest.4C000000000001BB.quest_desc: ["Head slot."]
-	quest.4C000000000001BB.title: "Night Vision Goggles"
+	quest.4C000000000001BB.title: "Novelty Drinking Hat"
 	quest.4C000000000001BC.quest_desc: ["Head slot."]
-	quest.4C000000000001BC.title: "Novelty Drinking Hat"
+	quest.4C000000000001BC.title: "Oddeyes Glasses"
 	quest.4C000000000001BD.quest_desc: ["Head slot."]
-	quest.4C000000000001BD.title: "Oddeyes Glasses"
+	quest.4C000000000001BD.title: "Piglin Skull Candle"
 	quest.4C000000000001BE.quest_desc: ["Head slot."]
-	quest.4C000000000001BE.title: "Piglin Skull Candle"
+	quest.4C000000000001BE.title: "Plastic Drinking Hat"
 	quest.4C000000000001BF.quest_desc: ["Head slot."]
-	quest.4C000000000001BF.title: "Plastic Drinking Hat"
+	quest.4C000000000001BF.title: "Player Skull Candle"
 	quest.4C000000000001C0.quest_desc: ["Head slot."]
-	quest.4C000000000001C0.title: "Player Skull Candle"
+	quest.4C000000000001C0.title: "Puff Circlet"
 	quest.4C000000000001C1.quest_desc: ["Head slot."]
-	quest.4C000000000001C1.title: "Puff Circlet"
+	quest.4C000000000001C1.title: "Questing Ram Trophy"
 	quest.4C000000000001C2.quest_desc: ["Head slot."]
-	quest.4C000000000001C2.title: "Questing Ram Trophy"
+	quest.4C000000000001C2.title: "Royal Anvil Hammer"
 	quest.4C000000000001C3.quest_desc: ["Head slot."]
-	quest.4C000000000001C3.title: "Royal Anvil Hammer"
+	quest.4C000000000001C3.title: "Skeleton Skull Candle"
 	quest.4C000000000001C4.quest_desc: ["Head slot."]
-	quest.4C000000000001C4.title: "Skeleton Skull Candle"
+	quest.4C000000000001C4.title: "Snorkel"
 	quest.4C000000000001C5.quest_desc: ["Head slot."]
-	quest.4C000000000001C5.title: "Snorkel"
+	quest.4C000000000001C5.title: "Snow Queen Trophy"
 	quest.4C000000000001C6.quest_desc: ["Head slot."]
-	quest.4C000000000001C6.title: "Snow Queen Trophy"
+	quest.4C000000000001C6.title: "Superstitious Hat"
 	quest.4C000000000001C7.quest_desc: ["Head slot."]
-	quest.4C000000000001C7.title: "Superstitious Hat"
+	quest.4C000000000001C7.title: "Transcendence Anvil Hammer"
 	quest.4C000000000001C8.quest_desc: ["Head slot."]
-	quest.4C000000000001C8.title: "Transcendence Anvil Hammer"
+	quest.4C000000000001C8.title: "Twilight Lich Trophy"
 	quest.4C000000000001C9.quest_desc: ["Head slot."]
-	quest.4C000000000001C9.title: "Twilight Lich Trophy"
+	quest.4C000000000001C9.title: "Ur-Ghast Trophy"
 	quest.4C000000000001CA.quest_desc: ["Head slot."]
-	quest.4C000000000001CA.title: "Ur-Ghast Trophy"
+	quest.4C000000000001CA.title: "Villager Hat"
 	quest.4C000000000001CB.quest_desc: ["Head slot."]
-	quest.4C000000000001CB.title: "Villager Hat"
+	quest.4C000000000001CB.title: "Weeping Circlet"
 	quest.4C000000000001CC.quest_desc: ["Head slot."]
-	quest.4C000000000001CC.title: "Weeping Circlet"
+	quest.4C000000000001CC.title: "Whispy Circlet"
 	quest.4C000000000001CD.quest_desc: ["Head slot."]
-	quest.4C000000000001CD.title: "Whispy Circlet"
+	quest.4C000000000001CD.title: "Wither Skeleton Skull Candle"
 	quest.4C000000000001CE.quest_desc: ["Head slot."]
-	quest.4C000000000001CE.title: "Wither Skeleton Skull Candle"
-	quest.4C000000000001CF.quest_desc: ["Head slot."]
-	quest.4C000000000001CF.title: "Zombie Skull Candle"
+	quest.4C000000000001CE.title: "Zombie Skull Candle"
+	quest.4C000000000001CF.quest_desc: ["Spellbook slot."]
+	quest.4C000000000001CF.title: "Ancient Codex"
 	quest.4C000000000001D0.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D0.title: "Ancient Codex"
+	quest.4C000000000001D0.title: "Apprentice's Spell Book"
 	quest.4C000000000001D1.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D1.title: "Apprentice's Spell Book"
+	quest.4C000000000001D1.title: "Black Book"
 	quest.4C000000000001D2.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D2.title: "Black Book"
+	quest.4C000000000001D2.title: "Blaze Instruction Manual"
 	quest.4C000000000001D3.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D3.title: "Blaze Instruction Manual"
+	quest.4C000000000001D3.title: "Book o' R'lyeh"
 	quest.4C000000000001D4.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D4.title: "Book o' R'lyeh"
+	quest.4C000000000001D4.title: "Codex of Malice"
 	quest.4C000000000001D5.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D5.title: "Codex of Malice"
+	quest.4C000000000001D5.title: "Cosmonomicon"
 	quest.4C000000000001D6.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D6.title: "Cosmonomicon"
+	quest.4C000000000001D6.title: "Desert Spellbook"
 	quest.4C000000000001D7.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D7.title: "Desert Spellbook"
+	quest.4C000000000001D7.title: "Diary of Decay"
 	quest.4C000000000001D8.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D8.title: "Diary of Decay"
+	quest.4C000000000001D8.title: "Disc Driver"
 	quest.4C000000000001D9.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001D9.title: "Disc Driver"
+	quest.4C000000000001D9.title: "Dragonmancer's Oathbook"
 	quest.4C000000000001DA.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DA.title: "Dragonmancer's Oathbook"
+	quest.4C000000000001DA.title: "Dragonskin Spell Book"
 	quest.4C000000000001DB.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DB.title: "Dragonskin Spell Book"
+	quest.4C000000000001DB.title: "Druidic Tome"
 	quest.4C000000000001DC.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DC.title: "Druidic Tome"
+	quest.4C000000000001DC.title: "Enchanted Spell Book"
 	quest.4C000000000001DD.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DD.title: "Enchanted Spell Book"
+	quest.4C000000000001DD.title: "Energized Core Spellbook"
 	quest.4C000000000001DE.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DE.title: "Energized Core Spellbook"
+	quest.4C000000000001DE.title: "Flimsy Journal"
 	quest.4C000000000001DF.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001DF.title: "Flimsy Journal"
+	quest.4C000000000001DF.title: "Frostbranded Book"
 	quest.4C000000000001E0.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E0.title: "Frostbranded Book"
+	quest.4C000000000001E0.title: "Frozen Folios"
 	quest.4C000000000001E1.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E1.title: "Frozen Folios"
+	quest.4C000000000001E1.title: "Golden Shower"
 	quest.4C000000000001E2.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E2.title: "Golden Shower"
+	quest.4C000000000001E2.title: "Grimoire of Color, vol.I"
 	quest.4C000000000001E3.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E3.title: "Grimoire of Color, vol.I"
+	quest.4C000000000001E3.title: "Grimoire of Evokation"
 	quest.4C000000000001E4.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E4.title: "Grimoire of Evokation"
+	quest.4C000000000001E4.title: "Guardian's Guidebook"
 	quest.4C000000000001E5.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E5.title: "Guardian's Guidebook"
+	quest.4C000000000001E5.title: "Ignis Spellbook"
 	quest.4C000000000001E6.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E6.title: "Ignis Spellbook"
+	quest.4C000000000001E6.title: "Ironbound Tome"
 	quest.4C000000000001E7.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E7.title: "Ironbound Tome"
+	quest.4C000000000001E7.title: "Legendary Spell Book"
 	quest.4C000000000001E8.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E8.title: "Legendary Spell Book"
+	quest.4C000000000001E8.title: "Necronomicon"
 	quest.4C000000000001E9.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001E9.title: "Necronomicon"
+	quest.4C000000000001E9.title: "Rotten Spell Book"
 	quest.4C000000000001EA.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001EA.title: "Rotten Spell Book"
+	quest.4C000000000001EA.title: "Stormweaver's Spell Tome"
 	quest.4C000000000001EB.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001EB.title: "Stormweaver's Spell Tome"
+	quest.4C000000000001EB.title: "The Apocrypha"
 	quest.4C000000000001EC.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001EC.title: "The Apocrypha"
+	quest.4C000000000001EC.title: "Vampiric Spell Book"
 	quest.4C000000000001ED.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001ED.title: "Vampiric Spell Book"
+	quest.4C000000000001ED.title: "Villager Bible"
 	quest.4C000000000001EE.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001EE.title: "Villager Bible"
+	quest.4C000000000001EE.title: "Volume of the Deep"
 	quest.4C000000000001EF.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001EF.title: "Volume of the Deep"
-	quest.4C000000000001F0.quest_desc: ["Spellbook slot."]
-	quest.4C000000000001F0.title: "Wimpy Spell Book"
+	quest.4C000000000001EF.title: "Wimpy Spell Book"
+	quest.4C000000000001F0.quest_desc: ["Belt slot."]
+	quest.4C000000000001F0.title: "Antidote Vessel"
 	quest.4C000000000001F1.quest_desc: ["Belt slot."]
-	quest.4C000000000001F1.title: "Antidote Vessel"
+	quest.4C000000000001F1.title: "Azure Dike Belt"
 	quest.4C000000000001F2.quest_desc: ["Belt slot."]
-	quest.4C000000000001F2.title: "Azure Dike Belt"
+	quest.4C000000000001F2.title: "Belt of Beginner"
 	quest.4C000000000001F3.quest_desc: ["Belt slot."]
-	quest.4C000000000001F3.title: "Belt of Beginner"
+	quest.4C000000000001F3.title: "Belt of the Limitless"
 	quest.4C000000000001F4.quest_desc: ["Belt slot."]
-	quest.4C000000000001F4.title: "Belt of the Limitless"
+	quest.4C000000000001F4.title: "Belt of the Magebane"
 	quest.4C000000000001F5.quest_desc: ["Belt slot."]
-	quest.4C000000000001F5.title: "Belt of the Magebane"
+	quest.4C000000000001F5.title: "Belt of the Prospector"
 	quest.4C000000000001F6.quest_desc: ["Belt slot."]
-	quest.4C000000000001F6.title: "Belt of the Prospector"
+	quest.4C000000000001F6.title: "Belt of the Starved"
 	quest.4C000000000001F7.quest_desc: ["Belt slot."]
-	quest.4C000000000001F7.title: "Belt of the Starved"
+	quest.4C000000000001F7.title: "Breaking the Blade"
 	quest.4C000000000001F8.quest_desc: ["Belt slot."]
-	quest.4C000000000001F8.title: "Breaking the Blade"
+	quest.4C000000000001F8.title: "Broken Magnet"
 	quest.4C000000000001F9.quest_desc: ["Belt slot."]
-	quest.4C000000000001F9.title: "Broken Magnet"
+	quest.4C000000000001F9.title: "Belt Of Monstrosity"
 	quest.4C000000000001FA.quest_desc: ["Belt slot."]
-	quest.4C000000000001FA.title: "Belt Of Monstrosity"
+	quest.4C000000000001FA.title: "Chess Fall"
 	quest.4C000000000001FB.quest_desc: ["Belt slot."]
-	quest.4C000000000001FB.title: "Chess Fall"
+	quest.4C000000000001FB.title: "Chorus Totem"
 	quest.4C000000000001FC.quest_desc: ["Belt slot."]
-	quest.4C000000000001FC.title: "Chorus Totem"
+	quest.4C000000000001FC.title: "Cloud in a Bottle"
 	quest.4C000000000001FD.quest_desc: ["Belt slot."]
-	quest.4C000000000001FD.title: "Cloud in a Bottle"
+	quest.4C000000000001FD.title: "Crystal Heart"
 	quest.4C000000000001FE.quest_desc: ["Belt slot."]
-	quest.4C000000000001FE.title: "Crystal Heart"
+	quest.4C000000000001FE.title: "Experience Magnet"
 	quest.4C000000000001FF.quest_desc: ["Belt slot."]
-	quest.4C000000000001FF.title: "Experience Magnet"
+	quest.4C000000000001FF.title: "Fire Heart"
 	quest.4C00000000000200.quest_desc: ["Belt slot."]
-	quest.4C00000000000200.title: "Fire Heart"
+	quest.4C00000000000200.title: "Fractured Nullstone"
 	quest.4C00000000000201.quest_desc: ["Belt slot."]
-	quest.4C00000000000201.title: "Fractured Nullstone"
+	quest.4C00000000000201.title: "Gilded Belt"
 	quest.4C00000000000202.quest_desc: ["Belt slot."]
-	quest.4C00000000000202.title: "Gilded Belt"
+	quest.4C00000000000202.title: "Helium Flamingo"
 	quest.4C00000000000203.quest_desc: ["Belt slot."]
-	quest.4C00000000000203.title: "Helium Flamingo"
+	quest.4C00000000000203.title: "instantaneous condenser"
 	quest.4C00000000000204.quest_desc: ["Belt slot."]
-	quest.4C00000000000204.title: "instantaneous condenser"
+	quest.4C00000000000204.title: "Obsidian Skull"
 	quest.4C00000000000205.quest_desc: ["Belt slot."]
-	quest.4C00000000000205.title: "Obsidian Skull"
+	quest.4C00000000000205.title: "Super Magnet"
 	quest.4C00000000000206.quest_desc: ["Belt slot."]
-	quest.4C00000000000206.title: "Super Magnet"
+	quest.4C00000000000206.title: "Takeoff Belt"
 	quest.4C00000000000207.quest_desc: ["Belt slot."]
-	quest.4C00000000000207.title: "Takeoff Belt"
+	quest.4C00000000000207.title: "Tool Belt"
 	quest.4C00000000000208.quest_desc: ["Belt slot."]
-	quest.4C00000000000208.title: "Tool Belt"
+	quest.4C00000000000208.title: "Universal Attractor"
 	quest.4C00000000000209.quest_desc: ["Belt slot."]
-	quest.4C00000000000209.title: "Universal Attractor"
+	quest.4C00000000000209.title: "Warp Drive"
 	quest.4C0000000000020A.quest_desc: ["Belt slot."]
-	quest.4C0000000000020A.title: "Warp Drive"
+	quest.4C0000000000020A.title: "What...? Magnet"
 	quest.4C0000000000020B.quest_desc: ["Belt slot."]
-	quest.4C0000000000020B.title: "What...? Magnet"
-	quest.4C0000000000020C.quest_desc: ["Belt slot."]
-	quest.4C0000000000020C.title: "Zhe Yuan"
+	quest.4C0000000000020B.title: "Zhe Yuan"
+	quest.4C0000000000020C.quest_desc: ["Rune slot."]
+	quest.4C0000000000020C.title: "Blade Oath Rune"
 	quest.4C0000000000020D.quest_desc: ["Rune slot."]
-	quest.4C0000000000020D.title: "Blade Oath Rune"
+	quest.4C0000000000020D.title: "hunger rune"
 	quest.4C0000000000020E.quest_desc: ["Rune slot."]
-	quest.4C0000000000020E.title: "hunger rune"
+	quest.4C0000000000020E.title: "martyr rune"
 	quest.4C0000000000020F.quest_desc: ["Rune slot."]
-	quest.4C0000000000020F.title: "martyr rune"
+	quest.4C0000000000020F.title: "Rune of Ailment Cleansing"
 	quest.4C00000000000210.quest_desc: ["Rune slot."]
-	quest.4C00000000000210.title: "Rune of Ailment Cleansing"
+	quest.4C00000000000210.title: "Rune of Bolstering"
 	quest.4C00000000000211.quest_desc: ["Rune slot."]
-	quest.4C00000000000211.title: "Rune of Bolstering"
+	quest.4C00000000000211.title: "Rune of Burning Fervor"
 	quest.4C00000000000212.quest_desc: ["Rune slot."]
-	quest.4C00000000000212.title: "Rune of Burning Fervor"
+	quest.4C00000000000212.title: "Rune of Culling"
 	quest.4C00000000000213.quest_desc: ["Rune slot."]
-	quest.4C00000000000213.title: "Rune of Culling"
+	quest.4C00000000000213.title: "Rune of Dexterity"
 	quest.4C00000000000214.quest_desc: ["Rune slot."]
-	quest.4C00000000000214.title: "Rune of Dexterity"
+	quest.4C00000000000214.title: "Rune of Eternal Fallen Souls"
 	quest.4C00000000000215.quest_desc: ["Rune slot."]
-	quest.4C00000000000215.title: "Rune of Eternal Fallen Souls"
+	quest.4C00000000000215.title: "Rune of Fiery Embrace"
 	quest.4C00000000000216.quest_desc: ["Rune slot."]
-	quest.4C00000000000216.title: "Rune of Fiery Embrace"
+	quest.4C00000000000216.title: "Rune of Flowing Grasp"
 	quest.4C00000000000217.quest_desc: ["Rune slot."]
-	quest.4C00000000000217.title: "Rune of Flowing Grasp"
+	quest.4C00000000000217.title: "Rune of Good Tides"
 	quest.4C00000000000218.quest_desc: ["Rune slot."]
-	quest.4C00000000000218.title: "Rune of Good Tides"
+	quest.4C00000000000218.title: "Rune of Heresy"
 	quest.4C00000000000219.quest_desc: ["Rune slot."]
-	quest.4C00000000000219.title: "Rune of Heresy"
+	quest.4C00000000000219.title: "Rune of Howling Gale"
 	quest.4C0000000000021A.quest_desc: ["Rune slot."]
-	quest.4C0000000000021A.title: "Rune of Howling Gale"
+	quest.4C0000000000021A.title: "Rune of Igneous Solace"
 	quest.4C0000000000021B.quest_desc: ["Rune slot."]
-	quest.4C0000000000021B.title: "Rune of Igneous Solace"
+	quest.4C0000000000021B.title: "Rune of Indomitability"
 	quest.4C0000000000021C.quest_desc: ["Rune slot."]
-	quest.4C0000000000021C.title: "Rune of Indomitability"
+	quest.4C0000000000021C.title: "Rune of Oaken Might"
 	quest.4C0000000000021D.quest_desc: ["Rune slot."]
-	quest.4C0000000000021D.title: "Rune of Oaken Might"
+	quest.4C0000000000021D.title: "Rune of Protection"
 	quest.4C0000000000021E.quest_desc: ["Rune slot."]
-	quest.4C0000000000021E.title: "Rune of Protection"
+	quest.4C0000000000021E.title: "Rune of Radial Empowerment"
 	quest.4C0000000000021F.quest_desc: ["Rune slot."]
-	quest.4C0000000000021F.title: "Rune of Radial Empowerment"
+	quest.4C0000000000021F.title: "Rune of Reinforcement"
 	quest.4C00000000000220.quest_desc: ["Rune slot."]
-	quest.4C00000000000220.title: "Rune of Reinforcement"
+	quest.4C00000000000220.title: "Rune of Scorching"
 	quest.4C00000000000221.quest_desc: ["Rune slot."]
-	quest.4C00000000000221.title: "Rune of Scorching"
+	quest.4C00000000000221.title: "Rune of Sky Tether"
 	quest.4C00000000000222.quest_desc: ["Rune slot."]
-	quest.4C00000000000222.title: "Rune of Sky Tether"
+	quest.4C00000000000222.title: "Rune of Spell Mastery"
 	quest.4C00000000000223.quest_desc: ["Rune slot."]
-	quest.4C00000000000223.title: "Rune of Spell Mastery"
+	quest.4C00000000000223.title: "Rune of Stone Ward"
 	quest.4C00000000000224.quest_desc: ["Rune slot."]
-	quest.4C00000000000224.title: "Rune of Stone Ward"
+	quest.4C00000000000224.title: "Rune of Twinned Duration"
 	quest.4C00000000000225.quest_desc: ["Rune slot."]
-	quest.4C00000000000225.title: "Rune of Twinned Duration"
+	quest.4C00000000000225.title: "Rune of Unnatural Stamina"
 	quest.4C00000000000226.quest_desc: ["Rune slot."]
-	quest.4C00000000000226.title: "Rune of Unnatural Stamina"
+	quest.4C00000000000226.title: "Rune of Vitality"
 	quest.4C00000000000227.quest_desc: ["Rune slot."]
-	quest.4C00000000000227.title: "Rune of Vitality"
-	quest.4C00000000000228.quest_desc: ["Rune slot."]
-	quest.4C00000000000228.title: "Rune of Volatile Distortion"
+	quest.4C00000000000227.title: "Rune of Volatile Distortion"
+	quest.4C00000000000228.quest_desc: ["Trinket slot."]
+	quest.4C00000000000228.title: "Blaze Nucleus"
 	quest.4C00000000000229.quest_desc: ["Trinket slot."]
-	quest.4C00000000000229.title: "Blaze Nucleus"
+	quest.4C00000000000229.title: "Dark Nelumbo"
 	quest.4C0000000000022A.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022A.title: "Dark Nelumbo"
+	quest.4C0000000000022A.title: "Dying Star"
 	quest.4C0000000000022B.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022B.title: "Dying Star"
+	quest.4C0000000000022B.title: "Experience Battery"
 	quest.4C0000000000022C.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022C.title: "Experience Battery"
+	quest.4C0000000000022C.title: "Fate Emerald"
 	quest.4C0000000000022D.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022D.title: "Fate Emerald"
+	quest.4C0000000000022D.title: "Fertilizer"
 	quest.4C0000000000022E.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022E.title: "Fertilizer"
+	quest.4C0000000000022E.title: "Four Leaf Clover"
 	quest.4C0000000000022F.quest_desc: ["Trinket slot."]
-	quest.4C0000000000022F.title: "Four Leaf Clover"
+	quest.4C0000000000022F.title: "Ice Cube"
 	quest.4C00000000000230.quest_desc: ["Trinket slot."]
-	quest.4C00000000000230.title: "Ice Cube"
+	quest.4C00000000000230.title: "Lucky Rock"
 	quest.4C00000000000231.quest_desc: ["Trinket slot."]
-	quest.4C00000000000231.title: "Lucky Rock"
+	quest.4C00000000000231.title: "Miner's Soul"
 	quest.4C00000000000232.quest_desc: ["Trinket slot."]
-	quest.4C00000000000232.title: "Miner's Soul"
+	quest.4C00000000000232.title: "Missing Page"
 	quest.4C00000000000233.quest_desc: ["Trinket slot."]
-	quest.4C00000000000233.title: "Missing Page"
+	quest.4C00000000000233.title: "Moon Stone"
 	quest.4C00000000000234.quest_desc: ["Trinket slot."]
-	quest.4C00000000000234.title: "Moon Stone"
+	quest.4C00000000000234.title: "Nelumbo"
 	quest.4C00000000000235.quest_desc: ["Trinket slot."]
-	quest.4C00000000000235.title: "Nelumbo"
+	quest.4C00000000000235.title: "Puffer Fish Liver"
 	quest.4C00000000000236.quest_desc: ["Trinket slot."]
-	quest.4C00000000000236.title: "Puffer Fish Liver"
+	quest.4C00000000000236.title: "Reforger"
 	quest.4C00000000000237.quest_desc: ["Trinket slot."]
-	quest.4C00000000000237.title: "Reforger"
+	quest.4C00000000000237.title: "Reverse Card"
 	quest.4C00000000000238.quest_desc: ["Trinket slot."]
-	quest.4C00000000000238.title: "Reverse Card"
+	quest.4C00000000000238.title: "Sigil Of Baphomet"
 	quest.4C00000000000239.quest_desc: ["Trinket slot."]
-	quest.4C00000000000239.title: "Sigil Of Baphomet"
+	quest.4C00000000000239.title: "Sleeping Pills"
 	quest.4C0000000000023A.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023A.title: "Sleeping Pills"
+	quest.4C0000000000023A.title: "Tear Of The Sea"
 	quest.4C0000000000023B.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023B.title: "Tear Of The Sea"
+	quest.4C0000000000023B.title: "Tick"
 	quest.4C0000000000023C.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023C.title: "Tick"
+	quest.4C0000000000023C.title: "True Heart Of The Sea"
 	quest.4C0000000000023D.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023D.title: "True Heart Of The Sea"
+	quest.4C0000000000023D.title: "Vampire Blood"
 	quest.4C0000000000023E.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023E.title: "Vampire Blood"
-	quest.4C0000000000023F.quest_desc: ["Trinket slot."]
-	quest.4C0000000000023F.title: "Wooden Stick"
+	quest.4C0000000000023E.title: "Wooden Stick"
+	quest.4C0000000000023F.quest_desc: ["Scroll slot."]
+	quest.4C0000000000023F.title: "Gift of the Heaven"
 	quest.4C00000000000240.quest_desc: ["Scroll slot."]
-	quest.4C00000000000240.title: "Gift of the Heaven"
+	quest.4C00000000000240.title: "Grace of the Creator"
 	quest.4C00000000000241.quest_desc: ["Scroll slot."]
-	quest.4C00000000000241.title: "Grace of the Creator"
+	quest.4C00000000000241.title: "Pact of Dark Night"
 	quest.4C00000000000242.quest_desc: ["Scroll slot."]
-	quest.4C00000000000242.title: "Pact of Dark Night"
+	quest.4C00000000000242.title: "Pact of Infinite Avarice"
 	quest.4C00000000000243.quest_desc: ["Scroll slot."]
-	quest.4C00000000000243.title: "Pact of Infinite Avarice"
+	quest.4C00000000000243.title: "Scroll of a Thousand Curses"
 	quest.4C00000000000244.quest_desc: ["Scroll slot."]
-	quest.4C00000000000244.title: "Scroll of a Thousand Curses"
+	quest.4C00000000000244.title: "Scroll of Ageless Wisdom"
 	quest.4C00000000000245.quest_desc: ["Scroll slot."]
-	quest.4C00000000000245.title: "Scroll of Ageless Wisdom"
+	quest.4C00000000000245.title: "Scroll of Explorer"
 	quest.4C00000000000246.quest_desc: ["Scroll slot."]
-	quest.4C00000000000246.title: "Scroll of Explorer"
+	quest.4C00000000000246.title: "Scroll of Hunter"
 	quest.4C00000000000247.quest_desc: ["Scroll slot."]
-	quest.4C00000000000247.title: "Scroll of Hunter"
+	quest.4C00000000000247.title: "Scroll of Ignorance Curse"
 	quest.4C00000000000248.quest_desc: ["Scroll slot."]
-	quest.4C00000000000248.title: "Scroll of Ignorance Curse"
+	quest.4C00000000000248.title: "Scroll of Postmortal Recall"
 	quest.4C00000000000249.quest_desc: ["Scroll slot."]
-	quest.4C00000000000249.title: "Scroll of Postmortal Recall"
+	quest.4C00000000000249.title: "Scroll of Survivor"
 	quest.4C0000000000024A.quest_desc: ["Scroll slot."]
-	quest.4C0000000000024A.title: "Scroll of Survivor"
+	quest.4C0000000000024A.title: "Scroll of Thunder Embrace"
 	quest.4C0000000000024B.quest_desc: ["Scroll slot."]
-	quest.4C0000000000024B.title: "Scroll of Thunder Embrace"
+	quest.4C0000000000024B.title: "The Architect's Favor"
 	quest.4C0000000000024C.quest_desc: ["Scroll slot."]
-	quest.4C0000000000024C.title: "The Architect's Favor"
-	quest.4C0000000000024D.quest_desc: ["Scroll slot."]
-	quest.4C0000000000024D.title: "The Curse of Violence"
+	quest.4C0000000000024C.title: "The Curse of Violence"
+	quest.4C0000000000024D.quest_desc: ["Spellstone slot."]
+	quest.4C0000000000024D.title: "Angel's Blessing"
 	quest.4C0000000000024E.quest_desc: ["Spellstone slot."]
-	quest.4C0000000000024E.title: "Angel's Blessing"
+	quest.4C0000000000024E.title: "Blazing Core"
 	quest.4C0000000000024F.quest_desc: ["Spellstone slot."]
-	quest.4C0000000000024F.title: "Blazing Core"
+	quest.4C0000000000024F.title: "Etherium Core"
 	quest.4C00000000000250.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000250.title: "Etherium Core"
+	quest.4C00000000000250.title: "Eye of the Nebula"
 	quest.4C00000000000251.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000251.title: "Eye of the Nebula"
+	quest.4C00000000000251.title: "Forgotten Ice Crystal"
 	quest.4C00000000000252.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000252.title: "Forgotten Ice Crystal"
+	quest.4C00000000000252.title: "Heart of Creation"
 	quest.4C00000000000253.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000253.title: "Heart of Creation"
+	quest.4C00000000000253.title: "Heart of the Golem"
 	quest.4C00000000000254.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000254.title: "Heart of the Golem"
+	quest.4C00000000000254.title: "Lost Engine"
 	quest.4C00000000000255.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000255.title: "Lost Engine"
+	quest.4C00000000000255.title: "Non-Euclidean Cube"
 	quest.4C00000000000256.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000256.title: "Non-Euclidean Cube"
+	quest.4C00000000000256.title: "Pearl of the Void"
 	quest.4C00000000000257.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000257.title: "Pearl of the Void"
+	quest.4C00000000000257.title: "Revival Leaves"
 	quest.4C00000000000258.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000258.title: "Revival Leaves"
+	quest.4C00000000000258.title: "Soul Lantern of Illusion"
 	quest.4C00000000000259.quest_desc: ["Spellstone slot."]
-	quest.4C00000000000259.title: "Soul Lantern of Illusion"
-	quest.4C0000000000025A.quest_desc: ["Spellstone slot."]
-	quest.4C0000000000025A.title: "Will of the Ocean"
+	quest.4C00000000000259.title: "Will of the Ocean"
+	quest.4C0000000000025A.quest_desc: ["Crystal slot."]
+	quest.4C0000000000025A.title: "Abomination"
 	quest.4C0000000000025B.quest_desc: ["Crystal slot."]
-	quest.4C0000000000025B.title: "Abomination"
+	quest.4C0000000000025B.title: "Absolute"
 	quest.4C0000000000025C.quest_desc: ["Crystal slot."]
-	quest.4C0000000000025C.title: "Absolute"
+	quest.4C0000000000025C.title: "Abstract"
 	quest.4C0000000000025D.quest_desc: ["Crystal slot."]
-	quest.4C0000000000025D.title: "Abstract"
+	quest.4C0000000000025D.title: "Advanced"
 	quest.4C0000000000025E.quest_desc: ["Crystal slot."]
-	quest.4C0000000000025E.title: "Advanced"
+	quest.4C0000000000025E.title: "Radiance"
 	quest.4C0000000000025F.quest_desc: ["Crystal slot."]
-	quest.4C0000000000025F.title: "Radiance"
+	quest.4C0000000000025F.title: "Refined"
 	quest.4C00000000000260.quest_desc: ["Crystal slot."]
-	quest.4C00000000000260.title: "Refined"
+	quest.4C00000000000260.title: "Reinforced"
 	quest.4C00000000000261.quest_desc: ["Crystal slot."]
-	quest.4C00000000000261.title: "Reinforced"
+	quest.4C00000000000261.title: "Ruptured"
 	quest.4C00000000000262.quest_desc: ["Crystal slot."]
-	quest.4C00000000000262.title: "Ruptured"
+	quest.4C00000000000262.title: "Sacred"
 	quest.4C00000000000263.quest_desc: ["Crystal slot."]
-	quest.4C00000000000263.title: "Sacred"
+	quest.4C00000000000263.title: "Shattered"
 	quest.4C00000000000264.quest_desc: ["Crystal slot."]
-	quest.4C00000000000264.title: "Shattered"
+	quest.4C00000000000264.title: "Singularity"
 	quest.4C00000000000265.quest_desc: ["Crystal slot."]
-	quest.4C00000000000265.title: "Singularity"
-	quest.4C00000000000266.quest_desc: ["Crystal slot."]
-	quest.4C00000000000266.title: "Strengthened"
+	quest.4C00000000000265.title: "Strengthened"
+	quest.4C00000000000266.quest_desc: ["Hostility Curse slot."]
+	quest.4C00000000000266.title: "Abrahadabra"
 	quest.4C00000000000267.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000267.title: "Abrahadabra"
+	quest.4C00000000000267.title: "Abyssal Throne"
 	quest.4C00000000000268.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000268.title: "Abyssal Throne"
+	quest.4C00000000000268.title: "Curse Of Envy"
 	quest.4C00000000000269.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000269.title: "Curse Of Envy"
+	quest.4C00000000000269.title: "Curse Of Gluttony"
 	quest.4C0000000000026A.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026A.title: "Curse Of Gluttony"
+	quest.4C0000000000026A.title: "Curse Of Greed"
 	quest.4C0000000000026B.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026B.title: "Curse Of Greed"
+	quest.4C0000000000026B.title: "Curse Of Lust"
 	quest.4C0000000000026C.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026C.title: "Curse Of Lust"
+	quest.4C0000000000026C.title: "Curse Of Pride"
 	quest.4C0000000000026D.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026D.title: "Curse Of Pride"
+	quest.4C0000000000026D.title: "Curse Of Sloth"
 	quest.4C0000000000026E.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026E.title: "Curse Of Sloth"
+	quest.4C0000000000026E.title: "Curse Of Wrath"
 	quest.4C0000000000026F.quest_desc: ["Hostility Curse slot."]
-	quest.4C0000000000026F.title: "Curse Of Wrath"
+	quest.4C0000000000026F.title: "Divinity Cross"
 	quest.4C00000000000270.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000270.title: "Divinity Cross"
+	quest.4C00000000000270.title: "Divinity Light"
 	quest.4C00000000000271.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000271.title: "Divinity Light"
-	quest.4C00000000000272.quest_desc: ["Hostility Curse slot."]
-	quest.4C00000000000272.title: "Greed Of Nidhoggur"
+	quest.4C00000000000271.title: "Greed Of Nidhoggur"
+	quest.4C00000000000272.quest_desc: ["Feet slot."]
+	quest.4C00000000000272.title: "Aqua-Dashers"
 	quest.4C00000000000273.quest_desc: ["Feet slot."]
-	quest.4C00000000000273.title: "Aqua-Dashers"
+	quest.4C00000000000273.title: "Bunny Hoppers"
 	quest.4C00000000000274.quest_desc: ["Feet slot."]
-	quest.4C00000000000274.title: "Bunny Hoppers"
+	quest.4C00000000000274.title: "Cotton Cloud Boots"
 	quest.4C00000000000275.quest_desc: ["Feet slot."]
-	quest.4C00000000000275.title: "Cotton Cloud Boots"
+	quest.4C00000000000275.title: "Flippers"
 	quest.4C00000000000276.quest_desc: ["Feet slot."]
-	quest.4C00000000000276.title: "Flippers"
+	quest.4C00000000000276.title: "Kitty Slippers"
 	quest.4C00000000000277.quest_desc: ["Feet slot."]
-	quest.4C00000000000277.title: "Kitty Slippers"
+	quest.4C00000000000277.title: "Running Shoes"
 	quest.4C00000000000278.quest_desc: ["Feet slot."]
-	quest.4C00000000000278.title: "Running Shoes"
+	quest.4C00000000000278.title: "Seven-League Boots"
 	quest.4C00000000000279.quest_desc: ["Feet slot."]
-	quest.4C00000000000279.title: "Seven-League Boots"
+	quest.4C00000000000279.title: "Snowshoes"
 	quest.4C0000000000027A.quest_desc: ["Feet slot."]
-	quest.4C0000000000027A.title: "Snowshoes"
+	quest.4C0000000000027A.title: "Steadfast Spikes"
 	quest.4C0000000000027B.quest_desc: ["Feet slot."]
-	quest.4C0000000000027B.title: "Steadfast Spikes"
+	quest.4C0000000000027B.title: "Strider Shoes"
 	quest.4C0000000000027C.quest_desc: ["Feet slot."]
-	quest.4C0000000000027C.title: "Strider Shoes"
-	quest.4C0000000000027D.quest_desc: ["Feet slot."]
-	quest.4C0000000000027D.title: "Sturdy Boots"
+	quest.4C0000000000027C.title: "Sturdy Boots"
+	quest.4C0000000000027D.quest_desc: ["Amulet slot."]
+	quest.4C0000000000027D.title: "Amulet of Ascension"
 	quest.4C0000000000027E.quest_desc: ["Amulet slot."]
-	quest.4C0000000000027E.title: "Amulet of Ascension"
+	quest.4C0000000000027E.title: "Enigmatic Amulet Aqua"
 	quest.4C0000000000027F.quest_desc: ["Amulet slot."]
-	quest.4C0000000000027F.title: "Enigmatic Amulet Aqua"
+	quest.4C0000000000027F.title: "Enigmatic Amulet Black"
 	quest.4C00000000000280.quest_desc: ["Amulet slot."]
-	quest.4C00000000000280.title: "Enigmatic Amulet Black"
+	quest.4C00000000000280.title: "Enigmatic Amulet Blue"
 	quest.4C00000000000281.quest_desc: ["Amulet slot."]
-	quest.4C00000000000281.title: "Enigmatic Amulet Blue"
+	quest.4C00000000000281.title: "Enigmatic Amulet Green"
 	quest.4C00000000000282.quest_desc: ["Amulet slot."]
-	quest.4C00000000000282.title: "Enigmatic Amulet Green"
+	quest.4C00000000000282.title: "Enigmatic Amulet Magenta"
 	quest.4C00000000000283.quest_desc: ["Amulet slot."]
-	quest.4C00000000000283.title: "Enigmatic Amulet Magenta"
+	quest.4C00000000000283.title: "Enigmatic Amulet Red"
 	quest.4C00000000000284.quest_desc: ["Amulet slot."]
-	quest.4C00000000000284.title: "Enigmatic Amulet Red"
+	quest.4C00000000000284.title: "Enigmatic Amulet Violet"
 	quest.4C00000000000285.quest_desc: ["Amulet slot."]
-	quest.4C00000000000285.title: "Enigmatic Amulet Violet"
+	quest.4C00000000000285.title: "The Testament of Contempt"
 	quest.4C00000000000286.quest_desc: ["Amulet slot."]
-	quest.4C00000000000286.title: "The Testament of Contempt"
-	quest.4C00000000000287.quest_desc: ["Amulet slot."]
-	quest.4C00000000000287.title: "Unwitnessed Amulet"
+	quest.4C00000000000286.title: "Unwitnessed Amulet"
+	quest.4C00000000000287.quest_desc: ["Idol slot."]
+	quest.4C00000000000287.title: "Greater Idol Of The Divine Retribution"
 	quest.4C00000000000288.quest_desc: ["Idol slot."]
-	quest.4C00000000000288.title: "Greater Idol Of The Divine Retribution"
+	quest.4C00000000000288.title: "Greater Idol Of The Flamebound Pact"
 	quest.4C00000000000289.quest_desc: ["Idol slot."]
-	quest.4C00000000000289.title: "Greater Idol Of The Flamebound Pact"
+	quest.4C00000000000289.title: "Greater Idol Of The Gale Howl"
 	quest.4C0000000000028A.quest_desc: ["Idol slot."]
-	quest.4C0000000000028A.title: "Greater Idol Of The Gale Howl"
+	quest.4C0000000000028A.title: "Greater Idol Of The North Star"
 	quest.4C0000000000028B.quest_desc: ["Idol slot."]
-	quest.4C0000000000028B.title: "Greater Idol Of The North Star"
+	quest.4C0000000000028B.title: "Greater Idol Of The Poisonous Vine"
 	quest.4C0000000000028C.quest_desc: ["Idol slot."]
-	quest.4C0000000000028C.title: "Greater Idol Of The Poisonous Vine"
+	quest.4C0000000000028C.title: "Idol Of The Divine Retribution"
 	quest.4C0000000000028D.quest_desc: ["Idol slot."]
-	quest.4C0000000000028D.title: "Idol Of The Divine Retribution"
+	quest.4C0000000000028D.title: "Idol Of The Flamebound Pact"
 	quest.4C0000000000028E.quest_desc: ["Idol slot."]
-	quest.4C0000000000028E.title: "Idol Of The Flamebound Pact"
+	quest.4C0000000000028E.title: "Idol Of The Gale Howl"
 	quest.4C0000000000028F.quest_desc: ["Idol slot."]
-	quest.4C0000000000028F.title: "Idol Of The Gale Howl"
+	quest.4C0000000000028F.title: "Idol Of The North Star"
 	quest.4C00000000000290.quest_desc: ["Idol slot."]
-	quest.4C00000000000290.title: "Idol Of The North Star"
-	quest.4C00000000000291.quest_desc: ["Idol slot."]
-	quest.4C00000000000291.title: "Idol Of The Poisonous Vine"
+	quest.4C00000000000290.title: "Idol Of The Poisonous Vine"
+	quest.4C00000000000291.quest_desc: ["Wing slot."]
+	quest.4C00000000000291.title: "Arbitrium Wings"
 	quest.4C00000000000292.quest_desc: ["Wing slot."]
-	quest.4C00000000000292.title: "Arbitrium Wings"
+	quest.4C00000000000292.title: "Angel Wings"
 	quest.4C00000000000293.quest_desc: ["Wing slot."]
-	quest.4C00000000000293.title: "Angel Wings"
+	quest.4C00000000000293.title: "Fallen Angel Wings"
 	quest.4C00000000000294.quest_desc: ["Wing slot."]
-	quest.4C00000000000294.title: "Fallen Angel Wings"
+	quest.4C00000000000294.title: "HDPE Reinforced Elytra"
 	quest.4C00000000000295.quest_desc: ["Wing slot."]
-	quest.4C00000000000295.title: "HDPE Reinforced Elytra"
+	quest.4C00000000000295.title: "Infinity Elytra"
 	quest.4C00000000000296.quest_desc: ["Wing slot."]
-	quest.4C00000000000296.title: "Infinity Elytra"
+	quest.4C00000000000296.title: "Majestic Elytra"
 	quest.4C00000000000297.quest_desc: ["Wing slot."]
-	quest.4C00000000000297.title: "Majestic Elytra"
+	quest.4C00000000000297.title: "Soul Elytra"
 	quest.4C00000000000298.quest_desc: ["Wing slot."]
-	quest.4C00000000000298.title: "Soul Elytra"
+	quest.4C00000000000298.title: "Tarantula Hawk Elytra"
 	quest.4C00000000000299.quest_desc: ["Wing slot."]
-	quest.4C00000000000299.title: "Tarantula Hawk Elytra"
-	quest.4C0000000000029A.quest_desc: ["Wing slot."]
-	quest.4C0000000000029A.title: "The Arrogance of Chaos"
+	quest.4C00000000000299.title: "The Arrogance of Chaos"
+	quest.4C0000000000029A.quest_desc: ["Back slot."]
+	quest.4C0000000000029A.title: "Backpack"
 	quest.4C0000000000029B.quest_desc: ["Back slot."]
-	quest.4C0000000000029B.title: "Backpack"
+	quest.4C0000000000029B.title: "Copper Backpack"
 	quest.4C0000000000029C.quest_desc: ["Back slot."]
-	quest.4C0000000000029C.title: "Copper Backpack"
+	quest.4C0000000000029C.title: "Diamond Backpack"
 	quest.4C0000000000029D.quest_desc: ["Back slot."]
-	quest.4C0000000000029D.title: "Diamond Backpack"
+	quest.4C0000000000029D.title: "Explosion-proof Jacket"
 	quest.4C0000000000029E.quest_desc: ["Back slot."]
-	quest.4C0000000000029E.title: "Explosion-proof Jacket"
+	quest.4C0000000000029E.title: "Gold Backpack"
 	quest.4C0000000000029F.quest_desc: ["Back slot."]
-	quest.4C0000000000029F.title: "Gold Backpack"
+	quest.4C0000000000029F.title: "Iron Backpack"
 	quest.4C000000000002A0.quest_desc: ["Back slot."]
-	quest.4C000000000002A0.title: "Iron Backpack"
+	quest.4C000000000002A0.title: "Netherite Backpack"
 	quest.4C000000000002A1.quest_desc: ["Back slot."]
-	quest.4C000000000002A1.title: "Netherite Backpack"
-	quest.4C000000000002A2.quest_desc: ["Back slot."]
-	quest.4C000000000002A2.title: "Triple Strip Cape"
+	quest.4C000000000002A1.title: "Triple Strip Cape"
+	quest.4C000000000002A2.quest_desc: ["Curio slot."]
+	quest.4C000000000002A2.title: "Battery (Basic)"
 	quest.4C000000000002A3.quest_desc: ["Curio slot."]
-	quest.4C000000000002A3.title: "Battery (Basic)"
+	quest.4C000000000002A3.title: "Battery (Blazing)"
 	quest.4C000000000002A4.quest_desc: ["Curio slot."]
-	quest.4C000000000002A4.title: "Battery (Blazing)"
+	quest.4C000000000002A4.title: "Battery (Hardened)"
 	quest.4C000000000002A5.quest_desc: ["Curio slot."]
-	quest.4C000000000002A5.title: "Battery (Hardened)"
+	quest.4C000000000002A5.title: "Battery (Niotic)"
 	quest.4C000000000002A6.quest_desc: ["Curio slot."]
-	quest.4C000000000002A6.title: "Battery (Niotic)"
+	quest.4C000000000002A6.title: "Battery (Nitro)"
 	quest.4C000000000002A7.quest_desc: ["Curio slot."]
-	quest.4C000000000002A7.title: "Battery (Nitro)"
+	quest.4C000000000002A7.title: "Battery (Spirited)"
 	quest.4C000000000002A8.quest_desc: ["Curio slot."]
-	quest.4C000000000002A8.title: "Battery (Spirited)"
+	quest.4C000000000002A8.title: "Battery (Starter)"
 	quest.4C000000000002A9.quest_desc: ["Curio slot."]
-	quest.4C000000000002A9.title: "Battery (Starter)"
-	quest.4C000000000002AA.quest_desc: ["Curio slot."]
-	quest.4C000000000002AA.title: "Whoopee Cushion"
+	quest.4C000000000002A9.title: "Whoopee Cushion"
+	quest.4C000000000002AA.quest_desc: ["Refined Storage slot."]
+	quest.4C000000000002AA.title: "Creative Portable Grid"
 	quest.4C000000000002AB.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002AB.title: "Creative Portable Grid"
+	quest.4C000000000002AB.title: "Creative Wireless Crafting Grid"
 	quest.4C000000000002AC.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002AC.title: "Creative Wireless Crafting Grid"
+	quest.4C000000000002AC.title: "Creative Wireless Grid"
 	quest.4C000000000002AD.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002AD.title: "Creative Wireless Grid"
+	quest.4C000000000002AD.title: "Creative Wireless Universal Grid"
 	quest.4C000000000002AE.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002AE.title: "Creative Wireless Universal Grid"
+	quest.4C000000000002AE.title: "Portable Grid"
 	quest.4C000000000002AF.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002AF.title: "Portable Grid"
+	quest.4C000000000002AF.title: "Wireless Crafting Grid"
 	quest.4C000000000002B0.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002B0.title: "Wireless Crafting Grid"
+	quest.4C000000000002B0.title: "Wireless Grid"
 	quest.4C000000000002B1.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002B1.title: "Wireless Grid"
-	quest.4C000000000002B2.quest_desc: ["Refined Storage slot."]
-	quest.4C000000000002B2.title: "Wireless Universal Grid"
+	quest.4C000000000002B1.title: "Wireless Universal Grid"
+	quest.4C000000000002B2.quest_desc: ["Face slot."]
+	quest.4C000000000002B2.title: "Blindfold"
 	quest.4C000000000002B3.quest_desc: ["Face slot."]
-	quest.4C000000000002B3.title: "Blindfold"
+	quest.4C000000000002B3.title: "Creeper Sense"
 	quest.4C000000000002B4.quest_desc: ["Face slot."]
-	quest.4C000000000002B4.title: "Creeper Sense"
+	quest.4C000000000002B4.title: "Dragon's Eye"
 	quest.4C000000000002B5.quest_desc: ["Face slot."]
-	quest.4C000000000002B5.title: "Dragon's Eye"
+	quest.4C000000000002B5.title: "Ghast Eye"
 	quest.4C000000000002B6.quest_desc: ["Face slot."]
-	quest.4C000000000002B6.title: "Ghast Eye"
+	quest.4C000000000002B6.title: "Pocket Lightning Rod"
 	quest.4C000000000002B7.quest_desc: ["Face slot."]
-	quest.4C000000000002B7.title: "Pocket Lightning Rod"
+	quest.4C000000000002B7.title: "Priscillent Spectacles"
 	quest.4C000000000002B8.quest_desc: ["Face slot."]
-	quest.4C000000000002B8.title: "Priscillent Spectacles"
-	quest.4C000000000002B9.quest_desc: ["Face slot."]
-	quest.4C000000000002B9.title: "Rage Mind"
+	quest.4C000000000002B8.title: "Rage Mind"
+	quest.4C000000000002B9.quest_desc: ["Hook slot."]
+	quest.4C000000000002B9.title: "Custom Hook"
 	quest.4C000000000002BA.quest_desc: ["Hook slot."]
-	quest.4C000000000002BA.title: "Custom Hook"
+	quest.4C000000000002BA.title: "Diamond Hook"
 	quest.4C000000000002BB.quest_desc: ["Hook slot."]
-	quest.4C000000000002BB.title: "Diamond Hook"
+	quest.4C000000000002BB.title: "Ender Hook"
 	quest.4C000000000002BC.quest_desc: ["Hook slot."]
-	quest.4C000000000002BC.title: "Ender Hook"
+	quest.4C000000000002BC.title: "Iron Hook"
 	quest.4C000000000002BD.quest_desc: ["Hook slot."]
-	quest.4C000000000002BD.title: "Iron Hook"
+	quest.4C000000000002BD.title: "Redstone Hook"
 	quest.4C000000000002BE.quest_desc: ["Hook slot."]
-	quest.4C000000000002BE.title: "Redstone Hook"
-	quest.4C000000000002BF.quest_desc: ["Hook slot."]
-	quest.4C000000000002BF.title: "Wooden Hook"
+	quest.4C000000000002BE.title: "Wooden Hook"
+	quest.4C000000000002BF.quest_desc: ["Sheath slot."]
+	quest.4C000000000002BF.title: "Frostbourne Sheath"
 	quest.4C000000000002C0.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C0.title: "Frostbourne Sheath"
+	quest.4C000000000002C0.title: "Galvanized Sheath"
 	quest.4C000000000002C1.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C1.title: "Galvanized Sheath"
+	quest.4C000000000002C1.title: "Pyrium Sheath"
 	quest.4C000000000002C2.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C2.title: "Pyrium Sheath"
+	quest.4C000000000002C2.title: "Scroll Sheath"
 	quest.4C000000000002C3.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C3.title: "Scroll Sheath"
+	quest.4C000000000002C3.title: "Sheath of The Razor"
 	quest.4C000000000002C4.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C4.title: "Sheath of The Razor"
-	quest.4C000000000002C5.quest_desc: ["Sheath slot."]
-	quest.4C000000000002C5.title: "Silver Sheath"
+	quest.4C000000000002C4.title: "Silver Sheath"
+	quest.4C000000000002C5.quest_desc: ["Brooch slot."]
+	quest.4C000000000002C5.title: "Elaborate Brooch"
 	quest.4C000000000002C6.quest_desc: ["Brooch slot."]
-	quest.4C000000000002C6.title: "Elaborate Brooch"
+	quest.4C000000000002C6.title: "Glass Brooch"
 	quest.4C000000000002C7.quest_desc: ["Brooch slot."]
-	quest.4C000000000002C7.title: "Glass Brooch"
+	quest.4C000000000002C7.title: "Gluttonous Brooch"
 	quest.4C000000000002C8.quest_desc: ["Brooch slot."]
-	quest.4C000000000002C8.title: "Gluttonous Brooch"
+	quest.4C000000000002C8.title: "Order to kill gods"
 	quest.4C000000000002C9.quest_desc: ["Brooch slot."]
-	quest.4C000000000002C9.title: "Order to kill gods"
-	quest.4C000000000002CA.quest_desc: ["Brooch slot."]
-	quest.4C000000000002CA.title: "Runic Brooch"
+	quest.4C000000000002C9.title: "Runic Brooch"
+	quest.4C000000000002CA.quest_desc: ["Hands slot."]
+	quest.4C000000000002CA.title: "Flaming Thorn"
 	quest.4C000000000002CB.quest_desc: ["Hands slot."]
-	quest.4C000000000002CB.title: "Flaming Thorn"
+	quest.4C000000000002CB.title: "Flight Ring"
 	quest.4C000000000002CC.quest_desc: ["Hands slot."]
-	quest.4C000000000002CC.title: "Flight Ring"
+	quest.4C000000000002CC.title: "Imagine Breaker"
 	quest.4C000000000002CD.quest_desc: ["Hands slot."]
-	quest.4C000000000002CD.title: "Imagine Breaker"
+	quest.4C000000000002CD.title: "Infinity Glove"
 	quest.4C000000000002CE.quest_desc: ["Hands slot."]
-	quest.4C000000000002CE.title: "Infinity Glove"
-	quest.4C000000000002CF.quest_desc: ["Hands slot."]
-	quest.4C000000000002CF.title: "Platinum Star"
+	quest.4C000000000002CE.title: "Platinum Star"
+	quest.4C000000000002CF.quest_desc: ["Hand slot."]
+	quest.4C000000000002CF.title: "Amphibious Hands"
 	quest.4C000000000002D0.quest_desc: ["Hand slot."]
-	quest.4C000000000002D0.title: "Amphibious Hands"
+	quest.4C000000000002D0.title: "Electric Paddle"
 	quest.4C000000000002D1.quest_desc: ["Hand slot."]
-	quest.4C000000000002D1.title: "Electric Paddle"
+	quest.4C000000000002D1.title: "Light Gloves"
 	quest.4C000000000002D2.quest_desc: ["Hand slot."]
-	quest.4C000000000002D2.title: "Light Gloves"
-	quest.4C000000000002D3.quest_desc: ["Hand slot."]
-	quest.4C000000000002D3.title: "Titan's Mark"
+	quest.4C000000000002D2.title: "Titan's Mark"
+	quest.4C000000000002D3.quest_desc: ["Shoes slot."]
+	quest.4C000000000002D3.title: "Callus"
 	quest.4C000000000002D4.quest_desc: ["Shoes slot."]
-	quest.4C000000000002D4.title: "Callus"
+	quest.4C000000000002D4.title: "Fragile Cloud"
 	quest.4C000000000002D5.quest_desc: ["Shoes slot."]
-	quest.4C000000000002D5.title: "Fragile Cloud"
+	quest.4C000000000002D5.title: "Speed Force"
 	quest.4C000000000002D6.quest_desc: ["Shoes slot."]
-	quest.4C000000000002D6.title: "Speed Force"
-	quest.4C000000000002D7.quest_desc: ["Shoes slot."]
-	quest.4C000000000002D7.title: "Spider Legs"
+	quest.4C000000000002D6.title: "Spider Legs"
+	quest.4C000000000002D7.quest_desc: ["Artifact slot."]
+	quest.4C000000000002D7.title: "Emblem of The Rift Ripper"
 	quest.4C000000000002D8.quest_desc: ["Artifact slot."]
-	quest.4C000000000002D8.title: "Emblem of The Rift Ripper"
+	quest.4C000000000002D8.title: "Ironbound Feather"
 	quest.4C000000000002D9.quest_desc: ["Artifact slot."]
-	quest.4C000000000002D9.title: "Ironbound Feather"
-	quest.4C000000000002DA.quest_desc: ["Artifact slot."]
-	quest.4C000000000002DA.title: "King's Visage"
+	quest.4C000000000002D9.title: "King's Visage"
+	quest.4C000000000002DA.quest_desc: ["Pin slot."]
+	quest.4C000000000002DA.title: "Azuresque Dike Core"
 	quest.4C000000000002DB.quest_desc: ["Pin slot."]
-	quest.4C000000000002DB.title: "Azuresque Dike Core"
+	quest.4C000000000002DB.title: "Gleaming Pin"
 	quest.4C000000000002DC.quest_desc: ["Pin slot."]
-	quest.4C000000000002DC.title: "Gleaming Pin"
-	quest.4C000000000002DD.quest_desc: ["Pin slot."]
-	quest.4C000000000002DD.title: "Radiance Pin"
+	quest.4C000000000002DC.title: "Radiance Pin"
+	quest.4C000000000002DD.quest_desc: ["Well slot."]
+	quest.4C000000000002DD.title: "Corpse cauldron"
 	quest.4C000000000002DE.quest_desc: ["Well slot."]
-	quest.4C000000000002DE.title: "Corpse cauldron"
+	quest.4C000000000002DE.title: "extreme death"
 	quest.4C000000000002DF.quest_desc: ["Well slot."]
-	quest.4C000000000002DF.title: "extreme death"
-	quest.4C000000000002E0.quest_desc: ["Well slot."]
-	quest.4C000000000002E0.title: "Weeping Immortal"
+	quest.4C000000000002DF.title: "Weeping Immortal"
+	quest.4C000000000002E0.quest_desc: ["Body slot."]
+	quest.4C000000000002E0.title: "Antique Emblem"
 	quest.4C000000000002E1.quest_desc: ["Body slot."]
-	quest.4C000000000002E1.title: "Antique Emblem"
-	quest.4C000000000002E2.quest_desc: ["Body slot."]
-	quest.4C000000000002E2.title: "Caster's Mantle"
+	quest.4C000000000002E1.title: "Caster's Mantle"
+	quest.4C000000000002E2.quest_desc: ["Cape slot."]
+	quest.4C000000000002E2.title: "Ethereal Wings"
 	quest.4C000000000002E3.quest_desc: ["Cape slot."]
-	quest.4C000000000002E3.title: "Ethereal Wings"
-	quest.4C000000000002E4.quest_desc: ["Cape slot."]
-	quest.4C000000000002E4.title: "Shrinking Veil"
+	quest.4C000000000002E3.title: "Shrinking Veil"
+	quest.4C000000000002E4.quest_desc: ["Hat slot."]
+	quest.4C000000000002E4.title: "Cracked Crown"
 	quest.4C000000000002E5.quest_desc: ["Hat slot."]
-	quest.4C000000000002E5.title: "Cracked Crown"
-	quest.4C000000000002E6.quest_desc: ["Hat slot."]
-	quest.4C000000000002E6.title: "God's Crown"
+	quest.4C000000000002E5.title: "God's Crown"
+	quest.4C000000000002E6.quest_desc: ["Pigment Palette slot."]
+	quest.4C000000000002E6.title: "Artist's Palette"
 	quest.4C000000000002E7.quest_desc: ["Pigment Palette slot."]
-	quest.4C000000000002E7.title: "Artist's Palette"
-	quest.4C000000000002E8.quest_desc: ["Pigment Palette slot."]
-	quest.4C000000000002E8.title: "Pigment Palette"
-	quest.4C000000000002E9.quest_desc: ["Deep Learner slot."]
-	quest.4C000000000002E9.title: "Deep Learner"
-	quest.4C000000000002EA.quest_desc: ["Ionocraft Backpack slot."]
-	quest.4C000000000002EA.title: "Ionocraft Backpack"
-	quest.4C000000000002EB.quest_desc: ["Personal Shrinking Device slot."]
-	quest.4C000000000002EB.title: "Personal Shrinking Device"
-	quest.4C000000000002EC.quest_desc: ["QIO slot."]
-	quest.4C000000000002EC.title: "Portable QIO Dashboard"
-	quest.4C000000000002ED.quest_desc: ["Teleporter slot."]
-	quest.4C000000000002ED.title: "Portable Teleporter"
+	quest.4C000000000002E7.title: "Pigment Palette"
+	quest.4C000000000002E8.quest_desc: ["Deep Learner slot."]
+	quest.4C000000000002E8.title: "Deep Learner"
+	quest.4C000000000002E9.quest_desc: ["Ionocraft Backpack slot."]
+	quest.4C000000000002E9.title: "Ionocraft Backpack"
+	quest.4C000000000002EA.quest_desc: ["Personal Shrinking Device slot."]
+	quest.4C000000000002EA.title: "Personal Shrinking Device"
+	quest.4C000000000002EB.quest_desc: ["QIO slot."]
+	quest.4C000000000002EB.title: "Portable QIO Dashboard"
+	quest.4C000000000002EC.quest_desc: ["Teleporter slot."]
+	quest.4C000000000002EC.title: "Portable Teleporter"
 	quest.5B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.5B00000000000001.title: "Concordance"
 	quest.5B00000000000002.quest_desc: ["Find the Nether Eye."]

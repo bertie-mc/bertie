@@ -15,6 +15,7 @@ Run:  python texture-work/gen_data.py
 import io
 import json
 import os
+import re
 import shutil
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -2472,6 +2473,57 @@ def _parse_removed(path, modid):
         rows.append({"name": name, "id": iid, "reason": reason, "removed": date})
     return rows
 
+# Loot tables are not the only data that hands an item over. Apotheosis rolls affixed gear from
+# its own entry files and dresses its bosses from gear sets, and the Museum Curator checklist puts
+# an item on a page whether or not anything drops it. All three are stripped the same way.
+OTHER_KINDS = ("/affix_loot_entries/", "/gear_sets/", "/museumexhibits/")
+
+
+def _strip_ids(node, gone):
+    """A data file with every removed id taken out. None means the node itself has to go.
+
+    Anything naming a removed id in one of its own string values dies, which covers both an entry
+    that IS the item and a bare id sitting in a list. Apotheosis wraps its ids one level down in a
+    `stack`, so that shape is named explicitly rather than left to a general deep search - a deep
+    search would also delete a set for mentioning the item in an unrelated field.
+    """
+    if isinstance(node, list):
+        return [x for x in (_strip_ids(v, gone) for v in node) if x is not None]
+    if isinstance(node, str):
+        return None if node in gone else node
+    if not isinstance(node, dict):
+        return node
+    if any(isinstance(v, str) and v in gone for v in node.values()):
+        return None
+    _st = node.get("stack")
+    if isinstance(_st, dict) and _st.get("id") in gone:
+        return None
+    return {k: _strip_ids(v, gone) for k, v in node.items()}
+
+
+def _strip_loot(node, gone):
+    """A loot table with every removed item taken out. None means the node itself has to go.
+
+    An entry that hands over a removed id is deleted outright, and a pool or group left with no
+    entries goes with it - an empty pool would still roll and produce nothing, which is the same
+    result with more file. The table survives even when every pool dies: it has to, because an
+    absent override lets the mod's original through.
+    """
+    if isinstance(node, list):
+        return [x for x in (_strip_loot(v, gone) for v in node) if x is not None]
+    if not isinstance(node, dict):
+        return node
+    if node.get("name") in gone or node.get("item") in gone:
+        return None
+    out = {}
+    for k, v in node.items():
+        nv = _strip_loot(v, gone)
+        if k in ("entries", "children") and v and not nv:
+            return None
+        out[k] = nv
+    return out
+
+
 def _result_ids(obj, out):
     """Pull every result item id out of a recipe of ANY type/shape."""
     if isinstance(obj, dict):
@@ -2501,7 +2553,7 @@ if not _removed:
     )
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
-_items, _hits, _leaks = set(), [], {}
+_items, _hits, _leaks, _loot_src = set(), [], {}, {}
 _scan_ok = False
 if _removed:
     import fnmatch
@@ -2576,7 +2628,8 @@ if _removed:
                     if not _n.endswith(".json") or not _n.startswith("data/"):
                         continue
                     _is_recipe, _is_loot = "/recipe" in _n, "/loot_table" in _n
-                    if not (_is_recipe or _is_loot):
+                    _is_other = any(_k in _n for _k in OTHER_KINDS)
+                    if not (_is_recipe or _is_loot or _is_other):
                         continue
                     try:
                         _d = json.loads(_zf.read(_n).decode("utf-8-sig"))
@@ -2588,9 +2641,14 @@ if _removed:
                                 _hits.append((_n, _r2))
                     else:
                         _txt = json.dumps(_d)
-                        for _r2 in _want:
-                            if f'"{_r2}"' in _txt:
+                        _found = [_r2 for _r2 in _want if f'"{_r2}"' in _txt]
+                        if not _found:
+                            continue
+                        if _is_loot:
+                            for _r2 in _found:
                                 _leaks.setdefault(_r2, []).append(f"{_jn}: {_n}")
+                        # the file itself, so it can be re-emitted without the removed entries
+                        _loot_src[_n] = _d
 
 _removed_ids = sorted({i for i in (_expanded if _removed and _scan_ok else [])})
 if _removed and not _scan_ok:
@@ -2632,8 +2690,47 @@ else:
         write(_path, DISABLED)
     with open(_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
         json.dump(_new_manifest, _f, indent=2)
+# Cutting the recipe only stops an item being MADE. A removed item that drops is still in the
+# game and still drawn on the mob's EMI page, and one that Apotheosis rolls as affixed gear is
+# still handed to the player wholesale. So every file that hands one over is re-emitted without
+# it. Same manifest discipline as the recipes above: deleting a row from a doc has to give the
+# drop back, which means tracking what we wrote and deleting what we no longer want written.
+_data_manifest_path = os.path.join(ROOT, "texture-work", ".removed_data.json")
+_old_data = []
+if os.path.isfile(_data_manifest_path):
+    with open(_data_manifest_path, encoding="utf-8") as _f:
+        _old_data = json.load(_f)
+if _removed and not _scan_ok:
+    _new_data = _old_data                  # could not scan: change nothing rather than wipe
+else:
+    _new_data, _gone = [], set(_removed_ids)
+    for _lp in sorted(_loot_src):
+        _was = _loot_src[_lp]
+        if "/loot_table" in _lp:
+            _clean = _strip_loot(_was, _gone)
+        else:
+            _clean = _strip_ids(_was, _gone)
+            if _clean is None:
+                # The file IS the removed item, so there is nothing to strip it down to. Switch it
+                # off through the mod's own gate instead: these files already ship a
+                # `neoforge:conditions` block - it is how Apotheosis skips an entry whose mod is
+                # absent - so the shape stays valid and the loader simply passes it over.
+                _clean = dict(_was)
+                _clean["neoforge:conditions"] = [{"type": "neoforge:false"}]
+        if _clean != _was:
+            write(_lp, _clean)
+            _new_data.append(_lp)
+    for _stale in sorted(set(_old_data) - set(_new_data)):
+        _abs = os.path.join(RES, _stale.replace("/", os.sep))
+        if os.path.isfile(_abs):
+            os.remove(_abs)
+            print(f"  removed items: restored {_stale}")
+    with open(_data_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
+        json.dump(sorted(_new_data), _f, indent=2)
+
+_n_loot = sum(1 for _p in _new_data if "/loot_table" in _p)
 print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes disabled, "
-      f"{len(_leaks)} with loot leaks")
+      f"{_n_loot} loot tables and {len(_new_data) - _n_loot} other data files rewritten")
 
 # Refresh the LEAKS block in every doc, replacing ONLY between the markers.
 _OPEN = "<!-- LEAKS: generated every build, do not edit by hand -->"
@@ -2652,12 +2749,12 @@ if not _removed or _scan_ok:
         for _i in sorted(i for i in _removed_ids if i.split(":")[0] == _fn[:-3]):
             _l = _leaks.get(_i)
             if _l:
-                _body.append(f"- **{_i}** — still referenced by {len(_l)} loot table(s):")
+                _body.append(f"- **{_i}** — taken out of {len(_l)} loot table(s):")
                 _body += [f"  - `{x}`" for x in _l[:8]]
                 if len(_l) > 8:
                     _body.append(f"  - ...and {len(_l) - 8} more")
-        _block = ("\n\n## Leaks\n\nLoot tables that still reference a removed id, i.e. ways it can "
-                  "still be obtained despite having no recipe.\n\n"
+        _block = ("\n\n## Loot\n\nLoot tables that handed one of these out. Each is re-emitted "
+                  "without the entry, so the drop is gone as well as the recipe.\n\n"
                   + ("\n".join(_body) if _body else "_None._") + "\n\n")
         _head, _rest = _src.split(_OPEN, 1)
         _tail = _rest.split(_CLOSE, 1)[1]
@@ -3015,5 +3112,23 @@ lang.update({
     "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
 })
 write("assets/bertieprogression/lang/en_us.json", lang)
+
+# A data override only wins if this mod loads AFTER the one it overrides, and when it does not,
+# nothing complains - the file is just ignored. Magitech's bench recipes and TerraCurio's disables
+# both shipped broken that way, so the manifest is checked against what we actually write.
+_TOML = os.path.join(ROOT, "src", "main", "templates", "META-INF", "neoforge.mods.toml")
+_declared = set()
+for _blk in io.open(_TOML, encoding="utf-8").read().split("[[dependencies.")[1:]:
+    _m = re.search(r'modId="([a-z0-9_]+)"', _blk)
+    if _m and 'ordering="AFTER"' in _blk:
+        _declared.add(_m.group(1))
+# minecraft and neoforge always load first; `c` and `forge` are shared tag namespaces nobody owns.
+_own = {MODID, "minecraft", "neoforge", "c", "forge"}
+_overridden = {p.split("/")[1] for p in written if p.startswith("data/") and "/" in p[5:]}
+_undeclared = sorted(_overridden - _declared - _own)
+if _undeclared:
+    raise SystemExit(
+        "these namespaces get data written for them but are not declared with ordering=\"AFTER\" "
+        "in neoforge.mods.toml, so the original files would win: " + ", ".join(_undeclared))
 
 print(f"Wrote {len(written)} files under {RES}")

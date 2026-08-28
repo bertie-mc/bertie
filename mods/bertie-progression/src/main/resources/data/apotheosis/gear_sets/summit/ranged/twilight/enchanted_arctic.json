@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "placebo:gear_set",
+  "boots": [],
+  "chestplates": [],
+  "helmets": [],
+  "leggings": [],
+  "mainhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "minecraft:bow"
+      },
+      "weight": 12
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "minecraft:crossbow"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "components": {
+          "apotheosis:durability_bonus": 0.525,
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:power": 8
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:ice_bow"
+      },
+      "weight": 2
+    }
+  ],
+  "quality": 2.5,
+  "tags": [
+    "summit_ranged"
+  ],
+  "weight": 40
+}

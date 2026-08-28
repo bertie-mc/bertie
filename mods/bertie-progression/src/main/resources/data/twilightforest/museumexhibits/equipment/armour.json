@@ -1,0 +1,14 @@
+{
+  "collection": "museumcurator.collection.equipment",
+  "name": "museumcurator.equipment.armour",
+  "items": [],
+  "insertGroups": [
+    {
+      "relativeTo": "minecraft:shield",
+      "placement": "after",
+      "items": [
+        "twilightforest:knightmetal_shield"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "placebo:gear_set",
+  "boots": [],
+  "chestplates": [],
+  "helmets": [],
+  "leggings": [],
+  "mainhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:knightmetal_sword"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:knightmetal_axe"
+      },
+      "weight": 10
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:knightmetal_pickaxe"
+      },
+      "weight": 10
+    }
+  ],
+  "offhands": [
+    {
+      "stack": {
+        "count": 1,
+        "id": "minecraft:shield"
+      },
+      "weight": 8
+    },
+    {
+      "stack": {
+        "count": 1,
+        "id": "twilightforest:knightmetal_shield"
+      },
+      "weight": 2
+    }
+  ],
+  "quality": 2.5,
+  "tags": [
+    "frontier_melee"
+  ],
+  "weight": 5
+}
