@@ -14,6 +14,8 @@ configurations.named("clienttestComponents") {
 
 dependencies {
     gametestImplementation(project(":mods:berlords-carving"))
+    clienttestCompileOnly(deps.curios)
+    clienttestCompileOnly(deps.terraCurio)
 
     packComponents(deps.accessdenied)
     packComponents(deps.accessoriesCompatLayer)
@@ -275,7 +277,6 @@ dependencies {
     packComponents(deps.parcool)
     packComponents(deps.particleEffects)
     packComponents(deps.particleRain)
-    packComponents(deps.particleStorm)
     packComponents(deps.pastelMod)
     packComponents(deps.perSpatium)
     packComponents(deps.pickUpNotifier)

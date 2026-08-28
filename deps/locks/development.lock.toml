@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "38450d7e90dc53cd324da6af0923b929b90f9925b7c499a5aad1c66fdb3b6f1d"
+inputs-hash = "48423c406000559b01f504244929da40dada727d877ea5e63b40e726c68db60e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1105,10 +1105,6 @@ mod = "modrinth:PLAGcSFJ:ewh5dAkH"
 any = "modrinth:nrikgvxm:CJeVXIae"
 mod = "modrinth:nrikgvxm:CJeVXIae"
 
-[components."particle-storm"]
-any = "curseforge:1124172:8154439"
-mod = "curseforge:1124172:8154439"
-
 [components."pastel-mod"]
 any = "modrinth:5lr6fnw0:GGU6zOUH"
 mod = "modrinth:5lr6fnw0:GGU6zOUH"
@@ -1337,8 +1333,8 @@ any = "modrinth:81LiVMcA:RQGA8ER4"
 mod = "modrinth:81LiVMcA:RQGA8ER4"
 
 [components."terra-curio"]
-any = "modrinth:cylFY5iL:mCth2g0T"
-mod = "modrinth:cylFY5iL:mCth2g0T"
+any = "curseforge:1027625:8520023"
+mod = "curseforge:1027625:8520023"
 
 [components."terralith"]
 any = "modrinth:8oi3bsk5:MuJMtPGQ"
@@ -1587,26 +1583,26 @@ mod = "modrinth:C1MoWQlb:emIYdkrI"
 any = "modrinth:mMTOWOaA:KNtnADP6"
 mod = "modrinth:mMTOWOaA:KNtnADP6"
 
-[artifacts."curseforge:1124172:8154439"]
-name = "particle-storm"
-component = "particle-storm"
+[artifacts."curseforge:1027625:8520023"]
+name = "terra-curio"
+component = "terra-curio"
 provider = "curseforge"
 kind = "mod"
 side = "both"
 group = "curse.maven"
-module = "particle-storm-1124172"
-version = "8154439"
-filename = "particle-storm-1124172-8154439.jar"
-project-id = 1124172
-slug = "particle-storm"
-file-id = 8154439
-provides = ["particlestorm"]
-bundled-provides = []
+module = "terra-curio-1027625"
+version = "8520023"
+filename = "terra_curio-1.3.1.jar"
+project-id = 1027625
+slug = "terra-curio"
+file-id = 8520023
+provides = ["terra_curio"]
+bundled-provides = ["confluence_magic_lib", "particlestorm"]
 required = []
 optional = []
 incompatible = []
 bundled = []
-integrations = []
+integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:1244863:8048938"]
 name = "apotheosis-x-irons-spellbooks-compat"
@@ -7633,26 +7629,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:cylFY5iL:mCth2g0T"]
-name = "terra-curio"
-component = "terra-curio"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "cylFY5iL"
-version = "mCth2g0T"
-filename = "terra_curio-1.1.1.jar"
-project-id = "cylFY5iL"
-version-id = "mCth2g0T"
-provides = ["terra_curio"]
-bundled-provides = ["confluence_magic_lib", "particlestorm"]
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:d6MhxwRo:j16Kori6"]
 name = "soul-fire-d"

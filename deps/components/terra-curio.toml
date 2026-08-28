@@ -1,14 +1,7 @@
-[distributions.modrinth-mod]
-provider = "modrinth"
-kind = "mod"
-project-id = "cylFY5iL"
-version-id = "mCth2g0T"
-filename = "terra_curio-1.1.1.jar"
-
 [distributions.curseforge-mod]
 provider = "curseforge"
 kind = "mod"
 slug = "terra-curio"
 project-id = 1027625
-file-id = 6775102
-filename = "terra_curio-1.1.1.jar"
+file-id = 8520023
+filename = "terra_curio-1.3.1.jar"

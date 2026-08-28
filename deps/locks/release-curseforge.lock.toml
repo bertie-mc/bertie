@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "aa524b0f11548f475b32363630ed99e247604c4ce5335bccc4100484c1252ba5"
+inputs-hash = "a0e50d0aaf25f542c2ab6691a4705430623762c57511e1bed8987030a67e7024"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1105,10 +1105,6 @@ mod = "curseforge:1120746:8017633"
 any = "curseforge:421897:8055433"
 mod = "curseforge:421897:8055433"
 
-[components."particle-storm"]
-any = "curseforge:1124172:8154439"
-mod = "curseforge:1124172:8154439"
-
 [components."pastel-mod"]
 any = "curseforge:1264556:7591337"
 mod = "curseforge:1264556:7591337"
@@ -1337,8 +1333,8 @@ any = "curseforge:1259949:6952974"
 mod = "curseforge:1259949:6952974"
 
 [components."terra-curio"]
-any = "curseforge:1027625:6775102"
-mod = "curseforge:1027625:6775102"
+any = "curseforge:1027625:8520023"
+mod = "curseforge:1027625:8520023"
 
 [components."terralith"]
 any = "curseforge:513688:6090387"
@@ -2049,7 +2045,7 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:1027625:6775102"]
+[artifacts."curseforge:1027625:8520023"]
 name = "terra-curio"
 component = "terra-curio"
 provider = "curseforge"
@@ -2057,11 +2053,11 @@ kind = "mod"
 side = "both"
 group = "curse.maven"
 module = "terra-curio-1027625"
-version = "6775102"
-filename = "terra_curio-1.1.1.jar"
+version = "8520023"
+filename = "terra_curio-1.3.1.jar"
 project-id = 1027625
 slug = "terra-curio"
-file-id = 6775102
+file-id = 8520023
 provides = ["terra_curio"]
 bundled-provides = ["confluence_magic_lib", "particlestorm"]
 required = []
@@ -2633,27 +2629,6 @@ provides = ["particle_effects"]
 bundled-provides = []
 required = []
 optional = [{ "missing" = "oldpotions", "mod-id" = "oldpotions", "version-range" = "*", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1124172:8154439"]
-name = "particle-storm"
-component = "particle-storm"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "particle-storm-1124172"
-version = "8154439"
-filename = "particle-storm-1124172-8154439.jar"
-project-id = 1124172
-slug = "particle-storm"
-file-id = 8154439
-provides = ["particlestorm"]
-bundled-provides = []
-required = []
-optional = []
 incompatible = []
 bundled = []
 integrations = []

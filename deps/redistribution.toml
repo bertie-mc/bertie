@@ -202,9 +202,10 @@ https://www.curseforge.com/minecraft/mc-mods/inventory-management-deluxe
 [evidence.curseforge-lgpl-3]
 allowed = true
 text = """
-Particle Storm declares LGPLv3 on its CurseForge project page. It permits redistribution
-subject to the LGPL's notice, license, and source requirements.
+Particle Storm and Terra Curio declare LGPLv3 on their CurseForge project pages. It permits
+redistribution subject to the LGPL's notice, license, and source requirements.
 https://www.curseforge.com/minecraft/mc-mods/particle-storm
+https://www.curseforge.com/minecraft/mc-mods/terra-curio
 """
 
 [evidence.apotheosis-irons-compat-open-licenses]
@@ -311,9 +312,9 @@ name = "inventory-management-deluxe"
 component = "inventory-management-deluxe"
 evidence = ["curseforge-mit"]
 
-[exports.modrinth.artifacts."curseforge:1124172:8154439"]
-name = "particle-storm"
-component = "particle-storm"
+[exports.modrinth.artifacts."curseforge:1027625:8520023"]
+name = "terra-curio"
+component = "terra-curio"
 evidence = ["curseforge-lgpl-3"]
 
 [exports.curseforge.artifacts."modrinth:jtmvUHXj:Fb55Fgjz"]
