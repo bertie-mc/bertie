@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (477)
+## Mods (476)
 
 | Mod |
 |---|
@@ -99,7 +99,6 @@
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |
 | `crabbers-delight` |
-| `crafting-on-a-stick` |
 | `crafttweaker` |
 | `crate-delight` |
 | `create` |

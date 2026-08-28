@@ -475,7 +475,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000016"]
@@ -495,7 +495,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B0000000000000D"]
@@ -857,8 +857,8 @@
 				item: { count: 1, id: "forbidden_arcanus:rune" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B0000000000000A"]
@@ -877,7 +877,7 @@
 				item: { count: 1, id: "minecraft:glass" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 6.0d
 			y: 1.5d
 		}
 		{
@@ -897,7 +897,7 @@
 				item: { count: 1, id: "minecraft:glass_bottle" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -983,7 +983,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B00000000000001"]

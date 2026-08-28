@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "f1e7f5fa332d52e36d9bc46e96265abd13d12c112488d2abc0d170ec5f279e3c"
+inputs-hash = "aeaeb1eec2d274f24633912991c14b8ca4691789ba9652efa13f8c79f88d889c"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -296,10 +296,6 @@ mod = "modrinth:6cpT8CUC:U6kExSSz"
 [components."crabbers-delight"]
 any = "modrinth:gBGdVBJy:uwSpUkrQ"
 mod = "modrinth:gBGdVBJy:uwSpUkrQ"
-
-[components."crafting-on-a-stick"]
-any = "modrinth:Tg5fXO1x:1MPqh4Vt"
-mod = "modrinth:Tg5fXO1x:1MPqh4Vt"
 
 [components."crafttweaker"]
 any = "modrinth:Xg35A4rS:BVOSHJwc"
@@ -6527,26 +6523,6 @@ optional = [{ "missing" = "jei", "mod-id" = "jei", "version-range" = "[19.21, )"
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:Tg5fXO1x:1MPqh4Vt"]
-name = "crafting-on-a-stick"
-component = "crafting-on-a-stick"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "Tg5fXO1x"
-version = "1MPqh4Vt"
-filename = "crafting_on_a_stick-1.21.0.4.jar"
-project-id = "Tg5fXO1x"
-version-id = "1MPqh4Vt"
-provides = ["crafting_on_a_stick"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:Tlo2tahX:otODJ5cv"]
 name = "extra-disks"

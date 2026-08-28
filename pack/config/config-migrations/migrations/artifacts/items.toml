@@ -6,3 +6,13 @@ op = "merge"
 
 [changes.fragment.whoopee_cushion]
 fartChance = 0.2
+
+# Rooted Boots are cut. Artifacts items have no recipes, so the removal tables cannot reach them -
+# switching the effect off and taking them out of loot generation is the only way they stop existing.
+[[changes]]
+version = 2
+op = "merge"
+
+[changes.fragment.rooted_boots]
+enabled = false
+generateAsLoot = false

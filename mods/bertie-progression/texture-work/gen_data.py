@@ -1465,6 +1465,69 @@ write("data/magitech/recipe/upgrade_workbench.json",
       shaped(["AA", "LL"], {"A": "minecraft:andesite", "L": "#minecraft:logs"},
              "magitech:upgrade_workbench"))
 
+
+# --- Curios slots. Cataclysm's "rings" and "waist" duplicate the standard ring and belt slots, so
+#     both are closed and their items move across. Every elytra leaves the back slot for wings;
+#     the back slot keeps the backpacks and the two cloaks. ---
+write("data/cataclysm/curios/entities/slots.json",
+      {"entities": ["player"],
+       "slots": ["head", "necklace", "talisman", "hands", "feet"]})
+for _closed in ("rings", "waist"):
+    write(f"data/cataclysm/curios/slots/{_closed}.json", {"operation": "SET", "size": 0})
+    write(f"data/curios/tags/item/{_closed}.json", {"replace": True, "values": []})
+
+write("data/curios/tags/item/ring.json",
+      {"replace": False, "values": [{"id": "cataclysm:ring_of_grudged", "required": False}]})
+write("data/curios/tags/item/belt.json",
+      {"replace": False,
+       "values": [{"id": "cataclysm:belt_of_beginner", "required": False},
+                  {"id": "cataclysm:belt_of_monstrosity", "required": False}]})
+
+_BACK_KEEP = [
+           {"id": "l2hostility:triple_strip_cape", "required": False},
+           {"id": "nameless_trinkets:explosion_proof_jacket", "required": False},
+           {"id": "sophisticatedbackpacks:backpack", "required": False},
+           {"id": "sophisticatedbackpacks:copper_backpack", "required": False},
+           {"id": "sophisticatedbackpacks:diamond_backpack", "required": False},
+           {"id": "sophisticatedbackpacks:gold_backpack", "required": False},
+           {"id": "sophisticatedbackpacks:iron_backpack", "required": False},
+           {"id": "sophisticatedbackpacks:netherite_backpack", "required": False},
+       ]
+_ELYTRA = [
+           {"id": "alexsmobs:tarantula_hawk_elytra", "required": False},
+           {"id": "avaritia:infinity_elytra", "required": False},
+           {"id": "crystalmod:black_tourmaline_elytra", "required": False},
+           {"id": "crystalmod:sapphire_elytra", "required": False},
+           {"id": "deeperdarker:soul_elytra", "required": False},
+           {"id": "enderitemod:enderite_elytra_seperated", "required": False},
+           {"id": "enigmaticlegacyplus:chaos_elytra", "required": False},
+           {"id": "enigmaticlegacyplus:majestic_elytra", "required": False},
+           {"id": "lilwings:aponi_elytra", "required": False},
+           {"id": "lilwings:butter_gold_elytra", "required": False},
+           {"id": "lilwings:cloudy_puff_elytra", "required": False},
+           {"id": "lilwings:crystal_puff_elytra", "required": False},
+           {"id": "lilwings:gold_applefly_elytra", "required": False},
+           {"id": "lilwings:grayling_blooming_elytra", "required": False},
+           {"id": "lilwings:grayling_elytra", "required": False},
+           {"id": "lilwings:grayling_flowering_elytra", "required": False},
+           {"id": "lilwings:painted_panther_elytra", "required": False},
+           {"id": "lilwings:red_applefly_elytra", "required": False},
+           {"id": "lilwings:shroom_skipper_elytra", "required": False},
+           {"id": "lilwings:swallow_tail_elytra", "required": False},
+           {"id": "lilwings:swamp_hopper_elytra", "required": False},
+           {"id": "lilwings:white_fox_elytra", "required": False},
+           {"id": "lolenderite:enderite_plated_elytra", "required": False},
+           {"id": "mekanism:hdpe_elytra", "required": False},
+           {"id": "minecraft:elytra", "required": False},
+           {"id": "mna:spectral_elytra", "required": False},
+           {"id": "mythicmetals:celestium_elytra", "required": False},
+           {"id": "netherelytra:netherite_elytra", "required": False},
+           {"id": "silentgear:elytra", "required": False},
+           {"id": "wooden_elytra:wooden_elytra", "required": False},
+       ]
+write("data/curios/tags/item/back.json", {"replace": True, "values": _BACK_KEEP})
+write("data/curios/tags/item/wing.json", {"replace": False, "values": _ELYTRA})
+
 # --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
 #     Change each shared residue type to produce the corresponding primary ingot or
 #     item, required_amount 1 (recipe chances untouched). Each residue_type maps 1:1 to its primary, so

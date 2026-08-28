@@ -1,0 +1,37 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "l2hostility:triple_strip_cape",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:explosion_proof_jacket",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:backpack",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:copper_backpack",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:diamond_backpack",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:gold_backpack",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:iron_backpack",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:netherite_backpack",
+      "required": false
+    }
+  ]
+}

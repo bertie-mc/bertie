@@ -85,7 +85,6 @@ dependencies {
     packComponents(deps.controlling)
     packComponents(deps.cosmeticArmorReworkedForked)
     packComponents(deps.crabbersDelight)
-    packComponents(deps.craftingOnAStick)
     packComponents(deps.crafttweaker)
     packComponents(deps.crateDelight)
     packComponents(deps.create)

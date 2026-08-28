@@ -5030,103 +5030,103 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_gruesome_concentration"
+				id: "cataclysm:ring_of_grudged"
 			}
 			id: "4C00000000000183"
 			tasks: [{
 				id: "4C00000001000183"
-				item: { count: 1, id: "malum:ring_of_gruesome_concentration" }
+				item: { count: 1, id: "cataclysm:ring_of_grudged" }
 				type: "item"
 			}]
 			x: 52.0d
+			y: 2.0d
+		}
+		{
+			icon: {
+				id: "malum:ring_of_gruesome_concentration"
+			}
+			id: "4C00000000000184"
+			tasks: [{
+				id: "4C00000001000184"
+				item: { count: 1, id: "malum:ring_of_gruesome_concentration" }
+				type: "item"
+			}]
+			x: 53.0d
 			y: 2.0d
 		}
 		{
 			icon: {
 				id: "l2hostility:ring_of_healing"
 			}
-			id: "4C00000000000184"
+			id: "4C00000000000185"
 			tasks: [{
-				id: "4C00000001000184"
+				id: "4C00000001000185"
 				item: { count: 1, id: "l2hostility:ring_of_healing" }
 				type: "item"
 			}]
-			x: 53.0d
-			y: 2.0d
+			x: 45.0d
+			y: 3.0d
 		}
 		{
 			icon: {
 				id: "l2hostility:ring_of_incarceration"
 			}
-			id: "4C00000000000185"
+			id: "4C00000000000186"
 			tasks: [{
-				id: "4C00000001000185"
+				id: "4C00000001000186"
 				item: { count: 1, id: "l2hostility:ring_of_incarceration" }
 				type: "item"
 			}]
-			x: 45.0d
+			x: 46.0d
 			y: 3.0d
 		}
 		{
 			icon: {
 				id: "irons_spellbooks:invisibility_ring"
 			}
-			id: "4C00000000000186"
+			id: "4C00000000000187"
 			tasks: [{
-				id: "4C00000001000186"
+				id: "4C00000001000187"
 				item: { count: 1, id: "irons_spellbooks:invisibility_ring" }
 				type: "item"
 			}]
-			x: 46.0d
+			x: 47.0d
 			y: 3.0d
 		}
 		{
 			icon: {
 				id: "l2hostility:ring_of_life"
 			}
-			id: "4C00000000000187"
+			id: "4C00000000000188"
 			tasks: [{
-				id: "4C00000001000187"
+				id: "4C00000001000188"
 				item: { count: 1, id: "l2hostility:ring_of_life" }
 				type: "item"
 			}]
-			x: 47.0d
+			x: 48.0d
 			y: 3.0d
 		}
 		{
 			icon: {
 				id: "irons_spellbooks:mana_ring"
 			}
-			id: "4C00000000000188"
+			id: "4C00000000000189"
 			tasks: [{
-				id: "4C00000001000188"
+				id: "4C00000001000189"
 				item: { count: 1, id: "irons_spellbooks:mana_ring" }
 				type: "item"
 			}]
-			x: 48.0d
+			x: 49.0d
 			y: 3.0d
 		}
 		{
 			icon: {
 				id: "malum:ring_of_manaweaving"
 			}
-			id: "4C00000000000189"
-			tasks: [{
-				id: "4C00000001000189"
-				item: { count: 1, id: "malum:ring_of_manaweaving" }
-				type: "item"
-			}]
-			x: 49.0d
-			y: 3.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:ring_of_ocean"
-			}
 			id: "4C0000000000018A"
 			tasks: [{
 				id: "4C0000000100018A"
-				item: { count: 1, id: "l2hostility:ring_of_ocean" }
+				item: { count: 1, id: "malum:ring_of_manaweaving" }
 				type: "item"
 			}]
 			x: 50.0d
@@ -5134,12 +5134,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:cooldown_ring"
+				id: "l2hostility:ring_of_ocean"
 			}
 			id: "4C0000000000018B"
 			tasks: [{
 				id: "4C0000000100018B"
-				item: { count: 1, id: "irons_spellbooks:cooldown_ring" }
+				item: { count: 1, id: "l2hostility:ring_of_ocean" }
 				type: "item"
 			}]
 			x: 51.0d
@@ -5147,12 +5147,12 @@
 		}
 		{
 			icon: {
-				id: "l2hostility:ring_of_reflection"
+				id: "irons_spellbooks:cooldown_ring"
 			}
 			id: "4C0000000000018C"
 			tasks: [{
 				id: "4C0000000100018C"
-				item: { count: 1, id: "l2hostility:ring_of_reflection" }
+				item: { count: 1, id: "irons_spellbooks:cooldown_ring" }
 				type: "item"
 			}]
 			x: 52.0d
@@ -5160,12 +5160,12 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_the_demolitionist"
+				id: "l2hostility:ring_of_reflection"
 			}
 			id: "4C0000000000018D"
 			tasks: [{
 				id: "4C0000000100018D"
-				item: { count: 1, id: "malum:ring_of_the_demolitionist" }
+				item: { count: 1, id: "l2hostility:ring_of_reflection" }
 				type: "item"
 			}]
 			x: 53.0d
@@ -5173,12 +5173,12 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_the_endless_well"
+				id: "malum:ring_of_the_demolitionist"
 			}
 			id: "4C0000000000018E"
 			tasks: [{
 				id: "4C0000000100018E"
-				item: { count: 1, id: "malum:ring_of_the_endless_well" }
+				item: { count: 1, id: "malum:ring_of_the_demolitionist" }
 				type: "item"
 			}]
 			x: 45.0d
@@ -5186,12 +5186,12 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_the_hoarder"
+				id: "malum:ring_of_the_endless_well"
 			}
 			id: "4C0000000000018F"
 			tasks: [{
 				id: "4C0000000100018F"
-				item: { count: 1, id: "malum:ring_of_the_hoarder" }
+				item: { count: 1, id: "malum:ring_of_the_endless_well" }
 				type: "item"
 			}]
 			x: 46.0d
@@ -5199,12 +5199,12 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_the_howling_maelstrom"
+				id: "malum:ring_of_the_hoarder"
 			}
 			id: "4C00000000000190"
 			tasks: [{
 				id: "4C00000001000190"
-				item: { count: 1, id: "malum:ring_of_the_howling_maelstrom" }
+				item: { count: 1, id: "malum:ring_of_the_hoarder" }
 				type: "item"
 			}]
 			x: 47.0d
@@ -5212,12 +5212,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:lurker_ring"
+				id: "malum:ring_of_the_howling_maelstrom"
 			}
 			id: "4C00000000000191"
 			tasks: [{
 				id: "4C00000001000191"
-				item: { count: 1, id: "irons_spellbooks:lurker_ring" }
+				item: { count: 1, id: "malum:ring_of_the_howling_maelstrom" }
 				type: "item"
 			}]
 			x: 48.0d
@@ -5225,12 +5225,12 @@
 		}
 		{
 			icon: {
-				id: "malum:ring_of_the_rising_edge"
+				id: "irons_spellbooks:lurker_ring"
 			}
 			id: "4C00000000000192"
 			tasks: [{
 				id: "4C00000001000192"
-				item: { count: 1, id: "malum:ring_of_the_rising_edge" }
+				item: { count: 1, id: "irons_spellbooks:lurker_ring" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -5238,12 +5238,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:visibility_ring"
+				id: "malum:ring_of_the_rising_edge"
 			}
 			id: "4C00000000000193"
 			tasks: [{
 				id: "4C00000001000193"
-				item: { count: 1, id: "irons_spellbooks:visibility_ring" }
+				item: { count: 1, id: "malum:ring_of_the_rising_edge" }
 				type: "item"
 			}]
 			x: 50.0d
@@ -5251,12 +5251,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:betrayer_signet"
+				id: "irons_spellbooks:visibility_ring"
 			}
 			id: "4C00000000000194"
 			tasks: [{
 				id: "4C00000001000194"
-				item: { count: 1, id: "irons_spellbooks:betrayer_signet" }
+				item: { count: 1, id: "irons_spellbooks:visibility_ring" }
 				type: "item"
 			}]
 			x: 51.0d
@@ -5264,12 +5264,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:silver_ring"
+				id: "irons_spellbooks:betrayer_signet"
 			}
 			id: "4C00000000000195"
 			tasks: [{
 				id: "4C00000001000195"
-				item: { count: 1, id: "irons_spellbooks:silver_ring" }
+				item: { count: 1, id: "irons_spellbooks:betrayer_signet" }
 				type: "item"
 			}]
 			x: 52.0d
@@ -5277,12 +5277,12 @@
 		}
 		{
 			icon: {
-				id: "mythsandlegends:svarogs_ring"
+				id: "irons_spellbooks:silver_ring"
 			}
 			id: "4C00000000000196"
 			tasks: [{
 				id: "4C00000001000196"
-				item: { count: 1, id: "mythsandlegends:svarogs_ring" }
+				item: { count: 1, id: "irons_spellbooks:silver_ring" }
 				type: "item"
 			}]
 			x: 53.0d
@@ -5290,12 +5290,12 @@
 		}
 		{
 			icon: {
-				id: "magitech:torsion_ring"
+				id: "mythsandlegends:svarogs_ring"
 			}
 			id: "4C00000000000197"
 			tasks: [{
 				id: "4C00000001000197"
-				item: { count: 1, id: "magitech:torsion_ring" }
+				item: { count: 1, id: "mythsandlegends:svarogs_ring" }
 				type: "item"
 			}]
 			x: 45.0d
@@ -5303,12 +5303,12 @@
 		}
 		{
 			icon: {
-				id: "magitech:umbral_ring"
+				id: "magitech:torsion_ring"
 			}
 			id: "4C00000000000198"
 			tasks: [{
 				id: "4C00000001000198"
-				item: { count: 1, id: "magitech:umbral_ring" }
+				item: { count: 1, id: "magitech:torsion_ring" }
 				type: "item"
 			}]
 			x: 46.0d
@@ -5316,12 +5316,12 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:wicked_bone_ring"
+				id: "magitech:umbral_ring"
 			}
 			id: "4C00000000000199"
 			tasks: [{
 				id: "4C00000001000199"
-				item: { count: 1, id: "irons_spellbooks:wicked_bone_ring" }
+				item: { count: 1, id: "magitech:umbral_ring" }
 				type: "item"
 			}]
 			x: 47.0d
@@ -5329,11 +5329,24 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:amethyst_resonance_charm"
+				id: "irons_spellbooks:wicked_bone_ring"
 			}
 			id: "4C0000000000019A"
 			tasks: [{
 				id: "4C0000000100019A"
+				item: { count: 1, id: "irons_spellbooks:wicked_bone_ring" }
+				type: "item"
+			}]
+			x: 48.0d
+			y: 5.0d
+		}
+		{
+			icon: {
+				id: "irons_spellbooks:amethyst_resonance_charm"
+			}
+			id: "4C0000000000019B"
+			tasks: [{
+				id: "4C0000000100019B"
 				item: { count: 1, id: "irons_spellbooks:amethyst_resonance_charm" }
 				type: "item"
 			}]
@@ -5344,9 +5357,9 @@
 			icon: {
 				id: "irons_spellbooks:concentration_amulet"
 			}
-			id: "4C0000000000019B"
+			id: "4C0000000000019C"
 			tasks: [{
-				id: "4C0000000100019B"
+				id: "4C0000000100019C"
 				item: { count: 1, id: "irons_spellbooks:concentration_amulet" }
 				type: "item"
 			}]
@@ -5357,9 +5370,9 @@
 			icon: {
 				id: "discerning_the_eldritch:amulet_of_sculk_treasure"
 			}
-			id: "4C0000000000019C"
+			id: "4C0000000000019D"
 			tasks: [{
-				id: "4C0000000100019C"
+				id: "4C0000000100019D"
 				item: { count: 1, id: "discerning_the_eldritch:amulet_of_sculk_treasure" }
 				type: "item"
 			}]
@@ -5370,9 +5383,9 @@
 			icon: {
 				id: "irons_spellbooks:teleportation_amulet"
 			}
-			id: "4C0000000000019D"
+			id: "4C0000000000019E"
 			tasks: [{
-				id: "4C0000000100019D"
+				id: "4C0000000100019E"
 				item: { count: 1, id: "irons_spellbooks:teleportation_amulet" }
 				type: "item"
 			}]
@@ -5383,9 +5396,9 @@
 			icon: {
 				id: "irons_spellbooks:enchanted_ward_amulet"
 			}
-			id: "4C0000000000019E"
+			id: "4C0000000000019F"
 			tasks: [{
-				id: "4C0000000100019E"
+				id: "4C0000000100019F"
 				item: { count: 1, id: "irons_spellbooks:enchanted_ward_amulet" }
 				type: "item"
 			}]
@@ -5396,9 +5409,9 @@
 			icon: {
 				id: "cataclysm:berserker_soul_amulet"
 			}
-			id: "4C0000000000019F"
+			id: "4C000000000001A0"
 			tasks: [{
-				id: "4C0000000100019F"
+				id: "4C000000010001A0"
 				item: { count: 1, id: "cataclysm:berserker_soul_amulet" }
 				type: "item"
 			}]
@@ -5409,9 +5422,9 @@
 			icon: {
 				id: "nameless_trinkets:broken_ankh"
 			}
-			id: "4C000000000001A0"
+			id: "4C000000000001A1"
 			tasks: [{
-				id: "4C000000010001A0"
+				id: "4C000000010001A1"
 				item: { count: 1, id: "nameless_trinkets:broken_ankh" }
 				type: "item"
 			}]
@@ -5422,9 +5435,9 @@
 			icon: {
 				id: "aces_spell_utils:example_imbue_curio"
 			}
-			id: "4C000000000001A1"
+			id: "4C000000000001A2"
 			tasks: [{
-				id: "4C000000010001A1"
+				id: "4C000000010001A2"
 				item: { count: 1, id: "aces_spell_utils:example_imbue_curio" }
 				type: "item"
 			}]
@@ -5435,9 +5448,9 @@
 			icon: {
 				id: "artifacts:charm_of_shrinking"
 			}
-			id: "4C000000000001A2"
+			id: "4C000000000001A3"
 			tasks: [{
-				id: "4C000000010001A2"
+				id: "4C000000010001A3"
 				item: { count: 1, id: "artifacts:charm_of_shrinking" }
 				type: "item"
 			}]
@@ -5448,9 +5461,9 @@
 			icon: {
 				id: "artifacts:charm_of_sinking"
 			}
-			id: "4C000000000001A3"
+			id: "4C000000000001A4"
 			tasks: [{
-				id: "4C000000010001A3"
+				id: "4C000000010001A4"
 				item: { count: 1, id: "artifacts:charm_of_sinking" }
 				type: "item"
 			}]
@@ -5461,9 +5474,9 @@
 			icon: {
 				id: "irons_spellbooks:conjurers_talisman"
 			}
-			id: "4C000000000001A4"
+			id: "4C000000000001A5"
 			tasks: [{
-				id: "4C000000010001A4"
+				id: "4C000000010001A5"
 				item: { count: 1, id: "irons_spellbooks:conjurers_talisman" }
 				type: "item"
 			}]
@@ -5474,9 +5487,9 @@
 			icon: {
 				id: "artifacts:cross_necklace"
 			}
-			id: "4C000000000001A5"
+			id: "4C000000000001A6"
 			tasks: [{
-				id: "4C000000010001A5"
+				id: "4C000000010001A6"
 				item: { count: 1, id: "artifacts:cross_necklace" }
 				type: "item"
 			}]
@@ -5487,9 +5500,9 @@
 			icon: {
 				id: "darkdoppelganger:elder_necklace"
 			}
-			id: "4C000000000001A6"
+			id: "4C000000000001A7"
 			tasks: [{
-				id: "4C000000010001A6"
+				id: "4C000000010001A7"
 				item: { count: 1, id: "darkdoppelganger:elder_necklace" }
 				type: "item"
 			}]
@@ -5500,9 +5513,9 @@
 			icon: {
 				id: "cognition:enlightened_amulet"
 			}
-			id: "4C000000000001A7"
+			id: "4C000000000001A8"
 			tasks: [{
-				id: "4C000000010001A7"
+				id: "4C000000010001A8"
 				item: { count: 1, id: "cognition:enlightened_amulet" }
 				type: "item"
 			}]
@@ -5513,9 +5526,9 @@
 			icon: {
 				id: "malstone:falling_well"
 			}
-			id: "4C000000000001A8"
+			id: "4C000000000001A9"
 			tasks: [{
-				id: "4C000000010001A8"
+				id: "4C000000010001A9"
 				item: { count: 1, id: "malstone:falling_well" }
 				type: "item"
 			}]
@@ -5526,9 +5539,9 @@
 			icon: {
 				id: "artifacts:flame_pendant"
 			}
-			id: "4C000000000001A9"
+			id: "4C000000000001AA"
 			tasks: [{
-				id: "4C000000010001A9"
+				id: "4C000000010001AA"
 				item: { count: 1, id: "artifacts:flame_pendant" }
 				type: "item"
 			}]
@@ -5539,9 +5552,9 @@
 			icon: {
 				id: "cognition:fortuitous_amulet"
 			}
-			id: "4C000000000001AA"
+			id: "4C000000000001AB"
 			tasks: [{
-				id: "4C000000010001AA"
+				id: "4C000000010001AB"
 				item: { count: 1, id: "cognition:fortuitous_amulet" }
 				type: "item"
 			}]
@@ -5552,9 +5565,9 @@
 			icon: {
 				id: "nameless_trinkets:gills"
 			}
-			id: "4C000000000001AB"
+			id: "4C000000000001AC"
 			tasks: [{
-				id: "4C000000010001AB"
+				id: "4C000000010001AC"
 				item: { count: 1, id: "nameless_trinkets:gills" }
 				type: "item"
 			}]
@@ -5565,9 +5578,9 @@
 			icon: {
 				id: "irons_spellbooks:greater_conjurers_talisman"
 			}
-			id: "4C000000000001AC"
+			id: "4C000000000001AD"
 			tasks: [{
-				id: "4C000000010001AC"
+				id: "4C000000010001AD"
 				item: { count: 1, id: "irons_spellbooks:greater_conjurers_talisman" }
 				type: "item"
 			}]
@@ -5578,9 +5591,9 @@
 			icon: {
 				id: "pastel:greater_potion_pendant"
 			}
-			id: "4C000000000001AD"
+			id: "4C000000000001AE"
 			tasks: [{
-				id: "4C000000010001AD"
+				id: "4C000000010001AE"
 				item: { count: 1, id: "pastel:greater_potion_pendant" }
 				type: "item"
 			}]
@@ -5591,9 +5604,9 @@
 			icon: {
 				id: "irons_spellbooks:heavy_chain_necklace"
 			}
-			id: "4C000000000001AE"
+			id: "4C000000000001AF"
 			tasks: [{
-				id: "4C000000010001AE"
+				id: "4C000000010001AF"
 				item: { count: 1, id: "irons_spellbooks:heavy_chain_necklace" }
 				type: "item"
 			}]
@@ -5604,9 +5617,9 @@
 			icon: {
 				id: "pastel:laurels_of_serenity"
 			}
-			id: "4C000000000001AF"
+			id: "4C000000000001B0"
 			tasks: [{
-				id: "4C000000010001AF"
+				id: "4C000000010001B0"
 				item: { count: 1, id: "pastel:laurels_of_serenity" }
 				type: "item"
 			}]
@@ -5617,9 +5630,9 @@
 			icon: {
 				id: "pastel:lesser_potion_pendant"
 			}
-			id: "4C000000000001B0"
+			id: "4C000000000001B1"
 			tasks: [{
-				id: "4C000000010001B0"
+				id: "4C000000010001B1"
 				item: { count: 1, id: "pastel:lesser_potion_pendant" }
 				type: "item"
 			}]
@@ -5630,9 +5643,9 @@
 			icon: {
 				id: "malstone:breaking_the_life"
 			}
-			id: "4C000000000001B1"
+			id: "4C000000000001B2"
 			tasks: [{
-				id: "4C000000010001B1"
+				id: "4C000000010001B2"
 				item: { count: 1, id: "malstone:breaking_the_life" }
 				type: "item"
 			}]
@@ -5643,9 +5656,9 @@
 			icon: {
 				id: "artifacts:lucky_scarf"
 			}
-			id: "4C000000000001B2"
+			id: "4C000000000001B3"
 			tasks: [{
-				id: "4C000000010001B2"
+				id: "4C000000010001B3"
 				item: { count: 1, id: "artifacts:lucky_scarf" }
 				type: "item"
 			}]
@@ -5656,9 +5669,9 @@
 			icon: {
 				id: "malum:necklace_of_blissful_harmony"
 			}
-			id: "4C000000000001B3"
+			id: "4C000000000001B4"
 			tasks: [{
-				id: "4C000000010001B3"
+				id: "4C000000010001B4"
 				item: { count: 1, id: "malum:necklace_of_blissful_harmony" }
 				type: "item"
 			}]
@@ -5669,9 +5682,9 @@
 			icon: {
 				id: "malum:necklace_of_the_hidden_blade"
 			}
-			id: "4C000000000001B4"
+			id: "4C000000000001B5"
 			tasks: [{
-				id: "4C000000010001B4"
+				id: "4C000000010001B5"
 				item: { count: 1, id: "malum:necklace_of_the_hidden_blade" }
 				type: "item"
 			}]
@@ -5682,9 +5695,9 @@
 			icon: {
 				id: "malum:necklace_of_the_mystic_mirror"
 			}
-			id: "4C000000000001B5"
+			id: "4C000000000001B6"
 			tasks: [{
-				id: "4C000000010001B5"
+				id: "4C000000010001B6"
 				item: { count: 1, id: "malum:necklace_of_the_mystic_mirror" }
 				type: "item"
 			}]
@@ -5695,9 +5708,9 @@
 			icon: {
 				id: "malum:necklace_of_the_narrow_edge"
 			}
-			id: "4C000000000001B6"
+			id: "4C000000000001B7"
 			tasks: [{
-				id: "4C000000010001B6"
+				id: "4C000000010001B7"
 				item: { count: 1, id: "malum:necklace_of_the_narrow_edge" }
 				type: "item"
 			}]
@@ -5708,9 +5721,9 @@
 			icon: {
 				id: "malum:necklace_of_the_watcher"
 			}
-			id: "4C000000000001B7"
+			id: "4C000000000001B8"
 			tasks: [{
-				id: "4C000000010001B7"
+				id: "4C000000010001B8"
 				item: { count: 1, id: "malum:necklace_of_the_watcher" }
 				type: "item"
 			}]
@@ -5721,9 +5734,9 @@
 			icon: {
 				id: "mythsandlegends:necklace_of_torngarsuk"
 			}
-			id: "4C000000000001B8"
+			id: "4C000000000001B9"
 			tasks: [{
-				id: "4C000000010001B8"
+				id: "4C000000010001B9"
 				item: { count: 1, id: "mythsandlegends:necklace_of_torngarsuk" }
 				type: "item"
 			}]
@@ -5734,9 +5747,9 @@
 			icon: {
 				id: "malum:ornate_necklace"
 			}
-			id: "4C000000000001B9"
+			id: "4C000000000001BA"
 			tasks: [{
-				id: "4C000000010001B9"
+				id: "4C000000010001BA"
 				item: { count: 1, id: "malum:ornate_necklace" }
 				type: "item"
 			}]
@@ -5747,9 +5760,9 @@
 			icon: {
 				id: "artifacts:panic_necklace"
 			}
-			id: "4C000000000001BA"
+			id: "4C000000000001BB"
 			tasks: [{
-				id: "4C000000010001BA"
+				id: "4C000000010001BB"
 				item: { count: 1, id: "artifacts:panic_necklace" }
 				type: "item"
 			}]
@@ -5760,9 +5773,9 @@
 			icon: {
 				id: "malstone:white_arrow_blade"
 			}
-			id: "4C000000000001BB"
+			id: "4C000000000001BC"
 			tasks: [{
-				id: "4C000000010001BB"
+				id: "4C000000010001BC"
 				item: { count: 1, id: "malstone:white_arrow_blade" }
 				type: "item"
 			}]
@@ -5773,9 +5786,9 @@
 			icon: {
 				id: "nameless_trinkets:resonant_heart"
 			}
-			id: "4C000000000001BC"
+			id: "4C000000000001BD"
 			tasks: [{
-				id: "4C000000010001BC"
+				id: "4C000000010001BD"
 				item: { count: 1, id: "nameless_trinkets:resonant_heart" }
 				type: "item"
 			}]
@@ -5786,9 +5799,9 @@
 			icon: {
 				id: "nameless_trinkets:scarab_amulet"
 			}
-			id: "4C000000000001BD"
+			id: "4C000000000001BE"
 			tasks: [{
-				id: "4C000000010001BD"
+				id: "4C000000010001BE"
 				item: { count: 1, id: "nameless_trinkets:scarab_amulet" }
 				type: "item"
 			}]
@@ -5799,9 +5812,9 @@
 			icon: {
 				id: "artifacts:scarf_of_invisibility"
 			}
-			id: "4C000000000001BE"
+			id: "4C000000000001BF"
 			tasks: [{
-				id: "4C000000010001BE"
+				id: "4C000000010001BF"
 				item: { count: 1, id: "artifacts:scarf_of_invisibility" }
 				type: "item"
 			}]
@@ -5812,9 +5825,9 @@
 			icon: {
 				id: "pastel:shieldgrasp_amulet"
 			}
-			id: "4C000000000001BF"
+			id: "4C000000000001C0"
 			tasks: [{
-				id: "4C000000010001BF"
+				id: "4C000000010001C0"
 				item: { count: 1, id: "pastel:shieldgrasp_amulet" }
 				type: "item"
 			}]
@@ -5825,9 +5838,9 @@
 			icon: {
 				id: "artifacts:shock_pendant"
 			}
-			id: "4C000000000001C0"
+			id: "4C000000000001C1"
 			tasks: [{
-				id: "4C000000010001C0"
+				id: "4C000000010001C1"
 				item: { count: 1, id: "artifacts:shock_pendant" }
 				type: "item"
 			}]
@@ -5838,9 +5851,9 @@
 			icon: {
 				id: "aces_spell_utils:example_curio"
 			}
-			id: "4C000000000001C1"
+			id: "4C000000000001C2"
 			tasks: [{
-				id: "4C000000010001C1"
+				id: "4C000000010001C2"
 				item: { count: 1, id: "aces_spell_utils:example_curio" }
 				type: "item"
 			}]
@@ -5851,9 +5864,9 @@
 			icon: {
 				id: "darkdoppelganger:summons_necklace"
 			}
-			id: "4C000000000001C2"
+			id: "4C000000000001C3"
 			tasks: [{
-				id: "4C000000010001C2"
+				id: "4C000000010001C3"
 				item: { count: 1, id: "darkdoppelganger:summons_necklace" }
 				type: "item"
 			}]
@@ -5864,9 +5877,9 @@
 			icon: {
 				id: "artifacts:thorn_pendant"
 			}
-			id: "4C000000000001C3"
+			id: "4C000000000001C4"
 			tasks: [{
-				id: "4C000000010001C3"
+				id: "4C000000010001C4"
 				item: { count: 1, id: "artifacts:thorn_pendant" }
 				type: "item"
 			}]
@@ -5877,9 +5890,9 @@
 			icon: {
 				id: "pastel:totem_pendant"
 			}
-			id: "4C000000000001C4"
+			id: "4C000000000001C5"
 			tasks: [{
-				id: "4C000000010001C4"
+				id: "4C000000010001C5"
 				item: { count: 1, id: "pastel:totem_pendant" }
 				type: "item"
 			}]
@@ -5890,9 +5903,9 @@
 			icon: {
 				id: "cataclysm:vitality_ankh"
 			}
-			id: "4C000000000001C5"
+			id: "4C000000000001C6"
 			tasks: [{
-				id: "4C000000010001C5"
+				id: "4C000000010001C6"
 				item: { count: 1, id: "cataclysm:vitality_ankh" }
 				type: "item"
 			}]
@@ -5903,9 +5916,9 @@
 			icon: {
 				id: "nameless_trinkets:woundbearer"
 			}
-			id: "4C000000000001C6"
+			id: "4C000000000001C7"
 			tasks: [{
-				id: "4C000000010001C6"
+				id: "4C000000010001C7"
 				item: { count: 1, id: "nameless_trinkets:woundbearer" }
 				type: "item"
 			}]
@@ -5916,9 +5929,9 @@
 			icon: {
 				id: "twilightforest:alpha_yeti_trophy"
 			}
-			id: "4C000000000001C7"
+			id: "4C000000000001C8"
 			tasks: [{
-				id: "4C000000010001C7"
+				id: "4C000000010001C8"
 				item: { count: 1, id: "twilightforest:alpha_yeti_trophy" }
 				type: "item"
 			}]
@@ -5929,9 +5942,9 @@
 			icon: {
 				id: "artifacts:anglers_hat"
 			}
-			id: "4C000000000001C8"
+			id: "4C000000000001C9"
 			tasks: [{
-				id: "4C000000010001C8"
+				id: "4C000000010001C9"
 				item: { count: 1, id: "artifacts:anglers_hat" }
 				type: "item"
 			}]
@@ -5942,9 +5955,9 @@
 			icon: {
 				id: "anvilcraft:anvil_hammer"
 			}
-			id: "4C000000000001C9"
+			id: "4C000000000001CA"
 			tasks: [{
-				id: "4C000000010001C9"
+				id: "4C000000010001CA"
 				item: { count: 1, id: "anvilcraft:anvil_hammer" }
 				type: "item"
 			}]
@@ -5955,9 +5968,9 @@
 			icon: {
 				id: "cataclysm:aptrgangr_head"
 			}
-			id: "4C000000000001CA"
+			id: "4C000000000001CB"
 			tasks: [{
-				id: "4C000000010001CA"
+				id: "4C000000010001CB"
 				item: { count: 1, id: "cataclysm:aptrgangr_head" }
 				type: "item"
 			}]
@@ -5968,9 +5981,9 @@
 			icon: {
 				id: "pastel:ashen_circlet"
 			}
-			id: "4C000000000001CB"
+			id: "4C000000000001CC"
 			tasks: [{
-				id: "4C000000010001CB"
+				id: "4C000000010001CC"
 				item: { count: 1, id: "pastel:ashen_circlet" }
 				type: "item"
 			}]
@@ -5981,9 +5994,9 @@
 			icon: {
 				id: "twilightforest:cicada"
 			}
-			id: "4C000000000001CC"
+			id: "4C000000000001CD"
 			tasks: [{
-				id: "4C000000010001CC"
+				id: "4C000000010001CD"
 				item: { count: 1, id: "twilightforest:cicada" }
 				type: "item"
 			}]
@@ -5994,9 +6007,9 @@
 			icon: {
 				id: "pastel:circlet_of_arrogance"
 			}
-			id: "4C000000000001CD"
+			id: "4C000000000001CE"
 			tasks: [{
-				id: "4C000000010001CD"
+				id: "4C000000010001CE"
 				item: { count: 1, id: "pastel:circlet_of_arrogance" }
 				type: "item"
 			}]
@@ -6007,9 +6020,9 @@
 			icon: {
 				id: "artifacts:cowboy_hat"
 			}
-			id: "4C000000000001CE"
+			id: "4C000000000001CF"
 			tasks: [{
-				id: "4C000000010001CE"
+				id: "4C000000010001CF"
 				item: { count: 1, id: "artifacts:cowboy_hat" }
 				type: "item"
 			}]
@@ -6020,9 +6033,9 @@
 			icon: {
 				id: "twilightforest:creeper_skull_candle"
 			}
-			id: "4C000000000001CF"
+			id: "4C000000000001D0"
 			tasks: [{
-				id: "4C000000010001CF"
+				id: "4C000000010001D0"
 				item: { count: 1, id: "twilightforest:creeper_skull_candle" }
 				type: "item"
 			}]
@@ -6033,9 +6046,9 @@
 			icon: {
 				id: "l2hostility:detector_glasses"
 			}
-			id: "4C000000000001D0"
+			id: "4C000000000001D1"
 			tasks: [{
-				id: "4C000000010001D0"
+				id: "4C000000010001D1"
 				item: { count: 1, id: "l2hostility:detector_glasses" }
 				type: "item"
 			}]
@@ -6046,9 +6059,9 @@
 			icon: {
 				id: "cataclysm:draugr_head"
 			}
-			id: "4C000000000001D1"
+			id: "4C000000000001D2"
 			tasks: [{
-				id: "4C000000010001D1"
+				id: "4C000000010001D2"
 				item: { count: 1, id: "cataclysm:draugr_head" }
 				type: "item"
 			}]
@@ -6059,9 +6072,9 @@
 			icon: {
 				id: "anvilcraft:ember_anvil_hammer"
 			}
-			id: "4C000000000001D2"
+			id: "4C000000000001D3"
 			tasks: [{
-				id: "4C000000010001D2"
+				id: "4C000000010001D3"
 				item: { count: 1, id: "anvilcraft:ember_anvil_hammer" }
 				type: "item"
 			}]
@@ -6072,9 +6085,9 @@
 			icon: {
 				id: "create:goggles"
 			}
-			id: "4C000000000001D3"
+			id: "4C000000000001D4"
 			tasks: [{
-				id: "4C000000010001D3"
+				id: "4C000000010001D4"
 				item: { count: 1, id: "create:goggles" }
 				type: "item"
 			}]
@@ -6085,9 +6098,9 @@
 			icon: {
 				id: "twilightforest:firefly"
 			}
-			id: "4C000000000001D4"
+			id: "4C000000000001D5"
 			tasks: [{
-				id: "4C000000010001D4"
+				id: "4C000000010001D5"
 				item: { count: 1, id: "twilightforest:firefly" }
 				type: "item"
 			}]
@@ -6098,9 +6111,9 @@
 			icon: {
 				id: "twilightforest:hydra_trophy"
 			}
-			id: "4C000000000001D5"
+			id: "4C000000000001D6"
 			tasks: [{
-				id: "4C000000010001D5"
+				id: "4C000000010001D6"
 				item: { count: 1, id: "twilightforest:hydra_trophy" }
 				type: "item"
 			}]
@@ -6111,9 +6124,9 @@
 			icon: {
 				id: "twilightforest:knight_phantom_trophy"
 			}
-			id: "4C000000000001D6"
+			id: "4C000000000001D7"
 			tasks: [{
-				id: "4C000000010001D6"
+				id: "4C000000010001D7"
 				item: { count: 1, id: "twilightforest:knight_phantom_trophy" }
 				type: "item"
 			}]
@@ -6124,9 +6137,9 @@
 			icon: {
 				id: "cataclysm:kobolediator_skull"
 			}
-			id: "4C000000000001D7"
+			id: "4C000000000001D8"
 			tasks: [{
-				id: "4C000000010001D7"
+				id: "4C000000010001D8"
 				item: { count: 1, id: "cataclysm:kobolediator_skull" }
 				type: "item"
 			}]
@@ -6137,9 +6150,9 @@
 			icon: {
 				id: "twilightforest:minoshroom_trophy"
 			}
-			id: "4C000000000001D8"
+			id: "4C000000000001D9"
 			tasks: [{
-				id: "4C000000010001D8"
+				id: "4C000000010001D9"
 				item: { count: 1, id: "twilightforest:minoshroom_trophy" }
 				type: "item"
 			}]
@@ -6150,9 +6163,9 @@
 			icon: {
 				id: "twilightforest:moonworm"
 			}
-			id: "4C000000000001D9"
+			id: "4C000000000001DA"
 			tasks: [{
-				id: "4C000000010001D9"
+				id: "4C000000010001DA"
 				item: { count: 1, id: "twilightforest:moonworm" }
 				type: "item"
 			}]
@@ -6163,9 +6176,9 @@
 			icon: {
 				id: "twilightforest:naga_trophy"
 			}
-			id: "4C000000000001DA"
+			id: "4C000000000001DB"
 			tasks: [{
-				id: "4C000000010001DA"
+				id: "4C000000010001DB"
 				item: { count: 1, id: "twilightforest:naga_trophy" }
 				type: "item"
 			}]
@@ -6176,9 +6189,9 @@
 			icon: {
 				id: "artifacts:night_vision_goggles"
 			}
-			id: "4C000000000001DB"
+			id: "4C000000000001DC"
 			tasks: [{
-				id: "4C000000010001DB"
+				id: "4C000000010001DC"
 				item: { count: 1, id: "artifacts:night_vision_goggles" }
 				type: "item"
 			}]
@@ -6189,9 +6202,9 @@
 			icon: {
 				id: "artifacts:novelty_drinking_hat"
 			}
-			id: "4C000000000001DC"
+			id: "4C000000000001DD"
 			tasks: [{
-				id: "4C000000010001DC"
+				id: "4C000000010001DD"
 				item: { count: 1, id: "artifacts:novelty_drinking_hat" }
 				type: "item"
 			}]
@@ -6202,9 +6215,9 @@
 			icon: {
 				id: "l2hostility:oddeyes_glasses"
 			}
-			id: "4C000000000001DD"
+			id: "4C000000000001DE"
 			tasks: [{
-				id: "4C000000010001DD"
+				id: "4C000000010001DE"
 				item: { count: 1, id: "l2hostility:oddeyes_glasses" }
 				type: "item"
 			}]
@@ -6215,9 +6228,9 @@
 			icon: {
 				id: "twilightforest:piglin_skull_candle"
 			}
-			id: "4C000000000001DE"
+			id: "4C000000000001DF"
 			tasks: [{
-				id: "4C000000010001DE"
+				id: "4C000000010001DF"
 				item: { count: 1, id: "twilightforest:piglin_skull_candle" }
 				type: "item"
 			}]
@@ -6228,9 +6241,9 @@
 			icon: {
 				id: "artifacts:plastic_drinking_hat"
 			}
-			id: "4C000000000001DF"
+			id: "4C000000000001E0"
 			tasks: [{
-				id: "4C000000010001DF"
+				id: "4C000000010001E0"
 				item: { count: 1, id: "artifacts:plastic_drinking_hat" }
 				type: "item"
 			}]
@@ -6241,9 +6254,9 @@
 			icon: {
 				id: "twilightforest:player_skull_candle"
 			}
-			id: "4C000000000001E0"
+			id: "4C000000000001E1"
 			tasks: [{
-				id: "4C000000010001E0"
+				id: "4C000000010001E1"
 				item: { count: 1, id: "twilightforest:player_skull_candle" }
 				type: "item"
 			}]
@@ -6254,9 +6267,9 @@
 			icon: {
 				id: "pastel:puff_circlet"
 			}
-			id: "4C000000000001E1"
+			id: "4C000000000001E2"
 			tasks: [{
-				id: "4C000000010001E1"
+				id: "4C000000010001E2"
 				item: { count: 1, id: "pastel:puff_circlet" }
 				type: "item"
 			}]
@@ -6267,9 +6280,9 @@
 			icon: {
 				id: "twilightforest:quest_ram_trophy"
 			}
-			id: "4C000000000001E2"
+			id: "4C000000000001E3"
 			tasks: [{
-				id: "4C000000010001E2"
+				id: "4C000000010001E3"
 				item: { count: 1, id: "twilightforest:quest_ram_trophy" }
 				type: "item"
 			}]
@@ -6280,9 +6293,9 @@
 			icon: {
 				id: "anvilcraft:royal_anvil_hammer"
 			}
-			id: "4C000000000001E3"
+			id: "4C000000000001E4"
 			tasks: [{
-				id: "4C000000010001E3"
+				id: "4C000000010001E4"
 				item: { count: 1, id: "anvilcraft:royal_anvil_hammer" }
 				type: "item"
 			}]
@@ -6293,9 +6306,9 @@
 			icon: {
 				id: "twilightforest:skeleton_skull_candle"
 			}
-			id: "4C000000000001E4"
+			id: "4C000000000001E5"
 			tasks: [{
-				id: "4C000000010001E4"
+				id: "4C000000010001E5"
 				item: { count: 1, id: "twilightforest:skeleton_skull_candle" }
 				type: "item"
 			}]
@@ -6306,9 +6319,9 @@
 			icon: {
 				id: "artifacts:snorkel"
 			}
-			id: "4C000000000001E5"
+			id: "4C000000000001E6"
 			tasks: [{
-				id: "4C000000010001E5"
+				id: "4C000000010001E6"
 				item: { count: 1, id: "artifacts:snorkel" }
 				type: "item"
 			}]
@@ -6319,9 +6332,9 @@
 			icon: {
 				id: "twilightforest:snow_queen_trophy"
 			}
-			id: "4C000000000001E6"
+			id: "4C000000000001E7"
 			tasks: [{
-				id: "4C000000010001E6"
+				id: "4C000000010001E7"
 				item: { count: 1, id: "twilightforest:snow_queen_trophy" }
 				type: "item"
 			}]
@@ -6332,9 +6345,9 @@
 			icon: {
 				id: "artifacts:superstitious_hat"
 			}
-			id: "4C000000000001E7"
+			id: "4C000000000001E8"
 			tasks: [{
-				id: "4C000000010001E7"
+				id: "4C000000010001E8"
 				item: { count: 1, id: "artifacts:superstitious_hat" }
 				type: "item"
 			}]
@@ -6345,9 +6358,9 @@
 			icon: {
 				id: "anvilcraft:transcendence_anvil_hammer"
 			}
-			id: "4C000000000001E8"
+			id: "4C000000000001E9"
 			tasks: [{
-				id: "4C000000010001E8"
+				id: "4C000000010001E9"
 				item: { count: 1, id: "anvilcraft:transcendence_anvil_hammer" }
 				type: "item"
 			}]
@@ -6358,9 +6371,9 @@
 			icon: {
 				id: "twilightforest:lich_trophy"
 			}
-			id: "4C000000000001E9"
+			id: "4C000000000001EA"
 			tasks: [{
-				id: "4C000000010001E9"
+				id: "4C000000010001EA"
 				item: { count: 1, id: "twilightforest:lich_trophy" }
 				type: "item"
 			}]
@@ -6371,9 +6384,9 @@
 			icon: {
 				id: "twilightforest:ur_ghast_trophy"
 			}
-			id: "4C000000000001EA"
+			id: "4C000000000001EB"
 			tasks: [{
-				id: "4C000000010001EA"
+				id: "4C000000010001EB"
 				item: { count: 1, id: "twilightforest:ur_ghast_trophy" }
 				type: "item"
 			}]
@@ -6384,9 +6397,9 @@
 			icon: {
 				id: "artifacts:villager_hat"
 			}
-			id: "4C000000000001EB"
+			id: "4C000000000001EC"
 			tasks: [{
-				id: "4C000000010001EB"
+				id: "4C000000010001EC"
 				item: { count: 1, id: "artifacts:villager_hat" }
 				type: "item"
 			}]
@@ -6397,9 +6410,9 @@
 			icon: {
 				id: "pastel:weeping_circlet"
 			}
-			id: "4C000000000001EC"
+			id: "4C000000000001ED"
 			tasks: [{
-				id: "4C000000010001EC"
+				id: "4C000000010001ED"
 				item: { count: 1, id: "pastel:weeping_circlet" }
 				type: "item"
 			}]
@@ -6410,9 +6423,9 @@
 			icon: {
 				id: "pastel:whispy_circlet"
 			}
-			id: "4C000000000001ED"
+			id: "4C000000000001EE"
 			tasks: [{
-				id: "4C000000010001ED"
+				id: "4C000000010001EE"
 				item: { count: 1, id: "pastel:whispy_circlet" }
 				type: "item"
 			}]
@@ -6423,9 +6436,9 @@
 			icon: {
 				id: "twilightforest:wither_skeleton_skull_candle"
 			}
-			id: "4C000000000001EE"
+			id: "4C000000000001EF"
 			tasks: [{
-				id: "4C000000010001EE"
+				id: "4C000000010001EF"
 				item: { count: 1, id: "twilightforest:wither_skeleton_skull_candle" }
 				type: "item"
 			}]
@@ -6436,9 +6449,9 @@
 			icon: {
 				id: "twilightforest:zombie_skull_candle"
 			}
-			id: "4C000000000001EF"
+			id: "4C000000000001F0"
 			tasks: [{
-				id: "4C000000010001EF"
+				id: "4C000000010001F0"
 				item: { count: 1, id: "twilightforest:zombie_skull_candle" }
 				type: "item"
 			}]
@@ -6449,9 +6462,9 @@
 			icon: {
 				id: "irons_spellbooks:netherite_spell_book"
 			}
-			id: "4C000000000001F0"
+			id: "4C000000000001F1"
 			tasks: [{
-				id: "4C000000010001F0"
+				id: "4C000000010001F1"
 				item: { count: 1, id: "irons_spellbooks:netherite_spell_book" }
 				type: "item"
 			}]
@@ -6462,9 +6475,9 @@
 			icon: {
 				id: "irons_spellbooks:gold_spell_book"
 			}
-			id: "4C000000000001F1"
+			id: "4C000000000001F2"
 			tasks: [{
-				id: "4C000000010001F1"
+				id: "4C000000010001F2"
 				item: { count: 1, id: "irons_spellbooks:gold_spell_book" }
 				type: "item"
 			}]
@@ -6475,9 +6488,9 @@
 			icon: {
 				id: "discerning_the_eldritch:black_book_spellbook"
 			}
-			id: "4C000000000001F2"
+			id: "4C000000000001F3"
 			tasks: [{
-				id: "4C000000010001F2"
+				id: "4C000000010001F3"
 				item: { count: 1, id: "discerning_the_eldritch:black_book_spellbook" }
 				type: "item"
 			}]
@@ -6488,9 +6501,9 @@
 			icon: {
 				id: "irons_spellbooks:blaze_spell_book"
 			}
-			id: "4C000000000001F3"
+			id: "4C000000000001F4"
 			tasks: [{
-				id: "4C000000010001F3"
+				id: "4C000000010001F4"
 				item: { count: 1, id: "irons_spellbooks:blaze_spell_book" }
 				type: "item"
 			}]
@@ -6501,9 +6514,9 @@
 			icon: {
 				id: "cataclysm_spellbooks:abyss_spell_book"
 			}
-			id: "4C000000000001F4"
+			id: "4C000000000001F5"
 			tasks: [{
-				id: "4C000000010001F4"
+				id: "4C000000010001F5"
 				item: { count: 1, id: "cataclysm_spellbooks:abyss_spell_book" }
 				type: "item"
 			}]
@@ -6514,9 +6527,9 @@
 			icon: {
 				id: "cataclysm_spellbooks:codex_of_malice_spell_book"
 			}
-			id: "4C000000000001F5"
+			id: "4C000000000001F6"
 			tasks: [{
-				id: "4C000000010001F5"
+				id: "4C000000010001F6"
 				item: { count: 1, id: "cataclysm_spellbooks:codex_of_malice_spell_book" }
 				type: "item"
 			}]
@@ -6527,9 +6540,9 @@
 			icon: {
 				id: "aces_spell_utils:example_passive_ability_spellbook"
 			}
-			id: "4C000000000001F6"
+			id: "4C000000000001F7"
 			tasks: [{
-				id: "4C000000010001F6"
+				id: "4C000000010001F7"
 				item: { count: 1, id: "aces_spell_utils:example_passive_ability_spellbook" }
 				type: "item"
 			}]
@@ -6540,9 +6553,9 @@
 			icon: {
 				id: "cataclysm_spellbooks:desert_spell_book"
 			}
-			id: "4C000000000001F7"
+			id: "4C000000000001F8"
 			tasks: [{
-				id: "4C000000010001F7"
+				id: "4C000000010001F8"
 				item: { count: 1, id: "cataclysm_spellbooks:desert_spell_book" }
 				type: "item"
 			}]
@@ -6553,9 +6566,9 @@
 			icon: {
 				id: "discerning_the_eldritch:diary_of_decay"
 			}
-			id: "4C000000000001F8"
+			id: "4C000000000001F9"
 			tasks: [{
-				id: "4C000000010001F8"
+				id: "4C000000010001F9"
 				item: { count: 1, id: "discerning_the_eldritch:diary_of_decay" }
 				type: "item"
 			}]
@@ -6566,9 +6579,9 @@
 			icon: {
 				id: "cataclysm_spellbooks:disc_driver"
 			}
-			id: "4C000000000001F9"
+			id: "4C000000000001FA"
 			tasks: [{
-				id: "4C000000010001F9"
+				id: "4C000000010001FA"
 				item: { count: 1, id: "cataclysm_spellbooks:disc_driver" }
 				type: "item"
 			}]
@@ -6579,9 +6592,9 @@
 			icon: {
 				id: "ice_and_fire_spellbooks:dragonmancers_oathbook"
 			}
-			id: "4C000000000001FA"
+			id: "4C000000000001FB"
 			tasks: [{
-				id: "4C000000010001FA"
+				id: "4C000000010001FB"
 				item: { count: 1, id: "ice_and_fire_spellbooks:dragonmancers_oathbook" }
 				type: "item"
 			}]
@@ -6592,9 +6605,9 @@
 			icon: {
 				id: "irons_spellbooks:dragonskin_spell_book"
 			}
-			id: "4C000000000001FB"
+			id: "4C000000000001FC"
 			tasks: [{
-				id: "4C000000010001FB"
+				id: "4C000000010001FC"
 				item: { count: 1, id: "irons_spellbooks:dragonskin_spell_book" }
 				type: "item"
 			}]
@@ -6605,9 +6618,9 @@
 			icon: {
 				id: "irons_spellbooks:druidic_spell_book"
 			}
-			id: "4C000000000001FC"
+			id: "4C000000000001FD"
 			tasks: [{
-				id: "4C000000010001FC"
+				id: "4C000000010001FD"
 				item: { count: 1, id: "irons_spellbooks:druidic_spell_book" }
 				type: "item"
 			}]
@@ -6618,9 +6631,9 @@
 			icon: {
 				id: "irons_spellbooks:diamond_spell_book"
 			}
-			id: "4C000000000001FD"
+			id: "4C000000000001FE"
 			tasks: [{
-				id: "4C000000010001FD"
+				id: "4C000000010001FE"
 				item: { count: 1, id: "irons_spellbooks:diamond_spell_book" }
 				type: "item"
 			}]
@@ -6631,9 +6644,9 @@
 			icon: {
 				id: "hazennstuff:energized_core_spellbook"
 			}
-			id: "4C000000000001FE"
+			id: "4C000000000001FF"
 			tasks: [{
-				id: "4C000000010001FE"
+				id: "4C000000010001FF"
 				item: { count: 1, id: "hazennstuff:energized_core_spellbook" }
 				type: "item"
 			}]
@@ -6644,9 +6657,9 @@
 			icon: {
 				id: "irons_spellbooks:copper_spell_book"
 			}
-			id: "4C000000000001FF"
+			id: "4C00000000000200"
 			tasks: [{
-				id: "4C000000010001FF"
+				id: "4C00000001000200"
 				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
 				type: "item"
 			}]
@@ -6657,9 +6670,9 @@
 			icon: {
 				id: "irons_spellbooks:ice_spell_book"
 			}
-			id: "4C00000000000200"
+			id: "4C00000000000201"
 			tasks: [{
-				id: "4C00000001000200"
+				id: "4C00000001000201"
 				item: { count: 1, id: "irons_spellbooks:ice_spell_book" }
 				type: "item"
 			}]
@@ -6670,9 +6683,9 @@
 			icon: {
 				id: "discerning_the_eldritch:frozen_folio"
 			}
-			id: "4C00000000000201"
+			id: "4C00000000000202"
 			tasks: [{
-				id: "4C00000001000201"
+				id: "4C00000001000202"
 				item: { count: 1, id: "discerning_the_eldritch:frozen_folio" }
 				type: "item"
 			}]
@@ -6683,9 +6696,9 @@
 			icon: {
 				id: "hazennstuff:golden_shower_spellbook"
 			}
-			id: "4C00000000000202"
+			id: "4C00000000000203"
 			tasks: [{
-				id: "4C00000001000202"
+				id: "4C00000001000203"
 				item: { count: 1, id: "hazennstuff:golden_shower_spellbook" }
 				type: "item"
 			}]
@@ -6696,9 +6709,9 @@
 			icon: {
 				id: "magic_of_color:bedrock_book"
 			}
-			id: "4C00000000000203"
+			id: "4C00000000000204"
 			tasks: [{
-				id: "4C00000001000203"
+				id: "4C00000001000204"
 				item: { count: 1, id: "magic_of_color:bedrock_book" }
 				type: "item"
 			}]
@@ -6709,9 +6722,9 @@
 			icon: {
 				id: "irons_spellbooks:evoker_spell_book"
 			}
-			id: "4C00000000000204"
+			id: "4C00000000000205"
 			tasks: [{
-				id: "4C00000001000204"
+				id: "4C00000001000205"
 				item: { count: 1, id: "irons_spellbooks:evoker_spell_book" }
 				type: "item"
 			}]
@@ -6722,9 +6735,9 @@
 			icon: {
 				id: "discerning_the_eldritch:guardian_guidebook"
 			}
-			id: "4C00000000000205"
+			id: "4C00000000000206"
 			tasks: [{
-				id: "4C00000001000205"
+				id: "4C00000001000206"
 				item: { count: 1, id: "discerning_the_eldritch:guardian_guidebook" }
 				type: "item"
 			}]
@@ -6735,9 +6748,9 @@
 			icon: {
 				id: "cataclysm_spellbooks:ignis_spell_book"
 			}
-			id: "4C00000000000206"
+			id: "4C00000000000207"
 			tasks: [{
-				id: "4C00000001000206"
+				id: "4C00000001000207"
 				item: { count: 1, id: "cataclysm_spellbooks:ignis_spell_book" }
 				type: "item"
 			}]
@@ -6748,9 +6761,9 @@
 			icon: {
 				id: "irons_spellbooks:iron_spell_book"
 			}
-			id: "4C00000000000207"
+			id: "4C00000000000208"
 			tasks: [{
-				id: "4C00000001000207"
+				id: "4C00000001000208"
 				item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
 				type: "item"
 			}]
@@ -6761,9 +6774,9 @@
 			icon: {
 				id: "irons_spellbooks:legendary_spell_book"
 			}
-			id: "4C00000000000208"
+			id: "4C00000000000209"
 			tasks: [{
-				id: "4C00000001000208"
+				id: "4C00000001000209"
 				item: { count: 1, id: "irons_spellbooks:legendary_spell_book" }
 				type: "item"
 			}]
@@ -6774,9 +6787,9 @@
 			icon: {
 				id: "irons_spellbooks:necronomicon_spell_book"
 			}
-			id: "4C00000000000209"
+			id: "4C0000000000020A"
 			tasks: [{
-				id: "4C00000001000209"
+				id: "4C0000000100020A"
 				item: { count: 1, id: "irons_spellbooks:necronomicon_spell_book" }
 				type: "item"
 			}]
@@ -6787,9 +6800,9 @@
 			icon: {
 				id: "irons_spellbooks:rotten_spell_book"
 			}
-			id: "4C0000000000020A"
+			id: "4C0000000000020B"
 			tasks: [{
-				id: "4C0000000100020A"
+				id: "4C0000000100020B"
 				item: { count: 1, id: "irons_spellbooks:rotten_spell_book" }
 				type: "item"
 			}]
@@ -6800,9 +6813,9 @@
 			icon: {
 				id: "discerning_the_eldritch:tempestuous_tome"
 			}
-			id: "4C0000000000020B"
+			id: "4C0000000000020C"
 			tasks: [{
-				id: "4C0000000100020B"
+				id: "4C0000000100020C"
 				item: { count: 1, id: "discerning_the_eldritch:tempestuous_tome" }
 				type: "item"
 			}]
@@ -6813,9 +6826,9 @@
 			icon: {
 				id: "discerning_the_eldritch:the_apocrypha_spellbook"
 			}
-			id: "4C0000000000020C"
+			id: "4C0000000000020D"
 			tasks: [{
-				id: "4C0000000100020C"
+				id: "4C0000000100020D"
 				item: { count: 1, id: "discerning_the_eldritch:the_apocrypha_spellbook" }
 				type: "item"
 			}]
@@ -6826,9 +6839,9 @@
 			icon: {
 				id: "irons_spellbooks:cursed_doll_spell_book"
 			}
-			id: "4C0000000000020D"
+			id: "4C0000000000020E"
 			tasks: [{
-				id: "4C0000000100020D"
+				id: "4C0000000100020E"
 				item: { count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
 				type: "item"
 			}]
@@ -6839,9 +6852,9 @@
 			icon: {
 				id: "irons_spellbooks:villager_spell_book"
 			}
-			id: "4C0000000000020E"
+			id: "4C0000000000020F"
 			tasks: [{
-				id: "4C0000000100020E"
+				id: "4C0000000100020F"
 				item: { count: 1, id: "irons_spellbooks:villager_spell_book" }
 				type: "item"
 			}]
@@ -6852,9 +6865,9 @@
 			icon: {
 				id: "darkermagic:volume_of_the_deep"
 			}
-			id: "4C0000000000020F"
+			id: "4C00000000000210"
 			tasks: [{
-				id: "4C0000000100020F"
+				id: "4C00000001000210"
 				item: { count: 1, id: "darkermagic:volume_of_the_deep" }
 				type: "item"
 			}]
@@ -6865,9 +6878,9 @@
 			icon: {
 				id: "irons_spellbooks:wimpy_spell_book"
 			}
-			id: "4C00000000000210"
+			id: "4C00000000000211"
 			tasks: [{
-				id: "4C00000001000210"
+				id: "4C00000001000211"
 				item: { count: 1, id: "irons_spellbooks:wimpy_spell_book" }
 				type: "item"
 			}]
@@ -6876,454 +6889,454 @@
 		}
 		{
 			icon: {
-				id: "malstone:blade_dath"
-			}
-			id: "4C00000000000211"
-			tasks: [{
-				id: "4C00000001000211"
-				item: { count: 1, id: "malstone:blade_dath" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malstone:hungrier"
+				id: "artifacts:antidote_vessel"
 			}
 			id: "4C00000000000212"
 			tasks: [{
 				id: "4C00000001000212"
-				item: { count: 1, id: "malstone:hungrier" }
-				type: "item"
-			}]
-			x: 22.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malstone:martyrdom"
-			}
-			id: "4C00000000000213"
-			tasks: [{
-				id: "4C00000001000213"
-				item: { count: 1, id: "malstone:martyrdom" }
-				type: "item"
-			}]
-			x: 23.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_ailment_cleansing"
-			}
-			id: "4C00000000000214"
-			tasks: [{
-				id: "4C00000001000214"
-				item: { count: 1, id: "malum:rune_of_ailment_cleansing" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_bolstering"
-			}
-			id: "4C00000000000215"
-			tasks: [{
-				id: "4C00000001000215"
-				item: { count: 1, id: "malum:rune_of_bolstering" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_burning_fervor"
-			}
-			id: "4C00000000000216"
-			tasks: [{
-				id: "4C00000001000216"
-				item: { count: 1, id: "malum:rune_of_burning_fervor" }
-				type: "item"
-			}]
-			x: 26.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_culling"
-			}
-			id: "4C00000000000217"
-			tasks: [{
-				id: "4C00000001000217"
-				item: { count: 1, id: "malum:rune_of_culling" }
-				type: "item"
-			}]
-			x: 27.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_dexterity"
-			}
-			id: "4C00000000000218"
-			tasks: [{
-				id: "4C00000001000218"
-				item: { count: 1, id: "malum:rune_of_dexterity" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malstone:eternal_fallen_soul"
-			}
-			id: "4C00000000000219"
-			tasks: [{
-				id: "4C00000001000219"
-				item: { count: 1, id: "malstone:eternal_fallen_soul" }
-				type: "item"
-			}]
-			x: 22.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_fiery_embrace"
-			}
-			id: "4C0000000000021A"
-			tasks: [{
-				id: "4C0000000100021A"
-				item: { count: 1, id: "malum:rune_of_fiery_embrace" }
-				type: "item"
-			}]
-			x: 23.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_flowing_grasp"
-			}
-			id: "4C0000000000021B"
-			tasks: [{
-				id: "4C0000000100021B"
-				item: { count: 1, id: "malum:rune_of_flowing_grasp" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_good_tides"
-			}
-			id: "4C0000000000021C"
-			tasks: [{
-				id: "4C0000000100021C"
-				item: { count: 1, id: "malum:rune_of_good_tides" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_heresy"
-			}
-			id: "4C0000000000021D"
-			tasks: [{
-				id: "4C0000000100021D"
-				item: { count: 1, id: "malum:rune_of_heresy" }
-				type: "item"
-			}]
-			x: 26.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_howling_gale"
-			}
-			id: "4C0000000000021E"
-			tasks: [{
-				id: "4C0000000100021E"
-				item: { count: 1, id: "malum:rune_of_howling_gale" }
-				type: "item"
-			}]
-			x: 27.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_igneous_solace"
-			}
-			id: "4C0000000000021F"
-			tasks: [{
-				id: "4C0000000100021F"
-				item: { count: 1, id: "malum:rune_of_igneous_solace" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_indomitability"
-			}
-			id: "4C00000000000220"
-			tasks: [{
-				id: "4C00000001000220"
-				item: { count: 1, id: "malum:rune_of_indomitability" }
-				type: "item"
-			}]
-			x: 22.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_oaken_might"
-			}
-			id: "4C00000000000221"
-			tasks: [{
-				id: "4C00000001000221"
-				item: { count: 1, id: "malum:rune_of_oaken_might" }
-				type: "item"
-			}]
-			x: 23.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_protection"
-			}
-			id: "4C00000000000222"
-			tasks: [{
-				id: "4C00000001000222"
-				item: { count: 1, id: "malum:rune_of_protection" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_radial_empowerment"
-			}
-			id: "4C00000000000223"
-			tasks: [{
-				id: "4C00000001000223"
-				item: { count: 1, id: "malum:rune_of_radial_empowerment" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_reinforcement"
-			}
-			id: "4C00000000000224"
-			tasks: [{
-				id: "4C00000001000224"
-				item: { count: 1, id: "malum:rune_of_reinforcement" }
-				type: "item"
-			}]
-			x: 26.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_scorching"
-			}
-			id: "4C00000000000225"
-			tasks: [{
-				id: "4C00000001000225"
-				item: { count: 1, id: "malum:rune_of_scorching" }
-				type: "item"
-			}]
-			x: 27.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_sky_tether"
-			}
-			id: "4C00000000000226"
-			tasks: [{
-				id: "4C00000001000226"
-				item: { count: 1, id: "malum:rune_of_sky_tether" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_spell_mastery"
-			}
-			id: "4C00000000000227"
-			tasks: [{
-				id: "4C00000001000227"
-				item: { count: 1, id: "malum:rune_of_spell_mastery" }
-				type: "item"
-			}]
-			x: 22.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_stone_ward"
-			}
-			id: "4C00000000000228"
-			tasks: [{
-				id: "4C00000001000228"
-				item: { count: 1, id: "malum:rune_of_stone_ward" }
-				type: "item"
-			}]
-			x: 23.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_twinned_duration"
-			}
-			id: "4C00000000000229"
-			tasks: [{
-				id: "4C00000001000229"
-				item: { count: 1, id: "malum:rune_of_twinned_duration" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_unnatural_stamina"
-			}
-			id: "4C0000000000022A"
-			tasks: [{
-				id: "4C0000000100022A"
-				item: { count: 1, id: "malum:rune_of_unnatural_stamina" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_vitality"
-			}
-			id: "4C0000000000022B"
-			tasks: [{
-				id: "4C0000000100022B"
-				item: { count: 1, id: "malum:rune_of_vitality" }
-				type: "item"
-			}]
-			x: 26.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "malum:rune_of_volatile_distortion"
-			}
-			id: "4C0000000000022C"
-			tasks: [{
-				id: "4C0000000100022C"
-				item: { count: 1, id: "malum:rune_of_volatile_distortion" }
-				type: "item"
-			}]
-			x: 27.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "artifacts:antidote_vessel"
-			}
-			id: "4C0000000000022D"
-			tasks: [{
-				id: "4C0000000100022D"
 				item: { count: 1, id: "artifacts:antidote_vessel" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 21.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "pastel:azure_dike_belt"
 			}
-			id: "4C0000000000022E"
+			id: "4C00000000000213"
 			tasks: [{
-				id: "4C0000000100022E"
+				id: "4C00000001000213"
 				item: { count: 1, id: "pastel:azure_dike_belt" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 22.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "cataclysm:belt_of_beginner"
+			}
+			id: "4C00000000000214"
+			tasks: [{
+				id: "4C00000001000214"
+				item: { count: 1, id: "cataclysm:belt_of_beginner" }
+				type: "item"
+			}]
+			x: 23.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "malum:belt_of_the_limitless"
 			}
-			id: "4C0000000000022F"
+			id: "4C00000000000215"
 			tasks: [{
-				id: "4C0000000100022F"
+				id: "4C00000001000215"
 				item: { count: 1, id: "malum:belt_of_the_limitless" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 24.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "malum:belt_of_the_magebane"
 			}
-			id: "4C00000000000230"
+			id: "4C00000000000216"
 			tasks: [{
-				id: "4C00000001000230"
+				id: "4C00000001000216"
 				item: { count: 1, id: "malum:belt_of_the_magebane" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 25.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "malum:belt_of_the_prospector"
 			}
-			id: "4C00000000000231"
+			id: "4C00000000000217"
 			tasks: [{
-				id: "4C00000001000231"
+				id: "4C00000001000217"
 				item: { count: 1, id: "malum:belt_of_the_prospector" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 26.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "malum:belt_of_the_starved"
 			}
-			id: "4C00000000000232"
+			id: "4C00000000000218"
 			tasks: [{
-				id: "4C00000001000232"
+				id: "4C00000001000218"
 				item: { count: 1, id: "malum:belt_of_the_starved" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 27.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "malstone:breaking_the_weapon"
 			}
+			id: "4C00000000000219"
+			tasks: [{
+				id: "4C00000001000219"
+				item: { count: 1, id: "malstone:breaking_the_weapon" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:broken_magnet"
+			}
+			id: "4C0000000000021A"
+			tasks: [{
+				id: "4C0000000100021A"
+				item: { count: 1, id: "nameless_trinkets:broken_magnet" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "cataclysm:belt_of_monstrosity"
+			}
+			id: "4C0000000000021B"
+			tasks: [{
+				id: "4C0000000100021B"
+				item: { count: 1, id: "cataclysm:belt_of_monstrosity" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "malstone:chess_fell"
+			}
+			id: "4C0000000000021C"
+			tasks: [{
+				id: "4C0000000100021C"
+				item: { count: 1, id: "malstone:chess_fell" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "artifacts:chorus_totem"
+			}
+			id: "4C0000000000021D"
+			tasks: [{
+				id: "4C0000000100021D"
+				item: { count: 1, id: "artifacts:chorus_totem" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "artifacts:cloud_in_a_bottle"
+			}
+			id: "4C0000000000021E"
+			tasks: [{
+				id: "4C0000000100021E"
+				item: { count: 1, id: "artifacts:cloud_in_a_bottle" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "artifacts:crystal_heart"
+			}
+			id: "4C0000000000021F"
+			tasks: [{
+				id: "4C0000000100021F"
+				item: { count: 1, id: "artifacts:crystal_heart" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:experience_magnet"
+			}
+			id: "4C00000000000220"
+			tasks: [{
+				id: "4C00000001000220"
+				item: { count: 1, id: "nameless_trinkets:experience_magnet" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:fire_heart"
+			}
+			id: "4C00000000000221"
+			tasks: [{
+				id: "4C00000001000221"
+				item: { count: 1, id: "mythsandlegends:fire_heart" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:fractured_nullstone"
+			}
+			id: "4C00000000000222"
+			tasks: [{
+				id: "4C00000001000222"
+				item: { count: 1, id: "nameless_trinkets:fractured_nullstone" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "malum:gilded_belt"
+			}
+			id: "4C00000000000223"
+			tasks: [{
+				id: "4C00000001000223"
+				item: { count: 1, id: "malum:gilded_belt" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "artifacts:helium_flamingo"
+			}
+			id: "4C00000000000224"
+			tasks: [{
+				id: "4C00000001000224"
+				item: { count: 1, id: "artifacts:helium_flamingo" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "malstone:condenser"
+			}
+			id: "4C00000000000225"
+			tasks: [{
+				id: "4C00000001000225"
+				item: { count: 1, id: "malstone:condenser" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "artifacts:obsidian_skull"
+			}
+			id: "4C00000000000226"
+			tasks: [{
+				id: "4C00000001000226"
+				item: { count: 1, id: "artifacts:obsidian_skull" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:super_magnet"
+			}
+			id: "4C00000000000227"
+			tasks: [{
+				id: "4C00000001000227"
+				item: { count: 1, id: "nameless_trinkets:super_magnet" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "pastel:take_off_belt"
+			}
+			id: "4C00000000000228"
+			tasks: [{
+				id: "4C00000001000228"
+				item: { count: 1, id: "pastel:take_off_belt" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "magitech:tool_belt"
+			}
+			id: "4C00000000000229"
+			tasks: [{
+				id: "4C00000001000229"
+				item: { count: 1, id: "magitech:tool_belt" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "artifacts:universal_attractor"
+			}
+			id: "4C0000000000022A"
+			tasks: [{
+				id: "4C0000000100022A"
+				item: { count: 1, id: "artifacts:universal_attractor" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "artifacts:warp_drive"
+			}
+			id: "4C0000000000022B"
+			tasks: [{
+				id: "4C0000000100022B"
+				item: { count: 1, id: "artifacts:warp_drive" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:what_magnet"
+			}
+			id: "4C0000000000022C"
+			tasks: [{
+				id: "4C0000000100022C"
+				item: { count: 1, id: "nameless_trinkets:what_magnet" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "malstone:die_abyss"
+			}
+			id: "4C0000000000022D"
+			tasks: [{
+				id: "4C0000000100022D"
+				item: { count: 1, id: "malstone:die_abyss" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "malstone:blade_dath"
+			}
+			id: "4C0000000000022E"
+			tasks: [{
+				id: "4C0000000100022E"
+				item: { count: 1, id: "malstone:blade_dath" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malstone:hungrier"
+			}
+			id: "4C0000000000022F"
+			tasks: [{
+				id: "4C0000000100022F"
+				item: { count: 1, id: "malstone:hungrier" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malstone:martyrdom"
+			}
+			id: "4C00000000000230"
+			tasks: [{
+				id: "4C00000001000230"
+				item: { count: 1, id: "malstone:martyrdom" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_ailment_cleansing"
+			}
+			id: "4C00000000000231"
+			tasks: [{
+				id: "4C00000001000231"
+				item: { count: 1, id: "malum:rune_of_ailment_cleansing" }
+				type: "item"
+			}]
+			x: 34.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_bolstering"
+			}
+			id: "4C00000000000232"
+			tasks: [{
+				id: "4C00000001000232"
+				item: { count: 1, id: "malum:rune_of_bolstering" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_burning_fervor"
+			}
 			id: "4C00000000000233"
 			tasks: [{
 				id: "4C00000001000233"
-				item: { count: 1, id: "malstone:breaking_the_weapon" }
+				item: { count: 1, id: "malum:rune_of_burning_fervor" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_culling"
+			}
+			id: "4C00000000000234"
+			tasks: [{
+				id: "4C00000001000234"
+				item: { count: 1, id: "malum:rune_of_culling" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -7331,90 +7344,90 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:broken_magnet"
-			}
-			id: "4C00000000000234"
-			tasks: [{
-				id: "4C00000001000234"
-				item: { count: 1, id: "nameless_trinkets:broken_magnet" }
-				type: "item"
-			}]
-			x: 31.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "malstone:chess_fell"
+				id: "malum:rune_of_dexterity"
 			}
 			id: "4C00000000000235"
 			tasks: [{
 				id: "4C00000001000235"
-				item: { count: 1, id: "malstone:chess_fell" }
+				item: { count: 1, id: "malum:rune_of_dexterity" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 31.0d
 			y: 19.0d
 		}
 		{
 			icon: {
-				id: "artifacts:chorus_totem"
+				id: "malstone:eternal_fallen_soul"
 			}
 			id: "4C00000000000236"
 			tasks: [{
 				id: "4C00000001000236"
-				item: { count: 1, id: "artifacts:chorus_totem" }
+				item: { count: 1, id: "malstone:eternal_fallen_soul" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 32.0d
 			y: 19.0d
 		}
 		{
 			icon: {
-				id: "artifacts:cloud_in_a_bottle"
+				id: "malum:rune_of_fiery_embrace"
 			}
 			id: "4C00000000000237"
 			tasks: [{
 				id: "4C00000001000237"
-				item: { count: 1, id: "artifacts:cloud_in_a_bottle" }
+				item: { count: 1, id: "malum:rune_of_fiery_embrace" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 33.0d
 			y: 19.0d
 		}
 		{
 			icon: {
-				id: "artifacts:crystal_heart"
+				id: "malum:rune_of_flowing_grasp"
 			}
 			id: "4C00000000000238"
 			tasks: [{
 				id: "4C00000001000238"
-				item: { count: 1, id: "artifacts:crystal_heart" }
+				item: { count: 1, id: "malum:rune_of_flowing_grasp" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 34.0d
 			y: 19.0d
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:experience_magnet"
+				id: "malum:rune_of_good_tides"
 			}
 			id: "4C00000000000239"
 			tasks: [{
 				id: "4C00000001000239"
-				item: { count: 1, id: "nameless_trinkets:experience_magnet" }
+				item: { count: 1, id: "malum:rune_of_good_tides" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 35.0d
 			y: 19.0d
 		}
 		{
 			icon: {
-				id: "mythsandlegends:fire_heart"
+				id: "malum:rune_of_heresy"
 			}
 			id: "4C0000000000023A"
 			tasks: [{
 				id: "4C0000000100023A"
-				item: { count: 1, id: "mythsandlegends:fire_heart" }
+				item: { count: 1, id: "malum:rune_of_heresy" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_howling_gale"
+			}
+			id: "4C0000000000023B"
+			tasks: [{
+				id: "4C0000000100023B"
+				item: { count: 1, id: "malum:rune_of_howling_gale" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -7422,12 +7435,12 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:fractured_nullstone"
+				id: "malum:rune_of_igneous_solace"
 			}
-			id: "4C0000000000023B"
+			id: "4C0000000000023C"
 			tasks: [{
-				id: "4C0000000100023B"
-				item: { count: 1, id: "nameless_trinkets:fractured_nullstone" }
+				id: "4C0000000100023C"
+				item: { count: 1, id: "malum:rune_of_igneous_solace" }
 				type: "item"
 			}]
 			x: 31.0d
@@ -7435,12 +7448,12 @@
 		}
 		{
 			icon: {
-				id: "malum:gilded_belt"
+				id: "malum:rune_of_indomitability"
 			}
-			id: "4C0000000000023C"
+			id: "4C0000000000023D"
 			tasks: [{
-				id: "4C0000000100023C"
-				item: { count: 1, id: "malum:gilded_belt" }
+				id: "4C0000000100023D"
+				item: { count: 1, id: "malum:rune_of_indomitability" }
 				type: "item"
 			}]
 			x: 32.0d
@@ -7448,12 +7461,12 @@
 		}
 		{
 			icon: {
-				id: "artifacts:helium_flamingo"
+				id: "malum:rune_of_oaken_might"
 			}
-			id: "4C0000000000023D"
+			id: "4C0000000000023E"
 			tasks: [{
-				id: "4C0000000100023D"
-				item: { count: 1, id: "artifacts:helium_flamingo" }
+				id: "4C0000000100023E"
+				item: { count: 1, id: "malum:rune_of_oaken_might" }
 				type: "item"
 			}]
 			x: 33.0d
@@ -7461,12 +7474,12 @@
 		}
 		{
 			icon: {
-				id: "malstone:condenser"
+				id: "malum:rune_of_protection"
 			}
-			id: "4C0000000000023E"
+			id: "4C0000000000023F"
 			tasks: [{
-				id: "4C0000000100023E"
-				item: { count: 1, id: "malstone:condenser" }
+				id: "4C0000000100023F"
+				item: { count: 1, id: "malum:rune_of_protection" }
 				type: "item"
 			}]
 			x: 34.0d
@@ -7474,12 +7487,12 @@
 		}
 		{
 			icon: {
-				id: "artifacts:obsidian_skull"
+				id: "malum:rune_of_radial_empowerment"
 			}
-			id: "4C0000000000023F"
+			id: "4C00000000000240"
 			tasks: [{
-				id: "4C0000000100023F"
-				item: { count: 1, id: "artifacts:obsidian_skull" }
+				id: "4C00000001000240"
+				item: { count: 1, id: "malum:rune_of_radial_empowerment" }
 				type: "item"
 			}]
 			x: 35.0d
@@ -7487,12 +7500,12 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:super_magnet"
+				id: "malum:rune_of_reinforcement"
 			}
-			id: "4C00000000000240"
+			id: "4C00000000000241"
 			tasks: [{
-				id: "4C00000001000240"
-				item: { count: 1, id: "nameless_trinkets:super_magnet" }
+				id: "4C00000001000241"
+				item: { count: 1, id: "malum:rune_of_reinforcement" }
 				type: "item"
 			}]
 			x: 36.0d
@@ -7500,12 +7513,12 @@
 		}
 		{
 			icon: {
-				id: "pastel:take_off_belt"
+				id: "malum:rune_of_scorching"
 			}
-			id: "4C00000000000241"
+			id: "4C00000000000242"
 			tasks: [{
-				id: "4C00000001000241"
-				item: { count: 1, id: "pastel:take_off_belt" }
+				id: "4C00000001000242"
+				item: { count: 1, id: "malum:rune_of_scorching" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -7513,12 +7526,12 @@
 		}
 		{
 			icon: {
-				id: "magitech:tool_belt"
+				id: "malum:rune_of_sky_tether"
 			}
-			id: "4C00000000000242"
+			id: "4C00000000000243"
 			tasks: [{
-				id: "4C00000001000242"
-				item: { count: 1, id: "magitech:tool_belt" }
+				id: "4C00000001000243"
+				item: { count: 1, id: "malum:rune_of_sky_tether" }
 				type: "item"
 			}]
 			x: 31.0d
@@ -7526,12 +7539,12 @@
 		}
 		{
 			icon: {
-				id: "artifacts:universal_attractor"
+				id: "malum:rune_of_spell_mastery"
 			}
-			id: "4C00000000000243"
+			id: "4C00000000000244"
 			tasks: [{
-				id: "4C00000001000243"
-				item: { count: 1, id: "artifacts:universal_attractor" }
+				id: "4C00000001000244"
+				item: { count: 1, id: "malum:rune_of_spell_mastery" }
 				type: "item"
 			}]
 			x: 32.0d
@@ -7539,12 +7552,12 @@
 		}
 		{
 			icon: {
-				id: "artifacts:warp_drive"
+				id: "malum:rune_of_stone_ward"
 			}
-			id: "4C00000000000244"
+			id: "4C00000000000245"
 			tasks: [{
-				id: "4C00000001000244"
-				item: { count: 1, id: "artifacts:warp_drive" }
+				id: "4C00000001000245"
+				item: { count: 1, id: "malum:rune_of_stone_ward" }
 				type: "item"
 			}]
 			x: 33.0d
@@ -7552,12 +7565,12 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:what_magnet"
+				id: "malum:rune_of_twinned_duration"
 			}
-			id: "4C00000000000245"
+			id: "4C00000000000246"
 			tasks: [{
-				id: "4C00000001000245"
-				item: { count: 1, id: "nameless_trinkets:what_magnet" }
+				id: "4C00000001000246"
+				item: { count: 1, id: "malum:rune_of_twinned_duration" }
 				type: "item"
 			}]
 			x: 34.0d
@@ -7565,24 +7578,50 @@
 		}
 		{
 			icon: {
-				id: "malstone:die_abyss"
+				id: "malum:rune_of_unnatural_stamina"
 			}
-			id: "4C00000000000246"
+			id: "4C00000000000247"
 			tasks: [{
-				id: "4C00000001000246"
-				item: { count: 1, id: "malstone:die_abyss" }
+				id: "4C00000001000247"
+				item: { count: 1, id: "malum:rune_of_unnatural_stamina" }
 				type: "item"
 			}]
 			x: 35.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_vitality"
+			}
+			id: "4C00000000000248"
+			tasks: [{
+				id: "4C00000001000248"
+				item: { count: 1, id: "malum:rune_of_vitality" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "malum:rune_of_volatile_distortion"
+			}
+			id: "4C00000000000249"
+			tasks: [{
+				id: "4C00000001000249"
+				item: { count: 1, id: "malum:rune_of_volatile_distortion" }
+				type: "item"
+			}]
+			x: 37.0d
 			y: 21.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:blaze_nucleus"
 			}
-			id: "4C00000000000247"
+			id: "4C0000000000024A"
 			tasks: [{
-				id: "4C00000001000247"
+				id: "4C0000000100024A"
 				item: { count: 1, id: "nameless_trinkets:blaze_nucleus" }
 				type: "item"
 			}]
@@ -7593,9 +7632,9 @@
 			icon: {
 				id: "nameless_trinkets:dark_nelumbo"
 			}
-			id: "4C00000000000248"
+			id: "4C0000000000024B"
 			tasks: [{
-				id: "4C00000001000248"
+				id: "4C0000000100024B"
 				item: { count: 1, id: "nameless_trinkets:dark_nelumbo" }
 				type: "item"
 			}]
@@ -7606,9 +7645,9 @@
 			icon: {
 				id: "nameless_trinkets:dying_star"
 			}
-			id: "4C00000000000249"
+			id: "4C0000000000024C"
 			tasks: [{
-				id: "4C00000001000249"
+				id: "4C0000000100024C"
 				item: { count: 1, id: "nameless_trinkets:dying_star" }
 				type: "item"
 			}]
@@ -7619,9 +7658,9 @@
 			icon: {
 				id: "nameless_trinkets:experience_battery"
 			}
-			id: "4C0000000000024A"
+			id: "4C0000000000024D"
 			tasks: [{
-				id: "4C0000000100024A"
+				id: "4C0000000100024D"
 				item: { count: 1, id: "nameless_trinkets:experience_battery" }
 				type: "item"
 			}]
@@ -7632,9 +7671,9 @@
 			icon: {
 				id: "nameless_trinkets:fate_emerald"
 			}
-			id: "4C0000000000024B"
+			id: "4C0000000000024E"
 			tasks: [{
-				id: "4C0000000100024B"
+				id: "4C0000000100024E"
 				item: { count: 1, id: "nameless_trinkets:fate_emerald" }
 				type: "item"
 			}]
@@ -7645,9 +7684,9 @@
 			icon: {
 				id: "nameless_trinkets:fertilizer"
 			}
-			id: "4C0000000000024C"
+			id: "4C0000000000024F"
 			tasks: [{
-				id: "4C0000000100024C"
+				id: "4C0000000100024F"
 				item: { count: 1, id: "nameless_trinkets:fertilizer" }
 				type: "item"
 			}]
@@ -7658,9 +7697,9 @@
 			icon: {
 				id: "nameless_trinkets:four_leaf_clover"
 			}
-			id: "4C0000000000024D"
+			id: "4C00000000000250"
 			tasks: [{
-				id: "4C0000000100024D"
+				id: "4C00000001000250"
 				item: { count: 1, id: "nameless_trinkets:four_leaf_clover" }
 				type: "item"
 			}]
@@ -7671,9 +7710,9 @@
 			icon: {
 				id: "nameless_trinkets:ice_cube"
 			}
-			id: "4C0000000000024E"
+			id: "4C00000000000251"
 			tasks: [{
-				id: "4C0000000100024E"
+				id: "4C00000001000251"
 				item: { count: 1, id: "nameless_trinkets:ice_cube" }
 				type: "item"
 			}]
@@ -7684,9 +7723,9 @@
 			icon: {
 				id: "nameless_trinkets:lucky_rock"
 			}
-			id: "4C0000000000024F"
+			id: "4C00000000000252"
 			tasks: [{
-				id: "4C0000000100024F"
+				id: "4C00000001000252"
 				item: { count: 1, id: "nameless_trinkets:lucky_rock" }
 				type: "item"
 			}]
@@ -7697,9 +7736,9 @@
 			icon: {
 				id: "nameless_trinkets:miners_soul"
 			}
-			id: "4C00000000000250"
+			id: "4C00000000000253"
 			tasks: [{
-				id: "4C00000001000250"
+				id: "4C00000001000253"
 				item: { count: 1, id: "nameless_trinkets:miners_soul" }
 				type: "item"
 			}]
@@ -7710,9 +7749,9 @@
 			icon: {
 				id: "nameless_trinkets:missing_page"
 			}
-			id: "4C00000000000251"
+			id: "4C00000000000254"
 			tasks: [{
-				id: "4C00000001000251"
+				id: "4C00000001000254"
 				item: { count: 1, id: "nameless_trinkets:missing_page" }
 				type: "item"
 			}]
@@ -7723,9 +7762,9 @@
 			icon: {
 				id: "nameless_trinkets:moon_stone"
 			}
-			id: "4C00000000000252"
+			id: "4C00000000000255"
 			tasks: [{
-				id: "4C00000001000252"
+				id: "4C00000001000255"
 				item: { count: 1, id: "nameless_trinkets:moon_stone" }
 				type: "item"
 			}]
@@ -7736,9 +7775,9 @@
 			icon: {
 				id: "nameless_trinkets:nelumbo"
 			}
-			id: "4C00000000000253"
+			id: "4C00000000000256"
 			tasks: [{
-				id: "4C00000001000253"
+				id: "4C00000001000256"
 				item: { count: 1, id: "nameless_trinkets:nelumbo" }
 				type: "item"
 			}]
@@ -7749,9 +7788,9 @@
 			icon: {
 				id: "nameless_trinkets:puffer_fish_liver"
 			}
-			id: "4C00000000000254"
+			id: "4C00000000000257"
 			tasks: [{
-				id: "4C00000001000254"
+				id: "4C00000001000257"
 				item: { count: 1, id: "nameless_trinkets:puffer_fish_liver" }
 				type: "item"
 			}]
@@ -7762,9 +7801,9 @@
 			icon: {
 				id: "nameless_trinkets:reforger"
 			}
-			id: "4C00000000000255"
+			id: "4C00000000000258"
 			tasks: [{
-				id: "4C00000001000255"
+				id: "4C00000001000258"
 				item: { count: 1, id: "nameless_trinkets:reforger" }
 				type: "item"
 			}]
@@ -7775,9 +7814,9 @@
 			icon: {
 				id: "nameless_trinkets:reverse_card"
 			}
-			id: "4C00000000000256"
+			id: "4C00000000000259"
 			tasks: [{
-				id: "4C00000001000256"
+				id: "4C00000001000259"
 				item: { count: 1, id: "nameless_trinkets:reverse_card" }
 				type: "item"
 			}]
@@ -7788,9 +7827,9 @@
 			icon: {
 				id: "nameless_trinkets:sigil_of_baphomet"
 			}
-			id: "4C00000000000257"
+			id: "4C0000000000025A"
 			tasks: [{
-				id: "4C00000001000257"
+				id: "4C0000000100025A"
 				item: { count: 1, id: "nameless_trinkets:sigil_of_baphomet" }
 				type: "item"
 			}]
@@ -7801,9 +7840,9 @@
 			icon: {
 				id: "nameless_trinkets:sleeping_pills"
 			}
-			id: "4C00000000000258"
+			id: "4C0000000000025B"
 			tasks: [{
-				id: "4C00000001000258"
+				id: "4C0000000100025B"
 				item: { count: 1, id: "nameless_trinkets:sleeping_pills" }
 				type: "item"
 			}]
@@ -7814,9 +7853,9 @@
 			icon: {
 				id: "nameless_trinkets:tear_of_the_sea"
 			}
-			id: "4C00000000000259"
+			id: "4C0000000000025C"
 			tasks: [{
-				id: "4C00000001000259"
+				id: "4C0000000100025C"
 				item: { count: 1, id: "nameless_trinkets:tear_of_the_sea" }
 				type: "item"
 			}]
@@ -7827,9 +7866,9 @@
 			icon: {
 				id: "nameless_trinkets:tick"
 			}
-			id: "4C0000000000025A"
+			id: "4C0000000000025D"
 			tasks: [{
-				id: "4C0000000100025A"
+				id: "4C0000000100025D"
 				item: { count: 1, id: "nameless_trinkets:tick" }
 				type: "item"
 			}]
@@ -7840,9 +7879,9 @@
 			icon: {
 				id: "nameless_trinkets:true_heart_of_the_sea"
 			}
-			id: "4C0000000000025B"
+			id: "4C0000000000025E"
 			tasks: [{
-				id: "4C0000000100025B"
+				id: "4C0000000100025E"
 				item: { count: 1, id: "nameless_trinkets:true_heart_of_the_sea" }
 				type: "item"
 			}]
@@ -7853,9 +7892,9 @@
 			icon: {
 				id: "nameless_trinkets:vampire_blood"
 			}
-			id: "4C0000000000025C"
+			id: "4C0000000000025F"
 			tasks: [{
-				id: "4C0000000100025C"
+				id: "4C0000000100025F"
 				item: { count: 1, id: "nameless_trinkets:vampire_blood" }
 				type: "item"
 			}]
@@ -7866,9 +7905,9 @@
 			icon: {
 				id: "nameless_trinkets:wooden_stick"
 			}
-			id: "4C0000000000025D"
+			id: "4C00000000000260"
 			tasks: [{
-				id: "4C0000000100025D"
+				id: "4C00000001000260"
 				item: { count: 1, id: "nameless_trinkets:wooden_stick" }
 				type: "item"
 			}]
@@ -7877,259 +7916,259 @@
 		}
 		{
 			icon: {
-				id: "sophisticatedbackpacks:backpack"
-			}
-			id: "4C0000000000025E"
-			tasks: [{
-				id: "4C0000000100025E"
-				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:copper_backpack"
-			}
-			id: "4C0000000000025F"
-			tasks: [{
-				id: "4C0000000100025F"
-				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
-				type: "item"
-			}]
-			x: 51.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:diamond_backpack"
-			}
-			id: "4C00000000000260"
-			tasks: [{
-				id: "4C00000001000260"
-				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
-				type: "item"
-			}]
-			x: 52.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:explosion_proof_jacket"
+				id: "enigmaticlegacyplus:heaven_scroll"
 			}
 			id: "4C00000000000261"
 			tasks: [{
 				id: "4C00000001000261"
-				item: { count: 1, id: "nameless_trinkets:explosion_proof_jacket" }
-				type: "item"
-			}]
-			x: 53.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:gold_backpack"
-			}
-			id: "4C00000000000262"
-			tasks: [{
-				id: "4C00000001000262"
-				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
-				type: "item"
-			}]
-			x: 54.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "mekanism:hdpe_elytra"
-			}
-			id: "4C00000000000263"
-			tasks: [{
-				id: "4C00000001000263"
-				item: { count: 1, id: "mekanism:hdpe_elytra" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "avaritia:infinity_elytra"
-			}
-			id: "4C00000000000264"
-			tasks: [{
-				id: "4C00000001000264"
-				item: { count: 1, id: "avaritia:infinity_elytra" }
-				type: "item"
-			}]
-			x: 51.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:iron_backpack"
-			}
-			id: "4C00000000000265"
-			tasks: [{
-				id: "4C00000001000265"
-				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
-				type: "item"
-			}]
-			x: 52.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:majestic_elytra"
-			}
-			id: "4C00000000000266"
-			tasks: [{
-				id: "4C00000001000266"
-				item: { count: 1, id: "enigmaticlegacyplus:majestic_elytra" }
-				type: "item"
-			}]
-			x: 53.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:netherite_backpack"
-			}
-			id: "4C00000000000267"
-			tasks: [{
-				id: "4C00000001000267"
-				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
-				type: "item"
-			}]
-			x: 54.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "deeperdarker:soul_elytra"
-			}
-			id: "4C00000000000268"
-			tasks: [{
-				id: "4C00000001000268"
-				item: { count: 1, id: "deeperdarker:soul_elytra" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:tarantula_hawk_elytra"
-			}
-			id: "4C00000000000269"
-			tasks: [{
-				id: "4C00000001000269"
-				item: { count: 1, id: "alexsmobs:tarantula_hawk_elytra" }
-				type: "item"
-			}]
-			x: 51.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:chaos_elytra"
-			}
-			id: "4C0000000000026A"
-			tasks: [{
-				id: "4C0000000100026A"
-				item: { count: 1, id: "enigmaticlegacyplus:chaos_elytra" }
-				type: "item"
-			}]
-			x: 52.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:triple_strip_cape"
-			}
-			id: "4C0000000000026B"
-			tasks: [{
-				id: "4C0000000100026B"
-				item: { count: 1, id: "l2hostility:triple_strip_cape" }
-				type: "item"
-			}]
-			x: 53.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:heaven_scroll"
-			}
-			id: "4C0000000000026C"
-			tasks: [{
-				id: "4C0000000100026C"
 				item: { count: 1, id: "enigmaticlegacyplus:heaven_scroll" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 50.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:fabulous_scroll"
 			}
-			id: "4C0000000000026D"
+			id: "4C00000000000262"
 			tasks: [{
-				id: "4C0000000100026D"
+				id: "4C00000001000262"
 				item: { count: 1, id: "enigmaticlegacyplus:fabulous_scroll" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 51.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:night_scroll"
 			}
-			id: "4C0000000000026E"
+			id: "4C00000000000263"
 			tasks: [{
-				id: "4C0000000100026E"
+				id: "4C00000001000263"
 				item: { count: 1, id: "enigmaticlegacyplus:night_scroll" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 52.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:avarice_scroll"
 			}
-			id: "4C0000000000026F"
+			id: "4C00000000000264"
 			tasks: [{
-				id: "4C0000000100026F"
+				id: "4C00000001000264"
 				item: { count: 1, id: "enigmaticlegacyplus:avarice_scroll" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 53.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:cursed_scroll"
 			}
-			id: "4C00000000000270"
+			id: "4C00000000000265"
 			tasks: [{
-				id: "4C00000001000270"
+				id: "4C00000001000265"
 				item: { count: 1, id: "enigmaticlegacyplus:cursed_scroll" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 54.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:xp_scroll"
 			}
+			id: "4C00000000000266"
+			tasks: [{
+				id: "4C00000001000266"
+				item: { count: 1, id: "enigmaticlegacyplus:xp_scroll" }
+				type: "item"
+			}]
+			x: 50.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:explorer_scroll"
+			}
+			id: "4C00000000000267"
+			tasks: [{
+				id: "4C00000001000267"
+				item: { count: 1, id: "enigmaticlegacyplus:explorer_scroll" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:hunter_scroll"
+			}
+			id: "4C00000000000268"
+			tasks: [{
+				id: "4C00000001000268"
+				item: { count: 1, id: "enigmaticlegacyplus:hunter_scroll" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:cursed_xp_scroll"
+			}
+			id: "4C00000000000269"
+			tasks: [{
+				id: "4C00000001000269"
+				item: { count: 1, id: "enigmaticlegacyplus:cursed_xp_scroll" }
+				type: "item"
+			}]
+			x: 53.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:escape_scroll"
+			}
+			id: "4C0000000000026A"
+			tasks: [{
+				id: "4C0000000100026A"
+				item: { count: 1, id: "enigmaticlegacyplus:escape_scroll" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:survivor_scroll"
+			}
+			id: "4C0000000000026B"
+			tasks: [{
+				id: "4C0000000100026B"
+				item: { count: 1, id: "enigmaticlegacyplus:survivor_scroll" }
+				type: "item"
+			}]
+			x: 50.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:thunder_scroll"
+			}
+			id: "4C0000000000026C"
+			tasks: [{
+				id: "4C0000000100026C"
+				item: { count: 1, id: "enigmaticlegacyplus:thunder_scroll" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:cosmic_scroll"
+			}
+			id: "4C0000000000026D"
+			tasks: [{
+				id: "4C0000000100026D"
+				item: { count: 1, id: "enigmaticlegacyplus:cosmic_scroll" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:violence_scroll"
+			}
+			id: "4C0000000000026E"
+			tasks: [{
+				id: "4C0000000100026E"
+				item: { count: 1, id: "enigmaticlegacyplus:violence_scroll" }
+				type: "item"
+			}]
+			x: 53.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:angel_blessing"
+			}
+			id: "4C0000000000026F"
+			tasks: [{
+				id: "4C0000000100026F"
+				item: { count: 1, id: "enigmaticlegacyplus:angel_blessing" }
+				type: "item"
+			}]
+			x: 58.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:blazing_core"
+			}
+			id: "4C00000000000270"
+			tasks: [{
+				id: "4C00000001000270"
+				item: { count: 1, id: "enigmaticlegacyplus:blazing_core" }
+				type: "item"
+			}]
+			x: 59.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:etherium_core"
+			}
 			id: "4C00000000000271"
 			tasks: [{
 				id: "4C00000001000271"
-				item: { count: 1, id: "enigmaticlegacyplus:xp_scroll" }
+				item: { count: 1, id: "enigmaticlegacyplus:etherium_core" }
+				type: "item"
+			}]
+			x: 60.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:eye_of_nebula"
+			}
+			id: "4C00000000000272"
+			tasks: [{
+				id: "4C00000001000272"
+				item: { count: 1, id: "enigmaticlegacyplus:eye_of_nebula" }
+				type: "item"
+			}]
+			x: 61.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:forgotten_ice"
+			}
+			id: "4C00000000000273"
+			tasks: [{
+				id: "4C00000001000273"
+				item: { count: 1, id: "enigmaticlegacyplus:forgotten_ice" }
+				type: "item"
+			}]
+			x: 62.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:creation_heart"
+			}
+			id: "4C00000000000274"
+			tasks: [{
+				id: "4C00000001000274"
+				item: { count: 1, id: "enigmaticlegacyplus:creation_heart" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -8137,12 +8176,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:explorer_scroll"
+				id: "enigmaticlegacyplus:golem_heart"
 			}
-			id: "4C00000000000272"
+			id: "4C00000000000275"
 			tasks: [{
-				id: "4C00000001000272"
-				item: { count: 1, id: "enigmaticlegacyplus:explorer_scroll" }
+				id: "4C00000001000275"
+				item: { count: 1, id: "enigmaticlegacyplus:golem_heart" }
 				type: "item"
 			}]
 			x: 59.0d
@@ -8150,12 +8189,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:hunter_scroll"
+				id: "enigmaticlegacyplus:lost_engine"
 			}
-			id: "4C00000000000273"
+			id: "4C00000000000276"
 			tasks: [{
-				id: "4C00000001000273"
-				item: { count: 1, id: "enigmaticlegacyplus:hunter_scroll" }
+				id: "4C00000001000276"
+				item: { count: 1, id: "enigmaticlegacyplus:lost_engine" }
 				type: "item"
 			}]
 			x: 60.0d
@@ -8163,12 +8202,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:cursed_xp_scroll"
+				id: "enigmaticlegacyplus:the_cube"
 			}
-			id: "4C00000000000274"
+			id: "4C00000000000277"
 			tasks: [{
-				id: "4C00000001000274"
-				item: { count: 1, id: "enigmaticlegacyplus:cursed_xp_scroll" }
+				id: "4C00000001000277"
+				item: { count: 1, id: "enigmaticlegacyplus:the_cube" }
 				type: "item"
 			}]
 			x: 61.0d
@@ -8176,12 +8215,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:escape_scroll"
+				id: "enigmaticlegacyplus:void_pearl"
 			}
-			id: "4C00000000000275"
+			id: "4C00000000000278"
 			tasks: [{
-				id: "4C00000001000275"
-				item: { count: 1, id: "enigmaticlegacyplus:escape_scroll" }
+				id: "4C00000001000278"
+				item: { count: 1, id: "enigmaticlegacyplus:void_pearl" }
 				type: "item"
 			}]
 			x: 62.0d
@@ -8189,12 +8228,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:survivor_scroll"
+				id: "enigmaticlegacyplus:revival_leaf"
 			}
-			id: "4C00000000000276"
+			id: "4C00000000000279"
 			tasks: [{
-				id: "4C00000001000276"
-				item: { count: 1, id: "enigmaticlegacyplus:survivor_scroll" }
+				id: "4C00000001000279"
+				item: { count: 1, id: "enigmaticlegacyplus:revival_leaf" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -8202,12 +8241,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:thunder_scroll"
+				id: "enigmaticlegacyplus:illusion_lantern"
 			}
-			id: "4C00000000000277"
+			id: "4C0000000000027A"
 			tasks: [{
-				id: "4C00000001000277"
-				item: { count: 1, id: "enigmaticlegacyplus:thunder_scroll" }
+				id: "4C0000000100027A"
+				item: { count: 1, id: "enigmaticlegacyplus:illusion_lantern" }
 				type: "item"
 			}]
 			x: 59.0d
@@ -8215,12 +8254,12 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:cosmic_scroll"
+				id: "enigmaticlegacyplus:ocean_stone"
 			}
-			id: "4C00000000000278"
+			id: "4C0000000000027B"
 			tasks: [{
-				id: "4C00000001000278"
-				item: { count: 1, id: "enigmaticlegacyplus:cosmic_scroll" }
+				id: "4C0000000100027B"
+				item: { count: 1, id: "enigmaticlegacyplus:ocean_stone" }
 				type: "item"
 			}]
 			x: 60.0d
@@ -8228,207 +8267,181 @@
 		}
 		{
 			icon: {
-				id: "enigmaticlegacyplus:violence_scroll"
-			}
-			id: "4C00000000000279"
-			tasks: [{
-				id: "4C00000001000279"
-				item: { count: 1, id: "enigmaticlegacyplus:violence_scroll" }
-				type: "item"
-			}]
-			x: 61.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:angel_blessing"
-			}
-			id: "4C0000000000027A"
-			tasks: [{
-				id: "4C0000000100027A"
-				item: { count: 1, id: "enigmaticlegacyplus:angel_blessing" }
-				type: "item"
-			}]
-			x: 66.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:blazing_core"
-			}
-			id: "4C0000000000027B"
-			tasks: [{
-				id: "4C0000000100027B"
-				item: { count: 1, id: "enigmaticlegacyplus:blazing_core" }
-				type: "item"
-			}]
-			x: 67.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:etherium_core"
+				id: "hazennstuff:abomination"
 			}
 			id: "4C0000000000027C"
 			tasks: [{
 				id: "4C0000000100027C"
-				item: { count: 1, id: "enigmaticlegacyplus:etherium_core" }
-				type: "item"
-			}]
-			x: 68.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:eye_of_nebula"
-			}
-			id: "4C0000000000027D"
-			tasks: [{
-				id: "4C0000000100027D"
-				item: { count: 1, id: "enigmaticlegacyplus:eye_of_nebula" }
-				type: "item"
-			}]
-			x: 69.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:forgotten_ice"
-			}
-			id: "4C0000000000027E"
-			tasks: [{
-				id: "4C0000000100027E"
-				item: { count: 1, id: "enigmaticlegacyplus:forgotten_ice" }
-				type: "item"
-			}]
-			x: 70.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:creation_heart"
-			}
-			id: "4C0000000000027F"
-			tasks: [{
-				id: "4C0000000100027F"
-				item: { count: 1, id: "enigmaticlegacyplus:creation_heart" }
-				type: "item"
-			}]
-			x: 66.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:golem_heart"
-			}
-			id: "4C00000000000280"
-			tasks: [{
-				id: "4C00000001000280"
-				item: { count: 1, id: "enigmaticlegacyplus:golem_heart" }
-				type: "item"
-			}]
-			x: 67.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:lost_engine"
-			}
-			id: "4C00000000000281"
-			tasks: [{
-				id: "4C00000001000281"
-				item: { count: 1, id: "enigmaticlegacyplus:lost_engine" }
-				type: "item"
-			}]
-			x: 68.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:the_cube"
-			}
-			id: "4C00000000000282"
-			tasks: [{
-				id: "4C00000001000282"
-				item: { count: 1, id: "enigmaticlegacyplus:the_cube" }
-				type: "item"
-			}]
-			x: 69.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:void_pearl"
-			}
-			id: "4C00000000000283"
-			tasks: [{
-				id: "4C00000001000283"
-				item: { count: 1, id: "enigmaticlegacyplus:void_pearl" }
-				type: "item"
-			}]
-			x: 70.0d
-			y: 19.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:revival_leaf"
-			}
-			id: "4C00000000000284"
-			tasks: [{
-				id: "4C00000001000284"
-				item: { count: 1, id: "enigmaticlegacyplus:revival_leaf" }
-				type: "item"
-			}]
-			x: 66.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:illusion_lantern"
-			}
-			id: "4C00000000000285"
-			tasks: [{
-				id: "4C00000001000285"
-				item: { count: 1, id: "enigmaticlegacyplus:illusion_lantern" }
-				type: "item"
-			}]
-			x: 67.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "enigmaticlegacyplus:ocean_stone"
-			}
-			id: "4C00000000000286"
-			tasks: [{
-				id: "4C00000001000286"
-				item: { count: 1, id: "enigmaticlegacyplus:ocean_stone" }
-				type: "item"
-			}]
-			x: 68.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "hazennstuff:abomination"
-			}
-			id: "4C00000000000287"
-			tasks: [{
-				id: "4C00000001000287"
 				item: { count: 1, id: "hazennstuff:abomination" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 27.0d
+			x: 66.0d
+			y: 18.0d
 		}
 		{
 			icon: {
 				id: "hazennstuff:absolute"
 			}
+			id: "4C0000000000027D"
+			tasks: [{
+				id: "4C0000000100027D"
+				item: { count: 1, id: "hazennstuff:absolute" }
+				type: "item"
+			}]
+			x: 67.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:abstract"
+			}
+			id: "4C0000000000027E"
+			tasks: [{
+				id: "4C0000000100027E"
+				item: { count: 1, id: "hazennstuff:abstract" }
+				type: "item"
+			}]
+			x: 68.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:advanced"
+			}
+			id: "4C0000000000027F"
+			tasks: [{
+				id: "4C0000000100027F"
+				item: { count: 1, id: "hazennstuff:advanced" }
+				type: "item"
+			}]
+			x: 69.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:radiance"
+			}
+			id: "4C00000000000280"
+			tasks: [{
+				id: "4C00000001000280"
+				item: { count: 1, id: "hazennstuff:radiance" }
+				type: "item"
+			}]
+			x: 70.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:refined"
+			}
+			id: "4C00000000000281"
+			tasks: [{
+				id: "4C00000001000281"
+				item: { count: 1, id: "hazennstuff:refined" }
+				type: "item"
+			}]
+			x: 66.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:reinforced"
+			}
+			id: "4C00000000000282"
+			tasks: [{
+				id: "4C00000001000282"
+				item: { count: 1, id: "hazennstuff:reinforced" }
+				type: "item"
+			}]
+			x: 67.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:ruptured"
+			}
+			id: "4C00000000000283"
+			tasks: [{
+				id: "4C00000001000283"
+				item: { count: 1, id: "hazennstuff:ruptured" }
+				type: "item"
+			}]
+			x: 68.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:sacred"
+			}
+			id: "4C00000000000284"
+			tasks: [{
+				id: "4C00000001000284"
+				item: { count: 1, id: "hazennstuff:sacred" }
+				type: "item"
+			}]
+			x: 69.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:shattered"
+			}
+			id: "4C00000000000285"
+			tasks: [{
+				id: "4C00000001000285"
+				item: { count: 1, id: "hazennstuff:shattered" }
+				type: "item"
+			}]
+			x: 70.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:singularity"
+			}
+			id: "4C00000000000286"
+			tasks: [{
+				id: "4C00000001000286"
+				item: { count: 1, id: "hazennstuff:singularity" }
+				type: "item"
+			}]
+			x: 66.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:strengthened"
+			}
+			id: "4C00000000000287"
+			tasks: [{
+				id: "4C00000001000287"
+				item: { count: 1, id: "hazennstuff:strengthened" }
+				type: "item"
+			}]
+			x: 67.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "l2hostility:abrahadabra"
+			}
 			id: "4C00000000000288"
 			tasks: [{
 				id: "4C00000001000288"
-				item: { count: 1, id: "hazennstuff:absolute" }
+				item: { count: 1, id: "l2hostility:abrahadabra" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "l2hostility:abyssal_thorn"
+			}
+			id: "4C00000000000289"
+			tasks: [{
+				id: "4C00000001000289"
+				item: { count: 1, id: "l2hostility:abyssal_thorn" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -8436,12 +8449,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:abstract"
+				id: "l2hostility:curse_of_envy"
 			}
-			id: "4C00000000000289"
+			id: "4C0000000000028A"
 			tasks: [{
-				id: "4C00000001000289"
-				item: { count: 1, id: "hazennstuff:abstract" }
+				id: "4C0000000100028A"
+				item: { count: 1, id: "l2hostility:curse_of_envy" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -8449,12 +8462,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:advanced"
+				id: "l2hostility:curse_of_gluttony"
 			}
-			id: "4C0000000000028A"
+			id: "4C0000000000028B"
 			tasks: [{
-				id: "4C0000000100028A"
-				item: { count: 1, id: "hazennstuff:advanced" }
+				id: "4C0000000100028B"
+				item: { count: 1, id: "l2hostility:curse_of_gluttony" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -8462,12 +8475,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:radiance"
+				id: "l2hostility:curse_of_greed"
 			}
-			id: "4C0000000000028B"
+			id: "4C0000000000028C"
 			tasks: [{
-				id: "4C0000000100028B"
-				item: { count: 1, id: "hazennstuff:radiance" }
+				id: "4C0000000100028C"
+				item: { count: 1, id: "l2hostility:curse_of_greed" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -8475,12 +8488,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:refined"
+				id: "l2hostility:curse_of_lust"
 			}
-			id: "4C0000000000028C"
+			id: "4C0000000000028D"
 			tasks: [{
-				id: "4C0000000100028C"
-				item: { count: 1, id: "hazennstuff:refined" }
+				id: "4C0000000100028D"
+				item: { count: 1, id: "l2hostility:curse_of_lust" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -8488,12 +8501,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:reinforced"
+				id: "l2hostility:curse_of_pride"
 			}
-			id: "4C0000000000028D"
+			id: "4C0000000000028E"
 			tasks: [{
-				id: "4C0000000100028D"
-				item: { count: 1, id: "hazennstuff:reinforced" }
+				id: "4C0000000100028E"
+				item: { count: 1, id: "l2hostility:curse_of_pride" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -8501,12 +8514,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:ruptured"
+				id: "l2hostility:curse_of_sloth"
 			}
-			id: "4C0000000000028E"
+			id: "4C0000000000028F"
 			tasks: [{
-				id: "4C0000000100028E"
-				item: { count: 1, id: "hazennstuff:ruptured" }
+				id: "4C0000000100028F"
+				item: { count: 1, id: "l2hostility:curse_of_sloth" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -8514,12 +8527,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:sacred"
+				id: "l2hostility:curse_of_wrath"
 			}
-			id: "4C0000000000028F"
+			id: "4C00000000000290"
 			tasks: [{
-				id: "4C0000000100028F"
-				item: { count: 1, id: "hazennstuff:sacred" }
+				id: "4C00000001000290"
+				item: { count: 1, id: "l2hostility:curse_of_wrath" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -8527,12 +8540,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:shattered"
+				id: "l2hostility:divinity_cross"
 			}
-			id: "4C00000000000290"
+			id: "4C00000000000291"
 			tasks: [{
-				id: "4C00000001000290"
-				item: { count: 1, id: "hazennstuff:shattered" }
+				id: "4C00000001000291"
+				item: { count: 1, id: "l2hostility:divinity_cross" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -8540,12 +8553,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:singularity"
+				id: "l2hostility:divinity_light"
 			}
-			id: "4C00000000000291"
+			id: "4C00000000000292"
 			tasks: [{
-				id: "4C00000001000291"
-				item: { count: 1, id: "hazennstuff:singularity" }
+				id: "4C00000001000292"
+				item: { count: 1, id: "l2hostility:divinity_light" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -8553,12 +8566,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:strengthened"
+				id: "l2hostility:greed_of_nidhoggur"
 			}
-			id: "4C00000000000292"
+			id: "4C00000000000293"
 			tasks: [{
-				id: "4C00000001000292"
-				item: { count: 1, id: "hazennstuff:strengthened" }
+				id: "4C00000001000293"
+				item: { count: 1, id: "l2hostility:greed_of_nidhoggur" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -8568,9 +8581,9 @@
 			icon: {
 				id: "artifacts:aqua_dashers"
 			}
-			id: "4C00000000000293"
+			id: "4C00000000000294"
 			tasks: [{
-				id: "4C00000001000293"
+				id: "4C00000001000294"
 				item: { count: 1, id: "artifacts:aqua_dashers" }
 				type: "item"
 			}]
@@ -8581,9 +8594,9 @@
 			icon: {
 				id: "artifacts:bunny_hoppers"
 			}
-			id: "4C00000000000294"
+			id: "4C00000000000295"
 			tasks: [{
-				id: "4C00000001000294"
+				id: "4C00000001000295"
 				item: { count: 1, id: "artifacts:bunny_hoppers" }
 				type: "item"
 			}]
@@ -8594,9 +8607,9 @@
 			icon: {
 				id: "pastel:cotton_cloud_boots"
 			}
-			id: "4C00000000000295"
+			id: "4C00000000000296"
 			tasks: [{
-				id: "4C00000001000295"
+				id: "4C00000001000296"
 				item: { count: 1, id: "pastel:cotton_cloud_boots" }
 				type: "item"
 			}]
@@ -8607,9 +8620,9 @@
 			icon: {
 				id: "artifacts:flippers"
 			}
-			id: "4C00000000000296"
+			id: "4C00000000000297"
 			tasks: [{
-				id: "4C00000001000296"
+				id: "4C00000001000297"
 				item: { count: 1, id: "artifacts:flippers" }
 				type: "item"
 			}]
@@ -8620,23 +8633,10 @@
 			icon: {
 				id: "artifacts:kitty_slippers"
 			}
-			id: "4C00000000000297"
-			tasks: [{
-				id: "4C00000001000297"
-				item: { count: 1, id: "artifacts:kitty_slippers" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "artifacts:rooted_boots"
-			}
 			id: "4C00000000000298"
 			tasks: [{
 				id: "4C00000001000298"
-				item: { count: 1, id: "artifacts:rooted_boots" }
+				item: { count: 1, id: "artifacts:kitty_slippers" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -8691,8 +8691,8 @@
 				item: { count: 1, id: "artifacts:steadfast_spikes" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 28.0d
+			x: 8.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -8704,7 +8704,7 @@
 				item: { count: 1, id: "artifacts:strider_shoes" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.0d
 			y: 29.0d
 		}
 		{
@@ -8717,563 +8717,537 @@
 				item: { count: 1, id: "cataclysm:sturdy_boots" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 29.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:abrahadabra"
-			}
-			id: "4C0000000000029F"
-			tasks: [{
-				id: "4C0000000100029F"
-				item: { count: 1, id: "l2hostility:abrahadabra" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:abyssal_thorn"
-			}
-			id: "4C000000000002A0"
-			tasks: [{
-				id: "4C000000010002A0"
-				item: { count: 1, id: "l2hostility:abyssal_thorn" }
-				type: "item"
-			}]
-			x: 17.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_envy"
-			}
-			id: "4C000000000002A1"
-			tasks: [{
-				id: "4C000000010002A1"
-				item: { count: 1, id: "l2hostility:curse_of_envy" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_gluttony"
-			}
-			id: "4C000000000002A2"
-			tasks: [{
-				id: "4C000000010002A2"
-				item: { count: 1, id: "l2hostility:curse_of_gluttony" }
-				type: "item"
-			}]
-			x: 19.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_greed"
-			}
-			id: "4C000000000002A3"
-			tasks: [{
-				id: "4C000000010002A3"
-				item: { count: 1, id: "l2hostility:curse_of_greed" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_lust"
-			}
-			id: "4C000000000002A4"
-			tasks: [{
-				id: "4C000000010002A4"
-				item: { count: 1, id: "l2hostility:curse_of_lust" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_pride"
-			}
-			id: "4C000000000002A5"
-			tasks: [{
-				id: "4C000000010002A5"
-				item: { count: 1, id: "l2hostility:curse_of_pride" }
-				type: "item"
-			}]
-			x: 17.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_sloth"
-			}
-			id: "4C000000000002A6"
-			tasks: [{
-				id: "4C000000010002A6"
-				item: { count: 1, id: "l2hostility:curse_of_sloth" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:curse_of_wrath"
-			}
-			id: "4C000000000002A7"
-			tasks: [{
-				id: "4C000000010002A7"
-				item: { count: 1, id: "l2hostility:curse_of_wrath" }
-				type: "item"
-			}]
-			x: 19.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:divinity_cross"
-			}
-			id: "4C000000000002A8"
-			tasks: [{
-				id: "4C000000010002A8"
-				item: { count: 1, id: "l2hostility:divinity_cross" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:divinity_light"
-			}
-			id: "4C000000000002A9"
-			tasks: [{
-				id: "4C000000010002A9"
-				item: { count: 1, id: "l2hostility:divinity_light" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: 29.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:greed_of_nidhoggur"
-			}
-			id: "4C000000000002AA"
-			tasks: [{
-				id: "4C000000010002AA"
-				item: { count: 1, id: "l2hostility:greed_of_nidhoggur" }
-				type: "item"
-			}]
-			x: 17.0d
+			x: 10.0d
 			y: 29.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:ascension_amulet"
 			}
-			id: "4C000000000002AB"
+			id: "4C0000000000029F"
 			tasks: [{
-				id: "4C000000010002AB"
+				id: "4C0000000100029F"
 				item: { count: 1, id: "enigmaticlegacyplus:ascension_amulet" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 15.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_aqua"
 			}
-			id: "4C000000000002AC"
+			id: "4C000000000002A0"
 			tasks: [{
-				id: "4C000000010002AC"
+				id: "4C000000010002A0"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_aqua" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 16.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_black"
 			}
-			id: "4C000000000002AD"
+			id: "4C000000000002A1"
 			tasks: [{
-				id: "4C000000010002AD"
+				id: "4C000000010002A1"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_black" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 17.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_blue"
 			}
-			id: "4C000000000002AE"
+			id: "4C000000000002A2"
 			tasks: [{
-				id: "4C000000010002AE"
+				id: "4C000000010002A2"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_blue" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 18.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_green"
 			}
-			id: "4C000000000002AF"
+			id: "4C000000000002A3"
 			tasks: [{
-				id: "4C000000010002AF"
+				id: "4C000000010002A3"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_green" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 15.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_magenta"
 			}
-			id: "4C000000000002B0"
+			id: "4C000000000002A4"
 			tasks: [{
-				id: "4C000000010002B0"
+				id: "4C000000010002A4"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_magenta" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 16.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_red"
 			}
-			id: "4C000000000002B1"
+			id: "4C000000000002A5"
 			tasks: [{
-				id: "4C000000010002B1"
+				id: "4C000000010002A5"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_red" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 17.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:enigmatic_amulet_violet"
 			}
-			id: "4C000000000002B2"
+			id: "4C000000000002A6"
 			tasks: [{
-				id: "4C000000010002B2"
+				id: "4C000000010002A6"
 				item: { count: 1, id: "enigmaticlegacyplus:enigmatic_amulet_violet" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 18.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:eldritch_amulet"
 			}
-			id: "4C000000000002B3"
+			id: "4C000000000002A7"
 			tasks: [{
-				id: "4C000000010002B3"
+				id: "4C000000010002A7"
 				item: { count: 1, id: "enigmaticlegacyplus:eldritch_amulet" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 15.0d
 			y: 29.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:unwitnessed_amulet"
 			}
-			id: "4C000000000002B4"
+			id: "4C000000000002A8"
 			tasks: [{
-				id: "4C000000010002B4"
+				id: "4C000000010002A8"
 				item: { count: 1, id: "enigmaticlegacyplus:unwitnessed_amulet" }
 				type: "item"
 			}]
-			x: 25.0d
+			x: 16.0d
 			y: 29.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:great_idol_of_the_divine_retribution"
 			}
-			id: "4C000000000002B5"
+			id: "4C000000000002A9"
 			tasks: [{
-				id: "4C000000010002B5"
+				id: "4C000000010002A9"
 				item: { count: 1, id: "armageddon_mod:great_idol_of_the_divine_retribution" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 22.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_flamebound_pact"
 			}
-			id: "4C000000000002B6"
+			id: "4C000000000002AA"
 			tasks: [{
-				id: "4C000000010002B6"
+				id: "4C000000010002AA"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_flamebound_pact" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 23.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_gale_howl"
 			}
-			id: "4C000000000002B7"
+			id: "4C000000000002AB"
 			tasks: [{
-				id: "4C000000010002B7"
+				id: "4C000000010002AB"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_gale_howl" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 24.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_north_star"
 			}
-			id: "4C000000000002B8"
+			id: "4C000000000002AC"
 			tasks: [{
-				id: "4C000000010002B8"
+				id: "4C000000010002AC"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_north_star" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 25.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_poisonous_vine"
 			}
-			id: "4C000000000002B9"
+			id: "4C000000000002AD"
 			tasks: [{
-				id: "4C000000010002B9"
+				id: "4C000000010002AD"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_poisonous_vine" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 22.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_divine_retribution"
 			}
-			id: "4C000000000002BA"
+			id: "4C000000000002AE"
 			tasks: [{
-				id: "4C000000010002BA"
+				id: "4C000000010002AE"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_divine_retribution" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 23.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_flmaboundpact"
 			}
-			id: "4C000000000002BB"
+			id: "4C000000000002AF"
 			tasks: [{
-				id: "4C000000010002BB"
+				id: "4C000000010002AF"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_flmaboundpact" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 24.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_gale_howl"
 			}
-			id: "4C000000000002BC"
+			id: "4C000000000002B0"
 			tasks: [{
-				id: "4C000000010002BC"
+				id: "4C000000010002B0"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_gale_howl" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 25.0d
 			y: 28.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idolofthe_north_star"
 			}
-			id: "4C000000000002BD"
+			id: "4C000000000002B1"
 			tasks: [{
-				id: "4C000000010002BD"
+				id: "4C000000010002B1"
 				item: { count: 1, id: "armageddon_mod:idolofthe_north_star" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 22.0d
 			y: 29.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_poisonous_vine"
 			}
-			id: "4C000000000002BE"
+			id: "4C000000000002B2"
 			tasks: [{
-				id: "4C000000010002BE"
+				id: "4C000000010002B2"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_poisonous_vine" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 23.0d
 			y: 29.0d
 		}
 		{
 			icon: {
-				id: "crafting_on_a_stick:anvil"
+				id: "hazennstuff:arbitrium_wings"
+			}
+			id: "4C000000000002B3"
+			tasks: [{
+				id: "4C000000010002B3"
+				item: { count: 1, id: "hazennstuff:arbitrium_wings" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:angel_wings"
+			}
+			id: "4C000000000002B4"
+			tasks: [{
+				id: "4C000000010002B4"
+				item: { count: 1, id: "hazennstuff:angel_wings" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:fallen_angel_wings"
+			}
+			id: "4C000000000002B5"
+			tasks: [{
+				id: "4C000000010002B5"
+				item: { count: 1, id: "hazennstuff:fallen_angel_wings" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "mekanism:hdpe_elytra"
+			}
+			id: "4C000000000002B6"
+			tasks: [{
+				id: "4C000000010002B6"
+				item: { count: 1, id: "mekanism:hdpe_elytra" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "avaritia:infinity_elytra"
+			}
+			id: "4C000000000002B7"
+			tasks: [{
+				id: "4C000000010002B7"
+				item: { count: 1, id: "avaritia:infinity_elytra" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:majestic_elytra"
+			}
+			id: "4C000000000002B8"
+			tasks: [{
+				id: "4C000000010002B8"
+				item: { count: 1, id: "enigmaticlegacyplus:majestic_elytra" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "deeperdarker:soul_elytra"
+			}
+			id: "4C000000000002B9"
+			tasks: [{
+				id: "4C000000010002B9"
+				item: { count: 1, id: "deeperdarker:soul_elytra" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:tarantula_hawk_elytra"
+			}
+			id: "4C000000000002BA"
+			tasks: [{
+				id: "4C000000010002BA"
+				item: { count: 1, id: "alexsmobs:tarantula_hawk_elytra" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:chaos_elytra"
+			}
+			id: "4C000000000002BB"
+			tasks: [{
+				id: "4C000000010002BB"
+				item: { count: 1, id: "enigmaticlegacyplus:chaos_elytra" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "4C000000000002BC"
+			tasks: [{
+				id: "4C000000010002BC"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "sophisticatedbackpacks:copper_backpack"
+			}
+			id: "4C000000000002BD"
+			tasks: [{
+				id: "4C000000010002BD"
+				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "sophisticatedbackpacks:diamond_backpack"
+			}
+			id: "4C000000000002BE"
+			tasks: [{
+				id: "4C000000010002BE"
+				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:explosion_proof_jacket"
 			}
 			id: "4C000000000002BF"
 			tasks: [{
 				id: "4C000000010002BF"
-				item: { count: 1, id: "crafting_on_a_stick:anvil" }
+				item: { count: 1, id: "nameless_trinkets:explosion_proof_jacket" }
 				type: "item"
 			}]
-			x: 38.0d
+			x: 39.0d
 			y: 27.0d
 		}
 		{
 			icon: {
-				id: "crafting_on_a_stick:cartography_table"
+				id: "sophisticatedbackpacks:gold_backpack"
 			}
 			id: "4C000000000002C0"
 			tasks: [{
 				id: "4C000000010002C0"
-				item: { count: 1, id: "crafting_on_a_stick:cartography_table" }
+				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
 				type: "item"
 			}]
-			x: 39.0d
-			y: 27.0d
+			x: 36.0d
+			y: 28.0d
 		}
 		{
 			icon: {
-				id: "crafting_on_a_stick:chipped_anvil"
+				id: "sophisticatedbackpacks:iron_backpack"
 			}
 			id: "4C000000000002C1"
 			tasks: [{
 				id: "4C000000010002C1"
-				item: { count: 1, id: "crafting_on_a_stick:chipped_anvil" }
+				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
 				type: "item"
 			}]
-			x: 40.0d
-			y: 27.0d
+			x: 37.0d
+			y: 28.0d
 		}
 		{
 			icon: {
-				id: "crafting_on_a_stick:crafting_table"
+				id: "sophisticatedbackpacks:netherite_backpack"
 			}
 			id: "4C000000000002C2"
 			tasks: [{
 				id: "4C000000010002C2"
-				item: { count: 1, id: "crafting_on_a_stick:crafting_table" }
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
 				type: "item"
 			}]
-			x: 41.0d
-			y: 27.0d
+			x: 38.0d
+			y: 28.0d
 		}
 		{
 			icon: {
-				id: "crafting_on_a_stick:damaged_anvil"
+				id: "l2hostility:triple_strip_cape"
 			}
 			id: "4C000000000002C3"
 			tasks: [{
 				id: "4C000000010002C3"
-				item: { count: 1, id: "crafting_on_a_stick:damaged_anvil" }
-				type: "item"
-			}]
-			x: 38.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "crafting_on_a_stick:grindstone"
-			}
-			id: "4C000000000002C4"
-			tasks: [{
-				id: "4C000000010002C4"
-				item: { count: 1, id: "crafting_on_a_stick:grindstone" }
+				item: { count: 1, id: "l2hostility:triple_strip_cape" }
 				type: "item"
 			}]
 			x: 39.0d
 			y: 28.0d
-		}
-		{
-			icon: {
-				id: "crafting_on_a_stick:loom"
-			}
-			id: "4C000000000002C5"
-			tasks: [{
-				id: "4C000000010002C5"
-				item: { count: 1, id: "crafting_on_a_stick:loom" }
-				type: "item"
-			}]
-			x: 40.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "crafting_on_a_stick:smithing_table"
-			}
-			id: "4C000000000002C6"
-			tasks: [{
-				id: "4C000000010002C6"
-				item: { count: 1, id: "crafting_on_a_stick:smithing_table" }
-				type: "item"
-			}]
-			x: 41.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "crafting_on_a_stick:stonecutter"
-			}
-			id: "4C000000000002C7"
-			tasks: [{
-				id: "4C000000010002C7"
-				item: { count: 1, id: "crafting_on_a_stick:stonecutter" }
-				type: "item"
-			}]
-			x: 38.0d
-			y: 29.0d
 		}
 		{
 			icon: {
 				id: "powah:battery_basic"
 			}
-			id: "4C000000000002C8"
+			id: "4C000000000002C4"
 			tasks: [{
-				id: "4C000000010002C8"
+				id: "4C000000010002C4"
 				item: { count: 1, id: "powah:battery_basic" }
 				type: "item"
 			}]
-			x: 45.0d
+			x: 43.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "powah:battery_blazing"
 			}
-			id: "4C000000000002C9"
+			id: "4C000000000002C5"
 			tasks: [{
-				id: "4C000000010002C9"
+				id: "4C000000010002C5"
 				item: { count: 1, id: "powah:battery_blazing" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "powah:battery_hardened"
+			}
+			id: "4C000000000002C6"
+			tasks: [{
+				id: "4C000000010002C6"
+				item: { count: 1, id: "powah:battery_hardened" }
+				type: "item"
+			}]
+			x: 45.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "powah:battery_niotic"
+			}
+			id: "4C000000000002C7"
+			tasks: [{
+				id: "4C000000010002C7"
+				item: { count: 1, id: "powah:battery_niotic" }
 				type: "item"
 			}]
 			x: 46.0d
@@ -9281,38 +9255,38 @@
 		}
 		{
 			icon: {
-				id: "powah:battery_hardened"
+				id: "powah:battery_nitro"
+			}
+			id: "4C000000000002C8"
+			tasks: [{
+				id: "4C000000010002C8"
+				item: { count: 1, id: "powah:battery_nitro" }
+				type: "item"
+			}]
+			x: 43.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "powah:battery_spirited"
+			}
+			id: "4C000000000002C9"
+			tasks: [{
+				id: "4C000000010002C9"
+				item: { count: 1, id: "powah:battery_spirited" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "powah:battery_starter"
 			}
 			id: "4C000000000002CA"
 			tasks: [{
 				id: "4C000000010002CA"
-				item: { count: 1, id: "powah:battery_hardened" }
-				type: "item"
-			}]
-			x: 47.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "powah:battery_niotic"
-			}
-			id: "4C000000000002CB"
-			tasks: [{
-				id: "4C000000010002CB"
-				item: { count: 1, id: "powah:battery_niotic" }
-				type: "item"
-			}]
-			x: 48.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "powah:battery_nitro"
-			}
-			id: "4C000000000002CC"
-			tasks: [{
-				id: "4C000000010002CC"
-				item: { count: 1, id: "powah:battery_nitro" }
+				item: { count: 1, id: "powah:battery_starter" }
 				type: "item"
 			}]
 			x: 45.0d
@@ -9320,12 +9294,12 @@
 		}
 		{
 			icon: {
-				id: "powah:battery_spirited"
+				id: "artifacts:whoopee_cushion"
 			}
-			id: "4C000000000002CD"
+			id: "4C000000000002CB"
 			tasks: [{
-				id: "4C000000010002CD"
-				item: { count: 1, id: "powah:battery_spirited" }
+				id: "4C000000010002CB"
+				item: { count: 1, id: "artifacts:whoopee_cushion" }
 				type: "item"
 			}]
 			x: 46.0d
@@ -9333,51 +9307,51 @@
 		}
 		{
 			icon: {
-				id: "powah:battery_starter"
-			}
-			id: "4C000000000002CE"
-			tasks: [{
-				id: "4C000000010002CE"
-				item: { count: 1, id: "powah:battery_starter" }
-				type: "item"
-			}]
-			x: 47.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "artifacts:whoopee_cushion"
-			}
-			id: "4C000000000002CF"
-			tasks: [{
-				id: "4C000000010002CF"
-				item: { count: 1, id: "artifacts:whoopee_cushion" }
-				type: "item"
-			}]
-			x: 48.0d
-			y: 28.0d
-		}
-		{
-			icon: {
 				id: "refinedstorage:creative_portable_grid"
 			}
-			id: "4C000000000002D0"
+			id: "4C000000000002CC"
 			tasks: [{
-				id: "4C000000010002D0"
+				id: "4C000000010002CC"
 				item: { count: 1, id: "refinedstorage:creative_portable_grid" }
 				type: "item"
 			}]
-			x: 52.0d
+			x: 50.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "refinedstorage_quartz_arsenal:creative_wireless_crafting_grid"
 			}
-			id: "4C000000000002D1"
+			id: "4C000000000002CD"
 			tasks: [{
-				id: "4C000000010002D1"
+				id: "4C000000010002CD"
 				item: { count: 1, id: "refinedstorage_quartz_arsenal:creative_wireless_crafting_grid" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "refinedstorage:creative_wireless_grid"
+			}
+			id: "4C000000000002CE"
+			tasks: [{
+				id: "4C000000010002CE"
+				item: { count: 1, id: "refinedstorage:creative_wireless_grid" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "universalgrid:creative_wireless_universal_grid"
+			}
+			id: "4C000000000002CF"
+			tasks: [{
+				id: "4C000000010002CF"
+				item: { count: 1, id: "universalgrid:creative_wireless_universal_grid" }
 				type: "item"
 			}]
 			x: 53.0d
@@ -9385,38 +9359,38 @@
 		}
 		{
 			icon: {
-				id: "refinedstorage:creative_wireless_grid"
+				id: "refinedstorage:portable_grid"
+			}
+			id: "4C000000000002D0"
+			tasks: [{
+				id: "4C000000010002D0"
+				item: { count: 1, id: "refinedstorage:portable_grid" }
+				type: "item"
+			}]
+			x: 50.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "refinedstorage_quartz_arsenal:wireless_crafting_grid"
+			}
+			id: "4C000000000002D1"
+			tasks: [{
+				id: "4C000000010002D1"
+				item: { count: 1, id: "refinedstorage_quartz_arsenal:wireless_crafting_grid" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "refinedstorage:wireless_grid"
 			}
 			id: "4C000000000002D2"
 			tasks: [{
 				id: "4C000000010002D2"
-				item: { count: 1, id: "refinedstorage:creative_wireless_grid" }
-				type: "item"
-			}]
-			x: 54.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "universalgrid:creative_wireless_universal_grid"
-			}
-			id: "4C000000000002D3"
-			tasks: [{
-				id: "4C000000010002D3"
-				item: { count: 1, id: "universalgrid:creative_wireless_universal_grid" }
-				type: "item"
-			}]
-			x: 55.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "refinedstorage:portable_grid"
-			}
-			id: "4C000000000002D4"
-			tasks: [{
-				id: "4C000000010002D4"
-				item: { count: 1, id: "refinedstorage:portable_grid" }
+				item: { count: 1, id: "refinedstorage:wireless_grid" }
 				type: "item"
 			}]
 			x: 52.0d
@@ -9424,12 +9398,12 @@
 		}
 		{
 			icon: {
-				id: "refinedstorage_quartz_arsenal:wireless_crafting_grid"
+				id: "universalgrid:wireless_universal_grid"
 			}
-			id: "4C000000000002D5"
+			id: "4C000000000002D3"
 			tasks: [{
-				id: "4C000000010002D5"
-				item: { count: 1, id: "refinedstorage_quartz_arsenal:wireless_crafting_grid" }
+				id: "4C000000010002D3"
+				item: { count: 1, id: "universalgrid:wireless_universal_grid" }
 				type: "item"
 			}]
 			x: 53.0d
@@ -9437,51 +9411,51 @@
 		}
 		{
 			icon: {
-				id: "refinedstorage:wireless_grid"
-			}
-			id: "4C000000000002D6"
-			tasks: [{
-				id: "4C000000010002D6"
-				item: { count: 1, id: "refinedstorage:wireless_grid" }
-				type: "item"
-			}]
-			x: 54.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "universalgrid:wireless_universal_grid"
-			}
-			id: "4C000000000002D7"
-			tasks: [{
-				id: "4C000000010002D7"
-				item: { count: 1, id: "universalgrid:wireless_universal_grid" }
-				type: "item"
-			}]
-			x: 55.0d
-			y: 28.0d
-		}
-		{
-			icon: {
 				id: "nameless_trinkets:blindfold"
 			}
-			id: "4C000000000002D8"
+			id: "4C000000000002D4"
 			tasks: [{
-				id: "4C000000010002D8"
+				id: "4C000000010002D4"
 				item: { count: 1, id: "nameless_trinkets:blindfold" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 57.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:creeper_sense"
 			}
-			id: "4C000000000002D9"
+			id: "4C000000000002D5"
 			tasks: [{
-				id: "4C000000010002D9"
+				id: "4C000000010002D5"
 				item: { count: 1, id: "nameless_trinkets:creeper_sense" }
+				type: "item"
+			}]
+			x: 58.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:dragons_eye"
+			}
+			id: "4C000000000002D6"
+			tasks: [{
+				id: "4C000000010002D6"
+				item: { count: 1, id: "nameless_trinkets:dragons_eye" }
+				type: "item"
+			}]
+			x: 59.0d
+			y: 27.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:ghast_eye"
+			}
+			id: "4C000000000002D7"
+			tasks: [{
+				id: "4C000000010002D7"
+				item: { count: 1, id: "nameless_trinkets:ghast_eye" }
 				type: "item"
 			}]
 			x: 60.0d
@@ -9489,38 +9463,38 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:dragons_eye"
+				id: "nameless_trinkets:pocket_lightning_rod"
+			}
+			id: "4C000000000002D8"
+			tasks: [{
+				id: "4C000000010002D8"
+				item: { count: 1, id: "nameless_trinkets:pocket_lightning_rod" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "pastel:glow_vision_goggles"
+			}
+			id: "4C000000000002D9"
+			tasks: [{
+				id: "4C000000010002D9"
+				item: { count: 1, id: "pastel:glow_vision_goggles" }
+				type: "item"
+			}]
+			x: 58.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:rage_mind"
 			}
 			id: "4C000000000002DA"
 			tasks: [{
 				id: "4C000000010002DA"
-				item: { count: 1, id: "nameless_trinkets:dragons_eye" }
-				type: "item"
-			}]
-			x: 61.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:ghast_eye"
-			}
-			id: "4C000000000002DB"
-			tasks: [{
-				id: "4C000000010002DB"
-				item: { count: 1, id: "nameless_trinkets:ghast_eye" }
-				type: "item"
-			}]
-			x: 62.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:pocket_lightning_rod"
-			}
-			id: "4C000000000002DC"
-			tasks: [{
-				id: "4C000000010002DC"
-				item: { count: 1, id: "nameless_trinkets:pocket_lightning_rod" }
+				item: { count: 1, id: "nameless_trinkets:rage_mind" }
 				type: "item"
 			}]
 			x: 59.0d
@@ -9528,77 +9502,77 @@
 		}
 		{
 			icon: {
-				id: "pastel:glow_vision_goggles"
-			}
-			id: "4C000000000002DD"
-			tasks: [{
-				id: "4C000000010002DD"
-				item: { count: 1, id: "pastel:glow_vision_goggles" }
-				type: "item"
-			}]
-			x: 60.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:rage_mind"
-			}
-			id: "4C000000000002DE"
-			tasks: [{
-				id: "4C000000010002DE"
-				item: { count: 1, id: "nameless_trinkets:rage_mind" }
-				type: "item"
-			}]
-			x: 61.0d
-			y: 28.0d
-		}
-		{
-			icon: {
 				id: "hooked:custom_hook"
 			}
-			id: "4C000000000002DF"
+			id: "4C000000000002DB"
 			tasks: [{
-				id: "4C000000010002DF"
+				id: "4C000000010002DB"
 				item: { count: 1, id: "hooked:custom_hook" }
 				type: "item"
 			}]
-			x: 66.0d
+			x: 64.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "hooked:diamond_hook"
 			}
-			id: "4C000000000002E0"
+			id: "4C000000000002DC"
 			tasks: [{
-				id: "4C000000010002E0"
+				id: "4C000000010002DC"
 				item: { count: 1, id: "hooked:diamond_hook" }
 				type: "item"
 			}]
-			x: 67.0d
+			x: 65.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "hooked:ender_hook"
 			}
-			id: "4C000000000002E1"
+			id: "4C000000000002DD"
 			tasks: [{
-				id: "4C000000010002E1"
+				id: "4C000000010002DD"
 				item: { count: 1, id: "hooked:ender_hook" }
 				type: "item"
 			}]
-			x: 68.0d
+			x: 66.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "hooked:iron_hook"
 			}
-			id: "4C000000000002E2"
+			id: "4C000000000002DE"
 			tasks: [{
-				id: "4C000000010002E2"
+				id: "4C000000010002DE"
 				item: { count: 1, id: "hooked:iron_hook" }
+				type: "item"
+			}]
+			x: 64.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "hooked:redstone_hook"
+			}
+			id: "4C000000000002DF"
+			tasks: [{
+				id: "4C000000010002DF"
+				item: { count: 1, id: "hooked:redstone_hook" }
+				type: "item"
+			}]
+			x: 65.0d
+			y: 28.0d
+		}
+		{
+			icon: {
+				id: "hooked:wood_hook"
+			}
+			id: "4C000000000002E0"
+			tasks: [{
+				id: "4C000000010002E0"
+				item: { count: 1, id: "hooked:wood_hook" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -9606,37 +9580,11 @@
 		}
 		{
 			icon: {
-				id: "hooked:redstone_hook"
-			}
-			id: "4C000000000002E3"
-			tasks: [{
-				id: "4C000000010002E3"
-				item: { count: 1, id: "hooked:redstone_hook" }
-				type: "item"
-			}]
-			x: 67.0d
-			y: 28.0d
-		}
-		{
-			icon: {
-				id: "hooked:wood_hook"
-			}
-			id: "4C000000000002E4"
-			tasks: [{
-				id: "4C000000010002E4"
-				item: { count: 1, id: "hooked:wood_hook" }
-				type: "item"
-			}]
-			x: 68.0d
-			y: 28.0d
-		}
-		{
-			icon: {
 				id: "discerning_the_eldritch:frostbourne_sheath"
 			}
-			id: "4C000000000002E5"
+			id: "4C000000000002E1"
 			tasks: [{
-				id: "4C000000010002E5"
+				id: "4C000000010002E1"
 				item: { count: 1, id: "discerning_the_eldritch:frostbourne_sheath" }
 				type: "item"
 			}]
@@ -9647,9 +9595,9 @@
 			icon: {
 				id: "hazennstuff:galvanized_sheath"
 			}
-			id: "4C000000000002E6"
+			id: "4C000000000002E2"
 			tasks: [{
-				id: "4C000000010002E6"
+				id: "4C000000010002E2"
 				item: { count: 1, id: "hazennstuff:galvanized_sheath" }
 				type: "item"
 			}]
@@ -9660,9 +9608,9 @@
 			icon: {
 				id: "discerning_the_eldritch:pyrium_sheath"
 			}
-			id: "4C000000000002E7"
+			id: "4C000000000002E3"
 			tasks: [{
-				id: "4C000000010002E7"
+				id: "4C000000010002E3"
 				item: { count: 1, id: "discerning_the_eldritch:pyrium_sheath" }
 				type: "item"
 			}]
@@ -9673,9 +9621,9 @@
 			icon: {
 				id: "hazennstuff:scroll_sheath"
 			}
-			id: "4C000000000002E8"
+			id: "4C000000000002E4"
 			tasks: [{
-				id: "4C000000010002E8"
+				id: "4C000000010002E4"
 				item: { count: 1, id: "hazennstuff:scroll_sheath" }
 				type: "item"
 			}]
@@ -9686,9 +9634,9 @@
 			icon: {
 				id: "discerning_the_eldritch:razor_sheath"
 			}
-			id: "4C000000000002E9"
+			id: "4C000000000002E5"
 			tasks: [{
-				id: "4C000000010002E9"
+				id: "4C000000010002E5"
 				item: { count: 1, id: "discerning_the_eldritch:razor_sheath" }
 				type: "item"
 			}]
@@ -9699,9 +9647,9 @@
 			icon: {
 				id: "aces_spell_utils:example_sheath"
 			}
-			id: "4C000000000002EA"
+			id: "4C000000000002E6"
 			tasks: [{
-				id: "4C000000010002EA"
+				id: "4C000000010002E6"
 				item: { count: 1, id: "aces_spell_utils:example_sheath" }
 				type: "item"
 			}]
@@ -9712,9 +9660,9 @@
 			icon: {
 				id: "malum:elaborate_brooch"
 			}
-			id: "4C000000000002EB"
+			id: "4C000000000002E7"
 			tasks: [{
-				id: "4C000000010002EB"
+				id: "4C000000010002E7"
 				item: { count: 1, id: "malum:elaborate_brooch" }
 				type: "item"
 			}]
@@ -9725,9 +9673,9 @@
 			icon: {
 				id: "malum:glass_brooch"
 			}
-			id: "4C000000000002EC"
+			id: "4C000000000002E8"
 			tasks: [{
-				id: "4C000000010002EC"
+				id: "4C000000010002E8"
 				item: { count: 1, id: "malum:glass_brooch" }
 				type: "item"
 			}]
@@ -9738,9 +9686,9 @@
 			icon: {
 				id: "malum:gluttonous_brooch"
 			}
-			id: "4C000000000002ED"
+			id: "4C000000000002E9"
 			tasks: [{
-				id: "4C000000010002ED"
+				id: "4C000000010002E9"
 				item: { count: 1, id: "malum:gluttonous_brooch" }
 				type: "item"
 			}]
@@ -9751,9 +9699,9 @@
 			icon: {
 				id: "malstone:kill_the_gods"
 			}
-			id: "4C000000000002EE"
+			id: "4C000000000002EA"
 			tasks: [{
-				id: "4C000000010002EE"
+				id: "4C000000010002EA"
 				item: { count: 1, id: "malstone:kill_the_gods" }
 				type: "item"
 			}]
@@ -9764,9 +9712,9 @@
 			icon: {
 				id: "malum:runic_brooch"
 			}
-			id: "4C000000000002EF"
+			id: "4C000000000002EB"
 			tasks: [{
-				id: "4C000000010002EF"
+				id: "4C000000010002EB"
 				item: { count: 1, id: "malum:runic_brooch" }
 				type: "item"
 			}]
@@ -9777,9 +9725,9 @@
 			icon: {
 				id: "l2hostility:flaming_thorn"
 			}
-			id: "4C000000000002F0"
+			id: "4C000000000002EC"
 			tasks: [{
-				id: "4C000000010002F0"
+				id: "4C000000010002EC"
 				item: { count: 1, id: "l2hostility:flaming_thorn" }
 				type: "item"
 			}]
@@ -9790,9 +9738,9 @@
 			icon: {
 				id: "flightring:flight_ring"
 			}
-			id: "4C000000000002F1"
+			id: "4C000000000002ED"
 			tasks: [{
-				id: "4C000000010002F1"
+				id: "4C000000010002ED"
 				item: { count: 1, id: "flightring:flight_ring" }
 				type: "item"
 			}]
@@ -9803,9 +9751,9 @@
 			icon: {
 				id: "l2hostility:imagine_breaker"
 			}
-			id: "4C000000000002F2"
+			id: "4C000000000002EE"
 			tasks: [{
-				id: "4C000000010002F2"
+				id: "4C000000010002EE"
 				item: { count: 1, id: "l2hostility:imagine_breaker" }
 				type: "item"
 			}]
@@ -9816,9 +9764,9 @@
 			icon: {
 				id: "l2hostility:infinity_glove"
 			}
-			id: "4C000000000002F3"
+			id: "4C000000000002EF"
 			tasks: [{
-				id: "4C000000010002F3"
+				id: "4C000000010002EF"
 				item: { count: 1, id: "l2hostility:infinity_glove" }
 				type: "item"
 			}]
@@ -9829,9 +9777,9 @@
 			icon: {
 				id: "l2hostility:platinum_star"
 			}
-			id: "4C000000000002F4"
+			id: "4C000000000002F0"
 			tasks: [{
-				id: "4C000000010002F4"
+				id: "4C000000010002F0"
 				item: { count: 1, id: "l2hostility:platinum_star" }
 				type: "item"
 			}]
@@ -9842,9 +9790,9 @@
 			icon: {
 				id: "nameless_trinkets:amphibious_hands"
 			}
-			id: "4C000000000002F5"
+			id: "4C000000000002F1"
 			tasks: [{
-				id: "4C000000010002F5"
+				id: "4C000000010002F1"
 				item: { count: 1, id: "nameless_trinkets:amphibious_hands" }
 				type: "item"
 			}]
@@ -9855,9 +9803,9 @@
 			icon: {
 				id: "nameless_trinkets:electric_paddle"
 			}
-			id: "4C000000000002F6"
+			id: "4C000000000002F2"
 			tasks: [{
-				id: "4C000000010002F6"
+				id: "4C000000010002F2"
 				item: { count: 1, id: "nameless_trinkets:electric_paddle" }
 				type: "item"
 			}]
@@ -9868,9 +9816,9 @@
 			icon: {
 				id: "nameless_trinkets:light_gloves"
 			}
-			id: "4C000000000002F7"
+			id: "4C000000000002F3"
 			tasks: [{
-				id: "4C000000010002F7"
+				id: "4C000000010002F3"
 				item: { count: 1, id: "nameless_trinkets:light_gloves" }
 				type: "item"
 			}]
@@ -9881,9 +9829,9 @@
 			icon: {
 				id: "nameless_trinkets:titans_mark"
 			}
-			id: "4C000000000002F8"
+			id: "4C000000000002F4"
 			tasks: [{
-				id: "4C000000010002F8"
+				id: "4C000000010002F4"
 				item: { count: 1, id: "nameless_trinkets:titans_mark" }
 				type: "item"
 			}]
@@ -9894,9 +9842,9 @@
 			icon: {
 				id: "nameless_trinkets:callus"
 			}
-			id: "4C000000000002F9"
+			id: "4C000000000002F5"
 			tasks: [{
-				id: "4C000000010002F9"
+				id: "4C000000010002F5"
 				item: { count: 1, id: "nameless_trinkets:callus" }
 				type: "item"
 			}]
@@ -9907,9 +9855,9 @@
 			icon: {
 				id: "nameless_trinkets:fragile_cloud"
 			}
-			id: "4C000000000002FA"
+			id: "4C000000000002F6"
 			tasks: [{
-				id: "4C000000010002FA"
+				id: "4C000000010002F6"
 				item: { count: 1, id: "nameless_trinkets:fragile_cloud" }
 				type: "item"
 			}]
@@ -9920,9 +9868,9 @@
 			icon: {
 				id: "nameless_trinkets:speed_force"
 			}
-			id: "4C000000000002FB"
+			id: "4C000000000002F7"
 			tasks: [{
-				id: "4C000000010002FB"
+				id: "4C000000010002F7"
 				item: { count: 1, id: "nameless_trinkets:speed_force" }
 				type: "item"
 			}]
@@ -9933,9 +9881,9 @@
 			icon: {
 				id: "nameless_trinkets:spider_legs"
 			}
-			id: "4C000000000002FC"
+			id: "4C000000000002F8"
 			tasks: [{
-				id: "4C000000010002FC"
+				id: "4C000000010002F8"
 				item: { count: 1, id: "nameless_trinkets:spider_legs" }
 				type: "item"
 			}]
@@ -9946,9 +9894,9 @@
 			icon: {
 				id: "discerning_the_eldritch:rift_ripper_emblem"
 			}
-			id: "4C000000000002FD"
+			id: "4C000000000002F9"
 			tasks: [{
-				id: "4C000000010002FD"
+				id: "4C000000010002F9"
 				item: { count: 1, id: "discerning_the_eldritch:rift_ripper_emblem" }
 				type: "item"
 			}]
@@ -9959,9 +9907,9 @@
 			icon: {
 				id: "discerning_the_eldritch:ironbound_feather"
 			}
-			id: "4C000000000002FE"
+			id: "4C000000000002FA"
 			tasks: [{
-				id: "4C000000010002FE"
+				id: "4C000000010002FA"
 				item: { count: 1, id: "discerning_the_eldritch:ironbound_feather" }
 				type: "item"
 			}]
@@ -9972,9 +9920,9 @@
 			icon: {
 				id: "discerning_the_eldritch:kings_effigy"
 			}
-			id: "4C000000000002FF"
+			id: "4C000000000002FB"
 			tasks: [{
-				id: "4C000000010002FF"
+				id: "4C000000010002FB"
 				item: { count: 1, id: "discerning_the_eldritch:kings_effigy" }
 				type: "item"
 			}]
@@ -9985,9 +9933,9 @@
 			icon: {
 				id: "pastel:azuresque_dike_core"
 			}
-			id: "4C00000000000300"
+			id: "4C000000000002FC"
 			tasks: [{
-				id: "4C00000001000300"
+				id: "4C000000010002FC"
 				item: { count: 1, id: "pastel:azuresque_dike_core" }
 				type: "item"
 			}]
@@ -9998,9 +9946,9 @@
 			icon: {
 				id: "pastel:gleaming_pin"
 			}
-			id: "4C00000000000301"
+			id: "4C000000000002FD"
 			tasks: [{
-				id: "4C00000001000301"
+				id: "4C000000010002FD"
 				item: { count: 1, id: "pastel:gleaming_pin" }
 				type: "item"
 			}]
@@ -10011,9 +9959,9 @@
 			icon: {
 				id: "pastel:radiance_pin"
 			}
-			id: "4C00000000000302"
+			id: "4C000000000002FE"
 			tasks: [{
-				id: "4C00000001000302"
+				id: "4C000000010002FE"
 				item: { count: 1, id: "pastel:radiance_pin" }
 				type: "item"
 			}]
@@ -10024,9 +9972,9 @@
 			icon: {
 				id: "malstone:corpse_cauldron"
 			}
-			id: "4C00000000000303"
+			id: "4C000000000002FF"
 			tasks: [{
-				id: "4C00000001000303"
+				id: "4C000000010002FF"
 				item: { count: 1, id: "malstone:corpse_cauldron" }
 				type: "item"
 			}]
@@ -10037,9 +9985,9 @@
 			icon: {
 				id: "malstone:extremely_dead"
 			}
-			id: "4C00000000000304"
+			id: "4C00000000000300"
 			tasks: [{
-				id: "4C00000001000304"
+				id: "4C00000001000300"
 				item: { count: 1, id: "malstone:extremely_dead" }
 				type: "item"
 			}]
@@ -10050,9 +9998,9 @@
 			icon: {
 				id: "malstone:weeping_immortal"
 			}
-			id: "4C00000000000305"
+			id: "4C00000000000301"
 			tasks: [{
-				id: "4C00000001000305"
+				id: "4C00000001000301"
 				item: { count: 1, id: "malstone:weeping_immortal" }
 				type: "item"
 			}]
@@ -10061,12 +10009,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:arbitrium_wings"
+				id: "mythsandlegends:antique_emblem"
 			}
-			id: "4C00000000000306"
+			id: "4C00000000000302"
 			tasks: [{
-				id: "4C00000001000306"
-				item: { count: 1, id: "hazennstuff:arbitrium_wings" }
+				id: "4C00000001000302"
+				item: { count: 1, id: "mythsandlegends:antique_emblem" }
 				type: "item"
 			}]
 			x: 48.0d
@@ -10074,12 +10022,12 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:angel_wings"
+				id: "discerning_the_eldritch:casters_mantle"
 			}
-			id: "4C00000000000307"
+			id: "4C00000000000303"
 			tasks: [{
-				id: "4C00000001000307"
-				item: { count: 1, id: "hazennstuff:angel_wings" }
+				id: "4C00000001000303"
+				item: { count: 1, id: "discerning_the_eldritch:casters_mantle" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -10087,25 +10035,25 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:fallen_angel_wings"
+				id: "nameless_trinkets:ethereal_wings"
 			}
-			id: "4C00000000000308"
+			id: "4C00000000000304"
 			tasks: [{
-				id: "4C00000001000308"
-				item: { count: 1, id: "hazennstuff:fallen_angel_wings" }
+				id: "4C00000001000304"
+				item: { count: 1, id: "nameless_trinkets:ethereal_wings" }
 				type: "item"
 			}]
-			x: 50.0d
+			x: 53.0d
 			y: 33.0d
 		}
 		{
 			icon: {
-				id: "mythsandlegends:antique_emblem"
+				id: "nameless_trinkets:shrinking_veil"
 			}
-			id: "4C00000000000309"
+			id: "4C00000000000305"
 			tasks: [{
-				id: "4C00000001000309"
-				item: { count: 1, id: "mythsandlegends:antique_emblem" }
+				id: "4C00000001000305"
+				item: { count: 1, id: "nameless_trinkets:shrinking_veil" }
 				type: "item"
 			}]
 			x: 54.0d
@@ -10113,25 +10061,25 @@
 		}
 		{
 			icon: {
-				id: "discerning_the_eldritch:casters_mantle"
+				id: "nameless_trinkets:cracked_crown"
 			}
-			id: "4C0000000000030A"
+			id: "4C00000000000306"
 			tasks: [{
-				id: "4C0000000100030A"
-				item: { count: 1, id: "discerning_the_eldritch:casters_mantle" }
+				id: "4C00000001000306"
+				item: { count: 1, id: "nameless_trinkets:cracked_crown" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 58.0d
 			y: 33.0d
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:ethereal_wings"
+				id: "nameless_trinkets:gods_crown"
 			}
-			id: "4C0000000000030B"
+			id: "4C00000000000307"
 			tasks: [{
-				id: "4C0000000100030B"
-				item: { count: 1, id: "nameless_trinkets:ethereal_wings" }
+				id: "4C00000001000307"
+				item: { count: 1, id: "nameless_trinkets:gods_crown" }
 				type: "item"
 			}]
 			x: 59.0d
@@ -10139,25 +10087,25 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:shrinking_veil"
+				id: "pastel:artists_palette"
 			}
-			id: "4C0000000000030C"
+			id: "4C00000000000308"
 			tasks: [{
-				id: "4C0000000100030C"
-				item: { count: 1, id: "nameless_trinkets:shrinking_veil" }
+				id: "4C00000001000308"
+				item: { count: 1, id: "pastel:artists_palette" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 63.0d
 			y: 33.0d
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:cracked_crown"
+				id: "pastel:pigment_palette"
 			}
-			id: "4C0000000000030D"
+			id: "4C00000000000309"
 			tasks: [{
-				id: "4C0000000100030D"
-				item: { count: 1, id: "nameless_trinkets:cracked_crown" }
+				id: "4C00000001000309"
+				item: { count: 1, id: "pastel:pigment_palette" }
 				type: "item"
 			}]
 			x: 64.0d
@@ -10165,25 +10113,25 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:gods_crown"
+				id: "cataclysm_spellbooks:adapter"
 			}
-			id: "4C0000000000030E"
+			id: "4C0000000000030A"
 			tasks: [{
-				id: "4C0000000100030E"
-				item: { count: 1, id: "nameless_trinkets:gods_crown" }
+				id: "4C0000000100030A"
+				item: { count: 1, id: "cataclysm_spellbooks:adapter" }
 				type: "item"
 			}]
-			x: 65.0d
+			x: 68.0d
 			y: 33.0d
 		}
 		{
 			icon: {
-				id: "pastel:artists_palette"
+				id: "cataclysm:unbreakable_skull"
 			}
-			id: "4C0000000000030F"
+			id: "4C0000000000030B"
 			tasks: [{
-				id: "4C0000000100030F"
-				item: { count: 1, id: "pastel:artists_palette" }
+				id: "4C0000000100030B"
+				item: { count: 1, id: "cataclysm:unbreakable_skull" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -10191,25 +10139,12 @@
 		}
 		{
 			icon: {
-				id: "pastel:pigment_palette"
+				id: "hostilenetworks:deep_learner"
 			}
-			id: "4C00000000000310"
+			id: "4C0000000000030C"
 			tasks: [{
-				id: "4C00000001000310"
-				item: { count: 1, id: "pastel:pigment_palette" }
-				type: "item"
-			}]
-			x: 70.0d
-			y: 33.0d
-		}
-		{
-			icon: {
-				id: "cataclysm_spellbooks:adapter"
-			}
-			id: "4C00000000000311"
-			tasks: [{
-				id: "4C00000001000311"
-				item: { count: 1, id: "cataclysm_spellbooks:adapter" }
+				id: "4C0000000100030C"
+				item: { count: 1, id: "hostilenetworks:deep_learner" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -10217,25 +10152,12 @@
 		}
 		{
 			icon: {
-				id: "cataclysm:unbreakable_skull"
+				id: "anvilcraft:ionocraft_backpack"
 			}
-			id: "4C00000000000312"
+			id: "4C0000000000030D"
 			tasks: [{
-				id: "4C00000001000312"
-				item: { count: 1, id: "cataclysm:unbreakable_skull" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: 38.0d
-		}
-		{
-			icon: {
-				id: "cataclysm:belt_of_beginner"
-			}
-			id: "4C00000000000313"
-			tasks: [{
-				id: "4C00000001000313"
-				item: { count: 1, id: "cataclysm:belt_of_beginner" }
+				id: "4C0000000100030D"
+				item: { count: 1, id: "anvilcraft:ionocraft_backpack" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -10243,25 +10165,12 @@
 		}
 		{
 			icon: {
-				id: "cataclysm:belt_of_monstrosity"
+				id: "compactmachines:personal_shrinking_device"
 			}
-			id: "4C00000000000314"
+			id: "4C0000000000030E"
 			tasks: [{
-				id: "4C00000001000314"
-				item: { count: 1, id: "cataclysm:belt_of_monstrosity" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 38.0d
-		}
-		{
-			icon: {
-				id: "hostilenetworks:deep_learner"
-			}
-			id: "4C00000000000315"
-			tasks: [{
-				id: "4C00000001000315"
-				item: { count: 1, id: "hostilenetworks:deep_learner" }
+				id: "4C0000000100030E"
+				item: { count: 1, id: "compactmachines:personal_shrinking_device" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -10269,12 +10178,12 @@
 		}
 		{
 			icon: {
-				id: "anvilcraft:ionocraft_backpack"
+				id: "mekanism:portable_qio_dashboard"
 			}
-			id: "4C00000000000316"
+			id: "4C0000000000030F"
 			tasks: [{
-				id: "4C00000001000316"
-				item: { count: 1, id: "anvilcraft:ionocraft_backpack" }
+				id: "4C0000000100030F"
+				item: { count: 1, id: "mekanism:portable_qio_dashboard" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -10282,54 +10191,15 @@
 		}
 		{
 			icon: {
-				id: "compactmachines:personal_shrinking_device"
-			}
-			id: "4C00000000000317"
-			tasks: [{
-				id: "4C00000001000317"
-				item: { count: 1, id: "compactmachines:personal_shrinking_device" }
-				type: "item"
-			}]
-			x: 20.0d
-			y: 38.0d
-		}
-		{
-			icon: {
-				id: "mekanism:portable_qio_dashboard"
-			}
-			id: "4C00000000000318"
-			tasks: [{
-				id: "4C00000001000318"
-				item: { count: 1, id: "mekanism:portable_qio_dashboard" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: 38.0d
-		}
-		{
-			icon: {
-				id: "cataclysm:ring_of_grudged"
-			}
-			id: "4C00000000000319"
-			tasks: [{
-				id: "4C00000001000319"
-				item: { count: 1, id: "cataclysm:ring_of_grudged" }
-				type: "item"
-			}]
-			x: 30.0d
-			y: 38.0d
-		}
-		{
-			icon: {
 				id: "mekanism:portable_teleporter"
 			}
-			id: "4C0000000000031A"
+			id: "4C00000000000310"
 			tasks: [{
-				id: "4C0000000100031A"
+				id: "4C00000001000310"
 				item: { count: 1, id: "mekanism:portable_teleporter" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 20.0d
 			y: 38.0d
 		}
 	]

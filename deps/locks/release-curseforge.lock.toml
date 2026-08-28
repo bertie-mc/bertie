@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "8912d240948564fa270e32a382175fc616bbfa9c7b3012fde78b170bcd07d05f"
+inputs-hash = "aa524b0f11548f475b32363630ed99e247604c4ce5335bccc4100484c1252ba5"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -296,10 +296,6 @@ mod = "curseforge:1434118:7685857"
 [components."crabbers-delight"]
 any = "curseforge:892827:8006190"
 mod = "curseforge:892827:8006190"
-
-[components."crafting-on-a-stick"]
-any = "curseforge:577850:7394335"
-mod = "curseforge:577850:7394335"
 
 [components."crafttweaker"]
 any = "curseforge:239197:7772819"
@@ -7444,27 +7440,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:577850:7394335"]
-name = "crafting-on-a-stick"
-component = "crafting-on-a-stick"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "crafting-on-a-stick-577850"
-version = "7394335"
-filename = "crafting_on_a_stick-1.21.0.4.jar"
-project-id = 577850
-slug = "crafting-on-a-stick"
-file-id = 7394335
-provides = ["crafting_on_a_stick"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:579484:8127023"]
 name = "cognition"
