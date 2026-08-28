@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "coo-particles-fix"
+kind = "neoforge-mod"
+gradle-project = ":mods:coo-particles-fix"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

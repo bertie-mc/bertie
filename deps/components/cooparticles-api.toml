@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "poJQVcIe"
+version-id = "2fPzW7KM"
+filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"

@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "aec3886b164ec07a97cf6647a0a96b53fb33005341e8f52305ed42730f88adbe"
+inputs-hash = "f1e7f5fa332d52e36d9bc46e96265abd13d12c112488d2abc0d170ec5f279e3c"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -284,6 +284,10 @@ any = "modrinth:HVnmMxH1:yCCduG44"
 [components."controlling"]
 any = "modrinth:xv94TkTM:FaNppCJJ"
 mod = "modrinth:xv94TkTM:FaNppCJJ"
+
+[components."cooparticles-api"]
+any = "modrinth:poJQVcIe:2fPzW7KM"
+mod = "modrinth:poJQVcIe:2fPzW7KM"
 
 [components."cosmetic-armor-reworked-forked"]
 any = "modrinth:6cpT8CUC:U6kExSSz"
@@ -1442,6 +1446,10 @@ mod = "modrinth:1sxtqgoT:lea7gSoE"
 [components."useful-railroads"]
 any = "modrinth:S0xj5NHG:5cRpZ5wv"
 mod = "modrinth:S0xj5NHG:5cRpZ5wv"
+
+[components."usefulmagic"]
+any = "modrinth:T5YpEgSg:tkuwx9YJ"
+mod = "modrinth:T5YpEgSg:tkuwx9YJ"
 
 [components."valhelsia-core"]
 any = "modrinth:HsdNFinx:cttRekq9"
@@ -6420,6 +6428,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:T5YpEgSg:tkuwx9YJ"]
+name = "usefulmagic"
+component = "usefulmagic"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "T5YpEgSg"
+version = "tkuwx9YJ"
+filename = "UsefulMagic-NeoForge-1.21.1-3.1.1.jar"
+project-id = "T5YpEgSg"
+version-id = "tkuwx9YJ"
+provides = ["usefulmagic"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.9.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:poJQVcIe:2fPzW7KM", "mod-id" = "cooparticlesapi", "version-range" = "[2.5.5.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:TBVbrjYL:iLp3LKvw"]
 name = "diamond-in-the-rough"
 component = "diamond-in-the-rough"
@@ -9850,6 +9878,26 @@ provides = ["sg_economy"]
 bundled-provides = []
 required = []
 optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:poJQVcIe:2fPzW7KM"]
+name = "cooparticlesapi"
+component = "cooparticles-api"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "poJQVcIe"
+version = "2fPzW7KM"
+filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"
+project-id = "poJQVcIe"
+version-id = "2fPzW7KM"
+provides = ["cooparticlesapi"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.7.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
 incompatible = []
 bundled = []
 integrations = []

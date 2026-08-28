@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (475)
+## Mods (477)
 
 | Mod |
 |---|
@@ -94,6 +94,7 @@
 | `compactmachinespor` |
 | `complementary-reimagined` |
 | `controlling` |
+| `cooparticlesapi` |
 | `corgilib` |
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |
@@ -439,6 +440,7 @@
 | `uranus` |
 | `urkaz-moon-tools` |
 | `useful-railroads` |
+| `usefulmagic` |
 | `valhelsia-core` |
 | `vanillabackport` |
 | `vanity-core` |
@@ -480,7 +482,7 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (31)
+## Ours (32)
 
 | Mod |
 |---|
@@ -512,6 +514,7 @@
 | `rustic-engineer-fix` |
 | `screenshot-copy` |
 | `short-circuit-fix` |
+| `cooparticlesfix` |
 | `voidfog` |
 | `withered-hearts` |
 | `withering-waver` |
