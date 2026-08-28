@@ -30,11 +30,9 @@ public final class MagicMirrorCooldownHandler {
     public static final int COOLDOWN_TICKS = 60 * 60 * 20;
 
     private static final List<ResourceLocation> MIRRORS = List.of(
-            ResourceLocation.parse("terra_curio:magic_mirror"),
-            ResourceLocation.parse("terra_curio:cell_phone"));
+            ResourceLocation.parse("terra_curio:magic_mirror"), ResourceLocation.parse("terra_curio:cell_phone"));
 
-    private MagicMirrorCooldownHandler() {
-    }
+    private MagicMirrorCooldownHandler() {}
 
     @SubscribeEvent
     public static void onUseFinish(LivingEntityUseItemEvent.Finish event) {
