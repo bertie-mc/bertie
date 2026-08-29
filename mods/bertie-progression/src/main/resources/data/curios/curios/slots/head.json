@@ -1,9 +1,0 @@
-{
-  "icon": "curios:slot/empty_head_slot",
-  "order": 40,
-  "validators": [
-    "curios:tag"
-  ],
-  "size": 0,
-  "operation": "SET"
-}

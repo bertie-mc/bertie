@@ -1,7 +1,0 @@
-{
-  "size": 12,
-  "operation": "SET",
-  "validators": [
-    "curios:tag"
-  ]
-}

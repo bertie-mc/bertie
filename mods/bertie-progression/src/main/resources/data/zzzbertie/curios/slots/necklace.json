@@ -1,0 +1,10 @@
+{
+  "add_cosmetic": false,
+  "size": 1,
+  "validators": [
+    "curios:tag"
+  ],
+  "icon": "curios:slot/empty_necklace_slot",
+  "order": 20,
+  "operation": "SET"
+}

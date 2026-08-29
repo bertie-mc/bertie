@@ -1,0 +1,8 @@
+{
+  "add_cosmetic": false,
+  "icon": "nameless_trinkets:slot/trinket_slot",
+  "order": 909,
+  "size": 0,
+  "operation": "SET",
+  "validators": []
+}

@@ -1,9 +1,0 @@
-{
-  "icon": "curios:slot/empty_belt_slot",
-  "order": 60,
-  "validators": [
-    "curios:tag"
-  ],
-  "size": 1,
-  "operation": "SET"
-}

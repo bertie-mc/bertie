@@ -1,9 +1,0 @@
-{
-  "add_cosmetic": true,
-  "drop_rule": "DEFAULT",
-  "icon": "aces_spell_utils:slot/sheath",
-  "operation": "SET",
-  "order": 6,
-  "render_toggle": true,
-  "size": 0
-}

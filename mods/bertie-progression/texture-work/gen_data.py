@@ -1529,12 +1529,42 @@ def _merge_slot(original, spec, accessories):
     return out
 
 
+# Everything goes under one namespace that sorts after every mod id in the pack. Two ordering
+# rules were beating the earlier attempts at once: two packs holding the SAME path are resolved by
+# mod id, so our copy of another mod's file is simply shadowed by theirs; and slot files from
+# DIFFERENT namespaces are merged in namespace order, where `bertieprogression` sits ahead of
+# curios, nameless_trinkets, terra_curio and most of the rest. A namespace nobody else writes,
+# sorting last, wins on both counts.
+_LAST = "zzzbertie"
+# Slots berlord did not place still need an explicit number, or they fall back on their own mod's
+# and jump the queue. The ones that are still open sit just after `shoes`, so the run he did place
+# stays intact and teleporter really is last; the closed ones are parked far below.
+_TAIL = sorted(k for k, v in _SLOT_PLAN.items() if "order" not in v)
+# "size" only appears in the plan for slots this pack sets deliberately, so a slot that is merely
+# unplaced keeps whatever its own mod gave it - several of them are size 0 on purpose and open when
+# you find the item that grants them.
+for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") != 0]):
+    _SLOT_PLAN[_k]["order"] = 101 + _i
+for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
+    _SLOT_PLAN[_k]["order"] = 900 + _i
+    _SLOT_PLAN[_k]["validators"] = []          # a slot this pack closed validates nothing
+
 for _slot, _spec in sorted(_SLOT_PLAN.items()):
     _where = _SLOT_FILES[_slot]
-    for _ns, _orig in sorted(_where.get("curios", {}).items()):
-        write(f"data/{_ns}/curios/slots/{_slot}.json", _merge_slot(_orig, _spec, False))
-    for _ns, _orig in sorted(_where.get("accessories", {}).items()):
-        write(f"data/{_ns}/accessories/slot/{_slot}.json", _merge_slot(_orig, _spec, True))
+    _cur = dict(sorted(_where.get("curios", {}).items()))
+    _acc = dict(sorted(_where.get("accessories", {}).items()))
+    _base = {}
+    for _o in _cur.values():
+        _base.update(_o)
+    _d = _merge_slot(_base, _spec, False)
+    if _slot == "hat" and "icon" not in _d:       # hat is the head slot here, so it wears its face
+        _d["icon"] = "curios:slot/empty_head_slot"
+    write(f"data/{_LAST}/curios/slots/{_slot}.json", _d)
+    if _slot in _ACC_SLOTS:
+        _base = {}
+        for _o in _acc.values():
+            _base.update(_o)
+        write(f"data/{_LAST}/accessories/slot/{_slot}.json", _merge_slot(_base, _spec, True))
 
 slot_tag("belt",
       {"replace": False, "values": [
@@ -3623,7 +3653,7 @@ for _blk in io.open(_TOML, encoding="utf-8").read().split("[[dependencies.")[1:]
     if _m and 'ordering="AFTER"' in _blk:
         _declared.add(_m.group(1))
 # minecraft and neoforge always load first; `c` and `forge` are shared tag namespaces nobody owns.
-_own = {MODID, "minecraft", "neoforge", "c", "forge"}
+_own = {MODID, "minecraft", "neoforge", "c", "forge", "zzzbertie"}
 _overridden = {p.split("/")[1] for p in written if p.startswith("data/") and "/" in p[5:]}
 _undeclared = sorted(_overridden - _declared - _own)
 if _undeclared:

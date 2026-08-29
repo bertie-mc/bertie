@@ -1,8 +1,0 @@
-{
-  "operation": "SET",
-  "size": 1,
-  "validators": [
-    "kaleidoscope_doll:doll_item"
-  ],
-  "order": 10
-}

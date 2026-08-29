@@ -1,0 +1,8 @@
+{
+  "add_cosmetic": true,
+  "icon": "curios:slot/empty_head_slot",
+  "order": 904,
+  "validators": [],
+  "size": 0,
+  "operation": "SET"
+}
