@@ -7955,518 +7955,531 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:blindfold"
+				id: "nameless_trinkets:ethereal_wings"
 			}
 			id: "4C00000000000264"
 			tasks: [{
 				id: "4C00000001000264"
-				item: { count: 1, id: "nameless_trinkets:blindfold" }
+				item: { count: 1, id: "nameless_trinkets:ethereal_wings" }
 				type: "item"
 			}]
 			x: 55.0d
+			y: 17.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:explosion_proof_jacket"
+			}
+			id: "4C00000000000265"
+			tasks: [{
+				id: "4C00000001000265"
+				item: { count: 1, id: "nameless_trinkets:explosion_proof_jacket" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 17.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:shrinking_veil"
+			}
+			id: "4C00000000000266"
+			tasks: [{
+				id: "4C00000001000266"
+				item: { count: 1, id: "nameless_trinkets:shrinking_veil" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 17.0d
+		}
+		{
+			icon: {
+				id: "armageddon_mod:cloak_of_the_abyss"
+			}
+			id: "4C00000000000267"
+			tasks: [{
+				id: "4C00000001000267"
+				item: { count: 1, id: "armageddon_mod:cloak_of_the_abyss" }
+				type: "item"
+			}]
+			x: 58.0d
+			y: 17.0d
+		}
+		{
+			icon: {
+				id: "armageddon_mod:hunter_cloak"
+			}
+			id: "4C00000000000268"
+			tasks: [{
+				id: "4C00000001000268"
+				item: { count: 1, id: "armageddon_mod:hunter_cloak" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "terra_curio:bee_cloak"
+			}
+			id: "4C00000000000269"
+			tasks: [{
+				id: "4C00000001000269"
+				item: { count: 1, id: "terra_curio:bee_cloak" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "terra_curio:star_cloak"
+			}
+			id: "4C0000000000026A"
+			tasks: [{
+				id: "4C0000000100026A"
+				item: { count: 1, id: "terra_curio:star_cloak" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "discerning_the_eldritch:casters_mantle"
+			}
+			id: "4C0000000000026B"
+			tasks: [{
+				id: "4C0000000100026B"
+				item: { count: 1, id: "discerning_the_eldritch:casters_mantle" }
+				type: "item"
+			}]
+			x: 58.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "l2hostility:triple_strip_cape"
+			}
+			id: "4C0000000000026C"
+			tasks: [{
+				id: "4C0000000100026C"
+				item: { count: 1, id: "l2hostility:triple_strip_cape" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:antique_emblem"
+			}
+			id: "4C0000000000026D"
+			tasks: [{
+				id: "4C0000000100026D"
+				item: { count: 1, id: "mythsandlegends:antique_emblem" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 19.0d
+		}
+		{
+			icon: {
+				id: "nameless_trinkets:blindfold"
+			}
+			id: "4C0000000000026E"
+			tasks: [{
+				id: "4C0000000100026E"
+				item: { count: 1, id: "nameless_trinkets:blindfold" }
+				type: "item"
+			}]
+			x: 62.0d
 			y: 17.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:creeper_sense"
 			}
-			id: "4C00000000000265"
+			id: "4C0000000000026F"
 			tasks: [{
-				id: "4C00000001000265"
+				id: "4C0000000100026F"
 				item: { count: 1, id: "nameless_trinkets:creeper_sense" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 63.0d
 			y: 17.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:dragons_eye"
 			}
-			id: "4C00000000000266"
+			id: "4C00000000000270"
 			tasks: [{
-				id: "4C00000001000266"
+				id: "4C00000001000270"
 				item: { count: 1, id: "nameless_trinkets:dragons_eye" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 64.0d
 			y: 17.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:ghast_eye"
 			}
-			id: "4C00000000000267"
+			id: "4C00000000000271"
 			tasks: [{
-				id: "4C00000001000267"
+				id: "4C00000001000271"
 				item: { count: 1, id: "nameless_trinkets:ghast_eye" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 65.0d
 			y: 17.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:pocket_lightning_rod"
 			}
-			id: "4C00000000000268"
+			id: "4C00000000000272"
 			tasks: [{
-				id: "4C00000001000268"
+				id: "4C00000001000272"
 				item: { count: 1, id: "nameless_trinkets:pocket_lightning_rod" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 62.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "nameless_trinkets:rage_mind"
 			}
-			id: "4C00000000000269"
+			id: "4C00000000000273"
 			tasks: [{
-				id: "4C00000001000269"
+				id: "4C00000001000273"
 				item: { count: 1, id: "nameless_trinkets:rage_mind" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 63.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "terra_curio:blindfold"
 			}
-			id: "4C0000000000026A"
+			id: "4C00000000000274"
 			tasks: [{
-				id: "4C0000000100026A"
+				id: "4C00000001000274"
 				item: { count: 1, id: "terra_curio:blindfold" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 64.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "terra_curio:diving_gear"
 			}
-			id: "4C0000000000026B"
+			id: "4C00000000000275"
 			tasks: [{
-				id: "4C0000000100026B"
+				id: "4C00000001000275"
 				item: { count: 1, id: "terra_curio:diving_gear" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 65.0d
 			y: 18.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:blindfold"
 			}
-			id: "4C0000000000026C"
+			id: "4C00000000000276"
 			tasks: [{
-				id: "4C0000000100026C"
+				id: "4C00000001000276"
 				item: { count: 1, id: "armageddon_mod:blindfold" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 62.0d
 			y: 19.0d
 		}
 		{
 			icon: {
 				id: "pastel:glow_vision_goggles"
 			}
-			id: "4C0000000000026D"
+			id: "4C00000000000277"
 			tasks: [{
-				id: "4C0000000100026D"
+				id: "4C00000001000277"
 				item: { count: 1, id: "pastel:glow_vision_goggles" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 63.0d
 			y: 19.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_poisonous_vine"
 			}
-			id: "4C0000000000026E"
+			id: "4C00000000000278"
 			tasks: [{
-				id: "4C0000000100026E"
+				id: "4C00000001000278"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_poisonous_vine" }
 				type: "item"
 			}]
-			x: 62.0d
-			y: 17.0d
+			x: 0.0d
+			y: 25.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_poisonous_vine"
 			}
-			id: "4C0000000000026F"
+			id: "4C00000000000279"
 			tasks: [{
-				id: "4C0000000100026F"
+				id: "4C00000001000279"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_poisonous_vine" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 17.0d
+			x: 1.0d
+			y: 25.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_flamebound_pact"
 			}
-			id: "4C00000000000270"
+			id: "4C0000000000027A"
 			tasks: [{
-				id: "4C00000001000270"
+				id: "4C0000000100027A"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_flamebound_pact" }
 				type: "item"
 			}]
-			x: 64.0d
-			y: 17.0d
+			x: 2.0d
+			y: 25.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_flmaboundpact"
 			}
-			id: "4C00000000000271"
+			id: "4C0000000000027B"
 			tasks: [{
-				id: "4C00000001000271"
+				id: "4C0000000100027B"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_flmaboundpact" }
 				type: "item"
 			}]
-			x: 65.0d
-			y: 17.0d
+			x: 3.0d
+			y: 25.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_gale_howl"
 			}
-			id: "4C00000000000272"
+			id: "4C0000000000027C"
 			tasks: [{
-				id: "4C00000001000272"
+				id: "4C0000000100027C"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_gale_howl" }
 				type: "item"
 			}]
-			x: 62.0d
-			y: 18.0d
+			x: 0.0d
+			y: 26.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_gale_howl"
 			}
-			id: "4C00000000000273"
+			id: "4C0000000000027D"
 			tasks: [{
-				id: "4C00000001000273"
+				id: "4C0000000100027D"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_gale_howl" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 18.0d
+			x: 1.0d
+			y: 26.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:greater_idol_of_the_north_star"
 			}
-			id: "4C00000000000274"
+			id: "4C0000000000027E"
 			tasks: [{
-				id: "4C00000001000274"
+				id: "4C0000000100027E"
 				item: { count: 1, id: "armageddon_mod:greater_idol_of_the_north_star" }
 				type: "item"
 			}]
-			x: 64.0d
-			y: 18.0d
+			x: 2.0d
+			y: 26.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idolofthe_north_star"
 			}
-			id: "4C00000000000275"
+			id: "4C0000000000027F"
 			tasks: [{
-				id: "4C00000001000275"
+				id: "4C0000000100027F"
 				item: { count: 1, id: "armageddon_mod:idolofthe_north_star" }
 				type: "item"
 			}]
-			x: 65.0d
-			y: 18.0d
+			x: 3.0d
+			y: 26.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:great_idol_of_the_divine_retribution"
 			}
-			id: "4C00000000000276"
+			id: "4C00000000000280"
 			tasks: [{
-				id: "4C00000001000276"
+				id: "4C00000001000280"
 				item: { count: 1, id: "armageddon_mod:great_idol_of_the_divine_retribution" }
 				type: "item"
 			}]
-			x: 62.0d
-			y: 19.0d
+			x: 0.0d
+			y: 27.0d
 		}
 		{
 			icon: {
 				id: "armageddon_mod:idol_of_the_divine_retribution"
 			}
-			id: "4C00000000000277"
+			id: "4C00000000000281"
 			tasks: [{
-				id: "4C00000001000277"
+				id: "4C00000001000281"
 				item: { count: 1, id: "armageddon_mod:idol_of_the_divine_retribution" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 19.0d
+			x: 1.0d
+			y: 27.0d
 		}
 		{
 			icon: {
 				id: "hazennstuff:angel_wings"
 			}
-			id: "4C00000000000278"
+			id: "4C00000000000282"
 			tasks: [{
-				id: "4C00000001000278"
+				id: "4C00000001000282"
 				item: { count: 1, id: "hazennstuff:angel_wings" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 7.0d
 			y: 25.0d
 		}
 		{
 			icon: {
 				id: "hazennstuff:arbitrium_wings"
 			}
-			id: "4C00000000000279"
+			id: "4C00000000000283"
 			tasks: [{
-				id: "4C00000001000279"
+				id: "4C00000001000283"
 				item: { count: 1, id: "hazennstuff:arbitrium_wings" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 8.0d
 			y: 25.0d
 		}
 		{
 			icon: {
 				id: "hazennstuff:fallen_angel_wings"
 			}
-			id: "4C0000000000027A"
+			id: "4C00000000000284"
 			tasks: [{
-				id: "4C0000000100027A"
+				id: "4C00000001000284"
 				item: { count: 1, id: "hazennstuff:fallen_angel_wings" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 9.0d
 			y: 25.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:majestic_elytra"
 			}
-			id: "4C0000000000027B"
+			id: "4C00000000000285"
 			tasks: [{
-				id: "4C0000000100027B"
+				id: "4C00000001000285"
 				item: { count: 1, id: "enigmaticlegacyplus:majestic_elytra" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 10.0d
 			y: 25.0d
 		}
 		{
 			icon: {
 				id: "enigmaticlegacyplus:chaos_elytra"
 			}
-			id: "4C0000000000027C"
+			id: "4C00000000000286"
 			tasks: [{
-				id: "4C0000000100027C"
+				id: "4C00000001000286"
 				item: { count: 1, id: "enigmaticlegacyplus:chaos_elytra" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 7.0d
 			y: 26.0d
 		}
 		{
 			icon: {
 				id: "alexsmobs:tarantula_hawk_elytra"
 			}
-			id: "4C0000000000027D"
+			id: "4C00000000000287"
 			tasks: [{
-				id: "4C0000000100027D"
+				id: "4C00000001000287"
 				item: { count: 1, id: "alexsmobs:tarantula_hawk_elytra" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 8.0d
 			y: 26.0d
 		}
 		{
 			icon: {
 				id: "anvilcraft:ionocraft_backpack"
 			}
-			id: "4C0000000000027E"
+			id: "4C00000000000288"
 			tasks: [{
-				id: "4C0000000100027E"
+				id: "4C00000001000288"
 				item: { count: 1, id: "anvilcraft:ionocraft_backpack" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 9.0d
 			y: 26.0d
 		}
 		{
 			icon: {
 				id: "avaritia:infinity_elytra"
 			}
-			id: "4C0000000000027F"
+			id: "4C00000000000289"
 			tasks: [{
-				id: "4C0000000100027F"
+				id: "4C00000001000289"
 				item: { count: 1, id: "avaritia:infinity_elytra" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 10.0d
 			y: 26.0d
 		}
 		{
 			icon: {
 				id: "deeperdarker:soul_elytra"
 			}
-			id: "4C00000000000280"
+			id: "4C0000000000028A"
 			tasks: [{
-				id: "4C00000001000280"
+				id: "4C0000000100028A"
 				item: { count: 1, id: "deeperdarker:soul_elytra" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 7.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "mekanism:hdpe_elytra"
 			}
-			id: "4C00000000000281"
+			id: "4C0000000000028B"
 			tasks: [{
-				id: "4C00000001000281"
+				id: "4C0000000100028B"
 				item: { count: 1, id: "mekanism:hdpe_elytra" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 27.0d
-		}
-		{
-			icon: {
-				id: "armageddon_mod:cloak_of_the_abyss"
-			}
-			id: "4C00000000000282"
-			tasks: [{
-				id: "4C00000001000282"
-				item: { count: 1, id: "armageddon_mod:cloak_of_the_abyss" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "armageddon_mod:hunter_cloak"
-			}
-			id: "4C00000000000283"
-			tasks: [{
-				id: "4C00000001000283"
-				item: { count: 1, id: "armageddon_mod:hunter_cloak" }
-				type: "item"
-			}]
 			x: 8.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:ethereal_wings"
-			}
-			id: "4C00000000000284"
-			tasks: [{
-				id: "4C00000001000284"
-				item: { count: 1, id: "nameless_trinkets:ethereal_wings" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "nameless_trinkets:shrinking_veil"
-			}
-			id: "4C00000000000285"
-			tasks: [{
-				id: "4C00000001000285"
-				item: { count: 1, id: "nameless_trinkets:shrinking_veil" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "terra_curio:bee_cloak"
-			}
-			id: "4C00000000000286"
-			tasks: [{
-				id: "4C00000001000286"
-				item: { count: 1, id: "terra_curio:bee_cloak" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 26.0d
-		}
-		{
-			icon: {
-				id: "terra_curio:star_cloak"
-			}
-			id: "4C00000000000287"
-			tasks: [{
-				id: "4C00000001000287"
-				item: { count: 1, id: "terra_curio:star_cloak" }
-				type: "item"
-			}]
-			x: 8.0d
-			y: 26.0d
-		}
-		{
-			icon: {
-				id: "discerning_the_eldritch:casters_mantle"
-			}
-			id: "4C00000000000288"
-			tasks: [{
-				id: "4C00000001000288"
-				item: { count: 1, id: "discerning_the_eldritch:casters_mantle" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 26.0d
-		}
-		{
-			icon: {
-				id: "l2hostility:triple_strip_cape"
-			}
-			id: "4C00000000000289"
-			tasks: [{
-				id: "4C00000001000289"
-				item: { count: 1, id: "l2hostility:triple_strip_cape" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 26.0d
-		}
-		{
-			icon: {
-				id: "mythsandlegends:antique_emblem"
-			}
-			id: "4C0000000000028A"
-			tasks: [{
-				id: "4C0000000100028A"
-				item: { count: 1, id: "mythsandlegends:antique_emblem" }
-				type: "item"
-			}]
-			x: 7.0d
 			y: 27.0d
 		}
 		{
 			icon: {
 				id: "refinedstorage:creative_portable_grid"
 			}
-			id: "4C0000000000028B"
+			id: "4C0000000000028C"
 			tasks: [{
-				id: "4C0000000100028B"
+				id: "4C0000000100028C"
 				item: { count: 1, id: "refinedstorage:creative_portable_grid" }
 				type: "item"
 			}]
@@ -8477,9 +8490,9 @@
 			icon: {
 				id: "refinedstorage:creative_wireless_grid"
 			}
-			id: "4C0000000000028C"
+			id: "4C0000000000028D"
 			tasks: [{
-				id: "4C0000000100028C"
+				id: "4C0000000100028D"
 				item: { count: 1, id: "refinedstorage:creative_wireless_grid" }
 				type: "item"
 			}]
@@ -8490,9 +8503,9 @@
 			icon: {
 				id: "refinedstorage:portable_grid"
 			}
-			id: "4C0000000000028D"
+			id: "4C0000000000028E"
 			tasks: [{
-				id: "4C0000000100028D"
+				id: "4C0000000100028E"
 				item: { count: 1, id: "refinedstorage:portable_grid" }
 				type: "item"
 			}]
@@ -8503,9 +8516,9 @@
 			icon: {
 				id: "refinedstorage:wireless_grid"
 			}
-			id: "4C0000000000028E"
+			id: "4C0000000000028F"
 			tasks: [{
-				id: "4C0000000100028E"
+				id: "4C0000000100028F"
 				item: { count: 1, id: "refinedstorage:wireless_grid" }
 				type: "item"
 			}]
@@ -8516,9 +8529,9 @@
 			icon: {
 				id: "refinedstorage_quartz_arsenal:creative_wireless_crafting_grid"
 			}
-			id: "4C0000000000028F"
+			id: "4C00000000000290"
 			tasks: [{
-				id: "4C0000000100028F"
+				id: "4C00000001000290"
 				item: { count: 1, id: "refinedstorage_quartz_arsenal:creative_wireless_crafting_grid" }
 				type: "item"
 			}]
@@ -8529,9 +8542,9 @@
 			icon: {
 				id: "refinedstorage_quartz_arsenal:wireless_crafting_grid"
 			}
-			id: "4C00000000000290"
+			id: "4C00000000000291"
 			tasks: [{
-				id: "4C00000001000290"
+				id: "4C00000001000291"
 				item: { count: 1, id: "refinedstorage_quartz_arsenal:wireless_crafting_grid" }
 				type: "item"
 			}]
@@ -8542,9 +8555,9 @@
 			icon: {
 				id: "universalgrid:creative_wireless_universal_grid"
 			}
-			id: "4C00000000000291"
+			id: "4C00000000000292"
 			tasks: [{
-				id: "4C00000001000291"
+				id: "4C00000001000292"
 				item: { count: 1, id: "universalgrid:creative_wireless_universal_grid" }
 				type: "item"
 			}]
@@ -8555,9 +8568,9 @@
 			icon: {
 				id: "universalgrid:wireless_universal_grid"
 			}
-			id: "4C00000000000292"
+			id: "4C00000000000293"
 			tasks: [{
-				id: "4C00000001000292"
+				id: "4C00000001000293"
 				item: { count: 1, id: "universalgrid:wireless_universal_grid" }
 				type: "item"
 			}]
@@ -8568,9 +8581,9 @@
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 			}
-			id: "4C00000000000293"
+			id: "4C00000000000294"
 			tasks: [{
-				id: "4C00000001000293"
+				id: "4C00000001000294"
 				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
@@ -8581,9 +8594,9 @@
 			icon: {
 				id: "sophisticatedbackpacks:copper_backpack"
 			}
-			id: "4C00000000000294"
+			id: "4C00000000000295"
 			tasks: [{
-				id: "4C00000001000294"
+				id: "4C00000001000295"
 				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
 				type: "item"
 			}]
@@ -8594,9 +8607,9 @@
 			icon: {
 				id: "sophisticatedbackpacks:diamond_backpack"
 			}
-			id: "4C00000000000295"
+			id: "4C00000000000296"
 			tasks: [{
-				id: "4C00000001000295"
+				id: "4C00000001000296"
 				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
 				type: "item"
 			}]
@@ -8607,23 +8620,10 @@
 			icon: {
 				id: "sophisticatedbackpacks:gold_backpack"
 			}
-			id: "4C00000000000296"
-			tasks: [{
-				id: "4C00000001000296"
-				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "sophisticatedbackpacks:iron_backpack"
-			}
 			id: "4C00000000000297"
 			tasks: [{
 				id: "4C00000001000297"
-				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
 				type: "item"
 			}]
 			x: 21.0d
@@ -8631,12 +8631,12 @@
 		}
 		{
 			icon: {
-				id: "sophisticatedbackpacks:netherite_backpack"
+				id: "sophisticatedbackpacks:iron_backpack"
 			}
 			id: "4C00000000000298"
 			tasks: [{
 				id: "4C00000001000298"
-				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
+				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
 				type: "item"
 			}]
 			x: 22.0d
@@ -8644,12 +8644,12 @@
 		}
 		{
 			icon: {
-				id: "nameless_trinkets:explosion_proof_jacket"
+				id: "sophisticatedbackpacks:netherite_backpack"
 			}
 			id: "4C00000000000299"
 			tasks: [{
 				id: "4C00000001000299"
-				item: { count: 1, id: "nameless_trinkets:explosion_proof_jacket" }
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
 				type: "item"
 			}]
 			x: 23.0d
@@ -8665,7 +8665,7 @@
 				item: { count: 1, id: "hooked:custom_hook" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 27.0d
 			y: 25.0d
 		}
 		{
@@ -8678,7 +8678,7 @@
 				item: { count: 1, id: "hooked:diamond_hook" }
 				type: "item"
 			}]
-			x: 29.0d
+			x: 28.0d
 			y: 25.0d
 		}
 		{
@@ -8691,7 +8691,7 @@
 				item: { count: 1, id: "hooked:ender_hook" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 29.0d
 			y: 25.0d
 		}
 		{
@@ -8704,7 +8704,7 @@
 				item: { count: 1, id: "hooked:iron_hook" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 27.0d
 			y: 26.0d
 		}
 		{
@@ -8717,7 +8717,7 @@
 				item: { count: 1, id: "hooked:redstone_hook" }
 				type: "item"
 			}]
-			x: 29.0d
+			x: 28.0d
 			y: 26.0d
 		}
 		{
@@ -8730,7 +8730,7 @@
 				item: { count: 1, id: "hooked:wood_hook" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 29.0d
 			y: 26.0d
 		}
 		{
@@ -8743,7 +8743,7 @@
 				item: { count: 1, id: "malum:elaborate_brooch" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 33.0d
 			y: 25.0d
 		}
 		{
@@ -8756,7 +8756,7 @@
 				item: { count: 1, id: "malum:glass_brooch" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 34.0d
 			y: 25.0d
 		}
 		{
@@ -8769,7 +8769,7 @@
 				item: { count: 1, id: "malum:gluttonous_brooch" }
 				type: "item"
 			}]
-			x: 36.0d
+			x: 35.0d
 			y: 25.0d
 		}
 		{
@@ -8782,7 +8782,7 @@
 				item: { count: 1, id: "malum:runic_brooch" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 33.0d
 			y: 26.0d
 		}
 		{
@@ -8795,7 +8795,7 @@
 				item: { count: 1, id: "malstone:kill_the_gods" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 34.0d
 			y: 26.0d
 		}
 		{
@@ -8808,7 +8808,7 @@
 				item: { count: 1, id: "discerning_the_eldritch:rift_ripper_emblem" }
 				type: "item"
 			}]
-			x: 40.0d
+			x: 39.0d
 			y: 25.0d
 		}
 		{
@@ -8821,7 +8821,7 @@
 				item: { count: 1, id: "discerning_the_eldritch:ironbound_feather" }
 				type: "item"
 			}]
-			x: 41.0d
+			x: 40.0d
 			y: 25.0d
 		}
 		{
@@ -8834,7 +8834,7 @@
 				item: { count: 1, id: "discerning_the_eldritch:kings_effigy" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 41.0d
 			y: 25.0d
 		}
 		{
@@ -8847,7 +8847,7 @@
 				item: { count: 1, id: "pastel:azuresque_dike_core" }
 				type: "item"
 			}]
-			x: 46.0d
+			x: 45.0d
 			y: 25.0d
 		}
 		{
@@ -8860,7 +8860,7 @@
 				item: { count: 1, id: "pastel:gleaming_pin" }
 				type: "item"
 			}]
-			x: 47.0d
+			x: 46.0d
 			y: 25.0d
 		}
 		{
@@ -8873,7 +8873,7 @@
 				item: { count: 1, id: "pastel:radiance_pin" }
 				type: "item"
 			}]
-			x: 48.0d
+			x: 47.0d
 			y: 25.0d
 		}
 		{
@@ -8886,7 +8886,7 @@
 				item: { count: 1, id: "pastel:artists_palette" }
 				type: "item"
 			}]
-			x: 52.0d
+			x: 51.0d
 			y: 25.0d
 		}
 		{
@@ -8899,7 +8899,7 @@
 				item: { count: 1, id: "pastel:pigment_palette" }
 				type: "item"
 			}]
-			x: 53.0d
+			x: 52.0d
 			y: 25.0d
 		}
 		{
@@ -8912,7 +8912,7 @@
 				item: { count: 1, id: "hostilenetworks:deep_learner" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 56.0d
 			y: 25.0d
 		}
 		{
@@ -8925,7 +8925,7 @@
 				item: { count: 1, id: "compactmachines:personal_shrinking_device" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 61.0d
 			y: 25.0d
 		}
 		{
@@ -8938,7 +8938,7 @@
 				item: { count: 1, id: "mekanism:portable_qio_dashboard" }
 				type: "item"
 			}]
-			x: 67.0d
+			x: 66.0d
 			y: 25.0d
 		}
 		{

@@ -1494,7 +1494,7 @@ write("data/bertieprogression/recipe/scroll_forge.json",
 #
 #     Kaleidoscope Doll's curio support is dropped outright: it claimed the shared head slot and
 #     narrowed it to dolls, which is what made every hat and pair of goggles unequippable. ---
-_SLOT_PLAN = {'accessory': {'size': 0}, 'amulet': {'order': 140}, 'back': {'order': 30, 'size': 1, 'validators': ['curios:tag']}, 'belt': {'order': 60, 'size': 1, 'validators': ['curios:tag']}, 'brooch': {'order': 170}, 'cape': {'order': 40, 'size': 1, 'validators': ['curios:tag']}, 'charm': {'size': 12, 'validators': ['curios:tag']}, 'cosmetic': {'size': 0}, 'crystal': {'order': 150}, 'curio': {'size': 0}, 'deep_learner': {'order': 230}, 'hand': {'order': 70, 'size': 2, 'validators': ['curios:tag']}, 'hands': {'size': 0}, 'hat': {'size': 0}, 'head': {'order': 10, 'size': 1, 'validators': ['curios:tag']}, 'hooked_hook': {'order': 210}, 'ionocraft_backpack': {'size': 0}, 'necklace': {'order': 20, 'size': 1, 'validators': ['curios:tag']}, 'pandora': {'size': 2, 'validators': ['curios:tag']}, 'pigment_palette': {'order': 200}, 'pin': {'order': 190}, 'psd': {'order': 240}, 'qio': {'order': 250}, 'refinedstorage_curios_integration': {'order': 220}, 'ring': {'order': 90, 'size': 2, 'validators': ['curios:tag']}, 'rings': {'size': 0}, 'rune': {'order': 160}, 'scroll': {'order': 130}, 'sheath': {'size': 0}, 'shoes': {'order': 100, 'size': 1, 'validators': ['curios:tag']}, 'spellbook': {'order': 110}, 'spellstone': {'order': 120}, 'talisman': {'size': 0}, 'teleporter': {'order': 260}, 'trinket': {'size': 0}, 'waist': {'size': 0}, 'well': {'order': 180}, 'wing': {'order': 50, 'size': 1, 'validators': ['curios:tag']}, 'wrist': {'order': 80, 'size': 2, 'validators': ['curios:tag']}}
+_SLOT_PLAN = {'accessory': {'size': 0}, 'amulet': {'order': 140}, 'back': {'order': 30, 'size': 1, 'validators': ['curios:tag']}, 'belt': {'order': 60, 'size': 1, 'validators': ['curios:tag']}, 'brooch': {'order': 170}, 'cape': {'order': 40, 'size': 1, 'validators': ['curios:tag']}, 'charm': {'size': 12, 'validators': ['curios:tag']}, 'cosmetic': {'size': 0}, 'crystal': {'order': 150}, 'curio': {'size': 0}, 'deep_learner': {'order': 230}, 'hand': {'order': 70, 'size': 2, 'validators': ['curios:tag']}, 'hands': {'size': 0}, 'head': {'size': 0}, 'hat': {'order': 10, 'size': 1, 'validators': ['curios:tag']}, 'hooked_hook': {'order': 210}, 'ionocraft_backpack': {'size': 0}, 'necklace': {'order': 20, 'size': 1, 'validators': ['curios:tag']}, 'pandora': {'size': 2, 'validators': ['curios:tag']}, 'pigment_palette': {'order': 200}, 'pin': {'order': 190}, 'psd': {'order': 240}, 'qio': {'order': 250}, 'refinedstorage_curios_integration': {'order': 220}, 'ring': {'order': 90, 'size': 2, 'validators': ['curios:tag']}, 'rings': {'size': 0}, 'rune': {'order': 160}, 'scroll': {'order': 130}, 'sheath': {'size': 0}, 'shoes': {'order': 100, 'size': 1, 'validators': ['curios:tag']}, 'spellbook': {'order': 110}, 'spellstone': {'order': 120}, 'talisman': {'size': 0}, 'teleporter': {'order': 260}, 'trinket': {'size': 0}, 'waist': {'size': 0}, 'well': {'order': 180}, 'wing': {'order': 50, 'size': 1, 'validators': ['curios:tag']}, 'wrist': {'order': 80, 'size': 2, 'validators': ['curios:tag']}}
 _SLOT_FILES = {'accessory': {'accessories': {'terra_curio': {'amount': 6, 'icon': 'terra_curio:slot/accessory', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'terra_curio': {'add_cosmetic': True, 'icon': 'terra_curio:slot/accessory', 'size': 6}}}, 'amulet': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_amulet_slot', 'size': 1}}}, 'back': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/back', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_back_slot', 'order': 80, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 1}}}, 'belt': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/belt', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_belt_slot', 'order': 180, 'validators': ['curios:tag']}, 'magitech': {'operation': 'SET', 'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'brooch': {'accessories': {}, 'curios': {'malum': {'add_cosmetic': False, 'icon': 'malum:slot/empty_brooch_slot', 'size': 1}}}, 'cape': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/cape', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'charm': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/charm', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_charm_slot', 'order': 200, 'validators': ['curios:tag']}, 'enderio': {'size': 2}, 'enigmaticlegacyplus': {'size': 1}, 'iceandfire': {'size': 1}, 'magic_coins': {'size': 1}, 'malum': {'add_cosmetic': True, 'size': 1}}}, 'cosmetic': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'curios:slot/empty_cosmetic_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'crystal': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/crystal', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'curio': {'accessories': {}, 'curios': {'curios': {'icon': 'curios:slot/empty_curio_slot', 'order': 20}, 'curseofpandora': {'operation': 'SET', 'size': 0}}}, 'deep_learner': {'accessories': {}, 'curios': {'hostilenetworks': {'icon': 'hostilenetworks:item/empty_learner_slot', 'render_toggle': False, 'size': 1}}}, 'hand': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/hand', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'hands': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True, 'size': 2}, 'cataclysm': {'size': 2}, 'curios': {'icon': 'curios:slot/empty_hands_slot', 'order': 140, 'validators': ['curios:tag']}}}, 'hat': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/hat', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'head': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_head_slot', 'order': 40, 'validators': ['curios:tag']}, 'kaleidoscope_doll': {'add_cosmetic': True, 'size': 1, 'validators': ['kaleidoscope_doll:doll_item']}}}, 'hooked_hook': {'accessories': {}, 'curios': {'hooked': {'icon': 'hooked:slot/hook_slot', 'render_toggle': False}}}, 'ionocraft_backpack': {'accessories': {}, 'curios': {}}, 'necklace': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/necklace', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'cognition': {'add_cosmetic': False, 'size': 1, 'validators': ['curios:tag']}, 'curios': {'icon': 'curios:slot/empty_necklace_slot', 'order': 60, 'validators': ['curios:tag']}, 'irons_spellbooks': {'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'pandora': {'accessories': {}, 'curios': {'pandora': {'add_cosmetic': False, 'icon': 'pandora:slot/empty_pandora', 'order': 1000943, 'render_toggle': False, 'size': 0, 'use_native_gui': False}}}, 'pigment_palette': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pigment_palette', 'order': 189, 'size': 1}}}, 'pin': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pin', 'order': 100}}}, 'psd': {'accessories': {}, 'curios': {'compactmachines': {'icon': 'compactmachines:slot/empty_psd', 'size': 1, 'validators': ['compactmachines:has_shrinking_config']}}}, 'qio': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/qio_slot', 'size': 1}}}, 'refinedstorage_curios_integration': {'accessories': {}, 'curios': {'refinedstorage_curios_integration': {'icon': 'refinedstorage_curios_integration:slot/curios', 'order': 5, 'size': 2}}}, 'ring': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/ring', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_ring_slot', 'order': 160, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 2}, 'irons_spellbooks': {'size': 2}, 'magitech': {'operation': 'ADD', 'size': 2}, 'malum': {'add_cosmetic': False, 'size': 2}, 'pastel': {'size': 2}}}, 'rings': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_ring_slot', 'order': 110, 'size': 2}}}, 'rune': {'accessories': {}, 'curios': {'malum': {'icon': 'malum:slot/empty_rune_slot', 'render_toggle': False, 'size': 0}}}, 'scroll': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_scroll_slot', 'size': 0}}}, 'sheath': {'accessories': {}, 'curios': {'aces_spell_utils': {'add_cosmetic': True, 'drop_rule': 'DEFAULT', 'icon': 'aces_spell_utils:slot/sheath', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'shoes': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/shoes', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'spellbook': {'accessories': {}, 'curios': {'irons_spellbooks': {'icon': 'curios:slot/spellbook_slot', 'order': 500, 'replace': False, 'size': 1}}}, 'spellstone': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_spellstone_slot', 'size': 0}}}, 'talisman': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_talisman_slot', 'order': 180, 'size': 0}}}, 'teleporter': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/teleporter_slot', 'size': 1}}}, 'trinket': {'accessories': {}, 'curios': {'nameless_trinkets': {'add_cosmetic': False, 'icon': 'nameless_trinkets:slot/trinket_slot', 'order': 20, 'size': 4}}}, 'waist': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_waist_slot', 'order': 170, 'size': 1}}}, 'well': {'accessories': {}, 'curios': {'malstone': {'icon': 'malstone:slot/well', 'render_toggle': False, 'size': 0}}}, 'wing': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}, 'hazentouvelib': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazentouvelib:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'wrist': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/wrist', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}}
 
 
@@ -1535,6 +1535,7 @@ write("data/curios/tags/item/cape.json",
         {"id": "l2hostility:triple_strip_cape", "required": False},
         {"id": "terra_curio:bee_cloak", "required": False},
         {"id": "terra_curio:star_cloak", "required": False},
+        {"id": "nameless_trinkets:explosion_proof_jacket", "required": False},
     ]})
 write("data/curios/tags/item/face.json",
       {"replace": False, "values": [
@@ -1677,7 +1678,34 @@ write("data/curios/tags/item/shoes.json",
         {"id": "terra_curio:water_walking_boots", "required": False},
     ]})
 write("data/curios/tags/item/hands.json", {"replace": True, "values": []})
-write("data/curios/tags/item/hat.json", {"replace": True, "values": []})
+write("data/curios/tags/item/hat.json",
+      {"replace": True, "values": [
+        {"id": "armageddon_mod:fisher_hat", "required": False},
+        {"id": "armageddon_mod:vagabonds_hood", "required": False},
+        {"id": "artifacts:anglers_hat", "required": False},
+        {"id": "artifacts:cowboy_hat", "required": False},
+        {"id": "artifacts:night_vision_goggles", "required": False},
+        {"id": "artifacts:novelty_drinking_hat", "required": False},
+        {"id": "artifacts:plastic_drinking_hat", "required": False},
+        {"id": "artifacts:snorkel", "required": False},
+        {"id": "artifacts:superstitious_hat", "required": False},
+        {"id": "artifacts:villager_hat", "required": False},
+        {"id": "cataclysm:aptrgangr_head", "required": False},
+        {"id": "cataclysm:draugr_head", "required": False},
+        {"id": "cataclysm:kobolediator_skull", "required": False},
+        {"id": "create:goggles", "required": False},
+        {"id": "l2hostility:detector_glasses", "required": False},
+        {"id": "l2hostility:oddeyes_glasses", "required": False},
+        {"id": "nameless_trinkets:cracked_crown", "required": False},
+        {"id": "nameless_trinkets:gods_crown", "required": False},
+        {"id": "pastel:ashen_circlet", "required": False},
+        {"id": "pastel:circlet_of_arrogance", "required": False},
+        {"id": "pastel:puff_circlet", "required": False},
+        {"id": "pastel:weeping_circlet", "required": False},
+        {"id": "pastel:whispy_circlet", "required": False},
+        {"id": "terra_curio:arctic_diving_gear", "required": False},
+        {"id": "terra_curio:jellyfish_diving_gear", "required": False},
+    ]})
 write("data/curios/tags/item/wing.json",
       {"replace": False, "values": [
         {"id": "alexsmobs:tarantula_hawk_elytra", "required": False},
@@ -1718,7 +1746,6 @@ write("data/curios/tags/item/wrist.json",
     ]})
 write("data/curios/tags/item/back.json",
       {"replace": True, "values": [
-        {"id": "nameless_trinkets:explosion_proof_jacket", "required": False},
         {"id": "sophisticatedbackpacks:backpack", "required": False},
         {"id": "sophisticatedbackpacks:copper_backpack", "required": False},
         {"id": "sophisticatedbackpacks:diamond_backpack", "required": False},
@@ -1973,34 +2000,7 @@ write("data/curios/tags/item/charm.json",
         {"id": "twilightforest:charm_of_life_1", "required": False},
         {"id": "twilightforest:charm_of_life_2", "required": False},
     ]})
-write("data/curios/tags/item/head.json",
-      {"replace": True, "values": [
-        {"id": "armageddon_mod:fisher_hat", "required": False},
-        {"id": "armageddon_mod:vagabonds_hood", "required": False},
-        {"id": "artifacts:anglers_hat", "required": False},
-        {"id": "artifacts:cowboy_hat", "required": False},
-        {"id": "artifacts:night_vision_goggles", "required": False},
-        {"id": "artifacts:novelty_drinking_hat", "required": False},
-        {"id": "artifacts:plastic_drinking_hat", "required": False},
-        {"id": "artifacts:snorkel", "required": False},
-        {"id": "artifacts:superstitious_hat", "required": False},
-        {"id": "artifacts:villager_hat", "required": False},
-        {"id": "cataclysm:aptrgangr_head", "required": False},
-        {"id": "cataclysm:draugr_head", "required": False},
-        {"id": "cataclysm:kobolediator_skull", "required": False},
-        {"id": "create:goggles", "required": False},
-        {"id": "l2hostility:detector_glasses", "required": False},
-        {"id": "l2hostility:oddeyes_glasses", "required": False},
-        {"id": "nameless_trinkets:cracked_crown", "required": False},
-        {"id": "nameless_trinkets:gods_crown", "required": False},
-        {"id": "pastel:ashen_circlet", "required": False},
-        {"id": "pastel:circlet_of_arrogance", "required": False},
-        {"id": "pastel:puff_circlet", "required": False},
-        {"id": "pastel:weeping_circlet", "required": False},
-        {"id": "pastel:whispy_circlet", "required": False},
-        {"id": "terra_curio:arctic_diving_gear", "required": False},
-        {"id": "terra_curio:jellyfish_diving_gear", "required": False},
-    ]})
+write("data/curios/tags/item/head.json", {"replace": True, "values": []})
 
 # Cataclysm hands out the slots it thinks it owns from its own entity file; keep the four that are
 # real and let the file above declare the rest.
@@ -3591,6 +3591,12 @@ lang.update({
     "item.bertieprogression.kraken_ship_map.filled": "Map to the Kraken's Ship",
     "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
 })
+# `hat` is the head slot in this pack - it is the one the player actually has - so it is named for
+# what it holds in both registries' screens.
+lang["curios.identifier.hat"] = "Head"
+lang["accessories.slot.hat"] = "Head"
+lang["curios.modifiers.hat"] = "When on head:"
+
 write("assets/bertieprogression/lang/en_us.json", lang)
 
 # A data override only wins if this mod loads AFTER the one it overrides, and when it does not,

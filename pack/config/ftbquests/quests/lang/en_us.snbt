@@ -1822,114 +1822,114 @@
 	quest.4C00000000000262.title: "Divinity Light"
 	quest.4C00000000000263.quest_desc: ["Hostility Curse slot."]
 	quest.4C00000000000263.title: "Greed Of Nidhoggur"
-	quest.4C00000000000264.quest_desc: ["Face slot."]
-	quest.4C00000000000264.title: "Blindfold"
-	quest.4C00000000000265.quest_desc: ["Face slot."]
-	quest.4C00000000000265.title: "Creeper Sense"
-	quest.4C00000000000266.quest_desc: ["Face slot."]
-	quest.4C00000000000266.title: "Dragon's Eye"
-	quest.4C00000000000267.quest_desc: ["Face slot."]
-	quest.4C00000000000267.title: "Ghast Eye"
-	quest.4C00000000000268.quest_desc: ["Face slot."]
-	quest.4C00000000000268.title: "Pocket Lightning Rod"
-	quest.4C00000000000269.quest_desc: ["Face slot."]
-	quest.4C00000000000269.title: "Rage Mind"
-	quest.4C0000000000026A.quest_desc: ["Face slot."]
-	quest.4C0000000000026A.title: "Blindfold"
-	quest.4C0000000000026B.quest_desc: ["Face slot."]
-	quest.4C0000000000026B.title: "Diving Gear"
-	quest.4C0000000000026C.quest_desc: ["Face slot."]
-	quest.4C0000000000026C.title: "§eBlindfold"
-	quest.4C0000000000026D.quest_desc: ["Face slot."]
-	quest.4C0000000000026D.title: "Priscillent Spectacles"
-	quest.4C0000000000026E.quest_desc: ["Idol slot."]
-	quest.4C0000000000026E.title: "§2Greater Idol Of The Poisonous Vine"
-	quest.4C0000000000026F.quest_desc: ["Idol slot."]
-	quest.4C0000000000026F.title: "§2Idol Of The Poisonous Vine"
-	quest.4C00000000000270.quest_desc: ["Idol slot."]
-	quest.4C00000000000270.title: "§6Greater Idol Of The Flamebound Pact"
-	quest.4C00000000000271.quest_desc: ["Idol slot."]
-	quest.4C00000000000271.title: "§6Idol Of The Flamebound Pact"
-	quest.4C00000000000272.quest_desc: ["Idol slot."]
-	quest.4C00000000000272.title: "§8Greater Idol Of The Gale Howl"
-	quest.4C00000000000273.quest_desc: ["Idol slot."]
-	quest.4C00000000000273.title: "§8Idol Of The Gale Howl"
-	quest.4C00000000000274.quest_desc: ["Idol slot."]
-	quest.4C00000000000274.title: "§bGreater Idol Of The North Star"
-	quest.4C00000000000275.quest_desc: ["Idol slot."]
-	quest.4C00000000000275.title: "§bIdol Of The North Star"
-	quest.4C00000000000276.quest_desc: ["Idol slot."]
-	quest.4C00000000000276.title: "§eGreater Idol Of The Divine Retribution"
-	quest.4C00000000000277.quest_desc: ["Idol slot."]
-	quest.4C00000000000277.title: "§eIdol Of The Divine Retribution"
-	quest.4C00000000000278.quest_desc: ["Wing slot."]
-	quest.4C00000000000278.title: "Angel Wings"
-	quest.4C00000000000279.quest_desc: ["Wing slot."]
-	quest.4C00000000000279.title: "Arbitrium Wings"
-	quest.4C0000000000027A.quest_desc: ["Wing slot."]
-	quest.4C0000000000027A.title: "Fallen Angel Wings"
-	quest.4C0000000000027B.quest_desc: ["Wing slot."]
-	quest.4C0000000000027B.title: "Majestic Elytra"
-	quest.4C0000000000027C.quest_desc: ["Wing slot."]
-	quest.4C0000000000027C.title: "The Arrogance of Chaos"
-	quest.4C0000000000027D.quest_desc: ["Wing slot."]
-	quest.4C0000000000027D.title: "Tarantula Hawk Elytra"
-	quest.4C0000000000027E.quest_desc: ["Wing slot."]
-	quest.4C0000000000027E.title: "Ionocraft Backpack"
-	quest.4C0000000000027F.quest_desc: ["Wing slot."]
-	quest.4C0000000000027F.title: "Infinity Elytra"
-	quest.4C00000000000280.quest_desc: ["Wing slot."]
-	quest.4C00000000000280.title: "Soul Elytra"
-	quest.4C00000000000281.quest_desc: ["Wing slot."]
-	quest.4C00000000000281.title: "HDPE Reinforced Elytra"
-	quest.4C00000000000282.quest_desc: ["Cape slot."]
-	quest.4C00000000000282.title: "§5Cloak Of The Abyss"
-	quest.4C00000000000283.quest_desc: ["Cape slot."]
-	quest.4C00000000000283.title: "§eHunter's Cloak"
-	quest.4C00000000000284.quest_desc: ["Cape slot."]
-	quest.4C00000000000284.title: "Ethereal Wings"
-	quest.4C00000000000285.quest_desc: ["Cape slot."]
-	quest.4C00000000000285.title: "Shrinking Veil"
-	quest.4C00000000000286.quest_desc: ["Cape slot."]
-	quest.4C00000000000286.title: "Bee Cloak"
-	quest.4C00000000000287.quest_desc: ["Cape slot."]
-	quest.4C00000000000287.title: "Star Cloak"
-	quest.4C00000000000288.quest_desc: ["Body slot."]
-	quest.4C00000000000288.title: "Caster's Mantle"
-	quest.4C00000000000289.quest_desc: ["Cape slot."]
-	quest.4C00000000000289.title: "Triple Strip Cape"
-	quest.4C0000000000028A.quest_desc: ["Body slot."]
-	quest.4C0000000000028A.title: "Antique Emblem"
-	quest.4C0000000000028B.quest_desc: ["Refined Storage slot."]
-	quest.4C0000000000028B.title: "Creative Portable Grid"
+	quest.4C00000000000264.quest_desc: ["Cape slot."]
+	quest.4C00000000000264.title: "Ethereal Wings"
+	quest.4C00000000000265.quest_desc: ["Cape slot."]
+	quest.4C00000000000265.title: "Explosion-proof Jacket"
+	quest.4C00000000000266.quest_desc: ["Cape slot."]
+	quest.4C00000000000266.title: "Shrinking Veil"
+	quest.4C00000000000267.quest_desc: ["Cape slot."]
+	quest.4C00000000000267.title: "§5Cloak Of The Abyss"
+	quest.4C00000000000268.quest_desc: ["Cape slot."]
+	quest.4C00000000000268.title: "§eHunter's Cloak"
+	quest.4C00000000000269.quest_desc: ["Cape slot."]
+	quest.4C00000000000269.title: "Bee Cloak"
+	quest.4C0000000000026A.quest_desc: ["Cape slot."]
+	quest.4C0000000000026A.title: "Star Cloak"
+	quest.4C0000000000026B.quest_desc: ["Body slot."]
+	quest.4C0000000000026B.title: "Caster's Mantle"
+	quest.4C0000000000026C.quest_desc: ["Cape slot."]
+	quest.4C0000000000026C.title: "Triple Strip Cape"
+	quest.4C0000000000026D.quest_desc: ["Body slot."]
+	quest.4C0000000000026D.title: "Antique Emblem"
+	quest.4C0000000000026E.quest_desc: ["Face slot."]
+	quest.4C0000000000026E.title: "Blindfold"
+	quest.4C0000000000026F.quest_desc: ["Face slot."]
+	quest.4C0000000000026F.title: "Creeper Sense"
+	quest.4C00000000000270.quest_desc: ["Face slot."]
+	quest.4C00000000000270.title: "Dragon's Eye"
+	quest.4C00000000000271.quest_desc: ["Face slot."]
+	quest.4C00000000000271.title: "Ghast Eye"
+	quest.4C00000000000272.quest_desc: ["Face slot."]
+	quest.4C00000000000272.title: "Pocket Lightning Rod"
+	quest.4C00000000000273.quest_desc: ["Face slot."]
+	quest.4C00000000000273.title: "Rage Mind"
+	quest.4C00000000000274.quest_desc: ["Face slot."]
+	quest.4C00000000000274.title: "Blindfold"
+	quest.4C00000000000275.quest_desc: ["Face slot."]
+	quest.4C00000000000275.title: "Diving Gear"
+	quest.4C00000000000276.quest_desc: ["Face slot."]
+	quest.4C00000000000276.title: "§eBlindfold"
+	quest.4C00000000000277.quest_desc: ["Face slot."]
+	quest.4C00000000000277.title: "Priscillent Spectacles"
+	quest.4C00000000000278.quest_desc: ["Idol slot."]
+	quest.4C00000000000278.title: "§2Greater Idol Of The Poisonous Vine"
+	quest.4C00000000000279.quest_desc: ["Idol slot."]
+	quest.4C00000000000279.title: "§2Idol Of The Poisonous Vine"
+	quest.4C0000000000027A.quest_desc: ["Idol slot."]
+	quest.4C0000000000027A.title: "§6Greater Idol Of The Flamebound Pact"
+	quest.4C0000000000027B.quest_desc: ["Idol slot."]
+	quest.4C0000000000027B.title: "§6Idol Of The Flamebound Pact"
+	quest.4C0000000000027C.quest_desc: ["Idol slot."]
+	quest.4C0000000000027C.title: "§8Greater Idol Of The Gale Howl"
+	quest.4C0000000000027D.quest_desc: ["Idol slot."]
+	quest.4C0000000000027D.title: "§8Idol Of The Gale Howl"
+	quest.4C0000000000027E.quest_desc: ["Idol slot."]
+	quest.4C0000000000027E.title: "§bGreater Idol Of The North Star"
+	quest.4C0000000000027F.quest_desc: ["Idol slot."]
+	quest.4C0000000000027F.title: "§bIdol Of The North Star"
+	quest.4C00000000000280.quest_desc: ["Idol slot."]
+	quest.4C00000000000280.title: "§eGreater Idol Of The Divine Retribution"
+	quest.4C00000000000281.quest_desc: ["Idol slot."]
+	quest.4C00000000000281.title: "§eIdol Of The Divine Retribution"
+	quest.4C00000000000282.quest_desc: ["Wing slot."]
+	quest.4C00000000000282.title: "Angel Wings"
+	quest.4C00000000000283.quest_desc: ["Wing slot."]
+	quest.4C00000000000283.title: "Arbitrium Wings"
+	quest.4C00000000000284.quest_desc: ["Wing slot."]
+	quest.4C00000000000284.title: "Fallen Angel Wings"
+	quest.4C00000000000285.quest_desc: ["Wing slot."]
+	quest.4C00000000000285.title: "Majestic Elytra"
+	quest.4C00000000000286.quest_desc: ["Wing slot."]
+	quest.4C00000000000286.title: "The Arrogance of Chaos"
+	quest.4C00000000000287.quest_desc: ["Wing slot."]
+	quest.4C00000000000287.title: "Tarantula Hawk Elytra"
+	quest.4C00000000000288.quest_desc: ["Wing slot."]
+	quest.4C00000000000288.title: "Ionocraft Backpack"
+	quest.4C00000000000289.quest_desc: ["Wing slot."]
+	quest.4C00000000000289.title: "Infinity Elytra"
+	quest.4C0000000000028A.quest_desc: ["Wing slot."]
+	quest.4C0000000000028A.title: "Soul Elytra"
+	quest.4C0000000000028B.quest_desc: ["Wing slot."]
+	quest.4C0000000000028B.title: "HDPE Reinforced Elytra"
 	quest.4C0000000000028C.quest_desc: ["Refined Storage slot."]
-	quest.4C0000000000028C.title: "Creative Wireless Grid"
+	quest.4C0000000000028C.title: "Creative Portable Grid"
 	quest.4C0000000000028D.quest_desc: ["Refined Storage slot."]
-	quest.4C0000000000028D.title: "Portable Grid"
+	quest.4C0000000000028D.title: "Creative Wireless Grid"
 	quest.4C0000000000028E.quest_desc: ["Refined Storage slot."]
-	quest.4C0000000000028E.title: "Wireless Grid"
+	quest.4C0000000000028E.title: "Portable Grid"
 	quest.4C0000000000028F.quest_desc: ["Refined Storage slot."]
-	quest.4C0000000000028F.title: "Creative Wireless Crafting Grid"
+	quest.4C0000000000028F.title: "Wireless Grid"
 	quest.4C00000000000290.quest_desc: ["Refined Storage slot."]
-	quest.4C00000000000290.title: "Wireless Crafting Grid"
+	quest.4C00000000000290.title: "Creative Wireless Crafting Grid"
 	quest.4C00000000000291.quest_desc: ["Refined Storage slot."]
-	quest.4C00000000000291.title: "Creative Wireless Universal Grid"
+	quest.4C00000000000291.title: "Wireless Crafting Grid"
 	quest.4C00000000000292.quest_desc: ["Refined Storage slot."]
-	quest.4C00000000000292.title: "Wireless Universal Grid"
-	quest.4C00000000000293.quest_desc: ["Back slot."]
-	quest.4C00000000000293.title: "Backpack"
+	quest.4C00000000000292.title: "Creative Wireless Universal Grid"
+	quest.4C00000000000293.quest_desc: ["Refined Storage slot."]
+	quest.4C00000000000293.title: "Wireless Universal Grid"
 	quest.4C00000000000294.quest_desc: ["Back slot."]
-	quest.4C00000000000294.title: "Copper Backpack"
+	quest.4C00000000000294.title: "Backpack"
 	quest.4C00000000000295.quest_desc: ["Back slot."]
-	quest.4C00000000000295.title: "Diamond Backpack"
+	quest.4C00000000000295.title: "Copper Backpack"
 	quest.4C00000000000296.quest_desc: ["Back slot."]
-	quest.4C00000000000296.title: "Gold Backpack"
+	quest.4C00000000000296.title: "Diamond Backpack"
 	quest.4C00000000000297.quest_desc: ["Back slot."]
-	quest.4C00000000000297.title: "Iron Backpack"
+	quest.4C00000000000297.title: "Gold Backpack"
 	quest.4C00000000000298.quest_desc: ["Back slot."]
-	quest.4C00000000000298.title: "Netherite Backpack"
+	quest.4C00000000000298.title: "Iron Backpack"
 	quest.4C00000000000299.quest_desc: ["Back slot."]
-	quest.4C00000000000299.title: "Explosion-proof Jacket"
+	quest.4C00000000000299.title: "Netherite Backpack"
 	quest.4C0000000000029A.quest_desc: ["Hook slot."]
 	quest.4C0000000000029A.title: "Custom Hook"
 	quest.4C0000000000029B.quest_desc: ["Hook slot."]

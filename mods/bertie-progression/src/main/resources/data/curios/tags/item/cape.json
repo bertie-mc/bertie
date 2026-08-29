@@ -20,6 +20,10 @@
     {
       "id": "terra_curio:star_cloak",
       "required": false
+    },
+    {
+      "id": "nameless_trinkets:explosion_proof_jacket",
+      "required": false
     }
   ]
 }

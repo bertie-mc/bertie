@@ -1,9 +1,8 @@
 {
   "add_cosmetic": true,
-  "size": 1,
+  "size": 0,
   "validators": [
-    "curios:tag"
+    "kaleidoscope_doll:doll_item"
   ],
-  "operation": "SET",
-  "order": 10
+  "operation": "SET"
 }

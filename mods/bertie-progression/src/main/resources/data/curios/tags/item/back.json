@@ -2,10 +2,6 @@
   "replace": true,
   "values": [
     {
-      "id": "nameless_trinkets:explosion_proof_jacket",
-      "required": false
-    },
-    {
       "id": "sophisticatedbackpacks:backpack",
       "required": false
     },
