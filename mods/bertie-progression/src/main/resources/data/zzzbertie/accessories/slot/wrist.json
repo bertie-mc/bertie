@@ -1,8 +1,8 @@
 {
-  "amount": 2,
+  "amount": 0,
   "icon": "accessories:gui/slot/wrist",
   "operation": "set",
-  "order": 9920,
+  "order": -10011,
   "replace": false,
   "validators": [
     "accessories:tag",

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "entities": [
+    "#accessories:defaulted_targets"
+  ],
+  "slots": [
+    "hat",
+    "face",
+    "necklace",
+    "cape",
+    "back",
+    "hand",
+    "ring",
+    "belt",
+    "anklet",
+    "shoes"
+  ]
+}

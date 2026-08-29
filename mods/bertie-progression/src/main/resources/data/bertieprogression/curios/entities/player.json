@@ -4,10 +4,10 @@
     "minecraft:player"
   ],
   "slots": [
+    "accessory",
     "back",
     "belt",
     "cape",
-    "charm",
     "hand",
     "hat",
     "head",
@@ -15,7 +15,6 @@
     "pandora",
     "ring",
     "shoes",
-    "wing",
-    "wrist"
+    "wing"
   ]
 }

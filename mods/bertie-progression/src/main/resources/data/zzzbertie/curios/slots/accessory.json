@@ -1,9 +1,9 @@
 {
   "add_cosmetic": true,
   "icon": "terra_curio:slot/accessory",
-  "size": 0,
+  "size": 6,
   "operation": "SET",
-  "order": -10000,
+  "order": 9899,
   "validators": [
     "curios:tag"
   ]

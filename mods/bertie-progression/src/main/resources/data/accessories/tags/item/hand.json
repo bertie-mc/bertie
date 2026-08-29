@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     {
+      "id": "armageddon_mod:leather_bracer",
+      "required": false
+    },
+    {
       "id": "armageddon_mod:anathema_gauntlet",
       "required": false
     },

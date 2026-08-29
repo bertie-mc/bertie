@@ -1,8 +1,8 @@
 {
-  "amount": 12,
+  "amount": 0,
   "icon": "accessories:gui/slot/charm",
   "operation": "set",
-  "order": 9899,
+  "order": -10000,
   "replace": false,
   "validators": [
     "accessories:tag",

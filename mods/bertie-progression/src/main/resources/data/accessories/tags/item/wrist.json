@@ -1,9 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    {
-      "id": "armageddon_mod:leather_bracer",
-      "required": false
-    }
-  ]
+  "replace": true,
+  "values": []
 }
