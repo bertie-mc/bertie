@@ -2,5 +2,8 @@
   "add_cosmetic": true,
   "size": 0,
   "operation": "SET",
-  "order": -10004
+  "order": -10004,
+  "validators": [
+    "curios:tag"
+  ]
 }

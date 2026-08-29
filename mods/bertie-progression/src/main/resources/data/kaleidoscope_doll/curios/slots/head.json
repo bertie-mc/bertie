@@ -2,7 +2,7 @@
   "add_cosmetic": true,
   "size": 0,
   "validators": [
-    "kaleidoscope_doll:doll_item"
+    "curios:tag"
   ],
   "operation": "SET",
   "order": -10004

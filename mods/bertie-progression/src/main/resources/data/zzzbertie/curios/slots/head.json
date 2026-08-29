@@ -3,7 +3,7 @@
   "icon": "curios:slot/empty_head_slot",
   "order": -10004,
   "validators": [
-    "kaleidoscope_doll:doll_item"
+    "curios:tag"
   ],
   "size": 0,
   "operation": "SET"

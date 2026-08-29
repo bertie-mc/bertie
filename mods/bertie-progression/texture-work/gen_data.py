@@ -1579,6 +1579,12 @@ for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") != 0]):
     _SLOT_PLAN[_k]["order"] = 101 + _i
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
     _SLOT_PLAN[_k]["order"] = 20000 + _i   # past the end, so a closed slot sinks below every mod's
+    # A closed slot must not carry a predicate into the slot it merges into. Accessories takes the
+    # FIRST validator that returns a verdict, not the friendliest one, so kaleidoscope_doll's
+    # doll_item riding along with `head` into `hat` answered before the tag ever did and turned
+    # every hat, circlet and pair of goggles away. Dropping the doll's curio support is what berlord
+    # asked for; this is where it actually happens.
+    _SLOT_PLAN[_k]["validators"] = ["curios:tag"]
 
 _slot_lang = {}
 

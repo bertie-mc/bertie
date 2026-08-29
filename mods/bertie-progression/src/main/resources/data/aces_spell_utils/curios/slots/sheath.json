@@ -5,5 +5,8 @@
   "operation": "SET",
   "order": -10007,
   "render_toggle": true,
-  "size": 0
+  "size": 0,
+  "validators": [
+    "curios:tag"
+  ]
 }
