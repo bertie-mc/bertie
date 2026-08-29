@@ -26,8 +26,7 @@ public final class CapeSlotHandler {
     private static final String FROM = "back";
     private static final String TO = "cape";
 
-    private CapeSlotHandler() {
-    }
+    private CapeSlotHandler() {}
 
     @SubscribeEvent
     public static void onCurioAttributes(CurioAttributeModifierEvent event) {

@@ -19,8 +19,7 @@ public final class MagitechOverlayHandler {
 
     private static final String MAGITECH = "magitech";
 
-    private MagitechOverlayHandler() {
-    }
+    private MagitechOverlayHandler() {}
 
     @SubscribeEvent
     static void onRenderLayer(RenderGuiLayerEvent.Pre event) {
