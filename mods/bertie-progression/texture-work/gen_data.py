@@ -1552,6 +1552,16 @@ _LAST = "zzzbertie"
 #     file for them as well gives the builder a real amount to overwrite, and 0 sticks.
 _MENU_TOP = 10000
 
+# CuriosConversionUtils.slotConvertToA renames six Curios ids on the way into the Accessories slot
+# list, so these never exist there under their own name - they are merged into the slot on the
+# right, and Curios' `curio` lands on `any`, which the loader then drops on purpose. Writing an
+# accessories/slot file for one of them registers a slot the compat layer cannot resolve back:
+# `curio` crashed the server tick the moment Sophisticated Backpacks asked what slots a backpack
+# fits. So this pack never declares one on that side; closing them there is not needed either,
+# since the id the player actually has is the one on the right.
+_CURIOS_ALIASES = {"curio": "any", "head": "hat", "hands": "hand",
+                   "feet": "shoes", "body": "cape", "bracelet": "wrist"}
+
 
 def _menu_order(rank):
     """Position 1..n as berlord listed it -> the descending number the screen sorts on."""
@@ -1582,8 +1592,9 @@ for _slot, _spec in sorted(_SLOT_PLAN.items()):
     # A closed slot needs the Accessories file too - see (2) above. A slot that stays open and has
     # no Accessories declaration is left alone on purpose: declaring one there would make the compat
     # layer skip the Curios icon, order and name it otherwise carries over, and the slot would lose
-    # its picture and show a raw `accessories.slot.<name>` line instead of its name.
-    if _slot in _ACC_SLOTS or _spec.get("size") == 0:
+    # its picture and show a raw `accessories.slot.<name>` line instead of its name. An aliased id
+    # is never given one either - see _CURIOS_ALIASES.
+    if (_slot in _ACC_SLOTS or _spec.get("size") == 0) and _slot not in _CURIOS_ALIASES:
         _base = {}
         for _o in _acc.values():
             _base.update(_o)
@@ -3663,6 +3674,13 @@ lang.update({
 lang["curios.identifier.hat"] = "Head"
 lang["accessories.slot.hat"] = "Head"
 lang["curios.modifiers.hat"] = "When on head:"
+# Declaring a slot on the Accessories side costs it the name the compat layer would otherwise carry
+# over from Curios, so every slot this pack closes there gets its own line. They are hidden at zero
+# size, but a raw `accessories.slot.<name>` has surfaced in a tooltip before and this is cheap.
+for _s, _n in {"accessory": "Accessory", "cosmetic": "Cosmetic", "ionocraft_backpack": "Backpack",
+               "rings": "Rings", "sheath": "Sheath", "talisman": "Talisman", "trinket": "Trinket",
+               "waist": "Waist"}.items():
+    lang[f"accessories.slot.{_s}"] = _n
 
 write("assets/bertieprogression/lang/en_us.json", lang)
 
