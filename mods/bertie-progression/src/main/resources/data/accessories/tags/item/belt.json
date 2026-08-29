@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "terra_curio:black_belt",
+      "required": false
+    },
+    {
+      "id": "terra_curio:inner_tube",
+      "required": false
+    },
+    {
+      "id": "terra_curio:toolbelt",
+      "required": false
+    }
+  ]
+}

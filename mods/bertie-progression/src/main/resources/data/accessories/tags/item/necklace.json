@@ -1,0 +1,241 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aces_spell_utils:example_curio",
+      "required": false
+    },
+    {
+      "id": "aces_spell_utils:example_imbue_curio",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:life_necklace",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:pendant_of_convergence",
+      "required": false
+    },
+    {
+      "id": "artifacts:charm_of_shrinking",
+      "required": false
+    },
+    {
+      "id": "artifacts:charm_of_sinking",
+      "required": false
+    },
+    {
+      "id": "artifacts:cross_necklace",
+      "required": false
+    },
+    {
+      "id": "artifacts:flame_pendant",
+      "required": false
+    },
+    {
+      "id": "artifacts:lucky_scarf",
+      "required": false
+    },
+    {
+      "id": "artifacts:panic_necklace",
+      "required": false
+    },
+    {
+      "id": "artifacts:scarf_of_invisibility",
+      "required": false
+    },
+    {
+      "id": "artifacts:shock_pendant",
+      "required": false
+    },
+    {
+      "id": "artifacts:thorn_pendant",
+      "required": false
+    },
+    {
+      "id": "cataclysm:berserker_soul_amulet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:vitality_ankh",
+      "required": false
+    },
+    {
+      "id": "cognition:enlightened_amulet",
+      "required": false
+    },
+    {
+      "id": "cognition:fortuitous_amulet",
+      "required": false
+    },
+    {
+      "id": "darkdoppelganger:elder_necklace",
+      "required": false
+    },
+    {
+      "id": "darkdoppelganger:summons_necklace",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:amulet_of_sculk_treasure",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_tribunes_medallion",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:amethyst_resonance_charm",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:concentration_amulet",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:conjurers_talisman",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:enchanted_ward_amulet",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:greater_conjurers_talisman",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:heavy_chain_necklace",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:teleportation_amulet",
+      "required": false
+    },
+    {
+      "id": "malstone:breaking_the_life",
+      "required": false
+    },
+    {
+      "id": "malstone:falling_well",
+      "required": false
+    },
+    {
+      "id": "malstone:white_arrow_blade",
+      "required": false
+    },
+    {
+      "id": "malum:necklace_of_blissful_harmony",
+      "required": false
+    },
+    {
+      "id": "malum:necklace_of_the_hidden_blade",
+      "required": false
+    },
+    {
+      "id": "malum:necklace_of_the_mystic_mirror",
+      "required": false
+    },
+    {
+      "id": "malum:necklace_of_the_narrow_edge",
+      "required": false
+    },
+    {
+      "id": "malum:necklace_of_the_watcher",
+      "required": false
+    },
+    {
+      "id": "malum:ornate_necklace",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:necklace_of_torngarsuk",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:broken_ankh",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:gills",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:moon_stone",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:resonant_heart",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:scarab_amulet",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:woundbearer",
+      "required": false
+    },
+    {
+      "id": "pastel:greater_potion_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:laurels_of_serenity",
+      "required": false
+    },
+    {
+      "id": "pastel:lesser_potion_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:shieldgrasp_amulet",
+      "required": false
+    },
+    {
+      "id": "pastel:totem_pendant",
+      "required": false
+    },
+    {
+      "id": "terra_curio:cross_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:jellyfish_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:lava_charm",
+      "required": false
+    },
+    {
+      "id": "terra_curio:molten_charm",
+      "required": false
+    },
+    {
+      "id": "terra_curio:moon_stone",
+      "required": false
+    },
+    {
+      "id": "terra_curio:panic_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:star_veil",
+      "required": false
+    },
+    {
+      "id": "terra_curio:sun_stone",
+      "required": false
+    },
+    {
+      "id": "terra_curio:sweetheart_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:worm_scarf",
+      "required": false
+    }
+  ]
+}

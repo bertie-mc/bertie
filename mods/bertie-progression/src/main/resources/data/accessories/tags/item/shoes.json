@@ -1,0 +1,81 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "terra_curio:ambhipian_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:dunerider_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:fairy_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:flipper",
+      "required": false
+    },
+    {
+      "id": "terra_curio:flower_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:flurry_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:frog_flipper",
+      "required": false
+    },
+    {
+      "id": "terra_curio:frostspark_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:hermes_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:ice_skates",
+      "required": false
+    },
+    {
+      "id": "terra_curio:lava_waders",
+      "required": false
+    },
+    {
+      "id": "terra_curio:lightning_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:obsidian_water_walking_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:rocket_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:sailfish_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:spectre_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:tabi",
+      "required": false
+    },
+    {
+      "id": "terra_curio:terraspark_boots",
+      "required": false
+    },
+    {
+      "id": "terra_curio:water_walking_boots",
+      "required": false
+    }
+  ]
+}

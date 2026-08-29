@@ -1,0 +1,125 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "armageddon_mod:anathema_gauntlet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:cinder_hand",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hand_of_the_storms",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hand_of_the_weaks",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:poisonous_hand",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:zoranths_hand",
+      "required": false
+    },
+    {
+      "id": "artifacts:feral_claws",
+      "required": false
+    },
+    {
+      "id": "terra_curio:bone_glove",
+      "required": false
+    },
+    {
+      "id": "terra_curio:feral_claws",
+      "required": false
+    },
+    {
+      "id": "terra_curio:hand_of_creation",
+      "required": false
+    },
+    {
+      "id": "terra_curio:hand_warmer",
+      "required": false
+    },
+    {
+      "id": "terra_curio:titan_glove",
+      "required": false
+    },
+    {
+      "id": "artifacts:digging_claws",
+      "required": false
+    },
+    {
+      "id": "artifacts:fire_gauntlet",
+      "required": false
+    },
+    {
+      "id": "artifacts:golden_hook",
+      "required": false
+    },
+    {
+      "id": "artifacts:onion_ring",
+      "required": false
+    },
+    {
+      "id": "artifacts:pickaxe_heater",
+      "required": false
+    },
+    {
+      "id": "artifacts:pocket_piston",
+      "required": false
+    },
+    {
+      "id": "artifacts:power_glove",
+      "required": false
+    },
+    {
+      "id": "artifacts:vampiric_glove",
+      "required": false
+    },
+    {
+      "id": "artifacts:withered_bracelet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:blazing_grips",
+      "required": false
+    },
+    {
+      "id": "cataclysm:chitin_claw",
+      "required": false
+    },
+    {
+      "id": "cataclysm:sticky_gloves",
+      "required": false
+    },
+    {
+      "id": "l2hostility:flaming_thorn",
+      "required": false
+    },
+    {
+      "id": "l2hostility:imagine_breaker",
+      "required": false
+    },
+    {
+      "id": "l2hostility:infinity_glove",
+      "required": false
+    },
+    {
+      "id": "l2hostility:platinum_star",
+      "required": false
+    },
+    {
+      "id": "pastel:aether_graced_nectar_gloves",
+      "required": false
+    },
+    {
+      "id": "pastel:gloves_of_dawns_grasp",
+      "required": false
+    }
+  ]
+}

@@ -1484,6 +1484,20 @@ write("data/bertieprogression/recipe/scroll_forge.json",
        # silently throws the whole recipe away, which is how the forge ended up with no recipe.
        "accept_mirrored": False})
 
+# Two registries, two tag paths. The Accessories slots validate against
+# data/accessories/tags/item/<slot>.json and never look at #curios:<slot>, so a slot the player
+# holds through Accessories - which is all twelve of the ones bound to them - sees nothing unless
+# the membership is written on that side too. Everything below goes to both.
+_ACC_SLOTS = {"accessory", "anklet", "back", "belt", "cape", "charm", "face", "hand", "hat",
+              "necklace", "pocket", "ring", "shoes", "wrist"}
+
+
+def slot_tag(slot, payload):
+    write(f"data/curios/tags/item/{slot}.json", payload)
+    if slot in _ACC_SLOTS:
+        write(f"data/accessories/tags/item/{slot}.json", payload)
+
+
 # --- Curios slots. The pack runs two slot registries at once: Curios, and Accessories through the
 #     compat layer, which registers Curios' slot manager as one of ITS loaders. A change has to be
 #     made on both sides or the other one carries on regardless - that is why `accessory` survived
@@ -1522,13 +1536,13 @@ for _slot, _spec in sorted(_SLOT_PLAN.items()):
     for _ns, _orig in sorted(_where.get("accessories", {}).items()):
         write(f"data/{_ns}/accessories/slot/{_slot}.json", _merge_slot(_orig, _spec, True))
 
-write("data/curios/tags/item/belt.json",
+slot_tag("belt",
       {"replace": False, "values": [
         {"id": "terra_curio:black_belt", "required": False},
         {"id": "terra_curio:inner_tube", "required": False},
         {"id": "terra_curio:toolbelt", "required": False},
     ]})
-write("data/curios/tags/item/cape.json",
+slot_tag("cape",
       {"replace": False, "values": [
         {"id": "armageddon_mod:cloak_of_the_abyss", "required": False},
         {"id": "armageddon_mod:hunter_cloak", "required": False},
@@ -1537,13 +1551,13 @@ write("data/curios/tags/item/cape.json",
         {"id": "terra_curio:star_cloak", "required": False},
         {"id": "nameless_trinkets:explosion_proof_jacket", "required": False},
     ]})
-write("data/curios/tags/item/face.json",
+slot_tag("face",
       {"replace": False, "values": [
         {"id": "armageddon_mod:blindfold", "required": False},
         {"id": "terra_curio:blindfold", "required": False},
         {"id": "terra_curio:diving_gear", "required": False},
     ]})
-write("data/curios/tags/item/hand.json",
+slot_tag("hand",
       {"replace": False, "values": [
         {"id": "armageddon_mod:anathema_gauntlet", "required": False},
         {"id": "armageddon_mod:cinder_hand", "required": False},
@@ -1579,7 +1593,7 @@ write("data/curios/tags/item/hand.json",
 # The two Pandora holders are curios in their own right, and were sitting in the necklace and
 # bracelet slots as well as holding charms. They belong in the Pandora Charm slot alone, so
 # both tags are rewritten without them.
-write("data/curios/tags/item/necklace.json",
+slot_tag("necklace",
       {"replace": True, "values": [
         {"id": "aces_spell_utils:example_curio", "required": False},
         {"id": "aces_spell_utils:example_imbue_curio", "required": False},
@@ -1641,21 +1655,21 @@ write("data/curios/tags/item/necklace.json",
         {"id": "terra_curio:sweetheart_necklace", "required": False},
         {"id": "terra_curio:worm_scarf", "required": False},
     ]})
-write("data/curios/tags/item/bracelet.json",
+slot_tag("bracelet",
       {"replace": True, "values": []})
-write("data/curios/tags/item/pandora.json",
+slot_tag("pandora",
       {"replace": False, "values": [
         {"id": "pandora:pandora_bracelet", "required": False},
         {"id": "pandora:pandora_necklace", "required": False},
     ]})
-write("data/curios/tags/item/ring.json",
+slot_tag("ring",
       {"replace": False, "values": [
         {"id": "armageddon_mod:iron_ring", "required": False},
         {"id": "armageddon_mod:rose_ring", "required": False},
         {"id": "enigmaticlegacyplus:iron_ring", "required": False},
         {"id": "hazennstuff:the_prefects_ring", "required": False},
     ]})
-write("data/curios/tags/item/shoes.json",
+slot_tag("shoes",
       {"replace": True, "values": [
         {"id": "terra_curio:ambhipian_boots", "required": False},
         {"id": "terra_curio:dunerider_boots", "required": False},
@@ -1677,8 +1691,8 @@ write("data/curios/tags/item/shoes.json",
         {"id": "terra_curio:terraspark_boots", "required": False},
         {"id": "terra_curio:water_walking_boots", "required": False},
     ]})
-write("data/curios/tags/item/hands.json", {"replace": True, "values": []})
-write("data/curios/tags/item/hat.json",
+slot_tag("hands", {"replace": True, "values": []})
+slot_tag("hat",
       {"replace": True, "values": [
         {"id": "armageddon_mod:fisher_hat", "required": False},
         {"id": "armageddon_mod:vagabonds_hood", "required": False},
@@ -1706,7 +1720,7 @@ write("data/curios/tags/item/hat.json",
         {"id": "terra_curio:arctic_diving_gear", "required": False},
         {"id": "terra_curio:jellyfish_diving_gear", "required": False},
     ]})
-write("data/curios/tags/item/wing.json",
+slot_tag("wing",
       {"replace": False, "values": [
         {"id": "alexsmobs:tarantula_hawk_elytra", "required": False},
         {"id": "anvilcraft:ionocraft_backpack", "required": False},
@@ -1740,11 +1754,11 @@ write("data/curios/tags/item/wing.json",
         {"id": "silentgear:elytra", "required": False},
         {"id": "wooden_elytra:wooden_elytra", "required": False},
     ]})
-write("data/curios/tags/item/wrist.json",
+slot_tag("wrist",
       {"replace": False, "values": [
         {"id": "armageddon_mod:leather_bracer", "required": False},
     ]})
-write("data/curios/tags/item/back.json",
+slot_tag("back",
       {"replace": True, "values": [
         {"id": "sophisticatedbackpacks:backpack", "required": False},
         {"id": "sophisticatedbackpacks:copper_backpack", "required": False},
@@ -1753,7 +1767,7 @@ write("data/curios/tags/item/back.json",
         {"id": "sophisticatedbackpacks:iron_backpack", "required": False},
         {"id": "sophisticatedbackpacks:netherite_backpack", "required": False},
     ]})
-write("data/curios/tags/item/charm.json",
+slot_tag("charm",
       {"replace": True, "values": [
         {"id": "anvilcraft:abnormal_amulet", "required": False},
         {"id": "anvilcraft:anvil_amulet", "required": False},
@@ -2000,7 +2014,7 @@ write("data/curios/tags/item/charm.json",
         {"id": "twilightforest:charm_of_life_1", "required": False},
         {"id": "twilightforest:charm_of_life_2", "required": False},
     ]})
-write("data/curios/tags/item/head.json", {"replace": True, "values": []})
+slot_tag("head", {"replace": True, "values": []})
 
 # Cataclysm hands out the slots it thinks it owns from its own entity file; keep the four that are
 # real and let the file above declare the rest.
