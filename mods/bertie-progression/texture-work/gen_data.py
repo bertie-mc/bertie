@@ -2109,6 +2109,21 @@ slot_tag("head", {"replace": True, "values": []})
 write("data/cataclysm/curios/entities/slots.json",
       {"entities": ["player"], "slots": ["head", "necklace", "hands", "feet"]})
 
+# --- Closing a slot by size is not enough for one that its own mod tops up in code. TerraCurio's
+#     `accessory` went 6 -> 4 under a size of 0, because the mod hands the player four of them back
+#     at runtime; nothing written in a slot file can reach that. The binding can: a slot the player
+#     is never given cannot be topped up, cannot be shown and cannot be filled. The slot type itself
+#     stays registered - deleting one is what crashed the server tick - it simply stops being the
+#     player's. Each file below is the declaring mod's own, minus the slot this pack closes. ---
+write("data/terra_curio/curios/entities/common.json",
+      {"entities": ["player"], "slots": []})                       # was: accessory
+write("data/nameless_trinkets/curios/entities/trinket.json",
+      {"entities": ["player"], "slots": []})                       # was: trinket
+write("data/aces_spell_utils/curios/entities/entities.json",
+      {"entities": ["player"], "slots": []})                       # was: sheath
+write("data/hazennstuff/curios/entities/entities.json",
+      {"entities": ["player"], "slots": ["crystal", "wing"]})      # was: + cosmetic
+
 # --- Clibano: stock FA "secondary output" is a residue whose combine_info.result was a block.
 #     Change each shared residue type to produce the corresponding primary ingot or
 #     item, required_amount 1 (recipe chances untouched). Each residue_type maps 1:1 to its primary, so

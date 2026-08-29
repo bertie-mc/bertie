@@ -45,6 +45,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(CrushingEssenceHandler.class);
         NeoForge.EVENT_BUS.register(MagicMirrorCooldownHandler.class);
         NeoForge.EVENT_BUS.register(CapeSlotHandler.class);
+        NeoForge.EVENT_BUS.register(SlotAudit.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.altar.AltarTooltipHandler.class);
     }
 }
