@@ -8964,8 +8964,8 @@
 				item: { count: 1, id: "armageddon_mod:leather_bracer" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 31.0d
+			x: 64.0d
+			y: 3.0d
 		}
 	]
 }

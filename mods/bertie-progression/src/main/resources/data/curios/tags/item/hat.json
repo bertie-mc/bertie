@@ -42,18 +42,6 @@
       "required": false
     },
     {
-      "id": "cataclysm:aptrgangr_head",
-      "required": false
-    },
-    {
-      "id": "cataclysm:draugr_head",
-      "required": false
-    },
-    {
-      "id": "cataclysm:kobolediator_skull",
-      "required": false
-    },
-    {
       "id": "create:goggles",
       "required": false
     },

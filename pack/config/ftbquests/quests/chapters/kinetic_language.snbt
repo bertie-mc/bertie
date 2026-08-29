@@ -581,7 +581,6 @@
 		}
 		{
 			dependencies: [
-				"2B0000000000000B"
 				"2B00000000000005"
 				"2B00000000000011"
 				"2B00000000000016"
@@ -2197,7 +2196,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2B0000000000002A"]
+			dependencies: ["2B00000000000064"]
 			icon: {
 				id: "mythsandlegends:bound_soul_ingot"
 			}
@@ -2233,6 +2232,104 @@
 			}]
 			x: 3.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["2B00000000000011"]
+			icon: {
+				id: "malum:hallowed_gold_ingot"
+			}
+			id: "2B00000000000061"
+			rewards: [{
+				id: "2B00000002000061"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000061"
+				item: { count: 1, id: "malum:hallowed_gold_ingot" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2B00000000000061"
+				"1B00000000000031"
+			]
+			icon: {
+				id: "sophisticatedbackpacks:gold_backpack"
+			}
+			id: "2B00000000000062"
+			rewards: [{
+				id: "2B00000002000062"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000062"
+				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000029"]
+			icon: {
+				id: "forbidden_arcanus:obsidiansteel_ingot"
+			}
+			id: "2B00000000000063"
+			rewards: [{
+				id: "2B00000002000063"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000063"
+				item: { count: 1, id: "forbidden_arcanus:obsidiansteel_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000063"]
+			icon: {
+				id: "malum:soul_stained_steel_ingot"
+			}
+			id: "2B00000000000064"
+			rewards: [{
+				id: "2B00000002000064"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000064"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B0000000000003B"]
+			icon: {
+				id: "sophisticatedbackpacks:diamond_backpack"
+			}
+			id: "2B00000000000065"
+			rewards: [{
+				id: "2B00000002000065"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000065"
+				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.5d
 		}
 	]
 }

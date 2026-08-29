@@ -401,6 +401,11 @@
 	quest.2B00000000000060.quest_desc: ["You will need a lot of them. It's a good idea to start production sooner."]
 	quest.2B00000000000060.title: "Bound Soul Ingot"
 	quest.2C00000000000001.quest_desc: ["Every tablet you find is written in a language nobody speaks. This is where you break it."]
+	quest.2B00000000000061.title: "Hallowed Gold Ingot"
+	quest.2B00000000000062.title: "Gold Backpack"
+	quest.2B00000000000063.title: "Obsidiansteel Ingot"
+	quest.2B00000000000064.title: "Soulstained Steel Ingot"
+	quest.2B00000000000065.title: "Diamond Backpack"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"

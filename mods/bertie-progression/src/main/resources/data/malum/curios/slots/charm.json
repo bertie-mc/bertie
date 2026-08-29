@@ -2,7 +2,7 @@
   "add_cosmetic": true,
   "size": 0,
   "operation": "SET",
-  "order": -10000,
+  "order": 20002,
   "validators": [
     "curios:tag"
   ]

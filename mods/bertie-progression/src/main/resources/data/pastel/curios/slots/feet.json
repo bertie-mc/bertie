@@ -1,0 +1,9 @@
+{
+  "icon": "pastel:slot/feet",
+  "order": 20005,
+  "size": 0,
+  "operation": "SET",
+  "validators": [
+    "curios:tag"
+  ]
+}

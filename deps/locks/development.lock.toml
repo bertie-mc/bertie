@@ -1,14 +1,10 @@
 profile = "development"
-inputs-hash = "e5f2b3523e2c7d4062be1c9b1fdbfc85f8e5c0391ebfd9f001e34c9c453056a8"
+inputs-hash = "4751f32279cdcc7ffec5c5d99b47a621081516640d3c2a3a7b76d1218fe98c65"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
 any = "modrinth:UqdL217I:i8fZqMWD"
 mod = "modrinth:UqdL217I:i8fZqMWD"
-
-[components."accessories-compat-layer"]
-any = "modrinth:ySnjMzLg:JMgVNypu"
-mod = "modrinth:ySnjMzLg:JMgVNypu"
 
 [components."advanced-loot-info"]
 any = "modrinth:PEPVViac:y8p1Vq83"
@@ -8414,25 +8410,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:jtmvUHXj:Fb55Fgjz"]
-name = "accessories"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "jtmvUHXj"
-version = "Fb55Fgjz"
-filename = "accessories-neoforge-1.1.0-beta.53+1.21.1.jar"
-project-id = "jtmvUHXj"
-version-id = "Fb55Fgjz"
-provides = ["accessories"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:ccKDOlHs:NMCHU6DZ", "mod-id" = "owo", "version-range" = "[0.12.15.0+1.21,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = [{ "artifact" = "modrinth:ySnjMzLg:JMgVNypu", "mod-id" = "accessories_compat_layer", "version-range" = "(,0.1.9]", "side" = "both", "origin" = "archive" }]
-bundled = []
-integrations = []
-
 [artifacts."modrinth:kEcg2xYc:QAqYAkRv"]
 name = "vanity-core"
 provider = "modrinth"
@@ -10635,26 +10612,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:YttyNOFA:yNIrDVfJ", "namespace" = "culturaldelights", "reason" = "ships data/culturaldelights/", "origin" = "archive-data" }, { "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "modrinth:hIu9KJTT:CKLYp96Y", "namespace" = "brewinandchewin", "reason" = "ships data/brewinandchewin/", "origin" = "archive-data" }, { "artifact" = "modrinth:e0bNACJD:SPj5bJoM", "namespace" = "sereneseasons", "reason" = "ships data/sereneseasons/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:ySnjMzLg:JMgVNypu"]
-name = "accessories-compat-layer"
-component = "accessories-compat-layer"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "ySnjMzLg"
-version = "JMgVNypu"
-filename = "accessories_compat_layer-neoforge-0.1.12+1.21.1.jar"
-project-id = "ySnjMzLg"
-version-id = "JMgVNypu"
-provides = ["accessories_compat_layer", "cclayer", "tclayer"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:ccKDOlHs:NMCHU6DZ", "mod-id" = "owo", "version-range" = "[0.12.15.1-beta.6+1.21,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "mod-id" = "accessories", "version-range" = "[1.1.0-beta.53+1.21.1,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[9.5.1+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[,9.5.1+1.21.1)", "side" = "both", "origin" = "archive" }]
-bundled = []
-integrations = []
 
 [artifacts."modrinth:ydZic5r4:tnvwgXE6"]
 name = "smooth-swapping"

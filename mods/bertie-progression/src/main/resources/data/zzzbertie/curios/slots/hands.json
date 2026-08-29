@@ -2,7 +2,7 @@
   "add_cosmetic": true,
   "size": 0,
   "icon": "curios:slot/empty_hands_slot",
-  "order": -10003,
+  "order": 20006,
   "validators": [
     "curios:tag"
   ],

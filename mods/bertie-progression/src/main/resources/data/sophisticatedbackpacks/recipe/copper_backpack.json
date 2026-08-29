@@ -9,7 +9,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "tag": "c:storage_blocks/copper"
+      "item": "berlordscarving:copper_big_slate"
     },
     "R": {
       "item": "minecraft:rabbit_hide"

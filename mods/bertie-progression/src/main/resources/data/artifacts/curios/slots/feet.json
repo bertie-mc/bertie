@@ -1,0 +1,10 @@
+{
+  "add_cosmetic": true,
+  "icon": "minecraft:item/empty_armor_slot_boots",
+  "order": 20005,
+  "size": 0,
+  "operation": "SET",
+  "validators": [
+    "curios:tag"
+  ]
+}

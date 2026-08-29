@@ -1,6 +1,6 @@
 {
   "icon": "curios:slot/empty_curio_slot",
-  "order": -10002,
+  "order": 20004,
   "operation": "SET",
   "size": 0,
   "validators": [

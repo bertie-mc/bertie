@@ -3,7 +3,7 @@
   "drop_rule": "DEFAULT",
   "icon": "aces_spell_utils:slot/sheath",
   "operation": "SET",
-  "order": -10007,
+  "order": 20010,
   "render_toggle": true,
   "size": 0,
   "validators": [

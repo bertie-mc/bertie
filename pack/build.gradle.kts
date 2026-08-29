@@ -18,7 +18,6 @@ dependencies {
     clienttestCompileOnly(deps.terraCurio)
 
     packComponents(deps.accessdenied)
-    packComponents(deps.accessoriesCompatLayer)
     packComponents(deps.advancedLootInfo)
     packComponents(deps.advancementPlaques)
     packComponents(deps.airJumpEnchantment)

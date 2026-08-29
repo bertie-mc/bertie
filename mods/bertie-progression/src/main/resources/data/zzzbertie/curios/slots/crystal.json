@@ -3,7 +3,7 @@
   "drop_rule": "DEFAULT",
   "icon": "hazennstuff:slot/crystal",
   "operation": "SET",
-  "order": 9850,
+  "order": 150,
   "render_toggle": true,
   "size": 1
 }

@@ -63,15 +63,5 @@
   "item.bertieprogression.kraken_ship_map.filled": "Map to the Kraken's Ship",
   "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
   "curios.identifier.hat": "Head",
-  "accessories.slot.hat": "Head",
-  "curios.modifiers.hat": "When on head:",
-  "accessories.slot.cosmetic": "Cosmetic",
-  "accessories.slot.ionocraft_backpack": "Backpack",
-  "accessories.slot.pandora": "Pandora Charm",
-  "accessories.slot.rings": "Rings",
-  "accessories.slot.sheath": "Sheath",
-  "accessories.slot.talisman": "Talisman",
-  "accessories.slot.trinket": "Trinket",
-  "accessories.slot.waist": "Waist",
-  "accessories.slot.wing": "Wing"
+  "curios.modifiers.hat": "When on head:"
 }

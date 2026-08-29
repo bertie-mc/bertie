@@ -1,6 +1,6 @@
 {
   "icon": "curios:slot/empty_belt_slot",
-  "order": 9940,
+  "order": 60,
   "validators": [
     "curios:tag"
   ],

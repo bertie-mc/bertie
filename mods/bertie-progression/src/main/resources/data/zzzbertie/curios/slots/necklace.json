@@ -5,6 +5,6 @@
     "curios:tag"
   ],
   "icon": "curios:slot/empty_necklace_slot",
-  "order": 9980,
+  "order": 20,
   "operation": "SET"
 }

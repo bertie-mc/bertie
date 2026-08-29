@@ -1,0 +1,9 @@
+{
+  "icon": "curios:slot/threadbound_slot",
+  "order": 3,
+  "replace": false,
+  "size": 1,
+  "validators": [
+    "magitech:threadbound"
+  ]
+}

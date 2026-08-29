@@ -873,7 +873,8 @@ write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
                              "itemRegistryName": "sophisticatedbackpacks:copper_backpack"}],
     "type": "sophisticatedbackpacks:backpack_upgrade",
     "category": "misc",
-    "key": {"C": {"tag": "c:storage_blocks/copper"}, "R": {"item": "minecraft:rabbit_hide"},
+    "key": {"C": {"item": "berlordscarving:copper_big_slate"},
+            "R": {"item": "minecraft:rabbit_hide"},
             "B": {"item": "sophisticatedbackpacks:backpack"}},
     "pattern": ["CR", "BC"],
     "result": {"count": 1, "id": "sophisticatedbackpacks:copper_backpack"},
@@ -881,7 +882,7 @@ write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
 # Iron: a Tier-I ritual. 5000 blood and 50 aureal are both inside the T1 ceiling (1000/10/10000/900),
 # and the eight pedestals are exactly full.
 _iron_backpack = ritual("sophisticatedbackpacks:copper_backpack",
-                        [("minecraft:iron_block", 4), ("armageddon_mod:colossal_iron_ingot", 2),
+                        [("berlordscarving:iron_slate", 4), ("armageddon_mod:colossal_iron_ingot", 2),
                          ("alexsmobs:kangaroo_hide", 2)],
                         "sophisticatedbackpacks:iron_backpack", 1, tier=1,
                         essences={"aureal": 50, "blood": 5000, "souls": 0})
@@ -891,11 +892,14 @@ _iron_backpack["result"] = {"type": "bertieprogression:upgrade_storage",
                             "result_item": "sophisticatedbackpacks:iron_backpack"}
 write(f"{RIT}/iron_backpack.json", _iron_backpack)
 write("data/sophisticatedbackpacks/recipe/iron_backpack.json", DISABLED)
+# ...and the copper-to-iron ring, which is a separate file and was still in the book.
+write("data/sophisticatedbackpacks/recipe/iron_backpack_from_copper.json", DISABLED)
 # Gold: the Spirit Altar, carrying components across so the pack keeps what is in it.
 _gold_backpack = infusion("sophisticatedbackpacks:iron_backpack", 1,
-                          [("minecraft:gold_block", 3), ("armageddon_mod:gilded_plate", 3),
-                           ("malum:block_of_hallowed_gold", 1), ("slag:rose_gold_block", 1),
-                           ("l2complements:totemic_gold_ingot", 3), ("alexscaves:tough_hide", 3),
+                          [("berlordscarving:golden_big_slate", 3), ("armageddon_mod:gilded_plate", 3),
+                           ("malum:hallowed_gold_ingot", 8), ("slag:rose_gold_ingot", 8),
+                           ("l2complements:totemic_gold_ingot", 3),
+                           ("mythsandlegends:amarok_hide", 2),
                            ("armageddon_mod:gilded_ingot_smithing_template", 1)],
                           [SP("sacred", 6), SP("aqueous", 12), SP("earthen", 12)],
                           "sophisticatedbackpacks:gold_backpack", 1)
@@ -1494,8 +1498,6 @@ _ACC_SLOTS = {"accessory", "anklet", "back", "belt", "cape", "charm", "face", "h
 
 def slot_tag(slot, payload):
     write(f"data/curios/tags/item/{slot}.json", payload)
-    if slot in _ACC_SLOTS:
-        write(f"data/accessories/tags/item/{slot}.json", payload)
 
 
 # --- Curios slots. The pack runs two slot registries at once: Curios, and Accessories through the
@@ -1508,8 +1510,8 @@ def slot_tag(slot, payload):
 #
 #     Kaleidoscope Doll's curio support is dropped outright: it claimed the shared head slot and
 #     narrowed it to dolls, which is what made every hat and pair of goggles unequippable. ---
-_SLOT_PLAN = {'accessory': {'size': 6, 'validators': ['curios:tag']}, 'amulet': {'order': 140}, 'back': {'order': 30, 'size': 1, 'validators': ['curios:tag']}, 'belt': {'order': 60, 'size': 1, 'validators': ['curios:tag']}, 'brooch': {'order': 170}, 'cape': {'order': 40, 'size': 1, 'validators': ['curios:tag']}, 'charm': {'size': 0}, 'cosmetic': {'size': 0}, 'crystal': {'order': 150}, 'curio': {'size': 0}, 'deep_learner': {'order': 230}, 'hand': {'order': 70, 'size': 1, 'validators': ['curios:tag']}, 'hands': {'size': 0}, 'head': {'size': 0}, 'hat': {'order': 10, 'size': 1, 'validators': ['curios:tag']}, 'hooked_hook': {'order': 210}, 'ionocraft_backpack': {'size': 0}, 'necklace': {'order': 20, 'size': 1, 'validators': ['curios:tag']}, 'pandora': {'size': 1, 'validators': ['curios:tag']}, 'pigment_palette': {'order': 200}, 'pin': {'order': 190}, 'psd': {'order': 240}, 'qio': {'order': 250}, 'refinedstorage_curios_integration': {'order': 220}, 'ring': {'order': 90, 'size': 2, 'validators': ['curios:tag']}, 'rings': {'size': 0}, 'rune': {'order': 160}, 'scroll': {'order': 130}, 'sheath': {'size': 0}, 'shoes': {'order': 100, 'size': 1, 'validators': ['curios:tag']}, 'spellbook': {'order': 110}, 'spellstone': {'order': 120}, 'talisman': {'size': 0}, 'teleporter': {'order': 260}, 'trinket': {'size': 0}, 'waist': {'size': 0}, 'well': {'order': 180}, 'wing': {'order': 50, 'size': 1, 'validators': ['curios:tag']}, 'wrist': {'size': 0}}
-_SLOT_FILES = {'accessory': {'accessories': {'terra_curio': {'amount': 6, 'icon': 'terra_curio:slot/accessory', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'terra_curio': {'add_cosmetic': True, 'icon': 'terra_curio:slot/accessory', 'size': 6}}}, 'amulet': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_amulet_slot', 'size': 1}}}, 'back': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/back', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_back_slot', 'order': 80, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 1}}}, 'belt': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/belt', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_belt_slot', 'order': 180, 'validators': ['curios:tag']}, 'magitech': {'operation': 'SET', 'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'brooch': {'accessories': {}, 'curios': {'malum': {'add_cosmetic': False, 'icon': 'malum:slot/empty_brooch_slot', 'size': 1}}}, 'cape': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/cape', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'charm': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/charm', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_charm_slot', 'order': 200, 'validators': ['curios:tag']}, 'enderio': {'size': 2}, 'enigmaticlegacyplus': {'size': 1}, 'iceandfire': {'size': 1}, 'magic_coins': {'size': 1}, 'malum': {'add_cosmetic': True, 'size': 1}}}, 'cosmetic': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'curios:slot/empty_cosmetic_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'crystal': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/crystal', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'curio': {'accessories': {}, 'curios': {'curios': {'icon': 'curios:slot/empty_curio_slot', 'order': 20}, 'curseofpandora': {'operation': 'SET', 'size': 0}}}, 'deep_learner': {'accessories': {}, 'curios': {'hostilenetworks': {'icon': 'hostilenetworks:item/empty_learner_slot', 'render_toggle': False, 'size': 1}}}, 'hand': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/hand', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'hands': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True, 'size': 2}, 'cataclysm': {'size': 2}, 'curios': {'icon': 'curios:slot/empty_hands_slot', 'order': 140, 'validators': ['curios:tag']}}}, 'hat': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/hat', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'head': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_head_slot', 'order': 40, 'validators': ['curios:tag']}, 'kaleidoscope_doll': {'add_cosmetic': True, 'size': 1, 'validators': ['kaleidoscope_doll:doll_item']}}}, 'hooked_hook': {'accessories': {}, 'curios': {'hooked': {'icon': 'hooked:slot/hook_slot', 'render_toggle': False}}}, 'ionocraft_backpack': {'accessories': {}, 'curios': {}}, 'necklace': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/necklace', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'cognition': {'add_cosmetic': False, 'size': 1, 'validators': ['curios:tag']}, 'curios': {'icon': 'curios:slot/empty_necklace_slot', 'order': 60, 'validators': ['curios:tag']}, 'irons_spellbooks': {'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'pandora': {'accessories': {}, 'curios': {'pandora': {'add_cosmetic': False, 'icon': 'pandora:slot/empty_pandora', 'order': 1000943, 'render_toggle': False, 'size': 0, 'use_native_gui': False}}}, 'pigment_palette': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pigment_palette', 'order': 189, 'size': 1}}}, 'pin': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pin', 'order': 100}}}, 'psd': {'accessories': {}, 'curios': {'compactmachines': {'icon': 'compactmachines:slot/empty_psd', 'size': 1, 'validators': ['compactmachines:has_shrinking_config']}}}, 'qio': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/qio_slot', 'size': 1}}}, 'refinedstorage_curios_integration': {'accessories': {}, 'curios': {'refinedstorage_curios_integration': {'icon': 'refinedstorage_curios_integration:slot/curios', 'order': 5, 'size': 2}}}, 'ring': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/ring', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_ring_slot', 'order': 160, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 2}, 'irons_spellbooks': {'size': 2}, 'magitech': {'operation': 'ADD', 'size': 2}, 'malum': {'add_cosmetic': False, 'size': 2}, 'pastel': {'size': 2}}}, 'rings': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_ring_slot', 'order': 110, 'size': 2}}}, 'rune': {'accessories': {}, 'curios': {'malum': {'icon': 'malum:slot/empty_rune_slot', 'render_toggle': False, 'size': 0}}}, 'scroll': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_scroll_slot', 'size': 0}}}, 'sheath': {'accessories': {}, 'curios': {'aces_spell_utils': {'add_cosmetic': True, 'drop_rule': 'DEFAULT', 'icon': 'aces_spell_utils:slot/sheath', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'shoes': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/shoes', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'spellbook': {'accessories': {}, 'curios': {'irons_spellbooks': {'icon': 'curios:slot/spellbook_slot', 'order': 500, 'replace': False, 'size': 1}}}, 'spellstone': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_spellstone_slot', 'size': 0}}}, 'talisman': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_talisman_slot', 'order': 180, 'size': 0}}}, 'teleporter': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/teleporter_slot', 'size': 1}}}, 'trinket': {'accessories': {}, 'curios': {'nameless_trinkets': {'add_cosmetic': False, 'icon': 'nameless_trinkets:slot/trinket_slot', 'order': 20, 'size': 4}}}, 'waist': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_waist_slot', 'order': 170, 'size': 1}}}, 'well': {'accessories': {}, 'curios': {'malstone': {'icon': 'malstone:slot/well', 'render_toggle': False, 'size': 0}}}, 'wing': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}, 'hazentouvelib': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazentouvelib:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'wrist': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/wrist', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}}
+_SLOT_PLAN = {'accessory': {'size': 6, 'validators': ['curios:tag']}, 'amulet': {'order': 140}, 'artifact': {'order': 5}, 'back': {'order': 30, 'size': 1, 'validators': ['curios:tag']}, 'belt': {'order': 60, 'size': 1, 'validators': ['curios:tag']}, 'body': {'size': 0}, 'bracelet': {'size': 0}, 'brooch': {'order': 170}, 'cape': {'order': 40, 'size': 1, 'validators': ['curios:tag']}, 'charm': {'size': 0}, 'cosmetic': {'size': 0}, 'crystal': {'order': 150}, 'curio': {'size': 0}, 'deep_learner': {'order': 230}, 'face': {'order': 1}, 'feet': {'size': 0}, 'geas': {'order': 2}, 'hand': {'order': 70, 'size': 1, 'validators': ['curios:tag']}, 'hands': {'size': 0}, 'hat': {'order': 10, 'size': 1, 'validators': ['curios:tag']}, 'head': {'size': 0}, 'hooked_hook': {'order': 210}, 'hostility_curse': {'order': 4}, 'ionocraft_backpack': {'size': 0}, 'necklace': {'order': 20, 'size': 1, 'validators': ['curios:tag']}, 'pandora': {'size': 1, 'validators': ['curios:tag']}, 'pigment_palette': {'order': 200}, 'pin': {'order': 190}, 'psd': {'order': 240}, 'qio': {'order': 250}, 'refinedstorage_curios_integration': {'order': 220}, 'ring': {'order': 90, 'size': 2, 'validators': ['curios:tag']}, 'rings': {'size': 0}, 'rune': {'order': 160}, 'scroll': {'order': 130}, 'sheath': {'size': 0}, 'shoes': {'order': 100, 'size': 1, 'validators': ['curios:tag']}, 'spellbook': {'order': 110}, 'spellstone': {'order': 120}, 'talisman': {'size': 0}, 'teleporter': {'order': 260}, 'threadbound': {'order': 3}, 'trinket': {'size': 0}, 'waist': {'size': 0}, 'well': {'order': 180}, 'wing': {'order': 50, 'size': 1, 'validators': ['curios:tag']}, 'wrist': {'size': 0}}
+_SLOT_FILES = {'accessory': {'accessories': {'terra_curio': {'amount': 6, 'icon': 'terra_curio:slot/accessory', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'terra_curio': {'add_cosmetic': True, 'icon': 'terra_curio:slot/accessory', 'size': 6}}}, 'amulet': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_amulet_slot', 'size': 1}}}, 'artifact': {'accessories': {}, 'curios': {'discerning_the_eldritch': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'discerning_the_eldritch:slot/artifact', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'back': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/back', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_back_slot', 'order': 80, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 1}}}, 'belt': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/belt', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_belt_slot', 'order': 180, 'validators': ['curios:tag']}, 'magitech': {'operation': 'SET', 'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'body': {'accessories': {}, 'curios': {'curios': {'icon': 'curios:slot/empty_body_slot', 'order': 100, 'validators': ['curios:tag']}}}, 'bracelet': {'accessories': {}, 'curios': {'curios': {'icon': 'curios:slot/empty_bracelet_slot', 'order': 120, 'validators': ['curios:tag']}}}, 'brooch': {'accessories': {}, 'curios': {'malum': {'add_cosmetic': False, 'icon': 'malum:slot/empty_brooch_slot', 'size': 1}}}, 'cape': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/cape', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'charm': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/charm', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_charm_slot', 'order': 200, 'validators': ['curios:tag']}, 'enderio': {'size': 2}, 'enigmaticlegacyplus': {'size': 1}, 'iceandfire': {'size': 1}, 'magic_coins': {'size': 1}, 'malum': {'add_cosmetic': True, 'size': 1}}}, 'cosmetic': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'curios:slot/empty_cosmetic_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'crystal': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/crystal', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'curio': {'accessories': {}, 'curios': {'curios': {'icon': 'curios:slot/empty_curio_slot', 'order': 20}, 'curseofpandora': {'operation': 'SET', 'size': 0}}}, 'deep_learner': {'accessories': {}, 'curios': {'hostilenetworks': {'icon': 'hostilenetworks:item/empty_learner_slot', 'render_toggle': False, 'size': 1}}}, 'face': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/face', 'order': 40, 'size': 1}}}, 'feet': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True, 'icon': 'minecraft:item/empty_armor_slot_boots', 'order': 190, 'size': 1}, 'cataclysm': {'icon': 'minecraft:item/empty_armor_slot_boots', 'order': 190, 'size': 1}, 'pastel': {'icon': 'pastel:slot/feet', 'order': 180, 'size': 1}}}, 'geas': {'accessories': {}, 'curios': {'malum': {'icon': 'malum:slot/empty_geas_slot', 'render_toggle': False, 'size': 0}}}, 'hand': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/hand', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'hands': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True, 'size': 2}, 'cataclysm': {'size': 2}, 'curios': {'icon': 'curios:slot/empty_hands_slot', 'order': 140, 'validators': ['curios:tag']}}}, 'hat': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/hat', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'head': {'accessories': {}, 'curios': {'artifacts': {'add_cosmetic': True}, 'curios': {'icon': 'curios:slot/empty_head_slot', 'order': 40, 'validators': ['curios:tag']}, 'kaleidoscope_doll': {'add_cosmetic': True, 'size': 1, 'validators': ['kaleidoscope_doll:doll_item']}}}, 'hooked_hook': {'accessories': {}, 'curios': {'hooked': {'icon': 'hooked:slot/hook_slot', 'render_toggle': False}}}, 'hostility_curse': {'accessories': {}, 'curios': {'l2hostility': {'icon': 'l2hostility:slot/empty_hostility_slot', 'order': 131}}}, 'ionocraft_backpack': {'accessories': {}, 'curios': {}}, 'necklace': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/necklace', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'artifacts': {'add_cosmetic': True}, 'cognition': {'add_cosmetic': False, 'size': 1, 'validators': ['curios:tag']}, 'curios': {'icon': 'curios:slot/empty_necklace_slot', 'order': 60, 'validators': ['curios:tag']}, 'irons_spellbooks': {'size': 1}, 'malum': {'add_cosmetic': False, 'size': 1}}}, 'pandora': {'accessories': {}, 'curios': {'pandora': {'add_cosmetic': False, 'icon': 'pandora:slot/empty_pandora', 'order': 1000943, 'render_toggle': False, 'size': 0, 'use_native_gui': False}}}, 'pigment_palette': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pigment_palette', 'order': 189, 'size': 1}}}, 'pin': {'accessories': {}, 'curios': {'pastel': {'icon': 'pastel:slot/pin', 'order': 100}}}, 'psd': {'accessories': {}, 'curios': {'compactmachines': {'icon': 'compactmachines:slot/empty_psd', 'size': 1, 'validators': ['compactmachines:has_shrinking_config']}}}, 'qio': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/qio_slot', 'size': 1}}}, 'refinedstorage_curios_integration': {'accessories': {}, 'curios': {'refinedstorage_curios_integration': {'icon': 'refinedstorage_curios_integration:slot/curios', 'order': 5, 'size': 2}}}, 'ring': {'accessories': {'accessories': {'amount': 2, 'icon': 'accessories:gui/slot/ring', 'operation': 'set', 'order': 800, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {'curios': {'icon': 'curios:slot/empty_ring_slot', 'order': 160, 'validators': ['curios:tag']}, 'enigmaticlegacyplus': {'size': 2}, 'irons_spellbooks': {'size': 2}, 'magitech': {'operation': 'ADD', 'size': 2}, 'malum': {'add_cosmetic': False, 'size': 2}, 'pastel': {'size': 2}}}, 'rings': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_ring_slot', 'order': 110, 'size': 2}}}, 'rune': {'accessories': {}, 'curios': {'malum': {'icon': 'malum:slot/empty_rune_slot', 'render_toggle': False, 'size': 0}}}, 'scroll': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_scroll_slot', 'size': 0}}}, 'sheath': {'accessories': {}, 'curios': {'aces_spell_utils': {'add_cosmetic': True, 'drop_rule': 'DEFAULT', 'icon': 'aces_spell_utils:slot/sheath', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'shoes': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/shoes', 'operation': 'set', 'order': 900, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}, 'spellbook': {'accessories': {}, 'curios': {'irons_spellbooks': {'icon': 'curios:slot/spellbook_slot', 'order': 500, 'replace': False, 'size': 1}}}, 'spellstone': {'accessories': {}, 'curios': {'enigmaticlegacyplus': {'icon': 'enigmaticlegacyplus:slot/empty_spellstone_slot', 'size': 0}}}, 'talisman': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_talisman_slot', 'order': 180, 'size': 0}}}, 'teleporter': {'accessories': {}, 'curios': {'mekanismcurios': {'add_cosmetic': False, 'icon': 'mekanismcurios:slot/teleporter_slot', 'size': 1}}}, 'threadbound': {'accessories': {}, 'curios': {'magitech': {'icon': 'curios:slot/threadbound_slot', 'order': 1001, 'replace': False, 'size': 1, 'validators': ['magitech:threadbound']}}}, 'trinket': {'accessories': {}, 'curios': {'nameless_trinkets': {'add_cosmetic': False, 'icon': 'nameless_trinkets:slot/trinket_slot', 'order': 20, 'size': 4}}}, 'waist': {'accessories': {}, 'curios': {'cataclysm': {'icon': 'cataclysm:item/empty_waist_slot', 'order': 170, 'size': 1}}}, 'well': {'accessories': {}, 'curios': {'malstone': {'icon': 'malstone:slot/well', 'render_toggle': False, 'size': 0}}}, 'wing': {'accessories': {}, 'curios': {'hazennstuff': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazennstuff:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}, 'hazentouvelib': {'add_cosmetic': False, 'drop_rule': 'DEFAULT', 'icon': 'hazentouvelib:slot/wing_slot', 'operation': 'SET', 'order': 6, 'render_toggle': True, 'size': 1}}}, 'wrist': {'accessories': {'accessories': {'amount': 1, 'icon': 'accessories:gui/slot/wrist', 'operation': 'set', 'order': 1000, 'replace': False, 'validators': ['accessories:tag', 'accessories:component']}}, 'curios': {}}}
 
 
 def _merge_slot(original, spec, accessories):
@@ -1531,25 +1533,18 @@ def _merge_slot(original, spec, accessories):
 
 # Slot overrides must use each declaring mod's resource path; a separate namespace does not win the
 # collision. Merge existing fields to retain icons and metadata, and keep the Bertie path as a
-# backstop. The menu sorts `order` from highest to lowest, while _SLOT_PLAN stores one-based visual
-# positions. Curios slot sizes cross into Accessories only when an Accessories slot file exists, so
-# emit one for every managed slot and copy its icon explicitly.
+# backstop. The menu sorts `order` from lowest to highest via Curios' own SlotType.compareTo, and
+# _SLOT_PLAN stores one-based visual positions, so a position is the order.
 _LAST = "zzzbertie"
-_MENU_TOP = 10000
 
-# CuriosConversionUtils.slotConvertToA renames six Curios ids on the way into the Accessories slot
-# list, so these never exist there under their own name - they are merged into the slot on the
-# right, and Curios' `curio` lands on `any`, which the loader drops on purpose. Declaring one on
-# that side registers a slot the compat layer cannot resolve back: `curio` crashed the server tick
-# the moment Sophisticated Backpacks asked what slots a backpack fits. Closing them there is not
-# needed either, since the id the player actually has is the one on the right.
-_CURIOS_ALIASES = {"curio": "any", "head": "hat", "hands": "hand",
-                   "feet": "shoes", "body": "cape", "bracelet": "wrist"}
+# The Accessories compat layer used to fold head->hat, hands->hand, feet->shoes, body->cape and
+# bracelet->wrist. Without it these are ordinary slots, closed by name like any other.
+_CURIOS_ALIASES = set()
 
 
 def _menu_order(rank):
-    """Convert a one-based visual position to the descending value used by the menu."""
-    return _MENU_TOP - rank
+    """Convert a one-based visual position to the value the menu sorts on."""
+    return rank
 
 
 # Unpositioned slots still need an explicit number or their declaring mod can move them in the
@@ -1563,8 +1558,6 @@ for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
     # that returns a verdict, so kaleidoscope_doll's doll_item predicate on `head` would reject all
     # hats after the slot merges into `hat`.
     _SLOT_PLAN[_k]["validators"] = ["curios:tag"]
-
-_slot_lang = {}
 
 for _slot, _spec in sorted(_SLOT_PLAN.items()):
     _spec["order"] = _menu_order(_spec["order"])
@@ -1587,26 +1580,7 @@ for _slot, _spec in sorted(_SLOT_PLAN.items()):
         _d["icon"] = "curios:slot/empty_head_slot"
     write(f"data/{_LAST}/curios/slots/{_slot}.json", _d)
 
-    if _slot in _CURIOS_ALIASES:
-        continue
-
-    # Accessories side: the same, but only where this pack sets a size - see (3). A slot we only
-    # reorder is left undeclared here on purpose, so the compat layer keeps carrying its icon and
-    # its name over from Curios.
-    if "size" not in _spec:
-        continue
-    for _ns, _own in _acc.items():
-        _s2 = {k: v for k, v in _spec.items() if k != "size"} if _own.get("operation") == "add" else _spec
-        write(f"data/{_ns}/accessories/slot/{_slot}.json", _merge_slot(_own, _s2, True))
-    _union = {}
-    for _o in _acc.values():
-        _union.update(_o)
-    _a = _merge_slot(_union, _spec, True)
-    if "icon" not in _a and "icon" in _d:         # the icon the compat layer will no longer carry
-        _a["icon"] = _d["icon"]
-    write(f"data/{_LAST}/accessories/slot/{_slot}.json", _a)
-    if _slot not in _ACC_SLOTS:                  # nor the name, so this pack has to supply it
-        _slot_lang[f"accessories.slot.{_slot}"] = _slot.replace("_", " ").title()
+    
 
 slot_tag("belt",
       {"replace": False, "values": [
@@ -1777,9 +1751,6 @@ slot_tag("hat",
         {"id": "artifacts:snorkel", "required": False},
         {"id": "artifacts:superstitious_hat", "required": False},
         {"id": "artifacts:villager_hat", "required": False},
-        {"id": "cataclysm:aptrgangr_head", "required": False},
-        {"id": "cataclysm:draugr_head", "required": False},
-        {"id": "cataclysm:kobolediator_skull", "required": False},
         {"id": "create:goggles", "required": False},
         {"id": "l2hostility:detector_glasses", "required": False},
         {"id": "l2hostility:oddeyes_glasses", "required": False},
@@ -2093,7 +2064,7 @@ slot_tag("head", {"replace": True, "values": []})
 # Cataclysm hands out the slots it thinks it owns from its own entity file; keep the four that are
 # real and let the file above declare the rest.
 write("data/cataclysm/curios/entities/slots.json",
-      {"entities": ["player"], "slots": ["head", "necklace", "hands", "feet"]})
+      {"entities": ["player"], "slots": ["necklace"]})
 
 # --- Closing a slot by size is not enough for one that its own mod tops up in code. TerraCurio's
 #     `accessory` went 6 -> 4 under a size of 0, because the mod hands the player four of them back
@@ -2110,14 +2081,6 @@ write("data/aces_spell_utils/curios/entities/entities.json",
 write("data/hazennstuff/curios/entities/entities.json",
       {"entities": ["player"], "slots": ["crystal", "wing"]})      # was: + cosmetic
 
-# Charm and wrist are two of the twelve Accessories binds to every player by default, and a default
-# slot is one the compat layer will only ever grow, never shrink - which is why closing one from the
-# Curios side never took. Taking them out of that list is what actually removes them. The other ten
-# are Accessories' own; only these two are dropped.
-write("data/accessories/accessories/entity/default.json",
-      {"replace": False, "entities": ["#accessories:defaulted_targets"],
-       "slots": ["hat", "face", "necklace", "cape", "back", "hand", "ring", "belt", "anklet",
-                 "shoes"]})
 
 # Seven more mods hand the player a charm slot of their own, and one binding is enough to keep the
 # slot alive, so each of their files is rewritten without it and with everything else left alone.
@@ -3726,13 +3689,9 @@ lang.update({
 # `hat` is the head slot in this pack - it is the one the player actually has - so it is named for
 # what it holds in both registries' screens.
 lang["curios.identifier.hat"] = "Head"
-lang["accessories.slot.hat"] = "Head"
 lang["curios.modifiers.hat"] = "When on head:"
 # Declaring a slot on the Accessories side costs it the name the compat layer would otherwise carry
 # over from Curios, so each one gets a line here. Collected while the slot files were written.
-lang.update(_slot_lang)
-lang["accessories.slot.ionocraft_backpack"] = "Backpack"
-lang["accessories.slot.pandora"] = "Pandora Charm"
 
 write("assets/bertieprogression/lang/en_us.json", lang)
 

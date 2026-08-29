@@ -1,14 +1,10 @@
 profile = "release-curseforge"
-inputs-hash = "0b8b472e0b590c2bb9f838809cc3c957c47e94e4a09964ec876937a41dc62a9f"
+inputs-hash = "059829a28eb2e4958008e42b9cc8b3123425cecb64ef2842a69b5a11723f836e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
 any = "curseforge:917449:8082280"
 mod = "curseforge:917449:8082280"
-
-[components."accessories-compat-layer"]
-any = "curseforge:1315611:7585673"
-mod = "curseforge:1315611:7585673"
 
 [components."advanced-loot-info"]
 any = "curseforge:1205426:8168901"
@@ -3776,27 +3772,6 @@ bundled-provides = []
 required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.2,5)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1315611:7585673"]
-name = "accessories-compat-layer"
-component = "accessories-compat-layer"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "accessories-compat-layer-1315611"
-version = "7585673"
-filename = "accessories_compat_layer-neoforge-0.1.12+1.21.1.jar"
-project-id = 1315611
-slug = "accessories-compat-layer"
-file-id = 7585673
-provides = ["accessories_compat_layer", "cclayer", "tclayer"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:532610:6785734", "mod-id" = "owo", "version-range" = "[0.12.15.1-beta.6+1.21,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "mod-id" = "accessories", "version-range" = "[1.1.0-beta.53+1.21.1,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.5.1+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[,9.5.1+1.21.1)", "side" = "both", "origin" = "archive" }]
 bundled = []
 integrations = []
 
@@ -10960,25 +10935,6 @@ bundled-provides = []
 required = [{ "artifact" = "curseforge:1015157:6485740", "mod-id" = "paxi", "side" = "both", "origin" = "profile:release-curseforge:native-packs.datapack" }]
 optional = []
 incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:jtmvUHXj:Fb55Fgjz"]
-name = "accessories"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "jtmvUHXj"
-version = "Fb55Fgjz"
-filename = "accessories-neoforge-1.1.0-beta.53+1.21.1.jar"
-project-id = "jtmvUHXj"
-version-id = "Fb55Fgjz"
-provides = ["accessories"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:532610:6785734", "mod-id" = "owo", "version-range" = "[0.12.15.0+1.21,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = [{ "artifact" = "curseforge:1315611:7585673", "mod-id" = "accessories_compat_layer", "version-range" = "(,0.1.9]", "side" = "both", "origin" = "archive" }]
 bundled = []
 integrations = []
 

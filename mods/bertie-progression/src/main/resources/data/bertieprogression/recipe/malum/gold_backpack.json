@@ -2,11 +2,11 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "alexscaves"
+      "modid": "armageddon_mod"
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "armageddon_mod"
+      "modid": "berlordscarving"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -15,6 +15,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -32,7 +36,7 @@
   },
   "extraInputs": [
     {
-      "item": "minecraft:gold_block",
+      "item": "berlordscarving:golden_big_slate",
       "count": 3
     },
     {
@@ -40,20 +44,20 @@
       "count": 3
     },
     {
-      "item": "malum:block_of_hallowed_gold",
-      "count": 1
+      "item": "malum:hallowed_gold_ingot",
+      "count": 8
     },
     {
-      "item": "slag:rose_gold_block",
-      "count": 1
+      "item": "slag:rose_gold_ingot",
+      "count": 8
     },
     {
       "item": "l2complements:totemic_gold_ingot",
       "count": 3
     },
     {
-      "item": "alexscaves:tough_hide",
-      "count": 3
+      "item": "mythsandlegends:amarok_hide",
+      "count": 2
     },
     {
       "item": "armageddon_mod:gilded_ingot_smithing_template",

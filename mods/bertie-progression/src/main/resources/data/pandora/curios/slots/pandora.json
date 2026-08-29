@@ -1,7 +1,7 @@
 {
   "add_cosmetic": false,
   "icon": "pandora:slot/empty_pandora",
-  "order": 9898,
+  "order": 102,
   "render_toggle": false,
   "size": 1,
   "use_native_gui": false,

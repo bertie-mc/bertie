@@ -1,7 +1,7 @@
 {
   "size": 2,
   "operation": "SET",
-  "order": 9910,
+  "order": 90,
   "validators": [
     "curios:tag"
   ]

@@ -3,7 +3,7 @@
   "icon": "terra_curio:slot/accessory",
   "size": 6,
   "operation": "SET",
-  "order": 9899,
+  "order": 101,
   "validators": [
     "curios:tag"
   ]
