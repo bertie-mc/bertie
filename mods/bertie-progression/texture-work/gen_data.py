@@ -1518,7 +1518,8 @@ for _slot, _size in sorted(_SIZED.items()):
         _d["validators"] = ["kaleidoscope_doll:doll_item"]
     _slot_write(_slot, _d)
 
-_CLOSED = ["trinket", "sheath", "accessory", "talisman", "rings", "waist"]
+_CLOSED = ["trinket", "sheath", "accessory", "talisman", "rings", "waist",
+           "ionocraft_backpack"]
 for _slot in _CLOSED:
     _slot_write(_slot, {"operation": "SET", "size": 0})
     write(f"data/curios/tags/item/{_slot}.json", {"replace": True, "values": []})
@@ -1643,7 +1644,7 @@ write("data/curios/tags/item/ring.json",
         {"id": "hazennstuff:the_prefects_ring", "required": False},
     ]})
 write("data/curios/tags/item/shoes.json",
-      {"replace": False, "values": [
+      {"replace": True, "values": [
         {"id": "terra_curio:ambhipian_boots", "required": False},
         {"id": "terra_curio:dunerider_boots", "required": False},
         {"id": "terra_curio:fairy_boots", "required": False},
@@ -1664,6 +1665,28 @@ write("data/curios/tags/item/shoes.json",
         {"id": "terra_curio:terraspark_boots", "required": False},
         {"id": "terra_curio:water_walking_boots", "required": False},
     ]})
+write("data/curios/tags/item/hands.json",
+      {"replace": True, "values": [
+        {"id": "artifacts:digging_claws", "required": False},
+        {"id": "artifacts:fire_gauntlet", "required": False},
+        {"id": "artifacts:golden_hook", "required": False},
+        {"id": "artifacts:onion_ring", "required": False},
+        {"id": "artifacts:pickaxe_heater", "required": False},
+        {"id": "artifacts:pocket_piston", "required": False},
+        {"id": "artifacts:power_glove", "required": False},
+        {"id": "artifacts:vampiric_glove", "required": False},
+        {"id": "artifacts:withered_bracelet", "required": False},
+        {"id": "cataclysm:blazing_grips", "required": False},
+        {"id": "cataclysm:chitin_claw", "required": False},
+        {"id": "cataclysm:sticky_gloves", "required": False},
+        {"id": "l2hostility:flaming_thorn", "required": False},
+        {"id": "l2hostility:imagine_breaker", "required": False},
+        {"id": "l2hostility:infinity_glove", "required": False},
+        {"id": "l2hostility:platinum_star", "required": False},
+        {"id": "pastel:aether_graced_nectar_gloves", "required": False},
+        {"id": "pastel:gloves_of_dawns_grasp", "required": False},
+    ]})
+write("data/curios/tags/item/hat.json", {"replace": True, "values": []})
 write("data/curios/tags/item/wing.json",
       {"replace": False, "values": [
         {"id": "alexsmobs:tarantula_hawk_elytra", "required": False},
@@ -1789,20 +1812,6 @@ write("data/curios/tags/item/charm.json",
         {"id": "l2complements:eternal_totem_of_dream", "required": False},
         {"id": "l2complements:totem_of_dream", "required": False},
         {"id": "l2complements:totem_of_the_sea", "required": False},
-        {"id": "l2hostility:charm_of_looting_1", "required": False},
-        {"id": "l2hostility:charm_of_looting_2", "required": False},
-        {"id": "l2hostility:charm_of_looting_3", "required": False},
-        {"id": "l2hostility:charm_of_looting_4", "required": False},
-        {"id": "l2hostility:curse_of_envy", "required": False},
-        {"id": "l2hostility:curse_of_gluttony", "required": False},
-        {"id": "l2hostility:curse_of_greed", "required": False},
-        {"id": "l2hostility:curse_of_lust", "required": False},
-        {"id": "l2hostility:curse_of_pride", "required": False},
-        {"id": "l2hostility:curse_of_sloth", "required": False},
-        {"id": "l2hostility:curse_of_wrath", "required": False},
-        {"id": "l2hostility:divinity_cross", "required": False},
-        {"id": "l2hostility:divinity_light", "required": False},
-        {"id": "l2hostility:platinum_star", "required": False},
         {"id": "l2hostility:pocket_of_restoration", "required": False},
         {"id": "magic_coins:prosperity_amulet", "required": False},
         {"id": "malstone:evil_engine", "required": False},
@@ -1827,7 +1836,6 @@ write("data/curios/tags/item/charm.json",
         {"id": "nameless_trinkets:nelumbo", "required": False},
         {"id": "nameless_trinkets:puffer_fish_liver", "required": False},
         {"id": "nameless_trinkets:reforger", "required": False},
-        {"id": "nameless_trinkets:resonant_heart", "required": False},
         {"id": "nameless_trinkets:reverse_card", "required": False},
         {"id": "nameless_trinkets:sigil_of_baphomet", "required": False},
         {"id": "nameless_trinkets:sleeping_pills", "required": False},

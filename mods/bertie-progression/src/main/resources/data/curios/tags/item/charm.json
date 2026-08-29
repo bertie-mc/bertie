@@ -302,62 +302,6 @@
       "required": false
     },
     {
-      "id": "l2hostility:charm_of_looting_1",
-      "required": false
-    },
-    {
-      "id": "l2hostility:charm_of_looting_2",
-      "required": false
-    },
-    {
-      "id": "l2hostility:charm_of_looting_3",
-      "required": false
-    },
-    {
-      "id": "l2hostility:charm_of_looting_4",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_envy",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_gluttony",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_greed",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_lust",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_pride",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_sloth",
-      "required": false
-    },
-    {
-      "id": "l2hostility:curse_of_wrath",
-      "required": false
-    },
-    {
-      "id": "l2hostility:divinity_cross",
-      "required": false
-    },
-    {
-      "id": "l2hostility:divinity_light",
-      "required": false
-    },
-    {
-      "id": "l2hostility:platinum_star",
-      "required": false
-    },
-    {
       "id": "l2hostility:pocket_of_restoration",
       "required": false
     },
@@ -451,10 +395,6 @@
     },
     {
       "id": "nameless_trinkets:reforger",
-      "required": false
-    },
-    {
-      "id": "nameless_trinkets:resonant_heart",
       "required": false
     },
     {
