@@ -1,6 +1,6 @@
 {
   "icon": "curios:slot/empty_charm_slot",
-  "order": 101,
+  "order": 9899,
   "validators": [
     "curios:tag"
   ],

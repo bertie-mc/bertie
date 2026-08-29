@@ -3,8 +3,7 @@
   "drop_rule": "DEFAULT",
   "icon": "curios:slot/empty_cosmetic_slot",
   "operation": "SET",
-  "order": 901,
+  "order": -10001,
   "render_toggle": true,
-  "size": 0,
-  "validators": []
+  "size": 0
 }

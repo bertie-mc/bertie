@@ -1,7 +1,6 @@
 {
   "icon": "cataclysm:item/empty_waist_slot",
-  "order": 910,
+  "order": -10010,
   "size": 0,
-  "operation": "SET",
-  "validators": []
+  "operation": "SET"
 }

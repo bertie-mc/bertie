@@ -1529,27 +1529,46 @@ def _merge_slot(original, spec, accessories):
     return out
 
 
-# Everything goes under one namespace that sorts after every mod id in the pack. Two ordering
-# rules were beating the earlier attempts at once: two packs holding the SAME path are resolved by
-# mod id, so our copy of another mod's file is simply shadowed by theirs; and slot files from
-# DIFFERENT namespaces are merged in namespace order, where `bertieprogression` sits ahead of
-# curios, nameless_trinkets, terra_curio and most of the rest. A namespace nobody else writes,
-# sorting last, wins on both counts.
+# One namespace nobody else writes, so a slot file of ours never collides with a mod's own path.
+# `bertieprogression` is already the last of the slot-declaring mods in pack order, which is what
+# actually decides the merge - the namespace is only there to keep the paths distinct.
 _LAST = "zzzbertie"
-# Slots berlord did not place still need an explicit number, or they fall back on their own mod's
-# and jump the queue. The ones that are still open sit just after `shoes`, so the run he did place
-# stays intact and teleporter really is last; the closed ones are parked far below.
+
+# --- How the menu is really ordered, and how a slot is really closed. Both of these were guessed
+#     wrong for six builds; both are read off the bytecode of the mods in the pack.
+#
+#  1. THE MENU RUNS FROM THE HIGHEST `order` TO THE LOWEST. SlotTypeLoader.apply finishes with
+#     `sorted(Map.Entry.comparingByValue().reversed())` and SlotType.compareTo is ascending on
+#     `order`, so the sort is DESCENDING. Accessories' own files say the same: hat/necklace/belt
+#     are 1000 and sit first, back/ring are 800 and sit last. The numbers below are the position
+#     berlord asked for, 1 upwards, and `_menu_order` turns each one into the value the game wants.
+#
+#  2. A SLOT THAT EXISTS ONLY ON THE CURIOS SIDE CANNOT BE CLOSED FROM THE CURIOS SIDE. The compat
+#     layer builds the Accessories slot list, and in CuriosCompat.addSlotTypes a slot with no
+#     `accessories/slot/<name>.json` takes the addBuilder branch, where the amount is guarded by
+#     `prevAmount != null` and is therefore never copied across. SlotBuilder.create() then defaults
+#     a null amount to 1, so every slot we "closed" with size 0 came back open with one slot -
+#     trinket, sheath, talisman, rings, waist, hands, head, curio, cosmetic. Writing an Accessories
+#     file for them as well gives the builder a real amount to overwrite, and 0 sticks.
+_MENU_TOP = 10000
+
+
+def _menu_order(rank):
+    """Position 1..n as berlord listed it -> the descending number the screen sorts on."""
+    return _MENU_TOP - rank
+
+
+# Slots he did not place still need a number, or they fall back on their own mod's and jump the
+# queue. The open ones follow `shoes`, so the run he did place stays intact and teleporter is last
+# of it; the closed ones are parked below everything so they cannot surface even if reopened.
 _TAIL = sorted(k for k, v in _SLOT_PLAN.items() if "order" not in v)
-# "size" only appears in the plan for slots this pack sets deliberately, so a slot that is merely
-# unplaced keeps whatever its own mod gave it - several of them are size 0 on purpose and open when
-# you find the item that grants them.
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") != 0]):
     _SLOT_PLAN[_k]["order"] = 101 + _i
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
-    _SLOT_PLAN[_k]["order"] = 900 + _i
-    _SLOT_PLAN[_k]["validators"] = []          # a slot this pack closed validates nothing
+    _SLOT_PLAN[_k]["order"] = 20000 + _i   # past the end, so a closed slot sinks below every mod's
 
 for _slot, _spec in sorted(_SLOT_PLAN.items()):
+    _spec["order"] = _menu_order(_spec["order"])
     _where = _SLOT_FILES[_slot]
     _cur = dict(sorted(_where.get("curios", {}).items()))
     _acc = dict(sorted(_where.get("accessories", {}).items()))
@@ -1560,7 +1579,11 @@ for _slot, _spec in sorted(_SLOT_PLAN.items()):
     if _slot == "hat" and "icon" not in _d:       # hat is the head slot here, so it wears its face
         _d["icon"] = "curios:slot/empty_head_slot"
     write(f"data/{_LAST}/curios/slots/{_slot}.json", _d)
-    if _slot in _ACC_SLOTS:
+    # A closed slot needs the Accessories file too - see (2) above. A slot that stays open and has
+    # no Accessories declaration is left alone on purpose: declaring one there would make the compat
+    # layer skip the Curios icon, order and name it otherwise carries over, and the slot would lose
+    # its picture and show a raw `accessories.slot.<name>` line instead of its name.
+    if _slot in _ACC_SLOTS or _spec.get("size") == 0:
         _base = {}
         for _o in _acc.values():
             _base.update(_o)

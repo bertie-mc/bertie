@@ -4,5 +4,5 @@
   "validators": [
     "compactmachines:has_shrinking_config"
   ],
-  "order": 240
+  "order": 9760
 }

@@ -2,7 +2,7 @@
   "amount": 1,
   "icon": "accessories:gui/slot/cape",
   "operation": "set",
-  "order": 40,
+  "order": 9960,
   "replace": false,
   "validators": [
     "accessories:tag",

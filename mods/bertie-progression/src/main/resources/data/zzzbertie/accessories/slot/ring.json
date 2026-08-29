@@ -2,7 +2,7 @@
   "amount": 2,
   "icon": "accessories:gui/slot/ring",
   "operation": "set",
-  "order": 90,
+  "order": 9910,
   "replace": false,
   "validators": [
     "accessories:tag",

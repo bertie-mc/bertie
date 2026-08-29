@@ -1,7 +1,6 @@
 {
   "icon": "cataclysm:item/empty_talisman_slot",
-  "order": 908,
+  "order": -10008,
   "size": 0,
-  "operation": "SET",
-  "validators": []
+  "operation": "SET"
 }

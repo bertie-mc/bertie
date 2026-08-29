@@ -1,8 +1,10 @@
 {
   "add_cosmetic": true,
   "icon": "curios:slot/empty_head_slot",
-  "order": 904,
-  "validators": [],
+  "order": -10004,
+  "validators": [
+    "kaleidoscope_doll:doll_item"
+  ],
   "size": 0,
   "operation": "SET"
 }

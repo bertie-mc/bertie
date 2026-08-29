@@ -2,7 +2,7 @@
   "amount": 0,
   "icon": "terra_curio:slot/accessory",
   "operation": "set",
-  "order": 900,
+  "order": -10000,
   "replace": false,
   "validators": [
     "accessories:tag",

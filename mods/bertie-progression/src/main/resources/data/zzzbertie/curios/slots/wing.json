@@ -3,7 +3,7 @@
   "drop_rule": "DEFAULT",
   "icon": "hazentouvelib:slot/wing_slot",
   "operation": "SET",
-  "order": 50,
+  "order": 9950,
   "render_toggle": true,
   "size": 1,
   "validators": [

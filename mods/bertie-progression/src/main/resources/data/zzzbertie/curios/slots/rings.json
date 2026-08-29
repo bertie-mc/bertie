@@ -1,7 +1,6 @@
 {
   "icon": "cataclysm:item/empty_ring_slot",
-  "order": 906,
+  "order": -10006,
   "size": 0,
-  "operation": "SET",
-  "validators": []
+  "operation": "SET"
 }

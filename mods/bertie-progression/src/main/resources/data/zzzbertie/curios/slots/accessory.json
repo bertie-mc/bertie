@@ -3,6 +3,5 @@
   "icon": "terra_curio:slot/accessory",
   "size": 0,
   "operation": "SET",
-  "order": 900,
-  "validators": []
+  "order": -10000
 }

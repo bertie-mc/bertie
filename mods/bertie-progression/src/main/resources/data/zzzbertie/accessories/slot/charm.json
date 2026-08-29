@@ -2,7 +2,7 @@
   "amount": 12,
   "icon": "accessories:gui/slot/charm",
   "operation": "set",
-  "order": 101,
+  "order": 9899,
   "replace": false,
   "validators": [
     "accessories:tag",

@@ -2,7 +2,7 @@
   "amount": 1,
   "icon": "accessories:gui/slot/shoes",
   "operation": "set",
-  "order": 100,
+  "order": 9900,
   "replace": false,
   "validators": [
     "accessories:tag",
