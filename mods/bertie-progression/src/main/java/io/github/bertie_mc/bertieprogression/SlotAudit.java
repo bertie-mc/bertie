@@ -5,7 +5,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -58,17 +57,22 @@ public final class SlotAudit {
             return;
         }
         List<String> out = new ArrayList<>();
-        Map<String, ISlotType> slots = CuriosApi.getEntitySlots(player);
-        List<ISlotType> ordered = new ArrayList<>(slots.values());
-        // The screen runs from the highest order to the lowest; mirror that here rather than trust
-        // whatever iteration order the map arrived in.
-        ordered.sort(Comparator.comparingInt(ISlotType::getOrder).reversed()
-                .thenComparing(Comparator.comparing(ISlotType::getIdentifier).reversed()));
-        out.add("slots the player has, in menu order (" + ordered.size() + ")");
-        out.add(String.format("%-4s %-36s %8s %6s", "#", "slot", "order", "size"));
+        // Two views, neither of them re-sorted here. The first is what the screen draws, in its own
+        // order; the second is the slot table it was built from. Sorting either one myself is how a
+        // wrong order got reported as right.
+        out.add("containers the screen draws, in its own order");
+        out.add(String.format("%-4s %-36s %6s %8s", "#", "slot", "slots", "order"));
+        var inv = CuriosApi.getCuriosInventory(player).orElse(null);
+        Map<String, ISlotType> types = CuriosApi.getEntitySlots(player);
         int i = 1;
-        for (ISlotType s : ordered) {
-            out.add(String.format("%-4d %-36s %8d %6d", i++, s.getIdentifier(), s.getOrder(), s.getSize()));
+        if (inv != null) {
+            for (var e : inv.getCurios().entrySet()) {
+                ISlotType t = types.get(e.getKey());
+                out.add(String.format("%-4d %-36s %6d %8s", i++, e.getKey(),
+                        e.getValue().getSlots(), t == null ? "?" : String.valueOf(t.getOrder())));
+            }
+        } else {
+            out.add("  no curios inventory on this player");
         }
         out.add("");
         out.add("head trinkets vs the tags the " + HEAD_SLOT + " slot validates against");
