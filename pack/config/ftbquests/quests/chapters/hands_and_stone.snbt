@@ -1095,8 +1095,8 @@
 				item: { count: 1, id: "irons_spellbooks:inscription_table" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1B0000000000001C"]
@@ -1114,8 +1114,8 @@
 				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1B00000000000034"]
@@ -1133,8 +1133,8 @@
 				item: { count: 1, id: "irons_spellbooks:scroll" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 4.5d
+			y: -4.5d
 		}
 	]
 }

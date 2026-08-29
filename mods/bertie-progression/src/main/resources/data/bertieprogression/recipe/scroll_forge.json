@@ -40,5 +40,6 @@
     "id": "irons_spellbooks:scroll_forge",
     "count": 1
   },
-  "acceptMirrored": false
+  "category": "misc",
+  "accept_mirrored": false
 }

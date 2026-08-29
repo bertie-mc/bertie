@@ -1479,7 +1479,10 @@ write("data/bertieprogression/recipe/scroll_forge.json",
                "D": {"item": "slag:deep_alloy_block"},
                "C": {"item": "minecraft:crying_obsidian"}},
        "result": {"id": "irons_spellbooks:scroll_forge", "count": 1},
-       "acceptMirrored": False})
+       "category": "misc",
+       # Create spells this one snake_case; the camelCase spelling parses as an unknown field and
+       # silently throws the whole recipe away, which is how the forge ended up with no recipe.
+       "accept_mirrored": False})
 
 # --- Curios slots, rebuilt. Three things were wrong at once. Kaleidoscope Doll had taken the head
 #     slot for itself by redeclaring it with a doll-only validator, which silently made every hat,
