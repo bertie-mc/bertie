@@ -20,10 +20,9 @@ public final class ToolcraftPolicy {
     public static final String SCYTHE = "scythe";
 
     /**
-     * Enchantment value for every kept tool. Magitech has no per-material enchantability stat, and
-     * berlord's ruling is that the vanilla "better enchantability rolls a better table offer"
-     * mechanic is dead weight in this pack — so every tool gets one flat value rather than a
-     * material-dependent one. 10 is vanilla diamond.
+     * Enchantment value for every kept tool. Magitech has no per-material enchantability stat, so
+     * the pack uses one flat value rather than material-dependent table rolls. 10 is vanilla
+     * diamond.
      */
     public static final int ENCHANTMENT_VALUE = 10;
 
@@ -65,9 +64,8 @@ public final class ToolcraftPolicy {
      * be extended: the four heads ride on the assembly-only parts, renamed in lang. Item ids are
      * never shown to the player.
      *
-     * <p>{@code sword} is the odd one. Carving's sword-blade shape is close enough to a handle that
-     * berlord took it as one rather than have a shape drawn; it carves the handle, not a blade.
-     * Binding has no carving tab yet.
+     * <p>{@code sword} is the odd one: its carving shape maps to a handle rather than a blade.
+     * Binding has no carving tab.
      *
      * @return a Magitech item path, or null if that carving kind has no part here
      */

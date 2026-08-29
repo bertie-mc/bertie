@@ -1529,30 +1529,11 @@ def _merge_slot(original, spec, accessories):
     return out
 
 
-# --- How a slot override actually wins, and how a slot is really closed. All three of these were
-#     guessed wrong for seven builds; all three are now read off the game's own state.
-#
-#  1. A SEPARATE NAMESPACE WINS NOTHING. Writing our slot files under a namespace that sorts last
-#     was the theory behind six of those builds. The player's saved containers say it lost every
-#     contest it entered - `accessory` stayed at terra_curio's 6 against our 0, `trinket` at
-#     nameless_trinkets' 4. The one override that reliably lands is the DECLARING MOD'S OWN FILE
-#     PATH, where there is a single resource location and ordinary datapack priority settles it.
-#     So every slot is written over every path that declares it, merged onto that file so its icon
-#     and the rest survive, and our own copy is kept alongside as a backstop.
-#
-#  2. THE MENU RUNS FROM THE HIGHEST `order` TO THE LOWEST. SlotTypeLoader.apply finishes with
-#     sorted(Map.Entry.comparingByValue().reversed()) and SlotType.compareTo is ascending on
-#     `order`, so the sort is descending. Accessories' own files agree: hat and necklace are 1000
-#     and lead, back and ring are 800 and trail. The numbers in _SLOT_PLAN are the position berlord
-#     asked for, 1 upwards, and _menu_order turns each into the value the game wants.
-#
-#  3. A SIZE ONLY CROSSES TO THE ACCESSORIES SIDE IF THE SLOT IS DECLARED THERE. In
-#     CuriosCompat.addSlotTypes a slot with no accessories/slot/<name>.json takes the addBuilder
-#     branch, where the amount is guarded by `prevAmount != null` and is never copied;
-#     SlotBuilder.create() then defaults it to 1. That is why `pandora` sits at 1 against our 2 and
-#     why nothing we closed ever closed. Every slot whose size this pack sets gets an Accessories
-#     file, carrying the icon across by hand because declaring one costs the slot the icon and name
-#     the compat layer would otherwise have carried for it.
+# Slot overrides must use each declaring mod's resource path; a separate namespace does not win the
+# collision. Merge existing fields to retain icons and metadata, and keep the Bertie path as a
+# backstop. The menu sorts `order` from highest to lowest, while _SLOT_PLAN stores one-based visual
+# positions. Curios slot sizes cross into Accessories only when an Accessories slot file exists, so
+# emit one for every managed slot and copy its icon explicitly.
 _LAST = "zzzbertie"
 _MENU_TOP = 10000
 
@@ -1567,23 +1548,20 @@ _CURIOS_ALIASES = {"curio": "any", "head": "hat", "hands": "hand",
 
 
 def _menu_order(rank):
-    """Position 1..n as berlord listed it -> the descending number the screen sorts on."""
+    """Convert a one-based visual position to the descending value used by the menu."""
     return _MENU_TOP - rank
 
 
-# Slots he did not place still need a number, or they fall back on their own mod's and jump the
-# queue. The open ones follow `shoes`, so the run he did place stays intact and teleporter is last
-# of it; the closed ones are parked below everything so they cannot surface even if reopened.
+# Unpositioned slots still need an explicit number or their declaring mod can move them in the
+# queue. Open slots follow `shoes`; closed slots stay below everything even if reopened.
 _TAIL = sorted(k for k, v in _SLOT_PLAN.items() if "order" not in v)
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") != 0]):
     _SLOT_PLAN[_k]["order"] = 101 + _i
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
     _SLOT_PLAN[_k]["order"] = 20000 + _i   # past the end, so a closed slot sinks below every mod's
-    # A closed slot must not carry a predicate into the slot it merges into. Accessories takes the
-    # FIRST validator that returns a verdict, not the friendliest one, so kaleidoscope_doll's
-    # doll_item riding along with `head` into `hat` answered before the tag ever did and turned
-    # every hat, circlet and pair of goggles away. Dropping the doll's curio support is what berlord
-    # asked for; this is where it actually happens.
+    # Do not carry a closed slot's predicate into its alias. Accessories uses the first validator
+    # that returns a verdict, so kaleidoscope_doll's doll_item predicate on `head` would reject all
+    # hats after the slot merges into `hat`.
     _SLOT_PLAN[_k]["validators"] = ["curios:tag"]
 
 _slot_lang = {}

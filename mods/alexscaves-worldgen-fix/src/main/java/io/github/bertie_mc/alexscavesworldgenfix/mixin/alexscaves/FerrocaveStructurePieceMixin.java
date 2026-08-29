@@ -31,8 +31,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * leaves the window the biome reverts to the vanilla underground one, so the roof and upper walls
  * are Alex's Caves and the floor and lower walls are vanilla blocks decorated by vanilla features -
  * a flat horizontal seam across the cavern. The four caves that pin their biome overwrite that
- * boundary before anyone can see it; these two never did. berlord reported the seam in Magnetic
- * Caves and Forlorn Hollows only, which is exactly this pair (2026-08-05).
+ * boundary before it is visible; Ferrocave and Forlorn Canyon leave the seam intact.
  *
  * <p>Harmless if Alex's Caves adds the call itself: {@code replaceBiomes} only assigns section
  * biome containers, so running it twice writes the same value twice.

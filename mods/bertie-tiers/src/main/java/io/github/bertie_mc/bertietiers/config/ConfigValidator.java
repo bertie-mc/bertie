@@ -11,8 +11,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Every check the prompt asks for, run against a {@link RegistryProbe} rather than the live
- * registries so the whole thing is unit testable:
+ * Validates the complete tier configuration against a {@link RegistryProbe} rather than live
+ * registries so the contract remains unit testable:
  *
  * <ul>
  *   <li>tier IDs and numeric levels are unique;</li>

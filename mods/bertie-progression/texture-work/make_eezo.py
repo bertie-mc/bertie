@@ -206,11 +206,8 @@ def ore_rows():
 
 # --------------------------------------------------------------------------- the items
 #
-# raw_eezo.png and eezo_ingot.png are NOT generated. berlord drew them by hand, and this
-# script deliberately does not write those filenames: five generated attempts never got
-# there, and a stray run of this file would quietly destroy the ones that did. The maps and
-# the shading helpers that produced them are gone with them - keeping dead code that still
-# knows those paths is how the accident happens.
+# raw_eezo.png and eezo_ingot.png are handcrafted assets. This generator must not write those
+# filenames or retain dead helpers that could overwrite them.
 
 
 def main():
