@@ -1,3 +1,6 @@
 {
-  "order": 120
+  "icon": "curios:slot/spellbook_slot",
+  "order": 110,
+  "replace": false,
+  "size": 1
 }

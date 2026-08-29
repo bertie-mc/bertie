@@ -1,6 +1,11 @@
 {
-  "operation": "SET",
+  "add_cosmetic": false,
+  "icon": "pandora:slot/empty_pandora",
+  "order": 1000943,
+  "render_toggle": false,
   "size": 2,
+  "use_native_gui": false,
+  "operation": "SET",
   "validators": [
     "curios:tag"
   ]

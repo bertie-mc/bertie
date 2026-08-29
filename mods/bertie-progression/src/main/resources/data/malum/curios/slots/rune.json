@@ -1,3 +1,6 @@
 {
-  "order": 170
+  "icon": "malum:slot/empty_rune_slot",
+  "render_toggle": false,
+  "size": 0,
+  "order": 160
 }

@@ -1,0 +1,11 @@
+{
+  "amount": 1,
+  "icon": "accessories:gui/slot/necklace",
+  "operation": "set",
+  "order": 20,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}

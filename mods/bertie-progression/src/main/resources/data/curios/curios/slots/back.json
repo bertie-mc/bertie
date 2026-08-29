@@ -1,8 +1,9 @@
 {
-  "operation": "SET",
-  "size": 1,
+  "icon": "curios:slot/empty_back_slot",
+  "order": 30,
   "validators": [
     "curios:tag"
   ],
-  "order": 40
+  "size": 1,
+  "operation": "SET"
 }

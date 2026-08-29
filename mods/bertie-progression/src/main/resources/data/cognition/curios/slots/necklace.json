@@ -1,8 +1,9 @@
 {
-  "operation": "SET",
+  "add_cosmetic": false,
   "size": 1,
   "validators": [
     "curios:tag"
   ],
-  "order": 30
+  "operation": "SET",
+  "order": 20
 }

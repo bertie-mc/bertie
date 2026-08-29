@@ -1,3 +1,5 @@
 {
-  "order": 230
+  "icon": "refinedstorage_curios_integration:slot/curios",
+  "order": 220,
+  "size": 2
 }

@@ -1,3 +1,6 @@
 {
-  "order": 240
+  "icon": "hostilenetworks:item/empty_learner_slot",
+  "render_toggle": false,
+  "size": 1,
+  "order": 230
 }

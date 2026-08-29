@@ -296,6 +296,21 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# The Accessories registry and Curse of Pandora both declare slots the pack re-sizes.
+[[dependencies.${mod_id}]]
+modId="accessories"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="curseofpandora"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Load after discerning_the_eldritch: its three sheaths are removed with the sheath slot.
 [[dependencies.${mod_id}]]
 modId="discerning_the_eldritch"

@@ -1,0 +1,11 @@
+{
+  "amount": 1,
+  "icon": "accessories:gui/slot/shoes",
+  "operation": "set",
+  "order": 100,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}

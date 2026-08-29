@@ -1,3 +1,6 @@
 {
-  "order": 190
+  "icon": "malstone:slot/well",
+  "render_toggle": false,
+  "size": 0,
+  "order": 180
 }

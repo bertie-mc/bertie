@@ -1,3 +1,6 @@
 {
-  "order": 180
+  "add_cosmetic": false,
+  "icon": "malum:slot/empty_brooch_slot",
+  "size": 1,
+  "order": 170
 }

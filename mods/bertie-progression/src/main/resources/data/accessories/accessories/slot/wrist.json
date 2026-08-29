@@ -1,0 +1,11 @@
+{
+  "amount": 2,
+  "icon": "accessories:gui/slot/wrist",
+  "operation": "set",
+  "order": 80,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}

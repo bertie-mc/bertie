@@ -1,3 +1,5 @@
 {
-  "order": 130
+  "icon": "enigmaticlegacyplus:slot/empty_spellstone_slot",
+  "size": 0,
+  "order": 120
 }

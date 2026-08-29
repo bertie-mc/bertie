@@ -1452,286 +1452,286 @@
 	quest.4C000000000001A9.title: "The Tribune's Medallion"
 	quest.4C000000000001AA.quest_desc: ["Necklace slot."]
 	quest.4C000000000001AA.title: "Necklace of Torngarsuk"
-	quest.4C000000000001AB.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001AB.title: "Ancient Codex"
-	quest.4C000000000001AC.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001AC.title: "Apprentice's Spell Book"
-	quest.4C000000000001AD.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001AD.title: "Blaze Instruction Manual"
-	quest.4C000000000001AE.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001AE.title: "Dragonskin Spell Book"
-	quest.4C000000000001AF.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001AF.title: "Druidic Tome"
-	quest.4C000000000001B0.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B0.title: "Enchanted Spell Book"
-	quest.4C000000000001B1.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B1.title: "Flimsy Journal"
-	quest.4C000000000001B2.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B2.title: "Frostbranded Book"
-	quest.4C000000000001B3.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B3.title: "Grimoire of Evokation"
-	quest.4C000000000001B4.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B4.title: "Ironbound Tome"
-	quest.4C000000000001B5.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B5.title: "Legendary Spell Book"
-	quest.4C000000000001B6.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B6.title: "Necronomicon"
-	quest.4C000000000001B7.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B7.title: "Rotten Spell Book"
-	quest.4C000000000001B8.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B8.title: "Vampiric Spell Book"
-	quest.4C000000000001B9.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001B9.title: "Villager Bible"
-	quest.4C000000000001BA.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BA.title: "Wimpy Spell Book"
-	quest.4C000000000001BB.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BB.title: "Black Book"
-	quest.4C000000000001BC.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BC.title: "Diary of Decay"
-	quest.4C000000000001BD.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BD.title: "Frozen Folios"
-	quest.4C000000000001BE.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BE.title: "Guardian's Guidebook"
-	quest.4C000000000001BF.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001BF.title: "Stormweaver's Spell Tome"
-	quest.4C000000000001C0.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C0.title: "The Apocrypha"
-	quest.4C000000000001C1.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C1.title: "Book o' R'lyeh"
-	quest.4C000000000001C2.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C2.title: "Codex of Malice"
-	quest.4C000000000001C3.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C3.title: "Desert Spellbook"
-	quest.4C000000000001C4.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C4.title: "Disc Driver"
-	quest.4C000000000001C5.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C5.title: "Ignis Spellbook"
-	quest.4C000000000001C6.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C6.title: "Energized Core Spellbook"
-	quest.4C000000000001C7.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C7.title: "Golden Shower"
-	quest.4C000000000001C8.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C8.title: "Cosmonomicon"
-	quest.4C000000000001C9.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001C9.title: "Volume of the Deep"
-	quest.4C000000000001CA.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001CA.title: "Dragonmancer's Oathbook"
-	quest.4C000000000001CB.quest_desc: ["Spell Book slot."]
-	quest.4C000000000001CB.title: "Grimoire of Color, vol.I"
-	quest.4C000000000001CC.quest_desc: ["Belt slot."]
-	quest.4C000000000001CC.title: "Antidote Vessel"
-	quest.4C000000000001CD.quest_desc: ["Belt slot."]
-	quest.4C000000000001CD.title: "Chorus Totem"
-	quest.4C000000000001CE.quest_desc: ["Belt slot."]
-	quest.4C000000000001CE.title: "Cloud in a Bottle"
-	quest.4C000000000001CF.quest_desc: ["Belt slot."]
-	quest.4C000000000001CF.title: "Crystal Heart"
-	quest.4C000000000001D0.quest_desc: ["Belt slot."]
-	quest.4C000000000001D0.title: "Helium Flamingo"
-	quest.4C000000000001D1.quest_desc: ["Belt slot."]
-	quest.4C000000000001D1.title: "Obsidian Skull"
-	quest.4C000000000001D2.quest_desc: ["Belt slot."]
-	quest.4C000000000001D2.title: "Universal Attractor"
-	quest.4C000000000001D3.quest_desc: ["Belt slot."]
-	quest.4C000000000001D3.title: "Warp Drive"
-	quest.4C000000000001D4.quest_desc: ["Belt slot."]
-	quest.4C000000000001D4.title: "Belt of the Limitless"
-	quest.4C000000000001D5.quest_desc: ["Belt slot."]
-	quest.4C000000000001D5.title: "Belt of the Magebane"
-	quest.4C000000000001D6.quest_desc: ["Belt slot."]
-	quest.4C000000000001D6.title: "Belt of the Prospector"
-	quest.4C000000000001D7.quest_desc: ["Belt slot."]
-	quest.4C000000000001D7.title: "Belt of the Starved"
-	quest.4C000000000001D8.quest_desc: ["Belt slot."]
-	quest.4C000000000001D8.title: "Gilded Belt"
-	quest.4C000000000001D9.quest_desc: ["Belt slot."]
-	quest.4C000000000001D9.title: "Broken Magnet"
-	quest.4C000000000001DA.quest_desc: ["Belt slot."]
-	quest.4C000000000001DA.title: "Experience Magnet"
-	quest.4C000000000001DB.quest_desc: ["Belt slot."]
-	quest.4C000000000001DB.title: "Fractured Nullstone"
-	quest.4C000000000001DC.quest_desc: ["Belt slot."]
-	quest.4C000000000001DC.title: "Super Magnet"
-	quest.4C000000000001DD.quest_desc: ["Belt slot."]
-	quest.4C000000000001DD.title: "What...? Magnet"
-	quest.4C000000000001DE.quest_desc: ["Belt slot."]
-	quest.4C000000000001DE.title: "Breaking the Blade"
-	quest.4C000000000001DF.quest_desc: ["Belt slot."]
-	quest.4C000000000001DF.title: "Chess Fall"
-	quest.4C000000000001E0.quest_desc: ["Belt slot."]
-	quest.4C000000000001E0.title: "instantaneous condenser"
-	quest.4C000000000001E1.quest_desc: ["Belt slot."]
-	quest.4C000000000001E1.title: "Zhe Yuan"
-	quest.4C000000000001E2.quest_desc: ["Belt slot."]
-	quest.4C000000000001E2.title: "Black Belt"
-	quest.4C000000000001E3.quest_desc: ["Belt slot."]
-	quest.4C000000000001E3.title: "Inner Tube"
-	quest.4C000000000001E4.quest_desc: ["Belt slot."]
-	quest.4C000000000001E4.title: "Toolbelt"
-	quest.4C000000000001E5.quest_desc: ["Belt slot."]
-	quest.4C000000000001E5.title: "Azure Dike Belt"
-	quest.4C000000000001E6.quest_desc: ["Belt slot."]
-	quest.4C000000000001E6.title: "Takeoff Belt"
-	quest.4C000000000001E7.quest_desc: ["Belt slot."]
-	quest.4C000000000001E7.title: "Tool Belt"
-	quest.4C000000000001E8.quest_desc: ["Belt slot."]
-	quest.4C000000000001E8.title: "Fire Heart"
-	quest.4C000000000001E9.quest_desc: ["Head slot."]
-	quest.4C000000000001E9.title: "Angler's Hat"
-	quest.4C000000000001EA.quest_desc: ["Head slot."]
-	quest.4C000000000001EA.title: "Cowboy Hat"
-	quest.4C000000000001EB.quest_desc: ["Head slot."]
-	quest.4C000000000001EB.title: "Night Vision Goggles"
-	quest.4C000000000001EC.quest_desc: ["Head slot."]
-	quest.4C000000000001EC.title: "Novelty Drinking Hat"
-	quest.4C000000000001ED.quest_desc: ["Head slot."]
-	quest.4C000000000001ED.title: "Plastic Drinking Hat"
-	quest.4C000000000001EE.quest_desc: ["Head slot."]
-	quest.4C000000000001EE.title: "Snorkel"
-	quest.4C000000000001EF.quest_desc: ["Head slot."]
-	quest.4C000000000001EF.title: "Superstitious Hat"
-	quest.4C000000000001F0.quest_desc: ["Head slot."]
-	quest.4C000000000001F0.title: "Villager Hat"
-	quest.4C000000000001F1.quest_desc: ["Head slot."]
-	quest.4C000000000001F1.title: "Ashen Circlet"
-	quest.4C000000000001F2.quest_desc: ["Head slot."]
-	quest.4C000000000001F2.title: "Circlet of Arrogance"
-	quest.4C000000000001F3.quest_desc: ["Head slot."]
-	quest.4C000000000001F3.title: "Puff Circlet"
-	quest.4C000000000001F4.quest_desc: ["Head slot."]
-	quest.4C000000000001F4.title: "Weeping Circlet"
-	quest.4C000000000001F5.quest_desc: ["Head slot."]
-	quest.4C000000000001F5.title: "Whispy Circlet"
-	quest.4C000000000001F6.quest_desc: ["Head slot."]
-	quest.4C000000000001F6.title: "Aptrgangr Head"
-	quest.4C000000000001F7.quest_desc: ["Head slot."]
-	quest.4C000000000001F7.title: "Draugr Head"
-	quest.4C000000000001F8.quest_desc: ["Head slot."]
-	quest.4C000000000001F8.title: "Kobolediator Skull"
-	quest.4C000000000001F9.quest_desc: ["Head slot."]
-	quest.4C000000000001F9.title: "§dVagabond's Hood"
-	quest.4C000000000001FA.quest_desc: ["Head slot."]
-	quest.4C000000000001FA.title: "§eFisher's Hat"
-	quest.4C000000000001FB.quest_desc: ["Head slot."]
-	quest.4C000000000001FB.title: "Detector Glasses"
-	quest.4C000000000001FC.quest_desc: ["Head slot."]
-	quest.4C000000000001FC.title: "Oddeyes Glasses"
-	quest.4C000000000001FD.quest_desc: ["Head slot."]
-	quest.4C000000000001FD.title: "Cracked Crown"
-	quest.4C000000000001FE.quest_desc: ["Head slot."]
-	quest.4C000000000001FE.title: "God's Crown"
-	quest.4C000000000001FF.quest_desc: ["Head slot."]
-	quest.4C000000000001FF.title: "Arctic Diving Gear"
-	quest.4C00000000000200.quest_desc: ["Head slot."]
-	quest.4C00000000000200.title: "Jellyfish Diving Gear"
-	quest.4C00000000000201.quest_desc: ["Head slot."]
-	quest.4C00000000000201.title: "Engineer's Goggles"
-	quest.4C00000000000202.quest_desc: ["Shoes slot."]
-	quest.4C00000000000202.title: "Ambhipian Boots"
-	quest.4C00000000000203.quest_desc: ["Shoes slot."]
-	quest.4C00000000000203.title: "Dunerider Boots"
-	quest.4C00000000000204.quest_desc: ["Shoes slot."]
-	quest.4C00000000000204.title: "Fairy Boots"
-	quest.4C00000000000205.quest_desc: ["Shoes slot."]
-	quest.4C00000000000205.title: "Flipper"
-	quest.4C00000000000206.quest_desc: ["Shoes slot."]
-	quest.4C00000000000206.title: "Flower Boots"
-	quest.4C00000000000207.quest_desc: ["Shoes slot."]
-	quest.4C00000000000207.title: "Flurry Boots"
-	quest.4C00000000000208.quest_desc: ["Shoes slot."]
-	quest.4C00000000000208.title: "Frog Flipper"
-	quest.4C00000000000209.quest_desc: ["Shoes slot."]
-	quest.4C00000000000209.title: "Frostspark Boots"
-	quest.4C0000000000020A.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020A.title: "Hermes Boots"
-	quest.4C0000000000020B.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020B.title: "Ice Skates"
-	quest.4C0000000000020C.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020C.title: "Lava Waders"
-	quest.4C0000000000020D.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020D.title: "Lightning Boots"
-	quest.4C0000000000020E.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020E.title: "Obsidian Water Walking Boots"
-	quest.4C0000000000020F.quest_desc: ["Shoes slot."]
-	quest.4C0000000000020F.title: "Rocket Boots"
-	quest.4C00000000000210.quest_desc: ["Shoes slot."]
-	quest.4C00000000000210.title: "Sailfish Boots"
-	quest.4C00000000000211.quest_desc: ["Shoes slot."]
-	quest.4C00000000000211.title: "Spectre Boots"
-	quest.4C00000000000212.quest_desc: ["Shoes slot."]
-	quest.4C00000000000212.title: "Tabi"
-	quest.4C00000000000213.quest_desc: ["Shoes slot."]
-	quest.4C00000000000213.title: "Terraspark Boots"
-	quest.4C00000000000214.quest_desc: ["Shoes slot."]
-	quest.4C00000000000214.title: "Water Walking Boots"
-	quest.4C00000000000215.quest_desc: ["Hands slot."]
-	quest.4C00000000000215.title: "Digging Claws"
-	quest.4C00000000000216.quest_desc: ["Hands slot."]
-	quest.4C00000000000216.title: "Fire Gauntlet"
-	quest.4C00000000000217.quest_desc: ["Hands slot."]
-	quest.4C00000000000217.title: "Golden Hook"
-	quest.4C00000000000218.quest_desc: ["Hands slot."]
-	quest.4C00000000000218.title: "Onion Ring"
-	quest.4C00000000000219.quest_desc: ["Hands slot."]
-	quest.4C00000000000219.title: "Pickaxe Heater"
-	quest.4C0000000000021A.quest_desc: ["Hands slot."]
-	quest.4C0000000000021A.title: "Pocket Piston"
-	quest.4C0000000000021B.quest_desc: ["Hands slot."]
-	quest.4C0000000000021B.title: "Power Glove"
-	quest.4C0000000000021C.quest_desc: ["Hands slot."]
-	quest.4C0000000000021C.title: "Vampiric Glove"
-	quest.4C0000000000021D.quest_desc: ["Hands slot."]
-	quest.4C0000000000021D.title: "Withered Bracelet"
-	quest.4C0000000000021E.quest_desc: ["Hands slot."]
-	quest.4C0000000000021E.title: "Flaming Thorn"
-	quest.4C0000000000021F.quest_desc: ["Hands slot."]
-	quest.4C0000000000021F.title: "Imagine Breaker"
-	quest.4C00000000000220.quest_desc: ["Hands slot."]
-	quest.4C00000000000220.title: "Infinity Glove"
-	quest.4C00000000000221.quest_desc: ["Hands slot."]
-	quest.4C00000000000221.title: "Platinum Star"
-	quest.4C00000000000222.quest_desc: ["Hands slot."]
-	quest.4C00000000000222.title: "Blazing Grips"
-	quest.4C00000000000223.quest_desc: ["Hands slot."]
-	quest.4C00000000000223.title: "Chitin Claw"
-	quest.4C00000000000224.quest_desc: ["Hands slot."]
-	quest.4C00000000000224.title: "Sticky Gloves"
-	quest.4C00000000000225.quest_desc: ["Hands slot."]
-	quest.4C00000000000225.title: "Aether-Graced Nectar Gloves"
-	quest.4C00000000000226.quest_desc: ["Hands slot."]
-	quest.4C00000000000226.title: "Gloves of Dawn's Grasp"
-	quest.4C00000000000227.quest_desc: ["Hand slot."]
-	quest.4C00000000000227.title: "§6Cinder Hand"
-	quest.4C00000000000228.quest_desc: ["Hand slot."]
-	quest.4C00000000000228.title: "§7Anathema Gauntlet"
-	quest.4C00000000000229.quest_desc: ["Hand slot."]
-	quest.4C00000000000229.title: "§8Hand of the Weaks"
-	quest.4C0000000000022A.quest_desc: ["Hand slot."]
-	quest.4C0000000000022A.title: "§aPoisonous Hand"
-	quest.4C0000000000022B.quest_desc: ["Hand slot."]
-	quest.4C0000000000022B.title: "§dHand Of The Storms"
-	quest.4C0000000000022C.quest_desc: ["Hand slot."]
-	quest.4C0000000000022C.title: "§eZoranth's Hand"
-	quest.4C0000000000022D.quest_desc: ["Hand slot."]
-	quest.4C0000000000022D.title: "Bone Glove"
-	quest.4C0000000000022E.quest_desc: ["Hand slot."]
-	quest.4C0000000000022E.title: "Feral Claws"
-	quest.4C0000000000022F.quest_desc: ["Hand slot."]
-	quest.4C0000000000022F.title: "Hand Of Creation"
-	quest.4C00000000000230.quest_desc: ["Hand slot."]
-	quest.4C00000000000230.title: "Hand Warmer"
-	quest.4C00000000000231.quest_desc: ["Hand slot."]
-	quest.4C00000000000231.title: "Titan Glove"
-	quest.4C00000000000232.quest_desc: ["Hand slot."]
-	quest.4C00000000000232.title: "Amphibious Hands"
-	quest.4C00000000000233.quest_desc: ["Hand slot."]
-	quest.4C00000000000233.title: "Electric Paddle"
-	quest.4C00000000000234.quest_desc: ["Hand slot."]
-	quest.4C00000000000234.title: "Light Gloves"
-	quest.4C00000000000235.quest_desc: ["Hand slot."]
-	quest.4C00000000000235.title: "Titan's Mark"
-	quest.4C00000000000236.quest_desc: ["Hand slot."]
-	quest.4C00000000000236.title: "Feral Claws"
+	quest.4C000000000001AB.quest_desc: ["Hand slot."]
+	quest.4C000000000001AB.title: "Digging Claws"
+	quest.4C000000000001AC.quest_desc: ["Hand slot."]
+	quest.4C000000000001AC.title: "Feral Claws"
+	quest.4C000000000001AD.quest_desc: ["Hand slot."]
+	quest.4C000000000001AD.title: "Fire Gauntlet"
+	quest.4C000000000001AE.quest_desc: ["Hand slot."]
+	quest.4C000000000001AE.title: "Golden Hook"
+	quest.4C000000000001AF.quest_desc: ["Hand slot."]
+	quest.4C000000000001AF.title: "Onion Ring"
+	quest.4C000000000001B0.quest_desc: ["Hand slot."]
+	quest.4C000000000001B0.title: "Pickaxe Heater"
+	quest.4C000000000001B1.quest_desc: ["Hand slot."]
+	quest.4C000000000001B1.title: "Pocket Piston"
+	quest.4C000000000001B2.quest_desc: ["Hand slot."]
+	quest.4C000000000001B2.title: "Power Glove"
+	quest.4C000000000001B3.quest_desc: ["Hand slot."]
+	quest.4C000000000001B3.title: "Vampiric Glove"
+	quest.4C000000000001B4.quest_desc: ["Hand slot."]
+	quest.4C000000000001B4.title: "Withered Bracelet"
+	quest.4C000000000001B5.quest_desc: ["Hand slot."]
+	quest.4C000000000001B5.title: "§6Cinder Hand"
+	quest.4C000000000001B6.quest_desc: ["Hand slot."]
+	quest.4C000000000001B6.title: "§7Anathema Gauntlet"
+	quest.4C000000000001B7.quest_desc: ["Hand slot."]
+	quest.4C000000000001B7.title: "§8Hand of the Weaks"
+	quest.4C000000000001B8.quest_desc: ["Hand slot."]
+	quest.4C000000000001B8.title: "§aPoisonous Hand"
+	quest.4C000000000001B9.quest_desc: ["Hand slot."]
+	quest.4C000000000001B9.title: "§dHand Of The Storms"
+	quest.4C000000000001BA.quest_desc: ["Hand slot."]
+	quest.4C000000000001BA.title: "§eZoranth's Hand"
+	quest.4C000000000001BB.quest_desc: ["Hand slot."]
+	quest.4C000000000001BB.title: "Bone Glove"
+	quest.4C000000000001BC.quest_desc: ["Hand slot."]
+	quest.4C000000000001BC.title: "Feral Claws"
+	quest.4C000000000001BD.quest_desc: ["Hand slot."]
+	quest.4C000000000001BD.title: "Hand Of Creation"
+	quest.4C000000000001BE.quest_desc: ["Hand slot."]
+	quest.4C000000000001BE.title: "Hand Warmer"
+	quest.4C000000000001BF.quest_desc: ["Hand slot."]
+	quest.4C000000000001BF.title: "Titan Glove"
+	quest.4C000000000001C0.quest_desc: ["Hand slot."]
+	quest.4C000000000001C0.title: "Flaming Thorn"
+	quest.4C000000000001C1.quest_desc: ["Hand slot."]
+	quest.4C000000000001C1.title: "Imagine Breaker"
+	quest.4C000000000001C2.quest_desc: ["Hand slot."]
+	quest.4C000000000001C2.title: "Infinity Glove"
+	quest.4C000000000001C3.quest_desc: ["Hand slot."]
+	quest.4C000000000001C3.title: "Platinum Star"
+	quest.4C000000000001C4.quest_desc: ["Hand slot."]
+	quest.4C000000000001C4.title: "Amphibious Hands"
+	quest.4C000000000001C5.quest_desc: ["Hand slot."]
+	quest.4C000000000001C5.title: "Electric Paddle"
+	quest.4C000000000001C6.quest_desc: ["Hand slot."]
+	quest.4C000000000001C6.title: "Light Gloves"
+	quest.4C000000000001C7.quest_desc: ["Hand slot."]
+	quest.4C000000000001C7.title: "Titan's Mark"
+	quest.4C000000000001C8.quest_desc: ["Hand slot."]
+	quest.4C000000000001C8.title: "Blazing Grips"
+	quest.4C000000000001C9.quest_desc: ["Hand slot."]
+	quest.4C000000000001C9.title: "Chitin Claw"
+	quest.4C000000000001CA.quest_desc: ["Hand slot."]
+	quest.4C000000000001CA.title: "Sticky Gloves"
+	quest.4C000000000001CB.quest_desc: ["Hand slot."]
+	quest.4C000000000001CB.title: "Aether-Graced Nectar Gloves"
+	quest.4C000000000001CC.quest_desc: ["Hand slot."]
+	quest.4C000000000001CC.title: "Gloves of Dawn's Grasp"
+	quest.4C000000000001CD.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001CD.title: "Ancient Codex"
+	quest.4C000000000001CE.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001CE.title: "Apprentice's Spell Book"
+	quest.4C000000000001CF.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001CF.title: "Blaze Instruction Manual"
+	quest.4C000000000001D0.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D0.title: "Dragonskin Spell Book"
+	quest.4C000000000001D1.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D1.title: "Druidic Tome"
+	quest.4C000000000001D2.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D2.title: "Enchanted Spell Book"
+	quest.4C000000000001D3.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D3.title: "Flimsy Journal"
+	quest.4C000000000001D4.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D4.title: "Frostbranded Book"
+	quest.4C000000000001D5.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D5.title: "Grimoire of Evokation"
+	quest.4C000000000001D6.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D6.title: "Ironbound Tome"
+	quest.4C000000000001D7.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D7.title: "Legendary Spell Book"
+	quest.4C000000000001D8.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D8.title: "Necronomicon"
+	quest.4C000000000001D9.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001D9.title: "Rotten Spell Book"
+	quest.4C000000000001DA.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DA.title: "Vampiric Spell Book"
+	quest.4C000000000001DB.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DB.title: "Villager Bible"
+	quest.4C000000000001DC.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DC.title: "Wimpy Spell Book"
+	quest.4C000000000001DD.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DD.title: "Black Book"
+	quest.4C000000000001DE.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DE.title: "Diary of Decay"
+	quest.4C000000000001DF.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001DF.title: "Frozen Folios"
+	quest.4C000000000001E0.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E0.title: "Guardian's Guidebook"
+	quest.4C000000000001E1.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E1.title: "Stormweaver's Spell Tome"
+	quest.4C000000000001E2.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E2.title: "The Apocrypha"
+	quest.4C000000000001E3.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E3.title: "Book o' R'lyeh"
+	quest.4C000000000001E4.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E4.title: "Codex of Malice"
+	quest.4C000000000001E5.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E5.title: "Desert Spellbook"
+	quest.4C000000000001E6.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E6.title: "Disc Driver"
+	quest.4C000000000001E7.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E7.title: "Ignis Spellbook"
+	quest.4C000000000001E8.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E8.title: "Energized Core Spellbook"
+	quest.4C000000000001E9.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001E9.title: "Golden Shower"
+	quest.4C000000000001EA.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001EA.title: "Cosmonomicon"
+	quest.4C000000000001EB.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001EB.title: "Volume of the Deep"
+	quest.4C000000000001EC.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001EC.title: "Dragonmancer's Oathbook"
+	quest.4C000000000001ED.quest_desc: ["Spell Book slot."]
+	quest.4C000000000001ED.title: "Grimoire of Color, vol.I"
+	quest.4C000000000001EE.quest_desc: ["Belt slot."]
+	quest.4C000000000001EE.title: "Antidote Vessel"
+	quest.4C000000000001EF.quest_desc: ["Belt slot."]
+	quest.4C000000000001EF.title: "Chorus Totem"
+	quest.4C000000000001F0.quest_desc: ["Belt slot."]
+	quest.4C000000000001F0.title: "Cloud in a Bottle"
+	quest.4C000000000001F1.quest_desc: ["Belt slot."]
+	quest.4C000000000001F1.title: "Crystal Heart"
+	quest.4C000000000001F2.quest_desc: ["Belt slot."]
+	quest.4C000000000001F2.title: "Helium Flamingo"
+	quest.4C000000000001F3.quest_desc: ["Belt slot."]
+	quest.4C000000000001F3.title: "Obsidian Skull"
+	quest.4C000000000001F4.quest_desc: ["Belt slot."]
+	quest.4C000000000001F4.title: "Universal Attractor"
+	quest.4C000000000001F5.quest_desc: ["Belt slot."]
+	quest.4C000000000001F5.title: "Warp Drive"
+	quest.4C000000000001F6.quest_desc: ["Belt slot."]
+	quest.4C000000000001F6.title: "Belt of the Limitless"
+	quest.4C000000000001F7.quest_desc: ["Belt slot."]
+	quest.4C000000000001F7.title: "Belt of the Magebane"
+	quest.4C000000000001F8.quest_desc: ["Belt slot."]
+	quest.4C000000000001F8.title: "Belt of the Prospector"
+	quest.4C000000000001F9.quest_desc: ["Belt slot."]
+	quest.4C000000000001F9.title: "Belt of the Starved"
+	quest.4C000000000001FA.quest_desc: ["Belt slot."]
+	quest.4C000000000001FA.title: "Gilded Belt"
+	quest.4C000000000001FB.quest_desc: ["Belt slot."]
+	quest.4C000000000001FB.title: "Broken Magnet"
+	quest.4C000000000001FC.quest_desc: ["Belt slot."]
+	quest.4C000000000001FC.title: "Experience Magnet"
+	quest.4C000000000001FD.quest_desc: ["Belt slot."]
+	quest.4C000000000001FD.title: "Fractured Nullstone"
+	quest.4C000000000001FE.quest_desc: ["Belt slot."]
+	quest.4C000000000001FE.title: "Super Magnet"
+	quest.4C000000000001FF.quest_desc: ["Belt slot."]
+	quest.4C000000000001FF.title: "What...? Magnet"
+	quest.4C00000000000200.quest_desc: ["Belt slot."]
+	quest.4C00000000000200.title: "Breaking the Blade"
+	quest.4C00000000000201.quest_desc: ["Belt slot."]
+	quest.4C00000000000201.title: "Chess Fall"
+	quest.4C00000000000202.quest_desc: ["Belt slot."]
+	quest.4C00000000000202.title: "instantaneous condenser"
+	quest.4C00000000000203.quest_desc: ["Belt slot."]
+	quest.4C00000000000203.title: "Zhe Yuan"
+	quest.4C00000000000204.quest_desc: ["Belt slot."]
+	quest.4C00000000000204.title: "Black Belt"
+	quest.4C00000000000205.quest_desc: ["Belt slot."]
+	quest.4C00000000000205.title: "Inner Tube"
+	quest.4C00000000000206.quest_desc: ["Belt slot."]
+	quest.4C00000000000206.title: "Toolbelt"
+	quest.4C00000000000207.quest_desc: ["Belt slot."]
+	quest.4C00000000000207.title: "Azure Dike Belt"
+	quest.4C00000000000208.quest_desc: ["Belt slot."]
+	quest.4C00000000000208.title: "Takeoff Belt"
+	quest.4C00000000000209.quest_desc: ["Belt slot."]
+	quest.4C00000000000209.title: "Tool Belt"
+	quest.4C0000000000020A.quest_desc: ["Belt slot."]
+	quest.4C0000000000020A.title: "Fire Heart"
+	quest.4C0000000000020B.quest_desc: ["Head slot."]
+	quest.4C0000000000020B.title: "Angler's Hat"
+	quest.4C0000000000020C.quest_desc: ["Head slot."]
+	quest.4C0000000000020C.title: "Cowboy Hat"
+	quest.4C0000000000020D.quest_desc: ["Head slot."]
+	quest.4C0000000000020D.title: "Night Vision Goggles"
+	quest.4C0000000000020E.quest_desc: ["Head slot."]
+	quest.4C0000000000020E.title: "Novelty Drinking Hat"
+	quest.4C0000000000020F.quest_desc: ["Head slot."]
+	quest.4C0000000000020F.title: "Plastic Drinking Hat"
+	quest.4C00000000000210.quest_desc: ["Head slot."]
+	quest.4C00000000000210.title: "Snorkel"
+	quest.4C00000000000211.quest_desc: ["Head slot."]
+	quest.4C00000000000211.title: "Superstitious Hat"
+	quest.4C00000000000212.quest_desc: ["Head slot."]
+	quest.4C00000000000212.title: "Villager Hat"
+	quest.4C00000000000213.quest_desc: ["Head slot."]
+	quest.4C00000000000213.title: "Ashen Circlet"
+	quest.4C00000000000214.quest_desc: ["Head slot."]
+	quest.4C00000000000214.title: "Circlet of Arrogance"
+	quest.4C00000000000215.quest_desc: ["Head slot."]
+	quest.4C00000000000215.title: "Puff Circlet"
+	quest.4C00000000000216.quest_desc: ["Head slot."]
+	quest.4C00000000000216.title: "Weeping Circlet"
+	quest.4C00000000000217.quest_desc: ["Head slot."]
+	quest.4C00000000000217.title: "Whispy Circlet"
+	quest.4C00000000000218.quest_desc: ["Head slot."]
+	quest.4C00000000000218.title: "Aptrgangr Head"
+	quest.4C00000000000219.quest_desc: ["Head slot."]
+	quest.4C00000000000219.title: "Draugr Head"
+	quest.4C0000000000021A.quest_desc: ["Head slot."]
+	quest.4C0000000000021A.title: "Kobolediator Skull"
+	quest.4C0000000000021B.quest_desc: ["Head slot."]
+	quest.4C0000000000021B.title: "§dVagabond's Hood"
+	quest.4C0000000000021C.quest_desc: ["Head slot."]
+	quest.4C0000000000021C.title: "§eFisher's Hat"
+	quest.4C0000000000021D.quest_desc: ["Head slot."]
+	quest.4C0000000000021D.title: "Detector Glasses"
+	quest.4C0000000000021E.quest_desc: ["Head slot."]
+	quest.4C0000000000021E.title: "Oddeyes Glasses"
+	quest.4C0000000000021F.quest_desc: ["Head slot."]
+	quest.4C0000000000021F.title: "Cracked Crown"
+	quest.4C00000000000220.quest_desc: ["Head slot."]
+	quest.4C00000000000220.title: "God's Crown"
+	quest.4C00000000000221.quest_desc: ["Head slot."]
+	quest.4C00000000000221.title: "Arctic Diving Gear"
+	quest.4C00000000000222.quest_desc: ["Head slot."]
+	quest.4C00000000000222.title: "Jellyfish Diving Gear"
+	quest.4C00000000000223.quest_desc: ["Head slot."]
+	quest.4C00000000000223.title: "Engineer's Goggles"
+	quest.4C00000000000224.quest_desc: ["Shoes slot."]
+	quest.4C00000000000224.title: "Ambhipian Boots"
+	quest.4C00000000000225.quest_desc: ["Shoes slot."]
+	quest.4C00000000000225.title: "Dunerider Boots"
+	quest.4C00000000000226.quest_desc: ["Shoes slot."]
+	quest.4C00000000000226.title: "Fairy Boots"
+	quest.4C00000000000227.quest_desc: ["Shoes slot."]
+	quest.4C00000000000227.title: "Flipper"
+	quest.4C00000000000228.quest_desc: ["Shoes slot."]
+	quest.4C00000000000228.title: "Flower Boots"
+	quest.4C00000000000229.quest_desc: ["Shoes slot."]
+	quest.4C00000000000229.title: "Flurry Boots"
+	quest.4C0000000000022A.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022A.title: "Frog Flipper"
+	quest.4C0000000000022B.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022B.title: "Frostspark Boots"
+	quest.4C0000000000022C.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022C.title: "Hermes Boots"
+	quest.4C0000000000022D.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022D.title: "Ice Skates"
+	quest.4C0000000000022E.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022E.title: "Lava Waders"
+	quest.4C0000000000022F.quest_desc: ["Shoes slot."]
+	quest.4C0000000000022F.title: "Lightning Boots"
+	quest.4C00000000000230.quest_desc: ["Shoes slot."]
+	quest.4C00000000000230.title: "Obsidian Water Walking Boots"
+	quest.4C00000000000231.quest_desc: ["Shoes slot."]
+	quest.4C00000000000231.title: "Rocket Boots"
+	quest.4C00000000000232.quest_desc: ["Shoes slot."]
+	quest.4C00000000000232.title: "Sailfish Boots"
+	quest.4C00000000000233.quest_desc: ["Shoes slot."]
+	quest.4C00000000000233.title: "Spectre Boots"
+	quest.4C00000000000234.quest_desc: ["Shoes slot."]
+	quest.4C00000000000234.title: "Tabi"
+	quest.4C00000000000235.quest_desc: ["Shoes slot."]
+	quest.4C00000000000235.title: "Terraspark Boots"
+	quest.4C00000000000236.quest_desc: ["Shoes slot."]
+	quest.4C00000000000236.title: "Water Walking Boots"
 	quest.4C00000000000237.quest_desc: ["Crystal slot."]
 	quest.4C00000000000237.title: "Abomination"
 	quest.4C00000000000238.quest_desc: ["Crystal slot."]

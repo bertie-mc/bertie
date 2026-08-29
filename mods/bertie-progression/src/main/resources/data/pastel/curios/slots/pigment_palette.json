@@ -1,3 +1,5 @@
 {
-  "order": 210
+  "icon": "pastel:slot/pigment_palette",
+  "order": 200,
+  "size": 1
 }

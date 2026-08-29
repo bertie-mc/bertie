@@ -1,0 +1,11 @@
+{
+  "amount": 1,
+  "icon": "accessories:gui/slot/cape",
+  "operation": "set",
+  "order": 40,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}

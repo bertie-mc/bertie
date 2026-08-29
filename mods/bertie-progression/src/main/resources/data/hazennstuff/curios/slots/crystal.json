@@ -1,3 +1,9 @@
 {
-  "order": 160
+  "add_cosmetic": false,
+  "drop_rule": "DEFAULT",
+  "icon": "hazennstuff:slot/crystal",
+  "operation": "SET",
+  "order": 150,
+  "render_toggle": true,
+  "size": 1
 }

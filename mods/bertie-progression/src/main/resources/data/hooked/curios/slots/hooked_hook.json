@@ -1,3 +1,5 @@
 {
-  "order": 220
+  "icon": "hooked:slot/hook_slot",
+  "render_toggle": false,
+  "order": 210
 }

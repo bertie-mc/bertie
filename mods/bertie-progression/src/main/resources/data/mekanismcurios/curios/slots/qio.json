@@ -1,3 +1,6 @@
 {
-  "order": 260
+  "add_cosmetic": false,
+  "icon": "mekanismcurios:slot/qio_slot",
+  "size": 1,
+  "order": 250
 }

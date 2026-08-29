@@ -1,0 +1,11 @@
+{
+  "amount": 1,
+  "icon": "accessories:gui/slot/back",
+  "operation": "set",
+  "order": 30,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}
