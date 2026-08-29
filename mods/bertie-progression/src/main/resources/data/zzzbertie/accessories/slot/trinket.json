@@ -1,5 +1,6 @@
 {
   "amount": 0,
   "operation": "set",
-  "order": -10009
+  "order": -10009,
+  "icon": "nameless_trinkets:slot/trinket_slot"
 }

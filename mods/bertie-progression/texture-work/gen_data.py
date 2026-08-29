@@ -1529,36 +1529,39 @@ def _merge_slot(original, spec, accessories):
     return out
 
 
-# One namespace nobody else writes, so a slot file of ours never collides with a mod's own path.
-# `bertieprogression` is already the last of the slot-declaring mods in pack order, which is what
-# actually decides the merge - the namespace is only there to keep the paths distinct.
+# --- How a slot override actually wins, and how a slot is really closed. All three of these were
+#     guessed wrong for seven builds; all three are now read off the game's own state.
+#
+#  1. A SEPARATE NAMESPACE WINS NOTHING. Writing our slot files under a namespace that sorts last
+#     was the theory behind six of those builds. The player's saved containers say it lost every
+#     contest it entered - `accessory` stayed at terra_curio's 6 against our 0, `trinket` at
+#     nameless_trinkets' 4. The one override that reliably lands is the DECLARING MOD'S OWN FILE
+#     PATH, where there is a single resource location and ordinary datapack priority settles it.
+#     So every slot is written over every path that declares it, merged onto that file so its icon
+#     and the rest survive, and our own copy is kept alongside as a backstop.
+#
+#  2. THE MENU RUNS FROM THE HIGHEST `order` TO THE LOWEST. SlotTypeLoader.apply finishes with
+#     sorted(Map.Entry.comparingByValue().reversed()) and SlotType.compareTo is ascending on
+#     `order`, so the sort is descending. Accessories' own files agree: hat and necklace are 1000
+#     and lead, back and ring are 800 and trail. The numbers in _SLOT_PLAN are the position berlord
+#     asked for, 1 upwards, and _menu_order turns each into the value the game wants.
+#
+#  3. A SIZE ONLY CROSSES TO THE ACCESSORIES SIDE IF THE SLOT IS DECLARED THERE. In
+#     CuriosCompat.addSlotTypes a slot with no accessories/slot/<name>.json takes the addBuilder
+#     branch, where the amount is guarded by `prevAmount != null` and is never copied;
+#     SlotBuilder.create() then defaults it to 1. That is why `pandora` sits at 1 against our 2 and
+#     why nothing we closed ever closed. Every slot whose size this pack sets gets an Accessories
+#     file, carrying the icon across by hand because declaring one costs the slot the icon and name
+#     the compat layer would otherwise have carried for it.
 _LAST = "zzzbertie"
-
-# --- How the menu is really ordered, and how a slot is really closed. Both of these were guessed
-#     wrong for six builds; both are read off the bytecode of the mods in the pack.
-#
-#  1. THE MENU RUNS FROM THE HIGHEST `order` TO THE LOWEST. SlotTypeLoader.apply finishes with
-#     `sorted(Map.Entry.comparingByValue().reversed())` and SlotType.compareTo is ascending on
-#     `order`, so the sort is DESCENDING. Accessories' own files say the same: hat/necklace/belt
-#     are 1000 and sit first, back/ring are 800 and sit last. The numbers below are the position
-#     berlord asked for, 1 upwards, and `_menu_order` turns each one into the value the game wants.
-#
-#  2. A SLOT THAT EXISTS ONLY ON THE CURIOS SIDE CANNOT BE CLOSED FROM THE CURIOS SIDE. The compat
-#     layer builds the Accessories slot list, and in CuriosCompat.addSlotTypes a slot with no
-#     `accessories/slot/<name>.json` takes the addBuilder branch, where the amount is guarded by
-#     `prevAmount != null` and is therefore never copied across. SlotBuilder.create() then defaults
-#     a null amount to 1, so every slot we "closed" with size 0 came back open with one slot -
-#     trinket, sheath, talisman, rings, waist, hands, head, curio, cosmetic. Writing an Accessories
-#     file for them as well gives the builder a real amount to overwrite, and 0 sticks.
 _MENU_TOP = 10000
 
 # CuriosConversionUtils.slotConvertToA renames six Curios ids on the way into the Accessories slot
 # list, so these never exist there under their own name - they are merged into the slot on the
-# right, and Curios' `curio` lands on `any`, which the loader then drops on purpose. Writing an
-# accessories/slot file for one of them registers a slot the compat layer cannot resolve back:
-# `curio` crashed the server tick the moment Sophisticated Backpacks asked what slots a backpack
-# fits. So this pack never declares one on that side; closing them there is not needed either,
-# since the id the player actually has is the one on the right.
+# right, and Curios' `curio` lands on `any`, which the loader drops on purpose. Declaring one on
+# that side registers a slot the compat layer cannot resolve back: `curio` crashed the server tick
+# the moment Sophisticated Backpacks asked what slots a backpack fits. Closing them there is not
+# needed either, since the id the player actually has is the one on the right.
 _CURIOS_ALIASES = {"curio": "any", "head": "hat", "hands": "hand",
                    "feet": "shoes", "body": "cape", "bracelet": "wrist"}
 
@@ -1577,28 +1580,49 @@ for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") != 0]):
 for _i, _k in enumerate([k for k in _TAIL if _SLOT_PLAN[k].get("size") == 0]):
     _SLOT_PLAN[_k]["order"] = 20000 + _i   # past the end, so a closed slot sinks below every mod's
 
+_slot_lang = {}
+
 for _slot, _spec in sorted(_SLOT_PLAN.items()):
     _spec["order"] = _menu_order(_spec["order"])
     _where = _SLOT_FILES[_slot]
     _cur = dict(sorted(_where.get("curios", {}).items()))
     _acc = dict(sorted(_where.get("accessories", {}).items()))
-    _base = {}
+
+    # Curios side: over each declaring mod's own path, merged onto that mod's file, plus our copy
+    # built on the union of them all.
+    for _ns, _own in _cur.items():
+        # A mod that GRANTS slots rather than setting them keeps its own line - magitech's two ring
+        # slots are an ADD, and rewriting it as a SET would quietly take two ring slots away.
+        _s2 = {k: v for k, v in _spec.items() if k != "size"} if _own.get("operation") == "ADD" else _spec
+        write(f"data/{_ns}/curios/slots/{_slot}.json", _merge_slot(_own, _s2, False))
+    _union = {}
     for _o in _cur.values():
-        _base.update(_o)
-    _d = _merge_slot(_base, _spec, False)
+        _union.update(_o)
+    _d = _merge_slot(_union, _spec, False)
     if _slot == "hat" and "icon" not in _d:       # hat is the head slot here, so it wears its face
         _d["icon"] = "curios:slot/empty_head_slot"
     write(f"data/{_LAST}/curios/slots/{_slot}.json", _d)
-    # A closed slot needs the Accessories file too - see (2) above. A slot that stays open and has
-    # no Accessories declaration is left alone on purpose: declaring one there would make the compat
-    # layer skip the Curios icon, order and name it otherwise carries over, and the slot would lose
-    # its picture and show a raw `accessories.slot.<name>` line instead of its name. An aliased id
-    # is never given one either - see _CURIOS_ALIASES.
-    if (_slot in _ACC_SLOTS or _spec.get("size") == 0) and _slot not in _CURIOS_ALIASES:
-        _base = {}
-        for _o in _acc.values():
-            _base.update(_o)
-        write(f"data/{_LAST}/accessories/slot/{_slot}.json", _merge_slot(_base, _spec, True))
+
+    if _slot in _CURIOS_ALIASES:
+        continue
+
+    # Accessories side: the same, but only where this pack sets a size - see (3). A slot we only
+    # reorder is left undeclared here on purpose, so the compat layer keeps carrying its icon and
+    # its name over from Curios.
+    if "size" not in _spec:
+        continue
+    for _ns, _own in _acc.items():
+        _s2 = {k: v for k, v in _spec.items() if k != "size"} if _own.get("operation") == "add" else _spec
+        write(f"data/{_ns}/accessories/slot/{_slot}.json", _merge_slot(_own, _s2, True))
+    _union = {}
+    for _o in _acc.values():
+        _union.update(_o)
+    _a = _merge_slot(_union, _spec, True)
+    if "icon" not in _a and "icon" in _d:         # the icon the compat layer will no longer carry
+        _a["icon"] = _d["icon"]
+    write(f"data/{_LAST}/accessories/slot/{_slot}.json", _a)
+    if _slot not in _ACC_SLOTS:                  # nor the name, so this pack has to supply it
+        _slot_lang[f"accessories.slot.{_slot}"] = _slot.replace("_", " ").title()
 
 slot_tag("belt",
       {"replace": False, "values": [
@@ -3675,12 +3699,10 @@ lang["curios.identifier.hat"] = "Head"
 lang["accessories.slot.hat"] = "Head"
 lang["curios.modifiers.hat"] = "When on head:"
 # Declaring a slot on the Accessories side costs it the name the compat layer would otherwise carry
-# over from Curios, so every slot this pack closes there gets its own line. They are hidden at zero
-# size, but a raw `accessories.slot.<name>` has surfaced in a tooltip before and this is cheap.
-for _s, _n in {"accessory": "Accessory", "cosmetic": "Cosmetic", "ionocraft_backpack": "Backpack",
-               "rings": "Rings", "sheath": "Sheath", "talisman": "Talisman", "trinket": "Trinket",
-               "waist": "Waist"}.items():
-    lang[f"accessories.slot.{_s}"] = _n
+# over from Curios, so each one gets a line here. Collected while the slot files were written.
+lang.update(_slot_lang)
+lang["accessories.slot.ionocraft_backpack"] = "Backpack"
+lang["accessories.slot.pandora"] = "Pandora Charm"
 
 write("assets/bertieprogression/lang/en_us.json", lang)
 

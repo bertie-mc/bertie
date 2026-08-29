@@ -65,12 +65,13 @@
   "curios.identifier.hat": "Head",
   "accessories.slot.hat": "Head",
   "curios.modifiers.hat": "When on head:",
-  "accessories.slot.accessory": "Accessory",
   "accessories.slot.cosmetic": "Cosmetic",
   "accessories.slot.ionocraft_backpack": "Backpack",
+  "accessories.slot.pandora": "Pandora Charm",
   "accessories.slot.rings": "Rings",
   "accessories.slot.sheath": "Sheath",
   "accessories.slot.talisman": "Talisman",
   "accessories.slot.trinket": "Trinket",
-  "accessories.slot.waist": "Waist"
+  "accessories.slot.waist": "Waist",
+  "accessories.slot.wing": "Wing"
 }

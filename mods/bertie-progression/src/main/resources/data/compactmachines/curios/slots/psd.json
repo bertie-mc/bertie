@@ -1,0 +1,8 @@
+{
+  "icon": "compactmachines:slot/empty_psd",
+  "size": 1,
+  "validators": [
+    "compactmachines:has_shrinking_config"
+  ],
+  "order": 9760
+}

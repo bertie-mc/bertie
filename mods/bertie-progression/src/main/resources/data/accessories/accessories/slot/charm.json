@@ -1,0 +1,11 @@
+{
+  "amount": 12,
+  "icon": "accessories:gui/slot/charm",
+  "operation": "set",
+  "order": 9899,
+  "replace": false,
+  "validators": [
+    "accessories:tag",
+    "accessories:component"
+  ]
+}
