@@ -1,0 +1,53 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "armageddon_mod:anathema_gauntlet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:cinder_hand",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hand_of_the_storms",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hand_of_the_weaks",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:poisonous_hand",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:zoranths_hand",
+      "required": false
+    },
+    {
+      "id": "artifacts:feral_claws",
+      "required": false
+    },
+    {
+      "id": "terra_curio:bone_glove",
+      "required": false
+    },
+    {
+      "id": "terra_curio:feral_claws",
+      "required": false
+    },
+    {
+      "id": "terra_curio:hand_of_creation",
+      "required": false
+    },
+    {
+      "id": "terra_curio:hand_warmer",
+      "required": false
+    },
+    {
+      "id": "terra_curio:titan_glove",
+      "required": false
+    }
+  ]
+}

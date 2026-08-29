@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "LLLLL",
+    "DDDDD",
+    "CCCCC",
+    "LLCLL",
+    "LCCCL"
+  ],
+  "key": {
+    "L": {
+      "item": "cataclysm:lacrima"
+    },
+    "D": {
+      "item": "slag:deep_alloy_block"
+    },
+    "C": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "id": "irons_spellbooks:scroll_forge",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

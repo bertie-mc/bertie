@@ -1080,5 +1080,61 @@
 			x: 9.0d
 			y: -1.5d
 		}
+		{
+			icon: {
+				id: "irons_spellbooks:inscription_table"
+			}
+			id: "1B0000000000001C"
+			rewards: [{
+				id: "1B0000000200001C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100001C"
+				item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1B0000000000001C"]
+			icon: {
+				id: "irons_spellbooks:copper_spell_book"
+			}
+			id: "1B00000000000034"
+			rewards: [{
+				id: "1B00000002000034"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000034"
+				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1B00000000000034"]
+			icon: {
+				id: "irons_spellbooks:scroll"
+			}
+			id: "1B00000000000035"
+			rewards: [{
+				id: "1B00000002000035"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000035"
+				item: { count: 1, id: "irons_spellbooks:scroll" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
 	]
 }

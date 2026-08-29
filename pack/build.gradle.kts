@@ -157,7 +157,6 @@ dependencies {
     packComponents(deps.ferriteCore)
     packComponents(deps.feurExtensionDesert)
     packComponents(deps.fishingoverhaul)
-    packComponents(deps.flightRing)
     packComponents(deps.forbiddenArcanus)
     packComponents(deps.forgifiedFabricApi)
     packComponents(deps.frightsDelight)

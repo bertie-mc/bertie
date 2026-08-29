@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "armageddon_mod:life_necklace",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:pendant_of_convergence",
+      "required": false
+    },
+    {
+      "id": "artifacts:cross_necklace",
+      "required": false
+    },
+    {
+      "id": "artifacts:panic_necklace",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_tribunes_medallion",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:moon_stone",
+      "required": false
+    },
+    {
+      "id": "terra_curio:cross_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:jellyfish_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:lava_charm",
+      "required": false
+    },
+    {
+      "id": "terra_curio:molten_charm",
+      "required": false
+    },
+    {
+      "id": "terra_curio:moon_stone",
+      "required": false
+    },
+    {
+      "id": "terra_curio:panic_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:star_veil",
+      "required": false
+    },
+    {
+      "id": "terra_curio:sun_stone",
+      "required": false
+    },
+    {
+      "id": "terra_curio:sweetheart_necklace",
+      "required": false
+    },
+    {
+      "id": "terra_curio:worm_scarf",
+      "required": false
+    }
+  ]
+}

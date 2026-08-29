@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (474)
+## Mods (473)
 
 | Mod |
 |---|
@@ -183,7 +183,6 @@
 | `ferrite-core` |
 | `feur-extension-desert` |
 | `fishingoverhaul` |
-| `flight-ring` |
 | `forbidden-arcanus` |
 | `forgified-fabric-api` |
 | `fragmentum` |

@@ -43,6 +43,7 @@
   "data/block_factorys_bosses/loot_table/chests/dragon_tower.json",
   "data/block_factorys_bosses/loot_table/chests/underworld_arena_rare.json",
   "data/cataclysm/loot_table/chests/desert_treasure.json",
+  "data/discerning_the_eldritch/loot_table/entities/pyrium_sheath.json",
   "data/terra_curio/loot_table/with/chests/simple_dungeon.json",
   "data/terra_curio/loot_table/with/chests/village/village_fisher.json",
   "data/terra_curio/loot_table/with/entities/bat.json",

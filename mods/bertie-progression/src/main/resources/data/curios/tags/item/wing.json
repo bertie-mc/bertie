@@ -6,6 +6,10 @@
       "required": false
     },
     {
+      "id": "anvilcraft:ionocraft_backpack",
+      "required": false
+    },
+    {
       "id": "avaritia:infinity_elytra",
       "required": false
     },

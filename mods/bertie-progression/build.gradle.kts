@@ -22,4 +22,8 @@ dependencies {
     compileOnly(deps.forbiddenArcanus)
     compileOnly(deps.sophisticatedBackpacks)
     compileOnly(deps.sophisticatedCore)
+
+    // The Triple Strip Cape hands out its extra slots from code, naming "back" directly; Curios'
+    // own attribute event is the only way to move that to the cape slot without a mixin.
+    compileOnly(deps.curios)
 }

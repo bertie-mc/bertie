@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "pandora:pandora_bracelet",
+      "required": false
+    },
+    {
+      "id": "pandora:pandora_necklace",
+      "required": false
+    }
+  ]
+}

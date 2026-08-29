@@ -223,6 +223,22 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Load after discerning_the_eldritch: its three sheaths are removed with the sheath slot.
+[[dependencies.${mod_id}]]
+modId="discerning_the_eldritch"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Load after kaleidoscope_doll: it redeclares the shared head slot as doll-only.
+[[dependencies.${mod_id}]]
+modId="kaleidoscope_doll"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Apotheosis rolls affixed gear and dresses its bosses from its own data, so removed armour
 # has to be taken out of those lists too.
 [[dependencies.${mod_id}]]

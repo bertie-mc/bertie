@@ -2,11 +2,15 @@
   "replace": false,
   "values": [
     {
-      "id": "cataclysm:belt_of_beginner",
+      "id": "terra_curio:black_belt",
       "required": false
     },
     {
-      "id": "cataclysm:belt_of_monstrosity",
+      "id": "terra_curio:inner_tube",
+      "required": false
+    },
+    {
+      "id": "terra_curio:toolbelt",
       "required": false
     }
   ]

@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "1461ec19db175effc88dc613357d2e326eec73588cb7e205322f7dcf48781263"
+inputs-hash = "e5f2b3523e2c7d4062be1c9b1fdbfc85f8e5c0391ebfd9f001e34c9c453056a8"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -588,10 +588,6 @@ mod = "modrinth:qRG5vR8U:oBjuO3Ki"
 [components."fishingoverhaul"]
 any = "modrinth:mO6KzcvH:J6h1bEpa"
 mod = "modrinth:mO6KzcvH:J6h1bEpa"
-
-[components."flight-ring"]
-any = "modrinth:PQlYtuln:QgrkQcVz"
-mod = "modrinth:PQlYtuln:QgrkQcVz"
 
 [components."forbidden-arcanus"]
 any = "modrinth:MdlnLS7Q:fNjxgZPH"
@@ -5641,26 +5637,6 @@ optional = [{ "missing" = "oldpotions", "mod-id" = "oldpotions", "version-range"
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:PQlYtuln:QgrkQcVz"]
-name = "flight-ring"
-component = "flight-ring"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "PQlYtuln"
-version = "QgrkQcVz"
-filename = "flightring-1.21.1-0.1.jar"
-project-id = "PQlYtuln"
-version-id = "QgrkQcVz"
-provides = ["flightring"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "namespace" = "accessories", "reason" = "ships data/accessories/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:Pkj2hNRk:Amnk4kDG"]
 name = "irons-spellbooks-arcane-essence-blocks"

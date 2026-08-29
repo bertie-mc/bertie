@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "a071ac8162e03214814897051ca324d0f9d727e23a7b3fc383d9efd8619f41b7"
+inputs-hash = "0b8b472e0b590c2bb9f838809cc3c957c47e94e4a09964ec876937a41dc62a9f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -588,10 +588,6 @@ mod = "curseforge:1117054:7232473"
 [components."fishingoverhaul"]
 any = "curseforge:491332:6297564"
 mod = "curseforge:491332:6297564"
-
-[components."flight-ring"]
-any = "curseforge:1388482:7249217"
-mod = "curseforge:1388482:7249217"
 
 [components."forbidden-arcanus"]
 any = "curseforge:309858:6875895"
@@ -4181,27 +4177,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:1388482:7249217"]
-name = "flight-ring"
-component = "flight-ring"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "flight-ring-1388482"
-version = "7249217"
-filename = "flightring-1.21.1-0.1.jar"
-project-id = 1388482
-slug = "flight-ring"
-file-id = 7249217
-provides = ["flightring"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "modrinth:jtmvUHXj:Fb55Fgjz", "namespace" = "accessories", "reason" = "ships data/accessories/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:1391021:8067612"]
 name = "enigmaticlegacy"

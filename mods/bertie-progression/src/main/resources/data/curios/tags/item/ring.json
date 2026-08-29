@@ -2,7 +2,19 @@
   "replace": false,
   "values": [
     {
-      "id": "cataclysm:ring_of_grudged",
+      "id": "armageddon_mod:iron_ring",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:rose_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:iron_ring",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_prefects_ring",
       "required": false
     }
   ]
