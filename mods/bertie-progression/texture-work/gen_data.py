@@ -1495,6 +1495,19 @@ write("data/bertieprogression/curios/entities/player.json",
       {"replace": False, "entities": ["minecraft:player"],
        "slots": ["back", "belt", "cape", "charm", "hand", "hat", "head", "necklace", "pandora", "ring", "shoes", "wing", "wrist"]})
 
+# Every namespace that already declares one of these slots. Curios applies slot files in
+# namespace order, so writing only our own copy loses to any mod whose id sorts later -
+# `kaleidoscope_doll` beat `bertieprogression` at head, which is what made every hat unequippable.
+# Writing over each declaring mod's own path is what the AFTER ordering in neoforge.mods.toml
+# actually governs, so the definition below is the one that survives whichever sorts last.
+_SLOT_OWNERS = {"accessory": ["terra_curio"], "amulet": ["enigmaticlegacyplus"], "artifact": ["discerning_the_eldritch"], "back": ["curios", "enigmaticlegacyplus"], "belt": ["artifacts", "curios", "magitech", "malum"], "belt_slot": ["mythsandlegends"], "body": ["curios"], "body_slot": ["mythsandlegends"], "bracelet": ["curios"], "brooch": ["malum"], "charm": ["curios", "enderio", "enigmaticlegacyplus", "iceandfire", "magic_coins", "malum"], "cosmetic": ["hazennstuff"], "crystal": ["hazennstuff"], "curio": ["curios", "curseofpandora"], "deep_learner": ["hostilenetworks"], "face": ["pastel"], "feet": ["artifacts", "cataclysm", "pastel"], "geas": ["malum"], "hands": ["artifacts", "cataclysm", "curios"], "head": ["artifacts", "curios", "kaleidoscope_doll"], "hooked_hook": ["hooked"], "hostility_curse": ["l2hostility"], "necklace": ["artifacts", "cognition", "curios", "irons_spellbooks", "malum"], "necklace_slot": ["mythsandlegends"], "pandora": ["pandora"], "pigment_palette": ["pastel"], "pin": ["pastel"], "psd": ["compactmachines"], "qio": ["mekanismcurios"], "refinedstorage_curios_integration": ["refinedstorage_curios_integration"], "ring": ["curios", "enigmaticlegacyplus", "irons_spellbooks", "magitech", "malum", "pastel"], "ring_slot": ["mythsandlegends"], "rings": ["cataclysm"], "rune": ["malum"], "scroll": ["enigmaticlegacyplus"], "sheath": ["aces_spell_utils"], "spellbook": ["irons_spellbooks"], "spellstone": ["enigmaticlegacyplus"], "talisman": ["cataclysm"], "teleporter": ["mekanismcurios"], "threadbound": ["magitech"], "trinket": ["nameless_trinkets"], "waist": ["cataclysm"], "well": ["malstone"], "wing": ["hazennstuff", "hazentouvelib"]}
+
+
+def _slot_write(slot, data):
+    for _ns in _SLOT_OWNERS.get(slot, []) + ["bertieprogression"]:
+        write(f"data/{_ns}/curios/slots/{slot}.json", data)
+
+
 _ORDER = ["hat", "head", "necklace", "back", "cape", "wing", "belt", "hand", "wrist", "ring", "shoes", "spellbook", "spellstone", "scroll", "amulet", "crystal", "rune", "brooch", "well", "pin", "pigment_palette", "hooked_hook", "refinedstorage_curios_integration", "deep_learner", "psd", "qio", "teleporter"]
 _SIZED = {"back": 1, "belt": 1, "cape": 1, "charm": 12, "hand": 2, "hat": 1, "head": 1, "necklace": 1, "pandora": 2, "ring": 2, "shoes": 1, "wing": 1, "wrist": 2}
 for _slot, _size in sorted(_SIZED.items()):
@@ -1503,18 +1516,17 @@ for _slot, _size in sorted(_SIZED.items()):
         _d["order"] = (_ORDER.index(_slot) + 1) * 10
     if _slot == "hat":                       # the doll's own slot, and only the doll's
         _d["validators"] = ["kaleidoscope_doll:doll_item"]
-    write(f"data/bertieprogression/curios/slots/{_slot}.json", _d)
+    _slot_write(_slot, _d)
 
 _CLOSED = ["trinket", "sheath", "accessory", "talisman", "rings", "waist"]
 for _slot in _CLOSED:
-    write(f"data/bertieprogression/curios/slots/{_slot}.json", {"operation": "SET", "size": 0})
+    _slot_write(_slot, {"operation": "SET", "size": 0})
     write(f"data/curios/tags/item/{_slot}.json", {"replace": True, "values": []})
 
 # the tail of the list - the machine slots - only need their order changed
 for _slot in _ORDER:
     if _slot not in _SIZED and _slot not in _CLOSED:
-        write(f"data/bertieprogression/curios/slots/{_slot}.json",
-              {"order": (_ORDER.index(_slot) + 1) * 10})
+        _slot_write(_slot, {"order": (_ORDER.index(_slot) + 1) * 10})
 
 write("data/curios/tags/item/belt.json",
       {"replace": False, "values": [
@@ -1551,14 +1563,60 @@ write("data/curios/tags/item/hand.json",
         {"id": "terra_curio:hand_warmer", "required": False},
         {"id": "terra_curio:titan_glove", "required": False},
     ]})
+# The two Pandora holders are curios in their own right, and were sitting in the necklace and
+# bracelet slots as well as holding charms. They belong in the Pandora Charm slot alone, so
+# both tags are rewritten without them.
 write("data/curios/tags/item/necklace.json",
-      {"replace": False, "values": [
+      {"replace": True, "values": [
+        {"id": "aces_spell_utils:example_curio", "required": False},
+        {"id": "aces_spell_utils:example_imbue_curio", "required": False},
         {"id": "armageddon_mod:life_necklace", "required": False},
         {"id": "armageddon_mod:pendant_of_convergence", "required": False},
+        {"id": "artifacts:charm_of_shrinking", "required": False},
+        {"id": "artifacts:charm_of_sinking", "required": False},
         {"id": "artifacts:cross_necklace", "required": False},
+        {"id": "artifacts:flame_pendant", "required": False},
+        {"id": "artifacts:lucky_scarf", "required": False},
         {"id": "artifacts:panic_necklace", "required": False},
+        {"id": "artifacts:scarf_of_invisibility", "required": False},
+        {"id": "artifacts:shock_pendant", "required": False},
+        {"id": "artifacts:thorn_pendant", "required": False},
+        {"id": "cataclysm:berserker_soul_amulet", "required": False},
+        {"id": "cataclysm:vitality_ankh", "required": False},
+        {"id": "cognition:enlightened_amulet", "required": False},
+        {"id": "cognition:fortuitous_amulet", "required": False},
+        {"id": "darkdoppelganger:elder_necklace", "required": False},
+        {"id": "darkdoppelganger:summons_necklace", "required": False},
+        {"id": "discerning_the_eldritch:amulet_of_sculk_treasure", "required": False},
         {"id": "hazennstuff:the_tribunes_medallion", "required": False},
+        {"id": "irons_spellbooks:amethyst_resonance_charm", "required": False},
+        {"id": "irons_spellbooks:concentration_amulet", "required": False},
+        {"id": "irons_spellbooks:conjurers_talisman", "required": False},
+        {"id": "irons_spellbooks:enchanted_ward_amulet", "required": False},
+        {"id": "irons_spellbooks:greater_conjurers_talisman", "required": False},
+        {"id": "irons_spellbooks:heavy_chain_necklace", "required": False},
+        {"id": "irons_spellbooks:teleportation_amulet", "required": False},
+        {"id": "malstone:breaking_the_life", "required": False},
+        {"id": "malstone:falling_well", "required": False},
+        {"id": "malstone:white_arrow_blade", "required": False},
+        {"id": "malum:necklace_of_blissful_harmony", "required": False},
+        {"id": "malum:necklace_of_the_hidden_blade", "required": False},
+        {"id": "malum:necklace_of_the_mystic_mirror", "required": False},
+        {"id": "malum:necklace_of_the_narrow_edge", "required": False},
+        {"id": "malum:necklace_of_the_watcher", "required": False},
+        {"id": "malum:ornate_necklace", "required": False},
+        {"id": "mythsandlegends:necklace_of_torngarsuk", "required": False},
+        {"id": "nameless_trinkets:broken_ankh", "required": False},
+        {"id": "nameless_trinkets:gills", "required": False},
         {"id": "nameless_trinkets:moon_stone", "required": False},
+        {"id": "nameless_trinkets:resonant_heart", "required": False},
+        {"id": "nameless_trinkets:scarab_amulet", "required": False},
+        {"id": "nameless_trinkets:woundbearer", "required": False},
+        {"id": "pastel:greater_potion_pendant", "required": False},
+        {"id": "pastel:laurels_of_serenity", "required": False},
+        {"id": "pastel:lesser_potion_pendant", "required": False},
+        {"id": "pastel:shieldgrasp_amulet", "required": False},
+        {"id": "pastel:totem_pendant", "required": False},
         {"id": "terra_curio:cross_necklace", "required": False},
         {"id": "terra_curio:jellyfish_necklace", "required": False},
         {"id": "terra_curio:lava_charm", "required": False},
@@ -1570,6 +1628,8 @@ write("data/curios/tags/item/necklace.json",
         {"id": "terra_curio:sweetheart_necklace", "required": False},
         {"id": "terra_curio:worm_scarf", "required": False},
     ]})
+write("data/curios/tags/item/bracelet.json",
+      {"replace": True, "values": []})
 write("data/curios/tags/item/pandora.json",
       {"replace": False, "values": [
         {"id": "pandora:pandora_bracelet", "required": False},
