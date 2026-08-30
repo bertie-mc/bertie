@@ -27,4 +27,9 @@ dependencies {
     // own attribute event is the only way to move that to the cape slot without a mixin.
     compileOnly(deps.curios)
     testRuntimeOnly(deps.curios)
+
+    // Hooked's item stat components and NeoForge item class - four new hook variants live in
+    // this mod's namespace, and four built-in hooks get their default components rebalanced.
+    compileOnly(deps.hooked)
+    testRuntimeOnly(deps.hooked)
 }

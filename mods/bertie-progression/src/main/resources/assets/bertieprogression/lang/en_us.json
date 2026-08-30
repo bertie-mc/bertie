@@ -63,5 +63,9 @@
   "item.bertieprogression.kraken_ship_map.filled": "Map to the Kraken's Ship",
   "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
   "curios.identifier.hat": "Head",
-  "curios.modifiers.hat": "When on head:"
+  "curios.modifiers.hat": "When on head:",
+  "item.bertieprogression.soul_hook": "Soul Hook",
+  "item.bertieprogression.blazing_hook": "Blazing Hook",
+  "item.bertieprogression.moon_hook": "Moon Hook",
+  "item.bertieprogression.echo_hook": "Echo Hook"
 }

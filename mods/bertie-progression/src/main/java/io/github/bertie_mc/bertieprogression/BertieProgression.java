@@ -4,6 +4,7 @@ import io.github.bertie_mc.bertieprogression.fan.ModFanProcessing;
 import io.github.bertie_mc.bertieprogression.forge.ForgeBedHandler;
 import io.github.bertie_mc.bertieprogression.forge.PedestalFormationHandler;
 import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
+import io.github.bertie_mc.bertieprogression.hooks.HookIntegration;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.shrine.DeepWatersShrineHandler;
 import net.neoforged.bus.api.IEventBus;
@@ -31,6 +32,11 @@ public final class BertieProgression {
         // the class at all without the mod present would fail to link.
         if (ModList.get().isLoaded("forbidden_arcanus")) {
             io.github.bertie_mc.bertieprogression.backpack.ModRitualResults.TYPES.register(modBus);
+        }
+        // Four new hook variants live in this mod's namespace and four built-ins get rebalanced;
+        // guarded because the whole class references hooked's Kotlin types directly.
+        if (ModList.get().isLoaded("hooked")) {
+            HookIntegration.init(modBus);
         }
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
