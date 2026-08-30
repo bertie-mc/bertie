@@ -32,10 +32,9 @@ import top.theillusivec4.curios.api.type.ISlotType;
  */
 public final class SlotAudit {
 
-    // Two names for one slot: the compat layer calls it `head` on the Curios side and `hat` on the
-    // Accessories side, and the tags it validates against are keyed by the latter.
+    // One name now. The compat layer used to call this slot `head` on the Curios side; with that
+    // layer gone `head` is a different slot entirely, and asking it whether it takes a hat says no.
     private static final String HEAD_SLOT = "hat";
-    private static final String HEAD_SLOT_CURIOS = "head";
     private static final String[] HEAD_ITEMS = {
         "armageddon_mod:fisher_hat",
         "armageddon_mod:vagabonds_hood",
@@ -94,11 +93,7 @@ public final class SlotAudit {
         out.add("head trinkets vs the tags the " + HEAD_SLOT + " slot validates against");
         TagKey<Item> curiosTag =
                 TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("curios", HEAD_SLOT));
-        TagKey<Item> accTag =
-                TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("accessories", HEAD_SLOT));
-        out.add(String.format(
-                "%-44s %-14s %-18s %s",
-                "item", "#curios:" + HEAD_SLOT, "#accessories:" + HEAD_SLOT, "slot accepts it"));
+        out.add(String.format("%-44s %-14s %s", "item", "#curios:" + HEAD_SLOT, "slot accepts it"));
         for (String id : HEAD_ITEMS) {
             ResourceLocation key = ResourceLocation.parse(id);
             Item item = BuiltInRegistries.ITEM.getOptional(key).orElse(null);
@@ -112,16 +107,14 @@ public final class SlotAudit {
                 // The question that actually matters: not "is it tagged" but "does the slot take
                 // it". Every validator on the slot gets a say here, tag or otherwise.
                 fits = CuriosApi.isStackValid(
-                                new SlotContext(HEAD_SLOT_CURIOS, player, 0, false, true),
+                                new SlotContext(HEAD_SLOT, player, 0, false, true),
                                 new net.minecraft.world.item.ItemStack(item))
                         ? "YES"
                         : "no";
             } catch (RuntimeException e) {
                 fits = "threw: " + e.getClass().getSimpleName();
             }
-            out.add(String.format(
-                    "%-44s %-14s %-18s %s",
-                    id, holder.is(curiosTag) ? "yes" : "NO", holder.is(accTag) ? "yes" : "NO", fits));
+            out.add(String.format("%-44s %-14s %s", id, holder.is(curiosTag) ? "yes" : "NO", fits));
         }
         Path path = FMLPaths.GAMEDIR.get().resolve("logs").resolve("bertie-slots.txt");
         try {
