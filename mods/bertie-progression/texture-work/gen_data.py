@@ -868,6 +868,24 @@ write("data/sophisticatedbackpacks/recipe/backpack.json", {
 # All four keep sophisticatedbackpacks' own recipe types where a type exists: backpack_upgrade is
 # what moves a full backpack's contents into the new one, and a plain shaped recipe would hand the
 # player an empty pack and eat what was inside.
+# Hooked's wooden hook stops being sticks and string. It is the first thing the magitech bench
+# makes that is not a tool: two wood scythe blades around a wood pickaxe and a wood heavy handle.
+write("data/hooked/recipe/wood_hook.json", {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {
+        "B": {"type": "neoforge:components", "items": "magitech:heavy_blade",
+              "components": {"magitech:material_component": "magitech:wood"}},
+        "P": {"type": "neoforge:components", "items": "magitech:pickaxe",
+              "components": {"magitech:part_material_component":
+                             ["magitech:wood", "magitech:wood", "magitech:wood"]}},
+        "H": {"type": "neoforge:components", "items": "magitech:heavy_handle",
+              "components": {"magitech:material_component": "magitech:wood"}},
+    },
+    "pattern": ["BP", "HB"],
+    "result": {"count": 1, "id": "hooked:wood_hook"},
+})
+
 write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
     "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
                              "itemRegistryName": "sophisticatedbackpacks:copper_backpack"}],
@@ -906,6 +924,20 @@ _gold_backpack = infusion("sophisticatedbackpacks:iron_backpack", 1,
 _gold_backpack["carryOverComponentData"] = True
 write(f"{R}/malum/gold_backpack.json", _gold_backpack)
 write("data/sophisticatedbackpacks/recipe/gold_backpack.json", DISABLED)
+# Netherite: a Tier-II ritual. One of each infused netherite ingot fills six pedestals, the ignitium
+# template and the ministrosity bucket the last two. 7500 blood is half the T2 ceiling and 1350 ink
+# is all of it (HephaestusForgeLevel T2: 3000/50/15000/1350).
+_netherite_backpack = ritual("sophisticatedbackpacks:diamond_backpack",
+                             [(f"elemental_metals:{_e}_infused_netherite_ingot", 1) for _e in
+                              ("arcane", "fire", "frost", "healing", "lightning", "soul")]
+                             + [("cataclysm:ignitium_upgrade_smithing_template", 1),
+                                ("cataclysm:netherite_ministrosity_bucket", 1)],
+                             "sophisticatedbackpacks:netherite_backpack", 1, tier=2,
+                             essences={"aureal": 1000, "blood": 7500, "souls": 20}, xp=1350)
+_netherite_backpack["result"] = {"type": "bertieprogression:upgrade_storage",
+                                 "result_item": "sophisticatedbackpacks:netherite_backpack"}
+write(f"{RIT}/netherite_backpack.json", _netherite_backpack)
+write("data/sophisticatedbackpacks/recipe/netherite_backpack.json", DISABLED)
 # Diamond is a sequenced assembly and lives with the other ones, below.
 
 # Pastel's own recipes remain untouched. In particular, the Fusion Shrine keeps both stock pedestal

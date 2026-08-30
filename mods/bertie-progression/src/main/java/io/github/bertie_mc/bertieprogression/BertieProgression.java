@@ -41,6 +41,7 @@ public final class BertieProgression {
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
         modBus.register(TabAnchors.class);
+        modBus.register(EldritchTabGaps.class);
 
         NeoForge.EVENT_BUS.register(CraftingGateHandler.class);
         NeoForge.EVENT_BUS.register(ForgeBedHandler.class);

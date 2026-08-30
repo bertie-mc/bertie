@@ -117,6 +117,7 @@
 	quest.1B00000000000035.quest_desc: ["Scribe anything. The spell does not matter yet, only that you can write one."]
 	quest.1B00000000000035.title: "A Spell Scroll"
 	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
+	quest.1B00000000000036.title: "Wooden Hook"
 	quest.1C00000000000008.title: "Tainted Rock"
 	quest.1C00000000000009.quest_desc: ["The same trade, soured: one block of GRANITE, one Wicked and one Arcane spirit."]
 	quest.1C00000000000009.title: "Twisted Rock"

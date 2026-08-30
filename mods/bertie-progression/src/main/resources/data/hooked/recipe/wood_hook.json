@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "type": "neoforge:components",
+      "items": "magitech:heavy_blade",
+      "components": {
+        "magitech:material_component": "magitech:wood"
+      }
+    },
+    "P": {
+      "type": "neoforge:components",
+      "items": "magitech:pickaxe",
+      "components": {
+        "magitech:part_material_component": [
+          "magitech:wood",
+          "magitech:wood",
+          "magitech:wood"
+        ]
+      }
+    },
+    "H": {
+      "type": "neoforge:components",
+      "items": "magitech:heavy_handle",
+      "components": {
+        "magitech:material_component": "magitech:wood"
+      }
+    }
+  },
+  "pattern": [
+    "BP",
+    "HB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hooked:wood_hook"
+  }
+}

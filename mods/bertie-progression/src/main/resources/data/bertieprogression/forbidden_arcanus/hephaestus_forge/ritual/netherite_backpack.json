@@ -1,0 +1,67 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 7500,
+    "souls": 20,
+    "experience": 1350
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:arcane_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:fire_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:frost_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:healing_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:lightning_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "elemental_metals:soul_infused_netherite_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:netherite_ministrosity_bucket"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:diamond_backpack"
+  },
+  "result": {
+    "type": "bertieprogression:upgrade_storage",
+    "result_item": "sophisticatedbackpacks:netherite_backpack"
+  },
+  "forge_tier": 2
+}
