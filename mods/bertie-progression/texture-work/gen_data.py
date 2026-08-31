@@ -904,6 +904,11 @@ write(f"{RIT}/cognitive_hook.json",
              "hooked:diamond_hook", 1, tier=1,
              essences={"aureal": 350, "blood": 0, "souls": 4}, xp=900))
 
+# Cognitive has a ritual now, so Hooked's own diamond craft goes - otherwise the tier is reachable
+# without the forge and the line has a hole in it. Ender and Redstone keep their stock recipes:
+# neither is part of this progression.
+write("data/hooked/recipe/diamond_hook.json", DISABLED)
+
 # Blazing: the altar, and the only hook that asks for a full stack of one spirit.
 write(f"{R}/malum/blazing_hook.json",
       infusion("hooked:diamond_hook", 1,
