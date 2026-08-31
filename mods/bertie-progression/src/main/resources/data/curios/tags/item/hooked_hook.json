@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    { "id": "bertieprogression:soul_hook",    "required": false },
-    { "id": "bertieprogression:blazing_hook", "required": false },
-    { "id": "bertieprogression:moon_hook",    "required": false },
-    { "id": "bertieprogression:echo_hook",    "required": false }
+    { "id": "hooked:soul_hook",    "required": false },
+    { "id": "hooked:blazing_hook", "required": false },
+    { "id": "hooked:moon_hook",    "required": false },
+    { "id": "hooked:echo_hook",    "required": false }
   ]
 }

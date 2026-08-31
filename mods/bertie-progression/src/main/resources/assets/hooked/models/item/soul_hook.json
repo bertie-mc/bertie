@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bertieprogression:item/soul_hook"
+    "layer0": "hooked:item/soul_hook"
   }
 }

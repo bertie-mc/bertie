@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bertieprogression:item/moon_hook"
+    "layer0": "hooked:item/moon_hook"
   }
 }

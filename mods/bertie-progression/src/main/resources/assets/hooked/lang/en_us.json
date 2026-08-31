@@ -1,5 +1,9 @@
 {
-  "item.hooked.iron_hook": "Deep Hook",
+  "item.hooked.iron_hook":    "Deep Hook",
   "item.hooked.diamond_hook": "Cognitive Hook",
-  "item.hooked.ender_hook": "Crystal Hook"
+  "item.hooked.ender_hook":   "Crystal Hook",
+  "item.hooked.soul_hook":    "Soul Hook",
+  "item.hooked.blazing_hook": "Blazing Hook",
+  "item.hooked.moon_hook":    "Moon Hook",
+  "item.hooked.echo_hook":    "Echo Hook"
 }

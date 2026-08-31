@@ -20,19 +20,29 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import org.joml.Vector3f;
 
 /**
  * Bertie Progression's hook progression on top of {@code hooked} (thecodewarrior).
  * Only wired when the mod is loaded; the containing class is otherwise never referenced.
  * <p>
- * Registers four new hook items in this mod's namespace, and rebalances the four built-in
- * hooks (wood, iron, diamond, ender) via {@link ModifyDefaultComponentsEvent}. The rename
- * from iron/diamond/ender → deep/cognitive/crystal is display-only via the lang overlay
- * under {@code assets/hooked/lang/}.
+ * Registers four new hook items in {@code hooked}'s namespace so JEI/EMI search by
+ * "hooked" surfaces the whole progression in one namespace, and rebalances the four
+ * built-in hooks (wood, iron, diamond, ender) via {@link ModifyDefaultComponentsEvent}.
+ * The rename from iron/diamond/ender → deep/cognitive/crystal is display-only via the
+ * lang overlay under {@code assets/hooked/lang/}.
  */
 public final class HookIntegration {
     private HookIntegration() {}
+
+    /**
+     * A separate DeferredRegister keyed to the {@code hooked} namespace so the four new
+     * items get IDs like {@code hooked:soul_hook} and translation keys like
+     * {@code item.hooked.soul_hook}. This is a compatibility mod owning IDs under
+     * another mod's namespace; registered on the same mod bus as {@link ModItems#ITEMS}.
+     */
+    private static final DeferredRegister.Items HOOKED_ITEMS = DeferredRegister.createItems("hooked");
 
     // Registrations are kept as Suppliers so the actual HookItemNeoForge instance is only
     // resolved during item-registry population, which happens after all mod constructors run.
@@ -53,14 +63,15 @@ public final class HookIntegration {
         BLAZING_HOOK = registerBasic("blazing_hook", 3, 24.0, 1.2,  5, 1.2);
         MOON_HOOK    = registerBasic("moon_hook",    3, 28.0, 1.4,  3, 1.4);
         ECHO_HOOK    = registerBasic("echo_hook",    4, 32.0, 1.6,  2, 1.6);
+        HOOKED_ITEMS.register(modBus);
         modBus.addListener(HookIntegration::onModifyDefaults);
         modBus.addListener(HookIntegration::onBuildCreativeTab);
     }
 
     /**
-     * The four new hooks live in this mod's namespace, so they do not otherwise appear in
-     * Hooked's own creative tab. Inject them there so the tab still lists the whole progression
-     * in one place - and also into Bertie Progression's own tab so this mod's tab is complete.
+     * Hooked's creative tab is populated by Architectury's arch$tab() marker set from Kotlin
+     * during registration - our items don't hit that path, so they need to be injected via
+     * NeoForge's event. Also add them to Bertie Progression's own tab so it lists them too.
      */
     private static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if (!HOOKED_TAB.equals(event.getTabKey())
@@ -75,18 +86,18 @@ public final class HookIntegration {
 
     private static DeferredItem<Item> registerBasic(
             String id, int count, double range, double speed, int cooldownTicks, double pullStrength) {
-        return ModItems.ITEMS.register(id, () -> {
+        return HOOKED_ITEMS.register(id, () -> {
             HookModelInfo def = HookModelInfo.Companion.getDEFAULT();
             HookModelInfo model = new HookModelInfo(
                     def.getModel(),
                     ResourceLocation.fromNamespaceAndPath(
-                            BertieProgression.MODID, "textures/hook/" + id + "/hook.png"),
+                            "hooked", "textures/hook/" + id + "/hook.png"),
                     def.getHookLength());
             ChainAppearance chain = new ChainAppearance(
                     ResourceLocation.fromNamespaceAndPath(
-                            BertieProgression.MODID, "textures/hook/" + id + "/chain1.png"),
+                            "hooked", "textures/hook/" + id + "/chain1.png"),
                     ResourceLocation.fromNamespaceAndPath(
-                            BertieProgression.MODID, "textures/hook/" + id + "/chain2.png"),
+                            "hooked", "textures/hook/" + id + "/chain2.png"),
                     /* playerGap */ 0.0,
                     Optional.empty(),
                     Optional.empty());
