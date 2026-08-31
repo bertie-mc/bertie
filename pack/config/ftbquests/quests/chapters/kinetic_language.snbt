@@ -2211,7 +2211,7 @@
 				item: { count: 1, id: "mythsandlegends:bound_soul_ingot" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 7.5d
 			y: -1.5d
 		}
 		{
@@ -2290,8 +2290,8 @@
 				item: { count: 1, id: "forbidden_arcanus:obsidiansteel_ingot" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2B00000000000063"]
@@ -2309,7 +2309,7 @@
 				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
