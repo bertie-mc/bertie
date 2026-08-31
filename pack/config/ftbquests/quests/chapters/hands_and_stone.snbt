@@ -48,7 +48,7 @@
 				item: { count: 1, id: "berlordscarving:wood_slate" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -87,7 +87,7 @@
 				item: { count: 1, id: "minecraft:flint" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -106,7 +106,7 @@
 				item: { count: 1, id: "magitech:assembly_workbench" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -162,7 +162,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -185,7 +185,7 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -455,7 +455,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000015"]
@@ -474,8 +474,8 @@
 				item: { count: 1, id: "forbidden_arcanus:arcane_crystal_dust" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B00000000000016"]
@@ -682,7 +682,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -4.2d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000019"]
@@ -702,7 +702,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 1.9d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B00000000000012"]
@@ -838,8 +838,8 @@
 				item: { count: 1, id: "forbidden_arcanus:corrupted_arcane_crystal" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -5.4d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B0000000000000A"]
@@ -857,7 +857,7 @@
 				item: { count: 1, id: "forbidden_arcanus:rune" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -916,7 +916,7 @@
 				item: { count: 1, id: "forbidden_arcanus:test_tube" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -936,8 +936,8 @@
 				item: { count: 1, id: "irons_spellbooks:common_ink" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B0000000000002C"]
@@ -959,7 +959,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(forbidden_arcanus:soul)item(forbidden_arcanus:corrupt_soul)item(forbidden_arcanus:enchanted_soul))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Any Soul\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -982,7 +982,7 @@
 				item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -1077,7 +1077,7 @@
 				item: { count: 1, id: "magitech:upgrade_workbench" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: -1.5d
 		}
 		{
@@ -1153,8 +1153,8 @@
 				item: { count: 1, id: "hooked:wood_hook" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 }
