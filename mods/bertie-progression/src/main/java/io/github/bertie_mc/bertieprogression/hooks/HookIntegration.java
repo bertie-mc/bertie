@@ -7,12 +7,17 @@ import dev.thecodewarrior.hooked.item.ItemComponents;
 import dev.thecodewarrior.hooked.neoforge.HookItemNeoForge;
 import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.joml.Vector3f;
@@ -36,12 +41,36 @@ public final class HookIntegration {
     public static Supplier<Item> MOON_HOOK;
     public static Supplier<Item> ECHO_HOOK;
 
+    private static final ResourceKey<CreativeModeTab> HOOKED_TAB = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            ResourceLocation.fromNamespaceAndPath("hooked", "item_group"));
+    private static final ResourceKey<CreativeModeTab> BERTIE_PROGRESSION_TAB = ResourceKey.create(
+            Registries.CREATIVE_MODE_TAB,
+            ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "main"));
+
     public static void init(IEventBus modBus) {
         SOUL_HOOK    = registerBasic("soul_hook",    3, 16.0, 0.8, 13, 0.8);
         BLAZING_HOOK = registerBasic("blazing_hook", 3, 24.0, 1.2,  5, 1.2);
         MOON_HOOK    = registerBasic("moon_hook",    3, 28.0, 1.4,  3, 1.4);
         ECHO_HOOK    = registerBasic("echo_hook",    4, 32.0, 1.6,  2, 1.6);
         modBus.addListener(HookIntegration::onModifyDefaults);
+        modBus.addListener(HookIntegration::onBuildCreativeTab);
+    }
+
+    /**
+     * The four new hooks live in this mod's namespace, so they do not otherwise appear in
+     * Hooked's own creative tab. Inject them there so the tab still lists the whole progression
+     * in one place - and also into Bertie Progression's own tab so this mod's tab is complete.
+     */
+    private static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
+        if (!HOOKED_TAB.equals(event.getTabKey())
+                && !BERTIE_PROGRESSION_TAB.equals(event.getTabKey())) {
+            return;
+        }
+        List<Supplier<Item>> newHooks = List.of(SOUL_HOOK, BLAZING_HOOK, MOON_HOOK, ECHO_HOOK);
+        for (Supplier<Item> s : newHooks) {
+            event.accept(s.get());
+        }
     }
 
     private static DeferredItem<Item> registerBasic(
