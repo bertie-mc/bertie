@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "berlordscarving:deep_alloy_big_slate"
+    },
+    "C": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    },
+    "W": {
+      "item": "hooked:wood_hook"
+    }
+  },
+  "pattern": [
+    "SC",
+    "WS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hooked:iron_hook"
+  }
+}

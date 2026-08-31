@@ -1036,6 +1036,7 @@
 			dependencies: [
 				"2B00000000000031"
 				"2B00000000000041"
+				"2B00000000000060"
 			]
 			icon: {
 				id: "bertieprogression:shield_maiden"
@@ -2275,7 +2276,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000029"]
+			dependencies: ["2B0000000000002A"]
 			icon: {
 				id: "forbidden_arcanus:obsidiansteel_ingot"
 			}
@@ -2330,6 +2331,25 @@
 			}]
 			x: 6.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["2B00000000000064"]
+			icon: {
+				id: "hooked:soul_hook"
+			}
+			id: "2B00000000000066"
+			rewards: [{
+				id: "2B00000002000066"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000066"
+				item: { count: 1, id: "hooked:soul_hook" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
 		}
 	]
 }

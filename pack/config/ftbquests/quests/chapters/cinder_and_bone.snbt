@@ -1061,5 +1061,24 @@
 			x: 19.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["6B0000000000004D"]
+			icon: {
+				id: "hooked:blazing_hook"
+			}
+			id: "6B0000000000005C"
+			rewards: [{
+				id: "6B0000000200005C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100005C"
+				item: { count: 1, id: "hooked:blazing_hook" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.5d
+		}
 	]
 }

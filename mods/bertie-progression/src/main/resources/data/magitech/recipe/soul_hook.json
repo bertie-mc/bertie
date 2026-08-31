@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hooked"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "hooked:iron_hook"
+    },
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "malum:soul_stained_steel_plating"
+    },
+    {
+      "item": "elemental_metals:soul_infused_iron_ingot"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:mana_potion",
+    "amount": 2000
+  },
+  "result": {
+    "id": "hooked:soul_hook",
+    "count": 1
+  }
+}

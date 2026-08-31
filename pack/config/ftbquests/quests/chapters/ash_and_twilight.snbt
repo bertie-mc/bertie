@@ -213,7 +213,7 @@
 		}
 		{
 			icon: {
-				id: "twilightforest:alpha_yeti_fur"
+				id: "twilightforest:alpha_yeti_trophy"
 			}
 			id: "3B00000000000015"
 			rewards: [{
@@ -1438,6 +1438,28 @@
 			}]
 			x: -9.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3B00000000000024"
+				"3B00000000000055"
+			]
+			icon: {
+				id: "hooked:diamond_hook"
+			}
+			id: "3B0000000000005B"
+			rewards: [{
+				id: "3B0000000200005B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B0000000100005B"
+				item: { count: 1, id: "hooked:diamond_hook" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 }

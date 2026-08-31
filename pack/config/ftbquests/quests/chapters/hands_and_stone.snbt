@@ -1156,5 +1156,27 @@
 			x: 4.5d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"1B0000000000000F"
+				"1B0000000000000C"
+			]
+			icon: {
+				id: "hooked:iron_hook"
+			}
+			id: "1B00000000000037"
+			rewards: [{
+				id: "1B00000002000037"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000037"
+				item: { count: 1, id: "hooked:iron_hook" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.5d
+		}
 	]
 }

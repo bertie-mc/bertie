@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hooked"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "hooked:diamond_hook",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "cataclysm:ignitium_ingot",
+      "count": 2
+    },
+    {
+      "item": "avaritia:blaze_cube",
+      "count": 4
+    },
+    {
+      "item": "cataclysm:ignitium_upgrade_smithing_template",
+      "count": 1
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:infernal",
+      "count": 64
+    }
+  ],
+  "result": {
+    "id": "hooked:blazing_hook",
+    "count": 1
+  }
+}

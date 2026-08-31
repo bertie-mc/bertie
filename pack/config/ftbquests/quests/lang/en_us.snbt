@@ -118,6 +118,7 @@
 	quest.1B00000000000035.title: "A Spell Scroll"
 	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
 	quest.1B00000000000036.title: "Wooden Hook"
+	quest.1B00000000000037.title: "Deep Hook"
 	quest.1C00000000000008.title: "Tainted Rock"
 	quest.1C00000000000009.quest_desc: ["The same trade, soured: one block of GRANITE, one Wicked and one Arcane spirit."]
 	quest.1C00000000000009.title: "Twisted Rock"
@@ -407,6 +408,7 @@
 	quest.2B00000000000063.title: "Obsidiansteel Ingot"
 	quest.2B00000000000064.title: "Soulstained Steel Ingot"
 	quest.2B00000000000065.title: "Diamond Backpack"
+	quest.2B00000000000066.title: "Soul Hook"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"
@@ -579,6 +581,7 @@
 	quest.3B00000000000054.title: "Cognitive Crystal"
 	quest.3B00000000000055.quest_desc: ["Three alloys onto a crystal, a splash of Timeless Slurry, and a press."]
 	quest.3B00000000000055.title: "The Astute Assembly"
+	quest.3B0000000000005B.title: "Cognitive Hook"
 	quest.3C00000000000001.title: "The Enchanting Table"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.title: "The Experience Obelisk"
@@ -1924,18 +1927,6 @@
 	quest.4C00000000000292.title: "Creative Wireless Universal Grid"
 	quest.4C00000000000293.quest_desc: ["Refined Storage slot."]
 	quest.4C00000000000293.title: "Wireless Universal Grid"
-	quest.4C00000000000294.quest_desc: ["Back slot."]
-	quest.4C00000000000294.title: "Backpack"
-	quest.4C00000000000295.quest_desc: ["Back slot."]
-	quest.4C00000000000295.title: "Copper Backpack"
-	quest.4C00000000000296.quest_desc: ["Back slot."]
-	quest.4C00000000000296.title: "Diamond Backpack"
-	quest.4C00000000000297.quest_desc: ["Back slot."]
-	quest.4C00000000000297.title: "Gold Backpack"
-	quest.4C00000000000298.quest_desc: ["Back slot."]
-	quest.4C00000000000298.title: "Iron Backpack"
-	quest.4C00000000000299.quest_desc: ["Back slot."]
-	quest.4C00000000000299.title: "Netherite Backpack"
 	quest.4C0000000000029A.quest_desc: ["Hook slot."]
 	quest.4C0000000000029A.title: "Custom Hook"
 	quest.4C0000000000029B.quest_desc: ["Hook slot."]
@@ -2115,6 +2106,7 @@
 	quest.6B00000000000051.quest_desc: ["Throw Corrupti Dust and Dark Matter down together and stand well back. It leaves no drop - looking at it is the whole quest."]
 	quest.6B00000000000051.title: "Witness a Black Hole"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
+	quest.6B0000000000005C.title: "Blazing Hook"
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
 	quest.7B00000000000002.title: "Inscription Table"

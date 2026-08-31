@@ -870,6 +870,48 @@ write("data/sophisticatedbackpacks/recipe/backpack.json", {
 # player an empty pack and eat what was inside.
 # Hooked's wooden hook stops being sticks and string. It is the first thing the magitech bench
 # makes that is not a tool: two wood scythe blades around a wood pickaxe and a wood heavy handle.
+# --- The hook line above wood. Each tier consumes the one below it, so the chain is linear and a
+#     hook is never crafted from raw materials twice. Deep is a bench craft, Soul a crucible bath,
+#     Cognitive a forge ritual and Blazing an altar infusion - one step of each of the pack's four
+#     systems, in the order they open up. ---
+
+# Deep: the same 2x2 shape as wood, one tier of slate up, around the wooden hook it replaces.
+write("data/hooked/recipe/iron_hook.json", {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "key": {"S": {"item": "berlordscarving:deep_alloy_big_slate"},
+            "C": {"item": "armageddon_mod:colossal_iron_ingot"},
+            "W": {"item": "hooked:wood_hook"}},
+    "pattern": ["SC", "WS"],
+    "result": {"count": 1, "id": "hooked:iron_hook"},
+})
+
+# Soul: a Zardius Crucible bath, two buckets of mana potion.
+write("data/magitech/recipe/soul_hook.json", {
+    "neoforge:conditions": conds("magitech", "malum", "elemental_metals", "hooked"),
+    "type": "magitech:zardius_crucible",
+    "ingredients": [{"item": "hooked:iron_hook"}]
+                   + [{"item": "malum:soul_stained_steel_plating"}] * 4
+                   + [{"item": "elemental_metals:soul_infused_iron_ingot"}],
+    "fluid_ingredient": {"fluid": "magitech:mana_potion", "amount": 2000},
+    "result": {"id": "hooked:soul_hook", "count": 1},
+})
+
+# Cognitive: a Tier-I ritual. 900 ink is the whole T1 ceiling (HephaestusForgeLevel: 1000/10/10000/900).
+write(f"{RIT}/cognitive_hook.json",
+      ritual("hooked:soul_hook",
+             [("cataclysm:cursium_ingot", 2), ("cognition:astute_assembly", 4)],
+             "hooked:diamond_hook", 1, tier=1,
+             essences={"aureal": 350, "blood": 0, "souls": 4}, xp=900))
+
+# Blazing: the altar, and the only hook that asks for a full stack of one spirit.
+write(f"{R}/malum/blazing_hook.json",
+      infusion("hooked:diamond_hook", 1,
+               [("cataclysm:ignitium_ingot", 2), ("avaritia:blaze_cube", 4),
+                ("cataclysm:ignitium_upgrade_smithing_template", 1)],
+               [SP("infernal", 64)],
+               "hooked:blazing_hook", 1))
+
 write("data/hooked/recipe/wood_hook.json", {
     "type": "minecraft:crafting_shaped",
     "category": "equipment",
@@ -2378,11 +2420,6 @@ write(f"{RIT}/acolyte_of_deflection.json",
 #     (4 + 2 + 2). The 200-experience cost is paid in ink through forge-ink.
 #     forge_tier omitted = any tier: it is the ROOT of the C3 water path, so it must be reachable on
 #     the T1 forge, same reasoning as crafting_license. ---
-write(f"{RIT}/deepwaters_key.json",
-      ritual("minecraft:nautilus_shell",
-             [("iceandfire:sea_serpent_fang", 4), ("malum:warp_flux", 2), ("slag:deep_alloy", 2)],
-             "deepwaters:endlesscaves", 1,
-             essences={"aureal": 60, "blood": 0, "souls": 4}, xp=200))
 write("data/deepwaters/recipe/hovaport.json", DISABLED)
 
 # --- Crowned Jelly: replace the stock recipe's gold with Hallowed Gold and fill the four corners
