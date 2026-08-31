@@ -20,8 +20,7 @@ class ForgeStructurePlacementTest {
         for (int z = 0; z < 9; z++) {
             assertEquals(9, base[z].length(), "row " + z);
             for (int x = 0; x < 9; x++) {
-                assertEquals(
-                        base[z].charAt(x), base[x].charAt(8 - z), "rotated copy of " + x + "," + z);
+                assertEquals(base[z].charAt(x), base[x].charAt(8 - z), "rotated copy of " + x + "," + z);
                 switch (base[z].charAt(x)) {
                     case 'P' -> counts[0]++;
                     case 'A' -> counts[1]++;

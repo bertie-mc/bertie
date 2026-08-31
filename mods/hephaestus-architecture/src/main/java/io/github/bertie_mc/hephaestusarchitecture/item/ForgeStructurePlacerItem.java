@@ -57,8 +57,7 @@ public class ForgeStructurePlacerItem extends Item {
     }
 
     @Override
-    public void appendHoverText(
-            ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("item.hephaestusarchitecture.structure_placer.creative_exclusive")
                 .withStyle(ChatFormatting.LIGHT_PURPLE));
         tooltip.add(Component.translatable("item.hephaestusarchitecture.structure_placer.desc", this.tier)

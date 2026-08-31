@@ -53,17 +53,15 @@ public final class HookIntegration {
     public static Supplier<Item> ECHO_HOOK;
 
     private static final ResourceKey<CreativeModeTab> HOOKED_TAB = ResourceKey.create(
-            Registries.CREATIVE_MODE_TAB,
-            ResourceLocation.fromNamespaceAndPath("hooked", "item_group"));
+            Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath("hooked", "item_group"));
     private static final ResourceKey<CreativeModeTab> BERTIE_PROGRESSION_TAB = ResourceKey.create(
-            Registries.CREATIVE_MODE_TAB,
-            ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "main"));
+            Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "main"));
 
     public static void init(IEventBus modBus) {
-        SOUL_HOOK    = registerBasic("soul_hook",    3, 16.0, 0.8, 13, 0.8);
-        BLAZING_HOOK = registerBasic("blazing_hook", 3, 24.0, 1.2,  5, 1.2);
-        MOON_HOOK    = registerBasic("moon_hook",    3, 28.0, 1.4,  3, 1.4);
-        ECHO_HOOK    = registerBasic("echo_hook",    4, 32.0, 1.6,  2, 1.6);
+        SOUL_HOOK = registerBasic("soul_hook", 3, 16.0, 0.8, 13, 0.8);
+        BLAZING_HOOK = registerBasic("blazing_hook", 3, 24.0, 1.2, 5, 1.2);
+        MOON_HOOK = registerBasic("moon_hook", 3, 28.0, 1.4, 3, 1.4);
+        ECHO_HOOK = registerBasic("echo_hook", 4, 32.0, 1.6, 2, 1.6);
         HOOKED_ITEMS.register(modBus);
         modBus.addListener(HookIntegration::onModifyDefaults);
         modBus.addListener(HookIntegration::onBuildCreativeTab);
@@ -80,18 +78,18 @@ public final class HookIntegration {
      */
     private static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if (HOOKED_TAB.equals(event.getTabKey())) {
-            ItemStack ironPivot    = new ItemStack(item("iron_hook"));
+            ItemStack ironPivot = new ItemStack(item("iron_hook"));
             ItemStack diamondPivot = new ItemStack(item("diamond_hook"));
-            ItemStack soul    = new ItemStack(SOUL_HOOK.get());
+            ItemStack soul = new ItemStack(SOUL_HOOK.get());
             ItemStack blazing = new ItemStack(BLAZING_HOOK.get());
-            ItemStack moon    = new ItemStack(MOON_HOOK.get());
-            ItemStack echo    = new ItemStack(ECHO_HOOK.get());
+            ItemStack moon = new ItemStack(MOON_HOOK.get());
+            ItemStack echo = new ItemStack(ECHO_HOOK.get());
             CreativeModeTab.TabVisibility v = CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
             // Insert individually so each new pivot exists before its next insertAfter reads it.
-            event.insertAfter(ironPivot,    soul,    v);
+            event.insertAfter(ironPivot, soul, v);
             event.insertAfter(diamondPivot, blazing, v);
-            event.insertAfter(blazing,      moon,    v);
-            event.insertAfter(moon,         echo,    v);
+            event.insertAfter(blazing, moon, v);
+            event.insertAfter(moon, echo, v);
         } else if (BERTIE_PROGRESSION_TAB.equals(event.getTabKey())) {
             List<Supplier<Item>> newHooks = List.of(SOUL_HOOK, BLAZING_HOOK, MOON_HOOK, ECHO_HOOK);
             for (Supplier<Item> s : newHooks) {
@@ -106,14 +104,11 @@ public final class HookIntegration {
             HookModelInfo def = HookModelInfo.Companion.getDEFAULT();
             HookModelInfo model = new HookModelInfo(
                     def.getModel(),
-                    ResourceLocation.fromNamespaceAndPath(
-                            "hooked", "textures/hook/" + id + "/hook.png"),
+                    ResourceLocation.fromNamespaceAndPath("hooked", "textures/hook/" + id + "/hook.png"),
                     def.getHookLength());
             ChainAppearance chain = new ChainAppearance(
-                    ResourceLocation.fromNamespaceAndPath(
-                            "hooked", "textures/hook/" + id + "/chain1.png"),
-                    ResourceLocation.fromNamespaceAndPath(
-                            "hooked", "textures/hook/" + id + "/chain2.png"),
+                    ResourceLocation.fromNamespaceAndPath("hooked", "textures/hook/" + id + "/chain1.png"),
+                    ResourceLocation.fromNamespaceAndPath("hooked", "textures/hook/" + id + "/chain2.png"),
                     /* playerGap */ 0.0,
                     Optional.empty(),
                     Optional.empty());
@@ -123,9 +118,7 @@ public final class HookIntegration {
                     .component(ItemComponents.INSTANCE.getHOOK_RANGE(), range)
                     .component(ItemComponents.INSTANCE.getHOOK_SPEED(), speed)
                     .component(ItemComponents.INSTANCE.getFIRE_COOLDOWN(), cooldownTicks)
-                    .component(
-                            ItemComponents.INSTANCE.getHOOK_BEHAVIOR(),
-                            HookBehaviors.INSTANCE.getBASIC())
+                    .component(ItemComponents.INSTANCE.getHOOK_BEHAVIOR(), HookBehaviors.INSTANCE.getBASIC())
                     .component(ItemComponents.INSTANCE.getPULL_STRENGTH(), pullStrength)
                     .component(ItemComponents.INSTANCE.getHOOK_MODEL(), model)
                     .component(ItemComponents.INSTANCE.getCHAIN_APPEARANCE(), chain);
@@ -159,16 +152,16 @@ public final class HookIntegration {
         // ender's purple to a dark→bright aqua that matches the crystal-matrix palette overlay.
         // Chain textures and playerGap match hooked's default for ender_hook - the event's
         // patch builder cannot read the previous value, so the full ChainAppearance is rebuilt.
-        event.modify(item("ender_hook"), b -> b.set(
-                ItemComponents.INSTANCE.getCHAIN_APPEARANCE(),
-                new ChainAppearance(
-                        ResourceLocation.fromNamespaceAndPath(
-                                "hooked", "textures/hook/ender_hook/chain1.png"),
-                        ResourceLocation.fromNamespaceAndPath(
-                                "hooked", "textures/hook/ender_hook/chain2.png"),
-                        /* playerGap */ 0.0,
-                        Optional.of(new Vector3f(0.08f, 0.32f, 0.30f)),
-                        Optional.of(new Vector3f(0.60f, 0.95f, 0.93f)))));
+        event.modify(
+                item("ender_hook"),
+                b -> b.set(
+                        ItemComponents.INSTANCE.getCHAIN_APPEARANCE(),
+                        new ChainAppearance(
+                                ResourceLocation.fromNamespaceAndPath("hooked", "textures/hook/ender_hook/chain1.png"),
+                                ResourceLocation.fromNamespaceAndPath("hooked", "textures/hook/ender_hook/chain2.png"),
+                                /* playerGap */ 0.0,
+                                Optional.of(new Vector3f(0.08f, 0.32f, 0.30f)),
+                                Optional.of(new Vector3f(0.60f, 0.95f, 0.93f)))));
     }
 
     private static Item item(String path) {

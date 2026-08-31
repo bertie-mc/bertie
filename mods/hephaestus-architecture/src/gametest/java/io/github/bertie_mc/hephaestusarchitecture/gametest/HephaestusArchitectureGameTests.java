@@ -52,13 +52,11 @@ public final class HephaestusArchitectureGameTests {
                 return;
             }
             if (match.pedestalOffsets().size() != EXPECTED_PEDESTALS[tier - 1]) {
-                helper.fail("Placed tier " + tier + " layout has " + match.pedestalOffsets().size()
-                        + " pedestals, expected " + EXPECTED_PEDESTALS[tier - 1]);
+                helper.fail("Placed tier " + tier + " layout has "
+                        + match.pedestalOffsets().size() + " pedestals, expected " + EXPECTED_PEDESTALS[tier - 1]);
                 return;
             }
-            if (!helper.getLevel()
-                    .getBlockState(forgePos)
-                    .getValue(ModBlockStateProperties.ACTIVATED)) {
+            if (!helper.getLevel().getBlockState(forgePos).getValue(ModBlockStateProperties.ACTIVATED)) {
                 helper.fail("Placed tier " + tier + " forge did not activate");
                 return;
             }
