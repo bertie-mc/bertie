@@ -141,7 +141,7 @@ public final class ModItems {
     // --- Elemental cores produced by the four 7x7 mechanical-crafter recipes. ---
     public static final DeferredItem<Item> ABYSSAL_CORE = simple("abyssal_core", 16);
     public static final DeferredItem<Item> DESERT_CORE = simple("desert_core", 16);
-    public static final DeferredItem<Item> CURSED_CORE = simple("cursed_core", 16);
+    public static final DeferredItem<Item> FROSTED_CORE = simple("frosted_core", 16);
     public static final DeferredItem<Item> STORM_CORE = simple("storm_core", 16);
 
     // --- Eezo: the bedrock-lookalike ore, its raw drop and the ingot it smelts into. ---

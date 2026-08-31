@@ -657,7 +657,7 @@
 		{
 			dependencies: ["3B00000000000024"]
 			icon: {
-				id: "bertieprogression:cursed_core"
+				id: "bertieprogression:frosted_core"
 			}
 			id: "3B00000000000028"
 			rewards: [{
@@ -667,7 +667,7 @@
 			}]
 			tasks: [{
 				id: "3B00000001000028"
-				item: { count: 1, id: "bertieprogression:cursed_core" }
+				item: { count: 1, id: "bertieprogression:frosted_core" }
 				type: "item"
 			}]
 			x: 1.5d

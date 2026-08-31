@@ -534,10 +534,10 @@
 	quest.3B00000000000027.quest_desc: ["A 7x7 crafter wall: Brass Sheet edge, Gilded Plate at the four mid-points, Cthonic Gold and Blocks of Rose Gold woven with bone - Koboleton or Dragon, either will do - around a Block of Ancient Metal."]
 	quest.3B00000000000027.title: "The Desert Core"
 	quest.3B00000000000028.quest_desc: ["A 7x7 crafter wall: Blocks of Deep Alloy at the corners, Imitation Flesh through the frame, Cursed Sapballs and Black Steel closing on a Cursium Ingot."]
-	quest.3B00000000000028.title: "The Cursed Core"
+	quest.3B00000000000028.title: "The Frosted Core"
 	quest.3B00000000000029.quest_desc: ["A 7x7 crafter wall: Bottles o' Lightning and Lacrima along the edge, Lapis, Wind Nuclei, Lightning-Infused Iron and the Essence of the Storm around a Heart of the Sea."]
 	quest.3B00000000000029.title: "The Storm Core"
-	quest.3B0000000000002A.quest_desc: ["Four cores, four elements, one upgrade. A Carved Edelwood Log at the heart, the Abyssal, Desert, Cursed and Storm Cores on the pedestals with 4 Arcane Crystal - and every essence the Tier I forge can hold: 1000 Aureal, 10 Souls, 10000 Blood and 900 Ink. It drains the forge dry and comes back a tier higher."]
+	quest.3B0000000000002A.quest_desc: ["Four cores, four elements, one upgrade. A Carved Edelwood Log at the heart, the Abyssal, Desert, Frosted and Storm Cores on the pedestals with 4 Arcane Crystal - and every essence the Tier I forge can hold: 1000 Aureal, 10 Souls, 10000 Blood and 900 Ink. It drains the forge dry and comes back a tier higher."]
 	quest.3B0000000000002A.title: "Hephaestus Forge II"
 	quest.3B0000000000002B.quest_desc: ["Find a Fire Dragon and bring it down. Older is better - the drops scale with the dragon's size."]
 	quest.3B0000000000002B.title: "Dragon Hunt"

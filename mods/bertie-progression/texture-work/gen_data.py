@@ -1034,7 +1034,7 @@ write("data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_
     "inputs": [
         {"amount": 2, "ingredient": {"item": "bertieprogression:abyssal_core"}},
         {"amount": 2, "ingredient": {"item": "bertieprogression:desert_core"}},
-        {"amount": 2, "ingredient": {"item": "bertieprogression:cursed_core"}},
+        {"amount": 2, "ingredient": {"item": "bertieprogression:frosted_core"}},
         {"amount": 2, "ingredient": {"item": "bertieprogression:storm_core"}},
         # Two of each core fill all eight pedestals, so the
         # 4 Arcane Crystal that used to fill the last four slots had to come out. There is no
@@ -2548,12 +2548,12 @@ write(f"{R}/mechanical/desert_core.json",
             "C": "malum:cthonic_gold", "R": "slag:rose_gold_block",
             "K": "iceandfire:dragonbone", "M": "cataclysm:ancient_metal_block"},
            "bertieprogression:desert_core", 2))
-write(f"{R}/mechanical/cursed_core.json",
+write(f"{R}/mechanical/frosted_core.json",
       mech(["DDFDFDD", "DFSSSFD", "FSBBBSF", "DSBCBSD", "FSBBBSF", "DFSSSFD", "DDFDFDD"],
            {"D": "slag:deep_alloy_block", "F": "malum:imitation_flesh",
             "S": "malum:cursed_sapball", "B": "cataclysm:black_steel_ingot",
             "C": "cataclysm:cursium_ingot"},
-           "bertieprogression:cursed_core", 2))
+           "bertieprogression:frosted_core", 2))
 write(f"{R}/mechanical/storm_core.json",
       mech(["BLBLBLB", "LPNINPL", "BNEPENB", "LIPHPIL", "BNEPENB", "LPNINPL", "BLBLBLB"],
            {"B": "irons_spellbooks:lightning_bottle", "L": "cataclysm:lacrima",
@@ -3640,7 +3640,7 @@ ITEMS = {
     "yeti_hideout_map": "Skor's Hideout Map",
     "abyssal_core": "Abyssal Core",
     "desert_core": "Desert Core",
-    "cursed_core": "Cursed Core",
+    "frosted_core": "Frosted Core",
     "storm_core": "Storm Core",
     "kinetic_pattern_plate": "Kinetic Pattern Plate",
     "crafting_license": "Crafting License",
@@ -3682,9 +3682,10 @@ for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
 # abyssal_core has real animated art (the reach variant with its .mcmeta), so it takes the generated
 # model from the ITEMS loop like storm_core. Parenting it to a Heart of the Sea would hide the
 # texture.
-# desert_core left this list when it got its own animated sprite; only cursed_core still borrows.
-for _c, _par in (("cursed_core", "minecraft:item/echo_shard"),):
-    write(f"assets/bertieprogression/models/item/{_c}.json", {"parent": _par})
+# All four elemental cores now have their own bespoke textures - abyssal_core,
+# desert_core and storm_core with their own generators, frosted_core with the
+# animated snowflake-skull strip. They all take the generated item model written
+# by the ITEMS loop above.
 # block models + blockstates + block items
 for block_id in BLOCKS:
     write(f"assets/bertieprogression/models/block/{block_id}.json",
