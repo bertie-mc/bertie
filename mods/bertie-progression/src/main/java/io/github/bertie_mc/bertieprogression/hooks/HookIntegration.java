@@ -16,6 +16,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
@@ -71,16 +72,31 @@ public final class HookIntegration {
     /**
      * Hooked's creative tab is populated by Architectury's arch$tab() marker set from Kotlin
      * during registration - our items don't hit that path, so they need to be injected via
-     * NeoForge's event. Also add them to Bertie Progression's own tab so it lists them too.
+     * NeoForge's event. Use insertAfter so the tab reads in progression order rather than
+     * appending our four at the end; Bertie Progression's own tab lists them in the same order.
+     * <p>
+     * Target order in Hooked's tab:
+     * {@code wood → iron(Deep) → soul → diamond(Cognitive) → blazing → moon → echo → ender(Crystal) → redstone}.
      */
     private static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
-        if (!HOOKED_TAB.equals(event.getTabKey())
-                && !BERTIE_PROGRESSION_TAB.equals(event.getTabKey())) {
-            return;
-        }
-        List<Supplier<Item>> newHooks = List.of(SOUL_HOOK, BLAZING_HOOK, MOON_HOOK, ECHO_HOOK);
-        for (Supplier<Item> s : newHooks) {
-            event.accept(s.get());
+        if (HOOKED_TAB.equals(event.getTabKey())) {
+            ItemStack ironPivot    = new ItemStack(item("iron_hook"));
+            ItemStack diamondPivot = new ItemStack(item("diamond_hook"));
+            ItemStack soul    = new ItemStack(SOUL_HOOK.get());
+            ItemStack blazing = new ItemStack(BLAZING_HOOK.get());
+            ItemStack moon    = new ItemStack(MOON_HOOK.get());
+            ItemStack echo    = new ItemStack(ECHO_HOOK.get());
+            CreativeModeTab.TabVisibility v = CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
+            // Insert individually so each new pivot exists before its next insertAfter reads it.
+            event.insertAfter(ironPivot,    soul,    v);
+            event.insertAfter(diamondPivot, blazing, v);
+            event.insertAfter(blazing,      moon,    v);
+            event.insertAfter(moon,         echo,    v);
+        } else if (BERTIE_PROGRESSION_TAB.equals(event.getTabKey())) {
+            List<Supplier<Item>> newHooks = List.of(SOUL_HOOK, BLAZING_HOOK, MOON_HOOK, ECHO_HOOK);
+            for (Supplier<Item> s : newHooks) {
+                event.accept(s.get());
+            }
         }
     }
 
