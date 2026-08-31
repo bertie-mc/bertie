@@ -39,7 +39,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "create:brass_nugget"
@@ -47,7 +47,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -55,7 +55,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "create:brass_nugget"
@@ -63,7 +63,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -71,12 +71,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         }
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -84,7 +84,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "minecraft:vine"
@@ -92,7 +92,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "malum:earthen_spirit"
@@ -108,7 +108,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -116,7 +116,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "minecraft:armadillo_scute"
@@ -124,7 +124,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -132,7 +132,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "minecraft:armadillo_scute"
@@ -140,7 +140,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -148,7 +148,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "minecraft:armadillo_scute"
@@ -156,7 +156,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "minecraft:armadillo_scute"
@@ -172,7 +172,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -180,12 +180,12 @@
       "type": "create:pressing",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         }
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -193,7 +193,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "type": "neoforge:single",
@@ -203,7 +203,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -211,7 +211,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "create:copper_sheet"
@@ -219,7 +219,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -227,7 +227,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "create:copper_sheet"
@@ -235,7 +235,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -243,7 +243,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "create:copper_sheet"
@@ -251,7 +251,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -259,7 +259,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         },
         {
           "item": "born_in_chaos_v1:diamond_termite_shard"
@@ -267,7 +267,7 @@
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     },
@@ -275,17 +275,17 @@
       "type": "create:cutting",
       "ingredients": [
         {
-          "item": "bertieprogression:incomplete_structural_beam"
+          "item": "bertieprogression:kinetic_vane"
         }
       ],
       "results": [
         {
-          "id": "bertieprogression:incomplete_structural_beam"
+          "id": "bertieprogression:kinetic_vane"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "bertieprogression:incomplete_structural_beam"
+    "id": "bertieprogression:kinetic_vane"
   }
 }
