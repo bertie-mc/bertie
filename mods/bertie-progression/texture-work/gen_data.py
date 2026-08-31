@@ -1334,7 +1334,7 @@ def _seq_assembly(path, transitional, ingredient, steps, results, mods=(), loops
                  "sequence": [_step(s) for s in steps], "transitional_item": {"id": transitional}})
 
 # Structural Beam: shaft -> 16-step sequence -> 70% x1 / 30% x2.
-_seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:incomplete_structural_beam", "create:shaft",
+_seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:kinetic_vane", "create:shaft",
               [("deploy", "create:brass_nugget"), ("deploy", "create:brass_nugget"), ("press",),
                ("deploy", "minecraft:vine"), ("deploy", "malum:earthen_spirit"),
                ("deploy", "minecraft:armadillo_scute"), ("deploy", "minecraft:armadillo_scute"),
@@ -1346,13 +1346,14 @@ _seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:in
                {"chance": 0.3, "id": "bertieprogression:kinetic_vane", "count": 2}],
               mods=("malum", "slag", "born_in_chaos_v1"))
 # Small Water Wheel: bound soul ingot + 8x deploy structural beam.
-_seq_assembly(f"{R}/create/small_water_wheel_assembly.json", "bertieprogression:incomplete_small_water_wheel",
+_seq_assembly(f"{R}/create/small_water_wheel_assembly.json", "create:water_wheel",
               "mythsandlegends:bound_soul_ingot", [("deploy", "bertieprogression:kinetic_vane")] * 8,
               [{"id": "create:water_wheel", "count": 1}], mods=("mythsandlegends",))
-# Diamond: a sequenced assembly. Create's transitional item is a real registered item, so this one
-# needs its own; it reuses a vanilla diamond model rather than new art.
+# Diamond: a sequenced assembly. The recipe's own output doubles as its transitional item - the
+# pattern Cognition uses in-pack - so the work-in-progress stack shows the real backpack and the
+# registry carries no placeholder. Same for the three above.
 _seq_assembly(f"{R}/create/diamond_backpack_assembly.json",
-              "bertieprogression:incomplete_diamond_backpack",
+              "sophisticatedbackpacks:diamond_backpack",
               "sophisticatedbackpacks:gold_backpack",
               [("deploy", "minecraft:diamond_block")] * 4
               + [("fill", "slag:molten_diamond", 2592), ("press",)]
@@ -1362,7 +1363,7 @@ _seq_assembly(f"{R}/create/diamond_backpack_assembly.json",
 write("data/sophisticatedbackpacks/recipe/diamond_backpack.json", DISABLED)
 
 # Large Water Wheel: small water wheel + 8x deploy structural beam.
-_seq_assembly(f"{R}/create/large_water_wheel_assembly.json", "bertieprogression:incomplete_large_water_wheel",
+_seq_assembly(f"{R}/create/large_water_wheel_assembly.json", "create:large_water_wheel",
               "create:water_wheel", [("deploy", "bertieprogression:kinetic_vane")] * 8,
               [{"id": "create:large_water_wheel", "count": 1}])
 
@@ -3594,10 +3595,6 @@ ITEMS = {
     "stone_pour_channel": "Stone Pour Channel",
     "weeping_eye": "Weeping Eye",
     "kinetic_vane": "Structural Beam",
-    "incomplete_structural_beam": "Incomplete Structural Beam",
-    "incomplete_small_water_wheel": "Incomplete Water Wheel",
-    "incomplete_large_water_wheel": "Incomplete Large Water Wheel",
-    "incomplete_diamond_backpack": "Incomplete Diamond Backpack",
     "shield_maiden": "Shield Maiden",
     "acolyte_of_deflection": "Acolyte of Deflection",
     "netherly_meal": "Netherly Meal",
@@ -3651,15 +3648,6 @@ for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
 # desert_core left this list when it got its own animated sprite; only cursed_core still borrows.
 for _c, _par in (("cursed_core", "minecraft:item/echo_shard"),):
     write(f"assets/bertieprogression/models/item/{_c}.json", {"parent": _par})
-# Transitional sequenced-assembly items: the beam reuses a vanilla stick, while incomplete water
-# wheels reuse the corresponding finished wheel models.
-write("assets/bertieprogression/models/item/incomplete_structural_beam.json",
-      {"parent": "minecraft:item/generated", "textures": {"layer0": "minecraft:item/stick"}})
-write("assets/bertieprogression/models/item/incomplete_small_water_wheel.json", {"parent": "create:item/water_wheel"})
-write("assets/bertieprogression/models/item/incomplete_large_water_wheel.json", {"parent": "create:item/large_water_wheel"})
-write("assets/bertieprogression/models/item/incomplete_diamond_backpack.json",
-      {"parent": "minecraft:item/generated", "textures": {"layer0": "minecraft:item/diamond"}})
-
 # block models + blockstates + block items
 for block_id in BLOCKS:
     write(f"assets/bertieprogression/models/block/{block_id}.json",
