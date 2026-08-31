@@ -26,6 +26,17 @@ forge tier.
   stock limit of eight. An input group's `amount` may occupy multiple
   pedestals.
 
+## Creative structure placers
+
+`hephaestusarchitecture:forge_tier_1_structure_placer` through
+`forge_tier_5_structure_placer` (in the Forbidden & Arcanus creative tab)
+instantly build one tier's complete layout for test worlds. Using one on a
+block builds the layout on top of it — forge and pedestals included — clears
+the new footprint first so it can be stamped over an older tier, and the forge
+activates immediately. The items only work in creative mode. A tier whose
+template is missing places the native F&A layout, matching validation's
+fallback.
+
 ## Supplying a tier schematic
 
 The most reliable workflow is to convert each schematic to a vanilla structure

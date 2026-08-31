@@ -22,5 +22,15 @@
   "hephaestusarchitecture.ponder.tier_4.text_4": "Neolith Blocks stack into four pillars at the diagonals. Watch their facing - up, up, down.",
   "hephaestusarchitecture.ponder.tier_4.text_5": "Crown the pillars with a canopy of upside-down stairs and slabs.",
   "hephaestusarchitecture.ponder.tier_4.text_6": "12 pedestals feed this forge. Any pedestal counts - plain or magnetized.",
-  "hephaestusarchitecture.ponder.tier_4.text_7": "Build it in any of the four rotations. Mirror images are NOT accepted."
+  "hephaestusarchitecture.ponder.tier_4.text_7": "Build it in any of the four rotations. Mirror images are NOT accepted.",
+
+  "item.hephaestusarchitecture.forge_tier_1_structure_placer": "Hephaestus Forge Tier 1 Structure Placer",
+  "item.hephaestusarchitecture.forge_tier_2_structure_placer": "Hephaestus Forge Tier 2 Structure Placer",
+  "item.hephaestusarchitecture.forge_tier_3_structure_placer": "Hephaestus Forge Tier 3 Structure Placer",
+  "item.hephaestusarchitecture.forge_tier_4_structure_placer": "Hephaestus Forge Tier 4 Structure Placer",
+  "item.hephaestusarchitecture.forge_tier_5_structure_placer": "Hephaestus Forge Tier 5 Structure Placer",
+  "item.hephaestusarchitecture.structure_placer.creative_exclusive": "Creative Exclusive",
+  "item.hephaestusarchitecture.structure_placer.desc": "Instantly builds the complete tier %s forge layout on the clicked block.",
+  "item.hephaestusarchitecture.structure_placer.creative_only": "Only usable in creative mode.",
+  "item.hephaestusarchitecture.structure_placer.placed": "Tier %s Hephaestus Forge layout placed."
 }

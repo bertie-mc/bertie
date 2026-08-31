@@ -66,7 +66,11 @@ public final class ForgeLayouts {
         return List.copyOf(offsets);
     }
 
-    private static Optional<ForgeLayout> custom(ServerLevel level, int tier) {
+    static List<BlockPos> nativePedestals() {
+        return NATIVE_PEDESTALS;
+    }
+
+    static Optional<ForgeLayout> custom(ServerLevel level, int tier) {
         if (tier <= 1) {
             return Optional.empty();
         }
