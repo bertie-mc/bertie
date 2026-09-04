@@ -4,6 +4,7 @@ import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import io.github.bertie_mc.emi.integration.alexscaves.AlexsCavesEmiModule;
+import io.github.bertie_mc.emi.integration.alexsmobs.AlexsMobsEmiModule;
 import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
 import io.github.bertie_mc.emi.integration.apotheosis.ApotheosisEmiModule;
 import io.github.bertie_mc.emi.integration.apothicenchanting.ApothicEnchantingEmiModule;
@@ -13,6 +14,7 @@ import io.github.bertie_mc.emi.integration.berriescherries.BerriesAndCherriesEmi
 import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiModule;
 import io.github.bertie_mc.emi.integration.cataclysm.CataclysmEmiModule;
 import io.github.bertie_mc.emi.integration.cognition.CognitionEmiModule;
+import io.github.bertie_mc.emi.integration.crabbersdelight.CrabbersDelightEmiModule;
 import io.github.bertie_mc.emi.integration.create.CreateEmiModule;
 import io.github.bertie_mc.emi.integration.cuisinedelight.CuisineDelightEmiModule;
 import io.github.bertie_mc.emi.integration.dungeonsdelight.DungeonsDelightEmiModule;
@@ -27,7 +29,10 @@ import io.github.bertie_mc.emi.integration.ironsspellbooks.IronsSpellbooksEmiMod
 import io.github.bertie_mc.emi.integration.l2complements.L2ComplementsEmiModule;
 import io.github.bertie_mc.emi.integration.magitech.MagitechEmiModule;
 import io.github.bertie_mc.emi.integration.malum.MalumEmiModule;
+import io.github.bertie_mc.emi.integration.minersdelight.MinersDelightEmiModule;
+import io.github.bertie_mc.emi.integration.oritech.OritechEmiModule;
 import io.github.bertie_mc.emi.integration.pastel.PastelEmiModule;
+import io.github.bertie_mc.emi.integration.quark.QuarkEmiModule;
 import io.github.bertie_mc.emi.integration.slag.SlagEmiModule;
 import io.github.bertie_mc.emi.integration.slavicdelight.SlavicDelightEmiModule;
 import io.github.bertie_mc.emi.integration.stellaris.StellarisEmiModule;
@@ -88,6 +93,11 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("enigmaticlegacyplus", () -> EnigmaticLegacyPlusEmiModule.register(registry));
         success &= run("alexscaves", () -> AlexsCavesEmiModule.register(registry));
         success &= run("hostilenetworks", () -> HostileNetworksEmiModule.register(registry));
+        success &= run("crabbersdelight", () -> CrabbersDelightEmiModule.register(registry));
+        success &= run("minersdelight", () -> MinersDelightEmiModule.register(registry));
+        success &= run("alexsmobs", () -> AlexsMobsEmiModule.register(registry));
+        success &= run("quark", () -> QuarkEmiModule.register(registry));
+        success &= run("oritech", () -> OritechEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");
         }

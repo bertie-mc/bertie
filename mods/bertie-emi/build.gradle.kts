@@ -44,6 +44,8 @@ dependencies {
     compileOnly(deps.enigmaticLegacyPlus)
     compileOnly(deps.alexsCavesUnofficialPort)
     compileOnly(deps.hostileNeuralNetworks)
+    compileOnly(deps.alexsMobs1211)
+    compileOnly(deps.architecturyApi)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)
