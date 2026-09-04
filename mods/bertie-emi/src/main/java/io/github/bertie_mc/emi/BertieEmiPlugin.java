@@ -3,8 +3,11 @@ package io.github.bertie_mc.emi;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
+import io.github.bertie_mc.emi.integration.alexscaves.AlexsCavesEmiModule;
 import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
+import io.github.bertie_mc.emi.integration.apotheosis.ApotheosisEmiModule;
 import io.github.bertie_mc.emi.integration.apothicenchanting.ApothicEnchantingEmiModule;
+import io.github.bertie_mc.emi.integration.apothicspawners.ApothicSpawnersEmiModule;
 import io.github.bertie_mc.emi.integration.avaritiadelight.AvaritiaDelightEmiModule;
 import io.github.bertie_mc.emi.integration.berriescherries.BerriesAndCherriesEmiModule;
 import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiModule;
@@ -14,10 +17,12 @@ import io.github.bertie_mc.emi.integration.create.CreateEmiModule;
 import io.github.bertie_mc.emi.integration.cuisinedelight.CuisineDelightEmiModule;
 import io.github.bertie_mc.emi.integration.dungeonsdelight.DungeonsDelightEmiModule;
 import io.github.bertie_mc.emi.integration.enderio.EnderIOEmiModule;
+import io.github.bertie_mc.emi.integration.enigmaticlegacyplus.EnigmaticLegacyPlusEmiModule;
 import io.github.bertie_mc.emi.integration.expandeddelight.ExpandedDelightEmiModule;
 import io.github.bertie_mc.emi.integration.extradelight.ExtraDelightEmiModule;
 import io.github.bertie_mc.emi.integration.farmerspizzeria.FarmersPizzeriaEmiModule;
 import io.github.bertie_mc.emi.integration.forbiddenarcanus.ForbiddenArcanusEmiModule;
+import io.github.bertie_mc.emi.integration.hostilenetworks.HostileNetworksEmiModule;
 import io.github.bertie_mc.emi.integration.ironsspellbooks.IronsSpellbooksEmiModule;
 import io.github.bertie_mc.emi.integration.l2complements.L2ComplementsEmiModule;
 import io.github.bertie_mc.emi.integration.magitech.MagitechEmiModule;
@@ -78,6 +83,11 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("magitech", () -> MagitechEmiModule.register(registry));
         success &= run("pastel", () -> PastelEmiModule.register(registry));
         success &= run("apothic_enchanting", () -> ApothicEnchantingEmiModule.register(registry));
+        success &= run("apotheosis", () -> ApotheosisEmiModule.register(registry));
+        success &= run("apothic_spawners", () -> ApothicSpawnersEmiModule.register(registry));
+        success &= run("enigmaticlegacyplus", () -> EnigmaticLegacyPlusEmiModule.register(registry));
+        success &= run("alexscaves", () -> AlexsCavesEmiModule.register(registry));
+        success &= run("hostilenetworks", () -> HostileNetworksEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");
         }

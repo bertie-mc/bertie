@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "059829a28eb2e4958008e42b9cc8b3123425cecb64ef2842a69b5a11723f836e"
+inputs-hash = "ccad3ea4aa0162145b936e4f91ad956e32d736cb35314fb1b135ad9f4c8803d2"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -65,6 +65,10 @@ mod = "curseforge:986982:6105085"
 [components."apothic-enchanting"]
 any = "curseforge:1063926:8469450"
 mod = "curseforge:1063926:8469450"
+
+[components."apothic-spawners"]
+any = "curseforge:986583:8469405"
+mod = "curseforge:986583:8469405"
 
 [components."appleskin"]
 any = "curseforge:248787:7854442"
@@ -492,6 +496,10 @@ mod = "curseforge:532169:8098986"
 [components."enhanced-boss-bars-mod"]
 any = "curseforge:1063296:7547171"
 mod = "curseforge:1063296:7547171"
+
+[components."enigmatic-legacy-plus"]
+any = "curseforge:1391021:8067612"
+mod = "curseforge:1391021:8067612"
 
 [components."enigmaticlegacy"]
 any = "curseforge:1391021:8067612"
@@ -9610,6 +9618,7 @@ integrations = [{ "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "namespace" = "meka
 
 [artifacts."curseforge:986583:8469405"]
 name = "apothic-spawners"
+component = "apothic-spawners"
 provider = "curseforge"
 kind = "mod"
 side = "both"

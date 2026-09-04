@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "DfxVkOAO"
+version-id = "pWfxcfO2"
+filename = "ApothicSpawners-1.21.1-1.4.0.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "apothic-spawners"
+project-id = 986583
+file-id = 8469405
+filename = "ApothicSpawners-1.21.1-1.4.0.jar"

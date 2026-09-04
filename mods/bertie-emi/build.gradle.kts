@@ -39,6 +39,11 @@ dependencies {
     compileOnly(deps.magitech)
     compileOnly(deps.pastelMod)
     compileOnly(deps.apothicEnchanting)
+    compileOnly(deps.apotheosis)
+    compileOnly(deps.apothicSpawners)
+    compileOnly(deps.enigmaticLegacyPlus)
+    compileOnly(deps.alexsCavesUnofficialPort)
+    compileOnly(deps.hostileNeuralNetworks)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)

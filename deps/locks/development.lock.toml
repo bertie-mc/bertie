@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "4751f32279cdcc7ffec5c5d99b47a621081516640d3c2a3a7b76d1218fe98c65"
+inputs-hash = "19db7981db8073f01cefd8eb2a5c9adf72b95940b0294cecc4044bbed30372c3"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -65,6 +65,10 @@ mod = "modrinth:N29BujGY:8gwHTe22"
 [components."apothic-enchanting"]
 any = "modrinth:pL8MtgqY:HpSrSsv3"
 mod = "modrinth:pL8MtgqY:HpSrSsv3"
+
+[components."apothic-spawners"]
+any = "modrinth:DfxVkOAO:pWfxcfO2"
+mod = "modrinth:DfxVkOAO:pWfxcfO2"
 
 [components."appleskin"]
 any = "modrinth:EsAfCjCV:uAKA6Laj"
@@ -492,6 +496,10 @@ mod = "modrinth:MbejSZ2E:eFzpYm28"
 [components."enhanced-boss-bars-mod"]
 any = "modrinth:J5bVsBt9:cQKcPNVh"
 mod = "modrinth:J5bVsBt9:cQKcPNVh"
+
+[components."enigmatic-legacy-plus"]
+any = "modrinth:oIjj1Fan:sE5KVcHA"
+mod = "modrinth:oIjj1Fan:sE5KVcHA"
 
 [components."enigmaticlegacy"]
 any = "modrinth:oIjj1Fan:sE5KVcHA"
@@ -4107,6 +4115,7 @@ integrations = []
 
 [artifacts."modrinth:DfxVkOAO:pWfxcfO2"]
 name = "apothic-spawners"
+component = "apothic-spawners"
 provider = "modrinth"
 kind = "mod"
 side = "both"
