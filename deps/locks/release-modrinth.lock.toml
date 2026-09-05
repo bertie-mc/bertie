@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "a4e0a3d4becb1eb58b207753fa4c98dc8a1ae519648bd96258c1a23293942344"
+inputs-hash = "87cca948b75b3627e6b9c34a6b6099fdea3f4c306b2bf51f8d8a1636bf3321ec"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1570,6 +1570,10 @@ mod = "modrinth:Ht4BfYp6:urkCzBf6"
 [components."yungs-extras"]
 any = "modrinth:ZYgyPyfq:N2EpMhR7"
 mod = "modrinth:ZYgyPyfq:N2EpMhR7"
+
+[components."zeta"]
+any = "modrinth:MVARlG2f:9GjNW2Gf"
+mod = "modrinth:MVARlG2f:9GjNW2Gf"
 
 [components."ziplines-rezipped"]
 any = "modrinth:C1MoWQlb:emIYdkrI"
@@ -5470,6 +5474,7 @@ integrations = []
 
 [artifacts."modrinth:MVARlG2f:9GjNW2Gf"]
 name = "zeta"
+component = "zeta"
 provider = "modrinth"
 kind = "mod"
 side = "both"

@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "ccad3ea4aa0162145b936e4f91ad956e32d736cb35314fb1b135ad9f4c8803d2"
+inputs-hash = "d1ea6015f494692add10ec884d53ad0a6a05be74d9346dbfe2cb2bc2d5ac7e40"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1570,6 +1570,10 @@ mod = "curseforge:1015149:5812553"
 [components."yungs-extras"]
 any = "curseforge:1015146:5812546"
 mod = "curseforge:1015146:5812546"
+
+[components."zeta"]
+any = "modrinth:MVARlG2f:9GjNW2Gf"
+mod = "modrinth:MVARlG2f:9GjNW2Gf"
 
 [components."ziplines-rezipped"]
 any = "curseforge:1454717:8223467"
@@ -10216,6 +10220,7 @@ integrations = []
 
 [artifacts."modrinth:MVARlG2f:9GjNW2Gf"]
 name = "zeta"
+component = "zeta"
 provider = "modrinth"
 kind = "mod"
 side = "both"

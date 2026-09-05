@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "MVARlG2f"
+version-id = "9GjNW2Gf"
+filename = "Zeta-1.1-40.jar"

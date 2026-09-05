@@ -40,6 +40,7 @@ import io.github.bertie_mc.emi.integration.terracurio.TerraCurioEmiModule;
 import io.github.bertie_mc.emi.integration.twilightdelight.TwilightDelightEmiModule;
 import io.github.bertie_mc.emi.integration.twilightforest.TwilightForestEmiModule;
 import io.github.bertie_mc.emi.integration.youkaisfeasts.YoukaisFeastsEmiModule;
+import io.github.bertie_mc.emi.integration.zeta.ZetaHintsEmiModule;
 import net.neoforged.fml.ModList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -97,6 +98,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("minersdelight", () -> MinersDelightEmiModule.register(registry));
         success &= run("alexsmobs", () -> AlexsMobsEmiModule.register(registry));
         success &= run("quark", () -> QuarkEmiModule.register(registry));
+        success &= run("zeta", () -> ZetaHintsEmiModule.register(registry));
         success &= run("oritech", () -> OritechEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");

@@ -46,6 +46,7 @@ dependencies {
     compileOnly(deps.hostileNeuralNetworks)
     compileOnly(deps.alexsMobs1211)
     compileOnly(deps.architecturyApi)
+    compileOnly(deps.zeta)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)
