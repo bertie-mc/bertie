@@ -116,6 +116,7 @@ public final class AnvilCraftEmiModule {
     private static final String DROP = "Anvil onto items ";
 
     public static void register(EmiRegistry reg) {
+        safely("crab_trap", () -> AnvilCraftCrabTrapEmiModule.register(reg));
         RecipeManager rm = reg.getRecipeManager();
 
         process(
