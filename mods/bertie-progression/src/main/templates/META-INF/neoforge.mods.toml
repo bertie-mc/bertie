@@ -376,13 +376,15 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
-# Antarchy anchors its Duct Tape on vanilla shears in the Tools and Utilities tab and hard-crashes
-# on load if that anchor is missing, so we go first and make sure it is there. See TabAnchors.
+# Antarchy anchors its Duct Tape on vanilla shears and its Diamond Minecart on vanilla minecart in
+# the Tools and Utilities tab, and hard-crashes on load if an anchor is missing. TabAnchors puts
+# them there on event priority HIGHEST, which does not need us to load first - so this is AFTER,
+# which is what our data overrides for antarchy require to win.
 [[dependencies.${mod_id}]]
 modId="antarchy"
 type="optional"
 versionRange="[0,)"
-ordering="BEFORE"
+ordering="AFTER"
 side="BOTH"
 
 # Altar of Amethyst behaviour. required=false in the config, so a pack without

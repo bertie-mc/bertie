@@ -5,6 +5,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
@@ -22,16 +23,19 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
  * {@code anvilcraft:tools_and_utilities} as well - a tab that has never held either. That took the
  * pack down on load, and then again the moment the inventory screen built its tabs.
  *
- * <p>This class runs before Antarchy - see the {@code ordering="BEFORE"} dependency in the
- * mods.toml - and guarantees a plain, component-free copy of each anchor in every tab whose path
- * is {@code tools_and_utilities}, in the parent list and the search list both. Where one is
- * already there it does nothing at all.
+ * <p>This class runs before Antarchy on event PRIORITY rather than on mod load order: Antarchy
+ * registers its tab listener at the default priority, so {@code HIGHEST} here wins wherever the two
+ * mods sit relative to each other. That matters because the load order is spoken for - we are
+ * ordered {@code AFTER} Antarchy so our datapack overrides beat its own files, which a
+ * {@code BEFORE} would have lost. It guarantees a plain, component-free copy of each anchor in
+ * every tab whose path is {@code tools_and_utilities}, in the parent list and the search list both.
+ * Where one is already there it does nothing at all.
  */
 public final class TabAnchors {
 
     private static final List<Item> ANCHORS = List.of(Items.SHEARS, Items.MINECART);
 
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void onBuildTabContents(BuildCreativeModeTabContentsEvent event) {
         // By path, not by key: Antarchy matches tabs the same way, so AnvilCraft's tab of the
         // same name needs the anchor too.

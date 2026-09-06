@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "anvilcraft:titanium_block"
+  },
+  "result": {
+    "count": 4,
+    "id": "antarchy:cut_titanium_stairs"
+  }
+}
