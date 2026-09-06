@@ -28,6 +28,16 @@
               "count": 2
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mekanism:ingot_steel",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
         }
       ],
       "conditions": [

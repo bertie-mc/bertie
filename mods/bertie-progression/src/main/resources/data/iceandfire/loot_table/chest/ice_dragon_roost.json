@@ -112,6 +112,34 @@
         },
         {
           "type": "item",
+          "name": "anvilcraft:silver_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "minecraft:constant",
+                "value": 10
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "anvilcraft:silver_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "minecraft:constant",
+                "value": 16
+              }
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "item",
           "name": "minecraft:skeleton_skull",
           "functions": [
             {

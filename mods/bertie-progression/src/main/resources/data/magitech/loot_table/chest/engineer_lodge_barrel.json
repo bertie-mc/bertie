@@ -10,6 +10,20 @@
         },
         {
           "type": "item",
+          "name": "mekanism:fluorite_gem",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "magitech:redstone_crystal",
           "weight": 2,
           "functions": [

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "alexsmobs:banana"
+    },
+    {
+      "item": "alexsmobs:banana"
+    },
+    {
+      "item": "alexsmobs:banana"
+    }
+  ],
+  "result": {
+    "id": "deepwaters:banana_seed",
+    "count": 1
+  }
+}

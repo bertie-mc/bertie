@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "crabbersdelight:fish_bones"
+    },
+    {
+      "item": "aquaculture:algae"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "aquaculturedelight:poor_fisher_chowder"
+  },
+  "container": {
+    "id": "minecraft:bowl"
+  }
+}

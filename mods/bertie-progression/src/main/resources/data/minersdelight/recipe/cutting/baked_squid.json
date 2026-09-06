@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minersdelight:baked_squid"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "crabbersdelight:cooked_squid_tentacles"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "crabbersdelight:cooked_squid_tentacles"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

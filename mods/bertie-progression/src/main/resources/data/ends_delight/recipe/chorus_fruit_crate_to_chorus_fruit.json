@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "endersdelight:chorus_crate"
+    }
+  ],
+  "result": {
+    "id": "minecraft:chorus_fruit",
+    "count": 9
+  }
+}

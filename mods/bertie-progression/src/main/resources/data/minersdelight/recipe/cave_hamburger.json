@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/bread"
+    },
+    [
+      {
+        "item": "minersdelight:crunchy_bar"
+      },
+      {
+        "item": "minersdelight:vegan_patty"
+      }
+    ],
+    {
+      "item": "minersdelight:smoked_bat_wing"
+    },
+    [
+      {
+        "item": "crabbersdelight:cooked_squid_tentacles"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      }
+    ],
+    [
+      {
+        "item": "crabbersdelight:cooked_squid_tentacles"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "minersdelight:cave_hamburger"
+  }
+}

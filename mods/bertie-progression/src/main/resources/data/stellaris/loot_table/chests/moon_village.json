@@ -140,6 +140,21 @@
         },
         {
           "type": "minecraft:item",
+          "name": "mekanism:ingot_steel",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:coal",
           "weight": 20,
           "functions": [

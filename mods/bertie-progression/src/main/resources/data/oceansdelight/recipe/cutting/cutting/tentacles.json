@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "crabbersdelight:raw_squid_tentacles"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "crabbersdelight:raw_squid_tentacles"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

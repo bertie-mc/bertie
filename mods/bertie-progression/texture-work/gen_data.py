@@ -3379,6 +3379,10 @@ if _removed:
                                 _leaks.setdefault(_r2, []).append(f"{_jn}: {_n}")
                         # the file itself, so it can be re-emitted without the removed entries
                         _loot_src[_n] = _d
+                    if _MERGE and not _is_recipe:
+                        _txt3 = json.dumps(_d)
+                        if any(f'"{_k}"' in _txt3 for _k in _MERGE):
+                            _merge_src[_n] = _d
                     if _MERGE and _is_recipe:
                         # A recipe that CONSUMES a merged id is kept and redirected, not cut. Only
                         # recipes whose result is itself merged away stay disabled, and those are
@@ -3440,7 +3444,9 @@ if os.path.isfile(_data_manifest_path):
 if _removed and not _scan_ok:
     _new_data = _old_data                  # could not scan: change nothing rather than wipe
 else:
-    _new_data, _gone = [], set(_removed_ids)
+    # A merged id is not stripped: its drops become the winner's, handled by the merge pass
+    # below. Stripping here would delete the drop instead of redirecting it.
+    _new_data, _gone = [], set(_removed_ids) - set(_MERGE)
     for _lp in sorted(_loot_src):
         _was = _loot_src[_lp]
         if "/loot_table" in _lp:

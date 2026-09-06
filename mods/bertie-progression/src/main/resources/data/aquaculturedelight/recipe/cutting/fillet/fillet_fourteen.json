@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "tag": "aquaculturedelight:fillet_fourteen"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 14,
+        "id": "aquaculture:fish_fillet_raw"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "crabbersdelight:fish_bones"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

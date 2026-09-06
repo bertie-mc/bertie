@@ -159,6 +159,36 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "anvilcraft:uranium_nugget",
+          "weight": 32,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2.0,
+                "max": 6.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "anvilcraft:titanium_nugget",
+          "weight": 32,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2.0,
+                "max": 6.0
+              }
+            }
+          ]
         }
       ],
       "rolls": {
