@@ -27,10 +27,13 @@ The following assets are not original and are not covered by the dedication:
 
   assets/youkaisfeasts/textures/item/crops/black_grape.png
   assets/youkaisfeasts/textures/item/crops/white_grape.png
+  assets/youkaisfeasts/textures/item/crops/red_grape.png
 
-They are verbatim copies of Berries And Cherries' `grapes_dark.png` and
+The first two are verbatim copies of Berries And Cherries' `grapes_dark.png` and
 `grapes_green.png`, shipped as a resource override so Youkai's Feasts' grapes -
-the one grape agriculture the pack keeps - wear the sprites the pack prefers.
+the one grape agriculture the pack keeps - wear the sprites the pack prefers. The
+third is a derivative of `grapes_green.png`, its berry hue rotated to crimson by
+texture-work/derive_red_grape.py; Berries And Cherries ships no red bunch.
 Berries And Cherries is by Joel and is distributed under the Academic Free
 License v3.0 (https://opensource.org/licenses/AFL-3.0), which grants the right to
 reproduce and distribute the work and derivative works provided attribution and
