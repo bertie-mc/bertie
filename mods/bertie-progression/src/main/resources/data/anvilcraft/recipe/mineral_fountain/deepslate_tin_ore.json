@@ -1,0 +1,12 @@
+{
+  "type": "anvilcraft:mineral_fountain",
+  "from_block": {
+    "blocks": "minecraft:deepslate"
+  },
+  "need_block": {
+    "blocks": "#c:storage_blocks/raw_tin"
+  },
+  "to_block": {
+    "block": "mekanism:deepslate_tin_ore"
+  }
+}

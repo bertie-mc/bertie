@@ -1,4 +1,7 @@
 {
   "item.hazennstuff.rose_gold_ingot": "Rosest Gold Ingot",
-  "material.hazennstuff.rose_gold": "Rosest Gold"
+  "material.hazennstuff.rose_gold": "Rosest Gold",
+  "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
+  "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
+  "item.hazennstuff.stardust": "Cosmic Dust"
 }

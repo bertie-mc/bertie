@@ -26,9 +26,3 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies."${mod_id}"]]
-modId = "berries_and_cherries"
-type = "optional"
-versionRange = "[1.0,)"
-ordering = "AFTER"
-side = "BOTH"

@@ -1,0 +1,54 @@
+{
+  "type": "betterend:infusion",
+  "catalysts": {
+    "east": {
+      "item": {
+        "item": "betterend:crystal_shards"
+      }
+    },
+    "north": {
+      "item": {
+        "item": "betterend:crystal_shards"
+      }
+    },
+    "north_east": {
+      "item": {
+        "item": "endersdelight:ender_shard"
+      }
+    },
+    "north_west": {
+      "item": {
+        "item": "endersdelight:ender_shard"
+      }
+    },
+    "south": {
+      "item": {
+        "item": "betterend:crystal_shards"
+      }
+    },
+    "south_east": {
+      "item": {
+        "item": "endersdelight:ender_shard"
+      }
+    },
+    "south_west": {
+      "item": {
+        "item": "endersdelight:ender_shard"
+      }
+    },
+    "west": {
+      "item": {
+        "item": "betterend:crystal_shards"
+      }
+    }
+  },
+  "input": {
+    "item": {
+      "item": "minecraft:end_crystal"
+    }
+  },
+  "result": {
+    "item": "betterend:eternal_crystal"
+  },
+  "time": 250
+}

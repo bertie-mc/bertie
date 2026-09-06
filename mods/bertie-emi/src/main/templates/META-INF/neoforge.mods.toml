@@ -90,13 +90,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="extradelight"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="dungeonsdelight"
 type="optional"
 versionRange="[0,)"
@@ -154,20 +147,6 @@ side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="slavic_delight"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
-modId="cuisinedelight"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
-modId="berries_and_cherries"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

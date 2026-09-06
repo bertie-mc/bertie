@@ -41,6 +41,7 @@ def _removed_docs_dir():
 
 
 REMOVED_DOCS = _removed_docs_dir()
+MERGED_DOCS = os.path.join(os.path.dirname(REMOVED_DOCS), "merged")
 MODID = "bertieprogression"
 
 # ---------------------------------------------------------------- helpers
@@ -3120,6 +3121,68 @@ def _parse_removed(path, modid):
         rows.append({"name": name, "id": iid, "reason": reason, "removed": date})
     return rows
 
+def _parse_merged(path, modid):
+    """Merge rows: five columns, the fifth naming the id this one collapses into.
+
+    A merge is a removal plus a redirect. The losing id is hidden and its own recipes are cut by
+    exactly the machinery in docs/removed; what a merge adds is that everything which CONSUMED the
+    loser is re-emitted pointing at the winner, so no recipe is silently lost.
+    """
+    rows, in_table = [], False
+    for n, line in enumerate(io.open(path, encoding="utf-8"), 1):
+        line = line.rstrip("\n")
+        if line.startswith("<!-- LEAKS:"):
+            break
+        if not line.startswith("|"):
+            in_table = False
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) != 5:
+            raise SystemExit(f"{path}:{n}: expected 5 columns, got {len(cells)}: {line}")
+        if cells[1].lower() == "id":
+            in_table = True
+            continue
+        if set("".join(cells)) <= set("-: "):
+            continue
+        if not in_table:
+            continue
+        name, iid, into, reason, date = cells
+        iid, into = iid.strip("`"), into.strip("`")
+        if ":" not in iid:
+            raise SystemExit(f"{path}:{n}: id has no namespace: {iid!r}")
+        if iid.split(":")[0] != modid:
+            raise SystemExit(f"{path}:{n}: id {iid!r} does not belong in {modid}.md")
+        if ":" not in into:
+            raise SystemExit(f"{path}:{n}: target has no namespace: {into!r}")
+        if into == iid:
+            raise SystemExit(f"{path}:{n}: {iid} merges into itself")
+        if not reason:
+            raise SystemExit(f"{path}:{n}: {iid} has no reason")
+        rows.append({"name": name, "id": iid, "into": into, "reason": reason, "removed": date})
+    return rows
+
+
+def _redirect(node, table):
+    """Deep copy with every losing id swapped for its winner. Returns (copy, changed)."""
+    if isinstance(node, str):
+        return (table.get(node, node), node in table)
+    if isinstance(node, list):
+        out, hit = [], False
+        for v in node:
+            c, h = _redirect(v, table)
+            out.append(c)
+            hit = hit or h
+        return out, hit
+    if isinstance(node, dict):
+        out, hit = {}, False
+        for k, v in node.items():
+            c, h = _redirect(v, table)
+            out[k] = c
+            hit = hit or h
+        return out, hit
+    return node, False
+
+
 # Loot tables are not the only data that hands an item over. Apotheosis rolls affixed gear from
 # its own entry files and dresses its bosses from gear sets, and the Museum Curator checklist puts
 # an item on a page whether or not anything drops it. All three are stripped the same way.
@@ -3194,13 +3257,30 @@ _removed = []
 for _fn in sorted(os.listdir(REMOVED_DOCS)):
     if _fn.endswith(".md") and _fn != "README.md":
         _removed += _parse_removed(os.path.join(REMOVED_DOCS, _fn), _fn[:-3])
+
+# Merges. The losing id is removed by the same machinery as any other removal - hidden from the
+# tabs, its own recipes cut - and additionally every file that CONSUMED it is re-emitted naming
+# the winner. Loading them into _removed is what makes the first half free.
+_merged = []
+if os.path.isdir(MERGED_DOCS):
+    for _fn in sorted(os.listdir(MERGED_DOCS)):
+        if _fn.endswith(".md") and _fn != "README.md":
+            _merged += _parse_merged(os.path.join(MERGED_DOCS, _fn), _fn[:-3])
+_MERGE = {_m["id"]: _m["into"] for _m in _merged}
+for _m in _merged:
+    if _m["into"] in _MERGE:
+        raise SystemExit(
+            f"docs/merged: {_m['id']} merges into {_m['into']}, which is itself merged away"
+        )
+_removed += [{"name": _m["name"], "id": _m["id"], "reason": _m["reason"],
+              "removed": _m["removed"]} for _m in _merged]
 if not _removed:
     raise SystemExit(
         f"no removed-item rows found in {REMOVED_DOCS}; refusing to erase generated removals"
     )
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
-_items, _hits, _leaks, _loot_src = set(), [], {}, {}
+_items, _hits, _leaks, _loot_src, _merge_src = set(), [], {}, {}, {}
 _scan_ok = False
 if _removed:
     import fnmatch
@@ -3299,6 +3379,13 @@ if _removed:
                                 _leaks.setdefault(_r2, []).append(f"{_jn}: {_n}")
                         # the file itself, so it can be re-emitted without the removed entries
                         _loot_src[_n] = _d
+                    if _MERGE and _is_recipe:
+                        # A recipe that CONSUMES a merged id is kept and redirected, not cut. Only
+                        # recipes whose result is itself merged away stay disabled, and those are
+                        # already in _hits.
+                        _txt2 = json.dumps(_d)
+                        if any(f'"{_k}"' in _txt2 for _k in _MERGE):
+                            _merge_src[_n] = _d
 
 _removed_ids = sorted({i for i in (_expanded if _removed and _scan_ok else [])})
 if _removed and not _scan_ok:
@@ -3377,6 +3464,37 @@ else:
             print(f"  removed items: restored {_stale}")
     with open(_data_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
         json.dump(sorted(_new_data), _f, indent=2)
+
+# MERGES. Everything that consumed a merged-away id is re-emitted naming the winner instead, so
+# the recipe survives the merge rather than vanishing with its ingredient. Recipes whose RESULT is
+# merged away are not redirected - those are the ones that should stay disabled, and the removal
+# pass above already wrote their neoforge:false override. Same manifest discipline: dropping a row
+# from docs/merged has to put the original recipe back, which means tracking what we wrote.
+_merge_manifest_path = os.path.join(ROOT, "texture-work", ".merged_recipes.json")
+_old_merge = []
+if os.path.isfile(_merge_manifest_path):
+    with open(_merge_manifest_path, encoding="utf-8") as _f:
+        _old_merge = json.load(_f)
+if _removed and not _scan_ok:
+    _new_merge = _old_merge                # could not scan: change nothing rather than wipe
+else:
+    _disabled_paths = set(_new_manifest)
+    _new_merge = []
+    for _mp in sorted(_merge_src):
+        if _mp in _disabled_paths:
+            continue                       # its result is gone; leave it disabled
+        _fixed, _hit = _redirect(_merge_src[_mp], _MERGE)
+        if _hit and _fixed != _merge_src[_mp]:
+            write(_mp, _fixed)
+            _new_merge.append(_mp)
+    for _stale in sorted(set(_old_merge) - set(_new_merge)):
+        _abs = os.path.join(RES, _stale.replace("/", os.sep))
+        if os.path.isfile(_abs):
+            os.remove(_abs)
+            print(f"  merged items: un-redirected {_stale}")
+    with open(_merge_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
+        json.dump(sorted(_new_merge), _f, indent=2)
+print(f"  merged items: {len(_MERGE)} ids, {len(_new_merge)} recipes redirected")
 
 _n_loot = sum(1 for _p in _new_data if "/loot_table" in _p)
 print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes disabled, "

@@ -4,8 +4,6 @@
   "package": "io.github.bertie_mc.bushtweaks.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BerriesCherriesBushDamageMixin",
-    "BerriesCherriesSpeedFactorMixin",
     "SweetBerryBushBlockMixin"
   ],
   "injectors": {

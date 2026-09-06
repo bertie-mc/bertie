@@ -1,0 +1,12 @@
+{
+  "type": "bclib:smithing",
+  "allowedTools": "betterend:anvil_tool/iron",
+  "anvilLevel": 2,
+  "damage": 3,
+  "input": {
+    "item": "endersdelight:ender_shard"
+  },
+  "result": {
+    "item": "betterend:ender_dust"
+  }
+}

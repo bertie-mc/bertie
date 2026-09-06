@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "d1ea6015f494692add10ec884d53ad0a6a05be74d9346dbfe2cb2bc2d5ac7e40"
+inputs-hash = "3ea0c5edc2fed977d1cfe846a0e224192b06a5db9b3ba425630dc38f9f7cb00e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -117,10 +117,6 @@ mod = "modrinth:lL2MtE37:FRuLJsBp"
 [components."bartering-station"]
 any = "curseforge:666940:5733754"
 mod = "curseforge:666940:5733754"
-
-[components."berries-and-cherries"]
-any = "curseforge:955743:6084578"
-mod = "curseforge:955743:6084578"
 
 [components."better-advancements"]
 any = "curseforge:272515:5850587"
@@ -312,14 +308,6 @@ mod = "curseforge:328085:7963363"
 [components."creeper-overhaul"]
 any = "curseforge:561625:6051279"
 mod = "curseforge:561625:6051279"
-
-[components."cuisine-delight"]
-any = "curseforge:893541:8004724"
-mod = "curseforge:893541:8004724"
-
-[components."cultural-delights"]
-any = "curseforge:574622:8126191"
-mod = "curseforge:574622:8126191"
 
 [components."curios"]
 any = "curseforge:309927:6529130"
@@ -552,10 +540,6 @@ mod = "curseforge:351491:8031115"
 [components."extra-mod-integrations"]
 any = "curseforge:739970:6939681"
 mod = "curseforge:739970:6939681"
-
-[components."extradelight"]
-any = "curseforge:842106:8035753"
-mod = "curseforge:842106:8035753"
 
 [components."extreme-sound-muffler"]
 any = "curseforge:363363:7895926"
@@ -977,10 +961,6 @@ mod = "curseforge:1131856:7731276"
 any = "curseforge:656977:8128022"
 mod = "curseforge:656977:8128022"
 
-[components."more-brushes"]
-any = "curseforge:952153:7023685"
-mod = "curseforge:952153:7023685"
-
 [components."more-concrete"]
 any = "curseforge:545354:6359256"
 mod = "curseforge:545354:6359256"
@@ -1205,10 +1185,6 @@ mod = "curseforge:557556:5591264"
 any = "curseforge:622967:7355196"
 mod = "curseforge:622967:7355196"
 
-[components."roll-delight"]
-any = "curseforge:1496416:7952403"
-mod = "curseforge:1496416:7952403"
-
 [components."rolling-down-in-the-deep"]
 any = "curseforge:1006270:7076987"
 mod = "curseforge:1006270:7076987"
@@ -1236,10 +1212,6 @@ mod = "curseforge:1184318:7511317"
 [components."simple-conveyor-belts"]
 any = "curseforge:1292980:7195755"
 mod = "curseforge:1292980:7195755"
-
-[components."simple-recall-potion"]
-any = "curseforge:1234653:7952799"
-mod = "curseforge:1234653:7952799"
 
 [components."simply-swords"]
 any = "curseforge:659887:7704396"
@@ -3241,27 +3213,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:1234653:7952799"]
-name = "simple-recall-potion"
-component = "simple-recall-potion"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "simple-recall-potion-1234653"
-version = "7952799"
-filename = "simplerecall-1.0.6-1.21.1.jar"
-project-id = 1234653
-slug = "simple-recall-potion"
-file-id = 7952799
-provides = ["simplerecall"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:1244863:8048938"]
 name = "apotheosis-x-irons-spellbooks-compat"
 component = "apotheosis-x-irons-spellbooks-compat"
@@ -4580,27 +4531,6 @@ file-id = 7735743
 provides = ["stellaris_stellarview_compatibility"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:1036270:8154670", "mod-id" = "stellaris", "version-range" = "[1.4.20,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:gJ5LPGfO:HbYYFasr", "mod-id" = "stellarview_mixin_renderer", "version-range" = "[2.0.1,)", "side" = "client", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1496416:7952403"]
-name = "roll-delight"
-component = "roll-delight"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "roll-delight-1496416"
-version = "7952403"
-filename = "[1.21.1] roll_delight-1.2.4-neoforge.jar"
-project-id = 1496416
-slug = "roll-delight"
-file-id = 7952403
-provides = ["roll_delight"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
@@ -7332,27 +7262,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:574622:8126191"]
-name = "cultural-delights"
-component = "cultural-delights"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "cultural-delights-574622"
-version = "8126191"
-filename = "culturaldelights-0.17.8.jar"
-project-id = 574622
-slug = "cultural-delights"
-file-id = 8126191
-provides = ["culturaldelights"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:398521:8083481", "mod-id" = "farmersdelight", "version-range" = "[1.2.3,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:579484:8127023"]
 name = "cognition"
 component = "cognition"
@@ -8571,27 +8480,6 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:398521:8083481", "namespace" = "farmersdelight", "reason" = "ships data/farmersdelight/", "origin" = "archive-data" }]
 
-[artifacts."curseforge:842106:8035753"]
-name = "extradelight"
-component = "extradelight"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "extradelight-842106"
-version = "8035753"
-filename = "extradelight-2.6.5.jar"
-project-id = 842106
-slug = "extradelight"
-file-id = 8035753
-provides = ["extradelight"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:398521:8083481", "mod-id" = "farmersdelight", "version-range" = "1.2.8", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:574622:8126191", "namespace" = "culturaldelights", "reason" = "ships data/culturaldelights/", "origin" = "archive-data" }, { "artifact" = "curseforge:328085:7963363", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "curseforge:637808:7523542", "namespace" = "brewinandchewin", "reason" = "ships data/brewinandchewin/", "origin" = "archive-data" }, { "artifact" = "curseforge:291874:6182596", "namespace" = "sereneseasons", "reason" = "ships data/sereneseasons/", "origin" = "archive-data" }]
-
 [artifacts."curseforge:852662:5770623"]
 name = "overflowing-bars"
 component = "overflowing-bars"
@@ -8927,27 +8815,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:893541:8004724"]
-name = "cuisine-delight"
-component = "cuisine-delight"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "cuisine-delight-893541"
-version = "8004724"
-filename = "cuisinedelight-1.2.8.jar"
-project-id = 893541
-slug = "cuisine-delight"
-file-id = 8004724
-provides = ["cuisinedelight"]
-bundled-provides = ["l2core"]
-required = [{ "artifact" = "curseforge:398521:8083481", "mod-id" = "farmersdelight", "version-range" = "[1.2.4,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:841262:7939973", "namespace" = "oceansdelight", "reason" = "ships data/oceansdelight/", "origin" = "archive-data" }, { "artifact" = "curseforge:1415721:7528193", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }, { "artifact" = "curseforge:662675:8175167", "namespace" = "ends_delight", "reason" = "ships data/ends_delight/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:895919:7555622"]
 name = "time-in-a-bottle-universal"
@@ -9327,27 +9194,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:952153:7023685"]
-name = "more-brushes"
-component = "more-brushes"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "more-brushes-952153"
-version = "7023685"
-filename = "morebrushes-1.7-neoforge-mc1.21.1.jar"
-project-id = 952153
-slug = "more-brushes"
-file-id = 7023685
-provides = ["morebrushes"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:953637:7142896"]
 name = "when-dungeons-arise-seven-seas"
 component = "when-dungeons-arise-seven-seas"
@@ -9365,27 +9211,6 @@ provides = ["dungeons_arise_seven_seas"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:955743:6084578"]
-name = "berries-and-cherries"
-component = "berries-and-cherries"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "berries-and-cherries-955743"
-version = "6084578"
-filename = "berries_and_cherries-1.1-neoforge-1.21.1.jar"
-project-id = 955743
-slug = "berries-and-cherries"
-file-id = 6084578
-provides = ["berries_and_cherries"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

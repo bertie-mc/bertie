@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "e2d1f8c4b0fe0c77906173bd09820684a26759e5220bb658b9d10083c511e045"
+inputs-hash = "e0a1847f34ee052b3d6a4199739d017b8028ae1f3e334c13258f914d4cb5163b"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -117,10 +117,6 @@ mod = "modrinth:lL2MtE37:FRuLJsBp"
 [components."bartering-station"]
 any = "modrinth:EOig9U0j:GOAgiH0l"
 mod = "modrinth:EOig9U0j:GOAgiH0l"
-
-[components."berries-and-cherries"]
-any = "modrinth:fltEIOux:6Mz9TV74"
-mod = "modrinth:fltEIOux:6Mz9TV74"
 
 [components."better-advancements"]
 any = "modrinth:Q2OqKxDG:FjTYILOi"
@@ -312,14 +308,6 @@ mod = "maven:com.simibubi.create:create-1.21.1:6.0.10-281"
 [components."creeper-overhaul"]
 any = "modrinth:MI1LWe93:HNrAYCLH"
 mod = "modrinth:MI1LWe93:HNrAYCLH"
-
-[components."cuisine-delight"]
-any = "modrinth:gOQjCAAD:Ngn5DVCK"
-mod = "modrinth:gOQjCAAD:Ngn5DVCK"
-
-[components."cultural-delights"]
-any = "modrinth:YttyNOFA:yNIrDVfJ"
-mod = "modrinth:YttyNOFA:yNIrDVfJ"
 
 [components."curios"]
 any = "modrinth:vvuO3ImH:yohfFbgD"
@@ -552,10 +540,6 @@ mod = "modrinth:Tlo2tahX:otODJ5cv"
 [components."extra-mod-integrations"]
 any = "modrinth:bpRHnWUb:bxgGyUjY"
 mod = "modrinth:bpRHnWUb:bxgGyUjY"
-
-[components."extradelight"]
-any = "modrinth:yRrY3XII:XntyupDn"
-mod = "modrinth:yRrY3XII:XntyupDn"
 
 [components."extreme-sound-muffler"]
 any = "modrinth:5IIKsxiL:m5je0Rop"
@@ -977,10 +961,6 @@ mod = "modrinth:9RrPxPjq:CnMKioau"
 any = "modrinth:OQAgZMH1:cvepxaBC"
 mod = "modrinth:OQAgZMH1:cvepxaBC"
 
-[components."more-brushes"]
-any = "modrinth:BNLbEGeO:S3mmEqNW"
-mod = "modrinth:BNLbEGeO:S3mmEqNW"
-
 [components."more-concrete"]
 any = "modrinth:sUSfS0sK:koNg0E1I"
 mod = "modrinth:sUSfS0sK:koNg0E1I"
@@ -1205,10 +1185,6 @@ mod = "modrinth:MBmh0f9A:mNqXF51P"
 any = "modrinth:8YcE8y4T:XrUKaWrw"
 mod = "modrinth:8YcE8y4T:XrUKaWrw"
 
-[components."roll-delight"]
-any = "modrinth:LBa22RMa:JL6kDyww"
-mod = "modrinth:LBa22RMa:JL6kDyww"
-
 [components."rolling-down-in-the-deep"]
 any = "modrinth:zQqsEeqy:EAZy6MA3"
 mod = "modrinth:zQqsEeqy:EAZy6MA3"
@@ -1236,10 +1212,6 @@ mod = "modrinth:5dUwdwpB:6mCe1UkK"
 [components."simple-conveyor-belts"]
 any = "modrinth:kNthsBTM:JVTAtiHj"
 mod = "modrinth:kNthsBTM:JVTAtiHj"
-
-[components."simple-recall-potion"]
-any = "modrinth:JQFS1tDC:q8cRauFO"
-mod = "modrinth:JQFS1tDC:q8cRauFO"
 
 [components."simply-swords"]
 any = "modrinth:bK3Ubu9p:eREhvVpQ"
@@ -3841,26 +3813,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:BNLbEGeO:S3mmEqNW"]
-name = "more-brushes"
-component = "more-brushes"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "BNLbEGeO"
-version = "S3mmEqNW"
-filename = "morebrushes-1.7-neoforge-mc1.21.1.jar"
-project-id = "BNLbEGeO"
-version-id = "S3mmEqNW"
-provides = ["morebrushes"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:BNuR43mM:ezAcslcX"]
 name = "chunk-activity-tracker"
 provider = "modrinth"
@@ -4753,26 +4705,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:JQFS1tDC:q8cRauFO"]
-name = "simple-recall-potion"
-component = "simple-recall-potion"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "JQFS1tDC"
-version = "q8cRauFO"
-filename = "simplerecall-1.0.6-1.21.1.jar"
-project-id = "JQFS1tDC"
-version-id = "q8cRauFO"
-provides = ["simplerecall"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:JeZoobNU:CPFsfPNM"]
 name = "lukis-crazy-chambers"
 component = "lukis-crazy-chambers"
@@ -4992,26 +4924,6 @@ optional = [{ "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "si
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "modrinth:e0bNACJD:SPj5bJoM", "namespace" = "sereneseasons", "reason" = "ships data/sereneseasons/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:LBa22RMa:JL6kDyww"]
-name = "roll-delight"
-component = "roll-delight"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "LBa22RMa"
-version = "JL6kDyww"
-filename = "[1.21.1] roll_delight-1.2.4-neoforge.jar"
-project-id = "LBa22RMa"
-version-id = "JL6kDyww"
-provides = ["roll_delight"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."modrinth:LGVihYcz:wGOa5uxT"]
 name = "emi-professions-emip"
@@ -6796,26 +6708,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:YttyNOFA:yNIrDVfJ"]
-name = "cultural-delights"
-component = "cultural-delights"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "YttyNOFA"
-version = "yNIrDVfJ"
-filename = "culturaldelights-0.17.8.jar"
-project-id = "YttyNOFA"
-version-id = "yNIrDVfJ"
-provides = ["culturaldelights"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "mod-id" = "farmersdelight", "version-range" = "[1.2.3,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:Z2mXHnxP:iopJiJQp"]
 name = "yungs-better-nether-fortresses"
 component = "yungs-better-nether-fortresses"
@@ -7790,26 +7682,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:fltEIOux:6Mz9TV74"]
-name = "berries-and-cherries"
-component = "berries-and-cherries"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "fltEIOux"
-version = "6Mz9TV74"
-filename = "berries_and_cherries-1.1-neoforge-1.21.1.jar"
-project-id = "fltEIOux"
-version-id = "6Mz9TV74"
-provides = ["berries_and_cherries"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:fnAffV0n:TuD0Zvi3"]
 name = "deeperdarker"
 component = "deeperdarker"
@@ -7965,26 +7837,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:gOQjCAAD:Ngn5DVCK"]
-name = "cuisine-delight"
-component = "cuisine-delight"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "gOQjCAAD"
-version = "Ngn5DVCK"
-filename = "cuisinedelight-1.2.8.jar"
-project-id = "gOQjCAAD"
-version-id = "Ngn5DVCK"
-provides = ["cuisinedelight"]
-bundled-provides = ["l2core"]
-required = [{ "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "mod-id" = "farmersdelight", "version-range" = "[1.2.4,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:DGiq4ZSW:ja5Qg1xw", "namespace" = "oceansdelight", "reason" = "ships data/oceansdelight/", "origin" = "archive-data" }, { "artifact" = "modrinth:EmNhnNnt:KSgki4uc", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }, { "artifact" = "modrinth:yHN0njMr:La8SvoPm", "namespace" = "ends_delight", "reason" = "ships data/ends_delight/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:gbJLUhZP:H0rFJIiC"]
 name = "distraction-free-recipes"
@@ -10606,26 +10458,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:yRrY3XII:XntyupDn"]
-name = "extradelight"
-component = "extradelight"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "yRrY3XII"
-version = "XntyupDn"
-filename = "extradelight-2.6.5.jar"
-project-id = "yRrY3XII"
-version-id = "XntyupDn"
-provides = ["extradelight"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "mod-id" = "farmersdelight", "version-range" = "1.2.8", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:YttyNOFA:yNIrDVfJ", "namespace" = "culturaldelights", "reason" = "ships data/culturaldelights/", "origin" = "archive-data" }, { "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "modrinth:hIu9KJTT:CKLYp96Y", "namespace" = "brewinandchewin", "reason" = "ships data/brewinandchewin/", "origin" = "archive-data" }, { "artifact" = "modrinth:e0bNACJD:SPj5bJoM", "namespace" = "sereneseasons", "reason" = "ships data/sereneseasons/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:ydZic5r4:tnvwgXE6"]
 name = "smooth-swapping"

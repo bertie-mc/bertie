@@ -88,7 +88,6 @@ include(
     ":mods:cataclysm-fortresses",
     ":mods:config-migrations",
     ":mods:coo-particles-fix",
-    ":mods:cultural-delights-fix",
     ":mods:ender-eyes",
     ":mods:explode-to-mine",
     ":mods:explosive-enhancement",

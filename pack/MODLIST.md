@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (473)
+## Mods (466)
 
 | Mod |
 |---|
@@ -45,7 +45,6 @@
 | `balm` |
 | `bartering-station` |
 | `bclib-neoforge` |
-| `berries-and-cherries` |
 | `better-advancements` |
 | `better-archeology` |
 | `better-beacon-placement` |
@@ -103,8 +102,6 @@
 | `crate-delight` |
 | `create` |
 | `creeper-overhaul` |
-| `cuisine-delight` |
-| `cultural-delights` |
 | `curios` |
 | `curse-of-pandora` |
 | `cut-through` |
@@ -172,7 +169,6 @@
 | `extended-bone-meal` |
 | `extra-disks` |
 | `extra-mod-integrations` |
-| `extradelight` |
 | `extreme_sound_muffler` |
 | `fancymenu` |
 | `fantasy_armor` |
@@ -293,7 +289,6 @@
 | `monolib` |
 | `moogs-voyager-structures` |
 | `moonlight` |
-| `more-brushes` |
 | `more-concrete` |
 | `more-delight` |
 | `mouse-tweaks` |
@@ -363,7 +358,6 @@
 | `resourceful-lib` |
 | `responsiveshields` |
 | `ribbits` |
-| `roll-delight` |
 | `rolling-down-in-the-deep` |
 | `rottencreatures` |
 | `rsinfinitybooster` |
@@ -375,7 +369,6 @@
 | `sg-economy-api` |
 | `short-circuit` |
 | `simple-conveyor-belts` |
-| `simple-recall-potion` |
 | `simply-swords` |
 | `simply-tooltips` |
 | `simplymore` |
@@ -478,7 +471,7 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (32)
+## Ours (31)
 
 | Mod |
 |---|
@@ -495,7 +488,6 @@
 | `bush-tweaks` |
 | `cataclysm-fortresses` |
 | `config-migrations` |
-| `cultural-delights-fix` |
 | `dread-queen` |
 | `ender-eyes` |
 | `explode-to-mine` |

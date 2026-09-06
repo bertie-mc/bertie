@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "anvilcraft:lead_ingot",
+  "ingredient": {
+    "item": "mekanism:deepslate_lead_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:lead_ingot"
+  }
+}
