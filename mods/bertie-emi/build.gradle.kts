@@ -47,6 +47,7 @@ dependencies {
     compileOnly(deps.alexsMobs1211)
     compileOnly(deps.architecturyApi)
     compileOnly(deps.zeta)
+    compileOnly(deps.minersDelight)
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)
