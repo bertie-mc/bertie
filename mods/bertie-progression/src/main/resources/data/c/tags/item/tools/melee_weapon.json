@@ -1,0 +1,336 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanismtools:bronze_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_sword",
+      "required": false
+    },
+    "#pastel:swords",
+    "#pastel:axes",
+    "#pastel:bidents",
+    {
+      "id": "antarchy:ultimate_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:battle_axe",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:basilisk_dagger",
+      "required": false
+    },
+    {
+      "id": "antarchy:scorpion_whip",
+      "required": false
+    },
+    {
+      "id": "antarchy:attitude_adjuster",
+      "required": false
+    },
+    {
+      "id": "antarchy:mantis_claw",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_axe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_sword",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_axe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_sword",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_axe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_sword",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken_trident",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_sword",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:magehunter",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:keeper_flamberge",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:spellbreaker",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:amethyst_rapier",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:claymore",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:misery",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:legionnaire_flamberge",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:hellrazor",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:decrepit_scythe",
+      "required": false
+    },
+    {
+      "id": "malum:crude_scythe",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_scythe",
+      "required": false
+    },
+    {
+      "id": "malum:edge_of_deliverance",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_knife",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_sword",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_axe",
+      "required": false
+    },
+    {
+      "id": "malum:tyrving",
+      "required": false
+    },
+    {
+      "id": "malum:mnemonic_hex_staff",
+      "required": false
+    },
+    {
+      "id": "malum:erosion_scepter",
+      "required": false
+    },
+    {
+      "id": "malum:weight_of_worlds",
+      "required": false
+    },
+    {
+      "id": "malum:unwinding_chaos",
+      "required": false
+    },
+    {
+      "id": "malum:sundering_anchor",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:adamantite",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:aquarium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:banglum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:bronze",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:celestium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:copper",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:carmot",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:durasteel",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:kyber",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:metallurgium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:mythril",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:orichalcum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:osmium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:palladium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:prometheum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:quadrillum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:runite",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:star_platinum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:steel",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:stormyx",
+      "required": false
+    },
+    {
+      "id": "minecraft:mace",
+      "required": false
+    },
+    {
+      "id": "minecraft:trident",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_axe",
+      "required": false
+    }
+  ]
+}

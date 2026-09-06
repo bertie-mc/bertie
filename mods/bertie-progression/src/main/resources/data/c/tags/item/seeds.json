@@ -1,0 +1,87 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:cabbage_seeds",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "antarchy:corn_seeds",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:blaze_tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:crystal_cabbage_seeds",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:diamond_lattice_potato",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:neutronium_wheat_seeds",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:asparagus_seeds",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:chili_pepper_seeds",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:basil",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:soybean",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:redbean",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tea_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:udumbara_leaves",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:red_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:black_grape_seeds",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:white_grape_seeds",
+      "required": false
+    },
+    "#c:seeds/cucumber",
+    "#c:seeds/beetroot",
+    "#c:seeds/melon",
+    "#c:seeds/pumpkin",
+    "#c:seeds/torchflower",
+    "#c:seeds/wheat",
+    {
+      "id": "#forge:seeds",
+      "required": false
+    }
+  ]
+}

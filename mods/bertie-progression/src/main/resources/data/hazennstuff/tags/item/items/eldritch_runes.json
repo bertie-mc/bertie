@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:eldritch_rune",
+      "required": false
+    }
+  ]
+}

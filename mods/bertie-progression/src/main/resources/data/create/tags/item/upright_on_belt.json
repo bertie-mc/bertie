@@ -1,0 +1,408 @@
+{
+  "replace": true,
+  "values": [
+    "#farmersdelight:meals",
+    "#farmersdelight:drinks",
+    "#farmersdelight:feasts",
+    {
+      "id": "farmersdelight:tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dog_food",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:fruit_salad",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:nether_salad",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:pie_crust",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:apple_pie",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:sweet_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:chocolate_pie",
+      "required": false
+    },
+    {
+      "id": "amendments:dye_bottle",
+      "required": false
+    },
+    {
+      "id": "create:blaze_cake_base",
+      "required": false
+    },
+    {
+      "id": "create:blaze_cake",
+      "required": false
+    },
+    {
+      "id": "create:creative_blaze_cake",
+      "required": false
+    },
+    {
+      "id": "create:builders_tea",
+      "required": false
+    },
+    {
+      "id": "minecraft:glass_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:potion",
+      "required": false
+    },
+    {
+      "id": "minecraft:splash_potion",
+      "required": false
+    },
+    {
+      "id": "minecraft:lingering_potion",
+      "required": false
+    },
+    {
+      "id": "minecraft:honey_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:cake",
+      "required": false
+    },
+    {
+      "id": "minecraft:bowl",
+      "required": false
+    },
+    {
+      "id": "minecraft:mushroom_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:beetroot_soup",
+      "required": false
+    },
+    {
+      "id": "minecraft:suspicious_stew",
+      "required": false
+    },
+    {
+      "id": "atmospheric:orange_pudding",
+      "required": false
+    },
+    {
+      "id": "atmospheric:orange_sorbet",
+      "required": false
+    },
+    {
+      "id": "atmospheric:passion_fruit_sorbet",
+      "required": false
+    },
+    {
+      "id": "atmospheric:aloe_gel_bottle",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_glow_bottle",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_glow_bottle",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:red_glow_bottle",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:yellow_glow_bottle",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:allium_oddion_soup",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_puffball_stew",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:aloe_vera_juice",
+      "required": false
+    },
+    {
+      "id": "silentgems:cup_of_coffee",
+      "required": false
+    },
+    {
+      "id": "silentgems:uncooked_meaty_stew",
+      "required": false
+    },
+    {
+      "id": "silentgems:meaty_stew",
+      "required": false
+    },
+    {
+      "id": "silentgems:uncooked_fishy_stew",
+      "required": false
+    },
+    {
+      "id": "silentgems:fishy_stew",
+      "required": false
+    },
+    {
+      "id": "autumnity:foul_soup",
+      "required": false
+    },
+    {
+      "id": "autumnity:syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "autumnity:sap_bottle",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_wine",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_milk_tea",
+      "required": false
+    },
+    {
+      "id": "ends_delight:bubble_tea",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_breath_soda",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_flower_tea",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_pie",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:glass_jar",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:goat_cheese_wheel",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:goat_milk_bucket",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:goat_milk_bottle",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:apple_juice",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:sweet_berry_juice",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:sweet_berry_jelly",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:glow_berry_juice",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:glow_berry_jelly",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cranberry_juice",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cranberry_jelly",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cranberry_cobbler",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:honeyed_goat_cheese_tart",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_spidereye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_ghasttear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_wither_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punch_cobweb",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_spidereye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_ghasttear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_wither_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_cobweb",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_spider_eye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_slime",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_cobweb",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_ghast_tear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soup_wither_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:monster_mash",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:pasta_with_slimeballs",
+      "required": false
+    }
+  ]
+}

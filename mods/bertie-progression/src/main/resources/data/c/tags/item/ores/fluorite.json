@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_fluorite_ore",
+      "required": false
+    }
+  ]
+}

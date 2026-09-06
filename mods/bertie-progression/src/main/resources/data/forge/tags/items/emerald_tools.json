@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:radiant_sanctifier",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_scorchfang",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:shivering_shard",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_gale_piercer",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_whisper_of_poison",
+      "required": false
+    }
+  ]
+}

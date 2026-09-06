@@ -1,0 +1,1037 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "alexsmobs:straddlite",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "antarchy:bluestone",
+      "required": false
+    },
+    {
+      "id": "antarchy:cloud_shark_fin",
+      "required": false
+    },
+    {
+      "id": "antarchy:kraken_tooth",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_scale",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_scute",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:amber",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:charged_neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:earth_core_shard",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:magnet_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multiphase_matter",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multiphase_transcendium",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:negative_matter",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ruby",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sapphire",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sea_heart_shell_shard",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:stable_neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:topaz",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:void_matter",
+      "required": false
+    },
+    {
+      "id": "aquaculture:neptunium_ingot",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_ingot",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:dying_star",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:eclipsium_alloy",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_ingot",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:ender_dragon_bone",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_ingot",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:shadow_fragment",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:umbral_sun",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite",
+      "required": false
+    },
+    {
+      "id": "avaritia:crystal_matrix_ingot",
+      "required": false
+    },
+    {
+      "id": "avaritia:infinity_ingot",
+      "required": false
+    },
+    {
+      "id": "avaritia:neutron_ingot",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_ingot",
+      "required": false
+    },
+    {
+      "id": "betterend:amber_gem",
+      "required": false
+    },
+    {
+      "id": "betterend:crystal_shards",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_ingot",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_ingot",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bone",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken_tooth",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:fangofthe_hound_leader",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:lifestealer_bone",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_claw",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ancient_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:koboleton_bone",
+      "required": false
+    },
+    {
+      "id": "cataclysm:witherite_ingot",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_alloy",
+      "required": false
+    },
+    {
+      "id": "create:andesite_alloy",
+      "required": false
+    },
+    {
+      "id": "create:brass_ingot",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:abyss_crystal",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:angelic_feather",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:hellfire_rune",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:sculk_crystal",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:shadow_fragment",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:reinforced_echo_shard",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_plate",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_bone",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_carapace",
+      "required": false
+    },
+    {
+      "id": "deepwaters:aquamarine",
+      "required": false
+    },
+    {
+      "id": "deepwaters:blackpearl",
+      "required": false
+    },
+    {
+      "id": "deepwaters:fopal",
+      "required": false
+    },
+    {
+      "id": "deepwaters:pearl",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:eldritch_soul_shard",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:shard_of_malice",
+      "required": false
+    },
+    {
+      "id": "enderio:conductive_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:dark_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:end_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:energetic_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:pulsating_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:redstone_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:soularium_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio:vibrant_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio_endergy:crude_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio_endergy:crystalline_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio_endergy:melodic_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio_endergy:stellar_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enderio_endergy:vivid_alloy_ingot",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:cosmic_heart",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:cursed_stone",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:earth_heart",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_ingot",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:evil_ingot",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:pure_heart",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:twisted_heart",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:moon_crystal",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:aquatic_dragon_scale",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:arcane_crystal",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:deorum_ingot",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:dragon_scale",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:golden_dragon_scale",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:obsidiansteel_ingot",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:stellarite_piece",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:chlorophyte_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cosmic_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:demonite_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dreadsteel_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hallowed_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:rose_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:shadow_scale",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:starkissed_zenalite",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:steel_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:zenalite_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_amethyst",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_black",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_blue",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_bronze",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_copper",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_electric",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_gray",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_green",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_red",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_sapphire",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_silver",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonscales_white",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ghost_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_blue",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_bronze",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_deepblue",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_green",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_purple",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_red",
+      "required": false
+    },
+    {
+      "id": "iceandfire:sea_serpent_scales_teal",
+      "required": false
+    },
+    {
+      "id": "iceandfire:shiny_scales",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:arcane_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:divine_soulshard",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:mithril_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:pyrium_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "l2hostility:chaos_ingot",
+      "required": false
+    },
+    {
+      "id": "l2hostility:miracle_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:abyssite",
+      "required": false
+    },
+    {
+      "id": "magitech:chromium_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:citrine",
+      "required": false
+    },
+    {
+      "id": "magitech:ender_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:frigidite",
+      "required": false
+    },
+    {
+      "id": "magitech:mana_charged_fluorite",
+      "required": false
+    },
+    {
+      "id": "magitech:radiant_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:resonite",
+      "required": false
+    },
+    {
+      "id": "magitech:tourmaline",
+      "required": false
+    },
+    {
+      "id": "magitech:translucium",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold",
+      "required": false
+    },
+    {
+      "id": "malum:hallowed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_pewter_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "mekanism:alloy_atomic",
+      "required": false
+    },
+    {
+      "id": "mekanism:alloy_infused",
+      "required": false
+    },
+    {
+      "id": "mekanism:alloy_reinforced",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_osmium",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_refined_glowstone",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_refined_obsidian",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:alloy_radiance",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:alloy_shining",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:alloy_spectrum",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:alloy_thermonuclear",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:ingot_naquadah",
+      "required": false
+    },
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:armadillo_scute",
+      "required": false
+    },
+    {
+      "id": "minecraft:blaze_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:bone",
+      "required": false
+    },
+    {
+      "id": "minecraft:breeze_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:charcoal",
+      "required": false
+    },
+    {
+      "id": "minecraft:coal",
+      "required": false
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond",
+      "required": false
+    },
+    {
+      "id": "minecraft:echo_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:emerald",
+      "required": false
+    },
+    {
+      "id": "minecraft:flint",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:heart_of_the_sea",
+      "required": false
+    },
+    {
+      "id": "minecraft:honeycomb",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:lapis_lazuli",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:obsidian",
+      "required": false
+    },
+    {
+      "id": "minecraft:paper",
+      "required": false
+    },
+    {
+      "id": "minecraft:prismarine_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:quartz",
+      "required": false
+    },
+    {
+      "id": "minecraft:redstone",
+      "required": false
+    },
+    {
+      "id": "minecraft:resin_clump",
+      "required": false
+    },
+    {
+      "id": "minecraft:shulker_shell",
+      "required": false
+    },
+    {
+      "id": "minecraft:stick",
+      "required": false
+    },
+    {
+      "id": "minecraft:turtle_scute",
+      "required": false
+    },
+    {
+      "id": "modular_machinery_reborn:modularium",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:bound_soul_ingot",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:gargoyle_shard",
+      "required": false
+    },
+    {
+      "id": "oritech:adamant_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:duratium_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:electrum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:energite_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:prometheum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:reinforced_carbon_sheet",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_dust",
+      "required": false
+    },
+    {
+      "id": "pastel:bismuth_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:downstone_fragments",
+      "required": false
+    },
+    {
+      "id": "pastel:midnight_aberration",
+      "required": false
+    },
+    {
+      "id": "pastel:midnight_chip",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:neolith",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_azurite",
+      "required": false
+    },
+    {
+      "id": "pastel:resonance_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:spectral_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:star_fragment",
+      "required": false
+    },
+    {
+      "id": "pastel:storm_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:vegetal",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_blazing",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_niotic",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_nitro",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_spirited",
+      "required": false
+    },
+    {
+      "id": "powah:steel_energized",
+      "required": false
+    },
+    {
+      "id": "powah:uraninite",
+      "required": false
+    },
+    {
+      "id": "refinedstorage:quartz_enriched_copper",
+      "required": false
+    },
+    {
+      "id": "refinedstorage:quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "slag:deep_alloy",
+      "required": false
+    },
+    {
+      "id": "slag:rose_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "stellaris:desh_ingot",
+      "required": false
+    },
+    {
+      "id": "stellaris:heavy_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "stellaris:neptunium_ingot",
+      "required": false
+    },
+    {
+      "id": "stellaris:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "stellaris:solerium",
+      "required": false
+    },
+    {
+      "id": "stellaris:tharsite_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:naga_scale",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_ingot",
+      "required": false
+    }
+  ]
+}

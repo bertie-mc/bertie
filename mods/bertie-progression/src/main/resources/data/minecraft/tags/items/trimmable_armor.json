@@ -1,0 +1,101 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:voiderite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_boots",
+      "required": false
+    }
+  ]
+}

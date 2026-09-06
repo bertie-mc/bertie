@@ -1,0 +1,143 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "illagerinvasion:platinum_sheet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:witherite_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ancient_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:resin_brick",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_scale",
+      "required": false
+    },
+    {
+      "id": "antarchy:bluestone",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:pearl",
+      "required": false
+    },
+    "#c:ingots/iron",
+    "#c:ingots/copper",
+    "#c:ingots/gold",
+    "#c:ingots/netherite",
+    "#c:dusts/redstone",
+    "#c:gems/lapis",
+    "#c:gems/emerald",
+    "#c:gems/diamond",
+    "#c:gems/quartz",
+    "#c:gems/amethyst",
+    {
+      "id": "l2complements:totemic_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_ingot",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:stained_scrap",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_ingot",
+      "required": false
+    },
+    {
+      "id": "twilightforest:naga_scale",
+      "required": false
+    },
+    {
+      "id": "twilightforest:carminite",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:lapis_lazuli",
+      "required": false
+    },
+    {
+      "id": "minecraft:emerald",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:redstone",
+      "required": false
+    },
+    {
+      "id": "minecraft:quartz",
+      "required": false
+    },
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    }
+  ]
+}

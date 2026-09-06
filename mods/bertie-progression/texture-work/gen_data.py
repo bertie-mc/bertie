@@ -3316,7 +3316,7 @@ if not _removed:
     )
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
-_items, _hits, _leaks, _loot_src, _merge_src = set(), [], {}, {}, {}
+_items, _hits, _leaks, _loot_src, _merge_src, _tag_src = set(), [], {}, {}, {}, {}
 _scan_ok = False
 if _removed:
     import fnmatch
@@ -3330,6 +3330,31 @@ if _removed:
                             "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
     if os.path.isfile(_vanilla):
         _scan.append(_vanilla)
+    # NeoForge itself ships ~275 c: convention tags, and it does NOT live in the mods folder. The
+    # tag pass rewrites with replace:true, so a tag NeoForge also contributes to would lose its
+    # entries - c:foods/cooked_meat would drop vanilla cooked beef - unless its jar is read too.
+    # The version comes from the instance's own pack file rather than "newest on disk": several
+    # NeoForge versions are installed and only one of them is what this instance runs.
+    _mmc = os.path.join(os.path.dirname(INSTANCE_MODS), "..", "mmc-pack.json")
+    _nf_version = None
+    if os.path.isfile(_mmc):
+        try:
+            with open(_mmc, encoding="utf-8") as _f:
+                for _c in json.load(_f).get("components", []):
+                    if _c.get("uid") == "net.neoforged":
+                        _nf_version = _c.get("version")
+        except (OSError, json.JSONDecodeError):
+            _nf_version = None
+    if _nf_version:
+        _nf = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "libraries", "net",
+                           "neoforged", "neoforge", _nf_version,
+                           f"neoforge-{_nf_version}-universal.jar")
+        if os.path.isfile(_nf):
+            _scan.append(_nf)
+        else:
+            print(f"  !! NeoForge {_nf_version} universal jar not found; its tag entries cannot be "
+                  f"preserved and tag rewrites are UNSAFE.")
+            raise SystemExit(f"missing NeoForge universal jar: {_nf}")
     if not _scan:
         print("  !! REMOVED ITEMS: no jars found - recipe disables NOT emitted, LEAKS not refreshed.")
     else:
@@ -3393,6 +3418,14 @@ if _removed:
                 for _n in _zf.namelist():
                     if not _n.endswith(".json") or not _n.startswith("data/"):
                         continue
+                    _tm = re.match(r"^data/([^/]+)/tags/items?/(.+)[.]json$", _n)
+                    if _tm:
+                        try:
+                            _td = json.loads(_zf.read(_n).decode("utf-8-sig"))
+                        except Exception:
+                            _td = None
+                        if isinstance(_td, dict):
+                            _tag_src.setdefault(_n, []).append(_td)
                     _is_recipe, _is_loot = "/recipe" in _n, "/loot_table" in _n
                     _is_other = any(_k in _n for _k in OTHER_KINDS)
                     if not (_is_recipe or _is_loot or _is_other):
@@ -3537,6 +3570,64 @@ else:
     with open(_merge_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
         json.dump(sorted(_new_merge), _f, indent=2)
 print(f"  merged items: {len(_MERGE)} ids, {len(_new_merge)} recipes redirected")
+
+# TAGS. Hiding an item from the creative tabs takes it out of EMI's index, but it does NOT take it
+# out of a tag - so a recipe that accepts `#c:ingots/uranium` still lists four uranium ingots in its
+# tooltip, three of which no longer exist as far as the player is concerned. That defeats the point
+# of merging them. Every item tag that carries a hidden id is re-emitted without it.
+#
+# It has to be `replace: true`. Tag files of the same path from every mod are concatenated by the
+# loader, so there is no way to subtract one mod's entry - the only way to end up with a smaller set
+# is to declare the whole set ourselves. That means reproducing every OTHER contribution too, which
+# is why the union is collected across all jars first. A tag left with nothing survives as an empty
+# tag rather than being dropped, because a missing override would let the originals back in.
+_tag_manifest_path = os.path.join(ROOT, "texture-work", ".merged_tags.json")
+_old_tags = []
+if os.path.isfile(_tag_manifest_path):
+    with open(_tag_manifest_path, encoding="utf-8") as _f:
+        _old_tags = json.load(_f)
+if _removed and not _scan_ok:
+    _new_tags = _old_tags
+else:
+    _hidden = set(_removed_ids)
+    _new_tags = []
+    for _tp, _docs in sorted(_tag_src.items()):
+        _union, _seen_v = [], set()
+        _replaced = False
+        for _doc in _docs:
+            if _doc.get("replace"):
+                _union, _seen_v, _replaced = [], set(), True
+            for _v in _doc.get("values", []):
+                _key = json.dumps(_v, sort_keys=True)
+                if _key not in _seen_v:
+                    _seen_v.add(_key)
+                    _union.append(_v)
+        def _id_of(_v):
+            return _v.get("id") if isinstance(_v, dict) else _v
+        if not any(_id_of(_v) in _hidden for _v in _union):
+            continue
+        _kept = [_v for _v in _union if _id_of(_v) not in _hidden]
+        # Everything we re-declare is optional: the union was collected from jars that may not all
+        # be present in a given install, and a hard entry for an absent mod fails tag loading.
+        _out = []
+        for _v in _kept:
+            _vid = _id_of(_v)
+            if isinstance(_vid, str) and _vid.startswith("#"):
+                _out.append(_v)
+            elif isinstance(_vid, str):
+                _out.append({"id": _vid, "required": False})
+            else:
+                _out.append(_v)
+        write(_tp, {"replace": True, "values": _out})
+        _new_tags.append(_tp)
+    for _stale in sorted(set(_old_tags) - set(_new_tags)):
+        _abs = os.path.join(RES, _stale.replace("/", os.sep))
+        if os.path.isfile(_abs):
+            os.remove(_abs)
+            print(f"  merged tags: restored {_stale}")
+    with open(_tag_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
+        json.dump(sorted(_new_tags), _f, indent=2)
+print(f"  merged tags: {len(_new_tags)} item tags rewritten without hidden ids")
 
 _n_loot = sum(1 for _p in _new_data if "/loot_table" in _p)
 print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes disabled, "

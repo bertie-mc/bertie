@@ -1,0 +1,327 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:gold_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:gold_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:gold_hook",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:golden_knife",
+      "required": false
+    },
+    {
+      "id": "cataclysm:khopesh",
+      "required": false
+    },
+    {
+      "id": "mekanism:block_refined_glowstone",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_refined_glowstone",
+      "required": false
+    },
+    "#mekanism:enriched/gold",
+    "#c:shards/gold",
+    "#c:crystals/gold",
+    "#c:dirty_dusts/gold",
+    "#c:clumps/gold",
+    {
+      "id": "mekanismtools:refined_glowstone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_axe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_shield",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:golden_egg",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:enchanted_golden_egg",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:golden_trophy",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_gold_head",
+      "required": false
+    },
+    {
+      "id": "pastel:gilded_book",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_golden_carrot",
+      "required": false
+    },
+    {
+      "id": "quark:gold_button",
+      "required": false
+    },
+    {
+      "id": "quark:gold_bars",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks_slab",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks_vertical_slab",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ravaging_claws",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:warping_lantern",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:anchored_ender_pearl",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:howling_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:totem_of_undying",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:shield_of_vindication",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:empty_warping_lantern",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:enchanting_tome",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:remnant_artifact",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:collector_medallion",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:elixir_of_vitality",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:echoing_ward",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ironbound_gauntlet",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_nugget",
+      "required": false
+    },
+    {
+      "id": "artifacts:golden_hook",
+      "required": false
+    },
+    {
+      "id": "artifacts:cross_necklace",
+      "required": false
+    },
+    {
+      "id": "artifacts:antidote_vessel",
+      "required": false
+    },
+    {
+      "id": "artifacts:universal_attractor",
+      "required": false
+    },
+    {
+      "id": "create:golden_sheet",
+      "required": false
+    },
+    {
+      "id": "create:crushed_raw_gold",
+      "required": false
+    },
+    {
+      "id": "ironbookshelves:golden_bookshelf",
+      "required": false
+    },
+    {
+      "id": "minersdelight:golden_nutritional_bar",
+      "required": false
+    },
+    {
+      "id": "twilightforest:gold_minotaur_axe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:charm_of_keeping_3",
+      "required": false
+    },
+    {
+      "id": "twilightforest:charm_of_life_2",
+      "required": false
+    },
+    {
+      "id": "twilightforest:lamp_of_cinders",
+      "required": false
+    },
+    "#minecraft:gold_ores",
+    {
+      "id": "minecraft:gold_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:gilded_blackstone",
+      "required": false
+    },
+    {
+      "id": "minecraft:light_weighted_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:bell",
+      "required": false
+    },
+    {
+      "id": "minecraft:clock",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:glistering_melon_slice",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_apple",
+      "required": false
+    },
+    {
+      "id": "minecraft:enchanted_golden_apple",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_horse_armor",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_axe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:raw_gold",
+      "required": false
+    },
+    {
+      "id": "minecraft:raw_gold_block",
+      "required": false
+    }
+  ]
+}

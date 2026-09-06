@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:ingot_steel",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:steel_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_ingot",
+      "required": false
+    }
+  ]
+}

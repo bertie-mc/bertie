@@ -1,0 +1,363 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:minced_beef",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:beef_patty",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:chicken_cuts",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_chicken_cuts",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:bacon",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_bacon",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:mutton_chops",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_mutton_chops",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:smoked_ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dog_food",
+      "required": false
+    },
+    "#c:foods/raw_hoglin",
+    "#c:foods/cooked_hoglin",
+    {
+      "id": "mynethersdelight:minced_strider",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:roast_ear",
+      "required": false
+    },
+    {
+      "id": "pastel:triple_meat_pot_stew",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonbone_broth",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_meat",
+      "required": false
+    },
+    {
+      "id": "pastel:cooked_lizard_meat",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_bug_meat",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_bug_meat",
+      "required": false
+    },
+    {
+      "id": "aquaculturedelight:cooked_small_turtle_meat",
+      "required": false
+    },
+    {
+      "id": "aquaculturedelight:small_turtle_meat",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_shank",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:smoked_monster_flesh",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:monster_flesh",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:smoked_flesh",
+      "required": false
+    },
+    {
+      "id": "deepwaters:crabcooked",
+      "required": false
+    },
+    {
+      "id": "deepwaters:clammeat",
+      "required": false
+    },
+    {
+      "id": "deepwaters:shrimp_cooked",
+      "required": false
+    },
+    {
+      "id": "deepwaters:shrimpmeat",
+      "required": false
+    },
+    {
+      "id": "deepwaters:deepwaters_rolls",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_mollusk",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_filet",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:salami",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_pie_slice",
+      "required": false
+    },
+    {
+      "id": "iceandfire:cooked_rice_with_fire_dragon_meat",
+      "required": false
+    },
+    {
+      "id": "iceandfire:cooked_rice_with_ice_dragon_meat",
+      "required": false
+    },
+    {
+      "id": "iceandfire:cooked_rice_with_lightning_dragon_meat",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ice_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "iceandfire:lightning_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:silverfish_abdomen",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:ghast_calamari",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:fried_ghast_calamari",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:ghast_tentacle",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:spider_meat",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:smoked_spider_meat",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:rotten_tripe",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:brined_flesh",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:gritty_flesh",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:bogged_brain",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:bug_chops",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:fried_bug_chops",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:volaille",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:marbled_meat",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:cooked_marbled_meat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raw_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:cooked_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:meef_stroganoff",
+      "required": false
+    },
+    {
+      "id": "twilightforest:experiment_115",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_chop",
+      "required": false
+    },
+    {
+      "id": "twilightforest:monster_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:beef_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:pork_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:chicken_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:rabbit_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mutton_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:venison_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:meef_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:cod_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:salmon_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:tropical_fish_jerky",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fugu_jerky",
+      "required": false
+    },
+    {
+      "id": "minecraft:beef",
+      "required": false
+    },
+    {
+      "id": "minecraft:chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_beef",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_mutton",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_porkchop",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:mutton",
+      "required": false
+    },
+    {
+      "id": "minecraft:porkchop",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:rotten_flesh",
+      "required": false
+    }
+  ]
+}

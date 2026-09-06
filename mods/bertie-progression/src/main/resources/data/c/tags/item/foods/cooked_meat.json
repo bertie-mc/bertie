@@ -1,0 +1,63 @@
+{
+  "replace": true,
+  "values": [
+    "#c:foods/cooked_chicken",
+    "#c:foods/cooked_pork",
+    "#c:foods/cooked_beef",
+    "#c:foods/cooked_mutton",
+    "#c:foods/cooked_hoglin",
+    {
+      "id": "antarchy:cooked_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_bug_meat",
+      "required": false
+    },
+    {
+      "id": "antarchy:kraken_kalamari",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_turtle",
+      "required": false
+    },
+    "#minersdelight:cooked_insect_meat",
+    {
+      "id": "minersdelight:vegan_patty",
+      "required": false
+    },
+    {
+      "id": "twilightforest:cooked_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_chop",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_beef",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_porkchop",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:cooked_mutton",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_meats",
+      "required": false
+    }
+  ]
+}

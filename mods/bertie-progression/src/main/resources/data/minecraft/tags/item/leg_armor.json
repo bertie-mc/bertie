@@ -1,0 +1,328 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:expert_builder_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:apprentice_builder_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:novice_builder_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_leggings",
+      "required": false
+    },
+    {
+      "id": "betterend:crystalite_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanism:hazmat_pants",
+      "required": false
+    },
+    {
+      "id": "mekanism:mekasuit_pants",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_leggings",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_leggings",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_leggings",
+      "required": false
+    },
+    {
+      "id": "pastel:sylph_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_leggings",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_leggings",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_mantleofthe_night_leggings",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_metal_armor_leggings",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_leggings",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_leggings",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_leggings",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:draco_arcanus_leggings",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:tyr_leggings",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_leggings",
+    "#hazentouvelib:armors/leggings",
+    {
+      "id": "iceandfire:armor_amethyst_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_black_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_blue_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_bronze_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_metal_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_electric_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_gray_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_green_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_red_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_sapphire_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_metal_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_white_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_blue_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_bronze_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_deepblue_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_green_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_purple_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_red_leggings",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_teal_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:bone_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:heavy_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:prismarine_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:warrior_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wither_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wooden_leggings",
+      "required": false
+    },
+    "#irons_spellbooks:armors/leggings",
+    {
+      "id": "malum:soul_hunter_leggings",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_leggings",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_stronghold_leggings",
+      "required": false
+    },
+    {
+      "id": "#mythsandlegends:leg_armor",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_leggings",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_leggings",
+      "required": false
+    },
+    {
+      "id": "stellaris:jet_suit_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:chainmail_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_leggings",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "twilightdelight:raw_venison_rib",
+      "required": false
+    }
+  ]
+}

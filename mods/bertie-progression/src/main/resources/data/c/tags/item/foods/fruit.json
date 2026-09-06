@@ -1,0 +1,69 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:apple",
+      "required": false
+    },
+    {
+      "id": "minecraft:melon_slice",
+      "required": false
+    },
+    {
+      "id": "minecraft:chorus_fruit",
+      "required": false
+    },
+    {
+      "id": "minecraft:sweet_berries",
+      "required": false
+    },
+    {
+      "id": "minecraft:glow_berries",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_peach",
+      "required": false
+    },
+    {
+      "id": "pastel:fissure_plum",
+      "required": false
+    },
+    {
+      "id": "pastel:mermaids_gem",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach",
+      "required": false
+    },
+    {
+      "id": "create:honeyed_apple",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:forbidden_fruit",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:astral_fruit",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:enchanted_astral_fruit",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_apple",
+      "required": false
+    },
+    {
+      "id": "minecraft:enchanted_golden_apple",
+      "required": false
+    },
+    {
+      "id": "#c:foods/fruits",
+      "required": false
+    }
+  ]
+}

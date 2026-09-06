@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_axe",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_workstaff",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_workstaff",
+      "required": false
+    }
+  ]
+}

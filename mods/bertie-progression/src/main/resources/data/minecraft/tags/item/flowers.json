@@ -1,0 +1,79 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:wildflowers",
+      "required": false
+    },
+    {
+      "id": "minecraft:cactus_flower",
+      "required": false
+    },
+    {
+      "id": "antarchy:camellia",
+      "required": false
+    },
+    {
+      "id": "antarchy:lotus",
+      "required": false
+    },
+    {
+      "id": "antarchy:orange_milkweed",
+      "required": false
+    },
+    {
+      "id": "antarchy:pink_milkweed",
+      "required": false
+    },
+    {
+      "id": "antarchy:spider_lily",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:growth_totem",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:river_mint",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:glowing_flowers",
+      "required": false
+    },
+    {
+      "id": "magitech:mistalia_petals",
+      "required": false
+    },
+    "#minecraft:small_flowers",
+    "#minecraft:tall_flowers",
+    {
+      "id": "minecraft:flowering_azalea_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:flowering_azalea",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_propagule",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:pink_petals",
+      "required": false
+    },
+    {
+      "id": "minecraft:chorus_flower",
+      "required": false
+    },
+    {
+      "id": "minecraft:spore_blossom",
+      "required": false
+    }
+  ]
+}

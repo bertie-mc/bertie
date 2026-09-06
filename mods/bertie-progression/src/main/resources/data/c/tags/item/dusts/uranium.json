@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "oritech:uranium_dust",
+      "required": false
+    }
+  ]
+}

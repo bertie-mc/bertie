@@ -1,0 +1,71 @@
+{
+  "replace": true,
+  "values": [
+    "#c:foods/raw_chicken",
+    "#c:foods/raw_pork",
+    "#c:foods/raw_beef",
+    "#c:foods/raw_mutton",
+    "#c:foods/raw_hoglin",
+    {
+      "id": "mynethersdelight:minced_strider",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_meat",
+      "required": false
+    },
+    {
+      "id": "alexscaves:vesper_wing",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_bug_meat",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_turtle",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_mollusk",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_filet",
+      "required": false
+    },
+    "#minersdelight:raw_insect_meat",
+    {
+      "id": "twilightforest:raw_meef",
+      "required": false
+    },
+    {
+      "id": "minecraft:beef",
+      "required": false
+    },
+    {
+      "id": "minecraft:porkchop",
+      "required": false
+    },
+    {
+      "id": "minecraft:chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:mutton",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_meats",
+      "required": false
+    }
+  ]
+}

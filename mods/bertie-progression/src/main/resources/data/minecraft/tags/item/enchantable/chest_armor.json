@@ -1,0 +1,256 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_tunic",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cloak_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:crocodile_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:unsettling_kimono",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tarantula_hawk_elytra",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ionocraft_backpack",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_suit",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_speed_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_power_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_resist_chestplate",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:eldritch_warlock_robes",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:crimson_stag_robes",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_chestplate",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_chestplate",
+    "#hazentouvelib:armors/chestplates",
+    {
+      "id": "ice_and_fire_spellbooks:fire_dragon_priest_chestplate",
+      "required": false
+    },
+    {
+      "id": "ice_and_fire_spellbooks:ice_dragon_priest_chestplate",
+      "required": false
+    },
+    {
+      "id": "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:bedrock_warlock_robes",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack_elytra",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack_exo_elytra",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_jetpack",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_chestplate",
+      "required": false
+    },
+    "#minecraft:chest_armor"
+  ]
+}

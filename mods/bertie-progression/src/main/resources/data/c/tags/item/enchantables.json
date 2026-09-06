@@ -1,0 +1,223 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multitool",
+      "required": false
+    },
+    {
+      "id": "create:potato_cannon",
+      "required": false
+    },
+    "#create:pressurized_air_sources",
+    "#enigmaticlegacyplus:enchantable/eternal_binding",
+    "#hazennstuff:armors/hns_helmet",
+    "#hazennstuff:armors/hns_chestplate",
+    "#hazennstuff:armors/hns_leggings",
+    "#hazennstuff:armors/hns_boots",
+    "#hazentouvelib:enchanted_spellbook",
+    "#hazentouvelib:spellbooks/fire_spellbook",
+    {
+      "id": "hazennstuff:fireblossom_rapier",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:draconic_splitter",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:firebrand",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:war_flaming_lance",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ravens_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:volcano",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ice_pike",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostburn_dagger",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:beongae",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:skyscorcher",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_dormant",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t1",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t2",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t3",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:bountiful_harvest",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:thorn_chakram",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blade_of_grass",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:vampire_knives",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:obsidian_claymore",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:starfury",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectrum",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:meowmere",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammush",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:soul_reaper",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lights_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:true_nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:astralite_cleaver",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:tidal_wave",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammer_of_justice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:divine_greatsword",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hazens_excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur_divine_gold",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:malice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ancient_warriors_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_devourer",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:mage_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legionnaire_warlock_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:muramasa",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dawnmaker",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectral_pickaxe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe_divine_gold",
+      "required": false
+    },
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    "#minecraft:enchantable/armor",
+    "#minecraft:enchantable/equippable",
+    "#minecraft:enchantable/weapon",
+    "#minecraft:enchantable/sword",
+    "#minecraft:enchantable/mining",
+    "#minecraft:enchantable/mining_loot",
+    "#minecraft:enchantable/fishing",
+    "#minecraft:enchantable/trident",
+    "#minecraft:enchantable/bow",
+    "#minecraft:enchantable/crossbow",
+    "#minecraft:enchantable/mace",
+    "#minecraft:enchantable/fire_aspect",
+    "#minecraft:enchantable/durability",
+    "#minecraft:enchantable/vanishing"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minersdelight:smoked_bat_wing",
+      "required": false
+    }
+  ]
+}

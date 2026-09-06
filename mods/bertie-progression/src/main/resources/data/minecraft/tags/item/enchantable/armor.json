@@ -1,0 +1,291 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "alexscaves:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_tunic",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_pants",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_mask",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hood_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cloak_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:crocodile_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:centipede_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_headgear",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:frontier_cap",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:sombrero",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:spiked_turtle_shell",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:fedora",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:froststalker_helmet",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:novelty_hat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:unsettling_kimono",
+      "required": false
+    },
+    "#minecraft:foot_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:chest_armor",
+    "#minecraft:head_armor",
+    {
+      "id": "cataclysm_spellbooks:ignis_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_skirt",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_mask",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_circlet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_greaves",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_hat",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_skirt",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_greaves",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:monstrous_wizard_hat",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_hood",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_suit",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_speed_visors",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_speed_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_power_visors",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_power_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_resist_visors",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_resist_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_greaves",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_helmet",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_leggings",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_boots",
+      "required": false
+    },
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    "#stellaris:space_suit",
+    "#stellaris:jet_suit",
+    "#minecraft:enchantable/foot_armor",
+    "#minecraft:enchantable/leg_armor",
+    "#minecraft:enchantable/chest_armor",
+    "#minecraft:enchantable/head_armor"
+  ]
+}

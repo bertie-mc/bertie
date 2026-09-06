@@ -1,0 +1,883 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:radiant_sanctifier",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_of_the_elements_lightning",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_titans_oath",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_scorchfang",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_oathbreaker_of_chaos",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_of_the_element_schulk",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:shivering_shard",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:prismatic_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:cleaver_of_the_starved",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_of_the_elements_ice",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:aqua_tide",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:lance_of_the_veil",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:creative_obliterator",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_eye_of_the_sun",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_of_the_elements_fire",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_gale_piercer",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_whisper_of_poison",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_of_the_elements_grass",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:broken_sword_ofthe_elements",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_sword",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_sword",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_sword",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_incinerator",
+      "required": false
+    },
+    {
+      "id": "cataclysm:athame",
+      "required": false
+    },
+    {
+      "id": "cataclysm:tidal_claws",
+      "required": false
+    },
+    {
+      "id": "cataclysm:infernal_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:brontes",
+      "required": false
+    },
+    {
+      "id": "cataclysm:meat_shredder",
+      "required": false
+    },
+    {
+      "id": "cataclysm:gauntlet_of_guard",
+      "required": false
+    },
+    {
+      "id": "cataclysm:gauntlet_of_bulwark",
+      "required": false
+    },
+    {
+      "id": "cataclysm:gauntlet_of_maelstrom",
+      "required": false
+    },
+    {
+      "id": "cataclysm:soul_render",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_annihilator",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_immolator",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ancient_spear",
+      "required": false
+    },
+    {
+      "id": "cataclysm:astrape",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_sword",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ceraunus",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_sword",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_sword",
+      "required": false
+    },
+    "#pastel:swords",
+    {
+      "id": "avaritia:infinity_sword",
+      "required": false
+    },
+    {
+      "id": "avaritia:crystal_sword",
+      "required": false
+    },
+    {
+      "id": "avaritia:blaze_sword",
+      "required": false
+    },
+    {
+      "id": "alexscaves:limestone_spear",
+      "required": false
+    },
+    {
+      "id": "alexscaves:extinction_spear",
+      "required": false
+    },
+    {
+      "id": "alexscaves:ortholance",
+      "required": false
+    },
+    {
+      "id": "alexscaves:desolate_dagger",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ravaging_claws",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ironbound_gauntlet",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:basilisk_dagger",
+      "required": false
+    },
+    {
+      "id": "antarchy:big_bertha",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_katana",
+      "required": false
+    },
+    {
+      "id": "antarchy:mantis_claw",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_sword",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_sword",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_sword",
+      "required": false
+    },
+    "#anvilcraft:tools/heavy_halberd",
+    {
+      "id": "aquaculturedelight:neptunium_knife",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dagger",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:knight_sword",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:large_sword",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:warrior_sword",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:pirate_saber",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:carrot_sword",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:birch_branches",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:sweet_sword",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:intoxicating_dagger",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:spiritual_sword",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:sharpened_dark_metal_sword",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_ritual_dagger",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_scythe",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:soul_cutlass",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:darkwarblade",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:spider_bite_sword",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:icy_sweetness",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:skullbreaker_hammer",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:shell_mace",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:trident_hayfork",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:soulbane",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:frostbitten_blade",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nut_hammer",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:monster_flesh",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:smoked_monster_flesh",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:great_reaper_axe",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:monstrous_flamberge",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:hellfire_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm_tools:cursium_sword",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:angelic_judgement",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:doom_star",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:cursed_karma",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:abyssal_edge",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_sword",
+      "required": false
+    },
+    {
+      "id": "deepwaters:aquamarine_sword",
+      "required": false
+    },
+    {
+      "id": "deepwaters:jellyfish_staff",
+      "required": false
+    },
+    {
+      "id": "deepwaters:fopalsword",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:deep_greatsword",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:god_spear",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:ymir",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:ice_spear",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:ritual_dagger",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:forlorn_rapier",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:broken_legends_blade",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:forsaken_flamberge",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:snowgrave",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:cataclysm",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:devourer",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:mourning_star",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:cataclysm_awakened",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:devourer_awakened",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:mourning_star_awakened",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:soul_fire_scythe",
+      "required": false
+    },
+    {
+      "id": "enderio:dark_steel_sword",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:execution_axe",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:ender_slayer",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_sword",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fireblossom_rapier",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:draconic_splitter",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:firebrand",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:war_flaming_lance",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ravens_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:volcano",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ice_pike",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostburn_dagger",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:beongae",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:skyscorcher",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:bountiful_harvest",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:thorn_chakram",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blade_of_grass",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:vampire_knives",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:obsidian_claymore",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:starfury",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectrum",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:meowmere",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammush",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lights_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:true_nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammer_of_justice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:divine_greatsword",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hazens_excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur_divine_gold",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:malice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ancient_warriors_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_devourer",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:mage_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legionnaire_warlock_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:muramasa",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dawnmaker",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:copper_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_sword_fire",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_sword_ice",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_sword_lightning",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:hippogryph_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:stymphalian_bird_dagger",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ghost_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dread_queen_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dread_knight_sword",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dread_sword",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:magehunter",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:keeper_flamberge",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:spellbreaker",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:amethyst_rapier",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:claymore",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:misery",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:legionnaire_flamberge",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:decrepit_scythe",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:hellrazor",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:boreal_blade",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:twilight_gale",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:inquisitors_gauntlet",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:praetors_gauntlet",
+      "required": false
+    },
+    {
+      "id": "magitech:dagger",
+      "required": false
+    },
+    {
+      "id": "magitech:light_sword",
+      "required": false
+    },
+    {
+      "id": "magitech:heavy_sword",
+      "required": false
+    },
+    {
+      "id": "magitech:scythe",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_sword",
+      "required": false
+    },
+    {
+      "id": "malum:tyrving",
+      "required": false
+    },
+    {
+      "id": "#mythsandlegends:swords",
+      "required": false
+    },
+    {
+      "id": "omnitools:omni_vajra",
+      "required": false
+    },
+    {
+      "id": "oritech:chainsaw",
+      "required": false
+    },
+    {
+      "id": "oritech:promethium_axe",
+      "required": false
+    },
+    {
+      "id": "oritech:portable_laser",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:giant_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ice_sword",
+      "required": false
+    },
+    {
+      "id": "twilightforest:glass_sword",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:teardrop_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_sword",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_sword",
+      "required": false
+    }
+  ]
+}

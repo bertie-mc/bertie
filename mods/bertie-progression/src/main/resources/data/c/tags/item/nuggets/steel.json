@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:nugget_steel",
+      "required": false
+    }
+  ]
+}

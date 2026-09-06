@@ -1,0 +1,228 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "alexscaves:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_tunic",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_pants",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_mask",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hood_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cloak_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:galena_gauntlet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:resistor_shield",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primitive_club",
+      "required": false
+    },
+    {
+      "id": "alexscaves:extinction_spear",
+      "required": false
+    },
+    {
+      "id": "alexscaves:desolate_dagger",
+      "required": false
+    },
+    {
+      "id": "alexscaves:dreadbow",
+      "required": false
+    },
+    {
+      "id": "alexscaves:ortholance",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sea_staff",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sugar_staff",
+      "required": false
+    },
+    {
+      "id": "alexscaves:raygun",
+      "required": false
+    },
+    {
+      "id": "alexscaves:totem_of_possession",
+      "required": false
+    },
+    {
+      "id": "alexscaves:magic_conch",
+      "required": false
+    },
+    {
+      "id": "alexscaves:candy_cane_hook",
+      "required": false
+    },
+    {
+      "id": "alexscaves:shot_gum",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:crocodile_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:centipede_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_headgear",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:frontier_cap",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:sombrero",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:spiked_turtle_shell",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:fedora",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:froststalker_helmet",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:novelty_hat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:unsettling_kimono",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tarantula_hawk_elytra",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:skelewag_sword",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:ghostly_pickaxe",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multitool",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_acknowledgment",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_twist",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_bless",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_infinitum",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:infernal_shield",
+      "required": false
+    },
+    "#enigmaticlegacyplus:enchantable/eternal_binding",
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    "#minecraft:enchantable/durability",
+    {
+      "id": "minecraft:compass",
+      "required": false
+    },
+    {
+      "id": "minecraft:carved_pumpkin",
+      "required": false
+    },
+    "#minecraft:skulls"
+  ]
+}

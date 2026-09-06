@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "magitech:raw_zinc_block",
+      "required": false
+    }
+  ]
+}

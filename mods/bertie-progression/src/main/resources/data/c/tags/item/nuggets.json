@@ -1,0 +1,154 @@
+{
+  "replace": true,
+  "values": [
+    "#c:nuggets/neptunium",
+    "#c:nuggets/osmium",
+    "#c:nuggets/tin",
+    "#c:nuggets/lead",
+    "#c:nuggets/uranium",
+    "#c:nuggets/bronze",
+    "#c:nuggets/refined_glowstone",
+    "#c:nuggets/refined_obsidian",
+    "#c:nuggets/steel",
+    {
+      "id": "slag:rose_gold_nugget",
+      "required": false
+    },
+    "#c:nuggets/titanium",
+    {
+      "id": "anvilcraft:royal_steel_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:zinc_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:negative_matter_nugget",
+      "required": false
+    },
+    "#c:nuggets/gold",
+    "#c:nuggets/iron",
+    {
+      "id": "create:copper_nugget",
+      "required": false
+    },
+    {
+      "id": "create:brass_nugget",
+      "required": false
+    },
+    {
+      "id": "create:experience_nugget",
+      "required": false
+    },
+    "#c:nuggets/conductive_alloy",
+    "#c:nuggets/dark_steel",
+    "#c:nuggets/end_steel",
+    "#c:nuggets/energetic_alloy",
+    "#c:nuggets/pulsating_alloy",
+    "#c:nuggets/redstone_alloy",
+    "#c:nuggets/soularium",
+    "#c:nuggets/vibrant_alloy",
+    {
+      "id": "enigmaticlegacyplus:etherium_nugget",
+      "required": false
+    },
+    "#c:nuggets/deorum",
+    {
+      "id": "hazennstuff:pyrium_nugget",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:steel_nugget",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_nugget",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_nugget",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_nugget",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_nugget",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_nugget",
+      "required": false
+    },
+    {
+      "id": "malum:hallowed_gold_nugget",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_nugget",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_pewter_nugget",
+      "required": false
+    },
+    "#c:nuggets/naquadah",
+    {
+      "id": "oritech:nickel_nugget",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_nugget",
+      "required": false
+    },
+    "#c:nuggets/heavy_metal",
+    "#c:nuggets/plutonium",
+    "#c:nuggets/copper",
+    {
+      "id": "#forge:nuggets",
+      "required": false
+    }
+  ]
+}

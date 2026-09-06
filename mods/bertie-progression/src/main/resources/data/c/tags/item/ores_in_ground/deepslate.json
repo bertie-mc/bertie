@@ -1,0 +1,89 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:deepslate_tin_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "powah:deepslate_uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "powah:deepslate_uraninite_ore_dense",
+      "required": false
+    },
+    {
+      "id": "powah:deepslate_uraninite_ore_poor",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:deepslate_arcane_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:runic_deepslate",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:stella_arcanum",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:deepslate_mithril_ore",
+      "required": false
+    },
+    {
+      "id": "magitech:deepslate_tourmaline_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_coal_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "#forge:ores_in_ground/deepslate",
+      "required": false
+    }
+  ]
+}

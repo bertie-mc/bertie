@@ -1,0 +1,97 @@
+{
+  "replace": true,
+  "values": [
+    "#c:raw_materials/osmium",
+    "#c:raw_materials/tin",
+    "#c:raw_materials/lead",
+    "#c:raw_materials/uranium",
+    "#c:raw_materials/uraninite",
+    "#c:raw_materials/titanium",
+    {
+      "id": "anvilcraft:raw_tin",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_titanium",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_tungsten",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_lead",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_silver",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_uranium",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:raw_etherium",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:raw_zenalite",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:chlorophyte_chunk",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dreadstone",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:crude_metal",
+      "required": false
+    },
+    "#c:raw_materials/mithril",
+    {
+      "id": "magitech:raw_zinc",
+      "required": false
+    },
+    {
+      "id": "malum:raw_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:raw_brilliance",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold_fragment",
+      "required": false
+    },
+    "#c:raw_materials/naquadah",
+    {
+      "id": "oritech:raw_nickel",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_platinum",
+      "required": false
+    },
+    "#c:raw_materials/steel",
+    "#c:raw_materials/desh",
+    "#c:raw_materials/neptunium",
+    "#c:raw_materials/ironwood",
+    "#c:raw_materials/knightmetal",
+    "#c:raw_materials/copper",
+    "#c:raw_materials/gold",
+    "#c:raw_materials/iron",
+    {
+      "id": "#forge:raw_materials",
+      "required": false
+    }
+  ]
+}

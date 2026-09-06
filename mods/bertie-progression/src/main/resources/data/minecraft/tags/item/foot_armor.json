@@ -1,0 +1,352 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:expert_builder_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:apprentice_builder_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:novice_builder_armor_boots",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_boots",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_boots",
+      "required": false
+    },
+    {
+      "id": "betterend:crystalite_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_boots",
+      "required": false
+    },
+    {
+      "id": "mekanism:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "mekanism:mekasuit_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_boots",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_boots",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_boots",
+      "required": false
+    },
+    {
+      "id": "pastel:oread_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_boots",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_mantleofthe_night_boots",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_metal_armor_boots",
+      "required": false
+    },
+    {
+      "id": "create:copper_diving_boots",
+      "required": false
+    },
+    {
+      "id": "create:netherite_diving_boots",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_boots",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_boots",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_boots",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:draco_arcanus_boots",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:tyr_boots",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_boots",
+    "#hazentouvelib:armors/boots",
+    {
+      "id": "iceandfire:armor_amethyst_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_black_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_blue_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_bronze_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_metal_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_electric_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_gray_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_green_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_red_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_sapphire_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_metal_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_white_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_blue_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_bronze_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_deepblue_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_green_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_purple_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_red_boots",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_teal_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:bone_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:heavy_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:prismarine_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:warrior_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wither_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wooden_boots",
+      "required": false
+    },
+    "#irons_spellbooks:armors/boots",
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    {
+      "id": "malum:soul_hunter_boots",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_boots",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_stronghold_boots",
+      "required": false
+    },
+    {
+      "id": "#mythsandlegends:foot_armor",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:soul_sucker_boots",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_boots",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_boots",
+      "required": false
+    },
+    {
+      "id": "stellaris:jet_suit_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:chainmail_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_boots",
+      "required": false
+    }
+  ]
+}

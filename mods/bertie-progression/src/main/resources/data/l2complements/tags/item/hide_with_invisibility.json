@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "l2complements:shulkerate_axe",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_hoe",
+      "required": false
+    }
+  ]
+}

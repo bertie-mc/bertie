@@ -1,0 +1,37 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:lucky_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:tender_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:oblivion_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:resonant_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonrending_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_workstaff",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_workstaff",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:fluorite_gem",
+      "required": false
+    }
+  ]
+}

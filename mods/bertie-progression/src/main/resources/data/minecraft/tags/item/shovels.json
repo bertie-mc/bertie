@@ -1,0 +1,232 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:prismatic_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_hungery_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:unstable_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hollow_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_shovel",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_shovel",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_shovel",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_shovel",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_shovel",
+      "required": false
+    },
+    "#c:tools/paxel",
+    {
+      "id": "mekanismtools:bronze_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_shovel",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_shovel",
+      "required": false
+    },
+    "#pastel:shovels",
+    {
+      "id": "avaritia:infinity_shovel",
+      "required": false
+    },
+    {
+      "id": "avaritia:crystal_shovel",
+      "required": false
+    },
+    {
+      "id": "avaritia:blaze_shovel",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_shovel",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_shovel",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_shovel",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_shovel",
+      "required": false
+    },
+    "#anvilcraft:tools/resonator",
+    {
+      "id": "cataclysm_tools:ignitium_shovel",
+      "required": false
+    },
+    {
+      "id": "cataclysm_tools:cursium_shovel",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_shovel",
+      "required": false
+    },
+    {
+      "id": "deepwaters:aquamarine_shovel",
+      "required": false
+    },
+    {
+      "id": "deepwaters:fopalshovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_shovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:copper_shovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_shovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_shovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_shovel",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_shovel",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_shovel",
+      "required": false
+    },
+    {
+      "id": "magitech:shovel",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_shovel",
+      "required": false
+    },
+    {
+      "id": "omnitools:omni_vajra",
+      "required": false
+    },
+    {
+      "id": "oritech:hand_drill",
+      "required": false
+    },
+    {
+      "id": "oritech:promethium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_shovel",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_shovel",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_shovel",
+      "required": false
+    }
+  ]
+}

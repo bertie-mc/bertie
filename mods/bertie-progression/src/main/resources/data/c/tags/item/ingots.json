@@ -1,0 +1,260 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_ingot",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_alloy",
+      "required": false
+    },
+    "#c:ingots/osmium",
+    "#c:ingots/tin",
+    "#c:ingots/lead",
+    "#c:ingots/uranium",
+    "#c:ingots/bronze",
+    "#c:ingots/refined_glowstone",
+    "#c:ingots/refined_obsidian",
+    "#c:ingots/steel",
+    {
+      "id": "powah:steel_energized",
+      "required": false
+    },
+    {
+      "id": "slag:rose_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "slag:deep_alloy",
+      "required": false
+    },
+    "#c:ingots/titanium",
+    {
+      "id": "anvilcraft:magnet_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:stable_neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:charged_neutronium_ingot",
+      "required": false
+    },
+    "#create:create_ingots",
+    "#c:ingots/conductive_alloy",
+    "#c:ingots/dark_steel",
+    "#c:ingots/end_steel",
+    "#c:ingots/energetic_alloy",
+    "#c:ingots/pulsating_alloy",
+    "#c:ingots/redstone_alloy",
+    "#c:ingots/soularium",
+    "#c:ingots/vibrant_alloy",
+    {
+      "id": "enigmaticlegacyplus:etherium_ingot",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:evil_ingot",
+      "required": false
+    },
+    "#c:ingots/deorum",
+    "#c:ingots/obsidiansteel",
+    {
+      "id": "hazennstuff:zenalite_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:steel_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:rose_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dreadsteel_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:chlorophyte_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hallowed_ingot",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:demonite_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_ingot",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ghost_ingot",
+      "required": false
+    },
+    "#c:ingots/mithril",
+    "#c:ingots/pyrium",
+    {
+      "id": "irons_spellbooks:arcane_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_ingot",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:zinc_ingot",
+      "required": false
+    },
+    {
+      "id": "magitech:ender_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:hallowed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_pewter_ingot",
+      "required": false
+    },
+    "#c:ingots/naquadah",
+    {
+      "id": "oritech:nickel_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:prometheum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:duratium_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:electrum_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:adamant_ingot",
+      "required": false
+    },
+    {
+      "id": "oritech:energite_ingot",
+      "required": false
+    },
+    {
+      "id": "refinedstorage:quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "refinedstorage:quartz_enriched_copper",
+      "required": false
+    },
+    "#c:ingots/desh",
+    "#c:ingots/heavy_metal",
+    "#c:ingots/neptunium",
+    "#c:ingots/plutonium",
+    "#c:ingots/ironwood",
+    "#c:ingots/fiery",
+    "#c:ingots/knightmetal",
+    "#c:ingots/steeleaf",
+    "#c:ingots/copper",
+    "#c:ingots/gold",
+    "#c:ingots/iron",
+    "#c:ingots/netherite",
+    {
+      "id": "#forge:ingots",
+      "required": false
+    }
+  ]
+}

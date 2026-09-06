@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "magitech:zinc_ingot",
+      "required": false
+    }
+  ]
+}

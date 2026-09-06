@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_shovel",
+      "required": false
+    },
+    {
+      "id": "pastel:ferocious_glass_crest_bident",
+      "required": false
+    },
+    {
+      "id": "pastel:fractal_glass_crest_bident",
+      "required": false
+    }
+  ]
+}

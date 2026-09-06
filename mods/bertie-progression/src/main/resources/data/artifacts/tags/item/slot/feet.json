@@ -1,0 +1,37 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "artifacts:aqua_dashers",
+      "required": false
+    },
+    {
+      "id": "artifacts:bunny_hoppers",
+      "required": false
+    },
+    {
+      "id": "artifacts:kitty_slippers",
+      "required": false
+    },
+    {
+      "id": "artifacts:running_shoes",
+      "required": false
+    },
+    {
+      "id": "artifacts:snowshoes",
+      "required": false
+    },
+    {
+      "id": "artifacts:steadfast_spikes",
+      "required": false
+    },
+    {
+      "id": "artifacts:flippers",
+      "required": false
+    },
+    {
+      "id": "artifacts:strider_shoes",
+      "required": false
+    }
+  ]
+}

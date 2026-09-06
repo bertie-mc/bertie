@@ -1,0 +1,134 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:wooden_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:stone_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:iron_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:gold_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:diamond_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculture:neptunium_fillet_knife",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:flint_knife",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:iron_knife",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:diamond_knife",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:golden_knife",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:netherite_knife",
+      "required": false
+    },
+    {
+      "id": "aquaculturedelight:neptunium_knife",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_egg_shell_knife",
+      "required": false
+    },
+    {
+      "id": "ends_delight:end_stone_knife",
+      "required": false
+    },
+    {
+      "id": "ends_delight:purpur_knife",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_tooth_knife",
+      "required": false
+    },
+    {
+      "id": "#farmersknives:knives",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:abyssal_knife",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:ancient_knife",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:black_steel_knife",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:ignitium_knife",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:witherite_knife",
+      "required": false
+    },
+    {
+      "id": "lendersdelight:lacrima_anchor_knife",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_knife",
+      "required": false
+    },
+    {
+      "id": "malum:sundering_anchor",
+      "required": false
+    },
+    {
+      "id": "moredelight:wooden_knife",
+      "required": false
+    },
+    {
+      "id": "moredelight:stone_knife",
+      "required": false
+    },
+    "#dungeonsdelight:cleavers",
+    {
+      "id": "dungeonsdelight:stained_knife",
+      "required": false
+    },
+    {
+      "id": "trailandtales_delight:cherry_iron_knife",
+      "required": false
+    },
+    {
+      "id": "trailandtales_delight:sniffer_eggshell_knife",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:ironwood_knife",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:knightmetal_knife",
+      "required": false
+    }
+  ]
+}

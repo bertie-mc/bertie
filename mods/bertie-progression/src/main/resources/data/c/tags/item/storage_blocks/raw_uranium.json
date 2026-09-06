@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:raw_uranium_block",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "cognition:cognitive_flux",
+      "required": false
+    },
+    {
+      "id": "cognition:forgotten_dust",
+      "required": false
+    },
+    "#c:dusts/iron",
+    "#c:dusts/gold",
+    "#c:dusts/osmium",
+    "#c:dusts/copper",
+    "#c:dusts/tin",
+    "#c:dusts/lead",
+    "#c:dusts/uranium",
+    "#c:dusts/bronze",
+    "#c:dusts/charcoal",
+    "#c:dusts/coal",
+    "#c:dusts/diamond",
+    "#c:dusts/emerald",
+    "#c:dusts/netherite",
+    "#c:dusts/lapis",
+    "#c:dusts/lithium",
+    "#c:dusts/obsidian",
+    "#c:dusts/quartz",
+    "#c:dusts/refined_obsidian",
+    "#c:dusts/salt",
+    "#c:dusts/steel",
+    "#c:dusts/sulfur",
+    "#c:dusts/wood",
+    "#c:dusts/fluorite",
+    {
+      "id": "pastel:ash_flakes",
+      "required": false
+    },
+    {
+      "id": "pastel:quitoxic_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_dust",
+      "required": false
+    },
+    {
+      "id": "pastel:stardust",
+      "required": false
+    },
+    "#pastel:gemstone_powders",
+    "#c:dusts/ender_pearl",
+    "#c:dusts/prismarine",
+    "#c:dusts/grains_of_infinity",
+    "#c:dusts/grains_of_prescience",
+    "#c:dusts/grains_of_vibrancy",
+    "#c:dusts/grains_of_pizeallity",
+    "#c:dusts/grains_of_the_end",
+    {
+      "id": "enigmaticlegacyplus:infernal_cinder",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:astral_dust",
+      "required": false
+    },
+    "#c:dusts/cinnamon",
+    "#c:dusts/arcane_crystal",
+    "#c:dusts/mundabitur",
+    "#c:dusts/corrupti",
+    "#c:dusts/naquadah",
+    "#c:dusts/radiance",
+    {
+      "id": "oritech:nickel_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:duratium_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:electrum_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:adamant_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:energite_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:uranium_dust",
+      "required": false
+    },
+    {
+      "id": "oritech:plutonium_dust",
+      "required": false
+    },
+    "#c:dusts/glowstone",
+    "#c:dusts/redstone",
+    {
+      "id": "#forge:dusts",
+      "required": false
+    }
+  ]
+}

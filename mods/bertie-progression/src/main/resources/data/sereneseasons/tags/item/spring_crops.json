@@ -1,0 +1,62 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    "#sereneseasons:year_round_crops",
+    {
+      "id": "minecraft:birch_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:azalea",
+      "required": false
+    },
+    {
+      "id": "minecraft:flowering_azalea",
+      "required": false
+    },
+    {
+      "id": "minecraft:sweet_berries",
+      "required": false
+    },
+    {
+      "id": "minecraft:bamboo",
+      "required": false
+    },
+    {
+      "id": "minecraft:carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:potato",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:asparagus_seeds",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:peanut",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:basil",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tea_seeds",
+      "required": false
+    }
+  ]
+}

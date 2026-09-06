@@ -1,0 +1,194 @@
+{
+  "replace": true,
+  "values": [
+    "#c:ores/tin",
+    "#c:ores/osmium",
+    "#c:ores/uranium",
+    "#c:ores/fluorite",
+    "#c:ores/lead",
+    "#pastel:ores",
+    "#c:ores/uraninite",
+    "#c:ores/uraninite_regular",
+    "#c:ores/uraninite_poor",
+    "#c:ores/uraninite_dense",
+    "#c:ores/coal",
+    "#c:ores/titanium",
+    {
+      "id": "anvilcraft:deepslate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:deepslate_titanium_ore",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:deepslate_tungsten_ore",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:deepslate_silver_ore",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:void_stone",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:earth_core_shard_ore",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_coal_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_iron_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_copper_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_gold_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sculk_stone_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_coal_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_copper_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_redstone_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_lapis_ore",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:gloomslate_diamond_ore",
+      "required": false
+    },
+    "#c:ores/salt",
+    "#c:ores/arcane_crystal",
+    "#c:ores/runic",
+    "#c:ores/stellarite",
+    {
+      "id": "hazennstuff:raw_zenalite",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:chlorophyte_chunk",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dreadstone",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:solar_core",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:rose_quartz",
+      "required": false
+    },
+    "#c:ores/mithril",
+    {
+      "id": "magitech:tourmaline_ore",
+      "required": false
+    },
+    {
+      "id": "magitech:deepslate_tourmaline_ore",
+      "required": false
+    },
+    {
+      "id": "malum:soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "malum:deepslate_soulstone_ore",
+      "required": false
+    },
+    {
+      "id": "malum:brilliant_stone",
+      "required": false
+    },
+    {
+      "id": "malum:brilliant_deepslate",
+      "required": false
+    },
+    {
+      "id": "malum:blazing_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "malum:natural_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "malum:deepslate_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold_ore",
+      "required": false
+    },
+    "#c:ores/naquadah",
+    "#c:ores/desh",
+    "#c:ores/ice_shard",
+    "#c:ores/neptunium",
+    "#c:ores/ostrum",
+    "#c:ores/plutonium",
+    "#c:ores/steel",
+    "#c:ores/copper",
+    "#c:ores/diamond",
+    "#c:ores/emerald",
+    "#c:ores/gold",
+    "#c:ores/iron",
+    "#c:ores/lapis",
+    "#c:ores/netherite_scrap",
+    "#c:ores/redstone",
+    "#c:ores/quartz",
+    {
+      "id": "#forge:ores",
+      "required": false
+    }
+  ]
+}

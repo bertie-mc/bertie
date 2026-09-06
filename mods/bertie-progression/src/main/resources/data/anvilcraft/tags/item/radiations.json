@@ -1,0 +1,37 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:uranium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_uranium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_nugget",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_uranium",
+      "required": false
+    }
+  ]
+}

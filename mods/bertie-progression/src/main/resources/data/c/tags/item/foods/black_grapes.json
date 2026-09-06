@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hearthandharvest:red_grapes",
+      "required": false
+    },
+    {
+      "id": "pamhc2crops:grapeitem",
+      "required": false
+    },
+    {
+      "id": "croptopia:grapes",
+      "required": false
+    }
+  ]
+}

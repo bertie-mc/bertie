@@ -1,0 +1,212 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_greaves",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_greaves",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:excelsius_greaves",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_boots",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:eldritch_warlock_greaves",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:crimson_stag_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_boots",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_boots",
+    "#hazentouvelib:armors/boots",
+    {
+      "id": "ice_and_fire_spellbooks:fire_dragon_priest_boots",
+      "required": false
+    },
+    {
+      "id": "ice_and_fire_spellbooks:ice_dragon_priest_boots",
+      "required": false
+    },
+    {
+      "id": "ice_and_fire_spellbooks:lightning_dragon_priest_boots",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:bedrock_warlock_greaves",
+      "required": false
+    },
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_boots",
+      "required": false
+    },
+    "#minecraft:foot_armor"
+  ]
+}

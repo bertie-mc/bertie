@@ -1,0 +1,82 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:atomic_disassembler",
+      "required": false
+    },
+    {
+      "id": "mekanism:meka_tool",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_pickaxe",
+      "required": false
+    },
+    "#pastel:pickaxes",
+    {
+      "id": "anvilcraft:royal_steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_hammer",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_pickaxe",
+      "required": false
+    }
+  ]
+}

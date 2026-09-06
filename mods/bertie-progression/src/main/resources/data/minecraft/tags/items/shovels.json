@@ -1,0 +1,49 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:voiderite_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:prismatic_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_hungery_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:unstable_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hollow_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_shovel",
+      "required": false
+    },
+    {
+      "id": "deepwaters:aquamarine_shovel",
+      "required": false
+    },
+    {
+      "id": "deepwaters:fopalshovel",
+      "required": false
+    }
+  ]
+}

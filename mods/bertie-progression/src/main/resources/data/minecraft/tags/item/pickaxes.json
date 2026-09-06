@@ -1,0 +1,320 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:unstable_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:prismatic_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:iron_colossus_arm",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_hungery_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hollow_pickaxe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_paxel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_pickaxe",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:infernal_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:brontes",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_pickaxe",
+      "required": false
+    },
+    "#c:tools/paxel",
+    {
+      "id": "mekanismtools:bronze_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_pickaxe",
+      "required": false
+    },
+    "#pastel:pickaxes",
+    {
+      "id": "avaritia:infinity_pickaxe",
+      "required": false
+    },
+    {
+      "id": "avaritia:crystal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "avaritia:blaze_pickaxe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_pickaxe",
+      "required": false
+    },
+    "#anvilcraft:tools/resonator",
+    {
+      "id": "cataclysm_tools:cursium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "cataclysm_tools:ignitium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deepwaters:aquamarine_pickaxe",
+      "required": false
+    },
+    {
+      "id": "deepwaters:fopalpick",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:draco_arcanus_pickaxe",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:reinforced_deorum_pickaxe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectral_pickaxe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe_divine_gold",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_pickaxe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:copper_pickaxe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_pickaxe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_pickaxe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "magitech:pickaxe",
+      "required": false
+    },
+    {
+      "id": "magitech:hammer",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "malum:spellweaving_pickaxe",
+      "required": false
+    },
+    {
+      "id": "omnitools:omni_vajra",
+      "required": false
+    },
+    {
+      "id": "oritech:hand_drill",
+      "required": false
+    },
+    {
+      "id": "oritech:promethium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "oritech:portable_laser",
+      "required": false
+    },
+    {
+      "id": "rustic_engineer:rustic_hammer",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mazebreaker_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:giant_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_pickaxe",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:silver_nugget",
+      "required": false
+    }
+  ]
+}

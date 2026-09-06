@@ -1,0 +1,85 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:tin_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_tin_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:osmium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_osmium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:uranium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:lead_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:deepslate_lead_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:ancient_debris",
+      "required": false
+    },
+    {
+      "id": "minecraft:coal_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_coal_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_emerald_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_gold_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:deepslate_iron_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:emerald_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_quartz_ore",
+      "required": false
+    },
+    {
+      "id": "#forge:ore_rates/singular",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "#c:foods/dough/wheat",
+    {
+      "id": "mynethersdelight:ghast_dough",
+      "required": false
+    },
+    {
+      "id": "#c:foods/doughs",
+      "required": false
+    }
+  ]
+}

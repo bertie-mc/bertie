@@ -1,0 +1,368 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:expert_builder_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:novice_builder_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:apprentice_builder_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_chestplate",
+      "required": false
+    },
+    {
+      "id": "betterend:crystalite_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_elytra_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bloom_stone_pauldrons",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanism:hazmat_gown",
+      "required": false
+    },
+    {
+      "id": "mekanism:mekasuit_bodyarmor",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_chestplate",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_chestplate",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_chestplate",
+      "required": false
+    },
+    {
+      "id": "pastel:ferocious_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_chestplate",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_bones_chestplate",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:spiny_shell_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_metal_armor_chestplate",
+      "required": false
+    },
+    {
+      "id": "create:copper_backtank",
+      "required": false
+    },
+    {
+      "id": "create:netherite_backtank",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_chestplate",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_chestplate",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_chestplate",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:draco_arcanus_chestplate",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:tyr_chestplate",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_chestplate",
+    "#hazentouvelib:armors/chestplates",
+    {
+      "id": "iceandfire:armor_amethyst_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_black_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_blue_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_bronze_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_metal_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_electric_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_gray_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_green_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_red_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_sapphire_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_metal_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_white_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_blue_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_bronze_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_deepblue_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_green_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_purple_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_red_chestplate",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_teal_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:bone_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:heavy_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:prismarine_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:warrior_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wither_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wooden_chestplate",
+      "required": false
+    },
+    "#irons_spellbooks:armors/chestplates",
+    {
+      "id": "malum:soul_hunter_robe",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_chestplate",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_stronghold_chestplate",
+      "required": false
+    },
+    {
+      "id": "#mythsandlegends:chest_armor",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack_elytra",
+      "required": false
+    },
+    {
+      "id": "oritech:jetpack_exo_elytra",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_jetpack",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_chestplate",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_chestplate",
+      "required": false
+    },
+    {
+      "id": "stellaris:jet_suit_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:chainmail_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_chestplate",
+      "required": false
+    }
+  ]
+}

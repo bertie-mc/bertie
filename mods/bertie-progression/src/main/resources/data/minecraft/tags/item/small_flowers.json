@@ -1,0 +1,177 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:wild_carrots",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wild_potatoes",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wild_beetroots",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wild_cabbages",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wild_tomatoes",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:wild_onions",
+      "required": false
+    },
+    {
+      "id": "pastel:resonant_lily",
+      "required": false
+    },
+    {
+      "id": "pastel:amaranth_bushel",
+      "required": false
+    },
+    {
+      "id": "pastel:blood_orchid",
+      "required": false
+    },
+    {
+      "id": "pastel:doombloom_seed",
+      "required": false
+    },
+    {
+      "id": "pastel:sweet_pea",
+      "required": false
+    },
+    {
+      "id": "pastel:apricotti",
+      "required": false
+    },
+    {
+      "id": "pastel:humming_bell",
+      "required": false
+    },
+    {
+      "id": "minecraft:open_eyeblossom",
+      "required": false
+    },
+    {
+      "id": "minecraft:closed_eyeblossom",
+      "required": false
+    },
+    {
+      "id": "antarchy:lotus",
+      "required": false
+    },
+    {
+      "id": "antarchy:spider_lily",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:growth_totem",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:river_mint",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:lily_flower",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:wild_asparagus",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:wild_sweet_potato",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:wild_chili_pepper",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:wild_peanuts",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:yellow_orchid",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_lily",
+      "required": false
+    },
+    {
+      "id": "iceandfire:frost_lily",
+      "required": false
+    },
+    {
+      "id": "iceandfire:lightning_lily",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thorn_rose",
+      "required": false
+    },
+    {
+      "id": "minecraft:dandelion",
+      "required": false
+    },
+    {
+      "id": "minecraft:poppy",
+      "required": false
+    },
+    {
+      "id": "minecraft:blue_orchid",
+      "required": false
+    },
+    {
+      "id": "minecraft:allium",
+      "required": false
+    },
+    {
+      "id": "minecraft:azure_bluet",
+      "required": false
+    },
+    {
+      "id": "minecraft:red_tulip",
+      "required": false
+    },
+    {
+      "id": "minecraft:orange_tulip",
+      "required": false
+    },
+    {
+      "id": "minecraft:white_tulip",
+      "required": false
+    },
+    {
+      "id": "minecraft:pink_tulip",
+      "required": false
+    },
+    {
+      "id": "minecraft:oxeye_daisy",
+      "required": false
+    },
+    {
+      "id": "minecraft:cornflower",
+      "required": false
+    },
+    {
+      "id": "minecraft:lily_of_the_valley",
+      "required": false
+    },
+    {
+      "id": "minecraft:wither_rose",
+      "required": false
+    },
+    {
+      "id": "minecraft:torchflower",
+      "required": false
+    }
+  ]
+}

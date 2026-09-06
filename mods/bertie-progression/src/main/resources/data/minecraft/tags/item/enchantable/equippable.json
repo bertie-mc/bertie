@@ -1,0 +1,255 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "betterend:elytra_armored",
+      "required": false
+    },
+    {
+      "id": "betterend:elytra_crystalite",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_elytra",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_tunic",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_pants",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_mask",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hood_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cloak_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:galena_gauntlet",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:crocodile_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:centipede_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_headgear",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:frontier_cap",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:sombrero",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:spiked_turtle_shell",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:fedora",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:froststalker_helmet",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:novelty_hat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:unsettling_kimono",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tarantula_hawk_elytra",
+      "required": false
+    },
+    {
+      "id": "antarchy:battle_axe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_bow",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_crossbow",
+      "required": false
+    },
+    {
+      "id": "antarchy:brutalfly_elytra",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    "#minecraft:foot_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:chest_armor",
+    "#minecraft:head_armor",
+    {
+      "id": "cataclysm_spellbooks:ignis_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_skirt",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_mask",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_circlet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_elytra",
+      "required": false
+    },
+    {
+      "id": "darkermagic:whispers_staff",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:soul_elytra",
+      "required": false
+    },
+    "#minecraft:enchantable/armor",
+    {
+      "id": "enigmaticlegacyplus:majestic_elytra",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:chaos_elytra",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_helmet",
+    "#hazennstuff:armors/hns_chestplate",
+    "#hazennstuff:armors/hns_leggings",
+    "#hazennstuff:armors/hns_boots",
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    {
+      "id": "minecraft:elytra",
+      "required": false
+    },
+    "#minecraft:skulls",
+    {
+      "id": "minecraft:carved_pumpkin",
+      "required": false
+    }
+  ]
+}

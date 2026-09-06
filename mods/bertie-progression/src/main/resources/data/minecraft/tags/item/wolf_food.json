@@ -1,0 +1,47 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mynethersdelight:hotdog",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_pie_slice",
+      "required": false
+    },
+    "#c:crops/cave_carrot",
+    {
+      "id": "minersdelight:smoked_bat_wing",
+      "required": false
+    },
+    {
+      "id": "minersdelight:bat_cookie",
+      "required": false
+    },
+    {
+      "id": "minersdelight:spider_leg",
+      "required": false
+    },
+    {
+      "id": "minersdelight:baked_spider_leg",
+      "required": false
+    },
+    "#minecraft:meat"
+  ]
+}

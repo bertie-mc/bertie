@@ -1,0 +1,433 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "twilightdelight:hydra_piece",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:raw_venison_rib",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:cooked_venison_rib",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:raw_meef_slice",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:cooked_meef_slice",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:raw_tomahawk_smeak",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:cooked_tomahawk_smeak",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:raw_insect",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:cooked_insect",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:experiment_113",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:chocolate_113",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:milky_113",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:glow_113",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:honey_113",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:experiment_110",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:meef_wrap",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:ghast_burger",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:hydra_burger",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:glow_venison_rib_with_pasta",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:mushgloom_meef_pasta",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:liveroot_pork_fried_rice",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:liveroot_venison_noodle_soup",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:torchberry_venison_sandwich",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:fried_insect",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:grilled_ghast",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:grilled_tomahawk_smeak",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:ghast_brain_salad",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:plate_of_lily_chicken",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:plate_of_meef_wellington",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_lamprey",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roasted_lamprey",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_lamprey_fillet",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roasted_lamprey_fillet",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_tuna",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:seared_tuna",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_tuna_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:seared_tuna_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:otoro",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:steamed_crab",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:crab_meat",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:crab_roe",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_boarchop",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_boarchop",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_boarchop_bits",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_boarchop_bits",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roe",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:oily_bean_curd",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:imitation_crab",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tamagoyaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tamagoyaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:nattou",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:pork_rice_ball",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:steamed_egg_in_bamboo",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:kabayaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lamprey_skewer",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:blazing_red_curry",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_eel_over_rice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:longevity_noodles",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:shirayuki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:han_palace",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu_crab_stew",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tuscan_salmon",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lions_head",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:mapo_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tobiko_gunkan",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:nattou_gunkan",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lorelei_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tuna_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:otoro_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tekka_maki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tekka_maki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_futomaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_futomaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:salmon_futomaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:salmon_futomaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_futomaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_futomaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:california_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:california_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roe_california_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roe_california_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:salmon_lover_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:salmon_lover_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:volcano_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:volcano_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:seafood_miso_soup",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:power_soup",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:potato_soup",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:hokkaido_salmon_hotpot",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_rice_powder_pork",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rice_powder_pork",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_kaguya_hime",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:kaguya_hime",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:dried_fish",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_imitation_bear_paw",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:imitation_bear_paw",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:pastitsio",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:sauce_grilled_fish",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:stinky_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu_burger",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:cold_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:cumberland_loin",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tomato_sauce_cod",
+      "required": false
+    }
+  ]
+}

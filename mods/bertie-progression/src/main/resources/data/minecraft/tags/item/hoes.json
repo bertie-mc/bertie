@@ -1,0 +1,211 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:prismatic_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_hoe",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_hoe",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_hoe",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_hoe",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_hoe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_hoe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_hoe",
+      "required": false
+    },
+    "#pastel:hoes",
+    {
+      "id": "avaritia:infinity_hoe",
+      "required": false
+    },
+    {
+      "id": "avaritia:crystal_hoe",
+      "required": false
+    },
+    {
+      "id": "avaritia:blaze_hoe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_hoe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_hoe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_hoe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_hoe",
+      "required": false
+    },
+    "#anvilcraft:tools/resonator",
+    {
+      "id": "magitech:scythe",
+      "required": false
+    },
+    {
+      "id": "cataclysm_tools:cursium_hoe",
+      "required": false
+    },
+    {
+      "id": "cataclysm_tools:ignitium_hoe",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_hoe",
+      "required": false
+    },
+    {
+      "id": "deepwaters:manowar_hoe",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_scythe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_hoe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:copper_hoe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_hoe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_hoe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_hoe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_hoe",
+      "required": false
+    },
+    {
+      "id": "l2complements:totemic_gold_hoe",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_hoe",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_hoe",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_hoe",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_hoe",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_hoe",
+      "required": false
+    },
+    {
+      "id": "omnitools:omni_vajra",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_hoe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_hoe",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_hoe",
+      "required": false
+    }
+  ]
+}

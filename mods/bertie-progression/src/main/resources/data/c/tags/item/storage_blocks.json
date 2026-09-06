@@ -1,0 +1,518 @@
+{
+  "replace": true,
+  "values": [
+    "#c:storage_blocks/neptunium",
+    "#c:storage_blocks/carrot",
+    "#c:storage_blocks/potato",
+    "#c:storage_blocks/beetroot",
+    "#c:storage_blocks/cabbage",
+    "#c:storage_blocks/tomato",
+    "#c:storage_blocks/onion",
+    "#c:storage_blocks/rice",
+    "#c:storage_blocks/rice_panicle",
+    "#c:storage_blocks/straw",
+    "#c:storage_blocks/bronze",
+    "#c:storage_blocks/charcoal",
+    "#c:storage_blocks/refined_glowstone",
+    "#c:storage_blocks/refined_obsidian",
+    "#c:storage_blocks/steel",
+    "#c:storage_blocks/fluorite",
+    "#c:storage_blocks/osmium",
+    "#c:storage_blocks/raw_osmium",
+    "#c:storage_blocks/tin",
+    "#c:storage_blocks/raw_tin",
+    "#c:storage_blocks/lead",
+    "#c:storage_blocks/raw_lead",
+    "#c:storage_blocks/uranium",
+    "#c:storage_blocks/raw_uranium",
+    "#pastel:gemstone_storage_blocks",
+    {
+      "id": "pastel:malachite_block",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_block",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:vegetal_block",
+      "required": false
+    },
+    {
+      "id": "pastel:stardust_block",
+      "required": false
+    },
+    {
+      "id": "powah:uraninite_block",
+      "required": false
+    },
+    "#c:storage_blocks/sugar_cane",
+    "#c:storage_blocks/cactus",
+    "#c:storage_blocks/chorus_fruit",
+    "#c:storage_blocks/stick",
+    "#c:storage_blocks/apple",
+    "#c:storage_blocks/golden_apple",
+    "#c:storage_blocks/golden_carrot",
+    "#c:storage_blocks/cocoa_beans",
+    "#c:storage_blocks/nether_wart",
+    "#c:storage_blocks/gunpowder",
+    "#c:storage_blocks/sweet_berries",
+    "#c:storage_blocks/glow_berries",
+    "#c:storage_blocks/blaze_rod",
+    "#c:storage_blocks/leather",
+    "#c:storage_blocks/rabbit_hide",
+    {
+      "id": "slag:rose_gold_block",
+      "required": false
+    },
+    {
+      "id": "slag:deep_alloy_block",
+      "required": false
+    },
+    "#c:storage_blocks/titanium",
+    "#c:storage_blocks/raw_titanium",
+    {
+      "id": "anvilcraft:magnet_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:topaz_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ruby_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sapphire_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:resin_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:amber_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:black_chocolate_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:white_chocolate_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_titanium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_tungsten_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_lead_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_silver_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_uranium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:void_matter_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:earth_core_shard_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multiphase_matter_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:negative_matter_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sugar_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:gunpowder_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:rotten_flesh_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:flint_block",
+      "required": false
+    },
+    {
+      "id": "create:zinc_block",
+      "required": false
+    },
+    {
+      "id": "create:andesite_alloy_block",
+      "required": false
+    },
+    {
+      "id": "create:brass_block",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_block",
+      "required": false
+    },
+    {
+      "id": "create:experience_block",
+      "required": false
+    },
+    "#c:storage_blocks/amethyst",
+    "#c:storage_blocks/quartz",
+    "#c:storage_blocks/conductive_alloy",
+    "#c:storage_blocks/dark_steel",
+    "#c:storage_blocks/end_steel",
+    "#c:storage_blocks/energetic_alloy",
+    "#c:storage_blocks/pulsating_alloy",
+    "#c:storage_blocks/redstone_alloy",
+    "#c:storage_blocks/soularium",
+    "#c:storage_blocks/vibrant_alloy",
+    {
+      "id": "endersdelight:chorus_crate",
+      "required": false
+    },
+    "#c:storage_blocks/deorum",
+    "#c:storage_blocks/arcane_crystal",
+    "#c:storage_blocks/corrupted_arcane_crystal",
+    "#c:storage_blocks/stellarite",
+    "#c:storage_blocks/obsidiansteel",
+    "#c:storage_blocks/rotten_flesh",
+    "#c:storage_blocks/bone",
+    "#c:storage_blocks/phantom_membrane",
+    "#c:storage_blocks/cobweb",
+    "#c:storage_blocks/spider_eye",
+    "#c:storage_blocks/fermented_spider_eye",
+    "#c:storage_blocks/poisonous_potato",
+    "#c:storage_blocks/rotten_tomato",
+    {
+      "id": "l2complements:totemic_gold_block",
+      "required": false
+    },
+    {
+      "id": "l2complements:poseidite_block",
+      "required": false
+    },
+    {
+      "id": "l2complements:shulkerate_block",
+      "required": false
+    },
+    {
+      "id": "l2complements:sculkium_block",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternium_block",
+      "required": false
+    },
+    {
+      "id": "magitech:raw_zinc_block",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_raw_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_brilliance",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_arcane_charcoal",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_blazing_quartz",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_cthonic_gold",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_rotting_essence",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_grim_talc",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_astral_weave",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_warp_flux",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_hex_ash",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_living_flesh",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_alchemical_calx",
+      "required": false
+    },
+    {
+      "id": "malum:mass_of_blighted_gunk",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_null_slate",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_void_salts",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_mnemonic_fragment",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_auric_embers",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_malignant_lead",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_soul_stained_steel",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_hallowed_gold",
+      "required": false
+    },
+    {
+      "id": "malum:block_of_malignant_pewter",
+      "required": false
+    },
+    "#c:storage_blocks/naquadah",
+    "#c:storage_blocks/raw_naquadah",
+    {
+      "id": "oritech:energite_block",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_block",
+      "required": false
+    },
+    {
+      "id": "oritech:adamant_block",
+      "required": false
+    },
+    {
+      "id": "oritech:electrum_block",
+      "required": false
+    },
+    {
+      "id": "oritech:duratium_block",
+      "required": false
+    },
+    {
+      "id": "oritech:biomass_block",
+      "required": false
+    },
+    {
+      "id": "oritech:plastic_block",
+      "required": false
+    },
+    {
+      "id": "oritech:fluxite_block",
+      "required": false
+    },
+    {
+      "id": "oritech:silicon_block",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_nickel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:uranium_dust_block",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_platinum_block",
+      "required": false
+    },
+    "#c:storage_blocks/desh",
+    "#c:storage_blocks/heavy_metal",
+    "#c:storage_blocks/raw_desh",
+    "#c:storage_blocks/raw_steel",
+    "#c:storage_blocks/fiery",
+    "#c:storage_blocks/arctic_fur",
+    "#c:storage_blocks/carminite",
+    "#c:storage_blocks/ironwood",
+    "#c:storage_blocks/knightmetal",
+    "#c:storage_blocks/steeleaf",
+    {
+      "id": "twilightdelight:torchberries_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:cucumber_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:red_grape_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:black_grape_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:white_grape_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:pod_crate",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:soybean_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:redbean_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tea_leaf_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:black_tea_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:green_tea_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:oolong_tea_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:white_tea_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:dark_tea_bag",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:yellow_tea_bag",
+      "required": false
+    },
+    "#c:storage_blocks/bone_meal",
+    "#c:storage_blocks/coal",
+    "#c:storage_blocks/copper",
+    "#c:storage_blocks/diamond",
+    "#c:storage_blocks/dried_kelp",
+    "#c:storage_blocks/emerald",
+    "#c:storage_blocks/gold",
+    "#c:storage_blocks/iron",
+    "#c:storage_blocks/lapis",
+    "#c:storage_blocks/netherite",
+    "#c:storage_blocks/raw_copper",
+    "#c:storage_blocks/raw_gold",
+    "#c:storage_blocks/raw_iron",
+    "#c:storage_blocks/redstone",
+    "#c:storage_blocks/slime",
+    "#c:storage_blocks/wheat",
+    {
+      "id": "#forge:storage_blocks",
+      "required": false
+    }
+  ]
+}

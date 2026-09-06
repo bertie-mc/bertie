@@ -1,0 +1,617 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:fishing_line",
+      "required": false
+    },
+    {
+      "id": "aquaculture:bobber",
+      "required": false
+    },
+    {
+      "id": "minecraft:item_frame",
+      "required": false
+    },
+    {
+      "id": "quark:backpack",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:monstrous_wizard_hat",
+      "required": false
+    },
+    {
+      "id": "etched:blank_music_disc",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:chess_board_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_cover_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dark_lord_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dead_gladiator_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:dragonslayer_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:evening_ghost_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:flesh_of_the_feaster_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:gilded_hunt_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_execution_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:golden_horns_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:grave_sentinel_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:hero_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:lady_maria_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:malenia_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:old_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ronin_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:silver_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:spark_of_dawn_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:sunset_wings_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:twinned_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wandering_wizard_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:ornstein_boots",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_chestplate",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_leggings",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_boots",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wizard_boots",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wizard_leggings",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wizard_chestplate",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wizard_helmet",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wizard_hat",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:netherite_mage_boots",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:netherite_mage_leggings",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:netherite_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:netherite_mage_helmet",
+      "required": false
+    },
+    {
+      "id": "malum:ether",
+      "required": false
+    },
+    {
+      "id": "malum:ether_torch",
+      "required": false
+    },
+    {
+      "id": "malum:tainted_ether_brazier",
+      "required": false
+    },
+    {
+      "id": "malum:twisted_ether_brazier",
+      "required": false
+    },
+    {
+      "id": "malum:iridescent_ether",
+      "required": false
+    },
+    {
+      "id": "malum:iridescent_ether_torch",
+      "required": false
+    },
+    {
+      "id": "malum:tainted_iridescent_ether_brazier",
+      "required": false
+    },
+    {
+      "id": "malum:twisted_iridescent_ether_brazier",
+      "required": false
+    },
+    {
+      "id": "simplymore:matterbane",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_helmet",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_chestplate",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_chestplate",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_leggings",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_boots",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_horse_armor",
+      "required": false
+    },
+    {
+      "id": "minecraft:wolf_armor",
+      "required": false
+    }
+  ]
+}

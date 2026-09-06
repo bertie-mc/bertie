@@ -1,0 +1,1199 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:iron_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:gold_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:diamond_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:neptunium_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:neptunium_bow",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_corrupted_tear",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:rift_anchor",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:fiery_wither_skull",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:wanderers_fallen_shard",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:strange_alloy",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sleepy_emerald_totem",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_sun_emblem",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:void_fragment",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:builder_stone",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:absorbtion_stone",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:iron_remote",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:cocoon_of_blood",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:emerald_totem",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:strange_coin",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_key_of_doom",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:goblin_lord_treasure_bag",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sigil_of_calamity",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:wither_skull_no",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:titan_insigna",
+      "required": false
+    },
+    {
+      "id": "betterend:elytra_armored",
+      "required": false
+    },
+    {
+      "id": "betterend:elytra_crystalite",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_shears",
+      "required": false
+    },
+    {
+      "id": "cognition:flint_and_cognitive_alloy",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_rod",
+      "required": false
+    },
+    "#farmersdelight:tools/knives",
+    {
+      "id": "farmersdelight:skillet",
+      "required": false
+    },
+    "#hangglider:hang_gliders",
+    {
+      "id": "illagerinvasion:platinum_infused_hatchet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_targe",
+      "required": false
+    },
+    {
+      "id": "cataclysm:coral_spear",
+      "required": false
+    },
+    {
+      "id": "cataclysm:coral_bardiche",
+      "required": false
+    },
+    {
+      "id": "cataclysm:azure_sea_shield",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_elytra",
+      "required": false
+    },
+    "#c:tools/paxel",
+    {
+      "id": "mekanismtools:bronze_shield",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_shield",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_shield",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_shield",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_shield",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_shield",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_splice",
+      "required": false
+    },
+    "#quark:pickarangs",
+    {
+      "id": "wings_of_fire:tempered_gilded_phoenixlantern",
+      "required": false
+    },
+    {
+      "id": "wings_of_fire:tempered_dark_phoenixlantern",
+      "required": false
+    },
+    {
+      "id": "wings_of_fire:tempered_nature_phoenix_lantern",
+      "required": false
+    },
+    {
+      "id": "wings_of_fire:tempered_red_phoenix_lantern",
+      "required": false
+    },
+    {
+      "id": "wings_of_fire:tempered_wind_phoenix_lantern",
+      "required": false
+    },
+    {
+      "id": "wings_of_fire:tempered_fire_phoenix_lantern",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_tunic",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_pants",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_mask",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hazmat_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_helmet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_leggings",
+      "required": false
+    },
+    {
+      "id": "alexscaves:diving_boots",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hood_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cloak_of_darkness",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primitive_club",
+      "required": false
+    },
+    {
+      "id": "alexscaves:extinction_spear",
+      "required": false
+    },
+    {
+      "id": "alexscaves:galena_gauntlet",
+      "required": false
+    },
+    {
+      "id": "alexscaves:resistor_shield",
+      "required": false
+    },
+    {
+      "id": "alexscaves:raygun",
+      "required": false
+    },
+    {
+      "id": "alexscaves:magic_conch",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sea_staff",
+      "required": false
+    },
+    {
+      "id": "alexscaves:ortholance",
+      "required": false
+    },
+    {
+      "id": "alexscaves:totem_of_possession",
+      "required": false
+    },
+    {
+      "id": "alexscaves:desolate_dagger",
+      "required": false
+    },
+    {
+      "id": "alexscaves:dreadbow",
+      "required": false
+    },
+    {
+      "id": "alexscaves:shot_gum",
+      "required": false
+    },
+    {
+      "id": "alexscaves:candy_cane_hook",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sugar_staff",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:crocodile_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:centipede_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_headgear",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:frontier_cap",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:sombrero",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:spiked_turtle_shell",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_leggings",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:fedora",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:froststalker_helmet",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rocky_chestplate",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish_boots",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:novelty_hat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:unsettling_kimono",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tarantula_hawk_elytra",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:skelewag_sword",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:ghostly_pickaxe",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:blood_sprayer",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:pocket_sand",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:hemolymph_blaster",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:straddleboard",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:dimensional_carver",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:shattered_dimensional_carver",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:shield_of_the_deep",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:squid_grapple",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:echolocator",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:endolocator",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:pupfish_locator",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:tendon_whip",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:stink_ray",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_axe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_pickaxe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_shovel",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_hoe",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:battle_axe",
+      "required": false
+    },
+    {
+      "id": "antarchy:big_bertha",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_sword",
+      "required": false
+    },
+    {
+      "id": "antarchy:basilisk_dagger",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_bow",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_crossbow",
+      "required": false
+    },
+    {
+      "id": "antarchy:brutalfly_elytra",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:moggles",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_katana",
+      "required": false
+    },
+    {
+      "id": "antarchy:mantis_claw",
+      "required": false
+    },
+    {
+      "id": "antarchy:krakens_grasp",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:fallen_king_crown",
+      "required": false
+    },
+    {
+      "id": "antarchy:water_cannon",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:anvil_hammer",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_anvil_hammer",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_anvil_hammer",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendence_anvil_hammer",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:dragon_rod",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_dragon_rod",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_dragon_rod",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendence_dragon_rod",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_heavy_halberd",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_heavy_halberd",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendence_heavy_halberd",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_resonator",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_resonator",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendence_resonator",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multitool",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:spectral_slingshot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:magnet",
+      "required": false
+    },
+    {
+      "id": "#c:tools/brush",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:iron_brush",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:diamond_brush",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:netherite_brush",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:ice_gauntlet",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken_trident",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:stormcallers_horn",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:charmof_fury",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:charmof_endurance",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:charmof_stealth",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:charmof_resistance",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:charmof_power",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:staffof_blindness",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:staff_of_magic_arrows",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:bonescaller_staff",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:pumpkinstaffa",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:pumpkinhandgun",
+      "required": false
+    },
+    {
+      "id": "burnt:extinguisher",
+      "required": false
+    },
+    "#minecraft:foot_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:chest_armor",
+    "#minecraft:head_armor",
+    "#minecraft:swords",
+    {
+      "id": "cataclysm_spellbooks:ignis_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_skirt",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_mask",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_circlet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:ignis_chestplate_elytra",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:abyssal_warlock_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_elytra",
+      "required": false
+    },
+    {
+      "id": "create:super_glue",
+      "required": false
+    },
+    {
+      "id": "create:potato_cannon",
+      "required": false
+    },
+    {
+      "id": "create:extendo_grip",
+      "required": false
+    },
+    "#create:sandpaper",
+    {
+      "id": "darkermagic:warden_mage_helmet",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_leggings",
+      "required": false
+    },
+    {
+      "id": "darkermagic:warden_mage_boots",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:soul_elytra",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:sonorous_staff",
+      "required": false
+    },
+    "#minecraft:enchantable/armor",
+    {
+      "id": "enigmaticlegacyplus:infernal_shield",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_hammer",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:dragon_breath_bow",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:majestic_elytra",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:chaos_elytra",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_helmet",
+    "#hazennstuff:armors/hns_chestplate",
+    "#hazennstuff:armors/hns_leggings",
+    "#hazennstuff:armors/hns_boots",
+    {
+      "id": "hazennstuff:fireblossom_rapier",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:draconic_splitter",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:firebrand",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:war_flaming_lance",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ravens_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:volcano",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ice_pike",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostburn_dagger",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:beongae",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:skyscorcher",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_dormant",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t1",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t2",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ionic_splitter_t3",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:bountiful_harvest",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:thorn_chakram",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blade_of_grass",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:vampire_knives",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:obsidian_claymore",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:starfury",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectrum",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:meowmere",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammush",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:soul_reaper",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lights_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:true_nights_edge",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:astralite_cleaver",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:tidal_wave",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hammer_of_justice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:divine_greatsword",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hazens_excalibur",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:excalibur_divine_gold",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:malice",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ancient_warriors_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_devourer",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:mage_bane",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legionnaire_warlock_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:muramasa",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dawnmaker",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spectral_pickaxe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:pickaxe_axe_divine_gold",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_axe",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_column",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_column_forest",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_column_frost",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_hammer",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_trunk",
+      "required": false
+    },
+    {
+      "id": "iceandfire:troll_weapon_trunk_frost",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_trident",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonbone_bow",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:autoloader_crossbow",
+      "required": false
+    },
+    {
+      "id": "l2complements:reinforced_warp_stone",
+      "required": false
+    },
+    {
+      "id": "l2complements:sonic_shooter",
+      "required": false
+    },
+    {
+      "id": "l2complements:hellfire_wand",
+      "required": false
+    },
+    {
+      "id": "l2complements:winterstorm_wand",
+      "required": false
+    },
+    {
+      "id": "l2hostility:pocket_of_restoration",
+      "required": false
+    },
+    {
+      "id": "magitech:aether_lifter",
+      "required": false
+    },
+    {
+      "id": "magitech:flamglide_strider",
+      "required": false
+    },
+    "#malum:scythe",
+    "#malum:staff",
+    {
+      "id": "malum:catalyst_lobber",
+      "required": false
+    },
+    {
+      "id": "malum:sundering_anchor",
+      "required": false
+    },
+    "#dungeonsdelight:cleavers",
+    {
+      "id": "dungeonsdelight:rot_and_steel",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:lava_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "oritech:electric_mace",
+      "required": false
+    },
+    {
+      "id": "oritech:wrench",
+      "required": false
+    },
+    {
+      "id": "piglinproliferation:buckler",
+      "required": false
+    },
+    {
+      "id": "rustic_engineer:repair_tool",
+      "required": false
+    },
+    "#simplymore:weapon_types/all",
+    {
+      "id": "#simplyswords:swords"
+    },
+    {
+      "id": "twilightforest:triple_bow",
+      "required": false
+    },
+    {
+      "id": "twilightforest:seeker_bow",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ice_bow",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ender_bow",
+      "required": false
+    },
+    {
+      "id": "twilightforest:block_and_chain",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_shield",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ore_magnet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:peacock_feather_fan",
+      "required": false
+    },
+    {
+      "id": "twilightforest:crumble_horn",
+      "required": false
+    },
+    {
+      "id": "waystones:warp_stone",
+      "required": false
+    },
+    {
+      "id": "minecraft:elytra",
+      "required": false
+    },
+    {
+      "id": "minecraft:shield",
+      "required": false
+    },
+    "#minecraft:axes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:hoes",
+    {
+      "id": "minecraft:bow",
+      "required": false
+    },
+    {
+      "id": "minecraft:crossbow",
+      "required": false
+    },
+    {
+      "id": "minecraft:trident",
+      "required": false
+    },
+    {
+      "id": "minecraft:flint_and_steel",
+      "required": false
+    },
+    {
+      "id": "minecraft:shears",
+      "required": false
+    },
+    {
+      "id": "minecraft:brush",
+      "required": false
+    },
+    {
+      "id": "minecraft:fishing_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:carrot_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "minecraft:warped_fungus_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "minecraft:mace",
+      "required": false
+    }
+  ]
+}

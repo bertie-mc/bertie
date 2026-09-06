@@ -1,0 +1,1408 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:fish_fillet_raw",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:kimchi",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:jerky",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:pickled_pickles",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:kippers",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:cocoa_fudge",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:vegetable_omelet",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:cheesy_pasta",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:creamy_onion_soup",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:scarlet_pierogi",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:horror_lasagna",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:pizza_slice",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:fiery_fondue",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:ham_and_cheese_sandwich",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:glow_berry_marmalade",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:apple_jelly",
+      "required": false
+    },
+    "#brewinandchewin:foods/cheese_wedge",
+    {
+      "id": "farmersdelight:tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:pie_crust",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:pumpkin_slice",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:smoked_ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:dog_food",
+      "required": false
+    },
+    "#farmersdelight:snacks",
+    "#farmersdelight:meals",
+    "#farmersdelight:sweets",
+    "#c:foods/leafy_green",
+    "#c:foods/dough",
+    "#c:foods/pasta",
+    "#c:foods/cooked_egg",
+    {
+      "id": "pastel:aloe_leaf",
+      "required": false
+    },
+    {
+      "id": "pastel:aqua_regia",
+      "required": false
+    },
+    {
+      "id": "pastel:ashen_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:azalea_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:bagnun",
+      "required": false
+    },
+    {
+      "id": "pastel:banyash",
+      "required": false
+    },
+    {
+      "id": "pastel:berliner",
+      "required": false
+    },
+    {
+      "id": "pastel:bitter_oils",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodboil_syrup",
+      "required": false
+    },
+    {
+      "id": "pastel:bodacious_berry_bar",
+      "required": false
+    },
+    {
+      "id": "pastel:bristle_mead",
+      "required": false
+    },
+    {
+      "id": "pastel:chauve_souris_au_vin",
+      "required": false
+    },
+    {
+      "id": "pastel:cheong",
+      "required": false
+    },
+    {
+      "id": "pastel:chrysocolla",
+      "required": false
+    },
+    {
+      "id": "pastel:clotted_cream",
+      "required": false
+    },
+    {
+      "id": "pastel:cooked_lizard_meat",
+      "required": false
+    },
+    {
+      "id": "pastel:crawfish",
+      "required": false
+    },
+    {
+      "id": "pastel:crawfish_cocktail",
+      "required": false
+    },
+    {
+      "id": "pastel:cream_pastry",
+      "required": false
+    },
+    {
+      "id": "pastel:demon_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:demon_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:divination_heart",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonbone_broth",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_golden_carrot",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_star_candy",
+      "required": false
+    },
+    {
+      "id": "pastel:evernectar",
+      "required": false
+    },
+    {
+      "id": "pastel:faded_koi",
+      "required": false
+    },
+    {
+      "id": "pastel:fishcake",
+      "required": false
+    },
+    {
+      "id": "pastel:fissure_plum",
+      "required": false
+    },
+    {
+      "id": "pastel:freigeist",
+      "required": false
+    },
+    {
+      "id": "pastel:fresh_chocolate",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_peach",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_jelly_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:golden_bristle_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:hare_roast",
+      "required": false
+    },
+    {
+      "id": "pastel:honey_pastry",
+      "required": false
+    },
+    {
+      "id": "pastel:hot_chocolate",
+      "required": false
+    },
+    {
+      "id": "pastel:infused_beverage",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_jelly",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_wine",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:junket",
+      "required": false
+    },
+    {
+      "id": "pastel:karak_chai",
+      "required": false
+    },
+    {
+      "id": "pastel:koi",
+      "required": false
+    },
+    {
+      "id": "pastel:le_fishe_au_chocolat",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_meat",
+      "required": false
+    },
+    {
+      "id": "pastel:lucky_roll",
+      "required": false
+    },
+    {
+      "id": "pastel:meatloaf",
+      "required": false
+    },
+    {
+      "id": "pastel:meatloaf_sandwich",
+      "required": false
+    },
+    {
+      "id": "pastel:mellow_shallot_soup",
+      "required": false
+    },
+    {
+      "id": "pastel:mermaids_jam",
+      "required": false
+    },
+    {
+      "id": "pastel:mermaids_popcorn",
+      "required": false
+    },
+    {
+      "id": "pastel:monster_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstruck_nectar",
+      "required": false
+    },
+    {
+      "id": "pastel:morchella",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_apple_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_cookie",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:nectardew_burgeon",
+      "required": false
+    },
+    {
+      "id": "pastel:nectered_viognier",
+      "required": false
+    },
+    {
+      "id": "pastel:nightdew_sprout",
+      "required": false
+    },
+    {
+      "id": "pastel:peach_cream",
+      "required": false
+    },
+    {
+      "id": "pastel:peach_jam",
+      "required": false
+    },
+    {
+      "id": "pastel:peaches_flambe",
+      "required": false
+    },
+    {
+      "id": "pastel:prickly_bayleaf",
+      "required": false
+    },
+    {
+      "id": "pastel:puff_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_alcohol",
+      "required": false
+    },
+    {
+      "id": "pastel:rabbit_cream_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:reprise",
+      "required": false
+    },
+    {
+      "id": "pastel:restoration_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:salted_jaramel_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:salted_jaramel_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:sawblade_holly_berry",
+      "required": false
+    },
+    {
+      "id": "pastel:scone",
+      "required": false
+    },
+    {
+      "id": "pastel:sedatives",
+      "required": false
+    },
+    {
+      "id": "pastel:slushslide",
+      "required": false
+    },
+    {
+      "id": "pastel:star_candy",
+      "required": false
+    },
+    {
+      "id": "pastel:surstromming",
+      "required": false
+    },
+    {
+      "id": "pastel:suspicious_brew",
+      "required": false
+    },
+    {
+      "id": "pastel:triple_meat_pot_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:triple_meat_pot_stew",
+      "required": false
+    },
+    {
+      "id": "pastel:weeping_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:whispy_tart",
+      "required": false
+    },
+    {
+      "id": "alexscaves:trilocaris_tail",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cooked_trilocaris_tail",
+      "required": false
+    },
+    {
+      "id": "alexscaves:pine_nuts",
+      "required": false
+    },
+    {
+      "id": "alexscaves:dinosaur_nugget",
+      "required": false
+    },
+    {
+      "id": "alexscaves:serene_salad",
+      "required": false
+    },
+    {
+      "id": "alexscaves:seething_stew",
+      "required": false
+    },
+    {
+      "id": "alexscaves:primordial_soup",
+      "required": false
+    },
+    {
+      "id": "alexscaves:radgill",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cooked_radgill",
+      "required": false
+    },
+    {
+      "id": "alexscaves:spelunkie",
+      "required": false
+    },
+    {
+      "id": "alexscaves:slam",
+      "required": false
+    },
+    {
+      "id": "alexscaves:green_soylent",
+      "required": false
+    },
+    {
+      "id": "alexscaves:lanternfish",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cooked_lanternfish",
+      "required": false
+    },
+    {
+      "id": "alexscaves:tripodfish",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cooked_tripodfish",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sea_pig",
+      "required": false
+    },
+    {
+      "id": "alexscaves:cooked_mussel",
+      "required": false
+    },
+    {
+      "id": "alexscaves:deep_sea_sushi_roll",
+      "required": false
+    },
+    {
+      "id": "alexscaves:vesper_wing",
+      "required": false
+    },
+    {
+      "id": "alexscaves:vesper_stew",
+      "required": false
+    },
+    {
+      "id": "alexscaves:darkened_apple",
+      "required": false
+    },
+    {
+      "id": "alexscaves:purple_soda_bottle",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_red",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_green",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_blue",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_yellow",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_pink",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gelatin_red",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gelatin_green",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gelatin_blue",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gelatin_yellow",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gelatin_pink",
+      "required": false
+    },
+    {
+      "id": "alexscaves:hot_chocolate_bottle",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sundae",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sharpened_candy_cane",
+      "required": false
+    },
+    {
+      "id": "alexscaves:peppermint_powder",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gumball_pile",
+      "required": false
+    },
+    {
+      "id": "alexscaves:caramel",
+      "required": false
+    },
+    {
+      "id": "alexscaves:caramel_apple",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gingerbread_crumbs",
+      "required": false
+    },
+    {
+      "id": "alexscaves:jelly_bean",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:maggot",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:banana",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:lobster_tail",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:cooked_lobster_tail",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:sopa_de_macaco",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_ribs",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:cooked_moose_ribs",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:blobfish",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:fish_oil",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:boiled_emu_egg",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:kangaroo_meat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:cooked_kangaroo_meat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:kangaroo_burger",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:gongylidia",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:cosmic_cod",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:rainbow_jelly",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:raw_catfish",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:cooked_catfish",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:flying_fish",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:mosquito_repellent_stew",
+      "required": false
+    },
+    "#c:foods/soup",
+    {
+      "id": "antarchy:blood_crystal_apple",
+      "required": false
+    },
+    {
+      "id": "antarchy:cornbread",
+      "required": false
+    },
+    {
+      "id": "antarchy:popcorn",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach_pie",
+      "required": false
+    },
+    {
+      "id": "antarchy:cheep",
+      "required": false
+    },
+    {
+      "id": "antarchy:broodfruit",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_bug_meat",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_bug_meat",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_venison",
+      "required": false
+    },
+    {
+      "id": "antarchy:kraken_kalamari",
+      "required": false
+    },
+    {
+      "id": "antarchy:mud_pie",
+      "required": false
+    },
+    {
+      "id": "antarchy:high_fructose_corn_syrup",
+      "required": false
+    },
+    {
+      "id": "antarchy:spirit_apple",
+      "required": false
+    },
+    {
+      "id": "antarchy:rainbow_sugar",
+      "required": false
+    },
+    {
+      "id": "antarchy:cornea_ear",
+      "required": false
+    },
+    {
+      "id": "antarchy:moleworm",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach",
+      "required": false
+    },
+    {
+      "id": "antarchy:corn",
+      "required": false
+    },
+    {
+      "id": "antarchy:raw_corndog",
+      "required": false
+    },
+    {
+      "id": "antarchy:cooked_corndog",
+      "required": false
+    },
+    {
+      "id": "antarchy:root_beer",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cake_base_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:berry_cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:berry_cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:large_cake",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cream",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_black",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_white",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:creamy_bread_roll",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:beef_mushroom_stew",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:canned_food",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:blaze_tomato",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:blaze_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:crystal_cabbage",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:crystal_cabbage_leaf",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:diamond_lattice_potato",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:diamond_lattice_fries",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:neutronium_bread",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:neutronium_wheat_dough",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:cosmic_beef",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:cosmic_beef_cooked",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:experience_jelly",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_fries",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_salad",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_taco",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_catalyst_cookie",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_large_hamburger",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_apple",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:ultimate_gourmet_stew",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:mobs_stew",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_flowers_tea",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:furious_cocktail",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:how_did_we_get_here",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:infinity_milk",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:endest_fried_egg",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:endest_egg_sandwich",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:star_pie_crust",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:slice_of_star_pie",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:slice_of_endest_pie",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:record_fragment_cookie",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:slice_of_endless_cake",
+      "required": false
+    },
+    {
+      "id": "create:bar_of_chocolate",
+      "required": false
+    },
+    {
+      "id": "create:chocolate_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "create:honeyed_apple",
+      "required": false
+    },
+    {
+      "id": "create:builders_tea",
+      "required": false
+    },
+    {
+      "id": "endersdelight:mite_crust",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_mollusk",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_filet",
+      "required": false
+    },
+    {
+      "id": "endersdelight:uncanny_cookies",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_pie",
+      "required": false
+    },
+    {
+      "id": "endersdelight:stuffed_shulker",
+      "required": false
+    },
+    "#c:foods/cheese",
+    "#c:foods/goat_cheese",
+    {
+      "id": "farmerspizzeria:basil_leaves",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:margarita_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:pepperoni_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:carbonara_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:meat_feast_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:cheese_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:meat_feast_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:dorblu_cheese_wedge",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:dorblu_cheese_wheel",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:carbonara_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:margarita_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:apple_slime",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:undead_kebab",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_spider_eye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_slime",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:web_on_stick",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_ghast_tear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:bone_kebab_wither_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:monster_mash",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:pasta_with_slimeballs",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_lollipop",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_ring_candy",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_ring_candy",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lemon",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:divine_lemon",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:corn_beef",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fried_ice_spider_egg",
+      "required": false
+    },
+    {
+      "id": "minersdelight:cave_carrot",
+      "required": false
+    },
+    {
+      "id": "minersdelight:baked_cave_carrot",
+      "required": false
+    },
+    {
+      "id": "minersdelight:copper_carrot",
+      "required": false
+    },
+    {
+      "id": "minersdelight:pasta_with_veggieballs",
+      "required": false
+    },
+    {
+      "id": "minersdelight:cave_soup",
+      "required": false
+    },
+    {
+      "id": "minersdelight:vegan_patty",
+      "required": false
+    },
+    {
+      "id": "minersdelight:vegan_hamburger",
+      "required": false
+    },
+    {
+      "id": "minersdelight:vegan_wrap",
+      "required": false
+    },
+    {
+      "id": "minersdelight:vegan_steak_and_potatoes",
+      "required": false
+    },
+    {
+      "id": "minersdelight:smoked_bat_wing",
+      "required": false
+    },
+    {
+      "id": "minersdelight:bat_rolls",
+      "required": false
+    },
+    {
+      "id": "minersdelight:cave_hamburger",
+      "required": false
+    },
+    {
+      "id": "minersdelight:bat_soup",
+      "required": false
+    },
+    {
+      "id": "minersdelight:improvised_barbecue_stick",
+      "required": false
+    },
+    {
+      "id": "minersdelight:bat_cookie",
+      "required": false
+    },
+    {
+      "id": "minersdelight:spider_leg",
+      "required": false
+    },
+    {
+      "id": "minersdelight:baked_spider_leg",
+      "required": false
+    },
+    {
+      "id": "minersdelight:silverfish_eggs",
+      "required": false
+    },
+    {
+      "id": "minersdelight:weird_caviar",
+      "required": false
+    },
+    {
+      "id": "minersdelight:arthropod",
+      "required": false
+    },
+    {
+      "id": "minersdelight:cooked_arthropod",
+      "required": false
+    },
+    {
+      "id": "minersdelight:insect_sandwich",
+      "required": false
+    },
+    {
+      "id": "minersdelight:insect_wrap",
+      "required": false
+    },
+    {
+      "id": "minersdelight:insect_stew",
+      "required": false
+    },
+    {
+      "id": "minersdelight:seasoned_arthropods",
+      "required": false
+    },
+    {
+      "id": "minersdelight:crunchy_bar",
+      "required": false
+    },
+    {
+      "id": "minersdelight:nutritional_bar",
+      "required": false
+    },
+    {
+      "id": "minersdelight:golden_nutritional_bar",
+      "required": false
+    },
+    {
+      "id": "minersdelight:glow_ink_pasta",
+      "required": false
+    },
+    {
+      "id": "minersdelight:glow_squid",
+      "required": false
+    },
+    {
+      "id": "minersdelight:squid",
+      "required": false
+    },
+    {
+      "id": "minersdelight:baked_squid",
+      "required": false
+    },
+    {
+      "id": "minersdelight:squid_sandwich",
+      "required": false
+    },
+    {
+      "id": "minersdelight:takoyaki",
+      "required": false
+    },
+    {
+      "id": "minersdelight:bowl_of_stuffed_squid",
+      "required": false
+    },
+    {
+      "id": "minersdelight:moss",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_fruit",
+      "required": false
+    },
+    {
+      "id": "stellaris:moon_fruit",
+      "required": false
+    },
+    "#c:foods/jerky",
+    {
+      "id": "twilightforest:gelatinous_slime_drop",
+      "required": false
+    },
+    {
+      "id": "twilightforest:gelatinous_maze_slime_drop",
+      "required": false
+    },
+    {
+      "id": "twilightforest:berry_medley",
+      "required": false
+    },
+    {
+      "id": "twilightforest:maze_wafer",
+      "required": false
+    },
+    "#c:foods/insect",
+    {
+      "id": "minecraft:baked_potato",
+      "required": false
+    },
+    {
+      "id": "minecraft:pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "minecraft:honey_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:ominous_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:dried_kelp",
+      "required": false
+    },
+    "#c:foods/fruit",
+    "#c:foods/vegetable",
+    "#c:foods/berry",
+    "#c:foods/bread",
+    "#c:foods/cookie",
+    "#c:foods/raw_meat",
+    "#c:foods/raw_fish",
+    "#c:foods/cooked_meat",
+    "#c:foods/cooked_fish",
+    "#c:foods/candy",
+    "#c:foods/pie",
+    "#c:foods/golden",
+    "#c:foods/edible_when_placed",
+    "#c:foods/food_poisoning"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:chest_armor",
+    "#minecraft:leg_armor",
+    "#minecraft:foot_armor",
+    {
+      "id": "minecraft:leather_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:chainmail_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:turtle_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_boots",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye_chestplate",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye_leggings",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye_boots",
+      "required": false
+    },
+    "#immersive_armors:armor",
+    "#minecraft:head_armor"
+  ]
+}

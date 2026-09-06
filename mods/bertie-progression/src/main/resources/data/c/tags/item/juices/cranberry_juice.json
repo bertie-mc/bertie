@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pamhc2foodextended:cranberryjuiceitem",
+      "required": false
+    },
+    {
+      "id": "croptopia:cranberry_juice",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cranberry_juice",
+      "required": false
+    }
+  ]
+}

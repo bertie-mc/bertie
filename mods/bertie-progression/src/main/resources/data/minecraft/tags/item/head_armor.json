@@ -1,0 +1,400 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "aquaculture:neptunium_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:bloody_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:novice_builder_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:calamitous_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:expert_builder_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:gilded_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:apprentice_builder_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:voiderite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:zoranths_helmet_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:helionite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:elvenite_halo_helmet",
+      "required": false
+    },
+    {
+      "id": "betterend:aeternium_helmet",
+      "required": false
+    },
+    {
+      "id": "betterend:crystalite_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm:monstrous_helm",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanism:hazmat_mask",
+      "required": false
+    },
+    {
+      "id": "mekanism:mekasuit_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_helmet",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_helmet",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_helmet",
+      "required": false
+    },
+    {
+      "id": "pastel:fetchling_helmet",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:howling_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:ultimate_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:moggles",
+      "required": false
+    },
+    {
+      "id": "antarchy:blood_crystal_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:fallen_king_crown",
+      "required": false
+    },
+    {
+      "id": "antarchy:primordial_helmet",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:dragon_skull",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:killer_rabbit_ears_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:lord_pumpkinheads_hat_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:spiritual_guide_sombrero_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:missionary_hat_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:damned_demomans_hat_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:spiny_shell_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:nightmare_mantleofthe_night_helmet",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_metal_armor_helmet",
+      "required": false
+    },
+    {
+      "id": "create:copper_diving_helmet",
+      "required": false
+    },
+    {
+      "id": "create:netherite_diving_helmet",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_helmet",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_helmet",
+      "required": false
+    },
+    {
+      "id": "deepwaters:manowar_crown_helmet",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:etherium_helmet",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:draco_arcanus_helmet",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:tyr_helmet",
+      "required": false
+    },
+    "#hazennstuff:armors/hns_helmet",
+    "#hazentouvelib:armors/helmets",
+    {
+      "id": "iceandfire:armor_amethyst_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_black_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_blue_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_bronze_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_copper_metal_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_electric_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_gray_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_green_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_red_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_sapphire_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_silver_metal_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:armor_white_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_fire_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_ice_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragonsteel_lightning_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_blue_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_bronze_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_deepblue_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_green_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_purple_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_red_helmet",
+      "required": false
+    },
+    {
+      "id": "iceandfire:tide_teal_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:bone_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:divine_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:heavy_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:prismarine_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:warrior_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wither_helmet",
+      "required": false
+    },
+    {
+      "id": "immersive_armors:wooden_helmet",
+      "required": false
+    },
+    "#irons_spellbooks:armors/helmets",
+    {
+      "id": "malum:soul_hunter_cloak",
+      "required": false
+    },
+    {
+      "id": "malum:soul_stained_steel_helmet",
+      "required": false
+    },
+    {
+      "id": "malum:malignant_stronghold_helmet",
+      "required": false
+    },
+    {
+      "id": "#mythsandlegends:head_armor",
+      "required": false
+    },
+    {
+      "id": "oritech:exo_helmet",
+      "required": false
+    },
+    {
+      "id": "rustic_engineer:rustic_goggles_helmet",
+      "required": false
+    },
+    {
+      "id": "stellaris:space_suit_helmet",
+      "required": false
+    },
+    {
+      "id": "stellaris:jet_suit_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:leather_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:chainmail_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_helmet",
+      "required": false
+    },
+    {
+      "id": "minecraft:turtle_helmet",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:potato_crate",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mynethersdelight:hoglin_hide"
+    },
+    {
+      "item": "mynethersdelight:hoglin_hide"
+    },
+    {
+      "item": "mynethersdelight:hoglin_hide"
+    },
+    {
+      "item": "mynethersdelight:hoglin_hide"
+    }
+  ],
+  "result": {
+    "id": "minecraft:leather",
+    "count": 4
+  }
+}

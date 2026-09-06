@@ -1,0 +1,180 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "betterend:aeternium_ingot",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_ingot",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_ingot",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_osmium",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_tin",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_bronze",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_refined_obsidian",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_refined_glowstone",
+      "required": false
+    },
+    {
+      "id": "mekanism:ingot_steel",
+      "required": false
+    },
+    "#pastel:pure_resources",
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:spectral_shard",
+      "required": false
+    },
+    {
+      "id": "slag:rose_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "slag:deep_alloy",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:magnet_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cursed_gold_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:topaz",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ruby",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sapphire",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:stable_neutronium_ingot",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:charged_neutronium_ingot",
+      "required": false
+    },
+    "#create:create_ingots",
+    "#c:ingots/netherite",
+    "#c:ingots/gold",
+    "#c:ingots/iron",
+    "#c:gems/emerald",
+    "#c:gems/diamond",
+    {
+      "id": "dungeonsdelight:stained_scrap",
+      "required": false
+    },
+    "#c:ingots/ironwood",
+    "#c:ingots/steeleaf",
+    "#c:ingots/knightmetal",
+    "#c:ingots/fiery",
+    {
+      "id": "minecraft:netherite_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:emerald",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ingot",
+      "required": false
+    }
+  ]
+}

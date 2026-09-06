@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:deepslate_zinc_ore",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ore",
+      "required": false
+    }
+  ]
+}

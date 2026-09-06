@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minersdelight:squid",
+      "required": false
+    },
+    {
+      "id": "minersdelight:glow_squid",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:tin_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:osmium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:uranium_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:fluorite_ore",
+      "required": false
+    },
+    {
+      "id": "mekanism:lead_ore",
+      "required": false
+    },
+    {
+      "id": "powah:uraninite_ore",
+      "required": false
+    },
+    {
+      "id": "powah:uraninite_ore_dense",
+      "required": false
+    },
+    {
+      "id": "powah:uraninite_ore_poor",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ore",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:arcane_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:runic_stone",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:stella_arcanum",
+      "required": false
+    },
+    {
+      "id": "iceandfire:silver_ore",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:mithril_ore",
+      "required": false
+    },
+    {
+      "id": "magitech:tourmaline_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:coal_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:copper_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:emerald_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:lapis_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:redstone_ore",
+      "required": false
+    },
+    {
+      "id": "#forge:ores_in_ground/stone",
+      "required": false
+    }
+  ]
+}

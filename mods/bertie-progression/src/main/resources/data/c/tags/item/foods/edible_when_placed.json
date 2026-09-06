@@ -1,0 +1,191 @@
+{
+  "replace": true,
+  "values": [
+    "#brewinandchewin:cheese_wheels/ripe",
+    {
+      "id": "brewinandchewin:fiery_fondue_pot",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:pizza",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:quiche",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:apple_pie",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:sweet_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:chocolate_pie",
+      "required": false
+    },
+    "#farmersdelight:feasts",
+    {
+      "id": "mynethersdelight:bread_loaf",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:roast_stuffed_hoglin",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:striderloaf",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:cold_striderloaf",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:ghasta_with_cream",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:magma_cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cake_base_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:berry_cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_cream_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:berry_cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_cake_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:large_cake",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:cosmic_cake",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:goat_cheese_wheel",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cranberry_cobbler",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:honeyed_goat_cheese_tart",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:dorblu_cheese_wheel",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:margarita_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:carbonara_pizza",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:meat_feast_pizza",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:rotten_flesh_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:slimeapple_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:spidereye_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:ghasttear_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cobweb_pie",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_spidereye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_cobweb",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_ghasttear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:punchbowl_wither_berry",
+      "required": false
+    },
+    {
+      "id": "twilightforest:experiment_115",
+      "required": false
+    },
+    {
+      "id": "minecraft:cake",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:titanium_ore",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:deepslate_titanium_ore",
+      "required": false
+    }
+  ]
+}

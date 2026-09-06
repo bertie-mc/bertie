@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "create:brass_block",
+      "required": false
+    }
+  ]
+}

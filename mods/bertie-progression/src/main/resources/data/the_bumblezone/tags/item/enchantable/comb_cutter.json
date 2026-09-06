@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_shears",
+      "required": false
+    },
+    "#pastel:workstaffs"
+  ]
+}

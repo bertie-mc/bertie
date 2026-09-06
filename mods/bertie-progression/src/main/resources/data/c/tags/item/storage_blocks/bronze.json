@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:block_bronze",
+      "required": false
+    }
+  ]
+}

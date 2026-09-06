@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GMM",
+    "GHH",
+    "GMM"
+  ],
+  "key": {
+    "G": {
+      "tag": "c:ingots/gold"
+    },
+    "M": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "H": {
+      "item": "mynethersdelight:hoglin_hide"
+    }
+  },
+  "result": {
+    "id": "irons_spellbooks:gold_spell_book",
+    "count": 1
+  }
+}

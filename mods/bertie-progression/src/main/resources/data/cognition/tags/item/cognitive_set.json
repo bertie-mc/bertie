@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "cognition:cognitive_bow",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_rod",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_shears",
+      "required": false
+    },
+    {
+      "id": "cognition:flint_and_cognitive_alloy",
+      "required": false
+    }
+  ]
+}

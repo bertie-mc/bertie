@@ -1,0 +1,148 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "cataclysm:infernal_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_forge",
+      "required": false
+    },
+    {
+      "id": "cataclysm:brontes",
+      "required": false
+    },
+    {
+      "id": "mekanism:atomic_disassembler",
+      "required": false
+    },
+    {
+      "id": "mekanism:meka_tool",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:bronze_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:lapis_lazuli_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:osmium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_glowstone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:refined_obsidian_pickaxe",
+      "required": false
+    },
+    {
+      "id": "mekanismtools:steel_pickaxe",
+      "required": false
+    },
+    "#pastel:workstaffs",
+    {
+      "id": "pastel:tender_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:lucky_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:resonant_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:oblivion_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_pickaxe",
+      "required": false
+    },
+    {
+      "id": "quark:pickarang",
+      "required": false
+    },
+    {
+      "id": "quark:flamerang",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_pickaxe",
+      "required": false
+    },
+    "#anvilcraft:tools/dragon_rod",
+    "#anvilcraft:tools/resonator",
+    {
+      "id": "deeperdarker:warden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "oritech:hand_drill",
+      "required": false
+    },
+    {
+      "id": "oritech:promethium_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mazebreaker_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_pickaxe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:giant_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:stone_pickaxe",
+      "required": false
+    },
+    {
+      "id": "minecraft:wooden_pickaxe",
+      "required": false
+    }
+  ]
+}

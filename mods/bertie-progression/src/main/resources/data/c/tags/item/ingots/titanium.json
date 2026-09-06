@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:titanium_ingot",
+      "required": false
+    }
+  ]
+}
