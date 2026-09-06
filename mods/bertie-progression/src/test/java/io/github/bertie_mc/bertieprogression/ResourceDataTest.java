@@ -113,4 +113,56 @@ class ResourceDataTest {
         }
         assertTrue(broken.isEmpty(), String.join("\n", broken));
     }
+
+    /**
+     * An enchantment bonus must never leave a drop rarer than it is with a bare weapon. Vanilla's
+     * {@code random_chance_with_enchanted_bonus} takes the unenchanted chance and a separate curve
+     * whose base is the value at level one, and nothing stops the two disagreeing: My Nether's
+     * Delight ships a 35% hoglin hide whose curve starts at 25%, so Looting I made it worse. Both
+     * halves are overridden here, and this keeps any later override honest.
+     */
+    @Test
+    void enchantmentBonusesNeverReduceADropRate() throws IOException {
+        List<String> wrong = new ArrayList<>();
+        try (var files = Files.walk(RESOURCES)) {
+            for (Path path : files.filter(p -> p.toString().endsWith(".json")).toList()) {
+                String raw = Files.readString(path);
+                if (!raw.contains("random_chance_with_enchanted_bonus")) {
+                    continue;
+                }
+                for (JsonObject condition : conditions(JsonParser.parseString(raw))) {
+                    double bare = condition.get("unenchanted_chance").getAsDouble();
+                    JsonObject curve = condition.getAsJsonObject("enchanted_chance");
+                    if (curve == null || !curve.has("base")) {
+                        continue;
+                    }
+                    double atLevelOne = curve.get("base").getAsDouble();
+                    if (atLevelOne < bare) {
+                        wrong.add(RESOURCES.relativize(path) + ": " + bare + " unenchanted but " + atLevelOne
+                                + " at level one");
+                    }
+                }
+            }
+        }
+        assertTrue(wrong.isEmpty(), String.join("\n", wrong));
+    }
+
+    /** Every {@code random_chance_with_enchanted_bonus} anywhere in one file, at any nesting. */
+    private static List<JsonObject> conditions(JsonElement element) {
+        List<JsonObject> found = new ArrayList<>();
+        if (element.isJsonObject()) {
+            JsonObject object = element.getAsJsonObject();
+            JsonElement condition = object.get("condition");
+            if (condition != null
+                    && condition.isJsonPrimitive()
+                    && condition.getAsString().endsWith("random_chance_with_enchanted_bonus")
+                    && object.has("unenchanted_chance")) {
+                found.add(object);
+            }
+            object.asMap().values().forEach(value -> found.addAll(conditions(value)));
+        } else if (element.isJsonArray()) {
+            element.getAsJsonArray().forEach(value -> found.addAll(conditions(value)));
+        }
+        return found;
+    }
 }

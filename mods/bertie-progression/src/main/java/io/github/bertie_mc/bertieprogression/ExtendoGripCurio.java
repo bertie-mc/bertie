@@ -34,8 +34,7 @@ import top.theillusivec4.curios.api.type.capability.ICurio;
  */
 public final class ExtendoGripCurio {
 
-    private static final ResourceLocation GRIP =
-            ResourceLocation.fromNamespaceAndPath("create", "extendo_grip");
+    private static final ResourceLocation GRIP = ResourceLocation.fromNamespaceAndPath("create", "extendo_grip");
 
     /** Three blocks of extra block reach - the same bump Create's held grip gives. */
     private static final double BLOCK_REACH_BONUS = 3.0D;
@@ -79,8 +78,7 @@ public final class ExtendoGripCurio {
             Multimap<Holder<Attribute>, AttributeModifier> out = LinkedHashMultimap.create();
             out.put(
                     Attributes.BLOCK_INTERACTION_RANGE,
-                    new AttributeModifier(
-                            MODIFIER_ID, BLOCK_REACH_BONUS, AttributeModifier.Operation.ADD_VALUE));
+                    new AttributeModifier(MODIFIER_ID, BLOCK_REACH_BONUS, AttributeModifier.Operation.ADD_VALUE));
             return out;
         }
     }
