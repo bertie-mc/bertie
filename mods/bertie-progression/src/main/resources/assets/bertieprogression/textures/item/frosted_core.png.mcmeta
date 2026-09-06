@@ -4,15 +4,15 @@
     "frames": [
       {
         "index": 0,
-        "time": 6
+        "time": 2
       },
       {
         "index": 1,
-        "time": 1
+        "time": 2
       },
       {
         "index": 2,
-        "time": 1
+        "time": 2
       },
       {
         "index": 3,
@@ -28,7 +28,7 @@
       },
       {
         "index": 6,
-        "time": 6
+        "time": 1
       },
       {
         "index": 7,
@@ -36,15 +36,15 @@
       },
       {
         "index": 8,
-        "time": 1
+        "time": 2
       },
       {
         "index": 9,
-        "time": 1
+        "time": 2
       },
       {
         "index": 10,
-        "time": 1
+        "time": 2
       },
       {
         "index": 11,
@@ -52,7 +52,7 @@
       },
       {
         "index": 12,
-        "time": 6
+        "time": 1
       },
       {
         "index": 13,
@@ -68,15 +68,15 @@
       },
       {
         "index": 16,
-        "time": 1
+        "time": 2
       },
       {
         "index": 17,
-        "time": 1
+        "time": 2
       },
       {
         "index": 18,
-        "time": 6
+        "time": 2
       },
       {
         "index": 19,
@@ -96,6 +96,70 @@
       },
       {
         "index": 23,
+        "time": 1
+      },
+      {
+        "index": 24,
+        "time": 2
+      },
+      {
+        "index": 25,
+        "time": 2
+      },
+      {
+        "index": 26,
+        "time": 2
+      },
+      {
+        "index": 27,
+        "time": 1
+      },
+      {
+        "index": 28,
+        "time": 1
+      },
+      {
+        "index": 29,
+        "time": 1
+      },
+      {
+        "index": 30,
+        "time": 1
+      },
+      {
+        "index": 31,
+        "time": 1
+      },
+      {
+        "index": 32,
+        "time": 2
+      },
+      {
+        "index": 33,
+        "time": 2
+      },
+      {
+        "index": 34,
+        "time": 2
+      },
+      {
+        "index": 35,
+        "time": 1
+      },
+      {
+        "index": 36,
+        "time": 1
+      },
+      {
+        "index": 37,
+        "time": 1
+      },
+      {
+        "index": 38,
+        "time": 1
+      },
+      {
+        "index": 39,
         "time": 1
       }
     ]
