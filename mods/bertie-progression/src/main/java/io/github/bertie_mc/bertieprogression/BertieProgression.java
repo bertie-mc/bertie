@@ -42,6 +42,8 @@ public final class BertieProgression {
         modBus.register(RemovedItems.class);
         modBus.register(TabAnchors.class);
         modBus.register(EldritchTabGaps.class);
+        // RegisterCapabilitiesEvent is a mod-bus event too. The class guards on create + curios.
+        modBus.register(ExtendoGripCurio.class);
 
         NeoForge.EVENT_BUS.register(CraftingGateHandler.class);
         NeoForge.EVENT_BUS.register(ForgeBedHandler.class);

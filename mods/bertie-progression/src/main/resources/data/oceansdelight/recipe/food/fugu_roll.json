@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "crabbersdelight:pufferfish_slice"
+    },
+    {
+      "item": "crabbersdelight:pufferfish_slice"
+    },
+    {
+      "item": "farmersdelight:cooked_rice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "oceansdelight:fugu_roll"
+  }
+}

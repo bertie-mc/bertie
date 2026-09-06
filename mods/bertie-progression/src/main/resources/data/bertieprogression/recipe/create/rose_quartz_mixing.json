@@ -23,16 +23,16 @@
       "item": "minecraft:redstone"
     },
     {
-      "item": "minecraft:redstone"
+      "tag": "c:gems/quartz"
     },
     {
-      "item": "minecraft:redstone"
+      "tag": "c:gems/quartz"
     },
     {
-      "item": "minecraft:redstone"
+      "tag": "c:gems/quartz"
     },
     {
-      "item": "minecraft:quartz"
+      "tag": "c:gems/quartz"
     }
   ],
   "results": [

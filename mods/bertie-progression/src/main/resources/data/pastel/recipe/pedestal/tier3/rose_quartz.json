@@ -2,11 +2,11 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "hazennstuff"
+      "modid": "create"
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "irons_spellbooks"
+      "modid": "hazennstuff"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -31,7 +31,7 @@
   ],
   "key": {
     "P": "pastel:pink_pigment",
-    "D": "irons_spellbooks:divine_pearl",
+    "D": "create:rose_quartz",
     "O": "pastel:orange_pigment",
     "Q": {
       "tag": "c:gems/quartz"

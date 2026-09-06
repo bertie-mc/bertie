@@ -1274,10 +1274,17 @@ write("data/create/data_maps/item/superheated_blaze_burner_fuels.json",
 write("data/bertieprogression/tags/item/snuffing_blaze_fuel.json",
       {"replace": False, "values": ["minecraft:egg"]})
 
-# --- Rose Quartz: additive mixing route with 8 redstone and 1 quartz. ---
+# --- Rose Quartz: 5 redstone and 4 quartz, on the table and in the mixer alike. The shaped
+#     recipe reads as the gem it makes - redstone at the corners and centre, quartz between. ---
+write("data/create/recipe/crafting/materials/rose_quartz.json",
+      {"neoforge:conditions": conds("create"), "type": "minecraft:crafting_shaped",
+       "category": "misc", "pattern": ["ABA", "BAB", "ABA"],
+       "key": {"A": {"item": "minecraft:redstone"}, "B": {"tag": "c:gems/quartz"}},
+       "result": {"id": "create:rose_quartz", "count": 1}})
 write(f"{R}/create/rose_quartz_mixing.json",
       {"neoforge:conditions": conds("create"), "type": "create:mixing",
-       "ingredients": ([{"item": "minecraft:redstone"} for _ in range(8)] + [{"item": "minecraft:quartz"}]),
+       "ingredients": ([{"item": "minecraft:redstone"} for _ in range(5)]
+                       + [{"tag": "c:gems/quartz"} for _ in range(4)]),
        "results": [{"id": "create:rose_quartz"}]})
 
 # --- Mechanical Saw: the 3x3 overrides Create's recipe by replacing the iron ingot with a
@@ -2816,6 +2823,35 @@ write("data/c/tags/item/gems/quartz.json",
                   {"id": "malum:natural_quartz", "required": False},
                   {"id": "#forge:gems/quartz", "required": False}]})
 
+# --- Silicon: one path, not three. Refined Storage smelted quartz straight into silicon and
+#     Ender IO handed it over as a byproduct; both are gone. What is left is Charge Mix - Oritech's
+#     Raw Silicon renamed - crafted from a quartz and two charcoal and then BLASTED, so a plain
+#     furnace will not do it but every machine smelter will. Oritech's refinery route survives,
+#     re-pointed at the silicon that stayed.
+write("data/refinedstorage/recipe/silicon.json", DISABLED)
+write("data/bertieprogression/recipe/charge_mix.json",
+      {"neoforge:conditions": conds("oritech"), "type": "minecraft:crafting_shapeless",
+       "category": "misc",
+       "ingredients": [{"tag": "c:gems/quartz"},
+                       {"item": "minecraft:charcoal"}, {"item": "minecraft:charcoal"}],
+       "result": {"id": "oritech:raw_silicon", "count": 1}})
+write("data/oritech/recipe/silicon_from_smelting_raw_silicon.json", DISABLED)
+write("data/bertieprogression/recipe/silicon_from_blasting_charge_mix.json",
+      {"neoforge:conditions": conds("oritech", "refinedstorage"), "type": "minecraft:blasting",
+       "category": "misc", "cookingtime": 100, "experience": 0.5,
+       "ingredient": {"item": "oritech:raw_silicon"},
+       "result": {"id": "refinedstorage:silicon", "count": 1}})
+write("data/oritech/recipe/refinery/siliconwashing.json",
+      {"neoforge:conditions": conds("oritech", "refinedstorage"), "type": "oritech:refinery",
+       "fluidInput": {"fluid": "oritech:still_silicon_wash"},
+       "ingredients": [{"tag": "minecraft:sand"}],
+       "results": [{"count": 4, "id": "refinedstorage:silicon"}], "time": 160})
+
+# Ghasmati is not rice - it is a Nether crop that happens to cook like one, and the shared crop
+# tag was the only thing making the two interchangeable. Replaced with rice alone.
+write("data/c/tags/item/crops/rice.json",
+      {"replace": True, "values": [{"id": "farmersdelight:rice", "required": False}]})
+
 # The CMY Pedestal: the three polished gem blocks across the top, a Vegetal Block bedded in
 # polished calcite. It costs a full sixteen of every pigment.
 _cmy = pedestal(["TAC", "RVR", "RRR"],
@@ -2832,7 +2868,7 @@ write("data/pastel/recipe/pedestal/tier1/pedestal_all_basic.json", _cmy)
 # Rose Quartz stops being two items off a shapeless craft and moves onto the Onyx Pedestal.
 write("data/hazennstuff/recipe/crafting/materials/rose_quartz.json", DISABLED)
 _rq = pedestal(["PDP", "OQO", "PDP"],
-               {"P": "pastel:pink_pigment", "D": "irons_spellbooks:divine_pearl",
+               {"P": "pastel:pink_pigment", "D": "create:rose_quartz",
                 "O": "pastel:orange_pigment", "Q": "minecraft:quartz"},
                {"pastel:cyan": 0, "pastel:magenta": 6, "pastel:yellow": 4,
                 "pastel:black": 0, "pastel:white": 0},

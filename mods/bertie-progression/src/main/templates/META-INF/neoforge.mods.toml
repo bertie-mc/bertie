@@ -615,3 +615,10 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="refinedstorage"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
