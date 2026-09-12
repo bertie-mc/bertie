@@ -421,6 +421,22 @@ write(f"{RIT}/builder_stone.json",
              essences={"aureal": 200, "blood": 10000, "souls": 10}))
 write("data/armageddon_mod/recipe/builderstonerecipe.json", DISABLED)
 
+# Emerald Totem overwrites Armageddon's 4 Emerald + Raw Gold craft. It summons Arion, so it costs
+# a Totem of Undying and sits one altar behind Eldorath rather than one bench in front of him.
+write(f"{R}/malum/emerald_totem.json",
+      infusion("minecraft:totem_of_undying", 1, [("minecraft:emerald", 7)],
+               [SP("earthen", 32), SP("eldritch", 4), SP("wicked", 3)],
+               "armageddon_mod:emerald_totem", 1))
+write("data/armageddon_mod/recipe/emeraldtotemrecipe.json", DISABLED)
+
+# Arion's Heart buys the Experience Obelisk. Tier-I, 900 ink is the whole T1 ceiling, and the eight
+# pedestals are split evenly between Malum's own obelisks and Big Emerald Slates.
+write(f"{RIT}/experience_obelisk.json",
+      ritual("armageddon_mod:arion_heart",
+             [("malum:brilliant_obelisk", 4), ("berlordscarving:emerald_big_slate", 4)],
+             "cognition:experience_obelisk", 1, tier=1,
+             essences={"aureal": 0, "blood": 0, "souls": 3}, xp=900))
+
 # Spirit Altar: Runewood Planks core + 4 Refined Soulstone + 4 Deorum Ingots,
 # 100 XP / 5000 blood / 10 souls / 500 aureal. The four Slag golden plates were the original fourth
 # input; Deorum replaces them now that Slag's parts are out of the pack.
@@ -1575,6 +1591,16 @@ write("data/bertieprogression/recipe/scroll_forge.json",
        # Create spells this one snake_case; the camelCase spelling parses as an unknown field and
        # silently throws the whole recipe away, which is how the forge ended up with no recipe.
        "accept_mirrored": False})
+
+# --- Alchemist Cauldron: a Zardius Crucible in a Knightmetal frame, over Carminite flanked by
+#     Deep Alloy. Twilight's carminite gates it behind the Dark Tower. ---
+write("data/irons_spellbooks/recipe/alchemist_cauldron.json",
+      shaped(["K K", "KZK", "DCD"],
+             {"K": "twilightforest:knightmetal_ingot",
+              "Z": "magitech:zardius_crucible",
+              "D": "slag:deep_alloy_block",
+              "C": "twilightforest:carminite_block"},
+             "irons_spellbooks:alchemist_cauldron"))
 
 # Two registries, two tag paths. The Accessories slots validate against
 # data/accessories/tags/item/<slot>.json and never look at #curios:<slot>, so a slot the player

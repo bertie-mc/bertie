@@ -1,0 +1,34 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 0,
+    "souls": 3,
+    "experience": 900
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:brilliant_obelisk"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "berlordscarving:emerald_big_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "armageddon_mod:arion_heart"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cognition:experience_obelisk",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

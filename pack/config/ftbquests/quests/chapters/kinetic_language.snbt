@@ -2351,5 +2351,66 @@
 			x: 3.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["2B00000000000009"]
+			icon: {
+				id: "armageddon_mod:emerald_totem"
+			}
+			id: "2B00000000000067"
+			rewards: [{
+				id: "2B00000002000067"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000067"
+				item: { count: 1, id: "armageddon_mod:emerald_totem" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000067"]
+			icon: {
+				id: "armageddon_mod:arion_heart"
+			}
+			id: "2B00000000000068"
+			rewards: [{
+				id: "2B00000002000068"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				entity: "armageddon_mod:arion_tyrant_of_the_emerald_wrath_soldat"
+				icon: {
+					id: "armageddon_mod:arion_heart"
+				}
+				id: "2B00000001000068"
+				type: "kill"
+				value: 1L
+			}]
+			x: -15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000068"]
+			icon: {
+				id: "cognition:experience_obelisk"
+			}
+			id: "3C00000000000003"
+			rewards: [{
+				id: "3C00000002000003"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000003"
+				item: { count: 1, id: "cognition:experience_obelisk" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: -3.0d
+		}
 	]
 }

@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "armageddon_mod"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:totem_of_undying",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "minecraft:emerald",
+      "count": 7
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 32
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 4
+    },
+    {
+      "type": "malum:wicked",
+      "count": 3
+    }
+  ],
+  "result": {
+    "id": "armageddon_mod:emerald_totem",
+    "count": 1
+  }
+}

@@ -12,60 +12,6 @@
 	quests: [
 		{
 			icon: {
-				id: "irons_spellbooks:inscription_table"
-			}
-			id: "7B00000000000002"
-			rewards: [{
-				id: "7B00000002000002"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000002"
-				item: { count: 1, id: "irons_spellbooks:inscription_table" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			icon: {
-				id: "irons_spellbooks:scroll_forge"
-			}
-			id: "7B00000000000003"
-			rewards: [{
-				id: "7B00000002000003"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000003"
-				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			icon: {
-				id: "irons_spellbooks:alchemist_cauldron"
-			}
-			id: "7B00000000000004"
-			rewards: [{
-				id: "7B00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000004"
-				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 1.5d
-		}
-		{
-			icon: {
 				id: "irons_spellbooks:arcane_anvil"
 			}
 			id: "7B00000000000005"
@@ -120,24 +66,6 @@
 		}
 		{
 			icon: {
-				id: "cognition:experience_obelisk"
-			}
-			id: "3C00000000000003"
-			rewards: [{
-				id: "3C00000002000003"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000003"
-				item: { count: 1, id: "cognition:experience_obelisk" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			icon: {
 				id: "cognition:experience_fountain"
 			}
 			id: "3C00000000000004"
@@ -189,24 +117,6 @@
 			}]
 			x: -4.5d
 			y: 6.0d
-		}
-		{
-			icon: {
-				id: "malum:runic_workbench"
-			}
-			id: "3C00000000000007"
-			rewards: [{
-				id: "3C00000002000007"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000007"
-				item: { count: 1, id: "malum:runic_workbench" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 3.0d
 		}
 		{
 			icon: {

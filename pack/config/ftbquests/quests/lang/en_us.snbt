@@ -409,6 +409,10 @@
 	quest.2B00000000000064.title: "Soulstained Steel Ingot"
 	quest.2B00000000000065.title: "Diamond Backpack"
 	quest.2B00000000000066.title: "Soul Hook"
+	quest.2B00000000000067.quest_desc: ["A spirit infusion around a Totem of Undying: 7 Emeralds, 32 Earthen, 4 Eldritch and 3 Wicked. Right-click it to summon Arion."]
+	quest.2B00000000000067.title: "The Emerald Totem"
+	quest.2B00000000000068.quest_desc: ["Defeat Arion, Tyrant of the Emerald Wrath. He fights twice: the ravager falls first, and the soldat that rises from it carries his heart."]
+	quest.2B00000000000068.title: "Slay Arion"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"
@@ -584,6 +588,7 @@
 	quest.3B0000000000005B.title: "Cognitive Hook"
 	quest.3C00000000000001.title: "The Enchanting Table"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
+	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"
 	quest.3C00000000000004.title: "The Experience Fountain"
 	quest.3C00000000000005.title: "The Precision Dispeller"
@@ -2108,11 +2113,7 @@
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.6B0000000000005C.title: "Blazing Hook"
 	quest.7B00000000000001.title: "Flimsy Journal"
-	quest.7B00000000000002.quest_desc: ["In your 2x2: a Book and Quill top right over two Planks (replaces the stock recipe). The table that writes spells into books."]
-	quest.7B00000000000002.title: "Inscription Table"
-	quest.7B00000000000003.quest_desc: ["Craft the Scroll Forge - where spell scrolls are inscribed."]
-	quest.7B00000000000003.title: "Scroll Forge"
-	quest.7B00000000000004.quest_desc: ["Craft the Alchemist Cauldron - brew inks and reagents."]
+	quest.7B00000000000004.quest_desc: ["A Zardius Crucible in a Knightmetal frame, over a Block of Carminite cornered with Deep Alloy. Brews the inks and reagents."]
 	quest.7B00000000000004.title: "Alchemist Cauldron"
 	quest.7B00000000000005.quest_desc: ["Craft the Arcane Anvil - upgrade and repair spell gear."]
 	quest.7B00000000000005.title: "Arcane Anvil"

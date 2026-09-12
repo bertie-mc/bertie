@@ -1461,5 +1461,42 @@
 			x: 0.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["3B0000000000001C"]
+			icon: {
+				id: "irons_spellbooks:alchemist_cauldron"
+			}
+			id: "7B00000000000004"
+			rewards: [{
+				id: "7B00000002000004"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000004"
+				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "malum:runic_workbench"
+			}
+			id: "3C00000000000007"
+			rewards: [{
+				id: "3C00000002000007"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000007"
+				item: { count: 1, id: "malum:runic_workbench" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
 	]
 }
