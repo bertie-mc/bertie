@@ -125,14 +125,6 @@
       "required": false
     },
     {
-      "id": "deepwaters:aquamarine_shovel",
-      "required": false
-    },
-    {
-      "id": "deepwaters:fopalshovel",
-      "required": false
-    },
-    {
       "id": "iceandfire:silver_shovel",
       "required": false
     },

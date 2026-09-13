@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "e0a1847f34ee052b3d6a4199739d017b8028ae1f3e334c13258f914d4cb5163b"
+inputs-hash = "c96dc1dd00b0b9e97d79db802f94ed7b695027c2586e6bd0b106799681a976f9"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -325,10 +325,6 @@ mod = "modrinth:Dk6su9JN:5P5tLHSh"
 any = "modrinth:2vzHL83v:OBpb6JlI"
 mod = "modrinth:2vzHL83v:OBpb6JlI"
 
-[components."deep-waters"]
-any = "modrinth:buvNMuzc:Komx4VUy"
-mod = "modrinth:buvNMuzc:Komx4VUy"
-
 [components."deeper-and-darker-spellbooks"]
 any = "modrinth:bY4q13Xr:oBllvIgO"
 mod = "modrinth:bY4q13Xr:oBllvIgO"
@@ -352,10 +348,6 @@ mod = "modrinth:FQgc8dib:2k3GCxEt"
 [components."diamond-in-the-rough"]
 any = "modrinth:TBVbrjYL:iLp3LKvw"
 mod = "modrinth:TBVbrjYL:iLp3LKvw"
-
-[components."dis-enchanting-table"]
-any = "modrinth:9BgYgXE4:UzZnJKSR"
-mod = "modrinth:9BgYgXE4:UzZnJKSR"
 
 [components."discerning-the-eldritch"]
 any = "modrinth:bA1tmmcv:DZOuNCHD"
@@ -3395,26 +3387,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:9BgYgXE4:UzZnJKSR"]
-name = "dis-enchanting-table"
-component = "dis-enchanting-table"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "9BgYgXE4"
-version = "UzZnJKSR"
-filename = "disenchanting_table-merged-1.21.1-5.0.2.jar"
-project-id = "9BgYgXE4"
-version-id = "UzZnJKSR"
-provides = ["disenchanting_table"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:9leXt4A5:Es84N2XL", "mod-id" = "monolib", "version-range" = "[2.1.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:9GdSY2FZ:McC1NEfu"]
 name = "cognition"
 component = "cognition"
@@ -3490,25 +3462,6 @@ version-id = "MxbfrOEv"
 provides = ["easymagic"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.8,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:9leXt4A5:Es84N2XL"]
-name = "monolib"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "9leXt4A5"
-version = "Es84N2XL"
-filename = "monolib-neoforge-1.21.1-4.0.2.jar"
-project-id = "9leXt4A5"
-version-id = "Es84N2XL"
-provides = ["monolib"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
@@ -7401,26 +7354,6 @@ provides = ["extra_mod_integrations"]
 bundled-provides = ["extra_mod_integrations_actually_additions", "extra_mod_integrations_chipped", "extra_mod_integrations_core", "extra_mod_integrations_farmers_delight", "extra_mod_integrations_irons_spellbooks", "extra_mod_integrations_pneumaticcraft", "extra_mod_integrations_rechiseled", "extra_mod_integrations_reliquary"]
 required = [{ "artifact" = "modrinth:fRiHVvU7:5sIPA1To", "mod-id" = "emi", "version-range" = "[1,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:buvNMuzc:Komx4VUy"]
-name = "deep-waters"
-component = "deep-waters"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "buvNMuzc"
-version = "Komx4VUy"
-filename = "deepwaters-25_5 neoforge 1_21_1.jar"
-project-id = "buvNMuzc"
-version-id = "Komx4VUy"
-provides = ["deepwaters"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

@@ -2004,19 +2004,6 @@
 		}
 		{
 			icon: {
-				id: "deepwaters:manowar_crown_helmet"
-			}
-			id: "7B00000000000054"
-			tasks: [{
-				id: "7B00000001000054"
-				item: { count: 1, id: "deepwaters:manowar_crown_helmet" }
-				type: "item"
-			}]
-			x: -60.0d
-			y: 7.0d
-		}
-		{
-			icon: {
 				components: {
 					"azurelib:az_id": [I;
 						1887286887
@@ -8217,45 +8204,6 @@
 			}]
 			x: 7.0d
 			y: 12.0d
-		}
-		{
-			icon: {
-				id: "deepwaters:aquamarine_sword"
-			}
-			id: "7B00000000000150"
-			tasks: [{
-				id: "7B00000001000150"
-				item: { count: 1, id: "deepwaters:aquamarine_sword" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 12.0d
-		}
-		{
-			icon: {
-				id: "deepwaters:fopalsword"
-			}
-			id: "7B00000000000151"
-			tasks: [{
-				id: "7B00000001000151"
-				item: { count: 1, id: "deepwaters:fopalsword" }
-				type: "item"
-			}]
-			x: 10.0d
-			y: 12.0d
-		}
-		{
-			icon: {
-				id: "deepwaters:jellyfish_staff"
-			}
-			id: "7B00000000000152"
-			tasks: [{
-				id: "7B00000001000152"
-				item: { count: 1, id: "deepwaters:jellyfish_staff" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 13.0d
 		}
 		{
 			icon: {

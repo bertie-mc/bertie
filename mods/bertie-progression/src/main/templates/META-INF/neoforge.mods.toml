@@ -96,13 +96,6 @@ side="BOTH"
 
 # Mods whose data namespaces we override must load first so our datapack wins.
 [[dependencies.${mod_id}]]
-modId="deepwaters"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="cataclysm"
 type="optional"
 versionRange="[0,)"

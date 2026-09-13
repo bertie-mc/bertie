@@ -39,7 +39,6 @@ None. `ModBlocks` is empty since the Echo Lock left with the Echo and Below ques
   pedestal formation rules integrated with Forbidden & Arcanus.
 - **EMI integration** (`emi/`) — built-in Mallet Work and Ominous Fan recipes, plus pack-specific
   item visibility policy.
-- **Deep Waters shrine** (`shrine/`) — the shrine handler plus a Ponder scene describing it.
 - **Allay corruption** (`AllayCorruptionHandler`).
 - **Removed items** (`RemovedItems`) — items withdrawn from the pack's progression.
 

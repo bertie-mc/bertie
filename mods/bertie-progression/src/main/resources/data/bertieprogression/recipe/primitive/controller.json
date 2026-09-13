@@ -2,11 +2,11 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "create"
+      "modid": "cognition"
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "deepwaters"
+      "modid": "create"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -47,7 +47,7 @@
       "item": "primitiverefined:soulstained_shaft"
     },
     "O": {
-      "item": "deepwaters:blackpearl"
+      "item": "cognition:primordial_assembly"
     }
   },
   "pattern": [

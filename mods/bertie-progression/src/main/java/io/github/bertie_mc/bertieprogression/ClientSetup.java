@@ -21,7 +21,6 @@ public final class ClientSetup {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         if (!ModList.get().isLoaded("ponder")) return;
-        event.enqueueWork(() -> io.github.bertie_mc.bertieprogression.shrine.ShrinePonderPlugin.register());
         if (ModList.get().isLoaded("magitech")) {
             event.enqueueWork(() -> io.github.bertie_mc.bertieprogression.athanor.AthanorPonderPlugin.register());
         }

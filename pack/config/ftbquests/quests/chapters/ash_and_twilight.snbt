@@ -11,102 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1C0000000000005A"]
-			icon: {
-				id: "deepwaters:endlesscaves"
-			}
-			id: "3B0000000000000B"
-			rewards: [{
-				id: "3B0000000200000B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B0000000100000B"
-				item: { count: 1, id: "deepwaters:endlesscaves" }
-				type: "item"
-			}]
-			x: -13.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3B0000000000000B"]
-			icon: {
-				id: "deepwaters:aquamarine"
-			}
-			id: "3B0000000000000C"
-			rewards: [{
-				id: "3B0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B0000000100000C"
-				item: { count: 1, id: "deepwaters:aquamarine" }
-				type: "item"
-			}]
-			x: -13.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3B0000000000000C"]
-			icon: {
-				id: "deepwaters:fopal"
-			}
-			id: "3B0000000000000D"
-			rewards: [{
-				id: "3B0000000200000D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				count: 16L
-				id: "3B0000000100000D"
-				item: { count: 1, id: "deepwaters:fopal" }
-				type: "item"
-			}]
-			x: -12.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3B0000000000000D"]
-			icon: {
-				id: "deepwaters:pearl"
-			}
-			id: "3B0000000000000E"
-			rewards: [{
-				id: "3B0000000200000E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B0000000100000E"
-				item: { count: 1, id: "deepwaters:pearl" }
-				type: "item"
-			}]
-			x: -10.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3B0000000000001D"]
-			icon: {
-				id: "deepwaters:stormcall_altar"
-			}
-			id: "3B0000000000000F"
-			rewards: [{
-				id: "3B0000000200000F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B0000000100000F"
-				item: { count: 1, id: "deepwaters:stormcall_altar" }
-				type: "item"
-			}]
-			x: -10.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["3B00000000000020"]
 			icon: {
 				id: "block_factorys_bosses:kraken_tooth"
@@ -126,7 +30,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -145,10 +49,11 @@
 				item: { count: 1, id: "cataclysm:abyss_eye" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1C0000000000005A"]
 			icon: {
 				id: "minecraft:chiseled_sandstone"
 			}
@@ -166,7 +71,7 @@
 				structure: "minecraft:desert_pyramid"
 				type: "structure"
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: -1.5d
 		}
 		{
@@ -189,7 +94,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
@@ -208,10 +113,11 @@
 				item: { count: 1, id: "cataclysm:desert_eye" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
+			dependencies: ["1C0000000000005A"]
 			icon: {
 				id: "twilightforest:alpha_yeti_trophy"
 			}
@@ -230,7 +136,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
+			x: -10.5d
 			y: 1.5d
 		}
 		{
@@ -253,7 +159,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: 1.5d
 		}
 		{
@@ -276,7 +182,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 1.5d
 		}
 		{
@@ -295,7 +201,7 @@
 				item: { count: 1, id: "cataclysm:cursed_eye" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -314,7 +220,7 @@
 				item: { count: 1, id: "cataclysm:storm_eye" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -3.0d
 		}
 		{
@@ -337,10 +243,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["1C0000000000005A"]
 			icon: {
 				id: "twilightforest:knight_phantom_trophy"
 			}
@@ -359,7 +266,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
@@ -382,85 +289,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"3B0000000000000E"
-				"3B00000000000050"
-			]
-			icon: {
-				id: "minecraft:conduit"
-			}
-			id: "3B0000000000001D"
-			rewards: [{
-				id: "3B0000000200001D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [
-				{
-					count: 130L
-					id: "3B0000000100001D"
-					item: { count: 1, id: "minecraft:mossy_stone_bricks" }
-					type: "item"
-				}
-				{
-					count: 21L
-					id: "3B0000000101001D"
-					item: { count: 1, id: "deepwaters:cryssmaquamarine" }
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "3B0000000102001D"
-					item: { count: 1, id: "deepwaters:crysmeaquamarine" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3B0000000103001D"
-					item: { count: 1, id: "deepwaters:cryslaaquamarine" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "3B0000000104001D"
-					item: { count: 1, id: "deepwaters:fopal_pillar" }
-					type: "item"
-				}
-				{
-					id: "3B0000000105001D"
-					item: { count: 1, id: "minecraft:conduit" }
-					type: "item"
-				}
-			]
-			x: -12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3B0000000000000F"]
-			icon: {
-				id: "deepwaters:blackpearl"
-			}
-			id: "3B0000000000001E"
-			rewards: [{
-				id: "3B0000000200001E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "deepwaters:cianea_capillada"
-				icon: {
-					id: "deepwaters:blackpearl"
-				}
-				id: "3B0000000100001E"
-				type: "kill"
-				value: 1L
-			}]
-			x: -9.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["3B0000000000001A"]
@@ -478,11 +308,11 @@
 				item: { count: 1, id: "bertieprogression:sirok_nest_map" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["3B0000000000001E"]
+			dependencies: ["1C0000000000005A"]
 			icon: {
 				id: "bertieprogression:kraken_ship_map"
 			}
@@ -497,7 +327,7 @@
 				item: { count: 1, id: "bertieprogression:kraken_ship_map" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: 0.0d
 		}
 		{
@@ -516,7 +346,7 @@
 				item: { count: 1, id: "bertieprogression:yeti_hideout_map" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 1.5d
 		}
 		{
@@ -535,7 +365,7 @@
 				item: { count: 1, id: "cataclysm:coral_chunk" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -561,7 +391,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -587,7 +417,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -613,7 +443,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -632,7 +462,7 @@
 				item: { count: 1, id: "bertieprogression:abyssal_core" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -651,7 +481,7 @@
 				item: { count: 1, id: "bertieprogression:desert_core" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
@@ -670,7 +500,7 @@
 				item: { count: 1, id: "bertieprogression:frosted_core" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -689,7 +519,7 @@
 				item: { count: 1, id: "bertieprogression:storm_core" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -719,7 +549,7 @@
 				to_observe: "forbidden_arcanus:hephaestus_forge_tier_2"
 				type: "observation"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -742,7 +572,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -765,7 +595,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/dragon/fire)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Fire Dragon Scales\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -785,7 +615,7 @@
 				item: { count: 1, id: "iceandfire:fire_dragon_blood" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -804,7 +634,7 @@
 				item: { count: 1, id: "iceandfire:fire_dragon_heart" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -823,7 +653,7 @@
 				item: { count: 1, id: "bertieprogression:netherly_meal" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -843,7 +673,7 @@
 				item: { count: 1, id: "minecraft:obsidian" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -862,7 +692,7 @@
 				item: { count: 1, id: "minecraft:flint_and_steel" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -881,7 +711,7 @@
 				item: { count: 1, id: "iceandfire:fire_dragon_flesh" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -900,7 +730,7 @@
 				item: { count: 1, id: "malum:living_flesh" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -922,7 +752,7 @@
 				structure: "twilightforest:labyrinth"
 				type: "structure"
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -941,7 +771,7 @@
 				item: { count: 1, id: "twilightforest:meef_stroganoff" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -966,7 +796,7 @@
 				to_observe: "minecraft:nether_portal"
 				type: "observation"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -987,7 +817,7 @@
 				structure: "minecraft:ancient_city"
 				type: "structure"
 			}]
-			x: -18.0d
+			x: -15.0d
 			y: 0.0d
 		}
 		{
@@ -1006,8 +836,8 @@
 				item: { count: 1, id: "minecraft:echo_shard" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 0.0d
+			x: -15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1028,7 +858,7 @@
 				item: { count: 1, id: "avaritia:sculk_crafting_table" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -1048,7 +878,7 @@
 				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -13.5d
 			y: -1.5d
 		}
 		{
@@ -1067,67 +897,7 @@
 				item: { count: 1, id: "minecraft:sculk_shrieker" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3B0000000000000B"]
-			icon: {
-				id: "minecraft:map"
-			}
-			id: "3B0000000000004E"
-			rewards: [{
-				id: "3B0000000200004E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "minecraft:map"
-				}
-				id: "3B0000000100004E"
-				structure: "minecraft:shipwreck"
-				type: "structure"
-			}]
 			x: -13.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3B0000000000004E"]
-			icon: {
-				id: "minecraft:heart_of_the_sea"
-			}
-			id: "3B0000000000004F"
-			rewards: [{
-				id: "3B0000000200004F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B0000000100004F"
-				item: { count: 1, id: "minecraft:heart_of_the_sea" }
-				type: "item"
-			}]
-			x: -12.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3B0000000000004F"]
-			icon: {
-				id: "minecraft:conduit"
-			}
-			id: "3B00000000000050"
-			rewards: [{
-				id: "3B00000002000050"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3B00000001000050"
-				item: { count: 1, id: "minecraft:conduit" }
-				type: "item"
-			}]
-			x: -10.5d
 			y: 1.5d
 		}
 		{
@@ -1146,8 +916,8 @@
 				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 1.5d
+			x: -13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B00000000000051"]
@@ -1165,7 +935,7 @@
 				item: { count: 1, id: "cognition:cognitive_amalgam" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 3.0d
 		}
 		{
@@ -1184,7 +954,7 @@
 				item: { count: 1, id: "cognition:cognitive_alloy" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -10.5d
 			y: 3.0d
 		}
 		{
@@ -1203,7 +973,7 @@
 				item: { count: 1, id: "cognition:cognitive_crystal" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
@@ -1222,10 +992,11 @@
 				item: { count: 1, id: "cognition:astute_assembly" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -7.5d
 			y: 3.0d
 		}
 		{
+			dependencies: ["3B0000000000005D"]
 			icon: {
 				id: "primitiverefined:soulstained_shaft"
 			}
@@ -1240,8 +1011,8 @@
 				item: { count: 1, id: "primitiverefined:soulstained_shaft" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -3.0d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1C0000000000004E"]
@@ -1259,8 +1030,8 @@
 				item: { count: 1, id: "primitiverefined:obsidiansteel_cogwheel_soulstained" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -4.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1C0000000000004F"]
@@ -1278,8 +1049,8 @@
 				item: { count: 1, id: "primitiverefined:p_grid" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -6.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1C0000000000004B"]
@@ -1297,8 +1068,8 @@
 				item: { count: 1, id: "primitiverefined:external_reader" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -7.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1C0000000000004D"]
@@ -1317,8 +1088,8 @@
 				item: { count: 1, id: "primitiverefined:p_controller" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -9.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1339,8 +1110,8 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -4.5d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1361,10 +1132,11 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox_vertical" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: -4.5d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["3B0000000000005D"]
 			icon: {
 				id: "create:sturdy_sheet"
 			}
@@ -1379,8 +1151,8 @@
 				item: { count: 1, id: "create:sturdy_sheet" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.0d
+			x: -6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1C0000000000004B"]
@@ -1398,8 +1170,8 @@
 				item: { count: 1, id: "primitiverefined:p_crafting_grid" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -6.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3B00000000000025"]
@@ -1417,11 +1189,11 @@
 				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["1C0000000000004E", "1C00000000000056", "3B0000000000001E"]
+			dependencies: ["1C0000000000004E" "1C00000000000056"]
 			icon: {
 				id: "twilightforest:exanimate_essence"
 			}
@@ -1436,7 +1208,7 @@
 				item: { count: 1, id: "twilightforest:exanimate_essence" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.5d
 			y: -1.5d
 		}
 		{
@@ -1458,7 +1230,7 @@
 				item: { count: 1, id: "hooked:diamond_hook" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 3.0d
 		}
 		{
@@ -1477,7 +1249,7 @@
 				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: -4.5d
 		}
 		{
@@ -1496,7 +1268,7 @@
 				item: { count: 1, id: "malum:runic_workbench" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
@@ -1515,8 +1287,27 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["3B00000000000055"]
+			icon: {
+				id: "cognition:primordial_assembly"
+			}
+			id: "3B0000000000005D"
+			rewards: [{
+				id: "3B0000000200005D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B0000000100005D"
+				item: { count: 1, id: "cognition:primordial_assembly" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
 		}
 	]
 }

@@ -156,24 +156,6 @@
 		}
 		{
 			icon: {
-				id: "apotheosis:gem_case"
-			}
-			id: "3C0000000000000F"
-			rewards: [{
-				id: "3C0000000200000F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000F"
-				item: { count: 1, id: "apotheosis:gem_case" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 4.5d
-		}
-		{
-			icon: {
 				id: "apothic_enchanting:library"
 			}
 			id: "3C00000000000010"
@@ -279,6 +261,42 @@
 			}]
 			x: 3.0d
 			y: 6.0d
+		}
+		{
+			icon: {
+				id: "anvilcraft:royal_grindstone"
+			}
+			id: "3C00000000000016"
+			rewards: [{
+				id: "3C00000002000016"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000016"
+				item: { count: 1, id: "anvilcraft:royal_grindstone" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "anvilcraft:ember_grindstone"
+			}
+			id: "3C00000000000017"
+			rewards: [{
+				id: "3C00000002000017"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000017"
+				item: { count: 1, id: "anvilcraft:ember_grindstone" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
 		}
 	]
 }

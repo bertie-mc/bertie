@@ -440,18 +440,6 @@
       "required": false
     },
     {
-      "id": "deepwaters:aquamarine_sword",
-      "required": false
-    },
-    {
-      "id": "deepwaters:jellyfish_staff",
-      "required": false
-    },
-    {
-      "id": "deepwaters:fopalsword",
-      "required": false
-    },
-    {
       "id": "discerning_the_eldritch:deep_greatsword",
       "required": false
     },

@@ -112,26 +112,6 @@
       "required": false
     },
     {
-      "id": "deepwaters:crabcooked",
-      "required": false
-    },
-    {
-      "id": "deepwaters:clammeat",
-      "required": false
-    },
-    {
-      "id": "deepwaters:shrimp_cooked",
-      "required": false
-    },
-    {
-      "id": "deepwaters:shrimpmeat",
-      "required": false
-    },
-    {
-      "id": "deepwaters:deepwaters_rolls",
-      "required": false
-    },
-    {
       "id": "endersdelight:shulker_mollusk",
       "required": false
     },

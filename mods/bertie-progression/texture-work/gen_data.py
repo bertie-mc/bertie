@@ -1495,14 +1495,14 @@ write(f"{RIT}/monstrous_eye.json",
 # Onyx Shard: Pastel's midnight new-moon fusion, but bathed in Molten Netherite rather than lava
 # and asking for four more things on the shrine.
 write("data/pastel/recipe/fusion_shrine/onyx_shard.json",
-      {"neoforge:conditions": conds("pastel", "slag", "malum", "deepwaters"),
+      {"neoforge:conditions": conds("pastel", "slag", "malum"),
        "type": "pastel:fusion_shrine",
        "time": 480,
        "experience": 2.0,
        "fluid": {"fluid": "slag:molten_netherite"},
        "ingredients": ["pastel:topaz_shard", "minecraft:amethyst_shard", "pastel:citrine_shard",
                        "pastel:shimmerstone_gem", "malum:mnemonic_fragment",
-                       "deepwaters:aquamarine", "minecraft:prismarine_shard"],
+                       "minecraft:lapis_lazuli", "minecraft:prismarine_shard"],
        "result": {"id": "pastel:onyx_shard"},
        "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
        "world_conditions": {"time_of_day": "midnight", "moon_phase": "new_moon"},
@@ -1541,19 +1541,6 @@ write(f"{R}/create/fermented_spider_eye_mixing.json",
                        {"item": "minecraft:nether_wart"}, {"item": "minecraft:nether_wart"},
                        {"type": "neoforge:single", "amount": 1000, "fluid": "minecraft:water"}],
        "results": [{"id": "minecraft:fermented_spider_eye"}]})
-
-# Deep Waters Key on the Sculk Crafting Table (Avaritia tier 1, a 3x3): a Nautilus Shell core,
-# Deep Alloy corners, Sea Serpent Fangs either side, Mermaid's Gems above and below.
-write(f"{R}/avaritia/deep_waters_key.json",
-      {"neoforge:conditions": conds("avaritia", "slag", "pastel", "iceandfire", "deepwaters"),
-       "type": "avaritia:shaped_table",
-       "tier": 1,
-       "key": {"D": {"item": "slag:deep_alloy"},
-               "M": {"item": "pastel:mermaids_gem"},
-               "F": {"item": "iceandfire:sea_serpent_fang"},
-               "N": {"item": "minecraft:nautilus_shell"}},
-       "pattern": ["DMD", "FNF", "DMD"],
-       "result": {"count": 1, "id": "deepwaters:endlesscaves"}})
 
 write(f"{R}/create/zardius_crucible_mixing.json",
       {"neoforge:conditions": conds("create", "magitech", "malum", "forbidden_arcanus"),
@@ -1623,6 +1610,27 @@ write(f"{R}/malum/apothic_enchanting_table.json",
                 ("minecraft:book", 2)],
                [SP("sacred", 8), SP("arcane", 16), SP("eldritch", 16)],
                "apothic_enchanting:apothic_enchanting_table", 1))
+
+# --- Gem Cutting Table: a Tier-I ritual around a Fletching Table rather than a bench craft, so the
+#     Apotheosis gem benches sit behind Obsidiansteel with the rest of that line. ---
+write("data/apotheosis/recipe/gem_cutting_table.json", DISABLED)
+write(f"{RIT}/gem_cutting_table.json",
+      ritual("minecraft:fletching_table",
+             [("minecraft:shears", 1), ("apotheosis:gem_dust", 3),
+              ("forbidden_arcanus:obsidiansteel_ingot", 2), ("l2complements:storm_core", 1),
+              ("minecraft:smooth_stone", 1)],
+             "apotheosis:gem_cutting_table", 1, tier=1,
+             essences={"aureal": 50, "blood": 2500, "souls": 0}, xp=200))
+
+# --- Gem Case: the altar, around a plain Chest. A stack of Runewood and half a stack of glass is
+#     what the storage costs once it holds gems. ---
+write("data/apotheosis/recipe/gem_case.json", DISABLED)
+write(f"{R}/malum/gem_case.json",
+      infusion("minecraft:chest", 1,
+               [("malum:runewood_planks", 64), ("minecraft:glass", 32),
+                ("apotheosis:gem_dust", 8), ("forbidden_arcanus:obsidiansteel_ingot", 4)],
+               [SP("sacred", 12), SP("arcane", 32), SP("aerial", 16), SP("earthen", 40)],
+               "apotheosis:gem_case", 1))
 
 # Two registries, two tag paths. The Accessories slots validate against
 # data/accessories/tags/item/<slot>.json and never look at #curios:<slot>, so a slot the player
@@ -2477,26 +2485,6 @@ write(f"{RIT}/acolyte_of_deflection.json",
              "bertieprogression:acolyte_of_deflection", 1, tier=1,
              essences={"aureal": 100, "blood": 6000, "souls": 10}, xp=400))
 
-# --- Deep Waters Key: replace the plain 3x3 with a Hephaestus ritual using eight pedestals
-#     (4 + 2 + 2). The 200-experience cost is paid in ink through forge-ink.
-#     forge_tier omitted = any tier: it is the ROOT of the C3 water path, so it must be reachable on
-#     the T1 forge, same reasoning as crafting_license. ---
-write("data/deepwaters/recipe/hovaport.json", DISABLED)
-
-# --- Crowned Jelly: replace the stock recipe's gold with Hallowed Gold and fill the four corners
-#     with Flaming Opal. ---
-write("data/deepwaters/recipe/howa_crow_j.json",
-      shaped(["dad", "bcb", "dad"],
-             {"a": "deepwaters:pearl", "b": "malum:hallowed_gold_ingot",
-              "c": "deepwaters:medusabucket", "d": "deepwaters:fopal"},
-             "deepwaters:crownedjelly"))
-
-# --- Block of Flaming Opal (deepwaters:howafopalblock): the mod already trades 4 gems for the block,
-#     but shapeless. Keep the explicit 2x2 shape. The same 4-in/1-out ratio means the mod's own
-#     unblock recipe (1 block -> 4 gems) stays balanced and is left alone. ---
-write("data/deepwaters/recipe/howafopalblock.json",
-      shaped(["ff", "ff"], {"f": "deepwaters:fopal"}, "deepwaters:fopal_block"))
-
 # --- Snow Queen Trophy duplication: one trophy produces two using the same structure as the Naga
 #     and Lich routes. Extra inputs remain in EMI display order. ---
 write(f"{R}/malum/snow_queen_trophy_dupe.json",
@@ -2544,41 +2532,49 @@ write("data/bertieprogression/tags/item/corals.json",
 for _stock in ("desert_eye", "cursed_eye", "storm_eye", "abyss_eye"):
     write(f"data/cataclysm/recipe/{_stock}.json", DISABLED)
 
-write(f"{RIT}/desert_eye.json",
-      ritual("block_factorys_bosses:sandworm_gauntlet",
-             [("malum:grim_talc", 2), ("minecraft:dead_bush", 2),
-              ("malum:cthonic_gold", 2), ("minecraft:chiseled_sandstone", 2)],
-             "cataclysm:desert_eye", 1))
-write(f"{RIT}/cursed_eye.json",
-      ritual("block_factorys_bosses:ice_gauntlet",
-             [("twilightforest:alpha_yeti_fur", 2), ("minecraft:snowball", 2),
-              ("iceandfire:ectoplasm", 2), ("minecraft:packed_ice", 2)],
-             "cataclysm:cursed_eye", 1))
-write(f"{RIT}/storm_eye.json",
-      ritual("twilightforest:ur_ghast_trophy",
-             [("twilightforest:knightmetal_ingot", 2), ("minecraft:phantom_membrane", 2),
-              ("iceandfire:amphithere_feather", 2), ("minecraft:sea_lantern", 2)],
-             "cataclysm:storm_eye", 1))
-write(f"{RIT}/abyss_eye.json",
-      ritual("deepwaters:blackpearl",
-             [("block_factorys_bosses:kraken_tooth", 2), ("#bertieprogression:corals", 2),
-              ("iceandfire:sea_serpent_fang", 2), ("minecraft:crying_obsidian", 2)],
-             "cataclysm:abyss_eye", 1))
+# The four eyes leave the forge for the Sculk Crafting Table (avaritia:shaped_table tier 1, a 3x3),
+# which is what the four boss lines now converge on. Each keeps its nine ingredients: the trophy at
+# the centre, then each pair placed opposite itself - bottom corners, top corners, top and bottom,
+# left and right, in the order the ritual listed them.
+def _eye(name, main, pairs, result):
+    a, b, c, d = pairs
+    write(f"{R}/avaritia/{name}.json", {
+        "neoforge:conditions": conds("avaritia", *sorted(external_mods(main, result, *pairs))),
+        "type": "avaritia:shaped_table",
+        "tier": 1,
+        "key": {k: ({"tag": v[1:]} if v.startswith("#") else {"item": v})
+                for k, v in {"M": main, "A": a, "B": b, "C": c, "D": d}.items()},
+        "pattern": ["BCB", "DMD", "ACA"],
+        "result": {"id": result, "count": 1},
+    })
+
+_eye("desert_eye", "block_factorys_bosses:sandworm_gauntlet",
+     ("malum:grim_talc", "minecraft:dead_bush",
+      "malum:cthonic_gold", "minecraft:chiseled_sandstone"), "cataclysm:desert_eye")
+_eye("cursed_eye", "block_factorys_bosses:ice_gauntlet",
+     ("twilightforest:alpha_yeti_fur", "minecraft:snowball",
+      "iceandfire:ectoplasm", "minecraft:packed_ice"), "cataclysm:cursed_eye")
+_eye("storm_eye", "twilightforest:ur_ghast_trophy",
+     ("twilightforest:knightmetal_ingot", "minecraft:phantom_membrane",
+      "iceandfire:amphithere_feather", "minecraft:sea_lantern"), "cataclysm:storm_eye")
+_eye("abyss_eye", "minecraft:heart_of_the_sea",
+     ("block_factorys_bosses:kraken_tooth", "#bertieprogression:corals",
+      "iceandfire:sea_serpent_fang", "minecraft:crying_obsidian"), "cataclysm:abyss_eye")
 
 # --- The two remaining finders and the four elemental cores. ---
-# Kraken map: Black Pearl is the catalyst. "any sea serpent goes" -> Ice and Fire's OWN tag, which
+# Kraken map: a Heart of the Sea is the catalyst. "any sea serpent goes" -> Ice and Fire's OWN tag, which
 # already lists all seven scale colours; no bertie tag needed here.
 write(f"{R}/kraken_ship_map.json",
-      {"neoforge:conditions": conds("iceandfire", "irons_spellbooks", "deepwaters", "block_factorys_bosses"),
+      {"neoforge:conditions": conds("iceandfire", "irons_spellbooks", "block_factorys_bosses"),
        "type": "bertieprogression:catalyst_shaped", "category": "misc",
        "key": {"s": {"tag": "iceandfire:scales/sea_serpent"},
-               "p": {"item": "deepwaters:blackpearl"},
+               "p": {"item": "minecraft:heart_of_the_sea"},
                "i": {"item": "minecraft:glow_ink_sac"},
                "m": {"item": "minecraft:map"},
                "r": {"item": "irons_spellbooks:rare_ink"}},
        "pattern": ["sps", "imi", "srs"],
        "result": {"id": "bertieprogression:kraken_ship_map", "count": 1},
-       "catalyst": {"item": "deepwaters:blackpearl"}})
+       "catalyst": {"item": "minecraft:heart_of_the_sea"}})
 
 # Skor hideout map: Snow Queen Trophy is the catalyst (so the trophy is HELD, not spent).
 write(f"{R}/yeti_hideout_map.json",
@@ -2599,9 +2595,9 @@ write(f"{R}/yeti_hideout_map.json",
 write(f"{R}/mechanical/abyssal_core.json",
       mech(["WWPPPWW", "WPOAOPW", "PODCDOP", "PACBCAP", "PODCDOP", "WPOAOPW", "WWPPPWW"],
            {"W": "malum:astral_weave", "P": "malum:soul_stained_steel_plating",
-            "O": "deepwaters:fopal", "A": "deepwaters:aquamarine_block",
+            "O": "minecraft:nautilus_shell", "A": "minecraft:sea_lantern",
             "D": "minecraft:diamond_block", "C": "cataclysm:coral_chunk",
-            "B": "deepwaters:blackpearl"},
+            "B": "minecraft:heart_of_the_sea"},
            "bertieprogression:abyssal_core", 2))
 write(f"{R}/mechanical/desert_core.json",
       mech(["SSSGSSS", "SCRKRCS", "SRCKCRS", "GKKMKKG", "SRCKCRS", "SCRKRCS", "SSSGSSS"],
@@ -3000,11 +2996,11 @@ _soul["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
 write("data/pastel/recipe/pedestal/tier2/cinderous_soulcaller.json", _soul)
 
 # The Flame Eye leaves Cataclysm's own table for the CMY Pedestal: blaze powder down the left,
-# aquamarine down the right, ancient scrap above and below, an Xpetrified Orb at the heart.
+# prismarine crystals down the right, ancient scrap above and below, an Xpetrified Orb at the heart.
 write("data/cataclysm/recipe/flame_eye.json", DISABLED)
 _flame = pedestal(["BSA", "BXA", "BSA"],
                   {"B": "minecraft:blaze_powder", "S": "minecraft:netherite_scrap",
-                   "A": "deepwaters:aquamarine", "X": "forbidden_arcanus:xpetrified_orb"},
+                   "A": "minecraft:prismarine_crystals", "X": "forbidden_arcanus:xpetrified_orb"},
                   {"pastel:cyan": 6, "pastel:magenta": 0, "pastel:yellow": 6,
                    "pastel:black": 0, "pastel:white": 0},
                   "cataclysm:flame_eye", 1, tier="simple", time=200, xp=4.0)
@@ -3757,108 +3753,6 @@ if not _removed or _scan_ok:
         io.open(_p, "w", encoding="utf-8", newline="\n").write(
             _head + _OPEN + _block + _CLOSE + _tail)
 
-# ================================================================ Deep Waters Shrine ponder schematic
-# The scene structure is generated from the SAME grid the matcher uses, and this script ASSERTS the
-# two agree (it parses LAYERS straight out of DeepWatersShrineHandler.java). A ponder that teaches a
-# shrine the handler would then reject is worse than no ponder at all, so the check is load-bearing.
-SHRINE_LAYERS = [
-    ["MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM"],  # L1 floor
-    ["..SBS..", ".M...M.", "S.MMM.S", "B.MPM.B", "S.MMM.S", ".M...M.", "..SBS.."],  # L2
-    [".......", ".M...M.", "..M.M..", "...C...", "..M.M..", ".M...M.", "......."],  # L3 conduit
-    [".......", ".M...M.", "..MMM..", "..MPM..", "..MMM..", ".M...M.", "......."],  # L4
-    ["MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM", "MMMMMMM"],  # L5 roof
-    ["..SLS..", ".....B.", "S.S.S.S", "L...S.L", "SS...SS", ".......", "..SLS.."],  # L6 crystals
-]
-SHRINE_BLOCKS = {
-    "M": "minecraft:mossy_stone_bricks",
-    "P": "deepwaters:fopal_pillar",
-    "C": "minecraft:conduit",
-    "L": "deepwaters:cryslaaquamarine",
-    "B": "deepwaters:crysmeaquamarine",
-    "S": "deepwaters:cryssmaquamarine",
-}
-
-def _assert_shrine_matches_java():
-    """Parse LAYERS out of the handler and fail loudly if it has drifted from SHRINE_LAYERS."""
-    java = os.path.join(ROOT, "src", "main", "java", "com", "berlord", "bertieprogression",
-                        "shrine", "DeepWatersShrineHandler.java")
-    if not os.path.isfile(java):
-        return
-    import re as _re
-    src = open(java, encoding="utf-8").read()
-    body = src.split("String[][] LAYERS = {", 1)[1].split("\n    };", 1)[0]
-    rows = _re.findall(r'"([.MPCLBS]{7})"', body)
-    flat = [r for layer in SHRINE_LAYERS for r in layer]
-    assert rows == flat, (
-        "Deep Waters shrine schematic DRIFT: gen_data.SHRINE_LAYERS != "
-        "DeepWatersShrineHandler.LAYERS\n"
-        f"  java  ({len(rows)} rows): {rows}\n"
-        f"  python({len(flat)} rows): {flat}")
-
-_assert_shrine_matches_java()
-
-def _write_shrine_nbt():
-    """Vanilla structure NBT (gzipped) for the ponder scene: 7 wide x 6 tall x 7 deep."""
-    import gzip, struct
-
-    def _str(s):
-        b = s.encode("utf-8")
-        return struct.pack(">H", len(b)) + b
-
-    def _named(tag_id, name, payload):
-        return bytes([tag_id]) + _str(name) + payload
-
-    palette, index = [], {}
-    for ch, bid in SHRINE_BLOCKS.items():
-        index[ch] = len(palette)
-        palette.append(bid)
-
-    blocks = []
-    for y, layer in enumerate(SHRINE_LAYERS):
-        for z, row in enumerate(layer):          # row 0 = north = z 0
-            for x, ch in enumerate(row):
-                if ch == ".":
-                    continue
-                blocks.append((x, y, z, index[ch]))
-
-    # palette: TAG_List of TAG_Compound {Name:String}
-    pal = b""
-    for bid in palette:
-        pal += _named(8, "Name", _str(bid)) + b"\x00"
-    palette_tag = _named(9, "palette", bytes([10]) + struct.pack(">i", len(palette)) + pal)
-
-    # CRITICAL: `size` and each block's `pos` are TAG_LIST OF TAG_INT (list type 9, element type 3),
-    # NOT TAG_Int_Array (11). StructureTemplate.load reads them with getList(..., Tag.TAG_INT), which
-    # returns an EMPTY list for an int-array — so an int-array version loads a 0x0x0 structure and
-    # logs NOTHING. That produced a silently blank ponder scene. Verified against Create's own
-    # assets/create/ponder/gauges.nbt, which uses list-of-int for both.
-    def _int_list(*vals):
-        return bytes([3]) + struct.pack(">i", len(vals)) + b"".join(struct.pack(">i", v) for v in vals)
-
-    # blocks: TAG_List of TAG_Compound {pos:[list of 3 int], state:Int}
-    blk = b""
-    for x, y, z, st in blocks:
-        pos = _named(9, "pos", _int_list(x, y, z))
-        blk += pos + _named(3, "state", struct.pack(">i", st)) + b"\x00"
-    blocks_tag = _named(9, "blocks", bytes([10]) + struct.pack(">i", len(blocks)) + blk)
-
-    size_tag = _named(9, "size", _int_list(7, len(SHRINE_LAYERS), 7))
-    entities_tag = _named(9, "entities", bytes([10]) + struct.pack(">i", 0))
-    data_version = _named(3, "DataVersion", struct.pack(">i", 3955))   # 1.21.1
-
-    root = _named(10, "", size_tag + entities_tag + palette_tag + blocks_tag
-                  + data_version + b"\x00")
-
-    path = os.path.join(RES, "assets", MODID, "ponder", "deepwaters_shrine.nbt")
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    # mtime=0: gzip writes the clock into its header, which made every run rewrite this
-    # file with identical content and show up as a change in git.
-    with gzip.GzipFile(path, "wb", mtime=0) as f:
-        f.write(root)
-    written.append("assets/bertieprogression/ponder/deepwaters_shrine.nbt")
-
-_write_shrine_nbt()
-
 # ---------------------------------------------------------------- tags
 
 STRIPPED = [f"minecraft:stripped_{w}_log" for w in
@@ -4061,22 +3955,6 @@ lang.update({
     "tooltip.bertieprogression.altar_of_amethyst": "Works best under a full moon, or in lush caves.",
     "message.bertieprogression.forge_formed": "The Brick Forge roars to life!",
     "message.bertieprogression.pedestal_formed": "The darkstone column settles into a pedestal.",
-    # Ponder scene text. Ponder does NOT fall back to the literal passed to .text(...) — it looks up
-    # "<modid>.ponder.<sceneId>.header" / ".text_N", numbered in the order the showText calls run.
-    # Without these the scene shows raw lang keys. Keep in step with ShrinePonderPlugin.
-    "bertieprogression.ponder.deepwaters_shrine.header": "Raising the Deep Waters Shrine",
-    "bertieprogression.ponder.deepwaters_shrine.text_1": "Seven by seven of Mossy Stone Bricks. Build it underwater, in the Deep Waters - nowhere else works.",
-    "bertieprogression.ponder.deepwaters_shrine.text_2": "A Flaming Opal Pillar at the centre, wrapped in a solid three by three, with four posts on the diagonals.",
-    "bertieprogression.ponder.deepwaters_shrine.text_3": "Aquamarine crystals ring the edge - Small at the corners of each face, a Bundle in the middle.",
-    "bertieprogression.ponder.deepwaters_shrine.text_4": "The Conduit sits at the very centre, held in a diagonal lattice. This is the heart of the shrine.",
-    "bertieprogression.ponder.deepwaters_shrine.text_5": "Above the Conduit, the pillar and the posts repeat - but no crystals this time.",
-    "bertieprogression.ponder.deepwaters_shrine.text_6": "Cap it with a second seven by seven roof.",
-    "bertieprogression.ponder.deepwaters_shrine.text_7": "Crown it with crystals. This layer is NOT symmetrical - copy it exactly. The centre stays empty.",
-    "bertieprogression.ponder.deepwaters_shrine.text_8": "Any rotation works. Leave water around the shrine and a clear column above it, or nothing will happen.",
-    "bertieprogression.ponder.deepwaters_shrine.text_9": "Use a Crowned Jelly on the Conduit.",
-    "bertieprogression.ponder.deepwaters_shrine.text_10": "The shrine floods, and a Stormcall Altar rises on a pyramid of Polished Azure Seastone where the Conduit stood.",
-    "message.bertieprogression.shrine_no_space": "not enough space",
-    "message.bertieprogression.shrine_formed": "The shrine floods, and the Stormcall Altar rises.",
     "message.bertieprogression.paper_need_cane": "You need at least 3 Sugar Cane to press paper.",
     "message.bertieprogression.paper_need_slates": "You need two Wood Slates in your inventory to press paper.",
     "message.bertieprogression.no_imbrifer": "Imbrifer (pastel:deeper_down) is not present in this world.",

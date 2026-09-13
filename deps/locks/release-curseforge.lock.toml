@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "3ea0c5edc2fed977d1cfe846a0e224192b06a5db9b3ba425630dc38f9f7cb00e"
+inputs-hash = "19eba777f58624676e7fd7ee4688753e431290c8072198f55c2a037533685c6e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -325,10 +325,6 @@ mod = "curseforge:969423:5731913"
 any = "curseforge:1110803:7759880"
 mod = "curseforge:1110803:7759880"
 
-[components."deep-waters"]
-any = "curseforge:1204184:7329367"
-mod = "curseforge:1204184:7329367"
-
 [components."deeper-and-darker-spellbooks"]
 any = "curseforge:1432746:7897469"
 mod = "curseforge:1432746:7897469"
@@ -352,10 +348,6 @@ mod = "curseforge:969422:5918894"
 [components."diamond-in-the-rough"]
 any = "curseforge:898993:5624841"
 mod = "curseforge:898993:5624841"
-
-[components."dis-enchanting-table"]
-any = "curseforge:933354:6581607"
-mod = "curseforge:933354:6581607"
 
 [components."discerning-the-eldritch"]
 any = "curseforge:1143065:7469786"
@@ -2936,27 +2928,6 @@ provides = ["big_oak_tree_uploaded"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1204184:7329367"]
-name = "deep-waters"
-component = "deep-waters"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "deep-waters-1204184"
-version = "7329367"
-filename = "deepwaters-25_5 neoforge 1_21_1.jar"
-project-id = 1204184
-slug = "deep-waters"
-file-id = 7329367
-provides = ["deepwaters"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -9089,27 +9060,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:933354:6581607"]
-name = "dis-enchanting-table"
-component = "dis-enchanting-table"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "dis-enchanting-table-933354"
-version = "6581607"
-filename = "disenchanting_table-merged-1.21.1-5.0.2.jar"
-project-id = 933354
-slug = "dis-enchanting-table"
-file-id = 6581607
-provides = ["disenchanting_table"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:9leXt4A5:Es84N2XL", "mod-id" = "monolib", "version-range" = "[2.1.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:936713:5733125"]
 name = "emi-enchanting"
 component = "emi-enchanting"
@@ -9786,25 +9736,6 @@ filename = "azurelib-neo-1.21.1-3.1.8.jar"
 project-id = "7zlUOZvb"
 version-id = "4GgJN1LU"
 provides = ["azurelib"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:9leXt4A5:Es84N2XL"]
-name = "monolib"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "9leXt4A5"
-version = "Es84N2XL"
-filename = "monolib-neoforge-1.21.1-4.0.2.jar"
-project-id = "9leXt4A5"
-version-id = "Es84N2XL"
-provides = ["monolib"]
 bundled-provides = []
 required = []
 optional = []

@@ -1,0 +1,52 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "iceandfire"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 1,
+  "key": {
+    "M": {
+      "item": "block_factorys_bosses:ice_gauntlet"
+    },
+    "A": {
+      "item": "twilightforest:alpha_yeti_fur"
+    },
+    "B": {
+      "item": "minecraft:snowball"
+    },
+    "C": {
+      "item": "iceandfire:ectoplasm"
+    },
+    "D": {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "DMD",
+    "ACA"
+  ],
+  "result": {
+    "id": "cataclysm:cursed_eye",
+    "count": 1
+  }
+}

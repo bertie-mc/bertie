@@ -2413,6 +2413,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["2B00000000000053"]
 			icon: {
 				id: "minecraft:emerald"
 			}
@@ -2428,8 +2429,8 @@
 				item: { count: 1, id: "minecraft:emerald" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: -3.0d
+			x: -19.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2B0000000000000B"]
@@ -2490,6 +2491,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["2B00000000000063"]
 			icon: {
 				id: "apotheosis:salvaging_table"
 			}
@@ -2508,6 +2510,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["3C0000000000000A"]
 			icon: {
 				id: "apotheosis:gem_cutting_table"
 			}
@@ -2523,6 +2526,43 @@
 				type: "item"
 			}]
 			x: 1.5d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "irons_spellbooks:arcane_ingot"
+			}
+			id: "2B0000000000006B"
+			rewards: [{
+				id: "2B0000000200006B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100006B"
+				item: { count: 1, id: "irons_spellbooks:arcane_ingot" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0000000000000B"]
+			icon: {
+				id: "apotheosis:gem_case"
+			}
+			id: "3C0000000000000F"
+			rewards: [{
+				id: "3C0000000200000F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C0000000100000F"
+				item: { count: 1, id: "apotheosis:gem_case" }
+				type: "item"
+			}]
+			x: 0.0d
 			y: -4.5d
 		}
 	]

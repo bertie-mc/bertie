@@ -417,6 +417,8 @@
 	quest.2B00000000000069.title: "A Stack of Emeralds"
 	quest.2B0000000000006A.quest_desc: ["Nine Obsidian - the table is built around them, and nothing else in the line wants it."]
 	quest.2B0000000000006A.title: "Obsidian"
+	quest.2B0000000000006B.quest_desc: ["Deorum infused with eight Arcane Essence. The spellbook line runs on it."]
+	quest.2B0000000000006B.title: "Arcane Ingot"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"
@@ -483,16 +485,6 @@
 	quest.3B00000000000001.title: "Scroll Forge"
 	quest.3B00000000000002.quest_desc: ["What is left when the arcanetic line meets something that was never alive."]
 	quest.3B00000000000002.title: "Exanimate Essence"
-	quest.3B0000000000000B.quest_desc: ["Claim the Deep Waters Key and open the way below."]
-	quest.3B0000000000000B.title: "Deep Waters Key"
-	quest.3B0000000000000C.quest_desc: ["Cut Aquamarine out of the Deep Waters stone."]
-	quest.3B0000000000000C.title: "Mine Aquamarine"
-	quest.3B0000000000000D.quest_desc: ["Sixteen Flaming Opal. The shrine drinks a lot of it."]
-	quest.3B0000000000000D.title: "Mine Flaming Opal"
-	quest.3B0000000000000E.quest_desc: ["Find a Pearl in the deep."]
-	quest.3B0000000000000E.title: "Get a Pearl"
-	quest.3B0000000000000F.quest_desc: ["Raise the shrine around a Conduit, down in the Deep Waters and nowhere else: a mossy floor and roof, a Flaming Opal Pillar above and below the Conduit, four diagonal posts, and aquamarine crystals ringing the base and crowning the top. Then use a Crowned Jelly on the Conduit. If it has room - water below, six blocks out, and a clear column overhead - the whole thing floods and a Stormcall Altar rises where the Conduit stood."]
-	quest.3B0000000000000F.title: "Build the Shrine"
 	quest.3B00000000000010.quest_desc: ["Hunt the Kraken in the open ocean."]
 	quest.3B00000000000010.title: "Nerakyss, The Kraken"
 	quest.3B00000000000011.quest_desc: ["Take the Abyss Eye from the drowned depths."]
@@ -519,10 +511,6 @@
 	quest.3B0000000000001B.title: "The Knight Phantoms"
 	quest.3B0000000000001C.quest_desc: ["Climb the Dark Tower and bring down the Ur-Ghast."]
 	quest.3B0000000000001C.title: "The Ur-Ghast"
-	quest.3B0000000000001D.quest_desc: ["Gather the whole shrine before you start placing it, because it only counts when the last block lands: 130 Mossy Stone Bricks for the floor and roof, the aquamarine crystals that ring and crown it, two Flaming Opal Pillars, and the Conduit at its heart."]
-	quest.3B0000000000001D.title: "The Shrine in pieces"
-	quest.3B0000000000001E.quest_desc: ["The shrine is lit and the deep has noticed. Hunt down the Man O' War."]
-	quest.3B0000000000001E.title: "Man O' War"
 	quest.3B0000000000001F.quest_desc: ["Take the Gorgon's head to the bench and read the sand with it: two Death Worm Chitin above and below, Glow Ink Sacs either side of an Empty Map, Rare Ink beneath. The head is only the lens - it stays in the grid. Craft it as a player and the chart reads itself; let a machine craft it and you must right-click it yourself."]
 	quest.3B0000000000001F.title: "Sirok's Nest Map"
 	quest.3B00000000000020.quest_desc: ["Sea Serpent Scales around an Empty Map, Glow Ink either side, Rare Ink beneath - and a Black Pearl at the top, which the chart only reads and does not spend. It charts the Kraken's ship."]
@@ -575,12 +563,6 @@
 	quest.3B0000000000004C.title: "Ancient Knowledge Fragment"
 	quest.3B0000000000004D.quest_desc: ["Silk-touch a Sculk Shrieker out of the deep dark."]
 	quest.3B0000000000004D.title: "Sculk Shrieker"
-	quest.3B0000000000004E.quest_desc: ["Find a shipwreck. The treasure map inside points at the rest."]
-	quest.3B0000000000004E.title: "Locate a Shipwreck"
-	quest.3B0000000000004F.quest_desc: ["Dig up the buried treasure the map marks."]
-	quest.3B0000000000004F.title: "Heart of the Sea"
-	quest.3B00000000000050.quest_desc: ["Craft a Conduit - a Heart of the Sea inside eight Nautilus Shells."]
-	quest.3B00000000000050.title: "Conduit"
 	quest.3B00000000000051.quest_desc: ["Mixed, not crafted: two copper dusts, lapis, and a quartz of either kind."]
 	quest.3B00000000000051.title: "Cognitive Flux"
 	quest.3B00000000000052.quest_desc: ["Smelt the flux."]
@@ -592,6 +574,8 @@
 	quest.3B0000000000005B.title: "Cognitive Hook"
 	quest.3B0000000000005C.quest_desc: ["It points at any biome you name. The deep dark is easier to leave than to find."]
 	quest.3B0000000000005C.title: "Nature's Compass"
+	quest.3B0000000000005D.quest_desc: ["Cognition's last assembly. The Primitive Controller is built around one."]
+	quest.3B0000000000005D.title: "Primordial Assembly"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"
@@ -603,10 +587,12 @@
 	quest.3C00000000000008.title: "The Apothic Enchanting Table"
 	quest.3C00000000000009.title: "Enchanting Table of the Raven"
 	quest.3C0000000000000A.title: "The Salvaging Table"
+	quest.3C0000000000000B.quest_desc: ["A Tier-I ritual around a Fletching Table: Shears, 3 Gem Dust, 2 Obsidiansteel, a Crystal of Storm and Smooth Stone (200 ink / 50 aureal / 2500 blood)."]
 	quest.3C0000000000000B.title: "The Gem Cutting Table"
 	quest.3C0000000000000C.title: "The Simple Reforging Table"
 	quest.3C0000000000000D.title: "The Reforging Table"
 	quest.3C0000000000000E.title: "The Augmenting Table"
+	quest.3C0000000000000F.quest_desc: ["The altar, around a plain Chest: 64 Runewood Planks, 32 Glass, 8 Gem Dust and 4 Obsidiansteel (12 Sacred / 32 Arcane / 16 Aerial / 40 Earthen)."]
 	quest.3C0000000000000F.title: "The Gem Case"
 	quest.3C00000000000010.title: "The Enchantment Library"
 	quest.3C00000000000011.title: "The Library of Alexandria"
@@ -614,6 +600,8 @@
 	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
 	quest.3C00000000000014.title: "The Gem Case of House Fabergé"
 	quest.3C00000000000015.title: "The EnderIO Enchanter"
+	quest.3C00000000000016.title: "The Royal Grindstone"
+	quest.3C00000000000017.title: "The Ember Grindstone"
 	quest.4B00000000000001.quest_desc: ["Placeholder root - this chapter has no content yet."]
 	quest.4B00000000000001.title: "Echo and Below"
 	quest.4B00000000000002.quest_desc: ["Reach the Otherside."]
@@ -2257,8 +2245,6 @@
 	quest.7B00000000000052.title: "Warden Mage Set"
 	quest.7B00000000000053.quest_desc: ["Each worn piece grants +0.05 movement speed and immunity to Blindness and Darkness (full set +0.2 speed)."]
 	quest.7B00000000000053.title: "Warden Set"
-	quest.7B00000000000054.quest_desc: ["While worn: grants Dolphin's Grace (faster swimming)."]
-	quest.7B00000000000054.title: "Manowar Crown Set"
 	quest.7B00000000000055.quest_desc: ["Helmet: While worn: +150 max mana, +15% Eldritch spell power, +5% spell power, +5% spell resist; holds one imbued-spell slot. Leggings: While worn: +150 max mana, +15% Eldritch spell power, +5% spell power, +5% mana regen."]
 	quest.7B00000000000055.title: "Apothic Acolyte Set"
 	quest.7B00000000000056.quest_desc: ["While worn: +150 max mana, +15% Blood spell power, +5% Occult spell power, +5% spell power."]
@@ -2741,12 +2727,6 @@
 	quest.7B0000000000014D.title: "Sonorous Staff"
 	quest.7B0000000000014E.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
 	quest.7B0000000000014E.title: "Warden Sword"
-	quest.7B00000000000150.quest_desc: ["No special properties (vanilla-equivalent stats only)."]
-	quest.7B00000000000150.title: "Aquamarine Sword"
-	quest.7B00000000000151.quest_desc: ["On hit: sets the target on fire for 15 seconds."]
-	quest.7B00000000000151.title: "Fopalsword"
-	quest.7B00000000000152.quest_desc: ["Right-click to summon a jellyfish companion."]
-	quest.7B00000000000152.title: "Jellyfish Staff"
 	quest.7B00000000000153.quest_desc: ["+5% spell power; no imbued spell or on-hit effect."]
 	quest.7B00000000000153.title: "Broken Legends Blade"
 	quest.7B00000000000154.quest_desc: ["Imbued with Blades of Rancor (castable while held); +10% Occult, +5% Blood spell power, +5% Goliath Slayer. Awakens into Awakened Cataclysm using malicious energy."]

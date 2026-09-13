@@ -1,0 +1,52 @@
+{
+  "essences": {
+    "aureal": 50,
+    "blood": 2500,
+    "souls": 0,
+    "experience": 200
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:shears"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "apotheosis:gem_dust"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "forbidden_arcanus:obsidiansteel_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:storm_core"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:smooth_stone"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "minecraft:fletching_table"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "apotheosis:gem_cutting_table",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

@@ -6,44 +6,43 @@
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "deepwaters"
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
     },
     {
       "type": "neoforge:mod_loaded",
       "modid": "iceandfire"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "slag"
     }
   ],
   "type": "avaritia:shaped_table",
   "tier": 1,
   "key": {
-    "D": {
-      "item": "slag:deep_alloy"
-    },
     "M": {
-      "item": "pastel:mermaids_gem"
+      "item": "minecraft:heart_of_the_sea"
     },
-    "F": {
+    "A": {
+      "item": "block_factorys_bosses:kraken_tooth"
+    },
+    "B": {
+      "tag": "bertieprogression:corals"
+    },
+    "C": {
       "item": "iceandfire:sea_serpent_fang"
     },
-    "N": {
-      "item": "minecraft:nautilus_shell"
+    "D": {
+      "item": "minecraft:crying_obsidian"
     }
   },
   "pattern": [
+    "BCB",
     "DMD",
-    "FNF",
-    "DMD"
+    "ACA"
   ],
   "result": {
-    "count": 1,
-    "id": "deepwaters:endlesscaves"
+    "id": "cataclysm:abyss_eye",
+    "count": 1
   }
 }

@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 1,
+  "key": {
+    "M": {
+      "item": "block_factorys_bosses:sandworm_gauntlet"
+    },
+    "A": {
+      "item": "malum:grim_talc"
+    },
+    "B": {
+      "item": "minecraft:dead_bush"
+    },
+    "C": {
+      "item": "malum:cthonic_gold"
+    },
+    "D": {
+      "item": "minecraft:chiseled_sandstone"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "DMD",
+    "ACA"
+  ],
+  "result": {
+    "id": "cataclysm:desert_eye",
+    "count": 1
+  }
+}
