@@ -19,6 +19,7 @@ import io.github.bertie_mc.emi.integration.dungeonsdelight.DungeonsDelightEmiMod
 import io.github.bertie_mc.emi.integration.enderio.EnderIOEmiModule;
 import io.github.bertie_mc.emi.integration.enigmaticlegacyplus.EnigmaticLegacyPlusEmiModule;
 import io.github.bertie_mc.emi.integration.expandeddelight.ExpandedDelightEmiModule;
+import io.github.bertie_mc.emi.integration.farmersdelight.FarmersDelightDuplicateEmiModule;
 import io.github.bertie_mc.emi.integration.farmerspizzeria.FarmersPizzeriaEmiModule;
 import io.github.bertie_mc.emi.integration.forbiddenarcanus.ForbiddenArcanusEmiModule;
 import io.github.bertie_mc.emi.integration.hostilenetworks.HostileNetworksEmiModule;
@@ -90,6 +91,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("hostilenetworks", () -> HostileNetworksEmiModule.register(registry));
         success &= run("crabbersdelight", () -> CrabbersDelightEmiModule.register(registry));
         success &= run("minersdelight", () -> MinersDelightEmiModule.register(registry));
+        success &= run("farmersdelight", () -> FarmersDelightDuplicateEmiModule.register(registry));
         success &= run("alexsmobs", () -> AlexsMobsEmiModule.register(registry));
         success &= run("quark", () -> QuarkEmiModule.register(registry));
         success &= run("zeta", () -> ZetaHintsEmiModule.register(registry));

@@ -9,14 +9,17 @@ import io.github.bertie_mc.emi.framework.Categories;
 import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
 import io.github.bertie_mc.emi.framework.MachineDescriptor;
 import io.github.bertie_mc.emi.framework.Recipes;
-import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.BrewAlchemistCauldronRecipe;
 import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.EmptyAlchemistCauldronRecipe;
 import io.redspace.ironsspellbooks.recipe_types.alchemist_cauldron.FillAlchemistCauldronRecipe;
-import net.neoforged.neoforge.fluids.FluidStack;
 
 /**
- * Iron's Spellbooks Alchemist Cauldron — three recipe types, all on {@code irons_spellbooks:alchemist_cauldron}:
- * brew (fluid + item -> fluids [+ byproduct]), fill (item -> fluid + returned item), empty (item + fluid -> item).
+ * Iron's Spellbooks Alchemist Cauldron — fill (item -> fluid + returned item) and empty (item + fluid
+ * -> item), both on {@code irons_spellbooks:alchemist_cauldron}.
+ *
+ * <p>Brewing is deliberately absent. Extra Mod Integrations ships an Iron's Spellbooks module that
+ * already covers it, along with the Scroll Forge, the Arcane Anvil and a page per spell, so a brew
+ * category here only produced a second tab showing the same recipes. It covers neither fill nor
+ * empty, which is what is left.
  */
 public final class IronsSpellbooksEmiModule {
     private IronsSpellbooksEmiModule() {}
@@ -24,18 +27,6 @@ public final class IronsSpellbooksEmiModule {
     private static final String CAULDRON = "irons_spellbooks:alchemist_cauldron";
 
     public static void register(EmiRegistry reg) {
-        EmiRecipeCategory brew = Categories.machine(reg, "irons_cauldron_brew", CAULDRON, "Alchemist Cauldron: Brew");
-        Recipes.forEach(reg.getRecipeManager(), BrewAlchemistCauldronRecipe.class, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
-            d.fluidIn(NeoForgeEmiStack.of(r.fluidIn()));
-            d.itemIn(EmiIngredient.of(r.reagent()));
-            for (FluidStack f : r.results()) {
-                d.fluidOut(NeoForgeEmiStack.of(f));
-            }
-            r.byproduct().ifPresent(bp -> d.itemOut(EmiStack.of(bp)));
-            reg.addRecipe(new GenericEmiRecipe(brew, id, d));
-        });
-
         EmiRecipeCategory fill = Categories.machine(reg, "irons_cauldron_fill", CAULDRON, "Alchemist Cauldron: Fill");
         Recipes.forEach(reg.getRecipeManager(), FillAlchemistCauldronRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
