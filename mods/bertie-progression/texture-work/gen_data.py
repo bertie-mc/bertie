@@ -2914,6 +2914,18 @@ write("data/oritech/recipe/refinery/siliconwashing.json",
        "ingredients": [{"tag": "minecraft:sand"}],
        "results": [{"count": 4, "id": "refinedstorage:silicon"}], "time": 160})
 
+# Haze Steel is not steel. It shares a name with Mekanism's only by accident, and leaving it in
+# the shared tags made every "any steel" recipe accept it. The tag pass below cannot do this - it
+# only strips ids that are HIDDEN, and Haze Steel is kept - so it is named here.
+for _steel_tag, _keep in (
+        ("data/c/tags/item/ingots/steel.json",
+         ["mekanism:ingot_steel", "oritech:biosteel_ingot"]),
+        ("data/c/tags/item/nuggets/steel.json", ["mekanism:nugget_steel"]),
+):
+    write(_steel_tag,
+          {"replace": True,
+           "values": [{"id": _i, "required": False} for _i in _keep]})
+
 # Ghasmati is not rice - it is a Nether crop that happens to cook like one, and the shared crop
 # tag was the only thing making the two interchangeable. Replaced with rice alone.
 write("data/c/tags/item/crops/rice.json",
@@ -3021,12 +3033,20 @@ write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",
        "during_crafting_effects": ["nothing", "visual_explosions_on_shrine"],
        "finish_crafting_effect": "single_visual_explosion_on_shrine"})
 
-# Two mods ship a Rose Gold Ingot. Haze n Stuff's gets a name of its own so the pack can tell
-# them apart at a glance, and it is no longer a crafting-table item: the Clibano cooks Slag n'
-# Embers' Rose Gold together with a Rose Quartz to make it.
+# Haze n Stuff overlaps four materials by name. Each gets a name of its own so the pack can tell
+# them apart at a glance. Rose Gold is no longer a crafting-table item either: the Clibano cooks
+# Slag n' Embers' Rose Gold together with a Rose Quartz to make it.
+#
+# This file is GENERATED. Cross-mod renames for hazennstuff belong here, not hand-added to the
+# asset - a hand-added entry is silently erased by the next run of this script.
 write("assets/hazennstuff/lang/en_us.json",
       {"item.hazennstuff.rose_gold_ingot": "Rosest Gold Ingot",
-       "material.hazennstuff.rose_gold": "Rosest Gold"})
+       "material.hazennstuff.rose_gold": "Rosest Gold",
+       "item.hazennstuff.rose_quartz": "Rosest Quartz",
+       "item.hazennstuff.stardust": "Cosmic Dust",
+       "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
+       "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
+       "material.hazennstuff.steel": "Haze Steel"})
 write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
 write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
     "type": "forbidden_arcanus:clibano_combustion",
@@ -3671,6 +3691,10 @@ else:
                     _union.append(_v)
         def _id_of(_v):
             return _v.get("id") if isinstance(_v, dict) else _v
+        if _tp in written:
+            # Authored above, deliberately. The strip below only knows about HIDDEN ids, so it
+            # would undo a hand-written split like Haze Steel leaving c:ingots/steel.
+            continue
         if not any(_id_of(_v) in _hidden for _v in _union):
             continue
         _kept = [_v for _v in _union if _id_of(_v) not in _hidden]
@@ -3687,7 +3711,9 @@ else:
                 _out.append(_v)
         write(_tp, {"replace": True, "values": _out})
         _new_tags.append(_tp)
-    for _stale in sorted(set(_old_tags) - set(_new_tags)):
+    # A tag this run AUTHORED is not stale even though the strip skipped it - deleting it would
+    # throw away the hand-written split that was the whole reason for skipping.
+    for _stale in sorted(set(_old_tags) - set(_new_tags) - set(written)):
         _abs = os.path.join(RES, _stale.replace("/", os.sep))
         if os.path.isfile(_abs):
             os.remove(_abs)
