@@ -1,0 +1,54 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "forbidden_arcanus:stellarite_piece",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:stellarite_block",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:stella_arcanum",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:eternal_stella",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:dark_nether_star",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_star",
+      "required": false
+    },
+    {
+      "id": "minecraft:bedrock",
+      "required": false
+    },
+    {
+      "id": "minecraft:obsidian",
+      "required": false
+    },
+    {
+      "id": "minecraft:crying_obsidian",
+      "required": false
+    },
+    {
+      "id": "minecraft:end_portal_frame",
+      "required": false
+    },
+    {
+      "id": "minecraft:ender_chest",
+      "required": false
+    },
+    {
+      "id": "minecraft:respawn_anchor",
+      "required": false
+    },
+    "#forbidden_arcanus:hephaestus_forges"
+  ]
+}

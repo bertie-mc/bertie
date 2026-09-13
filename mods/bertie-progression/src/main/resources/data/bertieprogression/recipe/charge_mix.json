@@ -9,7 +9,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:gems/quartz"
+      "item": "minecraft:quartz"
     },
     {
       "item": "minecraft:charcoal"

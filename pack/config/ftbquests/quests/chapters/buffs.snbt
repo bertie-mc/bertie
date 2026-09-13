@@ -30,24 +30,6 @@
 		}
 		{
 			icon: {
-				id: "minecraft:enchanting_table"
-			}
-			id: "3C00000000000001"
-			rewards: [{
-				id: "3C00000002000001"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000001"
-				item: { count: 1, id: "minecraft:enchanting_table" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			icon: {
 				id: "pastel:enchanter"
 			}
 			id: "3C00000000000002"
@@ -120,24 +102,6 @@
 		}
 		{
 			icon: {
-				id: "apothic_enchanting:apothic_enchanting_table"
-			}
-			id: "3C00000000000008"
-			rewards: [{
-				id: "3C00000002000008"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000008"
-				item: { count: 1, id: "apothic_enchanting:apothic_enchanting_table" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			icon: {
 				id: "apothic_enchanting:raven_enchanting_table"
 			}
 			id: "3C00000000000009"
@@ -153,60 +117,6 @@
 			}]
 			x: 3.0d
 			y: 7.5d
-		}
-		{
-			icon: {
-				id: "apotheosis:salvaging_table"
-			}
-			id: "3C0000000000000A"
-			rewards: [{
-				id: "3C0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000A"
-				item: { count: 1, id: "apotheosis:salvaging_table" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.0d
-		}
-		{
-			icon: {
-				id: "apotheosis:gem_cutting_table"
-			}
-			id: "3C0000000000000B"
-			rewards: [{
-				id: "3C0000000200000B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000B"
-				item: { count: 1, id: "apotheosis:gem_cutting_table" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			icon: {
-				id: "apotheosis:simple_reforging_table"
-			}
-			id: "3C0000000000000C"
-			rewards: [{
-				id: "3C0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000C"
-				item: { count: 1, id: "apotheosis:simple_reforging_table" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
 		}
 		{
 			icon: {

@@ -413,6 +413,10 @@
 	quest.2B00000000000067.title: "The Emerald Totem"
 	quest.2B00000000000068.quest_desc: ["Defeat Arion, Tyrant of the Emerald Wrath. He fights twice: the ravager falls first, and the soldat that rises from it carries his heart."]
 	quest.2B00000000000068.title: "Slay Arion"
+	quest.2B00000000000069.quest_desc: ["A full stack. Emerald Slates, the Totem and the Obelisk between them ask for more than a village will hand over."]
+	quest.2B00000000000069.title: "A Stack of Emeralds"
+	quest.2B0000000000006A.quest_desc: ["Nine Obsidian - the table is built around them, and nothing else in the line wants it."]
+	quest.2B0000000000006A.title: "Obsidian"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"
@@ -586,7 +590,8 @@
 	quest.3B00000000000055.quest_desc: ["Three alloys onto a crystal, a splash of Timeless Slurry, and a press."]
 	quest.3B00000000000055.title: "The Astute Assembly"
 	quest.3B0000000000005B.title: "Cognitive Hook"
-	quest.3C00000000000001.title: "The Enchanting Table"
+	quest.3B0000000000005C.quest_desc: ["It points at any biome you name. The deep dark is easier to leave than to find."]
+	quest.3B0000000000005C.title: "Nature's Compass"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"
@@ -594,6 +599,7 @@
 	quest.3C00000000000005.title: "The Precision Dispeller"
 	quest.3C00000000000006.title: "The Soulbinding Brazier"
 	quest.3C00000000000007.title: "The Runic Workbench"
+	quest.3C00000000000008.quest_desc: ["The only enchanting table the pack ships. A spirit infusion around nine Obsidian: 8 Diamonds, 4 Soulwoven Silk, 4 Mundabitur Dust, 4 Amethyst Shards and 2 Books (8 Sacred / 16 Arcane / 16 Eldritch)."]
 	quest.3C00000000000008.title: "The Apothic Enchanting Table"
 	quest.3C00000000000009.title: "Enchanting Table of the Raven"
 	quest.3C0000000000000A.title: "The Salvaging Table"

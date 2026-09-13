@@ -336,6 +336,14 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Recipe override: its enchanting table is the pack's only one, and it costs a spirit altar.
+[[dependencies.${mod_id}]]
+modId="apothic_enchanting"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Loot override: the Rooted Boots leave the mimic's loot table.
 [[dependencies.${mod_id}]]
 modId="artifacts"

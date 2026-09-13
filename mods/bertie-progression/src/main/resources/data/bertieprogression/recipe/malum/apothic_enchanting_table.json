@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:obsidian",
+    "count": 9
+  },
+  "extraInputs": [
+    {
+      "item": "minecraft:diamond",
+      "count": 8
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 4
+    },
+    {
+      "item": "forbidden_arcanus:mundabitur_dust",
+      "count": 4
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "count": 4
+    },
+    {
+      "item": "minecraft:book",
+      "count": 2
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:sacred",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 16
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "apothic_enchanting:apothic_enchanting_table",
+    "count": 1
+  }
+}

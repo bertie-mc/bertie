@@ -1,0 +1,66 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "malum:runewood_planks"
+    },
+    "A": {
+      "item": "cataclysm:ancient_metal_block"
+    },
+    "S": {
+      "item": "malum:soulwoven_silk"
+    },
+    "W": {
+      "item": "l2complements:captured_wind"
+    },
+    "F": {
+      "item": "pastel:incandescent_essence"
+    },
+    "E": {
+      "item": "twilightforest:borer_essence"
+    },
+    "C": {
+      "item": "pastel:frostbite_essence"
+    }
+  },
+  "pattern": [
+    "RRARR",
+    "SRRRS",
+    "SWRWS",
+    "FEREF",
+    "CRRRC"
+  ],
+  "result": {
+    "id": "malum:runic_workbench",
+    "count": 1
+  },
+  "show_notification": true
+}

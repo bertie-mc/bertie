@@ -1602,6 +1602,28 @@ write("data/irons_spellbooks/recipe/alchemist_cauldron.json",
               "C": "twilightforest:carminite_block"},
              "irons_spellbooks:alchemist_cauldron"))
 
+# --- Runic Workbench: Malum's own infusion is replaced by a 5x5 wall of Runewood around a Block
+#     of Ancient Metal, wound with Soulwoven Silk and one essence from each of the four elements. ---
+write("data/malum/recipe/spirit_infusion/runic_workbench.json", DISABLED)
+write(f"{R}/runic_workbench.json",
+      mech(["RRARR", "SRRRS", "SWRWS", "FEREF", "CRRRC"],
+           {"R": "malum:runewood_planks", "A": "cataclysm:ancient_metal_block",
+            "S": "malum:soulwoven_silk", "W": "l2complements:captured_wind",
+            "F": "pastel:incandescent_essence", "E": "twilightforest:borer_essence",
+            "C": "pastel:frostbite_essence"},
+           "malum:runic_workbench"))
+
+# --- Apothic Enchanting Table: it is the pack's only enchanting table now, so it costs an altar
+#     rather than a bench - nine Obsidian infused with diamonds, silk, dust, amethyst and books. ---
+write("data/apothic_enchanting/recipe/apothic_enchanting_table.json", DISABLED)
+write(f"{R}/malum/apothic_enchanting_table.json",
+      infusion("minecraft:obsidian", 9,
+               [("minecraft:diamond", 8), ("malum:soulwoven_silk", 4),
+                ("forbidden_arcanus:mundabitur_dust", 4), ("minecraft:amethyst_shard", 4),
+                ("minecraft:book", 2)],
+               [SP("sacred", 8), SP("arcane", 16), SP("eldritch", 16)],
+               "apothic_enchanting:apothic_enchanting_table", 1))
+
 # Two registries, two tag paths. The Accessories slots validate against
 # data/accessories/tags/item/<slot>.json and never look at #curios:<slot>, so a slot the player
 # holds through Accessories - which is all twelve of the ones bound to them - sees nothing unless
@@ -2855,13 +2877,32 @@ write("data/c/tags/item/gems/quartz.json",
 #     furnace will not do it but every machine smelter will. Oritech's refinery route survives,
 #     re-pointed at the silicon that stayed.
 write("data/refinedstorage/recipe/silicon.json", DISABLED)
+# Plain Nether quartz only. #c:gems/quartz also carries Malum's Natural Quartz, which grows on a
+# farmable cluster and made the whole line free.
 write("data/bertieprogression/recipe/charge_mix.json",
       {"neoforge:conditions": conds("oritech"), "type": "minecraft:crafting_shapeless",
        "category": "misc",
-       "ingredients": [{"tag": "c:gems/quartz"},
+       "ingredients": [{"item": "minecraft:quartz"},
                        {"item": "minecraft:charcoal"}, {"item": "minecraft:charcoal"}],
        "result": {"id": "oritech:raw_silicon", "count": 1}})
+write("data/oritech/recipe/crafting/alloy/rawsilicon.json", DISABLED)
 write("data/oritech/recipe/silicon_from_smelting_raw_silicon.json", DISABLED)
+
+# The SAG Mill handed silicon out as ore-processing chaff, which is the whole Charge Mix line
+# bypassed. Clay and redstone keep their real products without it; sand produced nothing else, so
+# there is no recipe left once the silicon goes.
+write("data/enderio/recipe/sag_milling/sand.json", DISABLED)
+write("data/enderio/recipe/sag_milling/clay.json",
+      {"neoforge:conditions": conds("enderio"), "type": "enderio:sag_milling", "energy": 2400,
+       "input": {"item": "minecraft:clay"},
+       "outputs": [{"item": {"count": 2, "id": "minecraft:clay_ball"}},
+                   {"chance": 0.1, "item": {"count": 1, "id": "minecraft:clay_ball"}}]})
+write("data/enderio/recipe/sag_milling/redstone_ore.json",
+      {"neoforge:conditions": conds("enderio"), "type": "enderio:sag_milling", "energy": 2400,
+       "input": {"tag": "c:ores/redstone"},
+       "outputs": [{"item": {"count": 8, "id": "minecraft:redstone"}},
+                   {"chance": 0.2, "item": {"count": 1, "id": "minecraft:redstone"}},
+                   {"chance": 0.15, "item": {"count": 1, "id": "minecraft:cobblestone"}}]})
 write("data/bertieprogression/recipe/silicon_from_blasting_charge_mix.json",
       {"neoforge:conditions": conds("oritech", "refinedstorage"), "type": "minecraft:blasting",
        "category": "misc", "cookingtime": 100, "experience": 0.5,
@@ -3676,12 +3717,14 @@ if not _removed or _scan_ok:
         for _i in sorted(i for i in _removed_ids if i.split(":")[0] == _fn[:-3]):
             _l = _leaks.get(_i)
             if _l:
-                _body.append(f"- **{_i}** — taken out of {len(_l)} loot table(s):")
+                _how = (f"redirected to {_MERGE[_i]} in" if _i in _MERGE else "taken out of")
+                _body.append(f"- **{_i}** — {_how} {len(_l)} loot table(s):")
                 _body += [f"  - `{x}`" for x in _l[:8]]
                 if len(_l) > 8:
                     _body.append(f"  - ...and {len(_l) - 8} more")
-        _block = ("\n\n## Loot\n\nLoot tables that handed one of these out. Each is re-emitted "
-                  "without the entry, so the drop is gone as well as the recipe.\n\n"
+        _block = ("\n\n## Loot\n\nLoot tables that handed one of these out. A removed id is "
+                  "re-emitted without the entry, so the drop goes the way the recipe did; a merged "
+                  "one is re-emitted naming its winner.\n\n"
                   + ("\n".join(_body) if _body else "_None._") + "\n\n")
         _head, _rest = _src.split(_OPEN, 1)
         _tail = _rest.split(_CLOSE, 1)[1]
