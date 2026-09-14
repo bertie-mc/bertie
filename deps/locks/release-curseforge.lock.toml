@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "19eba777f58624676e7fd7ee4688753e431290c8072198f55c2a037533685c6e"
+inputs-hash = "fa3d0046bf882a89d8c246d3ae0b63c2b5d36faff29fbf4a6510b768f7df02a6"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -728,10 +728,6 @@ mod = "curseforge:581875:7219799"
 [components."iris"]
 any = "curseforge:455508:6661598"
 mod = "curseforge:455508:6661598"
-
-[components."iron-bookshelves"]
-any = "curseforge:651738:8173294"
-mod = "curseforge:651738:8173294"
 
 [components."irons-spellbooks-arcane-essence-blocks"]
 any = "curseforge:1083218:6107642"
@@ -7778,27 +7774,6 @@ optional = [{ "missing" = "ftbultimine", "mod-id" = "ftbultimine", "version-rang
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
-
-[artifacts."curseforge:651738:8173294"]
-name = "iron-bookshelves"
-component = "iron-bookshelves"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "iron-bookshelves-651738"
-version = "8173294"
-filename = "ironbookshelves-1.21.1-1.4.13-neoforge.jar"
-project-id = 651738
-slug = "iron-bookshelves"
-file-id = 8173294
-provides = ["ironbookshelves"]
-bundled-provides = ["configlibtxf"]
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:313970:8182695", "namespace" = "apotheosis", "reason" = "ships data/apotheosis/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:655619:5514197"]
 name = "better-climbing"

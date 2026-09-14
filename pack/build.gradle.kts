@@ -187,7 +187,6 @@ dependencies {
     packComponents(deps.inventoryManagementDeluxe)
     packComponents(deps.invmovecompats)
     packComponents(deps.iris)
-    packComponents(deps.ironBookshelves)
     packComponents(deps.ironsSpellbooksArcaneEssenceBlocks)
     packComponents(deps.ironsSpellsNSpellbooks)
     packComponents(deps.ironsSpellsNSpellbooksRestricitons)

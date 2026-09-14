@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (466)
+## Mods (463)
 
 | Mod |
 |---|
@@ -107,7 +107,6 @@
 | `cut-through` |
 | `dark-doppelganger` |
 | `databank` |
-| `deep-waters` |
 | `deeper-and-darker-spellbooks` |
 | `deeperdarker` |
 | `deimos` |
@@ -116,7 +115,6 @@
 | `diagonal-fences` |
 | `diagonal-walls` |
 | `diamond-in-the-rough` |
-| `dis-enchanting-table` |
 | `discerning-the-eldritch` |
 | `distanthorizons` |
 | `distraction-free-recipes` |
@@ -227,7 +225,6 @@
 | `invmove` |
 | `invmovecompats` |
 | `iris` |
-| `iron-bookshelves` |
 | `irons-lib` |
 | `irons-spellbooks-arcane-essence-blocks` |
 | `irons-spells-n-spellbooks` |

@@ -211,10 +211,6 @@
       "required": false
     },
     {
-      "id": "ironbookshelves:golden_bookshelf",
-      "required": false
-    },
-    {
       "id": "minersdelight:golden_nutritional_bar",
       "required": false
     },

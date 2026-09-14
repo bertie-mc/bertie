@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "00d485e965778ff0d15f74654583688cd2bdf1f97dd94f2e9e4cfe5ba634c9f0"
+inputs-hash = "e1a861ec76528bd98258e994e03c12fee97e8b8750bd3e40870d51f1b258fe16"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -728,10 +728,6 @@ mod = "modrinth:6IpcGP7T:GjTuFGdp"
 [components."iris"]
 any = "modrinth:YL57xq9U:t3ruzodq"
 mod = "modrinth:YL57xq9U:t3ruzodq"
-
-[components."iron-bookshelves"]
-any = "modrinth:QmCOBeSP:A57xxobI"
-mod = "modrinth:QmCOBeSP:A57xxobI"
 
 [components."irons-spellbooks-arcane-essence-blocks"]
 any = "modrinth:Pkj2hNRk:Amnk4kDG"
@@ -5931,26 +5927,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:mSQF1NpT:RX6A02W1", "namespace" = "elytraslot", "reason" = "ships data/elytraslot/", "origin" = "archive-data" }, { "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:QmCOBeSP:A57xxobI"]
-name = "iron-bookshelves"
-component = "iron-bookshelves"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "QmCOBeSP"
-version = "A57xxobI"
-filename = "ironbookshelves-1.21.1-1.4.13-neoforge.jar"
-project-id = "QmCOBeSP"
-version-id = "A57xxobI"
-provides = ["ironbookshelves"]
-bundled-provides = ["configlibtxf"]
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:rqFWfVlz:Vp2TR6ib", "namespace" = "apotheosis", "reason" = "ships data/apotheosis/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:R2OftAxM:GbNuOZ4S"]
 name = "farmers-delight"
