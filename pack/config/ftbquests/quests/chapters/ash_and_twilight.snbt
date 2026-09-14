@@ -817,7 +817,7 @@
 				structure: "minecraft:ancient_city"
 				type: "structure"
 			}]
-			x: -15.0d
+			x: -16.5d
 			y: 0.0d
 		}
 		{
@@ -836,7 +836,7 @@
 				item: { count: 1, id: "minecraft:echo_shard" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -16.5d
 			y: 1.5d
 		}
 		{
@@ -878,7 +878,7 @@
 				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -15.0d
 			y: -1.5d
 		}
 		{
@@ -897,7 +897,7 @@
 				item: { count: 1, id: "minecraft:sculk_shrieker" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -15.0d
 			y: 1.5d
 		}
 		{
@@ -916,7 +916,7 @@
 				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -15.0d
 			y: 3.0d
 		}
 		{
@@ -935,7 +935,7 @@
 				item: { count: 1, id: "cognition:cognitive_amalgam" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.5d
 			y: 3.0d
 		}
 		{
@@ -954,7 +954,7 @@
 				item: { count: 1, id: "cognition:cognitive_alloy" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -12.0d
 			y: 3.0d
 		}
 		{
@@ -973,7 +973,7 @@
 				item: { count: 1, id: "cognition:cognitive_crystal" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.5d
 			y: 3.0d
 		}
 		{
@@ -992,11 +992,11 @@
 				item: { count: 1, id: "cognition:astute_assembly" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["3B0000000000005D"]
+			dependencies: ["3B00000000000002"]
 			icon: {
 				id: "primitiverefined:soulstained_shaft"
 			}
@@ -1136,7 +1136,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["3B0000000000005D"]
+			dependencies: ["3B00000000000002"]
 			icon: {
 				id: "create:sturdy_sheet"
 			}
@@ -1193,7 +1193,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["1C0000000000004E" "1C00000000000056"]
+			dependencies: ["3B0000000000005D"]
 			icon: {
 				id: "twilightforest:exanimate_essence"
 			}
@@ -1208,8 +1208,8 @@
 				item: { count: 1, id: "twilightforest:exanimate_essence" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -1.5d
+			x: -7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1287,7 +1287,7 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.5d
 			y: -1.5d
 		}
 		{
@@ -1306,7 +1306,7 @@
 				item: { count: 1, id: "cognition:primordial_assembly" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: 4.5d
 		}
 	]

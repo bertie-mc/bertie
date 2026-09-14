@@ -15,7 +15,7 @@
 		id: "cataclysm_spellbooks:abyss_spell_book"
 	}
 	id: "7B00000000000000"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

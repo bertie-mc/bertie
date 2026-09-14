@@ -2235,7 +2235,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2B00000000000011"]
+			dependencies: ["2B0000000000006B"]
 			icon: {
 				id: "malum:hallowed_gold_ingot"
 			}
@@ -2529,6 +2529,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2B00000000000011"]
 			icon: {
 				id: "irons_spellbooks:arcane_ingot"
 			}

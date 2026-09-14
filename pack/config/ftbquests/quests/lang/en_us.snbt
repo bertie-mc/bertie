@@ -8,6 +8,7 @@
 	chapter.4B00000000000000.title: "Echo and Below"
 	chapter.4C00000000000000.title: "Trinkets"
 	chapter.5B00000000000000.title: "Concordance"
+	chapter.5C00000000000000.title: "Age of Technology"
 	chapter.6B00000000000000.title: "The Nether"
 	chapter.7B00000000000000.title: "God of War"
 	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
@@ -2106,6 +2107,14 @@
 	quest.6B00000000000051.title: "Witness a Black Hole"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.6B0000000000005C.title: "Blazing Hook"
+	quest.6B0000000000005D.quest_desc: ["Wither Skeletons drop them rarely. The Fiery Wither Skull is built around one."]
+	quest.6B0000000000005D.title: "Wither Skull"
+	quest.6B0000000000005E.quest_desc: ["The Fusion Shrine, bathing a Wither Skull in lava: 4 Hoglin Hide and forty each of Blackstone, Netherrack and Magma Blocks, over 4 Blocks of Gold. Right-click it in the Nether to summon Zoranth."]
+	quest.6B0000000000005E.title: "Fiery Wither Skull"
+	quest.6B0000000000005F.quest_desc: ["Defeat Zoranth, the Forgotten One - the explorer the Nether kept."]
+	quest.6B0000000000005F.title: "Slay Zoranth"
+	quest.6B00000000000060.quest_desc: ["Ancient Debris smelts into it, and Zoranth guards enough Debris to matter."]
+	quest.6B00000000000060.title: "Ancient Scrap"
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000004.quest_desc: ["A Zardius Crucible in a Knightmetal frame, over a Block of Carminite cornered with Deep Alloy. Brews the inks and reagents."]
 	quest.7B00000000000004.title: "Alchemist Cauldron"

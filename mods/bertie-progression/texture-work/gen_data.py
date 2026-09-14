@@ -3029,6 +3029,26 @@ write("data/pastel/recipe/fusion_shrine/netherite_ingot.json",
        "during_crafting_effects": ["nothing", "visual_explosions_on_shrine"],
        "finish_crafting_effect": "single_visual_explosion_on_shrine"})
 
+# Fiery Wither Skull: Armageddon sells it for a bucket of lava and five common things, which is no
+# price at all for the item that summons Zoranth. The shrine bathes a real Wither Skull in lava over
+# forty each of the three Nether stones.
+write("data/armageddon_mod/recipe/fierywitherskullrecipe.json", DISABLED)
+write("data/pastel/recipe/fusion_shrine/fiery_wither_skull.json",
+      {"neoforge:conditions": conds("pastel", "armageddon_mod", "mynethersdelight"),
+       "type": "pastel:fusion_shrine", "time": 600, "experience": 6.0,
+       "fluid": {"fluid": "minecraft:lava"},
+       "ingredients": [{"item": "minecraft:wither_skeleton_skull", "count": 1},
+                       {"item": "mynethersdelight:hoglin_hide", "count": 4},
+                       {"item": "minecraft:blackstone", "count": 40},
+                       {"item": "minecraft:netherrack", "count": 40},
+                       {"item": "minecraft:magma_block", "count": 40},
+                       {"item": "minecraft:gold_block", "count": 4}],
+       "result": {"id": "armageddon_mod:fiery_wither_skull", "count": 1},
+       "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
+       "start_crafting_effect": "weather_thunder_short",
+       "during_crafting_effects": ["nothing", "visual_explosions_on_shrine"],
+       "finish_crafting_effect": "lightning_on_shrine"})
+
 # Haze n Stuff overlaps four materials by name. Each gets a name of its own so the pack can tell
 # them apart at a glance. Rose Gold is no longer a crafting-table item either: the Clibano cooks
 # Slag n' Embers' Rose Gold together with a Rose Quartz to make it.
