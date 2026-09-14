@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (463)
+## Mods (459)
 
 | Mod |
 |---|
@@ -277,7 +277,6 @@
 | `mindful-darkness` |
 | `miners-delight` |
 | `mmmmmmmmmmmm` |
-| `mob-lassos` |
 | `modelfix` |
 | `modernfix` |
 | `modonomicon` |
@@ -297,7 +296,6 @@
 | `necronomicon` |
 | `nether-chested` |
 | `nether-depths-upgrade` |
-| `nightvision-spyglass` |
 | `nightworld` |
 | `noisium` |
 | `notenoughcrashes` |
@@ -333,7 +331,6 @@
 | `playeranimator` |
 | `plonk` |
 | `pocket-dimension-1.20.1` |
-| `polymorph` |
 | `potentials` |
 | `powah` |
 | `prickle` |
@@ -383,7 +380,6 @@
 | `sparkles` |
 | `sparsestructures` |
 | `spectral-enchantment` |
-| `spyglass-improvements` |
 | `status-effect-bars-reforged` |
 | `stellar-view-mixin-renderer` |
 | `stellaris` |

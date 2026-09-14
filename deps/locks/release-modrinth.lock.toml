@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "e1a861ec76528bd98258e994e03c12fee97e8b8750bd3e40870d51f1b258fe16"
+inputs-hash = "4350db2896fdee99f2c15d431c101821d61b56bd7dabf9abb66d6bf2d704c27c"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -925,10 +925,6 @@ mod = "modrinth:qMxbM4BQ:YUHbwbgQ"
 any = "modrinth:Adega8YN:nnQq1ivl"
 mod = "modrinth:Adega8YN:nnQq1ivl"
 
-[components."mob-lassos"]
-any = "modrinth:ftOBbnu8:Qsj3YEUS"
-mod = "modrinth:ftOBbnu8:Qsj3YEUS"
-
 [components."modelfix"]
 any = "modrinth:QdG47OkI:X2U8ceG9"
 mod = "modrinth:QdG47OkI:X2U8ceG9"
@@ -988,10 +984,6 @@ mod = "modrinth:bHJp2GRg:fII2Ezk6"
 [components."nether-depths-upgrade"]
 any = "modrinth:vI1QKJro:otPmhdts"
 mod = "modrinth:vI1QKJro:otPmhdts"
-
-[components."nightvision-spyglass"]
-any = "modrinth:mOl6kTX8:RjV5R8g8"
-mod = "modrinth:mOl6kTX8:i24czOXq"
 
 [components."nightworld"]
 any = "modrinth:Ci8bgONi:E1rW2s1e"
@@ -1108,10 +1100,6 @@ mod = "modrinth:EUmBPkQn:Y8aicJfZ"
 [components."pocket-dimension-1-20-1"]
 any = "modrinth:bHr7Oesy:CrhflvIg"
 mod = "modrinth:bHr7Oesy:CrhflvIg"
-
-[components."polymorph"]
-any = "modrinth:tagwiZkJ:VEburL70"
-mod = "modrinth:tagwiZkJ:VEburL70"
 
 [components."powah"]
 any = "modrinth:KZO4S4DO:1prWLuga"
@@ -1255,10 +1243,6 @@ mod = "modrinth:qwvI41y9:MoJZpi20"
 [components."spectral-enchantment"]
 any = "modrinth:8rO3GwBM:yducMee6"
 mod = "modrinth:8rO3GwBM:8Os8G6b7"
-
-[components."spyglass-improvements"]
-any = "modrinth:Z6ykjRlM:F2s6rUr5"
-mod = "modrinth:Z6ykjRlM:F2s6rUr5"
 
 [components."status-effect-bars-reforged"]
 any = "modrinth:TxIuhIFo:PPVE16f7"
@@ -6938,26 +6922,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:Z6ykjRlM:F2s6rUr5"]
-name = "spyglass-improvements"
-component = "spyglass-improvements"
-provider = "modrinth"
-kind = "mod"
-side = "client"
-group = "maven.modrinth"
-module = "Z6ykjRlM"
-version = "F2s6rUr5"
-filename = "spyglass_improvements-1.5.7+mc1.21+neoforge.jar"
-project-id = "Z6ykjRlM"
-version-id = "F2s6rUr5"
-provides = ["spyglass_improvements"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[8.0,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:Z9RMqaGu:GIGoRmUe"]
 name = "hand-over-your-items"
 component = "hand-over-your-items"
@@ -7931,26 +7895,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "namespace" = "farmersdelight", "reason" = "ships data/farmersdelight/", "origin" = "archive-data" }, { "artifact" = "modrinth:LNytGWDc:UjX6dr61", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }, { "artifact" = "modrinth:EmNhnNnt:KSgki4uc", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:ftOBbnu8:Qsj3YEUS"]
-name = "mob-lassos"
-component = "mob-lassos"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "ftOBbnu8"
-version = "Qsj3YEUS"
-filename = "MobLassos-v21.1.1-1.21.1-NeoForge.jar"
-project-id = "ftOBbnu8"
-version-id = "Qsj3YEUS"
-provides = ["moblassos"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."modrinth:fuuu3xnx:iEE85X0w"]
 name = "searchables"
@@ -9043,46 +8987,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:mOl6kTX8:RjV5R8g8"]
-name = "nightvision-spyglass"
-component = "nightvision-spyglass"
-provider = "modrinth"
-kind = "datapack"
-side = "both"
-group = "maven.modrinth"
-module = "mOl6kTX8"
-version = "RjV5R8g8"
-filename = "Nightvision Spyglass_1.21.1_v1.0.zip"
-project-id = "mOl6kTX8"
-version-id = "RjV5R8g8"
-provides = []
-bundled-provides = []
-required = [{ "artifact" = "modrinth:CU0PAyzb:CLZfFbCx", "mod-id" = "paxi", "side" = "both", "origin" = "profile:release-modrinth:native-packs.datapack" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:mOl6kTX8:i24czOXq"]
-name = "nightvision-spyglass"
-component = "nightvision-spyglass"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "mOl6kTX8"
-version = "i24czOXq"
-filename = "nightvision-spyglass-1.0.jar"
-project-id = "mOl6kTX8"
-version-id = "i24czOXq"
-provides = ["mr_nightvision_spyglass"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:mSQF1NpT:RX6A02W1"]
 name = "elytra-slot"
 component = "elytra-slot"
@@ -10087,26 +9991,6 @@ filename = "Placebo-1.21.1-9.9.1.jar"
 project-id = "tCkE8p2N"
 version-id = "kb8pGRQR"
 provides = ["placebo"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:tagwiZkJ:VEburL70"]
-name = "polymorph"
-component = "polymorph"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "tagwiZkJ"
-version = "VEburL70"
-filename = "polymorph-neoforge-1.1.0+1.21.1.jar"
-project-id = "tagwiZkJ"
-version-id = "VEburL70"
-provides = ["polymorph"]
 bundled-provides = []
 required = []
 optional = []

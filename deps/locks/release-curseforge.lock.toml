@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "fa3d0046bf882a89d8c246d3ae0b63c2b5d36faff29fbf4a6510b768f7df02a6"
+inputs-hash = "ad1298fa0ee1996a266d92c6fbd2fddfa526bc85cff4fe6bcb90d21098d02395"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -925,10 +925,6 @@ mod = "curseforge:689630:8011049"
 any = "curseforge:225738:7943676"
 mod = "curseforge:225738:7943676"
 
-[components."mob-lassos"]
-any = "curseforge:852670:7021571"
-mod = "curseforge:852670:7021571"
-
 [components."modelfix"]
 any = "curseforge:676136:5591286"
 mod = "curseforge:676136:5591286"
@@ -988,10 +984,6 @@ mod = "curseforge:857971:7255815"
 [components."nether-depths-upgrade"]
 any = "curseforge:670011:6430271"
 mod = "curseforge:670011:6430271"
-
-[components."nightvision-spyglass"]
-any = "curseforge:1247782:6445156"
-mod = "curseforge:1247782:6445156"
 
 [components."nightworld"]
 any = "curseforge:865641:6042876"
@@ -1108,10 +1100,6 @@ mod = "curseforge:345779:6343120"
 [components."pocket-dimension-1-20-1"]
 any = "modrinth:bHr7Oesy:CrhflvIg"
 mod = "modrinth:bHr7Oesy:CrhflvIg"
-
-[components."polymorph"]
-any = "curseforge:388800:6794589"
-mod = "curseforge:388800:6794589"
 
 [components."powah"]
 any = "curseforge:633483:8011715"
@@ -1255,10 +1243,6 @@ mod = "curseforge:911437:6456912"
 [components."spectral-enchantment"]
 any = "curseforge:1254715:6684333"
 mod = "curseforge:1254715:6684333"
-
-[components."spyglass-improvements"]
-any = "curseforge:571264:5634604"
-mod = "curseforge:571264:5634604"
 
 [components."status-effect-bars-reforged"]
 any = "curseforge:1284599:6707544"
@@ -3196,27 +3180,6 @@ file-id = 8048938
 provides = ["irons_apothic"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:313970:8182695", "mod-id" = "apotheosis", "version-range" = "[8.4.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:855414:8202148", "mod-id" = "irons_spellbooks", "version-range" = "*", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1247782:6445156"]
-name = "nightvision-spyglass"
-component = "nightvision-spyglass"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "nightvision-spyglass-1247782"
-version = "6445156"
-filename = "nightvision-spyglass-1.0.jar"
-project-id = 1247782
-slug = "nightvision-spyglass"
-file-id = 6445156
-provides = ["mr_nightvision_spyglass"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
@@ -5846,27 +5809,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:388800:6794589"]
-name = "polymorph"
-component = "polymorph"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "polymorph-388800"
-version = "6794589"
-filename = "polymorph-neoforge-1.1.0+1.21.1.jar"
-project-id = 388800
-slug = "polymorph"
-file-id = 6794589
-provides = ["polymorph"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:394468:6382651"]
 name = "sodium"
 component = "sodium"
@@ -7187,27 +7129,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:571264:5634604"]
-name = "spyglass-improvements"
-component = "spyglass-improvements"
-provider = "curseforge"
-kind = "mod"
-side = "client"
-group = "curse.maven"
-module = "spyglass-improvements-571264"
-version = "5634604"
-filename = "spyglass_improvements-1.5.7+mc1.21+neoforge.jar"
-project-id = 571264
-slug = "spyglass-improvements"
-file-id = 5634604
-provides = ["spyglass_improvements"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[8.0,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:574409:7661859"]
 name = "enderman-overhaul"
 component = "enderman-overhaul"
@@ -8484,27 +8405,6 @@ file-id = 6740165
 provides = ["mindfuldarkness"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.36,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:852670:7021571"]
-name = "mob-lassos"
-component = "mob-lassos"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "mob-lassos-852670"
-version = "7021571"
-filename = "MobLassos-v21.1.1-1.21.1-NeoForge.jar"
-project-id = 852670
-slug = "mob-lassos"
-file-id = 7021571
-provides = ["moblassos"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
