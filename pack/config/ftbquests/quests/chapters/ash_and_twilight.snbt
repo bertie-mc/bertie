@@ -916,7 +916,7 @@
 				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 3.0d
 		}
 		{
@@ -935,7 +935,7 @@
 				item: { count: 1, id: "cognition:cognitive_amalgam" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -10.5d
 			y: 3.0d
 		}
 		{
@@ -954,7 +954,7 @@
 				item: { count: 1, id: "cognition:cognitive_alloy" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -9.0d
 			y: 3.0d
 		}
 		{
@@ -973,7 +973,7 @@
 				item: { count: 1, id: "cognition:cognitive_crystal" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -7.5d
 			y: 3.0d
 		}
 		{
@@ -992,7 +992,7 @@
 				item: { count: 1, id: "cognition:astute_assembly" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -6.0d
 			y: 3.0d
 		}
 		{
@@ -1011,7 +1011,7 @@
 				item: { count: 1, id: "primitiverefined:soulstained_shaft" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -1030,7 +1030,7 @@
 				item: { count: 1, id: "primitiverefined:obsidiansteel_cogwheel_soulstained" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -1049,7 +1049,7 @@
 				item: { count: 1, id: "primitiverefined:p_grid" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -1068,7 +1068,7 @@
 				item: { count: 1, id: "primitiverefined:external_reader" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -1088,7 +1088,7 @@
 				item: { count: 1, id: "primitiverefined:p_controller" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
@@ -1110,7 +1110,7 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
@@ -1132,7 +1132,7 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox_vertical" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -1.5d
 			y: 7.5d
 		}
 		{
@@ -1151,7 +1151,7 @@
 				item: { count: 1, id: "create:sturdy_sheet" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -1170,7 +1170,7 @@
 				item: { count: 1, id: "primitiverefined:p_crafting_grid" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -1208,7 +1208,7 @@
 				item: { count: 1, id: "twilightforest:exanimate_essence" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: 4.5d
 		}
 		{
@@ -1306,7 +1306,7 @@
 				item: { count: 1, id: "cognition:primordial_assembly" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -1351,7 +1351,7 @@
 					type: "item"
 				}
 			]
-			x: -15.0d
+			x: -12.0d
 			y: 4.5d
 		}
 		{
@@ -1370,7 +1370,7 @@
 				item: { count: 1, id: "exposure:camera" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 6.0d
 		}
 		{
@@ -1389,7 +1389,7 @@
 				item: { count: 1, id: "exposure:camera_stand" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 7.5d
 		}
 		{
@@ -1408,7 +1408,7 @@
 				item: { count: 1, id: "exposure:color_film" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 9.0d
 		}
 		{
@@ -1427,7 +1427,7 @@
 				item: { count: 1, id: "exposure_expanded:telescopic_lens" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 10.5d
 		}
 		{
@@ -1446,7 +1446,7 @@
 				item: { count: 1, id: "exposure:lightroom" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 12.0d
 		}
 		{
@@ -1465,7 +1465,7 @@
 				item: { count: 1, id: "exposure:album" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -12.0d
 			y: 13.5d
 		}
 		{
@@ -1495,7 +1495,7 @@
 					type: "item"
 				}
 			]
-			x: -16.5d
+			x: -13.5d
 			y: 4.5d
 		}
 		{
@@ -1526,7 +1526,7 @@
 					type: "item"
 				}
 			]
-			x: -16.5d
+			x: -13.5d
 			y: 6.0d
 		}
 	]
