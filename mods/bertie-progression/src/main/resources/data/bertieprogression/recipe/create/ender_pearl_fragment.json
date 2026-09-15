@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    }
+  ],
+  "type": "create:crushing",
+  "processing_time": 250,
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "results": [
+    {
+      "id": "forbidden_arcanus:ender_pearl_fragment",
+      "count": 2
+    },
+    {
+      "chance": 0.5,
+      "id": "forbidden_arcanus:ender_pearl_fragment"
+    },
+    {
+      "chance": 0.1,
+      "id": "forbidden_arcanus:ender_pearl_fragment"
+    }
+  ]
+}

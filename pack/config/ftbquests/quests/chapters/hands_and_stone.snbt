@@ -1275,7 +1275,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B0000000000003C"]
+			dependencies: ["1B00000000000042"]
 			icon: {
 				id: "farmersdelight:cutting_board"
 			}
@@ -1290,7 +1290,7 @@
 				item: { count: 1, id: "farmersdelight:cutting_board" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: -3.0d
 		}
 		{
@@ -1309,7 +1309,7 @@
 				item: { count: 1, id: "farmersdelight:tree_bark" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
@@ -1328,11 +1328,11 @@
 				item: { count: 1, id: "twilightforest:tannin" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B0000000000003F"]
+			dependencies: ["1B00000000000043"]
 			icon: {
 				id: "minecraft:oak_slab"
 			}
@@ -1347,13 +1347,13 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:wooden_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 16.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000040"]
 			icon: {
-				id: "youkaisfeasts:drying_rack"
+				id: "twilightforest:oak_drying_rack"
 			}
 			id: "1B00000000000041"
 			rewards: [{
@@ -1363,14 +1363,14 @@
 			}]
 			tasks: [{
 				id: "1B00000001000041"
-				item: { count: 1, id: "youkaisfeasts:drying_rack" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(twilightforest:drying_racks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 18.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B00000000000041"]
+			dependencies: ["1B0000000000003C"]
 			icon: {
 				id: "minecraft:leather"
 			}
@@ -1385,11 +1385,11 @@
 				item: { count: 1, id: "minecraft:leather" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 9.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B00000000000042"]
+			dependencies: ["1B0000000000003F"]
 			icon: {
 				id: "twilightforest:treated_leather"
 			}
@@ -1404,11 +1404,11 @@
 				item: { count: 1, id: "twilightforest:treated_leather" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B00000000000043"]
+			dependencies: ["1B00000000000041"]
 			icon: {
 				id: "twilightforest:tanned_leather"
 			}

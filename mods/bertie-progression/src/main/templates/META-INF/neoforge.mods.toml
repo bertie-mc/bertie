@@ -401,6 +401,30 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Recipe override: every elevator is bound with an Ender Pearl Fragment.
+[[dependencies.${mod_id}]]
+modId="elevatorid"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: both entangled halves are mechanical crafts.
+[[dependencies.${mod_id}]]
+modId="entangled"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: Time in a Bottle is a Tier-II ritual.
+[[dependencies.${mod_id}]]
+modId="tiab"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Loot override: the Rooted Boots leave the mimic's loot table.
 [[dependencies.${mod_id}]]
 modId="artifacts"

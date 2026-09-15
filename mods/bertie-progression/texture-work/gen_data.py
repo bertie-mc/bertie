@@ -3007,6 +3007,79 @@ _flame = pedestal(["BSA", "BXA", "BSA"],
 _flame["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
 write("data/pastel/recipe/pedestal/tier2/flame_eye.json", _flame)
 
+# --- Warp Flux has no source in this pack at all: Malum ships no drop for it and no craft, and
+#     a dozen of its own recipes want it. The altar makes it, off the cognitive line. ---
+write(f"{R}/malum/warp_flux.json",
+      infusion("cognition:cognitive_crystal", 1,
+               [("magitech:hollow_crystal", 4), ("malum:null_slate", 4),
+                ("minecraft:amethyst_shard", 8)],
+               [SP("sacred", 8), SP("arcane", 8), SP("aerial", 4)],
+               "malum:warp_flux", 1))
+
+# --- Entangled pairs are a mechanical build now, both halves. ---
+write("data/entangled/recipe/block.json", DISABLED)
+write(f"{R}/mechanical/entangled_block.json",
+      mech(["CCGCC", "CEIEC", "GIWIG", "CEIEC", "CCGCC"],
+           {"C": "minecraft:red_concrete", "G": "minecraft:tinted_glass",
+            "E": "minecraft:ender_pearl", "I": "create:iron_sheet", "W": "malum:warp_flux"},
+           "entangled:block"))
+write("data/entangled/recipe/item.json", DISABLED)
+write(f"{R}/mechanical/entangled_binder.json",
+      mech(["    F  ", "   I   ", "   IW F", "  SIII ", " SIS   ", "IS     "],
+           {"F": "forbidden_arcanus:ender_pearl_fragment", "W": "malum:warp_flux",
+            "I": "create:iron_sheet", "S": "minecraft:stick"},
+           "entangled:item"))
+
+# --- Ender Pearl Fragments come off the crushing wheels rather than the grid, and every Elevator
+#     is bound with one. ---
+write("data/forbidden_arcanus/recipe/ender_pearl_fragment.json", DISABLED)
+write(f"{R}/create/ender_pearl_fragment.json",
+      {"neoforge:conditions": conds("create", "forbidden_arcanus"),
+       "type": "create:crushing", "processing_time": 250,
+       "ingredients": [{"item": "minecraft:ender_pearl"}],
+       "results": [{"id": "forbidden_arcanus:ender_pearl_fragment", "count": 2},
+                   {"chance": 0.5, "id": "forbidden_arcanus:ender_pearl_fragment"},
+                   {"chance": 0.1, "id": "forbidden_arcanus:ender_pearl_fragment"}]})
+
+# --- Cognitive Flux wants a fragment and a heated basin now. ---
+write(f"{R}/cognition/cognitive_flux_mixing.json",
+      {"neoforge:conditions": conds("create", "cognition", "forbidden_arcanus"),
+       "type": "create:mixing",
+       "heat_requirement": "heated",
+       "ingredients": [{"tag": "c:dusts/copper"}, {"tag": "c:dusts/copper"},
+                       {"item": "minecraft:lapis_lazuli"}, {"tag": "c:gems/quartz"},
+                       {"item": "forbidden_arcanus:ender_pearl_fragment"}],
+       "results": [{"id": "cognition:cognitive_flux", "count": 1}]})
+
+# --- Zardius alchemy: the aspect crystal base accepted quartz as well as tourmaline, which made
+#     the whole crystal set almost free. The tag is re-declared with tourmaline alone. ---
+write("data/magitech/tags/item/aspect_crystal_base.json",
+      {"replace": True, "values": ["#c:gems/tourmaline"]})
+
+# --- The Hang Glider is assembled in a basin rather than a bench; the framework and wing are
+#     unchanged, they just go in wet. ---
+write("data/hangglider/recipe/hang_glider.json", DISABLED)
+write(f"{R}/create/hang_glider.json",
+      {"neoforge:conditions": conds("create", "hangglider"),
+       "type": "create:mixing",
+       "ingredients": [{"item": "hangglider:glider_wing"},
+                       {"item": "hangglider:glider_framework"},
+                       {"item": "hangglider:glider_wing"}],
+       "results": [{"id": "hangglider:hang_glider", "count": 1}]})
+
+# --- Time in a Bottle is the whole Tier-II forge at once: every essence to its ceiling, around a
+#     bottle of Timeless Slurry, with eight things that measure or hold time. ---
+write("data/tiab/recipe/time_in_a_bottle.json", DISABLED)
+write(f"{RIT}/time_in_a_bottle.json",
+      ritual("irons_spellbooks:timeless_slurry",
+             [("minecraft:clock", 1), ("pastel:crescent_clock", 1),
+              ("twilightforest:time_log_core", 1), ("l2complements:captured_wind", 1),
+              ("l2complements:hard_ice", 1), ("l2complements:storm_core", 1),
+              ("l2complements:totemic_gold_block", 1),
+              ("block_factorys_bosses:kraken_tooth", 1)],
+             "tiab:time_in_a_bottle", 1, tier=2,
+             essences={"aureal": 3000, "blood": 15000, "souls": 50}, xp=1350))
+
 # --- The leather line. Tanning is a chain now, and everything on it costs a step rather than a
 #     shapeless shuffle. ---
 # Cutting Board: a stick beside a wooden pressure plate, in place of six planks.
@@ -3026,10 +3099,8 @@ write("data/twilightforest/recipe/tannin.json",
                        {"item": "farmersdelight:tree_bark"}],
        "result": {"id": "twilightforest:tannin", "count": 1}})
 
-# Drying Rack: two wooden slabs side by side. Its bamboo stonecutting goes.
-write("data/youkaisfeasts/recipe/drying_rack_from_bamboo_block_stonecutting.json", DISABLED)
-write("data/youkaisfeasts/recipe/drying_rack.json",
-      shaped(["SS"], {"S": "#minecraft:wooden_slabs"}, "youkaisfeasts:drying_rack"))
+# Drying Racks: Twilight Forest's, two slabs wide rather than three. Its own per-wood recipes are
+# rewritten in place from the pack's registry, so every wood set it ships keeps one.
 
 # Leather Stripes come off the cutting board now, two at a time, not out of the grid.
 write("data/betterend/recipe/leather_to_stripes.json", DISABLED)
@@ -3645,6 +3716,35 @@ if _removed:
                     raise SystemExit(f"docs/removed: {_r['id']!r} is not a registered item in this pack.")
                 _expanded.append(_r["id"])
         _want = set(_expanded)
+
+        # DRYING RACKS and ELEVATORS are per-wood and per-colour families, so both are rewritten
+        # from the mods' own files rather than listed here: the rack loses a slab, and the elevator
+        # is bound with an Ender Pearl Fragment instead of a whole pearl.
+        _racks = _elevators = 0
+        for _jp in _scan:
+            try:
+                _zf = zipfile.ZipFile(_jp)
+            except zipfile.BadZipFile:
+                continue
+            for _n in _zf.namelist():
+                if not re.match(r"data/(twilightforest|elevatorid)/recipes?/.*\.json$", _n):
+                    continue
+                try:
+                    _d = json.loads(_zf.read(_n))
+                except (ValueError, KeyError):
+                    continue
+                _rid = (_d.get("result") or {}).get("id", "")
+                if _rid.endswith("_drying_rack") and _d.get("pattern") == ["---"]:
+                    _d["pattern"] = ["--"]
+                    write(_n, _d)
+                    _racks += 1
+                elif _rid.startswith("elevatorid:") and _d.get("type") == "minecraft:crafting_shaped":
+                    _mid = _d.get("key", {}).get("E")
+                    if _mid == {"item": "minecraft:ender_pearl"}:
+                        _d["key"]["E"] = {"item": "forbidden_arcanus:ender_pearl_fragment"}
+                        write(_n, _d)
+                        _elevators += 1
+        print(f"  drying racks: {_racks} narrowed to two slabs; elevators: {_elevators} bound with a fragment")
 
         # SLABS BACK INTO BLOCKS. Quark's slab_to_block is shapeless in effect - two slabs
         # anywhere in the grid - which makes splitting a plank with flint a free round trip. The

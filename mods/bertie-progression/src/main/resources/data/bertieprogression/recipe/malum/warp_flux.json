@@ -1,0 +1,53 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "cognition:cognitive_crystal",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "magitech:hollow_crystal",
+      "count": 4
+    },
+    {
+      "item": "malum:null_slate",
+      "count": 4
+    },
+    {
+      "item": "minecraft:amethyst_shard",
+      "count": 8
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:sacred",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 8
+    },
+    {
+      "type": "malum:aerial",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "malum:warp_flux",
+    "count": 1
+  }
+}

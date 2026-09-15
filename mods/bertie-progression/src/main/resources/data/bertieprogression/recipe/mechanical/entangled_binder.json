@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "entangled"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "forbidden_arcanus:ender_pearl_fragment"
+    },
+    "W": {
+      "item": "malum:warp_flux"
+    },
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "    F  ",
+    "   I   ",
+    "   IW F",
+    "  SIII ",
+    " SIS   ",
+    "IS     "
+  ],
+  "result": {
+    "id": "entangled:item",
+    "count": 1
+  },
+  "show_notification": true
+}

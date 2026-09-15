@@ -438,6 +438,15 @@
 	quest.2B0000000000006A.title: "Obsidian"
 	quest.2B0000000000006B.quest_desc: ["Deorum infused with eight Arcane Essence. The spellbook line runs on it."]
 	quest.2B0000000000006B.title: "Arcane Ingot"
+	quest.2B0000000000006C.title: "Glider Framework"
+	quest.2B0000000000006D.title: "Glider Wing"
+	quest.2B0000000000006E.quest_desc: ["Two wings and a framework, stirred cold in a basin."]
+	quest.2B0000000000006E.title: "Hang Glider"
+	quest.2B0000000000006F.title: "Reinforced Hang Glider"
+	quest.2B00000000000070.quest_desc: ["An Ender Pearl through the crushing wheels: two fragments, a third half the time and a fourth now and then."]
+	quest.2B00000000000070.title: "Ender Pearl Fragment"
+	quest.2B00000000000071.quest_desc: ["Any colour. A fragment binds the wool, and two of them stacked in a column carry you between."]
+	quest.2B00000000000071.title: "An Elevator"
 	quest.2C00000000000001.title: "The Spelunkery Table"
 	quest.2C00000000000002.quest_desc: ["Translate it at the Spelunkery Table, then follow the map it earns you."]
 	quest.2C00000000000002.title: "A Magnetic Tablet"
@@ -606,6 +615,13 @@
 	quest.3B00000000000066.title: "The Etching Table"
 	quest.3B00000000000067.quest_desc: ["Somewhere to keep the discs, and two ways to play them."]
 	quest.3B00000000000067.title: "Jukebox and Boombox"
+	quest.3B00000000000068.quest_desc: ["The altar around a Cognitive Crystal: 4 Hollow Crystals, 4 Null Slate and 8 Amethyst Shards (8 Sacred / 8 Arcane / 4 Aerial). Nothing else in the pack makes it."]
+	quest.3B00000000000068.title: "Warp Flux"
+	quest.3B00000000000069.quest_desc: ["A 5x5 wall of Red Concrete and Tinted Glass around Ender Pearls, Iron Sheets and the Flux."]
+	quest.3B00000000000069.title: "Entangled Block"
+	quest.3B0000000000006A.title: "Entangled Binder"
+	quest.3B0000000000006B.quest_desc: ["The Tier-II forge at its ceiling - 3000 aureal, 15000 blood, 50 souls and 1350 ink - around a bottle of Timeless Slurry, with eight things that measure or hold time."]
+	quest.3B0000000000006B.title: "Time in a Bottle"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"

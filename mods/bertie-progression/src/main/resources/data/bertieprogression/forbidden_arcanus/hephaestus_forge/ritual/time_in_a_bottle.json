@@ -1,0 +1,70 @@
+{
+  "essences": {
+    "aureal": 3000,
+    "blood": 15000,
+    "souls": 50,
+    "experience": 1350
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:clock"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "pastel:crescent_clock"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "twilightforest:time_log_core"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:captured_wind"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:hard_ice"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:storm_core"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:totemic_gold_block"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "block_factorys_bosses:kraken_tooth"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "irons_spellbooks:timeless_slurry"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "tiab:time_in_a_bottle",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

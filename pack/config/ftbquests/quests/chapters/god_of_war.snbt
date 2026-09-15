@@ -9764,8 +9764,8 @@
 				item: { count: 1, id: "irons_spellbooks:autoloader_crossbow" }
 				type: "item"
 			}]
-			x: 35.0d
-			y: 12.0d
+			x: 62.0d
+			y: 24.0d
 		}
 		{
 			icon: {
@@ -10183,8 +10183,8 @@
 				item: { count: 1, id: "minecraft:crossbow" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 20.0d
+			x: 62.0d
+			y: 23.0d
 		}
 		{
 			icon: {
@@ -10352,8 +10352,8 @@
 				item: { count: 1, id: "pastel:bedrock_crossbow" }
 				type: "item"
 			}]
-			x: 20.0d
-			y: 20.0d
+			x: 59.0d
+			y: 24.0d
 		}
 		{
 			icon: {
@@ -10443,8 +10443,8 @@
 				item: { count: 1, id: "pastel:glass_crest_crossbow" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 21.0d
+			x: 60.0d
+			y: 24.0d
 		}
 		{
 			icon: {
@@ -10508,8 +10508,8 @@
 				item: { count: 1, id: "pastel:malachite_crossbow" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 22.0d
+			x: 61.0d
+			y: 24.0d
 		}
 		{
 			icon: {
@@ -12862,8 +12862,8 @@
 				item: { count: 1, id: "antarchy:ultimate_crossbow" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 29.0d
+			x: 59.0d
+			y: 25.0d
 		}
 		{
 			icon: {

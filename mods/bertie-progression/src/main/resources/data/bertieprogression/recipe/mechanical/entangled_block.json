@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "entangled"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:red_concrete"
+    },
+    "G": {
+      "item": "minecraft:tinted_glass"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "W": {
+      "item": "malum:warp_flux"
+    }
+  },
+  "pattern": [
+    "CCGCC",
+    "CEIEC",
+    "GIWIG",
+    "CEIEC",
+    "CCGCC"
+  ],
+  "result": {
+    "id": "entangled:block",
+    "count": 1
+  },
+  "show_notification": true
+}

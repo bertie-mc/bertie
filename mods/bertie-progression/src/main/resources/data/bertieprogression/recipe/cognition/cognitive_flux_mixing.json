@@ -7,9 +7,14 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
     }
   ],
   "type": "create:mixing",
+  "heat_requirement": "heated",
   "ingredients": [
     {
       "tag": "c:dusts/copper"
@@ -22,6 +27,9 @@
     },
     {
       "tag": "c:gems/quartz"
+    },
+    {
+      "item": "forbidden_arcanus:ender_pearl_fragment"
     }
   ],
   "results": [
