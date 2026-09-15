@@ -393,6 +393,14 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Recipe override: both glider halves are mechanical crafts.
+[[dependencies.${mod_id}]]
+modId="hangglider"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Loot override: the Rooted Boots leave the mimic's loot table.
 [[dependencies.${mod_id}]]
 modId="artifacts"

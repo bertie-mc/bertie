@@ -6928,8 +6928,8 @@
 				item: { count: 1, id: "alexscaves:dreadbow" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 5.0d
+			x: 60.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -8124,8 +8124,8 @@
 				item: { count: 1, id: "create:potato_cannon" }
 				type: "item"
 			}]
-			x: 45.0d
-			y: 5.0d
+			x: 60.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -8629,8 +8629,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:dragon_breath_bow" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: 12.0d
+			x: 61.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -9530,8 +9530,8 @@
 				item: { count: 1, id: "iceandfire:dragonbone_bow" }
 				type: "item"
 			}]
-			x: 29.0d
-			y: 12.0d
+			x: 62.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -10170,7 +10170,7 @@
 				item: { count: 1, id: "minecraft:bow" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 59.0d
 			y: 20.0d
 		}
 		{
@@ -10235,8 +10235,8 @@
 				item: { count: 1, id: "minecraft:mace" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 21.0d
+			x: 64.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -10339,8 +10339,8 @@
 				item: { count: 1, id: "pastel:bedrock_bow" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: 20.0d
+			x: 60.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12328,8 +12328,8 @@
 				item: { count: 1, id: "twilightforest:ender_bow" }
 				type: "item"
 			}]
-			x: 49.0d
-			y: 20.0d
+			x: 61.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12380,8 +12380,8 @@
 				item: { count: 1, id: "twilightforest:ice_bow" }
 				type: "item"
 			}]
-			x: 49.0d
-			y: 21.0d
+			x: 62.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12432,8 +12432,8 @@
 				item: { count: 1, id: "twilightforest:seeker_bow" }
 				type: "item"
 			}]
-			x: 49.0d
-			y: 22.0d
+			x: 59.0d
+			y: 23.0d
 		}
 		{
 			icon: {
@@ -12458,8 +12458,8 @@
 				item: { count: 1, id: "twilightforest:triple_bow" }
 				type: "item"
 			}]
-			x: 51.0d
-			y: 22.0d
+			x: 60.0d
+			y: 23.0d
 		}
 		{
 			icon: {
@@ -12849,8 +12849,8 @@
 				item: { count: 1, id: "antarchy:ultimate_bow" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 29.0d
+			x: 61.0d
+			y: 23.0d
 		}
 		{
 			icon: {
@@ -13030,8 +13030,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 30.0d
+			x: 65.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -13043,8 +13043,8 @@
 				item: { count: 1, id: "anvilcraft:anvil_hammer" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 31.0d
+			x: 65.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -13056,8 +13056,8 @@
 				item: { count: 1, id: "anvilcraft:ember_anvil_hammer" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 31.0d
+			x: 66.0d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -13069,8 +13069,8 @@
 				item: { count: 1, id: "anvilcraft:royal_anvil_hammer" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 31.0d
+			x: 64.0d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -13168,8 +13168,8 @@
 				item: { count: 1, id: "mekanism:electric_bow" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 31.0d
+			x: 59.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -13221,8 +13221,8 @@
 				item: { count: 1, id: "oritech:electric_mace" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 31.0d
+			x: 64.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -13630,6 +13630,114 @@
 			}]
 			x: 56.0d
 			y: 24.0d
+		}
+		{
+			icon: {
+				id: "piglinproliferation:buckler"
+			}
+			id: "7B000000000002AD"
+			rewards: [{
+				id: "7B000000020002AD"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AD"
+				item: { count: 1, id: "piglinproliferation:buckler" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "artifacts:umbrella"
+			}
+			id: "7B000000000002AE"
+			rewards: [{
+				id: "7B000000020002AE"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AE"
+				item: { count: 1, id: "artifacts:umbrella" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 25.0d
+		}
+		{
+			icon: {
+				id: "aquaculture:neptunium_bow"
+			}
+			id: "7B000000000002AF"
+			rewards: [{
+				id: "7B000000020002AF"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AF"
+				item: { count: 1, id: "aquaculture:neptunium_bow" }
+				type: "item"
+			}]
+			x: 61.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "cataclysm:cursed_bow"
+			}
+			id: "7B000000000002B0"
+			rewards: [{
+				id: "7B000000020002B0"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002B0"
+				item: { count: 1, id: "cataclysm:cursed_bow" }
+				type: "item"
+			}]
+			x: 62.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "cognition:cognitive_bow"
+			}
+			id: "7B000000000002B1"
+			rewards: [{
+				id: "7B000000020002B1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002B1"
+				item: { count: 1, id: "cognition:cognitive_bow" }
+				type: "item"
+			}]
+			x: 59.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "hazennstuff:skyscorcher"
+			}
+			id: "7B000000000002B2"
+			rewards: [{
+				id: "7B000000020002B2"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002B2"
+				item: { count: 1, id: "hazennstuff:skyscorcher" }
+				type: "item"
+			}]
+			x: 66.0d
+			y: 21.0d
 		}
 	]
 }

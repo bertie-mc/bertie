@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hangglider"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "  S  ",
+    " S S ",
+    "S   S",
+    "SSSSS"
+  ],
+  "result": {
+    "id": "hangglider:glider_framework",
+    "count": 1
+  },
+  "show_notification": true
+}

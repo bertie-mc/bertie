@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterend"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hangglider"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "betterend:leather_wrapped_stick"
+    },
+    "L": {
+      "item": "twilightforest:tanned_leather"
+    }
+  },
+  "pattern": [
+    "  WL",
+    " WLL",
+    " WLL",
+    "WLLL"
+  ],
+  "result": {
+    "id": "hangglider:glider_wing",
+    "count": 1
+  },
+  "show_notification": true
+}

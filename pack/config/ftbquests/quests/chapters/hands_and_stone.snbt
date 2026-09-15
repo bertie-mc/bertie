@@ -661,8 +661,8 @@
 				item: { count: 1, id: "slag:deep_alloy" }
 				type: "item"
 			}]
-			x: 8.25d
-			y: 2.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B00000000000015"]
@@ -681,8 +681,8 @@
 				item: { count: 1, id: "forbidden_arcanus:arcane_crystal" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B00000000000019"]
@@ -838,8 +838,8 @@
 				item: { count: 1, id: "forbidden_arcanus:corrupted_arcane_crystal" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.0d
+			x: 12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1B0000000000000A"]
@@ -1217,9 +1217,9 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["1B00000000000008"]
+			dependencies: ["1B0000000000001C"]
 			icon: {
-				id: "chalk:chalk_box"
+				id: "chalk:white_chalk"
 			}
 			id: "1B0000000000003A"
 			rewards: [{
@@ -1232,7 +1232,7 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(c:chalks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
@@ -1251,8 +1251,199 @@
 				item: { count: 1, id: "chalk:chalk_box" }
 				type: "item"
 			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B00000000000008"]
+			icon: {
+				id: "magitech:axe"
+			}
+			id: "1B0000000000003C"
+			rewards: [{
+				id: "1B0000000200003C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100003C"
+				item: { count: 1, id: "magitech:axe" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
 			x: 7.5d
-			y: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000003C"]
+			icon: {
+				id: "farmersdelight:cutting_board"
+			}
+			id: "1B0000000000003D"
+			rewards: [{
+				id: "1B0000000200003D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100003D"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000003D"]
+			icon: {
+				id: "farmersdelight:tree_bark"
+			}
+			id: "1B0000000000003E"
+			rewards: [{
+				id: "1B0000000200003E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100003E"
+				item: { count: 1, id: "farmersdelight:tree_bark" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000003E"]
+			icon: {
+				id: "twilightforest:tannin"
+			}
+			id: "1B0000000000003F"
+			rewards: [{
+				id: "1B0000000200003F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100003F"
+				item: { count: 1, id: "twilightforest:tannin" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000003F"]
+			icon: {
+				id: "minecraft:oak_slab"
+			}
+			id: "1B00000000000040"
+			rewards: [{
+				id: "1B00000002000040"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000040"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:wooden_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000040"]
+			icon: {
+				id: "youkaisfeasts:drying_rack"
+			}
+			id: "1B00000000000041"
+			rewards: [{
+				id: "1B00000002000041"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000041"
+				item: { count: 1, id: "youkaisfeasts:drying_rack" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000041"]
+			icon: {
+				id: "minecraft:leather"
+			}
+			id: "1B00000000000042"
+			rewards: [{
+				id: "1B00000002000042"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000042"
+				item: { count: 1, id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000042"]
+			icon: {
+				id: "twilightforest:treated_leather"
+			}
+			id: "1B00000000000043"
+			rewards: [{
+				id: "1B00000002000043"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000043"
+				item: { count: 1, id: "twilightforest:treated_leather" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000043"]
+			icon: {
+				id: "twilightforest:tanned_leather"
+			}
+			id: "1B00000000000044"
+			rewards: [{
+				id: "1B00000002000044"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000044"
+				item: { count: 1, id: "twilightforest:tanned_leather" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B00000000000044"]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "1B00000000000045"
+			rewards: [{
+				id: "1B00000002000045"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000045"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
 		}
 	]
 }

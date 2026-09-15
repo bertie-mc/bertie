@@ -128,6 +128,18 @@
 	quest.1B0000000000003A.title: "A Stick of Chalk"
 	quest.1B0000000000003B.quest_desc: ["Holds every colour at once and draws from whichever you pick."]
 	quest.1B0000000000003B.title: "The Chalk Box"
+	quest.1B0000000000003C.quest_desc: ["Any material will do. Stripping a log for its bark is the first thing an axe is for here."]
+	quest.1B0000000000003C.title: "Any Magitech Axe"
+	quest.1B0000000000003D.title: "Cutting Board"
+	quest.1B0000000000003E.title: "Tree Bark"
+	quest.1B0000000000003F.title: "Tannin"
+	quest.1B00000000000040.quest_desc: ["Hit the side of a plank block with Flint. One try in ten splits it: the bottom half stays, the top half drops."]
+	quest.1B00000000000040.title: "Any Wooden Slab"
+	quest.1B00000000000041.title: "Drying Rack"
+	quest.1B00000000000042.title: "Leather"
+	quest.1B00000000000043.title: "Treated Leather"
+	quest.1B00000000000044.title: "Tanned Leather"
+	quest.1B00000000000045.title: "Backpack"
 	quest.1C00000000000008.title: "Tainted Rock"
 	quest.1C00000000000009.quest_desc: ["The same trade, soured: one block of GRANITE, one Wicked and one Arcane spirit."]
 	quest.1C00000000000009.title: "Twisted Rock"
@@ -299,8 +311,6 @@
 	quest.2B00000000000022.title: "Blaze Powder"
 	quest.2B00000000000024.quest_desc: ["Forge a Fire-Infused Iron Ingot."]
 	quest.2B00000000000024.title: "Fire-Infused Iron"
-	quest.2B00000000000025.quest_desc: ["Mine 4 Runes from Runic Stones."]
-	quest.2B00000000000025.title: "Mine a Rune"
 	quest.2B00000000000026.quest_desc: ["Find me."]
 	quest.2B00000000000026.title: "Into the Nether"
 	quest.2B00000000000027.quest_desc: ["Craft a Furnace - an iron frame over a cobblestone/netherrack base (crafting table or Mechanical Crafter)."]
@@ -589,13 +599,8 @@
 	quest.3B0000000000005E.title: "Echo Chest"
 	quest.3B0000000000005F.quest_desc: ["The camera that develops its own film. Cognitive Amalgam is what it is built from now, not iron."]
 	quest.3B0000000000005F.title: "Instant Camera"
-	quest.3B00000000000060.quest_desc: ["The real one, which takes film and gives it to a Lightroom."]
-	quest.3B00000000000060.title: "Camera"
-	quest.3B00000000000061.title: "Camera Stand"
-	quest.3B00000000000062.title: "Colour Film"
-	quest.3B00000000000063.title: "Telescopic Lens"
-	quest.3B00000000000064.quest_desc: ["Where exposed film becomes a photograph."]
-	quest.3B00000000000064.title: "Lightroom"
+	quest.3B00000000000060.quest_desc: ["The camera and everything it needs: a stand to leave it on, colour film, a telescopic lens and the Lightroom that develops what you shot."]
+	quest.3B00000000000060.title: "The Darkroom Kit"
 	quest.3B00000000000065.title: "Photo Album"
 	quest.3B00000000000066.quest_desc: ["The table that presses a disc, and the two things it presses onto."]
 	quest.3B00000000000066.title: "The Etching Table"
@@ -2057,8 +2062,6 @@
 	quest.6B0000000000000B.title: "The Paintbrush"
 	quest.6B0000000000000C.quest_desc: ["Get inside a Nether Fortress."]
 	quest.6B0000000000000C.title: "Into the Fortress"
-	quest.6B0000000000000E.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
-	quest.6B0000000000000E.title: "The Wither"
 	quest.6B0000000000000F.quest_desc: ["What the Wither leaves behind."]
 	quest.6B0000000000000F.title: "The Nether Star"
 	quest.6B00000000000010.quest_desc: ["The Eye of Mech reads the Nether for the Ancient Factory."]
@@ -3381,6 +3384,12 @@
 	quest.7B000000000002AA.title: "Shield of Vindication"
 	quest.7B000000000002AB.title: "Bulwark of Blazing Pride"
 	quest.7B000000000002AC.title: "Shield of the Earth Core"
+	quest.7B000000000002AD.title: "Buckler"
+	quest.7B000000000002AE.title: "Umbrella"
+	quest.7B000000000002AF.title: "Neptunium Bow"
+	quest.7B000000000002B0.title: "Cursed Bow"
+	quest.7B000000000002B1.title: "Cognitive Bow"
+	quest.7B000000000002B2.title: "Skyscorcher"
 	task.2B0000000100001F.title: "Not So Fast"
 	task.4B00000001000001.title: "Placeholder"
 	task.5B00000001000001.title: "Placeholder"

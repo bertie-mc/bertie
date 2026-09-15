@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterend"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "betterend:leather_stripe"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " LL",
+    "LSL",
+    "LL "
+  ],
+  "result": {
+    "id": "betterend:leather_wrapped_stick",
+    "count": 1
+  }
+}

@@ -3,13 +3,21 @@
     {
       "type": "sophisticatedcore:item_enabled",
       "itemRegistryName": "sophisticatedbackpacks:backpack"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sophisticatedbackpacks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
     }
   ],
   "type": "sophisticatedbackpacks:basic_backpack",
   "category": "misc",
   "key": {
     "L": {
-      "tag": "c:leathers"
+      "item": "twilightforest:tanned_leather"
     },
     "S": {
       "tag": "c:strings"
@@ -26,7 +34,7 @@
     "CU"
   ],
   "result": {
-    "count": 1,
-    "id": "sophisticatedbackpacks:backpack"
+    "id": "sophisticatedbackpacks:backpack",
+    "count": 1
   }
 }

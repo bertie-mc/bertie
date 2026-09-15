@@ -4,6 +4,7 @@ import io.github.bertie_mc.bertieprogression.fan.ModFanProcessing;
 import io.github.bertie_mc.bertieprogression.forge.ForgeBedHandler;
 import io.github.bertie_mc.bertieprogression.forge.PedestalFormationHandler;
 import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
+import io.github.bertie_mc.bertieprogression.gate.PlankSplitHandler;
 import io.github.bertie_mc.bertieprogression.hooks.HookIntegration;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import net.neoforged.bus.api.IEventBus;
@@ -45,6 +46,7 @@ public final class BertieProgression {
         modBus.register(ExtendoGripCurio.class);
 
         NeoForge.EVENT_BUS.register(CraftingGateHandler.class);
+        NeoForge.EVENT_BUS.register(PlankSplitHandler.class);
         NeoForge.EVENT_BUS.register(ForgeBedHandler.class);
         NeoForge.EVENT_BUS.register(PedestalFormationHandler.class);
         NeoForge.EVENT_BUS.register(AllayCorruptionHandler.class);

@@ -263,29 +263,7 @@
 			y: 1.5d
 		}
 		{
-			icon: {
-				id: "minecraft:wither_rose"
-			}
-			id: "6B0000000000000E"
-			rewards: [{
-				id: "6B0000000200000E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "minecraft:wither"
-				icon: {
-					id: "minecraft:wither_rose"
-				}
-				id: "6B0000000100000E"
-				type: "kill"
-				value: 1L
-			}]
-			x: 12.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["6B0000000000005D" "6B0000000000000E"]
+			dependencies: ["6B0000000000005D"]
 			icon: {
 				id: "minecraft:nether_star"
 			}

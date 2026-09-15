@@ -3007,6 +3007,69 @@ _flame = pedestal(["BSA", "BXA", "BSA"],
 _flame["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
 write("data/pastel/recipe/pedestal/tier2/flame_eye.json", _flame)
 
+# --- The leather line. Tanning is a chain now, and everything on it costs a step rather than a
+#     shapeless shuffle. ---
+# Cutting Board: a stick beside a wooden pressure plate, in place of six planks.
+write("data/farmersdelight/recipe/cutting_board.json",
+      shaped(["/P"], {"/": "minecraft:stick", "P": "#minecraft:wooden_pressure_plates"},
+             "farmersdelight:cutting_board"))
+
+# Tannin: a water bottle, a slime ball and two Tree Bark, rather than Twilight saplings and leaves.
+write("data/twilightforest/recipe/tannin.json",
+      {"neoforge:conditions": conds("twilightforest", "farmersdelight"),
+       "type": "minecraft:crafting_shapeless", "category": "misc",
+       "ingredients": [{"type": "neoforge:components",
+                        "components": {"minecraft:potion_contents": {"potion": "minecraft:water"}},
+                        "items": "minecraft:potion"},
+                       {"tag": "c:slime_balls"},
+                       {"item": "farmersdelight:tree_bark"},
+                       {"item": "farmersdelight:tree_bark"}],
+       "result": {"id": "twilightforest:tannin", "count": 1}})
+
+# Drying Rack: two wooden slabs side by side. Its bamboo stonecutting goes.
+write("data/youkaisfeasts/recipe/drying_rack_from_bamboo_block_stonecutting.json", DISABLED)
+write("data/youkaisfeasts/recipe/drying_rack.json",
+      shaped(["SS"], {"S": "#minecraft:wooden_slabs"}, "youkaisfeasts:drying_rack"))
+
+# Leather Stripes come off the cutting board now, two at a time, not out of the grid.
+write("data/betterend/recipe/leather_to_stripes.json", DISABLED)
+write(f"{R}/cutting/leather_stripe.json",
+      {"neoforge:conditions": conds("farmersdelight", "betterend"),
+       "type": "farmersdelight:cutting",
+       "ingredients": [{"item": "minecraft:leather"}],
+       "result": [{"item": {"count": 2, "id": "betterend:leather_stripe"}}],
+       "sound": {"sound_id": "minecraft:item.axe.strip"},
+       "tool": {"tag": "c:tools/knife"}})
+
+# Leather Wrapped Stick: a stick wound in six stripes.
+write("data/betterend/recipe/leather_wrapped_stick.json",
+      shaped([" LL", "LSL", "LL "],
+             {"L": "betterend:leather_stripe", "S": "minecraft:stick"},
+             "betterend:leather_wrapped_stick"))
+
+# The glider is a mechanical craft on both halves: an iron frame, and a wing of tanned leather
+# stretched over leather-wrapped sticks.
+write("data/hangglider/recipe/glider_framework.json", DISABLED)
+write(f"{R}/mechanical/glider_framework.json",
+      mech(["  S  ", " S S ", "S   S", "SSSSS"], {"S": "create:iron_sheet"},
+           "hangglider:glider_framework"))
+write("data/hangglider/recipe/glider_wing.json", DISABLED)
+write(f"{R}/mechanical/glider_wing.json",
+      mech(["  WL", " WLL", " WLL", "WLLL"],
+           {"W": "betterend:leather_wrapped_stick", "L": "twilightforest:tanned_leather"},
+           "hangglider:glider_wing"))
+
+# The first backpack is stitched from Tanned Leather, which is the whole point of the line.
+write("data/sophisticatedbackpacks/recipe/backpack.json",
+      {"neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                                "itemRegistryName": "sophisticatedbackpacks:backpack"}]
+                              + conds("sophisticatedbackpacks", "twilightforest"),
+       "type": "sophisticatedbackpacks:basic_backpack", "category": "misc",
+       "key": {"L": {"item": "twilightforest:tanned_leather"}, "S": {"tag": "c:strings"},
+               "C": {"tag": "c:chests/wooden"}, "U": {"item": "minecraft:bundle"}},
+       "pattern": ["LS", "CU"],
+       "result": {"id": "sophisticatedbackpacks:backpack", "count": 1}})
+
 # --- Nature's Compass leaves its "any sapling, any log" 3x3 for the Sculk table, where the four
 #     named logs ring a Compass and the corners cost a sapling from four different lines. ---
 write("data/naturescompass/recipe/natures_compass.json", DISABLED)
@@ -3582,6 +3645,24 @@ if _removed:
                     raise SystemExit(f"docs/removed: {_r['id']!r} is not a registered item in this pack.")
                 _expanded.append(_r["id"])
         _want = set(_expanded)
+
+        # SLABS BACK INTO BLOCKS. Quark's slab_to_block is shapeless in effect - two slabs
+        # anywhere in the grid - which makes splitting a plank with flint a free round trip. The
+        # dynamic recipe goes and every pair is re-emitted as a 1x2 shape, so the two halves have
+        # to be stacked the way they were split.
+        _slab_pairs = {}
+        for _s in sorted(_items):
+            if not _s.endswith("_slab"):
+                continue
+            _base = _s[: -len("_slab")]
+            _block = next((_b for _b in (_base + "_planks", _base) if _b in _items), None)
+            if _block:
+                _slab_pairs[_s] = _block
+        write("data/quark/recipe/tweaks/crafting/slab_to_block.json", DISABLED)
+        for _s, _b in _slab_pairs.items():
+            write(f"{R}/slabs/{_s.replace(':', '__')}.json",
+                  shaped(["S", "S"], {"S": _s}, _b, category="building"))
+        print(f"  slabs: {len(_slab_pairs)} pairs re-emitted as stacked 1x2 crafts")
         # second pass: recipes and loot, now that we know the concrete ids
         for _jp in _scan:
             _jn = os.path.basename(_jp)
