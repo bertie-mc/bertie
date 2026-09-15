@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "4350db2896fdee99f2c15d431c101821d61b56bd7dabf9abb66d6bf2d704c27c"
+inputs-hash = "0d68494979d18c5e6cc8e92812db330485956d6e0bec616da55f58e997dba5b6"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -113,10 +113,6 @@ mod = "modrinth:gtX73iTU:QtdkM9Oa"
 [components."bad-wither-no-cookie"]
 any = "modrinth:lL2MtE37:FRuLJsBp"
 mod = "modrinth:lL2MtE37:FRuLJsBp"
-
-[components."bartering-station"]
-any = "modrinth:EOig9U0j:GOAgiH0l"
-mod = "modrinth:EOig9U0j:GOAgiH0l"
 
 [components."better-advancements"]
 any = "modrinth:Q2OqKxDG:FjTYILOi"
@@ -1184,10 +1180,6 @@ mod = "modrinth:e0bNACJD:SPj5bJoM"
 [components."short-circuit"]
 any = "modrinth:5dUwdwpB:6mCe1UkK"
 mod = "modrinth:5dUwdwpB:6mCe1UkK"
-
-[components."simple-conveyor-belts"]
-any = "modrinth:kNthsBTM:JVTAtiHj"
-mod = "modrinth:kNthsBTM:JVTAtiHj"
 
 [components."simply-swords"]
 any = "modrinth:bK3Ubu9p:eREhvVpQ"
@@ -4197,26 +4189,6 @@ version-id = "89QaQ0n0"
 provides = ["mekanismcovers"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:EOig9U0j:GOAgiH0l"]
-name = "bartering-station"
-component = "bartering-station"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "EOig9U0j"
-version = "GOAgiH0l"
-filename = "BarteringStation-v21.1.0-1.21.1-NeoForge.jar"
-project-id = "EOig9U0j"
-version-id = "GOAgiH0l"
-provides = ["barteringstation"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.8,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -8605,26 +8577,6 @@ version-id = "K5CcH2I7"
 provides = []
 bundled-provides = []
 required = [{ "artifact" = "modrinth:CU0PAyzb:CLZfFbCx", "mod-id" = "paxi", "side" = "both", "origin" = "profile:release-modrinth:native-packs.datapack" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:kNthsBTM:JVTAtiHj"]
-name = "simple-conveyor-belts"
-component = "simple-conveyor-belts"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "kNthsBTM"
-version = "JVTAtiHj"
-filename = "belts-neoforge-0.2.2.jar"
-project-id = "kNthsBTM"
-version-id = "JVTAtiHj"
-provides = ["belts"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:lhGA9TYQ:ZxYGwlk0", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

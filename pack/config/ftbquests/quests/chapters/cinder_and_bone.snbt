@@ -263,27 +263,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000000C"]
-			icon: {
-				id: "minecraft:wither_skeleton_skull"
-			}
-			id: "6B0000000000000D"
-			rewards: [{
-				id: "6B0000000200000D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				count: 3L
-				id: "6B0000000100000D"
-				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6B0000000000000D"]
 			icon: {
 				id: "minecraft:wither_rose"
 			}
@@ -302,11 +281,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.5d
-			y: 4.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6B0000000000000E"]
+			dependencies: ["6B0000000000005D" "6B0000000000000E"]
 			icon: {
 				id: "minecraft:nether_star"
 			}
@@ -321,8 +300,8 @@
 				item: { count: 1, id: "minecraft:nether_star" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B0000000000000F"]
@@ -340,8 +319,8 @@
 				item: { count: 1, id: "cataclysm:mech_eye" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000010"]
@@ -362,8 +341,8 @@
 				structure: "cataclysm:ancient_factory"
 				type: "structure"
 			}]
-			x: 9.0d
-			y: 4.5d
+			x: 16.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000011"]
@@ -385,8 +364,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 10.5d
-			y: 4.5d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000001"]
@@ -457,11 +436,11 @@
 				item: { count: 1, id: "minecraft:nether_wart" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000017"]
+			dependencies: ["6B00000000000061"]
 			icon: {
 				id: "minecraft:fermented_spider_eye"
 			}
@@ -989,7 +968,7 @@
 				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -1008,7 +987,7 @@
 				item: { count: 1, id: "forbidden_arcanus:dark_matter" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 6.0d
 			y: 3.0d
 		}
 		{
@@ -1033,7 +1012,7 @@
 				to_observe: "forbidden_arcanus:black_hole"
 				type: "observation"
 			}]
-			x: 18.0d
+			x: 7.5d
 			y: 3.0d
 		}
 		{
@@ -1156,6 +1135,77 @@
 			}]
 			x: 18.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000017"]
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "6B00000000000061"
+			rewards: [{
+				id: "6B00000002000061"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6B00000001000061"
+					item: { count: 1, id: "minecraft:spider_eye" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6B00000001010061"
+					item: { count: 1, id: "minecraft:sugar" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6B00000001020061"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:mushrooms)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000017"]
+			icon: {
+				id: "minecraft:brewing_stand"
+			}
+			id: "6B00000000000062"
+			rewards: [{
+				id: "6B00000002000062"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000062"
+				item: { count: 1, id: "minecraft:brewing_stand" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B00000000000062"]
+			icon: {
+				id: "piglinproliferation:stone_fire_ring"
+			}
+			id: "6B00000000000063"
+			rewards: [{
+				id: "6B00000002000063"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000063"
+				item: { count: 1, id: "piglinproliferation:stone_fire_ring" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
 		}
 	]
 }

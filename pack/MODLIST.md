@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (459)
+## Mods (457)
 
 | Mod |
 |---|
@@ -43,7 +43,6 @@
 | `azurelib` |
 | `bad-wither-no-cookie` |
 | `balm` |
-| `bartering-station` |
 | `bclib-neoforge` |
 | `better-advancements` |
 | `better-archeology` |
@@ -362,7 +361,6 @@
 | `server-sided-portals` |
 | `sg-economy-api` |
 | `short-circuit` |
-| `simple-conveyor-belts` |
 | `simply-swords` |
 | `simply-tooltips` |
 | `simplymore` |

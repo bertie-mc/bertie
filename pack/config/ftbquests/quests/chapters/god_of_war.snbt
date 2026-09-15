@@ -13289,5 +13289,347 @@
 			x: 3.0d
 			y: 32.0d
 		}
+		{
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7B0000000000029A"
+			rewards: [{
+				id: "7B0000000200029A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029A"
+				item: { count: 1, id: "minecraft:shield" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:bronze_shield"
+			}
+			id: "7B0000000000029B"
+			rewards: [{
+				id: "7B0000000200029B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029B"
+				item: { count: 1, id: "mekanismtools:bronze_shield" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:steel_shield"
+			}
+			id: "7B0000000000029C"
+			rewards: [{
+				id: "7B0000000200029C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029C"
+				item: { count: 1, id: "mekanismtools:steel_shield" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:osmium_shield"
+			}
+			id: "7B0000000000029D"
+			rewards: [{
+				id: "7B0000000200029D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029D"
+				item: { count: 1, id: "mekanismtools:osmium_shield" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 20.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:lapis_lazuli_shield"
+			}
+			id: "7B0000000000029E"
+			rewards: [{
+				id: "7B0000000200029E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029E"
+				item: { count: 1, id: "mekanismtools:lapis_lazuli_shield" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:refined_glowstone_shield"
+			}
+			id: "7B0000000000029F"
+			rewards: [{
+				id: "7B0000000200029F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100029F"
+				item: { count: 1, id: "mekanismtools:refined_glowstone_shield" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "mekanismtools:refined_obsidian_shield"
+			}
+			id: "7B000000000002A0"
+			rewards: [{
+				id: "7B000000020002A0"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A0"
+				item: { count: 1, id: "mekanismtools:refined_obsidian_shield" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "twilightforest:knightmetal_shield"
+			}
+			id: "7B000000000002A1"
+			rewards: [{
+				id: "7B000000020002A1"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A1"
+				item: { count: 1, id: "twilightforest:knightmetal_shield" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:stony_shield"
+			}
+			id: "7B000000000002A2"
+			rewards: [{
+				id: "7B000000020002A2"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A2"
+				item: { count: 1, id: "mythsandlegends:stony_shield" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 22.0d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:maledictum_shield"
+			}
+			id: "7B000000000002A3"
+			rewards: [{
+				id: "7B000000020002A3"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A3"
+				item: { count: 1, id: "mythsandlegends:maledictum_shield" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 22.0d
+		}
+		{
+			icon: {
+				id: "alexscaves:resistor_shield"
+			}
+			id: "7B000000000002A4"
+			rewards: [{
+				id: "7B000000020002A4"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A4"
+				item: { count: 1, id: "alexscaves:resistor_shield" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 22.0d
+		}
+		{
+			icon: {
+				id: "alexsmobs:shield_of_the_deep"
+			}
+			id: "7B000000000002A5"
+			rewards: [{
+				id: "7B000000020002A5"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A5"
+				item: { count: 1, id: "alexsmobs:shield_of_the_deep" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 22.0d
+		}
+		{
+			icon: {
+				id: "endermanoverhaul:corrupted_shield"
+			}
+			id: "7B000000000002A6"
+			rewards: [{
+				id: "7B000000020002A6"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A6"
+				item: { count: 1, id: "endermanoverhaul:corrupted_shield" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 23.0d
+		}
+		{
+			icon: {
+				id: "block_factorys_bosses:enhanced_shield"
+			}
+			id: "7B000000000002A7"
+			rewards: [{
+				id: "7B000000020002A7"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A7"
+				item: { count: 1, id: "block_factorys_bosses:enhanced_shield" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 23.0d
+		}
+		{
+			icon: {
+				id: "block_factorys_bosses:dragon_guard_shield"
+			}
+			id: "7B000000000002A8"
+			rewards: [{
+				id: "7B000000020002A8"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A8"
+				item: { count: 1, id: "block_factorys_bosses:dragon_guard_shield" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 23.0d
+		}
+		{
+			icon: {
+				id: "cataclysm:azure_sea_shield"
+			}
+			id: "7B000000000002A9"
+			rewards: [{
+				id: "7B000000020002A9"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002A9"
+				item: { count: 1, id: "cataclysm:azure_sea_shield" }
+				type: "item"
+			}]
+			x: 57.0d
+			y: 23.0d
+		}
+		{
+			icon: {
+				id: "ancient_forgemastery:shield_of_vindication"
+			}
+			id: "7B000000000002AA"
+			rewards: [{
+				id: "7B000000020002AA"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AA"
+				item: { count: 1, id: "ancient_forgemastery:shield_of_vindication" }
+				type: "item"
+			}]
+			x: 54.0d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "enigmaticlegacyplus:infernal_shield"
+			}
+			id: "7B000000000002AB"
+			rewards: [{
+				id: "7B000000020002AB"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AB"
+				item: { count: 1, id: "enigmaticlegacyplus:infernal_shield" }
+				type: "item"
+			}]
+			x: 55.0d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "avaritia:infinity_shield"
+			}
+			id: "7B000000000002AC"
+			rewards: [{
+				id: "7B000000020002AC"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B000000010002AC"
+				item: { count: 1, id: "avaritia:infinity_shield" }
+				type: "item"
+			}]
+			x: 56.0d
+			y: 24.0d
+		}
 	]
 }

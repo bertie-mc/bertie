@@ -1,0 +1,72 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "naturescompass"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 1,
+  "key": {
+    "C": {
+      "item": "minecraft:compass"
+    },
+    "B": {
+      "item": "minecraft:birch_log"
+    },
+    "M": {
+      "item": "minecraft:mangrove_log"
+    },
+    "H": {
+      "item": "minecraft:cherry_log"
+    },
+    "P": {
+      "item": "minecraft:pale_oak_log"
+    },
+    "A": {
+      "item": "quark:ancient_sapling"
+    },
+    "S": {
+      "item": "magitech:charcoal_birch_sapling"
+    },
+    "D": {
+      "item": "forbidden_arcanus:aurum_sapling"
+    },
+    "F": {
+      "item": "malum:soulwood_sapling"
+    }
+  },
+  "pattern": [
+    "ABS",
+    "HCP",
+    "FMD"
+  ],
+  "result": {
+    "id": "naturescompass:naturescompass",
+    "count": 1
+  }
+}

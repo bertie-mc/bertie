@@ -120,6 +120,14 @@
 	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
 	quest.1B00000000000036.title: "Wooden Hook"
 	quest.1B00000000000037.title: "Deep Hook"
+	quest.1B00000000000038.quest_desc: ["Two Books beside two Paper. It swallows every enchanted book you own and hands them back one at a time."]
+	quest.1B00000000000038.title: "Eccentric Tome"
+	quest.1B00000000000039.quest_desc: ["Something to hit that hits back with numbers."]
+	quest.1B00000000000039.title: "Target Dummy"
+	quest.1B0000000000003A.quest_desc: ["Any colour. Chalk marks the floor and nothing else does."]
+	quest.1B0000000000003A.title: "A Stick of Chalk"
+	quest.1B0000000000003B.quest_desc: ["Holds every colour at once and draws from whichever you pick."]
+	quest.1B0000000000003B.title: "The Chalk Box"
 	quest.1C00000000000008.title: "Tainted Rock"
 	quest.1C00000000000009.quest_desc: ["The same trade, soured: one block of GRANITE, one Wicked and one Arcane spirit."]
 	quest.1C00000000000009.title: "Twisted Rock"
@@ -577,6 +585,22 @@
 	quest.3B0000000000005C.title: "Nature's Compass"
 	quest.3B0000000000005D.quest_desc: ["Cognition's last assembly. The Primitive Controller is built around one."]
 	quest.3B0000000000005D.title: "Primordial Assembly"
+	quest.3B0000000000005E.quest_desc: ["A chest that shares its contents with every other one like it."]
+	quest.3B0000000000005E.title: "Echo Chest"
+	quest.3B0000000000005F.quest_desc: ["The camera that develops its own film. Cognitive Amalgam is what it is built from now, not iron."]
+	quest.3B0000000000005F.title: "Instant Camera"
+	quest.3B00000000000060.quest_desc: ["The real one, which takes film and gives it to a Lightroom."]
+	quest.3B00000000000060.title: "Camera"
+	quest.3B00000000000061.title: "Camera Stand"
+	quest.3B00000000000062.title: "Colour Film"
+	quest.3B00000000000063.title: "Telescopic Lens"
+	quest.3B00000000000064.quest_desc: ["Where exposed film becomes a photograph."]
+	quest.3B00000000000064.title: "Lightroom"
+	quest.3B00000000000065.title: "Photo Album"
+	quest.3B00000000000066.quest_desc: ["The table that presses a disc, and the two things it presses onto."]
+	quest.3B00000000000066.title: "The Etching Table"
+	quest.3B00000000000067.quest_desc: ["Somewhere to keep the discs, and two ways to play them."]
+	quest.3B00000000000067.title: "Jukebox and Boombox"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"
@@ -2033,8 +2057,6 @@
 	quest.6B0000000000000B.title: "The Paintbrush"
 	quest.6B0000000000000C.quest_desc: ["Get inside a Nether Fortress."]
 	quest.6B0000000000000C.title: "Into the Fortress"
-	quest.6B0000000000000D.quest_desc: ["Wither Skeletons drop them rarely. You need three."]
-	quest.6B0000000000000D.title: "Three Wither Skulls"
 	quest.6B0000000000000E.quest_desc: ["Four Soul Sand and the three skulls. Build it somewhere you do not mind losing."]
 	quest.6B0000000000000E.title: "The Wither"
 	quest.6B0000000000000F.quest_desc: ["What the Wither leaves behind."]
@@ -2115,6 +2137,11 @@
 	quest.6B0000000000005F.title: "Slay Zoranth"
 	quest.6B00000000000060.quest_desc: ["Ancient Debris smelts into it, and Zoranth guards enough Debris to matter."]
 	quest.6B00000000000060.title: "Ancient Scrap"
+	quest.6B00000000000061.quest_desc: ["A Spider Eye, two Sugar and two Mushrooms - everything the fermented one asks for."]
+	quest.6B00000000000061.title: "Eye, Sugar and Mushroom"
+	quest.6B00000000000062.title: "Brewing Stand"
+	quest.6B00000000000063.quest_desc: ["Blaze Rods around Fire Light Dust on a course of Smooth Stone. Piglins barter beside it."]
+	quest.6B00000000000063.title: "Alchemical Fire Pit"
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000004.quest_desc: ["A Zardius Crucible in a Knightmetal frame, over a Block of Carminite cornered with Deep Alloy. Brews the inks and reagents."]
 	quest.7B00000000000004.title: "Alchemist Cauldron"
@@ -3335,6 +3362,25 @@
 	quest.7B00000000000297.title: "Cursium Axe"
 	quest.7B00000000000298.title: "Ignitium Axe"
 	quest.7B00000000000299.title: "The Ender"
+	quest.7B0000000000029A.title: "Shield"
+	quest.7B0000000000029B.title: "Bronze Shield"
+	quest.7B0000000000029C.title: "Steel Shield"
+	quest.7B0000000000029D.title: "Osmium Shield"
+	quest.7B0000000000029E.title: "Lapis Lazuli Shield"
+	quest.7B0000000000029F.title: "Refined Glowstone Shield"
+	quest.7B000000000002A0.title: "Refined Obsidian Shield"
+	quest.7B000000000002A1.title: "Knightmetal Shield"
+	quest.7B000000000002A2.title: "Stony Shield"
+	quest.7B000000000002A3.title: "Maledictum Shield"
+	quest.7B000000000002A4.title: "Resistor Shield"
+	quest.7B000000000002A5.title: "Shield of the Deep"
+	quest.7B000000000002A6.title: "Corrupted Shield"
+	quest.7B000000000002A7.title: "Enhanced Shield"
+	quest.7B000000000002A8.title: "Dragon Guard Shield"
+	quest.7B000000000002A9.title: "Azure Sea Shield"
+	quest.7B000000000002AA.title: "Shield of Vindication"
+	quest.7B000000000002AB.title: "Bulwark of Blazing Pride"
+	quest.7B000000000002AC.title: "Shield of the Earth Core"
 	task.2B0000000100001F.title: "Not So Fast"
 	task.4B00000001000001.title: "Placeholder"
 	task.5B00000001000001.title: "Placeholder"

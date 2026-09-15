@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "piglinproliferation"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:blaze_rod"
+    },
+    "D": {
+      "item": "born_in_chaos_v1:fire_dust"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    " R ",
+    "RDR",
+    "SSS"
+  ],
+  "result": {
+    "id": "piglinproliferation:stone_fire_ring",
+    "count": 1
+  }
+}

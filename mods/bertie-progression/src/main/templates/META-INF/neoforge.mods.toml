@@ -337,6 +337,62 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Recipe override: the compass is built on the Sculk table.
+[[dependencies.${mod_id}]]
+modId="naturescompass"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: two Books and two Paper, not a whole bookshelf.
+[[dependencies.${mod_id}]]
+modId="eccentrictome"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: the fire pit takes Blaze Rods and Fire Light Dust.
+[[dependencies.${mod_id}]]
+modId="piglinproliferation"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: the camera runs on Cognition, not iron.
+[[dependencies.${mod_id}]]
+modId="exposure"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: the instant camera runs on Cognition, not iron.
+[[dependencies.${mod_id}]]
+modId="exposure_polaroid"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: the etching table runs on Cognition, not iron.
+[[dependencies.${mod_id}]]
+modId="etched"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe and biome-modifier overrides: bulk plastic, and no baby mobs.
+[[dependencies.${mod_id}]]
+modId="mekanismadditions"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Loot override: the Rooted Boots leave the mimic's loot table.
 [[dependencies.${mod_id}]]
 modId="artifacts"

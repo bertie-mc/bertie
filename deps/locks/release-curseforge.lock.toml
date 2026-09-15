@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "ad1298fa0ee1996a266d92c6fbd2fddfa526bc85cff4fe6bcb90d21098d02395"
+inputs-hash = "e4c3807a0d75cfecd93ccd77b9f8a7bf82e7b2567b59e857cbb127681dffa773"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -113,10 +113,6 @@ mod = "curseforge:1289374:8133384"
 [components."bad-wither-no-cookie"]
 any = "modrinth:lL2MtE37:FRuLJsBp"
 mod = "modrinth:lL2MtE37:FRuLJsBp"
-
-[components."bartering-station"]
-any = "curseforge:666940:5733754"
-mod = "curseforge:666940:5733754"
 
 [components."better-advancements"]
 any = "curseforge:272515:5850587"
@@ -1184,10 +1180,6 @@ mod = "curseforge:291874:6182596"
 [components."short-circuit"]
 any = "curseforge:1184318:7511317"
 mod = "curseforge:1184318:7511317"
-
-[components."simple-conveyor-belts"]
-any = "curseforge:1292980:7195755"
-mod = "curseforge:1292980:7195755"
 
 [components."simply-swords"]
 any = "curseforge:659887:7704396"
@@ -3495,27 +3487,6 @@ file-id = 6823792
 provides = ["mr_air_jumpenchantment"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1292980:7195755"]
-name = "simple-conveyor-belts"
-component = "simple-conveyor-belts"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "simple-conveyor-belts-1292980"
-version = "7195755"
-filename = "belts-neoforge-0.2.2.jar"
-project-id = 1292980
-slug = "simple-conveyor-belts"
-file-id = 7195755
-provides = ["belts"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -7838,27 +7809,6 @@ file-id = 6311236
 provides = ["letmedespawn"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Gi02250Z:cHGan9fQ", "mod-id" = "almanac", "version-range" = "[1.0.2,)", "side" = "server", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:666940:5733754"]
-name = "bartering-station"
-component = "bartering-station"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "bartering-station-666940"
-version = "5733754"
-filename = "BarteringStation-v21.1.0-1.21.1-NeoForge.jar"
-project-id = 666940
-slug = "bartering-station"
-file-id = 5733754
-provides = ["barteringstation"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.8,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

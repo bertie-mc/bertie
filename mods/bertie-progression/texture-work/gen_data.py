@@ -2822,7 +2822,7 @@ write(f"{R}/cognition/cognitive_flux_mixing.json",
        "type": "create:mixing",
        "ingredients": [{"tag": "c:dusts/copper"}, {"tag": "c:dusts/copper"},
                        {"item": "minecraft:lapis_lazuli"}, {"tag": "c:gems/quartz"}],
-       "results": [{"id": "cognition:cognitive_flux", "count": 4}]})
+       "results": [{"id": "cognition:cognitive_flux", "count": 1}]})
 
 write("data/cognition/recipe/cognitive_alloy.json",
       shaped(["AAA", "ILI", "AAA"],
@@ -3006,6 +3006,78 @@ _flame = pedestal(["BSA", "BXA", "BSA"],
                   "cataclysm:flame_eye", 1, tier="simple", time=200, xp=4.0)
 _flame["required_advancement"] = "pastel:unlocks/blocks/cmy_pedestal"
 write("data/pastel/recipe/pedestal/tier2/flame_eye.json", _flame)
+
+# --- Nature's Compass leaves its "any sapling, any log" 3x3 for the Sculk table, where the four
+#     named logs ring a Compass and the corners cost a sapling from four different lines. ---
+write("data/naturescompass/recipe/natures_compass.json", DISABLED)
+write(f"{R}/avaritia/natures_compass.json", {
+    "neoforge:conditions": conds("avaritia", "naturescompass", "vanillabackport", "quark",
+                                 "magitech", "forbidden_arcanus", "malum"),
+    "type": "avaritia:shaped_table",
+    "tier": 1,
+    "key": {"C": {"item": "minecraft:compass"},
+            "B": {"item": "minecraft:birch_log"},
+            "M": {"item": "minecraft:mangrove_log"},
+            "H": {"item": "minecraft:cherry_log"},
+            "P": {"item": "minecraft:pale_oak_log"},
+            "A": {"item": "quark:ancient_sapling"},
+            "S": {"item": "magitech:charcoal_birch_sapling"},
+            "D": {"item": "forbidden_arcanus:aurum_sapling"},
+            "F": {"item": "malum:soulwood_sapling"}},
+    "pattern": ["ABS", "HCP", "FMD"],
+    "result": {"id": "naturescompass:naturescompass", "count": 1},
+})
+
+# --- Armour Stand: a stick over a Smooth Stone Slab, in place of vanilla's six sticks. ---
+write("data/minecraft/recipe/armor_stand.json",
+      shaped(["S", "L"], {"S": "minecraft:stick", "L": "minecraft:smooth_stone_slab"},
+             "minecraft:armor_stand"))
+
+# --- Eccentric Tome: two Books beside two Paper, rather than a Book and a whole bookshelf. ---
+write("data/eccentrictome/recipe/tome.json",
+      shaped(["BP", "BP"], {"B": "minecraft:book", "P": "minecraft:paper"},
+             "eccentrictome:tome"))
+
+# --- Alchemical Fire Pit: Blaze Rods around Fire Light Dust on a course of Smooth Stone. ---
+write("data/piglinproliferation/recipe/stone_fire_ring.json",
+      shaped([" R ", "RDR", "SSS"],
+             {"R": "minecraft:blaze_rod", "D": "born_in_chaos_v1:fire_dust",
+              "S": "minecraft:smooth_stone"},
+             "piglinproliferation:stone_fire_ring"))
+
+# --- Cognition runs the camera and the record press: iron is not what either is made of here. ---
+write("data/exposure/recipe/camera.json",
+      shaped(["LIB", "IGI", "III"],
+             {"L": "minecraft:lever", "I": "cognition:cognitive_amalgam",
+              "B": "#minecraft:buttons", "G": "#c:glass_panes/colorless"},
+             "exposure:camera", category="equipment"))
+write("data/exposure_polaroid/recipe/instant_camera.json",
+      shaped(["III", "BGF", "ICI"],
+             {"I": "cognition:cognitive_amalgam", "B": "#minecraft:buttons",
+              "G": "#c:glass_panes/colorless", "F": "#exposure:flashes",
+              "C": "minecraft:crafter"},
+             "exposure_polaroid:instant_camera", category="equipment"))
+write("data/etched/recipe/etching_table.json",
+      shaped([" DI", "PPP"],
+             {"D": "#c:gems/diamond", "I": "cognition:cognitive_amalgam",
+              "P": "#minecraft:planks"},
+             "etched:etching_table"))
+
+# --- Plastic is a bulk material and four sheets for four blocks made it anything but. ---
+for _dye in ("black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray",
+             "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"):
+    write(f"data/mekanismadditions/recipe/plastic/block/{_dye}.json",
+          {"neoforge:conditions": conds("mekanismadditions", "mekanism"),
+           "type": "minecraft:crafting_shaped", "category": "building",
+           "key": {"#": {"item": "mekanism:hdpe_sheet"}, "D": {"tag": f"c:dyes/{_dye}"}},
+           "pattern": [" # ", "#D#", " # "],
+           "result": {"count": 16, "id": f"mekanismadditions:{_dye}_plastic"}})
+
+# --- The six baby mobs are a novelty that follows you around the whole game. Their biome modifiers
+#     are overridden with neoforge:none, which is how a modifier is switched off; the spawn eggs go
+#     out through docs/removed. ---
+for _baby in ("bogged", "creeper", "enderman", "skeleton", "stray", "wither_skeleton"):
+    write(f"data/mekanismadditions/neoforge/biome_modifier/{_baby}.json", {"type": "neoforge:none"})
 
 # Decay spreads and multiplies, so anything it drops is free: one Bottle of Fading turns into a
 # field of Vegetal, one Bottle of Failing into a field of Neolith. The blocks stay breakable and
