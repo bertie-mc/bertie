@@ -88,6 +88,7 @@ include(
     ":mods:cataclysm-fortresses",
     ":mods:config-migrations",
     ":mods:coo-particles-fix",
+    ":mods:creeper-overhaul-fix",
     ":mods:ender-eyes",
     ":mods:explode-to-mine",
     ":mods:explosive-enhancement",

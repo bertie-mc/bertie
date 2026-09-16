@@ -385,6 +385,7 @@ dependencies {
     packMods(project(":mods:cataclysm-fortresses"))
     packMods(project(":mods:config-migrations"))
     packMods(project(":mods:coo-particles-fix"))
+    packMods(project(":mods:creeper-overhaul-fix"))
     packMods(project(":mods:ender-eyes"))
     packMods(project(":mods:explode-to-mine"))
     packMods(project(":mods:fart-bomb"))

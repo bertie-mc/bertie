@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (457)
+## Mods (458)
 
 | Mod |
 |---|
@@ -101,6 +101,7 @@
 | `crate-delight` |
 | `create` |
 | `creeper-overhaul` |
+| `creeper-overhaul-fix` |
 | `curios` |
 | `curse-of-pandora` |
 | `cut-through` |

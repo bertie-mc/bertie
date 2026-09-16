@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "creeper-overhaul-fix"
+kind = "neoforge-mod"
+gradle-project = ":mods:creeper-overhaul-fix"
+
+[version]
+file = "mod.properties"
+key = "mod_version"
