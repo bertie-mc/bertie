@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "netherchested"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "key": {
+    "S": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "B": {
+      "item": "minecraft:nether_bricks"
+    },
+    "C": {
+      "item": "quark:nether_brick_chest"
+    },
+    "E": {
+      "item": "irons_spellbooks:cinder_essence"
+    }
+  },
+  "pattern": [
+    "SBBBS",
+    "BCCCB",
+    "BCECB",
+    "BCCCB",
+    "SBBBS"
+  ],
+  "result": {
+    "id": "netherchested:nether_chest",
+    "count": 1
+  }
+}

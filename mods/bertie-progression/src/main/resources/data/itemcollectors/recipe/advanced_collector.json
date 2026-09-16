@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "itemcollectors"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "malum:warp_flux"
+    },
+    "B": {
+      "item": "itemcollectors:basic_collector"
+    },
+    "C": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "pattern": [
+    " A ",
+    " B ",
+    "CCC"
+  ],
+  "result": {
+    "id": "itemcollectors:advanced_collector"
+  }
+}

@@ -1185,5 +1185,24 @@
 			x: 1.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6B00000000000060"]
+			icon: {
+				id: "netherchested:nether_chest"
+			}
+			id: "6B00000000000064"
+			rewards: [{
+				id: "6B00000002000064"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000064"
+				item: { count: 1, id: "netherchested:nether_chest" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.0d
+		}
 	]
 }

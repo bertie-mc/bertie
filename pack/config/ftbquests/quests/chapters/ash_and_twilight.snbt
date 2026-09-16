@@ -1552,5 +1552,43 @@
 			x: 0.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["3B0000000000005E"]
+			icon: {
+				id: "itemcollectors:basic_collector"
+			}
+			id: "3B0000000000006C"
+			rewards: [{
+				id: "3B0000000200006C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B0000000100006C"
+				item: { count: 1, id: "itemcollectors:basic_collector" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B0000000000006C"]
+			icon: {
+				id: "itemcollectors:advanced_collector"
+			}
+			id: "3B0000000000006D"
+			rewards: [{
+				id: "3B0000000200006D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B0000000100006D"
+				item: { count: 1, id: "itemcollectors:advanced_collector" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: 4.5d
+		}
 	]
 }

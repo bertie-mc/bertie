@@ -10,6 +10,7 @@
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.5C00000000000000.title: "Age of Technology"
 	chapter.6B00000000000000.title: "The Nether"
+	chapter.6C00000000000000.title: "Fluff"
 	chapter.7B00000000000000.title: "God of War"
 	quest.1B00000000000001.quest_desc: ["Punch trees. Gather 8 logs of any natural wood - plain in-world logs only; stripped and other variants do not count."]
 	quest.1B00000000000001.title: "Get wood"
@@ -421,6 +422,12 @@
 	quest.2B0000000000005F.title: "Fluid Tank"
 	quest.2B00000000000060.quest_desc: ["You will need a lot of them. It's a good idea to start production sooner."]
 	quest.2B00000000000060.title: "Bound Soul Ingot"
+	quest.2B00000000000072.quest_desc: ["A pillar, not a recipe: two Edelwood Logs, the Diamond Block on top of them and a LIT campfire above that. Touch the Diamond Block with Mundabitur Dust and the pillar collapses into the torch, standing where the lower log was."]
+	quest.2B00000000000072.title: "Diamond Magnum Torch"
+	quest.2B00000000000073.quest_desc: ["A pillar, not a recipe: two Edelwood Logs, the Emerald Block on top of them and a LIT campfire above that. Touch the Emerald Block with Mundabitur Dust and the pillar collapses into the torch, standing where the lower log was."]
+	quest.2B00000000000073.title: "Emerald Magnum Torch"
+	quest.2B00000000000074.quest_desc: ["A pillar, not a recipe: two Edelwood Logs, the Amethyst Block on top of them and a LIT campfire above that. Touch the Amethyst Block with Mundabitur Dust and the pillar collapses into the torch, standing where the lower log was."]
+	quest.2B00000000000074.title: "Amethyst Magnum Torch"
 	quest.2C00000000000001.quest_desc: ["Every tablet you find is written in a language nobody speaks. This is where you break it."]
 	quest.2B00000000000061.title: "Hallowed Gold Ingot"
 	quest.2B00000000000062.title: "Gold Backpack"
@@ -622,6 +629,10 @@
 	quest.3B0000000000006A.title: "Entangled Binder"
 	quest.3B0000000000006B.quest_desc: ["The Tier-II forge at its ceiling - 3000 aureal, 15000 blood, 50 souls and 1350 ink - around a bottle of Timeless Slurry, with eight things that measure or hold time."]
 	quest.3B0000000000006B.title: "Time in a Bottle"
+	quest.3B0000000000006C.quest_desc: ["It swallows everything that drops within nine blocks and hands it to whatever is behind it. An Echo Chest sits at the foot of the frame."]
+	quest.3B0000000000006C.title: "Basic Item Collector"
+	quest.3B0000000000006D.quest_desc: ["The same trick over a far wider field. Warp Flux in place of the Eye of Ender, and it stands on Crying Obsidian."]
+	quest.3B0000000000006D.title: "Advanced Item Collector"
 	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.quest_desc: ["A Tier-I ritual around Arion's Heart: 4 Brilliant Obelisks and 4 Big Emerald Slates (900 ink / 3 souls)."]
 	quest.3C00000000000003.title: "The Experience Obelisk"
@@ -2146,6 +2157,16 @@
 	quest.6B00000000000050.title: "Dark Matter"
 	quest.6B00000000000051.quest_desc: ["Throw Corrupti Dust and Dark Matter down together and stand well back. It leaves no drop - looking at it is the whole quest."]
 	quest.6B00000000000051.title: "Witness a Black Hole"
+	quest.6B00000000000064.quest_desc: ["A chest that stacks the unstackable. Built on the Nether Crafting Table: eight Nether Brick Chests around a Cinder Essence, walled in Nether Bricks with Netherite Scrap at the corners."]
+	quest.6B00000000000064.title: "Nether Chest"
+	quest.6C00000000000001.quest_desc: ["Voids whatever you drop into it, and filters up to nine things if you would rather it were choosy."]
+	quest.6C00000000000001.title: "Item Trash Can"
+	quest.6C00000000000002.title: "Fluid Trash Can"
+	quest.6C00000000000003.title: "Energy Trash Can"
+	quest.6C00000000000004.quest_desc: ["Items, fluids and energy into the same hole."]
+	quest.6C00000000000004.title: "Ultimate Trash Can"
+	quest.6C00000000000005.quest_desc: ["Universal Sawmill, and a log that comes back as more planks than the grid would give you."]
+	quest.6C00000000000005.title: "The Saw"
 	quest.7B00000000000001.quest_desc: ["Shaped in your 2x2: a Copper Ingot and Leather over String and Paper. Your first spell journal - this replaces the old nine-slot recipe."]
 	quest.6B0000000000005C.title: "Blazing Hook"
 	quest.6B0000000000005D.quest_desc: ["Wither Skeletons drop them rarely. The Fiery Wither Skull is built around one."]

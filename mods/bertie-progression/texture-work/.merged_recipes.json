@@ -155,6 +155,8 @@
   "data/aquaculturedelight/recipe/cutting/fillet/neptunium_fillet_six.json",
   "data/aquaculturedelight/recipe/cutting/fillet/neptunium_fillet_ten.json",
   "data/aquaculturedelight/recipe/cutting/fillet/neptunium_fillet_twelve.json",
+  "data/aquatic_creepers/advancement/recipes/misc/wet_charge.json",
+  "data/aquatic_creepers/loot_table/entities/aquatic_creeper.json",
   "data/betterend/advancement/recipes/misc/sulphur_gunpowder.json",
   "data/betterend/loot_table/blocks/ender_ore.json",
   "data/betterend/loot_table/blocks/sulphur_crystal.json",

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "aquatic_creepers:wet_charge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wet_gunpowder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:gunpowder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wet_gunpowder"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "aquatic_creepers:wet_charge"
+    ]
+  }
+}

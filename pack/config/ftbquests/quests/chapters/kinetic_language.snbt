@@ -2540,8 +2540,8 @@
 				item: { count: 1, id: "apotheosis:gem_case" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2B00000000000038"]
@@ -2656,6 +2656,63 @@
 			}]
 			x: 9.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["2B0000000000002A"]
+			icon: {
+				id: "magnumtorch:diamond_magnum_torch"
+			}
+			id: "2B00000000000072"
+			rewards: [{
+				id: "2B00000002000072"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000072"
+				item: { count: 1, id: "magnumtorch:diamond_magnum_torch" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000072"]
+			icon: {
+				id: "magnumtorch:emerald_magnum_torch"
+			}
+			id: "2B00000000000073"
+			rewards: [{
+				id: "2B00000002000073"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000073"
+				item: { count: 1, id: "magnumtorch:emerald_magnum_torch" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2B00000000000073"]
+			icon: {
+				id: "magnumtorch:amethyst_magnum_torch"
+			}
+			id: "2B00000000000074"
+			rewards: [{
+				id: "2B00000002000074"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000074"
+				item: { count: 1, id: "magnumtorch:amethyst_magnum_torch" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 }

@@ -1,0 +1,105 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fluff"
+	group: ""
+	icon: {
+		id: "trashcans:item_trash_can"
+	}
+	id: "6C00000000000000"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "trashcans:item_trash_can"
+			}
+			id: "6C00000000000001"
+			rewards: [{
+				id: "6C00000002000001"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000001"
+				item: { count: 1, id: "trashcans:item_trash_can" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "trashcans:liquid_trash_can"
+			}
+			id: "6C00000000000002"
+			rewards: [{
+				id: "6C00000002000002"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000002"
+				item: { count: 1, id: "trashcans:liquid_trash_can" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "trashcans:energy_trash_can"
+			}
+			id: "6C00000000000003"
+			rewards: [{
+				id: "6C00000002000003"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000003"
+				item: { count: 1, id: "trashcans:energy_trash_can" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C00000000000001" "6C00000000000002" "6C00000000000003"]
+			icon: {
+				id: "trashcans:ultimate_trash_can"
+			}
+			id: "6C00000000000004"
+			rewards: [{
+				id: "6C00000002000004"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000004"
+				item: { count: 1, id: "trashcans:ultimate_trash_can" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "sawmill:sawmill"
+			}
+			id: "6C00000000000005"
+			rewards: [{
+				id: "6C00000002000005"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000005"
+				item: { count: 1, id: "sawmill:sawmill" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+}

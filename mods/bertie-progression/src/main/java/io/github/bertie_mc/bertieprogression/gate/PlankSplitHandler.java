@@ -1,11 +1,15 @@
 package io.github.bertie_mc.bertieprogression.gate;
 
+import java.util.HashMap;
+import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -16,14 +20,9 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.SlabType;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Flint against the side of a plank block splits it in two: the lower half stays as a bottom slab
@@ -71,13 +70,17 @@ public final class PlankSplitHandler {
         if (level.isClientSide) return;
 
         SoundType sound = state.getSoundType();
-        level.playSound(null, pos, sound.getBreakSound(), SoundSource.BLOCKS,
-                (sound.getVolume() + 1.0F) / 2.0F, sound.getPitch() * 0.8F);
+        level.playSound(
+                null,
+                pos,
+                sound.getBreakSound(),
+                SoundSource.BLOCKS,
+                (sound.getVolume() + 1.0F) / 2.0F,
+                sound.getPitch() * 0.8F);
 
         if (level.getRandom().nextFloat() >= CHANCE) return;
 
-        BlockState bottom = slab.defaultBlockState()
-                .setValue(BlockStateProperties.SLAB_TYPE, SlabType.BOTTOM);
+        BlockState bottom = slab.defaultBlockState().setValue(BlockStateProperties.SLAB_TYPE, SlabType.BOTTOM);
         level.setBlockAndUpdate(pos, bottom);
         Block.popResourceFromFace(level, pos, hit.getDirection(), new ItemStack(slab));
         if (level instanceof ServerLevel server) {

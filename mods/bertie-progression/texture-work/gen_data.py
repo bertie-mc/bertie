@@ -3067,12 +3067,27 @@ write(f"{R}/create/hang_glider.json",
                        {"item": "hangglider:glider_wing"}],
        "results": [{"id": "hangglider:hang_glider", "count": 1}]})
 
+# The Reinforced Glider was two membranes in a row. Breeze Rods brace the frame instead, over a
+# course of Phantom Membrane. It keeps the mod's own component-copying shaped type, so the glider
+# carries its damage and enchantments across rather than coming out factory-fresh.
+write("data/hangglider/recipe/reinforced_hang_glider.json", {
+    "neoforge:conditions": conds("hangglider"),
+    "type": "hangglider:copy_components_shaped_recipe",
+    "category": "equipment",
+    "copy_from": {"item": "hangglider:hang_glider"},
+    "key": {"B": {"item": "minecraft:breeze_rod"},
+            "G": {"item": "hangglider:hang_glider"},
+            "P": {"item": "minecraft:phantom_membrane"}},
+    "pattern": [" B ", "BGB", "PPP"],
+    "result": {"count": 1, "id": "hangglider:reinforced_hang_glider"},
+})
+
 # --- Time in a Bottle is the whole Tier-II forge at once: every essence to its ceiling, around a
 #     bottle of Timeless Slurry, with eight things that measure or hold time. ---
 write("data/tiab/recipe/time_in_a_bottle.json", DISABLED)
 write(f"{RIT}/time_in_a_bottle.json",
       ritual("irons_spellbooks:timeless_slurry",
-             [("minecraft:clock", 1), ("pastel:crescent_clock", 1),
+             [("minecraft:clock", 1), ("urkazmoontools:moonclock_item", 1),
               ("twilightforest:time_log_core", 1), ("l2complements:captured_wind", 1),
               ("l2complements:hard_ice", 1), ("l2complements:storm_core", 1),
               ("l2complements:totemic_gold_block", 1),
@@ -3161,6 +3176,9 @@ write(f"{R}/avaritia/natures_compass.json", {
     "pattern": ["ABS", "HCP", "FMD"],
     "result": {"id": "naturescompass:naturescompass", "count": 1},
 })
+# Its "repair" shapeless hands back a whole Compass for a whole Compass, which is the 3x3 recipe
+# again at a quarter of the price. It goes with the one it shadows.
+write("data/naturescompass/recipe/repair_natures_compass.json", DISABLED)
 
 # --- Armour Stand: a stick over a Smooth Stone Slab, in place of vanilla's six sticks. ---
 write("data/minecraft/recipe/armor_stand.json",
@@ -3286,6 +3304,49 @@ write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
 write("data/minecraft/recipe/netherite_ingot.json", DISABLED)
 write("data/avaritia/recipe/netherite_ingot_too.json", DISABLED)
 
+# --- The Nether Chest costs a Nether Crafting Table build: eight Nether Brick Chests around a
+#     Cinder Essence, walled in Nether Bricks with Netherite Scrap at the corners. ---
+write("data/netherchested/recipe/nether_chest.json", DISABLED)
+write(f"{R}/avaritia/nether_chest.json", {
+    "neoforge:conditions": conds("avaritia", "netherchested", "quark", "irons_spellbooks"),
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "key": {"S": {"item": "minecraft:netherite_scrap"},
+            "B": {"item": "minecraft:nether_bricks"},
+            "C": {"item": "quark:nether_brick_chest"},
+            "E": {"item": "irons_spellbooks:cinder_essence"}},
+    "pattern": ["SBBBS", "BCCCB", "BCECB", "BCCCB", "SBBBS"],
+    "result": {"id": "netherchested:nether_chest", "count": 1},
+})
+
+# --- Both collectors reach further up the pack for their core. The basic one swallows an Echo
+#     Chest; the advanced one trades its Eye of Ender for Warp Flux and stands on Crying
+#     Obsidian. ---
+write("data/itemcollectors/recipe/basic_collector.json", {
+    "neoforge:conditions": conds("itemcollectors", "echochest"),
+    "type": "minecraft:crafting_shaped",
+    "key": {"A": {"tag": "c:ender_pearls"},
+            "B": {"tag": "c:obsidians"},
+            "E": {"item": "echochest:echo_chest"}},
+    "pattern": [" A ", " B ", "BEB"],
+    "result": {"id": "itemcollectors:basic_collector"},
+})
+write("data/itemcollectors/recipe/advanced_collector.json", {
+    "neoforge:conditions": conds("itemcollectors", "malum"),
+    "type": "minecraft:crafting_shaped",
+    "key": {"A": {"item": "malum:warp_flux"},
+            "B": {"item": "itemcollectors:basic_collector"},
+            "C": {"item": "minecraft:crying_obsidian"}},
+    "pattern": [" A ", " B ", "CCC"],
+    "result": {"id": "itemcollectors:advanced_collector"},
+})
+
+# --- A Magnum Torch is not crafted any more. Stack two Edelwood Logs, put the gem block on top of
+#     them and a lit campfire above that, then touch the gem block with Mundabitur Dust: the pillar
+#     collapses into the matching torch. MagnumTorchHandler.java holds the build. ---
+for _magnum in ("diamond", "emerald", "amethyst"):
+    write(f"data/magnumtorch/recipe/{_magnum}_magnum_torch.json", DISABLED)
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
@@ -3303,6 +3364,65 @@ INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "in
                              # "bertie-no-worldgen" and its game directory is "minecraft", not
                              # ".minecraft"; changing either makes the generator scan the wrong jars.
                              "bertie-no-worldgen", "minecraft", "mods")
+
+# ================================================================ ENDERMAN TOOTH
+# Enderman Overhaul hangs the Tooth on the End Enderman alone, which puts an ingredient the pack
+# wants in the Overworld behind a trip to the End. Every other variant rolls it now, at a tenth of
+# the End chance, so it is something you accumulate rather than farm. The End Enderman's own table
+# is left exactly as the mod ships it, and the pool is copied from that table rather than written
+# out here - count, Looting bonus and all - so the two only ever differ in the chance.
+TOOTH_SHARE = 0.1
+
+def _enderman_tooth_tables():
+    import zipfile
+    jars = ([f for f in sorted(os.listdir(INSTANCE_MODS))
+             if f.startswith("endermanoverhaul") and f.endswith(".jar")]
+            if os.path.isdir(INSTANCE_MODS) else [])
+    if not jars:
+        return 0
+    jar = os.path.join(INSTANCE_MODS, jars[0])
+
+    prefix = "data/endermanoverhaul/loot_table/entities/"
+    tables = {}
+    with zipfile.ZipFile(jar) as zf:
+        for name in zf.namelist():
+            if name.startswith(prefix) and name.endswith(".json"):
+                try:
+                    tables[name[len(prefix):-len(".json")]] = json.loads(
+                        zf.read(name).decode("utf-8-sig"))
+                except ValueError:
+                    pass
+
+    source = tables.get("end_enderman") or {}
+    tooth = next((pool for pool in source.get("pools", [])
+                  if '"endermanoverhaul:enderman_tooth"' in json.dumps(pool)), None)
+    if tooth is None:
+        return 0
+
+    def scaled(node):
+        """The same pool with every chance multiplied by TOOTH_SHARE."""
+        if isinstance(node, dict):
+            return {k: (round(v * TOOTH_SHARE, 6)
+                        if k in ("base", "per_level_above_first", "unenchanted_chance", "chance")
+                        and isinstance(v, (int, float)) else scaled(v))
+                    for k, v in node.items()}
+        if isinstance(node, list):
+            return [scaled(v) for v in node]
+        return node
+
+    count = 0
+    for variant, table in sorted(tables.items()):
+        if variant == "end_enderman" or "enderman_tooth" in json.dumps(table):
+            continue
+        out = dict(table)
+        out["pools"] = list(table.get("pools", [])) + [scaled(tooth)]
+        write(f"data/endermanoverhaul/loot_table/entities/{variant}.json", out)
+        count += 1
+    return count
+
+_teeth = _enderman_tooth_tables()
+print(f"  enderman tooth: {_teeth} variant loot tables rewritten"
+      if _teeth else "  enderman tooth: mod jar not found, loot tables left alone")
 
 # ================================================================ BRICK FORGE ORE BONUS
 # Every Brick Forge ore smelt gets a 1% chance of also dropping a storage block of what it made.

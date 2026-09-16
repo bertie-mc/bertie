@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hangglider"
+    }
+  ],
+  "type": "hangglider:copy_components_shaped_recipe",
+  "category": "equipment",
+  "copy_from": {
+    "item": "hangglider:hang_glider"
+  },
+  "key": {
+    "B": {
+      "item": "minecraft:breeze_rod"
+    },
+    "G": {
+      "item": "hangglider:hang_glider"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BGB",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hangglider:reinforced_hang_glider"
+  }
+}
