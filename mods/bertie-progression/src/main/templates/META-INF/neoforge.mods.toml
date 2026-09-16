@@ -30,6 +30,13 @@ versionRange="[1.21.1-93-NEOFORGE,)"
 ordering="AFTER"
 side="BOTH"
 
+[[dependencies.${mod_id}]]
+modId="pocket_dimension"
+type="optional"
+versionRange="[2.9,3)"
+ordering="AFTER"
+side="BOTH"
+
 # EMI discovers the built-in client plugin through @EmiEntrypoint when the viewer is installed.
 [[dependencies.${mod_id}]]
 modId="emi"

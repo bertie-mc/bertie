@@ -10,6 +10,7 @@
     "BasinRecipeMixin",
     "BlazeBurnerBlockEntityMixin",
     "ForgeBEMixin",
+    "PocketOpenKeyMixin",
     "SequencedAssemblyRecipeMixin"
   ],
   "injectors": {

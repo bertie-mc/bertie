@@ -11,6 +11,14 @@ public final class ModAttachments {
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS =
             DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, BertieProgression.MODID);
 
+    /** Pocket Essence unlocks the travel key permanently, including after death. */
+    public static final Supplier<AttachmentType<Boolean>> POCKET_UNLOCKED = ATTACHMENTS.register(
+            "pocket_unlocked",
+            () -> AttachmentType.builder(() -> Boolean.FALSE)
+                    .serialize(Codec.BOOL)
+                    .copyOnDeath()
+                    .build());
+
     /**
      * Set once the player consumes a Crafting License. Persists through death and dimension change,
      * so the 3x3 grid is a permanent, earned milestone rather than a place you must return to

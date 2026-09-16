@@ -1,6 +1,7 @@
 plugins {
     id("bertie.mod")
     id("bertie.neoforge-test")
+    id("bertie.gametest")
     id("bertie.dev-runs")
 }
 
@@ -32,4 +33,9 @@ dependencies {
     // this mod's namespace, and four built-in hooks get their default components rebalanced.
     compileOnly(deps.hooked)
     testRuntimeOnly(deps.hooked)
+
+    compileOnly(deps.pocketDimension1201)
+    gametestImplementation(deps.pocketDimension1201)
+    gametestRuntimeOnly(deps.curios)
+    gametestRuntimeOnly(deps.hooked)
 }

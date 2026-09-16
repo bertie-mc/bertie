@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "bertieprogression:block/pocket_dimension" }
+  }
+}

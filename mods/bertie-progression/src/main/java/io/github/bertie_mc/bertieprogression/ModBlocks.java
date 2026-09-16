@@ -1,6 +1,7 @@
 package io.github.bertie_mc.bertieprogression;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -10,7 +11,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(BertieProgression.MODID);
 
-    // The Echo Lock, this register's other block, went with the Echo and Below questline.
+    public static final DeferredBlock<Block> POCKET_DIMENSION =
+            BLOCKS.registerSimpleBlock("pocket_dimension", BlockBehaviour.Properties.ofFullCopy(Blocks.BEACON));
 
     /**
      * Eezo ore. It reads as bedrock at a glance and is meant to: it generates in the last few layers

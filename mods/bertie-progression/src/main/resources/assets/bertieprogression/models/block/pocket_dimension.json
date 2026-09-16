@@ -1,0 +1,4 @@
+{
+  "parent": "pocket_dimension:block/pocket_block",
+  "render_type": "minecraft:translucent"
+}

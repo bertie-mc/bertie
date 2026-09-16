@@ -1,0 +1,34 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "minecraft:overworld",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "minecraft:plains",
+          "layers": [
+            { "height": 1, "block": "minecraft:bedrock" },
+            { "height": 2, "block": "minecraft:dirt" },
+            { "height": 1, "block": "minecraft:grass_block" }
+          ],
+          "lakes": false,
+          "features": false,
+          "structure_overrides": []
+        }
+      }
+    },
+    "pocket_dimension:pocket_dimension": {
+      "type": "pocket_dimension:pocket_dimension",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "biome": "minecraft:the_void",
+          "layers": [],
+          "lakes": false,
+          "features": false,
+          "structure_overrides": []
+        }
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ recipe changes used to connect the pack's exploration, technology and magic syst
 | `descent_anchor` | descent gating |
 | `weeping_eye` | locator for the weeping structures |
 | `finder` / `locator` | structure-finding items |
+| `pocket_essence` | drink once to permanently unlock Pocket Dimension's Open Portal key |
 
 Plus the current material chain — dragonbone frames and braces, ignitium struts and lattices,
 kinetic vanes and pattern plates, seals, resonances and attunements — each with its own
@@ -27,7 +28,21 @@ texture under `assets/bertieprogression/textures/item/`.
 
 ### Blocks
 
-None. `ModBlocks` is empty since the Echo Lock left with the Echo and Below questline.
+`pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon
+mining properties and drops itself even when mined by hand. Stand on it and crouch to
+enter the existing pocket dimension without consuming an essence. The original return
+portal, cooldown and shared/separate plot configuration remain in use.
+
+Pocket Essence takes 1.6 seconds to drink, works at full hunger, and unlocks the original
+Open Portal key for that player permanently, including after death and reconnecting.
+Locked key presses do nothing silently. An already unlocked player cannot waste another
+essence. The block and essence are in the Bertie Progression creative tab; recipes and
+loot sources are not assigned yet.
+
+The Pocket Dimension integration targets version 2.9 and loads only when that mod is
+present. Its block model is referenced at runtime; no third-party texture is bundled.
+
+`eezo_ore` supplies the pack's Eezo material chain.
 
 ### Systems
 
@@ -57,6 +72,7 @@ and others). A Patchouli field guide documents the current progression in game.
 ```bash
 gradle :mods:bertie-progression:assemble
 gradle :mods:bertie-progression:test
+gradle :mods:bertie-progression:runGameTests
 ```
 
 Run these from the monorepo root inside `nix develop`. The JAR lands in
@@ -64,6 +80,11 @@ Run these from the monorepo root inside `nix develop`. The JAR lands in
 
 `gradle :mods:bertie-progression:test` validates every JSON resource and local model texture reference, the current Brick
 Forge bed table, and catalyst recipe remainder behavior.
+
+GameTests exercise Pocket Dimension 2.9 with the new block, locked and unlocked key
+travel, return travel, hand mining, essence consumption and unlock persistence. Their
+flat-world preset explicitly includes a void pocket dimension because Minecraft's
+GameTest server otherwise omits dimensions supplied outside the preset.
 
 Toolchain is the shared Bertie harness: NeoForge `21.1.235`, ModDevGradle `2.0.134`,
 Gradle `8.14.4` from Nixpkgs.
