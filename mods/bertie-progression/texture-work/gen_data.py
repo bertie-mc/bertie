@@ -456,8 +456,10 @@ write(f"{RIT}/carving_station.json",
               ("minecraft:chiseled_deepslate", 2)],
              "berlordscarving:carving_station", 1, tier=1,
              essences={"aureal": 100, "blood": 1000, "souls": 5}))
-# The Soulbinding Brazier is a Nether Crafting Table build: a Block of Hallowed Gold cornered by
-# Blaze Cubes, walled in Soulwood and Tainted Rock, with an Innocent Soul at each side.
+# The Soulbinding Brazier is a Nether Crafting Table build: a Blaze Cube cornered by Blocks of
+# Hallowed Gold, walled in Soulwood and Tainted Rock, with an Innocent Soul at each side. Malum's
+# own three-by-three goes with it - it is the recipe this replaces, not one to leave beside it.
+write("data/malum/recipe/soulbinding_brazier.json", DISABLED)
 write(f"{R}/avaritia/soulbinding_brazier.json", {
     "neoforge:conditions": conds("avaritia", "malum", "cataclysm", "mythsandlegends"),
     "type": "avaritia:shaped_table",
@@ -470,7 +472,7 @@ write(f"{R}/avaritia/soulbinding_brazier.json", {
             "H": {"item": "malum:block_of_hallowed_gold"},
             "R": {"item": "malum:tainted_rock"},
             "B": {"item": "mythsandlegends:bound_soul_ingot"}},
-    "pattern": ["CCSCC", "GWWWG", "SIHIS", "SRWRS", "RRBRR"],
+    "pattern": ["HHSHH", "GWWWG", "SICIS", "SRWRS", "RRBRR"],
     "result": {"id": "malum:soulbinding_brazier", "count": 1},
 })
 
