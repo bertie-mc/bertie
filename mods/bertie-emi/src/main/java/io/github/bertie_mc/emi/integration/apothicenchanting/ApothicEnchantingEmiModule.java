@@ -275,6 +275,14 @@ public final class ApothicEnchantingEmiModule {
      * tooltip the block already carries.
      */
     private static void guide(EmiRegistry reg) {
+        // A loot modifier keyed on the warden's table, not a recipe: always one, and a second on a
+        // 10% roll that each level of Looting raises by another 10 points.
+        InfoPages.page(
+                reg,
+                "apothic_enchanting/warden_tendril",
+                List.of("apothic_enchanting:warden_tendril"),
+                "Dropped by a Warden: always one, plus a second 10% of the time.",
+                "Each level of Looting adds 10 points to that second chance.");
         InfoPages.translated(
                 reg,
                 "apothic_enchanting/enchanting",

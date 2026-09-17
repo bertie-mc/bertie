@@ -9,6 +9,7 @@ import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
 import io.github.bertie_mc.emi.integration.apotheosis.ApotheosisEmiModule;
 import io.github.bertie_mc.emi.integration.apothicenchanting.ApothicEnchantingEmiModule;
 import io.github.bertie_mc.emi.integration.apothicspawners.ApothicSpawnersEmiModule;
+import io.github.bertie_mc.emi.integration.armageddon.ArmageddonEmiModule;
 import io.github.bertie_mc.emi.integration.avaritiadelight.AvaritiaDelightEmiModule;
 import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiModule;
 import io.github.bertie_mc.emi.integration.cataclysm.CataclysmEmiModule;
@@ -85,6 +86,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("pastel", () -> PastelEmiModule.register(registry));
         success &= run("apothic_enchanting", () -> ApothicEnchantingEmiModule.register(registry));
         success &= run("apotheosis", () -> ApotheosisEmiModule.register(registry));
+        success &= run("armageddon_mod", () -> ArmageddonEmiModule.register(registry));
         success &= run("apothic_spawners", () -> ApothicSpawnersEmiModule.register(registry));
         success &= run("enigmaticlegacyplus", () -> EnigmaticLegacyPlusEmiModule.register(registry));
         success &= run("alexscaves", () -> AlexsCavesEmiModule.register(registry));
