@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 10000,
+    "souls": 10,
+    "experience": 1000
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "malum:void_salts"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "berlordscarving:echo_big_slate"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "arcaneessenceblock:arcane_essence_block"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "enigmaticlegacyplus:astral_dust"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "l2complements:void_eye"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "bertieprogression:pocket_dimension",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

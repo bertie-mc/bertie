@@ -275,7 +275,6 @@ dependencies {
     packComponents(deps.qliphothAwakening)
     packComponents(deps.quark)
     packComponents(deps.railwaysUntold)
-    packComponents(deps.rangedWirelessRedstone)
     packComponents(deps.reAvaritia)
     packComponents(deps.reconnectibleChains)
     packComponents(deps.refinedStorage)

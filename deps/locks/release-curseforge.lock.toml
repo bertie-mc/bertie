@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "e4c3807a0d75cfecd93ccd77b9f8a7bf82e7b2567b59e857cbb127681dffa773"
+inputs-hash = "4a534642302ae9025f258412077e24d16fe60675e639609363c3b75a35809f05"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1112,10 +1112,6 @@ mod = "curseforge:243121:8146177"
 [components."railways-untold"]
 any = "curseforge:1470432:8452775"
 mod = "curseforge:1470432:8452775"
-
-[components."ranged-wireless-redstone"]
-any = "curseforge:530779:8138083"
-mod = "curseforge:530779:8138083"
 
 [components."re-avaritia"]
 any = "curseforge:623969:8090665"
@@ -6698,27 +6694,6 @@ provides = ["highlighter"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:520110:6423863", "mod-id" = "iceberg", "version-range" = "[1.2.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:530779:8138083"]
-name = "ranged-wireless-redstone"
-component = "ranged-wireless-redstone"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "ranged-wireless-redstone-530779"
-version = "8138083"
-filename = "rangedwirelessredstone-1.21.1-5.0.3.jar"
-project-id = 530779
-slug = "ranged-wireless-redstone"
-file-id = 8138083
-provides = ["rangedwirelessredstone"]
-bundled-provides = []
-required = []
-optional = [{ "missing" = "tinyredstone", "mod-id" = "tinyredstone", "version-range" = "[1.21.1-5.0.0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

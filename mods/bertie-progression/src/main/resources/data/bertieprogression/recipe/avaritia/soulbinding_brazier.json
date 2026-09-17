@@ -1,0 +1,59 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "key": {
+    "C": {
+      "item": "avaritia:blaze_cube"
+    },
+    "S": {
+      "item": "bertieprogression:innocent_soul"
+    },
+    "G": {
+      "item": "malum:hallowed_gold_ingot"
+    },
+    "W": {
+      "item": "malum:soulwood_planks"
+    },
+    "I": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "H": {
+      "item": "malum:block_of_hallowed_gold"
+    },
+    "R": {
+      "item": "malum:tainted_rock"
+    },
+    "B": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  },
+  "pattern": [
+    "CCSCC",
+    "GWWWG",
+    "SIHIS",
+    "SRWRS",
+    "RRBRR"
+  ],
+  "result": {
+    "id": "malum:soulbinding_brazier",
+    "count": 1
+  }
+}

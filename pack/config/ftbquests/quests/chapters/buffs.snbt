@@ -84,24 +84,6 @@
 		}
 		{
 			icon: {
-				id: "malum:soulbinding_brazier"
-			}
-			id: "3C00000000000006"
-			rewards: [{
-				id: "3C00000002000006"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000006"
-				item: { count: 1, id: "malum:soulbinding_brazier" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 6.0d
-		}
-		{
-			icon: {
 				id: "apothic_enchanting:raven_enchanting_table"
 			}
 			id: "3C00000000000009"

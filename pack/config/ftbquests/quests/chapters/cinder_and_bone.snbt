@@ -1204,5 +1204,24 @@
 			x: 19.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6B0000000000004D"]
+			icon: {
+				id: "malum:soulbinding_brazier"
+			}
+			id: "6B00000000000065"
+			rewards: [{
+				id: "6B00000002000065"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000065"
+				item: { count: 1, id: "malum:soulbinding_brazier" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.5d
+		}
 	]
 }

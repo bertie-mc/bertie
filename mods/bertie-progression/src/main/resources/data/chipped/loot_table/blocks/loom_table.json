@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:block",
+  "pools": [],
+  "random_sequence": "chipped:blocks/loom_table"
+}

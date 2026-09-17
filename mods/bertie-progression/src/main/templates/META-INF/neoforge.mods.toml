@@ -788,3 +788,10 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="chipped"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"

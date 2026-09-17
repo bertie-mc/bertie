@@ -2,7 +2,6 @@ package io.github.bertie_mc.bertieprogression;
 
 import com.mojang.serialization.Codec;
 import io.github.bertie_mc.bertieprogression.item.CraftingLicenseItem;
-import io.github.bertie_mc.bertieprogression.item.DescentAnchorItem;
 import io.github.bertie_mc.bertieprogression.item.FinderItem;
 import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
 import io.github.bertie_mc.bertieprogression.item.PocketEssenceItem;
@@ -68,8 +67,6 @@ public final class ModItems {
     // --- Opening / foundry ---
     public static final DeferredItem<Item> OPENING_MALLET = ITEMS.registerSimpleItem(
             "opening_mallet", new Item.Properties().stacksTo(1).durability(256));
-    public static final DeferredItem<Item> STONE_CRUCIBLE_BLANK = simple("stone_crucible_blank", 16);
-    public static final DeferredItem<Item> STONE_POUR_CHANNEL = simple("stone_pour_channel", 16);
 
     // --- Create bridge ---
     public static final DeferredItem<Item> KINETIC_VANE = simple("kinetic_vane", 64);
@@ -77,7 +74,6 @@ public final class ModItems {
     public static final DeferredItem<Item> SHIELD_MAIDEN = simple("shield_maiden", 16);
     // Lich-trophy ritual output that gates the progression following the Lich.
     public static final DeferredItem<Item> ACOLYTE_OF_DEFLECTION = simple("acolyte_of_deflection", 16);
-    public static final DeferredItem<Item> KINETIC_PATTERN_PLATE = simple("kinetic_pattern_plate", 16);
 
     // --- Table license chain ---
     /** Consumable: permanently unlocks the 3x3 grid for the player who uses it. */
@@ -92,15 +88,11 @@ public final class ModItems {
             "pocket_essence",
             () -> new PocketEssenceItem(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
     public static final DeferredItem<Item> TWILIGHT_CONCORD = simple("twilight_concord", 16);
-    public static final DeferredItem<DescentAnchorItem> DESCENT_ANCHOR = ITEMS.register(
-            "descent_anchor",
-            () -> new DescentAnchorItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     // --- Avaritia ---
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
 
     // --- Deep dark / echo chain ---
-    public static final DeferredItem<Item> SPIRIT_FOCUSED_ECHO = simple("spirit_focused_echo", 16);
     public static final DeferredItem<WeepingEyeItem> WEEPING_EYE = ITEMS.register(
             "weeping_eye",
             () -> new WeepingEyeItem(
@@ -155,8 +147,6 @@ public final class ModItems {
     public static final DeferredItem<Item> RAW_EEZO = simple("raw_eezo", 64);
     public static final DeferredItem<Item> EEZO_INGOT = simple("eezo_ingot", 64);
 
-    public static final DeferredItem<Item> BOSS_REMATCH_SEAL = simple("boss_rematch_seal", 16);
-
     /** Dropped by villagers killed by a player - loot_modifiers/innocent_soul.json. */
     public static final DeferredItem<Item> INNOCENT_SOUL = simple("innocent_soul", 64);
 
@@ -168,7 +158,6 @@ public final class ModItems {
                     .displayItems((params, out) -> {
                         out.accept(OPENING_MALLET.get());
                         for (DeferredItem<? extends Item> it : ALL) out.accept(it.get());
-                        out.accept(DESCENT_ANCHOR.get());
                         out.accept(WEEPING_EYE.get());
                         out.accept(NETHERLY_MEAL.get());
                         out.accept(SIROK_NEST_MAP.get());

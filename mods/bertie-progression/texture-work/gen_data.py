@@ -263,11 +263,6 @@ R = "data/bertieprogression/recipe"
 # ---- inventory 2x2 (I2) ----
 write(f"{R}/inventory_2x2/opening_mallet.json",            # R02B
       shapeless(["berlordscarving:wood_slate", "minecraft:stick"], "bertieprogression:opening_mallet"))
-write(f"{R}/inventory_2x2/stone_crucible_blank.json",      # R02C
-      shapeless(["berlordscarving:stone_slate", "minecraft:cobblestone"], "bertieprogression:stone_crucible_blank"))
-write(f"{R}/inventory_2x2/stone_pour_channel.json",        # R02D
-      shapeless(["berlordscarving:stone_slate", "minecraft:cobblestone", "minecraft:cobblestone"],
-                "bertieprogression:stone_pour_channel"))
 write(f"{R}/inventory_2x2/hand_crank.json",                # R14D  (PP/PA)
       shaped(["PP", "PA"], {"P": "#minecraft:planks", "A": "create:andesite_alloy"}, "create:hand_crank"))
 # A chest without a crafting table. Vanilla's 8-plank ring is untouched; this is a second route.
@@ -385,10 +380,6 @@ write(f"{R}/create/brass_casing_edelwood.json", {
 # r14a (Brass Casing ritual) removed — Brass Casing is now the Edelwood-Log item application above.
 # r14a0 andesite_casing_blank was removed with the custom casing chain;
 # create:andesite_casing restored to its Create default item-application (see the DISABLED block below).
-write(f"{RIT}/r14b_kinetic_pattern_plates.json",
-      ritual("berlordscarving:stone_big_slate",
-             [("create:brass_nugget", 4), ("forbidden_arcanus:arcane_crystal_dust", 1)],
-             "bertieprogression:kinetic_pattern_plate", 4, tier=1))
 # r14c gearbox-from-blank was removed; the gearbox uses Create's default
 # recipe (andesite casing + 4 shafts), which works again now that andesite casing is restored.
 # R15 Mechanical Crafter uses the Spirit Altar and yields one:
@@ -453,12 +444,6 @@ write(f"{RIT}/r19_spirit_altar.json",
 
 # R29B Ritual Burner Cage was removed with the item.
 
-write(f"{RIT}/r29_spirit_instiller.json",
-      ritual("pastel:pedestal_onyx",
-             [("malum:arcana_pylon", 1), ("forbidden_arcanus:deorum_ingot", 1), ("create:brass_sheet", 1),
-              ("malum:arcane_spirit", 2), ("malum:eldritch_spirit", 1),
-              ("malum:sacred_spirit", 1), ("malum:wicked_spirit", 1)],
-             "pastel:spirit_instiller", 1, tier=2))
 # R30 Twilight Concord ritual was removed because it consumed the deleted Serpent Scale Blank and
 # the Ritual Burner Cage, both now deleted. The Concord's spirit-infusion route (C2) is the sole one.
 # R30A Echoing City Compass went with the Echo and Below questline.
@@ -471,19 +456,23 @@ write(f"{RIT}/carving_station.json",
               ("minecraft:chiseled_deepslate", 2)],
              "berlordscarving:carving_station", 1, tier=1,
              essences={"aureal": 100, "blood": 1000, "souls": 5}))
-write(f"{RIT}/r32_descent_anchor.json",
-      ritual("bertieprogression:spirit_focused_echo",
-             [("deeperdarker:warden_carapace", 1), ("twilightforest:lich_trophy", 1), ("pastel:onyx_shard", 1)],
-             "bertieprogression:descent_anchor", 1, tier=2))
-write(f"{RIT}/r36a_soulbinding_brazier.json",
-      ritual("betterend:aeternium_ingot",
-             [("malum:soul_stained_steel_ingot", 4), ("malum:hallowed_gold_ingot", 2),
-              ("minecraft:dragon_head", 1)],
-             "malum:soulbinding_brazier", 1, tier=3))
-write(f"{RIT}/r37f_ignis_rematch_seal.json",
-      ritual("minecraft:blaze_powder",
-             [("minecraft:blaze_powder", 3), ("minecraft:nether_bricks", 3), ("malum:infernal_spirit", 2)],
-             "bertieprogression:boss_rematch_seal", 1, tier=3))
+# The Soulbinding Brazier is a Nether Crafting Table build: a Block of Hallowed Gold cornered by
+# Blaze Cubes, walled in Soulwood and Tainted Rock, with an Innocent Soul at each side.
+write(f"{R}/avaritia/soulbinding_brazier.json", {
+    "neoforge:conditions": conds("avaritia", "malum", "cataclysm", "mythsandlegends"),
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "key": {"C": {"item": "avaritia:blaze_cube"},
+            "S": {"item": "bertieprogression:innocent_soul"},
+            "G": {"item": "malum:hallowed_gold_ingot"},
+            "W": {"item": "malum:soulwood_planks"},
+            "I": {"item": "cataclysm:ignitium_ingot"},
+            "H": {"item": "malum:block_of_hallowed_gold"},
+            "R": {"item": "malum:tainted_rock"},
+            "B": {"item": "mythsandlegends:bound_soul_ingot"}},
+    "pattern": ["CCSCC", "GWWWG", "SIHIS", "SRWRS", "RRBRR"],
+    "result": {"id": "malum:soulbinding_brazier", "count": 1},
+})
 
 # ---- Malum spirit infusions ----
 # R19A was removed with the Spirit Altar Witness item.
@@ -492,13 +481,6 @@ write(f"{RIT}/r37f_ignis_rematch_seal.json",
 write(f"{R}/malum/sculk_blocks.json",                      # R30S
       infusion("minecraft:deepslate", 1, [("malum:refined_soulstone", 1)], [SP("aqueous", 8)],
                "minecraft:sculk", 8))
-write(f"{R}/malum/spirit_focused_echo.json",               # R31B (soul crystal consumed — demo deviation)
-      infusion("deeperdarker:reinforced_echo_shard", 1, [("deeperdarker:soul_crystal", 1)],
-               [SP("arcane", 8), SP("aqueous", 8)], "bertieprogression:spirit_focused_echo"))
-write(f"{R}/malum/ashlord_rematch_seal.json",              # R37G
-      infusion("deeperdarker:sculk_bone", 4,
-               [("minecraft:end_stone_bricks", 4), ("bertieprogression:spirit_focused_echo", 1)],
-               [SP("infernal", 16)], "bertieprogression:boss_rematch_seal"))
 
 # ---- Mechanical Crafter recipes ----
 # R17 was removed with the Seal.
@@ -3380,6 +3362,37 @@ write("data/apothic_enchanting/recipe/flimsy_ender_lead.json",
                  "forbidden_arcanus:deorum_ingot", "forbidden_arcanus:corrupted_arcane_crystal"],
                 "apothic_enchanting:flimsy_ender_lead"))
 
+# --- Chipped shipped seven workbenches that do one job between them. Only the Alchemy Bench
+#     stays, as the Chipped Station, and only the Chisel of its tools - cut from that bench rather
+#     than from the Mason Table it no longer has. The other six benches and five tools go out
+#     through docs/removed, which disables their recipes on the way. ---
+write("assets/chipped/lang/en_us.json", {
+    "block.chipped.alchemy_bench": "Chipped Station",
+    "container.chipped.alchemy_bench": "Chipped Station",
+})
+write("assets/sophisticatedbackpacks/lang/en_us.json", {
+    "item.sophisticatedbackpacks.chipped.carpenters_table_upgrade": "Chipped Upgrade",
+    "item.sophisticatedbackpacks.chipped.carpenters_table_upgrade.tooltip":
+        "The Chipped Station in an upgrade tab",
+})
+write("data/chipped/recipe/chisel.json",
+      shapeless(["chipped:alchemy_bench", "minecraft:iron_ingot"], "chipped:chisel"))
+write("data/minecraft/recipe/workbench/alchemy_bench.json",
+      shaped(["SQA", "FCF", "FTF"],
+             {"S": "minecraft:shears", "Q": "minecraft:writable_book", "A": "minecraft:iron_axe",
+              "F": "minecraft:mangrove_fence", "C": "minecraft:crafting_table",
+              "T": "born_in_chaos_v1:transformative_flower"},
+             "chipped:alchemy_bench"))
+
+# --- The Pocket Dimension block is the whole Tier-II forge around a Void Eye. ---
+write(f"{RIT}/pocket_dimension.json",
+      ritual("l2complements:void_eye",
+             [("malum:void_salts", 2), ("berlordscarving:echo_big_slate", 2),
+              ("arcaneessenceblock:arcane_essence_block", 2),
+              ("enigmaticlegacyplus:astral_dust", 2)],
+             "bertieprogression:pocket_dimension", 1, tier=2,
+             essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=1000))
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
@@ -4053,6 +4066,12 @@ else:
 # still handed to the player wholesale. So every file that hands one over is re-emitted without
 # it. Same manifest discipline as the recipes above: deleting a row from a doc has to give the
 # drop back, which means tracking what we wrote and deleting what we no longer want written.
+def _authored(relpath):
+    """What this run wrote to that path, which outranks the mod's own copy of it."""
+    with open(os.path.join(RES, relpath.replace("/", os.sep)), encoding="utf-8") as _f:
+        return json.load(_f)
+
+
 _data_manifest_path = os.path.join(ROOT, "texture-work", ".removed_data.json")
 _old_data = []
 if os.path.isfile(_data_manifest_path):
@@ -4065,7 +4084,9 @@ else:
     # below. Stripping here would delete the drop instead of redirecting it.
     _new_data, _gone = [], set(_removed_ids) - set(_MERGE)
     for _lp in sorted(_loot_src):
-        _was = _loot_src[_lp]
+        # An override authored above replaces the mod's file as the thing to strip. Re-emitting
+        # the jar's copy over it threw the override away without saying so.
+        _was = _authored(_lp) if _lp in written else _loot_src[_lp]
         if "/loot_table" in _lp:
             _clean = _strip_loot(_was, _gone)
         else:
@@ -4080,7 +4101,8 @@ else:
         if _clean != _was:
             write(_lp, _clean)
             _new_data.append(_lp)
-    for _stale in sorted(set(_old_data) - set(_new_data)):
+    # A path this run authored is not stale; it is simply no longer the mod's own file.
+    for _stale in sorted(set(_old_data) - set(_new_data) - set(written)):
         _abs = os.path.join(RES, _stale.replace("/", os.sep))
         if os.path.isfile(_abs):
             os.remove(_abs)
@@ -4106,11 +4128,13 @@ else:
     for _mp in sorted(_merge_src):
         if _mp in _disabled_paths:
             continue                       # its result is gone; leave it disabled
-        _fixed, _hit = _redirect(_merge_src[_mp], _MERGE)
-        if _hit and _fixed != _merge_src[_mp]:
+        _base = _authored(_mp) if _mp in written else _merge_src[_mp]
+        _fixed, _hit = _redirect(_base, _MERGE)
+        if _hit and _fixed != _base:
             write(_mp, _fixed)
             _new_merge.append(_mp)
-    for _stale in sorted(set(_old_merge) - set(_new_merge)):
+    # Same as above: an authored override is not an un-redirect.
+    for _stale in sorted(set(_old_merge) - set(_new_merge) - set(written)):
         _abs = os.path.join(RES, _stale.replace("/", os.sep))
         if os.path.isfile(_abs):
             os.remove(_abs)
@@ -4338,8 +4362,6 @@ write("data/malum/recipe/spirit_infusion/ur_ghast_trophy_dupe.json",
 
 ITEMS = {
     "opening_mallet": "Opening Mallet",
-    "stone_crucible_blank": "Stone Crucible Blank",
-    "stone_pour_channel": "Stone Pour Channel",
     "weeping_eye": "Weeping Eye",
     "kinetic_vane": "Structural Beam",
     "shield_maiden": "Shield Maiden",
@@ -4352,13 +4374,9 @@ ITEMS = {
     "desert_core": "Desert Core",
     "frosted_core": "Frosted Core",
     "storm_core": "Storm Core",
-    "kinetic_pattern_plate": "Kinetic Pattern Plate",
     "crafting_license": "Crafting License",
     "twilight_concord": "Twilight Concord",
-    "spirit_focused_echo": "Spirit-Focused Echo",
     "null_blaze_cube": "Null Blaze Cube",
-    "descent_anchor": "Descent Anchor",
-    "boss_rematch_seal": "Boss Rematch Seal",
     "innocent_soul": "Innocent Soul",
 }
 

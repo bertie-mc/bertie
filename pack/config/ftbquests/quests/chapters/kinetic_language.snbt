@@ -1977,8 +1977,8 @@
 				item: { count: 1, id: "elemental_metals:arcane_infused_iron_ingot" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.0d
+			x: -7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1C0000000000000C"]
@@ -2713,6 +2713,48 @@
 			}]
 			x: 0.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["2B0000000000006A"]
+			icon: {
+				id: "minecraft:crying_obsidian"
+			}
+			id: "2B00000000000075"
+			rewards: [{
+				id: "2B00000002000075"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				count: 10L
+				id: "2B00000001000075"
+				item: { count: 1, id: "minecraft:crying_obsidian" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000075"]
+			icon: {
+				id: "minecraft:flint_and_steel"
+			}
+			id: "2B00000000000076"
+			rewards: [{
+				id: "2B00000002000076"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				dimension: "nightworld:nightworld"
+				icon: {
+					id: "minecraft:flint_and_steel"
+				}
+				id: "2B00000001000076"
+				type: "dimension"
+			}]
+			x: -9.0d
+			y: -3.0d
 		}
 	]
 }

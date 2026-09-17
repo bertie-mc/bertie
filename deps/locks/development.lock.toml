@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "3d81ec769ca0ac3e5d27a883a61bb13e503b4b6d294e59f725dee6beacf81f98"
+inputs-hash = "1967ff597660a37caa8e4a667703ce7f2bf55e7ef4ecdf48ff57c541b5b65560"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1112,10 +1112,6 @@ mod = "modrinth:qnQsVE2z:hMLnxKZx"
 [components."railways-untold"]
 any = "modrinth:R7r9n6Wu:Vrf31Ytf"
 mod = "modrinth:R7r9n6Wu:Vrf31Ytf"
-
-[components."ranged-wireless-redstone"]
-any = "modrinth:7e5g0K9D:H66d5NDi"
-mod = "modrinth:7e5g0K9D:H66d5NDi"
 
 [components."re-avaritia"]
 any = "modrinth:QeB3NRC5:VXmzsQD6"
@@ -3056,26 +3052,6 @@ provides = ["bclib"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:HZmhgdJk:5db3GZzg", "mod-id" = "wunderlib", "version-range" = "[21.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:R8uGDQpB:d8e9QsHt", "mod-id" = "wover", "version-range" = "[21.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:7e5g0K9D:H66d5NDi"]
-name = "ranged-wireless-redstone"
-component = "ranged-wireless-redstone"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "7e5g0K9D"
-version = "H66d5NDi"
-filename = "rangedwirelessredstone-1.21.1-5.0.3.jar"
-project-id = "7e5g0K9D"
-version-id = "H66d5NDi"
-provides = ["rangedwirelessredstone"]
-bundled-provides = []
-required = []
-optional = [{ "missing" = "tinyredstone", "mod-id" = "tinyredstone", "version-range" = "[1.21.1-5.0.0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

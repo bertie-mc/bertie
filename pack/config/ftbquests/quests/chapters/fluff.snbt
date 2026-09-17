@@ -101,5 +101,42 @@
 			x: -1.5d
 			y: 1.5d
 		}
+		{
+			icon: {
+				id: "chipped:alchemy_bench"
+			}
+			id: "6C00000000000006"
+			rewards: [{
+				id: "6C00000002000006"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000006"
+				item: { count: 1, id: "chipped:alchemy_bench" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C00000000000006"]
+			icon: {
+				id: "chipped:chisel"
+			}
+			id: "6C00000000000007"
+			rewards: [{
+				id: "6C00000002000007"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000007"
+				item: { count: 1, id: "chipped:chisel" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
 	]
 }

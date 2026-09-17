@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (458)
+## Mods (457)
 
 | Mod |
 |---|
@@ -340,7 +340,6 @@
 | `qliphoth-awakening` |
 | `quark` |
 | `railways-untold` |
-| `ranged-wireless-redstone` |
 | `re-avaritia` |
 | `reconnectible-chains` |
 | `refined-storage` |

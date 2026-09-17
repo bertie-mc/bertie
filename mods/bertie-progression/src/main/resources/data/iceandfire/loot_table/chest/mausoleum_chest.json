@@ -183,21 +183,6 @@
         },
         {
           "type": "item",
-          "name": "iceandfire:sapphire_gem",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 5
-              }
-            }
-          ],
-          "weight": 25
-        },
-        {
-          "type": "item",
           "name": "iceandfire:dread_torch",
           "functions": [
             {
