@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "comforts:sleeping_bag_enabled"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "comforts:sleeping_bag",
+  "key": {
+    "#": {
+      "item": "minecraft:black_wool"
+    },
+    "R": {
+      "tag": "c:ropes"
+    }
+  },
+  "pattern": [
+    "#R",
+    "#R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:sleeping_bag_black"
+  }
+}

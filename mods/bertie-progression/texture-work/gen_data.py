@@ -3347,6 +3347,39 @@ write("data/itemcollectors/recipe/advanced_collector.json", {
 for _magnum in ("diamond", "emerald", "amethyst"):
     write(f"data/magnumtorch/recipe/{_magnum}_magnum_torch.json", DISABLED)
 
+# --- Comforts' bedding costs rope and sticks rather than three whole wool. A Sleeping Bag is two
+#     wool bound along a rope; a Hammock is cloth slung between a stick and a string. Both keep the
+#     mod's own enable-conditions, so its config still switches them off. ---
+DYES = ("black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime",
+        "magenta", "orange", "pink", "purple", "red", "white", "yellow")
+for _dye in DYES:
+    write(f"data/comforts/recipe/sleeping_bag_{_dye}.json", {
+        "neoforge:conditions": [{"type": "comforts:sleeping_bag_enabled"}],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "comforts:sleeping_bag",
+        "key": {"#": {"item": f"minecraft:{_dye}_wool"}, "R": {"tag": "c:ropes"}},
+        "pattern": ["#R", "#R"],
+        "result": {"count": 1, "id": f"comforts:sleeping_bag_{_dye}"},
+    })
+    write(f"data/comforts/recipe/hammock_{_dye}.json", {
+        "neoforge:conditions": [{"type": "comforts:hammock_enabled"}],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "comforts:hammock",
+        "key": {"#": {"item": f"minecraft:{_dye}_wool"}, "S": {"tag": "c:strings"},
+                "X": {"tag": "c:rods/wooden"}},
+        "pattern": ["SX", "X#"],
+        "result": {"count": 1, "id": f"comforts:hammock_{_dye}"},
+    })
+
+# --- The Flimsy Ender Lead stops being a pearl, a lead and a gold ingot. It wants the pearl an
+#     Enderman Overhaul summoner carries, divine gold, and a crystal the vein soured. ---
+write("data/apothic_enchanting/recipe/flimsy_ender_lead.json",
+      shapeless(["minecraft:lead", "endermanoverhaul:summoner_pearl",
+                 "forbidden_arcanus:deorum_ingot", "forbidden_arcanus:corrupted_arcane_crystal"],
+                "apothic_enchanting:flimsy_ender_lead"))
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
@@ -3364,6 +3397,45 @@ INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "in
                              # "bertie-no-worldgen" and its game directory is "minecraft", not
                              # ".minecraft"; changing either makes the generator scan the wrong jars.
                              "bertie-no-worldgen", "minecraft", "mods")
+
+# ================================================================ ENCHANTING TOMES
+# Apothic Enchanting binds every tome around a Blaze Rod, which puts the whole enchanting line
+# behind the Nether. The Dark Rod does the same job and drops on this side of the portal, so it
+# takes the rod's place in all of them, and the Weapon Tome's Blaze Powder with it. The patterns are
+# read back from the mod rather than transcribed here: only the ingredient is ours, so a tome the
+# mod reshapes later still comes out right, and a tome that never wanted blaze is left alone.
+def _tome_recipes():
+    import zipfile
+    jars = ([f for f in sorted(os.listdir(INSTANCE_MODS))
+             if f.startswith("ApothicEnchanting") and f.endswith(".jar")]
+            if os.path.isdir(INSTANCE_MODS) else [])
+    if not jars:
+        return 0
+
+    prefix = "data/apothic_enchanting/recipe/"
+    count = 0
+    with zipfile.ZipFile(os.path.join(INSTANCE_MODS, jars[0])) as zf:
+        for name in sorted(zf.namelist()):
+            if not (name.startswith(prefix) and name.endswith("_tome.json")):
+                continue
+            try:
+                was = zf.read(name).decode("utf-8-sig")
+                json.loads(was)
+            except ValueError:
+                continue
+            now = (was.replace('"minecraft:blaze_rod"', '"born_in_chaos_v1:dark_rod"')
+                      .replace('"minecraft:blaze_powder"', '"born_in_chaos_v1:dark_rod"'))
+            if now == was:
+                continue
+            recipe = json.loads(now)
+            write(name, {"neoforge:conditions": conds("apothic_enchanting", "born_in_chaos_v1"),
+                         **recipe})
+            count += 1
+    return count
+
+_tomes = _tome_recipes()
+print(f"  tomes: {_tomes} rebound on the Dark Rod"
+      if _tomes else "  tomes: Apothic Enchanting jar not found, recipes left alone")
 
 # ================================================================ ENDERMAN TOOTH
 # Enderman Overhaul hangs the Tooth on the End Enderman alone, which puts an ingredient the pack

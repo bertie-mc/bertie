@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "comforts:hammock_enabled"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "comforts:hammock",
+  "key": {
+    "#": {
+      "item": "minecraft:orange_wool"
+    },
+    "S": {
+      "tag": "c:strings"
+    },
+    "X": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "SX",
+    "X#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "comforts:hammock_orange"
+  }
+}

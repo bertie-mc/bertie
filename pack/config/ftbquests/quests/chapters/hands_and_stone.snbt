@@ -494,8 +494,8 @@
 				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1B0000000000000D"]
@@ -822,7 +822,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1B0000000000001F"]
+			dependencies: ["1B00000000000049"]
 			icon: {
 				id: "forbidden_arcanus:corrupted_arcane_crystal"
 			}
@@ -1444,6 +1444,115 @@
 			}]
 			x: 21.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000003E"]
+			icon: {
+				id: "farmersdelight:rope"
+			}
+			id: "1B00000000000046"
+			rewards: [{
+				id: "1B00000002000046"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000046"
+				item: { count: 1, id: "farmersdelight:rope" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00000000000046"]
+			icon: {
+				id: "comforts:sleeping_bag_red"
+			}
+			id: "1B00000000000047"
+			rewards: [{
+				id: "1B00000002000047"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				icon: {
+					id: "comforts:sleeping_bag_red"
+				}
+				id: "1B00000001000047"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(comforts:sleeping_bags)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Any Sleeping Bag\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00000000000047"]
+			icon: {
+				id: "comforts:hammock_red"
+			}
+			id: "1B00000000000048"
+			rewards: [{
+				id: "1B00000002000048"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					icon: {
+						id: "comforts:hammock_red"
+					}
+					id: "1B00000001000048"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(comforts:hammocks)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Any Hammock\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1B00000001010048"
+					item: { count: 1, id: "comforts:rope_and_nail" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1B00000000000015"]
+			icon: {
+				id: "forbidden_arcanus:corrupted_arcane_crystal"
+			}
+			id: "1B00000000000049"
+			rewards: [{
+				id: "1B00000002000049"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000049"
+				item: { count: 1, id: "forbidden_arcanus:corrupted_arcane_crystal" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B00000000000049" "1B00000000000019"]
+			icon: {
+				id: "apothic_enchanting:flimsy_ender_lead"
+			}
+			id: "1B0000000000004A"
+			rewards: [{
+				id: "1B0000000200004A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B0000000100004A"
+				item: { count: 1, id: "apothic_enchanting:flimsy_ender_lead" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
 		}
 	]
 }

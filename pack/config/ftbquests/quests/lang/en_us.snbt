@@ -118,6 +118,16 @@
 	quest.1B00000000000034.title: "Flimsy Journal"
 	quest.1B00000000000035.quest_desc: ["Scribe anything. The spell does not matter yet, only that you can write one."]
 	quest.1B00000000000035.title: "A Spell Scroll"
+	quest.1B00000000000046.quest_desc: ["Farmer's Delight braids it out of string. Everything that follows is tied with it."]
+	quest.1B00000000000046.title: "Rope"
+	quest.1B00000000000047.quest_desc: ["Two Wool bound along a Rope, in any colour. It sleeps you through the night without a bed to come back to."]
+	quest.1B00000000000047.title: "A Sleeping Bag"
+	quest.1B00000000000048.quest_desc: ["Cloth slung between a stick and a string, and the pair of Rope and Nails it hangs from."]
+	quest.1B00000000000048.title: "A Hammock"
+	quest.1B00000000000049.quest_desc: ["The soured crystal. The vein gives them up alongside the clean ones."]
+	quest.1B00000000000049.title: "Corrupted Arcane Crystal"
+	quest.1B0000000000004A.quest_desc: ["Shapeless: a Lead, a Summoner Pearl, a Deorum Ingot and a Corrupted Arcane Crystal. Infuse it at the enchanting table to get the Ender Lead proper."]
+	quest.1B0000000000004A.title: "Flimsy Ender Lead"
 	quest.1C00000000000008.quest_desc: ["Infuse a single block of DIORITE at the altar with one Sacred and one Arcane spirit. (Was sixteen stone at a time; now one for one.)"]
 	quest.1B00000000000036.title: "Wooden Hook"
 	quest.1B00000000000037.title: "Deep Hook"
