@@ -36,8 +36,6 @@ public final class MinersDelightEmiModule {
 
     private static final String MOD = "minersdelight";
 
-    private static final String KNIFE = "Kill with a Farmer's Delight knife in hand";
-
     private MinersDelightEmiModule() {}
 
     public static void register(EmiRegistry reg) {
@@ -84,42 +82,17 @@ public final class MinersDelightEmiModule {
     }
 
     /**
-     * One page per scavenged item, stating the mobs, the knife, the fire and the odds. Written out
-     * rather than read from the loot modifiers: they are NeoForge global modifiers of the mod's own
-     * types, whose conditions have no general rendering, and their content is fixed data.
+     * The scavenged foods are butchering drops and now live on their mobs' own pages in Advanced
+     * Loot Info, which renders the knife and the fire the way it renders every other condition. Only
+     * the wild crop is left here: it is placed by worldgen rather than dropped, so no mob page could
+     * ever carry it.
      */
     private static void scavenging(EmiRegistry reg) {
-        drop(reg, "bat_wing", "Drops from a Bat.", KNIFE, "Half the time without one.");
-        drop(reg, "smoked_bat_wing", "Drops from a Bat killed while it is on fire.", KNIFE);
-        drop(reg, "baked_bat_wing", "Drops from a Bat killed while on fire, without a knife, half the time.");
-        drop(reg, "spider_leg", "Drops from a Spider, up to 4 at a time.", KNIFE, "40% before Looting.");
-        drop(
-                reg,
-                "baked_spider_leg",
-                "Drops from a Spider killed while it is on fire, up to 4.",
-                KNIFE,
-                "40% before Looting.");
-        drop(reg, "arthropod", "Drops from Spiders, Cave Spiders, Bees, Silverfish and Endermites.", KNIFE);
-        drop(reg, "cooked_arthropod", "Same as Arthropod, from a mob killed while it is on fire.", KNIFE);
-        drop(reg, "tentacles", "Drops from a Squid or Glow Squid, up to 8 at a time.", KNIFE);
-        drop(reg, "baked_tentacles", "Drops from a Squid or Glow Squid killed while on fire, up to 8.", KNIFE);
-        drop(reg, "squid", "Drops from a Squid.", KNIFE, "Also caught while fishing, 5% of the time.");
-        drop(reg, "baked_squid", "Drops from a Squid or Glow Squid killed while it is on fire.", KNIFE);
-        drop(reg, "glow_squid", "Drops from a Glow Squid.", KNIFE, "Also caught while fishing, 1% of the time.");
-        drop(
-                reg,
-                "silverfish_eggs",
-                "Drops from a Silverfish: 20% with a Farmer's Delight knife, 10% without.",
-                "Also drops 35% of the time from breaking an infested block.");
         InfoPages.page(
                 reg,
                 MOD + "/wild_cave_carrots",
                 List.of(MOD + ":wild_cave_carrots"),
                 "Generates underground in patches, alongside cave air.",
                 "Break it for Cave Carrots.");
-    }
-
-    private static void drop(EmiRegistry reg, String item, String... lines) {
-        InfoPages.page(reg, MOD + "/" + item, List.of(MOD + ":" + item), lines);
     }
 }

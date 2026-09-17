@@ -5,7 +5,6 @@ import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.neoforge.NeoForgeEmiIngredient;
-import dev.emi.emi.api.recipe.EmiInfoRecipe;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
@@ -114,7 +113,6 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
 
         int ominousFanRecipeCount = registerOminousFan(registry);
         int allayRecipeCount = registerAllayCorruption(registry);
-        registerDropSources(registry);
         LOGGER.info(
                 "Bertie Progression EMI integration registered ({} Mallet Work recipes, "
                         + "{} Ominous Fan recipes, {} Allay Corruption recipes)",
@@ -241,23 +239,6 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     private static EmiIngredient tag(String tagId, int count) {
         TagKey<Item> key = TagKey.create(Registries.ITEM, ResourceLocation.parse(tagId));
         return NeoForgeEmiIngredient.of(new SizedIngredient(Ingredient.of(key), count));
-    }
-
-    /**
-     * Items this mod adds to another entity's loot rather than to a recipe. A loot modifier carries
-     * its conditions in a form no recipe viewer renders, so the condition — which is the whole of
-     * how the item is obtained — has to be stated.
-     */
-    private static void registerDropSources(EmiRegistry registry) {
-        EmiStack innocentSoul =
-                stackOf(ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "innocent_soul"), 1);
-        if (innocentSoul.isEmpty()) {
-            return;
-        }
-        registry.addRecipe(new EmiInfoRecipe(
-                List.<EmiIngredient>of(innocentSoul),
-                List.of(Component.literal("Dropped by a Villager killed by a player.")),
-                ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "drop/innocent_soul")));
     }
 
     private static EmiStack stackOf(String id, int count) {

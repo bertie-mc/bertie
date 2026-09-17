@@ -47,6 +47,7 @@ it.unimi.dsi:fastutil:8.5.12=additionalRuntimeClasspath,clientLegacyClasspath,cl
 maven.modrinth:9uQhkMe5:cjdV1zT2=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath,testRuntimeClasspath
 maven.modrinth:HsdNFinx:cttRekq9=compileClasspath,gametestCompileClasspath
 maven.modrinth:MdlnLS7Q:fNjxgZPH=compileClasspath,gametestCompileClasspath
+maven.modrinth:PEPVViac:y8p1Vq83=compileClasspath,gametestCompileClasspath
 maven.modrinth:RoLsCIqN:Jwdpo3CR=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath,testRuntimeClasspath
 maven.modrinth:TyCTlI4b:At57qCDT=compileClasspath,gametestCompileClasspath
 maven.modrinth:bHr7Oesy:CrhflvIg=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath

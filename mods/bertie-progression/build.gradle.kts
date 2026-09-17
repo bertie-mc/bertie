@@ -7,6 +7,7 @@ plugins {
 
 dependencies {
     compileOnly(deps.emi)
+    compileOnly(deps.advancedLootInfo)
     runtimeOnly(deps.patchouli)
 
     // Ponder is published directly by Create's Maven; use the slim Create artifact so
