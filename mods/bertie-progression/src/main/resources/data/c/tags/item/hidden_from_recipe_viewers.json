@@ -47,26 +47,6 @@
       "required": false
     },
     {
-      "id": "berlordscarving:flint_slate",
-      "required": false
-    },
-    {
-      "id": "berlordscarving:obsidian_slate",
-      "required": false
-    },
-    {
-      "id": "berlordscarving:echo_slate",
-      "required": false
-    },
-    {
-      "id": "berlordscarving:deep_alloy_slate",
-      "required": false
-    },
-    {
-      "id": "berlordscarving:rose_gold_slate",
-      "required": false
-    },
-    {
       "id": "magitech:dagger",
       "required": false
     },

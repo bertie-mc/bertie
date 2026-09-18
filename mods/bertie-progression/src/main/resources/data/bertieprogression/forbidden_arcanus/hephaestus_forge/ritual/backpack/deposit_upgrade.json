@@ -27,7 +27,7 @@
     {
       "amount": 4,
       "ingredient": {
-        "item": "farmersdelight:rope"
+        "tag": "c:dusts/redstone"
       }
     }
   ],

@@ -133,7 +133,9 @@ public class Carving {
     private static void registerSlates() {
         boolean slag = ModList.get().isLoaded("slag");
         for (CarvingMaterial m : CarvingMaterial.values()) {
-            if (m.hasTools && (slag || m.vanillaTool != null)) {
+            // A small slate is worth registering when something downstream can use it: a Slag part,
+            // a vanilla tool, or - for leather, which has neither - the slate itself.
+            if (m.hasSmallSlate() && (slag || m.vanillaTool != null || m.slagId == null)) {
                 SMALL_SLATES.put(
                         m,
                         ITEMS.registerItem(

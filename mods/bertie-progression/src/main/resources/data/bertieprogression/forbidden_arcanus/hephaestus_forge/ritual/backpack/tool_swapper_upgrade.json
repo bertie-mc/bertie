@@ -27,25 +27,25 @@
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:wooden_sword"
+        "item": "magitech:heavy_blade"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:wooden_axe"
+        "item": "magitech:strike_head"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:wooden_pickaxe"
+        "item": "magitech:spike_head"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:wooden_shovel"
+        "item": "magitech:light_blade"
       }
     }
   ],

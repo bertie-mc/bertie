@@ -12,7 +12,7 @@
       "item": "minecraft:anvil"
     },
     "b": {
-      "tag": "c:gems/diamond"
+      "item": "malum:refined_soulstone"
     },
     "c": {
       "item": "sophisticatedbackpacks:upgrade_base"

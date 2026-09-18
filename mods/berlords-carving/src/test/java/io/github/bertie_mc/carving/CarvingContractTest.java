@@ -45,11 +45,14 @@ class CarvingContractTest {
 
     @Test
     void standaloneRegistrationExposesOnlyUsableSlates() {
+        // Leather is here without a vanilla tool behind it: its small slate feeds the big one, so it
+        // is usable on its own terms where flint and bone still need Slag to mean anything.
         assertEquals(
                 Set.of(
                         CarvingMaterial.WOOD,
                         CarvingMaterial.STONE,
                         CarvingMaterial.DIAMOND,
+                        CarvingMaterial.LEATHER,
                         CarvingMaterial.IRON,
                         CarvingMaterial.GOLDEN),
                 Carving.SMALL_SLATES.keySet());

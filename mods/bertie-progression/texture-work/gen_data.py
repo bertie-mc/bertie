@@ -3483,9 +3483,9 @@ upgrade("upgrade_base", "twilightforest:tanned_leather",
 upgrade("void_upgrade", BASE, t="trashcans:item_trash_can", b=INK["common"],
         l="#c:ender_pearls", r="#c:ender_pearls", c="#c:obsidians")
 upgrade("restock_upgrade", BASE, t="minecraft:sticky_piston", b=INK["common"],
-        l="#c:chests/wooden", r="#c:chests/wooden", c="farmersdelight:rope")
+        l="#c:chests/wooden", r="#c:chests/wooden", c="#c:dusts/redstone")
 upgrade("deposit_upgrade", BASE, t="minecraft:piston", b=INK["common"],
-        l="#c:chests/wooden", r="#c:chests/wooden", c="farmersdelight:rope")
+        l="#c:chests/wooden", r="#c:chests/wooden", c="#c:dusts/redstone")
 upgrade("refill_upgrade", BASE, t="#c:ender_pearls", b=INK["common"],
         l="#c:dusts/redstone", r="#c:dusts/redstone",
         lt="minecraft:dispenser", rt="minecraft:dispenser",
@@ -3510,8 +3510,8 @@ upgrade("jukebox_upgrade", BASE, t="minecraft:jukebox", b=INK["common"],
         l="#minecraft:music_discs", r="#minecraft:music_discs", c="#c:dusts/redstone")
 upgrade("tool_swapper_upgrade", BASE, t="#c:ender_pearls", b=INK["common"],
         l="#c:dusts/redstone", r="#c:dusts/redstone",
-        lt="minecraft:wooden_sword", rt="minecraft:wooden_axe",
-        lb="minecraft:wooden_pickaxe", rb="minecraft:wooden_shovel")
+        lt="magitech:heavy_blade", rt="magitech:strike_head",
+        lb="magitech:spike_head", rb="magitech:light_blade")
 upgrade("mob_catcher_upgrade", BASE, t="apothic_enchanting:flimsy_ender_lead", b=INK["epic"],
         l="minecraft:lead", r="minecraft:lead", c="#c:ender_pearls")
 upgrade("pump_upgrade", BASE, t="minecraft:bucket", b=INK["uncommon"],
@@ -3528,8 +3528,8 @@ upgrade("smithing_upgrade", BASE, t="minecraft:smithing_table", b=INK["common"],
         l="magitech:spike_head", r="magitech:strike_head",
         lt="#c:ingots/iron", rt="#c:ingots/gold",
         rb="#c:gems/diamond", lb="#c:gems/emerald")
-upgrade("anvil_upgrade", BASE, t="#c:gems/diamond", b=INK["epic"],
-        l="#c:gems/diamond", r="#c:gems/diamond", c="minecraft:anvil")
+upgrade("anvil_upgrade", BASE, t="malum:refined_soulstone", b=INK["epic"],
+        l="malum:refined_soulstone", r="malum:refined_soulstone", c="minecraft:anvil")
 upgrade("crafting_upgrade", BASE, t="minecraft:crafting_table", b=INK["epic"],
         l="minecraft:oak_planks", r="minecraft:oak_planks", c="#c:ingots/iron")
 upgrade("feeding_upgrade", BASE, t="minecraft:enchanted_golden_apple", b=INK["epic"],
@@ -3695,6 +3695,10 @@ write("data/quark/recipe/building/crafting/furnaces/blackstone_furnace.json", {
     "pattern": ["GGG", "G G", "BBB"],
     "result": {"count": 1, "id": "quark:blackstone_furnace"},
 })
+
+# --- The small Leather Slate is tanned here, not raw ---------------------------------------------
+write("data/berlordscarving/recipe/leather_slate.json",
+      shaped(["##", "##"], {"#": "twilightforest:tanned_leather"}, "berlordscarving:leather_slate"))
 
 # --- Warp Flux is crafted, not reaped ------------------------------------------------------------
 # Malum hands out 2-4 Warp Flux for reaping an Enderman, through its own reaping registry rather

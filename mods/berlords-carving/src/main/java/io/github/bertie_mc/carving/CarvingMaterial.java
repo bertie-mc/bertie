@@ -7,7 +7,8 @@ package io.github.bertie_mc.carving;
  * <p>TIER 1 materials are carved in-hand ({@link io.github.bertie_mc.carving.client.CarvingScreen}); TIER 2
  * materials are worked only at the carving station's water-jet ({@link
  * io.github.bertie_mc.carving.block.CarvingStationBlock}). Every material has armor; only {@link #LEATHER}
- * lacks tools. {@code slagId == null} means the material has no Slag equivalent (leather is always
+ * lacks tools - it still carves a small slate, which is what {@code hasSmallSlate} is for.
+ * {@code slagId == null} means the material has no Slag equivalent (leather is always
  * vanilla). {@code vanillaTool}/{@code vanillaArmor} name the vanilla item prefix used when Slag is
  * absent (null = that form is Slag-only and is hidden without Slag).
  */
@@ -46,6 +47,11 @@ public enum CarvingMaterial {
         this.hasTools = hasTools;
         this.vanillaTool = vanillaTool;
         this.vanillaArmor = vanillaArmor;
+    }
+
+    /** Whether a small slate exists for this material. Leather has one without having tools. */
+    public boolean hasSmallSlate() {
+        return hasTools || this == LEATHER;
     }
 
     /** Worked only at the carving station (water-jet), never the in-hand screen. */

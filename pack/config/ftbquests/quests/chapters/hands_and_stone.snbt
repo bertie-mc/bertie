@@ -1570,7 +1570,7 @@
 				item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 0.0d
 		}
 	]

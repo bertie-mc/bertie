@@ -9,13 +9,13 @@
   "category": "misc",
   "key": {
     "a": {
-      "item": "minecraft:wooden_sword"
+      "item": "magitech:heavy_blade"
     },
     "b": {
       "tag": "c:ender_pearls"
     },
     "c": {
-      "item": "minecraft:wooden_axe"
+      "item": "magitech:strike_head"
     },
     "d": {
       "tag": "c:dusts/redstone"
@@ -24,13 +24,13 @@
       "item": "sophisticatedbackpacks:upgrade_base"
     },
     "f": {
-      "item": "minecraft:wooden_pickaxe"
+      "item": "magitech:spike_head"
     },
     "g": {
       "item": "irons_spellbooks:common_ink"
     },
     "h": {
-      "item": "minecraft:wooden_shovel"
+      "item": "magitech:light_blade"
     }
   },
   "pattern": [

@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "berlordscarving:leather_slate"
+      "item": "minecraft:leather"
     }
   },
   "result": {
-    "id": "berlordscarving:leather_big_slate",
+    "id": "berlordscarving:leather_slate",
     "count": 1
   }
 }

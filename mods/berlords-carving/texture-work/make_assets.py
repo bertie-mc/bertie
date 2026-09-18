@@ -16,8 +16,6 @@ BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ASSETS = os.path.join(BASE, "src", "main", "resources", "assets", MODID)
 DATA = os.path.join(BASE, "src", "main", "resources", "data", MODID)
 SLAG = os.path.join(os.path.dirname(__file__), "slag-ref")
-PAL = os.path.join(SLAG, "palettes")
-PAL_ARMOR = os.path.join(SLAG, "palettes_armor")
 SLAG_DATA = os.path.join(BASE, "src", "main", "resources", "data", "slag")
 
 # id -> (slag_id|None, tier, vanilla_tool|None, vanilla_armor|None, has_tools, display)
@@ -44,6 +42,8 @@ SLAG_ID   = {m: v[0] for m, v in MATERIALS.items()}
 V_TOOL    = {m: v[2] for m, v in MATERIALS.items()}
 V_ARMOR   = {m: v[3] for m, v in MATERIALS.items()}
 HAS_TOOLS = {m: v[4] for m, v in MATERIALS.items()}
+# Leather has no tools but does have a small slate, so the small-slate set is not the tool set.
+HAS_SMALL_SLATE = {m: v[4] or m == "leather" for m, v in MATERIALS.items()}
 DISPLAY   = {m: v[5] for m, v in MATERIALS.items()}
 
 TOOLS = ["pickaxe", "axe", "shovel", "hoe", "sword"]
@@ -85,51 +85,6 @@ BIG_INGREDIENT = {
 
 MOD_LOADED_SLAG = {"type": "neoforge:mod_loaded", "modid": "slag"}
 COND_FALSE = {"type": "neoforge:false"}
-
-
-def load_strip(path):
-    im = Image.open(path).convert("RGBA")
-    px = im.load()
-    return [px[i, 0] for i in range(im.width)]
-
-
-def leather_palette(n):
-    dark, light = (74, 53, 32), (199, 159, 112)
-    return [tuple(round(dark[k] + (light[k] - dark[k]) * (i / max(1, n - 1))) for k in range(3)) + (255,)
-            for i in range(n)]
-
-
-def slate_colours(palette):
-    n = len(palette)
-    pick = lambda i: palette[max(0, min(n - 1, i))][:3]
-    return pick(n // 2), pick(n - 1), pick(n // 3), pick(max(0, n // 6))
-
-
-def render_slate(cols, big):
-    base, light, dark, outline = cols
-    img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
-    px = img.load()
-    lo, hi = (1, 14) if big else (2, 13)
-    for y in range(lo, hi + 1):
-        for x in range(lo, hi + 1):
-            if x in (lo, hi) or y in (lo, hi):
-                col = outline
-            elif big and (x in (lo + 1, hi - 1) or y in (lo + 1, hi - 1)):
-                col = outline
-            else:
-                col = base
-                if x == hi - 1 or y == hi - 1:
-                    col = dark
-                if x == lo + 1 or y == lo + 1:
-                    col = light
-            px[x, y] = (col[0], col[1], col[2], 255)
-    span = range(lo + (2 if big else 1), hi - (1 if big else 0))
-    for t in span:
-        if px[8, t][3]:
-            px[8, t] = (dark[0], dark[1], dark[2], 255)
-        if px[t, 8][3]:
-            px[t, 8] = (dark[0], dark[1], dark[2], 255)
-    return img
 
 
 def shape_rows(img):
@@ -192,17 +147,14 @@ def main():
         write_json(os.path.join(ASSETS, "shapes", "slag", f"{piece}.json"),
                    {"pattern": shape_rows(Image.open(os.path.join(SLAG, f"armor_base_{piece}.png")))})
 
-    # ---- slate textures/models/lang ---------------------------------------
-    armor_base = load_strip(os.path.join(PAL_ARMOR, "base_palette.png"))
+    # ---- slate models/lang ------------------------------------------------
+    # The slate sprites are drawn by hand now and live in the repository as art, so nothing here
+    # renders over them any more; the palette renderer that used to draw them is gone with it.
     for mat in MATERIALS:
         slag = SLAG_ID[mat]
-        if HAS_TOOLS[mat]:
-            tpal = load_strip(os.path.join(PAL, slag + ".png"))
-            render_slate(slate_colours(tpal), big=False).save(os.path.join(tex, f"{mat}_slate.png"))
+        if HAS_SMALL_SLATE[mat]:
             gen_item_model(f"{mat}_slate")
             lang[f"item.{MODID}.{mat}_slate"] = f"Small {DISPLAY[mat]} Slate"
-        apal = leather_palette(len(armor_base)) if slag is None else load_strip(os.path.join(PAL_ARMOR, slag + ".png"))
-        render_slate(slate_colours(apal), big=True).save(os.path.join(tex, f"{mat}_big_slate.png"))
         gen_item_model(f"{mat}_big_slate")
         lang[f"item.{MODID}.{mat}_big_slate"] = f"Big {DISPLAY[mat]} Slate"
 
@@ -240,18 +192,17 @@ def main():
     rec = os.path.join(DATA, "recipe")
     n_small = n_big = 0
     for mat in MATERIALS:
-        if HAS_TOOLS[mat]:
+        if HAS_SMALL_SLATE[mat]:
             r = {"type": "minecraft:crafting_shaped", "pattern": ["##", "##"],
                  "key": {"#": SMALL_INGREDIENT[mat]}, "result": {"id": f"{MODID}:{mat}_slate", "count": 1}}
-            if V_TOOL[mat] is None:
+            if V_TOOL[mat] is None and SLAG_ID[mat] is not None:
                 r["neoforge:conditions"] = [MOD_LOADED_SLAG]
             write_json(os.path.join(rec, f"{mat}_slate.json"), r)
             n_small += 1
         # A big slate is four small ones, whatever the material. That means the block form of a
         # material is only ever spent through its small slate, and echo no longer needs the 3x3
-        # donut it used to have for want of an echo block. Leather is the one exception: it has no
-        # tools, so it has no small slate, and its big slate keeps the raw ingredient.
-        small_slate = HAS_TOOLS[mat]
+        # donut it used to have for want of an echo block.
+        small_slate = HAS_SMALL_SLATE[mat]
         rb = {"type": "minecraft:crafting_shaped", "pattern": ["##", "##"],
               "key": {"#": {"item": f"{MODID}:{mat}_slate"} if small_slate else BIG_INGREDIENT[mat]},
               "result": {"id": f"{MODID}:{mat}_big_slate", "count": 1}}

@@ -1,5 +1,4 @@
 {
-  "emi.category.berlordscarving.carving": "Carving",
   "berlordscarving.emi.tier1": "Carved in hand",
   "berlordscarving.emi.tier2": "Carving station (water-jet)",
   "berlordscarving.quality.chipped": "Chipped %s",
@@ -16,6 +15,7 @@
   "berlordscarving.tier.2": "TIER 2",
   "block.berlordscarving.carving_station": "Carving Station",
   "block.berlordscarving.flint_block": "Block of Flint",
+  "emi.category.berlordscarving.carving": "Carving",
   "item.berlordscarving.amethyst_big_slate": "Big Amethyst Slate",
   "item.berlordscarving.amethyst_slate": "Small Amethyst Slate",
   "item.berlordscarving.bone_big_slate": "Big Bone Slate",
@@ -39,6 +39,7 @@
   "item.berlordscarving.lapis_big_slate": "Big Lapis Slate",
   "item.berlordscarving.lapis_slate": "Small Lapis Slate",
   "item.berlordscarving.leather_big_slate": "Big Leather Slate",
+  "item.berlordscarving.leather_slate": "Small Leather Slate",
   "item.berlordscarving.obsidian_big_slate": "Big Obsidian Slate",
   "item.berlordscarving.obsidian_slate": "Small Obsidian Slate",
   "item.berlordscarving.quartz_big_slate": "Big Quartz Slate",
