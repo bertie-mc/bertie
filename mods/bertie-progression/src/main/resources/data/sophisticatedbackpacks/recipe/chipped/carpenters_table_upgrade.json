@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "sophisticatedcore:item_enabled",
-      "itemRegistryName": "sophisticatedbackpacks:carpenters_table_upgrade"
+      "itemRegistryName": "sophisticatedbackpacks:chipped/carpenters_table_upgrade"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -43,6 +43,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "sophisticatedbackpacks:carpenters_table_upgrade"
+    "id": "sophisticatedbackpacks:chipped/carpenters_table_upgrade"
   }
 }

@@ -38,7 +38,7 @@
   "result": {
     "type": "forbidden_arcanus:create_item",
     "result_item": {
-      "id": "sophisticatedbackpacks:sawmill_upgrade",
+      "id": "sophisticatedbackpacks:sawmill/sawmill_upgrade",
       "count": 1
     }
   }

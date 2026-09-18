@@ -62,7 +62,7 @@
   "result": {
     "type": "forbidden_arcanus:create_item",
     "result_item": {
-      "id": "sophisticatedbackpacks:carpenters_table_upgrade",
+      "id": "sophisticatedbackpacks:chipped/carpenters_table_upgrade",
       "count": 1
     }
   }

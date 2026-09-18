@@ -3437,7 +3437,9 @@ def upgrade(name, m, **positions):
     The ritual is the same bill read differently: the middle becomes the main ingredient and the
     eight ring slots become the pedestals, which is exactly the forge's limit.
     """
-    item_id = SBP + name.split("/")[-1]
+    # Two upgrades live in a folder and keep it in their registry id - chipped/carpenters_table_
+    # _upgrade, sawmill/sawmill_upgrade. Only the ritual FILE drops the folder.
+    item_id = SBP + name
     pattern, key = ring(m, **positions)
     write(f"data/sophisticatedbackpacks/recipe/{name}.json", {
         "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",

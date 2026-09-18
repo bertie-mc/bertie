@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "sophisticatedcore:item_enabled",
-      "itemRegistryName": "sophisticatedbackpacks:sawmill_upgrade"
+      "itemRegistryName": "sophisticatedbackpacks:sawmill/sawmill_upgrade"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -31,6 +31,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "sophisticatedbackpacks:sawmill_upgrade"
+    "id": "sophisticatedbackpacks:sawmill/sawmill_upgrade"
   }
 }
