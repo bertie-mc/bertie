@@ -27,6 +27,11 @@ final class MagitechSourceGuide {
      * Registered, given a model and put in the creative tab, then referenced by no recipe, no loot
      * table and no code path. The four raw materials are as dead as the polished forms made from
      * them — the only thing naming them is the {@code tool_material} declaration that consumes them.
+     *
+     * <p>Order matters here. An info page wraps at six slots and indents its last row by one, so this
+     * list is written as the five-wide grid it renders into: the four raw crystals across the middle
+     * with their polished forms directly beneath, Chromium alone on the left and Polished Redstone
+     * Crystal alone on the right.
      */
     private static void wip(EmiRegistry reg) {
         InfoPages.page(
@@ -34,14 +39,14 @@ final class MagitechSourceGuide {
                 "magitech/source/wip",
                 List.of(
                         "magitech:chromium_ingot",
-                        "magitech:abyssite",
                         "magitech:frigidite",
                         "magitech:resonite",
+                        "magitech:abyssite",
                         "magitech:translucium",
-                        "magitech:polished_abyssite",
-                        "magitech:polished_frigidite",
                         "magitech:polished_redstone_crystal",
+                        "magitech:polished_frigidite",
                         "magitech:polished_resonite",
+                        "magitech:polished_abyssite",
                         "magitech:polished_translucium"),
                 "WIP");
     }
