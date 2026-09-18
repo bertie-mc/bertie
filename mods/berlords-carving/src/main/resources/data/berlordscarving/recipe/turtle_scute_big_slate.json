@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "berlordscarving:turtle_scute_slate"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:turtle_scute_big_slate",
+    "count": 1
+  }
+}

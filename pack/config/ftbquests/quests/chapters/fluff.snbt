@@ -138,5 +138,195 @@
 			x: -3.0d
 			y: 0.0d
 		}
+		{
+			icon: {
+				id: "horseexpert:monocle"
+			}
+			id: "6C00000000000008"
+			rewards: [{
+				id: "6C00000002000008"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6C00000001000008"
+					item: { count: 1, id: "minecraft:horse_spawn_egg" }
+					type: "item"
+				}
+				{
+					id: "6C00000001010008"
+					item: { count: 1, id: "horseexpert:monocle" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "6C00000000000009"
+			rewards: [{
+				id: "6C00000002000009"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000009"
+				item: { count: 1, id: "hangglider:hang_glider" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "rustic_engineer:abyssal_submarine_item"
+			}
+			id: "6C0000000000000A"
+			rewards: [{
+				id: "6C0000000200000A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6C0000000100000A"
+					item: { count: 1, id: "rustic_engineer:abyssal_submarine_item" }
+					type: "item"
+				}
+				{
+					id: "6C0000000101000A"
+					item: { count: 1, id: "rustic_engineer:spider_mech_item" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "rustic_engineer:air_ship_item"
+			}
+			id: "6C0000000000000B"
+			rewards: [{
+				id: "6C0000000200000B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6C0000000100000B"
+					item: { count: 1, id: "rustic_engineer:air_ship_item" }
+					type: "item"
+				}
+				{
+					id: "6C0000000101000B"
+					item: { count: 1, id: "rustic_engineer:dragonfly_item" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "wings_of_fire:petrified_fire_phoenix_egg"
+			}
+			id: "6C0000000000000C"
+			rewards: [{
+				id: "6C0000000200000C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6C0000000100000C"
+					item: { count: 1, id: "wings_of_fire:petrified_fire_phoenix_egg" }
+					type: "item"
+				}
+				{
+					id: "6C0000000101000C"
+					item: { count: 1, id: "wings_of_fire:petrified_nature_phoenix_egg" }
+					type: "item"
+				}
+				{
+					id: "6C0000000102000C"
+					item: { count: 1, id: "wings_of_fire:petrified_dark_phoenix_egg" }
+					type: "item"
+				}
+				{
+					id: "6C0000000103000C"
+					item: { count: 1, id: "wings_of_fire:petrified_red_phoenix_egg" }
+					type: "item"
+				}
+				{
+					id: "6C0000000104000C"
+					item: { count: 1, id: "wings_of_fire:petrified_gilded_phoenix_egg" }
+					type: "item"
+				}
+				{
+					id: "6C0000000105000C"
+					item: { count: 1, id: "wings_of_fire:petrified_wind_phoenix_egg" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "6C0000000000000D"
+			rewards: [{
+				id: "6C0000000200000D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C0000000100000D"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "mekanism:jetpack"
+			}
+			id: "6C0000000000000E"
+			rewards: [{
+				id: "6C0000000200000E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "6C0000000100000E"
+					item: { count: 1, id: "mekanism:jetpack" }
+					type: "item"
+				}
+				{
+					id: "6C0000000101000E"
+					item: { count: 1, id: "anvilcraft:ionocraft" }
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			id: "6C0000000000000F"
+			rewards: [{
+				id: "6C0000000200000F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C0000000100000F"
+				item: { count: 1, id: "terra_curio:celestial_starboard" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
 	]
 }

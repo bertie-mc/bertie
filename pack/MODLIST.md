@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (457)
+## Mods (458)
 
 | Mod |
 |---|
@@ -88,9 +88,11 @@
 | `combat-effects` |
 | `comforts` |
 | `commandkeys` |
+| `compact-crafting-updated` |
 | `compact-machines` |
 | `compactmachinespor` |
 | `complementary-reimagined` |
+| `convenient-effects` |
 | `controlling` |
 | `cooparticlesapi` |
 | `corgilib` |
@@ -114,6 +116,7 @@
 | `despawn-tweaks` |
 | `diagonal-fences` |
 | `diagonal-walls` |
+| `diagonal-windows` |
 | `diamond-in-the-rough` |
 | `discerning-the-eldritch` |
 | `distanthorizons` |
@@ -206,6 +209,7 @@
 | `hide-experimental-warning` |
 | `highlight` |
 | `hooked` |
+| `horse-expert` |
 | `hopo-better-ruined-portals` |
 | `hopo-better-underwater-ruins` |
 | `hostile-neural-networks` |
@@ -255,7 +259,6 @@
 | `macaws-doors` |
 | `macaws-trapdoors` |
 | `mafglib` |
-| `magic-coins` |
 | `magic-of-color` |
 | `magitech` |
 | `magnum-torch` |
@@ -359,8 +362,6 @@
 | `searchables` |
 | `serene-seasons` |
 | `server-sided-portals` |
-| `sg-economy-api` |
-| `short-circuit` |
 | `simply-swords` |
 | `simply-tooltips` |
 | `simplymore` |
@@ -462,7 +463,7 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (31)
+## Ours (30)
 
 | Mod |
 |---|
@@ -492,7 +493,6 @@
 | `primitive-refined` |
 | `rustic-engineer-fix` |
 | `screenshot-copy` |
-| `short-circuit-fix` |
 | `cooparticlesfix` |
 | `voidfog` |
 | `withered-hearts` |

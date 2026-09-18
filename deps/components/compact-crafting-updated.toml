@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "compact-crafting-updated"
+project-id = 1355698
+file-id = 7077089
+filename = "compactcrafting-4.0.1.jar"

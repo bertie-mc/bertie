@@ -133,6 +133,11 @@ public class Carving {
     private static void registerSlates() {
         boolean slag = ModList.get().isLoaded("slag");
         for (CarvingMaterial m : CarvingMaterial.values()) {
+            // A slate-only material has nothing to be carved from without the mod that ships its
+            // source item, so it gets no slates at all rather than two uncraftable ones.
+            if (m.requiredMod != null && !ModList.get().isLoaded(m.requiredMod)) {
+                continue;
+            }
             // A small slate is worth registering when something downstream can use it: a Slag part,
             // a vanilla tool, or - for leather, which has neither - the slate itself.
             if (m.hasSmallSlate() && (slag || m.vanillaTool != null || m.slagId == null)) {
@@ -141,7 +146,7 @@ public class Carving {
                         ITEMS.registerItem(
                                 m.id + "_slate", p -> new SlateItem(p, m, false), new Item.Properties().stacksTo(16)));
             }
-            if (slag || m.vanillaArmor != null) {
+            if (slag || m.vanillaArmor != null || m.slateOnly) {
                 BIG_SLATES.put(
                         m,
                         ITEMS.registerItem(

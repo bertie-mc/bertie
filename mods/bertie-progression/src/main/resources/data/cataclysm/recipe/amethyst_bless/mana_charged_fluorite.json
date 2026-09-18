@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    }
+  ],
+  "type": "cataclysm:amethyst_bless",
+  "ingredient": {
+    "item": "magitech:fluorite"
+  },
+  "result": {
+    "id": "magitech:mana_charged_fluorite"
+  },
+  "time": 12000
+}

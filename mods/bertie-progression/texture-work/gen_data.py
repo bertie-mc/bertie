@@ -354,9 +354,9 @@ r13["input"] = {
 write(f"{R}/malum/electron_tube.json", r13)
 
 # Ashlord bone into Ice and Fire's: the Ashlord is killable long before a dragon is, and the
-# progression asks for dragon bone either way. Bone Meal is the binder.
+# progression asks for dragon bone either way. White Dye is the binder.
 write(f"{R}/inventory_2x2/dragonbone_from_ashlord_bone.json",
-      shapeless(["block_factorys_bosses:dragon_bone", "minecraft:bone_meal"],
+      shapeless(["block_factorys_bosses:dragon_bone", "minecraft:white_dye"],
                 "iceandfire:dragonbone", 1))
 
 # Brass Ingot: Hephaestus ritual with a Colossal Iron core, Deorum, 2 Zinc and 2 Rose
@@ -677,6 +677,41 @@ write(f"{R}/malum/elem_healing.json",
                 ("minecraft:potion", 1), ("irons_spellbooks:uncommon_ink", 4)],
                [SP("earthen", 8), SP("sacred", 4)],
                "elemental_metals:healing_infused_iron_ingot", 1))
+
+# --- Elemental infused-NETHERITE ingots: the same six elements one tier up, fused rather than
+#     infused. Every one is a bath of Mana Potion around the same four-stack base; the element's
+#     own three stacks fill the shrine, which holds exactly seven. ---
+_SCALE = {e: f"#iceandfire:scales/dragon/{e}" for e in ("fire", "ice", "lightning")}
+_FUSION_BASE = [("minecraft:netherite_ingot", 1), ("malum:hallowed_gold_ingot", 1),
+                ("irons_spellbooks:cinder_essence", 3)]
+
+def fusion(element, extra, time=300, xp=4.0):
+    """pastel:fusion_shrine. extra = the element's own [(id, count), ...]."""
+    ings = (_FUSION_BASE
+            + [(f"elemental_metals:{element}_infused_iron_ingot", 3)]
+            + list(extra))
+    mods = external_mods(*[i for i, _ in ings]) | {"pastel", "magitech"}
+    write(f"data/pastel/recipe/fusion_shrine/{element}_infused_netherite_ingot.json", {
+        "neoforge:conditions": conds(*mods),
+        "type": "pastel:fusion_shrine",
+        "time": time,
+        "experience": xp,
+        "fluid": {"fluid": "magitech:mana_potion"},
+        "ingredients": [({"tag": i[1:]} if i.startswith("#") else {"item": i}) | {"count": n}
+                        for i, n in ings],
+        "result": {"id": f"elemental_metals:{element}_infused_netherite_ingot", "count": 2},
+    })
+
+fusion("fire", [(_SCALE["fire"], 3), ("pastel:incandescent_essence", 2), ("oritech:biomass", 1)])
+fusion("frost", [(_SCALE["ice"], 3), ("pastel:frostbite_essence", 2),
+                 ("forbidden_arcanus:corrupted_arcane_crystal", 1)])
+fusion("lightning", [(_SCALE["lightning"], 3), ("irons_spellbooks:lightning_bottle", 2),
+                     ("discerning_the_eldritch:soul_ember", 1)])
+fusion("arcane", [(_SCALE["fire"], 2), (_SCALE["ice"], 1),
+                  ("forbidden_arcanus:corrupted_arcane_crystal", 3)])
+fusion("healing", [("oritech:biomass", 3), (_SCALE["ice"], 2), (_SCALE["lightning"], 1)])
+fusion("soul", [("discerning_the_eldritch:soul_ember", 3), (_SCALE["lightning"], 2),
+                (_SCALE["fire"], 1)])
 
 # --- Twilight Concord, Arcane Ingot, Soulstained Steel (all Spirit Altar) ---
 write(f"{R}/malum/twilight_concord.json",
@@ -1234,6 +1269,14 @@ write("data/create/recipe/mechanical_crafting/crushing_wheel.json",
       mech(_p(["NAAAN", "AAOAA", "AOCOA", "AAOAA", "NAAAN"]),
            {"A": _AA, "O": "forbidden_arcanus:obsidiansteel_ingot", "C": "twilightforest:canopy_wood"},
            "create:crushing_wheel", 1))
+
+# --- Steam Engine: Create's one-column bench craft becomes a 3x5 mechanical wall, so the first
+#     real power source is behind the crafter rather than three items deep. The mechanical recipe
+#     takes over Create's own resource path, which is what removes the bench version. ---
+write(f"{_CK}/steam_engine.json",
+      mech(_p(["SNS", "BSB", "DSD", "CCC", "CCC"]),
+           {"S": _SH, "B": _BS, "D": "cataclysm:dying_ember", "C": "#c:storage_blocks/copper"},
+           "create:steam_engine"))
 
 # --- Hallowed Gold Ingot: Spirit Infusion (brass core + magic metals + 4 quartz + mnemonic) ---
 _hg = infusion("create:brass_ingot", 1,
@@ -3168,6 +3211,21 @@ write("data/naturescompass/recipe/repair_natures_compass.json", DISABLED)
 write("data/minecraft/recipe/armor_stand.json",
       shaped(["S", "L"], {"S": "minecraft:stick", "L": "minecraft:smooth_stone_slab"},
              "minecraft:armor_stand"))
+
+# --- Resin Bricks: a full 3x3 of bricks for four blocks, in place of the 2x2 for one. ---
+write("data/minecraft/recipe/resin_bricks.json",
+      shaped(["###", "###", "###"], {"#": "minecraft:resin_brick"},
+             "minecraft:resin_bricks", 4, category="building"))
+
+# --- Mana Charged Fluorite: the Altar of Amethyst, two minutes a stone. The altar runs at a fifth
+#     of the time it is given (Altar_Of_Amethyst_Block.getCookingTime), so 12000 buys 120s. ---
+write("data/cataclysm/recipe/amethyst_bless/mana_charged_fluorite.json", {
+    "neoforge:conditions": conds("cataclysm", "magitech"),
+    "type": "cataclysm:amethyst_bless",
+    "ingredient": {"item": "magitech:fluorite"},
+    "result": {"id": "magitech:mana_charged_fluorite"},
+    "time": 12000,
+})
 
 # --- Eccentric Tome: two Books beside two Paper, rather than a Book and a whole bookshelf. ---
 write("data/eccentrictome/recipe/tome.json",

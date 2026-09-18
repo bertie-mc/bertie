@@ -38,12 +38,34 @@ MATERIALS = {
     "deep_alloy": ("deep_alloy", 2, None,      None,      True,  "Deep Alloy"),
     "rose_gold":  ("rose_gold",  2, None,      None,      True,  "Rose Gold"),
 }
+
+# Materials that exist only as slates: no tools, no armor, no Slag equivalent. The pair of slates is
+# the whole product, so what gates them is the source item's own mod rather than Slag.
+# id -> (source item, required modid|None, display)
+SLATE_ONLY = {
+    "netherite":        ("minecraft:netherite_ingot",     None,              "Netherite"),
+    "redstone":         ("minecraft:redstone",            None,              "Redstone"),
+    "prismarine":       ("minecraft:prismarine_shard",    None,              "Prismarine"),
+    "heart_of_the_sea": ("minecraft:heart_of_the_sea",    None,              "Heart of the Sea"),
+    "turtle_scute":     ("minecraft:turtle_scute",        None,              "Turtle Scute"),
+    "armadillo_scute":  ("minecraft:armadillo_scute",     None,              "Armadillo Scute"),
+    "resin_brick":      ("minecraft:resin_brick",         "vanillabackport", "Resin Brick"),
+    "ancient_metal":    ("cataclysm:ancient_metal_ingot", "cataclysm",       "Ancient Metal"),
+    "black_steel":      ("cataclysm:black_steel_ingot",   "cataclysm",       "Black Steel"),
+    "cursium":          ("cataclysm:cursium_ingot",       "cataclysm",       "Cursium"),
+    "ignitium":         ("cataclysm:ignitium_ingot",      "cataclysm",       "Ignitium"),
+    "witherite":        ("cataclysm:witherite_ingot",     "cataclysm",       "Witherite"),
+}
+for _id, (_src, _mod, _disp) in SLATE_ONLY.items():
+    MATERIALS[_id] = (None, 2, None, None, False, _disp)
+
 SLAG_ID   = {m: v[0] for m, v in MATERIALS.items()}
 V_TOOL    = {m: v[2] for m, v in MATERIALS.items()}
 V_ARMOR   = {m: v[3] for m, v in MATERIALS.items()}
 HAS_TOOLS = {m: v[4] for m, v in MATERIALS.items()}
-# Leather has no tools but does have a small slate, so the small-slate set is not the tool set.
-HAS_SMALL_SLATE = {m: v[4] or m == "leather" for m, v in MATERIALS.items()}
+# Leather and the slate-only materials have no tools but do have a small slate, so the small-slate
+# set is not the tool set.
+HAS_SMALL_SLATE = {m: v[4] or m == "leather" or m in SLATE_ONLY for m, v in MATERIALS.items()}
 DISPLAY   = {m: v[5] for m, v in MATERIALS.items()}
 
 TOOLS = ["pickaxe", "axe", "shovel", "hoe", "sword"]
@@ -70,6 +92,7 @@ SMALL_INGREDIENT = {
     "lapis": {"item": "minecraft:lapis_lazuli"}, "quartz": {"item": "minecraft:quartz"},
     "obsidian": {"item": "minecraft:obsidian"}, "echo": {"item": "minecraft:echo_shard"},
     "deep_alloy": {"tag": "c:ingots/deep_alloy"}, "rose_gold": {"tag": "c:ingots/rose_gold"},
+    "leather": {"item": "minecraft:leather"},
 }
 BIG_INGREDIENT = {
     "wood": {"tag": "minecraft:logs"}, "stone": {"item": "minecraft:stone"},
@@ -82,9 +105,16 @@ BIG_INGREDIENT = {
     "deep_alloy": {"tag": "c:storage_blocks/deep_alloy"}, "rose_gold": {"tag": "c:storage_blocks/rose_gold"},
     "leather": {"item": "minecraft:leather"},
 }
+# A slate-only material is carved from one item, so the small slate takes four of it and the big
+# slate takes four small ones like every other material.
+SMALL_INGREDIENT.update({m: {"item": src} for m, (src, _mod, _disp) in SLATE_ONLY.items()})
 
 MOD_LOADED_SLAG = {"type": "neoforge:mod_loaded", "modid": "slag"}
 COND_FALSE = {"type": "neoforge:false"}
+
+
+def mod_loaded(modid):
+    return {"type": "neoforge:mod_loaded", "modid": modid}
 
 
 def shape_rows(img):
@@ -124,7 +154,9 @@ def gen_item_model(name, parent="minecraft:item/generated", layer=True):
 
 
 def clean():
-    for d in [os.path.join(ASSETS, "textures", "item"), os.path.join(ASSETS, "models", "item"),
+    # textures/item is NOT cleaned: the slate sprites in there are hand-drawn art that this script
+    # only consumes. Everything else below is generated and is safe to rebuild from scratch.
+    for d in [os.path.join(ASSETS, "models", "item"),
               os.path.join(ASSETS, "shapes"), os.path.join(DATA, "recipe"),
               os.path.join(SLAG_DATA, "recipe", "crafting", "parts")]:
         if os.path.isdir(d):
@@ -192,11 +224,16 @@ def main():
     rec = os.path.join(DATA, "recipe")
     n_small = n_big = 0
     for mat in MATERIALS:
+        # A slate-only material is gated on whatever mod supplies the item it is carved from; every
+        # other material is gated on Slag when Slag is the only thing its slates feed.
+        gate = [mod_loaded(SLATE_ONLY[mat][1])] if mat in SLATE_ONLY and SLATE_ONLY[mat][1] else []
         if HAS_SMALL_SLATE[mat]:
             r = {"type": "minecraft:crafting_shaped", "pattern": ["##", "##"],
                  "key": {"#": SMALL_INGREDIENT[mat]}, "result": {"id": f"{MODID}:{mat}_slate", "count": 1}}
             if V_TOOL[mat] is None and SLAG_ID[mat] is not None:
                 r["neoforge:conditions"] = [MOD_LOADED_SLAG]
+            elif gate:
+                r["neoforge:conditions"] = gate
             write_json(os.path.join(rec, f"{mat}_slate.json"), r)
             n_small += 1
         # A big slate is four small ones, whatever the material. That means the block form of a
@@ -206,7 +243,10 @@ def main():
         rb = {"type": "minecraft:crafting_shaped", "pattern": ["##", "##"],
               "key": {"#": {"item": f"{MODID}:{mat}_slate"} if small_slate else BIG_INGREDIENT[mat]},
               "result": {"id": f"{MODID}:{mat}_big_slate", "count": 1}}
-        if mat != "leather" and V_ARMOR[mat] is None:
+        if mat in SLATE_ONLY:
+            if gate:
+                rb["neoforge:conditions"] = gate
+        elif mat != "leather" and V_ARMOR[mat] is None:
             rb["neoforge:conditions"] = [MOD_LOADED_SLAG]
         write_json(os.path.join(rec, f"{mat}_big_slate.json"), rb)
         n_big += 1

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "berlordscarving:redstone_slate"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:redstone_big_slate",
+    "count": 1
+  }
+}

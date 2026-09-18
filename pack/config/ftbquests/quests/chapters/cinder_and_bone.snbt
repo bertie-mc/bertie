@@ -1223,5 +1223,149 @@
 			x: 19.5d
 			y: -4.5d
 		}
+		{
+			dependencies: ["6B00000000000039"]
+			id: "6B00000000000066"
+			rewards: [{
+				id: "6B00000002000066"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000066"
+				item: { count: 1, id: "magitech:mana_charged_fluorite" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000066"]
+			id: "6B00000000000067"
+			rewards: [{
+				id: "6B00000002000067"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000067"
+				item: { count: 1, id: "magitech:mana_potion_flask" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B00000000000067"]
+			id: "6B00000000000068"
+			rewards: [{
+				id: "6B00000002000068"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000068"
+				item: { count: 1, id: "elemental_metals:arcane_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B00000000000068"]
+			id: "6B00000000000069"
+			rewards: [{
+				id: "6B00000002000069"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B00000001000069"
+				item: { count: 1, id: "elemental_metals:soul_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B00000000000069"]
+			id: "6B0000000000006A"
+			rewards: [{
+				id: "6B0000000200006A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006A"
+				item: { count: 1, id: "elemental_metals:healing_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6B00000000000067"]
+			id: "6B0000000000006B"
+			rewards: [{
+				id: "6B0000000200006B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006B"
+				item: { count: 1, id: "elemental_metals:fire_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B0000000000006B"]
+			id: "6B0000000000006C"
+			rewards: [{
+				id: "6B0000000200006C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006C"
+				item: { count: 1, id: "elemental_metals:frost_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B0000000000006C"]
+			id: "6B0000000000006D"
+			rewards: [{
+				id: "6B0000000200006D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006D"
+				item: { count: 1, id: "elemental_metals:lightning_infused_netherite_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6B00000000000005"]
+			id: "6B0000000000006E"
+			rewards: [{
+				id: "6B0000000200006E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006E"
+				item: { count: 1, id: "create:steam_engine" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
 	]
 }

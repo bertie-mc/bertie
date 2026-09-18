@@ -1,8 +1,0 @@
-format = "bertie-ci.component.v2"
-subject = "short-circuit-fix"
-kind = "neoforge-mod"
-gradle-project = ":mods:short-circuit-fix"
-
-[version]
-file = "mod.properties"
-key = "mod_version"

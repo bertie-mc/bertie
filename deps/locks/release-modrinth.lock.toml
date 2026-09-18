@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "211988e288cd6356662322a2f2b3b2d9e63824ec090d488c7c8f61fca08bbca6"
+inputs-hash = "cdab773eaf140c5fbc75a658e07f9feac6ec4a1c6beb0a92c54276d556a1c1a6"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -262,6 +262,10 @@ mod = "modrinth:SaCpeal4:3kpPjcTc"
 any = "modrinth:65UyswbY:qLs63EFi"
 mod = "modrinth:65UyswbY:qLs63EFi"
 
+[components."compact-crafting-updated"]
+any = "curseforge:1355698:7077089"
+mod = "curseforge:1355698:7077089"
+
 [components."compact-machines"]
 any = "curseforge:224218:7621553"
 mod = "curseforge:224218:7621553"
@@ -276,6 +280,10 @@ any = "modrinth:HVnmMxH1:yCCduG44"
 [components."controlling"]
 any = "modrinth:xv94TkTM:FaNppCJJ"
 mod = "modrinth:xv94TkTM:FaNppCJJ"
+
+[components."convenient-effects"]
+any = "modrinth:BEVhblTh:FpdaIV35"
+mod = "modrinth:BEVhblTh:FpdaIV35"
 
 [components."cooparticles-api"]
 any = "modrinth:poJQVcIe:2fPzW7KM"
@@ -340,6 +348,10 @@ mod = "modrinth:IKARgflD:bgR1e0O5"
 [components."diagonal-walls"]
 any = "modrinth:FQgc8dib:2k3GCxEt"
 mod = "modrinth:FQgc8dib:2k3GCxEt"
+
+[components."diagonal-windows"]
+any = "modrinth:oOi0CKes:IwUmOLxe"
+mod = "modrinth:oOi0CKes:IwUmOLxe"
 
 [components."diamond-in-the-rough"]
 any = "modrinth:TBVbrjYL:iLp3LKvw"
@@ -665,6 +677,10 @@ mod = "modrinth:hIpLSyga:JosVVZQn"
 any = "modrinth:BuWCQzqf:6S40yywo"
 mod = "modrinth:BuWCQzqf:cCUmdH6y"
 
+[components."horse-expert"]
+any = "modrinth:24CSPS1E:Li2vsMel"
+mod = "modrinth:24CSPS1E:Li2vsMel"
+
 [components."hostile-neural-networks"]
 any = "modrinth:6bLUlbZn:ikdLP02G"
 mod = "modrinth:6bLUlbZn:ikdLP02G"
@@ -840,10 +856,6 @@ mod = "modrinth:kNxa8z3e:u7BRX44F"
 [components."macaws-trapdoors"]
 any = "modrinth:n2fvCDlM:StnP0RNi"
 mod = "modrinth:n2fvCDlM:StnP0RNi"
-
-[components."magic-coins"]
-any = "modrinth:qgQomU7L:lc8t2DTb"
-mod = "modrinth:qgQomU7L:lc8t2DTb"
 
 [components."magic-of-color"]
 any = "modrinth:EjTIg7n8:XxWieIYF"
@@ -1172,10 +1184,6 @@ mod = "modrinth:8KT9aVZC:sSsuuNws"
 [components."serene-seasons"]
 any = "modrinth:e0bNACJD:SPj5bJoM"
 mod = "modrinth:e0bNACJD:SPj5bJoM"
-
-[components."short-circuit"]
-any = "modrinth:5dUwdwpB:6mCe1UkK"
-mod = "modrinth:5dUwdwpB:6mCe1UkK"
 
 [components."simply-swords"]
 any = "modrinth:bK3Ubu9p:eREhvVpQ"
@@ -1615,6 +1623,27 @@ file-id = 8197612
 provides = ["immersiveenchanting"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:1554698:8196186", "mod-id" = "alfinolib", "version-range" = "[1.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1355698:7077089"]
+name = "compact-crafting-updated"
+component = "compact-crafting-updated"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "compact-crafting-updated-1355698"
+version = "7077089"
+filename = "compactcrafting-4.0.1.jar"
+project-id = 1355698
+slug = "compact-crafting-updated"
+file-id = 7077089
+provides = ["compactcrafting"]
+bundled-provides = []
+required = []
 optional = []
 incompatible = []
 bundled = []
@@ -2062,6 +2091,26 @@ provides = ["worldedit"]
 bundled-provides = ["fabric-api-base", "fabric-command-api-v2", "fabric-events-interaction-v0", "fabric-lifecycle-events-v1", "fabric-networking-api-v1"]
 required = []
 optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:24CSPS1E:Li2vsMel"]
+name = "horse-expert"
+component = "horse-expert"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "24CSPS1E"
+version = "Li2vsMel"
+filename = "HorseExpert-v21.1.0-1.21.1-NeoForge.jar"
+project-id = "24CSPS1E"
+version-id = "Li2vsMel"
+provides = ["horseexpert"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "*", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -2598,26 +2647,6 @@ version-id = "EkvVbxeM"
 provides = ["rottencreatures"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:i6fiqm5y:v7P0nBi2", "mod-id" = "platform", "version-range" = "[1.2.10.2,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:5dUwdwpB:6mCe1UkK"]
-name = "short-circuit"
-component = "short-circuit"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "5dUwdwpB"
-version = "6mCe1UkK"
-filename = "short_circuit-neoforge-1.21.1-1.0.9.jar"
-project-id = "5dUwdwpB"
-version-id = "6mCe1UkK"
-provides = ["short_circuit"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
@@ -3810,6 +3839,26 @@ provides = ["chipped"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:G1hIVOrD:x99nCLTm", "mod-id" = "resourcefullib", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:b1ZV3DIJ:dJgL278E", "mod-id" = "athena", "version-range" = "[4.0.0,)", "side" = "client", "origin" = "archive" }]
 optional = [{ "missing" = "jei", "mod-id" = "jei", "version-range" = "[19.19.3,)", "side" = "client", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:BEVhblTh:FpdaIV35"]
+name = "convenient-effects"
+component = "convenient-effects"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "BEVhblTh"
+version = "FpdaIV35"
+filename = "ConvenientEffects-v21.1.4-1.21.1-NeoForge.jar"
+project-id = "BEVhblTh"
+version-id = "FpdaIV35"
+provides = ["convenienteffects"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
+optional = []
 incompatible = []
 bundled = []
 integrations = []
@@ -9172,6 +9221,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:oOi0CKes:IwUmOLxe"]
+name = "diagonal-windows"
+component = "diagonal-windows"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "oOi0CKes"
+version = "IwUmOLxe"
+filename = "DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar"
+project-id = "oOi0CKes"
+version-id = "IwUmOLxe"
+provides = ["diagonalwindows"]
+bundled-provides = ["diagonalblocks"]
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.15,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:oPdlqv8D:ThNbTOeP"]
 name = "modular-machinery-reborn"
 component = "modular-machinery-reborn"
@@ -9332,25 +9401,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:pZEK2gvF:Rclw6KAf"]
-name = "sg-economy-api"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "pZEK2gvF"
-version = "Rclw6KAf"
-filename = "sg_economy-1.0.5.jar"
-project-id = "pZEK2gvF"
-version-id = "Rclw6KAf"
-provides = ["sg_economy"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:poJQVcIe:2fPzW7KM"]
 name = "cooparticlesapi"
 component = "cooparticles-api"
@@ -9486,26 +9536,6 @@ version-id = "oBjuO3Ki"
 provides = ["feur_extension_desert"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:qgQomU7L:lc8t2DTb"]
-name = "magic-coins"
-component = "magic-coins"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "qgQomU7L"
-version = "lc8t2DTb"
-filename = "magic_coins-1.1.3.jar"
-project-id = "qgQomU7L"
-version-id = "lc8t2DTb"
-provides = ["magic_coins"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:pZEK2gvF:Rclw6KAf", "mod-id" = "sg_economy", "version-range" = "[1.0.5,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

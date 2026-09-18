@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "4a534642302ae9025f258412077e24d16fe60675e639609363c3b75a35809f05"
+inputs-hash = "bea6ec15a97aeefa7f87546270dc897bfa803170e0ae4a2f5b317530f6228b51"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -262,6 +262,10 @@ mod = "curseforge:276951:7515858"
 any = "curseforge:873388:7793147"
 mod = "curseforge:873388:7793147"
 
+[components."compact-crafting-updated"]
+any = "curseforge:1355698:7077089"
+mod = "curseforge:1355698:7077089"
+
 [components."compact-machines"]
 any = "curseforge:224218:7621553"
 mod = "curseforge:224218:7621553"
@@ -276,6 +280,10 @@ any = "curseforge:627557:8123287"
 [components."controlling"]
 any = "curseforge:250398:6368976"
 mod = "curseforge:250398:6368976"
+
+[components."convenient-effects"]
+any = "curseforge:1259240:7775661"
+mod = "curseforge:1259240:7775661"
 
 [components."cooparticles-api"]
 any = "modrinth:poJQVcIe:2fPzW7KM"
@@ -340,6 +348,10 @@ mod = "curseforge:458048:5918197"
 [components."diagonal-walls"]
 any = "curseforge:969422:5918894"
 mod = "curseforge:969422:5918894"
+
+[components."diagonal-windows"]
+any = "curseforge:891328:5918192"
+mod = "curseforge:891328:5918192"
 
 [components."diamond-in-the-rough"]
 any = "curseforge:898993:5624841"
@@ -665,6 +677,10 @@ mod = "curseforge:632624:6420137"
 any = "curseforge:632622:6420141"
 mod = "curseforge:632622:6420141"
 
+[components."horse-expert"]
+any = "curseforge:666942:5731753"
+mod = "curseforge:666942:5731753"
+
 [components."hostile-neural-networks"]
 any = "curseforge:552574:8525006"
 mod = "curseforge:552574:8525006"
@@ -840,10 +856,6 @@ mod = "curseforge:378646:7618651"
 [components."macaws-trapdoors"]
 any = "curseforge:400933:7256148"
 mod = "curseforge:400933:7256148"
-
-[components."magic-coins"]
-any = "curseforge:597281:8176618"
-mod = "curseforge:597281:8176618"
 
 [components."magic-of-color"]
 any = "curseforge:1396284:7782881"
@@ -1172,10 +1184,6 @@ mod = "curseforge:1026067:7121058"
 [components."serene-seasons"]
 any = "curseforge:291874:6182596"
 mod = "curseforge:291874:6182596"
-
-[components."short-circuit"]
-any = "curseforge:1184318:7511317"
-mod = "curseforge:1184318:7511317"
 
 [components."simply-swords"]
 any = "curseforge:659887:7704396"
@@ -2754,27 +2762,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:1184318:7511317"]
-name = "short-circuit"
-component = "short-circuit"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "short-circuit-1184318"
-version = "7511317"
-filename = "short_circuit-neoforge-1.21.1-1.0.9.jar"
-project-id = 1184318
-slug = "short-circuit"
-file-id = 7511317
-provides = ["short_circuit"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:1190728:7179736"]
 name = "lukis-ancient-cities"
 component = "lukis-ancient-cities"
@@ -3256,6 +3243,27 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:896746:7461027", "namespace" = "amendments", "reason" = "ships data/amendments/", "origin" = "archive-data" }, { "artifact" = "curseforge:484064:7307339", "namespace" = "malum", "reason" = "ships data/malum/", "origin" = "archive-data" }]
+
+[artifacts."curseforge:1259240:7775661"]
+name = "convenient-effects"
+component = "convenient-effects"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "convenient-effects-1259240"
+version = "7775661"
+filename = "ConvenientEffects-v21.1.4-1.21.1-NeoForge.jar"
+project-id = 1259240
+slug = "convenient-effects"
+file-id = 7775661
+provides = ["convenienteffects"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
 
 [artifacts."curseforge:1259949:6952974"]
 name = "swiftness-enchantment"
@@ -3861,6 +3869,27 @@ file-id = 8197612
 provides = ["immersiveenchanting"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:1554698:8196186", "mod-id" = "alfinolib", "version-range" = "[1.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1355698:7077089"]
+name = "compact-crafting-updated"
+component = "compact-crafting-updated"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "compact-crafting-updated-1355698"
+version = "7077089"
+filename = "compactcrafting-4.0.1.jar"
+project-id = 1355698
+slug = "compact-crafting-updated"
+file-id = 7077089
+provides = ["compactcrafting"]
+bundled-provides = []
+required = []
 optional = []
 incompatible = []
 bundled = []
@@ -7264,27 +7293,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:597281:8176618"]
-name = "magic-coins"
-component = "magic-coins"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "magic-coins-597281"
-version = "8176618"
-filename = "magic_coins-1.1.3.jar"
-project-id = 597281
-slug = "magic-coins"
-file-id = 8176618
-provides = ["magic_coins"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:pZEK2gvF:Rclw6KAf", "mod-id" = "sg_economy", "version-range" = "[1.0.5,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:597522:6008768"]
 name = "eccentric-tome"
 component = "eccentric-tome"
@@ -7785,6 +7793,27 @@ provides = ["letmedespawn"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Gi02250Z:cHGan9fQ", "mod-id" = "almanac", "version-range" = "[1.0.2,)", "side" = "server", "origin" = "archive" }]
 optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:666942:5731753"]
+name = "horse-expert"
+component = "horse-expert"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "horse-expert-666942"
+version = "5731753"
+filename = "HorseExpert-v21.1.0-1.21.1-NeoForge.jar"
+project-id = 666942
+slug = "horse-expert"
+file-id = 5731753
+provides = ["horseexpert"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "*", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -8540,6 +8569,27 @@ file-id = 6492670
 provides = ["illagerinvasion"]
 bundled-provides = ["extensibleenums"]
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:891328:5918192"]
+name = "diagonal-windows"
+component = "diagonal-windows"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "diagonal-windows-891328"
+version = "5918192"
+filename = "DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar"
+project-id = 891328
+slug = "diagonal-windows"
+file-id = 5918192
+provides = ["diagonalwindows"]
+bundled-provides = ["diagonalblocks"]
+required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.15,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -10658,25 +10708,6 @@ provides = ["jade"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:pZEK2gvF:Rclw6KAf"]
-name = "sg-economy-api"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "pZEK2gvF"
-version = "Rclw6KAf"
-filename = "sg_economy-1.0.5.jar"
-project-id = "pZEK2gvF"
-version-id = "Rclw6KAf"
-provides = ["sg_economy"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.4.2+1.21.1,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

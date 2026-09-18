@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "BEVhblTh"
+version-id = "FpdaIV35"
+filename = "ConvenientEffects-v21.1.4-1.21.1-NeoForge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "convenient-effects"
+project-id = 1259240
+file-id = 7775661
+filename = "ConvenientEffects-v21.1.4-1.21.1-NeoForge.jar"

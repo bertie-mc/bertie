@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "berlordscarving:heart_of_the_sea_slate"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:heart_of_the_sea_big_slate",
+    "count": 1
+  }
+}

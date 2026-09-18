@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "create:shaft"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "D": {
+      "item": "cataclysm:dying_ember"
+    },
+    "C": {
+      "tag": "c:storage_blocks/copper"
+    }
+  },
+  "pattern": [
+    "S S",
+    "BSB",
+    "DSD",
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "id": "create:steam_engine",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
+    { "id": "cataclysm:ancient_metal_ingot", "required": false },
+    { "id": "cataclysm:black_steel_ingot", "required": false },
+    { "id": "cataclysm:cursium_ingot", "required": false },
+    { "id": "cataclysm:ignitium_ingot", "required": false },
+    { "id": "cataclysm:witherite_ingot", "required": false },
     { "id": "hazennstuff:rose_gold_ingot", "required": false },
     { "id": "minecraft:amethyst_shard", "required": false },
+    { "id": "minecraft:armadillo_scute", "required": false },
     { "id": "minecraft:bone", "required": false },
     { "id": "minecraft:cobblestone", "required": false },
     { "id": "minecraft:copper_ingot", "required": false },
@@ -11,11 +17,17 @@
     { "id": "minecraft:emerald", "required": false },
     { "id": "minecraft:flint", "required": false },
     { "id": "minecraft:gold_ingot", "required": false },
+    { "id": "minecraft:heart_of_the_sea", "required": false },
     { "id": "minecraft:iron_ingot", "required": false },
     { "id": "minecraft:lapis_lazuli", "required": false },
+    { "id": "minecraft:netherite_ingot", "required": false },
     { "id": "minecraft:oak_planks", "required": false },
     { "id": "minecraft:obsidian", "required": false },
+    { "id": "minecraft:prismarine_shard", "required": false },
     { "id": "minecraft:quartz", "required": false },
+    { "id": "minecraft:redstone", "required": false },
+    { "id": "minecraft:resin_brick", "required": false },
+    { "id": "minecraft:turtle_scute", "required": false },
     { "id": "slag:deep_alloy", "required": false },
     { "id": "slag:rose_gold_ingot", "required": false }
   ]

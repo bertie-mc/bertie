@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:armadillo_scute"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:armadillo_scute_slate",
+    "count": 1
+  }
+}
