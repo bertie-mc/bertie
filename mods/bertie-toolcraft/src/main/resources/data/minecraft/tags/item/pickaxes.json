@@ -1,4 +1,5 @@
 {
+  "values": [],
   "remove": [
     { "id": "magitech:hammer", "required": false }
   ]

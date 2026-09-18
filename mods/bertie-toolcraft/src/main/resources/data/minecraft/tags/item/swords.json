@@ -1,4 +1,5 @@
 {
+  "values": [],
   "remove": [
     { "id": "magitech:dagger", "required": false },
     { "id": "magitech:light_sword", "required": false },
