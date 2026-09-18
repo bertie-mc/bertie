@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "hazennstuff:rose_gold_ingot", "required": false },
+    { "id": "minecraft:amethyst_shard", "required": false },
+    { "id": "minecraft:bone", "required": false },
+    { "id": "minecraft:cobblestone", "required": false },
+    { "id": "minecraft:copper_ingot", "required": false },
+    { "id": "minecraft:diamond", "required": false },
+    { "id": "minecraft:echo_shard", "required": false },
+    { "id": "minecraft:emerald", "required": false },
+    { "id": "minecraft:flint", "required": false },
+    { "id": "minecraft:gold_ingot", "required": false },
+    { "id": "minecraft:iron_ingot", "required": false },
+    { "id": "minecraft:lapis_lazuli", "required": false },
+    { "id": "minecraft:oak_planks", "required": false },
+    { "id": "minecraft:obsidian", "required": false },
+    { "id": "minecraft:quartz", "required": false },
+    { "id": "slag:deep_alloy", "required": false },
+    { "id": "slag:rose_gold_ingot", "required": false }
+  ]
+}
