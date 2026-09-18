@@ -1,0 +1,39 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "tag": "c:ingots/iron"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "forbidden_arcanus:rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "tag": "c:strings"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "twilightforest:tanned_leather"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:upgrade_base",
+      "count": 1
+    }
+  }
+}

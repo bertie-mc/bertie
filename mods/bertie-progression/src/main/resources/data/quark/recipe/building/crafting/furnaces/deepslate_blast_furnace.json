@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "elemental_metals:fire_infused_iron_ingot"
+    },
+    "U": {
+      "item": "quark:deepslate_furnace"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FUF",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:blast_furnace"
+  }
+}

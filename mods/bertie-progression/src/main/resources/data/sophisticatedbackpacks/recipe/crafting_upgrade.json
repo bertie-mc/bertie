@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:crafting_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:ingots/iron"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    },
+    "c": {
+      "item": "minecraft:oak_planks"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "irons_spellbooks:epic_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:crafting_upgrade"
+  }
+}

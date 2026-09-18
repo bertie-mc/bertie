@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bertieprogression:item/pocket_essence"
+    "layer0": "bertieprogression:item/pocket_watch"
   }
 }

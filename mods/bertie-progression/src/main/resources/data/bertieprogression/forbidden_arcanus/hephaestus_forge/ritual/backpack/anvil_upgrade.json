@@ -1,0 +1,39 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 3,
+      "ingredient": {
+        "tag": "c:gems/diamond"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:epic_ink"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:anvil"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:upgrade_base"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:anvil_upgrade",
+      "count": 1
+    }
+  }
+}

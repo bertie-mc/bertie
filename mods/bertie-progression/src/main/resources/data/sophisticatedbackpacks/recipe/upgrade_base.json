@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:upgrade_base"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:strings"
+    },
+    "b": {
+      "tag": "c:ingots/iron"
+    },
+    "c": {
+      "item": "forbidden_arcanus:rune"
+    },
+    "d": {
+      "item": "twilightforest:tanned_leather"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:upgrade_base"
+  }
+}

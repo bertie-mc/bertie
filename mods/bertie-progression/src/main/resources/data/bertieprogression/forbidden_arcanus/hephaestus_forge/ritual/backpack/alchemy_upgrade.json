@@ -1,0 +1,57 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "minecraft:awkward"
+          }
+        },
+        "items": "minecraft:potion",
+        "type": "neoforge:components"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:rare_ink"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:ghast_tear"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:fermented_spider_eye"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:blaze_powder"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:upgrade_base"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:alchemy_upgrade",
+      "count": 1
+    }
+  }
+}

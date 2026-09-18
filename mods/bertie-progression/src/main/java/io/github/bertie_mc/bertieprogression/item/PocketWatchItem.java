@@ -11,8 +11,8 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-public final class PocketEssenceItem extends Item {
-    public PocketEssenceItem(Properties properties) {
+public final class PocketWatchItem extends Item {
+    public PocketWatchItem(Properties properties) {
         super(properties);
     }
 

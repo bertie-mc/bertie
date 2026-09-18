@@ -1,0 +1,33 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 7,
+      "ingredient": {
+        "item": "minecraft:flint"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:common_ink"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:stack_downgrade_tier_1"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:stack_downgrade_tier_2",
+      "count": 1
+    }
+  }
+}

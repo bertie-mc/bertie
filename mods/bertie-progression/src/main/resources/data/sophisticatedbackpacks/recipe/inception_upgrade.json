@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:inception_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "b": {
+      "tag": "c:nether_stars"
+    },
+    "c": {
+      "item": "anvilcraft:resonator_core"
+    },
+    "d": {
+      "item": "irons_spellbooks:legendary_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cac",
+    "ada"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:inception_upgrade"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:blasting_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:coal"
+    },
+    "b": {
+      "item": "irons_spellbooks:common_ink"
+    },
+    "c": {
+      "tag": "c:dusts/redstone"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "minecraft:blast_furnace"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:blasting_upgrade"
+  }
+}

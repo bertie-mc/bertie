@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:smithing_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:ingots/iron"
+    },
+    "b": {
+      "item": "minecraft:smithing_table"
+    },
+    "c": {
+      "tag": "c:ingots/gold"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "tag": "c:gems/emerald"
+    },
+    "f": {
+      "item": "irons_spellbooks:common_ink"
+    },
+    "g": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "abc",
+    "ada",
+    "efg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:smithing_upgrade"
+  }
+}

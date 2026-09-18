@@ -1,0 +1,69 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "chipped:alchemy_bench"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:common_ink"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:shears"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:pointed_dripstone"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:oak_log"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:stone"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:glass"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:dirt"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:upgrade_base"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:carpenters_table_upgrade",
+      "count": 1
+    }
+  }
+}

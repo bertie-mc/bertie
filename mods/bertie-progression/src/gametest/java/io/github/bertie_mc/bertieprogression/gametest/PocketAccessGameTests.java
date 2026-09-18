@@ -63,21 +63,21 @@ public final class PocketAccessGameTests {
     }
 
     @GameTest(template = "empty")
-    public static void essenceUnlockIsPersonalPersistentAndNotWasted(GameTestHelper helper) {
+    public static void watchUnlockIsPersonalPersistentAndNotWasted(GameTestHelper helper) {
         FakePlayer player = player(helper);
         FakePlayer other = player(helper);
-        ItemStack essence = new ItemStack(ModItems.POCKET_ESSENCE.get(), 2);
-        player.setItemInHand(InteractionHand.MAIN_HAND, essence);
-        ModItems.POCKET_ESSENCE.get().use(helper.getLevel(), player, InteractionHand.MAIN_HAND);
-        helper.assertTrue(!player.getData(ModAttachments.POCKET_UNLOCKED), "starting to drink must not unlock travel");
+        ItemStack watch = new ItemStack(ModItems.POCKET_WATCH.get(), 2);
+        player.setItemInHand(InteractionHand.MAIN_HAND, watch);
+        ModItems.POCKET_WATCH.get().use(helper.getLevel(), player, InteractionHand.MAIN_HAND);
+        helper.assertTrue(!player.getData(ModAttachments.POCKET_UNLOCKED), "starting to use must not unlock travel");
         player.stopUsingItem();
-        helper.assertTrue(essence.getCount() == 2, "canceling use must not consume essence");
-        ModItems.POCKET_ESSENCE.get().finishUsingItem(essence, helper.getLevel(), player);
+        helper.assertTrue(watch.getCount() == 2, "canceling use must not consume watch");
+        ModItems.POCKET_WATCH.get().finishUsingItem(watch, helper.getLevel(), player);
         helper.assertTrue(player.getData(ModAttachments.POCKET_UNLOCKED), "finishing must unlock travel");
         helper.assertTrue(!other.getData(ModAttachments.POCKET_UNLOCKED), "unlock must not affect another player");
-        helper.assertTrue(essence.getCount() == 1, "exactly one essence must be consumed");
-        ModItems.POCKET_ESSENCE.get().finishUsingItem(essence, helper.getLevel(), player);
-        helper.assertTrue(essence.getCount() == 1, "unlocked players must not waste more essence");
+        helper.assertTrue(watch.getCount() == 1, "exactly one watch must be consumed");
+        ModItems.POCKET_WATCH.get().finishUsingItem(watch, helper.getLevel(), player);
+        helper.assertTrue(watch.getCount() == 1, "unlocked players must not waste more watch");
         CompoundTag saved = new CompoundTag();
         player.saveWithoutId(saved);
         FakePlayer reloaded = player(helper);
@@ -103,14 +103,14 @@ public final class PocketAccessGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 120)
-    public static void essenceEnablesOriginalKeyTravel(GameTestHelper helper) {
+    public static void watchEnablesOriginalKeyTravel(GameTestHelper helper) {
         helper.assertTrue(
                 helper.getLevel().getServer().getLevel(PocketTravelHandler.DIMENSION) != null,
                 "test world must load the pocket dimension");
         FakePlayer player = player(helper);
-        ModItems.POCKET_ESSENCE
+        ModItems.POCKET_WATCH
                 .get()
-                .finishUsingItem(new ItemStack(ModItems.POCKET_ESSENCE.get()), helper.getLevel(), player);
+                .finishUsingItem(new ItemStack(ModItems.POCKET_WATCH.get()), helper.getLevel(), player);
         OpenKeyMessage.pressAction(player, 0, 0);
         helper.assertTrue(
                 player.getData(PocketDimensionModVariables.PLAYER_VARIABLES).Cooldown > 0,
@@ -122,7 +122,7 @@ public final class PocketAccessGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 120)
-    public static void crouchingOnBlockMakesRoundTripWithoutEssence(GameTestHelper helper) {
+    public static void crouchingOnBlockMakesRoundTripWithoutWatch(GameTestHelper helper) {
         helper.setBlock(PLATFORM, ModBlocks.POCKET_DIMENSION.get());
         helper.assertTrue(
                 helper.getLevel().getServer().getLevel(PocketTravelHandler.DIMENSION) != null,
@@ -143,7 +143,7 @@ public final class PocketAccessGameTests {
                 .thenWaitUntil(() -> helper.assertEntityProperty(
                         player,
                         entity -> entity.level().dimension().equals(PocketTravelHandler.DIMENSION),
-                        "the block must reach the pocket dimension without essence"))
+                        "the block must reach the pocket dimension without watch"))
                 .thenExecute(() -> {
                     BlockPos portalPos = player.blockPosition().below();
                     var portal = player.level().getBlockState(portalPos);
@@ -156,7 +156,7 @@ public final class PocketAccessGameTests {
                 .thenWaitUntil(() -> helper.assertEntityProperty(
                         player,
                         entity -> entity.level() == helper.getLevel(),
-                        "the original portal must return a player without essence"))
+                        "the original portal must return a player without watch"))
                 .thenExecute(() -> helper.assertTrue(
                         player.position().distanceToSqr(returnPosition) < 0.01,
                         "return portal must preserve the block entry location"))

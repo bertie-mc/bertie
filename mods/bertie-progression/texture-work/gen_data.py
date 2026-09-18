@@ -3395,6 +3395,264 @@ write(f"{RIT}/pocket_dimension.json",
              "bertieprogression:pocket_dimension", 1, tier=2,
              essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=1000))
 
+# ================================================================ BACKPACK UPGRADES
+# Sophisticated Backpacks prices every upgrade in iron, redstone and string, which says nothing
+# about what the upgrade does and costs nothing by the time you want one. Each is re-cut around the
+# thing it actually operates - a trash can for the Void, a jukebox for the Jukebox - with a bottle
+# of Iron's ink underneath as the tier marker, and each also gains a Tier-I Hephaestus ritual that
+# spends the same bill: the centre becomes the main ingredient and the ring becomes the pedestals.
+# Eight pedestals is the forge's hard limit and a full ring is exactly eight, so the two routes cost
+# the same to the item.
+INK = {n: f"irons_spellbooks:{n}_ink" for n in ("common", "uncommon", "rare", "epic", "legendary")}
+UPGRADE_AUREAL, UPGRADE_BLOOD = 20, 400
+SBP = "sophisticatedbackpacks:"
+
+
+def _spec(cell):
+    """One grid cell as an ingredient object."""
+    if isinstance(cell, dict):
+        return cell
+    return {"tag": cell[1:]} if cell.startswith("#") else {"item": cell}
+
+
+def ring(m, t=None, b=None, l=None, r=None, c=None, lt=None, rt=None, lb=None, rb=None):
+    """A 3x3 as (pattern, key) from named ring positions; c fills any corner left unnamed."""
+    cells = [lt or c, t, rt or c, l, m, r, lb or c, b, rb or c]
+    letters, key, out = {}, {}, ""
+    for cell in cells:
+        if cell is None:
+            out += " "
+            continue
+        tag = json.dumps(_spec(cell), sort_keys=True)
+        if tag not in letters:
+            letters[tag] = chr(ord("a") + len(letters))
+            key[letters[tag]] = _spec(cell)
+        out += letters[tag]
+    return [out[0:3], out[3:6], out[6:9]], key
+
+
+def upgrade(name, m, **positions):
+    """The 3x3 override and the matching Tier-I ritual, from one description of the grid.
+
+    The ritual is the same bill read differently: the middle becomes the main ingredient and the
+    eight ring slots become the pedestals, which is exactly the forge's limit.
+    """
+    item_id = SBP + name.split("/")[-1]
+    pattern, key = ring(m, **positions)
+    write(f"data/sophisticatedbackpacks/recipe/{name}.json", {
+        "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                                 "itemRegistryName": item_id}],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": key,
+        "pattern": pattern,
+        "result": {"count": 1, "id": item_id},
+    })
+
+    spare_corners = 4 - sum(1 for k in ("lt", "rt", "lb", "rb") if positions.get(k) is not None)
+    bill = {}
+    for spot, cell in positions.items():
+        if cell is None:
+            continue
+        tag = json.dumps(_spec(cell), sort_keys=True)
+        bill[tag] = bill.get(tag, 0) + (spare_corners if spot == "c" else 1)
+    write(f"{RIT}/backpack/{name.split('/')[-1]}.json", {
+        "essences": {"aureal": UPGRADE_AUREAL, "blood": UPGRADE_BLOOD, "souls": 0},
+        "forge_tier": 1,
+        "inputs": [{"amount": n, "ingredient": json.loads(tag)} for tag, n in bill.items()],
+        "magic_circle": "forbidden_arcanus:create_item",
+        "main_ingredient": _spec(m),
+        "result": {"type": "forbidden_arcanus:create_item",
+                   "result_item": {"id": item_id, "count": 1}},
+    })
+
+
+BASE = SBP + "upgrade_base"
+AWKWARD = {"type": "neoforge:components",
+           "components": {"minecraft:potion_contents": {"potion": "minecraft:awkward"}},
+           "items": "minecraft:potion"}
+
+# The Upgrade Base itself: tanned leather at the heart, runes where the side iron was.
+upgrade("upgrade_base", "twilightforest:tanned_leather",
+        t="#c:ingots/iron", b="#c:ingots/iron", l="forbidden_arcanus:rune",
+        r="forbidden_arcanus:rune", c="#c:strings")
+
+upgrade("void_upgrade", BASE, t="trashcans:item_trash_can", b=INK["common"],
+        l="#c:ender_pearls", r="#c:ender_pearls", c="#c:obsidians")
+upgrade("restock_upgrade", BASE, t="minecraft:sticky_piston", b=INK["common"],
+        l="#c:chests/wooden", r="#c:chests/wooden", c="farmersdelight:rope")
+upgrade("deposit_upgrade", BASE, t="minecraft:piston", b=INK["common"],
+        l="#c:chests/wooden", r="#c:chests/wooden", c="farmersdelight:rope")
+upgrade("refill_upgrade", BASE, t="#c:ender_pearls", b=INK["common"],
+        l="#c:dusts/redstone", r="#c:dusts/redstone",
+        lt="minecraft:dispenser", rt="minecraft:dispenser",
+        lb="#c:chests/wooden", rb="#c:chests/wooden")
+for _cook, _block in (("smelting", "minecraft:furnace"), ("smoking", "minecraft:smoker"),
+                      ("blasting", "minecraft:blast_furnace")):
+    upgrade(f"{_cook}_upgrade", BASE, t=INK["common"], b=_block,
+            l="#c:dusts/redstone", r="#c:dusts/redstone", c="minecraft:coal")
+upgrade("filter_upgrade", BASE, t="create:filter", b=INK["common"],
+        l="#c:ingots/iron", r="#c:ingots/iron", c="#c:strings")
+upgrade("pickup_upgrade", BASE, t="minecraft:hopper", b=INK["common"],
+        l="#c:strings", r="#c:strings", c="#c:dusts/redstone")
+upgrade("magnet_upgrade", SBP + "pickup_upgrade", t="#c:ender_pearls", b=INK["uncommon"],
+        l="alexscaves:azure_neodymium_ingot", r="alexscaves:scarlet_neodymium_ingot",
+        lt="alexscaves:azure_neodymium_ingot", lb="alexscaves:azure_neodymium_ingot",
+        rt="alexscaves:scarlet_neodymium_ingot", rb="alexscaves:scarlet_neodymium_ingot")
+upgrade("compacting_upgrade", BASE, t="#c:ingots/iron", b=INK["uncommon"],
+        l="#c:nuggets/iron", r="#c:storage_blocks/iron", c="minecraft:piston")
+upgrade("alchemy_upgrade", BASE, t=AWKWARD, b=INK["rare"],
+        l="minecraft:ghast_tear", r="minecraft:fermented_spider_eye", c="minecraft:blaze_powder")
+upgrade("jukebox_upgrade", BASE, t="minecraft:jukebox", b=INK["common"],
+        l="#minecraft:music_discs", r="#minecraft:music_discs", c="#c:dusts/redstone")
+upgrade("tool_swapper_upgrade", BASE, t="#c:ender_pearls", b=INK["uncommon"],
+        l="#c:dusts/redstone", r="#c:dusts/redstone",
+        lt="minecraft:wooden_sword", rt="minecraft:wooden_axe",
+        lb="minecraft:wooden_pickaxe", rb="minecraft:wooden_shovel")
+upgrade("mob_catcher_upgrade", BASE, t="apothic_enchanting:flimsy_ender_lead", b=INK["epic"],
+        l="minecraft:lead", r="minecraft:lead", c="#c:ender_pearls")
+upgrade("pump_upgrade", BASE, t="minecraft:bucket", b=INK["uncommon"],
+        l="minecraft:piston", r="minecraft:sticky_piston", c="#c:dusts/redstone")
+upgrade("chipped/carpenters_table_upgrade", BASE, t="chipped:alchemy_bench", b=INK["common"],
+        l="minecraft:shears", r="minecraft:pointed_dripstone",
+        lt="minecraft:oak_log", rt="minecraft:stone",
+        lb="minecraft:glass", rb="minecraft:dirt")
+upgrade("sawmill/sawmill_upgrade", BASE, t="sawmill:sawmill", b=INK["common"],
+        l="magitech:strike_head", r="magitech:strike_head", c="#minecraft:logs")
+upgrade("stonecutter_upgrade", BASE, t="minecraft:stonecutter", b=INK["common"],
+        l="magitech:spike_head", r="magitech:spike_head", c="minecraft:stone")
+upgrade("smithing_upgrade", BASE, t="minecraft:smithing_table", b=INK["common"],
+        l="#c:ingots/iron", r="#c:ingots/iron",
+        lt="#c:ingots/iron", rt="#c:ingots/gold",
+        rb="#c:gems/diamond", lb="#c:gems/emerald")
+upgrade("anvil_upgrade", BASE, t="#c:gems/diamond", b=INK["epic"],
+        l="#c:gems/diamond", r="#c:gems/diamond", c="minecraft:anvil")
+upgrade("crafting_upgrade", BASE, t="minecraft:crafting_table", b=INK["epic"],
+        l="minecraft:oak_planks", r="minecraft:oak_planks", c="#c:ingots/iron")
+upgrade("feeding_upgrade", BASE, t="minecraft:enchanted_golden_apple", b=INK["epic"],
+        l="minecraft:golden_apple", r="minecraft:golden_apple",
+        lt="minecraft:golden_carrot", rt="minecraft:golden_carrot",
+        lb="minecraft:glistering_melon_slice", rb="minecraft:glistering_melon_slice")
+upgrade("tank_upgrade", BASE, t="create:fluid_tank", b=INK["rare"],
+        l="create:fluid_tank", r="create:fluid_tank", c="create:fluid_tank")
+upgrade("everlasting_upgrade", BASE, t="#c:nether_stars", b=INK["legendary"],
+        l="malum:refined_brilliance", r="malum:refined_brilliance", c="#c:ingots/netherite")
+upgrade("inception_upgrade", BASE, t="#c:nether_stars", b=INK["legendary"],
+        l="anvilcraft:resonator_core", r="anvilcraft:resonator_core", c=BASE)
+
+# The stack downgrades are flint all the way down, each tier built on the last.
+for _tier, _mid in ((1, BASE), (2, SBP + "stack_downgrade_tier_1"), (3, SBP + "stack_downgrade_tier_2")):
+    upgrade(f"stack_downgrade_tier_{_tier}", _mid, t="minecraft:flint", b=INK["common"],
+            l="minecraft:flint", r="minecraft:flint", c="minecraft:flint")
+
+# One iron stack upgrade instead of two: a block of copper ringed in iron. The starter-tier route
+# is switched off so the tier has a single price.
+write("data/sophisticatedbackpacks/recipe/stack_upgrade_tier_1.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": SBP + "stack_upgrade_tier_1"}],
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"I": {"tag": "c:storage_blocks/iron"}, "C": {"tag": "c:storage_blocks/copper"}},
+    "pattern": ["III", "ICI", "III"],
+    "result": {"count": 1, "id": SBP + "stack_upgrade_tier_1"},
+})
+write("data/sophisticatedbackpacks/recipe/stack_upgrade_tier_1_from_starter.json", DISABLED)
+
+# Blasting off a Smelting upgrade wants the same metal that turns a Furnace into a Blast Furnace.
+write("data/sophisticatedbackpacks/recipe/blasting_upgrade_from_smelting_upgrade.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": SBP + "blasting_upgrade"}],
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"F": {"item": "elemental_metals:fire_infused_iron_ingot"},
+            "S": {"item": SBP + "smelting_upgrade"},
+            "T": {"item": "minecraft:smooth_stone"}},
+    "pattern": ["FFF", "FSF", "TTT"],
+    "result": {"count": 1, "id": SBP + "blasting_upgrade"},
+})
+
+# --- Advanced tiers -----------------------------------------------------------------------------
+# Every advanced upgrade that cost a diamond, two gold and three redstone now costs Malum's refined
+# metals and an Arcane Ingot at each side, with the ink one rarity above the basic version's. The
+# three automatic cookers take a hopper on top instead of the Brilliance - they are the ones that
+# gained a machine, not a material.
+ADVANCED = {
+    "advanced_alchemy_upgrade": ("alchemy_upgrade", "epic", None),
+    "advanced_compacting_upgrade": ("compacting_upgrade", "rare", None),
+    "advanced_deposit_upgrade": ("deposit_upgrade", "uncommon", None),
+    "advanced_feeding_upgrade": ("feeding_upgrade", "legendary", None),
+    "advanced_jukebox_upgrade": ("jukebox_upgrade", "uncommon", None),
+    "advanced_magnet_upgrade_from_basic": ("magnet_upgrade", "rare", "advanced_magnet_upgrade"),
+    "advanced_pickup_upgrade": ("pickup_upgrade", "uncommon", None),
+    "advanced_refill_upgrade": ("refill_upgrade", "uncommon", None),
+    "advanced_restock_upgrade": ("restock_upgrade", "uncommon", None),
+    "advanced_tool_swapper_upgrade": ("tool_swapper_upgrade", "rare", None),
+    "advanced_void_upgrade": ("void_upgrade", "uncommon", None),
+    "auto_smelting_upgrade": ("smelting_upgrade", "uncommon", None),
+    "auto_smoking_upgrade": ("smoking_upgrade", "uncommon", None),
+    "auto_blasting_upgrade": ("blasting_upgrade", "uncommon", None),
+}
+for _name, (_from, _ink, _result) in ADVANCED.items():
+    _top = ("minecraft:hopper" if _name.startswith("auto_") else "malum:refined_brilliance")
+    _pattern, _key = ring(SBP + _from, t=_top, b=INK[_ink],
+                          l="irons_spellbooks:arcane_ingot", r="irons_spellbooks:arcane_ingot",
+                          c="malum:refined_soulstone")
+    write(f"data/sophisticatedbackpacks/recipe/{_name}.json", {
+        "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                                 "itemRegistryName": SBP + (_result or _name)}],
+        "type": "sophisticatedcore:upgrade_next_tier", "category": "misc",
+        "key": _key, "pattern": _pattern,
+        "result": {"count": 1, "id": SBP + (_result or _name)},
+    })
+
+# The Advanced Magnet built straight from an Advanced Pickup pays what the basic pair pays.
+_pattern, _key = ring(SBP + "advanced_pickup_upgrade", t="#c:ender_pearls", b=INK["uncommon"],
+                      l="alexscaves:azure_neodymium_ingot", lt="alexscaves:azure_neodymium_ingot",
+                      lb="alexscaves:azure_neodymium_ingot",
+                      r="alexscaves:scarlet_neodymium_ingot", rt="alexscaves:scarlet_neodymium_ingot",
+                      rb="alexscaves:scarlet_neodymium_ingot")
+write("data/sophisticatedbackpacks/recipe/advanced_magnet_upgrade.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": SBP + "advanced_magnet_upgrade"}],
+    "type": "sophisticatedcore:upgrade_next_tier", "category": "misc",
+    "key": _key, "pattern": _pattern,
+    "result": {"count": 1, "id": SBP + "advanced_magnet_upgrade"},
+})
+
+_pattern, _key = ring(SBP + "mob_catcher_upgrade", t="apothic_enchanting:ender_lead",
+                      b=INK["legendary"], l="elemental_metals:soul_infused_iron_ingot",
+                      r="elemental_metals:arcane_infused_iron_ingot", c="malum:mnemonic_fragment")
+write("data/sophisticatedbackpacks/recipe/advanced_mob_catcher_upgrade.json", {
+    "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
+                             "itemRegistryName": SBP + "advanced_mob_catcher_upgrade"}],
+    "type": "sophisticatedcore:upgrade_next_tier", "category": "misc",
+    "key": _key, "pattern": _pattern,
+    "result": {"count": 1, "id": SBP + "advanced_mob_catcher_upgrade"},
+})
+
+# --- Quark's second route to the furnaces --------------------------------------------------------
+# Quark rebuilds vanilla's eight-stone furnace under its own id, which walked straight past the
+# override on the vanilla path, and its two variant Blast Furnaces are vanilla's shape as well.
+# The furnace copy goes; the two variants keep their block in the middle so both stay upgradable,
+# around the same frame the pack's own Blast Furnace uses.
+write("data/quark/recipe/building/crafting/furnaces/mixed_furnace.json", DISABLED)
+for _stone in ("deepslate", "blackstone"):
+    write(f"data/quark/recipe/building/crafting/furnaces/{_stone}_blast_furnace.json", {
+        "neoforge:conditions": conds("quark", "elemental_metals"),
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"F": {"item": "elemental_metals:fire_infused_iron_ingot"},
+                "U": {"item": f"quark:{_stone}_furnace"},
+                "S": {"item": "minecraft:smooth_stone"},
+                "M": {"item": "minecraft:magma_block"}},
+        "pattern": ["FFF", "FUF", "SMS"],
+        "result": {"count": 1, "id": "minecraft:blast_furnace"},
+    })
+
+# --- Warp Flux is crafted, not reaped ------------------------------------------------------------
+# Malum hands out 2-4 Warp Flux for reaping an Enderman, through its own reaping registry rather
+# than a loot table - which is why a sweep of the loot data missed it. The Spirit Altar recipe is
+# meant to be the only source, so the entry is re-emitted with nothing in it.
+write("data/malum/reaping_data/enderman.json",
+      {"registry_name": "minecraft:enderman", "drops": []})
+
 # --- Tags that exist only so Ash and Twilight's quest tasks can name a set of things. ---
 # The three starter Pigment Pedestals all render as "Pigment Pedestal" and Pastel's own
 # pastel:pedestals tag also covers the Onyx and Moonstone upgrades, which the quest must not accept.
@@ -4380,6 +4638,7 @@ ITEMS = {
     "twilight_concord": "Twilight Concord",
     "null_blaze_cube": "Null Blaze Cube",
     "innocent_soul": "Innocent Soul",
+    "pocket_watch": "Pocket Watch",
 }
 
 BLOCKS = {
@@ -4426,7 +4685,8 @@ for block_id in BLOCKS:
           {"parent": f"bertieprogression:block/{block_id}"})
 
 # lang
-lang = {"itemGroup.bertieprogression": "Bertie Progression"}
+lang = {"itemGroup.bertieprogression": "Bertie Progression",
+        "block.bertieprogression.pocket_dimension": "Pocket Dimension"}
 for item_id, name in ITEMS.items():
     lang[f"item.bertieprogression.{item_id}"] = name
 for block_id, name in BLOCKS.items():

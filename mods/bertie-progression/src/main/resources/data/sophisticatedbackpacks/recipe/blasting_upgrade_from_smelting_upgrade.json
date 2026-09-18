@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:blasting_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "elemental_metals:fire_infused_iron_ingot"
+    },
+    "S": {
+      "item": "sophisticatedbackpacks:smelting_upgrade"
+    },
+    "T": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FSF",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:blasting_upgrade"
+  }
+}

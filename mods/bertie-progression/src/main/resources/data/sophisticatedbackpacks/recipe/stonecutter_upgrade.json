@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:stonecutter_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "item": "minecraft:stonecutter"
+    },
+    "c": {
+      "item": "magitech:spike_head"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "irons_spellbooks:common_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:stonecutter_upgrade"
+  }
+}

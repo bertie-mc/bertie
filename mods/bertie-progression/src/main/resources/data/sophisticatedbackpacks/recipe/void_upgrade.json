@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:void_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:obsidians"
+    },
+    "b": {
+      "item": "trashcans:item_trash_can"
+    },
+    "c": {
+      "tag": "c:ender_pearls"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "irons_spellbooks:common_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:void_upgrade"
+  }
+}

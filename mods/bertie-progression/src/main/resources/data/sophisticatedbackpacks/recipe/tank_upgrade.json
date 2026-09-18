@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:tank_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "create:fluid_tank"
+    },
+    "b": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "c": {
+      "item": "irons_spellbooks:rare_ink"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:tank_upgrade"
+  }
+}

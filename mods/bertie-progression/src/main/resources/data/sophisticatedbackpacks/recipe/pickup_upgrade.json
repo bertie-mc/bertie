@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:pickup_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "c:dusts/redstone"
+    },
+    "b": {
+      "item": "minecraft:hopper"
+    },
+    "c": {
+      "tag": "c:strings"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "irons_spellbooks:common_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:pickup_upgrade"
+  }
+}

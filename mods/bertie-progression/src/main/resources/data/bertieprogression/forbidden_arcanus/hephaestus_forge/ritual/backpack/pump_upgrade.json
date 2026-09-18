@@ -1,0 +1,51 @@
+{
+  "essences": {
+    "aureal": 20,
+    "blood": 400,
+    "souls": 0
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:bucket"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:uncommon_ink"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:piston"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:sticky_piston"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "tag": "c:dusts/redstone"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "sophisticatedbackpacks:upgrade_base"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "sophisticatedbackpacks:pump_upgrade",
+      "count": 1
+    }
+  }
+}

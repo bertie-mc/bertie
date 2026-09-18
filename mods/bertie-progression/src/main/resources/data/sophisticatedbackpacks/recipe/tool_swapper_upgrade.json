@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:tool_swapper_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:wooden_sword"
+    },
+    "b": {
+      "tag": "c:ender_pearls"
+    },
+    "c": {
+      "item": "minecraft:wooden_axe"
+    },
+    "d": {
+      "tag": "c:dusts/redstone"
+    },
+    "e": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "f": {
+      "item": "minecraft:wooden_pickaxe"
+    },
+    "g": {
+      "item": "irons_spellbooks:uncommon_ink"
+    },
+    "h": {
+      "item": "minecraft:wooden_shovel"
+    }
+  },
+  "pattern": [
+    "abc",
+    "ded",
+    "fgh"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:tool_swapper_upgrade"
+  }
+}

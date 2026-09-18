@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:carpenters_table_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:oak_log"
+    },
+    "b": {
+      "item": "chipped:alchemy_bench"
+    },
+    "c": {
+      "item": "minecraft:stone"
+    },
+    "d": {
+      "item": "minecraft:shears"
+    },
+    "e": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "f": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "h": {
+      "item": "irons_spellbooks:common_ink"
+    },
+    "i": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:carpenters_table_upgrade"
+  }
+}

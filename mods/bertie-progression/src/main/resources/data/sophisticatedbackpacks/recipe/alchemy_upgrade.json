@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:alchemy_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "type": "neoforge:components",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:awkward"
+        }
+      },
+      "items": "minecraft:potion"
+    },
+    "c": {
+      "item": "minecraft:ghast_tear"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "f": {
+      "item": "irons_spellbooks:rare_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:alchemy_upgrade"
+  }
+}

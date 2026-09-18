@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:feeding_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:golden_carrot"
+    },
+    "b": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "c": {
+      "item": "minecraft:golden_apple"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "f": {
+      "item": "irons_spellbooks:epic_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:feeding_upgrade"
+  }
+}

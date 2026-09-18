@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:advanced_compacting_upgrade"
+    }
+  ],
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "malum:refined_soulstone"
+    },
+    "b": {
+      "item": "malum:refined_brilliance"
+    },
+    "c": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:compacting_upgrade"
+    },
+    "e": {
+      "item": "irons_spellbooks:rare_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:advanced_compacting_upgrade"
+  }
+}

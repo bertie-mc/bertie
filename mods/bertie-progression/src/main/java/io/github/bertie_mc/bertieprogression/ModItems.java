@@ -4,7 +4,7 @@ import com.mojang.serialization.Codec;
 import io.github.bertie_mc.bertieprogression.item.CraftingLicenseItem;
 import io.github.bertie_mc.bertieprogression.item.FinderItem;
 import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
-import io.github.bertie_mc.bertieprogression.item.PocketEssenceItem;
+import io.github.bertie_mc.bertieprogression.item.PocketWatchItem;
 import io.github.bertie_mc.bertieprogression.item.WeepingEyeItem;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,9 +84,9 @@ public final class ModItems {
     // --- Portals / dimension keys ---
     public static final DeferredItem<BlockItem> POCKET_DIMENSION =
             ITEMS.registerSimpleBlockItem(ModBlocks.POCKET_DIMENSION);
-    public static final DeferredItem<PocketEssenceItem> POCKET_ESSENCE = ITEMS.register(
-            "pocket_essence",
-            () -> new PocketEssenceItem(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
+    public static final DeferredItem<PocketWatchItem> POCKET_WATCH = ITEMS.register(
+            "pocket_watch",
+            () -> new PocketWatchItem(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
     public static final DeferredItem<Item> TWILIGHT_CONCORD = simple("twilight_concord", 16);
 
     // --- Avaritia ---
@@ -166,7 +166,7 @@ public final class ModItems {
                         out.accept(CRAFTING_LICENSE.get());
                         out.accept(EEZO_ORE.get());
                         out.accept(POCKET_DIMENSION.get());
-                        out.accept(POCKET_ESSENCE.get());
+                        out.accept(POCKET_WATCH.get());
                     })
                     .build());
 

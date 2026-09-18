@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:magnet_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "alexscaves:azure_neodymium_ingot"
+    },
+    "b": {
+      "tag": "c:ender_pearls"
+    },
+    "c": {
+      "item": "alexscaves:scarlet_neodymium_ingot"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:pickup_upgrade"
+    },
+    "e": {
+      "item": "irons_spellbooks:uncommon_ink"
+    }
+  },
+  "pattern": [
+    "abc",
+    "adc",
+    "aec"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:magnet_upgrade"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:anvil_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:anvil"
+    },
+    "b": {
+      "tag": "c:gems/diamond"
+    },
+    "c": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "d": {
+      "item": "irons_spellbooks:epic_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:anvil_upgrade"
+  }
+}

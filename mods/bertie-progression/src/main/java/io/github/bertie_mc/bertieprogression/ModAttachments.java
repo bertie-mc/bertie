@@ -11,7 +11,7 @@ public final class ModAttachments {
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS =
             DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, BertieProgression.MODID);
 
-    /** Pocket Essence unlocks the travel key permanently, including after death. */
+    /** Pocket Watch unlocks the travel key permanently, including after death. */
     public static final Supplier<AttachmentType<Boolean>> POCKET_UNLOCKED = ATTACHMENTS.register(
             "pocket_unlocked",
             () -> AttachmentType.builder(() -> Boolean.FALSE)

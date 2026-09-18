@@ -1,5 +1,6 @@
 {
   "itemGroup.bertieprogression": "Bertie Progression",
+  "block.bertieprogression.pocket_dimension": "Pocket Dimension",
   "item.bertieprogression.opening_mallet": "Opening Mallet",
   "item.bertieprogression.weeping_eye": "Weeping Eye",
   "item.bertieprogression.kinetic_vane": "Structural Beam",
@@ -17,6 +18,7 @@
   "item.bertieprogression.twilight_concord": "Twilight Concord",
   "item.bertieprogression.null_blaze_cube": "Null Blaze Cube",
   "item.bertieprogression.innocent_soul": "Innocent Soul",
+  "item.bertieprogression.pocket_watch": "Pocket Watch",
   "message.bertieprogression.table_unlicensed": "You do not know how to use a crafting grid yet - consume a Crafting License first.",
   "message.bertieprogression.crafting_licensed": "The crafting language settles into your hands. The 3x3 grid is yours.",
   "message.bertieprogression.already_licensed": "You already hold the crafting language.",

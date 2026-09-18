@@ -26,7 +26,7 @@ public final class PocketTravelHandler {
                 || !player.level().getBlockState(player.getOnPos()).is(ModBlocks.POCKET_DIMENSION)) {
             return;
         }
-        // This entry route does not use OpenKeyMessage, so it needs no essence unlock.
+        // This entry route does not use OpenKeyMessage, so it needs no watch unlock.
         // Upstream owns the cooldown, animation, plot allocation and saved return position.
         // Crouching is this block's trigger, not upstream's request to take nearby mobs along.
         player.setShiftKeyDown(false);

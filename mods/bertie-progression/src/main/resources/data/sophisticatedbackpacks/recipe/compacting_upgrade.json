@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:compacting_upgrade"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:piston"
+    },
+    "b": {
+      "tag": "c:ingots/iron"
+    },
+    "c": {
+      "tag": "c:nuggets/iron"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "e": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "f": {
+      "item": "irons_spellbooks:uncommon_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:compacting_upgrade"
+  }
+}

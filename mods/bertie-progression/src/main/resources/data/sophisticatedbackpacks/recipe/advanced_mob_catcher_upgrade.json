@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:advanced_mob_catcher_upgrade"
+    }
+  ],
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "malum:mnemonic_fragment"
+    },
+    "b": {
+      "item": "apothic_enchanting:ender_lead"
+    },
+    "c": {
+      "item": "elemental_metals:soul_infused_iron_ingot"
+    },
+    "d": {
+      "item": "sophisticatedbackpacks:mob_catcher_upgrade"
+    },
+    "e": {
+      "item": "elemental_metals:arcane_infused_iron_ingot"
+    },
+    "f": {
+      "item": "irons_spellbooks:legendary_ink"
+    }
+  },
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sophisticatedbackpacks:advanced_mob_catcher_upgrade"
+  }
+}
