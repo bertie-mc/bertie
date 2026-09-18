@@ -1,15 +1,27 @@
 {
   "essences": {
-    "aureal": 20,
-    "blood": 400,
-    "souls": 0
+    "aureal": 40,
+    "blood": 1000,
+    "souls": 2
   },
   "forge_tier": 1,
   "inputs": [
     {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:refined_soulstone"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:arcane_ingot"
+      }
+    },
+    {
       "amount": 1,
       "ingredient": {
-        "tag": "c:ender_pearls"
+        "item": "malum:refined_brilliance"
       }
     },
     {
@@ -17,28 +29,16 @@
       "ingredient": {
         "item": "irons_spellbooks:rare_ink"
       }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "alexscaves:azure_neodymium_ingot"
-      }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "alexscaves:scarlet_neodymium_ingot"
-      }
     }
   ],
   "magic_circle": "forbidden_arcanus:create_item",
   "main_ingredient": {
-    "item": "sophisticatedbackpacks:pickup_upgrade"
+    "item": "sophisticatedbackpacks:pump_upgrade"
   },
   "result": {
     "type": "forbidden_arcanus:create_item",
     "result_item": {
-      "id": "sophisticatedbackpacks:magnet_upgrade",
+      "id": "sophisticatedbackpacks:advanced_pump_upgrade",
       "count": 1
     }
   }

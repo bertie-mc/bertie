@@ -18,22 +18,28 @@
       "tag": "c:ingots/gold"
     },
     "d": {
-      "item": "sophisticatedbackpacks:upgrade_base"
+      "item": "magitech:spike_head"
     },
     "e": {
-      "tag": "c:gems/emerald"
+      "item": "sophisticatedbackpacks:upgrade_base"
     },
     "f": {
-      "item": "irons_spellbooks:common_ink"
+      "item": "magitech:strike_head"
     },
     "g": {
+      "tag": "c:gems/emerald"
+    },
+    "h": {
+      "item": "irons_spellbooks:common_ink"
+    },
+    "i": {
       "tag": "c:gems/diamond"
     }
   },
   "pattern": [
     "abc",
-    "ada",
-    "efg"
+    "def",
+    "ghi"
   ],
   "result": {
     "count": 1,

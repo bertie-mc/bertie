@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "c:ingots/gold"
+    },
+    "B": {
+      "item": "minecraft:blackstone"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "G G",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quark:blackstone_furnace"
+  }
+}

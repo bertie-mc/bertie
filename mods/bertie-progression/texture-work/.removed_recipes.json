@@ -406,6 +406,7 @@
   "data/quark/recipe/building/crafting/compressed/golden_apple_crate.json",
   "data/quark/recipe/building/crafting/compressed/golden_carrot_crate.json",
   "data/quark/recipe/building/crafting/compressed/potato_crate.json",
+  "data/quark/recipe/building/crafting/furnaces/deepslate_furnace.json",
   "data/slavic_delight/recipe/cucumber_crate.json",
   "data/sophisticatedbackpacks/recipe/chipped/alchemy_bench_upgrade.json",
   "data/sophisticatedbackpacks/recipe/chipped/botanist_workbench_upgrade.json",

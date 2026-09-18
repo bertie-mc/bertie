@@ -3404,7 +3404,8 @@ write(f"{RIT}/pocket_dimension.json",
 # Eight pedestals is the forge's hard limit and a full ring is exactly eight, so the two routes cost
 # the same to the item.
 INK = {n: f"irons_spellbooks:{n}_ink" for n in ("common", "uncommon", "rare", "epic", "legendary")}
-UPGRADE_AUREAL, UPGRADE_BLOOD = 20, 400
+BASE_COST = {"aureal": 20, "blood": 400, "souls": 0}
+ADVANCED_COST = {"aureal": 40, "blood": 1000, "souls": 2}
 SBP = "sophisticatedbackpacks:"
 
 
@@ -3431,7 +3432,7 @@ def ring(m, t=None, b=None, l=None, r=None, c=None, lt=None, rt=None, lb=None, r
     return [out[0:3], out[3:6], out[6:9]], key
 
 
-def upgrade(name, m, **positions):
+def upgrade(name, m, cost=None, **positions):
     """The 3x3 override and the matching Tier-I ritual, from one description of the grid.
 
     The ritual is the same bill read differently: the middle becomes the main ingredient and the
@@ -3459,7 +3460,7 @@ def upgrade(name, m, **positions):
         tag = json.dumps(_spec(cell), sort_keys=True)
         bill[tag] = bill.get(tag, 0) + (spare_corners if spot == "c" else 1)
     write(f"{RIT}/backpack/{name.split('/')[-1]}.json", {
-        "essences": {"aureal": UPGRADE_AUREAL, "blood": UPGRADE_BLOOD, "souls": 0},
+        "essences": dict(cost or BASE_COST),
         "forge_tier": 1,
         "inputs": [{"amount": n, "ingredient": json.loads(tag)} for tag, n in bill.items()],
         "magic_circle": "forbidden_arcanus:create_item",
@@ -3497,7 +3498,7 @@ upgrade("filter_upgrade", BASE, t="create:filter", b=INK["common"],
         l="#c:ingots/iron", r="#c:ingots/iron", c="#c:strings")
 upgrade("pickup_upgrade", BASE, t="minecraft:hopper", b=INK["common"],
         l="#c:strings", r="#c:strings", c="#c:dusts/redstone")
-upgrade("magnet_upgrade", SBP + "pickup_upgrade", t="#c:ender_pearls", b=INK["uncommon"],
+upgrade("magnet_upgrade", SBP + "pickup_upgrade", t="#c:ender_pearls", b=INK["rare"],
         l="alexscaves:azure_neodymium_ingot", r="alexscaves:scarlet_neodymium_ingot",
         lt="alexscaves:azure_neodymium_ingot", lb="alexscaves:azure_neodymium_ingot",
         rt="alexscaves:scarlet_neodymium_ingot", rb="alexscaves:scarlet_neodymium_ingot")
@@ -3507,7 +3508,7 @@ upgrade("alchemy_upgrade", BASE, t=AWKWARD, b=INK["rare"],
         l="minecraft:ghast_tear", r="minecraft:fermented_spider_eye", c="minecraft:blaze_powder")
 upgrade("jukebox_upgrade", BASE, t="minecraft:jukebox", b=INK["common"],
         l="#minecraft:music_discs", r="#minecraft:music_discs", c="#c:dusts/redstone")
-upgrade("tool_swapper_upgrade", BASE, t="#c:ender_pearls", b=INK["uncommon"],
+upgrade("tool_swapper_upgrade", BASE, t="#c:ender_pearls", b=INK["common"],
         l="#c:dusts/redstone", r="#c:dusts/redstone",
         lt="minecraft:wooden_sword", rt="minecraft:wooden_axe",
         lb="minecraft:wooden_pickaxe", rb="minecraft:wooden_shovel")
@@ -3516,7 +3517,7 @@ upgrade("mob_catcher_upgrade", BASE, t="apothic_enchanting:flimsy_ender_lead", b
 upgrade("pump_upgrade", BASE, t="minecraft:bucket", b=INK["uncommon"],
         l="minecraft:piston", r="minecraft:sticky_piston", c="#c:dusts/redstone")
 upgrade("chipped/carpenters_table_upgrade", BASE, t="chipped:alchemy_bench", b=INK["common"],
-        l="minecraft:shears", r="minecraft:pointed_dripstone",
+        l="minecraft:shears", r="minecraft:brush",
         lt="minecraft:oak_log", rt="minecraft:stone",
         lb="minecraft:glass", rb="minecraft:dirt")
 upgrade("sawmill/sawmill_upgrade", BASE, t="sawmill:sawmill", b=INK["common"],
@@ -3524,7 +3525,7 @@ upgrade("sawmill/sawmill_upgrade", BASE, t="sawmill:sawmill", b=INK["common"],
 upgrade("stonecutter_upgrade", BASE, t="minecraft:stonecutter", b=INK["common"],
         l="magitech:spike_head", r="magitech:spike_head", c="minecraft:stone")
 upgrade("smithing_upgrade", BASE, t="minecraft:smithing_table", b=INK["common"],
-        l="#c:ingots/iron", r="#c:ingots/iron",
+        l="magitech:spike_head", r="magitech:strike_head",
         lt="#c:ingots/iron", rt="#c:ingots/gold",
         rb="#c:gems/diamond", lb="#c:gems/emerald")
 upgrade("anvil_upgrade", BASE, t="#c:gems/diamond", b=INK["epic"],
@@ -3538,7 +3539,10 @@ upgrade("feeding_upgrade", BASE, t="minecraft:enchanted_golden_apple", b=INK["ep
 upgrade("tank_upgrade", BASE, t="create:fluid_tank", b=INK["rare"],
         l="create:fluid_tank", r="create:fluid_tank", c="create:fluid_tank")
 upgrade("everlasting_upgrade", BASE, t="#c:nether_stars", b=INK["legendary"],
-        l="malum:refined_brilliance", r="malum:refined_brilliance", c="#c:ingots/netherite")
+        l="#c:ingots/netherite", r="#c:ingots/netherite", c="malum:refined_brilliance")
+upgrade("xp_pump_upgrade", BASE, t="minecraft:experience_bottle", b=INK["epic"],
+        l="create:experience_nugget", r="create:experience_nugget",
+        c="forbidden_arcanus:xpetrified_orb")
 upgrade("inception_upgrade", BASE, t="#c:nether_stars", b=INK["legendary"],
         l="anvilcraft:resonator_core", r="anvilcraft:resonator_core", c=BASE)
 
@@ -3553,8 +3557,9 @@ write("data/sophisticatedbackpacks/recipe/stack_upgrade_tier_1.json", {
     "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
                              "itemRegistryName": SBP + "stack_upgrade_tier_1"}],
     "type": "minecraft:crafting_shaped", "category": "misc",
-    "key": {"I": {"tag": "c:storage_blocks/iron"}, "C": {"tag": "c:storage_blocks/copper"}},
-    "pattern": ["III", "ICI", "III"],
+    "key": {"I": {"tag": "c:storage_blocks/iron"},
+            "S": {"item": SBP + "stack_upgrade_starter_tier"}},
+    "pattern": ["III", "ISI", "III"],
     "result": {"count": 1, "id": SBP + "stack_upgrade_tier_1"},
 })
 write("data/sophisticatedbackpacks/recipe/stack_upgrade_tier_1_from_starter.json", DISABLED)
@@ -3582,11 +3587,13 @@ ADVANCED = {
     "advanced_deposit_upgrade": ("deposit_upgrade", "uncommon", None),
     "advanced_feeding_upgrade": ("feeding_upgrade", "legendary", None),
     "advanced_jukebox_upgrade": ("jukebox_upgrade", "uncommon", None),
-    "advanced_magnet_upgrade_from_basic": ("magnet_upgrade", "rare", "advanced_magnet_upgrade"),
+    "advanced_filter_upgrade": ("filter_upgrade", "uncommon", None),
+    "advanced_magnet_upgrade_from_basic": ("magnet_upgrade", "epic", "advanced_magnet_upgrade"),
+    "advanced_pump_upgrade": ("pump_upgrade", "rare", None),
     "advanced_pickup_upgrade": ("pickup_upgrade", "uncommon", None),
     "advanced_refill_upgrade": ("refill_upgrade", "uncommon", None),
     "advanced_restock_upgrade": ("restock_upgrade", "uncommon", None),
-    "advanced_tool_swapper_upgrade": ("tool_swapper_upgrade", "rare", None),
+    "advanced_tool_swapper_upgrade": ("tool_swapper_upgrade", "uncommon", None),
     "advanced_void_upgrade": ("void_upgrade", "uncommon", None),
     "auto_smelting_upgrade": ("smelting_upgrade", "uncommon", None),
     "auto_smoking_upgrade": ("smoking_upgrade", "uncommon", None),
@@ -3597,16 +3604,29 @@ for _name, (_from, _ink, _result) in ADVANCED.items():
     _pattern, _key = ring(SBP + _from, t=_top, b=INK[_ink],
                           l="irons_spellbooks:arcane_ingot", r="irons_spellbooks:arcane_ingot",
                           c="malum:refined_soulstone")
+    _id = SBP + (_result or _name)
     write(f"data/sophisticatedbackpacks/recipe/{_name}.json", {
         "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
-                                 "itemRegistryName": SBP + (_result or _name)}],
+                                 "itemRegistryName": _id}],
         "type": "sophisticatedcore:upgrade_next_tier", "category": "misc",
         "key": _key, "pattern": _pattern,
-        "result": {"count": 1, "id": SBP + (_result or _name)},
+        "result": {"count": 1, "id": _id},
+    })
+    write(f"{RIT}/backpack/{_result or _name}.json", {
+        "essences": dict(ADVANCED_COST),
+        "forge_tier": 1,
+        "inputs": [{"amount": 4, "ingredient": {"item": "malum:refined_soulstone"}},
+                   {"amount": 2, "ingredient": {"item": "irons_spellbooks:arcane_ingot"}},
+                   {"amount": 1, "ingredient": _spec(_top)},
+                   {"amount": 1, "ingredient": {"item": INK[_ink]}}],
+        "magic_circle": "forbidden_arcanus:create_item",
+        "main_ingredient": {"item": SBP + _from},
+        "result": {"type": "forbidden_arcanus:create_item",
+                   "result_item": {"id": _id, "count": 1}},
     })
 
 # The Advanced Magnet built straight from an Advanced Pickup pays what the basic pair pays.
-_pattern, _key = ring(SBP + "advanced_pickup_upgrade", t="#c:ender_pearls", b=INK["uncommon"],
+_pattern, _key = ring(SBP + "advanced_pickup_upgrade", t="#c:ender_pearls", b=INK["epic"],
                       l="alexscaves:azure_neodymium_ingot", lt="alexscaves:azure_neodymium_ingot",
                       lb="alexscaves:azure_neodymium_ingot",
                       r="alexscaves:scarlet_neodymium_ingot", rt="alexscaves:scarlet_neodymium_ingot",
@@ -3621,13 +3641,30 @@ write("data/sophisticatedbackpacks/recipe/advanced_magnet_upgrade.json", {
 
 _pattern, _key = ring(SBP + "mob_catcher_upgrade", t="apothic_enchanting:ender_lead",
                       b=INK["legendary"], l="elemental_metals:soul_infused_iron_ingot",
-                      r="elemental_metals:arcane_infused_iron_ingot", c="malum:mnemonic_fragment")
+                      r="elemental_metals:arcane_infused_iron_ingot",
+                      lt="malum:refined_brilliance", lb="malum:refined_brilliance",
+                      c="malum:mnemonic_fragment")
 write("data/sophisticatedbackpacks/recipe/advanced_mob_catcher_upgrade.json", {
     "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
                              "itemRegistryName": SBP + "advanced_mob_catcher_upgrade"}],
     "type": "sophisticatedcore:upgrade_next_tier", "category": "misc",
     "key": _key, "pattern": _pattern,
     "result": {"count": 1, "id": SBP + "advanced_mob_catcher_upgrade"},
+})
+# Its ring is eight already, so the ritual is the same bill on the pedestals.
+write(f"{RIT}/backpack/advanced_mob_catcher_upgrade.json", {
+    "essences": dict(ADVANCED_COST),
+    "forge_tier": 1,
+    "inputs": [{"amount": 2, "ingredient": {"item": "malum:refined_brilliance"}},
+               {"amount": 2, "ingredient": {"item": "malum:mnemonic_fragment"}},
+               {"amount": 1, "ingredient": {"item": "apothic_enchanting:ender_lead"}},
+               {"amount": 1, "ingredient": {"item": "elemental_metals:soul_infused_iron_ingot"}},
+               {"amount": 1, "ingredient": {"item": "elemental_metals:arcane_infused_iron_ingot"}},
+               {"amount": 1, "ingredient": {"item": INK["legendary"]}}],
+    "magic_circle": "forbidden_arcanus:create_item",
+    "main_ingredient": {"item": SBP + "mob_catcher_upgrade"},
+    "result": {"type": "forbidden_arcanus:create_item",
+               "result_item": {"id": SBP + "advanced_mob_catcher_upgrade", "count": 1}},
 })
 
 # --- Quark's second route to the furnaces --------------------------------------------------------
@@ -3636,17 +3673,28 @@ write("data/sophisticatedbackpacks/recipe/advanced_mob_catcher_upgrade.json", {
 # The furnace copy goes; the two variants keep their block in the middle so both stay upgradable,
 # around the same frame the pack's own Blast Furnace uses.
 write("data/quark/recipe/building/crafting/furnaces/mixed_furnace.json", DISABLED)
-for _stone in ("deepslate", "blackstone"):
-    write(f"data/quark/recipe/building/crafting/furnaces/{_stone}_blast_furnace.json", {
-        "neoforge:conditions": conds("quark", "elemental_metals"),
-        "type": "minecraft:crafting_shaped", "category": "misc",
-        "key": {"F": {"item": "elemental_metals:fire_infused_iron_ingot"},
-                "U": {"item": f"quark:{_stone}_furnace"},
-                "S": {"item": "minecraft:smooth_stone"},
-                "M": {"item": "minecraft:magma_block"}},
-        "pattern": ["FFF", "FUF", "SMS"],
-        "result": {"count": 1, "id": "minecraft:blast_furnace"},
-    })
+# The Deepslate Furnace leaves the pack, so its Blast Furnace route goes with it. The Blackstone
+# one stays and keeps its own block in the middle of the pack's own frame, so it is still worth
+# building one to upgrade.
+write("data/quark/recipe/building/crafting/furnaces/deepslate_blast_furnace.json", DISABLED)
+write("data/quark/recipe/building/crafting/furnaces/blackstone_blast_furnace.json", {
+    "neoforge:conditions": conds("quark", "elemental_metals"),
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"F": {"item": "elemental_metals:fire_infused_iron_ingot"},
+            "U": {"item": "quark:blackstone_furnace"},
+            "S": {"item": "minecraft:smooth_stone"},
+            "M": {"item": "minecraft:magma_block"}},
+    "pattern": ["FFF", "FUF", "SMS"],
+    "result": {"count": 1, "id": "minecraft:blast_furnace"},
+})
+# And the Blackstone Furnace itself is a cap of gold over a course of blackstone.
+write("data/quark/recipe/building/crafting/furnaces/blackstone_furnace.json", {
+    "neoforge:conditions": conds("quark"),
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"G": {"tag": "c:ingots/gold"}, "B": {"item": "minecraft:blackstone"}},
+    "pattern": ["GGG", "G G", "BBB"],
+    "result": {"count": 1, "id": "quark:blackstone_furnace"},
+})
 
 # --- Warp Flux is crafted, not reaped ------------------------------------------------------------
 # Malum hands out 2-4 Warp Flux for reaping an Enderman, through its own reaping registry rather

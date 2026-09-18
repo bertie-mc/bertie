@@ -21,13 +21,13 @@
     {
       "amount": 2,
       "ingredient": {
-        "item": "malum:refined_brilliance"
+        "tag": "c:ingots/netherite"
       }
     },
     {
       "amount": 4,
       "ingredient": {
-        "tag": "c:ingots/netherite"
+        "item": "malum:refined_brilliance"
       }
     }
   ],

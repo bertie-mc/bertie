@@ -1,6 +1,0 @@
-{
-  "neoforge:conditions": [ { "type": "neoforge:false" } ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [ { "item": "minecraft:stick" } ],
-  "result": { "id": "minecraft:stick" }
-}

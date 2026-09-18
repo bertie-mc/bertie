@@ -9,43 +9,25 @@
     {
       "amount": 1,
       "ingredient": {
-        "tag": "c:ender_pearls"
+        "item": "minecraft:experience_bottle"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "irons_spellbooks:common_ink"
+        "item": "irons_spellbooks:epic_ink"
       }
     },
     {
       "amount": 2,
       "ingredient": {
-        "tag": "c:dusts/redstone"
+        "item": "create:experience_nugget"
       }
     },
     {
-      "amount": 1,
+      "amount": 4,
       "ingredient": {
-        "item": "minecraft:wooden_sword"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "minecraft:wooden_axe"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "minecraft:wooden_pickaxe"
-      }
-    },
-    {
-      "amount": 1,
-      "ingredient": {
-        "item": "minecraft:wooden_shovel"
+        "item": "forbidden_arcanus:xpetrified_orb"
       }
     }
   ],
@@ -56,7 +38,7 @@
   "result": {
     "type": "forbidden_arcanus:create_item",
     "result_item": {
-      "id": "sophisticatedbackpacks:tool_swapper_upgrade",
+      "id": "sophisticatedbackpacks:xp_pump_upgrade",
       "count": 1
     }
   }

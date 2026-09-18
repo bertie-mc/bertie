@@ -69,6 +69,7 @@
   "data/magitech/loot_table/blocks/sulfur_block.json",
   "data/pastel/loot_table/chests/city_below/seed_vault_side_room.json",
   "data/pastel/loot_table/chests/city_below/terrace_house_upper.json",
+  "data/quark/loot_table/blocks/deepslate_furnace.json",
   "data/stellaris/loot_table/blocks/deepslate_steel_ore.json",
   "data/stellaris/loot_table/blocks/moon_steel_ore.json",
   "data/stellaris/loot_table/blocks/raw_steel_block.json",

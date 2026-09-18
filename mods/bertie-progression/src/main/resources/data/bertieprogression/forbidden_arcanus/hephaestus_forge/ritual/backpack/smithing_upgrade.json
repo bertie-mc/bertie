@@ -19,7 +19,19 @@
       }
     },
     {
-      "amount": 3,
+      "amount": 1,
+      "ingredient": {
+        "item": "magitech:spike_head"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "magitech:strike_head"
+      }
+    },
+    {
+      "amount": 1,
       "ingredient": {
         "tag": "c:ingots/iron"
       }

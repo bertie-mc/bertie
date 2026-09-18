@@ -11,13 +11,13 @@
     "I": {
       "tag": "c:storage_blocks/iron"
     },
-    "C": {
-      "tag": "c:storage_blocks/copper"
+    "S": {
+      "item": "sophisticatedbackpacks:stack_upgrade_starter_tier"
     }
   },
   "pattern": [
     "III",
-    "ICI",
+    "ISI",
     "III"
   ],
   "result": {

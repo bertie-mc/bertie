@@ -2,26 +2,26 @@
   "neoforge:conditions": [
     {
       "type": "sophisticatedcore:item_enabled",
-      "itemRegistryName": "sophisticatedbackpacks:everlasting_upgrade"
+      "itemRegistryName": "sophisticatedbackpacks:xp_pump_upgrade"
     }
   ],
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
     "a": {
-      "item": "malum:refined_brilliance"
+      "item": "forbidden_arcanus:xpetrified_orb"
     },
     "b": {
-      "tag": "c:nether_stars"
+      "item": "minecraft:experience_bottle"
     },
     "c": {
-      "tag": "c:ingots/netherite"
+      "item": "create:experience_nugget"
     },
     "d": {
       "item": "sophisticatedbackpacks:upgrade_base"
     },
     "e": {
-      "item": "irons_spellbooks:legendary_ink"
+      "item": "irons_spellbooks:epic_ink"
     }
   },
   "pattern": [
@@ -31,6 +31,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "sophisticatedbackpacks:everlasting_upgrade"
+    "id": "sophisticatedbackpacks:xp_pump_upgrade"
   }
 }
