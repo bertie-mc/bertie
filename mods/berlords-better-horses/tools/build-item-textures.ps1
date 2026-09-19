@@ -69,6 +69,7 @@ Save-Sprite 'passenger_saddle' @(
     '................'
 ) @{ O='#42281f'; H='#e9b477'; L='#ba7b47'; M='#86502e'; C='#56c4c2'; T='#267e89'; G='#e4bc5a' }
 
+# Show only the near-side stirrup; two visible stirrups identify the passenger saddle.
 Save-Sprite 'warrior_saddle' @(
     '................',
     '..OO............',
@@ -81,10 +82,10 @@ Save-Sprite 'warrior_saddle' @(
     '..ORRIMMMIRRRO..',
     '...ORMMMOMRRO...',
     '....OMMO.MOO....',
-    '....OMO..M......',
-    '....HIH..HIH....',
-    '....I.O..I.O....',
-    '....III..III....',
+    '....OMO.........',
+    '....HIH.........',
+    '....I.O.........',
+    '....III.........',
     '................'
 ) @{ O='#321e24'; H='#f0eded'; I='#a5aab2'; S='#656875'; L='#b94a51'; M='#73333f'; R='#992c39' }
 
