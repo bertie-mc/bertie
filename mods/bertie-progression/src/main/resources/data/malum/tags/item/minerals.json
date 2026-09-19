@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "malum:raw_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:crushed_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:refined_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:raw_brilliance",
+      "required": false
+    },
+    {
+      "id": "malum:crushed_brilliance",
+      "required": false
+    },
+    {
+      "id": "malum:refined_brilliance",
+      "required": false
+    },
+    {
+      "id": "malum:blazing_quartz",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold",
+      "required": false
+    },
+    {
+      "id": "malum:cthonic_gold_fragment",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "cognition:cognitive_crystal",
+      "required": false
+    },
+    "#c:gems/fluorite",
+    {
+      "id": "powah:crystal_blazing",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_niotic",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_spirited",
+      "required": false
+    },
+    {
+      "id": "powah:crystal_nitro",
+      "required": false
+    },
+    {
+      "id": "antarchy:tigers_eye",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:topaz",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ruby",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sapphire",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:amber",
+      "required": false
+    },
+    "#c:gems/pulsating_crystal",
+    "#c:gems/vibrant_crystal",
+    "#c:gems/ender_crystal",
+    "#c:gems/enticing_crystal",
+    "#c:gems/weather_crystal",
+    "#c:gems/prescient_crystal",
+    {
+      "id": "enigmaticlegacyplus:sacred_crystal",
+      "required": false
+    },
+    "#c:gems/arcane_crystal",
+    "#c:gems/corrupted_arcane_crystal",
+    {
+      "id": "hazennstuff:solar_core",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:rose_quartz",
+      "required": false
+    },
+    "#c:gems/tourmaline",
+    "#c:gems/mana_charged_fluorite",
+    "#c:gems/citrine",
+    "#c:gems/redstone_crystal",
+    "#c:gems/sulfur",
+    {
+      "id": "malum:refined_soulstone",
+      "required": false
+    },
+    {
+      "id": "malum:blazing_quartz",
+      "required": false
+    },
+    {
+      "id": "malum:raw_brilliance",
+      "required": false
+    },
+    {
+      "id": "oritech:fluxite",
+      "required": false
+    },
+    "#c:gems/carminite",
+    "#c:gems/amethyst",
+    "#c:gems/diamond",
+    "#c:gems/emerald",
+    "#c:gems/lapis",
+    "#c:gems/prismarine",
+    "#c:gems/quartz",
+    {
+      "id": "#forge:gems",
+      "required": false
+    }
+  ]
+}

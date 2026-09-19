@@ -2891,11 +2891,11 @@ write("data/avaritia/recipe/nether_crafting_table.json",
 # --- The late Pastel chain: CMY pedestal, rose quartz, failing, netherite. ---
 # c:gems/quartz collected three things: NeoForge's Nether Quartz, Malum's Natural Quartz and Haze
 # n Stuff's Rose Quartz. Rose Quartz is a crafted material, not a quartz, and having it in there
-# made every "any quartz" recipe accept it. The tag is replaced with the two real ones.
+# made every "any quartz" recipe accept it. Natural Quartz has since merged into the vanilla gem,
+# so one real quartz is left.
 write("data/c/tags/item/gems/quartz.json",
       {"replace": True,
        "values": ["minecraft:quartz",
-                  {"id": "malum:natural_quartz", "required": False},
                   {"id": "#forge:gems/quartz", "required": False}]})
 
 # --- Silicon: one path, not three. Refined Storage smelted quartz straight into silicon and
