@@ -26,9 +26,7 @@ public final class SpecialSaddleItem extends SaddleItem {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
-        if (kind.equals("warrior"))
-            lines.add(Component.translatable(
-                    "tooltip.betterhorses.warrior", Math.round(BetterHorses.DAMAGE_TRANSFER.get() * 100)));
-        else lines.add(Component.translatable("tooltip.betterhorses." + kind));
+        EquipmentTooltips.begin(lines);
+        EquipmentTooltips.stat(lines, kind);
     }
 }

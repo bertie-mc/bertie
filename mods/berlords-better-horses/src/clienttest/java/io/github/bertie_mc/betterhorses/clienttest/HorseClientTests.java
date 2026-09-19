@@ -89,7 +89,7 @@ public final class HorseClientTests {
                 world.server().runOnServer(server -> {
                     var player = server.getPlayerList().getPlayers().getFirst();
                     Horse horse = (Horse) player.serverLevel().getEntity(horseId);
-                    horse.setBodyArmorItem(saddle.equals("warrior") ? BetterHorses.ARMOR.toStack() : ItemStack.EMPTY);
+                    horse.setBodyArmorItem(ItemStack.EMPTY);
                     ((HorseEquipment) horse).betterhorses$shoes().setItem(0, BetterHorses.NETHERITE.toStack());
                     ((HorseEquipment) horse)
                             .betterhorses$saddleInventory()
@@ -166,7 +166,7 @@ public final class HorseClientTests {
                                 net.minecraft.world.item.Item.TooltipContext.of(client.level),
                                 client.player,
                                 net.minecraft.world.item.TooltipFlag.NORMAL);
-                if (tooltip.stream().noneMatch(line -> line.getString().equals("Extra space, perfect jump")))
+                if (tooltip.stream().noneMatch(line -> line.getString().equals("Extra Space, Perfect Jump")))
                     throw new AssertionError("Traveller tooltip missing");
             });
             context.takeScreenshot("traveller-inventory");
@@ -357,6 +357,21 @@ public final class HorseClientTests {
                     "ride into deep water",
                     client -> client.player.getVehicle() instanceof Horse horse && horse.isInWater(),
                     600);
+            context.waitFor(
+                    "still-water chunks ahead of the horse",
+                    client -> {
+                        var horse = client.player.getVehicle();
+                        if (horse == null) return false;
+                        var start = net.minecraft.core.BlockPos.containing(horse.getX(), origin[1] - 1, horse.getZ());
+                        for (int ahead = 0; ahead < 18; ahead++) {
+                            var pos = start.offset(0, 0, ahead);
+                            var fluid = client.level.getFluidState(pos);
+                            if (!fluid.isSource()
+                                    || fluid.getFlow(client.level, pos).horizontalDistanceSqr() > 0.0001) return false;
+                        }
+                        return true;
+                    },
+                    200);
             context.waitTicks(35);
             double waterStart =
                     context.computeOnClient(client -> client.player.getVehicle().getZ());
@@ -364,8 +379,14 @@ public final class HorseClientTests {
             double swimSpeed =
                     context.computeOnClient(client -> client.player.getVehicle().getZ()) - waterStart;
             if (Math.abs(swimSpeed / drySpeed - 0.5) > 0.025)
-                throw new AssertionError(
-                        "Swimming ratio=" + swimSpeed / drySpeed + ", dry=" + drySpeed + ", swim=" + swimSpeed);
+                throw new AssertionError("Swimming ratio=" + swimSpeed / drySpeed + ", dry=" + drySpeed + ", swim="
+                        + swimSpeed
+                        + context.computeOnClient(client -> {
+                            var horse = client.player.getVehicle();
+                            var pos = horse.blockPosition();
+                            return ", position=" + horse.position() + ", current="
+                                    + client.level.getFluidState(pos).getFlow(client.level, pos);
+                        }));
             context.runOnClient(client -> {
                 Horse horse = (Horse) client.player.getVehicle();
                 if (!horse.isInWater()
@@ -425,6 +446,132 @@ public final class HorseClientTests {
         }
     }
 
+    @ClientTest
+    public static void equipmentTooltipsUseCrouchBinding(ClientTestContext context) {
+        var originalKey = context.computeOnClient(client -> client.options.keyShift.getKey());
+        try (var world = context.worldBuilder().create()) {
+            context.waitFor("tooltip world", client -> client.player != null && client.level != null);
+            context.runOnClient(client -> {
+                client.options.keyShift.setKey(com.mojang.blaze3d.platform.InputConstants.Type.KEYSYM.getOrCreate(
+                        org.lwjgl.glfw.GLFW.GLFW_KEY_Z));
+                net.minecraft.client.KeyMapping.resetMapping();
+                for (var item : new net.minecraft.world.item.Item[] {
+                    BetterHorses.IRON.get(),
+                    BetterHorses.GOLD.get(),
+                    BetterHorses.DIAMOND.get(),
+                    BetterHorses.NETHERITE.get(),
+                    BetterHorses.PASSENGER.get(),
+                    BetterHorses.WARRIOR.get(),
+                    BetterHorses.WANDERER.get()
+                }) {
+                    var lines = tooltip(client, new ItemStack(item));
+                    assertTooltipLine(lines, "When Equipped:", net.minecraft.ChatFormatting.GRAY);
+                    if (item instanceof HorseshoeItem shoes) {
+                        assertTooltipLine(
+                                lines, "+" + shoes.tier.speed + " Speed (Blocks/s)", net.minecraft.ChatFormatting.BLUE);
+                        if (shoes.tier.waterWalking())
+                            assertTooltipLine(lines, "Waterwalking", net.minecraft.ChatFormatting.GOLD);
+                        if (shoes.tier.lavaWalking())
+                            assertTooltipLine(lines, "Lavawalking", net.minecraft.ChatFormatting.GOLD);
+                    } else if (item == BetterHorses.PASSENGER.get())
+                        assertTooltipLine(lines, "2 Seats", net.minecraft.ChatFormatting.BLUE);
+                    else if (item == BetterHorses.WARRIOR.get())
+                        assertTooltipLine(lines, "Lifelink", net.minecraft.ChatFormatting.BLUE);
+                    else assertTooltipLine(lines, "Extra Space, Perfect Jump", net.minecraft.ChatFormatting.BLUE);
+                    if (item instanceof SpecialSaddleItem
+                            && !lines.getFirst().getString().contains("'s Saddle"))
+                        throw new AssertionError("Saddle name needs possessive");
+                }
+            });
+            context.setScreen(() -> new TooltipScreen(BetterHorses.NETHERITE.toStack()));
+            context.takeScreenshot("horseshoes-tooltip");
+            context.input().holdShift();
+            context.runOnClient(client -> {
+                var lines = tooltip(client, BetterHorses.NETHERITE.toStack());
+                if (lines.stream().anyMatch(line -> line.getString().contains("Allows walking")))
+                    throw new AssertionError("Default Shift must not expand a rebound crouch key");
+                if (lines.stream().noneMatch(line -> line.getString().equals("Hold Z for Details")))
+                    throw new AssertionError("Hint must show rebound crouch key");
+            });
+            context.input().releaseShift();
+            context.input().holdKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.runOnClient(client -> {
+                String detail = String.join(
+                        " ",
+                        tooltip(client, BetterHorses.NETHERITE.toStack()).stream()
+                                .map(Component::getString)
+                                .toList());
+                if (!detail.contains("Allows walking on water and powdered snow.")
+                        || !detail.contains("Allows walking on lava. Protects from magma and campfires."))
+                    throw new AssertionError("Crouch must expand both walking abilities: " + detail);
+            });
+            context.takeScreenshot("horseshoes-tooltip-expanded");
+            context.setScreen(() -> new TooltipScreen(BetterHorses.WARRIOR.toStack()));
+            context.runOnClient(client -> {
+                String detail = String.join(
+                        " ",
+                        tooltip(client, BetterHorses.WARRIOR.toStack()).stream()
+                                .map(Component::getString)
+                                .toList());
+                if (!detail.contains("Transfers " + Math.round(BetterHorses.DAMAGE_TRANSFER.get() * 100)
+                        + "% of horse damage to the rider."))
+                    throw new AssertionError("Lifelink must explain configured damage transfer");
+            });
+            context.takeScreenshot("warrior-tooltip-expanded");
+            context.input().releaseKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.takeScreenshot("warrior-tooltip");
+            context.setScreen(() -> new TooltipScreen(BetterHorses.WANDERER.toStack()));
+            context.takeScreenshot("traveller-tooltip");
+            context.setScreen(() -> new TooltipScreen(BetterHorses.PASSENGER.toStack()));
+            context.takeScreenshot("passenger-tooltip");
+            context.setScreen(() -> null);
+        } finally {
+            context.input().releaseShift();
+            context.input().releaseKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.runOnClient(client -> {
+                client.options.keyShift.setKey(originalKey);
+                net.minecraft.client.KeyMapping.resetMapping();
+            });
+        }
+    }
+
+    private static java.util.List<Component> tooltip(net.minecraft.client.Minecraft client, ItemStack stack) {
+        return stack.getTooltipLines(
+                net.minecraft.world.item.Item.TooltipContext.of(client.level),
+                client.player,
+                net.minecraft.world.item.TooltipFlag.NORMAL);
+    }
+
+    private static void assertTooltipLine(
+            java.util.List<Component> lines, String text, net.minecraft.ChatFormatting color) {
+        if (lines.stream()
+                .noneMatch(line -> line.getString().equals(text)
+                        && line.getStyle().getColor() != null
+                        && line.getStyle().getColor().getValue() == color.getColor()))
+            throw new AssertionError("Missing styled tooltip line: " + text);
+    }
+
+    private static final class TooltipScreen extends Screen {
+        private final ItemStack stack;
+
+        TooltipScreen(ItemStack stack) {
+            super(Component.literal("Equipment Tooltip"));
+            this.stack = stack;
+        }
+
+        @Override
+        public void render(GuiGraphics graphics, int mouseX, int mouseY, float partial) {
+            graphics.fill(0, 0, width, height, 0xff20252b);
+            graphics.renderItem(stack, 28, 30);
+            graphics.renderTooltip(font, stack, 60, 40);
+        }
+
+        @Override
+        public boolean isPauseScreen() {
+            return false;
+        }
+    }
+
     private static final class PreviewScreen extends Screen {
         private final Horse horse;
 
@@ -437,17 +584,37 @@ public final class HorseClientTests {
         public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
             graphics.fill(0, 0, width, height, 0xff20252b);
             graphics.drawCenteredString(font, title, width / 2, 12, 0xffffff);
-            InventoryScreen.renderEntityInInventoryFollowsMouse(
-                    graphics,
-                    width / 2 - 140,
-                    30,
-                    width / 2 + 140,
-                    height - 10,
-                    85,
-                    0.4F,
-                    width / 2 + 220,
-                    height / 2,
-                    horse);
+            renderHorse(graphics, width / 4, 120);
+            renderHorse(graphics, width * 3 / 4, 240);
+        }
+
+        private void renderHorse(GuiGraphics graphics, int x, float yaw) {
+            float body = horse.yBodyRot,
+                    rotation = horse.getYRot(),
+                    pitch = horse.getXRot(),
+                    head = horse.yHeadRot,
+                    oldHead = horse.yHeadRotO;
+            try {
+                horse.yBodyRot = yaw;
+                horse.setYRot(yaw);
+                horse.setXRot(0);
+                horse.yHeadRot = horse.yHeadRotO = yaw;
+                InventoryScreen.renderEntityInInventory(
+                        graphics,
+                        x,
+                        height / 2.0F + 5,
+                        68,
+                        new org.joml.Vector3f(0, horse.getBbHeight() / 2 + 0.3F, 0),
+                        new org.joml.Quaternionf().rotateZ((float) Math.PI).rotateX(0.18F),
+                        new org.joml.Quaternionf().rotateX(0.18F),
+                        horse);
+            } finally {
+                horse.yBodyRot = body;
+                horse.setYRot(rotation);
+                horse.setXRot(pitch);
+                horse.yHeadRot = head;
+                horse.yHeadRotO = oldHead;
+            }
         }
 
         @Override

@@ -137,10 +137,13 @@ public final class HorseGameTests {
         Player player = helper.makeMockPlayer(GameType.SURVIVAL);
         ItemStack effigy = BetterHorses.EFFIGY.toStack();
         player.startRiding(horse);
+        horse.setLeashedTo(player, true);
         helper.assertTrue(
                 BetterHorses.EFFIGY.get().interactLivingEntity(effigy, player, horse, InteractionHand.MAIN_HAND)
                         == InteractionResult.FAIL,
                 "cannot capture riders");
+        helper.assertTrue(horse.isLeashed(), "failed capture must leave the lead attached");
+        horse.dropLeash(false, false);
         player.stopRiding();
         BetterHorses.EFFIGY.get().interactLivingEntity(effigy, player, horse, InteractionHand.MAIN_HAND);
         helper.runAfterDelay(2, () -> {
@@ -151,6 +154,71 @@ public final class HorseGameTests {
                     "cannot release into solid block");
             helper.assertTrue(HorseEffigyItem.occupied(effigy), "failed release retains horse");
             helper.succeed();
+        });
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 160)
+    public static void effigyCapturesHorseOnPlayerLead(GameTestHelper helper) {
+        captureLeashedHorse(helper, false);
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 160)
+    public static void effigyCapturesHorseOnFenceLead(GameTestHelper helper) {
+        captureLeashedHorse(helper, true);
+    }
+
+    private static void captureLeashedHorse(GameTestHelper helper, boolean fence) {
+        Horse horse = horse(helper);
+        UUID id = horse.getUUID();
+        Player player = helper.makeMockPlayer(GameType.SURVIVAL);
+        Entity holder = player;
+        if (fence) {
+            helper.setBlock(new BlockPos(3, 1, 3), Blocks.OAK_FENCE);
+            holder = net.minecraft.world.entity.decoration.LeashFenceKnotEntity.getOrCreateKnot(
+                    helper.getLevel(), helper.absolutePos(new BlockPos(3, 1, 3)));
+        }
+        horse.setLeashedTo(holder, true);
+        ItemStack effigy = BetterHorses.EFFIGY.toStack();
+        helper.assertTrue(horse.isLeashed(), "fixture must be leashed");
+        helper.assertTrue(
+                BetterHorses.EFFIGY
+                        .get()
+                        .interactLivingEntity(effigy, player, horse, InteractionHand.MAIN_HAND)
+                        .consumesAction(),
+                "leashed capture succeeds");
+        helper.assertTrue(
+                horse.isRemoved() && !horse.isLeashed() && HorseEffigyItem.occupied(effigy),
+                "horse captured and leash detached");
+        var saved = effigy.get(net.minecraft.core.component.DataComponents.CUSTOM_DATA)
+                .copyTag()
+                .getCompound(HorseEffigyItem.HORSE_KEY);
+        helper.assertFalse(saved.contains("leash"), "stored horse has no stale leash link");
+        helper.runAfterDelay(2, () -> {
+            helper.assertTrue(
+                    HorseEffigyItem.release(
+                            effigy,
+                            helper.getLevel(),
+                            Vec3.atBottomCenterOf(helper.absolutePos(new BlockPos(5, 2, 5))),
+                            0),
+                    "leashed horse releases normally");
+            Horse restored = (Horse) helper.getLevel().getEntity(id);
+            helper.assertTrue(
+                    restored != null && !restored.isLeashed() && restored.getLeashData() == null,
+                    "release never reattaches old lead");
+            helper.runAfterDelay(110, () -> {
+                int leads = helper
+                        .getLevel()
+                        .getEntitiesOfClass(
+                                net.minecraft.world.entity.item.ItemEntity.class,
+                                horse.getBoundingBox().inflate(6))
+                        .stream()
+                        .filter(item -> item.getItem().is(Items.LEAD))
+                        .mapToInt(item -> item.getItem().getCount())
+                        .sum();
+                helper.assertTrue(
+                        leads == 1, "capture returns exactly one lead, with no delayed duplication: " + leads);
+                helper.succeed();
+            });
         });
     }
 

@@ -1,4 +1,4 @@
-# Original pixel layouts for the vanilla 64x64 horse UV and our saddle geometry.
+# Original pixel layouts for the vanilla 64x64 horse hoof UV and equipment slot.
 Add-Type -AssemblyName System.Drawing
 $assetRoot = Join-Path $PSScriptRoot '../src/main/resources/assets/betterhorses/textures'
 New-Item -ItemType Directory -Force -Path (Join-Path $assetRoot 'entity'),(Join-Path $assetRoot 'gui') | Out-Null
@@ -26,35 +26,7 @@ foreach ($kind in $metals.Keys) {
     $bitmap.Save((Join-Path $assetRoot "entity/horseshoes_$kind.png"))
     $bitmap.Dispose()
 }
-foreach ($kind in @('passenger','warrior','wanderer')) {
-    $bitmap = New-Object System.Drawing.Bitmap 64,64
-    $leather = if ($kind -eq 'warrior') { '#652f30' } else { '#97633f' }
-    $cloth = switch ($kind) { 'passenger' { '#2c747a' }; 'warrior' { '#853b3b' }; 'wanderer' { '#4b6543' } }
-    Paint-Rect $bitmap 0 0 64 64 $leather
-    # Saddle top at (9,0), front/back and sides across y=9..17.
-    Paint-Rect $bitmap 0 9 38 9 $cloth
-    Paint-Rect $bitmap 0 9 38 1 '#d5b47a'
-    Paint-Rect $bitmap 0 17 38 1 '#c29a60'
-    Paint-Rect $bitmap 9 0 10 9 '#b47c4e'
-    Paint-Rect $bitmap 10 1 8 7 $leather
-    foreach ($x in @(3,4,32,33)) { Paint-Rect $bitmap $x 10 1 7 '#593c2b' }
-    foreach ($x in @(3,32)) { Paint-Rect $bitmap $x 14 2 2 '#d6b86e' }
-    if ($kind -eq 'warrior') {
-        Paint-Rect $bitmap 0 32 32 8 '#5f6369'
-        Paint-Rect $bitmap 2 32 10 2 '#bec2c4'
-        Paint-Rect $bitmap 0 36 24 1 '#93949a'
-    } elseif ($kind -eq 'wanderer') {
-        Paint-Rect $bitmap 0 32 24 16 '#795036'
-        Paint-Rect $bitmap 0 39 20 1 '#c09860'
-        Paint-Rect $bitmap 9 39 1 6 '#3d3026'
-        Paint-Rect $bitmap 9 41 2 2 '#dbbb70'
-        Paint-Rect $bitmap 32 32 30 8 '#c3af7d'
-        Paint-Rect $bitmap 38 32 1 8 '#6c5039'
-        Paint-Rect $bitmap 46 32 1 8 '#6c5039'
-    }
-    $bitmap.Save((Join-Path $assetRoot "entity/${kind}_saddle.png"))
-    $bitmap.Dispose()
-}
+# The shared generated saddle atlas is maintained separately; see saddle-materials.md.
 # Netherite armor is an unmodified upstream MIT asset; see NOTICE.
 # Do not regenerate it or alter its horse UV layout.
 $slot = New-Object System.Drawing.Bitmap 16,16

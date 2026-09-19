@@ -17,9 +17,9 @@ public final class HorseEquipmentLayer extends RenderLayer<Horse, HorseModel<Hor
     private final HorseModel<Horse> shoes =
             new HorseModel<>(LayerDefinition.create(HorseModel.createBodyMesh(new CubeDeformation(0.006F)), 64, 64)
                     .bakeRoot());
-    private final SaddleModel passenger = new SaddleModel("passenger");
-    private final SaddleModel warrior = new SaddleModel("warrior");
-    private final SaddleModel wanderer = new SaddleModel("wanderer");
+    private final HorseSaddleModel passenger = new HorseSaddleModel("passenger");
+    private final HorseSaddleModel warrior = new HorseSaddleModel("warrior");
+    private final HorseSaddleModel wanderer = new HorseSaddleModel("wanderer");
 
     public HorseEquipmentLayer(RenderLayerParent<Horse, HorseModel<Horse>> parent) {
         super(parent);
@@ -48,7 +48,7 @@ public final class HorseEquipmentLayer extends RenderLayer<Horse, HorseModel<Hor
                     OverlayTexture.NO_OVERLAY);
         }
         ItemStack saddle = equipment.betterhorses$syncedSaddle();
-        SaddleModel model = saddle.is(BetterHorses.PASSENGER.get())
+        HorseSaddleModel model = saddle.is(BetterHorses.PASSENGER.get())
                 ? passenger
                 : saddle.is(BetterHorses.WARRIOR.get())
                         ? warrior
@@ -57,8 +57,8 @@ public final class HorseEquipmentLayer extends RenderLayer<Horse, HorseModel<Hor
             animate(model, horse, swing, amount, partial, age, yaw, pitch);
             model.renderSaddle(
                     pose,
-                    buffers.getBuffer(RenderType.entityCutoutNoCull(
-                            BetterHorses.id("textures/entity/" + model.kind + "_saddle.png"))),
+                    buffers.getBuffer(
+                            RenderType.entityCutoutNoCull(BetterHorses.id("textures/entity/saddle_materials.png"))),
                     light);
         }
     }
@@ -75,43 +75,5 @@ public final class HorseEquipmentLayer extends RenderLayer<Horse, HorseModel<Hor
         getParentModel().copyPropertiesTo(model);
         model.prepareMobModel(horse, swing, amount, partial);
         model.setupAnim(horse, swing, amount, age, yaw, pitch);
-    }
-
-    private static final class SaddleModel extends HorseModel<Horse> {
-        private final String kind;
-
-        SaddleModel(String kind) {
-            super(mesh(kind));
-            this.kind = kind;
-        }
-
-        private static ModelPart mesh(String kind) {
-            MeshDefinition mesh = HorseModel.createBodyMesh(CubeDeformation.NONE);
-            PartDefinition body = mesh.getRoot().getChild("body");
-            CubeListBuilder cubes =
-                    CubeListBuilder.create().texOffs(0, 0).addBox(-5, -8, -9, 10, 9, 9, new CubeDeformation(0.56F));
-            if (kind.equals("passenger")) cubes.texOffs(0, 0).addBox(-5, -8, 0, 10, 3, 7, new CubeDeformation(0.56F));
-            if (kind.equals("warrior"))
-                cubes.texOffs(0, 32)
-                        .addBox(-5, -10, -9, 10, 2, 2)
-                        .texOffs(0, 32)
-                        .addBox(-5, -10, -1, 10, 2, 2);
-            if (kind.equals("wanderer"))
-                cubes.texOffs(0, 32)
-                        .addBox(-8, -6, -3, 3, 6, 7)
-                        .texOffs(0, 32)
-                        .addBox(5, -6, -3, 3, 6, 7)
-                        .texOffs(32, 32)
-                        .addBox(-5, -10, 2, 10, 3, 3);
-            body.addOrReplaceChild("saddle", cubes, PartPose.ZERO);
-            return LayerDefinition.create(mesh, 64, 64).bakeRoot();
-        }
-
-        void renderSaddle(PoseStack pose, VertexConsumer vertices, int light) {
-            pose.pushPose();
-            body.translateAndRotate(pose);
-            body.getChild("saddle").render(pose, vertices, light, OverlayTexture.NO_OVERLAY);
-            pose.popPose();
-        }
     }
 }

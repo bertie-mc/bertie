@@ -28,8 +28,8 @@ Lava protection applies at the walkable surface. Surface walking does not raise 
 horse that is already submerged.
 
 Waterwalking also lets diamond- and netherite-shod horses stand and land on powder
-snow. Iron and gold shoes do not prevent sinking. The item tooltip keeps this
-behavior implicit in waterwalking.
+snow. Iron and gold shoes do not prevent sinking. Hold the configured crouch key
+over the item to expand the Waterwalking explanation.
 
 Each material colors the hooves' bottom pixel row. The two middle pixels on the
 rear face remain the horse's original grey, leaving the horseshoe open at the back.
@@ -41,27 +41,39 @@ It does not make the horse fireproof. See [NOTICE](NOTICE) for attribution and l
 
 ## Saddles
 
-- **Passenger saddle:** two players can ride together; the first rider steers.
+- **Passenger's Saddle:** two players can ride together; the first rider steers.
   The second player mounts by using the occupied horse. Dismounting the front
   rider transfers control to the remaining rider. The saddle cannot be removed
   through its menu while both seats are occupied.
-- **Warrior saddle:** redirects 80% of damage after the horse's armor reductions
+- **Warrior's Saddle:** redirects 80% of damage after the horse's armor reductions
   to the controlling rider. The rider's normal defenses apply. If the rider rejects
   the damage (for example during invulnerability), the horse retains that damage.
   Without a rider, the horse takes normal damage.
-- **Traveller saddle:** adds fifteen storage slots in a 5x3 grid to the right of
+- **Traveller's Saddle:** adds fifteen storage slots in a 5x3 grid to the right of
   the horse preview. Cargo saves with the horse, survives effigy capture, and
   drops on death. Empty the storage before removing or replacing the saddle.
   Equipping it shows the slots immediately in an already-open horse inventory.
-  Its green cloth, saddlebags, and bedroll are unchanged.
+  Its model has green canvas, leather saddlebags with clasps, and a strapped bedroll.
   Pressing the bound jump key immediately triggers the horse's maximum jump,
   including any horseshoe bonus. Holding the key does not repeat the jump;
   release and press again after landing. Other saddles retain vanilla charging.
-  The item description is "Extra space, perfect jump". Its existing
+  The item description is "Extra Space, Perfect Jump". Its existing
   `betterhorses:wanderer_saddle` registry ID remains unchanged for saved worlds.
 
 Server setting `warriorDamageTransfer` accepts 0.0–1.0 in the world's
 `serverconfig/betterhorses-server.toml`. The default is `0.8`.
+
+Shoes and saddles use a grey "When Equipped:" heading and Minecraft-blue stats.
+Saddle descriptions are "2 Seats", "Lifelink", and "Extra Space, Perfect Jump".
+Waterwalking and Lavawalking are gold. Holding the configured crouch key expands
+those abilities and Lifelink; the hint follows key rebinding, including in inventory
+screens. Lifelink's explanation uses the configured damage-transfer percentage.
+
+Saddle models share a textured leather/cloth/metal atlas, with separate raised seats,
+straps, buckles, and hollow metal stirrups. The passenger model has two seats and two
+stirrups per side; warrior and traveller models have one per side. A continuous
+blanket replaces the overlapping passenger sections. The vanilla body saddle is
+hidden for custom saddles, while its bridle and reins remain visible.
 
 ## Riding improvements
 
@@ -92,7 +104,9 @@ effigy becomes empty and can be reused. Capture and release operate on the serve
 and preserve the horse's UUID, owner, name, variant, health, attributes, and all
 equipment. Creative mode also moves the horse rather than leaving a copy behind.
 
-Occupied, leashed, and riding horses cannot be stored. A blocked release leaves
+Leashed horses can be stored: capture detaches the leash and drops one lead at the
+horse. Release does not reconnect it to the previous player or fence. Occupied and
+riding horses cannot be stored. A blocked release leaves
 the horse safely in the effigy. A matching UUID already loaded in any dimension
 also prevents release.
 
@@ -130,16 +144,21 @@ Item sprites are cleaned up on a native 16x16 grid. All horseshoes share one
 shape with five-pixel arms and single-pixel nail holes. The saddle sprites use
 solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 `tools/build-item-textures.ps1` regenerates these original item sprites;
-`tools/build-entity-textures.ps1` regenerates the original hoof and saddle atlases.
-Neither script changes the imported armor or the horse effigy.
+`tools/build-entity-textures.ps1` regenerates the original hoof and empty-slot textures.
+The new 128x128 shared saddle atlas was made with built-in image generation and
+sampled onto its native grid; its material regions and prompt are documented in
+`tools/saddle-materials.md`. Neither script changes the saddle atlas, imported armor,
+or horse effigy.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,
 fluid and powder-snow landings, cargo persistence/drop/transfer, full jump power,
-saddled wandering/rearing, and mounted mining with potion modifiers.
+saddled wandering/rearing, mounted mining with potion modifiers, and player/fence
+lead capture with a delayed check against lead duplication.
 Client tests exercise synchronized storage and key-press/release jump behavior,
 measure swimming against dry-ground speed and ride out onto shore, check first-person
-fading and item models, and capture the inventory and all three rendered saddles. Screenshots are in
+fading and item models, verify tooltip colors and rebound crouch expansion, and
+capture the inventory and both sides of all three rendered saddles. Screenshots are in
 `build/test-diagnostics/clienttest`.
 
 Mixins target AbstractHorse equipment persistence, menus, rider positioning and

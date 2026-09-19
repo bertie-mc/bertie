@@ -34,16 +34,15 @@ public final class HorseEffigyItem extends Item {
     public InteractionResult interactLivingEntity(
             ItemStack stack, Player player, LivingEntity target, InteractionHand hand) {
         if (!(target instanceof Horse horse)) return InteractionResult.PASS;
-        if (occupied(stack)
-                || !horse.isTamed()
-                || !horse.isAlive()
-                || horse.isVehicle()
-                || horse.isPassenger()
-                || horse.isLeashed()) return InteractionResult.FAIL;
+        if (occupied(stack) || !horse.isTamed() || !horse.isAlive() || horse.isVehicle() || horse.isPassenger())
+            return InteractionResult.FAIL;
         if (!player.level().isClientSide) {
             CompoundTag data = new CompoundTag();
             if (!horse.save(data)) return InteractionResult.FAIL;
+            // Return the lead on capture; never restore a stale holder or fence link on release.
+            data.remove("leash");
             CustomData.update(DataComponents.CUSTOM_DATA, stack, tag -> tag.put(HORSE_KEY, data));
+            horse.dropLeash(true, true);
             horse.discard();
         }
         return InteractionResult.sidedSuccess(player.level().isClientSide);
