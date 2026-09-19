@@ -55,38 +55,8 @@ foreach ($kind in @('passenger','warrior','wanderer')) {
     $bitmap.Save((Join-Path $assetRoot "entity/${kind}_saddle.png"))
     $bitmap.Dispose()
 }
-$armor = New-Object System.Drawing.Bitmap 64,64
-function Armor-Panel($x,$y,$w,$h) {
-    Paint-Rect $armor $x $y $w $h '#40383e'
-    Paint-Rect $armor $x $y $w 1 '#9c8a91'
-    if ($h -gt 2) {
-        Paint-Rect $armor $x ($y+1) $w 1 '#6a5b64'
-        Paint-Rect $armor $x ($y+$h-1) $w 1 '#29252a'
-    }
-    for ($xx=$x+3; $xx -lt ($x+$w-1); $xx+=5) { Paint-Rect $armor $xx ($y+$h-2) 1 1 '#8b7b77' }
-}
-# Body/croup, neck, chamfron and muzzle; no copied vanilla texture pixels.
-Armor-Panel 22 32 10 22
-Armor-Panel 0 54 22 9
-Armor-Panel 22 54 10 9
-Armor-Panel 32 54 22 9
-Armor-Panel 54 54 10 9
-Armor-Panel 0 42 7 11
-Armor-Panel 7 42 4 11
-Armor-Panel 11 42 7 11
-Armor-Panel 18 42 4 11
-Armor-Panel 7 13 6 7
-Armor-Panel 0 20 7 5
-Armor-Panel 7 20 6 5
-Armor-Panel 13 20 7 5
-Armor-Panel 20 20 6 5
-foreach ($x in @(2,3,16,17)) { $armor.SetPixel($x,21,[System.Drawing.Color]::Transparent); $armor.SetPixel($x,22,[System.Drawing.Color]::Transparent) }
-Armor-Panel 5 25 4 5
-Armor-Panel 0 30 5 4
-Armor-Panel 5 30 4 4
-Armor-Panel 9 30 5 4
-$armor.Save((Join-Path $assetRoot 'entity/horse_armor_netherite.png'))
-$armor.Dispose()
+# Netherite armor is an unmodified upstream MIT asset; see NOTICE.
+# Do not regenerate it or alter its horse UV layout.
 $slot = New-Object System.Drawing.Bitmap 16,16
 Paint-Rect $slot 3 3 2 7 '#606060'
 Paint-Rect $slot 11 3 2 7 '#606060'

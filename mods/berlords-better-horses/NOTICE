@@ -1,12 +1,57 @@
-The public-domain dedication in UNLICENSE applies to this component's original
-code, generated item artwork, and original entity texture layouts.
+The public-domain dedication in UNLICENSE applies only to this component's
+original code, original/generated artwork, and original texture layouts. It does
+not apply to the third-party netherite horse armor assets described below.
 
-Item artwork was generated using OpenAI ImageGen and exported to native 16x16
-PNG. The horse effigy reuses the wooden chess knight created for this project.
-Generation prompts are recorded in art-prompts.json. Entity atlases are authored
-for Minecraft's horse UV layout; tools/build-entity-textures.ps1 regenerates them.
+Original item artwork was developed using OpenAI ImageGen. Horseshoes and saddles
+were cleaned up on a native 16x16 pixel grid; tools/build-item-textures.ps1 records
+and regenerates their final pixels. The horse effigy reuses the wooden chess
+knight created for this project. Prompts are recorded in art-prompts.json.
+tools/build-entity-textures.ps1 regenerates the original hoof and saddle atlases.
 
 Minecraft, NeoForge, and their models, APIs, and runtime resources remain the
-property of their respective authors. No Minecraft or NeoForge source, texture,
-model, or binary is redistributed by this component. The renderer references
-Minecraft's models and GUI resources at runtime.
+property of their respective authors. The renderer references Minecraft's horse
+models and GUI resources at runtime; those models are not bundled here.
+
+Third-party artwork: Simple Netherite Horse Armor by JerryLu086
+Project: https://modrinth.com/mod/simple-netherite-horse-armor
+Source: https://github.com/JerryLu086/Netherite-Horse-Armor
+Branch: 1.21.1-neoforge
+Commit: 8f23ddc56df6efb1567b93abce93176ec392e63b
+License: https://github.com/JerryLu086/Netherite-Horse-Armor/blob/8f23ddc56df6efb1567b93abce93176ec392e63b/LICENSE
+
+The following PNGs are copied without modification from that commit:
+
+- assets/betterhorses/textures/item/netherite_horse_armor.png
+  Source: src/main/resources/assets/netherite_horse_armor/textures/item/netherite_horse_armor.png
+  SHA-256: 79c5b7153285ab76cc6b06bb2371ada7843fb28fd34a313ed0b0ecfde3927e4b
+- assets/betterhorses/textures/entity/horse_armor_netherite.png
+  Source: src/main/resources/assets/netherite_horse_armor/textures/entity/horse/armor/horse_armor_netherite.png
+  SHA-256: 3ffae31cf195518d4b62edc7e471972d1ce9af4b985988deb694016a9131fcc8
+
+The item model uses the same minecraft:item/generated parent and layer0 layout
+as upstream, with the texture reference changed to the betterhorses namespace.
+No custom horse model is needed: upstream also uses Minecraft's horse armor mesh.
+
+The upstream license, retained verbatim:
+
+MIT License
+
+Copyright (c) 2025 JerryLu086
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

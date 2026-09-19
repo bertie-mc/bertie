@@ -30,9 +30,10 @@ horse that is already submerged.
 Each material colors the hooves' bottom pixel row. The two middle pixels on the
 rear face remain the horse's original grey, leaving the horseshoe open at the back.
 
-Netherite horse armor uses vanilla netherite armor attributes and an original
-64x64 atlas fitted to the vanilla horse armor model. It does not make the horse
-fireproof.
+Netherite horse armor uses vanilla netherite armor attributes and JerryLu086's
+MIT-licensed Simple Netherite Horse Armor textures. The imported 16x16 item and
+64x64 horse atlas are unchanged and use Minecraft's existing horse armor model.
+It does not make the horse fireproof. See [NOTICE](NOTICE) for attribution and license.
 
 ## Saddles
 
@@ -84,6 +85,13 @@ gradle :mods:berlords-better-horses:build
 gradle :mods:berlords-better-horses:runGameTests
 gradle :mods:berlords-better-horses:runClientTests
 ```
+
+Item sprites are cleaned up on a native 16x16 grid. All horseshoes share one
+shape with five-pixel arms and single-pixel nail holes. The saddle sprites use
+solid leather, cloth, and metal clusters with no downscaling or partial alpha.
+`tools/build-item-textures.ps1` regenerates these original item sprites;
+`tools/build-entity-textures.ps1` regenerates the original hoof and saddle atlases.
+Neither script changes the imported armor or the horse effigy.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,

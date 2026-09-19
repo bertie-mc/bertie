@@ -1,5 +1,5 @@
 {
-  "mode": "Built-in ImageGen; nearest-neighbor export to 16x16. Entity UV maps are authored specifically for the vanilla horse mesh and custom saddle geometry.",
+  "mode": "Built-in ImageGen concepts, followed by native 16x16 pixel cleanup in tools/build-item-textures.ps1. Imported netherite horse armor replaces its original concept; provenance and MIT license are in NOTICE. Original entity UV maps are authored for the vanilla horse mesh and custom saddle geometry.",
   "prompts": [
     {
       "name": "iron_horseshoes",
@@ -33,5 +33,13 @@
       "name": "netherite_horse_armor",
       "prompt": "Minecraft inventory item texture. Netherite HORSE armor inventory item in the vanilla Minecraft horse armor silhouette: small horse head and neck attached to an armored body cape, NO LEGS. Dark brown charcoal plates with purple grey edges and restrained light steel highlights. Single isolated object, entirely visible, centered with one pixel padding. Strict 16x16 logical pixel grid, chunky hand-made pixel art, few large flat color clusters, dark outline and top left highlight, vanilla Minecraft style. Transparent alpha background, no ground shadow, no writing, no scene, no border, no fine details, no antialiasing. Enlarge the 16x16 sprite with nearest-neighbor for display."
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-09-19",
+    "horseshoe": "Clean up the iron horseshoe as a symmetrical U with exactly five-pixel-wide arms and two single-pixel dark nail holes per arm. Keep silver metal, transparent background, flat pixel clusters. The four material variants use one exact shared grid and recoloring only.",
+    "passenger": "Clean up the passenger saddle preserving tan brown leather, cyan blanket, brass stirrups and the double-seat idea. Simplify to connected flat clusters readable at 16x16.",
+    "warrior": "Clean up the warrior saddle preserving oxblood leather, red blanket, silver reinforcement and stirrups. Simplify to connected flat clusters readable at 16x16.",
+    "wanderer": "Clean up the wanderer saddle preserving brown leather, green blanket, side satchel and tan bedroll. Simplify to connected flat clusters readable at 16x16.",
+    "cleanup": "Transcribe and simplify ImageGen concepts onto the explicit 16x16 grids in tools/build-item-textures.ps1. Use solid opaque palette entries and transparent empty cells, without resampling."
+  }
 }
