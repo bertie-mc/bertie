@@ -42,10 +42,6 @@ public final class HorseSaddleModel extends HorseModel<Horse> {
             // Steel-edged pommel and high cantle frame the dark leather seat.
             box(saddle, "pommel_steel", 0, 96, -3.5F, -12.0F, -11.2F, 7, 0.7F, 1.4F);
             box(saddle, "cantle_steel", 0, 96, -4.5F, -12.3F, -0.1F, 9, 0.7F, 1.4F);
-            for (int side : new int[] {-1, 1}) {
-                box(saddle, "reinforced_flap_" + side, 4, 1, side < 0 ? -6.05F : 5.85F, -7.2F, -9, 0.2F, 4.7F, 6);
-                box(saddle, "flap_rivet_" + side, 70, 98, side < 0 ? -6.2F : 6.05F, -5.8F, -6.4F, 0.15F, 1, 1);
-            }
         } else {
             seat(saddle, "traveller", -11.6F, 9, false);
             stirrups(saddle, "traveller", -7, false);
