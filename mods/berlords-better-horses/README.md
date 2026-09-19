@@ -65,13 +65,20 @@ also prevents release.
 
 ## Crafting
 
-- Effigy: planks in ` PP / PS / PPP`, with a stick at `S`.
-- Iron, gold, diamond shoes: seven corresponding materials in a U shape.
-- Netherite shoes/horse armor: smith the diamond version with a netherite ingot
-  and netherite upgrade template.
-- Passenger saddle: three leather over a saddle, cyan wool below.
-- Warrior saddle: iron at the upper corners and either side of a saddle, red wool below.
-- Wanderer saddle: green wool above a saddle, leather either side, chest below.
+Each slash separates a crafting-table row; `.` means an empty slot. Each recipe
+produces one item.
+
+| Item | Top / middle / bottom | Ingredients |
+| --- | --- | --- |
+| Horse effigy | `PP. / .P. / PPP` | `P`: any planks, including mixed wood types |
+| Iron, gold, diamond horseshoes | `M.M / M.M / .M.` | `M`: iron ingot, gold ingot, or diamond, respectively |
+| Passenger (double) saddle | `S.S / CCC / H.H` | `S`: saddle; `C`: cyan wool; `H`: tripwire hook |
+| Warrior saddle | `DSW / RRR / HAH` | `D`: shield; `S`: saddle; `W`: iron sword; `R`: red wool; `H`: tripwire hook; `A`: iron horse armor |
+| Wanderer (travel) saddle | `.SC / GGG / H.H` | `S`: saddle; `C`: chest; `G`: green wool; `H`: tripwire hook |
+
+Netherite horseshoes and horse armor use the smithing table: netherite upgrade
+template + diamond version + netherite ingot. The effigy recipe unlocks when the
+player obtains planks.
 
 All items also appear in the Tools & Utilities creative tab. Item IDs use the
 `betterhorses` namespace.
