@@ -418,6 +418,75 @@ public final class HorseGameTests {
         helper.succeed();
     }
 
+    @GameTest(template = "empty")
+    public static void saddledHorseStopsWanderingAndMountedRearing(GameTestHelper helper) {
+        Horse horse = horse(helper);
+        horse.setNoAi(false);
+        horse.setPos(horse.getX(), helper.absolutePos(new BlockPos(1, 1, 1)).getY(), horse.getZ());
+        var wander = new net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal(horse, 0.7);
+        HorseEquipment equipment = (HorseEquipment) horse;
+        equipment.betterhorses$saddleInventory().setItem(0, new ItemStack(Items.SADDLE));
+        wander.trigger();
+        helper.assertTrue(
+                !wander.canUse() && !wander.canContinueToUse(), "saddle prevents starting and continuing a stroll");
+        equipment.betterhorses$saddleInventory().setItem(0, ItemStack.EMPTY);
+        boolean foundWalk = false;
+        for (int i = 0; i < 50; i++) {
+            wander.trigger();
+            foundWalk |= wander.canUse();
+        }
+        helper.assertTrue(foundWalk, "removing saddle restores wandering");
+        equipment.betterhorses$saddleInventory().setItem(0, BetterHorses.PASSENGER.toStack());
+        Player rider = helper.makeMockPlayer(GameType.SURVIVAL);
+        Player passenger = helper.makeMockPlayer(GameType.SURVIVAL);
+        rider.startRiding(horse);
+        passenger.startRiding(horse);
+        horse.standIfPossible();
+        helper.assertTrue(!horse.isStanding(), "tamed saddled mount must not rear and block steering");
+        helper.assertTrue(
+                !horse.dismountsUnderwater() && horse.getPassengers().size() == 2,
+                "both riders can stay mounted in water");
+        helper.assertTrue(
+                !new net.minecraft.world.entity.ai.goal.RunAroundLikeCrazyGoal(horse, 1.2).canUse(),
+                "vanilla bucking already excludes tamed horses");
+        horse.ejectPassengers();
+        horse.standIfPossible();
+        helper.assertTrue(horse.isStanding(), "unridden horse keeps normal rearing");
+        horse.setTamed(false);
+        rider.startRiding(horse);
+        horse.setStanding(false);
+        horse.standIfPossible();
+        helper.assertTrue(horse.isStanding(), "untamed taming behavior is preserved");
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void mountedMiningKeepsToolAndEffectModifiers(GameTestHelper helper) {
+        Horse horse = horse(helper);
+        ((HorseEquipment) horse).betterhorses$saddleInventory().setItem(0, BetterHorses.PASSENGER.toStack());
+        Player rider = helper.makeMockPlayer(GameType.SURVIVAL);
+        rider.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.DIAMOND_PICKAXE));
+        var stone = Blocks.STONE.defaultBlockState();
+        rider.setOnGround(true);
+        float normal = rider.getDigSpeed(stone, null);
+        rider.setOnGround(false);
+        helper.assertTrue(
+                Math.abs(rider.getDigSpeed(stone, null) - normal / 5) < 0.001,
+                "airborne unmounted penalty stays vanilla");
+        rider.startRiding(horse);
+        helper.assertTrue(
+                Math.abs(rider.getDigSpeed(stone, null) - normal) < 0.001, "mounted mining matches standing mining");
+        rider.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                net.minecraft.world.effect.MobEffects.DIG_SLOWDOWN, 200));
+        helper.assertTrue(
+                Math.abs(rider.getDigSpeed(stone, null) - normal * 0.3) < 0.001, "mining fatigue still applies");
+        rider.stopRiding();
+        helper.assertTrue(
+                Math.abs(rider.getDigSpeed(stone, null) - normal * 0.3 / 5) < 0.001,
+                "dismount restores airborne penalty");
+        helper.succeed();
+    }
+
     private static class JumpHorse extends Horse {
         JumpHorse(net.minecraft.world.level.Level level) {
             super(EntityType.HORSE, level);

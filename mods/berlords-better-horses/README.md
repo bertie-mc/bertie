@@ -63,6 +63,27 @@ It does not make the horse fireproof. See [NOTICE](NOTICE) for attribution and l
 Server setting `warriorDamageTransfer` accepts 0.0–1.0 in the world's
 `serverconfig/betterhorses-server.toml`. The default is `0.8`.
 
+## Riding improvements
+
+Ridden horses swim at 50% of their normal dry-ground movement speed, including
+horseshoe and movement-attribute bonuses. They float without holding jump and keep
+their riders in deep water. Waterwalking shoes still allow full-speed surface
+walking. Swimming does not grant underwater breathing or lava protection.
+
+A saddle stops idle wandering, including an already-started stroll. Horses can
+still follow a lead or tempting food, breed, and flee danger. Removing the saddle
+restores wandering. While ridden, tamed saddled horses no longer rear up and
+interrupt steering. Vanilla 1.21.1 already limits actual rider-ejecting bucking to
+untamed horses; taming and jumping behavior remain intact.
+
+In first person, your horse and its equipment smoothly fade as you look down,
+starting at 25 degrees and becoming invisible at 70 degrees. Looking forward,
+third-person views, other horses, and inventory previews remain opaque.
+
+Mining while riding a horse uses the same speed as standing on the ground. Tool,
+enchantment, potion, and underwater mining modifiers still apply; the usual
+airborne penalty returns when dismounted.
+
 ## Horse effigy
 
 Use an empty effigy on a living tamed horse to store it. A filled effigy glints;
@@ -114,14 +135,18 @@ Neither script changes the imported armor or the horse effigy.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,
-fluid and powder-snow landings, cargo persistence/drop/transfer, and full jump power.
+fluid and powder-snow landings, cargo persistence/drop/transfer, full jump power,
+saddled wandering/rearing, and mounted mining with potion modifiers.
 Client tests exercise synchronized storage and key-press/release jump behavior,
-check item models, and capture the inventory and all three rendered saddles. Screenshots are in
+measure swimming against dry-ground speed and ride out onto shore, check first-person
+fading and item models, and capture the inventory and all three rendered saddles. Screenshots are in
 `build/test-diagnostics/clienttest`.
 
 Mixins target AbstractHorse equipment persistence, menus, rider positioning and
 jump velocity, surface-only lava contact, and powder-snow collision. A client-only
 input mixin replaces charging with an immediate jump for the traveller saddle.
+Additional hooks cover mounted water movement, idle strolling, rearing, the mining
+airborne check, and client render buffers for horse/equipment transparency.
 Client rendering adds a layer to
 the existing horse renderer. Other mods that replace horse menus/renderers or
 change rider physics should be checked together with this mod.

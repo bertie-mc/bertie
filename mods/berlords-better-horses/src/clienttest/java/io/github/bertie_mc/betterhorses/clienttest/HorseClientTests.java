@@ -273,6 +273,158 @@ public final class HorseClientTests {
         }
     }
 
+    @ClientTest
+    public static void mountedSwimmingAndFirstPersonFade(ClientTestContext context) {
+        try (var world = context.worldBuilder().create()) {
+            context.waitFor(
+                    "local chunk",
+                    client -> client.player != null && client.level.hasChunkAt(client.player.blockPosition()));
+            int[] origin = world.server().computeOnServer(server -> {
+                var player = server.getPlayerList().getPlayers().getFirst();
+                var level = player.serverLevel();
+                var base = player.blockPosition();
+                for (int x = -4; x <= 4; x++)
+                    for (int z = -5; z <= 145; z++)
+                        for (int y = -4; y <= 5; y++) {
+                            var block = y == -4 || y < 0 && (z < 55 || z >= 125)
+                                    ? net.minecraft.world.level.block.Blocks.STONE
+                                    : y < 0
+                                            ? net.minecraft.world.level.block.Blocks.WATER
+                                            : net.minecraft.world.level.block.Blocks.AIR;
+                            level.setBlockAndUpdate(base.offset(x, y, z), block.defaultBlockState());
+                        }
+                Horse horse = EntityType.HORSE.create(level);
+                horse.moveTo(base.getX() + 0.5, base.getY(), base.getZ() + 0.5, 0, 0);
+                horse.setTamed(true);
+                horse.setAge(0);
+                horse.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
+                        .setBaseValue(0.225);
+                ((HorseEquipment) horse).betterhorses$saddleInventory().setItem(0, BetterHorses.WARRIOR.toStack());
+                ((HorseEquipment) horse).betterhorses$shoes().setItem(0, BetterHorses.IRON.toStack());
+                horse.setBodyArmorItem(BetterHorses.ARMOR.toStack());
+                var appearance = horse.saveWithoutId(new net.minecraft.nbt.CompoundTag());
+                appearance.putInt(
+                        "Variant",
+                        Variant.CHESTNUT.getId()
+                                | net.minecraft.world.entity.animal.horse.Markings.WHITE_DOTS.getId() << 8);
+                horse.load(appearance);
+                level.addFreshEntity(horse);
+                player.startRiding(horse);
+                return new int[] {horse.getId(), base.getY(), base.getZ()};
+            });
+            context.waitFor(
+                    "mounted on runway",
+                    client -> client.player.getVehicle() instanceof Horse horse
+                            && horse.getId() == origin[0]
+                            && horse.onGround());
+            context.runOnClient(client -> {
+                client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);
+                client.player.setYRot(0);
+                client.player.yRotO = 0;
+                client.player.setXRot(47.5F);
+                client.player.xRotO = 47.5F;
+                if (Math.abs(io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor(
+                                        (Horse) client.player.getVehicle(), 1)
+                                - 0.5F)
+                        > 0.001) throw new AssertionError("Horse should be half faded at 47.5 degrees");
+            });
+            context.waitTicks(2);
+            context.takeScreenshot("horse-fade-half");
+            context.runOnClient(client -> {
+                client.player.setXRot(75);
+                client.player.xRotO = 75;
+                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
+                        != 0) throw new AssertionError("Horse must be fully faded looking down");
+            });
+            context.waitTicks(2);
+            context.takeScreenshot("horse-fade-down");
+            context.runOnClient(client -> {
+                client.options.setCameraType(net.minecraft.client.CameraType.THIRD_PERSON_BACK);
+                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
+                        != 1) throw new AssertionError("Third person must remain opaque");
+                client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);
+                client.player.setXRot(0);
+                client.player.xRotO = 0;
+            });
+            context.input().holdKey(options -> options.keyUp);
+            context.waitTicks(30);
+            double dryStart =
+                    context.computeOnClient(client -> client.player.getVehicle().getZ());
+            context.waitTicks(20);
+            double drySpeed =
+                    context.computeOnClient(client -> client.player.getVehicle().getZ()) - dryStart;
+            context.waitFor(
+                    "ride into deep water",
+                    client -> client.player.getVehicle() instanceof Horse horse && horse.isInWater(),
+                    600);
+            context.waitTicks(35);
+            double waterStart =
+                    context.computeOnClient(client -> client.player.getVehicle().getZ());
+            context.waitTicks(20);
+            double swimSpeed =
+                    context.computeOnClient(client -> client.player.getVehicle().getZ()) - waterStart;
+            if (Math.abs(swimSpeed / drySpeed - 0.5) > 0.025)
+                throw new AssertionError(
+                        "Swimming ratio=" + swimSpeed / drySpeed + ", dry=" + drySpeed + ", swim=" + swimSpeed);
+            context.runOnClient(client -> {
+                Horse horse = (Horse) client.player.getVehicle();
+                if (!horse.isInWater()
+                        || Math.abs(horse.getY() - (origin[1] - 0.8)) > 0.2
+                        || horse.getAirSupply() < horse.getMaxAirSupply())
+                    throw new AssertionError("Mounted horse must float with its head above water: y=" + horse.getY());
+                client.options.setCameraType(net.minecraft.client.CameraType.THIRD_PERSON_BACK);
+                client.player.setXRot(15);
+            });
+            context.takeScreenshot("horse-swimming");
+            context.waitFor(
+                    "swim out onto shore",
+                    client -> client.player.getVehicle() instanceof Horse horse
+                            && horse.getZ() > origin[2] + 128
+                            && horse.onGround()
+                            && !horse.isInWater(),
+                    800);
+            context.input().releaseKey(options -> options.keyUp);
+            world.connection().waitForServerboundPackets();
+            world.server().runOnServer(server -> {
+                var player = server.getPlayerList().getPlayers().getFirst();
+                if (!(player.getVehicle() instanceof Horse horse) || horse.getId() != origin[0])
+                    throw new AssertionError("Server lost mounted rider while swimming");
+                ((HorseEquipment) horse).betterhorses$shoes().setItem(0, BetterHorses.DIAMOND.toStack());
+            });
+            context.waitFor(
+                    "waterwalking shoe sync",
+                    client -> ((HorseEquipment) client.player.getVehicle()).betterhorses$tier() == ShoeTier.DIAMOND);
+            context.waitTicks(10);
+            context.runOnClient(client -> {
+                client.player.setYRot(180);
+                client.player.yRotO = 180;
+            });
+            context.input().holdKey(options -> options.keyUp);
+            context.waitTicks(30);
+            double walkingStart =
+                    context.computeOnClient(client -> client.player.getVehicle().getZ());
+            context.waitTicks(20);
+            double walkingSpeed = walkingStart
+                    - context.computeOnClient(
+                            client -> client.player.getVehicle().getZ());
+            double expectedWalkingSpeed = drySpeed
+                    * (0.225 + 3 / HorsePhysics.BLOCKS_PER_SECOND_PER_ATTRIBUTE)
+                    / (0.225 + 1 / HorsePhysics.BLOCKS_PER_SECOND_PER_ATTRIBUTE);
+            if (Math.abs(walkingSpeed / expectedWalkingSpeed - 1) > 0.025)
+                throw new AssertionError("Waterwalking should retain full ground speed: " + walkingSpeed + ", expected "
+                        + expectedWalkingSpeed);
+            context.runOnClient(client -> {
+                Horse horse = (Horse) client.player.getVehicle();
+                if (horse.isInWater() || !horse.onGround() || Math.abs(horse.getY() - (origin[1] - 1.0 / 9)) > 0.05)
+                    throw new AssertionError("Waterwalking mount should remain on the surface: y=" + horse.getY()
+                            + ", grounded=" + horse.onGround() + ", inWater=" + horse.isInWater());
+            });
+        } finally {
+            context.input().releaseKey(options -> options.keyUp);
+            context.runOnClient(client -> client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON));
+        }
+    }
+
     private static final class PreviewScreen extends Screen {
         private final Horse horse;
 

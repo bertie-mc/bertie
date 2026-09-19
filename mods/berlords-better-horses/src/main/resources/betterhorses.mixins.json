@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "io.github.bertie_mc.betterhorses.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["HorseEquipmentMixin", "EntityLavaMixin", "HorseFluidCollisionMixin", "HorsePowderSnowMixin"],
-  "client": ["TravellerJumpMixin"],
+  "mixins": ["HorseEquipmentMixin", "EntityLavaMixin", "HorseFluidCollisionMixin", "HorsePowderSnowMixin", "HorseMobilityMixin", "HorseWanderingMixin", "HorseMiningMixin"],
+  "client": ["TravellerJumpMixin", "HorseFadeMixin", "HorseRenderTypeAccessor", "HorseRenderStateAccessor", "HorseTextureAccessor"],
   "injectors": {"defaultRequire": 1}
 }
