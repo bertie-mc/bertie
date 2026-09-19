@@ -321,20 +321,26 @@ public final class HorseClientTests {
                 client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);
                 client.player.setYRot(0);
                 client.player.yRotO = 0;
-                client.player.setXRot(47.5F);
-                client.player.xRotO = 47.5F;
+                client.player.setXRot(0);
+                client.player.xRotO = 0;
+                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
+                        != 1) throw new AssertionError("Horse must remain opaque looking straight forward");
+                client.player.setXRot(45);
+                client.player.xRotO = 45;
                 if (Math.abs(io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor(
                                         (Horse) client.player.getVehicle(), 1)
-                                - 0.5F)
-                        > 0.001) throw new AssertionError("Horse should be half faded at 47.5 degrees");
+                                - 0.55F)
+                        > 0.001) throw new AssertionError("Horse should be 55% visible at 45 degrees");
             });
             context.waitTicks(2);
             context.takeScreenshot("horse-fade-half");
             context.runOnClient(client -> {
-                client.player.setXRot(75);
-                client.player.xRotO = 75;
-                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
-                        != 0) throw new AssertionError("Horse must be fully faded looking down");
+                client.player.setXRot(90);
+                client.player.xRotO = 90;
+                if (Math.abs(io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor(
+                                        (Horse) client.player.getVehicle(), 1)
+                                - 0.1F)
+                        > 0.001) throw new AssertionError("Horse must remain 10% visible looking straight down");
             });
             context.waitTicks(2);
             context.takeScreenshot("horse-fade-down");

@@ -89,7 +89,8 @@ interrupt steering. Vanilla 1.21.1 already limits actual rider-ejecting bucking 
 untamed horses; taming and jumping behavior remain intact.
 
 In first person, your horse and its equipment smoothly fade as you look down,
-starting at 25 degrees and becoming invisible at 70 degrees. Looking forward,
+from fully visible looking straight forward to 10% visible looking straight down.
+Looking forward or up,
 third-person views, other horses, and inventory previews remain opaque.
 
 Mining while riding a horse uses the same speed as standing on the ground. Tool,
