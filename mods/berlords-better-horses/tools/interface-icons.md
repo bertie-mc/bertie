@@ -10,8 +10,9 @@ horse armor silhouette. For the empty horseshoe slot, use the iron horseshoe's
 U shape in neutral grays, with five-pixel arms and small dark nail holes, on
 transparent background. No additional decoration or smoothing.
 
-The slot silhouette matches the item exactly; `build-entity-textures.ps1` records
-its final pixels. The armor edit copies the two original pixel colors without
+The slot was subsequently simplified to a one-pixel outline and four nail pixels,
+all in vanilla's empty equipment icon color, `#7c7c7c`, with transparent interiors.
+`build-entity-textures.ps1` records its final pixels. The armor edit copies the two original pixel colors without
 altering any other position. See NOTICE for the upstream armor attribution.
 
 Final assets:

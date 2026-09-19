@@ -22,7 +22,7 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
                 0,
                 imageWidth,
                 imageHeight);
-        int previewRight = menu.hasStorage() ? 78 : 168;
+        int previewRight = 78;
         graphics.fill(leftPos + 26, topPos + 17, leftPos + previewRight, topPos + 71, 0xff171717);
         if (menu.hasStorage())
             graphics.blitSprite(

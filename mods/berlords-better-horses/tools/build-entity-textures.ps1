@@ -29,26 +29,26 @@ foreach ($kind in $metals.Keys) {
 # The shared generated saddle atlas is maintained separately; see saddle-materials.md.
 # The horse armor atlas keeps the upstream layout; the item has a two-pixel muzzle correction (NOTICE).
 $slot = New-Object System.Drawing.Bitmap 16,16
-# Native-grid cleanup of the ImageGen slot concept, using the item's exact silhouette.
+# Flat outline and four nail pixels, matching vanilla's empty saddle/armor icon color.
 $slotRows = @(
     '................',
     '..OOO......OOO..',
-    '.OHHHO....OHHHO.',
-    '.OLLMO....OLLMO.',
-    '.OLNMO....OLNMO.',
-    '.OLLMO....OLLMO.',
-    '.OLLMO....OLLMO.',
-    '.OLNMO....OLNMO.',
-    '.OLLMO....OLLMO.',
-    '.OLLMO....OLLMO.',
-    '.OMLLHO..OHLLMO.',
-    '..OMLLHOOHLLMO..',
-    '..OOMLLLLLMMOO..',
-    '...OOMMMMMMOO...',
+    '.O...O....O...O.',
+    '.O...O....O...O.',
+    '.O.N.O....O.N.O.',
+    '.O...O....O...O.',
+    '.O...O....O...O.',
+    '.O.N.O....O.N.O.',
+    '.O...O....O...O.',
+    '.O...O....O...O.',
+    '.O....O..O....O.',
+    '..O....OO....O..',
+    '..O..........O..',
+    '...O........O...',
     '....OOOOOOOO....',
     '................'
 )
-$slotPalette = @{ O='#606060'; H='#a0a0a0'; L='#727272'; M='#686868'; N='#474747' }
+$slotPalette = @{ O='#7c7c7c'; N='#7c7c7c' }
 for ($y=0; $y -lt 16; $y++) {
     for ($x=0; $x -lt 16; $x++) {
         $key=[string]$slotRows[$y][$x]

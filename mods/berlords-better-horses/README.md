@@ -10,6 +10,9 @@ armor, and horseshoe slots. Shift-click equips and removes the matching item.
 One horseshoe item equips all four hooves. Equipment saves with the horse and
 synchronizes to other players.
 
+The horse preview keeps the same size and position with every saddle or no saddle.
+The reserved area on the right stays blank unless the traveller saddle is equipped.
+
 | Horseshoes | Speed (blocks/s) | Extra safe fall | Extra jump height | Extra step height | Surface walking |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Iron | 1 | 4 | 0 | 0 | — |
@@ -153,7 +156,8 @@ solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in
 `tools/saddle-materials.md`. Neither script changes the saddle atlas, imported armor,
-or horse effigy. The empty horseshoe slot uses the same U silhouette as the item.
+or horse effigy. The empty horseshoe slot has a flat outline and four nail pixels
+in the same grey as vanilla's empty saddle and armor icons.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,

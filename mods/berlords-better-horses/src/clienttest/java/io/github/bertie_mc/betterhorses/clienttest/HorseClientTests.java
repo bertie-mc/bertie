@@ -113,6 +113,14 @@ public final class HorseClientTests {
                                             BetterHorses.id(saddle + "_saddle"))));
                 });
                 world.connection().waitForClientboundEntityUpdates(EntityType.HORSE);
+                world.server().runOnServer(server -> {
+                    var player = server.getPlayerList().getPlayers().getFirst();
+                    ((Horse) player.serverLevel().getEntity(horseId)).openCustomInventoryScreen(player);
+                });
+                context.waitForScreen(BetterHorseScreen.class);
+                context.takeScreenshot("horse-inventory-" + saddle);
+                context.runOnClient(client -> client.player.closeContainer());
+                context.waitForScreen(null);
                 context.setScreen(() -> new PreviewScreen(
                         (Horse) net.minecraft.client.Minecraft.getInstance()
                                 .level
