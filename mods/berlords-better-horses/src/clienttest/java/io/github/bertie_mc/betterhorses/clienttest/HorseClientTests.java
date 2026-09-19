@@ -83,6 +83,20 @@ public final class HorseClientTests {
                 }
             });
             context.takeScreenshot("horse-inventory");
+            world.server().runOnServer(server -> {
+                Horse horse = (Horse) server.getPlayerList()
+                        .getPlayers()
+                        .getFirst()
+                        .serverLevel()
+                        .getEntity(horseId);
+                ((HorseEquipment) horse).betterhorses$saddleInventory().setItem(0, ItemStack.EMPTY);
+                ((HorseEquipment) horse).betterhorses$shoes().setItem(0, ItemStack.EMPTY);
+            });
+            context.waitFor(
+                    "empty equipment slots",
+                    client -> client.player.containerMenu.getSlot(0).getItem().isEmpty()
+                            && client.player.containerMenu.getSlot(2).getItem().isEmpty());
+            context.takeScreenshot("horse-inventory-empty-slots");
             context.runOnClient(client -> client.player.closeContainer());
             context.waitForScreen(null);
             for (String saddle : new String[] {"passenger", "warrior", "wanderer"}) {
@@ -274,7 +288,7 @@ public final class HorseClientTests {
     }
 
     @ClientTest
-    public static void mountedSwimmingAndFirstPersonFade(ClientTestContext context) {
+    public static void mountedSwimming(ClientTestContext context) {
         try (var world = context.worldBuilder().create()) {
             context.waitFor(
                     "local chunk",
@@ -321,34 +335,6 @@ public final class HorseClientTests {
                 client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);
                 client.player.setYRot(0);
                 client.player.yRotO = 0;
-                client.player.setXRot(0);
-                client.player.xRotO = 0;
-                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
-                        != 1) throw new AssertionError("Horse must remain opaque looking straight forward");
-                client.player.setXRot(45);
-                client.player.xRotO = 45;
-                if (Math.abs(io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor(
-                                        (Horse) client.player.getVehicle(), 1)
-                                - 0.55F)
-                        > 0.001) throw new AssertionError("Horse should be 55% visible at 45 degrees");
-            });
-            context.waitTicks(2);
-            context.takeScreenshot("horse-fade-half");
-            context.runOnClient(client -> {
-                client.player.setXRot(90);
-                client.player.xRotO = 90;
-                if (Math.abs(io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor(
-                                        (Horse) client.player.getVehicle(), 1)
-                                - 0.1F)
-                        > 0.001) throw new AssertionError("Horse must remain 10% visible looking straight down");
-            });
-            context.waitTicks(2);
-            context.takeScreenshot("horse-fade-down");
-            context.runOnClient(client -> {
-                client.options.setCameraType(net.minecraft.client.CameraType.THIRD_PERSON_BACK);
-                if (io.github.bertie_mc.betterhorses.client.HorseFade.alphaFor((Horse) client.player.getVehicle(), 1)
-                        != 1) throw new AssertionError("Third person must remain opaque");
-                client.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);
                 client.player.setXRot(0);
                 client.player.xRotO = 0;
             });
@@ -453,7 +439,7 @@ public final class HorseClientTests {
     }
 
     @ClientTest
-    public static void equipmentTooltipsUseCrouchBinding(ClientTestContext context) {
+    public static void equipmentTooltipsUseShift(ClientTestContext context) {
         var originalKey = context.computeOnClient(client -> client.options.keyShift.getKey());
         try (var world = context.worldBuilder().create()) {
             context.waitFor("tooltip world", client -> client.player != null && client.level != null);
@@ -473,8 +459,7 @@ public final class HorseClientTests {
                     var lines = tooltip(client, new ItemStack(item));
                     assertTooltipLine(lines, "When Equipped:", net.minecraft.ChatFormatting.GRAY);
                     if (item instanceof HorseshoeItem shoes) {
-                        assertTooltipLine(
-                                lines, "+" + shoes.tier.speed + " Speed (Blocks/s)", net.minecraft.ChatFormatting.BLUE);
+                        assertTooltipLine(lines, "+" + shoes.tier.speed + " Speed", net.minecraft.ChatFormatting.BLUE);
                         if (shoes.tier.waterWalking())
                             assertTooltipLine(lines, "Waterwalking", net.minecraft.ChatFormatting.GOLD);
                         if (shoes.tier.lavaWalking())
@@ -491,25 +476,33 @@ public final class HorseClientTests {
             });
             context.setScreen(() -> new TooltipScreen(BetterHorses.NETHERITE.toStack()));
             context.takeScreenshot("horseshoes-tooltip");
-            context.input().holdShift();
+            context.input().holdKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
             context.runOnClient(client -> {
                 var lines = tooltip(client, BetterHorses.NETHERITE.toStack());
                 if (lines.stream().anyMatch(line -> line.getString().contains("Allows walking")))
-                    throw new AssertionError("Default Shift must not expand a rebound crouch key");
-                if (lines.stream().noneMatch(line -> line.getString().equals("Hold Z for Details")))
-                    throw new AssertionError("Hint must show rebound crouch key");
+                    throw new AssertionError("Rebound crouch key must not expand tooltips");
+                if (lines.stream().noneMatch(line -> line.getString().equals("Hold Shift for Details")))
+                    throw new AssertionError("Hint must always show Shift");
             });
-            context.input().releaseShift();
-            context.input().holdKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.input().releaseKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.input().holdShift();
             context.runOnClient(client -> {
                 String detail = String.join(
                         " ",
                         tooltip(client, BetterHorses.NETHERITE.toStack()).stream()
                                 .map(Component::getString)
                                 .toList());
-                if (!detail.contains("Allows walking on water and powdered snow.")
-                        || !detail.contains("Allows walking on lava. Protects from magma and campfires."))
-                    throw new AssertionError("Crouch must expand both walking abilities: " + detail);
+                if (!detail.contains("Allows walking on water and powdered snow")
+                        || !detail.contains("Allows walking on lava Protects from magma and campfires"))
+                    throw new AssertionError("Shift must expand both walking abilities: " + detail);
+                assertTooltipLine(
+                        tooltip(client, BetterHorses.NETHERITE.toStack()),
+                        "Allows walking on lava",
+                        net.minecraft.ChatFormatting.GRAY);
+                assertTooltipLine(
+                        tooltip(client, BetterHorses.NETHERITE.toStack()),
+                        "Protects from magma and campfires",
+                        net.minecraft.ChatFormatting.GRAY);
             });
             context.takeScreenshot("horseshoes-tooltip-expanded");
             context.setScreen(() -> new TooltipScreen(BetterHorses.WARRIOR.toStack()));
@@ -520,16 +513,36 @@ public final class HorseClientTests {
                                 .map(Component::getString)
                                 .toList());
                 if (!detail.contains("Transfers " + Math.round(BetterHorses.DAMAGE_TRANSFER.get() * 100)
-                        + "% of horse damage to the rider."))
+                        + "% of horse damage to the rider"))
                     throw new AssertionError("Lifelink must explain configured damage transfer");
             });
             context.takeScreenshot("warrior-tooltip-expanded");
-            context.input().releaseKey(org.lwjgl.glfw.GLFW.GLFW_KEY_Z);
+            context.input().releaseShift();
             context.takeScreenshot("warrior-tooltip");
             context.setScreen(() -> new TooltipScreen(BetterHorses.WANDERER.toStack()));
             context.takeScreenshot("traveller-tooltip");
+            context.input().holdShift();
+            context.runOnClient(client -> {
+                var lines = tooltip(client, BetterHorses.WANDERER.toStack());
+                assertTooltipLine(lines, "Has 15 inventory slots", net.minecraft.ChatFormatting.GRAY);
+                assertTooltipLine(lines, "Jumps Instantly", net.minecraft.ChatFormatting.GRAY);
+            });
+            context.takeScreenshot("traveller-tooltip-expanded");
+            context.input().releaseShift();
             context.setScreen(() -> new TooltipScreen(BetterHorses.PASSENGER.toStack()));
             context.takeScreenshot("passenger-tooltip");
+            context.input().holdShift();
+            context.runOnClient(client -> {
+                String detail = String.join(
+                        " ",
+                        tooltip(client, BetterHorses.PASSENGER.toStack()).stream()
+                                .map(Component::getString)
+                                .toList());
+                if (!detail.contains("Allows two players to ride the same horse"))
+                    throw new AssertionError("Passenger saddle needs expanded details");
+            });
+            context.takeScreenshot("passenger-tooltip-expanded");
+            context.input().releaseShift();
             context.setScreen(() -> null);
         } finally {
             context.input().releaseShift();

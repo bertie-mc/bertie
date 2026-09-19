@@ -33,6 +33,7 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
                     54);
         graphics.blitSprite(
                 ResourceLocation.withDefaultNamespace("container/horse/saddle_slot"), leftPos + 7, topPos + 17, 18, 18);
+        if (menu.getSlot(0).hasItem()) graphics.fill(leftPos + 8, topPos + 18, leftPos + 24, topPos + 34, 0xff8b8b8b);
         graphics.blitSprite(
                 ResourceLocation.withDefaultNamespace("container/horse/armor_slot"), leftPos + 7, topPos + 35, 18, 18);
         graphics.fill(leftPos + 7, topPos + 53, leftPos + 25, topPos + 71, 0xff373737);
@@ -60,10 +61,5 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
         renderTooltip(graphics, mouseX, mouseY);
         if (!menu.getSlot(2).hasItem() && isHovering(8, 54, 16, 16, mouseX, mouseY))
             graphics.renderTooltip(font, Component.translatable("container.betterhorses.horseshoes"), mouseX, mouseY);
-        if (menu.hasStorage()
-                && !menu.getSlot(0).mayPickup(minecraft.player)
-                && isHovering(8, 18, 16, 16, mouseX, mouseY))
-            graphics.renderTooltip(
-                    font, Component.translatable("container.betterhorses.empty_storage"), mouseX, mouseY);
     }
 }

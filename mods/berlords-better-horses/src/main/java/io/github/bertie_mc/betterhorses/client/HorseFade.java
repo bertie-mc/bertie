@@ -19,7 +19,7 @@ public final class HorseFade {
                 || client.getCameraEntity() != client.player
                 || !client.options.getCameraType().isFirstPerson()
                 || client.player.getVehicle() != entity) return 1;
-        float progress = Mth.clamp(client.player.getViewXRot(partial) / 90, 0, 1);
+        float progress = Mth.clamp((client.player.getViewXRot(partial) - 15) / 45, 0, 1);
         return 1 - 0.9F * progress * progress * (3 - 2 * progress);
     }
 

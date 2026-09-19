@@ -27,13 +27,33 @@ foreach ($kind in $metals.Keys) {
     $bitmap.Dispose()
 }
 # The shared generated saddle atlas is maintained separately; see saddle-materials.md.
-# Netherite armor is an unmodified upstream MIT asset; see NOTICE.
-# Do not regenerate it or alter its horse UV layout.
+# The horse armor atlas keeps the upstream layout; the item has a two-pixel muzzle correction (NOTICE).
 $slot = New-Object System.Drawing.Bitmap 16,16
-Paint-Rect $slot 3 3 2 7 '#606060'
-Paint-Rect $slot 11 3 2 7 '#606060'
-Paint-Rect $slot 4 10 2 2 '#606060'
-Paint-Rect $slot 10 10 2 2 '#606060'
-Paint-Rect $slot 5 12 6 2 '#606060'
+# Native-grid cleanup of the ImageGen slot concept, using the item's exact silhouette.
+$slotRows = @(
+    '................',
+    '..OOO......OOO..',
+    '.OHHHO....OHHHO.',
+    '.OLLMO....OLLMO.',
+    '.OLNMO....OLNMO.',
+    '.OLLMO....OLLMO.',
+    '.OLLMO....OLLMO.',
+    '.OLNMO....OLNMO.',
+    '.OLLMO....OLLMO.',
+    '.OLLMO....OLLMO.',
+    '.OMLLHO..OHLLMO.',
+    '..OMLLHOOHLLMO..',
+    '..OOMLLLLLMMOO..',
+    '...OOMMMMMMOO...',
+    '....OOOOOOOO....',
+    '................'
+)
+$slotPalette = @{ O='#606060'; H='#a0a0a0'; L='#727272'; M='#686868'; N='#474747' }
+for ($y=0; $y -lt 16; $y++) {
+    for ($x=0; $x -lt 16; $x++) {
+        $key=[string]$slotRows[$y][$x]
+        if ($key -ne '.') { Paint-Rect $slot $x $y 1 1 $slotPalette[$key] }
+    }
+}
 $slot.Save((Join-Path $assetRoot 'gui/horseshoe_slot.png'))
 $slot.Dispose()

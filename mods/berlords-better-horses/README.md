@@ -28,15 +28,15 @@ Lava protection applies at the walkable surface. Surface walking does not raise 
 horse that is already submerged.
 
 Waterwalking also lets diamond- and netherite-shod horses stand and land on powder
-snow. Iron and gold shoes do not prevent sinking. Hold the configured crouch key
+snow. Iron and gold shoes do not prevent sinking. Hold Shift
 over the item to expand the Waterwalking explanation.
 
 Each material colors the hooves' bottom pixel row. The two middle pixels on the
 rear face remain the horse's original grey, leaving the horseshoe open at the back.
 
 Netherite horse armor uses vanilla netherite armor attributes and JerryLu086's
-MIT-licensed Simple Netherite Horse Armor textures. The imported 16x16 item and
-64x64 horse atlas are unchanged and use Minecraft's existing horse armor model.
+MIT-licensed Simple Netherite Horse Armor textures. The 16x16 item has a two-pixel
+muzzle correction; the 64x64 horse atlas is unchanged and uses Minecraft's existing horse armor model.
 It does not make the horse fireproof. See [NOTICE](NOTICE) for attribution and license.
 
 ## Saddles
@@ -65,9 +65,9 @@ Server setting `warriorDamageTransfer` accepts 0.0–1.0 in the world's
 
 Shoes and saddles use a grey "When Equipped:" heading and Minecraft-blue stats.
 Saddle descriptions are "2 Seats", "Lifelink", and "Extra Space, Perfect Jump".
-Waterwalking and Lavawalking are gold. Holding the configured crouch key expands
-those abilities and Lifelink; the hint follows key rebinding, including in inventory
-screens. Lifelink's explanation uses the configured damage-transfer percentage.
+Waterwalking and Lavawalking are gold. Holding Shift expands those abilities and
+all three saddle descriptions, independently of the crouch binding. Each sentence
+uses its own line, without a trailing period. Lifelink's explanation uses the configured damage-transfer percentage.
 
 Saddle models share a textured leather/cloth/metal atlas, with separate raised seats,
 straps, buckles, and hollow metal stirrups. The passenger model has two seats and two
@@ -88,10 +88,14 @@ restores wandering. While ridden, tamed saddled horses no longer rear up and
 interrupt steering. Vanilla 1.21.1 already limits actual rider-ejecting bucking to
 untamed horses; taming and jumping behavior remain intact.
 
-In first person, your horse and its equipment smoothly fade as you look down,
-from fully visible looking straight forward to 10% visible looking straight down.
-Looking forward or up,
-third-person views, other horses, and inventory previews remain opaque.
+In first person, your horse and its equipment smoothly fade from 100% visible at
+15 degrees down to 10% at 60 degrees, using the pitch shown in F3. Looking farther
+down keeps 10% visibility. Third-person views, other horses, and inventory previews remain opaque.
+
+While mounted, the XP bar appears normally and changes to the jump bar only while
+holding jump. The traveller saddle always shows XP. Vanilla hunger remains in its
+normal row with horse hearts above it. With Berlord's Food System installed, that
+mod retains its own food-slot and mount-health layout.
 
 Mining while riding a horse uses the same speed as standing on the ground. Tool,
 enchantment, potion, and underwater mining modifiers still apply; the usual
@@ -149,7 +153,7 @@ solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in
 `tools/saddle-materials.md`. Neither script changes the saddle atlas, imported armor,
-or horse effigy.
+or horse effigy. The empty horseshoe slot uses the same U silhouette as the item.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,
@@ -158,9 +162,13 @@ saddled wandering/rearing, mounted mining with potion modifiers, and player/fenc
 lead capture with a delayed check against lead duplication.
 Client tests exercise synchronized storage and key-press/release jump behavior,
 measure swimming against dry-ground speed and ride out onto shore, check first-person
-fading and item models, verify tooltip colors and rebound crouch expansion, and
+fading and item models, verify tooltip colors and Shift expansion with rebound crouch, and
 capture the inventory and both sides of all three rendered saddles. Screenshots are in
 `build/test-diagnostics/clienttest`.
+
+For UI-only iteration, set `BERTIE_CLIENT_TEST_FILTER` to
+`*.equipmentSyncMenuAndAppearance,*.equipmentTooltipsUseShift,*.mountedHudAndFade`.
+This excludes swimming and other unrelated client tests.
 
 Mixins target AbstractHorse equipment persistence, menus, rider positioning and
 jump velocity, surface-only lava contact, and powder-snow collision. A client-only

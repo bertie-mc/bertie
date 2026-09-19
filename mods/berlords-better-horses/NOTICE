@@ -6,7 +6,8 @@ Original item artwork was developed using OpenAI ImageGen. Horseshoes and saddle
 were cleaned up on a native 16x16 pixel grid; tools/build-item-textures.ps1 records
 and regenerates their final pixels. The horse effigy reuses the wooden chess
 knight created for this project. Prompts are recorded in art-prompts.json.
-tools/build-entity-textures.ps1 regenerates the original hoof and saddle atlases.
+tools/build-entity-textures.ps1 regenerates the original hoof and empty-slot textures.
+The inventory icon edit prompt and native-grid cleanup are recorded in tools/interface-icons.md.
 
 Minecraft, NeoForge, and their models, APIs, and runtime resources remain the
 property of their respective authors. The renderer references Minecraft's horse
@@ -19,12 +20,17 @@ Branch: 1.21.1-neoforge
 Commit: 8f23ddc56df6efb1567b93abce93176ec392e63b
 License: https://github.com/JerryLu086/Netherite-Horse-Armor/blob/8f23ddc56df6efb1567b93abce93176ec392e63b/LICENSE
 
-The following PNGs are copied without modification from that commit:
+The following PNGs derive from that commit:
 
 - assets/betterhorses/textures/item/netherite_horse_armor.png
   Source: src/main/resources/assets/netherite_horse_armor/textures/item/netherite_horse_armor.png
-  SHA-256: 79c5b7153285ab76cc6b06bb2371ada7843fb28fd34a313ed0b0ecfde3927e4b
+  Original SHA-256: 79c5b7153285ab76cc6b06bb2371ada7843fb28fd34a313ed0b0ecfde3927e4b
+  Modified: the muzzle pixels (13,8) and (14,8) moved to (13,7) and (14,7),
+  replacing those pixels and clearing the previous row (zero-based coordinates).
+  All other pixels and original colors are preserved.
+  Modified SHA-256: 64cd9448072a76b4a91275d6711497f01fb39be8b93ef58d921e1540a0a7df26
 - assets/betterhorses/textures/entity/horse_armor_netherite.png
+  Unmodified upstream horse atlas
   Source: src/main/resources/assets/netherite_horse_armor/textures/entity/horse/armor/horse_armor_netherite.png
   SHA-256: 3ffae31cf195518d4b62edc7e471972d1ce9af4b985988deb694016a9131fcc8
 

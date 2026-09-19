@@ -90,5 +90,6 @@ public final class HorseEffigyItem extends Item {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
         lines.add(Component.translatable(
                 occupied(stack) ? "tooltip.betterhorses.effigy_full" : "tooltip.betterhorses.effigy_empty"));
+        if (occupied(stack)) lines.add(Component.translatable("tooltip.betterhorses.effigy_release"));
     }
 }
