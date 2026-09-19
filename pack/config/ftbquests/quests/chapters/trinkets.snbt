@@ -8889,5 +8889,18 @@
 			x: 64.0d
 			y: 3.0d
 		}
+		{
+			icon: {
+				id: "antarchy:brutalfly_elytra"
+			}
+			id: "4C000000000002B2"
+			tasks: [{
+				id: "4C000000010002B2"
+				item: { count: 1, id: "antarchy:brutalfly_elytra" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 27.0d
+		}
 	]
 }
