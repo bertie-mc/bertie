@@ -700,6 +700,10 @@ def fusion(element, extra, time=300, xp=4.0):
         "ingredients": [({"tag": i[1:]} if i.startswith("#") else {"item": i}) | {"count": n}
                         for i, n in ings],
         "result": {"id": f"elemental_metals:{element}_infused_netherite_ingot", "count": 2},
+        # Pastel requires all three effect fields; the recipe does not load without them.
+        "start_crafting_effect": "nothing",
+        "during_crafting_effects": [],
+        "finish_crafting_effect": "single_visual_explosion_on_shrine",
     })
 
 fusion("fire", [(_SCALE["fire"], 3), ("pastel:incandescent_essence", 2), ("oritech:biomass", 1)])

@@ -68,5 +68,8 @@
   "result": {
     "id": "elemental_metals:arcane_infused_netherite_ingot",
     "count": 2
-  }
+  },
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine"
 }
