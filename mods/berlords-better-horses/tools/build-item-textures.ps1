@@ -81,7 +81,7 @@ Save-Sprite 'warrior_saddle' @(
     '.ORRIIOMMIIORRO.',
     '..ORRIMMMIRRRO..',
     '...ORMMMOMRRO...',
-    '....OMMO.MOO....',
+    '....OOOO.MOO....',
     '.........M......',
     '.........HIH....',
     '.........I.O....',
