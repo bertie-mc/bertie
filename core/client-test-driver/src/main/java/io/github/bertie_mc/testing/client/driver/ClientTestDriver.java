@@ -17,6 +17,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
+import java.util.regex.Pattern;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -80,7 +81,7 @@ public final class ClientTestDriver {
     private void runDiscoveredTests(Minecraft client, Path diagnostics, List<TestResult> outcomes) {
         List<TestMethod> tests = discoverTests();
         if (tests.isEmpty()) {
-            throw new IllegalStateException("No @ClientTest methods were discovered");
+            throw new IllegalStateException("No @ClientTest methods matched filter: " + testFilter());
         }
         for (TestMethod test : tests) {
             outcomes.add(execute(test, client, diagnostics));
@@ -160,8 +161,23 @@ public final class ClientTestDriver {
                 .filter(annotation -> CLIENT_TEST_TYPE.equals(annotation.annotationType()))
                 .forEach(annotation ->
                         collectMethods(annotation.clazz().getClassName(), annotation.memberName(), methods));
+        String filter = testFilter();
+        methods.removeIf(method -> !matchesFilter(method.name(), filter));
         methods.sort(Comparator.comparing(TestMethod::name));
         return List.copyOf(methods);
+    }
+
+    private static String testFilter() {
+        return System.getProperty(
+                "bertie.clienttest.filter", System.getenv().getOrDefault("BERTIE_CLIENT_TEST_FILTER", "*"));
+    }
+
+    static boolean matchesFilter(String name, String filter) {
+        for (String candidate : filter.split(",")) {
+            String glob = candidate.trim();
+            if (!glob.isEmpty() && name.matches(Pattern.quote(glob).replace("*", "\\E.*\\Q"))) return true;
+        }
+        return false;
     }
 
     private static void collectMethods(String className, String memberName, List<TestMethod> target) {

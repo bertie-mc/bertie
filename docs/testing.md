@@ -96,6 +96,12 @@ for a working example.
 
 ## Client tests
 
+For a focused run, set `BERTIE_CLIENT_TEST_FILTER` to comma-separated full method-name
+patterns (`*` matches any text), for example `*.equipmentTooltipsUseShift,*.mountedHudAndFade`.
+Only matching tests run and appear in the report; an empty selection fails the run.
+Unset the variable to run the complete suite. The JVM property `bertie.clienttest.filter`
+overrides the environment variable when supplied directly to the client process.
+
 A client test is a public static method annotated with `@ClientTest`:
 
 ```java

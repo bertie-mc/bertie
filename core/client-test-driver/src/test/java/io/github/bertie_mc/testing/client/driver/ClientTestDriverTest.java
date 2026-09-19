@@ -9,6 +9,17 @@ import org.junit.jupiter.api.Test;
 
 final class ClientTestDriverTest {
     @Test
+    void clientTestFiltersSelectOnlyRequestedMethods() {
+        assertTrue(ClientTestDriver.matchesFilter("example.HorseTests.inventory", "*"));
+        assertTrue(ClientTestDriver.matchesFilter("example.HorseTests.inventory", "*.inventory, *.tooltips"));
+        assertTrue(ClientTestDriver.matchesFilter("example.HorseTests.tooltips", "*.inventory, *.tooltips"));
+        assertFalse(ClientTestDriver.matchesFilter("example.HorseTests.swimming", "*.inventory, *.tooltips"));
+        assertTrue(ClientTestDriver.matchesFilter("example.HorseTests.inventory", "example.HorseTests.inventory"));
+        assertFalse(ClientTestDriver.matchesFilter("exampleXHorseTests.inventory", "example.HorseTests.inventory"));
+        assertFalse(ClientTestDriver.matchesFilter("example.HorseTests.inventory", " , "));
+    }
+
+    @Test
     void startupWaitsForArmingAndOverlayRemovalOnly() {
         assertFalse(ClientTestDriver.isStartupReady(false, false));
         assertFalse(ClientTestDriver.isStartupReady(true, true));
