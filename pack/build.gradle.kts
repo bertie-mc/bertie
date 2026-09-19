@@ -13,6 +13,7 @@ configurations.named("clienttestComponents") {
 }
 
 dependencies {
+    packMods(project(":mods:berlords-better-horses"))
     gametestImplementation(project(":mods:berlords-carving"))
     clienttestCompileOnly(deps.curios)
     clienttestCompileOnly(deps.terraCurio)

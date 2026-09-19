@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_horse_equipment": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:saddle"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_horse_equipment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "betterhorses:wanderer_saddle"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "mode": "Built-in ImageGen; nearest-neighbor export to 16x16. Entity UV maps are authored specifically for the vanilla horse mesh and custom saddle geometry.",
+  "prompts": [
+    {
+      "name": "iron_horseshoes",
+      "prompt": "Create one Minecraft-style inventory item texture: iron metal horseshoe, cool silver grey. A single chunky U-shaped horseshoe seen straight on, opening at top, with two nail holes on each arm. Designed on exactly a 16 by 16 pixel canvas: very large flat color pixel blocks, no small details, no gradients, no antialiasing. Symmetrical thick clear U shape centered filling 12x13 logical pixels, transparent background. Limited five-tone material palette with dark outlines and bright edge highlights. No text or labels, no scene, no extra objects. Render a nearest-neighbor enlarged preview of this 16x16 game texture."
+    },
+    {
+      "name": "gold_horseshoes",
+      "prompt": "Create one Minecraft-style inventory item texture: gold metal horseshoe, warm rich golden yellow. A single chunky U-shaped horseshoe seen straight on, opening at top, with two nail holes on each arm. Designed on exactly a 16 by 16 pixel canvas: very large flat color pixel blocks, no small details, no gradients, no antialiasing. Symmetrical thick clear U shape centered filling 12x13 logical pixels, transparent background. Limited five-tone material palette with dark outlines and bright edge highlights. No text or labels, no scene, no extra objects. Render a nearest-neighbor enlarged preview of this 16x16 game texture."
+    },
+    {
+      "name": "diamond_horseshoes",
+      "prompt": "Create one Minecraft-style inventory item texture: diamond horseshoe, cyan turquoise diamond material. A single chunky U-shaped horseshoe seen straight on, opening at top, with two nail holes on each arm. Designed on exactly a 16 by 16 pixel canvas: very large flat color pixel blocks, no small details, no gradients, no antialiasing. Symmetrical thick clear U shape centered filling 12x13 logical pixels, transparent background. Limited five-tone material palette with dark outlines and bright edge highlights. No text or labels, no scene, no extra objects. Render a nearest-neighbor enlarged preview of this 16x16 game texture."
+    },
+    {
+      "name": "netherite_horseshoes",
+      "prompt": "Create one Minecraft-style inventory item texture: netherite horseshoe, dark charcoal brown metal with muted purple-grey edge highlights. A single chunky U-shaped horseshoe seen straight on, opening at top, with two nail holes on each arm. Designed on exactly a 16 by 16 pixel canvas: very large flat color pixel blocks, no small details, no gradients, no antialiasing. Symmetrical thick clear U shape centered filling 12x13 logical pixels, transparent background. Limited five-tone material palette with dark outlines and bright edge highlights. No text or labels, no scene, no extra objects. Render a nearest-neighbor enlarged preview of this 16x16 game texture."
+    },
+    {
+      "name": "passenger_saddle",
+      "prompt": "Minecraft inventory item texture. A double-seat leather horse saddle, two joined tan brown seats arranged front and back, brass stirrups, teal blue saddle blanket. Readable unmistakable saddle shape. Single isolated object, entirely visible, centered with one pixel padding. Strict 16x16 logical pixel grid, chunky hand-made pixel art, few large flat color clusters, dark outline and top left highlight, vanilla Minecraft style. Transparent alpha background, no ground shadow, no writing, no scene, no border, no fine details, no antialiasing. Enlarge the 16x16 sprite with nearest-neighbor for display."
+    },
+    {
+      "name": "warrior_saddle",
+      "prompt": "Minecraft inventory item texture. A battle horse saddle, dark oxblood red leather seat, iron grey reinforced sides and silver stirrups, red saddle blanket. Readable unmistakable saddle shape. Single isolated object, entirely visible, centered with one pixel padding. Strict 16x16 logical pixel grid, chunky hand-made pixel art, few large flat color clusters, dark outline and top left highlight, vanilla Minecraft style. Transparent alpha background, no ground shadow, no writing, no scene, no border, no fine details, no antialiasing. Enlarge the 16x16 sprite with nearest-neighbor for display."
+    },
+    {
+      "name": "wanderer_saddle",
+      "prompt": "Minecraft inventory item texture. A traveling horse saddle, warm brown leather seat, forest green saddle blanket, compact side satchel and small rolled tan bedroll. Readable unmistakable saddle shape. Single isolated object, entirely visible, centered with one pixel padding. Strict 16x16 logical pixel grid, chunky hand-made pixel art, few large flat color clusters, dark outline and top left highlight, vanilla Minecraft style. Transparent alpha background, no ground shadow, no writing, no scene, no border, no fine details, no antialiasing. Enlarge the 16x16 sprite with nearest-neighbor for display."
+    },
+    {
+      "name": "netherite_horse_armor",
+      "prompt": "Minecraft inventory item texture. Netherite HORSE armor inventory item in the vanilla Minecraft horse armor silhouette: small horse head and neck attached to an armored body cape, NO LEGS. Dark brown charcoal plates with purple grey edges and restrained light steel highlights. Single isolated object, entirely visible, centered with one pixel padding. Strict 16x16 logical pixel grid, chunky hand-made pixel art, few large flat color clusters, dark outline and top left highlight, vanilla Minecraft style. Transparent alpha background, no ground shadow, no writing, no scene, no border, no fine details, no antialiasing. Enlarge the 16x16 sprite with nearest-neighbor for display."
+    }
+  ]
+}

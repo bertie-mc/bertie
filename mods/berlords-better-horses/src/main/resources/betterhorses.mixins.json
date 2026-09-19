@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.betterhorses.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["HorseEquipmentMixin", "EntityLavaMixin", "HorseFluidCollisionMixin"],
+  "injectors": {"defaultRequire": 1}
+}

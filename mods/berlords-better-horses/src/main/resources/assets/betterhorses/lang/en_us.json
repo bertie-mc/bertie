@@ -1,0 +1,23 @@
+{
+  "item.betterhorses.horse_effigy": "Horse Effigy",
+  "item.betterhorses.iron_horseshoes": "Iron Horseshoes",
+  "item.betterhorses.gold_horseshoes": "Gold Horseshoes",
+  "item.betterhorses.diamond_horseshoes": "Diamond Horseshoes",
+  "item.betterhorses.netherite_horseshoes": "Netherite Horseshoes",
+  "item.betterhorses.netherite_horse_armor": "Netherite Horse Armor",
+  "item.betterhorses.passenger_saddle": "Passenger Saddle",
+  "item.betterhorses.warrior_saddle": "Warrior Saddle",
+  "item.betterhorses.wanderer_saddle": "Wanderer Saddle",
+  "container.betterhorses.horseshoes": "Horseshoes",
+  "tooltip.betterhorses.speed": "+%s blocks/second speed",
+  "tooltip.betterhorses.fall": "+%s blocks safe fall distance",
+  "tooltip.betterhorses.jump": "+%s blocks jump height",
+  "tooltip.betterhorses.step": "+%s blocks step height",
+  "tooltip.betterhorses.water": "Walk on water",
+  "tooltip.betterhorses.lava": "Walk on lava; protected from magma and campfires",
+  "tooltip.betterhorses.passenger": "Two riders; the front rider steers",
+  "tooltip.betterhorses.warrior": "Transfers %s%% of horse damage to the rider",
+  "tooltip.betterhorses.wanderer": "A saddle for the road. Special ability coming later.",
+  "tooltip.betterhorses.effigy_empty": "Use on an unoccupied, unleashed tamed horse to store it",
+  "tooltip.betterhorses.effigy_full": "Contains a horse. Use on the ground to release it."
+}

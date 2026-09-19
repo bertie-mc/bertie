@@ -1,0 +1,12 @@
+The public-domain dedication in UNLICENSE applies to this component's original
+code, generated item artwork, and original entity texture layouts.
+
+Item artwork was generated using OpenAI ImageGen and exported to native 16x16
+PNG. The horse effigy reuses the wooden chess knight created for this project.
+Generation prompts are recorded in art-prompts.json. Entity atlases are authored
+for Minecraft's horse UV layout; tools/build-entity-textures.ps1 regenerates them.
+
+Minecraft, NeoForge, and their models, APIs, and runtime resources remain the
+property of their respective authors. No Minecraft or NeoForge source, texture,
+model, or binary is redistributed by this component. The renderer references
+Minecraft's models and GUI resources at runtime.
