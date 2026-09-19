@@ -27,8 +27,21 @@ public final class HorseSaddleModel extends HorseModel<Horse> {
         box(saddle, "blanket", clothU, clothV, -5.6F, -8.8F, front, 11.2F, 0.8F, length);
         for (int side : new int[] {-1, 1}) {
             float x = side < 0 ? -5.8F : 5.15F;
-            box(saddle, "cloth_flap_" + side, clothU + 8, clothV + 1, x, -8.0F, front, 0.65F, 5.5F, length);
-            box(saddle, "binding_" + side, 64, 96, side < 0 ? -5.98F : 5.8F, -3.15F, front, 0.18F, 0.65F, length);
+            // Mirror the right-hand (-X) face onto the left so the cloth motif stays toward the rear.
+            boolean mirror = warrior && side > 0;
+            box(saddle, "cloth_flap_" + side, clothU + 8, clothV + 1, x, -8.0F, front, 0.65F, 5.5F, length, mirror);
+            box(
+                    saddle,
+                    "binding_" + side,
+                    64,
+                    96,
+                    side < 0 ? -5.98F : 5.8F,
+                    -3.15F,
+                    front,
+                    0.18F,
+                    0.65F,
+                    length,
+                    mirror);
         }
 
         if (passenger) {
@@ -80,14 +93,26 @@ public final class HorseSaddleModel extends HorseModel<Horse> {
     private static void stirrups(PartDefinition root, String name, float z, boolean steel) {
         for (int side : new int[] {-1, 1}) {
             String id = name + "_" + side;
-            box(root, "stirrup_strap_" + id, 3, 1, side < 0 ? -6.15F : 5.8F, -8.2F, z - 0.5F, 0.35F, 8.8F, 1);
+            boolean mirror = steel && side > 0;
+            box(root, "stirrup_strap_" + id, 3, 1, side < 0 ? -6.15F : 5.8F, -8.2F, z - 0.5F, 0.35F, 8.8F, 1, mirror);
             float x = side < 0 ? -6.45F : 5.8F;
             int u = steel ? 0 : 64;
-            box(root, "stirrup_front_" + id, u + 2, 97, x, 0.5F, z - 1.8F, 0.65F, 3, 0.6F);
-            box(root, "stirrup_back_" + id, u + 2, 97, x, 0.5F, z + 1.2F, 0.65F, 3, 0.6F);
-            box(root, "stirrup_top_" + id, u + 2, 97, x, 0.1F, z - 1.8F, 0.65F, 0.4F, 3.6F);
-            box(root, "stirrup_tread_" + id, u + 2, 97, x, 3.5F, z - 1.8F, 0.65F, 0.6F, 3.6F);
-            box(root, "strap_buckle_" + id, 66, 97, side < 0 ? -6.3F : 6.15F, -5.8F, z - 0.7F, 0.15F, 1.4F, 1.4F);
+            box(root, "stirrup_front_" + id, u + 2, 97, x, 0.5F, z - 1.8F, 0.65F, 3, 0.6F, mirror);
+            box(root, "stirrup_back_" + id, u + 2, 97, x, 0.5F, z + 1.2F, 0.65F, 3, 0.6F, mirror);
+            box(root, "stirrup_top_" + id, u + 2, 97, x, 0.1F, z - 1.8F, 0.65F, 0.4F, 3.6F, mirror);
+            box(root, "stirrup_tread_" + id, u + 2, 97, x, 3.5F, z - 1.8F, 0.65F, 0.6F, 3.6F, mirror);
+            box(
+                    root,
+                    "strap_buckle_" + id,
+                    66,
+                    97,
+                    side < 0 ? -6.3F : 6.15F,
+                    -5.8F,
+                    z - 0.7F,
+                    0.15F,
+                    1.4F,
+                    1.4F,
+                    mirror);
         }
     }
 
@@ -102,8 +127,25 @@ public final class HorseSaddleModel extends HorseModel<Horse> {
             float width,
             float height,
             float depth) {
+        box(root, name, u, v, x, y, z, width, height, depth, false);
+    }
+
+    private static void box(
+            PartDefinition root,
+            String name,
+            int u,
+            int v,
+            float x,
+            float y,
+            float z,
+            float width,
+            float height,
+            float depth,
+            boolean mirror) {
         root.addOrReplaceChild(
-                name, CubeListBuilder.create().texOffs(u, v).addBox(x, y, z, width, height, depth), PartPose.ZERO);
+                name,
+                CubeListBuilder.create().texOffs(u, v).mirror(mirror).addBox(x, y, z, width, height, depth),
+                PartPose.ZERO);
     }
 
     void renderSaddle(PoseStack pose, VertexConsumer vertices, int light) {
