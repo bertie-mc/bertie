@@ -440,6 +440,14 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Vehicles move to the Mechanical Crafter and the plate and gear are renamed.
+[[dependencies.${mod_id}]]
+modId="rustic_engineer"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Loot override: four removed drops leave its boss loot tables.
 [[dependencies.${mod_id}]]
 modId="block_factorys_bosses"

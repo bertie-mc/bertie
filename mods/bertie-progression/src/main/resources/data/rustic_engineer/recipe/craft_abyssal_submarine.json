@@ -1,0 +1,53 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "rustic_engineer"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "Y": {
+      "item": "create:yellow_seat"
+    },
+    "P": {
+      "item": "create:propeller"
+    },
+    "E": {
+      "item": "rustic_engineer:engine"
+    },
+    "K": {
+      "item": "rustic_engineer:book_abyssal_submarine"
+    },
+    "M": {
+      "item": "rustic_engineer:movable_parts"
+    },
+    "I": {
+      "item": "rustic_engineer:iron_plate"
+    }
+  },
+  "pattern": [
+    " GGG  ",
+    " GGGBB",
+    "BBBYBP",
+    "BEKMMP",
+    "BIIIIB"
+  ],
+  "result": {
+    "id": "rustic_engineer:abyssal_submarine_item",
+    "count": 1
+  },
+  "show_notification": true
+}

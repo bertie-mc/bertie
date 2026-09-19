@@ -26,7 +26,6 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -102,17 +101,6 @@ public class Carving {
     public static final DeferredItem<BlockItem> CARVING_STATION_ITEM =
             ITEMS.registerSimpleBlockItem("carving_station", CARVING_STATION);
 
-    /** Block of Flint (9 flint); the flint carving-canvas background, now a real block. */
-    public static final DeferredBlock<Block> FLINT_BLOCK = BLOCKS.registerSimpleBlock(
-            "flint_block",
-            BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_GRAY)
-                    .strength(1.5F, 6.0F)
-                    .sound(SoundType.STONE));
-
-    public static final DeferredItem<BlockItem> FLINT_BLOCK_ITEM =
-            ITEMS.registerSimpleBlockItem("flint_block", FLINT_BLOCK);
-
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CarvingStationBlockEntity>>
             CARVING_STATION_BE = BLOCK_ENTITIES.register(
                     "carving_station",
@@ -183,7 +171,6 @@ public class Carving {
             return;
         }
         event.accept(CARVING_STATION_ITEM);
-        event.accept(FLINT_BLOCK_ITEM);
         // only registered slates exist (Slag-only materials are skipped when Slag is absent)
         for (CarvingMaterial m : CarvingMaterial.values()) {
             if (SMALL_SLATES.containsKey(m)) {

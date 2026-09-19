@@ -19,18 +19,19 @@ import org.jetbrains.annotations.Nullable;
 public final class ForgeLayouts {
 
     /**
-     * The eight native pedestal positions around the central forge.
-     * They are symmetric under all four rotations.
+     * The eight native pedestal positions around the central forge: the {@code #} slots of F&amp;A's
+     * two-layer {@code HEPHAESTUS_PATTERN}, each one directly above a Gilded Chiseled Polished
+     * Darkstone in the base plate. They are symmetric under all four rotations.
      */
     private static final List<BlockPos> NATIVE_PEDESTALS = List.of(
-            new BlockPos(-2, 0, -3),
-            new BlockPos(2, 0, -3),
-            new BlockPos(-3, 0, -2),
-            new BlockPos(3, 0, -2),
-            new BlockPos(-3, 0, 2),
-            new BlockPos(3, 0, 2),
-            new BlockPos(-2, 0, 3),
-            new BlockPos(2, 0, 3));
+            new BlockPos(0, 0, -3),
+            new BlockPos(-2, 0, -2),
+            new BlockPos(2, 0, -2),
+            new BlockPos(-3, 0, 0),
+            new BlockPos(3, 0, 0),
+            new BlockPos(-2, 0, 2),
+            new BlockPos(2, 0, 2),
+            new BlockPos(0, 0, 3));
 
     private static final Map<StructureTemplate, ForgeLayout> CACHE =
             Collections.synchronizedMap(new IdentityHashMap<>());

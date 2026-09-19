@@ -2,6 +2,8 @@ package io.github.bertie_mc.hephaestusarchitecture.structure;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.List;
+import net.minecraft.core.BlockPos;
 import org.junit.jupiter.api.Test;
 
 class ForgeStructurePlacementTest {
@@ -34,5 +36,22 @@ class ForgeStructurePlacementTest {
         assertEquals(9, counts[1], "gilded chiseled polished darkstone");
         assertEquals(4, counts[2], "chiseled arcane polished darkstone");
         assertEquals(20, counts[3], "unconstrained positions");
+    }
+
+    /**
+     * F&amp;A's two-layer {@code HEPHAESTUS_PATTERN} puts each of its eight {@code #} pedestal slots
+     * directly above a gilded block, and the forge over the ninth. Anything else is a layout that
+     * F&amp;A's own Mundabitur Dust interaction would not accept.
+     */
+    @Test
+    void everyNativePedestalStandsOnAGildedBlock() {
+        String[] base = ForgeStructurePlacement.NATIVE_BASE;
+        List<BlockPos> pedestals = ForgeLayouts.nativePedestals();
+        assertEquals(8, pedestals.size());
+        for (BlockPos offset : pedestals) {
+            assertEquals(0, offset.getY(), "pedestals sit on the forge's own level: " + offset);
+            assertEquals('A', base[offset.getZ() + 4].charAt(offset.getX() + 4), "base block under " + offset);
+        }
+        assertEquals('A', base[4].charAt(4), "the forge's own gilded block");
     }
 }

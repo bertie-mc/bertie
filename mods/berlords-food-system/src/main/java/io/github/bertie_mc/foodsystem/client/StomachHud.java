@@ -12,6 +12,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -70,7 +71,7 @@ public final class StomachHud {
         // Reforged's three slots sat at anchor, anchor+1, anchor+2 spacings; keep the
         // rightmost of those fixed and let extra slots grow further left.
         double rightX = mc.getWindow().getGuiScaledWidth() / 2.0 + xPos + 2 * spacing;
-        double y = mc.getWindow().getGuiScaledHeight() + yPos;
+        double y = mc.getWindow().getGuiScaledHeight() + yPos - 10.0 * vehicleHealthRows(player);
 
         // visual order, left to right: empty slots, regular foods by remaining time
         // (longest right), then eternal foods claiming the RIGHTMOST slots — first
@@ -159,6 +160,19 @@ public final class StomachHud {
             graphics.drawString(mc.font, text, 9 - mc.font.width(text), 1, color, true);
             graphics.pose().popPose();
         }
+    }
+
+    /**
+     * How many ten-pixel rows the vanilla mount health bar takes. It starts in the food bar's row -
+     * where these slots also sit - and grows upward, so the slots have to clear it while riding.
+     * The heart count mirrors {@code Gui.getVehicleMaxHearts}, cap included.
+     */
+    private static int vehicleHealthRows(Player player) {
+        if (!(player.getVehicle() instanceof LivingEntity vehicle) || !vehicle.showVehicleHealth()) {
+            return 0;
+        }
+        int hearts = Math.min(30, (int) (vehicle.getMaxHealth() + 0.5F) / 2);
+        return (hearts + 9) / 10;
     }
 
     private StomachHud() {}

@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "e7cf291f0c7f9d1550b386eb967a12b32ff6873e51d08ebf1faee97fe6ed8e6b"
+inputs-hash = "4bf5520a942a7a87a16318763fd80a33be51c72c0649a639fcb936d247da55b2"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -197,10 +197,6 @@ mod = "modrinth:7uxk5PIo:M1zFfB1p"
 [components."cataclysm-spellbooks"]
 any = "modrinth:3FEg0A8D:5NYz9vZy"
 mod = "modrinth:3FEg0A8D:5NYz9vZy"
-
-[components."cataclysm-tools"]
-any = "modrinth:7apv0bAM:nCs17mDT"
-mod = "modrinth:7apv0bAM:nCs17mDT"
 
 [components."cataclysm-x-bettercombat-compat"]
 any = "modrinth:53TJSd8P:CGWHkq5m"
@@ -676,10 +672,6 @@ mod = "modrinth:hIpLSyga:JosVVZQn"
 [components."hopo-better-underwater-ruins"]
 any = "modrinth:BuWCQzqf:cCUmdH6y"
 mod = "modrinth:BuWCQzqf:cCUmdH6y"
-
-[components."horse-expert"]
-any = "modrinth:24CSPS1E:Li2vsMel"
-mod = "modrinth:24CSPS1E:Li2vsMel"
 
 [components."hostile-neural-networks"]
 any = "modrinth:6bLUlbZn:ikdLP02G"
@@ -2096,26 +2088,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:24CSPS1E:Li2vsMel"]
-name = "horse-expert"
-component = "horse-expert"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "24CSPS1E"
-version = "Li2vsMel"
-filename = "HorseExpert-v21.1.0-1.21.1-NeoForge.jar"
-project-id = "24CSPS1E"
-version-id = "Li2vsMel"
-provides = ["horseexpert"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "mod-id" = "curios", "version-range" = "*", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:2BwBOmBQ:I52NZ1qK"]
 name = "yungs-better-end-island"
 component = "yungs-better-end-island"
@@ -3021,26 +2993,6 @@ version-id = "sGtURzAz"
 provides = ["prometheus"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:dQcfqGbl:c10AZba0", "mod-id" = "cobweb", "version-range" = "[1.4.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:7apv0bAM:nCs17mDT"]
-name = "cataclysm-tools"
-component = "cataclysm-tools"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "7apv0bAM"
-version = "nCs17mDT"
-filename = "cataclysm_tools-2.0.0-neoforge-1.21.1.jar"
-project-id = "7apv0bAM"
-version-id = "nCs17mDT"
-provides = ["cataclysm_tools"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:46KJle7n:uvjXrHuz", "mod-id" = "cataclysm", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

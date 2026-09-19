@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "bea6ec15a97aeefa7f87546270dc897bfa803170e0ae4a2f5b317530f6228b51"
+inputs-hash = "2c41a43c2a339074b46ec2b6b45c148bddbd311538c8f27d56933ac4677c5b15"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -197,10 +197,6 @@ mod = "curseforge:1544803:8103104"
 [components."cataclysm-spellbooks"]
 any = "curseforge:1099461:8176463"
 mod = "curseforge:1099461:8176463"
-
-[components."cataclysm-tools"]
-any = "curseforge:1037520:6709296"
-mod = "curseforge:1037520:6709296"
 
 [components."cataclysm-x-bettercombat-compat"]
 any = "curseforge:1335102:7350924"
@@ -676,10 +672,6 @@ mod = "curseforge:632624:6420137"
 [components."hopo-better-underwater-ruins"]
 any = "curseforge:632622:6420141"
 mod = "curseforge:632622:6420141"
-
-[components."horse-expert"]
-any = "curseforge:666942:5731753"
-mod = "curseforge:666942:5731753"
 
 [components."hostile-neural-networks"]
 any = "curseforge:552574:8525006"
@@ -2064,27 +2056,6 @@ file-id = 8154670
 provides = ["stellaris"]
 bundled-provides = ["exoconfig", "sky_aesthetics"]
 required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.6,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:J9pKOkxP:EEjnSxLK", "mod-id" = "potentials", "version-range" = "[0.7.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1037520:6709296"]
-name = "cataclysm-tools"
-component = "cataclysm-tools"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "cataclysm-tools-1037520"
-version = "6709296"
-filename = "cataclysm_tools-2.0.0-neoforge-1.21.1.jar"
-project-id = 1037520
-slug = "cataclysm-tools"
-file-id = 6709296
-provides = ["cataclysm_tools"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:551586:8246034", "mod-id" = "cataclysm", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -7793,27 +7764,6 @@ provides = ["letmedespawn"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Gi02250Z:cHGan9fQ", "mod-id" = "almanac", "version-range" = "[1.0.2,)", "side" = "server", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:666942:5731753"]
-name = "horse-expert"
-component = "horse-expert"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "horse-expert-666942"
-version = "5731753"
-filename = "HorseExpert-v21.1.0-1.21.1-NeoForge.jar"
-project-id = 666942
-slug = "horse-expert"
-file-id = 5731753
-provides = ["horseexpert"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "*", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []

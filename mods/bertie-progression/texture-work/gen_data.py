@@ -2953,6 +2953,12 @@ for _steel_tag, _keep in (
           {"replace": True,
            "values": [{"id": _i, "required": False} for _i in _keep]})
 
+# Slag's Rose Gold and Hazen's Stuff' Rose Gold are two different metals that happen to share a
+# name, and #c:ingots/rose_gold was the only thing treating them as one. Nothing in the pack reads
+# the tag any more - carving names Slag's ingot outright - so it is emptied rather than picked
+# between. The block and nugget tags hold only Slag's and are left alone.
+write("data/c/tags/item/ingots/rose_gold.json", {"replace": True, "values": []})
+
 # Ghasmati is not rice - it is a Nether crop that happens to cook like one, and the shared crop
 # tag was the only thing making the two interchangeable. Replaced with rice alone.
 write("data/c/tags/item/crops/rice.json",
@@ -3235,6 +3241,63 @@ write("data/cataclysm/recipe/amethyst_bless/mana_charged_fluorite.json", {
 write("data/eccentrictome/recipe/tome.json",
       shaped(["BP", "BP"], {"B": "minecraft:book", "P": "minecraft:paper"},
              "eccentrictome:tome"))
+
+# ==================================================== Rustic Engineer
+# The four vehicles were identical 3x3 crafts around their own book. They become Mechanical Crafter
+# walls instead, each one built out of what it is: glass and propellers for the submarine, shafts
+# and legs for the mech, sails and rope for the airship. The Hammerer is gone with the removals, so
+# the Iron Plate it used to press gets an ordinary bench recipe.
+_RE = "data/rustic_engineer/recipe"
+_REP, _REG = "rustic_engineer:iron_plate", "rustic_engineer:gear"
+_REM, _REE = "rustic_engineer:movable_parts", "rustic_engineer:engine"
+_REI = "rustic_engineer:iron_pieces"
+_SEAT, _PROP, _SAIL = "create:yellow_seat", "create:propeller", "create:sail_frame"
+
+# Plate: six Iron Sheets pressed flat, four at a time.
+write(f"{_RE}/craft_iron_plate.json",
+      shaped(_p(["NNN", "HHH", "HHH"]), {"H": _ISH}, _REP, 4))
+
+# Submarine: a glazed nose, twin screws and a plated keel.
+write(f"{_RE}/craft_abyssal_submarine.json",
+      mech(_p(["NGGGNN", "NGGGBB", "BBBYBP", "BEKMMP", "BIIIIB"]),
+           {"G": "minecraft:glass", "B": _BS, "Y": _SEAT, "P": _PROP, "E": _REE,
+            "K": "rustic_engineer:book_abyssal_submarine", "M": _REM, "I": _REP},
+           "rustic_engineer:abyssal_submarine_item"))
+
+# Spider Mech: the same body on shaft-driven legs instead of screws.
+write(f"{_RE}/craft_spider_mech.json",
+      mech(_p(["NNYBB", "BEIKB", "IMMMI", "SNSNS", "ININI"]),
+           {"B": _BS, "Y": _SEAT, "E": _REE, "I": _REP, "M": _REM, "S": _SH,
+            "K": "rustic_engineer:book_spidermech"},
+           "rustic_engineer:spider_mech_item"))
+
+# Airship: sailcloth overhead, rope rigging, a chest slung under the gondola.
+write(f"{_RE}/craft_air_ship.json",
+      mech(_p(["AAAAA", "NRNRN", "NBYBP", "BEKCB", "NBBBP"]),
+           {"A": _SAIL, "R": "farmersdelight:rope", "B": _BS, "Y": _SEAT, "P": _PROP, "E": _REE,
+            "K": "rustic_engineer:book_airship", "C": "minecraft:chest"},
+           "rustic_engineer:air_ship_item"))
+
+# Dragonfly: all wing and no hull.
+write(f"{_RE}/craft_dragonfly.json",
+      mech(_p(["NAEAN", "AMKMA", "NBYBN", "NABAN", "ANBNA"]),
+           {"A": _SAIL, "E": _REE, "M": _REM, "B": _BS, "Y": _SEAT,
+            "K": "rustic_engineer:book_dragon_fly"},
+           "rustic_engineer:dragonfly_item"))
+
+# Engine: the stock 3x3 stays reachable; the wall is the same core with Movable Parts in place of
+# the plates and a full ring of Iron Sheet around it.
+write(f"{R}/mechanical/rustic_engineer/engine.json",
+      mech(_p(["HHHHH", "HGMTH", "HMFMH", "HTMGH", "HHHHH"]),
+           {"H": _ISH, "G": _REG, "M": _REM, "T": _REI, "F": "minecraft:blast_furnace"},
+           _REE))
+
+# The plate is no longer pressed from an ingot and the gear is the mod's own, not Create's, so both
+# are named for the mod they come from.
+write("assets/rustic_engineer/lang/en_us.json", {
+    "item.rustic_engineer.iron_plate": "Rustic Plate",
+    "item.rustic_engineer.gear": "Rustic Gear",
+})
 
 # --- Alchemical Fire Pit: Blaze Rods around Fire Light Dust on a course of Smooth Stone. ---
 write("data/piglinproliferation/recipe/stone_fire_ring.json",

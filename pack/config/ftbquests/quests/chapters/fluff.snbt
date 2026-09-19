@@ -139,27 +139,17 @@
 			y: 0.0d
 		}
 		{
-			icon: {
-				id: "horseexpert:monocle"
-			}
 			id: "6C00000000000008"
 			rewards: [{
 				id: "6C00000002000008"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [
-				{
-					id: "6C00000001000008"
-					item: { count: 1, id: "minecraft:horse_spawn_egg" }
-					type: "item"
-				}
-				{
-					id: "6C00000001010008"
-					item: { count: 1, id: "horseexpert:monocle" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6C00000001000008"
+				item: { count: 1, id: "minecraft:horse_spawn_egg" }
+				type: "item"
+			}]
 			x: 4.5d
 			y: 0.0d
 		}
@@ -306,7 +296,12 @@
 				}
 				{
 					id: "6C0000000101000E"
-					item: { count: 1, id: "anvilcraft:ionocraft" }
+					item: { count: 1, id: "oritech:jetpack" }
+					type: "item"
+				}
+				{
+					id: "6C0000000102000E"
+					item: { count: 1, id: "anvilcraft:ionocraft_backpack" }
 					type: "item"
 				}
 			]

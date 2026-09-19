@@ -257,10 +257,6 @@
       "required": false
     },
     {
-      "id": "rustic_engineer:rustic_hammer",
-      "required": false
-    },
-    {
       "id": "twilightforest:ironwood_pickaxe",
       "required": false
     },

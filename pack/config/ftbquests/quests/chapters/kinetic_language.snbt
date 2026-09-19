@@ -2756,5 +2756,191 @@
 			x: -9.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["2B00000000000059"]
+			id: "2B00000000000077"
+			rewards: [{
+				id: "2B00000002000077"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000077"
+				item: { count: 1, id: "rustic_engineer:engine" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B00000000000077"]
+			id: "2B00000000000078"
+			rewards: [{
+				id: "2B00000002000078"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000078"
+				item: { count: 1, id: "rustic_engineer:book_abyssal_submarine" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B00000000000078"]
+			id: "2B00000000000079"
+			rewards: [{
+				id: "2B00000002000079"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000079"
+				item: { count: 1, id: "rustic_engineer:abyssal_submarine_item" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B00000000000077"]
+			id: "2B0000000000007A"
+			rewards: [{
+				id: "2B0000000200007A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007A"
+				item: { count: 1, id: "rustic_engineer:book_spidermech" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B0000000000007A"]
+			id: "2B0000000000007B"
+			rewards: [{
+				id: "2B0000000200007B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007B"
+				item: { count: 1, id: "rustic_engineer:spider_mech_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B00000000000077"]
+			id: "2B0000000000007C"
+			rewards: [{
+				id: "2B0000000200007C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007C"
+				item: { count: 1, id: "rustic_engineer:book_dragon_fly" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2B0000000000007C"]
+			id: "2B0000000000007D"
+			rewards: [{
+				id: "2B0000000200007D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007D"
+				item: { count: 1, id: "rustic_engineer:dragonfly_item" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2B00000000000077"]
+			id: "2B0000000000007E"
+			rewards: [{
+				id: "2B0000000200007E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007E"
+				item: { count: 1, id: "rustic_engineer:book_airship" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2B0000000000007E"]
+			id: "2B0000000000007F"
+			rewards: [{
+				id: "2B0000000200007F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B0000000100007F"
+				item: { count: 1, id: "rustic_engineer:air_ship_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2B00000000000077"]
+			id: "2B00000000000080"
+			rewards: [{
+				id: "2B00000002000080"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000080"
+				item: { count: 1, id: "rustic_engineer:wooden_box" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2B00000000000080"]
+			icon: {
+				id: "rustic_engineer:wooden_cube_sleep"
+			}
+			id: "2B00000000000081"
+			rewards: [{
+				id: "2B00000002000081"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [
+				{
+					id: "2B00000001000081"
+					item: { count: 1, id: "rustic_engineer:wooden_cube_sleep" }
+					type: "item"
+				}
+				{
+					id: "2B00000001010081"
+					item: { count: 1, id: "rustic_engineer:clock_key" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 10.5d
+		}
 	]
 }

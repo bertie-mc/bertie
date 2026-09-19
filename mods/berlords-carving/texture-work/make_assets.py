@@ -91,12 +91,14 @@ SMALL_INGREDIENT = {
     "emerald": {"tag": "c:gems/emerald"}, "amethyst": {"item": "minecraft:amethyst_shard"},
     "lapis": {"item": "minecraft:lapis_lazuli"}, "quartz": {"item": "minecraft:quartz"},
     "obsidian": {"item": "minecraft:obsidian"}, "echo": {"item": "minecraft:echo_shard"},
-    "deep_alloy": {"tag": "c:ingots/deep_alloy"}, "rose_gold": {"tag": "c:ingots/rose_gold"},
+    "deep_alloy": {"tag": "c:ingots/deep_alloy"},
+    # Hazen's Stuff puts a different metal in #c:ingots/rose_gold, so name Slag's ingot outright.
+    "rose_gold": {"item": "slag:rose_gold_ingot"},
     "leather": {"item": "minecraft:leather"},
 }
 BIG_INGREDIENT = {
     "wood": {"tag": "minecraft:logs"}, "stone": {"item": "minecraft:stone"},
-    "flint": {"item": f"{MODID}:flint_block"}, "bone": {"item": "minecraft:bone_block"},
+    "bone": {"item": "minecraft:bone_block"},
     "iron": {"tag": "c:storage_blocks/iron"}, "golden": {"tag": "c:storage_blocks/gold"},
     "copper": {"tag": "c:storage_blocks/copper"}, "diamond": {"tag": "c:storage_blocks/diamond"},
     "emerald": {"tag": "c:storage_blocks/emerald"}, "amethyst": {"item": "minecraft:amethyst_block"},
@@ -190,17 +192,7 @@ def main():
         gen_item_model(f"{mat}_big_slate")
         lang[f"item.{MODID}.{mat}_big_slate"] = f"Big {DISPLAY[mat]} Slate"
 
-    # ---- flint block + carving station item model -------------------------
-    write_json(os.path.join(ASSETS, "models", "block", "flint_block.json"),
-               {"parent": "minecraft:block/cube_all", "textures": {"all": f"{MODID}:block/flint_surface"}})
-    write_json(os.path.join(ASSETS, "blockstates", "flint_block.json"),
-               {"variants": {"": {"model": f"{MODID}:block/flint_block"}}})
-    gen_item_model("flint_block", parent=f"{MODID}:block/flint_block", layer=False)
-    write_json(os.path.join(DATA, "loot_table", "blocks", "flint_block.json"), {
-        "type": "minecraft:block",
-        "pools": [{"rolls": 1, "entries": [{"type": "minecraft:item", "name": f"{MODID}:flint_block"}],
-                   "conditions": [{"condition": "minecraft:survives_explosion"}]}]})
-    lang[f"block.{MODID}.flint_block"] = "Block of Flint"
+    # ---- carving station item model ---------------------------------------
     # carving station item model (block model is hand-maintained); fixes the missing item texture
     gen_item_model("carving_station", parent=f"{MODID}:block/carving_station", layer=False)
     lang[f"block.{MODID}.carving_station"] = "Carving Station"
@@ -251,12 +243,6 @@ def main():
         write_json(os.path.join(rec, f"{mat}_big_slate.json"), rb)
         n_big += 1
 
-    write_json(os.path.join(rec, "flint_block.json"), {
-        "type": "minecraft:crafting_shaped", "pattern": ["FFF", "FFF", "FFF"],
-        "key": {"F": {"item": "minecraft:flint"}}, "result": {"id": f"{MODID}:flint_block", "count": 1}})
-    write_json(os.path.join(rec, "flint_from_block.json"), {
-        "type": "minecraft:crafting_shapeless", "ingredients": [{"item": f"{MODID}:flint_block"}],
-        "result": {"id": "minecraft:flint", "count": 9}})
     write_json(os.path.join(rec, "carving_station.json"), {
         "type": "minecraft:crafting_shaped", "pattern": ["AB", "CC"],
         "key": {"A": {"item": "minecraft:water_bucket"}, "B": {"item": "minecraft:amethyst_shard"},
@@ -278,7 +264,7 @@ def main():
 
     print(f"modid: {MODID}")
     print(f"  shapes: 9 slag + 9 vanilla   slates: small={n_small} big={n_big}")
-    print(f"  recipes: small={n_small} big={n_big} flint=2 station=1 slag_overrides={n_over}")
+    print(f"  recipes: small={n_small} big={n_big} station=1 slag_overrides={n_over}")
     print(f"  (no head/armor item textures; carving builds slag parts / vanilla items directly)")
 
 

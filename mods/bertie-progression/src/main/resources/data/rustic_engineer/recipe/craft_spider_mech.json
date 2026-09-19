@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "rustic_engineer"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "Y": {
+      "item": "create:yellow_seat"
+    },
+    "E": {
+      "item": "rustic_engineer:engine"
+    },
+    "I": {
+      "item": "rustic_engineer:iron_plate"
+    },
+    "M": {
+      "item": "rustic_engineer:movable_parts"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "K": {
+      "item": "rustic_engineer:book_spidermech"
+    }
+  },
+  "pattern": [
+    "  YBB",
+    "BEIKB",
+    "IMMMI",
+    "S S S",
+    "I I I"
+  ],
+  "result": {
+    "id": "rustic_engineer:spider_mech_item",
+    "count": 1
+  },
+  "show_notification": true
+}

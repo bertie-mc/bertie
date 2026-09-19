@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (458)
+## Mods (456)
 
 | Mod |
 |---|
@@ -68,7 +68,6 @@
 | `caelus` |
 | `calcmod-neoforged` |
 | `cataclysm-spellbooks` |
-| `cataclysm-tools` |
 | `cataclysm-x-bettercombat-compat` |
 | `certain-questing-additions` |
 | `chalk-mod` |
@@ -209,7 +208,6 @@
 | `hide-experimental-warning` |
 | `highlight` |
 | `hooked` |
-| `horse-expert` |
 | `hopo-better-ruined-portals` |
 | `hopo-better-underwater-ruins` |
 | `hostile-neural-networks` |
