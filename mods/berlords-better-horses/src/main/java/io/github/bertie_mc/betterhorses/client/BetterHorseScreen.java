@@ -22,7 +22,15 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
                 0,
                 imageWidth,
                 imageHeight);
-        graphics.fill(leftPos + 26, topPos + 17, leftPos + 168, topPos + 71, 0xff171717);
+        int previewRight = menu.hasStorage() ? 78 : 168;
+        graphics.fill(leftPos + 26, topPos + 17, leftPos + previewRight, topPos + 71, 0xff171717);
+        if (menu.hasStorage())
+            graphics.blitSprite(
+                    ResourceLocation.withDefaultNamespace("container/horse/chest_slots"),
+                    leftPos + 79,
+                    topPos + 17,
+                    90,
+                    54);
         graphics.blitSprite(
                 ResourceLocation.withDefaultNamespace("container/horse/saddle_slot"), leftPos + 7, topPos + 17, 18, 18);
         graphics.blitSprite(
@@ -34,7 +42,16 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
             graphics.blit(
                     BetterHorses.id("textures/gui/horseshoe_slot.png"), leftPos + 8, topPos + 54, 0, 0, 16, 16, 16, 16);
         InventoryScreen.renderEntityInInventoryFollowsMouse(
-                graphics, leftPos + 30, topPos + 18, leftPos + 165, topPos + 71, 18, 0.25F, mouseX, mouseY, menu.horse);
+                graphics,
+                leftPos + 26,
+                topPos + 18,
+                leftPos + previewRight,
+                topPos + 71,
+                18,
+                0.25F,
+                mouseX,
+                mouseY,
+                menu.horse);
     }
 
     @Override
@@ -43,5 +60,10 @@ public final class BetterHorseScreen extends AbstractContainerScreen<BetterHorse
         renderTooltip(graphics, mouseX, mouseY);
         if (!menu.getSlot(2).hasItem() && isHovering(8, 54, 16, 16, mouseX, mouseY))
             graphics.renderTooltip(font, Component.translatable("container.betterhorses.horseshoes"), mouseX, mouseY);
+        if (menu.hasStorage()
+                && !menu.getSlot(0).mayPickup(minecraft.player)
+                && isHovering(8, 18, 16, 16, mouseX, mouseY))
+            graphics.renderTooltip(
+                    font, Component.translatable("container.betterhorses.empty_storage"), mouseX, mouseY);
     }
 }

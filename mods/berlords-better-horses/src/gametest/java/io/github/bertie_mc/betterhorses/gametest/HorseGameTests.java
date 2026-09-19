@@ -79,7 +79,8 @@ public final class HorseGameTests {
         horse.setVariant(Variant.BLACK);
         horse.setHealth(23);
         ((HorseEquipment) horse).betterhorses$shoes().setItem(0, BetterHorses.DIAMOND.toStack());
-        ((HorseEquipment) horse).betterhorses$saddleInventory().setItem(0, BetterHorses.WARRIOR.toStack());
+        ((HorseEquipment) horse).betterhorses$saddleInventory().setItem(0, BetterHorses.WANDERER.toStack());
+        ((HorseEquipment) horse).betterhorses$storage().setItem(14, new ItemStack(Items.DIAMOND, 7));
         horse.setBodyArmorItem(BetterHorses.ARMOR.toStack());
         ItemStack effigy = BetterHorses.EFFIGY.toStack();
         Player player = helper.makeMockPlayer(GameType.SURVIVAL);
@@ -108,9 +109,20 @@ public final class HorseGameTests {
                     ((HorseEquipment) restored).betterhorses$tier() == ShoeTier.DIAMOND
                             && ((HorseEquipment) restored)
                                     .betterhorses$syncedSaddle()
-                                    .is(BetterHorses.WARRIOR.get())
+                                    .is(BetterHorses.WANDERER.get())
                             && restored.getBodyArmorItem().is(BetterHorses.ARMOR.get()),
                     "all equipment preserved");
+            helper.assertTrue(
+                    ((HorseEquipment) restored)
+                                            .betterhorses$storage()
+                                            .getItem(14)
+                                            .getCount()
+                                    == 7
+                            && ((HorseEquipment) restored)
+                                    .betterhorses$storage()
+                                    .getItem(0)
+                                    .isEmpty(),
+                    "effigy preserves cargo and its exact slot");
             helper.assertFalse(HorseEffigyItem.occupied(effigy), "effigy empties after spawn");
             helper.assertFalse(
                     HorseEffigyItem.release(effigy, helper.getLevel(), Vec3.atBottomCenterOf(target), 90),
@@ -157,7 +169,10 @@ public final class HorseGameTests {
                 horse.getPassengerRidingPosition(first).distanceTo(horse.getPassengerRidingPosition(second)) > 0.7,
                 "seats must not overlap");
         BetterHorseMenu menu = new BetterHorseMenu(1, first.getInventory(), horse);
-        helper.assertTrue(menu.slots.size() == 39, "three equipment slots and 36 inventory slots");
+        helper.assertTrue(
+                menu.slots.size() == 54
+                        && !menu.getSlot(BetterHorseMenu.STORAGE_START).isActive(),
+                "storage slots are inactive for the passenger saddle");
         helper.assertFalse(menu.getSlot(0).mayPickup(first), "cannot remove occupied double saddle");
         helper.assertFalse(menu.getSlot(2).mayPlace(new ItemStack(Items.DIRT)), "shoe slot rejects other items");
         helper.succeed();
@@ -266,6 +281,143 @@ public final class HorseGameTests {
         helper.succeed();
     }
 
+    @GameTest(template = "empty")
+    public static void travellerMenuMovesCargoAndProtectsSaddle(GameTestHelper helper) {
+        Horse horse = horse(helper);
+        HorseEquipment eq = (HorseEquipment) horse;
+        Player player = helper.makeMockPlayer(GameType.SURVIVAL);
+        BetterHorseMenu menu = new BetterHorseMenu(1, player.getInventory(), horse);
+        helper.assertFalse(menu.hasStorage(), "ordinary horse has no active storage");
+        player.getInventory().setItem(9, BetterHorses.WANDERER.toStack());
+        menu.quickMoveStack(player, 3);
+        helper.assertTrue(menu.hasStorage(), "equipping traveller enables storage without reopening");
+        for (int i = BetterHorseMenu.STORAGE_START; i < BetterHorseMenu.STORAGE_END; i++)
+            helper.assertTrue(menu.getSlot(i).isActive(), "all fifteen slots enabled");
+        player.getInventory().setItem(9, new ItemStack(Items.APPLE, 32));
+        menu.quickMoveStack(player, 3);
+        player.getInventory().setItem(9, new ItemStack(Items.APPLE, 50));
+        menu.quickMoveStack(player, 3);
+        helper.assertTrue(
+                eq.betterhorses$storage().getItem(0).getCount() == 64
+                        && eq.betterhorses$storage().getItem(1).getCount() == 18,
+                "cargo merges and overflows correctly");
+        helper.assertFalse(menu.getSlot(0).mayPickup(player), "loaded saddle cannot be removed");
+        helper.assertFalse(
+                menu.getSlot(0).mayPlace(BetterHorses.WARRIOR.toStack()), "loaded saddle cannot be replaced");
+        menu.clicked(0, 0, net.minecraft.world.inventory.ClickType.PICKUP, player);
+        helper.assertTrue(menu.getCarried().isEmpty() && menu.hasStorage(), "normal click cannot bypass cargo lock");
+        helper.assertTrue(menu.quickMoveStack(player, 0).isEmpty(), "shift click cannot bypass cargo lock");
+        menu.quickMoveStack(player, BetterHorseMenu.STORAGE_START);
+        menu.quickMoveStack(player, BetterHorseMenu.STORAGE_START + 1);
+        helper.assertTrue(
+                eq.betterhorses$storage().isEmpty() && player.getInventory().countItem(Items.APPLE) == 82,
+                "taking cargo conserves every item");
+        menu.quickMoveStack(player, 0);
+        helper.assertFalse(menu.hasStorage(), "empty saddle can be removed");
+        helper.assertFalse(
+                menu.getSlot(BetterHorseMenu.STORAGE_START).mayPlace(new ItemStack(Items.APPLE)),
+                "inactive slots reject items on the server");
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void travellerCargoSurvivesReloadAndDropsOnDeath(GameTestHelper helper) {
+        Horse horse = horse(helper);
+        HorseEquipment eq = (HorseEquipment) horse;
+        eq.betterhorses$saddleInventory().setItem(0, BetterHorses.WANDERER.toStack());
+        ItemStack cargo = new ItemStack(Items.DIAMOND, 7);
+        cargo.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME, Component.literal("Travel fund"));
+        eq.betterhorses$storage().setItem(14, cargo);
+        // Commands or another mod can bypass menu restrictions; cargo must survive that too.
+        eq.betterhorses$saddleInventory().setItem(0, ItemStack.EMPTY);
+        CompoundTag saved = new CompoundTag();
+        horse.save(saved);
+        Horse loaded = EntityType.HORSE.create(helper.getLevel());
+        loaded.load(saved);
+        HorseEquipment restored = (HorseEquipment) loaded;
+        helper.assertTrue(
+                restored.betterhorses$storage().getItem(0).isEmpty()
+                        && ItemStack.matches(
+                                cargo, restored.betterhorses$storage().getItem(14)),
+                "slot, count and components survive reload even with a forcibly removed saddle");
+        eq.betterhorses$saddleInventory().setItem(0, BetterHorses.WANDERER.toStack());
+        horse.hurt(horse.damageSources().genericKill(), Float.MAX_VALUE);
+        helper.runAfterDelay(2, () -> {
+            int diamonds = helper
+                    .getLevel()
+                    .getEntitiesOfClass(
+                            net.minecraft.world.entity.item.ItemEntity.class,
+                            horse.getBoundingBox().inflate(3))
+                    .stream()
+                    .filter(item -> item.getItem().is(Items.DIAMOND))
+                    .mapToInt(item -> item.getItem().getCount())
+                    .sum();
+            helper.assertTrue(diamonds == 7 && eq.betterhorses$storage().isEmpty(), "death drops cargo exactly once");
+            helper.succeed();
+        });
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 100)
+    public static void diamondWalksOnPowderSnow(GameTestHelper helper) {
+        powderSnowTest(helper, BetterHorses.DIAMOND.toStack());
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 100)
+    public static void netheriteWalksOnPowderSnow(GameTestHelper helper) {
+        powderSnowTest(helper, BetterHorses.NETHERITE.toStack());
+    }
+
+    private static void powderSnowTest(GameTestHelper helper, ItemStack shoes) {
+        for (int x = 3; x < 9; x++)
+            for (int z = 3; z < 9; z++) helper.setBlock(new BlockPos(x, 1, z), Blocks.POWDER_SNOW);
+        Horse horse = horse(helper);
+        horse.setNoAi(false);
+        HorseEquipment eq = (HorseEquipment) horse;
+        eq.betterhorses$shoes().setItem(0, shoes);
+        BlockPos center = helper.absolutePos(new BlockPos(5, 6, 5));
+        horse.setPos(center.getX() + 0.5, center.getY(), center.getZ() + 0.5);
+        helper.assertTrue(
+                net.minecraft.world.level.block.PowderSnowBlock.canEntityWalkOnPowderSnow(horse),
+                "waterwalking tier supports powder snow");
+        helper.runAfterDelay(40, () -> {
+            double surface = helper.absolutePos(new BlockPos(5, 2, 5)).getY();
+            helper.assertTrue(
+                    horse.onGround() && Math.abs(horse.getY() - surface) < 0.05,
+                    "horse lands on the full snow surface after a long fall: " + horse.getY());
+            helper.assertTrue(horse.getTicksFrozen() == 0, "standing on snow does not freeze horse");
+            eq.betterhorses$shoes().setItem(0, BetterHorses.GOLD.toStack());
+            helper.assertFalse(
+                    net.minecraft.world.level.block.PowderSnowBlock.canEntityWalkOnPowderSnow(horse),
+                    "gold does not grant powder snow walking");
+            helper.runAfterDelay(15, () -> {
+                helper.assertTrue(horse.getY() < surface - 0.2, "removing waterwalking restores sinking");
+                helper.succeed();
+            });
+        });
+    }
+
+    @GameTest(template = "empty")
+    public static void travellerAlwaysUsesFullJumpWithShoeBonus(GameTestHelper helper) {
+        JumpHorse horse = new JumpHorse(helper.getLevel());
+        HorseEquipment eq = (HorseEquipment) horse;
+        eq.betterhorses$saddleInventory().setItem(0, new ItemStack(Items.SADDLE));
+        horse.chargedJump(0);
+        double weak = horse.getDeltaMovement().y;
+        horse.chargedJump(100);
+        double full = horse.getDeltaMovement().y;
+        helper.assertTrue(weak < full, "ordinary saddle keeps vanilla charge behavior");
+        eq.betterhorses$saddleInventory().setItem(0, BetterHorses.WANDERER.toStack());
+        horse.chargedJump(0);
+        helper.assertTrue(Math.abs(horse.getDeltaMovement().y - full) < 1e-8, "traveller tap gives full power");
+        eq.betterhorses$shoes().setItem(0, BetterHorses.DIAMOND.toStack());
+        horse.chargedJump(0);
+        helper.assertTrue(
+                Math.abs(HorsePhysics.apex(horse.getDeltaMovement().y, 0.08) - HorsePhysics.apex(full, 0.08) - 2)
+                        < 0.01,
+                "full jump includes the horseshoe bonus");
+        helper.succeed();
+    }
+
     private static class JumpHorse extends Horse {
         JumpHorse(net.minecraft.world.level.Level level) {
             super(EntityType.HORSE, level);
@@ -273,6 +425,11 @@ public final class HorseGameTests {
 
         void jump() {
             executeRidersJump(1, Vec3.ZERO);
+        }
+
+        void chargedJump(int charge) {
+            onPlayerJump(charge);
+            executeRidersJump(playerJumpPendingScale, Vec3.ZERO);
         }
     }
 }

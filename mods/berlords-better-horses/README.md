@@ -27,6 +27,10 @@ fire resistance: fire blocks, burning, and being submerged in lava still hurt.
 Lava protection applies at the walkable surface. Surface walking does not raise a
 horse that is already submerged.
 
+Waterwalking also lets diamond- and netherite-shod horses stand and land on powder
+snow. Iron and gold shoes do not prevent sinking. The item tooltip keeps this
+behavior implicit in waterwalking.
+
 Each material colors the hooves' bottom pixel row. The two middle pixels on the
 rear face remain the horse's original grey, leaving the horseshoe open at the back.
 
@@ -45,8 +49,16 @@ It does not make the horse fireproof. See [NOTICE](NOTICE) for attribution and l
   to the controlling rider. The rider's normal defenses apply. If the rider rejects
   the damage (for example during invulnerability), the horse retains that damage.
   Without a rider, the horse takes normal damage.
-- **Wanderer saddle:** normal saddle behavior, with green cloth, saddlebags, and a
-  bedroll. Its special ability is intentionally reserved for a later design.
+- **Traveller saddle:** adds fifteen storage slots in a 5x3 grid to the right of
+  the horse preview. Cargo saves with the horse, survives effigy capture, and
+  drops on death. Empty the storage before removing or replacing the saddle.
+  Equipping it shows the slots immediately in an already-open horse inventory.
+  Its green cloth, saddlebags, and bedroll are unchanged.
+  Pressing the bound jump key immediately triggers the horse's maximum jump,
+  including any horseshoe bonus. Holding the key does not repeat the jump;
+  release and press again after landing. Other saddles retain vanilla charging.
+  The item description is "Extra space, perfect jump". Its existing
+  `betterhorses:wanderer_saddle` registry ID remains unchanged for saved worlds.
 
 Server setting `warriorDamageTransfer` accepts 0.0–1.0 in the world's
 `serverconfig/betterhorses-server.toml`. The default is `0.8`.
@@ -74,7 +86,7 @@ produces one item.
 | Iron, gold, diamond horseshoes | `M.M / M.M / .M.` | `M`: iron ingot, gold ingot, or diamond, respectively |
 | Passenger (double) saddle | `S.S / CCC / H.H` | `S`: saddle; `C`: cyan wool; `H`: tripwire hook |
 | Warrior saddle | `DSW / RRR / HAH` | `D`: shield; `S`: saddle; `W`: iron sword; `R`: red wool; `H`: tripwire hook; `A`: iron horse armor |
-| Wanderer (travel) saddle | `.SC / GGG / H.H` | `S`: saddle; `C`: chest; `G`: green wool; `H`: tripwire hook |
+| Traveller saddle | `.SC / GGG / H.H` | `S`: saddle; `C`: chest; `G`: green wool; `H`: tripwire hook |
 
 Netherite horseshoes and horse armor use the smithing table: netherite upgrade
 template + diamond version + netherite ingot. The effigy recipe unlocks when the
@@ -102,11 +114,14 @@ Neither script changes the imported armor or the horse effigy.
 
 Unit tests cover jump-height conversion and texture dimensions/hoof gaps.
 GameTests cover persistence, effigy safety, inventory transfers, seating, damage,
-and fluid landings. The client test opens the synchronized horse inventory,
-checks item models, and captures all three rendered saddles. Screenshots are in
+fluid and powder-snow landings, cargo persistence/drop/transfer, and full jump power.
+Client tests exercise synchronized storage and key-press/release jump behavior,
+check item models, and capture the inventory and all three rendered saddles. Screenshots are in
 `build/test-diagnostics/clienttest`.
 
 Mixins target AbstractHorse equipment persistence, menus, rider positioning and
-jump velocity, plus surface-only lava contact. Client rendering adds a layer to
+jump velocity, surface-only lava contact, and powder-snow collision. A client-only
+input mixin replaces charging with an immediate jump for the traveller saddle.
+Client rendering adds a layer to
 the existing horse renderer. Other mods that replace horse menus/renderers or
 change rider physics should be checked together with this mod.

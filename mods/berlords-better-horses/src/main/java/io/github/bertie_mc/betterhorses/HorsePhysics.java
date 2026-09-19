@@ -9,7 +9,8 @@ public final class HorsePhysics {
         double height = 0;
         for (int tick = 0; tick < 10000 && velocity > 0; tick++) {
             height += velocity;
-            velocity = (velocity - gravity) * 0.98;
+            // travel() applies air drag, then client aiStep() damps the next tick's velocity again.
+            velocity = (velocity - gravity) * (double) 0.98F * 0.98;
         }
         return height;
     }

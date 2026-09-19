@@ -9,3 +9,6 @@
 - Add recipes, translations, server damage-transfer configuration, and automated tests.
 - Clean up native 16x16 saddle icons and unify horseshoes with five-pixel arms and single-pixel nail holes.
 - Use five-material horseshoes, a six-plank effigy, and wool/tripwire-hook saddle recipes with specialized equipment ingredients.
+- Give the traveller saddle fifteen persistent cargo slots and a full-height jump on key press.
+- Extend diamond and netherite waterwalking to powder snow.
+- Account for ridden-client drag when calculating the horseshoes' extra jump height.

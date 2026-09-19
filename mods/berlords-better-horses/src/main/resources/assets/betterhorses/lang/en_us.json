@@ -7,8 +7,9 @@
   "item.betterhorses.netherite_horse_armor": "Netherite Horse Armor",
   "item.betterhorses.passenger_saddle": "Passenger Saddle",
   "item.betterhorses.warrior_saddle": "Warrior Saddle",
-  "item.betterhorses.wanderer_saddle": "Wanderer Saddle",
+  "item.betterhorses.wanderer_saddle": "Traveller Saddle",
   "container.betterhorses.horseshoes": "Horseshoes",
+  "container.betterhorses.empty_storage": "Empty the storage before removing the saddle",
   "tooltip.betterhorses.speed": "+%s blocks/second speed",
   "tooltip.betterhorses.fall": "+%s blocks safe fall distance",
   "tooltip.betterhorses.jump": "+%s blocks jump height",
@@ -17,7 +18,7 @@
   "tooltip.betterhorses.lava": "Walk on lava; protected from magma and campfires",
   "tooltip.betterhorses.passenger": "Two riders; the front rider steers",
   "tooltip.betterhorses.warrior": "Transfers %s%% of horse damage to the rider",
-  "tooltip.betterhorses.wanderer": "A saddle for the road. Special ability coming later.",
+  "tooltip.betterhorses.wanderer": "Extra space, perfect jump",
   "tooltip.betterhorses.effigy_empty": "Use on an unoccupied, unleashed tamed horse to store it",
   "tooltip.betterhorses.effigy_full": "Contains a horse. Use on the ground to release it."
 }

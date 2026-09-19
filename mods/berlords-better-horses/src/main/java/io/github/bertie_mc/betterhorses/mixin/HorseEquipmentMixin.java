@@ -36,6 +36,9 @@ public abstract class HorseEquipmentMixin extends Animal implements HorseEquipme
     @Unique
     private SimpleContainer betterhorses$shoeInventory;
 
+    @Unique
+    private SimpleContainer betterhorses$storageInventory;
+
     protected HorseEquipmentMixin(EntityType<? extends Animal> type, Level level) {
         super(type, level);
     }
@@ -63,6 +66,12 @@ public abstract class HorseEquipmentMixin extends Animal implements HorseEquipme
     @Override
     public SimpleContainer betterhorses$saddleInventory() {
         return inventory;
+    }
+
+    @Override
+    public SimpleContainer betterhorses$storage() {
+        if (betterhorses$storageInventory == null) betterhorses$storageInventory = new SimpleContainer(15);
+        return betterhorses$storageInventory;
     }
 
     @Override
@@ -104,6 +113,11 @@ public abstract class HorseEquipmentMixin extends Animal implements HorseEquipme
     private void betterhorses$save(CompoundTag tag, CallbackInfo ci) {
         if (!betterhorses$shoes().isEmpty())
             tag.put("BetterHorsesShoes", betterhorses$shoes().getItem(0).save(registryAccess()));
+        if (!betterhorses$storage().isEmpty()) {
+            CompoundTag storage = new CompoundTag();
+            ContainerHelper.saveAllItems(storage, betterhorses$storage().getItems(), registryAccess());
+            tag.put("BetterHorsesStorage", storage);
+        }
     }
 
     @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
@@ -114,12 +128,19 @@ public abstract class HorseEquipmentMixin extends Animal implements HorseEquipme
         ItemStack saddle = ItemStack.parseOptional(registryAccess(), tag.getCompound("SaddleItem"));
         if (saddle.getItem() instanceof SpecialSaddleItem && (Object) this instanceof Horse)
             inventory.setItem(0, saddle.copyWithCount(1));
+        betterhorses$storage().clearContent();
+        ContainerHelper.loadAllItems(
+                tag.getCompound("BetterHorsesStorage"), betterhorses$storage().getItems(), registryAccess());
     }
 
     @Inject(method = "dropEquipment", at = @At("TAIL"))
     private void betterhorses$drop(CallbackInfo ci) {
         ItemStack shoes = betterhorses$shoes().removeItemNoUpdate(0);
         if (!shoes.isEmpty()) spawnAtLocation(shoes);
+        for (int i = 0; i < betterhorses$storage().getContainerSize(); i++) {
+            ItemStack stored = betterhorses$storage().removeItemNoUpdate(i);
+            if (!stored.isEmpty()) spawnAtLocation(stored);
+        }
     }
 
     @Inject(method = "openCustomInventoryScreen", at = @At("HEAD"), cancellable = true)
@@ -162,5 +183,10 @@ public abstract class HorseEquipmentMixin extends Animal implements HorseEquipme
         return (Object) this instanceof Horse
                 ? HorsePhysics.boostedJump(original, betterhorses$tier().jumpHeight, getGravity())
                 : original;
+    }
+
+    @ModifyVariable(method = "onPlayerJump", at = @At("HEAD"), argsOnly = true)
+    private int betterhorses$perfectJump(int charge) {
+        return (Object) this instanceof Horse && betterhorses$traveller() ? 100 : charge;
     }
 }

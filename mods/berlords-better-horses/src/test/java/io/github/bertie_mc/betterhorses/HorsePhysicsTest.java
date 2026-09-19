@@ -15,6 +15,11 @@ class HorsePhysicsTest {
     }
 
     @Test
+    void modelsVanillaRiddenClientDrag() {
+        assertEquals(1.6248153720893173, HorsePhysics.apex(0.5, 0.08), 1e-8);
+    }
+
+    @Test
     void noBonusAndZeroGravityStayUnchanged() {
         assertEquals(0.7, HorsePhysics.boostedJump(0.7, 0, 0.08));
         assertEquals(0.7, HorsePhysics.boostedJump(0.7, 3, 0));
