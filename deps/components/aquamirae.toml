@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "k23mNPhZ"
+version-id = "iUPJ8ziU"
+filename = "aquamirae-neoforge-1.21.1-7.2.10.jar"

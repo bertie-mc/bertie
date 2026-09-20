@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "6e9590b5df58f8bee2c2f5e7c22976ff05c2b78c2c6b4626ce9b871ae0a5658d"
+inputs-hash = "91928061aa453e2e9a2c331175c9409baa7653f6bf9a3e8c5b77c3de8ff4ec8e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -73,6 +73,10 @@ mod = "curseforge:60028:7901588"
 [components."aquaculture-delight"]
 any = "curseforge:961988:6179576"
 mod = "curseforge:961988:6179576"
+
+[components."aquamirae"]
+any = "modrinth:k23mNPhZ:iUPJ8ziU"
+mod = "modrinth:k23mNPhZ:iUPJ8ziU"
 
 [components."aquatic-creepers"]
 any = "curseforge:1331880:6918744"
@@ -576,6 +580,10 @@ mod = "curseforge:309858:6875895"
 [components."forgified-fabric-api"]
 any = "modrinth:Aqlf1Shp:7nHK7hMg"
 mod = "modrinth:Aqlf1Shp:7nHK7hMg"
+
+[components."fragmentum"]
+any = "modrinth:49C5QgTK:fbGohly4"
+mod = "modrinth:49C5QgTK:fbGohly4"
 
 [components."frights-delight"]
 any = "curseforge:927591:8058022"
@@ -9305,6 +9313,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:49C5QgTK:fbGohly4"]
+name = "fragmentum"
+component = "fragmentum"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "49C5QgTK"
+version = "fbGohly4"
+filename = "fragmentum-5.0.0+1.21.1-neoforge.jar"
+project-id = "49C5QgTK"
+version-id = "fbGohly4"
+provides = ["fragmentum"]
+bundled-provides = ["yet_another_config_lib_v3", "kotlinforforge"]
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."modrinth:5sy6g3kz:2NyTus6V"]
 name = "better-combat"
 provider = "modrinth"
@@ -10458,6 +10486,26 @@ version-id = "bnFmuIDZ"
 provides = []
 bundled-provides = []
 required = [{ "artifact" = "curseforge:1015157:6485740", "mod-id" = "paxi", "side" = "both", "origin" = "profile:release-curseforge:native-packs.datapack" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:k23mNPhZ:iUPJ8ziU"]
+name = "aquamirae"
+component = "aquamirae"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "k23mNPhZ"
+version = "iUPJ8ziU"
+filename = "aquamirae-neoforge-1.21.1-7.2.10.jar"
+project-id = "k23mNPhZ"
+version-id = "iUPJ8ziU"
+provides = ["aquamirae"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:49C5QgTK:fbGohly4", "mod-id" = "fragmentum", "version-range" = "[5.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

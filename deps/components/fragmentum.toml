@@ -1,0 +1,8 @@
+# Aquamirae needs Fragmentum 5, and Caravans bundles 2.x. The explicit pin is what makes the
+# newer one win; its declared range covers what Caravans asks for.
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "49C5QgTK"
+version-id = "fbGohly4"
+filename = "fragmentum-5.0.0+1.21.1-neoforge.jar"

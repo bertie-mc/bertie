@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (454)
+## Mods (455)
 
 | Mod |
 |---|
@@ -29,6 +29,7 @@
 | `apothic-spawners` |
 | `aquaculture` |
 | `aquaculture-delight` |
+| `aquamirae` |
 | `aquatic-creepers` |
 | `architectury-api` |
 | `armageddon` |
