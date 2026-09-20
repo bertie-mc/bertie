@@ -1,4 +1,4 @@
-# Native 16x16 zombie/breed cleanup, plus the 32x32 skeleton detail pass.
+# Native 16x16 apple artwork; the skeleton is stored at 32x32 for eight finer contour pixels.
 # Vanilla 1.21.1 silhouette reference: apple-style-revision.md.
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
@@ -75,6 +75,15 @@ foreach ($kind in @('zombie','breed')) {
         if ($kind -eq 'zombie') {
             foreach($point in @(@(5,8),@(4,9),@(10,11),@(9,12))) {
                 Pixel $bitmap $point[0] $point[1] '#59432b'
+            }
+            # One upper-right wound, using vanilla rotten flesh's material colors.
+            $rotRows=@('DD..','HMOD','MLBO','.BDD','..O.')
+            $rotPalette=@{ O='#28140a'; D='#522c10'; B='#8b3418'; M='#b44420'; H='#c5815a'; L='#c56541' }
+            for($ry=0;$ry -lt $rotRows.Count;$ry++) {
+                for($rx=0;$rx -lt 4;$rx++) {
+                    $rot=[string]$rotRows[$ry][$rx]
+                    if($rot -ne '.') { Pixel $bitmap ($rx+10) ($ry+5) $rotPalette[$rot] }
+                }
             }
         }
         $bitmap.Save((Join-Path $assetRoot ($kind+'_apple.png')),[Drawing.Imaging.ImageFormat]::Png)

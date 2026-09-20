@@ -2,6 +2,7 @@ package io.github.bertie_mc.betterhorses;
 
 import java.util.List;
 import java.util.Locale;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -51,7 +52,10 @@ public final class HorseAppleItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flag) {
-        lines.add(Component.translatable("tooltip.betterhorses." + effect.name().toLowerCase(Locale.ROOT) + "_apple"));
-        if (effect != Effect.BREED) lines.add(Component.translatable("tooltip.betterhorses.appearance_revert"));
+        lines.add(Component.translatable("tooltip.betterhorses." + effect.name().toLowerCase(Locale.ROOT) + "_apple")
+                .withStyle(ChatFormatting.GRAY));
+        if (effect != Effect.BREED)
+            lines.add(Component.translatable("tooltip.betterhorses.appearance_revert")
+                    .withStyle(ChatFormatting.GRAY));
     }
 }

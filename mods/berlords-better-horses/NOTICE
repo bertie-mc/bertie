@@ -10,11 +10,13 @@ knight created for this project. Prompts are recorded in art-prompts.json.
 tools/build-entity-textures.ps1 regenerates the original hoof and empty-slot textures.
 The three appearance apple concepts were created with built-in OpenAI ImageGen;
 tools/apple-prompts.json records the original prompts; tools/apple-prompts-v2.json
-records the shared-shape revision; tools/skeleton-apple-prompt-v5.json records the
-32x32 skeleton revision with dark contours and the vanilla stem. tools/build-apple-textures.ps1 and
+records the shared-shape revision; tools/apple-prompts-v6.json records the
+rotten-flesh patch and coarse skeleton revision. tools/build-apple-textures.ps1 and
 tools/build-skeleton-apple.ps1 record the final pixels at their native resolutions.
 The apple contour and stalk follow Minecraft Java 1.21.1's
-apple texture, which remains Mojang's property. The skeleton apple's open ribs
+apple texture, which remains Mojang's property. The zombie patch references
+Minecraft's rotten flesh material colors; that reference image is not bundled.
+The skeleton apple's open ribs
 take visual inspiration from mongoose_artist's Born in Chaos Bone Heart; none of
 that item's pixels are included. Reference details are in tools/apple-style-revision.md.
 The cosmetic horse appearances reference

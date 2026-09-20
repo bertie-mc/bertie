@@ -1,0 +1,15 @@
+{
+  "version": 6,
+  "tool": "Built-in OpenAI ImageGen",
+  "assets": [
+    {
+      "name": "zombie",
+      "prompt": "Precise edit of a Minecraft item sprite. Image 1 shows the current three apple items; edit ONLY the left Zombie Apple and return that one item. Image 2 is vanilla rotten flesh, a material/color reference. Keep the Zombie Apple's exact vanilla 16x16 apple silhouette, brown vanilla stem, olive-green body and upper-left lighting. Add ONE connected rotten patch on the UPPER RIGHT of the apple body, about 4x4 native pixels. The patch looks like exposed Minecraft rotten flesh: rust red/orange meat, brown edge crevices, tan lit ridges, a little dull ochre. Copy the material feeling, not the shape of the rotten flesh item. Follow the apple surface with connected pixel clusters; no scattered noise. Preserve the rest of the item, no bite removed and no silhouette change. Strict 16x16 source grid, crisp large squares, flat finite palette, transparent background, no text or frame. Show enlarged pixel art."
+    },
+    {
+      "name": "skeleton",
+      "prompt": "Redraw this Minecraft Skeleton Apple with MUCH LESS obvious high-resolution detail. Image 1 is the current item, edit target. Image 2 is the vanilla apple outline reference. Keep the familiar vanilla apple outline, original vanilla brown stem, three pairs of real transparent rib gaps, and dark outer and inner outlines. Main design must be drawn as chunky 16x16 pixel art: broad blocky ribs, broad coherent light and shadow shapes, NOT many little staircase steps. It may be stored at 32x32, but at least 90 percent of its design should consist of uniform 2x2 squares that represent 16x16 pixels. Only a handful of half-pixel details at awkward rib bends, nothing else. The stalk MUST have only the exact vanilla apple's coarse pixels, no extra tiny details or outline. Bone material ivory with ONE upper-left light source: connected ivory top faces, beige sides, connected darker undersides and right edge of sternum. No disconnected brown/gray blotches, no corrosion speckles, no cracks or pixel noise. Dark outline follows geometry, including inner holes. Keep it visibly coarse like a normal vanilla item, but curved enough to evoke a ribcage rather than a ladder. Transparent background, no labels or frame. Show as crisp enlarged pixel art."
+    }
+  ],
+  "cleanup": "Native-grid cleanup uses the generated concepts as visual guidance. Zombie and breed apples are 16x16. Skeleton apple is drawn on a 16x16 base, enlarged 2x, with eight finer contour pixels. See build-apple-textures.ps1 and build-skeleton-apple.ps1."
+}
