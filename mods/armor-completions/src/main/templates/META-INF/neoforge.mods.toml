@@ -1,0 +1,65 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
+
+[[mixins]]
+config = "armorcompletions.mixins.json"
+
+[[dependencies."${mod_id}"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# Each set's own mod. AFTER, because the pieces read its armour item and its renderer, and the
+# textures below sit in its namespace.
+[[dependencies."${mod_id}"]]
+modId = "born_in_chaos_v1"
+type = "required"
+versionRange = "[1.7.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "cataclysm"
+type = "required"
+versionRange = "[3.31,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "hazennstuff"
+type = "required"
+versionRange = "[1.4.0.13,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "irons_spellbooks"
+type = "required"
+versionRange = "[1.21.1-3.16.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Held below 5: the Hazen sets are drawn by GeckoLib 4's armour renderer.
+[[dependencies."${mod_id}"]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.8.4,5)"
+ordering = "AFTER"
+side = "BOTH"

@@ -75,6 +75,7 @@ include(
     ":core:client-test-driver",
     ":core:gametest-driver",
     ":mods:berlords-food-system",
+    ":mods:armor-completions",
     ":mods:berlords-better-horses",
     ":mods:bertie-blackhole",
     ":mods:bertie-creatures",

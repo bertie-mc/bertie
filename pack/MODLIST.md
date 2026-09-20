@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (455)
+## Mods (454)
 
 | Mod |
 |---|
@@ -324,7 +324,6 @@
 | `per-spatium` |
 | `pick-up-notifier` |
 | `piglin-proliferation` |
-| `pillager-caravans` |
 | `ping-wheel` |
 | `placebo` |
 | `platform` |
@@ -460,10 +459,11 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (29)
+## Ours (30)
 
 | Mod |
 |---|
+| `armorcompletions` |
 | `berlords-food-system` |
 | `berlords_carving` |
 | `bertie-blackhole` |

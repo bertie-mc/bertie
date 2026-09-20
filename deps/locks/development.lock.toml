@@ -1,10 +1,14 @@
 profile = "development"
-inputs-hash = "ab14ae824cabc6f677db2e66cfde207a72abe9573e639608372bb0bc7a272ed4"
+inputs-hash = "e6bbe271c1b5f5ebac0bd2838bfd3a2793d97a90e447d6f7ed9f305b34f0df89"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
 any = "modrinth:UqdL217I:i8fZqMWD"
 mod = "modrinth:UqdL217I:i8fZqMWD"
+
+[components."aces-spell-utils"]
+any = "modrinth:7Jy4rK9m:zSD21doG"
+mod = "modrinth:7Jy4rK9m:zSD21doG"
 
 [components."advanced-loot-info"]
 any = "modrinth:PEPVViac:y8p1Vq83"
@@ -53,6 +57,10 @@ mod = "modrinth:rqFWfVlz:Vp2TR6ib"
 [components."apotheosis-x-irons-spellbooks-compat"]
 any = "curseforge:1244863:8048938"
 mod = "curseforge:1244863:8048938"
+
+[components."apothic-attributes"]
+any = "modrinth:DGaH8Rh0:Z0nG7STl"
+mod = "modrinth:DGaH8Rh0:Z0nG7STl"
 
 [components."apothic-combat"]
 any = "modrinth:N29BujGY:8gwHTe22"
@@ -105,6 +113,10 @@ mod = "modrinth:KeXkdmTD:Ao9u8ZHo"
 [components."avaritias-delight"]
 any = "modrinth:gtX73iTU:QtdkM9Oa"
 mod = "modrinth:gtX73iTU:QtdkM9Oa"
+
+[components."azurelib"]
+any = "modrinth:7zlUOZvb:4GgJN1LU"
+mod = "modrinth:7zlUOZvb:4GgJN1LU"
 
 [components."bad-wither-no-cookie"]
 any = "modrinth:lL2MtE37:FRuLJsBp"
@@ -1089,13 +1101,13 @@ mod = "modrinth:ZX66K16c:5NZounJc"
 any = "modrinth:iRE67WIn:Xm2VFMY1"
 mod = "modrinth:iRE67WIn:Xm2VFMY1"
 
-[components."pillager-caravans"]
-any = "modrinth:8jJHxtdz:LoE1S6Fk"
-mod = "modrinth:8jJHxtdz:LoE1S6Fk"
-
 [components."ping-wheel"]
 any = "modrinth:QQXAdCzh:Zrh2Fmn9"
 mod = "modrinth:QQXAdCzh:Zrh2Fmn9"
+
+[components."placebo"]
+any = "modrinth:tCkE8p2N:kb8pGRQR"
+mod = "modrinth:tCkE8p2N:kb8pGRQR"
 
 [components."plonk"]
 any = "modrinth:EUmBPkQn:Y8aicJfZ"
@@ -2309,25 +2321,6 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:kSsLSjEt:pC1MYhqR", "namespace" = "alexscaves", "reason" = "ships data/alexscaves/", "origin" = "archive-data" }, { "artifact" = "modrinth:VpmCsizY:kdvvFM7V", "namespace" = "iceandfire", "reason" = "ships data/iceandfire/", "origin" = "archive-data" }]
 
-[artifacts."modrinth:49C5QgTK:CUGxFf8Z"]
-name = "fragmentum"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "49C5QgTK"
-version = "CUGxFf8Z"
-filename = "fragmentum-neoforge-1.21.1-2.2.4.jar"
-project-id = "49C5QgTK"
-version-id = "CUGxFf8Z"
-provides = ["fragmentum"]
-bundled-provides = ["yet_another_config_lib_v3"]
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:49C5QgTK:fbGohly4"]
 name = "fragmentum"
 component = "fragmentum"
@@ -2946,6 +2939,7 @@ integrations = []
 
 [artifacts."modrinth:7Jy4rK9m:zSD21doG"]
 name = "aces-spell-utils"
+component = "aces-spell-utils"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -3103,6 +3097,7 @@ integrations = []
 
 [artifacts."modrinth:7zlUOZvb:4GgJN1LU"]
 name = "azurelib"
+component = "azurelib"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -3235,26 +3230,6 @@ version-id = "kRGU4K6D"
 provides = ["taxtg"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:8jJHxtdz:LoE1S6Fk"]
-name = "pillager-caravans"
-component = "pillager-caravans"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "8jJHxtdz"
-version = "LoE1S6Fk"
-filename = "caravans-neoforge-1.21.1-2.1.1.jar"
-project-id = "8jJHxtdz"
-version-id = "LoE1S6Fk"
-provides = ["caravans"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:49C5QgTK:CUGxFf8Z", "mod-id" = "fragmentum", "version-range" = "[2.1.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -3938,6 +3913,7 @@ integrations = []
 
 [artifacts."modrinth:DGaH8Rh0:Z0nG7STl"]
 name = "apothic-attributes"
+component = "apothic-attributes"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9434,6 +9410,7 @@ integrations = []
 
 [artifacts."modrinth:tCkE8p2N:kb8pGRQR"]
 name = "placebo"
+component = "placebo"
 provider = "modrinth"
 kind = "mod"
 side = "both"

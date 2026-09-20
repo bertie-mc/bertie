@@ -1,0 +1,27 @@
+SCOPE OF THE PUBLIC DOMAIN DEDICATION
+
+The dedication in UNLICENSE covers the original code and assets in this
+component. The ten armour pieces, their textures, their worn atlases and their
+GeckoLib geometry were drawn for this mod. They are new work that takes its cue
+from the sets they finish; no upstream art is copied or derived.
+
+It does not, and cannot, cover third-party material that this component merely
+depends on or interoperates with. Six sets are completed here and each belongs
+to its own mod, which keeps its own licence and whose own assets stay in its own
+jar:
+
+- Spiny Shell - Born in Chaos (Mongoose_artist)
+- Bone Reptile - L_Ender's Cataclysm (L_Ender)
+- Bishop of Deceit, Pyromancer Brute, Nameless One, Necromancer - Haze n Stuff
+  (Hazen)
+
+The armour framework, the renderers and the animation the pieces attach to come
+from Iron's Spells n Spellbooks and GeckoLib. Nothing from any of them is
+redistributed here.
+
+Textures that finish a set are written into that set's own namespace, because
+that is where its renderer looks for them. The files are ours; the namespace is
+only an address.
+
+Compile-time dependencies are resolved from public mavens at build time. No
+third-party jar is committed.

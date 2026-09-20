@@ -1,10 +1,14 @@
 profile = "release-curseforge"
-inputs-hash = "91928061aa453e2e9a2c331175c9409baa7653f6bf9a3e8c5b77c3de8ff4ec8e"
+inputs-hash = "0add9dcd02c7b01514620483a42f5fbcf3de7b25cb70229f2fb5e2e2fd97edf5"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
 any = "curseforge:917449:8082280"
 mod = "curseforge:917449:8082280"
+
+[components."aces-spell-utils"]
+any = "modrinth:7Jy4rK9m:zSD21doG"
+mod = "modrinth:7Jy4rK9m:zSD21doG"
 
 [components."advanced-loot-info"]
 any = "curseforge:1205426:8168901"
@@ -53,6 +57,10 @@ mod = "curseforge:313970:8182695"
 [components."apotheosis-x-irons-spellbooks-compat"]
 any = "curseforge:1244863:8048938"
 mod = "curseforge:1244863:8048938"
+
+[components."apothic-attributes"]
+any = "modrinth:DGaH8Rh0:Z0nG7STl"
+mod = "modrinth:DGaH8Rh0:Z0nG7STl"
 
 [components."apothic-combat"]
 any = "curseforge:986982:6105085"
@@ -105,6 +113,10 @@ mod = "curseforge:1353978:7035655"
 [components."avaritias-delight"]
 any = "curseforge:1289374:8133384"
 mod = "curseforge:1289374:8133384"
+
+[components."azurelib"]
+any = "modrinth:7zlUOZvb:4GgJN1LU"
+mod = "modrinth:7zlUOZvb:4GgJN1LU"
 
 [components."bad-wither-no-cookie"]
 any = "modrinth:lL2MtE37:FRuLJsBp"
@@ -1089,13 +1101,13 @@ mod = "curseforge:351441:6409785"
 any = "curseforge:657831:8065411"
 mod = "curseforge:657831:8065411"
 
-[components."pillager-caravans"]
-any = "curseforge:1356772:7315954"
-mod = "curseforge:1356772:7315954"
-
 [components."ping-wheel"]
 any = "curseforge:734339:7996932"
 mod = "curseforge:734339:7996932"
+
+[components."placebo"]
+any = "modrinth:tCkE8p2N:kb8pGRQR"
+mod = "modrinth:tCkE8p2N:kb8pGRQR"
 
 [components."plonk"]
 any = "curseforge:345779:6343120"
@@ -3886,27 +3898,6 @@ file-id = 8167342
 provides = ["mr_tree_veinminer"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1356772:7315954"]
-name = "pillager-caravans"
-component = "pillager-caravans"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "pillager-caravans-1356772"
-version = "7315954"
-filename = "caravans-neoforge-1.21.1-2.1.1.jar"
-project-id = 1356772
-slug = "pillager-caravans"
-file-id = 7315954
-provides = ["caravans"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:49C5QgTK:CUGxFf8Z", "mod-id" = "fragmentum", "version-range" = "[2.1.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -9294,25 +9285,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:49C5QgTK:CUGxFf8Z"]
-name = "fragmentum"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "49C5QgTK"
-version = "CUGxFf8Z"
-filename = "fragmentum-neoforge-1.21.1-2.2.4.jar"
-project-id = "49C5QgTK"
-version-id = "CUGxFf8Z"
-provides = ["fragmentum"]
-bundled-provides = ["yet_another_config_lib_v3"]
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:49C5QgTK:fbGohly4"]
 name = "fragmentum"
 component = "fragmentum"
@@ -9431,6 +9403,7 @@ integrations = []
 
 [artifacts."modrinth:7Jy4rK9m:zSD21doG"]
 name = "aces-spell-utils"
+component = "aces-spell-utils"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9508,6 +9481,7 @@ integrations = []
 
 [artifacts."modrinth:7zlUOZvb:4GgJN1LU"]
 name = "azurelib"
+component = "azurelib"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -9624,6 +9598,7 @@ integrations = []
 
 [artifacts."modrinth:DGaH8Rh0:Z0nG7STl"]
 name = "apothic-attributes"
+component = "apothic-attributes"
 provider = "modrinth"
 kind = "mod"
 side = "both"
@@ -10763,6 +10738,7 @@ integrations = []
 
 [artifacts."modrinth:tCkE8p2N:kb8pGRQR"]
 name = "placebo"
+component = "placebo"
 provider = "modrinth"
 kind = "mod"
 side = "both"

@@ -1,0 +1,8 @@
+# Shipped transitively before; named explicitly so Armor Completions can compile and test against
+# the Haze n Stuff items that reference it.
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "7Jy4rK9m"
+version-id = "zSD21doG"
+filename = "aces_spell_utils-1.2.6.1-1.21.1.jar"

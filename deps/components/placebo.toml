@@ -1,0 +1,8 @@
+# Shipped transitively before; named explicitly so Armor Completions can test against the
+# Haze n Stuff and Iron's Spellbooks classes that reach into it.
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "tCkE8p2N"
+version-id = "kb8pGRQR"
+filename = "Placebo-1.21.1-9.9.1.jar"
