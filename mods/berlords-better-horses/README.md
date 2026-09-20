@@ -177,9 +177,11 @@ solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 pixel layouts. Zombie and breed apples use 16x16 grids. The skeleton apple uses
 32x32 with broad color clusters and finer curved ribs and transparent air gaps.
 Its upper-left lighting follows each rib and the central bone with connected highlight
-and shadow bands. All use vanilla's apple contour and stalk; the
+and shadow bands, with darker contours around the outside and the rib gaps.
+Its stalk uses the exact vanilla stem pixels as uniform 2x2 blocks.
+All use vanilla's apple contour and stalk; the
 breed apple has four outward-curling colored bands. Built-in ImageGen prompts are
-in `tools/apple-prompts-v2.json` and `tools/skeleton-apple-prompt-v4.json`;
+in `tools/apple-prompts-v2.json` and `tools/skeleton-apple-prompt-v5.json`;
 `tools/apple-style-revision.md` records the vanilla and Born in Chaos Bone Heart references.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in

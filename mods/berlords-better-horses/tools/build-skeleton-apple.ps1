@@ -1,7 +1,8 @@
-# Final 32x32 Skeleton Apple, cleaned from built-in ImageGen v4.
-# Coherent upper-left lighting: connected pale upper surfaces, beige side planes,
-# and darker lower/right edges. No independent patches, dirt, or block averaging.
-# References and prompt: apple-style-revision.md, skeleton-apple-prompt-v4.json.
+# Final 32x32 Skeleton Apple, cleaned from built-in ImageGen v5.
+# Dark contours follow the outer bone silhouette and every transparent rib gap.
+# The vanilla stem is reproduced exactly as uniform 2x2 pixel blocks. Finer pixels
+# are reserved for bone curves and contours; internal directional shading is retained.
+# References and prompt: apple-style-revision.md, skeleton-apple-prompt-v5.json.
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $rows = @(
@@ -9,42 +10,44 @@ $rows = @(
     '................................',
     '..................AA............',
     '..................AA............',
-    '................AABC............',
-    '................AABC............',
-    '................BB..............',
-    '................BB..............',
-    '..........DEEEAACCDEED..........',
-    '.........FDDEEBBCCDEDDF.........',
-    '......EEEDF.FDEEEEDF.DDDEDF.....',
-    '......EEEE...FDEEEF...DEEDF.....',
-    '....EEDEEEF...FDED...FEEEDDD....',
-    '....EEFDDEEF...DDF..FEEEDDED....',
-    '....EEDFDDEEEEEEEDEEEEDDDFED....',
-    '....EED..FFDDDEEEDDDDFF..DED....',
-    '....EDEF...FFFEEEDFFF...FEED....',
-    '....EDEEF.....DEEF.....FEEDD....',
-    '....DFDEEED....EEF...FEEEDFF....',
-    '....FDFDDEEF...EEF..FEEDDFFF....',
-    '.....ED.DDEEEEEEEDDEEEDFFFD.....',
-    '.....EEF.FFDDDEEEDFDDFF..ED.....',
-    '......EEF..FFFDEEDFFF..FEE......',
-    '......EEDF.....EEF....FEED......',
-    '......FDEEF...EEEF...FEEEF......',
-    '.......FDEEF..EEEF..FEEDD.......',
-    '........FDEEEEEEDDFEEEFFF.......',
-    '.........FDEEEEEDDFDDDF.........',
-    '..........FDDDEEDFFDFF..........',
-    '............DDDDFFFF............',
+    '................BBCC............',
+    '................BBCC............',
+    '................AA..............',
+    '................AA..............',
+    '..........DDDDAACCDDDD..........',
+    '.........DEFGGAACCEGFED.........',
+    '......DDDEF.FECCGGEF.FEDDDD.....',
+    '......DGGF...FCCGGF...FGGED.....',
+    '....DDEGGGF...FEGF...FGGGEED....',
+    '....DGHEEGGF...FEF..FGGGEEGD....',
+    '....DGEFFEGGFFFGGEFFGGEFFHGD....',
+    '....DGF..FFEEEGGGEEEEFF..FGD....',
+    '....DEGF...FFFGGGEFFF...FGGD....',
+    '....DEGGF.....FGGF.....FGGED....',
+    '....DHEGGFF....FGF...FFGGEHD....',
+    '....DEHFEGGF...FGF..FGGEEHHD....',
+    '.....DF.FEGGFFFGGEFFGGEFFHD.....',
+    '.....DGF.FFEEEGGGEHEEFF..FD.....',
+    '......DGF..FFFFGGEFFF..FFD......',
+    '......DGEF.....FGF....FGGD......',
+    '......DEGGF...FGGF...FGGGD......',
+    '.......DEGGF..FGGF..FGGED.......',
+    '........DEGGFFGGEEFFGGHDD.......',
+    '.........DEGGGGGEEHEEED.........',
+    '..........DDEEGGEHHEDD..........',
+    '............DDDDDDDD............',
     '................................',
     '................................'
 )
 $palette = @{
-    A='#884a24'
-    B='#6b371b'
-    C='#492b13'
-    D='#b8ae92'
-    E='#ede4c8'
-    F='#817760'
+    A='#752802'
+    B='#7e370e'
+    C='#542409'
+    D='#443c2e'
+    E='#b8ae92'
+    F='#5c503b'
+    G='#ede4c8'
+    H='#817760'
 }
 $bitmap=[Drawing.Bitmap]::new(32,32)
 try {

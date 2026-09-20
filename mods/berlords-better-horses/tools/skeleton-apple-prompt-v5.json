@@ -1,0 +1,6 @@
+{
+  "mode": "Built-in ImageGen outline concept; precise native 32x32 contour cleanup",
+  "prompt": "Use case: precise-object-edit. Edit this existing Minecraft Skeleton Apple sprite only by adding a clearly darker outline. Keep its exact apple shape, brown stalk, rib arrangement, 32x32 grid, transparent holes, pale ivory upper-left highlights and connected beige bone shadows. Add a crisp, continuous one-pixel-at-32x32 dark warm brown-gray contour around the OUTSIDE silhouette and around the edges of EVERY INNER AIR GAP. Outer contour darkest; hole contours also distinctly dark. Keep the ribs readable and the holes open. Do not add speckles, random patches, texture noise, cracks, extra ribs or new shading. Do not soften or blur. Use existing pixel grid with no antialiasing and a transparent background. Preserve the current internal bone colors wherever the outline is not needed. Return one enlarged pixel-art item, no text or frame.",
+  "user_followup": "Minimize unnecessary high-resolution details; the stem must be no more detailed than the vanilla apple",
+  "native_cleanup": "Keep v4 bone shading; darken opaque pixels on outer and inner contours without changing alpha; restore the vanilla stem's seven pixels exactly as seven uniform 2x2 blocks"
+}
