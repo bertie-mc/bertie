@@ -26,6 +26,12 @@ public final class BetterHorses {
     public static final DeferredItem<SpecialSaddleItem> PASSENGER = saddle("passenger");
     public static final DeferredItem<SpecialSaddleItem> WARRIOR = saddle("warrior");
     public static final DeferredItem<SpecialSaddleItem> WANDERER = saddle("wanderer");
+    public static final DeferredItem<HorseAppleItem> ZOMBIE_APPLE =
+            ITEMS.register("zombie_apple", () -> new HorseAppleItem(HorseAppleItem.Effect.ZOMBIE));
+    public static final DeferredItem<HorseAppleItem> SKELETON_APPLE =
+            ITEMS.register("skeleton_apple", () -> new HorseAppleItem(HorseAppleItem.Effect.SKELETON));
+    public static final DeferredItem<HorseAppleItem> BREED_APPLE =
+            ITEMS.register("breed_apple", () -> new HorseAppleItem(HorseAppleItem.Effect.BREED));
     public static final DeferredItem<AnimalArmorItem> ARMOR = ITEMS.register(
             "netherite_horse_armor",
             () ->

@@ -7,6 +7,10 @@ were cleaned up on a native 16x16 pixel grid; tools/build-item-textures.ps1 reco
 and regenerates their final pixels. The horse effigy reuses the wooden chess
 knight created for this project. Prompts are recorded in art-prompts.json.
 tools/build-entity-textures.ps1 regenerates the original hoof and empty-slot textures.
+The three appearance apple concepts were created with built-in OpenAI ImageGen;
+tools/apple-prompts.json records the prompts and tools/build-apple-textures.ps1
+records the final native 16x16 pixels. The cosmetic horse appearances reference
+Minecraft's zombie/skeleton horse textures at runtime without bundling those assets.
 The inventory icon edit prompt and native-grid cleanup are recorded in tools/interface-icons.md.
 
 Minecraft, NeoForge, and their models, APIs, and runtime resources remain the

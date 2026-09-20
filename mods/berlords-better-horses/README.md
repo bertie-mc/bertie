@@ -104,6 +104,23 @@ Mining while riding a horse uses the same speed as standing on the ground. Tool,
 enchantment, potion, and underwater mining modifiers still apply; the usual
 airborne penalty returns when dismounted.
 
+## Appearance apples
+
+Feed a horse a **Zombie Apple** or **Skeleton Apple** to give it the corresponding
+vanilla undead appearance. This is cosmetic: the entity stays an ordinary horse,
+with its usual sounds, behavior, breeding, health, movement, owner, riders, lead,
+equipment, and storage. Coat markings are hidden while the undead appearance is
+active. The appearance saves with the horse, synchronizes to clients, and survives
+effigy capture. Repeating the same appearance does not consume another apple.
+
+An **enchanted golden apple** restores the normal appearance and retained coat and
+markings. It also keeps vanilla healing, growth, temper, and breeding effects.
+
+A **Breed Apple** chooses one of the other six vanilla coat colors uniformly.
+It leaves markings and stats intact. On a cosmetic undead horse, the chosen coat
+is retained underneath and becomes visible when the appearance is restored.
+Creative-mode feeding does not consume these apples.
+
 ## Horse effigy
 
 Use an empty effigy on a living tamed horse to store it. A filled effigy glints;
@@ -126,6 +143,9 @@ produces one item.
 | Item | Top / middle / bottom | Ingredients |
 | --- | --- | --- |
 | Horse effigy | `PP. / .P. / PPP` | `P`: any planks, including mixed wood types |
+| Zombie Apple | `FFF / FAF / FFF` | `A`: apple; `F`: rotten flesh |
+| Skeleton Apple | `BBB / BAB / BBB` | `A`: apple; `B`: bone |
+| Breed Apple | `DDD / DAD / DDD` | `A`: apple; `D`: any dye, including mixed colors |
 | Iron, gold, diamond horseshoes | `M.M / M.M / .M.` | `M`: iron ingot, gold ingot, or diamond, respectively |
 | Passenger (double) saddle | `S.S / CCC / H.H` | `S`: saddle; `C`: cyan wool; `H`: tripwire hook |
 | Warrior saddle | `DSW / RRR / HAH` | `D`: shield; `S`: saddle; `W`: iron sword; `R`: red wool; `H`: tripwire hook; `A`: iron horse armor |
@@ -153,6 +173,8 @@ shape with five-pixel arms and single-pixel nail holes. The saddle sprites use
 solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 `tools/build-item-textures.ps1` regenerates these original item sprites;
 `tools/build-entity-textures.ps1` regenerates the original hoof and empty-slot textures.
+`tools/build-apple-textures.ps1` regenerates the three apple icons from their native
+16x16 layouts; the built-in ImageGen concepts are recorded in `tools/apple-prompts.json`.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in
 `tools/saddle-materials.md`. Neither script changes the saddle atlas, imported armor,
@@ -169,6 +191,12 @@ measure swimming against dry-ground speed and ride out onto shore, check first-p
 fading and item models, verify tooltip colors and Shift expansion with rebound crouch, and
 capture the inventory and both sides of all three rendered saddles. Screenshots are in
 `build/test-diagnostics/clienttest`.
+
+The focused `*.appleRecipesAndAppearancePersistence` client check also exercises
+server-side recipes (including mixed dyes), feeding, creative consumption, a different
+coat on every use, cosmetic appearance synchronization, normal enchanted-apple feeding,
+preserved equipment/identity, NBT, and effigy storage. It captures the three apple icons
+and the actual zombie/skeleton horse appearances.
 
 For UI-only iteration, set `BERTIE_CLIENT_TEST_FILTER` to
 `*.equipmentSyncMenuAndAppearance,*.equipmentTooltipsUseShift,*.mountedHudAndFade`.

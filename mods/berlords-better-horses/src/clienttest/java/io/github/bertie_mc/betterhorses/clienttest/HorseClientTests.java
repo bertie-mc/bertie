@@ -599,7 +599,7 @@ public final class HorseClientTests {
         }
     }
 
-    private static final class PreviewScreen extends Screen {
+    static final class PreviewScreen extends Screen {
         private final Horse horse;
 
         PreviewScreen(Horse horse, String title) {

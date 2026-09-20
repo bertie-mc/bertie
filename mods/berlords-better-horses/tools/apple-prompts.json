@@ -1,0 +1,17 @@
+{
+  "mode": "Built-in ImageGen concepts with native 16x16 cleanup in build-apple-textures.ps1",
+  "prompts": [
+    {
+      "name": "zombie_apple",
+      "prompt": "Zombie Apple: rotten olive-green apple with moss green highlights and dark brown-green bruises, a slightly ragged bite on one edge, dark stem. Must remain immediately recognizable as an apple, not a zombie head. Minecraft vanilla-faithful inventory item sprite concept. One centered apple with a brown stem and tiny leaf, readable on a native 16x16 pixel grid. Pixel art enlarged with crisp square pixels, simple strong clusters and 5-7 colors, no smooth shading or anti-aliasing. Fully transparent background. No text, border, scene or shadows. Final asset will be cleaned onto 16x16."
+    },
+    {
+      "name": "skeleton_apple",
+      "prompt": "Skeleton Apple: bone-white and ivory apple with gray shadow edge, two tiny dark square cavities and a small dark notch hinting at a skull while keeping the familiar apple silhouette, brown stem. Minecraft vanilla-faithful inventory item sprite concept. One centered apple with a brown stem and tiny leaf, readable on a native 16x16 pixel grid. Pixel art enlarged with crisp square pixels, simple strong clusters and 5-7 colors, no smooth shading or anti-aliasing. Fully transparent background. No text, border, scene or shadows. Final asset will be cleaned onto 16x16."
+    },
+    {
+      "name": "breed_apple",
+      "prompt": "Breed Apple: colorful magical apple for changing horse coat colors. Familiar apple silhouette with large clean quadrants of red-orange, yellow, cyan and violet; green leaf, brown stem; one small pale highlight. No literal horses, no text or rainbow background. Minecraft vanilla-faithful inventory item sprite concept. One centered apple with a brown stem and tiny leaf, readable on a native 16x16 pixel grid. Pixel art enlarged with crisp square pixels, simple strong clusters and 5-7 colors, no smooth shading or anti-aliasing. Fully transparent background. No text, border, scene or shadows. Final asset will be cleaned onto 16x16."
+    }
+  ]
+}

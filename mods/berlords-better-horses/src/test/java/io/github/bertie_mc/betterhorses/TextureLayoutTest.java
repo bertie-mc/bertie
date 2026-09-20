@@ -28,6 +28,9 @@ class TextureLayoutTest {
     void inventoryTexturesAreNative16Pixels() throws IOException {
         for (String item : new String[] {
             "horse_effigy",
+            "zombie_apple",
+            "skeleton_apple",
+            "breed_apple",
             "iron_horseshoes",
             "gold_horseshoes",
             "diamond_horseshoes",

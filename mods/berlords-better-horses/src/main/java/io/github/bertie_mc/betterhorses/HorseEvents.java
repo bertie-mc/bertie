@@ -15,6 +15,15 @@ public final class HorseEvents {
     public static void interact(PlayerInteractEvent.EntityInteract event) {
         if (!(event.getTarget() instanceof Horse horse)) return;
         Player player = event.getEntity();
+        if (horse.isAlive()
+                && (event.getItemStack().getItem() instanceof HorseAppleItem
+                        || event.getItemStack().is(net.minecraft.world.item.Items.ENCHANTED_GOLDEN_APPLE)
+                                && ((HorseAppearance) horse).betterhorses$appearance()
+                                        != HorseAppearance.Style.NORMAL)) {
+            event.setCancellationResult(horse.fedFood(player, event.getItemStack()));
+            event.setCanceled(true);
+            return;
+        }
         if (event.getItemStack().getItem() instanceof HorseEffigyItem effigy) {
             InteractionResult result =
                     effigy.interactLivingEntity(event.getItemStack(), player, horse, event.getHand());
