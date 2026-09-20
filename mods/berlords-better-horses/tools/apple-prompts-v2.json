@@ -1,0 +1,22 @@
+{
+  "mode": "Built-in ImageGen revision concepts with native 16x16 cleanup",
+  "references": [
+    "Minecraft Java 1.21.1 apple texture",
+    "Current Better Horses apple textures",
+    "Born in Chaos 1.7.5 Bone Heart texture (visual reference only)"
+  ],
+  "prompts": [
+    {
+      "name": "zombie_apple",
+      "prompt": "Use case: precise-object-edit. Deliverable: one Minecraft inventory sprite concept for native 16x16 cleanup. Input 1 is the exact vanilla apple silhouette reference: keep its rounded apple body, upper cleft, right leaning brown stalk, 16x16 bounding grid. No leaf; no shape change. Input 2 is the current 3-apple sheet, an edit target for only the named item. Render just ONE edited apple, not a sheet. Crisp pixel art, strong tiny-grid readable clusters, transparent background, no lettering, no border, no anti-aliasing or smooth gradients. Edit the Zombie Apple (left item): use the exact vanilla apple silhouette, no bite missing from its outline. Preserve rotten olive-green coloring, moss-light highlights and restrained brown-green bruise pixels. Make the body round like vanilla, not a pointed heart. Keep recognizable vanilla top-left shine structure."
+    },
+    {
+      "name": "breed_apple",
+      "prompt": "Use case: precise-object-edit. Deliverable: one Minecraft inventory sprite concept for native 16x16 cleanup. Input 1 is the exact vanilla apple silhouette reference: keep its rounded apple body, upper cleft, right leaning brown stalk, 16x16 bounding grid. No leaf; no shape change. Input 2 is the current 3-apple sheet, an edit target for only the named item. Render just ONE edited apple, not a sheet. Crisp pixel art, strong tiny-grid readable clusters, transparent background, no lettering, no border, no anti-aliasing or smooth gradients. Edit the Breed Apple (right item): use the exact vanilla apple silhouette. Its red-orange, golden-yellow, cyan-blue and violet colors must form distinct curved SPIRAL ARMS curling clockwise from the apple center outward to its edges, like a four-color pinwheel with strongly bent arms. NOT four straight quadrants, NOT stripes. A clear outward swirl that still reads at 16x16, minimal palette, small top-left highlight, darker external border in each local color."
+    },
+    {
+      "name": "skeleton_apple",
+      "prompt": "Use case: precise-object-edit. Deliverable: one Minecraft inventory sprite concept for native 16x16 cleanup. Input 1 is the exact vanilla apple silhouette reference: keep its rounded apple body, upper cleft, right leaning brown stalk, 16x16 bounding grid. No leaf; no shape change. Input 2 is the current 3-apple sheet, an edit target for only the named item. Render just ONE edited apple, not a sheet. Crisp pixel art, strong tiny-grid readable clusters, transparent background, no lettering, no border, no anti-aliasing or smooth gradients. Edit the Skeleton Apple (middle item). Input 3 is Born in Chaos Bone Heart as a style/reference only, not to copy pixels. Reimagine the apple as an open ivory ribcage: central vertical sternum/spine, 3 pairs of curved bony ribs, actual TRANSPARENT AIR GAPS between ribs on both sides, a delicate ivory external apple contour. Match vanilla apple outer silhouette and stem. No eyes, no skull face, no solid flesh filling the interior. Bone Heart inspiration: warm ivory/beige highlights, gray-brown shaded bone edges and a central bone with paired horizontal curved ribs. Air gaps are genuinely transparent, not black painted marks. Keep ribs chunky enough for 16x16."
+    }
+  ]
+}

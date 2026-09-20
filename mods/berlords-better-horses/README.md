@@ -174,7 +174,10 @@ solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 `tools/build-item-textures.ps1` regenerates these original item sprites;
 `tools/build-entity-textures.ps1` regenerates the original hoof and empty-slot textures.
 `tools/build-apple-textures.ps1` regenerates the three apple icons from their native
-16x16 layouts; the built-in ImageGen concepts are recorded in `tools/apple-prompts.json`.
+16x16 layouts. All use vanilla's apple contour and stalk; the breed apple has four
+outward-curling colored bands, and the skeleton apple has open ribs with transparent
+air gaps. The built-in ImageGen revision prompts are in `tools/apple-prompts-v2.json`;
+`tools/apple-style-revision.md` records the vanilla and Born in Chaos Bone Heart references.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in
 `tools/saddle-materials.md`. Neither script changes the saddle atlas, imported armor,
@@ -195,8 +198,9 @@ capture the inventory and both sides of all three rendered saddles. Screenshots 
 The focused `*.appleRecipesAndAppearancePersistence` client check also exercises
 server-side recipes (including mixed dyes), feeding, creative consumption, a different
 coat on every use, cosmetic appearance synchronization, normal enchanted-apple feeding,
-preserved equipment/identity, NBT, and effigy storage. It captures the three apple icons
-and the actual zombie/skeleton horse appearances.
+preserved equipment/identity, NBT, and effigy storage. It captures the actual
+zombie/skeleton horse appearances. For texture-only iteration, the separate
+`*.appleItemPreview` check renders the three apple icons without a test world.
 
 For UI-only iteration, set `BERTIE_CLIENT_TEST_FILTER` to
 `*.equipmentSyncMenuAndAppearance,*.equipmentTooltipsUseShift,*.mountedHudAndFade`.

@@ -216,10 +216,14 @@ public final class HorseAppleClientTests {
                 context.takeScreenshot("horse-appearance-" + style.name().toLowerCase(Locale.ROOT));
                 context.setScreen(() -> null);
             }
-            context.setScreen(ApplesScreen::new);
-            context.takeScreenshot("horse-apples");
-            context.setScreen(() -> null);
         }
+    }
+
+    @ClientTest
+    public static void appleItemPreview(ClientTestContext context) {
+        context.setScreen(ApplesScreen::new);
+        context.takeScreenshot("horse-apples");
+        context.setScreen(() -> null);
     }
 
     private static void feed(ServerPlayer player, Horse horse, ItemStack stack) {

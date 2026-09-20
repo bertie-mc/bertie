@@ -1,6 +1,7 @@
 The public-domain dedication in UNLICENSE applies only to this component's
 original code, original/generated artwork, and original texture layouts. It does
-not apply to the third-party netherite horse armor assets described below.
+not apply to the referenced Minecraft apple outline or the third-party netherite
+horse armor assets described below.
 
 Original item artwork was developed using OpenAI ImageGen. Horseshoes and saddles
 were cleaned up on a native 16x16 pixel grid; tools/build-item-textures.ps1 records
@@ -8,8 +9,13 @@ and regenerates their final pixels. The horse effigy reuses the wooden chess
 knight created for this project. Prompts are recorded in art-prompts.json.
 tools/build-entity-textures.ps1 regenerates the original hoof and empty-slot textures.
 The three appearance apple concepts were created with built-in OpenAI ImageGen;
-tools/apple-prompts.json records the prompts and tools/build-apple-textures.ps1
-records the final native 16x16 pixels. The cosmetic horse appearances reference
+tools/apple-prompts.json records the original prompts; tools/apple-prompts-v2.json
+records the current revision. tools/build-apple-textures.ps1 records the final
+native 16x16 pixels. The apple contour and stalk follow Minecraft Java 1.21.1's
+apple texture, which remains Mojang's property. The skeleton apple's open ribs
+take visual inspiration from mongoose_artist's Born in Chaos Bone Heart; none of
+that item's pixels are included. Reference details are in tools/apple-style-revision.md.
+The cosmetic horse appearances reference
 Minecraft's zombie/skeleton horse textures at runtime without bundling those assets.
 The inventory icon edit prompt and native-grid cleanup are recorded in tools/interface-icons.md.
 
