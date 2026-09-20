@@ -1,5 +1,6 @@
 package io.github.bertie_mc.bertieprogression;
 
+import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
@@ -8,10 +9,13 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -24,16 +28,16 @@ import net.neoforged.neoforge.registries.RegisterEvent;
 /**
  * Registers nine items Haze n Stuff ships art for and never registers.
  *
- * <p>The mod carries finished sprites, models and translation strings for a fifth Flamebearer
+ * <p>The mod carries finished models, textures and translation strings for a fifth Flamebearer
  * armour tier and five curios, but no registry entry, so none of it can be reached in game. These
  * are registered here under the mod's own ids, which is what {@link RegisterEvent} allows and a
- * {@code DeferredRegister} does not: the ids are the mod's, and the wall, the recipes and any save
- * that already names them keep working if the mod ever ships its own.
+ * {@code DeferredRegister} does not: the ids stay the mod's, so the wall, the recipes and any save
+ * that already names them keep working if it ever ships its own.
  *
- * <p>What this does not recover is the mod's renderers. Both the armour's worn model and the
- * curios' held models are Geckolib geometry that the mod draws only for items it registered, so
- * the armour wears invisibly and the curios use flat sprites projected from that geometry by
- * {@code texture-work/make_hazen_unreleased.py}. Stats are placeholders.
+ * <p>Registering an item does not bring its renderer, which for both the armour and the curios is
+ * Geckolib geometry the mod draws only for its own. Both are recovered from that geometry instead:
+ * the curios by converting it into vanilla item models, the armour by
+ * {@code client/GeoArmorGeometry} rebuilding it as a humanoid layer. Stats are placeholders.
  */
 public final class HazenUnreleased {
 
@@ -43,14 +47,21 @@ public final class HazenUnreleased {
 
     private static final String SOUL = "garments_of_the_first_flamebearer_soul_";
 
+    /** The mod's own worn-armour texture, handed to the armour layer by {@link SoulArmorItem}. */
+    public static final ResourceLocation SOUL_ARMOR_TEXTURE = ResourceLocation.fromNamespaceAndPath(
+            HAZEN, "textures/armor/garments_of_the_first_flamebearer_soul_armor.png");
+
+    private static final ArmorItem.Type[] PIECES = {ArmorItem.Type.HELMET,
+            ArmorItem.Type.CHESTPLATE, ArmorItem.Type.LEGGINGS, ArmorItem.Type.BOOTS};
+
     private static final List<String> CURIOS = List.of(
             "chronicles_of_neptune", "ebony_scroll", "lunarnomicon",
             "radiant_crown_of_scrolls", "grimoire_of_flight");
 
-    /** Placeholder stats, roughly the tier the base Tyros set sits at. */
     public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS =
             DeferredRegister.create(Registries.ARMOR_MATERIAL, BertieProgression.MODID);
 
+    /** Placeholder stats, roughly the tier the base Tyros set sits at. */
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> FLAMEBEARER_SOUL =
             ARMOR_MATERIALS.register("flamebearer_soul", () -> {
                 Map<ArmorItem.Type, Integer> defence = new EnumMap<>(ArmorItem.Type.class);
@@ -59,11 +70,35 @@ public final class HazenUnreleased {
                 defence.put(ArmorItem.Type.LEGGINGS, 7);
                 defence.put(ArmorItem.Type.BOOTS, 4);
                 defence.put(ArmorItem.Type.BODY, 11);
-                // No layers: the worn model belongs to the mod's Geckolib renderer, and a vanilla
-                // layer would only paint the wrong texture over the player.
+                // The layer this names is never read - SoulArmorItem answers with the mod's own
+                // texture - but the armour layer iterates this list, so there has to be one.
                 return new ArmorMaterial(defence, 15, SoundEvents.ARMOR_EQUIP_NETHERITE,
-                        () -> Ingredient.EMPTY, List.of(), 3.0F, 0.1F);
+                        () -> Ingredient.EMPTY,
+                        List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(
+                                BertieProgression.MODID, "flamebearer_soul"))),
+                        3.0F, 0.1F);
             });
+
+    /** Armour that wears the texture its own mod drew for it rather than a vanilla layer. */
+    private static final class SoulArmorItem extends ArmorItem {
+        private SoulArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
+            super(material, type, properties);
+        }
+
+        @Override
+        public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot,
+                                                ArmorMaterial.Layer layer, boolean innerModel) {
+            return SOUL_ARMOR_TEXTURE;
+        }
+    }
+
+    public static List<ResourceLocation> soulArmourIds() {
+        List<ResourceLocation> out = new ArrayList<>();
+        for (ArmorItem.Type type : PIECES) {
+            out.add(hazen(SOUL + type.getName()));
+        }
+        return out;
+    }
 
     private static ResourceLocation hazen(String path) {
         return ResourceLocation.fromNamespaceAndPath(HAZEN, path);
@@ -75,13 +110,12 @@ public final class HazenUnreleased {
             return;
         }
         event.register(Registries.ITEM, helper -> {
-            for (ArmorItem.Type type : new ArmorItem.Type[]{ArmorItem.Type.HELMET,
-                    ArmorItem.Type.CHESTPLATE, ArmorItem.Type.LEGGINGS, ArmorItem.Type.BOOTS}) {
+            for (ArmorItem.Type type : PIECES) {
                 ResourceLocation id = hazen(SOUL + type.getName());
                 if (BuiltInRegistries.ITEM.containsKey(id)) {
                     continue;
                 }
-                helper.register(id, new ArmorItem(FLAMEBEARER_SOUL, type,
+                helper.register(id, new SoulArmorItem(FLAMEBEARER_SOUL, type,
                         new Item.Properties().rarity(Rarity.EPIC)
                                 .durability(type.getDurability(37))));
             }
@@ -101,8 +135,7 @@ public final class HazenUnreleased {
             return;
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            for (ArmorItem.Type type : new ArmorItem.Type[]{ArmorItem.Type.HELMET,
-                    ArmorItem.Type.CHESTPLATE, ArmorItem.Type.LEGGINGS, ArmorItem.Type.BOOTS}) {
+            for (ArmorItem.Type type : PIECES) {
                 accept(event, SOUL + type.getName());
             }
         } else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -111,9 +144,6 @@ public final class HazenUnreleased {
     }
 
     private static void accept(BuildCreativeModeTabContentsEvent event, String path) {
-        Holder.Reference<Item> item = BuiltInRegistries.ITEM.getHolder(hazen(path)).orElse(null);
-        if (item != null) {
-            event.accept(item.value());
-        }
+        BuiltInRegistries.ITEM.getOptional(hazen(path)).ifPresent(event::accept);
     }
 }
