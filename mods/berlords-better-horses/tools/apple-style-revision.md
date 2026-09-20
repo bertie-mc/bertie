@@ -6,9 +6,11 @@ the exact opaque silhouette; the skeleton apple adds transparent interior gaps.
 
 - Zombie: olive-green flesh, restrained brown bruises, pale upper-left highlights
 - Breed: four colored spiral arms curling outward, with darker perimeter colors
-- Skeleton: weathered ivory ribs joined to a knobbly central bone, with three pairs
-  of curved open air gaps. A 32x32 grid preserves mostly 2x2 clusters, with selective
-  finer pixels for curved/tapered rib edges, chips, and crevice shadows
+- Skeleton: ivory ribs joined to a central bone, with three pairs of curved open
+  air gaps. The 32x32 grid allows finer curves while retaining broad color clusters.
+  Light comes from the upper left: pale upper faces, beige side planes, and connected
+  shadows beneath the ribs and along the sternum's right side. Three bone tones
+  replace mottled patches; no noise, corrosion speckles, or block-averaged shading
 
 The skeleton concept uses the Bone Heart item from Born in Chaos by mongoose_artist
 as a visual reference for the central bone and open ribs. The reference was inspected
@@ -21,6 +23,6 @@ The silhouette reference was inspected from the Minecraft 1.21.1 client JAR at
 property; its referenced outline is outside this component's public-domain dedication.
 
 Built-in ImageGen supplied revised concepts. `apple-prompts-v2.json` and
-`skeleton-apple-prompt-v3.json` record the exact prompts. `build-apple-textures.ps1`
+`skeleton-apple-prompt-v4.json` record the current prompts. `build-apple-textures.ps1`
 and `build-skeleton-apple.ps1` preserve the final pixels on their intended grids;
 the shipped files are the PNGs under `assets/betterhorses/textures/item/`.
