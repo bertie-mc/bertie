@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "4ca882aba7c3f18b6da6039db1812f3021f78a827c5e3357b13b5ea758ea6b19"
+inputs-hash = "678e3f1e2b5ea386346b66dd4f84ee3694e5d83fbfa7594bdff5acfd44385c7a"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -69,10 +69,6 @@ mod = "curseforge:1063926:8469450"
 [components."apothic-spawners"]
 any = "curseforge:986583:8469405"
 mod = "curseforge:986583:8469405"
-
-[components."appleskin"]
-any = "curseforge:248787:7854442"
-mod = "curseforge:248787:7854442"
 
 [components."aquaculture"]
 any = "curseforge:60028:7901588"
@@ -4828,27 +4824,6 @@ project-id = 247895
 slug = "whats-that-slot"
 file-id = 5658694
 provides = ["whats_that_slot"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:248787:7854442"]
-name = "appleskin"
-component = "appleskin"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "appleskin-248787"
-version = "7854442"
-filename = "appleskin-neoforge-mc1.21-3.0.9.jar"
-project-id = 248787
-slug = "appleskin"
-file-id = 7854442
-provides = ["appleskin"]
 bundled-provides = []
 required = []
 optional = []

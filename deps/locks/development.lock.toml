@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "041e83b6e57365534f3cf913f2928770fe6a2dfb733f2effe713bf759f77f763"
+inputs-hash = "edd0c7b963710cd6d3aea4feb934062b6df297d46a57b108d1c1570e47292a60"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -69,10 +69,6 @@ mod = "modrinth:pL8MtgqY:HpSrSsv3"
 [components."apothic-spawners"]
 any = "modrinth:DfxVkOAO:pWfxcfO2"
 mod = "modrinth:DfxVkOAO:pWfxcfO2"
-
-[components."appleskin"]
-any = "modrinth:EsAfCjCV:uAKA6Laj"
-mod = "modrinth:EsAfCjCV:uAKA6Laj"
 
 [components."aquaculture"]
 any = "modrinth:Vl1uNAuy:5pbz0ETj"
@@ -4110,26 +4106,6 @@ version-id = "KSgki4uc"
 provides = ["alexsmobs"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:XjY0RcQj:mIylVpkN", "mod-id" = "citadel", "version-range" = "[2.6.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:EsAfCjCV:uAKA6Laj"]
-name = "appleskin"
-component = "appleskin"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "EsAfCjCV"
-version = "uAKA6Laj"
-filename = "appleskin-neoforge-mc1.21-3.0.9.jar"
-project-id = "EsAfCjCV"
-version-id = "uAKA6Laj"
-provides = ["appleskin"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
