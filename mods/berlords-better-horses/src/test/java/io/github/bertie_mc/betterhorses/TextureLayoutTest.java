@@ -43,9 +43,8 @@ class TextureLayoutTest {
             try (var input = getClass().getResourceAsStream("/assets/betterhorses/textures/item/" + item + ".png")) {
                 assertNotNull(input);
                 var image = ImageIO.read(input);
-                int size = item.equals("skeleton_apple") ? 32 : 16;
-                assertEquals(size, image.getWidth());
-                assertEquals(size, image.getHeight());
+                assertEquals(16, image.getWidth());
+                assertEquals(16, image.getHeight());
                 assertTrue(image.getColorModel().hasAlpha());
             }
         }

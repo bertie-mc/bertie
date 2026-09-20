@@ -9,14 +9,13 @@ the exact opaque silhouette; the skeleton apple adds transparent interior gaps.
   and tan material colors
 - Breed: four colored spiral arms curling outward, with darker perimeter colors
 - Skeleton: ivory ribs joined to a central bone, with three pairs of curved open
-  air gaps. The design is drawn on a 16x16 grid and enlarged to 32x32; only eight
-  individual pixels soften rib bends. This keeps the coarse Minecraft appearance.
+  air gaps. All eight finer contour pixels from the 32x32 v6 sprite were manually
+  removed, then the remaining uniform 2x2 blocks were reduced losslessly to 16x16.
   Light comes from the upper left: pale upper faces, beige side planes, and connected
   shadows beneath the ribs and along the sternum's right side. Three bone tones
   replace mottled patches; no noise, corrosion speckles, or block-averaged shading.
   Dark contours define the outer bone edge and the inner air gaps.
-  The stem matches the seven vanilla stem pixels exactly, each enlarged to a
-  uniform 2x2 block
+  The stem matches the seven vanilla stem pixels exactly
 
 The skeleton concept uses the Bone Heart item from Born in Chaos by mongoose_artist
 as a visual reference for the central bone and open ribs. The reference was inspected

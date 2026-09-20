@@ -178,13 +178,13 @@ solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 `tools/build-item-textures.ps1` regenerates these original item sprites;
 `tools/build-entity-textures.ps1` regenerates the original hoof and empty-slot textures.
 `tools/build-apple-textures.ps1` regenerates the three apple icons from their native
-pixel layouts. Zombie and breed apples use 16x16 grids. The skeleton apple uses
-32x32, built from a coarse 16x16 design with only eight finer contour pixels.
+pixel layouts. All three apples use native 16x16 grids. The skeleton apple's
+eight finer contour pixels were removed manually before lossless conversion to 16x16.
 Its ribs have transparent air gaps. The zombie apple has an upper-right rotten
 patch colored like vanilla rotten flesh.
 Its upper-left lighting follows each rib and the central bone with connected highlight
 and shadow bands, with darker contours around the outside and the rib gaps.
-Its stalk uses the exact vanilla stem pixels as uniform 2x2 blocks.
+Its stalk uses the exact vanilla stem pixels.
 All use vanilla's apple contour and stalk; the
 breed apple has four outward-curling colored bands. Built-in ImageGen prompts are
 in `tools/apple-prompts-v2.json` and `tools/apple-prompts-v6.json`;

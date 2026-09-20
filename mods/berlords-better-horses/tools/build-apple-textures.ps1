@@ -1,4 +1,4 @@
-# Native 16x16 apple artwork; the skeleton is stored at 32x32 for eight finer contour pixels.
+# Native 16x16 apple artwork.
 # Vanilla 1.21.1 silhouette reference: apple-style-revision.md.
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
