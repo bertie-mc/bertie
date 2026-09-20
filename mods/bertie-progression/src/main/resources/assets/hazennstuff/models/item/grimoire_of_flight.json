@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bertieprogression:item/hazen/grimoire_of_flight"
+  }
+}

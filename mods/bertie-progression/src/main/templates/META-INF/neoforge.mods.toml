@@ -119,13 +119,6 @@ side="BOTH"
 # Data overrides only win when we load last, so every namespace under
 # src/main/resources/data that is not ours is ordered AFTER here.
 [[dependencies.${mod_id}]]
-modId="alexscaves"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="anvilcraft"
 type="optional"
 versionRange="[0,)"
@@ -814,6 +807,20 @@ side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="berlordscarving"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="netherdepthsupgrade"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="wover"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

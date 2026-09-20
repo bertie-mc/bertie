@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:the_lost_voidblade",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:yugure",
+      "required": false
+    }
+  ]
+}

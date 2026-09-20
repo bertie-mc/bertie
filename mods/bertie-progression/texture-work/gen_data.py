@@ -1916,6 +1916,10 @@ slot_tag("shoes",
 slot_tag("hands", {"replace": True, "values": []})
 slot_tag("hat",
       {"replace": True, "values": [
+        # Two helmets demoted to head trinkets: they keep their special effect and lose the armour,
+        # the toughness, the knockback resistance and the durability. See TrinketConversions.
+        {"id": "ancient_forgemastery:howling_helmet", "required": False},
+        {"id": "antarchy:fallen_king_crown", "required": False},
         {"id": "armageddon_mod:fisher_hat", "required": False},
         {"id": "armageddon_mod:vagabonds_hood", "required": False},
         {"id": "artifacts:anglers_hat", "required": False},
@@ -2498,6 +2502,14 @@ for _metal in ("soul_stained_steel", "malignant_pewter"):
           {"neoforge:conditions": conds("create", "malum"), "type": "create:pressing",
            "ingredients": [{"item": f"malum:{_metal}_ingot"}],
            "results": [{"id": f"malum:{_metal}_plating"}]})
+
+# Better End's forged plates were beaten out on its own anvils, which the pack no longer has. The
+# plates stay, so the press takes the anvil's place - the same ingot in, the same plate out.
+for _metal in ("thallasium", "terminite", "aeternium"):
+    write(f"{R}/create/betterend_{_metal}_forged_plate.json",
+          {"neoforge:conditions": conds("create", "betterend"), "type": "create:pressing",
+           "ingredients": [{"item": f"betterend:{_metal}_ingot"}],
+           "results": [{"id": f"betterend:{_metal}_forged_plate"}]})
 
 # ================================================================ Finder and boss-gate recipes
 
@@ -3175,8 +3187,6 @@ def _cut(name, ingredient, results, mods=()):
            "sound": {"sound_id": "minecraft:item.axe.strip"},
            "tool": {"tag": "c:tools/knife"}})
 
-_cut("tough_hide", "alexscaves:tough_hide",
-     [{"item": {"count": 6, "id": "minecraft:leather"}}], mods=("alexscaves",))
 # Kangaroo hide was two-for-one in the grid; the board pays one and sometimes two, like hoglin hide.
 write("data/alexsmobs/recipe/kangaroo_hide_to_leather.json", DISABLED)
 _cut("kangaroo_hide", "alexsmobs:kangaroo_hide",
@@ -3416,7 +3426,23 @@ write("assets/hazennstuff/lang/en_us.json",
        "item.hazennstuff.stardust": "Cosmic Dust",
        "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
        "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
-       "material.hazennstuff.steel": "Haze Steel"})
+       "material.hazennstuff.steel": "Haze Steel",
+       # The five curios below ship art and no item; HazenUnreleased registers them, so their
+       # names come from here as well.
+       "item.hazennstuff.chronicles_of_neptune": "Chronicles of Neptune",
+       "item.hazennstuff.ebony_scroll": "Ebony Scroll",
+       "item.hazennstuff.lunarnomicon": "Lunarnomicon",
+       "item.hazennstuff.radiant_crown_of_scrolls": "Radiant Crown of Scrolls",
+       "item.hazennstuff.grimoire_of_flight": "Grimoire of Flight"})
+
+# The same five carry a Geckolib model the mod only draws for items it registered itself, so the
+# `builtin/entity` model it ships would render nothing here. Each one is pointed at a flat sprite
+# projected from that model by texture-work/make_hazen_unreleased.py.
+for _hz in ("chronicles_of_neptune", "ebony_scroll", "lunarnomicon",
+            "radiant_crown_of_scrolls", "grimoire_of_flight"):
+    write(f"assets/hazennstuff/models/item/{_hz}.json",
+          {"parent": "minecraft:item/generated",
+           "textures": {"layer0": f"{MODID}:item/hazen/{_hz}"}})
 write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
 write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
     "type": "forbidden_arcanus:clibano_combustion",
@@ -3645,9 +3671,9 @@ upgrade("filter_upgrade", BASE, t="create:filter", b=INK["common"],
 upgrade("pickup_upgrade", BASE, t="minecraft:hopper", b=INK["common"],
         l="#c:strings", r="#c:strings", c="#c:dusts/redstone")
 upgrade("magnet_upgrade", SBP + "pickup_upgrade", t="#c:ender_pearls", b=INK["rare"],
-        l="alexscaves:azure_neodymium_ingot", r="alexscaves:scarlet_neodymium_ingot",
-        lt="alexscaves:azure_neodymium_ingot", lb="alexscaves:azure_neodymium_ingot",
-        rt="alexscaves:scarlet_neodymium_ingot", rb="alexscaves:scarlet_neodymium_ingot")
+        l="anvilcraft:magnet_ingot", r="anvilcraft:magnet_ingot",
+        lt="anvilcraft:magnet_ingot", lb="anvilcraft:magnet_ingot",
+        rt="anvilcraft:magnet_ingot", rb="anvilcraft:magnet_ingot")
 upgrade("compacting_upgrade", BASE, t="#c:ingots/iron", b=INK["uncommon"],
         l="#c:nuggets/iron", r="#c:storage_blocks/iron", c="minecraft:piston")
 upgrade("alchemy_upgrade", BASE, t=AWKWARD, b=INK["rare"],
@@ -3773,10 +3799,10 @@ for _name, (_from, _ink, _result) in ADVANCED.items():
 
 # The Advanced Magnet built straight from an Advanced Pickup pays what the basic pair pays.
 _pattern, _key = ring(SBP + "advanced_pickup_upgrade", t="#c:ender_pearls", b=INK["epic"],
-                      l="alexscaves:azure_neodymium_ingot", lt="alexscaves:azure_neodymium_ingot",
-                      lb="alexscaves:azure_neodymium_ingot",
-                      r="alexscaves:scarlet_neodymium_ingot", rt="alexscaves:scarlet_neodymium_ingot",
-                      rb="alexscaves:scarlet_neodymium_ingot")
+                      l="anvilcraft:magnet_ingot", lt="anvilcraft:magnet_ingot",
+                      lb="anvilcraft:magnet_ingot",
+                      r="anvilcraft:magnet_ingot", rt="anvilcraft:magnet_ingot",
+                      rb="anvilcraft:magnet_ingot")
 write("data/sophisticatedbackpacks/recipe/advanced_magnet_upgrade.json", {
     "neoforge:conditions": [{"type": "sophisticatedcore:item_enabled",
                              "itemRegistryName": SBP + "advanced_magnet_upgrade"}],
@@ -4291,6 +4317,8 @@ if not _removed:
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
 _items, _hits, _leaks, _loot_src, _merge_src, _tag_src = set(), [], {}, {}, {}, {}
+# modids the scan proves are installed, plus the namespaces nobody owns.
+_present = {MODID, "minecraft", "neoforge", "forge", "c", "zzzbertie"}
 _scan_ok = False
 if _removed:
     import fnmatch
@@ -4341,6 +4369,20 @@ if _removed:
             except zipfile.BadZipFile:
                 continue
             with _zf:
+                # Which mods are actually installed. Mods ship compat data under OTHER mods'
+                # namespaces - Cataclysm and Twilight Forest both add to alexscaves: tags - so a
+                # namespace appearing in the scan does not mean that mod is in the pack. Writing an
+                # override for an absent mod is dead weight the manifest check then rejects.
+                for _mt in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
+                    try:
+                        _toml = _zf.read(_mt).decode("utf-8", "replace")
+                    except KeyError:
+                        continue
+                    for _blk in _toml.split("[[mods]]")[1:]:
+                        _mm = re.search(r'modId\s*=\s*"([a-z0-9_]+)"', _blk.split("[[")[0])
+                        if _mm:
+                            _present.add(_mm.group(1))
+                    break
                 for _n in _zf.namelist():
                     _parts = _n.split("/")
                     # registered items, same rule jarindex uses: an item MODEL is the proof
@@ -4639,6 +4681,9 @@ else:
         if _tp in written:
             # Authored above, deliberately. The strip below only knows about HIDDEN ids, so it
             # would undo a hand-written split like Haze Steel leaving c:ingots/steel.
+            continue
+        if _tp.split("/")[1] not in _present:
+            # A compat tag some other mod ships for a mod this pack does not have. Nothing loads it.
             continue
         if not any(_id_of(_v) in _hidden for _v in _union):
             continue

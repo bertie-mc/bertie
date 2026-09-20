@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:ultimate_axe",
+      "required": false
+    },
+    {
+      "id": "antarchy:battle_axe",
+      "required": false
+    }
+  ]
+}

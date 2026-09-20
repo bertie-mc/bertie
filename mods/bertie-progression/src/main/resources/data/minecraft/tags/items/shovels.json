@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:prismatic_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_hungery_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:unstable_shovel",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:hollow_shovel",
+      "required": false
+    }
+  ]
+}

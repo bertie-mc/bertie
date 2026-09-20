@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "678e3f1e2b5ea386346b66dd4f84ee3694e5d83fbfa7594bdff5acfd44385c7a"
+inputs-hash = "6e9590b5df58f8bee2c2f5e7c22976ff05c2b78c2c6b4626ce9b871ae0a5658d"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -17,10 +17,6 @@ mod = "curseforge:499826:5905995"
 [components."air-jump-enchantment"]
 any = "curseforge:1292199:6823792"
 mod = "curseforge:1292199:6823792"
-
-[components."alexs-caves-unofficial-port"]
-any = "curseforge:1420348:7981977"
-mod = "curseforge:1420348:7981977"
 
 [components."alexs-mobs-1-21-1"]
 any = "curseforge:1415721:7528193"
@@ -4180,27 +4176,6 @@ optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:1420348:7981977"]
-name = "alexs-caves-unofficial-port"
-component = "alexs-caves-unofficial-port"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "alexs-caves-unofficial-port-1420348"
-version = "7981977"
-filename = "alexscaves-2.0.10.jar"
-project-id = 1420348
-slug = "alexs-caves-unofficial-port"
-file-id = 7981977
-provides = ["alexscaves"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:XjY0RcQj:mIylVpkN", "mod-id" = "citadel", "version-range" = "[2.6.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:328085:7963363", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:1422273:7469725"]
 name = "wunderlib-neoforge"

@@ -6,15 +6,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:bloody_armor_helmet",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:novice_builder_armor_helmet",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:calamitous_armor_helmet",
       "required": false
     },
     {
@@ -22,15 +14,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:gilded_armor_helmet",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:apprentice_builder_armor_helmet",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:voiderite_armor_helmet",
       "required": false
     },
     {
@@ -38,23 +22,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:helionite_armor_helmet",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_armor_helmet",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:elvenite_halo_helmet",
-      "required": false
-    },
-    {
-      "id": "betterend:aeternium_helmet",
-      "required": false
-    },
-    {
-      "id": "betterend:crystalite_helmet",
       "required": false
     },
     {

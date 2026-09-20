@@ -3,7 +3,6 @@ package io.github.bertie_mc.emi;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
-import io.github.bertie_mc.emi.integration.alexscaves.AlexsCavesEmiModule;
 import io.github.bertie_mc.emi.integration.alexsmobs.AlexsMobsEmiModule;
 import io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftEmiModule;
 import io.github.bertie_mc.emi.integration.apotheosis.ApotheosisEmiModule;
@@ -89,7 +88,6 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("armageddon_mod", () -> ArmageddonEmiModule.register(registry));
         success &= run("apothic_spawners", () -> ApothicSpawnersEmiModule.register(registry));
         success &= run("enigmaticlegacyplus", () -> EnigmaticLegacyPlusEmiModule.register(registry));
-        success &= run("alexscaves", () -> AlexsCavesEmiModule.register(registry));
         success &= run("hostilenetworks", () -> HostileNetworksEmiModule.register(registry));
         success &= run("crabbersdelight", () -> CrabbersDelightEmiModule.register(registry));
         success &= run("minersdelight", () -> MinersDelightEmiModule.register(registry));

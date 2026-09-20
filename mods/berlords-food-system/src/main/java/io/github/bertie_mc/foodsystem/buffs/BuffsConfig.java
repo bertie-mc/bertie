@@ -215,7 +215,7 @@ public final class BuffsConfig {
                 "VANILLA:  \\"minecraft:cooked_beef\\": { \\"effects\\": [ { \\"id\\": \\"minecraft:strength\\", \\"amplifier\\": 0 } ] }",
                 "          amplifier 0 = level I, 1 = level II, and so on.",
                 "MODDED:   same format, just the mod's namespace: { \\"id\\": \\"farmersdelight:nourishment\\" },",
-                "          { \\"id\\": \\"alexscaves:sugar_rush\\", \\"amplifier\\": 1 } - any effect registered by any installed mod works.",
+                "          { \\"id\\": \\"farmersdelight:comfort\\", \\"amplifier\\": 1 } - any effect registered by any installed mod works.",
                 "NEGATIVE effects work too: { \\"id\\": \\"minecraft:blindness\\" } makes a cursed food.",
                 "",
                 "--- 2. attributes (stat modifiers, active while the food is in a slot) ---",

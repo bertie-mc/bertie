@@ -6,14 +6,6 @@
       "required": false
     },
     {
-      "id": "alexscaves:hazmat_boots",
-      "required": false
-    },
-    {
-      "id": "alexscaves:diving_boots",
-      "required": false
-    },
-    {
       "id": "alexsmobs:roadrunner_boots",
       "required": false
     },
@@ -177,14 +169,6 @@
     "#hazentouvelib:armors/boots",
     {
       "id": "magic_of_color:bedrock_warlock_greaves",
-      "required": false
-    },
-    {
-      "id": "magitech:aether_lifter",
-      "required": false
-    },
-    {
-      "id": "magitech:flamglide_strider",
       "required": false
     },
     {

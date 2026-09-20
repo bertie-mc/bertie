@@ -7,7 +7,7 @@
 		id: "trashcans:item_trash_can"
 	}
 	id: "6C00000000000000"
-	order_index: 12
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{

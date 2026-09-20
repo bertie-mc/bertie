@@ -22,7 +22,6 @@ dependencies {
     packComponents(deps.advancedLootInfo)
     packComponents(deps.advancementPlaques)
     packComponents(deps.airJumpEnchantment)
-    packComponents(deps.alexsCavesUnofficialPort)
     packComponents(deps.alexsMobs1211)
     packComponents(deps.alexsMobsExtraMusic)
     packComponents(deps.amendments)

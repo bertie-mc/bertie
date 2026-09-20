@@ -1,0 +1,29 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:spear_of_longinus",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_annihilation",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_scarlet_guillotine",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_chaos_saber",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_exsanguination",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sanguir",
+      "required": false
+    }
+  ]
+}

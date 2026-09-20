@@ -7,7 +7,7 @@
 		id: "minecraft:totem_of_undying"
 	}
 	id: "4C00000000000000"
-	order_index: 11
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
@@ -8901,6 +8901,32 @@
 			}]
 			x: 9.0d
 			y: 27.0d
+		}
+		{
+			icon: {
+				id: "ancient_forgemastery:howling_helmet"
+			}
+			id: "4C000000000002B3"
+			tasks: [{
+				id: "4C000000010002B3"
+				item: { count: 1, id: "ancient_forgemastery:howling_helmet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 29.0d
+		}
+		{
+			icon: {
+				id: "antarchy:fallen_king_crown"
+			}
+			id: "4C000000000002B4"
+			tasks: [{
+				id: "4C000000010002B4"
+				item: { count: 1, id: "antarchy:fallen_king_crown" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 29.0d
 		}
 	]
 }

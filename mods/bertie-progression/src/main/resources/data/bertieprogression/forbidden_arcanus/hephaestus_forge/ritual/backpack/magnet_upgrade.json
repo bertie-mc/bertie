@@ -19,15 +19,9 @@
       }
     },
     {
-      "amount": 3,
+      "amount": 6,
       "ingredient": {
-        "item": "alexscaves:azure_neodymium_ingot"
-      }
-    },
-    {
-      "amount": 3,
-      "ingredient": {
-        "item": "alexscaves:scarlet_neodymium_ingot"
+        "item": "anvilcraft:magnet_ingot"
       }
     }
   ],

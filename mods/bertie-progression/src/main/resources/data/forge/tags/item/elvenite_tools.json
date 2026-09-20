@@ -1,0 +1,49 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:swordofthe_elements",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sword_of_the_elements_ice",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sword_ofthe_elements_grass",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_holy_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_wilting_virescence",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sword_of_the_elements_lightning",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sword_of_the_elements_fire",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:skyfang_tempest",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:incendarius",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:sword_of_the_element_schulk",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_north_star",
+      "required": false
+    }
+  ]
+}

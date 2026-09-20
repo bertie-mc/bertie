@@ -2,31 +2,7 @@
   "replace": true,
   "values": [
     {
-      "id": "armageddon_mod:helionite_pickaxe",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:unstable_pickaxe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:bloody_pickaxe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:gilded_paxel",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_pickaxe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:voiderite_pickaxe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_paxel",
       "required": false
     },
     {
@@ -34,15 +10,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:voiderite_paxel",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:iron_colossus_arm",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:bloody_paxel",
       "required": false
     },
     {
@@ -51,14 +19,6 @@
     },
     {
       "id": "armageddon_mod:hollow_pickaxe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:helionite_paxel",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:gilded_pickaxe",
       "required": false
     },
     {

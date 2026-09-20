@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "armageddon_mod:the_eye_of_the_sun",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_duskfire_blade",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:true_helionite_sword",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:the_world_flare_axe",
+      "required": false
+    }
+  ]
+}

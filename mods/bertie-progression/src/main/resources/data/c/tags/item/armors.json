@@ -6,14 +6,6 @@
     "#c:chestplates",
     "#c:helmets",
     {
-      "id": "magitech:aether_lifter",
-      "required": false
-    },
-    {
-      "id": "magitech:flamglide_strider",
-      "required": false
-    },
-    {
       "id": "#mythsandlegends:armors",
       "required": false
     },

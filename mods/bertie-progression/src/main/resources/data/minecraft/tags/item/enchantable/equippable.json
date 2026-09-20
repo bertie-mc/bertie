@@ -2,59 +2,7 @@
   "replace": true,
   "values": [
     {
-      "id": "betterend:elytra_armored",
-      "required": false
-    },
-    {
-      "id": "betterend:elytra_crystalite",
-      "required": false
-    },
-    {
       "id": "mekanism:hdpe_elytra",
-      "required": false
-    },
-    {
-      "id": "alexscaves:hazmat_mask",
-      "required": false
-    },
-    {
-      "id": "alexscaves:hazmat_chestplate",
-      "required": false
-    },
-    {
-      "id": "alexscaves:hazmat_leggings",
-      "required": false
-    },
-    {
-      "id": "alexscaves:hazmat_boots",
-      "required": false
-    },
-    {
-      "id": "alexscaves:diving_helmet",
-      "required": false
-    },
-    {
-      "id": "alexscaves:diving_chestplate",
-      "required": false
-    },
-    {
-      "id": "alexscaves:diving_leggings",
-      "required": false
-    },
-    {
-      "id": "alexscaves:diving_boots",
-      "required": false
-    },
-    {
-      "id": "alexscaves:hood_of_darkness",
-      "required": false
-    },
-    {
-      "id": "alexscaves:cloak_of_darkness",
-      "required": false
-    },
-    {
-      "id": "alexscaves:galena_gauntlet",
       "required": false
     },
     {
@@ -194,14 +142,6 @@
     "#hazennstuff:armors/hns_chestplate",
     "#hazennstuff:armors/hns_leggings",
     "#hazennstuff:armors/hns_boots",
-    {
-      "id": "magitech:aether_lifter",
-      "required": false
-    },
-    {
-      "id": "magitech:flamglide_strider",
-      "required": false
-    },
     {
       "id": "minecraft:elytra",
       "required": false

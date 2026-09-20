@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "edd0c7b963710cd6d3aea4feb934062b6df297d46a57b108d1c1570e47292a60"
+inputs-hash = "d56f57790f13a45b264c33881b1bf11eff2dba844a38176426bc2cd90dee5ea5"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -17,10 +17,6 @@ mod = "modrinth:9NM0dXub:OWylG33I"
 [components."air-jump-enchantment"]
 any = "modrinth:kK4odxRI:9F3QZPK4"
 mod = "modrinth:kK4odxRI:9F3QZPK4"
-
-[components."alexs-caves-unofficial-port"]
-any = "modrinth:kSsLSjEt:pC1MYhqR"
-mod = "modrinth:kSsLSjEt:pC1MYhqR"
 
 [components."alexs-mobs-1-21-1"]
 any = "modrinth:EmNhnNnt:KSgki4uc"
@@ -8117,26 +8113,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:kSsLSjEt:pC1MYhqR"]
-name = "alexs-caves-unofficial-port"
-component = "alexs-caves-unofficial-port"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "kSsLSjEt"
-version = "pC1MYhqR"
-filename = "alexscaves-2.0.10.jar"
-project-id = "kSsLSjEt"
-version-id = "pC1MYhqR"
-provides = ["alexscaves"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:XjY0RcQj:mIylVpkN", "mod-id" = "citadel", "version-range" = "[2.6.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "maven:com.simibubi.create:create-1.21.1:6.0.10-281", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:kfqD1JRw:Jy5V5FNj"]
 name = "visual-workbench"

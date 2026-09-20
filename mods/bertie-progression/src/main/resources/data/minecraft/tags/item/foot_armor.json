@@ -6,23 +6,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:voiderite_armor_boots",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:expert_builder_armor_boots",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_armor_boots",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:helionite_armor_boots",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:bloody_armor_boots",
       "required": false
     },
     {
@@ -30,23 +14,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:calamitous_armor_boots",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:novice_builder_armor_boots",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:gilded_armor_boots",
-      "required": false
-    },
-    {
-      "id": "betterend:aeternium_boots",
-      "required": false
-    },
-    {
-      "id": "betterend:crystalite_boots",
       "required": false
     },
     {
@@ -141,14 +109,6 @@
     },
     "#irons_spellbooks:armors/boots",
     {
-      "id": "magitech:aether_lifter",
-      "required": false
-    },
-    {
-      "id": "magitech:flamglide_strider",
-      "required": false
-    },
-    {
       "id": "malum:soul_hunter_boots",
       "required": false
     },
@@ -162,10 +122,6 @@
     },
     {
       "id": "#mythsandlegends:foot_armor",
-      "required": false
-    },
-    {
-      "id": "netherdepthsupgrade:soul_sucker_boots",
       "required": false
     },
     {

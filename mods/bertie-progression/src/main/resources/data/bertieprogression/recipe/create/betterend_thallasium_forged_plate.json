@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterend"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "betterend:thallasium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "betterend:thallasium_forged_plate"
+    }
+  ]
+}

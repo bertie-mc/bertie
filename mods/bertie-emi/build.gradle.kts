@@ -39,7 +39,6 @@ dependencies {
     compileOnly(deps.apotheosis)
     compileOnly(deps.apothicSpawners)
     compileOnly(deps.enigmaticLegacyPlus)
-    compileOnly(deps.alexsCavesUnofficialPort)
     compileOnly(deps.hostileNeuralNetworks)
     compileOnly(deps.alexsMobs1211)
     compileOnly(deps.architecturyApi)

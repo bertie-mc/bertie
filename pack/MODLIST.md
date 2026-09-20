@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (455)
+## Mods (454)
 
 | Mod |
 |---|
@@ -12,7 +12,6 @@
 | `advanced-loot-info` |
 | `advancement-plaques` |
 | `air-jump-enchantment` |
-| `alexs-caves-` |
 | `alexs-mobs` |
 | `alexs-mobs-extra-music` |
 | `alfinolib` |
@@ -460,11 +459,10 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (30)
+## Ours (29)
 
 | Mod |
 |---|
-| `alexscavesworldgenfix` |
 | `berlords-food-system` |
 | `berlords_carving` |
 | `bertie-blackhole` |

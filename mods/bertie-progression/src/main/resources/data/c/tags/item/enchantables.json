@@ -193,14 +193,6 @@
       "id": "hazennstuff:pickaxe_axe_divine_gold",
       "required": false
     },
-    {
-      "id": "magitech:aether_lifter",
-      "required": false
-    },
-    {
-      "id": "magitech:flamglide_strider",
-      "required": false
-    },
     "#minecraft:enchantable/armor",
     "#minecraft:enchantable/equippable",
     "#minecraft:enchantable/weapon",

@@ -6,39 +6,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:bloody_hoe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:voiderite_hoe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_hoe",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:prismatic_hoe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:helionite_hoe",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:gilded_hoe",
-      "required": false
-    },
-    {
-      "id": "betterend:aeternium_hoe",
-      "required": false
-    },
-    {
-      "id": "betterend:terminite_hoe",
-      "required": false
-    },
-    {
-      "id": "betterend:thallasium_hoe",
       "required": false
     },
     {

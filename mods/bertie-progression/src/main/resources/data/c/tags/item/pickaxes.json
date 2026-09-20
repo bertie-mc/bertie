@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:ultimate_pickaxe",
+      "required": false
+    }
+  ]
+}

@@ -9,25 +9,22 @@
   "category": "misc",
   "key": {
     "a": {
-      "item": "alexscaves:azure_neodymium_ingot"
+      "item": "anvilcraft:magnet_ingot"
     },
     "b": {
       "tag": "c:ender_pearls"
     },
     "c": {
-      "item": "alexscaves:scarlet_neodymium_ingot"
-    },
-    "d": {
       "item": "sophisticatedbackpacks:advanced_pickup_upgrade"
     },
-    "e": {
+    "d": {
       "item": "irons_spellbooks:epic_ink"
     }
   },
   "pattern": [
-    "abc",
-    "adc",
-    "aec"
+    "aba",
+    "aca",
+    "ada"
   ],
   "result": {
     "count": 1,

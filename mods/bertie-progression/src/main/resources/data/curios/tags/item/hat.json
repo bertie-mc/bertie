@@ -2,6 +2,14 @@
   "replace": true,
   "values": [
     {
+      "id": "ancient_forgemastery:howling_helmet",
+      "required": false
+    },
+    {
+      "id": "antarchy:fallen_king_crown",
+      "required": false
+    },
+    {
       "id": "armageddon_mod:fisher_hat",
       "required": false
     },

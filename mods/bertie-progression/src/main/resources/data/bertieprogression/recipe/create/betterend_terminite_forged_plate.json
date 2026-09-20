@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterend"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "betterend:terminite_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "betterend:terminite_forged_plate"
+    }
+  ]
+}

@@ -74,7 +74,6 @@ include(
     ":core:client-test-api",
     ":core:client-test-driver",
     ":core:gametest-driver",
-    ":mods:alexscaves-worldgen-fix",
     ":mods:berlords-food-system",
     ":mods:berlords-better-horses",
     ":mods:bertie-blackhole",

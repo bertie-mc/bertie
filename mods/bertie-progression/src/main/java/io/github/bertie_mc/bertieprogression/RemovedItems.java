@@ -27,12 +27,11 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
  * {@code neoforge:false} by the same generator pass, so a removed item is both uncraftable and
  * invisible.
  *
- * <p><b>Why a tab list as well as an id list.</b> Some content is not addressable by item id.
- * Alex's Caves gives every cave biome one creative tab whose first entries are a cave tablet, a
- * cave codex and a cave biome map - all three the SAME item as every other biome's, differing only
- * in a data component. Removing {@code alexscaves:cave_tablet} by id would take all six biomes'
- * tablets with it. Emptying the biome's tab removes exactly that biome's stacks, and it keeps
- * covering the biome's blocks, items and spawn eggs without anyone maintaining a list of them.
+ * <p><b>Why a tab list as well as an id list.</b> Some content is not addressable by item id. A mod
+ * that gives each of its themes a creative tab often fills those tabs with stacks of ONE shared
+ * item that differ only in a data component, so removing that item by id empties every theme at
+ * once. Emptying a single tab takes exactly that theme's stacks, and it keeps covering the theme's
+ * blocks, items and spawn eggs without anyone maintaining a list of them.
  *
  * <p>{@code removed_tabs.json} is hand-written, unlike {@code removed_items.json}: it names whole
  * categories the pack has cut, not ids derived from a jar scan, so there is nothing to generate.

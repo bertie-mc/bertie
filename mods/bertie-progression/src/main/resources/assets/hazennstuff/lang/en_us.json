@@ -5,5 +5,10 @@
   "item.hazennstuff.stardust": "Cosmic Dust",
   "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
   "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
-  "material.hazennstuff.steel": "Haze Steel"
+  "material.hazennstuff.steel": "Haze Steel",
+  "item.hazennstuff.chronicles_of_neptune": "Chronicles of Neptune",
+  "item.hazennstuff.ebony_scroll": "Ebony Scroll",
+  "item.hazennstuff.lunarnomicon": "Lunarnomicon",
+  "item.hazennstuff.radiant_crown_of_scrolls": "Radiant Crown of Scrolls",
+  "item.hazennstuff.grimoire_of_flight": "Grimoire of Flight"
 }

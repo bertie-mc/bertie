@@ -10,14 +10,6 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:gilded_paxel",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:gilded_sword",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:broken_sword_of_the_elements_lightning",
       "required": false
     },
@@ -27,10 +19,6 @@
     },
     {
       "id": "armageddon_mod:the_scorchfang",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:bloody_paxel",
       "required": false
     },
     {
@@ -54,18 +42,6 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:helionite_sword",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:voiderite_sword",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:elvenite_paxel",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:broken_sword_of_the_elements_ice",
       "required": false
     },
@@ -78,15 +54,7 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:elvenite_sword",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:creative_obliterator",
-      "required": false
-    },
-    {
-      "id": "armageddon_mod:voiderite_paxel",
       "required": false
     },
     {
@@ -98,10 +66,6 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:helionite_paxel",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:the_gale_piercer",
       "required": false
     },
@@ -110,27 +74,11 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:bloody_sword",
-      "required": false
-    },
-    {
       "id": "armageddon_mod:broken_sword_of_the_elements_grass",
       "required": false
     },
     {
       "id": "armageddon_mod:broken_sword_ofthe_elements",
-      "required": false
-    },
-    {
-      "id": "betterend:aeternium_sword",
-      "required": false
-    },
-    {
-      "id": "betterend:terminite_sword",
-      "required": false
-    },
-    {
-      "id": "betterend:thallasium_sword",
       "required": false
     },
     {
@@ -236,22 +184,6 @@
     },
     {
       "id": "avaritia:blaze_sword",
-      "required": false
-    },
-    {
-      "id": "alexscaves:limestone_spear",
-      "required": false
-    },
-    {
-      "id": "alexscaves:extinction_spear",
-      "required": false
-    },
-    {
-      "id": "alexscaves:ortholance",
-      "required": false
-    },
-    {
-      "id": "alexscaves:desolate_dagger",
       "required": false
     },
     {

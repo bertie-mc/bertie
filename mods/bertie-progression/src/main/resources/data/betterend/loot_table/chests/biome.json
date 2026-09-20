@@ -66,26 +66,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "betterend:thallasium_axe"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "betterend:thallasium_pickaxe"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "betterend:thallasium_hoe"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "betterend:thallasium_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "betterend:thallasium_shovel"
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:ender_eye"
         },
         {
@@ -245,10 +225,6 @@
         {
           "type": "minecraft:item",
           "name": "betterend:chorus_mushroom_seed"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "betterend:handle_attachment_smithing_template"
         }
       ],
       "rolls": {
