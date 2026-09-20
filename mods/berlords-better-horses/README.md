@@ -168,15 +168,17 @@ gradle :mods:berlords-better-horses:runGameTests
 gradle :mods:berlords-better-horses:runClientTests
 ```
 
-Item sprites are cleaned up on a native 16x16 grid. All horseshoes share one
+Most item sprites use a 16x16 grid. All horseshoes share one
 shape with five-pixel arms and single-pixel nail holes. The saddle sprites use
 solid leather, cloth, and metal clusters with no downscaling or partial alpha.
 `tools/build-item-textures.ps1` regenerates these original item sprites;
 `tools/build-entity-textures.ps1` regenerates the original hoof and empty-slot textures.
 `tools/build-apple-textures.ps1` regenerates the three apple icons from their native
-16x16 layouts. All use vanilla's apple contour and stalk; the breed apple has four
-outward-curling colored bands, and the skeleton apple has open ribs with transparent
-air gaps. The built-in ImageGen revision prompts are in `tools/apple-prompts-v2.json`;
+pixel layouts. Zombie and breed apples use 16x16 grids. The skeleton apple uses
+32x32 with mostly 2x2 color clusters and finer details along curved ribs, worn bone
+edges, and transparent air gaps. All use vanilla's apple contour and stalk; the
+breed apple has four outward-curling colored bands. Built-in ImageGen prompts are
+in `tools/apple-prompts-v2.json` and `tools/skeleton-apple-prompt-v3.json`;
 `tools/apple-style-revision.md` records the vanilla and Born in Chaos Bone Heart references.
 The new 128x128 shared saddle atlas was made with built-in image generation and
 sampled onto its native grid; its material regions and prompt are documented in

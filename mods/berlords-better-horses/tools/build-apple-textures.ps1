@@ -1,4 +1,4 @@
-# Native 16x16 cleanup of revised ImageGen concepts (apple-prompts-v2.json).
+# Native 16x16 zombie/breed cleanup, plus the 32x32 skeleton detail pass.
 # Vanilla 1.21.1 silhouette reference: apple-style-revision.md.
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
@@ -32,25 +32,16 @@ $spiral = @(
     @{ Edge='#503070'; Base='#a261d4'; Light='#d6a7ff' },
     @{ Edge='#246276'; Base='#35bfd1'; Light='#a0e8ec' }
 )
-# Three curved air gaps per side leave a two-pixel sternum and open ribs.
-$ribGaps = @{
-    6=@(5,6,9,10); 7=@(4,5,6,9,10,11)
-    9=@(4,5,6,9,10,11); 10=@(5,6,9,10)
-    12=@(5,6,9,10); 13=@(6,9)
-}
 function Is-ApplePixel([int]$x,[int]$y) {
     return $x -ge 0 -and $x -lt 16 -and $y -ge 0 -and $y -lt 16 -and $rows[$y][$x] -ne '.'
 }
 function Is-StemPixel([int]$x,[int]$y) {
     return $y -lt 4 -or ($y -eq 4 -and $x -in @(7,8)) -or ($y -eq 5 -and $x -eq 7)
 }
-function Is-RibGap([int]$x,[int]$y) {
-    return $ribGaps.ContainsKey($y) -and $x -in $ribGaps[$y]
-}
 function Pixel($bitmap, $x, $y, $hex) {
     $bitmap.SetPixel($x,$y,[Drawing.ColorTranslator]::FromHtml($hex))
 }
-foreach ($kind in @('zombie','skeleton','breed')) {
+foreach ($kind in @('zombie','breed')) {
     $bitmap=[Drawing.Bitmap]::new(16,16)
     try {
         for ($y=0;$y -lt 16;$y++) {
@@ -62,19 +53,10 @@ foreach ($kind in @('zombie','skeleton','breed')) {
                     Pixel $bitmap $x $y $stem[$key]
                     continue
                 }
-                if ($kind -eq 'skeleton' -and (Is-RibGap $x $y)) { continue }
                 $edge=!(Is-ApplePixel ($x-1) $y) -or !(Is-ApplePixel ($x+1) $y) -or
                       !(Is-ApplePixel $x ($y-1)) -or !(Is-ApplePixel $x ($y+1))
                 if ($kind -eq 'zombie') {
                     $hex=$zombie[$key]
-                } elseif ($kind -eq 'skeleton') {
-                    $hex='#d4d0b9'
-                    if ($edge) { $hex='#8e8870' }
-                    if ($y -ge 11 -and $edge) { $hex='#686250' }
-                    if (!$edge -and (Is-RibGap $x ($y+1))) { $hex='#eee9d4' }
-                    if (!$edge -and (Is-RibGap $x ($y-1))) { $hex='#a9a38b' }
-                    if ($x -eq 7 -and $y -ge 6) { $hex='#eee9d4' }
-                    if ($x -eq 8 -and $y -ge 6) { $hex='#bcb69d' }
                 } else {
                     $dx=$x-7.5; $dy=$y-9
                     $radius=[Math]::Sqrt($dx*$dx+$dy*$dy)
@@ -98,3 +80,4 @@ foreach ($kind in @('zombie','skeleton','breed')) {
         $bitmap.Save((Join-Path $assetRoot ($kind+'_apple.png')),[Drawing.Imaging.ImageFormat]::Png)
     } finally { $bitmap.Dispose() }
 }
+& (Join-Path $PSScriptRoot 'build-skeleton-apple.ps1')

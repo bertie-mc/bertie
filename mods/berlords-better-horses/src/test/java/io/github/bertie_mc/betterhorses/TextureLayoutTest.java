@@ -25,7 +25,7 @@ class TextureLayoutTest {
     }
 
     @Test
-    void inventoryTexturesAreNative16Pixels() throws IOException {
+    void inventoryTexturesUseExpectedPixelGrids() throws IOException {
         for (String item : new String[] {
             "horse_effigy",
             "zombie_apple",
@@ -43,8 +43,9 @@ class TextureLayoutTest {
             try (var input = getClass().getResourceAsStream("/assets/betterhorses/textures/item/" + item + ".png")) {
                 assertNotNull(input);
                 var image = ImageIO.read(input);
-                assertEquals(16, image.getWidth());
-                assertEquals(16, image.getHeight());
+                int size = item.equals("skeleton_apple") ? 32 : 16;
+                assertEquals(size, image.getWidth());
+                assertEquals(size, image.getHeight());
                 assertTrue(image.getColorModel().hasAlpha());
             }
         }

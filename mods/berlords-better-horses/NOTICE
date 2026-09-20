@@ -10,8 +10,10 @@ knight created for this project. Prompts are recorded in art-prompts.json.
 tools/build-entity-textures.ps1 regenerates the original hoof and empty-slot textures.
 The three appearance apple concepts were created with built-in OpenAI ImageGen;
 tools/apple-prompts.json records the original prompts; tools/apple-prompts-v2.json
-records the current revision. tools/build-apple-textures.ps1 records the final
-native 16x16 pixels. The apple contour and stalk follow Minecraft Java 1.21.1's
+records the shared-shape revision; tools/skeleton-apple-prompt-v3.json records the
+32x32 skeleton revision. tools/build-apple-textures.ps1 and
+tools/build-skeleton-apple.ps1 record the final pixels at their native resolutions.
+The apple contour and stalk follow Minecraft Java 1.21.1's
 apple texture, which remains Mojang's property. The skeleton apple's open ribs
 take visual inspiration from mongoose_artist's Born in Chaos Bone Heart; none of
 that item's pixels are included. Reference details are in tools/apple-style-revision.md.
