@@ -794,33 +794,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 5.0d
-		}
-		{
-			icon: {
-				id: "alexscaves:primordial_tunic"
-			}
-			id: "7B00000000000020"
-			tasks: [
-				{
-					id: "7B00000001000020"
-					item: { count: 1, id: "alexscaves:primordial_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010020"
-					item: { count: 1, id: "alexscaves:primordial_tunic" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020020"
-					item: { count: 1, id: "alexscaves:primordial_pants" }
-					type: "item"
-				}
-			]
 			x: -58.0d
-			y: 23.0d
+			y: 27.0d
 		}
 		{
 			icon: {
@@ -1297,7 +1272,7 @@
 				type: "item"
 			}]
 			x: -61.0d
-			y: 6.0d
+			y: 27.0d
 		}
 		{
 			icon: {
@@ -1340,7 +1315,7 @@
 				type: "item"
 			}]
 			x: -59.0d
-			y: 8.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -1352,8 +1327,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
 				type: "item"
 			}]
-			x: -57.0d
-			y: 8.0d
+			x: -60.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -1366,7 +1341,7 @@
 				type: "item"
 			}]
 			x: -61.0d
-			y: 9.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -1881,8 +1856,8 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
-			y: 5.0d
+			x: -59.0d
+			y: 27.0d
 		}
 		{
 			icon: {
@@ -5350,303 +5325,6 @@
 		}
 		{
 			icon: {
-				components: {
-					"irons_spellbooks:spell_container": {
-						data: [ ]
-						maxSpells: 1
-						mustEquip: 1b
-						spellWheel: 1b
-					}
-				}
-				id: "ice_and_fire_spellbooks:fire_dragon_priest_chestplate"
-			}
-			id: "7B000000000000B7"
-			tasks: [
-				{
-					id: "7B000000010000B7"
-					item: { count: 1, id: "ice_and_fire_spellbooks:fire_dragon_priest_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010400B7"
-					item: { count: 1, id: "ice_and_fire_spellbooks:fire_dragon_priest_mask" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100B7"
-					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "ice_and_fire_spellbooks:fire_dragon_priest_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200B7"
-					item: { count: 1, id: "ice_and_fire_spellbooks:fire_dragon_priest_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300B7"
-					item: { count: 1, id: "ice_and_fire_spellbooks:fire_dragon_priest_boots" }
-					type: "item"
-				}
-			]
-			x: -32.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				components: {
-					"irons_spellbooks:spell_container": {
-						data: [ ]
-						maxSpells: 1
-						mustEquip: 1b
-						spellWheel: 1b
-					}
-				}
-				id: "ice_and_fire_spellbooks:ice_dragon_priest_chestplate"
-			}
-			id: "7B000000000000B8"
-			tasks: [
-				{
-					id: "7B000000010000B8"
-					item: { count: 1, id: "ice_and_fire_spellbooks:ice_dragon_priest_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010400B8"
-					item: { count: 1, id: "ice_and_fire_spellbooks:ice_dragon_priest_mask" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100B8"
-					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "ice_and_fire_spellbooks:ice_dragon_priest_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200B8"
-					item: { count: 1, id: "ice_and_fire_spellbooks:ice_dragon_priest_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300B8"
-					item: { count: 1, id: "ice_and_fire_spellbooks:ice_dragon_priest_boots" }
-					type: "item"
-				}
-			]
-			x: -31.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				components: {
-					"irons_spellbooks:spell_container": {
-						data: [ ]
-						maxSpells: 1
-						mustEquip: 1b
-						spellWheel: 1b
-					}
-				}
-				id: "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate"
-			}
-			id: "7B000000000000B9"
-			tasks: [
-				{
-					id: "7B000000010000B9"
-					item: { count: 1, id: "ice_and_fire_spellbooks:lightning_dragon_priest_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010400B9"
-					item: { count: 1, id: "ice_and_fire_spellbooks:lightning_dragon_priest_mask" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100B9"
-					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200B9"
-					item: { count: 1, id: "ice_and_fire_spellbooks:lightning_dragon_priest_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300B9"
-					item: { count: 1, id: "ice_and_fire_spellbooks:lightning_dragon_priest_boots" }
-					type: "item"
-				}
-			]
-			x: -32.0d
-			y: 11.0d
-		}
-		{
-			icon: {
-				id: "iceandfire:armor_copper_metal_chestplate"
-			}
-			id: "7B000000000000BA"
-			tasks: [
-				{
-					icon: {
-						id: "iceandfire:armor_copper_metal_chestplate"
-					}
-					id: "7B000000010000BA"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_copper_metal_helmet)item(iceandfire:armor_silver_metal_helmet))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragon Metal Helmet\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_copper_metal_chestplate"
-					}
-					id: "7B000000010100BA"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_copper_metal_chestplate)item(iceandfire:armor_silver_metal_chestplate))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragon Metal Chestplate\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_copper_metal_chestplate"
-					}
-					id: "7B000000010200BA"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_copper_metal_leggings)item(iceandfire:armor_silver_metal_leggings))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragon Metal Leggings\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_copper_metal_chestplate"
-					}
-					id: "7B000000010300BA"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_copper_metal_boots)item(iceandfire:armor_silver_metal_boots))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragon Metal Boots\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
-			x: -29.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				id: "iceandfire:armor_amethyst_chestplate"
-			}
-			id: "7B000000000000BB"
-			tasks: [
-				{
-					icon: {
-						id: "iceandfire:armor_amethyst_chestplate"
-					}
-					id: "7B000000010000BB"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_amethyst_helmet)item(iceandfire:armor_black_helmet)item(iceandfire:armor_blue_helmet)item(iceandfire:armor_bronze_helmet)item(iceandfire:armor_copper_helmet)item(iceandfire:armor_electric_helmet)item(iceandfire:armor_gray_helmet)item(iceandfire:armor_green_helmet)item(iceandfire:armor_red_helmet)item(iceandfire:armor_sapphire_helmet)item(iceandfire:armor_silver_helmet)item(iceandfire:armor_white_helmet))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonscale Helmet\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_amethyst_chestplate"
-					}
-					id: "7B000000010100BB"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_amethyst_chestplate)item(iceandfire:armor_black_chestplate)item(iceandfire:armor_blue_chestplate)item(iceandfire:armor_bronze_chestplate)item(iceandfire:armor_copper_chestplate)item(iceandfire:armor_electric_chestplate)item(iceandfire:armor_gray_chestplate)item(iceandfire:armor_green_chestplate)item(iceandfire:armor_red_chestplate)item(iceandfire:armor_sapphire_chestplate)item(iceandfire:armor_silver_chestplate)item(iceandfire:armor_white_chestplate))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonscale Chestplate\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_amethyst_chestplate"
-					}
-					id: "7B000000010200BB"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_amethyst_leggings)item(iceandfire:armor_black_leggings)item(iceandfire:armor_blue_leggings)item(iceandfire:armor_bronze_leggings)item(iceandfire:armor_copper_leggings)item(iceandfire:armor_electric_leggings)item(iceandfire:armor_gray_leggings)item(iceandfire:armor_green_leggings)item(iceandfire:armor_red_leggings)item(iceandfire:armor_sapphire_leggings)item(iceandfire:armor_silver_leggings)item(iceandfire:armor_white_leggings))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonscale Leggings\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:armor_amethyst_chestplate"
-					}
-					id: "7B000000010300BB"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:armor_amethyst_boots)item(iceandfire:armor_black_boots)item(iceandfire:armor_blue_boots)item(iceandfire:armor_bronze_boots)item(iceandfire:armor_copper_boots)item(iceandfire:armor_electric_boots)item(iceandfire:armor_gray_boots)item(iceandfire:armor_green_boots)item(iceandfire:armor_red_boots)item(iceandfire:armor_sapphire_boots)item(iceandfire:armor_silver_boots)item(iceandfire:armor_white_boots))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonscale Boots\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
-			x: -28.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				id: "iceandfire:dragonsteel_fire_chestplate"
-			}
-			id: "7B000000000000BC"
-			tasks: [
-				{
-					icon: {
-						id: "iceandfire:dragonsteel_fire_chestplate"
-					}
-					id: "7B000000010000BC"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:dragonsteel_fire_helmet)item(iceandfire:dragonsteel_ice_helmet)item(iceandfire:dragonsteel_lightning_helmet))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonsteel Helmet\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:dragonsteel_fire_chestplate"
-					}
-					id: "7B000000010100BC"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:dragonsteel_fire_chestplate)item(iceandfire:dragonsteel_ice_chestplate)item(iceandfire:dragonsteel_lightning_chestplate))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonsteel Chestplate\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:dragonsteel_fire_chestplate"
-					}
-					id: "7B000000010200BC"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:dragonsteel_fire_leggings)item(iceandfire:dragonsteel_ice_leggings)item(iceandfire:dragonsteel_lightning_leggings))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonsteel Leggings\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:dragonsteel_fire_chestplate"
-					}
-					id: "7B000000010300BC"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:dragonsteel_fire_boots)item(iceandfire:dragonsteel_ice_boots)item(iceandfire:dragonsteel_lightning_boots))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Dragonsteel Boots\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
-			x: -27.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				id: "iceandfire:tide_blue_chestplate"
-			}
-			id: "7B000000000000BD"
-			tasks: [
-				{
-					icon: {
-						id: "iceandfire:tide_blue_chestplate"
-					}
-					id: "7B000000010000BD"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:tide_blue_helmet)item(iceandfire:tide_bronze_helmet)item(iceandfire:tide_deepblue_helmet)item(iceandfire:tide_green_helmet)item(iceandfire:tide_purple_helmet)item(iceandfire:tide_red_helmet)item(iceandfire:tide_teal_helmet))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Sea Serpent Scales Helmet\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:tide_blue_chestplate"
-					}
-					id: "7B000000010100BD"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:tide_blue_chestplate)item(iceandfire:tide_bronze_chestplate)item(iceandfire:tide_deepblue_chestplate)item(iceandfire:tide_green_chestplate)item(iceandfire:tide_purple_chestplate)item(iceandfire:tide_red_chestplate)item(iceandfire:tide_teal_chestplate))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Sea Serpent Scales Chestplate\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:tide_blue_chestplate"
-					}
-					id: "7B000000010200BD"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:tide_blue_leggings)item(iceandfire:tide_bronze_leggings)item(iceandfire:tide_deepblue_leggings)item(iceandfire:tide_green_leggings)item(iceandfire:tide_purple_leggings)item(iceandfire:tide_red_leggings)item(iceandfire:tide_teal_leggings))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Sea Serpent Scales Leggings\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					icon: {
-						id: "iceandfire:tide_blue_chestplate"
-					}
-					id: "7B000000010300BD"
-					item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:tide_blue_boots)item(iceandfire:tide_bronze_boots)item(iceandfire:tide_deepblue_boots)item(iceandfire:tide_green_boots)item(iceandfire:tide_purple_boots)item(iceandfire:tide_red_boots)item(iceandfire:tide_teal_boots))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Sea Serpent Scales Boots\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-			]
-			x: -29.0d
-			y: 11.0d
-		}
-		{
-			icon: {
 				id: "iceandfire:earplugs"
 			}
 			id: "7B000000000000BE"
@@ -5655,8 +5333,8 @@
 				item: { count: 1, id: "iceandfire:earplugs" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 6.0d
+			x: -58.0d
+			y: 26.0d
 		}
 		{
 			icon: {
@@ -5686,36 +5364,6 @@
 				}
 			]
 			x: -25.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				id: "immersive_armors:divine_chestplate"
-			}
-			id: "7B000000000000C0"
-			tasks: [
-				{
-					id: "7B000000010000C0"
-					item: { count: 1, id: "immersive_armors:divine_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100C0"
-					item: { count: 1, id: "immersive_armors:divine_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200C0"
-					item: { count: 1, id: "immersive_armors:divine_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300C0"
-					item: { count: 1, id: "immersive_armors:divine_boots" }
-					type: "item"
-				}
-			]
-			x: -24.0d
 			y: 10.0d
 		}
 		{
@@ -6284,19 +5932,6 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:speed_boots"
-			}
-			id: "7B000000000000D2"
-			tasks: [{
-				id: "7B000000010000D2"
-				item: { count: 1, id: "irons_spellbooks:speed_boots" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 19.0d
-		}
-		{
-			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
 						data: [ ]
@@ -6742,8 +6377,8 @@
 				item: { count: 1, id: "minecraft:turtle_helmet" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 11.0d
+			x: -59.0d
+			y: 26.0d
 		}
 		{
 			icon: {
@@ -10905,8 +10540,8 @@
 				item: { count: 1, id: "simplymore:mimicry_deer_horns" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 9.0d
+			x: 60.0d
+			y: 14.0d
 		}
 		{
 			icon: {
@@ -10918,7 +10553,7 @@
 				item: { count: 1, id: "simplymore:mimicry_glaive" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 61.0d
 			y: 14.0d
 		}
 		{
@@ -10931,7 +10566,7 @@
 				item: { count: 1, id: "simplymore:mimicry_grandsword" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 62.0d
 			y: 14.0d
 		}
 		{
@@ -10944,7 +10579,7 @@
 				item: { count: 1, id: "simplymore:mimicry_great_katana" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 63.0d
 			y: 14.0d
 		}
 		{
@@ -10957,8 +10592,8 @@
 				item: { count: 1, id: "simplymore:mimicry_great_spear" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 14.0d
+			x: 55.0d
+			y: 15.0d
 		}
 		{
 			icon: {
@@ -10970,7 +10605,7 @@
 				item: { count: 1, id: "simplymore:mimicry_greataxe" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 56.0d
 			y: 15.0d
 		}
 		{
@@ -10983,7 +10618,7 @@
 				item: { count: 1, id: "simplymore:mimicry_greathammer" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 57.0d
 			y: 15.0d
 		}
 		{
@@ -10996,7 +10631,7 @@
 				item: { count: 1, id: "simplymore:mimicry_halberd" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 58.0d
 			y: 15.0d
 		}
 		{
@@ -11009,7 +10644,7 @@
 				item: { count: 1, id: "simplymore:mimicry_katana" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 59.0d
 			y: 15.0d
 		}
 		{
@@ -11022,7 +10657,7 @@
 				item: { count: 1, id: "simplymore:mimicry_khopesh" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 60.0d
 			y: 15.0d
 		}
 		{
@@ -11035,7 +10670,7 @@
 				item: { count: 1, id: "simplymore:mimicry_lance" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 61.0d
 			y: 15.0d
 		}
 		{
@@ -11048,7 +10683,7 @@
 				item: { count: 1, id: "simplymore:mimicry_longsword" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 62.0d
 			y: 15.0d
 		}
 		{
@@ -11061,7 +10696,7 @@
 				item: { count: 1, id: "simplymore:mimicry_pernach" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 63.0d
 			y: 15.0d
 		}
 		{
@@ -11074,8 +10709,8 @@
 				item: { count: 1, id: "simplymore:mimicry_quarterstaff" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 15.0d
+			x: 55.0d
+			y: 16.0d
 		}
 		{
 			icon: {
@@ -11087,7 +10722,7 @@
 				item: { count: 1, id: "simplymore:mimicry_rapier" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 56.0d
 			y: 16.0d
 		}
 		{
@@ -11100,7 +10735,7 @@
 				item: { count: 1, id: "simplymore:mimicry_sai" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 57.0d
 			y: 16.0d
 		}
 		{
@@ -11113,7 +10748,7 @@
 				item: { count: 1, id: "simplymore:mimicry_scythe" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 58.0d
 			y: 16.0d
 		}
 		{
@@ -11126,7 +10761,7 @@
 				item: { count: 1, id: "simplymore:mimicry_spear" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 59.0d
 			y: 16.0d
 		}
 		{
@@ -11139,7 +10774,7 @@
 				item: { count: 1, id: "simplymore:mimicry_twinblade" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 60.0d
 			y: 16.0d
 		}
 		{
@@ -11152,7 +10787,7 @@
 				item: { count: 1, id: "simplymore:mimicry_warglaive" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 61.0d
 			y: 16.0d
 		}
 		{
@@ -11165,7 +10800,7 @@
 				item: { count: 1, id: "simplymore:molten_flare" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 62.0d
 			y: 16.0d
 		}
 		{
@@ -11178,7 +10813,7 @@
 				item: { count: 1, id: "simplymore:myrmedge" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 63.0d
 			y: 16.0d
 		}
 		{
@@ -11191,8 +10826,8 @@
 				item: { count: 1, id: "simplymore:perforiscus" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 16.0d
+			x: 55.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -11204,7 +10839,7 @@
 				item: { count: 1, id: "simplymore:revvengine" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 56.0d
 			y: 17.0d
 		}
 		{
@@ -11217,7 +10852,7 @@
 				item: { count: 1, id: "simplymore:runic_backhand_blade" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 57.0d
 			y: 17.0d
 		}
 		{
@@ -11230,7 +10865,7 @@
 				item: { count: 1, id: "simplymore:runic_dagger" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 58.0d
 			y: 17.0d
 		}
 		{
@@ -11243,8 +10878,8 @@
 				item: { count: 1, id: "simplymore:runic_deer_horns" }
 				type: "item"
 			}]
-			x: -61.0d
-			y: 10.0d
+			x: 59.0d
+			y: 17.0d
 		}
 		{
 			icon: {
@@ -11256,7 +10891,7 @@
 				item: { count: 1, id: "simplymore:runic_grandsword" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 60.0d
 			y: 17.0d
 		}
 		{
@@ -11269,7 +10904,7 @@
 				item: { count: 1, id: "simplymore:runic_great_katana" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 61.0d
 			y: 17.0d
 		}
 		{
@@ -11282,7 +10917,7 @@
 				item: { count: 1, id: "simplymore:runic_great_spear" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 62.0d
 			y: 17.0d
 		}
 		{
@@ -11295,7 +10930,7 @@
 				item: { count: 1, id: "simplymore:runic_khopesh" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 63.0d
 			y: 17.0d
 		}
 		{
@@ -11308,8 +10943,8 @@
 				item: { count: 1, id: "simplymore:runic_lance" }
 				type: "item"
 			}]
-			x: 62.0d
-			y: 17.0d
+			x: 55.0d
+			y: 18.0d
 		}
 		{
 			icon: {
@@ -11321,8 +10956,8 @@
 				item: { count: 1, id: "simplymore:runic_pernach" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 17.0d
+			x: 56.0d
+			y: 18.0d
 		}
 		{
 			icon: {
@@ -11334,7 +10969,7 @@
 				item: { count: 1, id: "simplymore:runic_quarterstaff" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 57.0d
 			y: 18.0d
 		}
 		{
@@ -11347,7 +10982,7 @@
 				item: { count: 1, id: "simplymore:ruptured_idol" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 58.0d
 			y: 18.0d
 		}
 		{
@@ -11360,7 +10995,7 @@
 				item: { count: 1, id: "simplymore:ruyi_jingu_bang" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 59.0d
 			y: 18.0d
 		}
 		{
@@ -11373,7 +11008,7 @@
 				item: { count: 1, id: "simplymore:serpentine_valour" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 60.0d
 			y: 18.0d
 		}
 		{
@@ -11386,7 +11021,7 @@
 				item: { count: 1, id: "simplymore:smouldering_ruin" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 61.0d
 			y: 18.0d
 		}
 		{
@@ -11399,7 +11034,7 @@
 				item: { count: 1, id: "simplymore:soul_foreseer" }
 				type: "item"
 			}]
-			x: 60.0d
+			x: 62.0d
 			y: 18.0d
 		}
 		{
@@ -11412,7 +11047,7 @@
 				item: { count: 1, id: "simplymore:stasis" }
 				type: "item"
 			}]
-			x: 61.0d
+			x: 63.0d
 			y: 18.0d
 		}
 		{
@@ -11425,8 +11060,8 @@
 				item: { count: 1, id: "simplymore:tarnished_idol" }
 				type: "item"
 			}]
-			x: 62.0d
-			y: 18.0d
+			x: 55.0d
+			y: 19.0d
 		}
 		{
 			icon: {
@@ -11438,8 +11073,8 @@
 				item: { count: 1, id: "simplymore:the_blood_harvester" }
 				type: "item"
 			}]
-			x: 63.0d
-			y: 18.0d
+			x: 56.0d
+			y: 19.0d
 		}
 		{
 			icon: {
@@ -11451,7 +11086,7 @@
 				item: { count: 1, id: "simplymore:the_pan" }
 				type: "item"
 			}]
-			x: 55.0d
+			x: 57.0d
 			y: 19.0d
 		}
 		{
@@ -11464,7 +11099,7 @@
 				item: { count: 1, id: "simplymore:the_vessel_breach" }
 				type: "item"
 			}]
-			x: 56.0d
+			x: 58.0d
 			y: 19.0d
 		}
 		{
@@ -11477,7 +11112,7 @@
 				item: { count: 1, id: "simplymore:tidebreaker" }
 				type: "item"
 			}]
-			x: 57.0d
+			x: 59.0d
 			y: 19.0d
 		}
 		{
@@ -11490,7 +11125,7 @@
 				item: { count: 1, id: "simplymore:timekeeper" }
 				type: "item"
 			}]
-			x: 58.0d
+			x: 60.0d
 			y: 19.0d
 		}
 		{
@@ -11503,7 +11138,7 @@
 				item: { count: 1, id: "simplymore:vipers_call" }
 				type: "item"
 			}]
-			x: 59.0d
+			x: 61.0d
 			y: 19.0d
 		}
 		{
@@ -12483,71 +12118,6 @@
 		}
 		{
 			icon: {
-				id: "antarchy:jumpy_boots"
-			}
-			id: "7B00000000000267"
-			tasks: [{
-				id: "7B00000001000267"
-				item: { count: 1, id: "antarchy:jumpy_boots" }
-				type: "item"
-			}]
-			x: -59.0d
-			y: 18.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:centipede_leggings"
-			}
-			id: "7B00000000000268"
-			tasks: [{
-				id: "7B00000001000268"
-				item: { count: 1, id: "alexsmobs:centipede_leggings" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 16.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:crocodile_chestplate"
-			}
-			id: "7B00000000000269"
-			tasks: [{
-				id: "7B00000001000269"
-				item: { count: 1, id: "alexsmobs:crocodile_chestplate" }
-				type: "item"
-			}]
-			x: -58.0d
-			y: 13.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:emu_leggings"
-			}
-			id: "7B0000000000026A"
-			tasks: [{
-				id: "7B0000000100026A"
-				item: { count: 1, id: "alexsmobs:emu_leggings" }
-				type: "item"
-			}]
-			x: -61.0d
-			y: 16.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:flying_fish_boots"
-			}
-			id: "7B0000000000026B"
-			tasks: [{
-				id: "7B0000000100026B"
-				item: { count: 1, id: "alexsmobs:flying_fish_boots" }
-				type: "item"
-			}]
-			x: -60.0d
-			y: 18.0d
-		}
-		{
-			icon: {
 				id: "alexsmobs:frontier_cap"
 			}
 			id: "7B0000000000026C"
@@ -12556,8 +12126,8 @@
 				item: { count: 1, id: "alexsmobs:frontier_cap" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 7.0d
+			x: -62.0d
+			y: 26.0d
 		}
 		{
 			icon: {
@@ -12569,21 +12139,8 @@
 				item: { count: 1, id: "alexsmobs:froststalker_helmet" }
 				type: "item"
 			}]
-			x: -59.0d
-			y: 7.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:novelty_hat"
-			}
-			id: "7B0000000000026E"
-			tasks: [{
-				id: "7B0000000100026E"
-				item: { count: 1, id: "alexsmobs:novelty_hat" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 10.0d
+			x: -58.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -12613,19 +12170,6 @@
 		}
 		{
 			icon: {
-				id: "alexsmobs:straddle_helmet"
-			}
-			id: "7B00000000000271"
-			tasks: [{
-				id: "7B00000001000271"
-				item: { count: 1, id: "alexsmobs:straddle_helmet" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 11.0d
-		}
-		{
-			icon: {
 				id: "mekanism:scuba_mask"
 			}
 			id: "7B00000000000272"
@@ -12646,36 +12190,6 @@
 		}
 		{
 			icon: {
-				id: "antarchy:blood_crystal_helmet"
-			}
-			id: "7B00000000000273"
-			tasks: [
-				{
-					id: "7B00000001000273"
-					item: { count: 1, id: "antarchy:blood_crystal_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010273"
-					item: { count: 1, id: "antarchy:blood_crystal_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020273"
-					item: { count: 1, id: "antarchy:blood_crystal_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030273"
-					item: { count: 1, id: "antarchy:blood_crystal_boots" }
-					type: "item"
-				}
-			]
-			x: -49.0d
-			y: 5.0d
-		}
-		{
-			icon: {
 				id: "antarchy:blood_crystal_katana"
 			}
 			id: "7B00000000000274"
@@ -12689,36 +12203,6 @@
 		}
 		{
 			icon: {
-				id: "antarchy:nightmare_helmet"
-			}
-			id: "7B00000000000275"
-			tasks: [
-				{
-					id: "7B00000001000275"
-					item: { count: 1, id: "antarchy:nightmare_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010275"
-					item: { count: 1, id: "antarchy:nightmare_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020275"
-					item: { count: 1, id: "antarchy:nightmare_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030275"
-					item: { count: 1, id: "antarchy:nightmare_boots" }
-					type: "item"
-				}
-			]
-			x: -48.0d
-			y: 5.0d
-		}
-		{
-			icon: {
 				id: "antarchy:nightmare_sword"
 			}
 			id: "7B00000000000276"
@@ -12728,96 +12212,6 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "antarchy:primordial_helmet"
-			}
-			id: "7B00000000000277"
-			tasks: [
-				{
-					id: "7B00000001000277"
-					item: { count: 1, id: "antarchy:primordial_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010277"
-					item: { count: 1, id: "antarchy:primordial_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020277"
-					item: { count: 1, id: "antarchy:primordial_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030277"
-					item: { count: 1, id: "antarchy:primordial_boots" }
-					type: "item"
-				}
-			]
-			x: -47.0d
-			y: 5.0d
-		}
-		{
-			icon: {
-				id: "antarchy:tigers_eye_helmet"
-			}
-			id: "7B00000000000278"
-			tasks: [
-				{
-					id: "7B00000001000278"
-					item: { count: 1, id: "antarchy:tigers_eye_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010278"
-					item: { count: 1, id: "antarchy:tigers_eye_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020278"
-					item: { count: 1, id: "antarchy:tigers_eye_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030278"
-					item: { count: 1, id: "antarchy:tigers_eye_boots" }
-					type: "item"
-				}
-			]
-			x: -49.0d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "antarchy:ultimate_helmet"
-			}
-			id: "7B00000000000279"
-			tasks: [
-				{
-					id: "7B00000001000279"
-					item: { count: 1, id: "antarchy:ultimate_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010279"
-					item: { count: 1, id: "antarchy:ultimate_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020279"
-					item: { count: 1, id: "antarchy:ultimate_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030279"
-					item: { count: 1, id: "antarchy:ultimate_boots" }
-					type: "item"
-				}
-			]
-			x: -48.0d
 			y: 6.0d
 		}
 		{
@@ -13781,36 +13175,6 @@
 		}
 		{
 			icon: {
-				id: "forbidden_arcanus:mortem_chestplate"
-			}
-			id: "7B000000000002B6"
-			tasks: [
-				{
-					id: "7B000000010002B6"
-					item: { count: 1, id: "forbidden_arcanus:mortem_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102B6"
-					item: { count: 1, id: "forbidden_arcanus:mortem_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202B6"
-					item: { count: 1, id: "forbidden_arcanus:mortem_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302B6"
-					item: { count: 1, id: "forbidden_arcanus:mortem_boots" }
-					type: "item"
-				}
-			]
-			x: -44.0d
-			y: 10.0d
-		}
-		{
-			icon: {
 				id: "hazennstuff:ascended_arbitrium_robes_helmet"
 			}
 			id: "7B000000000002B7"
@@ -14201,186 +13565,6 @@
 		}
 		{
 			icon: {
-				id: "mekanismtools:bronze_chestplate"
-			}
-			id: "7B000000000002C5"
-			tasks: [
-				{
-					id: "7B000000010002C5"
-					item: { count: 1, id: "mekanismtools:bronze_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102C5"
-					item: { count: 1, id: "mekanismtools:bronze_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202C5"
-					item: { count: 1, id: "mekanismtools:bronze_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302C5"
-					item: { count: 1, id: "mekanismtools:bronze_boots" }
-					type: "item"
-				}
-			]
-			x: -52.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "mekanismtools:lapis_lazuli_chestplate"
-			}
-			id: "7B000000000002C6"
-			tasks: [
-				{
-					id: "7B000000010002C6"
-					item: { count: 1, id: "mekanismtools:lapis_lazuli_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102C6"
-					item: { count: 1, id: "mekanismtools:lapis_lazuli_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202C6"
-					item: { count: 1, id: "mekanismtools:lapis_lazuli_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302C6"
-					item: { count: 1, id: "mekanismtools:lapis_lazuli_boots" }
-					type: "item"
-				}
-			]
-			x: -51.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "mekanismtools:osmium_chestplate"
-			}
-			id: "7B000000000002C7"
-			tasks: [
-				{
-					id: "7B000000010002C7"
-					item: { count: 1, id: "mekanismtools:osmium_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102C7"
-					item: { count: 1, id: "mekanismtools:osmium_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202C7"
-					item: { count: 1, id: "mekanismtools:osmium_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302C7"
-					item: { count: 1, id: "mekanismtools:osmium_boots" }
-					type: "item"
-				}
-			]
-			x: -50.0d
-			y: 20.0d
-		}
-		{
-			icon: {
-				id: "mekanismtools:refined_glowstone_chestplate"
-			}
-			id: "7B000000000002C8"
-			tasks: [
-				{
-					id: "7B000000010002C8"
-					item: { count: 1, id: "mekanismtools:refined_glowstone_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102C8"
-					item: { count: 1, id: "mekanismtools:refined_glowstone_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202C8"
-					item: { count: 1, id: "mekanismtools:refined_glowstone_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302C8"
-					item: { count: 1, id: "mekanismtools:refined_glowstone_boots" }
-					type: "item"
-				}
-			]
-			x: -52.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "mekanismtools:refined_obsidian_chestplate"
-			}
-			id: "7B000000000002C9"
-			tasks: [
-				{
-					id: "7B000000010002C9"
-					item: { count: 1, id: "mekanismtools:refined_obsidian_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102C9"
-					item: { count: 1, id: "mekanismtools:refined_obsidian_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202C9"
-					item: { count: 1, id: "mekanismtools:refined_obsidian_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302C9"
-					item: { count: 1, id: "mekanismtools:refined_obsidian_boots" }
-					type: "item"
-				}
-			]
-			x: -51.0d
-			y: 21.0d
-		}
-		{
-			icon: {
-				id: "mekanismtools:steel_chestplate"
-			}
-			id: "7B000000000002CA"
-			tasks: [
-				{
-					id: "7B000000010002CA"
-					item: { count: 1, id: "mekanismtools:steel_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102CA"
-					item: { count: 1, id: "mekanismtools:steel_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202CA"
-					item: { count: 1, id: "mekanismtools:steel_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302CA"
-					item: { count: 1, id: "mekanismtools:steel_boots" }
-					type: "item"
-				}
-			]
-			x: -50.0d
-			y: 21.0d
-		}
-		{
-			icon: {
 				id: "stellaris:jet_suit_chestplate"
 			}
 			id: "7B000000000002CB"
@@ -14467,32 +13651,6 @@
 		}
 		{
 			icon: {
-				id: "alexsmobs:falconry_hood"
-			}
-			id: "7B000000000002CF"
-			tasks: [{
-				id: "7B000000010002CF"
-				item: { count: 1, id: "alexsmobs:falconry_hood" }
-				type: "item"
-			}]
-			x: -58.0d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "alexsmobs:moose_headgear"
-			}
-			id: "7B000000000002D0"
-			tasks: [{
-				id: "7B000000010002D0"
-				item: { count: 1, id: "alexsmobs:moose_headgear" }
-				type: "item"
-			}]
-			x: -61.0d
-			y: 5.0d
-		}
-		{
-			icon: {
 				id: "antarchy:moggles"
 			}
 			id: "7B000000000002D1"
@@ -14501,8 +13659,8 @@
 				item: { count: 1, id: "antarchy:moggles" }
 				type: "item"
 			}]
-			x: -60.0d
-			y: 9.0d
+			x: -62.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -14528,7 +13686,7 @@
 				type: "item"
 			}]
 			x: -62.0d
-			y: 6.0d
+			y: 27.0d
 		}
 		{
 			icon: {
@@ -14541,7 +13699,7 @@
 				type: "item"
 			}]
 			x: -60.0d
-			y: 5.0d
+			y: 27.0d
 		}
 		{
 			icon: {
@@ -14554,7 +13712,7 @@
 				type: "item"
 			}]
 			x: -60.0d
-			y: 10.0d
+			y: 26.0d
 		}
 		{
 			icon: {
@@ -14566,47 +13724,8 @@
 				item: { count: 1, id: "endermanoverhaul:snowy_hood" }
 				type: "item"
 			}]
-			x: -58.0d
-			y: 10.0d
-		}
-		{
-			icon: {
-				id: "ice_and_fire_spellbooks:eldritch_dragon_priest_mask"
-			}
-			id: "7B000000000002D7"
-			tasks: [{
-				id: "7B000000010002D7"
-				item: { count: 1, id: "ice_and_fire_spellbooks:eldritch_dragon_priest_mask" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 5.0d
-		}
-		{
-			icon: {
-				id: "ice_and_fire_spellbooks:ender_dragon_priest_mask"
-			}
-			id: "7B000000000002D8"
-			tasks: [{
-				id: "7B000000010002D8"
-				item: { count: 1, id: "ice_and_fire_spellbooks:ender_dragon_priest_mask" }
-				type: "item"
-			}]
-			x: -57.0d
-			y: 7.0d
-		}
-		{
-			icon: {
-				id: "ice_and_fire_spellbooks:wooden_mask"
-			}
-			id: "7B000000000002D9"
-			tasks: [{
-				id: "7B000000010002D9"
-				item: { count: 1, id: "ice_and_fire_spellbooks:wooden_mask" }
-				type: "item"
-			}]
-			x: -59.0d
-			y: 11.0d
+			x: -61.0d
+			y: 26.0d
 		}
 		{
 			icon: {
@@ -14620,32 +13739,6 @@
 			}]
 			x: -60.0d
 			y: 8.0d
-		}
-		{
-			icon: {
-				id: "lendersdelight:cindaria_hat"
-			}
-			id: "7B000000000002DB"
-			tasks: [{
-				id: "7B000000010002DB"
-				item: { count: 1, id: "lendersdelight:cindaria_hat" }
-				type: "item"
-			}]
-			x: -57.0d
-			y: 5.0d
-		}
-		{
-			icon: {
-				id: "lendersdelight:scylla_snake_glazed_cindaria_hat"
-			}
-			id: "7B000000000002DC"
-			tasks: [{
-				id: "7B000000010002DC"
-				item: { count: 1, id: "lendersdelight:scylla_snake_glazed_cindaria_hat" }
-				type: "item"
-			}]
-			x: -59.0d
-			y: 10.0d
 		}
 		{
 			icon: {
@@ -14698,19 +13791,6 @@
 			}]
 			x: -61.0d
 			y: 13.0d
-		}
-		{
-			icon: {
-				id: "pastel:fanciful_circlet"
-			}
-			id: "7B000000000002E1"
-			tasks: [{
-				id: "7B000000010002E1"
-				item: { count: 1, id: "pastel:fanciful_circlet" }
-				type: "item"
-			}]
-			x: -62.0d
-			y: 7.0d
 		}
 		{
 			icon: {

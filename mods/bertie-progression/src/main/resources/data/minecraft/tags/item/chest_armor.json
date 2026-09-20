@@ -78,51 +78,11 @@
       "required": false
     },
     {
-      "id": "mekanismtools:bronze_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_chestplate",
-      "required": false
-    },
-    {
       "id": "pastel:bedrock_chestplate",
       "required": false
     },
     {
       "id": "pastel:ferocious_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:ultimate_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:primordial_chestplate",
       "required": false
     },
     {
@@ -172,107 +132,7 @@
     "#hazennstuff:armors/hns_chestplate",
     "#hazentouvelib:armors/chestplates",
     {
-      "id": "iceandfire:armor_amethyst_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_black_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_blue_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_bronze_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_metal_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_electric_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_gray_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_green_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_red_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_sapphire_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_metal_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_white_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_fire_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_ice_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_lightning_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_blue_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_bronze_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_deepblue_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_green_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_purple_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_red_chestplate",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_teal_chestplate",
-      "required": false
-    },
-    {
       "id": "immersive_armors:bone_chestplate",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_chestplate",
       "required": false
     },
     {

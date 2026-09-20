@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:moggles",
+      "required": false
+    },
+    {
+      "id": "antarchy:fallen_king_crown",
+      "required": false
+    }
+  ]
+}

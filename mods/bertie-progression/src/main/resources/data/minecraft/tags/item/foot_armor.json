@@ -66,55 +66,11 @@
       "required": false
     },
     {
-      "id": "mekanismtools:bronze_boots",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_boots",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_boots",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_boots",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_boots",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_boots",
-      "required": false
-    },
-    {
       "id": "pastel:bedrock_boots",
       "required": false
     },
     {
       "id": "pastel:oread_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:ultimate_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:primordial_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:jumpy_boots",
       "required": false
     },
     {
@@ -160,107 +116,7 @@
     "#hazennstuff:armors/hns_boots",
     "#hazentouvelib:armors/boots",
     {
-      "id": "iceandfire:armor_amethyst_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_black_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_blue_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_bronze_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_metal_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_electric_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_gray_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_green_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_red_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_sapphire_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_metal_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_white_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_fire_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_ice_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_lightning_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_blue_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_bronze_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_deepblue_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_green_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_purple_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_red_boots",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_teal_boots",
-      "required": false
-    },
-    {
       "id": "immersive_armors:bone_boots",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_boots",
       "required": false
     },
     {

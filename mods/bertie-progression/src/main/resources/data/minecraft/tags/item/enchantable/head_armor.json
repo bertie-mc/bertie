@@ -6,10 +6,6 @@
       "required": false
     },
     {
-      "id": "alexscaves:primordial_helmet",
-      "required": false
-    },
-    {
       "id": "alexscaves:hazmat_mask",
       "required": false
     },
@@ -19,10 +15,6 @@
     },
     {
       "id": "alexscaves:hood_of_darkness",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:moose_headgear",
       "required": false
     },
     {
@@ -43,10 +35,6 @@
     },
     {
       "id": "alexsmobs:froststalker_helmet",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:novelty_hat",
       "required": false
     },
     {
@@ -231,18 +219,6 @@
     },
     "#hazennstuff:armors/hns_helmet",
     "#hazentouvelib:armors/helmets",
-    {
-      "id": "ice_and_fire_spellbooks:fire_dragon_priest_helmet",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:ice_dragon_priest_helmet",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:lightning_dragon_priest_helmet",
-      "required": false
-    },
     {
       "id": "ice_and_fire_spellbooks:toornahkriin",
       "required": false

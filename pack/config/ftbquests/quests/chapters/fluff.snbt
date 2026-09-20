@@ -323,5 +323,20 @@
 			x: 15.0d
 			y: 0.0d
 		}
+		{
+			id: "6C00000000000010"
+			rewards: [{
+				id: "6C00000002000010"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000010"
+				item: { count: 1, id: "sereneseasons:calendar" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
 	]
 }

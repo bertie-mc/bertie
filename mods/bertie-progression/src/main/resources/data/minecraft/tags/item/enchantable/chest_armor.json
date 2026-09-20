@@ -6,10 +6,6 @@
       "required": false
     },
     {
-      "id": "alexscaves:primordial_tunic",
-      "required": false
-    },
-    {
       "id": "alexscaves:hazmat_chestplate",
       "required": false
     },
@@ -19,10 +15,6 @@
     },
     {
       "id": "alexscaves:cloak_of_darkness",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:crocodile_chestplate",
       "required": false
     },
     {
@@ -215,18 +207,6 @@
     },
     "#hazennstuff:armors/hns_chestplate",
     "#hazentouvelib:armors/chestplates",
-    {
-      "id": "ice_and_fire_spellbooks:fire_dragon_priest_chestplate",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:ice_dragon_priest_chestplate",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate",
-      "required": false
-    },
     {
       "id": "magic_of_color:bedrock_warlock_robes",
       "required": false

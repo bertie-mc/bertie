@@ -17,22 +17,6 @@
       "id": "mekanism:mekasuit_boots",
       "required": false
     },
-    {
-      "id": "mekanismtools:refined_glowstone_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_leggings",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_boots",
-      "required": false
-    },
     "#pastel:bedrock_armor",
     {
       "id": "avaritia:infinity_helmet",

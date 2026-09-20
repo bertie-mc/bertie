@@ -32,42 +32,6 @@
       "id": "minecraft:turtle_helmet",
       "required": false
     },
-    {
-      "id": "antarchy:ultimate_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:primordial_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:jumpy_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:tigers_eye_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:tigers_eye_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:tigers_eye_leggings",
-      "required": false
-    },
-    {
-      "id": "antarchy:tigers_eye_boots",
-      "required": false
-    },
     "#immersive_armors:armor",
     "#minecraft:head_armor"
   ]

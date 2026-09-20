@@ -981,7 +981,7 @@ write("data/sophisticatedbackpacks/recipe/copper_backpack.json", {
     "key": {"C": {"item": "berlordscarving:copper_big_slate"},
             "R": {"item": "minecraft:rabbit_hide"},
             "B": {"item": "sophisticatedbackpacks:backpack"}},
-    "pattern": ["CR", "BC"],
+    "pattern": ["CR", "CB"],
     "result": {"count": 1, "id": "sophisticatedbackpacks:copper_backpack"},
 })
 # Iron: a Tier-I ritual. 5000 blood and 50 aureal are both inside the T1 ceiling (1000/10/10000/900),
@@ -1435,7 +1435,7 @@ def _seq_assembly(path, transitional, ingredient, steps, results, mods=(), loops
                  "ingredient": {"item": ingredient}, "loops": loops, "results": results,
                  "sequence": [_step(s) for s in steps], "transitional_item": {"id": transitional}})
 
-# Structural Beam: shaft -> 16-step sequence -> 70% x1 / 30% x2.
+# Structural Beam: shaft -> 16-step sequence, 30% of runs yielding nothing.
 _seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:kinetic_vane", "create:shaft",
               [("deploy", "create:brass_nugget"), ("deploy", "create:brass_nugget"), ("press",),
                ("deploy", "minecraft:vine"), ("deploy", "malum:earthen_spirit"),
@@ -1445,7 +1445,7 @@ _seq_assembly(f"{R}/create/structural_beam_assembly.json", "bertieprogression:ki
                ("deploy", "create:copper_sheet"), ("deploy", "create:copper_sheet"), ("deploy", "create:copper_sheet"),
                ("deploy", "born_in_chaos_v1:diamond_termite_shard"), ("saw",)],
               [{"chance": 0.7, "id": "bertieprogression:kinetic_vane", "count": 1},
-               {"chance": 0.3, "id": "bertieprogression:kinetic_vane", "count": 2}],
+               {"chance": 0.3, "id": "bertieprogression:kinetic_vane", "count": 1}],
               mods=("malum", "slag", "born_in_chaos_v1"))
 # Small Water Wheel: bound soul ingot + 8x deploy structural beam.
 _seq_assembly(f"{R}/create/small_water_wheel_assembly.json", "create:water_wheel",
@@ -1457,11 +1457,11 @@ _seq_assembly(f"{R}/create/small_water_wheel_assembly.json", "create:water_wheel
 _seq_assembly(f"{R}/create/diamond_backpack_assembly.json",
               "sophisticatedbackpacks:diamond_backpack",
               "sophisticatedbackpacks:gold_backpack",
-              [("deploy", "minecraft:diamond_block")] * 4
+              [("deploy", "berlordscarving:diamond_big_slate")] * 2
               + [("fill", "slag:molten_diamond", 2592), ("press",)]
-              + [("deploy", "born_in_chaos_v1:diamond_termite_shard")] * 4,
+              + [("deploy", "berlordscarving:diamond_slate")] * 2,
               [{"id": "sophisticatedbackpacks:diamond_backpack", "count": 1}],
-              mods=("sophisticatedbackpacks", "slag", "born_in_chaos_v1"))
+              mods=("sophisticatedbackpacks", "slag", "berlordscarving"))
 write("data/sophisticatedbackpacks/recipe/diamond_backpack.json", DISABLED)
 
 # Large Water Wheel: small water wheel + 8x deploy structural beam.
@@ -3164,6 +3164,27 @@ write(f"{R}/cutting/leather_stripe.json",
        "sound": {"sound_id": "minecraft:item.axe.strip"},
        "tool": {"tag": "c:tools/knife"}})
 
+# Three hides and a feather that the grid handled badly. A knife on the cutting board is the
+# pack's way of breaking an animal part down, so they go the same way the leather stripes did.
+def _cut(name, ingredient, results, mods=()):
+    write(f"{R}/cutting/{name}.json",
+          {"neoforge:conditions": conds("farmersdelight", *mods),
+           "type": "farmersdelight:cutting",
+           "ingredients": [{"item": ingredient}],
+           "result": results,
+           "sound": {"sound_id": "minecraft:item.axe.strip"},
+           "tool": {"tag": "c:tools/knife"}})
+
+_cut("tough_hide", "alexscaves:tough_hide",
+     [{"item": {"count": 6, "id": "minecraft:leather"}}], mods=("alexscaves",))
+# Kangaroo hide was two-for-one in the grid; the board pays one and sometimes two, like hoglin hide.
+write("data/alexsmobs/recipe/kangaroo_hide_to_leather.json", DISABLED)
+_cut("kangaroo_hide", "alexsmobs:kangaroo_hide",
+     [{"item": {"count": 1, "id": "minecraft:leather"}},
+      {"chance": 0.5, "item": {"count": 1, "id": "minecraft:leather"}}], mods=("alexsmobs",))
+_cut("emu_feather", "alexsmobs:emu_feather",
+     [{"item": {"count": 2, "id": "minecraft:feather"}}], mods=("alexsmobs",))
+
 # Leather Wrapped Stick: a stick wound in six stripes.
 write("data/betterend/recipe/leather_wrapped_stick.json",
       shaped([" LL", "LSL", "LL "],
@@ -3259,7 +3280,7 @@ write(f"{_RE}/craft_iron_plate.json",
 
 # Submarine: a glazed nose, twin screws and a plated keel.
 write(f"{_RE}/craft_abyssal_submarine.json",
-      mech(_p(["NGGGNN", "NGGGBB", "BBBYBP", "BEKMMP", "BIIIIB"]),
+      mech(_p(["NGGGN", "NGGGB", "BBYBP", "BEKMP", "BIIIB"]),
            {"G": "minecraft:glass", "B": _BS, "Y": _SEAT, "P": _PROP, "E": _REE,
             "K": "rustic_engineer:book_abyssal_submarine", "M": _REM, "I": _REP},
            "rustic_engineer:abyssal_submarine_item"))

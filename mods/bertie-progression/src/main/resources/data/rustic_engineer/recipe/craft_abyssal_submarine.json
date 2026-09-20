@@ -39,11 +39,11 @@
     }
   },
   "pattern": [
-    " GGG  ",
-    " GGGBB",
-    "BBBYBP",
-    "BEKMMP",
-    "BIIIIB"
+    " GGG ",
+    " GGGB",
+    "BBYBP",
+    "BEKMP",
+    "BIIIB"
   ],
   "result": {
     "id": "rustic_engineer:abyssal_submarine_item",

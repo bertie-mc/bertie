@@ -440,6 +440,14 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Recipe disables: the three Dragon Priest sets and their masks are removed.
+[[dependencies.${mod_id}]]
+modId="ice_and_fire_spellbooks"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Vehicles move to the Mechanical Crafter and the plate and gear are renamed.
 [[dependencies.${mod_id}]]
 modId="rustic_engineer"

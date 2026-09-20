@@ -18,22 +18,6 @@
       "required": false
     },
     {
-      "id": "immersive_armors:divine_helmet",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_chestplate",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_leggings",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_boots",
-      "required": false
-    },
-    {
       "id": "immersive_armors:heavy_helmet",
       "required": false
     },

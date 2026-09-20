@@ -33,7 +33,6 @@ dependencies {
     packComponents(deps.apotheosis)
     packComponents(deps.apotheosisXIronsSpellbooksCompat)
     packComponents(deps.apothicCombat)
-    packComponents(deps.appleskin)
     packComponents(deps.aquaculture)
     packComponents(deps.aquacultureDelight)
     packComponents(deps.aquaticCreepers)

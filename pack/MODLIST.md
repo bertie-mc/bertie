@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (456)
+## Mods (455)
 
 | Mod |
 |---|
@@ -28,7 +28,6 @@
 | `apothic-combat` |
 | `apothic-enchanting` |
 | `apothic-spawners` |
-| `appleskin` |
 | `aquaculture` |
 | `aquaculture-delight` |
 | `aquatic-creepers` |

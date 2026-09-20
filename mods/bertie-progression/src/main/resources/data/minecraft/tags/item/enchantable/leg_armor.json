@@ -6,23 +6,11 @@
       "required": false
     },
     {
-      "id": "alexscaves:primordial_pants",
-      "required": false
-    },
-    {
       "id": "alexscaves:hazmat_leggings",
       "required": false
     },
     {
       "id": "alexscaves:diving_leggings",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:centipede_leggings",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:emu_leggings",
       "required": false
     },
     {
@@ -183,18 +171,6 @@
     },
     "#hazennstuff:armors/hns_leggings",
     "#hazentouvelib:armors/leggings",
-    {
-      "id": "ice_and_fire_spellbooks:fire_dragon_priest_leggings",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:ice_dragon_priest_leggings",
-      "required": false
-    },
-    {
-      "id": "ice_and_fire_spellbooks:lightning_dragon_priest_leggings",
-      "required": false
-    },
     {
       "id": "magic_of_color:bedrock_warlock_leggings",
       "required": false

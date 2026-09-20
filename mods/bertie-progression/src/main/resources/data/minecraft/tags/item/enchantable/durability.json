@@ -202,18 +202,6 @@
       "required": false
     },
     {
-      "id": "alexscaves:primordial_helmet",
-      "required": false
-    },
-    {
-      "id": "alexscaves:primordial_tunic",
-      "required": false
-    },
-    {
-      "id": "alexscaves:primordial_pants",
-      "required": false
-    },
-    {
       "id": "alexscaves:hazmat_mask",
       "required": false
     },
@@ -314,18 +302,6 @@
       "required": false
     },
     {
-      "id": "alexsmobs:crocodile_chestplate",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:centipede_leggings",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:moose_headgear",
-      "required": false
-    },
-    {
       "id": "alexsmobs:frontier_cap",
       "required": false
     },
@@ -338,10 +314,6 @@
       "required": false
     },
     {
-      "id": "alexsmobs:emu_leggings",
-      "required": false
-    },
-    {
       "id": "alexsmobs:fedora",
       "required": false
     },
@@ -351,14 +323,6 @@
     },
     {
       "id": "alexsmobs:rocky_chestplate",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:flying_fish_boots",
-      "required": false
-    },
-    {
-      "id": "alexsmobs:novelty_hat",
       "required": false
     },
     {
@@ -478,38 +442,6 @@
       "required": false
     },
     {
-      "id": "antarchy:ultimate_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:ultimate_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:ultimate_leggings",
-      "required": false
-    },
-    {
-      "id": "antarchy:ultimate_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_leggings",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_boots",
-      "required": false
-    },
-    {
       "id": "antarchy:moggles",
       "required": false
     },
@@ -523,26 +455,6 @@
     },
     {
       "id": "antarchy:krakens_grasp",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_chestplate",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_leggings",
-      "required": false
-    },
-    {
-      "id": "antarchy:blood_crystal_boots",
-      "required": false
-    },
-    {
-      "id": "antarchy:jumpy_boots",
       "required": false
     },
     {

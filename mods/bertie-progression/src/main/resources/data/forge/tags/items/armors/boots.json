@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "alexsmobs:roadrunner_boots",
+      "required": false
+    }
+  ]
+}

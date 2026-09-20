@@ -82,30 +82,6 @@
       "required": false
     },
     {
-      "id": "mekanismtools:bronze_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_helmet",
-      "required": false
-    },
-    {
       "id": "pastel:bedrock_helmet",
       "required": false
     },
@@ -118,27 +94,11 @@
       "required": false
     },
     {
-      "id": "antarchy:ultimate_helmet",
-      "required": false
-    },
-    {
-      "id": "antarchy:nightmare_helmet",
-      "required": false
-    },
-    {
       "id": "antarchy:moggles",
       "required": false
     },
     {
-      "id": "antarchy:blood_crystal_helmet",
-      "required": false
-    },
-    {
       "id": "antarchy:fallen_king_crown",
-      "required": false
-    },
-    {
-      "id": "antarchy:primordial_helmet",
       "required": false
     },
     {
@@ -208,107 +168,7 @@
     "#hazennstuff:armors/hns_helmet",
     "#hazentouvelib:armors/helmets",
     {
-      "id": "iceandfire:armor_amethyst_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_black_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_blue_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_bronze_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_copper_metal_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_electric_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_gray_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_green_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_red_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_sapphire_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_silver_metal_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:armor_white_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_fire_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_ice_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:dragonsteel_lightning_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_blue_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_bronze_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_deepblue_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_green_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_purple_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_red_helmet",
-      "required": false
-    },
-    {
-      "id": "iceandfire:tide_teal_helmet",
-      "required": false
-    },
-    {
       "id": "immersive_armors:bone_helmet",
-      "required": false
-    },
-    {
-      "id": "immersive_armors:divine_helmet",
       "required": false
     },
     {

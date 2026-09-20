@@ -55,22 +55,6 @@
       "required": false
     },
     {
-      "id": "mekanismtools:refined_glowstone_helmet",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_chestplate",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_leggings",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_boots",
-      "required": false
-    },
-    {
       "id": "mekanismtools:refined_glowstone_shield",
       "required": false
     },

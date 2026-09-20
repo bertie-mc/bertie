@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "born_in_chaos_v1"
+      "modid": "berlordscarving"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -36,7 +36,7 @@
           "item": "sophisticatedbackpacks:diamond_backpack"
         },
         {
-          "item": "minecraft:diamond_block"
+          "item": "berlordscarving:diamond_big_slate"
         }
       ],
       "results": [
@@ -52,39 +52,7 @@
           "item": "sophisticatedbackpacks:diamond_backpack"
         },
         {
-          "item": "minecraft:diamond_block"
-        }
-      ],
-      "results": [
-        {
-          "id": "sophisticatedbackpacks:diamond_backpack"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "sophisticatedbackpacks:diamond_backpack"
-        },
-        {
-          "item": "minecraft:diamond_block"
-        }
-      ],
-      "results": [
-        {
-          "id": "sophisticatedbackpacks:diamond_backpack"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "sophisticatedbackpacks:diamond_backpack"
-        },
-        {
-          "item": "minecraft:diamond_block"
+          "item": "berlordscarving:diamond_big_slate"
         }
       ],
       "results": [
@@ -131,7 +99,7 @@
           "item": "sophisticatedbackpacks:diamond_backpack"
         },
         {
-          "item": "born_in_chaos_v1:diamond_termite_shard"
+          "item": "berlordscarving:diamond_slate"
         }
       ],
       "results": [
@@ -147,39 +115,7 @@
           "item": "sophisticatedbackpacks:diamond_backpack"
         },
         {
-          "item": "born_in_chaos_v1:diamond_termite_shard"
-        }
-      ],
-      "results": [
-        {
-          "id": "sophisticatedbackpacks:diamond_backpack"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "sophisticatedbackpacks:diamond_backpack"
-        },
-        {
-          "item": "born_in_chaos_v1:diamond_termite_shard"
-        }
-      ],
-      "results": [
-        {
-          "id": "sophisticatedbackpacks:diamond_backpack"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "sophisticatedbackpacks:diamond_backpack"
-        },
-        {
-          "item": "born_in_chaos_v1:diamond_termite_shard"
+          "item": "berlordscarving:diamond_slate"
         }
       ],
       "results": [

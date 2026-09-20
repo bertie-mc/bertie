@@ -2,10 +2,6 @@
   "replace": true,
   "values": [
     {
-      "id": "antarchy:jumpy_boots",
-      "required": false
-    },
-    {
       "id": "anvilcraft:multitool",
       "required": false
     },
