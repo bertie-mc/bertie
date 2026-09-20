@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DD",
+    "DD"
+  ],
+  "key": {
+    "D": {
+      "item": "bertiecreatures:dark_tatters"
+    }
+  },
+  "result": {
+    "id": "minecraft:black_wool",
+    "count": 1
+  }
+}

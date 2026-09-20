@@ -1,0 +1,17 @@
+Bertie Creatures
+
+This modified distribution contains selected code and assets from Alex's Caves
+by Alexthe668 and Noonyeyz, and its Minecraft 1.21.1 port by Raguto.
+Source: https://github.com/Raguto/AlexsCaves-1.21.1
+Revision: d2a7b05998d85e602d86c4999e53340fb1ee9b06 (version 2.0.10)
+Original project: https://github.com/AlexModGuy/AlexsCaves
+Upstream credits: LudoCrypt, _Ninni, PrismaticPinky, RenRen, Gatetoh,
+arby698, PlummetStudios, HolidayRaptor.
+
+Licensed under the GNU General Public License version 3 only; see LICENSE.
+This component, including its third-party assets, is excluded from the
+repository's public-domain dedication. Modified in September 2026 to package
+selected mobs, Thornwood, associated loot and recipes without cave worldgen.
+Bertie Creatures is an independent derivative, not an official Alex's Caves release.
+Corresponding source is this complete component plus the repository's shared
+Gradle build logic, dependency manifests and locks.

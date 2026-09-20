@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_sign",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "#": {
+      "item": "bertiecreatures:stripped_thornwood_log"
+    }
+  },
+  "pattern": [
+    "C C",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 3,
+    "id": "bertiecreatures:thornwood_hanging_sign"
+  }
+}

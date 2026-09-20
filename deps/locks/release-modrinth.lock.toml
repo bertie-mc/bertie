@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "8f2d67d6209d5602007ac1e35bb43a0c23b53954a0f95bdbac3830684a1a7f30"
+inputs-hash = "32de57fe971116ccb46b0d67492f63cb6829e702359bbe68d1ab8b3915adf8fc"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -221,6 +221,10 @@ mod = "modrinth:t1VgucWo:xC7Vc2qa"
 [components."cinematic-cataclysm"]
 any = "modrinth:1WAsDg6d:ZHoI7B98"
 mod = "modrinth:1WAsDg6d:ZHoI7B98"
+
+[components."citadel"]
+any = "modrinth:XjY0RcQj:mIylVpkN"
+mod = "modrinth:XjY0RcQj:mIylVpkN"
 
 [components."client-tweaks"]
 any = "modrinth:vPNqo58Q:zMZWFyiK"
@@ -6794,6 +6798,7 @@ integrations = []
 
 [artifacts."modrinth:XjY0RcQj:mIylVpkN"]
 name = "citadel-1-21-1-port"
+component = "citadel"
 provider = "modrinth"
 kind = "mod"
 side = "both"

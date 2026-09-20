@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "XjY0RcQj"
+version-id = "mIylVpkN"
+filename = "citadel-1.21.1-2.7.6.jar"

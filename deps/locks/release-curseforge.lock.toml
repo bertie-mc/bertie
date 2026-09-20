@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "2c41a43c2a339074b46ec2b6b45c148bddbd311538c8f27d56933ac4677c5b15"
+inputs-hash = "4ca882aba7c3f18b6da6039db1812f3021f78a827c5e3357b13b5ea758ea6b19"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -221,6 +221,10 @@ mod = "curseforge:402924:5550217"
 [components."cinematic-cataclysm"]
 any = "curseforge:1399324:7550281"
 mod = "curseforge:1399324:7550281"
+
+[components."citadel"]
+any = "modrinth:XjY0RcQj:mIylVpkN"
+mod = "modrinth:XjY0RcQj:mIylVpkN"
 
 [components."client-tweaks"]
 any = "curseforge:251407:7966145"
@@ -10142,6 +10146,7 @@ integrations = []
 
 [artifacts."modrinth:XjY0RcQj:mIylVpkN"]
 name = "citadel-1-21-1-port"
+component = "citadel"
 provider = "modrinth"
 kind = "mod"
 side = "both"

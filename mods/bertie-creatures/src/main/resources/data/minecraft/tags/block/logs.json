@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bertiecreatures:thornwood_log",
+    "bertiecreatures:thornwood_wood",
+    "bertiecreatures:stripped_thornwood_log",
+    "bertiecreatures:stripped_thornwood_wood"
+  ]
+}

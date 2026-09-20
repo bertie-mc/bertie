@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glow_squid",
+    "minecraft:blaze",
+    "minecraft:blaze",
+    "minecraft:enderman",
+    "minecraft:allay",
+    "minecraft:magma_cube",
+    "minecraft:phantom",
+    "minecraft:warden",
+    "bertiecreatures:nucleeper"
+  ]
+}

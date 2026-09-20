@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#bertiecreatures:dinosaur_eggs",
+    "bertiecreatures:primal_magma",
+    "bertiecreatures:fissure_primal_magma",
+    "bertiecreatures:thin_bone"
+  ]
+}

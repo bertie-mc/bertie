@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": [
+      { "model": "bertiecreatures:block/thornwood_branch_top" }
+    ],
+    "facing=down": [
+      { "model": "bertiecreatures:block/thornwood_branch_top", "x": 180 }
+    ],
+    "facing=east": [
+      { "model": "bertiecreatures:block/thornwood_branch", "y": 90 }
+    ],
+    "facing=north": [
+      { "model": "bertiecreatures:block/thornwood_branch" }
+    ],
+    "facing=south": [
+      { "model": "bertiecreatures:block/thornwood_branch", "y": 180 }
+    ],
+    "facing=west": [
+      { "model": "bertiecreatures:block/thornwood_branch", "y": 270 }
+    ]
+  }
+}

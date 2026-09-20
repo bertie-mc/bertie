@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:bone_meal"
+    },
+    "B": {
+      "item": "bertiecreatures:thornwood_branch"
+    }
+  },
+  "result": {
+    "id": "bertiecreatures:thornwood_sapling"
+  }
+}

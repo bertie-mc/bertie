@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "cutout_mipped",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "bottom": "bertiecreatures:block/thornwood/thornwood_door_bottom",
+    "top": "bertiecreatures:block/thornwood/thornwood_door_top"
+  }
+}

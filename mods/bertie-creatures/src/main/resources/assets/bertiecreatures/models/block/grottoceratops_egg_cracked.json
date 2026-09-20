@@ -1,0 +1,8 @@
+{
+	"parent": "bertiecreatures:block/grottoceratops_egg_template",
+	"textures": {
+		"side": "bertiecreatures:block/egg/grottoceratops_egg_side_cracked",
+		"bottom" : "bertiecreatures:block/egg/grottoceratops_egg_bottom_cracked",
+		"top" : "bertiecreatures:block/egg/grottoceratops_egg_top_cracked"
+	}
+}

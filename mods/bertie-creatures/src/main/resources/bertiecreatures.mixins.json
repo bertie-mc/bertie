@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "io.github.bertie_mc.creatures.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["BubbledAirMixin"],
+  "injectors": {"defaultRequire": 1}
+}

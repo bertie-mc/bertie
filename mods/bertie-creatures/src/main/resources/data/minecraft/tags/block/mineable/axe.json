@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "bertiecreatures:dinosaur_chop",
+    "bertiecreatures:cooked_dinosaur_chop",
+    "bertiecreatures:thornwood_log",
+    "bertiecreatures:thornwood_wood",
+    "bertiecreatures:stripped_thornwood_log",
+    "bertiecreatures:stripped_thornwood_wood",
+    "bertiecreatures:thornwood_branch",
+    "bertiecreatures:thornwood_planks",
+    "bertiecreatures:thornwood_stairs",
+    "bertiecreatures:thornwood_slab",
+    "bertiecreatures:thornwood_fence",
+    "bertiecreatures:thornwood_sign",
+    "bertiecreatures:thornwood_wall_sign",
+    "bertiecreatures:thornwood_hanging_sign",
+    "bertiecreatures:thornwood_wall_hanging_sign",
+    "bertiecreatures:thornwood_pressure_plate",
+    "bertiecreatures:thornwood_trapdoor",
+    "bertiecreatures:thornwood_button",
+    "bertiecreatures:thornwood_fence_gate",
+    "bertiecreatures:thornwood_door"
+  ]
+}

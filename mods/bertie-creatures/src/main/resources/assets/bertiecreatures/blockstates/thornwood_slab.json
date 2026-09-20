@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bertiecreatures:block/thornwood_slab"
+    },
+    "type=double": {
+      "model": "bertiecreatures:block/thornwood_planks"
+    },
+    "type=top": {
+      "model": "bertiecreatures:block/thornwood_slab_top"
+    }
+  }
+}

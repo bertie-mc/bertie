@@ -1,0 +1,11 @@
+{
+	"parent": "bertiecreatures:block/tremorsaurus_egg_template",
+	"textures": {
+		"east": "bertiecreatures:block/egg/tremorsaurus_egg_east",
+		"south": "bertiecreatures:block/egg/tremorsaurus_egg_south",
+		"west": "bertiecreatures:block/egg/tremorsaurus_egg_west",
+		"north": "bertiecreatures:block/egg/tremorsaurus_egg_north",
+		"bottom" : "bertiecreatures:block/egg/tremorsaurus_egg_bottom",
+		"top" : "bertiecreatures:block/egg/tremorsaurus_egg_top"
+	}
+}

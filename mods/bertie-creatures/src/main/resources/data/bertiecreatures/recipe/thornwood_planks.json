@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "bertiecreatures:thornwood_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "bertiecreatures:thornwood_planks"
+  }
+}

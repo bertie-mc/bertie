@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bertiecreatures:block/thornwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bertiecreatures:block/thornwood_log"
+    },
+    "axis=z": {
+      "model": "bertiecreatures:block/thornwood_log",
+      "x": 90
+    }
+  }
+}

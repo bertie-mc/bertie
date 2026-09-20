@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:base_stone_overworld",
+    "#minecraft:dirt",
+    "#minecraft:sand",
+    "minecraft:sandstone",
+    "minecraft:packed_mud",
+    "bertiecreatures:primal_magma"
+  ]
+}

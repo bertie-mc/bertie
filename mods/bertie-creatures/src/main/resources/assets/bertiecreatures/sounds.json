@@ -1,0 +1,635 @@
+{
+  "luxtructosaurus_snort": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_snort"
+  },
+  "magic_conch_summon": {
+    "sounds": [
+      "bertiecreatures:item/magic_conch/magic_conch_summon"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.magic_conch_summon"
+  },
+  "luxtructosaurus_death": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_death"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_death"
+  },
+  "grottoceratops_call": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_call_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_call_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_call_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_call"
+  },
+  "grottoceratops_idle": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_idle_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_idle_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_idle_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_idle"
+  },
+  "nucleeper_charge": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:mob/nucleeper/nucleeper_charge",
+        "attenuation_distance": 64
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nucleeper_charge"
+  },
+  "amber_monolith_summon": {
+    "sounds": [
+      "bertiecreatures:block/amber/amber_monolith_summon_0",
+      "bertiecreatures:block/amber/amber_monolith_summon_1",
+      "bertiecreatures:block/amber/amber_monolith_summon_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.amber_monolith_summon"
+  },
+  "hullbreaker_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_hurt_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_hurt_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_hurt"
+  },
+  "nuclear_explosion_ringing": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:misc/nuclear_explosion/nuclear_explosion_ringing",
+        "stream": true,
+        "attenuation_distance": 256
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nuclear_explosion_ringing"
+  },
+  "tremorsaurus_idle": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_idle_0",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_idle_1",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_idle_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_idle"
+  },
+  "nucleeper_idle": {
+    "sounds": [
+      "bertiecreatures:mob/nucleeper/nucleeper_idle_0",
+      "bertiecreatures:mob/nucleeper/nucleeper_idle_1",
+      "bertiecreatures:mob/nucleeper/nucleeper_idle_2",
+      "bertiecreatures:mob/nucleeper/nucleeper_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nucleeper_idle"
+  },
+  "grottoceratops_step": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_step_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_step_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_step_2",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_step_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_step"
+  },
+  "flood_basalt_place": {
+    "sounds": [
+      "bertiecreatures:block/flood_basalt/flood_basalt_place_0",
+      "bertiecreatures:block/flood_basalt/flood_basalt_place_1",
+      "bertiecreatures:block/flood_basalt/flood_basalt_place_2",
+      "bertiecreatures:block/flood_basalt/flood_basalt_place_3",
+      "bertiecreatures:block/flood_basalt/flood_basalt_place_4"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.flood_basalt_place"
+  },
+  "flood_basalt_break": {
+    "sounds": [
+      "bertiecreatures:block/flood_basalt/flood_basalt_break_0",
+      "bertiecreatures:block/flood_basalt/flood_basalt_break_1",
+      "bertiecreatures:block/flood_basalt/flood_basalt_break_2",
+      "bertiecreatures:block/flood_basalt/flood_basalt_break_3",
+      "bertiecreatures:block/flood_basalt/flood_basalt_break_4"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.flood_basalt_break"
+  },
+  "hullbreaker_land_death": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_death_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_death_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_death_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_land_death"
+  },
+  "primal_magma_fissure_close": {
+    "sounds": [
+      "bertiecreatures:block/primal_magma/primal_magma_fissure_close_0",
+      "bertiecreatures:block/primal_magma/primal_magma_fissure_close_1",
+      "bertiecreatures:block/primal_magma/primal_magma_fissure_close_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.primal_magma_fissure_close"
+  },
+  "deep_one_mage_death": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_death_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_death_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_death_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_death"
+  },
+  "hullbreaker_idle": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_idle_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_idle_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_idle_2",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_idle"
+  },
+  "grottoceratops_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_hurt_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_hurt_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_hurt"
+  },
+  "tephra_whistle": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:misc/tephra/tephra_whistle_0",
+        "stream": true,
+        "attenuation_distance": 128,
+        "volume": 0.5
+      },
+      {
+        "name": "bertiecreatures:misc/tephra/tephra_whistle_1",
+        "stream": true,
+        "attenuation_distance": 128,
+        "volume": 0.5
+      },
+      {
+        "name": "bertiecreatures:misc/tephra/tephra_whistle_2",
+        "stream": true,
+        "attenuation_distance": 128,
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tephra_whistle"
+  },
+  "tectonic_shard_transform": {
+    "sounds": [
+      "bertiecreatures:item/tectonic_shard/tectonic_shard_transform_0",
+      "bertiecreatures:item/tectonic_shard/tectonic_shard_transform_1",
+      "bertiecreatures:item/tectonic_shard/tectonic_shard_transform_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tectonic_shard_transform"
+  },
+  "flood_basalt_breaking": {
+    "sounds": [
+      "bertiecreatures:block/flood_basalt/flood_basalt_breaking_0",
+      "bertiecreatures:block/flood_basalt/flood_basalt_breaking_1",
+      "bertiecreatures:block/flood_basalt/flood_basalt_breaking_2",
+      "bertiecreatures:block/flood_basalt/flood_basalt_breaking_3",
+      "bertiecreatures:block/flood_basalt/flood_basalt_breaking_4"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.flood_basalt_breaking"
+  },
+  "deep_one_mage_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hurt_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hurt_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_hurt"
+  },
+  "nuclear_explosion_rumble": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:misc/nuclear_explosion/nuclear_explosion_rumble",
+        "stream": true,
+        "attenuation_distance": 1024
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nuclear_explosion_rumble"
+  },
+  "thornwood_branch_break": {
+    "sounds": [
+      "bertiecreatures:block/thornwood_branch/thornwood_branch_break_0",
+      "bertiecreatures:block/thornwood_branch/thornwood_branch_break_1",
+      "bertiecreatures:block/thornwood_branch/thornwood_branch_break_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.thornwood_branch_break"
+  },
+  "vesper_idle": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_idle_0",
+      "bertiecreatures:mob/vesper/vesper_idle_1",
+      "bertiecreatures:mob/vesper/vesper_idle_2",
+      "bertiecreatures:mob/vesper/vesper_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_idle"
+  },
+  "vesper_death": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_death"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_death"
+  },
+  "tremorsaurus_roar": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_roar_0",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_roar_1",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_roar_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_roar"
+  },
+  "sea_staff_woosh": {
+    "sounds": [
+      "bertiecreatures:item/sea_staff/sea_staff_woosh_0",
+      "bertiecreatures:item/sea_staff/sea_staff_woosh_1",
+      "bertiecreatures:item/sea_staff/sea_staff_woosh_2",
+      "bertiecreatures:item/sea_staff/sea_staff_woosh_3",
+      "bertiecreatures:item/sea_staff/sea_staff_woosh_4"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.sea_staff"
+  },
+  "vesper_scream": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_scream_0",
+      "bertiecreatures:mob/vesper/vesper_scream_1",
+      "bertiecreatures:mob/vesper/vesper_scream_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_scream"
+  },
+  "atlatitan_death": {
+    "sounds": [
+      "bertiecreatures:mob/atlatitan/atlatitan_death_0",
+      "bertiecreatures:mob/atlatitan/atlatitan_death_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_death"
+  },
+  "luxtructosaurus_jump": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_jump"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_jump"
+  },
+  "luxtructosaurus_idle": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_2",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_idle"
+  },
+  "nucleeper_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/nucleeper/nucleeper_hurt_0",
+      "bertiecreatures:mob/nucleeper/nucleeper_hurt_1",
+      "bertiecreatures:mob/nucleeper/nucleeper_hurt_2",
+      "bertiecreatures:mob/nucleeper/nucleeper_hurt_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nucleeper_hurt"
+  },
+  "atlatitan_tail": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_tail_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_tail_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_tail"
+  },
+  "sea_staff_bubble": {
+    "sounds": [
+      "bertiecreatures:item/sea_staff/sea_staff_bubble_0",
+      "bertiecreatures:item/sea_staff/sea_staff_bubble_1",
+      "bertiecreatures:item/sea_staff/sea_staff_bubble_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.sea_staff_bubble"
+  },
+  "deep_one_mage_hostile": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hostile_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hostile_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_hostile_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_hostile"
+  },
+  "atlatitan_idle": {
+    "sounds": [
+      "bertiecreatures:mob/atlatitan/atlatitan_idle_0",
+      "bertiecreatures:mob/atlatitan/atlatitan_idle_1",
+      "bertiecreatures:mob/atlatitan/atlatitan_idle_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_idle"
+  },
+  "hullbreaker_land_idle": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_idle_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_idle_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_idle_2",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_land_idle"
+  },
+  "luxtructosaurus_roar": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_roar"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_roar"
+  },
+  "luxtructosaurus_stomp": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_stomp_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_stomp_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_stomp_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_stomp"
+  },
+  "luxtructosaurus_breath": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_breath_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_breath_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_breath_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_breathe"
+  },
+  "hullbreaker_attack": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_attack_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_attack_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_attack_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_attack"
+  },
+  "nucleeper_step": {
+    "sounds": [
+      "bertiecreatures:mob/nucleeper/nucleeper_step_0",
+      "bertiecreatures:mob/nucleeper/nucleeper_step_1",
+      "bertiecreatures:mob/nucleeper/nucleeper_step_2",
+      "bertiecreatures:mob/nucleeper/nucleeper_step_3",
+      "bertiecreatures:mob/nucleeper/nucleeper_step_4",
+      "bertiecreatures:mob/nucleeper/nucleeper_step_5"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nucleeper_step"
+  },
+  "atlatitan_step": {
+    "sounds": [
+      "bertiecreatures:mob/atlatitan/atlatitan_step_0",
+      "bertiecreatures:mob/atlatitan/atlatitan_step_1",
+      "bertiecreatures:mob/atlatitan/atlatitan_step_2",
+      "bertiecreatures:mob/atlatitan/atlatitan_step_3",
+      "bertiecreatures:mob/atlatitan/atlatitan_step_4",
+      "bertiecreatures:mob/atlatitan/atlatitan_step_5"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_step"
+  },
+  "hullbreaker_death": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_death_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_death_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_death"
+  },
+  "atlatitan_kick": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_kick"
+  },
+  "atlatitan_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/atlatitan/atlatitan_hurt_0",
+      "bertiecreatures:mob/atlatitan/atlatitan_hurt_1",
+      "bertiecreatures:mob/atlatitan/atlatitan_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_hurt"
+  },
+  "luxtructosaurus_kick": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_kick_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_kick"
+  },
+  "grottoceratops_graze": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_graze_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_graze_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_graze_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_graze"
+  },
+  "nuclear_explosion": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:misc/nuclear_explosion/nuclear_explosion",
+        "stream": true,
+        "attenuation_distance": 1024
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nuclear_explosion"
+  },
+  "sea_staff_hit": {
+    "sounds": [
+      "bertiecreatures:item/sea_staff/sea_staff_hit_0",
+      "bertiecreatures:item/sea_staff/sea_staff_hit_1",
+      "bertiecreatures:item/sea_staff/sea_staff_hit_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.sea_staff_hit"
+  },
+  "vesper_flap": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_flap_0",
+      "bertiecreatures:mob/vesper/vesper_flap_1",
+      "bertiecreatures:mob/vesper/vesper_flap_2",
+      "bertiecreatures:mob/vesper/vesper_flap_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_flap"
+  },
+  "vesper_quiet_idle": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_quiet_idle_0",
+      "bertiecreatures:mob/vesper/vesper_quiet_idle_1",
+      "bertiecreatures:mob/vesper/vesper_quiet_idle_2",
+      "bertiecreatures:mob/vesper/vesper_quiet_idle_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_quiet_idle"
+  },
+  "deep_one_mage_idle": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_idle_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_idle_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_idle_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_idle"
+  },
+  "flood_basalt_step": {
+    "sounds": [
+      "bertiecreatures:block/flood_basalt/flood_basalt_step_0",
+      "bertiecreatures:block/flood_basalt/flood_basalt_step_1",
+      "bertiecreatures:block/flood_basalt/flood_basalt_step_2",
+      "bertiecreatures:block/flood_basalt/flood_basalt_step_3",
+      "bertiecreatures:block/flood_basalt/flood_basalt_step_4"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.flood_basalt_step"
+  },
+  "luxtructosaurus_summon": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_summon"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_summon"
+  },
+  "luxtructosaurus_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_hurt_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_hurt_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_hurt"
+  },
+  "tremorsaurus_stomp": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_stomp_0",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_stomp_1",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_stomp_2",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_stomp_3"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_stomp"
+  },
+  "luxtructosaurus_attack_stomp": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_attack_stomp_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_attack_stomp_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_attack_stomp"
+  },
+  "grottoceratops_death": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_death_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_death_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_death_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_death"
+  },
+  "tremorsaurus_throw": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_throw"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_throw"
+  },
+  "tremorsaurus_bite": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_bite"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_bite"
+  },
+  "tremorsaurus_death": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_death"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_death"
+  },
+  "tremorsaurus_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_hurt_0",
+      "bertiecreatures:mob/tremorsaurus/tremorsaurus_hurt_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tremorsaurus_hurt"
+  },
+  "atlatitan_stomp": {
+    "sounds": [
+      "bertiecreatures:mob/atlatitan/atlatitan_stomp_0",
+      "bertiecreatures:mob/atlatitan/atlatitan_stomp_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.atlatitan_stomp"
+  },
+  "deep_one_mage_admire": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_admire_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_admire_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_admire_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_admire"
+  },
+  "luxtructosaurus_tail": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_tail_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_tail_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_tail"
+  },
+  "large_nuclear_explosion": {
+    "sounds": [
+      {
+        "name": "bertiecreatures:misc/nuclear_explosion/large_nuclear_explosion",
+        "stream": true,
+        "attenuation_distance": 1024
+      }
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.large_nuclear_explosion"
+  },
+  "vesper_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/vesper/vesper_hurt_0",
+      "bertiecreatures:mob/vesper/vesper_hurt_1"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.vesper_hurt"
+  },
+  "luxtructosaurus_step": {
+    "sounds": [
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_0",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_1",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_2",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_3",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_4",
+      "bertiecreatures:mob/luxtructosaurus/luxtructosaurus_step_5"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.luxtructosaurus_step"
+  },
+  "tephra_hit": {
+    "sounds": [
+      "bertiecreatures:misc/tephra/tephra_hit_0",
+      "bertiecreatures:misc/tephra/tephra_hit_1",
+      "bertiecreatures:misc/tephra/tephra_hit_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.tephra_hit"
+  },
+  "deep_one_mage_attack": {
+    "sounds": [
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_attack_0",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_attack_1",
+      "bertiecreatures:mob/deep_one_mage/deep_one_mage_attack_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.deep_one_mage_attack"
+  },
+  "nucleeper_death": {
+    "sounds": [
+      "bertiecreatures:mob/nucleeper/nucleeper_death"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.nucleeper_death"
+  },
+  "grottoceratops_attack": {
+    "sounds": [
+      "bertiecreatures:mob/grottoceratops/grottoceratops_attack_0",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_attack_1",
+      "bertiecreatures:mob/grottoceratops/grottoceratops_attack_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.grottoceratops_attack"
+  },
+  "hullbreaker_land_hurt": {
+    "sounds": [
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_hurt_0",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_hurt_1",
+      "bertiecreatures:mob/hullbreaker/hullbreaker_land_hurt_2"
+    ],
+    "subtitle": "bertiecreatures.sound.subtitle.hullbreaker_land_hurt"
+  }
+}

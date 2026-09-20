@@ -1,0 +1,8 @@
+{
+	"parent": "bertiecreatures:block/dinosaur_chop_template",
+	"textures": {
+		"side": "bertiecreatures:block/dinosaur_chop_cooked_side",
+		"front": "bertiecreatures:block/dinosaur_chop_cooked"
+	}
+
+}

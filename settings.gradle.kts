@@ -78,6 +78,7 @@ include(
     ":mods:berlords-food-system",
     ":mods:berlords-better-horses",
     ":mods:bertie-blackhole",
+    ":mods:bertie-creatures",
     ":mods:bertie-emi",
     ":mods:bertie-filters",
     ":mods:bertie-progression",

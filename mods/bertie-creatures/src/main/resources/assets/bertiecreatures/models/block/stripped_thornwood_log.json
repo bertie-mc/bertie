@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bertiecreatures:block/thornwood/stripped_thornwood_log_top",
+    "side": "bertiecreatures:block/thornwood/stripped_thornwood_log"
+  }
+}

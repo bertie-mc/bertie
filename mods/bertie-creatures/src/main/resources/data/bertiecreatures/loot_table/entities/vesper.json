@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "name": "vesper_wing",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "bertiecreatures:vesper_wing",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

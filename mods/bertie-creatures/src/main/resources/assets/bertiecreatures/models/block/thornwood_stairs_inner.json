@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "bertiecreatures:block/thornwood/thornwood_planks",
+    "side": "bertiecreatures:block/thornwood/thornwood_planks",
+    "top": "bertiecreatures:block/thornwood/thornwood_planks"
+  }
+}
