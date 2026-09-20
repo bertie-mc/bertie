@@ -3435,14 +3435,9 @@ write("assets/hazennstuff/lang/en_us.json",
        "item.hazennstuff.radiant_crown_of_scrolls": "Radiant Crown of Scrolls",
        "item.hazennstuff.grimoire_of_flight": "Grimoire of Flight"})
 
-# The same five carry a Geckolib model the mod only draws for items it registered itself, so the
-# `builtin/entity` model it ships would render nothing here. Each one is pointed at a flat sprite
-# projected from that model by texture-work/make_hazen_unreleased.py.
-for _hz in ("chronicles_of_neptune", "ebony_scroll", "lunarnomicon",
-            "radiant_crown_of_scrolls", "grimoire_of_flight"):
-    write(f"assets/hazennstuff/models/item/{_hz}.json",
-          {"parent": "minecraft:item/generated",
-           "textures": {"layer0": f"{MODID}:item/hazen/{_hz}"}})
+# Their models are not written here. The `builtin/entity` models the mod ships draw nothing without
+# its own renderer, so the geometry is converted into vanilla elements by
+# texture-work/make_hazen_models.py, which writes assets/hazennstuff/models/item/ directly.
 write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
 write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
     "type": "forbidden_arcanus:clibano_combustion",

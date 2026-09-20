@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "hazennstuff:curios/chronicles_of_neptune"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hazennstuff:curios/ebony_scroll"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hazennstuff:curios/lunarnomicon"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hazennstuff:curios/radiant_crown_of_scrolls"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "hazennstuff:item/staves/grimoire_staff"
+    }
+  ]
+}
