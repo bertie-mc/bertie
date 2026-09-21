@@ -902,8 +902,8 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
-			y: 5.0d
+			x: -58.0d
+			y: 46.0d
 		}
 		{
 			icon: {
@@ -932,8 +932,8 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
-			y: 5.0d
+			x: -57.0d
+			y: 37.0d
 		}
 		{
 			icon: {
@@ -975,8 +975,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 5.0d
+			x: -56.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -1044,8 +1044,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 5.0d
+			x: -55.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -1074,8 +1074,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 6.0d
+			x: -56.0d
+			y: 37.0d
 		}
 		{
 			icon: {
@@ -5025,8 +5025,8 @@
 					type: "item"
 				}
 			]
-			x: -32.0d
-			y: 10.0d
+			x: -58.0d
+			y: 34.0d
 		}
 		{
 			icon: {
@@ -5055,8 +5055,8 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
-			y: 10.0d
+			x: -56.0d
+			y: 36.0d
 		}
 		{
 			icon: {
@@ -5085,8 +5085,8 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
-			y: 10.0d
+			x: -56.0d
+			y: 35.0d
 		}
 		{
 			icon: {
@@ -5115,8 +5115,8 @@
 					type: "item"
 				}
 			]
-			x: -32.0d
-			y: 11.0d
+			x: -55.0d
+			y: 36.0d
 		}
 		{
 			icon: {
@@ -5145,8 +5145,8 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
-			y: 11.0d
+			x: -58.0d
+			y: 35.0d
 		}
 		{
 			icon: {
@@ -5175,8 +5175,8 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
-			y: 11.0d
+			x: -57.0d
+			y: 34.0d
 		}
 		{
 			icon: {
@@ -5786,8 +5786,8 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
-			y: 11.0d
+			x: -53.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -5846,8 +5846,8 @@
 					type: "item"
 				}
 			]
-			x: -20.0d
-			y: 10.0d
+			x: -54.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -5906,8 +5906,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 20.0d
+			x: -58.0d
+			y: 37.0d
 		}
 		{
 			icon: {
@@ -5936,8 +5936,8 @@
 					type: "item"
 				}
 			]
-			x: -46.0d
-			y: 20.0d
+			x: -57.0d
+			y: 36.0d
 		}
 		{
 			icon: {
@@ -5966,8 +5966,8 @@
 					type: "item"
 				}
 			]
-			x: -48.0d
-			y: 21.0d
+			x: -58.0d
+			y: 36.0d
 		}
 		{
 			icon: {
@@ -5996,8 +5996,8 @@
 					type: "item"
 				}
 			]
-			x: -47.0d
-			y: 21.0d
+			x: -57.0d
+			y: 35.0d
 		}
 		{
 			icon: {
@@ -11941,8 +11941,8 @@
 					type: "item"
 				}
 			]
-			x: -18.0d
-			y: 10.0d
+			x: -58.0d
+			y: 45.0d
 		}
 		{
 			icon: {
@@ -12024,8 +12024,8 @@
 					type: "item"
 				}
 			]
-			x: -41.0d
-			y: 20.0d
+			x: -57.0d
+			y: 45.0d
 		}
 		{
 			icon: {
@@ -13080,8 +13080,8 @@
 					type: "item"
 				}
 			]
-			x: -54.0d
-			y: 5.0d
+			x: -58.0d
+			y: 39.0d
 		}
 		{
 			icon: {
@@ -13110,8 +13110,8 @@
 					type: "item"
 				}
 			]
-			x: -53.0d
-			y: 5.0d
+			x: -57.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -13140,8 +13140,8 @@
 					type: "item"
 				}
 			]
-			x: -54.0d
-			y: 6.0d
+			x: -58.0d
+			y: 38.0d
 		}
 		{
 			icon: {
@@ -13322,6 +13322,126 @@
 			]
 			x: 27.0d
 			y: 7.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000300"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000300"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 34.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000301"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000301"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 35.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000302"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000302"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 36.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000303"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000303"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 37.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000304"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000304"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 38.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000305"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000305"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 39.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000306"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000306"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 45.0d
+		}
+		{
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7B00000000000307"
+			tasks: [{
+				icon: {
+					id: "minecraft:armor_stand"
+				}
+				id: "7B00000001000307"
+				type: "checkmark"
+			}]
+			x: -60.0d
+			y: 46.0d
 		}
 	]
 }

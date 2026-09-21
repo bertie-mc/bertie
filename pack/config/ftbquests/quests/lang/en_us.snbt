@@ -1811,4 +1811,12 @@
 	task.4B00000001000001.title: "Placeholder"
 	task.5B00000001000001.title: "Placeholder"
 	task.7B0000000100001C.title: "one above all"
+	quest.7B00000000000300.title: "Tier 0"
+	quest.7B00000000000301.title: "Tier 1"
+	quest.7B00000000000302.title: "Tier 2"
+	quest.7B00000000000303.title: "Tier 3"
+	quest.7B00000000000304.title: "Tier 4"
+	quest.7B00000000000305.title: "Tier 5"
+	quest.7B00000000000306.title: "Penultimate tier"
+	quest.7B00000000000307.title: "Final tier"
 }
