@@ -799,19 +799,6 @@
 		}
 		{
 			icon: {
-				id: "armageddon_mod:elvenite_halo_helmet"
-			}
-			id: "7B0000000000002A"
-			tasks: [{
-				id: "7B0000000100002A"
-				item: { count: 1, id: "armageddon_mod:elvenite_halo_helmet" }
-				type: "item"
-			}]
-			x: -60.0d
-			y: 6.0d
-		}
-		{
-			icon: {
 				id: "armageddon_mod:expert_builder_armor_chestplate"
 			}
 			id: "7B0000000000002B"
@@ -12585,36 +12572,6 @@
 		}
 		{
 			icon: {
-				id: "hazennstuff:garments_of_the_first_flamebearer_soul_chestplate"
-			}
-			id: "7B000000000002BD"
-			tasks: [
-				{
-					id: "7B000000010002BD"
-					item: { count: 1, id: "hazennstuff:garments_of_the_first_flamebearer_soul_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102BD"
-					item: { count: 1, id: "hazennstuff:garments_of_the_first_flamebearer_soul_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202BD"
-					item: { count: 1, id: "hazennstuff:garments_of_the_first_flamebearer_soul_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302BD"
-					item: { count: 1, id: "hazennstuff:garments_of_the_first_flamebearer_soul_boots" }
-					type: "item"
-				}
-			]
-			x: -34.0d
-			y: 12.0d
-		}
-		{
-			icon: {
 				id: "hazennstuff:nameless_one_chestplate"
 			}
 			id: "7B000000000002BE"
@@ -12850,8 +12807,8 @@
 					type: "item"
 				}
 			]
-			x: -36.0d
-			y: 20.0d
+			x: -58.0d
+			y: 29.0d
 		}
 		{
 			icon: {
@@ -12998,7 +12955,7 @@
 				type: "item"
 			}]
 			x: -62.0d
-			y: 5.0d
+			y: 30.0d
 		}
 		{
 			icon: {

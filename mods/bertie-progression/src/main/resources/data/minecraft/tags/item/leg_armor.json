@@ -42,6 +42,18 @@
       "required": false
     },
     {
+      "id": "aquamirae:terrible_leggings",
+      "required": false
+    },
+    {
+      "id": "aquamirae:salvager_waders",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_leggings",
+      "required": false
+    },
+    {
       "id": "block_factorys_bosses:dragon_bones_leggings",
       "required": false
     },

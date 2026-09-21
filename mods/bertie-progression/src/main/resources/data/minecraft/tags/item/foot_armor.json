@@ -42,6 +42,18 @@
       "required": false
     },
     {
+      "id": "aquamirae:terrible_boots",
+      "required": false
+    },
+    {
+      "id": "aquamirae:salvager_boots",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_boots",
+      "required": false
+    },
+    {
       "id": "block_factorys_bosses:dragon_bones_boots",
       "required": false
     },

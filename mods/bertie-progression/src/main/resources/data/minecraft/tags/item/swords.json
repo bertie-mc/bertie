@@ -236,6 +236,46 @@
       "required": false
     },
     {
+      "id": "aquamirae:remnant_saber",
+      "required": false
+    },
+    {
+      "id": "aquamirae:terrible_blade",
+      "required": false
+    },
+    {
+      "id": "aquamirae:terrible_fang",
+      "required": false
+    },
+    {
+      "id": "aquamirae:terrible_cleaver",
+      "required": false
+    },
+    {
+      "id": "aquamirae:shatterblade",
+      "required": false
+    },
+    {
+      "id": "aquamirae:shatterspike",
+      "required": false
+    },
+    {
+      "id": "aquamirae:tidepiercer",
+      "required": false
+    },
+    {
+      "id": "aquamirae:jawbreaker",
+      "required": false
+    },
+    {
+      "id": "aquamirae:dagger_of_greed",
+      "required": false
+    },
+    {
+      "id": "aquamirae:dreadwake",
+      "required": false
+    },
+    {
       "id": "block_factorys_bosses:dagger",
       "required": false
     },

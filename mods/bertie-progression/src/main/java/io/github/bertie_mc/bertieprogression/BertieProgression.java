@@ -24,7 +24,6 @@ public final class BertieProgression {
         ModItems.DATA_COMPONENTS.register(modBus);
         ModItems.TABS.register(modBus);
         ModAttachments.ATTACHMENTS.register(modBus);
-        HazenUnreleased.ARMOR_MATERIALS.register(modBus);
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.TYPES.register(modBus);
         // Create is an optional integration; do not resolve its registry classes otherwise.
@@ -50,11 +49,12 @@ public final class BertieProgression {
         modBus.register(EldritchTabGaps.class);
         // ModifyDefaultComponentsEvent is a mod-bus event as well.
         modBus.register(TrinketConversions.class);
-        // RegisterEvent and BuildCreativeModeTabContentsEvent, both mod-bus.
-        modBus.register(HazenUnreleased.class);
         // RegisterCapabilitiesEvent is a mod-bus event too. The class guards on create + curios.
         modBus.register(ExtendoGripCurio.class);
 
+        // The component half of the demotion is mod-bus; clearing the stats as they are read is
+        // a game-bus event, so it lives in its own class.
+        NeoForge.EVENT_BUS.register(TrinketConversions.Attributes.class);
         NeoForge.EVENT_BUS.register(CraftingGateHandler.class);
         NeoForge.EVENT_BUS.register(PlankSplitHandler.class);
         NeoForge.EVENT_BUS.register(MagnumTorchHandler.class);

@@ -3426,18 +3426,8 @@ write("assets/hazennstuff/lang/en_us.json",
        "item.hazennstuff.stardust": "Cosmic Dust",
        "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
        "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
-       "material.hazennstuff.steel": "Haze Steel",
-       # The five curios below ship art and no item; HazenUnreleased registers them, so their
-       # names come from here as well.
-       "item.hazennstuff.chronicles_of_neptune": "Chronicles of Neptune",
-       "item.hazennstuff.ebony_scroll": "Ebony Scroll",
-       "item.hazennstuff.lunarnomicon": "Lunarnomicon",
-       "item.hazennstuff.radiant_crown_of_scrolls": "Radiant Crown of Scrolls",
-       "item.hazennstuff.grimoire_of_flight": "Grimoire of Flight"})
+       "material.hazennstuff.steel": "Haze Steel"})
 
-# Their models are not written here. The `builtin/entity` models the mod ships draw nothing without
-# its own renderer, so the geometry is converted into vanilla elements by
-# texture-work/make_hazen_models.py, which writes assets/hazennstuff/models/item/ directly.
 write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
 write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
     "type": "forbidden_arcanus:clibano_combustion",

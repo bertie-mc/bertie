@@ -22,10 +22,6 @@
       "required": false
     },
     {
-      "id": "armageddon_mod:elvenite_halo_helmet",
-      "required": false
-    },
-    {
       "id": "cataclysm:ignitium_helmet",
       "required": false
     },
@@ -67,6 +63,22 @@
     },
     {
       "id": "antarchy:fallen_king_crown",
+      "required": false
+    },
+    {
+      "id": "aquamirae:terrible_helmet",
+      "required": false
+    },
+    {
+      "id": "aquamirae:salvager_helmet",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_heaume",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_tiara",
       "required": false
     },
     {

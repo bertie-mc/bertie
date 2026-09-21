@@ -54,6 +54,18 @@
       "required": false
     },
     {
+      "id": "aquamirae:terrible_chestplate",
+      "required": false
+    },
+    {
+      "id": "aquamirae:salvager_suit",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_brigandine",
+      "required": false
+    },
+    {
       "id": "block_factorys_bosses:dragon_bones_chestplate",
       "required": false
     },

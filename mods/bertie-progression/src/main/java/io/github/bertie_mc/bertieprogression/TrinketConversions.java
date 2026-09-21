@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 
 /**
@@ -38,6 +39,10 @@ public final class TrinketConversions {
         return BuiltInRegistries.ITEM.getKey(item).equals(ARMOUR_SLOT_BLOCKED);
     }
 
+    private static boolean isDemoted(Item item) {
+        return HEAD_TRINKETS.contains(BuiltInRegistries.ITEM.getKey(item));
+    }
+
     @SubscribeEvent
     public static void onModifyDefaultComponents(ModifyDefaultComponentsEvent event) {
         for (ResourceLocation id : HEAD_TRINKETS) {
@@ -46,6 +51,27 @@ public final class TrinketConversions {
                     .set(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.EMPTY)
                     .remove(DataComponents.MAX_DAMAGE)
                     .remove(DataComponents.DAMAGE)));
+        }
+    }
+
+    /**
+     * Clears the stats again at the point they are read.
+     *
+     * <p>Emptying {@code ATTRIBUTE_MODIFIERS} is not enough on its own: an {@code ArmorItem} whose
+     * material carries defence, toughness and knockback resistance still hands them out from code,
+     * so the component is never consulted and the demoted helmet keeps its armour bar. This event
+     * is the last step before the modifiers are applied and displayed, which makes it the only
+     * place that catches both sources.
+     */
+    public static final class Attributes {
+
+        private Attributes() {}
+
+        @SubscribeEvent
+        public static void onGatherAttributes(ItemAttributeModifierEvent event) {
+            if (isDemoted(event.getItemStack().getItem())) {
+                event.clearModifiers();
+            }
         }
     }
 }
