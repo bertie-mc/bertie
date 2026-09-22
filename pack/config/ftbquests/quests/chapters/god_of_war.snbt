@@ -794,7 +794,7 @@
 					type: "item"
 				}
 			]
-			x: -54.0d
+			x: -53.0d
 			y: 3.0d
 		}
 		{
@@ -824,7 +824,7 @@
 					type: "item"
 				}
 			]
-			x: -53.0d
+			x: -52.0d
 			y: 3.0d
 		}
 		{
@@ -854,7 +854,7 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
+			x: -51.0d
 			y: 3.0d
 		}
 		{
@@ -867,7 +867,7 @@
 				item: { count: 1, id: "armageddon_mod:zoranths_helmet_helmet" }
 				type: "item"
 			}]
-			x: -58.0d
+			x: -59.0d
 			y: 5.0d
 		}
 		{
@@ -1087,7 +1087,7 @@
 				item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
 				type: "item"
 			}]
-			x: -48.0d
+			x: -49.0d
 			y: 1.0d
 		}
 		{
@@ -1195,7 +1195,7 @@
 				item: { count: 1, id: "cataclysm:monstrous_helm" }
 				type: "item"
 			}]
-			x: -60.0d
+			x: -61.0d
 			y: 5.0d
 		}
 		{
@@ -1208,8 +1208,8 @@
 				item: { count: 1, id: "cataclysm:bloom_stone_pauldrons" }
 				type: "item"
 			}]
-			x: -62.0d
-			y: 6.0d
+			x: -58.0d
+			y: 5.0d
 		}
 		{
 			icon: {
@@ -1550,7 +1550,7 @@
 					type: "item"
 				}
 			]
-			x: -53.0d
+			x: -54.0d
 			y: 2.0d
 		}
 		{
@@ -1575,7 +1575,7 @@
 					type: "item"
 				}
 			]
-			x: -50.0d
+			x: -51.0d
 			y: 2.0d
 		}
 		{
@@ -1600,7 +1600,7 @@
 					type: "item"
 				}
 			]
-			x: -49.0d
+			x: -50.0d
 			y: 2.0d
 		}
 		{
@@ -4995,7 +4995,7 @@
 				item: { count: 1, id: "iceandfire:earplugs" }
 				type: "item"
 			}]
-			x: -50.0d
+			x: -51.0d
 			y: 1.0d
 		}
 		{
@@ -5756,8 +5756,8 @@
 					type: "item"
 				}
 			]
-			x: -62.0d
-			y: 5.0d
+			x: -61.0d
+			y: 6.0d
 		}
 		{
 			icon: {
@@ -6039,7 +6039,7 @@
 				item: { count: 1, id: "minecraft:turtle_helmet" }
 				type: "item"
 			}]
-			x: -51.0d
+			x: -52.0d
 			y: 1.0d
 		}
 		{
@@ -11567,7 +11567,7 @@
 				item: { count: 1, id: "alexsmobs:roadrunner_boots" }
 				type: "item"
 			}]
-			x: -61.0d
+			x: -62.0d
 			y: 6.0d
 		}
 		{
@@ -11580,8 +11580,8 @@
 				item: { count: 1, id: "alexsmobs:rocky_chestplate" }
 				type: "item"
 			}]
-			x: -54.0d
-			y: 2.0d
+			x: -48.0d
+			y: 1.0d
 		}
 		{
 			icon: {
@@ -11600,7 +11600,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -52.0d
 			y: 2.0d
 		}
 		{
@@ -11971,7 +11971,7 @@
 					type: "item"
 				}
 			]
-			x: -52.0d
+			x: -53.0d
 			y: 2.0d
 		}
 		{
@@ -12807,7 +12807,7 @@
 					type: "item"
 				}
 			]
-			x: -51.0d
+			x: -50.0d
 			y: 3.0d
 		}
 		{
@@ -12837,8 +12837,8 @@
 					type: "item"
 				}
 			]
-			x: -48.0d
-			y: 2.0d
+			x: -54.0d
+			y: 3.0d
 		}
 		{
 			icon: {
@@ -12863,7 +12863,7 @@
 				item: { count: 1, id: "cataclysm_spellbooks:monstrous_wizard_hat" }
 				type: "item"
 			}]
-			x: -59.0d
+			x: -60.0d
 			y: 5.0d
 		}
 		{
@@ -12876,7 +12876,7 @@
 				item: { count: 1, id: "crabbersdelight:coconut_helmet" }
 				type: "item"
 			}]
-			x: -49.0d
+			x: -50.0d
 			y: 1.0d
 		}
 		{
@@ -12889,7 +12889,7 @@
 				item: { count: 1, id: "endermanoverhaul:badlands_hood" }
 				type: "item"
 			}]
-			x: -52.0d
+			x: -53.0d
 			y: 1.0d
 		}
 		{
@@ -12902,7 +12902,7 @@
 				item: { count: 1, id: "endermanoverhaul:savanna_hood" }
 				type: "item"
 			}]
-			x: -53.0d
+			x: -54.0d
 			y: 1.0d
 		}
 		{
@@ -12915,8 +12915,8 @@
 				item: { count: 1, id: "endermanoverhaul:snowy_hood" }
 				type: "item"
 			}]
-			x: -54.0d
-			y: 1.0d
+			x: -47.0d
+			y: 0.0d
 		}
 		{
 			icon: {
@@ -12928,7 +12928,7 @@
 				item: { count: 1, id: "irons_spellbooks:gold_crown" }
 				type: "item"
 			}]
-			x: -61.0d
+			x: -62.0d
 			y: 5.0d
 		}
 		{
@@ -12954,8 +12954,8 @@
 				item: { count: 1, id: "quark:forgotten_hat" }
 				type: "item"
 			}]
-			x: -50.0d
-			y: 3.0d
+			x: -47.0d
+			y: 1.0d
 		}
 		{
 			icon: {
