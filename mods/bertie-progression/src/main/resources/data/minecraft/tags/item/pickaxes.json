@@ -97,14 +97,6 @@
     },
     "#anvilcraft:tools/resonator",
     {
-      "id": "cataclysm_tools:cursium_pickaxe",
-      "required": false
-    },
-    {
-      "id": "cataclysm_tools:ignitium_pickaxe",
-      "required": false
-    },
-    {
       "id": "deeperdarker:warden_pickaxe",
       "required": false
     },

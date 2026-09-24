@@ -388,10 +388,6 @@
       "required": false
     },
     {
-      "id": "cataclysm_tools:cursium_sword",
-      "required": false
-    },
-    {
       "id": "curseofpandora:angelic_judgement",
       "required": false
     },

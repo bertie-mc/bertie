@@ -81,14 +81,6 @@
     },
     "#anvilcraft:tools/resonator",
     {
-      "id": "cataclysm_tools:ignitium_shovel",
-      "required": false
-    },
-    {
-      "id": "cataclysm_tools:cursium_shovel",
-      "required": false
-    },
-    {
       "id": "deeperdarker:warden_shovel",
       "required": false
     },

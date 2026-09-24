@@ -1,0 +1,169 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:blazeborne_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_blazeborne_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:hazel_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cryogenic_ruler_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:crystal_arachnid_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:herta_puppet_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:charged_scourge_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:thunder_prowler_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:creaking_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_creaking_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:flesh_mass_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_wither_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_the_wither_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ender_dragon_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_ender_dragon_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:seraph_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:gabriel_ultrakill_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_gabriel_ultrakill_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:mothic_witch_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:supreme_witch_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_supreme_witch_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:alchemist_supreme_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:shadow_scale_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:infestation_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_infestation_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legionnaire_ruler_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legionnaire_commander_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_hunter_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_knight_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dreadsteel_knight_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:dark_ritual_templar_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_dark_ritual_templar_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:slc_cat_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:chlorophyte_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:astraconic_weaver_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:glassweaver_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:shadow_jester_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:elder_guardian_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:abberant_predator_boots",
+      "required": false
+    }
+  ]
+}

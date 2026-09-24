@@ -1,0 +1,317 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:blazeborne_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blazeborne_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blazeborne_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:blazeborne_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_blazeborne_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_blazeborne_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_blazeborne_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_blazeborne_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cryogenic_ruler_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cryogenic_ruler_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cryogenic_ruler_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:cryogenic_ruler_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:flesh_mass_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:flesh_mass_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:flesh_mass_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:flesh_mass_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_wither_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_wither_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_wither_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:the_wither_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_the_wither_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_the_wither_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_the_wither_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_the_wither_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:seraph_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:seraph_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:seraph_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:seraph_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_seraph_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_seraph_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_seraph_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_seraph_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:gabriel_ultrakill_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:gabriel_ultrakill_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:gabriel_ultrakill_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:gabriel_ultrakill_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_gabriel_ultrakill_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_gabriel_ultrakill_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_gabriel_ultrakill_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_gabriel_ultrakill_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:slc_cat_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:slc_cat_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:slc_cat_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:slc_cat_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:infestation_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:infestation_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:infestation_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:infestation_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_infestation_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_infestation_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_infestation_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_infestation_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:atlas_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:atlas_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:atlas_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:atlas_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fireblossom_battlemage_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fireblossom_battlemage_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fireblossom_battlemage_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:fireblossom_battlemage_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_crown",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_fireblossom_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_crown",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:legacy_geckolib_fireblossom_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lemon_god_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lemon_god_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lemon_god_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:lemon_god_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_lemon_god_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_lemon_god_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_lemon_god_leggings",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:geckolib_lemon_god_boots",
+      "required": false
+    }
+  ]
+}

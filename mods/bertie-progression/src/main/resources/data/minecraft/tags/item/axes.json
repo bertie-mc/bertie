@@ -72,6 +72,10 @@
       "required": false
     },
     {
+      "id": "usefulmagic:magic_axe",
+      "required": false
+    },
+    {
       "id": "antarchy:ultimate_axe",
       "required": false
     },
@@ -107,14 +111,6 @@
     },
     {
       "id": "born_in_chaos_v1:great_reaper_axe",
-      "required": false
-    },
-    {
-      "id": "cataclysm_tools:cursium_axe",
-      "required": false
-    },
-    {
-      "id": "cataclysm_tools:ignitium_axe",
       "required": false
     },
     {
