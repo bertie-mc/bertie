@@ -975,7 +975,7 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
+			x: -9.0d
 			y: 9.0d
 		}
 		{
@@ -1044,7 +1044,7 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -8.0d
 			y: 9.0d
 		}
 		{
@@ -1122,7 +1122,7 @@
 					type: "item"
 				}
 			]
-			x: -10.0d
+			x: -11.0d
 			y: 12.0d
 		}
 		{
@@ -1668,7 +1668,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -12.0d
 			y: 13.0d
 		}
 		{
@@ -1790,7 +1790,7 @@
 					type: "item"
 				}
 			]
-			x: -14.0d
+			x: -15.0d
 			y: 15.0d
 		}
 		{
@@ -2540,7 +2540,7 @@
 					type: "item"
 				}
 			]
-			x: -11.0d
+			x: -13.0d
 			y: 13.0d
 		}
 		{
@@ -2720,7 +2720,7 @@
 					type: "item"
 				}
 			]
-			x: -15.0d
+			x: -16.0d
 			y: 15.0d
 		}
 		{
@@ -2916,7 +2916,7 @@
 					type: "item"
 				}
 			]
-			x: -28.0d
+			x: -27.0d
 			y: 9.0d
 		}
 		{
@@ -3862,7 +3862,7 @@
 					type: "item"
 				}
 			]
-			x: -29.0d
+			x: -28.0d
 			y: 9.0d
 		}
 		{
@@ -4303,7 +4303,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -6.0d
 			y: 9.0d
 		}
 		{
@@ -4384,7 +4384,7 @@
 					type: "item"
 				}
 			]
-			x: -30.0d
+			x: -29.0d
 			y: 9.0d
 		}
 		{
@@ -4704,7 +4704,7 @@
 					type: "item"
 				}
 			]
-			x: -23.0d
+			x: -22.0d
 			y: 9.0d
 		}
 		{
@@ -4786,7 +4786,7 @@
 					type: "item"
 				}
 			]
-			x: -26.0d
+			x: -25.0d
 			y: 9.0d
 		}
 		{
@@ -5278,7 +5278,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -23.0d
 			y: 20.0d
 		}
 		{
@@ -5337,7 +5337,7 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -23.0d
 			y: 21.0d
 		}
 		{
@@ -5716,7 +5716,7 @@
 					type: "item"
 				}
 			]
-			x: -31.0d
+			x: -30.0d
 			y: 9.0d
 		}
 		{
@@ -5746,7 +5746,7 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
+			x: -10.0d
 			y: 12.0d
 		}
 		{
@@ -5776,7 +5776,7 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -7.0d
 			y: 9.0d
 		}
 		{
@@ -5956,7 +5956,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -9.0d
 			y: 11.0d
 		}
 		{
@@ -6029,7 +6029,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -8.0d
 			y: 11.0d
 		}
 		{
@@ -6149,7 +6149,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -11.0d
 			y: 13.0d
 		}
 		{
@@ -12467,7 +12467,7 @@
 					type: "item"
 				}
 			]
-			x: -24.0d
+			x: -23.0d
 			y: 9.0d
 		}
 		{
@@ -12617,7 +12617,7 @@
 					type: "item"
 				}
 			]
-			x: -27.0d
+			x: -26.0d
 			y: 9.0d
 		}
 		{
@@ -12677,7 +12677,7 @@
 					type: "item"
 				}
 			]
-			x: -25.0d
+			x: -24.0d
 			y: 9.0d
 		}
 		{
@@ -13040,7 +13040,7 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			x: -10.0d
 			y: 9.0d
 		}
 		{
@@ -13070,7 +13070,7 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
+			x: -11.0d
 			y: 9.0d
 		}
 		{
