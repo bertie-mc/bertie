@@ -1781,6 +1781,7 @@
 			y: 20d
 		}
 		{
+			dependencies: ["7B000000000002BC", "7B0000000000008F", "7B00000000000083", "7B0000000000007B", "7B00000000000090"]
 			icon: {
 				id: "enigmaticlegacyplus:etherium_chestplate"
 			}
@@ -1807,8 +1808,8 @@
 					type: "item"
 				}
 			]
-			x: -34d
-			y: 25d
+			x: -33.5d
+			y: 26d
 		}
 		{
 			icon: {
@@ -1991,6 +1992,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:eclipse_soldier_chestplate"
 			}
@@ -2081,6 +2083,7 @@
 			y: 17d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:fog_guard_chestplate"
 			}
@@ -2111,6 +2114,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:forgotten_trace_chestplate"
 			}
@@ -2351,6 +2355,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:old_knight_chestplate"
 			}
@@ -2411,6 +2416,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:redeemer_chestplate"
 			}
@@ -2561,6 +2567,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:thief_chestplate"
 			}
@@ -2651,6 +2658,7 @@
 			y: 17d
 		}
 		{
+			dependencies: ["7B000000000000DC"]
 			icon: {
 				id: "fantasy_armor:wind_worshipper_chestplate"
 			}
@@ -2862,7 +2870,7 @@
 					type: "item"
 				}
 			]
-			x: -21d
+			x: -22d
 			y: 23d
 		}
 		{
@@ -3200,6 +3208,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B0000000000008E", "7B000000000002C4"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3234,7 +3243,7 @@
 					type: "item"
 				}
 			]
-			x: -43d
+			x: -14d
 			y: 25d
 		}
 		{
@@ -3405,6 +3414,7 @@
 			y: 19d
 		}
 		{
+			dependencies: ["7B00000000000075"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3704,6 +3714,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B0000000000007A", "7B000000000000A2"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3744,7 +3755,7 @@
 					type: "item"
 				}
 			]
-			x: -45d
+			x: -22d
 			y: 25d
 		}
 		{
@@ -4197,6 +4208,7 @@
 			y: 19d
 		}
 		{
+			dependencies: ["7B000000000000A8", "7B00000000000080"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4237,7 +4249,7 @@
 					type: "item"
 				}
 			]
-			x: -44d
+			x: -21d
 			y: 25d
 		}
 		{
@@ -4680,6 +4692,7 @@
 			y: 18d
 		}
 		{
+			dependencies: ["7B00000000000075"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4767,6 +4780,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B0000000000009F", "7B00000000000094"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4807,7 +4821,7 @@
 					type: "item"
 				}
 			]
-			x: -46d
+			x: -13d
 			y: 25d
 		}
 		{
@@ -4895,6 +4909,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B00000000000086", "7B000000000000D6"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
