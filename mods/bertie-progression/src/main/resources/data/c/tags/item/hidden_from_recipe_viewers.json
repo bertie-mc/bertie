@@ -1325,6 +1325,22 @@
     {
       "id": "moonlight:placeable_item",
       "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:crucible_knight_boots",
+      "required": false
     }
   ]
 }

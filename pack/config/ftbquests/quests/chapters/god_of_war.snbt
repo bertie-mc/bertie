@@ -1812,6 +1812,7 @@
 			y: 26d
 		}
 		{
+			dependencies: ["7B00000000000072", "7B000000000000A9"]
 			icon: {
 				id: "fantasy_armor:chess_board_knight_chestplate"
 			}
@@ -1838,40 +1839,11 @@
 					type: "item"
 				}
 			]
-			x: 4d
+			x: -2d
 			y: 19d
 		}
 		{
-			icon: {
-				id: "fantasy_armor:crucible_knight_chestplate"
-			}
-			id: "7B00000000000059"
-			tasks: [
-				{
-					id: "7B00000001000059"
-					item: { count: 1, id: "fantasy_armor:crucible_knight_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B00000001010059"
-					item: { count: 1, id: "fantasy_armor:crucible_knight_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B00000001020059"
-					item: { count: 1, id: "fantasy_armor:crucible_knight_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B00000001030059"
-					item: { count: 1, id: "fantasy_armor:crucible_knight_boots" }
-					type: "item"
-				}
-			]
-			x: -9d
-			y: 17d
-		}
-		{
+			dependencies: ["7B00000000000037", "7B0000000000003B"]
 			icon: {
 				id: "fantasy_armor:dark_cover_chestplate"
 			}
@@ -1898,10 +1870,11 @@
 					type: "item"
 				}
 			]
-			x: 2d
+			x: -1d
 			y: 19d
 		}
 		{
+			dependencies: ["7B00000000000064", "7B00000000000056"]
 			icon: {
 				id: "fantasy_armor:dark_lord_chestplate"
 			}
@@ -1928,10 +1901,11 @@
 					type: "item"
 				}
 			]
-			x: -4d
+			x: -7d
 			y: 21d
 		}
 		{
+			dependencies: ["7B00000000000060", "7B00000000000082"]
 			icon: {
 				id: "fantasy_armor:dead_gladiator_chestplate"
 			}
@@ -1958,10 +1932,11 @@
 					type: "item"
 				}
 			]
-			x: 0d
+			x: -8d
 			y: 19d
 		}
 		{
+			dependencies: ["7B0000000000006E", "7B00000000000087"]
 			icon: {
 				id: "fantasy_armor:dragonslayer_chestplate"
 			}
@@ -1988,7 +1963,7 @@
 					type: "item"
 				}
 			]
-			x: -8d
+			x: -6d
 			y: 21d
 		}
 		{
@@ -2019,10 +1994,11 @@
 					type: "item"
 				}
 			]
-			x: -4d
+			x: -8d
 			y: 13d
 		}
 		{
+			dependencies: ["7B00000000000063", "7B00000000000078"]
 			icon: {
 				id: "fantasy_armor:evening_ghost_chestplate"
 			}
@@ -2049,10 +2025,11 @@
 					type: "item"
 				}
 			]
-			x: -6d
+			x: -3d
 			y: 21d
 		}
 		{
+			dependencies: ["7B0000000000007C", "7B0000000000005E"]
 			icon: {
 				id: "fantasy_armor:flesh_of_the_feaster_chestplate"
 			}
@@ -2110,7 +2087,7 @@
 					type: "item"
 				}
 			]
-			x: 0d
+			x: -2d
 			y: 13d
 		}
 		{
@@ -2141,10 +2118,11 @@
 					type: "item"
 				}
 			]
-			x: -2d
+			x: -7d
 			y: 13d
 		}
 		{
+			dependencies: ["7B0000000000006D", "7B0000000000007E"]
 			icon: {
 				id: "fantasy_armor:gilded_hunt_chestplate"
 			}
@@ -2171,10 +2149,11 @@
 					type: "item"
 				}
 			]
-			x: -2d
+			x: -3d
 			y: 19d
 		}
 		{
+			dependencies: ["7B00000000000065", "7B0000000000003B"]
 			icon: {
 				id: "fantasy_armor:golden_execution_chestplate"
 			}
@@ -2201,10 +2180,11 @@
 					type: "item"
 				}
 			]
-			x: -4d
+			x: -7d
 			y: 19d
 		}
 		{
+			dependencies: ["7B000000000002C3", "7B00000000000062"]
 			icon: {
 				id: "fantasy_armor:golden_horns_chestplate"
 			}
@@ -2231,10 +2211,11 @@
 					type: "item"
 				}
 			]
-			x: -6d
+			x: -7d
 			y: 17d
 		}
 		{
+			dependencies: ["7B0000000000006C", "7B000000000002BF"]
 			icon: {
 				id: "fantasy_armor:grave_sentinel_chestplate"
 			}
@@ -2261,10 +2242,11 @@
 					type: "item"
 				}
 			]
-			x: -4d
+			x: -6d
 			y: 17d
 		}
 		{
+			dependencies: ["7B0000000000006A", "7B00000000000037"]
 			icon: {
 				id: "fantasy_armor:hero_chestplate"
 			}
@@ -2291,10 +2273,11 @@
 					type: "item"
 				}
 			]
-			x: -2d
+			x: -5d
 			y: 17d
 		}
 		{
+			dependencies: ["7B000000000002EB", "7B000000000000A3"]
 			icon: {
 				id: "fantasy_armor:lady_maria_chestplate"
 			}
@@ -2321,10 +2304,11 @@
 					type: "item"
 				}
 			]
-			x: 0d
+			x: -4d
 			y: 17d
 		}
 		{
+			dependencies: ["7B00000000000068", "7B000000000002C4"]
 			icon: {
 				id: "fantasy_armor:malenia_chestplate"
 			}
@@ -2351,7 +2335,7 @@
 					type: "item"
 				}
 			]
-			x: -2d
+			x: -4d
 			y: 21d
 		}
 		{
@@ -2382,10 +2366,11 @@
 					type: "item"
 				}
 			]
-			x: -8d
+			x: -5d
 			y: 13d
 		}
 		{
+			dependencies: ["7B0000000000006F", "7B0000000000007D"]
 			icon: {
 				id: "fantasy_armor:ornstein_chestplate"
 			}
@@ -2412,7 +2397,7 @@
 					type: "item"
 				}
 			]
-			x: 0d
+			x: -5d
 			y: 21d
 		}
 		{
@@ -2447,6 +2432,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B00000000000071", "7B000000000000D8"]
 			icon: {
 				id: "fantasy_armor:ronin_chestplate"
 			}
@@ -2473,10 +2459,11 @@
 					type: "item"
 				}
 			]
-			x: 2d
+			x: -3d
 			y: 17d
 		}
 		{
+			dependencies: ["7B00000000000066", "7B0000000000009E"]
 			icon: {
 				id: "fantasy_armor:silver_knight_chestplate"
 			}
@@ -2507,6 +2494,7 @@
 			y: 19d
 		}
 		{
+			dependencies: ["7B00000000000067", "7B000000000002BB"]
 			icon: {
 				id: "fantasy_armor:spark_of_dawn_chestplate"
 			}
@@ -2533,10 +2521,11 @@
 					type: "item"
 				}
 			]
-			x: -8d
+			x: -5d
 			y: 19d
 		}
 		{
+			dependencies: ["7B0000000000005A", "7B00000000000055"]
 			icon: {
 				id: "fantasy_armor:sunset_wings_chestplate"
 			}
@@ -2563,7 +2552,7 @@
 					type: "item"
 				}
 			]
-			x: 2d
+			x: -1d
 			y: 21d
 		}
 		{
@@ -2594,10 +2583,11 @@
 					type: "item"
 				}
 			]
-			x: 4d
+			x: -3d
 			y: 13d
 		}
 		{
+			dependencies: ["7B00000000000061", "7B000000000000DD"]
 			icon: {
 				id: "fantasy_armor:twinned_chestplate"
 			}
@@ -2624,10 +2614,11 @@
 					type: "item"
 				}
 			]
-			x: 4d
+			x: -2d
 			y: 17d
 		}
 		{
+			dependencies: ["7B000000000000D4", "7B00000000000074"]
 			icon: {
 				id: "fantasy_armor:wandering_wizard_chestplate"
 			}
@@ -2654,7 +2645,7 @@
 					type: "item"
 				}
 			]
-			x: -10d
+			x: -9d
 			y: 17d
 		}
 		{
@@ -2685,7 +2676,7 @@
 					type: "item"
 				}
 			]
-			x: 2d
+			x: -9d
 			y: 13d
 		}
 		{
@@ -3033,7 +3024,7 @@
 				}
 			]
 			x: -28d
-			y: 17d
+			y: 16d
 		}
 		{
 			dependencies: ["7B000000000000C9"]
