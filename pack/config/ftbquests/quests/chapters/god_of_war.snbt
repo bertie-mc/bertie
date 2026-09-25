@@ -1490,7 +1490,7 @@
 					type: "item"
 				}
 			]
-			x: -55d
+			x: -50d
 			y: 19d
 		}
 		{
@@ -1731,7 +1731,7 @@
 					type: "item"
 				}
 			]
-			x: -56d
+			x: -49d
 			y: 19d
 		}
 		{
@@ -2972,7 +2972,7 @@
 					type: "item"
 				}
 			]
-			x: -57d
+			x: -48d
 			y: 19d
 		}
 		{
@@ -3049,7 +3049,7 @@
 					type: "item"
 				}
 			]
-			x: -47d
+			x: -43d
 			y: 19d
 		}
 		{
@@ -3302,7 +3302,7 @@
 					type: "item"
 				}
 			]
-			x: -21d
+			x: -19d
 			y: 17d
 		}
 		{
@@ -3521,6 +3521,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B0000000000007C", "7B000000000002BE", "7B000000000002BF"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3555,7 +3556,7 @@
 					type: "item"
 				}
 			]
-			x: -49d
+			x: -18d
 			y: 19d
 		}
 		{
@@ -3597,7 +3598,7 @@
 			y: -3d
 		}
 		{
-			dependencies: ["7B000000000000E2", "7B00000000000084"]
+			dependencies: ["7B000000000000E2"]
 			icon: {
 				components: {
 					"irons_spellbooks:affinity_data": {
@@ -3641,6 +3642,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B00000000000084"]
 			icon: {
 				components: {
 					"irons_spellbooks:affinity_data": {
@@ -3838,7 +3840,7 @@
 					type: "item"
 				}
 			]
-			x: -50d
+			x: -44d
 			y: 19d
 		}
 		{
@@ -4002,7 +4004,7 @@
 					type: "item"
 				}
 			]
-			x: -52d
+			x: -46d
 			y: 19d
 		}
 		{
@@ -4133,6 +4135,7 @@
 			y: 19d
 		}
 		{
+			dependencies: ["7B000000000002C1"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4167,7 +4170,7 @@
 					type: "item"
 				}
 			]
-			x: -44d
+			x: -34d
 			y: 19d
 		}
 		{
@@ -4562,7 +4565,7 @@
 					type: "item"
 				}
 			]
-			x: -53d
+			x: -47d
 			y: 19d
 		}
 		{
@@ -4942,7 +4945,7 @@
 					type: "item"
 				}
 			]
-			x: -51d
+			x: -45d
 			y: 19d
 		}
 		{
@@ -5765,6 +5768,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B000000000000DA"]
 			icon: {
 				id: "malum:malignant_stronghold_chestplate"
 			}
@@ -12738,6 +12742,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B0000000000009C", "7B0000000000009B"]
 			icon: {
 				id: "hazennstuff:soul_legionnaire_ruler_chestplate"
 			}
@@ -12764,8 +12769,8 @@
 					type: "item"
 				}
 			]
-			x: -45d
-			y: 19d
+			x: -33.5d
+			y: 20d
 		}
 		{
 			icon: {
