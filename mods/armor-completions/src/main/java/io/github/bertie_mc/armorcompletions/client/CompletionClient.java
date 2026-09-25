@@ -6,7 +6,6 @@ import io.github.bertie_mc.armorcompletions.client.models.*;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
@@ -35,10 +34,12 @@ public final class CompletionClient {
 
     @SubscribeEvent
     public static void layers(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(Modelspinyshellarmorleggings.LAYER_LOCATION, Modelspinyshellarmorleggings::createBodyLayer);
-        event.registerLayerDefinition(Modelspinyshellarmorboots.LAYER_LOCATION, Modelspinyshellarmorboots::createBodyLayer);
-        event.registerLayerDefinition(BoneReptileLeggingsModel.LAYER_LOCATION, BoneReptileLeggingsModel::createArmorLayer);
-        event.registerLayerDefinition(BoneReptileBootsModel.LAYER_LOCATION, BoneReptileBootsModel::createArmorLayer);
+        event.registerLayerDefinition(
+                Modelspinyshellarmorleggings.LAYER_LOCATION, Modelspinyshellarmorleggings::createBodyLayer);
+        event.registerLayerDefinition(
+                Modelspinyshellarmorboots.LAYER_LOCATION, Modelspinyshellarmorboots::createBodyLayer);
+        event.registerLayerDefinition(
+                BoneReptileLeggingsModel.LAYER_LOCATION, BoneReptileLeggingsModel::createArmorLayer);
     }
 
     @SubscribeEvent
@@ -54,18 +55,34 @@ public final class CompletionClient {
         private final ArmorFamily family;
         private final ArmorItem.Type type;
         private HumanoidModel<LivingEntity> model;
-        NativeArmorExtension(ArmorFamily family, ArmorItem.Type type) { this.family = family; this.type = type; }
+
+        NativeArmorExtension(ArmorFamily family, ArmorItem.Type type) {
+            this.family = family;
+            this.type = type;
+        }
 
         @Override
-        public HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity, ItemStack stack, EquipmentSlot slot, HumanoidModel<?> original) {
+        public HumanoidModel<?> getHumanoidArmorModel(
+                LivingEntity entity, ItemStack stack, EquipmentSlot slot, HumanoidModel<?> original) {
             if (model == null) {
                 boolean legs = type == ArmorItem.Type.LEGGINGS;
                 if (family == ArmorFamily.SPINY_SHELL) {
-                    var root = Minecraft.getInstance().getEntityModels().bakeLayer(legs ? Modelspinyshellarmorleggings.LAYER_LOCATION : Modelspinyshellarmorboots.LAYER_LOCATION);
-                    model = legs ? Modelspinyshellarmorleggings.asHumanoidModel(root) : Modelspinyshellarmorboots.asHumanoidModel(root);
+                    var root = Minecraft.getInstance()
+                            .getEntityModels()
+                            .bakeLayer(
+                                    legs
+                                            ? Modelspinyshellarmorleggings.LAYER_LOCATION
+                                            : Modelspinyshellarmorboots.LAYER_LOCATION);
+                    model = legs
+                            ? Modelspinyshellarmorleggings.asHumanoidModel(root)
+                            : Modelspinyshellarmorboots.asHumanoidModel(root);
+                } else if (legs) {
+                    var root = Minecraft.getInstance()
+                            .getEntityModels()
+                            .bakeLayer(BoneReptileLeggingsModel.LAYER_LOCATION);
+                    model = new BoneReptileLeggingsModel<>(root);
                 } else {
-                    var root = Minecraft.getInstance().getEntityModels().bakeLayer(legs ? BoneReptileLeggingsModel.LAYER_LOCATION : BoneReptileBootsModel.LAYER_LOCATION);
-                    model = legs ? new BoneReptileLeggingsModel<>(root) : new BoneReptileBootsModel<>(root);
+                    model = new BoneReptileBootsModel<>();
                 }
             }
             model.crouching = original.crouching;

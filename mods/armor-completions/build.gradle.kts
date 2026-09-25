@@ -24,6 +24,10 @@ dependencies {
     gametestImplementation(deps.hazenNStuff)
     gametestImplementation(deps.ironsSpellsNSpellbooks)
     gametestImplementation(deps.geckolib)
+    gametestRuntimeOnly(deps.acesSpellUtils)
+    gametestRuntimeOnly(deps.apothicAttributes)
+    gametestRuntimeOnly(deps.azurelib)
+    gametestRuntimeOnly(deps.placebo)
 
     // The model and motion tests bake the real geometry and drive the real renderer.
     testImplementation(deps.borninchaos)
