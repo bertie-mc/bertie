@@ -1095,6 +1095,7 @@
 			y: -5d
 		}
 		{
+			dependencies: ["7B00000000000035"]
 			icon: {
 				id: "cataclysm:ignitium_chestplate"
 			}
@@ -1218,6 +1219,7 @@
 			y: -6d
 		}
 		{
+			dependencies: ["7B00000000000079", "7B000000000000AD"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1257,7 +1259,7 @@
 					type: "item"
 				}
 			]
-			x: -12d
+			x: -11d
 			y: 17d
 		}
 		{
@@ -1300,6 +1302,7 @@
 			y: 16d
 		}
 		{
+			dependencies: ["7B00000000000084"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1339,7 +1342,7 @@
 					type: "item"
 				}
 			]
-			x: -14d
+			x: -15d
 			y: 16d
 		}
 		{
@@ -1451,6 +1454,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["7B000000000002C3"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1490,7 +1494,7 @@
 					type: "item"
 				}
 			]
-			x: -50d
+			x: -32d
 			y: 19d
 		}
 		{
@@ -1613,6 +1617,7 @@
 			y: -4d
 		}
 		{
+			dependencies: ["7B000000000002C2"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1647,10 +1652,11 @@
 					type: "item"
 				}
 			]
-			x: -50d
+			x: -34.5d
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000D9"]
 			icon: {
 				id: "deeperdarker:warden_chestplate"
 			}
@@ -1677,10 +1683,11 @@
 					type: "item"
 				}
 			]
-			x: -24d
+			x: -31d
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000A7", "7B00000000000085"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -1731,10 +1738,11 @@
 					type: "item"
 				}
 			]
-			x: -49d
-			y: 19d
+			x: -20d
+			y: 18d
 		}
 		{
+			dependencies: ["7B0000000000008B", "7B00000000000043"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1769,8 +1777,8 @@
 					type: "item"
 				}
 			]
-			x: -51d
-			y: 21d
+			x: -18d
+			y: 20d
 		}
 		{
 			icon: {
@@ -2673,6 +2681,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B00000000000053", "7B000000000000E7"]
 			icon: {
 				id: "forbidden_arcanus:draco_arcanus_chestplate"
 			}
@@ -2699,10 +2708,11 @@
 					type: "item"
 				}
 			]
-			x: -36d
-			y: 23d
+			x: -30d
+			y: 22d
 		}
 		{
+			dependencies: ["7B00000000000075"]
 			icon: {
 				id: "forbidden_arcanus:tyr_chestplate"
 			}
@@ -2729,8 +2739,8 @@
 					type: "item"
 				}
 			]
-			x: -36d
-			y: 25d
+			x: -30d
+			y: 23d
 		}
 		{
 			dependencies: ["7B000000000000AB"]
@@ -2811,6 +2821,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B000000000000A8"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -2851,10 +2862,11 @@
 					type: "item"
 				}
 			]
-			x: -59d
-			y: 21d
+			x: -21d
+			y: 23d
 		}
 		{
+			dependencies: ["7B00000000000088", "7B00000000000092"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -2889,8 +2901,8 @@
 					type: "item"
 				}
 			]
-			x: -45d
-			y: 21d
+			x: -28d
+			y: 24d
 		}
 		{
 			dependencies: ["7B000000000000CD", "7B000000000000C8"]
@@ -2932,6 +2944,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B000000000002C3"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -2972,7 +2985,7 @@
 					type: "item"
 				}
 			]
-			x: -48d
+			x: -24d
 			y: 19d
 		}
 		{
@@ -3015,6 +3028,7 @@
 			y: 17d
 		}
 		{
+			dependencies: ["7B000000000000C9"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3049,10 +3063,11 @@
 					type: "item"
 				}
 			]
-			x: -43d
+			x: -15d
 			y: 19d
 		}
 		{
+			dependencies: ["7B00000000000044"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3097,10 +3112,11 @@
 					type: "item"
 				}
 			]
-			x: -48d
-			y: 21d
+			x: -20d
+			y: 22d
 		}
 		{
+			dependencies: ["7B00000000000078"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3135,7 +3151,7 @@
 					type: "item"
 				}
 			]
-			x: -42d
+			x: -26d
 			y: 19d
 		}
 		{
@@ -3306,6 +3322,7 @@
 			y: 17d
 		}
 		{
+			dependencies: ["7B0000000000007D", "7B00000000000056"]
 			icon: {
 				components: {
 					"irons_spellbooks:affinity_data": {
@@ -3345,7 +3362,7 @@
 					type: "item"
 				}
 			]
-			x: -53d
+			x: -24d
 			y: 21d
 		}
 		{
@@ -3428,8 +3445,8 @@
 					type: "item"
 				}
 			]
-			x: -55d
-			y: 21d
+			x: -29d
+			y: 23d
 		}
 		{
 			dependencies: ["7B00000000000044", "7B000000000002C3"]
@@ -3473,10 +3490,11 @@
 					type: "item"
 				}
 			]
-			x: -24d
+			x: -23d
 			y: 17d
 		}
 		{
+			dependencies: ["7B00000000000099"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3517,7 +3535,7 @@
 					type: "item"
 				}
 			]
-			x: -60d
+			x: -23d
 			y: 21d
 		}
 		{
@@ -3730,6 +3748,7 @@
 			y: 25d
 		}
 		{
+			dependencies: ["7B000000000000A2"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3764,8 +3783,8 @@
 					type: "item"
 				}
 			]
-			x: -49d
-			y: 21d
+			x: -33.5d
+			y: 23d
 		}
 		{
 			icon: {
@@ -3806,6 +3825,7 @@
 			y: -2d
 		}
 		{
+			dependencies: ["7B00000000000044"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3840,7 +3860,7 @@
 					type: "item"
 				}
 			]
-			x: -44d
+			x: -20d
 			y: 19d
 		}
 		{
@@ -3888,6 +3908,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B00000000000046", "7B0000000000008E"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3922,10 +3943,11 @@
 					type: "item"
 				}
 			]
-			x: -47d
-			y: 21d
+			x: -16d
+			y: 23d
 		}
 		{
+			dependencies: ["7B00000000000052"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3966,10 +3988,11 @@
 					type: "item"
 				}
 			]
-			x: -58d
-			y: 21d
+			x: -34.5d
+			y: 22d
 		}
 		{
+			dependencies: ["7B000000000000D5"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4004,8 +4027,8 @@
 					type: "item"
 				}
 			]
-			x: -46d
-			y: 19d
+			x: -19d
+			y: 20d
 		}
 		{
 			dependencies: ["7B00000000000089"]
@@ -4054,7 +4077,7 @@
 					type: "item"
 				}
 			]
-			x: -24d
+			x: -23d
 			y: 19d
 		}
 		{
@@ -4257,6 +4280,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B000000000000A9"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4291,7 +4315,7 @@
 					type: "item"
 				}
 			]
-			x: -42d
+			x: -13d
 			y: 21d
 		}
 		{
@@ -4333,6 +4357,7 @@
 			y: 11d
 		}
 		{
+			dependencies: ["7B000000000002C4"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4367,7 +4392,7 @@
 					type: "item"
 				}
 			]
-			x: -44d
+			x: -33.5d
 			y: 21d
 		}
 		{
@@ -4493,6 +4518,7 @@
 			y: 16d
 		}
 		{
+			dependencies: ["7B00000000000081", "7B00000000000092"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4527,10 +4553,11 @@
 					type: "item"
 				}
 			]
-			x: -43d
+			x: -26d
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000002BB", "7B000000000002BE"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4565,10 +4592,11 @@
 					type: "item"
 				}
 			]
-			x: -47d
-			y: 19d
+			x: -21d
+			y: 17d
 		}
 		{
+			dependencies: ["7B0000000000004C", "7B000000000000AE", "7B00000000000079"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4609,8 +4637,8 @@
 					type: "item"
 				}
 			]
-			x: -56d
-			y: 21d
+			x: -22d
+			y: 22d
 		}
 		{
 			dependencies: ["7B00000000000079", "7B00000000000078"]
@@ -4648,7 +4676,7 @@
 					type: "item"
 				}
 			]
-			x: -16d
+			x: -13d
 			y: 18d
 		}
 		{
@@ -4686,8 +4714,8 @@
 					type: "item"
 				}
 			]
-			x: -46d
-			y: 21d
+			x: -31d
+			y: 23d
 		}
 		{
 			dependencies: ["7B000000000000D1"]
@@ -4907,10 +4935,11 @@
 					type: "item"
 				}
 			]
-			x: -57d
-			y: 21d
+			x: -24d
+			y: 23d
 		}
 		{
+			dependencies: ["7B000000000000C9"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4945,7 +4974,7 @@
 					type: "item"
 				}
 			]
-			x: -45d
+			x: -16d
 			y: 19d
 		}
 		{
@@ -5664,6 +5693,7 @@
 			y: 9d
 		}
 		{
+			dependencies: ["7B00000000000043"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -5708,7 +5738,7 @@
 					type: "item"
 				}
 			]
-			x: -52d
+			x: -11d
 			y: 21d
 		}
 		{
@@ -6177,6 +6207,7 @@
 			y: 11d
 		}
 		{
+			dependencies: ["7B000000000000D9"]
 			icon: {
 				id: "pastel:bedrock_chestplate"
 			}
@@ -6203,7 +6234,7 @@
 					type: "item"
 				}
 			]
-			x: -22d
+			x: -29d
 			y: 21d
 		}
 		{
@@ -12526,6 +12557,7 @@
 			y: 13d
 		}
 		{
+			dependencies: ["7B0000000000008A"]
 			icon: {
 				id: "hazennstuff:fireblossom_battlemage_chestplate"
 			}
@@ -12552,7 +12584,7 @@
 					type: "item"
 				}
 			]
-			x: -42d
+			x: -23d
 			y: 25d
 		}
 		{
