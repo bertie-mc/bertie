@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:nether_brick"
+  },
+  "base": {
+    "item": "immersive_armors:bone_leggings"
+  },
+  "addition": {
+    "item": "berlordscarving:flint_big_slate"
+  },
+  "result": {
+    "id": "immersive_armors:wither_leggings",
+    "count": 1
+  }
+}

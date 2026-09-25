@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 250,
+    "souls": 8,
+    "blood": 4000,
+    "experience": 140
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "mythsandlegends:cursed_core"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "mythsandlegends:possessed_armor_fragment"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:blue_wool"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "malum:refined_soulstone"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "immersive_armors:warrior_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "mythsandlegends:soulpiercer_leggings",
+      "count": 1
+    }
+  }
+}

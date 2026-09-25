@@ -12,7 +12,9 @@ package io.github.bertie_mc.carving;
  * vanilla). {@code vanillaTool}/{@code vanillaArmor} name the vanilla item prefix used when Slag is
  * absent (null = that form is Slag-only and is hidden without Slag).
  *
- * <p>{@code slateOnly} materials carve nothing at all: the two slates are the product, and they
+ * <p>{@code slateOnly} materials have neither a Slag part nor a vanilla equivalent, so the two
+ * slates are the product and carving them yields nothing - unless the pack names an armor output
+ * for the material in {@link ArmorOverrides}, which is how prismarine carves into armor. They
  * register only when {@code requiredMod} - the mod supplying the item they are made from - is
  * present.
  */
@@ -36,7 +38,7 @@ public enum CarvingMaterial {
     ROSE_GOLD("rose_gold", "rose_gold", 2, true, null, null),
     NETHERITE("netherite", null),
     REDSTONE("redstone", null),
-    PRISMARINE("prismarine", null),
+    PRISMARINE("prismarine", null, 1, false, null, null, true, null),
     HEART_OF_THE_SEA("heart_of_the_sea", null),
     TURTLE_SCUTE("turtle_scute", null),
     ARMADILLO_SCUTE("armadillo_scute", null),
@@ -65,7 +67,7 @@ public enum CarvingMaterial {
         this(id, slagId, tier, hasTools, vanillaTool, vanillaArmor, false, null);
     }
 
-    /** Slate-only, and always tier 2: the slates are inert crafting stock, so nothing opens in hand. */
+    /** Slate-only at tier 2: without an armor override the slates are inert crafting stock. */
     CarvingMaterial(String id, String requiredMod) {
         this(id, null, 2, false, null, null, true, requiredMod);
     }

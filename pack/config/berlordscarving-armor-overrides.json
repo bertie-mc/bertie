@@ -10,5 +10,29 @@
     "chestplate": "immersive_armors:bone_chestplate",
     "leggings": "immersive_armors:bone_leggings",
     "boots": "immersive_armors:bone_boots"
+  },
+  "prismarine": {
+    "helmet": "immersive_armors:prismarine_helmet",
+    "chestplate": "immersive_armors:prismarine_chestplate",
+    "leggings": "immersive_armors:prismarine_leggings",
+    "boots": "immersive_armors:prismarine_boots"
+  },
+  "iron": {
+    "helmet": "minecraft:iron_helmet",
+    "chestplate": "minecraft:iron_chestplate",
+    "leggings": "minecraft:iron_leggings",
+    "boots": "minecraft:iron_boots"
+  },
+  "golden": {
+    "helmet": "minecraft:golden_helmet",
+    "chestplate": "minecraft:golden_chestplate",
+    "leggings": "minecraft:golden_leggings",
+    "boots": "minecraft:golden_boots"
+  },
+  "diamond": {
+    "helmet": "minecraft:diamond_helmet",
+    "chestplate": "minecraft:diamond_chestplate",
+    "leggings": "minecraft:diamond_leggings",
+    "boots": "minecraft:diamond_boots"
   }
 }

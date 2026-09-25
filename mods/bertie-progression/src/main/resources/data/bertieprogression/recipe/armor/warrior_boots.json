@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "berlordscarving:bone_big_slate"
+  },
+  "base": {
+    "item": "minecraft:leather_boots"
+  },
+  "addition": {
+    "item": "berlordscarving:iron_big_slate"
+  },
+  "result": {
+    "id": "immersive_armors:warrior_boots",
+    "count": 1
+  }
+}

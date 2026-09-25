@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "tag": "irons_spellbooks:wizard_base_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "irons_spellbooks:ender_rune",
+      "count": 1
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 3
+    },
+    {
+      "item": "minecraft:black_dye",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:wicked",
+      "count": 10
+    },
+    {
+      "type": "malum:earthen",
+      "count": 5
+    },
+    {
+      "type": "malum:arcane",
+      "count": 5
+    }
+  ],
+  "result": {
+    "id": "irons_spellbooks:shadowwalker_helmet",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

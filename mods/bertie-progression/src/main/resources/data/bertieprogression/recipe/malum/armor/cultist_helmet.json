@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "tag": "irons_spellbooks:wizard_base_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "irons_spellbooks:blood_rune",
+      "count": 1
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 3
+    },
+    {
+      "tag": "c:foods/raw_meat",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:eldritch",
+      "count": 10
+    },
+    {
+      "type": "malum:wicked",
+      "count": 5
+    },
+    {
+      "type": "malum:infernal",
+      "count": 5
+    }
+  ],
+  "result": {
+    "id": "irons_spellbooks:cultist_helmet",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "irons_spellbooks:wizard_boots",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "irons_spellbooks:nature_rune",
+      "count": 1
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 3
+    },
+    {
+      "item": "minecraft:rotten_flesh",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 8
+    },
+    {
+      "type": "malum:aqueous",
+      "count": 4
+    },
+    {
+      "type": "malum:wicked",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "irons_spellbooks:plagued_boots",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

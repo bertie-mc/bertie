@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "irons_spellbooks:wizard_chestplate",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "irons_spellbooks:ender_rune",
+      "count": 1
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 3
+    },
+    {
+      "item": "minecraft:black_dye",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:wicked",
+      "count": 16
+    },
+    {
+      "type": "malum:earthen",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 8
+    }
+  ],
+  "result": {
+    "id": "irons_spellbooks:shadowwalker_chestplate",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

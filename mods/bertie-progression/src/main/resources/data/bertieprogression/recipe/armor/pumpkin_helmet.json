@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:carved_pumpkin"
+  },
+  "base": {
+    "item": "irons_spellbooks:wandering_magician_helmet"
+  },
+  "addition": {
+    "item": "irons_spellbooks:arcane_essence"
+  },
+  "result": {
+    "id": "irons_spellbooks:pumpkin_helmet",
+    "count": 1
+  }
+}

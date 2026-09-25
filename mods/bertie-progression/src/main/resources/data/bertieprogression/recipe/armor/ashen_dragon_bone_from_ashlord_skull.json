@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "block_factorys_bosses:dragon_skull"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "block_factorys_bosses:dragon_bone",
+      "count": 4
+    }
+  ]
+}

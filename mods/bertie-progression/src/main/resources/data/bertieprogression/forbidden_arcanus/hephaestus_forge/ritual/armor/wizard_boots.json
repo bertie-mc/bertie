@@ -1,0 +1,32 @@
+{
+  "essences": {
+    "souls": 2,
+    "experience": 120
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "tag": "minecraft:wool"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "irons_spellbooks:arcane_essence"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "irons_spellbooks:wandering_magician_boots"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "irons_spellbooks:wizard_boots",
+      "count": 1
+    }
+  }
+}

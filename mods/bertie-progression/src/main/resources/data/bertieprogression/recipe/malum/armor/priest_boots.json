@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "irons_spellbooks:wizard_boots",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "irons_spellbooks:holy_rune",
+      "count": 1
+    },
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 3
+    },
+    {
+      "tag": "minecraft:flowers",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:sacred",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 4
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "irons_spellbooks:priest_boots",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

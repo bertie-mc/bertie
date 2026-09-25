@@ -1,0 +1,33 @@
+{
+  "essences": {
+    "souls": 3,
+    "blood": 8000,
+    "experience": 500
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "block_factorys_bosses:dragon_bone"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "berlordscarving:bone_big_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "immersive_armors:wither_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "block_factorys_bosses:dragon_bones_leggings",
+      "count": 1
+    }
+  }
+}

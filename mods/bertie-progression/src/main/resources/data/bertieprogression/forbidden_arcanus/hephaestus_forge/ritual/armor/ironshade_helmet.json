@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 250,
+    "souls": 4,
+    "blood": 8000,
+    "experience": 140
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "mythsandlegends:cursed_core"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "mythsandlegends:possessed_armor_fragment"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:blue_wool"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "malum:refined_soulstone"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "immersive_armors:heavy_helmet"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "mythsandlegends:ironshade_helmet",
+      "count": 1
+    }
+  }
+}

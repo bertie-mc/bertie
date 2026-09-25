@@ -1,0 +1,38 @@
+{
+  "essences": {
+    "blood": 4000,
+    "experience": 350
+  },
+  "forge_tier": 1,
+  "inputs": [
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "born_in_chaos_v1:spiny_shell"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "berlordscarving:prismarine_big_slate"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "berlordscarving:flint_big_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "immersive_armors:prismarine_boots"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "armorcompletions:spiny_shell_boots",
+      "count": 1
+    }
+  }
+}
