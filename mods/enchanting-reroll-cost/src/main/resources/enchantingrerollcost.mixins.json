@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.enchantingrerollcost.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["ApothMenuAccessor", "EnchantmentMenuAccessor", "ApothRerollMixin"],
+  "client": ["client.RerollButtonMixin"],
+  "injectors": {"defaultRequire": 1}
+}

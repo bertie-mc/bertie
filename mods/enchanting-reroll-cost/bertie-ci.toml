@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "enchanting-reroll-cost"
+kind = "neoforge-mod"
+gradle-project = ":mods:enchanting-reroll-cost"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

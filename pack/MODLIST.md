@@ -459,7 +459,7 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (30)
+## Ours (31)
 
 | Mod |
 |---|
@@ -478,6 +478,7 @@
 | `config-migrations` |
 | `dread-queen` |
 | `ender-eyes` |
+| `enchanting-reroll-cost` |
 | `explode-to-mine` |
 | `explosive-enhancement` |
 | `fart-bomb` |

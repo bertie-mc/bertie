@@ -92,6 +92,7 @@ include(
     ":mods:coo-particles-fix",
     ":mods:creeper-overhaul-fix",
     ":mods:ender-eyes",
+    ":mods:enchanting-reroll-cost",
     ":mods:explode-to-mine",
     ":mods:explosive-enhancement",
     ":mods:fart-bomb",

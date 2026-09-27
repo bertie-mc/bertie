@@ -391,6 +391,7 @@ dependencies {
     packMods(project(":mods:coo-particles-fix"))
     packMods(project(":mods:creeper-overhaul-fix"))
     packMods(project(":mods:ender-eyes"))
+    packMods(project(":mods:enchanting-reroll-cost"))
     packMods(project(":mods:explode-to-mine"))
     packMods(project(":mods:fart-bomb"))
     packMods(project(":mods:forge-ink"))
