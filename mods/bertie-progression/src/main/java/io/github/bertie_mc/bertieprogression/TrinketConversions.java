@@ -31,8 +31,7 @@ public final class TrinketConversions {
             ResourceLocation.parse("ancient_forgemastery:howling_helmet"),
             ResourceLocation.parse("antarchy:fallen_king_crown"));
 
-    private static final ResourceLocation ARMOUR_SLOT_BLOCKED =
-            ResourceLocation.parse("antarchy:fallen_king_crown");
+    private static final ResourceLocation ARMOUR_SLOT_BLOCKED = ResourceLocation.parse("antarchy:fallen_king_crown");
 
     /** True for a demoted helmet that must not occupy an armour slot at all. */
     public static boolean blocksArmourSlot(Item item) {
@@ -47,10 +46,13 @@ public final class TrinketConversions {
     public static void onModifyDefaultComponents(ModifyDefaultComponentsEvent event) {
         for (ResourceLocation id : HEAD_TRINKETS) {
             // Both mods are optional; an absent one simply has nothing to demote.
-            BuiltInRegistries.ITEM.getOptional(id).ifPresent(item -> event.modify(item, builder -> builder
-                    .set(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.EMPTY)
-                    .remove(DataComponents.MAX_DAMAGE)
-                    .remove(DataComponents.DAMAGE)));
+            BuiltInRegistries.ITEM
+                    .getOptional(id)
+                    .ifPresent(item -> event.modify(
+                            item,
+                            builder -> builder.set(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.EMPTY)
+                                    .remove(DataComponents.MAX_DAMAGE)
+                                    .remove(DataComponents.DAMAGE)));
         }
     }
 

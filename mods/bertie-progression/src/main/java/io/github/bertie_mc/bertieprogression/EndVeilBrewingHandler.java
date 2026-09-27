@@ -28,15 +28,14 @@ public final class EndVeilBrewingHandler {
     private static final ResourceKey<Potion> END_VEIL =
             ResourceKey.create(Registries.POTION, ResourceLocation.parse("betterend:end_veil"));
 
-    private static final ResourceLocation ENDER_PEARL_DUST =
-            ResourceLocation.parse("enderio:powdered_ender_pearl");
+    private static final ResourceLocation ENDER_PEARL_DUST = ResourceLocation.parse("enderio:powdered_ender_pearl");
 
     @SubscribeEvent
     public static void onRegisterBrewingRecipes(RegisterBrewingRecipesEvent event) {
         // Both mods are optional here: without either one there is nothing to bridge.
         Optional<Holder.Reference<Potion>> veil = BuiltInRegistries.POTION.getHolder(END_VEIL);
-        Optional<Holder.Reference<Item>> dust = BuiltInRegistries.ITEM.getHolder(
-                ResourceKey.create(Registries.ITEM, ENDER_PEARL_DUST));
+        Optional<Holder.Reference<Item>> dust =
+                BuiltInRegistries.ITEM.getHolder(ResourceKey.create(Registries.ITEM, ENDER_PEARL_DUST));
         if (veil.isEmpty() || dust.isEmpty()) {
             return;
         }

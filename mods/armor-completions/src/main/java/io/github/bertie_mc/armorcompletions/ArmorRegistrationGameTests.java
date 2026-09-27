@@ -17,13 +17,16 @@ public final class ArmorRegistrationGameTests {
         helper.assertTrue(ArmorCompletions.PIECES.size() == 10, "Expected ten missing pieces");
         var stand = helper.spawn(EntityType.ARMOR_STAND, new BlockPos(1, 1, 1));
         ArmorCompletions.PIECES.forEach((piece, holder) -> {
-            var armor = (ArmorItem)holder.get();
+            var armor = (ArmorItem) holder.get();
             helper.assertTrue(armor.getType() == piece.type(), "Incorrect slot for " + holder.getId());
             var original = ArmorCompletions.sourceArmor(piece.family());
-            helper.assertTrue(armor.getMaterial().equals(original.getMaterial()), "Incorrect source material for " + holder.getId());
+            helper.assertTrue(
+                    armor.getMaterial().equals(original.getMaterial()),
+                    "Incorrect source material for " + holder.getId());
             ItemStack stack = new ItemStack(armor);
             stand.setItemSlot(piece.type().getSlot(), stack);
-            helper.assertTrue(stand.getItemBySlot(piece.type().getSlot()).is(armor), "Could not equip " + holder.getId());
+            helper.assertTrue(
+                    stand.getItemBySlot(piece.type().getSlot()).is(armor), "Could not equip " + holder.getId());
             helper.assertTrue(stack.getMaxStackSize() == 1, "Armor must not stack");
             helper.assertTrue(stack.getMaxDamage() > 0, "Armor durability missing");
             armor.getDefaultAttributeModifiers();
