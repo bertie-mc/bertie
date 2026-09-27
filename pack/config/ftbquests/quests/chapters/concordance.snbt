@@ -43,8 +43,8 @@
 				item: { count: 1, id: "endrem:nether_eye" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 0.39d
+			y: -3.98d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -62,8 +62,8 @@
 				item: { count: 1, id: "endrem:cold_eye" }
 				type: "item"
 			}]
-			x: 1.53d
-			y: -3.7d
+			x: 1.6d
+			y: -5.26d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -81,8 +81,8 @@
 				item: { count: 1, id: "endrem:old_eye" }
 				type: "item"
 			}]
-			x: 2.83d
-			y: -2.83d
+			x: 1.89d
+			y: -3.53d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -100,8 +100,8 @@
 				item: { count: 1, id: "endrem:wither_eye" }
 				type: "item"
 			}]
-			x: 3.7d
-			y: -1.53d
+			x: 3.49d
+			y: -4.25d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -119,8 +119,8 @@
 				item: { count: 1, id: "endrem:rogue_eye" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: 3.09d
+			y: -2.54d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -138,8 +138,8 @@
 				item: { count: 1, id: "endrem:magical_eye" }
 				type: "item"
 			}]
-			x: 3.7d
-			y: 1.53d
+			x: 4.85d
+			y: -2.59d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -157,8 +157,8 @@
 				item: { count: 1, id: "endrem:black_eye" }
 				type: "item"
 			}]
-			x: 2.83d
-			y: 2.83d
+			x: 3.83d
+			y: -1.16d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -176,8 +176,8 @@
 				item: { count: 1, id: "endrem:lost_eye" }
 				type: "item"
 			}]
-			x: 1.53d
-			y: 3.7d
+			x: 5.47d
+			y: -0.54d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -195,8 +195,8 @@
 				item: { count: 1, id: "endrem:guardian_eye" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 3.98d
+			y: 0.39d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -214,8 +214,8 @@
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: -1.53d
-			y: 3.7d
+			x: 5.26d
+			y: 1.6d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -233,8 +233,8 @@
 				item: { count: 1, id: "endrem:undead_eye" }
 				type: "item"
 			}]
-			x: -2.83d
-			y: 2.83d
+			x: 3.53d
+			y: 1.89d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -252,8 +252,8 @@
 				item: { count: 1, id: "endrem:corrupted_eye" }
 				type: "item"
 			}]
-			x: -3.7d
-			y: 1.53d
+			x: 4.25d
+			y: 3.49d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -271,8 +271,8 @@
 				item: { count: 1, id: "endrem:exotic_eye" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: 2.54d
+			y: 3.09d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -290,8 +290,8 @@
 				item: { count: 1, id: "endrem:witch_eye" }
 				type: "item"
 			}]
-			x: -3.7d
-			y: -1.53d
+			x: 2.59d
+			y: 4.85d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -309,8 +309,8 @@
 				item: { count: 1, id: "endrem:cryptic_eye" }
 				type: "item"
 			}]
-			x: -2.83d
-			y: -2.83d
+			x: 1.16d
+			y: 3.83d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -328,8 +328,130 @@
 				item: { count: 1, id: "endrem:evil_eye" }
 				type: "item"
 			}]
-			x: -1.53d
-			y: -3.7d
+			x: 0.54d
+			y: 5.47d
+		}
+		{
+			dependencies: [
+				"5B00000000000002"
+				"5B00000000000003"
+				"5B00000000000004"
+				"5B00000000000005"
+				"5B00000000000006"
+				"5B00000000000007"
+				"5B00000000000008"
+				"5B00000000000009"
+				"5B0000000000000A"
+				"5B0000000000000B"
+				"5B0000000000000C"
+				"5B0000000000000D"
+				"5B0000000000000E"
+				"5B0000000000000F"
+				"5B00000000000010"
+				"5B00000000000011"
+			]
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "5B00000000000012"
+			rewards: [{
+				id: "5B00000002000012"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				icon: {
+					id: "minecraft:end_portal_frame"
+				}
+				id: "5B00000001000012"
+				structure: "minecraft:stronghold"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000012"]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "5B00000000000013"
+			rewards: [{
+				id: "5B00000002000013"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: {
+					id: "minecraft:end_stone"
+				}
+				id: "5B00000001000013"
+				type: "dimension"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000013"]
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "5B00000000000014"
+			rewards: [{
+				id: "5B00000002000014"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: {
+					id: "minecraft:dragon_head"
+				}
+				id: "5B00000001000014"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000014"]
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "5B00000000000015"
+			rewards: [{
+				id: "5B00000002000015"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "5B00000001000015"
+				item: { count: 1, id: "minecraft:dragon_egg" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000015"]
+			icon: {
+				id: "dracolotl:bucket_of_dracolotl"
+			}
+			id: "5B00000000000016"
+			rewards: [{
+				id: "5B00000002000016"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "5B00000001000016"
+				item: { count: 1, id: "dracolotl:bucket_of_dracolotl" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
 		}
 	]
 }

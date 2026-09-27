@@ -1,0 +1,12 @@
+mod = "easyanvils"
+type = "SERVER"
+file = "easyanvils-server.toml"
+
+# Repairs cost what they do in vanilla: the prior work penalty applies to them and grows with them.
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment.prior_work_penalty]
+rename_and_repair_costs = "VANILLA"
+penalty_free_renames_and_repairs = false

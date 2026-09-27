@@ -1923,7 +1923,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			icon: {
@@ -2753,8 +2753,8 @@
 				id: "2B00000001000076"
 				type: "dimension"
 			}]
-			x: -9.0d
-			y: -3.0d
+			x: -10.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2B00000000000059"]
@@ -2941,6 +2941,44 @@
 			]
 			x: -3.0d
 			y: 10.5d
+		}
+		{
+			dependencies: ["2B0000000000006A"]
+			icon: {
+				id: "chunkloaders:single_chunk_loader"
+			}
+			id: "2B00000000000082"
+			rewards: [{
+				id: "2B00000002000082"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000082"
+				item: { count: 1, id: "chunkloaders:single_chunk_loader" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000082"]
+			icon: {
+				id: "chunkloaders:basic_chunk_loader"
+			}
+			id: "2B00000000000083"
+			rewards: [{
+				id: "2B00000002000083"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "2B00000001000083"
+				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
 		}
 	]
 }

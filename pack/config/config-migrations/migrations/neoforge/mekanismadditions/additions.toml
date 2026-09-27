@@ -1,0 +1,27 @@
+mod = "mekanismadditions"
+type = "SERVER"
+file = "Mekanism/additions.toml"
+
+# Biome and structure spawns both check shouldSpawn before adding a baby, so this one switch
+# keeps all six baby mobs out of the world.
+[[changes]]
+version = 1
+op = "merge"
+
+[changes.fragment.baby_mobs.baby_bogged]
+shouldSpawn = false
+
+[changes.fragment.baby_mobs.baby_creeper]
+shouldSpawn = false
+
+[changes.fragment.baby_mobs.baby_enderman]
+shouldSpawn = false
+
+[changes.fragment.baby_mobs.baby_skeleton]
+shouldSpawn = false
+
+[changes.fragment.baby_mobs.baby_stray]
+shouldSpawn = false
+
+[changes.fragment.baby_mobs.baby_wither_skeleton]
+shouldSpawn = false
