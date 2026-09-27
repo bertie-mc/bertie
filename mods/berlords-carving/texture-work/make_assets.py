@@ -190,7 +190,7 @@ def main():
             gen_item_model(f"{mat}_slate")
             lang[f"item.{MODID}.{mat}_slate"] = f"Small {DISPLAY[mat]} Slate"
         gen_item_model(f"{mat}_big_slate")
-        lang[f"item.{MODID}.{mat}_big_slate"] = f"Big {DISPLAY[mat]} Slate"
+        lang[f"item.{MODID}.{mat}_big_slate"] = f"Large {DISPLAY[mat]} Slate"
 
     # ---- carving station item model ---------------------------------------
     # carving station item model (block model is hand-maintained); fixes the missing item texture
