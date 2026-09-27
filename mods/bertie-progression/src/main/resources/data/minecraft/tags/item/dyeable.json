@@ -42,22 +42,6 @@
       "required": false
     },
     {
-      "id": "fantasy_armor:crucible_knight_helmet",
-      "required": false
-    },
-    {
-      "id": "fantasy_armor:crucible_knight_chestplate",
-      "required": false
-    },
-    {
-      "id": "fantasy_armor:crucible_knight_leggings",
-      "required": false
-    },
-    {
-      "id": "fantasy_armor:crucible_knight_boots",
-      "required": false
-    },
-    {
       "id": "fantasy_armor:dark_cover_helmet",
       "required": false
     },

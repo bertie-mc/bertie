@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bertieprogression:green_plushie_token"
+    },
+    {
+      "item": "bertieprogression:green_plushie_token"
+    },
+    {
+      "item": "bertieprogression:green_plushie_token"
+    },
+    {
+      "item": "bertieprogression:green_plushie_token"
+    }
+  ],
+  "result": {
+    "id": "bertieprogression:yellow_plushie_token",
+    "count": 1
+  }
+}

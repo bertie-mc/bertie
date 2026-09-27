@@ -150,6 +150,11 @@ public final class ModItems {
     /** Dropped by villagers killed by a player - loot_modifiers/innocent_soul.json. */
     public static final DeferredItem<Item> INNOCENT_SOUL = simple("innocent_soul", 64);
 
+    // --- Doll Machine tokens: each colour pays for its own gift box; four craft into the next. ---
+    public static final DeferredItem<Item> GREEN_PLUSHIE_TOKEN = simple("green_plushie_token", 64);
+    public static final DeferredItem<Item> YELLOW_PLUSHIE_TOKEN = rare("yellow_plushie_token", 64, Rarity.UNCOMMON);
+    public static final DeferredItem<Item> PURPLE_PLUSHIE_TOKEN = rare("purple_plushie_token", 64, Rarity.EPIC);
+
     public static final Supplier<CreativeModeTab> MAIN_TAB = TABS.register(
             "main",
             () -> CreativeModeTab.builder()

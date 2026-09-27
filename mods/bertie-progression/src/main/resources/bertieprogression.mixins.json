@@ -7,8 +7,10 @@
   "mixins": [
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
+    "BabyWitherSkeletonOddsMixin",
     "BasinRecipeMixin",
     "BlazeBurnerBlockEntityMixin",
+    "DollMachineLotteryMixin",
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
     "PocketOpenKeyMixin",

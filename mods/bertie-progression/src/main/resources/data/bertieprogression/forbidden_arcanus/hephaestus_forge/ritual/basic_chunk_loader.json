@@ -1,0 +1,33 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 0,
+    "souls": 0,
+    "experience": 200
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "berlordscarving:iron_big_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "chunkloaders:single_chunk_loader"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "chunkloaders:basic_chunk_loader",
+      "count": 1
+    }
+  }
+}

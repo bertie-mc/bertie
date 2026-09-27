@@ -320,6 +320,20 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+[[dependencies.${mod_id}]]
+modId="chunkloaders"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="fantasy_armor"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Apotheosis rolls affixed gear and dresses its bosses from its own data, so removed armour
 # has to be taken out of those lists too.
 [[dependencies.${mod_id}]]
@@ -737,13 +751,6 @@ side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="diet"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
-modId="sereneseasons"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

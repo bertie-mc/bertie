@@ -1,0 +1,34 @@
+{
+  "essences": {
+    "aureal": 2000,
+    "blood": 0,
+    "souls": 0,
+    "experience": 400
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:warp_flux"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:gold_block"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "chunkloaders:basic_chunk_loader"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "chunkloaders:advanced_chunk_loader",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

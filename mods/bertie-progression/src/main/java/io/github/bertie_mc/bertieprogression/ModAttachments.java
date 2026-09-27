@@ -56,5 +56,17 @@ public final class ModAttachments {
                     .copyOnDeath()
                     .build());
 
+    /**
+     * Game time of the last hit a player took. Not serialized: the Pocket Dimension combat cooldown
+     * lasts ten seconds, so a relog clearing it costs nothing.
+     */
+    public static final Supplier<AttachmentType<Long>> LAST_HURT_TIME = ATTACHMENTS.register(
+            "last_hurt_time", () -> AttachmentType.builder(() -> Long.MIN_VALUE).build());
+
+    /** Game time the combat-cooldown notice was last sent, so holding crouch does not flood titles. */
+    public static final Supplier<AttachmentType<Long>> COOLDOWN_NOTICE_TIME = ATTACHMENTS.register(
+            "cooldown_notice_time",
+            () -> AttachmentType.builder(() -> Long.MIN_VALUE).build());
+
     private ModAttachments() {}
 }

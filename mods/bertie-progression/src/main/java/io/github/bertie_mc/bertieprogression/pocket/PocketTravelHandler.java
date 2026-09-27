@@ -23,7 +23,8 @@ public final class PocketTravelHandler {
                 || !player.isShiftKeyDown()
                 || !player.onGround()
                 || player.level().dimension().equals(DIMENSION)
-                || !player.level().getBlockState(player.getOnPos()).is(ModBlocks.POCKET_DIMENSION)) {
+                || !player.level().getBlockState(player.getOnPos()).is(ModBlocks.POCKET_DIMENSION)
+                || !PocketCombatCooldown.allowEntry(player)) {
             return;
         }
         // This entry route does not use OpenKeyMessage, so it needs no watch unlock.

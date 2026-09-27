@@ -21,6 +21,7 @@ recipe changes used to connect the pack's exploration, technology and magic syst
 | `weeping_eye` | locator for the weeping structures |
 | `finder` / `locator` | structure-finding items |
 | `pocket_watch` | consume once to permanently unlock Pocket Dimension's Open Portal key |
+| `green_plushie_token` / `yellow_plushie_token` / `purple_plushie_token` | Doll Machine tokens for the green, yellow and purple gift boxes; four of one colour craft one of the next |
 
 Plus the current material chain — dragonbone frames and braces, ignitium struts and lattices,
 kinetic vanes and pattern plates, seals, resonances and attunements — each with its own
@@ -31,7 +32,9 @@ texture under `assets/bertieprogression/textures/item/`.
 `pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon
 mining properties and drops itself even when mined by hand. Stand on it and crouch to
 enter the existing pocket dimension without consuming a watch. The original return
-portal, cooldown and shared/separate plot configuration remain in use.
+portal, cooldown and shared/separate plot configuration remain in use. Neither the block nor
+the Open Portal key lets a player in for ten seconds after they take a hit; a refused attempt
+shows "Combat Cooldown: X sec" in the middle of the screen.
 
 Pocket Watch takes 1.6 seconds to consume, works at full hunger, and unlocks the original
 Open Portal key for that player permanently, including after death and reconnecting.
@@ -58,16 +61,22 @@ present. Its block model is referenced at runtime; no third-party texture is bun
   pedestal formation rules integrated with Forbidden & Arcanus.
 - **EMI integration** (`emi/`) — built-in Mallet Work and Ominous Fan recipes, plus pack-specific
   item visibility policy.
+- **Doll Machine** (`doll/DollLottery`) — Kaleidoscope Doll's machine takes Plushie Tokens and
+  deals only mob dolls; a yellow box holds a special doll 10% of the time and a purple box 50%.
+  Each mob doll also drops from its own mob when a player kills it: 1%, or 5% for the Warden,
+  Elder Guardian and Iron Golem and 10% for the Ender Dragon and Wither.
+- **Baby wither skeletons** (`BabyWitherSkeletonSpeed`, `BabyWitherSkeletonOddsMixin`) — Tiny
+  Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
 - **Removed items** (`RemovedItems`) — items withdrawn from the pack's progression.
 
 ### Data
 
 About 750 JSON files: the R01–R42 recipe ledger, darkstone stonecutting recipes,
-31 Hephaestus Forge rituals, and recipe additions or overrides in the namespaces of the
-pack's other mods (Create kinetics, Malum spirit infusion, Ice and Fire, Immersive Armors,
-Twilight Forest equipment, Avaritia, Cataclysm, Deeper Darker, L2 Hostility loot modifiers
-and others). A Patchouli field guide documents the current progression in game.
+35 Hephaestus Forge rituals (the four chunk loaders among them), and recipe additions or
+overrides in the namespaces of the pack's other mods (Create kinetics, Malum spirit infusion,
+Ice and Fire, Immersive Armors, Twilight Forest equipment, Avaritia, Cataclysm, Deeper Darker,
+L2 Hostility loot modifiers and others). A Patchouli field guide documents the current progression in game.
 
 ---
 

@@ -6,6 +6,7 @@ import io.github.bertie_mc.bertieprogression.forge.PedestalFormationHandler;
 import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
 import io.github.bertie_mc.bertieprogression.gate.PlankSplitHandler;
 import io.github.bertie_mc.bertieprogression.hooks.HookIntegration;
+import io.github.bertie_mc.bertieprogression.pocket.PocketCombatCooldown;
 import io.github.bertie_mc.bertieprogression.pocket.PocketTravelHandler;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.torch.MagnumTorchHandler;
@@ -42,6 +43,7 @@ public final class BertieProgression {
         }
         if (ModList.get().isLoaded("pocket_dimension")) {
             NeoForge.EVENT_BUS.register(PocketTravelHandler.class);
+            NeoForge.EVENT_BUS.register(PocketCombatCooldown.class);
         }
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);
@@ -67,6 +69,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(MagicMirrorCooldownHandler.class);
         NeoForge.EVENT_BUS.register(CapeSlotHandler.class);
         NeoForge.EVENT_BUS.register(SlotAudit.class);
+        NeoForge.EVENT_BUS.register(BabyWitherSkeletonSpeed.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.altar.AltarTooltipHandler.class);
     }
 }

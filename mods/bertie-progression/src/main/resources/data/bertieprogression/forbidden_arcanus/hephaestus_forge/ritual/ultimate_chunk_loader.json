@@ -1,0 +1,34 @@
+{
+  "essences": {
+    "aureal": 4000,
+    "blood": 0,
+    "souls": 0,
+    "experience": 800
+  },
+  "inputs": [
+    {
+      "amount": 6,
+      "ingredient": {
+        "tag": "bertieprogression:end_remastered_eyes"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "berlordscarving:diamond_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "chunkloaders:advanced_chunk_loader"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "chunkloaders:ultimate_chunk_loader",
+      "count": 1
+    }
+  },
+  "forge_tier": 3
+}

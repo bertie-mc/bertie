@@ -39,9 +39,14 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
      */
     private static final String LEGACY_NAMESPACE = "berlordsemi";
 
+    /** Pocket Dimension's own portal block; the pack's route in is Bertie Progression's block. */
+    private static final ResourceLocation POCKET_BLOCK =
+            ResourceLocation.fromNamespaceAndPath("pocket_dimension", "pocket_block");
+
     @Override
     public void register(EmiRegistry registry) {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
+        registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(

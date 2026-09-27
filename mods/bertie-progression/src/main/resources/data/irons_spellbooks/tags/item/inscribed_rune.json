@@ -22,22 +22,6 @@
       "required": false
     },
     {
-      "id": "hazentouvelib:shadow_rune",
-      "required": false
-    },
-    {
-      "id": "hazentouvelib:radiance_rune",
-      "required": false
-    },
-    {
-      "id": "hazentouvelib:cosmic_rune",
-      "required": false
-    },
-    {
-      "id": "hazennstuff:hydro_rune",
-      "required": false
-    },
-    {
       "id": "irons_spellbooks:fire_rune",
       "required": false
     },

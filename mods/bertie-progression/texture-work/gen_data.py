@@ -139,6 +139,10 @@ def infusion(input_item, input_count, extra, spirits, result_id, count=1):
         "result": {"id": result_id, "count": count},
     }
 
+# Ritual pedestals per forge tier, counted from Hephaestus Architecture's tier templates. A tier
+# without a template falls back to the native eight.
+PEDESTALS = {1: 8, 2: 8, 3: 12, 4: 12}
+
 def ritual(main, inputs, result_id, count=1, tier=None, essences=None, xp=0):
     """FA hephaestus ritual. inputs = [(id,count)...]
 
@@ -147,13 +151,15 @@ def ritual(main, inputs, result_id, count=1, tier=None, essences=None, xp=0):
     and every referenced mod is a hard member of the current pack. Unconditional files
     make a parse problem a loud server-boot error instead of a silent skip.
 
-    HARD CONSTRAINT (verified in-game): the Forge has 8 pedestals and each input
-    item occupies one pedestal, so sum(amounts) must be <= 8 — every stock ritual
-    obeys this and exceeding it makes the ritual uncraftable (and crashes the
-    JEI/TMRV ritual display with AIOOBE index 8).
+    HARD CONSTRAINT: each input item occupies one pedestal, so sum(amounts) must fit the
+    pedestals of the lowest forge the ritual runs on. Hephaestus Architecture's tier templates
+    give tiers 1-2 eight pedestals and tiers 3-4 twelve; a ritual that does not fit is
+    uncraftable. F&A's own JEI screen draws only eight slots, so a twelve-input ritual is
+    shown through EMI.
     """
     total = sum(c for _, c in inputs)
-    assert total <= 8, f"ritual inputs exceed 8 pedestals ({total}): {result_id}"
+    limit = PEDESTALS.get(tier or 1, 8)
+    assert total <= limit, f"ritual inputs exceed {limit} pedestals ({total}): {result_id}"
     # FA stores XP cost as essences.experience (4th key; verified against stock rituals).
     ess = dict(essences) if essences else {"aureal": 0, "blood": 0, "souls": 0}
     if xp:
@@ -2678,7 +2684,7 @@ write("data/malum/recipe/spirit_infusion/imitation_heart.json",
 write("data/malum/recipe/spirit_infusion/soulwoven_silk.json",
       infusion("#minecraft:wool", 4,
                [("malum:hex_ash", 1), ("born_in_chaos_v1:spiritual_dust", 1),
-                ("minecraft:string", 5), ("minecraft:leather", 3)],
+                ("minecraft:string", 5), ("twilightforest:tanned_leather", 3)],
                [SP("sacred", 4), SP("aerial", 3), SP("earthen", 3)],
                "malum:soulwoven_silk", 1))
 
@@ -3365,12 +3371,6 @@ for _dye in ("black", "blue", "brown", "cyan", "gray", "green", "light_blue", "l
            "pattern": [" # ", "#D#", " # "],
            "result": {"count": 16, "id": f"mekanismadditions:{_dye}_plastic"}})
 
-# --- The six baby mobs are a novelty that follows you around the whole game. Their biome modifiers
-#     are overridden with neoforge:none, which is how a modifier is switched off; the spawn eggs go
-#     out through docs/removed. ---
-for _baby in ("bogged", "creeper", "enderman", "skeleton", "stray", "wither_skeleton"):
-    write(f"data/mekanismadditions/neoforge/biome_modifier/{_baby}.json", {"type": "neoforge:none"})
-
 # Decay spreads and multiplies, so anything it drops is free: one Bottle of Fading turns into a
 # field of Vegetal, one Bottle of Failing into a field of Neolith. The blocks stay breakable and
 # stay cleanable with Decay Away - they just no longer hand anything back.
@@ -3551,6 +3551,95 @@ write(f"{RIT}/pocket_dimension.json",
               ("enigmaticlegacyplus:astral_dust", 2)],
              "bertieprogression:pocket_dimension", 1, tier=2,
              essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=1000))
+
+# ================================================================ CHUNK LOADERS
+# Every chunk loader is forged, each tier around the one below it. The Ultimate loader fills all
+# twelve pedestals of a Tier-III forge.
+for _cl in ("single", "basic", "single_to_basic", "advanced", "ultimate"):
+    write(f"data/chunkloaders/recipe/{_cl}_chunk_loader.json", DISABLED)
+write("data/bertieprogression/tags/item/end_remastered_eyes.json",
+      {"values": [f"endrem:{_e}_eye" for _e in (
+          "black", "cold", "corrupted", "cryptic", "cursed", "evil", "exotic", "guardian", "lost",
+          "magical", "nether", "old", "rogue", "undead", "witch", "wither")]})
+write(f"{RIT}/single_chunk_loader.json",
+      ritual("minecraft:minecart",
+             [("minecraft:ender_pearl", 1), ("minecraft:flint_and_steel", 1), ("minecraft:obsidian", 6)],
+             "chunkloaders:single_chunk_loader", 1,
+             essences={"aureal": 500, "blood": 0, "souls": 0}, xp=100))
+write(f"{RIT}/basic_chunk_loader.json",
+      ritual("chunkloaders:single_chunk_loader",
+             [("minecraft:ender_pearl", 4), ("berlordscarving:iron_big_slate", 4)],
+             "chunkloaders:basic_chunk_loader", 1,
+             essences={"aureal": 1000, "blood": 0, "souls": 0}, xp=200))
+write(f"{RIT}/advanced_chunk_loader.json",
+      ritual("chunkloaders:basic_chunk_loader",
+             [("malum:warp_flux", 4), ("minecraft:gold_block", 4)],
+             "chunkloaders:advanced_chunk_loader", 1, tier=2,
+             essences={"aureal": 2000, "blood": 0, "souls": 0}, xp=400))
+write(f"{RIT}/ultimate_chunk_loader.json",
+      ritual("chunkloaders:advanced_chunk_loader",
+             [("#bertieprogression:end_remastered_eyes", 6), ("berlordscarving:diamond_slate", 6)],
+             "chunkloaders:ultimate_chunk_loader", 1, tier=3,
+             essences={"aureal": 4000, "blood": 0, "souls": 0}, xp=800))
+
+# ================================================================ KALEIDOSCOPE DOLLS
+# The Doll Machine takes Plushie Tokens instead of ingots and deals only mob dolls; a yellow or
+# purple box swaps its draw for a special doll part of the time (DollLottery). Each mob doll also
+# drops from its own mob when a player kills it. The Computer is a quest reward, not a craft.
+KD = "kaleidoscope_doll"
+# Doll number by the vanilla mob it depicts, matched from the doll models: Kaleidoscope Doll labels
+# every one of them "Vanilla" and names none.
+MOB_DOLLS = {
+    "blaze": 2, "enderman": 3, "spider": 4, "creeper": 5, "wither_skeleton": 6, "skeleton": 7,
+    "stray": 8, "slime": 9, "magma_cube": 10, "shulker": 11, "ghast": 12, "elder_guardian": 13,
+    "guardian": 14, "zombified_piglin": 15, "hoglin": 16, "zoglin": 17, "cave_spider": 18,
+    "phantom": 19, "warden": 20, "endermite": 21, "ravager": 22, "drowned": 23, "villager": 24,
+    "snow_golem": 25, "zombie": 26, "husk": 27, "evoker": 28, "illusioner": 29, "pillager": 30,
+    "vindicator": 31, "witch": 32, "zombie_villager": 33, "piglin": 34, "piglin_brute": 35,
+    "armadillo": 36, "axolotl": 37, "bee": 38, "camel": 39, "cat": 40, "chicken": 41, "cow": 42,
+    "dolphin": 43, "donkey": 44, "fox": 45, "frog": 46, "glow_squid": 47, "squid": 48, "goat": 49,
+    "horse": 50, "llama": 51, "trader_llama": 52, "mooshroom": 53, "ocelot": 54, "panda": 55,
+    "parrot": 56, "pig": 57, "polar_bear": 58, "pufferfish": 59, "rabbit": 60, "allay": 61,
+    "sheep": 62, "turtle": 63, "wolf": 64, "iron_golem": 65, "strider": 66, "wither": 326,
+    "ender_dragon": 327,
+}
+DOLL_DROP_CHANCE = {"warden": 0.05, "elder_guardian": 0.05, "iron_golem": 0.05,
+                    "ender_dragon": 0.10, "wither": 0.10}
+# Special dolls that are ordinary items: the four non-mob dolls of the machine's own pool and a
+# chosen set of sponsor dolls. The five custom-model dolls share one item, so DollLottery adds them.
+SPECIAL_DOLLS = (328, 329, 690, 691,
+                 76, 109, 154, 196, 227, 247, 267, 270, 271, 306, 335, 349, 364, 382, 397, 401, 416,
+                 425, 438, 452, 467, 505, 535, 552, 596, 597, 615, 622, 633, 634, 673, 681, 683, 686,
+                 687, 688)
+write("data/bertieprogression/tags/item/mob_dolls.json",
+      {"values": [f"{KD}:doll_{_n}" for _n in sorted(MOB_DOLLS.values())]})
+write("data/bertieprogression/tags/item/special_dolls.json",
+      {"values": [f"{KD}:doll_{_n}" for _n in SPECIAL_DOLLS]})
+for _tier, _colour in enumerate(("green", "yellow", "purple")):
+    write(f"data/{KD}/tags/item/tier_{_tier}_dolls.json",
+          {"replace": True, "values": ["#bertieprogression:mob_dolls"]})
+    write(f"data/{KD}/tags/item/tier_{_tier}_machine_tokens.json",
+          {"replace": True, "values": [f"bertieprogression:{_colour}_plushie_token"]})
+write(f"data/{KD}/recipe/computer.json", DISABLED)
+write("data/bertieprogression/recipe/yellow_plushie_token.json",
+      shapeless(["bertieprogression:green_plushie_token"] * 4, "bertieprogression:yellow_plushie_token"))
+write("data/bertieprogression/recipe/purple_plushie_token.json",
+      shapeless(["bertieprogression:yellow_plushie_token"] * 4, "bertieprogression:purple_plushie_token"))
+_glm = ["bertieprogression:witch_droplet", "bertieprogression:innocent_soul"]
+for _mob, _n in sorted(MOB_DOLLS.items()):
+    write(f"data/bertieprogression/loot_modifiers/doll_drops/{_mob}.json", {
+        "neoforge:conditions": conds(KD),
+        "type": "l2core:add_item",
+        "conditions": [
+            {"condition": "minecraft:entity_properties", "entity": "this",
+             "predicate": {"type": f"minecraft:{_mob}"}},
+            {"condition": "minecraft:killed_by_player"},
+            {"condition": "minecraft:random_chance", "chance": DOLL_DROP_CHANCE.get(_mob, 0.01)},
+        ],
+        "item": f"{KD}:doll_{_n}",
+    })
+    _glm.append(f"bertieprogression:doll_drops/{_mob}")
+write("data/neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": _glm})
 
 # ================================================================ BACKPACK UPGRADES
 # Sophisticated Backpacks prices every upgrade in iron, redstone and string, which says nothing
@@ -4869,6 +4958,9 @@ ITEMS = {
     "null_blaze_cube": "Null Blaze Cube",
     "innocent_soul": "Innocent Soul",
     "pocket_watch": "Pocket Watch",
+    "green_plushie_token": "Green Plushie Token",
+    "yellow_plushie_token": "Yellow Plushie Token",
+    "purple_plushie_token": "Purple Plushie Token",
 }
 
 BLOCKS = {
@@ -4891,6 +4983,33 @@ write("assets/bertieprogression/models/item/abyssal_core.json",
 # Eye of Ender, the same model-parent trap described for storm_core below.
 # Crafting License borrows vanilla's paper model (no bespoke texture yet).
 write("assets/bertieprogression/models/item/crafting_license.json", {"parent": "minecraft:item/paper"})
+# Plushie Tokens have no bespoke texture: each is a flat plate cut from the wrapped top face of the
+# Doll Machine gift box of its colour, read from Kaleidoscope Doll's own texture at runtime.
+_WRAPPED_FACE = {"green": [0, 0, 4, 4], "yellow": [5.5, 0, 9.5, 4], "purple": [11, 0, 15, 4]}
+for _colour, _uv in _WRAPPED_FACE.items():
+    _edge = [_uv[0], _uv[1], _uv[0] + 0.25, _uv[3]]
+    write(f"assets/bertieprogression/models/item/{_colour}_plushie_token.json", {
+        "textures": {"face": "kaleidoscope_doll:block/doll_gift_box",
+                     "particle": "kaleidoscope_doll:block/doll_gift_box"},
+        "gui_light": "front",
+        "elements": [{
+            "from": [1, 1, 7.5], "to": [15, 15, 8.5],
+            "faces": {"north": {"uv": _uv, "texture": "#face"},
+                      "south": {"uv": _uv, "texture": "#face"},
+                      "east": {"uv": _edge, "texture": "#face"},
+                      "west": {"uv": _edge, "texture": "#face"},
+                      "up": {"uv": _edge, "rotation": 90, "texture": "#face"},
+                      "down": {"uv": _edge, "rotation": 90, "texture": "#face"}},
+        }],
+        "display": {
+            "ground": {"translation": [0, 2, 0], "scale": [0.5, 0.5, 0.5]},
+            "head": {"rotation": [0, 180, 0], "translation": [0, 13, 7]},
+            "thirdperson_righthand": {"translation": [0, 3, 1], "scale": [0.55, 0.55, 0.55]},
+            "firstperson_righthand": {"rotation": [0, -90, 25], "translation": [1.13, 3.2, 1.13],
+                                      "scale": [0.68, 0.68, 0.68]},
+            "fixed": {"rotation": [0, 180, 0]},
+        },
+    })
 # Finder maps use vanilla's empty-map model; no bespoke textures are registered.
 for _m in ("sirok_nest_map", "kraken_ship_map", "yeti_hideout_map"):
     write(f"assets/bertieprogression/models/item/{_m}.json", {"parent": "minecraft:item/map"})
@@ -4944,6 +5063,7 @@ lang.update({
     "message.bertieprogression.finder_none": "Nothing within range. Carry the chart further and try again.",
     "message.bertieprogression.finder_found": "The chart is now a map. X=%s, Z=%s.",
     "message.bertieprogression.nether_locked": "The heat refuses you. Eat a Netherly Meal first.",
+    "message.bertieprogression.pocket_combat_cooldown": "Combat Cooldown: %s sec",
     "item.bertieprogression.sirok_nest_map.filled": "Map to Sirok's Nest",
     "item.bertieprogression.kraken_ship_map.filled": "Map to the Kraken's Ship",
     "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
