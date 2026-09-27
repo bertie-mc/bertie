@@ -641,8 +641,8 @@
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			x: 5.25d
-			y: 6.0d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1B0000000000000C"]
@@ -721,8 +721,8 @@
 				item: { count: 1, id: "minecraft:gold_ingot" }
 				type: "item"
 			}]
-			x: 12.75d
-			y: 6.0d
+			x: 12.8d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1B00000000000013"]
@@ -1233,7 +1233,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1B0000000000003A"]
@@ -1251,8 +1251,8 @@
 				item: { count: 1, id: "chalk:chalk_box" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1B00000000000008"]
@@ -1686,6 +1686,137 @@
 			}]
 			x: 18d
 			y: -4.5d
+		}
+		{
+			dependencies: ["1B00000000000032"]
+			id: "1B00000000000052"
+			rewards: [{
+				id: "1B00000002000052"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000052"
+				item: { count: 1, id: "betterhorses:horse_effigy" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B0000000000000B"]
+			id: "1B00000000000053"
+			rewards: [{
+				id: "1B00000002000053"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000053"
+				item: { count: 1, id: "berlordscarving:iron_slate" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B00000000000053"]
+			id: "1B00000000000054"
+			rewards: [{
+				id: "1B00000002000054"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000054"
+				item: { count: 1, id: "berlordscarving:iron_big_slate" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B00000000000054"]
+			id: "1B00000000000055"
+			rewards: [{
+				id: "1B00000002000055"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000055"
+				item: { count: 1, id: "betterhorses:iron_horseshoes" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B00000000000012"]
+			id: "1B00000000000056"
+			rewards: [{
+				id: "1B00000002000056"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000056"
+				item: { count: 1, id: "berlordscarving:golden_slate" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1B00000000000056"]
+			id: "1B00000000000057"
+			rewards: [{
+				id: "1B00000002000057"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000057"
+				item: { count: 1, id: "berlordscarving:golden_big_slate" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"1B00000000000057"
+				"1B00000000000055"
+			]
+			id: "1B00000000000058"
+			rewards: [{
+				id: "1B00000002000058"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000058"
+				item: { count: 1, id: "betterhorses:gold_horseshoes" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1B0000000000001B"]
+			id: "1B00000000000059"
+			rewards: [{
+				id: "1B00000002000059"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "1B00000001000059"
+				item: { count: 1, id: "berlordsspellrestrictions:uncommon_crafting_orb" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
 		}
 	]
 }

@@ -1748,5 +1748,21 @@
 			x: -9.0d
 			y: 9.0d
 		}
+		{
+			dependencies: ["3B0000000000002A"]
+			id: "3B00000000000076"
+			rewards: [{
+				id: "3B00000002000076"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B00000001000076"
+				item: { count: 1, id: "berlordsspellrestrictions:legendary_crafting_orb" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
 	]
 }
