@@ -430,6 +430,16 @@ def _validate_owned_runtime_dependencies(
             mod_id = mod_id_match.group(1)
             if mod_id in {"minecraft", "neoforge"} or mod_id in owned_mod_ids:
                 continue
+            library_alias = _catalog_alias(mod_id)
+            if any(
+                re.search(
+                    rf"\b{configuration}\s*\(\s*(?:variantOf\s*\(\s*)?"
+                    rf"libs\.{re.escape(library_alias)}\b",
+                    build,
+                )
+                for configuration in runtime_configurations
+            ):
+                continue
             components = component_by_mod_id.get(mod_id, set())
             if len(components) != 1:
                 description = (

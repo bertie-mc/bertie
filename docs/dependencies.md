@@ -151,6 +151,13 @@ Use `compileOnly` for an optional API that source imports, `runtimeOnly` for a h
 dependency, and the suite-specific configurations for integrations installed only in that
 test. Required libraries of those roots come from the lock and must not be repeated.
 
+An owned mod may depend directly on a published Maven mod through the normal `libs` catalog when
+that artifact is a library of the owned mod rather than an intentional pack component. Keep the
+catalog alias equal to the provided mod ID after Gradle accessor normalization, declare it directly
+in `runtimeOnly`, and declare the same required mod ID in NeoForge metadata. Pack membership still
+belongs in `deps/components/` and `pack/build.gradle.kts`; a Maven library declaration does not add
+anything to the pack.
+
 ## Validate and refresh
 
 Validate committed inputs and locks without network access:

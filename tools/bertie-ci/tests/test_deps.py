@@ -442,6 +442,36 @@ def test_check_requires_owned_mod_runtime_dependency_to_be_direct(
     assert check_locks(tmp_path) == ()
 
 
+def test_check_accepts_direct_maven_mod_runtime_dependency(tmp_path: Path) -> None:
+    _fixture(tmp_path)
+    for profile_id in ("development", "release-curseforge", "release-modrinth"):
+        _lock(tmp_path, profile_id)
+    _write(tmp_path / "mods/example/mod.properties", "mod_id=example")
+    _write(
+        tmp_path / "mods/example/src/main/templates/META-INF/neoforge.mods.toml",
+        """
+        [[dependencies."${mod_id}"]]
+        modId = "published_api"
+        type = "required"
+        versionRange = "[1,)"
+        ordering = "NONE"
+        side = "CLIENT"
+        """,
+    )
+    _write(
+        tmp_path / "mods/example/build.gradle.kts",
+        """
+        dependencies {
+            compileOnly(libs.publishedApi)
+            runtimeOnly(libs.publishedApi)
+        }
+        """,
+    )
+    refresh_locks(tmp_path)
+
+    assert check_locks(tmp_path) == ()
+
+
 def test_refresh_reuses_immutable_metadata_and_prunes_unreachable_artifacts(
     tmp_path: Path,
 ) -> None:
