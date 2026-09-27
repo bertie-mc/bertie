@@ -81,6 +81,7 @@ include(
     ":mods:bertie-creatures",
     ":mods:bertie-emi",
     ":mods:bertie-filters",
+    ":mods:bertie-fletching",
     ":mods:bertie-progression",
     ":mods:bertie-tiers",
     ":mods:bertie-toolcraft",

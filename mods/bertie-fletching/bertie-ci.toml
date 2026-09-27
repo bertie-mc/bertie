@@ -1,0 +1,8 @@
+format = "bertie-ci.component.v2"
+subject = "bertie-fletching"
+kind = "neoforge-mod"
+gradle-project = ":mods:bertie-fletching"
+
+[version]
+file = "mod.properties"
+key = "mod_version"

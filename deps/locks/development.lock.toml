@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "fe57fedd03fa70b77ba101b426380dabec195ef687ecab40b9e60c66c1e2c90f"
+inputs-hash = "9bad8288f199af0cbf4a5e8244abbd95b0937937175309661b149dada6e7cf5f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -584,6 +584,10 @@ mod = "modrinth:qRG5vR8U:oBjuO3Ki"
 [components."fishingoverhaul"]
 any = "modrinth:mO6KzcvH:J6h1bEpa"
 mod = "modrinth:mO6KzcvH:J6h1bEpa"
+
+[components."fletchery-expanded"]
+any = "modrinth:VocYbzvB:RS6xUSxq"
+mod = "modrinth:VocYbzvB:RS6xUSxq"
 
 [components."forbidden-arcanus"]
 any = "modrinth:MdlnLS7Q:fNjxgZPH"
@@ -6069,6 +6073,26 @@ filename = "Aquaculture-1.21.1-2.7.21.jar"
 project-id = "Vl1uNAuy"
 version-id = "5pbz0ETj"
 provides = ["aquaculture"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:VocYbzvB:RS6xUSxq"]
+name = "fletchery-expanded"
+component = "fletchery-expanded"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "VocYbzvB"
+version = "RS6xUSxq"
+filename = "fletchery_expanded-neoforge-1.21.1-1.0.5.jar"
+project-id = "VocYbzvB"
+version-id = "RS6xUSxq"
+provides = ["fletchery_expanded"]
 bundled-provides = []
 required = []
 optional = []

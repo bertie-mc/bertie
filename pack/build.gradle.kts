@@ -378,6 +378,7 @@ dependencies {
     packMods(project(":mods:bertie-blackhole"))
     packMods(project(":mods:bertie-emi"))
     packMods(project(":mods:bertie-filters"))
+    packMods(project(":mods:bertie-fletching"))
     packMods(project(":mods:bertie-progression"))
     packMods(project(":mods:bertie-tiers"))
     packMods(project(":mods:bertie-toolcraft"))

@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.fletching.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["CoatedArrowMixin", "ArrowTooltipMixin", "TableRemovalMixin"],
+  "client": ["LayeredModelMixin", "BowResolverMixin", "ArrowTextureMixin"],
+  "injectors": {"defaultRequire": 1}
+}

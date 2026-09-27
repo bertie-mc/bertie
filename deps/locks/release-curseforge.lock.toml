@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "0aa107ff98f12bda475ecb5fbf238d92d0e50f0a1d5f6c861ec1fcba3e5f5408"
+inputs-hash = "8add20e519e6643540ac5071519ac2493702a7216661e80f4e78f5af27d6bdae"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -584,6 +584,10 @@ mod = "curseforge:1117054:7232473"
 [components."fishingoverhaul"]
 any = "curseforge:491332:6297564"
 mod = "curseforge:491332:6297564"
+
+[components."fletchery-expanded"]
+any = "modrinth:VocYbzvB:RS6xUSxq"
+mod = "modrinth:VocYbzvB:RS6xUSxq"
 
 [components."forbidden-arcanus"]
 any = "curseforge:309858:6875895"
@@ -9932,6 +9936,26 @@ filename = "integrated_api-neoforge-1.21.1-1.8.0.jar"
 project-id = "V6fKbpBN"
 version-id = "cKHoMnZX"
 provides = ["integrated_api"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:VocYbzvB:RS6xUSxq"]
+name = "fletchery-expanded"
+component = "fletchery-expanded"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "VocYbzvB"
+version = "RS6xUSxq"
+filename = "fletchery_expanded-neoforge-1.21.1-1.0.5.jar"
+project-id = "VocYbzvB"
+version-id = "RS6xUSxq"
+provides = ["fletchery_expanded"]
 bundled-provides = []
 required = []
 optional = []
