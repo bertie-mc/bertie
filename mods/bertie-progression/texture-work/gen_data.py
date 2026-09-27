@@ -3641,6 +3641,63 @@ for _mob, _n in sorted(MOB_DOLLS.items()):
     _glm.append(f"bertieprogression:doll_drops/{_mob}")
 write("data/neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": _glm})
 
+# ================================================================ BETTER HORSES
+# The Horse Effigy is a Small Wooden Slate set on a Large one, and it is the smithing template of
+# the horseshoe ladder: each tier sits on the one below it, with its metal's Large Slate as the
+# addition, and Iron starts from a Large Wooden Slate. The template ingredient is strict about
+# components because a stored horse lives in the effigy's custom data and smithing consumes the
+# template. Netherite keeps the vanilla upgrade template.
+BH = "betterhorses"
+EMPTY_EFFIGY = {"type": "neoforge:components", "items": f"{BH}:horse_effigy",
+                "components": {}, "strict": True}
+write(f"data/{BH}/recipe/horse_effigy.json",
+      shaped(["S", "L"], {"S": "berlordscarving:wood_slate", "L": "berlordscarving:wood_big_slate"},
+             f"{BH}:horse_effigy", category="equipment"))
+for _shoe, _base, _slate in (("iron", "berlordscarving:wood_big_slate", "iron"),
+                             ("gold", f"{BH}:iron_horseshoes", "golden"),
+                             ("diamond", f"{BH}:gold_horseshoes", "diamond")):
+    write(f"data/{BH}/recipe/{_shoe}_horseshoes.json", {
+        "neoforge:conditions": conds(BH, "berlordscarving"),
+        "type": "minecraft:smithing_transform",
+        "template": EMPTY_EFFIGY,
+        "base": {"item": _base},
+        "addition": {"item": f"berlordscarving:{_slate}_big_slate"},
+        "result": {"id": f"{BH}:{_shoe}_horseshoes", "count": 1},
+    })
+
+# ================================================================ SAWMILL
+# The sawmill's blade is a Create propeller where the stock recipe has an iron ingot.
+write("data/sawmill/recipe/sawmill.json",
+      shaped(["---", "|E|", "###"],
+             {"#": "#minecraft:wooden_slabs", "|": "#minecraft:wooden_fences", "-": "minecraft:stick",
+              "E": "create:propeller"},
+             "sawmill:sawmill", category="building"))
+
+# ================================================================ SPELL CRAFTING ORBS
+# Crafting orbs come from the pack's machines instead of a ring of ink in the crafting grid. Common
+# and Uncommon are Tier-I Hephaestus rituals, Rare is a Spirit Altar infusion with eight of every
+# spirit, and Legendary is a Tier-II ritual; Epic keeps Berlord's Spell Restrictions' own recipe.
+# Each ritual fills its eight pedestals with the matching ink. 900 and 1350 ink are the Tier-I and
+# Tier-II experience ceilings and 15000 blood the Tier-II one (1000/10/10000/900, 3000/50/15000/1350).
+BSR = "berlordsspellrestrictions"
+for _orb in ("common", "uncommon", "rare", "legendary"):
+    write(f"data/{BSR}/recipe/{_orb}_crafting_orb.json", DISABLED)
+write(f"{RIT}/common_crafting_orb.json",
+      ritual("born_in_chaos_v1:dark_charge", [("irons_spellbooks:common_ink", 8)],
+             f"{BSR}:common_crafting_orb",
+             essences={"aureal": 0, "blood": 6000, "souls": 4}, xp=900))
+write(f"{RIT}/uncommon_crafting_orb.json",
+      ritual(f"{BSR}:common_crafting_orb", [("irons_spellbooks:uncommon_ink", 8)],
+             f"{BSR}:uncommon_crafting_orb",
+             essences={"aureal": 0, "blood": 6000, "souls": 8}, xp=900))
+write(f"{R}/malum/rare_crafting_orb.json",
+      infusion(f"{BSR}:uncommon_crafting_orb", 1, [("irons_spellbooks:rare_ink", 8)], ALL8x8,
+               f"{BSR}:rare_crafting_orb"))
+write(f"{RIT}/legendary_crafting_orb.json",
+      ritual(f"{BSR}:epic_crafting_orb", [("irons_spellbooks:legendary_ink", 8)],
+             f"{BSR}:legendary_crafting_orb", tier=2,
+             essences={"aureal": 0, "blood": 15000, "souls": 16}, xp=1350))
+
 # ================================================================ BACKPACK UPGRADES
 # Sophisticated Backpacks prices every upgrade in iron, redstone and string, which says nothing
 # about what the upgrade does and costs nothing by the time you want one. Each is re-cut around the
@@ -3971,6 +4028,30 @@ INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "in
                              # ".minecraft"; changing either makes the generator scan the wrong jars.
                              "bertie-no-worldgen", "minecraft", "mods")
 
+
+def _pack_jars():
+    """Instance jars that belong to the pack, sorted: the third-party files the dependency locks
+    name, plus the monorepo's own mods under any version. The instance also runs pack candidates
+    and can hold libraries a removed mod left behind; neither may shape generated data."""
+    if not os.path.isdir(INSTANCE_MODS):
+        return []
+    repo = os.path.normpath(os.path.join(ROOT, "..", ".."))
+    locked, owned = set(), set()
+    for sub in ("locks", "components"):
+        deps_dir = os.path.join(repo, "deps", sub)
+        for fn in os.listdir(deps_dir):
+            if fn.endswith(".toml"):
+                text = io.open(os.path.join(deps_dir, fn), encoding="utf-8").read()
+                locked.update(re.findall(r'(?m)^filename = "([^"]+)"$', text))
+    for mod in os.listdir(os.path.join(repo, "mods")):
+        props = os.path.join(repo, "mods", mod, "mod.properties")
+        if os.path.isfile(props):
+            found = re.search(r"(?m)^mod_id=(\S+)", io.open(props, encoding="utf-8").read())
+            if found:
+                owned.add(found.group(1))
+    return [f for f in sorted(os.listdir(INSTANCE_MODS))
+            if f.endswith(".jar") and (f in locked or f.split("-")[0] in owned)]
+
 # ================================================================ ENCHANTING TOMES
 # Apothic Enchanting binds every tome around a Blaze Rod, which puts the whole enchanting line
 # behind the Nether. The Dark Rod does the same job and drops on this side of the portal, so it
@@ -3979,9 +4060,7 @@ INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "in
 # mod reshapes later still comes out right, and a tome that never wanted blaze is left alone.
 def _tome_recipes():
     import zipfile
-    jars = ([f for f in sorted(os.listdir(INSTANCE_MODS))
-             if f.startswith("ApothicEnchanting") and f.endswith(".jar")]
-            if os.path.isdir(INSTANCE_MODS) else [])
+    jars = [f for f in _pack_jars() if f.startswith("ApothicEnchanting")]
     if not jars:
         return 0
 
@@ -4020,9 +4099,7 @@ TOOTH_SHARE = 0.1
 
 def _enderman_tooth_tables():
     import zipfile
-    jars = ([f for f in sorted(os.listdir(INSTANCE_MODS))
-             if f.startswith("endermanoverhaul") and f.endswith(".jar")]
-            if os.path.isdir(INSTANCE_MODS) else [])
+    jars = [f for f in _pack_jars() if f.startswith("endermanoverhaul")]
     if not jars:
         return 0
     jar = os.path.join(INSTANCE_MODS, jars[0])
@@ -4082,8 +4159,7 @@ BRICK_FORGE_BONUS_PATH = "brick_forge_bonus.json"
 
 def _brick_forge_bonus():
     import zipfile
-    jars = ([os.path.join(INSTANCE_MODS, f) for f in sorted(os.listdir(INSTANCE_MODS))
-             if f.endswith(".jar")] if os.path.isdir(INSTANCE_MODS) else [])
+    jars = [os.path.join(INSTANCE_MODS, f) for f in _pack_jars()]
     vanilla = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "libraries", "com",
                            "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
     if os.path.isfile(vanilla):
@@ -4400,8 +4476,7 @@ if _removed:
     # Our own jar is in that folder too, carrying the overrides the LAST run generated. Reading it
     # back makes every already-stripped file look like the mod's original, so nothing needs
     # stripping and the whole set silently disappears from the manifest. Skip ourselves.
-    _scan = [os.path.join(INSTANCE_MODS, f) for f in sorted(os.listdir(INSTANCE_MODS))
-             if f.endswith(".jar") and not f.startswith(MODID)] if os.path.isdir(INSTANCE_MODS) else []
+    _scan = [os.path.join(INSTANCE_MODS, f) for f in _pack_jars() if not f.startswith(MODID)]
     _vanilla = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "libraries", "com",
                             "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
     if os.path.isfile(_vanilla):

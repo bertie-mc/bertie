@@ -1,0 +1,27 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 6000,
+    "souls": 8,
+    "experience": 900
+  },
+  "inputs": [
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "irons_spellbooks:uncommon_ink"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "berlordsspellrestrictions:common_crafting_orb"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "berlordsspellrestrictions:uncommon_crafting_orb",
+      "count": 1
+    }
+  }
+}

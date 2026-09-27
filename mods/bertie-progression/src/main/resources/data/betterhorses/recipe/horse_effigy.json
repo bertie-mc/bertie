@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterhorses"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "berlordscarving:wood_slate"
+    },
+    "L": {
+      "item": "berlordscarving:wood_big_slate"
+    }
+  },
+  "pattern": [
+    "S",
+    "L"
+  ],
+  "result": {
+    "id": "betterhorses:horse_effigy",
+    "count": 1
+  }
+}

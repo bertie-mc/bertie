@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sawmill"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "|": {
+      "tag": "minecraft:wooden_fences"
+    },
+    "-": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "create:propeller"
+    }
+  },
+  "pattern": [
+    "---",
+    "|E|",
+    "###"
+  ],
+  "result": {
+    "id": "sawmill:sawmill",
+    "count": 1
+  }
+}

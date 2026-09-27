@@ -1,0 +1,28 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 15000,
+    "souls": 16,
+    "experience": 1350
+  },
+  "inputs": [
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "irons_spellbooks:legendary_ink"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "berlordsspellrestrictions:epic_crafting_orb"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "berlordsspellrestrictions:legendary_crafting_orb",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

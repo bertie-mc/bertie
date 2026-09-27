@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterhorses"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "type": "neoforge:components",
+    "items": "betterhorses:horse_effigy",
+    "components": {},
+    "strict": true
+  },
+  "base": {
+    "item": "betterhorses:iron_horseshoes"
+  },
+  "addition": {
+    "item": "berlordscarving:golden_big_slate"
+  },
+  "result": {
+    "id": "betterhorses:gold_horseshoes",
+    "count": 1
+  }
+}
