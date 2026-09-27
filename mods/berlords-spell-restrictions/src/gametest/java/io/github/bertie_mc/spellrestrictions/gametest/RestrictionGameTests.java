@@ -6,6 +6,7 @@ import io.github.bertie_mc.spellrestrictions.Restrictions;
 import io.github.bertie_mc.spellrestrictions.SpellRestrictions;
 import io.github.bertie_mc.spellrestrictions.UnlockState;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
+import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.block.scroll_forge.ScrollForgeTile;
@@ -18,9 +19,11 @@ import java.util.Set;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.nbt.NbtOps;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -28,6 +31,10 @@ import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
@@ -275,6 +282,101 @@ public final class RestrictionGameTests {
                     recipe.value();
             h.assertTrue(crafting.matches(input, h.getLevel()), "Manuscript recipe matches: " + name);
         }
+        h.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void cataclysmKnowledgeTeachesOneSpellPerUse(GameTestHelper h) {
+        for (String kind : new String[] {"burning", "frozen"}) {
+            var p = player(h);
+            var fragment = item("cataclysm_spellbooks:" + kind + "_knowledge_fragment");
+            p.setItemInHand(InteractionHand.MAIN_HAND, fragment);
+            fragment.getItem().use(h.getLevel(), p, InteractionHand.MAIN_HAND);
+            h.assertTrue(
+                    fragment.getCount() == 1 && Restrictions.state(p).spells().isEmpty(),
+                    "Fragment is material and teaches nothing: " + kind);
+
+            var book =
+                    item("cataclysm_spellbooks:" + (kind.equals("burning") ? "burning_manuscript" : "frozen_tablet"));
+            book.setCount(16);
+            p.setItemInHand(InteractionHand.MAIN_HAND, book);
+            int learned = 0;
+            while (book.getCount() > 0) {
+                int before = book.getCount();
+                book.getItem().use(h.getLevel(), p, InteractionHand.MAIN_HAND);
+                if (book.getCount() == before) break;
+                learned++;
+                h.assertTrue(book.getCount() == before - 1, "One use consumes exactly one item");
+                h.assertTrue(Restrictions.state(p).spells().size() == learned, "One use teaches exactly one spell");
+            }
+            h.assertTrue(learned > 0 && book.getCount() > 0, "List exhausts before the stack: " + kind);
+            for (var id : Restrictions.state(p).spells()) {
+                var spell = SpellRegistry.getSpell(id);
+                h.assertTrue(spell.requiresLearning() && spell.isLearned(p), "Taught spell is learned natively: " + id);
+            }
+        }
+        h.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void frozenTabletTakesCursium(GameTestHelper h) {
+        var inputs = new java.util.ArrayList<ItemStack>();
+        for (int i = 0; i < 9; i++) inputs.add(item("cataclysm_spellbooks:frozen_knowledge_fragment"));
+        inputs.set(4, item("cataclysm:cursium_ingot"));
+        var input = net.minecraft.world.item.crafting.CraftingInput.of(3, 3, inputs);
+        var recipe = h.getLevel()
+                .getRecipeManager()
+                .byKey(ResourceLocation.parse("cataclysm_spellbooks:frozen_tablet"))
+                .orElseThrow();
+        @SuppressWarnings("unchecked")
+        var crafting = (net.minecraft.world.item.crafting.Recipe<net.minecraft.world.item.crafting.CraftingInput>)
+                recipe.value();
+        h.assertTrue(crafting.matches(input, h.getLevel()), "Cursium Ingot sits in the middle of the tablet");
+        h.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void fragmentsDropFromTheirSources(GameTestHelper h) {
+        var server = h.getLevel().getServer();
+        long ours = server.reloadableRegistries().getKeys(Registries.LOOT_TABLE).stream()
+                .filter(id -> id.getNamespace().equals(SpellRestrictions.ID)
+                        && id.getPath().startsWith("fragments/"))
+                .count();
+        h.assertTrue(ours == 26, "Every fragment source table loads: " + ours);
+        String[][] cases = {
+            {"minecraft:chests/nether_bridge", SpellRestrictions.ID + ":forbidden_knowledge_fragment"},
+            {"cataclysm:chests/acropolis_treasure", SpellRestrictions.ID + ":depth_knowledge_fragment"},
+            {"irons_spellbooks:chests/citadel/citadel_vault", "cataclysm_spellbooks:burning_knowledge_fragment"},
+            {"cataclysm:chests/frosted_prison_treasure", "cataclysm_spellbooks:frozen_knowledge_fragment"},
+        };
+        var origin = Vec3.atCenterOf(h.absolutePos(BlockPos.ZERO));
+        for (var c : cases) {
+            var table = server.reloadableRegistries()
+                    .getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse(c[0])));
+            var fragment = item(c[1]).getItem();
+            boolean dropped = false;
+            for (int i = 0; i < 64 && !dropped; i++) {
+                var params = new LootParams.Builder(h.getLevel())
+                        .withParameter(LootContextParams.ORIGIN, origin)
+                        .create(LootContextParamSets.CHEST);
+                dropped = table.getRandomItems(params).stream().anyMatch(s -> s.is(fragment));
+            }
+            h.assertTrue(dropped, c[0] + " rolls " + c[1]);
+        }
+        h.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void manuscriptNamesTakeTheirSchoolColour(GameTestHelper h) {
+        var cases = java.util.Map.of(
+                SpellRestrictions.OCCULT_MANUSCRIPT.get(), Restrictions.OCCULT,
+                SpellRestrictions.ABYSSAL_MANUSCRIPT.get(), Restrictions.ABYSSAL);
+        cases.forEach((manuscript, school) -> {
+            var color = new ItemStack(manuscript).getHoverName().getStyle().getColor();
+            var expected =
+                    SchoolRegistry.getSchool(school).getDisplayName().getStyle().getColor();
+            h.assertTrue(color != null && color.equals(expected), "Manuscript name in school colour: " + school);
+        });
         h.succeed();
     }
 

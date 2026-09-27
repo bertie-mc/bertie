@@ -1,6 +1,8 @@
 package io.github.bertie_mc.spellrestrictions;
 
+import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -28,8 +30,17 @@ public final class ResearchManuscriptItem extends Item {
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide);
     }
 
+    /** The name takes the colour of the school it researches, which is absent when its addon is. */
+    @Override
+    public Component getName(ItemStack stack) {
+        var type = SchoolRegistry.getSchool(school);
+        if (type == null) return super.getName(stack);
+        var color = type.getDisplayName().getStyle().getColor();
+        return super.getName(stack).copy().withStyle(style -> style.withColor(color));
+    }
+
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flags) {
-        lines.add(Component.translatable("tooltip.berlordsspellrestrictions.manuscript"));
+        lines.add(Component.translatable(getDescriptionId() + "_desc").withStyle(ChatFormatting.GRAY));
     }
 }

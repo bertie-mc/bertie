@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "discerning_the_eldritch"
+    }
+  ],
+  "type": "irons_spellbooks:append_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "netherman:chests/mansion_rare_loot"
+        }
+      ]
+    }
+  ],
+  "key": "berlordsspellrestrictions:fragments/occult/cult_of_azazel_rare"
+}

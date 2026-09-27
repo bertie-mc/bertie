@@ -2,6 +2,7 @@ package io.github.bertie_mc.spellrestrictions;
 
 import io.redspace.ironsspellbooks.api.spells.SpellRarity;
 import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -40,6 +41,7 @@ public final class CraftingOrbItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> lines, TooltipFlag flags) {
         lines.add(Component.translatable(
-                "tooltip.berlordsspellrestrictions.orb", SpellRarity.values()[tier].getDisplayName()));
+                        "tooltip.berlordsspellrestrictions.orb", SpellRarity.values()[tier].getDisplayName())
+                .withStyle(ChatFormatting.GRAY));
     }
 }

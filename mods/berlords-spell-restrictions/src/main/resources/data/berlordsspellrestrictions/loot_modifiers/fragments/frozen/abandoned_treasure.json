@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm_spellbooks"
+    }
+  ],
+  "type": "irons_spellbooks:append_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:chests/abandoned_treasure"
+        }
+      ]
+    }
+  ],
+  "key": "berlordsspellrestrictions:fragments/frozen/abandoned_treasure"
+}

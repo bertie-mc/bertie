@@ -11,7 +11,8 @@
     "ScrollForgeResultSlotMixin",
     "ArcaneAnvilMenuMixin",
     "EldritchManuscriptMixin",
-    "LearnSpellPacketMixin"
+    "LearnSpellPacketMixin",
+    "CataclysmKnowledgeItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

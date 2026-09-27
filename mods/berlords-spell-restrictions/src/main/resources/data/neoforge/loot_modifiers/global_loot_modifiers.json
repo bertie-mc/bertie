@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "entries": [
+    "berlordsspellrestrictions:fragments/occult/cult_of_azazel_rare",
+    "berlordsspellrestrictions:fragments/occult/cult_of_azazel",
+    "berlordsspellrestrictions:fragments/occult/nether_fortress",
+    "berlordsspellrestrictions:fragments/occult/fortress_worship",
+    "berlordsspellrestrictions:fragments/occult/blood_cultist_hut",
+    "berlordsspellrestrictions:fragments/occult/cultist_base",
+    "berlordsspellrestrictions:fragments/occult/ascended_one",
+    "berlordsspellrestrictions:fragments/abyssal/elder_guardian",
+    "berlordsspellrestrictions:fragments/abyssal/ocean_monument",
+    "berlordsspellrestrictions:fragments/abyssal/sunken_city",
+    "berlordsspellrestrictions:fragments/abyssal/leviathan",
+    "berlordsspellrestrictions:fragments/abyssal/acropolis",
+    "berlordsspellrestrictions:fragments/abyssal/pirates",
+    "berlordsspellrestrictions:fragments/abyssal/shipwrecks",
+    "berlordsspellrestrictions:fragments/burning/ignis",
+    "berlordsspellrestrictions:fragments/burning/netherite_monstrosity",
+    "berlordsspellrestrictions:fragments/burning/citadel_vault",
+    "berlordsspellrestrictions:fragments/burning/citadel",
+    "berlordsspellrestrictions:fragments/burning/pyromancer_tower",
+    "berlordsspellrestrictions:fragments/frozen/frosted_prison",
+    "berlordsspellrestrictions:fragments/frozen/maledictus",
+    "berlordsspellrestrictions:fragments/frozen/abandoned_treasure",
+    "berlordsspellrestrictions:fragments/frozen/abandoned",
+    "berlordsspellrestrictions:fragments/frozen/ice_spider_den",
+    "berlordsspellrestrictions:fragments/frozen/impaled_icebreaker",
+    "berlordsspellrestrictions:fragments/frozen/mountain_tower"
+  ]
+}

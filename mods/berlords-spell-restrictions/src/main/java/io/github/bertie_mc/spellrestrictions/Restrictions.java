@@ -6,6 +6,8 @@ import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
 import io.redspace.ironsspellbooks.item.Scroll;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Supplier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceLocation;
@@ -74,13 +76,30 @@ public final class Restrictions {
         for (var spell : SpellRegistry.getEnabledSpells()) {
             if (spell.getSchoolType().getId().equals(school) && !knows(player, spell)) choices.add(spell);
         }
+        return learnRandom(player, manuscript, choices, "message.berlordsspellrestrictions.no_unknown_spells");
+    }
+
+    /**
+     * Teaches one unknown spell from an item's own list. Only spells that need learning count: a
+     * list may name spells anyone can already cast, and teaching one of those would waste the item.
+     */
+    public static boolean learnOneOf(
+            ServerPlayer player, ItemStack item, List<? extends Supplier<? extends AbstractSpell>> spells) {
+        var choices = new ArrayList<AbstractSpell>();
+        for (var entry : spells) {
+            var spell = entry.get();
+            if (spell.isEnabled() && spell.requiresLearning() && !knows(player, spell)) choices.add(spell);
+        }
+        return learnRandom(player, item, choices, "message.berlordsspellrestrictions.nothing_to_learn");
+    }
+
+    private static boolean learnRandom(ServerPlayer player, ItemStack item, List<AbstractSpell> choices, String none) {
         if (choices.isEmpty()) {
-            player.sendSystemMessage(Component.translatable("message.berlordsspellrestrictions.no_unknown_spells"));
+            player.sendSystemMessage(Component.translatable(none));
             return false;
         }
-        var chosen = choices.get(player.getRandom().nextInt(choices.size()));
-        discover(player, chosen, true);
-        if (!player.getAbilities().instabuild) manuscript.shrink(1);
+        discover(player, choices.get(player.getRandom().nextInt(choices.size())), true);
+        if (!player.getAbilities().instabuild) item.shrink(1);
         return true;
     }
 
