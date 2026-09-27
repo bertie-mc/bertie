@@ -452,11 +452,12 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (31)
+## Ours (32)
 
 | Mod |
 |---|
 | `armorcompletions` |
+| `berlords-better-horses` |
 | `berlords-food-system` |
 | `berlords_carving` |
 | `berlords-spell-restrictions` |
