@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (454)
+## Mods (447)
 
 | Mod |
 |---|
@@ -14,7 +14,6 @@
 | `air-jump-enchantment` |
 | `alexs-mobs` |
 | `alexs-mobs-extra-music` |
-| `alfinolib` |
 | `almanac` |
 | `amendments` |
 | `ancient-forgemastery` |
@@ -195,7 +194,6 @@
 | `giant-snowy-tree` |
 | `giant-tree-stump` |
 | `glassbreaker` |
-| `glitchcore` |
 | `gravelminer` |
 | `hammer-lib` |
 | `hand-over-your-items` |
@@ -215,7 +213,6 @@
 | `iceberg` |
 | `illager-invasion` |
 | `immersive-armors` |
-| `immersive-enchanting` |
 | `immersive-gateways` |
 | `improved-pillager-outpost` |
 | `in-control` |
@@ -229,7 +226,6 @@
 | `irons-lib` |
 | `irons-spellbooks-arcane-essence-blocks` |
 | `irons-spells-n-spellbooks` |
-| `irons-spells-n-spellbooks-restricitons` |
 | `item-borders` |
 | `item-collectors` |
 | `item-descriptions` |
@@ -356,7 +352,6 @@
 | `runiclib` |
 | `rustic-engineer` |
 | `searchables` |
-| `serene-seasons` |
 | `server-sided-portals` |
 | `simply-swords` |
 | `simply-tooltips` |
@@ -411,13 +406,11 @@
 | `twilight-treehouses` |
 | `txnilib` |
 | `typewriter-daycounter` |
-| `u-team-core` |
 | `universal-grid` |
 | `universal-sawmill` |
 | `upgraded-mobs` |
 | `uranus` |
 | `urkaz-moon-tools` |
-| `useful-railroads` |
 | `usefulmagic` |
 | `valhelsia-core` |
 | `vanillabackport` |
@@ -459,13 +452,14 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (30)
+## Ours (31)
 
 | Mod |
 |---|
 | `armorcompletions` |
 | `berlords-food-system` |
 | `berlords_carving` |
+| `berlords-spell-restrictions` |
 | `bertie-blackhole` |
 | `bertie-emi` |
 | `bertie-filters` |

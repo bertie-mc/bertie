@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/common_orb_base",
+      "rarity": 0,
+      "orbit": false
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/common_orb_orbit",
+      "rarity": 0,
+      "orbit": true
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/uncommon_orb_base",
+      "rarity": 1,
+      "orbit": false
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/uncommon_orb_orbit",
+      "rarity": 1,
+      "orbit": true
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/rare_orb_base",
+      "rarity": 2,
+      "orbit": false
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/rare_orb_orbit",
+      "rarity": 2,
+      "orbit": true
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/epic_orb_base",
+      "rarity": 3,
+      "orbit": false
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/epic_orb_orbit",
+      "rarity": 3,
+      "orbit": true
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/legendary_orb_base",
+      "rarity": 4,
+      "orbit": false
+    },
+    {
+      "type": "berlordsspellrestrictions:orb",
+      "sprite": "berlordsspellrestrictions:item/legendary_orb_orbit",
+      "rarity": 4,
+      "orbit": true
+    }
+  ]
+}

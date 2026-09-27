@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.bertie_mc.spellrestrictions.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "InventoryMixin",
+    "InventoryChangeTriggerMixin",
+    "AbstractSpellMixin",
+    "ScrollForgeMenuMixin",
+    "ScrollForgeResultSlotMixin",
+    "ArcaneAnvilMenuMixin",
+    "EldritchManuscriptMixin",
+    "LearnSpellPacketMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

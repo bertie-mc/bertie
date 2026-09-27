@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "berlordsspellrestrictions:item/uncommon_orb_base",
+    "layer1": "berlordsspellrestrictions:item/uncommon_orb_orbit"
+  }
+}

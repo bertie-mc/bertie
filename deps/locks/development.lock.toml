@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "e6bbe271c1b5f5ebac0bd2838bfd3a2793d97a90e447d6f7ed9f305b34f0df89"
+inputs-hash = "fe57fedd03fa70b77ba101b426380dabec195ef687ecab40b9e60c66c1e2c90f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -127,8 +127,8 @@ any = "modrinth:Q2OqKxDG:FjTYILOi"
 mod = "modrinth:Q2OqKxDG:FjTYILOi"
 
 [components."better-archeology"]
-any = "modrinth:zCh7omyG:rp4lPDKI"
-mod = "modrinth:zCh7omyG:rp4lPDKI"
+any = "modrinth:zCh7omyG:HiVBL8w1"
+mod = "modrinth:zCh7omyG:HiVBL8w1"
 
 [components."better-beacon-placement"]
 any = "modrinth:GOKA9KZY:EhFxx2g9"
@@ -713,10 +713,6 @@ mod = "modrinth:jSV9w0J5:9bEpNrvK"
 any = "modrinth:eE2Db4YU:B2YtQYCh"
 mod = "modrinth:eE2Db4YU:B2YtQYCh"
 
-[components."immersive-enchanting"]
-any = "curseforge:1354719:8197612"
-mod = "curseforge:1354719:8197612"
-
 [components."immersive-gateways"]
 any = "modrinth:3hZmBMYA:Et29a8lw"
 mod = "modrinth:3hZmBMYA:Et29a8lw"
@@ -756,10 +752,6 @@ mod = "modrinth:Pkj2hNRk:Amnk4kDG"
 [components."irons-spells-n-spellbooks"]
 any = "modrinth:s4OWxYQQ:AvHIYbZi"
 mod = "modrinth:s4OWxYQQ:AvHIYbZi"
-
-[components."irons-spells-n-spellbooks-restricitons"]
-any = "modrinth:Hrfqig7V:ySi6ZEae"
-mod = "modrinth:Hrfqig7V:ySi6ZEae"
 
 [components."item-borders"]
 any = "modrinth:b1fMg6sH:WjErgKWV"
@@ -1189,10 +1181,6 @@ mod = "modrinth:Sjzdj2cy:1OFYdaiQ"
 any = "modrinth:8KT9aVZC:sSsuuNws"
 mod = "modrinth:8KT9aVZC:sSsuuNws"
 
-[components."serene-seasons"]
-any = "modrinth:e0bNACJD:SPj5bJoM"
-mod = "modrinth:e0bNACJD:SPj5bJoM"
-
 [components."simply-swords"]
 any = "modrinth:bK3Ubu9p:eREhvVpQ"
 mod = "modrinth:bK3Ubu9p:eREhvVpQ"
@@ -1378,10 +1366,6 @@ any = "modrinth:iaFWBDP2:w8D6achd"
 [components."urkaz-moon-tools"]
 any = "modrinth:1sxtqgoT:lea7gSoE"
 mod = "modrinth:1sxtqgoT:lea7gSoE"
-
-[components."useful-railroads"]
-any = "modrinth:S0xj5NHG:5cRpZ5wv"
-mod = "modrinth:S0xj5NHG:5cRpZ5wv"
 
 [components."usefulmagic"]
 any = "modrinth:T5YpEgSg:tkuwx9YJ"
@@ -1615,27 +1599,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:1354719:8197612"]
-name = "immersive-enchanting"
-component = "immersive-enchanting"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "immersive-enchanting-1354719"
-version = "8197612"
-filename = "immersiveenchanting-6.0.0-neoforge-1.21.1.jar"
-project-id = 1354719
-slug = "immersive-enchanting"
-file-id = 8197612
-provides = ["immersiveenchanting"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:1554698:8196186", "mod-id" = "alfinolib", "version-range" = "[1.1.7,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:1355698:7077089"]
 name = "compact-crafting-updated"
 component = "compact-crafting-updated"
@@ -1677,26 +1640,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:9hx3AbJM:MxbfrOEv", "namespace" = "easymagic", "reason" = "ships data/easymagic/", "origin" = "archive-data" }]
-
-[artifacts."curseforge:1554698:8196186"]
-name = "alfinolib"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "alfinolib-1554698"
-version = "8196186"
-filename = "alfinolib-1554698-8196186.jar"
-project-id = 1554698
-slug = "alfinolib"
-file-id = 8196186
-provides = ["alfinolib"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."curseforge:224218:7621553"]
 name = "compact-machines"
@@ -4349,26 +4292,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:Hrfqig7V:ySi6ZEae"]
-name = "irons-spells-n-spellbooks-restricitons"
-component = "irons-spells-n-spellbooks-restricitons"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "Hrfqig7V"
-version = "ySi6ZEae"
-filename = "irons_restrictions-1.21.1-5.1.1.jar"
-project-id = "Hrfqig7V"
-version-id = "ySi6ZEae"
-provides = ["irons_restrictions"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:s4OWxYQQ:AvHIYbZi", "mod-id" = "irons_spellbooks", "version-range" = "1.21.1-3.14.0", "side" = "both", "origin" = "archive" }]
-optional = [{ "missing" = "alshanex_familiars", "mod-id" = "alshanex_familiars", "version-range" = "1.21.1_v2.0_HotFix", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:3FEg0A8D:5NYz9vZy", "mod-id" = "cataclysm_spellbooks", "version-range" = "1.1.7-1.21", "side" = "both", "origin" = "archive" }, { "missing" = "iss_magicfromtheeast", "mod-id" = "iss_magicfromtheeast", "version-range" = "1.1.7-1.21", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:HsdNFinx:cttRekq9"]
 name = "valhelsia-core"
 component = "valhelsia-core"
@@ -5735,26 +5658,6 @@ required = [{ "artifact" = "maven:dev.architectury:architectury-neoforge:13.0.8"
 optional = []
 incompatible = []
 bundled = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.4.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:9uQhkMe5:cjdV1zT2", "mod-id" = "liblib_mosaic", "version-range" = "[5.0.0,)", "side" = "both", "origin" = "archive" }]
-integrations = []
-
-[artifacts."modrinth:S0xj5NHG:5cRpZ5wv"]
-name = "useful-railroads"
-component = "useful-railroads"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "S0xj5NHG"
-version = "5cRpZ5wv"
-filename = "useful_railroads-neoforge-1.21.1-1.6.0.61.jar"
-project-id = "S0xj5NHG"
-version-id = "5cRpZ5wv"
-provides = ["usefulrailroads"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:g2FGQs4R:A0Rx4Pvw", "mod-id" = "uteamcore", "version-range" = "[5.6.2.354,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
 integrations = []
 
 [artifacts."modrinth:SKI34J7B:CgDQ0u0Q"]
@@ -7345,26 +7248,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:e0bNACJD:SPj5bJoM"]
-name = "serene-seasons"
-component = "serene-seasons"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "e0bNACJD"
-version = "SPj5bJoM"
-filename = "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
-project-id = "e0bNACJD"
-version-id = "SPj5bJoM"
-provides = ["sereneseasons"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:s3dmwKy5:S2TfWrZR", "mod-id" = "glitchcore", "version-range" = "[2.1.0.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:e9V6wFcR:RTRYPIJp"]
 name = "expanded-delight"
 component = "expanded-delight"
@@ -7517,25 +7400,6 @@ filename = "Searchables-neoforge-1.21.1-1.0.2.jar"
 project-id = "fuuu3xnx"
 version-id = "iEE85X0w"
 provides = ["searchables"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:g2FGQs4R:A0Rx4Pvw"]
-name = "u-team-core"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "g2FGQs4R"
-version = "A0Rx4Pvw"
-filename = "u_team_core-neoforge-1.21.1-5.6.2.384.jar"
-project-id = "g2FGQs4R"
-version-id = "A0Rx4Pvw"
-provides = ["uteamcore"]
 bundled-provides = []
 required = []
 optional = []
@@ -9229,25 +9093,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:s3dmwKy5:S2TfWrZR"]
-name = "glitchcore"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "s3dmwKy5"
-version = "S2TfWrZR"
-filename = "GlitchCore-neoforge-1.21.1-2.1.0.2.jar"
-project-id = "s3dmwKy5"
-version-id = "S2TfWrZR"
-provides = ["glitchcore"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:s4OWxYQQ:AvHIYbZi"]
 name = "irons-spells-n-spellbooks"
 component = "irons-spells-n-spellbooks"
@@ -10284,7 +10129,7 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:zCh7omyG:rp4lPDKI"]
+[artifacts."modrinth:zCh7omyG:HiVBL8w1"]
 name = "better-archeology"
 component = "better-archeology"
 provider = "modrinth"
@@ -10292,10 +10137,10 @@ kind = "mod"
 side = "both"
 group = "maven.modrinth"
 module = "zCh7omyG"
-version = "rp4lPDKI"
-filename = "betterarcheology-neoforge-1.21.1-1.3.4.jar"
+version = "HiVBL8w1"
+filename = "betterarcheology-neoforge-1.21.1-1.3.8.jar"
 project-id = "zCh7omyG"
-version-id = "rp4lPDKI"
+version-id = "HiVBL8w1"
 provides = ["betterarcheology"]
 bundled-provides = []
 required = [{ "artifact" = "maven:dev.architectury:architectury-neoforge:13.0.8", "mod-id" = "architectury", "version-range" = "[13.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:M1953qlQ:lSbyRD6v", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.3,)", "side" = "both", "origin" = "archive" }]

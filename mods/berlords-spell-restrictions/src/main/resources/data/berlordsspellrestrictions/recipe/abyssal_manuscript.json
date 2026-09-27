@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "FCF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "berlordsspellrestrictions:depth_knowledge_fragment"
+    },
+    "C": {
+      "item": "cataclysm:crystallized_coral"
+    }
+  },
+  "result": {
+    "id": "berlordsspellrestrictions:abyssal_manuscript",
+    "count": 1
+  }
+}

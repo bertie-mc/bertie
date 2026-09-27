@@ -87,6 +87,7 @@ include(
     ":mods:bertie-weapons",
     ":mods:bush-tweaks",
     ":mods:berlords-carving",
+    ":mods:berlords-spell-restrictions",
     ":mods:cataclysm-fortresses",
     ":mods:config-migrations",
     ":mods:coo-particles-fix",

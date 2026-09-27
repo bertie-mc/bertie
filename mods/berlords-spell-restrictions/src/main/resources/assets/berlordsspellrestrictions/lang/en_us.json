@@ -1,0 +1,22 @@
+{
+  "itemGroup.berlordsspellrestrictions": "Berlord's Spell Restrictions",
+  "item.berlordsspellrestrictions.occult_manuscript": "Occult Manuscript",
+  "item.berlordsspellrestrictions.abyssal_manuscript": "Abyssal Manuscript",
+  "item.berlordsspellrestrictions.forbidden_knowledge_fragment": "Forbidden Knowledge Fragment",
+  "item.berlordsspellrestrictions.depth_knowledge_fragment": "Depth Knowledge Fragment",
+  "item.berlordsspellrestrictions.common_crafting_orb": "Common Crafting Orb",
+  "item.berlordsspellrestrictions.uncommon_crafting_orb": "Uncommon Crafting Orb",
+  "item.berlordsspellrestrictions.rare_crafting_orb": "Rare Crafting Orb",
+  "item.berlordsspellrestrictions.epic_crafting_orb": "Epic Crafting Orb",
+  "item.berlordsspellrestrictions.legendary_crafting_orb": "Legendary Crafting Orb",
+  "message.berlordsspellrestrictions.learned": "Spell unlocked: %s",
+  "message.berlordsspellrestrictions.no_unknown_spells": "No unknown spells remain in this school.",
+  "message.berlordsspellrestrictions.tier_already_known": "This crafting rarity is already unlocked.",
+  "message.berlordsspellrestrictions.tier_unlocked": "Crafting unlocked through %s.",
+  "tooltip.berlordsspellrestrictions.orb": "Use to permanently unlock %s and lower crafting rarities.",
+  "tooltip.berlordsspellrestrictions.manuscript": "Use to unlock one random unknown spell from this school.",
+  "tooltip.berlordsspellrestrictions.discovered": "Spell crafting discovered",
+  "tooltip.berlordsspellrestrictions.undiscovered": "Obtain this scroll to discover its crafting",
+  "tooltip.berlordsspellrestrictions.rarity_locked": "Crafting/upgrading requires %s crafting",
+  "item.irons_spellbooks.eldritch_manuscript_desc": "Use to unlock one random unknown Eldritch spell."
+}

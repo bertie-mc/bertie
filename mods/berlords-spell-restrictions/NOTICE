@@ -1,0 +1,13 @@
+The MIT licence covers this addon's original code.
+
+Iron's Spells 'n Spellbooks is authored by Iron431, Lab3 and its credited artists.
+Its code and original assets remain in the required upstream mod, licensed All
+Rights Reserved: https://github.com/iron431/irons-spells-n-spellbooks/blob/1.21/LICENSE.md
+
+Orb sprites are generated in the client texture atlas from the installed mod's
+upgrade_orb_base and upgrade_orb_swirl resources. No copies of those upstream
+textures or upstream source code are bundled.
+
+The four approved manuscript and fragment sprites were generated specifically
+for this addon with Iron's parchment items as visual references. These artwork
+variants are excluded from the MIT code licence; all rights reserved.

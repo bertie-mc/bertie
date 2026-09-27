@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "irons_spellbooks:legendary_ink"
+    },
+    "C": {
+      "item": "berlordsspellrestrictions:epic_crafting_orb"
+    }
+  },
+  "result": {
+    "id": "berlordsspellrestrictions:legendary_crafting_orb",
+    "count": 1
+  }
+}

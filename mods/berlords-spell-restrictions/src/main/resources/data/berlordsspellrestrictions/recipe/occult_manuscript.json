@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "discerning_the_eldritch"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "FCF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "berlordsspellrestrictions:forbidden_knowledge_fragment"
+    },
+    "C": {
+      "item": "discerning_the_eldritch:shard_of_malice"
+    }
+  },
+  "result": {
+    "id": "berlordsspellrestrictions:occult_manuscript",
+    "count": 1
+  }
+}

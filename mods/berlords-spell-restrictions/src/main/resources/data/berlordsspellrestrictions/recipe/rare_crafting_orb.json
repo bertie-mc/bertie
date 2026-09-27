@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "irons_spellbooks:rare_ink"
+    },
+    "C": {
+      "item": "berlordsspellrestrictions:uncommon_crafting_orb"
+    }
+  },
+  "result": {
+    "id": "berlordsspellrestrictions:rare_crafting_orb",
+    "count": 1
+  }
+}
