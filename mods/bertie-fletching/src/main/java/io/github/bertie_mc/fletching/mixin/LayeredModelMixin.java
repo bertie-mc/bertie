@@ -4,6 +4,7 @@ import com.fletchery.mod.client.render.LayeredArrowInventoryModelCache;
 import com.fletchery.mod.client.render.LayeredBakedModelFactory;
 import com.fletchery.mod.client.render.LayeredBowModelCache;
 import com.fletchery.mod.client.render.LayeredCrossbowArrowModelCache;
+import io.github.bertie_mc.fletching.CoatingColor;
 import io.github.bertie_mc.fletching.client.CoatingModels;
 import net.minecraft.client.resources.model.BakedModel;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,8 +25,8 @@ public abstract class LayeredModelMixin {
             String effect,
             String potion,
             CallbackInfoReturnable<BakedModel> cir) {
-        if (potion == null || !potion.matches("#[0-9a-fA-F]{1,6}")) return;
-        int color = Integer.parseInt(potion.substring(1), 16);
+        if (!CoatingColor.isEncoded(potion)) return;
+        int color = CoatingColor.decode(potion).orElse(0xffffff);
         BakedModel base =
                 switch (type) {
                     case "ARROW" -> LayeredArrowInventoryModelCache.getOrBuild(feather, shaft, tip, effect, "");

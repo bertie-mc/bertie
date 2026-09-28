@@ -85,9 +85,8 @@ public final class ArrowRecipe {
             tag.putBoolean("isPotionEffect", true);
             // Upstream forwards potion visuals only behind this legacy flag. Coating duration is handled separately.
             tag.putBoolean("isLingeringPotion", true);
-            tag.putString(
-                    "potionName", "#" + Integer.toHexString(tank.contents().getColor()));
-            tag.putInt("bertiePotionColor", tank.contents().getColor());
+            tag.putString("potionName", CoatingColor.encode(tank.contents().getColor()));
+            tag.putInt("bertiePotionColor", tank.contents().getColor() & 0xffffff);
             tag.put(
                     "bertiePotionContents",
                     net.minecraft.world.item.alchemy.PotionContents.CODEC

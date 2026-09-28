@@ -41,7 +41,7 @@ class CoatingModelsTest {
     void coatingResourcesExistForEveryRenderSurface() {
         for (String type : CoatingModels.TYPES) {
             assertNotNull(getClass().getResource("/assets/bertiefletching/models/item/coating/" + type + ".json"));
-            assertNotNull(getClass().getResource("/assets/bertiefletching/textures/coating/" + type + ".png"));
+            assertNotNull(getClass().getResource("/assets/bertiefletching/textures/item/coating/" + type + ".png"));
         }
     }
 

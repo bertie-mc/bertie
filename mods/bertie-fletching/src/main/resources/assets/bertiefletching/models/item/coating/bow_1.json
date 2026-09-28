@@ -1,1 +1,1 @@
-{"parent": "minecraft:item/generated", "textures": {"layer0": "bertiefletching:coating/bow_1"}}
+{"parent": "minecraft:item/generated", "textures": {"layer0": "bertiefletching:item/coating/bow_1"}}

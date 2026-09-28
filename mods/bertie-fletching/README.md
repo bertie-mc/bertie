@@ -10,6 +10,6 @@ The tank automatically coats each four-arrow batch until empty. Shift-crafting s
 
 Coatings use vanilla tipped-arrow durations and preserve effect strength. Instant effects apply on impact. Tanks persist with the world and are emptied when the table is destroyed. Existing table ingredients are retained; old potions in the effect slot can be shift-clicked into the tank.
 
-Build with `gradle :mods:bertie-fletching:build`. Run `:mods:bertie-fletching:test` and `:mods:bertie-fletching:runGameTests` for storage, crafting transaction, persistence and projectile coverage.
+Build with `gradle :mods:bertie-fletching:build`. Run `:mods:bertie-fletching:test` and `:mods:bertie-fletching:runGameTests` for storage, crafting transaction, persistence and projectile coverage. `:mods:bertie-fletching:runClientTests` starts an isolated client and exercises real table gestures, bottle returns, tank capacity, combined arrow rendering and resource reload. It also covers alpha-channel potion colors and arrows saved by version 0.1.0.
 
 Original code is released under Unlicense. The screen and coating masks derive from PriestDiO's MIT-licensed Fletchery Expanded; see [NOTICE](NOTICE).
