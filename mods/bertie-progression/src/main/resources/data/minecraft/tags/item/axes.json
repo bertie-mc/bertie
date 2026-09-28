@@ -72,10 +72,6 @@
       "required": false
     },
     {
-      "id": "usefulmagic:magic_axe",
-      "required": false
-    },
-    {
       "id": "antarchy:ultimate_axe",
       "required": false
     },

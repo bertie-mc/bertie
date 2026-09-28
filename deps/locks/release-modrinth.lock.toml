@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "1eddcf0373fc7f6e3c47b479121ed6b6df83efa32e50339a9664f0408fffe7c0"
+inputs-hash = "6fd54128780bfb13e94f79f4fc3b7ae993637741367e01fde0431880b2a25310"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -292,10 +292,6 @@ mod = "modrinth:xv94TkTM:FaNppCJJ"
 [components."convenient-effects"]
 any = "modrinth:BEVhblTh:FpdaIV35"
 mod = "modrinth:BEVhblTh:FpdaIV35"
-
-[components."cooparticles-api"]
-any = "modrinth:poJQVcIe:2fPzW7KM"
-mod = "modrinth:poJQVcIe:2fPzW7KM"
 
 [components."cosmetic-armor-reworked-forked"]
 any = "modrinth:6cpT8CUC:U6kExSSz"
@@ -1375,10 +1371,6 @@ any = "modrinth:iaFWBDP2:w8D6achd"
 any = "modrinth:1sxtqgoT:lea7gSoE"
 mod = "modrinth:1sxtqgoT:lea7gSoE"
 
-[components."usefulmagic"]
-any = "modrinth:T5YpEgSg:tkuwx9YJ"
-mod = "modrinth:T5YpEgSg:tkuwx9YJ"
-
 [components."valhelsia-core"]
 any = "modrinth:HsdNFinx:cttRekq9"
 mod = "modrinth:HsdNFinx:cttRekq9"
@@ -1422,10 +1414,6 @@ mod = "modrinth:8DfbfASn:XIRJSFQ0"
 [components."when-dungeons-arise-seven-seas"]
 any = "modrinth:ZsrrjDbP:erk04BGa"
 mod = "modrinth:ZsrrjDbP:erk04BGa"
-
-[components."wings-of-fire"]
-any = "modrinth:SZUNJJPJ:Dcq65PMy"
-mod = "modrinth:SZUNJJPJ:Dcq65PMy"
 
 [components."wither-spawn-animation"]
 any = "modrinth:Vr6UqBIT:i70oR8c3"
@@ -5949,26 +5937,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:SZUNJJPJ:Dcq65PMy"]
-name = "wings-of-fire"
-component = "wings-of-fire"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "SZUNJJPJ"
-version = "Dcq65PMy"
-filename = "Wings Of Fire V1.0 - NeoForge 1.21.1.jar"
-project-id = "SZUNJJPJ"
-version-id = "Dcq65PMy"
-provides = ["wings_of_fire"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:SaCpeal4:3kpPjcTc"]
 name = "comforts"
 component = "comforts"
@@ -6043,26 +6011,6 @@ version-id = "yn1ptBI4"
 provides = ["stellaris_stellarview_compatibility"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:ItTQpuBn:3OXCvg6r", "mod-id" = "stellaris", "version-range" = "[1.4.20,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:gJ5LPGfO:HbYYFasr", "mod-id" = "stellarview_mixin_renderer", "version-range" = "[2.0.1,)", "side" = "client", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:T5YpEgSg:tkuwx9YJ"]
-name = "usefulmagic"
-component = "usefulmagic"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "T5YpEgSg"
-version = "tkuwx9YJ"
-filename = "UsefulMagic-NeoForge-1.21.1-3.1.1.jar"
-project-id = "T5YpEgSg"
-version-id = "tkuwx9YJ"
-provides = ["usefulmagic"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.9.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:poJQVcIe:2fPzW7KM", "mod-id" = "cooparticlesapi", "version-range" = "[2.5.5.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:8BmcQJ2H:gFmrC8Ru", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -9222,26 +9170,6 @@ version-id = "Vw9DzVIJ"
 provides = ["lava_walker"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:poJQVcIe:2fPzW7KM"]
-name = "cooparticlesapi"
-component = "cooparticles-api"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "poJQVcIe"
-version = "2fPzW7KM"
-filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"
-project-id = "poJQVcIe"
-version-id = "2fPzW7KM"
-provides = ["cooparticlesapi"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:ordsPcFz:NrSebcsG", "mod-id" = "kotlinforforge", "version-range" = "[5.7.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

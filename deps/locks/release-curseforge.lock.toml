@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "cb5185342358b96b1eba58007b1518e9b94dcf5a4f3d0f198a174361d17ccac3"
+inputs-hash = "11c08b0e1871c290097d6eb3075aeafef7a9908061d222cec9fa35652e72aa4f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -292,10 +292,6 @@ mod = "curseforge:250398:6368976"
 [components."convenient-effects"]
 any = "curseforge:1259240:7775661"
 mod = "curseforge:1259240:7775661"
-
-[components."cooparticles-api"]
-any = "modrinth:poJQVcIe:2fPzW7KM"
-mod = "modrinth:poJQVcIe:2fPzW7KM"
 
 [components."cosmetic-armor-reworked-forked"]
 any = "curseforge:1434118:7685857"
@@ -1375,10 +1371,6 @@ any = "modrinth:iaFWBDP2:w8D6achd"
 any = "curseforge:362825:7951944"
 mod = "curseforge:362825:7951944"
 
-[components."usefulmagic"]
-any = "modrinth:T5YpEgSg:tkuwx9YJ"
-mod = "modrinth:T5YpEgSg:tkuwx9YJ"
-
 [components."valhelsia-core"]
 any = "curseforge:416935:5847440"
 mod = "curseforge:416935:5847440"
@@ -1422,10 +1414,6 @@ mod = "curseforge:442508:7150870"
 [components."when-dungeons-arise-seven-seas"]
 any = "curseforge:953637:7142896"
 mod = "curseforge:953637:7142896"
-
-[components."wings-of-fire"]
-any = "curseforge:1419633:7413992"
-mod = "curseforge:1419633:7413992"
 
 [components."wither-spawn-animation"]
 any = "curseforge:1084564:7638136"
@@ -4101,27 +4089,6 @@ provides = ["alexsmobs"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:XjY0RcQj:mIylVpkN", "mod-id" = "citadel", "version-range" = "[2.6.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1419633:7413992"]
-name = "wings-of-fire"
-component = "wings-of-fire"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "wings-of-fire-1419633"
-version = "7413992"
-filename = "Wings Of Fire V1.0 - NeoForge 1.21.1.jar"
-project-id = 1419633
-slug = "wings-of-fire"
-file-id = 7413992
-provides = ["wings_of_fire"]
-bundled-provides = []
-required = []
-optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -9890,26 +9857,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:T5YpEgSg:tkuwx9YJ"]
-name = "usefulmagic"
-component = "usefulmagic"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "T5YpEgSg"
-version = "tkuwx9YJ"
-filename = "UsefulMagic-NeoForge-1.21.1-3.1.1.jar"
-project-id = "T5YpEgSg"
-version-id = "tkuwx9YJ"
-provides = ["usefulmagic"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:351264:7471280", "mod-id" = "kotlinforforge", "version-range" = "[5.9.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:poJQVcIe:2fPzW7KM", "mod-id" = "cooparticlesapi", "version-range" = "[2.5.5.3,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:Ua7DFN59:ZB22DE9q"]
 name = "yungs-api"
 provider = "modrinth"
@@ -10525,26 +10472,6 @@ version-id = "yd8FKCmx"
 provides = ["jade"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:poJQVcIe:2fPzW7KM"]
-name = "cooparticlesapi"
-component = "cooparticles-api"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "poJQVcIe"
-version = "2fPzW7KM"
-filename = "CooParticlesAPI-NeoForge-1.21.1-2.5.5.3.jar"
-project-id = "poJQVcIe"
-version-id = "2fPzW7KM"
-provides = ["cooparticlesapi"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:351264:7471280", "mod-id" = "kotlinforforge", "version-range" = "[5.7.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

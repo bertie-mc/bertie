@@ -170,30 +170,6 @@
     },
     "#quark:pickarangs",
     {
-      "id": "wings_of_fire:tempered_gilded_phoenixlantern",
-      "required": false
-    },
-    {
-      "id": "wings_of_fire:tempered_dark_phoenixlantern",
-      "required": false
-    },
-    {
-      "id": "wings_of_fire:tempered_nature_phoenix_lantern",
-      "required": false
-    },
-    {
-      "id": "wings_of_fire:tempered_red_phoenix_lantern",
-      "required": false
-    },
-    {
-      "id": "wings_of_fire:tempered_wind_phoenix_lantern",
-      "required": false
-    },
-    {
-      "id": "wings_of_fire:tempered_fire_phoenix_lantern",
-      "required": false
-    },
-    {
       "id": "alexsmobs:roadrunner_boots",
       "required": false
     },

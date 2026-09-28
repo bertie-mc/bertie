@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (447)
+## Mods (445)
 
 | Mod |
 |---|
@@ -91,7 +91,6 @@
 | `complementary-reimagined` |
 | `convenient-effects` |
 | `controlling` |
-| `cooparticlesapi` |
 | `corgilib` |
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |
@@ -177,6 +176,7 @@
 | `ferrite-core` |
 | `feur-extension-desert` |
 | `fishingoverhaul` |
+| `fletchery-expanded` |
 | `forbidden-arcanus` |
 | `forgified-fabric-api` |
 | `fragmentum` |
@@ -411,7 +411,6 @@
 | `upgraded-mobs` |
 | `uranus` |
 | `urkaz-moon-tools` |
-| `usefulmagic` |
 | `valhelsia-core` |
 | `vanillabackport` |
 | `vanity-core` |
@@ -424,7 +423,6 @@
 | `whats-that-slot` |
 | `when-dungeons-arise` |
 | `when-dungeons-arise-seven-seas` |
-| `wings-of-fire` |
 | `wither-spawn-animation` |
 | `withering-heights` |
 | `wits` |
@@ -452,7 +450,7 @@
 | `ziplines-rezipped` |
 | `zombie-awareness` |
 
-## Ours (32)
+## Ours (33)
 
 | Mod |
 |---|
@@ -484,10 +482,11 @@
 | `primitive-refined` |
 | `rustic-engineer-fix` |
 | `screenshot-copy` |
-| `cooparticlesfix` |
 | `voidfog` |
 | `withered-hearts` |
 | `withering-waver` |
+| `bertie-fletching` |
+| `mekanism-covers-fix` |
 
 ## Deconstruct (19)
 
