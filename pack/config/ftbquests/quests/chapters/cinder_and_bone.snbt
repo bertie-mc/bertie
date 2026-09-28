@@ -1252,8 +1252,8 @@
 				item: { count: 1, id: "magitech:mana_potion_flask" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.5d
+			x: 10.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1268,11 +1268,11 @@
 				item: { count: 1, id: "elemental_metals:arcane_infused_netherite_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["6B00000000000068"]
+			dependencies: ["6B00000000000067"]
 			id: "6B00000000000069"
 			rewards: [{
 				id: "6B00000002000069"
@@ -1284,11 +1284,11 @@
 				item: { count: 1, id: "elemental_metals:soul_infused_netherite_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["6B00000000000069"]
+			dependencies: ["6B00000000000067"]
 			id: "6B0000000000006A"
 			rewards: [{
 				id: "6B0000000200006A"
@@ -1300,7 +1300,7 @@
 				item: { count: 1, id: "elemental_metals:healing_infused_netherite_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.0d
 			y: 6.0d
 		}
 		{
@@ -1320,7 +1320,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["6B0000000000006B"]
+			dependencies: ["6B00000000000067"]
 			id: "6B0000000000006C"
 			rewards: [{
 				id: "6B0000000200006C"
@@ -1336,7 +1336,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["6B0000000000006C"]
+			dependencies: ["6B00000000000067"]
 			id: "6B0000000000006D"
 			rewards: [{
 				id: "6B0000000200006D"
@@ -1366,6 +1366,25 @@
 			}]
 			x: 13.5d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6B00000000000062"
+				"6B0000000000004F"
+			]
+			id: "6B0000000000006F"
+			rewards: [{
+				id: "6B0000000200006F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100006F"
+				item: { count: 1, id: "rottencreatures:corrupted_wart" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
 		}
 	]
 }

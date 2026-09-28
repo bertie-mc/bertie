@@ -1385,6 +1385,7 @@
 			y: 15d
 		}
 		{
+			dependencies: ["7B00000000000046"]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -1450,8 +1451,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -6.0d
+			x: -4.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["7B000000000002C3"]
@@ -3062,8 +3063,8 @@
 					type: "item"
 				}
 			]
-			x: -4d
-			y: 19d
+			x: -3.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["7B00000000000044"]
@@ -13549,6 +13550,646 @@
 			}]
 			x: -40d
 			y: 25d
+		}
+		{
+			id: "7B0000000000030D"
+			rewards: [{
+				id: "7B0000000200030D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100030D"
+				item: { count: 1, id: "minecraft:fletching_table" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			id: "7B0000000000030E"
+			rewards: [{
+				id: "7B0000000200030E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100030E"
+				item: { count: 1, id: "minecraft:feather" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000030F"
+			rewards: [{
+				id: "7B0000000200030F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100030F"
+				item: { count: 1, id: "minecraft:phantom_membrane" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000310"
+			rewards: [{
+				id: "7B00000002000310"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000310"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000311"
+			rewards: [{
+				id: "7B00000002000311"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000311"
+				item: { count: 1, id: "minecraft:stick" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000312"
+			rewards: [{
+				id: "7B00000002000312"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000312"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000313"
+			rewards: [{
+				id: "7B00000002000313"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000313"
+				item: { count: 1, id: "minecraft:breeze_rod" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000314"
+			rewards: [{
+				id: "7B00000002000314"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000314"
+				item: { count: 1, id: "minecraft:bone" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000315"
+			rewards: [{
+				id: "7B00000002000315"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000315"
+				item: { count: 1, id: "minecraft:end_rod" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000316"
+			rewards: [{
+				id: "7B00000002000316"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000316"
+				item: { count: 1, id: "minecraft:fishing_rod" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000317"
+			rewards: [{
+				id: "7B00000002000317"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000317"
+				item: { count: 1, id: "minecraft:chain" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000318"
+			rewards: [{
+				id: "7B00000002000318"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000318"
+				item: { count: 1, id: "minecraft:flint" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000319"
+			rewards: [{
+				id: "7B00000002000319"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000319"
+				item: { count: 1, id: "minecraft:amethyst_shard" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031A"
+			rewards: [{
+				id: "7B0000000200031A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031A"
+				item: { count: 1, id: "minecraft:prismarine_shard" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031B"
+			rewards: [{
+				id: "7B0000000200031B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031B"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031C"
+			rewards: [{
+				id: "7B0000000200031C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031C"
+				item: { count: 1, id: "minecraft:quartz" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031D"
+			rewards: [{
+				id: "7B0000000200031D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031D"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031E"
+			rewards: [{
+				id: "7B0000000200031E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031E"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000031F"
+			rewards: [{
+				id: "7B0000000200031F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031F"
+				item: { count: 1, id: "minecraft:shulker_shell" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000320"
+			rewards: [{
+				id: "7B00000002000320"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000320"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000321"
+			rewards: [{
+				id: "7B00000002000321"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000321"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000322"
+			rewards: [{
+				id: "7B00000002000322"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000322"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000323"
+			rewards: [{
+				id: "7B00000002000323"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000323"
+				item: { count: 1, id: "minecraft:heavy_core" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000324"
+			rewards: [{
+				id: "7B00000002000324"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000324"
+				item: { count: 1, id: "minecraft:gunpowder" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000325"
+			rewards: [{
+				id: "7B00000002000325"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000325"
+				item: { count: 1, id: "minecraft:glowstone_dust" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000326"
+			rewards: [{
+				id: "7B00000002000326"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000326"
+				item: { count: 1, id: "minecraft:slime_ball" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000327"
+			rewards: [{
+				id: "7B00000002000327"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000327"
+				item: { count: 1, id: "minecraft:honeycomb" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000328"
+			rewards: [{
+				id: "7B00000002000328"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000328"
+				item: { count: 1, id: "minecraft:ender_pearl" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000329"
+			rewards: [{
+				id: "7B00000002000329"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000329"
+				item: { count: 1, id: "minecraft:blaze_powder" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032A"
+			rewards: [{
+				id: "7B0000000200032A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032A"
+				item: { count: 1, id: "minecraft:turtle_helmet" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032B"
+			rewards: [{
+				id: "7B0000000200032B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032B"
+				item: { count: 1, id: "minecraft:dragon_breath" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032C"
+			rewards: [{
+				id: "7B0000000200032C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032C"
+				item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032D"
+			rewards: [{
+				id: "7B0000000200032D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032D"
+				item: { count: 1, id: "minecraft:wind_charge" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032E"
+			rewards: [{
+				id: "7B0000000200032E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032E"
+				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B0000000000032F"
+			rewards: [{
+				id: "7B0000000200032F"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100032F"
+				item: { count: 1, id: "minecraft:torch" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000330"
+			rewards: [{
+				id: "7B00000002000330"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000330"
+				item: { count: 1, id: "minecraft:fire_charge" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000331"
+			rewards: [{
+				id: "7B00000002000331"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000331"
+				item: { count: 1, id: "minecraft:firework_star" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
+			id: "7B00000000000332"
+			rewards: [{
+				id: "7B00000002000332"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000332"
+				item: { count: 1, id: "minecraft:firework_rocket" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: -3.0d
 		}
 	]
 }

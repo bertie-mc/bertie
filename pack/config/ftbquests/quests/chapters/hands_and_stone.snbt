@@ -1732,7 +1732,7 @@
 				item: { count: 1, id: "berlordscarving:iron_big_slate" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 7.5d
 			y: 6.5d
 		}
 		{
@@ -1748,7 +1748,7 @@
 				item: { count: 1, id: "betterhorses:iron_horseshoes" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 9.0d
 			y: 6.5d
 		}
 		{
@@ -1780,14 +1780,11 @@
 				item: { count: 1, id: "berlordscarving:golden_big_slate" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 8.0d
+			x: 12.0d
+			y: 6.5d
 		}
 		{
-			dependencies: [
-				"1B00000000000057"
-				"1B00000000000055"
-			]
+			dependencies: ["1B00000000000057"]
 			id: "1B00000000000058"
 			rewards: [{
 				id: "1B00000002000058"
@@ -1799,8 +1796,8 @@
 				item: { count: 1, id: "betterhorses:gold_horseshoes" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 9.5d
+			x: 10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1B0000000000001B"]

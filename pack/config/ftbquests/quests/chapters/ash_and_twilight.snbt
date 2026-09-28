@@ -916,7 +916,7 @@
 				item: { count: 1, id: "cognition:cognitive_flux" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -10.5d
 			y: 4.5d
 		}
 		{
@@ -935,7 +935,7 @@
 				item: { count: 1, id: "cognition:cognitive_amalgam" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 4.5d
 		}
 		{
@@ -954,7 +954,7 @@
 				item: { count: 1, id: "cognition:cognitive_alloy" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.5d
 			y: 4.5d
 		}
 		{
@@ -973,7 +973,7 @@
 				item: { count: 1, id: "cognition:cognitive_crystal" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -992,7 +992,7 @@
 				item: { count: 1, id: "cognition:astute_assembly" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 4.5d
 		}
 		{
@@ -1011,7 +1011,7 @@
 				item: { count: 1, id: "primitiverefined:soulstained_shaft" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
@@ -1030,7 +1030,7 @@
 				item: { count: 1, id: "primitiverefined:obsidiansteel_cogwheel_soulstained" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -1049,7 +1049,7 @@
 				item: { count: 1, id: "primitiverefined:p_grid" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -1068,7 +1068,7 @@
 				item: { count: 1, id: "primitiverefined:external_reader" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -1088,7 +1088,7 @@
 				item: { count: 1, id: "primitiverefined:p_controller" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -1110,7 +1110,7 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -1132,7 +1132,7 @@
 				item: { count: 1, id: "primitiverefined:arcanetic_gearbox_vertical" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -1151,7 +1151,7 @@
 				item: { count: 1, id: "create:sturdy_sheet" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.5d
 			y: 7.5d
 		}
 		{
@@ -1170,7 +1170,7 @@
 				item: { count: 1, id: "primitiverefined:p_crafting_grid" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 7.5d
 		}
 		{
@@ -1208,7 +1208,7 @@
 				item: { count: 1, id: "twilightforest:exanimate_essence" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -1306,7 +1306,7 @@
 				item: { count: 1, id: "cognition:primordial_assembly" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
@@ -1351,7 +1351,7 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
+			x: -9.0d
 			y: 6.0d
 		}
 		{
@@ -1370,7 +1370,7 @@
 				item: { count: 1, id: "exposure:album" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 9.0d
 		}
 		{
@@ -1401,7 +1401,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -10.5d
 			y: 6.0d
 		}
 		{
@@ -1432,7 +1432,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -10.5d
 			y: 7.5d
 		}
 		{
@@ -1473,7 +1473,7 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
+			x: -9.0d
 			y: 7.5d
 		}
 		{
@@ -1492,7 +1492,7 @@
 				item: { count: 1, id: "malum:warp_flux" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 6.0d
 		}
 		{
@@ -1511,7 +1511,7 @@
 				item: { count: 1, id: "entangled:block" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 7.5d
 		}
 		{
@@ -1530,7 +1530,7 @@
 				item: { count: 1, id: "entangled:item" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 9.0d
 		}
 		{
@@ -1726,7 +1726,7 @@
 				item: { count: 1, id: "chunkloaders:advanced_chunk_loader" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.5d
 			y: 7.5d
 		}
 		{
@@ -1745,7 +1745,7 @@
 				item: { count: 1, id: "chunkloaders:ultimate_chunk_loader" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.5d
 			y: 9.0d
 		}
 		{
@@ -1763,6 +1763,22 @@
 			}]
 			x: 0.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3B00000000000072"]
+			id: "3B00000000000077"
+			rewards: [{
+				id: "3B00000002000077"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3B00000001000077"
+				item: { count: 1, id: "aquamirae:maelstrom_vestige" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
 		}
 	]
 }

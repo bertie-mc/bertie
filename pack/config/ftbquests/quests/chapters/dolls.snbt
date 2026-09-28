@@ -183,8 +183,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_2" }
 				type: "item"
 			}]
-			x: -0.78d
-			y: -4.43d
+			x: -1.13d
+			y: -4.36d
 		}
 		{
 			id: "7C00000000000005"
@@ -253,8 +253,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_9" }
 				type: "item"
 			}]
-			x: -0.78d
-			y: 4.43d
+			x: -1.13d
+			y: 4.36d
 		}
 		{
 			id: "7C0000000000000C"
@@ -263,8 +263,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_10" }
 				type: "item"
 			}]
-			x: -1.04d
-			y: -5.91d
+			x: -1.3d
+			y: -5.86d
 		}
 		{
 			id: "7C0000000000000D"
@@ -363,8 +363,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_20" }
 				type: "item"
 			}]
-			x: -1.04d
-			y: 5.91d
+			x: -1.3d
+			y: 5.86d
 		}
 		{
 			id: "7C00000000000017"
@@ -373,8 +373,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_21" }
 				type: "item"
 			}]
-			x: -1.3d
-			y: -7.39d
+			x: -1.14d
+			y: -7.41d
 		}
 		{
 			id: "7C00000000000018"
@@ -503,8 +503,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_34" }
 				type: "item"
 			}]
-			x: -1.3d
-			y: 7.39d
+			x: -1.14d
+			y: 7.41d
 		}
 		{
 			id: "7C00000000000025"
@@ -513,8 +513,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_35" }
 				type: "item"
 			}]
-			x: -1.56d
-			y: -8.86d
+			x: -1.72d
+			y: -8.83d
 		}
 		{
 			id: "7C00000000000026"
@@ -663,8 +663,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_50" }
 				type: "item"
 			}]
-			x: -1.56d
-			y: 8.86d
+			x: -1.72d
+			y: 8.83d
 		}
 		{
 			id: "7C00000000000035"
@@ -853,8 +853,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_328" }
 				type: "item"
 			}]
-			x: 0.78d
-			y: -4.43d
+			x: 1.13d
+			y: -4.36d
 		}
 		{
 			id: "7C00000000000048"
@@ -927,8 +927,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 0.78d
-			y: 4.43d
+			x: 1.13d
+			y: 4.36d
 		}
 		{
 			id: "7C0000000000004F"
@@ -938,8 +938,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 1.04d
-			y: -5.91d
+			x: 1.3d
+			y: -5.86d
 		}
 		{
 			id: "7C00000000000050"
@@ -1028,8 +1028,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_271" }
 				type: "item"
 			}]
-			x: 1.04d
-			y: 5.91d
+			x: 1.3d
+			y: 5.86d
 		}
 		{
 			id: "7C00000000000059"
@@ -1038,8 +1038,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_306" }
 				type: "item"
 			}]
-			x: 1.3d
-			y: -7.39d
+			x: 1.14d
+			y: -7.41d
 		}
 		{
 			id: "7C0000000000005A"
@@ -1148,8 +1148,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_467" }
 				type: "item"
 			}]
-			x: 1.3d
-			y: 7.39d
+			x: 1.14d
+			y: 7.41d
 		}
 		{
 			id: "7C00000000000065"
@@ -1158,8 +1158,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_505" }
 				type: "item"
 			}]
-			x: 1.56d
-			y: -8.86d
+			x: 1.72d
+			y: -8.83d
 		}
 		{
 			id: "7C00000000000066"
@@ -1298,8 +1298,8 @@
 				item: { count: 1, id: "kaleidoscope_doll:doll_688" }
 				type: "item"
 			}]
-			x: 1.56d
-			y: 8.86d
+			x: 1.72d
+			y: 8.83d
 		}
 	]
 }

@@ -2635,8 +2635,8 @@
 				item: { count: 1, id: "forbidden_arcanus:ender_pearl_fragment" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000070"]
@@ -2655,7 +2655,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B0000000000002A"]
@@ -3065,7 +3065,6 @@
 		}
 		{
 			dependencies: ["2B00000000000044"]
-			hide_dependency_lines: true
 			id: "2B00000000000089"
 			rewards: [{
 				id: "2B00000002000089"
@@ -3077,8 +3076,8 @@
 				item: { count: 1, id: "berlordsspellrestrictions:epic_crafting_orb" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 4.5d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2B0000000000005A"]
@@ -3094,7 +3093,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B0000000000003D"]
@@ -3109,8 +3108,8 @@
 				item: { count: 1, id: "trashcans:item_trash_can" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B0000000000008B"]
@@ -3126,7 +3125,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000008C"]
@@ -3157,8 +3156,8 @@
 				item: { count: 1, id: "trashcans:ultimate_trash_can" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 9.0d
+			y: 7.5d
 		}
 	]
 }

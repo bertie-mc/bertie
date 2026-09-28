@@ -12,6 +12,43 @@
 	quests: [
 		{
 			icon: {
+				id: "chipped:alchemy_bench"
+			}
+			id: "6C00000000000006"
+			rewards: [{
+				id: "6C00000002000006"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000006"
+				item: { count: 1, id: "chipped:alchemy_bench" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C00000000000006"]
+			icon: {
+				id: "chipped:chisel"
+			}
+			id: "6C00000000000007"
+			rewards: [{
+				id: "6C00000002000007"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C00000001000007"
+				item: { count: 1, id: "chipped:chisel" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			icon: {
 				id: "rustic_engineer:abyssal_submarine_item"
 			}
 			id: "6C0000000000000A"
@@ -61,51 +98,6 @@
 			y: 0.0d
 		}
 		{
-			icon: {
-				id: "wings_of_fire:petrified_fire_phoenix_egg"
-			}
-			id: "6C0000000000000C"
-			rewards: [{
-				id: "6C0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [
-				{
-					id: "6C0000000100000C"
-					item: { count: 1, id: "wings_of_fire:petrified_fire_phoenix_egg" }
-					type: "item"
-				}
-				{
-					id: "6C0000000101000C"
-					item: { count: 1, id: "wings_of_fire:petrified_nature_phoenix_egg" }
-					type: "item"
-				}
-				{
-					id: "6C0000000102000C"
-					item: { count: 1, id: "wings_of_fire:petrified_dark_phoenix_egg" }
-					type: "item"
-				}
-				{
-					id: "6C0000000103000C"
-					item: { count: 1, id: "wings_of_fire:petrified_red_phoenix_egg" }
-					type: "item"
-				}
-				{
-					id: "6C0000000104000C"
-					item: { count: 1, id: "wings_of_fire:petrified_gilded_phoenix_egg" }
-					type: "item"
-				}
-				{
-					id: "6C0000000105000C"
-					item: { count: 1, id: "wings_of_fire:petrified_wind_phoenix_egg" }
-					type: "item"
-				}
-			]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
 			id: "6C0000000000000D"
 			rewards: [{
 				id: "6C0000000200000D"
@@ -117,7 +109,7 @@
 				item: { count: 1, id: "minecraft:elytra" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -147,7 +139,7 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
+			x: 12.0d
 			y: 0.0d
 		}
 	]
