@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:clump_gold",
+      "required": false
+    },
+    {
+      "id": "oritech:gold_clump",
+      "required": false
+    }
+  ]
+}

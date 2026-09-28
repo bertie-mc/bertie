@@ -1387,12 +1387,12 @@ write(f"{R}/mechanical/kinetics/item_drain.json",
 
 # --- Precision Mechanism: override Create's sequenced assembly with a brass-sheet input and a
 #     Lightning-Infused Iron Nugget for the third deploy; keep the other steps and output
-#     chances. ---
+#     chances, with gold dust in place of the crushed gold the pack no longer has. ---
 _INC = "create:incomplete_precision_mechanism"
 def _deploy(item):
     return {"type": "create:deploying", "ingredients": [{"item": _INC}, {"item": item}], "results": [{"id": _INC}]}
 write("data/create/recipe/sequenced_assembly/precision_mechanism.json", {
-    "neoforge:conditions": conds("create", "elemental_metals"),
+    "neoforge:conditions": conds("create", "elemental_metals", "oritech"),
     "type": "create:sequenced_assembly",
     "ingredient": {"item": "create:brass_sheet"},
     "loops": 5,
@@ -1403,7 +1403,7 @@ write("data/create/recipe/sequenced_assembly/precision_mechanism.json", {
         {"chance": 5.0, "id": "create:cogwheel"},
         {"chance": 3.0, "id": "minecraft:gold_nugget"},
         {"chance": 2.0, "id": "create:shaft"},
-        {"chance": 2.0, "id": "create:crushed_raw_gold"},
+        {"chance": 2.0, "id": "oritech:gold_dust"},
         {"id": "minecraft:iron_ingot"},
         {"id": "minecraft:clock"},
     ],
@@ -4916,11 +4916,20 @@ _old_manifest = []
 if os.path.isfile(_manifest_path):
     with open(_manifest_path, encoding="utf-8") as _f:
         _old_manifest = json.load(_f)
-_new_manifest = sorted({_p for _p, _ in _hits})
+def _still_makes_removed(relpath):
+    """A recipe this run wrote replaces the mod's copy at that path, so the disable is decided by
+    what the override makes, not by the original - otherwise an override that already swapped the
+    removed result out would be overwritten with a disable."""
+    if relpath not in written:
+        return True
+    with open(os.path.join(RES, relpath.replace("/", os.sep)), encoding="utf-8") as _f:
+        return bool(_result_ids(json.load(_f), set()) & set(_removed_ids))
+
+_new_manifest = sorted({_p for _p, _ in _hits if _still_makes_removed(_p)})
 if _removed and not _scan_ok:
     _new_manifest = _old_manifest          # could not scan: change nothing rather than wipe
 else:
-    for _stale in sorted(set(_old_manifest) - set(_new_manifest)):
+    for _stale in sorted(set(_old_manifest) - set(_new_manifest) - set(written)):
         _abs = os.path.join(RES, _stale.replace("/", os.sep))
         if os.path.isfile(_abs):
             os.remove(_abs)

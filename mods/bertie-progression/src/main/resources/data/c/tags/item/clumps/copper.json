@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:clump_copper",
+      "required": false
+    },
+    {
+      "id": "oritech:copper_clump",
+      "required": false
+    }
+  ]
+}

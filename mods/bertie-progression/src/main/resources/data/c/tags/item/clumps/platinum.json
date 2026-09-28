@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "oritech:platinum_clump",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "oritech:copper_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:gold_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_clump",
+      "required": false
+    },
+    {
+      "id": "create:crushed_raw_zinc",
+      "required": false
+    }
+  ]
+}

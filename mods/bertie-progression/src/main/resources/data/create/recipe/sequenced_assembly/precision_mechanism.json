@@ -7,6 +7,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -41,7 +45,7 @@
     },
     {
       "chance": 2.0,
-      "id": "create:crushed_raw_gold"
+      "id": "oritech:gold_dust"
     },
     {
       "id": "minecraft:iron_ingot"
