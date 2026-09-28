@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "9bad8288f199af0cbf4a5e8244abbd95b0937937175309661b149dada6e7cf5f"
+inputs-hash = "010f7674735afa0b5455a9d3632bb7e77bae3d42eb8685a59df7833d3694364c"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -884,6 +884,10 @@ mod = "modrinth:jgzwYsAN:BIbVs1fo"
 [components."malum-vestis"]
 any = "curseforge:836208:8376734"
 mod = "curseforge:836208:8376734"
+
+[components."mekanism"]
+any = "modrinth:Ce6I4WUE:5KzzycBT"
+mod = "modrinth:Ce6I4WUE:5KzzycBT"
 
 [components."mekanism-additions"]
 any = "modrinth:a6F3uASn:6mkdykZa"
@@ -3782,6 +3786,7 @@ integrations = [{ "artifact" = "curseforge:227639:7797302", "namespace" = "twili
 
 [artifacts."modrinth:Ce6I4WUE:5KzzycBT"]
 name = "mekanism"
+component = "mekanism"
 provider = "modrinth"
 kind = "mod"
 side = "both"

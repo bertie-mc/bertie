@@ -181,14 +181,6 @@ https://modrinth.com/mod/coroutil
 https://modrinth.com/mod/supermartijn642s-core-lib
 """
 
-[evidence.curseforge-gpl-3]
-allowed = true
-text = """
-AlfinoLib declares GPLv3 on its CurseForge project page. It permits redistribution
-subject to the GPL's notice, license, and corresponding-source requirements.
-https://www.curseforge.com/minecraft/mc-mods/alfinolib
-"""
-
 [evidence.curseforge-mit]
 allowed = true
 text = """
@@ -269,10 +261,6 @@ downloads from the official project page; direct integration requires written
 permission.
 https://github.com/Sweenus/simplytooltips/blob/master/LICENSE.txt
 """
-
-[exports.modrinth.artifacts."curseforge:1554698:8196186"]
-name = "alfinolib"
-evidence = ["curseforge-gpl-3"]
 
 [exports.modrinth.artifacts."curseforge:1244863:8048938"]
 name = "apotheosis-x-irons-spellbooks-compat"

@@ -1,0 +1,6 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "Ce6I4WUE"
+version-id = "5KzzycBT"
+filename = "Mekanism-1.21.1-10.7.19.85.jar"

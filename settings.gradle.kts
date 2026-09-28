@@ -101,6 +101,7 @@ include(
     ":mods:forge-ink",
     ":mods:frozen-reg-fix",
     ":mods:hephaestus-architecture",
+    ":mods:mekanism-covers-fix",
     ":mods:primitive-refined",
     ":mods:rustic-engineer-fix",
     ":mods:screenshot-copy",

@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "8add20e519e6643540ac5071519ac2493702a7216661e80f4e78f5af27d6bdae"
+inputs-hash = "cb5185342358b96b1eba58007b1518e9b94dcf5a4f3d0f198a174361d17ccac3"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -884,6 +884,10 @@ mod = "curseforge:484064:7307339"
 [components."malum-vestis"]
 any = "curseforge:836208:8376734"
 mod = "curseforge:836208:8376734"
+
+[components."mekanism"]
+any = "modrinth:Ce6I4WUE:5KzzycBT"
+mod = "modrinth:Ce6I4WUE:5KzzycBT"
 
 [components."mekanism-additions"]
 any = "curseforge:345425:7904060"
@@ -9444,6 +9448,7 @@ integrations = []
 
 [artifacts."modrinth:Ce6I4WUE:5KzzycBT"]
 name = "mekanism"
+component = "mekanism"
 provider = "modrinth"
 kind = "mod"
 side = "both"

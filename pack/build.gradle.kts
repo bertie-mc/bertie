@@ -394,6 +394,7 @@ dependencies {
     packMods(project(":mods:forge-ink"))
     packMods(project(":mods:frozen-reg-fix"))
     packMods(project(":mods:hephaestus-architecture"))
+    packMods(project(":mods:mekanism-covers-fix"))
     packMods(project(":mods:primitive-refined"))
     packMods(project(":mods:rustic-engineer-fix"))
     packMods(project(":mods:explosive-enhancement"))
