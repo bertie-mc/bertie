@@ -29,9 +29,15 @@ final class AnvilCraftFeatureGuide {
         page(
                 reg,
                 "anvil_looting",
-                List.of("minecraft:anvil"),
-                "Anvil Looting: a mob crushed hard enough in one hit drops from its own loot table," + " multiplied.",
-                "Take 40% of its health in a single blow for one lot of drops, 60% for two, 80% for" + " three.",
+                List.of("minecraft:anvil", "anvilcraft:ember_anvil", "anvilcraft:transcendence_anvil"),
+                "Anvil Looting: a mob crushed hard enough in one hit drops from its own loot table,"
+                        + " multiplied. Advanced Loot Info's Entity Drops page shows what that table is.",
+                "Take 40% of its maximum health in a single blow for one lot of drops, 60% for two, 80%"
+                        + " for three. Babies are exempt, and a mob still flashing from its last hit"
+                        + " cannot be hit again for this.",
+                "An Ember Anvil or a Transcendence Anvil makes the kill count as a player's, so drops"
+                        + " that only players get are included. A Transcendence Anvil also applies"
+                        + " Looting V on top.",
                 "Mobs that heal themselves — witches, and iron golems you keep repairing — can be farmed"
                         + " on this indefinitely without ever killing them.");
         page(
