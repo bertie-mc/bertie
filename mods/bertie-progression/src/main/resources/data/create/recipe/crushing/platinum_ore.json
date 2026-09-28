@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:ores/platinum"
+      }
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ores/platinum"
+    }
+  ],
+  "processing_time": 400,
+  "results": [
+    {
+      "id": "oritech:platinum_dust"
+    },
+    {
+      "chance": 0.75,
+      "id": "oritech:platinum_dust"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    }
+  ]
+}

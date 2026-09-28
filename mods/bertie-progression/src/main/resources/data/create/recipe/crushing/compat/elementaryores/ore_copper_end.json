@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elementaryores"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "elementaryores:ore_copper_end"
+        }
+      ]
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "count": 5,
+      "id": "mekanism:dust_copper"
+    },
+    {
+      "chance": 0.25,
+      "id": "mekanism:dust_copper"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:end_stone"
+    }
+  ]
+}

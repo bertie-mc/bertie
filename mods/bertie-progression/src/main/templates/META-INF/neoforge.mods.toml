@@ -589,6 +589,13 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
+modId="rottencreatures"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
 modId="born_in_chaos_v1"
 type="optional"
 versionRange="[0,)"

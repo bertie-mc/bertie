@@ -9,11 +9,14 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
@@ -102,6 +105,12 @@ public final class RemovedItems {
             return;
         }
 
+        for (ItemStack stack : entries) {
+            if (isMundanePotion(stack)) {
+                event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            }
+        }
+
         Set<ResourceLocation> removed = ids();
         if (removed.isEmpty()) {
             return;
@@ -115,6 +124,15 @@ public final class RemovedItems {
                 event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
         }
+    }
+
+    /**
+     * A Mundane Potion in any bottle, or an arrow tipped with one. Nothing in the pack brews it
+     * (see {@code PotionBrewingBuilderMixin}), so all four forms leave the tabs as well.
+     */
+    public static boolean isMundanePotion(ItemStack stack) {
+        PotionContents contents = stack.get(DataComponents.POTION_CONTENTS);
+        return contents != null && contents.is(Potions.MUNDANE);
     }
 
     private RemovedItems() {}

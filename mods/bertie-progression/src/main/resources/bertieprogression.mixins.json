@@ -14,7 +14,9 @@
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
     "PocketOpenKeyMixin",
-    "SequencedAssemblyRecipeMixin"
+    "PotionBrewingBuilderMixin",
+    "SequencedAssemblyRecipeMixin",
+    "VanityEntityItemPacketMixin"
   ],
   "injectors": {
     "defaultRequire": 0

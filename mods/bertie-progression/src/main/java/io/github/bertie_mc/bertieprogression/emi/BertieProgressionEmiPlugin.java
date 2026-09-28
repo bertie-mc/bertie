@@ -10,6 +10,7 @@ import dev.emi.emi.api.stack.EmiStack;
 import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
 import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
+import io.github.bertie_mc.bertieprogression.RemovedItems;
 import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
@@ -47,6 +48,8 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     public void register(EmiRegistry registry) {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
+        registry.removeRecipes(recipe ->
+                recipe.getOutputs().stream().anyMatch(output -> RemovedItems.isMundanePotion(output.getItemStack())));
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(

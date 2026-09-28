@@ -69,6 +69,11 @@ present. Its block model is referenced at runtime; no third-party texture is bun
   Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
 - **Removed items** (`RemovedItems`) — items withdrawn from the pack's progression.
+- **No Mundane Potion** (`PotionBrewingBuilderMixin`) — no brewing mix produces it, and its
+  potion, splash, lingering and tipped-arrow forms are hidden from creative tabs and EMI.
+- **Vanity projectile sync** (`VanityEntityItemPacketMixin`) — a projectile that drops no item
+  is sent to Vanity as a plain arrow, because Vanity's packet cannot encode an empty stack and
+  the failure disconnected the player.
 
 ### Data
 

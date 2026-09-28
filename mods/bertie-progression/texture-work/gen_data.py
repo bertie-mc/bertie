@@ -2846,11 +2846,11 @@ for _gem, _shard, _sound, _adv in (
               "required_advancement": _adv,
           })
 
-# --- Corrupti Dust: the same five ingredients, but one dust instead of four. ---
+# --- Corrupti Dust: one dust from a corrupted crystal and four Nether and End reagents. ---
 write("data/forbidden_arcanus/recipe/corrupti_dust.json",
-      shapeless(["forbidden_arcanus:obsidiansteel_ingot", "minecraft:blaze_powder",
-                 "minecraft:nether_wart", "forbidden_arcanus:arcane_crystal_dust",
-                 "forbidden_arcanus:ender_pearl_fragment"],
+      shapeless(["forbidden_arcanus:corrupted_arcane_crystal", "minecraft:blaze_powder",
+                 "minecraft:nether_wart", "forbidden_arcanus:ender_pearl_fragment",
+                 "born_in_chaos_v1:phantom_powder"],
                 "forbidden_arcanus:corrupti_dust", 1))
 
 # --- Malignant Pewter: iron and scrap give way to soulstained steel and a netherite ingot. ---
@@ -3685,7 +3685,7 @@ for _orb in ("common", "uncommon", "rare", "legendary"):
 write(f"{RIT}/common_crafting_orb.json",
       ritual("born_in_chaos_v1:dark_charge", [("irons_spellbooks:common_ink", 8)],
              f"{BSR}:common_crafting_orb",
-             essences={"aureal": 0, "blood": 6000, "souls": 4}, xp=900))
+             essences={"aureal": 0, "blood": 6000, "souls": 0}, xp=900))
 write(f"{RIT}/uncommon_crafting_orb.json",
       ritual(f"{BSR}:common_crafting_orb", [("irons_spellbooks:uncommon_ink", 8)],
              f"{BSR}:uncommon_crafting_orb",
@@ -3697,6 +3697,47 @@ write(f"{RIT}/legendary_crafting_orb.json",
       ritual(f"{BSR}:epic_crafting_orb", [("irons_spellbooks:legendary_ink", 8)],
              f"{BSR}:legendary_crafting_orb", tier=2,
              essences={"aureal": 0, "blood": 15000, "souls": 16}, xp=1350))
+
+# ================================================================ CORRUPTED WART
+# Corrupted Wart comes out of the rot line: Fermented Spider Eyes in the corners, Corrupti Dust at
+# the sides, Rotting Essence above and below, and a Magma or Frozen Rotten Flesh at the heart. A
+# superheated mixer makes two from the same reagents, taking one of each flesh.
+RC = "rottencreatures"
+write(f"data/{RC}/recipe/corrupted_wart.json", {
+    "neoforge:conditions": conds(RC, "forbidden_arcanus", "malum"),
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "F": {"item": "minecraft:fermented_spider_eye"},
+        "C": {"item": "forbidden_arcanus:corrupti_dust"},
+        "R": {"item": "malum:rotting_essence"},
+        "M": [{"item": f"{RC}:magma_rotten_flesh"}, {"item": f"{RC}:frozen_rotten_flesh"}],
+    },
+    "pattern": ["FRF", "CMC", "FRF"],
+    "result": {"id": f"{RC}:corrupted_wart", "count": 1},
+})
+write(f"{R}/create/corrupted_wart_mixing.json", {
+    "neoforge:conditions": conds("create", RC, "forbidden_arcanus", "malum"),
+    "type": "create:mixing",
+    "heat_requirement": "superheated",
+    "ingredients": ([{"item": "minecraft:fermented_spider_eye"}] * 2
+                    + [{"item": "forbidden_arcanus:corrupti_dust"}] * 2
+                    + [{"item": "malum:rotting_essence"}] * 2
+                    + [{"item": f"{RC}:magma_rotten_flesh"}, {"item": f"{RC}:frozen_rotten_flesh"}]),
+    "results": [{"count": 2, "id": f"{RC}:corrupted_wart"}],
+})
+
+# Rotting Essence is infused at the Spirit Altar instead of reaped (see ROTTING ESSENCE REAPING).
+write(f"{R}/malum/rotting_essence.json",
+      infusion("minecraft:rotten_flesh", 16,
+               [("farmersdelight:rotten_tomato", 4), ("minecraft:bone", 8),
+                ("dungeonsdelight:gunk", 2), ("born_in_chaos_v1:corpse_maggot", 1)],
+               [SP("wicked", 8), SP("earthen", 16), SP("aqueous", 8)],
+               "malum:rotting_essence"))
+
+# L_Ender's Delight files the Leviathan's Abyssal Egg under c:eggs, which lets it stand in for a
+# hen's egg in every food recipe.
+write("data/c/tags/item/eggs.json", {"values": [], "remove": ["cataclysm:abyssal_egg"]})
 
 # ================================================================ BACKPACK UPGRADES
 # Sophisticated Backpacks prices every upgrade in iron, redstone and string, which says nothing
@@ -4263,6 +4304,96 @@ else:
         print(f"      {_r}  ->  {_b}")
     for _r in _skipped:
         print(f"      {_r}  ->  (no storage block, skipped)")
+
+# ================================================================ ROTTING ESSENCE REAPING
+# Rotting Essence comes from the Spirit Altar, so Malum's scythe drop is taken off every undead
+# that carried it. A file left with no drop keeps an empty list: Malum's reaping loader reads every
+# file in the folder and ignores neoforge:conditions, so a switched-off file would fail to parse.
+def _reaping_without(item):
+    import zipfile
+    jars = [f for f in _pack_jars() if f.startswith("malum-")]
+    if not jars:
+        return None
+    changed = 0
+    with zipfile.ZipFile(os.path.join(INSTANCE_MODS, jars[0])) as zf:
+        for name in sorted(zf.namelist()):
+            if not (name.startswith("data/malum/reaping_data/") and name.endswith(".json")):
+                continue
+            data = json.loads(zf.read(name))
+            drops = data.get("drops", [])
+            kept = [d for d in drops if d.get("ingredient", {}).get("item") != item]
+            if len(kept) == len(drops):
+                continue
+            data["drops"] = kept
+            write(name, data)
+            changed += 1
+    return changed
+
+_reaped = _reaping_without("malum:rotting_essence")
+if _reaped is None:
+    print("  !! rotting essence reaping: no Malum jar found - reaping data left as it was.")
+else:
+    print(f"  rotting essence reaping: {_reaped} reaping files re-emitted without it")
+
+# ================================================================ CRUSHED ORE TO DUST
+# Every crushing-wheel recipe that yields a crushed raw ore yields that metal's dust instead, in the
+# same numbers. Metals without a dust in the pack (zinc, aluminium, silver, quicksilver) keep their
+# crushed ore. The dusts are the ones the merged dust tags keep.
+ORE_DUST = {
+    "iron": "oritech:iron_dust", "gold": "oritech:gold_dust", "copper": "mekanism:dust_copper",
+    "tin": "mekanism:dust_tin", "lead": "mekanism:dust_lead", "osmium": "mekanism:dust_osmium",
+    "uranium": "oritech:uranium_dust", "nickel": "oritech:nickel_dust",
+    "platinum": "oritech:platinum_dust",
+}
+
+def _crushing_to_dust():
+    import zipfile
+    jars = [f for f in _pack_jars() if not f.startswith(MODID)]
+    if not jars:
+        return None
+    changed = []
+    for jar in jars:
+        try:
+            zf = zipfile.ZipFile(os.path.join(INSTANCE_MODS, jar))
+        except zipfile.BadZipFile:
+            continue
+        with zf:
+            for name in sorted(zf.namelist()):
+                if not re.match(r"data/[^/]+/recipe/.+\.json$", name):
+                    continue
+                raw = zf.read(name)
+                if b'"create:crushing"' not in raw or b"create:crushed_raw_" not in raw:
+                    continue
+                path = name
+                if path in written:
+                    with open(os.path.join(RES, path.replace("/", os.sep)), encoding="utf-8") as f:
+                        data = json.load(f)
+                else:
+                    data = json.loads(raw)
+                dusts = set()
+                for result in data.get("results", []):
+                    rid = result.get("id", "")
+                    metal = rid.rsplit("crushed_raw_", 1)[1] if rid.startswith("create:crushed_raw_") else None
+                    if metal in ORE_DUST:
+                        result["id"] = ORE_DUST[metal]
+                        dusts.add(ORE_DUST[metal])
+                if not dusts:
+                    continue
+                # The recipe's own conditions stay (compat recipes gate on their ore's mod or tag);
+                # the dust's mod joins them.
+                have = data.get("neoforge:conditions", [])
+                loaded = {c.get("modid") for c in have if c.get("type") == "neoforge:mod_loaded"}
+                data["neoforge:conditions"] = have + [c for c in conds(*external_mods(*dusts))
+                                                      if c["modid"] not in loaded]
+                write(path, data)
+                changed.append(path)
+    return changed
+
+_dusted = _crushing_to_dust()
+if _dusted is None:
+    print("  !! crushed ore to dust: no jars found - crushing recipes left as they were.")
+else:
+    print(f"  crushed ore to dust: {len(_dusted)} crushing recipes now yield dust")
 
 # ================================================================ REMOVED ITEMS
 # Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's

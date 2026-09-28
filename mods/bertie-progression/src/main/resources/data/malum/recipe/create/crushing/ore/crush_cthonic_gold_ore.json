@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "malum:cthonic_gold_ore"
+    }
+  ],
+  "results": [
+    {
+      "id": "malum:cthonic_gold_fragment",
+      "count": 3
+    },
+    {
+      "id": "malum:cthonic_gold_fragment",
+      "chance": 0.75
+    },
+    {
+      "id": "oritech:gold_dust",
+      "count": 2,
+      "chance": 0.75
+    },
+    {
+      "id": "oritech:gold_dust",
+      "count": 2,
+      "chance": 0.75
+    },
+    {
+      "id": "create:experience_nugget",
+      "count": 4,
+      "chance": 0.75
+    },
+    {
+      "id": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.75
+    }
+  ],
+  "processing_time": 600
+}

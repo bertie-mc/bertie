@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dungeonsdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:rotten_flesh",
+    "count": 16
+  },
+  "extraInputs": [
+    {
+      "item": "farmersdelight:rotten_tomato",
+      "count": 4
+    },
+    {
+      "item": "minecraft:bone",
+      "count": 8
+    },
+    {
+      "item": "dungeonsdelight:gunk",
+      "count": 2
+    },
+    {
+      "item": "born_in_chaos_v1:corpse_maggot",
+      "count": 1
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:wicked",
+      "count": 8
+    },
+    {
+      "type": "malum:earthen",
+      "count": 16
+    },
+    {
+      "type": "malum:aqueous",
+      "count": 8
+    }
+  ],
+  "result": {
+    "id": "malum:rotting_essence",
+    "count": 1
+  }
+}
