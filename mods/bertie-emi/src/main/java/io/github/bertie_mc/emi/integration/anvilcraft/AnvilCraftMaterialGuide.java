@@ -177,12 +177,6 @@ final class AnvilCraftMaterialGuide {
                 "How many enchantments are on that ingot decides what you get: none gives four ingots,"
                         + " one to fourteen adds nuggets and a chance of the neutronium back, and fifteen"
                         + " or more leaves a Block of Transcendium behind in place of the ember block.");
-        page(
-                reg,
-                "transcendium_template",
-                List.of("anvilcraft:transcendium_upgrade_smithing_template"),
-                "Comes from dissociating an eight-in-one smithing template.",
-                "Upgrades items and blocks to the Transcendium tier.");
     }
 
     private static void exotic(EmiRegistry reg) {

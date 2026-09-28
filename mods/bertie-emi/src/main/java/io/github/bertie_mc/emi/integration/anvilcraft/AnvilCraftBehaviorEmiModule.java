@@ -3,11 +3,14 @@ package io.github.bertie_mc.emi.integration.anvilcraft;
 import dev.dubhe.anvilcraft.util.SpectralAnvilConversionUtil;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
+import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import io.github.bertie_mc.emi.framework.Categories;
 import io.github.bertie_mc.emi.framework.GenericEmiRecipe;
 import io.github.bertie_mc.emi.framework.MachineDescriptor;
 import it.unimi.dsi.fastutil.objects.Object2DoubleMap;
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +20,8 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.Fluids;
 
 /**
  * AnvilCraft's hardcoded in-world conversions — the ones with no recipe file behind them, which
@@ -150,8 +155,8 @@ final class AnvilCraftBehaviorEmiModule {
     /**
      * An anvil landing on an Overheated Ember Metal Block with a Charged Neutronium Ingot on top.
      * What comes out is decided by how many enchantments the ingot carries, which is why the five
-     * entries differ only by their info lines — and why the counts that scale with the enchantment
-     * total are spelled out in text rather than baked into a stack size.
+     * entries share one picture — and why the counts that scale with the enchantment total are
+     * spelled out in text rather than baked into a stack size.
      */
     private static void transcendium(EmiRegistry reg) {
         EmiRecipeCategory cat = Categories.machine(reg, "anvilcraft_transcendium", ANVIL, "Transcendium Recipe");
@@ -171,52 +176,71 @@ final class AnvilCraftBehaviorEmiModule {
             boolean neutronium,
             int nuggetsPerEnchantment,
             boolean leavesBlock) {
-        MachineDescriptor d = new MachineDescriptor();
-        d.itemIn(Categories.stack("anvilcraft:charged_neutronium_ingot"));
-        d.itemIn(Categories.stack(OVERHEATED_EMBER_METAL_BLOCK));
+        AnvilDrop drop = new AnvilDrop();
+        drop.item(Categories.stack("anvilcraft:charged_neutronium_ingot"));
+        drop.onto(Categories.stack(OVERHEATED_EMBER_METAL_BLOCK));
         if (neutronium) {
-            d.itemOut(Categories.stack(NEUTRONIUM_INGOT));
+            drop.out(Categories.stack(NEUTRONIUM_INGOT));
         }
         if (ingots > 0) {
-            d.itemOut(Categories.stack(TRANSCENDIUM_INGOT).setAmount(ingots));
+            drop.out(Categories.stack(TRANSCENDIUM_INGOT).setAmount(ingots));
         }
         if (nuggetsPerEnchantment > 0) {
-            d.itemOut(Categories.stack(TRANSCENDIUM_NUGGET));
+            drop.out(Categories.stack(TRANSCENDIUM_NUGGET));
         }
         if (leavesBlock) {
-            d.itemOut(Categories.stack("anvilcraft:transcendium_block"));
+            drop.out(Categories.stack("anvilcraft:transcendium_block"));
         }
-        d.info(Component.literal(enchantmentLine));
-        d.info(Component.literal("Drop the ingot on the block, then land an anvil on it"));
+        drop.note(Component.literal(enchantmentLine));
         if (nuggetsPerEnchantment > 0) {
-            d.info(Component.literal(
+            drop.note(Component.literal(
                     "Transcendium Nuggets: " + nuggetsPerEnchantment + " per enchantment on the ingot"));
         }
         // Only the 1-10 band rolls for the Neutronium Ingot; above it the ingot is guaranteed.
         if (neutronium && "1_10".equals(key)) {
-            d.info(Component.literal("Neutronium Ingot chance: 10% per enchantment on the ingot"));
+            drop.note(Component.literal("Neutronium Ingot chance: 10% per enchantment on the ingot"));
         }
-        if (leavesBlock) {
-            d.info(Component.literal("The Overheated Ember Metal Block is left as a Block of Transcendium"));
-        }
-        reg.addRecipe(new GenericEmiRecipe(cat, id("transcendium/" + key), d));
+        reg.addRecipe(new AnvilDropEmiRecipe(cat, id("transcendium/" + key), drop));
     }
 
-    /** A dye lying on a Cement Cauldron when an anvil lands on it restains the cauldron. */
+    /**
+     * A dye lying on a Cement Cauldron when an anvil lands on it restains the cauldron. The cauldrons
+     * themselves have no item form, so the cement is shown as the fluid it is: any colour in, the
+     * dye's colour out.
+     */
     private static void cementStaining(EmiRegistry reg) {
         EmiRecipeCategory cat = Categories.machine(reg, "anvilcraft_cement_staining", CAULDRON, "Cement Staining");
+        List<EmiStack> cements = new ArrayList<>();
         for (DyeColor colour : DyeColor.values()) {
-            EmiStack result = Categories.stack("anvilcraft:" + colour.getName() + "_cement_cauldron");
+            EmiStack cement = cement(colour);
+            if (!cement.isEmpty()) {
+                cements.add(cement);
+            }
+        }
+        if (cements.isEmpty()) {
+            return;
+        }
+        // Any colour of cement takes any dye, so the input cycles through the lot rather than
+        // claiming one particular starting colour.
+        EmiIngredient anyCement = EmiIngredient.of(cements);
+        for (DyeColor colour : DyeColor.values()) {
+            EmiStack result = cement(colour);
             if (result.isEmpty()) {
                 continue;
             }
-            MachineDescriptor d = new MachineDescriptor();
-            d.itemIn(EmiStack.of(DyeItem.byColor(colour)));
-            d.catalyst(Categories.stack(ANVIL));
-            d.itemOut(result);
-            d.info(Component.literal("Drop the dye on any Cement Cauldron, then land an anvil on it"));
-            reg.addRecipe(new GenericEmiRecipe(cat, id("cement_staining/" + colour.getName()), d));
+            AnvilDrop drop = new AnvilDrop();
+            drop.item(EmiStack.of(DyeItem.byColor(colour)));
+            drop.on(Categories.stack(CAULDRON));
+            drop.fluidIn(anyCement);
+            drop.fluidOut(result);
+            reg.addRecipe(new AnvilDropEmiRecipe(cat, id("cement_staining/" + colour.getName()), drop));
         }
+    }
+
+    private static EmiStack cement(DyeColor colour) {
+        Fluid fluid = BuiltInRegistries.FLUID.get(
+                ResourceLocation.fromNamespaceAndPath("anvilcraft", colour.getName() + "_cement"));
+        return fluid == null || fluid == Fluids.EMPTY ? EmiStack.EMPTY : EmiStack.of(fluid);
     }
 
     /** These conversions have no recipe file, so their EMI ids are ours to mint. */

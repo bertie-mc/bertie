@@ -96,10 +96,11 @@ import org.slf4j.LoggerFactory;
  * <p>Still deferred (nothing to usefully render): {@code cooling}, a raw anvillib in-world recipe
  * with bespoke outcomes.
  *
- * <p>A process type either transforms blocks the recipe names, or runs on a machine the class
- * hardcodes — a Heater, a Crushing Table, a lit Corrupted Beacon. The machine is that category's
- * workstation and a catalyst, never an ingredient: it is what the recipe needs present, not what it
- * eats. Types with neither fall back to the Anvil.
+ * <p>Every type triggered by a falling anvil is drawn by {@link AnvilDropEmiRecipe} as the structure
+ * that performs it rather than as a row of slots, because where each block goes is the recipe. The
+ * machine a type runs on is also that category's workstation, and is marked as a catalyst: it is
+ * what the recipe needs present, not what it eats. Types with no machine of their own fall back to
+ * the Anvil.
  */
 public final class AnvilCraftEmiModule {
     private AnvilCraftEmiModule() {}
@@ -108,45 +109,27 @@ public final class AnvilCraftEmiModule {
 
     private static final String ANVIL = "minecraft:anvil";
     private static final String CAULDRON = "minecraft:cauldron";
-    /**
-     * Every process recipe is triggered the same way, so the sentences share an opening. They are
-     * kept to roughly one rendered line each: the note repeats on every recipe in the category, and
-     * a three-line wrap would cost more room than the recipe itself.
-     */
-    private static final String DROP = "Anvil onto items ";
 
     public static void register(EmiRegistry reg) {
         safely("crab_trap", () -> AnvilCraftCrabTrapEmiModule.register(reg));
         RecipeManager rm = reg.getRecipeManager();
 
-        process(
-                reg,
-                rm,
-                () -> BulgingRecipe.class,
-                "anvilcraft_bulging",
-                "Bulging",
-                new Setup(CAULDRON, false, DROP + "in a water-filled cauldron"));
-        process(
-                reg,
-                rm,
-                () -> SqueezingRecipe.class,
-                "anvilcraft_squeezing",
-                "Squeezing",
-                new Setup(CAULDRON, false, "Anvil onto a block sitting above a cauldron"));
+        process(reg, rm, () -> BulgingRecipe.class, "anvilcraft_bulging", "Bulging", at(CAULDRON));
+        process(reg, rm, () -> SqueezingRecipe.class, "anvilcraft_squeezing", "Squeezing", at(CAULDRON));
         process(
                 reg,
                 rm,
                 () -> SuperHeatingRecipe.class,
                 "anvilcraft_super_heating",
                 "Super Heating",
-                machine("anvilcraft:heater", DROP + "in a cauldron over a Heater"));
+                at("anvilcraft:heater"));
         process(
                 reg,
                 rm,
                 () -> BoilingRecipe.class,
                 "anvilcraft_boiling",
                 "Boiling",
-                machine("minecraft:campfire", DROP + "in a cauldron over a lit Campfire"));
+                at("minecraft:campfire", "The Campfire has to be lit"));
 
         process(
                 reg,
@@ -154,87 +137,57 @@ public final class AnvilCraftEmiModule {
                 () -> ItemCrushRecipe.class,
                 "anvilcraft_item_crush",
                 "Item Crushing",
-                machine("anvilcraft:crushing_table", DROP + "on a Crushing Table"));
+                at("anvilcraft:crushing_table"));
         process(
                 reg,
                 rm,
                 () -> StampingRecipe.class,
                 "anvilcraft_stamping",
                 "Stamping",
-                machine("anvilcraft:stamping_platform", DROP + "on a Stamping Platform"));
-        process(
-                reg,
-                rm,
-                () -> MeshRecipe.class,
-                "anvilcraft_mesh",
-                "Mesh Sifting",
-                machine("minecraft:scaffolding", DROP + "on Scaffolding"));
+                at("anvilcraft:stamping_platform", "The result is ejected from the front of the platform"));
+        process(reg, rm, () -> MeshRecipe.class, "anvilcraft_mesh", "Mesh Sifting", at("minecraft:scaffolding"));
         process(
                 reg,
                 rm,
                 () -> UnpackRecipe.class,
                 "anvilcraft_unpack",
                 "Unpacking",
-                machine("minecraft:iron_trapdoor", DROP + "on a closed upper-half Iron Trapdoor"));
+                at("minecraft:iron_trapdoor", "The trapdoor has to be closed and set to its upper half"));
         process(
                 reg,
                 rm,
                 () -> NeutronIrradiationRecipe.class,
                 "anvilcraft_neutron",
                 "Neutron Irradiation",
-                machine("anvilcraft:neutron_irradiator", DROP + "in a cauldron on a Neutron Irradiator"));
+                at("anvilcraft:neutron_irradiator"));
         process(
                 reg,
                 rm,
                 () -> CookingRecipe.class,
                 "anvilcraft_cooking",
                 "Anvil Cooking",
-                machine("minecraft:campfire", DROP + "in a cauldron on a lit Campfire"));
+                at("minecraft:campfire", "The Campfire has to be lit"));
         process(
                 reg,
                 rm,
                 () -> TimeWarpRecipe.class,
                 "anvilcraft_time_warp",
                 "Time Warp",
-                machine("anvilcraft:corrupted_beacon", DROP + "on a lit Corrupted Beacon"));
+                at("anvilcraft:corrupted_beacon", "The Corrupted Beacon has to be lit and active"));
         process(
                 reg,
                 rm,
                 () -> ItemCompressRecipe.class,
                 "anvilcraft_item_compress",
                 "Item Compress",
-                new Setup(CAULDRON, false, DROP + "in a cauldron"));
+                at(CAULDRON, "The cauldron has to be empty"));
 
-        process(
-                reg,
-                rm,
-                () -> BlockSmearRecipe.class,
-                "anvilcraft_block_smear",
-                "Block Smear",
-                transforms("Anvil onto the block"));
-        process(
-                reg,
-                rm,
-                () -> BlockCrushRecipe.class,
-                "anvilcraft_block_crush",
-                "Block Crushing",
-                transforms("Anvil onto the block"));
-        process(
-                reg,
-                rm,
-                () -> BlockCompressRecipe.class,
-                "anvilcraft_block_compress",
-                "Block Compress",
-                transforms("Anvil onto the block"));
+        process(reg, rm, () -> BlockSmearRecipe.class, "anvilcraft_block_smear", "Block Smear", at(ANVIL));
+        process(reg, rm, () -> BlockCrushRecipe.class, "anvilcraft_block_crush", "Block Crushing", at(ANVIL));
+        process(reg, rm, () -> BlockCompressRecipe.class, "anvilcraft_block_compress", "Block Compress", at(ANVIL));
 
         // Mixed: this one carries item AND block sides at once, which is why the mapper is unified.
-        process(
-                reg,
-                rm,
-                () -> ItemInjectRecipe.class,
-                "anvilcraft_item_inject",
-                "Item Inject",
-                transforms(DROP + "lying on the block"));
+        process(reg, rm, () -> ItemInjectRecipe.class, "anvilcraft_item_inject", "Item Inject", at(ANVIL));
 
         safely("Jewel Crafting", () -> jewelCrafting(reg, rm));
         safely("Stamping (Unique)", () -> stampingUnique(reg, rm));
@@ -247,6 +200,7 @@ public final class AnvilCraftEmiModule {
         safely("Multiple To One Smithing", () -> multipleToOneSmithing(reg, rm));
         safely("Canning Food", () -> canningFood(reg, rm));
         safely("Pill", () -> pills(reg, rm));
+        safely("Template Dissociation", () -> AnvilCraftDissociationEmiModule.register(reg));
         AnvilCraftBehaviorEmiModule.register(reg);
         AnvilCraftGuideEmiModule.register(reg);
     }
@@ -371,9 +325,16 @@ public final class AnvilCraftEmiModule {
     }
 
     /**
-     * The shared mapper for every {@link AbstractProcessRecipe}. A given type only fills some of the
-     * four collections — item types leave the block lists empty and vice versa — so one pass covers
-     * the item-only, block-only and mixed types alike.
+     * The shared mapper for every {@link AbstractProcessRecipe}, which is also where the picture is
+     * assembled. Every one of these types shares the {@code ON_ANVIL_FALL_ON} trigger, so an anvil
+     * always has to land; what differs is which decks sit under it, and the recipe says that itself.
+     *
+     * <p>Two facts do the sorting, so no category has to declare its own shape. A recipe's input
+     * block is machinery it runs on unless the recipe also declares result blocks, in which case it
+     * is the thing being converted. And the block sits above the cauldron or below it according to
+     * the offsets the recipe carries for rendering — above for Squeezing, where a block is pressed
+     * over a cauldron; below for Super Heating and the rest, where a Heater or a lit Campfire is
+     * standing under one.
      */
     private static <R extends AbstractProcessRecipe<?>> void process(
             EmiRegistry reg, RecipeManager rm, Supplier<Class<R>> cls, String key, String name, Setup setup) {
@@ -383,47 +344,64 @@ public final class AnvilCraftEmiModule {
             Class<R> type = cls.get();
             EmiRecipeCategory cat = Categories.machine(reg, key, setup.workstation(), name);
             Recipes.forEach(rm, type, (id, r) -> {
-                MachineDescriptor d = new MachineDescriptor();
-                for (ItemIngredientPredicate p : r.getInputItems()) d.itemInMerged(predIn(p));
+                AnvilDrop drop = new AnvilDrop();
+                for (ItemIngredientPredicate p : r.getInputItems()) drop.itemMerged(predIn(p));
+
+                HasCauldronSimple cauldron = r.getHasCauldron();
+                boolean converted = !r.getResultBlocks().isEmpty();
+                boolean blockUnderCauldron = cauldron != null
+                        && r.getProperty().getBlockInputOffset().y
+                                < r.getProperty().getCauldronOffset().y;
+
+                boolean first = true;
                 for (BlockStatePredicate bp : r.getInputBlocks()) {
-                    // A structural block is the machine the recipe runs on, so it survives; only a
-                    // block the recipe actually transforms belongs in an input slot.
-                    if (setup.blocksAreMachine()) {
-                        d.catalyst(blockIn(bp));
+                    EmiIngredient block = blockIn(bp);
+                    // Every 1.5.3 type declares exactly one; a second would have nowhere of its own
+                    // to stand, so it joins the payload rather than going unshown.
+                    if (!first) {
+                        drop.itemMerged(block);
+                    } else if (blockUnderCauldron) {
+                        drop.over(block);
+                    } else if (cauldron != null) {
+                        drop.itemMerged(block);
+                    } else if (converted) {
+                        drop.onto(block);
                     } else {
-                        d.itemInMerged(blockIn(bp));
+                        drop.on(block);
                     }
+                    first = false;
                 }
-                HasCauldronSimple c = r.getHasCauldron();
-                if (c != null) {
-                    d.fluidIn(fluid(c.fluid()));
-                    d.fluidOut(fluid(c.transform()));
+                if (cauldron != null) {
+                    // A filled cauldron has no item form in vanilla or in AnvilCraft, so the
+                    // plain one carries the vessel and the fluid tank beside it says what is in it.
+                    drop.on(Categories.stack(CAULDRON));
+                    drop.fluidIn(fluid(cauldron.fluid()));
+                    drop.fluidOut(fluid(cauldron.transform()));
                 }
-                for (ChanceItemStack o : r.getResultItems()) out(d, o);
-                for (ChanceBlockState cb : r.getResultBlocks()) d.itemOut(blockOut(cb));
-                d.info(Component.literal(setup.how()));
-                reg.addRecipe(new GenericEmiRecipe(cat, id, d));
+
+                for (ChanceItemStack o : r.getResultItems()) out(drop, o);
+                for (ChanceBlockState cb : r.getResultBlocks()) drop.out(blockOut(cb));
+                if (setup.note() != null) {
+                    drop.note(Component.literal(setup.note()));
+                }
+                reg.addRecipe(new AnvilDropEmiRecipe(cat, id, drop));
             });
         });
     }
 
     /**
-     * What a process category needs beyond its recipes: the block it runs on, whether that block is
-     * machinery the recipe merely requires (rather than something it consumes), and the sentence
-     * that says how to actually set the thing up. Every {@link AbstractProcessRecipe} shares one
-     * trigger — {@code ON_ANVIL_FALL_ON} — so an anvil always has to land; what differs is where the
-     * items go and what has to be underneath them.
+     * What a process category needs beyond its recipes: the block whose tab it appears under, and a
+     * note for the one thing the picture cannot draw — a block state, such as a Campfire that has to
+     * be lit or a trapdoor that has to be closed.
      */
-    private record Setup(String workstation, boolean blocksAreMachine, String how) {}
+    private record Setup(String workstation, String note) {}
 
-    /** The recipe supplies its own blocks and transforms them, so nothing here is scenery. */
-    private static Setup transforms(String how) {
-        return new Setup(ANVIL, false, how);
+    private static Setup at(String workstation) {
+        return new Setup(workstation, null);
     }
 
-    /** The block is hardcoded machinery the recipe runs on top of, and it survives the process. */
-    private static Setup machine(String workstation, String how) {
-        return new Setup(workstation, true, how);
+    private static Setup at(String workstation, String note) {
+        return new Setup(workstation, note);
     }
 
     /** Feed items to a falling anvil to bank mass; the machine emits its product once the total is met. */
@@ -431,10 +409,11 @@ public final class AnvilCraftEmiModule {
         EmiRecipeCategory cat =
                 Categories.machine(reg, "anvilcraft_mass_inject", "anvilcraft:space_overcompressor", "Mass Inject");
         Recipes.forEach(rm, MassInjectRecipe.class, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
-            d.itemIn(EmiIngredient.of(r.getIngredient()));
-            d.info(r.displayMassValue());
-            reg.addRecipe(new GenericEmiRecipe(cat, id, d));
+            AnvilDrop drop = new AnvilDrop();
+            drop.item(EmiIngredient.of(r.getIngredient()));
+            drop.on(Categories.stack("anvilcraft:space_overcompressor"));
+            drop.note(r.displayMassValue());
+            reg.addRecipe(new AnvilDropEmiRecipe(cat, id, drop));
         });
     }
 
@@ -442,22 +421,24 @@ public final class AnvilCraftEmiModule {
     private static void anvilCollision(EmiRegistry reg, RecipeManager rm) {
         EmiRecipeCategory cat = Categories.machine(reg, "anvilcraft_anvil_collision", ANVIL, "Anvil Collision");
         Recipes.forEach(rm, AnvilCollisionCraftRecipe.class, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
+            AnvilDrop drop = new AnvilDrop();
             EmiIngredient anvil = blockIn(r.anvil());
-            // A consumed anvil is a real input; a surviving one is a tool, which is what catalysts are for.
+            // A consumed anvil is a real cost; a surviving one is equipment, which the catalyst
+            // marking on the scene already says.
             if (r.consume()) {
-                d.itemIn(anvil);
+                drop.anvilConsumed(anvil);
             } else {
-                d.catalyst(anvil);
+                drop.anvil(anvil);
             }
-            d.itemIn(blockIn(r.hitBlock()));
+            // The blocks it converts lie beside the one it lands on, so they share the payload deck.
             for (BlockTransform t : r.transformBlocks()) {
-                d.itemIn(blockIn(t.inputBlock()));
-                d.itemOut(blockOut(t.outputBlock()));
+                drop.itemMerged(blockIn(t.inputBlock()));
+                drop.out(blockOut(t.outputBlock()));
             }
-            for (ChanceItemStack o : r.outputItems()) out(d, o);
-            d.info(Component.literal("Need Speed: " + r.speed() + " m/tick"));
-            reg.addRecipe(new GenericEmiRecipe(cat, id, d));
+            drop.onto(blockIn(r.hitBlock()));
+            for (ChanceItemStack o : r.outputItems()) out(drop, o);
+            drop.note(Component.literal("Needs the anvil falling at " + r.speed() + " m/tick"));
+            reg.addRecipe(new AnvilDropEmiRecipe(cat, id, drop));
         });
     }
 
@@ -619,12 +600,21 @@ public final class AnvilCraftEmiModule {
      * says the range in words.
      */
     private static void out(MachineDescriptor d, ChanceItemStack c) {
+        d.itemOut(chanceStack(c, d.info));
+    }
+
+    private static void out(AnvilDrop d, ChanceItemStack c) {
+        d.out(chanceStack(c, d.info));
+    }
+
+    /** The result stack itself; a range it cannot show becomes a line appended to {@code notes}. */
+    private static EmiStack chanceStack(ChanceItemStack c, List<Component> notes) {
         if (c == null) {
-            return;
+            return null;
         }
         ItemStack s = c.stack();
         if (s == null || s.isEmpty()) {
-            return;
+            return null;
         }
         EmiStack out = EmiStack.of(s);
         switch (c.count()) {
@@ -641,12 +631,13 @@ public final class AnvilCraftEmiModule {
                 double high = constant(u.max(), low);
                 out.setAmount(amount(high));
                 if (high > low) {
-                    d.info(Component.literal(s.getHoverName().getString() + ": " + amount(low) + "-" + amount(high)));
+                    notes.add(
+                            Component.literal(s.getHoverName().getString() + ": " + amount(low) + "-" + amount(high)));
                 }
             }
             default -> {}
         }
-        d.itemOut(out);
+        return out;
     }
 
     /** A nested provider's fixed value, or {@code fallback} when it is not a plain constant. */
