@@ -288,6 +288,11 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
             g.fill(x + 2, y + 34 - height, x + 16, y + 35 - height, 0x65ffffff);
         }
         g.fill(x + 2, y + 2, x + 3, y + 33, 0x30ffffff);
+        for (int level = 1; level < 8; level++) {
+            int lineY = y + 2 + level * 4;
+            int lineEnd = level == 4 ? x + 17 : x + 4;
+            g.fill(x + 1, lineY, lineEnd, lineY + 1, 0xff373737);
+        }
     }
 
     private void renderTankTooltip(GuiGraphics g, int x, int y) {
