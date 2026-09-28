@@ -39,7 +39,6 @@ import net.minecraft.world.level.material.Fluids;
 final class AnvilCraftBehaviorEmiModule {
     private AnvilCraftBehaviorEmiModule() {}
 
-    private static final String ANVIL = "minecraft:anvil";
     private static final String CAULDRON = "minecraft:cauldron";
     private static final String CURSED_GOLD_BLOCK = "anvilcraft:cursed_gold_block";
     private static final String VOID_MATTER_BLOCK = "anvilcraft:void_matter_block";
@@ -51,10 +50,12 @@ final class AnvilCraftBehaviorEmiModule {
     private static final TagKey<Block> VOID_DECAY_PRODUCTS =
             TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("anvilcraft", "void_decay_products"));
 
-    static void register(EmiRegistry reg) {
+    static void register(EmiRegistry reg, EmiRecipeCategory itemInject) {
         AnvilCraftEmiModule.safely("Beacon Conversion", () -> beaconConversion(reg));
         AnvilCraftEmiModule.safely("Void Decay", () -> voidDecay(reg));
-        AnvilCraftEmiModule.safely("Transcendium Recipe", () -> transcendium(reg));
+        if (itemInject != null) {
+            AnvilCraftEmiModule.safely("Transcendium Recipe", () -> transcendium(reg, itemInject));
+        }
         AnvilCraftEmiModule.safely("Cement Staining", () -> cementStaining(reg));
         // The only one reading an AnvilCraft class rather than ids and tags, so the only one here a
         // version bump can take away.
@@ -154,12 +155,16 @@ final class AnvilCraftBehaviorEmiModule {
 
     /**
      * An anvil landing on an Overheated Ember Metal Block with a Charged Neutronium Ingot on top.
-     * What comes out is decided by how many enchantments the ingot carries, which is why the five
+     * That is an item injected into a block, so the entries go in AnvilCraft's own Item Inject
+     * category rather than getting a tab of their own — the mod implements it as a hardcoded
+     * behaviour rather than an {@code item_inject} recipe, but a player has no way of telling and no
+     * reason to care.
+     *
+     * <p>What comes out is decided by how many enchantments the ingot carries, which is why the five
      * entries share one picture — and why the counts that scale with the enchantment total are
      * spelled out in text rather than baked into a stack size.
      */
-    private static void transcendium(EmiRegistry reg) {
-        EmiRecipeCategory cat = Categories.machine(reg, "anvilcraft_transcendium", ANVIL, "Transcendium Recipe");
+    private static void transcendium(EmiRegistry reg, EmiRecipeCategory cat) {
         transcendiumEntry(reg, cat, "0", "The ingot carries no enchantments", 4, false, 0, false);
         transcendiumEntry(reg, cat, "1_10", "The ingot carries 1-10 enchantments", 4, true, 3, false);
         transcendiumEntry(reg, cat, "11_14", "The ingot carries 11-14 enchantments", 4, true, 3, false);

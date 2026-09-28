@@ -8,26 +8,26 @@ import net.minecraft.network.chat.Component;
 
 /**
  * One anvil drop, described as the thing a player builds rather than as a row of slots: an anvil at
- * the top and, below it, the decks it falls through — the items lying on or floating in something,
- * the block that something is, and whatever that block is standing on. {@link AnvilDropEmiRecipe}
- * draws it.
+ * the top and, below it, the decks it falls through. {@link AnvilDropEmiRecipe} draws it.
  *
- * <p>The base is either machinery the recipe runs on and leaves intact — a Crushing Table, a
- * cauldron, a lit Campfire — or the block the recipe itself converts. {@link #on} and {@link #onto}
- * are the two cases, and which is used decides whether the slot is marked as a catalyst.
+ * <p>The topmost deck is the payload — items lying on something or floating in a cauldron. Under it
+ * comes a stack of blocks, in the order they are stacked in the world, because more than one type
+ * needs two: Block Smear presses a block onto the one below it and Block Compress squashes a pair
+ * into one. Each of those blocks is either left standing or gone afterwards, which is the whole
+ * difference between those two categories, so {@link #on} and {@link #onto} record it per deck.
  */
 final class AnvilDrop {
 
+    /** One block of the structure, and whether it is still there when the anvil has finished. */
+    record Deck(EmiIngredient block, boolean survives, EmiIngredient fluid) {}
+
     final List<EmiIngredient> payload = new ArrayList<>();
+    final List<Deck> decks = new ArrayList<>();
     final List<EmiStack> outputs = new ArrayList<>();
     final List<Component> info = new ArrayList<>();
 
     EmiIngredient anvil;
     boolean anvilConsumed;
-    EmiIngredient base;
-    boolean baseConsumed;
-    EmiIngredient under;
-    EmiIngredient fluidIn;
     EmiStack fluidOut;
 
     /** The anvil to draw. Only the tiered anvils need to say; everything else gets the vanilla one. */
@@ -44,7 +44,7 @@ final class AnvilDrop {
         return anvil(stack);
     }
 
-    /** An item lying on the base, or floating in it when the base is a cauldron. */
+    /** An item lying on the top deck, or floating in it when that deck is a cauldron. */
     AnvilDrop item(EmiIngredient stack) {
         if (present(stack)) {
             payload.add(stack);
@@ -84,47 +84,32 @@ final class AnvilDrop {
         return true;
     }
 
-    /** Machinery directly under the payload that the recipe needs present and does not consume. */
+    /** The next deck down: a block the drop needs present and leaves standing. */
     AnvilDrop on(EmiIngredient block) {
-        if (present(block)) {
-            base = block;
-            baseConsumed = false;
-        }
-        return this;
+        return deck(block, true);
     }
 
-    /** The block directly under the payload, which this recipe converts into something else. */
+    /** The next deck down: a block the drop converts or takes away. */
     AnvilDrop onto(EmiIngredient block) {
-        if (present(block)) {
-            base = block;
-            baseConsumed = true;
-        }
-        return this;
+        return deck(block, false);
     }
 
-    /** A second block below the base — the Heater or lit Campfire a cauldron is standing on. */
-    AnvilDrop over(EmiIngredient block) {
+    private AnvilDrop deck(EmiIngredient block, boolean survives) {
         if (present(block)) {
-            under = block;
-        }
-        return this;
-    }
-
-    AnvilDrop out(EmiStack stack) {
-        if (present(stack)) {
-            outputs.add(stack);
+            decks.add(new Deck(block, survives, null));
         }
         return this;
     }
 
     /**
-     * What the cauldron holds when the anvil lands, drawn as a tank beside it. None of the filled
-     * cauldrons — vanilla's or AnvilCraft's — has an item form, so the fluid is the only way to say
-     * which one the recipe means.
+     * What the deck just added holds, drawn as a tank beside it. No filled cauldron has an item form
+     * in vanilla or in AnvilCraft, so the fluid is the only way to say which one the recipe means.
      */
     AnvilDrop fluidIn(EmiIngredient fluid) {
-        if (present(fluid)) {
-            fluidIn = fluid;
+        if (present(fluid) && !decks.isEmpty()) {
+            int last = decks.size() - 1;
+            Deck deck = decks.get(last);
+            decks.set(last, new Deck(deck.block(), deck.survives(), fluid));
         }
         return this;
     }
@@ -133,6 +118,13 @@ final class AnvilDrop {
     AnvilDrop fluidOut(EmiStack fluid) {
         if (present(fluid)) {
             fluidOut = fluid;
+        }
+        return this;
+    }
+
+    AnvilDrop out(EmiStack stack) {
+        if (present(stack)) {
+            outputs.add(stack);
         }
         return this;
     }
@@ -153,17 +145,21 @@ final class AnvilDrop {
         return !payload.isEmpty();
     }
 
-    /** Slots across the base deck: the block the payload rests on, and what that block holds. */
-    int baseCells() {
-        return (base == null ? 0 : 1) + (fluidIn == null ? 0 : 1);
+    /** The widest deck: a block and, where there is one, the fluid tank beside it. */
+    int widestDeck() {
+        int widest = payload.size();
+        for (Deck deck : decks) {
+            widest = Math.max(widest, deck.fluid() == null ? 1 : 2);
+        }
+        return widest;
     }
 
     int outputCells() {
         return outputs.size() + (fluidOut == null ? 0 : 1);
     }
 
-    /** How many decks hang below the anvil: the payload, the base and the block under it. */
-    int decks() {
-        return (hasPayload() ? 1 : 0) + (baseCells() == 0 ? 0 : 1) + (under == null ? 0 : 1);
+    /** How many rows hang below the anvil: the payload, then one per block of the structure. */
+    int rows() {
+        return (hasPayload() ? 1 : 0) + decks.size();
     }
 }

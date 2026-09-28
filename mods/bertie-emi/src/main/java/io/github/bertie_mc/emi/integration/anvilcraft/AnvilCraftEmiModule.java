@@ -108,6 +108,7 @@ public final class AnvilCraftEmiModule {
     private static final Logger LOGGER = LoggerFactory.getLogger("bertieemi");
 
     private static final String ANVIL = "minecraft:anvil";
+    private static final String GIANT_ANVIL = "anvilcraft:giant_anvil";
     private static final String CAULDRON = "minecraft:cauldron";
 
     public static void register(EmiRegistry reg) {
@@ -187,7 +188,8 @@ public final class AnvilCraftEmiModule {
         process(reg, rm, () -> BlockCompressRecipe.class, "anvilcraft_block_compress", "Block Compress", at(ANVIL));
 
         // Mixed: this one carries item AND block sides at once, which is why the mapper is unified.
-        process(reg, rm, () -> ItemInjectRecipe.class, "anvilcraft_item_inject", "Item Inject", at(ANVIL));
+        EmiRecipeCategory itemInject =
+                process(reg, rm, () -> ItemInjectRecipe.class, "anvilcraft_item_inject", "Item Inject", at(ANVIL));
 
         safely("Jewel Crafting", () -> jewelCrafting(reg, rm));
         safely("Stamping (Unique)", () -> stampingUnique(reg, rm));
@@ -201,7 +203,7 @@ public final class AnvilCraftEmiModule {
         safely("Canning Food", () -> canningFood(reg, rm));
         safely("Pill", () -> pills(reg, rm));
         safely("Template Dissociation", () -> AnvilCraftDissociationEmiModule.register(reg));
-        AnvilCraftBehaviorEmiModule.register(reg);
+        AnvilCraftBehaviorEmiModule.register(reg, itemInject);
         AnvilCraftGuideEmiModule.register(reg);
     }
 
@@ -214,10 +216,19 @@ public final class AnvilCraftEmiModule {
      * JVM resolves them lazily.
      */
     static void safely(String category, Runnable body) {
-        try {
+        safely(category, () -> {
             body.run();
+            return null;
+        });
+    }
+
+    /** The same, for the categories another module needs a handle on. Null when it was skipped. */
+    static <T> T safely(String category, Supplier<T> body) {
+        try {
+            return body.get();
         } catch (Throwable t) {
             LOGGER.warn("bertieemi: AnvilCraft '{}' is not in this build of the mod, skipping it", category, t);
+            return null;
         }
     }
 
@@ -329,16 +340,18 @@ public final class AnvilCraftEmiModule {
      * assembled. Every one of these types shares the {@code ON_ANVIL_FALL_ON} trigger, so an anvil
      * always has to land; what differs is which decks sit under it, and the recipe says that itself.
      *
-     * <p>Two facts do the sorting, so no category has to declare its own shape. A recipe's input
-     * block is machinery it runs on unless the recipe also declares result blocks, in which case it
-     * is the thing being converted. And the block sits above the cauldron or below it according to
-     * the offsets the recipe carries for rendering — above for Squeezing, where a block is pressed
-     * over a cauldron; below for Super Heating and the rest, where a Heater or a lit Campfire is
-     * standing under one.
+     * <p>The recipe's own offsets do the sorting, so no category has to declare its own shape. Input
+     * blocks are a column starting one below the items and going down, which is how Block Smear and
+     * Block Compress each name two. A block is gone afterwards when the recipe consumes its blocks
+     * or when a result block is written at its depth — the pair of rules that separates Smear, where
+     * the upper block is a stamp that stays, from Compress, where both are squashed into the result.
+     * The cauldron goes above the blocks or below them by the same offsets: above for Squeezing,
+     * where a block is pressed over one, below for Super Heating and the rest, where a Heater or a
+     * lit Campfire stands under it.
      */
-    private static <R extends AbstractProcessRecipe<?>> void process(
+    private static <R extends AbstractProcessRecipe<?>> EmiRecipeCategory process(
             EmiRegistry reg, RecipeManager rm, Supplier<Class<R>> cls, String key, String name, Setup setup) {
-        safely(name, () -> {
+        return safely(name, () -> {
             // Resolve the recipe class before declaring the category, so a type this build of
             // AnvilCraft no longer has leaves no empty tab behind.
             Class<R> type = cls.get();
@@ -348,35 +361,31 @@ public final class AnvilCraftEmiModule {
                 for (ItemIngredientPredicate p : r.getInputItems()) drop.itemMerged(predIn(p));
 
                 HasCauldronSimple cauldron = r.getHasCauldron();
-                boolean converted = !r.getResultBlocks().isEmpty();
-                boolean blockUnderCauldron = cauldron != null
-                        && r.getProperty().getBlockInputOffset().y
-                                < r.getProperty().getCauldronOffset().y;
+                long blockTop = Math.round(r.getProperty().getBlockInputOffset().y);
+                boolean cauldronOnTop =
+                        cauldron != null && Math.round(r.getProperty().getCauldronOffset().y) > blockTop;
+                if (cauldronOnTop) {
+                    cauldron(drop, cauldron);
+                }
 
-                boolean first = true;
-                for (BlockStatePredicate bp : r.getInputBlocks()) {
-                    EmiIngredient block = blockIn(bp);
-                    // Every 1.5.3 type declares exactly one; a second would have nowhere of its own
-                    // to stand, so it joins the payload rather than going unshown.
-                    if (!first) {
-                        drop.itemMerged(block);
-                    } else if (blockUnderCauldron) {
-                        drop.over(block);
-                    } else if (cauldron != null) {
-                        drop.itemMerged(block);
-                    } else if (converted) {
+                long resultTop = Math.round(r.getProperty().getBlockOutputOffset().y);
+                int results = r.getResultBlocks().size();
+                boolean takesBlocks = r.getProperty().isConsumeInputBlocks();
+                List<BlockStatePredicate> blocks = r.getInputBlocks();
+                for (int i = 0; i < blocks.size(); i++) {
+                    EmiIngredient block = blockIn(blocks.get(i));
+                    long depth = blockTop - i;
+                    // Gone afterwards either because the recipe eats its blocks outright, or
+                    // because a result block is written where this one was standing.
+                    boolean replaced = results > 0 && depth <= resultTop && depth > resultTop - results;
+                    if (takesBlocks || replaced) {
                         drop.onto(block);
                     } else {
                         drop.on(block);
                     }
-                    first = false;
                 }
-                if (cauldron != null) {
-                    // A filled cauldron has no item form in vanilla or in AnvilCraft, so the
-                    // plain one carries the vessel and the fluid tank beside it says what is in it.
-                    drop.on(Categories.stack(CAULDRON));
-                    drop.fluidIn(fluid(cauldron.fluid()));
-                    drop.fluidOut(fluid(cauldron.transform()));
+                if (cauldron != null && !cauldronOnTop) {
+                    cauldron(drop, cauldron);
                 }
 
                 for (ChanceItemStack o : r.getResultItems()) out(drop, o);
@@ -386,7 +395,18 @@ public final class AnvilCraftEmiModule {
                 }
                 reg.addRecipe(new AnvilDropEmiRecipe(cat, id, drop));
             });
+            return cat;
         });
+    }
+
+    /**
+     * A cauldron deck. No filled cauldron has an item form in vanilla or in AnvilCraft, so the plain
+     * one carries the vessel and the fluid tank beside it says what is in it.
+     */
+    private static void cauldron(AnvilDrop drop, HasCauldronSimple cauldron) {
+        drop.on(Categories.stack(CAULDRON));
+        drop.fluidIn(fluid(cauldron.fluid()));
+        drop.fluidOut(fluid(cauldron.transform()));
     }
 
     /**
@@ -513,25 +533,32 @@ public final class AnvilCraftEmiModule {
     }
 
     /**
-     * Multiblock structures. The pattern is a 3D layer grid; EMI gets its flattened block list rather
-     * than the layer-by-layer viewer JEI draws, which keeps it inside the generic one-row layout.
+     * Multiblock structures, both triggered by a Giant Anvil landing rather than by an ordinary one.
+     * The pattern is a 3D layer grid; EMI gets its flattened block list rather than the layer-by-layer
+     * viewer JEI draws, which keeps it inside the generic one-row layout.
+     *
+     * <p>The two types build the same patterns and show the same icon, so each says which of the two
+     * things it leaves behind: Crafting drops the machine as an item, Conversion turns the structure
+     * into the working machine where it stands.
      */
     private static void multiblock(EmiRegistry reg, RecipeManager rm) {
-        EmiRecipeCategory craft = Categories.machine(reg, "anvilcraft_multiblock", ANVIL, "Multiblock Crafting");
+        EmiRecipeCategory craft = Categories.machine(reg, "anvilcraft_multiblock", GIANT_ANVIL, "Multiblock Crafting");
         Recipes.forEach(rm, MultiblockRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (ItemStack s : r.getPattern().toIngredientList()) d.itemInMerged(EmiStack.of(s));
             d.itemOut(EmiStack.of(r.getResult()));
+            d.info(Component.literal("Drop a Giant Anvil on the structure to take it as an item"));
             reg.addRecipe(new GenericEmiRecipe(craft, id, d));
         });
 
         EmiRecipeCategory conv =
-                Categories.machine(reg, "anvilcraft_multiblock_conversion", ANVIL, "Multiblock Conversion");
+                Categories.machine(reg, "anvilcraft_multiblock_conversion", GIANT_ANVIL, "Multiblock Conversion");
         Recipes.forEach(rm, MultiblockConversionRecipe.class, (id, r) -> {
             MachineDescriptor d = new MachineDescriptor();
             for (ItemStack s : r.getInputPattern().toIngredientList()) d.itemInMerged(EmiStack.of(s));
             d.itemOut(EmiStack.of(r.centerOutput()));
-            d.info(Component.literal("Forms a " + r.getSize() + "-block structure"));
+            d.info(Component.literal("Drop a Giant Anvil on the structure to assemble it where it stands," + " as "
+                    + r.getSize() + " blocks rather than as an item"));
             reg.addRecipe(new GenericEmiRecipe(conv, id, d));
         });
     }

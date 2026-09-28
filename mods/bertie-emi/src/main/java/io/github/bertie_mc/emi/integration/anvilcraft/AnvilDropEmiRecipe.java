@@ -16,8 +16,8 @@ import net.minecraft.util.FormattedCharSequence;
 
 /**
  * An anvil drop drawn as the arrangement that performs it: the anvil on top, a downward stroke, and
- * under it the decks the recipe actually needs — the items, the block they are lying on or the
- * cauldron they are floating in, and whatever that is standing on. Almost everything in AnvilCraft
+ * under it the decks the recipe actually needs — the items, and then the blocks they are stacked on,
+ * in the order they stand in the world. Almost everything in AnvilCraft
  * is a structure the player builds rather than a machine they fill, and an inputs-arrow-outputs row
  * cannot say which block goes where; it can only add a sentence underneath, which is what this
  * replaces.
@@ -53,22 +53,19 @@ class AnvilDropEmiRecipe extends BasicEmiRecipe {
         super(category, id, computeWidth(drop), computeHeight(drop));
         this.drop = drop;
         this.inputs = new ArrayList<>(drop.payload);
-        if (drop.fluidIn != null) {
-            this.inputs.add(drop.fluidIn);
-        }
         this.catalysts = new ArrayList<>();
         if (drop.anvil != null && drop.anvilConsumed) {
             this.inputs.add(drop.anvil);
         }
-        if (drop.base != null) {
-            if (drop.baseConsumed) {
-                this.inputs.add(drop.base);
+        for (AnvilDrop.Deck deck : drop.decks) {
+            if (deck.survives()) {
+                this.catalysts.add(deck.block());
             } else {
-                this.catalysts.add(drop.base);
+                this.inputs.add(deck.block());
             }
-        }
-        if (drop.under != null) {
-            this.catalysts.add(drop.under);
+            if (deck.fluid() != null) {
+                this.inputs.add(deck.fluid());
+            }
         }
         this.outputs = new ArrayList<>(drop.outputs);
         if (drop.fluidOut != null) {
@@ -80,7 +77,7 @@ class AnvilDropEmiRecipe extends BasicEmiRecipe {
 
     /** The widest deck of the scene, never fewer than one slot. */
     private static int sceneCells(AnvilDrop d) {
-        return Math.max(1, Math.max(d.payload.size(), d.baseCells()));
+        return Math.max(1, d.widestDeck());
     }
 
     private static int sceneWidth(AnvilDrop d) {
@@ -88,7 +85,7 @@ class AnvilDropEmiRecipe extends BasicEmiRecipe {
     }
 
     private static int sceneHeight(AnvilDrop d) {
-        return SLOT + FALL + d.decks() * SLOT;
+        return SLOT + FALL + d.rows() * SLOT;
     }
 
     private static int outputRows(AnvilDrop d) {
@@ -187,19 +184,14 @@ class AnvilDropEmiRecipe extends BasicEmiRecipe {
             }
             y += SLOT;
         }
-        if (drop.baseCells() > 0) {
-            int x = PAD + centre(sceneW, drop.baseCells() * SLOT);
-            if (drop.base != null) {
-                scenery(w, drop.base, x, y, !drop.baseConsumed);
-                x += SLOT;
-            }
-            if (drop.fluidIn != null) {
-                tank(w, drop.fluidIn, x, y);
+        for (AnvilDrop.Deck deck : drop.decks) {
+            int cells = deck.fluid() == null ? 1 : 2;
+            int x = PAD + centre(sceneW, cells * SLOT);
+            scenery(w, deck.block(), x, y, deck.survives());
+            if (deck.fluid() != null) {
+                tank(w, deck.fluid(), x + SLOT, y);
             }
             y += SLOT;
-        }
-        if (drop.under != null) {
-            scenery(w, drop.under, PAD + centre(sceneW, SLOT), y, true);
         }
 
         int body = bodyHeight(drop);

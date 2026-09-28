@@ -11,8 +11,12 @@ import java.util.List;
  * the tiers above.
  *
  * <p>Written from the 1.6 guide book, checked against 1.5.3. The Experience Gem is a 1.6 addition and
- * has no page. Frost Metal keeps its page because the material and its template do exist in 1.5.3,
- * even though the Frost anvil, grindstone and smithing table do not.
+ * has no page. Frost Metal keeps its page because the material exists in 1.5.3 even though the Frost
+ * anvil, grindstone and smithing table do not.
+ *
+ * <p>The upgrade templates have no pages. Where each one is found is already a loot table or a
+ * villager trade, and what it upgrades is already the smithing recipes it appears in; a page saying
+ * so in words is a third copy of both.
  */
 final class AnvilCraftMaterialGuide {
     private AnvilCraftMaterialGuide() {}
@@ -141,12 +145,6 @@ final class AnvilCraftMaterialGuide {
                 "Spend the first of it on the Royal Smithing Table.");
         page(
                 reg,
-                "royal_template",
-                List.of("anvilcraft:royal_steel_upgrade_smithing_template"),
-                "Found in village weaponsmith chests, or bought from a journeyman Jeweler.",
-                "Upgrades items and blocks to the Royal Steel tier.");
-        page(
-                reg,
                 "ember_metal",
                 List.of("anvilcraft:ember_metal_ingot", "anvilcraft:ember_metal_block"),
                 "Netherite-grade durability and mining level, and it carries the Reforging property.",
@@ -154,21 +152,11 @@ final class AnvilCraftMaterialGuide {
                 "Built from Earth Core Shards.");
         page(
                 reg,
-                "ember_template",
-                List.of("anvilcraft:ember_metal_upgrade_smithing_template"),
-                "Upgrades items and blocks to the Ember tier.");
-        page(
-                reg,
                 "frost_metal",
                 List.of("anvilcraft:frost_metal_ingot", "anvilcraft:frost_metal_block"),
                 "Netherite-grade durability and mining level, carrying the Ruthless property.",
                 "Note that the Frost anvil, grindstone and smithing table are a later addition than this"
                         + " pack's AnvilCraft, so the metal is here but its own tier blocks are not.");
-        page(
-                reg,
-                "frost_template",
-                List.of("anvilcraft:frost_metal_upgrade_smithing_template"),
-                "Upgrades items and blocks to the Frost tier.");
         page(
                 reg,
                 "transcendium",
