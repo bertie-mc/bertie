@@ -375,9 +375,18 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
-# Recipe override: the camera runs on Cognition, not iron.
+# Recipe overrides: the camera runs on Cognition, not iron, and colour film develops without a
+# Mundane Potion.
 [[dependencies.${mod_id}]]
 modId="exposure"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Recipe override: its colour films develop without a Mundane Potion.
+[[dependencies.${mod_id}]]
+modId="exposure_expanded"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

@@ -1,0 +1,39 @@
+{
+  "type": "exposure:film_developing",
+  "film": {
+    "tag": "exposure:color_film_rolls"
+  },
+  "ingredients": [
+    [
+      {
+        "type": "neoforge:components",
+        "items": "minecraft:potion",
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "minecraft:awkward"
+          }
+        }
+      }
+    ],
+    [
+      {
+        "type": "neoforge:components",
+        "items": "minecraft:potion",
+        "components": {
+          "minecraft:potion_contents": {
+            "potion": "minecraft:thick"
+          }
+        }
+      }
+    ]
+  ],
+  "result": {
+    "id": "exposure:developed_color_film"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "exposure"
+    }
+  ]
+}

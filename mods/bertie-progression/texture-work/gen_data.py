@@ -4395,6 +4395,92 @@ if _dusted is None:
 else:
     print(f"  crushed ore to dust: {len(_dusted)} crushing recipes now yield dust")
 
+# ================================================================ NO MUNDANE POTION
+# Nothing brews a Mundane Potion in this pack (PotionBrewingBuilderMixin), so whatever asked for one
+# is re-emitted without it: Timeless Slurry brews from a Thick Potion, colour film develops from the
+# Awkward and Thick potions alone, and loot loses the entry that handed one out. A new kind of file
+# naming the potion is reported rather than guessed at.
+MUNDANE = "minecraft:mundane"
+# Mods whose files are replaced from outside their own namespace (Exposure ships its Create recipes
+# under create:), which the load-order check at the end cannot read off the written paths.
+_override_sources = set()
+
+def _has_mundane(node):
+    return MUNDANE in json.dumps(node)
+
+def _loot_without_mundane(entries):
+    kept = []
+    for entry in entries:
+        if "children" in entry:
+            entry["children"] = _loot_without_mundane(entry["children"])
+            if entry["children"]:
+                kept.append(entry)
+        elif not _has_mundane(entry):
+            kept.append(entry)
+    return kept
+
+def _jar_mod_ids(zf):
+    for toml in ("META-INF/neoforge.mods.toml", "META-INF/mods.toml"):
+        try:
+            text = zf.read(toml).decode("utf-8", "replace")
+        except KeyError:
+            continue
+        found = (re.search(r'modId\s*=\s*"([a-z0-9_]+)"', blk.split("[[")[0]) for blk in text.split("[[mods]]")[1:])
+        return {m.group(1) for m in found if m}
+    return set()
+
+def _without_mundane():
+    import zipfile
+    jars = [f for f in _pack_jars() if not f.startswith(MODID)]
+    if not jars:
+        return None
+    changed = []
+    for jar in jars:
+        try:
+            zf = zipfile.ZipFile(os.path.join(INSTANCE_MODS, jar))
+        except zipfile.BadZipFile:
+            continue
+        with zf:
+            names = [n for n in sorted(zf.namelist())
+                     if re.match(r"data/[^/]+/(recipe|loot_table)/.+\.json$", n) and MUNDANE.encode() in zf.read(n)]
+            if not names:
+                continue
+            owners = _jar_mod_ids(zf) - {"minecraft", "neoforge"}
+            for name in names:
+                if name in written:
+                    with open(os.path.join(RES, name.replace("/", os.sep)), encoding="utf-8") as f:
+                        data = json.load(f)
+                else:
+                    data = json.loads(zf.read(name))
+                kind = data.get("type")
+                if kind == "irons_spellbooks:alchemist_cauldron_brew":
+                    data["base_fluid"]["components"]["minecraft:potion_contents"]["potion"] = "minecraft:thick"
+                elif kind == "exposure:film_developing":
+                    data["ingredients"] = [alts for alts in data["ingredients"] if not _has_mundane(alts)]
+                elif kind == "create:sequenced_assembly":
+                    data["sequence"] = [step for step in data["sequence"] if not _has_mundane(step)]
+                elif "/loot_table/" in name:
+                    for pool in data.get("pools", []):
+                        pool["entries"] = _loot_without_mundane(pool.get("entries", []))
+                else:
+                    print(f"  !! no Mundane: {jar}: {name} ({kind}) asks for one and is not handled")
+                    continue
+                assert not _has_mundane(data), name
+                have = data.get("neoforge:conditions", [])
+                loaded = {c.get("modid") for c in have if c.get("type") == "neoforge:mod_loaded"}
+                data["neoforge:conditions"] = have + [c for c in conds(*owners, *external_mods(kind))
+                                                      if c["modid"] not in loaded]
+                write(name, data)
+                _override_sources.update(owners)
+                changed.append(name)
+    return changed
+
+_unmundane = _without_mundane()
+if _unmundane is None:
+    print("  !! no Mundane: no jars found - recipes and loot that name it left as they were.")
+else:
+    print(f"  no Mundane: {len(_unmundane)} recipes and loot tables re-emitted without it")
+
 # ================================================================ REMOVED ITEMS
 # Edit bertie-workspace/docs/removed/<modid>.md, then run this generator. See that directory's
 # README.md. The planning records remain in the private workspace; generated runtime data remains
@@ -5294,7 +5380,7 @@ for _blk in io.open(_TOML, encoding="utf-8").read().split("[[dependencies.")[1:]
         _declared.add(_m.group(1))
 # minecraft and neoforge always load first; `c` and `forge` are shared tag namespaces nobody owns.
 _own = {MODID, "minecraft", "neoforge", "c", "forge", "zzzbertie"}
-_overridden = {p.split("/")[1] for p in written if p.startswith("data/") and "/" in p[5:]}
+_overridden = {p.split("/")[1] for p in written if p.startswith("data/") and "/" in p[5:]} | _override_sources
 _undeclared = sorted(_overridden - _declared - _own)
 if _undeclared:
     raise SystemExit(
