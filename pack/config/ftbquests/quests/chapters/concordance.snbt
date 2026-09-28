@@ -431,8 +431,8 @@
 				item: { count: 1, id: "minecraft:dragon_egg" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5B00000000000015"]
@@ -450,8 +450,8 @@
 				item: { count: 1, id: "dracolotl:bucket_of_dracolotl" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 10.5d
+			y: 3.0d
 		}
 	]
 }

@@ -1269,7 +1269,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1285,7 +1285,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1301,7 +1301,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1317,7 +1317,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1333,7 +1333,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6B00000000000067"]
@@ -1349,7 +1349,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6B00000000000005"]
@@ -1368,10 +1368,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"6B00000000000062"
-				"6B0000000000004F"
-			]
+			dependencies: ["6B0000000000004F"]
 			id: "6B0000000000006F"
 			rewards: [{
 				id: "6B0000000200006F"
