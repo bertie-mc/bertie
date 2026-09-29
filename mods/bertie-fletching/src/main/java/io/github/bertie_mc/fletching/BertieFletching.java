@@ -27,6 +27,9 @@ public final class BertieFletching {
 
     public BertieFletching(IEventBus bus) {
         MENUS.register(bus);
+        ArrowStatus.EFFECTS.register(bus);
+        ArrowCombatEvents.register(NeoForge.EVENT_BUS);
+        NeoForge.EVENT_BUS.addListener(TrailLights::tick);
         NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, BertieFletching::interact);
         NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, BertieFletching::breakTable);
     }

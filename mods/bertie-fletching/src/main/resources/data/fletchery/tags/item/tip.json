@@ -1,0 +1,97 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:flint",
+      "required": false
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:prismarine_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:iron_ingot",
+      "required": false
+    },
+    {
+      "id": "minecraft:quartz",
+      "required": false
+    },
+    {
+      "id": "minecraft:gold_ingot",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:gargoyle_shard",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:permafrost_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:star_fragment",
+      "required": false
+    },
+    {
+      "id": "minecraft:diamond",
+      "required": false
+    },
+    {
+      "id": "malum:mnemonic_fragment",
+      "required": false
+    },
+    {
+      "id": "aquamirae:abyssal_amethyst",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:echo_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_ingot",
+      "required": false
+    },
+    {
+      "id": "pastel:resonance_shard",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:reinforced_echo_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:heavy_core",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:divine_soulshard",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:eldritch_soul_shard",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:permafrost_shard",
+      "required": false
+    }
+  ]
+}

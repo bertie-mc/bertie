@@ -7,9 +7,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionContents;
 
-/** Stores batches, not fluid millibuckets: one bottle supplies two four-arrow crafts. */
+/** Stores batches, not fluid millibuckets: one bottle supplies one eight-arrow craft. */
 public final class PotionTank {
-    public static final int CAPACITY = 16;
+    public static final int CAPACITY = 8;
     private PotionContents contents = PotionContents.EMPTY;
     private int batches;
 
@@ -18,11 +18,11 @@ public final class PotionTank {
     }
 
     public boolean fill(ItemStack bottle) {
-        if (!isPotion(bottle) || batches > CAPACITY - 2) return false;
+        if (!isPotion(bottle) || batches >= CAPACITY) return false;
         PotionContents incoming = bottle.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY);
         if (batches > 0 && !contents.equals(incoming)) return false;
         contents = incoming;
-        batches += 2;
+        batches += 1;
         return true;
     }
 
@@ -49,6 +49,7 @@ public final class PotionTank {
     public CompoundTag save(HolderLookup.Provider registries) {
         CompoundTag tag = new CompoundTag();
         tag.putInt("Batches", batches);
+        tag.putInt("Format", 2);
         if (batches > 0) tag.put("Potion", displayStack().save(registries));
         return tag;
     }
@@ -57,7 +58,8 @@ public final class PotionTank {
         PotionTank tank = new PotionTank();
         ItemStack bottle = ItemStack.parseOptional(registries, tag.getCompound("Potion"));
         if (isPotion(bottle)) {
-            tank.batches = Math.clamp(tag.getInt("Batches"), 0, CAPACITY);
+            tank.batches = Math.clamp(
+                    tag.getInt("Format") >= 2 ? tag.getInt("Batches") : (tag.getInt("Batches") + 1) / 2, 0, CAPACITY);
             if (tank.batches > 0)
                 tank.contents = bottle.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY);
         }

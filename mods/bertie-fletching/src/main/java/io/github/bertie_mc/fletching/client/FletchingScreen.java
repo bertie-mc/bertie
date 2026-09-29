@@ -149,20 +149,19 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
         renderTank(guiGraphics);
     }
 
-    private void renderEmptySlotPlaceholders(GuiGraphics guiGraphics) {
+    private void renderEmptySlotPlaceholders(GuiGraphics graphics) {
         long now = System.currentTimeMillis();
-
-        for (int i = 0; i < SLOT_POS.length; i++) {
-            ItemStack stack = this.menu.getSlot(i).getItem();
-            if (stack.isEmpty()) {
-                List<ResourceLocation> icons = SLOT_PLACEHOLDER_SETS.get(i);
-                if (!icons.isEmpty()) {
-                    int frame = (int) (now / ROTATE_INTERVAL_MS[i] % icons.size());
-                    ResourceLocation icon = icons.get(frame);
-                    int slotX = this.leftPos + SLOT_POS[i][0];
-                    int slotY = this.topPos + SLOT_POS[i][1];
-                    guiGraphics.blit(icon, slotX, slotY, 0.0F, 0.0F, 16, 16, 16, 16);
-                }
+        for (int slot = 0; slot < 4; slot++) {
+            if (!menu.getSlot(slot).hasItem()) {
+                var items = io.github.bertie_mc.fletching.PartCatalog.inSlot(slot).stream()
+                        .map(io.github.bertie_mc.fletching.PartCatalog.Part::stack)
+                        .filter(stack -> !stack.isEmpty())
+                        .toList();
+                if (!items.isEmpty())
+                    graphics.renderItem(
+                            items.get((int) (now / 4000 % items.size())),
+                            leftPos + SLOT_POS[slot][0],
+                            topPos + SLOT_POS[slot][1]);
             }
         }
     }
@@ -189,7 +188,7 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
                             case 0 -> "fletchery_expanded.slot.feather";
                             case 1 -> "fletchery_expanded.slot.shaft";
                             case 2 -> "fletchery_expanded.slot.tip";
-                            case 3 -> "fletchery_expanded.slot.effect";
+                            case 3 -> "bertiefletching.slot.extra";
                             default -> null;
                         };
                 if (key != null) {
@@ -261,9 +260,13 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
             BufferSource buffer = Minecraft.getInstance().renderBuffers().bufferSource();
             EntityRenderDispatcher dispatcher = Minecraft.getInstance().getEntityRenderDispatcher();
             dispatcher.setRenderShadow(false);
-            dispatcher.render(this.previewEntity, 0.0, 0.0, 0.0, 0.0F, partialTick, poseStack, buffer, 15728880);
-            buffer.endBatch();
-            poseStack.popPose();
+            try {
+                dispatcher.render(this.previewEntity, 0, 0, 0, 0, partialTick, poseStack, buffer, 15728880);
+                buffer.endBatch();
+            } finally {
+                dispatcher.setRenderShadow(true);
+                poseStack.popPose();
+            }
         }
     }
 

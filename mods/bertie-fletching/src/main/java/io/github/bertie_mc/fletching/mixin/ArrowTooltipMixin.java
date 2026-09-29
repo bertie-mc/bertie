@@ -21,6 +21,34 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = CustomArrowItem.class, remap = false)
 public abstract class ArrowTooltipMixin {
+    @Inject(method = "appendHoverText", at = @At("HEAD"), cancellable = true)
+    private void bertie$redesignedTooltip(
+            ItemStack stack, Item.TooltipContext context, List<Component> lines, TooltipFlag flags, CallbackInfo ci) {
+        var tag =
+                stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
+        if (!io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag)) return;
+        String[] fields = {"feather", "shaft", "tip", "effect"};
+        net.minecraft.ChatFormatting[] colors = {
+            net.minecraft.ChatFormatting.AQUA,
+            net.minecraft.ChatFormatting.GOLD,
+            net.minecraft.ChatFormatting.GREEN,
+            net.minecraft.ChatFormatting.LIGHT_PURPLE
+        };
+        for (int slot = 0; slot < fields.length; slot++) {
+            var part = io.github.bertie_mc.fletching.PartCatalog.find(slot, tag.getString(fields[slot]));
+            if (part != null)
+                lines.add((part.stack().isEmpty()
+                                ? Component.literal(part.key())
+                                : part.stack().getHoverName().copy())
+                        .append(": ")
+                        .append(Component.translatable(part.translation()))
+                        .withStyle(colors[slot]));
+        }
+        stack.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY)
+                .addPotionTooltip(lines::add, .125f, context.tickRate());
+        ci.cancel();
+    }
+
     @Inject(method = "buildFeatherTooltip", at = @At("HEAD"), cancellable = true)
     private void bertie$wheatPercentage(String feather, ModConfig config, CallbackInfoReturnable<Component> cir) {
         if (feather.equals("minecraft:wheat") || feather.equals("item.minecraft.wheat") || feather.equals("wheat")) {

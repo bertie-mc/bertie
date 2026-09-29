@@ -1,0 +1,53 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:wheat",
+      "required": false
+    },
+    {
+      "id": "minecraft:feather",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_feather",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raven_feather",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:roadrunner_feather",
+      "required": false
+    },
+    {
+      "id": "minecraft:phantom_membrane",
+      "required": false
+    },
+    {
+      "id": "iceandfire:stymphalian_bird_feather",
+      "required": false
+    },
+    {
+      "id": "iceandfire:amphithere_feather",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_feather",
+      "required": false
+    },
+    {
+      "id": "l2complements:sun_membrane",
+      "required": false
+    },
+    {
+      "id": "l2complements:resonant_feather",
+      "required": false
+    },
+    {
+      "id": "avaritia_delight:neutronium_wheat",
+      "required": false
+    }
+  ]
+}

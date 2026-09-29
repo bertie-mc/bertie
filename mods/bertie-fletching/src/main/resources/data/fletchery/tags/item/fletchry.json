@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#fletchery:feather",
+    "#fletchery:shaft",
+    "#fletchery:tip",
+    "#fletchery:extra",
+    "#fletchery:potion"
+  ]
+}

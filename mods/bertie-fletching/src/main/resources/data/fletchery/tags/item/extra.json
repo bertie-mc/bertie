@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:slime_ball",
+      "required": false
+    },
+    {
+      "id": "minecraft:honeycomb",
+      "required": false
+    },
+    {
+      "id": "minecraft:ender_pearl",
+      "required": false
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "required": false
+    },
+    {
+      "id": "minecraft:dragon_breath",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sea_heart_shell_shard",
+      "required": false
+    },
+    {
+      "id": "minecraft:wind_charge",
+      "required": false
+    },
+    {
+      "id": "minecraft:lapis_lazuli",
+      "required": false
+    },
+    {
+      "id": "minecraft:torch",
+      "required": false
+    },
+    {
+      "id": "minecraft:tnt",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:earth_heart_fragment",
+      "required": false
+    },
+    {
+      "id": "minecraft:sponge",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dread_shard",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:lightning_bottle",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:blood_vial",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_blood",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:magnet_ingot",
+      "required": false
+    },
+    {
+      "id": "malum:refined_brilliance",
+      "required": false
+    }
+  ]
+}

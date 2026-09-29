@@ -47,7 +47,7 @@ public final class FletchingClientTests {
                 new ItemStack(Items.PHANTOM_MEMBRANE),
                 new ItemStack(Items.END_ROD),
                 new ItemStack(Items.HEAVY_CORE),
-                new ItemStack(Items.GUNPOWDER),
+                new ItemStack(Items.TNT),
                 tank);
     }
 
@@ -84,7 +84,7 @@ public final class FletchingClientTests {
                 player.getInventory().setItem(9, new ItemStack(Items.PHANTOM_MEMBRANE, 32));
                 player.getInventory().setItem(10, new ItemStack(Items.END_ROD, 32));
                 player.getInventory().setItem(11, new ItemStack(Items.HEAVY_CORE, 32));
-                player.getInventory().setItem(12, new ItemStack(Items.GUNPOWDER, 32));
+                player.getInventory().setItem(12, new ItemStack(Items.TNT, 32));
                 player.getInventory().setItem(13, potion(Items.POTION, 0xff8bafe0));
                 player.getInventory().setItem(14, potion(Items.SPLASH_POTION, 0xff8bafe0));
                 player.getInventory().setItem(15, potion(Items.LINGERING_POTION, 0xff8bafe0));
@@ -97,11 +97,11 @@ public final class FletchingClientTests {
             open(context, pos);
             for (int i = 5; i < 9; i++) clickSlot(context, i, true, 0);
             context.waitFor(
-                    "arrow ingredients arrive", client -> menu(client).preview().getCount() == 4);
+                    "arrow ingredients arrive", client -> menu(client).preview().getCount() == 8);
             clickSlot(context, 9, true, 0);
             context.waitFor(
                     "shift-fill returns bottle",
-                    client -> menu(client).tankBatches() == 2
+                    client -> menu(client).tankBatches() == 1
                             && menu(client).getSlot(9).getItem().is(Items.GLASS_BOTTLE));
             ItemStack combined =
                     context.computeOnClient(client -> menu(client).preview().copy());
@@ -110,24 +110,24 @@ public final class FletchingClientTests {
 
             clickSlot(context, 4, false, 0);
             context.waitFor(
-                    "left-click takes four",
-                    client -> menu(client).getCarried().getCount() == 4
-                            && menu(client).tankBatches() == 1);
+                    "left-click takes eight",
+                    client -> menu(client).getCarried().getCount() == 8
+                            && menu(client).tankBatches() == 0);
             clickSlot(context, 13, false, 0);
+            clickSlot(context, 10, true, 0);
+            context.waitFor("second bottle", client -> menu(client).tankBatches() == 1);
             clickSlot(context, 4, false, 1);
             context.waitFor(
                     "right-click takes a whole batch",
-                    client -> menu(client).getCarried().getCount() == 4
+                    client -> menu(client).getCarried().getCount() == 8
                             && menu(client).tankBatches() == 0);
             clickSlot(context, 13, false, 0);
             context.waitFor(
-                    "two crafts stack to eight",
-                    client -> menu(client).getSlot(13).getItem().getCount() == 8);
+                    "two crafts stack to sixteen",
+                    client -> menu(client).getSlot(13).getItem().getCount() == 16);
 
-            clickSlot(context, 10, true, 0);
-            context.waitFor("splash fill", client -> menu(client).tankBatches() == 2);
             clickSlot(context, 11, true, 0);
-            context.waitFor("lingering fill", client -> menu(client).tankBatches() == 4);
+            context.waitFor("lingering fill", client -> menu(client).tankBatches() == 1);
             restockPotion(context, world);
             clickSlot(context, 9, false, 0);
             context.waitFor(
@@ -138,21 +138,21 @@ public final class FletchingClientTests {
             context.waitFor(
                     "tank click returns bottle on cursor",
                     client -> menu(client).getCarried().is(Items.GLASS_BOTTLE)
-                            && menu(client).tankBatches() == 6);
+                            && menu(client).tankBatches() == 2);
             clickSlot(context, 9, false, 0);
             clickSlot(context, 12, true, 0);
             world.connection().waitForServerboundPackets();
             world.connection().waitForClientboundPackets();
             context.runOnClient(client -> {
-                if (menu(client).tankBatches() != 6
+                if (menu(client).tankBatches() != 2
                         || !PotionTank.isPotion(menu(client).getSlot(12).getItem()))
                     throw new AssertionError("Different potion mixed into tank");
             });
             context.input().pressKey(org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE);
             context.waitForScreen(null);
             open(context, pos);
-            context.waitFor("contents survive reopening", client -> menu(client).tankBatches() == 6);
-            for (int batches = 8; batches <= 16; batches += 2) {
+            context.waitFor("contents survive reopening", client -> menu(client).tankBatches() == 2);
+            for (int batches = 3; batches <= 8; batches++) {
                 restockPotion(context, world);
                 clickSlot(context, 9, true, 0);
                 final int expected = batches;
@@ -163,7 +163,7 @@ public final class FletchingClientTests {
             world.connection().waitForServerboundPackets();
             world.connection().waitForClientboundPackets();
             context.runOnClient(client -> {
-                if (menu(client).tankBatches() != 16
+                if (menu(client).tankBatches() != 8
                         || !PotionTank.isPotion(menu(client).getSlot(9).getItem()))
                     throw new AssertionError("Full tank consumed a potion");
             });
@@ -172,9 +172,9 @@ public final class FletchingClientTests {
             context.waitFor(
                     "shift-craft drains exactly the coated batches",
                     client -> menu(client).tankBatches() == 0
-                            && client.player.getInventory().countItem(ModRegistries.CUSTOM_ARROW.get()) == 72);
+                            && client.player.getInventory().countItem(ModRegistries.CUSTOM_ARROW.get()) == 80);
             context.runOnClient(client -> {
-                if (menu(client).getSlot(0).getItem().getCount() != 14)
+                if (menu(client).getSlot(0).getItem().getCount() != 22)
                     throw new AssertionError("Shift-craft continued after coating ran out");
             });
             context.takeScreenshot("fletching-eight-potions-sixty-four-arrows");
@@ -271,7 +271,7 @@ public final class FletchingClientTests {
                             "phantom_membrane",
                             "end_rod",
                             "heavy_core",
-                            "gunpowder",
+                            "tnt",
                             tag.getString("potionName"));
                     if (!model.getClass().getName().contains("CoatedModel"))
                         throw new AssertionError("Uncoated " + type + " stage " + stage);

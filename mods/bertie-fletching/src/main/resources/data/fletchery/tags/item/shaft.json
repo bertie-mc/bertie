@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:stick",
+      "required": false
+    },
+    {
+      "id": "betterend:leather_wrapped_stick",
+      "required": false
+    },
+    {
+      "id": "minecraft:fishing_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:chain",
+      "required": false
+    },
+    {
+      "id": "minecraft:bone",
+      "required": false
+    },
+    {
+      "id": "minecraft:breeze_rod",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:blaze_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:end_rod",
+      "required": false
+    },
+    {
+      "id": "enderio:experience_rod",
+      "required": false
+    },
+    {
+      "id": "enderio:infinity_rod",
+      "required": false
+    },
+    {
+      "id": "powah:dielectric_rod",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:ender_rod",
+      "required": false
+    }
+  ]
+}

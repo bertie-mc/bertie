@@ -7,7 +7,6 @@ import com.fletchery.mod.config.ModConfig;
 import java.util.ArrayList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -35,9 +34,7 @@ class WheatGravityTest {
                     new PotionTank());
             ArrayList<Component> lines = new ArrayList<>();
             stack.getItem().appendHoverText(stack, Item.TooltipContext.EMPTY, lines, TooltipFlag.NORMAL);
-            var text = (TranslatableContents) lines.getFirst().getContents();
-            assertEquals("fletchery_expanded.tooltip.feather.wheat", text.getKey());
-            assertArrayEquals(new Object[] {"20", "5"}, text.getArgs());
+            assertTrue(lines.getFirst().toString().contains("bertiefletching.part.0.wheat"));
             config.wheatGravity = 0;
             assertEquals(1F, ArrowComponentResolver.resolve(tag).gravityMultiplier);
             config.wheatGravity = .25F;

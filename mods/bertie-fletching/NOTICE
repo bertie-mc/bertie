@@ -1,6 +1,7 @@
 Original Bertie Fletching code is dedicated to the public domain under UNLICENSE.
 
-FletchingScreen.java is adapted from Fletchery Expanded 1.0.5 by PriestDiO.
+FletchingScreen.java and the arrow-layer rendering integrations adapt
+Fletchery Expanded 1.0.5 by PriestDiO.
 Fletchery Expanded: https://modrinth.com/mod/fletchery-expanded
 Coating masks are derived from the upstream potion and glowstone arrow pixels.
 Other upstream resources are loaded from the installed mod.

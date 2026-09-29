@@ -14,11 +14,24 @@ public abstract class ArrowTextureMixin {
     @Inject(
             method =
                     "getTextureLocation(Lcom/fletchery/mod/entity/CustomArrowEntity;)Lnet/minecraft/resources/ResourceLocation;",
-            at = @At("RETURN"),
+            at = @At("HEAD"),
             cancellable = true)
     private void bertie$coatTexture(CustomArrowEntity arrow, CallbackInfoReturnable<ResourceLocation> cir) {
         var tag = arrow.getCustomProperties();
-        if (tag.getBoolean("bertieCoating"))
+        if (io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag)) {
+            cir.setReturnValue(io.github.bertie_mc.fletching.client.PartVisuals.texture(arrow));
+            return;
+        }
+    }
+
+    @Inject(
+            method =
+                    "getTextureLocation(Lcom/fletchery/mod/entity/CustomArrowEntity;)Lnet/minecraft/resources/ResourceLocation;",
+            at = @At("RETURN"),
+            cancellable = true)
+    private void bertie$legacyCoating(CustomArrowEntity arrow, CallbackInfoReturnable<ResourceLocation> cir) {
+        var tag = arrow.getCustomProperties();
+        if (!io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag) && tag.getBoolean("bertieCoating"))
             cir.setReturnValue(CoatingModels.coatTexture(cir.getReturnValue(), tag.getInt("bertiePotionColor")));
     }
 }

@@ -2,63 +2,22 @@ package io.github.bertie_mc.fletching;
 
 import com.fletchery.mod.registry.ModRegistries;
 import com.fletchery.mod.screen.FletchingTableScreenHandler;
-import java.util.List;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.CustomModelData;
 
 public final class ArrowRecipe {
-    public static final int BATCH = 4;
-    public static final List<Item> FEATHERS = List.of(Items.FEATHER, Items.PHANTOM_MEMBRANE, Items.WHEAT);
-    public static final List<Item> SHAFTS = List.of(
-            Items.STICK, Items.BLAZE_ROD, Items.BREEZE_ROD, Items.BONE, Items.END_ROD, Items.FISHING_ROD, Items.CHAIN);
-    public static final List<Item> TIPS = List.of(
-            Items.FLINT,
-            Items.AMETHYST_SHARD,
-            Items.PRISMARINE_SHARD,
-            Items.ECHO_SHARD,
-            Items.QUARTZ,
-            Items.GOLD_INGOT,
-            Items.COPPER_INGOT,
-            Items.SHULKER_SHELL,
-            Items.IRON_INGOT,
-            Items.DIAMOND,
-            Items.NETHERITE_INGOT,
-            Items.HEAVY_CORE);
-    public static final List<Item> EFFECTS = List.of(
-            Items.GUNPOWDER,
-            Items.GLOWSTONE_DUST,
-            Items.SLIME_BALL,
-            Items.HONEYCOMB,
-            Items.ENDER_PEARL,
-            Items.BLAZE_POWDER,
-            Items.TURTLE_HELMET,
-            Items.DRAGON_BREATH,
-            Items.HEART_OF_THE_SEA,
-            Items.WIND_CHARGE,
-            Items.LAPIS_LAZULI,
-            Items.TORCH,
-            Items.FIRE_CHARGE,
-            Items.FIREWORK_STAR,
-            Items.FIREWORK_ROCKET);
+    public static final int BATCH = 8;
 
     private ArrowRecipe() {}
 
     public static boolean accepts(int slot, ItemStack stack) {
-        return switch (slot) {
-            case 0 -> FEATHERS.contains(stack.getItem());
-            case 1 -> SHAFTS.contains(stack.getItem());
-            case 2 -> TIPS.contains(stack.getItem());
-            case 3 -> EFFECTS.contains(stack.getItem());
-            default -> false;
-        };
+        return PartCatalog.find(slot, stack) != null;
     }
 
     public static ItemStack craft(
@@ -67,18 +26,17 @@ public final class ArrowRecipe {
                 || !accepts(1, shaft)
                 || !accepts(2, tip)
                 || (!effect.isEmpty() && !accepts(3, effect))) return ItemStack.EMPTY;
-        boolean basic = feather.is(Items.FEATHER) && shaft.is(Items.STICK) && tip.is(Items.FLINT);
-        if (basic && tank.batches() == 0) {
-            if (effect.isEmpty()) return new ItemStack(Items.ARROW, BATCH);
-            if (effect.is(Items.GLOWSTONE_DUST)) return new ItemStack(Items.SPECTRAL_ARROW, BATCH);
-        }
         CompoundTag tag = new CompoundTag();
+        tag.putInt("bertieVersion", 2);
         String f = key(feather), s = key(shaft), t = key(tip);
         tag.putString("feather", f);
         tag.putString("shaft", s);
         tag.putString("tip", t);
         if (!effect.isEmpty()) tag.putString("effect", key(effect));
-        int model = FletchingTableScreenHandler.computeModelDataWithEffect(f, s, t, effect);
+        int model = FletchingTableScreenHandler.computeBaseModelData(
+                "minecraft:" + PartCatalog.find(0, feather).visual(),
+                "minecraft:" + PartCatalog.find(1, shaft).visual(),
+                "minecraft:" + PartCatalog.find(2, tip).visual());
         tag.putInt("modelData", model);
         tag.putBoolean("bertieCoating", tank.batches() > 0);
         if (tank.batches() > 0) {
@@ -116,6 +74,23 @@ public final class ArrowRecipe {
         result.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(model));
         if (tank.batches() > 0) result.set(DataComponents.POTION_CONTENTS, tank.contents());
         return result;
+    }
+
+    public static ItemStack fromData(CompoundTag tag, int count, net.minecraft.core.HolderLookup.Provider registries) {
+        ItemStack stack = new ItemStack(ModRegistries.CUSTOM_ARROW.get(), count);
+        CompoundTag copy = tag.copy();
+        copy.remove("bertieFlight");
+        copy.remove("bertieNoRecovery");
+        stack.set(DataComponents.CUSTOM_DATA, CustomData.of(copy));
+        stack.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(copy.getInt("modelData")));
+        if (copy.contains("bertiePotionContents"))
+            net.minecraft.world.item.alchemy.PotionContents.CODEC
+                    .parse(
+                            net.minecraft.resources.RegistryOps.create(net.minecraft.nbt.NbtOps.INSTANCE, registries),
+                            copy.get("bertiePotionContents"))
+                    .result()
+                    .ifPresent(contents -> stack.set(DataComponents.POTION_CONTENTS, contents));
+        return stack;
     }
 
     private static String key(ItemStack stack) {

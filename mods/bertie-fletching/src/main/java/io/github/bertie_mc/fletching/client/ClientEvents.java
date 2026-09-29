@@ -24,5 +24,6 @@ public final class ClientEvents {
     @SubscribeEvent
     public static void baked(ModelEvent.ModifyBakingResult event) {
         CoatingModels.reload(event.getModels());
+        PartVisuals.reload(event.getModels());
     }
 }

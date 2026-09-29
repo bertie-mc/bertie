@@ -23,7 +23,10 @@ public abstract class WheatFlightMixin extends AbstractArrow {
 
     @Inject(method = "resolveProps", at = @At("TAIL"))
     private void bertie$useVanillaGravity(CallbackInfo ci) {
-        if (props.featherKey.equals("minecraft:wheat")) setNoGravity(props.noGravity);
+        var tag = ((CustomArrowEntity) (Object) this).getCustomProperties();
+        if (io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag))
+            setNoGravity(io.github.bertie_mc.fletching.ArrowProfile.read(tag).gravity() == 0);
+        else if (props.featherKey.equals("minecraft:wheat")) setNoGravity(props.noGravity);
     }
 
     @Redirect(
@@ -37,6 +40,10 @@ public abstract class WheatFlightMixin extends AbstractArrow {
     @Override
     protected double getDefaultGravity() {
         double gravity = super.getDefaultGravity();
+        var tag = ((CustomArrowEntity) (Object) this).getCustomProperties();
+        if (io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag))
+            return gravity
+                    * io.github.bertie_mc.fletching.ArrowProfile.read(tag).gravity();
         return props != null && props.featherKey.equals("minecraft:wheat")
                 ? gravity * props.gravityMultiplier
                 : gravity;

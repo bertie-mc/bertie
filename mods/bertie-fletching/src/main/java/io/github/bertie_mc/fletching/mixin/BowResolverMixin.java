@@ -27,6 +27,21 @@ public abstract class BowResolverMixin {
         var tag = NockedArrowResolver.resolve(player)
                 .getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY)
                 .copyTag();
+        if (io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag)) {
+            int elapsed = bow.getUseDuration(player) - player.getUseItemRemainingTicks();
+            if (io.github.bertie_mc.fletching.ArrowProfile.read(tag).tip("gargoyle")) elapsed = (int) (elapsed * .8);
+            int frame = elapsed >= 18 ? 2 : elapsed >= 13 ? 1 : 0;
+            var redesigned = io.github.bertie_mc.fletching.client.PartVisuals.model(
+                    "BOW",
+                    frame,
+                    tag.getString("feather"),
+                    tag.getString("shaft"),
+                    tag.getString("tip"),
+                    tag.getString("effect"),
+                    tag.getString("potionName"));
+            if (redesigned != null) cir.setReturnValue(redesigned);
+            return;
+        }
         if (!tag.getBoolean("bertieCoating")) return;
         int ticks = bow.getUseDuration(player) - player.getUseItemRemainingTicks();
         int stage = ticks >= 18 ? 2 : ticks >= 13 ? 1 : 0;

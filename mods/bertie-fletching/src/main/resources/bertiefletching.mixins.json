@@ -3,7 +3,25 @@
   "minVersion": "0.8",
   "package": "io.github.bertie_mc.fletching.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["CoatedArrowMixin", "ArrowTooltipMixin", "TableRemovalMixin", "WheatGravityMixin", "WheatFlightMixin"],
-  "client": ["LayeredModelMixin", "BowResolverMixin", "ArrowTextureMixin"],
-  "injectors": {"defaultRequire": 1}
+  "mixins": [
+    "CoatedArrowMixin",
+    "ArrowTooltipMixin",
+    "TableRemovalMixin",
+    "WheatGravityMixin",
+    "WheatFlightMixin",
+    "RedesignedProjectileMixin",
+    "VanillaArrowBridgeMixin",
+    "ArrowAccess",
+    "ArrowMovementEffectMixin",
+    "DrawSpeedMixin",
+    "CrossbowDrawMixin"
+  ],
+  "client": [
+    "LayeredModelMixin",
+    "BowResolverMixin",
+    "ArrowTextureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

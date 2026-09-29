@@ -25,6 +25,12 @@ public abstract class LayeredModelMixin {
             String effect,
             String potion,
             CallbackInfoReturnable<BakedModel> cir) {
+        var redesigned = io.github.bertie_mc.fletching.client.PartVisuals.model(
+                type, stage, feather, shaft, tip, effect, potion);
+        if (redesigned != null) {
+            cir.setReturnValue(redesigned);
+            return;
+        }
         if (!CoatingColor.isEncoded(potion)) return;
         int color = CoatingColor.decode(potion).orElse(0xffffff);
         BakedModel base =

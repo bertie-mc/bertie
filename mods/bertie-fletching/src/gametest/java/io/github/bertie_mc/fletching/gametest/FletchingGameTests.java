@@ -106,7 +106,7 @@ public final class FletchingGameTests {
         menu.getSlot(0).set(new ItemStack(Items.FEATHER, 20));
         menu.getSlot(1).set(new ItemStack(Items.STICK, 20));
         menu.getSlot(2).set(new ItemStack(Items.FLINT, 20));
-        menu.getSlot(3).set(new ItemStack(Items.GUNPOWDER, 20));
+        menu.getSlot(3).set(new ItemStack(Items.TNT, 20));
         return new Table(player, menu, pos);
     }
 
@@ -120,7 +120,8 @@ public final class FletchingGameTests {
         m.setCarried(ItemStack.EMPTY);
         m.clicked(4, 1, ClickType.PICKUP, t.player());
         helper.assertTrue(
-                m.getCarried().getCount() == 4 && m.tankBatches() == 1, "right-click crafts four and spends one batch");
+                m.getCarried().getCount() == 8 && m.tankBatches() == 0,
+                "right-click crafts eight and spends one batch");
         helper.assertTrue(
                 m.getSlot(0).getItem().getCount() == 19
                         && m.getSlot(3).getItem().getCount() == 19,
@@ -130,17 +131,17 @@ public final class FletchingGameTests {
         helper.assertTrue(
                 t.player().getInventory().getItem(9).is(Items.GLASS_BOTTLE),
                 "shift-fill returns bottle to source slot");
-        helper.assertTrue(m.tankBatches() == 3, "bottle supplies two batches");
+        helper.assertTrue(m.tankBatches() == 1, "bottle supplies one batch");
         var saved = TankStorage.get(helper.getLevel())
                 .at(t.pos())
                 .save(helper.getLevel().registryAccess());
         var restored = PotionTank.load(saved, helper.getLevel().registryAccess());
         helper.assertTrue(
-                restored.batches() == 3 && restored.contents().equals(new PotionContents(Potions.POISON)),
+                restored.batches() == 1 && restored.contents().equals(new PotionContents(Potions.POISON)),
                 "tank round-trips through disk format");
         m.removed(t.player());
         var reopened = new FletchingMenu(2, t.player().getInventory(), t.pos());
-        helper.assertTrue(reopened.tankBatches() == 3, "reopening preserves tank");
+        helper.assertTrue(reopened.tankBatches() == 1, "reopening preserves tank");
         reopened.removed(t.player());
         helper.succeed();
     }
@@ -155,17 +156,17 @@ public final class FletchingGameTests {
         for (int i = 0; i < 36; i++) t.player().getInventory().setItem(i, new ItemStack(Items.COBBLESTONE, 64));
         m.clicked(4, 0, ClickType.QUICK_MOVE, t.player());
         helper.assertTrue(
-                m.tankBatches() == 2 && m.getSlot(0).getItem().getCount() == 20, "full inventory consumes nothing");
-        t.player().getInventory().setItem(0, m.preview().copyWithCount(61));
+                m.tankBatches() == 1 && m.getSlot(0).getItem().getCount() == 20, "full inventory consumes nothing");
+        t.player().getInventory().setItem(0, m.preview().copyWithCount(57));
         m.clicked(4, 0, ClickType.QUICK_MOVE, t.player());
         helper.assertTrue(
-                m.tankBatches() == 2 && t.player().getInventory().getItem(0).getCount() == 61,
-                "three free spaces cannot consume a batch");
-        t.player().getInventory().setItem(0, m.preview().copyWithCount(60));
+                m.tankBatches() == 1 && t.player().getInventory().getItem(0).getCount() == 57,
+                "seven free spaces cannot consume a batch");
+        t.player().getInventory().setItem(0, m.preview().copyWithCount(56));
         m.clicked(4, 0, ClickType.QUICK_MOVE, t.player());
         helper.assertTrue(
-                m.tankBatches() == 1 && t.player().getInventory().getItem(0).getCount() == 64,
-                "four free spaces receive exactly four arrows");
+                m.tankBatches() == 0 && t.player().getInventory().getItem(0).getCount() == 64,
+                "eight free spaces receive exactly eight arrows");
         m.removed(t.player());
         helper.succeed();
     }
@@ -181,7 +182,7 @@ public final class FletchingGameTests {
         m.clicked(4, 0, ClickType.QUICK_MOVE, t.player());
         int arrows = t.player().getInventory().countItem(ModRegistries.CUSTOM_ARROW.get());
         helper.assertTrue(arrows == 8 && m.tankBatches() == 0, "one potion coats exactly eight arrows");
-        helper.assertTrue(m.getSlot(0).getItem().getCount() == 18, "shift-craft stops before uncoated batch");
+        helper.assertTrue(m.getSlot(0).getItem().getCount() == 19, "shift-craft stops before uncoated batch");
         other.broadcastChanges();
         helper.assertTrue(
                 !other.preview()
@@ -202,16 +203,17 @@ public final class FletchingGameTests {
                 new ItemStack(Items.FEATHER),
                 new ItemStack(Items.STICK),
                 new ItemStack(Items.FLINT),
-                new ItemStack(Items.GLOWSTONE_DUST),
+                new ItemStack(Items.HONEYCOMB),
                 tank);
         var arrow = new ImpactArrow(helper);
         arrow.setCustomProperties(crafted.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY)
                 .copyTag());
         arrow.setPos(helper.absolutePos(new BlockPos(1, 2, 1)).getCenter());
         Pig pig = helper.spawn(EntityType.PIG, new BlockPos(2, 2, 1));
+        arrow.setDeltaMovement(1, 0, 0);
         arrow.hit(pig);
         helper.assertTrue(
-                pig.hasEffect(MobEffects.POISON) && pig.hasEffect(MobEffects.GLOWING),
+                pig.hasEffect(MobEffects.POISON) && pig.hasEffect(MobEffects.MOVEMENT_SLOWDOWN),
                 "item and potion effects both apply");
         helper.assertTrue(pig.getEffect(MobEffects.POISON).getDuration() == 112, "vanilla tipped-arrow duration");
         CompoundTag saved = new CompoundTag();
@@ -222,7 +224,8 @@ public final class FletchingGameTests {
                 ItemStack.isSameItemSameComponents(crafted, restored.pickup()),
                 "retrieved arrow preserves potion components and stacks with its source");
         helper.assertTrue(
-                restored.getCustomProperties().getBoolean("bertieCoating") && restored.getProps().glowTarget,
+                restored.getCustomProperties().getBoolean("bertieCoating")
+                        && ArrowProfile.read(restored.getCustomProperties()).extra("honey"),
                 "both effects survive entity save/load");
         helper.succeed();
     }
