@@ -46,7 +46,8 @@ public record ArrowProfile(
 
     public double speed(Level level) {
         return switch (feather.key()) {
-            case "wheat", "emu" -> .8;
+            case "wheat" -> .8;
+            case "emu" -> 1.2;
             case "raven" -> night(level) ? 1.6 : 1;
             case "roadrunner" -> night(level) ? 1 : 1.6;
             case "phantom", "resplendent" -> 1.5;

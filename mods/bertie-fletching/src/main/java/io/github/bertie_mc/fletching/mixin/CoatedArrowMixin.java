@@ -27,7 +27,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = CustomArrowEntity.class, remap = false)
-public abstract class CoatedArrowMixin {
+public abstract class CoatedArrowMixin implements io.github.bertie_mc.fletching.ArrowRuntime {
     @Unique
     private static final EntityDataAccessor<CompoundTag> BERTIE_COATING =
             SynchedEntityData.defineId(CustomArrowEntity.class, EntityDataSerializers.COMPOUND_TAG);
@@ -50,6 +50,11 @@ public abstract class CoatedArrowMixin {
 
     @Inject(method = "tick", at = @At("HEAD"))
     private void bertie$readCoating(CallbackInfo ci) {
+        bertie$syncProperties();
+    }
+
+    @Override
+    public void bertie$syncProperties() {
         CustomArrowEntity arrow = (CustomArrowEntity) (Object) this;
         if (arrow.level().isClientSide) {
             CompoundTag tag = arrow.getEntityData().get(BERTIE_COATING);

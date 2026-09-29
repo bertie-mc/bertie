@@ -214,11 +214,6 @@ public final class ArrowCombatEvents {
         meta.putDouble("XP", context.profile.experience());
         meta.putBoolean("Loot", context.profile.loot());
         meta.put("Arrow", context.data.copy());
-        meta.putBoolean(
-                "Recover",
-                context.profile.shaft("leather")
-                        && context.data.getInt("bertieChildDepth") == 0
-                        && !context.data.getBoolean("bertieNoRecovery"));
         event.getEntity().getPersistentData().put(KILL, meta);
     }
 
@@ -232,16 +227,6 @@ public final class ArrowCombatEvents {
         if (!(event.getEntity().level() instanceof ServerLevel level)) return;
         CompoundTag meta = event.getEntity().getPersistentData().getCompound(KILL);
         if (!meta.hasUUID("Owner")) return;
-        if (meta.getBoolean("Recover") && level.random.nextFloat() < .3f) {
-            ItemStack recovered = ArrowRecipe.fromData(meta.getCompound("Arrow"), 1, level.registryAccess());
-            event.getDrops()
-                    .add(new net.minecraft.world.entity.item.ItemEntity(
-                            level,
-                            event.getEntity().getX(),
-                            event.getEntity().getY(),
-                            event.getEntity().getZ(),
-                            recovered));
-        }
         var player = level.getServer().getPlayerList().getPlayer(meta.getUUID("Owner"));
         if (meta.getBoolean("Loot") && player != null) {
             var it = event.getDrops().iterator();

@@ -26,7 +26,6 @@ class PartCatalogTest {
         assertEquals(
                 List.of(
                         "stick",
-                        "leather",
                         "fishing",
                         "chain",
                         "bone",

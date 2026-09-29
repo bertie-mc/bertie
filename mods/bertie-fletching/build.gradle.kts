@@ -10,5 +10,6 @@ dependencies {
     runtimeOnly(deps.fletcheryExpanded)
     testImplementation(deps.fletcheryExpanded)
     gametestImplementation(deps.fletcheryExpanded)
+    gametestRuntimeOnly(deps.apothicAttributes)
     clienttestImplementation(deps.fletcheryExpanded)
 }

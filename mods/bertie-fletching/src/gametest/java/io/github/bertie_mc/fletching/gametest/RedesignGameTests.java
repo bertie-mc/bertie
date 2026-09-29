@@ -22,6 +22,118 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @GameTestHolder(BertieFletching.ID)
 @PrefixGameTestTemplate(false)
 public final class RedesignGameTests {
+    @GameTest(template = "empty", batch = "refine_consistency")
+    public static void repeatedDrawsAndDayNightFletchingsMatch(GameTestHelper h) {
+        Pig target = pig(h, 2, 3);
+        for (int i = 0; i < 20; i++) {
+            target.setHealth(100);
+            target.invulnerableTime = 0;
+            TestArrow shot = arrow(h, "feather", "stick", "copper", "");
+            shot.setCritArrow(true);
+            shot.hit(target);
+            near(h, target.getHealth(), 83.5, "identical full draws have identical damage including the tip");
+        }
+        long time = h.getLevel().getDayTime();
+        try {
+            double health = 0;
+            for (String feather : new String[] {"raven", "roadrunner"}) {
+                h.getLevel().setDayTime(feather.equals("raven") ? 18000 : 6000);
+                target.setHealth(100);
+                target.invulnerableTime = 0;
+                TestArrow shot = arrow(h, feather, "stick", "flint", "");
+                shot.setCritArrow(true);
+                ArrowFlight.beforeTick(shot);
+                shot.hit(target);
+                if (health == 0) health = target.getHealth();
+                else near(h, target.getHealth(), health, "raven night and roadrunner day deal equal damage");
+            }
+        } finally {
+            h.getLevel().setDayTime(time);
+        }
+        h.succeed();
+    }
+
+    @GameTest(template = "empty", batch = "refine_launch")
+    public static void SpreadChangesAimWithoutRandomSpeed(GameTestHelper h) {
+        for (int i = 0; i < 40; i++) {
+            TestArrow shot = arrow(h, "raven", "stick", "flint", "");
+            shot.shoot(0, 0, 1, 3, 1);
+            near(h, shot.getDeltaMovement().length(), 3, "inaccuracy changes direction only");
+        }
+        h.succeed();
+    }
+
+    @GameTest(template = "empty", batch = "refine_crit")
+    public static void SunAndSonicReuseAttributeCriticalAndProjectileBonus(GameTestHelper h) {
+        var owner = h.makeMockPlayer(net.minecraft.world.level.GameType.SURVIVAL);
+        attribute(owner, "apothic_attributes:crit_chance", 1);
+        attribute(owner, "apothic_attributes:crit_damage", 2);
+        attribute(owner, "apothic_attributes:projectile_damage", 1.4);
+        Pig first = pig(h, 2, 3), second = pig(h, 5, 3);
+        TestArrow sun = arrow(h, "sun", "stick", "flint", "");
+        sun.setOwner(owner);
+        sun.setCritArrow(true);
+        sun.hit(first);
+        near(h, first.getHealth(), 16, "physical and fire share both critical multipliers: (10 + 10) * 1.5 * 2 * 1.4");
+        for (boolean critical : new boolean[] {false, true}) {
+            first.setHealth(100);
+            second.setHealth(100);
+            first.invulnerableTime = second.invulnerableTime = 0;
+            first.clearFire();
+            second.clearFire();
+            TestArrow echo = arrow(h, "feather", "stick", "reinforced_echo", "");
+            echo.setOwner(owner);
+            echo.setCritArrow(critical);
+            echo.hit(first);
+            near(h, second.getHealth(), first.getHealth(), "sonic damage matches raw primary at both draw strengths");
+        }
+        h.succeed();
+    }
+
+    private static void attribute(LivingEntity entity, String id, double value) {
+        var key = net.minecraft.resources.ResourceLocation.parse(id);
+        var holder = net.minecraft.core.registries.BuiltInRegistries.ATTRIBUTE
+                .getHolder(key)
+                .orElseThrow();
+        entity.getAttribute(holder).setBaseValue(value);
+    }
+
+    @GameTest(template = "empty", batch = "refine_homing")
+    public static void HomingIgnoresBehindAndPreservesCloseHitscanHit(GameTestHelper h) {
+        Pig behind = pig(h, 2, 0), front = pig(h, 2, 5);
+        TestArrow shot = arrow(h, "feather", "dielectric", "flint", "");
+        ArrowFlight.beforeTick(shot);
+        h.assertTrue(
+                ArrowFlight.homingTarget(shot).orElseThrow() == front, "forward target wins over closer rear target");
+        Pig side = pig(h, 3, 2);
+        TestArrow scan = arrow(h, "resonant", "ender", "flint", "");
+        scan.tick();
+        h.assertTrue(front.getHealth() < 100, "hitscan retains an easy direct hit despite nearby off-axis targets");
+        h.succeed();
+    }
+
+    @GameTest(template = "empty", batch = "refine_secondary_range")
+    public static void RadialChildrenRetainOneRangeBudgetAcrossRicochets(GameTestHelper h) {
+        Pig target = pig(h, 2, 3);
+        TestArrow shot = arrow(h, "stymphalian", "ender", "flint", "");
+        shot.hit(target);
+        var children = h.getLevel()
+                .getEntitiesOfClass(
+                        CustomArrowEntity.class, target.getBoundingBox().inflate(3));
+        h.assertTrue(children.size() == 8, "eight children");
+        for (var child : children) {
+            var state = ((ArrowRuntime) child).bertie$flight();
+            h.assertTrue(state.remainingRange > 0 && state.remainingRange <= 24, "range begins at split impact");
+            child.setNoGravity(true);
+            for (int i = 0; i < 150 && !child.isRemoved(); i++) child.tick();
+            h.assertTrue(child.isRemoved(), "missed secondary arrow expires within its range");
+            h.assertTrue(
+                    child.position().distanceTo(target.position()) <= 25,
+                    "secondary cannot reach a target fifty blocks away");
+        }
+        h.succeed();
+    }
+
     @GameTest(template = "empty", batch = "redesign_close_ricochet")
     public static void ricochetCannotSkipCloseTargetsBetweenTicks(GameTestHelper h) {
         Pig first = pig(h, 2, 3), second = pig(h, 4, 3);
@@ -275,7 +387,11 @@ public final class RedesignGameTests {
                     child.getCustomProperties().getDouble("bertieFixedDamage"),
                     5,
                     "each child stores half the pre-mitigation hit");
-            near(h, child.getDeltaMovement().normalize().y, -.5, "children depart thirty degrees below horizontal");
+            near(
+                    h,
+                    child.getDeltaMovement().normalize().y,
+                    -Math.sin(Math.PI / 18),
+                    "children depart ten degrees below horizontal");
         }
         Pig immune = pig(h, 5, 3);
         immune.setInvulnerable(true);

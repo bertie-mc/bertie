@@ -17,6 +17,7 @@ public abstract class ArrowTextureMixin {
             at = @At("HEAD"),
             cancellable = true)
     private void bertie$coatTexture(CustomArrowEntity arrow, CallbackInfoReturnable<ResourceLocation> cir) {
+        ((io.github.bertie_mc.fletching.ArrowRuntime) arrow).bertie$syncProperties();
         var tag = arrow.getCustomProperties();
         if (io.github.bertie_mc.fletching.ArrowProfile.redesigned(tag)) {
             cir.setReturnValue(io.github.bertie_mc.fletching.client.PartVisuals.texture(arrow));

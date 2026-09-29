@@ -52,22 +52,15 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
             placeholder("tip", "flint"),
             placeholder("tip", "iron_ingot"),
             placeholder("tip", "prismarine_shard"),
-            placeholder("tip", "quartz"),
-            placeholder("tip", "shulker_shell"));
+            placeholder("tip", "quartz"));
     private static final List<ResourceLocation> EFFECT_PLACEHOLDERS = List.of(
             placeholder("effect", "blaze_powder"),
             placeholder("effect", "dragon_breath"),
             placeholder("effect", "ender_pearl"),
-            placeholder("effect", "fire_charge"),
-            placeholder("effect", "firework_rocket"),
-            placeholder("effect", "firework_star"),
-            placeholder("effect", "gunpowder"),
-            placeholder("effect", "heart_of_the_sea"),
             placeholder("effect", "honeycomb"),
             placeholder("effect", "lapis_lazuli"),
             placeholder("effect", "slime_ball"),
             placeholder("effect", "torch"),
-            placeholder("effect", "turtle_helmet"),
             placeholder("effect", "wind_charge"));
     private static final List<List<ResourceLocation>> SLOT_PLACEHOLDER_SETS =
             List.of(FEATHER_PLACEHOLDERS, SHAFT_PLACEHOLDERS, TIP_PLACEHOLDERS, EFFECT_PLACEHOLDERS);
@@ -153,15 +146,9 @@ public class FletchingScreen extends AbstractContainerScreen<FletchingMenu> {
         long now = System.currentTimeMillis();
         for (int slot = 0; slot < 4; slot++) {
             if (!menu.getSlot(slot).hasItem()) {
-                var items = io.github.bertie_mc.fletching.PartCatalog.inSlot(slot).stream()
-                        .map(io.github.bertie_mc.fletching.PartCatalog.Part::stack)
-                        .filter(stack -> !stack.isEmpty())
-                        .toList();
-                if (!items.isEmpty())
-                    graphics.renderItem(
-                            items.get((int) (now / 4000 % items.size())),
-                            leftPos + SLOT_POS[slot][0],
-                            topPos + SLOT_POS[slot][1]);
+                var hints = SLOT_PLACEHOLDER_SETS.get(slot);
+                var hint = hints.get((int) (now / ROTATE_INTERVAL_MS[slot] % hints.size()));
+                graphics.blit(hint, leftPos + SLOT_POS[slot][0], topPos + SLOT_POS[slot][1], 0, 0, 16, 16, 16, 16);
             }
         }
     }

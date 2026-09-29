@@ -19,6 +19,17 @@ public final class ClientEvents {
     @SubscribeEvent
     public static void models(ModelEvent.RegisterAdditional event) {
         CoatingModels.TYPES.forEach(type -> event.register(CoatingModels.modelId(type)));
+        for (var part : io.github.bertie_mc.fletching.PartCatalog.ALL)
+            if (part.tint() != -1)
+                for (String view : MaterialLayers.VIEWS)
+                    event.register(net.minecraft.client.resources.model.ModelResourceLocation.standalone(
+                            MaterialLayers.id(part, view).withPrefix("item/")));
+    }
+
+    @SubscribeEvent
+    public static void spriteSources(net.neoforged.neoforge.client.event.RegisterSpriteSourceTypesEvent event) {
+        event.register(
+                net.minecraft.resources.ResourceLocation.parse("bertiefletching:material_layers"), MaterialLayers.TYPE);
     }
 
     @SubscribeEvent

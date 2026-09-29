@@ -5,4 +5,6 @@ public interface ArrowRuntime {
     FlightState bertie$flight();
 
     void bertie$grounded(boolean value);
+
+    void bertie$syncProperties();
 }

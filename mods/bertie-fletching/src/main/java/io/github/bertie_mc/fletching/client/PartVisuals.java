@@ -98,8 +98,13 @@ public final class PartVisuals {
 
     private static void add(List<Layer> layers, PartCatalog.Part part, String folder, String prefix, String suffix) {
         String path = "item/" + folder + "/" + prefix + "_" + part.visual() + suffix;
-        BakedModel model = MODELS.get(ModelResourceLocation.standalone(id("__layer_stitch/" + path.replace('/', '_'))));
-        if (model != null) layers.add(new Layer(model, part.tint()));
+        String view =
+                folder.equals("bow_layers") ? "bow" + suffix : folder.equals("crossbow_layers") ? "crossbow" : "arrow";
+        ResourceLocation modelId = part.tint() == -1
+                ? id("__layer_stitch/" + path.replace('/', '_'))
+                : MaterialLayers.id(part, view).withPrefix("item/");
+        BakedModel model = MODELS.get(ModelResourceLocation.standalone(modelId));
+        if (model != null) layers.add(new Layer(model, -1));
     }
 
     private static ResourceLocation id(String path) {
@@ -150,15 +155,13 @@ public final class PartVisuals {
     private static void overlay(NativeImage to, PartCatalog.Part part, String path) throws IOException {
         try (var stream = Minecraft.getInstance().getResourceManager().open(id("textures/layers/" + path + ".png"));
                 var from = NativeImage.read(stream)) {
+            if (part.tint() != -1)
+                MaterialLayers.recolor(
+                        from, MaterialLayers.palette(Minecraft.getInstance().getResourceManager(), part));
             for (int y = 0; y < Math.min(to.getHeight(), from.getHeight()); y++)
                 for (int x = 0; x < Math.min(to.getWidth(), from.getWidth()); x++) {
                     int pixel = from.getPixelRGBA(x, y);
                     if ((pixel >>> 24) == 0) continue;
-                    if (part.tint() != -1)
-                        pixel = (pixel & 0xff000000)
-                                | ((pixel & 255) * (part.tint() >> 16 & 255) / 255)
-                                | ((pixel >> 8 & 255) * (part.tint() >> 8 & 255) / 255) << 8
-                                | ((pixel >> 16 & 255) * (part.tint() & 255) / 255) << 16;
                     to.blendPixel(x, y, pixel);
                 }
         }

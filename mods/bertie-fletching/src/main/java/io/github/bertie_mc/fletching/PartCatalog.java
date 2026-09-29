@@ -33,7 +33,6 @@ public final class PartCatalog {
             new Part(0, "resonant", "l2complements:resonant_feather", "feather", 5823462, 0f, 0f),
             new Part(0, "neutronium", "avaritia_delight:neutronium_wheat", "wheat", 13685994, 0f, 0f),
             new Part(1, "stick", "minecraft:stick", "stick", -1, 0f, 0f),
-            new Part(1, "leather", "betterend:leather_wrapped_stick", "stick", 12620647, 0f, 0f),
             new Part(1, "fishing", "minecraft:fishing_rod", "fishing_rod", -1, 0f, 0f),
             new Part(1, "chain", "minecraft:chain", "chain", -1, 0f, 0f),
             new Part(1, "bone", "minecraft:bone", "bone", -1, 0f, 0f),
@@ -93,7 +92,6 @@ public final class PartCatalog {
     }
 
     public static Part find(int slot, String id) {
-        if (slot == 2 && id.equals("born_in_chaos_v1:permafrost_shard")) return key(2, "permafrost");
         return ALL.stream()
                 .filter(part -> part.slot() == slot && part.itemId().equals(id))
                 .findFirst()

@@ -14,7 +14,9 @@
     "ArrowAccess",
     "ArrowMovementEffectMixin",
     "DrawSpeedMixin",
-    "CrossbowDrawMixin"
+    "CrossbowDrawMixin",
+    "ArrowLaunchMixin",
+    "AttributeCriticalMixin"
   ],
   "client": [
     "LayeredModelMixin",

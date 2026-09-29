@@ -49,25 +49,36 @@ public final class ArrowFlight {
             return true;
         }
         if (arrow.level().isClientSide) return false;
+        if (state.originalDirection.lengthSqr() < .5)
+            state.originalDirection = arrow.getDeltaMovement().normalize();
+        if (state.remainingRange >= 0 && state.remainingRange <= .01) {
+            arrow.discard();
+            return true;
+        }
         if (p.homing() && arrow.getDeltaMovement().lengthSqr() > .001) {
-            nearest(arrow, arrow.position(), 24).ifPresent(target -> {
-                Vec3 velocity = arrow.getDeltaMovement(),
-                        aim =
-                                target.getBoundingBox()
-                                        .getCenter()
-                                        .subtract(arrow.position())
-                                        .normalize();
-                arrow.setDeltaMovement(velocity.normalize()
-                        .scale(.65)
-                        .add(aim.scale(.35))
-                        .normalize()
-                        .scale(velocity.length()));
-            });
+            Vec3 originalEnd = arrow.position()
+                    .add(arrow.getDeltaMovement()
+                            .normalize()
+                            .scale(p.hitscan() ? 128 : arrow.getDeltaMovement().length()));
+            // Never pull a shot off a target already intersected by its current segment.
+            if (rayHits(arrow, arrow.position(), originalEnd).stream()
+                    .noneMatch(hit -> !state.hit.contains(
+                            ArrowDamage.living(hit.getEntity()).getUUID())))
+                homingTarget(arrow).ifPresent(target -> {
+                    Vec3 velocity = arrow.getDeltaMovement();
+                    Vec3 aim = target.getBoundingBox().getCenter().subtract(arrow.position());
+                    arrow.setDeltaMovement(
+                            p.hitscan()
+                                    ? aim.normalize().scale(velocity.length())
+                                    : Homing.turn(velocity, aim, p.gravity() != 0));
+                });
         }
         if (p.hitscan()) {
             scan(arrow);
             return true;
         }
+        if (state.remainingRange >= 0 && arrow.getDeltaMovement().length() > state.remainingRange)
+            arrow.setDeltaMovement(arrow.getDeltaMovement().normalize().scale(state.remainingRange));
         preparePath(arrow, arrow.position(), arrow.position().add(arrow.getDeltaMovement()));
         return false;
     }
@@ -75,6 +86,8 @@ public final class ArrowFlight {
     public static void afterTick(CustomArrowEntity arrow, Vec3 start, Vec3 end) {
         var state = ((ArrowRuntime) arrow).bertie$flight();
         if (!arrow.level().isClientSide && state.profile.tip("eldritch")) area(arrow, start, end);
+        state.travelledTo(state.redirectStart == null ? end : state.redirectStart);
+        if (state.remainingRange >= 0 && state.remainingRange <= .01) arrow.discard();
     }
 
     public static List<LivingEntity> targets(CustomArrowEntity arrow, Vec3 start, Vec3 end, double radius) {
@@ -109,17 +122,30 @@ public final class ArrowFlight {
                 .min(Comparator.comparingDouble(e -> e.distanceToSqr(point)));
     }
 
+    public static java.util.Optional<LivingEntity> homingTarget(CustomArrowEntity arrow) {
+        var state = ((ArrowRuntime) arrow).bertie$flight();
+        double radius = state.remainingRange < 0 ? 24 : Math.min(24, state.remainingRange);
+        return ArrowEffects.nearby(arrow, arrow.position(), radius).stream()
+                .filter(e -> !state.hit.contains(e.getUUID()))
+                .filter(e -> Homing.inCone(
+                        state.originalDirection, e.getBoundingBox().getCenter().subtract(arrow.position())))
+                .min(Comparator.comparingDouble(e -> e.distanceToSqr(arrow)));
+    }
+
     public static boolean ricochet(CustomArrowEntity arrow, Vec3 from) {
         var state = ((ArrowRuntime) arrow).bertie$flight();
         if (state.ricochets >= state.profile.ricochets()) return false;
-        var next = nearest(arrow, from, 24);
+        state.beginSecondary(from);
+        state.travelledTo(from);
+        if (state.remainingRange <= .01) return false;
+        var next = nearest(arrow, from, Math.min(24, state.remainingRange));
         if (next.isEmpty()) return false;
         state.ricochets++;
         Vec3 direction = next.get().getBoundingBox().getCenter().subtract(from).normalize();
-        arrow.setPos(from.add(direction.scale(.25)));
+        arrow.setPos(from.add(direction.scale(.01)));
+        state.originalDirection = direction;
         state.redirectStart = arrow.position();
-        arrow.setDeltaMovement(
-                direction.scale(Math.max(1.5, arrow.getDeltaMovement().length())));
+        arrow.setDeltaMovement(direction.scale(arrow.getDeltaMovement().length()));
         ((ArrowRuntime) arrow).bertie$grounded(false);
         return true;
     }
@@ -130,6 +156,7 @@ public final class ArrowFlight {
         var p = state.profile;
         Vec3 point = hit.getLocation()
                 .add(Vec3.atLowerCornerOf(hit.getDirection().getNormal()).scale(.15));
+        state.travelledTo(point);
         ArrowEffects.impact(arrow, point);
         if (p.extra("blaze_powder")) {
             for (BlockPos pos : BlockPos.betweenClosed(
@@ -175,7 +202,10 @@ public final class ArrowFlight {
             for (int branch = 0; branch <= state.profile.ricochets(); branch++) {
                 Vec3 velocity = arrow.getDeltaMovement();
                 Vec3 start = arrow.position(),
-                        end = start.add(arrow.getDeltaMovement().normalize().scale(128));
+                        end =
+                                start.add(arrow.getDeltaMovement()
+                                        .normalize()
+                                        .scale(state.remainingRange < 0 ? 128 : state.remainingRange));
                 preparePath(arrow, start, end);
                 BlockHitResult block = arrow.level()
                         .clip(new ClipContext(start, end, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, arrow));
@@ -202,7 +232,7 @@ public final class ArrowFlight {
         }
     }
 
-    private static List<EntityHitResult> rayHits(CustomArrowEntity arrow, Vec3 start, Vec3 end) {
+    public static List<EntityHitResult> rayHits(CustomArrowEntity arrow, Vec3 start, Vec3 end) {
         var hits = new ArrayList<EntityHitResult>();
         // Level's entity query includes multipart hitboxes, as vanilla projectile collision does.
         for (var entity : arrow.level().getEntities(arrow, new AABB(start, end).inflate(1), e -> {

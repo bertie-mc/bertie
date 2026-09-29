@@ -24,6 +24,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = AbstractArrow.class, remap = false)
 public abstract class VanillaArrowBridgeMixin {
+    @com.llamalad7.mixinextras.injector.ModifyExpressionValue(
+            method = "onHitEntity",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/projectile/AbstractArrow;isCritArrow()Z"))
+    private boolean bertie$consistentCritical(boolean original) {
+        // Component hits use one deterministic bow-critical multiplier, including flat bonuses.
+        return bertie$arrow() == null && original;
+    }
+
     @Unique
     private CustomArrowEntity bertie$arrow() {
         return (Object) this instanceof CustomArrowEntity arrow && ArrowProfile.redesigned(arrow.getCustomProperties())

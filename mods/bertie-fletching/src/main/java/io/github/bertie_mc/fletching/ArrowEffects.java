@@ -61,7 +61,7 @@ public final class ArrowEffects {
             if (burn > 0) target.setRemainingFireTicks(Math.max(target.getRemainingFireTicks(), burn));
             if (p.feather("sun")) {
                 target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 400));
-                ArrowDamage.secondary(context.data, arrow.getOwner(), target, 10, "fire");
+                ArrowDamage.secondary(context, target, 10 * context.vanillaCrit, "fire");
             }
             if (p.tip("echo")) target.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100));
             if (p.tip("permafrost")) target.addEffect(new MobEffectInstance(ArrowStatus.FROZEN, 40));
@@ -153,7 +153,7 @@ public final class ArrowEffects {
                             .min(Comparator.comparingDouble(e -> e.distanceToSqr(target)))
                             .ifPresent(other -> {
                                 sonic(level, target.position(), other.position());
-                                ArrowDamage.secondary(context.data, arrow.getOwner(), other, context.raw, "secondary");
+                                ArrowDamage.secondary(context, other, context.raw, "secondary");
                             });
                 }
             }
@@ -221,8 +221,10 @@ public final class ArrowEffects {
         ServerLevel level = (ServerLevel) arrow.level();
         for (int i = 0; i < 8; i++) {
             double angle = i * Math.PI / 4;
-            Vec3 direction =
-                    new Vec3(Math.cos(angle) * Math.cos(Math.PI / 6), -.5, Math.sin(angle) * Math.cos(Math.PI / 6));
+            Vec3 direction = new Vec3(
+                    Math.cos(angle) * Math.cos(Math.PI / 18),
+                    -Math.sin(Math.PI / 18),
+                    Math.sin(angle) * Math.cos(Math.PI / 18));
             CustomArrowEntity child =
                     new CustomArrowEntity(com.fletchery.mod.registry.ModRegistries.CUSTOM_ARROW_ENTITY.get(), level);
             CompoundTag data = arrow.getCustomProperties().copy();
@@ -236,7 +238,16 @@ public final class ArrowEffects {
                     .add(0, target.getBbHeight() * .5, 0)
                     .add(direction.scale(Math.max(.7, target.getBbWidth()))));
             child.setDeltaMovement(direction.scale(2));
-            ((ArrowRuntime) child).bertie$flight().hit.add(target.getUUID());
+            var parent = ((ArrowRuntime) arrow).bertie$flight();
+            var childState = ((ArrowRuntime) child).bertie$flight();
+            childState.hit.addAll(parent.hit);
+            childState.hit.add(target.getUUID());
+            childState.beginSecondary(target.position().add(0, target.getBbHeight() * .5, 0));
+            if (parent.remainingRange >= 0) childState.remainingRange = Math.min(24, parent.remainingRange);
+            childState.travelledTo(child.position());
+            childState.ricochets = parent.ricochets;
+            childState.started = true;
+            childState.originalDirection = direction;
             level.addFreshEntity(child);
         }
     }
@@ -284,10 +295,12 @@ public final class ArrowEffects {
     }
 
     public static void sonic(ServerLevel level, Vec3 start, Vec3 end) {
-        int count = Math.max(1, Math.min(64, (int) start.distanceTo(end)));
-        for (int i = 0; i < count; i++) {
+        int count = Math.max(1, (int) Math.ceil(start.distanceTo(end)));
+        for (int i = 0; i <= count; i++) {
             Vec3 p = start.lerp(end, (double) i / count);
-            level.sendParticles(ParticleTypes.SONIC_BOOM, p.x, p.y, p.z, 1, 0, 0, 0, 0);
+            for (ServerPlayer player : level.players())
+                if (player.distanceToSqr(start) < 256 * 256)
+                    level.sendParticles(player, ParticleTypes.SONIC_BOOM, true, p.x, p.y, p.z, 1, 0, 0, 0, 0);
         }
         level.playSound(
                 null, BlockPos.containing(start), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.PLAYERS, .7f, 1.2f);

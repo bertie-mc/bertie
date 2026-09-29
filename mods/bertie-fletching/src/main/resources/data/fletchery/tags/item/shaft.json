@@ -6,10 +6,6 @@
       "required": false
     },
     {
-      "id": "betterend:leather_wrapped_stick",
-      "required": false
-    },
-    {
       "id": "minecraft:fishing_rod",
       "required": false
     },

@@ -72,6 +72,7 @@ public abstract class RedesignedProjectileMixin extends AbstractArrow implements
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
     private void bertie$tick(CallbackInfo ci) {
         CustomArrowEntity arrow = bertie$self();
+        bertie$syncProperties();
         if (!ArrowProfile.redesigned(arrow.getCustomProperties())) return;
         Vec3 start = position();
         bertie$flight().redirectStart = null;
@@ -94,6 +95,7 @@ public abstract class RedesignedProjectileMixin extends AbstractArrow implements
         bertie$impact = hit.getLocation();
         FlightState state = bertie$flight();
         state.peak = Math.max(state.peak, getY());
+        state.travelledTo(hit.getLocation());
         Vec3 incoming = getDeltaMovement();
         Vec3 direction = incoming.normalize();
         state.hit.add(hit.getEntity().getUUID());
@@ -102,6 +104,8 @@ public abstract class RedesignedProjectileMixin extends AbstractArrow implements
         CompoundTag data = arrow.getCustomProperties().copy();
         data.putBoolean("bertieNoRecovery", pickup != Pickup.ALLOWED);
         ArrowDamage.Context context = new ArrowDamage.Context(data, getOwner(), 0);
+        context.direct = arrow;
+        context.vanillaCrit = isCritArrow() ? 1.5f : 1f;
         if (target != null) ArrowEffects.beforeHit(arrow, target);
         ArrowDamage.with(context, () -> {
             super.onHitEntity(hit);

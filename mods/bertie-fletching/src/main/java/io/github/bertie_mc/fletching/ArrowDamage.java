@@ -21,6 +21,9 @@ public final class ArrowDamage {
         public final ArrowProfile profile;
         public final Entity owner;
         public float raw;
+        public Entity direct;
+        public float vanillaCrit = 1, criticalMultiplier = 1, criticalInput;
+        public boolean inheritedCritical;
         public boolean damaged;
 
         public Context(CompoundTag data, Entity owner, float raw) {
@@ -57,8 +60,9 @@ public final class ArrowDamage {
 
     public static float raw(CustomArrowEntity arrow, LivingEntity target, float vanilla) {
         FlightState state = ((ArrowRuntime) arrow).bertie$flight();
-        float value =
-                state.fixedDamage >= 0 ? (float) state.fixedDamage : vanilla + state.profile.bonus(target, state.peak);
+        float value = state.fixedDamage >= 0
+                ? (float) state.fixedDamage
+                : (vanilla + state.profile.bonus(target, state.peak)) * (arrow.isCritArrow() ? 1.5f : 1f);
         return Math.max(0, value);
     }
 
@@ -70,6 +74,15 @@ public final class ArrowDamage {
         if (!(target.level() instanceof ServerLevel level) || raw <= 0 || !target.isAlive()) return false;
         Context ctx = new Context(data, owner, raw);
         return with(ctx, () -> target.hurt(source(level, kind, null, owner), raw));
+    }
+
+    public static boolean secondary(Context parent, LivingEntity target, float raw, String kind) {
+        if (!(target.level() instanceof ServerLevel level) || raw <= 0 || !target.isAlive()) return false;
+        Context ctx = new Context(parent.data, parent.owner, raw);
+        ctx.direct = parent.direct;
+        ctx.inheritedCritical = true;
+        ctx.criticalMultiplier = parent.criticalMultiplier;
+        return with(ctx, () -> target.hurt(source(level, kind, ctx.direct, ctx.owner), raw));
     }
 
     public static void execute(CompoundTag data, Entity owner, LivingEntity target) {
