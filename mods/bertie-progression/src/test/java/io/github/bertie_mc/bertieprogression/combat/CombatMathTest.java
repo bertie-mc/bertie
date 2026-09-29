@@ -36,7 +36,11 @@ class CombatMathTest {
     void toughnessCountersBothFlatAndPercentageArmorPenalties() {
         assertEquals(4, CombatMath.counterArmorPenalty(5, 10), 1e-12);
         assertEquals(0.16, CombatMath.counterArmorPenalty(0.2, 10), 1e-12);
-        assertEquals(0.08, CombatMath.counterArmorPenalty(0.2, 100), 1e-12);
+        assertEquals(0.08, CombatMath.counterArmorPenalty(0.2, 30), 1e-12);
+        assertEquals(0.04, CombatMath.counterArmorPenalty(0.2, 40), 1e-12);
+        assertEquals(2, CombatMath.counterArmorPenalty(10, 40), 1e-12);
+        assertEquals(0, CombatMath.counterArmorPenalty(0.2, 50), 1e-12);
+        assertEquals(0, CombatMath.counterArmorPenalty(10, 100), 1e-12);
     }
 
     @Test

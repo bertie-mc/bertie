@@ -19,7 +19,7 @@ public final class CombatMath {
     }
 
     public static double toughnessCounter(double toughness) {
-        return Math.clamp(toughness * 0.02, 0.0, 0.6);
+        return Math.clamp(toughness * 0.02, 0.0, 1.0);
     }
 
     public static double counterArmorPenalty(double penalty, double toughness) {

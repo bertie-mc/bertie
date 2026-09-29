@@ -18,6 +18,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Pseudo
 @Mixin(targets = "dev.shadowsoffire.apothic_attributes.api.ALCombatRules", remap = false)
 public abstract class ApothicCombatRulesMixin {
+    @Inject(method = "getBypassResistance", at = @At("HEAD"), cancellable = true, require = 1)
+    private static void bertie$toughness(
+            float damage, float armor, float toughness, CallbackInfoReturnable<Float> cir) {
+        cir.setReturnValue((float) CombatMath.toughnessCounter(toughness));
+    }
+
     @Inject(method = "getAValue", at = @At("HEAD"), cancellable = true, require = 1)
     private static void bertie$pressure(float damage, CallbackInfoReturnable<Float> cir) {
         cir.setReturnValue((float) CombatMath.armorPressure(damage));

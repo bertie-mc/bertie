@@ -98,6 +98,38 @@ public final class CombatGameTests {
     }
 
     @GameTest(template = "empty", batch = "combat")
+    public static void toughnessContinuesPastSixtyPercentAgainstShredAndPierce(GameTestHelper helper) {
+        Zombie target = target(helper);
+        Zombie attacker = target(helper);
+        CombatRegistry.attribute(attacker, "apothic_attributes:armor_shred").setBaseValue(1);
+        CombatRegistry.attribute(attacker, "apothic_attributes:armor_pierce").setBaseValue(10);
+        DamageSource source = helper.getLevel().damageSources().mobAttack(attacker);
+        // Pass the effective toughness directly: the compact test pack omits AttributeFix,
+        // which raises the vanilla attribute limit in the full pack.
+        near(
+                helper,
+                dev.shadowsoffire.apothic_attributes.api.ALCombatRules.getDamageAfterArmor(target, source, 20, 25, 30),
+                160.0 / 19,
+                "30 toughness still counters 60% of penetration");
+        near(
+                helper,
+                dev.shadowsoffire.apothic_attributes.api.ALCombatRules.getDamageAfterArmor(target, source, 20, 25, 40),
+                160.0 / 26,
+                "40 toughness counters 80% of penetration");
+        near(
+                helper,
+                dev.shadowsoffire.apothic_attributes.api.ALCombatRules.getDamageAfterArmor(target, source, 20, 25, 50),
+                160.0 / 33,
+                "50 toughness prevents all penetration");
+        near(
+                helper,
+                dev.shadowsoffire.apothic_attributes.api.ALCombatRules.getDamageAfterArmor(target, source, 20, 25, 100),
+                160.0 / 33,
+                "excess toughness cannot turn penetration into bonus armor");
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty", batch = "combat")
     public static void magicDoesNotReceiveOrdinaryFireProtection(GameTestHelper helper) {
         Zombie target = target(helper);
         target.getAttribute(Attributes.ARMOR).setBaseValue(0);

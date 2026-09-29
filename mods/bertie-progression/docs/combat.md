@@ -52,7 +52,9 @@ Blast or Projectile Protection level, three per Feather Falling level. Gems abov
 40 continue the curve. Ordinary Protection's book/anvil maximum is X; its loot
 generation limit remains IV. Negative armor keeps Apothic's separate amplification
 branch. Toughness counters pierce, shred, Breach and registered hostile effect armor
-penalties by `min(0.02 × toughness, 0.6)`; it no longer counters hit size.
+penalties by `min(0.02 × toughness, 1)`; it no longer counters hit size. There is no
+60% ceiling: 40 toughness counters 80%, and 50 toughness fully prevents these penalties.
+Values above 50 cannot turn penetration into an armor bonus.
 
 Independent positive Energy resistance percentages multiply remaining damage.
 Stronghold armor is one additive set source: 25 percentage points per piece, 100% at
