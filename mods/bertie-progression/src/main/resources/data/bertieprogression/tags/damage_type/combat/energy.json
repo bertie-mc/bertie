@@ -1,0 +1,509 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alexsmobs:farseer",
+      "required": false
+    },
+    {
+      "id": "amendments:boiling",
+      "required": false
+    },
+    {
+      "id": "antarchy:kraken_lightning",
+      "required": false
+    },
+    {
+      "id": "antarchy:water_soaked",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:laser",
+      "required": false
+    },
+    {
+      "id": "apotheosis:psychic",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:cold_damage",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:detonation",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:fire_damage",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:amaterasu_damage_type",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:flamebound_pact_damage_type",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:frostbite_damage_type",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:holy_damage_type",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:howling_tempest_damage_type",
+      "required": false
+    },
+    {
+      "id": "armageddon_mod:toxins_kiss_damage_type",
+      "required": false
+    },
+    {
+      "id": "cataclysm:abyssal_burn",
+      "required": false
+    },
+    {
+      "id": "cataclysm:deathlaser",
+      "required": false
+    },
+    {
+      "id": "cataclysm:emp",
+      "required": false
+    },
+    {
+      "id": "cataclysm:flame_strike",
+      "required": false
+    },
+    {
+      "id": "cataclysm:laser",
+      "required": false
+    },
+    {
+      "id": "cataclysm:lightning",
+      "required": false
+    },
+    {
+      "id": "cataclysm:storm_bringer",
+      "required": false
+    },
+    {
+      "id": "create:fan_fire",
+      "required": false
+    },
+    {
+      "id": "create:fan_lava",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:shadow_curse",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:soul_curse",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:void_curse",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:ring",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:blood_rot",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:dungeon_stove_burn",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:echo_blast",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:living_essence",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:skull_heart_blast",
+      "required": false
+    },
+    {
+      "id": "endersdelight:watered",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:darkness",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:stove_burn",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ice_cloud",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:spores",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragon_fire",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragon_ice",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dragon_lightning",
+      "required": false
+    },
+    {
+      "id": "l2complements:emerald",
+      "required": false
+    },
+    {
+      "id": "l2complements:freeze",
+      "required": false
+    },
+    {
+      "id": "l2complements:soul_flame",
+      "required": false
+    },
+    {
+      "id": "l2hostility:killer_aura",
+      "required": false
+    },
+    {
+      "id": "l2hostility:reflect",
+      "required": false
+    },
+    {
+      "id": "magitech:ember",
+      "required": false
+    },
+    {
+      "id": "magitech:flow",
+      "required": false
+    },
+    {
+      "id": "magitech:glace",
+      "required": false
+    },
+    {
+      "id": "magitech:hollow",
+      "required": false
+    },
+    {
+      "id": "magitech:magic",
+      "required": false
+    },
+    {
+      "id": "magitech:mana",
+      "required": false
+    },
+    {
+      "id": "magitech:phantom",
+      "required": false
+    },
+    {
+      "id": "magitech:surge",
+      "required": false
+    },
+    {
+      "id": "magitech:tremor",
+      "required": false
+    },
+    {
+      "id": "malum:berserker_spirit_impact",
+      "required": false
+    },
+    {
+      "id": "malum:hidden_blade_magic_counter",
+      "required": false
+    },
+    {
+      "id": "malum:inverted_heart_propagation",
+      "required": false
+    },
+    {
+      "id": "malum:inverted_heart_retaliation",
+      "required": false
+    },
+    {
+      "id": "malum:rot",
+      "required": false
+    },
+    {
+      "id": "malum:sundering_anchor_magic_combo",
+      "required": false
+    },
+    {
+      "id": "malum:tyrving",
+      "required": false
+    },
+    {
+      "id": "malum:voodoo",
+      "required": false
+    },
+    {
+      "id": "malum:voodoo_playerless",
+      "required": false
+    },
+    {
+      "id": "malum:warlock_spirit_impact",
+      "required": false
+    },
+    {
+      "id": "mekanism:flamethrower",
+      "required": false
+    },
+    {
+      "id": "mekanism:laser",
+      "required": false
+    },
+    {
+      "id": "mekanism:radiation",
+      "required": false
+    },
+    {
+      "id": "minecraft:campfire",
+      "required": false
+    },
+    {
+      "id": "minecraft:dragon_breath",
+      "required": false
+    },
+    {
+      "id": "minecraft:fall",
+      "required": false
+    },
+    {
+      "id": "minecraft:fireball",
+      "required": false
+    },
+    {
+      "id": "minecraft:fly_into_wall",
+      "required": false
+    },
+    {
+      "id": "minecraft:freeze",
+      "required": false
+    },
+    {
+      "id": "minecraft:hot_floor",
+      "required": false
+    },
+    {
+      "id": "minecraft:in_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:indirect_magic",
+      "required": false
+    },
+    {
+      "id": "minecraft:lava",
+      "required": false
+    },
+    {
+      "id": "minecraft:lightning_bolt",
+      "required": false
+    },
+    {
+      "id": "minecraft:magic",
+      "required": false
+    },
+    {
+      "id": "minecraft:on_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:sonic_boom",
+      "required": false
+    },
+    {
+      "id": "minecraft:stalagmite",
+      "required": false
+    },
+    {
+      "id": "minecraft:sulfur_cube_hot",
+      "required": false
+    },
+    {
+      "id": "minecraft:thorns",
+      "required": false
+    },
+    {
+      "id": "minecraft:unattributed_fireball",
+      "required": false
+    },
+    {
+      "id": "minecraft:wither",
+      "required": false
+    },
+    {
+      "id": "neoforge:poison",
+      "required": false
+    },
+    {
+      "id": "oddities:orchid_shockwave_damage",
+      "required": false
+    },
+    {
+      "id": "oddities:orchid_x_slash_damage",
+      "required": false
+    },
+    {
+      "id": "pastel:deadly_poison",
+      "required": false
+    },
+    {
+      "id": "pastel:decay",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonrot",
+      "required": false
+    },
+    {
+      "id": "pastel:ink_projectile",
+      "required": false
+    },
+    {
+      "id": "pastel:irradiance",
+      "required": false
+    },
+    {
+      "id": "pastel:kindling_cough",
+      "required": false
+    },
+    {
+      "id": "pastel:midnight_solution",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_strike",
+      "required": false
+    },
+    {
+      "id": "pastel:primordial_fire",
+      "required": false
+    },
+    {
+      "id": "runiclib:venom",
+      "required": false
+    },
+    {
+      "id": "stellaris:radiations",
+      "required": false
+    },
+    {
+      "id": "terra_curio:star_cloak",
+      "required": false
+    },
+    {
+      "id": "twilightforest:acid_rain",
+      "required": false
+    },
+    {
+      "id": "twilightforest:chilling_breath",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fire_jet",
+      "required": false
+    },
+    {
+      "id": "twilightforest:frozen",
+      "required": false
+    },
+    {
+      "id": "twilightforest:haunt",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_fire",
+      "required": false
+    },
+    {
+      "id": "twilightforest:leaf_brain",
+      "required": false
+    },
+    {
+      "id": "twilightforest:lich_bolt",
+      "required": false
+    },
+    {
+      "id": "twilightforest:lifedrain",
+      "required": false
+    },
+    {
+      "id": "twilightforest:lost_words",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ominous_fire",
+      "required": false
+    },
+    {
+      "id": "twilightforest:reactor",
+      "required": false
+    },
+    {
+      "id": "twilightforest:schooled",
+      "required": false
+    },
+    {
+      "id": "twilightforest:scorched",
+      "required": false
+    },
+    {
+      "id": "twilightforest:snowball_fight",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thorns",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_scepter",
+      "required": false
+    },
+    {
+      "id": "twilightforest:yeeted",
+      "required": false
+    },
+    {
+      "id": "usefulmagic:magic",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:flameseed_fire",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:void_flame",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:scorchfang",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:whisper_poison",
+      "required": true
+    }
+  ]
+}

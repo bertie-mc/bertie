@@ -1,0 +1,53 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "antarchy:rpo_launcher_blast",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cattail_explosion",
+      "required": false
+    },
+    {
+      "id": "malum:nitrate",
+      "required": false
+    },
+    {
+      "id": "malum:nitrate_playerless",
+      "required": false
+    },
+    {
+      "id": "minecraft:bad_respawn_point",
+      "required": false
+    },
+    {
+      "id": "minecraft:explosion",
+      "required": false
+    },
+    {
+      "id": "minecraft:fireworks",
+      "required": false
+    },
+    {
+      "id": "minecraft:player_explosion",
+      "required": false
+    },
+    {
+      "id": "pastel:incandescence",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:brimstone_burst",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:emberblade_burst",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:flameseed_burst",
+      "required": true
+    }
+  ]
+}

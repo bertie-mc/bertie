@@ -1,0 +1,10 @@
+{
+  "values": [
+    {"id": "irons_spellbooks:fire_field", "required": false},
+    {"id": "irons_spellbooks:poison_cloud", "required": false},
+    {"id": "irons_spellbooks:wall_of_fire", "required": false},
+    {"id": "irons_spellbooks:earthquake_aoe", "required": false},
+    {"id": "irons_spellbooks:blizzard_aoe", "required": false},
+    {"id": "cataclysm:flame_strike", "required": false}
+  ]
+}

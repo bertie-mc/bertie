@@ -1,0 +1,6 @@
+{
+  "apothic_attributes:cold_damage.desc": "Adds Energy damage and slows targets hit in melee.",
+  "apothic_attributes:fire_damage.desc": "Adds Fire Energy damage and ignites targets hit in melee.",
+  "apothic_attributes:dodge_chance.desc": "Chance to avoid Physical damage.",
+  "effect.minecraft.instant_damage.desc": "Instantly deals Energy damage."
+}

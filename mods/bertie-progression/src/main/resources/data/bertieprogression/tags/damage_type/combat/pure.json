@@ -1,0 +1,285 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ancient_forgemastery:elixir_of_vitality_attack",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:howling_instinct_attack",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lost_in_time",
+      "required": false
+    },
+    {
+      "id": "apotheosis:execute",
+      "required": false
+    },
+    {
+      "id": "apothic_enchanting:corrupted",
+      "required": false
+    },
+    {
+      "id": "aquamirae:crystallization",
+      "required": false
+    },
+    {
+      "id": "aquamirae:shipbreaker",
+      "required": false
+    },
+    {
+      "id": "avaritia:infinity",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:in_quicksand",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:cardiac_arrest",
+      "required": false
+    },
+    {
+      "id": "cataclysm:maledictio_anima",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:spell_curse",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:bloody_mary",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:raw_creeper",
+      "required": false
+    },
+    {
+      "id": "ends_delight:enderman_gristle_teleport",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:abyss",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:evil_curse",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:nemesis_curse",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_attack",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_ba_attack",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_earthquake",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_falling_block",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_lor_attack",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_rock_attack",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_roll_attack",
+      "required": false
+    },
+    {
+      "id": "fdbosses:chesed_vertical_ray",
+      "required": false
+    },
+    {
+      "id": "fdbosses:electric_sphere",
+      "required": false
+    },
+    {
+      "id": "fdbosses:geburah_earthquake",
+      "required": false
+    },
+    {
+      "id": "fdbosses:geburah_judgement_ball",
+      "required": false
+    },
+    {
+      "id": "fdbosses:geburah_justice_hammer",
+      "required": false
+    },
+    {
+      "id": "fdbosses:geburah_laser_strike",
+      "required": false
+    },
+    {
+      "id": "fdbosses:geburah_ray_strike",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_cannons",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_chainpunch",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_cowardice",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_earthshatter",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_hellshaper",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_impaling_doom",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_side_rocks",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_slashes",
+      "required": false
+    },
+    {
+      "id": "fdbosses:malkuth_tsars_wrath",
+      "required": false
+    },
+    {
+      "id": "fdbosses:sinned_too_much",
+      "required": false
+    },
+    {
+      "id": "iceandfire:gorgon",
+      "required": false
+    },
+    {
+      "id": "incendium:sacrifice",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:blood_cauldron",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:heartstop",
+      "required": false
+    },
+    {
+      "id": "l2complements:life_sync",
+      "required": false
+    },
+    {
+      "id": "l2complements:void_eye",
+      "required": false
+    },
+    {
+      "id": "malum:desperate_need_withdrawal",
+      "required": false
+    },
+    {
+      "id": "malum:karmic",
+      "required": false
+    },
+    {
+      "id": "malum:void",
+      "required": false
+    },
+    {
+      "id": "mekanism:sps",
+      "required": false
+    },
+    {
+      "id": "mekanismgenerators:fusion",
+      "required": false
+    },
+    {
+      "id": "minecraft:cramming",
+      "required": false
+    },
+    {
+      "id": "minecraft:drown",
+      "required": false
+    },
+    {
+      "id": "minecraft:dry_out",
+      "required": false
+    },
+    {
+      "id": "minecraft:generic_kill",
+      "required": false
+    },
+    {
+      "id": "minecraft:in_wall",
+      "required": false
+    },
+    {
+      "id": "minecraft:out_of_world",
+      "required": false
+    },
+    {
+      "id": "minecraft:outside_border",
+      "required": false
+    },
+    {
+      "id": "minecraft:starve",
+      "required": false
+    },
+    {
+      "id": "parcool:parcool.wall_slide",
+      "required": false
+    },
+    {
+      "id": "pastel:dike_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:set_health",
+      "required": false
+    },
+    {
+      "id": "pastel:sleep",
+      "required": false
+    },
+    {
+      "id": "runiclib:creative_shock",
+      "required": false
+    },
+    {
+      "id": "stellaris:oxygen",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:thorn_rose_tea",
+      "required": false
+    },
+    {
+      "id": "twilightforest:expired",
+      "required": false
+    },
+    {
+      "id": "twilightforest:failed_challenge",
+      "required": false
+    }
+  ]
+}

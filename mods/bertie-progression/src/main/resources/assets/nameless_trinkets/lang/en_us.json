@@ -1,3 +1,4 @@
 {
-  "item.nameless_trinkets.moon_stone": "Moon Rock"
+  "item.nameless_trinkets.moon_stone": "Moon Rock",
+  "tooltip.nameless_trinkets.fractured_nullstone_1": "%1$s Energy damage reduction."
 }

@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "amendments:boiling",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:fire_damage",
+      "required": false
+    },
+    {
+      "id": "cataclysm:flame_strike",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:stove_burn",
+      "required": false
+    },
+    {
+      "id": "minecraft:sulfur_cube_hot",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:flameseed_fire",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:scorchfang",
+      "required": true
+    },
+    {
+      "id": "iceandfire:dragon_fire",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:dungeon_stove_burn",
+      "required": false
+    }
+  ]
+}

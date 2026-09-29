@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "neoforge:poison",
+      "required": false
+    },
+    {
+      "id": "pastel:deadly_poison",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:whisper_poison",
+      "required": true
+    }
+  ]
+}

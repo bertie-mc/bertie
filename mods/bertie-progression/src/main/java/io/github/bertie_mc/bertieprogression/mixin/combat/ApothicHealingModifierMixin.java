@@ -1,0 +1,17 @@
+package io.github.bertie_mc.bertieprogression.mixin.combat;
+
+import net.neoforged.neoforge.event.entity.living.LivingHealEvent;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Pseudo
+@Mixin(targets = "dev.shadowsoffire.apothic_attributes.impl.AttributeEvents", remap = false)
+public abstract class ApothicHealingModifierMixin {
+    @Inject(method = "heal", at = @At("HEAD"), cancellable = true, require = 1)
+    private void bertie$sharedHealing(LivingHealEvent event, CallbackInfo ci) {
+        ci.cancel();
+    }
+}

@@ -128,6 +128,13 @@ public final class PocketAccessGameTests {
                 helper.getLevel().getServer().getLevel(PocketTravelHandler.DIMENSION) != null,
                 "test world must load the pocket dimension");
         FakePlayer player = player(helper);
+        // The vanilla harness chooses coordinates up to 15 million. Pocket Dimension stores
+        // its return command with Double.toString, whose exponent notation Brigadier rejects.
+        // Keep this access-control test at ordinary coordinates; that upstream bug is unrelated.
+        BlockPos entry = new BlockPos(512, 80, 512);
+        helper.getLevel()
+                .setBlockAndUpdate(entry, ModBlocks.POCKET_DIMENSION.get().defaultBlockState());
+        player.setPos(entry.getX() + 0.5, entry.getY() + 1, entry.getZ() + 0.5);
         var returnPosition = player.position();
         NeoForge.EVENT_BUS.post(new PlayerTickEvent.Post(player));
         helper.assertTrue(
@@ -157,9 +164,12 @@ public final class PocketAccessGameTests {
                         player,
                         entity -> entity.level() == helper.getLevel(),
                         "the original portal must return a player without watch"))
-                .thenExecute(() -> helper.assertTrue(
-                        player.position().distanceToSqr(returnPosition) < 0.01,
-                        "return portal must preserve the block entry location"))
+                .thenExecute(() -> {
+                    helper.assertTrue(
+                            player.position().distanceToSqr(returnPosition) < 0.01,
+                            "return portal must preserve the block entry location");
+                    helper.getLevel().removeBlock(entry, false);
+                })
                 .thenSucceed();
     }
 

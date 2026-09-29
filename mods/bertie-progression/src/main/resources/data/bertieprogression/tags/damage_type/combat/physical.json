@@ -1,0 +1,577 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "alexsmobs:freddy",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ironbound_gauntlet_attack",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ravaging_claws_attack",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:shield_of_vindication_attack",
+      "required": false
+    },
+    {
+      "id": "antarchy:basilisk_bite",
+      "required": false
+    },
+    {
+      "id": "antarchy:bed_bug_bite",
+      "required": false
+    },
+    {
+      "id": "antarchy:cornea_stalk_prick",
+      "required": false
+    },
+    {
+      "id": "antarchy:emperor_scorpion_sting",
+      "required": false
+    },
+    {
+      "id": "antarchy:hercules_beetle_obliteration",
+      "required": false
+    },
+    {
+      "id": "antarchy:jumpy_bug_jump",
+      "required": false
+    },
+    {
+      "id": "antarchy:kraken_mauling",
+      "required": false
+    },
+    {
+      "id": "antarchy:nightmare_mauling",
+      "required": false
+    },
+    {
+      "id": "antarchy:rpo_launcher_blast",
+      "required": false
+    },
+    {
+      "id": "antarchy:spit_bug_disrespect",
+      "required": false
+    },
+    {
+      "id": "antarchy:toreterror_jump",
+      "required": false
+    },
+    {
+      "id": "antarchy:toreterror_spin",
+      "required": false
+    },
+    {
+      "id": "antarchy:triffid_mauling",
+      "required": false
+    },
+    {
+      "id": "antarchy:triffid_swallow",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:bleeding",
+      "required": false
+    },
+    {
+      "id": "apothic_attributes:current_hp_damage",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cattail_explosion",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:cannonball_hit",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:kraken_tentacle_smash",
+      "required": false
+    },
+    {
+      "id": "bookshelf:fake_player",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:piercing",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:punishment",
+      "required": false
+    },
+    {
+      "id": "burnt:flame_arrow",
+      "required": false
+    },
+    {
+      "id": "cataclysm:maledictio",
+      "required": false
+    },
+    {
+      "id": "cataclysm:maledictio_magicae",
+      "required": false
+    },
+    {
+      "id": "cataclysm:maledictio_sagitta",
+      "required": false
+    },
+    {
+      "id": "cataclysm:penetrate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:player_ceraunus",
+      "required": false
+    },
+    {
+      "id": "cataclysm:shredder",
+      "required": false
+    },
+    {
+      "id": "cataclysm:sword_dance",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:falling_coconut",
+      "required": false
+    },
+    {
+      "id": "create:crush",
+      "required": false
+    },
+    {
+      "id": "create:cuckoo_surprise",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_drill",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_roller",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_saw",
+      "required": false
+    },
+    {
+      "id": "create:potato_cannon",
+      "required": false
+    },
+    {
+      "id": "create:run_over",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:abyssal_fang",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:echo_abyssal_fang",
+      "required": false
+    },
+    {
+      "id": "curseofpandora:wind_blade",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:bite",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:devoured",
+      "required": false
+    },
+    {
+      "id": "dummmmmmy:critical",
+      "required": false
+    },
+    {
+      "id": "dummmmmmy:true",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:ancient_egg",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:cleaver",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:serrated",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:shatter",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:soul_berry_bush",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:wither_berry_bush",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:electrocuted",
+      "required": false
+    },
+    {
+      "id": "iceandfire:bonus",
+      "required": false
+    },
+    {
+      "id": "l2complements:bleed",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_armor",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_armor-bypass_cooldown",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_armor-bypass_cooldown-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_armor-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_cooldown",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_cooldown-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:mob_attack-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_armor",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_armor-bypass_cooldown",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_armor-bypass_cooldown-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_armor-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_cooldown",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_cooldown-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "l2damagetracker:player_attack-bypass_magic",
+      "required": false
+    },
+    {
+      "id": "magitech:mana_berry_bush",
+      "required": false
+    },
+    {
+      "id": "malum:desperate_need_cut",
+      "required": false
+    },
+    {
+      "id": "malum:hidden_blade_physical_counter",
+      "required": false
+    },
+    {
+      "id": "malum:nitrate",
+      "required": false
+    },
+    {
+      "id": "malum:nitrate_playerless",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_ascension",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_combo",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_maelstrom",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_melee",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_rebound",
+      "required": false
+    },
+    {
+      "id": "malum:scythe_sweep",
+      "required": false
+    },
+    {
+      "id": "malum:sundering_anchor_physical_combo",
+      "required": false
+    },
+    {
+      "id": "malum:unmakers_disdain_combo",
+      "required": false
+    },
+    {
+      "id": "minecraft:arrow",
+      "required": false
+    },
+    {
+      "id": "minecraft:bad_respawn_point",
+      "required": false
+    },
+    {
+      "id": "minecraft:cactus",
+      "required": false
+    },
+    {
+      "id": "minecraft:explosion",
+      "required": false
+    },
+    {
+      "id": "minecraft:falling_anvil",
+      "required": false
+    },
+    {
+      "id": "minecraft:falling_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:falling_stalactite",
+      "required": false
+    },
+    {
+      "id": "minecraft:fireworks",
+      "required": false
+    },
+    {
+      "id": "minecraft:generic",
+      "required": false
+    },
+    {
+      "id": "minecraft:mob_attack",
+      "required": false
+    },
+    {
+      "id": "minecraft:mob_attack_no_aggro",
+      "required": false
+    },
+    {
+      "id": "minecraft:mob_projectile",
+      "required": false
+    },
+    {
+      "id": "minecraft:player_attack",
+      "required": false
+    },
+    {
+      "id": "minecraft:player_explosion",
+      "required": false
+    },
+    {
+      "id": "minecraft:spit",
+      "required": false
+    },
+    {
+      "id": "minecraft:sting",
+      "required": false
+    },
+    {
+      "id": "minecraft:sweet_berry_bush",
+      "required": false
+    },
+    {
+      "id": "minecraft:thrown",
+      "required": false
+    },
+    {
+      "id": "minecraft:trident",
+      "required": false
+    },
+    {
+      "id": "minecraft:wind_charge",
+      "required": false
+    },
+    {
+      "id": "minecraft:wither_skull",
+      "required": false
+    },
+    {
+      "id": "modular_machinery_reborn:modular_machinery_damage",
+      "required": false
+    },
+    {
+      "id": "oddities:orchid_slash_damage",
+      "required": false
+    },
+    {
+      "id": "oddities:orchid_spin_damage",
+      "required": false
+    },
+    {
+      "id": "pastel:bristle_sprouts",
+      "required": false
+    },
+    {
+      "id": "pastel:evisceration",
+      "required": false
+    },
+    {
+      "id": "pastel:floatblock",
+      "required": false
+    },
+    {
+      "id": "pastel:impaling",
+      "required": false
+    },
+    {
+      "id": "pastel:incandescence",
+      "required": false
+    },
+    {
+      "id": "pastel:ripping",
+      "required": false
+    },
+    {
+      "id": "pastel:shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:snapping_ivy",
+      "required": false
+    },
+    {
+      "id": "quark:pickarang",
+      "required": false
+    },
+    {
+      "id": "runiclib:retaliation",
+      "required": false
+    },
+    {
+      "id": "spider_overhaul:cactus_spine",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ant",
+      "required": false
+    },
+    {
+      "id": "twilightforest:axing",
+      "required": false
+    },
+    {
+      "id": "twilightforest:clamped",
+      "required": false
+    },
+    {
+      "id": "twilightforest:falling_ice",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ghast_tear",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_bite",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_mortar",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal",
+      "required": false
+    },
+    {
+      "id": "twilightforest:lich_bomb",
+      "required": false
+    },
+    {
+      "id": "twilightforest:moonworm",
+      "required": false
+    },
+    {
+      "id": "twilightforest:oreberry",
+      "required": false
+    },
+    {
+      "id": "twilightforest:slam",
+      "required": false
+    },
+    {
+      "id": "twilightforest:slider",
+      "required": false
+    },
+    {
+      "id": "twilightforest:spiked",
+      "required": false
+    },
+    {
+      "id": "twilightforest:squish",
+      "required": false
+    },
+    {
+      "id": "twilightforest:stale_sandwich",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thrown_axe",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thrown_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thrown_pickaxe",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:bleeding",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:brimstone_burst",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:emberblade_burst",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:flameseed_burst",
+      "required": true
+    }
+  ]
+}

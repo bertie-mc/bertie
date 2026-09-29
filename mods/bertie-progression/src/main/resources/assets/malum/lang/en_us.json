@@ -1,0 +1,12 @@
+{
+  "enchantment.malum.haunted.desc": "Increases the weapon's Energy damage.",
+  "malum.effect.geas.rune_vulnerability": "Each rune reduces healing, armor and Energy Resistance",
+  "malum.effect.geas.soul_ward_on_hit": "Energy damage restores Soul Ward",
+  "malum.effect.keyword.gluttony": "Gluttony increases Energy damage and drains hunger",
+  "malum.gui.geas.pact_of_patience_repaid.cons": "Deferred damage is repaid as Pure, with a 20% surcharge.",
+  "malum.gui.geas.pact_of_the_arcanaphage.cons": "Converts incoming Physical damage into Energy. Halves Soul Ward Integrity.",
+  "malum.gui.geas.authority_of_the_inverted_heart.cons": "Increases vulnerability to Energy damage.",
+  "malum.gui.geas.pact_of_reciprocation.pros": "Energy damage restores Soul Ward. Increases capacity and doubles gain.",
+  "malum.gui.geas.pact_of_rune_exploitation.cons": "Each rune reduces healing, armor, toughness and Energy Resistance.",
+  "malum.gui.geas.pact_of_the_profane_glutton.cons": "Desperate Need reduces armor and Energy Resistance. Starvation poisons; nearby poisoned enemies spread poison."
+}

@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:campfire",
+      "required": false
+    },
+    {
+      "id": "minecraft:hot_floor",
+      "required": false
+    },
+    {
+      "id": "minecraft:in_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:lava",
+      "required": false
+    },
+    {
+      "id": "minecraft:on_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:soul_campfire",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:stove_burn",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:dungeon_stove_burn",
+      "required": false
+    },
+    {
+      "id": "amendments:boiling",
+      "required": false
+    },
+    {
+      "id": "create:fan_fire",
+      "required": false
+    }
+  ]
+}

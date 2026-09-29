@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "irons_spellbooks:heartstop", "required": false},
+    {"id": "malum:karmic", "required": false},
+    {"id": "aquamirae:crystallization", "required": false}
+  ]
+}

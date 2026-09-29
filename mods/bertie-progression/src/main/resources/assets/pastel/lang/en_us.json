@@ -1,3 +1,7 @@
 {
-  "item.pastel.blazing_crystal": "Incandescent Crystal"
+  "item.pastel.blazing_crystal": "Incandescent Crystal",
+  "effect.pastel.magic_annulation": "Energy Annulation",
+  "effect.pastel.magic_annulation.desc": "Subtracts 1 Energy damage per level after resistance.",
+  "book.pastel.guidebook.magic_annulation.page0.text": "Subtracts 1 Energy damage per level after resistance.",
+  "explosion_modifier.pastel.magic_damage": "Energy Damage"
 }

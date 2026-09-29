@@ -1,0 +1,77 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "apothic_attributes:bleeding",
+      "required": false
+    },
+    {
+      "id": "cataclysm:abyssal_burn",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:abyss",
+      "required": false
+    },
+    {
+      "id": "l2complements:bleed",
+      "required": false
+    },
+    {
+      "id": "l2complements:freeze",
+      "required": false
+    },
+    {
+      "id": "l2complements:soul_flame",
+      "required": false
+    },
+    {
+      "id": "minecraft:freeze",
+      "required": false
+    },
+    {
+      "id": "minecraft:on_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:wither",
+      "required": false
+    },
+    {
+      "id": "neoforge:poison",
+      "required": false
+    },
+    {
+      "id": "pastel:deadly_poison",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fire_field",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poison_cloud",
+      "required": false
+    },
+    {
+      "id": "cataclysm:flame_strike",
+      "required": false
+    },
+    {
+      "id": "pastel:primordial_fire",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:bleeding",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:flameseed_fire",
+      "required": true
+    },
+    {
+      "id": "bertieprogression:void_flame",
+      "required": true
+    }
+  ]
+}

@@ -53,6 +53,9 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Systems
 
+- **Combat integration** (`combat/`) — shared Physical, Magic, Energy and Pure rules,
+  armor and Protection formulas, resistance, recovery and ward compatibility.
+  See [Combat integration](docs/combat.md) for formulas, coverage and retained exceptions.
 - **Crafting gate** (`gate/CraftingGateHandler`) — recipes are withheld until the player
   holds the corresponding licence.
 - **Catalyst recipes** (`recipe/CatalystShapedRecipe`) — a shaped recipe that requires a

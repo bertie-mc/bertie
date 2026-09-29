@@ -520,6 +520,9 @@ side="BOTH"
 [[mixins]]
 config="bertieprogression.mixins.json"
 
+[[mixins]]
+config="bertieprogression.combat.mixins.json"
+
 [[dependencies.${mod_id}]]
 modId="betterend"
 type="optional"

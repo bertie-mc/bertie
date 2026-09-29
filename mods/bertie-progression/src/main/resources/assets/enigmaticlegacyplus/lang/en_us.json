@@ -1,0 +1,9 @@
+{
+  "tooltip.enigmaticlegacy.quartzRingAttribute": "Energy Damage Received",
+  "tooltip.enigmaticlegacy.golemHeart8": "Vulnerable to Energy damage.",
+  "tooltip.enigmaticlegacy.eyeOfNebula1": "%1$s Energy Damage Increase",
+  "tooltip.enigmaticlegacy.eyeOfNebula2": "%1$s Energy Resistance",
+  "tooltip.enigmaticlegacy.lostEngine6": "Vulnerable to Energy damage.",
+  "enigmaticlegacyplus.configuration.magicBoost": "Energy Damage Boost",
+  "enigmaticlegacyplus.configuration.magicResistance": "Energy Resistance"
+}
