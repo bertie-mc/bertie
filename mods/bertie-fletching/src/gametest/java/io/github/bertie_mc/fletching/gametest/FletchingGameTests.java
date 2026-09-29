@@ -41,6 +41,45 @@ public final class FletchingGameTests {
     private record Table(Player player, FletchingMenu menu, BlockPos pos) {}
 
     @GameTest(template = "empty")
+    public static void wheatFallsFivePercentFasterAndBreezeStillIgnoresGravity(GameTestHelper helper) {
+        var config = com.fletchery.mod.config.ModConfig.get();
+        float savedGravity = config.wheatGravity;
+        try {
+            config.wheatGravity = 0;
+            CustomArrowEntity baseline = flightArrow(helper, "minecraft:stick");
+            config.wheatGravity = .05F;
+            CustomArrowEntity wheat = flightArrow(helper, "minecraft:stick");
+            CustomArrowEntity breeze = flightArrow(helper, "minecraft:breeze_rod");
+            for (int i = 0; i < 5; i++) {
+                baseline.tick();
+                wheat.tick();
+                breeze.tick();
+                double expected = baseline.getDeltaMovement().y * 1.05;
+                helper.assertTrue(
+                        Math.abs(wheat.getDeltaMovement().y - expected) < .000001,
+                        "wheat vertical acceleration must be exactly 105% of baseline");
+                helper.assertTrue(Math.abs(breeze.getDeltaMovement().y) < .000001, "breeze remains gravity-free");
+            }
+            helper.assertTrue(wheat.getY() < baseline.getY(), "wheat falls farther after equal flight time");
+        } finally {
+            config.wheatGravity = savedGravity;
+        }
+        helper.succeed();
+    }
+
+    private static CustomArrowEntity flightArrow(GameTestHelper helper, String shaft) {
+        CustomArrowEntity arrow = new CustomArrowEntity(ModRegistries.CUSTOM_ARROW_ENTITY.get(), helper.getLevel());
+        CompoundTag tag = new CompoundTag();
+        tag.putString("feather", "minecraft:wheat");
+        tag.putString("shaft", shaft);
+        tag.putString("tip", "minecraft:flint");
+        arrow.setCustomProperties(tag);
+        arrow.setPos(helper.absolutePos(new BlockPos(1, 30, 1)).getCenter());
+        arrow.setDeltaMovement(.25, 0, 0);
+        return arrow;
+    }
+
+    @GameTest(template = "empty")
     public static void destroyingTableClearsStoredLiquidAndInvalidatesOpenMenu(GameTestHelper helper) {
         Table t = table(helper);
         t.menu().setCarried(potion(Items.POTION, Potions.POISON));
