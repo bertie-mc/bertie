@@ -9,14 +9,16 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
-import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
@@ -50,6 +52,8 @@ public final class RemovedItems {
 
     private static Set<ResourceLocation> ids;
     private static Set<ResourceLocation> tabs;
+    private static Set<ResourceLocation> potions;
+    private static Set<ResourceLocation> effects;
 
     private static Set<ResourceLocation> ids() {
         if (ids == null) {
@@ -106,7 +110,7 @@ public final class RemovedItems {
         }
 
         for (ItemStack stack : entries) {
-            if (isMundanePotion(stack)) {
+            if (isRemovedPotion(stack)) {
                 event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
         }
@@ -127,12 +131,34 @@ public final class RemovedItems {
     }
 
     /**
-     * A Mundane Potion in any bottle, or an arrow tipped with one. Nothing in the pack brews it
-     * (see {@code PotionBrewingBuilderMixin}), so all four forms leave the tabs as well.
+     * Component-aware removal covers every bottle and tipped-arrow form without removing their
+     * shared vanilla item. Registry entries remain available for loading existing saves.
      */
-    public static boolean isMundanePotion(ItemStack stack) {
+    public static boolean isRemovedPotion(ItemStack stack) {
         PotionContents contents = stack.get(DataComponents.POTION_CONTENTS);
-        return contents != null && contents.is(Potions.MUNDANE);
+        if (contents == null) return false;
+        if (contents.potion().map(RemovedItems::isRemovedPotion).orElse(false)) return true;
+        for (var effect : contents.getAllEffects()) {
+            if (isRemovedEffect(effect.getEffect())) return true;
+        }
+        return false;
+    }
+
+    public static boolean isRemovedPotion(Holder<Potion> potion) {
+        if (potions == null) potions = read("/removed_potions.json");
+        if (potion.unwrapKey().map(key -> potions.contains(key.location())).orElse(false)) return true;
+        return potion.value().getEffects().stream().anyMatch(effect -> isRemovedEffect(effect.getEffect()));
+    }
+
+    public static boolean isRemovedEffect(Holder<MobEffect> effect) {
+        return effect.unwrapKey()
+                .map(key -> removedEffectIds().contains(key.location()))
+                .orElse(false);
+    }
+
+    public static Set<ResourceLocation> removedEffectIds() {
+        if (effects == null) effects = read("/removed_effects.json");
+        return Set.copyOf(effects);
     }
 
     private RemovedItems() {}

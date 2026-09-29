@@ -82,6 +82,13 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Data
 
+Removed potion families and effects use `removed_potions.json` and `removed_effects.json`,
+alongside the existing item/tab removal lists. L2 Armor Corrosion cannot be brewed, applied,
+forced onto an entity, or crafted into tipped arrows. Its normal, extended and strong forms
+are hidden from creative tabs and EMI, with their recipes removed from the viewer. Loading
+an older entity clears both the effect and its armor penalty. Registry entries remain for
+save compatibility. L2's separate Corrosion trait and Ring of Corrosion are unaffected.
+
 About 750 JSON files: the R01–R42 recipe ledger, darkstone stonecutting recipes,
 35 Hephaestus Forge rituals (the four chunk loaders among them), and recipe additions or
 overrides in the namespaces of the pack's other mods (Create kinetics, Malum spirit infusion,

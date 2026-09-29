@@ -15,6 +15,9 @@
     "HeadTrinketSlotMixin",
     "PocketOpenKeyMixin",
     "PotionBrewingBuilderMixin",
+    "RemovedEffectsMixin",
+    "RemovedPotionBrewingMixin",
+    "RemovedTippedArrowMixin",
     "SequencedAssemblyRecipeMixin",
     "VanityEntityItemPacketMixin"
   ],

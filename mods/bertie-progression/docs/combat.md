@@ -69,6 +69,10 @@ Blazing Brand, Rend and Hazen Ichor remove armor only. Enigmatic Ichor retains i
 other penalties but no toughness loss. Retired saved effect modifiers are removed
 when an entity joins the level.
 
+L2 Armor Corrosion is withdrawn through the pack removal lists, including its potion
+and tipped-arrow family. It cannot be applied; saved effects and orphaned armor penalties
+are cleared on load. L2's similarly named durability-damaging trait and ring remain separate.
+
 ## Damage accounting
 
 The integration collects legacy percentage contributions on the current
