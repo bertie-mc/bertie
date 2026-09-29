@@ -2,6 +2,8 @@
 
 Extends Fletchery Expanded 1.0.5 on NeoForge 1.21.1 with an ordered catalogue of 12 fletching materials, 12 shafts, 22 tips and 18 extras. See [Components](COMPONENTS.md) for ingredient IDs and descriptions.
 
+Included in Bertie's standard client and server packs. Stable releases and compatibility notes are listed in the [changelog](CHANGELOG.md).
+
 ## Crafting
 
 Every craft produces eight arrows, consuming one feather, shaft, tip and optional extra. The potion tank accepts regular, splash and lingering potions, holds enough liquid for 64 arrows, and coats eight arrows per bottle. Click with a bottle to return its empty bottle on the cursor; shift-click to return it to its inventory position. Different potion contents cannot mix. Shift-crafting stops when the coating runs out, and requires space for complete batches.
