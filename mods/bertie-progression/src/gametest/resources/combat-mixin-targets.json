@@ -19,6 +19,7 @@
   "auviotre.enigmatic.legacy.contents.item.spellstones.ForgottenIce$Events",
   "auviotre.enigmatic.legacy.contents.item.spellstones.IllusionLantern$Events",
   "auviotre.enigmatic.legacy.contents.item.spellstones.other.Spelltuner$Events",
+  "com.benji.netherman.common.entity.DoctorEntity",
   "com.cozary.nameless_trinkets.events.CallusHandler",
   "com.cozary.nameless_trinkets.events.FracturedNullstoneEvents",
   "com.cozary.nameless_trinkets.events.FracturedNullstoneHandler",

@@ -157,8 +157,8 @@ public final class RemovedItems {
     }
 
     public static Set<ResourceLocation> removedEffectIds() {
-        if (effects == null) effects = read("/removed_effects.json");
-        return Set.copyOf(effects);
+        if (effects == null) effects = Set.copyOf(read("/removed_effects.json"));
+        return effects;
     }
 
     private RemovedItems() {}

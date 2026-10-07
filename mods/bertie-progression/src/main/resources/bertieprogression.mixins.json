@@ -10,6 +10,7 @@
     "BabyWitherSkeletonOddsMixin",
     "BasinRecipeMixin",
     "BlazeBurnerBlockEntityMixin",
+    "DoctorPotionRemovalMixin",
     "DollMachineLotteryMixin",
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
