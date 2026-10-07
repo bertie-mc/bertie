@@ -2030,8 +2030,6 @@
 	quest.1C00000000001009.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C0000000000100F.title: "Canvas"
 	quest.1C0000000000100F.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001011.title: "Arcane Cloth"
-	quest.1C00000000001011.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001012.title: "Mithril Weave"
 	quest.1C00000000001012.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001013.title: "Corrupted Cloth"
@@ -2042,8 +2040,6 @@
 	quest.1C00000000001015.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001016.title: "Aegis Weave"
 	quest.1C00000000001016.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001017.title: "Soulwoven Silk"
-	quest.1C00000000001017.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001018.title: "Astral Weave"
 	quest.1C00000000001018.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001019.title: "Ancient Weave"
