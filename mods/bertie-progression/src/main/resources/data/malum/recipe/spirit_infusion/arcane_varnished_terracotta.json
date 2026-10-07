@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:terracotta",
+    "count": 2
+  },
+  "extraInputs": [
+    {
+      "item": "malum:alchemical_calx",
+      "count": 1
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "malum:arcane_varnished_terracotta",
+    "count": 4
+  }
+}

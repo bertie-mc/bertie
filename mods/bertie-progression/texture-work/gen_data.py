@@ -733,7 +733,8 @@ write(f"{R}/malum/twilight_concord.json",
                                              "eldritch", "infernal", "sacred", "wicked")],
                "bertieprogression:twilight_concord", 1))
 write(f"{R}/malum/arcane_ingot.json",
-      infusion("forbidden_arcanus:deorum_ingot", 1, [("irons_spellbooks:arcane_essence", 8)],
+      infusion("forbidden_arcanus:deorum_ingot", 1,
+               [("irons_spellbooks:arcane_essence", 8), ("forbidden_arcanus:arcane_crystal_dust", 4)],
                [("malum:arcane", 4)], "irons_spellbooks:arcane_ingot", 1))
 write(f"{R}/malum/soulstained_steel.json",
       infusion("forbidden_arcanus:obsidiansteel_ingot", 1, [("malum:refined_soulstone", 4)],
@@ -2688,12 +2689,14 @@ write("data/malum/recipe/spirit_infusion/soulwoven_silk.json",
                [SP("sacred", 4), SP("aerial", 3), SP("earthen", 3)],
                "malum:soulwoven_silk", 1))
 
-# Arcane Cloth: replace Iron's Spellbooks' wool centre with Soulwoven Silk; the eight-essence ring
-# and one-cloth output stay the same.
+# Arcane Cloth binds two rows of Soulwoven Silk around Small Arcane Slates.
 write("data/irons_spellbooks/recipe/magic_cloth.json",
-      shaped(["AAA", "ASA", "AAA"],
-             {"A": "irons_spellbooks:arcane_essence", "S": "malum:soulwoven_silk"},
+      shaped(["SSS", "LLL", "SSS"],
+             {"L": "berlordscarving:arcane_slate", "S": "malum:soulwoven_silk"},
              "irons_spellbooks:magic_cloth"))
+write("data/malum/recipe/spirit_infusion/arcane_varnished_terracotta.json",
+      infusion("minecraft:terracotta", 2, [("malum:alchemical_calx", 1)],
+               [("malum:arcane", 2)], "malum:arcane_varnished_terracotta", 4))
 
 # Astral Weave gains a Spirit Altar route; Malum's phantom/ghast reaping data remains available.
 write(f"{R}/malum/astral_weave.json",
@@ -3745,25 +3748,6 @@ for _mob, _n in sorted(MOB_DOLLS.items()):
         "item": f"{KD}:doll_{_n}",
     })
     _glm.append(f"bertieprogression:doll_drops/{_mob}")
-# Matches the pack's Hoglin Hide scavenging conditions and monotonic Looting curve. Quark's
-# native count-based hide drop is disabled in the pack configuration so the two do not stack.
-write("data/bertieprogression/loot_modifiers/ravager_hide.json", {
-    "neoforge:conditions": conds("farmersdelight", "quark"),
-    "type": "farmersdelight:add_item",
-    "conditions": [
-        {"condition": "minecraft:entity_properties", "entity": "attacker",
-         "predicate": {"equipment": {"mainhand": {"items": "#farmersdelight:tools/knives"}}}},
-        {"condition": "minecraft:entity_properties", "entity": "this",
-         "predicate": {"flags": {"is_on_fire": False}}},
-        {"condition": "minecraft:entity_properties", "entity": "this",
-         "predicate": {"type": "minecraft:ravager"}},
-        {"condition": "minecraft:random_chance_with_enchanted_bonus", "enchantment": "minecraft:looting",
-         "unenchanted_chance": 0.35,
-         "enchanted_chance": {"type": "minecraft:linear", "base": 0.35, "per_level_above_first": 0.1}},
-    ],
-    "item": "quark:ravager_hide",
-})
-_glm.append("bertieprogression:ravager_hide")
 write("data/neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": _glm})
 
 # ================================================================ BETTER HORSES
@@ -4193,6 +4177,29 @@ INSTANCE_MODS = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "in
                              # "bertie-no-worldgen" and its game directory is "minecraft", not
                              # ".minecraft"; changing either makes the generator scan the wrong jars.
                              "bertie-no-worldgen", "minecraft", "mods")
+
+# Keep the vanilla saddle pool and add the hide through the mob's own table. Creative visibility
+# and drops are pack policy rather than Quark Oddities behaviour.
+import zipfile
+_vanilla_loot_jar = os.path.join(os.environ.get("APPDATA", ""), "PrismLauncher", "libraries", "com",
+                               "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
+with zipfile.ZipFile(_vanilla_loot_jar) as _loot_jar:
+    _ravager_loot = json.loads(_loot_jar.read("data/minecraft/loot_table/entities/ravager.json"))
+_ravager_loot["neoforge:conditions"] = conds("quark")
+_ravager_loot["pools"].append({
+    "rolls": 1,
+    "entries": [{"type": "minecraft:item", "name": "quark:ravager_hide"}],
+    "conditions": [
+        {"condition": "minecraft:entity_properties", "entity": "attacker",
+         "predicate": {"equipment": {"mainhand": {"items": "#farmersdelight:tools/knives"}}}},
+        {"condition": "minecraft:entity_properties", "entity": "this",
+         "predicate": {"flags": {"is_on_fire": False}}},
+        {"condition": "minecraft:random_chance_with_enchanted_bonus", "enchantment": "minecraft:looting",
+         "unenchanted_chance": 0.5,
+         "enchanted_chance": {"type": "minecraft:linear", "base": 0.6, "per_level_above_first": 0.1}},
+    ],
+})
+write("data/minecraft/loot_table/entities/ravager.json", _ravager_loot)
 
 
 def _pack_jars():

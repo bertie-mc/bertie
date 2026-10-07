@@ -2,6 +2,10 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "irons_spellbooks"
     },
     {
@@ -12,17 +16,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "irons_spellbooks:arcane_essence"
+    "L": {
+      "item": "berlordscarving:arcane_slate"
     },
     "S": {
       "item": "malum:soulwoven_silk"
     }
   },
   "pattern": [
-    "AAA",
-    "ASA",
-    "AAA"
+    "SSS",
+    "LLL",
+    "SSS"
   ],
   "result": {
     "id": "irons_spellbooks:magic_cloth",

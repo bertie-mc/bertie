@@ -149,28 +149,47 @@ class ResourceDataTest {
     }
 
     @Test
-    void ravagerHideMatchesHoglinScavenging() throws IOException {
+    void ravagerHideUsesRequestedLootingCurveAndHoglinKnifeConditions() throws IOException {
         JsonObject hoglin = JsonParser.parseString(Files.readString(
                         RESOURCES.resolve("data/mynethersdelight/loot_modifiers/scavenging_hoglin_hide.json")))
                 .getAsJsonObject();
         JsonObject ravager = JsonParser.parseString(
-                        Files.readString(RESOURCES.resolve("data/bertieprogression/loot_modifiers/ravager_hide.json")))
+                        Files.readString(RESOURCES.resolve("data/minecraft/loot_table/entities/ravager.json")))
+                .getAsJsonObject()
+                .getAsJsonArray("pools")
+                .get(1)
                 .getAsJsonObject();
-        ravager.remove("neoforge:conditions");
-        ravager.addProperty("item", "mynethersdelight:hoglin_hide");
-        for (JsonElement element : ravager.getAsJsonArray("conditions")) {
+        assertEquals(
+                "quark:ravager_hide",
+                ravager.getAsJsonArray("entries")
+                        .get(0)
+                        .getAsJsonObject()
+                        .get("name")
+                        .getAsString());
+        List<JsonObject> reference = new ArrayList<>();
+        for (JsonElement element : hoglin.getAsJsonArray("conditions")) {
             JsonObject condition = element.getAsJsonObject();
             if (condition.has("predicate")
-                    && condition.getAsJsonObject("predicate").has("type")) {
-                condition.getAsJsonObject("predicate").addProperty("type", "minecraft:hoglin");
+                    && !condition.getAsJsonObject("predicate").has("type")) {
+                reference.add(condition);
             }
         }
-        assertEquals(hoglin, ravager);
+        assertEquals(reference, ravager.getAsJsonArray("conditions").asList().subList(0, 2));
+        JsonObject chance = ravager.getAsJsonArray("conditions").get(2).getAsJsonObject();
+        assertEquals(0.5, chance.get("unenchanted_chance").getAsDouble());
+        JsonObject curve = chance.getAsJsonObject("enchanted_chance");
+        for (int level = 1; level <= 3; level++) {
+            assertEquals(
+                    0.5 + 0.1 * level,
+                    curve.get("base").getAsDouble()
+                            + curve.get("per_level_above_first").getAsDouble() * (level - 1),
+                    0.000001);
+        }
         JsonObject registration = JsonParser.parseString(
                         Files.readString(RESOURCES.resolve("data/neoforge/loot_modifiers/global_loot_modifiers.json")))
                 .getAsJsonObject();
         assertTrue(registration.getAsJsonArray("entries").asList().stream()
-                .anyMatch(entry -> "bertieprogression:ravager_hide".equals(entry.getAsString())));
+                .noneMatch(entry -> "bertieprogression:ravager_hide".equals(entry.getAsString())));
     }
 
     /** Every {@code random_chance_with_enchanted_bonus} anywhere in one file, at any nesting. */

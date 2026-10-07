@@ -42,6 +42,7 @@ dependencies {
     // this mod's namespace, and four built-in hooks get their default components rebalanced.
     compileOnly(deps.hooked)
     testRuntimeOnly(deps.hooked)
+    testRuntimeOnly(deps.quark)
 
     compileOnly(deps.pocketDimension1201)
     gametestImplementation(deps.pocketDimension1201)

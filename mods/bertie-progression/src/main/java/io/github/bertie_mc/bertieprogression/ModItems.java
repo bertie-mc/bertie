@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.function.Supplier;
 import net.minecraft.core.GlobalPos;
 import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -172,6 +173,12 @@ public final class ModItems {
                         out.accept(EEZO_ORE.get());
                         out.accept(POCKET_DIMENSION.get());
                         out.accept(POCKET_WATCH.get());
+                        // Quark's native listing belongs to its optional Oddities category.
+                        for (String id : List.of("ravager_hide", "bonded_ravager_hide")) {
+                            BuiltInRegistries.ITEM
+                                    .getOptional(ResourceLocation.fromNamespaceAndPath("quark", id))
+                                    .ifPresent(out::accept);
+                        }
                     })
                     .build());
 

@@ -82,13 +82,21 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Data
 
-Ravager Hide uses the same knife-scavenging conditions as Hoglin Hide: the victim must
-not be burning, and the chance is 35% without Looting or at Looting I, 45% at II and
-55% at III. Quark's native Ravager Hide base count and extra chance are set to zero
-in the pack so only this scavenging roll produces the hide. Nine Ravager Hides craft or
-compact into one Bonded Ravager Hide; uncrafting returns nine hides.
+Ravager Hide uses a pool in the Ravager's loot table, preserving its vanilla saddle drop.
+The Hoglin Hide knife and non-burning requirements remain; the chance is 50% without
+Looting, 60% at I, 70% at II and 80% at III. Quark's native Ravager Hide base count and
+extra chance are zero so the drops do not stack. Ravager Hide and Bonded Ravager Hide
+are explicitly listed in the Bertie Progression creative tab, making them available to
+EMI's creative index without Quark Oddities. Nine hides craft or compact into one bonded
+hide; uncrafting returns nine.
 Twilight Forest's Rope is named Root Rope. Red Thread is hidden and removed from loot
 through the canonical removed-item tables.
+
+The Arcane Ingot Spirit Altar recipe includes four Arcane Crystal Dust alongside its
+existing Deorum Ingot, eight Arcane Essence and four Arcane spirits. Arcane Varnished
+Terracotta uses two Terracotta and returns four, retaining one Alchemical Calx and two
+Arcane spirits. Arcane Cloth uses a 3x3 `SSS / LLL / SSS` craft: six Soulwoven Silk and
+three Small Arcane Slates.
 
 Armour progression uses the following routes:
 
