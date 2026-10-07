@@ -2020,18 +2020,12 @@
 	quest.1C00000000001000.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001001.title: "Straw"
 	quest.1C00000000001001.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001002.title: "Gossypium"
-	quest.1C00000000001002.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001003.title: "Wood Fiber"
 	quest.1C00000000001003.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001004.title: "Silk Fiber"
 	quest.1C00000000001004.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001005.title: "Carbon Fibre Strands"
-	quest.1C00000000001005.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001006.title: "Esoteric Spool"
 	quest.1C00000000001006.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001007.title: "Red Thread"
-	quest.1C00000000001007.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001008.title: "Rope"
 	quest.1C00000000001008.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001009.title: "Rope Coil"
@@ -2040,16 +2034,8 @@
 	quest.1C0000000000100A.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C0000000000100B.title: "Rope Roll"
 	quest.1C0000000000100B.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C0000000000100C.title: "Zipline Rope"
-	quest.1C0000000000100C.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C0000000000100D.title: "Rope and Nail"
-	quest.1C0000000000100D.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C0000000000100E.title: "Processor Binding"
-	quest.1C0000000000100E.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C0000000000100F.title: "Canvas"
 	quest.1C0000000000100F.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001010.title: "Timeworn Fabric"
-	quest.1C00000000001010.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001011.title: "Arcane Cloth"
 	quest.1C00000000001011.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001012.title: "Mithril Weave"
@@ -2074,8 +2060,6 @@
 	quest.1C0000000000101B.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C0000000000101C.title: "Mechanical Weave V2"
 	quest.1C0000000000101C.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C0000000000101D.title: "Emperor's Cloth"
-	quest.1C0000000000101D.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C0000000000101E.title: "Enchantment Canvas"
 	quest.1C0000000000101E.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C0000000000101F.title: "Everpromise Ribbon"
@@ -2084,8 +2068,6 @@
 	quest.1C00000000001020.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001021.title: "Rabbit Hide"
 	quest.1C00000000001021.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001022.title: "Hogskin"
-	quest.1C00000000001022.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001023.title: "Hoglin Hide"
 	quest.1C00000000001023.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001024.title: "Kangaroo Hide"
@@ -2114,8 +2096,6 @@
 	quest.1C0000000000102F.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001030.title: "Leather Stripe"
 	quest.1C00000000001030.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001031.title: "Leather Wrapped Stick"
-	quest.1C00000000001031.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001032.title: "Bonded Leather"
 	quest.1C00000000001032.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001033.title: "Bonded Rabbit Hide"
@@ -2132,8 +2112,6 @@
 	quest.1C00000000001038.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C00000000001039.title: "Alpha Yeti Fur"
 	quest.1C00000000001039.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000103A.title: "Tannin"
-	quest.1C0000000000103A.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C0000000000103B.title: "Small Leather Slate"
 	quest.1C0000000000103B.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C0000000000103C.title: "Large Leather Slate"
@@ -2168,16 +2146,12 @@
 	quest.1C0000000000104A.quest_desc: ["Membranes and webs"]
 	quest.1C0000000000104B.title: "Umbrella Tree Membrane"
 	quest.1C0000000000104B.quest_desc: ["Membranes and webs"]
-	quest.1C0000000000104C.title: "Phantom Membrane Sail"
-	quest.1C0000000000104C.quest_desc: ["Membranes and webs"]
-	quest.1C0000000000104D.title: "Spectre Membrane Sail"
-	quest.1C0000000000104D.quest_desc: ["Membranes and webs"]
 	quest.1C0000000000104E.title: "Cobweb"
 	quest.1C0000000000104E.quest_desc: ["Membranes and webs"]
 	quest.1C0000000000104F.title: "Prismatic Cobweb"
 	quest.1C0000000000104F.quest_desc: ["Membranes and webs"]
-	quest.1C00000000001050.title: "Smoldering Cobweb"
-	quest.1C00000000001050.quest_desc: ["Membranes and webs"]
 	quest.1C00000000001051.title: "Cobweb Cover"
 	quest.1C00000000001051.quest_desc: ["Membranes and webs"]
+	quest.1C00000000001052.title: "White Wool"
+	quest.1C00000000001052.quest_desc: ["Cloth, fabric, silk and weave"]
 }

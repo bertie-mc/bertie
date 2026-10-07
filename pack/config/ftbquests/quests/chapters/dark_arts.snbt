@@ -451,18 +451,6 @@
 			y: 8.0d
 		}
 		{
-			icon: { count: 1 id: "minersdelight:gossypium" }
-			id: "1C00000000001002"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001002"
-				item: { count: 1 id: "minersdelight:gossypium" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 8.0d
-		}
-		{
 			icon: { count: 1 id: "anvilcraft:wood_fiber" }
 			id: "1C00000000001003"
 			tasks: [{
@@ -487,18 +475,6 @@
 			y: 8.0d
 		}
 		{
-			icon: { count: 1 id: "oritech:carbon_fibre_strands" }
-			id: "1C00000000001005"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001005"
-				item: { count: 1 id: "oritech:carbon_fibre_strands" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 8.0d
-		}
-		{
 			icon: { count: 1 id: "malum:esoteric_spool" }
 			id: "1C00000000001006"
 			tasks: [{
@@ -508,18 +484,6 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.5d
-		}
-		{
-			icon: { count: 1 id: "twilightforest:red_thread" }
-			id: "1C00000000001007"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001007"
-				item: { count: 1 id: "twilightforest:red_thread" }
-				type: "item"
-			}]
-			x: 1.5d
 			y: 9.5d
 		}
 		{
@@ -571,42 +535,6 @@
 			y: 9.5d
 		}
 		{
-			icon: { count: 1 id: "parcool:zipline_rope" }
-			id: "1C0000000000100C"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100C"
-				item: { count: 1 id: "parcool:zipline_rope" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 11.0d
-		}
-		{
-			icon: { count: 1 id: "comforts:rope_and_nail" }
-			id: "1C0000000000100D"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100D"
-				item: { count: 1 id: "comforts:rope_and_nail" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 11.0d
-		}
-		{
-			icon: { count: 1 id: "refinedstorage:processor_binding" }
-			id: "1C0000000000100E"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100E"
-				item: { count: 1 id: "refinedstorage:processor_binding" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 11.0d
-		}
-		{
 			icon: { count: 1 id: "farmersdelight:canvas" }
 			id: "1C0000000000100F"
 			tasks: [{
@@ -616,18 +544,6 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "apotheosis:uncommon_material" }
-			id: "1C00000000001010"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001010"
-				item: { count: 1 id: "apotheosis:uncommon_material" }
-				type: "item"
-			}]
-			x: 13.5d
 			y: 8.0d
 		}
 		{
@@ -775,18 +691,6 @@
 			y: 11.0d
 		}
 		{
-			icon: { count: 1 id: "twilightforest:emperors_cloth" }
-			id: "1C0000000000101D"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100101D"
-				item: { count: 1 id: "twilightforest:emperors_cloth" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 11.0d
-		}
-		{
 			icon: { count: 1 id: "pastel:enchantment_canvas" }
 			id: "1C0000000000101E"
 			tasks: [{
@@ -832,18 +736,6 @@
 				type: "item"
 			}]
 			x: 25.5d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "irons_spellbooks:hogskin" }
-			id: "1C00000000001022"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001022"
-				item: { count: 1 id: "irons_spellbooks:hogskin" }
-				type: "item"
-			}]
-			x: 27.0d
 			y: 8.0d
 		}
 		{
@@ -1015,18 +907,6 @@
 			y: 11.0d
 		}
 		{
-			icon: { count: 1 id: "betterend:leather_wrapped_stick" }
-			id: "1C00000000001031"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001031"
-				item: { count: 1 id: "betterend:leather_wrapped_stick" }
-				type: "item"
-			}]
-			x: 31.5d
-			y: 11.0d
-		}
-		{
 			icon: { count: 1 id: "quark:bonded_leather" }
 			id: "1C00000000001032"
 			tasks: [{
@@ -1120,18 +1000,6 @@
 				type: "item"
 			}]
 			x: 25.5d
-			y: 14.0d
-		}
-		{
-			icon: { count: 1 id: "twilightforest:tannin" }
-			id: "1C0000000000103A"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100103A"
-				item: { count: 1 id: "twilightforest:tannin" }
-				type: "item"
-			}]
-			x: 27.0d
 			y: 14.0d
 		}
 		{
@@ -1339,30 +1207,6 @@
 			y: 20.0d
 		}
 		{
-			icon: { count: 1 id: "alexsmobs:phantom_sail" }
-			id: "1C0000000000104C"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100104C"
-				item: { count: 1 id: "alexsmobs:phantom_sail" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 20.0d
-		}
-		{
-			icon: { count: 1 id: "alexsmobs:spectre_sail" }
-			id: "1C0000000000104D"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100104D"
-				item: { count: 1 id: "alexsmobs:spectre_sail" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 20.0d
-		}
-		{
 			icon: { count: 1 id: "minecraft:cobweb" }
 			id: "1C0000000000104E"
 			tasks: [{
@@ -1387,18 +1231,6 @@
 			y: 21.5d
 		}
 		{
-			icon: { count: 1 id: "burnt:smoldering_cobweb" }
-			id: "1C00000000001050"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001050"
-				item: { count: 1 id: "burnt:smoldering_cobweb" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 21.5d
-		}
-		{
 			icon: { count: 1 id: "born_in_chaos_v1:cobweb_cover" }
 			id: "1C00000000001051"
 			tasks: [{
@@ -1409,6 +1241,18 @@
 			}]
 			x: 16.5d
 			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:white_wool" }
+			id: "1C00000000001052"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001052"
+				item: { count: 1 id: "minecraft:white_wool" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
 		}
 	]
 }
