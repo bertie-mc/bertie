@@ -426,5 +426,989 @@
 			x: -4.5d
 			y: -3.0d
 		}
+		{
+			icon: { count: 1 id: "minecraft:string" }
+			id: "1C00000000001000"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001000"
+				item: { count: 1 id: "minecraft:string" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "farmersdelight:straw" }
+			id: "1C00000000001001"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001001"
+				item: { count: 1 id: "farmersdelight:straw" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "minersdelight:gossypium" }
+			id: "1C00000000001002"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001002"
+				item: { count: 1 id: "minersdelight:gossypium" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "anvilcraft:wood_fiber" }
+			id: "1C00000000001003"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001003"
+				item: { count: 1 id: "anvilcraft:wood_fiber" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "betterend:silk_fiber" }
+			id: "1C00000000001004"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001004"
+				item: { count: 1 id: "betterend:silk_fiber" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "oritech:carbon_fibre_strands" }
+			id: "1C00000000001005"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001005"
+				item: { count: 1 id: "oritech:carbon_fibre_strands" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "malum:esoteric_spool" }
+			id: "1C00000000001006"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001006"
+				item: { count: 1 id: "malum:esoteric_spool" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:red_thread" }
+			id: "1C00000000001007"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001007"
+				item: { count: 1 id: "twilightforest:red_thread" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "farmersdelight:rope" }
+			id: "1C00000000001008"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001008"
+				item: { count: 1 id: "farmersdelight:rope" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "quark:rope" }
+			id: "1C00000000001009"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001009"
+				item: { count: 1 id: "quark:rope" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:rope" }
+			id: "1C0000000000100A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100A"
+				item: { count: 1 id: "twilightforest:rope" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "block_factorys_bosses:rope_roll" }
+			id: "1C0000000000100B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100B"
+				item: { count: 1 id: "block_factorys_bosses:rope_roll" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "parcool:zipline_rope" }
+			id: "1C0000000000100C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100C"
+				item: { count: 1 id: "parcool:zipline_rope" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "comforts:rope_and_nail" }
+			id: "1C0000000000100D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100D"
+				item: { count: 1 id: "comforts:rope_and_nail" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "refinedstorage:processor_binding" }
+			id: "1C0000000000100E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100E"
+				item: { count: 1 id: "refinedstorage:processor_binding" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "farmersdelight:canvas" }
+			id: "1C0000000000100F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100100F"
+				item: { count: 1 id: "farmersdelight:canvas" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "apotheosis:uncommon_material" }
+			id: "1C00000000001010"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001010"
+				item: { count: 1 id: "apotheosis:uncommon_material" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:magic_cloth" }
+			id: "1C00000000001011"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001011"
+				item: { count: 1 id: "irons_spellbooks:magic_cloth" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:mithril_weave" }
+			id: "1C00000000001012"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001012"
+				item: { count: 1 id: "irons_spellbooks:mithril_weave" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "discerning_the_eldritch:corrupted_cloth" }
+			id: "1C00000000001013"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001013"
+				item: { count: 1 id: "discerning_the_eldritch:corrupted_cloth" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:storm_weave" }
+			id: "1C00000000001014"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001014"
+				item: { count: 1 id: "hazennstuff:storm_weave" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:cloth_of_the_flamebearer" }
+			id: "1C00000000001015"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001015"
+				item: { count: 1 id: "hazennstuff:cloth_of_the_flamebearer" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "magitech:aegis_weave" }
+			id: "1C00000000001016"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001016"
+				item: { count: 1 id: "magitech:aegis_weave" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "malum:soulwoven_silk" }
+			id: "1C00000000001017"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001017"
+				item: { count: 1 id: "malum:soulwoven_silk" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "malum:astral_weave" }
+			id: "1C00000000001018"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001018"
+				item: { count: 1 id: "malum:astral_weave" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "malum:ancient_weave" }
+			id: "1C00000000001019"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001019"
+				item: { count: 1 id: "malum:ancient_weave" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "malum:cornered_weave" }
+			id: "1C0000000000101A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101A"
+				item: { count: 1 id: "malum:cornered_weave" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "malum:mechanical_weave_v1" }
+			id: "1C0000000000101B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101B"
+				item: { count: 1 id: "malum:mechanical_weave_v1" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "malum:mechanical_weave_v2" }
+			id: "1C0000000000101C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101C"
+				item: { count: 1 id: "malum:mechanical_weave_v2" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:emperors_cloth" }
+			id: "1C0000000000101D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101D"
+				item: { count: 1 id: "twilightforest:emperors_cloth" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "pastel:enchantment_canvas" }
+			id: "1C0000000000101E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101E"
+				item: { count: 1 id: "pastel:enchantment_canvas" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "pastel:everpromise_ribbon" }
+			id: "1C0000000000101F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100101F"
+				item: { count: 1 id: "pastel:everpromise_ribbon" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "minecraft:leather" }
+			id: "1C00000000001020"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001020"
+				item: { count: 1 id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "minecraft:rabbit_hide" }
+			id: "1C00000000001021"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001021"
+				item: { count: 1 id: "minecraft:rabbit_hide" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:hogskin" }
+			id: "1C00000000001022"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001022"
+				item: { count: 1 id: "irons_spellbooks:hogskin" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "mynethersdelight:hoglin_hide" }
+			id: "1C00000000001023"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001023"
+				item: { count: 1 id: "mynethersdelight:hoglin_hide" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:kangaroo_hide" }
+			id: "1C00000000001024"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001024"
+				item: { count: 1 id: "alexsmobs:kangaroo_hide" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:shed_snake_skin" }
+			id: "1C00000000001025"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001025"
+				item: { count: 1 id: "alexsmobs:shed_snake_skin" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "born_in_chaos_v1:monster_skin" }
+			id: "1C00000000001026"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001026"
+				item: { count: 1 id: "born_in_chaos_v1:monster_skin" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "quark:ravager_hide" }
+			id: "1C00000000001027"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001027"
+				item: { count: 1 id: "quark:ravager_hide" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:amarok_hide" }
+			id: "1C00000000001028"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001028"
+				item: { count: 1 id: "mythsandlegends:amarok_hide" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:scorched_skin" }
+			id: "1C00000000001029"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001029"
+				item: { count: 1 id: "mythsandlegends:scorched_skin" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "netherdepthsupgrade:soul_sucker_leather" }
+			id: "1C0000000000102A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102A"
+				item: { count: 1 id: "netherdepthsupgrade:soul_sucker_leather" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:troll_leather_forest" }
+			id: "1C0000000000102B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102B"
+				item: { count: 1 id: "iceandfire:troll_leather_forest" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:troll_leather_frost" }
+			id: "1C0000000000102C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102C"
+				item: { count: 1 id: "iceandfire:troll_leather_frost" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:troll_leather_mountain" }
+			id: "1C0000000000102D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102D"
+				item: { count: 1 id: "iceandfire:troll_leather_mountain" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:treated_leather" }
+			id: "1C0000000000102E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102E"
+				item: { count: 1 id: "twilightforest:treated_leather" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:tanned_leather" }
+			id: "1C0000000000102F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100102F"
+				item: { count: 1 id: "twilightforest:tanned_leather" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "betterend:leather_stripe" }
+			id: "1C00000000001030"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001030"
+				item: { count: 1 id: "betterend:leather_stripe" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "betterend:leather_wrapped_stick" }
+			id: "1C00000000001031"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001031"
+				item: { count: 1 id: "betterend:leather_wrapped_stick" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "quark:bonded_leather" }
+			id: "1C00000000001032"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001032"
+				item: { count: 1 id: "quark:bonded_leather" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "quark:bonded_rabbit_hide" }
+			id: "1C00000000001033"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001033"
+				item: { count: 1 id: "quark:bonded_rabbit_hide" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "quark:bonded_ravager_hide" }
+			id: "1C00000000001034"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001034"
+				item: { count: 1 id: "quark:bonded_ravager_hide" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:bear_fur" }
+			id: "1C00000000001035"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001035"
+				item: { count: 1 id: "alexsmobs:bear_fur" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:bison_fur" }
+			id: "1C00000000001036"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001036"
+				item: { count: 1 id: "alexsmobs:bison_fur" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "ancient_forgemastery:wolf_fur" }
+			id: "1C00000000001037"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001037"
+				item: { count: 1 id: "ancient_forgemastery:wolf_fur" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:arctic_fur" }
+			id: "1C00000000001038"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001038"
+				item: { count: 1 id: "twilightforest:arctic_fur" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:alpha_yeti_fur" }
+			id: "1C00000000001039"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001039"
+				item: { count: 1 id: "twilightforest:alpha_yeti_fur" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:tannin" }
+			id: "1C0000000000103A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103A"
+				item: { count: 1 id: "twilightforest:tannin" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "berlordscarving:leather_slate" }
+			id: "1C0000000000103B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103B"
+				item: { count: 1 id: "berlordscarving:leather_slate" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "berlordscarving:leather_big_slate" }
+			id: "1C0000000000103C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103C"
+				item: { count: 1 id: "berlordscarving:leather_big_slate" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "minecraft:feather" }
+			id: "1C0000000000103D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103D"
+				item: { count: 1 id: "minecraft:feather" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:emu_feather" }
+			id: "1C0000000000103E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103E"
+				item: { count: 1 id: "alexsmobs:emu_feather" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:roadrunner_feather" }
+			id: "1C0000000000103F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100103F"
+				item: { count: 1 id: "alexsmobs:roadrunner_feather" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:raven_feather" }
+			id: "1C00000000001040"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001040"
+				item: { count: 1 id: "twilightforest:raven_feather" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:amphithere_feather" }
+			id: "1C00000000001041"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001041"
+				item: { count: 1 id: "iceandfire:amphithere_feather" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:stymphalian_bird_feather" }
+			id: "1C00000000001042"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001042"
+				item: { count: 1 id: "iceandfire:stymphalian_bird_feather" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:stymphalian_feather_bundle" }
+			id: "1C00000000001043"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001043"
+				item: { count: 1 id: "iceandfire:stymphalian_feather_bundle" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "l2complements:resonant_feather" }
+			id: "1C00000000001044"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001044"
+				item: { count: 1 id: "l2complements:resonant_feather" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "pastel:resplendent_feather" }
+			id: "1C00000000001045"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001045"
+				item: { count: 1 id: "pastel:resplendent_feather" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "discerning_the_eldritch:ironbound_feather" }
+			id: "1C00000000001046"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001046"
+				item: { count: 1 id: "discerning_the_eldritch:ironbound_feather" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "curseofpandora:angelic_feather" }
+			id: "1C00000000001047"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001047"
+				item: { count: 1 id: "curseofpandora:angelic_feather" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:phantom_membrane" }
+			id: "1C00000000001048"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001048"
+				item: { count: 1 id: "minecraft:phantom_membrane" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "betterend:enchanted_membrane" }
+			id: "1C00000000001049"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001049"
+				item: { count: 1 id: "betterend:enchanted_membrane" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "l2complements:sun_membrane" }
+			id: "1C0000000000104A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104A"
+				item: { count: 1 id: "l2complements:sun_membrane" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "betterend:umbrella_tree_membrane" }
+			id: "1C0000000000104B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104B"
+				item: { count: 1 id: "betterend:umbrella_tree_membrane" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:phantom_sail" }
+			id: "1C0000000000104C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104C"
+				item: { count: 1 id: "alexsmobs:phantom_sail" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:spectre_sail" }
+			id: "1C0000000000104D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104D"
+				item: { count: 1 id: "alexsmobs:spectre_sail" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "minecraft:cobweb" }
+			id: "1C0000000000104E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104E"
+				item: { count: 1 id: "minecraft:cobweb" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "apothic_enchanting:prismatic_web" }
+			id: "1C0000000000104F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100104F"
+				item: { count: 1 id: "apothic_enchanting:prismatic_web" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "burnt:smoldering_cobweb" }
+			id: "1C00000000001050"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001050"
+				item: { count: 1 id: "burnt:smoldering_cobweb" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "born_in_chaos_v1:cobweb_cover" }
+			id: "1C00000000001051"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001051"
+				item: { count: 1 id: "born_in_chaos_v1:cobweb_cover" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 21.5d
+		}
 	]
 }
