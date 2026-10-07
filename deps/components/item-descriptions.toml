@@ -3,8 +3,8 @@ provider = "modrinth"
 kind = "mod"
 side = "client"
 project-id = "UaizcMKP"
-version-id = "KEOf5Mq4"
-filename = "item-descriptions-1.11+1.21.jar"
+version-id = "OrkSfQ0u"
+filename = "item_descriptions-2.8.0+1.21.1-neoforge.jar"
 
 [distributions.curseforge-mod]
 provider = "curseforge"
@@ -12,5 +12,5 @@ kind = "mod"
 side = "client"
 slug = "item-descriptions"
 project-id = 1101501
-file-id = 5812270
-filename = "item-descriptions-1.11+1.21.jar"
+file-id = 8228839
+filename = "item_descriptions-2.8.0+1.21.1-neoforge.jar"

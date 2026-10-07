@@ -75,13 +75,6 @@ MPL's notice, license, and source requirements for covered files.
 https://www.mozilla.org/MPL/2.0/
 """
 
-[evidence.modrinth-unlicense]
-allowed = true
-text = """
-MonoLib declares the Unlicense on Modrinth, granting unrestricted copying and distribution.
-https://unlicense.org/
-"""
-
 [evidence.modrinth-cc-by]
 allowed = true
 text = """
@@ -128,14 +121,6 @@ text = """
 The AZURUNE license grants modpack inclusion when the unmodified copy comes from the
 author's Modrinth or CurseForge project and the required notice is included.
 https://github.com/Yirmiri/Yirmiri/blob/main/AZURUNE-LICENSE.md
-"""
-
-[evidence.obscuria-platform-modpack-permission]
-allowed = true
-text = """
-The Obscuria Ecosystem license permits unmodified inclusion in modpacks distributed
-through Modrinth, CurseForge, or similar mod platforms.
-https://obscurialithium.github.io/license/
 """
 
 [evidence.polyform-shield]
@@ -245,14 +230,6 @@ permission.
 https://github.com/MehVahdJukaar/Moonlight/blob/1.20/license.md
 """
 
-[evidence.sirgrantd-direct-packaging-prohibited]
-allowed = false
-text = """
-The SirGrantd license permits modpack use only for unmodified official copies that are
-not directly bundled.
-https://github.com/SirGrantd/MagicCoins/blob/main/LICENSE.md
-"""
-
 [evidence.timefall-manifest-only]
 allowed = false
 text = """
@@ -305,16 +282,14 @@ name = "terra-curio"
 component = "terra-curio"
 evidence = ["curseforge-lgpl-3"]
 
-[exports.curseforge.artifacts."modrinth:jtmvUHXj:Fb55Fgjz"]
-name = "accessories"
-evidence = ["modrinth-mit"]
-
 [exports.curseforge.artifacts."modrinth:7Jy4rK9m:zSD21doG"]
 name = "aces-spell-utils"
+component = "aces-spell-utils"
 evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:DGaH8Rh0:Z0nG7STl"]
 name = "apothic-attributes"
+component = "apothic-attributes"
 evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:b1ZV3DIJ:dJgL278E"]
@@ -327,6 +302,7 @@ evidence = ["modrinth-lgpl-2-1"]
 
 [exports.curseforge.artifacts."modrinth:7zlUOZvb:4GgJN1LU"]
 name = "azurelib"
+component = "azurelib"
 evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:MBAkmtvl:3XiinKbh"]
@@ -347,6 +323,7 @@ evidence = ["modrinth-lgpl-3-or-later"]
 
 [exports.curseforge.artifacts."modrinth:XjY0RcQj:mIylVpkN"]
 name = "citadel-1-21-1-port"
+component = "citadel"
 evidence = ["modrinth-lgpl-3"]
 
 [exports.curseforge.artifacts."modrinth:dQcfqGbl:c10AZba0"]
@@ -394,10 +371,6 @@ evidence = ["modrinth-cc-by"]
 name = "experiencelib"
 evidence = ["modrinth-gpl-3"]
 
-[exports.curseforge.artifacts."modrinth:49C5QgTK:CUGxFf8Z"]
-name = "fragmentum"
-evidence = ["obscuria-platform-modpack-permission"]
-
 [exports.curseforge.artifacts."modrinth:Ck4E7v7R:bFr2FBaJ"]
 name = "guideme"
 evidence = ["guideme-lgpl-3"]
@@ -437,15 +410,12 @@ evidence = ["modrinth-lgpl-3"]
 
 [exports.curseforge.artifacts."modrinth:Ce6I4WUE:5KzzycBT"]
 name = "mekanism"
+component = "mekanism"
 evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:692GClaE:Uw0AZJKz"]
 name = "modonomicon"
 evidence = ["modonomicon-mixed-open-licenses"]
-
-[exports.curseforge.artifacts."modrinth:9leXt4A5:Es84N2XL"]
-name = "monolib"
-evidence = ["modrinth-unlicense"]
 
 [exports.curseforge.artifacts."modrinth:twkfQtEc:er7S98Q1"]
 name = "moonlight"
@@ -462,6 +432,7 @@ evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:tCkE8p2N:kb8pGRQR"]
 name = "placebo"
+component = "placebo"
 evidence = ["modrinth-mit"]
 
 [exports.curseforge.artifacts."modrinth:i6fiqm5y:v7P0nBi2"]
@@ -509,10 +480,6 @@ evidence = ["azurune-modpack-permission"]
 name = "searchables"
 evidence = ["modrinth-mit"]
 
-[exports.curseforge.artifacts."modrinth:pZEK2gvF:Rclw6KAf"]
-name = "sg-economy-api"
-evidence = ["sirgrantd-direct-packaging-prohibited"]
-
 [exports.curseforge.artifacts."modrinth:6avVoBVB:Ic73EcJ6"]
 name = "simply-tooltips"
 evidence = ["timefall-manifest-only"]
@@ -551,10 +518,6 @@ evidence = ["modrinth-mit"]
 name = "txnilib"
 evidence = ["modrinth-mit"]
 
-[exports.curseforge.artifacts."modrinth:g2FGQs4R:A0Rx4Pvw"]
-name = "u-team-core"
-evidence = ["modrinth-apache-2"]
-
 [exports.curseforge.artifacts."modrinth:3Acxy864:1YdU56pR"]
 name = "uranus"
 evidence = ["modrinth-lgpl-3-or-later"]
@@ -572,14 +535,11 @@ evidence = ["modrinth-mit"]
 name = "xaeros-world-map"
 evidence = ["xaero-modpack-permission"]
 
-[exports.curseforge.artifacts."modrinth:Z2RtCqwR:t1rtOqca"]
-name = "yarrp"
-evidence = ["modrinth-mpl-2"]
-
 [exports.curseforge.artifacts."modrinth:Ua7DFN59:ZB22DE9q"]
 name = "yungs-api"
 evidence = ["modrinth-lgpl-3"]
 
 [exports.curseforge.artifacts."modrinth:MVARlG2f:9GjNW2Gf"]
 name = "zeta"
+component = "zeta"
 evidence = ["modrinth-cc-by-nc-sa-3"]

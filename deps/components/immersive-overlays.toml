@@ -1,0 +1,16 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+side = "client"
+project-id = "PKoLkD98"
+version-id = "vdussz4L"
+filename = "immersiveoverlays-1.8.5+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "immersive-overlays"
+project-id = 1245453
+file-id = 8949578
+filename = "immersiveoverlays-1.8.5+1.21.1-neoforge.jar"

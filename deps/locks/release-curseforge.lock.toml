@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "11c08b0e1871c290097d6eb3075aeafef7a9908061d222cec9fa35652e72aa4f"
+inputs-hash = "1d448c6f3d00783fa9ade9aeb9baf4c33aea9a088d318da15f33330022cfece3"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -577,6 +577,10 @@ mod = "curseforge:429235:7524151"
 any = "curseforge:1117054:7232473"
 mod = "curseforge:1117054:7232473"
 
+[components."field-guide"]
+any = "curseforge:1470590:9072628"
+mod = "curseforge:1470590:9072628"
+
 [components."fishingoverhaul"]
 any = "curseforge:491332:6297564"
 mod = "curseforge:491332:6297564"
@@ -717,6 +721,10 @@ mod = "curseforge:580681:8076920"
 any = "curseforge:1307924:8089431"
 mod = "curseforge:1307924:8089431"
 
+[components."immersive-overlays"]
+any = "curseforge:1245453:8949578"
+mod = "curseforge:1245453:8949578"
+
 [components."improved-pillager-outpost"]
 any = "curseforge:1093283:6269462"
 mod = "curseforge:1093283:6269462"
@@ -762,8 +770,8 @@ any = "curseforge:395620:5550187"
 mod = "curseforge:395620:5550187"
 
 [components."item-descriptions"]
-any = "curseforge:1101501:5812270"
-mod = "curseforge:1101501:5812270"
+any = "curseforge:1101501:8228839"
+mod = "curseforge:1101501:8228839"
 
 [components."item-highlighter"]
 any = "curseforge:521590:5591015"
@@ -2393,7 +2401,7 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:551586:8246034", "namespace" = "cataclysm", "reason" = "ships data/cataclysm/", "origin" = "archive-data" }, { "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "curseforge:855414:8202148", "namespace" = "irons_spellbooks", "reason" = "ships data/irons_spellbooks/", "origin" = "archive-data" }]
 
-[artifacts."curseforge:1101501:5812270"]
+[artifacts."curseforge:1101501:8228839"]
 name = "item-descriptions"
 component = "item-descriptions"
 provider = "curseforge"
@@ -2401,15 +2409,15 @@ kind = "mod"
 side = "client"
 group = "curse.maven"
 module = "item-descriptions-1101501"
-version = "5812270"
-filename = "item-descriptions-1.11+1.21.jar"
+version = "8228839"
+filename = "item_descriptions-2.8.0+1.21.1-neoforge.jar"
 project-id = 1101501
 slug = "item-descriptions"
-file-id = 5812270
+file-id = 8228839
 provides = ["item_descriptions"]
 bundled-provides = []
 required = []
-optional = []
+optional = [{ "missing" = "modrinth:nvQzSEkH", "side" = "client", "origin" = "provider" }, { "artifact" = "curseforge:667299:7437845", "side" = "both", "origin" = "provider" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -3125,6 +3133,27 @@ required = [{ "artifact" = "curseforge:313970:8182695", "mod-id" = "apotheosis",
 optional = []
 incompatible = []
 bundled = []
+integrations = []
+
+[artifacts."curseforge:1245453:8949578"]
+name = "immersive-overlays"
+component = "immersive-overlays"
+provider = "curseforge"
+kind = "mod"
+side = "client"
+group = "curse.maven"
+module = "immersive-overlays-1245453"
+version = "8949578"
+filename = "immersiveoverlays-1.8.5+1.21.1-neoforge.jar"
+project-id = 1245453
+slug = "immersive-overlays"
+file-id = 8949578
+provides = ["immersiveoverlays"]
+bundled-provides = ["mru"]
+required = []
+optional = [{ "missing" = "oreganized", "mod-id" = "oreganized", "version-range" = "[5.3.0, )", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:348521:5729127", "side" = "both", "origin" = "provider" }]
+incompatible = []
+bundled = [{ "missing" = "mru", "mod-id" = "mru", "version-range" = "[1.0.40, )", "side" = "client", "origin" = "archive" }, { "missing" = "modrinth:SNVQ2c0g", "side" = "client", "origin" = "provider" }]
 integrations = []
 
 [artifacts."curseforge:1249645:6794782"]
@@ -4302,6 +4331,27 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
+
+[artifacts."curseforge:1470590:9072628"]
+name = "field-guide"
+component = "field-guide"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "field-guide-1470590"
+version = "9072628"
+filename = "fieldguide-1.21.0+1.21.1-neoforge.jar"
+project-id = 1470590
+slug = "field-guide"
+file-id = 9072628
+provides = ["fieldguide"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:1101501:8228839", "side" = "client", "origin" = "provider" }, { "artifact" = "curseforge:1245453:8949578", "side" = "client", "origin" = "provider" }]
+optional = [{ "missing" = "entity_texture_features", "mod-id" = "entity_texture_features", "version-range" = "[7.2,)", "side" = "client", "origin" = "archive" }, { "missing" = "entity_model_features", "mod-id" = "entity_model_features", "version-range" = "[3.3,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:1101501:8228839", "mod-id" = "item_descriptions", "version-range" = "[2.8.0,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:1245453:8949578", "mod-id" = "immersiveoverlays", "version-range" = "[1.7.5,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:667299:7437845", "mod-id" = "yet_another_config_lib_v3", "version-range" = "[3.8.1,)", "side" = "client", "origin" = "archive" }, { "missing" = "rrv", "mod-id" = "rrv", "version-range" = "[8.0.0,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:667299:7437845", "side" = "both", "origin" = "provider" }, { "missing" = "modrinth:umyGl7zF", "side" = "both", "origin" = "provider" }, { "artifact" = "curseforge:580555:8081408", "side" = "both", "origin" = "provider" }]
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "curseforge:1415721:7528193", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }, { "missing" = "atmospheric", "namespace" = "atmospheric", "reason" = "ships data/atmospheric/", "origin" = "archive-data" }, { "missing" = "autumnity", "namespace" = "autumnity", "reason" = "ships data/autumnity/", "origin" = "archive-data" }, { "missing" = "biomesoplenty", "namespace" = "biomesoplenty", "reason" = "ships data/biomesoplenty/", "origin" = "archive-data" }, { "missing" = "bloomingnature", "namespace" = "bloomingnature", "reason" = "ships data/bloomingnature/", "origin" = "archive-data" }, { "missing" = "caverns_and_chasms", "namespace" = "caverns_and_chasms", "reason" = "ships data/caverns_and_chasms/", "origin" = "archive-data" }, { "missing" = "crittersandcompanions", "namespace" = "crittersandcompanions", "reason" = "ships data/crittersandcompanions/", "origin" = "archive-data" }, { "missing" = "environmental", "namespace" = "environmental", "reason" = "ships data/environmental/", "origin" = "archive-data" }, { "artifact" = "curseforge:398521:8083481", "namespace" = "farmersdelight", "reason" = "ships data/farmersdelight/", "origin" = "archive-data" }, { "missing" = "neapolitan", "namespace" = "neapolitan", "reason" = "ships data/neapolitan/", "origin" = "archive-data" }, { "missing" = "nomansland", "namespace" = "nomansland", "reason" = "ships data/nomansland/", "origin" = "archive-data" }, { "artifact" = "curseforge:243121:8146177", "namespace" = "quark", "reason" = "ships data/quark/", "origin" = "archive-data" }, { "missing" = "supplementaries", "namespace" = "supplementaries", "reason" = "ships data/supplementaries/", "origin" = "archive-data" }, { "missing" = "windswept", "namespace" = "windswept", "reason" = "ships data/windswept/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:1482048:7735743"]
 name = "stellaris-stellarview-compatibility"

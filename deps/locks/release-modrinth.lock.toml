@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "6fd54128780bfb13e94f79f4fc3b7ae993637741367e01fde0431880b2a25310"
+inputs-hash = "af5327af047ca4b19843b1ffcb7d6212bf0c13286165393c6591bcd384fd505d"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -577,6 +577,10 @@ mod = "modrinth:uXXizFIs:x7kQWVju"
 any = "modrinth:qRG5vR8U:oBjuO3Ki"
 mod = "modrinth:qRG5vR8U:oBjuO3Ki"
 
+[components."field-guide"]
+any = "modrinth:72RRCWM6:Qc9FRoEe"
+mod = "modrinth:72RRCWM6:Qc9FRoEe"
+
 [components."fishingoverhaul"]
 any = "modrinth:mO6KzcvH:J6h1bEpa"
 mod = "modrinth:mO6KzcvH:J6h1bEpa"
@@ -717,6 +721,10 @@ mod = "modrinth:eE2Db4YU:B2YtQYCh"
 any = "modrinth:3hZmBMYA:Et29a8lw"
 mod = "modrinth:3hZmBMYA:Et29a8lw"
 
+[components."immersive-overlays"]
+any = "modrinth:PKoLkD98:vdussz4L"
+mod = "modrinth:PKoLkD98:vdussz4L"
+
 [components."improved-pillager-outpost"]
 any = "modrinth:WQxwMPH5:QmgBowqy"
 mod = "modrinth:WQxwMPH5:UqNxyorq"
@@ -762,8 +770,8 @@ any = "modrinth:y9vDr4Th:V19vXCQ0"
 mod = "modrinth:y9vDr4Th:V19vXCQ0"
 
 [components."item-descriptions"]
-any = "modrinth:UaizcMKP:KEOf5Mq4"
-mod = "modrinth:UaizcMKP:KEOf5Mq4"
+any = "modrinth:UaizcMKP:OrkSfQ0u"
+mod = "modrinth:UaizcMKP:OrkSfQ0u"
 
 [components."item-highlighter"]
 any = "modrinth:cVNW5lr6:AsQ0Y2G9"
@@ -2915,6 +2923,26 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
+
+[artifacts."modrinth:72RRCWM6:Qc9FRoEe"]
+name = "field-guide"
+component = "field-guide"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "72RRCWM6"
+version = "Qc9FRoEe"
+filename = "fieldguide-1.21.0+1.21.1-neoforge.jar"
+project-id = "72RRCWM6"
+version-id = "Qc9FRoEe"
+provides = ["fieldguide"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:UaizcMKP:OrkSfQ0u", "side" = "client", "origin" = "provider" }, { "artifact" = "modrinth:PKoLkD98:vdussz4L", "side" = "client", "origin" = "provider" }]
+optional = [{ "missing" = "entity_texture_features", "mod-id" = "entity_texture_features", "version-range" = "[7.2,)", "side" = "client", "origin" = "archive" }, { "missing" = "entity_model_features", "mod-id" = "entity_model_features", "version-range" = "[3.3,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:UaizcMKP:OrkSfQ0u", "mod-id" = "item_descriptions", "version-range" = "[2.8.0,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:PKoLkD98:vdussz4L", "mod-id" = "immersiveoverlays", "version-range" = "[1.7.5,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:1eAoo2KR:7TVdVtxF", "mod-id" = "yet_another_config_lib_v3", "version-range" = "[3.8.1,)", "side" = "client", "origin" = "archive" }, { "missing" = "rrv", "mod-id" = "rrv", "version-range" = "[8.0.0,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:1eAoo2KR:7TVdVtxF", "side" = "both", "origin" = "provider" }, { "missing" = "modrinth:umyGl7zF", "side" = "both", "origin" = "provider" }, { "artifact" = "modrinth:fRiHVvU7:5sIPA1To", "side" = "both", "origin" = "provider" }]
+incompatible = []
+bundled = []
+integrations = [{ "artifact" = "modrinth:EmNhnNnt:KSgki4uc", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }, { "missing" = "atmospheric", "namespace" = "atmospheric", "reason" = "ships data/atmospheric/", "origin" = "archive-data" }, { "missing" = "autumnity", "namespace" = "autumnity", "reason" = "ships data/autumnity/", "origin" = "archive-data" }, { "missing" = "biomesoplenty", "namespace" = "biomesoplenty", "reason" = "ships data/biomesoplenty/", "origin" = "archive-data" }, { "missing" = "bloomingnature", "namespace" = "bloomingnature", "reason" = "ships data/bloomingnature/", "origin" = "archive-data" }, { "missing" = "caverns_and_chasms", "namespace" = "caverns_and_chasms", "reason" = "ships data/caverns_and_chasms/", "origin" = "archive-data" }, { "missing" = "crittersandcompanions", "namespace" = "crittersandcompanions", "reason" = "ships data/crittersandcompanions/", "origin" = "archive-data" }, { "missing" = "environmental", "namespace" = "environmental", "reason" = "ships data/environmental/", "origin" = "archive-data" }, { "artifact" = "modrinth:R2OftAxM:GbNuOZ4S", "namespace" = "farmersdelight", "reason" = "ships data/farmersdelight/", "origin" = "archive-data" }, { "missing" = "neapolitan", "namespace" = "neapolitan", "reason" = "ships data/neapolitan/", "origin" = "archive-data" }, { "missing" = "nomansland", "namespace" = "nomansland", "reason" = "ships data/nomansland/", "origin" = "archive-data" }, { "artifact" = "modrinth:qnQsVE2z:hMLnxKZx", "namespace" = "quark", "reason" = "ships data/quark/", "origin" = "archive-data" }, { "missing" = "supplementaries", "namespace" = "supplementaries", "reason" = "ships data/supplementaries/", "origin" = "archive-data" }, { "missing" = "windswept", "namespace" = "windswept", "reason" = "ships data/windswept/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:7Jy4rK9m:zSD21doG"]
 name = "aces-spell-utils"
@@ -5583,6 +5611,26 @@ incompatible = []
 bundled = []
 integrations = []
 
+[artifacts."modrinth:PKoLkD98:vdussz4L"]
+name = "immersive-overlays"
+component = "immersive-overlays"
+provider = "modrinth"
+kind = "mod"
+side = "client"
+group = "maven.modrinth"
+module = "PKoLkD98"
+version = "vdussz4L"
+filename = "immersiveoverlays-1.8.5+1.21.1-neoforge.jar"
+project-id = "PKoLkD98"
+version-id = "vdussz4L"
+provides = ["immersiveoverlays"]
+bundled-provides = ["mru"]
+required = []
+optional = [{ "missing" = "oreganized", "mod-id" = "oreganized", "version-range" = "[5.3.0, )", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:9s6osm5g:izKINKFg", "side" = "both", "origin" = "provider" }]
+incompatible = []
+bundled = [{ "missing" = "mru", "mod-id" = "mru", "version-range" = "[1.0.40, )", "side" = "client", "origin" = "archive" }, { "missing" = "modrinth:SNVQ2c0g", "side" = "client", "origin" = "provider" }]
+integrations = []
+
 [artifacts."modrinth:PLAGcSFJ:ewh5dAkH"]
 name = "particle-effects"
 component = "particle-effects"
@@ -6195,7 +6243,7 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:UaizcMKP:KEOf5Mq4"]
+[artifacts."modrinth:UaizcMKP:OrkSfQ0u"]
 name = "item-descriptions"
 component = "item-descriptions"
 provider = "modrinth"
@@ -6203,14 +6251,14 @@ kind = "mod"
 side = "client"
 group = "maven.modrinth"
 module = "UaizcMKP"
-version = "KEOf5Mq4"
-filename = "item-descriptions-1.11+1.21.jar"
+version = "OrkSfQ0u"
+filename = "item_descriptions-2.8.0+1.21.1-neoforge.jar"
 project-id = "UaizcMKP"
-version-id = "KEOf5Mq4"
+version-id = "OrkSfQ0u"
 provides = ["item_descriptions"]
 bundled-provides = []
 required = []
-optional = []
+optional = [{ "missing" = "modrinth:nvQzSEkH", "side" = "client", "origin" = "provider" }, { "artifact" = "modrinth:1eAoo2KR:7TVdVtxF", "side" = "both", "origin" = "provider" }]
 incompatible = []
 bundled = []
 integrations = []

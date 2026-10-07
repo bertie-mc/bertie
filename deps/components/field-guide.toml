@@ -1,0 +1,14 @@
+[distributions.modrinth-mod]
+provider = "modrinth"
+kind = "mod"
+project-id = "72RRCWM6"
+version-id = "Qc9FRoEe"
+filename = "fieldguide-1.21.0+1.21.1-neoforge.jar"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "field-guide"
+project-id = 1470590
+file-id = 9072628
+filename = "fieldguide-1.21.0+1.21.1-neoforge.jar"

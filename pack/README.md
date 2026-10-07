@@ -16,6 +16,12 @@ For a server, extract `bertie-server-<version>.zip`, supply Java 21, accept the 
 `eula.txt`, and run `start.sh`. The archive contains the generated side-aware pack tree,
 the locally built Bertie mod JARs, and an installer for external dependencies.
 
+## Field Guide
+
+Field Guide records discoveries made with a spyglass and provides a personal journal.
+Press `B` or use the book button in the inventory or pause menu to open it. A vanilla
+book and spyglass also craft a Field Guide item.
+
 ## Dependency model
 
 Each file under [`deps/components/`](../deps/components) records one intentional logical
