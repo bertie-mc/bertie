@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "0": {
+      "item": "berlordscarving:leather_big_slate"
+    },
+    "1": {
+      "item": "berlordscarving:iron_big_slate"
+    },
+    "2": {
+      "item": "aquamirae:ship_graveyard_echo"
+    }
+  },
+  "pattern": [
+    "202",
+    "0 0",
+    "1 1"
+  ],
+  "result": {
+    "id": "aquamirae:salvager_waders",
+    "count": 1
+  }
+}

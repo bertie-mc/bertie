@@ -1,12 +1,19 @@
 {
   "replace": false,
   "values": [
+    { "id": "alexsmobs:straddlite", "required": false },
+    { "id": "aquaculture:neptunium_ingot", "required": false },
+    { "id": "bertieprogression:eezo_ingot", "required": false },
     { "id": "cataclysm:ancient_metal_ingot", "required": false },
     { "id": "cataclysm:black_steel_ingot", "required": false },
     { "id": "cataclysm:cursium_ingot", "required": false },
     { "id": "cataclysm:ignitium_ingot", "required": false },
     { "id": "cataclysm:witherite_ingot", "required": false },
     { "id": "hazennstuff:rose_gold_ingot", "required": false },
+    { "id": "iceandfire:dragonsteel_fire_ingot", "required": false },
+    { "id": "iceandfire:dragonsteel_ice_ingot", "required": false },
+    { "id": "iceandfire:dragonsteel_lightning_ingot", "required": false },
+    { "id": "irons_spellbooks:arcane_ingot", "required": false },
     { "id": "minecraft:amethyst_shard", "required": false },
     { "id": "minecraft:armadillo_scute", "required": false },
     { "id": "minecraft:bone", "required": false },
@@ -29,6 +36,11 @@
     { "id": "minecraft:resin_brick", "required": false },
     { "id": "minecraft:turtle_scute", "required": false },
     { "id": "slag:deep_alloy", "required": false },
-    { "id": "slag:rose_gold_ingot", "required": false }
+    { "id": "slag:rose_gold_ingot", "required": false },
+    { "id": "twilightforest:fiery_ingot", "required": false },
+    { "id": "twilightforest:ironwood_ingot", "required": false },
+    { "id": "twilightforest:knightmetal_ingot", "required": false },
+    { "id": "twilightforest:naga_scale", "required": false },
+    { "id": "twilightforest:steeleaf_ingot", "required": false }
   ]
 }

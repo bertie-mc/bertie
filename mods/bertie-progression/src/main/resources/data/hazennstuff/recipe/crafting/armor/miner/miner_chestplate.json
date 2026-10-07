@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "berlordscarving:leather_big_slate"
+    },
+    "X": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "I": {
+      "item": "berlordscarving:iron_big_slate"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "items": "magitech:spike_head",
+      "components": {
+        "magitech:material_component": "magitech:iron"
+      }
+    }
+  },
+  "pattern": [
+    "P P",
+    "LXL",
+    "LIL"
+  ],
+  "result": {
+    "id": "hazennstuff:miner_chestplate",
+    "count": 1
+  },
+  "show_notification": true
+}

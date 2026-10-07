@@ -1,0 +1,45 @@
+{
+  "essences": {
+    "aureal": 300,
+    "blood": 10000,
+    "souls": 8
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "born_in_chaos_v1:armor_plate_from_dark_metal"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "berlordscarving:knightmetal_slate"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "iceandfire:troll_leather_mountain"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "born_in_chaos_v1:dark_upgrade"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "mythsandlegends:ironshade_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "born_in_chaos_v1:dark_metal_armor_leggings",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}

@@ -3552,6 +3552,99 @@ write(f"{RIT}/pocket_dimension.json",
              "bertieprogression:pocket_dimension", 1, tier=2,
              essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=1000))
 
+# ================================================================ ARMOUR PROGRESSION
+# Miner armour is assembled around the matching iron piece on Mechanical Crafters.
+_MINER_PATTERNS = {
+    "helmet": [" K ", "LXL", "L L"],
+    "chestplate": ["P P", "LXL", "LIL"],
+    "leggings": ["LIL", "IXI", "L L"],
+    "boots": ["LXL", "I I"],
+}
+for _slot, _pattern in _MINER_PATTERNS.items():
+    _key = {"L": "berlordscarving:leather_big_slate", "X": f"minecraft:iron_{_slot}"}
+    if any("I" in row for row in _pattern):
+        _key["I"] = "berlordscarving:iron_big_slate"
+    if _slot == "helmet":
+        _key["K"] = "minecraft:candle"
+    if _slot == "chestplate":
+        _key["P"] = "magitech:spike_head"
+    _recipe = mech(_pattern, _key, f"hazennstuff:miner_{_slot}")
+    if _slot == "chestplate":
+        _recipe["key"]["P"] = {
+            "type": "neoforge:components", "items": "magitech:spike_head",
+            "components": {"magitech:material_component": "magitech:iron"},
+        }
+    write(f"data/hazennstuff/recipe/crafting/armor/miner/miner_{_slot}.json", _recipe)
+
+def _armor_smithing(template, base, addition, result, *required_mods):
+    return {
+        "neoforge:conditions": conds(*external_mods(template, base, addition, result), *required_mods),
+        "type": "minecraft:smithing_transform",
+        "template": {"item": template}, "base": {"item": base},
+        "addition": {"item": addition}, "result": {"id": result, "count": 1},
+    }
+
+_TERRIBLE_TEMPLATE = "aquamirae:terrible_upgrade_smithing_template"
+_ABYSSAL_TEMPLATE = "aquamirae:abyssal_upgrade_smithing_template"
+_SPINY_BASES = {
+    "helmet": "born_in_chaos_v1:spiny_shell_armor_helmet",
+    "chestplate": "born_in_chaos_v1:spiny_shell_armor_chestplate",
+    "leggings": "armorcompletions:spiny_shell_leggings",
+    "boots": "armorcompletions:spiny_shell_boots",
+}
+for _slot, _base in _SPINY_BASES.items():
+    write(f"data/aquamirae/recipe/terrible_{_slot}_smithing.json",
+          _armor_smithing(_TERRIBLE_TEMPLATE, _base, "aquamirae:fin", f"aquamirae:terrible_{_slot}"))
+for _slot, _result in (("helmet", "heaume"), ("chestplate", "brigandine"),
+                       ("leggings", "leggings"), ("boots", "boots")):
+    write(f"data/aquamirae/recipe/abyssal_{_result}_smithing.json",
+          _armor_smithing(_ABYSSAL_TEMPLATE, f"aquamirae:terrible_{_slot}",
+                          "aquamirae:abyssal_amethyst", f"aquamirae:abyssal_{_result}"))
+write("data/aquamirae/recipe/abyssal_tiara.json",
+      _armor_smithing("minecraft:cactus_flower", "aquamirae:abyssal_heaume",
+                      "aquamirae:abyssal_amethyst", "aquamirae:abyssal_tiara", "vanillabackport"))
+write(f"{R}/abyssal_heaume_from_tiara.json",
+      _armor_smithing("rustic_engineer:iron_plate", "aquamirae:abyssal_tiara",
+                      "aquamirae:abyssal_amethyst", "aquamirae:abyssal_heaume"))
+write("data/aquamirae/recipe/terrible_upgrade_smithing_template.json",
+      mech(["FFBFF", "FABAF", "BBTBB", "FABAF", "FFBFF"],
+           {"F": "aquamirae:fin", "A": "aquamirae:angler_fang",
+            "B": "malum:refined_brilliance", "T": _TERRIBLE_TEMPLATE}, _TERRIBLE_TEMPLATE, 2))
+write("data/aquamirae/recipe/abyssal_upgrade_smithing_template.json",
+      mech(["SAESS", "AAESS", "EETEE", "SSESA", "SSESA"],
+           {"S": "malum:refined_soulstone", "A": "aquamirae:abyssal_amethyst",
+            "E": "aquamirae:ship_graveyard_echo", "T": _TERRIBLE_TEMPLATE}, _ABYSSAL_TEMPLATE))
+
+for _piece, _pattern, _key in (
+    ("suit", ["0 0", "101", "212"], {"0": "berlordscarving:leather_big_slate",
+        "1": "berlordscarving:iron_big_slate", "2": "aquamirae:ship_graveyard_echo"}),
+    ("waders", ["202", "0 0", "1 1"], {"0": "berlordscarving:leather_big_slate",
+        "1": "berlordscarving:iron_big_slate", "2": "aquamirae:ship_graveyard_echo"}),
+    ("boots", ["1 1", "2 2"], {"1": "berlordscarving:iron_big_slate",
+        "2": "aquamirae:ship_graveyard_echo"}),
+):
+    write(f"data/aquamirae/recipe/salvager_{_piece}.json",
+          shaped(_pattern, _key, f"aquamirae:salvager_{_piece}"))
+
+for _slot in ("helmet", "chestplate", "leggings", "boots"):
+    _infusion = infusion(f"mythsandlegends:ironshade_{_slot}", 1,
+        [("malum:soul_stained_steel_plating", 12), ("elemental_metals:soul_infused_iron_ingot", 2),
+         ("mythsandlegends:bound_soul_ingot", 1), ("malum:mnemonic_fragment", 6),
+         ("malum:twisted_rock", 32)],
+        [("malum:earthen", 64), ("malum:wicked", 48), ("malum:arcane", 48)],
+        f"malum:soul_stained_steel_{_slot}")
+    _infusion["carryOverComponentData"] = True
+    write(f"data/malum/recipe/spirit_infusion/soul_stained_steel_{_slot}.json", _infusion)
+    write(f"data/born_in_chaos_v1/recipe/armor_plate_from_dark_metal_k_{2 + ('helmet', 'chestplate', 'leggings', 'boots').index(_slot)}.json",
+          DISABLED)
+    write(f"{RIT}/dark_metal_{_slot}.json",
+          ritual(f"mythsandlegends:ironshade_{_slot}",
+              [("born_in_chaos_v1:armor_plate_from_dark_metal", 2),
+               ("berlordscarving:knightmetal_slate", 1), ("iceandfire:troll_leather_mountain", 4),
+               ("born_in_chaos_v1:dark_upgrade", 1)],
+              f"born_in_chaos_v1:dark_metal_armor_{_slot}", tier=1,
+              essences={"aureal": 300, "blood": 10000, "souls": 8}))
+
 # ================================================================ CHUNK LOADERS
 # Every chunk loader is forged, each tier around the one below it. The Ultimate loader fills all
 # twelve pedestals of a Tier-III forge.

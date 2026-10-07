@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "berlordscarving:item/naga_scale_big_slate"
+  }
+}

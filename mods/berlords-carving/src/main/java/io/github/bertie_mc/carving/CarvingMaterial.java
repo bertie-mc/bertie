@@ -47,7 +47,19 @@ public enum CarvingMaterial {
     BLACK_STEEL("black_steel", "cataclysm"),
     CURSIUM("cursium", "cataclysm"),
     IGNITIUM("ignitium", "cataclysm"),
-    WITHERITE("witherite", "cataclysm");
+    WITHERITE("witherite", "cataclysm"),
+    IRONWOOD("ironwood", "twilightforest"),
+    STEELEAF("steeleaf", "twilightforest"),
+    NAGA_SCALE("naga_scale", "twilightforest"),
+    KNIGHTMETAL("knightmetal", "twilightforest"),
+    FIERY("fiery", "twilightforest"),
+    EEZO("eezo", "bertieprogression"),
+    FIRE_DRAGONSTEEL("fire_dragonsteel", "iceandfire"),
+    ICE_DRAGONSTEEL("ice_dragonsteel", "iceandfire"),
+    LIGHTNING_DRAGONSTEEL("lightning_dragonsteel", "iceandfire"),
+    STRADDLITE("straddlite", "alexsmobs"),
+    NEPTUNIUM("neptunium", "aquaculture"),
+    ARCANE("arcane", "irons_spellbooks");
 
     public final String id;
     /** Slag material_type id (without the slag: namespace), or null if there's no Slag equivalent. */

@@ -1,0 +1,45 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "malum:refined_soulstone"
+    },
+    "A": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "E": {
+      "item": "aquamirae:ship_graveyard_echo"
+    },
+    "T": {
+      "item": "aquamirae:terrible_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "SAESS",
+    "AAESS",
+    "EETEE",
+    "SSESA",
+    "SSESA"
+  ],
+  "result": {
+    "id": "aquamirae:abyssal_upgrade_smithing_template",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -6,6 +6,18 @@ Carve early-game tool heads and armor from material slates: place the head insid
 - **Loader:** NeoForge
 - **Mod ID:** `berlordscarving`
 
+## Material slates
+
+Slate-only materials provide crafting stock without adding tool or armour outputs. Each small
+slate uses four source items in a 2x2 grid; four small slates make one large slate. A material's
+slates register only when its source mod is installed. Existing network indices are preserved
+when materials are appended.
+
+The slate-only selection includes ironwood, steeleaf, naga scale, knightmetal, fiery metal,
+eezo, fire/ice/lightning dragonsteel, straddlite, neptunium and arcane ingot. Their item IDs
+use the `berlordscarving` namespace with `_slate` and `_big_slate` suffixes. Source items,
+display names and generated recipes are defined in `texture-work/make_assets.py`.
+
 ## Install
 Releases use `carving/vX.Y.Z` tags on the
 [Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your

@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "berlordscarving:leather_big_slate"
+    },
+    "X": {
+      "item": "minecraft:iron_leggings"
+    },
+    "I": {
+      "item": "berlordscarving:iron_big_slate"
+    }
+  },
+  "pattern": [
+    "LIL",
+    "IXI",
+    "L L"
+  ],
+  "result": {
+    "id": "hazennstuff:miner_leggings",
+    "count": 1
+  },
+  "show_notification": true
+}

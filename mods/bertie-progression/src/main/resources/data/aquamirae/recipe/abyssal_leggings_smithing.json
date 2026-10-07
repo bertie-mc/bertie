@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "aquamirae:abyssal_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "aquamirae:terrible_leggings"
+  },
+  "addition": {
+    "item": "aquamirae:abyssal_amethyst"
+  },
+  "result": {
+    "id": "aquamirae:abyssal_leggings",
+    "count": 1
+  }
+}

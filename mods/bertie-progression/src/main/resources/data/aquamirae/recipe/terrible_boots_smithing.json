@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "armorcompletions"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "aquamirae:terrible_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "armorcompletions:spiny_shell_boots"
+  },
+  "addition": {
+    "item": "aquamirae:fin"
+  },
+  "result": {
+    "id": "aquamirae:terrible_boots",
+    "count": 1
+  }
+}

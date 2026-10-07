@@ -55,6 +55,18 @@ SLATE_ONLY = {
     "cursium":          ("cataclysm:cursium_ingot",       "cataclysm",       "Cursium"),
     "ignitium":         ("cataclysm:ignitium_ingot",      "cataclysm",       "Ignitium"),
     "witherite":        ("cataclysm:witherite_ingot",     "cataclysm",       "Witherite"),
+    "ironwood":         ("twilightforest:ironwood_ingot", "twilightforest", "Ironwood"),
+    "steeleaf":         ("twilightforest:steeleaf_ingot", "twilightforest", "Steeleaf"),
+    "naga_scale":       ("twilightforest:naga_scale",     "twilightforest", "Naga Scale"),
+    "knightmetal":      ("twilightforest:knightmetal_ingot", "twilightforest", "Knightmetal"),
+    "fiery":            ("twilightforest:fiery_ingot",    "twilightforest", "Fiery Metal"),
+    "eezo":             ("bertieprogression:eezo_ingot",  "bertieprogression", "Eezo"),
+    "fire_dragonsteel": ("iceandfire:dragonsteel_fire_ingot", "iceandfire", "Fire Dragonsteel"),
+    "ice_dragonsteel":  ("iceandfire:dragonsteel_ice_ingot", "iceandfire", "Ice Dragonsteel"),
+    "lightning_dragonsteel": ("iceandfire:dragonsteel_lightning_ingot", "iceandfire", "Lightning Dragonsteel"),
+    "straddlite":       ("alexsmobs:straddlite",          "alexsmobs",      "Straddlite"),
+    "neptunium":        ("aquaculture:neptunium_ingot",   "aquaculture",    "Neptunium"),
+    "arcane":           ("irons_spellbooks:arcane_ingot", "irons_spellbooks", "Arcane"),
 }
 for _id, (_src, _mod, _disp) in SLATE_ONLY.items():
     MATERIALS[_id] = (None, 2, None, None, False, _disp)

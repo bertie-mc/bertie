@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:cactus_flower"
+  },
+  "base": {
+    "item": "aquamirae:abyssal_heaume"
+  },
+  "addition": {
+    "item": "aquamirae:abyssal_amethyst"
+  },
+  "result": {
+    "id": "aquamirae:abyssal_tiara",
+    "count": 1
+  }
+}

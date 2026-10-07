@@ -4323,6 +4323,7 @@
 			y: 21d
 		}
 		{
+			dependencies: ["7B000000000000DE"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {

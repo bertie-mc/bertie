@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "rustic_engineer"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "rustic_engineer:iron_plate"
+  },
+  "base": {
+    "item": "aquamirae:abyssal_tiara"
+  },
+  "addition": {
+    "item": "aquamirae:abyssal_amethyst"
+  },
+  "result": {
+    "id": "aquamirae:abyssal_heaume",
+    "count": 1
+  }
+}

@@ -52,7 +52,19 @@ class CarvingContractTest {
                         "black_steel",
                         "cursium",
                         "ignitium",
-                        "witherite"),
+                        "witherite",
+                        "ironwood",
+                        "steeleaf",
+                        "naga_scale",
+                        "knightmetal",
+                        "fiery",
+                        "eezo",
+                        "fire_dragonsteel",
+                        "ice_dragonsteel",
+                        "lightning_dragonsteel",
+                        "straddlite",
+                        "neptunium",
+                        "arcane"),
                 Arrays.stream(CarvingMaterial.values())
                         .map(material -> material.id)
                         .toList());

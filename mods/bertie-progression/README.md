@@ -82,6 +82,23 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Data
 
+Armour progression uses the following routes:
+
+| Set | Station | Base |
+|---|---|---|
+| Miner | Create Mechanical Crafters | Matching iron armour; large leather/iron slates, a candle for the helmet and two iron Magitech pickaxe heads for the chestplate |
+| Terrible | Smithing table | Matching Spiny Shell armour, the Terrible template and fin |
+| Abyssal | Smithing table | Matching Terrible armour, the Abyssal template and Abyssal Amethyst |
+| Soulstained Steel | Malum Spirit Altar | Matching Ironshade armour, 12 Soulstained Steel Plating, 2 Soul Infused Iron Ingots, 1 Bound Soul Ingot, 6 Mnemonic Fragments and 32 Twisted Rock; 64 Earthen, 48 Wicked and 48 Arcane spirits |
+| Dark Metal | Tier-1 Hephaestus Forge | Matching Ironshade armour; 2 Dark Metal Armor Plates, 1 Small Knightmetal Slate, 4 Mountain Troll Leather and the Dark Metal template; 10000 Blood, 8 Souls and 300 Aureal |
+
+Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
+Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.
+A Cactus Flower upgrades an Abyssal Heaume to the Tiara on the smithing table, while a Rustic
+Plate converts the Tiara back; both use Abyssal Amethyst. The three craftable Salvager pieces
+use large iron/leather slates in place of ingots/leather. Apotheosis's iron, gold and diamond
+upgrade templates are hidden and their recipes disabled through the canonical removal list.
+
 Removed potion families and effects use `removed_potions.json` and `removed_effects.json`,
 alongside the existing item/tab removal lists. L2 Armor Corrosion cannot be brewed, applied,
 forced onto an entity, or crafted into tipped arrows. Its normal, extended and strong forms

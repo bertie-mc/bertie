@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "berlordscarving:iron_big_slate"
+    },
+    "2": {
+      "item": "aquamirae:ship_graveyard_echo"
+    }
+  },
+  "pattern": [
+    "1 1",
+    "2 2"
+  ],
+  "result": {
+    "id": "aquamirae:salvager_boots",
+    "count": 1
+  }
+}

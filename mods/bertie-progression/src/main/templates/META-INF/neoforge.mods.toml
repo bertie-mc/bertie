@@ -872,3 +872,10 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="aquamirae"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"

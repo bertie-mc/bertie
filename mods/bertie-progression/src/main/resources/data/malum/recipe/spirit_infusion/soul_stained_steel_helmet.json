@@ -1,0 +1,62 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "mythsandlegends:ironshade_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "malum:soul_stained_steel_plating",
+      "count": 12
+    },
+    {
+      "item": "elemental_metals:soul_infused_iron_ingot",
+      "count": 2
+    },
+    {
+      "item": "mythsandlegends:bound_soul_ingot",
+      "count": 1
+    },
+    {
+      "item": "malum:mnemonic_fragment",
+      "count": 6
+    },
+    {
+      "item": "malum:twisted_rock",
+      "count": 32
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 64
+    },
+    {
+      "type": "malum:wicked",
+      "count": 48
+    },
+    {
+      "type": "malum:arcane",
+      "count": 48
+    }
+  ],
+  "result": {
+    "id": "malum:soul_stained_steel_helmet",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}
