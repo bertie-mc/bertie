@@ -105,6 +105,7 @@
   "data/terra_curio/loot_table/with/entities/zombie.json",
   "data/twilight_forest_final_boss/loot_table/entities/castle_keeper.json",
   "data/twilightforest/loot_table/aurora_room.json",
+  "data/twilightforest/loot_table/blocks/red_thread.json",
   "data/twilightforest/loot_table/blocks/uncrafting_table.json",
   "data/twilightforest/loot_table/chests/tower_library.json",
   "data/twilightforest/loot_table/chests/tower_potion.json",
@@ -114,9 +115,11 @@
   "data/twilightforest/loot_table/graveyard.json",
   "data/twilightforest/loot_table/hedge_cloth.json",
   "data/twilightforest/loot_table/hill_2.json",
+  "data/twilightforest/loot_table/labyrinth_dead_end.json",
   "data/twilightforest/loot_table/labyrinth_room.json",
   "data/twilightforest/loot_table/labyrinth_vault.json",
   "data/twilightforest/loot_table/stronghold_room.json",
   "data/twilightforest/museumexhibits/architecture/workbenches.json",
-  "data/twilightforest/museumexhibits/equipment/armour.json"
+  "data/twilightforest/museumexhibits/equipment/armour.json",
+  "data/twilightforest/museumexhibits/exploration/artifacts.json"
 ]

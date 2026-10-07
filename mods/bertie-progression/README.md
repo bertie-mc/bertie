@@ -82,6 +82,14 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Data
 
+Ravager Hide uses the same knife-scavenging conditions as Hoglin Hide: the victim must
+not be burning, and the chance is 35% without Looting or at Looting I, 45% at II and
+55% at III. Quark's native Ravager Hide base count and extra chance are set to zero
+in the pack so only this scavenging roll produces the hide. Nine Ravager Hides craft or
+compact into one Bonded Ravager Hide; uncrafting returns nine hides.
+Twilight Forest's Rope is named Root Rope. Red Thread is hidden and removed from loot
+through the canonical removed-item tables.
+
 Armour progression uses the following routes:
 
 | Set | Station | Base |

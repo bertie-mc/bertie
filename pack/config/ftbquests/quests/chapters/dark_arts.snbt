@@ -389,44 +389,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1C00000000000045"]
-			icon: {
-				id: "malum:soulwoven_pouch"
-			}
-			id: "1C00000000000048"
-			rewards: [{
-				id: "1C00000002000048"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "1C00000001000048"
-				item: { count: 1, id: "malum:soulwoven_pouch" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: -3.75d
-		}
-		{
-			dependencies: ["1C00000000000048"]
-			icon: {
-				id: "malum:ravenous_pouch"
-			}
-			id: "1C00000000000049"
-			rewards: [{
-				id: "1C00000002000049"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "1C00000001000049"
-				item: { count: 1, id: "malum:ravenous_pouch" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -3.0d
-		}
-		{
 			icon: { count: 1 id: "minecraft:string" }
 			id: "1C00000000001000"
 			tasks: [{
@@ -459,7 +421,7 @@
 				item: { count: 1 id: "anvilcraft:wood_fiber" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 8.0d
 		}
 		{
@@ -471,8 +433,8 @@
 				item: { count: 1 id: "betterend:silk_fiber" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 8.0d
+			x: 16.5d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "malum:esoteric_spool" }
@@ -484,7 +446,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.5d
+			y: 12.5d
 		}
 		{
 			icon: { count: 1 id: "farmersdelight:rope" }
@@ -495,8 +457,8 @@
 				item: { count: 1 id: "farmersdelight:rope" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.5d
+			x: 4.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "quark:rope" }
@@ -507,32 +469,8 @@
 				item: { count: 1 id: "quark:rope" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 9.5d
-		}
-		{
-			icon: { count: 1 id: "twilightforest:rope" }
-			id: "1C0000000000100A"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100A"
-				item: { count: 1 id: "twilightforest:rope" }
-				type: "item"
-			}]
 			x: 6.0d
-			y: 9.5d
-		}
-		{
-			icon: { count: 1 id: "block_factorys_bosses:rope_roll" }
-			id: "1C0000000000100B"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100B"
-				item: { count: 1 id: "block_factorys_bosses:rope_roll" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 9.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "farmersdelight:canvas" }
@@ -555,7 +493,7 @@
 				item: { count: 1 id: "irons_spellbooks:magic_cloth" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 8.0d
 		}
 		{
@@ -567,7 +505,7 @@
 				item: { count: 1 id: "irons_spellbooks:mithril_weave" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 15.0d
 			y: 8.0d
 		}
 		{
@@ -579,7 +517,7 @@
 				item: { count: 1 id: "discerning_the_eldritch:corrupted_cloth" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 8.0d
 		}
 		{
@@ -591,7 +529,7 @@
 				item: { count: 1 id: "hazennstuff:storm_weave" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 18.0d
 			y: 8.0d
 		}
 		{
@@ -603,8 +541,8 @@
 				item: { count: 1 id: "hazennstuff:cloth_of_the_flamebearer" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.5d
+			x: 19.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "magitech:aegis_weave" }
@@ -615,7 +553,7 @@
 				item: { count: 1 id: "magitech:aegis_weave" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.0d
 			y: 9.5d
 		}
 		{
@@ -627,7 +565,7 @@
 				item: { count: 1 id: "malum:soulwoven_silk" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 9.5d
 		}
 		{
@@ -639,7 +577,7 @@
 				item: { count: 1 id: "malum:astral_weave" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 15.0d
 			y: 9.5d
 		}
 		{
@@ -651,8 +589,8 @@
 				item: { count: 1 id: "malum:ancient_weave" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 9.5d
+			x: 1.5d
+			y: 12.5d
 		}
 		{
 			icon: { count: 1 id: "malum:cornered_weave" }
@@ -663,8 +601,8 @@
 				item: { count: 1 id: "malum:cornered_weave" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 9.5d
+			x: 3.0d
+			y: 12.5d
 		}
 		{
 			icon: { count: 1 id: "malum:mechanical_weave_v1" }
@@ -675,8 +613,8 @@
 				item: { count: 1 id: "malum:mechanical_weave_v1" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 11.0d
+			x: 4.5d
+			y: 12.5d
 		}
 		{
 			icon: { count: 1 id: "malum:mechanical_weave_v2" }
@@ -687,8 +625,8 @@
 				item: { count: 1 id: "malum:mechanical_weave_v2" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 11.0d
+			x: 6.0d
+			y: 12.5d
 		}
 		{
 			icon: { count: 1 id: "pastel:enchantment_canvas" }
@@ -700,19 +638,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 11.0d
-		}
-		{
-			icon: { count: 1 id: "pastel:everpromise_ribbon" }
-			id: "1C0000000000101F"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100101F"
-				item: { count: 1 id: "pastel:everpromise_ribbon" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 11.0d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "minecraft:leather" }
@@ -723,8 +649,8 @@
 				item: { count: 1 id: "minecraft:leather" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: 8.0d
+			x: -6.0d
+			y: -0.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:rabbit_hide" }
@@ -735,7 +661,7 @@
 				item: { count: 1 id: "minecraft:rabbit_hide" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 24.0d
 			y: 8.0d
 		}
 		{
@@ -747,7 +673,7 @@
 				item: { count: 1 id: "mynethersdelight:hoglin_hide" }
 				type: "item"
 			}]
-			x: 28.5d
+			x: 25.5d
 			y: 8.0d
 		}
 		{
@@ -759,7 +685,7 @@
 				item: { count: 1 id: "alexsmobs:kangaroo_hide" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 27.0d
 			y: 8.0d
 		}
 		{
@@ -771,7 +697,7 @@
 				item: { count: 1 id: "alexsmobs:shed_snake_skin" }
 				type: "item"
 			}]
-			x: 31.5d
+			x: 28.5d
 			y: 8.0d
 		}
 		{
@@ -783,8 +709,8 @@
 				item: { count: 1 id: "born_in_chaos_v1:monster_skin" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: 9.5d
+			x: 30.0d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "quark:ravager_hide" }
@@ -795,8 +721,8 @@
 				item: { count: 1 id: "quark:ravager_hide" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: 9.5d
+			x: 31.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "mythsandlegends:amarok_hide" }
@@ -807,7 +733,7 @@
 				item: { count: 1 id: "mythsandlegends:amarok_hide" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 24.0d
 			y: 9.5d
 		}
 		{
@@ -819,7 +745,7 @@
 				item: { count: 1 id: "mythsandlegends:scorched_skin" }
 				type: "item"
 			}]
-			x: 28.5d
+			x: 25.5d
 			y: 9.5d
 		}
 		{
@@ -831,7 +757,7 @@
 				item: { count: 1 id: "netherdepthsupgrade:soul_sucker_leather" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 27.0d
 			y: 9.5d
 		}
 		{
@@ -843,7 +769,7 @@
 				item: { count: 1 id: "iceandfire:troll_leather_forest" }
 				type: "item"
 			}]
-			x: 31.5d
+			x: 28.5d
 			y: 9.5d
 		}
 		{
@@ -855,8 +781,8 @@
 				item: { count: 1 id: "iceandfire:troll_leather_frost" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: 11.0d
+			x: 30.0d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:troll_leather_mountain" }
@@ -867,10 +793,11 @@
 				item: { count: 1 id: "iceandfire:troll_leather_mountain" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: 11.0d
+			x: 31.5d
+			y: 9.5d
 		}
 		{
+			dependencies: ["1C00000000001020"]
 			icon: { count: 1 id: "twilightforest:treated_leather" }
 			id: "1C0000000000102E"
 			tasks: [{
@@ -879,10 +806,11 @@
 				item: { count: 1 id: "twilightforest:treated_leather" }
 				type: "item"
 			}]
-			x: 27.0d
-			y: 11.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["1C0000000000102E"]
 			icon: { count: 1 id: "twilightforest:tanned_leather" }
 			id: "1C0000000000102F"
 			tasks: [{
@@ -891,8 +819,8 @@
 				item: { count: 1 id: "twilightforest:tanned_leather" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: 11.0d
+			x: -6.0d
+			y: -3.0d
 		}
 		{
 			icon: { count: 1 id: "betterend:leather_stripe" }
@@ -903,44 +831,8 @@
 				item: { count: 1 id: "betterend:leather_stripe" }
 				type: "item"
 			}]
-			x: 30.0d
-			y: 11.0d
-		}
-		{
-			icon: { count: 1 id: "quark:bonded_leather" }
-			id: "1C00000000001032"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001032"
-				item: { count: 1 id: "quark:bonded_leather" }
-				type: "item"
-			}]
 			x: 24.0d
-			y: 12.5d
-		}
-		{
-			icon: { count: 1 id: "quark:bonded_rabbit_hide" }
-			id: "1C00000000001033"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001033"
-				item: { count: 1 id: "quark:bonded_rabbit_hide" }
-				type: "item"
-			}]
-			x: 25.5d
-			y: 12.5d
-		}
-		{
-			icon: { count: 1 id: "quark:bonded_ravager_hide" }
-			id: "1C00000000001034"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001034"
-				item: { count: 1 id: "quark:bonded_ravager_hide" }
-				type: "item"
-			}]
-			x: 27.0d
-			y: 12.5d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:bear_fur" }
@@ -951,8 +843,8 @@
 				item: { count: 1 id: "alexsmobs:bear_fur" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: 12.5d
+			x: 25.5d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:bison_fur" }
@@ -963,8 +855,8 @@
 				item: { count: 1 id: "alexsmobs:bison_fur" }
 				type: "item"
 			}]
-			x: 30.0d
-			y: 12.5d
+			x: 27.0d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "ancient_forgemastery:wolf_fur" }
@@ -975,8 +867,8 @@
 				item: { count: 1 id: "ancient_forgemastery:wolf_fur" }
 				type: "item"
 			}]
-			x: 31.5d
-			y: 12.5d
+			x: 28.5d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:arctic_fur" }
@@ -987,8 +879,8 @@
 				item: { count: 1 id: "twilightforest:arctic_fur" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: 14.0d
+			x: 30.0d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:alpha_yeti_fur" }
@@ -999,10 +891,11 @@
 				item: { count: 1 id: "twilightforest:alpha_yeti_fur" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: 14.0d
+			x: 31.5d
+			y: 11.0d
 		}
 		{
+			dependencies: ["1C0000000000102F"]
 			icon: { count: 1 id: "berlordscarving:leather_slate" }
 			id: "1C0000000000103B"
 			tasks: [{
@@ -1011,10 +904,11 @@
 				item: { count: 1 id: "berlordscarving:leather_slate" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: 14.0d
+			x: -6.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["1C0000000000103B"]
 			icon: { count: 1 id: "berlordscarving:leather_big_slate" }
 			id: "1C0000000000103C"
 			tasks: [{
@@ -1023,8 +917,8 @@
 				item: { count: 1 id: "berlordscarving:leather_big_slate" }
 				type: "item"
 			}]
-			x: 30.0d
-			y: 14.0d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:feather" }
@@ -1036,7 +930,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:emu_feather" }
@@ -1048,7 +942,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:roadrunner_feather" }
@@ -1060,7 +954,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:raven_feather" }
@@ -1072,7 +966,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:amphithere_feather" }
@@ -1084,7 +978,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:stymphalian_bird_feather" }
@@ -1096,7 +990,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:stymphalian_feather_bundle" }
@@ -1108,7 +1002,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 21.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "l2complements:resonant_feather" }
@@ -1120,7 +1014,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 21.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "pastel:resplendent_feather" }
@@ -1132,7 +1026,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 21.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "discerning_the_eldritch:ironbound_feather" }
@@ -1144,7 +1038,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 21.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "curseofpandora:angelic_feather" }
@@ -1156,7 +1050,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 21.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "minecraft:phantom_membrane" }
@@ -1168,7 +1062,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "betterend:enchanted_membrane" }
@@ -1180,7 +1074,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "l2complements:sun_membrane" }
@@ -1192,19 +1086,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 20.0d
-		}
-		{
-			icon: { count: 1 id: "betterend:umbrella_tree_membrane" }
-			id: "1C0000000000104B"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100104B"
-				item: { count: 1 id: "betterend:umbrella_tree_membrane" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 20.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:cobweb" }
@@ -1215,8 +1097,8 @@
 				item: { count: 1 id: "minecraft:cobweb" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 21.5d
+			x: 18.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "apothic_enchanting:prismatic_web" }
@@ -1227,20 +1109,8 @@
 				item: { count: 1 id: "apothic_enchanting:prismatic_web" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 21.5d
-		}
-		{
-			icon: { count: 1 id: "born_in_chaos_v1:cobweb_cover" }
-			id: "1C00000000001051"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001051"
-				item: { count: 1 id: "born_in_chaos_v1:cobweb_cover" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 21.5d
+			x: 19.5d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:white_wool" }
@@ -1251,8 +1121,8 @@
 				item: { count: 1 id: "minecraft:white_wool" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 11.0d
+			x: 7.5d
+			y: 8.0d
 		}
 	]
 }

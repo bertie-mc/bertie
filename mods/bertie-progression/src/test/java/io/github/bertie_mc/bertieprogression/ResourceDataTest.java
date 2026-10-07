@@ -1,5 +1,6 @@
 package io.github.bertie_mc.bertieprogression;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.google.gson.JsonElement;
@@ -145,6 +146,31 @@ class ResourceDataTest {
             }
         }
         assertTrue(wrong.isEmpty(), String.join("\n", wrong));
+    }
+
+    @Test
+    void ravagerHideMatchesHoglinScavenging() throws IOException {
+        JsonObject hoglin = JsonParser.parseString(Files.readString(
+                        RESOURCES.resolve("data/mynethersdelight/loot_modifiers/scavenging_hoglin_hide.json")))
+                .getAsJsonObject();
+        JsonObject ravager = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/bertieprogression/loot_modifiers/ravager_hide.json")))
+                .getAsJsonObject();
+        ravager.remove("neoforge:conditions");
+        ravager.addProperty("item", "mynethersdelight:hoglin_hide");
+        for (JsonElement element : ravager.getAsJsonArray("conditions")) {
+            JsonObject condition = element.getAsJsonObject();
+            if (condition.has("predicate")
+                    && condition.getAsJsonObject("predicate").has("type")) {
+                condition.getAsJsonObject("predicate").addProperty("type", "minecraft:hoglin");
+            }
+        }
+        assertEquals(hoglin, ravager);
+        JsonObject registration = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/neoforge/loot_modifiers/global_loot_modifiers.json")))
+                .getAsJsonObject();
+        assertTrue(registration.getAsJsonArray("entries").asList().stream()
+                .anyMatch(entry -> "bertieprogression:ravager_hide".equals(entry.getAsString())));
     }
 
     /** Every {@code random_chance_with_enchanted_bonus} anywhere in one file, at any nesting. */

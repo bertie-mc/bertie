@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    },
+    {
+      "item": "quark:ravager_hide"
+    }
+  ],
+  "results": [
+    {
+      "id": "quark:bonded_ravager_hide",
+      "count": 1
+    }
+  ]
+}

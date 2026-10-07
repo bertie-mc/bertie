@@ -3645,6 +3645,19 @@ for _slot in ("helmet", "chestplate", "leggings", "boots"):
               f"born_in_chaos_v1:dark_metal_armor_{_slot}", tier=1,
               essences={"aureal": 300, "blood": 10000, "souls": 8}))
 
+# ================================================================ RAVAGER HIDE
+write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",
+      shaped(["HHH", "HHH", "HHH"], {"H": "quark:ravager_hide"}, "quark:bonded_ravager_hide"))
+write("data/quark/recipe/oddities/crafting/bonded_ravager_hide_uncompress.json",
+      shapeless(["quark:bonded_ravager_hide"], "quark:ravager_hide", 9))
+write(f"{R}/compacting/bonded_ravager_hide.json", {
+    "neoforge:conditions": conds("create", "quark"),
+    "type": "create:compacting",
+    "ingredients": [{"item": "quark:ravager_hide"}] * 9,
+    "results": [{"id": "quark:bonded_ravager_hide", "count": 1}],
+})
+write("assets/twilightforest/lang/en_us.json", {"block.twilightforest.rope": "Root Rope"})
+
 # ================================================================ CHUNK LOADERS
 # Every chunk loader is forged, each tier around the one below it. The Ultimate loader fills all
 # twelve pedestals of a Tier-III forge.
@@ -3732,6 +3745,25 @@ for _mob, _n in sorted(MOB_DOLLS.items()):
         "item": f"{KD}:doll_{_n}",
     })
     _glm.append(f"bertieprogression:doll_drops/{_mob}")
+# Matches the pack's Hoglin Hide scavenging conditions and monotonic Looting curve. Quark's
+# native count-based hide drop is disabled in the pack configuration so the two do not stack.
+write("data/bertieprogression/loot_modifiers/ravager_hide.json", {
+    "neoforge:conditions": conds("farmersdelight", "quark"),
+    "type": "farmersdelight:add_item",
+    "conditions": [
+        {"condition": "minecraft:entity_properties", "entity": "attacker",
+         "predicate": {"equipment": {"mainhand": {"items": "#farmersdelight:tools/knives"}}}},
+        {"condition": "minecraft:entity_properties", "entity": "this",
+         "predicate": {"flags": {"is_on_fire": False}}},
+        {"condition": "minecraft:entity_properties", "entity": "this",
+         "predicate": {"type": "minecraft:ravager"}},
+        {"condition": "minecraft:random_chance_with_enchanted_bonus", "enchantment": "minecraft:looting",
+         "unenchanted_chance": 0.35,
+         "enchanted_chance": {"type": "minecraft:linear", "base": 0.35, "per_level_above_first": 0.1}},
+    ],
+    "item": "quark:ravager_hide",
+})
+_glm.append("bertieprogression:ravager_hide")
 write("data/neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": _glm})
 
 # ================================================================ BETTER HORSES
