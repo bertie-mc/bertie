@@ -1005,18 +1005,6 @@
 			y: 15.5d
 		}
 		{
-			icon: { count: 1 id: "discerning_the_eldritch:ironbound_feather" }
-			id: "1C00000000001046"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001046"
-				item: { count: 1 id: "discerning_the_eldritch:ironbound_feather" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 15.5d
-		}
-		{
 			icon: { count: 1 id: "curseofpandora:angelic_feather" }
 			id: "1C00000000001047"
 			tasks: [{
