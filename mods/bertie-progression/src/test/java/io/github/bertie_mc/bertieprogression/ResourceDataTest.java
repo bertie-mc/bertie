@@ -11,7 +11,9 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.junit.jupiter.api.Test;
 
 class ResourceDataTest {
@@ -113,6 +115,40 @@ class ResourceDataTest {
             }
         }
         assertTrue(broken.isEmpty(), String.join("\n", broken));
+    }
+
+    /** The forge selects the first matching ritual; identical inputs cannot offer different items. */
+    @Test
+    void forgeItemOutputsHaveDistinctInputs() throws IOException {
+        Map<String, String> outputs = new HashMap<>();
+        List<String> ambiguous = new ArrayList<>();
+        try (var files = Files.walk(RESOURCES.resolve("data"))) {
+            for (Path path : files.filter(p -> p.toString().endsWith(".json"))
+                    .filter(p -> p.toString().replace('\\', '/').contains("/hephaestus_forge/ritual/"))
+                    .toList()) {
+                JsonObject ritual =
+                        JsonParser.parseString(Files.readString(path)).getAsJsonObject();
+                JsonObject result = ritual.getAsJsonObject("result");
+                if (result == null || !result.has("result_item")) {
+                    continue;
+                }
+                List<String> inputs = ritual.getAsJsonArray("inputs").asList().stream()
+                        .map(JsonElement::toString)
+                        .sorted()
+                        .toList();
+                int tier = ritual.has("forge_tier") ? ritual.get("forge_tier").getAsInt() : 1;
+                String key = tier + ":" + ritual.get("main_ingredient") + ":" + inputs;
+                JsonElement item = result.get("result_item");
+                String output = item.isJsonPrimitive()
+                        ? item.getAsString()
+                        : item.getAsJsonObject().get("id").getAsString();
+                String previous = outputs.putIfAbsent(key, output);
+                if (previous != null && !previous.equals(output)) {
+                    ambiguous.add(RESOURCES.relativize(path) + ": " + previous + " and " + output);
+                }
+            }
+        }
+        assertTrue(ambiguous.isEmpty(), String.join("\n", ambiguous));
     }
 
     /**

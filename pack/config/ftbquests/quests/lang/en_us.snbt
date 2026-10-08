@@ -134,7 +134,7 @@
 	quest.1C00000000000045.title: "Soulwoven Silk"
 	quest.1C00000000000045.quest_desc: ["At the Spirit Altar, weave 4 Wool with Hex Ash, Spiritual Dust, 5 String and 3 Tanned Leather. Sacred, Aerial and Earthen spirits bind it into one Soulwoven Silk."]
 	quest.1C00000000000046.title: "Arcane Cloth"
-	quest.1C00000000000046.quest_desc: ["Craft Arcane Cloth in a 3x3 grid: Soulwoven Silk across the top and bottom rows, with three Small Arcane Slates across the middle."]
+	quest.1C00000000000046.quest_desc: ["Craft 4 Arcane Cloth in a 3x3 grid: Soulwoven Silk across the top and bottom rows, with three Small Arcane Slates across the middle."]
 	quest.1C00000000000047.title: "Astral Weave"
 	quest.1C0000000000004A.title: "Soulstained Steel Scythe"
 	quest.1C0000000000004B.title: "Mechanical Grid"

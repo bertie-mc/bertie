@@ -1,0 +1,74 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "alexsmobs"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "elemental_metals"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "mythsandlegends:soulpiercer_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "malum:soulwoven_silk",
+      "count": 16
+    },
+    {
+      "item": "irons_spellbooks:magic_cloth",
+      "count": 6
+    },
+    {
+      "item": "elemental_metals:soul_infused_iron_ingot",
+      "count": 2
+    },
+    {
+      "item": "mythsandlegends:bound_soul_ingot",
+      "count": 1
+    },
+    {
+      "item": "bertieprogression:innocent_soul",
+      "count": 8
+    },
+    {
+      "item": "alexsmobs:roadrunner_feather",
+      "count": 3
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:aerial",
+      "count": 64
+    },
+    {
+      "type": "malum:sacred",
+      "count": 48
+    },
+    {
+      "type": "malum:arcane",
+      "count": 48
+    }
+  ],
+  "result": {
+    "id": "malum:soul_hunter_cloak",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

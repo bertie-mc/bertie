@@ -1,0 +1,293 @@
+{
+  "mage_costs": {
+    "aureal": 250,
+    "blood": 0,
+    "souls": 4,
+    "experience": 600
+  },
+  "mage_sets": [
+    {
+      "id": "spectral_spelunker",
+      "parents": [
+        {
+          "prefix": "hazennstuff:miner",
+          "rune": "irons_spellbooks:arcane_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:spectral_spelunker_helmet",
+        "chestplate": "hazennstuff:spectral_spelunker_chestplate",
+        "leggings": "hazennstuff:spectral_spelunker_leggings",
+        "boots": "hazennstuff:spectral_spelunker_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "hazel",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:archevoker",
+          "rune": "irons_spellbooks:evocation_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:hazel_helmet",
+        "chestplate": "hazennstuff:hazel_chestplate",
+        "leggings": "hazennstuff:hazel_leggings",
+        "boots": "hazennstuff:hazel_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "bishop",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:priest",
+          "rune": "irons_spellbooks:holy_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:bishop_of_deceit_helmet",
+        "chestplate": "hazennstuff:bishop_of_deceit_chestplate",
+        "leggings": "armorcompletions:bishop_leggings",
+        "boots": "armorcompletions:bishop_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "mycelium_guardian",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:plagued",
+          "rune": "irons_spellbooks:nature_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:mycelium_guardian_helmet",
+        "chestplate": "hazennstuff:mycelium_guardian_chestplate",
+        "leggings": "hazennstuff:mycelium_guardian_leggings",
+        "boots": "hazennstuff:mycelium_guardian_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "nameless_one",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:cultist",
+          "rune": "irons_spellbooks:blood_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:nameless_one_helmet",
+        "chestplate": "hazennstuff:nameless_one_chestplate",
+        "leggings": "hazennstuff:nameless_one_leggings",
+        "boots": "armorcompletions:nameless_one_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "pyromancer_brute",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:pyromancer",
+          "rune": "irons_spellbooks:fire_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:pyromancer_brute_helmet",
+        "chestplate": "hazennstuff:pyromancer_brute_chestplate",
+        "leggings": "armorcompletions:pyromancer_brute_leggings",
+        "boots": "armorcompletions:pyromancer_brute_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "shadowwalker_enderman",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:shadowwalker",
+          "rune": "irons_spellbooks:ender_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:shadowwalker_enderman_hood",
+        "chestplate": "hazennstuff:shadowwalker_enderman_chestplate",
+        "leggings": "hazennstuff:shadowwalker_enderman_leggings",
+        "boots": "hazennstuff:shadowwalker_enderman_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "necromancer",
+      "pending": true,
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:cultist",
+          "rune": "irons_spellbooks:blood_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:necromancer_helmet",
+        "chestplate": "hazennstuff:necromancer_chestplate",
+        "leggings": "hazennstuff:necromancer_leggings",
+        "boots": "armorcompletions:necromancer_boots"
+      },
+      "placeholder": "minecraft:stick"
+    },
+    {
+      "id": "mothic_witch",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:priest",
+          "rune": "irons_spellbooks:holy_rune"
+        },
+        {
+          "prefix": "irons_spellbooks:plagued",
+          "rune": "irons_spellbooks:nature_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:mothic_witch_helmet",
+        "chestplate": "hazennstuff:mothic_witch_chestplate",
+        "leggings": "hazennstuff:mothic_witch_leggings",
+        "boots": "hazennstuff:mothic_witch_boots"
+      }
+    },
+    {
+      "id": "atlas",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:plagued",
+          "rune": "irons_spellbooks:nature_rune"
+        },
+        {
+          "prefix": "irons_spellbooks:cultist",
+          "rune": "irons_spellbooks:blood_rune"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:atlas_helmet",
+        "chestplate": "hazennstuff:atlas_chestplate",
+        "leggings": "hazennstuff:atlas_leggings",
+        "boots": "hazennstuff:atlas_boots"
+      }
+    }
+  ],
+  "soulhunter": {
+    "parent": "mythsandlegends:soulpiercer",
+    "outputs": {
+      "helmet": "malum:soul_hunter_cloak",
+      "chestplate": "malum:soul_hunter_robe",
+      "leggings": "malum:soul_hunter_leggings",
+      "boots": "malum:soul_hunter_boots"
+    },
+    "spirits": [
+      [
+        "malum:aerial",
+        64
+      ],
+      [
+        "malum:sacred",
+        48
+      ],
+      [
+        "malum:arcane",
+        48
+      ]
+    ],
+    "secondary": [
+      [
+        "malum:soulwoven_silk",
+        16
+      ],
+      [
+        "irons_spellbooks:magic_cloth",
+        6
+      ],
+      [
+        "elemental_metals:soul_infused_iron_ingot",
+        2
+      ],
+      [
+        "mythsandlegends:bound_soul_ingot",
+        1
+      ],
+      [
+        "bertieprogression:innocent_soul",
+        8
+      ],
+      [
+        "alexsmobs:roadrunner_feather",
+        3
+      ]
+    ]
+  },
+  "nightmare": {
+    "parent": "mythsandlegends:soulpiercer",
+    "outputs": {
+      "helmet": "born_in_chaos_v1:nightmare_mantleofthe_night_helmet",
+      "chestplate": "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate",
+      "leggings": "born_in_chaos_v1:nightmare_mantleofthe_night_leggings",
+      "boots": "born_in_chaos_v1:nightmare_mantleofthe_night_boots"
+    },
+    "costs": {
+      "aureal": 500,
+      "blood": 5000,
+      "souls": 0,
+      "experience": 500
+    }
+  },
+  "disabled_recipes": [
+    "data/born_in_chaos_v1/recipe/nightmare_boots_k.json",
+    "data/born_in_chaos_v1/recipe/nightmare_mask_k.json",
+    "data/born_in_chaos_v1/recipe/nightmare_pantsk.json",
+    "data/born_in_chaos_v1/recipe/nightmare_robe_k.json",
+    "data/hazennstuff/recipe/smithing/armor/hazel/hazel_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/hazel/hazel_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/hazel/hazel_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/hazel/hazel_leggings.json",
+    "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_leggings.json",
+    "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_leggings.json",
+    "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_boots.json",
+    "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_chestplate.json",
+    "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_helmet.json",
+    "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_leggings.json",
+    "data/hazennstuff/recipe/smithing/spectral_spelunker_armor/spectral_spelunker_boots.json",
+    "data/hazennstuff/recipe/smithing/spectral_spelunker_armor/spectral_spelunker_chestplate.json",
+    "data/hazennstuff/recipe/smithing/spectral_spelunker_armor/spectral_spelunker_helmet.json",
+    "data/hazennstuff/recipe/smithing/spectral_spelunker_armor/spectral_spelunker_leggings.json"
+  ],
+  "output_components": {
+    "hazennstuff:hazel_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:mothic_witch_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:mycelium_guardian_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    }
+  }
+}

@@ -2693,7 +2693,7 @@ write("data/malum/recipe/spirit_infusion/soulwoven_silk.json",
 write("data/irons_spellbooks/recipe/magic_cloth.json",
       shaped(["SSS", "LLL", "SSS"],
              {"L": "berlordscarving:arcane_slate", "S": "malum:soulwoven_silk"},
-             "irons_spellbooks:magic_cloth"))
+             "irons_spellbooks:magic_cloth", 4))
 write("data/malum/recipe/spirit_infusion/arcane_varnished_terracotta.json",
       infusion("minecraft:terracotta", 2, [("malum:alchemical_calx", 1)],
                [("malum:arcane", 2)], "malum:arcane_varnished_terracotta", 4))
@@ -3647,6 +3647,63 @@ for _slot in ("helmet", "chestplate", "leggings", "boots"):
                ("born_in_chaos_v1:dark_upgrade", 1)],
               f"born_in_chaos_v1:dark_metal_armor_{_slot}", tier=1,
               essences={"aureal": 300, "blood": 10000, "souls": 8}))
+
+# Dark Metal plates accept all three Troll Leather variants in the original shape.
+write("data/bertieprogression/tags/item/troll_leathers.json", {"values": [
+    f"iceandfire:troll_leather_{_kind}" for _kind in ("forest", "frost", "mountain")
+]})
+write("data/born_in_chaos_v1/recipe/armor_plate_from_dark_metal_k.json",
+      shaped(["aab", "bbb", "baa"],
+             {"a": "#bertieprogression:troll_leathers", "b": "born_in_chaos_v1:dark_metal_ingot"},
+             "born_in_chaos_v1:armor_plate_from_dark_metal"))
+
+# Armour upgrades use matching parent pieces and retain stock output spell containers.
+with open(os.path.join(ROOT, "texture-work", "armour_upgrades.json"), encoding="utf-8") as _f:
+    _armour = json.load(_f)
+for _path in _armour["disabled_recipes"]:
+    write(_path, DISABLED)
+
+for _slot, _output in _armour["soulhunter"]["outputs"].items():
+    _recipe = infusion(f"{_armour['soulhunter']['parent']}_{_slot}", 1,
+                       _armour["soulhunter"]["secondary"], _armour["soulhunter"]["spirits"], _output)
+    _recipe["carryOverComponentData"] = True
+    write(f"data/malum/recipe/spirit_infusion/{_output.split(':')[1]}.json", _recipe)
+
+def _armour_ritual(_primary, _secondary, _output, _costs):
+    _essences = {k: _costs[k] for k in ("aureal", "blood", "souls")}
+    _recipe = ritual(_primary, _secondary, _output, tier=1,
+                     essences=_essences, xp=_costs["experience"])
+    if _output in _armour["output_components"]:
+        _recipe["result"]["result_item"]["components"] = _armour["output_components"][_output]
+    return _recipe
+
+for _slot, _output in _armour["nightmare"]["outputs"].items():
+    _plate = ("born_in_chaos_v1:nightmare_stalker_skull" if _slot == "helmet"
+              else "born_in_chaos_v1:armor_plate_from_dark_metal")
+    write(f"{RIT}/nightmare_{_slot}.json", _armour_ritual(
+        f"{_armour['nightmare']['parent']}_{_slot}",
+        [(_plate, 1), ("born_in_chaos_v1:nightmare_claw", 1),
+         ("irons_spellbooks:magic_cloth", 2), ("hazennstuff:nightmare_fuel", 3),
+         ("born_in_chaos_v1:dark_upgrade", 1)], _output, _armour["nightmare"]["costs"]))
+
+for _set in _armour["mage_sets"]:
+    if _set.get("pending", False):
+        continue
+    _parents = _set["parents"]
+    for _slot, _output in _set["outputs"].items():
+        for _index, _parent in enumerate(_parents):
+            if len(_parents) == 1:
+                _secondary = [(_set["placeholder"], 1), (_parent["rune"], 2)]
+                _suffix = ""
+            else:
+                _other = _parents[1 - _index]
+                _secondary = [(f"{_other['prefix']}_{_slot}", 1),
+                              (_parent["rune"], 1), (_other["rune"], 1)]
+                _suffix = f"_from_{_parent['prefix'].split(':')[1]}"
+            _secondary += [("irons_spellbooks:magic_cloth", 3),
+                           ("minecraft:book", 1), ("minecraft:torch", 1)]
+            write(f"{RIT}/{_set['id']}_{_slot}{_suffix}.json", _armour_ritual(
+                f"{_parent['prefix']}_{_slot}", _secondary, _output, _armour["mage_costs"]))
 
 # ================================================================ RAVAGER HIDE
 write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",

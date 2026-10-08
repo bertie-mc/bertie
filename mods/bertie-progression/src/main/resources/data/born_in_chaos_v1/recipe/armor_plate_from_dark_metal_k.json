@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "bertieprogression:troll_leathers"
+    },
+    "b": {
+      "item": "born_in_chaos_v1:dark_metal_ingot"
+    }
+  },
+  "pattern": [
+    "aab",
+    "bbb",
+    "baa"
+  ],
+  "result": {
+    "id": "born_in_chaos_v1:armor_plate_from_dark_metal",
+    "count": 1
+  }
+}

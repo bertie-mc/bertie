@@ -96,7 +96,8 @@ The Arcane Ingot Spirit Altar recipe includes four Arcane Crystal Dust alongside
 existing Deorum Ingot, eight Arcane Essence and four Arcane spirits. Arcane Varnished
 Terracotta uses two Terracotta and returns four, retaining one Alchemical Calx and two
 Arcane spirits. Arcane Cloth uses a 3x3 `SSS / LLL / SSS` craft: six Soulwoven Silk and
-three Small Arcane Slates.
+three Small Arcane Slates produce four cloth. Dark Metal Armor Plates retain their shaped
+craft, using any Forest, Frost or Mountain Troll Leather in place of Monster Skin.
 
 Armour progression uses the following routes:
 
@@ -107,6 +108,35 @@ Armour progression uses the following routes:
 | Abyssal | Smithing table | Matching Terrible armour, the Abyssal template and Abyssal Amethyst |
 | Soulstained Steel | Malum Spirit Altar | Matching Ironshade armour, 12 Soulstained Steel Plating, 2 Soul Infused Iron Ingots, 1 Bound Soul Ingot, 6 Mnemonic Fragments and 32 Twisted Rock; 64 Earthen, 48 Wicked and 48 Arcane spirits |
 | Dark Metal | Tier-1 Hephaestus Forge | Matching Ironshade armour; 2 Dark Metal Armor Plates, 1 Small Knightmetal Slate, 4 Mountain Troll Leather and the Dark Metal template; 10000 Blood, 8 Souls and 300 Aureal |
+| Soulhunter | Malum Spirit Altar | Matching Soulpiercer armour; 16 Soulwoven Silk, 6 Arcane Cloth, 2 Soul Infused Iron Ingots, 1 Bound Soul Ingot, 8 Innocent Souls and 3 Roadrunner Feathers; 64 Aerial, 48 Sacred and 48 Arcane spirits |
+| Nightmare Mantle of the Night | Tier-1 Hephaestus Forge | Matching Soulpiercer armour; 1 Dark Metal Armor Plate (Nightmare Stalker Skull for the helmet), 1 Nightmare Claw, 2 Arcane Cloth, 3 Nightmare Fuel and 1 Dark Metal template; 500 Aureal, 5000 Blood and 500 Ink |
+
+The mage upgrades use a Tier-1 forge, 250 Aureal, 4 Souls and 600 Ink per piece.
+Single-parent sets use one stick, two of the parent's rune, three Arcane Cloth, one book
+and one torch. Mothic Witch and Atlas accept either parent's matching armour as the core,
+with the other parent's matching piece on a pedestal in place of the stick, and one rune
+from each parent. The stick, book and torch are temporary ingredients.
+
+| Upgrade | Parent | Rune |
+|---|---|---|
+| Spectral Spelunker | Miner | Arcane |
+| Hazel | Archevoker | Evocation |
+| Bishop of Deceit | Priest | Holy |
+| Mycelium Guardian | Plagued | Nature |
+| Nameless One | Cultist | Blood |
+| Pyromancer Brute | Pyromancer | Fire |
+| Shadowwalker Enderman | Shadowwalker | Ender |
+| Necromancer (recipe pending) | Cultist | Blood |
+| Mothic Witch | Priest + Plagued | Holy + Nature |
+| Atlas | Plagued + Cultist | Nature + Blood |
+
+Shadowwalker Enderman's upgrade uses the hood for its head piece. Existing chestplate
+spell containers are retained where stock recipes define them, and Soulhunter infusions
+carry over the base item's components. Stock crafting/smithing routes for these upgrades
+are disabled. The parent/output mappings and stock recipe paths are maintained in
+[`texture-work/armour_upgrades.json`](texture-work/armour_upgrades.json).
+Necromancer's proposed stick recipe is held because it duplicates Nameless One's inputs;
+the forge selects the first matching ritual, leaving the other output inaccessible.
 
 Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
 Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.
@@ -123,8 +153,8 @@ an older entity clears both the effect and its armor penalty. Registry entries r
 save compatibility. L2's separate Corrosion trait and Ring of Corrosion are unaffected.
 Cult of Azazel's Doctor also excludes removed effects from its random potion pool when installed.
 
-About 750 JSON files: the R01–R42 recipe ledger, darkstone stonecutting recipes,
-35 Hephaestus Forge rituals (the four chunk loaders among them), and recipe additions or
+The generated data includes the R01–R42 recipe ledger, darkstone stonecutting recipes,
+Hephaestus Forge rituals (the four chunk loaders among them), and recipe additions or
 overrides in the namespaces of the pack's other mods (Create kinetics, Malum spirit infusion,
 Ice and Fire, Immersive Armors, Twilight Forest equipment, Avaritia, Cataclysm, Deeper Darker,
 L2 Hostility loot modifiers and others). A Patchouli field guide documents the current progression in game.

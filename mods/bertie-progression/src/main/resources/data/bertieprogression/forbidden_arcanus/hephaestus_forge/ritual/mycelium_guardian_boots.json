@@ -1,0 +1,52 @@
+{
+  "essences": {
+    "aureal": 250,
+    "blood": 0,
+    "souls": 4,
+    "experience": 600
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:stick"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "irons_spellbooks:magic_cloth"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:book"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:torch"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "irons_spellbooks:plagued_boots"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:mycelium_guardian_boots",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}
