@@ -1,0 +1,45 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 10000,
+    "souls": 30
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:cursium_ingot"
+      }
+    },
+    {
+      "amount": 5,
+      "ingredient": {
+        "item": "cataclysm:black_steel_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "berlordscarving:cursium_big_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "born_in_chaos_v1:nightmare_mantleofthe_night_boots"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm:cursium_boots",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

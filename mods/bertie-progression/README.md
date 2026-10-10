@@ -112,31 +112,66 @@ Armour progression uses the following routes:
 | Nightmare Mantle of the Night | Tier-1 Hephaestus Forge | Matching Soulpiercer armour; 1 Dark Metal Armor Plate (Nightmare Stalker Skull for the helmet), 1 Nightmare Claw, 2 Arcane Cloth, 3 Nightmare Fuel and 1 Dark Metal template; 500 Aureal, 5000 Blood and 500 Ink |
 
 The mage upgrades use a Tier-1 forge, 250 Aureal, 4 Souls and 600 Ink per piece.
-Single-parent sets use one stick, two of the parent's rune, three Arcane Cloth, one book
-and one torch. Mothic Witch and Atlas accept either parent's matching armour as the core,
-with the other parent's matching piece on a pedestal in place of the stick, and one rune
-from each parent. The stick, book and torch are temporary ingredients.
+Single-parent sets use one Evil Spine, two of the parent's rune, three Arcane Cloth and
+one of each infused iron ingot listed below. Mothic Witch and Atlas accept either parent's
+matching armour as the core, with the other parent's matching piece on a pedestal in place
+of the Evil Spine, and one rune from each parent.
 
-| Upgrade | Parent | Rune |
-|---|---|---|
-| Spectral Spelunker | Miner | Arcane |
-| Hazel | Archevoker | Evocation |
-| Bishop of Deceit | Priest | Holy |
-| Mycelium Guardian | Plagued | Nature |
-| Nameless One | Cultist | Blood |
-| Pyromancer Brute | Pyromancer | Fire |
-| Shadowwalker Enderman | Shadowwalker | Ender |
-| Necromancer (recipe pending) | Cultist | Blood |
-| Mothic Witch | Priest + Plagued | Holy + Nature |
-| Atlas | Plagued + Cultist | Nature + Blood |
+| Upgrade | Parent | Rune | Infused iron pair |
+|---|---|---|---|
+| Spectral Spelunker | Miner | Arcane | Arcane, Healing |
+| Hazel | Archevoker | Evocation | Lightning, Soul |
+| Bishop of Deceit | Priest | Holy | Arcane, Healing |
+| Mycelium Guardian | Plagued | Nature | Frost, Healing |
+| Nameless One | Cultist | Blood | Fire, Frost |
+| Pyromancer Brute | Pyromancer | Fire | Fire, Soul |
+| Shadowwalker Enderman | Shadowwalker | Ender | Frost, Soul |
+| Necromancer | Cultist | Blood | Frost, Lightning |
+| Mothic Witch | Priest + Plagued | Holy + Nature | Healing, Lightning |
+| Atlas | Plagued + Cultist | Nature + Blood | Fire, Healing |
 
 Shadowwalker Enderman's upgrade uses the hood for its head piece. Existing chestplate
 spell containers are retained where stock recipes define them, and Soulhunter infusions
 carry over the base item's components. Stock crafting/smithing routes for these upgrades
 are disabled. The parent/output mappings and stock recipe paths are maintained in
 [`texture-work/armour_upgrades.json`](texture-work/armour_upgrades.json).
-Necromancer's proposed stick recipe is held because it duplicates Nameless One's inputs;
-the forge selects the first matching ritual, leaving the other output inaccessible.
+
+The seven Tier-4 Fantasy Armor families upgrade matching diamond pieces on the Spirit Altar.
+Every piece takes 12 Refined Brilliance, 2 Dark Metal Ingots, 2 Totemic Gold Ingots and
+2 Echo Shards, plus one of each personal large slate. The first listed spirit costs 24,
+the second 32; base components carry over.
+
+| Set | Large slate pair | Spirit pair |
+|---|---|---|
+| Old Knight | Deep Alloy, Iron | Eldritch, Earthen |
+| Forgotten Trace | Gold, Resin | Eldritch, Aerial |
+| Eclipse Soldier | Emerald, Ironwood | Wicked, Infernal |
+| Fog Guard | Deep Alloy, Leather | Aqueous, Earthen |
+| Wind Worshipper | Lapis, Leather | Sacred, Aerial |
+| Redeemer | Quartz, Gold | Wicked, Sacred |
+| Thief | Leather, Emerald | Wicked, Aerial |
+
+Tier-2 forge armour follows the parent links in God of War. Supreme Witch uses Mothic Witch;
+Alchemist Supreme uses Hazel; Creaking uses Mycelium Guardian; Crystal Arachnid uses Cryomancer;
+Magehunter uses Soulhunter; Frostbite Hunter uses Frosthowl; Engineer uses Electromancer.
+Each takes four Astral Weave plus its specified materials and runes. These six 50% resource
+pairs occur once each: Aureal/Blood, Blood/Ink, Aureal/Souls, Souls/Ink, Souls/Blood and Aureal/Ink.
+Tier-2 capacities are 3000 Aureal, 15000 Blood, 50 Souls and 1350 Ink. Magehunter spends a
+quarter of all four, rounding its fractional costs up to 13 Souls and 338 Ink.
+
+Bone Reptile upgrades Dark Metal; Pharaoh combines Mothic Witch and Bishop; Cursium upgrades
+Nightmare Mantle; Cursium Mage upgrades Crystal Arachnid; Nautilus Knight combines Creaking
+and Crystal Arachnid. Dual-parent recipes support either core and place the other parent's
+matching piece first on the pedestals. Single-parent skull recipes use Kobolediator Skull,
+and the two Cursium sets use Black Steel Ingots for their metal secondaries. Bloom Stone
+retains its smithing recipes with Creaking pieces as the base. Cursium's template is removed;
+the three remaining book/staff recipes use a Cursium Ingot in its place. The separate
+Cursium Mage Elytra fusion stays available after making the chestplate.
+
+Silver Scraps craft from seven Large Silver Slates and two Dark Metal Armor Plates in
+`DSS / SSS / SSD`; their additional Illager loot table no longer drops them. Astral Weave
+uses two Arcane Cloth as its primary, followed by two Soulwoven Silk, six Arctic Fur and
+twelve Phantom Membranes, retaining its spirit costs and one-item output.
 
 Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
 Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.

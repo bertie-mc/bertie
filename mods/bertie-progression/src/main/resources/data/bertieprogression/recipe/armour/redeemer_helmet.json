@@ -1,0 +1,70 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "born_in_chaos_v1"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "fantasy_armor"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "minecraft:diamond_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "malum:refined_brilliance",
+      "count": 12
+    },
+    {
+      "item": "born_in_chaos_v1:dark_metal_ingot",
+      "count": 2
+    },
+    {
+      "item": "l2complements:totemic_gold_ingot",
+      "count": 2
+    },
+    {
+      "item": "minecraft:echo_shard",
+      "count": 2
+    },
+    {
+      "item": "berlordscarving:quartz_big_slate",
+      "count": 1
+    },
+    {
+      "item": "berlordscarving:golden_big_slate",
+      "count": 1
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:wicked",
+      "count": 24
+    },
+    {
+      "type": "malum:sacred",
+      "count": 32
+    }
+  ],
+  "result": {
+    "id": "fantasy_armor:redeemer_helmet",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

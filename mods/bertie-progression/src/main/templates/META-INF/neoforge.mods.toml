@@ -334,6 +334,21 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
+# Armour and smithing recipe overrides.
+[[dependencies.${mod_id}]]
+modId="cataclysm_spellbooks"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="armorcompletions"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Apotheosis rolls affixed gear and dresses its bosses from its own data, so removed armour
 # has to be taken out of those lists too.
 [[dependencies.${mod_id}]]

@@ -20,7 +20,11 @@
         "leggings": "hazennstuff:spectral_spelunker_leggings",
         "boots": "hazennstuff:spectral_spelunker_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:arcane_infused_iron_ingot",
+        "elemental_metals:healing_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "hazel",
@@ -36,7 +40,11 @@
         "leggings": "hazennstuff:hazel_leggings",
         "boots": "hazennstuff:hazel_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:lightning_infused_iron_ingot",
+        "elemental_metals:soul_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "bishop",
@@ -52,7 +60,11 @@
         "leggings": "armorcompletions:bishop_leggings",
         "boots": "armorcompletions:bishop_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:arcane_infused_iron_ingot",
+        "elemental_metals:healing_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "mycelium_guardian",
@@ -68,7 +80,11 @@
         "leggings": "hazennstuff:mycelium_guardian_leggings",
         "boots": "hazennstuff:mycelium_guardian_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:frost_infused_iron_ingot",
+        "elemental_metals:healing_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "nameless_one",
@@ -84,7 +100,11 @@
         "leggings": "hazennstuff:nameless_one_leggings",
         "boots": "armorcompletions:nameless_one_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:fire_infused_iron_ingot",
+        "elemental_metals:frost_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "pyromancer_brute",
@@ -100,7 +120,11 @@
         "leggings": "armorcompletions:pyromancer_brute_leggings",
         "boots": "armorcompletions:pyromancer_brute_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:fire_infused_iron_ingot",
+        "elemental_metals:soul_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "shadowwalker_enderman",
@@ -116,11 +140,14 @@
         "leggings": "hazennstuff:shadowwalker_enderman_leggings",
         "boots": "hazennstuff:shadowwalker_enderman_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:frost_infused_iron_ingot",
+        "elemental_metals:soul_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "necromancer",
-      "pending": true,
       "parents": [
         {
           "prefix": "irons_spellbooks:cultist",
@@ -133,7 +160,11 @@
         "leggings": "hazennstuff:necromancer_leggings",
         "boots": "armorcompletions:necromancer_boots"
       },
-      "placeholder": "minecraft:stick"
+      "infused_pair": [
+        "elemental_metals:frost_infused_iron_ingot",
+        "elemental_metals:lightning_infused_iron_ingot"
+      ],
+      "first_item": "curseofpandora:evil_spine"
     },
     {
       "id": "mothic_witch",
@@ -152,7 +183,11 @@
         "chestplate": "hazennstuff:mothic_witch_chestplate",
         "leggings": "hazennstuff:mothic_witch_leggings",
         "boots": "hazennstuff:mothic_witch_boots"
-      }
+      },
+      "infused_pair": [
+        "elemental_metals:healing_infused_iron_ingot",
+        "elemental_metals:lightning_infused_iron_ingot"
+      ]
     },
     {
       "id": "atlas",
@@ -171,7 +206,11 @@
         "chestplate": "hazennstuff:atlas_chestplate",
         "leggings": "hazennstuff:atlas_leggings",
         "boots": "hazennstuff:atlas_boots"
-      }
+      },
+      "infused_pair": [
+        "elemental_metals:fire_infused_iron_ingot",
+        "elemental_metals:healing_infused_iron_ingot"
+      ]
     }
   ],
   "soulhunter": {
@@ -243,10 +282,80 @@
     "data/born_in_chaos_v1/recipe/nightmare_mask_k.json",
     "data/born_in_chaos_v1/recipe/nightmare_pantsk.json",
     "data/born_in_chaos_v1/recipe/nightmare_robe_k.json",
+    "data/cataclysm/recipe/bone_reptile_chestplate.json",
+    "data/cataclysm/recipe/bone_reptile_helmet.json",
+    "data/cataclysm/recipe/smithing/cursium_boots.json",
+    "data/cataclysm/recipe/smithing/cursium_chestplate.json",
+    "data/cataclysm/recipe/smithing/cursium_helmet.json",
+    "data/cataclysm/recipe/smithing/cursium_leggings.json",
+    "data/cataclysm_spellbooks/recipe/engineer_boots_crafting.json",
+    "data/cataclysm_spellbooks/recipe/engineer_hood_crafting.json",
+    "data/cataclysm_spellbooks/recipe/engineer_leggings_crafting.json",
+    "data/cataclysm_spellbooks/recipe/engineer_suit_crafting.json",
+    "data/cataclysm_spellbooks/recipe/pharaoh_chestplate.json",
+    "data/cataclysm_spellbooks/recipe/pharaoh_greaves.json",
+    "data/cataclysm_spellbooks/recipe/pharaoh_helmet.json",
+    "data/cataclysm_spellbooks/recipe/pharaoh_leggings.json",
+    "data/cataclysm_spellbooks/recipe/smithing/cursium_mage_boots_upgrade.json",
+    "data/cataclysm_spellbooks/recipe/smithing/cursium_mage_chestplate_upgrade.json",
+    "data/cataclysm_spellbooks/recipe/smithing/cursium_mage_circlet_upgrade.json",
+    "data/cataclysm_spellbooks/recipe/smithing/cursium_mage_skirt_upgrade.json",
+    "data/cataclysm_spellbooks/recipe/smithing/engineer_boots_smithing.json",
+    "data/cataclysm_spellbooks/recipe/smithing/engineer_hood_smithing.json",
+    "data/cataclysm_spellbooks/recipe/smithing/engineer_leggings_smithing.json",
+    "data/cataclysm_spellbooks/recipe/smithing/engineer_suit_smithing.json",
+    "data/fantasy_armor/recipe/eclipse_soldier_boots.json",
+    "data/fantasy_armor/recipe/eclipse_soldier_chestplate.json",
+    "data/fantasy_armor/recipe/eclipse_soldier_helmet.json",
+    "data/fantasy_armor/recipe/eclipse_soldier_leggings.json",
+    "data/fantasy_armor/recipe/fog_guard_boots.json",
+    "data/fantasy_armor/recipe/fog_guard_chestplate.json",
+    "data/fantasy_armor/recipe/fog_guard_helmet.json",
+    "data/fantasy_armor/recipe/fog_guard_leggings.json",
+    "data/fantasy_armor/recipe/forgotten_trace_boots.json",
+    "data/fantasy_armor/recipe/forgotten_trace_chestplate.json",
+    "data/fantasy_armor/recipe/forgotten_trace_helmet.json",
+    "data/fantasy_armor/recipe/forgotten_trace_leggings.json",
+    "data/fantasy_armor/recipe/old_knight_boots.json",
+    "data/fantasy_armor/recipe/old_knight_chestplate.json",
+    "data/fantasy_armor/recipe/old_knight_helmet.json",
+    "data/fantasy_armor/recipe/old_knight_leggings.json",
+    "data/fantasy_armor/recipe/redeemer_boots.json",
+    "data/fantasy_armor/recipe/redeemer_chestplate.json",
+    "data/fantasy_armor/recipe/redeemer_helmet.json",
+    "data/fantasy_armor/recipe/redeemer_leggings.json",
+    "data/fantasy_armor/recipe/thief_boots.json",
+    "data/fantasy_armor/recipe/thief_chestplate.json",
+    "data/fantasy_armor/recipe/thief_helmet.json",
+    "data/fantasy_armor/recipe/thief_leggings.json",
+    "data/fantasy_armor/recipe/wind_worshipper_boots.json",
+    "data/fantasy_armor/recipe/wind_worshipper_chestplate.json",
+    "data/fantasy_armor/recipe/wind_worshipper_helmet.json",
+    "data/fantasy_armor/recipe/wind_worshipper_leggings.json",
+    "data/hazennstuff/recipe/crafting/armor/alchemist_supreme/alchemist_supreme_boots.json",
+    "data/hazennstuff/recipe/crafting/armor/alchemist_supreme/alchemist_supreme_chestplate.json",
+    "data/hazennstuff/recipe/crafting/armor/alchemist_supreme/alchemist_supreme_helmet.json",
+    "data/hazennstuff/recipe/crafting/armor/alchemist_supreme/alchemist_supreme_leggings.json",
+    "data/hazennstuff/recipe/crafting/armor/creaking_sorcerer/creaking_sorcerer_boots.json",
+    "data/hazennstuff/recipe/crafting/armor/creaking_sorcerer/creaking_sorcerer_chestplate.json",
+    "data/hazennstuff/recipe/crafting/armor/creaking_sorcerer/creaking_sorcerer_helmet.json",
+    "data/hazennstuff/recipe/crafting/armor/creaking_sorcerer/creaking_sorcerer_leggings.json",
+    "data/hazennstuff/recipe/crafting/armor/frostbite_hunter/frostbite_hunter_boots.json",
+    "data/hazennstuff/recipe/crafting/armor/frostbite_hunter/frostbite_hunter_chestplate.json",
+    "data/hazennstuff/recipe/crafting/armor/frostbite_hunter/frostbite_hunter_helmet.json",
+    "data/hazennstuff/recipe/crafting/armor/frostbite_hunter/frostbite_hunter_leggings.json",
     "data/hazennstuff/recipe/smithing/armor/hazel/hazel_boots.json",
     "data/hazennstuff/recipe/smithing/armor/hazel/hazel_chestplate.json",
     "data/hazennstuff/recipe/smithing/armor/hazel/hazel_helmet.json",
     "data/hazennstuff/recipe/smithing/armor/hazel/hazel_leggings.json",
+    "data/hazennstuff/recipe/smithing/armor/ice_spider/crystal_arachnic_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/ice_spider/crystal_arachnic_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/ice_spider/crystal_arachnic_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/ice_spider/crystal_arachnic_leggings.json",
+    "data/hazennstuff/recipe/smithing/armor/magehunter/magehunter_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/magehunter/magehunter_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/magehunter/magehunter_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/magehunter/magehunter_leggings.json",
     "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_boots.json",
     "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_chestplate.json",
     "data/hazennstuff/recipe/smithing/armor/mothic_witch/mothic_witch_helmet.json",
@@ -255,6 +364,10 @@
     "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_chestplate.json",
     "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_helmet.json",
     "data/hazennstuff/recipe/smithing/armor/mycelium_guardian/mycelium_guardian_leggings.json",
+    "data/hazennstuff/recipe/smithing/armor/nautilus_knight/nautilus_knight_boots.json",
+    "data/hazennstuff/recipe/smithing/armor/nautilus_knight/nautilus_knight_chestplate.json",
+    "data/hazennstuff/recipe/smithing/armor/nautilus_knight/nautilus_knight_helmet.json",
+    "data/hazennstuff/recipe/smithing/armor/nautilus_knight/nautilus_knight_leggings.json",
     "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_boots.json",
     "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_chestplate.json",
     "data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/atlas/atlas_helmet.json",
@@ -287,6 +400,848 @@
         "maxSpells": 1,
         "mustEquip": true,
         "spellWheel": true
+      }
+    },
+    "hazennstuff:crystal_arachnid_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:magehunter_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:nautilus_knight_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:alchemist_supreme_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:creaking_chestplate": {
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:frostbite_hunter_boots": {
+      "irons_spellbooks:affinity_data": {
+        "bonuses": {
+          "irons_spellbooks:frostbite": 1
+        }
+      }
+    },
+    "hazennstuff:frostbite_hunter_chestplate": {
+      "irons_spellbooks:affinity_data": {
+        "bonuses": {
+          "irons_spellbooks:frostbite": 1
+        }
+      },
+      "irons_spellbooks:spell_container": {
+        "data": [],
+        "maxSpells": 1,
+        "mustEquip": true,
+        "spellWheel": true
+      }
+    },
+    "hazennstuff:frostbite_hunter_helmet": {
+      "irons_spellbooks:affinity_data": {
+        "bonuses": {
+          "irons_spellbooks:frostbite": 1
+        }
+      }
+    },
+    "hazennstuff:frostbite_hunter_leggings": {
+      "irons_spellbooks:affinity_data": {
+        "bonuses": {
+          "irons_spellbooks:frostbite": 1
+        }
+      }
+    }
+  },
+  "fantasy_secondary": [
+    [
+      "malum:refined_brilliance",
+      12
+    ],
+    [
+      "born_in_chaos_v1:dark_metal_ingot",
+      2
+    ],
+    [
+      "l2complements:totemic_gold_ingot",
+      2
+    ],
+    [
+      "minecraft:echo_shard",
+      2
+    ]
+  ],
+  "fantasy_sets": [
+    {
+      "id": "old_knight",
+      "outputs": {
+        "helmet": "fantasy_armor:old_knight_helmet",
+        "chestplate": "fantasy_armor:old_knight_chestplate",
+        "leggings": "fantasy_armor:old_knight_leggings",
+        "boots": "fantasy_armor:old_knight_boots"
+      },
+      "slates": [
+        "berlordscarving:deep_alloy_big_slate",
+        "berlordscarving:iron_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:eldritch",
+          24
+        ],
+        [
+          "malum:earthen",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "forgotten_trace",
+      "outputs": {
+        "helmet": "fantasy_armor:forgotten_trace_helmet",
+        "chestplate": "fantasy_armor:forgotten_trace_chestplate",
+        "leggings": "fantasy_armor:forgotten_trace_leggings",
+        "boots": "fantasy_armor:forgotten_trace_boots"
+      },
+      "slates": [
+        "berlordscarving:golden_big_slate",
+        "berlordscarving:resin_brick_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:eldritch",
+          24
+        ],
+        [
+          "malum:aerial",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "eclipse_soldier",
+      "outputs": {
+        "helmet": "fantasy_armor:eclipse_soldier_helmet",
+        "chestplate": "fantasy_armor:eclipse_soldier_chestplate",
+        "leggings": "fantasy_armor:eclipse_soldier_leggings",
+        "boots": "fantasy_armor:eclipse_soldier_boots"
+      },
+      "slates": [
+        "berlordscarving:emerald_big_slate",
+        "berlordscarving:ironwood_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:wicked",
+          24
+        ],
+        [
+          "malum:infernal",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "fog_guard",
+      "outputs": {
+        "helmet": "fantasy_armor:fog_guard_helmet",
+        "chestplate": "fantasy_armor:fog_guard_chestplate",
+        "leggings": "fantasy_armor:fog_guard_leggings",
+        "boots": "fantasy_armor:fog_guard_boots"
+      },
+      "slates": [
+        "berlordscarving:deep_alloy_big_slate",
+        "berlordscarving:leather_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:aqueous",
+          24
+        ],
+        [
+          "malum:earthen",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "wind_worshipper",
+      "outputs": {
+        "helmet": "fantasy_armor:wind_worshipper_helmet",
+        "chestplate": "fantasy_armor:wind_worshipper_chestplate",
+        "leggings": "fantasy_armor:wind_worshipper_leggings",
+        "boots": "fantasy_armor:wind_worshipper_boots"
+      },
+      "slates": [
+        "berlordscarving:lapis_big_slate",
+        "berlordscarving:leather_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:sacred",
+          24
+        ],
+        [
+          "malum:aerial",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "redeemer",
+      "outputs": {
+        "helmet": "fantasy_armor:redeemer_helmet",
+        "chestplate": "fantasy_armor:redeemer_chestplate",
+        "leggings": "fantasy_armor:redeemer_leggings",
+        "boots": "fantasy_armor:redeemer_boots"
+      },
+      "slates": [
+        "berlordscarving:quartz_big_slate",
+        "berlordscarving:golden_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:wicked",
+          24
+        ],
+        [
+          "malum:sacred",
+          32
+        ]
+      ]
+    },
+    {
+      "id": "thief",
+      "outputs": {
+        "helmet": "fantasy_armor:thief_helmet",
+        "chestplate": "fantasy_armor:thief_chestplate",
+        "leggings": "fantasy_armor:thief_leggings",
+        "boots": "fantasy_armor:thief_boots"
+      },
+      "slates": [
+        "berlordscarving:leather_big_slate",
+        "berlordscarving:emerald_big_slate"
+      ],
+      "spirits": [
+        [
+          "malum:wicked",
+          24
+        ],
+        [
+          "malum:aerial",
+          32
+        ]
+      ]
+    }
+  ],
+  "tier2_capacity": {
+    "aureal": 3000,
+    "blood": 15000,
+    "souls": 50,
+    "experience": 1350
+  },
+  "tier2_sets": [
+    {
+      "id": "supreme_witch",
+      "parents": [
+        {
+          "prefix": "hazennstuff:mothic_witch"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:supreme_witch_helmet",
+        "chestplate": "hazennstuff:supreme_witch_chestplate",
+        "leggings": "hazennstuff:supreme_witch_leggings",
+        "boots": "hazennstuff:supreme_witch_boots"
+      },
+      "secondary": [
+        [
+          "endrem:witch_pupil",
+          2
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          1
+        ],
+        [
+          "irons_spellbooks:holy_rune",
+          1
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 1500,
+        "blood": 7500,
+        "souls": 0,
+        "experience": 0
+      }
+    },
+    {
+      "id": "alchemist_supreme",
+      "parents": [
+        {
+          "prefix": "hazennstuff:hazel"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:alchemist_supreme_helmet",
+        "chestplate": "hazennstuff:alchemist_supreme_chestplate",
+        "leggings": "hazennstuff:alchemist_supreme_leggings",
+        "boots": "hazennstuff:alchemist_supreme_boots"
+      },
+      "secondary": [
+        [
+          "malum:alchemical_calx",
+          2
+        ],
+        [
+          "irons_spellbooks:evocation_rune",
+          2
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 0,
+        "blood": 7500,
+        "souls": 0,
+        "experience": 675
+      }
+    },
+    {
+      "id": "creaking",
+      "parents": [
+        {
+          "prefix": "hazennstuff:mycelium_guardian"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:creaking_helmet",
+        "chestplate": "hazennstuff:creaking_chestplate",
+        "leggings": "hazennstuff:creaking_leggings",
+        "boots": "hazennstuff:creaking_boots"
+      },
+      "secondary": [
+        [
+          "berlordscarving:resin_brick_slate",
+          2
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          2
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 1500,
+        "blood": 0,
+        "souls": 25,
+        "experience": 0
+      }
+    },
+    {
+      "id": "crystal_arachnid",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:cryomancer"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:crystal_arachnid_helmet",
+        "chestplate": "hazennstuff:crystal_arachnid_chestplate",
+        "leggings": "hazennstuff:crystal_arachnid_leggings",
+        "boots": "hazennstuff:crystal_arachnid_boots"
+      },
+      "secondary": [
+        [
+          "irons_spellbooks:ice_venom_vial",
+          2
+        ],
+        [
+          "irons_spellbooks:ice_rune",
+          2
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 0,
+        "blood": 0,
+        "souls": 25,
+        "experience": 675
+      }
+    },
+    {
+      "id": "magehunter",
+      "parents": [
+        {
+          "pieces": {
+            "helmet": "malum:soul_hunter_cloak",
+            "chestplate": "malum:soul_hunter_robe",
+            "leggings": "malum:soul_hunter_leggings",
+            "boots": "malum:soul_hunter_boots"
+          }
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:magehunter_helmet",
+        "chestplate": "hazennstuff:magehunter_chestplate",
+        "leggings": "hazennstuff:magehunter_leggings",
+        "boots": "hazennstuff:magehunter_boots"
+      },
+      "secondary": [
+        [
+          "hazennstuff:silver_scraps",
+          2
+        ],
+        [
+          "hazennstuff:melee_rune",
+          1
+        ],
+        [
+          "hazennstuff:archery_rune",
+          1
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 750,
+        "blood": 3750,
+        "souls": 13,
+        "experience": 338
+      }
+    },
+    {
+      "id": "frostbite_hunter",
+      "parents": [
+        {
+          "prefix": "mythsandlegends:frosthowl"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:frostbite_hunter_helmet",
+        "chestplate": "hazennstuff:frostbite_hunter_chestplate",
+        "leggings": "hazennstuff:frostbite_hunter_leggings",
+        "boots": "hazennstuff:frostbite_hunter_boots"
+      },
+      "secondary": [
+        [
+          "minecraft:blue_ice",
+          2
+        ],
+        [
+          "irons_spellbooks:ice_rune",
+          1
+        ],
+        [
+          "hazennstuff:archery_rune",
+          1
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 0,
+        "blood": 7500,
+        "souls": 25,
+        "experience": 0
+      }
+    },
+    {
+      "id": "engineer",
+      "parents": [
+        {
+          "prefix": "irons_spellbooks:electromancer"
+        }
+      ],
+      "outputs": {
+        "helmet": "cataclysm_spellbooks:engineer_hood",
+        "chestplate": "cataclysm_spellbooks:engineer_suit",
+        "leggings": "cataclysm_spellbooks:engineer_leggings",
+        "boots": "cataclysm_spellbooks:engineer_boots"
+      },
+      "secondary": [
+        [
+          "rustic_engineer:engine",
+          2
+        ],
+        [
+          "cataclysm_spellbooks:technomancy_rune",
+          2
+        ],
+        [
+          "malum:astral_weave",
+          4
+        ]
+      ],
+      "costs": {
+        "aureal": 1500,
+        "blood": 0,
+        "souls": 0,
+        "experience": 675
+      }
+    },
+    {
+      "id": "bone_reptile",
+      "parents": [
+        {
+          "prefix": "born_in_chaos_v1:dark_metal_armor"
+        }
+      ],
+      "outputs": {
+        "helmet": "cataclysm:bone_reptile_helmet",
+        "chestplate": "cataclysm:bone_reptile_chestplate",
+        "leggings": "armorcompletions:bone_reptile_leggings",
+        "boots": "armorcompletions:bone_reptile_boots"
+      },
+      "secondary": [
+        [
+          "cataclysm:ancient_metal_ingot",
+          1
+        ],
+        [
+          "cataclysm:koboleton_bone",
+          5
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          1
+        ],
+        [
+          "berlordscarving:ancient_metal_big_slate",
+          1
+        ]
+      ],
+      "helmet_first": "cataclysm:kobolediator_skull",
+      "costs": {
+        "aureal": 1000,
+        "blood": 10000,
+        "souls": 30,
+        "experience": 0
+      }
+    },
+    {
+      "id": "pharaoh",
+      "parents": [
+        {
+          "prefix": "hazennstuff:mothic_witch"
+        },
+        {
+          "pieces": {
+            "helmet": "hazennstuff:bishop_of_deceit_helmet",
+            "chestplate": "hazennstuff:bishop_of_deceit_chestplate",
+            "leggings": "armorcompletions:bishop_leggings",
+            "boots": "armorcompletions:bishop_boots"
+          }
+        }
+      ],
+      "outputs": {
+        "helmet": "cataclysm_spellbooks:pharaoh_helmet",
+        "chestplate": "cataclysm_spellbooks:pharaoh_chestplate",
+        "leggings": "cataclysm_spellbooks:pharaoh_leggings",
+        "boots": "cataclysm_spellbooks:pharaoh_greaves"
+      },
+      "secondary": [
+        [
+          "cataclysm:ancient_metal_ingot",
+          1
+        ],
+        [
+          "cataclysm:koboleton_bone",
+          3
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          3
+        ],
+        [
+          "berlordscarving:ancient_metal_slate",
+          1
+        ]
+      ],
+      "helmet_first": "cataclysm:kobolediator_skull",
+      "costs": {
+        "aureal": 1500,
+        "blood": 0,
+        "souls": 15,
+        "experience": 1350
+      }
+    },
+    {
+      "id": "cursium",
+      "parents": [
+        {
+          "prefix": "born_in_chaos_v1:nightmare_mantleofthe_night"
+        }
+      ],
+      "outputs": {
+        "helmet": "cataclysm:cursium_helmet",
+        "chestplate": "cataclysm:cursium_chestplate",
+        "leggings": "cataclysm:cursium_leggings",
+        "boots": "cataclysm:cursium_boots"
+      },
+      "secondary": [
+        [
+          "cataclysm:cursium_ingot",
+          1
+        ],
+        [
+          "cataclysm:black_steel_ingot",
+          5
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          1
+        ],
+        [
+          "berlordscarving:cursium_big_slate",
+          1
+        ]
+      ],
+      "helmet_first": "cataclysm:kobolediator_skull",
+      "costs": {
+        "aureal": 1000,
+        "blood": 10000,
+        "souls": 30,
+        "experience": 0
+      }
+    },
+    {
+      "id": "cursium_mage",
+      "parents": [
+        {
+          "prefix": "hazennstuff:crystal_arachnid"
+        }
+      ],
+      "outputs": {
+        "helmet": "cataclysm_spellbooks:cursium_mage_circlet",
+        "chestplate": "cataclysm_spellbooks:cursium_mage_chestplate",
+        "leggings": "cataclysm_spellbooks:cursium_mage_skirt",
+        "boots": "cataclysm_spellbooks:cursium_mage_boots"
+      },
+      "secondary": [
+        [
+          "cataclysm:cursium_ingot",
+          1
+        ],
+        [
+          "cataclysm:black_steel_ingot",
+          3
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          3
+        ],
+        [
+          "berlordscarving:cursium_slate",
+          1
+        ]
+      ],
+      "helmet_first": "cataclysm:kobolediator_skull",
+      "costs": {
+        "aureal": 1500,
+        "blood": 0,
+        "souls": 15,
+        "experience": 1350
+      }
+    },
+    {
+      "id": "nautilus_knight",
+      "parents": [
+        {
+          "prefix": "hazennstuff:creaking"
+        },
+        {
+          "prefix": "hazennstuff:crystal_arachnid"
+        }
+      ],
+      "outputs": {
+        "helmet": "hazennstuff:nautilus_knight_helmet",
+        "chestplate": "hazennstuff:nautilus_knight_chestplate",
+        "leggings": "hazennstuff:nautilus_knight_leggings",
+        "boots": "hazennstuff:nautilus_knight_boots"
+      },
+      "secondary": [
+        [
+          "minecraft:stick",
+          1
+        ],
+        [
+          "crabbersdelight:nautilus_shell_block",
+          1
+        ],
+        [
+          "irons_spellbooks:ice_rune",
+          1
+        ],
+        [
+          "irons_spellbooks:nature_rune",
+          1
+        ],
+        [
+          "minecraft:coast_armor_trim_smithing_template",
+          1
+        ],
+        [
+          "minecraft:tide_armor_trim_smithing_template",
+          1
+        ],
+        [
+          "cataclysm:coral_chunk",
+          2
+        ]
+      ],
+      "costs": {
+        "aureal": 770,
+        "blood": 0,
+        "souls": 40,
+        "experience": 1200
+      }
+    }
+  ],
+  "recipe_overrides": {
+    "data/cataclysm_spellbooks/recipe/smithing/bloom_stone_chestplate_upgrade.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:amethyst_crab_shell"
+      },
+      "base": {
+        "item": "hazennstuff:creaking_chestplate"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:bloom_stone_chestplate"
+      },
+      "template": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/bloom_stone_greaves_upgrade.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:amethyst_crab_shell"
+      },
+      "base": {
+        "item": "hazennstuff:creaking_boots"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:bloom_stone_greaves"
+      },
+      "template": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/bloom_stone_hat_upgrade.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:amethyst_crab_shell"
+      },
+      "base": {
+        "item": "hazennstuff:creaking_helmet"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:bloom_stone_hat"
+      },
+      "template": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/bloom_stone_skirt_upgrade.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:amethyst_crab_shell"
+      },
+      "base": {
+        "item": "hazennstuff:creaking_leggings"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:bloom_stone_skirt"
+      },
+      "template": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/codex_of_malice_upgrade.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "irons_spellbooks:ice_spell_book"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:codex_of_malice_spell_book"
+      },
+      "template": {
+        "item": "cataclysm:cursium_ingot"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/soul_brazier.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "irons_spellbooks:brazier_soul"
+      },
+      "base": {
+        "item": "irons_spellbooks:ice_staff"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:soul_brazier"
+      },
+      "template": {
+        "item": "cataclysm:cursium_ingot"
+      }
+    },
+    "data/cataclysm_spellbooks/recipe/smithing/spirit_sunderer.json": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "irons_spellbooks:ice_staff"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:spirit_sunderer"
+      },
+      "template": {
+        "item": "cataclysm:cursium_ingot"
       }
     }
   }

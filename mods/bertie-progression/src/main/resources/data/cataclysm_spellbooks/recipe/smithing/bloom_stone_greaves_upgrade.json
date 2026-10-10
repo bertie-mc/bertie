@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cataclysm:amethyst_crab_shell"
+  },
+  "base": {
+    "item": "hazennstuff:creaking_boots"
+  },
+  "result": {
+    "id": "cataclysm_spellbooks:bloom_stone_greaves"
+  },
+  "template": {
+    "item": "irons_spellbooks:nature_rune"
+  }
+}

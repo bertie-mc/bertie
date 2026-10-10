@@ -1,0 +1,39 @@
+{
+  "essences": {
+    "aureal": 1500,
+    "blood": 0,
+    "souls": 25
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "berlordscarving:resin_brick_slate"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "hazennstuff:mycelium_guardian_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:creaking_leggings",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

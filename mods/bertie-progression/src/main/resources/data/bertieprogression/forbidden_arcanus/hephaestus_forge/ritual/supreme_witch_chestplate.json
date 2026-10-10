@@ -1,0 +1,45 @@
+{
+  "essences": {
+    "aureal": 1500,
+    "blood": 7500,
+    "souls": 0
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "endrem:witch_pupil"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "irons_spellbooks:holy_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "hazennstuff:mothic_witch_chestplate"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:supreme_witch_chestplate",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

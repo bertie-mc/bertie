@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 750,
+    "blood": 3750,
+    "souls": 13,
+    "experience": 338
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "hazennstuff:silver_scraps"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "hazennstuff:melee_rune"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "hazennstuff:archery_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "malum:soul_hunter_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:magehunter_leggings",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

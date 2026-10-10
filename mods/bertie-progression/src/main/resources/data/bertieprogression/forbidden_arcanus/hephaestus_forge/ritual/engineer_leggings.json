@@ -1,0 +1,40 @@
+{
+  "essences": {
+    "aureal": 1500,
+    "blood": 0,
+    "souls": 0,
+    "experience": 675
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "rustic_engineer:engine"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "cataclysm_spellbooks:technomancy_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "irons_spellbooks:electromancer_leggings"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm_spellbooks:engineer_leggings",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

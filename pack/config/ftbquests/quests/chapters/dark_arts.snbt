@@ -389,42 +389,6 @@
 			y: -6.0d
 		}
 		{
-			icon: { count: 1 id: "minecraft:string" }
-			id: "1C00000000001000"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001000"
-				item: { count: 1 id: "minecraft:string" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "farmersdelight:straw" }
-			id: "1C00000000001001"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001001"
-				item: { count: 1 id: "farmersdelight:straw" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "anvilcraft:wood_fiber" }
-			id: "1C00000000001003"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001003"
-				item: { count: 1 id: "anvilcraft:wood_fiber" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 8.0d
-		}
-		{
 			icon: { count: 1 id: "betterend:silk_fiber" }
 			id: "1C00000000001004"
 			tasks: [{
@@ -447,42 +411,6 @@
 			}]
 			x: 0.0d
 			y: 12.5d
-		}
-		{
-			icon: { count: 1 id: "farmersdelight:rope" }
-			id: "1C00000000001008"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001008"
-				item: { count: 1 id: "farmersdelight:rope" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "quark:rope" }
-			id: "1C00000000001009"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001009"
-				item: { count: 1 id: "quark:rope" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 8.0d
-		}
-		{
-			icon: { count: 1 id: "farmersdelight:canvas" }
-			id: "1C0000000000100F"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100100F"
-				item: { count: 1 id: "farmersdelight:canvas" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "irons_spellbooks:mithril_weave" }
@@ -545,18 +473,6 @@
 			y: 9.5d
 		}
 		{
-			icon: { count: 1 id: "malum:astral_weave" }
-			id: "1C00000000001018"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001018"
-				item: { count: 1 id: "malum:astral_weave" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 9.5d
-		}
-		{
 			icon: { count: 1 id: "malum:ancient_weave" }
 			id: "1C00000000001019"
 			tasks: [{
@@ -603,18 +519,6 @@
 			}]
 			x: 6.0d
 			y: 12.5d
-		}
-		{
-			icon: { count: 1 id: "pastel:enchantment_canvas" }
-			id: "1C0000000000101E"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100101E"
-				item: { count: 1 id: "pastel:enchantment_canvas" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "minecraft:leather" }
@@ -1077,15 +981,40 @@
 			y: 14.0d
 		}
 		{
-			icon: { count: 1 id: "minecraft:white_wool" }
-			id: "1C00000000001052"
+			icon: { count: 1 id: "born_in_chaos_v1:armor_plate_from_dark_metal" }
+			id: "1C00000000001053"
 			tasks: [{
 				count: 1L
-				id: "1C00000001001052"
-				item: { count: 1 id: "minecraft:white_wool" }
+				id: "1C00000001001053"
+				item: { count: 1 id: "born_in_chaos_v1:armor_plate_from_dark_metal" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C00000000001053"]
+			icon: { count: 1 id: "hazennstuff:silver_scraps" }
+			id: "1C00000000001054"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001054"
+				item: { count: 1 id: "hazennstuff:silver_scraps" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			icon: { count: 1 id: "magitech:alchaefabric" }
+			id: "1C00000000001055"
+			tasks: [{
+				count: 1L
+				id: "1C00000001001055"
+				item: { count: 1 id: "magitech:alchaefabric" }
+				type: "item"
+			}]
+			x: 12.0d
 			y: 8.0d
 		}
 	]

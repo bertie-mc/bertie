@@ -59,7 +59,8 @@ public enum CarvingMaterial {
     LIGHTNING_DRAGONSTEEL("lightning_dragonsteel", "iceandfire"),
     STRADDLITE("straddlite", "alexsmobs"),
     NEPTUNIUM("neptunium", "aquaculture"),
-    ARCANE("arcane", "irons_spellbooks");
+    ARCANE("arcane", "irons_spellbooks"),
+    SILVER("silver", "anvilcraft");
 
     public final String id;
     /** Slag material_type id (without the slag: namespace), or null if there's no Slag equivalent. */

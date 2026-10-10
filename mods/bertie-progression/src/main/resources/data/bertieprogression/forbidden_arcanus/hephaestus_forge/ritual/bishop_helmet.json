@@ -9,7 +9,7 @@
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:stick"
+        "item": "curseofpandora:evil_spine"
       }
     },
     {
@@ -27,13 +27,13 @@
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:book"
+        "item": "elemental_metals:arcane_infused_iron_ingot"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:torch"
+        "item": "elemental_metals:healing_infused_iron_ingot"
       }
     }
   ],

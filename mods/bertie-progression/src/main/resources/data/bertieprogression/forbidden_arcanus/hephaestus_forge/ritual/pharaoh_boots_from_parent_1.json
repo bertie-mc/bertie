@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 1500,
+    "blood": 0,
+    "souls": 15,
+    "experience": 1350
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "armorcompletions:bishop_boots"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "cataclysm:koboleton_bone"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "berlordscarving:ancient_metal_slate"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "hazennstuff:mothic_witch_boots"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm_spellbooks:pharaoh_greaves",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

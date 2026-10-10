@@ -2016,22 +2016,10 @@
 	quest.7B0000000000030A.title: "Tier 8"
 	quest.7B0000000000030B.title: "Tier 9"
 	quest.7B0000000000030C.title: "Tier 10"
-	quest.1C00000000001000.title: "String"
-	quest.1C00000000001000.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001001.title: "Straw"
-	quest.1C00000000001001.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001003.title: "Wood Fiber"
-	quest.1C00000000001003.quest_desc: ["String, fibers, thread and rope"]
 	quest.1C00000000001004.title: "Silk Fiber"
 	quest.1C00000000001004.quest_desc: ["Membranes and webs"]
 	quest.1C00000000001006.title: "Esoteric Spool"
 	quest.1C00000000001006.quest_desc: ["Spool weaves"]
-	quest.1C00000000001008.title: "Rope"
-	quest.1C00000000001008.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C00000000001009.title: "Rope Coil"
-	quest.1C00000000001009.quest_desc: ["String, fibers, thread and rope"]
-	quest.1C0000000000100F.title: "Canvas"
-	quest.1C0000000000100F.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001012.title: "Mithril Weave"
 	quest.1C00000000001012.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001013.title: "Corrupted Cloth"
@@ -2042,8 +2030,6 @@
 	quest.1C00000000001015.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001016.title: "Aegis Weave"
 	quest.1C00000000001016.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001018.title: "Astral Weave"
-	quest.1C00000000001018.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001019.title: "Ancient Weave"
 	quest.1C00000000001019.quest_desc: ["Spool weaves"]
 	quest.1C0000000000101A.title: "Cornered Weave"
@@ -2052,8 +2038,6 @@
 	quest.1C0000000000101B.quest_desc: ["Spool weaves"]
 	quest.1C0000000000101C.title: "Mechanical Weave V2"
 	quest.1C0000000000101C.quest_desc: ["Spool weaves"]
-	quest.1C0000000000101E.title: "Enchantment Canvas"
-	quest.1C0000000000101E.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000001020.title: "Leather"
 	quest.1C00000000001020.quest_desc: ["Leather processing"]
 	quest.1C00000000001021.title: "Rabbit Hide"
@@ -2130,6 +2114,11 @@
 	quest.1C0000000000104E.quest_desc: ["Membranes and webs"]
 	quest.1C0000000000104F.title: "Prismatic Cobweb"
 	quest.1C0000000000104F.quest_desc: ["Membranes and webs"]
-	quest.1C00000000001052.title: "White Wool"
-	quest.1C00000000001052.quest_desc: ["String, fibers, thread and rope"]
+	quest.1C00000000001053.title: "Dark Metal Armor Plate"
+	quest.1C00000000001053.quest_desc: ["Forge materials"]
+	quest.1C00000000001054.title: "Silver Scraps"
+	quest.1C00000000001054.quest_desc: ["Forge materials"]
+	quest.1C00000000001055.title: "Alchaefabric"
+	quest.1C00000000001055.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000000047.quest_desc: ["Spirit-infuse 2 Arcane Cloth with 2 Soulwoven Silk, 6 Arctic Fur and 12 Phantom Membranes, paid in Sacred, Aerial and Arcane spirits."]
 }

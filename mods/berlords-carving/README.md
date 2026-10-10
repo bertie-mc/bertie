@@ -14,7 +14,8 @@ slates register only when its source mod is installed. Existing network indices 
 when materials are appended.
 
 The slate-only selection includes ironwood, steeleaf, naga scale, knightmetal, fiery metal,
-eezo, fire/ice/lightning dragonsteel, straddlite, neptunium and arcane ingot. Their item IDs
+eezo, fire/ice/lightning dragonsteel, straddlite, neptunium, arcane ingot and silver. Silver
+uses AnvilCraft's ingot and the approved small/large sprite pair. Their item IDs
 use the `berlordscarving` namespace with `_slate` and `_big_slate` suffixes. Source items,
 display names and generated recipes are defined in `texture-work/make_assets.py`.
 

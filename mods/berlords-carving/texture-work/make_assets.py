@@ -67,6 +67,7 @@ SLATE_ONLY = {
     "straddlite":       ("alexsmobs:straddlite",          "alexsmobs",      "Straddlite"),
     "neptunium":        ("aquaculture:neptunium_ingot",   "aquaculture",    "Neptunium"),
     "arcane":           ("irons_spellbooks:arcane_ingot", "irons_spellbooks", "Arcane"),
+    "silver":           ("anvilcraft:silver_ingot",       "anvilcraft",     "Silver"),
 }
 for _id, (_src, _mod, _disp) in SLATE_ONLY.items():
     MATERIALS[_id] = (None, 2, None, None, False, _disp)

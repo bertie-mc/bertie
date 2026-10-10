@@ -1,0 +1,48 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 0,
+    "souls": 25,
+    "experience": 675
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:ice_venom_vial"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:ice_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "irons_spellbooks:cryomancer_chestplate"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:crystal_arachnid_chestplate",
+      "count": 1,
+      "components": {
+        "irons_spellbooks:spell_container": {
+          "data": [],
+          "maxSpells": 1,
+          "mustEquip": true,
+          "spellWheel": true
+        }
+      }
+    }
+  },
+  "forge_tier": 2
+}

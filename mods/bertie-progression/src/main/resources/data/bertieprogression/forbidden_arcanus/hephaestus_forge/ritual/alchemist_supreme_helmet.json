@@ -1,0 +1,40 @@
+{
+  "essences": {
+    "aureal": 0,
+    "blood": 7500,
+    "souls": 0,
+    "experience": 675
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "malum:alchemical_calx"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:evocation_rune"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "hazennstuff:hazel_helmet"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "hazennstuff:alchemist_supreme_helmet",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

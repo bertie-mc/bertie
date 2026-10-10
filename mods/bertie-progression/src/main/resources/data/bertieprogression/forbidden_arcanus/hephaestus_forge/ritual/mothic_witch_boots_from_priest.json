@@ -33,13 +33,13 @@
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:book"
+        "item": "elemental_metals:healing_infused_iron_ingot"
       }
     },
     {
       "amount": 1,
       "ingredient": {
-        "item": "minecraft:torch"
+        "item": "elemental_metals:lightning_infused_iron_ingot"
       }
     }
   ],

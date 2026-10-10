@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     { "id": "alexsmobs:straddlite", "required": false },
+    { "id": "anvilcraft:silver_ingot", "required": false },
     { "id": "aquaculture:neptunium_ingot", "required": false },
     { "id": "bertieprogression:eezo_ingot", "required": false },
     { "id": "cataclysm:ancient_metal_ingot", "required": false },

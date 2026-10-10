@@ -7,12 +7,16 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
     }
   ],
   "type": "malum:spirit_infusion",
   "input": {
     "item": "irons_spellbooks:magic_cloth",
-    "count": 1
+    "count": 2
   },
   "extraInputs": [
     {
@@ -20,12 +24,12 @@
       "count": 2
     },
     {
-      "item": "minecraft:phantom_membrane",
-      "count": 3
+      "item": "twilightforest:arctic_fur",
+      "count": 6
     },
     {
-      "item": "minecraft:string",
-      "count": 8
+      "item": "minecraft:phantom_membrane",
+      "count": 12
     }
   ],
   "spirits": [

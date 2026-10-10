@@ -2700,9 +2700,9 @@ write("data/malum/recipe/spirit_infusion/arcane_varnished_terracotta.json",
 
 # Astral Weave gains a Spirit Altar route; Malum's phantom/ghast reaping data remains available.
 write(f"{R}/malum/astral_weave.json",
-      infusion("irons_spellbooks:magic_cloth", 1,
-               [("malum:soulwoven_silk", 2), ("minecraft:phantom_membrane", 3),
-                ("minecraft:string", 8)],
+      infusion("irons_spellbooks:magic_cloth", 2,
+               [("malum:soulwoven_silk", 2), ("twilightforest:arctic_fur", 6),
+                ("minecraft:phantom_membrane", 12)],
                [SP("sacred", 8), SP("aerial", 12), SP("arcane", 16)],
                "malum:astral_weave", 1))
 
@@ -3669,9 +3669,9 @@ for _slot, _output in _armour["soulhunter"]["outputs"].items():
     _recipe["carryOverComponentData"] = True
     write(f"data/malum/recipe/spirit_infusion/{_output.split(':')[1]}.json", _recipe)
 
-def _armour_ritual(_primary, _secondary, _output, _costs):
+def _armour_ritual(_primary, _secondary, _output, _costs, tier=1):
     _essences = {k: _costs[k] for k in ("aureal", "blood", "souls")}
-    _recipe = ritual(_primary, _secondary, _output, tier=1,
+    _recipe = ritual(_primary, _secondary, _output, tier=tier,
                      essences=_essences, xp=_costs["experience"])
     if _output in _armour["output_components"]:
         _recipe["result"]["result_item"]["components"] = _armour["output_components"][_output]
@@ -3693,7 +3693,7 @@ for _set in _armour["mage_sets"]:
     for _slot, _output in _set["outputs"].items():
         for _index, _parent in enumerate(_parents):
             if len(_parents) == 1:
-                _secondary = [(_set["placeholder"], 1), (_parent["rune"], 2)]
+                _secondary = [(_set["first_item"], 1), (_parent["rune"], 2)]
                 _suffix = ""
             else:
                 _other = _parents[1 - _index]
@@ -3701,9 +3701,42 @@ for _set in _armour["mage_sets"]:
                               (_parent["rune"], 1), (_other["rune"], 1)]
                 _suffix = f"_from_{_parent['prefix'].split(':')[1]}"
             _secondary += [("irons_spellbooks:magic_cloth", 3),
-                           ("minecraft:book", 1), ("minecraft:torch", 1)]
+                           *[(_ingot, 1) for _ingot in _set["infused_pair"]]]
             write(f"{RIT}/{_set['id']}_{_slot}{_suffix}.json", _armour_ritual(
                 f"{_parent['prefix']}_{_slot}", _secondary, _output, _armour["mage_costs"]))
+
+for _set in _armour["fantasy_sets"]:
+    for _slot, _output in _set["outputs"].items():
+        _secondary = _armour["fantasy_secondary"] + [[_slate, 1] for _slate in _set["slates"]]
+        _recipe = infusion(f"minecraft:diamond_{_slot}", 1, _secondary, _set["spirits"], _output)
+        _recipe["carryOverComponentData"] = True
+        if _output in _armour["output_components"]:
+            _recipe["result"]["components"] = _armour["output_components"][_output]
+        write(f"{R}/armour/{_set['id']}_{_slot}.json", _recipe)
+
+def _parent_piece(_parent, _slot):
+    return _parent["pieces"][_slot] if "pieces" in _parent else f"{_parent['prefix']}_{_slot}"
+
+for _set in _armour["tier2_sets"]:
+    _parents = _set["parents"]
+    for _slot, _output in _set["outputs"].items():
+        for _index, _parent in enumerate(_parents):
+            _secondary = [tuple(_entry) for _entry in _set["secondary"]]
+            _suffix = ""
+            if len(_parents) == 2:
+                _secondary[0] = (_parent_piece(_parents[1 - _index], _slot), 1)
+                _suffix = f"_from_parent_{_index + 1}"
+            elif _slot == "helmet" and "helmet_first" in _set:
+                _secondary[0] = (_set["helmet_first"], 1)
+            write(f"{RIT}/{_set['id']}_{_slot}{_suffix}.json", _armour_ritual(
+                _parent_piece(_parent, _slot), _secondary, _output, _set["costs"], tier=2))
+
+for _path, _recipe in _armour["recipe_overrides"].items():
+    write(_path, _recipe)
+write(f"{R}/silver_scraps.json", shaped(["DSS", "SSS", "SSD"],
+      {"D": "born_in_chaos_v1:armor_plate_from_dark_metal", "S": "berlordscarving:silver_big_slate"},
+      "hazennstuff:silver_scraps"))
+write("data/hazennstuff/loot_table/entities/additional_loot/additional_illager_loot.json", {"pools": []})
 
 # ================================================================ RAVAGER HIDE
 write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",
