@@ -11,13 +11,13 @@
   ],
   "type": "slag:double_smelting",
   "ingredientA": {
-    "item": "create:raw_zinc"
+    "item": "magitech:raw_zinc"
   },
   "ingredientB": {
-    "item": "create:raw_zinc"
+    "item": "magitech:raw_zinc"
   },
   "result": {
-    "id": "create:zinc_ingot",
+    "id": "magitech:zinc_ingot",
     "count": 1
   },
   "experience": 0.5,

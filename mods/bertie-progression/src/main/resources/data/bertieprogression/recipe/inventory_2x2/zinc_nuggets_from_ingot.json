@@ -9,11 +9,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "create:zinc_ingot"
+      "item": "magitech:zinc_ingot"
     }
   ],
   "result": {
-    "id": "create:zinc_nugget",
+    "id": "anvilcraft:zinc_nugget",
     "count": 4
   }
 }

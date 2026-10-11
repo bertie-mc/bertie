@@ -486,10 +486,6 @@
       "required": false
     },
     {
-      "id": "terra_curio:berserkers_glove",
-      "required": false
-    },
-    {
       "id": "terra_curio:bezoar",
       "required": false
     },
@@ -522,10 +518,6 @@
       "required": false
     },
     {
-      "id": "terra_curio:celestial_shell",
-      "required": false
-    },
-    {
       "id": "terra_curio:celestial_starboard",
       "required": false
     },
@@ -547,18 +539,6 @@
     },
     {
       "id": "terra_curio:cobalt_shield",
-      "required": false
-    },
-    {
-      "id": "terra_curio:compass",
-      "required": false
-    },
-    {
-      "id": "terra_curio:copper_watch",
-      "required": false
-    },
-    {
-      "id": "terra_curio:depth_meter",
       "required": false
     },
     {
@@ -606,23 +586,7 @@
       "required": false
     },
     {
-      "id": "terra_curio:fire_gauntlet",
-      "required": false
-    },
-    {
-      "id": "terra_curio:fish_finder",
-      "required": false
-    },
-    {
-      "id": "terra_curio:fishermans_pocket_guide",
-      "required": false
-    },
-    {
       "id": "terra_curio:flashlight",
-      "required": false
-    },
-    {
-      "id": "terra_curio:flesh_knuckles",
       "required": false
     },
     {
@@ -654,14 +618,6 @@
       "required": false
     },
     {
-      "id": "terra_curio:gold_watch",
-      "required": false
-    },
-    {
-      "id": "terra_curio:gps",
-      "required": false
-    },
-    {
       "id": "terra_curio:gravity_globe",
       "required": false
     },
@@ -671,10 +627,6 @@
     },
     {
       "id": "terra_curio:hand_drill",
-      "required": false
-    },
-    {
-      "id": "terra_curio:hero_shield",
       "required": false
     },
     {
@@ -691,10 +643,6 @@
     },
     {
       "id": "terra_curio:honey_comb",
-      "required": false
-    },
-    {
-      "id": "terra_curio:life_form_analyzer",
       "required": false
     },
     {
@@ -722,10 +670,6 @@
       "required": false
     },
     {
-      "id": "terra_curio:mechanical_glove",
-      "required": false
-    },
-    {
       "id": "terra_curio:metal_detector",
       "required": false
     },
@@ -735,18 +679,6 @@
     },
     {
       "id": "terra_curio:molten_skull_rose",
-      "required": false
-    },
-    {
-      "id": "terra_curio:moon_charm",
-      "required": false
-    },
-    {
-      "id": "terra_curio:moon_shell",
-      "required": false
-    },
-    {
-      "id": "terra_curio:neptunes_shell",
       "required": false
     },
     {
@@ -778,15 +710,7 @@
       "required": false
     },
     {
-      "id": "terra_curio:pda",
-      "required": false
-    },
-    {
       "id": "terra_curio:pink_horseshoe_balloon",
-      "required": false
-    },
-    {
-      "id": "terra_curio:platinum_watch",
       "required": false
     },
     {
@@ -794,27 +718,7 @@
       "required": false
     },
     {
-      "id": "terra_curio:power_glove",
-      "required": false
-    },
-    {
-      "id": "terra_curio:putrid_scent",
-      "required": false
-    },
-    {
-      "id": "terra_curio:radar",
-      "required": false
-    },
-    {
       "id": "terra_curio:ranger_emblem",
-      "required": false
-    },
-    {
-      "id": "terra_curio:recon_scope",
-      "required": false
-    },
-    {
-      "id": "terra_curio:rek_3000",
       "required": false
     },
     {
@@ -842,15 +746,7 @@
       "required": false
     },
     {
-      "id": "terra_curio:shark_tooth_necklace",
-      "required": false
-    },
-    {
       "id": "terra_curio:sharkron_balloon",
-      "required": false
-    },
-    {
-      "id": "terra_curio:shield_of_cthulhu",
       "required": false
     },
     {
@@ -870,15 +766,7 @@
       "required": false
     },
     {
-      "id": "terra_curio:silver_watch",
-      "required": false
-    },
-    {
       "id": "terra_curio:sniper_scope",
-      "required": false
-    },
-    {
-      "id": "terra_curio:soaring_insignia",
       "required": false
     },
     {
@@ -886,23 +774,11 @@
       "required": false
     },
     {
-      "id": "terra_curio:stalkers_quiver",
-      "required": false
-    },
-    {
       "id": "terra_curio:step_stool",
       "required": false
     },
     {
-      "id": "terra_curio:stinger_necklace",
-      "required": false
-    },
-    {
       "id": "terra_curio:stopwatch",
-      "required": false
-    },
-    {
-      "id": "terra_curio:tally_counter",
       "required": false
     },
     {
@@ -911,10 +787,6 @@
     },
     {
       "id": "terra_curio:tiger_climbing_gear",
-      "required": false
-    },
-    {
-      "id": "terra_curio:tin_watch",
       "required": false
     },
     {
@@ -934,19 +806,11 @@
       "required": false
     },
     {
-      "id": "terra_curio:tungsten_watch",
-      "required": false
-    },
-    {
       "id": "terra_curio:vitamins",
       "required": false
     },
     {
       "id": "terra_curio:warrior_emblem",
-      "required": false
-    },
-    {
-      "id": "terra_curio:weather_radio",
       "required": false
     },
     {

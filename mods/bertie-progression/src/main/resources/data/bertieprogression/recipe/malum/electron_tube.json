@@ -11,15 +11,7 @@
   ],
   "type": "malum:spirit_infusion",
   "input": {
-    "type": "neoforge:compound",
-    "ingredients": [
-      {
-        "item": "malum:natural_quartz"
-      },
-      {
-        "item": "minecraft:quartz"
-      }
-    ],
+    "item": "minecraft:quartz",
     "count": 1
   },
   "extraInputs": [

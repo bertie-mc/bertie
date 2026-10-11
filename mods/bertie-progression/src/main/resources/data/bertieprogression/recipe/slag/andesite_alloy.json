@@ -11,7 +11,7 @@
   ],
   "type": "slag:double_smelting",
   "ingredientA": {
-    "item": "create:zinc_ingot"
+    "item": "magitech:zinc_ingot"
   },
   "ingredientB": {
     "item": "minecraft:andesite"

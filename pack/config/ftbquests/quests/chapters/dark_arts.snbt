@@ -1017,5 +1017,1217 @@
 			x: 12.0d
 			y: 8.0d
 		}
+		{
+			icon: { count: 1 id: "deeperdarker:resonarium_plate" }
+			id: "1C00000000002000"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002000"
+				item: { count: 1 id: "deeperdarker:resonarium_plate" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
+			id: "1C00000000002001"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002001"
+				item: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:gilded_plate" }
+			id: "1C00000000002002"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002002"
+				item: { count: 1 id: "armageddon_mod:gilded_plate" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:echoing_scrap" }
+			id: "1C00000000002003"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002003"
+				item: { count: 1 id: "armageddon_mod:echoing_scrap" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:possessed_armor_fragment" }
+			id: "1C00000000002004"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002004"
+				item: { count: 1 id: "mythsandlegends:possessed_armor_fragment" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:armor_shard" }
+			id: "1C00000000002005"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002005"
+				item: { count: 1 id: "twilightforest:armor_shard" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:armor_shard_cluster" }
+			id: "1C00000000002006"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002006"
+				item: { count: 1 id: "twilightforest:armor_shard_cluster" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:mithril_scrap" }
+			id: "1C00000000002007"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002007"
+				item: { count: 1 id: "irons_spellbooks:mithril_scrap" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "betterend:aeternium_forged_plate" }
+			id: "1C00000000002008"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002008"
+				item: { count: 1 id: "betterend:aeternium_forged_plate" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "betterend:terminite_forged_plate" }
+			id: "1C00000000002009"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002009"
+				item: { count: 1 id: "betterend:terminite_forged_plate" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "betterend:thallasium_forged_plate" }
+			id: "1C0000000000200A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200A"
+				item: { count: 1 id: "betterend:thallasium_forged_plate" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "cataclysm_spellbooks:mechanical_scrap" }
+			id: "1C0000000000200B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200B"
+				item: { count: 1 id: "cataclysm_spellbooks:mechanical_scrap" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "apotheosis:common_material" }
+			id: "1C0000000000200C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200C"
+				item: { count: 1 id: "apotheosis:common_material" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "dungeonsdelight:stained_scrap_fragment" }
+			id: "1C0000000000200D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200D"
+				item: { count: 1 id: "dungeonsdelight:stained_scrap_fragment" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:crocodile_scute" }
+			id: "1C0000000000200E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200E"
+				item: { count: 1 id: "alexsmobs:crocodile_scute" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:spiked_scute" }
+			id: "1C0000000000200F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100200F"
+				item: { count: 1 id: "alexsmobs:spiked_scute" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:rocky_shell" }
+			id: "1C00000000002010"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002010"
+				item: { count: 1 id: "alexsmobs:rocky_shell" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:centipede_leg" }
+			id: "1C00000000002011"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002011"
+				item: { count: 1 id: "alexsmobs:centipede_leg" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:froststalker_horn" }
+			id: "1C00000000002012"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002012"
+				item: { count: 1 id: "alexsmobs:froststalker_horn" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "antarchy:nightmare_scale" }
+			id: "1C00000000002013"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002013"
+				item: { count: 1 id: "antarchy:nightmare_scale" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 8.0d
+		}
+		{
+			icon: { count: 1 id: "antarchy:primordial_scute" }
+			id: "1C00000000002014"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002014"
+				item: { count: 1 id: "antarchy:primordial_scute" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "antarchy:chitin" }
+			id: "1C00000000002015"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002015"
+				item: { count: 1 id: "antarchy:chitin" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:naga_scale" }
+			id: "1C00000000002016"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002016"
+				item: { count: 1 id: "twilightforest:naga_scale" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "twilightforest:steeleaf_ingot" }
+			id: "1C00000000002017"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002017"
+				item: { count: 1 id: "twilightforest:steeleaf_ingot" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_red" }
+			id: "1C00000000002018"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002018"
+				item: { count: 1 id: "iceandfire:dragonscales_red" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_green" }
+			id: "1C00000000002019"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002019"
+				item: { count: 1 id: "iceandfire:dragonscales_green" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 9.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_bronze" }
+			id: "1C0000000000201A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201A"
+				item: { count: 1 id: "iceandfire:dragonscales_bronze" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_gray" }
+			id: "1C0000000000201B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201B"
+				item: { count: 1 id: "iceandfire:dragonscales_gray" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_blue" }
+			id: "1C0000000000201C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201C"
+				item: { count: 1 id: "iceandfire:dragonscales_blue" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_white" }
+			id: "1C0000000000201D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201D"
+				item: { count: 1 id: "iceandfire:dragonscales_white" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_sapphire" }
+			id: "1C0000000000201E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201E"
+				item: { count: 1 id: "iceandfire:dragonscales_sapphire" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_silver" }
+			id: "1C0000000000201F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100201F"
+				item: { count: 1 id: "iceandfire:dragonscales_silver" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 11.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_electric" }
+			id: "1C00000000002020"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002020"
+				item: { count: 1 id: "iceandfire:dragonscales_electric" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_amethyst" }
+			id: "1C00000000002021"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002021"
+				item: { count: 1 id: "iceandfire:dragonscales_amethyst" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_copper" }
+			id: "1C00000000002022"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002022"
+				item: { count: 1 id: "iceandfire:dragonscales_copper" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonscales_black" }
+			id: "1C00000000002023"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002023"
+				item: { count: 1 id: "iceandfire:dragonscales_black" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_blue" }
+			id: "1C00000000002024"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002024"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_blue" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_bronze" }
+			id: "1C00000000002025"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002025"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_bronze" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 12.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_deepblue" }
+			id: "1C00000000002026"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002026"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_deepblue" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_green" }
+			id: "1C00000000002027"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002027"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_green" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_purple" }
+			id: "1C00000000002028"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002028"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_purple" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_red" }
+			id: "1C00000000002029"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002029"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_red" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:sea_serpent_scales_teal" }
+			id: "1C0000000000202A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202A"
+				item: { count: 1 id: "iceandfire:sea_serpent_scales_teal" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:deathworm_chitin_red" }
+			id: "1C0000000000202B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202B"
+				item: { count: 1 id: "iceandfire:deathworm_chitin_red" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:deathworm_chitin_white" }
+			id: "1C0000000000202C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202C"
+				item: { count: 1 id: "iceandfire:deathworm_chitin_white" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:deathworm_chitin_yellow" }
+			id: "1C0000000000202D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202D"
+				item: { count: 1 id: "iceandfire:deathworm_chitin_yellow" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:shiny_scales" }
+			id: "1C0000000000202E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202E"
+				item: { count: 1 id: "iceandfire:shiny_scales" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:dragonbone" }
+			id: "1C0000000000202F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100202F"
+				item: { count: 1 id: "iceandfire:dragonbone" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:witherbone" }
+			id: "1C00000000002030"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002030"
+				item: { count: 1 id: "iceandfire:witherbone" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "iceandfire:wither_shard" }
+			id: "1C00000000002031"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002031"
+				item: { count: 1 id: "iceandfire:wither_shard" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 15.5d
+		}
+		{
+			icon: { count: 1 id: "deeperdarker:warden_carapace" }
+			id: "1C00000000002032"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002032"
+				item: { count: 1 id: "deeperdarker:warden_carapace" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "deeperdarker:sculk_bone" }
+			id: "1C00000000002033"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002033"
+				item: { count: 1 id: "deeperdarker:sculk_bone" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "cataclysm:amethyst_crab_shell" }
+			id: "1C00000000002034"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002034"
+				item: { count: 1 id: "cataclysm:amethyst_crab_shell" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "cataclysm:koboleton_bone" }
+			id: "1C00000000002035"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002035"
+				item: { count: 1 id: "cataclysm:koboleton_bone" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "cataclysm:chitin_claw" }
+			id: "1C00000000002036"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002036"
+				item: { count: 1 id: "cataclysm:chitin_claw" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "cataclysm:crystallized_coral_fragments" }
+			id: "1C00000000002037"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002037"
+				item: { count: 1 id: "cataclysm:crystallized_coral_fragments" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 17.0d
+		}
+		{
+			icon: { count: 1 id: "cataclysm:coral_chunk" }
+			id: "1C00000000002038"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002038"
+				item: { count: 1 id: "cataclysm:coral_chunk" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "quark:crab_shell" }
+			id: "1C00000000002039"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002039"
+				item: { count: 1 id: "quark:crab_shell" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "forbidden_arcanus:dragon_scale" }
+			id: "1C0000000000203A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203A"
+				item: { count: 1 id: "forbidden_arcanus:dragon_scale" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "forbidden_arcanus:aquatic_dragon_scale" }
+			id: "1C0000000000203B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203B"
+				item: { count: 1 id: "forbidden_arcanus:aquatic_dragon_scale" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "forbidden_arcanus:golden_dragon_scale" }
+			id: "1C0000000000203C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203C"
+				item: { count: 1 id: "forbidden_arcanus:golden_dragon_scale" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "forbidden_arcanus:silver_dragon_scale" }
+			id: "1C0000000000203D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203D"
+				item: { count: 1 id: "forbidden_arcanus:silver_dragon_scale" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 18.5d
+		}
+		{
+			icon: { count: 1 id: "born_in_chaos_v1:spiny_shell" }
+			id: "1C0000000000203E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203E"
+				item: { count: 1 id: "born_in_chaos_v1:spiny_shell" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "born_in_chaos_v1:fused_bone" }
+			id: "1C0000000000203F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100203F"
+				item: { count: 1 id: "born_in_chaos_v1:fused_bone" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "born_in_chaos_v1:lifestealer_bone" }
+			id: "1C00000000002040"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002040"
+				item: { count: 1 id: "born_in_chaos_v1:lifestealer_bone" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:shadow_scale" }
+			id: "1C00000000002041"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002041"
+				item: { count: 1 id: "hazennstuff:shadow_scale" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:arcane_sea_shell" }
+			id: "1C00000000002042"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002042"
+				item: { count: 1 id: "hazennstuff:arcane_sea_shell" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:overgrown_bone" }
+			id: "1C00000000002043"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002043"
+				item: { count: 1 id: "hazennstuff:overgrown_bone" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:charred_bones" }
+			id: "1C00000000002044"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002044"
+				item: { count: 1 id: "hazennstuff:charred_bones" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:elder_guardian_spine" }
+			id: "1C00000000002045"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002045"
+				item: { count: 1 id: "hazennstuff:elder_guardian_spine" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:permafrost_fragment" }
+			id: "1C00000000002046"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002046"
+				item: { count: 1 id: "hazennstuff:permafrost_fragment" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "hazennstuff:runestone_fragments" }
+			id: "1C00000000002047"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002047"
+				item: { count: 1 id: "hazennstuff:runestone_fragments" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:gargoyle_fragment" }
+			id: "1C00000000002048"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002048"
+				item: { count: 1 id: "mythsandlegends:gargoyle_fragment" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:gargoyle_shard" }
+			id: "1C00000000002049"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002049"
+				item: { count: 1 id: "mythsandlegends:gargoyle_shard" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 21.5d
+		}
+		{
+			icon: { count: 1 id: "mythsandlegends:scorched_bone" }
+			id: "1C0000000000204A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204A"
+				item: { count: 1 id: "mythsandlegends:scorched_bone" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:ender_dragon_bone" }
+			id: "1C0000000000204B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204B"
+				item: { count: 1 id: "armageddon_mod:ender_dragon_bone" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:splintered_bone" }
+			id: "1C0000000000204C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204C"
+				item: { count: 1 id: "armageddon_mod:splintered_bone" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:withered_splintered_bone" }
+			id: "1C0000000000204D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204D"
+				item: { count: 1 id: "armageddon_mod:withered_splintered_bone" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "armageddon_mod:wither_spine" }
+			id: "1C0000000000204E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204E"
+				item: { count: 1 id: "armageddon_mod:wither_spine" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "block_factorys_bosses:dragon_bone" }
+			id: "1C0000000000204F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100204F"
+				item: { count: 1 id: "block_factorys_bosses:dragon_bone" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 23.0d
+		}
+		{
+			icon: { count: 1 id: "aquamirae:fin" }
+			id: "1C00000000002050"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002050"
+				item: { count: 1 id: "aquamirae:fin" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "aquamirae:sharp_bones" }
+			id: "1C00000000002051"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002051"
+				item: { count: 1 id: "aquamirae:sharp_bones" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
+			id: "1C00000000002052"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002052"
+				item: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "anvilcraft:sea_heart_shell" }
+			id: "1C00000000002053"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002053"
+				item: { count: 1 id: "anvilcraft:sea_heart_shell" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
+			id: "1C00000000002054"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002054"
+				item: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "anvilcraft:hardend_resin" }
+			id: "1C00000000002055"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002055"
+				item: { count: 1 id: "anvilcraft:hardend_resin" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 24.5d
+		}
+		{
+			icon: { count: 1 id: "l2complements:warden_bone_shard" }
+			id: "1C00000000002056"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002056"
+				item: { count: 1 id: "l2complements:warden_bone_shard" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:frozen_bone" }
+			id: "1C00000000002057"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002057"
+				item: { count: 1 id: "irons_spellbooks:frozen_bone" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:icy_fang" }
+			id: "1C00000000002058"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002058"
+				item: { count: 1 id: "irons_spellbooks:icy_fang" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "pastel:dragonbone_chunk" }
+			id: "1C00000000002059"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002059"
+				item: { count: 1 id: "pastel:dragonbone_chunk" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "pastel:milky_resin" }
+			id: "1C0000000000205A"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205A"
+				item: { count: 1 id: "pastel:milky_resin" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "oritech:polymer_resin" }
+			id: "1C0000000000205B"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205B"
+				item: { count: 1 id: "oritech:polymer_resin" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 26.0d
+		}
+		{
+			icon: { count: 1 id: "oritech:raw_biopolymer" }
+			id: "1C0000000000205C"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205C"
+				item: { count: 1 id: "oritech:raw_biopolymer" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 27.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:armadillo_scute" }
+			id: "1C0000000000205D"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205D"
+				item: { count: 1 id: "minecraft:armadillo_scute" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 27.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:turtle_scute" }
+			id: "1C0000000000205E"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205E"
+				item: { count: 1 id: "minecraft:turtle_scute" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 27.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:shulker_shell" }
+			id: "1C0000000000205F"
+			tasks: [{
+				count: 1L
+				id: "1C0000000100205F"
+				item: { count: 1 id: "minecraft:shulker_shell" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 27.5d
+		}
+		{
+			icon: { count: 1 id: "minecraft:nautilus_shell" }
+			id: "1C00000000002060"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002060"
+				item: { count: 1 id: "minecraft:nautilus_shell" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 27.5d
+		}
+		{
+			icon: { count: 1 id: "irons_spellbooks:dragonskin" }
+			id: "1C00000000002061"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002061"
+				item: { count: 1 id: "irons_spellbooks:dragonskin" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "alexsmobs:elastic_tendon" }
+			id: "1C00000000002062"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002062"
+				item: { count: 1 id: "alexsmobs:elastic_tendon" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 14.0d
+		}
+		{
+			icon: { count: 1 id: "antarchy:king_scale" }
+			id: "1C00000000002063"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002063"
+				item: { count: 1 id: "antarchy:king_scale" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 20.0d
+		}
+		{
+			icon: { count: 1 id: "antarchy:queen_scale" }
+			id: "1C00000000002064"
+			tasks: [{
+				count: 1L
+				id: "1C00000001002064"
+				item: { count: 1 id: "antarchy:queen_scale" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 20.0d
+		}
 	]
 }

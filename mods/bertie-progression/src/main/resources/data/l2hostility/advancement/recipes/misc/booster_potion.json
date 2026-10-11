@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "l2hostility:booster_potion"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_witch_droplet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "endrem:witch_pupil"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_witch_droplet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "l2hostility:booster_potion"
+    ]
+  }
+}

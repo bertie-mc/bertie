@@ -12,7 +12,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create:zinc_ingot"
+      "item": "magitech:zinc_ingot"
     },
     {
       "item": "slag:rose_gold_ingot"

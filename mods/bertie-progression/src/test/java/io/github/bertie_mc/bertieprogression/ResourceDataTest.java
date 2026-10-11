@@ -12,8 +12,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 class ResourceDataTest {
@@ -226,6 +228,81 @@ class ResourceDataTest {
                 .getAsJsonObject();
         assertTrue(registration.getAsJsonArray("entries").asList().stream()
                 .noneMatch(entry -> "bertieprogression:ravager_hide".equals(entry.getAsString())));
+    }
+
+    @Test
+    void mergedAliasesAreAbsentFromEnabledData() throws IOException {
+        Set<String> aliases = JsonParser.parseString(Files.readString(RESOURCES.resolve("merged_items.json")))
+                .getAsJsonObject()
+                .keySet();
+        List<String> leaks = new ArrayList<>();
+        try (var paths = Files.walk(RESOURCES.resolve("data"))) {
+            for (Path path : paths.filter(p -> p.toString().endsWith(".json")).toList()) {
+                JsonElement parsed = JsonParser.parseString(Files.readString(path));
+                if (parsed.isJsonObject()
+                        && parsed.getAsJsonObject().has("neoforge:conditions")
+                        && parsed.getAsJsonObject().getAsJsonArray("neoforge:conditions").asList().stream()
+                                .anyMatch(condition -> condition.isJsonObject()
+                                        && condition.getAsJsonObject().has("type")
+                                        && "neoforge:false"
+                                                .equals(condition
+                                                        .getAsJsonObject()
+                                                        .get("type")
+                                                        .getAsString()))) {
+                    continue;
+                }
+                Set<String> strings = new HashSet<>();
+                strings(parsed, strings);
+                strings.retainAll(aliases);
+                if (!strings.isEmpty()) {
+                    leaks.add(RESOURCES.relativize(path) + ": " + strings);
+                }
+            }
+        }
+        assertTrue(leaks.isEmpty(), String.join("\n", leaks));
+    }
+
+    @Test
+    void witchPupilHasOneBaseDropWithTenPlusThreeLootingCurve() throws IOException {
+        JsonObject loot = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/endrem/loot_table/minecraft/entities/witch.json")))
+                .getAsJsonObject();
+        JsonObject pool = loot.getAsJsonArray("pools").get(0).getAsJsonObject();
+        assertEquals(
+                "endrem:witch_pupil",
+                pool.getAsJsonArray("entries")
+                        .get(0)
+                        .getAsJsonObject()
+                        .get("name")
+                        .getAsString());
+        JsonObject chance = pool.getAsJsonArray("conditions").get(0).getAsJsonObject();
+        assertEquals(0.1, chance.get("unenchanted_chance").getAsDouble());
+        JsonObject curve = chance.getAsJsonObject("enchanted_chance");
+        for (int level = 1; level <= 3; level++) {
+            assertEquals(
+                    0.1 + 0.03 * level,
+                    curve.get("base").getAsDouble()
+                            + curve.get("per_level_above_first").getAsDouble() * (level - 1),
+                    0.000001);
+        }
+        JsonObject registration = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/neoforge/loot_modifiers/global_loot_modifiers.json")))
+                .getAsJsonObject();
+        assertTrue(registration.getAsJsonArray("entries").asList().stream()
+                .noneMatch(entry -> "bertieprogression:witch_droplet".equals(entry.getAsString())));
+    }
+
+    private static void strings(JsonElement value, Set<String> into) {
+        if (value.isJsonObject()) {
+            value.getAsJsonObject().asMap().forEach((key, child) -> {
+                into.add(key);
+                strings(child, into);
+            });
+        } else if (value.isJsonArray()) {
+            value.getAsJsonArray().forEach(child -> strings(child, into));
+        } else if (value.isJsonPrimitive() && value.getAsJsonPrimitive().isString()) {
+            into.add(value.getAsString());
+        }
     }
 
     /** Every {@code random_chance_with_enchanted_bonus} anywhere in one file, at any nesting. */

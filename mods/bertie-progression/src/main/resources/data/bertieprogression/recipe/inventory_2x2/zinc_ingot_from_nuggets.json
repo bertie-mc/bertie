@@ -9,7 +9,7 @@
   "category": "misc",
   "key": {
     "N": {
-      "item": "create:zinc_nugget"
+      "item": "anvilcraft:zinc_nugget"
     }
   },
   "pattern": [
@@ -17,7 +17,7 @@
     "NN"
   ],
   "result": {
-    "id": "create:zinc_ingot",
+    "id": "magitech:zinc_ingot",
     "count": 1
   }
 }

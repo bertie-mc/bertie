@@ -538,6 +538,23 @@ config="bertieprogression.mixins.json"
 [[mixins]]
 config="bertieprogression.combat.mixins.json"
 
+[[mixins]]
+config="bertieprogression.startup.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId="curseofpandora"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="endrem"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
 [[dependencies.${mod_id}]]
 modId="betterend"
 type="optional"

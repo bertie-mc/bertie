@@ -79,6 +79,9 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 - **Vanity projectile sync** (`VanityEntityItemPacketMixin`) — a projectile that drops no item
   is sent to Vanity as a plain arrow, because Vanity's packet cannot encode an empty stack and
   the failure disconnected the player.
+- **Client startup** (`startup/`) — MidnightLib config registration runs under its class monitor.
+  Parallel mod constructors cannot change the shared entry map while another registration reads it.
+  The optional mixin preserves the library's method body, entry order and exception handling.
 
 ### Data
 
@@ -156,8 +159,8 @@ Alchemist Supreme uses Hazel; Creaking uses Mycelium Guardian; Crystal Arachnid 
 Magehunter uses Soulhunter; Frostbite Hunter uses Frosthowl; Engineer uses Electromancer.
 Each takes four Astral Weave plus its specified materials and runes. These six 50% resource
 pairs occur once each: Aureal/Blood, Blood/Ink, Aureal/Souls, Souls/Ink, Souls/Blood and Aureal/Ink.
-Tier-2 capacities are 3000 Aureal, 15000 Blood, 50 Souls and 1350 Ink. Magehunter spends a
-quarter of all four, rounding its fractional costs up to 13 Souls and 338 Ink.
+Tier-2 capacities are 3000 Aureal, 15000 Blood, 50 Souls and 1350 Ink. Magehunter uses
+750 Aureal, 3750 Blood, 15 Souls and 340 Ink.
 
 Bone Reptile upgrades Dark Metal; Pharaoh combines Mothic Witch and Bishop; Cursium upgrades
 Nightmare Mantle; Cursium Mage upgrades Crystal Arachnid; Nautilus Knight combines Creaking
@@ -172,6 +175,22 @@ Silver Scraps craft from seven Large Silver Slates and two Dark Metal Armor Plat
 `DSS / SSS / SSD`; their additional Illager loot table no longer drops them. Astral Weave
 uses two Arcane Cloth as its primary, followed by two Soulwoven Silk, six Arctic Fur and
 twelve Phantom Membranes, retaining its spirit costs and one-item output.
+
+Bounty Hunter upgrades matching Magehunter pieces at the Spirit Altar for 16 Arcane,
+40 Aerial and 40 Earthen spirits. Each takes 4 Silver Scraps, 6 Astral Weave, 2 Melee Runes,
+2 Archery Runes, 32 Innocent Souls, 1 Hallowed Gold Block and 2 Totemic Gold Blocks.
+Evil Spine is a Tier-1 forge ritual consuming two of each Rotten, Eroded and Dried Spine,
+with one Rotten Spine as the core and the remaining five on pedestals; it costs 4000 Blood
+and 320 Aureal. Nightmare Fuel is made only at the Spirit Altar: 3 Arcane Charcoal Blocks,
+2 Bottles o' Nightmare, 2 Nightmare Claws, 3 Barbaric Edges and 7 Dark Matter, paid with
+17 Wicked and 7 Infernal spirits. Its Wither Skeleton loot pool is removed; Charred Bones remain.
+
+Witch Droplet merges into Witch Pupil. Ordinary Witch drops use 10% base and 13%/16%/19%
+with Looting I/II/III; the separate progression Droplet roll is removed, and the previously
+disabled L2 trait drop stays disabled. Merge normalization covers the final authored data as well
+as stock recipes, including custom output routes and compound ingredient alternatives.
+Natural Quartz and other losing IDs cannot appear in enabled recipes or item tags.
+The generated `merged_items.json` records the mapping used by the data regression check.
 
 Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
 Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.

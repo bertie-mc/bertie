@@ -1,0 +1,70 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "hazennstuff:magehunter_helmet",
+    "count": 1
+  },
+  "extraInputs": [
+    {
+      "item": "hazennstuff:silver_scraps",
+      "count": 4
+    },
+    {
+      "item": "malum:astral_weave",
+      "count": 6
+    },
+    {
+      "item": "hazennstuff:melee_rune",
+      "count": 2
+    },
+    {
+      "item": "hazennstuff:archery_rune",
+      "count": 2
+    },
+    {
+      "item": "bertieprogression:innocent_soul",
+      "count": 32
+    },
+    {
+      "item": "malum:block_of_hallowed_gold",
+      "count": 1
+    },
+    {
+      "item": "l2complements:totemic_gold_block",
+      "count": 2
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 16
+    },
+    {
+      "type": "malum:aerial",
+      "count": 40
+    },
+    {
+      "type": "malum:earthen",
+      "count": 40
+    }
+  ],
+  "result": {
+    "id": "hazennstuff:bounty_hunter_helmet",
+    "count": 1
+  },
+  "carryOverComponentData": true
+}

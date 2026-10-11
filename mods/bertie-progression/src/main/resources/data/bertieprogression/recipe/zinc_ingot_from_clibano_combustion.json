@@ -6,14 +6,14 @@
   "fire_type": "fire",
   "ingredients": {
     "first": {
-      "item": "create:raw_zinc"
+      "item": "magitech:raw_zinc"
     },
     "second": {
-      "item": "create:raw_zinc"
+      "item": "magitech:raw_zinc"
     }
   },
   "result": {
     "count": 3,
-    "id": "create:zinc_ingot"
+    "id": "magitech:zinc_ingot"
   }
 }

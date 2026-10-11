@@ -1296,12 +1296,6 @@ _hg = infusion("create:brass_ingot", 1,
                 ("minecraft:quartz", 4), ("malum:mnemonic_fragment", 1)],
                [SP("sacred", 9), SP("eldritch", 6), SP("infernal", 3)],
                "malum:hallowed_gold_ingot", 1)
-# Either quartz works here too - Malum's Natural Quartz or the vanilla stone.
-_hg["extraInputs"][4] = {
-    "type": "neoforge:compound",
-    "ingredients": [{"item": "minecraft:quartz"}, {"item": "malum:natural_quartz"}],
-    "count": 4,
-}
 write(f"{R}/malum/hallowed_gold_ingot.json", _hg)
 
 # --- Empty Blaze Burner: 3x3 table + 5x5 mech (replaces Create's craft; blaze-capture lighting stays) ---
@@ -3669,6 +3663,21 @@ for _slot, _output in _armour["soulhunter"]["outputs"].items():
     _recipe["carryOverComponentData"] = True
     write(f"data/malum/recipe/spirit_infusion/{_output.split(':')[1]}.json", _recipe)
 
+for _slot in ("helmet", "chestplate", "leggings", "boots"):
+    _output = f"hazennstuff:bounty_hunter_{_slot}"
+    _recipe = infusion(f"hazennstuff:magehunter_{_slot}", 1,
+        [("hazennstuff:silver_scraps", 4), ("malum:astral_weave", 6),
+         ("hazennstuff:melee_rune", 2), ("hazennstuff:archery_rune", 2),
+         ("bertieprogression:innocent_soul", 32), ("malum:block_of_hallowed_gold", 1),
+         ("l2complements:totemic_gold_block", 2)],
+        [("malum:arcane", 16), ("malum:aerial", 40), ("malum:earthen", 40)], _output)
+    _recipe["carryOverComponentData"] = True
+    if _slot == "chestplate":
+        _recipe["result"]["components"] = {"irons_spellbooks:spell_container": {
+            "data": [], "maxSpells": 1, "mustEquip": True, "spellWheel": True}}
+    write(f"{R}/armour/bounty_hunter_{_slot}.json", _recipe)
+    write(f"data/hazennstuff/recipe/smithing/armor/bounty_hunter/bounty_hunter_{_slot}.json", DISABLED)
+
 def _armour_ritual(_primary, _secondary, _output, _costs, tier=1):
     _essences = {k: _costs[k] for k in ("aureal", "blood", "souls")}
     _recipe = ritual(_primary, _secondary, _output, tier=tier,
@@ -3737,6 +3746,31 @@ write(f"{R}/silver_scraps.json", shaped(["DSS", "SSS", "SSD"],
       {"D": "born_in_chaos_v1:armor_plate_from_dark_metal", "S": "berlordscarving:silver_big_slate"},
       "hazennstuff:silver_scraps"))
 write("data/hazennstuff/loot_table/entities/additional_loot/additional_illager_loot.json", {"pools": []})
+
+write("data/curseofpandora/recipe/evil_spine.json", DISABLED)
+write(f"{RIT}/evil_spine.json", ritual("curseofpandora:rotten_spine",
+      [("curseofpandora:rotten_spine", 1), ("curseofpandora:eroded_spine", 2),
+       ("curseofpandora:dried_spine", 2)], "curseofpandora:evil_spine", tier=1,
+      essences={"aureal": 320, "blood": 4000, "souls": 0}))
+write(f"{R}/malum/nightmare_fuel.json", infusion("malum:block_of_arcane_charcoal", 3,
+      [("cognition:nightmare_bottle", 2), ("born_in_chaos_v1:nightmare_claw", 2),
+       ("curseofpandora:barbaric_edge", 3), ("forbidden_arcanus:dark_matter", 7)],
+      [("malum:wicked", 17), ("malum:infernal", 7)], "hazennstuff:nightmare_fuel"))
+_nightmare_loot = "data/hazennstuff/loot_table/entities/additional_loot/additional_wither_skeleton_loot.json"
+# Keep the independent Charred Bones pool; Nightmare Fuel has only its altar source.
+write(_nightmare_loot, {"pools": [{"rolls": 1, "bonus_rolls": 0.0, "entries": [{
+    "type": "minecraft:item", "name": "hazennstuff:charred_bones", "functions": [
+        {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 0.0, "max": 1.0}, "add": False},
+        {"function": "minecraft:enchanted_count_increase", "enchantment": "minecraft:looting",
+         "count": {"type": "minecraft:uniform", "min": 0.0, "max": 2.0}},
+    ]}]}]})
+write("data/endrem/loot_table/minecraft/entities/witch.json", {"pools": [{
+    "name": "eye_pool", "rolls": 1,
+    "conditions": [{"condition": "minecraft:random_chance_with_enchanted_bonus",
+        "enchantment": "minecraft:looting", "unenchanted_chance": 0.1,
+        "enchanted_chance": {"type": "minecraft:linear", "base": 0.13, "per_level_above_first": 0.03}}],
+    "entries": [{"type": "minecraft:item", "name": "endrem:witch_pupil"}],
+}]})
 
 # ================================================================ RAVAGER HIDE
 write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",
@@ -3824,7 +3858,7 @@ write("data/bertieprogression/recipe/yellow_plushie_token.json",
       shapeless(["bertieprogression:green_plushie_token"] * 4, "bertieprogression:yellow_plushie_token"))
 write("data/bertieprogression/recipe/purple_plushie_token.json",
       shapeless(["bertieprogression:yellow_plushie_token"] * 4, "bertieprogression:purple_plushie_token"))
-_glm = ["bertieprogression:witch_droplet", "bertieprogression:innocent_soul"]
+_glm = ["bertieprogression:innocent_soul"]
 for _mob, _n in sorted(MOB_DOLLS.items()):
     write(f"data/bertieprogression/loot_modifiers/doll_drops/{_mob}.json", {
         "neoforge:conditions": conds(KD),
@@ -4804,6 +4838,17 @@ def _redirect(node, table):
             c, h = _redirect(v, table)
             out[k] = c
             hit = hit or h
+        if hit and out.get("type") == "neoforge:compound":
+            choices, seen = [], set()
+            for choice in out.get("ingredients", []):
+                key = json.dumps(choice, sort_keys=True)
+                if key not in seen:
+                    choices.append(choice)
+                    seen.add(key)
+            if len(choices) == 1:
+                return {**choices[0], **{k: v for k, v in out.items()
+                                       if k not in ("type", "ingredients")}}, hit
+            out["ingredients"] = choices
         return out, hit
     return node, False
 
@@ -5308,6 +5353,33 @@ else:
     with open(_tag_manifest_path, "w", encoding="utf-8", newline="\n") as _f:
         json.dump(sorted(_new_tags), _f, indent=2)
 print(f"  merged tags: {len(_new_tags)} item tags rewritten without hidden ids")
+
+# Authored recipes and static overrides may have no matching stock path in the jar index.
+# Normalize the final data set as well, so compounds, rituals and custom tags cannot leak aliases.
+write("merged_items.json", _MERGE)
+_normalized = 0
+for _directory, _, _files in os.walk(os.path.join(RES, "data")):
+    for _filename in sorted(_files):
+        if not _filename.endswith(".json"):
+            continue
+        _path = os.path.join(_directory, _filename)
+        _relative = os.path.relpath(_path, RES).replace(os.sep, "/")
+        with open(_path, encoding="utf-8") as _f:
+            _data = json.load(_f)
+        if isinstance(_data, dict) and {"type": "neoforge:false"} in _data.get("neoforge:conditions", []):
+            continue
+        if "/tags/item/" in _relative:
+            _fixed = dict(_data)
+            _fixed["values"] = [_value for _value in _data.get("values", [])
+                                if (_value.get("id") if isinstance(_value, dict) else _value)
+                                not in set(_removed_ids)]
+            _changed = _fixed != _data
+        else:
+            _fixed, _changed = _redirect(_data, _MERGE)
+        if _changed and _fixed != _data:
+            write(_relative, _fixed)
+            _normalized += 1
+print(f"  authored merges: {_normalized} data files normalized")
 
 _n_loot = sum(1 for _p in _new_data if "/loot_table" in _p)
 print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes disabled, "

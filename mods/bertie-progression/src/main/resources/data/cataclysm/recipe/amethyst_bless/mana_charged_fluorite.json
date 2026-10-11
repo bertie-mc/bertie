@@ -11,7 +11,7 @@
   ],
   "type": "cataclysm:amethyst_bless",
   "ingredient": {
-    "item": "magitech:fluorite"
+    "item": "mekanism:fluorite_gem"
   },
   "result": {
     "id": "magitech:mana_charged_fluorite"

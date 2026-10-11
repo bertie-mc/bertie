@@ -19,6 +19,11 @@ uses AnvilCraft's ingot and the approved small/large sprite pair. Their item IDs
 use the `berlordscarving` namespace with `_slate` and `_big_slate` suffixes. Source items,
 display names and generated recipes are defined in `texture-work/make_assets.py`.
 
+Every large slate has a 14x14 face inside its 16x16 canvas, with one pixel clipped from
+each corner and connected edge centres. `texture-work/normalize_large_slates.py` makes
+exact silhouette corrections using existing colours and preserves visible face pixels;
+`--check` validates without writing.
+
 ## Install
 Releases use `carving/vX.Y.Z` tags on the
 [Bertie release page](https://github.com/bertie-mc/bertie/releases). Put the JAR in your

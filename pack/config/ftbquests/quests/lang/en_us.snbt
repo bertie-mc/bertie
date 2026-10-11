@@ -2121,4 +2121,206 @@
 	quest.1C00000000001055.title: "Alchaefabric"
 	quest.1C00000000001055.quest_desc: ["Cloth, fabric, silk and weave"]
 	quest.1C00000000000047.quest_desc: ["Spirit-infuse 2 Arcane Cloth with 2 Soulwoven Silk, 6 Arctic Fur and 12 Phantom Membranes, paid in Sacred, Aerial and Arcane spirits."]
+	quest.1C00000000002000.title: "Resonarium Plate"
+	quest.1C00000000002000.quest_desc: ["Armour components"]
+	quest.1C00000000002001.title: "Reinforced Echo Shard"
+	quest.1C00000000002001.quest_desc: ["Armour components"]
+	quest.1C00000000002002.title: "Gilded Plate"
+	quest.1C00000000002002.quest_desc: ["Armour components"]
+	quest.1C00000000002003.title: "Echoing Scrap"
+	quest.1C00000000002003.quest_desc: ["Armour components"]
+	quest.1C00000000002004.title: "Possessed Armor Fragment"
+	quest.1C00000000002004.quest_desc: ["Armour components"]
+	quest.1C00000000002005.title: "Armor Shard"
+	quest.1C00000000002005.quest_desc: ["Armour components"]
+	quest.1C00000000002006.title: "Armor Shard Cluster"
+	quest.1C00000000002006.quest_desc: ["Armour components"]
+	quest.1C00000000002007.title: "Mithril Scrap"
+	quest.1C00000000002007.quest_desc: ["Armour components"]
+	quest.1C00000000002008.title: "Aeternium Forged Plate"
+	quest.1C00000000002008.quest_desc: ["Armour components"]
+	quest.1C00000000002009.title: "Terminite Forged Plate"
+	quest.1C00000000002009.quest_desc: ["Armour components"]
+	quest.1C0000000000200A.title: "Thallasium Forged Plate"
+	quest.1C0000000000200A.quest_desc: ["Armour components"]
+	quest.1C0000000000200B.title: "Mechanical Scrap"
+	quest.1C0000000000200B.quest_desc: ["Armour components"]
+	quest.1C0000000000200C.title: "Mysterious Scrap Metal"
+	quest.1C0000000000200C.quest_desc: ["Armour components"]
+	quest.1C0000000000200D.title: "Stained Scrap Fragment"
+	quest.1C0000000000200D.quest_desc: ["Armour components"]
+	quest.1C0000000000200E.title: "Crocodile Scute"
+	quest.1C0000000000200E.quest_desc: ["Armour materials"]
+	quest.1C0000000000200F.title: "Spiked Scute"
+	quest.1C0000000000200F.quest_desc: ["Armour materials"]
+	quest.1C00000000002010.title: "Rocky Shell"
+	quest.1C00000000002010.quest_desc: ["Armour materials"]
+	quest.1C00000000002011.title: "Cave Centipede Leg"
+	quest.1C00000000002011.quest_desc: ["Armour materials"]
+	quest.1C00000000002012.title: "Froststalker Horn"
+	quest.1C00000000002012.quest_desc: ["Armour materials"]
+	quest.1C00000000002013.title: "Nightmare Scale"
+	quest.1C00000000002013.quest_desc: ["Armour materials"]
+	quest.1C00000000002014.title: "Primordial Scute"
+	quest.1C00000000002014.quest_desc: ["Armour materials"]
+	quest.1C00000000002015.title: "Chitin"
+	quest.1C00000000002015.quest_desc: ["Armour materials"]
+	quest.1C00000000002016.title: "Naga Scale"
+	quest.1C00000000002016.quest_desc: ["Armour materials"]
+	quest.1C00000000002017.title: "Steeleaf"
+	quest.1C00000000002017.quest_desc: ["Armour materials"]
+	quest.1C00000000002018.title: "Dragon Scales [red variant]"
+	quest.1C00000000002018.quest_desc: ["Armour materials"]
+	quest.1C00000000002019.title: "Dragon Scales [green variant]"
+	quest.1C00000000002019.quest_desc: ["Armour materials"]
+	quest.1C0000000000201A.title: "Dragon Scales [bronze variant]"
+	quest.1C0000000000201A.quest_desc: ["Armour materials"]
+	quest.1C0000000000201B.title: "Dragon Scales [gray variant]"
+	quest.1C0000000000201B.quest_desc: ["Armour materials"]
+	quest.1C0000000000201C.title: "Dragon Scales [blue variant]"
+	quest.1C0000000000201C.quest_desc: ["Armour materials"]
+	quest.1C0000000000201D.title: "Dragon Scales [white variant]"
+	quest.1C0000000000201D.quest_desc: ["Armour materials"]
+	quest.1C0000000000201E.title: "Dragon Scales [sapphire variant]"
+	quest.1C0000000000201E.quest_desc: ["Armour materials"]
+	quest.1C0000000000201F.title: "Dragon Scales [silver variant]"
+	quest.1C0000000000201F.quest_desc: ["Armour materials"]
+	quest.1C00000000002020.title: "Dragon Scales [electric variant]"
+	quest.1C00000000002020.quest_desc: ["Armour materials"]
+	quest.1C00000000002021.title: "Dragon Scales [amethyst variant]"
+	quest.1C00000000002021.quest_desc: ["Armour materials"]
+	quest.1C00000000002022.title: "Dragon Scales [copper variant]"
+	quest.1C00000000002022.quest_desc: ["Armour materials"]
+	quest.1C00000000002023.title: "Dragon Scales [black variant]"
+	quest.1C00000000002023.quest_desc: ["Armour materials"]
+	quest.1C00000000002024.title: "Sea Serpent Scales (Blue)"
+	quest.1C00000000002024.quest_desc: ["Armour materials"]
+	quest.1C00000000002025.title: "Sea Serpent Scales (Bronze)"
+	quest.1C00000000002025.quest_desc: ["Armour materials"]
+	quest.1C00000000002026.title: "Sea Serpent Scales (Deep Blue)"
+	quest.1C00000000002026.quest_desc: ["Armour materials"]
+	quest.1C00000000002027.title: "Sea Serpent Scales (Green)"
+	quest.1C00000000002027.quest_desc: ["Armour materials"]
+	quest.1C00000000002028.title: "Sea Serpent Scales (Purple)"
+	quest.1C00000000002028.quest_desc: ["Armour materials"]
+	quest.1C00000000002029.title: "Sea Serpent Scales (Red)"
+	quest.1C00000000002029.quest_desc: ["Armour materials"]
+	quest.1C0000000000202A.title: "Sea Serpent Scales (Teal)"
+	quest.1C0000000000202A.quest_desc: ["Armour materials"]
+	quest.1C0000000000202B.title: "Red Death Worm Chitin"
+	quest.1C0000000000202B.quest_desc: ["Armour materials"]
+	quest.1C0000000000202C.title: "White Death Worm Chitin"
+	quest.1C0000000000202C.quest_desc: ["Armour materials"]
+	quest.1C0000000000202D.title: "Tan Death Worm Chitin"
+	quest.1C0000000000202D.quest_desc: ["Armour materials"]
+	quest.1C0000000000202E.title: "Shiny Scales"
+	quest.1C0000000000202E.quest_desc: ["Armour materials"]
+	quest.1C0000000000202F.title: "Dragon Bone"
+	quest.1C0000000000202F.quest_desc: ["Armour materials"]
+	quest.1C00000000002030.title: "Witherbone"
+	quest.1C00000000002030.quest_desc: ["Armour materials"]
+	quest.1C00000000002031.title: "Witherbone Shard"
+	quest.1C00000000002031.quest_desc: ["Armour materials"]
+	quest.1C00000000002032.title: "Warden Carapace"
+	quest.1C00000000002032.quest_desc: ["Armour materials"]
+	quest.1C00000000002033.title: "Sculk Bone"
+	quest.1C00000000002033.quest_desc: ["Armour materials"]
+	quest.1C00000000002034.title: "Amethyst Crab Shell"
+	quest.1C00000000002034.quest_desc: ["Armour materials"]
+	quest.1C00000000002035.title: "Koboleton Bone"
+	quest.1C00000000002035.quest_desc: ["Armour materials"]
+	quest.1C00000000002036.title: "Chitin Claw"
+	quest.1C00000000002036.quest_desc: ["Armour materials"]
+	quest.1C00000000002037.title: "Crystallized Coral Fragments"
+	quest.1C00000000002037.quest_desc: ["Armour materials"]
+	quest.1C00000000002038.title: "Coral Chunk"
+	quest.1C00000000002038.quest_desc: ["Armour materials"]
+	quest.1C00000000002039.title: "Crab Shell"
+	quest.1C00000000002039.quest_desc: ["Armour materials"]
+	quest.1C0000000000203A.title: "Dragon Scale"
+	quest.1C0000000000203A.quest_desc: ["Armour materials"]
+	quest.1C0000000000203B.title: "Aquatic Dragon Scale"
+	quest.1C0000000000203B.quest_desc: ["Armour materials"]
+	quest.1C0000000000203C.title: "Golden Dragon Scale"
+	quest.1C0000000000203C.quest_desc: ["Armour materials"]
+	quest.1C0000000000203D.title: "Silver Dragon Scale"
+	quest.1C0000000000203D.quest_desc: ["Armour materials"]
+	quest.1C0000000000203E.title: "Spiny Shell"
+	quest.1C0000000000203E.quest_desc: ["Armour materials"]
+	quest.1C0000000000203F.title: "Fused Bone"
+	quest.1C0000000000203F.quest_desc: ["Armour materials"]
+	quest.1C00000000002040.title: "Lifestealer Bone"
+	quest.1C00000000002040.quest_desc: ["Armour materials"]
+	quest.1C00000000002041.title: "Shadow Scale"
+	quest.1C00000000002041.quest_desc: ["Armour materials"]
+	quest.1C00000000002042.title: "Arcane Sea Shell"
+	quest.1C00000000002042.quest_desc: ["Armour materials"]
+	quest.1C00000000002043.title: "Overgrown Bone"
+	quest.1C00000000002043.quest_desc: ["Armour materials"]
+	quest.1C00000000002044.title: "Charred Bones"
+	quest.1C00000000002044.quest_desc: ["Armour materials"]
+	quest.1C00000000002045.title: "Elder Guardian Spine"
+	quest.1C00000000002045.quest_desc: ["Armour materials"]
+	quest.1C00000000002046.title: "Permafrost Fragment"
+	quest.1C00000000002046.quest_desc: ["Armour materials"]
+	quest.1C00000000002047.title: "Runestone Fragments"
+	quest.1C00000000002047.quest_desc: ["Armour materials"]
+	quest.1C00000000002048.title: "Gargoyle Fragment"
+	quest.1C00000000002048.quest_desc: ["Armour materials"]
+	quest.1C00000000002049.title: "Gargoyle Shard"
+	quest.1C00000000002049.quest_desc: ["Armour materials"]
+	quest.1C0000000000204A.title: "Scorched Bone"
+	quest.1C0000000000204A.quest_desc: ["Armour materials"]
+	quest.1C0000000000204B.title: "Ender Dragon Bone"
+	quest.1C0000000000204B.quest_desc: ["Armour materials"]
+	quest.1C0000000000204C.title: "Splintered Bone"
+	quest.1C0000000000204C.quest_desc: ["Armour materials"]
+	quest.1C0000000000204D.title: "Withered Splintered Bone"
+	quest.1C0000000000204D.quest_desc: ["Armour materials"]
+	quest.1C0000000000204E.title: "Wither's Spine"
+	quest.1C0000000000204E.quest_desc: ["Armour materials"]
+	quest.1C0000000000204F.title: "Dragon Bone"
+	quest.1C0000000000204F.quest_desc: ["Armour materials"]
+	quest.1C00000000002050.title: "Fin"
+	quest.1C00000000002050.quest_desc: ["Armour materials"]
+	quest.1C00000000002051.title: "Sharp Bones"
+	quest.1C00000000002051.quest_desc: ["Armour materials"]
+	quest.1C00000000002052.title: "Fortress Grouper Plate"
+	quest.1C00000000002052.quest_desc: ["Armour materials"]
+	quest.1C00000000002053.title: "Sea Heart Shell"
+	quest.1C00000000002053.quest_desc: ["Armour materials"]
+	quest.1C00000000002054.title: "Sea Heart Shell Shard"
+	quest.1C00000000002054.quest_desc: ["Armour materials"]
+	quest.1C00000000002055.title: "Hardend Resin"
+	quest.1C00000000002055.quest_desc: ["Armour materials"]
+	quest.1C00000000002056.title: "Warden Bone Shard"
+	quest.1C00000000002056.quest_desc: ["Armour materials"]
+	quest.1C00000000002057.title: "Frozen Bone"
+	quest.1C00000000002057.quest_desc: ["Armour materials"]
+	quest.1C00000000002058.title: "Icy Fang"
+	quest.1C00000000002058.quest_desc: ["Armour materials"]
+	quest.1C00000000002059.title: "Dragonbone Chunk"
+	quest.1C00000000002059.quest_desc: ["Armour materials"]
+	quest.1C0000000000205A.title: "Milky Resin"
+	quest.1C0000000000205A.quest_desc: ["Armour materials"]
+	quest.1C0000000000205B.title: "Polymer Resin"
+	quest.1C0000000000205B.quest_desc: ["Armour materials"]
+	quest.1C0000000000205C.title: "Raw Biopolymer"
+	quest.1C0000000000205C.quest_desc: ["Armour materials"]
+	quest.1C0000000000205D.title: "Armadillo Scute"
+	quest.1C0000000000205D.quest_desc: ["Armour materials"]
+	quest.1C0000000000205E.title: "Turtle Scute"
+	quest.1C0000000000205E.quest_desc: ["Armour materials"]
+	quest.1C0000000000205F.title: "Shulker Shell"
+	quest.1C0000000000205F.quest_desc: ["Armour materials"]
+	quest.1C00000000002060.title: "Nautilus Shell"
+	quest.1C00000000002060.quest_desc: ["Armour materials"]
+	quest.1C00000000002061.title: "Dragonskin"
+	quest.1C00000000002061.quest_desc: ["Armour linings"]
+	quest.1C00000000002062.title: "Elastic Tendon"
+	quest.1C00000000002062.quest_desc: ["Armour linings"]
+	quest.1C00000000002063.title: "King Scale"
+	quest.1C00000000002063.quest_desc: ["Future armour materials"]
+	quest.1C00000000002064.title: "Queen Scale"
+	quest.1C00000000002064.quest_desc: ["Future armour materials"]
 }
