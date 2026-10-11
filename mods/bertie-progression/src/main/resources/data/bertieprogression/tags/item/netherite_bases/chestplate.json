@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "fantasy_armor:old_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_chestplate",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:bone_reptile_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_chestplate",
+      "required": false
+    }
+  ]
+}

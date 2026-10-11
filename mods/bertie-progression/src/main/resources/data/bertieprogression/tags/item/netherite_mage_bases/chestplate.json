@@ -1,0 +1,49 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:supreme_witch_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:alchemist_supreme_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:creaking_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:crystal_arachnid_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_hunter_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_suit",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_chestplate",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nautilus_knight_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_chestplate",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_elytra",
+      "required": false
+    }
+  ]
+}

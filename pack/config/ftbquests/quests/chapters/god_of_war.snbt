@@ -3901,11 +3901,6 @@
 					item: { count: 1, id: "hazennstuff:hazel_boots" }
 					type: "item"
 				}
-				{
-					id: "7B00000001040093"
-					item: { count: 1, id: "hazennstuff:how_did_you_find_the_hazel_chestplate" }
-					type: "item"
-				}
 			]
 			x: -29d
 			y: 13d
@@ -4084,6 +4079,7 @@
 			y: 19d
 		}
 		{
+			dependencies: ["7B000000000002C1"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4433,11 +4429,6 @@
 				{
 					id: "7B000000010300A3"
 					item: { count: 1, id: "hazennstuff:mothic_witch_boots" }
-					type: "item"
-				}
-				{
-					id: "7B000000010400A3"
-					item: { count: 1, id: "hazennstuff:how_did_you_find_the_mothic_witch_chestplate" }
 					type: "item"
 				}
 			]

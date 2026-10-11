@@ -1270,7 +1270,6 @@
 	quest.7B00000000000090.title: "Garments Of The First Flamebearer Set"
 	quest.7B00000000000091.title: "Giorno Giovanna Set"
 	quest.7B00000000000092.title: "Glassweaver Set"
-	quest.7B00000000000093.title: "Hazel Set"
 	quest.7B00000000000094.title: "Herta Puppet Set"
 	quest.7B00000000000097.title: "Infestation Set"
 	quest.7B00000000000098.title: "Iron431 Set"
@@ -1283,7 +1282,6 @@
 	quest.7B0000000000009F.title: "Masked Fool Set"
 	quest.7B000000000000A1.title: "Miner Set"
 	quest.7B000000000000A2.title: "Mithril Battlemage Set"
-	quest.7B000000000000A3.title: "Mothic Witch Set"
 	quest.7B000000000000A4.title: "Mycelium Guardian Set"
 	quest.7B000000000000A5.title: "Nautilus Knight Set"
 	quest.7B000000000000A6.title: "Radiant Crystal Set"
@@ -2131,22 +2129,10 @@
 	quest.1C00000000002003.quest_desc: ["Armour components"]
 	quest.1C00000000002004.title: "Possessed Armor Fragment"
 	quest.1C00000000002004.quest_desc: ["Armour components"]
-	quest.1C00000000002005.title: "Armor Shard"
-	quest.1C00000000002005.quest_desc: ["Armour components"]
 	quest.1C00000000002006.title: "Armor Shard Cluster"
 	quest.1C00000000002006.quest_desc: ["Armour components"]
 	quest.1C00000000002007.title: "Mithril Scrap"
 	quest.1C00000000002007.quest_desc: ["Armour components"]
-	quest.1C00000000002008.title: "Aeternium Forged Plate"
-	quest.1C00000000002008.quest_desc: ["Armour components"]
-	quest.1C00000000002009.title: "Terminite Forged Plate"
-	quest.1C00000000002009.quest_desc: ["Armour components"]
-	quest.1C0000000000200A.title: "Thallasium Forged Plate"
-	quest.1C0000000000200A.quest_desc: ["Armour components"]
-	quest.1C0000000000200B.title: "Mechanical Scrap"
-	quest.1C0000000000200B.quest_desc: ["Armour components"]
-	quest.1C0000000000200C.title: "Mysterious Scrap Metal"
-	quest.1C0000000000200C.quest_desc: ["Armour components"]
 	quest.1C0000000000200D.title: "Stained Scrap Fragment"
 	quest.1C0000000000200D.quest_desc: ["Armour components"]
 	quest.1C0000000000200E.title: "Crocodile Scute"
@@ -2169,50 +2155,12 @@
 	quest.1C00000000002016.quest_desc: ["Armour materials"]
 	quest.1C00000000002017.title: "Steeleaf"
 	quest.1C00000000002017.quest_desc: ["Armour materials"]
-	quest.1C00000000002018.title: "Dragon Scales [red variant]"
+	quest.1C00000000002018.title: "Dragon Scales"
 	quest.1C00000000002018.quest_desc: ["Armour materials"]
-	quest.1C00000000002019.title: "Dragon Scales [green variant]"
-	quest.1C00000000002019.quest_desc: ["Armour materials"]
-	quest.1C0000000000201A.title: "Dragon Scales [bronze variant]"
-	quest.1C0000000000201A.quest_desc: ["Armour materials"]
-	quest.1C0000000000201B.title: "Dragon Scales [gray variant]"
-	quest.1C0000000000201B.quest_desc: ["Armour materials"]
-	quest.1C0000000000201C.title: "Dragon Scales [blue variant]"
-	quest.1C0000000000201C.quest_desc: ["Armour materials"]
-	quest.1C0000000000201D.title: "Dragon Scales [white variant]"
-	quest.1C0000000000201D.quest_desc: ["Armour materials"]
-	quest.1C0000000000201E.title: "Dragon Scales [sapphire variant]"
-	quest.1C0000000000201E.quest_desc: ["Armour materials"]
-	quest.1C0000000000201F.title: "Dragon Scales [silver variant]"
-	quest.1C0000000000201F.quest_desc: ["Armour materials"]
-	quest.1C00000000002020.title: "Dragon Scales [electric variant]"
-	quest.1C00000000002020.quest_desc: ["Armour materials"]
-	quest.1C00000000002021.title: "Dragon Scales [amethyst variant]"
-	quest.1C00000000002021.quest_desc: ["Armour materials"]
-	quest.1C00000000002022.title: "Dragon Scales [copper variant]"
-	quest.1C00000000002022.quest_desc: ["Armour materials"]
-	quest.1C00000000002023.title: "Dragon Scales [black variant]"
-	quest.1C00000000002023.quest_desc: ["Armour materials"]
-	quest.1C00000000002024.title: "Sea Serpent Scales (Blue)"
+	quest.1C00000000002024.title: "Sea Serpent Scales"
 	quest.1C00000000002024.quest_desc: ["Armour materials"]
-	quest.1C00000000002025.title: "Sea Serpent Scales (Bronze)"
-	quest.1C00000000002025.quest_desc: ["Armour materials"]
-	quest.1C00000000002026.title: "Sea Serpent Scales (Deep Blue)"
-	quest.1C00000000002026.quest_desc: ["Armour materials"]
-	quest.1C00000000002027.title: "Sea Serpent Scales (Green)"
-	quest.1C00000000002027.quest_desc: ["Armour materials"]
-	quest.1C00000000002028.title: "Sea Serpent Scales (Purple)"
-	quest.1C00000000002028.quest_desc: ["Armour materials"]
-	quest.1C00000000002029.title: "Sea Serpent Scales (Red)"
-	quest.1C00000000002029.quest_desc: ["Armour materials"]
-	quest.1C0000000000202A.title: "Sea Serpent Scales (Teal)"
-	quest.1C0000000000202A.quest_desc: ["Armour materials"]
-	quest.1C0000000000202B.title: "Red Death Worm Chitin"
+	quest.1C0000000000202B.title: "Deathworm Chitin"
 	quest.1C0000000000202B.quest_desc: ["Armour materials"]
-	quest.1C0000000000202C.title: "White Death Worm Chitin"
-	quest.1C0000000000202C.quest_desc: ["Armour materials"]
-	quest.1C0000000000202D.title: "Tan Death Worm Chitin"
-	quest.1C0000000000202D.quest_desc: ["Armour materials"]
 	quest.1C0000000000202E.title: "Shiny Scales"
 	quest.1C0000000000202E.quest_desc: ["Armour materials"]
 	quest.1C0000000000202F.title: "Dragon Bone"
@@ -2229,8 +2177,6 @@
 	quest.1C00000000002034.quest_desc: ["Armour materials"]
 	quest.1C00000000002035.title: "Koboleton Bone"
 	quest.1C00000000002035.quest_desc: ["Armour materials"]
-	quest.1C00000000002036.title: "Chitin Claw"
-	quest.1C00000000002036.quest_desc: ["Armour materials"]
 	quest.1C00000000002037.title: "Crystallized Coral Fragments"
 	quest.1C00000000002037.quest_desc: ["Armour materials"]
 	quest.1C00000000002038.title: "Coral Chunk"
@@ -2263,12 +2209,8 @@
 	quest.1C00000000002045.quest_desc: ["Armour materials"]
 	quest.1C00000000002046.title: "Permafrost Fragment"
 	quest.1C00000000002046.quest_desc: ["Armour materials"]
-	quest.1C00000000002047.title: "Runestone Fragments"
-	quest.1C00000000002047.quest_desc: ["Armour materials"]
 	quest.1C00000000002048.title: "Gargoyle Fragment"
 	quest.1C00000000002048.quest_desc: ["Armour materials"]
-	quest.1C00000000002049.title: "Gargoyle Shard"
-	quest.1C00000000002049.quest_desc: ["Armour materials"]
 	quest.1C0000000000204A.title: "Scorched Bone"
 	quest.1C0000000000204A.quest_desc: ["Armour materials"]
 	quest.1C0000000000204B.title: "Ender Dragon Bone"
@@ -2283,8 +2225,6 @@
 	quest.1C0000000000204F.quest_desc: ["Armour materials"]
 	quest.1C00000000002050.title: "Fin"
 	quest.1C00000000002050.quest_desc: ["Armour materials"]
-	quest.1C00000000002051.title: "Sharp Bones"
-	quest.1C00000000002051.quest_desc: ["Armour materials"]
 	quest.1C00000000002052.title: "Fortress Grouper Plate"
 	quest.1C00000000002052.quest_desc: ["Armour materials"]
 	quest.1C00000000002053.title: "Sea Heart Shell"
@@ -2301,12 +2241,6 @@
 	quest.1C00000000002058.quest_desc: ["Armour materials"]
 	quest.1C00000000002059.title: "Dragonbone Chunk"
 	quest.1C00000000002059.quest_desc: ["Armour materials"]
-	quest.1C0000000000205A.title: "Milky Resin"
-	quest.1C0000000000205A.quest_desc: ["Armour materials"]
-	quest.1C0000000000205B.title: "Polymer Resin"
-	quest.1C0000000000205B.quest_desc: ["Armour materials"]
-	quest.1C0000000000205C.title: "Raw Biopolymer"
-	quest.1C0000000000205C.quest_desc: ["Armour materials"]
 	quest.1C0000000000205D.title: "Armadillo Scute"
 	quest.1C0000000000205D.quest_desc: ["Armour materials"]
 	quest.1C0000000000205E.title: "Turtle Scute"
@@ -2323,4 +2257,8 @@
 	quest.1C00000000002063.quest_desc: ["Future armour materials"]
 	quest.1C00000000002064.title: "Queen Scale"
 	quest.1C00000000002064.quest_desc: ["Future armour materials"]
+	quest.5C00000000000001.title: "Age of Technology"
+	quest.5C00000000000001.quest_desc: ["Build a Steel Casing to enter the Age of Technology."]
+	quest.7B00000000000093.title: "Hazel Set"
+	quest.7B000000000000A3.title: "Mothic Witch Set"
 }

@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_bricks"
+    },
+    "B": {
+      "item": "twilightforest:fiery_ingot"
+    },
+    "O": {
+      "item": "apothic_enchanting:basic_bookshelf"
+    },
+    "P": {
+      "item": "twilightforest:fiery_tears"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "BOP",
+    "NNN"
+  ],
+  "result": {
+    "id": "apothic_enchanting:hellshelf",
+    "count": 1
+  }
+}

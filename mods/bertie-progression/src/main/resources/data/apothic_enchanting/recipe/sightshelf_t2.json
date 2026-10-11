@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EIE",
+    "PSP",
+    "EIE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "I": {
+      "item": "malum:malignant_pewter_ingot"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:long_night_vision"
+        }
+      },
+      "items": "minecraft:potion"
+    },
+    "S": {
+      "item": "apothic_enchanting:sightshelf"
+    }
+  },
+  "result": {
+    "id": "apothic_enchanting:sightshelf_t2",
+    "count": 1
+  }
+}

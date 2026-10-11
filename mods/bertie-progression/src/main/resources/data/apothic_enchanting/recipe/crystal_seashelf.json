@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:sea_lantern"
+    },
+    "I": {
+      "item": "apothic_enchanting:infused_seashelf"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LIL",
+    "LLL"
+  ],
+  "result": {
+    "id": "apothic_enchanting:crystal_seashelf",
+    "count": 1
+  }
+}

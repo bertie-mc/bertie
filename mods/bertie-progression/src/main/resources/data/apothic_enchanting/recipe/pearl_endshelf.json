@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:end_rod"
+    },
+    "N": {
+      "item": "malum:warp_flux"
+    },
+    "D": {
+      "item": "apothic_enchanting:endshelf"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "NDN",
+    "EEE"
+  ],
+  "result": {
+    "id": "apothic_enchanting:pearl_endshelf",
+    "count": 1
+  }
+}

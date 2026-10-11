@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "tag": "bertieprogression:netherite_mage_bases/boots"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "addition": {
+    "tag": "c:ingots/netherite"
+  },
+  "result": {
+    "id": "irons_spellbooks:netherite_mage_boots",
+    "count": 1
+  }
+}

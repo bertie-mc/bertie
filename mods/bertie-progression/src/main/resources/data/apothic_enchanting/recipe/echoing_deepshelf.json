@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:sculk_sensor"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "A": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "B": {
+      "item": "apothic_enchanting:deepshelf"
+    },
+    "C": {
+      "tag": "minecraft:candles"
+    }
+  },
+  "pattern": [
+    "SES",
+    "ABA",
+    "CCC"
+  ],
+  "result": {
+    "id": "apothic_enchanting:echoing_deepshelf",
+    "count": 1
+  }
+}

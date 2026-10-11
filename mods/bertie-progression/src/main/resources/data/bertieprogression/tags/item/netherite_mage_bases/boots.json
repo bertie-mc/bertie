@@ -1,0 +1,45 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:supreme_witch_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:alchemist_supreme_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:creaking_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:crystal_arachnid_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_hunter_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_greaves",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_boots",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nautilus_knight_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_greaves",
+      "required": false
+    }
+  ]
+}

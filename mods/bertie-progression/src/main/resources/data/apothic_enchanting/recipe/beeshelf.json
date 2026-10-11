@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "B": {
+      "item": "minecraft:beehive"
+    },
+    "O": {
+      "item": "minecraft:honey_block"
+    },
+    "K": {
+      "item": "apothic_enchanting:basic_bookshelf"
+    }
+  },
+  "pattern": [
+    "HBH",
+    "OKO",
+    "HBH"
+  ],
+  "result": {
+    "id": "apothic_enchanting:beeshelf",
+    "count": 1
+  }
+}

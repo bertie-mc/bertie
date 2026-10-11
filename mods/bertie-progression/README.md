@@ -179,8 +179,8 @@ twelve Phantom Membranes, retaining its spirit costs and one-item output.
 Bounty Hunter upgrades matching Magehunter pieces at the Spirit Altar for 16 Arcane,
 40 Aerial and 40 Earthen spirits. Each takes 4 Silver Scraps, 6 Astral Weave, 2 Melee Runes,
 2 Archery Runes, 32 Innocent Souls, 1 Hallowed Gold Block and 2 Totemic Gold Blocks.
-Evil Spine is a Tier-1 forge ritual consuming two of each Rotten, Eroded and Dried Spine,
-with one Rotten Spine as the core and the remaining five on pedestals; it costs 4000 Blood
+Evil Spine is a Tier-1 forge ritual with an Elder Guardian Spine as the core and two of each
+Rotten, Eroded and Dried Spine on six pedestals; it costs 4000 Blood
 and 320 Aureal. Nightmare Fuel is made only at the Spirit Altar: 3 Arcane Charcoal Blocks,
 2 Bottles o' Nightmare, 2 Nightmare Claws, 3 Barbaric Edges and 7 Dark Matter, paid with
 17 Wicked and 7 Infernal spirits. Its Wither Skeleton loot pool is removed; Charred Bones remain.
@@ -191,6 +191,23 @@ disabled L2 trait drop stays disabled. Merge normalization covers the final auth
 as stock recipes, including custom output routes and compound ingredient alternatives.
 Natural Quartz and other losing IDs cannot appear in enabled recipes or item tags.
 The generated `merged_items.json` records the mapping used by the data regression check.
+
+Netherite Mage smithing accepts matching pieces from ten Tier-5 families: Supreme Witch,
+Alchemist Supreme, Creaking, Crystal Arachnid, Frostbite Hunter, Engineer, Pharaoh,
+Cursium Mage, Nautilus Knight and Bloom Stone. Cursium Mage's winged chest is also eligible.
+Magehunter and Bounty Hunter are excluded, and the separate school-armour cosmetic route is
+disabled. Vanilla Netherite armour accepts the seven Tier-4 Fantasy families plus Bone
+Reptile and Cursium. Both routes retain the Netherite Upgrade Template and Netherite Ingot.
+The Shadowwalker Enderman Hood, Mask and Blindfold form a one-item crafting cycle.
+Secret Hazel and Mothic Witch chest variants are removed from acquisition and their quest objectives.
+
+Explorer's Compass uses a Tier-2 Nether Crafting Table recipe around Nature's Compass,
+with four Spawner Scraps, four Large Black Steel Slates, four Blaze Cubes and twelve
+Malignant Pewter Plating. Apothic shelf recipes use only Basic Bookshelves where a generic
+bookshelf was accepted. Their Nether, ocean, End, sculk, sight, treasure and library
+upgrades use the revised complete layouts and materials in `texture-work/gen_data.py`.
+Sight and treasure recipes use one each of Hallowed, Cursed, Totemic and Cthonic Gold
+Blocks in reading order: top-left, top-right, bottom-left, bottom-right.
 
 Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
 Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.

@@ -9,5 +9,17 @@
 	id: "5C00000000000000"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["6B0000000000004E"]
+			icon: { id: "mekanism:steel_casing" }
+			id: "5C00000000000001"
+			tasks: [{
+				id: "5C00000001000001"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 }

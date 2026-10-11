@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dragon_head"
+    },
+    "E": {
+      "tag": "c:ender_pearls"
+    },
+    "N": {
+      "item": "apothic_enchanting:endshelf"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "ENE",
+    "EEE"
+  ],
+  "result": {
+    "id": "apothic_enchanting:draconic_endshelf",
+    "count": 1
+  }
+}

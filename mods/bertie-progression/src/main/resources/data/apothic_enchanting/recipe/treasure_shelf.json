@@ -1,0 +1,58 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2hostility"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "malum:block_of_hallowed_gold"
+    },
+    "B": {
+      "item": "anvilcraft:cursed_gold_block"
+    },
+    "C": {
+      "item": "l2complements:totemic_gold_block"
+    },
+    "D": {
+      "item": "malum:block_of_cthonic_gold"
+    },
+    "S": {
+      "item": "apothic_enchanting:deepshelf"
+    },
+    "G": {
+      "item": "l2hostility:miracle_ingot"
+    },
+    "T": {
+      "tag": "c:storage_blocks/emerald"
+    }
+  },
+  "pattern": [
+    "ASB",
+    "GTG",
+    "CSD"
+  ],
+  "result": {
+    "id": "apothic_enchanting:treasure_shelf",
+    "count": 1
+  }
+}

@@ -292,6 +292,66 @@ class ResourceDataTest {
                 .noneMatch(entry -> "bertieprogression:witch_droplet".equals(entry.getAsString())));
     }
 
+    @Test
+    void netheriteArmorUsesOnlyItsEligibleParentSets() throws IOException {
+        for (String family : List.of("netherite", "netherite_mage")) {
+            String namespace = family.equals("netherite") ? "minecraft" : "irons_spellbooks";
+            for (String slot : List.of("helmet", "chestplate", "leggings", "boots")) {
+                String tag = family + "_bases/" + slot;
+                JsonObject parents = JsonParser.parseString(Files.readString(
+                                RESOURCES.resolve("data/bertieprogression/tags/item/" + tag + ".json")))
+                        .getAsJsonObject();
+                Set<String> items = new HashSet<>();
+                parents.getAsJsonArray("values")
+                        .forEach(item ->
+                                items.add(item.getAsJsonObject().get("id").getAsString()));
+                assertTrue(parents.get("replace").getAsBoolean());
+                int expected = family.equals("netherite") ? 9 : slot.equals("chestplate") ? 11 : 10;
+                assertEquals(expected, items.size());
+                assertTrue(items.stream()
+                        .noneMatch(item -> item.contains("magehunter")
+                                || item.contains("bounty_hunter")
+                                || item.startsWith("minecraft:diamond_")));
+                String recipe = family + "_" + slot + (family.equals("netherite") ? "_smithing" : "");
+                JsonObject upgrade = JsonParser.parseString(Files.readString(
+                                RESOURCES.resolve("data/" + namespace + "/recipe/" + recipe + ".json")))
+                        .getAsJsonObject();
+                assertEquals(
+                        "bertieprogression:" + tag,
+                        upgrade.getAsJsonObject("base").get("tag").getAsString());
+                assertEquals(
+                        "minecraft:netherite_upgrade_smithing_template",
+                        upgrade.getAsJsonObject("template").get("item").getAsString());
+                if (family.equals("netherite_mage")) {
+                    Path alternate = RESOURCES.resolve("data/hazennstuff/recipe/smithing/cosmetic/armor/"
+                            + "netherite_battlemage/netherite_battlemage/netherite_battlemage_" + slot + ".json");
+                    assertTrue(Files.readString(alternate).contains("neoforge:false"));
+                }
+            }
+        }
+    }
+
+    @Test
+    void enchantingShelfBasesCannotUseAnArbitraryBookshelf() throws IOException {
+        Path recipes = RESOURCES.resolve("data/apothic_enchanting/recipe");
+        int bases = 0;
+        try (var paths = Files.walk(recipes)) {
+            for (Path path : paths.filter(p -> p.toString().endsWith(".json")).toList()) {
+                JsonObject recipe =
+                        JsonParser.parseString(Files.readString(path)).getAsJsonObject();
+                Set<String> values = new HashSet<>();
+                strings(recipe, values);
+                assertTrue(!values.contains("c:bookshelves"), path.toString());
+                if (recipe.has("key")) {
+                    bases += recipe.getAsJsonObject("key").asMap().values().stream()
+                            .filter(value -> value.toString().contains("apothic_enchanting:basic_bookshelf"))
+                            .count();
+                }
+            }
+        }
+        assertEquals(6, bases);
+    }
+
     private static void strings(JsonElement value, Set<String> into) {
         if (value.isJsonObject()) {
             value.getAsJsonObject().asMap().forEach((key, child) -> {

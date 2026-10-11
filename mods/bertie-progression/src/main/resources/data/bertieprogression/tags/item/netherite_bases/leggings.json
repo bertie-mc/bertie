@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "fantasy_armor:old_knight_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_leggings",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_leggings",
+      "required": false
+    },
+    {
+      "id": "armorcompletions:bone_reptile_leggings",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_leggings",
+      "required": false
+    }
+  ]
+}

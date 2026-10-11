@@ -1,14 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "lemons",
-  "pattern": [
-    "CSC",
-    "STS",
-    "CSC"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "key": {
     "C": {
-      "item": "minecraft:ender_chest"
+      "item": "malum:warp_flux"
     },
     "S": {
       "tag": "apothic_enchanting:infused_shelves"
@@ -17,6 +22,11 @@
       "item": "apothic_enchanting:apothic_enchanting_table"
     }
   },
+  "pattern": [
+    "CSC",
+    "STS",
+    "CSC"
+  ],
   "result": {
     "id": "apothic_enchanting:library",
     "count": 1

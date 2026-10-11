@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "fantasy_armor:old_knight_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:forgotten_trace_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:eclipse_soldier_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:fog_guard_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:wind_worshipper_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:redeemer_boots",
+      "required": false
+    },
+    {
+      "id": "fantasy_armor:thief_boots",
+      "required": false
+    },
+    {
+      "id": "armorcompletions:bone_reptile_boots",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_boots",
+      "required": false
+    }
+  ]
+}

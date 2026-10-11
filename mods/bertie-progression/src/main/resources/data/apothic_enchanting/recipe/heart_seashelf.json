@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "I": {
+      "item": "apothic_enchanting:infused_seashelf"
+    },
+    "P": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "pattern": [
+    "PHP",
+    "PIP",
+    "PPP"
+  ],
+  "result": {
+    "id": "apothic_enchanting:heart_seashelf",
+    "count": 1
+  }
+}

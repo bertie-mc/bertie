@@ -1,0 +1,45 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "hazennstuff:supreme_witch_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:alchemist_supreme_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:creaking_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:crystal_arachnid_helmet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_hunter_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:engineer_hood",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:pharaoh_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:cursium_mage_circlet",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:nautilus_knight_helmet",
+      "required": false
+    },
+    {
+      "id": "cataclysm_spellbooks:bloom_stone_hat",
+      "required": false
+    }
+  ]
+}

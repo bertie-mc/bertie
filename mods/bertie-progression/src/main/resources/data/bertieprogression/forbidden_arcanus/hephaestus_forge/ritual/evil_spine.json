@@ -6,7 +6,7 @@
   },
   "inputs": [
     {
-      "amount": 1,
+      "amount": 2,
       "ingredient": {
         "item": "curseofpandora:rotten_spine"
       }
@@ -26,7 +26,7 @@
   ],
   "magic_circle": "forbidden_arcanus:create_item",
   "main_ingredient": {
-    "item": "curseofpandora:rotten_spine"
+    "item": "hazennstuff:elder_guardian_spine"
   },
   "result": {
     "type": "forbidden_arcanus:create_item",

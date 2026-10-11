@@ -1,0 +1,61 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "malum:block_of_hallowed_gold"
+    },
+    "B": {
+      "item": "anvilcraft:cursed_gold_block"
+    },
+    "C": {
+      "item": "l2complements:totemic_gold_block"
+    },
+    "D": {
+      "item": "malum:block_of_cthonic_gold"
+    },
+    "I": {
+      "item": "apothic_enchanting:infused_hellshelf"
+    },
+    "P": {
+      "item": "irons_spellbooks:timeless_slurry"
+    },
+    "E": {
+      "item": "l2complements:guardian_eye"
+    },
+    "Y": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    "AIB",
+    "PEY",
+    "CID"
+  ],
+  "result": {
+    "id": "apothic_enchanting:sightshelf",
+    "count": 1
+  }
+}

@@ -3748,8 +3748,8 @@ write(f"{R}/silver_scraps.json", shaped(["DSS", "SSS", "SSD"],
 write("data/hazennstuff/loot_table/entities/additional_loot/additional_illager_loot.json", {"pools": []})
 
 write("data/curseofpandora/recipe/evil_spine.json", DISABLED)
-write(f"{RIT}/evil_spine.json", ritual("curseofpandora:rotten_spine",
-      [("curseofpandora:rotten_spine", 1), ("curseofpandora:eroded_spine", 2),
+write(f"{RIT}/evil_spine.json", ritual("hazennstuff:elder_guardian_spine",
+      [("curseofpandora:rotten_spine", 2), ("curseofpandora:eroded_spine", 2),
        ("curseofpandora:dried_spine", 2)], "curseofpandora:evil_spine", tier=1,
       essences={"aureal": 320, "blood": 4000, "souls": 0}))
 write(f"{R}/malum/nightmare_fuel.json", infusion("malum:block_of_arcane_charcoal", 3,
@@ -3771,6 +3771,86 @@ write("data/endrem/loot_table/minecraft/entities/witch.json", {"pools": [{
         "enchanted_chance": {"type": "minecraft:linear", "base": 0.13, "per_level_above_first": 0.03}}],
     "entries": [{"type": "minecraft:item", "name": "endrem:witch_pupil"}],
 }]})
+
+# ================================================================ ENCHANTING AND NETHER UPGRADES
+_shelves = {
+    "blazing_hellshelf": (["RRR", "RIR", "RRR"], {"R": "minecraft:blaze_rod", "I": "apothic_enchanting:infused_hellshelf"}),
+    "glowing_hellshelf": (["GGG", "GIG", "GGG"], {"G": "minecraft:glowstone", "I": "apothic_enchanting:infused_hellshelf"}),
+    "hellshelf": (["NNN", "BOP", "NNN"], {"N": "minecraft:nether_bricks", "B": "twilightforest:fiery_ingot", "O": "apothic_enchanting:basic_bookshelf", "P": "twilightforest:fiery_tears"}),
+    "seashelf": (["PPP", "OBU", "PPP"], {"P": "minecraft:prismarine_bricks", "O": "l2complements:hard_ice", "B": "apothic_enchanting:basic_bookshelf", "U": "minecraft:pufferfish"}),
+    "crystal_seashelf": (["LLL", "LIL", "LLL"], {"L": "minecraft:sea_lantern", "I": "apothic_enchanting:infused_seashelf"}),
+    "heart_seashelf": (["PHP", "PIP", "PPP"], {"H": "minecraft:heart_of_the_sea", "I": "apothic_enchanting:infused_seashelf", "P": "minecraft:prismarine_shard"}),
+    "endshelf": (["EEE", "IBN", "EEE"], {"E": "minecraft:end_stone_bricks", "I": "apothic_enchanting:infused_breath", "B": "apothic_enchanting:basic_bookshelf", "N": "malum:warp_flux"}),
+    "pearl_endshelf": (["EEE", "NDN", "EEE"], {"E": "minecraft:end_rod", "N": "malum:warp_flux", "D": "apothic_enchanting:endshelf"}),
+    "draconic_endshelf": (["DDD", "ENE", "EEE"], {"D": "minecraft:dragon_head", "E": "#c:ender_pearls", "N": "apothic_enchanting:endshelf"}),
+    "filtering_shelf": (["PSP", "OHO", "PSP"], {"P": "minecraft:prismarine_bricks", "S": "apothic_enchanting:infused_seashelf", "O": "curseofpandora:spellbound_orb", "H": "minecraft:heart_of_the_sea"}),
+    "beeshelf": (["HBH", "OKO", "HBH"], {"H": "minecraft:honeycomb", "B": "minecraft:beehive", "O": "minecraft:honey_block", "K": "apothic_enchanting:basic_bookshelf"}),
+    "geode_shelf": (["CCC", "CBC", "CUC"], {"C": "minecraft:calcite", "B": "apothic_enchanting:basic_bookshelf", "U": "minecraft:budding_amethyst"}),
+    "melonshelf": (["MMM", "GBG", "MMM"], {"M": "minecraft:melon", "G": "minecraft:glistering_melon_slice", "B": "apothic_enchanting:basic_bookshelf"}),
+    "library": (["CSC", "STS", "CSC"], {"C": "malum:warp_flux", "S": "#apothic_enchanting:infused_shelves", "T": "apothic_enchanting:apothic_enchanting_table"}),
+}
+for _kind, _top, _bottom in (("echoing", "minecraft:echo_shard", "#minecraft:candles"),
+                            ("soul_touched", "minecraft:soul_lantern", "minecraft:sculk")):
+    _shelves[f"{_kind}_deepshelf"] = (["SES", "ABA", "CCC"], {
+        "S": "minecraft:sculk_sensor", "E": _top, "A": "minecraft:sculk_catalyst",
+        "B": "apothic_enchanting:deepshelf", "C": _bottom})
+    _shelves[f"{_kind}_sculkshelf"] = (["HTH", "SBS", "SCS"], {
+        "H": "minecraft:sculk_shrieker", "T": "apothic_enchanting:warden_tendril", "S": "minecraft:sculk",
+        "B": f"apothic_enchanting:{_kind}_deepshelf", "C": "minecraft:sculk_catalyst"})
+_shelf_gold = {"A": "malum:block_of_hallowed_gold", "B": "anvilcraft:cursed_gold_block",
+               "C": "l2complements:totemic_gold_block", "D": "malum:block_of_cthonic_gold"}
+_shelves["sightshelf"] = (["AIB", "PEY", "CID"], {
+    **_shelf_gold, "I": "apothic_enchanting:infused_hellshelf", "P": "irons_spellbooks:timeless_slurry",
+    "E": "l2complements:guardian_eye", "Y": "minecraft:spyglass"})
+_shelves["treasure_shelf"] = (["ASB", "GTG", "CSD"], {
+    **_shelf_gold, "S": "apothic_enchanting:deepshelf", "G": "l2hostility:miracle_ingot", "T": "#c:storage_blocks/emerald"})
+for _name, (_pattern, _key) in _shelves.items():
+    write(f"data/apothic_enchanting/recipe/{_name}.json",
+          shaped(_pattern, _key, f"apothic_enchanting:{_name}"))
+write("data/apothic_enchanting/recipe/sightshelf_t2.json", {
+    "neoforge:conditions": conds("apothic_enchanting", "malum"),
+    "type": "minecraft:crafting_shaped", "pattern": ["EIE", "PSP", "EIE"],
+    "key": {"E": {"item": "minecraft:emerald_block"}, "I": {"item": "malum:malignant_pewter_ingot"},
+            "P": {"type": "neoforge:components", "components": {"minecraft:potion_contents": {"potion": "minecraft:long_night_vision"}}, "items": "minecraft:potion"},
+            "S": {"item": "apothic_enchanting:sightshelf"}},
+    "result": {"id": "apothic_enchanting:sightshelf_t2", "count": 1},
+})
+write("data/explorerscompass/recipe/explorers_compass.json", {
+    "neoforge:conditions": conds("explorerscompass", "naturescompass", "avaritia", "forbidden_arcanus", "berlordscarving", "malum"),
+    "type": "avaritia:shaped_table", "tier": 2,
+    "pattern": ["BPPPB", "PLSLP", "PSNSP", "PLSLP", "BPPPB"],
+    "key": {"B": {"item": "avaritia:blaze_cube"}, "P": {"item": "malum:malignant_pewter_plating"},
+            "L": {"item": "berlordscarving:black_steel_big_slate"}, "S": {"item": "forbidden_arcanus:spawner_scrap"},
+            "N": {"item": "naturescompass:naturescompass"}},
+    "result": {"id": "explorerscompass:explorerscompass", "count": 1},
+})
+
+_mage_bases = [_set["outputs"] for _set in _armour["tier2_sets"]
+               if _set["id"] in {"supreme_witch", "alchemist_supreme", "creaking", "crystal_arachnid",
+                                  "frostbite_hunter", "engineer", "pharaoh", "cursium_mage", "nautilus_knight"}]
+_mage_bases.append({"helmet": "cataclysm_spellbooks:bloom_stone_hat", "chestplate": "cataclysm_spellbooks:bloom_stone_chestplate",
+                    "leggings": "cataclysm_spellbooks:bloom_stone_skirt", "boots": "cataclysm_spellbooks:bloom_stone_greaves"})
+_netherite_bases = [_set["outputs"] for _set in _armour["fantasy_sets"]]
+_netherite_bases += [_set["outputs"] for _set in _armour["tier2_sets"] if _set["id"] in {"bone_reptile", "cursium"}]
+assert len(_mage_bases) == 10 and len(_netherite_bases) == 9
+for _slot in ("helmet", "chestplate", "leggings", "boots"):
+    for _family, _bases in (("netherite_mage", _mage_bases), ("netherite", _netherite_bases)):
+        _tag = f"{_family}_bases/{_slot}"
+        _values = [{"id": _pieces[_slot], "required": False} for _pieces in _bases]
+        if _family == "netherite_mage" and _slot == "chestplate":
+            _values.append({"id": "cataclysm_spellbooks:cursium_mage_elytra", "required": False})
+        write(f"data/{MODID}/tags/item/{_tag}.json", {"replace": True, "values": _values})
+        _ns = "irons_spellbooks" if _family == "netherite_mage" else "minecraft"
+        _path = f"data/{_ns}/recipe/{_family}_{_slot}" + ("" if _ns == "irons_spellbooks" else "_smithing") + ".json"
+        write(_path, {"type": "minecraft:smithing_transform",
+            "base": {"tag": f"{MODID}:{_tag}"}, "template": {"item": "minecraft:netherite_upgrade_smithing_template"},
+            "addition": {"tag": "c:ingots/netherite"} if _ns == "irons_spellbooks" else {"item": "minecraft:netherite_ingot"},
+            "result": {"id": f"{_ns}:{_family}_{_slot}", "count": 1}})
+    write(f"data/hazennstuff/recipe/smithing/cosmetic/armor/netherite_battlemage/netherite_battlemage/netherite_battlemage_{_slot}.json", DISABLED)
+
+_ender_heads = [f"hazennstuff:shadowwalker_enderman_{_variant}" for _variant in ("hood", "masked", "blindfold")]
+for _i, _head in enumerate(_ender_heads):
+    write(f"{R}/armour/shadowwalker_enderman_{_i}.json", shapeless([_head], _ender_heads[(_i + 1) % len(_ender_heads)]))
 
 # ================================================================ RAVAGER HIDE
 write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",
@@ -5357,6 +5437,12 @@ print(f"  merged tags: {len(_new_tags)} item tags rewritten without hidden ids")
 # Authored recipes and static overrides may have no matching stock path in the jar index.
 # Normalize the final data set as well, so compounds, rituals and custom tags cannot leak aliases.
 write("merged_items.json", _MERGE)
+with open(os.path.join(RES, BRICK_FORGE_BONUS_PATH), encoding="utf-8") as _f:
+    _bonus_table = json.load(_f)
+write(BRICK_FORGE_BONUS_PATH, dict(sorted({
+    _MERGE.get(_ingot, _ingot): _MERGE.get(_block, _block)
+    for _ingot, _block in _bonus_table.items()
+}.items())))
 _normalized = 0
 for _directory, _, _files in os.walk(os.path.join(RES, "data")):
     for _filename in sorted(_files):

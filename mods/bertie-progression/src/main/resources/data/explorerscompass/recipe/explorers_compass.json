@@ -1,0 +1,58 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "explorerscompass"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "naturescompass"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "BPPPB",
+    "PLSLP",
+    "PSNSP",
+    "PLSLP",
+    "BPPPB"
+  ],
+  "key": {
+    "B": {
+      "item": "avaritia:blaze_cube"
+    },
+    "P": {
+      "item": "malum:malignant_pewter_plating"
+    },
+    "L": {
+      "item": "berlordscarving:black_steel_big_slate"
+    },
+    "S": {
+      "item": "forbidden_arcanus:spawner_scrap"
+    },
+    "N": {
+      "item": "naturescompass:naturescompass"
+    }
+  },
+  "result": {
+    "id": "explorerscompass:explorerscompass",
+    "count": 1
+  }
+}

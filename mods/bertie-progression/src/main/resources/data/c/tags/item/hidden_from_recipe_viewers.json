@@ -1315,14 +1315,6 @@
       "required": false
     },
     {
-      "id": "hazennstuff:how_did_you_find_the_hazel_chestplate",
-      "required": false
-    },
-    {
-      "id": "hazennstuff:how_did_you_find_the_mothic_witch_chestplate",
-      "required": false
-    },
-    {
       "id": "moonlight:placeable_item",
       "required": false
     }

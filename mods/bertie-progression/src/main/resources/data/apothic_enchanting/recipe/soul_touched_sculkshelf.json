@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:sculk_shrieker"
+    },
+    "T": {
+      "item": "apothic_enchanting:warden_tendril"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "B": {
+      "item": "apothic_enchanting:soul_touched_deepshelf"
+    },
+    "C": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  },
+  "pattern": [
+    "HTH",
+    "SBS",
+    "SCS"
+  ],
+  "result": {
+    "id": "apothic_enchanting:soul_touched_sculkshelf",
+    "count": 1
+  }
+}
