@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (445)
+## Mods (444)
 
 | Mod |
 |---|
@@ -417,7 +417,6 @@
 | `villages-and-pillages` |
 | `vision-enchantment` |
 | `visual-workbench` |
-| `waystones` |
 | `wfs-cave-overhaul` |
 | `what-are-they-up-to` |
 | `whats-that-slot` |

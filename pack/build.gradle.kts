@@ -342,7 +342,6 @@ dependencies {
     packComponents(deps.villagesAndPillages)
     packComponents(deps.visionEnchantment)
     packComponents(deps.visualWorkbench)
-    packComponents(deps.waystones)
     packComponents(deps.wfsCaveOverhaul)
     packComponents(deps.whatAreTheyUpTo)
     packComponents(deps.whatsThatSlot)

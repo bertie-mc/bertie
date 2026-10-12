@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "af5327af047ca4b19843b1ffcb7d6212bf0c13286165393c6591bcd384fd505d"
+inputs-hash = "30cb0b36199d98e81c916bb308e760ef9b34dae4b417f4afee717c9cb3897141"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1398,10 +1398,6 @@ mod = "modrinth:N80xH1o5:LuygpCRn"
 [components."visual-workbench"]
 any = "modrinth:kfqD1JRw:Jy5V5FNj"
 mod = "modrinth:kfqD1JRw:Jy5V5FNj"
-
-[components."waystones"]
-any = "modrinth:LOpKHB2A:CfDlUc6j"
-mod = "modrinth:LOpKHB2A:CfDlUc6j"
 
 [components."wfs-cave-overhaul"]
 any = "modrinth:bZRPxKjL:OrCz6Ku6"
@@ -4974,26 +4970,6 @@ optional = [{ "artifact" = "modrinth:AANobbMI:Pb3OXVqC", "mod-id" = "sodium", "v
 incompatible = []
 bundled = [{ "artifact" = "modrinth:yriKr10n:5RMWQ3C0", "mod-id" = "flywheel", "version-range" = "[1.0.0,2.0)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:56bnCCwq:CGRQn5ML", "mod-id" = "flywheel", "version-range" = "[1.0.0,2.0)", "side" = "client", "origin" = "archive" }]
 integrations = [{ "artifact" = "modrinth:qnQsVE2z:hMLnxKZx", "namespace" = "quark", "reason" = "ships data/quark/", "origin" = "archive-data" }, { "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:LOpKHB2A:CfDlUc6j"]
-name = "waystones"
-component = "waystones"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "LOpKHB2A"
-version = "CfDlUc6j"
-filename = "waystones-neoforge-1.21.1-21.1.34.jar"
-project-id = "LOpKHB2A"
-version-id = "CfDlUc6j"
-provides = ["waystones"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:MBAkmtvl:3XiinKbh", "mod-id" = "balm", "version-range" = "[21.0.39,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."modrinth:LPjGiSO4:3fv8O3xX"]
 name = "nullscape"

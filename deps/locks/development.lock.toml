@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "852791f92ae6f04180bc0299a48afa321326a759e060f010bd498d48e2b8513f"
+inputs-hash = "91f12fa27438a527cef5165bad8a84e72362836e7aa9f2b3b6701ca30b359346"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1398,10 +1398,6 @@ mod = "modrinth:N80xH1o5:LuygpCRn"
 [components."visual-workbench"]
 any = "modrinth:kfqD1JRw:Jy5V5FNj"
 mod = "modrinth:kfqD1JRw:Jy5V5FNj"
-
-[components."waystones"]
-any = "modrinth:LOpKHB2A:CfDlUc6j"
-mod = "modrinth:LOpKHB2A:CfDlUc6j"
 
 [components."wfs-cave-overhaul"]
 any = "modrinth:bZRPxKjL:OrCz6Ku6"
@@ -4770,26 +4766,6 @@ version-id = "qKL9jM75"
 provides = ["supermartijn642configlib"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:LOpKHB2A:CfDlUc6j"]
-name = "waystones"
-component = "waystones"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "LOpKHB2A"
-version = "CfDlUc6j"
-filename = "waystones-neoforge-1.21.1-21.1.34.jar"
-project-id = "LOpKHB2A"
-version-id = "CfDlUc6j"
-provides = ["waystones"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:MBAkmtvl:3XiinKbh", "mod-id" = "balm", "version-range" = "[21.0.39,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
