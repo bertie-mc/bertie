@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "cataclysm:amethyst_bless",
+  "ingredient": {
+    "item": "anvilcraft:lead_ingot"
+  },
+  "result": {
+    "id": "malum:malignant_lead"
+  },
+  "time": 200
+}

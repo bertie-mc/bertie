@@ -41,31 +41,6 @@
       "id": "cataclysm:black_steel_pickaxe",
       "required": false
     },
-    "#c:tools/paxel",
-    {
-      "id": "mekanismtools:bronze_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_pickaxe",
-      "required": false
-    },
     "#pastel:pickaxes",
     {
       "id": "avaritia:infinity_pickaxe",

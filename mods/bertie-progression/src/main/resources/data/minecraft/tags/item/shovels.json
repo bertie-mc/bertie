@@ -25,31 +25,6 @@
       "id": "cataclysm:black_steel_shovel",
       "required": false
     },
-    "#c:tools/paxel",
-    {
-      "id": "mekanismtools:bronze_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_shovel",
-      "required": false
-    },
     "#pastel:shovels",
     {
       "id": "avaritia:infinity_shovel",

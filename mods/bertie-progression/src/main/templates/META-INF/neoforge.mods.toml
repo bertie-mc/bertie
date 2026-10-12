@@ -752,13 +752,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="mekanismtools"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="minersdelight"
 type="optional"
 versionRange="[0,)"
@@ -914,6 +907,13 @@ side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="explorerscompass"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="apothic_spawners"
 type="optional"
 versionRange="[0,)"
 ordering="AFTER"

@@ -2,10 +2,6 @@
   "replace": true,
   "values": [
     {
-      "id": "illagerinvasion:platinum_sheet",
-      "required": false
-    },
-    {
       "id": "cataclysm:ignitium_ingot",
       "required": false
     },

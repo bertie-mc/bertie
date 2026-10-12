@@ -1,0 +1,9 @@
+{
+  "type": "apothic_enchanting:warden_tendril",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.0
+    }
+  ]
+}

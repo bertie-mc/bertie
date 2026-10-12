@@ -4,13 +4,16 @@
   "package": "io.github.bertie_mc.bertieprogression.mixin",
   "compatibilityLevel": "JAVA_21",
   "refmap": "bertieprogression.refmap.json",
+  "plugin": "io.github.bertie_mc.bertieprogression.compat.ProgressionMixinPlugin",
   "mixins": [
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
     "BabyWitherSkeletonOddsMixin",
     "BasinRecipeMixin",
+    "CuttingRecipeManagerMixin",
     "BlazeBurnerBlockEntityMixin",
     "DoctorPotionRemovalMixin",
+    "EnchantmentTransposerMixin",
     "DollMachineLotteryMixin",
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
@@ -20,7 +23,9 @@
     "RemovedPotionBrewingMixin",
     "RemovedTippedArrowMixin",
     "SequencedAssemblyRecipeMixin",
-    "VanityEntityItemPacketMixin"
+    "VanityEntityItemPacketMixin",
+    "WardenModelMixin",
+    "WardenStateMixin"
   ],
   "injectors": {
     "defaultRequire": 0

@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "30cb0b36199d98e81c916bb308e760ef9b34dae4b417f4afee717c9cb3897141"
+inputs-hash = "2f2c0c2fa121b6d84f7ad2d949e36d50779a69621862b181eb0a114c1044a05e"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -709,10 +709,6 @@ mod = "modrinth:VpmCsizY:kdvvFM7V"
 any = "modrinth:5faXoLqX:IMssx9du"
 mod = "modrinth:5faXoLqX:IMssx9du"
 
-[components."illager-invasion"]
-any = "modrinth:jSV9w0J5:9bEpNrvK"
-mod = "modrinth:jSV9w0J5:9bEpNrvK"
-
 [components."immersive-armors"]
 any = "modrinth:eE2Db4YU:B2YtQYCh"
 mod = "modrinth:eE2Db4YU:B2YtQYCh"
@@ -916,10 +912,6 @@ mod = "modrinth:OFVYKsAk:a6gl7srE"
 [components."mekanism-ponders"]
 any = "modrinth:yriKr10n:5RMWQ3C0"
 mod = "modrinth:yriKr10n:5RMWQ3C0"
-
-[components."mekanism-tools"]
-any = "modrinth:tqQpq1lt:v5zlSE9s"
-mod = "modrinth:tqQpq1lt:v5zlSE9s"
 
 [components."mekanismmoremachine"]
 any = "modrinth:qDJXZJTz:3EMTKSFL"
@@ -8286,26 +8278,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:jSV9w0J5:9bEpNrvK"]
-name = "illager-invasion"
-component = "illager-invasion"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "jSV9w0J5"
-version = "9bEpNrvK"
-filename = "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar"
-project-id = "jSV9w0J5"
-version-id = "9bEpNrvK"
-provides = ["illagerinvasion"]
-bundled-provides = ["extensibleenums"]
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:jgzwYsAN:BIbVs1fo"]
 name = "malum"
 component = "malum"
@@ -9711,26 +9683,6 @@ version-id = "kb8pGRQR"
 provides = ["placebo"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:tqQpq1lt:v5zlSE9s"]
-name = "mekanism-tools"
-component = "mekanism-tools"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "tqQpq1lt"
-version = "v5zlSE9s"
-filename = "MekanismTools-1.21.1-10.7.19.85.jar"
-project-id = "tqQpq1lt"
-version-id = "v5zlSE9s"
-provides = ["mekanismtools"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "mod-id" = "mekanism", "version-range" = "[10.7.19]", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

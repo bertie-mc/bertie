@@ -21,30 +21,6 @@
       "id": "mekanism:meka_tool",
       "required": false
     },
-    {
-      "id": "mekanismtools:bronze_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_pickaxe",
-      "required": false
-    },
     "#pastel:workstaffs",
     {
       "id": "pastel:tender_pickaxe",
@@ -64,14 +40,6 @@
     },
     {
       "id": "pastel:bedrock_pickaxe",
-      "required": false
-    },
-    {
-      "id": "quark:pickarang",
-      "required": false
-    },
-    {
-      "id": "quark:flamerang",
       "required": false
     },
     {

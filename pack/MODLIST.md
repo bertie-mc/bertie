@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (444)
+## Mods (442)
 
 | Mod |
 |---|
@@ -211,7 +211,6 @@
 | `ice-and-fire-spellbooks` |
 | `iceandfire-ce` |
 | `iceberg` |
-| `illager-invasion` |
 | `immersive-armors` |
 | `immersive-gateways` |
 | `improved-pillager-outpost` |
@@ -265,7 +264,6 @@
 | `mekanism-fission-recipe` |
 | `mekanism-generators` |
 | `mekanism-ponders` |
-| `mekanism-tools` |
 | `mekanism_extra` |
 | `mekanismmoremachine` |
 | `mes-moogs-end-structures` |

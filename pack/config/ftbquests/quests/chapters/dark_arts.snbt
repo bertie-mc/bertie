@@ -969,18 +969,6 @@
 			y: 14.0d
 		}
 		{
-			icon: { count: 1 id: "apothic_enchanting:prismatic_web" }
-			id: "1C0000000000104F"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100104F"
-				item: { count: 1 id: "apothic_enchanting:prismatic_web" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 14.0d
-		}
-		{
 			icon: { count: 1 id: "born_in_chaos_v1:armor_plate_from_dark_metal" }
 			id: "1C00000000001053"
 			tasks: [{

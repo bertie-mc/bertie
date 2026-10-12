@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_spawners"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    }
+  ],
+  "type": "apothic_spawners:spawner_modifier",
+  "mainhand": {
+    "item": "l2complements:resonant_feather"
+  },
+  "stat_changes": [
+    {
+      "type": "apothic_spawners:echoing",
+      "value": -1,
+      "min": 0
+    }
+  ],
+  "offhand": {
+    "item": "minecraft:quartz"
+  },
+  "consumes_offhand": false
+}

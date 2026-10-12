@@ -630,6 +630,14 @@ _FURNACE_PAT = ["III", "I I", "CNC"]
 _FURNACE_KEY = {"I": "minecraft:iron_ingot", "C": "minecraft:cobblestone", "N": "minecraft:netherrack"}
 write("data/minecraft/recipe/furnace.json", shaped(_FURNACE_PAT, _FURNACE_KEY, "minecraft:furnace"))
 write(f"{R}/mechanical/pre_table/furnace.json", mech(_FURNACE_PAT, _FURNACE_KEY, "minecraft:furnace"))
+_DEEP_FURNACE_KEY = {**_FURNACE_KEY, "C": "minecraft:cobbled_deepslate"}
+write("data/quark/recipe/building/crafting/furnaces/deepslate_furnace.json",
+      shaped(_FURNACE_PAT, _DEEP_FURNACE_KEY, "quark:deepslate_furnace"))
+write(f"{R}/mechanical/pre_table/deepslate_furnace.json",
+      mech(_FURNACE_PAT, _DEEP_FURNACE_KEY, "quark:deepslate_furnace"))
+write(f"data/{MODID}/tags/item/furnaces.json", {"replace": True, "values": [
+    "minecraft:furnace", {"id": "quark:deepslate_furnace", "required": False},
+    {"id": "quark:blackstone_furnace", "required": False}]})
 
 # ==================================================== Progression machine recipes
 # Every id below was verified in the pack instance jars (elemental_metals, iceandfire, malum,
@@ -637,7 +645,7 @@ write(f"{R}/mechanical/pre_table/furnace.json", mech(_FURNACE_PAT, _FURNACE_KEY,
 
 # --- Blast Furnace (table + mechanical), Clibano Core, Refined Brilliance smelts ---
 _BLAST_PAT = ["FFF", "FUF", "SMS"]
-_BLAST_KEY = {"F": "elemental_metals:fire_infused_iron_ingot", "U": "minecraft:furnace",
+_BLAST_KEY = {"F": "elemental_metals:fire_infused_iron_ingot", "U": "#bertieprogression:furnaces",
               "S": "minecraft:smooth_stone", "M": "minecraft:magma_block"}
 write("data/minecraft/recipe/blast_furnace.json", shaped(_BLAST_PAT, _BLAST_KEY, "minecraft:blast_furnace"))
 write(f"{R}/mechanical/pre_table/blast_furnace.json", mech(_BLAST_PAT, _BLAST_KEY, "minecraft:blast_furnace"))
@@ -3782,7 +3790,7 @@ _shelves = {
     "heart_seashelf": (["PHP", "PIP", "PPP"], {"H": "minecraft:heart_of_the_sea", "I": "apothic_enchanting:infused_seashelf", "P": "minecraft:prismarine_shard"}),
     "endshelf": (["EEE", "IBN", "EEE"], {"E": "minecraft:end_stone_bricks", "I": "apothic_enchanting:infused_breath", "B": "apothic_enchanting:basic_bookshelf", "N": "malum:warp_flux"}),
     "pearl_endshelf": (["EEE", "NDN", "EEE"], {"E": "minecraft:end_rod", "N": "malum:warp_flux", "D": "apothic_enchanting:endshelf"}),
-    "draconic_endshelf": (["DDD", "ENE", "EEE"], {"D": "minecraft:dragon_head", "E": "#c:ender_pearls", "N": "apothic_enchanting:endshelf"}),
+    "draconic_endshelf": (["DDD", "ENE", "ECE"], {"D": "minecraft:dragon_head", "E": "endermanoverhaul:enderman_tooth", "C": "endermanoverhaul:corrupted_pearl", "N": "apothic_enchanting:endshelf"}),
     "filtering_shelf": (["PSP", "OHO", "PSP"], {"P": "minecraft:prismarine_bricks", "S": "apothic_enchanting:infused_seashelf", "O": "curseofpandora:spellbound_orb", "H": "minecraft:heart_of_the_sea"}),
     "beeshelf": (["HBH", "OKO", "HBH"], {"H": "minecraft:honeycomb", "B": "minecraft:beehive", "O": "minecraft:honey_block", "K": "apothic_enchanting:basic_bookshelf"}),
     "geode_shelf": (["CCC", "CBC", "CUC"], {"C": "minecraft:calcite", "B": "apothic_enchanting:basic_bookshelf", "U": "minecraft:budding_amethyst"}),
@@ -3803,14 +3811,14 @@ _shelves["sightshelf"] = (["AIB", "PEY", "CID"], {
     **_shelf_gold, "I": "apothic_enchanting:infused_hellshelf", "P": "irons_spellbooks:timeless_slurry",
     "E": "l2complements:guardian_eye", "Y": "minecraft:spyglass"})
 _shelves["treasure_shelf"] = (["ASB", "GTG", "CSD"], {
-    **_shelf_gold, "S": "apothic_enchanting:deepshelf", "G": "l2hostility:miracle_ingot", "T": "#c:storage_blocks/emerald"})
+    **_shelf_gold, "S": "apothic_enchanting:deepshelf", "G": "l2hostility:miracle_ingot", "T": "elemental_metals:arcane_infused_netherite_block"})
 for _name, (_pattern, _key) in _shelves.items():
     write(f"data/apothic_enchanting/recipe/{_name}.json",
           shaped(_pattern, _key, f"apothic_enchanting:{_name}"))
 write("data/apothic_enchanting/recipe/sightshelf_t2.json", {
-    "neoforge:conditions": conds("apothic_enchanting", "malum"),
+    "neoforge:conditions": conds("apothic_enchanting", "malum", "berlordscarving"),
     "type": "minecraft:crafting_shaped", "pattern": ["EIE", "PSP", "EIE"],
-    "key": {"E": {"item": "minecraft:emerald_block"}, "I": {"item": "malum:malignant_pewter_ingot"},
+    "key": {"E": {"item": "berlordscarving:emerald_big_slate"}, "I": {"item": "malum:malignant_pewter_ingot"},
             "P": {"type": "neoforge:components", "components": {"minecraft:potion_contents": {"potion": "minecraft:long_night_vision"}}, "items": "minecraft:potion"},
             "S": {"item": "apothic_enchanting:sightshelf"}},
     "result": {"id": "apothic_enchanting:sightshelf_t2", "count": 1},
@@ -3851,6 +3859,68 @@ for _slot in ("helmet", "chestplate", "leggings", "boots"):
 _ender_heads = [f"hazennstuff:shadowwalker_enderman_{_variant}" for _variant in ("hood", "masked", "blindfold")]
 for _i, _head in enumerate(_ender_heads):
     write(f"{R}/armour/shadowwalker_enderman_{_i}.json", shapeless([_head], _ender_heads[(_i + 1) % len(_ender_heads)]))
+
+write("data/explorerscompass/recipe/repair_explorers_compass.json", DISABLED)
+write("data/anvilcraft/recipe/smithing/royal_grindstone.json", {
+    "type": "minecraft:smithing_transform",
+    "template": {"item": "anvilcraft:royal_steel_upgrade_smithing_template"},
+    "base": {"item": "cognition:precision_dispeller"},
+    "addition": {"item": "anvilcraft:royal_steel_block"},
+    "result": {"id": "anvilcraft:royal_grindstone", "count": 1},
+    "neoforge:conditions": conds("anvilcraft", "cognition"),
+})
+_hungry_tome = shaped(["BGB", "LXL", "VEV"], {
+    "B": "malum:refined_brilliance", "G": "armageddon_mod:gilded_plate",
+    "L": "berlordscarving:lapis_slate", "X": "minecraft:book",
+    "V": "malum:void_salts", "E": "enigmaticlegacyplus:earth_heart"},
+    "enigmaticlegacyplus:enchantment_transposer")
+_hungry_tome["type"] = "enigmaticlegacyplus:cursed_shaped"
+write("data/enigmaticlegacyplus/recipe/enchantment_transposer.json", _hungry_tome)
+for _source, _target in (("hex_ash", "void_salts"), ("refined_soulstone", "null_slate"),
+                         ("refined_brilliance", "mnemonic_fragment")):
+    write(f"{R}/amethyst/{_target}.json", {
+        "neoforge:conditions": conds("cataclysm", "malum"), "type": "cataclysm:amethyst_bless",
+        "ingredient": {"item": f"malum:{_source}"}, "result": {"id": f"malum:{_target}"}, "time": 200})
+for _source, _target in (("minecraft:blaze_powder", "auric_embers"), ("mekanism:ingot_lead", "malignant_lead")):
+    write(f"{R}/amethyst/{_target}.json", {
+        "neoforge:conditions": conds("cataclysm", "malum", *external_mods(_source)), "type": "cataclysm:amethyst_bless",
+        "ingredient": {"item": _source}, "result": {"id": f"malum:{_target}"}, "time": 200})
+
+_spawner_modifiers = {
+    "burning": ("l2complements:sun_membrane", "burning", True, None, None),
+    "echoing": ("l2complements:resonant_feather", "echoing", 1, 0, 3),
+    "ignore_conditions": ("l2complements:force_field", "ignore_conditions", True, None, None),
+    "ignore_light": ("l2complements:soul_flame", "ignore_light", True, None, None),
+    "ignore_players": ("l2complements:guardian_eye", "ignore_players", True, None, None),
+    "initial_health": ("cataclysm:cursium_ingot", "initial_health", -0.05, 0.2, 1),
+    "max_delay": ("cataclysm:witherite_ingot", "max_delay", -20, 20, 1600),
+    "max_nearby": ("cataclysm:ignitium_ingot", "max_nearby_entities", 2, 1, 32),
+    "min_delay": ("aquamirae:abyssal_amethyst", "min_delay", -10, 20, 1600),
+    "no_ai": ("l2complements:captured_wind", "no_ai", True, None, None),
+    "player_range": ("curseofpandora:barbaric_edge", "req_player_range", 4, 1, 48),
+    "redstone_control": ("minecraft:comparator", "redstone_control", True, None, None),
+    "silent": ("#minecraft:wool", "silent", True, None, None),
+    "spawn_count": ("cataclysm:ancient_metal_ingot", "spawn_count", 2, 1, 16),
+    "spawn_range": ("minecraft:piston", "spawn_range", 1, 1, 32),
+    "youthful": ("minecraft:sniffer_egg", "youthful", True, None, None),
+}
+for _name, (_item, _stat, _amount, _minimum, _maximum) in _spawner_modifiers.items():
+    for _inverse in (False, True):
+        _value = (not _amount if isinstance(_amount, bool) else -_amount) if _inverse else _amount
+        _change = {"type": f"apothic_spawners:{_stat}", "value": _value}
+        if not isinstance(_value, bool):
+            _change["max" if _value > 0 else "min"] = _maximum if _value > 0 else _minimum
+        _recipe = {"neoforge:conditions": conds("apothic_spawners", *external_mods(_item)),
+                   "type": "apothic_spawners:spawner_modifier",
+                   "mainhand": {"tag": _item[1:]} if _item.startswith("#") else {"item": _item},
+                   "stat_changes": [_change]}
+        if _inverse:
+            _recipe.update({"offhand": {"item": "minecraft:quartz"}, "consumes_offhand": False})
+        write("data/apothic_spawners/recipe/spawner_modifiers/" + ("_inverse/" if _inverse else "") + _name + ".json", _recipe)
+write("data/apothic_enchanting/loot_modifiers/warden_tendril.json", {
+    "type": "apothic_enchanting:warden_tendril",
+    "conditions": [{"condition": "minecraft:random_chance", "chance": 0.0}],
+})
 
 # ================================================================ RAVAGER HIDE
 write("data/quark/recipe/oddities/crafting/bonded_ravager_hide.json",
@@ -4327,23 +4397,10 @@ write(f"{RIT}/backpack/advanced_mob_catcher_upgrade.json", {
 # --- Quark's second route to the furnaces --------------------------------------------------------
 # Quark rebuilds vanilla's eight-stone furnace under its own id, which walked straight past the
 # override on the vanilla path, and its two variant Blast Furnaces are vanilla's shape as well.
-# The furnace copy goes; the two variants keep their block in the middle so both stay upgradable,
-# around the same frame the pack's own Blast Furnace uses.
+# The furnace copy goes; the furnace variants upgrade through the single tagged base recipe.
 write("data/quark/recipe/building/crafting/furnaces/mixed_furnace.json", DISABLED)
-# The Deepslate Furnace leaves the pack, so its Blast Furnace route goes with it. The Blackstone
-# one stays and keeps its own block in the middle of the pack's own frame, so it is still worth
-# building one to upgrade.
 write("data/quark/recipe/building/crafting/furnaces/deepslate_blast_furnace.json", DISABLED)
-write("data/quark/recipe/building/crafting/furnaces/blackstone_blast_furnace.json", {
-    "neoforge:conditions": conds("quark", "elemental_metals"),
-    "type": "minecraft:crafting_shaped", "category": "misc",
-    "key": {"F": {"item": "elemental_metals:fire_infused_iron_ingot"},
-            "U": {"item": "quark:blackstone_furnace"},
-            "S": {"item": "minecraft:smooth_stone"},
-            "M": {"item": "minecraft:magma_block"}},
-    "pattern": ["FFF", "FUF", "SMS"],
-    "result": {"count": 1, "id": "minecraft:blast_furnace"},
-})
+write("data/quark/recipe/building/crafting/furnaces/blackstone_blast_furnace.json", DISABLED)
 # And the Blackstone Furnace itself is a cap of gold over a course of blackstone.
 write("data/quark/recipe/building/crafting/furnaces/blackstone_furnace.json", {
     "neoforge:conditions": conds("quark"),

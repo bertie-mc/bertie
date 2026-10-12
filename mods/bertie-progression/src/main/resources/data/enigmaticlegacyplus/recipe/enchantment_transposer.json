@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "armageddon_mod"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enigmaticlegacyplus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "enigmaticlegacyplus:cursed_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "malum:refined_brilliance"
+    },
+    "G": {
+      "item": "armageddon_mod:gilded_plate"
+    },
+    "L": {
+      "item": "berlordscarving:lapis_slate"
+    },
+    "X": {
+      "item": "minecraft:book"
+    },
+    "V": {
+      "item": "malum:void_salts"
+    },
+    "E": {
+      "item": "enigmaticlegacyplus:earth_heart"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "LXL",
+    "VEV"
+  ],
+  "result": {
+    "id": "enigmaticlegacyplus:enchantment_transposer",
+    "count": 1
+  }
+}

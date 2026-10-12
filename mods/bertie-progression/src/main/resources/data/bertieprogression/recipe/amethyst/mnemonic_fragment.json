@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "cataclysm:amethyst_bless",
+  "ingredient": {
+    "item": "malum:refined_brilliance"
+  },
+  "result": {
+    "id": "malum:mnemonic_fragment"
+  },
+  "time": 200
+}

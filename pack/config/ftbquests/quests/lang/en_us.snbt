@@ -1766,12 +1766,6 @@
 	quest.7B00000000000295.title: "Prometheum Battleaxe"
 	quest.7B00000000000299.title: "The Ender"
 	quest.7B0000000000029A.title: "Shield"
-	quest.7B0000000000029B.title: "Bronze Shield"
-	quest.7B0000000000029C.title: "Steel Shield"
-	quest.7B0000000000029D.title: "Osmium Shield"
-	quest.7B0000000000029E.title: "Lapis Lazuli Shield"
-	quest.7B0000000000029F.title: "Refined Glowstone Shield"
-	quest.7B000000000002A0.title: "Refined Obsidian Shield"
 	quest.7B000000000002A1.title: "Knightmetal Shield"
 	quest.7B000000000002A2.title: "Stony Shield"
 	quest.7B000000000002A3.title: "Maledictum Shield"
@@ -2110,8 +2104,6 @@
 	quest.1C0000000000104A.quest_desc: ["Membranes and webs"]
 	quest.1C0000000000104E.title: "Cobweb"
 	quest.1C0000000000104E.quest_desc: ["Membranes and webs"]
-	quest.1C0000000000104F.title: "Prismatic Cobweb"
-	quest.1C0000000000104F.quest_desc: ["Membranes and webs"]
 	quest.1C00000000001053.title: "Dark Metal Armor Plate"
 	quest.1C00000000001053.quest_desc: ["Forge materials"]
 	quest.1C00000000001054.title: "Silver Scraps"
@@ -2261,4 +2253,5 @@
 	quest.5C00000000000001.quest_desc: ["Build a Steel Casing to enter the Age of Technology."]
 	quest.7B00000000000093.title: "Hazel Set"
 	quest.7B000000000000A3.title: "Mothic Witch Set"
+	quest.2B00000000004000.title: "The Basic Bookshelf"
 }

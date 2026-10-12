@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:freigeist",
+      "required": false
+    },
+    {
+      "id": "pastel:knowledge_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:crafting_tablet",
+      "required": false
+    },
+    {
+      "id": "pastel:nectardew_burgeon",
+      "required": false
+    },
+    {
+      "id": "pastel:evernectar",
+      "required": false
+    }
+  ]
+}

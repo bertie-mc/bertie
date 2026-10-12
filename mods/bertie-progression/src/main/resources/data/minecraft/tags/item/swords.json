@@ -149,30 +149,6 @@
       "id": "cataclysm:ceraunus",
       "required": false
     },
-    {
-      "id": "mekanismtools:bronze_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_sword",
-      "required": false
-    },
     "#pastel:swords",
     {
       "id": "avaritia:infinity_sword",

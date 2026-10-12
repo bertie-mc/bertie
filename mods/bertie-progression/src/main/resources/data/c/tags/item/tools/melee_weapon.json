@@ -1,54 +1,6 @@
 {
   "replace": true,
   "values": [
-    {
-      "id": "mekanismtools:bronze_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:bronze_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_sword",
-      "required": false
-    },
     "#pastel:swords",
     "#pastel:axes",
     "#pastel:bidents",

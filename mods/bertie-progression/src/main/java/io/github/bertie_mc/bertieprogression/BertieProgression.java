@@ -54,6 +54,8 @@ public final class BertieProgression {
         modBus.register(EldritchTabGaps.class);
         // ModifyDefaultComponentsEvent is a mod-bus event as well.
         modBus.register(TrinketConversions.class);
+        modBus.register(io.github.bertie_mc.bertieprogression.compat.CursedTomeRules.class);
+        NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.warden.WardenRules.class);
         // RegisterCapabilitiesEvent is a mod-bus event too. The class guards on create + curios.
         modBus.register(ExtendoGripCurio.class);
 

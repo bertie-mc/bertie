@@ -116,10 +116,6 @@
     },
     "#hangglider:hang_gliders",
     {
-      "id": "illagerinvasion:platinum_infused_hatchet",
-      "required": false
-    },
-    {
       "id": "cataclysm:black_steel_targe",
       "required": false
     },
@@ -137,31 +133,6 @@
     },
     {
       "id": "mekanism:hdpe_elytra",
-      "required": false
-    },
-    "#c:tools/paxel",
-    {
-      "id": "mekanismtools:bronze_shield",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_shield",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_shield",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_shield",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_shield",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_shield",
       "required": false
     },
     {
@@ -913,10 +884,6 @@
     },
     {
       "id": "twilightforest:crumble_horn",
-      "required": false
-    },
-    {
-      "id": "waystones:warp_stone",
       "required": false
     },
     {

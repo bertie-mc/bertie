@@ -13,30 +13,6 @@
       "id": "cataclysm:black_steel_hoe",
       "required": false
     },
-    {
-      "id": "mekanismtools:bronze_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:lapis_lazuli_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:osmium_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_obsidian_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:steel_hoe",
-      "required": false
-    },
     "#pastel:hoes",
     {
       "id": "avaritia:infinity_hoe",

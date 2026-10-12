@@ -1,17 +1,30 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:false"
+      "type": "neoforge:mod_loaded",
+      "modid": "quark"
     }
   ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    "N": {
+      "item": "minecraft:netherrack"
     }
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "CNC"
   ],
   "result": {
-    "id": "minecraft:stone",
+    "id": "quark:deepslate_furnace",
     "count": 1
   }
 }

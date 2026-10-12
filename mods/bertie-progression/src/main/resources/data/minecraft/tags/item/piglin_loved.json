@@ -35,30 +35,6 @@
     "#c:dirty_dusts/gold",
     "#c:clumps/gold",
     {
-      "id": "mekanismtools:refined_glowstone_pickaxe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_axe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_shovel",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_hoe",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_sword",
-      "required": false
-    },
-    {
-      "id": "mekanismtools:refined_glowstone_shield",
-      "required": false
-    },
-    {
       "id": "mynethersdelight:golden_egg",
       "required": false
     },

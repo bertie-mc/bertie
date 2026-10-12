@@ -16,15 +16,15 @@ recipe changes used to connect the pack's exploration, technology and magic syst
 
 | Item | Role |
 |---|---|
-| `crafting_license` | the gate token — carrying it is what unlocks gated recipes |
+| `crafting_license` | the gate token â€” carrying it is what unlocks gated recipes |
 | `descent_anchor` | descent gating |
 | `weeping_eye` | locator for the weeping structures |
 | `finder` / `locator` | structure-finding items |
 | `pocket_watch` | consume once to permanently unlock Pocket Dimension's Open Portal key |
 | `green_plushie_token` / `yellow_plushie_token` / `purple_plushie_token` | Doll Machine tokens for the green, yellow and purple gift boxes; four of one colour craft one of the next |
 
-Plus the current material chain — dragonbone frames and braces, ignitium struts and lattices,
-kinetic vanes and pattern plates, seals, resonances and attunements — each with its own
+Plus the current material chain â€” dragonbone frames and braces, ignitium struts and lattices,
+kinetic vanes and pattern plates, seals, resonances and attunements â€” each with its own
 texture under `assets/bertieprogression/textures/item/`.
 
 ### Blocks
@@ -43,7 +43,7 @@ watch. The block and watch are in the Bertie Progression creative tab; recipes a
 loot sources are not assigned yet.
 
 The watch has a fixed clock hand over a clockwise purple swirl. Its animation uses
-sixteen 16×16 frames, advancing every two ticks (a 1.6-second loop). The case and
+sixteen 16Ã—16 frames, advancing every two ticks (a 1.6-second loop). The case and
 hand share the same pixel grid, with nine flat colors and fully opaque or transparent pixels.
 
 The Pocket Dimension integration targets version 2.9 and loads only when that mod is
@@ -53,33 +53,33 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Systems
 
-- **Combat integration** (`combat/`) — shared Physical, Magic, Energy and Pure rules,
+- **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.
   See [Combat integration](docs/combat.md) for formulas, coverage and retained exceptions.
-- **Crafting gate** (`gate/CraftingGateHandler`) — recipes are withheld until the player
+- **Crafting gate** (`gate/CraftingGateHandler`) â€” recipes are withheld until the player
   holds the corresponding licence.
-- **Catalyst recipes** (`recipe/CatalystShapedRecipe`) — a shaped recipe that requires a
+- **Catalyst recipes** (`recipe/CatalystShapedRecipe`) â€” a shaped recipe that requires a
   catalyst item present but does not consume it.
-- **Hephaestus Forge integration** (`forge/`) — bed recipes, forge bed handling and
+- **Hephaestus Forge integration** (`forge/`) â€” bed recipes, forge bed handling and
   pedestal formation rules integrated with Forbidden & Arcanus.
-- **EMI integration** (`emi/`) — built-in Mallet Work and Ominous Fan recipes, plus pack-specific
+- **EMI integration** (`emi/`) â€” built-in Mallet Work and Ominous Fan recipes, plus pack-specific
   item visibility policy.
-- **Doll Machine** (`doll/DollLottery`) — Kaleidoscope Doll's machine takes Plushie Tokens and
+- **Doll Machine** (`doll/DollLottery`) â€” Kaleidoscope Doll's machine takes Plushie Tokens and
   deals only mob dolls; a yellow box holds a special doll 10% of the time and a purple box 50%.
   Each mob doll also drops from its own mob when a player kills it: 1%, or 5% for the Warden,
   Elder Guardian and Iron Golem and 10% for the Ender Dragon and Wither.
-- **Baby wither skeletons** (`BabyWitherSkeletonSpeed`, `BabyWitherSkeletonOddsMixin`) — Tiny
+- **Baby wither skeletons** (`BabyWitherSkeletonSpeed`, `BabyWitherSkeletonOddsMixin`) â€” Tiny
   Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
-- **Removed items** (`RemovedItems`) — items withdrawn from the pack's progression.
-- **No Mundane Potion** (`PotionBrewingBuilderMixin`) — no brewing mix produces it, and its
+- **Removed items** (`RemovedItems`) â€” items withdrawn from the pack's progression.
+- **No Mundane Potion** (`PotionBrewingBuilderMixin`) â€” no brewing mix produces it, and its
   potion, splash, lingering and tipped-arrow forms are hidden from creative tabs and EMI. Recipes
   and loot that named it are re-emitted without it: Timeless Slurry brews from a Thick Potion and
   colour film develops from the Awkward and Thick potions alone.
-- **Vanity projectile sync** (`VanityEntityItemPacketMixin`) — a projectile that drops no item
+- **Vanity projectile sync** (`VanityEntityItemPacketMixin`) â€” a projectile that drops no item
   is sent to Vanity as a plain arrow, because Vanity's packet cannot encode an empty stack and
   the failure disconnected the player.
-- **Client startup** (`startup/`) — MidnightLib config registration runs under its class monitor.
+- **Client startup** (`startup/`) â€” MidnightLib config registration runs under its class monitor.
   Parallel mod constructors cannot change the shared entry map while another registration reads it.
   The optional mixin preserves the library's method body, entry order and exception handling.
 
@@ -209,6 +209,26 @@ upgrades use the revised complete layouts and materials in `texture-work/gen_dat
 Sight and treasure recipes use one each of Hallowed, Cursed, Totemic and Cthonic Gold
 Blocks in reading order: top-left, top-right, bottom-left, bottom-right.
 
+Wardens can be sheared once for one Warden Tendril. The saved state synchronizes to clients,
+where both head tendrils are hidden. Their former death loot modifier is disabled. Player damage
+from beyond twelve blocks triggers a direct sonic retaliation for twice normal sonic damage,
+with no range or line-of-sight limit and a saved ten-second cooldown. It bypasses damage cooldown
+frames while retaining the sonic damage family and its normal mitigation rules.
+
+After Sawmill generates its recipes, wooden stonecutting inputs leave the stonecutter. Existing
+woodcutting recipes suppress duplicates; remaining conversions retain their inputs and output
+quantities. Mixed wood/stone ingredients split between the two cutters. Deepslate Furnace uses
+the normal furnace pattern with Cobbled Deepslate. The single Blast Furnace pattern accepts
+vanilla, Deepslate and Blackstone furnaces through a tag, on the crafting table and crafter wall.
+
+Tome of Hungering Knowledge has Enigmatic Legacy's cursed component and its native cursed-shaped
+recipe, requiring a tainted Heart of the Earth. Its disenchantment action requires the Ring of
+Seven Curses in a functional Curios slot. Royal Grindstone upgrades Cognition's Precision
+Dispeller. The Altar of Amethyst has five one-item material conversions with a
+200-tick recipe duration, subject to its existing cooking-time and moon/cave multipliers.
+Spawner modifiers retain their caps and Quartz inverses with revised materials; piston-based
+spawn range changes by one in either direction.
+
 Terrible template duplication and Abyssal template creation use 5x5 Mechanical Crafter layouts.
 Terrible duplication returns two templates; Abyssal creation consumes one Terrible template.
 A Cactus Flower upgrades an Abyssal Heaume to the Tiara on the smithing table, while a Rustic
@@ -224,7 +244,7 @@ an older entity clears both the effect and its armor penalty. Registry entries r
 save compatibility. L2's separate Corrosion trait and Ring of Corrosion are unaffected.
 Cult of Azazel's Doctor also excludes removed effects from its random potion pool when installed.
 
-The generated data includes the R01–R42 recipe ledger, darkstone stonecutting recipes,
+The generated data includes the R01â€“R42 recipe ledger, darkstone stonecutting recipes,
 Hephaestus Forge rituals (the four chunk loaders among them), and recipe additions or
 overrides in the namespaces of the pack's other mods (Create kinetics, Malum spirit infusion,
 Ice and Fire, Immersive Armors, Twilight Forest equipment, Avaritia, Cataclysm, Deeper Darker,
@@ -270,7 +290,7 @@ manual; confirm the current commit's relevant CI jobs are green before tagging.
 
 ## Licence
 
-Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE).
+Released into the public domain under **The Unlicense** â€” see [UNLICENSE](UNLICENSE).
 
 This covers the original code and assets here. It does not cover the mods this one
 depends on or interoperates with; those keep their own licences and none of their

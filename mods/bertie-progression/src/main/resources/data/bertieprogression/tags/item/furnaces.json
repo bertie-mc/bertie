@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:furnace",
+    {
+      "id": "quark:deepslate_furnace",
+      "required": false
+    },
+    {
+      "id": "quark:blackstone_furnace",
+      "required": false
+    }
+  ]
+}

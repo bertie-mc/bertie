@@ -3,6 +3,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endermanoverhaul"
     }
   ],
   "type": "minecraft:crafting_shaped",
@@ -12,7 +16,10 @@
       "item": "minecraft:dragon_head"
     },
     "E": {
-      "tag": "c:ender_pearls"
+      "item": "endermanoverhaul:enderman_tooth"
+    },
+    "C": {
+      "item": "endermanoverhaul:corrupted_pearl"
     },
     "N": {
       "item": "apothic_enchanting:endshelf"
@@ -21,7 +28,7 @@
   "pattern": [
     "DDD",
     "ENE",
-    "EEE"
+    "ECE"
   ],
   "result": {
     "id": "apothic_enchanting:draconic_endshelf",

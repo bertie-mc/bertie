@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "8301117cd5f2ed23fe985472d435a5a47c8da0bb19ac44d1d5def98964ec7505"
+inputs-hash = "daa02932b9b1017c02c2db74ab1e77c4152b959b8fa9e79ef5784c00d06403d7"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -709,10 +709,6 @@ mod = "curseforge:1040076:8147245"
 any = "curseforge:520110:6423863"
 mod = "curseforge:520110:6423863"
 
-[components."illager-invasion"]
-any = "curseforge:891324:6492670"
-mod = "curseforge:891324:6492670"
-
 [components."immersive-armors"]
 any = "curseforge:580681:8076920"
 mod = "curseforge:580681:8076920"
@@ -916,10 +912,6 @@ mod = "curseforge:268566:7904061"
 [components."mekanism-ponders"]
 any = "curseforge:1448575:8007326"
 mod = "curseforge:1448575:8007326"
-
-[components."mekanism-tools"]
-any = "curseforge:268567:7904062"
-mod = "curseforge:268567:7904062"
 
 [components."mekanismmoremachine"]
 any = "curseforge:1275257:7919872"
@@ -4916,27 +4908,6 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:328085:7963363", "namespace" = "create", "reason" = "ships data/create/", "origin" = "archive-data" }]
 
-[artifacts."curseforge:268567:7904062"]
-name = "mekanism-tools"
-component = "mekanism-tools"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "mekanism-tools-268567"
-version = "7904062"
-filename = "MekanismTools-1.21.1-10.7.19.85.jar"
-project-id = 268567
-slug = "mekanism-tools"
-file-id = 7904062
-provides = ["mekanismtools"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "mod-id" = "mekanism", "version-range" = "[10.7.19]", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."curseforge:272515:5850587"]
 name = "better-advancements"
 component = "better-advancements"
@@ -8332,27 +8303,6 @@ provides = ["ftbxmodcompat"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:404465:8226923", "mod-id" = "ftblibrary", "version-range" = "[2101.1.20,)", "side" = "both", "origin" = "archive" }]
 optional = [{ "artifact" = "curseforge:289412:8216578", "mod-id" = "ftbquests", "version-range" = "[2101.1.21,)", "side" = "both", "origin" = "archive" }, { "missing" = "ftbchunks", "mod-id" = "ftbchunks", "version-range" = "[2101.1.13,)", "side" = "both", "origin" = "archive" }, { "missing" = "ftbranks", "mod-id" = "ftbranks", "version-range" = "[2101.1.2,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[19,)", "side" = "both", "origin" = "archive" }, { "missing" = "kubejs", "mod-id" = "kubejs", "version-range" = "[2100.7.0,)", "side" = "both", "origin" = "archive" }, { "missing" = "luckperms", "mod-id" = "luckperms", "version-range" = "[5.4.112,)", "side" = "server", "origin" = "archive" }, { "artifact" = "curseforge:245755:8163145", "mod-id" = "waystones", "version-range" = "[21.1.5,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:pZEK2gvF:Rclw6KAf", "mod-id" = "sg_economy", "version-range" = "[1.0.2,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:891324:6492670"]
-name = "illager-invasion"
-component = "illager-invasion"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "illager-invasion-891324"
-version = "6492670"
-filename = "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar"
-project-id = 891324
-slug = "illager-invasion"
-file-id = 6492670
-provides = ["illagerinvasion"]
-bundled-provides = ["extensibleenums"]
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.7,)", "side" = "both", "origin" = "archive" }]
-optional = []
 incompatible = []
 bundled = []
 integrations = []

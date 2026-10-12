@@ -12,7 +12,7 @@
       "item": "elemental_metals:fire_infused_iron_ingot"
     },
     "U": {
-      "item": "minecraft:furnace"
+      "tag": "bertieprogression:furnaces"
     },
     "S": {
       "item": "minecraft:smooth_stone"

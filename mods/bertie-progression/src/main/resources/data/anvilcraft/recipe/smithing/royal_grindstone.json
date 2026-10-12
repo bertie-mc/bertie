@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "anvilcraft:royal_steel_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "cognition:precision_dispeller"
+  },
+  "addition": {
+    "item": "anvilcraft:royal_steel_block"
+  },
+  "result": {
+    "id": "anvilcraft:royal_grindstone",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    }
+  ]
+}

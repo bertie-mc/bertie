@@ -1,0 +1,133 @@
+{
+  "replace": true,
+  "values": [
+    "#c:tools/knife",
+    {
+      "id": "anvilcraft:multitool",
+      "required": false
+    },
+    {
+      "id": "farmerspizzeria:rolling_pin",
+      "required": false
+    },
+    "#magitech:part_tool",
+    {
+      "id": "#simplyswords:adamantite",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:aquarium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:banglum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:bronze",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:celestium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:copper",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:carmot",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:durasteel",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:kyber",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:metallurgium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:mythril",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:orichalcum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:osmium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:palladium",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:prometheum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:quadrillum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:runite",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:star_platinum",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:steel",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:stormyx",
+      "required": false
+    },
+    {
+      "id": "stellaris:steel_axe",
+      "required": false
+    },
+    {
+      "id": "stellaris:steel_shovel",
+      "required": false
+    },
+    {
+      "id": "stellaris:steel_pickaxe",
+      "required": false
+    },
+    {
+      "id": "stellaris:steel_hoe",
+      "required": false
+    },
+    "#minecraft:axes",
+    "#minecraft:hoes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:swords",
+    "#c:tools/bow",
+    "#c:tools/brush",
+    "#c:tools/crossbow",
+    "#c:tools/fishing_rod",
+    "#c:tools/igniter",
+    "#c:tools/shear",
+    "#c:tools/shield",
+    "#c:tools/spear",
+    "#c:tools/mace",
+    "#c:tools/wrench",
+    "#c:tools/mining_tool",
+    "#c:tools/melee_weapon",
+    "#c:tools/ranged_weapon",
+    {
+      "id": "#forge:tools",
+      "required": false
+    }
+  ]
+}

@@ -6,6 +6,10 @@
     },
     {
       "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "malum"
     }
   ],
@@ -17,7 +21,7 @@
   ],
   "key": {
     "E": {
-      "item": "minecraft:emerald_block"
+      "item": "berlordscarving:emerald_big_slate"
     },
     "I": {
       "item": "malum:malignant_pewter_ingot"
