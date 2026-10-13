@@ -918,3 +918,17 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="omnitools"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="mythsandlegends"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"

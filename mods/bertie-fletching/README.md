@@ -1,6 +1,6 @@
 # Bertie Fletching
 
-Extends Fletchery Expanded 1.0.5 on NeoForge 1.21.1 with an ordered catalogue of 12 fletching materials, 12 shafts, 22 tips and 18 extras. See [Components](COMPONENTS.md) for ingredient IDs and descriptions.
+Extends Fletchery Expanded 1.0.5 on NeoForge 1.21.1 with an ordered catalogue of 12 fletching materials, 12 shafts, 23 tips and 18 extras. See [Components](COMPONENTS.md) for ingredient IDs and descriptions.
 
 Included in Bertie's standard client and server packs. Stable releases and compatibility notes are listed in the [changelog](CHANGELOG.md).
 

@@ -48,7 +48,7 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     public void register(EmiRegistry registry) {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
-        registry.removeEmiStacks(stack -> RemovedItems.isRemovedPotion(stack.getItemStack()));
+        registry.removeEmiStacks(stack -> RemovedItems.isRemoved(stack.getItemStack()));
         registry.removeRecipes(recipe -> recipe.getOutputs().stream()
                         .anyMatch(output -> RemovedItems.isRemovedPotion(output.getItemStack()))
                 || recipe.getInputs().stream()

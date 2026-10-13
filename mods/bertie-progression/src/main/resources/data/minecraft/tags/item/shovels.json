@@ -112,10 +112,6 @@
       "required": false
     },
     {
-      "id": "omnitools:omni_vajra",
-      "required": false
-    },
-    {
       "id": "oritech:hand_drill",
       "required": false
     },

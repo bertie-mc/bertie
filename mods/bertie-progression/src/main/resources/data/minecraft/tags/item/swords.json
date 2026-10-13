@@ -448,10 +448,6 @@
       "required": false
     },
     {
-      "id": "enderio:dark_steel_sword",
-      "required": false
-    },
-    {
       "id": "enigmaticlegacyplus:execution_axe",
       "required": false
     },
@@ -740,10 +736,6 @@
       "required": false
     },
     {
-      "id": "omnitools:omni_vajra",
-      "required": false
-    },
-    {
       "id": "oritech:chainsaw",
       "required": false
     },
@@ -756,31 +748,7 @@
       "required": false
     },
     {
-      "id": "twilightforest:ironwood_sword",
-      "required": false
-    },
-    {
-      "id": "twilightforest:steeleaf_sword",
-      "required": false
-    },
-    {
-      "id": "twilightforest:knightmetal_sword",
-      "required": false
-    },
-    {
-      "id": "twilightforest:fiery_sword",
-      "required": false
-    },
-    {
       "id": "twilightforest:giant_sword",
-      "required": false
-    },
-    {
-      "id": "twilightforest:ice_sword",
-      "required": false
-    },
-    {
-      "id": "twilightforest:glass_sword",
       "required": false
     },
     {

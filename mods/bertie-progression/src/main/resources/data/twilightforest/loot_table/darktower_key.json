@@ -149,10 +149,6 @@
         {
           "type": "minecraft:item",
           "name": "twilightforest:steeleaf_pickaxe"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "twilightforest:ironwood_sword"
         }
       ],
       "rolls": 2.0

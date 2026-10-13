@@ -45,6 +45,7 @@ public final class PartCatalog {
             new Part(1, "dielectric", "powah:dielectric_rod", "stick", 10778798, 0f, 0f),
             new Part(1, "ender", "enigmaticlegacyplus:ender_rod", "end_rod", 7458998, 0f, 0f),
             new Part(2, "flint", "minecraft:flint", "flint", -1, 0f, 0f),
+            new Part(2, "shark_tooth", "alexsmobs:shark_tooth", "quartz", 15724527, 0f, 0f),
             new Part(2, "copper", "minecraft:copper_ingot", "copper_ingot", -1, 1f, 0f),
             new Part(2, "amethyst", "minecraft:amethyst_shard", "amethyst_shard", -1, 1f, 0f),
             new Part(2, "prismarine", "minecraft:prismarine_shard", "prismarine_shard", -1, 1f, 0f),

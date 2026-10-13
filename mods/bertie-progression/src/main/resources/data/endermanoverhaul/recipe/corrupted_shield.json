@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "endermanoverhaul"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "endermanoverhaul:enderman_tooth"
+    },
+    "I": {
+      "item": "berlordscarving:iron_slate"
+    },
+    "S": {
+      "item": "block_factorys_bosses:enhanced_shield"
+    }
+  },
+  "pattern": [
+    "TIT",
+    "ISI",
+    "TIT"
+  ],
+  "result": {
+    "id": "endermanoverhaul:corrupted_shield",
+    "count": 1
+  }
+}

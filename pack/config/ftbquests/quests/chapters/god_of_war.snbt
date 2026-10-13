@@ -11417,19 +11417,6 @@
 		}
 		{
 			icon: {
-				id: "twilightforest:fiery_sword"
-			}
-			id: "7B0000000000025C"
-			tasks: [{
-				id: "7B0000000100025C"
-				item: { count: 1, id: "twilightforest:fiery_sword" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 22.0d
-		}
-		{
-			icon: {
 				id: "twilightforest:giant_sword"
 			}
 			id: "7B0000000000025D"
@@ -11439,19 +11426,6 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 22.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:glass_sword"
-			}
-			id: "7B0000000000025E"
-			tasks: [{
-				id: "7B0000000100025E"
-				item: { count: 1, id: "twilightforest:glass_sword" }
-				type: "item"
-			}]
-			x: 17.0d
 			y: 22.0d
 		}
 		{
@@ -11469,45 +11443,6 @@
 		}
 		{
 			icon: {
-				id: "twilightforest:ice_sword"
-			}
-			id: "7B00000000000260"
-			tasks: [{
-				id: "7B00000001000260"
-				item: { count: 1, id: "twilightforest:ice_sword" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 23.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:ironwood_sword"
-			}
-			id: "7B00000000000261"
-			tasks: [{
-				id: "7B00000001000261"
-				item: { count: 1, id: "twilightforest:ironwood_sword" }
-				type: "item"
-			}]
-			x: 16.0d
-			y: 23.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:knightmetal_sword"
-			}
-			id: "7B00000000000262"
-			tasks: [{
-				id: "7B00000001000262"
-				item: { count: 1, id: "twilightforest:knightmetal_sword" }
-				type: "item"
-			}]
-			x: 17.0d
-			y: 23.0d
-		}
-		{
-			icon: {
 				id: "twilightforest:seeker_bow"
 			}
 			id: "7B00000000000263"
@@ -11518,19 +11453,6 @@
 			}]
 			x: 29.0d
 			y: 25.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:steeleaf_sword"
-			}
-			id: "7B00000000000264"
-			tasks: [{
-				id: "7B00000001000264"
-				item: { count: 1, id: "twilightforest:steeleaf_sword" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 24.0d
 		}
 		{
 			icon: {
@@ -12069,19 +11991,6 @@
 		}
 		{
 			icon: {
-				id: "enderio:dark_steel_sword"
-			}
-			id: "7B00000000000299"
-			tasks: [{
-				id: "7B00000001000299"
-				item: { count: 1, id: "enderio:dark_steel_sword" }
-				type: "item"
-			}]
-			x: 11.0d
-			y: 12.0d
-		}
-		{
-			icon: {
 				id: "minecraft:shield"
 			}
 			id: "7B0000000000029A"
@@ -12095,26 +12004,8 @@
 				item: { count: 1, id: "minecraft:shield" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 24.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:knightmetal_shield"
-			}
-			id: "7B000000000002A1"
-			rewards: [{
-				id: "7B000000020002A1"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B000000010002A1"
-				item: { count: 1, id: "twilightforest:knightmetal_shield" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 23.0d
+			x: 19.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12132,7 +12023,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: 25.0d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12149,8 +12040,8 @@
 				item: { count: 1, id: "mythsandlegends:maledictum_shield" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 23.0d
+			x: 22.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -12167,8 +12058,8 @@
 				item: { count: 1, id: "alexsmobs:shield_of_the_deep" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 24.0d
+			x: 20.5d
+			y: 23.5d
 		}
 		{
 			icon: {
@@ -12185,8 +12076,8 @@
 				item: { count: 1, id: "endermanoverhaul:corrupted_shield" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 22.0d
+			x: 19.0d
+			y: 23.5d
 		}
 		{
 			icon: {
@@ -12203,8 +12094,8 @@
 				item: { count: 1, id: "block_factorys_bosses:enhanced_shield" }
 				type: "item"
 			}]
-			x: 20.0d
-			y: 23.0d
+			x: 20.5d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12221,8 +12112,8 @@
 				item: { count: 1, id: "block_factorys_bosses:dragon_guard_shield" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: 23.0d
+			x: 23.5d
+			y: 22.0d
 		}
 		{
 			icon: {
@@ -12239,8 +12130,8 @@
 				item: { count: 1, id: "cataclysm:azure_sea_shield" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: 22.0d
+			x: 22.0d
+			y: 23.5d
 		}
 		{
 			icon: {
@@ -12257,7 +12148,7 @@
 				item: { count: 1, id: "ancient_forgemastery:shield_of_vindication" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 20.5d
 			y: 25.0d
 		}
 		{
@@ -12275,8 +12166,8 @@
 				item: { count: 1, id: "enigmaticlegacyplus:infernal_shield" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 22.0d
+			x: 23.5d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -12294,7 +12185,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 25.0d
+			y: 26.5d
 		}
 		{
 			icon: {
@@ -12311,8 +12202,8 @@
 				item: { count: 1, id: "piglinproliferation:buckler" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: 22.0d
+			x: 19.0d
+			y: 25.0d
 		}
 		{
 			icon: {
@@ -12329,8 +12220,8 @@
 				item: { count: 1, id: "artifacts:umbrella" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 25.0d
+			x: 23.5d
+			y: 23.5d
 		}
 		{
 			icon: {
@@ -13451,6 +13342,47 @@
 			y: -5.25d
 		}
 		{
+			y: 22.0d
+			x: 17.5d
+			id: "7B00000000006000"
+			icon: { id: "twilightforest:block_and_chain" }
+			tasks: [{
+				id: "7B00000001006000"
+				count: 1L
+				item: { count: 1 id: "twilightforest:block_and_chain" }
+				type: "item"
+			}]
+		}
+		{
+			y: 5.0d
+			x: 43.5d
+			id: "7B00000000006001"
+			icon: { id: "block_factorys_bosses:ice_gauntlet" }
+			tasks: [{
+				id: "7B00000001006001"
+				count: 1L
+				item: { count: 1 id: "block_factorys_bosses:ice_gauntlet" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000310"
+			rewards: [{
+				id: "7B00000002000310"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000310"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -7.5d
+		}
+		{
+			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
 			id: "7B0000000000030E"
 			rewards: [{
@@ -13463,12 +13395,54 @@
 				item: { count: 1, id: "minecraft:feather" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 13.5d
+			id: "7B00000000005002"
+			icon: { id: "alexsmobs:emu_feather" }
+			tasks: [{
+				id: "7B00000001005002"
+				count: 1L
+				item: { count: 1 id: "alexsmobs:emu_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 15.0d
+			id: "7B00000000005003"
+			icon: { id: "twilightforest:raven_feather" }
+			tasks: [{
+				id: "7B00000001005003"
+				count: 1L
+				item: { count: 1 id: "twilightforest:raven_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 16.5d
+			id: "7B00000000005004"
+			icon: { id: "alexsmobs:roadrunner_feather" }
+			tasks: [{
+				id: "7B00000001005004"
+				count: 1L
+				item: { count: 1 id: "alexsmobs:roadrunner_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B0000000000030F"
 			rewards: [{
 				id: "7B0000000200030F"
@@ -13480,25 +13454,92 @@
 				item: { count: 1, id: "minecraft:phantom_membrane" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 18.0d
 			y: -7.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000310"
-			rewards: [{
-				id: "7B00000002000310"
-				type: "xp"
-				xp: 25
-			}]
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 19.5d
+			id: "7B00000000005006"
+			icon: { id: "iceandfire:stymphalian_bird_feather" }
 			tasks: [{
-				id: "7B00000001000310"
-				item: { count: 1, id: "minecraft:wheat" }
+				id: "7B00000001005006"
+				count: 1L
+				item: { count: 1 id: "iceandfire:stymphalian_bird_feather" }
 				type: "item"
 			}]
-			x: 13.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			y: -7.5d
+			x: 21.0d
+			id: "7B00000000005007"
+			icon: { id: "iceandfire:amphithere_feather" }
+			tasks: [{
+				id: "7B00000001005007"
+				count: 1L
+				item: { count: 1 id: "iceandfire:amphithere_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 22.5d
+			id: "7B00000000005008"
+			icon: { id: "pastel:resplendent_feather" }
+			tasks: [{
+				id: "7B00000001005008"
+				count: 1L
+				item: { count: 1 id: "pastel:resplendent_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 24.0d
+			id: "7B00000000005009"
+			icon: { id: "l2complements:sun_membrane" }
+			tasks: [{
+				id: "7B00000001005009"
+				count: 1L
+				item: { count: 1 id: "l2complements:sun_membrane" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 25.5d
+			id: "7B0000000000500A"
+			icon: { id: "l2complements:resonant_feather" }
+			tasks: [{
+				id: "7B0000000100500A"
+				count: 1L
+				item: { count: 1 id: "l2complements:resonant_feather" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -7.5d
+			x: 27.0d
+			id: "7B0000000000500B"
+			icon: { id: "avaritia_delight:neutronium_wheat" }
+			tasks: [{
+				id: "7B0000000100500B"
+				count: 1L
+				item: { count: 1 id: "avaritia_delight:neutronium_wheat" }
+				type: "item"
+			}]
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13517,42 +13558,42 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000312"
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000316"
 			rewards: [{
-				id: "7B00000002000312"
+				id: "7B00000002000316"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
-				id: "7B00000001000312"
-				item: { count: 1, id: "minecraft:blaze_rod" }
+				id: "7B00000001000316"
+				item: { count: 1, id: "minecraft:fishing_rod" }
 				type: "item"
 			}]
 			x: 12.0d
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000313"
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000317"
 			rewards: [{
-				id: "7B00000002000313"
+				id: "7B00000002000317"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
-				id: "7B00000001000313"
-				item: { count: 1, id: "minecraft:breeze_rod" }
+				id: "7B00000001000317"
+				item: { count: 1, id: "minecraft:chain" }
 				type: "item"
 			}]
 			x: 13.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000314"
 			rewards: [{
 				id: "7B00000002000314"
@@ -13568,8 +13609,56 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000313"
+			rewards: [{
+				id: "7B00000002000313"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000313"
+				item: { count: 1, id: "minecraft:breeze_rod" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.0d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -6.0d
+			x: 18.0d
+			id: "7B00000000005011"
+			icon: { id: "born_in_chaos_v1:dark_rod" }
+			tasks: [{
+				id: "7B00000001005011"
+				count: 1L
+				item: { count: 1 id: "born_in_chaos_v1:dark_rod" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000312"
+			rewards: [{
+				id: "7B00000002000312"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B00000001000312"
+				item: { count: 1, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -6.0d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000315"
 			rewards: [{
 				id: "7B00000002000315"
@@ -13581,42 +13670,64 @@
 				item: { count: 1, id: "minecraft:end_rod" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 21.0d
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000316"
-			rewards: [{
-				id: "7B00000002000316"
-				type: "xp"
-				xp: 25
-			}]
+			dependencies: ["7B0000000000030D"]
+			y: -6.0d
+			x: 22.5d
+			id: "7B00000000005014"
+			icon: { id: "enderio:experience_rod" }
 			tasks: [{
-				id: "7B00000001000316"
-				item: { count: 1, id: "minecraft:fishing_rod" }
+				id: "7B00000001005014"
+				count: 1L
+				item: { count: 1 id: "enderio:experience_rod" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -6.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000317"
-			rewards: [{
-				id: "7B00000002000317"
-				type: "xp"
-				xp: 25
-			}]
+			dependencies: ["7B0000000000030D"]
+			y: -6.0d
+			x: 24.0d
+			id: "7B00000000005015"
+			icon: { id: "enderio:infinity_rod" }
 			tasks: [{
-				id: "7B00000001000317"
-				item: { count: 1, id: "minecraft:chain" }
+				id: "7B00000001005015"
+				count: 1L
+				item: { count: 1 id: "enderio:infinity_rod" }
 				type: "item"
 			}]
-			x: 19.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			y: -6.0d
+			x: 25.5d
+			id: "7B00000000005016"
+			icon: { id: "powah:dielectric_rod" }
+			tasks: [{
+				id: "7B00000001005016"
+				count: 1L
+				item: { count: 1 id: "powah:dielectric_rod" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -6.0d
+			x: 27.0d
+			id: "7B00000000005017"
+			icon: { id: "enigmaticlegacyplus:ender_rod" }
+			tasks: [{
+				id: "7B00000001005017"
+				count: 1L
+				item: { count: 1 id: "enigmaticlegacyplus:ender_rod" }
+				type: "item"
+			}]
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13635,93 +13746,22 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B00000000000319"
-			rewards: [{
-				id: "7B00000002000319"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000319"
-				item: { count: 1, id: "minecraft:amethyst_shard" }
-				type: "item"
-			}]
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
 			x: 12.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B0000000000031A"
-			rewards: [{
-				id: "7B0000000200031A"
-				type: "xp"
-				xp: 25
-			}]
+			id: "7B00000000005019"
+			icon: { id: "alexsmobs:shark_tooth" }
 			tasks: [{
-				id: "7B0000000100031A"
-				item: { count: 1, id: "minecraft:prismarine_shard" }
+				id: "7B00000001005019"
+				count: 1L
+				item: { count: 1 id: "alexsmobs:shark_tooth" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B0000000000031B"
-			rewards: [{
-				id: "7B0000000200031B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100031B"
-				item: { count: 1, id: "minecraft:echo_shard" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: -4.5d
-		}
-		{
 			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B0000000000031C"
-			rewards: [{
-				id: "7B0000000200031C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100031C"
-				item: { count: 1, id: "minecraft:quartz" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B0000000000031D"
-			rewards: [{
-				id: "7B0000000200031D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100031D"
-				item: { count: 1, id: "minecraft:gold_ingot" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
 			id: "7B0000000000031E"
 			rewards: [{
 				id: "7B0000000200031E"
@@ -13733,29 +13773,46 @@
 				item: { count: 1, id: "minecraft:copper_ingot" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 13.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B0000000000031F"
+			dependencies: ["7B0000000000030D"]
+			id: "7B00000000000319"
 			rewards: [{
-				id: "7B0000000200031F"
+				id: "7B00000002000319"
 				type: "xp"
 				xp: 25
 			}]
 			tasks: [{
-				id: "7B0000000100031F"
-				item: { count: 1, id: "minecraft:shulker_shell" }
+				id: "7B00000001000319"
+				item: { count: 1, id: "minecraft:amethyst_shard" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 15.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B0000000000031A"
+			rewards: [{
+				id: "7B0000000200031A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031A"
+				item: { count: 1, id: "minecraft:prismarine_shard" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000320"
 			rewards: [{
 				id: "7B00000002000320"
@@ -13767,12 +13824,88 @@
 				item: { count: 1, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 18.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B0000000000031C"
+			rewards: [{
+				id: "7B0000000200031C"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031C"
+				item: { count: 1, id: "minecraft:quartz" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B0000000000031D"
+			rewards: [{
+				id: "7B0000000200031D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031D"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 22.5d
+			id: "7B00000000005020"
+			icon: { id: "mythsandlegends:gargoyle_shard" }
+			tasks: [{
+				id: "7B00000001005020"
+				count: 1L
+				item: { count: 1 id: "mythsandlegends:gargoyle_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 24.0d
+			id: "7B00000000005021"
+			icon: { id: "irons_spellbooks:permafrost_shard" }
+			tasks: [{
+				id: "7B00000001005021"
+				count: 1L
+				item: { count: 1 id: "irons_spellbooks:permafrost_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 25.5d
+			id: "7B00000000005022"
+			icon: { id: "pastel:star_fragment" }
+			tasks: [{
+				id: "7B00000001005022"
+				count: 1L
+				item: { count: 1 id: "pastel:star_fragment" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000321"
 			rewards: [{
 				id: "7B00000002000321"
@@ -13784,12 +13917,85 @@
 				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 27.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 28.5d
+			id: "7B00000000005024"
+			icon: { id: "malum:mnemonic_fragment" }
+			tasks: [{
+				id: "7B00000001005024"
+				count: 1L
+				item: { count: 1 id: "malum:mnemonic_fragment" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 30.0d
+			id: "7B00000000005025"
+			icon: { id: "aquamirae:abyssal_amethyst" }
+			tasks: [{
+				id: "7B00000001005025"
+				count: 1L
+				item: { count: 1 id: "aquamirae:abyssal_amethyst" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 31.5d
+			id: "7B00000000005026"
+			icon: { id: "pastel:onyx_shard" }
+			tasks: [{
+				id: "7B00000001005026"
+				count: 1L
+				item: { count: 1 id: "pastel:onyx_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			id: "7B0000000000031B"
+			rewards: [{
+				id: "7B0000000200031B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "7B0000000100031B"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: -4.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 34.5d
+			id: "7B00000000005028"
+			icon: { id: "pastel:moonstone_shard" }
+			tasks: [{
+				id: "7B00000001005028"
+				count: 1L
+				item: { count: 1 id: "pastel:moonstone_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000322"
 			rewards: [{
 				id: "7B00000002000322"
@@ -13801,12 +14007,40 @@
 				item: { count: 1, id: "minecraft:netherite_ingot" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 36.0d
 			y: -4.5d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 37.5d
+			id: "7B0000000000502A"
+			icon: { id: "pastel:resonance_shard" }
+			tasks: [{
+				id: "7B0000000100502A"
+				count: 1L
+				item: { count: 1 id: "pastel:resonance_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 39.0d
+			id: "7B0000000000502B"
+			icon: { id: "deeperdarker:reinforced_echo_shard" }
+			tasks: [{
+				id: "7B0000000100502B"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000323"
 			rewards: [{
 				id: "7B00000002000323"
@@ -13818,45 +14052,39 @@
 				item: { count: 1, id: "minecraft:heavy_core" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 40.5d
 			y: -4.5d
 		}
 		{
+			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			id: "7B00000000000324"
-			rewards: [{
-				id: "7B00000002000324"
-				type: "xp"
-				xp: 25
-			}]
+			y: -4.5d
+			x: 42.0d
+			id: "7B0000000000502D"
+			icon: { id: "irons_spellbooks:divine_soulshard" }
 			tasks: [{
-				id: "7B00000001000324"
-				item: { count: 1, id: "minecraft:gunpowder" }
+				id: "7B0000000100502D"
+				count: 1L
+				item: { count: 1 id: "irons_spellbooks:divine_soulshard" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.0d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -4.5d
+			x: 43.5d
+			id: "7B0000000000502E"
+			icon: { id: "discerning_the_eldritch:eldritch_soul_shard" }
+			tasks: [{
+				id: "7B0000000100502E"
+				count: 1L
+				item: { count: 1 id: "discerning_the_eldritch:eldritch_soul_shard" }
+				type: "item"
+			}]
 		}
 		{
 			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B00000000000325"
-			rewards: [{
-				id: "7B00000002000325"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000325"
-				item: { count: 1, id: "minecraft:glowstone_dust" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
 			id: "7B00000000000326"
 			rewards: [{
 				id: "7B00000002000326"
@@ -13868,12 +14096,12 @@
 				item: { count: 1, id: "minecraft:slime_ball" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 10.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000327"
 			rewards: [{
 				id: "7B00000002000327"
@@ -13885,12 +14113,12 @@
 				item: { count: 1, id: "minecraft:honeycomb" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000328"
 			rewards: [{
 				id: "7B00000002000328"
@@ -13902,12 +14130,12 @@
 				item: { count: 1, id: "minecraft:ender_pearl" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 13.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B00000000000329"
 			rewards: [{
 				id: "7B00000002000329"
@@ -13919,29 +14147,12 @@
 				item: { count: 1, id: "minecraft:blaze_powder" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B0000000000032A"
-			rewards: [{
-				id: "7B0000000200032A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B0000000100032A"
-				item: { count: 1, id: "minecraft:turtle_helmet" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
 			id: "7B0000000000032B"
 			rewards: [{
 				id: "7B0000000200032B"
@@ -13953,29 +14164,26 @@
 				item: { count: 1, id: "minecraft:dragon_breath" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 16.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
-			id: "7B0000000000032C"
-			rewards: [{
-				id: "7B0000000200032C"
-				type: "xp"
-				xp: 25
-			}]
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 18.0d
+			id: "7B00000000005034"
+			icon: { id: "anvilcraft:sea_heart_shell_shard" }
 			tasks: [{
-				id: "7B0000000100032C"
-				item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				id: "7B00000001005034"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B0000000000032D"
 			rewards: [{
 				id: "7B0000000200032D"
@@ -13987,12 +14195,12 @@
 				item: { count: 1, id: "minecraft:wind_charge" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 19.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B0000000000032E"
 			rewards: [{
 				id: "7B0000000200032E"
@@ -14004,12 +14212,12 @@
 				item: { count: 1, id: "minecraft:lapis_lazuli" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 21.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7B0000000000030D"]
 			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			id: "7B0000000000032F"
 			rewards: [{
 				id: "7B0000000200032F"
@@ -14021,59 +14229,134 @@
 				item: { count: 1, id: "minecraft:torch" }
 				type: "item"
 			}]
+			x: 22.5d
+			y: -3.0d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 24.0d
+			id: "7B00000000005038"
+			icon: { id: "minecraft:tnt" }
+			tasks: [{
+				id: "7B00000001005038"
+				count: 1L
+				item: { count: 1 id: "minecraft:tnt" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 25.5d
+			id: "7B00000000005039"
+			icon: { id: "enigmaticlegacyplus:earth_heart_fragment" }
+			tasks: [{
+				id: "7B00000001005039"
+				count: 1L
+				item: { count: 1 id: "enigmaticlegacyplus:earth_heart_fragment" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
 			x: 27.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B00000000000330"
-			rewards: [{
-				id: "7B00000002000330"
-				type: "xp"
-				xp: 25
-			}]
+			id: "7B0000000000503A"
+			icon: { id: "minecraft:sponge" }
 			tasks: [{
-				id: "7B00000001000330"
-				item: { count: 1, id: "minecraft:fire_charge" }
+				id: "7B0000000100503A"
+				count: 1L
+				item: { count: 1 id: "minecraft:sponge" }
 				type: "item"
 			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
 			x: 28.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B00000000000331"
-			rewards: [{
-				id: "7B00000002000331"
-				type: "xp"
-				xp: 25
-			}]
+			id: "7B0000000000503B"
+			icon: { id: "iceandfire:dread_shard" }
 			tasks: [{
-				id: "7B00000001000331"
-				item: { count: 1, id: "minecraft:firework_star" }
+				id: "7B0000000100503B"
+				count: 1L
+				item: { count: 1 id: "iceandfire:dread_shard" }
 				type: "item"
 			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
 			x: 30.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7B0000000000030D"]
-			hide_dependency_lines: true
-			id: "7B00000000000332"
-			rewards: [{
-				id: "7B00000002000332"
-				type: "xp"
-				xp: 25
-			}]
+			id: "7B0000000000503C"
+			icon: { id: "irons_spellbooks:lightning_bottle" }
 			tasks: [{
-				id: "7B00000001000332"
-				item: { count: 1, id: "minecraft:firework_rocket" }
+				id: "7B0000000100503C"
+				count: 1L
+				item: { count: 1 id: "irons_spellbooks:lightning_bottle" }
 				type: "item"
 			}]
-			x: 31.5d
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
 			y: -3.0d
+			x: 31.5d
+			id: "7B0000000000503D"
+			icon: { id: "irons_spellbooks:blood_vial" }
+			tasks: [{
+				id: "7B0000000100503D"
+				count: 1L
+				item: { count: 1 id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 33.0d
+			id: "7B0000000000503E"
+			icon: { id: "twilightforest:fiery_blood" }
+			tasks: [{
+				id: "7B0000000100503E"
+				count: 1L
+				item: { count: 1 id: "twilightforest:fiery_blood" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 34.5d
+			id: "7B0000000000503F"
+			icon: { id: "anvilcraft:magnet_ingot" }
+			tasks: [{
+				id: "7B0000000100503F"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:magnet_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_dependency_lines: true
+			dependencies: ["7B0000000000030D"]
+			y: -3.0d
+			x: 36.0d
+			id: "7B00000000005040"
+			icon: { id: "malum:refined_brilliance" }
+			tasks: [{
+				id: "7B00000001005040"
+				count: 1L
+				item: { count: 1 id: "malum:refined_brilliance" }
+				type: "item"
+			}]
 		}
 	]
 }

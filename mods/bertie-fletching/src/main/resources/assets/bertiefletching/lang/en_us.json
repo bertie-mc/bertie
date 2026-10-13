@@ -22,7 +22,7 @@
   "bertiefletching.part.1.dark": "Creates damage share link.",
   "bertiefletching.part.1.blaze": "-30% projectile resistance for 10s.",
   "bertiefletching.part.1.end": "Ricochet.",
-  "bertiefletching.part.1.experience": "2\u00d7 XP.",
+  "bertiefletching.part.1.experience": "2× XP.",
   "bertiefletching.part.1.infinity": "Phase through blocks.",
   "bertiefletching.part.1.dielectric": "Homing.",
   "bertiefletching.part.1.ender": "Homing, 3 ricochets, phase through blocks and shields.",
@@ -75,5 +75,6 @@
   "bertiefletching.slot.tip": "Tip",
   "death.attack.bertie_arrow": "%1$s was struck by an enhanced arrow",
   "death.attack.bertie_arrow.player": "%1$s was shot by %2$s",
-  "death.attack.bertie_arrow.item": "%1$s was shot by %2$s using %3$s"
+  "death.attack.bertie_arrow.item": "%1$s was shot by %2$s using %3$s",
+  "bertiefletching.part.2.shark_tooth": "+2 damage against aquatic mobs or targets in water or rain."
 }

@@ -104,10 +104,6 @@
       "required": false
     },
     {
-      "id": "omnitools:omni_vajra",
-      "required": false
-    },
-    {
       "id": "twilightforest:ironwood_hoe",
       "required": false
     },

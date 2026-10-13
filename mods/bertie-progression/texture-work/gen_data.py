@@ -3085,9 +3085,9 @@ write(f"{R}/mechanical/entangled_block.json",
            "entangled:block"))
 write("data/entangled/recipe/item.json", DISABLED)
 write(f"{R}/mechanical/entangled_binder.json",
-      mech(["    F  ", "   I   ", "   IW F", "  SIII ", " SIS   ", "IS     "],
+      mech(["    F  ", "   I   ", "   IW F", "  SIII ", " SIS   ", " SS    "],
            {"F": "forbidden_arcanus:ender_pearl_fragment", "W": "malum:warp_flux",
-            "I": "create:iron_sheet", "S": "minecraft:stick"},
+            "I": "create:iron_sheet", "S": "betterend:leather_wrapped_stick"},
            "entangled:item"))
 
 # --- Ender Pearl Fragments come off the crushing wheels rather than the grid, and every Elevator
@@ -3749,7 +3749,16 @@ for _set in _armour["tier2_sets"]:
                 _parent_piece(_parent, _slot), _secondary, _output, _set["costs"], tier=2))
 
 for _path, _recipe in _armour["recipe_overrides"].items():
-    write(_path, _recipe)
+    if "bloom_stone_" in _path:
+        write(_path, DISABLED)
+        _output = _recipe["result"]["id"]
+        write(f"{RIT}/{_output.split(':')[1]}.json", _armour_ritual(
+            _recipe["base"]["item"], [("irons_spellbooks:nature_rune", 2),
+                ("cataclysm:amethyst_crab_shell", 2), ("berlordscarving:amethyst_big_slate", 2),
+                ("minecraft:moss_block", 2)], _output,
+            {"aureal": 1000, "blood": 0, "souls": 10, "experience": 800}, tier=2))
+    else:
+        write(_path, _recipe)
 write(f"{R}/silver_scraps.json", shaped(["DSS", "SSS", "SSD"],
       {"D": "born_in_chaos_v1:armor_plate_from_dark_metal", "S": "berlordscarving:silver_big_slate"},
       "hazennstuff:silver_scraps"))
@@ -3861,6 +3870,59 @@ for _i, _head in enumerate(_ender_heads):
     write(f"{R}/armour/shadowwalker_enderman_{_i}.json", shapeless([_head], _ender_heads[(_i + 1) % len(_ender_heads)]))
 
 write("data/explorerscompass/recipe/repair_explorers_compass.json", DISABLED)
+
+# Shields, forge tools and enchanting-table upgrades.
+write("data/cognition/recipe/book_from_any_leather.json", DISABLED)
+write("data/minecraft/recipe/book.json", shapeless([
+    "minecraft:paper", "minecraft:paper", "minecraft:paper", "#c:leathers"], "minecraft:book"))
+write("data/twilightforest/recipe/equipment/block_and_chain.json", shapeless([
+    "#c:storage_blocks/knightmetal", "#c:ingots/knightmetal", "#c:ingots/knightmetal",
+    "#c:ingots/knightmetal", "minecraft:chain"], "twilightforest:block_and_chain"))
+write("data/mythsandlegends/recipe/stony_shield.json", shaped(["LML", "LML", " L "],
+    {"L": "mythsandlegends:gargoyle_fragment", "M": "berlordscarving:deep_alloy_big_slate"},
+    "mythsandlegends:stony_shield"))
+write("data/block_factorys_bosses/recipe/enhanced_shield.json", {
+    "neoforge:conditions": conds("block_factorys_bosses", "berlordscarving"),
+    "type": "minecraft:smithing_transform",
+    "template": {"item": "berlordscarving:wood_big_slate"}, "base": {"item": "minecraft:shield"},
+    "addition": {"item": "berlordscarving:iron_big_slate"},
+    "result": {"id": "block_factorys_bosses:enhanced_shield", "count": 1}})
+write("data/block_factorys_bosses/recipe/dragon_guard_shield.json", shaped(["IDI", "DSD", "IDI"],
+    {"I": "berlordscarving:bone_big_slate", "D": "block_factorys_bosses:dragon_bone", "S": "minecraft:shield"},
+    "block_factorys_bosses:dragon_guard_shield"))
+write("data/endermanoverhaul/recipe/corrupted_shield.json", shaped(["TIT", "ISI", "TIT"],
+    {"T": "endermanoverhaul:enderman_tooth", "I": "berlordscarving:iron_slate",
+     "S": "block_factorys_bosses:enhanced_shield"}, "endermanoverhaul:corrupted_shield"))
+write("data/cataclysm/recipe/azure_sea_shield.json", DISABLED)
+write(f"{R}/mechanical/azure_sea_shield.json", mech(["DLLLD", "LGGGL", "LGSGL", "LGGGL", "DLLLD"],
+    {"D": "berlordscarving:diamond_slate", "L": "cataclysm:lacrima", "G": "berlordscarving:golden_slate",
+     "S": "alexsmobs:shield_of_the_deep"}, "cataclysm:azure_sea_shield"))
+write("data/omnitools/recipe/crafting/omni_wrench.json", DISABLED)
+write(f"{RIT}/omni_wrench.json", ritual("farmersdelight:rope", [("create:wrench", 1),
+    ("mekanism:configurator", 1), ("powah:wrench", 1), ("entangled:item", 1)],
+    "omnitools:omni_wrench", tier=3, xp=2000))
+write("data/apotheosis/recipe/simple_reforging_table.json", shaped(["CDC", "GEG", "BRB"],
+    {"C": "forbidden_arcanus:corrupted_arcane_crystal", "D": "minecraft:diamond", "G": "apotheosis:gem_dust",
+     "E": "apothic_enchanting:apothic_enchanting_table", "B": "slag:deep_alloy_block", "R": "anvilcraft:royal_steel_block"},
+    "apotheosis:simple_reforging_table"))
+write("data/apotheosis/recipe/reforging_table.json", shaped(["ACA", "ESE", "NKN"],
+    {"A": "aquamirae:abyssal_amethyst", "C": "l2complements:storm_core", "E": "apotheosis:epic_material",
+     "S": "apotheosis:simple_reforging_table", "N": "minecraft:nether_bricks", "K": "twilightforest:knightmetal_block"},
+    "apotheosis:reforging_table"))
+write("data/apotheosis/recipe/augmenting_table.json", DISABLED)
+write(f"{R}/augmenting_table.json", {
+    "neoforge:conditions": conds("apotheosis", "apothic_enchanting", "l2complements", "cataclysm", "malum", "twilightforest", "avaritia"),
+    "type": "avaritia:shaped_table", "tier": 2,
+    "pattern": ["SWWWS", "CWNWC", "GWWWG", "TGEGT", "TTFTT"],
+    "key": {"S": {"item": "l2complements:soul_flame"}, "W": {"item": "cataclysm:witherite_ingot"},
+        "C": {"item": "l2complements:blackstone_core"}, "N": {"item": "minecraft:nether_star"},
+        "G": {"item": "apotheosis:mythic_material"}, "T": {"item": "malum:tainted_rock"},
+        "E": {"item": "apothic_enchanting:apothic_enchanting_table"}, "F": {"item": "twilightforest:fiery_block"}},
+    "result": {"id": "apotheosis:augmenting_table", "count": 1}})
+write("data/cataclysm/recipe/mech_eye.json", DISABLED)
+write(f"{R}/mechanical/mech_eye.json", mech(["RIR", "IPI", "RIR"],
+    {"R": "berlordscarving:redstone_big_slate", "I": "berlordscarving:iron_big_slate", "P": "create:precision_mechanism"},
+    "cataclysm:mech_eye"))
 write("data/anvilcraft/recipe/smithing/royal_grindstone.json", {
     "type": "minecraft:smithing_transform",
     "template": {"item": "anvilcraft:royal_steel_upgrade_smithing_template"},
@@ -5810,6 +5872,13 @@ lang.update({
 # what it holds in both registries' screens.
 lang["curios.identifier.hat"] = "Head"
 lang["curios.modifiers.hat"] = "When on head:"
+lang.update({
+    "tooltip.bertieprogression.breathing_stance": "Breathing stance",
+    "tooltip.bertieprogression.aquatic_reflect": "Aquatic reflect",
+    "tooltip.bertieprogression.perfect_parry": "Perfect parry.",
+    "tooltip.bertieprogression.serrated_shark_tooth": "Sometimes dropped when Frilled Shark kills Squid",
+    "tooltip.bertieprogression.weapon_bash": "Bash damage: 100% of equipped weapon",
+})
 # Declaring a slot on the Accessories side costs it the name the compat layer would otherwise carry
 # over from Curios, so each one gets a line here. Collected while the slot files were written.
 

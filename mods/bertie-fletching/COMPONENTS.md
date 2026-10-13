@@ -41,6 +41,7 @@ Components are listed in their crafting order. Item IDs identify the actual ingr
 | Ingredient | Item ID | Description |
 | --- | --- | --- |
 | Flint | `minecraft:flint` | Default behavior. |
+| Shark Tooth | `alexsmobs:shark_tooth` | +2 damage against aquatic mobs or wet targets. |
 | Copper Ingot | `minecraft:copper_ingot` | +1 damage. |
 | Amethyst Shard | `minecraft:amethyst_shard` | +1 damage; breaks through leaves and glass. |
 | Prismarine Shard | `minecraft:prismarine_shard` | +1 damage; prevents water slowdown. |

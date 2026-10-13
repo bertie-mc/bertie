@@ -6,6 +6,10 @@
       "required": false
     },
     {
+      "id": "alexsmobs:shark_tooth",
+      "required": false
+    },
+    {
       "id": "minecraft:copper_ingot",
       "required": false
     },

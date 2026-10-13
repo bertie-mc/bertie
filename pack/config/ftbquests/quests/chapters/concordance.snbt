@@ -453,5 +453,41 @@
 			x: 10.5d
 			y: 3.0d
 		}
+		{
+			icon: {
+				id: "apotheosis:ender_gem_case"
+			}
+			id: "3C00000000000014"
+			rewards: [{
+				id: "3C00000002000014"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000014"
+				item: { count: 1, id: "apotheosis:ender_gem_case" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "apothic_enchanting:ender_library"
+			}
+			id: "3C00000000000011"
+			rewards: [{
+				id: "3C00000002000011"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000011"
+				item: { count: 1, id: "apothic_enchanting:ender_library" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
 	]
 }

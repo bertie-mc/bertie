@@ -1383,5 +1383,24 @@
 			x: 3.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["6B00000000000012"]
+			icon: {
+				id: "apotheosis:augmenting_table"
+			}
+			id: "3C0000000000000E"
+			rewards: [{
+				id: "3C0000000200000E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C0000000100000E"
+				item: { count: 1, id: "apotheosis:augmenting_table" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
 	]
 }

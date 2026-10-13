@@ -122,8 +122,6 @@
   "data/anvilcraft/recipe/smelting/lead_ingot_from_ore.json",
   "data/anvilcraft/recipe/smelting/uranium_ingot_from_ore.json",
   "data/apotheosis/loot_table/chests/spawner_brutal.json",
-  "data/apotheosis/recipe/augmenting_table.json",
-  "data/apotheosis/recipe/simple_reforging_table.json",
   "data/aquaculture/advancement/recipes/misc/bonemeal_from_fish_bones.json",
   "data/aquaculture/loot_table/gameplay/fishing/junk.json",
   "data/aquaculture/recipe/bonemeal_from_fish_bones.json",

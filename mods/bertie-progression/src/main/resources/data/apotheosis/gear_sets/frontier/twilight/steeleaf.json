@@ -14,13 +14,6 @@
     {
       "stack": {
         "count": 1,
-        "id": "twilightforest:steeleaf_sword"
-      },
-      "weight": 10
-    },
-    {
-      "stack": {
-        "count": 1,
         "id": "twilightforest:steeleaf_axe"
       },
       "weight": 10

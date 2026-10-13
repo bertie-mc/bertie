@@ -6,9 +6,7 @@
     {
       "relativeTo": "minecraft:shield",
       "placement": "after",
-      "items": [
-        "twilightforest:knightmetal_shield"
-      ]
+      "items": []
     }
   ]
 }

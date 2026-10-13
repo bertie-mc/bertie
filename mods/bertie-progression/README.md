@@ -72,6 +72,11 @@ present. Its block model is referenced at runtime; no third-party texture is bun
   Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
 - **Removed items** (`RemovedItems`) â€” items withdrawn from the pack's progression.
+- **Shield progression** (`compat/ShieldRules`) — offhand armor and speed modifiers, the
+  Shield of the Deep's breathing stance and 30% reflection against wet attackers, and
+  weapon-scaled Buckler bashes. Native parries, teleports and other retained shield mechanics
+  remain in their owning mods. Item suppression runs after late creative-tab additions and
+  filters the same catalogue directly from EMI.
 - **No Mundane Potion** (`PotionBrewingBuilderMixin`) â€” no brewing mix produces it, and its
   potion, splash, lingering and tipped-arrow forms are hidden from creative tabs and EMI. Recipes
   and loot that named it are re-emitted without it: Timeless Slurry brews from a Thick Potion and

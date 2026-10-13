@@ -185,10 +185,6 @@
       "required": false
     },
     {
-      "id": "omnitools:omni_vajra",
-      "required": false
-    },
-    {
       "id": "oritech:chainsaw",
       "required": false
     },

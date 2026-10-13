@@ -14,13 +14,6 @@
     {
       "stack": {
         "count": 1,
-        "id": "twilightforest:knightmetal_sword"
-      },
-      "weight": 10
-    },
-    {
-      "stack": {
-        "count": 1,
         "id": "twilightforest:knightmetal_axe"
       },
       "weight": 10
@@ -40,13 +33,6 @@
         "id": "minecraft:shield"
       },
       "weight": 8
-    },
-    {
-      "stack": {
-        "count": 1,
-        "id": "twilightforest:knightmetal_shield"
-      },
-      "weight": 2
     }
   ],
   "quality": 2.5,

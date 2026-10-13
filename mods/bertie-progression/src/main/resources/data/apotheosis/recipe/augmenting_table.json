@@ -1,28 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "apotheosis",
-  "key": {
-    "E": {
-      "item": "apothic_enchanting:apothic_enchanting_table"
-    },
-    "M": {
-      "item": "apotheosis:mythic_material"
-    },
-    "N": {
-      "item": "minecraft:nether_star"
-    },
-    "P": {
-      "item": "minecraft:polished_blackstone"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "pattern": [
-    " N ",
-    "MEM",
-    "PPP"
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
   ],
   "result": {
-    "count": 1,
-    "id": "apotheosis:augmenting_table"
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

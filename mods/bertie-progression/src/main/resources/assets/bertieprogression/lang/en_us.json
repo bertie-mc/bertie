@@ -46,5 +46,10 @@
   "item.bertieprogression.kraken_ship_map.filled": "Map to the Kraken's Ship",
   "item.bertieprogression.yeti_hideout_map.filled": "Map to Skor's Hideout",
   "curios.identifier.hat": "Head",
-  "curios.modifiers.hat": "When on head:"
+  "curios.modifiers.hat": "When on head:",
+  "tooltip.bertieprogression.breathing_stance": "Breathing stance",
+  "tooltip.bertieprogression.aquatic_reflect": "Aquatic reflect",
+  "tooltip.bertieprogression.perfect_parry": "Perfect parry.",
+  "tooltip.bertieprogression.serrated_shark_tooth": "Sometimes dropped when Frilled Shark kills Squid",
+  "tooltip.bertieprogression.weapon_bash": "Bash damage: 100% of equipped weapon"
 }

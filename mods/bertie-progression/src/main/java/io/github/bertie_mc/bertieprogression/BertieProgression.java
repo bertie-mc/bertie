@@ -55,6 +55,9 @@ public final class BertieProgression {
         // ModifyDefaultComponentsEvent is a mod-bus event as well.
         modBus.register(TrinketConversions.class);
         modBus.register(io.github.bertie_mc.bertieprogression.compat.CursedTomeRules.class);
+        modBus.addListener(io.github.bertie_mc.bertieprogression.compat.ShieldRules::components);
+        NeoForge.EVENT_BUS.addListener(io.github.bertie_mc.bertieprogression.compat.ShieldRules::breathe);
+        NeoForge.EVENT_BUS.addListener(io.github.bertie_mc.bertieprogression.compat.ShieldRules::aquaticReflect);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.warden.WardenRules.class);
         // RegisterCapabilitiesEvent is a mod-bus event too. The class guards on create + curios.
         modBus.register(ExtendoGripCurio.class);

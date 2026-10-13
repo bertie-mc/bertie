@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "mythsandlegends:gargoyle_fragment"
+    },
+    "M": {
+      "item": "berlordscarving:deep_alloy_big_slate"
+    }
+  },
+  "pattern": [
+    "LML",
+    "LML",
+    " L "
+  ],
+  "result": {
+    "id": "mythsandlegends:stony_shield",
+    "count": 1
+  }
+}

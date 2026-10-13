@@ -73,6 +73,17 @@ public final class ProgressionWardenGameTests {
                 .mapToInt(entity -> entity.getItem().getCount())
                 .sum();
         helper.assertTrue(drops == 1, "shearing must drop exactly one tendril");
+        var tendrilDrop = helper.getLevel()
+                .getEntities(
+                        EntityType.ITEM,
+                        new AABB(warden.blockPosition()).inflate(3),
+                        entity -> BuiltInRegistries.ITEM
+                                .getKey(entity.getItem().getItem())
+                                .equals(WardenRules.TENDRIL))
+                .getFirst();
+        helper.assertTrue(
+                tendrilDrop.getY() > warden.getY() + 1.5 && tendrilDrop.getDeltaMovement().y > 0,
+                "the sheared tendril must pop upward from head height");
         ((WardenState) warden).bertie$setRetaliationReadyAt(9876);
         CompoundTag saved = warden.saveWithoutId(new CompoundTag());
         Warden restored = EntityType.WARDEN.create(helper.getLevel());

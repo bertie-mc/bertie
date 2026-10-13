@@ -1780,5 +1780,56 @@
 			x: -4.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["3B00000000000068"]
+			icon: {
+				id: "apothic_enchanting:library"
+			}
+			id: "3C00000000000010"
+			rewards: [{
+				id: "3C00000002000010"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000010"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			y: 4.5d
+			x: -12.0d
+			dependencies: ["3B0000000000006F"]
+			id: "3B00000000004000"
+			icon: { id: "aquamirae:abyssal_amethyst" }
+			tasks: [{
+				id: "3B00000001004000"
+				count: 1L
+				item: { count: 1 id: "aquamirae:abyssal_amethyst" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["3B00000000004000"]
+			icon: {
+				id: "apotheosis:reforging_table"
+			}
+			id: "3C0000000000000D"
+			rewards: [{
+				id: "3C0000000200000D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C0000000100000D"
+				item: { count: 1, id: "apotheosis:reforging_table" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 6.0d
+		}
 	]
 }

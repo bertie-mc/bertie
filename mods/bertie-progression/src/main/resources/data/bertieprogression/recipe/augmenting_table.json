@@ -1,0 +1,71 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SWWWS",
+    "CWNWC",
+    "GWWWG",
+    "TGEGT",
+    "TTFTT"
+  ],
+  "key": {
+    "S": {
+      "item": "l2complements:soul_flame"
+    },
+    "W": {
+      "item": "cataclysm:witherite_ingot"
+    },
+    "C": {
+      "item": "l2complements:blackstone_core"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "G": {
+      "item": "apotheosis:mythic_material"
+    },
+    "T": {
+      "item": "malum:tainted_rock"
+    },
+    "E": {
+      "item": "apothic_enchanting:apothic_enchanting_table"
+    },
+    "F": {
+      "item": "twilightforest:fiery_block"
+    }
+  },
+  "result": {
+    "id": "apotheosis:augmenting_table",
+    "count": 1
+  }
+}

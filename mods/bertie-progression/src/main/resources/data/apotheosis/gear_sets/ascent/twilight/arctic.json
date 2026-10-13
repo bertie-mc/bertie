@@ -10,15 +10,7 @@
   "chestplates": [],
   "helmets": [],
   "leggings": [],
-  "mainhands": [
-    {
-      "stack": {
-        "count": 1,
-        "id": "twilightforest:ice_sword"
-      },
-      "weight": 10
-    }
-  ],
+  "mainhands": [],
   "offhands": [
     {
       "stack": {

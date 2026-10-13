@@ -871,10 +871,6 @@
       "required": false
     },
     {
-      "id": "twilightforest:knightmetal_shield",
-      "required": false
-    },
-    {
       "id": "twilightforest:ore_magnet",
       "required": false
     },

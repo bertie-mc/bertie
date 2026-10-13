@@ -102,78 +102,6 @@
 		}
 		{
 			icon: {
-				id: "apotheosis:reforging_table"
-			}
-			id: "3C0000000000000D"
-			rewards: [{
-				id: "3C0000000200000D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000D"
-				item: { count: 1, id: "apotheosis:reforging_table" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "apotheosis:augmenting_table"
-			}
-			id: "3C0000000000000E"
-			rewards: [{
-				id: "3C0000000200000E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000E"
-				item: { count: 1, id: "apotheosis:augmenting_table" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.0d
-		}
-		{
-			icon: {
-				id: "apothic_enchanting:library"
-			}
-			id: "3C00000000000010"
-			rewards: [{
-				id: "3C00000002000010"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000010"
-				item: { count: 1, id: "apothic_enchanting:library" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "apothic_enchanting:ender_library"
-			}
-			id: "3C00000000000011"
-			rewards: [{
-				id: "3C00000002000011"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000011"
-				item: { count: 1, id: "apothic_enchanting:ender_library" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 6.0d
-		}
-		{
-			icon: {
 				id: "betterend:infusion_pedestal"
 			}
 			id: "3C00000000000012"
@@ -207,24 +135,6 @@
 			}]
 			x: 6.0d
 			y: 7.5d
-		}
-		{
-			icon: {
-				id: "apotheosis:ender_gem_case"
-			}
-			id: "3C00000000000014"
-			rewards: [{
-				id: "3C00000002000014"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000014"
-				item: { count: 1, id: "apotheosis:ender_gem_case" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 6.0d
 		}
 		{
 			icon: {

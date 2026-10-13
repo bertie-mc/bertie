@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 1000,
+    "blood": 0,
+    "souls": 10,
+    "experience": 800
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "cataclysm:amethyst_crab_shell"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "berlordscarving:amethyst_big_slate"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:moss_block"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "hazennstuff:creaking_helmet"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm_spellbooks:bloom_stone_hat",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

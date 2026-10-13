@@ -22,21 +22,6 @@
           }
         },
         "count": 1,
-        "id": "twilightforest:fiery_sword"
-      },
-      "weight": 10
-    },
-    {
-      "stack": {
-        "components": {
-          "apotheosis:durability_bonus": 0.525,
-          "minecraft:enchantments": {
-            "levels": {
-              "minecraft:sharpness": 8
-            }
-          }
-        },
-        "count": 1,
         "id": "twilightforest:diamond_minotaur_axe"
       },
       "weight": 10

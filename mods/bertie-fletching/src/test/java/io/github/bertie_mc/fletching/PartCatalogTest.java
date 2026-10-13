@@ -38,7 +38,7 @@ class PartCatalogTest {
                         "dielectric",
                         "ender"),
                 PartCatalog.inSlot(1).stream().map(PartCatalog.Part::key).toList());
-        assertEquals(22, PartCatalog.inSlot(2).size());
+        assertEquals(23, PartCatalog.inSlot(2).size());
         assertEquals(18, PartCatalog.inSlot(3).size());
         for (String removed : List.of(
                 "gunpowder",

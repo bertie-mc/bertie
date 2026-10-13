@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/knightmetal"
+    },
+    {
+      "tag": "c:ingots/knightmetal"
+    },
+    {
+      "tag": "c:ingots/knightmetal"
+    },
+    {
+      "tag": "c:ingots/knightmetal"
+    },
+    {
+      "item": "minecraft:chain"
+    }
+  ],
+  "result": {
+    "id": "twilightforest:block_and_chain",
+    "count": 1
+  }
+}

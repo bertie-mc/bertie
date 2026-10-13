@@ -1,0 +1,38 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "mekanism:configurator",
+      "required": false
+    },
+    {
+      "id": "powah:wrench",
+      "required": false
+    },
+    "#anvilcraft:tools/anvil_hammer",
+    {
+      "id": "create:wrench",
+      "required": false
+    },
+    {
+      "id": "enderio:yeta_wrench",
+      "required": false
+    },
+    {
+      "id": "modular_machinery_reborn:wrench",
+      "required": false
+    },
+    {
+      "id": "omnitools:omni_wrench",
+      "required": false
+    },
+    {
+      "id": "oritech:wrench",
+      "required": false
+    },
+    {
+      "id": "refinedstorage:wrench",
+      "required": false
+    }
+  ]
+}

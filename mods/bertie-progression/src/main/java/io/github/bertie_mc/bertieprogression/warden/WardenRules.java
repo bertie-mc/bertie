@@ -46,7 +46,13 @@ public final class WardenRules {
                 InteractionResult.sidedSuccess(warden.level().isClientSide()));
         if (warden.level().isClientSide()) return;
         state.bertie$setTendrilsSheared(true);
-        warden.spawnAtLocation(tendril);
+        var drop = warden.spawnAtLocation(new ItemStack(tendril), warden.getEyeHeight());
+        if (drop != null) {
+            drop.setDeltaMovement(
+                    (warden.getRandom().nextFloat() - warden.getRandom().nextFloat()) * 0.1,
+                    warden.getRandom().nextFloat() * 0.05 + 0.05,
+                    (warden.getRandom().nextFloat() - warden.getRandom().nextFloat()) * 0.1);
+        }
         warden.playSound(SoundEvents.SHEEP_SHEAR, 1, 1);
         warden.gameEvent(GameEvent.SHEAR, event.getEntity());
         tool.hurtAndBreak(

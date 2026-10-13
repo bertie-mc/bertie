@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "block_factorys_bosses"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "berlordscarving:bone_big_slate"
+    },
+    "D": {
+      "item": "block_factorys_bosses:dragon_bone"
+    },
+    "S": {
+      "item": "minecraft:shield"
+    }
+  },
+  "pattern": [
+    "IDI",
+    "DSD",
+    "IDI"
+  ],
+  "result": {
+    "id": "block_factorys_bosses:dragon_guard_shield",
+    "count": 1
+  }
+}

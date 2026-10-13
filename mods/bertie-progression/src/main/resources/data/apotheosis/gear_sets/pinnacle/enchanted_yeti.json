@@ -92,21 +92,6 @@
           "apotheosis:durability_bonus": 0.8,
           "minecraft:enchantments": {
             "levels": {
-              "minecraft:sharpness": 15
-            }
-          }
-        },
-        "count": 1,
-        "id": "twilightforest:glass_sword"
-      },
-      "weight": 2
-    },
-    {
-      "stack": {
-        "components": {
-          "apotheosis:durability_bonus": 0.8,
-          "minecraft:enchantments": {
-            "levels": {
               "minecraft:fortune": 15
             }
           }
@@ -117,15 +102,7 @@
       "weight": 4
     }
   ],
-  "offhands": [
-    {
-      "stack": {
-        "count": 1,
-        "id": "twilightforest:knightmetal_shield"
-      },
-      "weight": 10
-    }
-  ],
+  "offhands": [],
   "quality": 5.0,
   "tags": [
     "pinnacle_melee"

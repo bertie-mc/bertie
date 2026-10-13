@@ -102,10 +102,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "twilightforest:knightmetal_sword"
-        },
-        {
-          "type": "minecraft:item",
           "name": "twilightforest:charm_of_life_1"
         }
       ],
@@ -140,33 +136,11 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 25.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "twilightforest:ice_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
               "function": "minecraft:enchant_randomly",
               "options": "twilightforest:chill_aura"
             }
           ],
           "name": "minecraft:book"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 20.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "twilightforest:glass_sword"
         }
       ],
       "rolls": 1.0

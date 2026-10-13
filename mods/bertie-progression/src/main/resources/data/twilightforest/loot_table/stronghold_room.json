@@ -122,10 +122,6 @@
         {
           "type": "minecraft:item",
           "name": "twilightforest:steeleaf_pickaxe"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "twilightforest:ironwood_sword"
         }
       ],
       "rolls": 2.0
@@ -133,28 +129,6 @@
     {
       "bonus_rolls": 0.0,
       "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 25.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "twilightforest:ironwood_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 20.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "twilightforest:steeleaf_sword"
-        },
         {
           "type": "minecraft:item",
           "functions": [

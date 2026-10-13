@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apotheosis"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquamirae"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "C": {
+      "item": "l2complements:storm_core"
+    },
+    "E": {
+      "item": "apotheosis:epic_material"
+    },
+    "S": {
+      "item": "apotheosis:simple_reforging_table"
+    },
+    "N": {
+      "item": "minecraft:nether_bricks"
+    },
+    "K": {
+      "item": "twilightforest:knightmetal_block"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ESE",
+    "NKN"
+  ],
+  "result": {
+    "id": "apotheosis:reforging_table",
+    "count": 1
+  }
+}

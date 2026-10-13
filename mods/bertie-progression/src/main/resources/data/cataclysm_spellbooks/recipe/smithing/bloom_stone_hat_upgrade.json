@@ -1,15 +1,17 @@
 {
-  "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "cataclysm:amethyst_crab_shell"
-  },
-  "base": {
-    "item": "hazennstuff:creaking_helmet"
-  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
   "result": {
-    "id": "cataclysm_spellbooks:bloom_stone_hat"
-  },
-  "template": {
-    "item": "irons_spellbooks:nature_rune"
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

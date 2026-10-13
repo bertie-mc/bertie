@@ -19,6 +19,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
@@ -26,9 +27,9 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
  * Drops content from every creative tab: single ids listed in the generated
  * {@code removed_items.json}, and whole tabs listed in {@code removed_tabs.json}.
  *
- * <p>That single act also removes them from EMI: the pack's {@code emi.css} sets
- * {@code index-source: creative}, so EMI builds its index from the creative tabs. One mechanism, no
- * second list to drift out of sync. Their recipes are separately overridden with
+ * <p>Removal runs after late creative-tab additions. The built-in EMI plugin also filters stacks
+ * against this same catalogue, including when the viewer falls back to registry indexing.
+ * Their recipes are separately overridden with
  * {@code neoforge:false} by the same generator pass, so a removed item is both uncraftable and
  * invisible.
  *
@@ -93,7 +94,7 @@ public final class RemovedItems {
         return parsed;
     }
 
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onBuildTabContents(BuildCreativeModeTabContentsEvent event) {
         // Copy first: remove() mutates the very sets we are walking.
         List<ItemStack> entries = new ArrayList<>(event.getParentEntries());
@@ -128,6 +129,11 @@ public final class RemovedItems {
                 event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
         }
+    }
+
+    public static boolean isRemoved(ItemStack stack) {
+        return !stack.isEmpty()
+                && (ids().contains(BuiltInRegistries.ITEM.getKey(stack.getItem())) || isRemovedPotion(stack));
     }
 
     /**

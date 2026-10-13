@@ -207,34 +207,6 @@
             }
           ],
           "name": "twilightforest:steeleaf_pickaxe"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "enchantments": {
-                "minecraft:knockback": 2.0,
-                "minecraft:sharpness": 4.0
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "twilightforest:steeleaf_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "enchantments": {
-                "minecraft:bane_of_arthropods": 5.0,
-                "minecraft:fire_aspect": 2.0
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "twilightforest:steeleaf_sword"
         }
       ],
       "rolls": 1.0

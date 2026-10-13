@@ -22,6 +22,26 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @GameTestHolder(BertieFletching.ID)
 @PrefixGameTestTemplate(false)
 public final class RedesignGameTests {
+    @GameTest(template = "empty", batch = "shark_tooth")
+    public static void sharkToothAddsDamageToAquaticAndWetTargets(GameTestHelper h) {
+        Pig dry = pig(h, 2, 3);
+        arrow(h, "feather", "stick", "shark_tooth", "").hit(dry);
+        near(h, dry.getHealth(), 90, "dry terrestrial targets have no tooth bonus");
+        Pig wet = pig(h, 4, 3);
+        h.setBlock(new BlockPos(4, 4, 3), Blocks.WATER);
+        wet.baseTick();
+        h.assertTrue(wet.isInWaterOrRain(), "wet fixture is in water");
+        arrow(h, "feather", "stick", "shark_tooth", "").hit(wet);
+        near(h, wet.getHealth(), 88, "wet targets receive two extra damage");
+        var squid = h.spawn(EntityType.SQUID, new BlockPos(6, 4, 3));
+        squid.setNoAi(true);
+        squid.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);
+        squid.setHealth(100);
+        arrow(h, "feather", "stick", "shark_tooth", "").hit(squid);
+        near(h, squid.getHealth(), 88, "aquatic mobs receive the bonus even out of water");
+        h.succeed();
+    }
+
     @GameTest(template = "empty", batch = "refine_consistency")
     public static void repeatedDrawsAndDayNightFletchingsMatch(GameTestHelper h) {
         Pig target = pig(h, 2, 3);
@@ -224,6 +244,7 @@ public final class RedesignGameTests {
     @GameTest(template = "empty", batch = "redesign_first_link", timeoutTicks = 240)
     public static void darkLinkBeginsAfterImpactAndExpires(GameTestHelper h) {
         Pig a = pig(h, 2, 3), b = pig(h, 4, 3);
+        attribute(b, "apothic_attributes:crit_chance", 0);
         arrow(h, "feather", "dark", "flint", "").hit(a);
         near(h, a.getHealth(), 90, "initial impact damages only the struck target");
         near(h, b.getHealth(), 100, "new link does not replay first strike");

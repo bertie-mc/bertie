@@ -1,7 +1,13 @@
 package io.github.bertie_mc.fletching;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.animal.Turtle;
+import net.minecraft.world.entity.monster.Guardian;
 import net.minecraft.world.level.Level;
 
 public record ArrowProfile(
@@ -85,11 +91,23 @@ public record ArrowProfile(
 
     public float bonus(LivingEntity target, double peak) {
         float bonus = tip.damage();
+        if (tip("shark_tooth") && (target.isInWaterOrRain() || aquatic(target))) bonus += 2;
         if (tip("quartz") && target.level().dimension().equals(Level.NETHER)) bonus += 2;
         if (tip("abyssal") && target.isInWaterOrRain()) bonus += 4;
         if ((tip("onyx") || tip("moonstone")) && night(target.level())) bonus += 3;
         if (tip("heavy")) bonus += (float) Math.max(0, peak - target.getY());
         return bonus;
+    }
+
+    public static boolean aquatic(LivingEntity target) {
+        MobCategory category = target.getType().getCategory();
+        return category == MobCategory.WATER_CREATURE
+                || category == MobCategory.WATER_AMBIENT
+                || category == MobCategory.UNDERGROUND_WATER_CREATURE
+                || category == MobCategory.AXOLOTLS
+                || target instanceof Guardian
+                || target instanceof Turtle
+                || target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:aquatic")));
     }
 
     public boolean execute() {

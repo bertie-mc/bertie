@@ -1,0 +1,45 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "block_factorys_bosses:dragon_guard_shield",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:enhanced_shield",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:ice_gauntlet",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:infernal_shield",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:stony_shield",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:maledictum_shield",
+      "required": false
+    },
+    {
+      "id": "piglinproliferation:buckler",
+      "required": false
+    },
+    {
+      "id": "minecraft:shield",
+      "required": false
+    },
+    {
+      "id": "#forge:tools/shields",
+      "required": false
+    },
+    {
+      "id": "#c:tools/shields",
+      "required": false
+    }
+  ]
+}
