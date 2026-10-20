@@ -1,17 +1,14 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "magitech:zinc_ingot",
+  "ingredient": {
+    "item": "magitech:raw_zinc"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 1,
+    "id": "magitech:zinc_ingot"
   }
 }

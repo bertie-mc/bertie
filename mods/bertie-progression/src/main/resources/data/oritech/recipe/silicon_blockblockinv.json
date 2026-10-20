@@ -1,17 +1,13 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "tag": "c:storage_blocks/silicon"
     }
   ],
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 9,
+    "id": "refinedstorage:silicon"
   }
 }

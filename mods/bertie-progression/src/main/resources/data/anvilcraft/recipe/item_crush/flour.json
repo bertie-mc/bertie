@@ -1,17 +1,21 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "anvilcraft:item_crush",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "items": "#c:crops/wheat"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "id": "create:wheat_flour"
+    },
+    {
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.5
+      },
+      "id": "create:wheat_flour"
+    }
+  ]
 }

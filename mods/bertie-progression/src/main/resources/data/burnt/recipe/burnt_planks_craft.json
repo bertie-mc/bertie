@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "burnt",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "bertieprogression:retained/burnt/burnt_logs"
+    }
+  ],
+  "result": {
+    "id": "burnt:burnt_planks",
+    "count": 4
+  }
+}

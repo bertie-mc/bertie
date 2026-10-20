@@ -1014,8 +1014,8 @@
 				item: { count: 1 id: "deeperdarker:resonarium_plate" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 8.0d
+			x: -24.0d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
@@ -1026,8 +1026,8 @@
 				item: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 8.0d
+			x: -22.5d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "armageddon_mod:gilded_plate" }
@@ -1038,8 +1038,8 @@
 				item: { count: 1 id: "armageddon_mod:gilded_plate" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 8.0d
+			x: -21.0d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "armageddon_mod:echoing_scrap" }
@@ -1050,8 +1050,8 @@
 				item: { count: 1 id: "armageddon_mod:echoing_scrap" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 8.0d
+			x: -19.5d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "mythsandlegends:possessed_armor_fragment" }
@@ -1062,8 +1062,8 @@
 				item: { count: 1 id: "mythsandlegends:possessed_armor_fragment" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 8.0d
+			x: -18.0d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:armor_shard_cluster" }
@@ -1074,8 +1074,8 @@
 				item: { count: 1 id: "twilightforest:armor_shard_cluster" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.0d
+			x: -16.5d
+			y: 21.5d
 		}
 		{
 			icon: { count: 1 id: "irons_spellbooks:mithril_scrap" }
@@ -1086,8 +1086,8 @@
 				item: { count: 1 id: "irons_spellbooks:mithril_scrap" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 9.5d
+			x: -24.0d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "dungeonsdelight:stained_scrap_fragment" }
@@ -1098,8 +1098,8 @@
 				item: { count: 1 id: "dungeonsdelight:stained_scrap_fragment" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 9.5d
+			x: -22.5d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:crocodile_scute" }
@@ -1135,7 +1135,7 @@
 				type: "item"
 			}]
 			x: -21.0d
-			y: 8.0d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:centipede_leg" }
@@ -1147,7 +1147,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: 8.0d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:froststalker_horn" }
@@ -1158,8 +1158,8 @@
 				item: { count: 1 id: "alexsmobs:froststalker_horn" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 8.0d
+			x: -24.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "antarchy:nightmare_scale" }
@@ -1170,7 +1170,7 @@
 				item: { count: 1 id: "antarchy:nightmare_scale" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -21.0d
 			y: 8.0d
 		}
 		{
@@ -1182,8 +1182,8 @@
 				item: { count: 1 id: "antarchy:primordial_scute" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 9.5d
+			x: -19.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "antarchy:chitin" }
@@ -1194,8 +1194,8 @@
 				item: { count: 1 id: "antarchy:chitin" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 9.5d
+			x: -18.0d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:naga_scale" }
@@ -1206,8 +1206,8 @@
 				item: { count: 1 id: "twilightforest:naga_scale" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 9.5d
+			x: -18.0d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "twilightforest:steeleaf_ingot" }
@@ -1218,8 +1218,8 @@
 				item: { count: 1 id: "twilightforest:steeleaf_ingot" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 9.5d
+			x: -16.5d
+			y: 23.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:dragonscales_red" }
@@ -1231,8 +1231,8 @@
 				item: { count: 1, id: "ftbfiltersystem:smart_filter", components: { "ftbfiltersystem:filter": "or(item(iceandfire:dragonscales_red)item(iceandfire:dragonscales_green)item(iceandfire:dragonscales_bronze)item(iceandfire:dragonscales_gray)item(iceandfire:dragonscales_blue)item(iceandfire:dragonscales_white)item(iceandfire:dragonscales_sapphire)item(iceandfire:dragonscales_silver)item(iceandfire:dragonscales_electric)item(iceandfire:dragonscales_amethyst)item(iceandfire:dragonscales_copper)item(iceandfire:dragonscales_black))", "minecraft:custom_name": "{\"text\": \"Dragon Scales\", \"italic\": false}" } }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 9.5d
+			x: -16.5d
+			y: 8.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:sea_serpent_scales_blue" }
@@ -1244,7 +1244,7 @@
 				item: { count: 1, id: "ftbfiltersystem:smart_filter", components: { "ftbfiltersystem:filter": "or(item(iceandfire:sea_serpent_scales_blue)item(iceandfire:sea_serpent_scales_bronze)item(iceandfire:sea_serpent_scales_deepblue)item(iceandfire:sea_serpent_scales_green)item(iceandfire:sea_serpent_scales_purple)item(iceandfire:sea_serpent_scales_red)item(iceandfire:sea_serpent_scales_teal))", "minecraft:custom_name": "{\"text\": \"Sea Serpent Scales\", \"italic\": false}" } }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -24.0d
 			y: 9.5d
 		}
 		{
@@ -1258,7 +1258,7 @@
 				type: "item"
 			}]
 			x: -24.0d
-			y: 11.0d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:shiny_scales" }
@@ -1270,7 +1270,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 11.0d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:dragonbone" }
@@ -1281,8 +1281,8 @@
 				item: { count: 1 id: "iceandfire:dragonbone" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 11.0d
+			x: -22.5d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:witherbone" }
@@ -1293,8 +1293,8 @@
 				item: { count: 1 id: "iceandfire:witherbone" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 11.0d
+			x: -21.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "iceandfire:wither_shard" }
@@ -1305,8 +1305,8 @@
 				item: { count: 1 id: "iceandfire:wither_shard" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 11.0d
+			x: -22.5d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "deeperdarker:warden_carapace" }
@@ -1317,8 +1317,8 @@
 				item: { count: 1 id: "deeperdarker:warden_carapace" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 11.0d
+			x: -21.0d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "deeperdarker:sculk_bone" }
@@ -1329,8 +1329,8 @@
 				item: { count: 1 id: "deeperdarker:sculk_bone" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 12.5d
+			x: -19.5d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "cataclysm:amethyst_crab_shell" }
@@ -1341,8 +1341,8 @@
 				item: { count: 1 id: "cataclysm:amethyst_crab_shell" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 12.5d
+			x: -19.5d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "cataclysm:koboleton_bone" }
@@ -1353,8 +1353,8 @@
 				item: { count: 1 id: "cataclysm:koboleton_bone" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 12.5d
+			x: -18.0d
+			y: 14.0d
 		}
 		{
 			icon: { count: 1 id: "cataclysm:crystallized_coral_fragments" }
@@ -1365,8 +1365,8 @@
 				item: { count: 1 id: "cataclysm:crystallized_coral_fragments" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 12.5d
+			x: -18.0d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "cataclysm:coral_chunk" }
@@ -1377,8 +1377,8 @@
 				item: { count: 1 id: "cataclysm:coral_chunk" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 12.5d
+			x: -16.5d
+			y: 24.5d
 		}
 		{
 			icon: { count: 1 id: "quark:crab_shell" }
@@ -1389,8 +1389,8 @@
 				item: { count: 1 id: "quark:crab_shell" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 12.5d
+			x: -24.0d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "forbidden_arcanus:dragon_scale" }
@@ -1401,8 +1401,8 @@
 				item: { count: 1 id: "forbidden_arcanus:dragon_scale" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 14.0d
+			x: -21.0d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "forbidden_arcanus:aquatic_dragon_scale" }
@@ -1413,8 +1413,8 @@
 				item: { count: 1 id: "forbidden_arcanus:aquatic_dragon_scale" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 14.0d
+			x: -19.5d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "forbidden_arcanus:golden_dragon_scale" }
@@ -1425,8 +1425,8 @@
 				item: { count: 1 id: "forbidden_arcanus:golden_dragon_scale" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 14.0d
+			x: -18.0d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "forbidden_arcanus:silver_dragon_scale" }
@@ -1437,8 +1437,8 @@
 				item: { count: 1 id: "forbidden_arcanus:silver_dragon_scale" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 14.0d
+			x: -16.5d
+			y: 9.5d
 		}
 		{
 			icon: { count: 1 id: "born_in_chaos_v1:spiny_shell" }
@@ -1449,8 +1449,8 @@
 				item: { count: 1 id: "born_in_chaos_v1:spiny_shell" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 14.0d
+			x: -22.5d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "born_in_chaos_v1:fused_bone" }
@@ -1485,8 +1485,8 @@
 				item: { count: 1 id: "hazennstuff:shadow_scale" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 15.5d
+			x: -24.0d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "hazennstuff:arcane_sea_shell" }
@@ -1498,7 +1498,7 @@
 				type: "item"
 			}]
 			x: -21.0d
-			y: 15.5d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "hazennstuff:overgrown_bone" }
@@ -1509,7 +1509,7 @@
 				item: { count: 1 id: "hazennstuff:overgrown_bone" }
 				type: "item"
 			}]
-			x: -19.5d
+			x: -22.5d
 			y: 15.5d
 		}
 		{
@@ -1521,7 +1521,7 @@
 				item: { count: 1 id: "hazennstuff:charred_bones" }
 				type: "item"
 			}]
-			x: -18.0d
+			x: -21.0d
 			y: 15.5d
 		}
 		{
@@ -1533,7 +1533,7 @@
 				item: { count: 1 id: "hazennstuff:elder_guardian_spine" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -19.5d
 			y: 15.5d
 		}
 		{
@@ -1545,8 +1545,8 @@
 				item: { count: 1 id: "hazennstuff:permafrost_fragment" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 17.0d
+			x: -19.5d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "mythsandlegends:gargoyle_fragment" }
@@ -1557,8 +1557,8 @@
 				item: { count: 1 id: "mythsandlegends:gargoyle_fragment" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 17.0d
+			x: -18.0d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "mythsandlegends:scorched_bone" }
@@ -1569,8 +1569,8 @@
 				item: { count: 1 id: "mythsandlegends:scorched_bone" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 17.0d
+			x: -18.0d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "armageddon_mod:ender_dragon_bone" }
@@ -1581,8 +1581,8 @@
 				item: { count: 1 id: "armageddon_mod:ender_dragon_bone" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 17.0d
+			x: -16.5d
+			y: 15.5d
 		}
 		{
 			icon: { count: 1 id: "armageddon_mod:splintered_bone" }
@@ -1593,7 +1593,7 @@
 				item: { count: 1 id: "armageddon_mod:splintered_bone" }
 				type: "item"
 			}]
-			x: -18.0d
+			x: -24.0d
 			y: 17.0d
 		}
 		{
@@ -1605,7 +1605,7 @@
 				item: { count: 1 id: "armageddon_mod:withered_splintered_bone" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -22.5d
 			y: 17.0d
 		}
 		{
@@ -1617,8 +1617,8 @@
 				item: { count: 1 id: "armageddon_mod:wither_spine" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 18.5d
+			x: -21.0d
+			y: 17.0d
 		}
 		{
 			icon: { count: 1 id: "block_factorys_bosses:dragon_bone" }
@@ -1629,8 +1629,8 @@
 				item: { count: 1 id: "block_factorys_bosses:dragon_bone" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 18.5d
+			x: -19.5d
+			y: 17.0d
 		}
 		{
 			icon: { count: 1 id: "aquamirae:fin" }
@@ -1641,8 +1641,8 @@
 				item: { count: 1 id: "aquamirae:fin" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 18.5d
+			x: -16.5d
+			y: 26.0d
 		}
 		{
 			icon: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
@@ -1653,8 +1653,8 @@
 				item: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 18.5d
+			x: -24.0d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "anvilcraft:sea_heart_shell" }
@@ -1665,8 +1665,8 @@
 				item: { count: 1 id: "anvilcraft:sea_heart_shell" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 18.5d
+			x: -22.5d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
@@ -1677,8 +1677,8 @@
 				item: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 18.5d
+			x: -21.0d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "anvilcraft:hardend_resin" }
@@ -1689,8 +1689,8 @@
 				item: { count: 1 id: "anvilcraft:hardend_resin" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 20.0d
+			x: -19.5d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "l2complements:warden_bone_shard" }
@@ -1701,8 +1701,8 @@
 				item: { count: 1 id: "l2complements:warden_bone_shard" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 20.0d
+			x: -18.0d
+			y: 17.0d
 		}
 		{
 			icon: { count: 1 id: "irons_spellbooks:frozen_bone" }
@@ -1713,8 +1713,8 @@
 				item: { count: 1 id: "irons_spellbooks:frozen_bone" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 20.0d
+			x: -16.5d
+			y: 17.0d
 		}
 		{
 			icon: { count: 1 id: "irons_spellbooks:icy_fang" }
@@ -1725,8 +1725,8 @@
 				item: { count: 1 id: "irons_spellbooks:icy_fang" }
 				type: "item"
 			}]
-			x: -19.5d
-			y: 20.0d
+			x: -24.0d
+			y: 18.5d
 		}
 		{
 			icon: { count: 1 id: "pastel:dragonbone_chunk" }
@@ -1737,8 +1737,8 @@
 				item: { count: 1 id: "pastel:dragonbone_chunk" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 20.0d
+			x: -22.5d
+			y: 18.5d
 		}
 		{
 			icon: { count: 1 id: "minecraft:armadillo_scute" }
@@ -1749,8 +1749,8 @@
 				item: { count: 1 id: "minecraft:armadillo_scute" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 20.0d
+			x: -22.5d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:turtle_scute" }
@@ -1761,8 +1761,8 @@
 				item: { count: 1 id: "minecraft:turtle_scute" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: 21.5d
+			x: -21.0d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "minecraft:shulker_shell" }
@@ -1773,8 +1773,8 @@
 				item: { count: 1 id: "minecraft:shulker_shell" }
 				type: "item"
 			}]
-			x: -22.5d
-			y: 21.5d
+			x: -18.0d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "minecraft:nautilus_shell" }
@@ -1785,8 +1785,8 @@
 				item: { count: 1 id: "minecraft:nautilus_shell" }
 				type: "item"
 			}]
-			x: -21.0d
-			y: 21.5d
+			x: -16.5d
+			y: 27.5d
 		}
 		{
 			icon: { count: 1 id: "irons_spellbooks:dragonskin" }
@@ -1797,8 +1797,8 @@
 				item: { count: 1 id: "irons_spellbooks:dragonskin" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 12.5d
+			x: -24.0d
+			y: 29.0d
 		}
 		{
 			icon: { count: 1 id: "alexsmobs:elastic_tendon" }
@@ -1809,8 +1809,8 @@
 				item: { count: 1 id: "alexsmobs:elastic_tendon" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 12.5d
+			x: -22.5d
+			y: 29.0d
 		}
 		{
 			icon: { count: 1 id: "antarchy:king_scale" }
@@ -1821,8 +1821,8 @@
 				item: { count: 1 id: "antarchy:king_scale" }
 				type: "item"
 			}]
-			x: -12.0d
-			y: 15.5d
+			x: -19.5d
+			y: 11.0d
 		}
 		{
 			icon: { count: 1 id: "antarchy:queen_scale" }
@@ -1833,8 +1833,8 @@
 				item: { count: 1 id: "antarchy:queen_scale" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 15.5d
+			x: -18.0d
+			y: 11.0d
 		}
 	]
 }

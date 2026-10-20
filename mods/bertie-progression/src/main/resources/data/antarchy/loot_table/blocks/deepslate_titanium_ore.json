@@ -32,7 +32,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "antarchy:raw_titanium_scrap",
+              "name": "anvilcraft:raw_titanium",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

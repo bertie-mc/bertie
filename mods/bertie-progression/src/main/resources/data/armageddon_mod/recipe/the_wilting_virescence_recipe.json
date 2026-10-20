@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:tall_flowers"
+    },
+    "b": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "c": {
+      "item": "armageddon_mod:raw_elvenite"
+    },
+    "d": {
+      "item": "armageddon_mod:rustyswordofthelegendaryhero"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:the_wilting_virescence",
+    "count": 1
+  }
+}

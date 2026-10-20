@@ -133,6 +133,7 @@ public final class CombatGameTests {
     public static void magicDoesNotReceiveOrdinaryFireProtection(GameTestHelper helper) {
         Zombie target = target(helper);
         target.getAttribute(Attributes.ARMOR).setBaseValue(0);
+        CombatRegistry.attribute(target, "apothic_attributes:crit_chance").setBaseValue(0);
         ItemStack boots = new ItemStack(Items.LEATHER_BOOTS);
         boots.enchant(
                 helper.getLevel()

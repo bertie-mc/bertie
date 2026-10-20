@@ -1,0 +1,15 @@
+{
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "oritech:recyclable/small_iron_dust"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:iron_nugget"
+    }
+  ],
+  "time": 100
+}

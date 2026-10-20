@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:block_compress",
+  "inputs": [
+    {
+      "blocks": "#bertieprogression:retained/anvilcraft/mushroom_block"
+    },
+    {
+      "blocks": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "block": "minecraft:mycelium"
+  }
+}

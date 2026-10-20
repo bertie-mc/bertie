@@ -1,17 +1,15 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "oritech:deep_drill",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "item": "oritech:resource_node_uranium"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "count": 1,
+      "id": "anvilcraft:raw_uranium"
+    }
+  ],
+  "time": 1
 }

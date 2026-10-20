@@ -12,16 +12,16 @@
       "item": "minecraft:ancient_debris"
     },
     "b": {
-      "item": "minecraft:blaze_powder"
+      "item": "malum:blazing_quartz"
     },
     "c": {
-      "item": "minecraft:fire_charge"
+      "item": "pastel:stratine_gem"
     },
     "x": {
-      "item": "minecraft:blaze_rod"
+      "item": "minecraft:glowstone"
     },
     "y": {
-      "item": "minecraft:bone"
+      "item": "minecraft:blaze_rod"
     }
   },
   "pattern": [

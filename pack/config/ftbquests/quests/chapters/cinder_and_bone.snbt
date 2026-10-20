@@ -1402,5 +1402,18 @@
 			x: 19.5d
 			y: 4.5d
 		}
+		{
+			y: -4.5d
+			x: 22.5d
+			dependencies: ["6B0000000000004D"]
+			id: "6B00000000006100"
+			icon: { id: "create:creative_blaze_cake" }
+			tasks: [{
+				id: "6B00000001006100"
+				count: 1L
+				item: { count: 1 id: "create:creative_blaze_cake" }
+				type: "item"
+			}]
+		}
 	]
 }

@@ -1,17 +1,58 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "anvilcraft:mesh",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "items": "anvilcraft:cinerite"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.5
+      },
+      "id": "anvilcraft:cinerite"
+    },
+    {
+      "id": "minecraft:gunpowder",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.2
+      }
+    },
+    {
+      "id": "anvilcraft:zinc_nugget",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.15
+      }
+    },
+    {
+      "id": "mekanism:nugget_tin",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.15
+      }
+    },
+    {
+      "id": "anvilcraft:silver_nugget",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.05
+      }
+    },
+    {
+      "id": "anvilcraft:lead_nugget",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.03
+      }
+    }
+  ]
 }

@@ -5,5 +5,6 @@
   "item.hazennstuff.stardust": "Cosmic Dust",
   "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
   "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
-  "material.hazennstuff.steel": "Haze Steel"
+  "material.hazennstuff.steel": "Haze Steel",
+  "block.hazennstuff.solar_core_blackstone_ore": "Solar Core Ore"
 }

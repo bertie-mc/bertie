@@ -1,0 +1,28 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "#c:plates/tin"
+    },
+    {
+      "items": "anvilcraft:royal_steel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:tin_can"
+    },
+    {
+      "id": "anvilcraft:royal_steel_ingot"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/tin"
+      }
+    }
+  ]
+}

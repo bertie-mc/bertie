@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "bertieprogression:retained/burnt/stripped_logs"
+  },
+  "result": {
+    "id": "burnt:stripped_burnt_log"
+  }
+}

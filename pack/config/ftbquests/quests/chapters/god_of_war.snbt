@@ -1534,8 +1534,8 @@
 					type: "item"
 				}
 			]
-			x: -30d
-			y: 15d
+			x: -30.0d
+			y: 16.0d
 		}
 		{
 			icon: {
@@ -2817,8 +2817,8 @@
 					type: "item"
 				}
 			]
-			x: -29d
-			y: 15d
+			x: -26.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7B000000000000A8"]
@@ -4354,8 +4354,8 @@
 					type: "item"
 				}
 			]
-			x: -30d
-			y: 11d
+			x: -32.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7B000000000002C4"]
@@ -5016,8 +5016,8 @@
 					type: "item"
 				}
 			]
-			x: -34d
-			y: 7d
+			x: -35.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7B000000000000DE"]
@@ -5077,8 +5077,8 @@
 					type: "item"
 				}
 			]
-			x: -33d
-			y: 8d
+			x: -34.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7B000000000000DF"]
@@ -5139,8 +5139,8 @@
 					type: "item"
 				}
 			]
-			x: -34d
-			y: 8d
+			x: -35.0d
+			y: 8.0d
 		}
 		{
 			icon: {
@@ -5514,8 +5514,8 @@
 					type: "item"
 				}
 			]
-			x: -32d
-			y: 8d
+			x: -16.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7B000000000000D5"]
@@ -5644,8 +5644,8 @@
 					type: "item"
 				}
 			]
-			x: -31d
-			y: 8d
+			x: -25.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7B000000000000D4"]
@@ -5975,8 +5975,8 @@
 					type: "item"
 				}
 			]
-			x: -8d
-			y: 9d
+			x: -26.0d
+			y: 9.0d
 		}
 		{
 			icon: {
@@ -6005,8 +6005,8 @@
 					type: "item"
 				}
 			]
-			x: -24d
-			y: 8d
+			x: -26.0d
+			y: 8.0d
 		}
 		{
 			icon: {

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "anvilcraft:ember_metal_block",
+    "anvilcraft:overheated_ember_metal_block"
+  ]
+}

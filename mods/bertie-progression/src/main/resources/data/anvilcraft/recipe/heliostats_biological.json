@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "anvilcraft:heliostats",
+  "key": {
+    "F": {
+      "item": "minecraft:sunflower"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "S": {
+      "tag": "c:plates/silver"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SFS",
+    " I "
+  ],
+  "result": {
+    "count": 8,
+    "id": "anvilcraft:heliostats"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/silver"
+      }
+    }
+  ]
+}

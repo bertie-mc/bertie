@@ -1,17 +1,18 @@
 {
-  "neoforge:conditions": [
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.6,
+  "ingredient": [
     {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
+      "item": "mekanism:lead_ore"
+    },
     {
-      "item": "minecraft:stone"
+      "item": "mekanism:deepslate_lead_ore"
     }
   ],
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 1,
+    "id": "anvilcraft:lead_ingot"
   }
 }

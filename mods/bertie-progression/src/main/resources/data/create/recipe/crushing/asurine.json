@@ -1,17 +1,19 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:crushing",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "item": "create:asurine"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "processing_time": 250,
+  "results": [
+    {
+      "chance": 0.3,
+      "id": "create:crushed_raw_zinc"
+    },
+    {
+      "chance": 0.3,
+      "id": "anvilcraft:zinc_nugget"
+    }
+  ]
 }

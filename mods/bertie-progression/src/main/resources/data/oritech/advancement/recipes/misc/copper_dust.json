@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "oritech:small_copper_dust"
+            "items": "create:copper_nugget"
           }
         ]
       },

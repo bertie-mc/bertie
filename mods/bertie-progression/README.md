@@ -90,6 +90,9 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Data
 
+See [Material processing](docs/material-processing.md) for retained processing routes,
+AnvilCraft recipes, sifting probabilities, Solar Core and Tungsten generation, and Nether materials.
+
 Ravager Hide uses a pool in the Ravager's loot table, preserving its vanilla saddle drop.
 The Hoglin Hide knife and non-burning requirements remain; the chance is 50% without
 Looting, 60% at I, 70% at II and 80% at III. Quark's native Ravager Hide base count and

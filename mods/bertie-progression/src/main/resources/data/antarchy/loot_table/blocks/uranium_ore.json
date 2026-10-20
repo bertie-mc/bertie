@@ -32,7 +32,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "antarchy:raw_uranium_scrap",
+              "name": "anvilcraft:raw_uranium",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

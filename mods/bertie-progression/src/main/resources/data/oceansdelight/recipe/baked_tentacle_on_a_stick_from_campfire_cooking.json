@@ -1,17 +1,13 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "oceansdelight:tentacle_on_a_stick"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 1,
+    "id": "oceansdelight:tentacle_on_a_stick"
   }
 }

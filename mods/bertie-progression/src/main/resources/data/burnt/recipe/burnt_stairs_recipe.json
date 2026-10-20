@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "group": "burnt",
+  "category": "blocks",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "minecraft:wooden_stairs"
+  },
+  "result": {
+    "id": "burnt:burnt_stairs"
+  }
+}

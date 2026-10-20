@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "zeta:flag",
+      "flag": "chest_reversion"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "quark:revertable_trapped_chests"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "tag": "quark:revertable_trapped_chests"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:trapped_chest"
+  }
+}

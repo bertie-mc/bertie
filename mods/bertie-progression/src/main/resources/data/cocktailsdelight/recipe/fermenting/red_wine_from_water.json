@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "bertieprogression:retained/c/foods/black_grapes"
+      }
+    }
+  ],
+  "type": "brewinandchewin:fermenting",
+  "base_fluid": {
+    "amount": 1000,
+    "ingredient": {
+      "id": "minecraft:water"
+    },
+    "unit": "millibuckets"
+  },
+  "fermentingtime": 9600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "bertieprogression:retained/c/foods/black_grapes"
+    },
+    {
+      "tag": "bertieprogression:retained/c/foods/black_grapes"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "cocktailsdelight:red_wine"
+  },
+  "temperature": 3,
+  "unit": "millibuckets"
+}

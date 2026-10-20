@@ -1,17 +1,13 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": {
+    "item": "moredelight:bread_slice"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 1,
+    "id": "moredelight:toast"
   }
 }

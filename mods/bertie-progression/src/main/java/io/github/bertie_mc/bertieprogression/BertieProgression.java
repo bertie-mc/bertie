@@ -25,6 +25,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.combat.MagicOrigins.class);
         ModItems.ITEMS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
+        io.github.bertie_mc.bertieprogression.worldgen.ProgressionFeatures.FEATURES.register(modBus);
         ModItems.DATA_COMPONENTS.register(modBus);
         ModItems.TABS.register(modBus);
         ModAttachments.ATTACHMENTS.register(modBus);
@@ -74,6 +75,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(NetherGateHandler.class);
         NeoForge.EVENT_BUS.register(CrushingEssenceHandler.class);
         NeoForge.EVENT_BUS.register(EndVeilBrewingHandler.class);
+        NeoForge.EVENT_BUS.register(LavaVisionBrewingHandler.class);
         NeoForge.EVENT_BUS.register(MagicMirrorCooldownHandler.class);
         NeoForge.EVENT_BUS.register(CapeSlotHandler.class);
         NeoForge.EVENT_BUS.register(SlotAudit.class);

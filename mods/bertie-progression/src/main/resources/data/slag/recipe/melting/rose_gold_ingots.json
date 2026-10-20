@@ -1,0 +1,13 @@
+{
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "bertieprogression:retained/c/ingots/rose_gold_slag"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 72,
+      "id": "slag:molten_rose_gold"
+    }
+  ]
+}

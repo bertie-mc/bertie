@@ -1,17 +1,7 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "type": "magitech:tool_material",
+  "ingredient": {
+    "tag": "c:gems/fluorite"
+  },
+  "result": "magitech:fluorite"
 }

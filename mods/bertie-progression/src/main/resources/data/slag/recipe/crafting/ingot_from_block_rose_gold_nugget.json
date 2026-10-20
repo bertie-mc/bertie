@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "bertieprogression:retained/c/ingots/rose_gold_slag"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "slag:rose_gold_nugget"
+  }
+}

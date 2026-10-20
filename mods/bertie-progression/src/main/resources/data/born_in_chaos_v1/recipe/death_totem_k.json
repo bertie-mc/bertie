@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "born_in_chaos_v1:shattered_skull"
+    },
+    "b": {
+      "tag": "minecraft:d_dub"
+    },
+    "c": {
+      "item": "born_in_chaos_v1:ethereal_spirit"
+    },
+    "d": {
+      "item": "born_in_chaos_v1:seedof_chaos"
+    }
+  },
+  "result": {
+    "id": "born_in_chaos_v1:death_totem",
+    "count": 1
+  }
+}

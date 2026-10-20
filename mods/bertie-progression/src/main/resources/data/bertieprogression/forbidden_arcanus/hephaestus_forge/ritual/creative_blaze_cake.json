@@ -1,0 +1,40 @@
+{
+  "forge_tier": 2,
+  "essences": {
+    "aureal": 0,
+    "blood": 15000,
+    "souls": 50,
+    "experience": 1350
+  },
+  "main_ingredient": {
+    "item": "create:blaze_cake"
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "avaritia:blaze_cube"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "cataclysm:ignitium_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "elemental_metals:fire_infused_netherite_ingot"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "create:creative_blaze_cake",
+      "count": 1
+    }
+  }
+}

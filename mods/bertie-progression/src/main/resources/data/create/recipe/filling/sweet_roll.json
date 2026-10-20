@@ -1,17 +1,18 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:filling",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "item": "minecraft:bread"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "c:milk"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "id": "expandeddelight:sweet_roll"
+    }
+  ]
 }

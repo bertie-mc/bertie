@@ -1,17 +1,15 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "oritech:pulverizer",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "tag": "c:gems/quartz"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:dust_quartz"
+    }
+  ],
+  "time": 100
 }

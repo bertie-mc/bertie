@@ -552,9 +552,9 @@ write("data/avaritia/recipe/blaze_cube.json", {
     "neoforge:conditions": conds("avaritia"),
     "type": "avaritia:shaped_table",
     "tier": 2,
-    "key": {"a": {"item": "minecraft:ancient_debris"}, "b": {"item": "minecraft:blaze_powder"},
-            "c": {"item": "minecraft:fire_charge"}, "x": {"item": "minecraft:blaze_rod"},
-            "y": {"item": "minecraft:bone"}},
+    "key": {"a": {"item": "minecraft:ancient_debris"}, "b": {"item": "malum:blazing_quartz"},
+            "c": {"item": "pastel:stratine_gem"}, "x": {"item": "minecraft:glowstone"},
+            "y": {"item": "minecraft:blaze_rod"}},
     "pattern": [" bcb ", "byxyb", "cxaxc", "byxyb", " bcb "],
     "result": {"id": "bertieprogression:null_blaze_cube", "count": 1},
 })
@@ -2862,9 +2862,9 @@ write("data/forbidden_arcanus/recipe/corrupti_dust.json",
 write("data/malum/recipe/spirit_infusion/malignant_pewter_ingot.json", DISABLED)
 write(f"{R}/malum/malignant_pewter_ingot.json",
       infusion("malum:soul_stained_steel_ingot", 4,
-               [("minecraft:netherite_ingot", 1), ("pastel:onyx_powder", 2),
-                ("malum:malignant_lead", 2), ("malum:null_slate", 6)],
-               [SP("earthen", 16), SP("eldritch", 16)],
+               [("minecraft:netherite_ingot", 1), ("anvilcraft:tungsten_ingot", 2),
+                ("malum:malignant_lead", 2), ("malum:null_slate", 6), ("pastel:onyx_powder", 2)],
+               [SP("earthen", 20), SP("eldritch", 16)],
                "malum:malignant_pewter_ingot", 1))
 
 # --- Cognition: the cognitive chain is rebuilt from the flux up. ---
@@ -3431,7 +3431,8 @@ write("assets/hazennstuff/lang/en_us.json",
        "item.hazennstuff.stardust": "Cosmic Dust",
        "item.hazennstuff.steel_ingot": "Haze Steel Ingot",
        "item.hazennstuff.steel_nugget": "Haze Steel Nugget",
-       "material.hazennstuff.steel": "Haze Steel"})
+       "material.hazennstuff.steel": "Haze Steel",
+       "block.hazennstuff.solar_core_blackstone_ore": "Solar Core Ore"})
 
 write("data/hazennstuff/recipe/crafting/materials/rose_gold_ingot.json", DISABLED)
 write(f"{R}/rosest_gold_ingot_from_clibano_combustion.json", {
@@ -3800,7 +3801,7 @@ _shelves = {
     "endshelf": (["EEE", "IBN", "EEE"], {"E": "minecraft:end_stone_bricks", "I": "apothic_enchanting:infused_breath", "B": "apothic_enchanting:basic_bookshelf", "N": "malum:warp_flux"}),
     "pearl_endshelf": (["EEE", "NDN", "EEE"], {"E": "minecraft:end_rod", "N": "malum:warp_flux", "D": "apothic_enchanting:endshelf"}),
     "draconic_endshelf": (["DDD", "ENE", "ECE"], {"D": "minecraft:dragon_head", "E": "endermanoverhaul:enderman_tooth", "C": "endermanoverhaul:corrupted_pearl", "N": "apothic_enchanting:endshelf"}),
-    "filtering_shelf": (["PSP", "OHO", "PSP"], {"P": "minecraft:prismarine_bricks", "S": "apothic_enchanting:infused_seashelf", "O": "curseofpandora:spellbound_orb", "H": "minecraft:heart_of_the_sea"}),
+    "filtering_shelf": (["PSP", "OHO", "PSP"], {"P": "berlordscarving:prismarine_big_slate", "S": "apothic_enchanting:infused_seashelf", "O": "curseofpandora:spellbound_orb", "H": "minecraft:heart_of_the_sea"}),
     "beeshelf": (["HBH", "OKO", "HBH"], {"H": "minecraft:honeycomb", "B": "minecraft:beehive", "O": "minecraft:honey_block", "K": "apothic_enchanting:basic_bookshelf"}),
     "geode_shelf": (["CCC", "CBC", "CUC"], {"C": "minecraft:calcite", "B": "apothic_enchanting:basic_bookshelf", "U": "minecraft:budding_amethyst"}),
     "melonshelf": (["MMM", "GBG", "MMM"], {"M": "minecraft:melon", "G": "minecraft:glistering_melon_slice", "B": "apothic_enchanting:basic_bookshelf"}),
@@ -5034,6 +5035,9 @@ def _redirect(node, table):
     if isinstance(node, dict):
         out, hit = {}, False
         for k, v in node.items():
+            if node.get("type") == "magitech:tool_material" and k == "result":
+                out[k] = v
+                continue
             c, h = _redirect(v, table)
             out[k] = c
             hit = hit or h
@@ -5106,6 +5110,8 @@ def _strip_loot(node, gone):
 def _result_ids(obj, out):
     """Pull every result item id out of a recipe of ANY type/shape."""
     if isinstance(obj, dict):
+        if obj.get("type") == "magitech:tool_material":
+            return out
         for k, v in obj.items():
             if k in ("result", "results"):
                 for e in (v if isinstance(v, list) else [v]):
@@ -5150,6 +5156,7 @@ if not _removed:
 
 # Walk the pack ONCE: registered item ids (for glob expansion), recipes by result, loot references.
 _items, _hits, _leaks, _loot_src, _merge_src, _tag_src = set(), [], {}, {}, {}, {}
+_recipe_src, _block_tag_src = {}, {}
 # modids the scan proves are installed, plus the namespaces nobody owns.
 _present = {MODID, "minecraft", "neoforge", "forge", "c", "zzzbertie"}
 _scan_ok = False
@@ -5164,6 +5171,27 @@ if _removed:
                             "mojang", "minecraft", "1.21.1", "minecraft-1.21.1-client.jar")
     if os.path.isfile(_vanilla):
         _scan.append(_vanilla)
+    # Bundled mods contribute tags and items just like standalone dependency JARs.
+    import hashlib
+    import tempfile
+    _jarjar_cache = os.path.join(tempfile.gettempdir(), "bertie-progression-jarjar")
+    os.makedirs(_jarjar_cache, exist_ok=True)
+    _nested_seen = set()
+    for _outer in _scan:
+        with zipfile.ZipFile(_outer) as _archive:
+            for _entry in _archive.namelist():
+                if not (_entry.startswith("META-INF/jarjar/") and _entry.endswith(".jar")):
+                    continue
+                _bytes = _archive.read(_entry)
+                _digest = hashlib.sha256(_bytes).hexdigest()
+                if _digest in _nested_seen:
+                    continue
+                _nested_seen.add(_digest)
+                _nested = os.path.join(_jarjar_cache, _digest + ".jar")
+                if not os.path.isfile(_nested):
+                    with open(_nested, "wb") as _out:
+                        _out.write(_bytes)
+                _scan.append(_nested)
     # NeoForge itself ships ~275 c: convention tags, and it does NOT live in the mods folder. The
     # tag pass rewrites with replace:true, so a tag NeoForge also contributes to would lose its
     # entries - c:foods/cooked_meat would drop vanilla cooked beef - unless its jar is read too.
@@ -5321,6 +5349,8 @@ if _removed:
                             _td = None
                         if isinstance(_td, dict):
                             _tag_src.setdefault(_n, []).append(_td)
+                    if re.match(r"^data/([^/]+)/tags/block/(.+)[.]json$", _n):
+                        _block_tag_src.setdefault(_n, []).append(json.loads(_zf.read(_n)))
                     _is_recipe, _is_loot = "/recipe" in _n, "/loot_table" in _n
                     _is_other = any(_k in _n for _k in OTHER_KINDS)
                     if not (_is_recipe or _is_loot or _is_other):
@@ -5330,6 +5360,7 @@ if _removed:
                     except Exception:
                         continue
                     if _is_recipe:
+                        _recipe_src[_n] = _d
                         for _r2 in _result_ids(_d, set()):
                             if _r2 in _want:
                                 _hits.append((_n, _r2))
@@ -5372,6 +5403,17 @@ if _removed and not _scan_ok:
         raise SystemExit(f"cannot preserve malformed removed-item list: {_removed_items_path}")
 else:
     write("removed_items.json", _removed_ids)
+
+if _scan_ok:
+    from recipe_cleanup import apply_recipe_policy
+    _authored_recipes = {}
+    for _path in set(written) & _recipe_src.keys():
+        with open(os.path.join(RES, _path), encoding="utf-8") as _file:
+            _value = json.load(_file)
+        if {"type": "neoforge:false"} not in _value.get("neoforge:conditions", []):
+            _authored_recipes[_path] = _value
+    _restored_paths = apply_recipe_policy(write, _recipe_src, _MERGE, set(_removed_ids), _items, _redirect, DISABLED,
+                                         _authored_recipes)
 
 # MANIFEST. gen_data only ever writes, so without this, deleting a row would leave its
 # neoforge:false override behind and the item would stay uncraftable forever - which defeats the
@@ -5586,6 +5628,11 @@ for _directory, _, _files in os.walk(os.path.join(RES, "data")):
             _normalized += 1
 print(f"  authored merges: {_normalized} data files normalized")
 
+if _scan_ok:
+    from recipe_cleanup import repair_ingredients
+    repair_ingredients(RES, ROOT, write, written, _recipe_src, _tag_src, _block_tag_src,
+                       _MERGE, set(_removed_ids), _items, _present, DISABLED, _restored_paths)
+
 _n_loot = sum(1 for _p in _new_data if "/loot_table" in _p)
 print(f"  removed items: {len(_removed_ids)} ids, {len(_new_manifest)} recipes disabled, "
       f"{_n_loot} loot tables and {len(_new_data) - _n_loot} other data files rewritten")
@@ -5756,6 +5803,7 @@ ITEMS = {
     "crafting_license": "Crafting License",
     "twilight_concord": "Twilight Concord",
     "null_blaze_cube": "Null Blaze Cube",
+    "scale_ingot": "Scale Ingot",
     "innocent_soul": "Innocent Soul",
     "pocket_watch": "Pocket Watch",
     "green_plushie_token": "Green Plushie Token",

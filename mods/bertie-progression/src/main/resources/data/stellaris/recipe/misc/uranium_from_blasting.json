@@ -1,17 +1,13 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "uranium",
+  "ingredient": {
+    "item": "stellaris:mercury_uranium_ore"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "id": "anvilcraft:uranium_ingot"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:coarse_dirt",
+    "minecraft:dirt",
+    "minecraft:rooted_dirt",
+    "pastel:overgrown_slush",
+    "pastel:slush"
+  ]
+}

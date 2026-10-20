@@ -1,17 +1,11 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "anvilcraft:deepslate_silver_ore"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+    "id": "anvilcraft:silver_ingot"
+  },
+  "experience": 0.35,
+  "cookingtime": 100
 }

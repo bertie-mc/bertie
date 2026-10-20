@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "anvilcraft:ionocraft",
+  "key": {
+    "A": {
+      "tag": "c:nuggets/copper"
+    },
+    "B": {
+      "tag": "c:rods/wooden"
+    },
+    "C": {
+      "tag": "c:plates/tin"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BBB",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:ionocraft"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:plates/tin"
+      }
+    }
+  ]
+}

@@ -92,6 +92,7 @@ public final class ModItems {
 
     // --- Avaritia ---
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
+    public static final DeferredItem<Item> SCALE_INGOT = simple("scale_ingot", 64);
 
     // --- Deep dark / echo chain ---
     public static final DeferredItem<WeepingEyeItem> WEEPING_EYE = ITEMS.register(

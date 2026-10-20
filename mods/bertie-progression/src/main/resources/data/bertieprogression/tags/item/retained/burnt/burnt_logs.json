@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "burnt:burnt_log",
+    "burnt:burnt_wood",
+    "burnt:ember_log",
+    "burnt:stripped_burnt_log",
+    "burnt:stripped_burnt_wood"
+  ]
+}

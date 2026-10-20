@@ -142,5 +142,17 @@
 			x: 12.0d
 			y: 0.0d
 		}
+		{
+			y: 0d
+			x: 3d
+			id: "6C00000000006100"
+			icon: { id: "omnitools:omni_wrench" }
+			tasks: [{
+				id: "6C00000001006100"
+				count: 1L
+				item: { count: 1 id: "omnitools:omni_wrench" }
+				type: "item"
+			}]
+		}
 	]
 }

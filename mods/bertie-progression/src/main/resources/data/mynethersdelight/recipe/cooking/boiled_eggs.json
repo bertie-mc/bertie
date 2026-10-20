@@ -1,17 +1,23 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "tag": "mynethersdelight:boiled_egg_candidate"
+    },
+    {
+      "tag": "mynethersdelight:boiled_egg_candidate"
+    },
+    {
+      "tag": "mynethersdelight:boiled_egg_candidate"
+    },
+    {
+      "tag": "mynethersdelight:boiled_egg_candidate"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 4,
+    "id": "slavic_delight:boiled_egg"
   }
 }

@@ -1,17 +1,36 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:false"
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
     }
   ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bread"
+  },
+  "experience": 1.0,
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "item": "twilightforest:raw_meef"
+    },
+    {
+      "item": "twilightforest:raw_meef"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "tag": "c:mushrooms"
+    },
+    {
+      "item": "twilightforest:firefly"
     }
   ],
+  "recipe_book_tab": "misc",
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
+    "count": 1,
+    "id": "twilightdelight:plate_of_meef_wellington"
   }
 }

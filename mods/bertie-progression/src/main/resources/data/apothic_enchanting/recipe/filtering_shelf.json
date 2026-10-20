@@ -6,6 +6,10 @@
     },
     {
       "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "curseofpandora"
     }
   ],
@@ -13,7 +17,7 @@
   "category": "misc",
   "key": {
     "P": {
-      "item": "minecraft:prismarine_bricks"
+      "item": "berlordscarving:prismarine_big_slate"
     },
     "S": {
       "item": "apothic_enchanting:infused_seashelf"

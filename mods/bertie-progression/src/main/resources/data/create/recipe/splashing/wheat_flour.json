@@ -1,17 +1,13 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:splashing",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "tag": "c:flours/wheat"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "id": "farmersdelight:wheat_dough"
+    }
+  ]
 }

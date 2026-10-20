@@ -2,6 +2,10 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "malum"
     },
     {
@@ -20,7 +24,7 @@
       "count": 1
     },
     {
-      "item": "pastel:onyx_powder",
+      "item": "anvilcraft:tungsten_ingot",
       "count": 2
     },
     {
@@ -30,12 +34,16 @@
     {
       "item": "malum:null_slate",
       "count": 6
+    },
+    {
+      "item": "pastel:onyx_powder",
+      "count": 2
     }
   ],
   "spirits": [
     {
       "type": "malum:earthen",
-      "count": 16
+      "count": 20
     },
     {
       "type": "malum:eldritch",

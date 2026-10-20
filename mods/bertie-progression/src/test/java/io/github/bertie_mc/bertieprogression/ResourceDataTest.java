@@ -252,6 +252,13 @@ class ResourceDataTest {
                     continue;
                 }
                 Set<String> strings = new HashSet<>();
+                if (parsed.isJsonObject()
+                        && parsed.getAsJsonObject().has("type")
+                        && "magitech:tool_material"
+                                .equals(parsed.getAsJsonObject().get("type").getAsString())) {
+                    parsed = parsed.deepCopy();
+                    parsed.getAsJsonObject().remove("result");
+                }
                 strings(parsed, strings);
                 strings.retainAll(aliases);
                 if (!strings.isEmpty()) {
@@ -260,6 +267,49 @@ class ResourceDataTest {
             }
         }
         assertTrue(leaks.isEmpty(), String.join("\n", leaks));
+    }
+
+    @Test
+    void retainedProcessingKeepsByproductsAndTypedMaterials() throws IOException {
+        List<String> restored = List.of(
+                "anvilcraft:mesh/cinerite",
+                "anvilcraft:mesh/red_sand",
+                "create:crushing/asurine",
+                "create:crushing/asurine_recycling",
+                "create:crushing/tuff",
+                "create:crushing/tuff_recycling",
+                "create:splashing/crushed_raw_zinc",
+                "malum:create/washing/zinc_node",
+                "malum:create/crushing/ore/crush_natural_quartz_ore",
+                "malum:create/crushing/ore/crush_natural_quartz_deepslate_ore",
+                "oritech:grinder/compat/mekanism/ore/lead",
+                "oritech:grinder/compat/mekanism/ore/tin",
+                "oritech:grinder/compat/mekanism/raw/lead",
+                "oritech:grinder/compat/mekanism/raw/tin",
+                "oritech:grinder/compat/create/ore/zinc",
+                "oritech:grinder/compat/create/raw/zinc",
+                "oritech:grinder/uraniumore",
+                "oritech:grinder/uraniumcrystal",
+                "oritech:pulverizer/compat/mekanism/raw/lead",
+                "oritech:pulverizer/raw/copper",
+                "oritech:centrifuge/compat/mekanism/clump/tin");
+        for (String id : restored) {
+            String[] parts = id.split(":", 2);
+            JsonObject recipe = JsonParser.parseString(
+                            Files.readString(RESOURCES.resolve("data/" + parts[0] + "/recipe/" + parts[1] + ".json")))
+                    .getAsJsonObject();
+            assertTrue(!recipe.toString().contains("neoforge:false"), id + " must survive output merging");
+            assertTrue(recipe.getAsJsonArray("results").size() > 1, id + " must keep its other outputs");
+        }
+        JsonObject material = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/magitech/recipe/fluorite_material.json")))
+                .getAsJsonObject();
+        assertEquals("magitech:tool_material", material.get("type").getAsString());
+        assertEquals("magitech:fluorite", material.get("result").getAsString());
+        JsonObject reverse = JsonParser.parseString(
+                        Files.readString(RESOURCES.resolve("data/anvilcraft/recipe/zinc_nugget.json")))
+                .getAsJsonObject();
+        assertEquals(4, reverse.getAsJsonObject("result").get("count").getAsInt());
     }
 
     @Test

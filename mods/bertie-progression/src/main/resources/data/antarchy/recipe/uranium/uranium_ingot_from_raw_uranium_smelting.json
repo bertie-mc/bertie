@@ -1,17 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "anvilcraft:raw_uranium"
+  },
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+    "id": "anvilcraft:uranium_ingot"
+  },
+  "experience": 2.0,
+  "cookingtime": 200
 }

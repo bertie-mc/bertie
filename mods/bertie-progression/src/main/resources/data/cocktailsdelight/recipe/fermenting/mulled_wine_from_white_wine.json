@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "bertieprogression:retained/c/foods/green_grapes"
+      }
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:foods/mulling_spice"
+      }
+    }
+  ],
+  "type": "brewinandchewin:fermenting",
+  "base_fluid": {
+    "amount": 1000,
+    "ingredient": {
+      "id": "cocktailsdelight:white_wine"
+    },
+    "unit": "millibuckets"
+  },
+  "fermentingtime": 9600,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/mulling_spice"
+    },
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "tag": "c:foods/berry"
+    }
+  ],
+  "result": {
+    "amount": 1000,
+    "id": "cocktailsdelight:mulled_wine"
+  },
+  "temperature": 5,
+  "unit": "millibuckets"
+}

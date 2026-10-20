@@ -1,17 +1,18 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "anvilcraft:super_heating",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "count": 8,
+      "items": "#c:raw_materials/zinc"
+    },
+    {
+      "items": "anvilcraft:earth_core_shard"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "count": 24,
+      "id": "magitech:zinc_ingot"
+    }
+  ]
 }
