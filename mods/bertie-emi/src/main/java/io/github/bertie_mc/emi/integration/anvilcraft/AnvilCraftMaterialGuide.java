@@ -31,14 +31,6 @@ final class AnvilCraftMaterialGuide {
     private static void early(EmiRegistry reg) {
         page(
                 reg,
-                "gems",
-                List.of("anvilcraft:ruby", "anvilcraft:sapphire", "anvilcraft:topaz"),
-                "Three gems on top of the Emerald: Ruby for fire, Sapphire for water, Topaz for"
-                        + " lightning. The mod treats all four together as gems.",
-                "The first ones come from stamping Geodes, which has a chance at each.",
-                "Once you have a Corrupted Beacon you can mass-produce them.");
-        page(
-                reg,
                 "magnet",
                 List.of("anvilcraft:magnet_ingot", "anvilcraft:ferrite_core_magnet_block"),
                 "The first magnet has to be struck by lightning: a Block of Iron hit by a bolt becomes a"
