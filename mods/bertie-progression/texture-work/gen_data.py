@@ -18,6 +18,8 @@ import os
 import re
 import shutil
 
+from recipe_outputs import item_outputs as _result_ids
+
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 RES = os.path.join(ROOT, "src", "main", "resources")
 
@@ -5107,26 +5109,6 @@ def _strip_loot(node, gone):
     return out
 
 
-def _result_ids(obj, out):
-    """Pull every result item id out of a recipe of ANY type/shape."""
-    if isinstance(obj, dict):
-        if obj.get("type") == "magitech:tool_material":
-            return out
-        for k, v in obj.items():
-            if k in ("result", "results"):
-                for e in (v if isinstance(v, list) else [v]):
-                    if isinstance(e, str):
-                        out.add(e)
-                    elif isinstance(e, dict):
-                        for kk in ("id", "item"):
-                            if isinstance(e.get(kk), str):
-                                out.add(e[kk])
-            elif isinstance(v, (dict, list)):
-                _result_ids(v, out)
-    elif isinstance(obj, list):
-        for v in obj:
-            _result_ids(v, out)
-    return out
 
 _removed = []
 for _fn in sorted(os.listdir(REMOVED_DOCS)):

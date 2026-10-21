@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "anvilcraft:wood_fiber"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:paper"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    }
+  ],
+  "type": "pastel:pedestal",
+  "tier": "basic",
+  "time": 100,
+  "colors": {
+    "pastel:cyan": 6,
+    "pastel:magenta": 6,
+    "pastel:yellow": 6
+  },
+  "pattern": [
+    "A",
+    "B",
+    "C"
+  ],
+  "key": {
+    "A": "minecraft:anvil",
+    "B": "minecraft:lightning_rod",
+    "C": "twilightforest:ironwood_ingot"
+  },
+  "result": {
+    "id": "anvilcraft:anvil_hammer",
+    "count": 1
+  },
+  "disable_yield_upgrades": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "berlordscarving:copper_big_slate"
+    },
+    "B": {
+      "item": "magitech:mana_insulating_glass"
+    },
+    "C": {
+      "item": "anvilcraft:hollow_magnet_block"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:magnetoelectric_core"
+  }
+}

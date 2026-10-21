@@ -12,7 +12,7 @@ Optional recipes with no available material are gated instead of displaying empt
 Generation fails on an unresolved active item ingredient. The regression cases run with:
 
 ```text
-python -m unittest discover -s mods/bertie-progression/texture-work -p test_recipe_cleanup.py
+python -m unittest discover -s mods/bertie-progression/texture-work -p "test_recipe_*.py"
 ```
 
 Zinc uses four nuggets per ingot in both directions. Oritech's dry, water and acid zinc
@@ -28,6 +28,17 @@ Stamping converts brass, copper, iron and gold ingots into Create sheets, and So
 Steel and Malignant Pewter ingots into their Malum plating. Pressure plates remain craftable
 but are excluded from sheet/plate ingredient tags and stamping outputs. Equipment and horse
 armour crushing are disabled. Chutes use iron sheets and return one item.
+
+Anvil Hammer uses a basic or higher Pigment Pedestal for five seconds, consuming six each
+Citrine, Amethyst and Topaz Dust. Its vertical anvil/lightning-rod/ingot pattern uses
+Ironwood as the bottom ingot. Hardened Resin consumes four Resin per item; stamping one
+Wood Fiber returns one Paper. Magnetoelectric Core uses Large Copper Slates and Mana
+Insulating Glass. Lightning converts Nickel Blocks to Hollow Magnet Blocks through the
+`bertieprogression:lightning_magnet_inputs` block tag, retaining the native strike area
+and Topaz-triggered lightning.
+
+Mechanical Drill is exclusive to a five-by-five Mechanical Crafter wall, using Tungsten
+Nuggets, Malignant Pewter Nuggets, Andesite Alloy and Andesite Casings.
 
 Beef Mushroom Stew uses a Farmer's Delight Cooking Pot with beef, both mushrooms, and a bowl
 in the container slot. It consumes no water. Spider-eye fermentation by bulging is disabled.
@@ -61,7 +72,8 @@ Debris attempt rate. Bedrock is ineligible. Ore changes affect newly generated c
 ## Nether materials
 
 The Null Blaze Cube's five-by-five Nether crafting recipe uses Blazing Quartz, Stratine
-Gems, Blaze Rods, Glowstone and Ancient Debris. Stratine Gems use Solar Core in the centre.
+Gems, Blaze Rods, Glowstone and Ancient Debris. Stratine Gems use Solar Core in the centre
+and consume six Citrine Dust alongside their existing Onyx Dust.
 Creative Blaze Cake uses a Tier-2 Hephaestus Forge: one Blaze Cake, four Blaze Cubes,
 two Ignitium Ingots and two Fire Infused Netherite Ingots; 15000 Blood, 50 Souls and 1350 Ink.
 
@@ -73,3 +85,4 @@ Lava Bottle and Bone Serpent Tooth brew three-minute Lava Vision. Redstone exten
 eight minutes, and gunpowder makes either duration splashable.
 
 Scale Ingot is a visual placeholder in the Progression creative tab, with no recipe or use.
+Its sprite is the warm, scale-covered ingot.

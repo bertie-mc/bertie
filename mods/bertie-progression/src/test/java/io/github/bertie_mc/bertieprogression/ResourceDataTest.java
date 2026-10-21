@@ -22,6 +22,75 @@ class ResourceDataTest {
 
     private static final Path RESOURCES = resources();
 
+    private static JsonObject data(String path) throws IOException {
+        return JsonParser.parseString(Files.readString(RESOURCES.resolve(path))).getAsJsonObject();
+    }
+
+    @Test
+    void travellerUpgradeRecipesCannotReintroduceRemovedEquipment() throws IOException {
+        Path directory = RESOURCES.resolve("data/twilightforest/recipe/add_modifier_to_travellers_gear");
+        try (var paths = Files.walk(directory)) {
+            List<Path> recipes =
+                    paths.filter(path -> path.toString().endsWith(".json")).toList();
+            assertTrue(recipes.size() > 6, "the full modifier family must be covered");
+            for (Path path : recipes) {
+                assertTrue(Files.readString(path).contains("neoforge:false"), path.toString());
+            }
+        }
+        assertTrue(data("data/twilightforest/recipe/travellers_vest_gloves_merge_recipe.json")
+                .toString()
+                .contains("neoforge:false"));
+    }
+
+    @Test
+    void anvilProgressionUsesPedestalCostsAndMechanicalCrafting() throws IOException {
+        JsonObject hammer = data("data/bertieprogression/recipe/anvilcraft/anvil_hammer.json");
+        assertEquals("pastel:pedestal", hammer.get("type").getAsString());
+        assertEquals("basic", hammer.get("tier").getAsString());
+        assertEquals(100, hammer.get("time").getAsInt());
+        for (String color : List.of("cyan", "magenta", "yellow")) {
+            assertEquals(
+                    6, hammer.getAsJsonObject("colors").get("pastel:" + color).getAsInt());
+        }
+        assertEquals(
+                "twilightforest:ironwood_ingot",
+                hammer.getAsJsonObject("key").get("C").getAsString());
+        assertTrue(data("data/anvilcraft/recipe/anvil_hammer.json").toString().contains("neoforge:false"));
+        JsonObject drill = data("data/create/recipe/crafting/kinetics/mechanical_drill.json");
+        assertEquals("create:mechanical_crafting", drill.get("type").getAsString());
+        assertEquals(5, drill.getAsJsonArray("pattern").size());
+        assertEquals(
+                4,
+                data("data/anvilcraft/recipe/cooking/hardend_resin.json")
+                        .getAsJsonArray("ingredients")
+                        .get(0)
+                        .getAsJsonObject()
+                        .get("count")
+                        .getAsInt());
+        assertEquals(
+                1,
+                data("data/anvilcraft/recipe/stamping/paper_from_wood_fiber.json")
+                        .getAsJsonArray("results")
+                        .get(0)
+                        .getAsJsonObject()
+                        .get("count")
+                        .getAsInt());
+        assertEquals(
+                6,
+                data("data/pastel/recipe/pedestal/tier3/stratine_gem.json")
+                        .getAsJsonObject("colors")
+                        .get("pastel:yellow")
+                        .getAsInt());
+        assertEquals(
+                "oritech:nickel_block",
+                data("data/bertieprogression/tags/block/lightning_magnet_inputs.json")
+                        .getAsJsonArray("values")
+                        .get(0)
+                        .getAsJsonObject()
+                        .get("id")
+                        .getAsString());
+    }
+
     private static Path resources() {
         try {
             return Path.of(ResourceDataTest.class

@@ -619,6 +619,7 @@ public final class CombatGameTests {
     private static Zombie target(GameTestHelper helper) {
         Zombie target = helper.spawn(EntityType.ZOMBIE, 1, 2, 1);
         target.setNoAi(true);
+        CombatRegistry.attribute(target, "apothic_attributes:crit_chance").setBaseValue(0);
         target.getAttribute(Attributes.MAX_HEALTH).setBaseValue(200);
         target.getAttribute(Attributes.ARMOR).setBaseValue(0);
         target.setHealth(200);

@@ -154,7 +154,7 @@
 				structure: "block_factorys_bosses:underworld_arena"
 				type: "structure"
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: -1.5d
 		}
 		{
@@ -173,7 +173,7 @@
 				item: { count: 1, id: "block_factorys_bosses:underworld_arena_key" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -196,11 +196,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.5d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000013"]
+			dependencies: ["6B0000000000000B"]
 			icon: {
 				id: "pastel:pedestal_basic_topaz"
 			}
@@ -218,11 +218,11 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(bertieprogression:basic_pigment_pedestals)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Pigment Pedestal\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B0000000000000A"]
+			dependencies: ["6B00000000000013"]
 			icon: {
 				id: "pastel:paintbrush"
 			}
@@ -237,7 +237,7 @@
 				item: { count: 1, id: "pastel:paintbrush" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -380,7 +380,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B0000000000000B"]
+			dependencies: ["6B0000000000000A"]
 			icon: {
 				id: "pastel:shimmerstone_gem"
 			}
@@ -1412,6 +1412,228 @@
 				id: "6B00000001006100"
 				count: 1L
 				item: { count: 1 id: "create:creative_blaze_cake" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B0000000000000A"]
+			y: -1.5d
+			x: 4.5d
+			id: "6B00000000006200"
+			icon: { id: "minecraft:anvil" }
+			tasks: [{
+				id: "6B00000001006200"
+				count: 1L
+				item: { count: 1 id: "minecraft:anvil" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006200"]
+			y: -3.0d
+			x: 4.5d
+			id: "6B00000000006201"
+			icon: { id: "anvilcraft:anvil_hammer" }
+			tasks: [{
+				id: "6B00000001006201"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:anvil_hammer" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006201"]
+			y: -4.5d
+			x: 0.0d
+			id: "6B00000000006202"
+			icon: { id: "anvilcraft:stamping_platform" }
+			tasks: [{
+				id: "6B00000001006202"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:stamping_platform" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006201"]
+			y: -4.5d
+			x: 3.0d
+			id: "6B00000000006203"
+			icon: { id: "anvilcraft:crushing_table" }
+			tasks: [{
+				id: "6B00000001006203"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:crushing_table" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006201"]
+			y: -4.5d
+			x: 6.0d
+			id: "6B00000000006204"
+			icon: { id: "minecraft:scaffolding" }
+			tasks: [{
+				id: "6B00000001006204"
+				count: 1L
+				item: { count: 1 id: "minecraft:scaffolding" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006201"]
+			y: -4.5d
+			x: 7.5d
+			id: "6B00000000006205"
+			icon: { id: "minecraft:cauldron" }
+			tasks: [{
+				id: "6B00000001006205"
+				count: 1L
+				item: { count: 1 id: "minecraft:cauldron" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006203"]
+			y: -6.0d
+			x: 0.0d
+			id: "6B00000000006206"
+			icon: { id: "anvilcraft:cinerite" }
+			tasks: [{
+				id: "6B00000001006206"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:cinerite" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006203"]
+			y: -6.0d
+			x: 1.5d
+			id: "6B00000000006207"
+			icon: { id: "anvilcraft:quartz_sand" }
+			tasks: [{
+				id: "6B00000001006207"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:quartz_sand" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006203"]
+			y: -6.0d
+			x: 3.0d
+			id: "6B00000000006208"
+			icon: { id: "anvilcraft:nether_dust" }
+			tasks: [{
+				id: "6B00000001006208"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:nether_dust" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006203"]
+			y: -6.0d
+			x: 4.5d
+			id: "6B00000000006209"
+			icon: { id: "anvilcraft:resin" }
+			tasks: [{
+				id: "6B00000001006209"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:resin" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006209", "6B00000000006205"]
+			y: -7.5d
+			x: 6.0d
+			id: "6B0000000000620A"
+			icon: { id: "anvilcraft:hardend_resin" }
+			tasks: [{
+				id: "6B0000000100620A"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:hardend_resin" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006208"]
+			y: -7.5d
+			x: 3.0d
+			id: "6B0000000000620B"
+			icon: { id: "anvilcraft:tungsten_nugget" }
+			tasks: [{
+				id: "6B0000000100620B"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:tungsten_nugget" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B00000000006203"]
+			y: -6.0d
+			x: -3.0d
+			id: "6B0000000000620C"
+			icon: { id: "anvilcraft:geode" }
+			tasks: [{
+				id: "6B0000000100620C"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:geode" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B0000000000620C"]
+			y: -7.5d
+			x: -3.0d
+			id: "6B0000000000620D"
+			icon: { id: "anvilcraft:topaz" }
+			tasks: [{
+				id: "6B0000000100620D"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:topaz" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B0000000000620D"]
+			y: -9.0d
+			x: -3.0d
+			id: "6B0000000000620E"
+			icon: { id: "minecraft:lightning_rod" }
+			tasks: [{
+				id: "6B0000000100620E"
+				count: 1L
+				item: { count: 1 id: "minecraft:lightning_rod" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["6B0000000000620E"]
+			y: -10.5d
+			x: -3.0d
+			id: "6B0000000000620F"
+			icon: { id: "oritech:nickel_block" }
+			tasks: [{
+				id: "6B0000000100620F"
+				count: 1L
+				item: { count: 1 id: "oritech:nickel_block" }
+				type: "item"
+			}]
+		}
+		{
+			description: ["Use topaz on lightning rod above the nickel blocks."]
+			dependencies: ["6B0000000000620F"]
+			y: -12.0d
+			x: -3.0d
+			id: "6B00000000006210"
+			icon: { id: "anvilcraft:hollow_magnet_block" }
+			tasks: [{
+				id: "6B00000001006210"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:hollow_magnet_block" }
 				type: "item"
 			}]
 		}

@@ -229,6 +229,7 @@ def apply_anvil_recipes(write, recipes, off):
         "result": {"id": "magitech:mana_charged_fluorite", "count": 9}})
     stratine = copy.deepcopy(recipes["data/pastel/recipe/pedestal/tier3/stratine_gem.json"])
     stratine["key"]["X"] = "hazennstuff:solar_core"
+    stratine["colors"]["pastel:yellow"] = 6
     write("data/pastel/recipe/pedestal/tier3/stratine_gem.json", stratine)
     write("data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/creative_blaze_cake.json", {
         "forge_tier": 2, "essences": {"aureal": 0, "blood": 15000, "souls": 50, "experience": 1350},
@@ -238,6 +239,42 @@ def apply_anvil_recipes(write, recipes, off):
             ("elemental_metals:fire_infused_netherite_ingot", 2))],
         "magic_circle": "forbidden_arcanus:create_item",
         "result": {"type": "forbidden_arcanus:create_item", "result_item": {"id": "create:creative_blaze_cake", "count": 1}}})
+    apply_anvil_progression(write, recipes, off)
+
+
+def apply_anvil_progression(write, recipes, off):
+    resin = copy.deepcopy(recipes["data/anvilcraft/recipe/cooking/hardend_resin.json"])
+    resin["ingredients"][0]["count"] = 4
+    write("data/anvilcraft/recipe/cooking/hardend_resin.json", resin)
+    paper = copy.deepcopy(recipes["data/anvilcraft/recipe/stamping/paper_from_wood_fiber.json"])
+    paper["results"][0]["count"] = 1
+    write("data/anvilcraft/recipe/stamping/paper_from_wood_fiber.json", paper)
+    core = copy.deepcopy(recipes["data/anvilcraft/recipe/magnetoelectric_core.json"])
+    core["key"]["A"] = {"item": "berlordscarving:copper_big_slate"}
+    core["key"]["B"] = {"item": "magitech:mana_insulating_glass"}
+    write("data/anvilcraft/recipe/magnetoelectric_core.json", core)
+    for path, data in recipes.items():
+        output_ids = set(strings(data.get("result", data.get("results", []))))
+        if "anvilcraft:anvil_hammer" in output_ids or "create:mechanical_drill" in output_ids:
+            write(path, off)
+    write("data/create/recipe/crafting/kinetics/mechanical_drill.json", {
+        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}
+                                for mod in ("create", "anvilcraft", "malum")],
+        "type": "create:mechanical_crafting", "accept_mirrored": False,
+        "pattern": ["  T  ", " TPT ", "ATPTA", "AAAAA", "CCCCC"],
+        "key": {"T": {"item": "anvilcraft:tungsten_nugget"},
+                "P": {"item": "malum:malignant_pewter_nugget"},
+                "A": {"item": "create:andesite_alloy"}, "C": {"item": "create:andesite_casing"}},
+        "result": {"id": "create:mechanical_drill", "count": 1}})
+    write("data/bertieprogression/recipe/anvilcraft/anvil_hammer.json", {
+        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}
+                                for mod in ("pastel", "anvilcraft", "twilightforest")],
+        "type": "pastel:pedestal", "tier": "basic", "time": 100,
+        "colors": {"pastel:cyan": 6, "pastel:magenta": 6, "pastel:yellow": 6},
+        "pattern": ["A", "B", "C"], "key": {"A": "minecraft:anvil", "B": "minecraft:lightning_rod", "C": "twilightforest:ironwood_ingot"},
+        "result": {"id": "anvilcraft:anvil_hammer", "count": 1}, "disable_yield_upgrades": True})
+    write("data/bertieprogression/tags/block/lightning_magnet_inputs.json", {
+        "replace": True, "values": [{"id": "oritech:nickel_block", "required": False}]})
 
 
 def apply_worldgen(write):

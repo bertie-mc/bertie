@@ -49,12 +49,12 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
         registry.removeEmiStacks(stack -> RemovedItems.isRemoved(stack.getItemStack()));
-        registry.removeRecipes(recipe -> recipe.getOutputs().stream()
-                        .anyMatch(output -> RemovedItems.isRemovedPotion(output.getItemStack()))
-                || recipe.getInputs().stream()
-                        .anyMatch(input -> !input.getEmiStacks().isEmpty()
-                                && input.getEmiStacks().stream()
-                                        .allMatch(stack -> RemovedItems.isRemovedPotion(stack.getItemStack()))));
+        registry.removeRecipes(recipe ->
+                recipe.getOutputs().stream().anyMatch(output -> RemovedItems.isRemoved(output.getItemStack()))
+                        || recipe.getInputs().stream()
+                                .anyMatch(input -> !input.getEmiStacks().isEmpty()
+                                        && input.getEmiStacks().stream()
+                                                .allMatch(stack -> RemovedItems.isRemoved(stack.getItemStack()))));
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(

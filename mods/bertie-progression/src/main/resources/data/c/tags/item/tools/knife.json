@@ -123,10 +123,6 @@
       "required": false
     },
     {
-      "id": "twilightdelight:ironwood_knife",
-      "required": false
-    },
-    {
       "id": "twilightdelight:knightmetal_knife",
       "required": false
     }

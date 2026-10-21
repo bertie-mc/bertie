@@ -4,6 +4,12 @@ import static io.github.bertie_mc.emi.integration.anvilcraft.AnvilCraftGuideEmiM
 
 import dev.emi.emi.api.EmiRegistry;
 import java.util.List;
+import java.util.Optional;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.block.Blocks;
 
 /**
  * Guide pages for AnvilCraft's materials — where each one comes from and what it unlocks. The recipe
@@ -29,16 +35,17 @@ final class AnvilCraftMaterialGuide {
     }
 
     private static void early(EmiRegistry reg) {
-        page(
-                reg,
-                "magnet",
-                List.of("anvilcraft:magnet_ingot", "anvilcraft:ferrite_core_magnet_block"),
-                "The first magnet has to be struck by lightning: a Block of Iron hit by a bolt becomes a"
-                        + " Hollow Magnet Block.",
-                "Rather than wait for a storm, right-click a lightning rod with a Topaz to spend it and"
-                        + " call the bolt down immediately.",
-                "After that, magnetisation makes more without lightning — right-click a Hollow Magnet"
-                        + " Block with an Iron Ingot.");
+        lightningInputName()
+                .ifPresent(input -> page(
+                        reg,
+                        "magnet",
+                        List.of("anvilcraft:magnet_ingot", "anvilcraft:ferrite_core_magnet_block"),
+                        "The first magnet has to be struck by lightning: a " + input + " hit by a bolt becomes a"
+                                + " Hollow Magnet Block.",
+                        "Rather than wait for a storm, right-click a lightning rod with a Topaz to spend it and"
+                                + " call the bolt down immediately.",
+                        "After that, magnetisation makes more without lightning — right-click a Hollow Magnet"
+                                + " Block with an Iron Ingot."));
         page(
                 reg,
                 "resin",
@@ -85,6 +92,16 @@ final class AnvilCraftMaterialGuide {
                 "amber",
                 List.of("anvilcraft:amber", "anvilcraft:amber_block"),
                 "Sells well to a Jeweler, and it is a component in crafting spawners.");
+    }
+
+    private static Optional<String> lightningInputName() {
+        var configured = BuiltInRegistries.BLOCK.getTag(
+                TagKey.create(Registries.BLOCK, ResourceLocation.parse("bertieprogression:lightning_magnet_inputs")));
+        return configured.isPresent()
+                ? configured.get().stream()
+                        .findFirst()
+                        .map(holder -> holder.value().getName().getString())
+                : Optional.of(Blocks.IRON_BLOCK.getName().getString());
     }
 
     private static void metals(EmiRegistry reg) {

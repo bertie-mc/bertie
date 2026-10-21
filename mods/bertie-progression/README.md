@@ -200,6 +200,16 @@ as stock recipes, including custom output routes and compound ingredient alterna
 Natural Quartz and other losing IDs cannot appear in enabled recipes or item tags.
 The generated `merged_items.json` records the mapping used by the data regression check.
 
+Removal scanning includes Twilight Forest's Traveller recipes that copy an input without
+declaring a result. EMI also excludes recipes with a removed output or an ingredient whose
+every alternative is removed, including dynamically rendered Traveller upgrades.
+Twilight Flavors & Delight's Ironwood Knife is removed; Farmer's Knives' version remains.
+
+AnvilCraft's hammer, processing quantities and lightning magnet source follow
+[`docs/material-processing.md`](docs/material-processing.md). The Nether quest tree rises
+from Pigment Pedestal through the hammer and processing stations, including the
+Geode–Topaz–Lightning Rod–Nickel Block–Hollow Magnet Block chain.
+
 Netherite Mage smithing accepts matching pieces from ten Tier-5 families: Supreme Witch,
 Alchemist Supreme, Creaking, Crystal Arachnid, Frostbite Hunter, Engineer, Pharaoh,
 Cursium Mage, Nautilus Knight and Bloom Stone. Cursium Mage's winged chest is also eligible.

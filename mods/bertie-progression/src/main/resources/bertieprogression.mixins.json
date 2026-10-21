@@ -19,6 +19,7 @@
     "DollMachineLotteryMixin",
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
+    "LightningMagnetInputMixin",
     "PocketOpenKeyMixin",
     "PotionBrewingBuilderMixin",
     "RemovedEffectsMixin",

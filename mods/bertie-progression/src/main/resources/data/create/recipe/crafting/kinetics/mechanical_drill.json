@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "  T  ",
+    " TPT ",
+    "ATPTA",
+    "AAAAA",
+    "CCCCC"
+  ],
+  "key": {
+    "T": {
+      "item": "anvilcraft:tungsten_nugget"
+    },
+    "P": {
+      "item": "malum:malignant_pewter_nugget"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "result": {
+    "id": "create:mechanical_drill",
+    "count": 1
+  }
+}
