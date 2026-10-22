@@ -22,6 +22,13 @@ Field Guide records discoveries made with a spyglass and provides a personal jou
 Press `B` or use the book button in the inventory or pause menu to open it. A vanilla
 book and spyglass also craft a Field Guide item.
 
+## Technology quests
+
+Mekanism, Oritech and Ender IO have separate machine chapters, including their installed
+addons. Their maps follow the mods' original recipes. Mekanism factory upgrades count
+toward their base-machine objectives. Both displayed alternative paths are normal required
+quest dependencies, with redundant transitive links removed.
+
 ## Dependency model
 
 Each file under [`deps/components/`](../deps/components) records one intentional logical

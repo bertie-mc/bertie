@@ -1,0 +1,857 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enderio"
+	group: ""
+	icon: {
+		id: "enderio:alloy_smelter"
+	}
+	id: "6300000000000000"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			id: "634C23AC5C473113"
+			icon: {
+				id: "enderio:alloy_smelter"
+			}
+			tasks: [
+				{
+					id: "63878E514CA755FA"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:alloy_smelter"
+					}
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "63178A38FCDB5207"
+			icon: {
+				id: "enderio:sag_mill"
+			}
+			tasks: [
+				{
+					id: "63B45C6FF186932F"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:sag_mill"
+					}
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "636F4F9A042E545F"
+			icon: {
+				id: "enderio:slice_and_splice"
+			}
+			tasks: [
+				{
+					id: "637BD3E2F67A2A1E"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:slice_and_splice"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "638207EBBCE6F621"
+			icon: {
+				id: "enderio:soul_binder"
+			}
+			tasks: [
+				{
+					id: "6340D8362A555065"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:soul_binder"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "63FC85CD4A75CD42"
+			icon: {
+				id: "enderio:vat"
+			}
+			tasks: [
+				{
+					id: "635C345CB1851FDD"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:vat"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "63E4E6BDC45E6B1E"
+			icon: {
+				id: "enderio:painting_machine"
+			}
+			tasks: [
+				{
+					id: "63EF67B44DD2CDB8"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:painting_machine"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "637E4592CF7E839C"
+			icon: {
+				id: "enderio:enchanter"
+			}
+			tasks: [
+				{
+					id: "63AEFDA585BB2619"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:enchanter"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			id: "63CEA05F6B3D2B8B"
+			icon: {
+				id: "enderio:crafter"
+			}
+			tasks: [
+				{
+					id: "635F76C2A08140A8"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:crafter"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			id: "63995789250DE76D"
+			icon: {
+				id: "enderio:farming_station"
+			}
+			tasks: [
+				{
+					id: "632E51BC16E7A17C"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:farming_station"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			id: "63BD300DA3334F80"
+			icon: {
+				id: "enderio:powered_spawner"
+			}
+			tasks: [
+				{
+					id: "630B4235082FD55A"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:powered_spawner"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "633D452113AEF34F"
+			icon: {
+				id: "enderio:vacuum_chest"
+			}
+			tasks: [
+				{
+					id: "6342774AD63D6D97"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:vacuum_chest"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "63FE8770552C6AA9"
+			icon: {
+				id: "enderio:impulse_hopper"
+			}
+			tasks: [
+				{
+					id: "63087648DB4F61C4"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:impulse_hopper"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			id: "63052FFBCF769562"
+			icon: {
+				id: "enderio:xp_vacuum"
+			}
+			tasks: [
+				{
+					id: "63BDE6A01287EE9F"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:xp_vacuum"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			id: "6311CEDD56828B81"
+			icon: {
+				id: "enderio:xp_obelisk"
+			}
+			tasks: [
+				{
+					id: "636470D39AB90352"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:xp_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			id: "63019C4946F1DDFF"
+			icon: {
+				id: "enderio:attractor_obelisk"
+			}
+			tasks: [
+				{
+					id: "639EB6295CB83921"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:attractor_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"638207EBBCE6F621"
+			]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			id: "63849B0A82BCC81B"
+			icon: {
+				id: "enderio:aversion_obelisk"
+			}
+			tasks: [
+				{
+					id: "6318840205175019"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:aversion_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "6323CADE3F8D108B"
+			icon: {
+				id: "enderio:relocator_obelisk"
+			}
+			tasks: [
+				{
+					id: "63211DB8CF1D5D9F"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:relocator_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"63849B0A82BCC81B"
+			]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			id: "63DAE72B8F9EE1E0"
+			icon: {
+				id: "enderio:inhibitor_obelisk"
+			}
+			tasks: [
+				{
+					id: "63FD6F1814A7BD7A"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:inhibitor_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"638207EBBCE6F621"
+			]
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			id: "6366E6EAE1CA85DE"
+			icon: {
+				id: "enderio:weather_obelisk"
+			}
+			tasks: [
+				{
+					id: "63B74C4C57723FE2"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:weather_obelisk"
+					}
+				}
+			]
+			dependencies: [
+				"638207EBBCE6F621"
+			]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			id: "63C87D5448554BCF"
+			icon: {
+				id: "enderio:mind_killer"
+			}
+			tasks: [
+				{
+					id: "63913C6359CFA6CF"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:mind_killer"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "6300E40814E88A6C"
+			icon: {
+				id: "enderio:wired_charger"
+			}
+			tasks: [
+				{
+					id: "631CC95901A8BF45"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:wired_charger"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			id: "636B6097826C5DEF"
+			icon: {
+				id: "enderio:wireless_charger"
+			}
+			tasks: [
+				{
+					id: "63F7B1805320AF7B"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:wireless_charger"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			id: "63CCB2EDC60D9E02"
+			icon: {
+				id: "enderio:wireless_charger_antenna"
+			}
+			tasks: [
+				{
+					id: "6362164BBF43D222"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:wireless_charger_antenna"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			id: "6370D712D8C6D335"
+			icon: {
+				id: "enderio:wireless_charger_antenna_advanced"
+			}
+			tasks: [
+				{
+					id: "632EB4D10D7C15A7"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:wireless_charger_antenna_advanced"
+					}
+				}
+			]
+			dependencies: [
+				"638207EBBCE6F621"
+			]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			id: "6361D034B2BC2974"
+			icon: {
+				id: "enderio:travel_anchor"
+			}
+			tasks: [
+				{
+					id: "63441C1AD39EAD29"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:travel_anchor"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "6317A5B30F341AFC"
+			icon: {
+				id: "enderio:fluid_tank"
+			}
+			tasks: [
+				{
+					id: "639E1AC3395F9810"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:fluid_tank"
+					}
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "63A6819566386297"
+			icon: {
+				id: "enderio:pressurized_fluid_tank"
+			}
+			tasks: [
+				{
+					id: "639AC3F7BCE4B7B6"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:pressurized_fluid_tank"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "63D5B4D0E822D9D9"
+			icon: {
+				id: "enderio:drain"
+			}
+			tasks: [
+				{
+					id: "63BB340228F43805"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:drain"
+					}
+				}
+			]
+			dependencies: [
+				"634C23AC5C473113"
+			]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			id: "63B7CB7BA974AC20"
+			icon: {
+				id: "enderio:niard"
+			}
+			tasks: [
+				{
+					id: "6377E5B20BA7E7FE"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:niard"
+					}
+				}
+			]
+			dependencies: [
+				"6317A5B30F341AFC"
+				"634C23AC5C473113"
+			]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			id: "6317A5173351A438"
+			icon: {
+				id: "enderio:basic_capacitor_bank"
+			}
+			tasks: [
+				{
+					id: "63FCD1CD817D767A"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:basic_capacitor_bank"
+					}
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "63B52F847D44B730"
+			icon: {
+				id: "enderio:advanced_capacitor_bank"
+			}
+			tasks: [
+				{
+					id: "63B3BCB7E9B19192"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:advanced_capacitor_bank"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "63ADDD19F6A43E7E"
+			icon: {
+				id: "enderio:vibrant_capacitor_bank"
+			}
+			tasks: [
+				{
+					id: "6306C98B7BA557B1"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:vibrant_capacitor_bank"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			id: "634B4641B2520062"
+			icon: {
+				id: "enderio:stirling_generator"
+			}
+			tasks: [
+				{
+					id: "63B8E98CB2F8CFD8"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:stirling_generator"
+					}
+				}
+			]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			id: "634ED2803215557F"
+			icon: {
+				id: "enderio:soul_engine"
+			}
+			tasks: [
+				{
+					id: "63A40DF3384704E1"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:soul_engine"
+					}
+				}
+			]
+			dependencies: [
+				"636F4F9A042E545F"
+			]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			id: "6346FE9A2642A491"
+			icon: {
+				id: "enderio:energetic_photovoltaic_module"
+			}
+			tasks: [
+				{
+					id: "63ABA713975BC0CC"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:energetic_photovoltaic_module"
+					}
+				}
+			]
+			dependencies: [
+				"63178A38FCDB5207"
+				"634C23AC5C473113"
+			]
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			id: "63037D5ED5E78832"
+			icon: {
+				id: "enderio:pulsating_photovoltaic_module"
+			}
+			tasks: [
+				{
+					id: "635FC57247D01C0A"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:pulsating_photovoltaic_module"
+					}
+				}
+			]
+			dependencies: [
+				"6346FE9A2642A491"
+			]
+			x: 4.0d
+			y: 13.0d
+		}
+		{
+			id: "63AB041EA67C7623"
+			icon: {
+				id: "enderio:vibrant_photovoltaic_module"
+			}
+			tasks: [
+				{
+					id: "63C18613D0677DCD"
+					type: "item"
+					count: 1L
+					consume_items: false
+					item: {
+						count: 1
+						id: "enderio:vibrant_photovoltaic_module"
+					}
+				}
+			]
+			dependencies: [
+				"63037D5ED5E78832"
+			]
+			x: 8.0d
+			y: 13.0d
+		}
+	]
+}
