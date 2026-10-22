@@ -21,10 +21,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.neoforged.neoforge.common.crafting.SizedIngredient;
 
-/**
- * Ender IO machine recipes. The generic FE-machine categories. Deferred: tank (FILL/EMPTY mode branch),
- * enchanting (per-level computed) and fire_crafting (in-world) — see research/enderio-recipe-spec.md.
- */
+/** Ender IO processing recipes, generated soul-fuel entries, and utility-machine instructions. */
 public final class EnderIOEmiModule {
     private EnderIOEmiModule() {}
 
@@ -98,6 +95,9 @@ public final class EnderIOEmiModule {
             }
             reg.addRecipe(new GenericEmiRecipe(vat, id, d));
         });
+
+        EnderIOExtraRecipes.register(reg);
+        EnderIOMachineGuide.register(reg);
     }
 
     private static void energy(MachineDescriptor d, int fe) {

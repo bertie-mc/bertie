@@ -47,6 +47,7 @@ dependencies {
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)
+    testImplementation(deps.enderio)
 
     clienttestRuntimeOnly(deps.emi)
     clienttestRuntimeOnly(deps.forbiddenArcanus)

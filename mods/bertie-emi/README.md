@@ -24,6 +24,12 @@ AnvilCraft's magnet guide reads the `bertieprogression:lightning_magnet_inputs` 
 when present, so its lightning instructions follow the pack's configured material.
 Without that tag, it describes AnvilCraft's native iron-block input.
 
+Ender IO includes tank filling and emptying for both tank tiers, Enchanter recipes at
+each enchantment level, Soul Engine fuels from synced soul data, and weather-change recipes.
+Utility machines have operating instructions in EMI's Information
+tab. The Crafter, Alloy Smelter, and Stirling Generator also link to the corresponding
+vanilla crafting, smelting, and fuel categories.
+
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency
 resolves from public Maven repositories. The `jarJarCompileOnly` dependency convention makes
