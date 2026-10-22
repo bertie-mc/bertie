@@ -2305,486 +2305,284 @@
 	quest.6B0000000000620F.title: "Block of Nickel"
 	quest.6B00000000006210.title: "Hollow Magnet Block"
 	chapter.6100000000000000.quest_desc: [
-		"The upper tree follows the mods' original machine progression. Utility blocks are below it, followed by energy production and conversion."
-		"Mekanism factory upgrades count toward their base machine."
+		"Related machines form branches. Independent blocks are placed separately."
+		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
 	]
 	chapter.6100000000000000.subtitle: "Machines and useful blocks"
 	chapter.6100000000000000.title: "Mekanism"
 	chapter.6200000000000000.quest_desc: [
-		"The upper tree follows the mods' original machine progression. Utility blocks are below it, followed by energy production and conversion."
-		"Materials and machine addons are excluded."
+		"Related machines form branches. Independent blocks are placed separately."
+		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
 	]
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
 	chapter.6300000000000000.quest_desc: [
-		"The upper tree follows the mods' original machine progression. Utility blocks are below it, followed by energy production and conversion."
-		"Materials and machine addons are excluded."
+		"Related machines form branches. Independent blocks are placed separately."
+		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
 	]
 	chapter.6300000000000000.subtitle: "Machines and useful blocks"
 	chapter.6300000000000000.title: "Ender IO"
 	quest.61007F7CC4BF1105.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61007F7CC4BF1105.title: "Electrolytic Separator"
-	quest.6100A7C925480CF2.quest_desc: [
-		"Gather the listed structure components for this multiblock."
-	]
-	quest.6100A7C925480CF2.title: "Reinforced Induction Matrix"
-	quest.6106204338FBD175.quest_desc: [
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.6106204338FBD175.title: "Supreme Fluid Tank"
 	quest.6106455D06842EF3.quest_desc: [
-		"Scrap production for the native UU-Matter chain."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6106455D06842EF3.title: "Recycler"
-	quest.610A8B1DDFC8AA3A.title: "Basic Max Chemical Tank"
 	quest.610CA42C49AAF0B7.quest_desc: [
-		"Native dirty-slurry processing chain; this feed relationship is not a crafting dependency."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.610CA42C49AAF0B7.title: "Chemical Washer"
 	quest.6110778CB26D622B.title: "Seismic Vibrator"
+	quest.6110D90C91445E34.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
 	quest.6110D90C91445E34.title: "Radioactive Waste Barrel"
-	quest.611182E4AB2921C7.title: "64B Chemical Storage Block"
+	quest.611182E4AB2921C7.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.611182E4AB2921C7.title: "Chemical Storage Block"
 	quest.6111AF01EB8E173D.title: "Chemical Replicator"
 	quest.6114E8F45706FC16.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6114E8F45706FC16.title: "Precision Sawmill"
 	quest.6116BB6B786299A2.quest_desc: [
-		"Flint can supply the internal oxygen input. It is not a general external oxygen source."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6116BB6B786299A2.title: "Purification Chamber"
-	quest.6116FA6AAD400014.title: "Absolute Chemical Tank"
-	quest.6118B89695E26714.title: "Absolute Bin"
-	quest.611A04BD3EF92CB0.quest_desc: [
-		"Generator used as a literal input to MoreMachine Large Solar Neutron Activator. Kept in progression."
-	]
-	quest.611A04BD3EF92CB0.title: "Advanced Solar Generator"
 	quest.611D57EA6ACBE225.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.611D57EA6ACBE225.title: "Replicator"
-	quest.611F4444AB9D673D.title: "Large Pigment Mixer"
-	quest.611FB3B2CC02C608.title: "Ultimate Chemical Tank"
-	quest.6120EDFC98AC44D0.quest_desc: [
-		"Original recipe routes: (Ultimate Mid Chemical Tank) OR (Crusher + Elite Max Chemical Tank)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.6120EDFC98AC44D0.title: "Ultimate Max Chemical Tank"
 	quest.6121186A452C0852.quest_desc: [
-		"Pigment supply is needed for painting. Pigment Mixer is optional for direct pigments."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6121186A452C0852.title: "Painting Machine"
 	quest.6122354F5A79C064.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6122354F5A79C064.title: "Nutritional Liquifier"
-	quest.6125CB5DE7D6BCB2.quest_desc: [
-		"Chemical packaging automation. The shipped recipe has legacy tags/schema; default survival acquisition needs runtime verification."
-	]
 	quest.6125CB5DE7D6BCB2.title: "Chemical Package Filler"
 	quest.61272BEDD29AB74F.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61272BEDD29AB74F.title: "Pigment Extractor"
-	quest.612761E700F0B2F6.title: "Large Solar Neutron Activator"
 	quest.61279294059E8A75.quest_desc: [
-		"Heat-to-steam conversion; requires a turbine to turn steam into electricity."
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.61279294059E8A75.title: "Thermoelectric Boiler"
 	quest.6128446391C69930.quest_desc: [
-		"Antimatter-production multiblock. Nuclear waste can originate in fission or MoreMachine reactions."
 		"Gather the listed structure components for this multiblock."
-		"Original recipe routes: (Fission Reactor) OR (Chemical Infuser + Electric Pump + Isotopic Centrifuge + Osmium Compressor + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
 	]
 	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
-	quest.612A6CB0444291F4.quest_desc: [
-		"The array needs a storage drive. Terminal construction does not consume the array."
-	]
 	quest.612A6CB0444291F4.title: "QIO Dashboard"
 	quest.612C871199A18CFB.quest_desc: [
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.612C871199A18CFB.title: "Teleporter"
 	quest.612EDBA3AB31C717.quest_desc: [
-		"Antimatter-consuming synthesis; used by Extras and MoreMachine endgame machines."
-		"Original recipe routes: (Fission Reactor) OR (Electric Pump + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
-	quest.612F4034181DC18B.quest_desc: [
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.612F4034181DC18B.title: "Supreme Energy Cube"
 	quest.6130B0FD941D9A87.title: "Oredictionificator"
 	quest.6132A956584982FD.quest_desc: [
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.6132A956584982FD.title: "Dynamic Tank"
 	quest.61344D71EAD2E6D8.title: "Quantum Entangloporter"
-	quest.61344FDC051AD5F1.title: "Basic Mid Chemical Tank"
-	quest.613500C40061A8D5.title: "Chemical Infuser"
-	quest.61358817E29C9D6B.quest_desc: [
-		"Original recipe routes: (Fission Reactor) OR (Chemical Infuser + Electric Pump + Osmium Compressor + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
+	quest.613500C40061A8D5.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
 	]
+	quest.613500C40061A8D5.title: "Chemical Infuser"
 	quest.61358817E29C9D6B.title: "Modification Station"
+	quest.6137E617014D1DF3.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
 	quest.6137E617014D1DF3.title: "Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6138E502782D37CD.title: "CNC Rolling Mill"
-	quest.613AE87E13BAB1E4.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.613AE87E13BAB1E4.title: "Elite Energy Cube"
-	quest.613EE3518CC54F92.title: "Ultimate Fluid Tank"
-	quest.614044B979203D06.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.614044B979203D06.title: "Laser"
 	quest.614430986DD3DBF3.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.614430986DD3DBF3.title: "Energized Smelter"
 	quest.6146427091E96BE5.title: "Wind Generator"
 	quest.6146E3DCFE0F8BE7.quest_desc: [
-		"Sulfur can supply the machine's internal sulfuric-acid input via its conversion slot. This does not produce a general external acid supply."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6146E3DCFE0F8BE7.title: "Chemical Dissolution Chamber"
-	quest.61480718AF51D1B2.title: "Personal Barrel"
-	quest.614B80386DC1A6CE.quest_desc: [
-		"Unstable dimensional gas for the native UU-Matter chain."
-	]
 	quest.614B80386DC1A6CE.title: "Ambient Gas Collector"
-	quest.614C605598744575.quest_desc: [
-		"Original recipe routes: (Elite Mid Chemical Tank) OR (Crusher + Advanced Max Chemical Tank) OR (Enrichment Chamber + Advanced Max Chemical Tank)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.614C605598744575.title: "Elite Max Chemical Tank"
 	quest.614C917652DB21F9.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.614C917652DB21F9.title: "Crusher"
 	quest.614CFE12B65761A6.quest_desc: [
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.614CFE12B65761A6.title: "Industrial Turbine"
-	quest.614EFF1E6849E371.title: "Absolute Radioactive Waste Barrel"
-	quest.6151B008725709CB.quest_desc: [
-		"Original recipe routes: (Basic Mid Chemical Tank) OR (Advanced Chemical Tank + Dynamic Tank)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.6151B008725709CB.title: "Advanced Mid Chemical Tank"
-	quest.615583748575C9FA.title: "Infinite Energy Cube"
 	quest.6155A58E8CA9B41B.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6155A58E8CA9B41B.title: "Chemical Oxidizer"
-	quest.61569880F6089F13.title: "Infinite Bin"
 	quest.6156CDFE543B3C19.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6156CDFE543B3C19.title: "CNC Lathe"
-	quest.6157C1521D2B083E.title: "Basic Bin"
-	quest.61588EDEF3EE4AFB.title: "Personal Chest"
+	quest.6157C1521D2B083E.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.6157C1521D2B083E.title: "Bin"
+	quest.61588EDEF3EE4AFB.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.61588EDEF3EE4AFB.title: "Personal Storage"
 	quest.6158907C6BBC3D76.quest_desc: [
-		"Feed sources depend on the selected process: Chemical Washer for ore slurries, SPS for antimatter, or thermal evaporation + rotary conversion for lithium."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6158907C6BBC3D76.title: "Chemical Crystallizer"
-	quest.6158A00A787CB1AC.title: "Infinite Fluid Tank"
-	quest.615B0EF4240BE4A4.quest_desc: [
-		"Original recipe routes: (Crusher + Elite Mid Chemical Tank) OR (Dynamic Tank + Ultimate Chemical Tank)."
-		"Both paths are linked as normal quest prerequisites."
+	quest.615BEBFBD1ED7B41.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
 	]
-	quest.615B0EF4240BE4A4.title: "Ultimate Mid Chemical Tank"
-	quest.615BEBFBD1ED7B41.title: "Basic Energy Cube"
-	quest.615C8369C9A7CD01.title: "Advanced Fluid Tank"
-	quest.61634DF261F6CB6E.title: "Cosmic Chemical Tank"
+	quest.615BEBFBD1ED7B41.title: "Energy Cube"
 	quest.6164719100DB04C2.title: "QIO Redstone Adapter"
-	quest.6165D0FF8D53B4F4.title: "Heat Generator"
-	quest.616B11A9D1B23EAC.title: "Advanced Chemical Tank"
-	quest.616BF4D1A0C5EAA3.title: "Large Heat Generator"
-	quest.616DCD75B4BB76C4.title: "Chargepad"
-	quest.616DE8B8551D8E97.quest_desc: [
-		"Original recipe routes: (Advanced Mid Chemical Tank) OR (Basic Max Chemical Tank)."
-		"Both paths are linked as normal quest prerequisites."
+	quest.6165D0FF8D53B4F4.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
 	]
-	quest.616DE8B8551D8E97.title: "Advanced Max Chemical Tank"
+	quest.6165D0FF8D53B4F4.title: "Heat Generator"
+	quest.616DCD75B4BB76C4.title: "Chargepad"
 	quest.616ED64305E2CC2D.title: "Laser Amplifier"
 	quest.6170554009D736BD.quest_desc: [
-		"Independent entry machine; circuits, steel and alloy progression."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6170554009D736BD.title: "Metallurgic Infuser"
-	quest.61719607980AE687.title: "Infinite Chemical Tank"
-	quest.6172DCD506EEA2EE.quest_desc: [
-		"Original recipe routes: (Fission Reactor) OR (Chemical Infuser + Electric Pump + Isotopic Centrifuge + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.6172DCD506EEA2EE.title: "Wireless Transmission Station"
 	quest.61757D6F0FE96778.quest_desc: [
-		"Chemical input is piped; this machine does not have an item-to-chemical conversion slot."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61757D6F0FE96778.title: "Pressurized Reaction Chamber"
-	quest.6179CCB5E109DF4A.quest_desc: [
-		"Original recipe routes: (Fission Reactor) OR (Electric Pump + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
+	quest.6181C0BF7FB84CD4.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
 	]
-	quest.6179CCB5E109DF4A.title: "Large Antiprotonic Nucleosynthesizer"
-	quest.617C7F3600CD6AE0.quest_desc: [
-		"Original recipe routes: (Crusher + Advanced Mid Chemical Tank) OR (Dynamic Tank + Elite Chemical Tank) OR (Enrichment Chamber + Advanced Mid Chemical Tank)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.617C7F3600CD6AE0.title: "Elite Mid Chemical Tank"
-	quest.617EAA73B6330B46.title: "Absolute Fluid Tank"
-	quest.6181C0BF7FB84CD4.title: "Basic Chemical Tank"
+	quest.6181C0BF7FB84CD4.title: "Chemical Tank"
 	quest.6183C60BB3CFEFE9.title: "Fluidic Plenisher"
 	quest.6185FE15DFBCF018.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6185FE15DFBCF018.title: "CNC Stamper"
 	quest.618738812E241B28.title: "Dimensional Stabilizer"
 	quest.618C05D3E0FBF597.title: "QIO Importer"
-	quest.618D15DDC5ECED5B.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.618D15DDC5ECED5B.title: "Elite Fluid Tank"
 	quest.618D7E07C30BC538.quest_desc: [
-		"Any factory upgrade of this machine also counts."
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.618D7E07C30BC538.title: "Combiner"
-	quest.618DF240E67E19EC.title: "Large Gas-Burning Generator"
-	quest.618FC0ECB4735E17.title: "Large C. Infuser"
-	quest.61925934EC135A9C.quest_desc: [
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61925934EC135A9C.title: "Supreme Bin"
 	quest.6196479D92FB06D6.title: "Bio-Generator"
-	quest.6196DC736079F63B.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.6196DC736079F63B.title: "1024B Chemical Storage Block"
 	quest.6198E5DF4A957298.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
-	quest.619C800739C7D836.title: "Large Rotary Condensentrator"
-	quest.619ED8397E1651A4.title: "Basic Fluid Tank"
-	quest.61A13A326786DAD3.title: "Advanced Bin"
+	quest.619ED8397E1651A4.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.619ED8397E1651A4.title: "Fluid Tank"
 	quest.61A3E003004D1BDE.quest_desc: [
 		"Gather the listed structure components for this multiblock."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61A3E003004D1BDE.title: "Induction Matrix"
-	quest.61A669E09EA1F03B.title: "Cosmic Bin"
 	quest.61A73EDFBD8EA38A.title: "Fuelwood Heater"
 	quest.61AA22A6579ECC7F.title: "Formulaic Assemblicator"
-	quest.61AA3AFA10D5F8D9.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61AA3AFA10D5F8D9.title: "Elite Chemical Tank"
-	quest.61AC48FB9040A8F7.title: "Cosmic Energy Cube"
 	quest.61B0C5442DEB7DFB.quest_desc: [
-		"Receives nuclear waste for polonium or lithium for tritium; neither feed source is a universal prerequisite to constructing the machine."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61B0C5442DEB7DFB.title: "Solar Neutron Activator"
-	quest.61B1B644F2F1C7B1.quest_desc: [
-		"Mobile machine entity and literal crafting input for several machines. Included because it has a functional machine role."
-	]
 	quest.61B1B644F2F1C7B1.title: "Robit"
-	quest.61B2F5B46C3A879D.quest_desc: [
-		"Original recipe routes: (Personal Barrel) OR (Personal Chest)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.61B2F5B46C3A879D.title: "Laser Tractor Beam"
-	quest.61B37BF4E1E6A261.quest_desc: [
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61B37BF4E1E6A261.title: "Supreme Radioactive Waste Barrel"
 	quest.61B42C128D4734CF.title: "Fluid Replicator"
-	quest.61B961C7A9FF0E37.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.61B961C7A9FF0E37.title: "Security Desk"
-	quest.61BB7F002416C5C1.title: "Large Electrolytic Separator"
 	quest.61BE905EDDB94833.quest_desc: [
-		"Salt can supply the internal hydrogen-chloride input. This does not force a thermal evaporation plant for every injection setup."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
-	quest.61BFA337934FA89B.quest_desc: [
-		"Original recipe routes: (Crusher) OR (Enrichment Chamber)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61BFA337934FA89B.title: "Elite Bin"
 	quest.61C1ECA95D9A4280.quest_desc: [
-		"Generator consumed by Advanced Solar Generator, which is consumed by MoreMachine Large Solar Neutron Activator. Kept in progression."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61C1ECA95D9A4280.title: "Solar Generator"
-	quest.61C2C29B42A84DD5.title: "Ultimate Energy Cube"
-	quest.61C3E189CE8F2DE2.title: "Cosmic Radioactive Waste Barrel"
 	quest.61C4E5A8ECF470E0.title: "QIO Exporter"
 	quest.61C6106B8ACA0FE2.title: "Wireless Charging Station"
-	quest.61C6B6C1955D45E1.quest_desc: [
-		"Original recipe routes: (Personal Barrel) OR (Personal Chest)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.61C6B6C1955D45E1.title: "QIO Drive Array"
-	quest.61CB5D6A5A2E18D2.title: "Absolute Energy Cube"
-	quest.61CCEE6E96369B77.title: "Ultimate Bin"
 	quest.61CD6FB9A3418088.quest_desc: [
-		"Constructed and fueled fission reactor; nuclear waste and optional hot sodium. A progression element, with heat output."
 		"Gather the listed structure components for this multiblock."
-		"The graph node includes first fissile-fuel production. Pump/turbine/boiler are not forced: water and steam can be supplied/handled through other default methods."
-		"Original recipe routes: (Chemical Dissolution Chamber + Chemical Injection Chamber) OR (Chemical Dissolution Chamber + Electrolytic Separator + Pressurized Reaction Chamber) OR (Chemical Injection Chamber + Electric Pump + Osmium Compressor + Solar Neutron Activator + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
 	]
 	quest.61CD6FB9A3418088.title: "Fission Reactor"
-	quest.61CE3440E6646396.title: "Cosmic Fluid Tank"
+	quest.61D227C9590B6477.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
 	quest.61D227C9590B6477.title: "Rotary Condensentrator"
-	quest.61D38B58AB1889A7.title: "Infinite Radioactive Waste Barrel"
 	quest.61D38FD8A0C96143.title: "Resistive Heater"
 	quest.61D6479D233254A8.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61D6479D233254A8.title: "Isotopic Centrifuge"
-	quest.61DA0731B17CDD86.title: "Advanced Energy Cube"
 	quest.61DA1C428DC2A5D1.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61DA1C428DC2A5D1.title: "Enrichment Chamber"
-	quest.61E15BC0FEC085E2.title: "8192B Chemical Storage Block"
 	quest.61E3EA04873C158B.quest_desc: [
-		"Nutrient solution is made from nutritional paste plus biofuel."
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61E3EA04873C158B.title: "Planting Station"
 	quest.61E42E122B5D334C.quest_desc: [
-		"Naquadah reactor; electricity plus an alternate polonium-production chain. Classified as progression because it processes a progression resource."
 		"Gather the listed structure components for this multiblock."
-		"Rich Naquadah/Uranium fuel route uses membrane-equipped Advanced Electric Pump and rotary conversion. Premixed Naquadah-Uranium fuel is a separate PRC route. Water cooling produces polonium-containing steam; rotary conversion -> evaporation -> rotary conversion -> SNA produces polonium. Keep this late optional loop separate from the bootstrap DAG."
 	]
 	quest.61E42E122B5D334C.title: "Naquadah Reactor Controller"
 	quest.61E5CA7CEF5BC9A7.quest_desc: [
 		"Gather the listed structure components for this multiblock."
-		"Assemble the reactor, make D-T fuel and a filled Hohlraum, and provide the ignition laser pulse. The reactor itself is not required to manufacture D-T fuel."
-		"Original recipe routes: (Fission Reactor) OR (Chemical Infuser + Electric Pump + Osmium Compressor + Thermal Evaporation Controller + Ambient Gas Collector + Recycler)."
-		"Both paths are linked as normal quest prerequisites."
 	]
 	quest.61E5CA7CEF5BC9A7.title: "Fusion Reactor Controller"
-	quest.61E7A81687106E2D.quest_desc: [
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61E7A81687106E2D.title: "Supreme Chemical Tank"
-	quest.61EA554358E0A8D2.quest_desc: [
-		"Advanced fluid extraction and rich nuclear-fuel conversion with the required membrane. Upgrade item excluded from nodes."
-		"Original recipe routes: (Rotary Condensentrator) OR (Thermal Evaporation Controller)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.61EA554358E0A8D2.title: "Advanced Electric Pump"
 	quest.61EBF8A4A6E2453C.quest_desc: [
-		"Any factory upgrade of this machine also counts."
+		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61EBF8A4A6E2453C.title: "Osmium Compressor"
 	quest.61ED11E1734FFF61.quest_desc: [
-		"Complete ambient-heated thermal evaporation plant; brine and lithium production."
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.61ED11E1734FFF61.title: "Thermal Evaporation Controller"
 	quest.61F223E957195400.title: "Logistical Sorter"
 	quest.61F26B48478DFF5B.title: "Industrial Alarm"
-	quest.61F806191EBA2CAF.title: "256B Chemical Storage Block"
 	quest.61F98ABAEE507B7B.title: "Digital Miner"
+	quest.61FCF66321F85454.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
 	quest.61FCF66321F85454.title: "Pigment Mixer"
-	quest.620353FFC9DEFECB.quest_desc: [
-		"Original recipe routes: (Enderic Laser) OR (Assembler + Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.620353FFC9DEFECB.title: "Bio Generator"
-	quest.621129AE3D36DAF2.quest_desc: [
-		"Requires laser power and placement over a resource node."
-	]
 	quest.621129AE3D36DAF2.title: "Bedrock Extractor"
 	quest.6211FDE7F53E359F.quest_desc: [
-		"Particle collision multiblock. Its construction does not inherently require an Atomic Forge."
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.6211FDE7F53E359F.title: "Particle Accelerator"
-	quest.621374FA10F760B9.quest_desc: [
-		"Original recipe routes: (Enderic Laser) OR (Assembler + Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.621374FA10F760B9.title: "Arcane Research Station"
 	quest.62151E42D39DA61F.title: "Fuel Generator"
-	quest.621ABB936B00A7D9.title: "Portable Energy Storage"
-	quest.621E38939E05AA74.quest_desc: [
-		"Advanced computing components; requires laser power."
-		"Required laser-power mechanic, not a crafting-grid ingredient."
+	quest.621ABB936B00A7D9.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
 	]
+	quest.621ABB936B00A7D9.title: "Energy Storage"
 	quest.621E38939E05AA74.title: "Atomic Forge"
 	quest.62213B9DA611D8AD.quest_desc: [
-		"Fuel/chemical refining; reinforced carbon sheets and an alternate fluxite route."
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.62213B9DA611D8AD.title: "Refinery"
-	quest.6230B435795DFCEB.quest_desc: [
-		"Nearby catalyst must contain souls."
-		"Original recipe routes: (Enderic Laser) OR (Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.6230B435795DFCEB.title: "Stabilized Enchanter"
-	quest.623C6424729A6815.quest_desc: [
-		"Link to the accelerator with a designator. The controller is needed for use, not for crafting the sensor."
-	]
 	quest.623C6424729A6815.title: "Particle Accelerator Speed Sensor"
 	quest.623C80D163EAF597.title: "Drone Port"
-	quest.6241C0AE0A7AF5E1.quest_desc: [
-		"Fluxite harvesting, mining and required laser power for Atomic Forge / Bedrock Extractor."
-	]
 	quest.6241C0AE0A7AF5E1.title: "Enderic Laser"
 	quest.6244B13B19677509.title: "Fertilizer Block"
-	quest.624BC5B6C71FD915.quest_desc: [
-		"Carbon fibre, plastics, fluid separation and advanced component routes."
-		"Fluid processing requires the native fluid addon. This machine-addon item is deliberately not a graph node."
-	]
 	quest.624BC5B6C71FD915.title: "Centrifuge"
 	quest.624D6392BC0C13FD.title: "Pipe Booster"
-	quest.625343E9CA0E5C5A.quest_desc: [
-		"Original recipe routes: (Enderic Laser) OR (Assembler + Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.625343E9CA0E5C5A.title: "Fragment Forge"
 	quest.625390D16B40461E.title: "Portable Tank"
-	quest.625BAFC1917D7964.quest_desc: [
-		"Soul collection and arcane processing. Also needed to transform a Refinery into a Tainted Refinery."
-		"Original recipe routes: (Atomic Forge) OR (Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.625BAFC1917D7964.title: "Arcane Catalyst"
 	quest.625BF6FAC5C95CAD.title: "Item Filter"
 	quest.6264043F58BE1F33.title: "Equipment Charger"
@@ -2793,135 +2591,74 @@
 	quest.627F81216BBEC39C.title: "Pulverizer"
 	quest.6284B6EA8E2482E3.title: "Schrödinger's Safe"
 	quest.628B454043ECDE97.title: "Foundry"
-	quest.628B75F6213677F9.title: "Cybernetic Research Station"
+	quest.628B75F6213677F9.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.628B75F6213677F9.title: "Research Station"
 	quest.628D16AD0A6579CA.title: "Destroyer Block"
 	quest.6291C0C75463BCE6.title: "Tree Cutter"
-	quest.629D84D74F39C289.quest_desc: [
-		"Original recipe routes: (Assembler + Refinery) OR (Foundry + Enderic Laser)."
-		"Both paths are linked as normal quest prerequisites."
-	]
 	quest.629D84D74F39C289.title: "Big Solar Panel"
 	quest.629F225F3D608734.title: "Basic Generator"
 	quest.62A217A8A877BABD.title: "Lava Generator"
-	quest.62A30922B71AED75.quest_desc: [
-		"In-world transformed Refinery; optional advanced refinery branch."
-		"Explode a Refinery within 6 blocks of a charged Arcane Catalyst. The catalyst needs at least one soul. No survival Tainted Refinery item is obtainable; detect the placed block, not item acquisition."
-	]
 	quest.62A30922B71AED75.title: "Tainted Refinery"
 	quest.62A48C1DFCC52A6E.title: "Powered Furnace"
 	quest.62A8F5342B5D078E.title: "Energy Transmission Pole"
-	quest.62B056E48F4E932E.quest_desc: [
-		"Optional independently placed magnetic-guidance block; attachable stat addons are excluded."
-	]
 	quest.62B056E48F4E932E.title: "Accelerator Magnetic Field"
 	quest.62B2E1ADCC22B9B7.quest_desc: [
 		"Gather the listed structure components for this multiblock."
-		"The catalog unlock includes a baseline assembly with a single reactor rod, fuel port and energy port, rather than the controller alone. Supply the native fuel pellets and a cooling arrangement before generation."
-		"Original recipe routes: (Enderic Laser) OR (Assembler + Refinery)."
-		"Both paths are linked as normal quest prerequisites."
 	]
 	quest.62B2E1ADCC22B9B7.title: "Nuclear Reactor Controller"
 	quest.62C0FE899228BF70.quest_desc: [
 		"Gather the listed structure components for this multiblock."
-		"Complete the spawner cage structure and supply the appropriate soul/energy setup."
 	]
 	quest.62C0FE899228BF70.title: "Spawner Controller"
-	quest.62CB138F26BC4EDF.quest_desc: [
-		"Machine that combines machine addons. Addon items themselves are excluded."
-	]
 	quest.62CB138F26BC4EDF.title: "Addon Splicer"
-	quest.62D72BBD32A6CEFF.quest_desc: [
-		"Use with one or more of the research stations. Research trees are not extra machine crafting prerequisites."
-	]
 	quest.62D72BBD32A6CEFF.title: "Cybernetic Augmentation Center"
-	quest.62E6C820F71BEDAE.quest_desc: [
-		"Consumes nearby particle-collision activity; the accelerator is an operating requirement, not an ingredient in the absorber recipe."
-	]
 	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
 	quest.62EAC8800B926619.title: "Pump"
-	quest.62EB2969EF64354C.quest_desc: [
-		"Exclusive advanced component assembly; early components also have manual recipes."
-	]
 	quest.62EB2969EF64354C.title: "Assembler"
 	quest.62F43E7EF07E2B23.title: "Placer Block"
-	quest.62FABE1CDD025173.quest_desc: [
-		"Original recipe routes: (Enderic Laser) OR (Assembler + Refinery)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.62FABE1CDD025173.title: "Quantum Research Station"
-	quest.62FF535CE07CBB6E.quest_desc: [
-		"Original recipe routes: (Assembler + Refinery) OR (Foundry + Enderic Laser)."
-		"Both paths are linked as normal quest prerequisites."
-	]
-	quest.62FF535CE07CBB6E.title: "Large Energy Storage"
 	quest.6300E40814E88A6C.title: "Wired Charger"
 	quest.63019C4946F1DDFF.title: "Attractor Obelisk"
-	quest.63037D5ED5E78832.title: "Pulsating Photovoltaic Module"
 	quest.63052FFBCF769562.title: "XP Vacuum"
 	quest.6311CEDD56828B81.title: "XP Obelisk"
-	quest.63178A38FCDB5207.quest_desc: [
-		"Dusts and silicon. Independent entry machine."
-	]
 	quest.63178A38FCDB5207.title: "SAG Mill"
-	quest.6317A5173351A438.title: "Basic Capacitor Bank"
+	quest.6317A5173351A438.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.6317A5173351A438.title: "Capacitor Bank"
+	quest.6317A5B30F341AFC.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
 	quest.6317A5B30F341AFC.title: "Fluid Tank"
 	quest.6323CADE3F8D108B.title: "Relocator Obelisk"
 	quest.633D452113AEF34F.title: "Vacuum Chest"
 	quest.6346FE9A2642A491.quest_desc: [
-		"A Phantom soul-binding recipe exists; do not make that optional soul variant a universal solar construction gate."
+		"Upgraded variants count toward this machine's objective."
 	]
-	quest.6346FE9A2642A491.title: "Energetic Photovoltaic Module"
+	quest.6346FE9A2642A491.title: "Photovoltaic Module"
 	quest.634B4641B2520062.title: "Stirling Generator"
-	quest.634C23AC5C473113.quest_desc: [
-		"Alloy production and fused quartz. Independent entry machine."
-	]
 	quest.634C23AC5C473113.title: "Alloy Smelter"
-	quest.634ED2803215557F.quest_desc: [
-		"Bind an engine-compatible soul before operation. Blaze soul uses lava, so VAT is not a universal fuel prerequisite."
-	]
 	quest.634ED2803215557F.title: "Soul Engine"
 	quest.6361D034B2BC2974.title: "Travel Anchor"
 	quest.6366E6EAE1CA85DE.title: "Weather Obelisk"
 	quest.636B6097826C5DEF.title: "Wireless Charger"
-	quest.636F4F9A042E545F.quest_desc: [
-		"Soul machine components."
-	]
 	quest.636F4F9A042E545F.title: "Slice'N'Splice"
-	quest.6370D712D8C6D335.title: "Vibrant Wireless Antenna"
 	quest.637E4592CF7E839C.title: "Enchanter"
-	quest.638207EBBCE6F621.quest_desc: [
-		"Soul-bound functional components, obelisk crystals and optional machine soul tuning."
-	]
 	quest.638207EBBCE6F621.title: "Soul Binder"
 	quest.63849B0A82BCC81B.title: "Aversion Obelisk"
-	quest.63995789250DE76D.quest_desc: [
-		"Soul binding tunes farming bonuses; an unbound machine is not automatically a missing progression gate."
-	]
 	quest.63995789250DE76D.title: "Farming Station"
-	quest.63A6819566386297.title: "Pressurized Fluid Tank"
-	quest.63AB041EA67C7623.title: "Vibrant Photovoltaic Module"
-	quest.63ADDD19F6A43E7E.title: "Vibrant Capacitor Bank"
-	quest.63B52F847D44B730.title: "Advanced Capacitor Bank"
-	quest.63B7CB7BA974AC20.quest_desc: [
-		"Experimental fluid placement machine; counterpart to Drain."
-	]
 	quest.63B7CB7BA974AC20.title: "Niard"
-	quest.63BD300DA3334F80.quest_desc: [
-		"The crafting recipe copies entity data from the Broken Spawner. Soul Binder retuning is an additional route, not a universally required craft step."
-	]
 	quest.63BD300DA3334F80.title: "Powered Spawner"
-	quest.63C87D5448554BCF.quest_desc: [
-		"Powered mob-killing block."
-	]
 	quest.63C87D5448554BCF.title: "Mind Killer"
-	quest.63CCB2EDC60D9E02.title: "Pulsating Wireless Antenna"
+	quest.63CCB2EDC60D9E02.quest_desc: [
+		"Upgraded variants count toward this machine's objective."
+	]
+	quest.63CCB2EDC60D9E02.title: "Wireless Antenna"
 	quest.63CEA05F6B3D2B8B.title: "Crafter"
 	quest.63D5B4D0E822D9D9.title: "Drain"
 	quest.63DAE72B8F9EE1E0.title: "Inhibitor Obelisk"
 	quest.63E4E6BDC45E6B1E.title: "Painting Machine"
-	quest.63FC85CD4A75CD42.quest_desc: [
-		"Fluid fuels and processing fluids; optional processing branch."
-	]
 	quest.63FC85CD4A75CD42.title: "VAT"
 	quest.63FE8770552C6AA9.title: "Impulse Hopper"
 }

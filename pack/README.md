@@ -25,9 +25,10 @@ book and spyglass also craft a Field Guide item.
 ## Technology quests
 
 Mekanism, Oritech and Ender IO have separate machine chapters, including their installed
-addons. Their maps follow the mods' original recipes. Mekanism factory upgrades count
-toward their base-machine objectives. Both displayed alternative paths are normal required
-quest dependencies, with redundant transitive links removed.
+addons. Capacity and throughput upgrades count toward one base-machine objective.
+Multiblock components stay in their structure quest. Links follow the nearest manufacturing
+machine in the original construction recipes, with recycling loops and transitive duplicates
+excluded. Independent blocks sit outside the linked branches.
 
 ## Dependency model
 

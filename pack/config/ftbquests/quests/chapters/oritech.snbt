@@ -58,12 +58,11 @@
 				}
 			]
 			dependencies: [
-				"62213B9DA611D8AD"
 				"628B454043ECDE97"
 				"62EB2969EF64354C"
 			]
-			x: 5.0d
-			y: -2.0d
+			x: 16.139d
+			y: -10.416d
 		}
 		{
 			id: "62EB2969EF64354C"
@@ -82,8 +81,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: -3.0d
+			x: 0.000d
+			y: 0.000d
 		}
 		{
 			id: "621E38939E05AA74"
@@ -103,11 +102,12 @@
 				}
 			]
 			dependencies: [
-				"6241C0AE0A7AF5E1"
+				"624BC5B6C71FD915"
 				"628B454043ECDE97"
+				"62EB2969EF64354C"
 			]
-			x: 5.0d
-			y: 0.0d
+			x: 16.000d
+			y: -19.000d
 		}
 		{
 			id: "624BC5B6C71FD915"
@@ -126,8 +126,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: -1.0d
+			x: 0.000d
+			y: -10.400d
 		}
 		{
 			id: "621129AE3D36DAF2"
@@ -149,8 +149,8 @@
 			dependencies: [
 				"621E38939E05AA74"
 			]
-			x: 7.5d
-			y: -1.0d
+			x: 24.000d
+			y: -19.000d
 		}
 		{
 			id: "625BAFC1917D7964"
@@ -170,11 +170,10 @@
 				}
 			]
 			dependencies: [
-				"621E38939E05AA74"
-				"62213B9DA611D8AD"
+				"624BC5B6C71FD915"
 			]
-			x: 7.5d
-			y: 1.0d
+			x: 24.000d
+			y: -4.000d
 		}
 		{
 			id: "628B454043ECDE97"
@@ -193,8 +192,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: 1.0d
+			x: 0.000d
+			y: -16.000d
 		}
 		{
 			id: "625343E9CA0E5C5A"
@@ -214,11 +213,11 @@
 				}
 			]
 			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
+				"624BC5B6C71FD915"
+				"62EB2969EF64354C"
 			]
-			x: 5.0d
-			y: 2.0d
+			x: 8.000d
+			y: 2.000d
 		}
 		{
 			id: "6241C0AE0A7AF5E1"
@@ -239,11 +238,10 @@
 			]
 			dependencies: [
 				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 				"62EB2969EF64354C"
 			]
-			x: 2.5d
-			y: -1.0d
+			x: 12.000d
+			y: -4.600d
 		}
 		{
 			id: "627F81216BBEC39C"
@@ -262,8 +260,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: 3.0d
+			x: -8.000d
+			y: -20.000d
 		}
 		{
 			id: "62213B9DA611D8AD"
@@ -294,10 +292,10 @@
 			]
 			dependencies: [
 				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
+				"625390D16B40461E"
 			]
-			x: 2.5d
-			y: 1.0d
+			x: 6.728d
+			y: -9.965d
 		}
 		{
 			id: "62A30922B71AED75"
@@ -317,10 +315,11 @@
 				}
 			]
 			dependencies: [
+				"62213B9DA611D8AD"
 				"625BAFC1917D7964"
 			]
-			x: 10.0d
-			y: 0.0d
+			x: 32.000d
+			y: -4.000d
 		}
 		{
 			id: "627AF928CDFE3F5E"
@@ -339,8 +338,8 @@
 					}
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 44.000d
+			y: -10.000d
 		}
 		{
 			id: "62A48C1DFCC52A6E"
@@ -359,8 +358,8 @@
 					}
 				}
 			]
-			x: 6.0d
-			y: 6.0d
+			x: 49.000d
+			y: -10.000d
 		}
 		{
 			id: "6264043F58BE1F33"
@@ -379,8 +378,8 @@
 					}
 				}
 			]
-			x: 2.0d
-			y: 6.0d
+			x: 54.000d
+			y: -10.000d
 		}
 		{
 			id: "62EAC8800B926619"
@@ -399,11 +398,8 @@
 					}
 				}
 			]
-			dependencies: [
-				"627F81216BBEC39C"
-			]
-			x: 6.0d
-			y: 8.0d
+			x: 44.000d
+			y: -4.500d
 		}
 		{
 			id: "62F43E7EF07E2B23"
@@ -423,12 +419,10 @@
 				}
 			]
 			dependencies: [
-				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 				"62EB2969EF64354C"
 			]
-			x: 0.0d
-			y: 8.0d
+			x: -7.518d
+			y: 2.736d
 		}
 		{
 			id: "628D16AD0A6579CA"
@@ -449,9 +443,10 @@
 			]
 			dependencies: [
 				"6241C0AE0A7AF5E1"
+				"627F81216BBEC39C"
 			]
-			x: 12.0d
-			y: 8.0d
+			x: 16.000d
+			y: 1.000d
 		}
 		{
 			id: "6291C0C75463BCE6"
@@ -470,8 +465,8 @@
 					}
 				}
 			]
-			x: 8.0d
-			y: 6.0d
+			x: 49.000d
+			y: -4.500d
 		}
 		{
 			id: "6244B13B19677509"
@@ -491,12 +486,10 @@
 				}
 			]
 			dependencies: [
-				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 				"62EB2969EF64354C"
 			]
-			x: 12.0d
-			y: 6.0d
+			x: 2.071d
+			y: 7.727d
 		}
 		{
 			id: "625BF6FAC5C95CAD"
@@ -516,12 +509,10 @@
 				}
 			]
 			dependencies: [
-				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 				"62EB2969EF64354C"
 			]
-			x: 14.0d
-			y: 6.0d
+			x: -3.694d
+			y: 7.096d
 		}
 		{
 			id: "624D6392BC0C13FD"
@@ -540,11 +531,8 @@
 					}
 				}
 			]
-			dependencies: [
-				"627F81216BBEC39C"
-			]
-			x: 16.0d
-			y: 6.0d
+			x: 54.000d
+			y: -4.500d
 		}
 		{
 			id: "623C80D163EAF597"
@@ -566,8 +554,8 @@
 			dependencies: [
 				"621E38939E05AA74"
 			]
-			x: 4.0d
-			y: 10.0d
+			x: 24.805d
+			y: -10.390d
 		}
 		{
 			id: "62A8F5342B5D078E"
@@ -589,8 +577,8 @@
 			dependencies: [
 				"621ABB936B00A7D9"
 			]
-			x: 14.0d
-			y: 8.0d
+			x: 14.000d
+			y: -24.000d
 		}
 		{
 			id: "628B75F6213677F9"
@@ -604,63 +592,17 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "oritech:simple_augment_station"
+						components: {
+							"ftbfiltersystem:filter": "or(item(oritech:simple_augment_station)item(oritech:advanced_augment_station)item(oritech:arcane_augment_station))"
+							"minecraft:custom_name": "{\"text\": \"Research Station\", \"italic\": false}"
+						}
 					}
 				}
 			]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			id: "62FABE1CDD025173"
-			icon: {
-				id: "oritech:advanced_augment_station"
-			}
-			tasks: [
-				{
-					id: "6261C72BD3D9088C"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:advanced_augment_station"
-					}
-				}
-			]
-			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
-				"628B454043ECDE97"
-			]
-			x: 0.0d
-			y: 10.0d
-		}
-		{
-			id: "621374FA10F760B9"
-			icon: {
-				id: "oritech:arcane_augment_station"
-			}
-			tasks: [
-				{
-					id: "62145075DA256263"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:arcane_augment_station"
-					}
-				}
-			]
-			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
-				"628B454043ECDE97"
-			]
-			x: 10.0d
-			y: 8.0d
+			x: 44.000d
+			y: 1.000d
 		}
 		{
 			id: "62D72BBD32A6CEFF"
@@ -681,10 +623,9 @@
 			]
 			dependencies: [
 				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 			]
-			x: 10.0d
-			y: 6.0d
+			x: -3.694d
+			y: -0.904d
 		}
 		{
 			id: "6230B435795DFCEB"
@@ -705,9 +646,10 @@
 			]
 			dependencies: [
 				"625BAFC1917D7964"
+				"628B454043ECDE97"
 			]
-			x: 12.0d
-			y: 10.0d
+			x: 32.000d
+			y: 4.000d
 		}
 		{
 			id: "62C0FE899228BF70"
@@ -739,8 +681,8 @@
 			dependencies: [
 				"625BAFC1917D7964"
 			]
-			x: 10.0d
-			y: 10.0d
+			x: 21.487d
+			y: 2.886d
 		}
 		{
 			id: "62CB138F26BC4EDF"
@@ -761,11 +703,10 @@
 			]
 			dependencies: [
 				"62213B9DA611D8AD"
-				"628B454043ECDE97"
 				"62EB2969EF64354C"
 			]
-			x: 8.0d
-			y: 8.0d
+			x: 32.000d
+			y: -16.000d
 		}
 		{
 			id: "621ABB936B00A7D9"
@@ -779,42 +720,21 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "oritech:small_storage_block"
+						components: {
+							"ftbfiltersystem:filter": "or(item(oritech:small_storage_block)item(oritech:large_storage_block))"
+							"minecraft:custom_name": "{\"text\": \"Energy Storage\", \"italic\": false}"
+						}
 					}
 				}
 			]
 			dependencies: [
 				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
+				"62EB2969EF64354C"
 			]
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			id: "62FF535CE07CBB6E"
-			icon: {
-				id: "oritech:large_storage_block"
-			}
-			tasks: [
-				{
-					id: "6294CA181DD502B2"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:large_storage_block"
-					}
-				}
-			]
-			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
-				"628B454043ECDE97"
-			]
-			x: 16.0d
-			y: 8.0d
+			x: 8.000d
+			y: -24.000d
 		}
 		{
 			id: "625390D16B40461E"
@@ -833,11 +753,8 @@
 					}
 				}
 			]
-			dependencies: [
-				"627F81216BBEC39C"
-			]
-			x: 4.0d
-			y: 8.0d
+			x: -8.000d
+			y: -4.000d
 		}
 		{
 			id: "6284B6EA8E2482E3"
@@ -857,11 +774,11 @@
 				}
 			]
 			dependencies: [
+				"621ABB936B00A7D9"
 				"621E38939E05AA74"
-				"62FF535CE07CBB6E"
 			]
-			x: 8.0d
-			y: 10.0d
+			x: 31.833d
+			y: -28.997d
 		}
 		{
 			id: "623C6424729A6815"
@@ -883,8 +800,8 @@
 			dependencies: [
 				"621E38939E05AA74"
 			]
-			x: 6.0d
-			y: 10.0d
+			x: 9.618d
+			y: -14.150d
 		}
 		{
 			id: "62B056E48F4E932E"
@@ -906,8 +823,8 @@
 			dependencies: [
 				"621E38939E05AA74"
 			]
-			x: 2.0d
-			y: 10.0d
+			x: 19.271d
+			y: -11.273d
 		}
 		{
 			id: "629F225F3D608734"
@@ -926,8 +843,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: 13.0d
+			x: 0.000d
+			y: 14.000d
 		}
 		{
 			id: "62A217A8A877BABD"
@@ -949,8 +866,8 @@
 			dependencies: [
 				"629F225F3D608734"
 			]
-			x: 4.0d
-			y: 13.0d
+			x: 0.000d
+			y: 26.000d
 		}
 		{
 			id: "620353FFC9DEFECB"
@@ -970,13 +887,12 @@
 				}
 			]
 			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
 				"628B454043ECDE97"
 				"629F225F3D608734"
+				"62EB2969EF64354C"
 			]
-			x: 10.0d
-			y: 13.0d
+			x: 8.000d
+			y: 18.000d
 		}
 		{
 			id: "62151E42D39DA61F"
@@ -996,13 +912,11 @@
 				}
 			]
 			dependencies: [
-				"624BC5B6C71FD915"
-				"627F81216BBEC39C"
 				"629F225F3D608734"
 				"62EB2969EF64354C"
 			]
-			x: 2.0d
-			y: 13.0d
+			x: 10.197d
+			y: 9.034d
 		}
 		{
 			id: "6275CC3B17B7D2B6"
@@ -1024,8 +938,8 @@
 			dependencies: [
 				"629F225F3D608734"
 			]
-			x: 6.0d
-			y: 13.0d
+			x: 8.000d
+			y: 26.000d
 		}
 		{
 			id: "629D84D74F39C289"
@@ -1045,13 +959,12 @@
 				}
 			]
 			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
-				"628B454043ECDE97"
+				"624BC5B6C71FD915"
 				"629F225F3D608734"
+				"62EB2969EF64354C"
 			]
-			x: 8.0d
-			y: 13.0d
+			x: 16.000d
+			y: 26.000d
 		}
 		{
 			id: "62B2E1ADCC22B9B7"
@@ -1085,28 +998,12 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "oritech:reactor_rod"
-					}
-				}
-				{
-					id: "624B93FD7C1D7020"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:reactor_double_rod"
-					}
-				}
-				{
-					id: "6264D868EE4076C0"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:reactor_quad_rod"
+						components: {
+							"ftbfiltersystem:filter": "or(item(oritech:reactor_rod)item(oritech:reactor_double_rod)item(oritech:reactor_quad_rod))"
+							"minecraft:custom_name": "{\"text\": \"Reactor Rod\", \"italic\": false}"
+						}
 					}
 				}
 				{
@@ -1191,12 +1088,12 @@
 				}
 			]
 			dependencies: [
-				"62213B9DA611D8AD"
-				"6241C0AE0A7AF5E1"
+				"624BC5B6C71FD915"
 				"628B454043ECDE97"
+				"62EB2969EF64354C"
 			]
-			x: 12.0d
-			y: 13.0d
+			x: 24.000d
+			y: 16.000d
 		}
 		{
 			id: "62E6C820F71BEDAE"
@@ -1219,8 +1116,8 @@
 				"621E38939E05AA74"
 				"629D84D74F39C289"
 			]
-			x: 14.0d
-			y: 13.0d
+			x: 24.000d
+			y: 26.000d
 		}
 	]
 }

@@ -27,8 +27,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: -1.0d
+			x: 0.000d
+			y: 6.000d
 		}
 		{
 			id: "63178A38FCDB5207"
@@ -47,8 +47,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: 1.0d
+			x: 0.000d
+			y: -6.000d
 		}
 		{
 			id: "636F4F9A042E545F"
@@ -71,8 +71,8 @@
 				"63178A38FCDB5207"
 				"634C23AC5C473113"
 			]
-			x: 2.5d
-			y: 0.0d
+			x: 8.000d
+			y: 0.000d
 		}
 		{
 			id: "638207EBBCE6F621"
@@ -94,8 +94,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 5.0d
-			y: 0.0d
+			x: 16.000d
+			y: 0.000d
 		}
 		{
 			id: "63FC85CD4A75CD42"
@@ -117,8 +117,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 6.0d
-			y: 6.0d
+			x: -25.936d
+			y: 19.985d
 		}
 		{
 			id: "63E4E6BDC45E6B1E"
@@ -140,8 +140,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 0.0d
-			y: 6.0d
+			x: -18.276d
+			y: 29.114d
 		}
 		{
 			id: "637E4592CF7E839C"
@@ -163,8 +163,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 12.0d
-			y: 4.0d
+			x: -11.408d
+			y: 33.168d
 		}
 		{
 			id: "63CEA05F6B3D2B8B"
@@ -186,8 +186,8 @@
 			dependencies: [
 				"63178A38FCDB5207"
 			]
-			x: 8.0d
-			y: 4.0d
+			x: -6.000d
+			y: -12.000d
 		}
 		{
 			id: "63995789250DE76D"
@@ -209,8 +209,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 0.0d
-			y: 8.0d
+			x: 1.026d
+			y: -14.955d
 		}
 		{
 			id: "63BD300DA3334F80"
@@ -232,8 +232,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 4.0d
-			y: 8.0d
+			x: 9.438d
+			y: -16.438d
 		}
 		{
 			id: "633D452113AEF34F"
@@ -255,8 +255,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 8.0d
-			y: 6.0d
+			x: -27.590d
+			y: 16.346d
 		}
 		{
 			id: "63FE8770552C6AA9"
@@ -278,8 +278,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 14.0d
-			y: 4.0d
+			x: -14.980d
+			y: 31.375d
 		}
 		{
 			id: "63052FFBCF769562"
@@ -301,8 +301,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 16.0d
-			y: 6.0d
+			x: -29.354d
+			y: 8.568d
 		}
 		{
 			id: "6311CEDD56828B81"
@@ -325,8 +325,8 @@
 				"63178A38FCDB5207"
 				"634C23AC5C473113"
 			]
-			x: 14.0d
-			y: 6.0d
+			x: -16.000d
+			y: -12.000d
 		}
 		{
 			id: "63019C4946F1DDFF"
@@ -348,8 +348,8 @@
 			dependencies: [
 				"638207EBBCE6F621"
 			]
-			x: 12.0d
-			y: 8.0d
+			x: 24.485d
+			y: -8.485d
 		}
 		{
 			id: "63849B0A82BCC81B"
@@ -372,8 +372,8 @@
 				"63178A38FCDB5207"
 				"634C23AC5C473113"
 			]
-			x: 6.0d
-			y: 4.0d
+			x: -8.000d
+			y: 0.000d
 		}
 		{
 			id: "6323CADE3F8D108B"
@@ -395,8 +395,8 @@
 			dependencies: [
 				"63849B0A82BCC81B"
 			]
-			x: 8.0d
-			y: 8.0d
+			x: -16.000d
+			y: 0.000d
 		}
 		{
 			id: "63DAE72B8F9EE1E0"
@@ -418,8 +418,8 @@
 			dependencies: [
 				"638207EBBCE6F621"
 			]
-			x: 14.0d
-			y: 8.0d
+			x: 28.000d
+			y: 0.000d
 		}
 		{
 			id: "6366E6EAE1CA85DE"
@@ -441,8 +441,8 @@
 			dependencies: [
 				"638207EBBCE6F621"
 			]
-			x: 0.0d
-			y: 10.0d
+			x: 24.485d
+			y: 8.485d
 		}
 		{
 			id: "63C87D5448554BCF"
@@ -464,8 +464,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 2.0d
-			y: 8.0d
+			x: 5.135d
+			y: -16.250d
 		}
 		{
 			id: "6300E40814E88A6C"
@@ -487,8 +487,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 12.0d
-			y: 6.0d
+			x: -28.737d
+			y: 12.517d
 		}
 		{
 			id: "636B6097826C5DEF"
@@ -510,8 +510,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 10.0d
-			y: 8.0d
+			x: 20.641d
+			y: -10.607d
 		}
 		{
 			id: "63CCB2EDC60D9E02"
@@ -525,39 +525,20 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "enderio:wireless_charger_antenna"
+						components: {
+							"ftbfiltersystem:filter": "or(item(enderio:wireless_charger_antenna)item(enderio:wireless_charger_antenna_advanced))"
+							"minecraft:custom_name": "{\"text\": \"Wireless Antenna\", \"italic\": false}"
+						}
 					}
 				}
 			]
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 6.0d
-			y: 8.0d
-		}
-		{
-			id: "6370D712D8C6D335"
-			icon: {
-				id: "enderio:wireless_charger_antenna_advanced"
-			}
-			tasks: [
-				{
-					id: "632EB4D10D7C15A7"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:wireless_charger_antenna_advanced"
-					}
-				}
-			]
-			dependencies: [
-				"638207EBBCE6F621"
-			]
-			x: 16.0d
-			y: 8.0d
+			x: 17.465d
+			y: -13.517d
 		}
 		{
 			id: "6361D034B2BC2974"
@@ -579,8 +560,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 4.0d
-			y: 6.0d
+			x: -23.805d
+			y: 23.366d
 		}
 		{
 			id: "6317A5B30F341AFC"
@@ -594,36 +575,17 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "enderio:fluid_tank"
+						components: {
+							"ftbfiltersystem:filter": "or(item(enderio:fluid_tank)item(enderio:pressurized_fluid_tank))"
+							"minecraft:custom_name": "{\"text\": \"Fluid Tank\", \"italic\": false}"
+						}
 					}
 				}
 			]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			id: "63A6819566386297"
-			icon: {
-				id: "enderio:pressurized_fluid_tank"
-			}
-			tasks: [
-				{
-					id: "639AC3F7BCE4B7B6"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:pressurized_fluid_tank"
-					}
-				}
-			]
-			dependencies: [
-				"634C23AC5C473113"
-			]
-			x: 2.0d
-			y: 6.0d
+			x: 0.000d
+			y: 18.000d
 		}
 		{
 			id: "63D5B4D0E822D9D9"
@@ -645,8 +607,8 @@
 			dependencies: [
 				"634C23AC5C473113"
 			]
-			x: 10.0d
-			y: 4.0d
+			x: -7.626d
+			y: 34.462d
 		}
 		{
 			id: "63B7CB7BA974AC20"
@@ -669,8 +631,8 @@
 				"6317A5B30F341AFC"
 				"634C23AC5C473113"
 			]
-			x: 16.0d
-			y: 4.0d
+			x: 8.000d
+			y: 12.000d
 		}
 		{
 			id: "6317A5173351A438"
@@ -684,61 +646,17 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "enderio:basic_capacitor_bank"
+						components: {
+							"ftbfiltersystem:filter": "or(item(enderio:basic_capacitor_bank)item(enderio:advanced_capacitor_bank)item(enderio:vibrant_capacitor_bank))"
+							"minecraft:custom_name": "{\"text\": \"Capacitor Bank\", \"italic\": false}"
+						}
 					}
 				}
 			]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			id: "63B52F847D44B730"
-			icon: {
-				id: "enderio:advanced_capacitor_bank"
-			}
-			tasks: [
-				{
-					id: "63B3BCB7E9B19192"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:advanced_capacitor_bank"
-					}
-				}
-			]
-			dependencies: [
-				"63178A38FCDB5207"
-				"634C23AC5C473113"
-			]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			id: "63ADDD19F6A43E7E"
-			icon: {
-				id: "enderio:vibrant_capacitor_bank"
-			}
-			tasks: [
-				{
-					id: "6306C98B7BA557B1"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:vibrant_capacitor_bank"
-					}
-				}
-			]
-			dependencies: [
-				"63178A38FCDB5207"
-				"634C23AC5C473113"
-			]
-			x: 10.0d
-			y: 6.0d
+			x: 44.000d
+			y: -10.000d
 		}
 		{
 			id: "634B4641B2520062"
@@ -757,8 +675,8 @@
 					}
 				}
 			]
-			x: 0.0d
-			y: 13.0d
+			x: 49.000d
+			y: -10.000d
 		}
 		{
 			id: "634ED2803215557F"
@@ -780,8 +698,8 @@
 			dependencies: [
 				"636F4F9A042E545F"
 			]
-			x: 6.0d
-			y: 13.0d
+			x: 13.644d
+			y: -15.506d
 		}
 		{
 			id: "6346FE9A2642A491"
@@ -795,63 +713,20 @@
 					count: 1L
 					consume_items: false
 					item: {
+						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						id: "enderio:energetic_photovoltaic_module"
+						components: {
+							"ftbfiltersystem:filter": "or(item(enderio:energetic_photovoltaic_module)item(enderio:pulsating_photovoltaic_module)item(enderio:vibrant_photovoltaic_module))"
+							"minecraft:custom_name": "{\"text\": \"Photovoltaic Module\", \"italic\": false}"
+						}
 					}
 				}
 			]
 			dependencies: [
-				"63178A38FCDB5207"
 				"634C23AC5C473113"
 			]
-			x: 2.0d
-			y: 13.0d
-		}
-		{
-			id: "63037D5ED5E78832"
-			icon: {
-				id: "enderio:pulsating_photovoltaic_module"
-			}
-			tasks: [
-				{
-					id: "635FC57247D01C0A"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:pulsating_photovoltaic_module"
-					}
-				}
-			]
-			dependencies: [
-				"6346FE9A2642A491"
-			]
-			x: 4.0d
-			y: 13.0d
-		}
-		{
-			id: "63AB041EA67C7623"
-			icon: {
-				id: "enderio:vibrant_photovoltaic_module"
-			}
-			tasks: [
-				{
-					id: "63C18613D0677DCD"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "enderio:vibrant_photovoltaic_module"
-					}
-				}
-			]
-			dependencies: [
-				"63037D5ED5E78832"
-			]
-			x: 8.0d
-			y: 13.0d
+			x: -21.236d
+			y: 26.428d
 		}
 	]
 }
