@@ -15,7 +15,7 @@ Releases use `bertie-emi/vX.Y.Z` tags on the
 `mods/` folder alongside NeoForge for Minecraft 1.21.1 and EMI.
 
 ## Credits / Integration
-Adds native EMI support for mods such as Create, EnderIO, AnvilCraft, Magitech, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
+Adds native EMI support for mods such as Create, AnvilCraft, Magitech, Malum, Slag 'n' Embers, and various *Delight food mods, which otherwise only ship a JEI plugin. Each integration is guarded to only load if its target mod is present.
 
 A few integrations instead reshape a plugin the target mod already ships: Pastel's single pedestal-crafting
 category is replaced by one per pedestal tier, reusing Pastel's own recipe rendering.
@@ -23,12 +23,6 @@ category is replaced by one per pedestal tier, reusing Pastel's own recipe rende
 AnvilCraft's magnet guide reads the `bertieprogression:lightning_magnet_inputs` block tag
 when present, so its lightning instructions follow the pack's configured material.
 Without that tag, it describes AnvilCraft's native iron-block input.
-
-Ender IO includes tank filling and emptying for both tank tiers, Enchanter recipes at
-each enchantment level, Soul Engine fuels from synced soul data, and weather-change recipes.
-Utility machines have operating instructions in EMI's Information
-tab. The Crafter, Alloy Smelter, and Stirling Generator also link to the corresponding
-vanilla crafting, smelting, and fuel categories.
 
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency

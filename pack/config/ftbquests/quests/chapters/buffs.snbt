@@ -138,24 +138,6 @@
 		}
 		{
 			icon: {
-				id: "enderio:enchanter"
-			}
-			id: "3C00000000000015"
-			rewards: [{
-				id: "3C00000002000015"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000015"
-				item: { count: 1, id: "enderio:enchanter" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 6.0d
-		}
-		{
-			icon: {
 				id: "anvilcraft:royal_grindstone"
 			}
 			id: "3C00000000000016"

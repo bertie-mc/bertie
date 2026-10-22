@@ -2586,32 +2586,6 @@
 		}
 		{
 			icon: {
-				id: "enderio:electromagnet"
-			}
-			id: "4C000000000000C7"
-			tasks: [{
-				id: "4C000000010000C7"
-				item: { count: 1, id: "enderio:electromagnet" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 12.0d
-		}
-		{
-			icon: {
-				id: "enderio:staff_of_travelling"
-			}
-			id: "4C000000000000C8"
-			tasks: [{
-				id: "4C000000010000C8"
-				item: { count: 1, id: "enderio:staff_of_travelling" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 12.0d
-		}
-		{
-			icon: {
 				id: "hazennstuff:blade_of_the_legate"
 			}
 			id: "4C000000000000C9"

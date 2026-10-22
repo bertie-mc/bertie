@@ -230,14 +230,6 @@
       "required": false
     },
     {
-      "id": "enderio:electromagnet",
-      "required": false
-    },
-    {
-      "id": "enderio:staff_of_travelling",
-      "required": false
-    },
-    {
       "id": "enigmaticlegacyplus:berserk_emblem",
       "required": false
     },

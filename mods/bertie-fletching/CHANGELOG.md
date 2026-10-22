@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+Remove the Experience Rod and Infinity Rod shaft options.
+
 ## 1.0.0
 
 Initial stable release, included in Bertie's client and server packs.

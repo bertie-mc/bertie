@@ -125,8 +125,6 @@ dependencies {
     packComponents(deps.emiffect)
     packComponents(deps.emiOres)
     packComponents(deps.emiProfessionsEmip)
-    packComponents(deps.enderio)
-    packComponents(deps.enderioEndergy)
     packComponents(deps.endermanOverhaul)
     packComponents(deps.endersDelight)
     packComponents(deps.endrem)

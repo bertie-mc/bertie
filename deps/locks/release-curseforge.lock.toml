@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "daa02932b9b1017c02c2db74ab1e77c4152b959b8fa9e79ef5784c00d06403d7"
+inputs-hash = "fe8f55f5fd3249d96a9533b1cf997987884e9306bbe009e2e116ce41d546a79b"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -456,14 +456,6 @@ mod = "modrinth:705gWllI:S6Q6duUj"
 [components."end-remastered-additions"]
 any = "curseforge:1365790:7147529"
 mod = "curseforge:1365790:7147529"
-
-[components."enderio"]
-any = "curseforge:64578:8192838"
-mod = "curseforge:64578:8192838"
-
-[components."enderio-endergy"]
-any = "curseforge:304346:8017169"
-mod = "curseforge:304346:8017169"
 
 [components."enderman-overhaul"]
 any = "curseforge:574409:7661859"
@@ -5013,27 +5005,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:304346:8017169"]
-name = "enderio-endergy"
-component = "enderio-endergy"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "enderio-endergy-304346"
-version = "8017169"
-filename = "enderio_endergy-8.0.1-alpha.jar"
-project-id = 304346
-slug = "enderio-endergy"
-file-id = 8017169
-provides = ["enderio_endergy"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:64578:8192838", "mod-id" = "enderio", "version-range" = "[8.2.6-beta,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = [{ "artifact" = "modrinth:49ZofO4f:Tfs8aJPH", "mod-id" = "endercore", "version-range" = "[8.2.6-beta,)", "side" = "both", "origin" = "archive" }]
-integrations = []
-
 [artifacts."curseforge:306549:7126358"]
 name = "tips"
 component = "tips"
@@ -7403,27 +7374,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."curseforge:64578:8192838"]
-name = "enderio"
-component = "enderio"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "enderio-64578"
-version = "8192838"
-filename = "enderio-8.2.11-beta.jar"
-project-id = 64578
-slug = "enderio"
-file-id = 8192838
-provides = ["enderio"]
-bundled-provides = ["endercore", "enderio_modded_conduits"]
-required = []
-optional = [{ "missing" = "ftbultimine", "mod-id" = "ftbultimine", "version-range" = "[2101.1.7,2102)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "mod-id" = "mekanism", "version-range" = "[10.7.0,)", "side" = "both", "origin" = "archive" }, { "missing" = "ae2", "mod-id" = "ae2", "version-range" = "[19.0.23-beta,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:243076:8211701", "mod-id" = "refinedstorage", "version-range" = "[2.0.0-beta.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."curseforge:655619:5514197"]
 name = "better-climbing"

@@ -91,14 +91,6 @@
       "required": false
     },
     "#create:create_ingots",
-    "#c:ingots/conductive_alloy",
-    "#c:ingots/dark_steel",
-    "#c:ingots/end_steel",
-    "#c:ingots/energetic_alloy",
-    "#c:ingots/pulsating_alloy",
-    "#c:ingots/redstone_alloy",
-    "#c:ingots/soularium",
-    "#c:ingots/vibrant_alloy",
     {
       "id": "enigmaticlegacyplus:etherium_ingot",
       "required": false

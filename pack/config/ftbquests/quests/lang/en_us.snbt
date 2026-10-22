@@ -371,7 +371,6 @@
 	quest.3C00000000000012.title: "The Infusion Pedestal"
 	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
 	quest.3C00000000000014.title: "The Gem Case of House Fabergé"
-	quest.3C00000000000015.title: "The EnderIO Enchanter"
 	quest.3C00000000000016.title: "The Royal Grindstone"
 	quest.3C00000000000017.title: "The Ember Grindstone"
 	quest.4B00000000000001.title: "Echo and Below"
@@ -575,8 +574,6 @@
 	quest.4C000000000000C4.title: "Eternal Totem Of Dream"
 	quest.4C000000000000C5.title: "Totem Of Dream"
 	quest.4C000000000000C6.title: "Totem Of The Sea"
-	quest.4C000000000000C7.title: "Electromagnet"
-	quest.4C000000000000C8.title: "Staff of Travelling"
 	quest.4C000000000000C9.title: "Blade of the Legate"
 	quest.4C000000000000CA.title: "Pendant of Harmony"
 	quest.4C000000000000CB.title: "Token of Gratitude"
@@ -2259,8 +2256,6 @@
 	quest.7B0000000000500A.title: "Resonant Feather"
 	quest.7B0000000000500B.title: "Neutronium Wheat"
 	quest.7B00000000005011.title: "Dark Rod"
-	quest.7B00000000005014.title: "Experience Rod"
-	quest.7B00000000005015.title: "Infinity Rod"
 	quest.7B00000000005016.title: "Dielectric Rod"
 	quest.7B00000000005017.title: "Ender Rod"
 	quest.7B00000000005019.title: "Shark Tooth"
@@ -2316,12 +2311,6 @@
 	]
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
-	chapter.6300000000000000.quest_desc: [
-		"Related machines form branches. Independent blocks are placed separately."
-		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
-	]
-	chapter.6300000000000000.subtitle: "Machines and useful blocks"
-	chapter.6300000000000000.title: "Ender IO"
 	quest.61007F7CC4BF1105.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
 	]
@@ -2618,47 +2607,4 @@
 	quest.62EAC8800B926619.title: "Pump"
 	quest.62EB2969EF64354C.title: "Assembler"
 	quest.62F43E7EF07E2B23.title: "Placer Block"
-	quest.6300E40814E88A6C.title: "Wired Charger"
-	quest.63019C4946F1DDFF.title: "Attractor Obelisk"
-	quest.63052FFBCF769562.title: "XP Vacuum"
-	quest.6311CEDD56828B81.title: "XP Obelisk"
-	quest.63178A38FCDB5207.title: "SAG Mill"
-	quest.6317A5173351A438.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.6317A5173351A438.title: "Capacitor Bank"
-	quest.6317A5B30F341AFC.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.6317A5B30F341AFC.title: "Fluid Tank"
-	quest.6323CADE3F8D108B.title: "Relocator Obelisk"
-	quest.633D452113AEF34F.title: "Vacuum Chest"
-	quest.6346FE9A2642A491.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.6346FE9A2642A491.title: "Photovoltaic Module"
-	quest.634B4641B2520062.title: "Stirling Generator"
-	quest.634C23AC5C473113.title: "Alloy Smelter"
-	quest.634ED2803215557F.title: "Soul Engine"
-	quest.6361D034B2BC2974.title: "Travel Anchor"
-	quest.6366E6EAE1CA85DE.title: "Weather Obelisk"
-	quest.636B6097826C5DEF.title: "Wireless Charger"
-	quest.636F4F9A042E545F.title: "Slice'N'Splice"
-	quest.637E4592CF7E839C.title: "Enchanter"
-	quest.638207EBBCE6F621.title: "Soul Binder"
-	quest.63849B0A82BCC81B.title: "Aversion Obelisk"
-	quest.63995789250DE76D.title: "Farming Station"
-	quest.63B7CB7BA974AC20.title: "Niard"
-	quest.63BD300DA3334F80.title: "Powered Spawner"
-	quest.63C87D5448554BCF.title: "Mind Killer"
-	quest.63CCB2EDC60D9E02.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.63CCB2EDC60D9E02.title: "Wireless Antenna"
-	quest.63CEA05F6B3D2B8B.title: "Crafter"
-	quest.63D5B4D0E822D9D9.title: "Drain"
-	quest.63DAE72B8F9EE1E0.title: "Inhibitor Obelisk"
-	quest.63E4E6BDC45E6B1E.title: "Painting Machine"
-	quest.63FC85CD4A75CD42.title: "VAT"
-	quest.63FE8770552C6AA9.title: "Impulse Hopper"
 }

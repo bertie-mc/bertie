@@ -13677,34 +13677,6 @@
 			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
 			y: -6.0d
-			x: 22.5d
-			id: "7B00000000005014"
-			icon: { id: "enderio:experience_rod" }
-			tasks: [{
-				id: "7B00000001005014"
-				count: 1L
-				item: { count: 1 id: "enderio:experience_rod" }
-				type: "item"
-			}]
-		}
-		{
-			hide_dependency_lines: true
-			dependencies: ["7B0000000000030D"]
-			y: -6.0d
-			x: 24.0d
-			id: "7B00000000005015"
-			icon: { id: "enderio:infinity_rod" }
-			tasks: [{
-				id: "7B00000001005015"
-				count: 1L
-				item: { count: 1 id: "enderio:infinity_rod" }
-				type: "item"
-			}]
-		}
-		{
-			hide_dependency_lines: true
-			dependencies: ["7B0000000000030D"]
-			y: -6.0d
 			x: 25.5d
 			id: "7B00000000005016"
 			icon: { id: "powah:dielectric_rod" }

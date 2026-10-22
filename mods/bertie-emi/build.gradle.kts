@@ -15,7 +15,6 @@ dependencies {
     compileOnly(deps.ironsSpellsNSpellbooks)
     compileOnly(deps.forbiddenArcanus)
     jarJarCompileOnly(deps.terraCurio)
-    compileOnly(deps.enderio)
     compileOnly(deps.malum)
     compileOnly(deps.lodestonelib)
     compileOnly(deps.l2library)
@@ -47,7 +46,6 @@ dependencies {
     compileOnly(deps.advancedLootInfo)
 
     testImplementation(deps.emi)
-    testImplementation(deps.enderio)
 
     clienttestRuntimeOnly(deps.emi)
     clienttestRuntimeOnly(deps.forbiddenArcanus)

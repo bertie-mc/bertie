@@ -34,14 +34,6 @@
       "required": false
     },
     {
-      "id": "enderio:experience_rod",
-      "required": false
-    },
-    {
-      "id": "enderio:infinity_rod",
-      "required": false
-    },
-    {
       "id": "powah:dielectric_rod",
       "required": false
     },

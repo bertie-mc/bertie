@@ -24,19 +24,7 @@ class PartCatalogTest {
                         "neutronium"),
                 PartCatalog.inSlot(0).stream().map(PartCatalog.Part::key).toList());
         assertEquals(
-                List.of(
-                        "stick",
-                        "fishing",
-                        "chain",
-                        "bone",
-                        "breeze",
-                        "dark",
-                        "blaze",
-                        "end",
-                        "experience",
-                        "infinity",
-                        "dielectric",
-                        "ender"),
+                List.of("stick", "fishing", "chain", "bone", "breeze", "dark", "blaze", "end", "dielectric", "ender"),
                 PartCatalog.inSlot(1).stream().map(PartCatalog.Part::key).toList());
         assertEquals(23, PartCatalog.inSlot(2).size());
         assertEquals(18, PartCatalog.inSlot(3).size());

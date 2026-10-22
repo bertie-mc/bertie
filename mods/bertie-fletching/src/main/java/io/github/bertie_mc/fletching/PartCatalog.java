@@ -40,8 +40,6 @@ public final class PartCatalog {
             new Part(1, "dark", "born_in_chaos_v1:dark_rod", "blaze_rod", 7751274, 0f, 0f),
             new Part(1, "blaze", "minecraft:blaze_rod", "blaze_rod", -1, 0f, 0f),
             new Part(1, "end", "minecraft:end_rod", "end_rod", -1, 0f, 0f),
-            new Part(1, "experience", "enderio:experience_rod", "end_rod", 11001704, 0f, 0f),
-            new Part(1, "infinity", "enderio:infinity_rod", "end_rod", 8018833, 0f, 0f),
             new Part(1, "dielectric", "powah:dielectric_rod", "stick", 10778798, 0f, 0f),
             new Part(1, "ender", "enigmaticlegacyplus:ender_rod", "end_rod", 7458998, 0f, 0f),
             new Part(2, "flint", "minecraft:flint", "flint", -1, 0f, 0f),

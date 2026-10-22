@@ -71,6 +71,7 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 - **Baby wither skeletons** (`BabyWitherSkeletonSpeed`, `BabyWitherSkeletonOddsMixin`) â€” Tiny
   Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
+- **End Veil brewing** — Awkward Potion plus Forbidden & Arcanus's Ender Pearl Fragment produces Better End's Potion of End Veil.
 - **Removed items** (`RemovedItems`) â€” items withdrawn from the pack's progression.
 - **Shield progression** (`compat/ShieldRules`) — offhand armor and speed modifiers, the
   Shield of the Deep's breathing stance and 30% reflection against wet attackers, and

@@ -31,8 +31,6 @@ Components are listed in their crafting order. Item IDs identify the actual ingr
 | Dark Rod | `born_in_chaos_v1:dark_rod` | Creates damage share link. |
 | Blaze Rod | `minecraft:blaze_rod` | -30% projectile resistance for 10s. |
 | End Rod | `minecraft:end_rod` | Ricochet. |
-| Experience Rod | `enderio:experience_rod` | 2× XP. |
-| Infinity Rod | `enderio:infinity_rod` | Phase through blocks. |
 | Dielectric Rod | `powah:dielectric_rod` | Homing. |
 | Ender Rod | `enigmaticlegacyplus:ender_rod` | Homing, 3 ricochets, phase through blocks and shields. |
 

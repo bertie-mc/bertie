@@ -41,8 +41,6 @@ class MaterialLayersTest {
             var json = com.google.gson.JsonParser.parseString(new String(stream.readAllBytes(), StandardCharsets.UTF_8))
                     .getAsJsonObject();
             assertEquals(
-                    "2\u00d7 XP.", json.get("bertiefletching.part.1.experience").getAsString());
-            assertEquals(
                     "+20% arrow speed, -20% gravity.",
                     json.get("bertiefletching.part.0.emu").getAsString());
         }

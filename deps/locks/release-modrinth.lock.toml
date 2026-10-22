@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "2f2c0c2fa121b6d84f7ad2d949e36d50779a69621862b181eb0a114c1044a05e"
+inputs-hash = "27c54506b819939943279b04ea8cbb6b5d4c9f70601d5642777406f498d141ab"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -456,14 +456,6 @@ mod = "modrinth:705gWllI:S6Q6duUj"
 [components."end-remastered-additions"]
 any = "modrinth:z3QkIKOR:vxsfpqwm"
 mod = "modrinth:z3QkIKOR:vxsfpqwm"
-
-[components."enderio"]
-any = "modrinth:49ZofO4f:Tfs8aJPH"
-mod = "modrinth:49ZofO4f:Tfs8aJPH"
-
-[components."enderio-endergy"]
-any = "modrinth:TcYlOhqA:rr1QeaKo"
-mod = "modrinth:TcYlOhqA:rr1QeaKo"
 
 [components."enderman-overhaul"]
 any = "modrinth:Lq6ojcWv:TH9YXp9r"
@@ -2295,26 +2287,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = []
-
-[artifacts."modrinth:49ZofO4f:Tfs8aJPH"]
-name = "enderio"
-component = "enderio"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "49ZofO4f"
-version = "Tfs8aJPH"
-filename = "enderio-8.2.11-beta.jar"
-project-id = "49ZofO4f"
-version-id = "Tfs8aJPH"
-provides = ["enderio"]
-bundled-provides = ["endercore", "enderio_modded_conduits"]
-required = []
-optional = [{ "missing" = "ftbultimine", "mod-id" = "ftbultimine", "version-range" = "[2101.1.7,2102)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:Ce6I4WUE:5KzzycBT", "mod-id" = "mekanism", "version-range" = "[10.7.0,)", "side" = "both", "origin" = "archive" }, { "missing" = "ae2", "mod-id" = "ae2", "version-range" = "[19.0.23-beta,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:KDvYkUg3:lHHiI26k", "mod-id" = "refinedstorage", "version-range" = "[2.0.0-beta.1,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
 [artifacts."modrinth:4A86JsDZ:BAUwDzXj"]
 name = "tslatentitystatus"
@@ -6070,26 +6042,6 @@ required = [{ "artifact" = "modrinth:KDvYkUg3:lHHiI26k", "mod-id" = "refinedstor
 optional = []
 incompatible = []
 bundled = []
-integrations = []
-
-[artifacts."modrinth:TcYlOhqA:rr1QeaKo"]
-name = "enderio-endergy"
-component = "enderio-endergy"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "TcYlOhqA"
-version = "rr1QeaKo"
-filename = "enderio_endergy-8.0.1-alpha.jar"
-project-id = "TcYlOhqA"
-version-id = "rr1QeaKo"
-provides = ["enderio_endergy"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:49ZofO4f:Tfs8aJPH", "mod-id" = "enderio", "version-range" = "[8.2.6-beta,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = [{ "artifact" = "modrinth:49ZofO4f:Tfs8aJPH", "mod-id" = "endercore", "version-range" = "[8.2.6-beta,)", "side" = "both", "origin" = "archive" }]
 integrations = []
 
 [artifacts."modrinth:TdN6LxjM:3lQWjtXT"]

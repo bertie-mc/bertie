@@ -16,7 +16,6 @@ import io.github.bertie_mc.emi.integration.cognition.CognitionEmiModule;
 import io.github.bertie_mc.emi.integration.crabbersdelight.CrabbersDelightEmiModule;
 import io.github.bertie_mc.emi.integration.create.CreateEmiModule;
 import io.github.bertie_mc.emi.integration.dungeonsdelight.DungeonsDelightEmiModule;
-import io.github.bertie_mc.emi.integration.enderio.EnderIOEmiModule;
 import io.github.bertie_mc.emi.integration.enigmaticlegacyplus.EnigmaticLegacyPlusEmiModule;
 import io.github.bertie_mc.emi.integration.expandeddelight.ExpandedDelightEmiModule;
 import io.github.bertie_mc.emi.integration.farmersdelight.FarmersDelightDuplicateEmiModule;
@@ -66,7 +65,6 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("irons_spellbooks", () -> IronsSpellbooksEmiModule.register(registry));
         success &= run("forbidden_arcanus", () -> ForbiddenArcanusEmiModule.register(registry));
         success &= run("terra_curio", () -> TerraCurioEmiModule.register(registry));
-        success &= run("enderio", () -> EnderIOEmiModule.register(registry));
         success &= run("malum", () -> MalumEmiModule.register(registry));
         success &= run("dungeonsdelight", () -> DungeonsDelightEmiModule.register(registry));
         success &= run("expandeddelight", () -> ExpandedDelightEmiModule.register(registry));

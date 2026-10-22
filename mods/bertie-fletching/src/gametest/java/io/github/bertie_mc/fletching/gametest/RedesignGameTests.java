@@ -310,7 +310,7 @@ public final class RedesignGameTests {
     @GameTest(template = "empty", batch = "redesign_aoe")
     public static void eldritchDamageReachesOnlyTheSixBlockPathRadius(GameTestHelper h) {
         Pig inside = pig(h, 7, 3), outside = pig(h, 10, 3);
-        TestArrow arrow = arrow(h, "sun", "infinity", "eldritch", "");
+        TestArrow arrow = arrow(h, "sun", "ender", "eldritch", "");
         arrow.setDeltaMovement(0, 0, 3);
         arrow.tick();
         h.assertTrue(inside.getHealth() < 100, "target five blocks from path receives AoE");
@@ -373,6 +373,7 @@ public final class RedesignGameTests {
     public static void darkLinksShareRawHalfWithoutChainingBack(GameTestHelper h) {
         Pig a = pig(h, 1, 2), b = pig(h, 3, 2), c = pig(h, 5, 2);
         a.getAttribute(Attributes.ARMOR).setBaseValue(20);
+        attribute(c, "apothic_attributes:crit_chance", 0);
         ArrowCombatEvents.link(a, b);
         ArrowCombatEvents.link(b, c);
         a.hurt(h.getLevel().damageSources().mobAttack(c), 20);
@@ -452,7 +453,7 @@ public final class RedesignGameTests {
         h.assertBlockPresent(Blocks.AIR, new BlockPos(2, 4, 2));
         h.assertBlockPresent(Blocks.DIAMOND_ORE, new BlockPos(2, 4, 3));
         h.assertBlockPresent(Blocks.STONE, new BlockPos(2, 4, 4));
-        TestArrow phase = arrow(h, "sun", "infinity", "flint", "earth");
+        TestArrow phase = arrow(h, "sun", "ender", "flint", "earth");
         phase.setPos(h.absolutePos(new BlockPos(5, 4, 1)).getCenter());
         phase.setDeltaMovement(0, 0, 3);
         phase.tick();
@@ -498,13 +499,13 @@ public final class RedesignGameTests {
     public static void experienceBonusesMultiplyMobExperience(GameTestHelper h) {
         Pig target = pig(h, 2, 3);
         target.setHealth(5);
-        TestArrow arrow = arrow(h, "feather", "experience", "flint", "brilliance");
+        TestArrow arrow = arrow(h, "feather", "stick", "flint", "brilliance");
         var player = h.makeMockPlayer(net.minecraft.world.level.GameType.SURVIVAL);
         arrow.setOwner(player);
         arrow.hit(target);
         var event = new LivingExperienceDropEvent(target, player, 10);
         NeoForge.EVENT_BUS.post(event);
-        h.assertTrue(event.getDroppedExperience() == 30, "experience rod and refined brilliance yield 3x dropped XP");
+        h.assertTrue(event.getDroppedExperience() == 15, "refined brilliance yields 1.5x dropped XP");
         h.succeed();
     }
 

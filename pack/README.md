@@ -24,7 +24,7 @@ book and spyglass also craft a Field Guide item.
 
 ## Technology quests
 
-Mekanism, Oritech and Ender IO have separate machine chapters, including their installed
+Mekanism and Oritech have separate machine chapters, including their installed
 addons. Capacity and throughput upgrades count toward one base-machine objective.
 Multiblock components stay in their structure quest. Links follow the nearest manufacturing
 machine in the original construction recipes, with recycling loops and transitive duplicates

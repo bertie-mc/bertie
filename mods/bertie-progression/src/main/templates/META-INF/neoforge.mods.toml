@@ -233,12 +233,6 @@ versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
 
-[[dependencies.${mod_id}]]
-modId="enderio"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
 
 [[dependencies.${mod_id}]]
 modId="hooked"
