@@ -243,6 +243,24 @@ def apply_anvil_recipes(write, recipes, off):
 
 
 def apply_anvil_progression(write, recipes, off):
+    for form in ("ingot", "block"):
+        for variant in ("base", "bonus_1", "bonus_2"):
+            write(f"data/anvilcraft/recipe/super_heating/royal_steel_{form}_{variant}.json", off)
+    write("data/anvilcraft/recipe/super_heating/royal_steel_ingot_base.json", {
+        "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": mod}
+                                for mod in ("anvilcraft", "forbidden_arcanus", "malum")],
+        "type": "anvilcraft:super_heating",
+        "ingredients": [{"items": "forbidden_arcanus:obsidiansteel_ingot", "count": 2},
+                        {"items": "malum:refined_soulstone"}, {"items": "minecraft:emerald"},
+                        {"items": "malum:refined_brilliance"}],
+        "results": [{"id": "anvilcraft:royal_steel_ingot", "count": 1}]})
+    for variant in ("biological", "electrical"):
+        path = f"data/anvilcraft/recipe/heliostats_{variant}.json"
+        heliostats = copy.deepcopy(recipes[path])
+        heliostats["key"]["S"] = {"item": "berlordscarving:silver_big_slate"}
+        heliostats["neoforge:conditions"] = [
+            {"type": "neoforge:mod_loaded", "modid": mod} for mod in ("anvilcraft", "berlordscarving")]
+        write(path, heliostats)
     resin = copy.deepcopy(recipes["data/anvilcraft/recipe/cooking/hardend_resin.json"])
     resin["ingredients"][0]["count"] = 4
     write("data/anvilcraft/recipe/cooking/hardend_resin.json", resin)

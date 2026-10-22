@@ -13,7 +13,7 @@
       "item": "minecraft:iron_block"
     },
     "S": {
-      "tag": "c:plates/silver"
+      "item": "berlordscarving:silver_big_slate"
     }
   },
   "pattern": [
@@ -27,11 +27,12 @@
   },
   "neoforge:conditions": [
     {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:tag_empty",
-        "tag": "c:plates/silver"
-      }
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
     }
   ]
 }

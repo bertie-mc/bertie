@@ -210,6 +210,10 @@ AnvilCraft's hammer, processing quantities and lightning magnet source follow
 from Pigment Pedestal through the hammer and processing stations, including the
 Geode–Topaz–Lightning Rod–Nickel Block–Hollow Magnet Block chain.
 
+Spirit Catalyzer uses Malum's original Spirit Infusion recipe: a Twisted Rock Item
+Pedestal, four Tainted Rock, one Ether and four Twisted Rock, with eight Infernal and eight
+Aerial spirits. The legacy Onyx/Hallowed Gold/Brass override is withdrawn.
+
 Netherite Mage smithing accepts matching pieces from ten Tier-5 families: Supreme Witch,
 Alchemist Supreme, Creaking, Crystal Arachnid, Frostbite Hunter, Engineer, Pharaoh,
 Cursium Mage, Nautilus Knight and Bloom Stone. Cursium Mage's winged chest is also eligible.

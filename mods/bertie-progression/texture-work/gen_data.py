@@ -1068,13 +1068,6 @@ for _piece in ["helmet", "chestplate", "leggings", "boots"]:
     for _set in ["wooden", "bone"]:
         write(f"data/immersive_armors/recipe/{_set}_{_piece}.json", DISABLED)
 
-# Malum: the pylon override was dropped with the resonance witness; catalyzer becomes the
-# authored R31A2
-write("data/malum/recipe/spirit_infusion/spirit_catalyzer.json",
-      infusion("pastel:onyx_shard", 1,
-               [("malum:hallowed_gold_ingot", 4), ("create:brass_sheet", 4)],
-               ALL8x8, "malum:spirit_catalyzer"))
-
 # God of War chapter: both spellbook entry recipes replace the
 # stock 3x3 recipes with 2x2 pre-table shapes.
 # Flimsy Journal (copper spell book): Copper Ingot + Leather over String + Paper.

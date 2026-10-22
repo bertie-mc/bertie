@@ -40,6 +40,15 @@ and Topaz-triggered lightning.
 Mechanical Drill is exclusive to a five-by-five Mechanical Crafter wall, using Tungsten
 Nuggets, Malignant Pewter Nuggets, Andesite Alloy and Andesite Casings.
 
+Royal Steel has one superheating alloy recipe: two Obsidiansteel Ingots, one Refined
+Soulstone, one Emerald and one Refined Brilliance produce one Royal Steel Ingot. The
+bonus and direct-block alloy recipes are disabled; ingot/block/nugget storage conversions
+remain available.
+
+Both Heliostat crafting patterns use four Large Silver Slates and return eight Heliostats.
+The biological pattern uses a Sunflower; the electrical pattern uses a Circuit Board and
+Daylight Detector. Each retains its Iron Block base.
+
 Beef Mushroom Stew uses a Farmer's Delight Cooking Pot with beef, both mushrooms, and a bowl
 in the container slot. It consumes no water. Spider-eye fermentation by bulging is disabled.
 
