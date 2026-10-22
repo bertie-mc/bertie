@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:brown_button",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_button",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_button",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_button",
+      "required": false
+    }
+  ]
+}

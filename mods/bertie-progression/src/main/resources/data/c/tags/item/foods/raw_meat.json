@@ -11,10 +11,6 @@
       "required": false
     },
     {
-      "id": "pastel:lizard_meat",
-      "required": false
-    },
-    {
       "id": "antarchy:raw_venison",
       "required": false
     },

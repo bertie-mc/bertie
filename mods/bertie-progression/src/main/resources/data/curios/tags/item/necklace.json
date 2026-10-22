@@ -178,22 +178,6 @@
       "required": false
     },
     {
-      "id": "pastel:greater_potion_pendant",
-      "required": false
-    },
-    {
-      "id": "pastel:laurels_of_serenity",
-      "required": false
-    },
-    {
-      "id": "pastel:lesser_potion_pendant",
-      "required": false
-    },
-    {
-      "id": "pastel:shieldgrasp_amulet",
-      "required": false
-    },
-    {
       "id": "pastel:totem_pendant",
       "required": false
     },

@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    "#pastel:gemstone_ores",
+    "#pastel:azurite_ores",
+    "#pastel:shimmerstone_ores",
+    "#pastel:malachite_ores",
+    {
+      "id": "pastel:stratine_ore",
+      "required": false
+    }
+  ]
+}

@@ -4548,28 +4548,14 @@
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:azure_dike_ring"
-			}
 			id: "4C00000000000160"
-			tasks: [{
-				id: "4C00000001000160"
-				item: { count: 1, id: "pastel:azure_dike_ring" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 36.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:heartsingers_reward"
-			}
 			id: "4C00000000000161"
-			tasks: [{
-				id: "4C00000001000161"
-				item: { count: 1, id: "pastel:heartsingers_reward" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 37.0d
 			y: 5.0d
 		}
@@ -4587,41 +4573,20 @@
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:ring_of_aerial_grace"
-			}
 			id: "4C00000000000163"
-			tasks: [{
-				id: "4C00000001000163"
-				item: { count: 1, id: "pastel:ring_of_aerial_grace" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 39.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:ring_of_denser_steps"
-			}
 			id: "4C00000000000164"
-			tasks: [{
-				id: "4C00000001000164"
-				item: { count: 1, id: "pastel:ring_of_denser_steps" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 40.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:ring_of_pursuit"
-			}
 			id: "4C00000000000165"
-			tasks: [{
-				id: "4C00000001000165"
-				item: { count: 1, id: "pastel:ring_of_pursuit" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 41.0d
 			y: 5.0d
 		}
@@ -5380,54 +5345,26 @@
 			y: 4.0d
 		}
 		{
-			icon: {
-				id: "pastel:greater_potion_pendant"
-			}
 			id: "4C000000000001A0"
-			tasks: [{
-				id: "4C000000010001A0"
-				item: { count: 1, id: "pastel:greater_potion_pendant" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 55.0d
 			y: 4.0d
 		}
 		{
-			icon: {
-				id: "pastel:laurels_of_serenity"
-			}
 			id: "4C000000000001A1"
-			tasks: [{
-				id: "4C000000010001A1"
-				item: { count: 1, id: "pastel:laurels_of_serenity" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 56.0d
 			y: 4.0d
 		}
 		{
-			icon: {
-				id: "pastel:lesser_potion_pendant"
-			}
 			id: "4C000000000001A2"
-			tasks: [{
-				id: "4C000000010001A2"
-				item: { count: 1, id: "pastel:lesser_potion_pendant" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 47.0d
 			y: 5.0d
 		}
 		{
-			icon: {
-				id: "pastel:shieldgrasp_amulet"
-			}
 			id: "4C000000000001A3"
-			tasks: [{
-				id: "4C000000010001A3"
-				item: { count: 1, id: "pastel:shieldgrasp_amulet" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 48.0d
 			y: 5.0d
 		}
@@ -6069,28 +6006,14 @@
 			y: 4.0d
 		}
 		{
-			icon: {
-				id: "pastel:aether_graced_nectar_gloves"
-			}
 			id: "4C000000000001D5"
-			tasks: [{
-				id: "4C000000010001D5"
-				item: { count: 1, id: "pastel:aether_graced_nectar_gloves" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 64.0d
 			y: 4.0d
 		}
 		{
-			icon: {
-				id: "pastel:gloves_of_dawns_grasp"
-			}
 			id: "4C000000000001D6"
-			tasks: [{
-				id: "4C000000010001D6"
-				item: { count: 1, id: "pastel:gloves_of_dawns_grasp" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 65.0d
 			y: 4.0d
 		}
@@ -7239,15 +7162,8 @@
 			y: 20.0d
 		}
 		{
-			icon: {
-				id: "pastel:azure_dike_belt"
-			}
 			id: "4C0000000000022F"
-			tasks: [{
-				id: "4C0000000100022F"
-				item: { count: 1, id: "pastel:azure_dike_belt" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 24.0d
 			y: 20.0d
 		}
@@ -8175,15 +8091,8 @@
 			y: 19.0d
 		}
 		{
-			icon: {
-				id: "pastel:glow_vision_goggles"
-			}
 			id: "4C00000000000277"
-			tasks: [{
-				id: "4C00000001000277"
-				item: { count: 1, id: "pastel:glow_vision_goggles" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 63.0d
 			y: 19.0d
 		}
@@ -8734,15 +8643,8 @@
 			y: 25.0d
 		}
 		{
-			icon: {
-				id: "pastel:azuresque_dike_core"
-			}
 			id: "4C000000000002A8"
-			tasks: [{
-				id: "4C000000010002A8"
-				item: { count: 1, id: "pastel:azuresque_dike_core" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 45.0d
 			y: 25.0d
 		}
@@ -8773,28 +8675,14 @@
 			y: 25.0d
 		}
 		{
-			icon: {
-				id: "pastel:artists_palette"
-			}
 			id: "4C000000000002AB"
-			tasks: [{
-				id: "4C000000010002AB"
-				item: { count: 1, id: "pastel:artists_palette" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 51.0d
 			y: 25.0d
 		}
 		{
-			icon: {
-				id: "pastel:pigment_palette"
-			}
 			id: "4C000000000002AC"
-			tasks: [{
-				id: "4C000000010002AC"
-				item: { count: 1, id: "pastel:pigment_palette" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 52.0d
 			y: 25.0d
 		}

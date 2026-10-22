@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:stripped_light_blue_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_light_blue_wood",
+      "required": false
+    }
+  ]
+}

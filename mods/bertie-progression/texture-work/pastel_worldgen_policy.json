@@ -1,0 +1,18 @@
+{
+  "biome_modifiers": [
+    "colored_tree_patch",
+    "paltaeria_ore",
+    "dragon_fossil_overworld_exposed"
+  ],
+  "configured_features": [
+    "colored_tree_patch",
+    "paltaeria_ore"
+  ],
+  "empty_input_recipes": [
+    "data/pastel/recipe/blasting/ore/citrine_ores.json",
+    "data/pastel/recipe/blasting/ore/topaz_ores.json",
+    "data/pastel/recipe/smelting/ore/citrine_ores.json",
+    "data/pastel/recipe/smelting/ore/topaz_ores.json",
+    "data/pastel/recipe/titration_barrel/incandescent_amalgam_doom.json"
+  ]
+}

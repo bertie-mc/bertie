@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:pure_certus_quartz_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_fluix_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_globette_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_globette_nether_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_globette_end_block",
+      "required": false
+    }
+  ]
+}

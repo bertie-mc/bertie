@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:amethyst_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_glass",
+      "required": false
+    }
+  ]
+}

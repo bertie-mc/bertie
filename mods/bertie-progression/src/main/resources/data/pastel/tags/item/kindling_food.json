@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:jadeite_petals",
+      "required": false
+    }
+  ]
+}

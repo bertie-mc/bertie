@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:shulker_cyan_head",
+      "required": false
+    }
+  ]
+}

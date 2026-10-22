@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:small_amethyst_bud",
+      "required": false
+    },
+    {
+      "id": "minecraft:medium_amethyst_bud",
+      "required": false
+    },
+    {
+      "id": "minecraft:large_amethyst_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_moonstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_moonstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_moonstone_bud",
+      "required": false
+    }
+  ]
+}

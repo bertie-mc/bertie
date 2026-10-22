@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:torchflower_seeds",
+      "required": false
+    }
+  ]
+}

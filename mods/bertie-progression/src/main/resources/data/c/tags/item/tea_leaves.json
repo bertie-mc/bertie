@@ -1,0 +1,19 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:jadeite_petals",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tea_leaves",
+      "required": false
+    },
+    "#c:tea_leaves/green",
+    "#c:tea_leaves/black",
+    "#c:tea_leaves/white",
+    "#c:tea_leaves/oolong",
+    "#c:tea_leaves/dark",
+    "#c:tea_leaves/yellow"
+  ]
+}

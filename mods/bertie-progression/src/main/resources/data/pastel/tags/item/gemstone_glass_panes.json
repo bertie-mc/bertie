@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:amethyst_glass_pane",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_glass_pane",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_glass_pane",
+      "required": false
+    }
+  ]
+}

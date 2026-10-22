@@ -116,14 +116,6 @@
     {
       "id": "l2hostility:platinum_star",
       "required": false
-    },
-    {
-      "id": "pastel:aether_graced_nectar_gloves",
-      "required": false
-    },
-    {
-      "id": "pastel:gloves_of_dawns_grasp",
-      "required": false
     }
   ]
 }

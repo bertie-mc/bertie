@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:milk_bucket",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:goat_milk_bucket",
+      "required": false
+    },
+    {
+      "id": "minersdelight:milk_cup",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:polished_basalt_button",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_tiles",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_tile_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_tile_wall",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_tile_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_basalt_bricks",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_basalt_tiles",
+      "required": false
+    },
+    {
+      "id": "pastel:smooth_basalt_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:smooth_basalt_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt_pillar",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt_crest",
+      "required": false
+    },
+    {
+      "id": "pastel:chiseled_polished_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:notched_polished_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_basalt_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_bricks",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_brick_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_chiseled_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_chiseled_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_chiseled_basalt",
+      "required": false
+    }
+  ]
+}

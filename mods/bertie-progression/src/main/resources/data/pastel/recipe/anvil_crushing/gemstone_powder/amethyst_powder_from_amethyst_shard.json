@@ -1,18 +1,17 @@
 {
-  "type": "pastel:anvil_crushing",
-  "ingredient": [
+  "neoforge:conditions": [
     {
-      "item": "minecraft:amethyst_shard"
+      "type": "neoforge:false"
     }
   ],
-  "crushedItemsPerPointOfDamage": 0.6,
-  "experience": 0.4,
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
   "result": {
-    "id": "pastel:amethyst_powder",
+    "id": "minecraft:stone",
     "count": 1
-  },
-  "particleEffectIdentifier": "explosion",
-  "soundEventIdentifier": "block.small_amethyst_bud.break",
-  "group": "gemstone_crushing",
-  "required_advancement": "pastel:hidden/collect_shards/amethyst"
+  }
 }

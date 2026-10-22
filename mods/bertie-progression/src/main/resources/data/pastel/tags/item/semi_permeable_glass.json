@@ -1,0 +1,29 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:tinted_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_semi_permeable_glass",
+      "required": false
+    }
+  ]
+}

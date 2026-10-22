@@ -56,22 +56,6 @@
       "required": false
     },
     {
-      "id": "pastel:triple_meat_pot_stew",
-      "required": false
-    },
-    {
-      "id": "pastel:dragonbone_broth",
-      "required": false
-    },
-    {
-      "id": "pastel:lizard_meat",
-      "required": false
-    },
-    {
-      "id": "pastel:cooked_lizard_meat",
-      "required": false
-    },
-    {
       "id": "antarchy:raw_venison",
       "required": false
     },

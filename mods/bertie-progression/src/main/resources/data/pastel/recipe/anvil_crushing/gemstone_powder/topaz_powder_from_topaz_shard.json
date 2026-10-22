@@ -1,18 +1,17 @@
 {
-  "type": "pastel:anvil_crushing",
-  "ingredient": [
+  "neoforge:conditions": [
     {
-      "item": "pastel:topaz_shard"
+      "type": "neoforge:false"
     }
   ],
-  "crushedItemsPerPointOfDamage": 0.6,
-  "experience": 0.4,
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
   "result": {
-    "id": "pastel:topaz_powder",
+    "id": "minecraft:stone",
     "count": 1
-  },
-  "particleEffectIdentifier": "explosion",
-  "soundEventIdentifier": "pastel:block.small_topaz_bud.break",
-  "group": "gemstone_crushing",
-  "required_advancement": "pastel:hidden/collect_shards/topaz"
+  }
 }

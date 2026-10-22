@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:stripped_blue_log",
+      "required": false
+    }
+  ]
+}

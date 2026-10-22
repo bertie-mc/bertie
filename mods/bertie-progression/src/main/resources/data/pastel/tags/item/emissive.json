@@ -1,0 +1,69 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:shimmerstone_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:knowledge_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:stardust",
+      "required": false
+    },
+    {
+      "id": "pastel:stardust_block",
+      "required": false
+    },
+    {
+      "id": "pastel:star_fragment",
+      "required": false
+    },
+    {
+      "id": "pastel:incandescent_amalgam",
+      "required": false
+    },
+    {
+      "id": "pastel:jadeite_petals",
+      "required": false
+    },
+    {
+      "id": "pastel:jadeite_lotus_flower",
+      "required": false
+    },
+    {
+      "id": "pastel:frostbite_essence",
+      "required": false
+    },
+    {
+      "id": "pastel:frostbite_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:incandescent_essence",
+      "required": false
+    },
+    {
+      "id": "pastel:blazing_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:aether_vestiges",
+      "required": false
+    },
+    {
+      "id": "pastel:nectar_lance",
+      "required": false
+    }
+  ]
+}

@@ -53,6 +53,10 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Systems
 
+The Pastel content selection removes unused items while retaining current Bertie integrations
+and Imbrifer resources. Overworld colored-tree patches, Paltaeria Ore and exposed dragon fossils
+are disabled. Removed-item quests retain their nodes as blank placeholders.
+
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.
   See [Combat integration](docs/combat.md) for formulas, coverage and retained exceptions.

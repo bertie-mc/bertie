@@ -1,19 +1,17 @@
 {
-  "type": "minecraft:blasting",
-  "ingredient": [
+  "neoforge:conditions": [
     {
-      "item": "pastel:pure_zinc"
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "id": "magitech:zinc_ingot"
-  },
-  "experience": 0.5,
-  "cookingtime": 100,
-  "neoforge:conditions": [
-    {
-      "type": "pastel:integration_pack_active",
-      "integration_pack": "create"
-    }
-  ]
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

@@ -5085,7 +5085,7 @@ def _strip_loot(node, gone):
         return [x for x in (_strip_loot(v, gone) for v in node) if x is not None]
     if not isinstance(node, dict):
         return node
-    if node.get("name") in gone or node.get("item") in gone:
+    if any(isinstance(node.get(key), str) and node[key] in gone for key in ("name", "item")):
         return None
     out = {}
     for k, v in node.items():
@@ -5599,6 +5599,10 @@ for _directory, _, _files in os.walk(os.path.join(RES, "data")):
             _normalized += 1
 print(f"  authored merges: {_normalized} data files normalized")
 
+with open(os.path.join(ROOT, "texture-work", "pastel_worldgen_policy.json"), encoding="utf-8") as _policy_file:
+    for _empty_recipe in json.load(_policy_file).get("empty_input_recipes", []):
+        write(_empty_recipe, DISABLED)
+
 if _scan_ok:
     from recipe_cleanup import repair_ingredients
     repair_ingredients(RES, ROOT, write, written, _recipe_src, _tag_src, _block_tag_src,
@@ -5906,6 +5910,14 @@ write("assets/bertieprogression/lang/en_us.json", lang)
 # A data override only wins if this mod loads AFTER the one it overrides, and when it does not,
 # nothing complains - the file is just ignored. Magitech's bench recipes and TerraCurio's disables
 # both shipped broken that way, so the manifest is checked against what we actually write.
+with open(os.path.join(ROOT, "texture-work", "pastel_worldgen_policy.json"), encoding="utf-8") as _policy_file:
+    _pastel_worldgen_policy = json.load(_policy_file)
+for _feature in _pastel_worldgen_policy["biome_modifiers"]:
+    write(f"data/pastel/neoforge/biome_modifier/{_feature}.json", {"type": "neoforge:none"})
+for _feature in _pastel_worldgen_policy.get("configured_features", []):
+    write(f"data/pastel/worldgen/configured_feature/{_feature}.json",
+          {"type": "minecraft:no_op", "config": {}})
+
 _TOML = os.path.join(ROOT, "src", "main", "templates", "META-INF", "neoforge.mods.toml")
 _declared = set()
 for _blk in io.open(_TOML, encoding="utf-8").read().split("[[dependencies.")[1:]:

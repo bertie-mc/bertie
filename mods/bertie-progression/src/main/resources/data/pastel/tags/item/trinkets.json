@@ -1,0 +1,58 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:jeopardant",
+      "required": false
+    },
+    {
+      "id": "pastel:seven_league_boots",
+      "required": false
+    },
+    {
+      "id": "pastel:radiance_pin",
+      "required": false
+    },
+    {
+      "id": "pastel:totem_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:take_off_belt",
+      "required": false
+    },
+    {
+      "id": "pastel:gleaming_pin",
+      "required": false
+    },
+    "#pastel:potion_pendants",
+    {
+      "id": "pastel:ashen_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:weeping_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:puff_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:whispy_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:circlet_of_arrogance",
+      "required": false
+    },
+    {
+      "id": "pastel:neat_ring",
+      "required": false
+    },
+    {
+      "id": "pastel:cotton_cloud_boots",
+      "required": false
+    }
+  ]
+}

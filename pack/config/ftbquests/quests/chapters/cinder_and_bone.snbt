@@ -613,23 +613,13 @@
 		}
 		{
 			dependencies: ["6B00000000000016"]
-			icon: {
-				id: "pastel:lime_sapling"
-			}
 			id: "6B00000000000040"
 			rewards: [{
 				id: "6B00000002000040"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:lime_sapling"
-				}
-				id: "6B00000001000040"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:colored_saplings)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Coloured Sapling\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 9.0d
 			y: -1.5d
 		}
@@ -657,67 +647,37 @@
 		}
 		{
 			dependencies: ["6B00000000000041"]
-			icon: {
-				id: "pastel:ink_flask"
-			}
 			id: "6B00000000000042"
 			rewards: [{
 				id: "6B00000002000042"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:ink_flask"
-				}
-				id: "6B00000001000042"
-				item: { count: 1, id: "pastel:ink_flask" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 9.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["6B00000000000042"]
-			icon: {
-				id: "pastel:ink_assortment"
-			}
 			id: "6B00000000000043"
 			rewards: [{
 				id: "6B00000002000043"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:ink_assortment"
-				}
-				id: "6B00000001000043"
-				item: { count: 1, id: "pastel:ink_assortment" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 9.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6B00000000000043"]
-			icon: {
-				id: "pastel:pigment_palette"
-			}
 			id: "6B00000000000044"
 			rewards: [{
 				id: "6B00000002000044"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:pigment_palette"
-				}
-				id: "6B00000001000044"
-				item: { count: 1, id: "pastel:pigment_palette" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 9.0d
 			y: -7.5d
 		}

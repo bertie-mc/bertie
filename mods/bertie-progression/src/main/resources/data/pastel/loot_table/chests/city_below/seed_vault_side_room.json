@@ -26,11 +26,6 @@
           "type": "minecraft:item",
           "name": "minecraft:bucket",
           "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:peach_cream",
-          "quality": 5
         }
       ]
     }

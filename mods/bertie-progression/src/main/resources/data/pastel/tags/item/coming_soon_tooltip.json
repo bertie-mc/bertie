@@ -1,0 +1,33 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:spectral_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:ominous_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_roots",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_log",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_heart",
+      "required": false
+    },
+    {
+      "id": "pastel:sacred_soil",
+      "required": false
+    }
+  ]
+}

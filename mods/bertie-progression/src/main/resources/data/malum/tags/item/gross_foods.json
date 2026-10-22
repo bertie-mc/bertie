@@ -1,0 +1,86 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "malum:rotting_essence",
+      "required": false
+    },
+    {
+      "id": "malum:concentrated_gluttony",
+      "required": false
+    },
+    "#dungeonsdelight:fleshes",
+    {
+      "id": "dungeonsdelight:bogged_brain",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:chicken_jockey_sandwich",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:brains_in_a_brick",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:shiokara",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:croak_monster",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:malicious_sandwich",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:ghoulash",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:haggis",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:bloated_baked_potato",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:terrine_loaf",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:salt_soaked_stew",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:soaked_skewer",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:rubaboo",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:bloody_mary",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:gyudon",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:ossobuco",
+      "required": false
+    },
+    {
+      "id": "dungeonsdelight:monster_burger",
+      "required": false
+    }
+  ]
+}

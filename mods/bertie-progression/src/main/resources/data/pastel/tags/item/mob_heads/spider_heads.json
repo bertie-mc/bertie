@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:cave_spider_head",
+      "required": false
+    }
+  ]
+}

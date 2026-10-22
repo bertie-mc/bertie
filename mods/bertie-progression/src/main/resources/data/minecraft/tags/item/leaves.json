@@ -1,0 +1,486 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "betterend:cave_bush",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_leaves",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_membrane",
+      "required": false
+    },
+    "#pastel:colored_leaves",
+    {
+      "id": "pastel:spirit_sallow_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:nephrite_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:weeping_gala_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:blue_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:lavender_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:orange_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:yellow_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:red_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:pale_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "antarchy:ouranwood_leaves",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:apple_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:cherry_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:dead_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:frosted_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_apple_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:golden_cherry_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:magenta_flower_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:orange_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:red_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "chipped:white_flower_spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:palm_leaves",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:echo_leaves",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cinnamon_leaves",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:aurum_leaves",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:nuggety_aurum_leaves",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:permafrost_leaves",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:wisewood_leaves",
+      "required": false
+    },
+    {
+      "id": "magitech:celifern_leaves",
+      "required": false
+    },
+    {
+      "id": "magitech:charcoal_birch_leaves",
+      "required": false
+    },
+    {
+      "id": "malum:runewood_leaves",
+      "required": false
+    },
+    {
+      "id": "malum:azure_runewood_leaves",
+      "required": false
+    },
+    {
+      "id": "malum:soulwood_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:rainbow_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:canopy_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mangrove_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:dark_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:time_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:transformation_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mining_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:sorting_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:thorn_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightforest:beanstalk_leaves",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:ironwood_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:oak_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:dark_oak_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:acacia_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:birch_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:azalea_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:flowering_azalea_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_leaves",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_leaves",
+      "required": false
+    }
+  ]
+}

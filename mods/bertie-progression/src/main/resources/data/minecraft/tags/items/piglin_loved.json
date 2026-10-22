@@ -1,0 +1,89 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:gilded_book",
+      "required": false
+    },
+    {
+      "id": "pastel:small_gold_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_gold_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:gold_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_golden_carrot",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_melon",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_melon_seeds",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_shooting_star",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:remnant_artifact",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:collector_medallion",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:elixir_of_vitality",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:empty_warping_lantern",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:warping_lantern",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:howling_helmet",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ravaging_claws",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:shield_of_vindication",
+      "required": false
+    },
+    {
+      "id": "minecraft:totem_of_undying",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:echoing_ward",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:ironbound_gauntlet",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:enchanting_tome",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:anchored_ender_pearl",
+      "required": false
+    }
+  ]
+}

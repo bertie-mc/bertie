@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:zombie_head",
+      "required": false
+    }
+  ]
+}

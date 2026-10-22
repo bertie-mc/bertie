@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:radiance_pin",
+      "required": false
+    },
+    {
+      "id": "pastel:gleaming_pin",
+      "required": false
+    }
+  ]
+}

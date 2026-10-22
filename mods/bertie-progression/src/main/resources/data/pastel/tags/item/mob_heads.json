@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:axolotl_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:cave_spider_head",
+      "required": false
+    },
+    {
+      "id": "pastel:glow_squid_head",
+      "required": false
+    },
+    {
+      "id": "pastel:illusioner_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_cyan_head",
+      "required": false
+    }
+  ]
+}

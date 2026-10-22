@@ -1,0 +1,29 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:brown_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_leaves",
+      "required": false
+    }
+  ]
+}

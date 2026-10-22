@@ -1,34 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
   ],
-  "type": "pastel:pedestal",
-  "tier": "simple",
-  "time": 300,
-  "experience": 1.0,
-  "colors": {
-    "pastel:cyan": 4,
-    "pastel:magenta": 4,
-    "pastel:yellow": 4,
-    "pastel:black": 0,
-    "pastel:white": 0
-  },
-  "pattern": [
-    "SGS",
-    "GPG",
-    "SGS"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
   ],
-  "key": {
-    "P": "#pastel:pigments",
-    "G": "minecraft:tinted_glass",
-    "S": "pastel:shimmerstone_gem"
-  },
   "result": {
-    "id": "pastel:ink_flask",
+    "id": "minecraft:stone",
     "count": 1
-  },
-  "required_advancement": "pastel:unlocks/items/basic_ink_storage_items"
+  }
 }

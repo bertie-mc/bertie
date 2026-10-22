@@ -1,0 +1,97 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:polished_calcite_button",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_tiles",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_tile_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_tile_wall",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_tile_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_calcite_bricks",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_calcite_tiles",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite_pillar",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite_crest",
+      "required": false
+    },
+    {
+      "id": "pastel:chiseled_polished_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:notched_polished_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_calcite_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_bricks",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_brick_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_chiseled_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_chiseled_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_chiseled_calcite",
+      "required": false
+    }
+  ]
+}
