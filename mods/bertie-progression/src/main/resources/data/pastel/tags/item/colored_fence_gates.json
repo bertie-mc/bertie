@@ -1,21 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:brown_fence_gate",
-      "required": false
-    },
-    {
-      "id": "pastel:light_blue_fence_gate",
-      "required": false
-    },
-    {
-      "id": "pastel:lime_fence_gate",
-      "required": false
-    },
-    {
-      "id": "pastel:pink_fence_gate",
-      "required": false
-    }
-  ]
+  "values": []
 }

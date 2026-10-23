@@ -53,14 +53,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:amethyst_shard"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:citrine_shard"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:topaz_shard"
         }
       ],
       "functions": [

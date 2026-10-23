@@ -2,24 +2,6 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:blood_orchid_petal"
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 2,
-            "max": 4
-          }
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 0,
         "max": 1

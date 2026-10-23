@@ -8,10 +8,6 @@
     {
       "id": "pastel:crafting_tablet",
       "required": false
-    },
-    {
-      "id": "pastel:nectardew_burgeon",
-      "required": false
     }
   ]
 }

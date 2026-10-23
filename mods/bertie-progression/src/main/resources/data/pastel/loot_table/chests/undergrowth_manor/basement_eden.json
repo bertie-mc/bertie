@@ -36,24 +36,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:pure_azurite",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 16,
-                "max": 21
-              }
-            }
-          ]
-        }
-      ]
     }
   ]
 }

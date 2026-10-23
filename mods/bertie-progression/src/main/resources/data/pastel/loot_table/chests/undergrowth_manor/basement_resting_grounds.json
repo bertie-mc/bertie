@@ -42,24 +42,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "pastel:night_salts",
           "functions": [
             {

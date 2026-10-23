@@ -1,13 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:stripped_lime_log",
-      "required": false
-    },
-    {
-      "id": "pastel:stripped_lime_wood",
-      "required": false
-    }
-  ]
+  "values": []
 }

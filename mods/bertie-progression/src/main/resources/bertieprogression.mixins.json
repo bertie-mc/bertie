@@ -24,6 +24,7 @@
     "PotionBrewingBuilderMixin",
     "RemovedEffectsMixin",
     "RemovedPotionBrewingMixin",
+    "RemovedPastelStructureMixin",
     "RemovedTippedArrowMixin",
     "SequencedAssemblyRecipeMixin",
     "VanityEntityItemPacketMixin",

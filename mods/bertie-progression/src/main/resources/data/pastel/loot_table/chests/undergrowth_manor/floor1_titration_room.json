@@ -6,24 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:purple_planks",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 8
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "pastel:mermaids_gem",
           "functions": [
             {
@@ -78,24 +60,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 8
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:glass_bottle",
           "functions": [
             {
@@ -138,12 +102,6 @@
           "type": "minecraft:item",
           "name": "minecraft:air",
           "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nectardew_burgeon",
-          "weight": 0,
-          "quality": 1
         }
       ]
     },

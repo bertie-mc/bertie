@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:cabbage",
+      "required": false
+    },
+    {
+      "id": "minecraft:carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:dandelion",
+      "required": false
+    }
+  ]
+}

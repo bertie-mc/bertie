@@ -43,10 +43,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:shimmerstone_gem"
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:gold_nugget"
         },
         {

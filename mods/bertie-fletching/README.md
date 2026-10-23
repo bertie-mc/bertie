@@ -1,6 +1,6 @@
 # Bertie Fletching
 
-Extends Fletchery Expanded 1.0.5 on NeoForge 1.21.1 with an ordered catalogue of 12 fletching materials, 10 shafts, 23 tips and 18 extras. See [Components](COMPONENTS.md) for ingredient IDs and descriptions.
+Extends Fletchery Expanded 1.0.5 on NeoForge 1.21.1 with an ordered catalogue of 11 fletching materials, 10 shafts, 22 tips and 18 extras. See [Components](COMPONENTS.md) for ingredient IDs and descriptions. Dragon Egg temporarily supplies the damage-resonance tip.
 
 Included in Bertie's standard client and server packs. Stable releases and compatibility notes are listed in the [changelog](CHANGELOG.md).
 
@@ -23,7 +23,7 @@ New arrows store `bertieVersion=2`. The redesigned projectile path retains bow d
 - Resonant feathers trace an instantaneous straight ray up to 128 blocks with unlimited entity piercing. Damage uses twice the original arrow speed, not infinite speed. Solid blocks stop rays unless the shaft phases. Resonance tips jump to up to eight distinct targets within 12 blocks, retaining 60% damage per hop.
 - Full-draw critical damage is deterministic, and launch spread changes direction without randomizing speed. Sun fire and Reinforced Echo sonic damage inherit the attack's critical roll and projectile bonuses; the secondary victim still applies its own defenses. Sonic particles cover the complete ray, including its endpoint.
 - Mnemonic hits repeat half the raw damage after two seconds. Reinforced Echo adds a sonic hit to the closest other target within 24 blocks. Heavy Core adds uncapped damage equal to the arrow's descent from its peak to the victim.
-- Permafrost freezes in place for two seconds. Frighten reverses movement input for three seconds. Blaze shafts apply 30% projectile vulnerability for ten seconds after their initial hit. Sun Glowing lasts twenty seconds. Resplendent applies Pastel's native Primordial Fire for ten seconds and launches ten blocks upward.
+- Permafrost freezes in place for two seconds. Frighten reverses movement input for three seconds. Blaze shafts apply 30% projectile vulnerability for ten seconds after their initial hit. Sun Glowing lasts twenty seconds.
 - Wind Charge affects a seven-block radius and launches targets seven blocks upward under normal gravity. TNT uses explosion power four. Earth drills up to twelve blocks, stops at `c:ores`, and skips ores when paired with phasing. Sponge removes source water within two blocks of the path. Torch trail lights expire after ten seconds.
 - Divine and Eldritch execute below 30% health and transfer loot to the shooter. Eldritch hits each entity once within six blocks of its path. Inventory overflow appears at the shooter instead of being deleted. Refined Brilliance increases mob XP drops by 50%.
 - Breeze shafts expire after fifteen seconds of flight. Other missed projectiles expire after sixty seconds of active flight.

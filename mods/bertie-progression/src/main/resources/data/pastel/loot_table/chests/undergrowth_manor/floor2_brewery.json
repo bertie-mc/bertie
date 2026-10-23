@@ -24,42 +24,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 8,
-                "max": 16
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:blood_orchid_petal",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 7
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:golden_carrot",
           "functions": [
             {

@@ -1,21 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:brown_slab",
-      "required": false
-    },
-    {
-      "id": "pastel:light_blue_slab",
-      "required": false
-    },
-    {
-      "id": "pastel:lime_slab",
-      "required": false
-    },
-    {
-      "id": "pastel:pink_slab",
-      "required": false
-    }
-  ]
+  "values": []
 }

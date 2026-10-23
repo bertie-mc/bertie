@@ -1,4 +1,29 @@
 {
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FSF",
+    "RBR",
+    "FSF"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "S": {
+      "item": "minecraft:glowstone"
+    },
+    "R": {
+      "item": "malum:rotting_essence"
+    },
+    "B": {
+      "item": "minecraft:ominous_bottle"
+    }
+  },
+  "result": {
+    "id": "pastel:bottle_of_fading",
+    "count": 1
+  },
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
@@ -8,33 +33,5 @@
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "pastel:pedestal",
-  "tier": "basic",
-  "time": 400,
-  "experience": 2.0,
-  "colors": {
-    "pastel:cyan": 3,
-    "pastel:magenta": 3,
-    "pastel:yellow": 3,
-    "pastel:black": 3,
-    "pastel:white": 3
-  },
-  "pattern": [
-    "FSF",
-    "RBR",
-    "FSF"
-  ],
-  "key": {
-    "F": "minecraft:fermented_spider_eye",
-    "S": "pastel:shimmerstone_gem",
-    "R": "malum:rotting_essence",
-    "B": "minecraft:ominous_bottle"
-  },
-  "result": {
-    "id": "pastel:bottle_of_fading",
-    "count": 1
-  },
-  "skip_recipe_remainders": true,
-  "required_advancement": "pastel:unlocks/items/bottle_of_fading"
+  ]
 }

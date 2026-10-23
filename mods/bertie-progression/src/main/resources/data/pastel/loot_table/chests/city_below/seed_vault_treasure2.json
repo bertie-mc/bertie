@@ -16,17 +16,6 @@
       "functions": []
     },
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nectardew_burgeon",
-          "weight": 0,
-          "quality": 1
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 1,
         "max": 2
@@ -53,10 +42,6 @@
         {
           "type": "minecraft:item",
           "name": "pastel:doombloom_seed"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout"
         }
       ],
       "functions": [

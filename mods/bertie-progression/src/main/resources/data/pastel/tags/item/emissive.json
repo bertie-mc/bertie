@@ -2,14 +2,6 @@
   "replace": true,
   "values": [
     {
-      "id": "pastel:shimmerstone_gem",
-      "required": false
-    },
-    {
-      "id": "pastel:shimmerstone_block",
-      "required": false
-    },
-    {
       "id": "pastel:knowledge_gem",
       "required": false
     },
@@ -19,10 +11,6 @@
     },
     {
       "id": "pastel:stardust_block",
-      "required": false
-    },
-    {
-      "id": "pastel:star_fragment",
       "required": false
     },
     {

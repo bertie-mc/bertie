@@ -42,46 +42,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:black_pigment",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 3,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:yellow_pigment"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:cyan_pigment"
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 5,
-            "max": 15
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:stick",
           "functions": [
             {

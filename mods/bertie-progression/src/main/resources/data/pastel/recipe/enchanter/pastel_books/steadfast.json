@@ -1,0 +1,55 @@
+{
+  "type": "pastel:enchanter",
+  "time": 300,
+  "required_experience": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "pastel:blue_pigment"
+    },
+    {
+      "item": "pastel:blue_pigment"
+    },
+    {
+      "item": "pastel:moonstruck_nectar"
+    },
+    {
+      "item": "minecraft:glowstone"
+    },
+    {
+      "item": "pastel:blue_pigment"
+    },
+    {
+      "item": "pastel:blue_pigment"
+    },
+    {
+      "item": "pastel:moonstruck_nectar"
+    },
+    {
+      "item": "minecraft:glowstone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+      "stored_enchantments": {
+        "pastel:steadfast": 1
+      }
+    }
+  },
+  "required_advancement": "pastel:unlocks/enchantments/steadfast",
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "pastel:steadfast"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

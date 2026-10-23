@@ -20,10 +20,8 @@
     "fluid": "slag:molten_netherite"
   },
   "ingredients": [
-    "pastel:topaz_shard",
     "minecraft:amethyst_shard",
-    "pastel:citrine_shard",
-    "pastel:shimmerstone_gem",
+    "minecraft:glowstone",
     "malum:mnemonic_fragment",
     "minecraft:lapis_lazuli",
     "minecraft:prismarine_shard"

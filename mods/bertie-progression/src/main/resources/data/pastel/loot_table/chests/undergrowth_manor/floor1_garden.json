@@ -6,19 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "pastel:nephrite_blossom_bulb",
           "functions": [
             {

@@ -14,7 +14,6 @@ Components are listed in their crafting order. Item IDs identify the actual ingr
 | Phantom Membrane | `minecraft:phantom_membrane` | +50% arrow speed. |
 | Stymphalian Bird Feather | `iceandfire:stymphalian_bird_feather` | +30% arrow speed. Radial blast. |
 | Amphithere Feather | `iceandfire:amphithere_feather` | +30% arrow speed, knockback. |
-| Resplendent Feather | `pastel:resplendent_feather` | +50% arrow speed, Primordial Fire for 10s, launches the target 10 blocks. |
 | Membrane of the Sun | `l2complements:sun_membrane` | +100% arrow speed, no gravity, Glowing, burn for 20s, +10 fire damage. |
 | Resonant Feather | `l2complements:resonant_feather` | +100% arrow speed, Hitscan, Sonic Boom. |
 | Neutronium Wheat | `avaritia_delight:neutronium_wheat` | +1000% arrow speed, no gravity. |
@@ -48,7 +47,6 @@ Components are listed in their crafting order. Item IDs identify the actual ingr
 | Gold Ingot | `minecraft:gold_ingot` | +3 damage; pacifies piglins. |
 | Gargoyle Shard | `mythsandlegends:gargoyle_shard` | +6 damage, -20% draw speed. |
 | Permafrost Shard | `irons_spellbooks:permafrost_shard` | +3 damage; freeze. |
-| Star Fragment | `pastel:star_fragment` | +4 damage. |
 | Diamond | `minecraft:diamond` | +4 damage, 20% armor piercing. |
 | Mnemonic Fragment | `malum:mnemonic_fragment` | +50% delayed damage. |
 | Abyssal Amethyst | `aquamirae:abyssal_amethyst` | +4 damage, extra +4 damage in water or rain. Unaffected by water. |
@@ -56,7 +54,7 @@ Components are listed in their crafting order. Item IDs identify the actual ingr
 | Echo Shard | `minecraft:echo_shard` | +5 damage, Darkness for 5s, 25% armor piercing. |
 | Moonstone Shard | `pastel:moonstone_shard` | +5 damage, extra +3 damage at night, 10% armor piercing. |
 | Netherite Ingot | `minecraft:netherite_ingot` | +8 damage, 35% armor piercing. |
-| Resonance Shard | `pastel:resonance_shard` | +6 damage, 20% armor piercing. Damage resonance. |
+| Dragon Egg | `minecraft:dragon_egg` | +6 damage, 20% armor piercing. Damage resonance. |
 | Reinforced Echo Shard | `deeperdarker:reinforced_echo_shard` | +10 damage, 30% armor piercing; fires a sonic boom at the closest other target. |
 | Heavy Core | `minecraft:heavy_core` | +1 damage per block of arrow descent. |
 | Divine Soulshard | `irons_spellbooks:divine_soulshard` | Executes targets below 30% HP and teleports their loot to the player. |

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "CLC",
+    "SSS"
+  ],
+  "key": {
+    "L": {
+      "item": "malum:astral_weave"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "id": "pastel:phantom_frame",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

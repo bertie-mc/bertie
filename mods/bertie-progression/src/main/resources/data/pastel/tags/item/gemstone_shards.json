@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_shard",
+      "required": false
+    }
+  ]
+}

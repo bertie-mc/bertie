@@ -897,14 +897,8 @@
 			y: 15.5d
 		}
 		{
-			icon: { count: 1 id: "pastel:resplendent_feather" }
 			id: "1C00000000001045"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001045"
-				item: { count: 1 id: "pastel:resplendent_feather" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 3.0d
 			y: 15.5d
 		}

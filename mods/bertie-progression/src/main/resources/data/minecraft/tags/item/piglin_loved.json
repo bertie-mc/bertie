@@ -51,10 +51,6 @@
       "required": false
     },
     {
-      "id": "pastel:enchanted_golden_carrot",
-      "required": false
-    },
-    {
       "id": "quark:gold_button",
       "required": false
     },

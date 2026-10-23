@@ -1,23 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
   ],
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "key": {
-    "S": {
-      "item": "pastel:blue_slab"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
     }
-  },
-  "pattern": [
-    "S",
-    "S"
   ],
   "result": {
-    "id": "pastel:blue_planks",
+    "id": "minecraft:stone",
     "count": 1
   }
 }

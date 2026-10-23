@@ -37,21 +37,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:midnight_chip",
-          "weight": 2,
-          "quality": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:netherite_ingot",
           "weight": 1,
           "quality": 2,

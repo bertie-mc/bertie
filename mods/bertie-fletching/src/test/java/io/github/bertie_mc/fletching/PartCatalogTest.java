@@ -18,7 +18,6 @@ class PartCatalogTest {
                         "phantom",
                         "stymphalian",
                         "amphithere",
-                        "resplendent",
                         "sun",
                         "resonant",
                         "neutronium"),
@@ -26,7 +25,7 @@ class PartCatalogTest {
         assertEquals(
                 List.of("stick", "fishing", "chain", "bone", "breeze", "dark", "blaze", "end", "dielectric", "ender"),
                 PartCatalog.inSlot(1).stream().map(PartCatalog.Part::key).toList());
-        assertEquals(23, PartCatalog.inSlot(2).size());
+        assertEquals(22, PartCatalog.inSlot(2).size());
         assertEquals(18, PartCatalog.inSlot(3).size());
         for (String removed : List.of(
                 "gunpowder",
@@ -37,6 +36,10 @@ class PartCatalogTest {
                 "firework_star",
                 "firework_rocket")) assertNull(PartCatalog.find(3, "minecraft:" + removed));
         assertNull(PartCatalog.find(2, "minecraft:shulker_shell"));
+        assertNull(PartCatalog.find(0, "pastel:resplendent_feather"));
+        assertNull(PartCatalog.find(2, "pastel:star_fragment"));
+        assertNull(PartCatalog.find(2, "pastel:resonance_shard"));
+        assertEquals("resonance", PartCatalog.find(2, "minecraft:dragon_egg").key());
     }
 
     @Test

@@ -2,24 +2,6 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 24
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "rolls": 3,
       "entries": [
         {
@@ -30,20 +12,6 @@
             {
               "function": "minecraft:set_count",
               "count": 2
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:shimmerstone_gem",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 17
-              }
             }
           ]
         },

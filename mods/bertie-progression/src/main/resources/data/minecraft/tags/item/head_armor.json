@@ -50,10 +50,6 @@
       "required": false
     },
     {
-      "id": "pastel:fetchling_helmet",
-      "required": false
-    },
-    {
       "id": "ancient_forgemastery:howling_helmet",
       "required": false
     },

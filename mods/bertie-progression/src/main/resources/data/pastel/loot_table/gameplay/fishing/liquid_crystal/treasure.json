@@ -71,26 +71,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:shimmerstone_gem",
-          "weight": 1,
-          "quality": 1,
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "direct_attacker",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "pastel:collect_shimmerstone": true
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "pastel:small_bismuth_bud",
           "weight": 3,
           "conditions": [

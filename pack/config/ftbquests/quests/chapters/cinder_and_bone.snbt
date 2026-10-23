@@ -201,42 +201,25 @@
 		}
 		{
 			dependencies: ["6B0000000000000B"]
-			icon: {
-				id: "pastel:pedestal_basic_topaz"
-			}
 			id: "6B0000000000000A"
 			rewards: [{
 				id: "6B0000000200000A"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:pedestal_basic_topaz"
-				}
-				id: "6B0000000100000A"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(bertieprogression:basic_pigment_pedestals)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Pigment Pedestal\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B00000000000013"]
-			icon: {
-				id: "pastel:paintbrush"
-			}
 			id: "6B0000000000000B"
 			rewards: [{
 				id: "6B0000000200000B"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6B0000000100000B"
-				item: { count: 1, id: "pastel:paintbrush" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 3.0d
 			y: 0.0d
 		}
@@ -347,54 +330,25 @@
 		}
 		{
 			dependencies: ["6B00000000000001"]
-			icon: {
-				id: "pastel:topaz_shard"
-			}
 			id: "6B00000000000013"
 			rewards: [{
 				id: "6B00000002000013"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [
-				{
-					count: 32L
-					id: "6B00000001000013"
-					item: { count: 1, id: "minecraft:amethyst_shard" }
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "6B00000001010013"
-					item: { count: 1, id: "pastel:topaz_shard" }
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "6B00000001020013"
-					item: { count: 1, id: "pastel:citrine_shard" }
-					type: "item"
-				}
-			]
+			tasks: [ ]
 			x: 1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B0000000000000A"]
-			icon: {
-				id: "pastel:shimmerstone_gem"
-			}
 			id: "6B00000000000014"
 			rewards: [{
 				id: "6B00000002000014"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6B00000001000014"
-				item: { count: 1, id: "pastel:shimmerstone_gem" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 6.0d
 			y: 0.0d
 		}
@@ -625,23 +579,13 @@
 		}
 		{
 			dependencies: ["6B00000000000040"]
-			icon: {
-				id: "pastel:cyan_pigment"
-			}
 			id: "6B00000000000041"
 			rewards: [{
 				id: "6B00000002000041"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				icon: {
-					id: "pastel:cyan_pigment"
-				}
-				id: "6B00000001000041"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:pigments)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Pigment\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 9.0d
 			y: -3.0d
 		}

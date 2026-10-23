@@ -1,9 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:stripped_red_log",
-      "required": false
-    }
-  ]
+  "values": []
 }

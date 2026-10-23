@@ -63,6 +63,10 @@ public final class RemovedItems {
         return ids;
     }
 
+    public static boolean isRemoved(ResourceLocation id) {
+        return ids().contains(id);
+    }
+
     private static Set<ResourceLocation> tabs() {
         if (tabs == null) {
             tabs = read("/removed_tabs.json");

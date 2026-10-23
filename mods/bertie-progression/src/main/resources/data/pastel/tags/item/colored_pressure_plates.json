@@ -1,9 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:light_blue_pressure_plate",
-      "required": false
-    }
-  ]
+  "values": []
 }

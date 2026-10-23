@@ -6176,32 +6176,8 @@
 		}
 		{
 			dependencies: ["7B000000000000DD"]
-			icon: {
-				id: "pastel:ferocious_chestplate"
-			}
 			id: "7B000000000000E6"
-			tasks: [
-				{
-					id: "7B000000010000E6"
-					item: { count: 1, id: "pastel:fetchling_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100E6"
-					item: { count: 1, id: "pastel:ferocious_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200E6"
-					item: { count: 1, id: "pastel:sylph_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300E6"
-					item: { count: 1, id: "pastel:oread_boots" }
-					type: "item"
-				}
-			]
+			tasks: [ ]
 			x: -6d
 			y: 11d
 		}
@@ -13491,13 +13467,7 @@
 			y: -7.5d
 			x: 22.5d
 			id: "7B00000000005008"
-			icon: { id: "pastel:resplendent_feather" }
-			tasks: [{
-				id: "7B00000001005008"
-				count: 1L
-				item: { count: 1 id: "pastel:resplendent_feather" }
-				type: "item"
-			}]
+			tasks: [ ]
 		}
 		{
 			hide_dependency_lines: true
@@ -13867,13 +13837,7 @@
 			y: -4.5d
 			x: 25.5d
 			id: "7B00000000005022"
-			icon: { id: "pastel:star_fragment" }
-			tasks: [{
-				id: "7B00000001005022"
-				count: 1L
-				item: { count: 1 id: "pastel:star_fragment" }
-				type: "item"
-			}]
+			tasks: [ ]
 		}
 		{
 			hide_dependency_lines: true
@@ -13988,11 +13952,11 @@
 			y: -4.5d
 			x: 37.5d
 			id: "7B0000000000502A"
-			icon: { id: "pastel:resonance_shard" }
+			icon: { id: "minecraft:dragon_egg" }
 			tasks: [{
 				id: "7B0000000100502A"
 				count: 1L
-				item: { count: 1 id: "pastel:resonance_shard" }
+				item: { count: 1 id: "minecraft:dragon_egg" }
 				type: "item"
 			}]
 		}

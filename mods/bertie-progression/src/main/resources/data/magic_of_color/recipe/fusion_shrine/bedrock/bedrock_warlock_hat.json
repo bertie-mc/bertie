@@ -1,0 +1,41 @@
+{
+  "type": "pastel:fusion_shrine",
+  "group": "bedrock_armor",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:midnight_solution"
+  },
+  "copy_components": true,
+  "ingredients": [
+    "magic_of_color:gilded_magicians_hat",
+    {
+      "item": "pastel:bedrock_dust",
+      "count": 5
+    },
+    {
+      "item": "pastel:black_pigment",
+      "count": 5
+    },
+    {
+      "item": "pastel:onyx_shard",
+      "count": 5
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "magic_of_color:bedrock_warlock_hat",
+    "components": {
+      "enchantments": {
+        "minecraft:projectile_protection": 5
+      }
+    }
+  },
+  "required_advancement": "pastel:unlocks/equipment/bedrock_tools",
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine"
+}

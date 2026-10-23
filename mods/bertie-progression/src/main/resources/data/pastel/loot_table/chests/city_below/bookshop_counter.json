@@ -27,10 +27,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:shimmerstone_gem"
         }
       ],
       "functions": [

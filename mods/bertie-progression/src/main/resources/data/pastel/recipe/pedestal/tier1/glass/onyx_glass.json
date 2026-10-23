@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GPG",
+    "PPP",
+    "GPG"
+  ],
+  "key": {
+    "P": {
+      "item": "pastel:onyx_shard"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "id": "pastel:onyx_glass",
+    "count": 8
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

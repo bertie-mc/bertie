@@ -79,11 +79,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:pitcher_pod",
           "weight": 3
         },

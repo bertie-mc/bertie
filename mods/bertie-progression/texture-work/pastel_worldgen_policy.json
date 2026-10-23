@@ -1,16 +1,28 @@
 {
   "biome_modifiers": [
+    "azurite_ore",
+    "citrine_geode",
     "colored_tree_patch",
+    "dragon_fossil_overworld_exposed",
     "paltaeria_ore",
-    "dragon_fossil_overworld_exposed"
+    "stratine_ore",
+    "topaz_geode"
   ],
   "configured_features": [
+    "azurite_ore",
+    "citrine_geode",
     "colored_tree_patch",
-    "paltaeria_ore"
+    "paltaeria_ore",
+    "stratine_ore",
+    "topaz_geode"
   ],
   "empty_input_recipes": [
     "data/pastel/recipe/blasting/ore/citrine_ores.json",
     "data/pastel/recipe/blasting/ore/topaz_ores.json",
+    "data/pastel/recipe/pedestal/tier1/arrows/malachite.json",
+    "data/pastel/recipe/pedestal/tier1/vanilla/writable_book.json",
+    "data/pastel/recipe/pedestal/tier2/particle_spawner.json",
+    "data/pastel/recipe/pedestal/tier4/dragonrending_pickaxe.json",
     "data/pastel/recipe/smelting/ore/citrine_ores.json",
     "data/pastel/recipe/smelting/ore/topaz_ores.json",
     "data/pastel/recipe/titration_barrel/incandescent_amalgam_doom.json"

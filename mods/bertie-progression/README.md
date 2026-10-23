@@ -56,6 +56,11 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 The Pastel content selection removes unused items while retaining current Bertie integrations
 and Imbrifer resources. Overworld colored-tree patches, Paltaeria Ore and exposed dragon fossils
 are disabled. Removed-item quests retain their nodes as blank placeholders.
+Withdrawn Pastel furniture, decorations and fixed inventory contents are removed while
+structure templates load; existing chunks are unchanged. Retained pigment-dependent
+progression recipes temporarily use the crafting table without ink costs. Bedrock helmet,
+chestplate and leggings retain their items but have no crafting recipes. Spirit Instiller
+and Moonstone synthesis remain pending a replacement station.
 
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.

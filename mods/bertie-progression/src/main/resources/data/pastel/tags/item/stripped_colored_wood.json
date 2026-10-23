@@ -1,21 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:stripped_brown_wood",
-      "required": false
-    },
-    {
-      "id": "pastel:stripped_light_blue_wood",
-      "required": false
-    },
-    {
-      "id": "pastel:stripped_lime_wood",
-      "required": false
-    },
-    {
-      "id": "pastel:stripped_pink_wood",
-      "required": false
-    }
-  ]
+  "values": []
 }

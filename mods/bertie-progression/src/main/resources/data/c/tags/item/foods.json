@@ -102,18 +102,6 @@
     "#c:foods/pasta",
     "#c:foods/cooked_egg",
     {
-      "id": "pastel:enchanted_golden_carrot",
-      "required": false
-    },
-    {
-      "id": "pastel:nectardew_burgeon",
-      "required": false
-    },
-    {
-      "id": "pastel:nightdew_sprout",
-      "required": false
-    },
-    {
       "id": "alexsmobs:maggot",
       "required": false
     },

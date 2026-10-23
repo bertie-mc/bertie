@@ -1,9 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:axolotl_blue_head",
-      "required": false
-    }
-  ]
+  "values": []
 }

@@ -1,0 +1,53 @@
+{
+  "type": "pastel:enchanter",
+  "time": 1200,
+  "required_experience": 500,
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "pastel:light_gray_pigment"
+    },
+    {
+      "item": "pastel:light_gray_pigment"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "pastel:paltaeria_fragments"
+    },
+    {
+      "item": "pastel:light_gray_pigment"
+    },
+    {
+      "item": "pastel:light_gray_pigment"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "pastel:paltaeria_fragments"
+    }
+  ],
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+      "stored_enchantments": {
+        "supplementaries:stasis": 1
+      }
+    }
+  },
+  "required_advancement": "pastel:unlocks/enchantments/vanilla_treasure",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

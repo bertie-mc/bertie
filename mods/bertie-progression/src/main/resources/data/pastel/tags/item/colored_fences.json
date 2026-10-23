@@ -1,33 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:brown_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:light_blue_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:lime_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:orange_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:pink_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:purple_fence",
-      "required": false
-    },
-    {
-      "id": "pastel:white_fence",
-      "required": false
-    }
-  ]
+  "values": []
 }

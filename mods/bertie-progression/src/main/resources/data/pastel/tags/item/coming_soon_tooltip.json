@@ -2,10 +2,6 @@
   "replace": true,
   "values": [
     {
-      "id": "pastel:spectral_shard",
-      "required": false
-    },
-    {
       "id": "pastel:ominous_sapling",
       "required": false
     },

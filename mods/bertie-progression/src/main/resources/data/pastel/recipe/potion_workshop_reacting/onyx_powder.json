@@ -1,0 +1,14 @@
+{
+  "type": "pastel:potion_workshop_reacting",
+  "item": "pastel:onyx_shard",
+  "modifiers": {
+    "flat_yield_bonus": 2.0
+  },
+  "required_advancement": "pastel:create_onyx_shard",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

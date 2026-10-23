@@ -1,17 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:citrine_shard",
-      "required": false
-    },
-    {
-      "id": "pastel:citrine_block",
-      "required": false
-    },
-    {
-      "id": "pastel:polished_citrine_block",
-      "required": false
-    }
-  ]
+  "values": []
 }

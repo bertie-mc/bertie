@@ -9,7 +9,7 @@
   "time": 400,
   "experience": 4.0,
   "ingredient1": "pastel:bismuth_flake",
-  "ingredient2": "pastel:onyx_powder",
+  "ingredient2": "pastel:onyx_shard",
   "center_ingredient": {
     "item": "pastel:moonstone_shard",
     "count": 1

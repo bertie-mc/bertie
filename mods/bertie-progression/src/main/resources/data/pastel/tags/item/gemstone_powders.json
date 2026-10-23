@@ -1,9 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:onyx_powder",
-      "required": false
-    }
-  ]
+  "values": []
 }

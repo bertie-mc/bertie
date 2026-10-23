@@ -1,13 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:basalt_shimmerstone_light",
-      "required": false
-    },
-    {
-      "id": "pastel:deepslate_shimmerstone_light",
-      "required": false
-    }
-  ]
+  "values": []
 }

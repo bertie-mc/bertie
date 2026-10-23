@@ -6,16 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:nectardew_burgeon",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
           "name": "pastel:nephrite_blossom_bulb",
           "weight": 7
         },

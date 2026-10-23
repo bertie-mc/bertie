@@ -2,24 +2,6 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nightdew_sprout",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 2,
         "max": 3
@@ -50,17 +32,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:nectardew_burgeon",
-          "weight": 6666,
-          "quality": 10
         }
       ]
     },

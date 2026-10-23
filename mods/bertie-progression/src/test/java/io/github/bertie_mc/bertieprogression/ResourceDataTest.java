@@ -43,18 +43,13 @@ class ResourceDataTest {
     }
 
     @Test
-    void anvilProgressionUsesPedestalCostsAndMechanicalCrafting() throws IOException {
+    void anvilProgressionUsesCraftingTableAndMechanicalCrafting() throws IOException {
         JsonObject hammer = data("data/bertieprogression/recipe/anvilcraft/anvil_hammer.json");
-        assertEquals("pastel:pedestal", hammer.get("type").getAsString());
-        assertEquals("basic", hammer.get("tier").getAsString());
-        assertEquals(100, hammer.get("time").getAsInt());
-        for (String color : List.of("cyan", "magenta", "yellow")) {
-            assertEquals(
-                    6, hammer.getAsJsonObject("colors").get("pastel:" + color).getAsInt());
-        }
+        assertEquals("minecraft:crafting_shaped", hammer.get("type").getAsString());
+        assertTrue(!hammer.has("colors") && !hammer.has("tier") && !hammer.has("time"));
         assertEquals(
                 "twilightforest:ironwood_ingot",
-                hammer.getAsJsonObject("key").get("C").getAsString());
+                hammer.getAsJsonObject("key").getAsJsonObject("C").get("item").getAsString());
         assertTrue(data("data/anvilcraft/recipe/anvil_hammer.json").toString().contains("neoforge:false"));
         JsonObject drill = data("data/create/recipe/crafting/kinetics/mechanical_drill.json");
         assertEquals("create:mechanical_crafting", drill.get("type").getAsString());
@@ -75,12 +70,9 @@ class ResourceDataTest {
                         .getAsJsonObject()
                         .get("count")
                         .getAsInt());
-        assertEquals(
-                6,
-                data("data/pastel/recipe/pedestal/tier3/stratine_gem.json")
-                        .getAsJsonObject("colors")
-                        .get("pastel:yellow")
-                        .getAsInt());
+        assertTrue(data("data/pastel/recipe/pedestal/tier3/stratine_gem.json")
+                .toString()
+                .contains("neoforge:false"));
         assertEquals(
                 "oritech:nickel_block",
                 data("data/bertieprogression/tags/block/lightning_magnet_inputs.json")

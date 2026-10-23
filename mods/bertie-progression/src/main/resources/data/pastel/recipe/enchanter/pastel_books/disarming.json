@@ -1,0 +1,55 @@
+{
+  "type": "pastel:enchanter",
+  "time": 300,
+  "required_experience": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "pastel:red_pigment"
+    },
+    {
+      "item": "pastel:red_pigment"
+    },
+    {
+      "item": "pastel:storm_stone"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "pastel:red_pigment"
+    },
+    {
+      "item": "pastel:red_pigment"
+    },
+    {
+      "item": "pastel:storm_stone"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "components": {
+      "stored_enchantments": {
+        "pastel:disarming": 1
+      }
+    }
+  },
+  "required_advancement": "pastel:unlocks/enchantments/disarming",
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "pastel:disarming"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

@@ -7337,15 +7337,8 @@
 			y: 18.0d
 		}
 		{
-			icon: {
-				id: "pastel:puff_circlet"
-			}
 			id: "4C0000000000023D"
-			tasks: [{
-				id: "4C0000000100023D"
-				item: { count: 1, id: "pastel:puff_circlet" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 34.0d
 			y: 18.0d
 		}

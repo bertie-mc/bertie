@@ -1,0 +1,45 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:tomato",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:ichoroot",
+      "required": false
+    },
+    "#c:foods/asparagus",
+    "#c:foods/sweet_potato",
+    "#c:foods/chili_pepper",
+    {
+      "id": "minersdelight:cave_carrot",
+      "required": false
+    },
+    "#c:crops/cucumber",
+    {
+      "id": "minecraft:carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:golden_carrot",
+      "required": false
+    },
+    {
+      "id": "minecraft:potato",
+      "required": false
+    },
+    {
+      "id": "minecraft:beetroot",
+      "required": false
+    },
+    {
+      "id": "#c:foods/vegetables",
+      "required": false
+    }
+  ]
+}

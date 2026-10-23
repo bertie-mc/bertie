@@ -5385,6 +5385,9 @@ if _scan_ok:
             _authored_recipes[_path] = _value
     _restored_paths = apply_recipe_policy(write, _recipe_src, _MERGE, set(_removed_ids), _items, _redirect, DISABLED,
                                          _authored_recipes)
+    from pastel_cleanup import apply_policy as apply_pastel_policy
+    _pastel_changed = apply_pastel_policy(write, _recipe_src, RES, written, set(_removed_ids), DISABLED)
+    print(f"  Pastel retained recipes: {_pastel_changed} replacements and temporary crafts")
 
 # MANIFEST. gen_data only ever writes, so without this, deleting a row would leave its
 # neoforge:false override behind and the item would stay uncraftable forever - which defeats the

@@ -1,33 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:black_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:cyan_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:magenta_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:orange_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:pink_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:white_pigment",
-      "required": false
-    },
-    {
-      "id": "pastel:yellow_pigment",
-      "required": false
-    }
-  ]
+  "values": []
 }

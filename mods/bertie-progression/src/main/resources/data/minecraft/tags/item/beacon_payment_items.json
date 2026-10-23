@@ -43,23 +43,11 @@
       "required": false
     },
     {
-      "id": "pastel:topaz_shard",
-      "required": false
-    },
-    {
-      "id": "pastel:citrine_shard",
-      "required": false
-    },
-    {
       "id": "pastel:onyx_shard",
       "required": false
     },
     {
       "id": "pastel:moonstone_shard",
-      "required": false
-    },
-    {
-      "id": "pastel:spectral_shard",
       "required": false
     },
     {

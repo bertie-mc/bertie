@@ -2,27 +2,7 @@
   "replace": true,
   "values": [
     {
-      "id": "pastel:raw_azurite",
-      "required": false
-    },
-    {
-      "id": "pastel:pure_azurite",
-      "required": false
-    },
-    {
       "id": "pastel:raw_malachite",
-      "required": false
-    },
-    {
-      "id": "pastel:pure_malachite",
-      "required": false
-    },
-    {
-      "id": "pastel:resonance_shard",
-      "required": false
-    },
-    {
-      "id": "pastel:shimmerstone_gem",
       "required": false
     }
   ]
