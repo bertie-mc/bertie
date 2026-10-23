@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "pastel:chestnut_noxwood_slab"
+    },
+    "P": {
+      "item": "pastel:chestnut_noxwood_planks"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "pastel:chestnut_noxwood_amphora",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

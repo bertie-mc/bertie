@@ -1,0 +1,3379 @@
+[
+  {
+    "path": "data/discerning_the_eldritch/recipe/compat/pastel/fusion_shrine/dream_reaver_ymir.json",
+    "output": "discerning_the_eldritch:dream_reaver_ymir",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_bloodstone"
+    ]
+  },
+  {
+    "path": "data/magic_of_color/recipe/fusion_shrine/malachite/praetors_gauntlet.json",
+    "output": "magic_of_color:praetors_gauntlet",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/bismuth/bismuth_from_buds.json",
+    "output": "pastel:bismuth_flake",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_bismuth_bud",
+      "pastel:small_bismuth_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/bismuth/bismuth_from_crystal.json",
+    "output": "pastel:bismuth_flake",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/coal_from_buds.json",
+    "output": "minecraft:coal",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_coal_bud",
+      "pastel:small_coal_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/coal_from_cluster.json",
+    "output": "minecraft:coal",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:coal_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/copper_from_buds.json",
+    "output": "minecraft:copper_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_copper_bud",
+      "pastel:small_copper_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/copper_from_cluster.json",
+    "output": "minecraft:copper_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:copper_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/diamond_from_buds.json",
+    "output": "minecraft:diamond",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_diamond_bud",
+      "pastel:small_diamond_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/diamond_from_cluster.json",
+    "output": "minecraft:diamond",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:diamond_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/echo_shard_from_buds.json",
+    "output": "minecraft:echo_shard",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_echo_bud",
+      "pastel:small_echo_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/echo_shard_from_cluster.json",
+    "output": "minecraft:echo_shard",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:echo_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/emerald_from_buds.json",
+    "output": "minecraft:emerald",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_emerald_bud",
+      "pastel:small_emerald_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/emerald_from_cluster.json",
+    "output": "minecraft:emerald",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:emerald_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/glowstone_from_buds.json",
+    "output": "minecraft:glowstone_dust",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_glowstone_bud",
+      "pastel:small_glowstone_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/glowstone_from_cluster.json",
+    "output": "minecraft:glowstone_dust",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:glowstone_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/gold_from_buds.json",
+    "output": "minecraft:gold_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_gold_bud",
+      "pastel:small_gold_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/gold_from_cluster.json",
+    "output": "minecraft:gold_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:gold_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/iron_from_buds.json",
+    "output": "minecraft:iron_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_iron_bud",
+      "pastel:small_iron_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/iron_from_cluster.json",
+    "output": "minecraft:iron_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:iron_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/lapis_from_buds.json",
+    "output": "minecraft:lapis_lazuli",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_lapis_bud",
+      "pastel:small_lapis_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/lapis_from_cluster.json",
+    "output": "minecraft:lapis_lazuli",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lapis_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/netherite_scrap_from_buds.json",
+    "output": "minecraft:netherite_scrap",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_netherite_scrap_bud",
+      "pastel:small_netherite_scrap_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/netherite_scrap_from_cluster.json",
+    "output": "minecraft:netherite_scrap",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:netherite_scrap_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/prismarine_from_buds.json",
+    "output": "minecraft:prismarine_crystals",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_prismarine_bud",
+      "pastel:small_prismarine_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/prismarine_from_cluster.json",
+    "output": "minecraft:prismarine_crystals",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:prismarine_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/quartz_from_buds.json",
+    "output": "minecraft:quartz",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_quartz_bud",
+      "pastel:small_quartz_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/quartz_from_cluster.json",
+    "output": "minecraft:quartz",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quartz_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/redstone_from_buds.json",
+    "output": "minecraft:redstone",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_redstone_bud",
+      "pastel:small_redstone_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/crystallarieum_growables/redstone_from_cluster.json",
+    "output": "minecraft:redstone",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:redstone_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/anvil_crushing/gold_nugget_from_glistering_melon.json",
+    "output": "minecraft:gold_nugget",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:glistering_melon"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/blasting/pure_resources/coal.json",
+    "output": "minecraft:coal",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_coal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/blasting/pure_resources/copper.json",
+    "output": "minecraft:copper_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_copper"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/blasting/pure_resources/echo.json",
+    "output": "minecraft:echo_shard",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_echo"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/blasting/pure_resources/glowstone.json",
+    "output": "minecraft:glowstone_dust",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_glowstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/blasting/pure_resources/lapis.json",
+    "output": "minecraft:lapis_lazuli",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_lapis"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/ash_flakes.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/bone_ash.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/bone_ash_unsmelting.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/jaramel.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:jade_jelly"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/mermaids_popcorn.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/coal.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_coal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/copper.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_copper"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/diamond.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/echo.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_echo"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/emerald.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/glowstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_glowstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/gold.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/iron.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/lapis.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_lapis"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/netherite_scrap.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/prismarine.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/quartz.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/pure_resources/redstone.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla/bread_from_amaranth.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla/brick.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla/charcoal.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla/glass.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla/sugar_from_fissure_plum.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fissure_plum"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla_ores/coal.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla_ores/netherite_scrap.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/cinderhearth/vanilla_ores/redstone.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/coal.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:coal_cluster",
+      "pastel:large_coal_bud",
+      "pastel:pure_coal",
+      "pastel:small_coal_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/copper.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:copper_cluster",
+      "pastel:large_copper_bud",
+      "pastel:pure_copper",
+      "pastel:small_copper_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/diamond.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:diamond_cluster",
+      "pastel:large_diamond_bud",
+      "pastel:small_diamond_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/echo.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:echo_cluster",
+      "pastel:large_echo_bud",
+      "pastel:pure_echo",
+      "pastel:small_echo_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/emerald.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:emerald_cluster",
+      "pastel:large_emerald_bud",
+      "pastel:midnight_chip",
+      "pastel:small_emerald_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/glowstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:glowstone_cluster",
+      "pastel:large_glowstone_bud",
+      "pastel:pure_glowstone",
+      "pastel:small_glowstone_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/gold.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:gold_cluster",
+      "pastel:large_gold_bud",
+      "pastel:small_gold_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/iron.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:iron_cluster",
+      "pastel:large_iron_bud",
+      "pastel:small_iron_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/lapis.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lapis_cluster",
+      "pastel:large_lapis_bud",
+      "pastel:midnight_chip",
+      "pastel:pure_lapis",
+      "pastel:raw_azurite",
+      "pastel:small_lapis_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/netherite_scrap.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_netherite_scrap_bud",
+      "pastel:netherite_scrap_cluster",
+      "pastel:small_netherite_scrap_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/prismarine_crystal.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_prismarine_bud",
+      "pastel:prismarine_cluster",
+      "pastel:small_prismarine_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/quartz.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_quartz_bud",
+      "pastel:midnight_chip",
+      "pastel:quartz_cluster",
+      "pastel:small_quartz_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/minecraft/redstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_redstone_bud",
+      "pastel:redstone_cluster",
+      "pastel:small_redstone_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/pastel/azurite.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:azurite_cluster",
+      "pastel:large_azurite_bud",
+      "pastel:pure_azurite",
+      "pastel:pure_copper",
+      "pastel:raw_azurite",
+      "pastel:small_azurite_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/pastel/bismuth.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_cluster",
+      "pastel:bismuth_crystal",
+      "pastel:large_bismuth_bud",
+      "pastel:small_bismuth_bud",
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/pastel/bloodstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bloodstone_cluster",
+      "pastel:large_bloodstone_bud",
+      "pastel:pure_bloodstone",
+      "pastel:pure_copper",
+      "pastel:raw_bloodstone",
+      "pastel:small_bloodstone_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/crystallarieum/pastel/malachite.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_malachite_bud",
+      "pastel:malachite_cluster",
+      "pastel:pure_malachite",
+      "pastel:small_malachite_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/dragonrot_converting/ash_from_bone_ash.json",
+    "output": "pastel:ash_flakes",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/exuberance.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/indestructible.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:downstone_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/inexorable.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_bloodstone",
+      "pastel:pure_copper"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/resonance.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/serendipity_reel.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/pastel_books/steadfast.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/breach.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blood_orchid_petal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/efficiency.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/feather_falling.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/frost_walker.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/infinity.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/mending.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/silk_touch.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/soul_speed.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/enchanter/vanilla_books/wind_burst.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/draconic_twinsword.json",
+    "output": "pastel:draconic_twinsword",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blood_orchid_petal",
+      "pastel:raw_bloodstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/draconic_twinsword_reclaim.json",
+    "output": "pastel:draconic_twinsword",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/dreamflayer.json",
+    "output": "pastel:dreamflayer",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal",
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/knotted_sword.json",
+    "output": "pastel:knotted_sword",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout",
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/ferocious_glass_crest_bident.json",
+    "output": "pastel:ferocious_glass_crest_bident",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/fractal_glass_crest_bident.json",
+    "output": "pastel:fractal_glass_crest_bident",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/glass_crest_crossbow.json",
+    "output": "pastel:glass_crest_crossbow",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core",
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/glass_crest_ultra_greatsword.json",
+    "output": "pastel:glass_crest_ultra_greatsword",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/glass_crest_workstaff.json",
+    "output": "pastel:glass_crest_workstaff",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/malachite_bident.json",
+    "output": "pastel:malachite_bident",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/malachite_crossbow.json",
+    "output": "pastel:malachite_crossbow",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/malachite_ultra_greatsword.json",
+    "output": "pastel:malachite_ultra_greatsword",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/malachite/malachite_workstaff.json",
+    "output": "pastel:malachite_workstaff",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/mysterious_locket_socketing.json",
+    "output": "pastel:mysterious_locket",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/no_rgb.json",
+    "output": "minecraft:raw_copper",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite",
+      "pastel:pure_bloodstone",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/soothing_bouquet.json",
+    "output": "pastel:soothing_bouquet",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nectardew_burgeon"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/trinkets/circlet_of_arrogance.json",
+    "output": "pastel:circlet_of_arrogance",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blood_orchid_petal",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/trinkets/gleaming_pin.json",
+    "output": "pastel:gleaming_pin",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/trinkets/radiance_pin.json",
+    "output": "pastel:radiance_pin",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/trinkets/totem_pendant.json",
+    "output": "pastel:totem_pendant",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/fusion_shrine/trinkets/whispy_circlet.json",
+    "output": "pastel:whispy_circlet",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/black.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:black_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/blue.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blue_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/brown.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:brown_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/cyan.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:cyan_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/gray.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:gray_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/green.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:green_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/light_blue.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:light_blue_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/light_gray.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:light_gray_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/lime.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lime_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/magenta.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:magenta_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/orange.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:orange_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/pink.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pink_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/purple.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:purple_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/red.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:red_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/white.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:white_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/ink_converting/pigment_blocks/yellow.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:yellow_block"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/midnight_solution_converting/golden_carrot_disenchanting.json",
+    "output": "minecraft:golden_carrot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:enchanted_golden_carrot"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/ae2/cinderhearth/silicon.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/ae2/cinderhearth/silicon_from_rock_crystal.json",
+    "output": null,
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/ae2/crystallarieum/fluix_crystal.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fluix_cluster",
+      "pastel:large_fluix_bud",
+      "pastel:small_fluix_bud"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/botania/spirit_instiller/blacker_lotus.json",
+    "output": "botania:blacker_lotus",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:jade_vine_petals"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/botania/spirit_instiller/blackest_lotus.json",
+    "output": "pastel:blackest_lotus",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blood_orchid_petal",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/botania/spirit_instiller/overgrowth_seed.json",
+    "output": "botania:overgrowth_seed",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/cinderhearth/pure_zinc.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_zinc"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/black.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:black_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/blue.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blue_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/brown.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:brown_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/cyan.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:cyan_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/gray.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:gray_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/green.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:green_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/light_blue.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:light_blue_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/light_gray.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:light_gray_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/lime.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lime_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/magenta.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:magenta_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/orange.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:orange_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/pink.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pink_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/purple.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:purple_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/red.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:red_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/white.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:white_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/leaves/yellow.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:yellow_leaves"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/blackslag_citrine_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blackslag_citrine_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/blackslag_topaz_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blackslag_topaz_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/citrine_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:citrine_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/deepslate_citrine_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:deepslate_citrine_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/deepslate_topaz_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:deepslate_topaz_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/paltaeria_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crushing/ores/topaz_ore.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:topaz_ore"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/crystallarieum/zinc.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:large_zinc_bud",
+      "pastel:pure_copper",
+      "pastel:pure_zinc",
+      "pastel:small_zinc_bud",
+      "pastel:zinc_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/fusion_shrine/pure_brass_ingot.json",
+    "output": "create:brass_ingot",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_copper",
+      "pastel:pure_zinc"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/create/spirit_instiller/blaze_burner.json",
+    "output": "create:blaze_burner",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blaze_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/malum/pedestal/alt_bag_of_holding.json",
+    "output": "pastel:bag_of_holding",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/malum/pedestal/chorusless_ender_splice.json",
+    "output": "pastel:ender_splice",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/malum/potion_workshop_crafting/concentrated_gluttony.json",
+    "output": "malum:concentrated_gluttony",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/malum/potion_workshop_crafting/splash_of_gluttony.json",
+    "output": "malum:splash_of_gluttony",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/malum/spirit_instiller/wicked_spirit.json",
+    "output": "malum:wicked_spirit",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/supplementaries/enchanter/book_stasis.json",
+    "output": "minecraft:enchanted_book",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/supplementaries/titration_barrel/antique_ink.json",
+    "output": "supplementaries:antique_ink",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/waystones/pedestal/alt_sharestone.json",
+    "output": "waystones:sharestone",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/citrine/citrine_shard.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_citrine"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/citrine/citrine_shard_catalyst.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_citrine"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/citrine/citrine_shard_catalyst_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_citrine"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/citrine/citrine_shard_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_citrine"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/citrine/citrine_shard_waterlogged.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_citrine"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/moonstone/moonstone_shard.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_moonstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/moonstone/moonstone_shard_catalyst.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_moonstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/moonstone/moonstone_shard_catalyst_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_moonstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/moonstone/moonstone_shard_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_moonstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/moonstone/moonstone_shard_waterlogged.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_moonstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/onyx/onyx_shard.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_onyx"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/onyx/onyx_shard_catalyst.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_onyx"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/onyx/onyx_shard_catalyst_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_onyx"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/onyx/onyx_shard_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_onyx"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/onyx/onyx_shard_waterlogged.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_onyx"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/topaz/topaz_shard.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_topaz"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/topaz/topaz_shard_catalyst.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_topaz"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/topaz/topaz_shard_catalyst_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_topaz"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/topaz/topaz_shard_waterblock.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_topaz"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/mod_integration/xycraft/topaz/topaz_shard_waterlogged.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:budding_topaz"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/bag_of_holding.json",
+    "output": "pastel:bag_of_holding",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/compacting/azurite_block.json",
+    "output": "pastel:azurite_block",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/compacting/bismuth_block.json",
+    "output": "pastel:bismuth_block",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/compacting/bloodstone_block.json",
+    "output": "pastel:bloodstone_block",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_bloodstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/compacting/malachite_block.json",
+    "output": "pastel:malachite_block",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/compacting/paltaeria_floatblock.json",
+    "output": "pastel:paltaeria_floatblock",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/dragonbone/polished_bone_ash.json",
+    "output": "pastel:polished_bone_ash",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/runes/moonstone_chiseled_basalt_from_cluster.json",
+    "output": "pastel:moonstone_chiseled_basalt",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/runes/moonstone_chiseled_calcite_from_cluster.json",
+    "output": "pastel:moonstone_chiseled_calcite",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/runes/onyx_chiseled_basalt_from_cluster.json",
+    "output": "pastel:onyx_chiseled_basalt",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:onyx_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/runes/onyx_chiseled_calcite_from_cluster.json",
+    "output": "pastel:onyx_chiseled_calcite",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:onyx_cluster"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/vanilla/cobweb.json",
+    "output": "minecraft:cobweb",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier1/vanilla/unstable_tnt.json",
+    "output": "minecraft:tnt",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier2/bottomless_bundle.json",
+    "output": "pastel:bottomless_bundle",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier2/ender_dropper.json",
+    "output": "pastel:ender_dropper",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier2/oblivion_pickaxe.json",
+    "output": "pastel:oblivion_pickaxe",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier2/particle_spawner.json",
+    "output": "pastel:particle_spawner",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/bottle_of_decay_away.json",
+    "output": "pastel:bottle_of_decay_away",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/ender_splice.json",
+    "output": "pastel:ender_splice",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/omni_accelerator.json",
+    "output": "pastel:omni_accelerator",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core",
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/connection_node.json",
+    "output": "pastel:connection_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/connection_node_refined.json",
+    "output": "pastel:connection_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/gather_node.json",
+    "output": "pastel:gather_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/gather_node_refined.json",
+    "output": "pastel:gather_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/provider_node.json",
+    "output": "pastel:provider_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/provider_node_refined.json",
+    "output": "pastel:provider_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/sender_node.json",
+    "output": "pastel:sender_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/sender_node_refined.json",
+    "output": "pastel:sender_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/storage_node.json",
+    "output": "pastel:storage_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pastel_network/storage_node_refined.json",
+    "output": "pastel:storage_node",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/pipe_bomb.json",
+    "output": "pastel:pipe_bomb",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:midnight_chip",
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/universe_spyhole.json",
+    "output": "pastel:universe_spyhole",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:midnight_chip",
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier3/upgrade_efficiency.json",
+    "output": "pastel:upgrade_efficiency",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/concealing_oils.json",
+    "output": "pastel:concealing_oils",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/everpromise_ribbon.json",
+    "output": "pastel:everpromise_ribbon",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_malachite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/exchanging_staff.json",
+    "output": "pastel:exchanging_staff",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/fanciful_bismuth_ring.json",
+    "output": "pastel:fanciful_bismuth_ring",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/azurite.json",
+    "output": "pastel:azurite_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:raw_azurite",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/azurite_from_refined.json",
+    "output": "pastel:azurite_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_azurite",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/bloodstone.json",
+    "output": "pastel:bloodstone_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:raw_bloodstone",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/bloodstone_from_refined.json",
+    "output": "pastel:bloodstone_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_bloodstone",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/malachite.json",
+    "output": "pastel:malachite_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/glass_ampoules/malachite_from_refined.json",
+    "output": "pastel:malachite_glass_ampoule",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_malachite",
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/paltaeria_gem.json",
+    "output": "pastel:paltaeria_gem",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/perturbed_eye.json",
+    "output": "pastel:perturbed_eye",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments",
+      "pastel:radiating_ender"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/resonant_pickaxe.json",
+    "output": "pastel:resonant_pickaxe",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:resonance_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/staff_of_remembrance.json",
+    "output": "pastel:staff_of_remembrance",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstone_core"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/vanilla/elytra.json",
+    "output": "minecraft:elytra",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/pedestal/tier4/vanilla/heavy_core.json",
+    "output": "minecraft:heavy_core",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bismuth_crystal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/bad_omen.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bloodboil_syrup"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/calming.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar",
+      "pastel:nightdew_sprout"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/deadly_poison.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/eternal_slumber.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nectardew_burgeon",
+      "pastel:resplendent_feather"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/fatal_slumber.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:evernectar",
+      "pastel:nectardew_burgeon"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/immunity.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:jade_jelly",
+      "pastel:moonstruck_nectar",
+      "pastel:nectardew_burgeon"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/levitation.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/life_drain.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:downstone_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/scarred.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/somnolence.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/toughness.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:glass_peach"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_brewing/wither.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:midnight_chip"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/bone_meal.json",
+    "output": "minecraft:bone_meal",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fissure_plum"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/dragon_breath.json",
+    "output": "minecraft:dragon_breath",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_bloodstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/dragonrot_bucket.json",
+    "output": "pastel:dragonrot_bucket",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/experience_bottle.json",
+    "output": "minecraft:experience_bottle",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/honey_bottle.json",
+    "output": "minecraft:honey_bottle",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/lava_bucket.json",
+    "output": "minecraft:lava_bucket",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/liquid_crystal_bucket.json",
+    "output": "pastel:liquid_crystal_bucket",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/midnight_solution_bucket.json",
+    "output": "pastel:midnight_solution_bucket",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:midnight_chip",
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/milk_bucket.json",
+    "output": "minecraft:milk_bucket",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/powder_snow_bucket.json",
+    "output": "minecraft:powder_snow_bucket",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_crafting/water_bucket.json",
+    "output": "minecraft:water_bucket",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/bitter_oils.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bitter_oils"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/bone_ash.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bone_ash"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/citrine_powder.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:citrine_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/fissure_plum.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fissure_plum"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/midnight_chip.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:midnight_chip"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/moonstruck_nectar.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/nectardew_burgeon.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nectardew_burgeon"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/nightdew_sprout.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/paltaeria_fragments.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:paltaeria_fragments"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/prickly_bayleaf.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:prickly_bayleaf"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/pure_echo.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_echo"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/pure_glowstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_glowstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/pure_lapis.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_lapis"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/quitoxic_powder.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/raw_azurite.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_azurite"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/raw_bloodstone.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:raw_bloodstone"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/star_fragment.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:star_fragment"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/potion_workshop_reacting/topaz_powder.json",
+    "output": null,
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:topaz_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/blood_orchid.json",
+    "output": "pastel:blood_orchid",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blood_orchid_petal"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/head_fusion/piglin.json",
+    "output": "minecraft:piglin_head",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pig_head",
+      "pastel:pillager_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/heart_of_the_sea.json",
+    "output": "minecraft:heart_of_the_sea",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:moonstruck_nectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/allay.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:allay_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/armadillo.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:armadillo_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/axolotl_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:axolotl_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/axolotl_brown.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:axolotl_wild_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/axolotl_cyan.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:axolotl_cyan_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/axolotl_gold.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:axolotl_gold_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/axolotl_leucistic.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:axolotl_leucistic_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/bat.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bat_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/bee.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bee_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/blaze.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:blaze_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/bogged.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:bogged_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/breeze.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:breeze_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/camel.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:camel_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/cat.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:cat_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/cave_spider.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:cave_spider_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/chicken.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:chicken_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/cow.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:cow_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/dolphin.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:dolphin_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/donkey.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:donkey_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/drowned.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:drowned_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/egg_laying_wooly_pig.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:egg_laying_wooly_pig_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/elder_guardian.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:elder_guardian_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/enderman.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:enderman_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/endermite.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:endermite_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/eraser.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:eraser_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/evoker.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:evoker_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/fox.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fox_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/fox_arctic.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:fox_arctic_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/frog_cold.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:frog_cold_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/frog_temperate.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:frog_temperate_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/frog_warm.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:frog_warm_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/ghast.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:ghast_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/glow_squid.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:glow_squid_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/goat.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:goat_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/guardian.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:guardian_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/hoglin.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:hoglin_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/horse.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:horse_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/husk.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:husk_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/illusioner.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:illusioner_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/iron_golem.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:iron_golem_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/kindling.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:kindling_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_black.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_black_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_brown.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_brown_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_cyan.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_cyan_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_gray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_gray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_green.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_green_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_light_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_light_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_light_gray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_light_gray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_lime.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_lime_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_magenta.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_magenta_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_orange.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_orange_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_pink.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_pink_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_purple.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_purple_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_red.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_red_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_white.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_white_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/lizard_yellow.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:lizard_yellow_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/llama.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:llama_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/magma_cube.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:magma_cube_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/mooshroom_brown.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:mooshroom_brown_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/mooshroom_red.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:mooshroom_red_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/mule.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:mule_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/ocelot.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:ocelot_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/panda.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:panda_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/parrot_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:parrot_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/parrot_cyan.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:parrot_cyan_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/parrot_gray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:parrot_gray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/parrot_green.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:parrot_green_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/parrot_red.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:parrot_red_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/phantom.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:phantom_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/pig.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pig_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/piglin_brute.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:piglin_brute_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/pillager.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pillager_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/polar_bear.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:polar_bear_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/preservation_turret.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:preservation_turret_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/pufferfish.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pufferfish_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/rabbit.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:rabbit_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/ravager.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:ravager_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/salmon.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:salmon_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/sheep.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:sheep_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_black.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_black_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_brown.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_brown_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_cyan.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_cyan_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_gray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_gray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_green.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_green_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_light_blue.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_light_blue_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_light_gray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_light_gray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_lime.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_lime_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_magenta.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_magenta_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_orange.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_orange_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_pink.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_pink_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_purple.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_purple_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_red.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_red_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_white.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_white_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/shulker_yellow.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:shulker_yellow_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/silverfish.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:silverfish_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/skeleton_horse.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:skeleton_horse_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/slime.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:slime_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/sniffer.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:sniffer_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/snow_golem.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:snow_golem_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/spider.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:spider_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/squid.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:squid_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/stray.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:stray_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/strider.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:strider_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/tadpole.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:tadpole_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/tropical_fish.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:tropical_fish_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/turtle.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:turtle_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/vex.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:vex_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/villager.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:villager_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/vindicator.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:vindicator_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/wandering_trader.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:wandering_trader_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/warden.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:warden_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/wither.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:wither_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/wolf.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:wolf_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/zoglin.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:zoglin_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/zombie_horse.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:zombie_horse_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/zombie_villager.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:zombie_villager_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/memories/zombified_piglin.json",
+    "output": "pastel:memory",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:zombified_piglin_head"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/nectar_lance.json",
+    "output": "pastel:nectar_lance",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:evernectar"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/ominous_sapling.json",
+    "output": "pastel:ominous_sapling",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:spectral_shard"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/secret/chorus_flower.json",
+    "output": "minecraft:chorus_flower",
+    "reason": "more than nine crafting inputs",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/spirit_instiller/secret/germinated_jade_vine_crossbreeding.json",
+    "output": "pastel:germinated_jade_vine_bulb",
+    "reason": "more than nine crafting inputs",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/fermented_spider_eyes.json",
+    "output": "minecraft:fermented_spider_eye",
+    "reason": "removed workstation",
+    "ingredients": []
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/honey.json",
+    "output": "minecraft:honey_bottle",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:aloe_leaf",
+      "pastel:sawblade_holly_berry"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/incandescent_amalgam_doom.json",
+    "output": "pastel:incandescent_amalgam",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/incandescent_amalgam_pure.json",
+    "output": "pastel:incandescent_amalgam",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_alcohol",
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/incandescent_amalgam_simple.json",
+    "output": "pastel:incandescent_amalgam",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:pure_alcohol",
+      "pastel:quitoxic_powder"
+    ]
+  },
+  {
+    "path": "data/pastel/recipe/titration_barrel/night_salts.json",
+    "output": "pastel:night_salts",
+    "reason": "removed ingredients",
+    "ingredients": [
+      "pastel:nightdew_sprout"
+    ]
+  }
+]

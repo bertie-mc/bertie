@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "minecraft:looting"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:enchantment_upgrade",
+  "bulk_item": {
+    "item": "minecraft:light_blue_dye"
+  },
+  "enchantment": "minecraft:looting",
+  "group": "minecraft",
+  "item_scaling": {
+    "type": "pastel:indexed",
+    "indexes": [
+      8,
+      32,
+      128,
+      512,
+      512
+    ]
+  },
+  "level_cap": 6,
+  "required_advancement": "pastel:unlocks/enchantments/vanilla_luck",
+  "xp_scaling": {
+    "type": "pastel:indexed",
+    "indexes": [
+      200,
+      500,
+      2400,
+      10000,
+      40000
+    ]
+  }
+}

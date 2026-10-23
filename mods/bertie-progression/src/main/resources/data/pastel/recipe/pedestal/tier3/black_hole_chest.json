@@ -1,31 +1,29 @@
 {
-  "type": "pastel:pedestal",
-  "time": 3600,
-  "tier": "advanced",
-  "colors": {
-    "pastel:cyan": 4,
-    "pastel:magenta": 8,
-    "pastel:yellow": 4,
-    "pastel:white": 0,
-    "pastel:black": 2
-  },
-  "experience": 4.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "BBB",
     "XSX",
     "YYY"
   ],
   "key": {
-    "B": "pastel:blue_pigment",
-    "Y": "pastel:polished_basalt",
-    "X": "pastel:polished_calcite",
-    "S": "minecraft:magma_cream"
+    "B": {
+      "item": "minecraft:blue_dye"
+    },
+    "Y": {
+      "item": "pastel:polished_basalt"
+    },
+    "X": {
+      "item": "pastel:polished_calcite"
+    },
+    "S": {
+      "item": "minecraft:magma_cream"
+    }
   },
   "result": {
     "id": "pastel:black_hole_chest",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/blocks/black_hole_chest",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

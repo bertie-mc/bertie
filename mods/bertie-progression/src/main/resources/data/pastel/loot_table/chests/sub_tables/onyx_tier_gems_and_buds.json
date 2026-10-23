@@ -20,22 +20,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:small_onyx_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:medium_onyx_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:large_onyx_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:onyx_cluster"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:amethyst_shard",
           "functions": [

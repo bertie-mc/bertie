@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "pastel:pure_globette_end"
+    }
+  },
+  "result": {
+    "id": "pastel:pure_globette_end_block",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "pastel:integration_pack_active",
+      "integration_pack": "gobber2"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

@@ -60,7 +60,9 @@ Withdrawn Pastel furniture, decorations and fixed inventory contents are removed
 structure templates load; existing chunks are unchanged. Retained pigment-dependent
 progression recipes temporarily use the crafting table without ink costs. Bedrock helmet,
 chestplate and leggings retain their items but have no crafting recipes. Spirit Instiller
-and Moonstone synthesis remain pending a replacement station.
+and Moonstone synthesis are removed. Retained pedestal recipes use ordinary crafting;
+unresolved recipes with retired unique ingredients remain disabled pending selection.
+Humus lake features generate water inside their existing Hornslake lining.
 
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.

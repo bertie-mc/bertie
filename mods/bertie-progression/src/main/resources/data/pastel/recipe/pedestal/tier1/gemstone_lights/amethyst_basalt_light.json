@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "BSB",
+    "TTT"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:amethyst_block"
+    },
+    "T": {
+      "item": "pastel:polished_basalt"
+    },
+    "S": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "id": "pastel:amethyst_basalt_light",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

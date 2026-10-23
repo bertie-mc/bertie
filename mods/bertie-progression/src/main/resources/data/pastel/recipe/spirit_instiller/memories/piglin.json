@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "item": "minecraft:piglin_head"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "id": "pastel:memory",
+    "components": {
+      "entity_data": {
+        "id": "minecraft:piglin"
+      },
+      "pastel:memory": {
+        "ticks_to_manifest": 8
+      }
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

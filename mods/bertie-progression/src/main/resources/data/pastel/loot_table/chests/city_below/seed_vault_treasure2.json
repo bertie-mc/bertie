@@ -28,10 +28,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:glistering_melon_seeds"
-        },
-        {
-          "type": "minecraft:item",
           "name": "pastel:nephrite_blossom_bulb",
           "weight": 2
         },

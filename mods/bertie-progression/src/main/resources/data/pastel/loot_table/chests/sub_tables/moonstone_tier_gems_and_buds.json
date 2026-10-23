@@ -20,22 +20,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:small_moonstone_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:medium_moonstone_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:large_moonstone_bud"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:moonstone_cluster"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:amethyst_shard",
           "functions": [

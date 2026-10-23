@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    "SS",
+    "CC"
+  ],
+  "key": {
+    "S": {
+      "tag": "pastel:ebony_noxcap_stems"
+    },
+    "C": {
+      "item": "pastel:ebony_noxcap_block"
+    }
+  },
+  "result": {
+    "id": "pastel:ebony_noxwood_pillar",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

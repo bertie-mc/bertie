@@ -49,19 +49,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:glistering_melon_seeds",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
         }
       ]
     }

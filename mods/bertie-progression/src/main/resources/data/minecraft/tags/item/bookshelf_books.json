@@ -1,0 +1,128 @@
+{
+  "replace": true,
+  "values": [
+    "#apothic_enchanting:tomes",
+    "#pastel:cookbooks",
+    {
+      "id": "pastel:gilded_book",
+      "required": false
+    },
+    {
+      "id": "patchouli:guide_book",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_tome",
+      "required": false
+    },
+    {
+      "id": "ancient_forgemastery:enchanting_tome",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:guide_book",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:animal_guidebook",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:hunter_guidebook",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:ode_to_living",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:sanguinary_handbook",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:enchantment_transposer",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:curse_transposer",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:bless_amplifier",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_acknowledgment",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_twist",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_bless",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:the_infinitum",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:void_tome",
+      "required": false
+    },
+    {
+      "id": "exposure:album",
+      "required": false
+    },
+    {
+      "id": "exposure:signed_album",
+      "required": false
+    },
+    "#irons_spellbooks:add_to_lectern_and_bookshelf",
+    {
+      "id": "irons_spellbooks:chained_book",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:furled_map",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:furled_map_ancient",
+      "required": false
+    },
+    {
+      "id": "malum:encyclopedia_arcana",
+      "required": false
+    },
+    {
+      "id": "malum:encyclopedia_esoterica",
+      "required": false
+    },
+    {
+      "id": "modonomicon:modonomicon",
+      "required": false
+    },
+    {
+      "id": "minecraft:book",
+      "required": false
+    },
+    {
+      "id": "minecraft:written_book",
+      "required": false
+    },
+    {
+      "id": "minecraft:enchanted_book",
+      "required": false
+    },
+    {
+      "id": "minecraft:writable_book",
+      "required": false
+    },
+    {
+      "id": "minecraft:knowledge_book",
+      "required": false
+    }
+  ]
+}

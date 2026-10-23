@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TMT",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:smooth_basalt"
+    },
+    "T": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "M": {
+      "item": "pastel:mermaids_gem"
+    }
+  },
+  "result": {
+    "id": "pastel:tender_pickaxe",
+    "components": {
+      "enchantments": {
+        "minecraft:silk_touch": 1
+      }
+    },
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

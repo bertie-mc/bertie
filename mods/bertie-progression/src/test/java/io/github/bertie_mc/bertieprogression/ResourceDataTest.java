@@ -27,6 +27,47 @@ class ResourceDataTest {
     }
 
     @Test
+    void retainedPastelExamplesUseCraftingWithoutInk() throws IOException {
+        for (String path : List.of(
+                "data/pastel/recipe/pedestal/tier1/gemstone_lights/amethyst_calcite_light.json",
+                "data/pastel/recipe/pedestal/tier1/runes/onyx_chiseled_basalt_from_shards.json",
+                "data/pastel/recipe/pedestal/tier1/glass/radiant_glass.json",
+                "data/pastel/recipe/pedestal/tier1/pylons/amethyst.json")) {
+            JsonObject recipe = data(path);
+            assertEquals("minecraft:crafting_shaped", recipe.get("type").getAsString(), path);
+            assertTrue(!recipe.has("colors") && !recipe.has("required_advancement"), path);
+        }
+        JsonObject lamp = data("data/pastel/recipe/pedestal/tier1/gemstone_lights/amethyst_calcite_light.json");
+        assertEquals(
+                "minecraft:glowstone",
+                lamp.getAsJsonObject("key").getAsJsonObject("S").get("item").getAsString());
+        assertEquals(4, lamp.getAsJsonObject("result").get("count").getAsInt());
+    }
+
+    @Test
+    void humusLakesUseWaterAndMoonstoneSynthesisIsAbsent() throws IOException {
+        JsonObject lake = data("data/pastel/worldgen/configured_feature/lake_humus.json");
+        assertEquals(
+                "minecraft:water",
+                lake.getAsJsonObject("config")
+                        .getAsJsonObject("fluid")
+                        .getAsJsonObject("state")
+                        .get("Name")
+                        .getAsString());
+        assertTrue(!Files.exists(RESOURCES.resolve("data/bertieprogression/recipe/pastel/moonstone_synthesis.json")));
+        JsonObject shrine = data("data/pastel/recipe/pedestal/tier2/fusion_shrine_basalt.json");
+        assertEquals("minecraft:crafting_shaped", shrine.get("type").getAsString());
+        for (String key : List.of("T", "C")) {
+            assertEquals(
+                    "pastel:polished_amethyst_block",
+                    shrine.getAsJsonObject("key")
+                            .getAsJsonObject(key)
+                            .get("item")
+                            .getAsString());
+        }
+    }
+
+    @Test
     void travellerUpgradeRecipesCannotReintroduceRemovedEquipment() throws IOException {
         Path directory = RESOURCES.resolve("data/twilightforest/recipe/add_modifier_to_travellers_gear");
         try (var paths = Files.walk(directory)) {

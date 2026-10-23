@@ -71,25 +71,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:small_bismuth_bud",
-          "weight": 3,
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "killer",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "pastel:lategame/collect_bismuth": true
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:small_amethyst_bud",
           "weight": 3,
           "conditions": [
@@ -101,44 +82,6 @@
                   "type": "player",
                   "advancements": {
                     "pastel:hidden/collect_shards/amethyst": true
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:small_onyx_bud",
-          "weight": 3,
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "killer",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "pastel:create_onyx_shard": true
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:small_moonstone_bud",
-          "weight": 3,
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "killer",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "advancements": {
-                    "pastel:lategame/collect_moonstone": true
                   }
                 }
               }

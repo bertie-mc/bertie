@@ -23,18 +23,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:small_echo_bud",
-          "conditions": [
-            {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "biome": "minecraft:deep_dark"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:spider_eye"
         },
         {

@@ -1,21 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:malachite_glass_arrow",
-      "required": false
-    },
-    {
-      "id": "pastel:amethyst_glass_arrow",
-      "required": false
-    },
-    {
-      "id": "pastel:onyx_glass_arrow",
-      "required": false
-    },
-    {
-      "id": "pastel:moonstone_glass_arrow",
-      "required": false
-    }
-  ]
+  "values": []
 }

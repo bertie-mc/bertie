@@ -1,31 +1,29 @@
 {
-  "type": "pastel:pedestal",
-  "time": 600,
-  "tier": "advanced",
-  "colors": {
-    "pastel:cyan": 2,
-    "pastel:magenta": 2,
-    "pastel:yellow": 2,
-    "pastel:white": 0,
-    "pastel:black": 1
-  },
-  "experience": 2.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "YGY",
     "SSS",
     "PSP"
   ],
   "key": {
-    "S": "pastel:stardust",
-    "G": "minecraft:glowstone",
-    "Y": "pastel:yellow_pigment",
-    "P": "pastel:purple_pigment"
+    "S": {
+      "item": "pastel:stardust"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "Y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    }
   },
   "result": {
     "id": "pastel:ethereal_platform",
     "count": 8
   },
-  "required_advancement": "pastel:unlocks/blocks/ethereal_platform",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

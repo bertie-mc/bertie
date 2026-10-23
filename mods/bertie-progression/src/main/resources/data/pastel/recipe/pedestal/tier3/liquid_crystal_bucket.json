@@ -1,32 +1,32 @@
 {
-  "type": "pastel:pedestal",
-  "time": 240,
-  "tier": "advanced",
-  "colors": {
-    "pastel:magenta": 1,
-    "pastel:yellow": 1,
-    "pastel:cyan": 1,
-    "pastel:black": 1,
-    "pastel:white": 0
-  },
-  "experience": 1.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "PMP",
     "SBS",
     "YMY"
   ],
   "key": {
-    "P": "pastel:pink_pigment",
-    "Y": "pastel:yellow_pigment",
-    "B": "minecraft:bucket",
-    "S": "minecraft:glowstone",
-    "M": "pastel:mermaids_gem"
+    "P": {
+      "item": "minecraft:pink_dye"
+    },
+    "Y": {
+      "item": "minecraft:yellow_dye"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "S": {
+      "item": "minecraft:glowstone"
+    },
+    "M": {
+      "item": "pastel:mermaids_gem"
+    }
   },
   "result": {
     "id": "pastel:liquid_crystal_bucket",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/blocks/liquid_crystal",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

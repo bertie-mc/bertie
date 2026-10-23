@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WXW",
+    "XXX",
+    "WXW"
+  ],
+  "key": {
+    "W": {
+      "item": "pastel:polished_basalt"
+    },
+    "X": {
+      "item": "pastel:onyx_shard"
+    }
+  },
+  "result": {
+    "id": "pastel:onyx_chiseled_basalt",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

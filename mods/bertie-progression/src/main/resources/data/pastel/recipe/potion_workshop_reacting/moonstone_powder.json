@@ -1,0 +1,14 @@
+{
+  "type": "pastel:potion_workshop_reacting",
+  "item": "pastel:moonstone_shard",
+  "modifiers": {
+    "make_effects_positive": true
+  },
+  "required_advancement": "pastel:lategame/collect_moonstone",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

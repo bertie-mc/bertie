@@ -1,31 +1,26 @@
 {
-  "type": "pastel:pedestal",
-  "group": "semi_permeable_glass",
-  "time": 80,
-  "tier": "advanced",
-  "colors": {
-    "pastel:magenta": 4,
-    "pastel:yellow": 2,
-    "pastel:cyan": 0,
-    "pastel:black": 0,
-    "pastel:white": 0
-  },
-  "experience": 1.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "GPG",
     "PSP",
     "GPG"
   ],
   "key": {
-    "S": "minecraft:glowstone",
-    "P": "pastel:purple_pigment",
-    "G": "minecraft:glass"
+    "S": {
+      "item": "minecraft:glowstone"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
   },
   "result": {
     "id": "pastel:radiant_semi_permeable_glass",
     "count": 6
   },
-  "required_advancement": "pastel:midgame/build_advanced_pedestal_structure",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

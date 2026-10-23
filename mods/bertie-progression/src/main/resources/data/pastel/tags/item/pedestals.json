@@ -1,21 +1,4 @@
 {
   "replace": true,
-  "values": [
-    {
-      "id": "pastel:pedestal_basic_amethyst",
-      "required": false
-    },
-    {
-      "id": "pastel:pedestal_all_basic",
-      "required": false
-    },
-    {
-      "id": "pastel:pedestal_onyx",
-      "required": false
-    },
-    {
-      "id": "pastel:pedestal_moonstone",
-      "required": false
-    }
-  ]
+  "values": []
 }

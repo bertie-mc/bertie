@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "GXG",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "pastel:chestnut_noxcap_stem"
+    },
+    "G": {
+      "item": "pastel:chestnut_noxcap_gills"
+    },
+    "X": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "id": "pastel:chestnut_noxwood_light",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

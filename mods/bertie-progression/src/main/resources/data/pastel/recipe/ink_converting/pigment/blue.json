@@ -1,0 +1,17 @@
+{
+  "type": "pastel:ink_converting",
+  "ingredient": [
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "ink_color": "pastel:blue",
+  "amount": 100,
+  "required_advancement": "pastel:hidden/collect_pigment/blue",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

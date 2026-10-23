@@ -16,11 +16,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "pastel:glistering_melon_seeds",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:iron_nugget",
           "weight": 7
         },

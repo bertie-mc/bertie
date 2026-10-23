@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "minecraft:riptide"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:enchantment_upgrade",
+  "bulk_item": {
+    "item": "minecraft:brown_dye"
+  },
+  "enchantment": "minecraft:riptide",
+  "group": "minecraft",
+  "item_scaling": {
+    "type": "pastel:doubling",
+    "scaling_factor": 2.0,
+    "scaling_value": 8
+  },
+  "level_cap": 3,
+  "required_advancement": "pastel:unlocks/enchantments/vanilla_trident",
+  "xp_scaling": {
+    "type": "pastel:indexed",
+    "indexes": [
+      200,
+      2400,
+      10000
+    ]
+  }
+}

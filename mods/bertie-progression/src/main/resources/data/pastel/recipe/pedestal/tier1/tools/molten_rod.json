@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " PB",
+    "PBS",
+    "B S"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:orange_dye"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "pastel:molten_rod",
+    "components": {
+      "enchantments": {
+        "pastel:foundry": 1
+      }
+    },
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

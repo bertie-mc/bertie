@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "pastel:exuberance"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:enchantment_upgrade",
+  "bulk_item": {
+    "item": "minecraft:purple_dye"
+  },
+  "enchantment": "pastel:exuberance",
+  "item_scaling": {
+    "type": "pastel:indexed",
+    "indexes": [
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      512,
+      512
+    ]
+  },
+  "level_cap": 10,
+  "required_advancement": "pastel:unlocks/enchantments/exuberance",
+  "xp_scaling": {
+    "type": "pastel:linear",
+    "scaling_value": 200,
+    "start": 400
+  }
+}

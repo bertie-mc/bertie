@@ -1,32 +1,32 @@
 {
-  "type": "pastel:pedestal",
-  "time": 1600,
-  "tier": "advanced",
-  "colors": {
-    "pastel:cyan": 4,
-    "pastel:magenta": 0,
-    "pastel:yellow": 2,
-    "pastel:black": 1,
-    "pastel:white": 0
-  },
-  "experience": 2.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "CTC",
     "PGP",
     "BBB"
   ],
   "key": {
-    "B": "pastel:polished_basalt",
-    "P": "pastel:polished_calcite",
-    "C": "minecraft:copper_ingot",
-    "G": "minecraft:magma_cream",
-    "T": "pastel:red_pigment"
+    "B": {
+      "item": "pastel:polished_basalt"
+    },
+    "P": {
+      "item": "pastel:polished_calcite"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "minecraft:magma_cream"
+    },
+    "T": {
+      "item": "minecraft:red_dye"
+    }
   },
   "result": {
     "id": "pastel:fabrication_chest",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/blocks/fabrication_chest",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

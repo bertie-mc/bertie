@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "item": "pastel:dragonbone_chunk",
+      "count": 8
+    },
+    {
+      "tag": "pastel:kindling_food"
+    }
+  ],
+  "result": {
+    "id": "pastel:memory",
+    "components": {
+      "entity_data": {
+        "id": "pastel:kindling"
+      },
+      "pastel:memory": {
+        "ticks_to_manifest": 8
+      }
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

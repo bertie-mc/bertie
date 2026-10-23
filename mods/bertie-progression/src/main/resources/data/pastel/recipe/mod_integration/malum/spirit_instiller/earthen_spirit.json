@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "malum:null_slate"
+    },
+    {
+      "item": "malum:null_slate"
+    },
+    {
+      "item": "pastel:bedrock_dust"
+    },
+    {
+      "item": "minecraft:brown_dye",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "malum:earthen_spirit",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

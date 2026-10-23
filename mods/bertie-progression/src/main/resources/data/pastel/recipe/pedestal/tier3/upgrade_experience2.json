@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pastel:upgrade_experience"
+    },
+    {
+      "item": "pastel:moonstone_shard"
+    }
+  ],
+  "result": {
+    "id": "pastel:upgrade_experience2",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

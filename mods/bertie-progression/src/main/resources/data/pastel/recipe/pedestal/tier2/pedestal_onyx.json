@@ -1,34 +1,17 @@
 {
-  "type": "pastel:pedestal",
-  "time": 200,
-  "tier": "simple",
-  "colors": {
-    "pastel:cyan": 0,
-    "pastel:magenta": 0,
-    "pastel:yellow": 0,
-    "pastel:white": 0,
-    "pastel:black": 0
-  },
-  "experience": 8.0,
-  "pattern": [
-    "SOS",
-    "RRR"
-  ],
-  "key": {
-    "O": "pastel:onyx_shard",
-    "S": "minecraft:glowstone",
-    "R": "minecraft:obsidian"
-  },
-  "result": {
-    "id": "pastel:pedestal_onyx",
-    "count": 1
-  },
-  "required_advancement": "pastel:create_onyx_shard",
-  "disable_yield_upgrades": true,
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

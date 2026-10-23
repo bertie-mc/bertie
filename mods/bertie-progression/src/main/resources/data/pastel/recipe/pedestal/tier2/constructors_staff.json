@@ -1,30 +1,26 @@
 {
-  "type": "pastel:pedestal",
-  "time": 1200,
-  "tier": "simple",
-  "colors": {
-    "pastel:cyan": 6,
-    "pastel:magenta": 0,
-    "pastel:yellow": 2,
-    "pastel:white": 0,
-    "pastel:black": 0
-  },
-  "experience": 2.0,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     " OB",
     " SO",
     "S  "
   ],
   "key": {
-    "S": "minecraft:stick",
-    "O": "pastel:orange_pigment",
-    "B": "minecraft:magma_cream"
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    },
+    "B": {
+      "item": "minecraft:magma_cream"
+    }
   },
   "result": {
     "id": "pastel:constructors_staff",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/items/constructors_staff",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

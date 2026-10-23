@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    "SS",
+    "CC"
+  ],
+  "key": {
+    "S": {
+      "tag": "pastel:slate_noxcap_stems"
+    },
+    "C": {
+      "item": "pastel:slate_noxcap_block"
+    }
+  },
+  "result": {
+    "id": "pastel:slate_noxwood_pillar",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

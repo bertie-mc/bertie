@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:onyx_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_block",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_onyx_block",
+      "required": false
+    }
+  ]
+}

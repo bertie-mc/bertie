@@ -520,12 +520,6 @@ write(f"{R}/mechanical/exclusive/double_compressed_crafting_table.json",  # R41B
            {"C": "avaritia:compressed_crafting_table"},
            "avaritia:double_compressed_crafting_table"))
 
-# ---- Pastel ----
-write(f"{R}/pastel/moonstone_synthesis.json",              # R32A
-      instiller("pastel:moonstone_shard", 1, "pastel:bismuth_flake", "pastel:onyx_powder",
-                "pastel:moonstone_shard", 4, 400, 4.0))
-# R31R the 32-shard echo batch went with R31.
-
 # R25 proof-replication family was removed with the proof items.
 
 # ---- Avaritia capstone ----
@@ -5920,6 +5914,11 @@ for _feature in _pastel_worldgen_policy["biome_modifiers"]:
 for _feature in _pastel_worldgen_policy.get("configured_features", []):
     write(f"data/pastel/worldgen/configured_feature/{_feature}.json",
           {"type": "minecraft:no_op", "config": {}})
+write("data/pastel/worldgen/configured_feature/lake_humus.json", {
+    "type": "minecraft:lake", "config": {
+        "fluid": {"type": "minecraft:simple_state_provider",
+                  "state": {"Name": "minecraft:water", "Properties": {"level": "0"}}},
+        "barrier": {"type": "minecraft:simple_state_provider", "state": {"Name": "pastel:hornslake"}}}})
 
 _TOML = os.path.join(ROOT, "src", "main", "templates", "META-INF", "neoforge.mods.toml")
 _declared = set()

@@ -472,39 +472,25 @@
 		}
 		{
 			dependencies: ["6B00000000000016"]
-			icon: {
-				id: "pastel:pedestal_all_basic"
-			}
 			id: "6B0000000000003B"
 			rewards: [{
 				id: "6B0000000200003B"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6B0000000100003B"
-				item: { count: 1, id: "pastel:pedestal_all_basic" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 10.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B0000000000003A"]
-			icon: {
-				id: "pastel:pedestal_onyx"
-			}
 			id: "6B0000000000003C"
 			rewards: [{
 				id: "6B0000000200003C"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6B0000000100003C"
-				item: { count: 1, id: "pastel:pedestal_onyx" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 15.0d
 			y: 0.0d
 		}

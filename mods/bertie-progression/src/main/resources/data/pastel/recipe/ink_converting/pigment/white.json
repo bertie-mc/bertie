@@ -1,0 +1,17 @@
+{
+  "type": "pastel:ink_converting",
+  "ingredient": [
+    {
+      "item": "minecraft:white_dye"
+    }
+  ],
+  "ink_color": "pastel:white",
+  "amount": 100,
+  "required_advancement": "pastel:hidden/collect_pigment/white",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

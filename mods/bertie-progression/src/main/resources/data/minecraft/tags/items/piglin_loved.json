@@ -6,26 +6,6 @@
       "required": false
     },
     {
-      "id": "pastel:small_gold_bud",
-      "required": false
-    },
-    {
-      "id": "pastel:large_gold_bud",
-      "required": false
-    },
-    {
-      "id": "pastel:gold_cluster",
-      "required": false
-    },
-    {
-      "id": "pastel:glistering_melon",
-      "required": false
-    },
-    {
-      "id": "pastel:glistering_melon_seeds",
-      "required": false
-    },
-    {
       "id": "pastel:glistering_shooting_star",
       "required": false
     },

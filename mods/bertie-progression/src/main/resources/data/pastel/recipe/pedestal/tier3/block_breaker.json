@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "RSB",
+    "BBB"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "pastel:storm_stone"
+    },
+    "B": {
+      "item": "pastel:polished_bone_ash"
+    },
+    "C": {
+      "item": "pastel:pyrite"
+    }
+  },
+  "result": {
+    "id": "pastel:block_breaker",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

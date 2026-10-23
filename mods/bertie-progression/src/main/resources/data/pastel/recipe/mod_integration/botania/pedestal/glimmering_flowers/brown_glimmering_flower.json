@@ -1,26 +1,21 @@
 {
-  "type": "pastel:pedestal",
-  "group": "botania_glimmering_flowers",
-  "time": 100,
-  "tier": "basic",
-  "cyan": 0,
-  "magenta": 0,
-  "yellow": 0,
-  "white": 0,
-  "black": 0,
-  "experience": 0.1,
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "PS"
   ],
   "key": {
-    "P": "botania:brown_mystical_flower",
-    "S": "minecraft:glowstone"
+    "P": {
+      "item": "botania:brown_mystical_flower"
+    },
+    "S": {
+      "item": "minecraft:glowstone"
+    }
   },
   "result": {
     "id": "botania:brown_shiny_flower",
     "count": 1
   },
-  "required_advancement": "pastel:collect_shimmerstone",
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

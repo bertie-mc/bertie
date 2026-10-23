@@ -1,0 +1,48 @@
+{
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:midnight_solution"
+  },
+  "ingredients": [
+    "minecraft:iron_sword",
+    {
+      "item": "pastel:pyrite_chunk",
+      "count": 4
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 2
+    },
+    {
+      "item": "pastel:frostbite_essence",
+      "count": 8
+    },
+    {
+      "item": "minecraft:red_dye",
+      "count": 4
+    },
+    {
+      "item": "minecraft:purple_dye",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "pastel:nightfalls_blade"
+  },
+  "required_advancement": "pastel:unlocks/equipment/nightfalls_blade",
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "lightning_on_shrine",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

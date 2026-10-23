@@ -2,13 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " D ",
-    " Q ",
-    " D "
+    "PDP",
+    "OQO",
+    "PDP"
   ],
   "key": {
+    "P": {
+      "item": "minecraft:pink_dye"
+    },
     "D": {
       "item": "create:rose_quartz"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
     },
     "Q": {
       "tag": "c:gems/quartz"

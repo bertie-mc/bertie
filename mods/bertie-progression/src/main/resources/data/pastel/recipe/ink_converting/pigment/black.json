@@ -1,0 +1,17 @@
+{
+  "type": "pastel:ink_converting",
+  "ingredient": [
+    {
+      "item": "minecraft:black_dye"
+    }
+  ],
+  "ink_color": "pastel:black",
+  "amount": 100,
+  "required_advancement": "pastel:hidden/collect_pigment/black",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

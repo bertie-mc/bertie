@@ -1,0 +1,14 @@
+{
+  "type": "pastel:potion_workshop_reacting",
+  "item": "minecraft:amethyst_shard",
+  "modifiers": {
+    "flat_duration_bonus_ticks": 1200
+  },
+  "required_advancement": "pastel:hidden/collect_shards/amethyst",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

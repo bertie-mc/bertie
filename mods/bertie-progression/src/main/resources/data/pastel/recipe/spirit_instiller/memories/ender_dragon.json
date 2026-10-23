@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "tag": "pastel:memory_bonding_agents"
+    },
+    {
+      "item": "minecraft:dragon_head"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "result": {
+    "id": "pastel:memory",
+    "components": {
+      "entity_data": {
+        "id": "minecraft:ender_dragon"
+      },
+      "pastel:memory": {
+        "ticks_to_manifest": 64
+      }
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pastel:pure_globette_block"
+    }
+  ],
+  "result": {
+    "id": "pastel:pure_globette",
+    "count": 9
+  },
+  "neoforge:conditions": [
+    {
+      "type": "pastel:integration_pack_active",
+      "integration_pack": "gobber2"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

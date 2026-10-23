@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:moonstone_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_moonstone_block",
+      "required": false
+    }
+  ]
+}

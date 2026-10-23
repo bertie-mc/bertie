@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "pastel:enchantments_exist",
+      "values": [
+        "minecraft:power"
+      ]
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ],
+  "type": "pastel:enchantment_upgrade",
+  "bulk_item": {
+    "item": "minecraft:red_dye"
+  },
+  "enchantment": "minecraft:power",
+  "group": "minecraft",
+  "item_scaling": {
+    "type": "pastel:doubling",
+    "scaling_value": 8
+  },
+  "level_cap": 8,
+  "required_advancement": "pastel:unlocks/enchantments/vanilla_projectile",
+  "xp_scaling": {
+    "type": "pastel:doubling",
+    "scaling_value": 200
+  }
+}

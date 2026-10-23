@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pastel:storm_stone"
+    },
+    {
+      "item": "pastel:upgrade_speed"
+    }
+  ],
+  "result": {
+    "id": "pastel:upgrade_speed2",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

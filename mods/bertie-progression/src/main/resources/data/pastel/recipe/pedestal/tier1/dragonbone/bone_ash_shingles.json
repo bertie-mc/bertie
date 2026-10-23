@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#  ",
+    "#B ",
+    "##B"
+  ],
+  "key": {
+    "#": {
+      "item": "pastel:polished_bone_ash"
+    },
+    "B": {
+      "item": "pastel:dragonbone_chunk"
+    }
+  },
+  "result": {
+    "id": "pastel:bone_ash_shingles",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}
