@@ -8592,19 +8592,6 @@
 		}
 		{
 			icon: {
-				id: "mekanism:portable_qio_dashboard"
-			}
-			id: "4C000000000002AF"
-			tasks: [{
-				id: "4C000000010002AF"
-				item: { count: 1, id: "mekanism:portable_qio_dashboard" }
-				type: "item"
-			}]
-			x: 66.0d
-			y: 25.0d
-		}
-		{
-			icon: {
 				id: "mekanism:portable_teleporter"
 			}
 			id: "4C000000000002B0"

@@ -1148,29 +1148,6 @@
 			y: 6.692d
 		}
 		{
-			id: "6130B0FD941D9A87"
-			icon: {
-				id: "mekanism:oredictionificator"
-			}
-			tasks: [
-				{
-					id: "61B1E1801A2DAA28"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:oredictionificator"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -10.872d
-			y: 1.843d
-		}
-		{
 			id: "612C871199A18CFB"
 			icon: {
 				id: "mekanism:teleporter"
@@ -1248,29 +1225,6 @@
 			]
 			x: 6.75d
 			y: 4.5d
-		}
-		{
-			id: "61B961C7A9FF0E37"
-			icon: {
-				id: "mekanism:security_desk"
-			}
-			tasks: [
-				{
-					id: "6167862862C4260A"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:security_desk"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -6.608d
-			y: -7.501d
 		}
 		{
 			id: "61358817E29C9D6B"
@@ -1433,144 +1387,6 @@
 			]
 			x: 3.5d
 			y: 7.0d
-		}
-		{
-			id: "61F26B48478DFF5B"
-			icon: {
-				id: "mekanism:industrial_alarm"
-			}
-			tasks: [
-				{
-					id: "613520EDB3B7273D"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:industrial_alarm"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -5.271d
-			y: 3.972d
-		}
-		{
-			id: "61C6B6C1955D45E1"
-			icon: {
-				id: "mekanism:qio_drive_array"
-			}
-			tasks: [
-				{
-					id: "61ECB627F34214D6"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:qio_drive_array"
-					}
-				}
-			]
-			dependencies: [
-				"61588EDEF3EE4AFB"
-			]
-			x: 5.0d
-			y: 0.75d
-		}
-		{
-			id: "612A6CB0444291F4"
-			icon: {
-				id: "mekanism:qio_dashboard"
-			}
-			tasks: [
-				{
-					id: "61D93BD0AF3FDC23"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:qio_dashboard"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -10.622d
-			y: -2.093d
-		}
-		{
-			id: "61C4E5A8ECF470E0"
-			icon: {
-				id: "mekanism:qio_exporter"
-			}
-			tasks: [
-				{
-					id: "6107682B0BDF5A4E"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:qio_exporter"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -12.992d
-			y: -4.145d
-		}
-		{
-			id: "618C05D3E0FBF597"
-			icon: {
-				id: "mekanism:qio_importer"
-			}
-			tasks: [
-				{
-					id: "61041B4FF35FA9E0"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:qio_importer"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -8.62d
-			y: -3.617d
-		}
-		{
-			id: "6164719100DB04C2"
-			icon: {
-				id: "mekanism:qio_redstone_adapter"
-			}
-			tasks: [
-				{
-					id: "61459D19D22F1E4C"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:qio_redstone_adapter"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -11.021d
-			y: -5.722d
 		}
 		{
 			id: "6110D90C91445E34"
@@ -2107,30 +1923,6 @@
 			]
 			x: 2.0d
 			y: -1.0d
-		}
-		{
-			id: "611182E4AB2921C7"
-			icon: {
-				id: "refinedstorage_mekanism_integration:64b_chemical_storage_block"
-			}
-			tasks: [
-				{
-					id: "61FFE2220551A2E2"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(refinedstorage_mekanism_integration:64b_chemical_storage_block)item(refinedstorage_mekanism_integration:1024b_chemical_storage_block)item(refinedstorage_mekanism_integration:256b_chemical_storage_block)item(refinedstorage_mekanism_integration:8192b_chemical_storage_block))"
-							"minecraft:custom_name": "{\"text\": \"Chemical Storage Block\", \"italic\": false}"
-						}
-					}
-				}
-			]
-			x: -8.25d
-			y: -0.75d
 		}
 		{
 			id: "61279294059E8A75"

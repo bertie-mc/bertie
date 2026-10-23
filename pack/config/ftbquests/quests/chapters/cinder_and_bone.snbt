@@ -35,7 +35,7 @@
 					type: "dimension"
 				}
 			]
-			x: 0.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -63,8 +63,8 @@
 					type: "item"
 				}
 			]
-			x: 9d
-			y: -3d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -92,7 +92,7 @@
 					value: 1L
 				}
 			]
-			x: 10.5d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -120,7 +120,7 @@
 					type: "item"
 				}
 			]
-			x: 9d
+			x: 10.5d
 			y: -1.5d
 		}
 		{
@@ -148,8 +148,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: -3d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -177,8 +177,8 @@
 					value: 1L
 				}
 			]
-			x: 12d
-			y: -3d
+			x: 13.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -318,8 +318,8 @@
 					type: "item"
 				}
 			]
-			x: 12d
-			y: 3d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -347,7 +347,7 @@
 				}
 			]
 			x: 13.5d
-			y: 3d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -374,8 +374,8 @@
 					type: "structure"
 				}
 			]
-			x: 15d
-			y: 3d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -404,29 +404,7 @@
 				}
 			]
 			x: 16.5d
-			y: 4.5d
-		}
-		{
-			y: 0d
-			x: 6d
-			dependencies: [
-				"6B00000000006203"
-			]
-			id: "6B00000000000014"
-			icon: {
-				id: "malum:rotting_essence"
-			}
-			tasks: [
-				{
-					id: "6B00000001000014"
-					count: 1L
-					item: {
-						count: 1
-						id: "malum:rotting_essence"
-					}
-					type: "item"
-				}
-			]
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -486,7 +464,7 @@
 		}
 		{
 			dependencies: [
-				"6B00000000000014"
+				"6B00000000006203"
 				"6B00000000000018"
 			]
 			icon: {
@@ -545,6 +523,7 @@
 		{
 			dependencies: [
 				"6B00000000000016"
+				"6B0000000000620D"
 			]
 			icon: {
 				id: "pastel:fusion_shrine_basalt"
@@ -568,7 +547,7 @@
 				}
 			]
 			x: 10.5d
-			y: 0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -595,8 +574,8 @@
 					type: "item"
 				}
 			]
-			x: 12d
-			y: 0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -624,7 +603,7 @@
 				}
 			]
 			x: 13.5d
-			y: 0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -651,8 +630,8 @@
 					type: "item"
 				}
 			]
-			x: 15d
-			y: 0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -681,7 +660,7 @@
 				}
 			]
 			x: 16.5d
-			y: 0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -708,7 +687,7 @@
 					type: "structure"
 				}
 			]
-			x: 10.5d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -739,7 +718,7 @@
 					type: "item"
 				}
 			]
-			x: 12d
+			x: 13.5d
 			y: -1.5d
 		}
 		{
@@ -770,7 +749,7 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
+			x: 15.0d
 			y: -1.5d
 		}
 		{
@@ -799,7 +778,7 @@
 					value: 1L
 				}
 			]
-			x: 15d
+			x: 16.5d
 			y: -1.5d
 		}
 		{
@@ -856,8 +835,8 @@
 					type: "item"
 				}
 			]
-			x: 18d
-			y: 0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -884,7 +863,7 @@
 					type: "item"
 				}
 			]
-			x: 16.5d
+			x: 18.0d
 			y: 1.5d
 		}
 		{
@@ -912,7 +891,7 @@
 					type: "item"
 				}
 			]
-			x: 18d
+			x: 19.5d
 			y: -1.5d
 		}
 		{
@@ -941,8 +920,8 @@
 					type: "item"
 				}
 			]
-			x: 18d
-			y: -3d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -970,7 +949,7 @@
 				}
 			]
 			x: 19.5d
-			y: 0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -997,8 +976,8 @@
 					type: "item"
 				}
 			]
-			x: 3d
-			y: 3d
+			x: 3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1026,7 +1005,7 @@
 				}
 			]
 			x: 4.5d
-			y: 3d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1056,8 +1035,8 @@
 					type: "observation"
 				}
 			]
-			x: 6d
-			y: 3d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1087,7 +1066,7 @@
 					type: "item"
 				}
 			]
-			x: 16.5d
+			x: 18.0d
 			y: -1.5d
 		}
 		{
@@ -1115,7 +1094,7 @@
 					type: "item"
 				}
 			]
-			x: 18d
+			x: 18.0d
 			y: -4.5d
 		}
 		{
@@ -1143,7 +1122,7 @@
 					type: "item"
 				}
 			]
-			x: 12d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
@@ -1200,7 +1179,7 @@
 					value: 1L
 				}
 			]
-			x: 15d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -1229,7 +1208,7 @@
 				}
 			]
 			x: 16.5d
-			y: 3d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1306,7 +1285,7 @@
 				}
 			]
 			x: 1.5d
-			y: 3d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1333,8 +1312,8 @@
 					type: "item"
 				}
 			]
-			x: 0d
-			y: 3d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1361,8 +1340,8 @@
 					type: "item"
 				}
 			]
-			x: 18d
-			y: 3d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1414,7 +1393,7 @@
 					type: "item"
 				}
 			]
-			x: 9d
+			x: 9.0d
 			y: 1.5d
 		}
 		{
@@ -1439,8 +1418,8 @@
 					type: "item"
 				}
 			]
-			x: 9d
-			y: 3d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1490,7 +1469,7 @@
 				}
 			]
 			x: 7.5d
-			y: 3d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1565,7 +1544,7 @@
 				}
 			]
 			x: 10.5d
-			y: 3d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1614,7 +1593,7 @@
 					type: "item"
 				}
 			]
-			x: 12d
+			x: 13.5d
 			y: -4.5d
 		}
 		{
@@ -1696,8 +1675,8 @@
 			dependencies: [
 				"6B00000000000001"
 			]
-			y: 0d
-			x: 1.5d
+			y: 0.0d
+			x: 3.0d
 			id: "6B00000000006200"
 			icon: {
 				id: "minecraft:anvil"
@@ -1718,8 +1697,8 @@
 			dependencies: [
 				"6B00000000006200"
 			]
-			y: 0d
-			x: 3d
+			y: 0.0d
+			x: 4.5d
 			id: "6B00000000006201"
 			icon: {
 				id: "anvilcraft:anvil_hammer"
@@ -1740,8 +1719,8 @@
 			dependencies: [
 				"6B00000000006201"
 			]
-			y: -4.5d
-			x: 6.0d
+			y: -3.0d
+			x: 3.0d
 			id: "6B00000000006202"
 			icon: {
 				id: "anvilcraft:stamping_platform"
@@ -1762,8 +1741,8 @@
 			dependencies: [
 				"6B00000000006201"
 			]
-			y: 0d
-			x: 4.5d
+			y: 0.0d
+			x: 6.0d
 			id: "6B00000000006203"
 			icon: {
 				id: "anvilcraft:crushing_table"
@@ -1784,7 +1763,7 @@
 			dependencies: [
 				"6B00000000006201"
 			]
-			y: -4.5d
+			y: -1.5d
 			x: 3.0d
 			id: "6B00000000006204"
 			icon: {
@@ -1806,8 +1785,8 @@
 			dependencies: [
 				"6B00000000006201"
 			]
-			y: -4.5d
-			x: 7.5d
+			y: -1.5d
+			x: 4.5d
 			id: "6B00000000006205"
 			icon: {
 				id: "minecraft:cauldron"
@@ -1828,8 +1807,8 @@
 			dependencies: [
 				"6B00000000006203"
 			]
-			y: -6.0d
-			x: 1.5d
+			y: -3.0d
+			x: 7.5d
 			id: "6B00000000006206"
 			icon: {
 				id: "anvilcraft:cinerite"
@@ -1850,8 +1829,8 @@
 			dependencies: [
 				"6B00000000006203"
 			]
-			y: -6.0d
-			x: 3.0d
+			y: -3.0d
+			x: 4.5d
 			id: "6B00000000006207"
 			icon: {
 				id: "anvilcraft:quartz_sand"
@@ -1872,8 +1851,8 @@
 			dependencies: [
 				"6B00000000006203"
 			]
-			y: -6.0d
-			x: 4.5d
+			y: -3.0d
+			x: 6.0d
 			id: "6B00000000006208"
 			icon: {
 				id: "anvilcraft:nether_dust"
@@ -1892,55 +1871,10 @@
 		}
 		{
 			dependencies: [
-				"6B00000000006203"
-			]
-			y: -6.0d
-			x: 6.0d
-			id: "6B00000000006209"
-			icon: {
-				id: "anvilcraft:resin"
-			}
-			tasks: [
-				{
-					id: "6B00000001006209"
-					count: 1L
-					item: {
-						count: 1
-						id: "anvilcraft:resin"
-					}
-					type: "item"
-				}
-			]
-		}
-		{
-			dependencies: [
-				"6B00000000006209"
-				"6B00000000006205"
-			]
-			y: -7.5d
-			x: 7.5d
-			id: "6B0000000000620A"
-			icon: {
-				id: "anvilcraft:hardend_resin"
-			}
-			tasks: [
-				{
-					id: "6B0000000100620A"
-					count: 1L
-					item: {
-						count: 1
-						id: "anvilcraft:hardend_resin"
-					}
-					type: "item"
-				}
-			]
-		}
-		{
-			dependencies: [
 				"6B00000000006208"
 			]
-			y: -7.5d
-			x: 4.5d
+			y: -4.5d
+			x: 6.0d
 			id: "6B0000000000620B"
 			icon: {
 				id: "anvilcraft:tungsten_nugget"
@@ -1961,8 +1895,8 @@
 			dependencies: [
 				"6B00000000006203"
 			]
-			y: -6.0d
-			x: 0.0d
+			y: -1.5d
+			x: 7.5d
 			id: "6B0000000000620C"
 			icon: {
 				id: "anvilcraft:geode"
@@ -1983,8 +1917,8 @@
 			dependencies: [
 				"6B0000000000620C"
 			]
-			y: -7.5d
-			x: 0.0d
+			y: -1.5d
+			x: 9.0d
 			id: "6B0000000000620D"
 			icon: {
 				id: "anvilcraft:topaz"
@@ -1999,14 +1933,32 @@
 					}
 					type: "item"
 				}
+				{
+					id: "6B00000001006301"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:ruby"
+					}
+					type: "item"
+				}
+				{
+					id: "6B00000001006302"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:sapphire"
+					}
+					type: "item"
+				}
 			]
 		}
 		{
 			dependencies: [
 				"6B0000000000620D"
 			]
-			y: -9.0d
-			x: 0.0d
+			y: -3.0d
+			x: 9.0d
 			id: "6B0000000000620E"
 			icon: {
 				id: "minecraft:lightning_rod"
@@ -2027,8 +1979,8 @@
 			dependencies: [
 				"6B0000000000620E"
 			]
-			y: -10.5d
-			x: 0.0d
+			y: -4.5d
+			x: 9.0d
 			id: "6B0000000000620F"
 			icon: {
 				id: "oritech:nickel_block"
@@ -2052,8 +2004,8 @@
 			dependencies: [
 				"6B0000000000620F"
 			]
-			y: -12.0d
-			x: 0.0d
+			y: -4.5d
+			x: 7.5d
 			id: "6B00000000006210"
 			icon: {
 				id: "anvilcraft:hollow_magnet_block"
@@ -2071,7 +2023,7 @@
 			]
 		}
 		{
-			y: -3d
+			y: -3.0d
 			x: 19.5d
 			dependencies: [
 				"6B0000000000004D"

@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:block",
+  "pools": [],
+  "random_sequence": "mekanism:blocks/qio_redstone_adapter"
+}

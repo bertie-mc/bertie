@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "result": {
-    "item": "packagedmekemicals:chemical_package_filler",
-    "count": 1
+    "count": 1,
+    "id": "packagedmekemicals:chemical_package_filler"
   },
   "pattern": [
     "ICI",

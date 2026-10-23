@@ -4,6 +4,14 @@ import copy
 
 
 def apply_recipes(write, recipes, disabled, ritual):
+    path = "data/packagedmekemicals/recipe/chemical_package_filler.json"
+    filler = copy.deepcopy(recipes[path])
+    filler["result"]["id"] = filler["result"].pop("item")
+    for ingredient in filler["key"].values():
+        if ingredient.get("tag", "").startswith("forge:"):
+            ingredient["tag"] = "c:" + ingredient["tag"][6:]
+    write(path, filler)
+
     for path, recipe in recipes.items():
         result = recipe.get("result", {})
         output = result.get("id", result.get("item")) if isinstance(result, dict) else result

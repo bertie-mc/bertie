@@ -70,6 +70,9 @@ Glowstone Dust, Solar Core and Emerald. Crafting Accelerator and Production Surg
 Knowledge Focus and Efficiency Slope are withdrawn. Oritech machine cores require the
 previous core tier, starting with Bound Soul Ingot at the primitive core's centre.
 Equipment catalogue quests for withdrawn Pastel items are removed and their groups compacted.
+QIO storage items and drives, including Mekanism Extras tiers, are withdrawn. Chemical
+Package Filler keeps its original crafting pattern and materials with the current output
+format and ingredient-tag namespaces.
 
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.
