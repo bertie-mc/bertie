@@ -1,36 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "BCB",
-    "XAX",
-    "BTB"
-  ],
-  "key": {
-    "T": {
-      "item": "pastel:polished_amethyst_block"
-    },
-    "A": {
-      "item": "pastel:polished_amethyst_block"
-    },
-    "C": {
-      "item": "pastel:polished_amethyst_block"
-    },
-    "B": {
-      "item": "pastel:polished_basalt"
-    },
-    "X": {
-      "item": "pastel:polished_calcite"
-    }
-  },
-  "result": {
-    "id": "pastel:fusion_shrine_basalt",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

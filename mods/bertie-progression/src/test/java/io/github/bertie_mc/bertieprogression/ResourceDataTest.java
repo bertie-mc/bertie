@@ -56,14 +56,45 @@ class ResourceDataTest {
                         .getAsString());
         assertTrue(!Files.exists(RESOURCES.resolve("data/bertieprogression/recipe/pastel/moonstone_synthesis.json")));
         JsonObject shrine = data("data/pastel/recipe/pedestal/tier2/fusion_shrine_basalt.json");
-        assertEquals("minecraft:crafting_shaped", shrine.get("type").getAsString());
-        for (String key : List.of("T", "C")) {
+        assertTrue(shrine.toString().contains("neoforge:false"));
+        JsonObject ritual = data("data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/fusion_shrine.json");
+        assertEquals(2, ritual.get("forge_tier").getAsInt());
+        assertEquals(
+                "minecraft:polished_basalt",
+                ritual.getAsJsonObject("main_ingredient").get("item").getAsString());
+        assertEquals(1000, ritual.getAsJsonObject("essences").get("experience").getAsInt());
+        assertEquals(800, ritual.getAsJsonObject("essences").get("aureal").getAsInt());
+        assertEquals(20, ritual.getAsJsonObject("essences").get("souls").getAsInt());
+        assertEquals(
+                8,
+                ritual.getAsJsonArray("inputs").asList().stream()
+                        .mapToInt(input -> input.getAsJsonObject().get("amount").getAsInt())
+                        .sum());
+    }
+
+    @Test
+    void machineCoresRequireThePreviousTierAndAlternateBypassesAreDisabled() throws IOException {
+        for (int level = 1; level <= 7; level++) {
+            JsonObject recipe = data("data/oritech/recipe/crafting/core" + level + ".json");
             assertEquals(
-                    "pastel:polished_amethyst_block",
-                    shrine.getAsJsonObject("key")
-                            .getAsJsonObject(key)
+                    level == 1 ? "mythsandlegends:bound_soul_ingot" : "oritech:machine_core_" + (level - 1),
+                    recipe.getAsJsonObject("key")
+                            .getAsJsonObject("C")
                             .get("item")
                             .getAsString());
+            assertEquals("SCS", recipe.getAsJsonArray("pattern").get(1).getAsString());
+        }
+        for (int level : List.of(2, 3)) {
+            assertTrue(data("data/oritech/recipe/crafting/core" + level + "alt.json")
+                    .toString()
+                    .contains("neoforge:false"));
+        }
+        for (String element : List.of("arcane", "fire", "frost", "healing", "lightning", "soul")) {
+            assertEquals(
+                    1800,
+                    data("data/pastel/recipe/fusion_shrine/" + element + "_infused_netherite_ingot.json")
+                            .get("time")
+                            .getAsInt());
         }
     }
 

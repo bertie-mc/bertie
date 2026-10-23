@@ -64,6 +64,13 @@ and Moonstone synthesis are removed. Retained pedestal recipes use ordinary craf
 unresolved recipes with retired unique ingredients remain disabled pending selection.
 Humus lake features generate water inside their existing Hornslake lining.
 
+Fusion Shrine is made on Hephaestus Forge II. Infused Netherite fusion takes 90 seconds;
+the shrine's horse-armour and vanilla Netherite synthesis routes are disabled. Onyx uses
+Glowstone Dust, Solar Core and Emerald. Crafting Accelerator and Production Surge remain;
+Knowledge Focus and Efficiency Slope are withdrawn. Oritech machine cores require the
+previous core tier, starting with Bound Soul Ingot at the primitive core's centre.
+Equipment catalogue quests for withdrawn Pastel items are removed and their groups compacted.
+
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.
   See [Combat integration](docs/combat.md) for formulas, coverage and retained exceptions.

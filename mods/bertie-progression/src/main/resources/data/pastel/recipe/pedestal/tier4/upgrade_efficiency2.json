@@ -1,22 +1,17 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "ingredients": [
     {
-      "item": "pastel:upgrade_efficiency"
-    },
-    {
-      "item": "minecraft:emerald"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "id": "pastel:upgrade_efficiency2",
+    "id": "minecraft:stone",
     "count": 1
-  },
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
-    }
-  ]
+  }
 }

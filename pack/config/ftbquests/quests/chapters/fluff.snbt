@@ -49,23 +49,23 @@
 		}
 		{
 			icon: {
-				id: "rustic_engineer:abyssal_submarine_item"
+				id: "rustic_engineer:spider_mech_item"
 			}
 			id: "6C0000000000000A"
-			rewards: [{
-				id: "6C0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
+			rewards: [
+				{
+					id: "6C0000000200000A"
+					type: "xp"
+					xp: 25
+				}
+			]
 			tasks: [
 				{
-					id: "6C0000000100000A"
-					item: { count: 1, id: "rustic_engineer:abyssal_submarine_item" }
-					type: "item"
-				}
-				{
 					id: "6C0000000101000A"
-					item: { count: 1, id: "rustic_engineer:spider_mech_item" }
+					item: {
+						count: 1
+						id: "rustic_engineer:spider_mech_item"
+					}
 					type: "item"
 				}
 			]
@@ -74,23 +74,23 @@
 		}
 		{
 			icon: {
-				id: "rustic_engineer:air_ship_item"
+				id: "rustic_engineer:dragonfly_item"
 			}
 			id: "6C0000000000000B"
-			rewards: [{
-				id: "6C0000000200000B"
-				type: "xp"
-				xp: 25
-			}]
+			rewards: [
+				{
+					id: "6C0000000200000B"
+					type: "xp"
+					xp: 25
+				}
+			]
 			tasks: [
 				{
-					id: "6C0000000100000B"
-					item: { count: 1, id: "rustic_engineer:air_ship_item" }
-					type: "item"
-				}
-				{
 					id: "6C0000000101000B"
-					item: { count: 1, id: "rustic_engineer:dragonfly_item" }
+					item: {
+						count: 1
+						id: "rustic_engineer:dragonfly_item"
+					}
 					type: "item"
 				}
 			]
@@ -143,8 +143,8 @@
 			y: 0.0d
 		}
 		{
-			y: 0d
-			x: 3d
+			y: 0.0d
+			x: 3.0d
 			id: "6C00000000006100"
 			icon: { id: "omnitools:omni_wrench" }
 			tasks: [{

@@ -11,382 +11,476 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3B0000000000004B"]
+			dependencies: [
+				"3B0000000000004B"
+			]
 			icon: {
 				id: "minecraft:netherrack"
 			}
 			id: "6B00000000000001"
-			rewards: [{
-				id: "6B00000002000001"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				icon: {
-					id: "minecraft:netherrack"
+			rewards: [
+				{
+					id: "6B00000002000001"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000001"
-				type: "dimension"
-			}]
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: {
+						id: "minecraft:netherrack"
+					}
+					id: "6B00000001000001"
+					type: "dimension"
+				}
+			]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B00000000000004"]
+			dependencies: [
+				"6B00000000000004"
+			]
 			icon: {
 				id: "cataclysm:monstrous_eye"
 			}
 			id: "6B00000000000002"
-			rewards: [{
-				id: "6B00000002000002"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000002"
-				item: { count: 1, id: "cataclysm:monstrous_eye" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: -3.0d
+			rewards: [
+				{
+					id: "6B00000002000002"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000002"
+					item: {
+						count: 1
+						id: "cataclysm:monstrous_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 9d
+			y: -3d
 		}
 		{
-			dependencies: ["6B00000000000002"]
+			dependencies: [
+				"6B00000000000002"
+			]
 			icon: {
 				id: "cataclysm:monstrous_horn"
 			}
 			id: "6B00000000000003"
-			rewards: [{
-				id: "6B00000002000003"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "cataclysm:netherite_monstrosity"
-				icon: {
-					id: "cataclysm:monstrous_horn"
+			rewards: [
+				{
+					id: "6B00000002000003"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000003"
-				type: "kill"
-				value: 1L
-			}]
-			x: 12.0d
+			]
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					icon: {
+						id: "cataclysm:monstrous_horn"
+					}
+					id: "6B00000001000003"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 10.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["6B0000000000003B"]
+			dependencies: [
+				"6B00000000000039"
+			]
 			icon: {
 				id: "cataclysm:flame_eye"
 			}
 			id: "6B00000000000004"
-			rewards: [{
-				id: "6B00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000004"
-				item: { count: 1, id: "cataclysm:flame_eye" }
-				type: "item"
-			}]
-			x: 10.5d
+			rewards: [
+				{
+					id: "6B00000002000004"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000004"
+					item: {
+						count: 1
+						id: "cataclysm:flame_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 9d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000004"]
+			dependencies: [
+				"6B00000000000004"
+			]
 			icon: {
 				id: "cataclysm:burning_ashes"
 			}
 			id: "6B00000000000005"
-			rewards: [{
-				id: "6B00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000005"
-				item: { count: 1, id: "cataclysm:burning_ashes" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: -3.0d
+			rewards: [
+				{
+					id: "6B00000002000005"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000005"
+					item: {
+						count: 1
+						id: "cataclysm:burning_ashes"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -3d
 		}
 		{
-			dependencies: ["6B00000000000005"]
+			dependencies: [
+				"6B00000000000005"
+			]
 			icon: {
 				id: "cataclysm:ignitium_ingot"
 			}
 			id: "6B00000000000006"
-			rewards: [{
-				id: "6B00000002000006"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "cataclysm:ignis"
-				icon: {
-					id: "cataclysm:ignitium_ingot"
+			rewards: [
+				{
+					id: "6B00000002000006"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000006"
-				type: "kill"
-				value: 1L
-			}]
-			x: 13.5d
-			y: -3.0d
+			]
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					icon: {
+						id: "cataclysm:ignitium_ingot"
+					}
+					id: "6B00000001000006"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 12d
+			y: -3d
 		}
 		{
-			dependencies: ["6B00000000000001"]
+			dependencies: [
+				"6B00000000000001"
+			]
 			icon: {
 				id: "block_factorys_bosses:underworld_arena_door"
 			}
 			id: "6B00000000000007"
-			rewards: [{
-				id: "6B00000002000007"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "block_factorys_bosses:underworld_arena_door"
+			rewards: [
+				{
+					id: "6B00000002000007"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000007"
-				structure: "block_factorys_bosses:underworld_arena"
-				type: "structure"
-			}]
+			]
+			tasks: [
+				{
+					icon: {
+						id: "block_factorys_bosses:underworld_arena_door"
+					}
+					id: "6B00000001000007"
+					structure: "block_factorys_bosses:underworld_arena"
+					type: "structure"
+				}
+			]
 			x: -1.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000007"]
+			dependencies: [
+				"6B00000000000007"
+			]
 			icon: {
 				id: "block_factorys_bosses:underworld_arena_key"
 			}
 			id: "6B00000000000008"
-			rewards: [{
-				id: "6B00000002000008"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000008"
-				item: { count: 1, id: "block_factorys_bosses:underworld_arena_key" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B00000002000008"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000008"
+					item: {
+						count: 1
+						id: "block_factorys_bosses:underworld_arena_key"
+					}
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000008"]
+			dependencies: [
+				"6B00000000000008"
+			]
 			icon: {
 				id: "block_factorys_bosses:knight_sword"
 			}
 			id: "6B00000000000009"
-			rewards: [{
-				id: "6B00000002000009"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "block_factorys_bosses:underworld_knight"
-				icon: {
-					id: "block_factorys_bosses:knight_sword"
+			rewards: [
+				{
+					id: "6B00000002000009"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000009"
-				type: "kill"
-				value: 1L
-			}]
+			]
+			tasks: [
+				{
+					entity: "block_factorys_bosses:underworld_knight"
+					icon: {
+						id: "block_factorys_bosses:knight_sword"
+					}
+					id: "6B00000001000009"
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: -4.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B0000000000000B"]
-			id: "6B0000000000000A"
-			rewards: [{
-				id: "6B0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B00000000000013"]
-			id: "6B0000000000000B"
-			rewards: [{
-				id: "6B0000000200000B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B00000000000001"]
+			dependencies: [
+				"6B00000000000001"
+			]
 			icon: {
 				id: "minecraft:nether_bricks"
 			}
 			id: "6B0000000000000C"
-			rewards: [{
-				id: "6B0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "minecraft:nether_bricks"
+			rewards: [
+				{
+					id: "6B0000000200000C"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B0000000100000C"
-				structure: "#bertieprogression:nether_fortress"
-				type: "structure"
-			}]
+			]
+			tasks: [
+				{
+					icon: {
+						id: "minecraft:nether_bricks"
+					}
+					id: "6B0000000100000C"
+					structure: "#bertieprogression:nether_fortress"
+					type: "structure"
+				}
+			]
 			x: 1.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000005D"]
+			dependencies: [
+				"6B0000000000005D"
+			]
 			icon: {
 				id: "minecraft:nether_star"
 			}
 			id: "6B0000000000000F"
-			rewards: [{
-				id: "6B0000000200000F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100000F"
-				item: { count: 1, id: "minecraft:nether_star" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B0000000200000F"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100000F"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			x: 12d
+			y: 3d
 		}
 		{
-			dependencies: ["6B0000000000000F"]
+			dependencies: [
+				"6B0000000000000F"
+			]
 			icon: {
 				id: "cataclysm:mech_eye"
 			}
 			id: "6B00000000000010"
-			rewards: [{
-				id: "6B00000002000010"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000010"
-				item: { count: 1, id: "cataclysm:mech_eye" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000010"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000010"
+					item: {
+						count: 1
+						id: "cataclysm:mech_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000010"]
+			dependencies: [
+				"6B00000000000010"
+			]
 			icon: {
 				id: "cataclysm:laser_gatling"
 			}
 			id: "6B00000000000011"
-			rewards: [{
-				id: "6B00000002000011"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "cataclysm:laser_gatling"
+			rewards: [
+				{
+					id: "6B00000002000011"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000011"
-				structure: "cataclysm:ancient_factory"
-				type: "structure"
-			}]
-			x: 16.5d
-			y: 3.0d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "cataclysm:laser_gatling"
+					}
+					id: "6B00000001000011"
+					structure: "cataclysm:ancient_factory"
+					type: "structure"
+				}
+			]
+			x: 15d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000011"]
+			dependencies: [
+				"6B00000000000011"
+			]
 			icon: {
 				id: "cataclysm:witherite_block"
 			}
 			id: "6B00000000000012"
-			rewards: [{
-				id: "6B00000002000012"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "cataclysm:the_harbinger"
-				icon: {
-					id: "cataclysm:witherite_block"
+			rewards: [
+				{
+					id: "6B00000002000012"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000012"
-				type: "kill"
-				value: 1L
-			}]
-			x: 18.0d
-			y: 3.0d
+			]
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					icon: {
+						id: "cataclysm:witherite_block"
+					}
+					id: "6B00000001000012"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 16.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["6B00000000000001"]
-			id: "6B00000000000013"
-			rewards: [{
-				id: "6B00000002000013"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B0000000000000A"]
+			y: 0d
+			x: 6d
+			dependencies: [
+				"6B00000000006203"
+			]
 			id: "6B00000000000014"
-			rewards: [{
-				id: "6B00000002000014"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 6.0d
-			y: 0.0d
+			icon: {
+				id: "malum:rotting_essence"
+			}
+			tasks: [
+				{
+					id: "6B00000001000014"
+					count: 1L
+					item: {
+						count: 1
+						id: "malum:rotting_essence"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B0000000000000C"]
+			dependencies: [
+				"6B0000000000000C"
+			]
 			icon: {
 				id: "minecraft:nether_wart"
 			}
 			id: "6B00000000000017"
-			rewards: [{
-				id: "6B00000002000017"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000017"
-				item: { count: 1, id: "minecraft:nether_wart" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B00000002000017"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000017"
+					item: {
+						count: 1
+						id: "minecraft:nether_wart"
+					}
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000061"]
+			dependencies: [
+				"6B00000000000061"
+			]
 			icon: {
 				id: "minecraft:fermented_spider_eye"
 			}
 			id: "6B00000000000018"
-			rewards: [{
-				id: "6B00000002000018"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000018"
-				item: { count: 1, id: "minecraft:fermented_spider_eye" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B00000002000018"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000018"
+					item: {
+						count: 1
+						id: "minecraft:fermented_spider_eye"
+					}
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 1.5d
 		}
@@ -399,305 +493,313 @@
 				id: "pastel:bottle_of_fading"
 			}
 			id: "6B00000000000015"
-			rewards: [{
-				id: "6B00000002000015"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000015"
-				item: { count: 1, id: "pastel:bottle_of_fading" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B00000002000015"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000015"
+					item: {
+						count: 1
+						id: "pastel:bottle_of_fading"
+					}
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B00000000000015"]
+			dependencies: [
+				"6B00000000000015"
+			]
 			icon: {
 				id: "pastel:vegetal"
 			}
 			id: "6B00000000000016"
-			rewards: [{
-				id: "6B00000002000016"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				count: 16L
-				id: "6B00000001000016"
-				item: { count: 1, id: "pastel:vegetal" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B00000002000016"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6B00000001000016"
+					item: {
+						count: 1
+						id: "pastel:vegetal"
+					}
+					type: "item"
+				}
+			]
 			x: 9.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6B0000000000003B"]
+			dependencies: [
+				"6B00000000000016"
+			]
 			icon: {
 				id: "pastel:fusion_shrine_basalt"
 			}
 			id: "6B00000000000039"
-			rewards: [{
-				id: "6B00000002000039"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000039"
-				item: { count: 1, id: "pastel:fusion_shrine_basalt" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B00000002000039"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000039"
+					item: {
+						count: 1
+						id: "pastel:fusion_shrine_basalt"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0d
 		}
 		{
-			dependencies: ["6B00000000000039"]
+			dependencies: [
+				"6B00000000000039"
+			]
 			icon: {
 				id: "pastel:onyx_shard"
 			}
 			id: "6B0000000000003A"
-			rewards: [{
-				id: "6B0000000200003A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100003A"
-				item: { count: 1, id: "pastel:onyx_shard" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200003A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100003A"
+					item: {
+						count: 1
+						id: "pastel:onyx_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 12d
+			y: 0d
 		}
 		{
-			dependencies: ["6B00000000000016"]
-			id: "6B0000000000003B"
-			rewards: [{
-				id: "6B0000000200003B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B0000000000003A"]
-			id: "6B0000000000003C"
-			rewards: [{
-				id: "6B0000000200003C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 15.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6B0000000000003C"]
+			dependencies: [
+				"6B0000000000003A"
+			]
 			icon: {
 				id: "pastel:bottle_of_failing"
 			}
 			id: "6B0000000000003D"
-			rewards: [{
-				id: "6B0000000200003D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100003D"
-				item: { count: 1, id: "pastel:bottle_of_failing" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200003D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100003D"
+					item: {
+						count: 1
+						id: "pastel:bottle_of_failing"
+					}
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 0d
 		}
 		{
-			dependencies: ["6B0000000000003D"]
+			dependencies: [
+				"6B0000000000003D"
+			]
 			icon: {
 				id: "pastel:neolith"
 			}
 			id: "6B0000000000003E"
-			rewards: [{
-				id: "6B0000000200003E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100003E"
-				item: { count: 1, id: "pastel:neolith" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200003E"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100003E"
+					item: {
+						count: 1
+						id: "pastel:neolith"
+					}
+					type: "item"
+				}
+			]
+			x: 15d
+			y: 0d
 		}
 		{
-			dependencies: ["6B0000000000003E" "6B00000000000060"]
+			dependencies: [
+				"6B0000000000003E"
+				"6B00000000000060"
+			]
 			icon: {
 				id: "minecraft:netherite_ingot"
 			}
 			id: "6B0000000000003F"
-			rewards: [{
-				id: "6B0000000200003F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100003F"
-				item: { count: 1, id: "minecraft:netherite_ingot" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200003F"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100003F"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 0d
 		}
 		{
-			dependencies: ["6B00000000000016"]
-			id: "6B00000000000040"
-			rewards: [{
-				id: "6B00000002000040"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 9.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["6B00000000000040"]
-			id: "6B00000000000041"
-			rewards: [{
-				id: "6B00000002000041"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 9.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["6B00000000000041"]
-			id: "6B00000000000042"
-			rewards: [{
-				id: "6B00000002000042"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 9.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["6B00000000000042"]
-			id: "6B00000000000043"
-			rewards: [{
-				id: "6B00000002000043"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 9.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6B00000000000043"]
-			id: "6B00000000000044"
-			rewards: [{
-				id: "6B00000002000044"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 9.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["6B0000000000003B"]
+			dependencies: [
+				"6B00000000000039"
+			]
 			icon: {
 				id: "irons_spellbooks:cinderous_vault"
 			}
 			id: "6B00000000000045"
-			rewards: [{
-				id: "6B00000002000045"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "irons_spellbooks:cinderous_vault"
+			rewards: [
+				{
+					id: "6B00000002000045"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000045"
-				structure: "irons_spellbooks:citadel"
-				type: "structure"
-			}]
-			x: 12.0d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "irons_spellbooks:cinderous_vault"
+					}
+					id: "6B00000001000045"
+					structure: "irons_spellbooks:citadel"
+					type: "structure"
+				}
+			]
+			x: 10.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000045"]
+			dependencies: [
+				"6B00000000000045"
+			]
 			icon: {
 				id: "irons_spellbooks:cinder_essence"
 			}
 			id: "6B00000000000046"
-			rewards: [{
-				id: "6B00000002000046"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "irons_spellbooks:cinder_essence"
+			rewards: [
+				{
+					id: "6B00000002000046"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000046"
-				item: { count: 1, id: "irons_spellbooks:cinder_essence" }
-				type: "item"
-			}]
-			x: 13.5d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "irons_spellbooks:cinder_essence"
+					}
+					id: "6B00000001000046"
+					item: {
+						count: 1
+						id: "irons_spellbooks:cinder_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 12d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000046"]
+			dependencies: [
+				"6B00000000000046"
+			]
 			icon: {
 				id: "irons_spellbooks:cinderous_soulcaller"
 			}
 			id: "6B00000000000047"
-			rewards: [{
-				id: "6B00000002000047"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "irons_spellbooks:cinderous_soulcaller"
+			rewards: [
+				{
+					id: "6B00000002000047"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000047"
-				item: { count: 1, id: "irons_spellbooks:cinderous_soulcaller" }
-				type: "item"
-			}]
-			x: 15.0d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "irons_spellbooks:cinderous_soulcaller"
+					}
+					id: "6B00000001000047"
+					item: {
+						count: 1
+						id: "irons_spellbooks:cinderous_soulcaller"
+					}
+					type: "item"
+				}
+			]
+			x: 13.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B00000000000047"]
+			dependencies: [
+				"6B00000000000047"
+			]
 			icon: {
 				id: "irons_spellbooks:divine_soulshard"
 			}
 			id: "6B00000000000048"
-			rewards: [{
-				id: "6B00000002000048"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "irons_spellbooks:fire_boss"
-				icon: {
-					id: "irons_spellbooks:divine_soulshard"
+			rewards: [
+				{
+					id: "6B00000002000048"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000048"
-				type: "kill"
-				value: 1L
-			}]
-			x: 16.5d
+			]
+			tasks: [
+				{
+					entity: "irons_spellbooks:fire_boss"
+					icon: {
+						id: "irons_spellbooks:divine_soulshard"
+					}
+					id: "6B00000001000048"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 15d
 			y: -1.5d
 		}
 		{
@@ -709,74 +811,108 @@
 				id: "cataclysm:altar_of_amethyst"
 			}
 			id: "1C0000000000005B"
-			rewards: [{
-				id: "1C0000000200005B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "1C0000000100005B"
-				item: { count: 1, id: "cataclysm:altar_of_amethyst" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1C0000000200005B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "1C0000000100005B"
+					item: {
+						count: 1
+						id: "cataclysm:altar_of_amethyst"
+					}
+					type: "item"
+				}
+			]
 			x: 15.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["6B0000000000003F"]
+			dependencies: [
+				"6B0000000000003F"
+			]
 			icon: {
 				id: "avaritia:nether_crafting_table"
 			}
 			id: "6B0000000000004A"
-			rewards: [{
-				id: "6B0000000200004A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004A"
-				item: { count: 1, id: "avaritia:nether_crafting_table" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200004A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004A"
+					item: {
+						count: 1
+						id: "avaritia:nether_crafting_table"
+					}
+					type: "item"
+				}
+			]
+			x: 18d
+			y: 0d
 		}
 		{
-			dependencies: ["6B0000000000003F"]
+			dependencies: [
+				"6B0000000000003F"
+			]
 			icon: {
 				id: "malum:malignant_pewter_ingot"
 			}
 			id: "6B0000000000004B"
-			rewards: [{
-				id: "6B0000000200004B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004B"
-				item: { count: 1, id: "malum:malignant_pewter_ingot" }
-				type: "item"
-			}]
-			x: 19.5d
+			rewards: [
+				{
+					id: "6B0000000200004B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004B"
+					item: {
+						count: 1
+						id: "malum:malignant_pewter_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 16.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000004A"]
+			dependencies: [
+				"6B0000000000004A"
+			]
 			icon: {
 				id: "bertieprogression:null_blaze_cube"
 			}
 			id: "6B0000000000004C"
-			rewards: [{
-				id: "6B0000000200004C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004C"
-				item: { count: 1, id: "bertieprogression:null_blaze_cube" }
-				type: "item"
-			}]
-			x: 21.0d
+			rewards: [
+				{
+					id: "6B0000000200004C"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004C"
+					item: {
+						count: 1
+						id: "bertieprogression:null_blaze_cube"
+					}
+					type: "item"
+				}
+			]
+			x: 18d
 			y: -1.5d
 		}
 		{
@@ -788,249 +924,356 @@
 				id: "avaritia:blaze_cube"
 			}
 			id: "6B0000000000004D"
-			rewards: [{
-				id: "6B0000000200004D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004D"
-				item: { count: 1, id: "avaritia:blaze_cube" }
-				type: "item"
-			}]
-			x: 21.0d
-			y: -3.0d
+			rewards: [
+				{
+					id: "6B0000000200004D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004D"
+					item: {
+						count: 1
+						id: "avaritia:blaze_cube"
+					}
+					type: "item"
+				}
+			]
+			x: 18d
+			y: -3d
 		}
 		{
-			dependencies: ["6B0000000000004A"]
+			dependencies: [
+				"6B0000000000004A"
+			]
 			icon: {
 				id: "mekanism:steel_casing"
 			}
 			id: "6B0000000000004E"
-			rewards: [{
-				id: "6B0000000200004E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004E"
-				item: { count: 1, id: "mekanism:steel_casing" }
-				type: "item"
-			}]
-			x: 22.5d
-			y: 0.0d
+			rewards: [
+				{
+					id: "6B0000000200004E"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004E"
+					item: {
+						count: 1
+						id: "mekanism:steel_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 19.5d
+			y: 0d
 		}
 		{
-			dependencies: ["6B00000000000017"]
+			dependencies: [
+				"6B00000000000017"
+			]
 			icon: {
 				id: "forbidden_arcanus:corrupti_dust"
 			}
 			id: "6B0000000000004F"
-			rewards: [{
-				id: "6B0000000200004F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100004F"
-				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B0000000200004F"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100004F"
+					item: {
+						count: 1
+						id: "forbidden_arcanus:corrupti_dust"
+					}
+					type: "item"
+				}
+			]
+			x: 3d
+			y: 3d
 		}
 		{
-			dependencies: ["6B0000000000004F"]
+			dependencies: [
+				"6B0000000000004F"
+			]
 			icon: {
 				id: "forbidden_arcanus:dark_matter"
 			}
 			id: "6B00000000000050"
-			rewards: [{
-				id: "6B00000002000050"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000050"
-				item: { count: 1, id: "forbidden_arcanus:dark_matter" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000050"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000050"
+					item: {
+						count: 1
+						id: "forbidden_arcanus:dark_matter"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000050"]
+			dependencies: [
+				"6B00000000000050"
+			]
 			icon: {
 				id: "forbidden_arcanus:dark_nether_star"
 			}
 			id: "6B00000000000051"
-			rewards: [{
-				id: "6B00000002000051"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "forbidden_arcanus:dark_nether_star"
+			rewards: [
+				{
+					id: "6B00000002000051"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000051"
-				observation_type: "block"
-				observe_type: 0
-				timer: 20L
-				to_observe: "forbidden_arcanus:black_hole"
-				type: "observation"
-			}]
-			x: 7.5d
-			y: 3.0d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "forbidden_arcanus:dark_nether_star"
+					}
+					id: "6B00000001000051"
+					observation_type: "block"
+					observe_type: 0
+					timer: 20L
+					to_observe: "forbidden_arcanus:black_hole"
+					type: "observation"
+				}
+			]
+			x: 6d
+			y: 3d
 		}
 		{
-			dependencies: ["6B0000000000003F"]
+			dependencies: [
+				"6B0000000000003F"
+			]
 			icon: {
 				id: "sophisticatedbackpacks:netherite_backpack"
 			}
 			id: "6B00000000000049"
-			rewards: [{
-				id: "6B00000002000049"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "sophisticatedbackpacks:netherite_backpack"
+			rewards: [
+				{
+					id: "6B00000002000049"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B00000001000049"
-				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
-				type: "item"
-			}]
-			x: 19.5d
+			]
+			tasks: [
+				{
+					icon: {
+						id: "sophisticatedbackpacks:netherite_backpack"
+					}
+					id: "6B00000001000049"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:netherite_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 16.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6B0000000000004D"]
+			dependencies: [
+				"6B0000000000004D"
+			]
 			icon: {
 				id: "hooked:blazing_hook"
 			}
 			id: "6B0000000000005C"
-			rewards: [{
-				id: "6B0000000200005C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100005C"
-				item: { count: 1, id: "hooked:blazing_hook" }
-				type: "item"
-			}]
-			x: 21.0d
+			rewards: [
+				{
+					id: "6B0000000200005C"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100005C"
+					item: {
+						count: 1
+						id: "hooked:blazing_hook"
+					}
+					type: "item"
+				}
+			]
+			x: 18d
 			y: -4.5d
 		}
 		{
-			dependencies: ["6B00000000000039"]
+			dependencies: [
+				"6B00000000000039"
+			]
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 			}
 			id: "6B0000000000005D"
-			rewards: [{
-				id: "6B0000000200005D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100005D"
-				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
-				type: "item"
-			}]
-			x: 13.5d
+			rewards: [
+				{
+					id: "6B0000000200005D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100005D"
+					item: {
+						count: 1
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+			]
+			x: 12d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000005D"]
+			dependencies: [
+				"6B0000000000005D"
+			]
 			icon: {
 				id: "armageddon_mod:fiery_wither_skull"
 			}
 			id: "6B0000000000005E"
-			rewards: [{
-				id: "6B0000000200005E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100005E"
-				item: { count: 1, id: "armageddon_mod:fiery_wither_skull" }
-				type: "item"
-			}]
-			x: 15.0d
+			rewards: [
+				{
+					id: "6B0000000200005E"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100005E"
+					item: {
+						count: 1
+						id: "armageddon_mod:fiery_wither_skull"
+					}
+					type: "item"
+				}
+			]
+			x: 13.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000005E"]
+			dependencies: [
+				"6B0000000000005E"
+			]
 			icon: {
 				id: "armageddon_mod:zoranth_relic"
 			}
 			id: "6B0000000000005F"
-			rewards: [{
-				id: "6B0000000200005F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				entity: "armageddon_mod:zoranththe_forgotten_one"
-				icon: {
-					id: "armageddon_mod:zoranth_relic"
+			rewards: [
+				{
+					id: "6B0000000200005F"
+					type: "xp"
+					xp: 25
 				}
-				id: "6B0000000100005F"
-				type: "kill"
-				value: 1L
-			}]
-			x: 16.5d
+			]
+			tasks: [
+				{
+					entity: "armageddon_mod:zoranththe_forgotten_one"
+					icon: {
+						id: "armageddon_mod:zoranth_relic"
+					}
+					id: "6B0000000100005F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 15d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B0000000000005F"]
+			dependencies: [
+				"6B0000000000005F"
+			]
 			icon: {
 				id: "minecraft:netherite_scrap"
 			}
 			id: "6B00000000000060"
-			rewards: [{
-				id: "6B00000002000060"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000060"
-				item: { count: 1, id: "minecraft:netherite_scrap" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 1.5d
+			rewards: [
+				{
+					id: "6B00000002000060"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000060"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000017"]
+			dependencies: [
+				"6B00000000000017"
+			]
 			icon: {
 				id: "minecraft:spider_eye"
 			}
 			id: "6B00000000000061"
-			rewards: [{
-				id: "6B00000002000061"
-				type: "xp"
-				xp: 25
-			}]
+			rewards: [
+				{
+					id: "6B00000002000061"
+					type: "xp"
+					xp: 25
+				}
+			]
 			tasks: [
 				{
 					id: "6B00000001000061"
-					item: { count: 1, id: "minecraft:spider_eye" }
+					item: {
+						count: 1
+						id: "minecraft:spider_eye"
+					}
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "6B00000001010061"
-					item: { count: 1, id: "minecraft:sugar" }
+					item: {
+						count: 1
+						id: "minecraft:sugar"
+					}
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "6B00000001020061"
-					item: { components: { "ftbfiltersystem:filter": "item_tag(c:mushrooms)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: {
+						components: {
+							"ftbfiltersystem:filter": "item_tag(c:mushrooms)"
+						}
+						count: 1
+						id: "ftbfiltersystem:smart_filter"
+					}
 					type: "item"
 				}
 			]
@@ -1038,494 +1281,816 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000017"]
+			dependencies: [
+				"6B00000000000017"
+			]
 			icon: {
 				id: "minecraft:brewing_stand"
 			}
 			id: "6B00000000000062"
-			rewards: [{
-				id: "6B00000002000062"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000062"
-				item: { count: 1, id: "minecraft:brewing_stand" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000062"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000062"
+					item: {
+						count: 1
+						id: "minecraft:brewing_stand"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000062"]
+			dependencies: [
+				"6B00000000000062"
+			]
 			icon: {
 				id: "piglinproliferation:stone_fire_ring"
 			}
 			id: "6B00000000000063"
-			rewards: [{
-				id: "6B00000002000063"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000063"
-				item: { count: 1, id: "piglinproliferation:stone_fire_ring" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000063"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000063"
+					item: {
+						count: 1
+						id: "piglinproliferation:stone_fire_ring"
+					}
+					type: "item"
+				}
+			]
+			x: 0d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000060"]
+			dependencies: [
+				"6B00000000000060"
+			]
 			icon: {
 				id: "netherchested:nether_chest"
 			}
 			id: "6B00000000000064"
-			rewards: [{
-				id: "6B00000002000064"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000064"
-				item: { count: 1, id: "netherchested:nether_chest" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000064"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000064"
+					item: {
+						count: 1
+						id: "netherchested:nether_chest"
+					}
+					type: "item"
+				}
+			]
+			x: 18d
+			y: 3d
 		}
 		{
-			dependencies: ["6B0000000000004D"]
+			dependencies: [
+				"6B0000000000004D"
+			]
 			icon: {
 				id: "malum:soulbinding_brazier"
 			}
 			id: "6B00000000000065"
-			rewards: [{
-				id: "6B00000002000065"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000065"
-				item: { count: 1, id: "malum:soulbinding_brazier" }
-				type: "item"
-			}]
-			x: 19.5d
+			rewards: [
+				{
+					id: "6B00000002000065"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000065"
+					item: {
+						count: 1
+						id: "malum:soulbinding_brazier"
+					}
+					type: "item"
+				}
+			]
+			x: 16.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["6B00000000000039"]
+			dependencies: [
+				"6B00000000000039"
+			]
 			id: "6B00000000000066"
-			rewards: [{
-				id: "6B00000002000066"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000066"
-				item: { count: 1, id: "magitech:mana_charged_fluorite" }
-				type: "item"
-			}]
-			x: 10.5d
+			rewards: [
+				{
+					id: "6B00000002000066"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000066"
+					item: {
+						count: 1
+						id: "magitech:mana_charged_fluorite"
+					}
+					type: "item"
+				}
+			]
+			x: 9d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000066"]
+			dependencies: [
+				"6B00000000000066"
+			]
 			id: "6B00000000000067"
-			rewards: [{
-				id: "6B00000002000067"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000067"
-				item: { count: 1, id: "magitech:mana_potion_flask" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000067"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000067"
+					item: {
+						count: 1
+						id: "magitech:mana_potion_flask"
+					}
+					type: "item"
+				}
+			]
+			x: 9d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B00000000000068"
-			rewards: [{
-				id: "6B00000002000068"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000068"
-				item: { count: 1, id: "elemental_metals:arcane_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 9.0d
+			rewards: [
+				{
+					id: "6B00000002000068"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000068"
+					item: {
+						count: 1
+						id: "elemental_metals:arcane_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B00000000000069"
-			rewards: [{
-				id: "6B00000002000069"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B00000001000069"
-				item: { count: 1, id: "elemental_metals:soul_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B00000002000069"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B00000001000069"
+					item: {
+						count: 1
+						id: "elemental_metals:soul_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B0000000000006A"
-			rewards: [{
-				id: "6B0000000200006A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006A"
-				item: { count: 1, id: "elemental_metals:healing_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 9.0d
+			rewards: [
+				{
+					id: "6B0000000200006A"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006A"
+					item: {
+						count: 1
+						id: "elemental_metals:healing_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B0000000000006B"
-			rewards: [{
-				id: "6B0000000200006B"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006B"
-				item: { count: 1, id: "elemental_metals:fire_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 12.0d
+			rewards: [
+				{
+					id: "6B0000000200006B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006B"
+					item: {
+						count: 1
+						id: "elemental_metals:fire_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B0000000000006C"
-			rewards: [{
-				id: "6B0000000200006C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006C"
-				item: { count: 1, id: "elemental_metals:frost_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 12.0d
-			y: 3.0d
+			rewards: [
+				{
+					id: "6B0000000200006C"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006C"
+					item: {
+						count: 1
+						id: "elemental_metals:frost_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 3d
 		}
 		{
-			dependencies: ["6B00000000000067"]
+			dependencies: [
+				"6B00000000000067"
+			]
 			id: "6B0000000000006D"
-			rewards: [{
-				id: "6B0000000200006D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006D"
-				item: { count: 1, id: "elemental_metals:lightning_infused_netherite_ingot" }
-				type: "item"
-			}]
-			x: 12.0d
+			rewards: [
+				{
+					id: "6B0000000200006D"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006D"
+					item: {
+						count: 1
+						id: "elemental_metals:lightning_infused_netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["6B00000000000005"]
+			dependencies: [
+				"6B00000000000005"
+			]
 			id: "6B0000000000006E"
-			rewards: [{
-				id: "6B0000000200006E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006E"
-				item: { count: 1, id: "create:steam_engine" }
-				type: "item"
-			}]
-			x: 13.5d
+			rewards: [
+				{
+					id: "6B0000000200006E"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006E"
+					item: {
+						count: 1
+						id: "create:steam_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 12d
 			y: -4.5d
 		}
 		{
-			dependencies: ["6B0000000000004F"]
+			dependencies: [
+				"6B0000000000004F"
+			]
 			id: "6B0000000000006F"
-			rewards: [{
-				id: "6B0000000200006F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6B0000000100006F"
-				item: { count: 1, id: "rottencreatures:corrupted_wart" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B0000000200006F"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "6B0000000100006F"
+					item: {
+						count: 1
+						id: "rottencreatures:corrupted_wart"
+					}
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["6B00000000000012"]
+			dependencies: [
+				"6B00000000000012"
+			]
 			icon: {
 				id: "apotheosis:augmenting_table"
 			}
 			id: "3C0000000000000E"
-			rewards: [{
-				id: "3C0000000200000E"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C0000000100000E"
-				item: { count: 1, id: "apotheosis:augmenting_table" }
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3C0000000200000E"
+					type: "xp"
+					xp: 25
+				}
+			]
+			tasks: [
+				{
+					id: "3C0000000100000E"
+					item: {
+						count: 1
+						id: "apotheosis:augmenting_table"
+					}
+					type: "item"
+				}
+			]
 			x: 19.5d
 			y: 4.5d
 		}
 		{
 			y: -4.5d
-			x: 22.5d
-			dependencies: ["6B0000000000004D"]
+			x: 19.5d
+			dependencies: [
+				"6B0000000000004D"
+			]
 			id: "6B00000000006100"
-			icon: { id: "create:creative_blaze_cake" }
-			tasks: [{
-				id: "6B00000001006100"
-				count: 1L
-				item: { count: 1 id: "create:creative_blaze_cake" }
-				type: "item"
-			}]
+			icon: {
+				id: "create:creative_blaze_cake"
+			}
+			tasks: [
+				{
+					id: "6B00000001006100"
+					count: 1L
+					item: {
+						count: 1
+						id: "create:creative_blaze_cake"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B0000000000000A"]
-			y: -1.5d
-			x: 4.5d
+			dependencies: [
+				"6B00000000000001"
+			]
+			y: 0d
+			x: 1.5d
 			id: "6B00000000006200"
-			icon: { id: "minecraft:anvil" }
-			tasks: [{
-				id: "6B00000001006200"
-				count: 1L
-				item: { count: 1 id: "minecraft:anvil" }
-				type: "item"
-			}]
+			icon: {
+				id: "minecraft:anvil"
+			}
+			tasks: [
+				{
+					id: "6B00000001006200"
+					count: 1L
+					item: {
+						count: 1
+						id: "minecraft:anvil"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006200"]
-			y: -3.0d
-			x: 4.5d
+			dependencies: [
+				"6B00000000006200"
+			]
+			y: 0d
+			x: 3d
 			id: "6B00000000006201"
-			icon: { id: "anvilcraft:anvil_hammer" }
-			tasks: [{
-				id: "6B00000001006201"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:anvil_hammer" }
-				type: "item"
-			}]
+			icon: {
+				id: "anvilcraft:anvil_hammer"
+			}
+			tasks: [
+				{
+					id: "6B00000001006201"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:anvil_hammer"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006201"]
-			y: -4.5d
-			x: 0.0d
-			id: "6B00000000006202"
-			icon: { id: "anvilcraft:stamping_platform" }
-			tasks: [{
-				id: "6B00000001006202"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:stamping_platform" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["6B00000000006201"]
-			y: -4.5d
-			x: 3.0d
-			id: "6B00000000006203"
-			icon: { id: "anvilcraft:crushing_table" }
-			tasks: [{
-				id: "6B00000001006203"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:crushing_table" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["6B00000000006201"]
+			dependencies: [
+				"6B00000000006201"
+			]
 			y: -4.5d
 			x: 6.0d
-			id: "6B00000000006204"
-			icon: { id: "minecraft:scaffolding" }
-			tasks: [{
-				id: "6B00000001006204"
-				count: 1L
-				item: { count: 1 id: "minecraft:scaffolding" }
-				type: "item"
-			}]
+			id: "6B00000000006202"
+			icon: {
+				id: "anvilcraft:stamping_platform"
+			}
+			tasks: [
+				{
+					id: "6B00000001006202"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:stamping_platform"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006201"]
+			dependencies: [
+				"6B00000000006201"
+			]
+			y: 0d
+			x: 4.5d
+			id: "6B00000000006203"
+			icon: {
+				id: "anvilcraft:crushing_table"
+			}
+			tasks: [
+				{
+					id: "6B00000001006203"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:crushing_table"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: [
+				"6B00000000006201"
+			]
+			y: -4.5d
+			x: 3.0d
+			id: "6B00000000006204"
+			icon: {
+				id: "minecraft:scaffolding"
+			}
+			tasks: [
+				{
+					id: "6B00000001006204"
+					count: 1L
+					item: {
+						count: 1
+						id: "minecraft:scaffolding"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: [
+				"6B00000000006201"
+			]
 			y: -4.5d
 			x: 7.5d
 			id: "6B00000000006205"
-			icon: { id: "minecraft:cauldron" }
-			tasks: [{
-				id: "6B00000001006205"
-				count: 1L
-				item: { count: 1 id: "minecraft:cauldron" }
-				type: "item"
-			}]
+			icon: {
+				id: "minecraft:cauldron"
+			}
+			tasks: [
+				{
+					id: "6B00000001006205"
+					count: 1L
+					item: {
+						count: 1
+						id: "minecraft:cauldron"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006203"]
-			y: -6.0d
-			x: 0.0d
-			id: "6B00000000006206"
-			icon: { id: "anvilcraft:cinerite" }
-			tasks: [{
-				id: "6B00000001006206"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:cinerite" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["6B00000000006203"]
+			dependencies: [
+				"6B00000000006203"
+			]
 			y: -6.0d
 			x: 1.5d
-			id: "6B00000000006207"
-			icon: { id: "anvilcraft:quartz_sand" }
-			tasks: [{
-				id: "6B00000001006207"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:quartz_sand" }
-				type: "item"
-			}]
+			id: "6B00000000006206"
+			icon: {
+				id: "anvilcraft:cinerite"
+			}
+			tasks: [
+				{
+					id: "6B00000001006206"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:cinerite"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006203"]
+			dependencies: [
+				"6B00000000006203"
+			]
 			y: -6.0d
 			x: 3.0d
-			id: "6B00000000006208"
-			icon: { id: "anvilcraft:nether_dust" }
-			tasks: [{
-				id: "6B00000001006208"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:nether_dust" }
-				type: "item"
-			}]
+			id: "6B00000000006207"
+			icon: {
+				id: "anvilcraft:quartz_sand"
+			}
+			tasks: [
+				{
+					id: "6B00000001006207"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:quartz_sand"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006203"]
+			dependencies: [
+				"6B00000000006203"
+			]
 			y: -6.0d
 			x: 4.5d
-			id: "6B00000000006209"
-			icon: { id: "anvilcraft:resin" }
-			tasks: [{
-				id: "6B00000001006209"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:resin" }
-				type: "item"
-			}]
+			id: "6B00000000006208"
+			icon: {
+				id: "anvilcraft:nether_dust"
+			}
+			tasks: [
+				{
+					id: "6B00000001006208"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:nether_dust"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B00000000006209", "6B00000000006205"]
-			y: -7.5d
-			x: 6.0d
-			id: "6B0000000000620A"
-			icon: { id: "anvilcraft:hardend_resin" }
-			tasks: [{
-				id: "6B0000000100620A"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:hardend_resin" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["6B00000000006208"]
-			y: -7.5d
-			x: 3.0d
-			id: "6B0000000000620B"
-			icon: { id: "anvilcraft:tungsten_nugget" }
-			tasks: [{
-				id: "6B0000000100620B"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:tungsten_nugget" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["6B00000000006203"]
+			dependencies: [
+				"6B00000000006203"
+			]
 			y: -6.0d
-			x: -3.0d
-			id: "6B0000000000620C"
-			icon: { id: "anvilcraft:geode" }
-			tasks: [{
-				id: "6B0000000100620C"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:geode" }
-				type: "item"
-			}]
+			x: 6.0d
+			id: "6B00000000006209"
+			icon: {
+				id: "anvilcraft:resin"
+			}
+			tasks: [
+				{
+					id: "6B00000001006209"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:resin"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B0000000000620C"]
+			dependencies: [
+				"6B00000000006209"
+				"6B00000000006205"
+			]
 			y: -7.5d
-			x: -3.0d
+			x: 7.5d
+			id: "6B0000000000620A"
+			icon: {
+				id: "anvilcraft:hardend_resin"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620A"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:hardend_resin"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: [
+				"6B00000000006208"
+			]
+			y: -7.5d
+			x: 4.5d
+			id: "6B0000000000620B"
+			icon: {
+				id: "anvilcraft:tungsten_nugget"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620B"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:tungsten_nugget"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: [
+				"6B00000000006203"
+			]
+			y: -6.0d
+			x: 0.0d
+			id: "6B0000000000620C"
+			icon: {
+				id: "anvilcraft:geode"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620C"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:geode"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: [
+				"6B0000000000620C"
+			]
+			y: -7.5d
+			x: 0.0d
 			id: "6B0000000000620D"
-			icon: { id: "anvilcraft:topaz" }
-			tasks: [{
-				id: "6B0000000100620D"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:topaz" }
-				type: "item"
-			}]
+			icon: {
+				id: "anvilcraft:topaz"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620D"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:topaz"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B0000000000620D"]
+			dependencies: [
+				"6B0000000000620D"
+			]
 			y: -9.0d
-			x: -3.0d
+			x: 0.0d
 			id: "6B0000000000620E"
-			icon: { id: "minecraft:lightning_rod" }
-			tasks: [{
-				id: "6B0000000100620E"
-				count: 1L
-				item: { count: 1 id: "minecraft:lightning_rod" }
-				type: "item"
-			}]
+			icon: {
+				id: "minecraft:lightning_rod"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620E"
+					count: 1L
+					item: {
+						count: 1
+						id: "minecraft:lightning_rod"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			dependencies: ["6B0000000000620E"]
+			dependencies: [
+				"6B0000000000620E"
+			]
 			y: -10.5d
-			x: -3.0d
+			x: 0.0d
 			id: "6B0000000000620F"
-			icon: { id: "oritech:nickel_block" }
-			tasks: [{
-				id: "6B0000000100620F"
-				count: 1L
-				item: { count: 1 id: "oritech:nickel_block" }
-				type: "item"
-			}]
+			icon: {
+				id: "oritech:nickel_block"
+			}
+			tasks: [
+				{
+					id: "6B0000000100620F"
+					count: 1L
+					item: {
+						count: 1
+						id: "oritech:nickel_block"
+					}
+					type: "item"
+				}
+			]
 		}
 		{
-			description: ["Use topaz on lightning rod above the nickel blocks."]
-			dependencies: ["6B0000000000620F"]
+			description: [
+				"Use topaz on lightning rod above the nickel blocks."
+			]
+			dependencies: [
+				"6B0000000000620F"
+			]
 			y: -12.0d
-			x: -3.0d
+			x: 0.0d
 			id: "6B00000000006210"
-			icon: { id: "anvilcraft:hollow_magnet_block" }
-			tasks: [{
-				id: "6B00000001006210"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:hollow_magnet_block" }
-				type: "item"
-			}]
+			icon: {
+				id: "anvilcraft:hollow_magnet_block"
+			}
+			tasks: [
+				{
+					id: "6B00000001006210"
+					count: 1L
+					item: {
+						count: 1
+						id: "anvilcraft:hollow_magnet_block"
+					}
+					type: "item"
+				}
+			]
+		}
+		{
+			y: -3d
+			x: 19.5d
+			dependencies: [
+				"6B0000000000004D"
+			]
+			id: "6B00000000006300"
+			icon: {
+				id: "explorerscompass:explorerscompass"
+			}
+			tasks: [
+				{
+					id: "6B00000001006300"
+					count: 1L
+					item: {
+						count: 1
+						id: "explorerscompass:explorerscompass"
+					}
+					type: "item"
+				}
+			]
 		}
 	]
 }

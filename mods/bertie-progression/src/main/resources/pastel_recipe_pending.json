@@ -902,14 +902,6 @@
     ]
   },
   {
-    "path": "data/pastel/recipe/fusion_shrine/mysterious_locket_socketing.json",
-    "output": "pastel:mysterious_locket",
-    "reason": "removed ingredients",
-    "ingredients": [
-      "pastel:moonstone_core"
-    ]
-  },
-  {
     "path": "data/pastel/recipe/fusion_shrine/no_rgb.json",
     "output": "minecraft:raw_copper",
     "reason": "removed ingredients",
@@ -958,14 +950,6 @@
     "reason": "removed ingredients",
     "ingredients": [
       "pastel:moonstruck_nectar"
-    ]
-  },
-  {
-    "path": "data/pastel/recipe/fusion_shrine/trinkets/whispy_circlet.json",
-    "output": "pastel:whispy_circlet",
-    "reason": "removed ingredients",
-    "ingredients": [
-      "pastel:nightdew_sprout"
     ]
   },
   {
@@ -1847,14 +1831,6 @@
     "ingredients": [
       "pastel:midnight_chip",
       "pastel:radiating_ender"
-    ]
-  },
-  {
-    "path": "data/pastel/recipe/pedestal/tier3/upgrade_efficiency.json",
-    "output": "pastel:upgrade_efficiency",
-    "reason": "removed ingredients",
-    "ingredients": [
-      "pastel:raw_azurite"
     ]
   },
   {

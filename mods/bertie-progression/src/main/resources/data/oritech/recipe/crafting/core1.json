@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "tag": "minecraft:planks"
+    },
+    "C": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  },
+  "pattern": [
+    "KSK",
+    "SCS",
+    "KSK"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:machine_core_1"
+  }
+}

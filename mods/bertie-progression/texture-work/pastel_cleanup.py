@@ -166,6 +166,8 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
                                      if not isinstance(value, str)
                                      or value not in {"pastel:topaz_shard", "pastel:citrine_shard"}]
         fixed = replace_inputs(source)
+        if output == "pastel:bottle_of_failing":
+            fixed = replace_specific(fixed, "minecraft:magma_cream", "pastel:vegetal")
         if path == "data/pastel/recipe/pedestal/tier2/fusion_shrine_basalt.json":
             fixed["key"]["T"] = "pastel:polished_amethyst_block"
             fixed["key"]["C"] = "pastel:polished_amethyst_block"
@@ -173,6 +175,10 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
             fixed["ingredients"] = [ingredient for ingredient in fixed["ingredients"]
                                     if not isinstance(ingredient, str)
                                     or ingredient not in {"pastel:topaz_shard", "pastel:citrine_shard"}]
+            fixed = replace_specific(fixed, "minecraft:glowstone", "minecraft:glowstone_dust")
+            for ingredient in ("hazennstuff:solar_core", "minecraft:emerald"):
+                if ingredient not in set(scalar_values(fixed["ingredients"])):
+                    fixed["ingredients"].append(ingredient)
         if output == "pastel:bottle_of_ruin" and fixed.get("type") == "pastel:pedestal":
             fixed = crafting_recipe(fixed)
         missing = sorted(value for value in input_ids(fixed) & removed if value.startswith("pastel:"))
@@ -206,3 +212,13 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
             changed += 1
     write("pastel_recipe_pending.json", pending)
     return changed
+
+
+def replace_specific(value, before, after):
+    if isinstance(value, str):
+        return after if value == before else value
+    if isinstance(value, list):
+        return [replace_specific(child, before, after) for child in value]
+    if isinstance(value, dict):
+        return {key: replace_specific(child, before, after) for key, child in value.items()}
+    return value

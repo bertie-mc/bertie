@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 800,
+    "blood": 0,
+    "souls": 20,
+    "experience": 1000
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "anvilcraft:ruby"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "anvilcraft:topaz"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "anvilcraft:sapphire"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "pastel:vegetal"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "minecraft:polished_basalt"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "pastel:fusion_shrine_basalt",
+      "count": 1
+    }
+  },
+  "forge_tier": 2
+}

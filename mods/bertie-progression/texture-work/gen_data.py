@@ -706,7 +706,7 @@ _SCALE = {e: f"#iceandfire:scales/dragon/{e}" for e in ("fire", "ice", "lightnin
 _FUSION_BASE = [("minecraft:netherite_ingot", 1), ("malum:hallowed_gold_ingot", 1),
                 ("irons_spellbooks:cinder_essence", 3)]
 
-def fusion(element, extra, time=300, xp=4.0):
+def fusion(element, extra, time=1800, xp=4.0):
     """pastel:fusion_shrine. extra = the element's own [(id, count), ...]."""
     ings = (_FUSION_BASE
             + [(f"elemental_metals:{element}_infused_iron_ingot", 3)]
@@ -5381,6 +5381,8 @@ if _scan_ok:
                                          _authored_recipes)
     from pastel_cleanup import apply_policy as apply_pastel_policy
     _pastel_changed = apply_pastel_policy(write, _recipe_src, RES, written, set(_removed_ids), DISABLED)
+    from progression_followup import apply_recipes as apply_followup_recipes
+    apply_followup_recipes(write, _recipe_src, DISABLED, ritual)
     print(f"  Pastel retained recipes: {_pastel_changed} replacements and temporary crafts")
 
 # MANIFEST. gen_data only ever writes, so without this, deleting a row would leave its

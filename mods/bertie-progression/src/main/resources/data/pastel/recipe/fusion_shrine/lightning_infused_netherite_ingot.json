@@ -30,7 +30,7 @@
     }
   ],
   "type": "pastel:fusion_shrine",
-  "time": 300,
+  "time": 1800,
   "experience": 4.0,
   "fluid": {
     "fluid": "magitech:mana_potion"

@@ -21,10 +21,12 @@
   },
   "ingredients": [
     "minecraft:amethyst_shard",
-    "minecraft:glowstone",
+    "minecraft:glowstone_dust",
     "malum:mnemonic_fragment",
     "minecraft:lapis_lazuli",
-    "minecraft:prismarine_shard"
+    "minecraft:prismarine_shard",
+    "hazennstuff:solar_core",
+    "minecraft:emerald"
   ],
   "result": {
     "id": "pastel:onyx_shard"

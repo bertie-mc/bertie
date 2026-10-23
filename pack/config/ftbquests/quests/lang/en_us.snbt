@@ -1097,7 +1097,7 @@
 	quest.6B00000000000011.title: "The Ancient Factory"
 	quest.6B00000000000012.title: "The Harbinger"
 	quest.6B00000000000013.title: "Three Kinds of Shard"
-	quest.6B00000000000014.title: "Shimmerstone"
+	quest.6B00000000000014.title: "Rotting Essence"
 	quest.6B00000000000015.title: "Bottle of Fading"
 	quest.6B00000000000016.title: "Sixteen Vegetal"
 	quest.6B00000000000017.title: "Nether Wart"
@@ -2607,4 +2607,7 @@
 	quest.62EAC8800B926619.title: "Pump"
 	quest.62EB2969EF64354C.title: "Assembler"
 	quest.62F43E7EF07E2B23.title: "Placer Block"
+	quest.6B00000000006300.title: "Explorer's Compass"
+	quest.6C0000000000000A.title: "Spider Mech"
+	quest.6C0000000000000B.title: "Dragonfly"
 }
