@@ -2300,8 +2300,9 @@
 	quest.6B0000000000620F.title: "Block of Nickel"
 	quest.6B00000000006210.title: "Hollow Magnet Block"
 	chapter.6100000000000000.quest_desc: [
-		"Related machines form branches. Independent blocks are placed separately."
-		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
+		"Optional utility machines form the left block. Energy-production equipment is grouped below."
+		"The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter."
+		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
 	]
 	chapter.6100000000000000.subtitle: "Machines and useful blocks"
 	chapter.6100000000000000.title: "Mekanism"
@@ -2317,10 +2318,12 @@
 	quest.61007F7CC4BF1105.title: "Electrolytic Separator"
 	quest.6106455D06842EF3.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Produces Scrap for Scrap Boxes and the Empty Crystal/UU Matter chain."
 	]
 	quest.6106455D06842EF3.title: "Recycler"
 	quest.610CA42C49AAF0B7.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Washes dirty ore slurry for the Chemical Crystallizer."
 	]
 	quest.610CA42C49AAF0B7.title: "Chemical Washer"
 	quest.6110778CB26D622B.title: "Seismic Vibrator"
@@ -2339,6 +2342,7 @@
 	quest.6114E8F45706FC16.title: "Precision Sawmill"
 	quest.6116BB6B786299A2.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Uses oxygen for three-times ore processing."
 	]
 	quest.6116BB6B786299A2.title: "Purification Chamber"
 	quest.611D57EA6ACBE225.quest_desc: [
@@ -2364,6 +2368,7 @@
 	quest.61279294059E8A75.title: "Thermoelectric Boiler"
 	quest.6128446391C69930.quest_desc: [
 		"Gather the listed structure components for this multiblock."
+		"Uses plutonium and polonium pellets for its structure. Converts polonium into antimatter using large amounts of energy."
 	]
 	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
 	quest.612A6CB0444291F4.title: "QIO Dashboard"
@@ -2373,6 +2378,7 @@
 	quest.612C871199A18CFB.title: "Teleporter"
 	quest.612EDBA3AB31C717.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Consumes SPS antimatter for item transmutation, including the UU Matter replication chain."
 	]
 	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
 	quest.6130B0FD941D9A87.title: "Oredictionificator"
@@ -2392,6 +2398,7 @@
 	quest.6137E617014D1DF3.title: "Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6138E502782D37CD.title: "CNC Rolling Mill"
 	quest.614044B979203D06.title: "Laser"
@@ -2402,6 +2409,7 @@
 	quest.6146427091E96BE5.title: "Wind Generator"
 	quest.6146E3DCFE0F8BE7.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Starts the five-times ore-processing line by dissolving ores into slurry using sulfuric acid."
 	]
 	quest.6146E3DCFE0F8BE7.title: "Chemical Dissolution Chamber"
 	quest.614B80386DC1A6CE.title: "Ambient Gas Collector"
@@ -2411,6 +2419,7 @@
 	quest.614C917652DB21F9.title: "Crusher"
 	quest.614CFE12B65761A6.quest_desc: [
 		"Gather the listed structure components for this multiblock."
+		"Produces power from steam supplied by a Thermoelectric Boiler or a Fission Reactor."
 	]
 	quest.614CFE12B65761A6.title: "Industrial Turbine"
 	quest.6155A58E8CA9B41B.quest_desc: [
@@ -2419,6 +2428,7 @@
 	quest.6155A58E8CA9B41B.title: "Chemical Oxidizer"
 	quest.6156CDFE543B3C19.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6156CDFE543B3C19.title: "CNC Lathe"
 	quest.6157C1521D2B083E.quest_desc: [
@@ -2431,6 +2441,7 @@
 	quest.61588EDEF3EE4AFB.title: "Personal Storage"
 	quest.6158907C6BBC3D76.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Crystallizes washed ore slurry. Also produces lithium dust for Induction Matrix storage."
 	]
 	quest.6158907C6BBC3D76.title: "Chemical Crystallizer"
 	quest.615BEBFBD1ED7B41.quest_desc: [
@@ -2451,6 +2462,7 @@
 	quest.6172DCD506EEA2EE.title: "Wireless Transmission Station"
 	quest.61757D6F0FE96778.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Produces substrate and HDPE; later makes plutonium/polonium pellets and Empty Crystals for replication."
 	]
 	quest.61757D6F0FE96778.title: "Pressurized Reaction Chamber"
 	quest.6181C0BF7FB84CD4.quest_desc: [
@@ -2460,6 +2472,7 @@
 	quest.6183C60BB3CFEFE9.title: "Fluidic Plenisher"
 	quest.6185FE15DFBCF018.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6185FE15DFBCF018.title: "CNC Stamper"
 	quest.618738812E241B28.title: "Dimensional Stabilizer"
@@ -2486,6 +2499,7 @@
 	quest.61AA22A6579ECC7F.title: "Formulaic Assemblicator"
 	quest.61B0C5442DEB7DFB.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Converts nuclear waste into polonium for pellets and antimatter production. Also converts lithium into tritium for fusion fuel."
 	]
 	quest.61B0C5442DEB7DFB.title: "Solar Neutron Activator"
 	quest.61B1B644F2F1C7B1.title: "Robit"
@@ -2494,6 +2508,7 @@
 	quest.61B961C7A9FF0E37.title: "Security Desk"
 	quest.61BE905EDDB94833.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Uses hydrogen chloride for four-times ore processing."
 	]
 	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
 	quest.61C1ECA95D9A4280.quest_desc: [
@@ -2505,6 +2520,8 @@
 	quest.61C6B6C1955D45E1.title: "QIO Drive Array"
 	quest.61CD6FB9A3418088.quest_desc: [
 		"Gather the listed structure components for this multiblock."
+		"Consumes fissile fuel and produces nuclear waste."
+		"Return waste to the Isotopic Centrifuge for plutonium or process it in the Solar Neutron Activator for polonium."
 	]
 	quest.61CD6FB9A3418088.title: "Fission Reactor"
 	quest.61D227C9590B6477.quest_desc: [
@@ -2514,6 +2531,8 @@
 	quest.61D38FD8A0C96143.title: "Resistive Heater"
 	quest.61D6479D233254A8.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
+		"Converts uranium hexafluoride into fissile fuel. Reprocesses fission nuclear waste into plutonium."
+		"Plutonium is made into pellets in the Pressurized Reaction Chamber and is required for SPS casings."
 	]
 	quest.61D6479D233254A8.title: "Isotopic Centrifuge"
 	quest.61DA1C428DC2A5D1.quest_desc: [
@@ -2530,6 +2549,7 @@
 	quest.61E42E122B5D334C.title: "Naquadah Reactor Controller"
 	quest.61E5CA7CEF5BC9A7.quest_desc: [
 		"Gather the listed structure components for this multiblock."
+		"Power-production branch. Uses a charged laser pulse for ignition and deuterium/tritium fuel from the chemical processing line."
 	]
 	quest.61E5CA7CEF5BC9A7.title: "Fusion Reactor Controller"
 	quest.61EBF8A4A6E2453C.quest_desc: [

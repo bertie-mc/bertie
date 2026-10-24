@@ -73,31 +73,6 @@
 			y: 0.0d
 		}
 		{
-			icon: {
-				id: "rustic_engineer:dragonfly_item"
-			}
-			id: "6C0000000000000B"
-			rewards: [
-				{
-					id: "6C0000000200000B"
-					type: "xp"
-					xp: 25
-				}
-			]
-			tasks: [
-				{
-					id: "6C0000000101000B"
-					item: {
-						count: 1
-						id: "rustic_engineer:dragonfly_item"
-					}
-					type: "item"
-				}
-			]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
 			id: "6C0000000000000D"
 			rewards: [{
 				id: "6C0000000200000D"

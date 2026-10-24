@@ -73,6 +73,8 @@ Equipment catalogue quests for withdrawn Pastel items are removed and their grou
 QIO storage items and drives, including Mekanism Extras tiers, are withdrawn. Chemical
 Package Filler keeps its original crafting pattern and materials with the current output
 format and ingredient-tag namespaces.
+Pastel frame alternatives that consume Astral Weave are disabled; the other frame
+crafting routes remain available.
 
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.

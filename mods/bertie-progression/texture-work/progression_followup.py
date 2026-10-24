@@ -4,6 +4,8 @@ import copy
 
 
 def apply_recipes(write, recipes, disabled, ritual):
+    for name in ("alt_phantom_frame", "alt_glow_phantom_frame"):
+        write(f"data/pastel/recipe/mod_integration/malum/pedestal/{name}.json", disabled)
     path = "data/packagedmekemicals/recipe/chemical_package_filler.json"
     filler = copy.deepcopy(recipes[path])
     filler["result"]["id"] = filler["result"].pop("item")
