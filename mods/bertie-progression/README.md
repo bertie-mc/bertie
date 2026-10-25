@@ -75,6 +75,8 @@ Package Filler keeps its original crafting pattern and materials with the curren
 format and ingredient-tag namespaces.
 Pastel frame alternatives that consume Astral Weave are disabled; the other frame
 crafting routes remain available.
+Cluster-based Chiseled Amethyst Basalt and Calcite recipes are disabled; their
+Amethyst Shard recipes remain available.
 
 - **Combat integration** (`combat/`) â€” shared Physical, Magic, Energy and Pure rules,
   armor and Protection formulas, resistance, recovery and ward compatibility.
