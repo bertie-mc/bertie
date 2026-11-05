@@ -2313,21 +2313,30 @@
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
 	quest.61007F7CC4BF1105.quest_desc: [
+		"Supplies oxygen for 3x ore processing and hydrogen for fuel and chemical production. Also separates brine into chlorine for the 4x route, and Heavy Water into deuterium for fusion."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61007F7CC4BF1105.title: "Electrolytic Separator"
 	quest.6106455D06842EF3.quest_desc: [
+		"Consumes suitable low-value materials for a chance to produce Scrap. Scrap -> Scrap Boxes -> Empty Crystals is part of the long route to UU Matter and replication."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Produces Scrap for Scrap Boxes and the Empty Crystal/UU Matter chain."
 	]
 	quest.6106455D06842EF3.title: "Recycler"
 	quest.610CA42C49AAF0B7.quest_desc: [
+		"Part of 5x ore-block processing: washes dirty slurry from the Dissolution Chamber with water, then sends clean slurry to the Crystallizer."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Washes dirty ore slurry for the Chemical Crystallizer."
 	]
 	quest.610CA42C49AAF0B7.title: "Chemical Washer"
+	quest.6110778CB26D622B.quest_desc: [
+		"Power it and use a Seismic Reader to inspect underground block columns for ores. Provides geological information for choosing where to mine."
+	]
 	quest.6110778CB26D622B.title: "Seismic Vibrator"
 	quest.6110D90C91445E34.quest_desc: [
+		"Stores radioactive chemicals while eligible waste decays. Some chemicals do not decay; breaking a filled barrel can release radiation."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6110D90C91445E34.title: "Radioactive Waste Barrel"
@@ -2335,17 +2344,25 @@
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.611182E4AB2921C7.title: "Chemical Storage Block"
+	quest.6111AF01EB8E173D.quest_desc: [
+		"Spends UU Matter and energy to duplicate a selected chemical, subject to the addon's replication rules. A late-game chemical supply option alongside ordinary production chains."
+	]
 	quest.6111AF01EB8E173D.title: "Chemical Replicator"
 	quest.6114E8F45706FC16.quest_desc: [
+		"Improves wood-processing yields and produces sawdust. Sawdust also makes Cardboard Boxes, which can move blocks while preserving their contents."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6114E8F45706FC16.title: "Precision Sawmill"
 	quest.6116BB6B786299A2.quest_desc: [
+		"Starts the 3x ore-block route using oxygen. Its clumps go through Crusher -> Enrichment Chamber -> smelting; the same machine also processes shards in the 4x and 5x routes."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Uses oxygen for three-times ore processing."
 	]
 	quest.6116BB6B786299A2.title: "Purification Chamber"
 	quest.611D57EA6ACBE225.quest_desc: [
+		"Spends UU Matter and energy to duplicate a selected item, subject to the addon's replication rules. The UU Matter supply comes from the Empty Crystal/antimatter chain."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.611D57EA6ACBE225.title: "Replicator"
@@ -2354,31 +2371,44 @@
 	]
 	quest.6121186A452C0852.title: "Painting Machine"
 	quest.6122354F5A79C064.quest_desc: [
+		"Converts food into Nutritional Paste for a Canteen or the MekaSuit's Nutritional Injection Unit. Centralizes food supply and supports automatic feeding."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6122354F5A79C064.title: "Nutritional Liquifier"
+	quest.6125CB5DE7D6BCB2.quest_desc: [
+		"Fills packages with Mekanism chemicals for PackagedAuto autocrafting. Enables packaged recipes whose inputs include chemicals as well as items."
+	]
 	quest.6125CB5DE7D6BCB2.title: "Chemical Package Filler"
 	quest.61272BEDD29AB74F.quest_desc: [
+		"Extracts pigments from dyes and colored materials for the Pigment Mixer and Painting Machine. This is the input side of Mekanism's recoloring chain."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61272BEDD29AB74F.title: "Pigment Extractor"
 	quest.61279294059E8A75.quest_desc: [
+		"Uses supplied heat to turn water into steam for an Industrial Turbine. Can connect to a heat source or exchange hot sodium from a sodium-cooled Fission Reactor."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.61279294059E8A75.title: "Thermoelectric Boiler"
 	quest.6128446391C69930.quest_desc: [
+		"Consumes huge amounts of electricity to turn polonium into antimatter. Its structure needs plutonium and polonium pellets; the antimatter feeds nucleosynthesis and advanced equipment recipes."
+		""
 		"Gather the listed structure components for this multiblock."
-		"Uses plutonium and polonium pellets for its structure. Converts polonium into antimatter using large amounts of energy."
 	]
 	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
 	quest.612A6CB0444291F4.title: "QIO Dashboard"
 	quest.612C871199A18CFB.quest_desc: [
+		"Creates a player-travel portal linked to another Teleporter on the same frequency, including across dimensions. The receiving destination must remain loaded."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.612C871199A18CFB.title: "Teleporter"
 	quest.612EDBA3AB31C717.quest_desc: [
+		"Spends antimatter and large amounts of energy on item transmutation. Also makes UU Matter for Mekanism More Machine's replication chain."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Consumes SPS antimatter for item transmutation, including the UU Matter replication chain."
 	]
 	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
 	quest.6130B0FD941D9A87.title: "Oredictionificator"
@@ -2386,21 +2416,35 @@
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.6132A956584982FD.title: "Dynamic Tank"
+	quest.61344D71EAD2E6D8.quest_desc: [
+		"Transfers items, fluids, chemicals, energy and heat between blocks on the same frequency, including across dimensions. A shared endpoint for remote factories and resource outposts."
+	]
 	quest.61344D71EAD2E6D8.title: "Quantum Entangloporter"
 	quest.613500C40061A8D5.quest_desc: [
+		"Combines two chemicals. Makes hydrogen chloride for the 4x ore route, sulfuric acid for 5x, and D-T Fuel for fusion."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.613500C40061A8D5.title: "Chemical Infuser"
+	quest.61358817E29C9D6B.quest_desc: [
+		"Installs and removes modules in modular equipment such as the MekaSuit and Meka-Tool. This is where their specialized abilities are configured."
+	]
 	quest.61358817E29C9D6B.title: "Modification Station"
 	quest.6137E617014D1DF3.quest_desc: [
+		"Extracts fluids from the world. With a Filter Upgrade, it collects Heavy Water instead of ordinary water; separating that provides deuterium for fusion."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6137E617014D1DF3.title: "Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
+		"Compatibility machine for rolling metal into wire. Its bundled processing recipes require Immersive Engineering, absent from this pack, so it currently has no enabled processing recipes."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6138E502782D37CD.title: "CNC Rolling Mill"
+	quest.614044B979203D06.quest_desc: [
+		"Converts electricity into a beam for laser networks, block breaking and Fusion Reactor ignition. An Amplifier accumulates the energy needed for the ignition pulse."
+	]
 	quest.614044B979203D06.title: "Laser"
 	quest.614430986DD3DBF3.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
@@ -2408,27 +2452,35 @@
 	quest.614430986DD3DBF3.title: "Energized Smelter"
 	quest.6146427091E96BE5.title: "Wind Generator"
 	quest.6146E3DCFE0F8BE7.quest_desc: [
+		"Starts the 5x ore-block route using sulfuric acid. Its dirty slurry goes to the Chemical Washer, then the Crystallizer, before rejoining the shard/clump/dust chain."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Starts the five-times ore-processing line by dissolving ores into slurry using sulfuric acid."
 	]
 	quest.6146E3DCFE0F8BE7.title: "Chemical Dissolution Chamber"
+	quest.614B80386DC1A6CE.quest_desc: [
+		"Uses power to collect Unstable Dimensional Gas from the environment. The gas feeds the PRC's Empty Crystal recipe in the UU Matter chain."
+	]
 	quest.614B80386DC1A6CE.title: "Ambient Gas Collector"
 	quest.614C917652DB21F9.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.614C917652DB21F9.title: "Crusher"
 	quest.614CFE12B65761A6.quest_desc: [
+		"Converts steam from a Fission Reactor, Thermoelectric Boiler or water-cooled Fusion Reactor into electricity. Its internal components determine steam throughput and power output."
+		""
 		"Gather the listed structure components for this multiblock."
-		"Produces power from steam supplied by a Thermoelectric Boiler or a Fission Reactor."
 	]
 	quest.614CFE12B65761A6.title: "Industrial Turbine"
 	quest.6155A58E8CA9B41B.quest_desc: [
+		"Turns solid ingredients into chemicals. For example, sulfur dust becomes sulfur dioxide for the 5x ore-processing acid chain; uranium processing also uses it."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6155A58E8CA9B41B.title: "Chemical Oxidizer"
 	quest.6156CDFE543B3C19.quest_desc: [
+		"Compatibility machine for machining parts such as rods. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6156CDFE543B3C19.title: "CNC Lathe"
 	quest.6157C1521D2B083E.quest_desc: [
@@ -2436,12 +2488,15 @@
 	]
 	quest.6157C1521D2B083E.title: "Bin"
 	quest.61588EDEF3EE4AFB.quest_desc: [
+		"A large portable inventory that can be opened while carried. The security system can restrict who may access it."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61588EDEF3EE4AFB.title: "Personal Storage"
 	quest.6158907C6BBC3D76.quest_desc: [
+		"Part of 5x ore-block processing: turns washed slurry into crystals, which continue through the Injection Chamber and the clump/dust chain. Also produces lithium dust for Induction Cells and solid antimatter pellets."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Crystallizes washed ore slurry. Also produces lithium dust for Induction Matrix storage."
 	]
 	quest.6158907C6BBC3D76.title: "Chemical Crystallizer"
 	quest.615BEBFBD1ED7B41.quest_desc: [
@@ -2454,35 +2509,55 @@
 	]
 	quest.6165D0FF8D53B4F4.title: "Heat Generator"
 	quest.616DCD75B4BB76C4.title: "Chargepad"
+	quest.616ED64305E2CC2D.quest_desc: [
+		"Accumulates and combines incoming laser energy, then releases a controlled high-energy pulse. Especially important for igniting the Fusion Reactor; also redirects laser beams."
+	]
 	quest.616ED64305E2CC2D.title: "Laser Amplifier"
 	quest.6170554009D736BD.quest_desc: [
+		"Makes control circuits, alloys and enriched iron for steel using stored infusion materials. The Enrichment Chamber can concentrate many infusion ingredients, reducing their material cost."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6170554009D736BD.title: "Metallurgic Infuser"
+	quest.6172DCD506EEA2EE.quest_desc: [
+		"Transfers items, fluids, chemicals, energy and heat through configurable wireless connections. Provides remote links to machine sides without running physical pipes between them."
+	]
 	quest.6172DCD506EEA2EE.title: "Wireless Transmission Station"
 	quest.61757D6F0FE96778.quest_desc: [
+		"Combines an item, a fluid and a chemical. Used for substrate and HDPE, plutonium/polonium pellets, and Empty Crystals in the UU Matter chain."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Produces substrate and HDPE; later makes plutonium/polonium pellets and Empty Crystals for replication."
 	]
 	quest.61757D6F0FE96778.title: "Pressurized Reaction Chamber"
 	quest.6181C0BF7FB84CD4.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6181C0BF7FB84CD4.title: "Chemical Tank"
+	quest.6183C60BB3CFEFE9.quest_desc: [
+		"Places supplied fluid into the world and expands through the area being filled. Useful for making pools or filling excavations with actual fluid blocks."
+	]
 	quest.6183C60BB3CFEFE9.title: "Fluidic Plenisher"
 	quest.6185FE15DFBCF018.quest_desc: [
+		"Uses molds for compatibility recipes such as plates or processor parts. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Optional processing machine. The current pack has no enabled processing recipes for this machine."
 	]
 	quest.6185FE15DFBCF018.title: "CNC Stamper"
+	quest.618738812E241B28.quest_desc: [
+		"Keeps selected chunks loaded using energy, allowing remote machinery to continue operating without a player nearby. Larger loaded areas cost more power."
+	]
 	quest.618738812E241B28.title: "Dimensional Stabilizer"
 	quest.618C05D3E0FBF597.title: "QIO Importer"
 	quest.618D7E07C30BC538.quest_desc: [
+		"Recreates ore blocks from raw materials and stone. Check the recipe's material cost when considering ore-block processing loops."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.618D7E07C30BC538.title: "Combiner"
 	quest.6196479D92FB06D6.title: "Bio-Generator"
 	quest.6198E5DF4A957298.quest_desc: [
+		"Burns gaseous fuels, including ethene from the Pressurized Reaction Chamber chain, to generate electricity. Links chemical processing to renewable power production."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
@@ -2491,24 +2566,43 @@
 	]
 	quest.619ED8397E1651A4.title: "Fluid Tank"
 	quest.61A3E003004D1BDE.quest_desc: [
+		"A multiblock battery: Induction Cells determine energy capacity, while Induction Providers determine transfer rate. Expanding one does not automatically increase the other."
+		""
 		"Gather the listed structure components for this multiblock."
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61A3E003004D1BDE.title: "Induction Matrix"
+	quest.61A73EDFBD8EA38A.quest_desc: [
+		"Burns combustible items to produce transferable heat. A fuel-based way to heat machines such as the Thermal Evaporation Plant."
+	]
 	quest.61A73EDFBD8EA38A.title: "Fuelwood Heater"
+	quest.61AA22A6579ECC7F.quest_desc: [
+		"An automatic crafting table using a saved Crafting Formula. Stock Control helps keep ingredients in the correct slots for continuous production."
+	]
 	quest.61AA22A6579ECC7F.title: "Formulaic Assemblicator"
 	quest.61B0C5442DEB7DFB.quest_desc: [
+		"Daylight-dependent step in two late-game chains: nuclear waste -> polonium for pellets/antimatter, and lithium -> tritium for fusion fuel."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Converts nuclear waste into polonium for pellets and antimatter production. Also converts lithium into tritium for fusion fuel."
 	]
 	quest.61B0C5442DEB7DFB.title: "Solar Neutron Activator"
+	quest.61B1B644F2F1C7B1.quest_desc: [
+		"A portable companion with storage, crafting and smelting, plus item pickup and follow modes. Its Chargepad serves as its home and recharge point."
+	]
 	quest.61B1B644F2F1C7B1.title: "Robit"
+	quest.61B2F5B46C3A879D.quest_desc: [
+		"Redirects laser beams and collects drops from blocks broken by its outgoing beam. Provides an inventory output for automated laser mining."
+	]
 	quest.61B2F5B46C3A879D.title: "Laser Tractor Beam"
+	quest.61B42C128D4734CF.quest_desc: [
+		"Spends UU Matter and energy to duplicate a selected fluid, subject to the addon's replication rules. A late-game alternative source of production fluids."
+	]
 	quest.61B42C128D4734CF.title: "Fluid Replicator"
 	quest.61B961C7A9FF0E37.title: "Security Desk"
 	quest.61BE905EDDB94833.quest_desc: [
+		"Starts the 4x ore-block route using hydrogen chloride, producing shards for the Purification Chamber. Also processes crystals coming from the 5x slurry route."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Uses hydrogen chloride for four-times ore processing."
 	]
 	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
 	quest.61C1ECA95D9A4280.quest_desc: [
@@ -2516,116 +2610,237 @@
 	]
 	quest.61C1ECA95D9A4280.title: "Solar Generator"
 	quest.61C4E5A8ECF470E0.title: "QIO Exporter"
+	quest.61C6106B8ACA0FE2.quest_desc: [
+		"Charges powered items in nearby players' inventories and equipment slots, including Curios. Useful for keeping carried equipment charged around a base."
+	]
 	quest.61C6106B8ACA0FE2.title: "Wireless Charging Station"
 	quest.61C6B6C1955D45E1.title: "QIO Drive Array"
 	quest.61CD6FB9A3418088.quest_desc: [
+		"Consumes fissile fuel, produces nuclear waste, and supplies heat/steam for turbine power. Waste becomes plutonium in the Isotopic Centrifuge or polonium in the Solar Neutron Activator; cooling is essential to prevent a meltdown."
+		""
 		"Gather the listed structure components for this multiblock."
-		"Consumes fissile fuel and produces nuclear waste."
-		"Return waste to the Isotopic Centrifuge for plutonium or process it in the Solar Neutron Activator for polonium."
 	]
 	quest.61CD6FB9A3418088.title: "Fission Reactor"
 	quest.61D227C9590B6477.quest_desc: [
+		"Converts chemicals to liquids and back. Important for water vapor in the sulfuric-acid chain and for turning liquid lithium into the chemical used for tritium or lithium dust."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61D227C9590B6477.title: "Rotary Condensentrator"
+	quest.61D38FD8A0C96143.quest_desc: [
+		"Converts electricity into transferable heat with an adjustable power draw. Useful for heating a Thermal Evaporation Plant independently of sunlight."
+	]
 	quest.61D38FD8A0C96143.title: "Resistive Heater"
 	quest.61D6479D233254A8.quest_desc: [
+		"Makes fissile fuel from uranium hexafluoride before fission. Afterward, it turns nuclear waste into plutonium, which the PRC makes into pellets for SPS construction."
+		""
 		"Upgraded variants count toward this machine's objective."
-		"Converts uranium hexafluoride into fissile fuel. Reprocesses fission nuclear waste into plutonium."
-		"Plutonium is made into pellets in the Pressurized Reaction Chamber and is required for SPS casings."
 	]
 	quest.61D6479D233254A8.title: "Isotopic Centrifuge"
 	quest.61DA1C428DC2A5D1.quest_desc: [
+		"Starts the 2x ore-block route and cleans dirty dust in the 3x-5x routes. Also enriches infusion ingredients to make them last longer. These tier multipliers refer to ore blocks; raw-ore recipes have different yields."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61DA1C428DC2A5D1.title: "Enrichment Chamber"
 	quest.61E3EA04873C158B.quest_desc: [
+		"Grows crops inside the machine using Nutrient Solution and energy. Provides compact automated farming without maintaining an external field."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61E3EA04873C158B.title: "Planting Station"
 	quest.61E42E122B5D334C.quest_desc: [
+		"Mekanism Extras' separate late-game power reactor, using Nq-U Fuel and Naquadah-specific components. It has its own fuel chain beyond the standard fission/fusion equipment."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.61E42E122B5D334C.title: "Naquadah Reactor Controller"
 	quest.61E5CA7CEF5BC9A7.quest_desc: [
+		"Produces power from deuterium and tritium after laser ignition with a fueled Hohlraum. Water cooling can additionally supply steam for an Industrial Turbine."
+		""
 		"Gather the listed structure components for this multiblock."
-		"Power-production branch. Uses a charged laser pulse for ignition and deuterium/tritium fuel from the chemical processing line."
 	]
 	quest.61E5CA7CEF5BC9A7.title: "Fusion Reactor Controller"
 	quest.61EBF8A4A6E2453C.quest_desc: [
+		"Consumes osmium chemical to make Refined Obsidian and Refined Glowstone ingots. Connect its chemical supply separately from its item inputs."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61EBF8A4A6E2453C.title: "Osmium Compressor"
 	quest.61ED11E1734FFF61.quest_desc: [
+		"Runs a heated multiblock for water -> brine -> liquid lithium. Brine supplies chlorine for 4x ore processing; lithium leads to fusion fuel and Induction Cells."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.61ED11E1734FFF61.title: "Thermal Evaporation Controller"
+	quest.61F223E957195400.quest_desc: [
+		"Extracts items according to filters and can assign transport colors, enforce stack sizes or distribute items round-robin. Connects inventories to Logistical Transporter sorting networks."
+	]
 	quest.61F223E957195400.title: "Logistical Sorter"
 	quest.61F26B48478DFF5B.title: "Industrial Alarm"
+	quest.61F98ABAEE507B7B.quest_desc: [
+		"Selectively mines blocks matching its filters within a configured area. Can replace mined blocks and use Silk Touch; useful for targeted resource gathering without clearing everything."
+	]
 	quest.61F98ABAEE507B7B.title: "Digital Miner"
 	quest.61FCF66321F85454.quest_desc: [
+		"Combines two pigments into another color before painting. Useful when the desired color is easier to synthesize than to extract directly."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61FCF66321F85454.title: "Pigment Mixer"
 	quest.620353FFC9DEFECB.title: "Bio Generator"
+	quest.621129AE3D36DAF2.quest_desc: [
+		"Extracts unlimited resources from special bedrock resource nodes beneath it. Must be powered by Enderic Lasers; ordinary energy cables cannot power it."
+	]
 	quest.621129AE3D36DAF2.title: "Bedrock Extractor"
 	quest.6211FDE7F53E359F.quest_desc: [
+		"Accelerates inserted items along guide rings and collides them to make resources such as overcharged crystals. Collisions also emit tachyons, which nearby Tachyon Absorbers can turn into power."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.6211FDE7F53E359F.title: "Particle Accelerator"
+	quest.62151E42D39DA61F.quest_desc: [
+		"Consumes liquid fuels from oil processing to produce electricity. Gives the refinery and fuel-processing chain a direct power-generation use."
+	]
 	quest.62151E42D39DA61F.title: "Fuel Generator"
 	quest.621ABB936B00A7D9.quest_desc: [
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.621ABB936B00A7D9.title: "Energy Storage"
+	quest.621E38939E05AA74.quest_desc: [
+		"Makes advanced materials and computer components, and can turn processed ore gems into extra dust using Fluxite. Must be charged by Enderic Lasers; each recipe completes when its energy requirement is met."
+	]
 	quest.621E38939E05AA74.title: "Atomic Forge"
 	quest.62213B9DA611D8AD.quest_desc: [
+		"Processes oil and other item/fluid mixtures into products such as fuels and sulfuric acid. Two chamber modules on top unlock its extra fluid outputs; these outputs are extracted from the modules themselves."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.62213B9DA611D8AD.title: "Refinery"
+	quest.6230B435795DFCEB.quest_desc: [
+		"Lets you choose equipment enchantments using electricity and souls stored in nearby Arcane Catalysts. Higher levels require more catalysts and souls; the Catalyst itself handles book-based hyper-enchanting."
+	]
 	quest.6230B435795DFCEB.title: "Stabilized Enchanter"
+	quest.623C6424729A6815.quest_desc: [
+		"Monitors a linked Particle Accelerator and emits redstone when particles reach a speed threshold. Can detect the active recipe's required speed automatically or use a manually chosen threshold."
+	]
 	quest.623C6424729A6815.title: "Particle Accelerator Speed Sensor"
+	quest.623C80D163EAF597.quest_desc: [
+		"Moves items between linked ports at least 50 blocks apart, with both ends chunk-loaded. Link them with a Target Designator; Fluid Addons on both ports enable liquid transport."
+	]
 	quest.623C80D163EAF597.title: "Drone Port"
+	quest.6241C0AE0A7AF5E1.quest_desc: [
+		"Mines blocks at range and harvests amethyst clusters into Fluxite. Also transfers power to machines, including the laser-only Atomic Forge and Bedrock Extractor, and stabilizes arcane devices. Aim it with a Target Designator."
+	]
 	quest.6241C0AE0A7AF5E1.title: "Enderic Laser"
+	quest.6244B13B19677509.quest_desc: [
+		"Boosts crop growth and hydrates farmland beneath a Machine Frame using energy and water. Mineral Slurry and bone meal can strengthen its growth effect."
+	]
 	quest.6244B13B19677509.title: "Fertilizer Block"
+	quest.624BC5B6C71FD915.quest_desc: [
+		"Processes ore clumps into gems and makes components such as carbon fiber. A Fluid Addon enables liquid recipes: water or sulfuric acid increases ore yield, and other recipes support fuel/plastic production."
+	]
 	quest.624BC5B6C71FD915.title: "Centrifuge"
+	quest.624D6392BC0C13FD.quest_desc: [
+		"Uses energy to accelerate extraction through Oritech item or fluid pipes. It must target the extracting pipe interface next to the source inventory."
+	]
 	quest.624D6392BC0C13FD.title: "Pipe Booster"
+	quest.625343E9CA0E5C5A.quest_desc: [
+		"An ore-processing upgrade: turns raw ores into clumps with extra material and secondary-metal byproducts. Send clumps to the Centrifuge; a Yield Addon doubles the secondary byproducts."
+	]
 	quest.625343E9CA0E5C5A.title: "Fragment Forge"
 	quest.625390D16B40461E.title: "Portable Tank"
+	quest.625BAFC1917D7964.quest_desc: [
+		"Collects souls from nearby deaths to supply the Stabilized Enchanter. Also applies books directly and can exceed normal enchantment levels; laser stabilization is needed when storing souls above its base capacity."
+	]
 	quest.625BAFC1917D7964.title: "Arcane Catalyst"
+	quest.625BF6FAC5C95CAD.quest_desc: [
+		"Controls which items may enter the attached inventory through Oritech item pipes. Supports whitelist/blacklist rules and matching item data, plus FTB Filter System filters."
+	]
 	quest.625BF6FAC5C95CAD.title: "Item Filter"
 	quest.6264043F58BE1F33.title: "Equipment Charger"
+	quest.6275CC3B17B7D2B6.quest_desc: [
+		"Converts steam into electricity and returns water. Multiple engines can be chained in a line; a Boiler Addon on an Oritech generator provides one way to supply steam."
+	]
 	quest.6275CC3B17B7D2B6.title: "Steam Engine"
+	quest.627AF928CDFE3F5E.quest_desc: [
+		"Solidifies fluids into materials such as ice or obsidian. Ice is useful as reactor coolant; cold biomes double this machine's processing speed and improve its energy efficiency."
+	]
 	quest.627AF928CDFE3F5E.title: "Industrial Chiller"
 	quest.627F81216BBEC39C.title: "Pulverizer"
+	quest.6284B6EA8E2482E3.quest_desc: [
+		"Captures a dangerous block to create a large multiblock battery; the contained block determines its base capacity. Enderic Lasers raise its storage capacity while firing at it, instead of charging the battery."
+	]
 	quest.6284B6EA8E2482E3.title: "Schrödinger's Safe"
+	quest.628B454043ECDE97.quest_desc: [
+		"Makes progression alloys more efficiently than hand crafting. Also melts processed ore gems into ingots, forming the end of an ore-refining route."
+	]
 	quest.628B454043ECDE97.title: "Foundry"
 	quest.628B75F6213677F9.quest_desc: [
+		"Attaches to the Cybernetic Augmentation Center and researches body upgrades. Higher station tiers unlock more advanced augments; extra stations allow research projects to run in parallel."
+		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.628B75F6213677F9.title: "Research Station"
+	quest.628D16AD0A6579CA.quest_desc: [
+		"Breaks blocks beneath a Machine Frame. A Crop Filter makes it harvest only mature crops; Quarry Addons extend its downward reach for excavation."
+	]
 	quest.628D16AD0A6579CA.title: "Destroyer Block"
+	quest.6291C0C75463BCE6.quest_desc: [
+		"Cuts whole trees from the bottom, collecting their drops. Pair with a Placer Block for replanting when building an automated wood farm."
+	]
 	quest.6291C0C75463BCE6.title: "Tree Cutter"
+	quest.629D84D74F39C289.quest_desc: [
+		"Produces solar power, with output depending on the quality of the machine cores used to assemble it. Better cores increase generation."
+	]
 	quest.629D84D74F39C289.title: "Big Solar Panel"
 	quest.629F225F3D608734.title: "Basic Generator"
 	quest.62A217A8A877BABD.title: "Lava Generator"
+	quest.62A30922B71AED75.quest_desc: [
+		"A magically altered Refinery using the same recipes with power-scaled speed. Nearby sculk blocks improve yield and arcane blocks improve energy efficiency; it keeps only the selected fluid output."
+	]
 	quest.62A30922B71AED75.title: "Tainted Refinery"
 	quest.62A48C1DFCC52A6E.title: "Powered Furnace"
+	quest.62A8F5342B5D078E.quest_desc: [
+		"Transmits electricity over long distances through linked poles. Connect them with a Target Designator; green markers are inputs and red markers are outputs."
+	]
 	quest.62A8F5342B5D078E.title: "Energy Transmission Pole"
+	quest.62B056E48F4E932E.quest_desc: [
+		"Helps high-speed particles negotiate tighter turns, allowing more compact accelerators. Place it inside the ring and link it to the controller with an Advanced Target Designator."
+	]
 	quest.62B056E48F4E932E.title: "Accelerator Magnetic Field"
 	quest.62B2E1ADCC22B9B7.quest_desc: [
+		"Runs a customizable nuclear reactor using fuel rods, reflectors and cooling components. Generates electricity from nuclear fuel; the internal layout determines heat management, efficiency and meltdown risk."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.62B2E1ADCC22B9B7.title: "Nuclear Reactor Controller"
 	quest.62C0FE899228BF70.quest_desc: [
+		"Captures the first mob that walks over it in a cage below, then spends souls from nearby deaths to spawn that mob type. The cage size depends on the captured mob."
+		""
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.62C0FE899228BF70.title: "Spawner Controller"
+	quest.62CB138F26BC4EDF.quest_desc: [
+		"Consumes connected machine addons and combines their supported effects into one Heart of the Machine. The resulting addon must be installed alone; interactive addons such as Redstone or Inventory Proxy cannot be spliced."
+	]
 	quest.62CB138F26BC4EDF.title: "Addon Splicer"
+	quest.62D72BBD32A6CEFF.quest_desc: [
+		"Researches and installs player augmentations such as extra health, movement abilities and ore vision. Uses attached Research Stations; installed augments do not need continuous power and can be toggled or removed."
+	]
 	quest.62D72BBD32A6CEFF.title: "Cybernetic Augmentation Center"
+	quest.62E6C820F71BEDAE.quest_desc: [
+		"Catches tachyons emitted by Particle Accelerator collisions and converts them into electricity. Surround the collision area with absorbers to capture particles traveling in different directions."
+	]
 	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
 	quest.62EAC8800B926619.title: "Pump"
+	quest.62EB2969EF64354C.quest_desc: [
+		"Produces machine components such as motors, coils and circuits using powered assembly recipes. Many components cost fewer materials here than when crafted by hand."
+	]
 	quest.62EB2969EF64354C.title: "Assembler"
+	quest.62F43E7EF07E2B23.quest_desc: [
+		"A moving gantry machine that places blocks, seeds or saplings beneath a Machine Frame. Shares its working area with other machines on that frame for automated farms or building tasks."
+	]
 	quest.62F43E7EF07E2B23.title: "Placer Block"
 	quest.6B00000000006300.title: "Explorer's Compass"
 	quest.6C0000000000000A.title: "Spider Mech"
