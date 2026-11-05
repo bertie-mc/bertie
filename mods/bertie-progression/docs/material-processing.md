@@ -98,10 +98,15 @@ Its scales smoothly exchange their eight color palettes over a 24-second animati
 
 ## Utility machine progression
 
-Electric smelting starts with Oritech's Powered Furnace and upgrades into Mekanism
-Smelting Factories. The standalone Energized Smelter, ordinary Mekanism Heat
-Generator, Bio-Generator and Advanced Solar Generator are retired. Oritech supplies
-the starter solid-fuel and biological generators. Stellaris Solar Panel is retired.
+Electric smelting starts with Oritech's Powered Furnace. Energized Smelter is
+retained as the base for Mekanism and Mekanism Extras Smelting Factories, preserving
+late-game bulk throughput. Its high-tier entry cost remains to be designed; the
+native Smelter recipe is available meanwhile, and Basic Smelting Factory again
+consumes the Smelter.
+
+Ordinary Mekanism Heat Generator, Bio-Generator and Advanced Solar Generator are
+retired. Oritech supplies the starter solid-fuel and biological generators.
+Stellaris Solar Panel is retired.
 
 Pumps follow Oritech Pump -> Mekanism Electric Pump -> Mekanism Extras Advanced
 Electric Pump. The ordinary pump upgrade retains its Steel Casing cost. Basic

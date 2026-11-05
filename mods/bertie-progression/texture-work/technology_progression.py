@@ -6,7 +6,6 @@ from pathlib import Path
 
 
 REPLACEMENTS = {
-    "mekanism:energized_smelter": "oritech:powered_furnace_block",
     "mekanismgenerators:heat_generator": "oritech:basic_generator_block",
     "mekanismgenerators:advanced_solar_generator": "oritech:big_solar_panel_block",
     "oritech:energy_pipe": "mekanism:basic_universal_cable",
@@ -19,6 +18,7 @@ REPLACEMENTS = {
 }
 
 PREDECESSORS = {
+    "data/mekanism/recipe/factory/basic/smelting.json": "mekanism:energized_smelter",
     "data/mekanism/recipe/electric_pump.json": "oritech:pump_block",
     "data/mekanism/recipe/fluid_tank/basic.json": "create:fluid_tank",
     "data/pastel/recipe/pedestal/tier3/block_breaker.json": "create:mechanical_drill",

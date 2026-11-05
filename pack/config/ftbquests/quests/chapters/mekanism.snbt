@@ -308,7 +308,7 @@
 		{
 			id: "614430986DD3DBF3"
 			icon: {
-				id: "mekanism:basic_smelting_factory"
+				id: "mekanism:energized_smelter"
 			}
 			tasks: [
 				{
@@ -320,8 +320,8 @@
 						id: "ftbfiltersystem:smart_filter"
 						count: 1
 						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory)item(mekanism_extras:absolute_smelting_factory)item(mekanism_extras:cosmic_smelting_factory)item(mekanism_extras:infinite_smelting_factory)item(mekanism_extras:supreme_smelting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Smelting Factory\", \"italic\": false}"
+							"ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:advanced_smelting_factory)item(mekanism:basic_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory)item(mekanism_extras:absolute_smelting_factory)item(mekanism_extras:cosmic_smelting_factory)item(mekanism_extras:infinite_smelting_factory)item(mekanism_extras:supreme_smelting_factory))"
+							"minecraft:custom_name": "{\"text\": \"Energized Smelter\", \"italic\": false}"
 						}
 					}
 				}

@@ -2442,9 +2442,9 @@
 	]
 	quest.614044B979203D06.title: "Laser"
 	quest.614430986DD3DBF3.quest_desc: [
-		"Upgrades the Oritech Powered Furnace into parallel smelting. Higher factory tiers add more parallel operations."
+		"Upgrades into Mekanism and Mekanism Extras Smelting Factories for bulk throughput. Oritech Powered Furnace covers the earlier smelting stage."
 	]
-	quest.614430986DD3DBF3.title: "Smelting Factory"
+	quest.614430986DD3DBF3.title: "Energized Smelter"
 	quest.6146427091E96BE5.title: "Wind Generator"
 	quest.6146E3DCFE0F8BE7.quest_desc: [
 		"Starts the 5x ore-block route using sulfuric acid. Its dirty slurry goes to the Chemical Washer, then the Crystallizer, before rejoining the shard/clump/dust chain."
