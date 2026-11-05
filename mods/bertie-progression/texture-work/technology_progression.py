@@ -19,14 +19,6 @@ REPLACEMENTS = {
 
 PREDECESSORS = {
     "data/mekanism/recipe/factory/basic/smelting.json": "mekanism:energized_smelter",
-    "data/mekanism/recipe/electric_pump.json": "oritech:pump_block",
-    "data/mekanism/recipe/fluid_tank/basic.json": "create:fluid_tank",
-    "data/pastel/recipe/pedestal/tier3/block_breaker.json": "create:mechanical_drill",
-    "data/pastel/recipe/pedestal/tier1/block_placer.json": "create:deployer",
-    "data/anvilcraft/recipe/block_devourer.json": "pastel:block_breaker",
-    "data/anvilcraft/recipe/block_placer.json": "pastel:block_placer",
-    "data/oritech/recipe/crafting/destroyer.json": "anvilcraft:block_devourer",
-    "data/oritech/recipe/crafting/placer.json": "anvilcraft:block_placer",
 }
 
 

@@ -108,10 +108,9 @@ Ordinary Mekanism Heat Generator, Bio-Generator and Advanced Solar Generator are
 retired. Oritech supplies the starter solid-fuel and biological generators.
 Stellaris Solar Panel is retired.
 
-Pumps follow Oritech Pump -> Mekanism Electric Pump -> Mekanism Extras Advanced
-Electric Pump. The ordinary pump upgrade retains its Steel Casing cost. Basic
-Mekanism Fluid Tank now consumes Create Fluid Tank; subsequent Mekanism tank
-upgrades retain their existing progression.
+Pumps, tanks, breakers and placers retain their recipes from before the proposed
+machine-predecessor changes. Oritech -> Mekanism -> Extras pumps, Create -> Mekanism
+tanks and the four-stage breaker/placer paths are deferred design ideas.
 
 Ordinary power, fluid and item transport uses Mekanism. Oritech's corresponding
 pipes, framed/duct variants and Pipe Booster are retired, alongside its Portable
@@ -119,15 +118,8 @@ Tank and portable/large energy storage. Retained recipes use Mekanism equivalent
 Schrodinger's Safe uses a Basic Induction Cell. Oritech Superconductors, Item Filter
 and Schrodinger's Safe remain available.
 
-The world-interaction recipes have these predecessor chains:
-
-- Create Mechanical Drill -> Pastel Block Breaker -> AnvilCraft Block Devourer ->
-  Oritech Destroyer Block.
-- Create Deployer -> Pastel Block Placer -> AnvilCraft Block Placer -> Oritech
-  Placer Block.
-
-Refined Storage and Cable Tiers remain outside those chains. The Devourer's special
-terrain-drop reduction tag is empty, so it uses ordinary block loot without that
+Refined Storage and Cable Tiers remain outside the proposed chains. The Devourer's
+special terrain-drop reduction tag is empty, so it uses ordinary block loot without that
 extra chance to discard drops. Its Dragon Head and Netherite Ingot costs remain.
 
 Null Blaze Cube uses four Solar Cores in its former Magma Cream positions.
