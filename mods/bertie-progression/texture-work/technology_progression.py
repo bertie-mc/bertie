@@ -8,6 +8,7 @@ from pathlib import Path
 REPLACEMENTS = {
     "mekanism:energized_smelter": "oritech:powered_furnace_block",
     "mekanismgenerators:heat_generator": "oritech:basic_generator_block",
+    "mekanismgenerators:advanced_solar_generator": "oritech:big_solar_panel_block",
     "oritech:energy_pipe": "mekanism:basic_universal_cable",
     "oritech:fluid_pipe": "mekanism:basic_mechanical_pipe",
     "oritech:item_pipe": "mekanism:basic_logistical_transporter",

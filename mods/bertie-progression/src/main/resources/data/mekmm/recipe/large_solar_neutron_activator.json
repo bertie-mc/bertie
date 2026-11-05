@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanismgenerators"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "mekanism:mek_data",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "c:storage_blocks/steel"
+    },
+    "L": {
+      "item": "mekanism:laser"
+    },
+    "R": {
+      "item": "mekanism:robit"
+    },
+    "S": {
+      "item": "oritech:big_solar_panel_block"
+    },
+    "T": {
+      "item": "mekmm:ultimate_max_chemical_tank"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "BRB",
+    "TLT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekmm:large_solar_neutron_activator"
+  }
+}

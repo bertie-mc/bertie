@@ -100,8 +100,8 @@ Its scales smoothly exchange their eight color palettes over a 24-second animati
 
 Electric smelting starts with Oritech's Powered Furnace and upgrades into Mekanism
 Smelting Factories. The standalone Energized Smelter, ordinary Mekanism Heat
-Generator and Mekanism Bio-Generator are retired. Oritech supplies the starter
-solid-fuel and biological generators. Stellaris Solar Panel is retired.
+Generator, Bio-Generator and Advanced Solar Generator are retired. Oritech supplies
+the starter solid-fuel and biological generators. Stellaris Solar Panel is retired.
 
 Pumps follow Oritech Pump -> Mekanism Electric Pump -> Mekanism Extras Advanced
 Electric Pump. The ordinary pump upgrade retains its Steel Casing cost. Basic
@@ -130,5 +130,6 @@ Nether Dust sifting yields Netherite Scrap at 0.1% and Redstone Dust at 8%; its
 Nether Dust return and Tungsten Nugget chances retain their existing values.
 
 Ore-processing machines, intermediates and processing recipes retain their current
-routes. Advanced Solar Generator, Solar Flux Reborn panels and the large addon
-Heat Generator remain available.
+routes. Solar Flux Reborn panels and the large addon Heat Generator remain
+available. Dedicated heaters supply evaporation heat; retained recipes that used
+Advanced Solar Generator now use Oritech Big Solar Panel.

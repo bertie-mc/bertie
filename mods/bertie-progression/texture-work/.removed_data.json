@@ -98,6 +98,7 @@
   "data/mekanism/loot_table/blocks/qio_exporter.json",
   "data/mekanism/loot_table/blocks/qio_importer.json",
   "data/mekanism/loot_table/blocks/qio_redstone_adapter.json",
+  "data/mekanismgenerators/loot_table/blocks/advanced_solar_generator.json",
   "data/mekanismgenerators/loot_table/blocks/bio_generator.json",
   "data/mekanismgenerators/loot_table/blocks/heat_generator.json",
   "data/oritech/loot_table/blocks/energy_pipe.json",

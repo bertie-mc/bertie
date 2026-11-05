@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:block",
+  "pools": [],
+  "random_sequence": "mekanismgenerators:blocks/advanced_solar_generator"
+}

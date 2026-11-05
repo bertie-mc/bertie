@@ -2597,7 +2597,7 @@
 	]
 	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
 	quest.61C1ECA95D9A4280.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
+		"Generates electricity in daylight. Oritech Big Solar Panel is the larger solar option; dedicated heaters supply evaporation heat."
 	]
 	quest.61C1ECA95D9A4280.title: "Solar Generator"
 	quest.61C6106B8ACA0FE2.quest_desc: [

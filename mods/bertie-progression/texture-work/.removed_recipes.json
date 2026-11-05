@@ -554,6 +554,7 @@
   "data/mekanism_extras/recipe/qio_drive_collapse.json",
   "data/mekanism_extras/recipe/qio_drive_gamma.json",
   "data/mekanism_extras/recipe/qio_drive_singularity.json",
+  "data/mekanismgenerators/recipe/generator/advanced_solar.json",
   "data/mekanismgenerators/recipe/generator/bio.json",
   "data/mekanismgenerators/recipe/generator/heat.json",
   "data/minecraft/recipe/enchanting_table.json",

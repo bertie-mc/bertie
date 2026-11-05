@@ -863,12 +863,8 @@
 					count: 1L
 					consume_items: false
 					item: {
-						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanismgenerators:solar_generator)item(mekanismgenerators:advanced_solar_generator))"
-							"minecraft:custom_name": "{\"text\": \"Solar Generator\", \"italic\": false}"
-						}
+						id: "mekanismgenerators:solar_generator"
 					}
 				}
 			]
