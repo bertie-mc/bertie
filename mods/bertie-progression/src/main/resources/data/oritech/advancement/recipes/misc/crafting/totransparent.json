@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oritech:crafting/totransparent"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_transparent_item_pipe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mekanism:basic_logistical_transporter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_transparent_item_pipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oritech:crafting/totransparent"
+    ]
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

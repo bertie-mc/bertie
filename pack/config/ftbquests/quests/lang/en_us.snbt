@@ -2299,6 +2299,9 @@
 	quest.6B0000000000620E.title: "Lightning Rod"
 	quest.6B0000000000620F.title: "Block of Nickel"
 	quest.6B00000000006210.title: "Hollow Magnet Block"
+	quest.6B00000000006300.title: "Explorer's Compass"
+	quest.6C0000000000000A.title: "Spider Mech"
+	quest.6C0000000000000B.title: "Dragonfly"
 	chapter.6100000000000000.quest_desc: [
 		"Optional utility machines form the left block. Energy-production equipment is grouped below."
 		"The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter."
@@ -2340,10 +2343,6 @@
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.6110D90C91445E34.title: "Radioactive Waste Barrel"
-	quest.611182E4AB2921C7.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.611182E4AB2921C7.title: "Chemical Storage Block"
 	quest.6111AF01EB8E173D.quest_desc: [
 		"Spends UU Matter and energy to duplicate a selected chemical, subject to the addon's replication rules. A late-game chemical supply option alongside ordinary production chains."
 	]
@@ -2398,7 +2397,6 @@
 		"Gather the listed structure components for this multiblock."
 	]
 	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
-	quest.612A6CB0444291F4.title: "QIO Dashboard"
 	quest.612C871199A18CFB.quest_desc: [
 		"Creates a player-travel portal linked to another Teleporter on the same frequency, including across dimensions. The receiving destination must remain loaded."
 		""
@@ -2411,7 +2409,6 @@
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
-	quest.6130B0FD941D9A87.title: "Oredictionificator"
 	quest.6132A956584982FD.quest_desc: [
 		"Gather the listed structure components for this multiblock."
 	]
@@ -2431,9 +2428,7 @@
 	]
 	quest.61358817E29C9D6B.title: "Modification Station"
 	quest.6137E617014D1DF3.quest_desc: [
-		"Extracts fluids from the world. With a Filter Upgrade, it collects Heavy Water instead of ordinary water; separating that provides deuterium for fusion."
-		""
-		"Upgraded variants count toward this machine's objective."
+		"Tier 2 pump, crafted using the Oritech Pump and upgraded into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."
 	]
 	quest.6137E617014D1DF3.title: "Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
@@ -2447,9 +2442,9 @@
 	]
 	quest.614044B979203D06.title: "Laser"
 	quest.614430986DD3DBF3.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
+		"Upgrades the Oritech Powered Furnace into parallel smelting. Higher factory tiers add more parallel operations."
 	]
-	quest.614430986DD3DBF3.title: "Energized Smelter"
+	quest.614430986DD3DBF3.title: "Smelting Factory"
 	quest.6146427091E96BE5.title: "Wind Generator"
 	quest.6146E3DCFE0F8BE7.quest_desc: [
 		"Starts the 5x ore-block route using sulfuric acid. Its dirty slurry goes to the Chemical Washer, then the Crystallizer, before rejoining the shard/clump/dust chain."
@@ -2503,11 +2498,10 @@
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.615BEBFBD1ED7B41.title: "Energy Cube"
-	quest.6164719100DB04C2.title: "QIO Redstone Adapter"
 	quest.6165D0FF8D53B4F4.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
+		"A large heat-based generator with fuel/lava input and heat-network connections. Early solid-fuel power starts with Oritech Basic Generator."
 	]
-	quest.6165D0FF8D53B4F4.title: "Heat Generator"
+	quest.6165D0FF8D53B4F4.title: "Large Heat Generator"
 	quest.616DCD75B4BB76C4.title: "Chargepad"
 	quest.616ED64305E2CC2D.quest_desc: [
 		"Accumulates and combines incoming laser energy, then releases a controlled high-energy pulse. Especially important for igniting the Fusion Reactor; also redirects laser beams."
@@ -2547,14 +2541,12 @@
 		"Keeps selected chunks loaded using energy, allowing remote machinery to continue operating without a player nearby. Larger loaded areas cost more power."
 	]
 	quest.618738812E241B28.title: "Dimensional Stabilizer"
-	quest.618C05D3E0FBF597.title: "QIO Importer"
 	quest.618D7E07C30BC538.quest_desc: [
 		"Recreates ore blocks from raw materials and stone. Check the recipe's material cost when considering ore-block processing loops."
 		""
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.618D7E07C30BC538.title: "Combiner"
-	quest.6196479D92FB06D6.title: "Bio-Generator"
 	quest.6198E5DF4A957298.quest_desc: [
 		"Burns gaseous fuels, including ethene from the Pressurized Reaction Chamber chain, to generate electricity. Links chemical processing to renewable power production."
 		""
@@ -2562,7 +2554,7 @@
 	]
 	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
 	quest.619ED8397E1651A4.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
+		"Upgrades Create Fluid Tank into portable fluid storage. Higher Mekanism tank tiers expand capacity."
 	]
 	quest.619ED8397E1651A4.title: "Fluid Tank"
 	quest.61A3E003004D1BDE.quest_desc: [
@@ -2598,7 +2590,6 @@
 		"Spends UU Matter and energy to duplicate a selected fluid, subject to the addon's replication rules. A late-game alternative source of production fluids."
 	]
 	quest.61B42C128D4734CF.title: "Fluid Replicator"
-	quest.61B961C7A9FF0E37.title: "Security Desk"
 	quest.61BE905EDDB94833.quest_desc: [
 		"Starts the 4x ore-block route using hydrogen chloride, producing shards for the Purification Chamber. Also processes crystals coming from the 5x slurry route."
 		""
@@ -2609,12 +2600,10 @@
 		"Upgraded variants count toward this machine's objective."
 	]
 	quest.61C1ECA95D9A4280.title: "Solar Generator"
-	quest.61C4E5A8ECF470E0.title: "QIO Exporter"
 	quest.61C6106B8ACA0FE2.quest_desc: [
 		"Charges powered items in nearby players' inventories and equipment slots, including Curios. Useful for keeping carried equipment charged around a base."
 	]
 	quest.61C6106B8ACA0FE2.title: "Wireless Charging Station"
-	quest.61C6B6C1955D45E1.title: "QIO Drive Array"
 	quest.61CD6FB9A3418088.quest_desc: [
 		"Consumes fissile fuel, produces nuclear waste, and supplies heat/steam for turbine power. Waste becomes plutonium in the Isotopic Centrifuge or polonium in the Solar Neutron Activator; cooling is essential to prevent a meltdown."
 		""
@@ -2677,7 +2666,6 @@
 		"Extracts items according to filters and can assign transport colors, enforce stack sizes or distribute items round-robin. Connects inventories to Logistical Transporter sorting networks."
 	]
 	quest.61F223E957195400.title: "Logistical Sorter"
-	quest.61F26B48478DFF5B.title: "Industrial Alarm"
 	quest.61F98ABAEE507B7B.quest_desc: [
 		"Selectively mines blocks matching its filters within a configured area. Can replace mined blocks and use Silk Touch; useful for targeted resource gathering without clearing everything."
 	]
@@ -2703,10 +2691,6 @@
 		"Consumes liquid fuels from oil processing to produce electricity. Gives the refinery and fuel-processing chain a direct power-generation use."
 	]
 	quest.62151E42D39DA61F.title: "Fuel Generator"
-	quest.621ABB936B00A7D9.quest_desc: [
-		"Upgraded variants count toward this machine's objective."
-	]
-	quest.621ABB936B00A7D9.title: "Energy Storage"
 	quest.621E38939E05AA74.quest_desc: [
 		"Makes advanced materials and computer components, and can turn processed ore gems into extra dust using Fluxite. Must be charged by Enderic Lasers; each recipe completes when its energy requirement is met."
 	]
@@ -2741,15 +2725,10 @@
 		"Processes ore clumps into gems and makes components such as carbon fiber. A Fluid Addon enables liquid recipes: water or sulfuric acid increases ore yield, and other recipes support fuel/plastic production."
 	]
 	quest.624BC5B6C71FD915.title: "Centrifuge"
-	quest.624D6392BC0C13FD.quest_desc: [
-		"Uses energy to accelerate extraction through Oritech item or fluid pipes. It must target the extracting pipe interface next to the source inventory."
-	]
-	quest.624D6392BC0C13FD.title: "Pipe Booster"
 	quest.625343E9CA0E5C5A.quest_desc: [
 		"An ore-processing upgrade: turns raw ores into clumps with extra material and secondary-metal byproducts. Send clumps to the Centrifuge; a Yield Addon doubles the secondary byproducts."
 	]
 	quest.625343E9CA0E5C5A.title: "Fragment Forge"
-	quest.625390D16B40461E.title: "Portable Tank"
 	quest.625BAFC1917D7964.quest_desc: [
 		"Collects souls from nearby deaths to supply the Stabilized Enchanter. Also applies books directly and can exceed normal enchantment levels; laser stabilization is needed when storing souls above its base capacity."
 	]
@@ -2771,7 +2750,7 @@
 	quest.6284B6EA8E2482E3.quest_desc: [
 		"Captures a dangerous block to create a large multiblock battery; the contained block determines its base capacity. Enderic Lasers raise its storage capacity while firing at it, instead of charging the battery."
 	]
-	quest.6284B6EA8E2482E3.title: "Schrödinger's Safe"
+	quest.6284B6EA8E2482E3.title: "SchrÃ¶dinger's Safe"
 	quest.628B454043ECDE97.quest_desc: [
 		"Makes progression alloys more efficiently than hand crafting. Also melts processed ore gems into ingots, forming the end of an ore-refining route."
 	]
@@ -2783,7 +2762,7 @@
 	]
 	quest.628B75F6213677F9.title: "Research Station"
 	quest.628D16AD0A6579CA.quest_desc: [
-		"Breaks blocks beneath a Machine Frame. A Crop Filter makes it harvest only mature crops; Quarry Addons extend its downward reach for excavation."
+		"Tier 4 breaker, upgrading AnvilCraft Block Devourer. Breaks blocks beneath a Machine Frame; Crop Filter and Quarry Addons adapt it for harvesting or deeper excavation."
 	]
 	quest.628D16AD0A6579CA.title: "Destroyer Block"
 	quest.6291C0C75463BCE6.quest_desc: [
@@ -2833,16 +2812,16 @@
 		"Catches tachyons emitted by Particle Accelerator collisions and converts them into electricity. Surround the collision area with absorbers to capture particles traveling in different directions."
 	]
 	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
+	quest.62EAC8800B926619.quest_desc: [
+		"Tier 1 pump: drains connected fluid bodies using a downward extraction trunk. Upgrades into Mekanism Electric Pump, followed by the Advanced Electric Pump."
+	]
 	quest.62EAC8800B926619.title: "Pump"
 	quest.62EB2969EF64354C.quest_desc: [
 		"Produces machine components such as motors, coils and circuits using powered assembly recipes. Many components cost fewer materials here than when crafted by hand."
 	]
 	quest.62EB2969EF64354C.title: "Assembler"
 	quest.62F43E7EF07E2B23.quest_desc: [
-		"A moving gantry machine that places blocks, seeds or saplings beneath a Machine Frame. Shares its working area with other machines on that frame for automated farms or building tasks."
+		"Tier 4 placer, upgrading AnvilCraft Block Placer. Places blocks, seeds or saplings beneath a Machine Frame, sharing the frame area with other gantry machines."
 	]
 	quest.62F43E7EF07E2B23.title: "Placer Block"
-	quest.6B00000000006300.title: "Explorer's Compass"
-	quest.6C0000000000000A.title: "Spider Mech"
-	quest.6C0000000000000B.title: "Dragonfly"
 }

@@ -308,7 +308,7 @@
 		{
 			id: "614430986DD3DBF3"
 			icon: {
-				id: "mekanism:energized_smelter"
+				id: "mekanism:basic_smelting_factory"
 			}
 			tasks: [
 				{
@@ -320,8 +320,8 @@
 						id: "ftbfiltersystem:smart_filter"
 						count: 1
 						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:advanced_smelting_factory)item(mekanism:basic_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory)item(mekanism_extras:absolute_smelting_factory)item(mekanism_extras:cosmic_smelting_factory)item(mekanism_extras:infinite_smelting_factory)item(mekanism_extras:supreme_smelting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Energized Smelter\", \"italic\": false}"
+							"ftbfiltersystem:filter": "or(item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory)item(mekanism_extras:absolute_smelting_factory)item(mekanism_extras:cosmic_smelting_factory)item(mekanism_extras:infinite_smelting_factory)item(mekanism_extras:supreme_smelting_factory))"
+							"minecraft:custom_name": "{\"text\": \"Smelting Factory\", \"italic\": false}"
 						}
 					}
 				}
@@ -1894,7 +1894,7 @@
 		{
 			id: "6165D0FF8D53B4F4"
 			icon: {
-				id: "mekanismgenerators:heat_generator"
+				id: "mekmm:large_heat_generator"
 			}
 			tasks: [
 				{
@@ -1903,12 +1903,8 @@
 					count: 1L
 					consume_items: false
 					item: {
-						id: "ftbfiltersystem:smart_filter"
 						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanismgenerators:heat_generator)item(mekmm:large_heat_generator))"
-							"minecraft:custom_name": "{\"text\": \"Heat Generator\", \"italic\": false}"
-						}
+						id: "mekmm:large_heat_generator"
 					}
 				}
 			]
@@ -1934,26 +1930,6 @@
 			]
 			x: 2.250d
 			y: 15.000d
-		}
-		{
-			id: "6196479D92FB06D6"
-			icon: {
-				id: "mekanismgenerators:bio_generator"
-			}
-			tasks: [
-				{
-					id: "6198E3512DD943E7"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanismgenerators:bio_generator"
-					}
-				}
-			]
-			x: 0.000d
-			y: 17.250d
 		}
 		{
 			id: "6198E5DF4A957298"

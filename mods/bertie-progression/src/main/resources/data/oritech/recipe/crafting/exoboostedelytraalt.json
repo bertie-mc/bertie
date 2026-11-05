@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:exo_chestplate"
+    },
+    "c": {
+      "item": "oritech:jetpack_elytra"
+    },
+    "f": {
+      "item": "oritech:ion_thruster"
+    },
+    "s": {
+      "item": "mekanism:basic_fluid_tank"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fcf",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:jetpack_exo_elytra"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

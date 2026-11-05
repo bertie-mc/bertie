@@ -3,21 +3,21 @@
   "category": "misc",
   "pattern": [
     "CCC",
-    "RSB",
+    "RUB",
     "BBB"
   ],
   "key": {
     "R": {
       "item": "minecraft:redstone"
     },
-    "S": {
-      "item": "pastel:storm_stone"
-    },
     "B": {
       "item": "pastel:polished_bone_ash"
     },
     "C": {
       "item": "pastel:pyrite"
+    },
+    "U": {
+      "item": "create:mechanical_drill"
     }
   },
   "result": {
@@ -28,6 +28,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "c": {
+      "item": "oritech:magnetic_coil"
+    },
+    "i": {
+      "item": "mekanism:basic_energy_cube"
+    },
+    "s": {
+      "tag": "c:ingots/electrum"
+    }
+  },
+  "pattern": [
+    "c c",
+    "sis",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:power_pole_block"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

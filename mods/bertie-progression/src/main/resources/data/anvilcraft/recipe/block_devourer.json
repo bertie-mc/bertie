@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "minecraft:dragon_head"
+    },
+    "C": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "minecraft:cobblestone"
+    },
+    "U": {
+      "item": "pastel:block_breaker"
+    }
+  },
+  "pattern": [
+    "DAB",
+    "CUA",
+    "DA "
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:block_devourer"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

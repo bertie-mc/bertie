@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:fluxite"
+    },
+    "c": {
+      "item": "mekanism:basic_induction_cell"
+    },
+    "f": {
+      "item": "oritech:super_ai_chip"
+    },
+    "m": {
+      "item": "oritech:duratium_ingot"
+    },
+    "s": {
+      "item": "oritech:flux_gate"
+    }
+  },
+  "pattern": [
+    "fsf",
+    "mcm",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:unstable_container"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

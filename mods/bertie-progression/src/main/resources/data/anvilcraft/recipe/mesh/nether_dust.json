@@ -15,19 +15,11 @@
       "id": "anvilcraft:nether_dust"
     },
     {
+      "id": "minecraft:redstone",
       "count": {
         "type": "minecraft:binomial",
         "n": 1.0,
-        "p": 0.1
-      },
-      "id": "minecraft:redstone"
-    },
-    {
-      "id": "minecraft:netherite_scrap",
-      "count": {
-        "type": "minecraft:binomial",
-        "n": 1.0,
-        "p": 0.006
+        "p": 0.08
       }
     },
     {
@@ -36,6 +28,14 @@
         "type": "minecraft:binomial",
         "n": 1.0,
         "p": 0.002
+      }
+    },
+    {
+      "id": "minecraft:netherite_scrap",
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.001
       }
     }
   ]

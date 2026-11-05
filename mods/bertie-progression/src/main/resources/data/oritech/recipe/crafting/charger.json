@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "c:chests/wooden"
+    },
+    "c": {
+      "tag": "c:storage_blocks/redstone"
+    },
+    "f": {
+      "tag": "c:ingots/steel"
+    },
+    "m": {
+      "item": "mekanism:basic_universal_cable"
+    },
+    "s": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "pattern": [
+    "fsf",
+    "mcm",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:charger_block"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

@@ -3,6 +3,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hazennstuff"
     }
   ],
   "type": "avaritia:shaped_table",
@@ -15,7 +19,7 @@
       "item": "malum:blazing_quartz"
     },
     "c": {
-      "item": "minecraft:magma_cream"
+      "item": "hazennstuff:solar_core"
     },
     "x": {
       "item": "minecraft:glowstone"

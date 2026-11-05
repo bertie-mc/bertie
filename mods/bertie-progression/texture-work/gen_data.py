@@ -556,11 +556,11 @@ write(f"{R}/avaritia/altar_of_amethyst.json", {
 # Null Blaze Cube: Avaritia's own 5x5 now yields the inert cube, and the live one is blessed out of
 # it on the Altar of Amethyst over a full Minecraft day.
 write("data/avaritia/recipe/blaze_cube.json", {
-    "neoforge:conditions": conds("avaritia"),
+    "neoforge:conditions": conds("avaritia", "hazennstuff"),
     "type": "avaritia:shaped_table",
     "tier": 2,
     "key": {"a": {"item": "minecraft:ancient_debris"}, "b": {"item": "malum:blazing_quartz"},
-            "c": {"item": "pastel:stratine_gem"}, "x": {"item": "minecraft:glowstone"},
+            "c": {"item": "hazennstuff:solar_core"}, "x": {"item": "minecraft:glowstone"},
             "y": {"item": "minecraft:blaze_rod"}},
     "pattern": [" bcb ", "byxyb", "cxaxc", "byxyb", " bcb "],
     "result": {"id": "bertieprogression:null_blaze_cube", "count": 1},
@@ -5383,6 +5383,8 @@ if _scan_ok:
     _pastel_changed = apply_pastel_policy(write, _recipe_src, RES, written, set(_removed_ids), DISABLED)
     from progression_followup import apply_recipes as apply_followup_recipes
     apply_followup_recipes(write, _recipe_src, DISABLED, ritual)
+    from technology_progression import apply_recipes as apply_technology_recipes
+    apply_technology_recipes(write, _recipe_src, RES, set(_removed_ids))
     print(f"  Pastel retained recipes: {_pastel_changed} replacements and temporary crafts")
 
 # MANIFEST. gen_data only ever writes, so without this, deleting a row would leave its

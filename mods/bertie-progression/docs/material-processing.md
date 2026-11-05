@@ -95,3 +95,40 @@ eight minutes, and gunpowder makes either duration splashable.
 
 Scale Ingot is a visual placeholder in the Progression creative tab, with no recipe or use.
 Its scales smoothly exchange their eight color palettes over a 24-second animation.
+
+## Utility machine progression
+
+Electric smelting starts with Oritech's Powered Furnace and upgrades into Mekanism
+Smelting Factories. The standalone Energized Smelter, ordinary Mekanism Heat
+Generator and Mekanism Bio-Generator are retired. Oritech supplies the starter
+solid-fuel and biological generators. Stellaris Solar Panel is retired.
+
+Pumps follow Oritech Pump -> Mekanism Electric Pump -> Mekanism Extras Advanced
+Electric Pump. The ordinary pump upgrade retains its Steel Casing cost. Basic
+Mekanism Fluid Tank now consumes Create Fluid Tank; subsequent Mekanism tank
+upgrades retain their existing progression.
+
+Ordinary power, fluid and item transport uses Mekanism. Oritech's corresponding
+pipes, framed/duct variants and Pipe Booster are retired, alongside its Portable
+Tank and portable/large energy storage. Retained recipes use Mekanism equivalents;
+Schrodinger's Safe uses a Basic Induction Cell. Oritech Superconductors, Item Filter
+and Schrodinger's Safe remain available.
+
+The world-interaction recipes have these predecessor chains:
+
+- Create Mechanical Drill -> Pastel Block Breaker -> AnvilCraft Block Devourer ->
+  Oritech Destroyer Block.
+- Create Deployer -> Pastel Block Placer -> AnvilCraft Block Placer -> Oritech
+  Placer Block.
+
+Refined Storage and Cable Tiers remain outside those chains. The Devourer's special
+terrain-drop reduction tag is empty, so it uses ordinary block loot without that
+extra chance to discard drops. Its Dragon Head and Netherite Ingot costs remain.
+
+Null Blaze Cube uses four Solar Cores in its former Magma Cream positions.
+Nether Dust sifting yields Netherite Scrap at 0.1% and Redstone Dust at 8%; its
+Nether Dust return and Tungsten Nugget chances retain their existing values.
+
+Ore-processing machines, intermediates and processing recipes retain their current
+routes. Advanced Solar Generator, Solar Flux Reborn panels and the large addon
+Heat Generator remain available.

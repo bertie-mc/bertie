@@ -292,7 +292,6 @@
 			]
 			dependencies: [
 				"624BC5B6C71FD915"
-				"625390D16B40461E"
 			]
 			x: 0.000d
 			y: -6.000d
@@ -515,26 +514,6 @@
 			y: 4.500d
 		}
 		{
-			id: "624D6392BC0C13FD"
-			icon: {
-				id: "oritech:pipe_booster_block"
-			}
-			tasks: [
-				{
-					id: "62AAB9A0775E9366"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:pipe_booster_block"
-					}
-				}
-			]
-			x: 13.000d
-			y: 8.000d
-		}
-		{
 			id: "623C80D163EAF597"
 			icon: {
 				id: "oritech:drone_port_block"
@@ -575,7 +554,8 @@
 				}
 			]
 			dependencies: [
-				"621ABB936B00A7D9"
+				"624BC5B6C71FD915"
+				"62EB2969EF64354C"
 			]
 			x: 5.500d
 			y: -5.000d
@@ -709,54 +689,6 @@
 			y: -4.500d
 		}
 		{
-			id: "621ABB936B00A7D9"
-			icon: {
-				id: "oritech:small_storage_block"
-			}
-			tasks: [
-				{
-					id: "625A1135F7384DD3"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(oritech:small_storage_block)item(oritech:large_storage_block))"
-							"minecraft:custom_name": "{\"text\": \"Energy Storage\", \"italic\": false}"
-						}
-					}
-				}
-			]
-			dependencies: [
-				"624BC5B6C71FD915"
-				"62EB2969EF64354C"
-			]
-			x: 3.000d
-			y: -5.000d
-		}
-		{
-			id: "625390D16B40461E"
-			icon: {
-				id: "oritech:small_tank_block"
-			}
-			tasks: [
-				{
-					id: "628450E1D823BB0A"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:small_tank_block"
-					}
-				}
-			]
-			x: -2.500d
-			y: -6.000d
-		}
-		{
 			id: "6284B6EA8E2482E3"
 			icon: {
 				id: "oritech:unstable_container"
@@ -774,7 +706,6 @@
 				}
 			]
 			dependencies: [
-				"621ABB936B00A7D9"
 				"621E38939E05AA74"
 			]
 			x: 9.000d
