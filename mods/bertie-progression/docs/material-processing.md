@@ -94,4 +94,4 @@ Lava Bottle and Bone Serpent Tooth brew three-minute Lava Vision. Redstone exten
 eight minutes, and gunpowder makes either duration splashable.
 
 Scale Ingot is a visual placeholder in the Progression creative tab, with no recipe or use.
-Its sprite is the warm, scale-covered ingot.
+Its scales smoothly exchange their eight color palettes over a 24-second animation.
