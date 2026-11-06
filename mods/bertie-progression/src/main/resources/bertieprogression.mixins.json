@@ -20,6 +20,7 @@
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
     "LightningMagnetInputMixin",
+    "OverseerSingleChunkMixin",
     "PocketOpenKeyMixin",
     "PotionBrewingBuilderMixin",
     "RemovedEffectsMixin",

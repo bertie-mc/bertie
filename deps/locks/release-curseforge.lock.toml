@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "fe8f55f5fd3249d96a9533b1cf997987884e9306bbe009e2e116ce41d546a79b"
+inputs-hash = "1b7d76c075a9d9d37dbc9391fda22ed37509f758e9d5ed728df2dc5b4ce32f73"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -221,10 +221,6 @@ mod = "curseforge:533748:8191901"
 [components."chipped"]
 any = "curseforge:456956:5813117"
 mod = "curseforge:456956:5813117"
-
-[components."chunk-loaders"]
-any = "curseforge:402924:5550217"
-mod = "curseforge:402924:5550217"
 
 [components."cinematic-cataclysm"]
 any = "curseforge:1399324:7550281"
@@ -5693,27 +5689,6 @@ file-id = 5873258
 provides = ["betterf3"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:348521:5729127", "mod-id" = "cloth_config", "version-range" = "[15.0.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:402924:5550217"]
-name = "chunk-loaders"
-component = "chunk-loaders"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "chunk-loaders-402924"
-version = "5550217"
-filename = "chunkloaders-1.2.8-neoforge-mc1.21.jar"
-project-id = 402924
-slug = "chunk-loaders"
-file-id = 5550217
-provides = ["chunkloaders"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:rOUBggPv:hcYSe7v7", "mod-id" = "supermartijn642corelib", "version-range" = "[1.1.17,1.2.0)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:438332:5546996", "mod-id" = "supermartijn642configlib", "version-range" = "[1.1.6,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

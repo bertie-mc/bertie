@@ -264,8 +264,6 @@
 	quest.2B0000000000006F.title: "Reinforced Hang Glider"
 	quest.2B00000000000070.title: "Ender Pearl Fragment"
 	quest.2B00000000000071.title: "An Elevator"
-	quest.2B00000000000082.title: "Single Chunk Loader"
-	quest.2B00000000000083.title: "Basic Chunk Loader"
 	quest.2B00000000000084.title: "Small Diamond Slate"
 	quest.2B00000000000085.title: "Large Diamond Slate"
 	quest.2B00000000000086.title: "Diamond Horseshoes"
@@ -348,8 +346,6 @@
 	quest.3B00000000000071.title: "Summon Cornelia"
 	quest.3B00000000000072.title: "Pirate Treasures"
 	quest.3B00000000000073.title: "Pocket Watch"
-	quest.3B00000000000074.title: "Advanced Chunk Loader"
-	quest.3B00000000000075.title: "Ultimate Chunk Loader"
 	quest.3B00000000000076.title: "Legendary Crafting Orb"
 	quest.3B00000000000077.quest_desc: ["Survive Shipbreaker's maw"]
 	quest.3B00000000000077.title: "But how?"
@@ -2491,7 +2487,7 @@
 	]
 	quest.6185FE15DFBCF018.title: "CNC Stamper"
 	quest.618738812E241B28.quest_desc: [
-		"Keeps selected chunks loaded using energy, allowing remote machinery to continue operating without a player nearby. Larger loaded areas cost more power."
+		"Late-game chunk loading with configurable coverage and an energy cost. AnvilCraft Overseer provides the early single-chunk option."
 	]
 	quest.618738812E241B28.title: "Dimensional Stabilizer"
 	quest.618D7E07C30BC538.quest_desc: [

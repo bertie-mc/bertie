@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "27c54506b819939943279b04ea8cbb6b5d4c9f70601d5642777406f498d141ab"
+inputs-hash = "30f4d8c5c9928c566999a71881b25805644b3174053d618c2e1a5722961c492a"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -221,10 +221,6 @@ mod = "modrinth:YWGP4Y1d:FO0SZRP2"
 [components."chipped"]
 any = "modrinth:BAscRYKm:eqVowbGc"
 mod = "modrinth:BAscRYKm:eqVowbGc"
-
-[components."chunk-loaders"]
-any = "modrinth:t1VgucWo:xC7Vc2qa"
-mod = "modrinth:t1VgucWo:xC7Vc2qa"
 
 [components."cinematic-cataclysm"]
 any = "modrinth:1WAsDg6d:ZHoI7B98"
@@ -9575,26 +9571,6 @@ version-id = "mmYe9e5V"
 provides = ["durabilitytooltip"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:LN9BxssP:qKL9jM75", "mod-id" = "supermartijn642configlib", "version-range" = "[1.1.6,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:t1VgucWo:xC7Vc2qa"]
-name = "chunk-loaders"
-component = "chunk-loaders"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "t1VgucWo"
-version = "xC7Vc2qa"
-filename = "chunkloaders-1.2.8-neoforge-mc1.21.jar"
-project-id = "t1VgucWo"
-version-id = "xC7Vc2qa"
-provides = ["chunkloaders"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:rOUBggPv:hcYSe7v7", "mod-id" = "supermartijn642corelib", "version-range" = "[1.1.17,1.2.0)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:LN9BxssP:qKL9jM75", "mod-id" = "supermartijn642configlib", "version-range" = "[1.1.6,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

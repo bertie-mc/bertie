@@ -96,6 +96,8 @@ Amethyst Shard recipes remain available.
 - **Baby wither skeletons** (`BabyWitherSkeletonSpeed`, `BabyWitherSkeletonOddsMixin`) â€” Tiny
   Skeletons' baby wither skeleton appears half as often and moves twice as fast.
 - **Allay corruption** (`AllayCorruptionHandler`).
+- **Chunk loading** — AnvilCraft Overseer loads only its own chunk at every base
+  tier. Mekanism Dimensional Stabilizer provides the later, larger-area option.
 - **End Veil brewing** — Awkward Potion plus Forbidden & Arcanus's Ender Pearl Fragment produces Better End's Potion of End Veil.
 - **Removed items** (`RemovedItems`) â€” items withdrawn from the pack's progression.
 - **Shield progression** (`compat/ShieldRules`) — offhand armor and speed modifiers, the

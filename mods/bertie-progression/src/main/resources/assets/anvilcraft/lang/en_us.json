@@ -1,0 +1,3 @@
+{
+  "tooltip.anvilcraft.item.overseer": "Loads only the chunk containing this Overseer. Extra base layers do not increase the loading area."
+}

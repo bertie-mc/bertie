@@ -3980,35 +3980,9 @@ write(f"{R}/compacting/bonded_ravager_hide.json", {
 })
 write("assets/twilightforest/lang/en_us.json", {"block.twilightforest.rope": "Root Rope"})
 
-# ================================================================ CHUNK LOADERS
-# Every chunk loader is forged, each tier around the one below it. The Ultimate loader fills all
-# twelve pedestals of a Tier-III forge.
-for _cl in ("single", "basic", "single_to_basic", "advanced", "ultimate"):
-    write(f"data/chunkloaders/recipe/{_cl}_chunk_loader.json", DISABLED)
-write("data/bertieprogression/tags/item/end_remastered_eyes.json",
-      {"values": [f"endrem:{_e}_eye" for _e in (
-          "black", "cold", "corrupted", "cryptic", "cursed", "evil", "exotic", "guardian", "lost",
-          "magical", "nether", "old", "rogue", "undead", "witch", "wither")]})
-write(f"{RIT}/single_chunk_loader.json",
-      ritual("minecraft:minecart",
-             [("minecraft:ender_pearl", 1), ("minecraft:flint_and_steel", 1), ("minecraft:obsidian", 6)],
-             "chunkloaders:single_chunk_loader", 1,
-             essences={"aureal": 500, "blood": 0, "souls": 0}, xp=100))
-write(f"{RIT}/basic_chunk_loader.json",
-      ritual("chunkloaders:single_chunk_loader",
-             [("minecraft:ender_pearl", 4), ("berlordscarving:iron_big_slate", 4)],
-             "chunkloaders:basic_chunk_loader", 1,
-             essences={"aureal": 1000, "blood": 0, "souls": 0}, xp=200))
-write(f"{RIT}/advanced_chunk_loader.json",
-      ritual("chunkloaders:basic_chunk_loader",
-             [("malum:warp_flux", 4), ("minecraft:gold_block", 4)],
-             "chunkloaders:advanced_chunk_loader", 1, tier=2,
-             essences={"aureal": 2000, "blood": 0, "souls": 0}, xp=400))
-write(f"{RIT}/ultimate_chunk_loader.json",
-      ritual("chunkloaders:advanced_chunk_loader",
-             [("#bertieprogression:end_remastered_eyes", 6), ("berlordscarving:diamond_slate", 6)],
-             "chunkloaders:ultimate_chunk_loader", 1, tier=3,
-             essences={"aureal": 4000, "blood": 0, "souls": 0}, xp=800))
+write("assets/anvilcraft/lang/en_us.json", {
+    "tooltip.anvilcraft.item.overseer": "Loads only the chunk containing this Overseer. Extra base layers do not increase the loading area."
+})
 
 # ================================================================ KALEIDOSCOPE DOLLS
 # The Doll Machine takes Plushie Tokens instead of ingots and deals only mob dolls; a yellow or

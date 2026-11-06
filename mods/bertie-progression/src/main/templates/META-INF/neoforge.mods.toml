@@ -315,13 +315,6 @@ ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="chunkloaders"
-type="optional"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.${mod_id}]]
 modId="fantasy_armor"
 type="optional"
 versionRange="[0,)"

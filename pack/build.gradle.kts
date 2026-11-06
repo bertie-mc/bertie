@@ -70,7 +70,6 @@ dependencies {
     packComponents(deps.certainQuestingAdditions)
     packComponents(deps.chalkMod)
     packComponents(deps.chipped)
-    packComponents(deps.chunkLoaders)
     packComponents(deps.cinematicCataclysm)
     packComponents(deps.clientTweaks)
     packComponents(deps.clumps)

@@ -1,9 +1,15 @@
+import org.gradle.api.tasks.testing.Test
+
 plugins {
     id("bertie.mod")
     id("bertie.jarjar")
     id("bertie.neoforge-test")
     id("bertie.gametest")
     id("bertie.dev-runs")
+}
+
+tasks.named<Test>("test") {
+    maxHeapSize = "2G"
 }
 
 dependencies {
@@ -44,6 +50,7 @@ dependencies {
     compileOnly(deps.hooked)
     testRuntimeOnly(deps.hooked)
     testRuntimeOnly(deps.quark)
+    testImplementation(deps.anvilcraft)
 
     compileOnly(deps.pocketDimension1201)
     gametestImplementation(deps.pocketDimension1201)

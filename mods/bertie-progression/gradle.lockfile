@@ -110,6 +110,7 @@ maven.modrinth:s4OWxYQQ:AvHIYbZi=compileClasspath,gametestCompileClasspath,gamet
 maven.modrinth:tCkE8p2N:kb8pGRQR=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath
 maven.modrinth:twkfQtEc:er7S98Q1=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath
 maven.modrinth:uy4Cnpcm:1sdJl7J1=gametestRuntimeClasspath
+maven.modrinth:vuISAWPc:lhatdg0u=testCompileClasspath,testRuntimeClasspath
 maven.modrinth:vvuO3ImH:yohfFbgD=compileClasspath,gametestCompileClasspath,gametestRuntimeClasspath,testRuntimeClasspath
 maven.modrinth:yGp7IenE:hMLb3f4W=gametestRuntimeClasspath
 maven.modrinth:zhpyD8Y0:naW264bf=gametestRuntimeClasspath
