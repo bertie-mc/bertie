@@ -115,6 +115,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61007F7CC4BF1105"
 				"6155A58E8CA9B41B"
@@ -173,6 +174,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61DA1C428DC2A5D1"
 			]
@@ -305,6 +307,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61DA1C428DC2A5D1"
 			]
@@ -595,6 +598,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61ED11E1734FFF61"
 			]
@@ -721,6 +725,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61DA1C428DC2A5D1"
 			]
@@ -1292,6 +1297,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			x: 2.250d
 			y: 19.500d
 		}
