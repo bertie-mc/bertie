@@ -2306,8 +2306,9 @@
 	chapter.6100000000000000.subtitle: "Machines and useful blocks"
 	chapter.6100000000000000.title: "Mekanism"
 	chapter.6200000000000000.quest_desc: [
-		"Related machines form branches. Independent blocks are placed separately."
-		"Capacity and throughput tiers share one objective. Multiblock components are grouped in their structure quest."
+		"Optional utility machines form the left block. Energy-production equipment is grouped below."
+		"The main tree contains material-processing and machine-production equipment."
+		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
 	]
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
