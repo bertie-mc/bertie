@@ -58,6 +58,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"610CA42C49AAF0B7"
 			]
@@ -85,6 +86,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"613500C40061A8D5"
 				"61BE905EDDB94833"
@@ -142,6 +144,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"6116BB6B786299A2"
 				"613500C40061A8D5"
@@ -197,6 +200,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"6146E3DCFE0F8BE7"
 			]
@@ -224,6 +228,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			x: -13.750d
 			y: -3.000d
 		}
@@ -248,6 +253,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
 			]
@@ -326,6 +332,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
 			]
@@ -353,6 +360,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
 			]
@@ -538,6 +546,7 @@
 					}
 				}
 			]
+			shape: "hexagon"
 			dependencies: [
 				"61007F7CC4BF1105"
 				"61DA1C428DC2A5D1"
