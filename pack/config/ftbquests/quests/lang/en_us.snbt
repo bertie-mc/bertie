@@ -2399,7 +2399,7 @@
 	]
 	quest.61358817E29C9D6B.title: "Modification Station"
 	quest.6137E617014D1DF3.quest_desc: [
-		"Collects fluids. Crafted using Oritech Pump and upgraded into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."
+		"Collects fluids and upgrades into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."
 	]
 	quest.6137E617014D1DF3.title: "Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
@@ -2502,7 +2502,7 @@
 	]
 	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
 	quest.619ED8397E1651A4.quest_desc: [
-		"Upgrades Create Fluid Tank into portable fluid storage. Higher Mekanism tank tiers expand capacity."
+		"Portable fluid storage. Higher Mekanism tank tiers expand capacity."
 	]
 	quest.619ED8397E1651A4.title: "Fluid Tank"
 	quest.61A3E003004D1BDE.quest_desc: [
@@ -2687,7 +2687,7 @@
 	]
 	quest.628B75F6213677F9.title: "Research Station"
 	quest.628D16AD0A6579CA.quest_desc: [
-		"Crafted using AnvilCraft Block Devourer. Breaks blocks beneath a Machine Frame; Crop Filter and Quarry Addons adapt it for harvesting or deeper excavation."
+		"Breaks blocks beneath a Machine Frame; Crop Filter and Quarry Addons adapt it for harvesting or deeper excavation."
 	]
 	quest.628D16AD0A6579CA.title: "Destroyer Block"
 	quest.6291C0C75463BCE6.quest_desc: [
@@ -2734,7 +2734,7 @@
 	]
 	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
 	quest.62EAC8800B926619.quest_desc: [
-		"Drains connected fluid bodies using a downward extraction trunk. Used to craft Mekanism Electric Pump."
+		"Drains connected fluid bodies using a downward extraction trunk."
 	]
 	quest.62EAC8800B926619.title: "Pump"
 	quest.62EB2969EF64354C.quest_desc: [
@@ -2742,7 +2742,7 @@
 	]
 	quest.62EB2969EF64354C.title: "Assembler"
 	quest.62F43E7EF07E2B23.quest_desc: [
-		"Crafted using AnvilCraft Block Placer. Places blocks, seeds or saplings beneath a Machine Frame, sharing the frame area with other gantry machines."
+		"Places blocks, seeds or saplings beneath a Machine Frame, sharing the frame area with other gantry machines."
 	]
 	quest.62F43E7EF07E2B23.title: "Placer Block"
 }

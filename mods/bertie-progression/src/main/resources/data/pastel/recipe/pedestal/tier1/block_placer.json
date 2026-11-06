@@ -3,21 +3,21 @@
   "category": "misc",
   "pattern": [
     "CCC",
-    "RUB",
+    "RTB",
     "BBB"
   ],
   "key": {
     "R": {
       "item": "minecraft:redstone"
     },
+    "T": {
+      "item": "minecraft:amethyst_shard"
+    },
     "B": {
       "item": "pastel:polished_calcite"
     },
     "C": {
       "item": "minecraft:copper_ingot"
-    },
-    "U": {
-      "item": "create:deployer"
     }
   },
   "result": {
@@ -28,10 +28,6 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "create"
     }
   ]
 }
