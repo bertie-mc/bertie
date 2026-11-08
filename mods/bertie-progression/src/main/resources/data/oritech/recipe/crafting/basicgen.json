@@ -3,7 +3,7 @@
   "pattern": [
     "CNCNC",
     "NKAKN",
-    "CKAKC",
+    "CKMKC",
     "DEFED",
     "DDCDD"
   ],
@@ -28,6 +28,9 @@
     },
     "F": {
       "item": "minecraft:furnace"
+    },
+    "M": {
+      "item": "mekanism:steel_casing"
     }
   },
   "result": {

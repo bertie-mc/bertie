@@ -103,7 +103,7 @@
 		}
 		{
 			y: -1.5d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009000"]
 			id: "5C00000000009100"
 			icon: { id: "mekanism:basic_control_circuit" }
@@ -116,7 +116,7 @@
 		}
 		{
 			y: -3.0d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C00000000009100"]
 			id: "5C00000000009101"
 			icon: { id: "mekanism:basic_control_circuit" }
@@ -129,7 +129,7 @@
 		}
 		{
 			y: -3.0d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009100"]
 			id: "5C00000000009102"
 			icon: { id: "mekanism:advanced_control_circuit" }
@@ -142,7 +142,7 @@
 		}
 		{
 			y: -4.5d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C00000000009102"]
 			id: "5C00000000009103"
 			icon: { id: "mekanism:advanced_control_circuit" }
@@ -155,7 +155,7 @@
 		}
 		{
 			y: -4.5d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009102"]
 			id: "5C00000000009104"
 			icon: { id: "mekanism:elite_control_circuit" }
@@ -168,7 +168,7 @@
 		}
 		{
 			y: -6.0d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C00000000009104"]
 			id: "5C00000000009105"
 			icon: { id: "mekanism:elite_control_circuit" }
@@ -181,7 +181,7 @@
 		}
 		{
 			y: -6.0d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009104"]
 			id: "5C00000000009106"
 			icon: { id: "mekanism:ultimate_control_circuit" }
@@ -194,7 +194,7 @@
 		}
 		{
 			y: -7.5d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C00000000009106"]
 			id: "5C00000000009107"
 			icon: { id: "mekanism:ultimate_control_circuit" }
@@ -207,7 +207,7 @@
 		}
 		{
 			y: -7.5d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009106"]
 			id: "5C00000000009108"
 			icon: { id: "mekanism_extras:absolute_control_circuit" }
@@ -220,7 +220,7 @@
 		}
 		{
 			y: -9.0d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C00000000009108"]
 			id: "5C00000000009109"
 			icon: { id: "mekanism_extras:absolute_control_circuit" }
@@ -233,7 +233,7 @@
 		}
 		{
 			y: -9.0d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C00000000009108"]
 			id: "5C0000000000910A"
 			icon: { id: "mekanism_extras:supreme_control_circuit" }
@@ -246,7 +246,7 @@
 		}
 		{
 			y: -10.5d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C0000000000910A"]
 			id: "5C0000000000910B"
 			icon: { id: "mekanism_extras:supreme_control_circuit" }
@@ -259,7 +259,7 @@
 		}
 		{
 			y: -10.5d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C0000000000910A"]
 			id: "5C0000000000910C"
 			icon: { id: "mekanism_extras:cosmic_control_circuit" }
@@ -272,7 +272,7 @@
 		}
 		{
 			y: -12.0d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C0000000000910C"]
 			id: "5C0000000000910D"
 			icon: { id: "mekanism_extras:cosmic_control_circuit" }
@@ -285,7 +285,7 @@
 		}
 		{
 			y: -12.0d
-			x: 5.25d
+			x: 4.5d
 			dependencies: ["5C0000000000910C"]
 			id: "5C0000000000910E"
 			icon: { id: "mekanism_extras:infinite_control_circuit" }
@@ -298,7 +298,7 @@
 		}
 		{
 			y: -13.5d
-			x: 3.75d
+			x: 3.0d
 			dependencies: ["5C0000000000910E"]
 			id: "5C0000000000910F"
 			icon: { id: "mekanism_extras:infinite_control_circuit" }
@@ -311,7 +311,7 @@
 		}
 		{
 			y: -1.5d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009000"]
 			id: "5C00000000009200"
 			icon: { id: "mekanism:alloy_infused" }
@@ -324,7 +324,7 @@
 		}
 		{
 			y: -3.0d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C00000000009200"]
 			id: "5C00000000009201"
 			icon: { id: "mekanism:alloy_infused" }
@@ -337,7 +337,7 @@
 		}
 		{
 			y: -3.0d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009200"]
 			id: "5C00000000009202"
 			icon: { id: "mekanism:alloy_reinforced" }
@@ -350,7 +350,7 @@
 		}
 		{
 			y: -4.5d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C00000000009202"]
 			id: "5C00000000009203"
 			icon: { id: "mekanism:alloy_reinforced" }
@@ -363,7 +363,7 @@
 		}
 		{
 			y: -4.5d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009202"]
 			id: "5C00000000009204"
 			icon: { id: "mekanism:alloy_atomic" }
@@ -376,7 +376,7 @@
 		}
 		{
 			y: -6.0d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C00000000009204"]
 			id: "5C00000000009205"
 			icon: { id: "mekanism:alloy_atomic" }
@@ -389,7 +389,7 @@
 		}
 		{
 			y: -6.0d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009204"]
 			id: "5C00000000009206"
 			icon: { id: "mekanism_extras:alloy_radiance" }
@@ -402,7 +402,7 @@
 		}
 		{
 			y: -7.5d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C00000000009206"]
 			id: "5C00000000009207"
 			icon: { id: "mekanism_extras:alloy_radiance" }
@@ -415,7 +415,7 @@
 		}
 		{
 			y: -7.5d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009206"]
 			id: "5C00000000009208"
 			icon: { id: "mekanism_extras:alloy_thermonuclear" }
@@ -428,7 +428,7 @@
 		}
 		{
 			y: -9.0d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C00000000009208"]
 			id: "5C00000000009209"
 			icon: { id: "mekanism_extras:alloy_thermonuclear" }
@@ -441,7 +441,7 @@
 		}
 		{
 			y: -9.0d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C00000000009208"]
 			id: "5C0000000000920A"
 			icon: { id: "mekanism_extras:alloy_shining" }
@@ -454,7 +454,7 @@
 		}
 		{
 			y: -10.5d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C0000000000920A"]
 			id: "5C0000000000920B"
 			icon: { id: "mekanism_extras:alloy_shining" }
@@ -467,7 +467,7 @@
 		}
 		{
 			y: -10.5d
-			x: 6.75d
+			x: 7.5d
 			dependencies: ["5C0000000000920A"]
 			id: "5C0000000000920C"
 			icon: { id: "mekanism_extras:alloy_spectrum" }
@@ -480,7 +480,7 @@
 		}
 		{
 			y: -12.0d
-			x: 8.25d
+			x: 9.0d
 			dependencies: ["5C0000000000920C"]
 			id: "5C0000000000920D"
 			icon: { id: "mekanism_extras:alloy_spectrum" }
@@ -662,8 +662,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 13.5d
+			y: 3.0d
+			x: 12.0d
 			dependencies: ["5C00000000009323"]
 			id: "5C00000000009326"
 			icon: { id: "anvilcraft:capacitor_empty" }
@@ -675,8 +675,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 15.0d
+			y: 3.0d
+			x: 13.5d
 			dependencies: ["5C00000000009326"]
 			id: "5C00000000009327"
 			icon: { id: "anvilcraft:charger" }
@@ -689,7 +689,7 @@
 		}
 		{
 			y: 1.5d
-			x: 16.5d
+			x: 13.5d
 			dependencies: ["5C00000000009327"]
 			id: "5C00000000009328"
 			icon: { id: "anvilcraft:capacitor" }
@@ -702,7 +702,7 @@
 		}
 		{
 			y: 1.5d
-			x: 18.0d
+			x: 15.0d
 			dependencies: ["5C00000000009328"]
 			id: "5C00000000009329"
 			icon: { id: "oritech:basic_generator_block" }
@@ -715,7 +715,7 @@
 		}
 		{
 			y: 3.0d
-			x: 18.0d
+			x: 15.0d
 			dependencies: ["5C00000000009329"]
 			id: "5C0000000000932A"
 			icon: { id: "oritech:lava_generator_block" }
@@ -725,6 +725,340 @@
 				item: { count: 1 id: "oritech:lava_generator_block" }
 				type: "item"
 			}]
+		}
+		{
+			y: 3.0d
+			x: 16.5d
+			dependencies: ["5C00000000009329"]
+			id: "5C0000000000932B"
+			icon: { id: "oritech:steam_engine_block" }
+			tasks: [{
+				id: "5C0000000100932B"
+				count: 1L
+				item: { count: 1 id: "oritech:steam_engine_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 16.5d
+			dependencies: ["5C0000000000932B"]
+			id: "5C0000000000932C"
+			icon: { id: "oritech:steam_boiler_addon" }
+			tasks: [{
+				id: "5C0000000100932C"
+				count: 1L
+				item: { count: 1 id: "oritech:steam_boiler_addon" }
+				type: "item"
+			}]
+		}
+		{
+			y: -3.0d
+			x: 6.0d
+			dependencies: ["5C00000000009200"]
+			id: "5C00000000009330"
+			icon: { id: "mekanism:advanced_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009330"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:advanced_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009330"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:advanced_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009330"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:advanced_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009330"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:advanced_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009330"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:advanced_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -4.5d
+			x: 6.0d
+			dependencies: ["5C00000000009202"]
+			id: "5C00000000009331"
+			icon: { id: "mekanism:elite_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009331"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:elite_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009331"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:elite_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009331"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:elite_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009331"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:elite_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009331"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:elite_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -6.0d
+			x: 6.0d
+			dependencies: ["5C00000000009204"]
+			id: "5C00000000009332"
+			icon: { id: "mekanism:ultimate_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009332"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:ultimate_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009332"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:ultimate_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009332"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:ultimate_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009332"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:ultimate_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009332"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism:ultimate_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -7.5d
+			x: 6.0d
+			dependencies: ["5C00000000009206"]
+			id: "5C00000000009333"
+			icon: { id: "mekanism_extras:absolute_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009333"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:absolute_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009333"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:absolute_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009333"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:absolute_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009333"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:absolute_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009333"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:absolute_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -9.0d
+			x: 6.0d
+			dependencies: ["5C00000000009208"]
+			id: "5C00000000009334"
+			icon: { id: "mekanism_extras:supreme_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009334"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:supreme_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009334"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:supreme_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009334"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:supreme_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009334"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:supreme_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009334"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:supreme_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -10.5d
+			x: 6.0d
+			dependencies: ["5C0000000000920A"]
+			id: "5C00000000009335"
+			icon: { id: "mekanism_extras:cosmic_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009335"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:cosmic_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009335"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:cosmic_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009335"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:cosmic_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009335"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:cosmic_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009335"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:cosmic_thermodynamic_conductor", "count": 1}
+				}
+			]
+		}
+		{
+			y: -12.0d
+			x: 6.0d
+			dependencies: ["5C0000000000920C"]
+			id: "5C00000000009336"
+			icon: { id: "mekanism_extras:infinite_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009336"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:infinite_universal_cable", "count": 1}
+				}
+				{
+					id: "5C00000002009336"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:infinite_mechanical_pipe", "count": 1}
+				}
+				{
+					id: "5C00000003009336"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:infinite_pressurized_tube", "count": 1}
+				}
+				{
+					id: "5C00000004009336"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:infinite_logistical_transporter", "count": 1}
+				}
+				{
+					id: "5C00000005009336"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: {"id": "mekanism_extras:infinite_thermodynamic_conductor", "count": 1}
+				}
+			]
 		}
 	]
 }

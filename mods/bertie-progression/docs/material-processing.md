@@ -166,9 +166,11 @@ alloying uses Brass and Silver for two; crafting uses three Brass, three Redston
 and three Silver for four. Clibano combines Brass and Silver for one. Create
 mixing is disabled; the separate Gold/Redstone infusion route remains available.
 
-Basic, Lava and Bio Generators use 5×5 Nether recipes. Basic consumes two filled
-Capacitors; Lava consumes one, with Electrum Sheets and Machine Casing. Bio uses
+Basic, Lava and Bio Generators use 5×5 Nether recipes. Basic consumes one filled
+Capacitor and one Machine Casing; Lava consumes one Capacitor, with Electrum Sheets and Machine Casing. Bio uses
 Electrum and Deep Alloy Sheets, Biopolymer, one Coil and one Basic Generator.
+Steam Engine uses a 5×5 Nether recipe with Steel, Electrum, Copper and Deep Alloy
+Sheets, four filled Capacitors, three Coils, one Motor and one Basic Generator.
 
 Charge Mix smelts 1:1 into Silicon in Powered Furnace and Energized Smelter,
 including its Smelting Factories. The blasting route remains, and ordinary

@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SSESS",
+    "SAMAS",
+    "CAGAC",
+    "CKKKC",
+    "CDDDC"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "E": {
+      "item": "bertieprogression:electrum_sheet"
+    },
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "A": {
+      "item": "anvilcraft:capacitor"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "G": {
+      "item": "oritech:basic_generator_block"
+    },
+    "K": {
+      "item": "oritech:magnetic_coil"
+    }
+  },
+  "result": {
+    "id": "oritech:steam_engine_block",
+    "count": 1
+  }
+}
