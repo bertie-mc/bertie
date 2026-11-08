@@ -2802,9 +2802,10 @@
 	quest.5C00000000009321.title: "Purification Chamber"
 	quest.5C00000000009322.title: "Electrolytic Separator"
 	quest.5C00000000009323.title: "Pressurized Reaction Chamber"
-	quest.5C00000000009001.quest_desc: ["part of x2", "", "Enriches ordinary raw metals into two dust per raw item."]
-	quest.5C00000000009320.quest_desc: ["part of x3", "", "Pulverizes materials in the developing ore-processing chain."]
-	quest.5C00000000009321.quest_desc: ["part of x3", "", "Uses Oxygen to turn ordinary raw metals into three clumps per raw item."]
-	quest.5C00000000009322.quest_desc: ["part of x3", "", "Splits Water into Hydrogen and Oxygen. Oxygen supplies Purification; Hydrogen supplies the PRC."]
-	quest.5C00000000009323.quest_desc: ["Combines an item, a liquid and a gas.", "", "Makes Empty Capacitors from Mana Potion, Hydrogen and an Elite Chemical Tank."]
+	quest.5C00000000009001.quest_desc: ["X2"]
+	quest.5C00000000009320.quest_desc: ["X3"]
+	quest.5C00000000009321.quest_desc: ["X3"]
+	quest.5C00000000009322.quest_desc: ["X3"]
+	quest.5C00000000009324.title: "Enriched Materials"
+	quest.5C00000000009325.title: "Electric Furnace"
 }
