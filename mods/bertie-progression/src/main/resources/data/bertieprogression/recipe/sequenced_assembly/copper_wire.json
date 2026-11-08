@@ -11,12 +11,12 @@
     {
       "id": "bertieprogression:copper_wire",
       "count": 1,
-      "chance": 30
+      "chance": 0.3
     },
     {
       "id": "minecraft:copper_ingot",
       "count": 1,
-      "chance": 70
+      "chance": 0.7
     }
   ],
   "sequence": [

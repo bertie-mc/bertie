@@ -1,37 +1,17 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
   "ingredients": [
     {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
-    },
-    {
-      "item": "create:copper_nugget"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:copper_ingot"
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

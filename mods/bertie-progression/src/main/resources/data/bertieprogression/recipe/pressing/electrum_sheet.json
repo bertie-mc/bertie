@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "berlordscarving:electrum_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:electrum_sheet",
+      "count": 1
+    }
+  ]
+}

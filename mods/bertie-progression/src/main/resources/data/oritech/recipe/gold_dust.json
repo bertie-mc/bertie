@@ -1,37 +1,17 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
   "ingredients": [
     {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
-    },
-    {
-      "item": "minecraft:gold_nugget"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "count": 1,
-    "id": "oritech:gold_dust"
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

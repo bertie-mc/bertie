@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "K": {
-      "tag": "minecraft:planks"
+      "item": "create:andesite_casing"
     },
     "S": {
-      "tag": "minecraft:planks"
+      "item": "create:andesite_casing"
     },
     "C": {
       "item": "mythsandlegends:bound_soul_ingot"

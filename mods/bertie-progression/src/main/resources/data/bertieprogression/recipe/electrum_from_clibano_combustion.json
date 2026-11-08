@@ -1,0 +1,19 @@
+{
+  "type": "forbidden_arcanus:clibano_combustion",
+  "category": "misc",
+  "cooking_time": 200,
+  "experience": 0.7,
+  "fire_type": "fire",
+  "ingredients": {
+    "first": {
+      "tag": "c:ingots/brass"
+    },
+    "second": {
+      "tag": "c:ingots/silver"
+    }
+  },
+  "result": {
+    "id": "oritech:electrum_ingot",
+    "count": 1
+  }
+}

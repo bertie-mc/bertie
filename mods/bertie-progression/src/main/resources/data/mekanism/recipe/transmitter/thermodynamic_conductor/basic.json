@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:ingots/copper"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "###",
+    "SSS"
+  ],
+  "result": {
+    "count": 16,
+    "id": "mekanism:basic_thermodynamic_conductor"
+  }
+}

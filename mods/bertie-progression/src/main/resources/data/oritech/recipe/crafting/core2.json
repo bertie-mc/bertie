@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "K": {
-      "tag": "c:ingots/steel"
+      "item": "bertieprogression:steel_sheet"
     },
     "S": {
-      "tag": "c:ingots/steel"
+      "item": "bertieprogression:steel_sheet"
     },
     "C": {
       "item": "oritech:machine_core_1"

@@ -1,0 +1,32 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "EEEEE",
+    "EBBBE",
+    "EBKBE",
+    "DBGBD",
+    "DDDDD"
+  ],
+  "key": {
+    "E": {
+      "item": "bertieprogression:electrum_sheet"
+    },
+    "B": {
+      "item": "oritech:raw_biopolymer"
+    },
+    "K": {
+      "item": "oritech:magnetic_coil"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "G": {
+      "item": "oritech:basic_generator_block"
+    }
+  },
+  "result": {
+    "id": "oritech:bio_generator_block",
+    "count": 1
+  },
+  "tier": 2
+}

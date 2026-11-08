@@ -30,9 +30,13 @@
     "SequencedAssemblyRecipeMixin",
     "VanityEntityItemPacketMixin",
     "WardenModelMixin",
-    "WardenStateMixin"
+    "WardenStateMixin",
+    "PoweredFurnaceRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 0
-  }
+  },
+  "client": [
+    "EmiWireOutputMixin"
+  ]
 }

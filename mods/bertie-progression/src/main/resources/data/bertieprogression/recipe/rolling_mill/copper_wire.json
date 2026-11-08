@@ -2,10 +2,10 @@
   "type": "mekmm:rolling_mill",
   "input": {
     "count": 1,
-    "tag": "c:ingots/copper"
+    "item": "bertieprogression:copper_rod"
   },
   "output": {
     "id": "bertieprogression:copper_wire",
-    "count": 2
+    "count": 4
   }
 }

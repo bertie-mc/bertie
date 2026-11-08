@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "berlordscarving:electrum_slate"
+  },
+  "mold": {
+    "count": 1,
+    "item": "bertieprogression:electrum_sheet"
+  },
+  "output": {
+    "id": "bertieprogression:electrum_sheet",
+    "count": 1
+  }
+}

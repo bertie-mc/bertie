@@ -1,0 +1,11 @@
+{
+  "type": "cataclysm:amethyst_bless",
+  "ingredient": {
+    "item": "mekanism:enrichment_chamber"
+  },
+  "result": {
+    "id": "cataclysm:altar_of_amethyst",
+    "count": 1
+  },
+  "time": 72000
+}

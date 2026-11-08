@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:smelting",
+  "input": {
+    "count": 1,
+    "item": "oritech:raw_silicon"
+  },
+  "output": {
+    "id": "refinedstorage:silicon",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

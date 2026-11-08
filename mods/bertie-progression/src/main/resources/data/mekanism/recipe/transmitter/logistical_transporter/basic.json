@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:circuits/basic"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "###",
+    "SSS"
+  ],
+  "result": {
+    "count": 16,
+    "id": "mekanism:basic_logistical_transporter"
+  }
+}

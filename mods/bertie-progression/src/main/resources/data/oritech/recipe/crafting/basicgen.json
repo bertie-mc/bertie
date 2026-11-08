@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CNCNC",
+    "NKAKN",
+    "CKAKC",
+    "DEFED",
+    "DDCDD"
+  ],
+  "key": {
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "N": {
+      "item": "bertieprogression:nickel_sheet"
+    },
+    "A": {
+      "item": "anvilcraft:capacitor"
+    },
+    "K": {
+      "item": "oritech:magnetic_coil"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "E": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "id": "oritech:basic_generator_block",
+    "count": 1
+  },
+  "tier": 2
+}

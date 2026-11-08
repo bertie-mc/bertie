@@ -53,6 +53,7 @@ dependencies {
     testRuntimeOnly(deps.quark)
     testImplementation(deps.mekanism)
     testImplementation(deps.anvilcraft)
+    testImplementation(deps.emi)
 
     compileOnly(deps.pocketDimension1201)
     gametestImplementation(deps.pocketDimension1201)

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "RCR",
+    "DDD"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "R": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:charger",
+    "count": 1
+  }
+}

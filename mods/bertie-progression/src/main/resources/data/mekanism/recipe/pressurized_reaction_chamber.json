@@ -3,8 +3,8 @@
   "pattern": [
     "DDDOO",
     "DBBRO",
-    "DMCRO",
-    "DTFTO",
+    "DTERO",
+    "DMFMO",
     "DDDDD"
   ],
   "key": {
@@ -20,14 +20,14 @@
     "R": {
       "item": "mekanism:alloy_reinforced"
     },
-    "M": {
-      "item": "oritech:motor"
-    },
-    "C": {
-      "item": "mekanism:steel_casing"
-    },
     "T": {
       "item": "mekanism:advanced_chemical_tank"
+    },
+    "E": {
+      "item": "mekanism:enrichment_chamber"
+    },
+    "M": {
+      "item": "oritech:motor"
     },
     "F": {
       "item": "mekanism:advanced_fluid_tank"

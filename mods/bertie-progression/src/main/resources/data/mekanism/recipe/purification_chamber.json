@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "OOOOO",
+    "OABAO",
+    "OTECO",
+    "DAMAD",
+    "DDDDD"
+  ],
+  "key": {
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "A": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "T": {
+      "item": "mekanism:advanced_chemical_tank"
+    },
+    "E": {
+      "item": "mekanism:enrichment_chamber"
+    },
+    "C": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "mekanism:purification_chamber",
+    "count": 1
+  },
+  "tier": 2
+}

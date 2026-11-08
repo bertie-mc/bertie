@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/brass"
+    },
+    {
+      "tag": "c:ingots/silver"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "oritech:electrum_ingot"
+    }
+  ],
+  "time": 80
+}

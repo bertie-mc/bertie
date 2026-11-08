@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "oritech:plating"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:industrial_glass_block",
+      "count": 1
+    }
+  ],
+  "time": 80
+}

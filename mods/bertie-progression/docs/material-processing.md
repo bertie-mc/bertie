@@ -103,7 +103,7 @@ Its scales smoothly exchange their eight color palettes over a 24-second animati
 
 Iron, Copper, Golden and Brass Sheets use Bertie Progression items instead of
 Create's material sheets. Recipes, plate tags and quest objectives use the new
-items. Royal Steel, Osmium, Deep Alloy, Obsidiansteel, Steel and Nickel also have Sheets.
+items. Royal Steel, Osmium, Deep Alloy, Obsidiansteel, Steel, Nickel and Electrum also have Sheets.
 Sturdy Sheet and its incomplete assembly item retain their native items and art;
 both Obsidian Dust deployment steps in its assembly now use Cognitive Flux.
 
@@ -116,8 +116,9 @@ Lathe yield. Three matching ingots diagonally craft one Rod.
 Copper Wire uses one Rod in a single Create sequence: press, press, saw, saw,
 press. It produces one guaranteed Wire plus either another Wire (30%) or a
 Copper Ingot (70%). The Lathe's 1:1 yield prevents recycling that Ingot return
-into surplus Copper. Rolling Mill consumes one Copper Ingot for two Wires.
-EMI displays the guaranteed output separately from the secondary choice.
+into surplus Copper. Rolling Mill consumes one Copper Rod for four Wires.
+EMI keeps the five-step assembly and shows its guaranteed output above the
+secondary choice. Basic Rod recipes run bottom-left to top-right in the viewer.
 
 Machine Casing retains `mekanism:steel_casing` as its ID. Its 5×5 Nether-table
 recipe uses Royal Steel and Osmium Sheets, Runic Glass, Large Redstone Slates and
@@ -126,7 +127,7 @@ use 5×5 Nether-table recipes with Deep Alloy and Osmium Sheets, Cognitive Alloy
 and the relevant circuits, alloys and machine components.
 Both use Motor at row 4, column 2 and AnvilCraft Circuit Board at row 2, column 4.
 Circuit Board, Oritech Magnetic Coil and Oritech Motor use 5×5 Nether-table
-recipes. Bound Soul alternatives produce eight Boards, five Coils or three Motors.
+recipes. Bound Soul alternatives produce 32 Boards, 12 Coils or three Motors.
 
 Ordinary raw metals enrich into two dust per raw item, or eighteen per raw
 storage block. Purification produces three clumps per raw item, or twenty-seven
@@ -139,10 +140,41 @@ the four sides; Basic uses Steel Sheets and Basic Control Circuit corners.
 Upgrade corners and stored-content transfer remain unchanged.
 
 Pressurized Reaction Chamber uses the selected 5×5 Nether-table recipe with
-two Advanced Chemical Tanks and one Advanced Fluid Tank. Empty Capacitor is
+one Advanced Chemical Tank, one Advanced Fluid Tank, two Motors and a central
+Enrichment Chamber. Empty Capacitor is
 made there from one Elite Chemical Tank, 5 B of ordinary Mana Potion and 2 B
 Hydrogen over ten seconds. The potion fluid is Create's potion fluid carrying
 Iron's Spellbooks Mana I; other potion contents do not satisfy the ingredient.
+
+Purification Chamber and Electrolytic Separator use 5×5 Nether recipes. The
+Separator contains a Motor rather than a tank. Pulveriser uses two Grindstones,
+two Mechanical Saws and two Motors. Powered Furnace uses Industrial Glass and
+three Magnetic Coils. Charger uses Glass, Copper Rods, Magnetoelectric Core and
+Deep Alloy Sheets in an ordinary 3×3 craft.
+
+Primitive Machine Core uses eight Andesite Casings around Bound Soul Ingot.
+Basic Machine Core uses eight ordinary Steel Sheets around the Primitive Core.
+All five basic Mekanism transmitters craft sixteen from six Steel Sheets and
+three of their existing unique ingredient. Assembler alternatives use two Steel
+Rods, one Steel Sheet and one unique ingredient for sixteen. Upgrades retain
+their recipes. Copper Nuggets have one shaped ingot craft; the merged Small
+Dust nugget-to-dust crafts are disabled for Copper, Gold, Iron, Nickel and Platinum.
+
+Industrial Glass crafts one per batch. Foundry combines one full plating block
+from `#oritech:plating` with one Glass for one Industrial Glass. Electrum Foundry
+alloying uses Brass and Silver for two; crafting uses three Brass, three Redstone
+and three Silver for four. Clibano combines Brass and Silver for one. Create
+mixing is disabled; the separate Gold/Redstone infusion route remains available.
+
+Basic, Lava and Bio Generators use 5×5 Nether recipes. Basic consumes two filled
+Capacitors; Lava consumes one, with Electrum Sheets and Machine Casing. Bio uses
+Electrum and Deep Alloy Sheets, Biopolymer, one Coil and one Basic Generator.
+
+Charge Mix smelts 1:1 into Silicon in Powered Furnace and Energized Smelter,
+including its Smelting Factories. The blasting route remains, and ordinary
+vanilla Furnace processing remains unavailable. Altar of Amethyst also converts
+one Enrichment Chamber into one Altar with a base duration of 72,000 ticks,
+subject to the existing environmental speed rules.
 
 Basic Control Circuits use Zinc infusion; the higher circuit recipes retain
 their infusion materials. Zinc Ingot or Amethyst Shard supplies 10 chemical

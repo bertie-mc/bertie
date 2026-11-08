@@ -107,5 +107,7 @@
   "item.berlordscarving.steel_slate": "Small Steel Slate",
   "item.berlordscarving.steel_big_slate": "Large Steel Slate",
   "item.berlordscarving.nickel_slate": "Small Nickel Slate",
-  "item.berlordscarving.nickel_big_slate": "Large Nickel Slate"
+  "item.berlordscarving.nickel_big_slate": "Large Nickel Slate",
+  "item.berlordscarving.electrum_slate": "Small Electrum Slate",
+  "item.berlordscarving.electrum_big_slate": "Large Electrum Slate"
 }

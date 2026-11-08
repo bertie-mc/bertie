@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CDBDC",
+    " GEG ",
+    " GKG ",
+    "CKMKC",
+    "DDCDD"
+  ],
+  "key": {
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "G": {
+      "item": "oritech:industrial_glass_block"
+    },
+    "E": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "K": {
+      "item": "oritech:magnetic_coil"
+    },
+    "M": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "oritech:powered_furnace_block",
+    "count": 1
+  },
+  "tier": 2
+}

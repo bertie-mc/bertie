@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CG GC",
+    "CS SC",
+    "CMKMC",
+    "CBRBC",
+    "DDDDD"
+  ],
+  "key": {
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "G": {
+      "item": "minecraft:grindstone"
+    },
+    "S": {
+      "item": "create:mechanical_saw"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "B": {
+      "item": "mekanism:basic_control_circuit"
+    },
+    "R": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:pulverizer_block",
+    "count": 1
+  },
+  "tier": 2
+}

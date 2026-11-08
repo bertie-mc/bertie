@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "bertieprogression:steel_rod"
+    },
+    {
+      "item": "bertieprogression:steel_sheet"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "item": "bertieprogression:steel_rod"
+    }
+  ],
+  "results": [
+    {
+      "count": 16,
+      "id": "mekanism:basic_universal_cable"
+    }
+  ],
+  "time": 80
+}

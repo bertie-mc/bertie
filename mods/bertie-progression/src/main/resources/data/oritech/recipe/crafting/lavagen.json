@@ -1,0 +1,35 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "EEEEE",
+    "EKCKE",
+    "EKMKE",
+    "EKAKE",
+    "DDDDD"
+  ],
+  "key": {
+    "E": {
+      "item": "bertieprogression:electrum_sheet"
+    },
+    "K": {
+      "item": "oritech:magnetic_coil"
+    },
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "M": {
+      "item": "mekanism:steel_casing"
+    },
+    "A": {
+      "item": "anvilcraft:capacitor"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:lava_generator_block",
+    "count": 1
+  },
+  "tier": 2
+}

@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "OOOOO",
+    "OCBCO",
+    "OESEO",
+    "ORMRO",
+    "DDDDD"
+  ],
+  "key": {
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "C": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "E": {
+      "item": "mekanism:electrolytic_core"
+    },
+    "S": {
+      "item": "mekanism:steel_casing"
+    },
+    "R": {
+      "item": "berlordscarving:redstone_big_slate"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "mekanism:electrolytic_separator",
+    "count": 1
+  },
+  "tier": 2
+}
