@@ -661,5 +661,70 @@
 				type: "item"
 			}]
 		}
+		{
+			y: 1.5d
+			x: 13.5d
+			dependencies: ["5C00000000009323"]
+			id: "5C00000000009326"
+			icon: { id: "anvilcraft:capacitor_empty" }
+			tasks: [{
+				id: "5C00000001009326"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:capacitor_empty" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 15.0d
+			dependencies: ["5C00000000009326"]
+			id: "5C00000000009327"
+			icon: { id: "anvilcraft:charger" }
+			tasks: [{
+				id: "5C00000001009327"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:charger" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 16.5d
+			dependencies: ["5C00000000009327"]
+			id: "5C00000000009328"
+			icon: { id: "anvilcraft:capacitor" }
+			tasks: [{
+				id: "5C00000001009328"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:capacitor" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 18.0d
+			dependencies: ["5C00000000009328"]
+			id: "5C00000000009329"
+			icon: { id: "oritech:basic_generator_block" }
+			tasks: [{
+				id: "5C00000001009329"
+				count: 1L
+				item: { count: 1 id: "oritech:basic_generator_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 18.0d
+			dependencies: ["5C00000000009329"]
+			id: "5C0000000000932A"
+			icon: { id: "oritech:lava_generator_block" }
+			tasks: [{
+				id: "5C0000000100932A"
+				count: 1L
+				item: { count: 1 id: "oritech:lava_generator_block" }
+				type: "item"
+			}]
+		}
 	]
 }

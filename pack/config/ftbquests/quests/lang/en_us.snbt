@@ -2808,4 +2808,9 @@
 	quest.5C00000000009322.quest_desc: ["X3"]
 	quest.5C00000000009324.title: "Enriched Materials"
 	quest.5C00000000009325.title: "Electric Furnace"
+	quest.5C00000000009326.title: "Empty Capacitor"
+	quest.5C00000000009327.title: "Charger"
+	quest.5C00000000009328.title: "Capacitor"
+	quest.5C00000000009329.title: "Basic Generator"
+	quest.5C0000000000932A.title: "Lava Generator"
 }
