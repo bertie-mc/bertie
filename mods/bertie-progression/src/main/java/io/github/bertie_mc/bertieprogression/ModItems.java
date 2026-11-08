@@ -94,6 +94,18 @@ public final class ModItems {
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
     public static final DeferredItem<Item> SCALE_INGOT = simple("scale_ingot", 64);
 
+    public static final DeferredItem<Item> IRON_SHEET = simple("iron_sheet", 64);
+    public static final DeferredItem<Item> COPPER_SHEET = simple("copper_sheet", 64);
+    public static final DeferredItem<Item> GOLDEN_SHEET = simple("golden_sheet", 64);
+    public static final DeferredItem<Item> BRASS_SHEET = simple("brass_sheet", 64);
+    public static final DeferredItem<Item> ROYAL_STEEL_SHEET = simple("royal_steel_sheet", 64);
+    public static final DeferredItem<Item> OSMIUM_SHEET = simple("osmium_sheet", 64);
+    public static final DeferredItem<Item> DEEP_ALLOY_SHEET = simple("deep_alloy_sheet", 64);
+    public static final DeferredItem<Item> OBSIDIANSTEEL_SHEET = simple("obsidiansteel_sheet", 64);
+    public static final DeferredItem<Item> COPPER_ROD = simple("copper_rod", 64);
+    public static final DeferredItem<Item> ENRICHED_ZINC = simple("enriched_zinc", 64);
+    public static final DeferredItem<Item> ENRICHED_AMETHYST = simple("enriched_amethyst", 64);
+
     // --- Deep dark / echo chain ---
     public static final DeferredItem<WeepingEyeItem> WEEPING_EYE = ITEMS.register(
             "weeping_eye",

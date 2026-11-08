@@ -19,6 +19,7 @@ dependencies {
     compileOnly(deps.enigmaticlegacy)
     compileOnly(deps.universalSawmill)
     compileOnly(deps.pastelMod)
+    compileOnly(deps.mekanism)
     jarJarCompileOnly(deps.l2Complements)
     jarJarCompileOnly(deps.terraCurio)
     compileOnly(deps.ironsSpellsNSpellbooks)
@@ -50,6 +51,7 @@ dependencies {
     compileOnly(deps.hooked)
     testRuntimeOnly(deps.hooked)
     testRuntimeOnly(deps.quark)
+    testImplementation(deps.mekanism)
     testImplementation(deps.anvilcraft)
 
     compileOnly(deps.pocketDimension1201)

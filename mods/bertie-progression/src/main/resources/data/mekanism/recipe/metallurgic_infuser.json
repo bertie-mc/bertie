@@ -1,0 +1,60 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "DDDOO",
+    "DARAO",
+    "DTCBO",
+    "DARAO",
+    "DDDDD"
+  ],
+  "key": {
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "A": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "R": {
+      "item": "berlordscarving:redstone_big_slate"
+    },
+    "T": {
+      "item": "create:fluid_tank"
+    },
+    "C": {
+      "item": "mekanism:steel_casing"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    }
+  },
+  "result": {
+    "id": "mekanism:metallurgic_infuser",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

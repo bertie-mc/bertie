@@ -155,7 +155,7 @@
       "required": false
     },
     {
-      "id": "create:golden_sheet",
+      "id": "bertieprogression:golden_sheet",
       "required": false
     },
     {

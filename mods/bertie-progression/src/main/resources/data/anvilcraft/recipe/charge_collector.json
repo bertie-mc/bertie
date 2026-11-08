@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "M M",
+    "DSD"
+  ],
+  "key": {
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "M": {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "S": {
+      "item": "berlordscarving:copper_big_slate"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:charge_collector",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    }
+  ]
+}

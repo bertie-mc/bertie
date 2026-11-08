@@ -31,6 +31,9 @@ public final class BertieProgression {
         ModAttachments.ATTACHMENTS.register(modBus);
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.TYPES.register(modBus);
+        if (ModList.get().isLoaded("mekanism")) {
+            io.github.bertie_mc.bertieprogression.compat.MekanismMaterials.register(modBus);
+        }
         // Create is an optional integration; do not resolve its registry classes otherwise.
         if (ModList.get().isLoaded("create")) {
             ModFanProcessing.TYPES.register(modBus);

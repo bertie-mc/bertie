@@ -1,0 +1,43 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CEC",
+    "CEC",
+    "CEC",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "B": {
+      "item": "malum:brilliant_obelisk"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:overseer",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
+    }
+  ]
+}

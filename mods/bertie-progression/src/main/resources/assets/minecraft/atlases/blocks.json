@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/zinc"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/amethyst"
+    }
+  ]
+}

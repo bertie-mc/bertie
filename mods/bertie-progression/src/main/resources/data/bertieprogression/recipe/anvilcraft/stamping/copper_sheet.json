@@ -1,4 +1,16 @@
 {
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:copper_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:copper_sheet",
+      "count": 4
+    }
+  ],
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
@@ -6,18 +18,7 @@
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "create"
-    }
-  ],
-  "type": "anvilcraft:stamping",
-  "ingredients": [
-    {
-      "items": "minecraft:copper_ingot"
-    }
-  ],
-  "results": [
-    {
-      "id": "create:copper_sheet"
+      "modid": "berlordscarving"
     }
   ]
 }

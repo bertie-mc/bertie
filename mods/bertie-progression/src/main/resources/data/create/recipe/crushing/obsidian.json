@@ -1,28 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "create"
+      "type": "neoforge:false"
     }
   ],
-  "type": "create:crushing",
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:obsidian"
+      "item": "minecraft:stone"
     }
   ],
-  "processing_time": 500,
-  "results": [
-    {
-      "id": "create:powdered_obsidian"
-    },
-    {
-      "chance": 0.25,
-      "id": "create:powdered_obsidian"
-    },
-    {
-      "chance": 0.1,
-      "id": "minecraft:obsidian"
-    }
-  ]
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

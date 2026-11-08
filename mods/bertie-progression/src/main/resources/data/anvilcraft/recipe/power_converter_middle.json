@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "P",
+    "B"
+  ],
+  "key": {
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "B": {
+      "item": "minecraft:copper_block"
+    },
+    "P": {
+      "item": "anvilcraft:power_converter_small"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:power_converter_middle",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    }
+  ]
+}

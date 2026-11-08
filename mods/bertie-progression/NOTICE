@@ -101,4 +101,18 @@ the derivative provided the licence travels with it and the source is named.
 Both item sprites are drawn by texture-work/make_eezo_items.py, which holds the
 symbol maps and the recolouring tables.
 
+THIRD-PARTY DERIVATIVE WORK - ENRICHED MATERIALS AND CHEMICALS
+
+  assets/bertieprogression/textures/item/enriched_zinc.png
+  assets/bertieprogression/textures/item/enriched_amethyst.png
+  assets/bertieprogression/textures/chemical/zinc.png
+  assets/bertieprogression/textures/chemical/amethyst.png
+
+These recolour Mekanism's enriched_tin.png, enriched_redstone.png and animated
+infuse_type/base.png, respectively, from Mekanism 10.7.19.85. The Amethyst item
+also has edited highlights and transitions. Mekanism is distributed under the
+MIT License: Copyright (c) 2017-2025 Aidan C. Brady. The MIT permission and
+disclaimer reproduced above apply to these derivatives as well.
+Source and licence: https://github.com/mekanism/Mekanism/blob/1.21.x/LICENSE
+
 Every other asset here is original.

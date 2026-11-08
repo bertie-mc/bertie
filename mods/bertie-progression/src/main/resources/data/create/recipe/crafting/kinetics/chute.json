@@ -12,7 +12,7 @@
       "item": "minecraft:iron_ingot"
     },
     "E": {
-      "item": "create:iron_sheet"
+      "item": "bertieprogression:iron_sheet"
     }
   },
   "pattern": [

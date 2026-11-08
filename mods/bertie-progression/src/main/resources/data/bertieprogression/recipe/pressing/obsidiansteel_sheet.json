@@ -1,0 +1,24 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "berlordscarving:obsidiansteel_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:obsidiansteel_sheet",
+      "count": 4
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

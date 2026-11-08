@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bertieprogression:item/deep_alloy_sheet"
+  }
+}

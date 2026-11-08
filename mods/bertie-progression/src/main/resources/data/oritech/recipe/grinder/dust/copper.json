@@ -1,15 +1,17 @@
 {
-  "type": "oritech:grinder",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:ingots/copper"
+      "item": "minecraft:stone"
     }
   ],
-  "results": [
-    {
-      "count": 1,
-      "id": "mekanism:dust_copper"
-    }
-  ],
-  "time": 40
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

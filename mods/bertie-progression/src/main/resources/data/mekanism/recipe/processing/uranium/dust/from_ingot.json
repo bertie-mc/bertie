@@ -1,11 +1,17 @@
 {
-  "type": "mekanism:crushing",
-  "input": {
-    "count": 1,
-    "tag": "c:ingots/uranium"
-  },
-  "output": {
-    "count": 1,
-    "id": "oritech:uranium_dust"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

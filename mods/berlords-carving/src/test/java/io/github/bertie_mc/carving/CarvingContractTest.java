@@ -65,7 +65,11 @@ class CarvingContractTest {
                         "straddlite",
                         "neptunium",
                         "arcane",
-                        "silver"),
+                        "silver",
+                        "obsidiansteel",
+                        "royal_steel",
+                        "osmium",
+                        "brass"),
                 Arrays.stream(CarvingMaterial.values())
                         .map(material -> material.id)
                         .toList());

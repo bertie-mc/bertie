@@ -5,7 +5,7 @@
   "berlordscarving.screen.hint": "Click to carve the shape",
   "berlordscarving.screen.slips": "Errors: %s/3",
   "berlordscarving.screen.title": "Carving",
-  "berlordscarving.station.controls": "WS move \u00b7 AD rotate \u00b7 Space cut",
+  "berlordscarving.station.controls": "WS move · AD rotate · Space cut",
   "berlordscarving.station.insert": "Insert a Tier 2 slate",
   "berlordscarving.station.needs_water": "needs water",
   "berlordscarving.station.zoom": "%sx",
@@ -95,5 +95,13 @@
   "item.berlordscarving.witherite_big_slate": "Large Witherite Slate",
   "item.berlordscarving.witherite_slate": "Small Witherite Slate",
   "item.berlordscarving.wood_big_slate": "Large Wooden Slate",
-  "item.berlordscarving.wood_slate": "Small Wooden Slate"
+  "item.berlordscarving.wood_slate": "Small Wooden Slate",
+  "item.berlordscarving.obsidiansteel_slate": "Small Obsidiansteel Slate",
+  "item.berlordscarving.obsidiansteel_big_slate": "Large Obsidiansteel Slate",
+  "item.berlordscarving.royal_steel_slate": "Small Royal Steel Slate",
+  "item.berlordscarving.royal_steel_big_slate": "Large Royal Steel Slate",
+  "item.berlordscarving.osmium_slate": "Small Osmium Slate",
+  "item.berlordscarving.osmium_big_slate": "Large Osmium Slate",
+  "item.berlordscarving.brass_slate": "Small Brass Slate",
+  "item.berlordscarving.brass_big_slate": "Large Brass Slate"
 }

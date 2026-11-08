@@ -15,7 +15,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create:brass_sheet"
+    "item": "bertieprogression:brass_sheet"
   },
   "loops": 5,
   "results": [
@@ -25,7 +25,7 @@
     },
     {
       "chance": 8.0,
-      "id": "create:golden_sheet"
+      "id": "bertieprogression:golden_sheet"
     },
     {
       "chance": 8.0,

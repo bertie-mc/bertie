@@ -807,7 +807,7 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
+			x: 16.5d
 			y: -3.0d
 		}
 		{
@@ -922,34 +922,6 @@
 			]
 			x: 18.0d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"6B0000000000004A"
-			]
-			icon: {
-				id: "mekanism:steel_casing"
-			}
-			id: "6B0000000000004E"
-			rewards: [
-				{
-					id: "6B0000000200004E"
-					type: "xp"
-					xp: 25
-				}
-			]
-			tasks: [
-				{
-					id: "6B0000000100004E"
-					item: {
-						count: 1
-						id: "mekanism:steel_casing"
-					}
-					type: "item"
-				}
-			]
-			x: 19.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2043,6 +2015,110 @@
 					type: "item"
 				}
 			]
+		}
+		{
+			y: 0.0d
+			x: 19.5d
+			dependencies: ["6B0000000000004A"]
+			id: "6B00000000009000"
+			icon: { id: "anvilcraft:piezoelectric_crystal" }
+			tasks: [{
+				id: "6B00000001009000"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:piezoelectric_crystal" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 21.0d
+			dependencies: ["6B00000000009000"]
+			id: "6B00000000009001"
+			icon: { id: "anvilcraft:charge_collector" }
+			tasks: [{
+				id: "6B00000001009001"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:charge_collector" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 22.5d
+			dependencies: ["6B00000000009001"]
+			id: "6B00000000009002"
+			icon: { id: "anvilcraft:transmission_pole" }
+			tasks: [{
+				id: "6B00000001009002"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:transmission_pole" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 24.0d
+			dependencies: ["6B00000000009002"]
+			id: "6B00000000009003"
+			icon: { id: "anvilcraft:heater" }
+			tasks: [{
+				id: "6B00000001009003"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:heater" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 25.5d
+			dependencies: ["6B00000000009003"]
+			id: "6B00000000009004"
+			icon: { id: "anvilcraft:royal_steel_ingot" }
+			tasks: [{
+				id: "6B00000001009004"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:royal_steel_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 19.5d
+			dependencies: ["6B0000000000004B"]
+			id: "6B00000000009010"
+			icon: { id: "create:mechanical_drill" }
+			tasks: [{
+				id: "6B00000001009010"
+				count: 1L
+				item: { count: 1 id: "create:mechanical_drill" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 21.0d
+			dependencies: ["6B00000000009010"]
+			id: "6B00000000009011"
+			icon: { id: "pastel:block_breaker" }
+			tasks: [{
+				id: "6B00000001009011"
+				count: 1L
+				item: { count: 1 id: "pastel:block_breaker" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 22.5d
+			dependencies: ["6B00000000009011"]
+			id: "6B00000000009012"
+			icon: { id: "anvilcraft:block_devourer" }
+			tasks: [{
+				id: "6B00000001009012"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:block_devourer" }
+				type: "item"
+			}]
 		}
 	]
 }

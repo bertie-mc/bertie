@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "berlordscarving:osmium_slate"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:osmium_big_slate",
+    "count": 1
+  }
+}

@@ -93,8 +93,62 @@ uses Large Prismarine Slates in place of prismarine blocks.
 Lava Bottle and Bone Serpent Tooth brew three-minute Lava Vision. Redstone extends it to
 eight minutes, and gunpowder makes either duration splashable.
 
-Scale Ingot is a visual placeholder in the Progression creative tab, with no recipe or use.
+Scale Ingot uses a 5×3 Nether Crafting Table recipe: twelve Ice and Fire dragon
+scales around a middle row of three Eezo Ingots. Scale types and colours may mix.
+One craft produces one ingot. All three Dragonsteel forge recipes consume Scale
+Ingot instead of Iron Ingot and retain their blood, duration and output.
 Its scales smoothly exchange their eight color palettes over a 24-second animation.
+
+## Sheets and technology entry
+
+Iron, Copper, Golden and Brass Sheets use Bertie Progression items instead of
+Create's material sheets. Recipes, plate tags and quest objectives use the new
+items. Royal Steel, Osmium, Deep Alloy and Obsidiansteel also have Sheets.
+Sturdy Sheet and its incomplete assembly item retain their native items and art;
+both Obsidian Dust deployment steps in its assembly now use Cognitive Flux.
+
+Each small material slate contains four ingots. Create pressing, AnvilCraft
+stamping and the Mekanism More Machines Stamper produce four Sheets from a small
+slate. The Stamper uses a matching Sheet as its reusable mould. Copper Rod is a
+dedicated item: one Copper Ingot makes two on the Lathe. Lightning Rod is unrelated.
+
+Machine Casing retains `mekanism:steel_casing` as its ID. Its 5×5 Nether-table
+recipe uses Royal Steel and Osmium Sheets, Runic Glass, Large Redstone Slates and
+a central Bound Soul Ingot. The Metallurgic Infuser and Enrichment Chamber also
+use 5×5 Nether-table recipes with Deep Alloy and Osmium Sheets, Cognitive Alloy
+and the relevant circuits, alloys and machine components.
+
+Basic Control Circuits use Zinc infusion; the higher circuit recipes retain
+their infusion materials. Zinc Ingot or Amethyst Shard supplies 10 chemical
+units. Enriching one produces an enriched item supplying 80. Zinc uses the
+pack's canonical Magitech ingot. Amethyst uses the selected edited item sprite.
+The two infusion chemicals have animated icons for tanks and machine displays.
+Infused Alloy uses Haze n Stuff's Rose Gold Ingot instead of Copper.
+
+Obsidian blocks no longer crush into Obsidian Dust. Obsidiansteel Ingots produce
+one dust in the Mekanism Crusher, Create Crushing Wheels, Oritech Pulverizer or
+Fragment Forge. Amethyst infusion replaces Diamond in Refined Obsidian Dust.
+The Obsidian Dust and Deepslate Combiner recipe is disabled. Other ingot-crushing
+routes are disabled, including Oritech's corresponding Fragment Forge recipes.
+
+Piezoelectric Crystal uses Copper Sheets, Glass, Quartz Blocks, Magnet Ingots
+and Amethyst Blocks on the Nether table. Heater uses Terracotta, any log, Iron
+Sheets, a Magnetoelectric Core and Deep Alloy Sheets. Charge Collector uses
+Magnet Ingots and a bottom row of Deep Alloy Sheet / Large Copper Slate / Deep
+Alloy Sheet. Transmission Pole uses a 3×5 Mechanical Crafter wall with a core,
+Copper Sheets and Rods, Deep Alloy Sheets and a Deep Alloy Block.
+
+Power Converters form a one-output upgrade chain: Small uses Magnetoelectric
+Core over Copper Block; Medium and Large each add their predecessor between
+those ingredients. Legacy combining and splitting recipes are disabled.
+Mechanical Drill retains its ingredients and produces two.
+
+Brilliant Obelisk infusion consumes eight Refined Brilliance instead of two Raw
+Brilliance. Runewood Obelisk uses Hephaestus Forge II: one Brilliant Obelisk,
+four Hallowed Gold Ingots, two Totemic Gold Ingots, Gold Horseshoes and Sugar;
+15 Souls, 4000 Blood and 400 experience essence. Its old Spirit Altar route is
+disabled. Overseer uses the selected 3×5 Mechanical Crafter recipe with Crying
+Obsidian, Eyes of Ender, five Deep Alloy Sheets and a Brilliant Obelisk.
 
 ## Utility machine progression
 
@@ -115,8 +169,8 @@ tanks and the four-stage breaker/placer paths are deferred design ideas.
 Ordinary power, fluid and item transport uses Mekanism. Oritech's corresponding
 pipes, framed/duct variants and Pipe Booster are retired, alongside its Portable
 Tank and portable/large energy storage. Retained recipes use Mekanism equivalents;
-Schrodinger's Safe uses a Basic Induction Cell. Oritech Superconductors, Item Filter
-and Schrodinger's Safe remain available.
+Schrodinger's Safe uses a Basic Induction Cell. Oritech Superconductors and
+Schrodinger's Safe remain available; Item Filter and Packed Wheat are withdrawn.
 
 Refined Storage and Cable Tiers remain outside the proposed chains. The Devourer's
 special terrain-drop reduction tag is empty, so it uses ordinary block loot without that
@@ -126,7 +180,8 @@ Null Blaze Cube uses four Solar Cores in its former Magma Cream positions.
 Nether Dust sifting yields Netherite Scrap at 0.1% and Redstone Dust at 8%; its
 Nether Dust return and Tungsten Nugget chances retain their existing values.
 
-Ore-processing machines, intermediates and processing recipes retain their current
-routes. Solar Flux Reborn panels and the large addon Heat Generator remain
+Ore-processing machines and intermediates remain available. Their ore routes
+remain, apart from the selected ingot-crushing and Obsidian Dust changes above.
+Solar Flux Reborn panels and the large addon Heat Generator remain
 available. Dedicated heaters supply evaporation heat; retained recipes that used
 Advanced Solar Generator now use Oritech Big Solar Panel.

@@ -1,0 +1,24 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "berlordscarving:royal_steel_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:royal_steel_sheet",
+      "count": 4
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

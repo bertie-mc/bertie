@@ -1,0 +1,52 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "OOOOD",
+    "OIBAG",
+    "DICAG",
+    "DIBAG",
+    "DDDDD"
+  ],
+  "key": {
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "mekanism:alloy_infused"
+    },
+    "B": {
+      "item": "mekanism:basic_control_circuit"
+    },
+    "C": {
+      "item": "mekanism:steel_casing"
+    },
+    "A": {
+      "item": "cognition:cognitive_alloy"
+    }
+  },
+  "result": {
+    "id": "mekanism:enrichment_chamber",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

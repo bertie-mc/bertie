@@ -1,0 +1,42 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CCCCC",
+    "GQQQG",
+    "GMMMG",
+    "GAAAG",
+    "CCCCC"
+  ],
+  "key": {
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    },
+    "M": {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:piezoelectric_crystal",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    }
+  ]
+}

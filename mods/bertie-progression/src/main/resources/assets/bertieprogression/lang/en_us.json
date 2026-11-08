@@ -52,5 +52,18 @@
   "tooltip.bertieprogression.aquatic_reflect": "Aquatic reflect",
   "tooltip.bertieprogression.perfect_parry": "Perfect parry.",
   "tooltip.bertieprogression.serrated_shark_tooth": "Sometimes dropped when Frilled Shark kills Squid",
-  "tooltip.bertieprogression.weapon_bash": "Bash damage: 100% of equipped weapon"
+  "tooltip.bertieprogression.weapon_bash": "Bash damage: 100% of equipped weapon",
+  "item.bertieprogression.iron_sheet": "Iron Sheet",
+  "item.bertieprogression.copper_sheet": "Copper Sheet",
+  "item.bertieprogression.golden_sheet": "Golden Sheet",
+  "item.bertieprogression.brass_sheet": "Brass Sheet",
+  "item.bertieprogression.royal_steel_sheet": "Royal Steel Sheet",
+  "item.bertieprogression.osmium_sheet": "Osmium Sheet",
+  "item.bertieprogression.deep_alloy_sheet": "Deep Alloy Sheet",
+  "item.bertieprogression.obsidiansteel_sheet": "Obsidiansteel Sheet",
+  "item.bertieprogression.copper_rod": "Copper Rod",
+  "item.bertieprogression.enriched_zinc": "Enriched Zinc",
+  "item.bertieprogression.enriched_amethyst": "Enriched Amethyst",
+  "chemical.bertieprogression.amethyst": "Amethyst",
+  "chemical.bertieprogression.zinc": "Zinc"
 }

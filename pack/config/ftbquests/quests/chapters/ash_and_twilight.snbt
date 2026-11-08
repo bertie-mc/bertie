@@ -1793,5 +1793,18 @@
 			x: -12.0d
 			y: 6.0d
 		}
+		{
+			y: 3.0d
+			x: 0.0d
+			dependencies: ["3B0000000000002A"]
+			id: "3B00000000009000"
+			icon: { id: "malum:runewood_obelisk" }
+			tasks: [{
+				id: "3B00000001009000"
+				count: 1L
+				item: { count: 1 id: "malum:runewood_obelisk" }
+				type: "item"
+			}]
+		}
 	]
 }

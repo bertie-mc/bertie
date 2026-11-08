@@ -1,11 +1,15 @@
 {
   "replace": true,
   "values": [
-    "create:brass_sheet",
+    "bertieprogression:brass_sheet",
     "create:cardboard",
-    "create:copper_sheet",
-    "create:golden_sheet",
-    "create:iron_sheet",
-    "create:sturdy_sheet"
+    "bertieprogression:copper_sheet",
+    "bertieprogression:golden_sheet",
+    "bertieprogression:iron_sheet",
+    "create:sturdy_sheet",
+    "bertieprogression:royal_steel_sheet",
+    "bertieprogression:osmium_sheet",
+    "bertieprogression:deep_alloy_sheet",
+    "bertieprogression:obsidiansteel_sheet"
   ]
 }

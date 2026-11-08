@@ -1,0 +1,27 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SEEES",
+    "SSSSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "iceandfire:scales/dragon"
+    },
+    "E": {
+      "item": "bertieprogression:eezo_ingot"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:scale_ingot",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    }
+  ]
+}

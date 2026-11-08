@@ -1,0 +1,20 @@
+{
+  "type": "iceandfire:dragonforge",
+  "dragonType": "lightning",
+  "cookTime": 1000,
+  "input": {
+    "item": "bertieprogression:scale_ingot"
+  },
+  "blood": {
+    "item": "iceandfire:lightning_dragon_blood"
+  },
+  "result": {
+    "id": "iceandfire:dragonsteel_lightning_ingot"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "iceandfire"
+    }
+  ]
+}

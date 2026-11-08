@@ -1,0 +1,46 @@
+{
+  "essences": {
+    "aureal": 0,
+    "souls": 15,
+    "blood": 4000,
+    "experience": 400
+  },
+  "main_ingredient": {
+    "item": "malum:brilliant_obelisk"
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "malum:hallowed_gold_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "malum:totemic_gold_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "betterhorses:gold_horseshoes"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:sugar"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "forge_tier": 2,
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "malum:runewood_obelisk",
+      "count": 1
+    }
+  }
+}

@@ -917,7 +917,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B0000000000002D"]
@@ -940,7 +940,7 @@
 				value: 1L
 			}]
 			x: 4.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1071,7 +1071,7 @@
 				item: { count: 1, id: "create:depot" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 4.5d
 		}
 		{
@@ -1109,13 +1109,13 @@
 				item: { count: 1, id: "create:mechanical_press" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000037"]
 			icon: {
-				id: "create:iron_sheet"
+				id: "bertieprogression:iron_sheet"
 			}
 			id: "2B00000000000038"
 			rewards: [{
@@ -1126,11 +1126,11 @@
 			tasks: [{
 				count: 8L
 				id: "2B00000001000038"
-				item: { count: 1, id: "create:iron_sheet" }
+				item: { count: 1, id: "bertieprogression:iron_sheet" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B0000000000005A"]
@@ -1149,7 +1149,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B00000000000038"]
@@ -1216,7 +1216,7 @@
 				}
 			]
 			x: 6.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B0000000000002F"]
@@ -1236,7 +1236,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B00000000000028"]
@@ -2002,7 +2002,7 @@
 		{
 			dependencies: ["2B00000000000037"]
 			icon: {
-				id: "create:golden_sheet"
+				id: "bertieprogression:golden_sheet"
 			}
 			id: "2B00000000000057"
 			rewards: [{
@@ -2013,7 +2013,7 @@
 			tasks: [{
 				count: 8L
 				id: "2B00000001000057"
-				item: { count: 1, id: "create:golden_sheet" }
+				item: { count: 1, id: "bertieprogression:golden_sheet" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -2022,7 +2022,7 @@
 		{
 			dependencies: ["2B00000000000037"]
 			icon: {
-				id: "create:copper_sheet"
+				id: "bertieprogression:copper_sheet"
 			}
 			id: "2B00000000000058"
 			rewards: [{
@@ -2033,7 +2033,7 @@
 			tasks: [{
 				count: 8L
 				id: "2B00000001000058"
-				item: { count: 1, id: "create:copper_sheet" }
+				item: { count: 1, id: "bertieprogression:copper_sheet" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -2042,7 +2042,7 @@
 		{
 			dependencies: ["2B00000000000037"]
 			icon: {
-				id: "create:brass_sheet"
+				id: "bertieprogression:brass_sheet"
 			}
 			id: "2B00000000000059"
 			rewards: [{
@@ -2053,7 +2053,7 @@
 			tasks: [{
 				count: 8L
 				id: "2B00000001000059"
-				item: { count: 1, id: "create:brass_sheet" }
+				item: { count: 1, id: "bertieprogression:brass_sheet" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -2076,7 +2076,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B00000000000055"]
@@ -2171,7 +2171,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000064"]
@@ -2209,7 +2209,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000006B"]
@@ -2307,7 +2307,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B00000000000064"]
@@ -2598,7 +2598,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000006E"]
@@ -2617,7 +2617,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000003D"]
@@ -2636,7 +2636,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000070"]
@@ -2654,8 +2654,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 7.5d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B0000000000002A"]
@@ -3054,8 +3054,8 @@
 				item: { count: 1, id: "sawmill:sawmill" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000003D"]
@@ -3071,7 +3071,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B0000000000008B"]
@@ -3087,7 +3087,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B0000000000008C"]
@@ -3102,8 +3102,8 @@
 				item: { count: 1, id: "trashcans:energy_trash_can" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 7.5d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B0000000000008D"]
@@ -3119,7 +3119,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3C00000000000008"]
@@ -3133,6 +3133,32 @@
 			}]
 			x: -7.5d
 			y: 0.0d
+		}
+		{
+			y: 3.0d
+			x: -3.0d
+			dependencies: ["2B0000000000002C"]
+			id: "2B00000000009000"
+			icon: { id: "malum:brilliant_obelisk" }
+			tasks: [{
+				id: "2B00000001009000"
+				count: 1L
+				item: { count: 1 id: "malum:brilliant_obelisk" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: -4.5d
+			dependencies: ["2B00000000009000"]
+			id: "2B00000000009001"
+			icon: { id: "anvilcraft:overseer" }
+			tasks: [{
+				id: "2B00000001009001"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:overseer" }
+				type: "item"
+			}]
 		}
 	]
 }

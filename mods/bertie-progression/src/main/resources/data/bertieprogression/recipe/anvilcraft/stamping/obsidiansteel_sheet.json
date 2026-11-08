@@ -1,0 +1,24 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:obsidiansteel_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:obsidiansteel_sheet",
+      "count": 4
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    }
+  ]
+}

@@ -7,6 +7,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
     }
   ],
   "type": "create:sequenced_assembly",
@@ -26,7 +30,7 @@
           "item": "create:unprocessed_obsidian_sheet"
         },
         {
-          "item": "create:powdered_obsidian"
+          "item": "cognition:cognitive_flux"
         }
       ],
       "results": [
@@ -42,7 +46,7 @@
           "item": "create:unprocessed_obsidian_sheet"
         },
         {
-          "item": "create:powdered_obsidian"
+          "item": "cognition:cognitive_flux"
         }
       ],
       "results": [

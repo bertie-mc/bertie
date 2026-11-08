@@ -1,0 +1,24 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:osmium_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:osmium_sheet",
+      "count": 4
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    }
+  ]
+}

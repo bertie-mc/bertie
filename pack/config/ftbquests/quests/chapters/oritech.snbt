@@ -477,26 +477,6 @@
 			y: -3.000d
 		}
 		{
-			id: "625BF6FAC5C95CAD"
-			icon: {
-				id: "oritech:item_filter_block"
-			}
-			tasks: [
-				{
-					id: "62AEF1B9F41883E7"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:item_filter_block"
-					}
-				}
-			]
-			x: -11.500d
-			y: -6.000d
-		}
-		{
 			id: "623C80D163EAF597"
 			icon: {
 				id: "oritech:drone_port_block"

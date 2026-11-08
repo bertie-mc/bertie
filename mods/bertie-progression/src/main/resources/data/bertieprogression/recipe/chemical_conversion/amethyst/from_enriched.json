@@ -1,0 +1,17 @@
+{
+  "type": "mekanism:chemical_conversion",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:enriched_amethyst"
+  },
+  "output": {
+    "amount": 80,
+    "id": "bertieprogression:amethyst"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}
