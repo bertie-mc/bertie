@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " WRW ",
+    "WWMWW",
+    "WWBWW",
+    "WWMWW",
+    " WRW "
+  ],
+  "key": {
+    "W": {
+      "item": "bertieprogression:copper_wire"
+    },
+    "R": {
+      "item": "anvilcraft:royal_steel_ingot"
+    },
+    "M": {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    "B": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:magnetic_coil",
+    "count": 5
+  },
+  "tier": 2
+}

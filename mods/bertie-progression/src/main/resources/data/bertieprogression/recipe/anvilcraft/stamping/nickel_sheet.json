@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:nickel_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:nickel_sheet",
+      "count": 1
+    }
+  ]
+}

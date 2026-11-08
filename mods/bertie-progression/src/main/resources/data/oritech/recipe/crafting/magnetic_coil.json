@@ -1,0 +1,26 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " WRW ",
+    "WWMWW",
+    "WWMWW",
+    "WWMWW",
+    " WRW "
+  ],
+  "key": {
+    "W": {
+      "item": "bertieprogression:copper_wire"
+    },
+    "R": {
+      "item": "anvilcraft:royal_steel_ingot"
+    },
+    "M": {
+      "item": "anvilcraft:magnet_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:magnetic_coil",
+    "count": 1
+  },
+  "tier": 2
+}

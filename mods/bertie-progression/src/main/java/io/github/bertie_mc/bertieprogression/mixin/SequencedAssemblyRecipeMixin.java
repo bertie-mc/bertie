@@ -4,6 +4,7 @@ import com.simibubi.create.AllDataComponents;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe.SequencedAssembly;
 import io.github.bertie_mc.bertieprogression.backpack.BackpackHandover;
+import io.github.bertie_mc.bertieprogression.recipe.WireAssemblyResults;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.ItemStack;
@@ -35,6 +36,9 @@ public abstract class SequencedAssemblyRecipeMixin {
     private void bertieprogression$carryStorage(
             ResourceLocation recipeId, ItemStack input, RandomSource random, CallbackInfoReturnable<ItemStack> cir) {
         ItemStack out = cir.getReturnValue();
+        if (out != null) {
+            WireAssemblyResults.mark(recipeId, out, !out.has(AllDataComponents.SEQUENCED_ASSEMBLY));
+        }
         if (out == null || out.isEmpty() || !BackpackHandover.isStorage(input)) {
             return;
         }

@@ -1,0 +1,91 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "bertieprogression:copper_rod"
+  },
+  "transitional_item": {
+    "id": "bertieprogression:incomplete_copper_wire"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "bertieprogression:copper_wire",
+      "count": 1,
+      "chance": 30
+    },
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 1,
+      "chance": 70
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_wire"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_wire"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "processing_time": 100
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "processing_time": 100
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_wire"
+        }
+      ]
+    }
+  ]
+}

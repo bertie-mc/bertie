@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "berlordscarving:nickel_slate"
+  },
+  "mold": {
+    "count": 1,
+    "item": "bertieprogression:nickel_sheet"
+  },
+  "output": {
+    "id": "bertieprogression:nickel_sheet",
+    "count": 1
+  }
+}

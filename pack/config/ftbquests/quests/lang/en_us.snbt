@@ -2791,4 +2791,20 @@
 	quest.2B00000000009000.title: "Brilliant Obelisk"
 	quest.2B00000000009001.title: "Overseer"
 	quest.3B00000000009000.title: "Runewood Obelisk"
+	quest.5C00000000009300.title: "Copper Rod"
+	quest.5C00000000009301.title: "Copper Wire"
+	quest.5C00000000009302.title: "Magnetic Coil"
+	quest.5C00000000009303.title: "Motor"
+	quest.5C00000000009310.title: "Resin"
+	quest.5C00000000009311.title: "Hardened Resin"
+	quest.5C00000000009312.title: "Circuit Board"
+	quest.5C00000000009320.title: "Pulveriser"
+	quest.5C00000000009321.title: "Purification Chamber"
+	quest.5C00000000009322.title: "Electrolytic Separator"
+	quest.5C00000000009323.title: "Pressurized Reaction Chamber"
+	quest.5C00000000009001.quest_desc: ["part of x2", "", "Enriches ordinary raw metals into two dust per raw item."]
+	quest.5C00000000009320.quest_desc: ["part of x3", "", "Pulverizes materials in the developing ore-processing chain."]
+	quest.5C00000000009321.quest_desc: ["part of x3", "", "Uses Oxygen to turn ordinary raw metals into three clumps per raw item."]
+	quest.5C00000000009322.quest_desc: ["part of x3", "", "Splits Water into Hydrogen and Oxygen. Oxygen supplies Purification; Hydrogen supplies the PRC."]
+	quest.5C00000000009323.quest_desc: ["Combines an item, a liquid and a gas.", "", "Makes Empty Capacitors from Mana Potion, Hydrogen and an Elite Chemical Tank."]
 }

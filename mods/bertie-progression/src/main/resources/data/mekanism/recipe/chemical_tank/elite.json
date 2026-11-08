@@ -1,0 +1,24 @@
+{
+  "type": "mekanism:mek_data",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "mekanism:alloys/reinforced"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "P": {
+      "item": "mekanism:advanced_chemical_tank"
+    }
+  },
+  "pattern": [
+    "COC",
+    "OPO",
+    "COC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:elite_chemical_tank"
+  }
+}

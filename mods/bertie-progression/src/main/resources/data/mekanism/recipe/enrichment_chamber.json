@@ -2,9 +2,9 @@
   "type": "avaritia:shaped_table",
   "pattern": [
     "OOOOD",
-    "OIBAG",
+    "OIBYG",
     "DICAG",
-    "DIBAG",
+    "DXBAG",
     "DDDDD"
   ],
   "key": {
@@ -28,6 +28,12 @@
     },
     "A": {
       "item": "cognition:cognitive_alloy"
+    },
+    "X": {
+      "item": "oritech:motor"
+    },
+    "Y": {
+      "item": "anvilcraft:circuit_board"
     }
   },
   "result": {

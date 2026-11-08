@@ -69,7 +69,9 @@ class CarvingContractTest {
                         "obsidiansteel",
                         "royal_steel",
                         "osmium",
-                        "brass"),
+                        "brass",
+                        "steel",
+                        "nickel"),
                 Arrays.stream(CarvingMaterial.values())
                         .map(material -> material.id)
                         .toList());

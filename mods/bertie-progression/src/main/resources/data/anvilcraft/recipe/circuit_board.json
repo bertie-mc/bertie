@@ -1,0 +1,26 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "RRRRR",
+    "WWGGR",
+    "WRGGR",
+    "WWWWW",
+    "WRWRW"
+  ],
+  "key": {
+    "R": {
+      "item": "anvilcraft:hardend_resin"
+    },
+    "W": {
+      "item": "bertieprogression:copper_wire"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:circuit_board",
+    "count": 1
+  },
+  "tier": 2
+}

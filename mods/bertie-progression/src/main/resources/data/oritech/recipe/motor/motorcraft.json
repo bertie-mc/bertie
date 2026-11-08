@@ -1,0 +1,35 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ARARA",
+    "NCCCS",
+    "NNISS",
+    "NCCCS",
+    "ARARA"
+  ],
+  "key": {
+    "A": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "R": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "N": {
+      "item": "bertieprogression:nickel_sheet"
+    },
+    "S": {
+      "item": "bertieprogression:royal_steel_sheet"
+    },
+    "C": {
+      "item": "oritech:magnetic_coil"
+    },
+    "I": {
+      "item": "mekanism:ingot_steel"
+    }
+  },
+  "result": {
+    "id": "oritech:motor",
+    "count": 1
+  },
+  "tier": 2
+}

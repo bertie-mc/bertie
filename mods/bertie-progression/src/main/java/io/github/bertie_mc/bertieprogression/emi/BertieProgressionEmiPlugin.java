@@ -46,6 +46,9 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
 
     @Override
     public void register(EmiRegistry registry) {
+        if (net.neoforged.fml.ModList.get().isLoaded("create")) {
+            WireAssemblyEmi.register(registry);
+        }
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
         registry.removeEmiStacks(stack -> RemovedItems.isRemoved(stack.getItemStack()));

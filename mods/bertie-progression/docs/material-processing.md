@@ -103,20 +103,46 @@ Its scales smoothly exchange their eight color palettes over a 24-second animati
 
 Iron, Copper, Golden and Brass Sheets use Bertie Progression items instead of
 Create's material sheets. Recipes, plate tags and quest objectives use the new
-items. Royal Steel, Osmium, Deep Alloy and Obsidiansteel also have Sheets.
+items. Royal Steel, Osmium, Deep Alloy, Obsidiansteel, Steel and Nickel also have Sheets.
 Sturdy Sheet and its incomplete assembly item retain their native items and art;
 both Obsidian Dust deployment steps in its assembly now use Cognitive Flux.
 
 Each small material slate contains four ingots. Create pressing, AnvilCraft
-stamping and the Mekanism More Machines Stamper produce four Sheets from a small
+stamping and the Mekanism More Machines Stamper produce one Sheet from a small
 slate. The Stamper uses a matching Sheet as its reusable mould. Copper Rod is a
-dedicated item: one Copper Ingot makes two on the Lathe. Lightning Rod is unrelated.
+dedicated item: one Copper Ingot makes one on the Lathe. Steel Rod has the same
+Lathe yield. Three matching ingots diagonally craft one Rod.
+
+Copper Wire uses one Rod in a single Create sequence: press, press, saw, saw,
+press. It produces one guaranteed Wire plus either another Wire (30%) or a
+Copper Ingot (70%). The Lathe's 1:1 yield prevents recycling that Ingot return
+into surplus Copper. Rolling Mill consumes one Copper Ingot for two Wires.
+EMI displays the guaranteed output separately from the secondary choice.
 
 Machine Casing retains `mekanism:steel_casing` as its ID. Its 5×5 Nether-table
 recipe uses Royal Steel and Osmium Sheets, Runic Glass, Large Redstone Slates and
 a central Bound Soul Ingot. The Metallurgic Infuser and Enrichment Chamber also
 use 5×5 Nether-table recipes with Deep Alloy and Osmium Sheets, Cognitive Alloy
 and the relevant circuits, alloys and machine components.
+Both use Motor at row 4, column 2 and AnvilCraft Circuit Board at row 2, column 4.
+Circuit Board, Oritech Magnetic Coil and Oritech Motor use 5×5 Nether-table
+recipes. Bound Soul alternatives produce eight Boards, five Coils or three Motors.
+
+Ordinary raw metals enrich into two dust per raw item, or eighteen per raw
+storage block. Purification produces three clumps per raw item, or twenty-seven
+per raw storage block. Ore-block recipes retain their existing yields.
+
+All Fluid Tank tiers use Steel Sheets top/bottom and Steel Rods left/right,
+with their previous tier in the centre. Basic uses Create Fluid Tank in the
+centre and Osmium Ingot corners. Chemical Tank upgrades use Osmium Sheets on
+the four sides; Basic uses Steel Sheets and Basic Control Circuit corners.
+Upgrade corners and stored-content transfer remain unchanged.
+
+Pressurized Reaction Chamber uses the selected 5×5 Nether-table recipe with
+two Advanced Chemical Tanks and one Advanced Fluid Tank. Empty Capacitor is
+made there from one Elite Chemical Tank, 5 B of ordinary Mana Potion and 2 B
+Hydrogen over ten seconds. The potion fluid is Create's potion fluid carrying
+Iron's Spellbooks Mana I; other potion contents do not satisfy the ingredient.
 
 Basic Control Circuits use Zinc infusion; the higher circuit recipes retain
 their infusion materials. Zinc Ingot or Amethyst Shard supplies 10 chemical
@@ -162,9 +188,10 @@ Ordinary Mekanism Heat Generator, Bio-Generator and Advanced Solar Generator are
 retired. Oritech supplies the starter solid-fuel and biological generators.
 Stellaris Solar Panel is retired.
 
-Pumps, tanks, breakers and placers retain their recipes from before the proposed
-machine-predecessor changes. Oritech -> Mekanism -> Extras pumps, Create -> Mekanism
-tanks and the four-stage breaker/placer paths are deferred design ideas.
+Pumps, breakers and placers retain their recipes from before the proposed
+machine-predecessor changes. Oritech -> Mekanism -> Extras pumps and the
+four-stage breaker/placer paths remain deferred design ideas. The selected
+Fluid/Chemical Tank recipes are described above.
 
 Ordinary power, fluid and item transport uses Mekanism. Oritech's corresponding
 pipes, framed/duct variants and Pipe Booster are retired, alongside its Portable

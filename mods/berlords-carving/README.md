@@ -15,7 +15,7 @@ when materials are appended.
 
 The slate-only selection includes ironwood, steeleaf, naga scale, knightmetal, fiery metal,
 eezo, fire/ice/lightning dragonsteel, straddlite, neptunium, arcane ingot, silver,
-Obsidiansteel, Royal Steel, Osmium and Brass. Silver
+Obsidiansteel, Royal Steel, Osmium, Brass, Mekanism Steel and Oritech Nickel. Silver
 uses AnvilCraft's ingot and the approved small/large sprite pair. Their item IDs
 use the `berlordscarving` namespace with `_slate` and `_big_slate` suffixes. Source items,
 display names and generated recipes are defined in `texture-work/make_assets.py`.

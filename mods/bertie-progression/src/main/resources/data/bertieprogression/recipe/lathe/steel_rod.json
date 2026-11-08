@@ -1,0 +1,11 @@
+{
+  "type": "mekmm:lathe",
+  "input": {
+    "count": 1,
+    "item": "mekanism:ingot_steel"
+  },
+  "output": {
+    "id": "bertieprogression:steel_rod",
+    "count": 1
+  }
+}

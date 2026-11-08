@@ -103,6 +103,11 @@ public final class ModItems {
     public static final DeferredItem<Item> DEEP_ALLOY_SHEET = simple("deep_alloy_sheet", 64);
     public static final DeferredItem<Item> OBSIDIANSTEEL_SHEET = simple("obsidiansteel_sheet", 64);
     public static final DeferredItem<Item> COPPER_ROD = simple("copper_rod", 64);
+    public static final DeferredItem<Item> INCOMPLETE_COPPER_WIRE = simple("incomplete_copper_wire", 64);
+    public static final DeferredItem<Item> COPPER_WIRE = simple("copper_wire", 64);
+    public static final DeferredItem<Item> NICKEL_SHEET = simple("nickel_sheet", 64);
+    public static final DeferredItem<Item> STEEL_ROD = simple("steel_rod", 64);
+    public static final DeferredItem<Item> STEEL_SHEET = simple("steel_sheet", 64);
     public static final DeferredItem<Item> ENRICHED_ZINC = simple("enriched_zinc", 64);
     public static final DeferredItem<Item> ENRICHED_AMETHYST = simple("enriched_amethyst", 64);
 

@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:steel_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:steel_sheet",
+      "count": 1
+    }
+  ]
+}

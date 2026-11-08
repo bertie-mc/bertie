@@ -2,9 +2,9 @@
   "type": "avaritia:shaped_table",
   "pattern": [
     "DDDOO",
-    "DARAO",
+    "DARYO",
     "DTCBO",
-    "DARAO",
+    "DXRAO",
     "DDDDD"
   ],
   "key": {
@@ -28,6 +28,12 @@
     },
     "B": {
       "item": "minecraft:blast_furnace"
+    },
+    "X": {
+      "item": "oritech:motor"
+    },
+    "Y": {
+      "item": "anvilcraft:circuit_board"
     }
   },
   "result": {

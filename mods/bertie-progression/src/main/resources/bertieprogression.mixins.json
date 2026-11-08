@@ -22,6 +22,7 @@
     "LightningMagnetInputMixin",
     "PocketOpenKeyMixin",
     "PotionBrewingBuilderMixin",
+    "ProcessingRecipeWireOutputMixin",
     "RemovedEffectsMixin",
     "RemovedPotionBrewingMixin",
     "RemovedPastelStructureMixin",

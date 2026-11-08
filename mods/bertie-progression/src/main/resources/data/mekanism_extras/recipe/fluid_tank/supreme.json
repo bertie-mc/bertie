@@ -1,0 +1,25 @@
+{
+  "type": "mekanism:mek_data",
+  "key": {
+    "C": {
+      "tag": "mekanism_extras:alloys/thermonuclear"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:steel_rod"
+    },
+    "P": {
+      "item": "mekanism_extras:absolute_fluid_tank"
+    }
+  },
+  "pattern": [
+    "CSC",
+    "RPR",
+    "CSC"
+  ],
+  "result": {
+    "id": "mekanism_extras:supreme_fluid_tank"
+  }
+}

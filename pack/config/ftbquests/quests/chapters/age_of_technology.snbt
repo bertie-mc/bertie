@@ -38,8 +38,8 @@
 		}
 		{
 			y: 0d
-			x: 1.5d
-			dependencies: ["6B0000000000004E"]
+			x: 5d
+			dependencies: ["5C00000000009303", "5C00000000009312"]
 			id: "5C00000000009000"
 			icon: { id: "mekanism:metallurgic_infuser" }
 			tasks: [{
@@ -51,7 +51,7 @@
 		}
 		{
 			y: 0d
-			x: 3d
+			x: 6d
 			dependencies: ["5C00000000009000"]
 			id: "5C00000000009001"
 			icon: { id: "mekanism:enrichment_chamber" }
@@ -63,8 +63,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 1.5d
+			y: -1d
+			x: 0d
 			dependencies: ["6B0000000000004E"]
 			id: "5C00000000009010"
 			icon: { id: "anvilcraft:power_converter_small" }
@@ -76,8 +76,8 @@
 			}]
 		}
 		{
-			y: -3.0d
-			x: 1.5d
+			y: -2d
+			x: 0d
 			dependencies: ["5C00000000009010"]
 			id: "5C00000000009011"
 			icon: { id: "anvilcraft:power_converter_middle" }
@@ -89,8 +89,8 @@
 			}]
 		}
 		{
-			y: -4.5d
-			x: 1.5d
+			y: -3d
+			x: 0d
 			dependencies: ["5C00000000009011"]
 			id: "5C00000000009012"
 			icon: { id: "anvilcraft:power_converter_big" }
@@ -102,8 +102,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 4.5d
+			y: -1d
+			x: 2.5d
 			dependencies: ["5C00000000009000"]
 			id: "5C00000000009100"
 			icon: { id: "mekanism:basic_control_circuit" }
@@ -115,8 +115,8 @@
 			}]
 		}
 		{
-			y: -3.0d
-			x: 3.0d
+			y: -2d
+			x: 1.5d
 			dependencies: ["5C00000000009100"]
 			id: "5C00000000009101"
 			icon: { id: "mekanism:basic_control_circuit" }
@@ -128,8 +128,8 @@
 			}]
 		}
 		{
-			y: -4.5d
-			x: 4.5d
+			y: -2d
+			x: 2.5d
 			dependencies: ["5C00000000009100"]
 			id: "5C00000000009102"
 			icon: { id: "mekanism:advanced_control_circuit" }
@@ -141,8 +141,8 @@
 			}]
 		}
 		{
-			y: -6.0d
-			x: 3.0d
+			y: -3d
+			x: 1.5d
 			dependencies: ["5C00000000009102"]
 			id: "5C00000000009103"
 			icon: { id: "mekanism:advanced_control_circuit" }
@@ -154,8 +154,8 @@
 			}]
 		}
 		{
-			y: -7.5d
-			x: 4.5d
+			y: -3d
+			x: 2.5d
 			dependencies: ["5C00000000009102"]
 			id: "5C00000000009104"
 			icon: { id: "mekanism:elite_control_circuit" }
@@ -167,8 +167,8 @@
 			}]
 		}
 		{
-			y: -9.0d
-			x: 3.0d
+			y: -4d
+			x: 1.5d
 			dependencies: ["5C00000000009104"]
 			id: "5C00000000009105"
 			icon: { id: "mekanism:elite_control_circuit" }
@@ -180,8 +180,8 @@
 			}]
 		}
 		{
-			y: -10.5d
-			x: 4.5d
+			y: -4d
+			x: 2.5d
 			dependencies: ["5C00000000009104"]
 			id: "5C00000000009106"
 			icon: { id: "mekanism:ultimate_control_circuit" }
@@ -193,8 +193,8 @@
 			}]
 		}
 		{
-			y: -12.0d
-			x: 3.0d
+			y: -5d
+			x: 1.5d
 			dependencies: ["5C00000000009106"]
 			id: "5C00000000009107"
 			icon: { id: "mekanism:ultimate_control_circuit" }
@@ -206,8 +206,8 @@
 			}]
 		}
 		{
-			y: -13.5d
-			x: 4.5d
+			y: -5d
+			x: 2.5d
 			dependencies: ["5C00000000009106"]
 			id: "5C00000000009108"
 			icon: { id: "mekanism_extras:absolute_control_circuit" }
@@ -219,8 +219,8 @@
 			}]
 		}
 		{
-			y: -15.0d
-			x: 3.0d
+			y: -6d
+			x: 1.5d
 			dependencies: ["5C00000000009108"]
 			id: "5C00000000009109"
 			icon: { id: "mekanism_extras:absolute_control_circuit" }
@@ -232,8 +232,8 @@
 			}]
 		}
 		{
-			y: -16.5d
-			x: 4.5d
+			y: -6d
+			x: 2.5d
 			dependencies: ["5C00000000009108"]
 			id: "5C0000000000910A"
 			icon: { id: "mekanism_extras:supreme_control_circuit" }
@@ -245,8 +245,8 @@
 			}]
 		}
 		{
-			y: -18.0d
-			x: 3.0d
+			y: -7d
+			x: 1.5d
 			dependencies: ["5C0000000000910A"]
 			id: "5C0000000000910B"
 			icon: { id: "mekanism_extras:supreme_control_circuit" }
@@ -258,8 +258,8 @@
 			}]
 		}
 		{
-			y: -19.5d
-			x: 4.5d
+			y: -7d
+			x: 2.5d
 			dependencies: ["5C0000000000910A"]
 			id: "5C0000000000910C"
 			icon: { id: "mekanism_extras:cosmic_control_circuit" }
@@ -271,8 +271,8 @@
 			}]
 		}
 		{
-			y: -21.0d
-			x: 3.0d
+			y: -8d
+			x: 1.5d
 			dependencies: ["5C0000000000910C"]
 			id: "5C0000000000910D"
 			icon: { id: "mekanism_extras:cosmic_control_circuit" }
@@ -284,8 +284,8 @@
 			}]
 		}
 		{
-			y: -22.5d
-			x: 4.5d
+			y: -8d
+			x: 2.5d
 			dependencies: ["5C0000000000910C"]
 			id: "5C0000000000910E"
 			icon: { id: "mekanism_extras:infinite_control_circuit" }
@@ -297,8 +297,8 @@
 			}]
 		}
 		{
-			y: -24.0d
-			x: 3.0d
+			y: -9d
+			x: 1.5d
 			dependencies: ["5C0000000000910E"]
 			id: "5C0000000000910F"
 			icon: { id: "mekanism_extras:infinite_control_circuit" }
@@ -310,8 +310,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 7.5d
+			y: -1d
+			x: 5.5d
 			dependencies: ["5C00000000009000"]
 			id: "5C00000000009200"
 			icon: { id: "mekanism:alloy_infused" }
@@ -323,8 +323,8 @@
 			}]
 		}
 		{
-			y: -3.0d
-			x: 9.0d
+			y: -2d
+			x: 6.5d
 			dependencies: ["5C00000000009200"]
 			id: "5C00000000009201"
 			icon: { id: "mekanism:alloy_infused" }
@@ -336,8 +336,8 @@
 			}]
 		}
 		{
-			y: -4.5d
-			x: 7.5d
+			y: -2d
+			x: 5.5d
 			dependencies: ["5C00000000009200"]
 			id: "5C00000000009202"
 			icon: { id: "mekanism:alloy_reinforced" }
@@ -349,8 +349,8 @@
 			}]
 		}
 		{
-			y: -6.0d
-			x: 9.0d
+			y: -3d
+			x: 6.5d
 			dependencies: ["5C00000000009202"]
 			id: "5C00000000009203"
 			icon: { id: "mekanism:alloy_reinforced" }
@@ -362,8 +362,8 @@
 			}]
 		}
 		{
-			y: -7.5d
-			x: 7.5d
+			y: -3d
+			x: 5.5d
 			dependencies: ["5C00000000009202"]
 			id: "5C00000000009204"
 			icon: { id: "mekanism:alloy_atomic" }
@@ -375,8 +375,8 @@
 			}]
 		}
 		{
-			y: -9.0d
-			x: 9.0d
+			y: -4d
+			x: 6.5d
 			dependencies: ["5C00000000009204"]
 			id: "5C00000000009205"
 			icon: { id: "mekanism:alloy_atomic" }
@@ -388,8 +388,8 @@
 			}]
 		}
 		{
-			y: -10.5d
-			x: 7.5d
+			y: -4d
+			x: 5.5d
 			dependencies: ["5C00000000009204"]
 			id: "5C00000000009206"
 			icon: { id: "mekanism_extras:alloy_radiance" }
@@ -401,8 +401,8 @@
 			}]
 		}
 		{
-			y: -12.0d
-			x: 9.0d
+			y: -5d
+			x: 6.5d
 			dependencies: ["5C00000000009206"]
 			id: "5C00000000009207"
 			icon: { id: "mekanism_extras:alloy_radiance" }
@@ -414,8 +414,8 @@
 			}]
 		}
 		{
-			y: -13.5d
-			x: 7.5d
+			y: -5d
+			x: 5.5d
 			dependencies: ["5C00000000009206"]
 			id: "5C00000000009208"
 			icon: { id: "mekanism_extras:alloy_thermonuclear" }
@@ -427,8 +427,8 @@
 			}]
 		}
 		{
-			y: -15.0d
-			x: 9.0d
+			y: -6d
+			x: 6.5d
 			dependencies: ["5C00000000009208"]
 			id: "5C00000000009209"
 			icon: { id: "mekanism_extras:alloy_thermonuclear" }
@@ -440,8 +440,8 @@
 			}]
 		}
 		{
-			y: -16.5d
-			x: 7.5d
+			y: -6d
+			x: 5.5d
 			dependencies: ["5C00000000009208"]
 			id: "5C0000000000920A"
 			icon: { id: "mekanism_extras:alloy_shining" }
@@ -453,8 +453,8 @@
 			}]
 		}
 		{
-			y: -18.0d
-			x: 9.0d
+			y: -7d
+			x: 6.5d
 			dependencies: ["5C0000000000920A"]
 			id: "5C0000000000920B"
 			icon: { id: "mekanism_extras:alloy_shining" }
@@ -466,8 +466,8 @@
 			}]
 		}
 		{
-			y: -19.5d
-			x: 7.5d
+			y: -7d
+			x: 5.5d
 			dependencies: ["5C0000000000920A"]
 			id: "5C0000000000920C"
 			icon: { id: "mekanism_extras:alloy_spectrum" }
@@ -479,8 +479,8 @@
 			}]
 		}
 		{
-			y: -21.0d
-			x: 9.0d
+			y: -8d
+			x: 6.5d
 			dependencies: ["5C0000000000920C"]
 			id: "5C0000000000920D"
 			icon: { id: "mekanism_extras:alloy_spectrum" }
@@ -488,6 +488,149 @@
 				id: "5C0000000100920D"
 				count: 64L
 				item: { count: 1 id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 1d
+			dependencies: ["6B0000000000004E"]
+			id: "5C00000000009300"
+			icon: { id: "bertieprogression:copper_rod" }
+			tasks: [{
+				id: "5C00000001009300"
+				count: 1L
+				item: { count: 1 id: "bertieprogression:copper_rod" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 2d
+			dependencies: ["5C00000000009300"]
+			id: "5C00000000009301"
+			icon: { id: "bertieprogression:copper_wire" }
+			tasks: [{
+				id: "5C00000001009301"
+				count: 1L
+				item: { count: 1 id: "bertieprogression:copper_wire" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 3d
+			dependencies: ["5C00000000009301"]
+			id: "5C00000000009302"
+			icon: { id: "oritech:magnetic_coil" }
+			tasks: [{
+				id: "5C00000001009302"
+				count: 1L
+				item: { count: 1 id: "oritech:magnetic_coil" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 4d
+			dependencies: ["5C00000000009302"]
+			id: "5C00000000009303"
+			icon: { id: "oritech:motor" }
+			tasks: [{
+				id: "5C00000001009303"
+				count: 1L
+				item: { count: 1 id: "oritech:motor" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1d
+			x: 1d
+			dependencies: ["6B0000000000004E"]
+			id: "5C00000000009310"
+			icon: { id: "anvilcraft:resin" }
+			tasks: [{
+				id: "5C00000001009310"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:resin" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1d
+			x: 2d
+			dependencies: ["5C00000000009310"]
+			id: "5C00000000009311"
+			icon: { id: "anvilcraft:hardend_resin" }
+			tasks: [{
+				id: "5C00000001009311"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:hardend_resin" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1d
+			x: 3d
+			dependencies: ["5C00000000009311"]
+			id: "5C00000000009312"
+			icon: { id: "anvilcraft:circuit_board" }
+			tasks: [{
+				id: "5C00000001009312"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:circuit_board" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 7d
+			dependencies: ["5C00000000009001"]
+			id: "5C00000000009320"
+			icon: { id: "oritech:pulverizer_block" }
+			tasks: [{
+				id: "5C00000001009320"
+				count: 1L
+				item: { count: 1 id: "oritech:pulverizer_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0d
+			x: 8d
+			dependencies: ["5C00000000009320"]
+			id: "5C00000000009321"
+			icon: { id: "mekanism:purification_chamber" }
+			tasks: [{
+				id: "5C00000001009321"
+				count: 1L
+				item: { count: 1 id: "mekanism:purification_chamber" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1d
+			x: 8d
+			dependencies: ["5C00000000009321"]
+			id: "5C00000000009322"
+			icon: { id: "mekanism:electrolytic_separator" }
+			tasks: [{
+				id: "5C00000001009322"
+				count: 1L
+				item: { count: 1 id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1d
+			x: 9d
+			dependencies: ["5C00000000009322"]
+			id: "5C00000000009323"
+			icon: { id: "mekanism:pressurized_reaction_chamber" }
+			tasks: [{
+				id: "5C00000001009323"
+				count: 1L
+				item: { count: 1 id: "mekanism:pressurized_reaction_chamber" }
 				type: "item"
 			}]
 		}

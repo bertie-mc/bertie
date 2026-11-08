@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "DDDOO",
+    "DBBRO",
+    "DMCRO",
+    "DTFTO",
+    "DDDDD"
+  ],
+  "key": {
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "R": {
+      "item": "mekanism:alloy_reinforced"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "C": {
+      "item": "mekanism:steel_casing"
+    },
+    "T": {
+      "item": "mekanism:advanced_chemical_tank"
+    },
+    "F": {
+      "item": "mekanism:advanced_fluid_tank"
+    }
+  },
+  "result": {
+    "id": "mekanism:pressurized_reaction_chamber",
+    "count": 1
+  },
+  "tier": 2
+}

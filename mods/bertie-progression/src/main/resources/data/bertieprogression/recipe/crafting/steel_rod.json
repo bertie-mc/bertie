@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I  ",
+    " I ",
+    "  I"
+  ],
+  "key": {
+    "I": {
+      "item": "mekanism:ingot_steel"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:steel_rod",
+    "count": 1
+  }
+}

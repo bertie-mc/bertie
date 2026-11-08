@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:mek_data",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "mekanism:alloys/infused"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:steel_rod"
+    },
+    "P": {
+      "item": "mekanism:basic_fluid_tank"
+    }
+  },
+  "pattern": [
+    "CSC",
+    "RPR",
+    "CSC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:advanced_fluid_tank"
+  }
+}

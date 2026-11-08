@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "berlordscarving:steel_slate"
+  },
+  "mold": {
+    "count": 1,
+    "item": "bertieprogression:steel_sheet"
+  },
+  "output": {
+    "id": "bertieprogression:steel_sheet",
+    "count": 1
+  }
+}

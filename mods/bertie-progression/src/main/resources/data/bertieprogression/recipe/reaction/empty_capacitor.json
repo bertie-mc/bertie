@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:reaction",
+  "item_input": {
+    "count": 1,
+    "item": "mekanism:elite_chemical_tank"
+  },
+  "chemical_input": {
+    "amount": 2000,
+    "chemical": "mekanism:hydrogen"
+  },
+  "fluid_input": {
+    "amount": 5000,
+    "type": "neoforge:components",
+    "fluids": "create:potion",
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "irons_spellbooks:instant_mana_one"
+      }
+    },
+    "strict": false
+  },
+  "duration": 200,
+  "item_output": {
+    "id": "anvilcraft:capacitor_empty",
+    "count": 1
+  }
+}
