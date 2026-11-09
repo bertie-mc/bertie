@@ -727,9 +727,9 @@
 			}]
 		}
 		{
-			y: 3.0d
+			y: 6.0d
 			x: 16.5d
-			dependencies: ["5C00000000009329"]
+			dependencies: ["5C0000000000932C"]
 			id: "5C0000000000932B"
 			icon: { id: "oritech:steam_engine_block" }
 			tasks: [{
@@ -742,7 +742,7 @@
 		{
 			y: 4.5d
 			x: 16.5d
-			dependencies: ["5C0000000000932B"]
+			dependencies: ["5C00000000009337"]
 			id: "5C0000000000932C"
 			icon: { id: "oritech:steam_boiler_addon" }
 			tasks: [{
@@ -1059,6 +1059,19 @@
 					item: {"id": "mekanism_extras:infinite_thermodynamic_conductor", "count": 1}
 				}
 			]
+		}
+		{
+			y: 3.0d
+			x: 16.5d
+			dependencies: ["5C00000000009329"]
+			id: "5C00000000009337"
+			icon: { id: "oritech:adamant_ingot" }
+			tasks: [{
+				id: "5C00000001009337"
+				count: 1L
+				item: { count: 1 id: "oritech:adamant_ingot" }
+				type: "item"
+			}]
 		}
 	]
 }
