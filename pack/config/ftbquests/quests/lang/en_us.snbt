@@ -2842,4 +2842,10 @@
 	quest.5C0000000000934E.title: "Elite Machine Core"
 	quest.5C0000000000934F.title: "Ultra Machine Core"
 	quest.5C00000000009350.title: "Ultimate Machine Core"
+	quest.5C00000000009351.title: "Crude Oil Bucket"
+	quest.5C00000000009352.title: "Pump"
+	quest.5C00000000009353.title: "Refinery"
+	quest.5C00000000009354.title: "Diesel Bucket"
+	quest.5C00000000009355.title: "Fuel Generator"
+	quest.5C00000000009356.title: "Bio Generator"
 }

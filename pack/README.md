@@ -33,8 +33,10 @@ excluded. Independent blocks sit outside the linked branches.
 Machines promoted to Age of Technology retain their explanatory reference nodes
 as checkmarks. Adamant branches into Centrifuge and Formulaic Assemblicator →
 Assembler → Electric Coil → Processing Unit. The plastic item chain requires
-both Biofuel and Centrifuge for Raw Biopolymer, and both PRC and Raw Biopolymer
-for Substrate. Basic Transmitters requires eight of all five transmitter families.
+Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.
+Plastic Sheet continues through Crude Oil Bucket → Pump → Refinery → Diesel
+Bucket → Fuel Generator. Bio Generator branches directly below Raw Biopolymer
+and requires it. Basic Transmitters requires eight of all five transmitter families.
 
 ## Dependency model
 
