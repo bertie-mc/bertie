@@ -66,8 +66,7 @@ public enum CarvingMaterial {
     OSMIUM("osmium", "mekanism"),
     BRASS("brass", "create"),
     STEEL("steel", "mekanism"),
-    NICKEL("nickel", "oritech"),
-    ELECTRUM("electrum", "oritech");
+    NICKEL("nickel", "oritech");
 
     public final String id;
     /** Slag material_type id (without the slag: namespace), or null if there's no Slag equivalent. */

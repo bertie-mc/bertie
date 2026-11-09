@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "bertieprogression:electrum_wire"
+    },
+    {
+      "item": "cognition:cognitive_alloy"
+    },
+    {
+      "item": "oritech:magnetic_coil"
+    },
+    {
+      "item": "bertieprogression:electrum_wire"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:electric_coil",
+      "count": 1
+    }
+  ],
+  "time": 48
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekmm:rolling_mill",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:electrum_rod"
+  },
+  "output": {
+    "id": "bertieprogression:electrum_wire",
+    "count": 4
+  }
+}

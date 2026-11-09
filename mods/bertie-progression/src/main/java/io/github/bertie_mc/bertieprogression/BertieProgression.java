@@ -83,6 +83,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(CapeSlotHandler.class);
         NeoForge.EVENT_BUS.register(SlotAudit.class);
         NeoForge.EVENT_BUS.register(BabyWitherSkeletonSpeed.class);
+        NeoForge.EVENT_BUS.register(TrollRetirement.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.altar.AltarTooltipHandler.class);
     }
 }

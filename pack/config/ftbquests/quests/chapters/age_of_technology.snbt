@@ -1073,5 +1073,205 @@
 				type: "item"
 			}]
 		}
+		{
+			dependencies: ["5C00000000009337"]
+			y: 1.5d
+			x: 16.5d
+			id: "5C00000000009338"
+			icon: { id: "oritech:centrifuge_block" }
+			tasks: [{
+				id: "5C00000001009338"
+				count: 1L
+				item: { count: 1 id: "oritech:centrifuge_block" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009337"]
+			y: 3.0d
+			x: 18.0d
+			id: "5C00000000009339"
+			icon: { id: "mekanism:formulaic_assemblicator" }
+			tasks: [{
+				id: "5C00000001009339"
+				count: 1L
+				item: { count: 1 id: "mekanism:formulaic_assemblicator" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009339"]
+			y: 3.0d
+			x: 19.5d
+			id: "5C0000000000933A"
+			icon: { id: "oritech:assembler_block" }
+			tasks: [{
+				id: "5C0000000100933A"
+				count: 1L
+				item: { count: 1 id: "oritech:assembler_block" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C0000000000933A"]
+			y: 3.0d
+			x: 21.0d
+			id: "5C0000000000933B"
+			icon: { id: "bertieprogression:electric_coil" }
+			tasks: [{
+				id: "5C0000000100933B"
+				count: 1L
+				item: { count: 1 id: "bertieprogression:electric_coil" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C0000000000933B"]
+			y: 3.0d
+			x: 22.5d
+			id: "5C0000000000933C"
+			icon: { id: "oritech:processing_unit" }
+			tasks: [{
+				id: "5C0000000100933C"
+				count: 1L
+				item: { count: 1 id: "oritech:processing_unit" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009320"]
+			y: -1.5d
+			x: 12.0d
+			id: "5C0000000000933D"
+			icon: { id: "mekanism:bio_fuel" }
+			tasks: [{
+				id: "5C0000000100933D"
+				count: 1L
+				item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(c:fuels/bio)", "minecraft:custom_name": "{\"text\": \"Biofuel\", \"italic\": false}"}}
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C0000000000933D", "5C00000000009338"]
+			y: -1.5d
+			x: 15.0d
+			id: "5C0000000000933E"
+			icon: { id: "oritech:raw_biopolymer" }
+			tasks: [{
+				id: "5C0000000100933E"
+				count: 1L
+				item: { count: 1 id: "oritech:raw_biopolymer" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009323", "5C0000000000933E"]
+			y: -3.0d
+			x: 13.5d
+			id: "5C0000000000933F"
+			icon: { id: "mekanism:substrate" }
+			tasks: [{
+				id: "5C0000000100933F"
+				count: 1L
+				item: { count: 1 id: "mekanism:substrate" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C0000000000933F"]
+			y: -3.0d
+			x: 15.0d
+			id: "5C00000000009340"
+			icon: { id: "mekanism:hdpe_pellet" }
+			tasks: [{
+				id: "5C00000001009340"
+				count: 1L
+				item: { count: 1 id: "mekanism:hdpe_pellet" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009340"]
+			y: -3.0d
+			x: 16.5d
+			id: "5C00000000009341"
+			icon: { id: "mekanism:hdpe_rod" }
+			tasks: [{
+				id: "5C00000001009341"
+				count: 1L
+				item: { count: 1 id: "mekanism:hdpe_rod" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009341"]
+			y: -3.0d
+			x: 18.0d
+			id: "5C00000000009342"
+			icon: { id: "mekanism:hdpe_stick" }
+			tasks: [{
+				id: "5C00000001009342"
+				count: 1L
+				item: { count: 1 id: "mekanism:hdpe_stick" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009342"]
+			y: -3.0d
+			x: 19.5d
+			id: "5C00000000009343"
+			icon: { id: "oritech:plastic_sheet" }
+			tasks: [{
+				id: "5C00000001009343"
+				count: 1L
+				item: { count: 1 id: "oritech:plastic_sheet" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009000"]
+			y: -1.5d
+			x: 6.0d
+			id: "5C00000000009344"
+			icon: { id: "mekanism:basic_universal_cable" }
+			tasks: [
+				{
+					id: "5C00000001009344"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: { id: "mekanism:basic_universal_cable" count: 1 }
+				}
+				{
+					id: "5C00000002009344"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: { id: "mekanism:basic_mechanical_pipe" count: 1 }
+				}
+				{
+					id: "5C00000003009344"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: { id: "mekanism:basic_pressurized_tube" count: 1 }
+				}
+				{
+					id: "5C00000004009344"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: { id: "mekanism:basic_logistical_transporter" count: 1 }
+				}
+				{
+					id: "5C00000005009344"
+					type: "item"
+					count: 8L
+					consume_items: false
+					item: { id: "mekanism:basic_thermodynamic_conductor" count: 1 }
+				}
+			]
+		}
 	]
 }

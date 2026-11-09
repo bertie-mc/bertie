@@ -2035,12 +2035,6 @@
 	quest.1C00000000001029.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C0000000000102A.title: "Soul Sucker Leather"
 	quest.1C0000000000102A.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000102B.title: "Forest Troll Leather"
-	quest.1C0000000000102B.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000102C.title: "Frost Troll Leather"
-	quest.1C0000000000102C.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000102D.title: "Mountain Troll Leather"
-	quest.1C0000000000102D.quest_desc: ["Leather, hides, skins and fur"]
 	quest.1C0000000000102E.title: "Treated Leather"
 	quest.1C0000000000102E.quest_desc: ["Leather processing"]
 	quest.1C0000000000102F.title: "Tanned Leather"
@@ -2823,4 +2817,17 @@
 	quest.5C00000000009335.title: "8 Cosmic Transmitters"
 	quest.5C00000000009336.title: "8 Infinite Transmitters"
 	quest.5C00000000009337.title: "Adamant Ingot"
+	quest.5C00000000009338.title: "Centrifuge"
+	quest.5C00000000009339.title: "Formulaic Assemblicator"
+	quest.5C0000000000933A.title: "Assembler"
+	quest.5C0000000000933B.title: "Electric Coil"
+	quest.5C0000000000933C.title: "Processing Unit"
+	quest.5C0000000000933D.title: "Biofuel"
+	quest.5C0000000000933E.title: "Raw Biopolymer"
+	quest.5C0000000000933F.title: "Substrate"
+	quest.5C00000000009340.title: "HDPE Pellet"
+	quest.5C00000000009341.title: "HDPE Rod"
+	quest.5C00000000009342.title: "PlaStick"
+	quest.5C00000000009343.title: "Plastic Sheet"
+	quest.5C00000000009344.title: "8 Basic Transmitters"
 }

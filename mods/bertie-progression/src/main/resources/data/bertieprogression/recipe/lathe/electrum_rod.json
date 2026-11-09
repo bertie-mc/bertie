@@ -1,0 +1,11 @@
+{
+  "type": "mekmm:lathe",
+  "input": {
+    "count": 1,
+    "item": "oritech:electrum_ingot"
+  },
+  "output": {
+    "id": "bertieprogression:electrum_rod",
+    "count": 1
+  }
+}

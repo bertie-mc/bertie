@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "anvilcraft:resin"
+  },
+  "mold": {
+    "count": 1,
+    "item": "anvilcraft:hardend_resin"
+  },
+  "output": {
+    "id": "anvilcraft:hardend_resin",
+    "count": 1
+  }
+}

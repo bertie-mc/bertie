@@ -103,7 +103,8 @@ Its scales smoothly exchange their eight color palettes over a 24-second animati
 
 Iron, Copper, Golden and Brass Sheets use Bertie Progression items instead of
 Create's material sheets. Recipes, plate tags and quest objectives use the new
-items. Royal Steel, Osmium, Deep Alloy, Obsidiansteel, Steel, Nickel and Electrum also have Sheets.
+items. Royal Steel, Osmium, Deep Alloy, Obsidiansteel, Steel and Nickel also have Sheets.
+Electrum provides Rod and Wire forms; its Sheet and Slates are withdrawn.
 Sturdy Sheet and its incomplete assembly item retain their native items and art;
 both Obsidian Dust deployment steps in its assembly now use Cognitive Flux.
 
@@ -111,12 +112,13 @@ Each small material slate contains four ingots. Create pressing, AnvilCraft
 stamping and the Mekanism More Machines Stamper produce one Sheet from a small
 slate. The Stamper uses a matching Sheet as its reusable mould. Copper Rod is a
 dedicated item: one Copper Ingot makes one on the Lathe. Steel Rod has the same
-Lathe yield. Three matching ingots diagonally craft one Rod.
+Lathe yield. Electrum Rod uses the same 1:1 Lathe route. Three matching ingots
+diagonally craft one Rod.
 
-Copper Wire uses one Rod in a single Create sequence: press, press, saw, saw,
+Copper and Electrum Wire use one matching Rod in a single Create sequence: press, press, saw, saw,
 press. It produces one guaranteed Wire plus either another Wire (30%) or a
-Copper Ingot (70%). The Lathe's 1:1 yield prevents recycling that Ingot return
-into surplus Copper. Rolling Mill consumes one Copper Rod for four Wires.
+matching Ingot (70%). The Lathe's 1:1 yield prevents recycling that Ingot return
+into surplus material. Rolling Mill consumes one matching Rod for four Wires.
 EMI keeps the five-step assembly and shows its guaranteed output above the
 secondary choice. Basic Rod recipes run bottom-left to top-right in the viewer.
 
@@ -128,6 +130,17 @@ and the relevant circuits, alloys and machine components.
 Both use Motor at row 4, column 2 and AnvilCraft Circuit Board at row 2, column 4.
 Circuit Board, Oritech Magnetic Coil and Oritech Motor use 5×5 Nether-table
 recipes. Bound Soul alternatives produce 32 Boards, 12 Coils or three Motors.
+Assembler alternatives produce one Board, Coil or Motor; their Bound Soul
+variants produce sixteen Boards, six Coils or two Motors. Electric Coil uses
+two Electrum Wires, Cognitive Alloy and Magnetic Coil. Processing Unit uses
+Adamant, Large Redstone Slate, Electric Coil and Plastic Sheet.
+
+Formulaic Assemblicator, Oritech Assembler and Centrifuge use 5×5 Nether-table
+recipes. Assembler consumes two Formulaic Assemblicators. Centrifuge uses three
+Adamant Ingots across the bottom centre, four Deep Alloy Sheets on the lower
+sides and six Copper Sheets above. Adamant crafts from four Diamonds and three
+Platinum Ingots for two; Foundry combines Platinum and Diamond for one. Its
+Create mixing and Metallurgic Infuser dust routes are disabled.
 
 Ordinary raw metals enrich into two dust per raw item, or eighteen per raw
 storage block. Purification produces three clumps per raw item, or twenty-seven
@@ -150,7 +163,8 @@ Purification Chamber and Electrolytic Separator use 5×5 Nether recipes. The
 Separator contains a Motor rather than a tank. Pulveriser uses two Grindstones,
 two Mechanical Saws and two Motors. Powered Furnace uses Industrial Glass and
 three Magnetic Coils. Charger uses Glass, Copper Rods, Magnetoelectric Core and
-Deep Alloy Sheets in an ordinary 3×3 craft.
+Deep Alloy Sheets in an ordinary 3×3 craft. Its top row is Deep Alloy Sheet,
+Glass, Deep Alloy Sheet.
 
 Primitive Machine Core uses eight Andesite Casings around Bound Soul Ingot.
 Basic Machine Core uses eight ordinary Steel Sheets around the Primitive Core.
@@ -167,10 +181,33 @@ and three Silver for four. Clibano combines Brass and Silver for one. Create
 mixing is disabled; the separate Gold/Redstone infusion route remains available.
 
 Basic, Lava and Bio Generators use 5×5 Nether recipes. Basic consumes one filled
-Capacitor and one Machine Casing; Lava consumes one Capacitor, with Electrum Sheets and Machine Casing. Bio uses
-Electrum and Deep Alloy Sheets, Biopolymer, one Coil and one Basic Generator.
-Steam Engine uses a 5×5 Nether recipe with Steel, Electrum, Copper and Deep Alloy
-Sheets, four filled Capacitors, three Coils, one Motor and one Basic Generator.
+Capacitor and one Machine Casing. Lava and Bio use five Copper Sheets across
+the top, three Electrum Rods down each side and five Deep Alloy Sheets across
+the bottom. Lava retains one Capacitor, Machine Casing and six Coils; Bio retains
+Biopolymer, one Coil and one Basic Generator. Steam Engine uses Steel, Copper
+and Deep Alloy Sheets, four filled Capacitors, three Coils, one Motor and one
+Basic Generator. Steam Boiler Addon uses five Steel Sheets, Coal Dust, two
+Adamant Ingots and any full plating block.
+
+## Plastic processing
+
+Polymer Resin's two fluid Centrifuge routes and manual craft use AnvilCraft
+Resin instead of Sand. Smelting/blasting Polymer Resin produces one Raw
+Biopolymer; Centrifuge processing produces two with Water or four with Mineral
+Slurry. PRC's Water/Hydrogen Substrate route consumes two Raw Biopolymer and
+retains its other amounts and outputs.
+
+Two vertically stacked HDPE Pellets craft one HDPE Rod. Three vertically stacked
+Rods craft one PlaStick; Lathe converts one Rod to one PlaStick. Four PlaSticks
+in a shaped 2×2 craft produce one Oritech Plastic Sheet. Stamper converts one
+PlaStick to one Plastic Sheet, or one Resin to one Hardened Resin; both retain
+one matching output item as a reusable mould. Existing direct Raw Biopolymer
+Centrifuge routes and Mekanism HDPE Sheet production remain available.
+
+Ice & Fire Trolls cannot enter a server level, including previously saved mobs.
+Their items are retired except Troll Banner Pattern, which crafts shapelessly
+from Paper and Ancient Forgemastery Ravager Horn. Retained Troll Hide ingredients
+and chest rewards use Quark Ravager Hide. Other Ice & Fire mobs remain available.
 
 Charge Mix smelts 1:1 into Silicon in Powered Furnace and Energized Smelter,
 including its Smelting Factories. The blasting route remains, and ordinary

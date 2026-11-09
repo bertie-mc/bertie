@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " GGG ",
+    "CCRCC",
+    "CEKEC",
+    "DMBMD",
+    "DAAAD"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "E": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:centrifuge_block",
+    "count": 1
+  },
+  "tier": 2
+}

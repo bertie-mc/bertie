@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "mekanism:hdpe_stick"
+  },
+  "mold": {
+    "count": 1,
+    "item": "oritech:plastic_sheet"
+  },
+  "output": {
+    "id": "oritech:plastic_sheet",
+    "count": 1
+  }
+}

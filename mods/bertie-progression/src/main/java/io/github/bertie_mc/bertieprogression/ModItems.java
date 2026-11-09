@@ -105,7 +105,10 @@ public final class ModItems {
     public static final DeferredItem<Item> COPPER_ROD = simple("copper_rod", 64);
     public static final DeferredItem<Item> INCOMPLETE_COPPER_WIRE = simple("incomplete_copper_wire", 64);
     public static final DeferredItem<Item> COPPER_WIRE = simple("copper_wire", 64);
-    public static final DeferredItem<Item> ELECTRUM_SHEET = simple("electrum_sheet", 64);
+    public static final DeferredItem<Item> ELECTRUM_ROD = simple("electrum_rod", 64);
+    public static final DeferredItem<Item> INCOMPLETE_ELECTRUM_WIRE = simple("incomplete_electrum_wire", 64);
+    public static final DeferredItem<Item> ELECTRUM_WIRE = simple("electrum_wire", 64);
+    public static final DeferredItem<Item> ELECTRIC_COIL = simple("electric_coil", 64);
     public static final DeferredItem<Item> NICKEL_SHEET = simple("nickel_sheet", 64);
     public static final DeferredItem<Item> STEEL_ROD = simple("steel_rod", 64);
     public static final DeferredItem<Item> STEEL_SHEET = simple("steel_sheet", 64);

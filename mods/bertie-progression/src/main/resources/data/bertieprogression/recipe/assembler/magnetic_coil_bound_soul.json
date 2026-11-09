@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "bertieprogression:copper_wire"
+    },
+    {
+      "item": "mythsandlegends:bound_soul_ingot"
+    },
+    {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    {
+      "item": "bertieprogression:copper_wire"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:magnetic_coil",
+      "count": 6
+    }
+  ],
+  "time": 48
+}

@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "oritech:magnetic_coil"
+    },
+    {
+      "item": "cognition:cognitive_alloy"
+    },
+    {
+      "item": "oritech:adamant_ingot"
+    },
+    {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:motor",
+      "count": 2
+    }
+  ],
+  "time": 48
+}

@@ -71,5 +71,8 @@
   "item.bertieprogression.nickel_sheet": "Nickel Sheet",
   "item.bertieprogression.copper_wire": "Copper Wire",
   "item.bertieprogression.incomplete_copper_wire": "Incomplete Copper Wire",
-  "item.bertieprogression.electrum_sheet": "Electrum Sheet"
+  "item.bertieprogression.electrum_rod": "Electrum Rod",
+  "item.bertieprogression.electrum_wire": "Electrum Wire",
+  "item.bertieprogression.incomplete_electrum_wire": "Incomplete Electrum Wire",
+  "item.bertieprogression.electric_coil": "Electric Coil"
 }

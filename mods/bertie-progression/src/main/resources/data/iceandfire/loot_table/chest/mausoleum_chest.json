@@ -38,7 +38,7 @@
         },
         {
           "type": "item",
-          "name": "iceandfire:troll_leather_frost",
+          "name": "quark:ravager_hide",
           "functions": [
             {
               "function": "set_count",
@@ -135,21 +135,6 @@
             }
           ],
           "weight": 5
-        },
-        {
-          "type": "item",
-          "name": "iceandfire:troll_tusk",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
-              }
-            }
-          ],
-          "weight": 14
         },
         {
           "type": "item",

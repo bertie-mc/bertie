@@ -115,4 +115,13 @@ MIT License: Copyright (c) 2017-2025 Aidan C. Brady. The MIT permission and
 disclaimer reproduced above apply to these derivatives as well.
 Source and licence: https://github.com/mekanism/Mekanism/blob/1.21.x/LICENSE
 
+THIRD-PARTY DERIVATIVE WORK - ELECTRIC COIL
+
+  assets/bertieprogression/textures/item/electric_coil.png
+
+This recolors the Magnetic Coil sprite from Oritech 1.2.7, by Rearth, using
+Electrum-colored windings and a darker exposed core. Oritech declares CC0-1.0
+in its installed NeoForge metadata. Source: https://github.com/Rearth/Oritech
+Licence: https://creativecommons.org/publicdomain/zero/1.0/
+
 Every other asset here is original.

@@ -1,33 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "b": {
-      "tag": "oritech:plating"
-    },
-    "c": {
-      "tag": "c:ingots/copper"
-    },
-    "f": {
-      "item": "mekanism:basic_mechanical_pipe"
-    },
-    "s": {
-      "item": "oritech:adamant_ingot"
-    }
-  },
   "pattern": [
-    "fff",
-    "fcf",
-    "sbs"
+    "SSS",
+    "SCS",
+    "APA"
   ],
-  "result": {
-    "count": 1,
-    "id": "oritech:steam_boiler_addon"
-  },
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "mekanism"
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "C": {
+      "tag": "c:dusts/coal"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "P": {
+      "tag": "oritech:plating"
     }
-  ]
+  },
+  "result": {
+    "id": "oritech:steam_boiler_addon",
+    "count": 1
+  }
 }

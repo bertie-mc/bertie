@@ -1,11 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GGG",
+    "DGD",
     "RCR",
     "DDD"
   ],
   "key": {
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
     "G": {
       "item": "minecraft:glass"
     },
@@ -14,9 +17,6 @@
     },
     "C": {
       "item": "anvilcraft:magnetoelectric_core"
-    },
-    "D": {
-      "item": "bertieprogression:deep_alloy_sheet"
     }
   },
   "result": {

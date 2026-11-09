@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " DP",
+    "DPD",
+    "PD "
+  ],
+  "key": {
+    "D": {
+      "tag": "c:gems/diamond"
+    },
+    "P": {
+      "tag": "c:ingots/platinum"
+    }
+  },
+  "result": {
+    "id": "oritech:adamant_ingot",
+    "count": 2
+  }
+}

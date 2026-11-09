@@ -752,34 +752,6 @@
       "required": false
     },
     {
-      "id": "iceandfire:troll_weapon_axe",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_column",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_column_forest",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_column_frost",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_hammer",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_trunk",
-      "required": false
-    },
-    {
-      "id": "iceandfire:troll_weapon_trunk_frost",
-      "required": false
-    },
-    {
       "id": "iceandfire:tide_trident",
       "required": false
     },

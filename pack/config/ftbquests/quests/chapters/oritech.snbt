@@ -67,21 +67,10 @@
 		}
 		{
 			id: "62EB2969EF64354C"
-			icon: {
-				id: "oritech:assembler_block"
-			}
-			tasks: [
-				{
-					id: "621CFA9F9DD33F32"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:assembler_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "621CFA9F9DD33F32"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: 1.500d
 		}
@@ -113,21 +102,10 @@
 		}
 		{
 			id: "624BC5B6C71FD915"
-			icon: {
-				id: "oritech:centrifuge_block"
-			}
-			tasks: [
-				{
-					id: "62700DE726FF8701"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:centrifuge_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62700DE726FF8701"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			x: 0.000d
 			y: -7.500d

@@ -1,20 +1,23 @@
 {
   "type": "avaritia:shaped_table",
   "pattern": [
-    "EEEEE",
-    "EKCKE",
-    "EKMKE",
-    "EKAKE",
+    "CCCCC",
+    "RKEKR",
+    "RKMKR",
+    "RKAKR",
     "DDDDD"
   ],
   "key": {
-    "E": {
-      "item": "bertieprogression:electrum_sheet"
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:electrum_rod"
     },
     "K": {
       "item": "oritech:magnetic_coil"
     },
-    "C": {
+    "E": {
       "item": "anvilcraft:magnetoelectric_core"
     },
     "M": {

@@ -30,6 +30,12 @@ Multiblock components stay in their structure quest. Links follow the nearest ma
 machine in the original construction recipes, with recycling loops and transitive duplicates
 excluded. Independent blocks sit outside the linked branches.
 
+Machines promoted to Age of Technology retain their explanatory reference nodes
+as checkmarks. Adamant branches into Centrifuge and Formulaic Assemblicator →
+Assembler → Electric Coil → Processing Unit. The plastic item chain requires
+both Biofuel and Centrifuge for Raw Biopolymer, and both PRC and Raw Biopolymer
+for Substrate. Basic Transmitters requires eight of all five transmitter families.
+
 ## Dependency model
 
 Each file under [`deps/components/`](../deps/components) records one intentional logical

@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "oritech:adamant_ingot"
+    },
+    {
+      "item": "berlordscarving:redstone_big_slate"
+    },
+    {
+      "item": "bertieprogression:electric_coil"
+    },
+    {
+      "item": "oritech:plastic_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:processing_unit",
+      "count": 1
+    }
+  ],
+  "time": 96
+}

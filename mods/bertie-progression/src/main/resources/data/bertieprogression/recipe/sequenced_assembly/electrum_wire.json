@@ -1,0 +1,91 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "bertieprogression:electrum_rod"
+  },
+  "transitional_item": {
+    "id": "bertieprogression:incomplete_electrum_wire"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "bertieprogression:electrum_wire",
+      "count": 1,
+      "chance": 0.3
+    },
+    {
+      "id": "oritech:electrum_ingot",
+      "count": 1,
+      "chance": 0.7
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_electrum_wire"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_electrum_wire"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "processing_time": 100
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "processing_time": 100
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_electrum_wire"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_electrum_wire"
+        }
+      ]
+    }
+  ]
+}

@@ -138,7 +138,9 @@ existing Deorum Ingot, eight Arcane Essence and four Arcane spirits. Arcane Varn
 Terracotta uses two Terracotta and returns four, retaining one Alchemical Calx and two
 Arcane spirits. Arcane Cloth uses a 3x3 `SSS / LLL / SSS` craft: six Soulwoven Silk and
 three Small Arcane Slates produce four cloth. Dark Metal Armor Plates retain their shaped
-craft, using any Forest, Frost or Mountain Troll Leather in place of Monster Skin.
+craft, using Ravager Hide in place of Monster Skin. Ice & Fire Troll mobs and
+their related items are retired except their banner pattern, made from Paper
+and Ravager Horn.
 
 Armour progression uses the following routes:
 
@@ -148,7 +150,7 @@ Armour progression uses the following routes:
 | Terrible | Smithing table | Matching Spiny Shell armour, the Terrible template and fin |
 | Abyssal | Smithing table | Matching Terrible armour, the Abyssal template and Abyssal Amethyst |
 | Soulstained Steel | Malum Spirit Altar | Matching Ironshade armour, 12 Soulstained Steel Plating, 2 Soul Infused Iron Ingots, 1 Bound Soul Ingot, 6 Mnemonic Fragments and 32 Twisted Rock; 64 Earthen, 48 Wicked and 48 Arcane spirits |
-| Dark Metal | Tier-1 Hephaestus Forge | Matching Ironshade armour; 2 Dark Metal Armor Plates, 1 Small Knightmetal Slate, 4 Mountain Troll Leather and the Dark Metal template; 10000 Blood, 8 Souls and 300 Aureal |
+| Dark Metal | Tier-1 Hephaestus Forge | Matching Ironshade armour; 2 Dark Metal Armor Plates, 1 Small Knightmetal Slate, 4 Ravager Hide and the Dark Metal template; 10000 Blood, 8 Souls and 300 Aureal |
 | Soulhunter | Malum Spirit Altar | Matching Soulpiercer armour; 16 Soulwoven Silk, 6 Arcane Cloth, 2 Soul Infused Iron Ingots, 1 Bound Soul Ingot, 8 Innocent Souls and 3 Roadrunner Feathers; 64 Aerial, 48 Sacred and 48 Arcane spirits |
 | Nightmare Mantle of the Night | Tier-1 Hephaestus Forge | Matching Soulpiercer armour; 1 Dark Metal Armor Plate (Nightmare Stalker Skull for the helmet), 1 Nightmare Claw, 2 Arcane Cloth, 3 Nightmare Fuel and 1 Dark Metal template; 500 Aureal, 5000 Blood and 500 Ink |
 
@@ -345,5 +347,5 @@ manual; confirm the current commit's relevant CI jobs are green before tagging.
 Released into the public domain under **The Unlicense** â€” see [UNLICENSE](UNLICENSE).
 
 This covers the original code and assets here. It does not cover the mods this one
-depends on or interoperates with; those keep their own licences and none of their
-content is redistributed in this repository.
+depends on or interoperates with; those keep their own licences. Third-party
+derivative assets and their source licences are listed in `NOTICE`.

@@ -641,42 +641,6 @@
 			y: 9.5d
 		}
 		{
-			icon: { count: 1 id: "iceandfire:troll_leather_forest" }
-			id: "1C0000000000102B"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100102B"
-				item: { count: 1 id: "iceandfire:troll_leather_forest" }
-				type: "item"
-			}]
-			x: 28.5d
-			y: 9.5d
-		}
-		{
-			icon: { count: 1 id: "iceandfire:troll_leather_frost" }
-			id: "1C0000000000102C"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100102C"
-				item: { count: 1 id: "iceandfire:troll_leather_frost" }
-				type: "item"
-			}]
-			x: 30.0d
-			y: 9.5d
-		}
-		{
-			icon: { count: 1 id: "iceandfire:troll_leather_mountain" }
-			id: "1C0000000000102D"
-			tasks: [{
-				count: 1L
-				id: "1C0000000100102D"
-				item: { count: 1 id: "iceandfire:troll_leather_mountain" }
-				type: "item"
-			}]
-			x: 31.5d
-			y: 9.5d
-		}
-		{
 			dependencies: ["1C00000000001020"]
 			icon: { count: 1 id: "twilightforest:treated_leather" }
 			id: "1C0000000000102E"

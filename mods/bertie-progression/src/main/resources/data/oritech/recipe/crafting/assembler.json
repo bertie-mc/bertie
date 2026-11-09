@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CCDDD",
+    "CAAAD",
+    "CFKFA",
+    "CMRMA",
+    "DDDDD"
+  ],
+  "key": {
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "F": {
+      "item": "mekanism:formulaic_assemblicator"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "R": {
+      "item": "create:mechanical_arm"
+    }
+  },
+  "result": {
+    "id": "oritech:assembler_block",
+    "count": 1
+  },
+  "tier": 2
+}

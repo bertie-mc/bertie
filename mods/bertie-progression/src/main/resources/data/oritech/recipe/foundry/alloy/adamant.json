@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/platinum"
+    },
+    {
+      "tag": "c:gems/diamond"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:adamant_ingot",
+      "count": 1
+    }
+  ],
+  "time": 80
+}

@@ -3628,18 +3628,15 @@ for _slot in ("helmet", "chestplate", "leggings", "boots"):
     write(f"{RIT}/dark_metal_{_slot}.json",
           ritual(f"mythsandlegends:ironshade_{_slot}",
               [("born_in_chaos_v1:armor_plate_from_dark_metal", 2),
-               ("berlordscarving:knightmetal_slate", 1), ("iceandfire:troll_leather_mountain", 4),
+               ("berlordscarving:knightmetal_slate", 1), ("quark:ravager_hide", 4),
                ("born_in_chaos_v1:dark_upgrade", 1)],
               f"born_in_chaos_v1:dark_metal_armor_{_slot}", tier=1,
               essences={"aureal": 300, "blood": 10000, "souls": 8}))
 
-# Dark Metal plates accept all three Troll Leather variants in the original shape.
-write("data/bertieprogression/tags/item/troll_leathers.json", {"values": [
-    f"iceandfire:troll_leather_{_kind}" for _kind in ("forest", "frost", "mountain")
-]})
+# Dark Metal plates use Ravager Hide in the original shape.
 write("data/born_in_chaos_v1/recipe/armor_plate_from_dark_metal_k.json",
       shaped(["aab", "bbb", "baa"],
-             {"a": "#bertieprogression:troll_leathers", "b": "born_in_chaos_v1:dark_metal_ingot"},
+             {"a": "quark:ravager_hide", "b": "born_in_chaos_v1:dark_metal_ingot"},
              "born_in_chaos_v1:armor_plate_from_dark_metal"))
 
 # Armour upgrades use matching parent pieces and retain stock output spell containers.

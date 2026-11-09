@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  I",
+    " I ",
+    "I  "
+  ],
+  "key": {
+    "I": {
+      "item": "oritech:electrum_ingot"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:electrum_rod",
+    "count": 1
+  }
+}

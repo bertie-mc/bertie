@@ -74,7 +74,6 @@ SLATE_ONLY = {
     "brass":            ("create:brass_ingot", "create", "Brass"),
     "steel":            ("mekanism:ingot_steel", "mekanism", "Steel"),
     "nickel":           ("oritech:nickel_ingot", "oritech", "Nickel"),
-    "electrum":         ("oritech:electrum_ingot", "oritech", "Electrum"),
 }
 for _id, (_src, _mod, _disp) in SLATE_ONLY.items():
     MATERIALS[_id] = (None, 2, None, None, False, _disp)

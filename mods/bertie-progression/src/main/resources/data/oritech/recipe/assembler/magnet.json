@@ -1,17 +1,24 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "oritech:assembler",
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "item": "bertieprogression:copper_wire"
+    },
+    {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    {
+      "item": "anvilcraft:magnet_ingot"
+    },
+    {
+      "item": "bertieprogression:copper_wire"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "results": [
+    {
+      "id": "oritech:magnetic_coil",
+      "count": 1
+    }
+  ],
+  "time": 48
 }

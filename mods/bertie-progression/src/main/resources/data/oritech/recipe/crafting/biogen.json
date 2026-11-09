@@ -1,15 +1,18 @@
 {
   "type": "avaritia:shaped_table",
   "pattern": [
-    "EEEEE",
-    "EBBBE",
-    "EBKBE",
-    "DBGBD",
+    "CCCCC",
+    "RBBBR",
+    "RBKBR",
+    "RBGBR",
     "DDDDD"
   ],
   "key": {
-    "E": {
-      "item": "bertieprogression:electrum_sheet"
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:electrum_rod"
     },
     "B": {
       "item": "oritech:raw_biopolymer"
@@ -17,11 +20,11 @@
     "K": {
       "item": "oritech:magnetic_coil"
     },
-    "D": {
-      "item": "bertieprogression:deep_alloy_sheet"
-    },
     "G": {
       "item": "oritech:basic_generator_block"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
     }
   },
   "result": {

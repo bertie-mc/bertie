@@ -1,33 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "b": {
-      "tag": "c:silicon"
-    },
-    "c": {
-      "item": "mekanism:basic_mechanical_pipe"
-    },
-    "f": {
-      "tag": "c:dusts/coal"
-    },
-    "s": {
-      "item": "oritech:adamant_ingot"
-    }
-  },
-  "pattern": [
-    "fff",
-    "fcf",
-    "sbs"
-  ],
-  "result": {
-    "count": 1,
-    "id": "oritech:steam_boiler_addon"
-  },
+  "type": "minecraft:crafting_shapeless",
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mekanism"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

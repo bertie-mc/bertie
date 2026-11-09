@@ -2,7 +2,7 @@
   "type": "avaritia:shaped_table",
   "tier": 2,
   "pattern": [
-    "SSESS",
+    "SSSSS",
     "SAMAS",
     "CAGAC",
     "CKKKC",
@@ -11,9 +11,6 @@
   "key": {
     "S": {
       "item": "bertieprogression:steel_sheet"
-    },
-    "E": {
-      "item": "bertieprogression:electrum_sheet"
     },
     "C": {
       "item": "bertieprogression:copper_sheet"
