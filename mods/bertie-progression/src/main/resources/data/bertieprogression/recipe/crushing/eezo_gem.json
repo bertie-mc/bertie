@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:eezo_gem"
+  },
+  "output": {
+    "id": "bertieprogression:eezo_dust",
+    "count": 1
+  }
+}

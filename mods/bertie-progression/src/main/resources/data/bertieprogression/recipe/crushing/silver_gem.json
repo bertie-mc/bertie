@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:silver_gem"
+  },
+  "output": {
+    "id": "bertieprogression:silver_dust",
+    "count": 1
+  }
+}

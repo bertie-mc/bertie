@@ -1,28 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "pattern": [
+    "BBB",
+    "BTB",
+    "ESE"
+  ],
   "key": {
-    "b": {
-      "tag": "c:silicon"
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
     },
-    "c": {
-      "item": "mekanism:basic_mechanical_pipe"
+    "T": {
+      "item": "create:fluid_tank"
     },
-    "f": {
-      "tag": "c:carbon_fibre"
-    },
-    "s": {
+    "E": {
       "tag": "c:ingots/electrum"
+    },
+    "S": {
+      "tag": "c:silicon"
     }
   },
-  "pattern": [
-    "fff",
-    "fcf",
-    "sbs"
-  ],
   "result": {
-    "count": 1,
-    "id": "oritech:machine_fluid_addon"
+    "id": "oritech:machine_fluid_addon",
+    "count": 1
   },
   "neoforge:conditions": [
     {

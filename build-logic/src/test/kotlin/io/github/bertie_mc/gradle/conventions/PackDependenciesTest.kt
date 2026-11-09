@@ -10,6 +10,8 @@ import io.github.bertie_mc.gradle.model.ModrinthArtifactSource
 import org.gradle.api.artifacts.ExternalModuleDependency
 import org.gradle.api.artifacts.ModuleDependency
 import org.gradle.testfixtures.ProjectBuilder
+import org.gradle.testfixtures.internal.ProjectBuilderImpl
+import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Test
@@ -22,9 +24,23 @@ class PackDependenciesTest {
     @TempDir
     lateinit var temporaryDirectory: Path
 
+    private val projects = mutableListOf<org.gradle.api.Project>()
+
+    private fun newProject() =
+        ProjectBuilder
+            .builder()
+            .withProjectDir(temporaryDirectory.toFile())
+            .build()
+            .also(projects::add)
+
+    @AfterEach
+    fun closeProjects() {
+        projects.asReversed().forEach(ProjectBuilderImpl::stop)
+    }
+
     @Test
     fun `pack buckets consume only direct external and project artifacts`() {
-        val root = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val root = newProject()
         val ownedModDirectory = Files.createDirectory(temporaryDirectory.resolve("owned-mod"))
         ProjectBuilder
             .builder()
@@ -50,7 +66,7 @@ class PackDependenciesTest {
 
     @Test
     fun `component bucket requests the locked file type for native pack roots`() {
-        val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val project = newProject()
         val bucket = project.configurations.create("packComponents")
         val dependency =
             project.dependencies.create("maven.modrinth:resourcepack:1")
@@ -93,7 +109,7 @@ class PackDependenciesTest {
 
     @Test
     fun `packaging provider stays lazy and preserves artifact metadata`() {
-        val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val project = newProject()
         val repository = Files.createDirectory(temporaryDirectory.resolve("repository"))
         Files.writeString(repository.resolve("artifact-1.zip"), "zip payload")
         project.repositories.flatDir { dirs(repository.toFile()) }
@@ -146,7 +162,7 @@ class PackDependenciesTest {
 
     @Test
     fun `packaging emits every installation kind of a native pack`() {
-        val project = ProjectBuilder.builder().withProjectDir(temporaryDirectory.toFile()).build()
+        val project = newProject()
         val repository = Files.createDirectory(temporaryDirectory.resolve("datapack-repository"))
         Files.writeString(repository.resolve("artifact-1.zip"), "zip payload")
         project.repositories.flatDir { dirs(repository.toFile()) }

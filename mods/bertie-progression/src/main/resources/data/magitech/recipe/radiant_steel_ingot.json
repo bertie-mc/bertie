@@ -1,0 +1,37 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "magitech:nether_star_brilliance"
+    },
+    {
+      "item": "mekanism_extras:alloy_radiance"
+    },
+    {
+      "item": "mekanism_extras:alloy_radiance"
+    },
+    {
+      "item": "malum:block_of_brilliance"
+    },
+    {
+      "item": "magitech:ender_metal_ingot"
+    },
+    {
+      "item": "magitech:ender_metal_ingot"
+    },
+    {
+      "item": "magitech:glace_crystal"
+    },
+    {
+      "item": "anvilcraft:cursed_gold_block"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "irons_spellbooks:timeless_slurry",
+    "amount": 1000
+  },
+  "result": {
+    "id": "magitech:radiant_steel_ingot",
+    "count": 2
+  }
+}

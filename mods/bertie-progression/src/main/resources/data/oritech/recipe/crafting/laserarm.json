@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "BLCLB",
+    "BFRFB",
+    "BFKFB",
+    "BMAMB",
+    "DDDDD"
+  ],
+  "key": {
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "L": {
+      "item": "oritech:enderic_lens"
+    },
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "F": {
+      "tag": "c:carbon_fibre"
+    },
+    "R": {
+      "item": "bertieprogression:electrum_rod"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "A": {
+      "item": "mekanism_extras:absolute_control_circuit"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:laser_arm_block",
+    "count": 1
+  },
+  "tier": 2
+}

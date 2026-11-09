@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:naquadah_gem"
+  },
+  "output": {
+    "id": "mekanism_extras:dust_naquadah",
+    "count": 1
+  }
+}

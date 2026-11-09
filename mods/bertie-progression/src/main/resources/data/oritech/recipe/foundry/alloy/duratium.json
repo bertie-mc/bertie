@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/netherite"
+    },
+    {
+      "item": "irons_spellbooks:mithril_ingot"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:duratium_ingot"
+    }
+  ],
+  "time": 80
+}

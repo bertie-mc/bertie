@@ -7,7 +7,7 @@
 		id: "oritech:assembler_block"
 	}
 	id: "6200000000000000"
-	order_index: 14
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{
@@ -152,21 +152,10 @@
 		}
 		{
 			id: "628B454043ECDE97"
-			icon: {
-				id: "oritech:foundry_block"
-			}
-			tasks: [
-				{
-					id: "62819B06C76D379F"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:foundry_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62819B06C76D379F"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: 4.500d
 		}

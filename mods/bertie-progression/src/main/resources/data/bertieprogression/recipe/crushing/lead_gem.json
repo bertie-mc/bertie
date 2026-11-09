@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:lead_gem"
+  },
+  "output": {
+    "id": "mekanism:dust_lead",
+    "count": 1
+  }
+}

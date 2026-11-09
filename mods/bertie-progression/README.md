@@ -130,6 +130,10 @@ Amethyst Shard recipes remain available.
 
 ### Data
 
+See [Deep resources](docs/deep-resources.md) for the Sturdy Deepslate mining
+contract, cached Mineral Fountain cascade, tiered machine ingredients and
+the focused native integration server tests.
+
 See [Material processing](docs/material-processing.md) for retained processing routes,
 utility-machine tiers, AnvilCraft recipes, sifting probabilities, Solar Core and
 Tungsten generation, and Nether materials.

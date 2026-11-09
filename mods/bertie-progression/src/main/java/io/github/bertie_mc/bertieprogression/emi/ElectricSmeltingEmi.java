@@ -17,18 +17,22 @@ final class ElectricSmeltingEmi {
             if (!(holder.value() instanceof BlastingRecipe recipe)) {
                 return;
             }
-            var furnace = EmiStack.of(BuiltInRegistries.ITEM.get(
-                    ResourceLocation.parse("oritech:powered_furnace_block")));
+            var furnace =
+                    EmiStack.of(BuiltInRegistries.ITEM.get(ResourceLocation.parse("oritech:powered_furnace_block")));
             var category = new InWorldEmiCategory(
                     ResourceLocation.parse("bertieprogression:electric_smelting"),
-                    furnace, Component.literal("Electric Smelting"));
+                    furnace,
+                    Component.literal("Electric Smelting"));
             registry.addCategory(category);
             registry.addWorkstation(category, furnace);
-            registry.addRecipe(new InWorldEmiRecipe(category,
+            registry.addRecipe(new InWorldEmiRecipe(
+                    category,
                     ResourceLocation.parse("bertieprogression:electric_smelting/oritech_charge_mix"),
-                    List.of(EmiIngredient.of(recipe.getIngredients().getFirst())), List.of(),
-                    List.of(EmiStack.of(recipe.getResultItem(
-                            RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY)))), List.of()));
+                    List.of(EmiIngredient.of(recipe.getIngredients().getFirst())),
+                    List.of(),
+                    List.of(EmiStack.of(
+                            recipe.getResultItem(RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY)))),
+                    List.of()));
         });
     }
 

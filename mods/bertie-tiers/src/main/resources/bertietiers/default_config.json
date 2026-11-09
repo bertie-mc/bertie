@@ -1517,7 +1517,9 @@
           }
         }
       ],
-      "blocks": []
+      "blocks": [
+        "anvilcraft:sturdy_deepslate"
+      ]
     }
   ],
   "exceptions": []

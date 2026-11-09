@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PUP",
+    "UCU",
+    "ESS"
+  ],
+  "key": {
+    "P": {
+      "item": "oritech:plastic_sheet"
+    },
+    "U": {
+      "item": "oritech:processing_unit"
+    },
+    "C": {
+      "item": "minecraft:compass"
+    },
+    "E": {
+      "tag": "c:ingots/electrum"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "oritech:target_designator",
+    "count": 1
+  }
+}

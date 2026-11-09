@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:solerium_gem"
+  },
+  "output": {
+    "id": "bertieprogression:solerium_dust",
+    "count": 1
+  }
+}

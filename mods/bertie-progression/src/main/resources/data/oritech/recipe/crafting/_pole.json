@@ -1,29 +1,30 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CC CC",
+    "SSSSS",
+    "FSBSF",
+    "FFFFF"
+  ],
   "key": {
-    "b": {
+    "C": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "F": {
       "item": "oritech:carbon_fibre_strands"
     },
-    "c": {
-      "item": "oritech:magnetic_coil"
-    },
-    "i": {
+    "B": {
       "item": "mekanism:basic_energy_cube"
-    },
-    "s": {
-      "tag": "c:ingots/electrum"
     }
   },
-  "pattern": [
-    "c c",
-    "sis",
-    "bbb"
-  ],
   "result": {
-    "count": 1,
-    "id": "oritech:power_pole_block"
+    "id": "oritech:power_pole_block",
+    "count": 1
   },
+  "tier": 2,
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "OOOOO",
+    "OAPAO",
+    "OTKLO",
+    "DRMRD",
+    "DOOOD"
+  ],
+  "key": {
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "A": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "P": {
+      "item": "oritech:processing_unit"
+    },
+    "T": {
+      "item": "mekanism:elite_chemical_tank"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "L": {
+      "item": "oritech:enderic_lens"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "R": {
+      "item": "bertieprogression:platinum_coil"
+    },
+    "M": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "mekanism:osmium_compressor",
+    "count": 1
+  },
+  "tier": 2
+}

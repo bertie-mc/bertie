@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:osmium_gem"
+  },
+  "output": {
+    "id": "mekanism:dust_osmium",
+    "count": 1
+  }
+}

@@ -131,15 +131,15 @@ Both use Motor at row 4, column 2 and AnvilCraft Circuit Board at row 2, column 
 Circuit Board, Oritech Magnetic Coil and Oritech Motor use 5×5 Nether-table
 recipes. Bound Soul alternatives produce 32 Boards, 12 Coils or three Motors.
 Assembler alternatives produce one Board, Coil or Motor; their Bound Soul
-variants produce sixteen Boards, six Coils or two Motors. Electric Coil uses
+variants produce sixteen Boards, eight Coils or two Motors. Electric Coil uses
 two Electrum Wires, Cognitive Alloy and Magnetic Coil. Processing Unit uses
-Adamant, Large Redstone Slate, Electric Coil and Plastic Sheet.
+Adamant, AnvilCraft Circuit Board, Electric Coil and Plastic Sheet.
 
 Formulaic Assemblicator, Oritech Assembler and Centrifuge use 5×5 Nether-table
 recipes. Assembler consumes two Formulaic Assemblicators. Centrifuge uses three
 Adamant Ingots across the bottom centre, four Deep Alloy Sheets on the lower
-sides and six Copper Sheets above. Adamant crafts from four Diamonds and three
-Platinum Ingots for two; Foundry combines Platinum and Diamond for one. Its
+sides and six Bronze Sheets above. Adamant crafts from four Platinum and three
+Malignant Pewter Ingots for two; Foundry combines one of each for two. Its
 Create mixing and Metallurgic Infuser dust routes are disabled.
 
 Ordinary raw metals enrich into two dust per raw item, or eighteen per raw
@@ -155,9 +155,8 @@ Upgrade corners and stored-content transfer remain unchanged.
 Pressurized Reaction Chamber uses the selected 5×5 Nether-table recipe with
 one Advanced Chemical Tank, one Advanced Fluid Tank, two Motors and a central
 Enrichment Chamber. Empty Capacitor is
-made there from one Elite Chemical Tank, 5 B of ordinary Mana Potion and 2 B
-Hydrogen over ten seconds. The potion fluid is Create's potion fluid carrying
-Iron's Spellbooks Mana I; other potion contents do not satisfy the ingredient.
+made there from one Elite Chemical Tank, 5 B native Magitech Mana Potion and
+2 B Hydrogen over ten seconds.
 
 Purification Chamber and Electrolytic Separator use 5×5 Nether recipes. The
 Separator contains a Motor rather than a tank. Pulveriser uses two Grindstones,

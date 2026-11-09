@@ -714,8 +714,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 15.0d
+			y: 4.5d
+			x: 13.5d
 			dependencies: ["5C00000000009329"]
 			id: "5C0000000000932A"
 			icon: { id: "oritech:lava_generator_block" }
@@ -1101,8 +1101,8 @@
 		}
 		{
 			dependencies: ["5C00000000009339"]
-			y: 3.0d
-			x: 19.5d
+			y: 1.5d
+			x: 18.0d
 			id: "5C0000000000933A"
 			icon: { id: "oritech:assembler_block" }
 			tasks: [{
@@ -1114,8 +1114,8 @@
 		}
 		{
 			dependencies: ["5C0000000000933A"]
-			y: 1.5d
-			x: 18.0d
+			y: 0.0d
+			x: 16.5d
 			id: "5C0000000000933B"
 			icon: { id: "bertieprogression:electric_coil" }
 			tasks: [{
@@ -1140,7 +1140,7 @@
 		}
 		{
 			dependencies: ["5C0000000000935D"]
-			y: 0.0d
+			y: 1.5d
 			x: 15.0d
 			id: "5C0000000000933D"
 			icon: { id: "mekanism:bio_fuel" }
@@ -1287,7 +1287,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: 0.0d
 			x: 19.5d
 			dependencies: ["5C0000000000933C"]
 			id: "5C00000000009346"
@@ -1553,8 +1553,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 22.5d
+			y: 0.0d
+			x: 21.0d
 			dependencies: ["5C00000000009359"]
 			id: "5C0000000000935A"
 			icon: { id: "oritech:enderic_compound" }
@@ -1567,7 +1567,7 @@
 		}
 		{
 			y: -1.5d
-			x: 24.0d
+			x: 22.5d
 			dependencies: ["5C0000000000935A"]
 			id: "5C0000000000935B"
 			icon: { id: "oritech:enderic_lens" }
@@ -1580,8 +1580,8 @@
 		}
 		{
 			y: -1.5d
-			x: 25.5d
-			dependencies: ["5C0000000000935B"]
+			x: 24.0d
+			dependencies: ["5C0000000000935E"]
 			id: "5C0000000000935C"
 			icon: { id: "oritech:laser_arm_block" }
 			tasks: [{
@@ -1593,7 +1593,7 @@
 		}
 		{
 			y: 0.0d
-			x: 16.5d
+			x: 15.0d
 			dependencies: ["5C00000000009338"]
 			id: "5C0000000000935D"
 			icon: { id: "oritech:machine_fluid_addon" }
@@ -1601,6 +1601,136 @@
 				id: "5C0000000100935D"
 				count: 1L
 				item: { count: 1 id: "oritech:machine_fluid_addon" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 22.5d
+			dependencies: ["5C0000000000935B"]
+			id: "5C0000000000935E"
+			icon: { id: "mekanism:osmium_compressor" }
+			tasks: [{
+				id: "5C0000000100935E"
+				count: 1L
+				item: { count: 1 id: "mekanism:osmium_compressor" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 25.5d
+			dependencies: ["5C0000000000935C"]
+			id: "5C0000000000935F"
+			icon: { id: "oritech:fluxite" }
+			tasks: [{
+				id: "5C0000000100935F"
+				count: 1L
+				item: { count: 1 id: "oritech:fluxite" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 27.0d
+			dependencies: ["5C0000000000935F"]
+			id: "5C00000000009360"
+			icon: { id: "oritech:flux_gate" }
+			tasks: [{
+				id: "5C00000001009360"
+				count: 1L
+				item: { count: 1 id: "oritech:flux_gate" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 28.5d
+			dependencies: ["5C00000000009360"]
+			id: "5C00000000009361"
+			icon: { id: "oritech:foundry_block" }
+			tasks: [{
+				id: "5C00000001009361"
+				count: 1L
+				item: { count: 1 id: "oritech:foundry_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 30.0d
+			dependencies: ["5C00000000009361"]
+			id: "5C00000000009362"
+			icon: { id: "oritech:duratium_ingot" }
+			tasks: [{
+				id: "5C00000001009362"
+				count: 1L
+				item: { count: 1 id: "oritech:duratium_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 28.5d
+			dependencies: ["5C00000000009361"]
+			id: "5C00000000009363"
+			icon: { id: "cataclysm:enderite_ingot" }
+			tasks: [{
+				id: "5C00000001009363"
+				count: 1L
+				item: { count: 1 id: "cataclysm:enderite_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 18.0d
+			dependencies: ["5C00000000009353"]
+			id: "5C00000000009364"
+			icon: { id: "oritech:still_naphtha_bucket" }
+			tasks: [{
+				id: "5C00000001009364"
+				count: 1L
+				item: { count: 1 id: "oritech:still_naphtha_bucket" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 19.5d
+			dependencies: ["5C00000000009364"]
+			id: "5C00000000009365"
+			icon: { id: "oritech:still_silicon_wash_bucket" }
+			tasks: [{
+				id: "5C00000001009365"
+				count: 1L
+				item: { count: 1 id: "oritech:still_silicon_wash_bucket" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 21.0d
+			dependencies: ["5C00000000009365"]
+			id: "5C00000000009366"
+			icon: { id: "oritech:silicon_wafer" }
+			tasks: [{
+				id: "5C00000001009366"
+				count: 1L
+				item: { count: 1 id: "oritech:silicon_wafer" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 1.5d
+			dependencies: ["5C00000000009345"]
+			id: "5C00000000009367"
+			icon: { id: "anvilcraft:heliostats" }
+			tasks: [{
+				id: "5C00000001009367"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:heliostats" }
 				type: "item"
 			}]
 		}

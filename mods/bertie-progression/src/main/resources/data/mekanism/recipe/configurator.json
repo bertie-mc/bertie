@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "   O ",
+    "  OCO",
+    " LRO ",
+    "LRL  ",
+    "RL   "
+  ],
+  "key": {
+    "O": {
+      "tag": "c:ingots/osmium"
+    },
+    "C": {
+      "item": "mekanism:basic_control_circuit"
+    },
+    "L": {
+      "item": "betterend:leather_stripe"
+    },
+    "R": {
+      "item": "bertieprogression:steel_rod"
+    }
+  },
+  "result": {
+    "id": "mekanism:configurator",
+    "count": 1
+  },
+  "tier": 2
+}

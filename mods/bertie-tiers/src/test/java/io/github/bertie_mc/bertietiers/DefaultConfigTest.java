@@ -67,6 +67,8 @@ class DefaultConfigTest {
     private static FakeRegistryProbe withSlag() {
         FakeRegistryProbe probe = new FakeRegistryProbe()
                 .mod("slag")
+                .mod("anvilcraft")
+                .block("anvilcraft:sturdy_deepslate")
                 .item("slag:modular_item")
                 .component("slag:modular_type")
                 .component("slag:dynamic_parts");
@@ -88,7 +90,10 @@ class DefaultConfigTest {
         assertEquals(
                 List.of(100, 200, 300, 400, 500),
                 config.tiers().stream().map(ValidatedConfig.Tier::level).toList());
-        assertEquals(VANILLA_ORES.size(), config.controlledBlockCount(), "every vanilla ore should be controlled");
+        assertEquals(
+                VANILLA_ORES.size() + 1,
+                config.controlledBlockCount(),
+                "vanilla ores and Sturdy Deepslate should be controlled");
         assertEquals(6 + 102, config.toolMatcherCount(), "6 vanilla pickaxes plus 17 Slag materials x 6 shapes");
     }
 
@@ -100,8 +105,9 @@ class DefaultConfigTest {
         VANILLA_PICKAXES.forEach(probe::item);
 
         ConfigValidator.Result result = ConfigValidator.validate(shipped(), probe);
-        assertEquals(1, result.warnings().size());
-        assertTrue(result.warnings().get(0).contains("102"), result.warnings().get(0));
+        assertEquals(2, result.warnings().size());
+        assertTrue(result.warnings().stream().anyMatch(warning -> warning.contains("102")));
+        assertTrue(result.warnings().stream().anyMatch(warning -> warning.contains("anvilcraft")));
         assertEquals(VANILLA_ORES.size(), result.config().controlledBlockCount());
         assertEquals(6, result.config().toolMatcherCount());
     }
@@ -138,7 +144,7 @@ class DefaultConfigTest {
                         "minecraft:deepslate_emerald_ore"),
                 blocksOf(config, "iron"));
         assertEquals(List.of("minecraft:ancient_debris"), blocksOf(config, "diamond"));
-        assertEquals(List.of(), blocksOf(config, "netherite"));
+        assertEquals(List.of("anvilcraft:sturdy_deepslate"), blocksOf(config, "netherite"));
     }
 
     private static List<String> blocksOf(ValidatedConfig config, String tierId) {

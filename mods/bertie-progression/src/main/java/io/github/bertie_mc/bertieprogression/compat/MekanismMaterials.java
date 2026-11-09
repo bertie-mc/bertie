@@ -34,14 +34,17 @@ public final class MekanismMaterials {
         io.github.bertie_mc.bertieprogression.OreMaterials.SLURRIES.forEach((material, color) -> {
             for (String state : java.util.List.of("dirty", "clean")) {
                 String name = state + "_" + material;
-                CHEMICALS.register(name, () -> new Chemical(ChemicalBuilder.builder(
-                                ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, "chemical/" + name))
-                        .ore(ResourceLocation.fromNamespaceAndPath("c", "ores/" + material))) {
-                    @Override
-                    public int getColorRepresentation() {
-                        return color;
-                    }
-                });
+                CHEMICALS.register(
+                        name,
+                        () ->
+                                new Chemical(ChemicalBuilder.builder(ResourceLocation.fromNamespaceAndPath(
+                                                BertieProgression.MODID, "chemical/" + name))
+                                        .ore(ResourceLocation.fromNamespaceAndPath("c", "ores/" + material))) {
+                                    @Override
+                                    public int getColorRepresentation() {
+                                        return color;
+                                    }
+                                });
             }
         });
         CHEMICALS.register(bus);

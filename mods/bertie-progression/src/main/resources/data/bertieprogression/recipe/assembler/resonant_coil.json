@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "bertieprogression:platinum_wire"
+    },
+    {
+      "item": "malum:malignant_pewter_ingot"
+    },
+    {
+      "item": "bertieprogression:electric_coil"
+    },
+    {
+      "item": "bertieprogression:platinum_wire"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:platinum_coil",
+      "count": 1
+    }
+  ],
+  "time": 48
+}

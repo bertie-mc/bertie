@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SLPLS",
+    "BMKMB",
+    "DGUGD",
+    "BDBDB"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "L": {
+      "item": "oritech:enderic_lens"
+    },
+    "P": {
+      "item": "oritech:processing_unit"
+    },
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "G": {
+      "item": "oritech:basic_generator_block"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  },
+  "result": {
+    "id": "oritech:fuel_generator_block",
+    "count": 1
+  },
+  "tier": 2
+}

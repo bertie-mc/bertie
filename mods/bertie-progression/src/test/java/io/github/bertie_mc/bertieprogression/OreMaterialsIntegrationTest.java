@@ -18,8 +18,10 @@ class OreMaterialsIntegrationTest {
     @Test
     void refiningMaterialsRegisterWithModelsAndTextures() {
         for (String name : List.of("bronze_sheet", "platinum_rod", "platinum_wire", "coal_dense_charge")) {
-            assertTrue(BuiltInRegistries.ITEM.containsKey(
-                    ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, name)), name);
+            assertTrue(
+                    BuiltInRegistries.ITEM.containsKey(
+                            ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, name)),
+                    name);
             assertNotNull(getClass().getResource("/assets/bertieprogression/models/item/" + name + ".json"));
             assertNotNull(getClass().getResource("/assets/bertieprogression/textures/item/" + name + ".png"));
         }
@@ -45,25 +47,37 @@ class OreMaterialsIntegrationTest {
                 assertFalse(chemical.isEmptyType(), name);
                 assertEquals(0xFFFFFF, chemical.getTint());
                 assertEquals(entry.getValue().intValue(), chemical.getColorRepresentation());
-                assertEquals("c:ores/" + entry.getKey(), chemical.getOreTag().location().toString());
-                assertNotNull(getClass().getResource("/assets/bertieprogression/textures/chemical/" + name + ".png.mcmeta"));
+                assertEquals(
+                        "c:ores/" + entry.getKey(),
+                        chemical.getOreTag().location().toString());
+                assertNotNull(
+                        getClass().getResource("/assets/bertieprogression/textures/chemical/" + name + ".png.mcmeta"));
             }
         }
     }
 
     @Test
     void intermediateRecipesDecodeAgainstRegisteredItemsAndChemicals() throws Exception {
-        var ops = net.minecraft.resources.RegistryOps.create(com.mojang.serialization.JsonOps.INSTANCE,
+        var ops = net.minecraft.resources.RegistryOps.create(
+                com.mojang.serialization.JsonOps.INSTANCE,
                 net.minecraft.core.RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY));
-        for (String name : List.of("dust_from_dirty_dust", "dirty_dust_from_clump", "clump_from_shard",
-                "shard_from_crystal", "crystal_from_slurry", "clean_slurry")) {
-            try (var stream = getClass().getResourceAsStream(
-                    "/data/bertieprogression/recipe/processing/tungsten/" + name + ".json")) {
+        for (String name : List.of(
+                "dust_from_dirty_dust",
+                "dirty_dust_from_clump",
+                "clump_from_shard",
+                "shard_from_crystal",
+                "crystal_from_slurry",
+                "clean_slurry")) {
+            try (var stream = getClass()
+                    .getResourceAsStream("/data/bertieprogression/recipe/processing/tungsten/" + name + ".json")) {
                 assertNotNull(stream, name);
                 var json = JsonParser.parseReader(new InputStreamReader(stream));
-                assertNotNull(net.minecraft.world.item.crafting.Recipe.CODEC.parse(ops, json).getOrThrow(), name);
+                assertNotNull(
+                        net.minecraft.world.item.crafting.Recipe.CODEC
+                                .parse(ops, json)
+                                .getOrThrow(),
+                        name);
             }
         }
     }
-
 }

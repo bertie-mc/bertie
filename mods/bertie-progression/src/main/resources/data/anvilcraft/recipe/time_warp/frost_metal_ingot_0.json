@@ -1,0 +1,17 @@
+{
+  "type": "anvilcraft:time_warp",
+  "consume": 1000,
+  "fluid": "minecraft:powder_snow",
+  "ingredients": [
+    {
+      "items": "anvilcraft:royal_steel_ingot",
+      "count": 3
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:frost_metal_ingot",
+      "count": 1
+    }
+  ]
+}

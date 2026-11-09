@@ -26,9 +26,13 @@ public final class ElectricSmelting {
     public static RecipeHolder<SmeltingRecipe> convert(BlastingRecipe source, HolderLookup.Provider registries) {
         return new RecipeHolder<>(
                 SOURCE,
-                new SmeltingRecipe(source.getGroup(), CookingBookCategory.MISC,
-                        source.getIngredients().getFirst(), source.getResultItem(registries).copy(),
-                        source.getExperience(), source.getCookingTime()));
+                new SmeltingRecipe(
+                        source.getGroup(),
+                        CookingBookCategory.MISC,
+                        source.getIngredients().getFirst(),
+                        source.getResultItem(registries).copy(),
+                        source.getExperience(),
+                        source.getCookingTime()));
     }
 
     private ElectricSmelting() {}

@@ -7,7 +7,7 @@
 		id: "mekanism:metallurgic_infuser"
 	}
 	id: "6100000000000000"
-	order_index: 13
+	order_index: 14
 	quest_links: [ ]
 	quests: [
 		{
@@ -379,25 +379,10 @@
 		}
 		{
 			id: "61EBF8A4A6E2453C"
-			icon: {
-				id: "mekanism:osmium_compressor"
-			}
-			tasks: [
-				{
-					id: "61FC6CC78030E04A"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:osmium_compressor)item(mekanism:advanced_compressing_factory)item(mekanism:basic_compressing_factory)item(mekanism:elite_compressing_factory)item(mekanism:ultimate_compressing_factory)item(mekanism_extras:absolute_compressing_factory)item(mekanism_extras:cosmic_compressing_factory)item(mekanism_extras:infinite_compressing_factory)item(mekanism_extras:supreme_compressing_factory))"
-							"minecraft:custom_name": "{\"text\": \"Osmium Compressor\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61FC6CC78030E04A"
+				type: "checkmark"
+			}]
 			dependencies: [
 				"614C917652DB21F9"
 			]

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "oritech:copper_gem"
+  },
+  "output": {
+    "id": "mekanism:dust_copper",
+    "count": 1
+  }
+}

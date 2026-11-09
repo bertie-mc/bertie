@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SPPES",
+    "DMKAS",
+    "DLLAD",
+    "DDDDD"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "P": {
+      "item": "oritech:processing_unit"
+    },
+    "E": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "A": {
+      "item": "mekanism:alloy_reinforced"
+    },
+    "L": {
+      "item": "oritech:plastic_sheet"
+    }
+  },
+  "result": {
+    "id": "mekanism:combiner",
+    "count": 1
+  },
+  "tier": 2
+}

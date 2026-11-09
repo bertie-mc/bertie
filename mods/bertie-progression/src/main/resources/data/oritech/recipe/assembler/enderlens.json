@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "tag": "c:carbon_fibre"
+    },
+    {
+      "item": "create:electron_tube"
+    },
+    {
+      "item": "oritech:enderic_compound"
+    },
+    {
+      "item": "oritech:adamant_ingot"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:enderic_lens"
+    }
+  ],
+  "time": 144
+}

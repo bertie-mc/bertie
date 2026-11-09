@@ -12,7 +12,8 @@ public final class TrollRetirement {
     @SubscribeEvent
     public static void onJoin(EntityJoinLevelEvent event) {
         if (!event.getLevel().isClientSide()
-                && TROLL.equals(BuiltInRegistries.ENTITY_TYPE.getKey(event.getEntity().getType()))) {
+                && TROLL.equals(
+                        BuiltInRegistries.ENTITY_TYPE.getKey(event.getEntity().getType()))) {
             event.setCanceled(true);
             event.getEntity().discard();
         }

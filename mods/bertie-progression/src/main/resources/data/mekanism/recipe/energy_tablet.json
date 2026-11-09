@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RCR",
+    "ECE",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "item": "berlordscarving:redstone_big_slate"
+    },
+    "C": {
+      "item": "anvilcraft:capacitor_empty"
+    },
+    "E": {
+      "item": "bertieprogression:electric_coil"
+    }
+  },
+  "result": {
+    "id": "mekanism:energy_tablet",
+    "count": 1
+  }
+}

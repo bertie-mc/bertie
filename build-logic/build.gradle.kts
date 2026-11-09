@@ -47,6 +47,10 @@ gradlePlugin {
             implementationClass =
                 "io.github.bertie_mc.gradle.plugins.GameTestPlugin"
         }
+        create("integrationGameTest") {
+            id = "bertie.integration-gametest"
+            implementationClass = "io.github.bertie_mc.gradle.plugins.IntegrationGameTestPlugin"
+        }
         create("clientTest") {
             id = "bertie.client-test"
             implementationClass =

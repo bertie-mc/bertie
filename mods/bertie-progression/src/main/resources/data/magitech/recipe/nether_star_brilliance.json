@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "irons_spellbooks:mithril_weave"
+    },
+    {
+      "item": "l2complements:sun_membrane"
+    },
+    {
+      "item": "magitech:ember_crystal"
+    },
+    {
+      "item": "magitech:magic_crystal"
+    },
+    {
+      "item": "magitech:tremor_crystal"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "minecraft:lava",
+    "amount": 2000
+  },
+  "result": {
+    "id": "magitech:nether_star_brilliance",
+    "count": 4
+  }
+}

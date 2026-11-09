@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/steel"
+    },
+    {
+      "item": "anvilcraft:sturdy_deepslate"
+    }
+  ],
+  "results": [
+    {
+      "id": "slag:deep_alloy",
+      "count": 4
+    }
+  ],
+  "time": 80
+}

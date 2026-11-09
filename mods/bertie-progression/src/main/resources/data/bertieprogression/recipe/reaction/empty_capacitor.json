@@ -10,14 +10,7 @@
   },
   "fluid_input": {
     "amount": 5000,
-    "type": "neoforge:components",
-    "fluids": "create:potion",
-    "components": {
-      "minecraft:potion_contents": {
-        "potion": "irons_spellbooks:instant_mana_one"
-      }
-    },
-    "strict": false
+    "fluid": "magitech:mana_potion"
   },
   "duration": 200,
   "item_output": {

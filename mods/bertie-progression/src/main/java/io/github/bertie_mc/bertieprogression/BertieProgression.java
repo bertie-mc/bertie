@@ -20,6 +20,7 @@ public final class BertieProgression {
     public static final String MODID = "bertieprogression";
 
     public BertieProgression(IEventBus modBus) {
+        NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.fountain.MineralFountainRules.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.combat.ArmorDefenses.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.combat.DodgeRules.class);
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.combat.MagicOrigins.class);

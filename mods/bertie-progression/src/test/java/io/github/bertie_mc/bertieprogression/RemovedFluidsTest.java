@@ -15,8 +15,8 @@ class RemovedFluidsTest {
         var id = ResourceLocation.parse("mekanism:sulfuric_acid");
         assertTrue(BuiltInRegistries.FLUID.containsKey(id));
         assertTrue(RemovedFluids.isRemoved(BuiltInRegistries.FLUID.get(id)));
-        assertTrue(RemovedFluids.isRemoved(BuiltInRegistries.FLUID.get(
-                ResourceLocation.parse("mekanism:flowing_sulfuric_acid"))));
+        assertTrue(RemovedFluids.isRemoved(
+                BuiltInRegistries.FLUID.get(ResourceLocation.parse("mekanism:flowing_sulfuric_acid"))));
         assertTrue(MekanismAPI.CHEMICAL_REGISTRY.containsKey(id));
         assertFalse(RemovedFluids.isRemoved(MekanismAPI.CHEMICAL_REGISTRY.get(id)));
         assertFalse(RemovedFluids.isRemoved(id));

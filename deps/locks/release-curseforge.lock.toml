@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "1b7d76c075a9d9d37dbc9391fda22ed37509f758e9d5ed728df2dc5b4ce32f73"
+inputs-hash = "71a5045963fa4ec30e64aa714a0d899a6b321d9dc732f44763885c11f5c40e12"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -388,10 +388,6 @@ mod = "curseforge:511040:6833316"
 [components."dynamic-ore-veins"]
 any = "modrinth:7RCWO3Zu:OWZ6aYaZ"
 mod = "modrinth:7RCWO3Zu:OWZ6aYaZ"
-
-[components."easy-anvils"]
-any = "curseforge:682567:5733955"
-mod = "curseforge:682567:5733955"
 
 [components."easy-magic"]
 any = "curseforge:456239:7151100"
@@ -7597,27 +7593,6 @@ file-id = 5732769
 provides = ["armorstatues"]
 bundled-provides = ["statuemenus"]
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.8,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:682567:5733955"]
-name = "easy-anvils"
-component = "easy-anvils"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "easy-anvils-682567"
-version = "5733955"
-filename = "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
-project-id = 682567
-slug = "easy-anvils"
-file-id = 5733955
-provides = ["easyanvils"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

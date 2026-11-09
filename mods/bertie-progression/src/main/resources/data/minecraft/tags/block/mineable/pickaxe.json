@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "bertieprogression:eezo_ore"
+    {
+      "id": "anvilcraft:sturdy_deepslate",
+      "required": false
+    }
   ]
 }

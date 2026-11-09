@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:desh_gem"
+  },
+  "output": {
+    "id": "bertieprogression:desh_dust",
+    "count": 1
+  }
+}

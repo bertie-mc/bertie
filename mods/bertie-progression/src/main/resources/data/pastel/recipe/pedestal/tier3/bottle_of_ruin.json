@@ -1,20 +1,37 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "type": "avaritia:shaped_table",
   "pattern": [
-    "GGG",
-    "GGG",
-    "GGG"
+    "VERFV",
+    "ERURF",
+    "EUBUF",
+    "ERURF",
+    "VERFV"
   ],
   "key": {
-    "G": {
-      "item": "minecraft:grass_block"
+    "V": {
+      "item": "anvilcraft:void_matter_block"
+    },
+    "E": {
+      "item": "anvilcraft:ember_metal_ingot"
+    },
+    "R": {
+      "item": "magitech:radiant_steel_ingot"
+    },
+    "F": {
+      "item": "anvilcraft:frost_metal_ingot"
+    },
+    "U": {
+      "item": "anvilcraft:uranium_block"
+    },
+    "B": {
+      "item": "pastel:bottle_of_fading"
     }
   },
   "result": {
     "id": "pastel:bottle_of_ruin",
     "count": 1
   },
+  "tier": 2,
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",

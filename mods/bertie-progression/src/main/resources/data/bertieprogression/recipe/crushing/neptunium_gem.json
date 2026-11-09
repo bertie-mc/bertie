@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:neptunium_gem"
+  },
+  "output": {
+    "id": "bertieprogression:neptunium_dust",
+    "count": 1
+  }
+}

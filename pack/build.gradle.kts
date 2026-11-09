@@ -109,7 +109,6 @@ dependencies {
     packComponents(deps.dungeonsDelight)
     packComponents(deps.durabilityTooltip)
     packComponents(deps.dynamicOreVeins)
-    packComponents(deps.easyAnvils)
     packComponents(deps.easyMagic)
     packComponents(deps.easyMagicApotheosisCompat)
     packComponents(deps.eccentricTome)

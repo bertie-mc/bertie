@@ -5,6 +5,7 @@ plugins {
     id("bertie.jarjar")
     id("bertie.neoforge-test")
     id("bertie.gametest")
+    id("bertie.integration-gametest")
     id("bertie.dev-runs")
 }
 
@@ -80,6 +81,10 @@ dependencies {
     gametestRuntimeOnly(deps.armageddon)
     gametestRuntimeOnly(deps.antarchy)
     gametestRuntimeOnly(deps.mekanism)
+    "integrationtestRuntimeOnly"(deps.anvilcraft)
+    "integrationtestRuntimeOnly"(deps.curios)
+    "integrationtestRuntimeOnly"(deps.hooked)
+    "integrationtestRuntimeOnly"(project(":mods:bertie-tiers"))
     gametestRuntimeOnly(deps.quark)
     gametestRuntimeOnly(deps.alexsMobs1211)
     gametestRuntimeOnly(deps.mythsAndLegends)

@@ -1,11 +1,16 @@
 {
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "bertieprogression:titanium_gem"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
   "result": {
-    "id": "anvilcraft:titanium_ingot"
-  },
-  "experience": 0.1,
-  "cookingtime": 100
+    "id": "minecraft:stone"
+  }
 }

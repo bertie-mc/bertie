@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "oritech:gold_gem"
+  },
+  "output": {
+    "id": "oritech:gold_dust",
+    "count": 1
+  }
+}

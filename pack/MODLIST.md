@@ -126,7 +126,6 @@
 | `dungeons_delight` |
 | `durability-tooltip` |
 | `dynamic-ore-veins` |
-| `easy-anvils` |
 | `easy-magic` |
 | `easy-magic-apotheosis-compat` |
 | `eccentric-tome` |

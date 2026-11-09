@@ -16,9 +16,15 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(targets = "rearth.oritech.block.entity.processing.PoweredFurnaceBlockEntity", remap = false)
 public abstract class PoweredFurnaceRecipeMixin {
     @SuppressWarnings({"rawtypes", "unchecked"})
-    @Redirect(method = {"serverTick", "getProgress", "getRecipeDuration"},
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/crafting/RecipeManager;getRecipeFor(Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/item/crafting/RecipeInput;Lnet/minecraft/world/level/Level;)Ljava/util/Optional;"),
-            require = 3, remap = false)
+    @Redirect(
+            method = {"serverTick", "getProgress", "getRecipeDuration"},
+            at =
+                    @At(
+                            value = "INVOKE",
+                            target =
+                                    "Lnet/minecraft/world/item/crafting/RecipeManager;getRecipeFor(Lnet/minecraft/world/item/crafting/RecipeType;Lnet/minecraft/world/item/crafting/RecipeInput;Lnet/minecraft/world/level/Level;)Ljava/util/Optional;"),
+            require = 3,
+            remap = false)
     private Optional<?> bertieprogression$electricRecipe(
             RecipeManager recipes, RecipeType type, RecipeInput input, Level level) {
         if (type == RecipeType.SMELTING && input instanceof SingleRecipeInput single) {

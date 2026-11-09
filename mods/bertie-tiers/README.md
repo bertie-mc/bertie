@@ -143,7 +143,7 @@ Writes the whole resolved table to the server log.
   * `stone` (200) — copper, iron, lapis (+ deepslate)
   * `iron` (300) — gold, redstone, diamond, emerald (+ deepslate)
   * `diamond` (400) — ancient debris
-  * `netherite` (500) — nothing yet; the top of the ladder, ready for post-netherite ores
+  * `netherite` (500) — AnvilCraft Sturdy Deepslate; skipped when AnvilCraft is absent
 * **All 6 vanilla pickaxes.** Gold sits in `wood` because that is where vanilla puts it
   (`Tiers.GOLD` → `#minecraft:incorrect_for_gold_tool`, which has the wooden set).
 * **All 17 Slag n' Embers materials × 6 pickaxe-capable shapes = 102 matchers**, each at the tier

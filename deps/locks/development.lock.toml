@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "6579ae633b7c5039aee6df3155950b1efbfc3ca7ea9acc2eb1fe8c8185912ae6"
+inputs-hash = "1220963b63699648e084c4b2bf7f8399b19c4b2e0e885065649bb394982d726f"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -388,10 +388,6 @@ mod = "modrinth:smUP7V3r:mmYe9e5V"
 [components."dynamic-ore-veins"]
 any = "modrinth:7RCWO3Zu:OWZ6aYaZ"
 mod = "modrinth:7RCWO3Zu:OWZ6aYaZ"
-
-[components."easy-anvils"]
-any = "modrinth:OZBR5JT5:fSQSKhdF"
-mod = "modrinth:OZBR5JT5:fSQSKhdF"
 
 [components."easy-magic"]
 any = "modrinth:9hx3AbJM:MxbfrOEv"
@@ -5143,26 +5139,6 @@ version-id = "6ybc8eyX"
 provides = ["server_sided_portals"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:dQcfqGbl:c10AZba0", "mod-id" = "cobweb", "version-range" = "[1.4.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:OZBR5JT5:fSQSKhdF"]
-name = "easy-anvils"
-component = "easy-anvils"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "OZBR5JT5"
-version = "fSQSKhdF"
-filename = "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
-project-id = "OZBR5JT5"
-version-id = "fSQSKhdF"
-provides = ["easyanvils"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.9,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

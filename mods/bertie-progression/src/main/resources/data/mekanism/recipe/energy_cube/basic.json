@@ -1,0 +1,27 @@
+{
+  "type": "mekanism:mek_data",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "E": {
+      "item": "mekanism:energy_tablet"
+    },
+    "I": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "P": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "pattern": [
+    "AEA",
+    "IPI",
+    "AEA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:basic_energy_cube"
+  }
+}

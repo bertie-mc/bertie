@@ -31,7 +31,12 @@
     "VanityEntityItemPacketMixin",
     "WardenModelMixin",
     "WardenStateMixin",
-    "PoweredFurnaceRecipeMixin"
+    "PoweredFurnaceRecipeMixin",
+    "SturdyHardnessMixin",
+    "SturdyLootMixin",
+    "FountainCountAccessor",
+    "FountainRarityAccessor",
+    "MineralFountainMixin"
   ],
   "injectors": {
     "defaultRequire": 0

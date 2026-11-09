@@ -1,0 +1,17 @@
+{
+  "type": "anvilcraft:time_warp",
+  "consume": 1000,
+  "fluid": "anvilcraft:fire",
+  "ingredients": [
+    {
+      "items": "#anvilcraft:netherite_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:ember_metal_ingot",
+      "count": 6
+    }
+  ],
+  "transform": "anvilcraft:fire"
+}

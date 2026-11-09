@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SAAAS",
+    "SLFLS",
+    "SRKRS",
+    "DRTRD",
+    "DDDDD"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "L": {
+      "item": "oritech:laser_arm_block"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "R": {
+      "item": "bertieprogression:platinum_coil"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "T": {
+      "item": "mekanism:elite_fluid_tank"
+    }
+  },
+  "result": {
+    "id": "oritech:foundry_block",
+    "count": 1
+  },
+  "tier": 2
+}

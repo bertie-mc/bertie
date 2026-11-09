@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "oritech:platinum_gem"
+  },
+  "output": {
+    "id": "oritech:platinum_dust",
+    "count": 1
+  }
+}

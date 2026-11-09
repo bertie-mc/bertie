@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:elvenite_gem"
+  },
+  "output": {
+    "id": "bertieprogression:elvenite_dust",
+    "count": 1
+  }
+}

@@ -9,7 +9,7 @@
       "tag": "c:circuits/basic"
     },
     "I": {
-      "tag": "c:ingots/iron"
+      "item": "mekanism:ingot_osmium"
     },
     "P": {
       "item": "mekanism:energized_smelter"

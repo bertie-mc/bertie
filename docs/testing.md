@@ -160,6 +160,14 @@ for an integrated-world example.
 
 ## Full-pack tests
 
+For optional integrations that need a different installed-mod fixture, apply
+`bertie.integration-gametest`. Put those server tests and resources under
+`src/integrationtest`, and declare only their fixture dependencies with
+`integrationtestImplementation` / `integrationtestRuntimeOnly`. Run them with
+`runIntegrationGameTests`; the ordinary `runGameTests` and `runTests` also depend
+on this suite. It uses a separate run directory and report, and shares the same
+Minecraft execution slot. Keep assertions in the component that owns the behavior.
+
 The `:pack` project uses the same source directories and tasks. Add a pack test only when
 it needs pack startup, pack configuration, or several mods together:
 

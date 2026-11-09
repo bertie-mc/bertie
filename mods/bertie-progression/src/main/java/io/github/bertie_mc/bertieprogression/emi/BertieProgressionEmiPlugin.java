@@ -10,8 +10,8 @@ import dev.emi.emi.api.stack.EmiStack;
 import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
 import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
-import io.github.bertie_mc.bertieprogression.RemovedItems;
 import io.github.bertie_mc.bertieprogression.RemovedFluids;
+import io.github.bertie_mc.bertieprogression.RemovedItems;
 import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
@@ -60,12 +60,11 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isRemovedStack);
-        registry.removeRecipes(recipe ->
-                recipe.getOutputs().stream().anyMatch(BertieProgressionEmiPlugin::isRemovedStack)
-                        || recipe.getInputs().stream()
-                                .anyMatch(input -> !input.getEmiStacks().isEmpty()
-                                        && input.getEmiStacks().stream()
-                                                .allMatch(BertieProgressionEmiPlugin::isRemovedStack)));
+        registry.removeRecipes(recipe -> recipe.getOutputs().stream()
+                        .anyMatch(BertieProgressionEmiPlugin::isRemovedStack)
+                || recipe.getInputs().stream()
+                        .anyMatch(input -> !input.getEmiStacks().isEmpty()
+                                && input.getEmiStacks().stream().allMatch(BertieProgressionEmiPlugin::isRemovedStack)));
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:titanium_gem"
+  },
+  "output": {
+    "id": "bertieprogression:titanium_dust",
+    "count": 1
+  }
+}

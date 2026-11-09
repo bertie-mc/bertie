@@ -20,8 +20,7 @@ public final class WireAssemblyEmi {
         var wire = wire(recipe.getId());
         if (wire != null) {
             // The native layout reserves an empty row above its two weighted results.
-            widgets.addSlot(EmiStack.of(BuiltInRegistries.ITEM.get(wire)),
-                            recipe.getDisplayWidth() - 38, 2)
+            widgets.addSlot(EmiStack.of(BuiltInRegistries.ITEM.get(wire)), recipe.getDisplayWidth() - 38, 2)
                     .recipeContext(recipe);
         }
     }
