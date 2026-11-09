@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " WTW ",
+    "WWMWW",
+    "WWBWW",
+    "WWMWW",
+    " WTW "
+  ],
+  "key": {
+    "W": {
+      "item": "bertieprogression:platinum_wire"
+    },
+    "T": {
+      "item": "malum:malignant_pewter_ingot"
+    },
+    "M": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "B": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:platinum_coil",
+    "count": 2
+  },
+  "tier": 2
+}

@@ -1,0 +1,28 @@
+{
+  "type": "oritech:refinery",
+  "fluidInput": {
+    "fluid": "minecraft:lava",
+    "amount": 1000
+  },
+  "ingredients": [
+    {
+      "item": "forbidden_arcanus:ender_pearl_fragment"
+    }
+  ],
+  "results": [],
+  "fluidOutputs": [
+    {
+      "fluid": "oritech:still_steam",
+      "amount": 4000
+    },
+    {
+      "fluid": "oritech:still_sheol_fire",
+      "amount": 1000
+    },
+    {
+      "fluid": "oritech:still_strange_matter",
+      "amount": 100
+    }
+  ],
+  "time": 128
+}

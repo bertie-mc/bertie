@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:naquadah_spec"
+    },
+    "D": {
+      "item": "mekanism_extras:dirty_dust_naquadah"
+    }
+  },
+  "result": {
+    "id": "mekanism_extras:dirty_dust_naquadah",
+    "count": 2
+  }
+}

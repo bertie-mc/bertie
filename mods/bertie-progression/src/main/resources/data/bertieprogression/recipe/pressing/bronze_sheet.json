@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "berlordscarving:bronze_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:bronze_sheet",
+      "count": 1
+    }
+  ]
+}

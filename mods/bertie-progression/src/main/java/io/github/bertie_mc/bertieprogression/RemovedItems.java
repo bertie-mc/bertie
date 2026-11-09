@@ -74,7 +74,7 @@ public final class RemovedItems {
         return tabs;
     }
 
-    private static Set<ResourceLocation> read(String resource) {
+    static Set<ResourceLocation> read(String resource) {
         Set<ResourceLocation> parsed = new HashSet<>();
         try (InputStream in = RemovedItems.class.getResourceAsStream(resource)) {
             if (in != null) {

@@ -2395,7 +2395,7 @@
 	quest.6137E617014D1DF3.quest_desc: [
 		"Collects fluids and upgrades into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."
 	]
-	quest.6137E617014D1DF3.title: "Electric Pump"
+	quest.6137E617014D1DF3.title: "Advanced Electric Pump"
 	quest.6138E502782D37CD.quest_desc: [
 		"Compatibility machine for rolling metal into wire. Its bundled processing recipes require Immersive Engineering, absent from this pack, so it currently has no enabled processing recipes."
 	]

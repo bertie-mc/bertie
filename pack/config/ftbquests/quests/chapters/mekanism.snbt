@@ -265,7 +265,7 @@
 		{
 			id: "6137E617014D1DF3"
 			icon: {
-				id: "mekanism:electric_pump"
+				id: "mekanism_extras:advanced_electric_pump"
 			}
 			tasks: [
 				{
@@ -273,14 +273,7 @@
 					type: "item"
 					count: 1L
 					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:electric_pump)item(mekanism_extras:advanced_electric_pump))"
-							"minecraft:custom_name": "{\"text\": \"Electric Pump\", \"italic\": false}"
-						}
-					}
+					item: "mekanism_extras:advanced_electric_pump"
 				}
 			]
 			x: -11.500d

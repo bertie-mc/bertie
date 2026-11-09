@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/osmium"
@@ -15,5 +15,9 @@
       "count": 4
     }
   ],
-  "time": 150
+  "time": 150,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

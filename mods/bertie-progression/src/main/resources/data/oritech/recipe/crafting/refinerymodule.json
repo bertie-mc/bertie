@@ -1,33 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "b": {
-      "item": "mekanism:basic_fluid_tank"
-    },
-    "c": {
-      "item": "oritech:metal_beam_block"
-    },
-    "f": {
-      "tag": "c:ingots/copper"
-    },
-    "s": {
-      "item": "minecraft:slime_ball"
-    }
-  },
-  "pattern": [
-    "fff",
-    "fcf",
-    "sbs"
-  ],
-  "result": {
-    "count": 1,
-    "id": "oritech:refinery_module_block"
-  },
+  "type": "minecraft:crafting_shapeless",
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "mekanism"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/eezo"
@@ -11,9 +11,13 @@
       "count": 1
     },
     {
-      "id": "bertieprogression:eezo_spec",
+      "id": "bertieprogression:naquadah_spec",
       "count": 4
     }
   ],
-  "time": 100
+  "time": 100,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

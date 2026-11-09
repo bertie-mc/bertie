@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/tharsite"
@@ -11,9 +11,13 @@
       "count": 1
     },
     {
-      "id": "bertieprogression:tharsite_spec",
+      "id": "bertieprogression:desh_spec",
       "count": 4
     }
   ],
-  "time": 100
+  "time": 100,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

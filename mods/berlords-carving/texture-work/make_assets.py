@@ -74,6 +74,7 @@ SLATE_ONLY = {
     "brass":            ("create:brass_ingot", "create", "Brass"),
     "steel":            ("mekanism:ingot_steel", "mekanism", "Steel"),
     "nickel":           ("oritech:nickel_ingot", "oritech", "Nickel"),
+    "bronze":           ("mekanism:ingot_bronze", "mekanism", "Bronze"),
 }
 for _id, (_src, _mod, _disp) in SLATE_ONLY.items():
     MATERIALS[_id] = (None, 2, None, None, False, _disp)
@@ -222,7 +223,7 @@ def main():
     lang[f"{MODID}.screen.hint"] = "Click to carve the shape"
     lang[f"{MODID}.screen.cancel"] = "Leaving ruins the slate"
     lang[f"{MODID}.station.insert"] = "Insert a Tier 2 slate"
-    lang[f"{MODID}.station.controls"] = "WS move · AD rotate · Space cut"
+    lang[f"{MODID}.station.controls"] = "WS move Â· AD rotate Â· Space cut"
     lang[f"{MODID}.station.needs_water"] = "needs water"
     lang[f"{MODID}.station.zoom"] = "%sx"
     lang[f"{MODID}.quality.chipped"] = "Chipped %s"

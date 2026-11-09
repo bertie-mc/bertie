@@ -148,4 +148,13 @@ derives from the same CC0 Oritech Magnetic Coil source as Electric Coil. Its
 windings follow Oritech Platinum and its exposed top core follows the Malum
 Malignant Pewter palette, preserving the coil's shade regions and geometry.
 
+MATERIAL FORM PALETTES
+
+Bronze Sheet samples Mekanism's ingot_bronze.png palette, by Aidan C. Brady,
+under the MIT permission reproduced above. Platinum Rod and Wire sample
+Oritech's platinum_ingot.png palette under CC0-1.0, retaining the original
+material-form geometries. Dense Coal Charge is an original drawing using
+Mekanism Coal Dust colors. Integrated source paths and hashes are recorded
+in refining_assets.json.
+
 Every other asset here is original.

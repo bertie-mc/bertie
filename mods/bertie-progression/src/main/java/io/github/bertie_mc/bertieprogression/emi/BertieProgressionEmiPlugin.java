@@ -11,6 +11,7 @@ import io.github.bertie_mc.bertieprogression.AllayCorruptionHandler;
 import io.github.bertie_mc.bertieprogression.BertieProgression;
 import io.github.bertie_mc.bertieprogression.ModItems;
 import io.github.bertie_mc.bertieprogression.RemovedItems;
+import io.github.bertie_mc.bertieprogression.RemovedFluids;
 import io.github.bertie_mc.bertieprogression.forge.BedRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
@@ -44,6 +45,10 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     private static final ResourceLocation POCKET_BLOCK =
             ResourceLocation.fromNamespaceAndPath("pocket_dimension", "pocket_block");
 
+    private static boolean isRemovedStack(EmiStack stack) {
+        return RemovedItems.isRemoved(stack.getItemStack()) || RemovedFluids.isRemoved(stack.getKey());
+    }
+
     @Override
     public void register(EmiRegistry registry) {
         if (net.neoforged.fml.ModList.get().isLoaded("create")) {
@@ -54,13 +59,13 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         }
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
-        registry.removeEmiStacks(stack -> RemovedItems.isRemoved(stack.getItemStack()));
+        registry.removeEmiStacks(BertieProgressionEmiPlugin::isRemovedStack);
         registry.removeRecipes(recipe ->
-                recipe.getOutputs().stream().anyMatch(output -> RemovedItems.isRemoved(output.getItemStack()))
+                recipe.getOutputs().stream().anyMatch(BertieProgressionEmiPlugin::isRemovedStack)
                         || recipe.getInputs().stream()
                                 .anyMatch(input -> !input.getEmiStacks().isEmpty()
                                         && input.getEmiStacks().stream()
-                                                .allMatch(stack -> RemovedItems.isRemoved(stack.getItemStack()))));
+                                                .allMatch(BertieProgressionEmiPlugin::isRemovedStack)));
 
         EmiStack brickForge = stackOf("slag:brick_forge", 1);
         InWorldEmiCategory category = new InWorldEmiCategory(

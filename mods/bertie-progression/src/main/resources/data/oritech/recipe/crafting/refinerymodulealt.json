@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "b": {
-      "item": "mekanism:basic_fluid_tank"
+      "item": "mekanism:advanced_fluid_tank"
     },
     "c": {
-      "item": "oritech:metal_beam_block"
+      "item": "oritech:motor"
     },
     "f": {
-      "tag": "c:ingots/copper"
+      "item": "oritech:plastic_sheet"
     },
     "s": {
       "tag": "c:silicon"

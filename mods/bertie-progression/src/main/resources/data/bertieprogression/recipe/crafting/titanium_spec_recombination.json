@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:titanium_spec"
+    },
+    "D": {
+      "item": "bertieprogression:titanium_dirty_dust"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:titanium_dirty_dust",
+    "count": 2
+  }
+}

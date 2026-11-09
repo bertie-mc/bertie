@@ -1,0 +1,28 @@
+{
+  "type": "oritech:refinery",
+  "fluidInput": {
+    "fluid": "minecraft:lava",
+    "amount": 1000
+  },
+  "ingredients": [
+    {
+      "item": "anvilcraft:end_dust"
+    }
+  ],
+  "results": [],
+  "fluidOutputs": [
+    {
+      "fluid": "oritech:still_steam",
+      "amount": 3000
+    },
+    {
+      "fluid": "oritech:still_sheol_fire",
+      "amount": 1000
+    },
+    {
+      "fluid": "oritech:still_strange_matter",
+      "amount": 50
+    }
+  ],
+  "time": 128
+}

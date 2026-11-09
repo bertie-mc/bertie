@@ -1,0 +1,15 @@
+{
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "results": [
+    {
+      "id": "forbidden_arcanus:ender_pearl_fragment",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

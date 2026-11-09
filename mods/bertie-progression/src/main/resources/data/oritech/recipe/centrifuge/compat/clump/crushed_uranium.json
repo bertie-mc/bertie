@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/uranium"
@@ -11,9 +11,13 @@
       "count": 1
     },
     {
-      "id": "bertieprogression:uranium_spec",
+      "id": "bertieprogression:lead_spec",
       "count": 4
     }
   ],
-  "time": 50
+  "time": 50,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

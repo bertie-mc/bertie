@@ -1,0 +1,11 @@
+{
+  "type": "mekmm:lathe",
+  "input": {
+    "count": 1,
+    "item": "oritech:platinum_ingot"
+  },
+  "output": {
+    "id": "bertieprogression:platinum_rod",
+    "count": 1
+  }
+}

@@ -6,22 +6,27 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.google.gson.JsonParser;
-import io.github.bertie_mc.bertieprogression.compat.ManaPotionFluids;
 import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.List;
 import mekanism.api.MekanismAPI;
-import net.minecraft.core.Holder;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionContents;
-import net.minecraft.world.item.alchemy.Potions;
 import org.junit.jupiter.api.Test;
 
 class OreMaterialsIntegrationTest {
+    @Test
+    void refiningMaterialsRegisterWithModelsAndTextures() {
+        for (String name : List.of("bronze_sheet", "platinum_rod", "platinum_wire", "coal_dense_charge")) {
+            assertTrue(BuiltInRegistries.ITEM.containsKey(
+                    ResourceLocation.fromNamespaceAndPath(BertieProgression.MODID, name)), name);
+            assertNotNull(getClass().getResource("/assets/bertieprogression/models/item/" + name + ".json"));
+            assertNotNull(getClass().getResource("/assets/bertieprogression/textures/item/" + name + ".png"));
+        }
+        assertTrue(BuiltInRegistries.ITEM.containsKey(
+                ResourceLocation.parse("bertieprogression:incomplete_platinum_wire")));
+    }
+
     @Test
     void missingFormsRegisterOnceWithModelsAndAnimatedSlurries() throws Exception {
         assertEquals(OreMaterials.ITEMS.size(), new HashSet<>(OreMaterials.ITEMS).size());
@@ -61,14 +66,4 @@ class OreMaterialsIntegrationTest {
         }
     }
 
-    @Test
-    void manaFluidRequirementRejectsMissingAndDifferentPotionContents() {
-        var stack = new ItemStack(Items.GLASS_BOTTLE);
-        assertFalse(ManaPotionFluids.matches(stack));
-        stack.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
-        assertFalse(ManaPotionFluids.matches(stack));
-        var mana = Holder.Reference.createStandAlone(BuiltInRegistries.POTION.asLookup(), ManaPotionFluids.POTION);
-        stack.set(DataComponents.POTION_CONTENTS, new PotionContents(mana));
-        assertTrue(ManaPotionFluids.matches(stack));
-    }
 }

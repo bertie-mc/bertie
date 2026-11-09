@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/naquadah"
@@ -11,9 +11,13 @@
       "count": 1
     },
     {
-      "id": "bertieprogression:naquadah_spec",
+      "id": "bertieprogression:osmium_spec",
       "count": 4
     }
   ],
-  "time": 100
+  "time": 100,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

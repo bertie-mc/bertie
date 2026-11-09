@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:copper_spec"
+    },
+    "D": {
+      "item": "mekanism:dirty_dust_copper"
+    }
+  },
+  "result": {
+    "id": "mekanism:dirty_dust_copper",
+    "count": 2
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "bronze_sheet": {
+    "source": "metal-forms/candidates/bronze-sheet-v036/sprites/bronze_sheet.png",
+    "sha256": "b0d8aabfdcd380aab50f7aa387e420222a7ae9ad40a51bc150c41fa509af5cb2"
+  },
+  "platinum_rod": {
+    "source": "metal-forms/candidates/platinum-rod-wire-v037/sprites/platinum_rod.png",
+    "sha256": "d19a3c022514ae5db4d528444b933130e9a4d6a3848cb243a3e933db11e470f2"
+  },
+  "platinum_wire": {
+    "source": "metal-forms/candidates/platinum-rod-wire-v037/sprites/platinum_wire.png",
+    "sha256": "ea540a225533a2b6cf075f4a1eab975f1f4f3333bb3219ac7beba502b0f7fdfc"
+  },
+  "coal_dense_charge": {
+    "source": "ore-processing/coal-dense-charge-v001/coal_dense_charge.png",
+    "sha256": "dfc8df4c626af5f71932572dc55e5a5d2888c627f856a842a5d4ffbaa606d1e0"
+  },
+  "bronze_slate": {
+    "source": "slates\\bronze\\candidates\\v001\\sprites\\bronze_slate.png",
+    "sha256": "6c204a4267fd421885adc9532d3e68be2663f875134cd3788132e05aa60bad6b"
+  },
+  "bronze_big_slate": {
+    "source": "slates\\bronze\\candidates\\v001\\sprites\\bronze_big_slate.png",
+    "sha256": "fdaee7532ed321c65afa7015aea4b2ae71d2c588e491de5217ab445b46d612e5"
+  }
+}

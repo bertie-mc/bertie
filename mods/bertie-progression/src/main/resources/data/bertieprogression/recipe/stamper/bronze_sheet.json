@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "berlordscarving:bronze_slate"
+  },
+  "mold": {
+    "count": 1,
+    "item": "bertieprogression:bronze_sheet"
+  },
+  "output": {
+    "id": "bertieprogression:bronze_sheet",
+    "count": 1
+  }
+}

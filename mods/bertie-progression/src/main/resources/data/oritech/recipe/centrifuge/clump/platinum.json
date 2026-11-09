@@ -1,5 +1,5 @@
 {
-  "type": "oritech:centrifuge",
+  "type": "oritech:centrifuge_fluid",
   "ingredients": [
     {
       "tag": "c:dirty_dusts/platinum"
@@ -11,9 +11,13 @@
       "count": 1
     },
     {
-      "id": "bertieprogression:platinum_spec",
+      "id": "bertieprogression:osmium_spec",
       "count": 4
     }
   ],
-  "time": 150
+  "time": 150,
+  "fluidInput": {
+    "fluid": "oritech:still_sheol_fire",
+    "amount": 100
+  }
 }

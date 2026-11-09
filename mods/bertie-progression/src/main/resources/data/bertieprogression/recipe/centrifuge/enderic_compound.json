@@ -6,7 +6,7 @@
     }
   ],
   "fluidInput": {
-    "fluid": "#bertieprogression:mana_potion",
+    "fluid": "irons_spellbooks:timeless_slurry",
     "amount": 500
   },
   "results": [

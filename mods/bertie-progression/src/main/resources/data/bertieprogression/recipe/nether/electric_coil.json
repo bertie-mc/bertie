@@ -1,0 +1,26 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " WTW ",
+    "WWMWW",
+    "WWMWW",
+    "WWMWW",
+    " WTW "
+  ],
+  "key": {
+    "W": {
+      "item": "bertieprogression:electrum_wire"
+    },
+    "T": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "M": {
+      "item": "anvilcraft:royal_steel_ingot"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:electric_coil",
+    "count": 1
+  },
+  "tier": 2
+}

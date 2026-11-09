@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:neptunium_spec"
+    },
+    "D": {
+      "item": "bertieprogression:neptunium_dirty_dust"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:neptunium_dirty_dust",
+    "count": 2
+  }
+}

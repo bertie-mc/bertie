@@ -1,0 +1,15 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "item": "bertieprogression:coal_dense_charge"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:carbon_fibre_strands"
+    }
+  ],
+  "time": 50
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:nickel_spec"
+    },
+    "D": {
+      "item": "bertieprogression:nickel_dirty_dust"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:nickel_dirty_dust",
+    "count": 2
+  }
+}

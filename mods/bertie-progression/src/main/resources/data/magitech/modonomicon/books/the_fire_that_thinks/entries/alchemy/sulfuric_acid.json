@@ -1,0 +1,23 @@
+{
+  "name": "book.magitech.the_fire_that_thinks.alchemy.sulfuric_acid.name",
+  "icon": {
+    "id": "oritech:still_sulfuric_acid_bucket"
+  },
+  "category": "magitech:alchemy",
+  "x": -4,
+  "y": -8,
+  "background_u_index": 1,
+  "background_v_index": 0,
+  "parents": [
+    {
+      "entry": "magitech:alchemy/alchemical_flask"
+    }
+  ],
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "title": "Sulfuric Acid",
+      "text": "Sulfuric Acid is produced by Oritech refining. The Rotary Condensentrator converts it to and from the Mekanism chemical."
+    }
+  ]
+}

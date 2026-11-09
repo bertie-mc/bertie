@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "berlordscarving:bronze_slate"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:bronze_sheet",
+      "count": 1
+    }
+  ]
+}

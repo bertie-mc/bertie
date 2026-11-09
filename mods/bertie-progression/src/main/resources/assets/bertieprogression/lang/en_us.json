@@ -277,5 +277,10 @@
   "item.bertieprogression.raw_voiderite": "Raw Voiderite",
   "item.bertieprogression.raw_bloody": "Raw Bloody",
   "item.bertieprogression.raw_ostrum": "Raw Ostrum",
-  "item.bertieprogression.platinum_coil": "Platinum Coil"
+  "item.bertieprogression.platinum_coil": "Resonant Coil",
+  "item.bertieprogression.bronze_sheet": "Bronze Sheet",
+  "item.bertieprogression.platinum_rod": "Platinum Rod",
+  "item.bertieprogression.platinum_wire": "Platinum Wire",
+  "item.bertieprogression.incomplete_platinum_wire": "Incomplete Platinum Wire",
+  "item.bertieprogression.coal_dense_charge": "Dense Coal Charge"
 }

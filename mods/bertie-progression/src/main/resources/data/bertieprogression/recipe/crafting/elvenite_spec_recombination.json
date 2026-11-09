@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:elvenite_spec"
+    },
+    "D": {
+      "item": "bertieprogression:elvenite_dirty_dust"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:elvenite_dirty_dust",
+    "count": 2
+  }
+}

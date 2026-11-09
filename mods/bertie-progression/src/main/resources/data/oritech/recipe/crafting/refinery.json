@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "BBBBB",
+    "BRRRB",
+    "BMKMB",
+    "BTUTB",
+    "DDDDD"
+  ],
+  "key": {
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "R": {
+      "item": "oritech:refinery_module_block"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "T": {
+      "item": "mekanism:basic_fluid_tank"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:refinery_block",
+    "count": 1
+  },
+  "tier": 2
+}

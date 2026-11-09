@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "bertieprogression:steel_sheet"
+    },
+    {
+      "tag": "c:carbon_fibre"
+    },
+    {
+      "tag": "c:carbon_fibre"
+    },
+    {
+      "item": "bertieprogression:steel_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:metal_beam_block",
+      "count": 16
+    }
+  ],
+  "time": 48
+}
