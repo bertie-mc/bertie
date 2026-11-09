@@ -242,21 +242,10 @@
 		}
 		{
 			id: "627F81216BBEC39C"
-			icon: {
-				id: "oritech:pulverizer_block"
-			}
-			tasks: [
-				{
-					id: "62B18F8E87B14893"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:pulverizer_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62B18F8E87B14893"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: -4.500d
 		}
@@ -338,21 +327,10 @@
 		}
 		{
 			id: "62A48C1DFCC52A6E"
-			icon: {
-				id: "oritech:powered_furnace_block"
-			}
-			tasks: [
-				{
-					id: "62F10D1E8F35F771"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:powered_furnace_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62F10D1E8F35F771"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: -1.500d
 		}
@@ -692,41 +670,19 @@
 		}
 		{
 			id: "629F225F3D608734"
-			icon: {
-				id: "oritech:basic_generator_block"
-			}
-			tasks: [
-				{
-					id: "6204E6392F539B95"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:basic_generator_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "6204E6392F539B95"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: 7.500d
 		}
 		{
 			id: "62A217A8A877BABD"
-			icon: {
-				id: "oritech:lava_generator_block"
-			}
-			tasks: [
-				{
-					id: "62AC33B34C8D1E33"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:lava_generator_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62AC33B34C8D1E33"
+				type: "checkmark"
+			}]
 			x: 2.250d
 			y: 7.500d
 		}
@@ -772,21 +728,10 @@
 		}
 		{
 			id: "6275CC3B17B7D2B6"
-			icon: {
-				id: "oritech:steam_engine_block"
-			}
-			tasks: [
-				{
-					id: "62AF3F3CEF1A03AB"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:steam_engine_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62AF3F3CEF1A03AB"
+				type: "checkmark"
+			}]
 			x: 2.250d
 			y: 9.750d
 		}

@@ -288,25 +288,10 @@
 		}
 		{
 			id: "61007F7CC4BF1105"
-			icon: {
-				id: "mekanism:electrolytic_separator"
-			}
-			tasks: [
-				{
-					id: "61CFA4A7C88F4A48"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:electrolytic_separator)item(mekmm:large_electrolytic_separator))"
-							"minecraft:custom_name": "{\"text\": \"Electrolytic Separator\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61CFA4A7C88F4A48"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"61DA1C428DC2A5D1"
@@ -344,25 +329,10 @@
 		}
 		{
 			id: "61DA1C428DC2A5D1"
-			icon: {
-				id: "mekanism:enrichment_chamber"
-			}
-			tasks: [
-				{
-					id: "61109BA9C5D1B147"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:enrichment_chamber)item(mekanism:advanced_enriching_factory)item(mekanism:basic_enriching_factory)item(mekanism:elite_enriching_factory)item(mekanism:ultimate_enriching_factory)item(mekanism_extras:absolute_enriching_factory)item(mekanism_extras:cosmic_enriching_factory)item(mekanism_extras:infinite_enriching_factory)item(mekanism_extras:supreme_enriching_factory))"
-							"minecraft:custom_name": "{\"text\": \"Enrichment Chamber\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61109BA9C5D1B147"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
@@ -422,25 +392,10 @@
 		}
 		{
 			id: "6170554009D736BD"
-			icon: {
-				id: "mekanism:metallurgic_infuser"
-			}
-			tasks: [
-				{
-					id: "61ED44A8EAFFDC92"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:metallurgic_infuser)item(mekanism:advanced_infusing_factory)item(mekanism:basic_infusing_factory)item(mekanism:elite_infusing_factory)item(mekanism:ultimate_infusing_factory)item(mekanism_extras:absolute_infusing_factory)item(mekanism_extras:cosmic_infusing_factory)item(mekanism_extras:infinite_infusing_factory)item(mekanism_extras:supreme_infusing_factory))"
-							"minecraft:custom_name": "{\"text\": \"Metallurgic Infuser\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61ED44A8EAFFDC92"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: 0.000d
 		}
@@ -500,25 +455,10 @@
 		}
 		{
 			id: "61757D6F0FE96778"
-			icon: {
-				id: "mekanism:pressurized_reaction_chamber"
-			}
-			tasks: [
-				{
-					id: "612482B2341C25CD"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:pressurized_reaction_chamber)item(mekanism_extras:absolute_pressurised_reacting_factory)item(mekanism_extras:cosmic_pressurised_reacting_factory)item(mekanism_extras:infinite_pressurised_reacting_factory)item(mekanism_extras:supreme_pressurised_reacting_factory)item(mekmm:advanced_pressurised_reacting_factory)item(mekmm:basic_pressurised_reacting_factory)item(mekmm:elite_pressurised_reacting_factory)item(mekmm:ultimate_pressurised_reacting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Pressurized Reaction Chamber\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "612482B2341C25CD"
+				type: "checkmark"
+			}]
 			dependencies: [
 				"61007F7CC4BF1105"
 				"6106455D06842EF3"
@@ -530,25 +470,10 @@
 		}
 		{
 			id: "6116BB6B786299A2"
-			icon: {
-				id: "mekanism:purification_chamber"
-			}
-			tasks: [
-				{
-					id: "6178AAB0A09A357C"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:purification_chamber)item(mekanism:advanced_purifying_factory)item(mekanism:basic_purifying_factory)item(mekanism:elite_purifying_factory)item(mekanism:ultimate_purifying_factory)item(mekanism_extras:absolute_purifying_factory)item(mekanism_extras:cosmic_purifying_factory)item(mekanism_extras:infinite_purifying_factory)item(mekanism_extras:supreme_purifying_factory))"
-							"minecraft:custom_name": "{\"text\": \"Purification Chamber\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "6178AAB0A09A357C"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"61007F7CC4BF1105"
