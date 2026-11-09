@@ -196,21 +196,10 @@
 		}
 		{
 			id: "6241C0AE0A7AF5E1"
-			icon: {
-				id: "oritech:laser_arm_block"
-			}
-			tasks: [
-				{
-					id: "6284B6923A321D9D"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:laser_arm_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "6284B6923A321D9D"
+				type: "checkmark"
+			}]
 			dependencies: [
 				"624BC5B6C71FD915"
 				"62EB2969EF64354C"

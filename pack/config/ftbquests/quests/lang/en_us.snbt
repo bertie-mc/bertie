@@ -2848,4 +2848,11 @@
 	quest.5C00000000009354.title: "Diesel Bucket"
 	quest.5C00000000009355.title: "Fuel Generator"
 	quest.5C00000000009356.title: "Bio Generator"
+	quest.5C00000000009357.title: "Combiner"
+	quest.5C00000000009358.title: "Dense Coal Charge"
+	quest.5C00000000009359.title: "Carbon Fibre"
+	quest.5C0000000000935A.title: "Enderic Compound"
+	quest.5C0000000000935B.title: "Enderic Lens"
+	quest.5C0000000000935C.title: "Enderic Laser"
+	quest.5C0000000000935D.title: "Fluid Addon"
 }

@@ -211,25 +211,10 @@
 		}
 		{
 			id: "618D7E07C30BC538"
-			icon: {
-				id: "mekanism:combiner"
-			}
-			tasks: [
-				{
-					id: "617C8CE1552C0CDF"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:combiner)item(mekanism:advanced_combining_factory)item(mekanism:basic_combining_factory)item(mekanism:elite_combining_factory)item(mekanism:ultimate_combining_factory)item(mekanism_extras:absolute_combining_factory)item(mekanism_extras:cosmic_combining_factory)item(mekanism_extras:infinite_combining_factory)item(mekanism_extras:supreme_combining_factory))"
-							"minecraft:custom_name": "{\"text\": \"Combiner\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "617C8CE1552C0CDF"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			x: -13.750d
 			y: -3.000d
