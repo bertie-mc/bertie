@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/neptunium"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:neptunium_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:neptunium_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

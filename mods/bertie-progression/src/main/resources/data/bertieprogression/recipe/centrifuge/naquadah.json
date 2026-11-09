@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/naquadah"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:naquadah_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:naquadah_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

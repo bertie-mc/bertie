@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:clumps/zinc"
+  },
+  "output": {
+    "id": "bertieprogression:zinc_dirty_dust",
+    "count": 1
+  }
+}

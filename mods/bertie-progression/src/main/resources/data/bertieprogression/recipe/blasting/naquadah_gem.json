@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bertieprogression:naquadah_gem"
+  },
+  "result": {
+    "id": "mekanism_extras:ingot_naquadah"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/corronium"
+  },
+  "output": {
+    "id": "bertieprogression:corronium_dust",
+    "count": 1
+  }
+}

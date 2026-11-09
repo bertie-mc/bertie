@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#c:dirty_dusts/iron",
+    "#c:dirty_dusts/copper",
+    "#c:dirty_dusts/gold",
+    "#c:dirty_dusts/uranium",
+    "#c:dirty_dusts/osmium",
+    "#c:dirty_dusts/tin",
+    "#c:dirty_dusts/lead",
+    "#c:dirty_dusts/naquadah",
+    "#c:dirty_dusts/nickel",
+    "#c:dirty_dusts/platinum",
+    "#c:dirty_dusts/zinc",
+    "#c:dirty_dusts/silver",
+    "#c:dirty_dusts/titanium",
+    "#c:dirty_dusts/tungsten",
+    "#c:dirty_dusts/voiderite",
+    "#c:dirty_dusts/desh",
+    "#c:dirty_dusts/neptunium",
+    "#c:dirty_dusts/tharsite",
+    "#c:dirty_dusts/corronium",
+    "#c:dirty_dusts/solerium",
+    "#c:dirty_dusts/eezo",
+    "#c:dirty_dusts/ostrum",
+    "#c:dirty_dusts/bloody",
+    "#c:dirty_dusts/elvenite"
+  ]
+}

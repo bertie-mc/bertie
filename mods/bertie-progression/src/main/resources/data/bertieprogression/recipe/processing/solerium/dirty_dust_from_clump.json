@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:clumps/solerium"
+  },
+  "output": {
+    "id": "bertieprogression:solerium_dirty_dust",
+    "count": 1
+  }
+}

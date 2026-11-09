@@ -124,4 +124,28 @@ Electrum-colored windings and a darker exposed core. Oritech declares CC0-1.0
 in its installed NeoForge metadata. Source: https://github.com/Rearth/Oritech
 Licence: https://creativecommons.org/publicdomain/zero/1.0/
 
+THIRD-PARTY DERIVATIVE WORK - ORE INTERMEDIATES AND PLATINUM COIL
+
+The missing ore intermediates listed in ore_materials.json use recoloured
+Mekanism dust, dirty dust, clump, shard, crystal and slurry templates from
+10.7.19.85. The MIT notice and permission reproduced above apply to these
+derivatives. Specs and most new metal Gems derive from Oritech 1.2.7's Small
+Clumps and Gems, by Rearth, under CC0-1.0. Titanium and Corronium Gem silhouettes
+and facets are individually drawn. Existing native Gems are not replaced.
+
+Dense Charges are original circular dust-pile drawings. Activated Crystals use
+the Mekanism crystal silhouette with a modified pulse. Their material palettes
+follow the corresponding native processing forms or ingots. The source asset
+mapping and hashes are recorded alongside the integrated files in ore_materials.json.
+
+Raw Voiderite, Raw Bloody and Raw Ostrum recolour Mojang's raw_iron.png under the
+same game-modification terms as Raw Eezo. Ostrum Ingot recolours AnvilCraft's
+titanium_ingot.png, by Gugle and XeKr, under LGPL-3.0, as described above for Eezo.
+
+  assets/bertieprogression/textures/item/platinum_coil.png
+
+derives from the same CC0 Oritech Magnetic Coil source as Electric Coil. Its
+windings follow Oritech Platinum and its exposed top core follows the Malum
+Malignant Pewter palette, preserving the coil's shade regions and geometry.
+
 Every other asset here is original.

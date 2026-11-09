@@ -27,6 +27,10 @@ Plus the current material chain â€” dragonbone frames and braces, ignitium 
 kinetic vanes and pattern plates, seals, resonances and attunements â€” each with its own
 texture under `assets/bertieprogression/textures/item/`.
 
+The [ore-intermediate family](docs/ore-materials.md) fills missing processing
+forms while retaining existing item IDs, with dry Centrifuge byproducts and
+explicit placeholders for undecided material pairings.
+
 ### Blocks
 
 `pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon

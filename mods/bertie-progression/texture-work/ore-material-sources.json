@@ -1,0 +1,1491 @@
+{
+  "artwork": "ore-processing/family-v004",
+  "sources": {
+    "iron": {
+      "ingot": {
+        "item": "minecraft:iron_ingot",
+        "texture": "minecraft:item/iron_ingot",
+        "source": "minecraft-1.21.1-client.jar",
+        "resource": "assets/minecraft/textures/item/iron_ingot.png",
+        "file": "iron_ingot.png"
+      },
+      "dust": {
+        "item": "oritech:iron_dust",
+        "texture": "oritech:item/iron_dust",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/iron_dust.png",
+        "file": "iron_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_iron",
+        "texture": "mekanism:item/crystal_iron",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_iron.png",
+        "file": "iron_crystal.png"
+      },
+      "gem": {
+        "item": "oritech:iron_gem",
+        "texture": "oritech:item/iron_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/iron_gem.png",
+        "file": "iron_gem.png"
+      }
+    },
+    "copper": {
+      "ingot": {
+        "item": "minecraft:copper_ingot",
+        "texture": "minecraft:item/copper_ingot",
+        "source": "minecraft-1.21.1-client.jar",
+        "resource": "assets/minecraft/textures/item/copper_ingot.png",
+        "file": "copper_ingot.png"
+      },
+      "dust": {
+        "item": "mekanism:dust_copper",
+        "texture": "mekanism:item/dust_copper",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/dust_copper.png",
+        "file": "copper_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_copper",
+        "texture": "mekanism:item/crystal_copper",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_copper.png",
+        "file": "copper_crystal.png"
+      },
+      "gem": {
+        "item": "oritech:copper_gem",
+        "texture": "oritech:item/copper_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/copper_gem.png",
+        "file": "copper_gem.png"
+      }
+    },
+    "gold": {
+      "ingot": {
+        "item": "minecraft:gold_ingot",
+        "texture": "minecraft:item/gold_ingot",
+        "source": "minecraft-1.21.1-client.jar",
+        "resource": "assets/minecraft/textures/item/gold_ingot.png",
+        "file": "gold_ingot.png"
+      },
+      "dust": {
+        "item": "oritech:gold_dust",
+        "texture": "oritech:item/gold_dust",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/gold_dust.png",
+        "file": "gold_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_gold",
+        "texture": "mekanism:item/crystal_gold",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_gold.png",
+        "file": "gold_crystal.png"
+      },
+      "gem": {
+        "item": "oritech:gold_gem",
+        "texture": "oritech:item/gold_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/gold_gem.png",
+        "file": "gold_gem.png"
+      }
+    },
+    "uranium": {
+      "ingot": {
+        "item": "anvilcraft:uranium_ingot",
+        "texture": "anvilcraft:item/uranium_ingot",
+        "source": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+        "resource": "assets/anvilcraft/textures/item/uranium_ingot.png",
+        "file": "uranium_ingot.png"
+      },
+      "dust": {
+        "item": "oritech:uranium_dust",
+        "texture": "oritech:item/uranium_dust",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/uranium_dust.png",
+        "file": "uranium_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_uranium",
+        "texture": "mekanism:item/crystal_uranium",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_uranium.png",
+        "file": "uranium_crystal.png"
+      },
+      "gem": {
+        "item": "oritech:uranium_gem",
+        "texture": "oritech:item/uranium_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/uranium_gem.png",
+        "file": "uranium_gem.png"
+      }
+    },
+    "osmium": {
+      "ingot": {
+        "item": "mekanism:ingot_osmium",
+        "texture": "mekanism:item/ingot_osmium",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/ingot_osmium.png",
+        "file": "osmium_ingot.png"
+      },
+      "dust": {
+        "item": "mekanism:dust_osmium",
+        "texture": "mekanism:item/dust_osmium",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/dust_osmium.png",
+        "file": "osmium_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_osmium",
+        "texture": "mekanism:item/crystal_osmium",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_osmium.png",
+        "file": "osmium_crystal.png"
+      }
+    },
+    "tin": {
+      "ingot": {
+        "item": "mekanism:ingot_tin",
+        "texture": "mekanism:item/ingot_tin",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/ingot_tin.png",
+        "file": "tin_ingot.png"
+      },
+      "dust": {
+        "item": "mekanism:dust_tin",
+        "texture": "mekanism:item/dust_tin",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/dust_tin.png",
+        "file": "tin_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_tin",
+        "texture": "mekanism:item/crystal_tin",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_tin.png",
+        "file": "tin_crystal.png"
+      }
+    },
+    "lead": {
+      "ingot": {
+        "item": "anvilcraft:lead_ingot",
+        "texture": "anvilcraft:item/lead_ingot",
+        "source": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+        "resource": "assets/anvilcraft/textures/item/lead_ingot.png",
+        "file": "lead_ingot.png"
+      },
+      "dust": {
+        "item": "mekanism:dust_lead",
+        "texture": "mekanism:item/dust_lead",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/dust_lead.png",
+        "file": "lead_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism:crystal_lead",
+        "texture": "mekanism:item/crystal_lead",
+        "source": "Mekanism-1.21.1-10.7.19.85.jar",
+        "resource": "assets/mekanism/textures/item/crystal_lead.png",
+        "file": "lead_crystal.png"
+      }
+    },
+    "naquadah": {
+      "ingot": {
+        "item": "mekanism_extras:ingot_naquadah",
+        "texture": "mekanism_extras:item/ingot_naquadah",
+        "source": "mekanism_extras-1.21.1-1.4.0.jar",
+        "resource": "assets/mekanism_extras/textures/item/ingot_naquadah.png",
+        "file": "naquadah_ingot.png"
+      },
+      "dust": {
+        "item": "mekanism_extras:dust_naquadah",
+        "texture": "mekanism_extras:item/dust_naquadah",
+        "source": "mekanism_extras-1.21.1-1.4.0.jar",
+        "resource": "assets/mekanism_extras/textures/item/dust_naquadah.png",
+        "file": "naquadah_dust.png"
+      },
+      "crystal": {
+        "item": "mekanism_extras:crystal_naquadah",
+        "texture": "mekanism_extras:item/crystal_naquadah",
+        "source": "mekanism_extras-1.21.1-1.4.0.jar",
+        "resource": "assets/mekanism_extras/textures/item/crystal_naquadah.png",
+        "file": "naquadah_crystal.png"
+      }
+    },
+    "nickel": {
+      "ingot": {
+        "item": "oritech:nickel_ingot",
+        "texture": "oritech:item/nickel_ingot",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/nickel_ingot.png",
+        "file": "nickel_ingot.png"
+      },
+      "dust": {
+        "item": "oritech:nickel_dust",
+        "texture": "oritech:item/nickel_dust",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/nickel_dust.png",
+        "file": "nickel_dust.png"
+      },
+      "clump": {
+        "item": "oritech:nickel_clump",
+        "texture": "oritech:item/nickel_clump",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/nickel_clump.png",
+        "file": "nickel_clump.png"
+      },
+      "gem": {
+        "item": "oritech:nickel_gem",
+        "texture": "oritech:item/nickel_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/nickel_gem.png",
+        "file": "nickel_gem.png"
+      }
+    },
+    "platinum": {
+      "ingot": {
+        "item": "oritech:platinum_ingot",
+        "texture": "oritech:item/platinum_ingot",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/platinum_ingot.png",
+        "file": "platinum_ingot.png"
+      },
+      "dust": {
+        "item": "oritech:platinum_dust",
+        "texture": "oritech:item/platinum_dust",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/platinum_dust.png",
+        "file": "platinum_dust.png"
+      },
+      "clump": {
+        "item": "oritech:platinum_clump",
+        "texture": "oritech:item/platinum_clump",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/platinum_clump.png",
+        "file": "platinum_clump.png"
+      },
+      "gem": {
+        "item": "oritech:platinum_gem",
+        "texture": "oritech:item/platinum_gem",
+        "source": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "resource": "assets/oritech/textures/item/platinum_gem.png",
+        "file": "platinum_gem.png"
+      }
+    },
+    "zinc": {
+      "ingot": {
+        "item": "magitech:zinc_ingot",
+        "texture": "magitech:item/zinc_ingot",
+        "source": "magitech-1.1.3.jar",
+        "resource": "assets/magitech/textures/item/zinc_ingot.png",
+        "file": "zinc_ingot.png"
+      }
+    },
+    "titanium": {
+      "ingot": {
+        "item": "anvilcraft:titanium_ingot",
+        "texture": "anvilcraft:item/titanium_ingot",
+        "source": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+        "resource": "assets/anvilcraft/textures/item/titanium_ingot.png",
+        "file": "titanium_ingot.png"
+      }
+    },
+    "voiderite": {
+      "ingot": {
+        "item": "armageddon_mod:voiderite",
+        "texture": "armageddon_mod:item/voiderite_ingot",
+        "source": "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar",
+        "resource": "assets/armageddon_mod/textures/item/voiderite_ingot.png",
+        "file": "voiderite_ingot.png"
+      }
+    },
+    "bloody": {
+      "ingot": {
+        "item": "armageddon_mod:bloody_ingot",
+        "texture": "armageddon_mod:item/bloody_ingot",
+        "source": "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar",
+        "resource": "assets/armageddon_mod/textures/item/bloody_ingot.png",
+        "file": "bloody_ingot.png"
+      }
+    },
+    "elvenite": {
+      "ingot": {
+        "item": "armageddon_mod:elvenite_ingot",
+        "texture": "armageddon_mod:item/elvenite_ingot",
+        "source": "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar",
+        "resource": "assets/armageddon_mod/textures/item/elvenite_ingot.png",
+        "file": "elvenite_ingot.png"
+      },
+      "raw": {
+        "item": "armageddon_mod:raw_elvenite",
+        "texture": "armageddon_mod:item/raw_elvenite",
+        "source": "Armageddon for 1.21.1 (v2.0.8c) - The Madness Update.jar",
+        "resource": "assets/armageddon_mod/textures/item/raw_elvenite.png",
+        "file": "elvenite_raw.png"
+      }
+    },
+    "neptunium": {
+      "ingot": {
+        "item": "stellaris:neptunium_ingot",
+        "texture": "stellaris:item/neptunium_ingot",
+        "source": "stellaris-1.21-neoforge-1.4.23.jar",
+        "resource": "assets/stellaris/textures/item/neptunium_ingot.png",
+        "file": "neptunium_ingot.png"
+      }
+    },
+    "tharsite": {
+      "ingot": {
+        "item": "stellaris:tharsite_ingot",
+        "texture": "stellaris:item/tharsite_ingot",
+        "source": "stellaris-1.21-neoforge-1.4.23.jar",
+        "resource": "assets/stellaris/textures/item/tharsite_ingot.png",
+        "file": "tharsite_ingot.png"
+      }
+    },
+    "corronium": {
+      "ingot": {
+        "item": "stellaris:corronium_ingot",
+        "texture": "stellaris:item/corronium_ingot",
+        "source": "stellaris-1.21-neoforge-1.4.23.jar",
+        "resource": "assets/stellaris/textures/item/corronium_ingot.png",
+        "file": "corronium_ingot.png"
+      }
+    },
+    "eezo": {
+      "ingot": {
+        "item": "bertieprogression:eezo_ingot",
+        "texture": "bertieprogression:item/eezo_ingot",
+        "source": "eezo_ingot.png",
+        "resource": "assets/bertieprogression/textures/item/eezo_ingot.png",
+        "file": "eezo_ingot.png"
+      }
+    },
+    "ostrum": {
+      "ore": {
+        "item": "stellaris:mars_ostrum_ore",
+        "texture": "stellaris:block/mars_ostrum_ore",
+        "source": "stellaris-1.21-neoforge-1.4.23.jar",
+        "resource": "assets/stellaris/textures/block/mars_ostrum_ore.png",
+        "file": "ostrum_ore.png"
+      }
+    },
+    "shared": {
+      "raw": {
+        "item": "minecraft:raw_iron",
+        "texture": "minecraft:item/raw_iron",
+        "source": "minecraft-1.21.1-client.jar",
+        "resource": "assets/minecraft/textures/item/raw_iron.png",
+        "file": "shared_raw.png"
+      },
+      "ingot": {
+        "item": "anvilcraft:titanium_ingot",
+        "texture": "anvilcraft:item/titanium_ingot",
+        "source": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+        "resource": "assets/anvilcraft/textures/item/titanium_ingot.png",
+        "file": "shared_ingot.png"
+      }
+    }
+  },
+  "palettes": {
+    "iron": [
+      "333333",
+      "525252",
+      "676767",
+      "757575",
+      "818182",
+      "9e9e9e",
+      "c0c0c0",
+      "e2e2e2",
+      "ffffff"
+    ],
+    "copper": [
+      "723622",
+      "b35433",
+      "c05935",
+      "ca613c",
+      "d76d47",
+      "df744e",
+      "e57a54",
+      "f19776",
+      "fcbeae"
+    ],
+    "gold": [
+      "6c4613",
+      "a05c05",
+      "ca7a00",
+      "e89e0c",
+      "f8c52f",
+      "fae22e",
+      "fdf266",
+      "fffab6",
+      "ffffff"
+    ],
+    "uranium": [
+      "005e23",
+      "008f1a",
+      "00c245",
+      "7be967",
+      "6efca8",
+      "87fed0",
+      "93fead",
+      "a9febc",
+      "c2fecf"
+    ],
+    "osmium": [
+      "54566d",
+      "758198",
+      "7d8aa1",
+      "8894ab",
+      "949fb5",
+      "9aa5ba",
+      "abbcc4",
+      "b6cdcc",
+      "eaf6fa"
+    ],
+    "tin": [
+      "6c6c6c",
+      "979595",
+      "9f9d9b",
+      "ada9a7",
+      "b8b4b0",
+      "cac4be",
+      "d7d1c5",
+      "f1e1d3",
+      "ffffff"
+    ],
+    "lead": [
+      "434d4d",
+      "657373",
+      "6b797a",
+      "718080",
+      "758585",
+      "798989",
+      "8b9a9a",
+      "95a6a2",
+      "bfcac9"
+    ],
+    "naquadah": [
+      "000000",
+      "040700",
+      "090d05",
+      "14190f",
+      "171c12",
+      "272d20",
+      "2e3526",
+      "3a4231",
+      "59644e"
+    ],
+    "nickel": [
+      "2b2100",
+      "392c00",
+      "4d3d09",
+      "5b4a10",
+      "735c0f",
+      "9b7f20",
+      "cbae4f",
+      "f2d988",
+      "f9f1d5"
+    ],
+    "platinum": [
+      "387265",
+      "439686",
+      "49b4ba",
+      "55c2b0",
+      "31d7b4",
+      "39e2ba",
+      "5ddbd3",
+      "5ddde4",
+      "8bf8fb"
+    ],
+    "zinc": [
+      "273a33",
+      "3a473f",
+      "384e42",
+      "4e6254",
+      "5b7060",
+      "7d9779",
+      "abbb9d",
+      "d8e1c2",
+      "ffffec"
+    ],
+    "silver": [
+      "121e1f",
+      "374142",
+      "616a6a",
+      "8e9493",
+      "acb0af",
+      "cdcfce",
+      "e1e3e2",
+      "f7f8f7",
+      "ffffff"
+    ],
+    "titanium": [
+      "333365",
+      "495175",
+      "596987",
+      "7c8c9d",
+      "94a0ab",
+      "c0cacb",
+      "d1d8d9",
+      "e1e5e5",
+      "ffffff"
+    ],
+    "tungsten": [
+      "191713",
+      "1f1a18",
+      "2a2422",
+      "383030",
+      "484244",
+      "695c65",
+      "967e8a",
+      "b49ba7",
+      "d0bcc5"
+    ],
+    "voiderite": [
+      "191826",
+      "372f44",
+      "52366a",
+      "793a96",
+      "ac42c3",
+      "d654dd",
+      "e572da",
+      "e693d1",
+      "e5b3d8"
+    ],
+    "desh": [
+      "5b253b",
+      "7a3045",
+      "9e4539",
+      "b6573c",
+      "c77142",
+      "d68d4d",
+      "e1a755",
+      "e9ba5d",
+      "f0d161"
+    ],
+    "neptunium": [
+      "0b1111",
+      "2d3a3a",
+      "384646",
+      "435252",
+      "4a5959",
+      "4e5d5d",
+      "546363",
+      "5b6a6a",
+      "7d8b8b"
+    ],
+    "tharsite": [
+      "a60023",
+      "ca090d",
+      "d71002",
+      "ff240f",
+      "ff4012",
+      "fd6416",
+      "fb801a",
+      "fca625",
+      "ffcf7c"
+    ],
+    "corronium": [
+      "110b08",
+      "0f4408",
+      "005b00",
+      "006b00",
+      "007a00",
+      "876f53",
+      "00c600",
+      "00ff00",
+      "ddffc9"
+    ],
+    "solerium": [
+      "8f1e00",
+      "b74600",
+      "d76500",
+      "f49c00",
+      "ffc800",
+      "ffdf2e",
+      "ffef21",
+      "ffff3a",
+      "ffffd9"
+    ],
+    "eezo": [
+      "1c1c1c",
+      "333333",
+      "454545",
+      "575757",
+      "696969",
+      "7c7c7c",
+      "979797",
+      "b2b2b2",
+      "c6c6c6"
+    ],
+    "ostrum": [
+      "302929",
+      "372e2e",
+      "3e3434",
+      "463a3a",
+      "504343",
+      "5b4c4c",
+      "685656",
+      "756161",
+      "826c6c"
+    ],
+    "bloody": [
+      "28011a",
+      "330121",
+      "48022f",
+      "5f0302",
+      "740301",
+      "70032b",
+      "910604",
+      "b11b03",
+      "d6380c"
+    ],
+    "elvenite": [
+      "4c2f37",
+      "6b424d",
+      "694e55",
+      "87604e",
+      "9f7070",
+      "d99b4c",
+      "eaae64",
+      "ffd457",
+      "ffff96"
+    ]
+  },
+  "templates": [
+    {
+      "file": "mekanism__dust_iron.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/dust_iron.png"
+    },
+    {
+      "file": "mekanism__dirty_dust_iron.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/dirty_dust_iron.png"
+    },
+    {
+      "file": "mekanism__clump_iron.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/clump_iron.png"
+    },
+    {
+      "file": "mekanism__crystal_iron.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/crystal_iron.png"
+    },
+    {
+      "file": "mekanism__shard_iron.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/shard_iron.png"
+    },
+    {
+      "file": "mekanism__clump_copper.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/clump_copper.png"
+    },
+    {
+      "file": "mekanism__clump_osmium.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/item/clump_osmium.png"
+    },
+    {
+      "file": "mekanism__clean.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/slurry/clean.png"
+    },
+    {
+      "file": "mekanism__dirty.png",
+      "jar": "Mekanism-1.21.1-10.7.19.85.jar",
+      "resource": "assets/mekanism/textures/slurry/dirty.png"
+    },
+    {
+      "file": "oritech__small_iron_clump.png",
+      "jar": "oritech-neoforge-1.21.1-1.2.7.jar",
+      "resource": "assets/oritech/textures/item/small_iron_clump.png"
+    },
+    {
+      "file": "oritech__small_nickel_clump.png",
+      "jar": "oritech-neoforge-1.21.1-1.2.7.jar",
+      "resource": "assets/oritech/textures/item/small_nickel_clump.png"
+    },
+    {
+      "file": "oritech__iron_gem.png",
+      "jar": "oritech-neoforge-1.21.1-1.2.7.jar",
+      "resource": "assets/oritech/textures/item/iron_gem.png"
+    },
+    {
+      "file": "anvilcraft__silver_ingot.png",
+      "jar": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+      "resource": "assets/anvilcraft/textures/item/silver_ingot.png"
+    },
+    {
+      "file": "anvilcraft__tungsten_ingot.png",
+      "jar": "anvilcraft-neoforge-1.21.1-1.5.3.jar",
+      "resource": "assets/anvilcraft/textures/item/tungsten_ingot.png"
+    },
+    {
+      "file": "stellaris__desh_ingot.png",
+      "jar": "stellaris-1.21-neoforge-1.4.23.jar",
+      "resource": "assets/stellaris/textures/item/desh_ingot.png"
+    },
+    {
+      "file": "stellaris__solerium.png",
+      "jar": "stellaris-1.21-neoforge-1.4.23.jar",
+      "resource": "assets/stellaris/textures/item/solerium.png"
+    },
+    {
+      "file": "stellaris__raw_solerium.png",
+      "jar": "stellaris-1.21-neoforge-1.4.23.jar",
+      "resource": "assets/stellaris/textures/item/raw_solerium.png"
+    }
+  ],
+  "platinum_coil": {
+    "scope": "installed material references for Platinum Coil v035",
+    "materials": [
+      {
+        "item_id": "oritech:platinum_ingot",
+        "display_name": "Platinum Ingot",
+        "jar": "oritech-neoforge-1.21.1-1.2.7.jar",
+        "jar_sha256": "aedc93e11b79dd4856ce847b0e48e84a49e8c7424ff5aae6d693e9b5711b11d0",
+        "model": "assets/oritech/models/item/platinum_ingot.json",
+        "model_sha256": "8b1c5a89d151e8e99966843318ce221121203a3f0ecd6b5ad6de9d9fd073270d",
+        "texture_reference": "oritech:item/platinum_ingot",
+        "texture": "assets/oritech/textures/item/platinum_ingot.png",
+        "texture_sha256": "71efc1da78551277738669b53f16f97157d965fbf4560f6707d723324c6ef289",
+        "reference_file": "platinum_ingot.png",
+        "size": [
+          16,
+          16
+        ],
+        "animation": null,
+        "palette": [
+          {
+            "hex": "#164046",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#154243",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#184548",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#19464d",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#184748",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#19484c",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#18494a",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#18494b",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#19494c",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#194c4c",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#1b4c54",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#1a4e51",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#1b5054",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#1e545a",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#1c5558",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#226967",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#22696a",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#246966",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#24696d",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#246b70",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#246c70",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#246d6d",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#256e6c",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#256e72",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#257072",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#257171",
+            "alpha": 255,
+            "pixels": 3
+          },
+          {
+            "hex": "#257172",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#257470",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#257473",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2a8081",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2b8083",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2b8588",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2b8686",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2c8889",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#2e8c8c",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#499d8f",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#499d90",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#499f91",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#49a091",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4aa092",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4aa194",
+            "alpha": 255,
+            "pixels": 2
+          },
+          {
+            "hex": "#4ba194",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4ea194",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4ba295",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4ba496",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4da699",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#53a894",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#4da99d",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#54ab96",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#51ada1",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#51aea0",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#51b0a2",
+            "alpha": 255,
+            "pixels": 2
+          },
+          {
+            "hex": "#51b2a4",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#5ab7a3",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#57baab",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#58bbac",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#58bbae",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#66b8a6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#66b8a9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#5cbdab",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#6fb9a9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#5fc4b4",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#66c3af",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#62c6c2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#66ccc8",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#66cecc",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#72d1c3",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#72d1c7",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#73d1cd",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#75d2c8",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#8acfbb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#7fd5ca",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#80d6c9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#80d7ce",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#99d3c2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#88d9ca",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#8edacb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#8fdad3",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#90dbcd",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#9cdbcc",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#95ddce",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#97ddd2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#9aded0",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a0e0d5",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a6dfd5",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a5e1d6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a6e3d6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a7e3d8",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#a9e3d6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#aae4d7",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#abe4d6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#ade4d9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#b1e6d9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#b3e6db",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#b8e8e0",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#bae9df",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c2e8d8",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c2e8d9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#bceade",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#bceadf",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#beeadf",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#bfeadf",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c1eae1",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c6ece3",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c6ece5",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#c6ede2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#cbeee5",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#ccefe4",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#cfefe6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d1f0e6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d2f0e6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d3f0e6",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d5f1e7",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d5f2e8",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d7f2e9",
+            "alpha": 255,
+            "pixels": 2
+          },
+          {
+            "hex": "#d8f2eb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#d8f3eb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#ddf3eb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#ddf4ec",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#def5ed",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#e0f5ed",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#e1f6ee",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#e4f6ef",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#e7f8f2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#e9f8f2",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#ebf9f4",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#f3fcf9",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#f8fcfb",
+            "alpha": 255,
+            "pixels": 1
+          },
+          {
+            "hex": "#fcfefe",
+            "alpha": 255,
+            "pixels": 1
+          }
+        ]
+      },
+      {
+        "item_id": "malum:malignant_pewter_ingot",
+        "display_name": "Malignant Pewter Ingot",
+        "jar": "malum-1.21.1-1.8.2.jar",
+        "jar_sha256": "38f4fa53e8da9e3d67aa5f54f98fd7c83cb342f0463ce5c63a6864229c88efa8",
+        "model": "assets/malum/models/item/malignant_pewter_ingot.json",
+        "model_sha256": "bf6df01eb2c967afbec2025f02d4874ddda7287ca39c449a7e4ecc913e5bff7a",
+        "texture_reference": "malum:item/malignant_pewter_ingot",
+        "texture": "assets/malum/textures/item/malignant_pewter_ingot.png",
+        "texture_sha256": "b6ea2033e071683585ab8e770add4468f0df37b27487e5bf7ba3e09c65dc699d",
+        "reference_file": "malignant_pewter_ingot.png",
+        "size": [
+          16,
+          16
+        ],
+        "animation": null,
+        "palette": [
+          {
+            "hex": "#291438",
+            "alpha": 255,
+            "pixels": 21
+          },
+          {
+            "hex": "#38204d",
+            "alpha": 255,
+            "pixels": 4
+          },
+          {
+            "hex": "#4d2450",
+            "alpha": 255,
+            "pixels": 2
+          },
+          {
+            "hex": "#8108e5",
+            "alpha": 255,
+            "pixels": 11
+          },
+          {
+            "hex": "#7e195f",
+            "alpha": 255,
+            "pixels": 5
+          },
+          {
+            "hex": "#4a385c",
+            "alpha": 255,
+            "pixels": 6
+          },
+          {
+            "hex": "#5e4870",
+            "alpha": 255,
+            "pixels": 15
+          },
+          {
+            "hex": "#705b7c",
+            "alpha": 255,
+            "pixels": 7
+          },
+          {
+            "hex": "#947aa3",
+            "alpha": 255,
+            "pixels": 11
+          },
+          {
+            "hex": "#c9a1d0",
+            "alpha": 255,
+            "pixels": 25
+          },
+          {
+            "hex": "#eccef6",
+            "alpha": 255,
+            "pixels": 20
+          },
+          {
+            "hex": "#ffeaf7",
+            "alpha": 255,
+            "pixels": 8
+          }
+        ]
+      }
+    ]
+  }
+}

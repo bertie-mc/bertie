@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge_fluid",
+  "ingredients": [
+    {
+      "item": "malum:warp_flux"
+    }
+  ],
+  "fluidInput": {
+    "fluid": "#bertieprogression:mana_potion",
+    "amount": 500
+  },
+  "results": [
+    {
+      "id": "oritech:enderic_compound",
+      "count": 8
+    }
+  ],
+  "time": 400
+}

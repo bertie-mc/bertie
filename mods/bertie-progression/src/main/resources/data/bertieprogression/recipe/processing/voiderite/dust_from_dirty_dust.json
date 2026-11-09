@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/voiderite"
+  },
+  "output": {
+    "id": "bertieprogression:voiderite_dust",
+    "count": 1
+  }
+}

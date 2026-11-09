@@ -1,0 +1,2178 @@
+{
+  "materials": [
+    {
+      "name": "iron",
+      "items": {
+        "dust": "oritech:iron_dust",
+        "dirty_dust": "mekanism:dirty_dust_iron",
+        "clump": "mekanism:clump_iron",
+        "gem": "oritech:iron_gem",
+        "shard": "mekanism:shard_iron",
+        "crystal": "mekanism:crystal_iron",
+        "spec": "bertieprogression:iron_spec",
+        "dense_charge": "bertieprogression:iron_dense_charge",
+        "activated_crystal": "bertieprogression:iron_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_iron",
+        "clean": "mekanism:clean_iron"
+      },
+      "ingot": "minecraft:iron_ingot",
+      "byproduct": "nickel",
+      "placeholder": false
+    },
+    {
+      "name": "copper",
+      "items": {
+        "dust": "mekanism:dust_copper",
+        "dirty_dust": "mekanism:dirty_dust_copper",
+        "clump": "mekanism:clump_copper",
+        "gem": "oritech:copper_gem",
+        "shard": "mekanism:shard_copper",
+        "crystal": "mekanism:crystal_copper",
+        "spec": "bertieprogression:copper_spec",
+        "dense_charge": "bertieprogression:copper_dense_charge",
+        "activated_crystal": "bertieprogression:copper_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_copper",
+        "clean": "mekanism:clean_copper"
+      },
+      "ingot": "minecraft:copper_ingot",
+      "byproduct": "gold",
+      "placeholder": false
+    },
+    {
+      "name": "gold",
+      "items": {
+        "dust": "oritech:gold_dust",
+        "dirty_dust": "mekanism:dirty_dust_gold",
+        "clump": "mekanism:clump_gold",
+        "gem": "oritech:gold_gem",
+        "shard": "mekanism:shard_gold",
+        "crystal": "mekanism:crystal_gold",
+        "spec": "bertieprogression:gold_spec",
+        "dense_charge": "bertieprogression:gold_dense_charge",
+        "activated_crystal": "bertieprogression:gold_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_gold",
+        "clean": "mekanism:clean_gold"
+      },
+      "ingot": "minecraft:gold_ingot",
+      "byproduct": "copper",
+      "placeholder": false
+    },
+    {
+      "name": "uranium",
+      "items": {
+        "dust": "oritech:uranium_dust",
+        "dirty_dust": "mekanism:dirty_dust_uranium",
+        "clump": "mekanism:clump_uranium",
+        "gem": "oritech:uranium_gem",
+        "shard": "mekanism:shard_uranium",
+        "crystal": "mekanism:crystal_uranium",
+        "spec": "bertieprogression:uranium_spec",
+        "dense_charge": "bertieprogression:uranium_dense_charge",
+        "activated_crystal": "bertieprogression:uranium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_uranium",
+        "clean": "mekanism:clean_uranium"
+      },
+      "ingot": "anvilcraft:uranium_ingot",
+      "byproduct": "uranium",
+      "placeholder": true
+    },
+    {
+      "name": "osmium",
+      "items": {
+        "dust": "mekanism:dust_osmium",
+        "dirty_dust": "mekanism:dirty_dust_osmium",
+        "clump": "mekanism:clump_osmium",
+        "gem": "bertieprogression:osmium_gem",
+        "shard": "mekanism:shard_osmium",
+        "crystal": "mekanism:crystal_osmium",
+        "spec": "bertieprogression:osmium_spec",
+        "dense_charge": "bertieprogression:osmium_dense_charge",
+        "activated_crystal": "bertieprogression:osmium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_osmium",
+        "clean": "mekanism:clean_osmium"
+      },
+      "ingot": "mekanism:ingot_osmium",
+      "byproduct": "platinum",
+      "placeholder": false
+    },
+    {
+      "name": "tin",
+      "items": {
+        "dust": "mekanism:dust_tin",
+        "dirty_dust": "mekanism:dirty_dust_tin",
+        "clump": "mekanism:clump_tin",
+        "gem": "bertieprogression:tin_gem",
+        "shard": "mekanism:shard_tin",
+        "crystal": "mekanism:crystal_tin",
+        "spec": "bertieprogression:tin_spec",
+        "dense_charge": "bertieprogression:tin_dense_charge",
+        "activated_crystal": "bertieprogression:tin_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_tin",
+        "clean": "mekanism:clean_tin"
+      },
+      "ingot": "mekanism:ingot_tin",
+      "byproduct": "lead",
+      "placeholder": false
+    },
+    {
+      "name": "lead",
+      "items": {
+        "dust": "mekanism:dust_lead",
+        "dirty_dust": "mekanism:dirty_dust_lead",
+        "clump": "mekanism:clump_lead",
+        "gem": "bertieprogression:lead_gem",
+        "shard": "mekanism:shard_lead",
+        "crystal": "mekanism:crystal_lead",
+        "spec": "bertieprogression:lead_spec",
+        "dense_charge": "bertieprogression:lead_dense_charge",
+        "activated_crystal": "bertieprogression:lead_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism:dirty_lead",
+        "clean": "mekanism:clean_lead"
+      },
+      "ingot": "anvilcraft:lead_ingot",
+      "byproduct": "tin",
+      "placeholder": false
+    },
+    {
+      "name": "naquadah",
+      "items": {
+        "dust": "mekanism_extras:dust_naquadah",
+        "dirty_dust": "mekanism_extras:dirty_dust_naquadah",
+        "clump": "mekanism_extras:clump_naquadah",
+        "gem": "bertieprogression:naquadah_gem",
+        "shard": "mekanism_extras:shard_naquadah",
+        "crystal": "mekanism_extras:crystal_naquadah",
+        "spec": "bertieprogression:naquadah_spec",
+        "dense_charge": "bertieprogression:naquadah_dense_charge",
+        "activated_crystal": "bertieprogression:naquadah_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "mekanism_extras:dirty_naquadah",
+        "clean": "mekanism_extras:clean_naquadah"
+      },
+      "ingot": "mekanism_extras:ingot_naquadah",
+      "byproduct": "naquadah",
+      "placeholder": true
+    },
+    {
+      "name": "nickel",
+      "items": {
+        "dust": "oritech:nickel_dust",
+        "dirty_dust": "bertieprogression:nickel_dirty_dust",
+        "clump": "oritech:nickel_clump",
+        "gem": "oritech:nickel_gem",
+        "shard": "bertieprogression:nickel_shard",
+        "crystal": "bertieprogression:nickel_crystal",
+        "spec": "bertieprogression:nickel_spec",
+        "dense_charge": "bertieprogression:nickel_dense_charge",
+        "activated_crystal": "bertieprogression:nickel_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_nickel",
+        "clean": "bertieprogression:clean_nickel"
+      },
+      "ingot": "oritech:nickel_ingot",
+      "byproduct": "platinum",
+      "placeholder": false
+    },
+    {
+      "name": "platinum",
+      "items": {
+        "dust": "oritech:platinum_dust",
+        "dirty_dust": "bertieprogression:platinum_dirty_dust",
+        "clump": "oritech:platinum_clump",
+        "gem": "oritech:platinum_gem",
+        "shard": "bertieprogression:platinum_shard",
+        "crystal": "bertieprogression:platinum_crystal",
+        "spec": "bertieprogression:platinum_spec",
+        "dense_charge": "bertieprogression:platinum_dense_charge",
+        "activated_crystal": "bertieprogression:platinum_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_platinum",
+        "clean": "bertieprogression:clean_platinum"
+      },
+      "ingot": "oritech:platinum_ingot",
+      "byproduct": "platinum",
+      "placeholder": true
+    },
+    {
+      "name": "zinc",
+      "items": {
+        "dust": "bertieprogression:zinc_dust",
+        "dirty_dust": "bertieprogression:zinc_dirty_dust",
+        "clump": "bertieprogression:zinc_clump",
+        "gem": "bertieprogression:zinc_gem",
+        "shard": "bertieprogression:zinc_shard",
+        "crystal": "bertieprogression:zinc_crystal",
+        "spec": "bertieprogression:zinc_spec",
+        "dense_charge": "bertieprogression:zinc_dense_charge",
+        "activated_crystal": "bertieprogression:zinc_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_zinc",
+        "clean": "bertieprogression:clean_zinc"
+      },
+      "ingot": "magitech:zinc_ingot",
+      "byproduct": "zinc",
+      "placeholder": true
+    },
+    {
+      "name": "silver",
+      "items": {
+        "dust": "bertieprogression:silver_dust",
+        "dirty_dust": "bertieprogression:silver_dirty_dust",
+        "clump": "bertieprogression:silver_clump",
+        "gem": "bertieprogression:silver_gem",
+        "shard": "bertieprogression:silver_shard",
+        "crystal": "bertieprogression:silver_crystal",
+        "spec": "bertieprogression:silver_spec",
+        "dense_charge": "bertieprogression:silver_dense_charge",
+        "activated_crystal": "bertieprogression:silver_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_silver",
+        "clean": "bertieprogression:clean_silver"
+      },
+      "ingot": "anvilcraft:silver_ingot",
+      "byproduct": "silver",
+      "placeholder": true
+    },
+    {
+      "name": "titanium",
+      "items": {
+        "dust": "bertieprogression:titanium_dust",
+        "dirty_dust": "bertieprogression:titanium_dirty_dust",
+        "clump": "bertieprogression:titanium_clump",
+        "gem": "bertieprogression:titanium_gem",
+        "shard": "bertieprogression:titanium_shard",
+        "crystal": "bertieprogression:titanium_crystal",
+        "spec": "bertieprogression:titanium_spec",
+        "dense_charge": "bertieprogression:titanium_dense_charge",
+        "activated_crystal": "bertieprogression:titanium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_titanium",
+        "clean": "bertieprogression:clean_titanium"
+      },
+      "ingot": "anvilcraft:titanium_ingot",
+      "byproduct": "titanium",
+      "placeholder": true
+    },
+    {
+      "name": "tungsten",
+      "items": {
+        "dust": "bertieprogression:tungsten_dust",
+        "dirty_dust": "bertieprogression:tungsten_dirty_dust",
+        "clump": "bertieprogression:tungsten_clump",
+        "gem": "bertieprogression:tungsten_gem",
+        "shard": "bertieprogression:tungsten_shard",
+        "crystal": "bertieprogression:tungsten_crystal",
+        "spec": "bertieprogression:tungsten_spec",
+        "dense_charge": "bertieprogression:tungsten_dense_charge",
+        "activated_crystal": "bertieprogression:tungsten_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_tungsten",
+        "clean": "bertieprogression:clean_tungsten"
+      },
+      "ingot": "anvilcraft:tungsten_ingot",
+      "byproduct": "tungsten",
+      "placeholder": true
+    },
+    {
+      "name": "voiderite",
+      "items": {
+        "dust": "bertieprogression:voiderite_dust",
+        "dirty_dust": "bertieprogression:voiderite_dirty_dust",
+        "clump": "bertieprogression:voiderite_clump",
+        "gem": "bertieprogression:voiderite_gem",
+        "shard": "bertieprogression:voiderite_shard",
+        "crystal": "bertieprogression:voiderite_crystal",
+        "spec": "bertieprogression:voiderite_spec",
+        "dense_charge": "bertieprogression:voiderite_dense_charge",
+        "activated_crystal": "bertieprogression:voiderite_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_voiderite",
+        "clean": "bertieprogression:clean_voiderite"
+      },
+      "ingot": "armageddon_mod:voiderite",
+      "byproduct": "voiderite",
+      "placeholder": true
+    },
+    {
+      "name": "desh",
+      "items": {
+        "dust": "bertieprogression:desh_dust",
+        "dirty_dust": "bertieprogression:desh_dirty_dust",
+        "clump": "bertieprogression:desh_clump",
+        "gem": "bertieprogression:desh_gem",
+        "shard": "bertieprogression:desh_shard",
+        "crystal": "bertieprogression:desh_crystal",
+        "spec": "bertieprogression:desh_spec",
+        "dense_charge": "bertieprogression:desh_dense_charge",
+        "activated_crystal": "bertieprogression:desh_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_desh",
+        "clean": "bertieprogression:clean_desh"
+      },
+      "ingot": "stellaris:desh_ingot",
+      "byproduct": "desh",
+      "placeholder": true
+    },
+    {
+      "name": "neptunium",
+      "items": {
+        "dust": "bertieprogression:neptunium_dust",
+        "dirty_dust": "bertieprogression:neptunium_dirty_dust",
+        "clump": "bertieprogression:neptunium_clump",
+        "gem": "bertieprogression:neptunium_gem",
+        "shard": "bertieprogression:neptunium_shard",
+        "crystal": "bertieprogression:neptunium_crystal",
+        "spec": "bertieprogression:neptunium_spec",
+        "dense_charge": "bertieprogression:neptunium_dense_charge",
+        "activated_crystal": "bertieprogression:neptunium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_neptunium",
+        "clean": "bertieprogression:clean_neptunium"
+      },
+      "ingot": "stellaris:neptunium_ingot",
+      "byproduct": "neptunium",
+      "placeholder": true
+    },
+    {
+      "name": "tharsite",
+      "items": {
+        "dust": "bertieprogression:tharsite_dust",
+        "dirty_dust": "bertieprogression:tharsite_dirty_dust",
+        "clump": "bertieprogression:tharsite_clump",
+        "gem": "bertieprogression:tharsite_gem",
+        "shard": "bertieprogression:tharsite_shard",
+        "crystal": "bertieprogression:tharsite_crystal",
+        "spec": "bertieprogression:tharsite_spec",
+        "dense_charge": "bertieprogression:tharsite_dense_charge",
+        "activated_crystal": "bertieprogression:tharsite_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_tharsite",
+        "clean": "bertieprogression:clean_tharsite"
+      },
+      "ingot": "stellaris:tharsite_ingot",
+      "byproduct": "tharsite",
+      "placeholder": true
+    },
+    {
+      "name": "corronium",
+      "items": {
+        "dust": "bertieprogression:corronium_dust",
+        "dirty_dust": "bertieprogression:corronium_dirty_dust",
+        "clump": "bertieprogression:corronium_clump",
+        "gem": "bertieprogression:corronium_gem",
+        "shard": "bertieprogression:corronium_shard",
+        "crystal": "bertieprogression:corronium_crystal",
+        "spec": "bertieprogression:corronium_spec",
+        "dense_charge": "bertieprogression:corronium_dense_charge",
+        "activated_crystal": "bertieprogression:corronium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_corronium",
+        "clean": "bertieprogression:clean_corronium"
+      },
+      "ingot": "stellaris:corronium_ingot",
+      "byproduct": "corronium",
+      "placeholder": true
+    },
+    {
+      "name": "solerium",
+      "items": {
+        "dust": "bertieprogression:solerium_dust",
+        "dirty_dust": "bertieprogression:solerium_dirty_dust",
+        "clump": "bertieprogression:solerium_clump",
+        "gem": "bertieprogression:solerium_gem",
+        "shard": "bertieprogression:solerium_shard",
+        "crystal": "bertieprogression:solerium_crystal",
+        "spec": "bertieprogression:solerium_spec",
+        "dense_charge": "bertieprogression:solerium_dense_charge",
+        "activated_crystal": "bertieprogression:solerium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_solerium",
+        "clean": "bertieprogression:clean_solerium"
+      },
+      "ingot": "stellaris:solerium",
+      "byproduct": "solerium",
+      "placeholder": true
+    },
+    {
+      "name": "eezo",
+      "items": {
+        "dust": "bertieprogression:eezo_dust",
+        "dirty_dust": "bertieprogression:eezo_dirty_dust",
+        "clump": "bertieprogression:eezo_clump",
+        "gem": "bertieprogression:eezo_gem",
+        "shard": "bertieprogression:eezo_shard",
+        "crystal": "bertieprogression:eezo_crystal",
+        "spec": "bertieprogression:eezo_spec",
+        "dense_charge": "bertieprogression:eezo_dense_charge",
+        "activated_crystal": "bertieprogression:eezo_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_eezo",
+        "clean": "bertieprogression:clean_eezo"
+      },
+      "ingot": "bertieprogression:eezo_ingot",
+      "byproduct": "eezo",
+      "placeholder": true
+    },
+    {
+      "name": "ostrum",
+      "items": {
+        "dust": "bertieprogression:ostrum_dust",
+        "dirty_dust": "bertieprogression:ostrum_dirty_dust",
+        "clump": "bertieprogression:ostrum_clump",
+        "gem": "bertieprogression:ostrum_gem",
+        "shard": "bertieprogression:ostrum_shard",
+        "crystal": "bertieprogression:ostrum_crystal",
+        "spec": "bertieprogression:ostrum_spec",
+        "dense_charge": "bertieprogression:ostrum_dense_charge",
+        "activated_crystal": "bertieprogression:ostrum_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_ostrum",
+        "clean": "bertieprogression:clean_ostrum"
+      },
+      "ingot": "bertieprogression:ostrum_ingot",
+      "byproduct": "ostrum",
+      "placeholder": true
+    },
+    {
+      "name": "bloody",
+      "items": {
+        "dust": "bertieprogression:bloody_dust",
+        "dirty_dust": "bertieprogression:bloody_dirty_dust",
+        "clump": "bertieprogression:bloody_clump",
+        "gem": "bertieprogression:bloody_gem",
+        "shard": "bertieprogression:bloody_shard",
+        "crystal": "bertieprogression:bloody_crystal",
+        "spec": "bertieprogression:bloody_spec",
+        "dense_charge": "bertieprogression:bloody_dense_charge",
+        "activated_crystal": "bertieprogression:bloody_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_bloody",
+        "clean": "bertieprogression:clean_bloody"
+      },
+      "ingot": "armageddon_mod:bloody_ingot",
+      "byproduct": "bloody",
+      "placeholder": true
+    },
+    {
+      "name": "elvenite",
+      "items": {
+        "dust": "bertieprogression:elvenite_dust",
+        "dirty_dust": "bertieprogression:elvenite_dirty_dust",
+        "clump": "bertieprogression:elvenite_clump",
+        "gem": "bertieprogression:elvenite_gem",
+        "shard": "bertieprogression:elvenite_shard",
+        "crystal": "bertieprogression:elvenite_crystal",
+        "spec": "bertieprogression:elvenite_spec",
+        "dense_charge": "bertieprogression:elvenite_dense_charge",
+        "activated_crystal": "bertieprogression:elvenite_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_elvenite",
+        "clean": "bertieprogression:clean_elvenite"
+      },
+      "ingot": "armageddon_mod:elvenite_ingot",
+      "byproduct": "elvenite",
+      "placeholder": true
+    }
+  ],
+  "new_items": [
+    "iron_spec",
+    "iron_dense_charge",
+    "iron_activated_crystal",
+    "copper_spec",
+    "copper_dense_charge",
+    "copper_activated_crystal",
+    "gold_spec",
+    "gold_dense_charge",
+    "gold_activated_crystal",
+    "uranium_spec",
+    "uranium_dense_charge",
+    "uranium_activated_crystal",
+    "osmium_gem",
+    "osmium_spec",
+    "osmium_dense_charge",
+    "osmium_activated_crystal",
+    "tin_gem",
+    "tin_spec",
+    "tin_dense_charge",
+    "tin_activated_crystal",
+    "lead_gem",
+    "lead_spec",
+    "lead_dense_charge",
+    "lead_activated_crystal",
+    "naquadah_gem",
+    "naquadah_spec",
+    "naquadah_dense_charge",
+    "naquadah_activated_crystal",
+    "nickel_dirty_dust",
+    "nickel_shard",
+    "nickel_crystal",
+    "nickel_spec",
+    "nickel_dense_charge",
+    "nickel_activated_crystal",
+    "platinum_dirty_dust",
+    "platinum_shard",
+    "platinum_crystal",
+    "platinum_spec",
+    "platinum_dense_charge",
+    "platinum_activated_crystal",
+    "zinc_dust",
+    "zinc_dirty_dust",
+    "zinc_clump",
+    "zinc_gem",
+    "zinc_shard",
+    "zinc_crystal",
+    "zinc_spec",
+    "zinc_dense_charge",
+    "zinc_activated_crystal",
+    "silver_dust",
+    "silver_dirty_dust",
+    "silver_clump",
+    "silver_gem",
+    "silver_shard",
+    "silver_crystal",
+    "silver_spec",
+    "silver_dense_charge",
+    "silver_activated_crystal",
+    "titanium_dust",
+    "titanium_dirty_dust",
+    "titanium_clump",
+    "titanium_gem",
+    "titanium_shard",
+    "titanium_crystal",
+    "titanium_spec",
+    "titanium_dense_charge",
+    "titanium_activated_crystal",
+    "tungsten_dust",
+    "tungsten_dirty_dust",
+    "tungsten_clump",
+    "tungsten_gem",
+    "tungsten_shard",
+    "tungsten_crystal",
+    "tungsten_spec",
+    "tungsten_dense_charge",
+    "tungsten_activated_crystal",
+    "voiderite_dust",
+    "voiderite_dirty_dust",
+    "voiderite_clump",
+    "voiderite_gem",
+    "voiderite_shard",
+    "voiderite_crystal",
+    "voiderite_spec",
+    "voiderite_dense_charge",
+    "voiderite_activated_crystal",
+    "desh_dust",
+    "desh_dirty_dust",
+    "desh_clump",
+    "desh_gem",
+    "desh_shard",
+    "desh_crystal",
+    "desh_spec",
+    "desh_dense_charge",
+    "desh_activated_crystal",
+    "neptunium_dust",
+    "neptunium_dirty_dust",
+    "neptunium_clump",
+    "neptunium_gem",
+    "neptunium_shard",
+    "neptunium_crystal",
+    "neptunium_spec",
+    "neptunium_dense_charge",
+    "neptunium_activated_crystal",
+    "tharsite_dust",
+    "tharsite_dirty_dust",
+    "tharsite_clump",
+    "tharsite_gem",
+    "tharsite_shard",
+    "tharsite_crystal",
+    "tharsite_spec",
+    "tharsite_dense_charge",
+    "tharsite_activated_crystal",
+    "corronium_dust",
+    "corronium_dirty_dust",
+    "corronium_clump",
+    "corronium_gem",
+    "corronium_shard",
+    "corronium_crystal",
+    "corronium_spec",
+    "corronium_dense_charge",
+    "corronium_activated_crystal",
+    "solerium_dust",
+    "solerium_dirty_dust",
+    "solerium_clump",
+    "solerium_gem",
+    "solerium_shard",
+    "solerium_crystal",
+    "solerium_spec",
+    "solerium_dense_charge",
+    "solerium_activated_crystal",
+    "eezo_dust",
+    "eezo_dirty_dust",
+    "eezo_clump",
+    "eezo_gem",
+    "eezo_shard",
+    "eezo_crystal",
+    "eezo_spec",
+    "eezo_dense_charge",
+    "eezo_activated_crystal",
+    "ostrum_dust",
+    "ostrum_dirty_dust",
+    "ostrum_clump",
+    "ostrum_gem",
+    "ostrum_shard",
+    "ostrum_crystal",
+    "ostrum_spec",
+    "ostrum_dense_charge",
+    "ostrum_activated_crystal",
+    "ostrum_ingot",
+    "bloody_dust",
+    "bloody_dirty_dust",
+    "bloody_clump",
+    "bloody_gem",
+    "bloody_shard",
+    "bloody_crystal",
+    "bloody_spec",
+    "bloody_dense_charge",
+    "bloody_activated_crystal",
+    "elvenite_dust",
+    "elvenite_dirty_dust",
+    "elvenite_clump",
+    "elvenite_gem",
+    "elvenite_shard",
+    "elvenite_crystal",
+    "elvenite_spec",
+    "elvenite_dense_charge",
+    "elvenite_activated_crystal",
+    "raw_voiderite",
+    "raw_bloody",
+    "raw_ostrum"
+  ],
+  "new_slurries": {
+    "nickel": 10190624,
+    "platinum": 3793594,
+    "zinc": 8230777,
+    "silver": 13488078,
+    "titanium": 12634827,
+    "tungsten": 6904933,
+    "voiderite": 14046429,
+    "desh": 14060877,
+    "neptunium": 5135709,
+    "tharsite": 16606230,
+    "corronium": 8875859,
+    "solerium": 16768814,
+    "eezo": 8158332,
+    "ostrum": 5983308,
+    "bloody": 7340843,
+    "elvenite": 14261068
+  },
+  "copied": [
+    {
+      "material": "iron",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/iron_spec.png",
+      "sha256": "14b37f8234ff4c7e5be42cbce10137c48852df6d67c84a919f6085a031267a6e"
+    },
+    {
+      "material": "iron",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/iron_dense_charge.png",
+      "sha256": "72520dc9df8871d84eec2c6eb47333fb6551ec58a09f185558a5c948a9ea5d50"
+    },
+    {
+      "material": "iron",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/iron_activated_crystal.png",
+      "sha256": "31a0649ccd9b28684ec2995b3337d1344179083c415d1e5ba26d8a4cc62eae1b"
+    },
+    {
+      "material": "copper",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/copper_spec.png",
+      "sha256": "e37bd47fe8b6e7f70cfdd2d2f837be47e11904343afe83deb474b18b0ac874f2"
+    },
+    {
+      "material": "copper",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/copper_dense_charge.png",
+      "sha256": "93e448da1b1eb293d3e69d69bf07e2de624d12941db94c0fcfc47eddb7aecde8"
+    },
+    {
+      "material": "copper",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/copper_activated_crystal.png",
+      "sha256": "97809ad66b9242c09052a30416a951a7ca8b38a7e47bca12d8ed3f32cf744a94"
+    },
+    {
+      "material": "gold",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/gold_spec.png",
+      "sha256": "8d6280fc49e0873081e304b105d0bc841c6bd0d7ed6c906a9e8491a5bfa7f3fd"
+    },
+    {
+      "material": "gold",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/gold_dense_charge.png",
+      "sha256": "c4918069b787efc570c558b79f14d24bc1aa64995a906b7090308df820c57f6b"
+    },
+    {
+      "material": "gold",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/gold_activated_crystal.png",
+      "sha256": "e764b9b173b6c9737f773b12b94e6f7c45246fbbbc36379c27e5d3a45b3e7640"
+    },
+    {
+      "material": "uranium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/uranium_spec.png",
+      "sha256": "9d8a8b498c3ec412e0c40dd22b7dfc29da702f0c09e27375b97dfb322c0a075d"
+    },
+    {
+      "material": "uranium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/uranium_dense_charge.png",
+      "sha256": "0c2456974b593e7d023167c45dae39e095050ce563acac2863fb8c70e99e8e55"
+    },
+    {
+      "material": "uranium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/uranium_activated_crystal.png",
+      "sha256": "bbde5ba5d139f96d99525986335aa3cb9cc97e3d69a66c90e5a9b138017195e3"
+    },
+    {
+      "material": "osmium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/osmium_gem.png",
+      "sha256": "090fb6b8df97a946f43649715e310a0ca6bf0164cd141e64e1cc020e94e07cfd"
+    },
+    {
+      "material": "osmium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/osmium_spec.png",
+      "sha256": "e479076f5317b09ffcb796657decaced21eabd31c6adb08fe4c7737a63c60203"
+    },
+    {
+      "material": "osmium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/osmium_dense_charge.png",
+      "sha256": "602793de1d939a6d207bc6f4fddea205702bd0629e455b7281b7da5b9820b326"
+    },
+    {
+      "material": "osmium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/osmium_activated_crystal.png",
+      "sha256": "9660bb3541f8b231470fca9d21c30f7f17526fceb59571883bcde585320768ba"
+    },
+    {
+      "material": "tin",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/tin_gem.png",
+      "sha256": "0878a8c1feb8c30b432ca4d3bfe97455ae537c87794783adf29985a90e34c6c4"
+    },
+    {
+      "material": "tin",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/tin_spec.png",
+      "sha256": "dfb25c5f91635f597ae73f11828810431cd21be35b6b913f72141b4f25029190"
+    },
+    {
+      "material": "tin",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/tin_dense_charge.png",
+      "sha256": "30b132654263acd596fee0860f86bf8ce2c2156b905a31db292f18c4e9f0e095"
+    },
+    {
+      "material": "tin",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/tin_activated_crystal.png",
+      "sha256": "5cba7dc0bd241b18141dc025b45d9cb1494cd4b63649cd976537eaa9c51476ea"
+    },
+    {
+      "material": "lead",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/lead_gem.png",
+      "sha256": "53a67929484b2df77c2363f1e555c58e503ecd330b5ed33c8a57352a84308107"
+    },
+    {
+      "material": "lead",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/lead_spec.png",
+      "sha256": "75771a8e302e4c24545b1b535fd6971a46869d8551dedfc6082078dfcf161019"
+    },
+    {
+      "material": "lead",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/lead_dense_charge.png",
+      "sha256": "72a5c7176637f3894fe1d80b45da619453a06e6f57afc5072e903fc4241e2032"
+    },
+    {
+      "material": "lead",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/lead_activated_crystal.png",
+      "sha256": "0a99b00786d996c27db470eed42f751f582b8b680a7aabcacbe39c5aa99141e5"
+    },
+    {
+      "material": "naquadah",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/naquadah_gem.png",
+      "sha256": "791c6dd5a5988aafa7ae1cc594de4e892dd0f9b76460f5db48e3f1e9606d9874"
+    },
+    {
+      "material": "naquadah",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/naquadah_spec.png",
+      "sha256": "ebf8e9f50d4dc36b89b6e6aa3c07dcd44acb2822f288337df851a0483737327e"
+    },
+    {
+      "material": "naquadah",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/naquadah_dense_charge.png",
+      "sha256": "9eb85eaf79aba57804e65575e931e7bbcc288ebed61ac8bfdc02148b7b179b7f"
+    },
+    {
+      "material": "naquadah",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/naquadah_activated_crystal.png",
+      "sha256": "70e01c02df7611dbc34b11dde4a6bef9485ab7a0a0760e55606f77d57ba5c1a8"
+    },
+    {
+      "material": "nickel",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/nickel_dirty_dust.png",
+      "sha256": "c64397e3c771aa27f0e95f8f2a0f7cf4b069137d7a3636cd3630ae518c96f5f6"
+    },
+    {
+      "material": "nickel",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/nickel_shard.png",
+      "sha256": "39a5dd217166bd566d73aab5f2af977fca20c7d631096d4baa60886eed4eb01e"
+    },
+    {
+      "material": "nickel",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/nickel_crystal.png",
+      "sha256": "ff280b9fe1bc6078d48c91eeff4f325e91c7e383110e449f34e7c52580e97b17"
+    },
+    {
+      "material": "nickel",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/nickel_spec.png",
+      "sha256": "14a5c356cd62c87b84d26e7f9736c418dfe828d750d226ab234306c5d28a2235"
+    },
+    {
+      "material": "nickel",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/nickel_dense_charge.png",
+      "sha256": "217066b273c399948f11dca566660bcb3d1af2458b1ad740bd25c60b4bc6efcb"
+    },
+    {
+      "material": "nickel",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/nickel_activated_crystal.png",
+      "sha256": "de141332e885bb556cc0d560c28a6732a918519340cb50c391db543f25acf8dc"
+    },
+    {
+      "material": "nickel",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_nickel.png",
+      "sha256": "115b2111aded5b957246b5be1407dd2c11c4dd116950fe9197db35c9f80065a9"
+    },
+    {
+      "material": "nickel",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_nickel.png",
+      "sha256": "e58cb531c7e29c68470b1c256be0ca3568a169c0d75ca2882e1f58fcca8783ca"
+    },
+    {
+      "material": "platinum",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/platinum_dirty_dust.png",
+      "sha256": "633e8e573d89ca558c1b944942c8c627fb7c3323e6785ac13ee759be1ded0a19"
+    },
+    {
+      "material": "platinum",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/platinum_shard.png",
+      "sha256": "c9ea5aa74bfb74e61fc5c91fd01140ce5037becd7d2ad255f4294c8c4c34d7a4"
+    },
+    {
+      "material": "platinum",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/platinum_crystal.png",
+      "sha256": "562e32d5790e2c07fd7d9ebde80c647ed2f42b868a79053ec26b61f61d5d8512"
+    },
+    {
+      "material": "platinum",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/platinum_spec.png",
+      "sha256": "b6d2b74a36dbc1c0ab0f90a740890b6480ec32331dab9bb242fc0f5ac65245dd"
+    },
+    {
+      "material": "platinum",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/platinum_dense_charge.png",
+      "sha256": "86ed5ec5e7c1f88aa1a6c609a4fc64087f1d07be64c7f71342e141088a5de7c7"
+    },
+    {
+      "material": "platinum",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/platinum_activated_crystal.png",
+      "sha256": "df4977c95cce03807a01a90d00025c6c9f595f57505595e1565b97e27276cde7"
+    },
+    {
+      "material": "platinum",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_platinum.png",
+      "sha256": "9dceb85694c7869f4dd1b3de66ffc627549ef4b423143ec5789a812816403f57"
+    },
+    {
+      "material": "platinum",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_platinum.png",
+      "sha256": "fc06dece878ef7ab3948f74ac66c4e283a67ef6fcd0c7c9bd07bf5408023d650"
+    },
+    {
+      "material": "zinc",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/zinc_dust.png",
+      "sha256": "b17a86faf97783dcdcd64b5cb743ce2a7590a4866cf939c7b29a1fa76fe27202"
+    },
+    {
+      "material": "zinc",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/zinc_dirty_dust.png",
+      "sha256": "eeb26c86e1b7e943fd129330b77f6ad9e867a34ff1c64325c6f9f632c85de991"
+    },
+    {
+      "material": "zinc",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/zinc_clump.png",
+      "sha256": "e547280bf018166bd660126996dbf0b4971143346786ba4aa707451a43a0d67e"
+    },
+    {
+      "material": "zinc",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/zinc_gem.png",
+      "sha256": "cdf89eed416d2d3260ba0c4e8f4b0680a10d1592a70b777286db2adcff4999b3"
+    },
+    {
+      "material": "zinc",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/zinc_shard.png",
+      "sha256": "3062d77f7c878c213e4a7ab69c3db2deb3b407511212dff001afb0bee39f9160"
+    },
+    {
+      "material": "zinc",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/zinc_crystal.png",
+      "sha256": "1d884ecde59927200b3a075dd9df759267b83ce1976ef19176f8c3beb3795abe"
+    },
+    {
+      "material": "zinc",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/zinc_spec.png",
+      "sha256": "3346d5afac79abe1fc2263216c1038b0b53ca8d5327a3f787c005df2e2f21845"
+    },
+    {
+      "material": "zinc",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/zinc_dense_charge.png",
+      "sha256": "87706d91317d9bca8c8fec308c0756e6b49838037d65a6ccf32ef8ad241ecf86"
+    },
+    {
+      "material": "zinc",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/zinc_activated_crystal.png",
+      "sha256": "ebbe9c473e28d556d3c0f04bcc71494000fe734aa57c33f2574da5de99cb9ea7"
+    },
+    {
+      "material": "zinc",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_zinc.png",
+      "sha256": "dc39c71750ae9e0a5486145dd5191d43c7e078eb30178272c5bc9e2dc8c51ee5"
+    },
+    {
+      "material": "zinc",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_zinc.png",
+      "sha256": "0f4a1a998ee3b34f8690dfb0ab399da5cd34e35ca0fc20c4443df2fce1e3f7bf"
+    },
+    {
+      "material": "silver",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/silver_dust.png",
+      "sha256": "b84d5e780c98607c5f27fb6ca0a3e8776fbd541386662cecab41f4f910e22bd6"
+    },
+    {
+      "material": "silver",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/silver_dirty_dust.png",
+      "sha256": "620df9a700ee0e7a94e12ccae29ede5e0b9f00e10bc59428d06d90c0d846f040"
+    },
+    {
+      "material": "silver",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/silver_clump.png",
+      "sha256": "0b4b29a857f3bd6c6c9ab331baa82a62a6d9fa3389104399809c471519c9d525"
+    },
+    {
+      "material": "silver",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/silver_gem.png",
+      "sha256": "47d2b98edf6bffb8bc095ce024951bdae7a572138fc0d6a64777c77df3a0514c"
+    },
+    {
+      "material": "silver",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/silver_shard.png",
+      "sha256": "b9f6bd317c55f1ee7bfe9a6d87c84debfe0793b18f4d1615a67040b912990715"
+    },
+    {
+      "material": "silver",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/silver_crystal.png",
+      "sha256": "17c39b54625043db16ffb170210fa570f0cca1b2415b7a4b2e8faeba29547260"
+    },
+    {
+      "material": "silver",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/silver_spec.png",
+      "sha256": "5abc37e705e0ad8fd63fdd0dc65d1073c935489f9bf43cd8603492028a49c75a"
+    },
+    {
+      "material": "silver",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/silver_dense_charge.png",
+      "sha256": "73e94d65850b92a94c45c039c8a8cbf1f6ab1741d3341096442cd39fa04c2a54"
+    },
+    {
+      "material": "silver",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/silver_activated_crystal.png",
+      "sha256": "3556420ea3c7346ad891296d7c123f08f2c4bd669fedb36ab95e81ae270b0d6e"
+    },
+    {
+      "material": "silver",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_silver.png",
+      "sha256": "96e1f7e13e6319b8823f7ebf7377933d9e13a7e7cde27dbf211a0a0b997fed2f"
+    },
+    {
+      "material": "silver",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_silver.png",
+      "sha256": "0169f1ebd1e384782a816acccd684d20d57aa15e88c87a04956451d605f89816"
+    },
+    {
+      "material": "titanium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/titanium_dust.png",
+      "sha256": "bcc9215e7684612d8a009f327c071057bf04cd597f525ee7a2b420a7b72570a5"
+    },
+    {
+      "material": "titanium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/titanium_dirty_dust.png",
+      "sha256": "58d9586421b01e586ce67b8fc1842c2ca43d13ab03cbfecd912d6a83024a1c9b"
+    },
+    {
+      "material": "titanium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/titanium_clump.png",
+      "sha256": "0fa122eea2cb0a1f5acb3b03aa69193c15887bdb7065b3b0dc4874a32f7efdf9"
+    },
+    {
+      "material": "titanium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/titanium_gem.png",
+      "sha256": "630a3d941aca7920a1844b84a5d58583a64b301d521fca42c179d59ef4f4cf5b"
+    },
+    {
+      "material": "titanium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/titanium_shard.png",
+      "sha256": "5dedc31e0e588ed27d88c0d5ae42dcbfe42badd13d98cc6b2110abfa7088c7b1"
+    },
+    {
+      "material": "titanium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/titanium_crystal.png",
+      "sha256": "e0f1a7bb0bd0458f5c76a710de0e6bf2123a0001807700c5500f5b9f8f23c85e"
+    },
+    {
+      "material": "titanium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/titanium_spec.png",
+      "sha256": "a5e6382ee46559dde27d1dcc201d2e281adcd479caf720bfb223a265284cc7f5"
+    },
+    {
+      "material": "titanium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/titanium_dense_charge.png",
+      "sha256": "85946ae3425dd924ca19a692dbfd7450ec1acc0d91ea0641c87d49626ff2496d"
+    },
+    {
+      "material": "titanium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/titanium_activated_crystal.png",
+      "sha256": "e81ba057851ab4a67af03fc3af0120c1bc9e88b5e13c278b3a4f594bb4e13429"
+    },
+    {
+      "material": "titanium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_titanium.png",
+      "sha256": "e5b39a9795e85c453d8aba7766d6cf23899fa2bd7df311432cd4694459466d7e"
+    },
+    {
+      "material": "titanium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_titanium.png",
+      "sha256": "3b4eebe39b1639d51b4f904fc42cc7c5ddc7785d6f29521081c10bcecda0c51f"
+    },
+    {
+      "material": "tungsten",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/tungsten_dust.png",
+      "sha256": "be37a74d28c5b8aa180c40ea6d7b54ba2d5fce3a578d5dcc94e0d3db720d43e2"
+    },
+    {
+      "material": "tungsten",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/tungsten_dirty_dust.png",
+      "sha256": "8e99b4ae79879c8c1688d00296e637e965a5f63b06ce5515d3a681ceda566dd6"
+    },
+    {
+      "material": "tungsten",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/tungsten_clump.png",
+      "sha256": "396fe33f52bf6a3f620e410959be404b41bdd73291a89eaff05f8caf746d5a75"
+    },
+    {
+      "material": "tungsten",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/tungsten_gem.png",
+      "sha256": "aec62b61235159aadfcd91031fec00469d7fdb253a48afd54cef60b0ffddcdc7"
+    },
+    {
+      "material": "tungsten",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/tungsten_shard.png",
+      "sha256": "bed19f4acbdfbd3268e5116a0681c673922e7ac02b22dd80232bbd8ed462c288"
+    },
+    {
+      "material": "tungsten",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/tungsten_crystal.png",
+      "sha256": "c313bf129aeed964754699a914fbc550de536db10f1bea9515765bcaec0a0d95"
+    },
+    {
+      "material": "tungsten",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/tungsten_spec.png",
+      "sha256": "45aaa8f3d19958115b0af0bf8aa09b8998ba001f7177df005f4b6ee5b3295a5d"
+    },
+    {
+      "material": "tungsten",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/tungsten_dense_charge.png",
+      "sha256": "4694eb553a777cec9efbb0f2c49a727adb5ac78d539481a1025882c15536faca"
+    },
+    {
+      "material": "tungsten",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/tungsten_activated_crystal.png",
+      "sha256": "ac457c76dbbe19ac337aec3ced42dcbc470e664cd238a8ece1dc7ad692164e6e"
+    },
+    {
+      "material": "tungsten",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_tungsten.png",
+      "sha256": "e9a63a939ac8a06d307ae405727af28eae2a78908bb87a9ee024b944b0a9c437"
+    },
+    {
+      "material": "tungsten",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_tungsten.png",
+      "sha256": "66cd218c28c918337eecc45229648a66503ab09779dcdbc96e8c3fc4539a75ea"
+    },
+    {
+      "material": "voiderite",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/voiderite_dust.png",
+      "sha256": "96191c489c7a16af5b0e440865ea8cd6d3135e25e5c19ea2f15ecede9a316ebf"
+    },
+    {
+      "material": "voiderite",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/voiderite_dirty_dust.png",
+      "sha256": "6adb87ca0785d44b279ac70680f3bfa3c9efc1c265c912a6585bf7267c849d0f"
+    },
+    {
+      "material": "voiderite",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/voiderite_clump.png",
+      "sha256": "d806e21d3244aed3c822d74f20d5287804230875f0852638832a9e31cfabba93"
+    },
+    {
+      "material": "voiderite",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/voiderite_gem.png",
+      "sha256": "b92b41eb693812e02d2986e8edfe9af88fe33f832ccc38ebe04d507ee0deb5a8"
+    },
+    {
+      "material": "voiderite",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/voiderite_shard.png",
+      "sha256": "cdf03f53f5f1f0290b899b360e0d3e44ddecd149122a0cc0c72ef1771f2ce2df"
+    },
+    {
+      "material": "voiderite",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/voiderite_crystal.png",
+      "sha256": "a603cc5455e72689bc5f73fdaf1f26d9795b974272db4f3b4c58b94f96c2d694"
+    },
+    {
+      "material": "voiderite",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/voiderite_spec.png",
+      "sha256": "433fb15ad023af91c4ae230e842e05a0ab83fe966365b53292afe6b8fb58964c"
+    },
+    {
+      "material": "voiderite",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/voiderite_dense_charge.png",
+      "sha256": "7caf2fb17a118385c33229afd0ff5e995fa865a081fa17d948568d329eadc963"
+    },
+    {
+      "material": "voiderite",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/voiderite_activated_crystal.png",
+      "sha256": "09f79d6152f1b304e7116bbc4015fdf5d937f34fe526b4827792f08b49cd9bc1"
+    },
+    {
+      "material": "voiderite",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_voiderite.png",
+      "sha256": "f0eeab1231b56f5edd1fef3100b056c8b59d9ddaa9a99ece971046117d5761a2"
+    },
+    {
+      "material": "voiderite",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_voiderite.png",
+      "sha256": "842303578aa9d14d739ca72bb16ecdc71e89877049665116a6d7f6040583d89a"
+    },
+    {
+      "material": "desh",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/desh_dust.png",
+      "sha256": "bbfbec6151f8b5b7e8e06a799ea30f4b60b72143d02eb0ffaf978c44e9a5bdbc"
+    },
+    {
+      "material": "desh",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/desh_dirty_dust.png",
+      "sha256": "bdb87fd79b106e9a8da497fdf2d9ab7ce57f506faf5673a1adf9d4ea24069986"
+    },
+    {
+      "material": "desh",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/desh_clump.png",
+      "sha256": "b7ef8a4c43f5a8b6e3c0d560250c10e70282fcf24fb8f39cc73cd61c4aa027a0"
+    },
+    {
+      "material": "desh",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/desh_gem.png",
+      "sha256": "3b203cc270dd1cc3cd8f7c08667e6d48bcb5f91ca07247d4dda0507fcb9dd0c8"
+    },
+    {
+      "material": "desh",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/desh_shard.png",
+      "sha256": "b785cc9a3dfed49e6c1a1ceda6d38d40bb71989e3d039f42fb235a240565f505"
+    },
+    {
+      "material": "desh",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/desh_crystal.png",
+      "sha256": "4e8c2bafc76cd85ffc3a994f6874de0cf015a1bb2c944e7fa021ca15d7f0f00c"
+    },
+    {
+      "material": "desh",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/desh_spec.png",
+      "sha256": "dcf3a6abb92a26a188adc794d88db4b2d2e7cc6168b5b305038aa72dadd145a1"
+    },
+    {
+      "material": "desh",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/desh_dense_charge.png",
+      "sha256": "2b8c499eb51d85c66faa8f02aab79c7d98672b56e4421481ae12ce34d2235a59"
+    },
+    {
+      "material": "desh",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/desh_activated_crystal.png",
+      "sha256": "ad43fd51ae704e7d5286314f5be34879241409b31a655179d713d181c6661c3f"
+    },
+    {
+      "material": "desh",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_desh.png",
+      "sha256": "cd8b3bdd47399b9781dafc832ce46e13c296265fbc3e60a5d56e1fd42a733b88"
+    },
+    {
+      "material": "desh",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_desh.png",
+      "sha256": "19f62ec599db0699b03b73b26d919d8a93a1dfbe11f03fb0b1a3f4457acaf105"
+    },
+    {
+      "material": "neptunium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/neptunium_dust.png",
+      "sha256": "18b4ade16b5af8ab37c9ecdd3e5a3fbe19ee5c919fb243cb250105ba7736b738"
+    },
+    {
+      "material": "neptunium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/neptunium_dirty_dust.png",
+      "sha256": "69c66b20fb456f1bfc9159e5c01972d320c89a9fa118b853939644f551e28fcb"
+    },
+    {
+      "material": "neptunium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/neptunium_clump.png",
+      "sha256": "65ce2c1a3ef73f57974f79a50745183cf6aa2f9fb0a0c182266fcc26ca3a760d"
+    },
+    {
+      "material": "neptunium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/neptunium_gem.png",
+      "sha256": "abf68961abf627d2934831a5b7fde6d73720bc114031799985be0b7826d9db61"
+    },
+    {
+      "material": "neptunium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/neptunium_shard.png",
+      "sha256": "d9bd37b12af53ab00ae83866b9ce89c17d647e7eed830f4eacc2c01c56ee2f68"
+    },
+    {
+      "material": "neptunium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/neptunium_crystal.png",
+      "sha256": "5f977d662d98851fb313b8f41c7d954c3040fef1fda1e3ae5d7d9a860924ff87"
+    },
+    {
+      "material": "neptunium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/neptunium_spec.png",
+      "sha256": "9495462ee83c01d5b28d722144b0a95c5262a647066373090dc06283b48b7c2c"
+    },
+    {
+      "material": "neptunium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/neptunium_dense_charge.png",
+      "sha256": "45e00674019bd20cbee20bebbbbcdd11c22c05ec454cf643d1429f3ad8270911"
+    },
+    {
+      "material": "neptunium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/neptunium_activated_crystal.png",
+      "sha256": "1cb3b0678e0fa6c7fd982dd5e0fbeee0705a2fdf6754d610934d15f97220417e"
+    },
+    {
+      "material": "neptunium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_neptunium.png",
+      "sha256": "eac565febb2845c46876e29e6d367d8e7e5e35c7332b2d311cbb4f6c8053faf5"
+    },
+    {
+      "material": "neptunium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_neptunium.png",
+      "sha256": "4e559b5e08e93b718651bf430ad8d4b658ba6231895eb84273d289df2764a6f8"
+    },
+    {
+      "material": "tharsite",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/tharsite_dust.png",
+      "sha256": "cd983c61cac4807bf058ce3b77127902967f92b695af17fe7181dd7aceddb408"
+    },
+    {
+      "material": "tharsite",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/tharsite_dirty_dust.png",
+      "sha256": "94158e0d072eb79dcb7fa08a8aecfe25abcf59209894a0982cfff1ba4a7c3dc5"
+    },
+    {
+      "material": "tharsite",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/tharsite_clump.png",
+      "sha256": "f3252d36967a7dfa3c70c7b03f29c9c36c3800880f34e51e1fddefae29e6d35b"
+    },
+    {
+      "material": "tharsite",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/tharsite_gem.png",
+      "sha256": "261102876fe271649c4cf3d5a91e7664d2e62ae15534ee17bb215d20a0626c19"
+    },
+    {
+      "material": "tharsite",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/tharsite_shard.png",
+      "sha256": "03abb3de7a8b251c890558d12fcf78c9a8245d96d47156e957d48cfdd86eba2b"
+    },
+    {
+      "material": "tharsite",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/tharsite_crystal.png",
+      "sha256": "4f674d2a6470c8d7178b04a4247d5fc018bd6f281d74d89c761b4b8e9a2b39a8"
+    },
+    {
+      "material": "tharsite",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/tharsite_spec.png",
+      "sha256": "9fcf11ee4c9681a0ab66dc6744c5bd0dfee105d7e0ef12b5f0868597044788dd"
+    },
+    {
+      "material": "tharsite",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/tharsite_dense_charge.png",
+      "sha256": "69808e5002c0ba6cca4427a9c9fea8b85af9c08b4e57ad39e6eaa854b3387abe"
+    },
+    {
+      "material": "tharsite",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/tharsite_activated_crystal.png",
+      "sha256": "49d2248279f9f59f288629a31a6d52a9df9faf0ff96af606b3909cdecbb0e289"
+    },
+    {
+      "material": "tharsite",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_tharsite.png",
+      "sha256": "7af96d44e7e9e4ca67e74bc54ad49e05e0791b72e883056f0b67758abec7afb8"
+    },
+    {
+      "material": "tharsite",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_tharsite.png",
+      "sha256": "7523ba10e910b59783891b6cf3c5c190f12abc9fe21cc690da86aa5c0c1e41c8"
+    },
+    {
+      "material": "corronium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/corronium_dust.png",
+      "sha256": "e2ab7e554f37b9b0d6b5e3feb04d3101cc95fa70639d04e20b36a2d1899a2062"
+    },
+    {
+      "material": "corronium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/corronium_dirty_dust.png",
+      "sha256": "946802d95902f988c903836704bb2be7c2a2b0fdf588c3225cec662b0229defa"
+    },
+    {
+      "material": "corronium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/corronium_clump.png",
+      "sha256": "257c839020c55453a7cbcb6cf39b9cc11b103779093f0b765ce6546d39917400"
+    },
+    {
+      "material": "corronium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/corronium_gem.png",
+      "sha256": "98274dec7e5d69c535c1135a310356b71cf473ea5f017b126382df84b8669383"
+    },
+    {
+      "material": "corronium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/corronium_shard.png",
+      "sha256": "04d3814b8980442944eac1dbda0730dd78efbfd51132a297106b00168e8cef11"
+    },
+    {
+      "material": "corronium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/corronium_crystal.png",
+      "sha256": "3d7460caaa9fec01a8237cab5fef0232eabb505a25e129d0a9757df37b8719a5"
+    },
+    {
+      "material": "corronium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/corronium_spec.png",
+      "sha256": "b8741e2a40183b847e557e432a34a0fe5d72e3ec6438005b59a547e5e7674b87"
+    },
+    {
+      "material": "corronium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/corronium_dense_charge.png",
+      "sha256": "6d396e97a9eec9561485191716c90728e5a284c312e441f2cae3486168622ea9"
+    },
+    {
+      "material": "corronium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/corronium_activated_crystal.png",
+      "sha256": "7ed41f4e555558a034eb4cc2eaf10468b9dfdc7fc61bad22853545d904878b86"
+    },
+    {
+      "material": "corronium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_corronium.png",
+      "sha256": "d06a682a7262b470f9c91898e16343bfbeb9f04fd1e9280a7d4ad74f946afd15"
+    },
+    {
+      "material": "corronium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_corronium.png",
+      "sha256": "289edd10c72044f0b42fc6443798ffb4a0136f0a1f9af9bbfa164526ae27c018"
+    },
+    {
+      "material": "solerium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/solerium_dust.png",
+      "sha256": "347f5fedf7cc4bf329d9dc49ecac0fb6afa34170f91d0823cdb267e6575a4c80"
+    },
+    {
+      "material": "solerium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/solerium_dirty_dust.png",
+      "sha256": "5c9adaaeab232602598b482ddf7b8df8de3dc2f0aea5d8f36508b0feb11f4ca5"
+    },
+    {
+      "material": "solerium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/solerium_clump.png",
+      "sha256": "66e1552e9860afdd3c6158cfeed400580eebaa7ad152a288af5358d8725a7e9a"
+    },
+    {
+      "material": "solerium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/solerium_gem.png",
+      "sha256": "b4fd0b5a756361e5b7f16a4e2293a11bc4b2dba4e502bb36c26b6263581693b5"
+    },
+    {
+      "material": "solerium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/solerium_shard.png",
+      "sha256": "9254a2fdceb5c8448c6057bdf8823029ccd3cf1884d7a0261270ebd78cef6b3d"
+    },
+    {
+      "material": "solerium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/solerium_crystal.png",
+      "sha256": "e05180e7b446b17f3717edfc670da4ae1aa9c46427f604afe2f6fdc2c9f0faf0"
+    },
+    {
+      "material": "solerium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/solerium_spec.png",
+      "sha256": "249fa1b29a29d203532f5594d0a5ff3ed2156fe52557354346f1572245c52cab"
+    },
+    {
+      "material": "solerium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/solerium_dense_charge.png",
+      "sha256": "2a75dc578f15a290fe02cd246b091dee19a86f62976f326d5aba7746102a63df"
+    },
+    {
+      "material": "solerium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/solerium_activated_crystal.png",
+      "sha256": "a0226039a758735701bb67980846e336a8269f192c042b4350daaea6c949b3ea"
+    },
+    {
+      "material": "solerium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_solerium.png",
+      "sha256": "8a07d186040546b8236afe0eb815fc35da094c5a648e508545b6773b7397107a"
+    },
+    {
+      "material": "solerium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_solerium.png",
+      "sha256": "fb10d8919d721a6e390e4f8ea44d9d1b8994c4887d8ca6ed2f12887465d57ead"
+    },
+    {
+      "material": "eezo",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/eezo_dust.png",
+      "sha256": "28455989be02e8f58df098ae3dabca6bfe115ee8c95a428db52c295f9d5fbc5d"
+    },
+    {
+      "material": "eezo",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/eezo_dirty_dust.png",
+      "sha256": "c9e6d47d2feb85d3bd85c2e954e16f3efb1698a4f3ed6a780afd57bc4692fbb6"
+    },
+    {
+      "material": "eezo",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/eezo_clump.png",
+      "sha256": "1398b200e0a8c6a6821202232264eb9b6f4ec26bb32440af6a22ad64067d675e"
+    },
+    {
+      "material": "eezo",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/eezo_gem.png",
+      "sha256": "6c8b86f583271978dbb68fb9be8217bc739327f83b539fda642402c4bca26b78"
+    },
+    {
+      "material": "eezo",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/eezo_shard.png",
+      "sha256": "6de56301bec9ba2288dc1fe2ebb289e7ef4bf8fcbaae701e5e453ce843a6f37d"
+    },
+    {
+      "material": "eezo",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/eezo_crystal.png",
+      "sha256": "a03c594b0e0470e850ba8396be79c4ae0ce4dfbc6959a9a9daf9fe4a84b99db5"
+    },
+    {
+      "material": "eezo",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/eezo_spec.png",
+      "sha256": "41d5397156ebeda29302bc9e02e3fa6e388215a1dd71ef495f7fe1d5bc0df014"
+    },
+    {
+      "material": "eezo",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/eezo_dense_charge.png",
+      "sha256": "a358b7236582845b437578ae50836b1fcc46a47bb7eafeff54c200b9709f6cc1"
+    },
+    {
+      "material": "eezo",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/eezo_activated_crystal.png",
+      "sha256": "46f5ffff947f4bc5464aecbd8b10ca94f96e3c430220e684b179cc745bea7ee0"
+    },
+    {
+      "material": "eezo",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_eezo.png",
+      "sha256": "29203647803f7a4db29596493b4eb734df64d8b1af18e3618e3aa7bb70bc0869"
+    },
+    {
+      "material": "eezo",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_eezo.png",
+      "sha256": "0cfff02f67c08530821b92360bcb570535aee610c5ad2eb6788e3e2d75775fe0"
+    },
+    {
+      "material": "ostrum",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/ostrum_dust.png",
+      "sha256": "cda9d7aea640aac2e5fdbdbc8e1bff2815788ff8fbf3265cd4e6aeddd92d3c07"
+    },
+    {
+      "material": "ostrum",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/ostrum_dirty_dust.png",
+      "sha256": "9c10c76605eb437a59855f2ec2c1857ff4dcdb757810b8ef9752089a8dff4c37"
+    },
+    {
+      "material": "ostrum",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/ostrum_clump.png",
+      "sha256": "840cadab2bd6668b0ee742c4e836f2e3f483b30de8ea104aa3c4b1460780f2e2"
+    },
+    {
+      "material": "ostrum",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/ostrum_gem.png",
+      "sha256": "0e4c16b2e81ba023493745aaf22b49ea43eaa1765a0ab6a497f79315ee493e7e"
+    },
+    {
+      "material": "ostrum",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/ostrum_shard.png",
+      "sha256": "8cb2d894175a922ca400ffe320368a01f6844cd3690e590703c09cd2e7f1e827"
+    },
+    {
+      "material": "ostrum",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/ostrum_crystal.png",
+      "sha256": "b1f978a510a5fa8d762d70d7f3abf21cfc3b8ded6c7111c54505351ae9b20a7e"
+    },
+    {
+      "material": "ostrum",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/ostrum_spec.png",
+      "sha256": "1665e7d02d07f6aad723f4419db11f29efa29b11b8a3db1f17e8d6cdc4584d0d"
+    },
+    {
+      "material": "ostrum",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/ostrum_dense_charge.png",
+      "sha256": "bd519d3de10ac0f1eae26749ff5cbadea2e1f323c395cbba8ce484f38c8c1f56"
+    },
+    {
+      "material": "ostrum",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/ostrum_activated_crystal.png",
+      "sha256": "df903c9cbd47cb24dbf58626e0b1a154050dcddcf460f2ade4286df28c721b06"
+    },
+    {
+      "material": "ostrum",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_ostrum.png",
+      "sha256": "33c57905d404c2d776d27876c007eb5a9fe202adb09301253bdec3153d1200a7"
+    },
+    {
+      "material": "ostrum",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_ostrum.png",
+      "sha256": "1e8648036f8e38121aec27f4e0fdfe57ecc7e9526bbfb84ecb7182f502de7414"
+    },
+    {
+      "material": "ostrum",
+      "form": "ingot",
+      "path": "assets/bertieprogression/textures/item/ostrum_ingot.png",
+      "sha256": "106fc615ca671cec1393b45de0d2406ebf4f8ac199d9d9426b902991921420db"
+    },
+    {
+      "material": "bloody",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/bloody_dust.png",
+      "sha256": "cc60016553058be96fd931342d9dca0284dd661cf2264105fc3e15ead82542a4"
+    },
+    {
+      "material": "bloody",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/bloody_dirty_dust.png",
+      "sha256": "ed56168301fc44b9f63cc89b3faa3a795784dd0f430578c466aef1012d917e60"
+    },
+    {
+      "material": "bloody",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/bloody_clump.png",
+      "sha256": "98277c73bf2345aa2523868ddbeb683f6378a8e193157ae5d8e77a0367aff4da"
+    },
+    {
+      "material": "bloody",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/bloody_gem.png",
+      "sha256": "909355478c445382d0d9d9fb78768905d45e5908cd17f48faffba243c33d8095"
+    },
+    {
+      "material": "bloody",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/bloody_shard.png",
+      "sha256": "94b123b9fe9d0dd19a01a5e2a2ef86029f74f7ba2941ccce269795e35c03c547"
+    },
+    {
+      "material": "bloody",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/bloody_crystal.png",
+      "sha256": "205b0e9ad9eec2e5e831c138e43e9fecae02b4e6513c2f45b965e6d7fa5d2f25"
+    },
+    {
+      "material": "bloody",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/bloody_spec.png",
+      "sha256": "8019a2c3ac3085fba634cc8037bf6b677aa8fefa250eb588e6d04412c7ef5c32"
+    },
+    {
+      "material": "bloody",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/bloody_dense_charge.png",
+      "sha256": "00bd086f879923d5a4b2eff2875b6279572d24e3b4faf3825a72ab87ce18f43f"
+    },
+    {
+      "material": "bloody",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/bloody_activated_crystal.png",
+      "sha256": "904b67ec9e4aec3500b6ef6f2981424905d31358c8b58d68c6ef78845459b030"
+    },
+    {
+      "material": "bloody",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_bloody.png",
+      "sha256": "86bcb9aca741d3585de20ede2c573d790be73a9ff59aa80046a4e8bb2289adce"
+    },
+    {
+      "material": "bloody",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_bloody.png",
+      "sha256": "265a8aaa45b429c0c2d67c602162938f1cec0804989d3c50b24f1e69f1497d36"
+    },
+    {
+      "material": "elvenite",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/elvenite_dust.png",
+      "sha256": "1b0fd76d9c3190feb8a21a8c939d45e4610146a572ed85da9b78440d3b67e5c9"
+    },
+    {
+      "material": "elvenite",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/elvenite_dirty_dust.png",
+      "sha256": "2a6221250b1e78735c3b372bb32fddc4c2a03c0ad8328db774cdab9aa9b000d6"
+    },
+    {
+      "material": "elvenite",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/elvenite_clump.png",
+      "sha256": "e40c40aa0d71e586980ea4a2201bdbcf7569dba91eb2c3020e7d1ec5316442ed"
+    },
+    {
+      "material": "elvenite",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/elvenite_gem.png",
+      "sha256": "dacdb50ec1ba03c502966ab897fcf8f3e0594d12bb931f0fa457351e4385c353"
+    },
+    {
+      "material": "elvenite",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/elvenite_shard.png",
+      "sha256": "1524f8ad987c62d4505e4bb37d3da0c0315d969a01b4c1b0714512af4281a13d"
+    },
+    {
+      "material": "elvenite",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/elvenite_crystal.png",
+      "sha256": "7440ce1c65a9676f34545390d98bcf621de72eaaa6eef200da5c225ba25de43e"
+    },
+    {
+      "material": "elvenite",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/elvenite_spec.png",
+      "sha256": "db1e41ff32df039b5e7a5a8f98376d5d0d84cdd3d4a86bf01a1864498ea7f18c"
+    },
+    {
+      "material": "elvenite",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/elvenite_dense_charge.png",
+      "sha256": "543313748ec28d4bc318a6fd313fe9f3d129c1c3d1239f42b48b92109d3c2da3"
+    },
+    {
+      "material": "elvenite",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/elvenite_activated_crystal.png",
+      "sha256": "755994f8b8c6de1b4f64eccb4e14c158e0ebc4186c0c4cdd57d5e1460d037254"
+    },
+    {
+      "material": "elvenite",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_elvenite.png",
+      "sha256": "d88467bc22c51bd9a36333ac2e78dc310a8e19208ad597d4b16be58ae3cd6083"
+    },
+    {
+      "material": "elvenite",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_elvenite.png",
+      "sha256": "27e2456b17ea7ebd545ee4ad299bb585163d515f2828c10d0c69a5a9a34c2b45"
+    },
+    {
+      "material": "voiderite",
+      "form": "raw",
+      "path": "assets/bertieprogression/textures/item/raw_voiderite.png",
+      "sha256": "25cf85f3333b18d52156a1c495c878475399f1c4f2ab7767998e7f1a142ce308"
+    },
+    {
+      "material": "bloody",
+      "form": "raw",
+      "path": "assets/bertieprogression/textures/item/raw_bloody.png",
+      "sha256": "46fbf98da1b03c4a71d5cd37b3f08ff3ffc7ef2b43dfc0a9e0dd595698a22ad9"
+    },
+    {
+      "material": "ostrum",
+      "form": "raw",
+      "path": "assets/bertieprogression/textures/item/raw_ostrum.png",
+      "sha256": "b2c9024d34db829bd9008d54d81898ca4f1abf9af42c04511353a2bf850287a6"
+    }
+  ],
+  "recipes": [
+    "bertieprogression:smelting/osmium_gem",
+    "bertieprogression:blasting/osmium_gem",
+    "bertieprogression:smelting/tin_gem",
+    "bertieprogression:blasting/tin_gem",
+    "bertieprogression:smelting/lead_gem",
+    "bertieprogression:blasting/lead_gem",
+    "bertieprogression:smelting/naquadah_gem",
+    "bertieprogression:blasting/naquadah_gem",
+    "bertieprogression:processing/nickel/dust_from_dirty_dust",
+    "bertieprogression:processing/nickel/dirty_dust_from_clump",
+    "bertieprogression:processing/nickel/clump_from_shard",
+    "bertieprogression:processing/nickel/shard_from_crystal",
+    "bertieprogression:processing/nickel/crystal_from_slurry",
+    "bertieprogression:processing/nickel/clean_slurry",
+    "bertieprogression:processing/platinum/dust_from_dirty_dust",
+    "bertieprogression:processing/platinum/dirty_dust_from_clump",
+    "bertieprogression:processing/platinum/clump_from_shard",
+    "bertieprogression:processing/platinum/shard_from_crystal",
+    "bertieprogression:processing/platinum/crystal_from_slurry",
+    "bertieprogression:processing/platinum/clean_slurry",
+    "bertieprogression:smelting/zinc_dust",
+    "bertieprogression:blasting/zinc_dust",
+    "bertieprogression:smelting/zinc_gem",
+    "bertieprogression:blasting/zinc_gem",
+    "bertieprogression:processing/zinc/dust_from_dirty_dust",
+    "bertieprogression:processing/zinc/dirty_dust_from_clump",
+    "bertieprogression:processing/zinc/clump_from_shard",
+    "bertieprogression:processing/zinc/shard_from_crystal",
+    "bertieprogression:processing/zinc/crystal_from_slurry",
+    "bertieprogression:processing/zinc/clean_slurry",
+    "bertieprogression:smelting/silver_dust",
+    "bertieprogression:blasting/silver_dust",
+    "bertieprogression:smelting/silver_gem",
+    "bertieprogression:blasting/silver_gem",
+    "bertieprogression:processing/silver/dust_from_dirty_dust",
+    "bertieprogression:processing/silver/dirty_dust_from_clump",
+    "bertieprogression:processing/silver/clump_from_shard",
+    "bertieprogression:processing/silver/shard_from_crystal",
+    "bertieprogression:processing/silver/crystal_from_slurry",
+    "bertieprogression:processing/silver/clean_slurry",
+    "bertieprogression:smelting/titanium_dust",
+    "bertieprogression:blasting/titanium_dust",
+    "bertieprogression:smelting/titanium_gem",
+    "bertieprogression:blasting/titanium_gem",
+    "bertieprogression:processing/titanium/dust_from_dirty_dust",
+    "bertieprogression:processing/titanium/dirty_dust_from_clump",
+    "bertieprogression:processing/titanium/clump_from_shard",
+    "bertieprogression:processing/titanium/shard_from_crystal",
+    "bertieprogression:processing/titanium/crystal_from_slurry",
+    "bertieprogression:processing/titanium/clean_slurry",
+    "bertieprogression:smelting/tungsten_dust",
+    "bertieprogression:blasting/tungsten_dust",
+    "bertieprogression:smelting/tungsten_gem",
+    "bertieprogression:blasting/tungsten_gem",
+    "bertieprogression:processing/tungsten/dust_from_dirty_dust",
+    "bertieprogression:processing/tungsten/dirty_dust_from_clump",
+    "bertieprogression:processing/tungsten/clump_from_shard",
+    "bertieprogression:processing/tungsten/shard_from_crystal",
+    "bertieprogression:processing/tungsten/crystal_from_slurry",
+    "bertieprogression:processing/tungsten/clean_slurry",
+    "bertieprogression:smelting/voiderite_dust",
+    "bertieprogression:blasting/voiderite_dust",
+    "bertieprogression:smelting/voiderite_gem",
+    "bertieprogression:blasting/voiderite_gem",
+    "bertieprogression:processing/voiderite/dust_from_dirty_dust",
+    "bertieprogression:processing/voiderite/dirty_dust_from_clump",
+    "bertieprogression:processing/voiderite/clump_from_shard",
+    "bertieprogression:processing/voiderite/shard_from_crystal",
+    "bertieprogression:processing/voiderite/crystal_from_slurry",
+    "bertieprogression:processing/voiderite/clean_slurry",
+    "bertieprogression:smelting/desh_dust",
+    "bertieprogression:blasting/desh_dust",
+    "bertieprogression:smelting/desh_gem",
+    "bertieprogression:blasting/desh_gem",
+    "bertieprogression:processing/desh/dust_from_dirty_dust",
+    "bertieprogression:processing/desh/dirty_dust_from_clump",
+    "bertieprogression:processing/desh/clump_from_shard",
+    "bertieprogression:processing/desh/shard_from_crystal",
+    "bertieprogression:processing/desh/crystal_from_slurry",
+    "bertieprogression:processing/desh/clean_slurry",
+    "bertieprogression:smelting/neptunium_dust",
+    "bertieprogression:blasting/neptunium_dust",
+    "bertieprogression:smelting/neptunium_gem",
+    "bertieprogression:blasting/neptunium_gem",
+    "bertieprogression:processing/neptunium/dust_from_dirty_dust",
+    "bertieprogression:processing/neptunium/dirty_dust_from_clump",
+    "bertieprogression:processing/neptunium/clump_from_shard",
+    "bertieprogression:processing/neptunium/shard_from_crystal",
+    "bertieprogression:processing/neptunium/crystal_from_slurry",
+    "bertieprogression:processing/neptunium/clean_slurry",
+    "bertieprogression:smelting/tharsite_dust",
+    "bertieprogression:blasting/tharsite_dust",
+    "bertieprogression:smelting/tharsite_gem",
+    "bertieprogression:blasting/tharsite_gem",
+    "bertieprogression:processing/tharsite/dust_from_dirty_dust",
+    "bertieprogression:processing/tharsite/dirty_dust_from_clump",
+    "bertieprogression:processing/tharsite/clump_from_shard",
+    "bertieprogression:processing/tharsite/shard_from_crystal",
+    "bertieprogression:processing/tharsite/crystal_from_slurry",
+    "bertieprogression:processing/tharsite/clean_slurry",
+    "bertieprogression:smelting/corronium_dust",
+    "bertieprogression:blasting/corronium_dust",
+    "bertieprogression:smelting/corronium_gem",
+    "bertieprogression:blasting/corronium_gem",
+    "bertieprogression:processing/corronium/dust_from_dirty_dust",
+    "bertieprogression:processing/corronium/dirty_dust_from_clump",
+    "bertieprogression:processing/corronium/clump_from_shard",
+    "bertieprogression:processing/corronium/shard_from_crystal",
+    "bertieprogression:processing/corronium/crystal_from_slurry",
+    "bertieprogression:processing/corronium/clean_slurry",
+    "bertieprogression:smelting/solerium_dust",
+    "bertieprogression:blasting/solerium_dust",
+    "bertieprogression:smelting/solerium_gem",
+    "bertieprogression:blasting/solerium_gem",
+    "bertieprogression:processing/solerium/dust_from_dirty_dust",
+    "bertieprogression:processing/solerium/dirty_dust_from_clump",
+    "bertieprogression:processing/solerium/clump_from_shard",
+    "bertieprogression:processing/solerium/shard_from_crystal",
+    "bertieprogression:processing/solerium/crystal_from_slurry",
+    "bertieprogression:processing/solerium/clean_slurry",
+    "bertieprogression:smelting/eezo_dust",
+    "bertieprogression:blasting/eezo_dust",
+    "bertieprogression:smelting/eezo_gem",
+    "bertieprogression:blasting/eezo_gem",
+    "bertieprogression:processing/eezo/dust_from_dirty_dust",
+    "bertieprogression:processing/eezo/dirty_dust_from_clump",
+    "bertieprogression:processing/eezo/clump_from_shard",
+    "bertieprogression:processing/eezo/shard_from_crystal",
+    "bertieprogression:processing/eezo/crystal_from_slurry",
+    "bertieprogression:processing/eezo/clean_slurry",
+    "bertieprogression:smelting/ostrum_dust",
+    "bertieprogression:blasting/ostrum_dust",
+    "bertieprogression:smelting/ostrum_gem",
+    "bertieprogression:blasting/ostrum_gem",
+    "bertieprogression:processing/ostrum/dust_from_dirty_dust",
+    "bertieprogression:processing/ostrum/dirty_dust_from_clump",
+    "bertieprogression:processing/ostrum/clump_from_shard",
+    "bertieprogression:processing/ostrum/shard_from_crystal",
+    "bertieprogression:processing/ostrum/crystal_from_slurry",
+    "bertieprogression:processing/ostrum/clean_slurry",
+    "bertieprogression:smelting/bloody_dust",
+    "bertieprogression:blasting/bloody_dust",
+    "bertieprogression:smelting/bloody_gem",
+    "bertieprogression:blasting/bloody_gem",
+    "bertieprogression:processing/bloody/dust_from_dirty_dust",
+    "bertieprogression:processing/bloody/dirty_dust_from_clump",
+    "bertieprogression:processing/bloody/clump_from_shard",
+    "bertieprogression:processing/bloody/shard_from_crystal",
+    "bertieprogression:processing/bloody/crystal_from_slurry",
+    "bertieprogression:processing/bloody/clean_slurry",
+    "bertieprogression:smelting/elvenite_dust",
+    "bertieprogression:blasting/elvenite_dust",
+    "bertieprogression:smelting/elvenite_gem",
+    "bertieprogression:blasting/elvenite_gem",
+    "bertieprogression:processing/elvenite/dust_from_dirty_dust",
+    "bertieprogression:processing/elvenite/dirty_dust_from_clump",
+    "bertieprogression:processing/elvenite/clump_from_shard",
+    "bertieprogression:processing/elvenite/shard_from_crystal",
+    "bertieprogression:processing/elvenite/crystal_from_slurry",
+    "bertieprogression:processing/elvenite/clean_slurry",
+    "oritech:centrifuge/clump/iron",
+    "oritech:centrifuge/clump/copper",
+    "oritech:centrifuge/clump/gold",
+    "oritech:centrifuge/compat/clump/crushed_uranium",
+    "oritech:centrifuge/compat/mekanism/clump/osmium",
+    "oritech:centrifuge/compat/mekanism/clump/tin",
+    "oritech:centrifuge/compat/mekanism/clump/lead",
+    "bertieprogression:centrifuge/naquadah",
+    "oritech:centrifuge/clump/nickel",
+    "oritech:centrifuge/clump/platinum",
+    "oritech:centrifuge/compat/create/clump/zinc",
+    "bertieprogression:centrifuge/silver",
+    "bertieprogression:centrifuge/titanium",
+    "bertieprogression:centrifuge/tungsten",
+    "bertieprogression:centrifuge/voiderite",
+    "bertieprogression:centrifuge/desh",
+    "bertieprogression:centrifuge/neptunium",
+    "bertieprogression:centrifuge/tharsite",
+    "bertieprogression:centrifuge/corronium",
+    "bertieprogression:centrifuge/solerium",
+    "bertieprogression:centrifuge/eezo",
+    "bertieprogression:centrifuge/ostrum",
+    "bertieprogression:centrifuge/bloody",
+    "bertieprogression:centrifuge/elvenite",
+    "bertieprogression:smelting/voiderite_raw",
+    "bertieprogression:blasting/voiderite_raw",
+    "bertieprogression:smelting/bloody_raw",
+    "bertieprogression:blasting/bloody_raw",
+    "bertieprogression:smelting/ostrum_raw",
+    "bertieprogression:blasting/ostrum_raw",
+    "bertieprogression:processing/nickel/dust_from_raw",
+    "bertieprogression:processing/nickel/clump_from_raw",
+    "bertieprogression:processing/nickel/shard_from_raw",
+    "bertieprogression:processing/nickel/slurry_from_raw",
+    "bertieprogression:processing/platinum/dust_from_raw",
+    "bertieprogression:processing/platinum/clump_from_raw",
+    "bertieprogression:processing/platinum/shard_from_raw",
+    "bertieprogression:processing/platinum/slurry_from_raw",
+    "bertieprogression:processing/zinc/dust_from_raw",
+    "bertieprogression:processing/zinc/clump_from_raw",
+    "bertieprogression:processing/zinc/shard_from_raw",
+    "bertieprogression:processing/zinc/slurry_from_raw",
+    "bertieprogression:processing/silver/dust_from_raw",
+    "bertieprogression:processing/silver/clump_from_raw",
+    "bertieprogression:processing/silver/shard_from_raw",
+    "bertieprogression:processing/silver/slurry_from_raw",
+    "bertieprogression:processing/titanium/dust_from_raw",
+    "bertieprogression:processing/titanium/clump_from_raw",
+    "bertieprogression:processing/titanium/shard_from_raw",
+    "bertieprogression:processing/titanium/slurry_from_raw",
+    "bertieprogression:processing/tungsten/dust_from_raw",
+    "bertieprogression:processing/tungsten/clump_from_raw",
+    "bertieprogression:processing/tungsten/shard_from_raw",
+    "bertieprogression:processing/tungsten/slurry_from_raw",
+    "bertieprogression:processing/voiderite/dust_from_raw",
+    "bertieprogression:processing/voiderite/clump_from_raw",
+    "bertieprogression:processing/voiderite/shard_from_raw",
+    "bertieprogression:processing/voiderite/slurry_from_raw",
+    "bertieprogression:processing/desh/dust_from_raw",
+    "bertieprogression:processing/desh/clump_from_raw",
+    "bertieprogression:processing/desh/shard_from_raw",
+    "bertieprogression:processing/desh/slurry_from_raw",
+    "bertieprogression:processing/neptunium/dust_from_raw",
+    "bertieprogression:processing/neptunium/clump_from_raw",
+    "bertieprogression:processing/neptunium/shard_from_raw",
+    "bertieprogression:processing/neptunium/slurry_from_raw",
+    "bertieprogression:processing/tharsite/dust_from_raw",
+    "bertieprogression:processing/tharsite/clump_from_raw",
+    "bertieprogression:processing/tharsite/shard_from_raw",
+    "bertieprogression:processing/tharsite/slurry_from_raw",
+    "bertieprogression:processing/corronium/dust_from_raw",
+    "bertieprogression:processing/corronium/clump_from_raw",
+    "bertieprogression:processing/corronium/shard_from_raw",
+    "bertieprogression:processing/corronium/slurry_from_raw",
+    "bertieprogression:processing/solerium/dust_from_raw",
+    "bertieprogression:processing/solerium/clump_from_raw",
+    "bertieprogression:processing/solerium/shard_from_raw",
+    "bertieprogression:processing/solerium/slurry_from_raw",
+    "bertieprogression:processing/eezo/dust_from_raw",
+    "bertieprogression:processing/eezo/clump_from_raw",
+    "bertieprogression:processing/eezo/shard_from_raw",
+    "bertieprogression:processing/eezo/slurry_from_raw",
+    "bertieprogression:processing/ostrum/dust_from_raw",
+    "bertieprogression:processing/ostrum/clump_from_raw",
+    "bertieprogression:processing/ostrum/shard_from_raw",
+    "bertieprogression:processing/ostrum/slurry_from_raw",
+    "bertieprogression:processing/bloody/dust_from_raw",
+    "bertieprogression:processing/bloody/clump_from_raw",
+    "bertieprogression:processing/bloody/shard_from_raw",
+    "bertieprogression:processing/bloody/slurry_from_raw",
+    "bertieprogression:processing/elvenite/dust_from_raw",
+    "bertieprogression:processing/elvenite/clump_from_raw",
+    "bertieprogression:processing/elvenite/shard_from_raw",
+    "bertieprogression:processing/elvenite/slurry_from_raw"
+  ],
+  "spec_recycling": "deferred",
+  "plutonium": "excluded",
+  "ore_block_yields": "unchanged",
+  "raw_yields": "existing 2x/3x baseline; native higher chemical ratios",
+  "provisional_extras": [
+    "raw_voiderite",
+    "raw_bloody",
+    "raw_ostrum",
+    "ostrum_ingot"
+  ]
+}

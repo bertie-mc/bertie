@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:raw_eezo"
+  },
+  "output": {
+    "id": "bertieprogression:eezo_dust",
+    "count": 2
+  }
+}

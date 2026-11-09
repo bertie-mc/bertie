@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " DP",
-    "DPD",
-    "PD "
+    " PM",
+    "PMP",
+    "MP "
   ],
   "key": {
-    "D": {
-      "tag": "c:gems/diamond"
+    "M": {
+      "item": "malum:malignant_pewter_ingot"
     },
     "P": {
       "tag": "c:ingots/platinum"

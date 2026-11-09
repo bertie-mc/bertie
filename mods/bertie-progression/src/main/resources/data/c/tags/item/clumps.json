@@ -24,6 +24,30 @@
     {
       "id": "create:crushed_raw_zinc",
       "required": false
-    }
+    },
+    "#c:clumps/iron",
+    "#c:clumps/copper",
+    "#c:clumps/gold",
+    "#c:clumps/uranium",
+    "#c:clumps/osmium",
+    "#c:clumps/tin",
+    "#c:clumps/lead",
+    "#c:clumps/naquadah",
+    "#c:clumps/nickel",
+    "#c:clumps/platinum",
+    "#c:clumps/zinc",
+    "#c:clumps/silver",
+    "#c:clumps/titanium",
+    "#c:clumps/tungsten",
+    "#c:clumps/voiderite",
+    "#c:clumps/desh",
+    "#c:clumps/neptunium",
+    "#c:clumps/tharsite",
+    "#c:clumps/corronium",
+    "#c:clumps/solerium",
+    "#c:clumps/eezo",
+    "#c:clumps/ostrum",
+    "#c:clumps/bloody",
+    "#c:clumps/elvenite"
   ]
 }

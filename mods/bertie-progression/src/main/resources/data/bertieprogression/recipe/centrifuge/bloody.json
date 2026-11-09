@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/bloody"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:bloody_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:bloody_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

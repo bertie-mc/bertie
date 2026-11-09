@@ -1,0 +1,35 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "NNNNN",
+    "NMUMN",
+    "ABKBA",
+    "NMUMN",
+    "NNNNN"
+  ],
+  "key": {
+    "N": {
+      "item": "bertieprogression:nickel_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "B": {
+      "item": "pastel:block_breaker"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "result": {
+    "id": "oritech:destroyer_block",
+    "count": 1
+  },
+  "tier": 2
+}

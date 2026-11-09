@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:purifying",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:oxygen"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 1,
+    "item": "bertieprogression:raw_bloody"
+  },
+  "output": {
+    "id": "bertieprogression:bloody_clump",
+    "count": 3
+  }
+}

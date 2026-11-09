@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/eezo"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:eezo_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:eezo_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

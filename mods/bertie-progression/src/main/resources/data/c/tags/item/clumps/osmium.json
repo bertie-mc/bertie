@@ -4,6 +4,7 @@
     {
       "id": "mekanism:clump_osmium",
       "required": false
-    }
+    },
+    "mekanism:clump_osmium"
   ]
 }

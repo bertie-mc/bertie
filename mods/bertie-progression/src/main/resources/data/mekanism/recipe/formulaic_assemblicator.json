@@ -21,7 +21,7 @@
       "item": "mythsandlegends:bound_soul_ingot"
     },
     "R": {
-      "item": "create:mechanical_crafter"
+      "item": "minecraft:crafter"
     },
     "K": {
       "item": "mekanism:steel_casing"

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bertieprogression:desh_gem"
+  },
+  "result": {
+    "id": "stellaris:desh_ingot"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

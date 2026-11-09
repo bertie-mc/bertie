@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/lead"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:lead_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:tin_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

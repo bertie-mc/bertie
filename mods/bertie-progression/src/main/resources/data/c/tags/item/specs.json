@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#c:specs/iron",
+    "#c:specs/copper",
+    "#c:specs/gold",
+    "#c:specs/uranium",
+    "#c:specs/osmium",
+    "#c:specs/tin",
+    "#c:specs/lead",
+    "#c:specs/naquadah",
+    "#c:specs/nickel",
+    "#c:specs/platinum",
+    "#c:specs/zinc",
+    "#c:specs/silver",
+    "#c:specs/titanium",
+    "#c:specs/tungsten",
+    "#c:specs/voiderite",
+    "#c:specs/desh",
+    "#c:specs/neptunium",
+    "#c:specs/tharsite",
+    "#c:specs/corronium",
+    "#c:specs/solerium",
+    "#c:specs/eezo",
+    "#c:specs/ostrum",
+    "#c:specs/bloody",
+    "#c:specs/elvenite"
+  ]
+}

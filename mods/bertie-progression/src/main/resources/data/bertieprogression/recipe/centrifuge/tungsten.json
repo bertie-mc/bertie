@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/tungsten"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:tungsten_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:tungsten_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

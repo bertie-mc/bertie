@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "GGGGG",
+    "CTBTC",
+    "CAKAC",
+    "STMTS",
+    "SSSSS"
+  ],
+  "key": {
+    "G": {
+      "tag": "c:glass_blocks/cheap"
+    },
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "T": {
+      "item": "create:tree_fertilizer"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "A": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:fertilizer_block",
+    "count": 1
+  },
+  "tier": 2
+}

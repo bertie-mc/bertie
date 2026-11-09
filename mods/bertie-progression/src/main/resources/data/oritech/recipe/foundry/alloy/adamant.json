@@ -2,10 +2,10 @@
   "type": "oritech:foundry",
   "ingredients": [
     {
-      "tag": "c:ingots/platinum"
+      "item": "malum:malignant_pewter_ingot"
     },
     {
-      "tag": "c:gems/diamond"
+      "tag": "c:ingots/platinum"
     }
   ],
   "results": [

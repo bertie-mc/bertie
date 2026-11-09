@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:clumps/platinum"
+  },
+  "output": {
+    "id": "bertieprogression:platinum_dirty_dust",
+    "count": 1
+  }
+}

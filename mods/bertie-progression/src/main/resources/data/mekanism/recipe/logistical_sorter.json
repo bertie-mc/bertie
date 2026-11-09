@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "SCS",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "A": {
+      "item": "cognition:cognitive_alloy"
+    }
+  },
+  "result": {
+    "id": "mekanism:logistical_sorter",
+    "count": 1
+  }
+}

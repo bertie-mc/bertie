@@ -8,6 +8,7 @@
     {
       "id": "oritech:copper_clump",
       "required": false
-    }
+    },
+    "mekanism:clump_copper"
   ]
 }

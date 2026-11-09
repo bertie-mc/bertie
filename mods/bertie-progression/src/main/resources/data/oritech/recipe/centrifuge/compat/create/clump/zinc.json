@@ -1,27 +1,18 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "create"
-    },
-    {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:mod_loaded",
-        "modid": "jaopca"
-      }
-    }
-  ],
   "type": "oritech:centrifuge",
   "ingredients": [
     {
-      "tag": "c:clumps/zinc"
+      "tag": "c:dirty_dusts/zinc"
     }
   ],
   "results": [
     {
-      "count": 4,
-      "id": "anvilcraft:zinc_nugget"
+      "id": "bertieprogression:zinc_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:zinc_spec",
+      "count": 4
     }
   ],
   "time": 100

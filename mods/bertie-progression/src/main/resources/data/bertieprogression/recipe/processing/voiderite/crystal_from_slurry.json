@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 200,
+    "chemical": "bertieprogression:clean_voiderite"
+  },
+  "output": {
+    "id": "bertieprogression:voiderite_crystal",
+    "count": 1
+  }
+}

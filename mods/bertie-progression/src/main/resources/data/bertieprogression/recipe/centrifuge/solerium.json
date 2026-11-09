@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/solerium"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:solerium_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:solerium_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

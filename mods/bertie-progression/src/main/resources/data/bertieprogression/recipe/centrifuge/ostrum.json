@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/ostrum"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:ostrum_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:ostrum_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

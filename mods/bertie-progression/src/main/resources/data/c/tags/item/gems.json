@@ -87,6 +87,30 @@
     {
       "id": "#forge:gems",
       "required": false
-    }
+    },
+    "#c:gems/iron",
+    "#c:gems/copper",
+    "#c:gems/gold",
+    "#c:gems/uranium",
+    "#c:gems/osmium",
+    "#c:gems/tin",
+    "#c:gems/lead",
+    "#c:gems/naquadah",
+    "#c:gems/nickel",
+    "#c:gems/platinum",
+    "#c:gems/zinc",
+    "#c:gems/silver",
+    "#c:gems/titanium",
+    "#c:gems/tungsten",
+    "#c:gems/voiderite",
+    "#c:gems/desh",
+    "#c:gems/neptunium",
+    "#c:gems/tharsite",
+    "#c:gems/corronium",
+    "#c:gems/solerium",
+    "#c:gems/eezo",
+    "#c:gems/ostrum",
+    "#c:gems/bloody",
+    "#c:gems/elvenite"
   ]
 }

@@ -4,6 +4,7 @@
     {
       "id": "magitech:raw_zinc",
       "required": false
-    }
+    },
+    "magitech:raw_zinc"
   ]
 }

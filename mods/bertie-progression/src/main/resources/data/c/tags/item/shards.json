@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#c:shards/iron",
+    "#c:shards/copper",
+    "#c:shards/gold",
+    "#c:shards/uranium",
+    "#c:shards/osmium",
+    "#c:shards/tin",
+    "#c:shards/lead",
+    "#c:shards/naquadah",
+    "#c:shards/nickel",
+    "#c:shards/platinum",
+    "#c:shards/zinc",
+    "#c:shards/silver",
+    "#c:shards/titanium",
+    "#c:shards/tungsten",
+    "#c:shards/voiderite",
+    "#c:shards/desh",
+    "#c:shards/neptunium",
+    "#c:shards/tharsite",
+    "#c:shards/corronium",
+    "#c:shards/solerium",
+    "#c:shards/eezo",
+    "#c:shards/ostrum",
+    "#c:shards/bloody",
+    "#c:shards/elvenite"
+  ]
+}

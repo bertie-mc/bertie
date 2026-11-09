@@ -4,6 +4,7 @@
     {
       "id": "anvilcraft:raw_titanium",
       "required": false
-    }
+    },
+    "anvilcraft:raw_titanium"
   ]
 }

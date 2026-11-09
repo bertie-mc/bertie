@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 200,
+    "chemical": "bertieprogression:clean_tungsten"
+  },
+  "output": {
+    "id": "bertieprogression:tungsten_crystal",
+    "count": 1
+  }
+}

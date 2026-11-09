@@ -7,6 +7,134 @@
     {
       "type": "minecraft:single",
       "resource": "bertieprogression:chemical/amethyst"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_nickel"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_nickel"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_platinum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_platinum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_zinc"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_zinc"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_silver"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_silver"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_titanium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_titanium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_tungsten"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_tungsten"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_voiderite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_voiderite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_desh"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_desh"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_neptunium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_neptunium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_tharsite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_tharsite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_corronium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_corronium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_solerium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_solerium"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_eezo"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_eezo"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_ostrum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_ostrum"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_bloody"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_bloody"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/dirty_elvenite"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bertieprogression:chemical/clean_elvenite"
     }
   ]
 }

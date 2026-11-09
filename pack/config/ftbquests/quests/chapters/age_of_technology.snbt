@@ -727,8 +727,8 @@
 			}]
 		}
 		{
-			y: 6.0d
-			x: 16.5d
+			y: 4.5d
+			x: 15.0d
 			dependencies: ["5C0000000000932C"]
 			id: "5C0000000000932B"
 			icon: { id: "oritech:steam_engine_block" }
@@ -1101,8 +1101,8 @@
 		}
 		{
 			dependencies: ["5C00000000009339"]
-			y: 3.0d
-			x: 19.5d
+			y: 1.5d
+			x: 18.0d
 			id: "5C0000000000933A"
 			icon: { id: "oritech:assembler_block" }
 			tasks: [{
@@ -1114,8 +1114,8 @@
 		}
 		{
 			dependencies: ["5C0000000000933A"]
-			y: 3.0d
-			x: 21.0d
+			y: 0.0d
+			x: 16.5d
 			id: "5C0000000000933B"
 			icon: { id: "bertieprogression:electric_coil" }
 			tasks: [{
@@ -1126,9 +1126,9 @@
 			}]
 		}
 		{
-			dependencies: ["5C0000000000933B"]
-			y: 3.0d
-			x: 22.5d
+			dependencies: ["5C0000000000933B", "5C00000000009343"]
+			y: 0.0d
+			x: 18.0d
 			id: "5C0000000000933C"
 			icon: { id: "oritech:processing_unit" }
 			tasks: [{
@@ -1139,9 +1139,9 @@
 			}]
 		}
 		{
-			dependencies: ["5C00000000009320"]
-			y: -1.5d
-			x: 12.0d
+			dependencies: ["5C00000000009338"]
+			y: 0.0d
+			x: 15.0d
 			id: "5C0000000000933D"
 			icon: { id: "mekanism:bio_fuel" }
 			tasks: [{
@@ -1152,9 +1152,9 @@
 			}]
 		}
 		{
-			dependencies: ["5C0000000000933D", "5C00000000009338"]
-			y: -1.5d
-			x: 15.0d
+			dependencies: ["5C0000000000933D"]
+			y: 0.0d
+			x: 13.5d
 			id: "5C0000000000933E"
 			icon: { id: "oritech:raw_biopolymer" }
 			tasks: [{
@@ -1166,8 +1166,8 @@
 		}
 		{
 			dependencies: ["5C00000000009323", "5C0000000000933E"]
-			y: -3.0d
-			x: 13.5d
+			y: 0.0d
+			x: 12.0d
 			id: "5C0000000000933F"
 			icon: { id: "mekanism:substrate" }
 			tasks: [{
@@ -1179,8 +1179,8 @@
 		}
 		{
 			dependencies: ["5C0000000000933F"]
-			y: -3.0d
-			x: 15.0d
+			y: -1.5d
+			x: 12.0d
 			id: "5C00000000009340"
 			icon: { id: "mekanism:hdpe_pellet" }
 			tasks: [{
@@ -1192,8 +1192,8 @@
 		}
 		{
 			dependencies: ["5C00000000009340"]
-			y: -3.0d
-			x: 16.5d
+			y: -1.5d
+			x: 13.5d
 			id: "5C00000000009341"
 			icon: { id: "mekanism:hdpe_rod" }
 			tasks: [{
@@ -1205,8 +1205,8 @@
 		}
 		{
 			dependencies: ["5C00000000009341"]
-			y: -3.0d
-			x: 18.0d
+			y: -1.5d
+			x: 15.0d
 			id: "5C00000000009342"
 			icon: { id: "mekanism:hdpe_stick" }
 			tasks: [{
@@ -1218,8 +1218,8 @@
 		}
 		{
 			dependencies: ["5C00000000009342"]
-			y: -3.0d
-			x: 19.5d
+			y: -1.5d
+			x: 16.5d
 			id: "5C00000000009343"
 			icon: { id: "oritech:plastic_sheet" }
 			tasks: [{
@@ -1272,6 +1272,162 @@
 					item: { id: "mekanism:basic_thermodynamic_conductor" count: 1 }
 				}
 			]
+		}
+		{
+			y: -1.5d
+			x: 3.0d
+			dependencies: ["5C00000000009312"]
+			id: "5C00000000009345"
+			icon: { id: "mekanism:logistical_sorter" }
+			tasks: [{
+				id: "5C00000001009345"
+				count: 1L
+				item: { count: 1 id: "mekanism:logistical_sorter" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 19.5d
+			dependencies: ["5C0000000000933C"]
+			id: "5C00000000009346"
+			icon: { id: "oritech:placer_block" }
+			tasks: [{
+				id: "5C00000001009346"
+				count: 1L
+				item: { count: 1 id: "oritech:placer_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 18.0d
+			dependencies: ["5C00000000009337"]
+			id: "5C00000000009347"
+			icon: { id: "oritech:destroyer_block" }
+			tasks: [{
+				id: "5C00000001009347"
+				count: 1L
+				item: { count: 1 id: "oritech:destroyer_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 7.5d
+			dependencies: ["5C00000000009303"]
+			id: "5C00000000009348"
+			icon: { id: "oritech:treefeller_block" }
+			tasks: [{
+				id: "5C00000001009348"
+				count: 1L
+				item: { count: 1 id: "oritech:treefeller_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 9.0d
+			dependencies: ["5C00000000009348"]
+			id: "5C00000000009349"
+			icon: { id: "oritech:fertilizer_block" }
+			tasks: [{
+				id: "5C00000001009349"
+				count: 1L
+				item: { count: 1 id: "oritech:fertilizer_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 10.5d
+			dependencies: ["5C00000000009320"]
+			id: "5C0000000000934A"
+			icon: { id: "oritech:machine_core_1" }
+			tasks: [{
+				id: "5C0000000100934A"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_1" }
+				type: "item"
+			}]
+		}
+		{
+			y: -3.0d
+			x: 10.5d
+			dependencies: ["5C0000000000934A"]
+			id: "5C0000000000934B"
+			icon: { id: "oritech:machine_core_2" }
+			tasks: [{
+				id: "5C0000000100934B"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_2" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 10.5d
+			dependencies: ["5C0000000000934B"]
+			id: "5C0000000000934C"
+			icon: { id: "oritech:machine_core_3" }
+			tasks: [{
+				id: "5C0000000100934C"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_3" }
+				type: "item"
+			}]
+		}
+		{
+			y: -6.0d
+			x: 10.5d
+			dependencies: ["5C0000000000934C"]
+			id: "5C0000000000934D"
+			icon: { id: "oritech:machine_core_4" }
+			tasks: [{
+				id: "5C0000000100934D"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_4" }
+				type: "item"
+			}]
+		}
+		{
+			y: -7.5d
+			x: 10.5d
+			dependencies: ["5C0000000000934D"]
+			id: "5C0000000000934E"
+			icon: { id: "oritech:machine_core_5" }
+			tasks: [{
+				id: "5C0000000100934E"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_5" }
+				type: "item"
+			}]
+		}
+		{
+			y: -9.0d
+			x: 10.5d
+			dependencies: ["5C0000000000934E"]
+			id: "5C0000000000934F"
+			icon: { id: "oritech:machine_core_6" }
+			tasks: [{
+				id: "5C0000000100934F"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_6" }
+				type: "item"
+			}]
+		}
+		{
+			y: -10.5d
+			x: 10.5d
+			dependencies: ["5C0000000000934F"]
+			id: "5C00000000009350"
+			icon: { id: "oritech:machine_core_7" }
+			tasks: [{
+				id: "5C00000001009350"
+				count: 1L
+				item: { count: 1 id: "oritech:machine_core_7" }
+				type: "item"
+			}]
 		}
 	]
 }

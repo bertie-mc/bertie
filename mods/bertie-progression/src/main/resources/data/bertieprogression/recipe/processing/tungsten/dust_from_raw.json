@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "anvilcraft:raw_tungsten"
+  },
+  "output": {
+    "id": "bertieprogression:tungsten_dust",
+    "count": 2
+  }
+}

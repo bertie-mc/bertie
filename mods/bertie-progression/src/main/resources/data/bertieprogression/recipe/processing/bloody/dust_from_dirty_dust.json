@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/bloody"
+  },
+  "output": {
+    "id": "bertieprogression:bloody_dust",
+    "count": 1
+  }
+}

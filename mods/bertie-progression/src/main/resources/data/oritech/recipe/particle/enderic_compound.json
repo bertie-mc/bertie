@@ -1,0 +1,18 @@
+{
+  "type": "oritech:particle_collision",
+  "ingredients": [
+    {
+      "tag": "c:ender_pearls"
+    },
+    {
+      "item": "minecraft:sculk"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:enderic_compound"
+    }
+  ],
+  "time": 500
+}

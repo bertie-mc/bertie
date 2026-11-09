@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:injecting",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:hydrogen_chloride"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 3,
+    "item": "stellaris:raw_tharsite"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_shard",
+    "count": 8
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:raw_voiderite"
+  },
+  "output": {
+    "id": "bertieprogression:voiderite_dust",
+    "count": 2
+  }
+}

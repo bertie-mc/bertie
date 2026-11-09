@@ -354,81 +354,37 @@
 		}
 		{
 			id: "62F43E7EF07E2B23"
-			icon: {
-				id: "oritech:placer_block"
-			}
-			tasks: [
-				{
-					id: "6202470E925B7DA6"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:placer_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "6202470E925B7DA6"
+				type: "checkmark"
+			}]
 			x: -16.000d
 			y: -3.000d
 		}
 		{
 			id: "628D16AD0A6579CA"
-			icon: {
-				id: "oritech:destroyer_block"
-			}
-			tasks: [
-				{
-					id: "62FC70CFBC001F43"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:destroyer_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62FC70CFBC001F43"
+				type: "checkmark"
+			}]
 			x: -13.750d
 			y: -3.000d
 		}
 		{
 			id: "6291C0C75463BCE6"
-			icon: {
-				id: "oritech:treefeller_block"
-			}
-			tasks: [
-				{
-					id: "62C21D36A6C55508"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:treefeller_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62C21D36A6C55508"
+				type: "checkmark"
+			}]
 			x: -11.500d
 			y: -3.000d
 		}
 		{
 			id: "6244B13B19677509"
-			icon: {
-				id: "oritech:fertilizer_block"
-			}
-			tasks: [
-				{
-					id: "6205DB9A1C655245"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:fertilizer_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "6205DB9A1C655245"
+				type: "checkmark"
+			}]
 			x: -9.250d
 			y: -3.000d
 		}

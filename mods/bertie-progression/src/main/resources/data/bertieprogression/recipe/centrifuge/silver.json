@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/silver"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:silver_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:silver_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

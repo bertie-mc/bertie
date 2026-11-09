@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "anvilcraft:raw_silver"
+  },
+  "output": {
+    "id": "bertieprogression:silver_dust",
+    "count": 2
+  }
+}

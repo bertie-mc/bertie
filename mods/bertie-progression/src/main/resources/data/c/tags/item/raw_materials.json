@@ -92,6 +92,19 @@
     {
       "id": "#forge:raw_materials",
       "required": false
-    }
+    },
+    "#c:raw_materials/voiderite",
+    "#c:raw_materials/bloody",
+    "#c:raw_materials/ostrum",
+    "#c:raw_materials/nickel",
+    "#c:raw_materials/platinum",
+    "#c:raw_materials/zinc",
+    "#c:raw_materials/silver",
+    "#c:raw_materials/tungsten",
+    "#c:raw_materials/tharsite",
+    "#c:raw_materials/corronium",
+    "#c:raw_materials/solerium",
+    "#c:raw_materials/eezo",
+    "#c:raw_materials/elvenite"
   ]
 }

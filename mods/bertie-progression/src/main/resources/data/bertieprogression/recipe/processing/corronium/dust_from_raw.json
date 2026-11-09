@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "stellaris:raw_corronium"
+  },
+  "output": {
+    "id": "bertieprogression:corronium_dust",
+    "count": 2
+  }
+}

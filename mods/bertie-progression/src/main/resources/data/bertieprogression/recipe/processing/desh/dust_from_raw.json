@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "stellaris:raw_desh_ingot"
+  },
+  "output": {
+    "id": "bertieprogression:desh_dust",
+    "count": 2
+  }
+}

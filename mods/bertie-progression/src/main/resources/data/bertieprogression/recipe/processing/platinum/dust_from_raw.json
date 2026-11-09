@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "oritech:raw_platinum"
+  },
+  "output": {
+    "id": "oritech:platinum_dust",
+    "count": 2
+  }
+}

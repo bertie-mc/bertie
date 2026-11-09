@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/elvenite"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:elvenite_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:elvenite_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

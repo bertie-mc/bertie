@@ -31,7 +31,8 @@
     "VanityEntityItemPacketMixin",
     "WardenModelMixin",
     "WardenStateMixin",
-    "PoweredFurnaceRecipeMixin"
+    "PoweredFurnaceRecipeMixin",
+    "OritechManaPotionMixin"
   ],
   "injectors": {
     "defaultRequire": 0

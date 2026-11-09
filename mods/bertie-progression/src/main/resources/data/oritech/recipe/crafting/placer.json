@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SMUFF",
+    "SEKPF",
+    "SMUFF",
+    "SSSSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "U": {
+      "item": "oritech:processing_unit"
+    },
+    "F": {
+      "item": "oritech:machine_frame_block"
+    },
+    "E": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "P": {
+      "item": "pastel:block_placer"
+    }
+  },
+  "result": {
+    "id": "oritech:placer_block",
+    "count": 1
+  },
+  "tier": 2
+}

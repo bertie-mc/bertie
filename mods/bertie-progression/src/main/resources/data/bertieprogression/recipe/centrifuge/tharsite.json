@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/tharsite"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:tharsite_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:tharsite_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

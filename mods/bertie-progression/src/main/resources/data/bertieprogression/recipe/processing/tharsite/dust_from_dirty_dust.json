@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/tharsite"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_dust",
+    "count": 1
+  }
+}

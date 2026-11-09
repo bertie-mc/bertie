@@ -100,6 +100,22 @@
     {
       "id": "#forge:dusts",
       "required": false
-    }
+    },
+    "#c:dusts/nickel",
+    "#c:dusts/platinum",
+    "#c:dusts/zinc",
+    "#c:dusts/silver",
+    "#c:dusts/titanium",
+    "#c:dusts/tungsten",
+    "#c:dusts/voiderite",
+    "#c:dusts/desh",
+    "#c:dusts/neptunium",
+    "#c:dusts/tharsite",
+    "#c:dusts/corronium",
+    "#c:dusts/solerium",
+    "#c:dusts/eezo",
+    "#c:dusts/ostrum",
+    "#c:dusts/bloody",
+    "#c:dusts/elvenite"
   ]
 }

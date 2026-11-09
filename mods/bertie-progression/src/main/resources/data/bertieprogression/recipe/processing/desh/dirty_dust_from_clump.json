@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:clumps/desh"
+  },
+  "output": {
+    "id": "bertieprogression:desh_dirty_dust",
+    "count": 1
+  }
+}

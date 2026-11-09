@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bertieprogression:bloody_dust"
+  },
+  "result": {
+    "id": "armageddon_mod:bloody_ingot"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

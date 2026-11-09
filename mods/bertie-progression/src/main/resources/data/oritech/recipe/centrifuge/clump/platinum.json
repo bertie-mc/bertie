@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/platinum"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:platinum_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:platinum_spec",
+      "count": 4
+    }
+  ],
+  "time": 150
+}

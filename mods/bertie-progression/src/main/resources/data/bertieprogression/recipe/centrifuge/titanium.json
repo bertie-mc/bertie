@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/titanium"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:titanium_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:titanium_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

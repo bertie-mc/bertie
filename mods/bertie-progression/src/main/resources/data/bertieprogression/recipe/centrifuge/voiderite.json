@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/voiderite"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:voiderite_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:voiderite_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

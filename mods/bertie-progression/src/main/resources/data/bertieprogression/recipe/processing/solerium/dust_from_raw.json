@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "stellaris:raw_solerium"
+  },
+  "output": {
+    "id": "bertieprogression:solerium_dust",
+    "count": 2
+  }
+}

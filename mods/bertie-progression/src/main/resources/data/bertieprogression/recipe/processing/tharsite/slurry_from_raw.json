@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:dissolution",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:sulfuric_acid"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 3,
+    "item": "stellaris:raw_tharsite"
+  },
+  "output": {
+    "amount": 2000,
+    "id": "bertieprogression:dirty_tharsite"
+  }
+}

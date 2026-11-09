@@ -2,17 +2,17 @@
   "type": "oritech:centrifuge",
   "ingredients": [
     {
-      "tag": "c:clumps/gold"
+      "tag": "c:dirty_dusts/gold"
     }
   ],
   "results": [
     {
-      "count": 1,
-      "id": "oritech:gold_gem"
+      "id": "oritech:gold_gem",
+      "count": 1
     },
     {
-      "count": 3,
-      "id": "create:copper_nugget"
+      "id": "bertieprogression:copper_spec",
+      "count": 4
     }
   ],
   "time": 100

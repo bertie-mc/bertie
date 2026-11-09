@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "stellaris:raw_neptunium"
+  },
+  "output": {
+    "id": "bertieprogression:neptunium_dust",
+    "count": 2
+  }
+}

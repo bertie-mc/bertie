@@ -4,6 +4,7 @@
     {
       "id": "oritech:iron_dust",
       "required": false
-    }
+    },
+    "oritech:iron_dust"
   ]
 }

@@ -4,6 +4,7 @@
     {
       "id": "anvilcraft:raw_silver",
       "required": false
-    }
+    },
+    "anvilcraft:raw_silver"
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RBR",
+    "NBN",
+    "RBR"
+  ],
+  "key": {
+    "R": {
+      "item": "bertieprogression:steel_rod"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "N": {
+      "tag": "c:ingots/nickel"
+    }
+  },
+  "result": {
+    "id": "oritech:machine_frame_block",
+    "count": 16
+  }
+}

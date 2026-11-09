@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:raw_bloody"
+  },
+  "output": {
+    "id": "bertieprogression:bloody_dust",
+    "count": 2
+  }
+}

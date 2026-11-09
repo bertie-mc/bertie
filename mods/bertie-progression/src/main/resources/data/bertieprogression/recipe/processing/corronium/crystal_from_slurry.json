@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 200,
+    "chemical": "bertieprogression:clean_corronium"
+  },
+  "output": {
+    "id": "bertieprogression:corronium_crystal",
+    "count": 1
+  }
+}

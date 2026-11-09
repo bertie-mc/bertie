@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:purifying",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:oxygen"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 1,
+    "item": "stellaris:raw_corronium"
+  },
+  "output": {
+    "id": "bertieprogression:corronium_clump",
+    "count": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/desh"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:desh_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:desh_spec",
+      "count": 4
+    }
+  ],
+  "time": 100
+}

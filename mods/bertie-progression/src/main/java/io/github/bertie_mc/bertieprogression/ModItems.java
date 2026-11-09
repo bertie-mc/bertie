@@ -109,11 +109,16 @@ public final class ModItems {
     public static final DeferredItem<Item> INCOMPLETE_ELECTRUM_WIRE = simple("incomplete_electrum_wire", 64);
     public static final DeferredItem<Item> ELECTRUM_WIRE = simple("electrum_wire", 64);
     public static final DeferredItem<Item> ELECTRIC_COIL = simple("electric_coil", 64);
+    public static final DeferredItem<Item> PLATINUM_COIL = simple("platinum_coil", 64);
     public static final DeferredItem<Item> NICKEL_SHEET = simple("nickel_sheet", 64);
     public static final DeferredItem<Item> STEEL_ROD = simple("steel_rod", 64);
     public static final DeferredItem<Item> STEEL_SHEET = simple("steel_sheet", 64);
     public static final DeferredItem<Item> ENRICHED_ZINC = simple("enriched_zinc", 64);
     public static final DeferredItem<Item> ENRICHED_AMETHYST = simple("enriched_amethyst", 64);
+
+    static {
+        OreMaterials.ITEMS.forEach(name -> simple(name, 64));
+    }
 
     // --- Deep dark / echo chain ---
     public static final DeferredItem<WeepingEyeItem> WEEPING_EYE = ITEMS.register(

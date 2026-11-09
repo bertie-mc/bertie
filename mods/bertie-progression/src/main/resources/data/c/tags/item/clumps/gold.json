@@ -8,6 +8,7 @@
     {
       "id": "oritech:gold_clump",
       "required": false
-    }
+    },
+    "mekanism:clump_gold"
   ]
 }

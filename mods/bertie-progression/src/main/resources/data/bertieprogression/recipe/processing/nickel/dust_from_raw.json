@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "oritech:raw_nickel"
+  },
+  "output": {
+    "id": "oritech:nickel_dust",
+    "count": 2
+  }
+}

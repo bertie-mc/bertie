@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:clumps/elvenite"
+  },
+  "output": {
+    "id": "bertieprogression:elvenite_dirty_dust",
+    "count": 1
+  }
+}

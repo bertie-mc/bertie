@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "CMRCW",
+    "CAKCW",
+    "CMRCW",
+    "SSSSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "R": {
+      "item": "bertieprogression:electrum_rod"
+    },
+    "W": {
+      "item": "create:mechanical_saw"
+    },
+    "A": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "result": {
+    "id": "oritech:treefeller_block",
+    "count": 1
+  },
+  "tier": 2
+}

@@ -1007,21 +1007,10 @@
 		}
 		{
 			id: "61F223E957195400"
-			icon: {
-				id: "mekanism:logistical_sorter"
-			}
-			tasks: [
-				{
-					id: "61FA7D3FD82702C6"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:logistical_sorter"
-					}
-				}
-			]
+			tasks: [{
+				id: "61FA7D3FD82702C6"
+				type: "checkmark"
+			}]
 			x: -9.250d
 			y: 9.000d
 		}

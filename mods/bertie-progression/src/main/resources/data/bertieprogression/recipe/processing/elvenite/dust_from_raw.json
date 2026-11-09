@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "armageddon_mod:raw_elvenite"
+  },
+  "output": {
+    "id": "bertieprogression:elvenite_dust",
+    "count": 2
+  }
+}

@@ -2,17 +2,17 @@
   "type": "oritech:centrifuge",
   "ingredients": [
     {
-      "tag": "c:clumps/iron"
+      "tag": "c:dirty_dusts/iron"
     }
   ],
   "results": [
     {
-      "count": 1,
-      "id": "oritech:iron_gem"
+      "id": "oritech:iron_gem",
+      "count": 1
     },
     {
-      "count": 3,
-      "id": "oritech:nickel_nugget"
+      "id": "bertieprogression:nickel_spec",
+      "count": 4
     }
   ],
   "time": 100

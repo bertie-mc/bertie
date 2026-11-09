@@ -4,6 +4,7 @@
     {
       "id": "mekanism:dust_copper",
       "required": false
-    }
+    },
+    "mekanism:dust_copper"
   ]
 }

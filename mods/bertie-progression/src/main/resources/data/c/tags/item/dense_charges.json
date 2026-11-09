@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#c:dense_charges/iron",
+    "#c:dense_charges/copper",
+    "#c:dense_charges/gold",
+    "#c:dense_charges/uranium",
+    "#c:dense_charges/osmium",
+    "#c:dense_charges/tin",
+    "#c:dense_charges/lead",
+    "#c:dense_charges/naquadah",
+    "#c:dense_charges/nickel",
+    "#c:dense_charges/platinum",
+    "#c:dense_charges/zinc",
+    "#c:dense_charges/silver",
+    "#c:dense_charges/titanium",
+    "#c:dense_charges/tungsten",
+    "#c:dense_charges/voiderite",
+    "#c:dense_charges/desh",
+    "#c:dense_charges/neptunium",
+    "#c:dense_charges/tharsite",
+    "#c:dense_charges/corronium",
+    "#c:dense_charges/solerium",
+    "#c:dense_charges/eezo",
+    "#c:dense_charges/ostrum",
+    "#c:dense_charges/bloody",
+    "#c:dense_charges/elvenite"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "anvilcraft:raw_titanium"
+  },
+  "output": {
+    "id": "bertieprogression:titanium_dust",
+    "count": 2
+  }
+}

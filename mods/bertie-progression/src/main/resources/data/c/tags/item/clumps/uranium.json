@@ -4,6 +4,7 @@
     {
       "id": "mekanism:clump_uranium",
       "required": false
-    }
+    },
+    "mekanism:clump_uranium"
   ]
 }

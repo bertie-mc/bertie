@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/eezo"
+  },
+  "output": {
+    "id": "bertieprogression:eezo_dust",
+    "count": 1
+  }
+}

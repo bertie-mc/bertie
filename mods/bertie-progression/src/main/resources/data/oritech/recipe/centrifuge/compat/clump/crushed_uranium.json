@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/uranium"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:uranium_gem",
+      "count": 1
+    },
+    {
+      "id": "bertieprogression:uranium_spec",
+      "count": 4
+    }
+  ],
+  "time": 50
+}
