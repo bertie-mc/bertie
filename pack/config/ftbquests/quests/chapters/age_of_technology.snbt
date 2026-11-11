@@ -1618,8 +1618,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 25.5d
+			y: 0.0d
+			x: 24.0d
 			dependencies: ["5C0000000000935C"]
 			id: "5C0000000000935F"
 			icon: { id: "oritech:fluxite" }
@@ -1631,8 +1631,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 27.0d
+			y: 1.5d
+			x: 22.5d
 			dependencies: ["5C0000000000935F"]
 			id: "5C00000000009360"
 			icon: { id: "oritech:flux_gate" }
@@ -1644,8 +1644,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 28.5d
+			y: 1.5d
+			x: 21.0d
 			dependencies: ["5C00000000009360"]
 			id: "5C00000000009361"
 			icon: { id: "oritech:foundry_block" }
@@ -1657,8 +1657,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 30.0d
+			y: 3.0d
+			x: 21.0d
 			dependencies: ["5C00000000009361"]
 			id: "5C00000000009362"
 			icon: { id: "oritech:duratium_ingot" }
@@ -1670,15 +1670,15 @@
 			}]
 		}
 		{
-			y: 0.0d
-			x: 28.5d
+			y: 1.5d
+			x: 19.5d
 			dependencies: ["5C00000000009361"]
 			id: "5C00000000009363"
-			icon: { id: "cataclysm:enderite_ingot" }
+			icon: { id: "oritech:energite_ingot" }
 			tasks: [{
 				id: "5C00000001009363"
 				count: 1L
-				item: { count: 1 id: "cataclysm:enderite_ingot" }
+				item: { count: 1 id: "oritech:energite_ingot" }
 				type: "item"
 			}]
 		}

@@ -41,7 +41,8 @@ by booster placement. Pools rebuild on data reload or level lifecycle changes.
 The selected Foundry, Fuel Generator, Enderic Laser, Osmium Compressor,
 Combiner, Configurator, Transmission Pole and Bottle of Ruin use Nether Table
 recipes. Fluid Addon, Target Designator and Energy Tablet retain ordinary 3×3
-crafting. The Foundry requires the two explicitly selected Enderic Lasers.
+crafting. The Foundry requires two Enderic Lenses. The Transmission Pole's
+four-row recipe sits at the bottom of its five-row EMI grid.
 
 Energy Cubes and factory upgrades use Osmium, Refined Glowstone, Electrum,
 Refined Obsidian, Energite, Adamant and Duratium side pairs from Basic through
@@ -62,3 +63,38 @@ dimension pools, effective chance recipes, booster units, mining speed and the
 survival drop path with AnvilCraft and Bertie Tiers. Its fixture substitutes
 Stone for an unrelated optional Pastel worldgen block so that the focused
 server can load without the wider combat/magic fixture.
+
+## Warden materials and the Otherside
+
+Warden loot retains the Sculk Catalyst and gives one to Looting level plus one
+Carapaces through Minecraft's ordinary Looting roll. Heart of the Deep and
+Primordial Soulstone no longer drop from Wardens. Warden Tendril tells players
+to shear the Warden.
+
+One Carapace yields one Bone Shard on Crushing Wheels or the Pulveriser, or
+two on the Mekanism Crusher. Crushing Wheels alone have a 5% Echo Shard bonus.
+Reinforced Echo Shard and Warden Stick use their Nether Table patterns.
+Foundry makes two Sculkium from one Reinforced Echo Shard and one Duratium.
+Heart of the Deep is crafted on the Nether Table with the selected Echo/Core/
+Bone Shards, Creaking Heart, Dragon Hearts and Heart of the Sea.
+
+Deep Foundations extends Earth Core Shard through the Warden materials and
+Heart to entering the Otherside. The separate Ruin branch unlocks Bedrock Dust
+and entering Imbrifer. The Beacon branches also introduce the Giant Anvil and
+rings, and the Ember Smithing Template and Anvil.
+
+## Crystal alchemy and collision tiers
+
+Seven Magitech Crystals consume 2000 mB of their matching Potion. The six
+elemental crystals retain their base inputs and add Infused Netherite, two
+matching materials and one block. Hollow uses its seven selected solid inputs;
+the Crucible has eight slots. Each corresponding Potion converts Mana Potion
+1:1 and consumes its own selected items without requiring a Crystal.
+
+The Spirit Altar produces Grand Lava Sponge from eight Nether Depths Lava
+Sponges, Aerial/Infernal/Aqueous Spirits, Magma Blocks, Magma Cream, Buckets and
+Solar Cores. The existing Pastel dry and wet variants retain their identities.
+
+Anvil Collision uses vanilla/Royal at T1, Ember at T2 and Transcendence at T3,
+with higher tiers accepted by lower minimums. Recipes that consume a specific
+anvil retain that material requirement. Other anvil systems retain their tags.

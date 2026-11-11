@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "magitech:mana_charged_fluorite"
+    },
+    {
+      "tag": "magitech:aspect_crystal_base"
+    },
+    {
+      "item": "elemental_metals:arcane_infused_netherite_ingot"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "minecraft:budding_amethyst"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:magic_potion",
+    "amount": 2000
+  },
+  "result": {
+    "id": "magitech:magic_crystal",
+    "count": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "magitech:mana_charged_fluorite"
+    },
+    {
+      "tag": "magitech:aspect_crystal_base"
+    },
+    {
+      "item": "elemental_metals:lightning_infused_netherite_ingot"
+    },
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    {
+      "item": "oritech:electrum_block"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:surge_potion",
+    "amount": 2000
+  },
+  "result": {
+    "id": "magitech:surge_crystal",
+    "count": 1
+  }
+}

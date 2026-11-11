@@ -1,22 +1,41 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "CMC",
-    "MBM",
-    "CMC"
-  ],
-  "key": {
-    "B": {
-      "item": "minecraft:lava_bucket"
-    },
-    "M": {
-      "item": "minecraft:magma_block"
-    },
-    "C": {
-      "item": "minecraft:magma_cream"
-    }
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "netherdepthsupgrade:lava_sponge",
+    "count": 8
   },
+  "extraInputs": [
+    {
+      "item": "minecraft:magma_block",
+      "count": 33
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "count": 16
+    },
+    {
+      "item": "minecraft:bucket",
+      "count": 4
+    },
+    {
+      "item": "hazennstuff:solar_core",
+      "count": 4
+    }
+  ],
+  "spirits": [
+    {
+      "type": "malum:aerial",
+      "count": 8
+    },
+    {
+      "type": "malum:infernal",
+      "count": 16
+    },
+    {
+      "type": "malum:aqueous",
+      "count": 16
+    }
+  ],
   "result": {
     "id": "pastel:lava_sponge",
     "count": 1
@@ -25,6 +44,10 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "malum"
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "type": "anvilcraft:anvil_collision",
+  "anvil": {
+    "blocks": "#bertieprogression:collision_anvils/tier_1"
+  },
+  "consume": true,
+  "hitBlock": {
+    "blocks": "anvilcraft:giant_anvil"
+  },
+  "output_items": [],
+  "speed": 32,
+  "transform_blocks": [
+    {
+      "input": {
+        "blocks": "anvilcraft:confinement_chamber"
+      },
+      "max_count": 16,
+      "output": {
+        "block": "anvilcraft:confined_mass_anvilon"
+      }
+    }
+  ]
+}

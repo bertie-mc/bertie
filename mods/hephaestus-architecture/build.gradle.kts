@@ -17,4 +17,7 @@ dependencies {
 
     compileOnly(deps.forbiddenArcanus)
     runtimeOnly(deps.forbiddenArcanus)
+    gametestRuntimeOnly(deps.anvilcraft)
+    gametestRuntimeOnly(deps.malum)
+    gametestRuntimeOnly(deps.curios)
 }

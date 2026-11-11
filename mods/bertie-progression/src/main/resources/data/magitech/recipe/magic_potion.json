@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "forbidden_arcanus:arcane_crystal_dust"
+    },
+    {
+      "item": "forbidden_arcanus:arcane_crystal_dust"
+    },
+    {
+      "item": "magitech:mana_berries"
+    },
+    {
+      "item": "magitech:mana_berries"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:mana_potion",
+    "amount": 1000
+  },
+  "fluid_result": {
+    "id": "magitech:magic_potion",
+    "amount": 1000
+  }
+}

@@ -84,6 +84,7 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.anvilcraft)
     "integrationtestRuntimeOnly"(deps.curios)
     "integrationtestRuntimeOnly"(deps.hooked)
+    "integrationtestRuntimeOnly"(deps.deeperdarker)
     "integrationtestRuntimeOnly"(project(":mods:bertie-tiers"))
     gametestRuntimeOnly(deps.quark)
     gametestRuntimeOnly(deps.alexsMobs1211)

@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "processingTime": 250,
+  "ingredients": [
+    {
+      "item": "deeperdarker:warden_carapace"
+    }
+  ],
+  "results": [
+    {
+      "id": "l2complements:warden_bone_shard",
+      "count": 1
+    },
+    {
+      "id": "minecraft:echo_shard",
+      "count": 1,
+      "chance": 0.05
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "   DD",
+    "  DBD",
+    " DBD ",
+    "DBD  ",
+    "DD   "
+  ],
+  "key": {
+    "B": {
+      "item": "deeperdarker:sculk_bone"
+    },
+    "D": {
+      "item": "deeperdarker:soul_dust"
+    }
+  },
+  "result": {
+    "id": "darkermagic:warden_stick",
+    "count": 1
+  }
+}

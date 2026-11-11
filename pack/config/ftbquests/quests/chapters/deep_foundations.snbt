@@ -35,8 +35,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 0d
+			y: -1.5d
+			x: 1.5d
 			dependencies: ["5D00000000000001"]
 			id: "5D00000000000003"
 			icon: { id: "anvilcraft:royal_anvil" }
@@ -113,8 +113,8 @@
 			}]
 		}
 		{
-			y: 3d
-			x: 4.5d
+			y: 1.5d
+			x: 6.0d
 			dependencies: ["5D00000000000008"]
 			id: "5D00000000000009"
 			icon: { id: "anvilcraft:void_matter" }
@@ -152,7 +152,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: -1.5d
 			x: 7.5d
 			dependencies: ["5D00000000000006"]
 			id: "5D0000000000000C"
@@ -162,6 +162,175 @@
 				count: 1L
 				item: { count: 1 id: "anvilcraft:ember_metal_ingot" }
 				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000009"]
+			y: 1.5d
+			x: 7.5d
+			id: "5D0000000000000D"
+			icon: { id: "anvilcraft:void_matter_block" }
+			tasks: [{
+				id: "5D0000000100000D"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:void_matter_block" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D0000000000000B", "5D0000000000000C", "5D0000000000000D"]
+			y: 0.0d
+			x: 9.0d
+			id: "5D0000000000000E"
+			icon: { id: "pastel:bottle_of_ruin" }
+			tasks: [{
+				id: "5D0000000100000E"
+				count: 1L
+				item: { count: 1 id: "pastel:bottle_of_ruin" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D0000000000000E"]
+			y: 0.0d
+			x: 10.5d
+			id: "5D0000000000000F"
+			icon: { id: "pastel:bedrock_dust" }
+			tasks: [{
+				id: "5D0000000100000F"
+				count: 1L
+				item: { count: 1 id: "pastel:bedrock_dust" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D0000000000000E"]
+			y: 1.5d
+			x: 10.5d
+			id: "5D00000000000010"
+			icon: { id: "pastel:moonstone_shard" }
+			tasks: [{
+				id: "5D00000001000010"
+				dimension: "pastel:deeper_down"
+				icon: { id: "pastel:moonstone_shard" }
+				type: "dimension"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000006"]
+			y: -1.5d
+			x: 6.0d
+			id: "5D00000000000011"
+			icon: { id: "anvilcraft:giant_anvil" }
+			tasks: [{
+				id: "5D00000001000011"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:giant_anvil" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000011"]
+			y: -3.0d
+			x: 6.0d
+			id: "5D00000000000012"
+			icon: { id: "anvilcraft:acceleration_ring" }
+			tasks: [{
+				id: "5D00000001000012"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:acceleration_ring" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000012"]
+			y: -4.5d
+			x: 6.0d
+			id: "5D00000000000013"
+			icon: { id: "anvilcraft:deflection_ring" }
+			tasks: [{
+				id: "5D00000001000013"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:deflection_ring" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D0000000000000C"]
+			y: -1.5d
+			x: 9.0d
+			id: "5D00000000000014"
+			icon: { id: "anvilcraft:ember_metal_upgrade_smithing_template" }
+			tasks: [{
+				id: "5D00000001000014"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:ember_metal_upgrade_smithing_template" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000014"]
+			y: -1.5d
+			x: 10.5d
+			id: "5D00000000000015"
+			icon: { id: "anvilcraft:ember_anvil" }
+			tasks: [{
+				id: "5D00000001000015"
+				count: 1L
+				item: { count: 1 id: "anvilcraft:ember_anvil" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D0000000000000A"]
+			y: 3.0d
+			x: 7.5d
+			id: "5D00000000000016"
+			icon: { id: "deeperdarker:warden_carapace" }
+			tasks: [{
+				id: "5D00000001000016"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:warden_carapace" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000016"]
+			y: 3.0d
+			x: 9.0d
+			id: "5D00000000000017"
+			icon: { id: "l2complements:warden_bone_shard" }
+			tasks: [{
+				id: "5D00000001000017"
+				count: 1L
+				item: { count: 1 id: "l2complements:warden_bone_shard" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000017"]
+			y: 3.0d
+			x: 10.5d
+			id: "5D00000000000018"
+			icon: { id: "deeperdarker:heart_of_the_deep" }
+			tasks: [{
+				id: "5D00000001000018"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:heart_of_the_deep" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5D00000000000018"]
+			y: 3.0d
+			x: 12.0d
+			id: "5D00000000000019"
+			icon: { id: "deeperdarker:heart_of_the_deep" }
+			tasks: [{
+				id: "5D00000001000019"
+				dimension: "deeperdarker:otherside"
+				icon: { id: "deeperdarker:heart_of_the_deep" }
+				type: "dimension"
 			}]
 		}
 	]

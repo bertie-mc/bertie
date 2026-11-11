@@ -2205,7 +2205,6 @@
 	quest.1C00000000002055.title: "Hardend Resin"
 	quest.1C00000000002055.quest_desc: ["Armour materials"]
 	quest.1C00000000002056.title: "Warden Bone Shard"
-	quest.1C00000000002056.quest_desc: ["Armour materials"]
 	quest.1C00000000002057.title: "Frozen Bone"
 	quest.1C00000000002057.quest_desc: ["Armour materials"]
 	quest.1C00000000002058.title: "Icy Fang"
@@ -2860,7 +2859,7 @@
 	quest.5C00000000009360.title: "Flux Gate"
 	quest.5C00000000009361.title: "Foundry"
 	quest.5C00000000009362.title: "Duratium Ingot"
-	quest.5C00000000009363.title: "Enderite Ingot"
+	quest.5C00000000009363.title: "Energite Ingot"
 	quest.5C00000000009364.title: "Light Naphtha Bucket"
 	quest.5C00000000009365.title: "Silicon Wash"
 	quest.5C00000000009366.title: "Silicon Wafer"
@@ -2878,4 +2877,17 @@
 	quest.5D0000000000000B.title: "Frost Metal Ingot"
 	quest.5D0000000000000C.title: "Ember Metal Ingot"
 	chapter.5D00000000000000.title: "Deep Foundations"
+	quest.5D0000000000000D.title: "Block of Void Matter"
+	quest.5D0000000000000E.title: "Bottle of Ruin"
+	quest.5D0000000000000F.title: "Bedrock Dust"
+	quest.5D00000000000010.title: "Enter Imbrifer"
+	quest.5D00000000000011.title: "Giant Anvil"
+	quest.5D00000000000012.title: "Acceleration Ring"
+	quest.5D00000000000013.title: "Deflection Ring"
+	quest.5D00000000000014.title: "Ember Metal Upgrade Smithing Template"
+	quest.5D00000000000015.title: "Ember Anvil"
+	quest.5D00000000000016.title: "Warden Carapace"
+	quest.5D00000000000017.title: "Warden Bone Shard"
+	quest.5D00000000000018.title: "Heart of the Deep"
+	quest.5D00000000000019.title: "Enter the Otherside"
 }

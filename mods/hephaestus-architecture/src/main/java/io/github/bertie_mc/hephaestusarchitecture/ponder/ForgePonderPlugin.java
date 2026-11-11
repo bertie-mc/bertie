@@ -199,7 +199,7 @@ public class ForgePonderPlugin implements PonderPlugin {
                                     3,
                                     3,
                                     PonderPalette.OUTPUT,
-                                    "Four pillars rise at the diagonals: Gilded Chiseled Darkstone, an Arcane Crystal Block, then Gilded again."))),
+                                    "Four pillars rise at the diagonals: Gilded Chiseled Darkstone, a Corrupted Arcane Crystal Block, then Gilded again."))),
             new Tier(
                     "tier_4",
                     "Hephaestus Forge - Tier 4 Layout",

@@ -13,6 +13,9 @@ forge tier.
   - `hephaestusarchitecture:hephaestus_forge/tier_4`
   - `hephaestusarchitecture:hephaestus_forge/tier_5`
 - A higher-tier forge is active only while its tier template matches.
+- Tier 3 uses four Earth Core Shard Blocks at the base points and four Corrupted
+  Arcane Crystal Blocks in its pillars. The creative placer uses the same
+  template, and Ponder displays the same materials.
 - The one Hephaestus Forge block saved in the template is the anchor.
 - Every F&A pedestal saved in the template becomes a legal ritual input
   position. Pedestals elsewhere cannot feed that forge.
@@ -65,7 +68,7 @@ gradle :mods:hephaestus-architecture:runGameTests
 ```
 
 Output:
-`build/libs/hephaestusarchitecture-0.1.0.jar`
+`build/libs/hephaestusarchitecture-<version>.jar`
 
 The JVM suite validates rotation and every shipped structure template. The GameTest suite checks
 that all F&A mixins still transform their upstream targets on a dedicated server. Test classes

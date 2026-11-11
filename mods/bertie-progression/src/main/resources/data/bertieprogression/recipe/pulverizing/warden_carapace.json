@@ -1,0 +1,15 @@
+{
+  "type": "oritech:pulverizer",
+  "time": 100,
+  "ingredients": [
+    {
+      "item": "deeperdarker:warden_carapace"
+    }
+  ],
+  "results": [
+    {
+      "id": "l2complements:warden_bone_shard",
+      "count": 1
+    }
+  ]
+}

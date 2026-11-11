@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SE SE",
+    "BBCBB",
+    "EFHIS",
+    " ELS ",
+    "  B  "
+  ],
+  "key": {
+    "S": {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "B": {
+      "item": "l2complements:warden_bone_shard"
+    },
+    "C": {
+      "item": "minecraft:creaking_heart"
+    },
+    "F": {
+      "item": "iceandfire:fire_dragon_heart"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "I": {
+      "item": "iceandfire:ice_dragon_heart"
+    },
+    "L": {
+      "item": "iceandfire:lightning_dragon_heart"
+    }
+  },
+  "result": {
+    "id": "deeperdarker:heart_of_the_deep",
+    "count": 1
+  }
+}

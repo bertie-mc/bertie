@@ -93,11 +93,11 @@
         "mapping": {
           "0": "forbidden_arcanus:hephaestus_forge_tier_3",
           "A": "malum:block_of_living_flesh",
-          "B": "minecraft:chiseled_resin_bricks",
+          "B": "anvilcraft:earth_core_shard_block",
           "C": "forbidden_arcanus:polished_darkstone",
           "D": "forbidden_arcanus:arcane_polished_darkstone",
           "E": "forbidden_arcanus:gilded_chiseled_polished_darkstone",
-          "F": "forbidden_arcanus:arcane_crystal_block",
+          "F": "forbidden_arcanus:corrupted_arcane_crystal_block",
           "G": "forbidden_arcanus:polished_darkstone_slab[type=bottom,waterlogged=false]",
           "H": "forbidden_arcanus:polished_darkstone_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
           "I": "forbidden_arcanus:polished_darkstone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]",

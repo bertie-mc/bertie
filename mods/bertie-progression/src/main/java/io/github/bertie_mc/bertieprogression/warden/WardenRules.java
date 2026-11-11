@@ -1,7 +1,9 @@
 package io.github.bertie_mc.bertieprogression.warden;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -20,6 +22,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 public final class WardenRules {
@@ -30,6 +33,15 @@ public final class WardenRules {
 
     public static boolean shouldRetaliate(double distanceSquared, long tick, long readyAt) {
         return distanceSquared > 144 && tick >= readyAt;
+    }
+
+    @SubscribeEvent
+    public static void describeTendril(ItemTooltipEvent event) {
+        if (TENDRIL.equals(BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem()))) {
+            event.getToolTip()
+                    .add(Component.translatable("tooltip.bertieprogression.warden_tendril")
+                            .withStyle(ChatFormatting.GRAY));
+        }
     }
 
     @SubscribeEvent

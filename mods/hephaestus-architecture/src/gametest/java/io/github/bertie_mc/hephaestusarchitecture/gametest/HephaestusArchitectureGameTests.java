@@ -5,6 +5,7 @@ import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayout;
 import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeLayouts;
 import io.github.bertie_mc.hephaestusarchitecture.structure.ForgeStructurePlacement;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.resources.ResourceLocation;
@@ -60,7 +61,35 @@ public final class HephaestusArchitectureGameTests {
                 helper.fail("Placed tier " + tier + " forge did not activate");
                 return;
             }
+            if (tier == 3) assertTierThreeMaterials(helper, forgePos);
         }
         helper.succeed();
+    }
+
+    private static void assertTierThreeMaterials(GameTestHelper helper, BlockPos forgePos) {
+        var level = helper.getLevel();
+        var core = BuiltInRegistries.BLOCK.get(ResourceLocation.parse("anvilcraft:earth_core_shard_block"));
+        var corrupt =
+                BuiltInRegistries.BLOCK.get(ResourceLocation.parse("forbidden_arcanus:corrupted_arcane_crystal_block"));
+        var oldCrystal = BuiltInRegistries.BLOCK.get(ResourceLocation.parse("forbidden_arcanus:arcane_crystal_block"));
+        int cores = 0;
+        int crystals = 0;
+        BlockPos firstCrystal = null;
+        for (BlockPos pos : BlockPos.betweenClosed(forgePos.offset(-6, -1, -6), forgePos.offset(6, 4, 6))) {
+            var state = level.getBlockState(pos);
+            if (state.is(core)) cores++;
+            if (state.is(corrupt)) {
+                crystals++;
+                firstCrystal = pos.immutable();
+            }
+        }
+        helper.assertTrue(cores == 4 && crystals == 4, "Tier III placer must use four blocks of each new material");
+        if (firstCrystal != null) {
+            level.setBlockAndUpdate(firstCrystal, oldCrystal.defaultBlockState());
+            helper.assertTrue(
+                    ForgeLayouts.match(level, forgePos, 3) == null,
+                    "An ordinary crystal block must no longer satisfy the tier III layout");
+            level.setBlockAndUpdate(firstCrystal, corrupt.defaultBlockState());
+        }
     }
 }

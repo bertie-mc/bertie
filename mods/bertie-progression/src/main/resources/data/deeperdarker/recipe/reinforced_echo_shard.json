@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SCS  ",
+    "CBBS ",
+    "SBEBS",
+    " SBBC",
+    "  SCS"
+  ],
+  "key": {
+    "S": {
+      "item": "aquamirae:ship_graveyard_echo"
+    },
+    "C": {
+      "item": "deeperdarker:warden_carapace"
+    },
+    "B": {
+      "item": "l2complements:warden_bone_shard"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "id": "deeperdarker:reinforced_echo_shard",
+    "count": 1
+  }
+}

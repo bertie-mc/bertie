@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "deeperdarker:reinforced_echo_shard"
+    },
+    {
+      "item": "oritech:duratium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "l2complements:sculkium_ingot",
+      "count": 2
+    }
+  ]
+}

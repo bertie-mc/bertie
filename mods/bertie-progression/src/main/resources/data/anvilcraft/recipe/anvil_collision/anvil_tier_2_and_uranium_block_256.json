@@ -1,7 +1,7 @@
 {
   "type": "anvilcraft:anvil_collision",
   "anvil": {
-    "blocks": "#anvilcraft:anvil_tier_2"
+    "blocks": "#bertieprogression:collision_anvils/tier_2"
   },
   "consume": false,
   "hitBlock": {

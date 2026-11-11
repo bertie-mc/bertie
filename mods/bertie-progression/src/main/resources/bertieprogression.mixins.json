@@ -42,6 +42,7 @@
     "defaultRequire": 0
   },
   "client": [
-    "EmiWireOutputMixin"
+    "EmiWireOutputMixin",
+    "PoleRecipeLayoutMixin"
   ]
 }

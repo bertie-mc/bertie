@@ -3,5 +3,7 @@
   "effect.pastel.magic_annulation": "Energy Annulation",
   "effect.pastel.magic_annulation.desc": "Subtracts 1 Energy damage per level after resistance.",
   "book.pastel.guidebook.magic_annulation.page0.text": "Subtracts 1 Energy damage per level after resistance.",
-  "explosion_modifier.pastel.magic_damage": "Energy Damage"
+  "explosion_modifier.pastel.magic_damage": "Energy Damage",
+  "block.pastel.lava_sponge": "Grand Lava Sponge",
+  "block.pastel.wet_lava_sponge": "Wet Grand Lava Sponge"
 }

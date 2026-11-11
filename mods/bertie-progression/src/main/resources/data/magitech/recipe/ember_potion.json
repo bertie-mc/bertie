@@ -2,16 +2,22 @@
   "type": "magitech:zardius_crucible",
   "ingredients": [
     {
-      "item": "magitech:aggregated_fluxia"
+      "item": "minecraft:charcoal"
     },
     {
-      "item": "magitech:ember_crystal"
+      "item": "minecraft:charcoal"
     },
     {
-      "tag": "minecraft:coals"
+      "item": "minecraft:fire_charge"
     },
     {
-      "tag": "c:gems/citrine"
+      "item": "minecraft:fire_charge"
+    },
+    {
+      "item": "minecraft:fire_coral"
+    },
+    {
+      "item": "minecraft:fire_coral"
     }
   ],
   "fluid_ingredient": {

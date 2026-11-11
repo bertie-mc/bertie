@@ -8,15 +8,21 @@
       "tag": "magitech:aspect_crystal_base"
     },
     {
-      "tag": "minecraft:coals"
+      "item": "elemental_metals:fire_infused_netherite_ingot"
     },
     {
-      "tag": "minecraft:coals"
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "malum:block_of_blazing_quartz"
     }
   ],
   "fluid_ingredient": {
-    "fluid": "minecraft:water",
-    "amount": 250
+    "fluid": "magitech:ember_potion",
+    "amount": 2000
   },
   "result": {
     "id": "magitech:ember_crystal",

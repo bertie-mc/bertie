@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "magitech:mana_charged_fluorite"
+    },
+    {
+      "tag": "magitech:aspect_crystal_base"
+    },
+    {
+      "item": "elemental_metals:soul_infused_netherite_ingot"
+    },
+    {
+      "item": "minecraft:deepslate"
+    },
+    {
+      "item": "minecraft:deepslate"
+    },
+    {
+      "item": "anvilcraft:sturdy_deepslate"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:tremor_potion",
+    "amount": 2000
+  },
+  "result": {
+    "id": "magitech:tremor_crystal",
+    "count": 1
+  }
+}

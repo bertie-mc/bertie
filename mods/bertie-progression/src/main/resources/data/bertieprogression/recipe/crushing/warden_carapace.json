@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "item": "deeperdarker:warden_carapace",
+    "count": 1
+  },
+  "output": {
+    "id": "l2complements:warden_bone_shard",
+    "count": 2
+  }
+}

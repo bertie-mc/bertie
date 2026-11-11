@@ -1,0 +1,31 @@
+{
+  "type": "magitech:zardius_crucible",
+  "ingredients": [
+    {
+      "item": "magitech:mana_charged_fluorite"
+    },
+    {
+      "tag": "magitech:aspect_crystal_base"
+    },
+    {
+      "item": "elemental_metals:frost_infused_netherite_ingot"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    }
+  ],
+  "fluid_ingredient": {
+    "fluid": "magitech:glace_potion",
+    "amount": 2000
+  },
+  "result": {
+    "id": "magitech:glace_crystal",
+    "count": 1
+  }
+}

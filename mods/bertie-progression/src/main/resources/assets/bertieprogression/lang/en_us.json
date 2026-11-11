@@ -282,5 +282,6 @@
   "item.bertieprogression.platinum_rod": "Platinum Rod",
   "item.bertieprogression.platinum_wire": "Platinum Wire",
   "item.bertieprogression.incomplete_platinum_wire": "Incomplete Platinum Wire",
-  "item.bertieprogression.coal_dense_charge": "Dense Coal Charge"
+  "item.bertieprogression.coal_dense_charge": "Dense Coal Charge",
+  "tooltip.bertieprogression.warden_tendril": "Shear Warden"
 }
