@@ -1145,5 +1145,19 @@
 				consume_items: false type: "item"
 			}]
 		}
+		{
+			y: -3.0d
+			x: 10.5d
+			dependencies: ["5D00000000000014"]
+			id: "5D00000000000090"
+			icon: { id: "anvilcraft:ember_smithing_table" }
+			tasks: [{
+				id: "5D00000001000090"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:ember_smithing_table" }
+				type: "item"
+			}]
+		}
 	]
 }
