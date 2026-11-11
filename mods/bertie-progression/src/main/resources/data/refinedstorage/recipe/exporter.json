@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "     ",
+    "LLLLL",
+    "QCPCQ",
+    " QBQ ",
+    "     "
+  ],
+  "key": {
+    "L": {
+      "item": "refinedstorage:cable"
+    },
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "P": {
+      "item": "refinedstorage:improved_processor"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "B": {
+      "item": "mekanism:basic_control_circuit"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:exporter",
+    "count": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "LLLLL",
+    " QQQ ",
+    "QCPDQ",
+    "QEEEQ",
+    " QQQ "
+  ],
+  "key": {
+    "L": {
+      "item": "refinedstorage:cable"
+    },
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "P": {
+      "item": "refinedstorage:improved_processor"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "E": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:external_storage",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QQQQR",
+    "QACKH",
+    "QUMKH",
+    "RADKH",
+    "RRRRR"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "R": {
+      "item": "anvilcraft:royal_steel_ingot"
+    },
+    "K": {
+      "item": "cognition:cognitive_crystal"
+    },
+    "H": {
+      "item": "pastel:onyx_glass"
+    },
+    "U": {
+      "item": "oritech:processing_unit"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:grid",
+    "count": 1
+  }
+}

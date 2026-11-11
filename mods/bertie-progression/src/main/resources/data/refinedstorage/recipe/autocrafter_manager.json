@@ -1,0 +1,41 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QQQQR",
+    "QATKH",
+    "QVMKH",
+    "RATKH",
+    "RRRRR"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "R": {
+      "item": "anvilcraft:royal_steel_ingot"
+    },
+    "K": {
+      "item": "cognition:cognitive_crystal"
+    },
+    "H": {
+      "item": "pastel:onyx_glass"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "T": {
+      "tag": "refinedstorage:autocrafters"
+    },
+    "V": {
+      "item": "anvilcraft:circuit_board"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:autocrafter_manager",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "LLLLL",
+    " QQQ ",
+    "QPGPQ",
+    "QCGCQ",
+    " QQQ "
+  ],
+  "key": {
+    "L": {
+      "item": "refinedstorage:cable"
+    },
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "P": {
+      "item": "refinedstorage:improved_processor"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "G": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:constructor",
+    "count": 1
+  }
+}

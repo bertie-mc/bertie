@@ -53,7 +53,7 @@ R P U P R
 Q R R R Q
 ```
 
-Cable production uses only the 5×5 Mechanical Crafting wall, yielding twelve
+Cable production uses only the 5×5 Mechanical Crafting wall, yielding sixteen
 Cables. C is Quartz-Enriched Copper, A Andesite Alloy, G Moonstone Glass and
 B Basic Control Circuit. The original ordinary production recipe is replaced.
 Controller and Cable recoloring continue to consume existing devices.
@@ -65,6 +65,25 @@ G G B G G
 C A A A C
 C C C C C
 ```
+
+## Grid and peripheral recipes
+
+Grid, Constructor, Destructor, External Storage, Exporter, Importer,
+Autocrafter Manager and Autocrafting Monitor use Mechanical Crafting and
+produce one device each. Their old ordinary production recipes are replaced;
+recoloring continues to require existing devices.
+
+Grid uses six Quartz-Enriched Iron, seven Royal Steel, three Onyx Glass,
+three Cognitive Crystals, two Advanced Processors and one each of Construction
+Core, Destruction Core, Processing Unit and Machine Casing. Manager retains
+that outer layout, with two Autocrafters and a Circuit Board replacing the
+cores and Processing Unit. Monitor instead uses two Improved Processors,
+two Patterns and a Circuit Board in the corresponding slots.
+
+Crafting Grid keeps its shapeless Grid/Advanced Processor upgrade, with one
+Compressed Crafting Table replacing the generic crafting table. Pattern keeps
+its ordinary shaped recipe, with Arcane Crystal Dust in all three former
+Redstone positions.
 
 ## Quests
 
