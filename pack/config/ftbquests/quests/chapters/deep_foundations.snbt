@@ -477,7 +477,7 @@
 		{
 			y: 0.0d
 			x: 13.5d
-			dependencies: ["5D00000000000025"]
+			dependencies: ["5D00000000000025", "5D00000000000020"]
 			id: "5D00000000000026"
 			icon: { id: "iceandfire:dragonforge_fire_core_disabled" }
 			tasks: [
