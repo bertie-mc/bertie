@@ -35,6 +35,9 @@ public final class BertieProgression {
         if (ModList.get().isLoaded("pastel")) {
             NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.pastel.PastelFuelTooltip.class);
         }
+        if (ModList.get().isLoaded("anvilcraft")) {
+            NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.anvil.PairedAnvilCollision.class);
+        }
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.TYPES.register(modBus);
         if (ModList.get().isLoaded("mekanism")) {

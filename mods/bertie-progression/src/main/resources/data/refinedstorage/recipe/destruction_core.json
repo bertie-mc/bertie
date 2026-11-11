@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "refinedstorage:basic_processor"
+    },
+    {
+      "item": "malum:blazing_quartz"
+    },
+    {
+      "item": "malum:blazing_quartz"
+    },
+    {
+      "item": "oritech:fluxite"
+    }
+  ],
+  "results": [
+    {
+      "id": "refinedstorage:destruction_core",
+      "count": 1
+    }
+  ]
+}

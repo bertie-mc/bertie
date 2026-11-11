@@ -1,16 +1,38 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "QRRRQ",
+    "RPSPR",
+    "RFKFR",
+    "RPUPR",
+    "QRRRQ"
   ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "R": {
+      "item": "mekanism:alloy_reinforced"
+    },
+    "P": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "S": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    },
+    "F": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "K": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
     }
-  ],
+  },
   "result": {
-    "id": "minecraft:stone"
-  }
+    "id": "refinedstorage:controller",
+    "count": 1
+  },
+  "tier": 2
 }

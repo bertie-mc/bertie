@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:gems/quartz"
+    }
+  ],
+  "results": [
+    {
+      "id": "refinedstorage:quartz_enriched_copper",
+      "count": 4
+    }
+  ]
+}

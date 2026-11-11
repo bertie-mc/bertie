@@ -109,15 +109,15 @@ ingredient and one each of the three Dragonsteel Ingots, Radiant Steel, Heart
 of the Deep, Evil Spine, Evil Stone and Giant Anvil on its eight pedestals.
 It consumes 3000 Aureal, 15000 Blood, 50 Souls and 1350 Ink.
 
-The Refined Storage Controller requires Forge III, one each of the six Infused
-Netherite Ingots and two Silicon Wafers. One Wafer is the main ingredient and
-the other seven items occupy pedestals. This ritual has no extra essence cost.
-Its original crafting recipe is disabled; recoloring still requires a Controller.
+Refined Storage's Machine Casing requires Forge III, Primordial Assembly and
+twelve pedestal items, costing 3000 Aureal and 1000 Ink. Controller now uses
+its 5×5 Nether Table recipe. The former Controller ritual is removed. Full
+material costs and routes are in [Refined Storage progression](refined-storage.md).
 
 Deep Foundations branches from Imbrifer to Dragon Egg, and from the Otherside
 through Resonarium, Plate, Lite, Enriched Bricks, Dragonforge Bricks and a full
-set of parts. Forge III follows the parts and Forge II; the Controller follows
-Forge III. The parts task requires 17 Bricks, eight Dragon Bone Blocks, one
+set of parts. Forge III follows the parts and Forge II; Machine Casing follows
+Forge III and branches into the RS components. The parts task requires 17 Bricks, eight Dragon Bone Blocks, one
 Core and one Aperture, accepting elemental alternatives.
 
 Ender Metal uses three Pearls, two Platinum, two Refined Obsidian and Hollow

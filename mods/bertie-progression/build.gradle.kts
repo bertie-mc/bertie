@@ -31,7 +31,7 @@ val isolateIntegrationRituals by tasks.registering {
         val selected =
             setOf(
                 "forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_3.json",
-                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/controller.json",
+                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/machine_casing.json",
             )
         sourceFiles.forEach { source ->
             val relative = source.relativeTo(sourceRoot).invariantSeparatorsPath
@@ -58,6 +58,7 @@ dependencies {
     compileOnly(deps.pastelMod)
     compileOnly(deps.mekanism)
     jarJarCompileOnly(deps.l2Complements)
+    jarJarCompileOnly(deps.anvilcraft)
     jarJarCompileOnly(deps.terraCurio)
     compileOnly(deps.ironsSpellsNSpellbooks)
     compileOnly(deps.simplySwords)
@@ -130,6 +131,13 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.magitech)
     "integrationtestRuntimeOnly"(deps.curseOfPandora)
     "integrationtestRuntimeOnly"(deps.l2Complements)
+    "integrationtestImplementation"(deps.create)
+    "integrationtestRuntimeOnly"(deps.cognition)
+    "integrationtestRuntimeOnly"(deps.mekanism)
+    "integrationtestRuntimeOnly"(deps.malum)
+    "integrationtestRuntimeOnly"(deps.mythsAndLegends)
+    "integrationtestRuntimeOnly"(deps.reAvaritia)
+    "integrationtestRuntimeOnly"(project(":mods:hephaestus-architecture"))
     "integrationtestRuntimeOnly"(project(":mods:bertie-tiers"))
     gametestRuntimeOnly(deps.quark)
     gametestRuntimeOnly(deps.alexsMobs1211)

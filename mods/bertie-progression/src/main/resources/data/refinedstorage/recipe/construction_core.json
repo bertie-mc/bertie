@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "refinedstorage:basic_processor"
+    },
+    {
+      "tag": "c:gems/quartz"
+    },
+    {
+      "tag": "c:gems/quartz"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "results": [
+    {
+      "id": "refinedstorage:construction_core",
+      "count": 1
+    }
+  ]
+}

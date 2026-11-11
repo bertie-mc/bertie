@@ -64,6 +64,11 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Systems
 
+Refined Storage begins with the Forge III Machine Casing ritual. Raw processors
+use Mixing or Assembler, cores use Assembler, Controller uses the Nether Table
+and Cable uses the Mechanical Crafting wall. Costs, layouts and quest branches
+are documented in [Refined Storage progression](docs/refined-storage.md).
+
 The Pastel content selection retains Imbrifer resources and their building families.
 Withdrawn items leave recipes, loot, item tags, creative tabs, EMI and equipment
 catalogue quests. Shimmerstone generation is disabled in both dimensions; selected

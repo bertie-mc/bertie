@@ -1,0 +1,28 @@
+{
+  "type": "anvilcraft:anvil_collision",
+  "anvil": {
+    "blocks": "#bertieprogression:collision_anvils/tier_1"
+  },
+  "consume": false,
+  "hitBlock": {
+    "blocks": "iceandfire:dragonsteel_ice_block"
+  },
+  "speed": 32,
+  "transform_blocks": [
+    {
+      "input": {
+        "blocks": "anvilcraft:frost_metal_block"
+      },
+      "max_count": 1,
+      "output": {
+        "block": "minecraft:air"
+      }
+    }
+  ],
+  "output_items": [
+    {
+      "id": "iceandfire:dragonsteel_ice_ingot",
+      "count": 8
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "refinedstorage:processor_binding"
+    },
+    {
+      "item": "mekanism:ingot_steel"
+    },
+    {
+      "tag": "c:silicon"
+    },
+    {
+      "item": "mekanism:basic_control_circuit"
+    }
+  ],
+  "results": [
+    {
+      "id": "refinedstorage:raw_basic_processor",
+      "count": 1
+    }
+  ]
+}

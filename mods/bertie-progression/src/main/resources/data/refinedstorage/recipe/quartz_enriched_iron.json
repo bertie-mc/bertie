@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MQM",
+    "QMQ",
+    "MQM"
+  ],
+  "key": {
+    "M": {
+      "tag": "c:ingots/iron"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:quartz_enriched_iron",
+    "count": 1
+  }
+}

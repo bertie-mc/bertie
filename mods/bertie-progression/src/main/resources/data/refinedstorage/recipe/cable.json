@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CCCCC",
+    "CAAAC",
+    "GGBGG",
+    "CAAAC",
+    "CCCCC"
+  ],
+  "key": {
+    "C": {
+      "item": "refinedstorage:quartz_enriched_copper"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "G": {
+      "item": "pastel:moonstone_glass"
+    },
+    "B": {
+      "item": "mekanism:basic_control_circuit"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:cable",
+    "count": 12
+  },
+  "accept_mirrored": false
+}

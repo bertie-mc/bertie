@@ -1,0 +1,38 @@
+{
+  "forge_tier": 3,
+  "essences": {
+    "aureal": 3000,
+    "experience": 1000
+  },
+  "main_ingredient": {
+    "item": "cognition:primordial_assembly"
+  },
+  "inputs": [
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "refinedstorage:quartz_enriched_iron"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "anvilcraft:royal_steel_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "cognition:cognitive_alloy"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "refinedstorage:machine_casing",
+      "count": 1
+    }
+  }
+}

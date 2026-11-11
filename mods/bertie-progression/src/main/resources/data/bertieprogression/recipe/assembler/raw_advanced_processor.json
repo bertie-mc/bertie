@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "refinedstorage:processor_binding"
+    },
+    {
+      "item": "oritech:platinum_ingot"
+    },
+    {
+      "tag": "c:silicon"
+    },
+    {
+      "item": "mekanism:elite_control_circuit"
+    }
+  ],
+  "results": [
+    {
+      "id": "refinedstorage:raw_advanced_processor",
+      "count": 1
+    }
+  ]
+}

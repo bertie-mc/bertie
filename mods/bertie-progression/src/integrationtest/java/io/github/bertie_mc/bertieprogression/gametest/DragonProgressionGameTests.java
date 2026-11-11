@@ -176,7 +176,7 @@ public final class DragonProgressionGameTests {
     }
 
     @GameTest(template = "empty", batch = "dragon_progression")
-    public static void forgeUpgradeAndControllerRitualsLoadAndMatch(GameTestHelper helper) {
+    public static void forgeUpgradeAndCasingRitualsLoadAndMatch(GameTestHelper helper) {
         var rituals = helper.getLevel().registryAccess().registryOrThrow(FARegistries.RITUAL);
         var upgrade = rituals.get(ResourceLocation.parse("forbidden_arcanus:upgrade_tier_3"));
         helper.assertTrue(
@@ -193,26 +193,29 @@ public final class DragonProgressionGameTests {
                 upgrade.requirements().tier().test(2)
                         && !upgrade.requirements().tier().test(3),
                 "Upgrade must retain exact Tier II matching");
-        var controller = rituals.get(ResourceLocation.parse("bertieprogression:controller"));
+        var casing = rituals.get(ResourceLocation.parse("bertieprogression:machine_casing"));
         helper.assertTrue(
-                controller != null && controller.inputs().size() == 7,
-                "Controller ritual must load with seven pedestals");
-        var inputs = controller.inputs().stream()
-                .map(input -> input.ingredient().getItems()[0].copy())
+                casing != null && casing.inputs().size() == 3, "Casing ritual must load with three ingredient groups");
+        var inputs = casing.inputs().stream()
+                .flatMap(input -> java.util.stream.IntStream.range(0, input.amount())
+                        .mapToObj(index -> input.ingredient().getItems()[0].copy()))
                 .toList();
         helper.assertTrue(
-                controller.checkIngredients(inputs, stack("oritech:silicon_wafer")),
-                "Controller ritual must match its exact solids");
+                inputs.size() == 12 && casing.checkIngredients(inputs, stack("cognition:primordial_assembly")),
+                "Casing ritual must match all twelve pedestal items");
         helper.assertTrue(
-                !controller.requirements().tier().test(2)
-                        && controller.requirements().tier().test(3),
-                "Controller must require Forge III");
+                !casing.requirements().tier().test(2)
+                        && casing.requirements().tier().test(3),
+                "Casing must require Forge III");
         helper.assertTrue(
-                helper.getLevel()
-                        .getRecipeManager()
-                        .byKey(ResourceLocation.parse("refinedstorage:controller"))
-                        .isEmpty(),
-                "Original Controller craft must be absent");
+                rituals.get(ResourceLocation.parse("bertieprogression:controller")) == null,
+                "The superseded Controller ritual must be absent");
+        helper.assertTrue(
+                casing.requirements().essences().aureal() == 3000
+                        && casing.requirements().essences().experience() == 1000
+                        && casing.requirements().essences().blood() == 0
+                        && casing.requirements().essences().souls() == 0,
+                "Casing essence costs must match");
         helper.succeed();
     }
 
