@@ -28,7 +28,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B00000000000001"]
@@ -382,7 +382,7 @@
 				item: { count: 1, id: "create:brass_ingot" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -15.0d
 			y: 4.5d
 		}
 		{
@@ -404,8 +404,8 @@
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
-			x: -18.0d
-			y: 4.5d
+			x: -16.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2B00000000000013"]
@@ -424,7 +424,7 @@
 				item: { count: 1, id: "create:electron_tube" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -15.0d
 			y: 6.0d
 		}
 		{
@@ -447,7 +447,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -15.0d
+			x: -13.5d
 			y: 6.0d
 		}
 		{
@@ -467,8 +467,8 @@
 				item: { count: 1, id: "block_factorys_bosses:dragon_bone" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: 6.0d
+			x: -12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000049"]
@@ -809,10 +809,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"2B00000000000029"
-				"2B0000000000005F"
-			]
+			dependencies: ["2B00000000000029", "2B00000000000058"]
 			icon: {
 				id: "slag:melter"
 			}
@@ -1190,10 +1187,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"2B0000000000005F"
-				"2B0000000000002F"
-			]
+			dependencies: ["2B00000000000058", "2B0000000000002F"]
 			icon: {
 				id: "create:spout"
 			}
@@ -1465,7 +1459,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000018"]
@@ -1526,8 +1520,8 @@
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: 4.5d
+			x: -15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B00000000000012"]
@@ -1546,7 +1540,7 @@
 				item: { count: 1, id: "create:brass_ingot" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -13.5d
 			y: 4.5d
 		}
 		{
@@ -1586,8 +1580,8 @@
 				item: { count: 1, id: "create:zinc_ingot" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 3.0d
+			x: -16.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B00000000000049"]
@@ -2155,25 +2149,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["2B00000000000058"]
-			icon: {
-				id: "create:fluid_tank"
-			}
-			id: "2B0000000000005F"
-			rewards: [{
-				id: "2B0000000200005F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "2B0000000100005F"
-				item: { count: 1, id: "create:fluid_tank" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["2B00000000000064"]
 			icon: {
 				id: "mythsandlegends:bound_soul_ingot"
@@ -2427,7 +2402,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2B0000000000006A"]
@@ -2446,7 +2421,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3C00000000000008"]
@@ -2732,7 +2707,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2B00000000000075"]
@@ -2753,7 +2728,7 @@
 				id: "2B00000001000076"
 				type: "dimension"
 			}]
-			x: -10.5d
+			x: -12.0d
 			y: -4.5d
 		}
 		{
@@ -3131,8 +3106,8 @@
 				item: { count: 1 id: "apothic_enchanting:basic_bookshelf" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: -9.0d
+			y: -4.5d
 		}
 		{
 			y: 3.0d
@@ -3158,6 +3133,45 @@
 				count: 1L
 				item: { count: 1 id: "anvilcraft:overseer" }
 				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: -10.5d
+			dependencies: ["2B0000000000006B"]
+			id: "2B0000000000A000"
+			icon: { id: "irons_spellbooks:arcane_ingot" }
+			tasks: [{
+				id: "2B0000000100A000"
+				count: 64L
+				item: { count: 1 id: "irons_spellbooks:arcane_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: -9.0d
+			dependencies: ["2B00000000000061"]
+			id: "2B0000000000A001"
+			icon: { id: "malum:hallowed_gold_ingot" }
+			tasks: [{
+				id: "2B0000000100A001"
+				count: 64L
+				item: { count: 1 id: "malum:hallowed_gold_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: -18.0d
+			dependencies: ["2B00000000000052"]
+			id: "2B0000000000A002"
+			icon: { id: "irons_spellbooks:arcane_essence" }
+			tasks: [{
+				id: "2B0000000100A002"
+				count: 64L
+				item: { count: 1 id: "irons_spellbooks:arcane_essence" }
+				consume_items: false type: "item"
 			}]
 		}
 	]

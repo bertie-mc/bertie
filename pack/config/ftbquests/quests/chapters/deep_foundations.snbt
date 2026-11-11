@@ -9,8 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			y: 0.0d
-			x: 0.0d
+			y: 1.5d
+			x: 1.5d
 			dependencies: ["6B00000000009004"]
 			id: "5D00000000000001"
 			icon: { id: "anvilcraft:royal_steel_upgrade_smithing_template" }
@@ -35,8 +35,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 1.5d
+			y: 3.0d
+			x: 3.0d
 			dependencies: ["5D00000000000001"]
 			id: "5D00000000000003"
 			icon: { id: "anvilcraft:royal_anvil" }
@@ -48,7 +48,7 @@
 			}]
 		}
 		{
-			y: 0.0d
+			y: 1.5d
 			x: 3.0d
 			dependencies: ["5D00000000000002"]
 			id: "5D00000000000004"
@@ -87,8 +87,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 3.0d
+			y: 3.0d
+			x: 4.5d
 			dependencies: ["5D00000000000004"]
 			id: "5D00000000000007"
 			icon: { id: "anvilcraft:impact_pile" }
@@ -100,8 +100,8 @@
 			}]
 		}
 		{
-			y: 3.0d
-			x: 4.5d
+			y: 4.5d
+			x: 6.0d
 			dependencies: ["5D00000000000007"]
 			id: "5D00000000000008"
 			icon: { id: "anvilcraft:sturdy_deepslate" }
@@ -114,7 +114,7 @@
 		}
 		{
 			y: 3.0d
-			x: 7.5d
+			x: 6.0d
 			dependencies: ["5D00000000000008"]
 			id: "5D00000000000009"
 			icon: { id: "anvilcraft:void_matter" }
@@ -126,8 +126,8 @@
 			}]
 		}
 		{
-			y: 4.5d
-			x: 4.5d
+			y: 6.0d
+			x: 7.5d
 			dependencies: ["5D00000000000008"]
 			id: "5D0000000000000A"
 			icon: { id: "anvilcraft:earth_core_shard" }
@@ -167,7 +167,7 @@
 		{
 			dependencies: ["5D00000000000009"]
 			y: 1.5d
-			x: 9.0d
+			x: 7.5d
 			id: "5D0000000000000D"
 			icon: { id: "anvilcraft:void_matter_block" }
 			tasks: [{
@@ -284,7 +284,7 @@
 		{
 			dependencies: ["5D0000000000000A"]
 			y: 4.5d
-			x: 6.0d
+			x: 9.0d
 			id: "5D00000000000016"
 			icon: { id: "deeperdarker:warden_carapace" }
 			tasks: [{
@@ -297,7 +297,7 @@
 		{
 			dependencies: ["5D00000000000016"]
 			y: 4.5d
-			x: 7.5d
+			x: 10.5d
 			id: "5D00000000000017"
 			icon: { id: "l2complements:warden_bone_shard" }
 			tasks: [{
@@ -310,7 +310,7 @@
 		{
 			dependencies: ["5D00000000000017"]
 			y: 4.5d
-			x: 9.0d
+			x: 12.0d
 			id: "5D00000000000018"
 			icon: { id: "deeperdarker:heart_of_the_deep" }
 			tasks: [{
@@ -335,8 +335,8 @@
 		}
 		{
 			dependencies: ["5D0000000000001C"]
-			y: 1.5d
-			x: 6.0d
+			y: 3.0d
+			x: 9.0d
 			id: "5D0000000000001B"
 			icon: { id: "magitech:nether_star_brilliance" }
 			tasks: [
@@ -350,8 +350,8 @@
 		}
 		{
 			dependencies: ["5D00000000000008"]
-			y: 1.5d
-			x: 4.5d
+			y: 3.0d
+			x: 7.5d
 			id: "5D0000000000001C"
 			icon: { id: "magitech:ender_metal_ingot" }
 			tasks: [
@@ -390,7 +390,7 @@
 		{
 			dependencies: ["5D0000000000001B"]
 			y: 1.5d
-			x: 7.5d
+			x: 9.0d
 			id: "5D0000000000001D"
 			icon: { id: "magitech:radiant_steel_ingot" }
 			tasks: [
@@ -641,7 +641,7 @@
 		}
 		{
 			y: 4.5d
-			x: 15.0d
+			x: 16.5d
 			dependencies: ["5D0000000000002A"]
 			id: "5D00000000000039"
 			icon: { id: "refinedstorage:external_storage" }
@@ -649,7 +649,7 @@
 		}
 		{
 			y: 4.5d
-			x: 16.5d
+			x: 18.0d
 			dependencies: ["5D0000000000002A"]
 			id: "5D0000000000003A"
 			icon: { id: "refinedstorage:importer" }
@@ -657,7 +657,7 @@
 		}
 		{
 			y: 6.0d
-			x: 18.0d
+			x: 19.5d
 			dependencies: ["5D0000000000003A"]
 			id: "5D0000000000003B"
 			icon: { id: "refinedstorage:exporter" }
@@ -665,7 +665,7 @@
 		}
 		{
 			y: 4.5d
-			x: 18.0d
+			x: 15.0d
 			dependencies: ["5D0000000000002A"]
 			id: "5D0000000000003C"
 			icon: { id: "refinedstorage:constructor" }
@@ -673,7 +673,7 @@
 		}
 		{
 			y: 6.0d
-			x: 19.5d
+			x: 13.5d
 			dependencies: ["5D0000000000003C"]
 			id: "5D0000000000003D"
 			icon: { id: "refinedstorage:destructor" }
@@ -681,14 +681,14 @@
 		}
 		{
 			y: 3.0d
-			x: 18.0d
+			x: 19.5d
 			dependencies: ["5D00000000000029"]
 			id: "5D0000000000003E"
 			icon: { id: "refinedstorage:disk_drive" }
 			tasks: [{ id: "5D0000000100003E" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:disk_drive"} }]
 		}
 		{
-			y: 3.0d
+			y: 4.5d
 			x: 19.5d
 			dependencies: ["5D0000000000003E"]
 			id: "5D0000000000003F"
@@ -744,15 +744,15 @@
 			tasks: [{ id: "5D00000001000045" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "components": {"ftbfiltersystem:filter": "item_tag(cabletiers:mega_autocrafters)", "minecraft:custom_name": "{\"text\": \"Mega Autocrafter\"}"}} }]
 		}
 		{
-			y: 0.0d
-			x: 22.5d
+			y: 3.0d
+			x: 21.0d
 			dependencies: ["5D00000000000040"]
 			id: "5D00000000000046"
 			icon: { id: "refinedstorage:wrench" }
 			tasks: [{ id: "5D00000001000046" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:wrench"} }]
 		}
 		{
-			y: 3.0d
+			y: 4.5d
 			x: 21.0d
 			dependencies: ["5D0000000000003E"]
 			id: "5D00000000000047"
@@ -760,7 +760,7 @@
 			tasks: [{ id: "5D00000001000047" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:storage_housing"} }]
 		}
 		{
-			y: 4.5d
+			y: 6.0d
 			x: 21.0d
 			dependencies: ["5D00000000000047"]
 			id: "5D00000000000048"
@@ -1006,6 +1006,144 @@
 			id: "5D00000000000088"
 			icon: { id: "extradisks:infinite_chemical_storage_part" }
 			tasks: [{ id: "5D00000001000088" type: "item" count: 1L consume_items: false item: {"id": "extradisks:infinite_chemical_storage_part"} }]
+		}
+		{
+			y: -3.0d
+			x: 21.0d
+			dependencies: ["5D00000000000037"]
+			id: "5D0000000000A000"
+			icon: { id: "refinedstorage:pattern" }
+			tasks: [{
+				id: "5D0000000100A000"
+				count: 64L
+				item: { count: 1 id: "refinedstorage:pattern" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 18.0d
+			dependencies: ["5D00000000000029"]
+			id: "5D0000000000A001"
+			icon: { id: "refinedstorage:network_transmitter" }
+			tasks: [{ id: "5D0000000100A001" type: "item" count: 1L consume_items: false item: { id: "refinedstorage:network_transmitter" } }, { id: "5D0000000200A001" type: "item" count: 1L consume_items: false item: { id: "refinedstorage:network_receiver" } }]
+		}
+		{
+			y: 4.5d
+			x: 13.5d
+			dependencies: ["5D00000000000022"]
+			id: "5D0000000000A002"
+			icon: { id: "deeperdarker:resonarium_plate" }
+			tasks: [{
+				id: "5D0000000100A002"
+				count: 64L
+				item: { count: 1 id: "deeperdarker:resonarium_plate" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 6.0d
+			dependencies: ["5D0000000000000B"]
+			id: "5D0000000000A003"
+			icon: { id: "anvilcraft:frost_metal_ingot" }
+			tasks: [{
+				id: "5D0000000100A003"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:frost_metal_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 4.5d
+			dependencies: ["5D00000000000009"]
+			id: "5D0000000000A004"
+			icon: { id: "anvilcraft:void_matter" }
+			tasks: [{
+				id: "5D0000000100A004"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:void_matter" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 3.0d
+			dependencies: ["5D00000000000004"]
+			id: "5D0000000000A005"
+			icon: { id: "anvilcraft:cursed_gold_ingot" }
+			tasks: [{
+				id: "5D0000000100A005"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:cursed_gold_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 9.0d
+			dependencies: ["5D0000000000000C"]
+			id: "5D0000000000A006"
+			icon: { id: "anvilcraft:ember_metal_ingot" }
+			tasks: [{
+				id: "5D0000000100A006"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:ember_metal_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 4.5d
+			dependencies: ["5D00000000000008"]
+			id: "5D0000000000A007"
+			icon: { id: "anvilcraft:sturdy_deepslate" }
+			tasks: [{
+				id: "5D0000000100A007"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:sturdy_deepslate" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 6.0d
+			x: 9.0d
+			dependencies: ["5D0000000000000A"]
+			id: "5D0000000000A008"
+			icon: { id: "anvilcraft:earth_core_shard" }
+			tasks: [{
+				id: "5D0000000100A008"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:earth_core_shard" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 7.5d
+			dependencies: ["5D0000000000001C"]
+			id: "5D0000000000A009"
+			icon: { id: "magitech:ender_metal_ingot" }
+			tasks: [{
+				id: "5D0000000100A009"
+				count: 64L
+				item: { count: 1 id: "magitech:ender_metal_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 1.5d
+			dependencies: ["5D00000000000001"]
+			id: "5D0000000000A00A"
+			icon: { id: "anvilcraft:royal_steel_ingot" }
+			tasks: [{
+				id: "5D0000000100A00A"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:royal_steel_ingot" }
+				consume_items: false type: "item"
+			}]
 		}
 	]
 }

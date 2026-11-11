@@ -375,7 +375,7 @@
 				}
 			]
 			x: 15.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -404,7 +404,7 @@
 				}
 			]
 			x: 16.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1152,7 +1152,7 @@
 				}
 			]
 			x: 15.0d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1179,7 +1179,7 @@
 					type: "item"
 				}
 			]
-			x: 16.5d
+			x: 15.0d
 			y: 1.5d
 		}
 		{
@@ -1312,7 +1312,7 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
+			x: 16.5d
 			y: 3.0d
 		}
 		{
@@ -1823,7 +1823,7 @@
 			dependencies: [
 				"6B00000000006203"
 			]
-			y: -3.0d
+			y: -1.5d
 			x: 6.0d
 			id: "6B00000000006208"
 			icon: {
@@ -1845,7 +1845,7 @@
 			dependencies: [
 				"6B00000000006208"
 			]
-			y: -4.5d
+			y: -3.0d
 			x: 6.0d
 			id: "6B0000000000620B"
 			icon: {
@@ -2118,6 +2118,58 @@
 				count: 1L
 				item: { count: 1 id: "anvilcraft:block_devourer" }
 				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 6.0d
+			dependencies: ["6B00000000006210"]
+			id: "6B0000000000A000"
+			icon: { id: "anvilcraft:magnet_ingot" }
+			tasks: [{
+				id: "6B0000000100A000"
+				count: 64L
+				item: { count: 1 id: "anvilcraft:magnet_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 10.5d
+			dependencies: ["6B0000000000620F"]
+			id: "6B0000000000A001"
+			icon: { id: "oritech:nickel_ingot" }
+			tasks: [{
+				id: "6B0000000100A001"
+				count: 64L
+				item: { count: 1 id: "oritech:nickel_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 16.5d
+			dependencies: ["6B0000000000003F"]
+			id: "6B0000000000A002"
+			icon: { id: "minecraft:netherite_ingot" }
+			tasks: [{
+				id: "6B0000000100A002"
+				count: 64L
+				item: { count: 1 id: "minecraft:netherite_ingot" }
+				consume_items: false type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 18.0d
+			dependencies: ["6B0000000000004B"]
+			id: "6B0000000000A003"
+			icon: { id: "malum:malignant_pewter_ingot" }
+			tasks: [{
+				id: "6B0000000100A003"
+				count: 64L
+				item: { count: 1 id: "malum:malignant_pewter_ingot" }
+				consume_items: false type: "item"
 			}]
 		}
 	]
