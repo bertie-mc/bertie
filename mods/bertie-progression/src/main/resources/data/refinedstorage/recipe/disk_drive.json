@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QQQQQ",
+    "QAUHH",
+    "QAMHH",
+    "QAUHH",
+    "QQQHH"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "U": {
+      "item": "oritech:processing_unit"
+    },
+    "H": {
+      "item": "refinedstorage:storage_housing"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:disk_drive",
+    "count": 1
+  }
+}

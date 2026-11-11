@@ -85,6 +85,29 @@ Compressed Crafting Table replacing the generic crafting table. Pattern keeps
 its ordinary shaped recipe, with Arcane Crystal Dust in all three former
 Redstone positions.
 
+Disk Housing keeps its ordinary shaped craft with Arcane Crystal Dust in all
+three former Redstone positions. Storage Monitor also keeps its ordinary craft,
+using Onyx Glass in the three right-column positions.
+
+Disk Drive, Disk Interface, Network Transmitter and Network Receiver use full
+5×5 Mechanical Crafting layouts and produce one device. Drive uses eleven
+Quartz-Enriched Iron, eight Housings, three Advanced Processors, two Processing
+Units and a Casing. Interface uses eleven Quartz-Enriched Iron, six Housings,
+two Processing Units, two Onyx Glass, a Flux Gate, both Core types and a Casing.
+Each network device uses twelve Quartz-Enriched Iron, four Adamant, two Flux
+Gates, two Warp Flux, a Teleportation Core, an Absolute Control Circuit, both
+Core types and a Casing. Receiver swaps the Transmitter's second and fourth
+rows, retaining Construction Core left and Destruction Core right of Casing.
+
+Portable Grid uses the Sculk Crafting Table: four corner Quartz-Enriched Iron,
+Grid above Controller, Space Overcompressor below it and an Ultimate Control
+Circuit on either side. Wrench uses a 4×4 Mechanical Crafting layout, consuming
+six Quartz-Enriched Iron and three Advanced Processors for one Wrench.
+
+The Nesting Shulker chain consumes two identical inputs at every tier: two
+Shulker Boxes → Nesting, two Nesting → Over Nesting, two Over Nesting →
+Supercritical. One Supercritical box therefore costs eight ordinary boxes.
+
 ## Quests
 
 The post-Forge III quest retains its identity and position but now requests

@@ -1,0 +1,41 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QQQQQ",
+    "QFCGG",
+    "QUMHH",
+    "QUDHH",
+    "QQQHH"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "G": {
+      "item": "pastel:onyx_glass"
+    },
+    "U": {
+      "item": "oritech:processing_unit"
+    },
+    "H": {
+      "item": "refinedstorage:storage_housing"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:disk_interface",
+    "count": 1
+  }
+}

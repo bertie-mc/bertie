@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QA  ",
+    "QQA ",
+    "  QA",
+    " Q Q"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:wrench",
+    "count": 1
+  }
+}

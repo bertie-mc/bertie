@@ -1,0 +1,44 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "pattern": [
+    "QQAQQ",
+    "QFTFQ",
+    "ACMDA",
+    "QWUWQ",
+    "QQAQQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "T": {
+      "item": "mekanism:teleportation_core"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "W": {
+      "item": "malum:warp_flux"
+    },
+    "U": {
+      "item": "mekanism_extras:absolute_control_circuit"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:network_transmitter",
+    "count": 1
+  }
+}

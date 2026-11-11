@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "EGE",
+    "UCU",
+    "ESE"
+  ],
+  "key": {
+    "E": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "G": {
+      "tag": "refinedstorage:grids"
+    },
+    "C": {
+      "tag": "refinedstorage:controllers"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "S": {
+      "item": "anvilcraft:space_overcompressor"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:portable_grid"
+  },
+  "tier": 1
+}
