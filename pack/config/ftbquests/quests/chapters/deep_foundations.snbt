@@ -100,7 +100,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: 3.0d
 			x: 4.5d
 			dependencies: ["5D00000000000007"]
 			id: "5D00000000000008"
@@ -113,8 +113,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 6.0d
+			y: 3.0d
+			x: 7.5d
 			dependencies: ["5D00000000000008"]
 			id: "5D00000000000009"
 			icon: { id: "anvilcraft:void_matter" }
@@ -126,8 +126,8 @@
 			}]
 		}
 		{
-			y: 3d
-			x: 6d
+			y: 4.5d
+			x: 4.5d
 			dependencies: ["5D00000000000008"]
 			id: "5D0000000000000A"
 			icon: { id: "anvilcraft:earth_core_shard" }
@@ -167,7 +167,7 @@
 		{
 			dependencies: ["5D00000000000009"]
 			y: 1.5d
-			x: 7.5d
+			x: 9.0d
 			id: "5D0000000000000D"
 			icon: { id: "anvilcraft:void_matter_block" }
 			tasks: [{
@@ -178,7 +178,7 @@
 			}]
 		}
 		{
-			dependencies: ["5D0000000000000B", "5D0000000000000C", "5D0000000000000D"]
+			dependencies: ["5D0000000000000B", "5D0000000000000C", "5D0000000000000D", "5D0000000000001D"]
 			y: 0.0d
 			x: 9.0d
 			id: "5D0000000000000E"
@@ -283,8 +283,8 @@
 		}
 		{
 			dependencies: ["5D0000000000000A"]
-			y: 3.0d
-			x: 7.5d
+			y: 4.5d
+			x: 6.0d
 			id: "5D00000000000016"
 			icon: { id: "deeperdarker:warden_carapace" }
 			tasks: [{
@@ -296,8 +296,8 @@
 		}
 		{
 			dependencies: ["5D00000000000016"]
-			y: 3.0d
-			x: 9.0d
+			y: 4.5d
+			x: 7.5d
 			id: "5D00000000000017"
 			icon: { id: "l2complements:warden_bone_shard" }
 			tasks: [{
@@ -309,8 +309,8 @@
 		}
 		{
 			dependencies: ["5D00000000000017"]
-			y: 3.0d
-			x: 10.5d
+			y: 4.5d
+			x: 9.0d
 			id: "5D00000000000018"
 			icon: { id: "deeperdarker:heart_of_the_deep" }
 			tasks: [{
@@ -323,7 +323,7 @@
 		{
 			dependencies: ["5D00000000000018"]
 			y: 3.0d
-			x: 12.0d
+			x: 10.5d
 			id: "5D00000000000019"
 			icon: { id: "deeperdarker:heart_of_the_deep" }
 			tasks: [{
@@ -332,6 +332,84 @@
 				icon: { id: "deeperdarker:heart_of_the_deep" }
 				type: "dimension"
 			}]
+		}
+		{
+			dependencies: ["5D00000000000008"]
+			y: 4.5d
+			x: 3d
+			id: "5D0000000000001A"
+			icon: { id: "magitech:ember_crystal" }
+			tasks: [
+				{
+					id: "5D0000000100001A"
+					count: 1L
+					item: { count: 1 id: "magitech:ember_crystal" }
+					type: "item"
+				}
+				{
+					id: "5D0000000200001A"
+					count: 1L
+					item: { count: 1 id: "magitech:magic_crystal" }
+					type: "item"
+				}
+				{
+					id: "5D0000000300001A"
+					count: 1L
+					item: { count: 1 id: "magitech:tremor_crystal" }
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: ["5D0000000000001A"]
+			y: 3d
+			x: 3d
+			id: "5D0000000000001B"
+			icon: { id: "magitech:nether_star_brilliance" }
+			tasks: [
+				{
+					id: "5D0000000100001B"
+					count: 1L
+					item: { count: 1 id: "magitech:nether_star_brilliance" }
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: ["5D00000000000004"]
+			y: 1.5d
+			x: 4.5d
+			id: "5D0000000000001C"
+			icon: { id: "magitech:ender_metal_ingot" }
+			tasks: [
+				{
+					id: "5D0000000100001C"
+					count: 1L
+					item: { count: 1 id: "magitech:ender_metal_ingot" }
+					type: "item"
+				}
+				{
+					id: "5D0000000200001C"
+					count: 1L
+					item: { count: 1 id: "magitech:glace_crystal" }
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: ["5D0000000000001B", "5D0000000000001C"]
+			y: 1.5d
+			x: 6d
+			id: "5D0000000000001D"
+			icon: { id: "magitech:radiant_steel_ingot" }
+			tasks: [
+				{
+					id: "5D0000000100001D"
+					count: 1L
+					item: { count: 1 id: "magitech:radiant_steel_ingot" }
+					type: "item"
+				}
+			]
 		}
 	]
 }
