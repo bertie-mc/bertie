@@ -641,7 +641,7 @@
 		}
 		{
 			y: 4.5d
-			x: 16.5d
+			x: 15.0d
 			dependencies: ["5D0000000000002A"]
 			id: "5D00000000000039"
 			icon: { id: "refinedstorage:external_storage" }
@@ -649,15 +649,15 @@
 		}
 		{
 			y: 4.5d
-			x: 15.0d
+			x: 16.5d
 			dependencies: ["5D0000000000002A"]
 			id: "5D0000000000003A"
 			icon: { id: "refinedstorage:importer" }
 			tasks: [{ id: "5D0000000100003A" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:importer"} }]
 		}
 		{
-			y: 4.5d
-			x: 13.5d
+			y: 6.0d
+			x: 18.0d
 			dependencies: ["5D0000000000003A"]
 			id: "5D0000000000003B"
 			icon: { id: "refinedstorage:exporter" }
@@ -672,7 +672,7 @@
 			tasks: [{ id: "5D0000000100003C" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:constructor"} }]
 		}
 		{
-			y: 4.5d
+			y: 6.0d
 			x: 19.5d
 			dependencies: ["5D0000000000003C"]
 			id: "5D0000000000003D"
@@ -712,12 +712,300 @@
 			tasks: [{ id: "5D00000001000041" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:autocrafter_manager"} }]
 		}
 		{
-			y: 0.0d
+			y: -1.5d
 			x: 22.5d
 			dependencies: ["5D00000000000041"]
 			id: "5D00000000000042"
 			icon: { id: "refinedstorage:autocrafting_monitor" }
 			tasks: [{ id: "5D00000001000042" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:autocrafting_monitor"} }]
+		}
+		{
+			y: 1.5d
+			x: 21.0d
+			dependencies: ["5D00000000000040"]
+			id: "5D00000000000043"
+			icon: { id: "cabletiers:elite_autocrafter" }
+			tasks: [{ id: "5D00000001000043" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "components": {"ftbfiltersystem:filter": "item_tag(cabletiers:elite_autocrafters)", "minecraft:custom_name": "{\"text\": \"Elite Autocrafter\"}"}} }]
+		}
+		{
+			y: 1.5d
+			x: 22.5d
+			dependencies: ["5D00000000000043"]
+			id: "5D00000000000044"
+			icon: { id: "cabletiers:ultra_autocrafter" }
+			tasks: [{ id: "5D00000001000044" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "components": {"ftbfiltersystem:filter": "item_tag(cabletiers:ultra_autocrafters)", "minecraft:custom_name": "{\"text\": \"Ultra Autocrafter\"}"}} }]
+		}
+		{
+			y: 1.5d
+			x: 24.0d
+			dependencies: ["5D00000000000044"]
+			id: "5D00000000000045"
+			icon: { id: "cabletiers:mega_autocrafter" }
+			tasks: [{ id: "5D00000001000045" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "components": {"ftbfiltersystem:filter": "item_tag(cabletiers:mega_autocrafters)", "minecraft:custom_name": "{\"text\": \"Mega Autocrafter\"}"}} }]
+		}
+		{
+			y: 0.0d
+			x: 22.5d
+			dependencies: ["5D00000000000040"]
+			id: "5D00000000000046"
+			icon: { id: "refinedstorage:wrench" }
+			tasks: [{ id: "5D00000001000046" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:wrench"} }]
+		}
+		{
+			y: 3.0d
+			x: 21.0d
+			dependencies: ["5D0000000000003E"]
+			id: "5D00000000000047"
+			icon: { id: "refinedstorage:storage_housing" }
+			tasks: [{ id: "5D00000001000047" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:storage_housing"} }]
+		}
+		{
+			y: 4.5d
+			x: 21.0d
+			dependencies: ["5D00000000000047"]
+			id: "5D00000000000048"
+			icon: { id: "extradisks:advanced_storage_housing" }
+			tasks: [{ id: "5D00000001000048" type: "item" count: 1L consume_items: false item: {"id": "extradisks:advanced_storage_housing"} }]
+		}
+		{
+			y: 3.0d
+			x: 22.5d
+			dependencies: ["5D00000000000047"]
+			id: "5D00000000000060"
+			icon: { id: "refinedstorage:1k_storage_part" }
+			tasks: [{ id: "5D00000001000060" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:1k_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 24.0d
+			dependencies: ["5D00000000000060"]
+			id: "5D00000000000061"
+			icon: { id: "refinedstorage:4k_storage_part" }
+			tasks: [{ id: "5D00000001000061" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:4k_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 25.5d
+			dependencies: ["5D00000000000061"]
+			id: "5D00000000000062"
+			icon: { id: "refinedstorage:16k_storage_part" }
+			tasks: [{ id: "5D00000001000062" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:16k_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 27.0d
+			dependencies: ["5D00000000000062"]
+			id: "5D00000000000063"
+			icon: { id: "refinedstorage:64k_storage_part" }
+			tasks: [{ id: "5D00000001000063" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:64k_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 28.5d
+			dependencies: ["5D00000000000063"]
+			id: "5D00000000000064"
+			icon: { id: "extradisks:256k_item_storage_part" }
+			tasks: [{ id: "5D00000001000064" type: "item" count: 1L consume_items: false item: {"id": "extradisks:256k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 30.0d
+			dependencies: ["5D00000000000064"]
+			id: "5D00000000000065"
+			icon: { id: "extradisks:1024k_item_storage_part" }
+			tasks: [{ id: "5D00000001000065" type: "item" count: 1L consume_items: false item: {"id": "extradisks:1024k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 31.5d
+			dependencies: ["5D00000000000065"]
+			id: "5D00000000000066"
+			icon: { id: "extradisks:4096k_item_storage_part" }
+			tasks: [{ id: "5D00000001000066" type: "item" count: 1L consume_items: false item: {"id": "extradisks:4096k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 33.0d
+			dependencies: ["5D00000000000066"]
+			id: "5D00000000000067"
+			icon: { id: "extradisks:16384k_item_storage_part" }
+			tasks: [{ id: "5D00000001000067" type: "item" count: 1L consume_items: false item: {"id": "extradisks:16384k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 34.5d
+			dependencies: ["5D00000000000067"]
+			id: "5D00000000000068"
+			icon: { id: "extradisks:65536k_item_storage_part" }
+			tasks: [{ id: "5D00000001000068" type: "item" count: 1L consume_items: false item: {"id": "extradisks:65536k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 36.0d
+			dependencies: ["5D00000000000068"]
+			id: "5D00000000000069"
+			icon: { id: "extradisks:262144k_item_storage_part" }
+			tasks: [{ id: "5D00000001000069" type: "item" count: 1L consume_items: false item: {"id": "extradisks:262144k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 37.5d
+			dependencies: ["5D00000000000069"]
+			id: "5D0000000000006A"
+			icon: { id: "extradisks:1048576k_item_storage_part" }
+			tasks: [{ id: "5D0000000100006A" type: "item" count: 1L consume_items: false item: {"id": "extradisks:1048576k_item_storage_part"} }]
+		}
+		{
+			y: 3.0d
+			x: 39.0d
+			dependencies: ["5D0000000000006A"]
+			id: "5D0000000000006B"
+			icon: { id: "extradisks:infinite_item_storage_part" }
+			tasks: [{ id: "5D0000000100006B" type: "item" count: 1L consume_items: false item: {"id": "extradisks:infinite_item_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 22.5d
+			dependencies: ["5D00000000000047"]
+			id: "5D00000000000070"
+			icon: { id: "refinedstorage:64b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000070" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:64b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 24.0d
+			dependencies: ["5D00000000000070"]
+			id: "5D00000000000071"
+			icon: { id: "refinedstorage:256b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000071" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:256b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 25.5d
+			dependencies: ["5D00000000000071"]
+			id: "5D00000000000072"
+			icon: { id: "refinedstorage:1024b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000072" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:1024b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 27.0d
+			dependencies: ["5D00000000000072"]
+			id: "5D00000000000073"
+			icon: { id: "refinedstorage:4096b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000073" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:4096b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 28.5d
+			dependencies: ["5D00000000000073"]
+			id: "5D00000000000074"
+			icon: { id: "extradisks:16384b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000074" type: "item" count: 1L consume_items: false item: {"id": "extradisks:16384b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 30.0d
+			dependencies: ["5D00000000000074"]
+			id: "5D00000000000075"
+			icon: { id: "extradisks:65536b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000075" type: "item" count: 1L consume_items: false item: {"id": "extradisks:65536b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 31.5d
+			dependencies: ["5D00000000000075"]
+			id: "5D00000000000076"
+			icon: { id: "extradisks:262144b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000076" type: "item" count: 1L consume_items: false item: {"id": "extradisks:262144b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 33.0d
+			dependencies: ["5D00000000000076"]
+			id: "5D00000000000077"
+			icon: { id: "extradisks:1048576b_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000077" type: "item" count: 1L consume_items: false item: {"id": "extradisks:1048576b_fluid_storage_part"} }]
+		}
+		{
+			y: 4.5d
+			x: 34.5d
+			dependencies: ["5D00000000000077"]
+			id: "5D00000000000078"
+			icon: { id: "extradisks:infinite_fluid_storage_part" }
+			tasks: [{ id: "5D00000001000078" type: "item" count: 1L consume_items: false item: {"id": "extradisks:infinite_fluid_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 22.5d
+			dependencies: ["5D00000000000047"]
+			id: "5D00000000000080"
+			icon: { id: "refinedstorage_mekanism_integration:64b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000080" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage_mekanism_integration:64b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 24.0d
+			dependencies: ["5D00000000000080"]
+			id: "5D00000000000081"
+			icon: { id: "refinedstorage_mekanism_integration:256b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000081" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage_mekanism_integration:256b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 25.5d
+			dependencies: ["5D00000000000081"]
+			id: "5D00000000000082"
+			icon: { id: "refinedstorage_mekanism_integration:1024b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000082" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage_mekanism_integration:1024b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 27.0d
+			dependencies: ["5D00000000000082"]
+			id: "5D00000000000083"
+			icon: { id: "refinedstorage_mekanism_integration:8192b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000083" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage_mekanism_integration:8192b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 28.5d
+			dependencies: ["5D00000000000083"]
+			id: "5D00000000000084"
+			icon: { id: "extradisks:65536b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000084" type: "item" count: 1L consume_items: false item: {"id": "extradisks:65536b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 30.0d
+			dependencies: ["5D00000000000084"]
+			id: "5D00000000000085"
+			icon: { id: "extradisks:262144b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000085" type: "item" count: 1L consume_items: false item: {"id": "extradisks:262144b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 31.5d
+			dependencies: ["5D00000000000085"]
+			id: "5D00000000000086"
+			icon: { id: "extradisks:1048576b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000086" type: "item" count: 1L consume_items: false item: {"id": "extradisks:1048576b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 33.0d
+			dependencies: ["5D00000000000086"]
+			id: "5D00000000000087"
+			icon: { id: "extradisks:8388608b_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000087" type: "item" count: 1L consume_items: false item: {"id": "extradisks:8388608b_chemical_storage_part"} }]
+		}
+		{
+			y: 6.0d
+			x: 34.5d
+			dependencies: ["5D00000000000087"]
+			id: "5D00000000000088"
+			icon: { id: "extradisks:infinite_chemical_storage_part" }
+			tasks: [{ id: "5D00000001000088" type: "item" count: 1L consume_items: false item: {"id": "extradisks:infinite_chemical_storage_part"} }]
 		}
 	]
 }

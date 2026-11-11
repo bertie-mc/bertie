@@ -86,6 +86,13 @@ the next processor tier or Controller. All acquisition tasks are non-consuming.
 Autocrafter follows Controller. Autocrafter Manager is below Pattern Grid and
 depends on Autocrafter; Autocrafting Monitor is to its right and depends on it.
 
+Elite → Ultra → Mega Autocrafters extend the base Autocrafter through Cable
+Tiers, with all colour variants accepted per tier. Wrench branches from the
+base Autocrafter. Disk Housing follows Disk Drive and leads to three parallel
+part-capacity lines: items, fluids and chemicals. They include Extra Disks and
+Mekanism Integration and end at Infinite. Advanced Storage Housing is a side
+quest from Housing.
+
 ## Paired Dragonsteel collisions
 
 The three additional Anvil Collision recipes require T1 eligibility and
