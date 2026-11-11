@@ -1,6 +1,30 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
+    {
+      "id": "nameless_trinkets:blindfold",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:rage_mind",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:creeper_sense",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:pocket_lightning_rod",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:dragons_eye",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:ghast_eye",
+      "required": false
+    },
     {
       "id": "armageddon_mod:blindfold",
       "required": false

@@ -64,16 +64,31 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 ### Systems
 
-The Pastel content selection removes unused items while retaining current Bertie integrations
-and Imbrifer resources. Overworld colored-tree patches, Paltaeria Ore and exposed dragon fossils
-are disabled. Removed-item quests retain their nodes as blank placeholders.
-Withdrawn Pastel furniture, decorations and fixed inventory contents are removed while
-structure templates load; existing chunks are unchanged. Retained pigment-dependent
-progression recipes temporarily use the crafting table without ink costs. Bedrock helmet,
-chestplate and leggings retain their items but have no crafting recipes. Spirit Instiller
-and Moonstone synthesis are removed. Retained pedestal recipes use ordinary crafting;
-unresolved recipes with retired unique ingredients remain disabled pending selection.
-Humus lake features generate water inside their existing Hornslake lining.
+The Pastel content selection retains Imbrifer resources and their building families.
+Withdrawn items leave recipes, loot, item tags, creative tabs, EMI and equipment
+catalogue quests. Shimmerstone generation is disabled in both dimensions; selected
+Bismuth, Malachite and Moonstone resource forms remain without the Crystallarieum.
+The Enchanter, ink workstations and selected tools/storage items are withdrawn.
+
+Withdrawn placements and fixed inventories are removed when structure templates load.
+Obsolete basic-shard and Azure Dike requirements are cleared from both templates and
+saved ruin controllers/chests; retained Onyx and Moonstone checks remain. Overworld
+Dike Gates no longer require Azure Dike charges. Existing terrain is not rewritten.
+Retained pedestal recipes use ordinary crafting, and Bedrock armour has its fusion
+routes. Retained equipment uses temporary replacement ingredients, including Raw
+Malachite directly. Disabled alternative routes remain listed in `pastel_recipe_pending.json`.
+Humus lakes use water and Dragonrot lakes
+use lava, both retaining their Hornslake lining. Swamp fossils remain available, with
+exposed placements checking the replacement lava. Dragonrot buckets and fluid recipes
+are withdrawn.
+Retained powered items consume matching vanilla dyes at 100 power per dye, the native
+pigment rate. Unspent charges persist and synchronize to the player; failed payments
+consume nothing. Circlet of Arrogance revival is deferred to a future custom ritual.
+Apotheosis enchantment acquisition changes remain outside this cleanup.
+
+Run `python texture-work/pastel_finalize.py --workspace <private-workspace>` for a
+Pastel-only content pass. It preserves newer authored integrations while reconciling
+the canonical removal table; `gen_data.py` also runs it after the main generation pass.
 
 Fusion Shrine is made on Hephaestus Forge II. Infused Netherite fusion takes 90 seconds;
 the shrine's horse-armour and vanilla Netherite synthesis routes are disabled. Onyx uses

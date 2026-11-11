@@ -1,17 +1,50 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "pastel:fusion_shrine",
+  "group": "bedrock_armor",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:midnight_solution"
+  },
+  "copy_components": true,
   "ingredients": [
+    "minecraft:golden_chestplate",
     {
-      "item": "minecraft:stone"
+      "item": "pastel:bedrock_dust",
+      "count": 8
+    },
+    {
+      "item": "minecraft:black_dye",
+      "count": 8
+    },
+    {
+      "item": "pastel:onyx_shard",
+      "count": 8
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "count": 1
+    },
+    {
+      "item": "minecraft:rose_bush",
+      "count": 1
     }
   ],
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+    "id": "pastel:bedrock_chestplate",
+    "components": {
+      "enchantments": {
+        "minecraft:protection": 5
+      }
+    }
+  },
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
 }

@@ -53,9 +53,6 @@
       "id": "minecraft:enchanted_golden_apple",
       "required": false
     },
-    {
-      "id": "#c:foods/fruits",
-      "required": false
-    }
+    "#c:foods/fruits"
   ]
 }

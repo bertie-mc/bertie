@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:brewers_handbook",
+      "required": false
+    },
+    {
+      "id": "pastel:imbrifer_cookbook",
+      "required": false
+    },
+    {
+      "id": "pastel:imperial_cookbook",
+      "required": false
+    },
+    {
+      "id": "pastel:melochites_cookbook_vol_1",
+      "required": false
+    },
+    {
+      "id": "pastel:melochites_cookbook_vol_2",
+      "required": false
+    }
+  ]
+}

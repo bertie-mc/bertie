@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:resonant_lily",
+      "required": false
+    },
+    {
+      "id": "pastel:amaranth_bushel",
+      "required": false
+    }
+  ]
+}

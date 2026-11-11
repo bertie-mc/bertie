@@ -1,21 +1,33 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GAG",
+    "NBN",
+    "GAG"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
     },
+    "N": {
+      "item": "pastel:neolith"
+    },
+    "A": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "id": "pastel:bottle_of_decay_away",
+    "count": 1
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

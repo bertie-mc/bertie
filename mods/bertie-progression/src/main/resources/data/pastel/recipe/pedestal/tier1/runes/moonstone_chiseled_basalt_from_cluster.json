@@ -1,21 +1,27 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "WXW",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "pastel:polished_basalt"
     },
+    "X": {
+      "item": "pastel:moonstone_cluster"
+    }
+  },
+  "result": {
+    "id": "pastel:moonstone_chiseled_basalt",
+    "count": 8
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

@@ -1,21 +1,24 @@
 {
-  "neoforge:conditions": [
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
     {
-      "type": "neoforge:false"
+      "item": "pastel:knotted_sword"
     },
+    {
+      "item": "pastel:milky_resin"
+    },
+    {
+      "item": "pastel:aether_vestiges"
+    }
+  ],
+  "result": {
+    "id": "pastel:nectar_lance"
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

@@ -31,6 +31,14 @@ public final class PastelStructureRemoval {
         cleanContents(template);
     }
 
+    public static void clearObsoleteAccess(CompoundTag tag) {
+        String advancement = tag.getString("RequiredAdvancement");
+        if (advancement.equals("pastel:collect_all_basic_shards")
+                || advancement.equals("pastel:midgame/get_azure_dike_charge")) {
+            tag.remove("RequiredAdvancement");
+        }
+    }
+
     private static void cleanPalette(ListTag palette, Set<Integer> cleared) {
         for (int i = 0; i < palette.size(); i++) {
             CompoundTag state = palette.getCompound(i);
@@ -53,6 +61,7 @@ public final class PastelStructureRemoval {
                 }
             }
         } else if (value instanceof CompoundTag compound) {
+            clearObsoleteAccess(compound);
             for (String key : Set.copyOf(compound.getAllKeys())) {
                 Tag child = compound.get(key);
                 if (child instanceof CompoundTag stack && removed(stack.getString("id"))) {

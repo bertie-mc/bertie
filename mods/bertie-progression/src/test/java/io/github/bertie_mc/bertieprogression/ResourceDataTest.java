@@ -27,6 +27,44 @@ class ResourceDataTest {
     }
 
     @Test
+    void withdrawnPastelOreDoesNotGenerateAndSelectedResourcesDropAgain() throws IOException {
+        JsonObject feature = data("data/pastel/worldgen/configured_feature/shimmerstone_ore.json");
+        assertEquals("minecraft:no_op", feature.get("type").getAsString());
+        assertEquals(
+                "neoforge:none",
+                data("data/pastel/neoforge/biome_modifier/shimmerstone_ore.json")
+                        .get("type")
+                        .getAsString());
+        Set<String> removed = new HashSet<>();
+        JsonParser.parseString(Files.readString(RESOURCES.resolve("removed_items.json")))
+                .getAsJsonArray()
+                .forEach(value -> removed.add(value.getAsString()));
+        for (String ore : List.of("shimmerstone_ore", "deepslate_shimmerstone_ore", "blackslag_shimmerstone_ore")) {
+            assertTrue(removed.contains("pastel:" + ore), ore);
+        }
+        for (String material : List.of(
+                "bismuth_crystal", "raw_malachite", "budding_moonstone", "moonstone_cluster", "moonstone_core")) {
+            assertTrue(!removed.contains("pastel:" + material), material);
+        }
+        assertTrue(removed.contains("pastel:pure_malachite"));
+        assertTrue(data("data/pastel/loot_table/blocks/bismuth_cluster.json")
+                .toString()
+                .contains("pastel:bismuth_crystal"));
+        assertTrue(data("data/pastel/loot_table/blocks/moonstone_cluster.json")
+                .toString()
+                .contains("pastel:moonstone_shard"));
+        assertTrue(data("data/pastel/recipe/enchanter/vanilla_books/fortune.json")
+                .toString()
+                .contains("neoforge:false"));
+        assertTrue(data("data/pastel/recipe/fusion_shrine/netherite_ingot.json")
+                .toString()
+                .contains("neoforge:false"));
+        assertTrue(!data("data/pastel/recipe/fusion_shrine/bedrock/helmet.json")
+                .toString()
+                .contains("neoforge:false"));
+    }
+
+    @Test
     void retainedPastelExamplesUseCraftingWithoutInk() throws IOException {
         for (String path : List.of(
                 "data/pastel/recipe/pedestal/tier1/gemstone_lights/amethyst_calcite_light.json",
@@ -371,6 +409,12 @@ class ResourceDataTest {
         List<String> leaks = new ArrayList<>();
         try (var paths = Files.walk(RESOURCES.resolve("data"))) {
             for (Path path : paths.filter(p -> p.toString().endsWith(".json")).toList()) {
+                // Visibility policy names withdrawn aliases rather than consuming them.
+                if (RESOURCES
+                        .relativize(path)
+                        .toString()
+                        .replace('\\', '/')
+                        .equals("data/c/tags/item/hidden_from_recipe_viewers.json")) continue;
                 JsonElement parsed = JsonParser.parseString(Files.readString(path));
                 if (parsed.isJsonObject()
                         && parsed.getAsJsonObject().has("neoforge:conditions")

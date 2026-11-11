@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:malachite_ultra_greatsword",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_bident",
+      "required": false
+    }
+  ]
+}

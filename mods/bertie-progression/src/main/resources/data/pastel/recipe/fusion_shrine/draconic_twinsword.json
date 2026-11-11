@@ -1,21 +1,52 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:liquid_crystal"
+  },
+  "copy_components": true,
+  "ingredients": [
+    "minecraft:netherite_sword",
+    "minecraft:netherite_sword",
     {
-      "type": "neoforge:false"
+      "item": "pastel:dragonbone_chunk",
+      "count": 4
     },
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 8
+    },
+    {
+      "item": "pastel:jadeite_petals",
+      "count": 8
+    },
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:yellow_dye",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "pastel:draconic_twinsword"
+  },
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "legendary_tool_craft",
+  "description": {
+    "type": "translatable",
+    "translate": "pastel.recipe.fusion_shrine.explanation.draconic_twinsword"
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

@@ -12,6 +12,22 @@
     {
       "id": "pastel:polished_moonstone_block",
       "required": false
+    },
+    {
+      "id": "pastel:small_moonstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_moonstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_moonstone",
+      "required": false
     }
   ]
 }

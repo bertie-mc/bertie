@@ -1,0 +1,30 @@
+{
+  "restore_recipes_for": [
+    "pastel:bedrock_chestplate",
+    "pastel:bedrock_helmet",
+    "pastel:bedrock_leggings",
+    "pastel:bismuth_block",
+    "pastel:bismuth_cluster",
+    "pastel:bismuth_crystal",
+    "pastel:bismuth_flake",
+    "pastel:bone_ash",
+    "pastel:budding_moonstone",
+    "pastel:large_bismuth_bud",
+    "pastel:large_malachite_bud",
+    "pastel:large_moonstone_bud",
+    "pastel:malachite_block",
+    "pastel:malachite_cluster",
+    "pastel:moonstone_cluster",
+    "pastel:moonstone_core",
+    "pastel:raw_malachite",
+    "pastel:small_bismuth_bud",
+    "pastel:small_malachite_bud",
+    "pastel:small_moonstone_bud"
+  ],
+  "item_merges": {
+    "pastel:pure_malachite": "pastel:raw_malachite"
+  },
+  "creative_only": [
+    "pastel:creative_particle_spawner"
+  ]
+}

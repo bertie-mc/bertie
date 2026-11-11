@@ -9462,19 +9462,6 @@
 		}
 		{
 			icon: {
-				id: "pastel:dreamflayer"
-			}
-			id: "7B000000000001C7"
-			tasks: [{
-				id: "7B000000010001C7"
-				item: { count: 1, id: "pastel:dreamflayer" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 13.0d
-		}
-		{
-			icon: {
 				id: "pastel:ferocious_glass_crest_bident"
 			}
 			id: "7B000000000001C8"
@@ -9524,19 +9511,6 @@
 			}]
 			x: 53.0d
 			y: 13.0d
-		}
-		{
-			icon: {
-				id: "pastel:glass_crest_workstaff"
-			}
-			id: "7B000000000001CC"
-			tasks: [{
-				id: "7B000000010001CC"
-				item: { count: 1, id: "pastel:glass_crest_workstaff" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 14.0d
 		}
 		{
 			icon: {
@@ -9592,19 +9566,6 @@
 		}
 		{
 			icon: {
-				id: "pastel:malachite_workstaff"
-			}
-			id: "7B000000000001D1"
-			tasks: [{
-				id: "7B000000010001D1"
-				item: { count: 1, id: "pastel:malachite_workstaff" }
-				type: "item"
-			}]
-			x: 50.0d
-			y: 15.0d
-		}
-		{
-			icon: {
 				id: "pastel:nectar_lance"
 			}
 			id: "7B000000000001D3"
@@ -9614,32 +9575,6 @@
 				type: "item"
 			}]
 			x: 51.0d
-			y: 15.0d
-		}
-		{
-			icon: {
-				id: "pastel:nightfalls_blade"
-			}
-			id: "7B000000000001D4"
-			tasks: [{
-				id: "7B000000010001D4"
-				item: { count: 1, id: "pastel:nightfalls_blade" }
-				type: "item"
-			}]
-			x: 52.0d
-			y: 15.0d
-		}
-		{
-			icon: {
-				id: "pastel:razor_falchion"
-			}
-			id: "7B000000000001D5"
-			tasks: [{
-				id: "7B000000010001D5"
-				item: { count: 1, id: "pastel:razor_falchion" }
-				type: "item"
-			}]
-			x: 53.0d
 			y: 15.0d
 		}
 		{

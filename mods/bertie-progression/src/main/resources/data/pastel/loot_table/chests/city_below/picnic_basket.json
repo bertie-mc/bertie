@@ -26,10 +26,6 @@
               "id": "minecraft:water"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pastel:radiance_pin"
         }
       ]
     },

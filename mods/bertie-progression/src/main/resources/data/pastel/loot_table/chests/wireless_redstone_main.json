@@ -2,18 +2,6 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "min": 0,
-        "max": 1
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:logo_banner_pattern"
-        }
-      ]
-    },
-    {
       "rolls": 1,
       "entries": [
         {

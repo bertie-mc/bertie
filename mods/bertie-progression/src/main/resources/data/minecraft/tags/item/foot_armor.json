@@ -128,10 +128,7 @@
       "id": "malum:malignant_stronghold_boots",
       "required": false
     },
-    {
-      "id": "#mythsandlegends:foot_armor",
-      "required": false
-    },
+    "#mythsandlegends:foot_armor",
     {
       "id": "oritech:exo_boots",
       "required": false

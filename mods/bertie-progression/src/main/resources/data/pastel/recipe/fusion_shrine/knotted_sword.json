@@ -1,21 +1,45 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:fusion_shrine",
+  "time": 400,
+  "experience": 12.0,
+  "fluid": {
+    "fluid": "minecraft:water"
+  },
+  "copy_components": true,
+  "ingredients": [
+    "minecraft:iron_sword",
+    "minecraft:diamond",
     {
-      "type": "neoforge:false"
+      "item": "pastel:milky_resin",
+      "count": 3
     },
+    {
+      "item": "pastel:vegetal",
+      "count": 8
+    },
+    {
+      "item": "minecraft:fermented_spider_eye",
+      "count": 8
+    },
+    {
+      "item": "minecraft:purple_dye",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "pastel:knotted_sword"
+  },
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "legendary_tool_craft",
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

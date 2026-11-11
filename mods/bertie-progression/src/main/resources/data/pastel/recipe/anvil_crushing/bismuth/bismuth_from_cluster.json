@@ -1,17 +1,18 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:anvil_crushing",
+  "ingredient": [
     {
-      "type": "neoforge:false"
+      "item": "pastel:bismuth_cluster"
     }
   ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "crushedItemsPerPointOfDamage": 0.75,
+  "experience": 1.0,
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+    "id": "pastel:bismuth_crystal",
+    "count": 4
+  },
+  "particleEffectIdentifier": "enchanted_hit",
+  "particleCount": 10,
+  "soundEventIdentifier": "block.chain.break",
+  "group": "bismuth_crushing"
 }

@@ -402,10 +402,6 @@
       "required": false
     },
     {
-      "id": "pastel:paltaeria_gem",
-      "required": false
-    },
-    {
       "id": "stellaris:corronium_ingot",
       "required": false
     },

@@ -30,6 +30,11 @@ public final class BertieProgression {
         ModItems.DATA_COMPONENTS.register(modBus);
         ModItems.TABS.register(modBus);
         ModAttachments.ATTACHMENTS.register(modBus);
+        modBus.addListener(io.github.bertie_mc.bertieprogression.pastel.DyeFuelPayload::register);
+        NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.pastel.DyeFuel.class);
+        if (ModList.get().isLoaded("pastel")) {
+            NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.pastel.PastelFuelTooltip.class);
+        }
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.TYPES.register(modBus);
         if (ModList.get().isLoaded("mekanism")) {

@@ -5910,4 +5910,9 @@ if _undeclared:
         "these namespaces get data written for them but are not declared with ordering=\"AFTER\" "
         "in neoforge.mods.toml, so the original files would win: " + ", ".join(_undeclared))
 
+from pathlib import Path as _Path
+from pastel_finalize import finalize as _finalize_pastel, pack_jars as _pastel_jars
+_finalize_pastel(_Path(ROOT), _Path(os.environ["BERTIE_WORKSPACE"]),
+                 _pastel_jars(_Path(ROOT).parent.parent, _Path(INSTANCE_MODS)))
+
 print(f"Wrote {len(written)} files under {RES}")

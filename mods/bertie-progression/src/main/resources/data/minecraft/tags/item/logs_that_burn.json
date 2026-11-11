@@ -1,0 +1,374 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:ouranwood_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:ouranwood_wood",
+      "required": false
+    },
+    {
+      "id": "antarchy:duplicator_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:mossy_ouranwood_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:mossy_ouranwood_wood",
+      "required": false
+    },
+    {
+      "id": "antarchy:stripped_ouranwood_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:stripped_ouranwood_wood",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach_wood",
+      "required": false
+    },
+    {
+      "id": "antarchy:stripped_peach_log",
+      "required": false
+    },
+    {
+      "id": "antarchy:stripped_peach_wood",
+      "required": false
+    },
+    {
+      "id": "betterarcheology:rotten_log",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_log",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:end_lotus_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:end_lotus_log",
+      "required": false
+    },
+    {
+      "id": "betterend:end_lotus_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:end_lotus_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_log",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:jellyshroom_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:jellyshroom_log",
+      "required": false
+    },
+    {
+      "id": "betterend:jellyshroom_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:jellyshroom_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_log",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_log",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_glowshroom_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_glowshroom_log",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_glowshroom_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_glowshroom_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_log",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_log",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_stripped_log",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_log",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_stripped_bark",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_stripped_log",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:palm_log",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:stripped_palm_log",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:palm_wood",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:stripped_palm_wood",
+      "required": false
+    },
+    "#deeperdarker:echo_logs",
+    "#expandeddelight:cinnamon_logs",
+    {
+      "id": "hazennstuff:wisewood_log",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:stripped_wisewood_log",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:wisewood_wood",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:stripped_wisewood_wood",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_log",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:stripped_frostbite_birch_log",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_wood",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:stripped_frostbite_birch_wood",
+      "required": false
+    },
+    {
+      "id": "iceandfire:dreadwood_log",
+      "required": false
+    },
+    {
+      "id": "magitech:celifern_log",
+      "required": false
+    },
+    {
+      "id": "magitech:celifern_wood",
+      "required": false
+    },
+    {
+      "id": "magitech:stripped_celifern_log",
+      "required": false
+    },
+    {
+      "id": "magitech:stripped_celifern_wood",
+      "required": false
+    },
+    {
+      "id": "magitech:charcoal_birch_log",
+      "required": false
+    },
+    {
+      "id": "magitech:charcoal_birch_wood",
+      "required": false
+    },
+    {
+      "id": "magitech:stripped_charcoal_birch_log",
+      "required": false
+    },
+    {
+      "id": "magitech:stripped_charcoal_birch_wood",
+      "required": false
+    },
+    "#pastel:colored_logs",
+    "#pastel:noxcap_stems",
+    "#pastel:weeping_gala_logs",
+    {
+      "id": "pastel:nephrite_blossom_stem",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_log",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_azalea_log",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_wood",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_azalea_wood",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_log",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_blossom_log",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_wood",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_blossom_wood",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_log",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_ancient_log",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_wood",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_ancient_wood",
+      "required": false
+    },
+    "#twilightforest:twilight_oak_logs",
+    "#twilightforest:canopy_logs",
+    "#twilightforest:mangrove_logs",
+    "#twilightforest:timewood_logs",
+    "#twilightforest:transwood_logs",
+    "#twilightforest:mining_logs",
+    "#twilightforest:sortwood_logs",
+    {
+      "id": "twilightdelight:ironwood_log",
+      "required": false
+    },
+    "#minecraft:pale_oak_logs",
+    "#minecraft:dark_oak_logs",
+    "#minecraft:oak_logs",
+    "#minecraft:acacia_logs",
+    "#minecraft:birch_logs",
+    "#minecraft:jungle_logs",
+    "#minecraft:spruce_logs",
+    "#minecraft:mangrove_logs",
+    "#minecraft:cherry_logs"
+  ]
+}

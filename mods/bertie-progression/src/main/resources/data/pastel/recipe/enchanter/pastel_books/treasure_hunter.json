@@ -1,55 +1,17 @@
 {
-  "type": "pastel:enchanter",
-  "time": 300,
-  "required_experience": 100,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:book"
-    },
-    {
-      "item": "minecraft:light_blue_dye"
-    },
-    {
-      "item": "minecraft:light_blue_dye"
-    },
-    {
-      "item": "pastel:storm_stone"
-    },
-    {
-      "item": "minecraft:flint"
-    },
-    {
-      "item": "minecraft:light_blue_dye"
-    },
-    {
-      "item": "minecraft:light_blue_dye"
-    },
-    {
-      "item": "pastel:storm_stone"
-    },
-    {
-      "item": "minecraft:flint"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "id": "minecraft:enchanted_book",
-    "components": {
-      "stored_enchantments": {
-        "pastel:treasure_hunter": 1
-      }
-    }
-  },
-  "required_advancement": "pastel:unlocks/enchantments/treasure_hunter",
-  "neoforge:conditions": [
-    {
-      "type": "pastel:enchantments_exist",
-      "values": [
-        "pastel:treasure_hunter"
-      ]
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
-    }
-  ]
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

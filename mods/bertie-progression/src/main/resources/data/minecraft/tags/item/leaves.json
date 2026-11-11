@@ -35,10 +35,6 @@
     },
     "#pastel:colored_leaves",
     {
-      "id": "pastel:spirit_sallow_leaves",
-      "required": false
-    },
-    {
       "id": "pastel:nephrite_blossom_leaves",
       "required": false
     },

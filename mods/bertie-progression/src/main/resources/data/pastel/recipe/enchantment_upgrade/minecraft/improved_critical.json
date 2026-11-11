@@ -1,34 +1,17 @@
 {
   "neoforge:conditions": [
     {
-      "type": "pastel:enchantments_exist",
-      "values": [
-        "pastel:improved_critical"
-      ]
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
   ],
-  "type": "pastel:enchantment_upgrade",
-  "bulk_item": {
-    "item": "minecraft:black_dye"
-  },
-  "enchantment": "pastel:improved_critical",
-  "item_scaling": {
-    "type": "pastel:doubling",
-    "scaling_factor": 2.0,
-    "scaling_value": 8
-  },
-  "level_cap": 4,
-  "required_advancement": "pastel:unlocks/enchantments/improved_critical",
-  "xp_scaling": {
-    "type": "pastel:indexed",
-    "indexes": [
-      400,
-      2000,
-      10000
-    ]
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
   }
 }

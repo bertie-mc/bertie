@@ -6,27 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:hibernating_jade_vine_bulb"
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 0,
-        "max": 1
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "pastel:music_disc_discovery"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:diamond"
         },
         {

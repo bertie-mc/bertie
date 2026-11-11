@@ -18,6 +18,7 @@ import io.github.bertie_mc.bertieprogression.recipe.OminousFanRecipe;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -45,6 +46,28 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
     private static final ResourceLocation POCKET_BLOCK =
             ResourceLocation.fromNamespaceAndPath("pocket_dimension", "pocket_block");
 
+    private static final Set<String> WITHDRAWN_PASTEL_CATEGORIES = Set.of(
+            "pedestal_crafting",
+            "natures_staff_conversions",
+            "enchanter",
+            "enchantment_upgrade",
+            "potion_workshop_brewing",
+            "potion_workshop_crafting",
+            "potion_workshop_reacting",
+            "spirit_instiller",
+            "humus_converting",
+            "dragonrot_converting",
+            "heating",
+            "freezing",
+            "ink_converting",
+            "crystallarieum",
+            "cinderhearth",
+            "titration_barrel");
+
+    private static boolean isWithdrawnPastelCategory(ResourceLocation id) {
+        return id != null && id.getNamespace().equals("pastel") && WITHDRAWN_PASTEL_CATEGORIES.contains(id.getPath());
+    }
+
     private static boolean isRemovedStack(EmiStack stack) {
         return RemovedItems.isRemoved(stack.getItemStack()) || RemovedFluids.isRemoved(stack.getKey());
     }
@@ -60,8 +83,9 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
         registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isRemovedStack);
-        registry.removeRecipes(recipe -> recipe.getOutputs().stream()
-                        .anyMatch(BertieProgressionEmiPlugin::isRemovedStack)
+        registry.removeRecipes(recipe -> isWithdrawnPastelCategory(
+                        recipe.getCategory().getId())
+                || recipe.getOutputs().stream().anyMatch(BertieProgressionEmiPlugin::isRemovedStack)
                 || recipe.getInputs().stream()
                         .anyMatch(input -> !input.getEmiStacks().isEmpty()
                                 && input.getEmiStacks().stream().allMatch(BertieProgressionEmiPlugin::isRemovedStack)));

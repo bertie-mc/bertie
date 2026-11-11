@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:glass_crest_ultra_greatsword",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow",
+      "required": false
+    },
+    {
+      "id": "pastel:fractal_glass_crest_bident",
+      "required": false
+    },
+    {
+      "id": "pastel:ferocious_glass_crest_bident",
+      "required": false
+    }
+  ]
+}

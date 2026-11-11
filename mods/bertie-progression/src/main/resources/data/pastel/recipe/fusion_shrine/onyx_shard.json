@@ -31,7 +31,6 @@
   "result": {
     "id": "pastel:onyx_shard"
   },
-  "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
   "world_conditions": {
     "time_of_day": "midnight",
     "moon_phase": "new_moon"

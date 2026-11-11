@@ -9,11 +9,19 @@
       "item": "malum:null_slate"
     },
     {
-      "item": "pastel:paltaeria_gem"
+      "item": "minecraft:shulker_shell"
     },
     {
-      "item": "minecraft:cyan_dye",
-      "count": 4
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:cyan_dye"
     }
   ],
   "result": {

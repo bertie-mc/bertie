@@ -1,30 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "PPP",
-    "SCS",
-    "PPP"
-  ],
-  "key": {
-    "C": {
-      "item": "pastel:four_leaf_clover"
-    },
-    "P": {
-      "item": "minecraft:paper"
-    },
-    "S": {
-      "item": "pastel:stardust"
-    }
-  },
-  "result": {
-    "id": "pastel:artisans_atlas",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

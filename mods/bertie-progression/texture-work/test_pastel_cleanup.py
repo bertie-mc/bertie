@@ -59,6 +59,20 @@ class PastelCleanupTests(unittest.TestCase):
             self.assertEqual(restored[path]["ingredients"], recipe["ingredients"])
             self.assertNotIn({"type": "neoforge:false"}, restored[path]["neoforge:conditions"])
 
+    def test_instiller_counts_are_not_lost_during_crafting_conversion(self):
+        path = "data/pastel/recipe/spirit_instiller/test.json"
+        recipe = {"type": "pastel:spirit_instiller",
+                  "center_ingredient": "minecraft:diamond",
+                  "ingredient1": {"item": "minecraft:iron_ingot", "count": 4},
+                  "ingredient2": {"item": "minecraft:gold_ingot", "count": 2},
+                  "result": {"id": "pastel:test"}}
+        with tempfile.TemporaryDirectory() as directory:
+            emitted = self.run_policy(Path(directory), {path: recipe}, set())
+        ingredients = emitted[path]["ingredients"]
+        self.assertEqual(ingredients.count({"item": "minecraft:iron_ingot"}), 4)
+        self.assertEqual(ingredients.count({"item": "minecraft:gold_ingot"}), 2)
+        self.assertEqual(len(ingredients), 7)
+
 
 if __name__ == "__main__":
     unittest.main()

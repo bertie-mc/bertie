@@ -6,17 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:night_salts",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:phantom_membrane",
           "weight": 3,
           "functions": [

@@ -1,30 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    " BG",
-    " SB",
-    "S  "
-  ],
-  "key": {
-    "S": {
-      "item": "minecraft:stick"
-    },
-    "G": {
-      "item": "minecraft:glowstone"
-    },
-    "B": {
-      "item": "minecraft:yellow_dye"
-    }
-  },
-  "result": {
-    "id": "pastel:radiance_staff",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

@@ -1,17 +1,39 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:liquid_crystal"
+  },
+  "copy_components": true,
   "ingredients": [
+    "magic_of_color:inquisitors_gauntlet",
     {
-      "item": "minecraft:stone"
+      "item": "pastel:raw_malachite",
+      "count": 4
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 4
+    },
+    {
+      "item": "minecraft:end_stone",
+      "count": 2
+    },
+    {
+      "item": "pastel:moonstone_shard",
+      "count": 4
     }
   ],
   "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+    "id": "magic_of_color:praetors_gauntlet",
+    "components": {
+      "enchantments": {
+        "minecraft:sharpness": 5
+      }
+    }
+  },
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine"
 }

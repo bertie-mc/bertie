@@ -2,18 +2,14 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
-      "bonus_rolls": 0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "pastel:pipe_bomb"
+          "name": "pastel:moonstone_core",
+          "weight": 10
         }
-      ],
-      "functions": []
+      ]
     },
     {
       "rolls": {

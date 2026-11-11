@@ -1,33 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "BBB",
-    "XSX",
-    "YYY"
-  ],
-  "key": {
-    "B": {
-      "item": "minecraft:blue_dye"
-    },
-    "Y": {
-      "item": "pastel:polished_basalt"
-    },
-    "X": {
-      "item": "pastel:polished_calcite"
-    },
-    "S": {
-      "item": "minecraft:magma_cream"
-    }
-  },
-  "result": {
-    "id": "pastel:black_hole_chest",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

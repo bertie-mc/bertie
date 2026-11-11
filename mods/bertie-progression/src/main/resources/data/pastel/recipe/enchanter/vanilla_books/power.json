@@ -1,56 +1,17 @@
 {
-  "type": "pastel:enchanter",
-  "group": "vanilla",
-  "time": 300,
-  "required_experience": 100,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:book"
-    },
-    {
-      "item": "minecraft:red_dye"
-    },
-    {
-      "item": "minecraft:red_dye"
-    },
-    {
-      "item": "minecraft:diamond"
-    },
-    {
-      "item": "pastel:neolith"
-    },
-    {
-      "item": "minecraft:red_dye"
-    },
-    {
-      "item": "minecraft:red_dye"
-    },
-    {
-      "item": "minecraft:diamond"
-    },
-    {
-      "item": "pastel:neolith"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "id": "minecraft:enchanted_book",
-    "components": {
-      "stored_enchantments": {
-        "minecraft:power": 1
-      }
-    }
-  },
-  "required_advancement": "pastel:unlocks/enchantments/vanilla_projectile",
-  "neoforge:conditions": [
-    {
-      "type": "pastel:enchantments_exist",
-      "values": [
-        "minecraft:power"
-      ]
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
-    }
-  ]
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

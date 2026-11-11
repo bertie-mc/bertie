@@ -6,6 +6,22 @@ from pathlib import Path
 
 
 REPLACEMENTS = {
+    "pastel:paltaeria_fragments": "minecraft:end_stone",
+    "pastel:paltaeria_gem": "minecraft:shulker_shell",
+    "pastel:star_fragment": "minecraft:echo_shard",
+    "pastel:radiating_ender": "minecraft:ender_pearl",
+    "pastel:midnight_chip": "minecraft:echo_shard",
+    "pastel:raw_azurite": "minecraft:lapis_lazuli",
+    "pastel:raw_bloodstone": "pastel:dragonbone_chunk",
+    "pastel:blood_orchid_petal": "pastel:jadeite_petals",
+    "pastel:nightdew_sprout": "pastel:milky_resin",
+    "pastel:quitoxic_powder": "minecraft:fermented_spider_eye",
+    "pastel:moonstruck_nectar": "pastel:milky_resin",
+    "pastel:nectardew_burgeon": "pastel:sweet_pea",
+    "pastel:evernectar": "pastel:milky_resin",
+    "pastel:four_leaf_clover": "pastel:clover",
+    "pastel:fanciful_bismuth_ring": "pastel:bismuth_crystal",
+    "pastel:pure_malachite": "pastel:raw_malachite",
     "pastel:shimmerstone_gem": "minecraft:glowstone",
     "pastel:shimmerstone_block": "minecraft:glowstone",
     "pastel:stratine_gem": "minecraft:magma_cream",
@@ -42,9 +58,6 @@ CRAFTING_OUTPUTS = {
     "pastel:amethyst_glass", "pastel:amethyst_glass_pane",
     "pastel:onyx_glass", "pastel:onyx_glass_pane",
     "pastel:moonstone_glass", "pastel:moonstone_glass_pane",
-}
-UNCRAFTABLE_ARMOUR = {
-    "pastel:bedrock_helmet", "pastel:bedrock_chestplate", "pastel:bedrock_leggings",
 }
 REMOVED_PIGMENTS = {"pastel:pink_pigment", "pastel:orange_pigment"}
 
@@ -150,10 +163,6 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
         output = result.get("id", result.get("item")) if isinstance(result, dict) else result
         if not isinstance(output, str):
             output = None
-        if output in UNCRAFTABLE_ARMOUR:
-            write(path, disabled)
-            changed += 1
-            continue
         if output in removed:
             # Native paths remain owned by the reversible removal manifest.
             if output.startswith("pastel:") and path not in recipes:
@@ -166,6 +175,10 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
                                      if not isinstance(value, str)
                                      or value not in {"pastel:topaz_shard", "pastel:citrine_shard"}]
         fixed = replace_inputs(source)
+        if output == "pastel:draconic_twinsword":
+            for ingredient in fixed.get("ingredients", []):
+                if isinstance(ingredient, dict) and ingredient.get("item") == "minecraft:enchanted_book":
+                    ingredient.pop("predicates", None)
         if output == "pastel:bottle_of_failing":
             fixed = replace_specific(fixed, "minecraft:magma_cream", "pastel:vegetal")
         if path == "data/pastel/recipe/pedestal/tier2/fusion_shrine_basalt.json":
@@ -190,10 +203,11 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
         elif fixed.get("type") == "pastel:pedestal_shapeless":
             fixed = shapeless_recipe(fixed, fixed["ingredients"])
         elif fixed.get("type") == "pastel:spirit_instiller":
-            center = copy.deepcopy(fixed["center_ingredient"])
-            count = center.pop("count", 1) if isinstance(center, dict) else 1
-            center = vanilla_ingredient(center)
-            inputs = [center] * count + [fixed["ingredient1"], fixed["ingredient2"]]
+            inputs = []
+            for ingredient in (fixed["center_ingredient"], fixed["ingredient1"], fixed["ingredient2"]):
+                ingredient = copy.deepcopy(ingredient)
+                count = ingredient.pop("count", 1) if isinstance(ingredient, dict) else 1
+                inputs.extend([vanilla_ingredient(ingredient)] * count)
             if len(inputs) <= 9:
                 fixed = shapeless_recipe(fixed, inputs)
             else:

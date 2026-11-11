@@ -15,6 +15,24 @@
         },
         {
           "type": "minecraft:item",
+          "name": "pastel:bone_ash",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "advancements": {
+                    "pastel:break_cracked_dragonbone": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:poisonous_potato"
         },
         {

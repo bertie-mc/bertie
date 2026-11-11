@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_leggings",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:bedrock_warlock_leggings",
+      "required": false
+    }
+  ]
+}

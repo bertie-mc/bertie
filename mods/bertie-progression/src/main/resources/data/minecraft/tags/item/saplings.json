@@ -1,0 +1,210 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "antarchy:ouranwood_acorn",
+      "required": false
+    },
+    {
+      "id": "antarchy:peach_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:dragon_tree_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:helix_tree_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:hydralux_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:lacugrove_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:lucernia_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_glowshroom_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:pythadendron_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:tenanea_sapling",
+      "required": false
+    },
+    {
+      "id": "betterend:umbrella_tree_sapling",
+      "required": false
+    },
+    {
+      "id": "crabbersdelight:palm_sapling",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:echo_sapling",
+      "required": false
+    },
+    {
+      "id": "expandeddelight:cinnamon_sapling",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:aurum_sapling",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:growing_edelwood",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:frostbite_birch_sapling",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:wisewood_sapling",
+      "required": false
+    },
+    {
+      "id": "magitech:celifern_sapling",
+      "required": false
+    },
+    {
+      "id": "magitech:charcoal_birch_sapling",
+      "required": false
+    },
+    {
+      "id": "malum:runewood_sapling",
+      "required": false
+    },
+    {
+      "id": "malum:azure_runewood_sapling",
+      "required": false
+    },
+    "#pastel:colored_saplings",
+    {
+      "id": "pastel:weeping_gala_sprig",
+      "required": false
+    },
+    {
+      "id": "quark:blue_blossom_sapling",
+      "required": false
+    },
+    {
+      "id": "quark:lavender_blossom_sapling",
+      "required": false
+    },
+    {
+      "id": "quark:orange_blossom_sapling",
+      "required": false
+    },
+    {
+      "id": "quark:yellow_blossom_sapling",
+      "required": false
+    },
+    {
+      "id": "quark:red_blossom_sapling",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_oak_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:canopy_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mangrove_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:darkwood_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:time_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:transformation_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mining_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:sorting_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hollow_oak_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightforest:rainbow_oak_sapling",
+      "required": false
+    },
+    {
+      "id": "twilightdelight:ironwood_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:pale_oak_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:oak_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:birch_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:acacia_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:dark_oak_sapling",
+      "required": false
+    },
+    {
+      "id": "minecraft:azalea",
+      "required": false
+    },
+    {
+      "id": "minecraft:flowering_azalea",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_propagule",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_sapling",
+      "required": false
+    }
+  ]
+}

@@ -37,9 +37,6 @@
       "id": "minecraft:beetroot",
       "required": false
     },
-    {
-      "id": "#c:foods/vegetables",
-      "required": false
-    }
+    "#c:foods/vegetables"
   ]
 }

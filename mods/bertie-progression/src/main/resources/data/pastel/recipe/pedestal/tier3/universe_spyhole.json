@@ -1,21 +1,30 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PMP",
+    "MEM",
+    "PMP"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
     },
+    "M": {
+      "item": "minecraft:echo_shard"
+    },
+    "P": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "id": "pastel:universe_spyhole",
+    "count": 4
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

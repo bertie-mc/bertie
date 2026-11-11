@@ -11,6 +11,13 @@ public final class ModAttachments {
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS =
             DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, BertieProgression.MODID);
 
+    public static final Supplier<AttachmentType<net.minecraft.nbt.CompoundTag>> PASTEL_DYE_FUEL = ATTACHMENTS.register(
+            "pastel_dye_fuel",
+            () -> AttachmentType.builder(() -> new net.minecraft.nbt.CompoundTag())
+                    .serialize(net.minecraft.nbt.CompoundTag.CODEC)
+                    .copyOnDeath()
+                    .build());
+
     /** Pocket Watch unlocks the travel key permanently, including after death. */
     public static final Supplier<AttachmentType<Boolean>> POCKET_UNLOCKED = ATTACHMENTS.register(
             "pocket_unlocked",

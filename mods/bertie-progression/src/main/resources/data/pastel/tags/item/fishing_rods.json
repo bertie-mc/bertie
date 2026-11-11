@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_fishing_rod",
+      "required": false
+    }
+  ]
+}

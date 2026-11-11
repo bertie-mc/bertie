@@ -1,21 +1,33 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BSB",
+    "BPB",
+    "BRB"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:blue_dye"
     },
+    "S": {
+      "item": "minecraft:ender_pearl"
+    },
+    "B": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "pastel:ender_dropper",
+    "count": 1
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

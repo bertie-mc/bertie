@@ -1,16 +1,276 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
+    {
+      "id": "cataclysm_spellbooks:leviathans_blessing",
+      "required": false
+    },
+    {
+      "id": "darkdoppelganger:doppelganger_ring",
+      "required": false
+    },
+    {
+      "id": "discerning_the_eldritch:echo_vibration_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:iron_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:golden_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:miner_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:magnet_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:dislocation_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:infernal_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:quartz_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:ender_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:earth_promise",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:cursed_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:redemption_ring",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacyplus:desolation_ring",
+      "required": false
+    },
+    {
+      "id": "hazennstuff:ring_of_efficiency",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:mana_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:cooldown_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:cast_time_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:silver_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:emerald_stoneplate_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:fireward_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:frostward_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:poisonward_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:affinity_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:invisibility_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:lurker_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:expulsion_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:visibility_ring",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:betrayer_signet",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:wicked_bone_ring",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_ocean",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_life",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_divinity",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_reflection",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_incarceration",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_corrosion",
+      "required": false
+    },
+    {
+      "id": "l2hostility:ring_of_healing",
+      "required": false
+    },
+    {
+      "id": "magitech:mana_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:galevent_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:chargebind_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:torsion_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:umbral_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:dawn_ring",
+      "required": false
+    },
+    {
+      "id": "magitech:fluxbound_ring",
+      "required": false
+    },
+    {
+      "id": "malstone:ring_of_authority",
+      "required": false
+    },
+    {
+      "id": "malum:gilded_ring",
+      "required": false
+    },
+    {
+      "id": "malum:ornate_ring",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_esoteric_spoils",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_the_rising_edge",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_the_howling_maelstrom",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_curative_talent",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_arcane_prowess",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_manaweaving",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_alchemical_mastery",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_desperate_voracity",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_the_hoarder",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_the_demolitionist",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_the_endless_well",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_echoing_arcana",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_growing_flesh",
+      "required": false
+    },
+    {
+      "id": "malum:ring_of_gruesome_concentration",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:svarogs_ring",
+      "required": false
+    },
+    {
+      "id": "pastel:jeopardant",
+      "required": false
+    },
+    {
+      "id": "pastel:neat_ring",
+      "required": false
+    },
+    {
+      "id": "avaritia:neutron_ring",
+      "required": false
+    },
     {
       "id": "armageddon_mod:iron_ring",
       "required": false
     },
     {
       "id": "armageddon_mod:rose_ring",
-      "required": false
-    },
-    {
-      "id": "enigmaticlegacyplus:iron_ring",
       "required": false
     },
     {

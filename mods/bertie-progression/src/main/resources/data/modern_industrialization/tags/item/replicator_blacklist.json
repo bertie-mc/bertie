@@ -1,0 +1,31 @@
+{
+  "replace": true,
+  "values": [
+    "#pastel:trinkets",
+    "#pastel:bedrock_equipment",
+    "#pastel:bedrock_armor",
+    "#pastel:gemstone_armor",
+    "#pastel:malachite_equipment",
+    "#pastel:glass_crest_equipment",
+    {
+      "id": "pastel:memory",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_end_portal_frame",
+      "required": false
+    },
+    {
+      "id": "pastel:knowledge_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_splice",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_core",
+      "required": false
+    }
+  ]
+}

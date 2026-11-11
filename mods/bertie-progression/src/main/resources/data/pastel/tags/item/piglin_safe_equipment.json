@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_helmet",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_chestplate",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_leggings",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_boots",
+      "required": false
+    }
+  ]
+}

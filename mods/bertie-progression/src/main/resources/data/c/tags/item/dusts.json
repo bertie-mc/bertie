@@ -97,10 +97,7 @@
     },
     "#c:dusts/glowstone",
     "#c:dusts/redstone",
-    {
-      "id": "#forge:dusts",
-      "required": false
-    },
+    "#forge:dusts",
     "#c:dusts/nickel",
     "#c:dusts/platinum",
     "#c:dusts/zinc",

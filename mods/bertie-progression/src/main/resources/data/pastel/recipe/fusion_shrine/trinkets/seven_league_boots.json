@@ -7,7 +7,7 @@
   },
   "ingredients": [
     "minecraft:leather_boots",
-    "pastel:four_leaf_clover",
+    "pastel:clover",
     "minecraft:phantom_membrane",
     {
       "item": "minecraft:purple_dye",
@@ -17,7 +17,6 @@
   "result": {
     "id": "pastel:seven_league_boots"
   },
-  "required_advancement": "pastel:unlocks/trinkets/seven_league_boots",
   "start_crafting_effect": "nothing",
   "during_crafting_effects": [],
   "finish_crafting_effect": "single_visual_explosion_on_shrine",

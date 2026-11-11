@@ -178,10 +178,6 @@
       "required": false
     },
     {
-      "id": "pastel:totem_pendant",
-      "required": false
-    },
-    {
       "id": "terra_curio:cross_necklace",
       "required": false
     },

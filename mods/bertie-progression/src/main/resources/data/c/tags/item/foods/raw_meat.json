@@ -18,10 +18,7 @@
       "id": "antarchy:raw_bug_meat",
       "required": false
     },
-    {
-      "id": "#c:foods/raw_turtle",
-      "required": false
-    },
+    "#c:foods/raw_turtle",
     {
       "id": "endersdelight:shulker_mollusk",
       "required": false
@@ -55,9 +52,6 @@
       "id": "minecraft:mutton",
       "required": false
     },
-    {
-      "id": "#c:foods/raw_meats",
-      "required": false
-    }
+    "#c:foods/raw_meats"
   ]
 }

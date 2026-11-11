@@ -1,55 +1,17 @@
 {
-  "type": "pastel:enchanter",
-  "time": 300,
-  "required_experience": 100,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:book"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    },
-    {
-      "item": "minecraft:soul_sand"
-    },
-    {
-      "item": "pastel:storm_stone"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    },
-    {
-      "item": "minecraft:soul_sand"
-    },
-    {
-      "item": "pastel:storm_stone"
+      "item": "minecraft:stone"
     }
   ],
   "result": {
-    "id": "minecraft:enchanted_book",
-    "components": {
-      "stored_enchantments": {
-        "pastel:pest_control": 1
-      }
-    }
-  },
-  "required_advancement": "pastel:unlocks/enchantments/pest_control",
-  "neoforge:conditions": [
-    {
-      "type": "pastel:enchantments_exist",
-      "values": [
-        "pastel:pest_control"
-      ]
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
-    }
-  ]
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

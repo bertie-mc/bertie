@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:enchantable/mining",
+    {
+      "id": "pastel:ender_splice",
+      "required": false
+    }
+  ]
+}

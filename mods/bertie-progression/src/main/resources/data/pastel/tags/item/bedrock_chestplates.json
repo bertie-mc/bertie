@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:bedrock_chestplate",
+      "required": false
+    },
+    {
+      "id": "magic_of_color:bedrock_warlock_robes",
+      "required": false
+    }
+  ]
+}

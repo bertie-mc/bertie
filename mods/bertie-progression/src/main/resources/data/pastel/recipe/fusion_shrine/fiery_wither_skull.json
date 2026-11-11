@@ -49,7 +49,6 @@
     "id": "armageddon_mod:fiery_wither_skull",
     "count": 1
   },
-  "required_advancement": "pastel:unlocks/blocks/fusion_shrine",
   "start_crafting_effect": "weather_thunder_short",
   "during_crafting_effects": [
     "nothing",

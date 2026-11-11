@@ -1,15 +1,17 @@
 {
-  "type": "pastel:potion_workshop_reacting",
-  "item": "minecraft:glowstone",
-  "modifiers": {
-    "duration_multiplier": 1.2,
-    "potency_multiplier": 1.2
-  },
-  "required_advancement": "pastel:collect_shimmerstone",
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

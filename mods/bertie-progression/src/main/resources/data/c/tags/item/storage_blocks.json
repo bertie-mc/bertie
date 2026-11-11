@@ -31,14 +31,6 @@
       "required": false
     },
     {
-      "id": "pastel:azurite_block",
-      "required": false
-    },
-    {
-      "id": "pastel:bloodstone_block",
-      "required": false
-    },
-    {
       "id": "pastel:vegetal_block",
       "required": false
     },
@@ -500,9 +492,6 @@
     "#c:storage_blocks/redstone",
     "#c:storage_blocks/slime",
     "#c:storage_blocks/wheat",
-    {
-      "id": "#forge:storage_blocks",
-      "required": false
-    }
+    "#forge:storage_blocks"
   ]
 }

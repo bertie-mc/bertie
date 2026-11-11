@@ -1,21 +1,30 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MBM",
+    "MSM",
+    "MBM"
+  ],
+  "key": {
+    "M": {
+      "item": "pastel:basal_marble"
     },
+    "B": {
+      "item": "pastel:bismuth_crystal"
+    },
+    "S": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "result": {
+    "id": "minecraft:heavy_core",
+    "count": 1
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

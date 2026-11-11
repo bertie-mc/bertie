@@ -4,14 +4,6 @@
     {
       "id": "pastel:bedrock_hoe",
       "required": false
-    },
-    {
-      "id": "pastel:malachite_workstaff",
-      "required": false
-    },
-    {
-      "id": "pastel:glass_crest_workstaff",
-      "required": false
     }
   ]
 }

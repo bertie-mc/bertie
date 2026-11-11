@@ -1,0 +1,13 @@
+{
+  "type": "pastel:liquid_crystal_converting",
+  "secret": true,
+  "ingredient": [
+    {
+      "tag": "minecraft:flowers"
+    }
+  ],
+  "result": {
+    "id": "pastel:resonant_lily",
+    "count": 1
+  }
+}

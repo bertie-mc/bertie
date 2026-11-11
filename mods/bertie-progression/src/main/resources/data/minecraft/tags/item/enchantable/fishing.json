@@ -1,0 +1,41 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "anvilcraft:multitool",
+      "required": false
+    },
+    {
+      "id": "aquaculture:iron_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:gold_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:diamond_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "aquaculture:neptunium_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "cognition:cognitive_rod",
+      "required": false
+    },
+    {
+      "id": "netherdepthsupgrade:lava_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:fishing_rod",
+      "required": false
+    }
+  ]
+}

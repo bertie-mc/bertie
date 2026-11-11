@@ -1,21 +1,36 @@
 {
   "neoforge:conditions": [
     {
-      "type": "neoforge:false"
+      "type": "neoforge:mod_loaded",
+      "modid": "xycraft_machines"
     },
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
   ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
+  "type": "xycraft_machines:extractor",
+  "adjacent": [
     {
-      "item": "minecraft:stone"
+      "fluid_type": "minecraft:water",
+      "predicate_type": "xycraft_core:fluid_type_rule"
     }
   ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  "output": {
+    "Count": 1,
+    "id": "pastel:moonstone_shard"
+  },
+  "target": {
+    "block": "pastel:budding_moonstone",
+    "predicate_type": "xycraft_core:block_rule"
+  },
+  "ticks": 1200,
+  "valid_directions": [
+    "down",
+    "up",
+    "north",
+    "south",
+    "west",
+    "east"
+  ]
 }

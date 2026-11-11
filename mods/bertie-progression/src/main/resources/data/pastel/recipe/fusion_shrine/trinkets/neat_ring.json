@@ -6,7 +6,7 @@
     "fluid": "pastel:liquid_crystal"
   },
   "ingredients": [
-    "pastel:fanciful_bismuth_ring",
+    "pastel:bismuth_crystal",
     {
       "item": "minecraft:gold_block",
       "count": 64
@@ -20,7 +20,6 @@
   "result": {
     "id": "pastel:neat_ring"
   },
-  "required_advancement": "pastel:unlocks/trinkets/neat_ring",
   "start_crafting_effect": "play_glass_breaking_sound",
   "during_crafting_effects": [
     "nothing",

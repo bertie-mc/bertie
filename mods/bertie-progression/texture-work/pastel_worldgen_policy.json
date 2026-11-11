@@ -5,6 +5,7 @@
     "colored_tree_patch",
     "dragon_fossil_overworld_exposed",
     "paltaeria_ore",
+    "shimmerstone_ore",
     "stratine_ore",
     "topaz_geode"
   ],
@@ -13,9 +14,13 @@
     "citrine_geode",
     "colored_tree_patch",
     "paltaeria_ore",
+    "shimmerstone_ore",
     "stratine_ore",
     "topaz_geode"
   ],
+  "fluid_replacements": {
+    "pastel:dragonrot": "minecraft:lava"
+  },
   "empty_input_recipes": [
     "data/pastel/recipe/blasting/ore/citrine_ores.json",
     "data/pastel/recipe/blasting/ore/topaz_ores.json",

@@ -29,20 +29,13 @@
 			y: 4.5d
 		}
 		{
-			icon: {
-				id: "pastel:enchanter"
-			}
 			id: "3C00000000000002"
 			rewards: [{
 				id: "3C00000002000002"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "3C00000001000002"
-				item: { count: 1, id: "pastel:enchanter" }
-				type: "item"
-			}]
+			tasks: [ ]
 			x: 3.0d
 			y: 4.5d
 		}

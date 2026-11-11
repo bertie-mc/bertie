@@ -1,35 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "CGC",
-    " S ",
-    " S "
-  ],
-  "key": {
-    "S": {
-      "item": "minecraft:smooth_basalt"
-    },
-    "C": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "G": {
-      "item": "minecraft:glowstone"
-    }
-  },
-  "result": {
-    "id": "pastel:lucky_pickaxe",
-    "components": {
-      "enchantments": {
-        "minecraft:fortune": 3
-      }
-    },
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

@@ -1,21 +1,54 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:liquid_crystal"
+  },
+  "ingredients": [
+    "pastel:sweet_pea",
     {
-      "type": "neoforge:false"
+      "item": "minecraft:poppy",
+      "count": 8
     },
+    {
+      "item": "minecraft:phantom_membrane",
+      "count": 8
+    },
+    {
+      "item": "pastel:milky_resin",
+      "count": 2
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 3
+    },
+    {
+      "item": "minecraft:purple_dye",
+      "count": 3
+    }
+  ],
+  "result": {
+    "id": "pastel:soothing_bouquet"
+  },
+  "world_conditions": {
+    "time_of_day": "midnight"
+  },
+  "start_crafting_effect": "single_visual_explosion_on_shrine",
+  "during_crafting_effects": [
+    "nothing",
+    "visual_explosions_on_shrine",
+    "nothing"
+  ],
+  "finish_crafting_effect": "nothing",
+  "description": {
+    "type": "translatable",
+    "translate": "pastel.recipe.fusion_shrine.explanation.soothing_bouquet"
+  },
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

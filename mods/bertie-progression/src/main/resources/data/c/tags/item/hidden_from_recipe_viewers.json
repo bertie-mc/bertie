@@ -1317,6 +1317,3614 @@
     {
       "id": "moonlight:placeable_item",
       "required": false
+    },
+    {
+      "id": "pastel:aether_graced_nectar_gloves",
+      "required": false
+    },
+    {
+      "id": "pastel:allay_head",
+      "required": false
+    },
+    {
+      "id": "pastel:aloe_leaf",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_chime",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_powder_block",
+      "required": false
+    },
+    {
+      "id": "pastel:andesite_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:aqua_regia",
+      "required": false
+    },
+    {
+      "id": "pastel:armadillo_head",
+      "required": false
+    },
+    {
+      "id": "pastel:artisans_atlas",
+      "required": false
+    },
+    {
+      "id": "pastel:artists_palette",
+      "required": false
+    },
+    {
+      "id": "pastel:ashen_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:astrologer_banner_pattern",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_cyan_head",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_gold_head",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_leucistic_head",
+      "required": false
+    },
+    {
+      "id": "pastel:axolotl_wild_head",
+      "required": false
+    },
+    {
+      "id": "pastel:azalea_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:azure_dike_belt",
+      "required": false
+    },
+    {
+      "id": "pastel:azure_dike_ring",
+      "required": false
+    },
+    {
+      "id": "pastel:azuresque_dike_core",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_block",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_glass_ampoule",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:bag_of_holding",
+      "required": false
+    },
+    {
+      "id": "pastel:bagnun",
+      "required": false
+    },
+    {
+      "id": "pastel:banyash",
+      "required": false
+    },
+    {
+      "id": "pastel:basalt_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:bat_head",
+      "required": false
+    },
+    {
+      "id": "pastel:bat_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_crossbow_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:bee_head",
+      "required": false
+    },
+    {
+      "id": "pastel:bee_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:berliner",
+      "required": false
+    },
+    {
+      "id": "pastel:bitter_oils",
+      "required": false
+    },
+    {
+      "id": "pastel:black_block",
+      "required": false
+    },
+    {
+      "id": "pastel:black_button",
+      "required": false
+    },
+    {
+      "id": "pastel:black_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:black_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:black_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:black_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:black_hole_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:black_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:black_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:black_log",
+      "required": false
+    },
+    {
+      "id": "pastel:black_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:black_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:black_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:black_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:black_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:black_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:black_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:black_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:blackslag_azurite_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:blackslag_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:blackslag_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:blackslag_shimmerstone_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:blackslag_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:blaze_head",
+      "required": false
+    },
+    {
+      "id": "pastel:blaze_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:blood_orchid",
+      "required": false
+    },
+    {
+      "id": "pastel:blood_orchid_petal",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodboil_syrup",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodstone_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodstone_glass_ampoule",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_block",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_button",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_log",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:blue_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:bodacious_berry_bar",
+      "required": false
+    },
+    {
+      "id": "pastel:bogged_head",
+      "required": false
+    },
+    {
+      "id": "pastel:bottomless_bundle",
+      "required": false
+    },
+    {
+      "id": "pastel:breeze_head",
+      "required": false
+    },
+    {
+      "id": "pastel:bristle_mead",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_block",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_button",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_log",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:brown_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:bucket_of_eraser",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_citrine",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_onyx",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_topaz",
+      "required": false
+    },
+    {
+      "id": "pastel:buffer_node",
+      "required": false
+    },
+    {
+      "id": "pastel:buffer_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:camel_head",
+      "required": false
+    },
+    {
+      "id": "pastel:cat_head",
+      "required": false
+    },
+    {
+      "id": "pastel:cat_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:cave_spider_head",
+      "required": false
+    },
+    {
+      "id": "pastel:celestial_pocketwatch",
+      "required": false
+    },
+    {
+      "id": "pastel:chauve_souris_au_vin",
+      "required": false
+    },
+    {
+      "id": "pastel:cheong",
+      "required": false
+    },
+    {
+      "id": "pastel:chicken_head",
+      "required": false
+    },
+    {
+      "id": "pastel:chicken_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:chrysocolla",
+      "required": false
+    },
+    {
+      "id": "pastel:cinderhearth",
+      "required": false
+    },
+    {
+      "id": "pastel:cinderhearth_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_basalt_light",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_block",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_calcite_light",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_chime",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_chiseled_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_chiseled_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_glass_pane",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_powder_block",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_pylon",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:clotted_cream",
+      "required": false
+    },
+    {
+      "id": "pastel:coal_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:color_picker",
+      "required": false
+    },
+    {
+      "id": "pastel:colorful_shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:concealing_oils",
+      "required": false
+    },
+    {
+      "id": "pastel:connection_node",
+      "required": false
+    },
+    {
+      "id": "pastel:connection_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:constructors_staff",
+      "required": false
+    },
+    {
+      "id": "pastel:cooked_lizard_meat",
+      "required": false
+    },
+    {
+      "id": "pastel:copper_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:cow_head",
+      "required": false
+    },
+    {
+      "id": "pastel:cow_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:crawfish",
+      "required": false
+    },
+    {
+      "id": "pastel:crawfish_cocktail",
+      "required": false
+    },
+    {
+      "id": "pastel:cream_pastry",
+      "required": false
+    },
+    {
+      "id": "pastel:creative_ink_assortment",
+      "required": false
+    },
+    {
+      "id": "pastel:creeper_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:crystal_apothecary",
+      "required": false
+    },
+    {
+      "id": "pastel:crystallarieum",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_block",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_button",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_log",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:cyan_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:deep_light_banner_pattern",
+      "required": false
+    },
+    {
+      "id": "pastel:deepslate_azurite_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:deepslate_citrine_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:deepslate_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:deepslate_shimmerstone_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:deepslate_topaz_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:demon_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:demon_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:diamond_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:diorite_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:divination_heart",
+      "required": false
+    },
+    {
+      "id": "pastel:dolphin_head",
+      "required": false
+    },
+    {
+      "id": "pastel:donkey_head",
+      "required": false
+    },
+    {
+      "id": "pastel:downstone_fragments",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonbone_broth",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonrending_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:dreamflayer",
+      "required": false
+    },
+    {
+      "id": "pastel:drowned_head",
+      "required": false
+    },
+    {
+      "id": "pastel:echo_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:egg_laying_wooly_pig_head",
+      "required": false
+    },
+    {
+      "id": "pastel:egg_laying_wooly_pig_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "pastel:elder_guardian_head",
+      "required": false
+    },
+    {
+      "id": "pastel:emerald_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_golden_carrot",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanted_star_candy",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanter",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanter_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:enchantment_canvas",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_dragon_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_hopper",
+      "required": false
+    },
+    {
+      "id": "pastel:enderman_head",
+      "required": false
+    },
+    {
+      "id": "pastel:enderman_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:endermite_head",
+      "required": false
+    },
+    {
+      "id": "pastel:endermite_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:eraser_head",
+      "required": false
+    },
+    {
+      "id": "pastel:evernectar",
+      "required": false
+    },
+    {
+      "id": "pastel:everpromise_ribbon",
+      "required": false
+    },
+    {
+      "id": "pastel:evoker_head",
+      "required": false
+    },
+    {
+      "id": "pastel:evoker_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:exchanging_staff",
+      "required": false
+    },
+    {
+      "id": "pastel:extended_bundle",
+      "required": false
+    },
+    {
+      "id": "pastel:fabrication_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:faded_koi",
+      "required": false
+    },
+    {
+      "id": "pastel:fanciful_bismuth_ring",
+      "required": false
+    },
+    {
+      "id": "pastel:ferocious_chestplate",
+      "required": false
+    },
+    {
+      "id": "pastel:fetchling_helmet",
+      "required": false
+    },
+    {
+      "id": "pastel:fiery_shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:fish_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:fishcake",
+      "required": false
+    },
+    {
+      "id": "pastel:fissure_plum",
+      "required": false
+    },
+    {
+      "id": "pastel:fluix_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:four_leaf_clover",
+      "required": false
+    },
+    {
+      "id": "pastel:fox_arctic_head",
+      "required": false
+    },
+    {
+      "id": "pastel:fox_head",
+      "required": false
+    },
+    {
+      "id": "pastel:fox_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:freigeist",
+      "required": false
+    },
+    {
+      "id": "pastel:fresh_chocolate",
+      "required": false
+    },
+    {
+      "id": "pastel:frog_cold_head",
+      "required": false
+    },
+    {
+      "id": "pastel:frog_temperate_head",
+      "required": false
+    },
+    {
+      "id": "pastel:frog_warm_head",
+      "required": false
+    },
+    {
+      "id": "pastel:fusion_shrine_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:fusion_shrine_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:gather_node",
+      "required": false
+    },
+    {
+      "id": "pastel:gather_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:gemstone_shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:germinated_jade_vine_bulb",
+      "required": false
+    },
+    {
+      "id": "pastel:ghast_head",
+      "required": false
+    },
+    {
+      "id": "pastel:ghast_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow_citrine",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow_citrine_oversized",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow_topaz",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_crossbow_topaz_oversized",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_crest_workstaff",
+      "required": false
+    },
+    {
+      "id": "pastel:glass_peach",
+      "required": false
+    },
+    {
+      "id": "pastel:gleaming_pin",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_jelly_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_melon",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_melon_seeds",
+      "required": false
+    },
+    {
+      "id": "pastel:glistering_shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:gloves_of_dawns_grasp",
+      "required": false
+    },
+    {
+      "id": "pastel:glow_squid_head",
+      "required": false
+    },
+    {
+      "id": "pastel:glow_squid_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:glow_vision_goggles",
+      "required": false
+    },
+    {
+      "id": "pastel:glowstone_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:goat_head",
+      "required": false
+    },
+    {
+      "id": "pastel:goat_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:gold_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:golden_bristle_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:granite_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_block",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_button",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_log",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:gray_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:greater_potion_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:green_block",
+      "required": false
+    },
+    {
+      "id": "pastel:green_button",
+      "required": false
+    },
+    {
+      "id": "pastel:green_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:green_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:green_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:green_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:green_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:green_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:green_log",
+      "required": false
+    },
+    {
+      "id": "pastel:green_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:green_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:green_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:green_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:green_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:green_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:green_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:green_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:guardian_head",
+      "required": false
+    },
+    {
+      "id": "pastel:guardian_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:guidebook",
+      "required": false
+    },
+    {
+      "id": "pastel:hare_roast",
+      "required": false
+    },
+    {
+      "id": "pastel:heartsingers_reward",
+      "required": false
+    },
+    {
+      "id": "pastel:hibernating_jade_vine_bulb",
+      "required": false
+    },
+    {
+      "id": "pastel:hoglin_head",
+      "required": false
+    },
+    {
+      "id": "pastel:honey_pastry",
+      "required": false
+    },
+    {
+      "id": "pastel:horse_head",
+      "required": false
+    },
+    {
+      "id": "pastel:horse_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:hot_chocolate",
+      "required": false
+    },
+    {
+      "id": "pastel:humus_bucket",
+      "required": false
+    },
+    {
+      "id": "pastel:husk_head",
+      "required": false
+    },
+    {
+      "id": "pastel:illusioner_head",
+      "required": false
+    },
+    {
+      "id": "pastel:illusioner_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:incandescent_amalgam",
+      "required": false
+    },
+    {
+      "id": "pastel:infused_beverage",
+      "required": false
+    },
+    {
+      "id": "pastel:ink_assortment",
+      "required": false
+    },
+    {
+      "id": "pastel:ink_flask",
+      "required": false
+    },
+    {
+      "id": "pastel:iron_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:iron_golem_head",
+      "required": false
+    },
+    {
+      "id": "pastel:item_bowl_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:item_bowl_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:item_bowl_enlightenment",
+      "required": false
+    },
+    {
+      "id": "pastel:item_roundel",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_jelly",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_vine_petal_block",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_vine_petal_carpet",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_vine_petals",
+      "required": false
+    },
+    {
+      "id": "pastel:jade_wine",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:jaramel_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:junket",
+      "required": false
+    },
+    {
+      "id": "pastel:karak_chai",
+      "required": false
+    },
+    {
+      "id": "pastel:kindling_head",
+      "required": false
+    },
+    {
+      "id": "pastel:kindling_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "pastel:koi",
+      "required": false
+    },
+    {
+      "id": "pastel:lagoon_rod",
+      "required": false
+    },
+    {
+      "id": "pastel:lapis_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:large_azurite_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_bloodstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_citrine_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_coal_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_copper_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_diamond_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_echo_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_emerald_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_fluix_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_glowstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_gold_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_iron_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_lapis_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_netherite_scrap_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_prismarine_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_quartz_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_redstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_topaz_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:large_zinc_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:laurels_of_serenity",
+      "required": false
+    },
+    {
+      "id": "pastel:le_fishe_au_chocolat",
+      "required": false
+    },
+    {
+      "id": "pastel:lesser_potion_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_block",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_button",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_log",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:light_blue_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_block",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_button",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_log",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:light_gray_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_block",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_button",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_log",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:lime_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_black_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_brown_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_cyan_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_gray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_green_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_light_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_light_gray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_lime_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_magenta_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_meat",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_orange_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_pink_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_purple_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_red_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_white_head",
+      "required": false
+    },
+    {
+      "id": "pastel:lizard_yellow_head",
+      "required": false
+    },
+    {
+      "id": "pastel:llama_head",
+      "required": false
+    },
+    {
+      "id": "pastel:logo_banner_pattern",
+      "required": false
+    },
+    {
+      "id": "pastel:lucky_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:lucky_roll",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_block",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_button",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_log",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:magenta_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:magma_cube_head",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow_citrine",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow_citrine_oversized",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow_topaz",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_crossbow_topaz_oversized",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_glass_ampoule",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_workstaff",
+      "required": false
+    },
+    {
+      "id": "pastel:meatloaf",
+      "required": false
+    },
+    {
+      "id": "pastel:meatloaf_sandwich",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_citrine_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_moonstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:medium_topaz_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:mellow_shallot_soup",
+      "required": false
+    },
+    {
+      "id": "pastel:mermaids_jam",
+      "required": false
+    },
+    {
+      "id": "pastel:mermaids_popcorn",
+      "required": false
+    },
+    {
+      "id": "pastel:midnight_chip",
+      "required": false
+    },
+    {
+      "id": "pastel:molten_rod",
+      "required": false
+    },
+    {
+      "id": "pastel:monster_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_chime",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_powder_block",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstruck_nectar",
+      "required": false
+    },
+    {
+      "id": "pastel:mooshroom_brown_head",
+      "required": false
+    },
+    {
+      "id": "pastel:mooshroom_red_head",
+      "required": false
+    },
+    {
+      "id": "pastel:morchella",
+      "required": false
+    },
+    {
+      "id": "pastel:mule_head",
+      "required": false
+    },
+    {
+      "id": "pastel:multitool",
+      "required": false
+    },
+    {
+      "id": "pastel:music_disc_discovery",
+      "required": false
+    },
+    {
+      "id": "pastel:music_disc_divinity",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_apple_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_cookie",
+      "required": false
+    },
+    {
+      "id": "pastel:myceylon_pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:mysterious_compass",
+      "required": false
+    },
+    {
+      "id": "pastel:mysterious_locket",
+      "required": false
+    },
+    {
+      "id": "pastel:natures_staff",
+      "required": false
+    },
+    {
+      "id": "pastel:nectardew_burgeon",
+      "required": false
+    },
+    {
+      "id": "pastel:nectered_viognier",
+      "required": false
+    },
+    {
+      "id": "pastel:netherite_scrap_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:night_salts",
+      "required": false
+    },
+    {
+      "id": "pastel:nightdew_sprout",
+      "required": false
+    },
+    {
+      "id": "pastel:nightfalls_blade",
+      "required": false
+    },
+    {
+      "id": "pastel:oblivion_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:ocelot_head",
+      "required": false
+    },
+    {
+      "id": "pastel:ocelot_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:ominous_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:omni_accelerator",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_chime",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_powder_block",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_block",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_button",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_log",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:orange_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:oread_boots",
+      "required": false
+    },
+    {
+      "id": "pastel:paintbrush",
+      "required": false
+    },
+    {
+      "id": "pastel:paintbrush_oversized",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_floatblock",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_fragments",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:panda_head",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_cyan_head",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_gray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_green_head",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:parrot_red_head",
+      "required": false
+    },
+    {
+      "id": "pastel:peach_cream",
+      "required": false
+    },
+    {
+      "id": "pastel:peach_jam",
+      "required": false
+    },
+    {
+      "id": "pastel:peaches_flambe",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_all_basic",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_basic_amethyst",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_basic_citrine",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_basic_topaz",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_moonstone",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_onyx",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_tier_1_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_tier_2_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:pedestal_tier_3_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:phantom_head",
+      "required": false
+    },
+    {
+      "id": "pastel:phantom_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:pig_head",
+      "required": false
+    },
+    {
+      "id": "pastel:pig_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:piglin_brute_head",
+      "required": false
+    },
+    {
+      "id": "pastel:piglin_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:pigment_palette",
+      "required": false
+    },
+    {
+      "id": "pastel:pillager_head",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_button",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_log",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:pink_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:pipe_bomb",
+      "required": false
+    },
+    {
+      "id": "pastel:poisonbloom_banner_pattern",
+      "required": false
+    },
+    {
+      "id": "pastel:poisoners_handbook",
+      "required": false
+    },
+    {
+      "id": "pastel:polar_bear_head",
+      "required": false
+    },
+    {
+      "id": "pastel:polar_bear_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_citrine_block",
+      "required": false
+    },
+    {
+      "id": "pastel:polished_topaz_block",
+      "required": false
+    },
+    {
+      "id": "pastel:potion_workshop",
+      "required": false
+    },
+    {
+      "id": "pastel:present",
+      "required": false
+    },
+    {
+      "id": "pastel:preservation_turret_head",
+      "required": false
+    },
+    {
+      "id": "pastel:prickly_bayleaf",
+      "required": false
+    },
+    {
+      "id": "pastel:prismarine_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:pristine_shooting_star",
+      "required": false
+    },
+    {
+      "id": "pastel:provider_node",
+      "required": false
+    },
+    {
+      "id": "pastel:provider_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:puff_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:puff_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:pufferfish_head",
+      "required": false
+    },
+    {
+      "id": "pastel:pufferfish_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_alcohol",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_azurite",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_bloodstone",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_coal",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_coal_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_copper",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_copper_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_diamond",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_diamond_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_echo",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_echo_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_emerald",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_emerald_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_glowstone",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_glowstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_gold",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_gold_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_iron",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_iron_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_lapis",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_lapis_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_netherite_scrap",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_netherite_scrap_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_prismarine",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_prismarine_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_quartz",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_quartz_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_redstone",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_redstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_zinc",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_zinc_block",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_block",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_button",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_log",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:purple_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:quartz_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:quitoxic_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:rabbit_cream_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:rabbit_head",
+      "required": false
+    },
+    {
+      "id": "pastel:rabbit_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:radiance_pin",
+      "required": false
+    },
+    {
+      "id": "pastel:radiance_staff",
+      "required": false
+    },
+    {
+      "id": "pastel:radiating_ender",
+      "required": false
+    },
+    {
+      "id": "pastel:ravager_head",
+      "required": false
+    },
+    {
+      "id": "pastel:raw_azurite",
+      "required": false
+    },
+    {
+      "id": "pastel:raw_bloodstone",
+      "required": false
+    },
+    {
+      "id": "pastel:razor_falchion",
+      "required": false
+    },
+    {
+      "id": "pastel:red_block",
+      "required": false
+    },
+    {
+      "id": "pastel:red_button",
+      "required": false
+    },
+    {
+      "id": "pastel:red_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:red_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:red_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:red_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:red_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:red_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:red_log",
+      "required": false
+    },
+    {
+      "id": "pastel:red_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:red_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:red_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:red_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:red_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:red_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:red_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:red_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:redstone_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:redstone_sand",
+      "required": false
+    },
+    {
+      "id": "pastel:reprise",
+      "required": false
+    },
+    {
+      "id": "pastel:resonance_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:resonant_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_bed",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_block",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_carpet",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_cushion",
+      "required": false
+    },
+    {
+      "id": "pastel:resplendent_feather",
+      "required": false
+    },
+    {
+      "id": "pastel:restoration_tea",
+      "required": false
+    },
+    {
+      "id": "pastel:ring_of_aerial_grace",
+      "required": false
+    },
+    {
+      "id": "pastel:ring_of_denser_steps",
+      "required": false
+    },
+    {
+      "id": "pastel:ring_of_pursuit",
+      "required": false
+    },
+    {
+      "id": "pastel:sacred_soil",
+      "required": false
+    },
+    {
+      "id": "pastel:salmon_head",
+      "required": false
+    },
+    {
+      "id": "pastel:salted_jaramel_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:salted_jaramel_trifle",
+      "required": false
+    },
+    {
+      "id": "pastel:sawblade_holly_berry",
+      "required": false
+    },
+    {
+      "id": "pastel:scone",
+      "required": false
+    },
+    {
+      "id": "pastel:sedatives",
+      "required": false
+    },
+    {
+      "id": "pastel:sender_node",
+      "required": false
+    },
+    {
+      "id": "pastel:sender_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:sheep_head",
+      "required": false
+    },
+    {
+      "id": "pastel:sheep_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:shieldgrasp_amulet",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_black_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_brown_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_cyan_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_gray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_green_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_light_blue_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_light_gray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_lime_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_magenta_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_orange_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_pink_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_purple_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_red_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_white_head",
+      "required": false
+    },
+    {
+      "id": "pastel:shulker_yellow_head",
+      "required": false
+    },
+    {
+      "id": "pastel:silverfish_head",
+      "required": false
+    },
+    {
+      "id": "pastel:silverfish_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:skeleton_horse_head",
+      "required": false
+    },
+    {
+      "id": "pastel:skeleton_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:slime_head",
+      "required": false
+    },
+    {
+      "id": "pastel:slime_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:slushslide",
+      "required": false
+    },
+    {
+      "id": "pastel:small_azurite_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_bloodstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_citrine_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_coal_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_copper_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_diamond_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_echo_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_emerald_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_fluix_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_glowstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_gold_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_iron_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_lapis_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_netherite_scrap_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_prismarine_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_quartz_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_redstone_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_topaz_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:small_zinc_bud",
+      "required": false
+    },
+    {
+      "id": "pastel:sniffer_head",
+      "required": false
+    },
+    {
+      "id": "pastel:snow_golem_head",
+      "required": false
+    },
+    {
+      "id": "pastel:snow_golem_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:spectral_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:spider_head",
+      "required": false
+    },
+    {
+      "id": "pastel:spider_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_instiller",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_instiller_structure_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_heart",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_log",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_sallow_roots",
+      "required": false
+    },
+    {
+      "id": "pastel:squid_head",
+      "required": false
+    },
+    {
+      "id": "pastel:squid_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:staff_of_remembrance",
+      "required": false
+    },
+    {
+      "id": "pastel:star_candy",
+      "required": false
+    },
+    {
+      "id": "pastel:star_fragment",
+      "required": false
+    },
+    {
+      "id": "pastel:stone_shimmerstone_light",
+      "required": false
+    },
+    {
+      "id": "pastel:storage_node",
+      "required": false
+    },
+    {
+      "id": "pastel:storage_node_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_floatblock",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_fragments",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_gem",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:stray_head",
+      "required": false
+    },
+    {
+      "id": "pastel:stray_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:strider_head",
+      "required": false
+    },
+    {
+      "id": "pastel:strider_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_black_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_black_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_blue_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_blue_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_brown_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_brown_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_cyan_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_cyan_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_gray_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_gray_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_green_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_green_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_light_blue_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_light_blue_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_light_gray_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_light_gray_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_lime_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_lime_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_magenta_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_magenta_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_orange_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_orange_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_pink_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_pink_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_purple_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_purple_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_red_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_red_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_white_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_white_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_yellow_log",
+      "required": false
+    },
+    {
+      "id": "pastel:stripped_yellow_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:surstromming",
+      "required": false
+    },
+    {
+      "id": "pastel:suspicious_brew",
+      "required": false
+    },
+    {
+      "id": "pastel:sylph_leggings",
+      "required": false
+    },
+    {
+      "id": "pastel:tadpole_head",
+      "required": false
+    },
+    {
+      "id": "pastel:tender_pickaxe",
+      "required": false
+    },
+    {
+      "id": "pastel:titration_barrel",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_basalt_light",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_block",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_calcite_light",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_chime",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_chiseled_basalt",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_chiseled_calcite",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_glass_arrow",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_glass_pane",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_ore",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_powder",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_powder_block",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_pylon",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_shard",
+      "required": false
+    },
+    {
+      "id": "pastel:totem_pendant",
+      "required": false
+    },
+    {
+      "id": "pastel:triple_meat_pot_pie",
+      "required": false
+    },
+    {
+      "id": "pastel:triple_meat_pot_stew",
+      "required": false
+    },
+    {
+      "id": "pastel:tropical_fish_head",
+      "required": false
+    },
+    {
+      "id": "pastel:tuning_stamp",
+      "required": false
+    },
+    {
+      "id": "pastel:turtle_head",
+      "required": false
+    },
+    {
+      "id": "pastel:turtle_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:upgrade_efficiency",
+      "required": false
+    },
+    {
+      "id": "pastel:upgrade_efficiency2",
+      "required": false
+    },
+    {
+      "id": "pastel:upgrade_experience",
+      "required": false
+    },
+    {
+      "id": "pastel:upgrade_experience2",
+      "required": false
+    },
+    {
+      "id": "pastel:velvet_astrologer_banner_pattern",
+      "required": false
+    },
+    {
+      "id": "pastel:vex_head",
+      "required": false
+    },
+    {
+      "id": "pastel:villager_head",
+      "required": false
+    },
+    {
+      "id": "pastel:vindicator_head",
+      "required": false
+    },
+    {
+      "id": "pastel:wandering_trader_head",
+      "required": false
+    },
+    {
+      "id": "pastel:warden_head",
+      "required": false
+    },
+    {
+      "id": "pastel:weeping_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:whispy_circlet",
+      "required": false
+    },
+    {
+      "id": "pastel:whispy_tart",
+      "required": false
+    },
+    {
+      "id": "pastel:white_block",
+      "required": false
+    },
+    {
+      "id": "pastel:white_button",
+      "required": false
+    },
+    {
+      "id": "pastel:white_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:white_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:white_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:white_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:white_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:white_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:white_log",
+      "required": false
+    },
+    {
+      "id": "pastel:white_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:white_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:white_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:white_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:white_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:white_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:white_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:white_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:witch_head",
+      "required": false
+    },
+    {
+      "id": "pastel:witch_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:wither_head",
+      "required": false
+    },
+    {
+      "id": "pastel:wither_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:wither_skeleton_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:wolf_head",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_block",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_button",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_chiseled_preservation_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_fence",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_fence_gate",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_glowblock",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_lamp",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_leaves",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_log",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_pigment",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_planks",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_slab",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_spore_blossom",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:yellow_wood",
+      "required": false
+    },
+    {
+      "id": "pastel:zinc_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:zoglin_head",
+      "required": false
+    },
+    {
+      "id": "pastel:zombie_horse_head",
+      "required": false
+    },
+    {
+      "id": "pastel:zombie_idol",
+      "required": false
+    },
+    {
+      "id": "pastel:zombie_villager_head",
+      "required": false
+    },
+    {
+      "id": "pastel:zombified_piglin_head",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonrot_bucket",
+      "required": false
+    },
+    {
+      "id": "pastel:pure_malachite",
+      "required": false
     }
   ]
 }

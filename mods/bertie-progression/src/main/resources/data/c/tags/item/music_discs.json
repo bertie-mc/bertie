@@ -1,0 +1,193 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "betterarcheology:music_disc_swings",
+      "required": false
+    },
+    {
+      "id": "betterend:music_disc_endseeker",
+      "required": false
+    },
+    {
+      "id": "betterend:music_disc_eo_dracona",
+      "required": false
+    },
+    {
+      "id": "betterend:music_disc_grasping_at_stars",
+      "required": false
+    },
+    {
+      "id": "betterend:music_disc_strange_and_alien",
+      "required": false
+    },
+    {
+      "id": "etched:etched_music_disc",
+      "required": false
+    },
+    {
+      "id": "pastel:music_disc_credits",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_endermosh",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_drips",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_ocean",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_rain",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_wind",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_fire",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_clock",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_crickets",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_chatter",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_radiance",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_steps",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_superstitious",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_home",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_wayfarer",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_findings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_maker",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_thread",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_motion",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_tears",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_lava_chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_bounce",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_13",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_cat",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_blocks",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_chirp",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_far",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_mall",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_mellohi",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_stal",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_strad",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_ward",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_11",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_wait",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_otherside",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_5",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_pigstep",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_relic",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_creator",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_creator_music_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_precipice",
+      "required": false
+    }
+  ]
+}

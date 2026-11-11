@@ -15,7 +15,6 @@
   "result": {
     "id": "pastel:midnight_aberration"
   },
-  "required_advancement": "pastel:unlocks/blocks/midnight_aberration",
   "world_conditions": {
     "time_of_day": "day",
     "weather": "clear_sky"

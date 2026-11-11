@@ -23,7 +23,6 @@
   "result": {
     "id": "pastel:cotton_cloud_boots"
   },
-  "required_advancement": "pastel:unlocks/trinkets/cotton_cloud_boots",
   "start_crafting_effect": "nothing",
   "during_crafting_effects": [],
   "finish_crafting_effect": "single_visual_explosion_on_shrine",

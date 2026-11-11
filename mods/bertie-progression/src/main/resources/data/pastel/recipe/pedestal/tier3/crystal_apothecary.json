@@ -1,30 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    " L ",
-    "LBL",
-    "BCB"
-  ],
-  "key": {
-    "L": {
-      "item": "pastel:storm_stone"
-    },
-    "C": {
-      "item": "pastel:polished_calcite"
-    },
-    "B": {
-      "item": "pastel:polished_basalt"
-    }
-  },
-  "result": {
-    "id": "pastel:crystal_apothecary",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

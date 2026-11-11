@@ -1,21 +1,42 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:liquid_crystal"
+  },
+  "copy_components": true,
+  "ingredients": [
+    "pastel:malachite_crossbow",
+    "pastel:moonstone_core",
     {
-      "type": "neoforge:false"
+      "item": "minecraft:redstone",
+      "count": 8
     },
+    {
+      "item": "minecraft:echo_shard",
+      "count": 4
+    },
+    {
+      "item": "minecraft:white_dye",
+      "count": 16
+    }
+  ],
+  "result": {
+    "id": "pastel:glass_crest_crossbow",
+    "components": {
+      "enchantments": {
+        "minecraft:piercing": 5
+      }
+    }
+  },
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine",
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

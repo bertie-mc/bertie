@@ -180,10 +180,7 @@
       "id": "malum:malignant_stronghold_helmet",
       "required": false
     },
-    {
-      "id": "#mythsandlegends:head_armor",
-      "required": false
-    },
+    "#mythsandlegends:head_armor",
     {
       "id": "oritech:exo_helmet",
       "required": false

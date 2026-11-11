@@ -5316,19 +5316,6 @@
 		}
 		{
 			icon: {
-				id: "pastel:totem_pendant"
-			}
-			id: "4C000000000001A4"
-			tasks: [{
-				id: "4C000000010001A4"
-				item: { count: 1, id: "pastel:totem_pendant" }
-				type: "item"
-			}]
-			x: 55.0d
-			y: 4.0d
-		}
-		{
-			icon: {
 				id: "malstone:falling_well"
 			}
 			id: "4C000000000001A5"
@@ -8536,32 +8523,6 @@
 				type: "item"
 			}]
 			x: 41.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "pastel:gleaming_pin"
-			}
-			id: "4C000000000002A9"
-			tasks: [{
-				id: "4C000000010002A9"
-				item: { count: 1, id: "pastel:gleaming_pin" }
-				type: "item"
-			}]
-			x: 45.0d
-			y: 25.0d
-		}
-		{
-			icon: {
-				id: "pastel:radiance_pin"
-			}
-			id: "4C000000000002AA"
-			tasks: [{
-				id: "4C000000010002AA"
-				item: { count: 1, id: "pastel:radiance_pin" }
-				type: "item"
-			}]
-			x: 46.0d
 			y: 25.0d
 		}
 		{

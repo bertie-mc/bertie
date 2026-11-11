@@ -1,0 +1,33 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "pastel:clover",
+      "required": false
+    },
+    {
+      "id": "pastel:quitoxic_reeds",
+      "required": false
+    },
+    {
+      "id": "pastel:amaranth_grains",
+      "required": false
+    },
+    {
+      "id": "pastel:amaranth_bushel",
+      "required": false
+    },
+    {
+      "id": "pastel:nephrite_blossom_bulb",
+      "required": false
+    },
+    {
+      "id": "pastel:jadeite_lotus_bulb",
+      "required": false
+    },
+    {
+      "id": "pastel:doombloom_seed",
+      "required": false
+    }
+  ]
+}

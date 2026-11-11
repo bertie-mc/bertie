@@ -1,21 +1,45 @@
 {
-  "neoforge:conditions": [
+  "type": "pastel:fusion_shrine",
+  "time": 1200,
+  "experience": 16.0,
+  "fluid": {
+    "fluid": "pastel:liquid_crystal"
+  },
+  "copy_components": true,
+  "ingredients": [
+    "minecraft:crossbow",
     {
-      "type": "neoforge:false"
+      "item": "pastel:raw_malachite",
+      "count": 8
     },
+    {
+      "item": "minecraft:quartz",
+      "count": 8
+    },
+    {
+      "item": "minecraft:end_stone",
+      "count": 4
+    },
+    {
+      "item": "pastel:moonstone_shard",
+      "count": 8
+    }
+  ],
+  "result": {
+    "id": "pastel:malachite_crossbow",
+    "components": {
+      "enchantments": {
+        "minecraft:piercing": 5
+      }
+    }
+  },
+  "start_crafting_effect": "nothing",
+  "during_crafting_effects": [],
+  "finish_crafting_effect": "single_visual_explosion_on_shrine",
+  "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
       "modid": "pastel"
     }
-  ],
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
-  "result": {
-    "id": "minecraft:stone",
-    "count": 1
-  }
+  ]
 }

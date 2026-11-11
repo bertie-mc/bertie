@@ -1,27 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "S S",
-    "XSX",
-    "XXX"
-  ],
-  "key": {
-    "X": {
-      "item": "pastel:polished_calcite"
-    },
-    "S": {
-      "item": "minecraft:glowstone"
-    }
-  },
-  "result": {
-    "id": "pastel:item_bowl_calcite",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

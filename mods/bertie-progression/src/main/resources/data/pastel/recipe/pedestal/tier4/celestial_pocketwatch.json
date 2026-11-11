@@ -1,30 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "PAP",
-    "ACA",
-    "PAP"
-  ],
-  "key": {
-    "A": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "C": {
-      "item": "pastel:paltaeria_gem"
-    },
-    "P": {
-      "item": "minecraft:magenta_dye"
-    }
-  },
-  "result": {
-    "id": "pastel:celestial_pocketwatch",
-    "count": 1
-  },
   "neoforge:conditions": [
     {
-      "type": "neoforge:mod_loaded",
-      "modid": "pastel"
+      "type": "neoforge:false"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
 }

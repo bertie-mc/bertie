@@ -10,19 +10,7 @@
       "required": false
     },
     {
-      "id": "pastel:radiance_pin",
-      "required": false
-    },
-    {
-      "id": "pastel:totem_pendant",
-      "required": false
-    },
-    {
       "id": "pastel:take_off_belt",
-      "required": false
-    },
-    {
-      "id": "pastel:gleaming_pin",
       "required": false
     },
     "#pastel:potion_pendants",

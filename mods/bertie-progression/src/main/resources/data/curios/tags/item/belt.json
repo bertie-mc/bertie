@@ -1,6 +1,75 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
+    "#artifacts:slot/belt",
+    {
+      "id": "magitech:tool_belt",
+      "required": false
+    },
+    {
+      "id": "malstone:breaking_the_weapon",
+      "required": false
+    },
+    {
+      "id": "malstone:condenser",
+      "required": false
+    },
+    {
+      "id": "malstone:die_abyss",
+      "required": false
+    },
+    {
+      "id": "malstone:chess_fell",
+      "required": false
+    },
+    {
+      "id": "malum:gilded_belt",
+      "required": false
+    },
+    {
+      "id": "malum:belt_of_the_starved",
+      "required": false
+    },
+    {
+      "id": "malum:belt_of_the_prospector",
+      "required": false
+    },
+    {
+      "id": "malum:belt_of_the_magebane",
+      "required": false
+    },
+    {
+      "id": "malum:belt_of_the_limitless",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:fire_heart",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:fractured_nullstone",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:experience_magnet",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:broken_magnet",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:super_magnet",
+      "required": false
+    },
+    {
+      "id": "nameless_trinkets:what_magnet",
+      "required": false
+    },
+    {
+      "id": "pastel:take_off_belt",
+      "required": false
+    },
     {
       "id": "terra_curio:black_belt",
       "required": false

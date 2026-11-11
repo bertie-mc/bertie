@@ -4,6 +4,10 @@
     {
       "id": "minecraft:amethyst_cluster",
       "required": false
+    },
+    {
+      "id": "pastel:moonstone_cluster",
+      "required": false
     }
   ]
 }
