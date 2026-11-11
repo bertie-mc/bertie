@@ -56,12 +56,32 @@ class ResourceDataTest {
         assertTrue(data("data/pastel/recipe/enchanter/vanilla_books/fortune.json")
                 .toString()
                 .contains("neoforge:false"));
-        assertTrue(data("data/pastel/recipe/fusion_shrine/netherite_ingot.json")
+        assertTrue(data("data/pastel/recipe/fusion_shrine/vanilla/netherite_ingot.json")
                 .toString()
                 .contains("neoforge:false"));
         assertTrue(!data("data/pastel/recipe/fusion_shrine/bedrock/helmet.json")
                 .toString()
                 .contains("neoforge:false"));
+    }
+
+    @Test
+    void customNetheriteAndNameTagRecipesRemainAvailable() throws IOException {
+        JsonObject recipe = data("data/pastel/recipe/fusion_shrine/netherite_ingot.json");
+        assertEquals("pastel:fusion_shrine", recipe.get("type").getAsString());
+        assertEquals(400, recipe.get("time").getAsInt());
+        assertEquals(
+                "slag:molten_gold", recipe.getAsJsonObject("fluid").get("fluid").getAsString());
+        assertEquals(
+                "minecraft:netherite_ingot",
+                recipe.getAsJsonObject("result").get("id").getAsString());
+        assertTrue(recipe.toString().contains("hazennstuff:rose_gold_ingot"));
+        assertTrue(recipe.toString().contains("pastel:neolith"));
+        assertTrue(!recipe.toString().contains("neoforge:false"));
+        JsonObject nameTag = data("data/pastel/recipe/pedestal/tier2/vanilla/name_tag.json");
+        assertEquals(
+                "minecraft:name_tag",
+                nameTag.getAsJsonObject("result").get("id").getAsString());
+        assertTrue(!nameTag.toString().contains("neoforge:false"));
     }
 
     @Test

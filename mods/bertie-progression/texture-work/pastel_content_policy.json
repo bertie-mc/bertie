@@ -21,6 +21,9 @@
     "pastel:small_malachite_bud",
     "pastel:small_moonstone_bud"
   ],
+  "restore_recipe_paths": [
+    "data/pastel/recipe/pedestal/tier2/vanilla/name_tag.json"
+  ],
   "item_merges": {
     "pastel:pure_malachite": "pastel:raw_malachite"
   },

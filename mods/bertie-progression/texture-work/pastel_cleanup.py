@@ -62,14 +62,14 @@ CRAFTING_OUTPUTS = {
 REMOVED_PIGMENTS = {"pastel:pink_pigment", "pastel:orange_pigment"}
 
 
-def replace_inputs(value):
+def replace_inputs(value, replacements=REPLACEMENTS):
     if isinstance(value, str):
-        return REPLACEMENTS.get(value, value)
+        return replacements.get(value, value)
     if isinstance(value, list):
-        return [replace_inputs(child) for child in value]
+        return [replace_inputs(child, replacements) for child in value]
     if isinstance(value, dict):
         return {key: copy.deepcopy(child) if key in {"result", "results", "output", "outputs"}
-                else replace_inputs(child) for key, child in value.items()}
+                else replace_inputs(child, replacements) for key, child in value.items()}
     return value
 
 
@@ -174,7 +174,9 @@ def apply_policy(write, recipes, resource_dir, written, removed, disabled):
             source["ingredients"] = [value for value in source["ingredients"]
                                      if not isinstance(value, str)
                                      or value not in {"pastel:topaz_shard", "pastel:citrine_shard"}]
-        fixed = replace_inputs(source)
+        replacements = {before: after for before, after in REPLACEMENTS.items()
+                        if before in removed or before in {"#pastel:pigments", "pastel:pigments"}}
+        fixed = replace_inputs(source, replacements)
         if output == "pastel:draconic_twinsword":
             for ingredient in fixed.get("ingredients", []):
                 if isinstance(ingredient, dict) and ingredient.get("item") == "minecraft:enchanted_book":

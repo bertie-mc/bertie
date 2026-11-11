@@ -25,6 +25,12 @@ WITHDRAWN_TYPES = (
     "pastel:spirit_instiller", "pastel:natures_staff", "pastel:heating", "pastel:freezing",
     "pastel:ink_converting", "pastel:humus_converting", "pastel:dragonrot_converting",
 )
+RETIRED_NATIVE_RECIPES = {
+    "data/pastel/recipe/fusion_shrine/vanilla/diamond_horse_armor.json",
+    "data/pastel/recipe/fusion_shrine/vanilla/golden_horse_armor.json",
+    "data/pastel/recipe/fusion_shrine/vanilla/netherite_ingot.json",
+    "data/pastel/recipe/fusion_shrine/vanilla/pure_netherite_ingot.json",
+}
 
 
 def strings(value):
@@ -42,11 +48,10 @@ def disabled(value):
     return {"type": "neoforge:false"} in value.get("neoforge:conditions", [])
 
 
-def withdrawn_recipe(value, removed, retired_fluids=()):
+def withdrawn_recipe(value, removed, retired_fluids=(), recipe_path=None):
     outputs = item_outputs(value, set())
-    retired_fusion = value.get("type") == "pastel:fusion_shrine" and (
-        "minecraft:netherite_ingot" in outputs or any(item.endswith("_horse_armor") for item in outputs))
-    return (bool(outputs & removed) or value.get("type", "").startswith(WITHDRAWN_TYPES) or retired_fusion
+    return (bool(outputs & removed) or value.get("type", "").startswith(WITHDRAWN_TYPES)
+            or recipe_path in RETIRED_NATIVE_RECIPES
             or any(entry.removeprefix("#") in retired_fluids for entry in strings(value)))
 
 
@@ -185,10 +190,11 @@ def finalize(module, workspace, jars):
     for path, original in recipes.items():
         current = read(resources / path)
         outputs = item_outputs(original, set())
-        recover = path in recovery_paths and any(not item.startswith("minecraft:") for item in outputs)
+        recover = (path in policy.get("restore_recipe_paths", []) or
+                   path in recovery_paths and any(not item.startswith("minecraft:") for item in outputs))
         can_rehome = original.get("type") in {"pastel:pedestal", "pastel:pedestal_shapeless", "pastel:spirit_instiller"}
         if (current is None or disabled(current)) and not disabled(original) and (can_rehome or not withdrawn_recipe(
-                original, removed, retired_fluids)) and (
+                original, removed, retired_fluids, path)) and (
                 outputs & restore_outputs or recover and not outputs & removed):
             write(path, redirect(original, merges))
 
@@ -209,10 +215,10 @@ def finalize(module, workspace, jars):
     disabled_paths = set()
     for path, value in effective.items():
         if disabled(value):
-            if withdrawn_recipe(recipes.get(path, {}), removed, retired_fluids):
+            if withdrawn_recipe(recipes.get(path, {}), removed, retired_fluids, path):
                 disabled_paths.add(path)
             continue
-        if withdrawn_recipe(value, removed, retired_fluids):
+        if withdrawn_recipe(value, removed, retired_fluids, path):
             write(path, DISABLED)
             disabled_paths.add(path)
         elif value.get("type", "").startswith("pastel:") and value.get("required_advancement"):

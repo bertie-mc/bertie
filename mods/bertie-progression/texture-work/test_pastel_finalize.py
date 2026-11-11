@@ -26,7 +26,12 @@ class PastelFinalizationTests(unittest.TestCase):
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(json.dumps(value), encoding="utf-8")
 
-            put(module / "texture-work/pastel_content_policy.json", {})
+            name_tag = "data/pastel/recipe/pedestal/tier2/vanilla/name_tag.json"
+            custom_netherite = "data/pastel/recipe/fusion_shrine/netherite_ingot.json"
+            native_netherite = "data/pastel/recipe/fusion_shrine/vanilla/netherite_ingot.json"
+            native_horse = "data/pastel/recipe/fusion_shrine/vanilla/diamond_horse_armor.json"
+            custom_horse = "data/bertieprogression/recipe/custom_horse_armor.json"
+            put(module / "texture-work/pastel_content_policy.json", {"restore_recipe_paths": [name_tag]})
             put(module / "texture-work/pastel_worldgen_policy.json", {
                 "configured_features": ["shimmerstone_ore"], "biome_modifiers": ["shimmerstone_ore"],
                 "fluid_replacements": {"pastel:dragonrot": "minecraft:lava"}})
@@ -50,6 +55,16 @@ class PastelFinalizationTests(unittest.TestCase):
             authored = {"type": "minecraft:crafting_shapeless",
                         "ingredients": [{"item": "minecraft:emerald"}], "result": {"id": "pastel:onyx_shard"}}
             put(resources / onyx, authored)
+            custom_fusion = {"type": "pastel:fusion_shrine", "time": 400, "experience": 4,
+                             "fluid": {"fluid": "slag:molten_gold"}, "ingredients": [
+                                 "hazennstuff:rose_gold_ingot", {"item": "minecraft:netherite_scrap", "count": 4},
+                                 {"item": "pastel:neolith", "count": 2}],
+                             "result": {"id": "minecraft:netherite_ingot", "count": 1}}
+            custom_horse_fusion = {"type": "pastel:fusion_shrine", "ingredients": ["minecraft:diamond_block"],
+                                   "result": {"id": "minecraft:diamond_horse_armor"}}
+            put(resources / custom_netherite, custom_fusion)
+            put(resources / custom_horse, custom_horse_fusion)
+            put(resources / name_tag, DISABLED)
             put(resources / "pastel_recipe_pending.json", [{"path": recipe}])
             put(module / "texture-work/.removed_data.json", [loot])
             put(module / "texture-work/.merged_tags.json", [tag])
@@ -64,8 +79,10 @@ class PastelFinalizationTests(unittest.TestCase):
                        "result": {"id": "pastel:onyx_shard"}},
                 "data/pastel/recipe/enchanter.json": {"type": "pastel:enchanter",
                                                        "result": {"id": "minecraft:enchanted_book"}},
-                "data/pastel/recipe/netherite.json": {"type": "pastel:fusion_shrine",
-                                                      "result": {"id": "minecraft:netherite_ingot"}},
+                native_netherite: {"type": "pastel:fusion_shrine", "result": {"id": "minecraft:netherite_ingot"}},
+                native_horse: {"type": "pastel:fusion_shrine", "result": {"id": "minecraft:diamond_horse_armor"}},
+                name_tag: {"type": "pastel:pedestal_shapeless", "ingredients": ["minecraft:string", "pastel:shimmerstone_gem"],
+                           "result": {"id": "minecraft:name_tag"}},
                 "data/pastel/worldgen/configured_feature/shimmerstone_ore.json": {
                     "type": "minecraft:ore", "config": {"targets": [{"state": {"Name": "pastel:shimmerstone_ore"}}]}},
                 dragonrot_lake: {"type": "minecraft:lake", "config": {
@@ -93,7 +110,12 @@ class PastelFinalizationTests(unittest.TestCase):
             self.assertEqual(json.loads((resources / tag).read_text())["values"],
                              [{"id": "pastel:bismuth_crystal", "required": False}])
             self.assertEqual(json.loads((resources / "data/pastel/recipe/enchanter.json").read_text()), DISABLED)
-            self.assertEqual(json.loads((resources / "data/pastel/recipe/netherite.json").read_text()), DISABLED)
+            self.assertEqual(json.loads((resources / native_netherite).read_text()), DISABLED)
+            self.assertEqual(json.loads((resources / native_horse).read_text()), DISABLED)
+            self.assertEqual(json.loads((resources / custom_netherite).read_text()), custom_fusion)
+            self.assertEqual(json.loads((resources / custom_horse).read_text()), custom_horse_fusion)
+            self.assertEqual(json.loads((resources / name_tag).read_text())["ingredients"],
+                             [{"item": "minecraft:string"}, {"item": "minecraft:glowstone"}])
             self.assertEqual(json.loads((resources / "data/pastel/worldgen/configured_feature/shimmerstone_ore.json").read_text())["type"],
                              "minecraft:no_op")
             lake_config = json.loads((resources / dragonrot_lake).read_text())["config"]

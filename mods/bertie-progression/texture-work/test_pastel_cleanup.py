@@ -73,6 +73,15 @@ class PastelCleanupTests(unittest.TestCase):
         self.assertEqual(ingredients.count({"item": "minecraft:gold_ingot"}), 2)
         self.assertEqual(len(ingredients), 7)
 
+    def test_retained_ingredient_is_not_replaced_after_restoration(self):
+        path = "data/bertieprogression/recipe/custom_upgrade.json"
+        recipe = {"type": "minecraft:crafting_shapeless",
+                  "ingredients": [{"item": "pastel:four_leaf_clover"}],
+                  "result": {"id": "minecraft:diamond"}}
+        with tempfile.TemporaryDirectory() as directory:
+            emitted = self.run_policy(Path(directory), {path: recipe}, set())
+        self.assertNotIn(path, emitted)
+
 
 if __name__ == "__main__":
     unittest.main()

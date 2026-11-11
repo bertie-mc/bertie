@@ -96,7 +96,9 @@ Pastel-only content pass. It preserves newer authored integrations while reconci
 the canonical removal table; `gen_data.py` also runs it after the main generation pass.
 
 Fusion Shrine is made on Hephaestus Forge II. Infused Netherite fusion takes 90 seconds;
-the shrine's horse-armour and vanilla Netherite synthesis routes are disabled. Onyx uses
+the shrine's stock horse-armour and vanilla Netherite synthesis routes are disabled by
+recipe ID. The custom Rose Gold, Netherite Scrap and Neolith route in Molten Gold stays.
+Onyx uses
 Glowstone Dust, Solar Core and Emerald. Crafting Accelerator and Production Surge remain;
 Knowledge Focus and Efficiency Slope are withdrawn. Oritech machine cores require the
 previous core tier, starting with Bound Soul Ingot at the primitive core's centre.
