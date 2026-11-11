@@ -372,9 +372,7 @@
 		}
 		{
 			dependencies: ["5B00000000000012"]
-			icon: {
-				id: "minecraft:end_stone"
-			}
+			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "minecraft:textures/entity/end_portal.png"}}
 			id: "5B00000000000013"
 			rewards: [{
 				id: "5B00000002000013"
@@ -383,9 +381,7 @@
 			}]
 			tasks: [{
 				dimension: "minecraft:the_end"
-				icon: {
-					id: "minecraft:end_stone"
-				}
+				icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "minecraft:textures/entity/end_portal.png"}}
 				id: "5B00000001000013"
 				type: "dimension"
 			}]
