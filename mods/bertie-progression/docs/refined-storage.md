@@ -83,6 +83,9 @@ left and above-left of Basic Processor; each has a linked 64-Core objective
 above it. The stack objectives are side milestones, not prerequisites for
 the next processor tier or Controller. All acquisition tasks are non-consuming.
 
+Autocrafter follows Controller. Autocrafter Manager is below Pattern Grid and
+depends on Autocrafter; Autocrafting Monitor is to its right and depends on it.
+
 ## Paired Dragonsteel collisions
 
 The three additional Anvil Collision recipes require T1 eligibility and

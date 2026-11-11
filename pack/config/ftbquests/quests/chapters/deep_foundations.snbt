@@ -632,7 +632,7 @@
 			tasks: [{ id: "5D00000001000037" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:pattern"} }]
 		}
 		{
-			y: -3.0d
+			y: -1.5d
 			x: 21.0d
 			dependencies: ["5D00000000000037"]
 			id: "5D00000000000038"
@@ -694,6 +694,30 @@
 			id: "5D0000000000003F"
 			icon: { id: "refinedstorage:disk_interface" }
 			tasks: [{ id: "5D0000000100003F" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:disk_interface"} }]
+		}
+		{
+			y: 1.5d
+			x: 19.5d
+			dependencies: ["5D00000000000029"]
+			id: "5D00000000000040"
+			icon: { id: "refinedstorage:autocrafter" }
+			tasks: [{ id: "5D00000001000040" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:autocrafter"} }]
+		}
+		{
+			y: 0.0d
+			x: 21.0d
+			dependencies: ["5D00000000000040"]
+			id: "5D00000000000041"
+			icon: { id: "refinedstorage:autocrafter_manager" }
+			tasks: [{ id: "5D00000001000041" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:autocrafter_manager"} }]
+		}
+		{
+			y: 0.0d
+			x: 22.5d
+			dependencies: ["5D00000000000041"]
+			id: "5D00000000000042"
+			icon: { id: "refinedstorage:autocrafting_monitor" }
+			tasks: [{ id: "5D00000001000042" type: "item" count: 1L consume_items: false item: {"id": "refinedstorage:autocrafting_monitor"} }]
 		}
 	]
 }

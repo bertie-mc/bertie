@@ -2917,4 +2917,7 @@
 	quest.5D0000000000003D.title: "Destructor"
 	quest.5D0000000000003E.title: "Disk Drive"
 	quest.5D0000000000003F.title: "Disk Interface"
+	quest.5D00000000000040.title: "Autocrafter"
+	quest.5D00000000000041.title: "Autocrafter Manager"
+	quest.5D00000000000042.title: "Autocrafting Monitor"
 }
