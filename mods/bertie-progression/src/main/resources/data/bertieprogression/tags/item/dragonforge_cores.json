@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iceandfire:dragonforge_fire_core_disabled",
+    "iceandfire:dragonforge_ice_core_disabled",
+    "iceandfire:dragonforge_lightning_core_disabled"
+  ]
+}

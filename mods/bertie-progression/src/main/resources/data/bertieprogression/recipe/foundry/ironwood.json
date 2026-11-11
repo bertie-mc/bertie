@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "twilightforest:raw_ironwood"
+    },
+    {
+      "item": "oritech:biosteel_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "twilightforest:ironwood_ingot",
+      "count": 2
+    }
+  ]
+}

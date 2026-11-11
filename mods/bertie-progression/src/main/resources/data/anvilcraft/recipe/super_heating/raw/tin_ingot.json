@@ -1,18 +1,16 @@
 {
-  "type": "anvilcraft:super_heating",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "count": 8,
-      "items": "#c:raw_materials/tin"
-    },
-    {
-      "items": "anvilcraft:earth_core_shard"
+      "type": "neoforge:false"
     }
   ],
-  "results": [
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "count": 24,
-      "id": "mekanism:ingot_tin"
+      "item": "minecraft:stone"
     }
-  ]
+  ],
+  "result": {
+    "id": "minecraft:stone"
+  }
 }

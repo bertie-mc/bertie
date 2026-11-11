@@ -1,0 +1,15 @@
+{
+  "type": "iceandfire:dragonforge",
+  "dragonType": "ice",
+  "cookTime": 1000,
+  "input": {
+    "item": "oritech:duratium_ingot"
+  },
+  "blood": {
+    "item": "deeperdarker:reinforced_echo_shard"
+  },
+  "result": {
+    "id": "l2complements:sculkium_ingot",
+    "count": 1
+  }
+}

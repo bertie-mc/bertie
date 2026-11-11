@@ -1,33 +1,64 @@
 {
   "essences": {
-    "aureal": 1000,
-    "blood": 9000,
-    "souls": 50
+    "aureal": 3000,
+    "blood": 15000,
+    "souls": 50,
+    "experience": 1350
   },
   "forge_tier": 2,
   "inputs": [
     {
-      "amount": 3,
+      "amount": 1,
       "ingredient": {
-        "item": "forbidden_arcanus:arcane_crystal"
+        "item": "iceandfire:dragonsteel_fire_ingot"
       }
     },
     {
-      "amount": 3,
+      "amount": 1,
       "ingredient": {
-        "item": "forbidden_arcanus:deorum_ingot"
+        "item": "iceandfire:dragonsteel_ice_ingot"
       }
     },
     {
-      "amount": 2,
+      "amount": 1,
       "ingredient": {
-        "item": "pastel:moonstone_shard"
+        "item": "iceandfire:dragonsteel_lightning_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "magitech:radiant_steel_ingot"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "deeperdarker:heart_of_the_deep"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "curseofpandora:evil_spine"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "curseofpandora:evil_stone"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "anvilcraft:giant_anvil"
       }
     }
   ],
   "magic_circle": "forbidden_arcanus:upgrade_tier",
   "main_ingredient": {
-    "item": "forbidden_arcanus:chiseled_polished_darkstone"
+    "item": "forbidden_arcanus:corrupted_arcane_crystal"
   },
   "match_tier_exact": true,
   "result": {

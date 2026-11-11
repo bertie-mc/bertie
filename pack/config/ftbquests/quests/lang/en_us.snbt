@@ -1116,7 +1116,7 @@
 	quest.6B0000000000004B.title: "Malignant Pewter Ingot"
 	quest.6B0000000000004C.title: "The Null Blaze Cube"
 	quest.6B0000000000004D.title: "The Blaze Cube"
-	quest.6B0000000000004E.title: "Machine Casing"
+	quest.6B0000000000004E.title: "Steel Casing"
 	quest.6B0000000000004F.title: "Corrupti Dust"
 	quest.6B00000000000050.title: "Dark Matter"
 	quest.6B00000000000051.title: "Witness a Black Hole"
@@ -2220,7 +2220,7 @@
 	quest.1C00000000002064.title: "Queen Scale"
 	quest.1C00000000002064.quest_desc: ["Future armour materials"]
 	quest.5C00000000000001.title: "Age of Technology"
-	quest.5C00000000000001.quest_desc: ["Build a Machine Casing to enter the Age of Technology."]
+	quest.5C00000000000001.quest_desc: ["Build a Steel Casing to enter the Age of Technology."]
 	quest.7B00000000000093.title: "Hazel Set"
 	quest.7B000000000000A3.title: "Mothic Witch Set"
 	quest.2B00000000004000.title: "The Basic Bookshelf"
@@ -2885,4 +2885,13 @@
 	quest.5D0000000000001B.title: "Nether Star Brilliance"
 	quest.5D0000000000001C.title: "Ender Metal and Crystals"
 	quest.5D0000000000001D.title: "Radiant Steel Ingot"
+	quest.5D00000000000020.title: "Dragon Egg"
+	quest.5D00000000000021.title: "Resonarium"
+	quest.5D00000000000022.title: "Resonarium Plate"
+	quest.5D00000000000023.title: "Lite"
+	quest.5D00000000000024.title: "Enriched Gloomslate Bricks"
+	quest.5D00000000000025.title: "Dragonforge Bricks"
+	quest.5D00000000000026.title: "Dragonforge Parts"
+	quest.5D00000000000027.title: "Hephaestus Forge III"
+	quest.5D00000000000028.title: "Controller"
 }

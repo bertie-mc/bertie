@@ -9,8 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			y: 0d
-			x: 0d
+			y: 0.0d
+			x: 0.0d
 			dependencies: ["6B00000000009004"]
 			id: "5D00000000000001"
 			icon: { id: "anvilcraft:royal_steel_upgrade_smithing_template" }
@@ -22,7 +22,7 @@
 			}]
 		}
 		{
-			y: 0d
+			y: 0.0d
 			x: 1.5d
 			dependencies: ["5D00000000000001"]
 			id: "5D00000000000002"
@@ -48,8 +48,8 @@
 			}]
 		}
 		{
-			y: 0d
-			x: 3d
+			y: 0.0d
+			x: 3.0d
 			dependencies: ["5D00000000000002"]
 			id: "5D00000000000004"
 			icon: { id: "anvilcraft:cursed_gold_ingot" }
@@ -61,7 +61,7 @@
 			}]
 		}
 		{
-			y: 0d
+			y: 0.0d
 			x: 4.5d
 			dependencies: ["5D00000000000004"]
 			id: "5D00000000000005"
@@ -74,8 +74,8 @@
 			}]
 		}
 		{
-			y: 0d
-			x: 6d
+			y: 0.0d
+			x: 6.0d
 			dependencies: ["5D00000000000005"]
 			id: "5D00000000000006"
 			icon: { id: "anvilcraft:corrupted_beacon" }
@@ -88,7 +88,7 @@
 		}
 		{
 			y: 1.5d
-			x: 3d
+			x: 3.0d
 			dependencies: ["5D00000000000004"]
 			id: "5D00000000000007"
 			icon: { id: "anvilcraft:impact_pile" }
@@ -139,7 +139,7 @@
 			}]
 		}
 		{
-			y: 0d
+			y: 0.0d
 			x: 7.5d
 			dependencies: ["5D00000000000006"]
 			id: "5D0000000000000B"
@@ -208,11 +208,11 @@
 			y: 1.5d
 			x: 10.5d
 			id: "5D00000000000010"
-			icon: { id: "pastel:moonstone_shard" }
+			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "pastel:block/deeper_down_portal"}}
 			tasks: [{
 				id: "5D00000001000010"
 				dimension: "pastel:deeper_down"
-				icon: { id: "pastel:moonstone_shard" }
+			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "pastel:block/deeper_down_portal"}}
 				type: "dimension"
 			}]
 		}
@@ -325,11 +325,11 @@
 			y: 3.0d
 			x: 10.5d
 			id: "5D00000000000019"
-			icon: { id: "deeperdarker:heart_of_the_deep" }
+			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "deeperdarker:block/otherside_portal"}}
 			tasks: [{
 				id: "5D00000001000019"
 				dimension: "deeperdarker:otherside"
-				icon: { id: "deeperdarker:heart_of_the_deep" }
+			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "deeperdarker:block/otherside_portal"}}
 				type: "dimension"
 			}]
 		}
@@ -401,6 +401,120 @@
 					type: "item"
 				}
 			]
+		}
+		{
+			y: 1.5d
+			x: 12.0d
+			dependencies: ["5D00000000000010"]
+			id: "5D00000000000020"
+			icon: { id: "iceandfire:dragonegg_red" }
+			tasks: [
+				{ id: "5D00000001000020" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(bertieprogression:dragon_eggs)", "minecraft:custom_name": "{\"text\": \"Dragon Egg\"}"}} }
+			]
+		}
+		{
+			y: 3.0d
+			x: 12.0d
+			dependencies: ["5D00000000000019"]
+			id: "5D00000000000021"
+			icon: { id: "deeperdarker:resonarium" }
+			tasks: [{
+				id: "5D00000001000021"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:resonarium" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 13.5d
+			dependencies: ["5D00000000000021"]
+			id: "5D00000000000022"
+			icon: { id: "deeperdarker:resonarium_plate" }
+			tasks: [{
+				id: "5D00000001000022"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:resonarium_plate" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 15.0d
+			dependencies: ["5D00000000000022"]
+			id: "5D00000000000023"
+			icon: { id: "deeperdarker:lite" }
+			tasks: [{
+				id: "5D00000001000023"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:lite" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 16.5d
+			dependencies: ["5D00000000000023"]
+			id: "5D00000000000024"
+			icon: { id: "deeperdarker:enriched_gloomslate_bricks" }
+			tasks: [{
+				id: "5D00000001000024"
+				count: 1L
+				item: { count: 1 id: "deeperdarker:enriched_gloomslate_bricks" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 18.0d
+			dependencies: ["5D00000000000024"]
+			id: "5D00000000000025"
+			icon: { id: "iceandfire:dragonforge_fire_brick" }
+			tasks: [
+				{ id: "5D00000001000025" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(bertieprogression:dragonforge_bricks)", "minecraft:custom_name": "{\"text\": \"Dragonforge Bricks\"}"}} }
+			]
+		}
+		{
+			y: 3.0d
+			x: 19.5d
+			dependencies: ["5D00000000000025"]
+			id: "5D00000000000026"
+			icon: { id: "iceandfire:dragonforge_fire_core_disabled" }
+			tasks: [
+				{ id: "5D00000001000026" type: "item" count: 17L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(bertieprogression:dragonforge_bricks)", "minecraft:custom_name": "{\"text\": \"Dragonforge Bricks\"}"}} }
+				{ id: "5D00000002000026" type: "item" count: 8L consume_items: false item: {"id": "iceandfire:dragon_bone_block"} }
+				{ id: "5D00000003000026" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(bertieprogression:dragonforge_cores)", "minecraft:custom_name": "{\"text\": \"Dragonforge Core\"}"}} }
+				{ id: "5D00000004000026" type: "item" count: 1L consume_items: false item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(bertieprogression:dragonforge_apertures)", "minecraft:custom_name": "{\"text\": \"Dragonforge Aperture\"}"}} }
+			]
+		}
+		{
+			y: 3.0d
+			x: 21.0d
+			dependencies: ["5D00000000000026", "3B0000000000002A"]
+			id: "5D00000000000027"
+			icon: { id: "forbidden_arcanus:hephaestus_forge_tier_3" }
+			tasks: [{
+				id: "5D00000001000027"
+				type: "observation"
+				observation_type: "block"
+				observe_type: 0
+				timer: 60L
+				to_observe: "forbidden_arcanus:hephaestus_forge_tier_3"
+				icon: { id: "forbidden_arcanus:hephaestus_forge_tier_3" }
+			}]
+		}
+		{
+			y: 3.0d
+			x: 22.5d
+			dependencies: ["5D00000000000027"]
+			id: "5D00000000000028"
+			icon: { id: "refinedstorage:controller" }
+			tasks: [{
+				id: "5D00000001000028"
+				count: 1L
+				item: { count: 1 id: "refinedstorage:controller" }
+				type: "item"
+			}]
 		}
 	]
 }

@@ -122,7 +122,7 @@ into surplus material. Rolling Mill consumes one matching Rod for four Wires.
 EMI keeps the five-step assembly and shows its guaranteed output above the
 secondary choice. Basic Rod recipes run bottom-left to top-right in the viewer.
 
-Machine Casing retains `mekanism:steel_casing` as its ID. Its 5×5 Nether-table
+Steel Casing retains `mekanism:steel_casing` as its ID. Its 5×5 Nether-table
 recipe uses Royal Steel and Osmium Sheets, Runic Glass, Large Redstone Slates and
 a central Bound Soul Ingot. The Metallurgic Infuser and Enrichment Chamber also
 use 5×5 Nether-table recipes with Deep Alloy and Osmium Sheets, Cognitive Alloy
@@ -180,9 +180,9 @@ and three Silver for four. Clibano combines Brass and Silver for one. Create
 mixing is disabled; the separate Gold/Redstone infusion route remains available.
 
 Basic, Lava and Bio Generators use 5×5 Nether recipes. Basic consumes one filled
-Capacitor and one Machine Casing. Lava and Bio use five Copper Sheets across
+Capacitor and one Steel Casing. Lava and Bio use five Copper Sheets across
 the top, three Electrum Rods down each side and five Deep Alloy Sheets across
-the bottom. Lava retains one Capacitor, Machine Casing and six Coils; Bio retains
+the bottom. Lava retains one Capacitor, Steel Casing and six Coils; Bio retains
 Biopolymer, one Coil and one Basic Generator. Steam Engine uses Steel, Copper
 and Deep Alloy Sheets, four filled Capacitors, three Coils, one Motor and one
 Basic Generator. Steam Boiler Addon uses five Steel Sheets, Coal Dust, two

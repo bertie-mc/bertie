@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "deeperdarker:resonarium"
+    },
+    {
+      "item": "deeperdarker:resonarium"
+    },
+    {
+      "item": "minecraft:turtle_scute"
+    },
+    {
+      "item": "minecraft:armadillo_scute"
+    }
+  ],
+  "results": [
+    {
+      "id": "deeperdarker:resonarium_plate",
+      "count": 1
+    }
+  ]
+}

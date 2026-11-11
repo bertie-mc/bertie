@@ -257,9 +257,7 @@ public final class ProgressionWardenGameTests {
     }
 
     private static Warden warden(GameTestHelper helper) {
-        Warden warden = helper.spawn(EntityType.WARDEN, new net.minecraft.core.BlockPos(2, 2, 2));
-        warden.setNoAi(true);
-        return warden;
+        return CombatFixture.spawn(helper, EntityType.WARDEN, new net.minecraft.core.BlockPos(2, 2, 2));
     }
 
     private static FakePlayer player(GameTestHelper helper) {

@@ -1,0 +1,26 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "EEDEE",
+    "ESSSE",
+    "DESED",
+    "ESSSE",
+    "EEDEE"
+  ],
+  "key": {
+    "E": {
+      "item": "deeperdarker:enriched_gloomslate_bricks"
+    },
+    "S": {
+      "tag": "iceandfire:storage_blocks/scales/dragon/lightning"
+    },
+    "D": {
+      "item": "pastel:bedrock_dust_block"
+    }
+  },
+  "result": {
+    "id": "iceandfire:dragonforge_lightning_brick",
+    "count": 4
+  },
+  "tier": 2
+}

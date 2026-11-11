@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "EGGGE",
+    "GBFBG",
+    "GF FG",
+    "GBFBG",
+    "EGGGE"
+  ],
+  "key": {
+    "E": {
+      "item": "anvilcraft:earth_core_shard_block"
+    },
+    "G": {
+      "item": "deeperdarker:soundproof_glass"
+    },
+    "B": {
+      "item": "iceandfire:dragonforge_lightning_brick"
+    },
+    "F": {
+      "item": "oritech:carbon_fibre_strands"
+    }
+  },
+  "result": {
+    "id": "iceandfire:dragonforge_lightning_input",
+    "count": 1
+  },
+  "tier": 2
+}

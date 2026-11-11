@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#iceandfire:structure_gen/fire",
+      "required": false
+    },
+    {
+      "id": "pastel:black_langast",
+      "required": false
+    },
+    {
+      "id": "pastel:crystal_gardens",
+      "required": false
+    },
+    {
+      "id": "pastel:deep_barrens",
+      "required": false
+    },
+    {
+      "id": "pastel:deep_dripstone_caves",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonrot_swamp",
+      "required": false
+    },
+    {
+      "id": "pastel:howling_spires",
+      "required": false
+    },
+    {
+      "id": "pastel:noxshroom_forest",
+      "required": false
+    },
+    {
+      "id": "pastel:razor_edge",
+      "required": false
+    }
+  ]
+}

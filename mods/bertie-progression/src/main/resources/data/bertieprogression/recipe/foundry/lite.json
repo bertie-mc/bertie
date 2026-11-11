@@ -1,0 +1,18 @@
+{
+  "type": "oritech:foundry",
+  "time": 80,
+  "ingredients": [
+    {
+      "item": "deeperdarker:resonarium_plate"
+    },
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    }
+  ],
+  "results": [
+    {
+      "id": "deeperdarker:lite",
+      "count": 2
+    }
+  ]
+}

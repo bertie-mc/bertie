@@ -13,6 +13,42 @@ tasks.named<Test>("test") {
     maxHeapSize = "2G"
 }
 
+// Unrelated pack rituals refer to optional mods absent from this focused server fixture.
+// Retain their registry keys without installing the complete pack to test two selected rituals.
+val ritualSources =
+    fileTree("src/main/resources/data") {
+        include("**/forbidden_arcanus/hephaestus_forge/ritual/**/*.json")
+    }
+val ritualSourceRoot = file("src/main/resources/data")
+val isolatedRitualDirectory = layout.buildDirectory.dir("generated/integration-rituals")
+val isolateIntegrationRituals by tasks.registering {
+    inputs.files(ritualSources)
+    outputs.dir(isolatedRitualDirectory)
+    val sourceFiles = ritualSources.files.toList()
+    val sourceRoot = ritualSourceRoot
+    val outputRoot = isolatedRitualDirectory.get().asFile
+    doLast {
+        val selected =
+            setOf(
+                "forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_3.json",
+                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/controller.json",
+            )
+        sourceFiles.forEach { source ->
+            val relative = source.relativeTo(sourceRoot).invariantSeparatorsPath
+            if (relative !in selected) {
+                val target = outputRoot.resolve("data/$relative")
+                target.parentFile.mkdirs()
+                target.writeText(
+                    """{"essences":{},"inputs":[{"amount":1,"ingredient":{"item":"minecraft:cobblestone"}}],"main_ingredient":{"item":"minecraft:stone"},"magic_circle":"forbidden_arcanus:create_item","result":{"type":"forbidden_arcanus:create_item","result_item":{"id":"minecraft:stone"}}}""",
+                )
+            }
+        }
+    }
+}
+sourceSets.named("integrationtest") {
+    resources.srcDir(isolateIntegrationRituals)
+}
+
 dependencies {
     compileOnly(deps.emi)
     compileOnly(deps.advancedLootInfo)
@@ -85,6 +121,15 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.curios)
     "integrationtestRuntimeOnly"(deps.hooked)
     "integrationtestRuntimeOnly"(deps.deeperdarker)
+    "integrationtestImplementation"(deps.iceandfireCe)
+    "integrationtestImplementation"(deps.forbiddenArcanus)
+    "integrationtestImplementation"(deps.oritech)
+    "integrationtestRuntimeOnly"(deps.pastelMod)
+    "integrationtestRuntimeOnly"(deps.refinedStorage)
+    "integrationtestRuntimeOnly"(deps.elementalMetalsMagicalMetallurgySeries)
+    "integrationtestRuntimeOnly"(deps.magitech)
+    "integrationtestRuntimeOnly"(deps.curseOfPandora)
+    "integrationtestRuntimeOnly"(deps.l2Complements)
     "integrationtestRuntimeOnly"(project(":mods:bertie-tiers"))
     gametestRuntimeOnly(deps.quark)
     gametestRuntimeOnly(deps.alexsMobs1211)

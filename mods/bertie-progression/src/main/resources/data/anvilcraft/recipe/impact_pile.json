@@ -1,0 +1,26 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " SSS ",
+    " NGN ",
+    " NGN ",
+    " NGN ",
+    "  N  "
+  ],
+  "key": {
+    "S": {
+      "item": "berlordscarving:obsidiansteel_big_slate"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "G": {
+      "item": "anvilcraft:cursed_gold_ingot"
+    }
+  },
+  "result": {
+    "id": "anvilcraft:impact_pile",
+    "count": 1
+  },
+  "tier": 2
+}

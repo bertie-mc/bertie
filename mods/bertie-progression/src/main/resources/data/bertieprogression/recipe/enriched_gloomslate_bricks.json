@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BLB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "deeperdarker:gloomslate_bricks"
+    },
+    "L": {
+      "item": "deeperdarker:lite"
+    }
+  },
+  "result": {
+    "id": "deeperdarker:enriched_gloomslate_bricks",
+    "count": 8
+  }
+}

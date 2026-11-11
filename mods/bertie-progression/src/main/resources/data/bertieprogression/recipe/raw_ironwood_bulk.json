@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GLG",
+    "LCL",
+    "GLG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "twilightforest:liveroot"
+    },
+    "C": {
+      "item": "armageddon_mod:colossal_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "twilightforest:raw_ironwood",
+    "count": 16
+  }
+}

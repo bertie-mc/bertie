@@ -1,0 +1,32 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "BRWRB",
+    "RWDWR",
+    "WDHDW",
+    "RWDWR",
+    "BRWRB"
+  ],
+  "key": {
+    "B": {
+      "item": "iceandfire:dragonforge_ice_brick"
+    },
+    "R": {
+      "item": "deeperdarker:resonarium_plate"
+    },
+    "W": {
+      "item": "irons_spellbooks:mithril_weave"
+    },
+    "D": {
+      "item": "iceandfire:dragon_bone_block"
+    },
+    "H": {
+      "item": "iceandfire:ice_dragon_heart"
+    }
+  },
+  "result": {
+    "id": "iceandfire:dragonforge_ice_core_disabled",
+    "count": 1
+  },
+  "tier": 2
+}

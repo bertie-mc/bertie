@@ -101,9 +101,11 @@ public final class MineralFountainGameTests {
         float unbuffed = sturdy.defaultBlockState().getDestroyProgress(player, level, pos);
         player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 100, 1));
         float reference = Blocks.REINFORCED_DEEPSLATE.defaultBlockState().getDestroyProgress(player, level, pos);
+        // Optional mods can tag Reinforced Deepslate as pickaxe-mineable; retain the native speed-one reference.
+        reference /= player.getMainHandItem().getDestroySpeed(Blocks.REINFORCED_DEEPSLATE.defaultBlockState());
         helper.assertTrue(
                 Math.abs(unbuffed - reference) < 0.00000001,
-                "unbuffed Netherite mining must match the native Haste II reference");
+                "unbuffed Netherite mining must match the native Haste II reference: " + unbuffed + " vs " + reference);
         player.removeAllEffects();
         for (var tool : List.of(Items.DIAMOND_PICKAXE, Items.NETHERITE_PICKAXE)) {
             level.getEntitiesOfClass(ItemEntity.class, new AABB(pos).inflate(3)).forEach(ItemEntity::discard);

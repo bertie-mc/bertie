@@ -86,8 +86,7 @@ public final class ShieldProgressionGameTests {
         FakePlayer player = player(h);
         player.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(8.75);
         player.setItemSlot(EquipmentSlot.OFFHAND, stack("piglinproliferation:buckler"));
-        var target = h.spawn(EntityType.PIG, new BlockPos(2, 2, 3));
-        target.setNoAi(true);
+        var target = CombatFixture.spawn(h, EntityType.PIG, new BlockPos(2, 2, 3));
         target.getAttribute(Attributes.MAX_HEALTH).setBaseValue(100);
         target.setHealth(100);
         Class.forName("tallestred.piglinproliferation.common.items.BucklerItem")

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iceandfire:dragonforge_fire_input",
+    "iceandfire:dragonforge_ice_input",
+    "iceandfire:dragonforge_lightning_input"
+  ]
+}

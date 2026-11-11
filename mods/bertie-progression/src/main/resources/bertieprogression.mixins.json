@@ -8,6 +8,7 @@
   "mixins": [
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
+    "AnvilRecyclingMixin",
     "BabyWitherSkeletonOddsMixin",
     "BasinRecipeMixin",
     "BucklerDamageMixin",
@@ -15,6 +16,9 @@
     "CuttingTagsMixin",
     "BlazeBurnerBlockEntityMixin",
     "DoctorPotionRemovalMixin",
+    "DragonCaveAgeMixin",
+    "DragonSkeletonAgeMixin",
+    "DragonEggDropMixin",
     "EnchantmentTransposerMixin",
     "DollMachineLotteryMixin",
     "ForgeBEMixin",

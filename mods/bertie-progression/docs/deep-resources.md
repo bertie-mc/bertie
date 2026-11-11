@@ -71,10 +71,12 @@ Carapaces through Minecraft's ordinary Looting roll. Heart of the Deep and
 Primordial Soulstone no longer drop from Wardens. Warden Tendril tells players
 to shear the Warden.
 
-One Carapace yields one Bone Shard on Crushing Wheels or the Pulveriser, or
-two on the Mekanism Crusher. Crushing Wheels alone have a 5% Echo Shard bonus.
+One Carapace yields one Bone Shard on Crushing Wheels, or two on the Pulveriser
+or Mekanism Crusher. Crushing Wheels alone have a 5% Echo Shard bonus.
 Reinforced Echo Shard and Warden Stick use their Nether Table patterns.
-Foundry makes two Sculkium from one Reinforced Echo Shard and one Duratium.
+Any elemental Dragonforge makes one Sculkium from one Duratium and one
+Reinforced Echo Shard. The Shard occupies the forge's second ingredient slot;
+the former Foundry route is removed.
 Heart of the Deep is crafted on the Nether Table with the selected Echo/Core/
 Bone Shards, Creaking Heart, Dragon Hearts and Heart of the Sea.
 
@@ -82,6 +84,51 @@ Deep Foundations extends Earth Core Shard through the Warden materials and
 Heart to entering the Otherside. The separate Ruin branch unlocks Bedrock Dust
 and entering Imbrifer. The Beacon branches also introduce the Giant Anvil and
 rings, and the Ember Smithing Template and Anvil.
+
+## Dragonforge and Forge III
+
+Only Imbrifer naturally generates Stage 5 dragons. Cave dragons and skeletons
+generated elsewhere are at most Stage 4; existing dragons and ordinary growth
+are unchanged. Stage 4 corpse harvesting retains Hearts but cannot yield Eggs.
+The native cave structures accept Imbrifer biomes for all three elements;
+ordinary roost placement and cave spacing remain unchanged.
+
+Dragonforge Bricks, Cores and Apertures use the three elemental Nether-table
+patterns. Bricks combine Scale Blocks, Enriched Gloomslate Bricks and Bedrock
+Dust Blocks. Cores use Resonarium Plates, Mithril Weave, Dragon Bone Blocks
+and the matching Heart. Apertures use Soundproof Glass, Earth Core Shard Blocks
+and Carbon Fibre Strands. Blood production consumes Dragon's Breath with the
+matching Scale, retaining the 750-tick duration.
+
+Resonarium Plates also assemble from two Resonarium, Turtle Scute and Armadillo
+Scute. A Plate and Refined Glowstone yield two Lite in the Foundry. Eight
+Gloomslate Bricks around Lite craft eight Enriched Bricks, which drop themselves.
+
+Forge III upgrades a Tier II forge using Corrupted Arcane Crystal as its main
+ingredient and one each of the three Dragonsteel Ingots, Radiant Steel, Heart
+of the Deep, Evil Spine, Evil Stone and Giant Anvil on its eight pedestals.
+It consumes 3000 Aureal, 15000 Blood, 50 Souls and 1350 Ink.
+
+The Refined Storage Controller requires Forge III, one each of the six Infused
+Netherite Ingots and two Silicon Wafers. One Wafer is the main ingredient and
+the other seven items occupy pedestals. This ritual has no extra essence cost.
+Its original crafting recipe is disabled; recoloring still requires a Controller.
+
+Deep Foundations branches from Imbrifer to Dragon Egg, and from the Otherside
+through Resonarium, Plate, Lite, Enriched Bricks, Dragonforge Bricks and a full
+set of parts. Forge III follows the parts and Forge II; the Controller follows
+Forge III. The parts task requires 17 Bricks, eight Dragon Bone Blocks, one
+Core and one Aperture, accepting elemental alternatives.
+
+Ender Metal uses three Pearls, two Platinum, two Refined Obsidian and Hollow
+Crystal in 500 mB Water for four Ingots. Impact Pile uses seven Netherite,
+three Cursed Gold and three Large Obsidiansteel Slates on the Nether Table.
+Raw Ironwood has its revised raw-metal craft and 16-item Colossal Iron bulk
+craft; alloying one with Biosteel yields two Ironwood in the Foundry.
+
+AnvilCraft's raw-metal Superheating multipliers and equipment-crushing recovery
+recipes are disabled. Ordinary smelting, material heating and non-equipment
+crushing retain their roles. Mekanism's casing retains the name Steel Casing.
 
 ## Crystal alchemy and collision tiers
 
