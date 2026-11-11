@@ -334,12 +334,33 @@
 			}]
 		}
 		{
-			dependencies: ["5D00000000000008"]
-			y: 4.5d
-			x: 3d
-			id: "5D0000000000001A"
-			icon: { id: "magitech:ember_crystal" }
+			dependencies: ["5D0000000000001C"]
+			y: 1.5d
+			x: 6.0d
+			id: "5D0000000000001B"
+			icon: { id: "magitech:nether_star_brilliance" }
 			tasks: [
+				{
+					id: "5D0000000100001B"
+					count: 1L
+					item: { count: 1 id: "magitech:nether_star_brilliance" }
+					type: "item"
+				}
+			]
+		}
+		{
+			dependencies: ["5D00000000000008"]
+			y: 1.5d
+			x: 4.5d
+			id: "5D0000000000001C"
+			icon: { id: "magitech:ender_metal_ingot" }
+			tasks: [
+				{
+					id: "5D0000000100001C"
+					count: 1L
+					item: { count: 1 id: "magitech:ender_metal_ingot" }
+					type: "item"
+				}
 				{
 					id: "5D0000000100001A"
 					count: 1L
@@ -358,36 +379,6 @@
 					item: { count: 1 id: "magitech:tremor_crystal" }
 					type: "item"
 				}
-			]
-		}
-		{
-			dependencies: ["5D0000000000001A"]
-			y: 3d
-			x: 3d
-			id: "5D0000000000001B"
-			icon: { id: "magitech:nether_star_brilliance" }
-			tasks: [
-				{
-					id: "5D0000000100001B"
-					count: 1L
-					item: { count: 1 id: "magitech:nether_star_brilliance" }
-					type: "item"
-				}
-			]
-		}
-		{
-			dependencies: ["5D00000000000004"]
-			y: 1.5d
-			x: 4.5d
-			id: "5D0000000000001C"
-			icon: { id: "magitech:ender_metal_ingot" }
-			tasks: [
-				{
-					id: "5D0000000100001C"
-					count: 1L
-					item: { count: 1 id: "magitech:ender_metal_ingot" }
-					type: "item"
-				}
 				{
 					id: "5D0000000200001C"
 					count: 1L
@@ -397,9 +388,9 @@
 			]
 		}
 		{
-			dependencies: ["5D0000000000001B", "5D0000000000001C"]
+			dependencies: ["5D0000000000001B"]
 			y: 1.5d
-			x: 6d
+			x: 7.5d
 			id: "5D0000000000001D"
 			icon: { id: "magitech:radiant_steel_ingot" }
 			tasks: [
