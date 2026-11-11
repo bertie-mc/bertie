@@ -467,7 +467,7 @@
 		{
 			y: 3.0d
 			x: 18.0d
-			dependencies: ["5D00000000000024"]
+			dependencies: ["5D00000000000024", "5D00000000000020", "5D0000000000000F"]
 			id: "5D00000000000025"
 			icon: { id: "iceandfire:dragonforge_fire_brick" }
 			tasks: [
