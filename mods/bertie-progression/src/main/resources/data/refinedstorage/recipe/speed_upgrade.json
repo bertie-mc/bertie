@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QSQ",
+    "LUL",
+    "QQQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "L": {
+      "item": "deeperdarker:lite"
+    },
+    "U": {
+      "item": "refinedstorage:upgrade"
+    },
+    "S": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:swiftness"
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "refinedstorage:speed_upgrade",
+    "count": 1
+  }
+}

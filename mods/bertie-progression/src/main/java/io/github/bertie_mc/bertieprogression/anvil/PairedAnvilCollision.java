@@ -15,7 +15,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 
-/** Paired collisions consume their exact support block, without a surrounding-block explosion. */
+/** Paired collisions require their exact support block without a surrounding-block explosion. */
 public final class PairedAnvilCollision {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void collide(AnvilEvent.CollisionBlock event) {
@@ -23,11 +23,16 @@ public final class PairedAnvilCollision {
         var pos = event.getPos();
         var state = level.getBlockState(pos);
         var blockId = BuiltInRegistries.BLOCK.getKey(state.getBlock());
-        if (!blockId.getNamespace().equals("iceandfire") || !blockId.getPath().startsWith("dragonsteel_")) return;
+        boolean wireless = blockId.toString().equals("mekanism:quantum_entangloporter");
+        if (!wireless
+                && (!blockId.getNamespace().equals("iceandfire")
+                        || !blockId.getPath().startsWith("dragonsteel_"))) return;
         boolean pairedTarget = false;
         for (var holder : level.getRecipeManager().getAllRecipesFor(ModRecipeTypes.ANVIL_COLLISION_CRAFT.get())) {
             if (!holder.id().getNamespace().equals("bertieprogression")
-                    || !holder.id().getPath().startsWith("anvil_collision/dragonsteel_")) continue;
+                    || !(wireless
+                            ? holder.id().getPath().equals("anvil_collision/wireless_transmitter")
+                            : holder.id().getPath().startsWith("anvil_collision/dragonsteel_"))) continue;
             var recipe = holder.value();
             if (!recipe.hitBlock().test(level, state, level.getBlockEntity(pos))) continue;
             pairedTarget = true;
@@ -43,7 +48,8 @@ public final class PairedAnvilCollision {
             event.setCanceled(true);
             event.setAnvilDamage(false);
             level.removeBlock(pos, false);
-            level.removeBlock(base, false);
+            if (!wireless) level.removeBlock(base, false);
+            if (recipe.consume()) event.getEntity().discard();
             var results = new ArrayList<ItemStack>();
             for (ChanceItemStack result : recipe.outputItems()) {
                 ItemStack stack = result.getResult(level);

@@ -2247,10 +2247,6 @@
       "required": false
     },
     {
-      "id": "pastel:four_leaf_clover",
-      "required": false
-    },
-    {
       "id": "pastel:fox_arctic_head",
       "required": false
     },
@@ -4924,6 +4920,42 @@
     },
     {
       "id": "pastel:pure_malachite",
+      "required": false
+    },
+    {
+      "id": "endrem:potato_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:fishing_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:witch_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:undead_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:guardian_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:rogue_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:wither_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:black_eye",
+      "required": false
+    },
+    {
+      "id": "endrem:undead_soul",
       "required": false
     }
   ]

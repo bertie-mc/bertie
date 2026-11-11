@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QGQ",
+    "QQQ",
+    "QPQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "G": {
+      "item": "pastel:tinted_semi_permeable_glass"
+    },
+    "P": {
+      "item": "refinedstorage:improved_processor"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:upgrade",
+    "count": 1
+  }
+}

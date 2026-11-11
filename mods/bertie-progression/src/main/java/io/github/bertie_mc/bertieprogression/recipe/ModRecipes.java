@@ -5,9 +5,17 @@ import java.util.function.Supplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.neoforged.neoforge.common.crafting.IngredientType;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public final class ModRecipes {
+
+    public static final DeferredRegister<IngredientType<?>> INGREDIENTS =
+            DeferredRegister.create(NeoForgeRegistries.Keys.INGREDIENT_TYPES, BertieProgression.MODID);
+
+    public static final Supplier<IngredientType<EnchantedBookIngredient>> ENCHANTED_BOOK =
+            INGREDIENTS.register("enchanted_book", () -> new IngredientType<>(EnchantedBookIngredient.CODEC));
 
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
             DeferredRegister.create(Registries.RECIPE_SERIALIZER, BertieProgression.MODID);

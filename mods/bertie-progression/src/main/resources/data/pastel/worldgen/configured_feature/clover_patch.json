@@ -16,6 +16,12 @@
                 "data": {
                   "Name": "pastel:clover"
                 }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "pastel:four_leaf_clover"
+                }
               }
             ]
           }

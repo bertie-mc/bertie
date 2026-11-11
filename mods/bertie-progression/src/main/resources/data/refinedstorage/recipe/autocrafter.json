@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "QQQQQ",
+    "QFCFQ",
+    "QEMEQ",
+    "QAPAQ",
+    "QGGGQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "E": {
+      "item": "mekanism:elite_control_circuit"
+    },
+    "M": {
+      "item": "refinedstorage:machine_casing"
+    },
+    "A": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "P": {
+      "item": "avaritia:compressed_crafting_table"
+    },
+    "G": {
+      "item": "cognition:cognitive_alloy"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:autocrafter",
+    "count": 1
+  },
+  "tier": 2
+}

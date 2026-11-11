@@ -69,6 +69,10 @@ use Mixing or Assembler, cores use Assembler, Controller uses the Nether Table
 and Cable uses the Mechanical Crafting wall. Costs, layouts and quest branches
 are documented in [Refined Storage progression](docs/refined-storage.md).
 
+The [End eye route](docs/end-eyes.md) retains twelve eyes with distinct loot,
+trading, archaeology and interaction sources. Cursed Eye comes from Piglin
+conversion; Corrupted Eye is the raid-victory reward.
+
 The Pastel content selection retains Imbrifer resources and their building families.
 Withdrawn items leave recipes, loot, item tags, creative tabs, EMI and equipment
 catalogue quests. Shimmerstone generation is disabled in both dimensions; selected

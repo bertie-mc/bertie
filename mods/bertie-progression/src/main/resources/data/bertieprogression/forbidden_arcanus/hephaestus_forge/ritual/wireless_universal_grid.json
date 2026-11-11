@@ -1,0 +1,56 @@
+{
+  "forge_tier": 3,
+  "essences": {
+    "aureal": 5000,
+    "experience": 2000
+  },
+  "main_ingredient": {
+    "item": "anvilcraft:space_overcompressor"
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "refinedstorage:wireless_grid"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "refinedstorage_quartz_arsenal:wireless_crafting_grid"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "refinedstorage:wireless_autocrafting_monitor"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cognition:primordial_assembly"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "oritech:flux_gate"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "universalgrid:wireless_universal_grid",
+      "count": 1
+    }
+  }
+}

@@ -1,6 +1,5 @@
 {
-  "type": "create:mechanical_crafting",
-  "accept_mirrored": false,
+  "type": "avaritia:shaped_table",
   "pattern": [
     "QQAQQ",
     "QFTFQ",
@@ -40,5 +39,6 @@
   "result": {
     "id": "refinedstorage:network_transmitter",
     "count": 1
-  }
+  },
+  "tier": 2
 }

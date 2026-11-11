@@ -4,6 +4,10 @@
     {
       "id": "pastel:clover",
       "required": false
+    },
+    {
+      "id": "pastel:four_leaf_clover",
+      "required": false
     }
   ]
 }

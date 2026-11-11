@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QUQ",
+    "USU",
+    "QQQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "U": {
+      "item": "refinedstorage:upgrade"
+    },
+    "S": {
+      "item": "refinedstorage:speed_upgrade"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:stack_upgrade",
+    "count": 1
+  }
+}

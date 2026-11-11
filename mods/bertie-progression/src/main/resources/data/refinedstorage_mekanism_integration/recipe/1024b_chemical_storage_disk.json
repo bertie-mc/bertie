@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GRG",
+    "RPR",
+    "EEE"
+  ],
+  "key": {
+    "G": {
+      "tag": "c:glass_blocks"
+    },
+    "R": {
+      "item": "forbidden_arcanus:arcane_crystal_dust"
+    },
+    "P": {
+      "item": "refinedstorage_mekanism_integration:1024b_chemical_storage_part"
+    },
+    "E": {
+      "tag": "c:ingots/osmium"
+    }
+  },
+  "result": {
+    "id": "refinedstorage_mekanism_integration:1024b_chemical_storage_disk"
+  }
+}

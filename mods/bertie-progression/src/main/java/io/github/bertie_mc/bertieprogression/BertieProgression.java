@@ -39,6 +39,11 @@ public final class BertieProgression {
             NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.anvil.PairedAnvilCollision.class);
         }
         ModRecipes.SERIALIZERS.register(modBus);
+        ModRecipes.INGREDIENTS.register(modBus);
+        io.github.bertie_mc.bertieprogression.ender.EnderEyeIntegration.register(modBus);
+        if (ModList.get().isLoaded("refinedstorage")) {
+            io.github.bertie_mc.bertieprogression.compat.RefinedFortune.register(modBus);
+        }
         ModRecipes.TYPES.register(modBus);
         if (ModList.get().isLoaded("mekanism")) {
             io.github.bertie_mc.bertieprogression.compat.MekanismMaterials.register(modBus);

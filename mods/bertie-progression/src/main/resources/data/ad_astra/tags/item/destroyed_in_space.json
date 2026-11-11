@@ -28,6 +28,10 @@
     {
       "id": "pastel:doombloom_seed",
       "required": false
+    },
+    {
+      "id": "pastel:four_leaf_clover",
+      "required": false
     }
   ]
 }

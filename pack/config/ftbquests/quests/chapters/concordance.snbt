@@ -87,44 +87,6 @@
 		{
 			dependencies: ["5B00000000000001"]
 			icon: {
-				id: "endrem:wither_eye"
-			}
-			id: "5B00000000000005"
-			rewards: [{
-				id: "5B00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B00000001000005"
-				item: { count: 1, id: "endrem:wither_eye" }
-				type: "item"
-			}]
-			x: 3.49d
-			y: -4.25d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
-				id: "endrem:rogue_eye"
-			}
-			id: "5B00000000000006"
-			rewards: [{
-				id: "5B00000002000006"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B00000001000006"
-				item: { count: 1, id: "endrem:rogue_eye" }
-				type: "item"
-			}]
-			x: 3.09d
-			y: -2.54d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
 				id: "endrem:magical_eye"
 			}
 			id: "5B00000000000007"
@@ -140,25 +102,6 @@
 			}]
 			x: 4.85d
 			y: -2.59d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
-				id: "endrem:black_eye"
-			}
-			id: "5B00000000000008"
-			rewards: [{
-				id: "5B00000002000008"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B00000001000008"
-				item: { count: 1, id: "endrem:black_eye" }
-				type: "item"
-			}]
-			x: 3.83d
-			y: -1.16d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -182,25 +125,6 @@
 		{
 			dependencies: ["5B00000000000001"]
 			icon: {
-				id: "endrem:guardian_eye"
-			}
-			id: "5B0000000000000A"
-			rewards: [{
-				id: "5B0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B0000000100000A"
-				item: { count: 1, id: "endrem:guardian_eye" }
-				type: "item"
-			}]
-			x: 3.98d
-			y: 0.39d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
 				id: "endrem:cursed_eye"
 			}
 			id: "5B0000000000000B"
@@ -216,25 +140,6 @@
 			}]
 			x: 5.26d
 			y: 1.6d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
-				id: "endrem:undead_eye"
-			}
-			id: "5B0000000000000C"
-			rewards: [{
-				id: "5B0000000200000C"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B0000000100000C"
-				item: { count: 1, id: "endrem:undead_eye" }
-				type: "item"
-			}]
-			x: 3.53d
-			y: 1.89d
 		}
 		{
 			dependencies: ["5B00000000000001"]
@@ -277,25 +182,6 @@
 		{
 			dependencies: ["5B00000000000001"]
 			icon: {
-				id: "endrem:witch_eye"
-			}
-			id: "5B0000000000000F"
-			rewards: [{
-				id: "5B0000000200000F"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "5B0000000100000F"
-				item: { count: 1, id: "endrem:witch_eye" }
-				type: "item"
-			}]
-			x: 2.59d
-			y: 4.85d
-		}
-		{
-			dependencies: ["5B00000000000001"]
-			icon: {
 				id: "endrem:cryptic_eye"
 			}
 			id: "5B00000000000010"
@@ -332,24 +218,7 @@
 			y: 5.47d
 		}
 		{
-			dependencies: [
-				"5B00000000000002"
-				"5B00000000000003"
-				"5B00000000000004"
-				"5B00000000000005"
-				"5B00000000000006"
-				"5B00000000000007"
-				"5B00000000000008"
-				"5B00000000000009"
-				"5B0000000000000A"
-				"5B0000000000000B"
-				"5B0000000000000C"
-				"5B0000000000000D"
-				"5B0000000000000E"
-				"5B0000000000000F"
-				"5B00000000000010"
-				"5B00000000000011"
-			]
+			dependencies: ["5B00000000000002", "5B00000000000003", "5B00000000000004", "5B00000000000007", "5B00000000000009", "5B0000000000000B", "5B0000000000000D", "5B0000000000000E", "5B00000000000010", "5B00000000000011", "5B00000000000090", "5B00000000000091"]
 			icon: {
 				id: "minecraft:end_portal_frame"
 			}
@@ -484,6 +353,34 @@
 			}]
 			x: 10.5d
 			y: -3.0d
+		}
+		{
+			y: -4.25d
+			x: 3.49d
+			dependencies: ["5B00000000000001"]
+			id: "5B00000000000090"
+			icon: { id: "endrem:trial_eye" }
+			tasks: [{
+				id: "5B00000001000090"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "endrem:trial_eye" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.16d
+			x: 3.83d
+			dependencies: ["5B00000000000001"]
+			id: "5B00000000000091"
+			icon: { id: "endrem:sculk_eye" }
+			tasks: [{
+				id: "5B00000001000091"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "endrem:sculk_eye" }
+				type: "item"
+			}]
 		}
 	]
 }

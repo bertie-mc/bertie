@@ -13,7 +13,7 @@ This Casing is a different block from Mekanism's Steel Casing.
 
 Quartz-Enriched Iron and Copper use the ordinary 3×3 pattern below, with M
 as the matching metal ingot and Q as Quartz. Five Ingots and four Quartz
-produce one enriched Ingot. Their Assembler alternatives retain the native
+produce two enriched Ingots. Their Assembler alternatives retain the native
 three Ingots plus one Quartz → four enriched Ingots ratio, in 80 ticks.
 
 ```text
@@ -89,8 +89,9 @@ Disk Housing keeps its ordinary shaped craft with Arcane Crystal Dust in all
 three former Redstone positions. Storage Monitor also keeps its ordinary craft,
 using Onyx Glass in the three right-column positions.
 
-Disk Drive, Disk Interface, Network Transmitter and Network Receiver use full
-5×5 Mechanical Crafting layouts and produce one device. Drive uses eleven
+Disk Drive and Disk Interface use full 5×5 Mechanical Crafting layouts and
+produce one device. Network Transmitter and Receiver use the Nether Crafting
+Table with their existing 5×5 layouts. Drive uses eleven
 Quartz-Enriched Iron, eight Housings, three Advanced Processors, two Processing
 Units and a Casing. Interface uses eleven Quartz-Enriched Iron, six Housings,
 two Processing Units, two Onyx Glass, a Flux Gate, both Core types and a Casing.
@@ -107,6 +108,47 @@ six Quartz-Enriched Iron and three Advanced Processors for one Wrench.
 The Nesting Shulker chain consumes two identical inputs at every tier: two
 Shulker Boxes → Nesting, two Nesting → Over Nesting, two Over Nesting →
 Supercritical. One Supercritical box therefore costs eight ordinary boxes.
+
+Autocrafter uses the 5×5 Nether Crafting Table: thirteen Quartz-Enriched Iron,
+two Flux Gates, two Elite Control Circuits, two Advanced Processors, one
+Construction Core, one RS Machine Casing, one Compressed Crafting Table and
+three Cognitive Alloy. Output is one Autocrafter.
+
+All twelve item/fluid/chemical part-to-disk crafts that directly consumed
+Redstone now use Arcane Crystal Dust. Housing-plus-part alternatives retain
+their existing inputs. Advanced Storage Housing uses Semi-Permeable Tinted
+Glass in both top corners, retaining its other materials.
+
+## Upgrades and wireless devices
+
+Base Upgrade uses seven Quartz-Enriched Iron, Semi-Permeable Tinted Glass and
+an Improved Processor. Speed uses five enriched Iron, two Lite, a base Upgrade
+and an ordinary Potion of Swiftness, consuming the bottle. Stack uses five
+enriched Iron, three base Upgrades and one Speed Upgrade.
+
+Fortune I–VIII use five enriched Iron, a Four-Leaved Clover, Rabbit's Foot and
+a matching-level Fortune book. The centre is a base Upgrade for I and the
+previous Fortune tier for II–VIII. Other enchantments may coexist on the book.
+IV–VIII retain Refined Storage IDs, native Destructor compatibility and the
+native Fortune III energy rate. The highest installed Fortune applies, while
+Silk Touch retains priority. Native Clover generation and bonemealing again
+include the Four-Leaved variant.
+
+Silk Touch uses its actual enchanted book above a base Upgrade, Raven Feathers
+on both sides and five enriched Iron. Autocrafting Upgrade uses Compressed
+Crafting Tables on both sides. Range Upgrade uses Warp Flux instead of its
+three Pearls, and Configuration Card uses a Basic Processor.
+
+Wireless Grid, Wireless Crafting Grid and Wireless Autocrafting Monitor use a
+Teleportation Core in place of their top Pearl. Wireless Universal Grid is a
+Forge III ritual: Space Overcompressor as its main input; the three wireless
+devices, Primordial Assembly, two Flux Gates and four Carbon Fibre Strands on
+pedestals; 5000 Aureal and 2000 Ink. The selected 16×16 active/inactive artwork
+replaces its original textures.
+
+Wireless Transmitter uses a T2 anvil at 64 m/t against a Quantum Entangloporter
+placed directly above a Space Overcompressor. The Entangloporter and anvil are
+consumed, the Space Overcompressor remains, and one Transmitter is produced.
 
 ## Quests
 

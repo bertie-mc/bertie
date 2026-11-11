@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QBQ",
+    "CUR",
+    "QQQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "B": {
+      "type": "bertieprogression:enchanted_book",
+      "enchantment": "minecraft:fortune",
+      "level": 6
+    },
+    "C": {
+      "item": "pastel:four_leaf_clover"
+    },
+    "R": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "U": {
+      "item": "refinedstorage:fortune_5_upgrade"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:fortune_6_upgrade",
+    "count": 1
+  }
+}

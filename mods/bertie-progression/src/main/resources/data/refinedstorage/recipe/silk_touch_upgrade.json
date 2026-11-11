@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "QBQ",
+    "FUF",
+    "QQQ"
+  ],
+  "key": {
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "B": {
+      "type": "bertieprogression:enchanted_book",
+      "enchantment": "minecraft:silk_touch",
+      "level": 1
+    },
+    "F": {
+      "item": "twilightforest:raven_feather"
+    },
+    "U": {
+      "item": "refinedstorage:upgrade"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:silk_touch_upgrade",
+    "count": 1
+  }
+}
