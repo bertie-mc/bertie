@@ -69,8 +69,13 @@ C C C C C
 ## Quests
 
 The post-Forge III quest retains its identity and position but now requests
-Machine Casing. Controller is to its right and requires Casing and Advanced
-Processor; Cable is below Casing and requires Casing.
+Machine Casing. Controller is to its right and depends on Casing; Cable is
+below Casing and also depends on Casing. Grid is above Controller, leading
+to Crafting Grid and to Pattern → Pattern Grid.
+
+External Storage sits below Cable. Importer → Exporter branches to its left,
+and Constructor → Destructor to its right, with the first quest of each branch
+depending on Cable. Disk Drive is below Controller and leads to Disk Interface.
 
 Basic, Improved and Advanced Processor form an upward column, with a linked
 64-item objective above-right of each. Construction and Destruction branch
