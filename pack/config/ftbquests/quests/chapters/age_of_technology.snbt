@@ -1458,7 +1458,7 @@
 			}]
 		}
 		{
-			y: -3.0d
+			y: -4.5d
 			x: 18.0d
 			dependencies: ["5C00000000009352"]
 			id: "5C00000000009353"
@@ -1527,8 +1527,8 @@
 			}]
 		}
 		{
-			y: -1.5d
-			x: 19.5d
+			y: -3.0d
+			x: 18.0d
 			dependencies: ["5C00000000009357"]
 			id: "5C00000000009358"
 			icon: { id: "bertieprogression:coal_dense_charge" }
@@ -1553,7 +1553,7 @@
 			}]
 		}
 		{
-			y: 0.0d
+			y: -1.5d
 			x: 21.0d
 			dependencies: ["5C00000000009359"]
 			id: "5C0000000000935A"
@@ -1645,7 +1645,7 @@
 		}
 		{
 			y: 3.0d
-			x: 22.5d
+			x: 25.5d
 			dependencies: ["5C00000000009360"]
 			id: "5C00000000009361"
 			icon: { id: "oritech:foundry_block" }
@@ -1658,7 +1658,7 @@
 		}
 		{
 			y: 3.0d
-			x: 24.0d
+			x: 27.0d
 			dependencies: ["5C00000000009361"]
 			id: "5C00000000009362"
 			icon: { id: "oritech:duratium_ingot" }
@@ -1671,7 +1671,7 @@
 		}
 		{
 			y: 3.0d
-			x: 21.0d
+			x: 24.0d
 			dependencies: ["5C00000000009361"]
 			id: "5C00000000009363"
 			icon: { id: "oritech:energite_ingot" }
@@ -1683,7 +1683,7 @@
 			}]
 		}
 		{
-			y: -4.5d
+			y: -6.0d
 			x: 18.0d
 			dependencies: ["5C00000000009353"]
 			id: "5C00000000009364"
@@ -1943,8 +1943,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 22.5d
+			y: 0.0d
+			x: 25.5d
 			dependencies: ["5C00000000009360"]
 			id: "5C0000000000A010"
 			icon: { id: "oritech:flux_gate" }
@@ -1956,8 +1956,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 21.0d
+			y: 4.5d
+			x: 24.0d
 			dependencies: ["5C00000000009363"]
 			id: "5C0000000000A011"
 			icon: { id: "oritech:energite_ingot" }
@@ -1970,7 +1970,7 @@
 		}
 		{
 			y: 4.5d
-			x: 25.5d
+			x: 27.0d
 			dependencies: ["5C00000000009362"]
 			id: "5C0000000000A012"
 			icon: { id: "oritech:duratium_ingot" }
@@ -1997,7 +1997,7 @@
 		}
 		{
 			y: 4.5d
-			x: 21.0d
+			x: 22.5d
 			dependencies: ["5C00000000009363"]
 			id: "5C00000000000091"
 			icon: { id: "mekanismgenerators:solar_panel" }
@@ -2010,8 +2010,8 @@
 			}]
 		}
 		{
-			y: 4.5d
-			x: 22.5d
+			y: 6.0d
+			x: 24.0d
 			dependencies: ["5C00000000000091"]
 			id: "5C00000000000092"
 			icon: { id: "mekanismgenerators:solar_generator" }
@@ -2025,7 +2025,7 @@
 		}
 		{
 			y: 4.5d
-			x: 24.0d
+			x: 25.5d
 			dependencies: ["5C00000000000092"]
 			id: "5C00000000000093"
 			icon: { id: "oritech:big_solar_panel_block" }
@@ -2038,9 +2038,9 @@
 			}]
 		}
 		{
-			y: -1.5d
+			dependencies: ["5C00000000009359", "5C0000000000009D"]
+			y: 0.0d
 			x: 21.0d
-			dependencies: ["5C00000000009359"]
 			id: "5C00000000000094"
 			icon: { id: "oritech:power_pole_block" }
 			tasks: [{
@@ -2110,8 +2110,8 @@
 		{
 			size: 2.0d
 			dependencies: ["5C00000000000098", "5C00000000009362"]
-			y: 1.5d
-			x: 32.25d
+			y: 3.0d
+			x: 30.0d
 			id: "5C00000000000099"
 			icon: { id: "oritech:deep_drill_block" }
 			tasks: [{
@@ -2123,7 +2123,7 @@
 			}]
 		}
 		{
-			y: 0.0d
+			y: -1.5d
 			x: 25.5d
 			dependencies: ["5C0000000000935F"]
 			id: "5C0000000000009A"
@@ -2138,8 +2138,8 @@
 		}
 		{
 			size: 2.0d
-			y: 0.0d
-			x: 27.75d
+			y: -1.0d
+			x: 28.0d
 			dependencies: ["5C0000000000009A"]
 			id: "5C0000000000009B"
 			icon: { id: "mekanism:teleporter" }
@@ -2155,6 +2155,160 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "mekanism:teleporter" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 22.5d
+			dependencies: ["5C00000000009363"]
+			id: "5C0000000000009C"
+			icon: { id: "oritech:basic_battery" }
+			tasks: [{
+				id: "5C0000000100009C"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:basic_battery" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 21.0d
+			dependencies: ["5C0000000000009C"]
+			id: "5C0000000000009D"
+			icon: { id: "mekanism:energy_tablet" }
+			tasks: [{
+				id: "5C0000000100009D"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:energy_tablet" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 22.5d
+			dependencies: ["5C0000000000009D"]
+			id: "5C0000000000009E"
+			icon: { id: "mekanismgenerators:wind_generator" }
+			tasks: [{
+				id: "5C0000000100009E"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanismgenerators:wind_generator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 21.0d
+			dependencies: ["5C0000000000009D"]
+			id: "5C0000000000009F"
+			icon: { id: "mekanism:basic_energy_cube" }
+			tasks: [{
+				id: "5C0000000100009F"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:basic_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 21.0d
+			dependencies: ["5C0000000000009F"]
+			id: "5C000000000000A0"
+			icon: { id: "mekanism:advanced_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A0"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:advanced_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 6.0d
+			x: 21.0d
+			dependencies: ["5C000000000000A0"]
+			id: "5C000000000000A1"
+			icon: { id: "mekanism:elite_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A1"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:elite_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 7.5d
+			x: 21.0d
+			dependencies: ["5C000000000000A1"]
+			id: "5C000000000000A2"
+			icon: { id: "mekanism:ultimate_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:ultimate_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 9.0d
+			x: 21.0d
+			dependencies: ["5C000000000000A2"]
+			id: "5C000000000000A3"
+			icon: { id: "mekanism_extras:absolute_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism_extras:absolute_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 10.5d
+			x: 21.0d
+			dependencies: ["5C000000000000A3"]
+			id: "5C000000000000A4"
+			icon: { id: "mekanism_extras:supreme_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A4"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism_extras:supreme_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 12.0d
+			x: 21.0d
+			dependencies: ["5C000000000000A4"]
+			id: "5C000000000000A5"
+			icon: { id: "mekanism_extras:cosmic_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism_extras:cosmic_energy_cube" }
+				type: "item"
+			}]
+		}
+		{
+			y: 13.5d
+			x: 21.0d
+			dependencies: ["5C000000000000A5"]
+			id: "5C000000000000A6"
+			icon: { id: "mekanism_extras:infinite_energy_cube" }
+			tasks: [{
+				id: "5C000000010000A6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism_extras:infinite_energy_cube" }
 				type: "item"
 			}]
 		}
