@@ -1632,7 +1632,7 @@
 		}
 		{
 			y: 1.5d
-			x: 22.5d
+			x: 24.0d
 			dependencies: ["5C0000000000935F"]
 			id: "5C00000000009360"
 			icon: { id: "oritech:flux_gate" }
@@ -1644,8 +1644,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 21.0d
+			y: 3.0d
+			x: 22.5d
 			dependencies: ["5C00000000009360"]
 			id: "5C00000000009361"
 			icon: { id: "oritech:foundry_block" }
@@ -1658,7 +1658,7 @@
 		}
 		{
 			y: 3.0d
-			x: 22.5d
+			x: 24.0d
 			dependencies: ["5C00000000009361"]
 			id: "5C00000000009362"
 			icon: { id: "oritech:duratium_ingot" }
@@ -1944,7 +1944,7 @@
 		}
 		{
 			y: 1.5d
-			x: 24.0d
+			x: 22.5d
 			dependencies: ["5C00000000009360"]
 			id: "5C0000000000A010"
 			icon: { id: "oritech:flux_gate" }
@@ -1956,7 +1956,7 @@
 			}]
 		}
 		{
-			y: 4.5d
+			y: 1.5d
 			x: 21.0d
 			dependencies: ["5C00000000009363"]
 			id: "5C0000000000A011"
@@ -1970,7 +1970,7 @@
 		}
 		{
 			y: 4.5d
-			x: 22.5d
+			x: 25.5d
 			dependencies: ["5C00000000009362"]
 			id: "5C0000000000A012"
 			icon: { id: "oritech:duratium_ingot" }
@@ -1992,6 +1992,48 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "mekanism:configurator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 21.0d
+			dependencies: ["5C00000000009363"]
+			id: "5C00000000000091"
+			icon: { id: "mekanismgenerators:solar_panel" }
+			tasks: [{
+				id: "5C00000001000091"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanismgenerators:solar_panel" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 22.5d
+			dependencies: ["5C00000000000091"]
+			id: "5C00000000000092"
+			icon: { id: "mekanismgenerators:solar_generator" }
+			tasks: [{
+				id: "5C00000001000092"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanismgenerators:solar_generator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 24.0d
+			dependencies: ["5C00000000000092"]
+			id: "5C00000000000093"
+			icon: { id: "oritech:big_solar_panel_block" }
+			tasks: [{
+				id: "5C00000001000093"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:big_solar_panel_block" }
 				type: "item"
 			}]
 		}

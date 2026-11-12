@@ -2987,4 +2987,7 @@
 	quest.5B00000000000090.title: "Trial Eye"
 	quest.5B00000000000091.title: "Sculk Eye"
 	quest.5C00000000000090.title: "Configurator"
+	quest.5C00000000000091.title: "Solar Panel"
+	quest.5C00000000000092.title: "Solar Generator"
+	quest.5C00000000000093.title: "Big Solar Panel"
 }
