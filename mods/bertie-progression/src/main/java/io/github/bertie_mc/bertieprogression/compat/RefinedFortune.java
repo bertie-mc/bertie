@@ -6,8 +6,10 @@ import com.refinedmods.refinedstorage.common.upgrade.FortuneUpgradeItem;
 import com.refinedmods.refinedstorage.common.upgrade.UpgradeDestinations;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.neoforged.bus.api.IEventBus;
@@ -47,7 +49,19 @@ public final class RefinedFortune {
 
     private static void creative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().location().getNamespace().equals("refinedstorage")) {
-            UPGRADES.values().forEach(item -> event.accept(item.get()));
+            ItemStack pivot = event.getParentEntries().stream()
+                    .filter(stack -> BuiltInRegistries.ITEM
+                            .getKey(stack.getItem())
+                            .toString()
+                            .equals("refinedstorage:fortune_3_upgrade"))
+                    .findFirst()
+                    .orElse(ItemStack.EMPTY);
+            if (pivot.isEmpty()) return;
+            for (var item : UPGRADES.values()) {
+                ItemStack next = new ItemStack(item.get());
+                event.insertAfter(pivot, next, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                pivot = next;
+            }
         }
     }
 

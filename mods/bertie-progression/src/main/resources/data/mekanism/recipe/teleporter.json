@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "GASAG",
+    "ACFDA",
+    "GCKDG",
+    "ACTDA",
+    "GASAG"
+  ],
+  "key": {
+    "G": {
+      "item": "anvilcraft:cursed_gold_ingot"
+    },
+    "A": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "S": {
+      "item": "l2complements:sculkium_ingot"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "T": {
+      "item": "mekanism:teleportation_core"
+    }
+  },
+  "result": {
+    "id": "mekanism:teleporter",
+    "count": 1
+  }
+}

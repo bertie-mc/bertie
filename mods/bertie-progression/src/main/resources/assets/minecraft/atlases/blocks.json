@@ -114,14 +114,6 @@
     },
     {
       "type": "minecraft:single",
-      "resource": "bertieprogression:chemical/dirty_ostrum"
-    },
-    {
-      "type": "minecraft:single",
-      "resource": "bertieprogression:chemical/clean_ostrum"
-    },
-    {
-      "type": "minecraft:single",
       "resource": "bertieprogression:chemical/dirty_bloody"
     },
     {

@@ -1,6 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    "bertieprogression:ostrum_gem"
-  ]
+  "replace": true,
+  "values": []
 }

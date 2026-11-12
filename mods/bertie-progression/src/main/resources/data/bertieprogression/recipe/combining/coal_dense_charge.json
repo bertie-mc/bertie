@@ -6,7 +6,7 @@
   },
   "extra_input": {
     "count": 1,
-    "item": "oritech:plastic_sheet"
+    "item": "mekanism:hdpe_sheet"
   },
   "output": {
     "id": "bertieprogression:coal_dense_charge",

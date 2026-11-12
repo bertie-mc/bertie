@@ -1,0 +1,29 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    " SS  ",
+    "SEVS ",
+    "SVCVS",
+    " SVES",
+    "  SS "
+  ],
+  "key": {
+    "S": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "E": {
+      "item": "oritech:enderic_compound"
+    },
+    "V": {
+      "item": "anvilcraft:void_matter"
+    },
+    "C": {
+      "item": "cognition:cognitive_crystal"
+    }
+  },
+  "result": {
+    "id": "oritech:dubios_container",
+    "count": 1
+  }
+}

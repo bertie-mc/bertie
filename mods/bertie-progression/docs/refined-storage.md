@@ -116,12 +116,12 @@ three Cognitive Alloy. Output is one Autocrafter.
 
 All twelve item/fluid/chemical part-to-disk crafts that directly consumed
 Redstone now use Arcane Crystal Dust. Housing-plus-part alternatives retain
-their existing inputs. Advanced Storage Housing uses Semi-Permeable Tinted
+their existing inputs. Advanced Storage Housing uses Tinted
 Glass in both top corners, retaining its other materials.
 
 ## Upgrades and wireless devices
 
-Base Upgrade uses seven Quartz-Enriched Iron, Semi-Permeable Tinted Glass and
+Base Upgrade uses seven Quartz-Enriched Iron, Tinted Glass and
 an Improved Processor. Speed uses five enriched Iron, two Lite, a base Upgrade
 and an ordinary Potion of Swiftness, consuming the bottle. Stack uses five
 enriched Iron, three base Upgrades and one Speed Upgrade.

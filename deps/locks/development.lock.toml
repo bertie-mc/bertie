@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "1220963b63699648e084c4b2bf7f8399b19c4b2e0e885065649bb394982d726f"
+inputs-hash = "024004bd3201d0458731c501ff891220263cdd46241f00684f4c052ab0a4cb11"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1197,10 +1197,6 @@ mod = "modrinth:xq3wqd0E:jxID7Dx0"
 any = "modrinth:AANobbMI:Pb3OXVqC"
 mod = "modrinth:AANobbMI:Pb3OXVqC"
 
-[components."solar-flux-reborn"]
-any = "modrinth:4QG5lev4:8aToYlt2"
-mod = "modrinth:4QG5lev4:8aToYlt2"
-
 [components."sophisticated-backpacks"]
 any = "modrinth:TyCTlI4b:At57qCDT"
 mod = "modrinth:TyCTlI4b:At57qCDT"
@@ -2296,26 +2292,6 @@ provides = ["euphoria_patcher"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:4QG5lev4:8aToYlt2"]
-name = "solar-flux-reborn"
-component = "solar-flux-reborn"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "4QG5lev4"
-version = "8aToYlt2"
-filename = "SolarFluxReborn-1.21.1-21.1.8.jar"
-project-id = "4QG5lev4"
-version-id = "8aToYlt2"
-provides = ["solarflux"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:PlkSuVtM:9fbv71EY", "mod-id" = "hammerlib", "version-range" = "[21.0.14,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "missing" = "ae2", "mod-id" = "ae2", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:227639:7797302", "mod-id" = "twilightforest", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -5315,25 +5291,6 @@ filename = "arcaneessenceblock-1.0.1-neoforge-1.21.1.jar"
 project-id = "Pkj2hNRk"
 version-id = "Amnk4kDG"
 provides = ["arcaneessenceblock"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:PlkSuVtM:9fbv71EY"]
-name = "hammer-lib"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "PlkSuVtM"
-version = "9fbv71EY"
-filename = "HammerLib-1.21-21.0.14.jar"
-project-id = "PlkSuVtM"
-version-id = "9fbv71EY"
-provides = ["hammerlib"]
 bundled-provides = []
 required = []
 optional = []

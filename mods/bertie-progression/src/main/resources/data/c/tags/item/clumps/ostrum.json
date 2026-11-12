@@ -1,6 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    "bertieprogression:ostrum_clump"
-  ]
+  "replace": true,
+  "values": []
 }

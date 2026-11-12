@@ -33,12 +33,18 @@ Fire and produce a Gem plus four Specs; seeded Spec recombination closes the loo
 
 Bronze Sheets and Platinum Rods/Wires use the established material-form routes.
 Electric and Resonant Coils have Nether Table crafts and Bound Soul variants.
-Dense Coal Charge combines 32 Coal Dust with Plastic Sheet and feeds Carbon Fibre
+Dense Coal Charge combines 32 Coal Dust with HDPE Sheet and feeds Carbon Fibre
 Strands. Refining supplies Steam, Sheol Fire and Strange Matter from Lava, with
 Pearl Fragment and End Dust variants. Oritech supplies the canonical Sulfuric
 Acid liquid; Mekanism's chemical remains available through the Rotary machine.
 
 ### Blocks
+
+`mana_charged_fluorite_block` packs nine Mana-Charged Fluorite and unpacks back
+into nine. A Giant Anvil crafts an Overcharged Crystal from a 3×3×3 cube with a
+Cognitive Crystal Block at its center, eight charged Fluorite Blocks at the corners
+and eighteen Superconductors elsewhere. Cover it with nine Crafting Tables. The
+result drops as an item without a Space Overcompressor; particle collision remains.
 
 `pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon
 mining properties and drops itself even when mined by hand. Stand on it and crouch to
@@ -72,6 +78,13 @@ are documented in [Refined Storage progression](docs/refined-storage.md).
 The [End eye route](docs/end-eyes.md) retains twelve eyes with distinct loot,
 trading, archaeology and interaction sources. Cursed Eye comes from Piglin
 conversion; Corrupted Eye is the raid-victory reward.
+Magical Eye consumes an offhand Eye of Ender when a successful spell payment leaves
+exactly zero mana. Free casts and rounded display values do not qualify.
+
+Technology uses HDPE Sheet throughout. Empty Capacitors have a Basic Chemical Tank
+and Sulfuric Acid Centrifuge route; Batteries use Capacitors, Energite and HDPE,
+and Energy Tablets feed the Transmission Pole. Solar generators and teleportation
+have Nether Table recipes. Fortune IV–VIII follow III in creative and EMI ordering.
 
 The Pastel content selection retains Imbrifer resources and their building families.
 Withdrawn items leave recipes, loot, item tags, creative tabs, EMI and equipment

@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (442)
+## Mods (440)
 
 | Mod |
 |---|
@@ -359,7 +359,6 @@
 | `smooth-swapping` |
 | `sneak-through-berries` |
 | `sodium` |
-| `solar-flux-reborn` |
 | `sophisticated-backpacks` |
 | `sophisticated-core` |
 | `soul-fire-d` |

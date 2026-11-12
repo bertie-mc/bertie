@@ -133,7 +133,7 @@ recipes. Bound Soul alternatives produce 32 Boards, 12 Coils or three Motors.
 Assembler alternatives produce one Board, Coil or Motor; their Bound Soul
 variants produce sixteen Boards, eight Coils or two Motors. Electric Coil uses
 two Electrum Wires, Cognitive Alloy and Magnetic Coil. Processing Unit uses
-Adamant, AnvilCraft Circuit Board, Electric Coil and Plastic Sheet.
+Adamant, AnvilCraft Circuit Board, Electric Coil and HDPE Sheet.
 
 Formulaic Assemblicator, Oritech Assembler and Centrifuge use 5×5 Nether-table
 recipes. Assembler consumes two Formulaic Assemblicators. Centrifuge uses three
@@ -198,8 +198,8 @@ retains its other amounts and outputs.
 
 Two vertically stacked HDPE Pellets craft one HDPE Rod. Three vertically stacked
 Rods craft one PlaStick; Lathe converts one Rod to one PlaStick. Four PlaSticks
-in a shaped 2×2 craft produce one Oritech Plastic Sheet. Stamper converts one
-PlaStick to one Plastic Sheet, or one Resin to one Hardened Resin; both retain
+in a shaped 2×2 craft produce one Oritech HDPE Sheet. Stamper converts one
+PlaStick to one HDPE Sheet, or one Resin to one Hardened Resin; both retain
 one matching output item as a reusable mould. Existing direct Raw Biopolymer
 Centrifuge routes and Mekanism HDPE Sheet production remain available.
 
@@ -279,6 +279,7 @@ Nether Dust return and Tungsten Nugget chances retain their existing values.
 
 Ore-processing machines and intermediates remain available. Their ore routes
 remain, apart from the selected ingot-crushing and Obsidian Dust changes above.
-Solar Flux Reborn panels and the large addon Heat Generator remain
-available. Dedicated heaters supply evaporation heat; retained recipes that used
+Solar Flux Reborn is withdrawn: its single-block late-game generation undermines
+multiblock power infrastructure. The large addon Heat Generator remains available.
+Dedicated heaters supply evaporation heat; retained recipes that used
 Advanced Solar Generator now use Oritech Big Solar Panel.

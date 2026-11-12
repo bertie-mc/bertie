@@ -1,0 +1,27 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "UURUU",
+    "FIIIF",
+    "UURUU"
+  ],
+  "key": {
+    "U": {
+      "item": "mekanism:ultimate_universal_cable"
+    },
+    "R": {
+      "item": "bertieprogression:platinum_coil"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "I": {
+      "item": "oritech:unholy_intelligence"
+    }
+  },
+  "result": {
+    "id": "oritech:superconductor",
+    "count": 4
+  }
+}

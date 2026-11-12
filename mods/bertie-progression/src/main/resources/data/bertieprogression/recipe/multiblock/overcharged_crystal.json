@@ -1,0 +1,37 @@
+{
+  "type": "anvilcraft:multiblock",
+  "pattern": {
+    "layers": [
+      [
+        "MSM",
+        "SSS",
+        "MSM"
+      ],
+      [
+        "SSS",
+        "SCS",
+        "SSS"
+      ],
+      [
+        "MSM",
+        "SSS",
+        "MSM"
+      ]
+    ],
+    "symbols": {
+      "M": {
+        "block": "bertieprogression:mana_charged_fluorite_block"
+      },
+      "S": {
+        "block": "oritech:superconductor"
+      },
+      "C": {
+        "block": "cognition:cognitive_crystal_block"
+      }
+    }
+  },
+  "result": {
+    "id": "oritech:overcharged_crystal",
+    "count": 1
+  }
+}

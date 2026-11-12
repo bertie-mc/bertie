@@ -1,6 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    "bertieprogression:ostrum_shard"
-  ]
+  "replace": true,
+  "values": []
 }

@@ -74,6 +74,30 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
 
     @Override
     public void register(EmiRegistry registry) {
+        if (net.neoforged.fml.ModList.get().isLoaded("refinedstorage")) RefinedFortuneEmi.reorder();
+        registry.removeRecipes(recipe -> ResourceLocation.parse("bertieprogression:multiblock/overcharged_crystal")
+                .equals(recipe.getId()));
+        var crystalCategory = new InWorldEmiCategory(
+                ResourceLocation.parse("bertieprogression:giant_anvil"),
+                stackOf("anvilcraft:giant_anvil", 1),
+                Component.literal("Giant Anvil Crafting"));
+        registry.addCategory(crystalCategory);
+        registry.addWorkstation(crystalCategory, stackOf("anvilcraft:giant_anvil", 1));
+        addRecipe(
+                registry,
+                crystalCategory,
+                "giant_anvil/overcharged_crystal",
+                ingredients(
+                        sized("cognition:cognitive_crystal_block", 1),
+                        sized("bertieprogression:mana_charged_fluorite_block", 8),
+                        sized("oritech:superconductor", 18)),
+                ingredients(stackOf("anvilcraft:giant_anvil", 1), EmiStack.of(Items.CRAFTING_TABLE, 9)),
+                stacks(stackOf("oritech:overcharged_crystal", 1)),
+                List.of(
+                        Component.literal(
+                                "Build a 3×3×3 cube: Cognitive Crystal Block at its center, Mana-Charged Fluorite Blocks at its 8 corners, Superconductors everywhere else."),
+                        Component.literal(
+                                "Cover with a 3×3 layer of Crafting Tables and drop a Giant Anvil onto it. Drops the crystal as an item; no Space Overcompressor needed.")));
         if (net.neoforged.fml.ModList.get().isLoaded("create")) {
             WireAssemblyEmi.register(registry);
         }

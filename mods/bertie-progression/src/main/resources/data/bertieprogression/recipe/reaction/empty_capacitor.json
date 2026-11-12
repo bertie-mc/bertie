@@ -2,7 +2,7 @@
   "type": "mekanism:reaction",
   "item_input": {
     "count": 1,
-    "item": "mekanism:elite_chemical_tank"
+    "item": "mekanism:advanced_chemical_tank"
   },
   "chemical_input": {
     "amount": 2000,

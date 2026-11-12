@@ -8,27 +8,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: {
-				id: "minecraft:barrier"
-			}
-			id: "5B00000000000001"
-			rewards: [{
-				id: "5B00000002000001"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				icon: {
-					id: "minecraft:barrier"
-				}
-				id: "5B00000001000001"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:nether_eye"
 			}
@@ -43,11 +24,12 @@
 				item: { count: 1, id: "endrem:nether_eye" }
 				type: "item"
 			}]
-			x: 0.39d
-			y: -3.98d
+			x: 4.526d
+			y: -4.627d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:cold_eye"
 			}
@@ -62,11 +44,12 @@
 				item: { count: 1, id: "endrem:cold_eye" }
 				type: "item"
 			}]
-			x: 1.6d
-			y: -5.26d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:old_eye"
 			}
@@ -81,11 +64,12 @@
 				item: { count: 1, id: "endrem:old_eye" }
 				type: "item"
 			}]
-			x: 1.89d
-			y: -3.53d
+			x: 3.343d
+			y: -3.602d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:magical_eye"
 			}
@@ -100,11 +84,12 @@
 				item: { count: 1, id: "endrem:magical_eye" }
 				type: "item"
 			}]
-			x: 4.85d
-			y: -2.59d
+			x: 2.497d
+			y: -2.285d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:lost_eye"
 			}
@@ -119,11 +104,12 @@
 				item: { count: 1, id: "endrem:lost_eye" }
 				type: "item"
 			}]
-			x: 5.47d
-			y: -0.54d
+			x: 2.056d
+			y: 0.783d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:cursed_eye"
 			}
@@ -138,11 +124,12 @@
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: 5.26d
-			y: 1.6d
+			x: 2.497d
+			y: 2.285d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:corrupted_eye"
 			}
@@ -157,11 +144,12 @@
 				item: { count: 1, id: "endrem:corrupted_eye" }
 				type: "item"
 			}]
-			x: 4.25d
-			y: 3.49d
+			x: 4.526d
+			y: 4.627d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:exotic_eye"
 			}
@@ -176,11 +164,12 @@
 				item: { count: 1, id: "endrem:exotic_eye" }
 				type: "item"
 			}]
-			x: 2.54d
-			y: 3.09d
+			x: 3.343d
+			y: 3.602d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:cryptic_eye"
 			}
@@ -195,11 +184,12 @@
 				item: { count: 1, id: "endrem:cryptic_eye" }
 				type: "item"
 			}]
-			x: 1.16d
-			y: 3.83d
+			x: 5.95d
+			y: 5.277d
 		}
 		{
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			icon: {
 				id: "endrem:evil_eye"
 			}
@@ -214,10 +204,12 @@
 				item: { count: 1, id: "endrem:evil_eye" }
 				type: "item"
 			}]
-			x: 0.54d
-			y: 5.47d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000002", "5B00000000000003", "5B00000000000004", "5B00000000000007", "5B00000000000009", "5B0000000000000B", "5B0000000000000D", "5B0000000000000E", "5B00000000000010", "5B00000000000011", "5B00000000000090", "5B00000000000091"]
 			icon: {
 				id: "minecraft:end_portal_frame"
@@ -240,6 +232,8 @@
 			y: 0.0d
 		}
 		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000012"]
 			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "minecraft:textures/entity/end_portal.png"}}
 			id: "5B00000000000013"
@@ -258,6 +252,8 @@
 			y: 0.0d
 		}
 		{
+			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "minecraft:dragon_head"
@@ -281,6 +277,8 @@
 			y: 0.0d
 		}
 		{
+			hide_until_deps_visible: true
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
 			icon: {
 				id: "minecraft:dragon_egg"
@@ -300,6 +298,8 @@
 			y: 1.5d
 		}
 		{
+			hide_until_deps_visible: true
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000015"]
 			icon: {
 				id: "dracolotl:bucket_of_dracolotl"
@@ -319,6 +319,9 @@
 			y: 3.0d
 		}
 		{
+			hide_until_deps_visible: true
+			hide_until_deps_complete: true
+			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apotheosis:ender_gem_case"
 			}
@@ -337,6 +340,9 @@
 			y: -3.0d
 		}
 		{
+			hide_until_deps_visible: true
+			hide_until_deps_complete: true
+			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apothic_enchanting:ender_library"
 			}
@@ -355,9 +361,10 @@
 			y: -3.0d
 		}
 		{
-			y: -4.25d
-			x: 3.49d
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -5.277d
+			x: 5.95d
 			id: "5B00000000000090"
 			icon: { id: "endrem:trial_eye" }
 			tasks: [{
@@ -369,9 +376,10 @@
 			}]
 		}
 		{
-			y: -1.16d
-			x: 3.83d
-			dependencies: ["5B00000000000001"]
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -0.783d
+			x: 2.056d
 			id: "5B00000000000091"
 			icon: { id: "endrem:sculk_eye" }
 			tasks: [{

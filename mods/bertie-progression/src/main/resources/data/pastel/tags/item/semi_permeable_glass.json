@@ -2,27 +2,27 @@
   "replace": true,
   "values": [
     {
-      "id": "pastel:tinted_semi_permeable_glass",
+      "id": "minecraft:tinted_glass",
       "required": false
     },
     {
-      "id": "pastel:radiant_semi_permeable_glass",
+      "id": "pastel:radiant_glass",
       "required": false
     },
     {
-      "id": "pastel:semi_permeable_glass",
+      "id": "minecraft:glass",
       "required": false
     },
     {
-      "id": "pastel:amethyst_semi_permeable_glass",
+      "id": "pastel:amethyst_glass",
       "required": false
     },
     {
-      "id": "pastel:onyx_semi_permeable_glass",
+      "id": "pastel:onyx_glass",
       "required": false
     },
     {
-      "id": "pastel:moonstone_semi_permeable_glass",
+      "id": "pastel:moonstone_glass",
       "required": false
     }
   ]

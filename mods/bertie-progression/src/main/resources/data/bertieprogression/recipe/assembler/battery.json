@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "anvilcraft:capacitor_empty"
+    },
+    {
+      "item": "anvilcraft:capacitor_empty"
+    },
+    {
+      "item": "oritech:energite_ingot"
+    },
+    {
+      "item": "mekanism:hdpe_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:basic_battery",
+      "count": 1
+    }
+  ],
+  "time": 48
+}

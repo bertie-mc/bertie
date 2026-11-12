@@ -1,0 +1,21 @@
+{
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "item": "mekanism:dust_netherite"
+    },
+    {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    {
+      "item": "anvilcraft:earth_core_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:netherite_ingot",
+      "count": 2
+    }
+  ],
+  "time": 200
+}

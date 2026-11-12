@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bertieprogression:block/mana_charged_fluorite_block"
+    }
+  }
+}

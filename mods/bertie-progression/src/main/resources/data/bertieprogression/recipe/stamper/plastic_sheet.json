@@ -6,10 +6,10 @@
   },
   "mold": {
     "count": 1,
-    "item": "oritech:plastic_sheet"
+    "item": "mekanism:hdpe_sheet"
   },
   "output": {
-    "id": "oritech:plastic_sheet",
+    "id": "mekanism:hdpe_sheet",
     "count": 1
   }
 }

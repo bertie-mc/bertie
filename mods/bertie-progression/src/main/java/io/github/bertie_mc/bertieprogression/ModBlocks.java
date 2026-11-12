@@ -14,6 +14,10 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> POCKET_DIMENSION =
             BLOCKS.registerSimpleBlock("pocket_dimension", BlockBehaviour.Properties.ofFullCopy(Blocks.BEACON));
 
+    public static final DeferredBlock<Block> MANA_CHARGED_FLUORITE_BLOCK = BLOCKS.registerSimpleBlock(
+            "mana_charged_fluorite_block",
+            BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK).lightLevel(state -> 7));
+
     /**
      * Eezo ore. It reads as bedrock at a glance and is meant to: it generates in the last few layers
      * of deepslate above the floor, where a player who is not looking for it walks past it.

@@ -128,6 +128,7 @@ dependencies {
     "integrationtestImplementation"(deps.oritech)
     "integrationtestRuntimeOnly"(deps.pastelMod)
     "integrationtestImplementation"(deps.refinedStorage)
+    "integrationtestImplementation"(deps.ironsSpellsNSpellbooks)
     "integrationtestRuntimeOnly"(deps.endRemasteredAdditions)
     "integrationtestRuntimeOnly"(deps.apothicEnchanting)
     "integrationtestRuntimeOnly"(deps.elementalMetalsMagicalMetallurgySeries)

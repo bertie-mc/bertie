@@ -294,7 +294,6 @@ dependencies {
     packComponents(deps.smoothSwapping)
     packComponents(deps.sneakThroughBerries)
     packComponents(deps.sodium)
-    packComponents(deps.solarFluxReborn)
     packComponents(deps.sophisticatedBackpacks)
     packComponents(deps.spark)
     packComponents(deps.sparkles)

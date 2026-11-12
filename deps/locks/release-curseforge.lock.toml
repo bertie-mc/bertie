@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "71a5045963fa4ec30e64aa714a0d899a6b321d9dc732f44763885c11f5c40e12"
+inputs-hash = "12f24a05a206c58d54fe9b0f2ebf75cfd2e388d0fb3ef04f4dd7b07d18ea72a6"
 relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -1196,10 +1196,6 @@ mod = "curseforge:324945:6564983"
 [components."sodium"]
 any = "curseforge:394468:6382651"
 mod = "curseforge:394468:6382651"
-
-[components."solar-flux-reborn"]
-any = "curseforge:246974:6776635"
-mod = "curseforge:246974:6776635"
 
 [components."sophisticated-backpacks"]
 any = "curseforge:422301:8213467"
@@ -4657,27 +4653,6 @@ provides = ["gravelminer"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:MBAkmtvl:3XiinKbh", "mod-id" = "balm", "version-range" = "[21.0.39,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:246974:6776635"]
-name = "solar-flux-reborn"
-component = "solar-flux-reborn"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "solar-flux-reborn-246974"
-version = "6776635"
-filename = "SolarFluxReborn-1.21.1-21.1.8.jar"
-project-id = 246974
-slug = "solar-flux-reborn"
-file-id = 6776635
-provides = ["solarflux"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:PlkSuVtM:9fbv71EY", "mod-id" = "hammerlib", "version-range" = "[21.0.14,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "missing" = "ae2", "mod-id" = "ae2", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:227639:7797302", "mod-id" = "twilightforest", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -9592,25 +9567,6 @@ filename = "Necronomicon-NeoForge-1.6.0+1.21.jar"
 project-id = "P1Kv5EAO"
 version-id = "4iO8Tbfj"
 provides = ["necronomicon"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:PlkSuVtM:9fbv71EY"]
-name = "hammer-lib"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "PlkSuVtM"
-version = "9fbv71EY"
-filename = "HammerLib-1.21-21.0.14.jar"
-project-id = "PlkSuVtM"
-version-id = "9fbv71EY"
-provides = ["hammerlib"]
 bundled-provides = []
 required = []
 optional = []

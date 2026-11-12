@@ -1,6 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    "bertieprogression:ostrum_dense_charge"
-  ]
+  "replace": true,
+  "values": []
 }

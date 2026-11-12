@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SSSSS",
+    "SFGFS",
+    "RCKCR",
+    "RCACR",
+    "REEER"
+  ],
+  "key": {
+    "S": {
+      "item": "mekanismgenerators:solar_panel"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "G": {
+      "item": "mekanismgenerators:solar_generator"
+    },
+    "R": {
+      "item": "bertieprogression:royal_steel_sheet"
+    },
+    "C": {
+      "item": "bertieprogression:platinum_coil"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "A": {
+      "item": "mekanism_extras:absolute_control_circuit"
+    },
+    "E": {
+      "item": "anvilcraft:ember_metal_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:big_solar_panel_block",
+    "count": 1
+  }
+}

@@ -4957,6 +4957,18 @@
     {
       "id": "endrem:undead_soul",
       "required": false
+    },
+    {
+      "id": "oritech:plastic_sheet",
+      "required": false
+    },
+    {
+      "id": "oritech:plastic_block",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_ostrum_ore",
+      "required": false
     }
   ]
 }

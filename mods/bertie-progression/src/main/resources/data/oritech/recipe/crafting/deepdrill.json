@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "RMRMR",
+    "MEOEM",
+    "RACAR",
+    "HAXAH",
+    "RHDHR"
+  ],
+  "key": {
+    "R": {
+      "item": "mekanism:alloy_reinforced"
+    },
+    "M": {
+      "item": "oritech:magnetic_coil"
+    },
+    "E": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "O": {
+      "item": "oritech:overcharged_crystal"
+    },
+    "A": {
+      "item": "mekanism_extras:alloy_radiance"
+    },
+    "C": {
+      "item": "mekanism:steel_casing"
+    },
+    "H": {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    "X": {
+      "item": "create:mechanical_drill"
+    },
+    "D": {
+      "item": "oritech:duratium_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:deep_drill_block",
+    "count": 1
+  }
+}

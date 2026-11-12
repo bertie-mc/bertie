@@ -1,0 +1,35 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "FAAAF",
+    "APCPA",
+    "ACVDA",
+    "APDPA",
+    "FAAAF"
+  ],
+  "key": {
+    "F": {
+      "item": "oritech:fluxite"
+    },
+    "A": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "P": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "D": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "V": {
+      "item": "anvilcraft:void_matter_block"
+    }
+  },
+  "result": {
+    "id": "mekanism:teleportation_core",
+    "count": 1
+  }
+}

@@ -4,7 +4,7 @@
   "fluid": "anvilcraft:fire",
   "ingredients": [
     {
-      "items": "#anvilcraft:netherite_block"
+      "items": "anvilcraft:heated_tungsten_block"
     },
     {
       "items": "elemental_metals:fire_infused_netherite_ingot"

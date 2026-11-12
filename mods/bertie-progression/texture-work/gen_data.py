@@ -5915,4 +5915,8 @@ from pastel_finalize import finalize as _finalize_pastel, pack_jars as _pastel_j
 _finalize_pastel(_Path(ROOT), _Path(os.environ["BERTIE_WORKSPACE"]),
                  _pastel_jars(_Path(ROOT).parent.parent, _Path(INSTANCE_MODS)))
 
+from tech_solar_recipes import apply as _apply_tech_solar, retire_ostrum as _retire_ostrum
+_apply_tech_solar(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
+_retire_ostrum(_Path(ROOT), _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

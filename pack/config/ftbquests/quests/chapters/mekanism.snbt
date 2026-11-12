@@ -755,21 +755,10 @@
 		}
 		{
 			id: "61C1ECA95D9A4280"
-			icon: {
-				id: "mekanismgenerators:solar_generator"
-			}
-			tasks: [
-				{
-					id: "61FF9407BEDBF3C5"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanismgenerators:solar_generator"
-					}
-				}
-			]
+			tasks: [{
+				id: "61FF9407BEDBF3C5"
+				type: "checkmark"
+			}]
 			x: 4.500d
 			y: 15.000d
 		}

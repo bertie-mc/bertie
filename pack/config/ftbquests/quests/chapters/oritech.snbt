@@ -112,21 +112,10 @@
 		}
 		{
 			id: "621129AE3D36DAF2"
-			icon: {
-				id: "oritech:deep_drill_block"
-			}
-			tasks: [
-				{
-					id: "62031E1E15D94EA8"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:deep_drill_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62031E1E15D94EA8"
+				type: "checkmark"
+			}]
 			x: -7.000d
 			y: -3.000d
 		}
@@ -370,21 +359,10 @@
 		}
 		{
 			id: "62A8F5342B5D078E"
-			icon: {
-				id: "oritech:power_pole_block"
-			}
-			tasks: [
-				{
-					id: "625927A73EA02672"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:power_pole_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "625927A73EA02672"
+				type: "checkmark"
+			}]
 			x: -7.000d
 			y: -6.000d
 		}
@@ -613,21 +591,10 @@
 		}
 		{
 			id: "629D84D74F39C289"
-			icon: {
-				id: "oritech:big_solar_panel_block"
-			}
-			tasks: [
-				{
-					id: "6275D6C7C3AA253A"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:big_solar_panel_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "6275D6C7C3AA253A"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: 9.750d
 		}

@@ -144,16 +144,6 @@ public final class OreMaterials {
             "eezo_spec",
             "eezo_dense_charge",
             "eezo_activated_crystal",
-            "ostrum_dust",
-            "ostrum_dirty_dust",
-            "ostrum_clump",
-            "ostrum_gem",
-            "ostrum_shard",
-            "ostrum_crystal",
-            "ostrum_spec",
-            "ostrum_dense_charge",
-            "ostrum_activated_crystal",
-            "ostrum_ingot",
             "bloody_dust",
             "bloody_dirty_dust",
             "bloody_clump",
@@ -173,8 +163,7 @@ public final class OreMaterials {
             "elvenite_dense_charge",
             "elvenite_activated_crystal",
             "raw_voiderite",
-            "raw_bloody",
-            "raw_ostrum");
+            "raw_bloody");
 
     public static final Map<String, Integer> SLURRIES = Map.ofEntries(
             Map.entry("nickel", 0x9B7F20),
@@ -190,7 +179,6 @@ public final class OreMaterials {
             Map.entry("corronium", 0x876F53),
             Map.entry("solerium", 0xFFDF2E),
             Map.entry("eezo", 0x7C7C7C),
-            Map.entry("ostrum", 0x5B4C4C),
             Map.entry("bloody", 0x70032B),
             Map.entry("elvenite", 0xD99B4C));
 

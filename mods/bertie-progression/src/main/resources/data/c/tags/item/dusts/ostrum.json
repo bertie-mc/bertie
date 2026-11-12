@@ -1,6 +1,4 @@
 {
-  "replace": false,
-  "values": [
-    "bertieprogression:ostrum_dust"
-  ]
+  "replace": true,
+  "values": []
 }

@@ -1,0 +1,31 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "GGGGG",
+    "OFFFO",
+    "OARAO",
+    "OOOOO"
+  ],
+  "key": {
+    "G": {
+      "item": "pastel:moonstone_glass"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "F": {
+      "item": "oritech:fluxite"
+    },
+    "A": {
+      "item": "mekanism:alloy_infused"
+    },
+    "R": {
+      "item": "berlordscarving:redstone_big_slate"
+    }
+  },
+  "result": {
+    "id": "mekanismgenerators:solar_panel",
+    "count": 1
+  }
+}

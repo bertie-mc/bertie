@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "id": "pastel:semi_permeable_glass",
+    "id": "minecraft:glass",
     "count": 6
   },
   "neoforge:conditions": [

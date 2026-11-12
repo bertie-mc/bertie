@@ -37,6 +37,7 @@ public final class BertieProgression {
         }
         if (ModList.get().isLoaded("anvilcraft")) {
             NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.anvil.PairedAnvilCollision.class);
+            NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.anvil.OverchargedCrystalCrafting.class);
         }
         ModRecipes.SERIALIZERS.register(modBus);
         ModRecipes.INGREDIENTS.register(modBus);

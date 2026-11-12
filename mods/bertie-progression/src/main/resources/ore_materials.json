@@ -354,7 +354,7 @@
         "clean": "bertieprogression:clean_neptunium"
       },
       "ingot": "stellaris:neptunium_ingot",
-      "byproduct": "ostrum",
+      "byproduct": "tharsite",
       "placeholder": false
     },
     {
@@ -439,27 +439,6 @@
       },
       "ingot": "bertieprogression:eezo_ingot",
       "byproduct": "naquadah",
-      "placeholder": false
-    },
-    {
-      "name": "ostrum",
-      "items": {
-        "dust": "bertieprogression:ostrum_dust",
-        "dirty_dust": "bertieprogression:ostrum_dirty_dust",
-        "clump": "bertieprogression:ostrum_clump",
-        "gem": "bertieprogression:ostrum_gem",
-        "shard": "bertieprogression:ostrum_shard",
-        "crystal": "bertieprogression:ostrum_crystal",
-        "spec": "bertieprogression:ostrum_spec",
-        "dense_charge": "bertieprogression:ostrum_dense_charge",
-        "activated_crystal": "bertieprogression:ostrum_activated_crystal"
-      },
-      "slurries": {
-        "dirty": "bertieprogression:dirty_ostrum",
-        "clean": "bertieprogression:clean_ostrum"
-      },
-      "ingot": "bertieprogression:ostrum_ingot",
-      "byproduct": "desh",
       "placeholder": false
     },
     {
@@ -645,16 +624,6 @@
     "eezo_spec",
     "eezo_dense_charge",
     "eezo_activated_crystal",
-    "ostrum_dust",
-    "ostrum_dirty_dust",
-    "ostrum_clump",
-    "ostrum_gem",
-    "ostrum_shard",
-    "ostrum_crystal",
-    "ostrum_spec",
-    "ostrum_dense_charge",
-    "ostrum_activated_crystal",
-    "ostrum_ingot",
     "bloody_dust",
     "bloody_dirty_dust",
     "bloody_clump",
@@ -674,8 +643,7 @@
     "elvenite_dense_charge",
     "elvenite_activated_crystal",
     "raw_voiderite",
-    "raw_bloody",
-    "raw_ostrum"
+    "raw_bloody"
   ],
   "new_slurries": {
     "nickel": 10190624,
@@ -691,7 +659,6 @@
     "corronium": 8875859,
     "solerium": 16768814,
     "eezo": 8158332,
-    "ostrum": 5983308,
     "bloody": 7340843,
     "elvenite": 14261068
   },
@@ -1687,78 +1654,6 @@
       "sha256": "0cfff02f67c08530821b92360bcb570535aee610c5ad2eb6788e3e2d75775fe0"
     },
     {
-      "material": "ostrum",
-      "form": "dust",
-      "path": "assets/bertieprogression/textures/item/ostrum_dust.png",
-      "sha256": "cda9d7aea640aac2e5fdbdbc8e1bff2815788ff8fbf3265cd4e6aeddd92d3c07"
-    },
-    {
-      "material": "ostrum",
-      "form": "dirty_dust",
-      "path": "assets/bertieprogression/textures/item/ostrum_dirty_dust.png",
-      "sha256": "9c10c76605eb437a59855f2ec2c1857ff4dcdb757810b8ef9752089a8dff4c37"
-    },
-    {
-      "material": "ostrum",
-      "form": "clump",
-      "path": "assets/bertieprogression/textures/item/ostrum_clump.png",
-      "sha256": "840cadab2bd6668b0ee742c4e836f2e3f483b30de8ea104aa3c4b1460780f2e2"
-    },
-    {
-      "material": "ostrum",
-      "form": "gem",
-      "path": "assets/bertieprogression/textures/item/ostrum_gem.png",
-      "sha256": "0e4c16b2e81ba023493745aaf22b49ea43eaa1765a0ab6a497f79315ee493e7e"
-    },
-    {
-      "material": "ostrum",
-      "form": "shard",
-      "path": "assets/bertieprogression/textures/item/ostrum_shard.png",
-      "sha256": "8cb2d894175a922ca400ffe320368a01f6844cd3690e590703c09cd2e7f1e827"
-    },
-    {
-      "material": "ostrum",
-      "form": "crystal",
-      "path": "assets/bertieprogression/textures/item/ostrum_crystal.png",
-      "sha256": "b1f978a510a5fa8d762d70d7f3abf21cfc3b8ded6c7111c54505351ae9b20a7e"
-    },
-    {
-      "material": "ostrum",
-      "form": "spec",
-      "path": "assets/bertieprogression/textures/item/ostrum_spec.png",
-      "sha256": "1665e7d02d07f6aad723f4419db11f29efa29b11b8a3db1f17e8d6cdc4584d0d"
-    },
-    {
-      "material": "ostrum",
-      "form": "dense_charge",
-      "path": "assets/bertieprogression/textures/item/ostrum_dense_charge.png",
-      "sha256": "bd519d3de10ac0f1eae26749ff5cbadea2e1f323c395cbba8ce484f38c8c1f56"
-    },
-    {
-      "material": "ostrum",
-      "form": "activated_crystal",
-      "path": "assets/bertieprogression/textures/item/ostrum_activated_crystal.png",
-      "sha256": "df903c9cbd47cb24dbf58626e0b1a154050dcddcf460f2ade4286df28c721b06"
-    },
-    {
-      "material": "ostrum",
-      "form": "dirty_slurry",
-      "path": "assets/bertieprogression/textures/chemical/dirty_ostrum.png",
-      "sha256": "33c57905d404c2d776d27876c007eb5a9fe202adb09301253bdec3153d1200a7"
-    },
-    {
-      "material": "ostrum",
-      "form": "clean_slurry",
-      "path": "assets/bertieprogression/textures/chemical/clean_ostrum.png",
-      "sha256": "1e8648036f8e38121aec27f4e0fdfe57ecc7e9526bbfb84ecb7182f502de7414"
-    },
-    {
-      "material": "ostrum",
-      "form": "ingot",
-      "path": "assets/bertieprogression/textures/item/ostrum_ingot.png",
-      "sha256": "106fc615ca671cec1393b45de0d2406ebf4f8ac199d9d9426b902991921420db"
-    },
-    {
       "material": "bloody",
       "form": "dust",
       "path": "assets/bertieprogression/textures/item/bloody_dust.png",
@@ -1901,12 +1796,6 @@
       "form": "raw",
       "path": "assets/bertieprogression/textures/item/raw_bloody.png",
       "sha256": "46fbf98da1b03c4a71d5cd37b3f08ff3ffc7ef2b43dfc0a9e0dd595698a22ad9"
-    },
-    {
-      "material": "ostrum",
-      "form": "raw",
-      "path": "assets/bertieprogression/textures/item/raw_ostrum.png",
-      "sha256": "b2c9024d34db829bd9008d54d81898ca4f1abf9af42c04511353a2bf850287a6"
     }
   ],
   "recipes": [
@@ -1940,9 +1829,6 @@
     "bertieprogression:blasting/neptunium_dust",
     "bertieprogression:blasting/neptunium_gem",
     "bertieprogression:blasting/osmium_gem",
-    "bertieprogression:blasting/ostrum_dust",
-    "bertieprogression:blasting/ostrum_gem",
-    "bertieprogression:blasting/ostrum_raw",
     "bertieprogression:blasting/silver_dust",
     "bertieprogression:blasting/silver_gem",
     "bertieprogression:blasting/solerium_dust",
@@ -1967,7 +1853,6 @@
     "bertieprogression:centrifuge/enderic_compound",
     "bertieprogression:centrifuge/naquadah",
     "bertieprogression:centrifuge/neptunium",
-    "bertieprogression:centrifuge/ostrum",
     "bertieprogression:centrifuge/silver",
     "bertieprogression:centrifuge/solerium",
     "bertieprogression:centrifuge/tharsite",
@@ -1988,7 +1873,6 @@
     "bertieprogression:crafting/neptunium_spec_recombination",
     "bertieprogression:crafting/nickel_spec_recombination",
     "bertieprogression:crafting/osmium_spec_recombination",
-    "bertieprogression:crafting/ostrum_spec_recombination",
     "bertieprogression:crafting/platinum_rod",
     "bertieprogression:crafting/platinum_spec_recombination",
     "bertieprogression:crafting/silver_spec_recombination",
@@ -2014,7 +1898,6 @@
     "bertieprogression:crushing/neptunium_gem",
     "bertieprogression:crushing/nickel_gem",
     "bertieprogression:crushing/osmium_gem",
-    "bertieprogression:crushing/ostrum_gem",
     "bertieprogression:crushing/platinum_gem",
     "bertieprogression:crushing/silver_gem",
     "bertieprogression:crushing/solerium_gem",
@@ -2102,16 +1985,6 @@
     "bertieprogression:processing/nickel/shard_from_crystal",
     "bertieprogression:processing/nickel/shard_from_raw",
     "bertieprogression:processing/nickel/slurry_from_raw",
-    "bertieprogression:processing/ostrum/clean_slurry",
-    "bertieprogression:processing/ostrum/clump_from_raw",
-    "bertieprogression:processing/ostrum/clump_from_shard",
-    "bertieprogression:processing/ostrum/crystal_from_slurry",
-    "bertieprogression:processing/ostrum/dirty_dust_from_clump",
-    "bertieprogression:processing/ostrum/dust_from_dirty_dust",
-    "bertieprogression:processing/ostrum/dust_from_raw",
-    "bertieprogression:processing/ostrum/shard_from_crystal",
-    "bertieprogression:processing/ostrum/shard_from_raw",
-    "bertieprogression:processing/ostrum/slurry_from_raw",
     "bertieprogression:processing/platinum/clean_slurry",
     "bertieprogression:processing/platinum/clump_from_raw",
     "bertieprogression:processing/platinum/clump_from_shard",
@@ -2213,9 +2086,6 @@
     "bertieprogression:smelting/neptunium_dust",
     "bertieprogression:smelting/neptunium_gem",
     "bertieprogression:smelting/osmium_gem",
-    "bertieprogression:smelting/ostrum_dust",
-    "bertieprogression:smelting/ostrum_gem",
-    "bertieprogression:smelting/ostrum_raw",
     "bertieprogression:smelting/silver_dust",
     "bertieprogression:smelting/silver_gem",
     "bertieprogression:smelting/solerium_dust",
@@ -2550,9 +2420,7 @@
   "raw_yields": "existing 2x/3x baseline; native higher chemical ratios",
   "provisional_extras": [
     "raw_voiderite",
-    "raw_bloody",
-    "raw_ostrum",
-    "ostrum_ingot"
+    "raw_bloody"
   ],
   "centrifuge": {
     "type": "oritech:centrifuge_fluid",
@@ -2580,7 +2448,6 @@
       "corronium": "bertieprogression:centrifuge/corronium",
       "solerium": "bertieprogression:centrifuge/solerium",
       "eezo": "bertieprogression:centrifuge/eezo",
-      "ostrum": "bertieprogression:centrifuge/ostrum",
       "bloody": "bertieprogression:centrifuge/bloody",
       "elvenite": "bertieprogression:centrifuge/elvenite"
     }

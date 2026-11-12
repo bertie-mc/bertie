@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "SSSSS",
+    "OFTFO",
+    "OCKCO",
+    "OEEEO",
+    "OOOOO"
+  ],
+  "key": {
+    "S": {
+      "item": "mekanismgenerators:solar_panel"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "F": {
+      "item": "oritech:flux_gate"
+    },
+    "T": {
+      "item": "mekanism:energy_tablet"
+    },
+    "C": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "E": {
+      "item": "oritech:energite_ingot"
+    }
+  },
+  "result": {
+    "id": "mekanismgenerators:solar_generator",
+    "count": 1
+  }
+}

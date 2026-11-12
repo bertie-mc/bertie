@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#pastel:gemstone_glass",
+    "#pastel:semi_permeable_glass",
+    "#pastel:hummingstones",
+    "pastel:radiant_glass"
+  ],
+  "replace": true
+}

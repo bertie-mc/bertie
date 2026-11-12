@@ -31,7 +31,7 @@
     }
   ],
   "result": {
-    "id": "minecraft:netherite_ingot",
+    "id": "mekanism:dust_netherite",
     "count": 1
   },
   "start_crafting_effect": "nothing",

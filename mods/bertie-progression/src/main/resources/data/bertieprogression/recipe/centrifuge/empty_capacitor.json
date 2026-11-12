@@ -1,0 +1,19 @@
+{
+  "type": "oritech:centrifuge_fluid",
+  "ingredients": [
+    {
+      "item": "mekanism:basic_chemical_tank"
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:capacitor_empty",
+      "count": 1
+    }
+  ],
+  "time": 100,
+  "fluidInput": {
+    "fluid": "oritech:still_sulfuric_acid",
+    "amount": 1000
+  }
+}

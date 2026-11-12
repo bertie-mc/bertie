@@ -1,5 +1,6 @@
 {
-  "item.endrem.sculk_eye.description": "§7§oThis eye remembers the cries of those who broke the silence",
-  "item.endrem.cursed_eye.description": "§7§oOnce masters of trade, Piglins fell victim to corruption that spreads to anything they touch",
-  "item.endrem.exotic_eye.description": "§7§oThose who followed this eye were never seen again; rumors say sea creatures led them to find the great city of Atlantis, or lost their way trying"
+  "item.endrem.sculk_eye.description": "Â§7Â§oThis eye remembers the cries of those who broke the silence",
+  "item.endrem.cursed_eye.description": "Â§7Â§oOnce masters of trade, Piglins fell victim to corruption that spreads to anything they touch",
+  "item.endrem.exotic_eye.description": "Â§7Â§oThose who followed this eye were never seen again; rumors say sea creatures led them to find the great city of Atlantis, or lost their way trying",
+  "item.endrem.magical_eye.description": "§7§oIt was rumored that only most efficient mages could obtain this artifact"
 }

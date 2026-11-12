@@ -177,6 +177,8 @@ public final class ModItems {
 
     // --- Eezo: the bedrock-lookalike ore, its raw drop and the ingot it smelts into. ---
     public static final DeferredItem<BlockItem> EEZO_ORE = ITEMS.registerSimpleBlockItem(ModBlocks.EEZO_ORE);
+    public static final DeferredItem<BlockItem> MANA_CHARGED_FLUORITE_BLOCK =
+            ITEMS.registerSimpleBlockItem(ModBlocks.MANA_CHARGED_FLUORITE_BLOCK);
     public static final DeferredItem<Item> RAW_EEZO = simple("raw_eezo", 64);
     public static final DeferredItem<Item> EEZO_INGOT = simple("eezo_ingot", 64);
 
@@ -203,6 +205,7 @@ public final class ModItems {
                         out.accept(YETI_HIDEOUT_MAP.get());
                         out.accept(CRAFTING_LICENSE.get());
                         out.accept(EEZO_ORE.get());
+                        out.accept(MANA_CHARGED_FLUORITE_BLOCK.get());
                         out.accept(POCKET_DIMENSION.get());
                         out.accept(POCKET_WATCH.get());
                         // Quark's native listing belongs to its optional Oddities category.

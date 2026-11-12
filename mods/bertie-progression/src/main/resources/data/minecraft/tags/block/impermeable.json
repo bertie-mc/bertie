@@ -1,0 +1,24 @@
+{
+  "values": [
+    "#pastel:hummingstones",
+    "pastel:ender_glass",
+    "pastel:topaz_glass",
+    "pastel:amethyst_glass",
+    "pastel:citrine_glass",
+    "pastel:onyx_glass",
+    "pastel:moonstone_glass",
+    "pastel:radiant_glass",
+    "pastel:semi_permeable_glass",
+    "pastel:tinted_semi_permeable_glass",
+    "pastel:radiant_semi_permeable_glass",
+    "pastel:topaz_semi_permeable_glass",
+    "pastel:amethyst_semi_permeable_glass",
+    "pastel:citrine_semi_permeable_glass",
+    "pastel:onyx_semi_permeable_glass",
+    "pastel:moonstone_semi_permeable_glass",
+    "pastel:preservation_glass",
+    "pastel:tinted_preservation_glass",
+    "pastel:invisible_wall"
+  ],
+  "replace": true
+}
