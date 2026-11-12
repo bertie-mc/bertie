@@ -36,7 +36,7 @@ def apply(module, native):
         'pattern': [' FRF ', 'FRPRF', 'OFKFO', 'OAMAO', 'OTMTO'],
         'key': {symbol: {'item': item} for symbol, item in {
             'F': 'oritech:carbon_fibre_strands', 'R': 'bertieprogression:steel_rod',
-            'P': 'mekanismgenerators:turbine_blade', 'O': 'bertieprogression:osmium_sheet',
+            'P': 'create:propeller', 'O': 'bertieprogression:osmium_sheet',
             'K': 'mekanism:steel_casing', 'A': 'mekanism:advanced_control_circuit',
             'M': 'oritech:magnetic_coil', 'T': 'mekanism:energy_tablet'}.items()},
         'result': {'id': 'mekanismgenerators:wind_generator', 'count': 1}})
