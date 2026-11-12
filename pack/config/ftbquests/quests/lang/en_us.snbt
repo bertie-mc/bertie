@@ -347,7 +347,6 @@
 	quest.3B00000000000076.title: "Legendary Crafting Orb"
 	quest.3B00000000000077.quest_desc: ["Survive Shipbreaker's maw"]
 	quest.3B00000000000077.title: "But how?"
-	quest.3C00000000000002.title: "The Pastel Enchanter"
 	quest.3C00000000000003.title: "The Experience Obelisk"
 	quest.3C00000000000004.title: "The Experience Fountain"
 	quest.3C00000000000005.title: "The Precision Dispeller"
@@ -3008,4 +3007,6 @@
 	quest.5C000000000000A4.title: "Supreme Energy Cube"
 	quest.5C000000000000A5.title: "Cosmic Energy Cube"
 	quest.5C000000000000A6.title: "Infinite Energy Cube"
+	quest.5C000000000000A7.title: "Refined Glowstone Ingot"
+	quest.5C000000000000A8.title: "Radiance Dust"
 }

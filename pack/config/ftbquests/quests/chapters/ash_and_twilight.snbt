@@ -974,7 +974,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3B00000000000054"]
@@ -1492,8 +1492,8 @@
 				item: { count: 1, id: "malum:warp_flux" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3B00000000000068"]
@@ -1758,7 +1758,7 @@
 				item: { count: 1, id: "apothic_enchanting:library" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: 7.5d
 		}
 		{
@@ -1831,6 +1831,25 @@
 				item: { count: 1 id: "mekanism:dust_copper" }
 				consume_items: false type: "item"
 			}]
+		}
+		{
+			dependencies: ["3B00000000000054", "3B00000000000055"]
+			icon: {
+				id: "cognition:precision_dispeller"
+			}
+			id: "3C00000000000005"
+			rewards: [{
+				id: "3C00000002000005"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000005"
+				item: { count: 1, id: "cognition:precision_dispeller" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
 		}
 	]
 }

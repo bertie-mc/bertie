@@ -29,17 +29,6 @@
 			y: 4.5d
 		}
 		{
-			id: "3C00000000000002"
-			rewards: [{
-				id: "3C00000002000002"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [ ]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
 			icon: {
 				id: "cognition:experience_fountain"
 			}
@@ -55,24 +44,6 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "cognition:precision_dispeller"
-			}
-			id: "3C00000000000005"
-			rewards: [{
-				id: "3C00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000005"
-				item: { count: 1, id: "cognition:precision_dispeller" }
-				type: "item"
-			}]
-			x: 6.0d
 			y: 4.5d
 		}
 		{

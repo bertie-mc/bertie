@@ -212,6 +212,8 @@ def apply(module, native, mods=None):
     eye_lang["item.endrem.magical_eye.description"] = "§7§oIt was rumored that only most efficient mages could obtain this artifact"
     eye_lang.pop("advancements.main.magical_eye.description", None)
     write(eye_lang_path, eye_lang)
+    from warden_wind_recipes import apply as apply_warden_wind
+    changed.extend(apply_warden_wind(module, native))
     return changed
 
 

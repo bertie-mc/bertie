@@ -4,6 +4,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -19,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
@@ -27,6 +29,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
 public final class WardenRules {
     public static final ResourceLocation TENDRIL = ResourceLocation.parse("apothic_enchanting:warden_tendril");
+    private static final ResourceLocation BONE_SHARD = ResourceLocation.parse("l2complements:warden_bone_shard");
     public static final int RETALIATION_COOLDOWN = 200;
 
     private WardenRules() {}
@@ -42,6 +45,23 @@ public final class WardenRules {
                     .add(Component.translatable("tooltip.bertieprogression.warden_tendril")
                             .withStyle(ChatFormatting.GRAY));
         }
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void removeBoneShardDropHint(ItemTooltipEvent event) {
+        if (BONE_SHARD.equals(BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem()))) {
+            event.getToolTip().removeIf(WardenRules::isPlayerKillHint);
+        }
+    }
+
+    private static boolean isPlayerKillHint(Component line) {
+        if (line.getContents() instanceof TranslatableContents text) {
+            if (text.getKey().equals("l2complements.tooltip.misc.player_kill")) return true;
+            for (Object argument : text.getArgs()) {
+                if (argument instanceof Component component && isPlayerKillHint(component)) return true;
+            }
+        }
+        return line.getSiblings().stream().anyMatch(WardenRules::isPlayerKillHint);
     }
 
     @SubscribeEvent

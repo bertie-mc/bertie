@@ -83,7 +83,7 @@ exactly zero mana. Free casts and rounded display values do not qualify.
 
 Technology uses HDPE Sheet throughout. Empty Capacitors have a Basic Chemical Tank
 and Sulfuric Acid Centrifuge route; Batteries use Capacitors, Energite and HDPE,
-and Energy Tablets feed the Transmission Pole. Solar generators and teleportation
+and Energy Tablets feed the Transmission Pole. Solar/Wind generators and teleportation
 have Nether Table recipes. Fortune IV–VIII follow III in creative and EMI ordering.
 
 The Pastel content selection retains Imbrifer resources and their building families.

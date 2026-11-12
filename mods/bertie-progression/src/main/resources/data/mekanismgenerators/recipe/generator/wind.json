@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    " FRF ",
+    "FRPRF",
+    "OFKFO",
+    "OAMAO",
+    "OTMTO"
+  ],
+  "key": {
+    "F": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "R": {
+      "item": "bertieprogression:steel_rod"
+    },
+    "P": {
+      "item": "mekanismgenerators:turbine_blade"
+    },
+    "O": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "A": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "M": {
+      "item": "oritech:magnetic_coil"
+    },
+    "T": {
+      "item": "mekanism:energy_tablet"
+    }
+  },
+  "result": {
+    "id": "mekanismgenerators:wind_generator",
+    "count": 1
+  }
+}

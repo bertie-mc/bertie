@@ -67,7 +67,9 @@ server can load without the wider combat/magic fixture.
 ## Warden materials and the Otherside
 
 Warden loot retains the Sculk Catalyst and gives one to Looting level plus one
-Carapaces through Minecraft's ordinary Looting roll. Heart of the Deep and
+Carapaces through Minecraft's ordinary Looting roll. Bone Shards have no direct
+Warden drop or native player-kill hint; the L2 drop modifier is disabled.
+Heart of the Deep and
 Primordial Soulstone no longer drop from Wardens. Warden Tendril tells players
 to shear the Warden.
 
