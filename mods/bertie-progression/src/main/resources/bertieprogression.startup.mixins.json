@@ -4,5 +4,6 @@
   "package": "io.github.bertie_mc.bertieprogression.mixin.startup",
   "plugin": "io.github.bertie_mc.bertieprogression.startup.StartupMixinPlugin",
   "compatibilityLevel": "JAVA_21",
+  "mixins": ["EmendatusRegistryLookupMixin"],
   "client": ["MidnightConfigMixin"]
 }

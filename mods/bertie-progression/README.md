@@ -167,6 +167,11 @@ Amethyst Shard recipes remain available.
   Parallel mod constructors cannot change the shared entry map while another registration reads it.
   The optional mixin preserves the library's method body, entry order and exception handling.
 
+- **Runtime data generation** (`startup/`) — Emendatus Enigmatica finishes its
+  vanilla registry lookup on the calling startup thread before constructing data
+  providers. Parallel provider execution remains available; lookup failures retain
+  their original future-based reporting.
+
 ### Data
 
 See [Deep resources](docs/deep-resources.md) for the Sturdy Deepslate mining
