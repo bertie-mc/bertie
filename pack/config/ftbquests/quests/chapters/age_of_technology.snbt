@@ -1981,5 +1981,19 @@
 				consume_items: false type: "item"
 			}]
 		}
+		{
+			y: -1.5d
+			x: 9.0d
+			dependencies: ["5C00000000009001"]
+			id: "5C00000000000090"
+			icon: { id: "mekanism:configurator" }
+			tasks: [{
+				id: "5C00000001000090"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:configurator" }
+				type: "item"
+			}]
+		}
 	]
 }
