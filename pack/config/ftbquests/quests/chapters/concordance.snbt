@@ -252,8 +252,8 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_visible: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "minecraft:dragon_head"
@@ -277,7 +277,7 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_visible: true
+			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
 			icon: {
@@ -298,7 +298,7 @@
 			y: 1.5d
 		}
 		{
-			hide_until_deps_visible: true
+			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000015"]
 			icon: {
@@ -319,8 +319,8 @@
 			y: 3.0d
 		}
 		{
-			hide_until_deps_visible: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apotheosis:ender_gem_case"
@@ -340,8 +340,8 @@
 			y: -3.0d
 		}
 		{
-			hide_until_deps_visible: true
-			hide_until_deps_complete: true
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
 			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apothic_enchanting:ender_library"

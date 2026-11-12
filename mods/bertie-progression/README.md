@@ -40,10 +40,10 @@ Acid liquid; Mekanism's chemical remains available through the Rotary machine.
 
 ### Blocks
 
-`mana_charged_fluorite_block` packs nine Mana-Charged Fluorite and unpacks back
-into nine. A Giant Anvil crafts an Overcharged Crystal from a 3×3×3 cube with a
-Cognitive Crystal Block at its center, eight charged Fluorite Blocks at the corners
-and eighteen Superconductors elsewhere. Cover it with nine Crafting Tables. The
+The Giant Anvil crafts an Overcharged Crystal from a 3×3×3 cube with a Cognitive
+Crystal Block at its center, the existing Magitech Block of Mana Charged Fluorite
+(`magitech:fluorite_block`) at its eight corners, and eighteen Superconductors
+elsewhere. Cover it with nine Crafting Tables. The
 result drops as an item without a Space Overcompressor; particle collision remains.
 
 `pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon

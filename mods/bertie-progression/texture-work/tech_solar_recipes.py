@@ -182,24 +182,23 @@ def apply(module, native, mods=None):
                         value = replace(value, PLASTIC | GLASS)
                     value["replace"] = True
                     write(name, value)
-    block = "bertieprogression:mana_charged_fluorite_block"
-    write("assets/bertieprogression/blockstates/mana_charged_fluorite_block.json", {"variants": {"": {"model": block.replace(":", ":block/")}}})
-    write("assets/bertieprogression/models/block/mana_charged_fluorite_block.json", {"parent": "minecraft:block/cube_all", "textures": {"all": "magitech:block/fluorite_block"}})
-    write("assets/bertieprogression/models/item/mana_charged_fluorite_block.json", {"parent": block.replace(":", ":block/")})
-    write("data/bertieprogression/loot_table/blocks/mana_charged_fluorite_block.json", {"type": "minecraft:block", "pools": [
-        {"rolls": 1, "conditions": [{"condition": "minecraft:survives_explosion"}], "entries": [{"type": "minecraft:item", "name": block}]}]})
-    save("bertieprogression:crafting/mana_charged_fluorite_block", {"type": "minecraft:crafting_shaped", "pattern": ["FFF", "FFF", "FFF"],
-         "key": {"F": {"item": "magitech:mana_charged_fluorite"}}, "result": {"id": block, "count": 1}})
-    save("bertieprogression:crafting/mana_charged_fluorite_from_block", {"type": "minecraft:crafting_shapeless", "ingredients": [{"item": block}],
-         "result": {"id": "magitech:mana_charged_fluorite", "count": 9}})
+    # The pack already renames Magitech's fluorite block and charges its packing ingredients.
+    block = "magitech:fluorite_block"
+    obsolete = "bertieprogression:mana_charged_fluorite_block"
+    for old in ["assets/bertieprogression/blockstates/mana_charged_fluorite_block.json",
+                "assets/bertieprogression/models/block/mana_charged_fluorite_block.json",
+                "assets/bertieprogression/models/item/mana_charged_fluorite_block.json",
+                "data/bertieprogression/loot_table/blocks/mana_charged_fluorite_block.json",
+                "data/bertieprogression/recipe/crafting/mana_charged_fluorite_block.json",
+                "data/bertieprogression/recipe/crafting/mana_charged_fluorite_from_block.json"]:
+        (resources / old).unlink(missing_ok=True)
     tag_path = "data/minecraft/tags/block/mineable/pickaxe.json"
     tag = json.loads((resources / tag_path).read_text()) if (resources / tag_path).exists() else {"values": []}
-    if block not in tag["values"]:
-        tag["values"].append(block)
+    tag["values"] = [value for value in tag["values"] if value != obsolete]
     write(tag_path, tag)
     lang_path = "assets/bertieprogression/lang/en_us.json"
     lang = json.loads((resources / lang_path).read_text(encoding="utf-8"))
-    lang["block.bertieprogression.mana_charged_fluorite_block"] = "Block of Mana-Charged Fluorite"
+    lang.pop("block.bertieprogression.mana_charged_fluorite_block", None)
     write(lang_path, lang)
     save("bertieprogression:multiblock/overcharged_crystal", {"type": "anvilcraft:multiblock", "pattern": {
         "layers": [["MSM", "SSS", "MSM"], ["SSS", "SCS", "SSS"], ["MSM", "SSS", "MSM"]],

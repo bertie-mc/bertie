@@ -89,7 +89,7 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
                 "giant_anvil/overcharged_crystal",
                 ingredients(
                         sized("cognition:cognitive_crystal_block", 1),
-                        sized("bertieprogression:mana_charged_fluorite_block", 8),
+                        sized("magitech:fluorite_block", 8),
                         sized("oritech:superconductor", 18)),
                 ingredients(stackOf("anvilcraft:giant_anvil", 1), EmiStack.of(Items.CRAFTING_TABLE, 9)),
                 stacks(stackOf("oritech:overcharged_crystal", 1)),

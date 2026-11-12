@@ -20,7 +20,7 @@
     ],
     "symbols": {
       "M": {
-        "block": "bertieprogression:mana_charged_fluorite_block"
+        "block": "magitech:fluorite_block"
       },
       "S": {
         "block": "oritech:superconductor"
