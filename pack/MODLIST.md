@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (440)
+## Mods (439)
 
 | Mod |
 |---|
@@ -194,7 +194,6 @@
 | `giant-tree-stump` |
 | `glassbreaker` |
 | `gravelminer` |
-| `hammer-lib` |
 | `hand-over-your-items` |
 | `handcrafted` |
 | `hang-glider` |
