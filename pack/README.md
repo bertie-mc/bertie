@@ -31,7 +31,9 @@ machine in the original construction recipes, with recycling loops and transitiv
 excluded. Independent blocks sit outside the linked branches.
 
 Machines promoted to Age of Technology retain their explanatory reference nodes
-as checkmarks. Adamant branches into Centrifuge and Formulaic Assemblicator →
+as checkmarks. MekMM Large machines have separate objectives, each depending only
+on its smaller counterpart; the retained Large Heat Generator is independent
+because its small counterpart is retired. Adamant branches into Centrifuge and Formulaic Assemblicator →
 Assembler → Electric Coil → Processing Unit. The plastic item chain requires
 Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.
 Plastic Sheet continues through Crude Oil Bucket → Pump → Refinery → Diesel

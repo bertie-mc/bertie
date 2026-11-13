@@ -11,26 +11,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: { id: "mekanism:antiprotonic_nucleosynthesizer" }
 			id: "612EDBA3AB31C717"
-			icon: {
-				id: "mekanism:antiprotonic_nucleosynthesizer"
-			}
-			tasks: [
-				{
-					id: "61B727EF55C77BA6"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:antiprotonic_nucleosynthesizer)item(mekmm:large_antiprotonic_nucleosynthesizer))"
-							"minecraft:custom_name": "{\"text\": \"Antiprotonic Nucleosynthesizer\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61B727EF55C77BA6"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanism:antiprotonic_nucleosynthesizer" }
+			}]
 			dependencies: [
 				"6128446391C69930"
 			]
@@ -95,26 +84,15 @@
 			y: -3.000d
 		}
 		{
+			icon: { id: "mekanism:chemical_infuser" }
 			id: "613500C40061A8D5"
-			icon: {
-				id: "mekanism:chemical_infuser"
-			}
-			tasks: [
-				{
-					id: "61F0DB0D9416F19D"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:chemical_infuser)item(mekmm:large_chemical_infuser))"
-							"minecraft:custom_name": "{\"text\": \"Chemical Infuser\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61F0DB0D9416F19D"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanism:chemical_infuser" }
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"61007F7CC4BF1105"
@@ -466,26 +444,15 @@
 			y: 6.000d
 		}
 		{
+			icon: { id: "mekanism:rotary_condensentrator" }
 			id: "61D227C9590B6477"
-			icon: {
-				id: "mekanism:rotary_condensentrator"
-			}
-			tasks: [
-				{
-					id: "61367E5571FA1F21"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:rotary_condensentrator)item(mekmm:large_rotary_condensentrator))"
-							"minecraft:custom_name": "{\"text\": \"Rotary Condensentrator\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61367E5571FA1F21"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanism:rotary_condensentrator" }
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"61ED11E1734FFF61"
@@ -494,26 +461,15 @@
 			y: 6.000d
 		}
 		{
+			icon: { id: "mekanism:solar_neutron_activator" }
 			id: "61B0C5442DEB7DFB"
-			icon: {
-				id: "mekanism:solar_neutron_activator"
-			}
-			tasks: [
-				{
-					id: "61313400EE4E2388"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:solar_neutron_activator)item(mekmm:large_solar_neutron_activator))"
-							"minecraft:custom_name": "{\"text\": \"Solar Neutron Activator\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61313400EE4E2388"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanism:solar_neutron_activator" }
+			}]
 			dependencies: [
 				"61CD6FB9A3418088"
 				"61D227C9590B6477"
@@ -677,8 +633,8 @@
 					}
 				}
 			]
-			x: 6.750d
-			y: 17.250d
+			x: 6.5d
+			y: 17.0d
 		}
 		{
 			id: "61CD6FB9A3418088"
@@ -861,26 +817,15 @@
 			y: -6.000d
 		}
 		{
+			icon: { id: "mekanism:pigment_mixer" }
 			id: "61FCF66321F85454"
-			icon: {
-				id: "mekanism:pigment_mixer"
-			}
-			tasks: [
-				{
-					id: "613402E033173A1E"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:pigment_mixer)item(mekmm:large_pigment_mixer))"
-							"minecraft:custom_name": "{\"text\": \"Pigment Mixer\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "613402E033173A1E"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanism:pigment_mixer" }
+			}]
 			dependencies: [
 				"61272BEDD29AB74F"
 			]
@@ -1679,8 +1624,8 @@
 					}
 				}
 			]
-			x: 4.500d
-			y: 19.500d
+			x: 2.5d
+			y: 17.0d
 		}
 		{
 			id: "6165D0FF8D53B4F4"
@@ -1699,7 +1644,7 @@
 					}
 				}
 			]
-			x: 0.000d
+			x: 0.5d
 			y: 15.000d
 		}
 		{
@@ -1712,28 +1657,17 @@
 			y: 15.0d
 		}
 		{
+			icon: { id: "mekanismgenerators:gas_burning_generator" }
 			id: "6198E5DF4A957298"
-			icon: {
-				id: "mekanismgenerators:gas_burning_generator"
-			}
-			tasks: [
-				{
-					id: "615CBE00B1E84D36"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanismgenerators:gas_burning_generator)item(mekmm:large_gas_burning_generator))"
-							"minecraft:custom_name": "{\"text\": \"Gas-Burning Generator\", \"italic\": false}"
-						}
-					}
-				}
-			]
-			x: 2.250d
-			y: 17.250d
+			tasks: [{
+				id: "615CBE00B1E84D36"
+				type: "item"
+				count: 1L
+				consume_items: false
+				item: { id: "mekanismgenerators:gas_burning_generator" }
+			}]
+			x: 0.5d
+			y: 17.0d
 		}
 		{
 			id: "61E5CA7CEF5BC9A7"
@@ -1805,7 +1739,7 @@
 			dependencies: [
 				"616ED64305E2CC2D"
 			]
-			x: 6.750d
+			x: 6.5d
 			y: 15.000d
 		}
 		{
@@ -1918,8 +1852,106 @@
 			dependencies: [
 				"61279294059E8A75"
 			]
-			x: 6.750d
-			y: 19.500d
+			x: 4.5d
+			y: 17.0d
+		}
+		{
+			y: 4.5d
+			x: 15.75d
+			dependencies: ["612EDBA3AB31C717"]
+			id: "61BECEE131176E14"
+			icon: { id: "mekmm:large_antiprotonic_nucleosynthesizer" }
+			tasks: [{
+				id: "61BECEE101176E14"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_antiprotonic_nucleosynthesizer" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 6.75d
+			dependencies: ["613500C40061A8D5"]
+			id: "61618A8488AD0A7B"
+			icon: { id: "mekmm:large_chemical_infuser" }
+			tasks: [{
+				id: "61618A8401AD0A7B"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_chemical_infuser" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 4.5d
+			dependencies: ["61007F7CC4BF1105"]
+			id: "616AB809942229A7"
+			icon: { id: "mekmm:large_electrolytic_separator" }
+			tasks: [{
+				id: "616AB809012229A7"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_electrolytic_separator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 18.5d
+			x: 0.5d
+			dependencies: ["6198E5DF4A957298"]
+			id: "616F3150516DABC8"
+			icon: { id: "mekmm:large_gas_burning_generator" }
+			tasks: [{
+				id: "616F3150016DABC8"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_gas_burning_generator" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: -13.75d
+			dependencies: ["61FCF66321F85454"]
+			id: "6117F652FE47BA1E"
+			icon: { id: "mekmm:large_pigment_mixer" }
+			tasks: [{
+				id: "6117F6520147BA1E"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_pigment_mixer" }
+				type: "item"
+			}]
+		}
+		{
+			y: 7.5d
+			x: 6.75d
+			dependencies: ["61D227C9590B6477"]
+			id: "61709D389BE94093"
+			icon: { id: "mekmm:large_rotary_condensentrator" }
+			tasks: [{
+				id: "61709D3801E94093"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_rotary_condensentrator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 1.5d
+			x: 13.5d
+			dependencies: ["61B0C5442DEB7DFB"]
+			id: "61780E29D988C7B5"
+			icon: { id: "mekmm:large_solar_neutron_activator" }
+			tasks: [{
+				id: "61780E290188C7B5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_solar_neutron_activator" }
+				type: "item"
+			}]
 		}
 	]
 }

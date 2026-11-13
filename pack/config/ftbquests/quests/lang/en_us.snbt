@@ -3020,4 +3020,11 @@
 	quest.5B00000000000094.title: "Powder of Levitation"
 	quest.5B00000000000095.title: "Titanium Nugget"
 	quest.5B00000000000096.title: "Titanium Ingot"
+	quest.61BECEE131176E14.title: "Large Antiprotonic Nucleosynthesizer"
+	quest.61618A8488AD0A7B.title: "Large Chemical Infuser"
+	quest.616AB809942229A7.title: "Large Electrolytic Separator"
+	quest.616F3150516DABC8.title: "Large Gas-Burning Generator"
+	quest.6117F652FE47BA1E.title: "Large Pigment Mixer"
+	quest.61709D389BE94093.title: "Large Rotary Condensentrator"
+	quest.61780E29D988C7B5.title: "Large Solar Neutron Activator"
 }
