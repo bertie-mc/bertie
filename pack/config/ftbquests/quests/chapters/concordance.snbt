@@ -338,7 +338,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5B0000000000009A"]
@@ -540,7 +540,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000099"]
 			y: -6.0d
-			x: 10.5d
+			x: 12.0d
 			id: "5B0000000000009A"
 			icon: { id: "apothic_enchanting:draconic_endshelf" }
 			tasks: [{
@@ -681,7 +681,328 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -5.25d
+			y: -6.0d
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000094"]
+			y: -3.0d
+			x: 16.5d
+			id: "5B000000000000A3"
+			icon: { id: "pastel:perturbed_eye" }
+			tasks: [{
+				id: "5B000000010000A3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "pastel:perturbed_eye" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A3"]
+			y: -3.0d
+			x: 18.0d
+			id: "5B000000000000A4"
+			icon: { id: "pastel:cracked_end_portal_frame" }
+			tasks: [{
+				id: "5B000000010000A4"
+				count: 12L
+				consume_items: false
+				item: { count: 1 id: "pastel:cracked_end_portal_frame" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A4"]
+			y: -3.0d
+			x: 19.5d
+			id: "5B000000000000A5"
+			icon: { id: "minecraft:end_portal_frame" }
+			tasks: [{
+				id: "5B000000010000A5"
+				count: 12L
+				consume_items: false
+				item: { count: 1 id: "minecraft:end_portal_frame" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B0000000000009D"]
+			y: 3.0d
+			x: 13.5d
+			id: "5B000000000000A6"
+			icon: { id: "l2complements:captured_shulker_bullet" }
+			tasks: [{
+				id: "5B000000010000A6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "l2complements:captured_shulker_bullet" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A6"]
+			y: 3.0d
+			x: 15.0d
+			id: "5B000000000000A7"
+			icon: { id: "l2complements:shulkerate_ingot" }
+			tasks: [{
+				id: "5B000000010000A7"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "l2complements:shulkerate_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A7"]
+			y: 1.5d
+			x: 15.0d
+			id: "5B000000000000A8"
+			icon: { id: "l2complements:shulkerate_ingot" }
+			tasks: [{
+				id: "5B000000010000A8"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "l2complements:shulkerate_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A2"]
+			y: 3.0d
+			x: 22.5d
+			id: "5B000000000000A9"
+			icon: { id: "refinedstorage:portable_grid" }
+			tasks: [{
+				id: "5B000000010000A9"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "refinedstorage:portable_grid" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A2"]
+			y: 6.0d
+			x: 22.5d
+			id: "5B000000000000AA"
+			icon: { id: "universalgrid:wireless_universal_grid" }
+			tasks: [{
+				id: "5B000000010000AA"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "universalgrid:wireless_universal_grid" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000014"]
+			y: 7.5d
+			x: 12.0d
+			id: "5B000000000000AB"
+			icon: { id: "alexsmobs:maggot" }
+			tasks: [{
+				id: "5B000000010000AB"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:maggot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AB"]
+			y: 7.5d
+			x: 13.5d
+			id: "5B000000000000AC"
+			icon: { id: "alexsmobs:mosquito_proboscis" }
+			tasks: [{
+				id: "5B000000010000AC"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:mosquito_proboscis" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AC"]
+			y: 7.5d
+			x: 15.0d
+			id: "5B000000000000AD"
+			icon: { id: "alexsmobs:mosquito_larva" }
+			tasks: [{
+				id: "5B000000010000AD"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:mosquito_larva" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AD"]
+			y: 7.5d
+			x: 16.5d
+			id: "5B000000000000AE"
+			icon: { id: "alexsmobs:capsid" }
+			tasks: [{
+				id: "5B000000010000AE"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:capsid" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AE"]
+			y: 7.5d
+			x: 18.0d
+			id: "5B000000000000AF"
+			icon: { id: "alexsmobs:mysterious_worm" }
+			tasks: [{
+				id: "5B000000010000AF"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:mysterious_worm" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AF"]
+			y: 7.5d
+			x: 19.5d
+			id: "5B000000000000B0"
+			icon: { id: "alexsmobs:void_worm_eye" }
+			tasks: [{
+				id: "5B000000010000B0"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:void_worm_eye" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000AF"]
+			y: 9.0d
+			x: 19.5d
+			id: "5B000000000000B1"
+			icon: { id: "alexsmobs:void_worm_mandible" }
+			tasks: [{
+				id: "5B000000010000B1"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "alexsmobs:void_worm_mandible" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000B1"]
+			y: 9.0d
+			x: 21.0d
+			id: "5B000000000000B2"
+			icon: { id: "cataclysm:abyssal_sacrifice" }
+			tasks: [{
+				id: "5B000000010000B2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "cataclysm:abyssal_sacrifice" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000094"]
+			y: -1.5d
+			x: 16.5d
+			id: "5B000000000000B3"
+			icon: { id: "anvilcraft:levitation_powder_block" }
+			tasks: [{
+				id: "5B000000010000B3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:levitation_powder_block" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A7"]
+			y: 3.0d
+			x: 16.5d
+			id: "5B000000000000B4"
+			icon: { id: "l2complements:shulkerate_block" }
+			tasks: [{
+				id: "5B000000010000B4"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "l2complements:shulkerate_block" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000B2"]
+			y: 9.0d
+			x: 22.5d
+			id: "5B000000000000B5"
+			icon: { id: "cataclysm:abyssal_egg" }
+			tasks: [{
+				id: "5B000000010000B5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "cataclysm:abyssal_egg" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			size: 2.0d
+			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098"]
+			y: 3.0d
+			x: 25.5d
+			id: "5B000000000000B6"
+			icon: { id: "avaritia:end_crafting_table" }
+			tasks: [{
+				id: "5B000000010000B6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "avaritia:end_crafting_table" }
+				type: "item"
+			}]
 		}
 	]
 }

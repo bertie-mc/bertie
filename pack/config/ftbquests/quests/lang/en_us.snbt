@@ -2476,10 +2476,6 @@
 		"Portable fluid storage. Higher Mekanism tank tiers expand capacity."
 	]
 	quest.619ED8397E1651A4.title: "Fluid Tank"
-	quest.61A3E003004D1BDE.quest_desc: [
-		"A multiblock battery: Induction Cells determine energy capacity, while Induction Providers determine transfer rate. Expanding one does not automatically increase the other."
-	]
-	quest.61A3E003004D1BDE.title: "Induction Matrix"
 	quest.61A73EDFBD8EA38A.quest_desc: [
 		"Burns combustible items to produce transferable heat. A fuel-based way to heat machines such as the Thermal Evaporation Plant."
 	]
@@ -3041,4 +3037,25 @@
 	quest.5B000000000000A1.title: "Supercritical Nesting Shulker Box"
 	quest.5B000000000000A2.title: "Space Overcompressor"
 	quest.6C00000000006101.title: "Recovery Pearl"
+	quest.5B000000000000A3.title: "Perturbed Eye"
+	quest.5B000000000000A4.title: "12 Cracked End Portal Frames"
+	quest.5B000000000000A5.title: "12 End Portal Frames"
+	quest.5B000000000000A6.title: "Shulker Bullet in a Bottle"
+	quest.5B000000000000A7.title: "Shulkerate Ingot"
+	quest.5B000000000000A8.title: "64 Shulkerate Ingots"
+	quest.5B000000000000A9.title: "Portable Grid"
+	quest.5B000000000000AA.title: "Wireless Universal Grid"
+	quest.5B000000000000AB.title: "Maggot"
+	quest.5B000000000000AC.title: "Crimson Mosquito Proboscis"
+	quest.5B000000000000AD.title: "Crimson Mosquito Larva"
+	quest.5B000000000000AE.title: "Capsid"
+	quest.5B000000000000AF.title: "Mysterious Worm"
+	quest.5B000000000000B0.title: "Void Worm Eye"
+	quest.5B000000000000B1.title: "Void Worm Mandible"
+	quest.5B000000000000B2.title: "Abyssal Sacrifice"
+	quest.5B000000000000B3.title: "Block of Levitation Powder"
+	quest.5B000000000000B4.title: "Block of Shulkerate"
+	quest.5B000000000000B5.title: "Abyssal Egg"
+	quest.5B000000000000B6.title: "End Crafting Table"
+	quest.5B000000000000AF.quest_desc: ["drop it in the void"]
 }
