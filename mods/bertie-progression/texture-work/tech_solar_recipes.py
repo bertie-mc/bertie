@@ -70,7 +70,7 @@ def apply(module, native, mods=None):
         outputs = item_outputs(recipe, set())
         if (("oritech:basic_battery" in outputs and recipe.get("type") in
              {"oritech:assembler", "oritech:centrifuge_fluid", "minecraft:crafting_shaped", "minecraft:crafting_shapeless"})
-                or identifier == "mekanism:enriching/hdpe_sheet"
+                or identifier in {"mekanism:enriching/hdpe_sheet", "mekanism:processing/netherite/scrap_to_dust"}
                 or ("oritech:overcharged_crystal" in outputs and recipe.get("type", "").startswith("minecraft:crafting"))
                 or identifier == "oritech:assembler/superconductor"):
             save(identifier, DISABLED)
