@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "deep_foundations"
 	group: ""
-	icon: { id: "anvilcraft:royal_steel_upgrade_smithing_template" }
+	icon: { id: "forbidden_arcanus:hephaestus_forge_tier_3" }
 	id: "5D00000000000000"
 	order_index: 5
 	quest_links: [ ]

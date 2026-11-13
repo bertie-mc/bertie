@@ -2341,7 +2341,8 @@
 			}]
 		}
 		{
-			y: 0.0d
+			size: 2.0d
+			y: 0.75d
 			x: 30.0d
 			dependencies: ["5C00000000000097"]
 			id: "5C000000000000A9"
@@ -2398,7 +2399,7 @@
 		}
 		{
 			y: -1.5d
-			x: 25.5d
+			x: 22.5d
 			dependencies: ["5C000000000000A7"]
 			id: "5C000000000000AD"
 			icon: { id: "mekanism:ingot_refined_glowstone" }
