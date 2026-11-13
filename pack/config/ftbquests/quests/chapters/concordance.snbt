@@ -358,7 +358,7 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -424,11 +424,11 @@
 			}]
 		}
 		{
+			dependencies: ["5B00000000000095"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			y: -3.0d
-			x: 15.0d
-			dependencies: ["5B00000000000093"]
+			x: 16.5d
 			id: "5B00000000000094"
 			icon: { id: "anvilcraft:levitation_powder" }
 			tasks: [{
@@ -442,7 +442,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -4.5d
+			y: -3.0d
 			x: 15.0d
 			dependencies: ["5B00000000000093"]
 			id: "5B00000000000095"
@@ -458,7 +458,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -4.5d
+			y: -1.5d
 			x: 16.5d
 			dependencies: ["5B00000000000095"]
 			id: "5B00000000000096"
@@ -504,25 +504,9 @@
 			}]
 		}
 		{
+			dependencies: ["5B00000000000098"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000092"]
-			y: -1.5d
-			x: 13.5d
-			id: "5B0000000000009B"
-			icon: { id: "minecraft:end_stone_bricks" }
-			tasks: [{
-				id: "5B0000000100009B"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "minecraft:end_stone_bricks" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000098", "5B0000000000009B"]
 			y: 0.0d
 			x: 12.0d
 			id: "5B00000000000099"
@@ -536,10 +520,10 @@
 			}]
 		}
 		{
+			dependencies: ["5B00000000000099", "5B00000000000092"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000099"]
-			y: 0.0d
+			y: -1.5d
 			x: 13.5d
 			id: "5B0000000000009A"
 			icon: { id: "apothic_enchanting:draconic_endshelf" }
@@ -680,15 +664,15 @@
 				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000094"]
-			y: -3.0d
-			x: 16.5d
+			y: -4.5d
+			x: 18.0d
 			id: "5B000000000000A3"
 			icon: { id: "pastel:perturbed_eye" }
 			tasks: [{
@@ -767,8 +751,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A7"]
-			y: 4.5d
-			x: 16.5d
+			y: 7.5d
+			x: 18.0d
 			id: "5B000000000000A8"
 			icon: { id: "l2complements:shulkerate_ingot" }
 			tasks: [{
@@ -847,7 +831,7 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AC"]
-			y: 3.0d
+			y: 4.5d
 			x: 13.5d
 			id: "5B000000000000AD"
 			icon: { id: "alexsmobs:mosquito_larva" }
@@ -864,7 +848,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AD"]
 			y: 3.0d
-			x: 15.0d
+			x: 13.5d
 			id: "5B000000000000AE"
 			icon: { id: "alexsmobs:capsid" }
 			tasks: [{
@@ -880,7 +864,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AE"]
 			y: 3.0d
-			x: 16.5d
+			x: 15.0d
 			id: "5B000000000000AF"
 			icon: { id: "alexsmobs:mysterious_worm" }
 			tasks: [{
@@ -896,7 +880,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AF"]
 			y: 3.0d
-			x: 18.0d
+			x: 16.5d
 			id: "5B000000000000B0"
 			icon: { id: "alexsmobs:void_worm_eye" }
 			tasks: [{
@@ -912,7 +896,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AF"]
 			y: 4.5d
-			x: 18.0d
+			x: 15.0d
 			id: "5B000000000000B1"
 			icon: { id: "alexsmobs:void_worm_mandible" }
 			tasks: [{
@@ -928,7 +912,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000B1"]
 			y: 4.5d
-			x: 19.5d
+			x: 16.5d
 			id: "5B000000000000B2"
 			icon: { id: "cataclysm:abyssal_sacrifice" }
 			tasks: [{
@@ -944,7 +928,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000094"]
 			y: -1.5d
-			x: 16.5d
+			x: 18.0d
 			id: "5B000000000000B3"
 			icon: { id: "anvilcraft:levitation_powder_block" }
 			tasks: [{
@@ -960,7 +944,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A7"]
 			y: 6.0d
-			x: 22.5d
+			x: 19.5d
 			id: "5B000000000000B4"
 			icon: { id: "l2complements:shulkerate_block" }
 			tasks: [{
@@ -976,7 +960,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000B2"]
 			y: 4.5d
-			x: 21.0d
+			x: 18.0d
 			id: "5B000000000000B5"
 			icon: { id: "cataclysm:abyssal_egg" }
 			tasks: [{
@@ -988,12 +972,12 @@
 			}]
 		}
 		{
+			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098", "5B000000000000B7"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			size: 2.0d
-			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098"]
 			y: 1.5d
-			x: 22.5d
+			x: 19.5d
 			id: "5B000000000000B6"
 			icon: { id: "avaritia:end_crafting_table" }
 			tasks: [{
@@ -1001,6 +985,22 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "avaritia:end_crafting_table" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000096"]
+			y: 0.0d
+			x: 16.5d
+			id: "5B000000000000B7"
+			icon: { id: "anvilcraft:titanium_block" }
+			tasks: [{
+				id: "5B000000010000B7"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:titanium_block" }
 				type: "item"
 			}]
 		}

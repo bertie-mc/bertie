@@ -3026,7 +3026,6 @@
 	quest.5C000000000000AE.title: "Gas-Burning Generator"
 	quest.5B00000000000097.title: "Dragon's Breath"
 	quest.5B00000000000098.title: "Infused Dragon's Breath"
-	quest.5B0000000000009B.title: "End Stone Bricks"
 	quest.5B00000000000099.title: "Endshelf"
 	quest.5B0000000000009A.title: "Draconic Endshelf"
 	quest.5B0000000000009C.title: "Find an End City"
@@ -3058,4 +3057,5 @@
 	quest.5B000000000000B5.title: "Abyssal Egg"
 	quest.5B000000000000B6.title: "End Crafting Table"
 	quest.5B000000000000AF.quest_desc: ["drop it in the void"]
+	quest.5B000000000000B7.title: "Block of Titanium"
 }
