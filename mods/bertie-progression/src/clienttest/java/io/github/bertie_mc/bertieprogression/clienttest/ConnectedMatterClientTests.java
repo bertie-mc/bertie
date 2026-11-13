@@ -5,7 +5,6 @@ import io.github.bertie_mc.testing.client.context.ClientTestContext;
 import io.github.bertie_mc.testing.client.context.IntegratedWorldContext;
 import net.minecraft.client.gui.screens.worldselection.WorldCreationUiState;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.neoforged.neoforge.client.model.data.ModelData;
 
@@ -89,8 +88,14 @@ public final class ConnectedMatterClientTests {
             var state = client.level.getBlockState(pos);
             var model = client.getBlockRenderer().getBlockModel(state);
             var data = model.getModelData(client.level, pos, state, ModelData.EMPTY);
-            int count = model.getQuads(state, null, RandomSource.create(0), data, null)
-                    .size();
+            int count = (int) model.getQuads(state, null, RandomSource.create(0), data, null).stream()
+                            .filter(quad -> quad.getSprite()
+                                    .contents()
+                                    .name()
+                                    .getPath()
+                                    .equals("block/negative_matter_block_outline"))
+                            .count()
+                    * 2;
             if (count != expected)
                 throw new AssertionError(pos + ": expected " + expected + " quads, got " + count + " from "
                         + model.getClass().getName());
@@ -126,46 +131,7 @@ public final class ConnectedMatterClientTests {
     }
 
     private static void assertFloorJoin(ClientTestContext context, BlockPos left, BlockPos right, int axis) {
-        context.runOnClient(client -> {
-            java.util.List<float[]> a = new java.util.ArrayList<>(), b = new java.util.ArrayList<>();
-            for (BlockPos pos : new BlockPos[] {left, right}) {
-                var state = client.level.getBlockState(pos);
-                var model = client.getBlockRenderer().getBlockModel(state);
-                var data = model.getModelData(client.level, pos, state, ModelData.EMPTY);
-                for (var quad : model.getQuads(state, null, RandomSource.create(0), data, null)) {
-                    if (!quad.getSprite().contents().name().getPath().equals("block/negative_matter_block")) continue;
-                    var sprite = quad.getSprite();
-                    int[] vertices = quad.getVertices();
-                    int stride = vertices.length / 4;
-                    for (int i = 0; i < 4; i++) {
-                        int start = i * stride;
-                        float u = Float.intBitsToFloat(vertices[start + 4]);
-                        float v = Float.intBitsToFloat(vertices[start + 5]);
-                        if (u < sprite.getU(1.5f / 16) - 1e-6
-                                || u > sprite.getU(13.5f / 16) + 1e-6
-                                || v < sprite.getV(1.5f / 16) - 1e-6
-                                || v > sprite.getV(13.5f / 16) + 1e-6) {
-                            throw new AssertionError("A connected surface samples the texture bevel");
-                        }
-                        float coord = Float.intBitsToFloat(vertices[start + axis]);
-                        if (quad.getDirection() == Direction.UP && coord == (pos == left ? 1 : 0)) {
-                            float x = Float.intBitsToFloat(vertices[start]) + pos.getX();
-                            float y = Float.intBitsToFloat(vertices[start + 1]) + pos.getY();
-                            float z = Float.intBitsToFloat(vertices[start + 2]) + pos.getZ();
-                            (pos == left ? a : b).add(new float[] {x, y, z, u, v});
-                        }
-                    }
-                }
-            }
-            if (a.size() != 2 || b.size() != 2) throw new AssertionError("Floor does not reach the join");
-            for (float[] vertex : a) {
-                boolean matches = b.stream().anyMatch(other -> {
-                    for (int i = 0; i < vertex.length; i++) if (Math.abs(vertex[i] - other[i]) > 1e-6) return false;
-                    return true;
-                });
-                if (!matches) throw new AssertionError("Floor geometry or UVs break at the join");
-            }
-        });
+        ConnectedMatterCornerClientTests.assertFlatJoin(context, left, right, axis);
     }
 
     private static void camera(ClientTestContext context, IntegratedWorldContext world, String position) {

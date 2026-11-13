@@ -48,6 +48,10 @@ Acid liquid; Mekanism's chemical remains available through the Rotary machine.
 
 ### Blocks
 
+Adjacent Negative Matter blocks form a continuous inward-facing shell. The pale pattern
+continues across walls, floors and ceilings; diagonal neighbors close concave and stepped
+corners without exposed outline seams. Inventory rendering retains the native model.
+
 BetterEnd content and its End Veil brewing bridge are retired. Entangled Binder
 and Glider Wing use ordinary Sticks, and Configurator uses Leather. The generator's
 BetterEnd retirement pass removes obsolete crystal, food and slab recipes without
