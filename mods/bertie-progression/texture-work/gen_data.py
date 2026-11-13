@@ -5932,4 +5932,7 @@ _apply_late_end(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
 
 _retire_betterend(ROOT)
 
+from ace_stage_assets import apply as _apply_ace_stage_assets
+_apply_ace_stage_assets(ROOT)
+
 print(f"Wrote {len(written)} files under {RES}")

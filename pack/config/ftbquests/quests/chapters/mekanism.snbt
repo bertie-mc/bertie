@@ -779,37 +779,18 @@
 		}
 		{
 			id: "61272BEDD29AB74F"
-			icon: {
-				id: "mekanism:pigment_extractor"
-			}
-			tasks: [
-				{
-					id: "61B68373B930A628"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:pigment_extractor)item(mekanism_extras:absolute_pigment_extracting_factory)item(mekanism_extras:cosmic_pigment_extracting_factory)item(mekanism_extras:infinite_pigment_extracting_factory)item(mekanism_extras:supreme_pigment_extracting_factory)item(mekmm:advanced_pigment_extracting_factory)item(mekmm:basic_pigment_extracting_factory)item(mekmm:elite_pigment_extracting_factory)item(mekmm:ultimate_pigment_extracting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Pigment Extractor\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61B68373B930A628"
+				type: "checkmark"
+			}]
 			x: -16.000d
 			y: -6.000d
 		}
 		{
-			icon: { id: "mekanism:pigment_mixer" }
 			id: "61FCF66321F85454"
 			tasks: [{
 				id: "613402E033173A1E"
-				type: "item"
-				count: 1L
-				consume_items: false
-				item: { id: "mekanism:pigment_mixer" }
+				type: "checkmark"
 			}]
 			dependencies: [
 				"61272BEDD29AB74F"
@@ -819,25 +800,10 @@
 		}
 		{
 			id: "6121186A452C0852"
-			icon: {
-				id: "mekanism:painting_machine"
-			}
-			tasks: [
-				{
-					id: "61066B6CE86722C3"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:painting_machine)item(mekanism_extras:absolute_painting_factory)item(mekanism_extras:cosmic_painting_factory)item(mekanism_extras:infinite_painting_factory)item(mekanism_extras:supreme_painting_factory)item(mekmm:advanced_painting_factory)item(mekmm:basic_painting_factory)item(mekmm:elite_painting_factory)item(mekmm:ultimate_painting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Painting Machine\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61066B6CE86722C3"
+				type: "checkmark"
+			}]
 			dependencies: [
 				"61FCF66321F85454"
 			]
@@ -1195,73 +1161,28 @@
 		}
 		{
 			id: "6156CDFE543B3C19"
-			icon: {
-				id: "mekmm:cnc_lathe"
-			}
-			tasks: [
-				{
-					id: "6141B7E356818490"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekmm:cnc_lathe)item(mekanism_extras:absolute_lathing_factory)item(mekanism_extras:cosmic_lathing_factory)item(mekanism_extras:infinite_lathing_factory)item(mekanism_extras:supreme_lathing_factory)item(mekmm:advanced_lathing_factory)item(mekmm:basic_lathing_factory)item(mekmm:elite_lathing_factory)item(mekmm:ultimate_lathing_factory))"
-							"minecraft:custom_name": "{\"text\": \"CNC Lathe\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "6141B7E356818490"
+				type: "checkmark"
+			}]
 			x: -2.250d
 			y: -6.000d
 		}
 		{
 			id: "6138E502782D37CD"
-			icon: {
-				id: "mekmm:cnc_rolling_mill"
-			}
-			tasks: [
-				{
-					id: "61DD97F91F9B426B"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekmm:cnc_rolling_mill)item(mekanism_extras:absolute_rolling_mill_factory)item(mekanism_extras:cosmic_rolling_mill_factory)item(mekanism_extras:infinite_rolling_mill_factory)item(mekanism_extras:supreme_rolling_mill_factory)item(mekmm:advanced_rolling_mill_factory)item(mekmm:basic_rolling_mill_factory)item(mekmm:elite_rolling_mill_factory)item(mekmm:ultimate_rolling_mill_factory))"
-							"minecraft:custom_name": "{\"text\": \"CNC Rolling Mill\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61DD97F91F9B426B"
+				type: "checkmark"
+			}]
 			x: 0.000d
 			y: -6.000d
 		}
 		{
 			id: "6185FE15DFBCF018"
-			icon: {
-				id: "mekmm:cnc_stamper"
-			}
-			tasks: [
-				{
-					id: "615141A4A855ED97"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekmm:cnc_stamper)item(mekanism_extras:absolute_stamping_factory)item(mekanism_extras:cosmic_stamping_factory)item(mekanism_extras:infinite_stamping_factory)item(mekanism_extras:supreme_stamping_factory)item(mekmm:advanced_stamping_factory)item(mekmm:basic_stamping_factory)item(mekmm:elite_stamping_factory)item(mekmm:ultimate_stamping_factory))"
-							"minecraft:custom_name": "{\"text\": \"CNC Stamper\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "615141A4A855ED97"
+				type: "checkmark"
+			}]
 			x: 2.250d
 			y: -6.000d
 		}
@@ -1758,13 +1679,9 @@
 			x: 4.5d
 			dependencies: ["61007F7CC4BF1105"]
 			id: "616AB809942229A7"
-			icon: { id: "mekmm:large_electrolytic_separator" }
 			tasks: [{
 				id: "616AB809012229A7"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_electrolytic_separator" }
-				type: "item"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -1772,13 +1689,9 @@
 			x: 0.5d
 			dependencies: ["6198E5DF4A957298"]
 			id: "616F3150516DABC8"
-			icon: { id: "mekmm:large_gas_burning_generator" }
 			tasks: [{
 				id: "616F3150016DABC8"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_gas_burning_generator" }
-				type: "item"
+				type: "checkmark"
 			}]
 		}
 		{

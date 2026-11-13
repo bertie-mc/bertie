@@ -130,7 +130,7 @@
 			}]
 		}
 		{
-			y: 0d
+			y: 0.0d
 			x: 13.5d
 			id: "6C00000000006101"
 			icon: { id: "anvilcraft:recovery_pearl" }
@@ -139,6 +139,19 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "anvilcraft:recovery_pearl" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 15.0d
+			id: "6C00000000006102"
+			icon: { id: "pastel:block_flooder" }
+			tasks: [{
+				id: "6C00000001006102"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "pastel:block_flooder" }
 				type: "item"
 			}]
 		}

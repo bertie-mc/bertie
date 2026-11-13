@@ -31,6 +31,10 @@ The [ore-intermediate family](docs/ore-materials.md) fills missing processing
 forms while retaining existing item IDs. Metal Centrifuge routes consume Sheol
 Fire and produce a Gem plus four Specs; seeded Spec recombination closes the loop.
 
+Advanced Computing Engine Stages 1–3 are registered as quest objectives with the
+approved quarter-color sprites. Their Atomic Forge processing recipes remain a
+separate pending progression change.
+
 Bronze Sheets and Platinum Rods/Wires use the established material-form routes.
 Electric and Resonant Coils have Nether Table crafts and Bound Soul variants.
 Dense Coal Charge combines 32 Coal Dust with HDPE Sheet and feeds Carbon Fibre

@@ -112,6 +112,12 @@ public final class ModItems {
     public static final DeferredItem<Item> PLATINUM_COIL = simple("platinum_coil", 64);
     public static final DeferredItem<Item> INCOMPLETE_PLATINUM_WIRE = simple("incomplete_platinum_wire", 64);
     public static final DeferredItem<Item> COAL_DENSE_CHARGE = simple("coal_dense_charge", 64);
+    public static final DeferredItem<Item> ADVANCED_COMPUTING_ENGINE_STAGE_1 =
+            simple("advanced_computing_engine_stage_1", 64);
+    public static final DeferredItem<Item> ADVANCED_COMPUTING_ENGINE_STAGE_2 =
+            simple("advanced_computing_engine_stage_2", 64);
+    public static final DeferredItem<Item> ADVANCED_COMPUTING_ENGINE_STAGE_3 =
+            simple("advanced_computing_engine_stage_3", 64);
     public static final DeferredItem<Item> PLATINUM_WIRE = simple("platinum_wire", 64);
     public static final DeferredItem<Item> PLATINUM_ROD = simple("platinum_rod", 64);
     public static final DeferredItem<Item> BRONZE_SHEET = simple("bronze_sheet", 64);

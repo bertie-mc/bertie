@@ -76,21 +76,10 @@
 		}
 		{
 			id: "621E38939E05AA74"
-			icon: {
-				id: "oritech:atomic_forge_block"
-			}
-			tasks: [
-				{
-					id: "62DA4EF4694F7337"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:atomic_forge_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62DA4EF4694F7337"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"624BC5B6C71FD915"

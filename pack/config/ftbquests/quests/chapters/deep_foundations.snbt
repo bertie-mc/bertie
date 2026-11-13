@@ -1160,9 +1160,9 @@
 			}]
 		}
 		{
+			dependencies: ["5D0000000000002C"]
 			y: -3.0d
 			x: 15.0d
-			dependencies: ["5D0000000000002D"]
 			id: "5D00000000000089"
 			icon: { id: "refinedstorage:upgrade" }
 			tasks: [{

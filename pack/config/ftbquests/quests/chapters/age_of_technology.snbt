@@ -1314,7 +1314,7 @@
 		}
 		{
 			dependencies: ["5C000000000000AF"]
-			y: 3.0d
+			y: 4.5d
 			x: 9.0d
 			id: "5C00000000009348"
 			icon: { id: "oritech:treefeller_block" }
@@ -2414,7 +2414,7 @@
 		{
 			dependencies: ["5C00000000009341"]
 			y: -4.5d
-			x: 13.5d
+			x: 15.0d
 			id: "5C000000000000AE"
 			icon: { id: "mekanismgenerators:gas_burning_generator" }
 			tasks: [{
@@ -2426,7 +2426,7 @@
 			}]
 		}
 		{
-			y: 2.25d
+			y: 3.0d
 			x: 7.5d
 			dependencies: ["5C00000000009303"]
 			id: "5C000000000000AF"
@@ -2450,6 +2450,76 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "mekanism:dimensional_stabilizer" }
+				type: "item"
+			}]
+		}
+		{
+			y: -6.0d
+			x: 15.0d
+			dependencies: ["5C000000000000AE"]
+			id: "5C000000000000B1"
+			icon: { id: "mekmm:large_gas_burning_generator" }
+			tasks: [{
+				id: "5C000000010000B1"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_gas_burning_generator" }
+				type: "item"
+			}]
+		}
+		{
+			y: 3.0d
+			x: 9.0d
+			dependencies: ["5C00000000009322"]
+			id: "5C000000000000B2"
+			icon: { id: "mekmm:large_electrolytic_separator" }
+			tasks: [{
+				id: "5C000000010000B2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_electrolytic_separator" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 13.5d
+			dependencies: ["5C00000000009341"]
+			id: "5C000000000000B3"
+			icon: { id: "mekanism:pigment_extractor" }
+			tasks: [{
+				id: "5C000000010000B3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:pigment_extractor" }
+				type: "item"
+			}]
+		}
+		{
+			y: -6.0d
+			x: 13.5d
+			dependencies: ["5C000000000000B3"]
+			id: "5C000000000000B4"
+			icon: { id: "mekanism:pigment_mixer" }
+			tasks: [{
+				id: "5C000000010000B4"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:pigment_mixer" }
+				type: "item"
+			}]
+		}
+		{
+			y: -7.5d
+			x: 13.5d
+			dependencies: ["5C000000000000B4"]
+			id: "5C000000000000B5"
+			icon: { id: "mekanism:painting_machine" }
+			tasks: [{
+				id: "5C000000010000B5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:painting_machine" }
 				type: "item"
 			}]
 		}
