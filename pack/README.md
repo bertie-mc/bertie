@@ -2,6 +2,9 @@
 
 An exploration, technology, and magic modpack for Minecraft 1.21.1 on NeoForge.
 
+The Beyond supplies the End terrain and exploration content, with Isleweaver
+integrating the other End mods. BetterEnd and its runtime libraries are retired.
+
 ## Installing
 
 Client and server exports are published on the

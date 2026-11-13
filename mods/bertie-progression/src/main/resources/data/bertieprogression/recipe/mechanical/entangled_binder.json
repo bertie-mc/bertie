@@ -2,10 +2,6 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "betterend"
-    },
-    {
-      "type": "neoforge:mod_loaded",
       "modid": "create"
     },
     {
@@ -35,7 +31,7 @@
       "item": "bertieprogression:iron_sheet"
     },
     "S": {
-      "item": "betterend:leather_wrapped_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

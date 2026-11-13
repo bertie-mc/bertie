@@ -2,10 +2,6 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "betterend"
-    },
-    {
-      "type": "neoforge:mod_loaded",
       "modid": "create"
     },
     {
@@ -22,7 +18,7 @@
   "category": "misc",
   "key": {
     "W": {
-      "item": "betterend:leather_wrapped_stick"
+      "item": "minecraft:stick"
     },
     "L": {
       "item": "twilightforest:tanned_leather"

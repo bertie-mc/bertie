@@ -389,18 +389,6 @@
 			y: -6.0d
 		}
 		{
-			icon: { count: 1 id: "betterend:silk_fiber" }
-			id: "1C00000000001004"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001004"
-				item: { count: 1 id: "betterend:silk_fiber" }
-				type: "item"
-			}]
-			x: 16.5d
-			y: 14.0d
-		}
-		{
 			icon: { count: 1 id: "malum:esoteric_spool" }
 			id: "1C00000000001006"
 			tasks: [{
@@ -667,18 +655,6 @@
 			y: -3.0d
 		}
 		{
-			icon: { count: 1 id: "betterend:leather_stripe" }
-			id: "1C00000000001030"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001030"
-				item: { count: 1 id: "betterend:leather_stripe" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 11.0d
-		}
-		{
 			icon: { count: 1 id: "alexsmobs:bear_fur" }
 			id: "1C00000000001035"
 			tasks: [{
@@ -888,18 +864,6 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 14.0d
-		}
-		{
-			icon: { count: 1 id: "betterend:enchanted_membrane" }
-			id: "1C00000000001049"
-			tasks: [{
-				count: 1L
-				id: "1C00000001001049"
-				item: { count: 1 id: "betterend:enchanted_membrane" }
-				type: "item"
-			}]
-			x: 13.5d
 			y: 14.0d
 		}
 		{

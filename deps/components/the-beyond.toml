@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "the-beyond"
+project-id = 658435
+file-id = 9274055
+filename = "the_beyond-1.0.1.jar"

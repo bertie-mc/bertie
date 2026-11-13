@@ -5895,6 +5895,11 @@ write("data/pastel/worldgen/configured_feature/lake_humus.json", {
                   "state": {"Name": "minecraft:water", "Properties": {"level": "0"}}},
         "barrier": {"type": "minecraft:simple_state_provider", "state": {"Name": "pastel:hornslake"}}}})
 
+from betterend_retirement import apply as _retire_betterend
+_retired_betterend, _ = _retire_betterend(ROOT)
+written[:] = [name for name in written if name not in _retired_betterend]
+_override_sources.discard("betterend")
+
 _TOML = os.path.join(ROOT, "src", "main", "templates", "META-INF", "neoforge.mods.toml")
 _declared = set()
 for _blk in io.open(_TOML, encoding="utf-8").read().split("[[dependencies.")[1:]:
@@ -5924,5 +5929,7 @@ _apply_end_plastics(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
 
 from late_end_recipes import apply as _apply_late_end
 _apply_late_end(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
+
+_retire_betterend(ROOT)
 
 print(f"Wrote {len(written)} files under {RES}")

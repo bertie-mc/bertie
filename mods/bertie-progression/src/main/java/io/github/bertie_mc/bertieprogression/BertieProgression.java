@@ -92,7 +92,6 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(AllayCorruptionHandler.class);
         NeoForge.EVENT_BUS.register(NetherGateHandler.class);
         NeoForge.EVENT_BUS.register(CrushingEssenceHandler.class);
-        NeoForge.EVENT_BUS.register(EndVeilBrewingHandler.class);
         NeoForge.EVENT_BUS.register(LavaVisionBrewingHandler.class);
         NeoForge.EVENT_BUS.register(MagicMirrorCooldownHandler.class);
         NeoForge.EVENT_BUS.register(CapeSlotHandler.class);

@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (439)
+## Mods (437)
 
 | Mod |
 |---|
@@ -41,13 +41,11 @@
 | `azurelib` |
 | `bad-wither-no-cookie` |
 | `balm` |
-| `bclib-neoforge` |
 | `better-advancements` |
 | `better-archeology` |
 | `better-beacon-placement` |
 | `better-climbing` |
 | `better-combat` |
-| `betterend-neoforge` |
 | `betterf3` |
 | `bettersmithingtable` |
 | `big-birch-tree` |
@@ -89,8 +87,8 @@
 | `compact-machines` |
 | `compactmachinespor` |
 | `complementary-reimagined` |
-| `convenient-effects` |
 | `controlling` |
+| `convenient-effects` |
 | `corgilib` |
 | `coroutil` |
 | `cosmetic-armor-reworked-forked` |
@@ -223,6 +221,7 @@
 | `irons-lib` |
 | `irons-spellbooks-arcane-essence-blocks` |
 | `irons-spells-n-spellbooks` |
+| `isleweaver` |
 | `item-borders` |
 | `item-collectors` |
 | `item-descriptions` |
@@ -379,6 +378,7 @@
 | `terra-curio` |
 | `terrablender` |
 | `terralith` |
+| `the-beyond` |
 | `the-twilight-forest` |
 | `time-in-a-bottle-universal` |
 | `tiny-item-animations` |
@@ -421,8 +421,6 @@
 | `withering-heights` |
 | `wits` |
 | `worldedit` |
-| `worldweaver-neoforge` |
-| `wunderlib-neoforge` |
 | `xaero-train-map` |
 | `xaeros-minimap` |
 | `xaeros-world-map` |
@@ -505,3 +503,9 @@
 | `quest-items` |
 | `runes` |
 | `warden-tools` |
+
+## Removed End generation
+
+BetterEnd is replaced by The Beyond with Isleweaver compatibility. BCLib,
+WorldWeaver and WunderLib leave the runtime with their only consumer. WunderLib
+remains a config-migrations test dependency.

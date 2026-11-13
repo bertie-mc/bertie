@@ -1,6 +1,6 @@
 profile = "release-modrinth"
-inputs-hash = "6c7c8cd5054619a3ad4d3263c16a02d9f0367a9498b81a79186359edc5f48578"
-relationships = [{ "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
+inputs-hash = "43bdc292a45abf920aa8e55db10c26b2e0a2f1b5802cd6f2f9826362521e48c1"
+relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
 any = "modrinth:UqdL217I:i8fZqMWD"
@@ -137,10 +137,6 @@ mod = "modrinth:GOKA9KZY:EhFxx2g9"
 [components."better-climbing"]
 any = "modrinth:ZucWZEBV:RJgDIKSn"
 mod = "modrinth:ZucWZEBV:RJgDIKSn"
-
-[components."betterend-neoforge"]
-any = "modrinth:IcERKldh:mf7D5Bcy"
-mod = "modrinth:IcERKldh:mf7D5Bcy"
 
 [components."betterf3"]
 any = "modrinth:8shC1gFX:maXNB1dn"
@@ -741,6 +737,10 @@ mod = "modrinth:Pkj2hNRk:Amnk4kDG"
 any = "modrinth:s4OWxYQQ:AvHIYbZi"
 mod = "modrinth:s4OWxYQQ:AvHIYbZi"
 
+[components."isleweaver"]
+any = "curseforge:1563324:9224612"
+mod = "curseforge:1563324:9224612"
+
 [components."item-borders"]
 any = "modrinth:b1fMg6sH:WjErgKWV"
 mod = "modrinth:b1fMg6sH:WjErgKWV"
@@ -1256,6 +1256,10 @@ mod = "curseforge:1027625:8520023"
 any = "modrinth:8oi3bsk5:urbokcOc"
 mod = "modrinth:8oi3bsk5:MuJMtPGQ"
 
+[components."the-beyond"]
+any = "curseforge:658435:9274055"
+mod = "curseforge:658435:9274055"
+
 [components."the-twilight-forest"]
 any = "curseforge:227639:7797302"
 mod = "curseforge:227639:7797302"
@@ -1613,6 +1617,27 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:9hx3AbJM:MxbfrOEv", "namespace" = "easymagic", "reason" = "ships data/easymagic/", "origin" = "archive-data" }]
 
+[artifacts."curseforge:1563324:9224612"]
+name = "isleweaver"
+component = "isleweaver"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "isleweaver-1563324"
+version = "9224612"
+filename = "isleweaver-0.0.3b-InDev.jar"
+project-id = 1563324
+slug = "isleweaver"
+file-id = 9224612
+provides = ["isleweaver"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:658435:9274055", "mod-id" = "the_beyond", "version-range" = "[1.0.0,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "astrological", "mod-id" = "astrological", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "betterend", "mod-id" = "betterend", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "wover", "mod-id" = "wover", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "bclib", "mod-id" = "bclib", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "enderscape", "mod-id" = "enderscape", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "stellarity", "mod-id" = "stellarity", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:qnQsVE2z:hMLnxKZx", "mod-id" = "quark", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "phantasm", "mod-id" = "phantasm", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "dimensional_tears", "mod-id" = "dimensional_tears", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "unusualend", "mod-id" = "unusualend", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:1oUDhxuy:xh6jB8Xb", "mod-id" = "moogs_structures", "version-range" = "*", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."curseforge:224218:7621553"]
 name = "compact-machines"
 component = "compact-machines"
@@ -1711,6 +1736,27 @@ file-id = 7878281
 provides = ["ftbteams"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:lhGA9TYQ:ZxYGwlk0", "mod-id" = "architectury", "version-range" = "[13.0.8,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:404465:8226923", "mod-id" = "ftblibrary", "version-range" = "[2101.1.30,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:658435:9274055"]
+name = "the-beyond"
+component = "the-beyond"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "the-beyond-658435"
+version = "9274055"
+filename = "the_beyond-1.0.1.jar"
+project-id = 658435
+slug = "the-beyond"
+file-id = 9274055
+provides = ["the_beyond"]
+bundled-provides = ["ctm"]
+required = []
 optional = []
 incompatible = []
 bundled = []
@@ -2986,25 +3032,6 @@ version-id = "4ZgLLUNk"
 provides = ["whats_that_slot"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:7bdKEtKC:OaVg9Swk"]
-name = "bclib-neoforge"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "7bdKEtKC"
-version = "OaVg9Swk"
-filename = "bclib-21.0.21.jar"
-project-id = "7bdKEtKC"
-version-id = "OaVg9Swk"
-provides = ["bclib"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:HZmhgdJk:5db3GZzg", "mod-id" = "wunderlib", "version-range" = "[21.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:R8uGDQpB:d8e9QsHt", "mod-id" = "wover", "version-range" = "[21.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -4504,26 +4531,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:IcERKldh:mf7D5Bcy"]
-name = "betterend-neoforge"
-component = "betterend-neoforge"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "IcERKldh"
-version = "mf7D5Bcy"
-filename = "BetterEnd-21.0.25.jar"
-project-id = "IcERKldh"
-version-id = "mf7D5Bcy"
-provides = ["betterend"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:7bdKEtKC:OaVg9Swk", "mod-id" = "bclib", "version-range" = "[21.0.14,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:R8uGDQpB:d8e9QsHt", "mod-id" = "wover", "version-range" = "[21.0.16,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:HZmhgdJk:5db3GZzg", "mod-id" = "wunderlib", "version-range" = "[21.0.9,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:ItTQpuBn:3OXCvg6r"]
 name = "stellaris"
 component = "stellaris"
@@ -5713,25 +5720,6 @@ version-id = "Vrf31Ytf"
 provides = ["railwaysuntold"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:LNytGWDc:UjX6dr61", "mod-id" = "create", "version-range" = "[0.5.1,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:R8uGDQpB:d8e9QsHt"]
-name = "worldweaver-neoforge"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "R8uGDQpB"
-version = "d8e9QsHt"
-filename = "worldweaver-21.0.24.jar"
-project-id = "R8uGDQpB"
-version-id = "d8e9QsHt"
-provides = ["wover"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:HZmhgdJk:5db3GZzg", "mod-id" = "wunderlib", "version-range" = "[21.0.8,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

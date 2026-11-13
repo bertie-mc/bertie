@@ -1,0 +1,11 @@
+# Integrates the pack's other End generation with The Beyond.
+[relationships.the-beyond]
+kind = "optional-addon-for"
+
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "isleweaver"
+project-id = 1563324
+file-id = 9224612
+filename = "isleweaver-0.0.3b-InDev.jar"

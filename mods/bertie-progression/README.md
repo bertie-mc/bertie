@@ -40,6 +40,11 @@ Acid liquid; Mekanism's chemical remains available through the Rotary machine.
 
 ### Blocks
 
+BetterEnd content and its End Veil brewing bridge are retired. Entangled Binder
+and Glider Wing use ordinary Sticks, and Configurator uses Leather. The generator's
+BetterEnd retirement pass removes obsolete crystal, food and slab recipes without
+changing these surviving recipes' layouts or output counts.
+
 The Giant Anvil crafts an Overcharged Crystal from a 3×3×3 cube with a Cognitive
 Crystal Block at its center, the existing Magitech Block of Mana Charged Fluorite
 (`magitech:fluorite_block`) at its eight corners, and eighteen Superconductors

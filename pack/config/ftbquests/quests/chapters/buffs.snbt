@@ -48,24 +48,6 @@
 		}
 		{
 			icon: {
-				id: "betterend:infusion_pedestal"
-			}
-			id: "3C00000000000012"
-			rewards: [{
-				id: "3C00000002000012"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000012"
-				item: { count: 1, id: "betterend:infusion_pedestal" }
-				type: "item"
-			}]
-			x: 8.5d
-			y: 8.5d
-		}
-		{
-			icon: {
 				id: "cataclysm:mechanical_fusion_anvil"
 			}
 			id: "3C00000000000013"

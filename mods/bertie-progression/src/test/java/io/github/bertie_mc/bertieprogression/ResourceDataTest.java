@@ -72,7 +72,7 @@ class ResourceDataTest {
         assertEquals(
                 "slag:molten_gold", recipe.getAsJsonObject("fluid").get("fluid").getAsString());
         assertEquals(
-                "minecraft:netherite_ingot",
+                "mekanism:dust_netherite",
                 recipe.getAsJsonObject("result").get("id").getAsString());
         assertTrue(recipe.toString().contains("hazennstuff:rose_gold_ingot"));
         assertTrue(recipe.toString().contains("pastel:neolith"));
