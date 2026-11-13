@@ -25,6 +25,7 @@ public final class RavenInfusion {
         // Summing shelf contributions can differ by a few float ULPs between insertion orders.
         return Math.abs(eterna - 99F) <= 0.0001F
                 && Math.abs(quanta - 99.5F) <= 0.0001F
-                && Math.abs(arcana - 1.25F) <= 0.0001F;
+                && arcana >= 1.2F - 0.0001F
+                && arcana <= 1.3F + 0.0001F;
     }
 }

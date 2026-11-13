@@ -369,25 +369,10 @@
 		}
 		{
 			id: "6114E8F45706FC16"
-			icon: {
-				id: "mekanism:precision_sawmill"
-			}
-			tasks: [
-				{
-					id: "61DDAF1DD4A91DC1"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:precision_sawmill)item(mekanism:advanced_sawing_factory)item(mekanism:basic_sawing_factory)item(mekanism:elite_sawing_factory)item(mekanism:ultimate_sawing_factory)item(mekanism_extras:absolute_sawing_factory)item(mekanism_extras:cosmic_sawing_factory)item(mekanism_extras:infinite_sawing_factory)item(mekanism_extras:supreme_sawing_factory))"
-							"minecraft:custom_name": "{\"text\": \"Precision Sawmill\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61DDAF1DD4A91DC1"
+				type: "checkmark"
+			}]
 			dependencies: [
 				"6170554009D736BD"
 			]
@@ -922,31 +907,10 @@
 		}
 		{
 			id: "612C871199A18CFB"
-			icon: {
-				id: "mekanism:teleporter"
-			}
-			tasks: [
-				{
-					id: "61C07CABEFBD3E17"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:teleporter"
-					}
-				}
-				{
-					id: "61D8A44CEAF82C1F"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:teleporter_frame"
-					}
-				}
-			]
+			tasks: [{
+				id: "61C07CABEFBD3E17"
+				type: "checkmark"
+			}]
 			x: -13.750d
 			y: 6.000d
 		}
@@ -972,21 +936,10 @@
 		}
 		{
 			id: "618738812E241B28"
-			icon: {
-				id: "mekanism:dimensional_stabilizer"
-			}
-			tasks: [
-				{
-					id: "6174C27B6756CAF5"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:dimensional_stabilizer"
-					}
-				}
-			]
+			tasks: [{
+				id: "6174C27B6756CAF5"
+				type: "checkmark"
+			}]
 			x: -7.000d
 			y: 6.000d
 		}

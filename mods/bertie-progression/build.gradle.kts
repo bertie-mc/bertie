@@ -32,6 +32,8 @@ val isolateIntegrationRituals by tasks.registering {
             setOf(
                 "forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_3.json",
                 "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/machine_casing.json",
+                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/perturbed_eye.json",
+                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/abyssal_sacrifice.json",
             )
         sourceFiles.forEach { source ->
             val relative = source.relativeTo(sourceRoot).invariantSeparatorsPath
@@ -131,6 +133,10 @@ dependencies {
     "integrationtestImplementation"(deps.ironsSpellsNSpellbooks)
     "integrationtestRuntimeOnly"(deps.endRemasteredAdditions)
     "integrationtestRuntimeOnly"(deps.apothicEnchanting)
+    "integrationtestRuntimeOnly"(deps.lEndersCataclysm)
+    "integrationtestRuntimeOnly"(deps.lEndersCataclysmDelight)
+    "integrationtestRuntimeOnly"(deps.farmersDelight)
+    "integrationtestRuntimeOnly"(deps.alexsMobs1211)
     "integrationtestRuntimeOnly"(deps.elementalMetalsMagicalMetallurgySeries)
     "integrationtestRuntimeOnly"(deps.magitech)
     "integrationtestRuntimeOnly"(deps.curseOfPandora)

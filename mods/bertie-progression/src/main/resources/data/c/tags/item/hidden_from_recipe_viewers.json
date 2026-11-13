@@ -4993,6 +4993,90 @@
     {
       "id": "endersdelight:ender_shard",
       "required": false
+    },
+    {
+      "id": "mekanism:advanced_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism:advanced_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism:basic_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism:basic_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism:elite_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism:elite_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism:induction_casing",
+      "required": false
+    },
+    {
+      "id": "mekanism:induction_port",
+      "required": false
+    },
+    {
+      "id": "mekanism:ultimate_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism:ultimate_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:absolute_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:absolute_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:cosmic_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:cosmic_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:infinite_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:infinite_induction_provider",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:reinforced_induction_casing",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:reinforced_induction_port",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:supreme_induction_cell",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:supreme_induction_provider",
+      "required": false
+    },
+    {
+      "id": "quark:gravisand",
+      "required": false
     }
   ]
 }

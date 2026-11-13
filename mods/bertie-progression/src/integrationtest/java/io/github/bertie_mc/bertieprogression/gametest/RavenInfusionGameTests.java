@@ -1,6 +1,8 @@
 package io.github.bertie_mc.bertieprogression.gametest;
 
 import com.mojang.authlib.GameProfile;
+import com.stal111.forbidden_arcanus.common.block.entity.forge.ritual.result.CreateItemResult;
+import com.stal111.forbidden_arcanus.core.registry.FARegistries;
 import java.util.Set;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
@@ -34,6 +36,16 @@ public final class RavenInfusionGameTests {
                 .value();
         var matches = recipe.getClass().getMethod("matches", ItemStack.class, float.class, float.class, float.class);
         helper.assertTrue((boolean) matches.invoke(recipe, input, 99F, 99.5F, 1.25F), "Exact shelf setup must match");
+        for (float arcana : new float[] {1.2F, 1.3F, Math.nextDown(1.2F), Math.nextUp(1.3F)}) {
+            helper.assertTrue(
+                    (boolean) matches.invoke(recipe, input, 99F, 99.5F, arcana),
+                    "Arcana endpoints and float rounding must match");
+        }
+        for (float arcana : new float[] {1.19F, 1.31F}) {
+            helper.assertTrue(
+                    !(boolean) matches.invoke(recipe, input, 99F, 99.5F, arcana),
+                    "Arcana outside the selected range must fail");
+        }
         helper.assertTrue(
                 (boolean) matches.invoke(recipe, input, Math.nextUp(99F), Math.nextDown(99.5F), 1.25F),
                 "Float summation order must not prevent the displayed setup");
@@ -84,6 +96,59 @@ public final class RavenInfusionGameTests {
                 player.experienceLevel == baseline.experienceLevel
                         && Math.abs(player.experienceProgress - baseline.experienceProgress) < 0.0001F,
                 "Ordinary infusion must use the unchanged native payment");
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void lateCraftsAndExpandedRitualsDecodeWithRegisteredInputs(GameTestHelper helper) {
+        for (String key : new String[] {
+            "minecraft:end_portal_frame",
+            "avaritia:end_crafting_table",
+            "refinedstorage:wireless_grid",
+            "mekanism:precision_sawmill",
+            "mekanism:dimensional_stabilizer",
+            "bertieprogression:pressing/titanium_sheet",
+            "bertieprogression:anvilcraft/stamping/titanium_sheet",
+            "bertieprogression:storage/enderite_block",
+            "bertieprogression:storage/enderite_ingot",
+            "mekanism:meka_tool",
+            "mekanism:module_energy_unit",
+            "mekanism:module_charge_distribution_unit",
+            "mekanism:module_gravitational_modulating_unit",
+            "oritech:crafting/unstablecontainer"
+        }) {
+            helper.assertTrue(
+                    helper.getLevel()
+                            .getRecipeManager()
+                            .byKey(ResourceLocation.parse(key))
+                            .isPresent(),
+                    "Changed recipe must decode: " + key);
+        }
+        helper.assertTrue(!item("bertieprogression:titanium_sheet").isEmpty(), "Titanium Sheet must register");
+        helper.assertTrue(!item("cataclysm:enderite_ingot").isEmpty(), "Native Enderite must remain available");
+        var rituals = helper.getLevel().registryAccess().registryOrThrow(FARegistries.RITUAL);
+        var eye = rituals.get(ResourceLocation.parse("bertieprogression:perturbed_eye"));
+        helper.assertTrue(eye != null && eye.inputs().size() == 2, "Perturbed Eye ritual must decode");
+        helper.assertTrue(
+                eye.requirements().essences().souls() == 12
+                        && eye.requirements().essences().experience() == 1200,
+                "Perturbed Eye must retain its Souls and Ink costs");
+        helper.assertTrue(
+                ((CreateItemResult) eye.result()).result().getCount() == 12, "Eye ritual must produce twelve");
+        var sacrifice = rituals.get(ResourceLocation.parse("bertieprogression:abyssal_sacrifice"));
+        helper.assertTrue(
+                sacrifice != null && sacrifice.inputs().size() == 10, "Expanded ten-group ritual must decode");
+        var inputs = sacrifice.inputs().stream()
+                .flatMap(input -> java.util.stream.IntStream.range(0, input.amount())
+                        .mapToObj(index -> input.ingredient().getItems()[0].copy()))
+                .toList();
+        helper.assertTrue(
+                inputs.size() == 12 && sacrifice.checkIngredients(inputs, item("deeperdarker:heart_of_the_deep")),
+                "Sacrifice must match all twelve secondary items and the Heart");
+        helper.assertTrue(
+                sacrifice.requirements().essences().blood() == 30000
+                        && sacrifice.requirements().essences().souls() == 100,
+                "Sacrifice must consume maximum Tier III Blood and Souls");
         helper.succeed();
     }
 

@@ -272,5 +272,6 @@
   "item.bertieprogression.coal_dense_charge": "Dense Coal Charge",
   "tooltip.bertieprogression.warden_tendril": "Shear Warden",
   "tooltip.bertieprogression.pastel_dye_fuel": "Ability fuel: %s in your inventory",
-  "block.bertieprogression.eezo_ore": "Eezo Ore"
+  "block.bertieprogression.eezo_ore": "Eezo Ore",
+  "item.bertieprogression.titanium_sheet": "Titanium Sheet"
 }

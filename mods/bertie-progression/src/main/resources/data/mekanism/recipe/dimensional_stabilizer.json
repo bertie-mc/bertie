@@ -1,0 +1,38 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "VPPVV",
+    "VEHFP",
+    "PEKFP",
+    "PEBFV",
+    "VVPPV"
+  ],
+  "key": {
+    "V": {
+      "item": "anvilcraft:void_matter"
+    },
+    "P": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "E": {
+      "item": "anvilcraft:ember_metal_ingot"
+    },
+    "F": {
+      "item": "anvilcraft:frost_metal_ingot"
+    },
+    "H": {
+      "item": "minecraft:heavy_core"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "B": {
+      "item": "anvilcraft:earth_core_shard_block"
+    }
+  },
+  "result": {
+    "id": "mekanism:dimensional_stabilizer",
+    "count": 1
+  },
+  "tier": 2
+}

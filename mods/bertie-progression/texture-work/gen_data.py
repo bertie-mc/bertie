@@ -5922,4 +5922,7 @@ _retire_ostrum(_Path(ROOT), _Path(INSTANCE_MODS))
 from end_plastics_recipes import apply as _apply_end_plastics
 _apply_end_plastics(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
 
+from late_end_recipes import apply as _apply_late_end
+_apply_late_end(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

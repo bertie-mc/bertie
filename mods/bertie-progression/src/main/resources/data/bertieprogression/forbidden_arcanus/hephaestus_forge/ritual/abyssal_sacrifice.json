@@ -1,0 +1,80 @@
+{
+  "forge_tier": 3,
+  "essences": {
+    "blood": 30000,
+    "souls": 100
+  },
+  "main_ingredient": {
+    "item": "deeperdarker:heart_of_the_deep"
+  },
+  "inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "alexsmobs:void_worm_mandible"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:crystallized_coral"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:coral_chunk"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "minecraft:chorus_flower"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "oritech:unholy_intelligence"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "curseofpandora:evil_spine"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "curseofpandora:evil_stone"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "cataclysm:blessed_amethyst_crab_meat"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "lendersdelight:improved_dog_food"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "cataclysm:abyssal_sacrifice",
+      "count": 1
+    }
+  }
+}

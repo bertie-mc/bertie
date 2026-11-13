@@ -116,6 +116,7 @@ public final class ModItems {
     public static final DeferredItem<Item> PLATINUM_ROD = simple("platinum_rod", 64);
     public static final DeferredItem<Item> BRONZE_SHEET = simple("bronze_sheet", 64);
     public static final DeferredItem<Item> NICKEL_SHEET = simple("nickel_sheet", 64);
+    public static final DeferredItem<Item> TITANIUM_SHEET = simple("titanium_sheet", 64);
     public static final DeferredItem<Item> STEEL_ROD = simple("steel_rod", 64);
     public static final DeferredItem<Item> STEEL_SHEET = simple("steel_sheet", 64);
     public static final DeferredItem<Item> ENRICHED_ZINC = simple("enriched_zinc", 64);
@@ -205,6 +206,9 @@ public final class ModItems {
                         out.accept(EEZO_ORE.get());
                         out.accept(POCKET_DIMENSION.get());
                         out.accept(POCKET_WATCH.get());
+                        BuiltInRegistries.ITEM
+                                .getOptional(ResourceLocation.fromNamespaceAndPath("cataclysm", "enderite_ingot"))
+                                .ifPresent(out::accept);
                         // Quark's native listing belongs to its optional Oddities category.
                         for (String id : List.of("ravager_hide", "bonded_ravager_hide")) {
                             BuiltInRegistries.ITEM

@@ -1,0 +1,15 @@
+{
+  "type": "mekmm:stamper",
+  "input": {
+    "count": 1,
+    "item": "anvilcraft:titanium_ingot"
+  },
+  "mold": {
+    "count": 1,
+    "item": "bertieprogression:titanium_sheet"
+  },
+  "output": {
+    "id": "bertieprogression:titanium_sheet",
+    "count": 1
+  }
+}

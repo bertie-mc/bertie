@@ -1,0 +1,32 @@
+{
+  "forge_tier": 3,
+  "essences": {
+    "souls": 12,
+    "experience": 1200
+  },
+  "main_ingredient": {
+    "item": "pastel:bottle_of_ruin"
+  },
+  "inputs": [
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "anvilcraft:levitation_powder"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "pastel:perturbed_eye",
+      "count": 12
+    }
+  }
+}

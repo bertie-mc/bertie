@@ -3058,4 +3058,6 @@
 	quest.5B000000000000B6.title: "End Crafting Table"
 	quest.5B000000000000AF.quest_desc: ["drop it in the void"]
 	quest.5B000000000000B8.title: "Bedrock"
+	quest.5C000000000000AF.title: "Precision Sawmill"
+	quest.5C000000000000B0.title: "Dimensional Stabilizer"
 }

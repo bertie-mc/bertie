@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "anvilcraft:titanium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:titanium_sheet",
+      "count": 1
+    }
+  ]
+}

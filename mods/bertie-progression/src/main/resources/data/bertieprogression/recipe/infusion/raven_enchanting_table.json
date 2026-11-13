@@ -6,12 +6,12 @@
   "requirements": {
     "eterna": 99,
     "quanta": 99.5,
-    "arcana": 1.25
+    "arcana": 1.2
   },
   "max_requirements": {
     "eterna": 99,
     "quanta": 99.5,
-    "arcana": 1.25
+    "arcana": 1.3
   },
   "result": {
     "id": "apothic_enchanting:raven_enchanting_table",
