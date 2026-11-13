@@ -11,6 +11,20 @@ import net.neoforged.neoforge.client.model.data.ModelData;
 
 public final class ConnectedMatterClientTests {
     @ClientTest
+    public static void resourceNamesRejectBiomeTagsAsElementIds(ClientTestContext context) {
+        context.runOnClient(client -> {
+            if (net.minecraft.resources.ResourceLocation.tryParse("#minecraft:is_overworld") != null) {
+                throw new AssertionError("A biome tag must not decode as an element ID");
+            }
+            if (!net.minecraft.resources.ResourceLocation.parse("minecraft:plains")
+                    .getPath()
+                    .equals("plains")) {
+                throw new AssertionError("Ordinary biome IDs must remain valid");
+            }
+        });
+    }
+
+    @ClientTest
     public static void captureConnections(ClientTestContext context) {
         context.runOnClient(client -> {
             for (String mod :

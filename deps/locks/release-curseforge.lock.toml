@@ -1,6 +1,10 @@
 profile = "release-curseforge"
-inputs-hash = "d338ed3aa86f44674582f8ce47a05a7dbef5f7eb71afaa82ed7153221b0659fc"
+inputs-hash = "17aeaea4e8cd75132570d978a4edb9cd46ef5c3ca5918e137ca7f092ec4d2ac5"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
+
+[components."aaa-particles"]
+any = "curseforge:979809:9239339"
+mod = "curseforge:979809:9239339"
 
 [components."accessdenied"]
 any = "curseforge:917449:8082280"
@@ -4461,7 +4465,7 @@ slug = "archaion"
 file-id = 8983496
 provides = ["archaion"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:En8uHTOK:ePi58Pcx", "mod-id" = "aaa_particles", "version-range" = "[2.2.3,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:979809:9239339", "mod-id" = "aaa_particles", "version-range" = "[2.2.3,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -8957,6 +8961,27 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
+[artifacts."curseforge:979809:9239339"]
+name = "aaa-particles"
+component = "aaa-particles"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "aaa-particles-979809"
+version = "9239339"
+filename = "aaa_particles-neoforge-1.21.1-2.3.4.jar"
+project-id = 979809
+slug = "aaa-particles"
+file-id = 9239339
+provides = ["aaa_particles"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
 [artifacts."curseforge:986251:8246261"]
 name = "anvilcraft"
 component = "anvilcraft"
@@ -9423,25 +9448,6 @@ version-id = "Z0nG7STl"
 provides = ["apothic_attributes"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:tCkE8p2N:kb8pGRQR", "mod-id" = "placebo", "version-range" = "[9.9.0,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:En8uHTOK:ePi58Pcx"]
-name = "aaa-particles"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "En8uHTOK"
-version = "ePi58Pcx"
-filename = "aaa_particles-neoforge-1.21.1-2.2.3.jar"
-project-id = "En8uHTOK"
-version-id = "ePi58Pcx"
-provides = ["aaa_particles"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []

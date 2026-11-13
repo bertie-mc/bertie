@@ -166,6 +166,7 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.armageddon)
     "integrationtestRuntimeOnly"(deps.apexArcana)
     "integrationtestRuntimeOnly"(deps.archaion)
+    "integrationtestRuntimeOnly"(deps.aaaParticles)
     "integrationtestRuntimeOnly"(project(":mods:berlords-carving"))
     "integrationtestRuntimeOnly"(deps.malum)
     "integrationtestRuntimeOnly"(deps.mythsAndLegends)

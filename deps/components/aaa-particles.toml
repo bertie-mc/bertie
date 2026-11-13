@@ -1,0 +1,8 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "both"
+slug = "aaa-particles"
+project-id = 979809
+file-id = 9239339
+filename = "aaa_particles-neoforge-1.21.1-2.3.4.jar"
