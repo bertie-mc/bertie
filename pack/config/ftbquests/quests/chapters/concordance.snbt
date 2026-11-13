@@ -296,7 +296,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			hide_until_deps_visible: false
@@ -316,8 +316,8 @@
 				item: { count: 1, id: "dracolotl:bucket_of_dracolotl" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 3.0d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5B0000000000009A"]
@@ -337,8 +337,8 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -7.5d
+			x: 15.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5B0000000000009A"]
@@ -358,8 +358,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -4.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			hide_until_deps_visible: false
@@ -410,7 +410,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -1.5d
+			y: -3.0d
 			x: 13.5d
 			dependencies: ["5B00000000000092"]
 			id: "5B00000000000093"
@@ -426,7 +426,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -1.5d
+			y: -3.0d
 			x: 15.0d
 			dependencies: ["5B00000000000093"]
 			id: "5B00000000000094"
@@ -442,8 +442,8 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -3.0d
-			x: 13.5d
+			y: -4.5d
+			x: 15.0d
 			dependencies: ["5B00000000000093"]
 			id: "5B00000000000095"
 			icon: { id: "anvilcraft:titanium_nugget" }
@@ -458,8 +458,8 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -3.0d
-			x: 15.0d
+			y: -4.5d
+			x: 16.5d
 			dependencies: ["5B00000000000095"]
 			id: "5B00000000000096"
 			icon: { id: "anvilcraft:titanium_ingot" }
@@ -475,8 +475,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
-			y: -1.5d
-			x: 10.5d
+			y: 1.5d
+			x: 12.0d
 			id: "5B00000000000097"
 			icon: { id: "minecraft:dragon_breath" }
 			tasks: [{
@@ -491,8 +491,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000097"]
-			y: -3.0d
-			x: 10.5d
+			y: 1.5d
+			x: 13.5d
 			id: "5B00000000000098"
 			icon: { id: "apothic_enchanting:infused_breath" }
 			tasks: [{
@@ -507,8 +507,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000092"]
-			y: -3.0d
-			x: 12.0d
+			y: -1.5d
+			x: 13.5d
 			id: "5B0000000000009B"
 			icon: { id: "minecraft:end_stone_bricks" }
 			tasks: [{
@@ -523,8 +523,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000098", "5B0000000000009B"]
-			y: -4.5d
-			x: 10.5d
+			y: 0.0d
+			x: 12.0d
 			id: "5B00000000000099"
 			icon: { id: "apothic_enchanting:endshelf" }
 			tasks: [{
@@ -539,8 +539,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000099"]
-			y: -6.0d
-			x: 12.0d
+			y: 0.0d
+			x: 13.5d
 			id: "5B0000000000009A"
 			icon: { id: "apothic_enchanting:draconic_endshelf" }
 			tasks: [{
@@ -555,8 +555,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
-			y: 4.5d
-			x: 12.0d
+			y: 1.5d
+			x: 9.0d
 			id: "5B0000000000009C"
 			icon: { id: "minecraft:purpur_block" }
 			tasks: [{
@@ -570,8 +570,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B0000000000009C"]
-			y: 4.5d
-			x: 13.5d
+			y: 3.0d
+			x: 10.5d
 			id: "5B0000000000009D"
 			icon: { id: "minecraft:shulker_shell" }
 			tasks: [{
@@ -587,7 +587,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B0000000000009D"]
 			y: 4.5d
-			x: 15.0d
+			x: 10.5d
 			id: "5B0000000000009E"
 			icon: { id: "minecraft:shulker_box" }
 			tasks: [{
@@ -602,8 +602,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B0000000000009E"]
-			y: 4.5d
-			x: 16.5d
+			y: 6.0d
+			x: 12.0d
 			id: "5B0000000000009F"
 			icon: { id: "anvilcraft:nesting_shulker_box" }
 			tasks: [{
@@ -618,8 +618,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B0000000000009F"]
-			y: 4.5d
-			x: 18.0d
+			y: 7.5d
+			x: 13.5d
 			id: "5B000000000000A0"
 			icon: { id: "anvilcraft:over_nesting_shulker_box" }
 			tasks: [{
@@ -634,8 +634,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A0"]
-			y: 4.5d
-			x: 19.5d
+			y: 7.5d
+			x: 15.0d
 			id: "5B000000000000A1"
 			icon: { id: "anvilcraft:supercritical_nesting_shulker_box" }
 			tasks: [{
@@ -650,8 +650,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A1"]
-			y: 4.5d
-			x: 21.0d
+			y: 7.5d
+			x: 16.5d
 			id: "5B000000000000A2"
 			icon: { id: "anvilcraft:space_overcompressor" }
 			tasks: [{
@@ -680,8 +680,8 @@
 				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -6.0d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			hide_until_deps_visible: false
@@ -735,7 +735,7 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B0000000000009D"]
-			y: 3.0d
+			y: 6.0d
 			x: 13.5d
 			id: "5B000000000000A6"
 			icon: { id: "l2complements:captured_shulker_bullet" }
@@ -751,8 +751,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A6"]
-			y: 3.0d
-			x: 15.0d
+			y: 6.0d
+			x: 18.0d
 			id: "5B000000000000A7"
 			icon: { id: "l2complements:shulkerate_ingot" }
 			tasks: [{
@@ -767,8 +767,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A7"]
-			y: 1.5d
-			x: 15.0d
+			y: 4.5d
+			x: 16.5d
 			id: "5B000000000000A8"
 			icon: { id: "l2complements:shulkerate_ingot" }
 			tasks: [{
@@ -783,8 +783,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A2"]
-			y: 3.0d
-			x: 22.5d
+			y: 9.0d
+			x: 16.5d
 			id: "5B000000000000A9"
 			icon: { id: "refinedstorage:portable_grid" }
 			tasks: [{
@@ -799,8 +799,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A2"]
-			y: 6.0d
-			x: 22.5d
+			y: 9.0d
+			x: 15.0d
 			id: "5B000000000000AA"
 			icon: { id: "universalgrid:wireless_universal_grid" }
 			tasks: [{
@@ -815,8 +815,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
-			y: 7.5d
-			x: 12.0d
+			y: 1.5d
+			x: 10.5d
 			id: "5B000000000000AB"
 			icon: { id: "alexsmobs:maggot" }
 			tasks: [{
@@ -831,8 +831,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AB"]
-			y: 7.5d
-			x: 13.5d
+			y: 3.0d
+			x: 12.0d
 			id: "5B000000000000AC"
 			icon: { id: "alexsmobs:mosquito_proboscis" }
 			tasks: [{
@@ -847,8 +847,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AC"]
-			y: 7.5d
-			x: 15.0d
+			y: 3.0d
+			x: 13.5d
 			id: "5B000000000000AD"
 			icon: { id: "alexsmobs:mosquito_larva" }
 			tasks: [{
@@ -863,8 +863,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AD"]
-			y: 7.5d
-			x: 16.5d
+			y: 3.0d
+			x: 15.0d
 			id: "5B000000000000AE"
 			icon: { id: "alexsmobs:capsid" }
 			tasks: [{
@@ -879,8 +879,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AE"]
-			y: 7.5d
-			x: 18.0d
+			y: 3.0d
+			x: 16.5d
 			id: "5B000000000000AF"
 			icon: { id: "alexsmobs:mysterious_worm" }
 			tasks: [{
@@ -895,8 +895,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AF"]
-			y: 7.5d
-			x: 19.5d
+			y: 3.0d
+			x: 18.0d
 			id: "5B000000000000B0"
 			icon: { id: "alexsmobs:void_worm_eye" }
 			tasks: [{
@@ -911,8 +911,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000AF"]
-			y: 9.0d
-			x: 19.5d
+			y: 4.5d
+			x: 18.0d
 			id: "5B000000000000B1"
 			icon: { id: "alexsmobs:void_worm_mandible" }
 			tasks: [{
@@ -927,8 +927,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000B1"]
-			y: 9.0d
-			x: 21.0d
+			y: 4.5d
+			x: 19.5d
 			id: "5B000000000000B2"
 			icon: { id: "cataclysm:abyssal_sacrifice" }
 			tasks: [{
@@ -959,8 +959,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A7"]
-			y: 3.0d
-			x: 16.5d
+			y: 6.0d
+			x: 22.5d
 			id: "5B000000000000B4"
 			icon: { id: "l2complements:shulkerate_block" }
 			tasks: [{
@@ -975,8 +975,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000B2"]
-			y: 9.0d
-			x: 22.5d
+			y: 4.5d
+			x: 21.0d
 			id: "5B000000000000B5"
 			icon: { id: "cataclysm:abyssal_egg" }
 			tasks: [{
@@ -992,8 +992,8 @@
 			hide_until_deps_complete: false
 			size: 2.0d
 			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098"]
-			y: 3.0d
-			x: 25.5d
+			y: 1.5d
+			x: 22.5d
 			id: "5B000000000000B6"
 			icon: { id: "avaritia:end_crafting_table" }
 			tasks: [{
