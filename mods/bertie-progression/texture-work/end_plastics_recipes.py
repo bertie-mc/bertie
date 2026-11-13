@@ -70,7 +70,7 @@ def apply(module, native, mods):
                'M': 'oritech:magnetic_coil', 'D': 'bertieprogression:deep_alloy_sheet'}, 2)
     recipe('oritech:foundry/alloy/netherite', DISABLED)
     shaped('bertieprogression:sculk/bedrock', 'minecraft:bedrock', ['DDD', 'DDD', 'DDD'],
-           {'D': 'anvilcraft:bedrock_dust_block'}, 1)
+           {'D': 'pastel:bedrock_dust_block'}, 1)
     recipe('bertieprogression:infusion/raven_enchanting_table', {
         'type': 'apothic_enchanting:infusion', 'input': {'item': 'apothic_enchanting:apothic_enchanting_table'},
         'requirements': {'eterna': 99, 'quanta': 99.5, 'arcana': 1.25},

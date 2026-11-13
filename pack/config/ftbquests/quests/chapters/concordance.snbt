@@ -671,7 +671,7 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000094"]
-			y: -4.5d
+			y: -3.0d
 			x: 18.0d
 			id: "5B000000000000A3"
 			icon: { id: "pastel:perturbed_eye" }
@@ -687,7 +687,7 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A3"]
-			y: -3.0d
+			y: -4.5d
 			x: 18.0d
 			id: "5B000000000000A4"
 			icon: { id: "pastel:cracked_end_portal_frame" }
@@ -972,7 +972,7 @@
 			}]
 		}
 		{
-			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098", "5B000000000000B7"]
+			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098", "5B000000000000B8"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			size: 2.0d
@@ -991,16 +991,16 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000096"]
+			dependencies: ["5D0000000000000F"]
 			y: 0.0d
 			x: 16.5d
-			id: "5B000000000000B7"
-			icon: { id: "anvilcraft:titanium_block" }
+			id: "5B000000000000B8"
+			icon: { id: "minecraft:bedrock" }
 			tasks: [{
-				id: "5B000000010000B7"
+				id: "5B000000010000B8"
 				count: 1L
 				consume_items: false
-				item: { count: 1 id: "anvilcraft:titanium_block" }
+				item: { count: 1 id: "minecraft:bedrock" }
 				type: "item"
 			}]
 		}
