@@ -188,3 +188,14 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
+
+NEGATIVE MATTER MODEL
+
+assets/anvilcraft/models/block/negative_matter_block.json is an independently
+authored functional cuboid definition matching the approved inside-facing model
+configuration tested with AnvilCraft 1.5.3. It references the original AnvilCraft
+Negative Matter and outline textures at runtime; no native texture PNG is bundled.
+Those textures remain the artwork of XeKr/AnvilCraft and are not covered by this
+project's Unlicense. AnvilCraft's ASSETS_LICENSE reserves rights to its assets.
+Reference: https://github.com/Anvil-Dev/AnvilCraft/tree/1.5.3/src/main/resources/assets/anvilcraft
