@@ -244,7 +244,7 @@
 		}
 		{
 			dependencies: ["5D00000000000012"]
-			y: -3.0d
+			y: -4.5d
 			x: 9.0d
 			id: "5D00000000000013"
 			icon: { id: "anvilcraft:deflection_ring" }
@@ -1081,7 +1081,7 @@
 			}]
 		}
 		{
-			y: -4.5d
+			y: -3.0d
 			x: 9.0d
 			dependencies: ["5D0000000000000C"]
 			id: "5D0000000000A006"
@@ -1156,6 +1156,20 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "anvilcraft:ember_smithing_table" }
+				type: "item"
+			}]
+		}
+		{
+			y: -3.0d
+			x: 15.0d
+			dependencies: ["5D0000000000002D"]
+			id: "5D00000000000089"
+			icon: { id: "refinedstorage:upgrade" }
+			tasks: [{
+				id: "5D00000001000089"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "refinedstorage:upgrade" }
 				type: "item"
 			}]
 		}

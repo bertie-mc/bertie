@@ -390,5 +390,85 @@
 				type: "item"
 			}]
 		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 0.0d
+			x: 12.0d
+			dependencies: ["5B00000000000014"]
+			id: "5B00000000000092"
+			icon: { id: "minecraft:end_stone" }
+			tasks: [{
+				id: "5B00000001000092"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "minecraft:end_stone" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 0.0d
+			x: 13.5d
+			dependencies: ["5B00000000000092"]
+			id: "5B00000000000093"
+			icon: { id: "anvilcraft:end_dust" }
+			tasks: [{
+				id: "5B00000001000093"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:end_dust" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -1.5d
+			x: 15.0d
+			dependencies: ["5B00000000000093"]
+			id: "5B00000000000094"
+			icon: { id: "anvilcraft:levitation_powder" }
+			tasks: [{
+				id: "5B00000001000094"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:levitation_powder" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 1.5d
+			x: 15.0d
+			dependencies: ["5B00000000000093"]
+			id: "5B00000000000095"
+			icon: { id: "anvilcraft:titanium_nugget" }
+			tasks: [{
+				id: "5B00000001000095"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:titanium_nugget" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 1.5d
+			x: 16.5d
+			dependencies: ["5B00000000000095"]
+			id: "5B00000000000096"
+			icon: { id: "anvilcraft:titanium_ingot" }
+			tasks: [{
+				id: "5B00000001000096"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:titanium_ingot" }
+				type: "item"
+			}]
+		}
 	]
 }

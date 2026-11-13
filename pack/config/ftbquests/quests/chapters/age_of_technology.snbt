@@ -1486,7 +1486,7 @@
 			}]
 		}
 		{
-			y: -3.0d
+			y: -4.5d
 			x: 21.0d
 			dependencies: ["5C00000000009354", "5C0000000000935B"]
 			id: "5C00000000009355"
@@ -1566,7 +1566,7 @@
 			}]
 		}
 		{
-			y: -1.5d
+			y: -3.0d
 			x: 22.5d
 			dependencies: ["5C0000000000935A"]
 			id: "5C0000000000935B"
@@ -1580,8 +1580,8 @@
 		}
 		{
 			dependencies: ["5C000000000000A8"]
-			y: -1.5d
-			x: 24.0d
+			y: -4.5d
+			x: 25.5d
 			id: "5C0000000000935C"
 			icon: { id: "oritech:laser_arm_block" }
 			tasks: [{
@@ -1605,8 +1605,8 @@
 			}]
 		}
 		{
-			y: 0.0d
-			x: 22.5d
+			y: -3.0d
+			x: 24.0d
 			dependencies: ["5C0000000000935B"]
 			id: "5C0000000000935E"
 			icon: { id: "mekanism:osmium_compressor" }
@@ -1618,8 +1618,8 @@
 			}]
 		}
 		{
-			y: 0.0d
-			x: 24.0d
+			y: -1.5d
+			x: 27.0d
 			dependencies: ["5C0000000000935C"]
 			id: "5C0000000000935F"
 			icon: { id: "oritech:fluxite" }
@@ -1631,8 +1631,8 @@
 			}]
 		}
 		{
-			y: 1.5d
-			x: 24.0d
+			y: 0.0d
+			x: 25.5d
 			dependencies: ["5C0000000000935F"]
 			id: "5C00000000009360"
 			icon: { id: "oritech:flux_gate" }
@@ -1644,7 +1644,7 @@
 			}]
 		}
 		{
-			y: 3.0d
+			y: 1.5d
 			x: 25.5d
 			dependencies: ["5C00000000009360"]
 			id: "5C00000000009361"
@@ -1709,7 +1709,7 @@
 			}]
 		}
 		{
-			y: -4.5d
+			y: -6.0d
 			x: 21.0d
 			dependencies: ["5C00000000009365"]
 			id: "5C00000000009366"
@@ -1931,7 +1931,7 @@
 		}
 		{
 			y: -3.0d
-			x: 22.5d
+			x: 21.0d
 			dependencies: ["5C0000000000935B"]
 			id: "5C0000000000A00F"
 			icon: { id: "oritech:enderic_lens" }
@@ -1943,8 +1943,8 @@
 			}]
 		}
 		{
-			y: 0.0d
-			x: 25.5d
+			y: 1.5d
+			x: 24.0d
 			dependencies: ["5C00000000009360"]
 			id: "5C0000000000A010"
 			icon: { id: "oritech:flux_gate" }
@@ -1956,8 +1956,8 @@
 			}]
 		}
 		{
-			y: 4.5d
-			x: 24.0d
+			y: 3.0d
+			x: 22.5d
 			dependencies: ["5C00000000009363"]
 			id: "5C0000000000A011"
 			icon: { id: "oritech:energite_ingot" }
@@ -1969,8 +1969,8 @@
 			}]
 		}
 		{
-			y: 4.5d
-			x: 27.0d
+			y: 3.0d
+			x: 25.5d
 			dependencies: ["5C00000000009362"]
 			id: "5C0000000000A012"
 			icon: { id: "oritech:duratium_ingot" }
@@ -2010,7 +2010,7 @@
 			}]
 		}
 		{
-			y: 6.0d
+			y: 4.5d
 			x: 24.0d
 			dependencies: ["5C00000000000091"]
 			id: "5C00000000000092"
@@ -2053,7 +2053,7 @@
 		}
 		{
 			y: 1.5d
-			x: 25.5d
+			x: 27.0d
 			dependencies: ["5C00000000009360"]
 			id: "5C00000000000095"
 			icon: { id: "oritech:dubios_container" }
@@ -2066,7 +2066,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: 0.0d
 			x: 27.0d
 			dependencies: ["5C00000000000095"]
 			id: "5C00000000000096"
@@ -2080,7 +2080,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: 0.0d
 			x: 28.5d
 			dependencies: ["5C00000000000096"]
 			id: "5C00000000000097"
@@ -2095,7 +2095,7 @@
 		}
 		{
 			y: 1.5d
-			x: 30.0d
+			x: 28.5d
 			dependencies: ["5C00000000000097"]
 			id: "5C00000000000098"
 			icon: { id: "oritech:overcharged_crystal" }
@@ -2124,7 +2124,7 @@
 		}
 		{
 			y: -1.5d
-			x: 25.5d
+			x: 28.5d
 			dependencies: ["5C0000000000935F"]
 			id: "5C0000000000009A"
 			icon: { id: "mekanism:teleportation_core" }
@@ -2138,8 +2138,8 @@
 		}
 		{
 			size: 2.0d
-			y: -1.0d
-			x: 28.0d
+			y: -1.5d
+			x: 30.0d
 			dependencies: ["5C0000000000009A"]
 			id: "5C0000000000009B"
 			icon: { id: "mekanism:teleporter" }
@@ -2159,7 +2159,7 @@
 			}]
 		}
 		{
-			y: 3.0d
+			y: 1.5d
 			x: 22.5d
 			dependencies: ["5C00000000009363"]
 			id: "5C0000000000009C"
@@ -2187,7 +2187,7 @@
 			}]
 		}
 		{
-			y: 1.5d
+			y: 0.0d
 			x: 22.5d
 			dependencies: ["5C0000000000009D"]
 			id: "5C0000000000009E"
@@ -2313,7 +2313,7 @@
 			}]
 		}
 		{
-			y: -3.0d
+			y: -1.5d
 			x: 24.0d
 			dependencies: ["5C0000000000935E"]
 			id: "5C000000000000A7"
@@ -2327,8 +2327,8 @@
 			}]
 		}
 		{
-			y: -3.0d
-			x: 25.5d
+			y: 0.0d
+			x: 24.0d
 			dependencies: ["5C000000000000A7"]
 			id: "5C000000000000A8"
 			icon: { id: "mekanism_extras:dust_radiance" }
@@ -2337,6 +2337,76 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "mekanism_extras:dust_radiance" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.0d
+			x: 30.0d
+			dependencies: ["5C00000000000097"]
+			id: "5C000000000000A9"
+			icon: { id: "oritech:drone_port_block" }
+			tasks: [{
+				id: "5C000000010000A9"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:drone_port_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: -3.0d
+			x: 25.5d
+			dependencies: ["5C0000000000935E"]
+			id: "5C000000000000AA"
+			icon: { id: "mekanism:ingot_refined_obsidian" }
+			tasks: [{
+				id: "5C000000010000AA"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:ingot_refined_obsidian" }
+				type: "item"
+			}]
+		}
+		{
+			y: -3.0d
+			x: 27.0d
+			dependencies: ["5C000000000000AA"]
+			id: "5C000000000000AB"
+			icon: { id: "mekanism:ingot_refined_obsidian" }
+			tasks: [{
+				id: "5C000000010000AB"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "mekanism:ingot_refined_obsidian" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 22.5d
+			dependencies: ["5C00000000009366"]
+			id: "5C000000000000AC"
+			icon: { id: "oritech:silicon_wafer" }
+			tasks: [{
+				id: "5C000000010000AC"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "oritech:silicon_wafer" }
+				type: "item"
+			}]
+		}
+		{
+			y: -1.5d
+			x: 25.5d
+			dependencies: ["5C000000000000A7"]
+			id: "5C000000000000AD"
+			icon: { id: "mekanism:ingot_refined_glowstone" }
+			tasks: [{
+				id: "5C000000010000AD"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "mekanism:ingot_refined_glowstone" }
 				type: "item"
 			}]
 		}
