@@ -337,8 +337,8 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: -4.5d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5B0000000000009A"]
@@ -358,8 +358,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 16.5d
-			y: -6.0d
+			x: 12.0d
+			y: -4.5d
 		}
 		{
 			hide_until_deps_visible: false
@@ -475,7 +475,7 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
-			y: -4.5d
+			y: -1.5d
 			x: 10.5d
 			id: "5B00000000000097"
 			icon: { id: "minecraft:dragon_breath" }
@@ -491,8 +491,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000097"]
-			y: -4.5d
-			x: 12.0d
+			y: -3.0d
+			x: 10.5d
 			id: "5B00000000000098"
 			icon: { id: "apothic_enchanting:infused_breath" }
 			tasks: [{
@@ -524,7 +524,7 @@
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000098", "5B0000000000009B"]
 			y: -4.5d
-			x: 13.5d
+			x: 10.5d
 			id: "5B00000000000099"
 			icon: { id: "apothic_enchanting:endshelf" }
 			tasks: [{
@@ -539,8 +539,8 @@
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			dependencies: ["5B00000000000099"]
-			y: -4.5d
-			x: 15.0d
+			y: -6.0d
+			x: 10.5d
 			id: "5B0000000000009A"
 			icon: { id: "apothic_enchanting:draconic_endshelf" }
 			tasks: [{
@@ -661,6 +661,27 @@
 				item: { count: 1 id: "anvilcraft:space_overcompressor" }
 				type: "item"
 			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["3C00000000000014", "3C00000000000011"]
+			icon: {
+				id: "apothic_enchanting:raven_enchanting_table"
+			}
+			id: "3C00000000000009"
+			rewards: [{
+				id: "3C00000002000009"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "3C00000001000009"
+				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -5.25d
 		}
 	]
 }

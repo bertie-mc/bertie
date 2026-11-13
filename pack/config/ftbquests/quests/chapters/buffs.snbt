@@ -47,25 +47,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3C00000000000014", "3C00000000000011"]
-			icon: {
-				id: "apothic_enchanting:raven_enchanting_table"
-			}
-			id: "3C00000000000009"
-			rewards: [{
-				id: "3C00000002000009"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000009"
-				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 7.5d
-		}
-		{
 			icon: {
 				id: "betterend:infusion_pedestal"
 			}
