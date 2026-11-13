@@ -2,10 +2,10 @@
   "type": "mekmm:lathe",
   "input": {
     "count": 1,
-    "item": "mekanism:hdpe_rod"
+    "item": "mekanism:hdpe_stick"
   },
   "output": {
-    "id": "mekanism:hdpe_stick",
+    "id": "mekanism:hdpe_rod",
     "count": 1
   }
 }

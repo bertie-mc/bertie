@@ -1191,9 +1191,9 @@
 			}]
 		}
 		{
-			dependencies: ["5C00000000009340"]
+			dependencies: ["5C00000000009342"]
 			y: -1.5d
-			x: 13.5d
+			x: 15.0d
 			id: "5C00000000009341"
 			icon: { id: "mekanism:hdpe_rod" }
 			tasks: [{
@@ -1204,9 +1204,9 @@
 			}]
 		}
 		{
-			dependencies: ["5C00000000009341"]
+			dependencies: ["5C00000000009340"]
 			y: -1.5d
-			x: 15.0d
+			x: 13.5d
 			id: "5C00000000009342"
 			icon: { id: "mekanism:hdpe_stick" }
 			tasks: [{
@@ -1431,7 +1431,7 @@
 		}
 		{
 			y: -3.0d
-			x: 15.0d
+			x: 16.5d
 			dependencies: ["5C00000000009343"]
 			id: "5C00000000009351"
 			icon: { id: "oritech:still_oil_bucket" }
@@ -1580,7 +1580,7 @@
 		}
 		{
 			dependencies: ["5C000000000000A8"]
-			y: -4.5d
+			y: -1.5d
 			x: 25.5d
 			id: "5C0000000000935C"
 			icon: { id: "oritech:laser_arm_block" }
@@ -1866,7 +1866,7 @@
 		}
 		{
 			y: -3.0d
-			x: 16.5d
+			x: 15.0d
 			dependencies: ["5C00000000009343"]
 			id: "5C0000000000A00A"
 			icon: { id: "mekanism:hdpe_sheet" }
@@ -2408,6 +2408,20 @@
 				count: 64L
 				consume_items: false
 				item: { count: 1 id: "mekanism:ingot_refined_glowstone" }
+				type: "item"
+			}]
+		}
+		{
+			dependencies: ["5C00000000009341"]
+			y: -3.0d
+			x: 13.5d
+			id: "5C000000000000AE"
+			icon: { id: "mekanismgenerators:gas_burning_generator" }
+			tasks: [{
+				id: "5C000000010000AE"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanismgenerators:gas_burning_generator" }
 				type: "item"
 			}]
 		}

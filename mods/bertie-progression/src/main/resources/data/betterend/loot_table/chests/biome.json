@@ -58,10 +58,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "endersdelight:ender_shard"
-        },
-        {
-          "type": "minecraft:item",
           "name": "betterend:aurora_crystal"
         },
         {

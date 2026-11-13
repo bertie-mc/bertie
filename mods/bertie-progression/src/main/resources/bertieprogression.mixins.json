@@ -40,6 +40,8 @@
     "EyeArchaeologyMixin",
     "EyeEnchantingMixin",
     "EyeApothicEnchantingMixin",
+    "RavenInfusionRecipeMixin",
+    "RavenInfusionMenuMixin",
     "EyeDolphinMixin",
     "EyeRaidMixin",
     "EyePiglinConversionMixin",
@@ -59,6 +61,7 @@
     "defaultRequire": 0
   },
   "client": [
+    "RavenInfusionScreenMixin",
     "EmiWireOutputMixin",
     "PoleRecipeLayoutMixin"
   ]

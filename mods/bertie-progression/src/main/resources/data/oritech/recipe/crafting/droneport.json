@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "PBBBP",
+    "BTUTB",
+    "BSKSB",
+    "BMCMB",
+    "PBBBP"
+  ],
+  "key": {
+    "P": {
+      "item": "create:propeller"
+    },
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "T": {
+      "item": "oritech:basic_battery"
+    },
+    "U": {
+      "item": "oritech:unholy_intelligence"
+    },
+    "S": {
+      "item": "oritech:superconductor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "C": {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  },
+  "result": {
+    "id": "oritech:drone_port_block",
+    "count": 1
+  },
+  "tier": 2
+}

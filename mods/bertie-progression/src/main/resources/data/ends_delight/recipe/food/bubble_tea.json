@@ -15,9 +15,14 @@
         }
       ]
     },
-    {
-      "item": "endersdelight:ender_shard"
-    }
+    [
+      {
+        "item": "minecraft:ender_pearl"
+      },
+      {
+        "item": "anvilcraft:ender_pearl_fragment"
+      }
+    ]
   ],
   "recipe_book_tab": "drinks",
   "result": {

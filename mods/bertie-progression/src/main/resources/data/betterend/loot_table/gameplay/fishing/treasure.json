@@ -6,10 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "betterend:terminite_forged_plate"
-        },
-        {
-          "type": "minecraft:item",
           "name": "betterend:menger_sponge"
         },
         {

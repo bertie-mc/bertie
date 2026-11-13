@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "P",
-    "P"
+    "S",
+    "S",
+    "S"
   ],
   "key": {
-    "P": {
-      "item": "mekanism:hdpe_pellet"
+    "S": {
+      "item": "mekanism:hdpe_stick"
     }
   },
   "result": {

@@ -1,0 +1,18 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "anvilcraft:bedrock_dust_block"
+    }
+  },
+  "result": {
+    "id": "minecraft:bedrock",
+    "count": 1
+  },
+  "tier": 1
+}

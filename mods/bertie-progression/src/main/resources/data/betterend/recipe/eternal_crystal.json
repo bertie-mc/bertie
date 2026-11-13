@@ -13,12 +13,12 @@
     },
     "north_east": {
       "item": {
-        "item": "endersdelight:ender_shard"
+        "item": "minecraft:ender_pearl"
       }
     },
     "north_west": {
       "item": {
-        "item": "endersdelight:ender_shard"
+        "item": "minecraft:ender_pearl"
       }
     },
     "south": {
@@ -28,12 +28,12 @@
     },
     "south_east": {
       "item": {
-        "item": "endersdelight:ender_shard"
+        "item": "minecraft:ender_pearl"
       }
     },
     "south_west": {
       "item": {
-        "item": "endersdelight:ender_shard"
+        "item": "minecraft:ender_pearl"
       }
     },
     "west": {

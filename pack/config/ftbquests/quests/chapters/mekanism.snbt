@@ -1657,14 +1657,10 @@
 			y: 15.0d
 		}
 		{
-			icon: { id: "mekanismgenerators:gas_burning_generator" }
 			id: "6198E5DF4A957298"
 			tasks: [{
 				id: "615CBE00B1E84D36"
-				type: "item"
-				count: 1L
-				consume_items: false
-				item: { id: "mekanismgenerators:gas_burning_generator" }
+				type: "checkmark"
 			}]
 			x: 0.5d
 			y: 17.0d

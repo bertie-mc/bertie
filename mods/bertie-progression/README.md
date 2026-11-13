@@ -68,6 +68,17 @@ present. Its block model is referenced at runtime; no third-party texture is bun
 
 `eezo_ore` supplies the pack's Eezo material chain.
 
+HDPE Pellets craft into PlaStick. PlaStick crafts or lathes into HDPE Rods and
+crafts or stamps into HDPE Sheets. Mekanism Additions retains PlaStick inputs;
+existing Rod consumers retain Rods.
+
+The Raven Table is an infusion of the Apothic Enchanting Table at 99 Eterna,
+99.5% Quanta and 1.25% Arcana, requiring and consuming 200 XP levels. Its payment
+and displayed cost are specific to this infusion; ordinary infusions retain
+their native cost. Shelf sums tolerate only float rounding at the exact target.
+Recovery Pearl uses a Tier-I Hephaestus ritual with an Ender Pearl, four Totemic
+Gold Ingots, four Echo Shards, 10,000 Blood and one Soul.
+
 ### Systems
 
 Refined Storage begins with the Forge III Machine Casing ritual. Raw processors

@@ -4969,6 +4969,30 @@
     {
       "id": "stellaris:mars_ostrum_ore",
       "required": false
+    },
+    {
+      "id": "betterend:aeternium_forged_plate",
+      "required": false
+    },
+    {
+      "id": "betterend:ender_ore",
+      "required": false
+    },
+    {
+      "id": "betterend:ender_shard",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_forged_plate",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_forged_plate",
+      "required": false
+    },
+    {
+      "id": "endersdelight:ender_shard",
+      "required": false
     }
   ]
 }

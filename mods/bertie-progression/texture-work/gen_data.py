@@ -5919,4 +5919,7 @@ from tech_solar_recipes import apply as _apply_tech_solar, retire_ostrum as _ret
 _apply_tech_solar(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
 _retire_ostrum(_Path(ROOT), _Path(INSTANCE_MODS))
 
+from end_plastics_recipes import apply as _apply_end_plastics
+_apply_end_plastics(_Path(ROOT), _recipe_src, _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

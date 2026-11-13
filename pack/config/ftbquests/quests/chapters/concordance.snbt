@@ -320,9 +320,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["5B0000000000009A"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apotheosis:ender_gem_case"
 			}
@@ -337,13 +337,13 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 16.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["5B0000000000009A"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000013"]
 			icon: {
 				id: "apothic_enchanting:ender_library"
 			}
@@ -358,8 +358,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.0d
+			x: 16.5d
+			y: -6.0d
 		}
 		{
 			hide_until_deps_visible: false
@@ -394,7 +394,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: 0.0d
+			y: -1.5d
 			x: 12.0d
 			dependencies: ["5B00000000000014"]
 			id: "5B00000000000092"
@@ -410,7 +410,7 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: 0.0d
+			y: -1.5d
 			x: 13.5d
 			dependencies: ["5B00000000000092"]
 			id: "5B00000000000093"
@@ -442,8 +442,8 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: 1.5d
-			x: 15.0d
+			y: -3.0d
+			x: 13.5d
 			dependencies: ["5B00000000000093"]
 			id: "5B00000000000095"
 			icon: { id: "anvilcraft:titanium_nugget" }
@@ -458,8 +458,8 @@
 		{
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: 1.5d
-			x: 16.5d
+			y: -3.0d
+			x: 15.0d
 			dependencies: ["5B00000000000095"]
 			id: "5B00000000000096"
 			icon: { id: "anvilcraft:titanium_ingot" }
@@ -468,6 +468,197 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "anvilcraft:titanium_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000014"]
+			y: -4.5d
+			x: 10.5d
+			id: "5B00000000000097"
+			icon: { id: "minecraft:dragon_breath" }
+			tasks: [{
+				id: "5B00000001000097"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "minecraft:dragon_breath" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000097"]
+			y: -4.5d
+			x: 12.0d
+			id: "5B00000000000098"
+			icon: { id: "apothic_enchanting:infused_breath" }
+			tasks: [{
+				id: "5B00000001000098"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "apothic_enchanting:infused_breath" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000092"]
+			y: -3.0d
+			x: 12.0d
+			id: "5B0000000000009B"
+			icon: { id: "minecraft:end_stone_bricks" }
+			tasks: [{
+				id: "5B0000000100009B"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "minecraft:end_stone_bricks" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000098", "5B0000000000009B"]
+			y: -4.5d
+			x: 13.5d
+			id: "5B00000000000099"
+			icon: { id: "apothic_enchanting:endshelf" }
+			tasks: [{
+				id: "5B00000001000099"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "apothic_enchanting:endshelf" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000099"]
+			y: -4.5d
+			x: 15.0d
+			id: "5B0000000000009A"
+			icon: { id: "apothic_enchanting:draconic_endshelf" }
+			tasks: [{
+				id: "5B0000000100009A"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "apothic_enchanting:draconic_endshelf" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B00000000000014"]
+			y: 4.5d
+			x: 12.0d
+			id: "5B0000000000009C"
+			icon: { id: "minecraft:purpur_block" }
+			tasks: [{
+				id: "5B0000000100009C"
+				type: "structure"
+				structure: "minecraft:end_city"
+				icon: { id: "minecraft:purpur_block" }
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B0000000000009C"]
+			y: 4.5d
+			x: 13.5d
+			id: "5B0000000000009D"
+			icon: { id: "minecraft:shulker_shell" }
+			tasks: [{
+				id: "5B0000000100009D"
+				count: 2L
+				consume_items: false
+				item: { count: 1 id: "minecraft:shulker_shell" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B0000000000009D"]
+			y: 4.5d
+			x: 15.0d
+			id: "5B0000000000009E"
+			icon: { id: "minecraft:shulker_box" }
+			tasks: [{
+				id: "5B0000000100009E"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "minecraft:shulker_box" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B0000000000009E"]
+			y: 4.5d
+			x: 16.5d
+			id: "5B0000000000009F"
+			icon: { id: "anvilcraft:nesting_shulker_box" }
+			tasks: [{
+				id: "5B0000000100009F"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:nesting_shulker_box" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B0000000000009F"]
+			y: 4.5d
+			x: 18.0d
+			id: "5B000000000000A0"
+			icon: { id: "anvilcraft:over_nesting_shulker_box" }
+			tasks: [{
+				id: "5B000000010000A0"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:over_nesting_shulker_box" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A0"]
+			y: 4.5d
+			x: 19.5d
+			id: "5B000000000000A1"
+			icon: { id: "anvilcraft:supercritical_nesting_shulker_box" }
+			tasks: [{
+				id: "5B000000010000A1"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:supercritical_nesting_shulker_box" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			dependencies: ["5B000000000000A1"]
+			y: 4.5d
+			x: 21.0d
+			id: "5B000000000000A2"
+			icon: { id: "anvilcraft:space_overcompressor" }
+			tasks: [{
+				id: "5B000000010000A2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:space_overcompressor" }
 				type: "item"
 			}]
 		}

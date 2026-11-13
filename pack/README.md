@@ -36,7 +36,8 @@ on its smaller counterpart; the retained Large Heat Generator is independent
 because its small counterpart is retired. Adamant branches into Centrifuge and Formulaic Assemblicator →
 Assembler → Electric Coil → Processing Unit. The plastic item chain requires
 Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.
-Plastic Sheet continues through Crude Oil Bucket → Pump → Refinery → Diesel
+HDPE Pellets lead to PlaStick, which branches into Rods and Sheets. Gas-Burning
+Generator requires HDPE Rod. HDPE Sheet continues through Crude Oil Bucket → Pump → Refinery → Diesel
 Bucket → Fuel Generator. Bio Generator branches directly below Raw Biopolymer
 and requires it. Basic Transmitters requires eight of all five transmitter families.
 

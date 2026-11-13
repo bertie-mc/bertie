@@ -129,5 +129,18 @@
 				type: "item"
 			}]
 		}
+		{
+			y: 0d
+			x: 13.5d
+			id: "6C00000000006101"
+			icon: { id: "anvilcraft:recovery_pearl" }
+			tasks: [{
+				id: "6C00000001006101"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:recovery_pearl" }
+				type: "item"
+			}]
+		}
 	]
 }

@@ -1,0 +1,32 @@
+{
+  "essences": {
+    "blood": 10000,
+    "souls": 1
+  },
+  "inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "l2complements:totemic_gold_ingot"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:echo_shard"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "main_ingredient": {
+    "item": "minecraft:ender_pearl"
+  },
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "anvilcraft:recovery_pearl",
+      "count": 1
+    }
+  },
+  "forge_tier": 1
+}
