@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "7e167e9bb3ed8aa244f38804b2090863cddc357d03ca87166954ac4927f87eef"
+inputs-hash = "c6723bc3c186810af8817dfb92c5bbf7608919d94c294df661caf1ffd81fb10f"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]

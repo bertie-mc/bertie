@@ -11,6 +11,7 @@ import io.github.bertie_mc.emi.integration.apothicspawners.ApothicSpawnersEmiMod
 import io.github.bertie_mc.emi.integration.armageddon.ArmageddonEmiModule;
 import io.github.bertie_mc.emi.integration.avaritiadelight.AvaritiaDelightEmiModule;
 import io.github.bertie_mc.emi.integration.betterarcheology.BetterArcheologyEmiModule;
+import io.github.bertie_mc.emi.integration.beyond.BeyondEmiModule;
 import io.github.bertie_mc.emi.integration.cataclysm.CataclysmEmiModule;
 import io.github.bertie_mc.emi.integration.cognition.CognitionEmiModule;
 import io.github.bertie_mc.emi.integration.crabbersdelight.CrabbersDelightEmiModule;
@@ -94,6 +95,7 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("quark", () -> QuarkEmiModule.register(registry));
         success &= run("zeta", () -> ZetaHintsEmiModule.register(registry));
         success &= run("oritech", () -> OritechEmiModule.register(registry));
+        success &= run("the_beyond", () -> BeyondEmiModule.register(registry));
         if (success) {
             LOGGER.info("Bertie EMI integrations registered successfully");
         }

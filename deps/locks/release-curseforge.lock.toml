@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "5c83b50394d9f07699407628167d807bf14957245b0f14c8711dc020b600855c"
+inputs-hash = "d338ed3aa86f44674582f8ce47a05a7dbef5f7eb71afaa82ed7153221b0659fc"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
