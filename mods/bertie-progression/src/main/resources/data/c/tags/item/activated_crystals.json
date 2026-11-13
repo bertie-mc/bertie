@@ -1,28 +1,97 @@
 {
   "replace": false,
   "values": [
-    "#c:activated_crystals/iron",
-    "#c:activated_crystals/copper",
-    "#c:activated_crystals/gold",
-    "#c:activated_crystals/uranium",
-    "#c:activated_crystals/osmium",
-    "#c:activated_crystals/tin",
-    "#c:activated_crystals/lead",
-    "#c:activated_crystals/naquadah",
-    "#c:activated_crystals/nickel",
-    "#c:activated_crystals/platinum",
-    "#c:activated_crystals/zinc",
-    "#c:activated_crystals/silver",
-    "#c:activated_crystals/titanium",
-    "#c:activated_crystals/tungsten",
-    "#c:activated_crystals/voiderite",
-    "#c:activated_crystals/desh",
-    "#c:activated_crystals/neptunium",
-    "#c:activated_crystals/tharsite",
-    "#c:activated_crystals/corronium",
-    "#c:activated_crystals/solerium",
-    "#c:activated_crystals/eezo",
-    "#c:activated_crystals/bloody",
-    "#c:activated_crystals/elvenite"
+    {
+      "id": "#c:activated_crystals/iron",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/copper",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/gold",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/tin",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/lead",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/silver",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/desh",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:activated_crystals/elvenite",
+      "required": false
+    }
   ]
 }

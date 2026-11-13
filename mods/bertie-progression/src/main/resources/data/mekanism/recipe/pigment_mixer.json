@@ -1,0 +1,63 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SMAMS",
+    "STKTS",
+    "DRBRD",
+    "DDDDD"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "A": {
+      "item": "mekanism_extras:alloy_thermonuclear"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "R": {
+      "item": "mekanism:hdpe_rod"
+    },
+    "T": {
+      "item": "mekanism:basic_chemical_tank"
+    }
+  },
+  "result": {
+    "id": "mekanism:pigment_mixer",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

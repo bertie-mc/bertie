@@ -29,11 +29,26 @@
       "id": "mekanism:ingot_refined_glowstone",
       "required": false
     },
-    "#mekanism:enriched/gold",
-    "#c:shards/gold",
-    "#c:crystals/gold",
-    "#c:dirty_dusts/gold",
-    "#c:clumps/gold",
+    {
+      "id": "#mekanism:enriched/gold",
+      "required": false
+    },
+    {
+      "id": "#c:shards/gold",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/gold",
+      "required": false
+    },
+    {
+      "id": "#c:dirty_dusts/gold",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/gold",
+      "required": false
+    },
     {
       "id": "mynethersdelight:golden_egg",
       "required": false

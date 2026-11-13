@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism_extras:dust_naquadah"
+    {
+      "id": "mekanism_extras:dust_naquadah",
+      "required": false
+    }
   ]
 }

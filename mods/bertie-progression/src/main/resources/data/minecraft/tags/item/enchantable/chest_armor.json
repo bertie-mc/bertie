@@ -189,8 +189,14 @@
       "id": "fantasy_armor:ornstein_chestplate",
       "required": false
     },
-    "#hazennstuff:armors/hns_chestplate",
-    "#hazentouvelib:armors/chestplates",
+    {
+      "id": "#hazennstuff:armors/hns_chestplate",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/chestplates",
+      "required": false
+    },
     {
       "id": "magic_of_color:bedrock_warlock_robes",
       "required": false

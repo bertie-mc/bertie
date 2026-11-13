@@ -7,6 +7,7 @@ plugins {
     id("bertie.gametest")
     id("bertie.integration-gametest")
     id("bertie.dev-runs")
+    id("bertie.client-test")
 }
 
 tasks.named<Test>("test") {
@@ -34,6 +35,7 @@ val isolateIntegrationRituals by tasks.registering {
                 "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/machine_casing.json",
                 "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/perturbed_eye.json",
                 "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/abyssal_sacrifice.json",
+                "bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/mithril_weave.json",
             )
         sourceFiles.forEach { source ->
             val relative = source.relativeTo(sourceRoot).invariantSeparatorsPath
@@ -50,8 +52,23 @@ val isolateIntegrationRituals by tasks.registering {
 sourceSets.named("integrationtest") {
     resources.srcDir(isolateIntegrationRituals)
 }
+sourceSets.named("clienttest") {
+    resources.srcDir("src/integrationtest/resources")
+    resources.srcDir(isolateIntegrationRituals)
+}
+configurations.named("clienttestRuntimeOnly") {
+    extendsFrom(
+        configurations.named("integrationtestImplementation").get(),
+        configurations.named("integrationtestRuntimeOnly").get(),
+    )
+}
 
 dependencies {
+    clienttestRuntimeOnly(deps.sodium)
+    clienttestRuntimeOnly(deps.apexArcana)
+    clienttestRuntimeOnly(deps.archaion)
+    clienttestRuntimeOnly(deps.diorama)
+    clienttestRuntimeOnly(deps.weatherGlass)
     compileOnly(deps.emi)
     compileOnly(deps.advancedLootInfo)
     compileOnly(deps.apotheosis)
@@ -143,7 +160,13 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.l2Complements)
     "integrationtestImplementation"(deps.create)
     "integrationtestRuntimeOnly"(deps.cognition)
-    "integrationtestRuntimeOnly"(deps.mekanism)
+    "integrationtestImplementation"(deps.mekanism)
+    "integrationtestRuntimeOnly"(deps.mekanismmoremachine)
+    "integrationtestRuntimeOnly"(deps.mekanismExtra)
+    "integrationtestRuntimeOnly"(deps.armageddon)
+    "integrationtestRuntimeOnly"(deps.apexArcana)
+    "integrationtestRuntimeOnly"(deps.archaion)
+    "integrationtestRuntimeOnly"(project(":mods:berlords-carving"))
     "integrationtestRuntimeOnly"(deps.malum)
     "integrationtestRuntimeOnly"(deps.mythsAndLegends)
     "integrationtestRuntimeOnly"(deps.reAvaritia)

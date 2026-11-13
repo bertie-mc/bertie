@@ -1,0 +1,8 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "both"
+slug = "archaion"
+project-id = 1620396
+file-id = 8983496
+filename = "archaion-1.21.1-1.4.4.jar"

@@ -72,7 +72,9 @@ class CarvingContractTest {
                         "brass",
                         "steel",
                         "nickel",
-                        "bronze"),
+                        "bronze",
+                        "titanium",
+                        "duratium"),
                 Arrays.stream(CarvingMaterial.values())
                         .map(material -> material.id)
                         .toList());

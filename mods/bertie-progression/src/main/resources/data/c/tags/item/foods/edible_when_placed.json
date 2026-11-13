@@ -1,7 +1,10 @@
 {
   "replace": true,
   "values": [
-    "#brewinandchewin:cheese_wheels/ripe",
+    {
+      "id": "#brewinandchewin:cheese_wheels/ripe",
+      "required": false
+    },
     {
       "id": "brewinandchewin:fiery_fondue_pot",
       "required": false
@@ -26,7 +29,10 @@
       "id": "farmersdelight:chocolate_pie",
       "required": false
     },
-    "#farmersdelight:feasts",
+    {
+      "id": "#farmersdelight:feasts",
+      "required": false
+    },
     {
       "id": "mynethersdelight:bread_loaf",
       "required": false

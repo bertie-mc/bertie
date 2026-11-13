@@ -11,8 +11,15 @@
     "bertieprogression:osmium_sheet",
     "bertieprogression:royal_steel_sheet",
     "bertieprogression:steel_sheet",
-    "create:cardboard",
-    "create:sturdy_sheet",
-    "bertieprogression:titanium_sheet"
+    {
+      "id": "create:cardboard",
+      "required": false
+    },
+    {
+      "id": "create:sturdy_sheet",
+      "required": false
+    },
+    "bertieprogression:titanium_sheet",
+    "bertieprogression:duratium_sheet"
   ]
 }

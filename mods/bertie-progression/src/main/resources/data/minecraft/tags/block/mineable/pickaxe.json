@@ -1,8 +1,1066 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
     {
       "id": "anvilcraft:sturdy_deepslate",
+      "required": false
+    },
+    {
+      "id": "oritech:accelerator_controller",
+      "required": false
+    },
+    {
+      "id": "oritech:accelerator_motor",
+      "required": false
+    },
+    {
+      "id": "oritech:accelerator_ring",
+      "required": false
+    },
+    {
+      "id": "oritech:accelerator_sensor",
+      "required": false
+    },
+    {
+      "id": "oritech:adamant_block",
+      "required": false
+    },
+    {
+      "id": "oritech:advanced_augment_station",
+      "required": false
+    },
+    {
+      "id": "oritech:arcane_augment_station",
+      "required": false
+    },
+    {
+      "id": "oritech:assembler_block",
+      "required": false
+    },
+    {
+      "id": "oritech:atomic_forge_block",
+      "required": false
+    },
+    {
+      "id": "oritech:augment_application_block",
+      "required": false
+    },
+    {
+      "id": "oritech:basic_generator_block",
+      "required": false
+    },
+    {
+      "id": "oritech:big_solar_panel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:bio_generator_block",
+      "required": false
+    },
+    {
+      "id": "oritech:biomass_block",
+      "required": false
+    },
+    {
+      "id": "oritech:biosteel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:black_hole_block",
+      "required": false
+    },
+    {
+      "id": "oritech:capacitor_addon_extender",
+      "required": false
+    },
+    {
+      "id": "oritech:carbon_plating_block",
+      "required": false
+    },
+    {
+      "id": "oritech:carbon_plating_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "oritech:carbon_plating_stairs",
+      "required": false
+    },
+    {
+      "id": "oritech:ceiling_light_hanging",
+      "required": false
+    },
+    {
+      "id": "oritech:ceiling_light",
+      "required": false
+    },
+    {
+      "id": "oritech:centrifuge_block",
+      "required": false
+    },
+    {
+      "id": "oritech:charger_block",
+      "required": false
+    },
+    {
+      "id": "oritech:cooler_block",
+      "required": false
+    },
+    {
+      "id": "oritech:creative_storage_block",
+      "required": false
+    },
+    {
+      "id": "oritech:crop_filter_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:deep_drill_block",
+      "required": false
+    },
+    {
+      "id": "oritech:destroyer_block",
+      "required": false
+    },
+    {
+      "id": "oritech:drone_port_block",
+      "required": false
+    },
+    {
+      "id": "oritech:duratium_block",
+      "required": false
+    },
+    {
+      "id": "oritech:electrum_block",
+      "required": false
+    },
+    {
+      "id": "oritech:enchanter_block",
+      "required": false
+    },
+    {
+      "id": "oritech:enchantment_catalyst_block",
+      "required": false
+    },
+    {
+      "id": "oritech:energite_block",
+      "required": false
+    },
+    {
+      "id": "oritech:energy_pipe_duct_block",
+      "required": false
+    },
+    {
+      "id": "oritech:energy_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:fertilizer_block",
+      "required": false
+    },
+    {
+      "id": "oritech:fluid_pipe_duct_block",
+      "required": false
+    },
+    {
+      "id": "oritech:fluid_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:fluxite_block",
+      "required": false
+    },
+    {
+      "id": "oritech:foundry_block",
+      "required": false
+    },
+    {
+      "id": "oritech:fragment_forge_block",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_energy_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_fluid_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_item_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_superconductor",
+      "required": false
+    },
+    {
+      "id": "oritech:fuel_generator_block",
+      "required": false
+    },
+    {
+      "id": "oritech:hangar_door",
+      "required": false
+    },
+    {
+      "id": "oritech:industrial_glass_block",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_plating_block",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_plating_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_plating_stairs",
+      "required": false
+    },
+    {
+      "id": "oritech:item_filter_block",
+      "required": false
+    },
+    {
+      "id": "oritech:item_pipe_duct_block",
+      "required": false
+    },
+    {
+      "id": "oritech:item_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:large_storage_block",
+      "required": false
+    },
+    {
+      "id": "oritech:laser_arm_block",
+      "required": false
+    },
+    {
+      "id": "oritech:lava_generator_block",
+      "required": false
+    },
+    {
+      "id": "oritech:low_yield_nuke",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_acceptor_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_burst_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_capacitor_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_1",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_2",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_3",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_4",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_5",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_6",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_7",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_efficiency_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_extender",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_fluid_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_frame_block",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_hunter_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_inventory_proxy_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_plating_block",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_plating_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_plating_stairs",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_processing_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_redstone_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_silk_touch_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_speed_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_ultimate_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_yield_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:metal_beam_block",
+      "required": false
+    },
+    {
+      "id": "oritech:metal_girder_block",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_plating_block",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_plating_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_plating_stairs",
+      "required": false
+    },
+    {
+      "id": "oritech:nuke",
+      "required": false
+    },
+    {
+      "id": "oritech:particle_collector_block",
+      "required": false
+    },
+    {
+      "id": "oritech:pipe_booster_block",
+      "required": false
+    },
+    {
+      "id": "oritech:placer_block",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_block",
+      "required": false
+    },
+    {
+      "id": "oritech:power_pole_block",
+      "required": false
+    },
+    {
+      "id": "oritech:powered_furnace_block",
+      "required": false
+    },
+    {
+      "id": "oritech:pulverizer_block",
+      "required": false
+    },
+    {
+      "id": "oritech:pump_block",
+      "required": false
+    },
+    {
+      "id": "oritech:quarry_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_nickel_block",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_platinum_block",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_absorber_port",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_condenser",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_controller",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_double_rod",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_energy_port",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_fuel_port",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_heat_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_quad_rod",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_redstone_port",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_reflector",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_rod",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_vent",
+      "required": false
+    },
+    {
+      "id": "oritech:reactor_wall",
+      "required": false
+    },
+    {
+      "id": "oritech:refinery_block",
+      "required": false
+    },
+    {
+      "id": "oritech:refinery_module_block",
+      "required": false
+    },
+    {
+      "id": "oritech:shrinker_block",
+      "required": false
+    },
+    {
+      "id": "oritech:silicon_block",
+      "required": false
+    },
+    {
+      "id": "oritech:simple_augment_station",
+      "required": false
+    },
+    {
+      "id": "oritech:spawner_cage_block",
+      "required": false
+    },
+    {
+      "id": "oritech:spawner_controller_block",
+      "required": false
+    },
+    {
+      "id": "oritech:steam_boiler_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:steam_engine_block",
+      "required": false
+    },
+    {
+      "id": "oritech:superconductor_duct_block",
+      "required": false
+    },
+    {
+      "id": "oritech:superconductor",
+      "required": false
+    },
+    {
+      "id": "oritech:tech_button",
+      "required": false
+    },
+    {
+      "id": "oritech:tech_door",
+      "required": false
+    },
+    {
+      "id": "oritech:tech_lever",
+      "required": false
+    },
+    {
+      "id": "oritech:transparent_item_pipe",
+      "required": false
+    },
+    {
+      "id": "oritech:treefeller_block",
+      "required": false
+    },
+    {
+      "id": "oritech:uranium_dust_block",
+      "required": false
+    },
+    {
+      "id": "oritech:energy_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:superconductor_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:fluid_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:item_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_energy_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_superconductor_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_fluid_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:framed_item_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:transparent_item_pipe_connection",
+      "required": false
+    },
+    {
+      "id": "oritech:small_tank_block",
+      "required": false
+    },
+    {
+      "id": "oritech:small_storage_block",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_combi_addon",
+      "required": false
+    },
+    {
+      "id": "oritech:pump_trunk_block",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_core_hidden",
+      "required": false
+    },
+    {
+      "id": "oritech:carbon_plating_slab",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_plating_slab",
+      "required": false
+    },
+    {
+      "id": "oritech:machine_plating_slab",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_plating_slab",
+      "required": false
+    },
+    {
+      "id": "oritech:tech_door_hinge",
+      "required": false
+    },
+    {
+      "id": "oritech:hangar_door_helper",
+      "required": false
+    },
+    {
+      "id": "oritech:tainted_refinery_block",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_ore",
+      "required": false
+    },
+    {
+      "id": "oritech:deepslate_nickel_ore",
+      "required": false
+    },
+    {
+      "id": "oritech:deepslate_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "oritech:deepslate_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "oritech:uranium_crystal",
+      "required": false
+    },
+    {
+      "id": "oritech:endstone_platinum_ore",
+      "required": false
+    },
+    {
+      "id": "#pastel:ores",
+      "required": false
+    },
+    {
+      "id": "#pastel:gemstone_storage_blocks",
+      "required": false
+    },
+    {
+      "id": "#pastel:upgrades",
+      "required": false
+    },
+    {
+      "id": "#pastel:shimmerstone_lights",
+      "required": false
+    },
+    {
+      "id": "#pastel:colored_blocks",
+      "required": false
+    },
+    {
+      "id": "#pastel:colored_lamps",
+      "required": false
+    },
+    {
+      "id": "#pastel:pylons",
+      "required": false
+    },
+    {
+      "id": "#pastel:gemstone_chimes",
+      "required": false
+    },
+    {
+      "id": "#pastel:pedestals",
+      "required": false
+    },
+    {
+      "id": "#pastel:fusion_shrines",
+      "required": false
+    },
+    {
+      "id": "#pastel:item_bowls",
+      "required": false
+    },
+    {
+      "id": "#pastel:shooting_stars",
+      "required": false
+    },
+    {
+      "id": "#pastel:idols",
+      "required": false
+    },
+    {
+      "id": "#pastel:glowblocks",
+      "required": false
+    },
+    {
+      "id": "#pastel:gemstone_lights",
+      "required": false
+    },
+    {
+      "id": "#pastel:crystallarieum_growable_clusters",
+      "required": false
+    },
+    {
+      "id": "#pastel:crystallarieum_growable_buds",
+      "required": false
+    },
+    {
+      "id": "#pastel:pastel_network_nodes",
+      "required": false
+    },
+    {
+      "id": "#pastel:semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "#pastel:gemstone_glass",
+      "required": false
+    },
+    {
+      "id": "#pastel:gemstone_glass_panes",
+      "required": false
+    },
+    {
+      "id": "#pastel:pure_resource_blocks",
+      "required": false
+    },
+    {
+      "id": "#pastel:blackslags",
+      "required": false
+    },
+    {
+      "id": "#pastel:calcites",
+      "required": false
+    },
+    {
+      "id": "#pastel:basalts",
+      "required": false
+    },
+    {
+      "id": "#pastel:decay/decay",
+      "required": false
+    },
+    {
+      "id": "#pastel:citrine_buds",
+      "required": false
+    },
+    {
+      "id": "#pastel:shale_clays",
+      "required": false
+    },
+    {
+      "id": "#pastel:dragonbone_blocks",
+      "required": false
+    },
+    {
+      "id": "#pastel:pyrite",
+      "required": false
+    },
+    {
+      "id": "#pastel:alloy_forges",
+      "required": false
+    },
+    {
+      "id": "#pastel:basal_marbles",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_cluster",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmel",
+      "required": false
+    },
+    {
+      "id": "pastel:ashen_blackslag",
+      "required": false
+    },
+    {
+      "id": "pastel:overgrown_blackslag",
+      "required": false
+    },
+    {
+      "id": "pastel:sawblade_grass",
+      "required": false
+    },
+    {
+      "id": "pastel:dragonbone",
+      "required": false
+    },
+    {
+      "id": "pastel:cracked_dragonbone",
+      "required": false
+    },
+    {
+      "id": "pastel:pyrite_ripper",
+      "required": false
+    },
+    {
+      "id": "pastel:rock_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_block",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_citrine",
+      "required": false
+    },
+    {
+      "id": "#pastel:topaz_buds",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_block",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_topaz",
+      "required": false
+    },
+    {
+      "id": "#pastel:onyx_buds",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_block",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_onyx",
+      "required": false
+    },
+    {
+      "id": "#pastel:hummingstones",
+      "required": false
+    },
+    {
+      "id": "#pastel:moonstone_buds",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:budding_moonstone",
+      "required": false
+    },
+    {
+      "id": "pastel:cinderhearth",
+      "required": false
+    },
+    {
+      "id": "pastel:crystallarieum",
+      "required": false
+    },
+    {
+      "id": "pastel:color_picker",
+      "required": false
+    },
+    {
+      "id": "pastel:crystal_apothecary",
+      "required": false
+    },
+    {
+      "id": "pastel:potion_workshop",
+      "required": false
+    },
+    {
+      "id": "pastel:spirit_instiller",
+      "required": false
+    },
+    {
+      "id": "pastel:memory",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:ominous_sapling",
+      "required": false
+    },
+    {
+      "id": "pastel:frostbite_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:blazing_crystal",
+      "required": false
+    },
+    {
+      "id": "pastel:particle_spawner",
+      "required": false
+    },
+    {
+      "id": "pastel:compacting_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:heartbound_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:fabrication_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_dropper",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_hopper",
+      "required": false
+    },
+    {
+      "id": "pastel:radiating_ender",
+      "required": false
+    },
+    {
+      "id": "pastel:shimmerstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:azurite_block",
+      "required": false
+    },
+    {
+      "id": "pastel:stratine_floatblock",
+      "required": false
+    },
+    {
+      "id": "pastel:paltaeria_floatblock",
+      "required": false
+    },
+    {
+      "id": "pastel:hover_block",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_glass_pane",
+      "required": false
+    },
+    {
+      "id": "pastel:item_roundel",
+      "required": false
+    },
+    {
+      "id": "pastel:present",
+      "required": false
+    },
+    {
+      "id": "pastel:bismuth_block",
+      "required": false
+    },
+    {
+      "id": "pastel:malachite_block",
+      "required": false
+    },
+    {
+      "id": "pastel:bloodstone_block",
+      "required": false
+    },
+    {
+      "id": "pastel:enchanter",
+      "required": false
+    },
+    {
+      "id": "pastel:bedrock_dust_block",
+      "required": false
+    },
+    {
+      "id": "pastel:redstone_timer",
+      "required": false
+    },
+    {
+      "id": "pastel:redstone_calculator",
+      "required": false
+    },
+    {
+      "id": "pastel:redstone_transceiver",
+      "required": false
+    },
+    {
+      "id": "pastel:block_placer",
+      "required": false
+    },
+    {
+      "id": "pastel:block_detector",
+      "required": false
+    },
+    {
+      "id": "pastel:block_breaker",
+      "required": false
+    },
+    {
+      "id": "pastel:black_hole_chest",
+      "required": false
+    },
+    {
+      "id": "pastel:ethereal_platform",
+      "required": false
+    },
+    {
+      "id": "pastel:universe_spyhole",
+      "required": false
+    },
+    {
+      "id": "pastel:decay_away",
+      "required": false
+    },
+    {
+      "id": "pastel:stuck_storm_stone",
+      "required": false
+    },
+    {
+      "id": "pastel:neolith_block",
+      "required": false
+    }
+  ],
+  "remove": [
+    {
+      "id": "oritech:plastic_block",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_uranium_block",
+      "required": false
+    },
+    {
+      "id": "oritech:steel_block",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_ostrum_ore",
       "required": false
     }
   ]

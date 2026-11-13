@@ -1,0 +1,41 @@
+{
+  "forge_tier": 3,
+  "essences": {},
+  "main_ingredient": {
+    "item": "magitech:alchaefabric"
+  },
+  "inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "malum:astral_weave"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "irons_spellbooks:mithril_ingot"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "pastel:onyx_shard"
+      }
+    },
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "l2complements:warden_bone_shard"
+      }
+    }
+  ],
+  "magic_circle": "forbidden_arcanus:create_item",
+  "result": {
+    "type": "forbidden_arcanus:create_item",
+    "result_item": {
+      "id": "irons_spellbooks:mithril_weave",
+      "count": 1
+    }
+  }
+}

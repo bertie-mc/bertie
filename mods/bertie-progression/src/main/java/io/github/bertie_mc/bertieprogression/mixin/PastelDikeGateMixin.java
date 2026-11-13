@@ -32,8 +32,8 @@ public abstract class PastelDikeGateMixin {
 
     @Inject(method = "punishEntityWithoutAzureDike", at = @At("HEAD"), cancellable = true, require = 1)
     private void bertie$skipRetiredChargeDamage(
-            Level world, BlockPos pos, Entity entity, boolean decreasedSounds, CallbackInfo ci) {
-        if (world.dimension() == Level.OVERWORLD) {
+            BlockGetter world, BlockPos pos, Entity entity, boolean decreasedSounds, CallbackInfo ci) {
+        if (world instanceof Level level && level.dimension() == Level.OVERWORLD) {
             ci.cancel();
         }
     }

@@ -25,7 +25,10 @@
       "id": "frightsdelight:rotten_flesh_pie_slice",
       "required": false
     },
-    "#c:crops/cave_carrot",
+    {
+      "id": "#c:crops/cave_carrot",
+      "required": false
+    },
     {
       "id": "minersdelight:smoked_bat_wing",
       "required": false

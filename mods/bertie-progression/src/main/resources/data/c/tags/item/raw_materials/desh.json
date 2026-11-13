@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "stellaris:raw_desh_ingot"
+    {
+      "id": "stellaris:raw_desh_ingot",
+      "required": false
+    }
   ]
 }

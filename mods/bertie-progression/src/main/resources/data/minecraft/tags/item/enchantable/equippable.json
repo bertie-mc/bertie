@@ -138,10 +138,22 @@
       "id": "enigmaticlegacyplus:chaos_elytra",
       "required": false
     },
-    "#hazennstuff:armors/hns_helmet",
-    "#hazennstuff:armors/hns_chestplate",
-    "#hazennstuff:armors/hns_leggings",
-    "#hazennstuff:armors/hns_boots",
+    {
+      "id": "#hazennstuff:armors/hns_helmet",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_chestplate",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_leggings",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_boots",
+      "required": false
+    },
     {
       "id": "minecraft:elytra",
       "required": false

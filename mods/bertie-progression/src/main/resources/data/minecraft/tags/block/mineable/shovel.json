@@ -1,10 +1,25 @@
 {
   "replace": true,
   "values": [
-    "quark:dirt_bricks",
-    "quark:dirt_bricks_wall",
-    "quark:dirt_bricks_stairs",
-    "quark:dirt_bricks_slab",
-    "quark:dirt_bricks_vertical_slab"
+    {
+      "id": "quark:dirt_bricks",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_slab",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_vertical_slab",
+      "required": false
+    }
   ]
 }

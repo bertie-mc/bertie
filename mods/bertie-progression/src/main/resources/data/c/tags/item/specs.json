@@ -1,28 +1,97 @@
 {
   "replace": false,
   "values": [
-    "#c:specs/iron",
-    "#c:specs/copper",
-    "#c:specs/gold",
-    "#c:specs/uranium",
-    "#c:specs/osmium",
-    "#c:specs/tin",
-    "#c:specs/lead",
-    "#c:specs/naquadah",
-    "#c:specs/nickel",
-    "#c:specs/platinum",
-    "#c:specs/zinc",
-    "#c:specs/silver",
-    "#c:specs/titanium",
-    "#c:specs/tungsten",
-    "#c:specs/voiderite",
-    "#c:specs/desh",
-    "#c:specs/neptunium",
-    "#c:specs/tharsite",
-    "#c:specs/corronium",
-    "#c:specs/solerium",
-    "#c:specs/eezo",
-    "#c:specs/bloody",
-    "#c:specs/elvenite"
+    {
+      "id": "#c:specs/iron",
+      "required": false
+    },
+    {
+      "id": "#c:specs/copper",
+      "required": false
+    },
+    {
+      "id": "#c:specs/gold",
+      "required": false
+    },
+    {
+      "id": "#c:specs/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/tin",
+      "required": false
+    },
+    {
+      "id": "#c:specs/lead",
+      "required": false
+    },
+    {
+      "id": "#c:specs/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:specs/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:specs/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:specs/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:specs/silver",
+      "required": false
+    },
+    {
+      "id": "#c:specs/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:specs/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:specs/desh",
+      "required": false
+    },
+    {
+      "id": "#c:specs/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:specs/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:specs/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:specs/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:specs/elvenite",
+      "required": false
+    }
   ]
 }

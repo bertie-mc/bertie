@@ -1,4 +1,10 @@
 {
   "values": [],
-  "replace": true
+  "replace": false,
+  "remove": [
+    {
+      "id": "oritech:plastic_block",
+      "required": false
+    }
+  ]
 }

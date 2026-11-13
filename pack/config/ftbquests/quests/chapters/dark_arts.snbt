@@ -401,6 +401,7 @@
 			y: 12.5d
 		}
 		{
+			dependencies: ["1C00000000000047", "1C00000000001055"]
 			icon: { count: 1 id: "irons_spellbooks:mithril_weave" }
 			id: "1C00000000001012"
 			tasks: [{
@@ -988,30 +989,6 @@
 			y: 21.5d
 		}
 		{
-			icon: { count: 1 id: "twilightforest:armor_shard_cluster" }
-			id: "1C00000000002006"
-			tasks: [{
-				count: 1L
-				id: "1C00000001002006"
-				item: { count: 1 id: "twilightforest:armor_shard_cluster" }
-				type: "item"
-			}]
-			x: -16.5d
-			y: 21.5d
-		}
-		{
-			icon: { count: 1 id: "irons_spellbooks:mithril_scrap" }
-			id: "1C00000000002007"
-			tasks: [{
-				count: 1L
-				id: "1C00000001002007"
-				item: { count: 1 id: "irons_spellbooks:mithril_scrap" }
-				type: "item"
-			}]
-			x: -24.0d
-			y: 23.0d
-		}
-		{
 			icon: { count: 1 id: "dungeonsdelight:stained_scrap_fragment" }
 			id: "1C0000000000200D"
 			tasks: [{
@@ -1567,18 +1544,6 @@
 			y: 26.0d
 		}
 		{
-			icon: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
-			id: "1C00000000002052"
-			tasks: [{
-				count: 1L
-				id: "1C00000001002052"
-				item: { count: 1 id: "netherdepthsupgrade:fortress_grouper_plate" }
-				type: "item"
-			}]
-			x: -24.0d
-			y: 27.5d
-		}
-		{
 			icon: { count: 1 id: "anvilcraft:sea_heart_shell" }
 			id: "1C00000000002053"
 			tasks: [{
@@ -1588,30 +1553,6 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 27.5d
-		}
-		{
-			icon: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
-			id: "1C00000000002054"
-			tasks: [{
-				count: 1L
-				id: "1C00000001002054"
-				item: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
-				type: "item"
-			}]
-			x: -21.0d
-			y: 27.5d
-		}
-		{
-			icon: { count: 1 id: "anvilcraft:hardend_resin" }
-			id: "1C00000000002055"
-			tasks: [{
-				count: 1L
-				id: "1C00000001002055"
-				item: { count: 1 id: "anvilcraft:hardend_resin" }
-				type: "item"
-			}]
-			x: -19.5d
 			y: 27.5d
 		}
 		{

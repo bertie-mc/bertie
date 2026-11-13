@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:raw_nickel"
+    {
+      "id": "oritech:raw_nickel",
+      "required": false
+    }
   ]
 }

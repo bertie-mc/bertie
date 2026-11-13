@@ -201,8 +201,14 @@
       "id": "fantasy_armor:ornstein_helmet",
       "required": false
     },
-    "#hazennstuff:armors/hns_helmet",
-    "#hazentouvelib:armors/helmets",
+    {
+      "id": "#hazennstuff:armors/hns_helmet",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/helmets",
+      "required": false
+    },
     {
       "id": "ice_and_fire_spellbooks:toornahkriin",
       "required": false

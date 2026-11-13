@@ -109,7 +109,10 @@
       "id": "moredelight:stone_knife",
       "required": false
     },
-    "#dungeonsdelight:cleavers",
+    {
+      "id": "#dungeonsdelight:cleavers",
+      "required": false
+    },
     {
       "id": "dungeonsdelight:stained_knife",
       "required": false

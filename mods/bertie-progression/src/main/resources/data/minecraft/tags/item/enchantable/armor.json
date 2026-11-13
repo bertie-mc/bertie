@@ -197,8 +197,14 @@
       "id": "darkermagic:warden_mage_boots",
       "required": false
     },
-    "#stellaris:space_suit",
-    "#stellaris:jet_suit",
+    {
+      "id": "#stellaris:space_suit",
+      "required": false
+    },
+    {
+      "id": "#stellaris:jet_suit",
+      "required": false
+    },
     "#minecraft:enchantable/foot_armor",
     "#minecraft:enchantable/leg_armor",
     "#minecraft:enchantable/chest_armor",

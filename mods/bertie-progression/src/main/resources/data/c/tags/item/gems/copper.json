@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:copper_gem"
+    {
+      "id": "oritech:copper_gem",
+      "required": false
+    }
   ]
 }

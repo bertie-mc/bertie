@@ -5,7 +5,7 @@
   "berlordscarving.screen.hint": "Click to carve the shape",
   "berlordscarving.screen.slips": "Errors: %s/3",
   "berlordscarving.screen.title": "Carving",
-  "berlordscarving.station.controls": "WS move \u00c2\u00b7 AD rotate \u00c2\u00b7 Space cut",
+  "berlordscarving.station.controls": "WS move Â· AD rotate Â· Space cut",
   "berlordscarving.station.insert": "Insert a Tier 2 slate",
   "berlordscarving.station.needs_water": "needs water",
   "berlordscarving.station.zoom": "%sx",
@@ -109,5 +109,9 @@
   "item.berlordscarving.nickel_slate": "Small Nickel Slate",
   "item.berlordscarving.nickel_big_slate": "Large Nickel Slate",
   "item.berlordscarving.bronze_slate": "Small Bronze Slate",
-  "item.berlordscarving.bronze_big_slate": "Large Bronze Slate"
+  "item.berlordscarving.bronze_big_slate": "Large Bronze Slate",
+  "item.berlordscarving.titanium_slate": "Small Titanium Slate",
+  "item.berlordscarving.titanium_big_slate": "Large Titanium Slate",
+  "item.berlordscarving.duratium_slate": "Small Duratium Slate",
+  "item.berlordscarving.duratium_big_slate": "Large Duratium Slate"
 }

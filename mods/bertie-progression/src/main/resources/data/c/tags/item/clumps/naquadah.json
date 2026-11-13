@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism_extras:clump_naquadah"
+    {
+      "id": "mekanism_extras:clump_naquadah",
+      "required": false
+    }
   ]
 }

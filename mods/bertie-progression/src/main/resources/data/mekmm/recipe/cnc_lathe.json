@@ -1,0 +1,63 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "TTTTT",
+    "TLXLT",
+    "TMKMT",
+    "RCACR",
+    "RRRRR"
+  ],
+  "key": {
+    "T": {
+      "item": "bertieprogression:titanium_sheet"
+    },
+    "L": {
+      "item": "oritech:enderic_lens"
+    },
+    "X": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "R": {
+      "item": "bertieprogression:royal_steel_sheet"
+    },
+    "C": {
+      "item": "refinedstorage:construction_core"
+    },
+    "A": {
+      "item": "oritech:advanced_computing_engine"
+    }
+  },
+  "result": {
+    "id": "mekmm:cnc_lathe",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
+}

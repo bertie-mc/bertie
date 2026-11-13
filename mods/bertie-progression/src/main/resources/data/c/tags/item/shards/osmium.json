@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:shard_osmium"
+    {
+      "id": "mekanism:shard_osmium",
+      "required": false
+    }
   ]
 }

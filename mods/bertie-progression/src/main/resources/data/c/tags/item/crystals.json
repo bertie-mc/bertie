@@ -1,28 +1,97 @@
 {
   "replace": false,
   "values": [
-    "#c:crystals/iron",
-    "#c:crystals/copper",
-    "#c:crystals/gold",
-    "#c:crystals/uranium",
-    "#c:crystals/osmium",
-    "#c:crystals/tin",
-    "#c:crystals/lead",
-    "#c:crystals/naquadah",
-    "#c:crystals/nickel",
-    "#c:crystals/platinum",
-    "#c:crystals/zinc",
-    "#c:crystals/silver",
-    "#c:crystals/titanium",
-    "#c:crystals/tungsten",
-    "#c:crystals/voiderite",
-    "#c:crystals/desh",
-    "#c:crystals/neptunium",
-    "#c:crystals/tharsite",
-    "#c:crystals/corronium",
-    "#c:crystals/solerium",
-    "#c:crystals/eezo",
-    "#c:crystals/bloody",
-    "#c:crystals/elvenite"
+    {
+      "id": "#c:crystals/iron",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/copper",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/gold",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/tin",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/lead",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/silver",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/desh",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:crystals/elvenite",
+      "required": false
+    }
   ]
 }

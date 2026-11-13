@@ -1,0 +1,60 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAAAAAA",
+    "ABBBCCA",
+    "ABDEDCA",
+    "ABFGFCA",
+    "ACDHDIA",
+    "ACIIIIA",
+    "AAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "B": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "C": {
+      "item": "bertieprogression:titanium_sheet"
+    },
+    "D": {
+      "item": "oritech:unholy_intelligence"
+    },
+    "E": {
+      "item": "oritech:flux_gate"
+    },
+    "F": {
+      "item": "oritech:enderic_lens"
+    },
+    "G": {
+      "item": "mekanism:steel_casing"
+    },
+    "H": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "I": {
+      "item": "oritech:superconductor"
+    }
+  },
+  "result": {
+    "id": "oritech:atomic_forge_block",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

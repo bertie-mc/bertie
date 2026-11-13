@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "stellaris:raw_corronium"
+    {
+      "id": "stellaris:raw_corronium",
+      "required": false
+    }
   ]
 }

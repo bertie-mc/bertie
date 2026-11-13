@@ -1,20 +1,71 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
-    "stellaris:steel_ore",
-    "stellaris:deepslate_steel_ore",
-    "stellaris:mercury_uranium_ore",
-    "stellaris:mars_iron_ore",
-    "stellaris:mars_plutonium_ore",
-    "stellaris:mars_ice_shard_ore",
-    "stellaris:mars_diamond_ore",
-    "stellaris:venus_coal_ore",
-    "stellaris:venus_neptunium_ore",
-    "stellaris:venus_gold_ore",
-    "stellaris:venus_diamond_ore",
-    "stellaris:moon_desh_ore",
-    "stellaris:moon_ice_shard_ore",
-    "stellaris:moon_steel_ore",
-    "stellaris:mercury_iron_ore"
+    {
+      "id": "stellaris:steel_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:deepslate_steel_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mercury_uranium_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_iron_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_plutonium_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_ice_shard_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mars_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:venus_coal_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:venus_neptunium_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:venus_gold_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:venus_diamond_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:moon_desh_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:moon_ice_shard_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:moon_steel_ore",
+      "required": false
+    },
+    {
+      "id": "stellaris:mercury_iron_ore",
+      "required": false
+    }
+  ],
+  "remove": [
+    {
+      "id": "stellaris:mars_ostrum_ore",
+      "required": false
+    }
   ]
 }

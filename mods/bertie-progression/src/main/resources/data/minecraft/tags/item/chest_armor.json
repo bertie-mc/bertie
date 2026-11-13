@@ -105,8 +105,14 @@
       "id": "forbidden_arcanus:tyr_chestplate",
       "required": false
     },
-    "#hazennstuff:armors/hns_chestplate",
-    "#hazentouvelib:armors/chestplates",
+    {
+      "id": "#hazennstuff:armors/hns_chestplate",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/chestplates",
+      "required": false
+    },
     {
       "id": "immersive_armors:bone_chestplate",
       "required": false
@@ -131,7 +137,10 @@
       "id": "immersive_armors:wooden_chestplate",
       "required": false
     },
-    "#irons_spellbooks:armors/chestplates",
+    {
+      "id": "#irons_spellbooks:armors/chestplates",
+      "required": false
+    },
     {
       "id": "malum:soul_hunter_robe",
       "required": false
@@ -144,7 +153,10 @@
       "id": "malum:malignant_stronghold_chestplate",
       "required": false
     },
-    "#mythsandlegends:chest_armor",
+    {
+      "id": "#mythsandlegends:chest_armor",
+      "required": false
+    },
     {
       "id": "oritech:jetpack",
       "required": false

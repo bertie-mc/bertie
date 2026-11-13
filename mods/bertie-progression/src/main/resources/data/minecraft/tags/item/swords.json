@@ -149,7 +149,10 @@
       "id": "cataclysm:ceraunus",
       "required": false
     },
-    "#pastel:swords",
+    {
+      "id": "#pastel:swords",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_sword",
       "required": false
@@ -206,7 +209,10 @@
       "id": "anvilcraft:ember_metal_sword",
       "required": false
     },
-    "#anvilcraft:tools/heavy_halberd",
+    {
+      "id": "#anvilcraft:tools/heavy_halberd",
+      "required": false
+    },
     {
       "id": "aquaculturedelight:neptunium_knife",
       "required": false

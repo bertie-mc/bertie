@@ -125,7 +125,10 @@
       "id": "farmersdelight:cod_slice",
       "required": false
     },
-    "#c:foods/raw_strider",
+    {
+      "id": "#c:foods/raw_strider",
+      "required": false
+    },
     {
       "id": "mynethersdelight:ghasmati",
       "required": false
@@ -134,7 +137,10 @@
       "id": "aquamirae:spinefish",
       "required": false
     },
-    "#c:foods/raw_squid",
+    {
+      "id": "#c:foods/raw_squid",
+      "required": false
+    },
     {
       "id": "minecraft:cod",
       "required": false

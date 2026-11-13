@@ -81,8 +81,14 @@
       "id": "forbidden_arcanus:tyr_leggings",
       "required": false
     },
-    "#hazennstuff:armors/hns_leggings",
-    "#hazentouvelib:armors/leggings",
+    {
+      "id": "#hazennstuff:armors/hns_leggings",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/leggings",
+      "required": false
+    },
     {
       "id": "immersive_armors:bone_leggings",
       "required": false
@@ -107,7 +113,10 @@
       "id": "immersive_armors:wooden_leggings",
       "required": false
     },
-    "#irons_spellbooks:armors/leggings",
+    {
+      "id": "#irons_spellbooks:armors/leggings",
+      "required": false
+    },
     {
       "id": "malum:soul_hunter_leggings",
       "required": false
@@ -120,7 +129,10 @@
       "id": "malum:malignant_stronghold_leggings",
       "required": false
     },
-    "#mythsandlegends:leg_armor",
+    {
+      "id": "#mythsandlegends:leg_armor",
+      "required": false
+    },
     {
       "id": "oritech:exo_leggings",
       "required": false

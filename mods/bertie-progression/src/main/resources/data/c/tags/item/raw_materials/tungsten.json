@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "anvilcraft:raw_tungsten"
+    {
+      "id": "anvilcraft:raw_tungsten",
+      "required": false
+    }
   ]
 }

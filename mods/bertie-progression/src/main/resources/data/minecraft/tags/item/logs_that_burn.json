@@ -225,8 +225,14 @@
       "id": "crabbersdelight:stripped_palm_wood",
       "required": false
     },
-    "#deeperdarker:echo_logs",
-    "#expandeddelight:cinnamon_logs",
+    {
+      "id": "#deeperdarker:echo_logs",
+      "required": false
+    },
+    {
+      "id": "#expandeddelight:cinnamon_logs",
+      "required": false
+    },
     {
       "id": "hazennstuff:wisewood_log",
       "required": false
@@ -295,9 +301,18 @@
       "id": "magitech:stripped_charcoal_birch_wood",
       "required": false
     },
-    "#pastel:colored_logs",
-    "#pastel:noxcap_stems",
-    "#pastel:weeping_gala_logs",
+    {
+      "id": "#pastel:colored_logs",
+      "required": false
+    },
+    {
+      "id": "#pastel:noxcap_stems",
+      "required": false
+    },
+    {
+      "id": "#pastel:weeping_gala_logs",
+      "required": false
+    },
     {
       "id": "pastel:nephrite_blossom_stem",
       "required": false
@@ -350,13 +365,34 @@
       "id": "quark:stripped_ancient_wood",
       "required": false
     },
-    "#twilightforest:twilight_oak_logs",
-    "#twilightforest:canopy_logs",
-    "#twilightforest:mangrove_logs",
-    "#twilightforest:timewood_logs",
-    "#twilightforest:transwood_logs",
-    "#twilightforest:mining_logs",
-    "#twilightforest:sortwood_logs",
+    {
+      "id": "#twilightforest:twilight_oak_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:canopy_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:mangrove_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:timewood_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:transwood_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:mining_logs",
+      "required": false
+    },
+    {
+      "id": "#twilightforest:sortwood_logs",
+      "required": false
+    },
     {
       "id": "twilightdelight:ironwood_log",
       "required": false

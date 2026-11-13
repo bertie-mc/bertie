@@ -2,7 +2,7 @@
   "type": "mekmm:stamper",
   "input": {
     "count": 1,
-    "item": "berlordscarving:royal_steel_slate"
+    "item": "berlordscarving:royal_steel_big_slate"
   },
   "mold": {
     "count": 1,
@@ -10,7 +10,7 @@
   },
   "output": {
     "id": "bertieprogression:royal_steel_sheet",
-    "count": 1
+    "count": 8
   },
   "neoforge:conditions": [
     {

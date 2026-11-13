@@ -2,7 +2,7 @@
   "type": "mekmm:stamper",
   "input": {
     "count": 1,
-    "item": "berlordscarving:iron_slate"
+    "item": "berlordscarving:iron_big_slate"
   },
   "mold": {
     "count": 1,
@@ -10,7 +10,7 @@
   },
   "output": {
     "id": "bertieprogression:iron_sheet",
-    "count": 1
+    "count": 8
   },
   "neoforge:conditions": [
     {

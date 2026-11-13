@@ -25,7 +25,10 @@
       "id": "cataclysm:black_steel_shovel",
       "required": false
     },
-    "#pastel:shovels",
+    {
+      "id": "#pastel:shovels",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_shovel",
       "required": false
@@ -54,7 +57,10 @@
       "id": "anvilcraft:ember_metal_shovel",
       "required": false
     },
-    "#anvilcraft:tools/resonator",
+    {
+      "id": "#anvilcraft:tools/resonator",
+      "required": false
+    },
     {
       "id": "deeperdarker:warden_shovel",
       "required": false

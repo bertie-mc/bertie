@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:dirty_dust_uranium"
+    {
+      "id": "mekanism:dirty_dust_uranium",
+      "required": false
+    }
   ]
 }

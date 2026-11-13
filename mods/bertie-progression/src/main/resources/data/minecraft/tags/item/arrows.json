@@ -5,7 +5,10 @@
       "id": "cataclysm:void_scatter_arrow",
       "required": false
     },
-    "#pastel:glass_arrows",
+    {
+      "id": "#pastel:glass_arrows",
+      "required": false
+    },
     {
       "id": "minecraft:tipped_arrow",
       "required": false
@@ -30,7 +33,10 @@
       "id": "forbidden_arcanus:draco_arcanus_arrow",
       "required": false
     },
-    "#iceandfire:dragon_arrows",
+    {
+      "id": "#iceandfire:dragon_arrows",
+      "required": false
+    },
     {
       "id": "dungeonsdelight:gunk_arrow",
       "required": false

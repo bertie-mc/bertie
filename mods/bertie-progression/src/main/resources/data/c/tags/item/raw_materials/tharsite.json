@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "stellaris:raw_tharsite"
+    {
+      "id": "stellaris:raw_tharsite",
+      "required": false
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:uranium_gem"
+    {
+      "id": "oritech:uranium_gem",
+      "required": false
+    }
   ]
 }

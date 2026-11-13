@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:crystal_lead"
+    {
+      "id": "mekanism:crystal_lead",
+      "required": false
+    }
   ]
 }

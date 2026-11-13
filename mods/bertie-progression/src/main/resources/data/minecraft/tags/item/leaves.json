@@ -33,7 +33,10 @@
       "id": "betterend:umbrella_tree_membrane",
       "required": false
     },
-    "#pastel:colored_leaves",
+    {
+      "id": "#pastel:colored_leaves",
+      "required": false
+    },
     {
       "id": "pastel:nephrite_blossom_leaves",
       "required": false

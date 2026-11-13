@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "b5dec64522532aaa72d0b4980b3275f1907e570c25bf705256ccb42a392600e1"
+inputs-hash = "5c83b50394d9f07699407628167d807bf14957245b0f14c8711dc020b600855c"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."accessdenied"]
@@ -50,6 +50,10 @@ mod = "curseforge:1311194:6794882"
 any = "curseforge:986251:8246261"
 mod = "curseforge:986251:8246261"
 
+[components."apex-arcana"]
+any = "curseforge:1677981:9538107"
+mod = "curseforge:1677981:9538107"
+
 [components."apotheosis"]
 any = "curseforge:313970:8182695"
 mod = "curseforge:313970:8182695"
@@ -89,6 +93,10 @@ mod = "modrinth:k23mNPhZ:iUPJ8ziU"
 [components."aquatic-creepers"]
 any = "curseforge:1331880:6918744"
 mod = "curseforge:1331880:6918744"
+
+[components."archaion"]
+any = "curseforge:1620396:8983496"
+mod = "curseforge:1620396:8983496"
 
 [components."architectury-api"]
 any = "curseforge:419699:5786327"
@@ -352,6 +360,10 @@ mod = "curseforge:891328:5918192"
 [components."diamond-in-the-rough"]
 any = "curseforge:898993:5624841"
 mod = "curseforge:898993:5624841"
+
+[components."diorama"]
+any = "curseforge:1748961:9587578"
+mod = "curseforge:1748961:9587578"
 
 [components."discerning-the-eldritch"]
 any = "curseforge:1143065:7469786"
@@ -1374,6 +1386,10 @@ mod = "curseforge:1268078:6684338"
 [components."visual-workbench"]
 any = "curseforge:500273:6798196"
 mod = "curseforge:500273:6798196"
+
+[components."weather-glass"]
+any = "curseforge:1757481:9508282"
+mod = "curseforge:1757481:9508282"
 
 [components."wfs-cave-overhaul"]
 any = "curseforge:946171:5984314"
@@ -4426,6 +4442,90 @@ provides = ["isleweaver"]
 bundled-provides = []
 required = [{ "artifact" = "curseforge:658435:9274055", "mod-id" = "the_beyond", "version-range" = "[1.0.0,)", "side" = "both", "origin" = "archive" }]
 optional = [{ "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "astrological", "mod-id" = "astrological", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "betterend", "mod-id" = "betterend", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "wover", "mod-id" = "wover", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "bclib", "mod-id" = "bclib", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "enderscape", "mod-id" = "enderscape", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "stellarity", "mod-id" = "stellarity", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:243121:8146177", "mod-id" = "quark", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "phantasm", "mod-id" = "phantasm", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "dimensional_tears", "mod-id" = "dimensional_tears", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "missing" = "unusualend", "mod-id" = "unusualend", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:1oUDhxuy:xh6jB8Xb", "mod-id" = "moogs_structures", "version-range" = "*", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1620396:8983496"]
+name = "archaion"
+component = "archaion"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "archaion-1620396"
+version = "8983496"
+filename = "archaion-1.21.1-1.4.4.jar"
+project-id = 1620396
+slug = "archaion"
+file-id = 8983496
+provides = ["archaion"]
+bundled-provides = []
+required = [{ "artifact" = "modrinth:En8uHTOK:ePi58Pcx", "mod-id" = "aaa_particles", "version-range" = "[2.2.3,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1677981:9538107"]
+name = "apex-arcana"
+component = "apex-arcana"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "apex-arcana-irons-spells-n-spellbooks-addon-1677981"
+version = "9538107"
+filename = "grandsigil-1.21.1-neoforge-1.6.0.jar"
+project-id = 1677981
+slug = "apex-arcana-irons-spells-n-spellbooks-addon"
+file-id = 9538107
+provides = ["grandsigil"]
+bundled-provides = []
+required = [{ "artifact" = "curseforge:855414:8202148", "mod-id" = "irons_spellbooks", "version-range" = "[1.21.1,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "missing" = "gtbcs_geomancy_plus", "mod-id" = "gtbcs_geomancy_plus", "version-range" = "[1,)", "side" = "both", "origin" = "archive" }]
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1748961:9587578"]
+name = "diorama"
+component = "diorama"
+provider = "curseforge"
+kind = "mod"
+side = "client"
+group = "curse.maven"
+module = "diorama-1748961"
+version = "9587578"
+filename = "diorama-0.10.0-neoforge-1.21.1.jar"
+project-id = 1748961
+slug = "diorama"
+file-id = 9587578
+provides = ["diorama"]
+bundled-provides = []
+required = []
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1757481:9508282"]
+name = "weather-glass"
+component = "weather-glass"
+provider = "curseforge"
+kind = "mod"
+side = "client"
+group = "curse.maven"
+module = "weather-glass-1757481"
+version = "9508282"
+filename = "weatherglass-0.6.0-1.21.1-neoforge.jar"
+project-id = 1757481
+slug = "weather-glass"
+file-id = 9508282
+provides = ["weatherglass"]
+bundled-provides = []
+required = []
+optional = []
 incompatible = []
 bundled = []
 integrations = []
@@ -9323,6 +9423,25 @@ version-id = "Z0nG7STl"
 provides = ["apothic_attributes"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:tCkE8p2N:kb8pGRQR", "mod-id" = "placebo", "version-range" = "[9.9.0,)", "side" = "both", "origin" = "archive" }]
+optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."modrinth:En8uHTOK:ePi58Pcx"]
+name = "aaa-particles"
+provider = "modrinth"
+kind = "mod"
+side = "both"
+group = "maven.modrinth"
+module = "En8uHTOK"
+version = "ePi58Pcx"
+filename = "aaa_particles-neoforge-1.21.1-2.2.3.jar"
+project-id = "En8uHTOK"
+version-id = "ePi58Pcx"
+provides = ["aaa_particles"]
+bundled-provides = []
+required = []
 optional = []
 incompatible = []
 bundled = []

@@ -69,7 +69,10 @@
       "id": "enigmaticlegacyplus:infernal_shield",
       "required": false
     },
-    "#enigmaticlegacyplus:enchantable/eternal_binding",
+    {
+      "id": "#enigmaticlegacyplus:enchantable/eternal_binding",
+      "required": false
+    },
     "#minecraft:enchantable/durability",
     {
       "id": "minecraft:compass",

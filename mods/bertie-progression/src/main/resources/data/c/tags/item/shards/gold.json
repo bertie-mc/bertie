@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:shard_gold"
+    {
+      "id": "mekanism:shard_gold",
+      "required": false
+    }
   ]
 }

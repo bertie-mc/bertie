@@ -25,28 +25,97 @@
       "id": "create:crushed_raw_zinc",
       "required": false
     },
-    "#c:clumps/iron",
-    "#c:clumps/copper",
-    "#c:clumps/gold",
-    "#c:clumps/uranium",
-    "#c:clumps/osmium",
-    "#c:clumps/tin",
-    "#c:clumps/lead",
-    "#c:clumps/naquadah",
-    "#c:clumps/nickel",
-    "#c:clumps/platinum",
-    "#c:clumps/zinc",
-    "#c:clumps/silver",
-    "#c:clumps/titanium",
-    "#c:clumps/tungsten",
-    "#c:clumps/voiderite",
-    "#c:clumps/desh",
-    "#c:clumps/neptunium",
-    "#c:clumps/tharsite",
-    "#c:clumps/corronium",
-    "#c:clumps/solerium",
-    "#c:clumps/eezo",
-    "#c:clumps/bloody",
-    "#c:clumps/elvenite"
+    {
+      "id": "#c:clumps/iron",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/copper",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/gold",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/tin",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/lead",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/silver",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/desh",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:clumps/elvenite",
+      "required": false
+    }
   ]
 }

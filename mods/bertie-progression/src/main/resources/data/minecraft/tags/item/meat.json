@@ -45,8 +45,14 @@
       "id": "farmersdelight:dog_food",
       "required": false
     },
-    "#c:foods/raw_hoglin",
-    "#c:foods/cooked_hoglin",
+    {
+      "id": "#c:foods/raw_hoglin",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_hoglin",
+      "required": false
+    },
     {
       "id": "mynethersdelight:minced_strider",
       "required": false

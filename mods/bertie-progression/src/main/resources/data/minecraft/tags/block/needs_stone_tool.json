@@ -1,8 +1,14 @@
 {
   "replace": false,
   "values": [
-    "forbidden_arcanus:arcane_crystal_ore",
-    "forbidden_arcanus:deepslate_arcane_crystal_ore",
+    {
+      "id": "forbidden_arcanus:arcane_crystal_ore",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:deepslate_arcane_crystal_ore",
+      "required": false
+    },
     "minecraft:redstone_ore",
     "minecraft:deepslate_redstone_ore"
   ]

@@ -163,25 +163,9 @@ def apply(module, native, mods=None):
     write("removed_items.json", sorted(removed))
     # Shared tag ingredients must also resolve to the surviving sheet and glass forms.
     if mods:
-        for jar in Path(mods).glob("*.jar"):
-            if jar.name.startswith("bertieprogression"):
-                continue
-            with ZipFile(jar) as archive:
-                for name in archive.namelist():
-                    if "/tags/" not in name or not name.endswith(".json"):
-                        continue
-                    raw = archive.read(name)
-                    if not any(item.encode() in raw for item in PLASTIC | GLASS):
-                        continue
-                    target = resources / name
-                    value = json.loads(target.read_text(encoding="utf-8")) if target.exists() else json.loads(raw)
-                    if "/tags/block/" in name:
-                        value["values"] = [v for v in value.get("values", [])
-                                           if (v if isinstance(v, str) else v.get("id")) not in {*PLASTIC, "mekanism:hdpe_sheet"}]
-                    else:
-                        value = replace(value, PLASTIC | GLASS)
-                    value["replace"] = True
-                    write(name, value)
+        from shared_tag_replacements import apply as apply_shared_tags
+        all_aliases = json.loads((resources / "merged_items.json").read_text()) | PLASTIC | GLASS
+        apply_shared_tags(resources, mods, all_aliases, write, scan_replacements=PLASTIC | GLASS)
     # The pack already renames Magitech's fluorite block and charges its packing ingredients.
     block = "magitech:fluorite_block"
     obsolete = "bertieprogression:mana_charged_fluorite_block"
@@ -284,12 +268,5 @@ def retire_ostrum(module, mods):
     save("data/stellaris/worldgen/configured_feature/mars_ostrum_ore_key.json", {"type": "minecraft:no_op", "config": {}})
     save("data/stellaris/loot_table/blocks/mars_ostrum_ore.json", {"type": "minecraft:block", "pools": []})
     for jar in Path(mods).glob("stellaris-*.jar"):
-        with ZipFile(jar) as archive:
-            for name in archive.namelist():
-                if "/tags/" not in name or not name.endswith(".json") or b"ostrum" not in archive.read(name):
-                    continue
-                target = resources / name
-                value = json.loads(target.read_text()) if target.exists() else json.loads(archive.read(name))
-                value["replace"] = True
-                value["values"] = [v for v in value.get("values", []) if "ostrum" not in str(v)]
-                save(name, value)
+        from shared_tag_replacements import retire_native_tag_entries
+        retire_native_tag_entries(resources, jar, "ostrum", save)

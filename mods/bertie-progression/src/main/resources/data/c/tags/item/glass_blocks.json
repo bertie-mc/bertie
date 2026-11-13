@@ -1,9 +1,22 @@
 {
   "values": [
-    "#pastel:gemstone_glass",
-    "#pastel:semi_permeable_glass",
-    "#pastel:hummingstones",
-    "pastel:radiant_glass"
+    {
+      "id": "#pastel:gemstone_glass",
+      "required": false
+    },
+    {
+      "id": "#pastel:semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "#pastel:hummingstones",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_glass",
+      "required": false
+    }
   ],
-  "replace": true
+  "replace": false,
+  "remove": []
 }

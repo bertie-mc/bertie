@@ -5,7 +5,10 @@
       "id": "mekanism:bounding_block",
       "required": false
     },
-    "#pastel:coming_soon_tooltip",
+    {
+      "id": "#pastel:coming_soon_tooltip",
+      "required": false
+    },
     {
       "id": "aces_spell_utils:example_staff",
       "required": false

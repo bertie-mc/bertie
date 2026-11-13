@@ -9,7 +9,10 @@
       "id": "powah:wrench",
       "required": false
     },
-    "#anvilcraft:tools/anvil_hammer",
+    {
+      "id": "#anvilcraft:tools/anvil_hammer",
+      "required": false
+    },
     {
       "id": "create:wrench",
       "required": false

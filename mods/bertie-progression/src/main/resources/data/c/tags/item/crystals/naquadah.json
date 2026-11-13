@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism_extras:crystal_naquadah"
+    {
+      "id": "mekanism_extras:crystal_naquadah",
+      "required": false
+    }
   ]
 }

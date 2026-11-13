@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:gold_gem"
+    {
+      "id": "oritech:gold_gem",
+      "required": false
+    }
   ]
 }

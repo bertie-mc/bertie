@@ -31,9 +31,13 @@ The [ore-intermediate family](docs/ore-materials.md) fills missing processing
 forms while retaining existing item IDs. Metal Centrifuge routes consume Sheol
 Fire and produce a Gem plus four Specs; seeded Spec recombination closes the loop.
 
-Advanced Computing Engine Stages 1–3 are registered as quest objectives with the
-approved quarter-color sprites. Their Atomic Forge processing recipes remain a
-separate pending progression change.
+Advanced Computing Engine Stages 1–3 use the quarter-color sprites. Four Atomic
+Forge operations combine a Processing Unit, then each previous stage, with a
+Basic/Advanced/Elite/Ultimate Control Circuit and a Silicon Wafer. The fourth
+operation produces the native Advanced Computing Engine. The Atomic Forge itself
+requires the End Crafting Table; the three CNC machines require the Nether Table.
+Matching metal Large Slates stamp into eight Sheets, retaining the sheet molds.
+PlaStick still stamps into one HDPE Sheet.
 
 Bronze Sheets and Platinum Rods/Wires use the established material-form routes.
 Electric and Resonant Coils have Nether Table crafts and Bound Soul variants.
@@ -89,6 +93,16 @@ Recovery Pearl uses a Tier-I Hephaestus ritual with an Ender Pearl, four Totemic
 Gold Ingots, four Echo Shards, 10,000 Blood and one Soul.
 
 ### Systems
+
+Bloody, Voiderite and Elvenite ores require real-player harvesting and their native
+boss advancements. Automated breakers, fake players and direct machine loot queries
+cannot obtain their drops. The self-only function
+`bertieprogression:reset_armageddon_test_unlocks` revokes those three unlocks for
+test preparation without revoking other boss progress.
+
+Adjacent AnvilCraft Negative Matter Blocks share their inward-facing surfaces.
+Internal borders and walls disappear, and floor texture coordinates join across
+block edges. The native textures are referenced at runtime.
 
 Refined Storage begins with the Forge III Machine Casing ritual. Raw processors
 use Mixing or Assembler, cores use Assembler, Controller uses the Nether Table

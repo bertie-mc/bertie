@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "armageddon_mod:raw_elvenite"
+    {
+      "id": "armageddon_mod:raw_elvenite",
+      "required": false
+    }
   ]
 }

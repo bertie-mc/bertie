@@ -109,12 +109,18 @@
       "id": "cognition:cognitive_rod",
       "required": false
     },
-    "#farmersdelight:tools/knives",
+    {
+      "id": "#farmersdelight:tools/knives",
+      "required": false
+    },
     {
       "id": "farmersdelight:skillet",
       "required": false
     },
-    "#hangglider:hang_gliders",
+    {
+      "id": "#hangglider:hang_gliders",
+      "required": false
+    },
     {
       "id": "cataclysm:black_steel_targe",
       "required": false
@@ -139,7 +145,10 @@
       "id": "pastel:ender_splice",
       "required": false
     },
-    "#quark:pickarangs",
+    {
+      "id": "#quark:pickarangs",
+      "required": false
+    },
     {
       "id": "alexsmobs:roadrunner_boots",
       "required": false
@@ -525,7 +534,10 @@
       "id": "create:extendo_grip",
       "required": false
     },
-    "#create:sandpaper",
+    {
+      "id": "#create:sandpaper",
+      "required": false
+    },
     {
       "id": "darkermagic:warden_mage_helmet",
       "required": false
@@ -571,10 +583,22 @@
       "id": "enigmaticlegacyplus:chaos_elytra",
       "required": false
     },
-    "#hazennstuff:armors/hns_helmet",
-    "#hazennstuff:armors/hns_chestplate",
-    "#hazennstuff:armors/hns_leggings",
-    "#hazennstuff:armors/hns_boots",
+    {
+      "id": "#hazennstuff:armors/hns_helmet",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_chestplate",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_leggings",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_boots",
+      "required": false
+    },
     {
       "id": "hazennstuff:fireblossom_rapier",
       "required": false
@@ -783,8 +807,14 @@
       "id": "l2hostility:pocket_of_restoration",
       "required": false
     },
-    "#malum:scythe",
-    "#malum:staff",
+    {
+      "id": "#malum:scythe",
+      "required": false
+    },
+    {
+      "id": "#malum:staff",
+      "required": false
+    },
     {
       "id": "malum:catalyst_lobber",
       "required": false
@@ -793,7 +823,10 @@
       "id": "malum:sundering_anchor",
       "required": false
     },
-    "#dungeonsdelight:cleavers",
+    {
+      "id": "#dungeonsdelight:cleavers",
+      "required": false
+    },
     {
       "id": "dungeonsdelight:rot_and_steel",
       "required": false
@@ -818,9 +851,13 @@
       "id": "rustic_engineer:repair_tool",
       "required": false
     },
-    "#simplymore:weapon_types/all",
     {
-      "id": "#simplyswords:swords"
+      "id": "#simplymore:weapon_types/all",
+      "required": false
+    },
+    {
+      "id": "#simplyswords:swords",
+      "required": false
     },
     {
       "id": "twilightforest:triple_bow",

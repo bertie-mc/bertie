@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:crystal_osmium"
+    {
+      "id": "mekanism:crystal_osmium",
+      "required": false
+    }
   ]
 }

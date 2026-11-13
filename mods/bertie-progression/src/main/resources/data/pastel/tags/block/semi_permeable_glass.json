@@ -1,13 +1,38 @@
 {
-  "values": [
-    "pastel:semi_permeable_glass",
-    "pastel:tinted_semi_permeable_glass",
-    "pastel:radiant_semi_permeable_glass",
-    "pastel:amethyst_semi_permeable_glass",
-    "pastel:topaz_semi_permeable_glass",
-    "pastel:citrine_semi_permeable_glass",
-    "pastel:onyx_semi_permeable_glass",
-    "pastel:moonstone_semi_permeable_glass"
-  ],
-  "replace": true
+  "values": [],
+  "replace": true,
+  "remove": [
+    {
+      "id": "pastel:semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:tinted_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_semi_permeable_glass",
+      "required": false
+    }
+  ]
 }

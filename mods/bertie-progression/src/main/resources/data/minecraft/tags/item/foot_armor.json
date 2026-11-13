@@ -89,8 +89,14 @@
       "id": "forbidden_arcanus:tyr_boots",
       "required": false
     },
-    "#hazennstuff:armors/hns_boots",
-    "#hazentouvelib:armors/boots",
+    {
+      "id": "#hazennstuff:armors/hns_boots",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/boots",
+      "required": false
+    },
     {
       "id": "immersive_armors:bone_boots",
       "required": false
@@ -115,7 +121,10 @@
       "id": "immersive_armors:wooden_boots",
       "required": false
     },
-    "#irons_spellbooks:armors/boots",
+    {
+      "id": "#irons_spellbooks:armors/boots",
+      "required": false
+    },
     {
       "id": "malum:soul_hunter_boots",
       "required": false
@@ -128,7 +137,10 @@
       "id": "malum:malignant_stronghold_boots",
       "required": false
     },
-    "#mythsandlegends:foot_armor",
+    {
+      "id": "#mythsandlegends:foot_armor",
+      "required": false
+    },
     {
       "id": "oritech:exo_boots",
       "required": false

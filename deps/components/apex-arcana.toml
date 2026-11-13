@@ -1,0 +1,8 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "both"
+slug = "apex-arcana-irons-spells-n-spellbooks-addon"
+project-id = 1677981
+file-id = 9538107
+filename = "grandsigil-1.21.1-neoforge-1.6.0.jar"

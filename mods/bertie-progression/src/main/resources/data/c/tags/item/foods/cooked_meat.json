@@ -1,11 +1,26 @@
 {
   "replace": true,
   "values": [
-    "#c:foods/cooked_chicken",
-    "#c:foods/cooked_pork",
-    "#c:foods/cooked_beef",
-    "#c:foods/cooked_mutton",
-    "#c:foods/cooked_hoglin",
+    {
+      "id": "#c:foods/cooked_chicken",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_pork",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_beef",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_mutton",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_hoglin",
+      "required": false
+    },
     {
       "id": "antarchy:cooked_venison",
       "required": false
@@ -22,7 +37,10 @@
       "id": "#c:foods/cooked_turtle",
       "required": false
     },
-    "#minersdelight:cooked_insect_meat",
+    {
+      "id": "#minersdelight:cooked_insect_meat",
+      "required": false
+    },
     {
       "id": "minersdelight:vegan_patty",
       "required": false

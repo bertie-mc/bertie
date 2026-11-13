@@ -1,6 +1,15 @@
 {
   "values": [
-    "mekanism:hdpe_sheet"
+    {
+      "id": "mekanism:hdpe_sheet",
+      "required": false
+    }
   ],
-  "replace": true
+  "replace": true,
+  "remove": [
+    {
+      "id": "oritech:plastic_sheet",
+      "required": false
+    }
+  ]
 }

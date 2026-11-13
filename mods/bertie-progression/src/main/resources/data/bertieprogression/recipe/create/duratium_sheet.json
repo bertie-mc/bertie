@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "oritech:duratium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:duratium_sheet",
+      "count": 1
+    }
+  ]
+}

@@ -141,8 +141,14 @@
       "id": "forbidden_arcanus:tyr_helmet",
       "required": false
     },
-    "#hazennstuff:armors/hns_helmet",
-    "#hazentouvelib:armors/helmets",
+    {
+      "id": "#hazennstuff:armors/hns_helmet",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/helmets",
+      "required": false
+    },
     {
       "id": "immersive_armors:bone_helmet",
       "required": false
@@ -167,7 +173,10 @@
       "id": "immersive_armors:wooden_helmet",
       "required": false
     },
-    "#irons_spellbooks:armors/helmets",
+    {
+      "id": "#irons_spellbooks:armors/helmets",
+      "required": false
+    },
     {
       "id": "malum:soul_hunter_cloak",
       "required": false
@@ -180,7 +189,10 @@
       "id": "malum:malignant_stronghold_helmet",
       "required": false
     },
-    "#mythsandlegends:head_armor",
+    {
+      "id": "#mythsandlegends:head_armor",
+      "required": false
+    },
     {
       "id": "oritech:exo_helmet",
       "required": false

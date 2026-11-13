@@ -1,0 +1,8 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+side = "client"
+slug = "weather-glass"
+project-id = 1757481
+file-id = 9508282
+filename = "weatherglass-0.6.0-1.21.1-neoforge.jar"

@@ -1,9 +1,10 @@
 # The bertie modlist
 
-## Mods (437)
+## Mods (439)
 
 | Mod |
 |---|
+| `aaa-particles` |
 | `access-denied-api` |
 | `accessdenied` |
 | `accessories` |
@@ -20,6 +21,7 @@
 | `antarchy` |
 | `anti-knockback-enchantment` |
 | `anvilcraft` |
+| `apex-arcana` |
 | `apotheosis` |
 | `apotheosis-x-irons-spellbooks-compat` |
 | `apothic-attributes` |
@@ -30,6 +32,7 @@
 | `aquaculture-delight` |
 | `aquamirae` |
 | `aquatic-creepers` |
+| `archaion` |
 | `architectury-api` |
 | `armageddon` |
 | `armor-statues` |
@@ -112,13 +115,13 @@
 | `diagonal-walls` |
 | `diagonal-windows` |
 | `diamond-in-the-rough` |
+| `diorama` |
 | `discerning-the-eldritch` |
 | `distanthorizons` |
 | `distraction-free-recipes` |
 | `do-a-barrel-roll` |
 | `does-it-tick` |
 | `dracolotl` |
-| `dragonkind-evolved` |
 | `drippy-loading-screen` |
 | `dungeons-and-taverns-woodland-mansion-overhaul` |
 | `dungeons_delight` |
@@ -129,7 +132,6 @@
 | `eccentric-tome` |
 | `echo-chest` |
 | `echoes-of-the-end-` |
-| `edf-remastered` |
 | `elemental-metals-magical-metallurgy-series` |
 | `elevatormod` |
 | `elytra-slot` |
@@ -393,7 +395,6 @@
 | `tree-giant` |
 | `tree-vein-miner` |
 | `trek` |
-| `true-ending` |
 | `tslatentitystatus` |
 | `tweakerge` |
 | `twilight-delight` |
@@ -412,6 +413,7 @@
 | `villages-and-pillages` |
 | `vision-enchantment` |
 | `visual-workbench` |
+| `weather-glass` |
 | `wfs-cave-overhaul` |
 | `what-are-they-up-to` |
 | `whats-that-slot` |
@@ -509,3 +511,14 @@
 BetterEnd is replaced by The Beyond with Isleweaver compatibility. BCLib,
 WorldWeaver and WunderLib leave the runtime with their only consumer. WunderLib
 remains a config-migrations test dependency.
+
+## Undecided Ender Dragon fight
+
+| Mod |
+|---|
+| `beyond-bosses-2` |
+| `true-ending` |
+| `edf-remastered` |
+| `dragonkind-evolved` |
+
+These are alternatives under review, not pack installations.

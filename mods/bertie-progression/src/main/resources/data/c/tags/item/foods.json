@@ -69,7 +69,10 @@
       "id": "brewinandchewin:apple_jelly",
       "required": false
     },
-    "#brewinandchewin:foods/cheese_wedge",
+    {
+      "id": "#brewinandchewin:foods/cheese_wedge",
+      "required": false
+    },
     {
       "id": "farmersdelight:tomato_sauce",
       "required": false
@@ -94,13 +97,34 @@
       "id": "farmersdelight:dog_food",
       "required": false
     },
-    "#farmersdelight:snacks",
-    "#farmersdelight:meals",
-    "#farmersdelight:sweets",
-    "#c:foods/leafy_green",
-    "#c:foods/dough",
-    "#c:foods/pasta",
-    "#c:foods/cooked_egg",
+    {
+      "id": "#farmersdelight:snacks",
+      "required": false
+    },
+    {
+      "id": "#farmersdelight:meals",
+      "required": false
+    },
+    {
+      "id": "#farmersdelight:sweets",
+      "required": false
+    },
+    {
+      "id": "#c:foods/leafy_green",
+      "required": false
+    },
+    {
+      "id": "#c:foods/dough",
+      "required": false
+    },
+    {
+      "id": "#c:foods/pasta",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_egg",
+      "required": false
+    },
     {
       "id": "alexsmobs:maggot",
       "required": false
@@ -181,7 +205,10 @@
       "id": "alexsmobs:mosquito_repellent_stew",
       "required": false
     },
-    "#c:foods/soup",
+    {
+      "id": "#c:foods/soup",
+      "required": false
+    },
     {
       "id": "antarchy:blood_crystal_apple",
       "required": false
@@ -490,8 +517,14 @@
       "id": "endersdelight:stuffed_shulker",
       "required": false
     },
-    "#c:foods/cheese",
-    "#c:foods/goat_cheese",
+    {
+      "id": "#c:foods/cheese",
+      "required": false
+    },
+    {
+      "id": "#c:foods/goat_cheese",
+      "required": false
+    },
     {
       "id": "farmerspizzeria:basil_leaves",
       "required": false
@@ -844,7 +877,10 @@
       "id": "stellaris:moon_fruit",
       "required": false
     },
-    "#c:foods/jerky",
+    {
+      "id": "#c:foods/jerky",
+      "required": false
+    },
     {
       "id": "twilightforest:gelatinous_slime_drop",
       "required": false
@@ -861,7 +897,10 @@
       "id": "twilightforest:maze_wafer",
       "required": false
     },
-    "#c:foods/insect",
+    {
+      "id": "#c:foods/insect",
+      "required": false
+    },
     {
       "id": "minecraft:baked_potato",
       "required": false
@@ -882,19 +921,61 @@
       "id": "minecraft:dried_kelp",
       "required": false
     },
-    "#c:foods/fruit",
-    "#c:foods/vegetable",
-    "#c:foods/berry",
-    "#c:foods/bread",
-    "#c:foods/cookie",
-    "#c:foods/raw_meat",
-    "#c:foods/raw_fish",
-    "#c:foods/cooked_meat",
-    "#c:foods/cooked_fish",
-    "#c:foods/candy",
-    "#c:foods/pie",
-    "#c:foods/golden",
-    "#c:foods/edible_when_placed",
-    "#c:foods/food_poisoning"
+    {
+      "id": "#c:foods/fruit",
+      "required": false
+    },
+    {
+      "id": "#c:foods/vegetable",
+      "required": false
+    },
+    {
+      "id": "#c:foods/berry",
+      "required": false
+    },
+    {
+      "id": "#c:foods/bread",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cookie",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_meat",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_fish",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_meat",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_fish",
+      "required": false
+    },
+    {
+      "id": "#c:foods/candy",
+      "required": false
+    },
+    {
+      "id": "#c:foods/pie",
+      "required": false
+    },
+    {
+      "id": "#c:foods/golden",
+      "required": false
+    },
+    {
+      "id": "#c:foods/edible_when_placed",
+      "required": false
+    },
+    {
+      "id": "#c:foods/food_poisoning",
+      "required": false
+    }
   ]
 }

@@ -6,6 +6,7 @@
   "refmap": "bertieprogression.refmap.json",
   "plugin": "io.github.bertie_mc.bertieprogression.compat.ProgressionMixinPlugin",
   "mixins": [
+    "ArmageddonOreLootMixin",
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
     "AnvilRecyclingMixin",

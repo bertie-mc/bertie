@@ -1,33 +1,36 @@
 {
-  "type": "avaritia:shaped_table",
+  "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ETE",
-    "UKU",
-    "RFR"
+    "QTQ",
+    "QGQ",
+    "QAQ"
   ],
   "key": {
-    "E": {
-      "item": "deeperdarker:reinforced_echo_shard"
+    "Q": {
+      "item": "refinedstorage:quartz_enriched_iron"
     },
     "T": {
       "item": "mekanism:teleportation_core"
     },
-    "U": {
-      "item": "oritech:unholy_intelligence"
+    "G": {
+      "tag": "refinedstorage:grids"
     },
-    "K": {
-      "item": "refinedstorage:machine_casing"
-    },
-    "R": {
-      "item": "mekanism:hdpe_rod"
-    },
-    "F": {
-      "item": "oritech:carbon_fibre_strands"
+    "A": {
+      "item": "refinedstorage:advanced_processor"
     }
   },
   "result": {
     "id": "refinedstorage:wireless_grid",
     "count": 1
   },
-  "tier": 1
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
 }

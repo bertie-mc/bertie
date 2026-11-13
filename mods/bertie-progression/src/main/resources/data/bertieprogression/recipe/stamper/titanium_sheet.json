@@ -2,7 +2,7 @@
   "type": "mekmm:stamper",
   "input": {
     "count": 1,
-    "item": "anvilcraft:titanium_ingot"
+    "item": "berlordscarving:titanium_big_slate"
   },
   "mold": {
     "count": 1,
@@ -10,6 +10,6 @@
   },
   "output": {
     "id": "bertieprogression:titanium_sheet",
-    "count": 1
+    "count": 8
   }
 }

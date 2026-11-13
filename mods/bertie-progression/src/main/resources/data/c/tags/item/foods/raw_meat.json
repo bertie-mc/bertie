@@ -1,11 +1,26 @@
 {
   "replace": true,
   "values": [
-    "#c:foods/raw_chicken",
-    "#c:foods/raw_pork",
-    "#c:foods/raw_beef",
-    "#c:foods/raw_mutton",
-    "#c:foods/raw_hoglin",
+    {
+      "id": "#c:foods/raw_chicken",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_pork",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_beef",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_mutton",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_hoglin",
+      "required": false
+    },
     {
       "id": "mynethersdelight:minced_strider",
       "required": false
@@ -18,7 +33,10 @@
       "id": "antarchy:raw_bug_meat",
       "required": false
     },
-    "#c:foods/raw_turtle",
+    {
+      "id": "#c:foods/raw_turtle",
+      "required": false
+    },
     {
       "id": "endersdelight:shulker_mollusk",
       "required": false
@@ -27,7 +45,10 @@
       "id": "endersdelight:shulker_filet",
       "required": false
     },
-    "#minersdelight:raw_insect_meat",
+    {
+      "id": "#minersdelight:raw_insect_meat",
+      "required": false
+    },
     {
       "id": "twilightforest:raw_meef",
       "required": false
@@ -52,6 +73,9 @@
       "id": "minecraft:mutton",
       "required": false
     },
-    "#c:foods/raw_meats"
+    {
+      "id": "#c:foods/raw_meats",
+      "required": false
+    }
   ]
 }

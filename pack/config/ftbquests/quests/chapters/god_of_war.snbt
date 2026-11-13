@@ -6083,36 +6083,6 @@
 			y: 11.0d
 		}
 		{
-			icon: {
-				id: "mythsandlegends:infernum_warplate_chestplate"
-			}
-			id: "7B000000000000E3"
-			tasks: [
-				{
-					id: "7B000000010000E3"
-					item: { count: 1, id: "mythsandlegends:infernum_warplate_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010100E3"
-					item: { count: 1, id: "mythsandlegends:infernum_warplate_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010200E3"
-					item: { count: 1, id: "mythsandlegends:infernum_warplate_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010300E3"
-					item: { count: 1, id: "mythsandlegends:infernum_warplate_boots" }
-					type: "item"
-				}
-			]
-			x: -34.0d
-			y: 17.0d
-		}
-		{
 			dependencies: ["7B000000000000C1"]
 			icon: {
 				id: "mythsandlegends:ironshade_chestplate"

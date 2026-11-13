@@ -1,18 +1,54 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
-    "#c:ores/tin",
-    "#c:ores/osmium",
-    "#c:ores/uranium",
-    "#c:ores/fluorite",
-    "#c:ores/lead",
-    "#pastel:ores",
-    "#c:ores/uraninite",
-    "#c:ores/uraninite_regular",
-    "#c:ores/uraninite_poor",
-    "#c:ores/uraninite_dense",
-    "#c:ores/coal",
-    "#c:ores/titanium",
+    {
+      "id": "#c:ores/tin",
+      "required": false
+    },
+    {
+      "id": "#c:ores/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/fluorite",
+      "required": false
+    },
+    {
+      "id": "#c:ores/lead",
+      "required": false
+    },
+    {
+      "id": "#pastel:ores",
+      "required": false
+    },
+    {
+      "id": "#c:ores/uraninite",
+      "required": false
+    },
+    {
+      "id": "#c:ores/uraninite_regular",
+      "required": false
+    },
+    {
+      "id": "#c:ores/uraninite_poor",
+      "required": false
+    },
+    {
+      "id": "#c:ores/uraninite_dense",
+      "required": false
+    },
+    {
+      "id": "#c:ores/coal",
+      "required": false
+    },
+    {
+      "id": "#c:ores/titanium",
+      "required": false
+    },
     {
       "id": "anvilcraft:deepslate_zinc_ore",
       "required": false
@@ -105,10 +141,22 @@
       "id": "deeperdarker:gloomslate_diamond_ore",
       "required": false
     },
-    "#c:ores/salt",
-    "#c:ores/arcane_crystal",
-    "#c:ores/runic",
-    "#c:ores/stellarite",
+    {
+      "id": "#c:ores/salt",
+      "required": false
+    },
+    {
+      "id": "#c:ores/arcane_crystal",
+      "required": false
+    },
+    {
+      "id": "#c:ores/runic",
+      "required": false
+    },
+    {
+      "id": "#c:ores/stellarite",
+      "required": false
+    },
     {
       "id": "hazennstuff:raw_zenalite",
       "required": false
@@ -129,7 +177,10 @@
       "id": "hazennstuff:rose_quartz",
       "required": false
     },
-    "#c:ores/mithril",
+    {
+      "id": "#c:ores/mithril",
+      "required": false
+    },
     {
       "id": "magitech:tourmaline_ore",
       "required": false
@@ -170,23 +221,74 @@
       "id": "malum:cthonic_gold_ore",
       "required": false
     },
-    "#c:ores/naquadah",
-    "#c:ores/desh",
-    "#c:ores/ice_shard",
-    "#c:ores/neptunium",
-    "#c:ores/plutonium",
-    "#c:ores/steel",
-    "#c:ores/copper",
-    "#c:ores/diamond",
-    "#c:ores/emerald",
-    "#c:ores/gold",
-    "#c:ores/iron",
-    "#c:ores/lapis",
-    "#c:ores/netherite_scrap",
-    "#c:ores/redstone",
-    "#c:ores/quartz",
+    {
+      "id": "#c:ores/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:ores/desh",
+      "required": false
+    },
+    {
+      "id": "#c:ores/ice_shard",
+      "required": false
+    },
+    {
+      "id": "#c:ores/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/plutonium",
+      "required": false
+    },
+    {
+      "id": "#c:ores/steel",
+      "required": false
+    },
+    {
+      "id": "#c:ores/copper",
+      "required": false
+    },
+    {
+      "id": "#c:ores/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:ores/emerald",
+      "required": false
+    },
+    {
+      "id": "#c:ores/gold",
+      "required": false
+    },
+    {
+      "id": "#c:ores/iron",
+      "required": false
+    },
+    {
+      "id": "#c:ores/lapis",
+      "required": false
+    },
+    {
+      "id": "#c:ores/netherite_scrap",
+      "required": false
+    },
+    {
+      "id": "#c:ores/redstone",
+      "required": false
+    },
+    {
+      "id": "#c:ores/quartz",
+      "required": false
+    },
     {
       "id": "#forge:ores",
+      "required": false
+    }
+  ],
+  "remove": [
+    {
+      "id": "#c:ores/ostrum",
       "required": false
     }
   ]

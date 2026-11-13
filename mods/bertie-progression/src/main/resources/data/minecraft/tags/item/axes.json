@@ -33,7 +33,10 @@
       "id": "cataclysm:black_steel_axe",
       "required": false
     },
-    "#pastel:axes",
+    {
+      "id": "#pastel:axes",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_axe",
       "required": false
@@ -66,8 +69,14 @@
       "id": "anvilcraft:ember_metal_axe",
       "required": false
     },
-    "#anvilcraft:tools/resonator",
-    "#anvilcraft:tools/heavy_halberd",
+    {
+      "id": "#anvilcraft:tools/resonator",
+      "required": false
+    },
+    {
+      "id": "#anvilcraft:tools/heavy_halberd",
+      "required": false
+    },
     {
       "id": "born_in_chaos_v1:sweet_axe",
       "required": false

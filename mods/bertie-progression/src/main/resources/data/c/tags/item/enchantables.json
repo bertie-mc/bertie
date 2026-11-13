@@ -9,14 +9,38 @@
       "id": "create:potato_cannon",
       "required": false
     },
-    "#create:pressurized_air_sources",
-    "#enigmaticlegacyplus:enchantable/eternal_binding",
-    "#hazennstuff:armors/hns_helmet",
-    "#hazennstuff:armors/hns_chestplate",
-    "#hazennstuff:armors/hns_leggings",
-    "#hazennstuff:armors/hns_boots",
-    "#hazentouvelib:enchanted_spellbook",
-    "#hazentouvelib:spellbooks/fire_spellbook",
+    {
+      "id": "#create:pressurized_air_sources",
+      "required": false
+    },
+    {
+      "id": "#enigmaticlegacyplus:enchantable/eternal_binding",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_helmet",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_chestplate",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_leggings",
+      "required": false
+    },
+    {
+      "id": "#hazennstuff:armors/hns_boots",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:enchanted_spellbook",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:spellbooks/fire_spellbook",
+      "required": false
+    },
     {
       "id": "hazennstuff:fireblossom_rapier",
       "required": false

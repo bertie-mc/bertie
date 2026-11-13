@@ -1,28 +1,16 @@
 {
-  "type": "anvilcraft:anvil_collision",
-  "anvil": {
-    "blocks": "#bertieprogression:collision_anvils/tier_2"
-  },
-  "consume": true,
-  "hitBlock": {
-    "blocks": "mekanism:quantum_entangloporter"
-  },
-  "speed": 64,
-  "transform_blocks": [
+  "neoforge:conditions": [
     {
-      "input": {
-        "blocks": "anvilcraft:space_overcompressor"
-      },
-      "max_count": 1,
-      "output": {
-        "block": "anvilcraft:space_overcompressor"
-      }
+      "type": "neoforge:false"
     }
   ],
-  "output_items": [
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
     {
-      "id": "refinedstorage:wireless_transmitter",
-      "count": 1
+      "item": "minecraft:stone"
     }
-  ]
+  ],
+  "result": {
+    "id": "minecraft:stone"
+  }
 }

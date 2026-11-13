@@ -1,20 +1,50 @@
 {
   "replace": true,
   "values": [
-    "#c:nuggets/neptunium",
-    "#c:nuggets/osmium",
-    "#c:nuggets/tin",
-    "#c:nuggets/lead",
-    "#c:nuggets/uranium",
-    "#c:nuggets/bronze",
-    "#c:nuggets/refined_glowstone",
-    "#c:nuggets/refined_obsidian",
-    "#c:nuggets/steel",
+    {
+      "id": "#c:nuggets/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/tin",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/lead",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/bronze",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/refined_glowstone",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/refined_obsidian",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/steel",
+      "required": false
+    },
     {
       "id": "slag:rose_gold_nugget",
       "required": false
     },
-    "#c:nuggets/titanium",
+    {
+      "id": "#c:nuggets/titanium",
+      "required": false
+    },
     {
       "id": "anvilcraft:royal_steel_nugget",
       "required": false
@@ -67,8 +97,14 @@
       "id": "anvilcraft:negative_matter_nugget",
       "required": false
     },
-    "#c:nuggets/gold",
-    "#c:nuggets/iron",
+    {
+      "id": "#c:nuggets/gold",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/iron",
+      "required": false
+    },
     {
       "id": "create:copper_nugget",
       "required": false
@@ -85,7 +121,10 @@
       "id": "enigmaticlegacyplus:etherium_nugget",
       "required": false
     },
-    "#c:nuggets/deorum",
+    {
+      "id": "#c:nuggets/deorum",
+      "required": false
+    },
     {
       "id": "hazennstuff:pyrium_nugget",
       "required": false
@@ -126,7 +165,10 @@
       "id": "malum:malignant_pewter_nugget",
       "required": false
     },
-    "#c:nuggets/naquadah",
+    {
+      "id": "#c:nuggets/naquadah",
+      "required": false
+    },
     {
       "id": "oritech:nickel_nugget",
       "required": false
@@ -135,9 +177,18 @@
       "id": "oritech:platinum_nugget",
       "required": false
     },
-    "#c:nuggets/heavy_metal",
-    "#c:nuggets/plutonium",
-    "#c:nuggets/copper",
+    {
+      "id": "#c:nuggets/heavy_metal",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/plutonium",
+      "required": false
+    },
+    {
+      "id": "#c:nuggets/copper",
+      "required": false
+    },
     {
       "id": "#forge:nuggets",
       "required": false

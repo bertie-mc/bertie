@@ -1,28 +1,97 @@
 {
   "replace": false,
   "values": [
-    "#c:shards/iron",
-    "#c:shards/copper",
-    "#c:shards/gold",
-    "#c:shards/uranium",
-    "#c:shards/osmium",
-    "#c:shards/tin",
-    "#c:shards/lead",
-    "#c:shards/naquadah",
-    "#c:shards/nickel",
-    "#c:shards/platinum",
-    "#c:shards/zinc",
-    "#c:shards/silver",
-    "#c:shards/titanium",
-    "#c:shards/tungsten",
-    "#c:shards/voiderite",
-    "#c:shards/desh",
-    "#c:shards/neptunium",
-    "#c:shards/tharsite",
-    "#c:shards/corronium",
-    "#c:shards/solerium",
-    "#c:shards/eezo",
-    "#c:shards/bloody",
-    "#c:shards/elvenite"
+    {
+      "id": "#c:shards/iron",
+      "required": false
+    },
+    {
+      "id": "#c:shards/copper",
+      "required": false
+    },
+    {
+      "id": "#c:shards/gold",
+      "required": false
+    },
+    {
+      "id": "#c:shards/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/tin",
+      "required": false
+    },
+    {
+      "id": "#c:shards/lead",
+      "required": false
+    },
+    {
+      "id": "#c:shards/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:shards/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:shards/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:shards/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:shards/silver",
+      "required": false
+    },
+    {
+      "id": "#c:shards/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:shards/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:shards/desh",
+      "required": false
+    },
+    {
+      "id": "#c:shards/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:shards/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:shards/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:shards/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:shards/elvenite",
+      "required": false
+    }
   ]
 }

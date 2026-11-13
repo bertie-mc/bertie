@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "stellaris:raw_neptunium"
+    {
+      "id": "stellaris:raw_neptunium",
+      "required": false
+    }
   ]
 }

@@ -13,14 +13,26 @@
       "id": "enigmaticlegacyplus:ichoroot",
       "required": false
     },
-    "#c:foods/asparagus",
-    "#c:foods/sweet_potato",
-    "#c:foods/chili_pepper",
+    {
+      "id": "#c:foods/asparagus",
+      "required": false
+    },
+    {
+      "id": "#c:foods/sweet_potato",
+      "required": false
+    },
+    {
+      "id": "#c:foods/chili_pepper",
+      "required": false
+    },
     {
       "id": "minersdelight:cave_carrot",
       "required": false
     },
-    "#c:crops/cucumber",
+    {
+      "id": "#c:crops/cucumber",
+      "required": false
+    },
     {
       "id": "minecraft:carrot",
       "required": false
@@ -37,6 +49,9 @@
       "id": "minecraft:beetroot",
       "required": false
     },
-    "#c:foods/vegetables"
+    {
+      "id": "#c:foods/vegetables",
+      "required": false
+    }
   ]
 }

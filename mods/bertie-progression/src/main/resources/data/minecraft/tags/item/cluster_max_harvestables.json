@@ -21,7 +21,10 @@
       "id": "mekanism:meka_tool",
       "required": false
     },
-    "#pastel:workstaffs",
+    {
+      "id": "#pastel:workstaffs",
+      "required": false
+    },
     {
       "id": "pastel:bedrock_pickaxe",
       "required": false
@@ -34,8 +37,14 @@
       "id": "anvilcraft:ember_metal_pickaxe",
       "required": false
     },
-    "#anvilcraft:tools/dragon_rod",
-    "#anvilcraft:tools/resonator",
+    {
+      "id": "#anvilcraft:tools/dragon_rod",
+      "required": false
+    },
+    {
+      "id": "#anvilcraft:tools/resonator",
+      "required": false
+    },
     {
       "id": "deeperdarker:warden_pickaxe",
       "required": false

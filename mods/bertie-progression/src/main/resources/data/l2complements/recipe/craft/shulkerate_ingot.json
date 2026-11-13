@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "DBD",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "D": {
+      "item": "oritech:duratium_ingot"
+    },
+    "B": {
+      "item": "l2complements:captured_shulker_bullet"
+    }
+  },
+  "result": {
+    "id": "l2complements:shulkerate_ingot",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

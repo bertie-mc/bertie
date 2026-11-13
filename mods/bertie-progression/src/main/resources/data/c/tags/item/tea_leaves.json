@@ -9,11 +9,29 @@
       "id": "youkaisfeasts:tea_leaves",
       "required": false
     },
-    "#c:tea_leaves/green",
-    "#c:tea_leaves/black",
-    "#c:tea_leaves/white",
-    "#c:tea_leaves/oolong",
-    "#c:tea_leaves/dark",
-    "#c:tea_leaves/yellow"
+    {
+      "id": "#c:tea_leaves/green",
+      "required": false
+    },
+    {
+      "id": "#c:tea_leaves/black",
+      "required": false
+    },
+    {
+      "id": "#c:tea_leaves/white",
+      "required": false
+    },
+    {
+      "id": "#c:tea_leaves/oolong",
+      "required": false
+    },
+    {
+      "id": "#c:tea_leaves/dark",
+      "required": false
+    },
+    {
+      "id": "#c:tea_leaves/yellow",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:stamping",
+  "ingredients": [
+    {
+      "items": "oritech:duratium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:duratium_sheet",
+      "count": 1
+    }
+  ]
+}

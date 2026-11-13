@@ -37,16 +37,46 @@
       "id": "crabbersdelight:pearl",
       "required": false
     },
-    "#c:ingots/iron",
-    "#c:ingots/copper",
-    "#c:ingots/gold",
-    "#c:ingots/netherite",
-    "#c:dusts/redstone",
-    "#c:gems/lapis",
-    "#c:gems/emerald",
-    "#c:gems/diamond",
-    "#c:gems/quartz",
-    "#c:gems/amethyst",
+    {
+      "id": "#c:ingots/iron",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/copper",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/gold",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/netherite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/redstone",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lapis",
+      "required": false
+    },
+    {
+      "id": "#c:gems/emerald",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quartz",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amethyst",
+      "required": false
+    },
     {
       "id": "l2complements:totemic_gold_ingot",
       "required": false

@@ -13,7 +13,10 @@
       "id": "cataclysm:black_steel_hoe",
       "required": false
     },
-    "#pastel:hoes",
+    {
+      "id": "#pastel:hoes",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_hoe",
       "required": false
@@ -42,7 +45,10 @@
       "id": "anvilcraft:ember_metal_hoe",
       "required": false
     },
-    "#anvilcraft:tools/resonator",
+    {
+      "id": "#anvilcraft:tools/resonator",
+      "required": false
+    },
     {
       "id": "magitech:scythe",
       "required": false

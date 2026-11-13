@@ -109,8 +109,14 @@
       "id": "aquaculture:tuna",
       "required": false
     },
-    "#c:foods/raw_cod",
-    "#c:foods/raw_salmon",
+    {
+      "id": "#c:foods/raw_cod",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_salmon",
+      "required": false
+    },
     {
       "id": "mynethersdelight:strider_slice",
       "required": false
@@ -123,14 +129,38 @@
       "id": "antarchy:cheep",
       "required": false
     },
-    "#c:foods/raw_bass",
-    "#c:foods/raw_carp",
-    "#c:foods/raw_catfish",
-    "#c:foods/raw_halibut",
-    "#c:foods/raw_herring",
-    "#c:foods/raw_piranha",
-    "#c:foods/raw_pollock",
-    "#c:foods/raw_tuna",
+    {
+      "id": "#c:foods/raw_bass",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_carp",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_catfish",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_halibut",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_herring",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_piranha",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_pollock",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_tuna",
+      "required": false
+    },
     {
       "id": "crabbersdelight:tropical_fish_slice",
       "required": false
@@ -159,6 +189,9 @@
       "id": "minecraft:pufferfish",
       "required": false
     },
-    "#c:foods/raw_fishes"
+    {
+      "id": "#c:foods/raw_fishes",
+      "required": false
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:shard_uranium"
+    {
+      "id": "mekanism:shard_uranium",
+      "required": false
+    }
   ]
 }

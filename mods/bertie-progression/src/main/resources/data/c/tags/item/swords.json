@@ -29,8 +29,14 @@
       "id": "antarchy:mantis_claw",
       "required": false
     },
-    "#simplymore:mimicry",
-    "#simplymore:weapon_types/all",
+    {
+      "id": "#simplymore:mimicry",
+      "required": false
+    },
+    {
+      "id": "#simplymore:weapon_types/all",
+      "required": false
+    },
     {
       "id": "simplyswords:netherite_rapier",
       "required": false

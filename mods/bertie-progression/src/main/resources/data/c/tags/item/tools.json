@@ -1,7 +1,10 @@
 {
   "replace": true,
   "values": [
-    "#c:tools/knife",
+    {
+      "id": "#c:tools/knife",
+      "required": false
+    },
     {
       "id": "anvilcraft:multitool",
       "required": false
@@ -10,7 +13,10 @@
       "id": "farmerspizzeria:rolling_pin",
       "required": false
     },
-    "#magitech:part_tool",
+    {
+      "id": "#magitech:part_tool",
+      "required": false
+    },
     {
       "id": "#simplyswords:adamantite",
       "required": false
@@ -112,19 +118,58 @@
     "#minecraft:pickaxes",
     "#minecraft:shovels",
     "#minecraft:swords",
-    "#c:tools/bow",
-    "#c:tools/brush",
-    "#c:tools/crossbow",
-    "#c:tools/fishing_rod",
-    "#c:tools/igniter",
-    "#c:tools/shear",
-    "#c:tools/shield",
-    "#c:tools/spear",
-    "#c:tools/mace",
-    "#c:tools/wrench",
-    "#c:tools/mining_tool",
-    "#c:tools/melee_weapon",
-    "#c:tools/ranged_weapon",
+    {
+      "id": "#c:tools/bow",
+      "required": false
+    },
+    {
+      "id": "#c:tools/brush",
+      "required": false
+    },
+    {
+      "id": "#c:tools/crossbow",
+      "required": false
+    },
+    {
+      "id": "#c:tools/fishing_rod",
+      "required": false
+    },
+    {
+      "id": "#c:tools/igniter",
+      "required": false
+    },
+    {
+      "id": "#c:tools/shear",
+      "required": false
+    },
+    {
+      "id": "#c:tools/shield",
+      "required": false
+    },
+    {
+      "id": "#c:tools/spear",
+      "required": false
+    },
+    {
+      "id": "#c:tools/mace",
+      "required": false
+    },
+    {
+      "id": "#c:tools/wrench",
+      "required": false
+    },
+    {
+      "id": "#c:tools/mining_tool",
+      "required": false
+    },
+    {
+      "id": "#c:tools/melee_weapon",
+      "required": false
+    },
+    {
+      "id": "#c:tools/ranged_weapon",
+      "required": false
+    },
     {
       "id": "#forge:tools",
       "required": false

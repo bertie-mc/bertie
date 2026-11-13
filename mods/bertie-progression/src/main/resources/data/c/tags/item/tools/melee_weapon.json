@@ -1,9 +1,18 @@
 {
   "replace": true,
   "values": [
-    "#pastel:swords",
-    "#pastel:axes",
-    "#pastel:bidents",
+    {
+      "id": "#pastel:swords",
+      "required": false
+    },
+    {
+      "id": "#pastel:axes",
+      "required": false
+    },
+    {
+      "id": "#pastel:bidents",
+      "required": false
+    },
     {
       "id": "antarchy:ultimate_sword",
       "required": false

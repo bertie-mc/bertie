@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "stellaris:raw_solerium"
+    {
+      "id": "stellaris:raw_solerium",
+      "required": false
+    }
   ]
 }

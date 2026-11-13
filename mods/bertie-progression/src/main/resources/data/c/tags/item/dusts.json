@@ -9,29 +9,98 @@
       "id": "cognition:forgotten_dust",
       "required": false
     },
-    "#c:dusts/iron",
-    "#c:dusts/gold",
-    "#c:dusts/osmium",
-    "#c:dusts/copper",
-    "#c:dusts/tin",
-    "#c:dusts/lead",
-    "#c:dusts/uranium",
-    "#c:dusts/bronze",
-    "#c:dusts/charcoal",
-    "#c:dusts/coal",
-    "#c:dusts/diamond",
-    "#c:dusts/emerald",
-    "#c:dusts/netherite",
-    "#c:dusts/lapis",
-    "#c:dusts/lithium",
-    "#c:dusts/obsidian",
-    "#c:dusts/quartz",
-    "#c:dusts/refined_obsidian",
-    "#c:dusts/salt",
-    "#c:dusts/steel",
-    "#c:dusts/sulfur",
-    "#c:dusts/wood",
-    "#c:dusts/fluorite",
+    {
+      "id": "#c:dusts/iron",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/gold",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/copper",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tin",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lead",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bronze",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/charcoal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/coal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/emerald",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/netherite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lapis",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/lithium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/obsidian",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/quartz",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/refined_obsidian",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/salt",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/steel",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/sulfur",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/wood",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/fluorite",
+      "required": false
+    },
     {
       "id": "pastel:ash_flakes",
       "required": false
@@ -44,7 +113,10 @@
       "id": "pastel:stardust",
       "required": false
     },
-    "#pastel:gemstone_powders",
+    {
+      "id": "#pastel:gemstone_powders",
+      "required": false
+    },
     {
       "id": "enigmaticlegacyplus:infernal_cinder",
       "required": false
@@ -53,12 +125,30 @@
       "id": "enigmaticlegacyplus:astral_dust",
       "required": false
     },
-    "#c:dusts/cinnamon",
-    "#c:dusts/arcane_crystal",
-    "#c:dusts/mundabitur",
-    "#c:dusts/corrupti",
-    "#c:dusts/naquadah",
-    "#c:dusts/radiance",
+    {
+      "id": "#c:dusts/cinnamon",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/arcane_crystal",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/mundabitur",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/corrupti",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/radiance",
+      "required": false
+    },
     {
       "id": "oritech:nickel_dust",
       "required": false
@@ -95,23 +185,77 @@
       "id": "oritech:plutonium_dust",
       "required": false
     },
-    "#c:dusts/glowstone",
-    "#c:dusts/redstone",
-    "#forge:dusts",
-    "#c:dusts/nickel",
-    "#c:dusts/platinum",
-    "#c:dusts/zinc",
-    "#c:dusts/silver",
-    "#c:dusts/titanium",
-    "#c:dusts/tungsten",
-    "#c:dusts/voiderite",
-    "#c:dusts/desh",
-    "#c:dusts/neptunium",
-    "#c:dusts/tharsite",
-    "#c:dusts/corronium",
-    "#c:dusts/solerium",
-    "#c:dusts/eezo",
-    "#c:dusts/bloody",
-    "#c:dusts/elvenite"
+    {
+      "id": "#c:dusts/glowstone",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/redstone",
+      "required": false
+    },
+    {
+      "id": "#forge:dusts",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/silver",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/desh",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/elvenite",
+      "required": false
+    }
   ]
 }

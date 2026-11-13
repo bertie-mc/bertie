@@ -161,8 +161,14 @@
       "id": "fantasy_armor:ornstein_boots",
       "required": false
     },
-    "#hazennstuff:armors/hns_boots",
-    "#hazentouvelib:armors/boots",
+    {
+      "id": "#hazennstuff:armors/hns_boots",
+      "required": false
+    },
+    {
+      "id": "#hazentouvelib:armors/boots",
+      "required": false
+    },
     {
       "id": "magic_of_color:bedrock_warlock_greaves",
       "required": false

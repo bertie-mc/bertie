@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:crystal_tin"
+    {
+      "id": "mekanism:crystal_tin",
+      "required": false
+    }
   ]
 }

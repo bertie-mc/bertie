@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:raw_platinum"
+    {
+      "id": "oritech:raw_platinum",
+      "required": false
+    }
   ]
 }

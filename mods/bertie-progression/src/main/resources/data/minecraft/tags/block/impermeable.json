@@ -1,24 +1,83 @@
 {
   "values": [
-    "#pastel:hummingstones",
-    "pastel:ender_glass",
-    "pastel:topaz_glass",
-    "pastel:amethyst_glass",
-    "pastel:citrine_glass",
-    "pastel:onyx_glass",
-    "pastel:moonstone_glass",
-    "pastel:radiant_glass",
-    "pastel:semi_permeable_glass",
-    "pastel:tinted_semi_permeable_glass",
-    "pastel:radiant_semi_permeable_glass",
-    "pastel:topaz_semi_permeable_glass",
-    "pastel:amethyst_semi_permeable_glass",
-    "pastel:citrine_semi_permeable_glass",
-    "pastel:onyx_semi_permeable_glass",
-    "pastel:moonstone_semi_permeable_glass",
-    "pastel:preservation_glass",
-    "pastel:tinted_preservation_glass",
-    "pastel:invisible_wall"
+    {
+      "id": "#pastel:hummingstones",
+      "required": false
+    },
+    {
+      "id": "pastel:ender_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:preservation_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:tinted_preservation_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:invisible_wall",
+      "required": false
+    }
   ],
-  "replace": true
+  "replace": false,
+  "remove": [
+    {
+      "id": "pastel:semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:tinted_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:radiant_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:topaz_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:amethyst_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:citrine_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:onyx_semi_permeable_glass",
+      "required": false
+    },
+    {
+      "id": "pastel:moonstone_semi_permeable_glass",
+      "required": false
+    }
+  ]
 }

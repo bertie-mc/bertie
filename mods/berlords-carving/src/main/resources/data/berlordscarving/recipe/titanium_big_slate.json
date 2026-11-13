@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    }
+  ],
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "berlordscarving:titanium_slate"
+    }
+  },
+  "result": {
+    "id": "berlordscarving:titanium_big_slate",
+    "count": 1
+  }
+}

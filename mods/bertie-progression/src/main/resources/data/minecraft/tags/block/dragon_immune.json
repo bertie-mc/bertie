@@ -1,40 +1,145 @@
 {
   "values": [
-    "betterend:azure_jadestone",
-    "betterend:azure_jadestone_slab",
-    "betterend:azure_jadestone_stairs",
-    "betterend:azure_jadestone_wall",
-    "betterend:eternal_pedestal",
-    "betterend:flavolite",
-    "betterend:flavolite_runed",
-    "betterend:flavolite_runed_eternal",
-    "betterend:flavolite_slab",
-    "betterend:flavolite_stairs",
-    "betterend:flavolite_wall",
-    "betterend:mossy_obsidian",
-    "betterend:sandy_jadestone",
-    "betterend:sandy_jadestone_slab",
-    "betterend:sandy_jadestone_stairs",
-    "betterend:sandy_jadestone_wall",
-    "betterend:sulphuric_rock",
-    "betterend:sulphuric_rock_slab",
-    "betterend:sulphuric_rock_stairs",
-    "betterend:sulphuric_rock_wall",
-    "betterend:terminite_bars",
-    "betterend:thallasium_bars",
-    "betterend:thallasium_ore",
-    "betterend:umbralith",
-    "betterend:umbralith_slab",
-    "betterend:umbralith_stairs",
-    "betterend:umbralith_wall",
-    "betterend:violecite",
-    "betterend:violecite_slab",
-    "betterend:violecite_stairs",
-    "betterend:violecite_wall",
-    "betterend:virid_jadestone",
-    "betterend:virid_jadestone_slab",
-    "betterend:virid_jadestone_stairs",
-    "betterend:virid_jadestone_wall"
+    {
+      "id": "betterend:azure_jadestone",
+      "required": false
+    },
+    {
+      "id": "betterend:azure_jadestone_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:azure_jadestone_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:azure_jadestone_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:eternal_pedestal",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite_runed",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite_runed_eternal",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:flavolite_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:mossy_obsidian",
+      "required": false
+    },
+    {
+      "id": "betterend:sandy_jadestone",
+      "required": false
+    },
+    {
+      "id": "betterend:sandy_jadestone_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:sandy_jadestone_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:sandy_jadestone_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:sulphuric_rock",
+      "required": false
+    },
+    {
+      "id": "betterend:sulphuric_rock_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:sulphuric_rock_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:sulphuric_rock_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:terminite_bars",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_bars",
+      "required": false
+    },
+    {
+      "id": "betterend:thallasium_ore",
+      "required": false
+    },
+    {
+      "id": "betterend:umbralith",
+      "required": false
+    },
+    {
+      "id": "betterend:umbralith_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:umbralith_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:umbralith_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:violecite",
+      "required": false
+    },
+    {
+      "id": "betterend:violecite_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:violecite_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:violecite_wall",
+      "required": false
+    },
+    {
+      "id": "betterend:virid_jadestone",
+      "required": false
+    },
+    {
+      "id": "betterend:virid_jadestone_slab",
+      "required": false
+    },
+    {
+      "id": "betterend:virid_jadestone_stairs",
+      "required": false
+    },
+    {
+      "id": "betterend:virid_jadestone_wall",
+      "required": false
+    }
   ],
   "replace": true
 }

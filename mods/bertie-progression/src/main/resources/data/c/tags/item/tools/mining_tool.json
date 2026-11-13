@@ -9,7 +9,10 @@
       "id": "mekanism:meka_tool",
       "required": false
     },
-    "#pastel:pickaxes",
+    {
+      "id": "#pastel:pickaxes",
+      "required": false
+    },
     {
       "id": "anvilcraft:royal_steel_pickaxe",
       "required": false

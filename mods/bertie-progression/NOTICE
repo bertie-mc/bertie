@@ -196,6 +196,8 @@ assets/anvilcraft/models/block/negative_matter_block.json is an independently
 authored functional cuboid definition matching the approved inside-facing model
 configuration tested with AnvilCraft 1.5.3. It references the original AnvilCraft
 Negative Matter and outline textures at runtime; no native texture PNG is bundled.
+The connected baked-model renderer also references these textures at runtime and
+does not redistribute them.
 Those textures remain the artwork of XeKr/AnvilCraft and are not covered by this
 project's Unlicense. AnvilCraft's ASSETS_LICENSE reserves rights to its assets.
 Reference: https://github.com/Anvil-Dev/AnvilCraft/tree/1.5.3/src/main/resources/assets/anvilcraft

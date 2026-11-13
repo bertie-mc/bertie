@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:clump_tin"
+    {
+      "id": "mekanism:clump_tin",
+      "required": false
+    }
   ]
 }

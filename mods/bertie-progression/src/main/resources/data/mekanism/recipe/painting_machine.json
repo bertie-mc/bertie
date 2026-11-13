@@ -1,0 +1,59 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "SSSSS",
+    "SCBCS",
+    "SRKRS",
+    "DYMYD",
+    "DDDDD"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "B": {
+      "item": "anvilcraft:circuit_board"
+    },
+    "C": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "K": {
+      "item": "mekanism:steel_casing"
+    },
+    "M": {
+      "item": "oritech:motor"
+    },
+    "R": {
+      "item": "mekanism:hdpe_rod"
+    },
+    "Y": {
+      "item": "mekanism:dye_base"
+    }
+  },
+  "result": {
+    "id": "mekanism:painting_machine",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

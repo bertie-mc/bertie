@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:nickel_gem"
+    {
+      "id": "oritech:nickel_gem",
+      "required": false
+    }
   ]
 }

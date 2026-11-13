@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "armageddon_mod:bloody_ore", "required": false },
+    { "id": "armageddon_mod:voiderite_ore", "required": false },
+    { "id": "armageddon_mod:elvenite_ore", "required": false }
+  ]
+}

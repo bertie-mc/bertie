@@ -17,7 +17,10 @@
       "id": "mekanism:mekasuit_boots",
       "required": false
     },
-    "#pastel:bedrock_armor",
+    {
+      "id": "#pastel:bedrock_armor",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_helmet",
       "required": false

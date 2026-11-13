@@ -449,6 +449,11 @@ class ResourceDataTest {
                     continue;
                 }
                 Set<String> strings = new HashSet<>();
+                // Tag subtraction names withdrawn aliases; those are not enabled ingredient references.
+                if (path.toString().replace('\\', '/').contains("/tags/") && parsed.isJsonObject()) {
+                    parsed = parsed.deepCopy();
+                    parsed.getAsJsonObject().remove("remove");
+                }
                 if (parsed.isJsonObject()
                         && parsed.getAsJsonObject().has("type")
                         && "magitech:tool_material"

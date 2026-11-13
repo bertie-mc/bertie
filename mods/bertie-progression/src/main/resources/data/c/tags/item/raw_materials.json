@@ -1,12 +1,30 @@
 {
   "replace": true,
   "values": [
-    "#c:raw_materials/osmium",
-    "#c:raw_materials/tin",
-    "#c:raw_materials/lead",
-    "#c:raw_materials/uranium",
-    "#c:raw_materials/uraninite",
-    "#c:raw_materials/titanium",
+    {
+      "id": "#c:raw_materials/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/tin",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/lead",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/uraninite",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/titanium",
+      "required": false
+    },
     {
       "id": "anvilcraft:raw_tin",
       "required": false
@@ -51,7 +69,10 @@
       "id": "hazennstuff:crude_metal",
       "required": false
     },
-    "#c:raw_materials/mithril",
+    {
+      "id": "#c:raw_materials/mithril",
+      "required": false
+    },
     {
       "id": "magitech:raw_zinc",
       "required": false
@@ -72,7 +93,10 @@
       "id": "malum:cthonic_gold_fragment",
       "required": false
     },
-    "#c:raw_materials/naquadah",
+    {
+      "id": "#c:raw_materials/naquadah",
+      "required": false
+    },
     {
       "id": "oritech:raw_nickel",
       "required": false
@@ -81,29 +105,89 @@
       "id": "oritech:raw_platinum",
       "required": false
     },
-    "#c:raw_materials/steel",
-    "#c:raw_materials/desh",
-    "#c:raw_materials/neptunium",
-    "#c:raw_materials/ironwood",
-    "#c:raw_materials/knightmetal",
-    "#c:raw_materials/copper",
-    "#c:raw_materials/gold",
-    "#c:raw_materials/iron",
+    {
+      "id": "#c:raw_materials/steel",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/desh",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/ironwood",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/knightmetal",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/copper",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/gold",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/iron",
+      "required": false
+    },
     {
       "id": "#forge:raw_materials",
       "required": false
     },
-    "#c:raw_materials/voiderite",
-    "#c:raw_materials/bloody",
-    "#c:raw_materials/nickel",
-    "#c:raw_materials/platinum",
-    "#c:raw_materials/zinc",
-    "#c:raw_materials/silver",
-    "#c:raw_materials/tungsten",
-    "#c:raw_materials/tharsite",
-    "#c:raw_materials/corronium",
-    "#c:raw_materials/solerium",
-    "#c:raw_materials/eezo",
-    "#c:raw_materials/elvenite"
+    {
+      "id": "#c:raw_materials/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/silver",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:raw_materials/elvenite",
+      "required": false
+    }
   ]
 }

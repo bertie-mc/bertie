@@ -1,8 +1,14 @@
 {
   "replace": true,
   "values": [
-    "#apothic_enchanting:tomes",
-    "#pastel:cookbooks",
+    {
+      "id": "#apothic_enchanting:tomes",
+      "required": false
+    },
+    {
+      "id": "#pastel:cookbooks",
+      "required": false
+    },
     {
       "id": "pastel:gilded_book",
       "required": false
@@ -79,7 +85,10 @@
       "id": "exposure:signed_album",
       "required": false
     },
-    "#irons_spellbooks:add_to_lectern_and_bookshelf",
+    {
+      "id": "#irons_spellbooks:add_to_lectern_and_bookshelf",
+      "required": false
+    },
     {
       "id": "irons_spellbooks:chained_book",
       "required": false

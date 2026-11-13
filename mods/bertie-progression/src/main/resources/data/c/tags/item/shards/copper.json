@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:shard_copper"
+    {
+      "id": "mekanism:shard_copper",
+      "required": false
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "mekanism:crystal_uranium"
+    {
+      "id": "mekanism:crystal_uranium",
+      "required": false
+    }
   ]
 }

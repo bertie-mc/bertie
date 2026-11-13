@@ -32,7 +32,10 @@
       "id": "minecraft:turtle_helmet",
       "required": false
     },
-    "#immersive_armors:armor",
+    {
+      "id": "#immersive_armors:armor",
+      "required": false
+    },
     "#minecraft:head_armor"
   ]
 }

@@ -5,7 +5,10 @@
       "id": "cognition:cognitive_crystal",
       "required": false
     },
-    "#c:gems/fluorite",
+    {
+      "id": "#c:gems/fluorite",
+      "required": false
+    },
     {
       "id": "powah:crystal_blazing",
       "required": false
@@ -46,8 +49,14 @@
       "id": "enigmaticlegacyplus:sacred_crystal",
       "required": false
     },
-    "#c:gems/arcane_crystal",
-    "#c:gems/corrupted_arcane_crystal",
+    {
+      "id": "#c:gems/arcane_crystal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/corrupted_arcane_crystal",
+      "required": false
+    },
     {
       "id": "hazennstuff:solar_core",
       "required": false
@@ -56,11 +65,26 @@
       "id": "hazennstuff:rose_quartz",
       "required": false
     },
-    "#c:gems/tourmaline",
-    "#c:gems/mana_charged_fluorite",
-    "#c:gems/citrine",
-    "#c:gems/redstone_crystal",
-    "#c:gems/sulfur",
+    {
+      "id": "#c:gems/tourmaline",
+      "required": false
+    },
+    {
+      "id": "#c:gems/mana_charged_fluorite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/citrine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/redstone_crystal",
+      "required": false
+    },
+    {
+      "id": "#c:gems/sulfur",
+      "required": false
+    },
     {
       "id": "malum:refined_soulstone",
       "required": false
@@ -77,39 +101,129 @@
       "id": "oritech:fluxite",
       "required": false
     },
-    "#c:gems/carminite",
-    "#c:gems/amethyst",
-    "#c:gems/diamond",
-    "#c:gems/emerald",
-    "#c:gems/lapis",
-    "#c:gems/prismarine",
-    "#c:gems/quartz",
+    {
+      "id": "#c:gems/carminite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/amethyst",
+      "required": false
+    },
+    {
+      "id": "#c:gems/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:gems/emerald",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lapis",
+      "required": false
+    },
+    {
+      "id": "#c:gems/prismarine",
+      "required": false
+    },
+    {
+      "id": "#c:gems/quartz",
+      "required": false
+    },
     {
       "id": "#forge:gems",
       "required": false
     },
-    "#c:gems/iron",
-    "#c:gems/copper",
-    "#c:gems/gold",
-    "#c:gems/uranium",
-    "#c:gems/osmium",
-    "#c:gems/tin",
-    "#c:gems/lead",
-    "#c:gems/naquadah",
-    "#c:gems/nickel",
-    "#c:gems/platinum",
-    "#c:gems/zinc",
-    "#c:gems/silver",
-    "#c:gems/titanium",
-    "#c:gems/tungsten",
-    "#c:gems/voiderite",
-    "#c:gems/desh",
-    "#c:gems/neptunium",
-    "#c:gems/tharsite",
-    "#c:gems/corronium",
-    "#c:gems/solerium",
-    "#c:gems/eezo",
-    "#c:gems/bloody",
-    "#c:gems/elvenite"
+    {
+      "id": "#c:gems/iron",
+      "required": false
+    },
+    {
+      "id": "#c:gems/copper",
+      "required": false
+    },
+    {
+      "id": "#c:gems/gold",
+      "required": false
+    },
+    {
+      "id": "#c:gems/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tin",
+      "required": false
+    },
+    {
+      "id": "#c:gems/lead",
+      "required": false
+    },
+    {
+      "id": "#c:gems/naquadah",
+      "required": false
+    },
+    {
+      "id": "#c:gems/nickel",
+      "required": false
+    },
+    {
+      "id": "#c:gems/platinum",
+      "required": false
+    },
+    {
+      "id": "#c:gems/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:gems/silver",
+      "required": false
+    },
+    {
+      "id": "#c:gems/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tungsten",
+      "required": false
+    },
+    {
+      "id": "#c:gems/voiderite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/desh",
+      "required": false
+    },
+    {
+      "id": "#c:gems/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/tharsite",
+      "required": false
+    },
+    {
+      "id": "#c:gems/corronium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/solerium",
+      "required": false
+    },
+    {
+      "id": "#c:gems/eezo",
+      "required": false
+    },
+    {
+      "id": "#c:gems/bloody",
+      "required": false
+    },
+    {
+      "id": "#c:gems/elvenite",
+      "required": false
+    }
   ]
 }

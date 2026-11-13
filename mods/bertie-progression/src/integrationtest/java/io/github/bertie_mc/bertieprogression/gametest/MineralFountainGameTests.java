@@ -1,11 +1,9 @@
 package io.github.bertie_mc.bertieprogression.gametest;
 
-import com.mojang.authlib.GameProfile;
 import io.github.bertie_mc.bertieprogression.fountain.FountainOrePool;
 import io.github.bertie_mc.bertieprogression.fountain.MineralFountainRules;
 import io.github.bertie_mc.bertieprogression.fountain.SturdyDeepslateRules;
 import java.util.List;
-import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.gametest.framework.GameTest;
@@ -20,7 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.neoforge.common.Tags;
-import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 
@@ -92,11 +89,19 @@ public final class MineralFountainGameTests {
         var level = helper.getLevel();
         BlockPos pos = helper.absolutePos(new BlockPos(2, 2, 2));
         var sturdy = BuiltInRegistries.BLOCK.get(SturdyDeepslateRules.ID);
-        var player = FakePlayerFactory.get(
-                level, new GameProfile(UUID.fromString("684d3db8-81dd-4de3-b38b-57fa538f2c4d"), "fountain_miner"));
+        var player = ArmageddonOreGameTests.player(helper);
         player.setPos(pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5);
         player.setOnGround(true);
         player.removeAllEffects();
+        for (String name : List.of("the_diamond_keeper", "the_netherite_keeper")) {
+            var keeper = level.getServer().getAdvancements().get(ResourceLocation.parse("armageddon_mod:" + name));
+            if (keeper != null) {
+                keeper.value()
+                        .criteria()
+                        .keySet()
+                        .forEach(criterion -> player.getAdvancements().award(keeper, criterion));
+            }
+        }
         player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.NETHERITE_PICKAXE));
         float unbuffed = sturdy.defaultBlockState().getDestroyProgress(player, level, pos);
         player.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 100, 1));
@@ -111,7 +116,8 @@ public final class MineralFountainGameTests {
             level.getEntitiesOfClass(ItemEntity.class, new AABB(pos).inflate(3)).forEach(ItemEntity::discard);
             level.setBlockAndUpdate(pos, sturdy.defaultBlockState());
             player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(tool));
-            helper.assertTrue(player.gameMode.destroyBlock(pos), "the survival mining path must break the block");
+            helper.assertTrue(
+                    player.gameMode.destroyBlock(pos), "the survival mining path must break the block with " + tool);
             boolean dropped = level.getEntitiesOfClass(ItemEntity.class, new AABB(pos).inflate(3)).stream()
                     .anyMatch(item -> item.getItem().is(sturdy.asItem()));
             helper.assertTrue(

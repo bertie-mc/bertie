@@ -41,7 +41,10 @@
       "id": "cataclysm:black_steel_pickaxe",
       "required": false
     },
-    "#pastel:pickaxes",
+    {
+      "id": "#pastel:pickaxes",
+      "required": false
+    },
     {
       "id": "avaritia:infinity_pickaxe",
       "required": false
@@ -70,7 +73,10 @@
       "id": "anvilcraft:ember_metal_pickaxe",
       "required": false
     },
-    "#anvilcraft:tools/resonator",
+    {
+      "id": "#anvilcraft:tools/resonator",
+      "required": false
+    },
     {
       "id": "deeperdarker:warden_pickaxe",
       "required": false

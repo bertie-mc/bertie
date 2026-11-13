@@ -8,7 +8,6 @@
     {
       "id": "oritech:iron_clump",
       "required": false
-    },
-    "mekanism:clump_iron"
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oritech:nickel_dust"
+    {
+      "id": "oritech:nickel_dust",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "item": "bertieprogression:advanced_computing_engine_stage_3"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "oritech:silicon_wafer"
+    }
+  ],
+  "results": [
+    {
+      "id": "oritech:advanced_computing_engine",
+      "count": 1
+    }
+  ],
+  "time": 5,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

@@ -89,7 +89,10 @@
       "id": "malum:azure_runewood_sapling",
       "required": false
     },
-    "#pastel:colored_saplings",
+    {
+      "id": "#pastel:colored_saplings",
+      "required": false
+    },
     {
       "id": "pastel:weeping_gala_sprig",
       "required": false

@@ -9,14 +9,38 @@
       "id": "cognition:cognitive_alloy",
       "required": false
     },
-    "#c:ingots/osmium",
-    "#c:ingots/tin",
-    "#c:ingots/lead",
-    "#c:ingots/uranium",
-    "#c:ingots/bronze",
-    "#c:ingots/refined_glowstone",
-    "#c:ingots/refined_obsidian",
-    "#c:ingots/steel",
+    {
+      "id": "#c:ingots/osmium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/tin",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/lead",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/bronze",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/refined_glowstone",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/refined_obsidian",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/steel",
+      "required": false
+    },
     {
       "id": "powah:steel_energized",
       "required": false
@@ -29,7 +53,10 @@
       "id": "slag:deep_alloy",
       "required": false
     },
-    "#c:ingots/titanium",
+    {
+      "id": "#c:ingots/titanium",
+      "required": false
+    },
     {
       "id": "anvilcraft:magnet_ingot",
       "required": false
@@ -90,7 +117,10 @@
       "id": "anvilcraft:charged_neutronium_ingot",
       "required": false
     },
-    "#create:create_ingots",
+    {
+      "id": "#create:create_ingots",
+      "required": false
+    },
     {
       "id": "enigmaticlegacyplus:etherium_ingot",
       "required": false
@@ -99,8 +129,14 @@
       "id": "enigmaticlegacyplus:evil_ingot",
       "required": false
     },
-    "#c:ingots/deorum",
-    "#c:ingots/obsidiansteel",
+    {
+      "id": "#c:ingots/deorum",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/obsidiansteel",
+      "required": false
+    },
     {
       "id": "hazennstuff:zenalite_ingot",
       "required": false
@@ -145,8 +181,14 @@
       "id": "iceandfire:ghost_ingot",
       "required": false
     },
-    "#c:ingots/mithril",
-    "#c:ingots/pyrium",
+    {
+      "id": "#c:ingots/mithril",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/pyrium",
+      "required": false
+    },
     {
       "id": "irons_spellbooks:arcane_ingot",
       "required": false
@@ -191,7 +233,10 @@
       "id": "malum:malignant_pewter_ingot",
       "required": false
     },
-    "#c:ingots/naquadah",
+    {
+      "id": "#c:ingots/naquadah",
+      "required": false
+    },
     {
       "id": "oritech:nickel_ingot",
       "required": false
@@ -232,18 +277,54 @@
       "id": "refinedstorage:quartz_enriched_copper",
       "required": false
     },
-    "#c:ingots/desh",
-    "#c:ingots/heavy_metal",
-    "#c:ingots/neptunium",
-    "#c:ingots/plutonium",
-    "#c:ingots/ironwood",
-    "#c:ingots/fiery",
-    "#c:ingots/knightmetal",
-    "#c:ingots/steeleaf",
-    "#c:ingots/copper",
-    "#c:ingots/gold",
-    "#c:ingots/iron",
-    "#c:ingots/netherite",
+    {
+      "id": "#c:ingots/desh",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/heavy_metal",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/neptunium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/plutonium",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/ironwood",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/fiery",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/knightmetal",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/steeleaf",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/copper",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/gold",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/iron",
+      "required": false
+    },
+    {
+      "id": "#c:ingots/netherite",
+      "required": false
+    },
     {
       "id": "#forge:ingots",
       "required": false

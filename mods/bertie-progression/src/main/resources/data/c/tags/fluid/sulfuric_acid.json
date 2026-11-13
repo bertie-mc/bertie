@@ -1,6 +1,9 @@
 {
   "replace": true,
   "values": [
-    "oritech:still_sulfuric_acid"
+    {
+      "id": "oritech:still_sulfuric_acid",
+      "required": false
+    }
   ]
 }
