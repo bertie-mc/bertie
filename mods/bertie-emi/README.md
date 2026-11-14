@@ -24,15 +24,17 @@ AnvilCraft's magnet guide reads the `bertieprogression:lightning_magnet_inputs` 
 when present, so its lightning instructions follow the pack's configured material.
 Without that tag, it describes AnvilCraft's native iron-block input.
 
-The Beyond's in-world mechanics have five schematic categories: metalworking,
-bonfires, cultivation, living creatures and devices. These show placed block states,
+The Beyond's in-world mechanics have four schematic categories: metalworking,
+bonfires, living creatures and devices. These show placed block states,
 creature previews and interaction arrows, with details on hover. Casting includes the
 full 3×3 regenerating metal bed and marks its empty-hand interaction target. Quenching
 shows variable yields and the optional sheet drop. The guides also cover weather-dependent
-flames, Remembrance offerings, Enadrake growth, Trinket commands, photography and projection,
+flames, Abyssal Shroud offerings, Lantern brushing, Enadrake growth, Trinket commands, photography and projection,
 polar signals, vents, mirrors, magnets, stalk bridges and Refuge construction.
 These interactions are indexed by ingredients and results but do not enter EMI's
 inventory crafting tree. Ordinary Minecraft recipes remain in their native categories.
+Bedazzled End Stone's loose Pearl Beads appear in Advanced Loot Info's standard block
+loot category, including their count range and the requirement to mine without Silk Touch.
 
 ## Building
 `gradle :mods:bertie-emi:assemble` builds the JAR without running tests. Every integration dependency

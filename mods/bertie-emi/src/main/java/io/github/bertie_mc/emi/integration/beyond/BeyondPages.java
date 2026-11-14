@@ -27,7 +27,6 @@ final class BeyondPages {
     enum Group {
         METAL("Metalworking", "brittle_metal"),
         BONFIRE("Bonfires", "bonfire"),
-        GROWTH("Cultivation", "obiroot"),
         CREATURES("Living Creatures", "ocarina"),
         DEVICES("Devices", "prismograph");
 
@@ -226,70 +225,6 @@ final class BeyondPages {
                         "A trail points to a nearby opposite-state Bonfire. Structure-search particles only indicate that one is nearby.")
                 .build());
 
-        pages.add(page("obiroot_sprout", Group.GROWTH, "Grow hanging Obiroot")
-                .block(
-                        "obiroot",
-                        Role.CATALYST,
-                        43,
-                        25,
-                        "Obiroot",
-                        "Rain can grow an Obiroot Sprout into the air directly beneath this block.")
-                .arrow(52, 47, 52, 61)
-                .block(
-                        "obiroot_sprout",
-                        Role.OUTPUT,
-                        43,
-                        68,
-                        "Air below",
-                        "Leave the space below Obiroot empty. Growth is random, with a higher chance during thunder.")
-                .caption(
-                        "Rain / thunder",
-                        104,
-                        49,
-                        "Per random tick: 2% during rain, 5% during thunder, and no growth in clear weather.")
-                .build());
-        for (String base : List.of("nacre", "rich_nacre", "pale_nacre")) {
-            String raked = base.equals("nacre") ? "raked_nacre" : base.replace("_nacre", "_raked_nacre");
-            pages.add(page("rake_" + base, Group.GROWTH, "Rake Nacre")
-                    .tag(
-                            "minecraft:hoes",
-                            Role.CATALYST,
-                            32,
-                            24,
-                            "Right-click",
-                            "Use any hoe. Its durability decreases by one.")
-                    .arrow(41, 46, 41, 61)
-                    .block(base, Role.INPUT, 32, 68, "", "Aim at a different edge to change the raked pattern.")
-                    .arrow(57, 77, 116, 77)
-                    .block(
-                            raked,
-                            Role.OUTPUT,
-                            128,
-                            68,
-                            "",
-                            "The hit position and facing direction determine the raked design.")
-                    .build());
-        }
-        pages.add(page("bedazzled_end_stone", Group.GROWTH, "Collect loose Pearl Beads")
-                .item(
-                        "minecraft:iron_pickaxe",
-                        Role.CATALYST,
-                        25,
-                        24,
-                        "No Silk Touch",
-                        "Breaking without Silk Touch releases 1-4 Pearl Bead projectiles. Pick them up by interacting with them.")
-                .arrow(34, 46, 34, 61)
-                .block(
-                        "bedazzled_end_stone",
-                        Role.INPUT,
-                        25,
-                        68,
-                        "Break",
-                        "Silk Touch suppresses the extra loose pearls.")
-                .arrow(51, 77, 118, 77)
-                .item("pearl_bead", Role.OUTPUT, 128, 68, "1-4 loose", "Right-click a loose Pearl Bead to collect it.")
-                .build());
-
         pages.add(page("nomad_blessing", Group.CREATURES, "Give a Nomad a Remembrance")
                 .tag(
                         "the_beyond:remembrances",
@@ -302,6 +237,69 @@ final class BeyondPages {
                 .entity("abyssal_nomad", 22, 69, "Nomad", "The offered Remembrance is consumed.")
                 .arrow(48, 78, 111, 78)
                 .caption("5:00 blessing", 96, 65, "Grants Nomad's Blessing for 6,000 ticks (five minutes).")
+                .build());
+        pages.add(page("abyssal_shroud", Group.CREATURES, "Obtain Abyssal Shroud")
+                .block(
+                        "memor_faucet",
+                        Role.CATALYST,
+                        30,
+                        24,
+                        "Faucet",
+                        "Use an uncharged Memor Faucet with Abyssal Nomads nearby.")
+                .arrow(39, 46, 39, 62)
+                .tag(
+                        "the_beyond:remembrances",
+                        5,
+                        Role.INPUT,
+                        30,
+                        69,
+                        "Drop below",
+                        "Drop five Remembrances beneath the faucet. They are absorbed one at a time.")
+                .arrow(55, 78, 89, 78)
+                .entity(
+                        "abyssal_nomad",
+                        94,
+                        69,
+                        "Nomads",
+                        "Completing the fifth offering makes Nomads within 32 blocks release Abyssal Shroud after their prayer animation.")
+                .arrow(118, 78, 143, 78)
+                .item(
+                        "abyssal_shroud",
+                        2,
+                        Role.OUTPUT,
+                        151,
+                        69,
+                        "2-3 each",
+                        "Each participating Nomad releases 2-3 Abyssal Shroud. Collect the floating drops.")
+                .caption(
+                        "Complete all five offerings",
+                        10,
+                        109,
+                        "The reward comes from the nearby Nomads at full faucet charge, rather than from giving one Remembrance directly to a Nomad.")
+                .build());
+        pages.add(page("lantern_shed", Group.CREATURES, "Brush a wild Lantern")
+                .item(
+                        "minecraft:brush",
+                        Role.CATALYST,
+                        29,
+                        25,
+                        "Brush",
+                        "Use a Brush on an untrusting Lantern. This uses 16 Brush durability.")
+                .arrow(38, 47, 38, 62)
+                .entity(
+                        "lantern",
+                        29,
+                        69,
+                        "Wild Lantern",
+                        "Do not befriend this Lantern with Soul Torches first: trusting Lanterns give Ectoplasm when brushed instead.")
+                .arrow(55, 78, 116, 78)
+                .item(
+                        "lantern_shed",
+                        Role.OUTPUT,
+                        129,
+                        69,
+                        "1-4",
+                        "Gives 1 to size+1 Lantern Shed, then the wild Lantern disappears. Larger Lanterns can also shed when splitting during a Bonfire ritual.")
                 .build());
         pages.add(page("memor_faucet", Group.CREATURES, "Offer Remembrances beneath a faucet")
                 .block(
@@ -409,30 +407,6 @@ final class BeyondPages {
                         103,
                         "The selected mode is displayed by the Ocarina's overlay. The maximum number of linked Trinkets follows the mod configuration.")
                 .build());
-        pages.add(page("auroracite", Group.CREATURES, "Walk on Auroracite")
-                .item(
-                        "pathfinder_boots",
-                        Role.CATALYST,
-                        23,
-                        24,
-                        "Wear",
-                        "Equip Pathfinder Boots, or obtain Nomad's Blessing, to stand on Auroracite.")
-                .arrow(32, 46, 32, 62)
-                .block(
-                        "auroracite",
-                        Role.CATALYST,
-                        23,
-                        69,
-                        "Walk",
-                        "Approach Auroracite from above while wearing the boots or carrying Nomad's Blessing.")
-                .arrow(49, 78, 116, 78)
-                .caption(
-                        "Solid footing",
-                        101,
-                        64,
-                        "Holding Ectoplasm or Auroracite allows targeting this block; walking on it separately requires the boots or blessing.")
-                .build());
-
         pages.add(page("prismograph", Group.DEVICES, "Take a Snapshot")
                 .tag(
                         "the_beyond:prismograph_film",
@@ -752,6 +726,11 @@ final class BeyondPages {
             return node(Kind.ITEM, id, role, x, y, label, hint, Map.of());
         }
 
+        Builder item(String id, int amount, Role role, int x, int y, String label, String hint) {
+            nodes.add(new Node(Kind.ITEM, qualify(id), amount, 1, role, x, y, label, hint, Map.of()));
+            return this;
+        }
+
         Builder output(String id, float chance, int x, int y, String label, String hint) {
             nodes.add(new Node(Kind.ITEM, qualify(id), 1, chance, Role.OUTPUT, x, y, label, hint, Map.of()));
             return this;
@@ -776,6 +755,11 @@ final class BeyondPages {
 
         Builder tag(String id, Role role, int x, int y, String label, String hint) {
             return node(Kind.TAG, id, role, x, y, label, hint, Map.of());
+        }
+
+        Builder tag(String id, int amount, Role role, int x, int y, String label, String hint) {
+            nodes.add(new Node(Kind.TAG, qualify(id), amount, 1, role, x, y, label, hint, Map.of()));
+            return this;
         }
 
         private Builder node(
