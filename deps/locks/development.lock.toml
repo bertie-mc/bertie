@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "045249b5c60b72887c19ae064f55ad42d76d420f3a2baf99c903c13bd865fdac"
+inputs-hash = "d8fee146944728fd54996d5eaebe607f47d99172866898d204185292ce6a6bc3"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -366,8 +366,8 @@ any = "modrinth:TBVbrjYL:iLp3LKvw"
 mod = "modrinth:TBVbrjYL:iLp3LKvw"
 
 [components."diorama"]
-any = "curseforge:1748961:9587578"
-mod = "curseforge:1748961:9587578"
+any = "curseforge:1748961:9601226"
+mod = "curseforge:1748961:9601226"
 
 [components."discerning-the-eldritch"]
 any = "modrinth:bA1tmmcv:DZOuNCHD"
@@ -1700,7 +1700,7 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:1748961:9587578"]
+[artifacts."curseforge:1748961:9601226"]
 name = "diorama"
 component = "diorama"
 provider = "curseforge"
@@ -1708,11 +1708,11 @@ kind = "mod"
 side = "client"
 group = "curse.maven"
 module = "diorama-1748961"
-version = "9587578"
-filename = "diorama-0.10.0-neoforge-1.21.1.jar"
+version = "9601226"
+filename = "diorama-0.10.1-neoforge-1.21.1.jar"
 project-id = 1748961
 slug = "diorama"
-file-id = 9587578
+file-id = 9601226
 provides = ["diorama"]
 bundled-provides = []
 required = []

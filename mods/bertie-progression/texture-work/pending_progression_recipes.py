@@ -7,6 +7,15 @@ from pathlib import Path
 from recipe_outputs import item_outputs
 from tech_solar_recipes import DISABLED
 
+BLOCK_FLOODER_RECIPE = {
+    'type': 'malum:spirit_infusion',
+    'input': {'count': 1, 'item': 'pastel:mermaids_gem'},
+    'extraInputs': [{'count': 16, 'tag': 'minecraft:dirt'}, {'count': 16, 'tag': 'c:stones'}],
+    'spirits': [{'type': 'malum:earthen', 'count': 3}, {'type': 'malum:aqueous', 'count': 2}],
+    'result': {'id': 'pastel:block_flooder', 'count': 4},
+    'neoforge:conditions': [{'type': 'neoforge:mod_loaded', 'modid': mod} for mod in ['pastel', 'malum']],
+}
+
 
 def apply(module, native):
     resources = Path(module) / 'src/main/resources'
@@ -140,4 +149,5 @@ def apply(module, native):
     write(plates, values)
     from shared_tag_replacements import normalize_optional_references
     normalize_optional_references(resources, write)
+    recipe('pastel:pedestal/tier2/block_flooder', BLOCK_FLOODER_RECIPE)
     return changed
