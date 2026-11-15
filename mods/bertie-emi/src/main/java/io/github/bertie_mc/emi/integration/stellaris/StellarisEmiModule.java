@@ -14,7 +14,6 @@ import io.github.bertie_mc.emi.framework.Recipes;
 import java.util.List;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.crafting.Ingredient;
 
 /**
  * Stellaris — the Rocket Station (item grid -> rocket) and the Fuel Refinery (oil -> fuel and diesel).
@@ -32,14 +31,16 @@ public final class StellarisEmiModule {
         EmiRecipeCategory rocket =
                 Categories.machine(reg, "stellaris_rocket_station", "stellaris:rocket_station", "Rocket Station");
         Recipes.forEach(reg.getRecipeManager(), RocketStationRecipe.class, (id, r) -> {
-            MachineDescriptor d = new MachineDescriptor();
-            for (Ingredient ing : r.getIngredients()) d.itemIn(EmiIngredient.of(ing));
-            d.itemOut(EmiStack.of(r.getResultItem(RegistryAccess.EMPTY)));
-            reg.addRecipe(new GenericEmiRecipe(rocket, id, d));
+            reg.addRecipe(new RocketStationEmiRecipe(
+                    rocket,
+                    id,
+                    r.getIngredients().stream().map(EmiIngredient::of).toList(),
+                    EmiStack.of(r.getResultItem(RegistryAccess.EMPTY))));
         });
 
         fuelRefinery(reg);
         oilSource(reg);
+        RocketGuides.register(reg);
     }
 
     private static void fuelRefinery(EmiRegistry reg) {

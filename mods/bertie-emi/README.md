@@ -24,6 +24,12 @@ AnvilCraft's magnet guide reads the `bertieprogression:lightning_magnet_inputs` 
 when present, so its lightning instructions follow the pack's configured material.
 Without that tag, it describes AnvilCraft's native iron-block input.
 
+Stellaris Rocket Station recipes retain the station's positional nose, hull, fin
+and engine layout. The Rockets category shows the 3×3 launch platform, the rocket's
+inventory and upgrade slots, motor and fuel compatibility, tank and model upgrades,
+skins, takeoff and optional named landing pads. Upgrade descriptions read the installed
+mod's registered upgrade items; fuel range follows its native fuel calculation.
+
 The Beyond's in-world mechanics have four schematic categories: metalworking,
 bonfires, living creatures and devices. These show placed block states,
 creature previews and interaction arrows, with details on hover. Casting includes the
