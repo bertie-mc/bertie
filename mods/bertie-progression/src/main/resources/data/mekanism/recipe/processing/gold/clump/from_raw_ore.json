@@ -5,11 +5,11 @@
     "chemical": "mekanism:oxygen"
   },
   "item_input": {
-    "count": 1,
+    "count": 2,
     "tag": "c:raw_materials/gold"
   },
   "output": {
-    "count": 3,
+    "count": 5,
     "id": "mekanism:clump_gold"
   },
   "per_tick_usage": true

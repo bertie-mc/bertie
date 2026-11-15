@@ -337,7 +337,7 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.5d
 			y: -1.5d
 		}
 		{
@@ -358,7 +358,7 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -504,23 +504,7 @@
 			}]
 		}
 		{
-			dependencies: ["5B00000000000098"]
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 0.0d
-			x: 12.0d
-			id: "5B00000000000099"
-			icon: { id: "apothic_enchanting:endshelf" }
-			tasks: [{
-				id: "5B00000001000099"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "apothic_enchanting:endshelf" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["5B00000000000099", "5B00000000000092"]
+			dependencies: ["5B00000000000098", "5B00000000000092"]
 			hide_until_deps_visible: false
 			hide_until_deps_complete: false
 			y: -1.5d
@@ -665,7 +649,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			hide_until_deps_visible: false
@@ -1113,6 +1097,134 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "mekmm:cnc_rolling_mill" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 0.0d
+			x: 27.0d
+			dependencies: ["5B000000000000BD"]
+			id: "5B000000000000C1"
+			icon: { id: "mekanism:energized_smelter" }
+			tasks: [{
+				id: "5B000000010000C1"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:energized_smelter" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -1.5d
+			x: 27.0d
+			dependencies: ["5B000000000000C1"]
+			id: "5B000000000000C2"
+			icon: { id: "mekanism:crusher" }
+			tasks: [{
+				id: "5B000000010000C2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:crusher" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 27.0d
+			dependencies: ["5B000000000000BD"]
+			id: "5B000000000000C3"
+			icon: { id: "oritech:super_ai_chip" }
+			tasks: [{
+				id: "5B000000010000C3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:super_ai_chip" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 28.5d
+			dependencies: ["5B000000000000C3"]
+			id: "5B000000000000C4"
+			icon: { id: "mekanism:chemical_injection_chamber" }
+			tasks: [{
+				id: "5B000000010000C4"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:chemical_injection_chamber" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 30.0d
+			dependencies: ["5B000000000000C4"]
+			id: "5B000000000000C5"
+			icon: { id: "mekanism:chemical_infuser" }
+			tasks: [{
+				id: "5B000000010000C5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 31.5d
+			dependencies: ["5B000000000000C5"]
+			id: "5B000000000000C6"
+			icon: { id: "mekanism:thermal_evaporation_block" }
+			tasks: [{
+				id: "5B000000010000C6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:thermal_evaporation_block" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 33.0d
+			dependencies: ["5B000000000000C6"]
+			id: "5B000000000000C7"
+			icon: { id: "mekanism:thermal_evaporation_valve" }
+			tasks: [{
+				id: "5B000000010000C7"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:thermal_evaporation_valve" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 3.0d
+			x: 34.5d
+			dependencies: ["5B000000000000C7"]
+			id: "5B000000000000C8"
+			icon: { id: "mekanism:thermal_evaporation_controller" }
+			tasks: [{
+				id: "5B000000010000C8"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:thermal_evaporation_controller" }
 				type: "item"
 			}]
 		}

@@ -2417,7 +2417,7 @@
   },
   "plutonium": "excluded",
   "ore_block_yields": "unchanged",
-  "raw_yields": "existing 2x/3x baseline; native higher chemical ratios",
+  "raw_yields": "enrichment 1 raw -> 2 Dust; purification 2 raw -> 5 Clumps; injection 1 raw -> 4 Shards; native dissolution ratios",
   "provisional_extras": [
     "raw_voiderite",
     "raw_bloody"
@@ -2450,7 +2450,8 @@
       "eezo": "bertieprogression:centrifuge/eezo",
       "bloody": "bertieprogression:centrifuge/bloody",
       "elvenite": "bertieprogression:centrifuge/elvenite"
-    }
+    },
+    "spec_count": 3
   },
   "gem_finishing": {
     "crushing": "1 Gem -> 1 matching Dust",

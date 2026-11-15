@@ -1,0 +1,21 @@
+{
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:dirty_mithril_scrap"
+  },
+  "output": {
+    "id": "irons_spellbooks:mithril_scrap",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ]
+}

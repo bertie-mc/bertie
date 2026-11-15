@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 3,
+    "count": 1,
     "item": "stellaris:raw_desh_ingot"
   },
   "output": {
     "id": "bertieprogression:desh_shard",
-    "count": 8
+    "count": 4
   }
 }

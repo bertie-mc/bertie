@@ -186,10 +186,6 @@
       "required": false
     },
     {
-      "id": "twilightforest:charm_of_life_2",
-      "required": false
-    },
-    {
       "id": "twilightforest:lamp_of_cinders",
       "required": false
     },
@@ -283,5 +279,15 @@
       "required": false
     },
     "minecraft:ender_eye"
+  ],
+  "remove": [
+    {
+      "id": "twilightforest:charm_of_life_1",
+      "required": false
+    },
+    {
+      "id": "twilightforest:charm_of_life_2",
+      "required": false
+    }
   ]
 }

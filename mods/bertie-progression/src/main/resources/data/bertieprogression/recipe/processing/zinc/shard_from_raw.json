@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 3,
+    "count": 1,
     "item": "magitech:raw_zinc"
   },
   "output": {
     "id": "bertieprogression:zinc_shard",
-    "count": 8
+    "count": 4
   }
 }

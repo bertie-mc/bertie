@@ -1,0 +1,33 @@
+{
+  "type": "mekanism:mek_data",
+  "pattern": [
+    "TST",
+    "TCT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "tag": "c:ingots/tin"
+    },
+    "S": {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    "C": {
+      "item": "anvilcraft:capacitor_empty"
+    }
+  },
+  "result": {
+    "id": "mekanism:seismic_reader",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

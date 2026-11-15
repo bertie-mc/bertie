@@ -377,11 +377,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "twilightforest:charm_of_life_1",
-          "weight": 75
-        },
-        {
-          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",

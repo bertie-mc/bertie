@@ -5080,6 +5080,14 @@
     {
       "id": "quark:gravisand",
       "required": false
+    },
+    {
+      "id": "twilightforest:charm_of_life_1",
+      "required": false
+    },
+    {
+      "id": "twilightforest:charm_of_life_2",
+      "required": false
     }
   ]
 }

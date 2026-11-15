@@ -124,6 +124,8 @@ public final class ModItems {
     public static final DeferredItem<Item> NICKEL_SHEET = simple("nickel_sheet", 64);
     public static final DeferredItem<Item> TITANIUM_SHEET = simple("titanium_sheet", 64);
     public static final DeferredItem<Item> DURATIUM_SHEET = simple("duratium_sheet", 64);
+    public static final DeferredItem<Item> LEAD_SHEET = simple("lead_sheet", 64);
+    public static final DeferredItem<Item> DIRTY_MITHRIL_SCRAP = simple("dirty_mithril_scrap", 64);
     public static final DeferredItem<Item> STEEL_ROD = simple("steel_rod", 64);
     public static final DeferredItem<Item> STEEL_SHEET = simple("steel_sheet", 64);
     public static final DeferredItem<Item> ENRICHED_ZINC = simple("enriched_zinc", 64);

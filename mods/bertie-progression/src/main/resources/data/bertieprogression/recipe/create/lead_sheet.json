@@ -1,0 +1,24 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "anvilcraft:lead_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "bertieprogression:lead_sheet",
+      "count": 1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    }
+  ]
+}

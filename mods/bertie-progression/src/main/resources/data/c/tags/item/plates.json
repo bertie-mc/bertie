@@ -20,6 +20,7 @@
       "required": false
     },
     "bertieprogression:titanium_sheet",
-    "bertieprogression:duratium_sheet"
+    "bertieprogression:duratium_sheet",
+    "bertieprogression:lead_sheet"
   ]
 }

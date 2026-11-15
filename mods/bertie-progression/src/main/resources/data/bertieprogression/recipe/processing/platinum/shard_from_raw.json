@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 3,
+    "count": 1,
     "item": "oritech:raw_platinum"
   },
   "output": {
     "id": "bertieprogression:platinum_shard",
-    "count": 8
+    "count": 4
   }
 }

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:thermal_evaporation_block"
+    },
+    "B": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "C": {
+      "item": "mekanism:advanced_control_circuit"
+    }
+  },
+  "result": {
+    "id": "mekanism:thermal_evaporation_valve",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

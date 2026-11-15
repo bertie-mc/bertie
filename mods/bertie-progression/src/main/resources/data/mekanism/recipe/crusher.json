@@ -1,0 +1,56 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAAAA",
+    "ABCBA",
+    "ABDBA",
+    "EFGFE",
+    "EEAEE"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "B": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "C": {
+      "item": "anvilcraft:earth_core_shard_block"
+    },
+    "D": {
+      "item": "mekanism:steel_casing"
+    },
+    "E": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "F": {
+      "item": "oritech:motor"
+    },
+    "G": {
+      "item": "oritech:advanced_computing_engine"
+    }
+  },
+  "result": {
+    "id": "mekanism:crusher",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

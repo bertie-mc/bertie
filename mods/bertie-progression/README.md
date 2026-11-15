@@ -29,7 +29,7 @@ texture under `assets/bertieprogression/textures/item/`.
 
 The [ore-intermediate family](docs/ore-materials.md) fills missing processing
 forms while retaining existing item IDs. Metal Centrifuge routes consume Sheol
-Fire and produce a Gem plus four Specs; seeded Spec recombination closes the loop.
+Fire and produce a Gem plus three Specs; seeded Spec recombination closes the loop.
 
 Advanced Computing Engine Stages 1–3 use the quarter-color sprites. Four Atomic
 Forge operations combine a Processing Unit, then each previous stage, with a

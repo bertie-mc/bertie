@@ -2523,5 +2523,33 @@
 				type: "item"
 			}]
 		}
+		{
+			y: -7.5d
+			x: 15.0d
+			dependencies: ["5C000000000000B4"]
+			id: "5C000000000000B6"
+			icon: { id: "mekmm:large_pigment_mixer" }
+			tasks: [{
+				id: "5C000000010000B6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_pigment_mixer" }
+				type: "item"
+			}]
+		}
+		{
+			y: 4.5d
+			x: 19.5d
+			dependencies: ["5C0000000000933A"]
+			id: "5C000000000000B7"
+			icon: { id: "oritech:cooler_block" }
+			tasks: [{
+				id: "5C000000010000B7"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:cooler_block" }
+				type: "item"
+			}]
+		}
 	]
 }

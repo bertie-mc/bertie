@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 1,
+    "count": 2,
     "item": "oritech:raw_platinum"
   },
   "output": {
     "id": "oritech:platinum_clump",
-    "count": 3
+    "count": 5
   }
 }

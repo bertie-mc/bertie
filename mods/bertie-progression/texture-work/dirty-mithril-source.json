@@ -1,0 +1,47 @@
+{
+  "shape": "Mekanism 10.7.19.85 assets/mekanism/textures/item/dirty_netherite_scrap.png",
+  "shapeLicense": "MIT",
+  "paletteSource": "Iron's Spells n Spellbooks 3.16.0 mithril_scrap.png",
+  "palette": [
+    [
+      39,
+      68,
+      83
+    ],
+    [
+      48,
+      86,
+      113
+    ],
+    [
+      87,
+      111,
+      122
+    ],
+    [
+      105,
+      146,
+      149
+    ],
+    [
+      125,
+      179,
+      191
+    ],
+    [
+      155,
+      220,
+      220
+    ],
+    [
+      173,
+      241,
+      240
+    ],
+    [
+      255,
+      255,
+      255
+    ]
+  ]
+}

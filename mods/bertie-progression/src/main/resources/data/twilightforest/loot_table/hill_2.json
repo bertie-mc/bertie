@@ -187,11 +187,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "twilightforest:charm_of_life_1",
-          "weight": 25
-        },
-        {
-          "type": "minecraft:item",
           "name": "twilightforest:pocket_watch",
           "weight": 25
         },

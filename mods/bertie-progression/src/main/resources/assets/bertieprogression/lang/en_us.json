@@ -277,5 +277,7 @@
   "item.bertieprogression.advanced_computing_engine_stage_1": "Advanced Computing Engine Stage 1",
   "item.bertieprogression.advanced_computing_engine_stage_2": "Advanced Computing Engine Stage 2",
   "item.bertieprogression.advanced_computing_engine_stage_3": "Advanced Computing Engine Stage 3",
-  "item.bertieprogression.duratium_sheet": "Duratium Sheet"
+  "item.bertieprogression.duratium_sheet": "Duratium Sheet",
+  "item.bertieprogression.lead_sheet": "Lead Sheet",
+  "item.bertieprogression.dirty_mithril_scrap": "Dirty Mithril Scrap"
 }

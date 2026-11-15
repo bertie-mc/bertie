@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 3,
+    "count": 1,
     "item": "armageddon_mod:raw_elvenite"
   },
   "output": {
     "id": "bertieprogression:elvenite_shard",
-    "count": 8
+    "count": 4
   }
 }

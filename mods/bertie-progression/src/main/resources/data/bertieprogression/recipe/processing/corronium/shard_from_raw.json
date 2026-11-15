@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 3,
+    "count": 1,
     "item": "stellaris:raw_corronium"
   },
   "output": {
     "id": "bertieprogression:corronium_shard",
-    "count": 8
+    "count": 4
   }
 }

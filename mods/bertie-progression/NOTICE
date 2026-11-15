@@ -201,3 +201,13 @@ does not redistribute them.
 Those textures remain the artwork of XeKr/AnvilCraft and are not covered by this
 project's Unlicense. AnvilCraft's ASSETS_LICENSE reserves rights to its assets.
 Reference: https://github.com/Anvil-Dev/AnvilCraft/tree/1.5.3/src/main/resources/assets/anvilcraft
+
+
+DIRTY MITHRIL SCRAP
+
+assets/bertieprogression/textures/item/dirty_mithril_scrap.png adapts the
+Mekanism 10.7.19.85 Dirty Netherite Scrap silhouette and shade regions by
+Aidan C. Brady and contributors under the MIT License reproduced above.
+Its palette follows the numeric Mithril Scrap colors from Iron's Spells 'n
+Spellbooks 3.16.0. Lead Sheet retains the owned Sheet geometry and follows
+AnvilCraft's numeric Lead palette; no native AnvilCraft PNG is bundled.

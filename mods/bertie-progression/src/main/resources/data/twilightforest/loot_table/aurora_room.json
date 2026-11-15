@@ -99,10 +99,6 @@
             }
           ],
           "name": "twilightforest:arctic_fur"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "twilightforest:charm_of_life_1"
         }
       ],
       "rolls": 2.0

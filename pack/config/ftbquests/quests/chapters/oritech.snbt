@@ -232,21 +232,10 @@
 		}
 		{
 			id: "627AF928CDFE3F5E"
-			icon: {
-				id: "oritech:cooler_block"
-			}
-			tasks: [
-				{
-					id: "62A6612B78DECAF4"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:cooler_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62A6612B78DECAF4"
+				type: "checkmark"
+			}]
 			x: -7.000d
 			y: 3.000d
 		}

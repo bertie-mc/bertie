@@ -6,11 +6,11 @@
   },
   "per_tick_usage": true,
   "item_input": {
-    "count": 1,
+    "count": 2,
     "item": "bertieprogression:raw_bloody"
   },
   "output": {
     "id": "bertieprogression:bloody_clump",
-    "count": 3
+    "count": 5
   }
 }

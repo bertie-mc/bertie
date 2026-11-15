@@ -1,0 +1,59 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AABBB",
+    "AABCB",
+    "DEFGB",
+    "DHHHB",
+    "DDDDD"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "C": {
+      "item": "oritech:magnetic_coil"
+    },
+    "D": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "E": {
+      "item": "oritech:processing_unit"
+    },
+    "F": {
+      "item": "mekanism:steel_casing"
+    },
+    "G": {
+      "item": "oritech:motor"
+    },
+    "H": {
+      "item": "anvilcraft:frost_metal_ingot"
+    }
+  },
+  "result": {
+    "id": "oritech:cooler_block",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

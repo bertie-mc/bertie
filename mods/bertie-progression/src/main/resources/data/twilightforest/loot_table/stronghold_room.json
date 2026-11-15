@@ -117,10 +117,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "twilightforest:charm_of_life_1"
-        },
-        {
-          "type": "minecraft:item",
           "name": "twilightforest:steeleaf_pickaxe"
         }
       ],

@@ -2469,32 +2469,6 @@
 		}
 		{
 			icon: {
-				id: "twilightforest:charm_of_life_1"
-			}
-			id: "4C000000000000BE"
-			tasks: [{
-				id: "4C000000010000BE"
-				item: { count: 1, id: "twilightforest:charm_of_life_1" }
-				type: "item"
-			}]
-			x: 13.0d
-			y: 11.0d
-		}
-		{
-			icon: {
-				id: "twilightforest:charm_of_life_2"
-			}
-			id: "4C000000000000BF"
-			tasks: [{
-				id: "4C000000010000BF"
-				item: { count: 1, id: "twilightforest:charm_of_life_2" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: 11.0d
-		}
-		{
-			icon: {
 				id: "malstone:evil_engine"
 			}
 			id: "4C000000000000C0"

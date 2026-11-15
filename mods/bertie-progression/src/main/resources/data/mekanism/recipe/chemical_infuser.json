@@ -1,0 +1,57 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ABB BBA",
+    "ABBCBBA",
+    "ACDDDCA",
+    "AEEFEEA",
+    "ACGGGCA",
+    "DHHCHHD",
+    "DDDDDDD"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "B": {
+      "item": "bertieprogression:titanium_sheet"
+    },
+    "C": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "D": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "E": {
+      "item": "oritech:advanced_computing_engine"
+    },
+    "F": {
+      "item": "mekanism:steel_casing"
+    },
+    "G": {
+      "item": "mekanism:elite_chemical_tank"
+    },
+    "H": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "mekanism:chemical_infuser",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

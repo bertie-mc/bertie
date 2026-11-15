@@ -84,14 +84,10 @@
 			y: -3.000d
 		}
 		{
-			icon: { id: "mekanism:chemical_infuser" }
 			id: "613500C40061A8D5"
 			tasks: [{
 				id: "61F0DB0D9416F19D"
-				type: "item"
-				count: 1L
-				consume_items: false
-				item: { id: "mekanism:chemical_infuser" }
+				type: "checkmark"
 			}]
 			shape: "hexagon"
 			dependencies: [
@@ -104,25 +100,10 @@
 		}
 		{
 			id: "61BE905EDDB94833"
-			icon: {
-				id: "mekanism:chemical_injection_chamber"
-			}
-			tasks: [
-				{
-					id: "614641404E8B4EC7"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:advanced_injecting_factory)item(mekanism:basic_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory)item(mekanism_extras:absolute_injecting_factory)item(mekanism_extras:cosmic_injecting_factory)item(mekanism_extras:infinite_injecting_factory)item(mekanism_extras:supreme_injecting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Chemical Injection Chamber\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "614641404E8B4EC7"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"6116BB6B786299A2"
@@ -199,25 +180,10 @@
 		}
 		{
 			id: "614C917652DB21F9"
-			icon: {
-				id: "mekanism:crusher"
-			}
-			tasks: [
-				{
-					id: "61583099C9B26719"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:crusher)item(mekanism:advanced_crushing_factory)item(mekanism:basic_crushing_factory)item(mekanism:elite_crushing_factory)item(mekanism:ultimate_crushing_factory)item(mekanism_extras:absolute_crushing_factory)item(mekanism_extras:cosmic_crushing_factory)item(mekanism_extras:infinite_crushing_factory)item(mekanism_extras:supreme_crushing_factory))"
-							"minecraft:custom_name": "{\"text\": \"Crusher\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "61583099C9B26719"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
@@ -257,25 +223,10 @@
 		}
 		{
 			id: "614430986DD3DBF3"
-			icon: {
-				id: "mekanism:energized_smelter"
-			}
-			tasks: [
-				{
-					id: "610A4D05ED68A44B"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:advanced_smelting_factory)item(mekanism:basic_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory)item(mekanism_extras:absolute_smelting_factory)item(mekanism_extras:cosmic_smelting_factory)item(mekanism_extras:infinite_smelting_factory)item(mekanism_extras:supreme_smelting_factory))"
-							"minecraft:custom_name": "{\"text\": \"Energized Smelter\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "610A4D05ED68A44B"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"6170554009D736BD"
@@ -519,41 +470,10 @@
 		}
 		{
 			id: "61ED11E1734FFF61"
-			icon: {
-				id: "mekanism:thermal_evaporation_controller"
-			}
-			tasks: [
-				{
-					id: "610DB360ACE5979F"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:thermal_evaporation_block"
-					}
-				}
-				{
-					id: "61B592F1F946E820"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:thermal_evaporation_valve"
-					}
-				}
-				{
-					id: "61625F6E0E227B02"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:thermal_evaporation_controller"
-					}
-				}
-			]
+			tasks: [{
+				id: "610DB360ACE5979F"
+				type: "checkmark"
+			}]
 			shape: "hexagon"
 			dependencies: [
 				"61DA1C428DC2A5D1"
@@ -829,29 +749,6 @@
 			]
 			x: -9.250d
 			y: 6.000d
-		}
-		{
-			id: "6110778CB26D622B"
-			icon: {
-				id: "mekanism:seismic_vibrator"
-			}
-			tasks: [
-				{
-					id: "613DC0E2F1D5DB43"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "mekanism:seismic_vibrator"
-					}
-				}
-			]
-			dependencies: [
-				"6170554009D736BD"
-			]
-			x: -2.250d
-			y: 0.000d
 		}
 		{
 			id: "61F223E957195400"
@@ -1699,13 +1596,9 @@
 			x: -13.75d
 			dependencies: ["61FCF66321F85454"]
 			id: "6117F652FE47BA1E"
-			icon: { id: "mekmm:large_pigment_mixer" }
 			tasks: [{
 				id: "6117F6520147BA1E"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_pigment_mixer" }
-				type: "item"
+				type: "checkmark"
 			}]
 		}
 		{

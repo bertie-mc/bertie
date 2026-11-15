@@ -5938,4 +5938,7 @@ _apply_ace_stage_assets(ROOT)
 from pending_progression_recipes import apply as _apply_pending_progression
 _apply_pending_progression(ROOT, _recipe_src)
 
+from late_processing_recipes import apply as _apply_late_processing
+_apply_late_processing(ROOT, _recipe_src, _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

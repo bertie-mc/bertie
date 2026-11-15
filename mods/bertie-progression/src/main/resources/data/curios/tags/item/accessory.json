@@ -824,7 +824,9 @@
     {
       "id": "twilightforest:charm_of_keeping_3",
       "required": false
-    },
+    }
+  ],
+  "remove": [
     {
       "id": "twilightforest:charm_of_life_1",
       "required": false

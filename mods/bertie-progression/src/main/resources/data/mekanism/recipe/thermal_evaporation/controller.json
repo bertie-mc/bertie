@@ -1,0 +1,53 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ABABA",
+    "BCDCB",
+    "AEFEA",
+    "BCECB",
+    "ABABA"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:alloy_infused"
+    },
+    "B": {
+      "item": "bertieprogression:lead_sheet"
+    },
+    "C": {
+      "item": "mekanism:thermal_evaporation_block"
+    },
+    "D": {
+      "item": "oritech:advanced_computing_engine"
+    },
+    "E": {
+      "item": "bertieprogression:steel_rod"
+    },
+    "F": {
+      "item": "pastel:onyx_glass"
+    }
+  },
+  "result": {
+    "id": "mekanism:thermal_evaporation_controller",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}

@@ -12,14 +12,15 @@ metal Charges and Activated Crystals have no production or consumption recipes y
 The separate Dense Coal Charge is made in the Combiner from 32 Coal Dust and one
 HDPE Sheet, then centrifuged into one Carbon Fibre Strand in 50 ticks.
 
-Missing raw-metal routes follow the existing two-Dust enrichment and three-Clump
-purification baseline. Higher chemical processing inherits Mekanism's existing
-three-Raw-to-eight-Shards and three-Raw-to-2000-Slurry ratios. Intermediate
+Ordinary raw-metal routes enrich one raw item into two Dust, purify two raw items
+into five Clumps, and inject one raw item into four Shards. Two raw storage blocks
+produce 45 Clumps; one produces 36 Shards. Dissolution retains the native
+three-Raw-to-2000-Slurry ratio. Intermediate
 conversions retain their native 1:1 quantities; crystallization uses 200 Slurry.
 Ore-block recipes, Fortune and mining drops are unchanged.
 
 Each of the 23 metal Centrifuge routes consumes one matching Dirty Dust and
-100 mB Sheol Fire, producing one matching Gem and four secondary Specs. The
+100 mB Sheol Fire, producing one matching Gem and three secondary Specs. The
 Fluid Addon is required. Water/Acid Clump-to-Gem alternatives are disabled.
 The current byproducts are listed in `ore_materials.json`; no self-material
 placeholders remain. Uranium, Elvenite and Solerium have no secondary source.
@@ -28,6 +29,12 @@ can only be secondary outputs of higher tiers in their own progression.
 
 Eight matching Specs surrounding one matching Dirty Dust craft two Dirty Dust.
 The centre is consumed normally.
+
+Dirty Mithril Scrap is a separate special-material route: one Raw Mithril makes
+three Dirty Mithril Scrap in the Mekanism Crusher, and each enriches into one
+native Mithril Scrap. Like the existing Ancient Debris → Dirty Netherite Scrap
+route, dirty-scrap production is Crusher-only. Clibano's Netherite residue chance
+is 15%, retaining its existing fire eligibility and one-Scrap primary result.
 
 All 23 metal Gems have a 1:1 Mekanism Crusher route into matching Dust.
 Existing Atomic Forge routes remain; Gem alloying, cooking, heated mixing
