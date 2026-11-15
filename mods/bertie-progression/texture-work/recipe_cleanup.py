@@ -58,8 +58,6 @@ oritech:pulverizer/uraniumore
 oritech:pulverizer/uraniumcrystal
 oritech:deepdrill/uranium
 oritech:centrifuge/compat/create/clump/zinc
-oritech:centrifuge/fluid/compat/create/clump/zinc
-oritech:centrifuge/fluid/compat/create/clumpacid/zinc
 oritech:foundry/alloy/steel
 oritech:mixing/compat/create/steel
 oritech:crafting/alloy/steel

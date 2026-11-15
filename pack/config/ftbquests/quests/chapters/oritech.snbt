@@ -335,45 +335,19 @@
 		}
 		{
 			id: "628B75F6213677F9"
-			icon: {
-				id: "oritech:simple_augment_station"
-			}
-			tasks: [
-				{
-					id: "628324FD2D34FAE2"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						id: "ftbfiltersystem:smart_filter"
-						count: 1
-						components: {
-							"ftbfiltersystem:filter": "or(item(oritech:simple_augment_station)item(oritech:advanced_augment_station)item(oritech:arcane_augment_station))"
-							"minecraft:custom_name": "{\"text\": \"Research Station\", \"italic\": false}"
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "628324FD2D34FAE2"
+				type: "checkmark"
+			}]
 			x: -16.000d
 			y: 0.000d
 		}
 		{
 			id: "62D72BBD32A6CEFF"
-			icon: {
-				id: "oritech:augment_application_block"
-			}
-			tasks: [
-				{
-					id: "62B1175D207BC59E"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:augment_application_block"
-					}
-				}
-			]
+			tasks: [{
+				id: "62B1175D207BC59E"
+				type: "checkmark"
+			}]
 			x: -13.750d
 			y: 0.000d
 		}
@@ -449,21 +423,10 @@
 		}
 		{
 			id: "6284B6EA8E2482E3"
-			icon: {
-				id: "oritech:unstable_container"
-			}
-			tasks: [
-				{
-					id: "62002E1FD46C4DE9"
-					type: "item"
-					count: 1L
-					consume_items: false
-					item: {
-						count: 1
-						id: "oritech:unstable_container"
-					}
-				}
-			]
+			tasks: [{
+				id: "62002E1FD46C4DE9"
+				type: "checkmark"
+			}]
 			x: -9.250d
 			y: 3.000d
 		}

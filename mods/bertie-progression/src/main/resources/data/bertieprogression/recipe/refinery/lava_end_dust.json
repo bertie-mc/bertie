@@ -6,7 +6,7 @@
   },
   "ingredients": [
     {
-      "item": "anvilcraft:end_dust"
+      "item": "anvilcraft:levitation_powder_block"
     }
   ],
   "results": [],
@@ -21,7 +21,7 @@
     },
     {
       "fluid": "oritech:still_strange_matter",
-      "amount": 50
+      "amount": 200
     }
   ],
   "time": 128

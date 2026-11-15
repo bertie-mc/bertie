@@ -211,3 +211,11 @@ Aidan C. Brady and contributors under the MIT License reproduced above.
 Its palette follows the numeric Mithril Scrap colors from Iron's Spells 'n
 Spellbooks 3.16.0. Lead Sheet retains the owned Sheet geometry and follows
 AnvilCraft's numeric Lead palette; no native AnvilCraft PNG is bundled.
+
+  assets/bertieprogression/textures/item/empty_reinforced_carbon_sheet.png
+
+is a muted, black-centred derivative of Oritech 1.2.7's
+assets/oritech/textures/item/reinforced_carbon_sheet.png, by Rearth.
+Oritech declares CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/).
+The original outline and transparency are retained; the empty variant changes
+its palette. Source: https://github.com/Rearth/Oritech.

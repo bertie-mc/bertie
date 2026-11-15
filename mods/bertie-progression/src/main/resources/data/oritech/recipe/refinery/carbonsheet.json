@@ -1,0 +1,19 @@
+{
+  "type": "oritech:refinery",
+  "fluidInput": {
+    "amount": 3000,
+    "fluid": "#c:naphtha"
+  },
+  "ingredients": [
+    {
+      "item": "bertieprogression:empty_reinforced_carbon_sheet"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:reinforced_carbon_sheet"
+    }
+  ],
+  "time": 240
+}

@@ -4,10 +4,10 @@
     "blocks": "#bertieprogression:collision_anvils/tier_1"
   },
   "consume": false,
-  "hitBlock": {
-    "blocks": "iceandfire:dragonsteel_lightning_block"
-  },
   "speed": 32,
+  "hitBlock": {
+    "blocks": "iceandfire:dragonsteel_ice_block"
+  },
   "transform_blocks": [
     {
       "input": {

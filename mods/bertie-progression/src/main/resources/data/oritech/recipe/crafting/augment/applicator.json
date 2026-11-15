@@ -1,0 +1,44 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "ABBBA",
+    "CDEDC",
+    "CFGFC",
+    "CHIHC",
+    "ABBBA"
+  ],
+  "key": {
+    "A": {
+      "item": "iceandfire:dragonsteel_lightning_ingot"
+    },
+    "B": {
+      "item": "mekanism:ingot_refined_obsidian"
+    },
+    "C": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "D": {
+      "item": "oritech:enderic_lens"
+    },
+    "E": {
+      "item": "oritech:overcharged_crystal"
+    },
+    "F": {
+      "item": "mekanism_extras:absolute_control_circuit"
+    },
+    "G": {
+      "item": "mekanism:steel_casing"
+    },
+    "H": {
+      "item": "oritech:unholy_intelligence"
+    },
+    "I": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "oritech:augment_application_block",
+    "count": 1
+  }
+}

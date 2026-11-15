@@ -91,6 +91,33 @@ class AnvilDropTest {
     }
 
     @Test
+    void dragonsteelCollisionShowsStruckBlockAboveConsumedElementalBase() {
+        AnvilDrop drop = new AnvilDrop();
+        var struck = EmiStack.of(Items.IRON_BLOCK);
+        var base = EmiStack.of(Items.BLUE_ICE);
+        AnvilCraftEmiModule.collisionInputs(
+                drop,
+                net.minecraft.resources.ResourceLocation.parse("bertieprogression:anvil_collision/dragonsteel_ice"),
+                struck,
+                java.util.List.of(base));
+        assertFalse(drop.hasPayload());
+        assertEquals(2, drop.decks.size());
+        assertEquals(struck, drop.decks.get(0).block());
+        assertEquals(base, drop.decks.get(1).block());
+        assertFalse(drop.decks.get(0).survives());
+        assertFalse(drop.decks.get(1).survives());
+
+        AnvilDrop ordinary = new AnvilDrop();
+        AnvilCraftEmiModule.collisionInputs(
+                ordinary,
+                net.minecraft.resources.ResourceLocation.parse("anvilcraft:collision/ordinary"),
+                struck,
+                java.util.List.of(base));
+        assertEquals(base, ordinary.payload.getFirst());
+        assertEquals(struck, ordinary.decks.getFirst().block());
+    }
+
+    @Test
     void aConsumedAnvilIsRecordedAsWellAsDrawn() {
         AnvilDrop drop = new AnvilDrop().anvilConsumed(EmiStack.of(Items.ANVIL));
         assertTrue(drop.anvilConsumed);

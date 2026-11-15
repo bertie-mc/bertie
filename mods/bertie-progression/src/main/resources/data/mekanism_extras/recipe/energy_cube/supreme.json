@@ -1,25 +1,16 @@
 {
-  "type": "mekanism:mek_data",
-  "key": {
-    "A": {
-      "tag": "mekanism_extras:alloys/thermonuclear"
-    },
-    "E": {
-      "item": "mekanism:energy_tablet"
-    },
-    "I": {
-      "item": "oritech:adamant_ingot"
-    },
-    "P": {
-      "item": "mekanism_extras:absolute_energy_cube"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "pattern": [
-    "AEA",
-    "IPI",
-    "AEA"
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
   ],
   "result": {
-    "id": "mekanism_extras:supreme_energy_cube"
+    "id": "minecraft:stone"
   }
 }

@@ -1,0 +1,67 @@
+{
+  "type": "oritech:augment_data",
+  "applyCost": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "oritech:plating"
+      }
+    }
+  ],
+  "effect": {
+    "amount": 6.0,
+    "attributeOperationType": 0,
+    "entityAttributeId": "minecraft:generic.max_health"
+  },
+  "requiredStation": "oritech:simple_augment_station",
+  "requirements": [],
+  "researchCost": [
+    {
+      "count": 256,
+      "ingredient": {
+        "item": "oritech:biosteel_ingot"
+      }
+    },
+    {
+      "count": 64,
+      "ingredient": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "mekanism:alloy_reinforced"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "mekanism:hdpe_rod"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "malum:imitation_flesh"
+      }
+    },
+    {
+      "count": 8,
+      "ingredient": {
+        "item": "oritech:duratium_ingot"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "oritech:overcharged_crystal"
+      }
+    }
+  ],
+  "rfCost": 10000000,
+  "time": 400,
+  "toggleable": false,
+  "uiX": 5,
+  "uiY": 70
+}

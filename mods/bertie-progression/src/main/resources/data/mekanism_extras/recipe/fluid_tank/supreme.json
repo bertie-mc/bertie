@@ -1,25 +1,16 @@
 {
-  "type": "mekanism:mek_data",
-  "key": {
-    "C": {
-      "tag": "mekanism_extras:alloys/thermonuclear"
-    },
-    "S": {
-      "item": "bertieprogression:steel_sheet"
-    },
-    "R": {
-      "item": "bertieprogression:steel_rod"
-    },
-    "P": {
-      "item": "mekanism_extras:absolute_fluid_tank"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "pattern": [
-    "CSC",
-    "RPR",
-    "CSC"
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
   ],
   "result": {
-    "id": "mekanism_extras:supreme_fluid_tank"
+    "id": "minecraft:stone"
   }
 }

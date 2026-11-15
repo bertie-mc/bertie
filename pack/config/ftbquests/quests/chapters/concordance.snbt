@@ -1228,5 +1228,21 @@
 				type: "item"
 			}]
 		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 4.5d
+			x: 27.0d
+			dependencies: ["5B000000000000C3"]
+			id: "5B000000000000C9"
+			icon: { id: "oritech:unstable_container" }
+			tasks: [{
+				id: "5B000000010000C9"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:unstable_container" }
+				type: "item"
+			}]
+		}
 	]
 }

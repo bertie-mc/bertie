@@ -1,0 +1,87 @@
+{
+  "type": "oritech:augment_data",
+  "applyCost": [
+    {
+      "count": 8,
+      "ingredient": {
+        "tag": "c:carbon_fibre"
+      }
+    }
+  ],
+  "effect": {
+    "amount": 4.0,
+    "attributeOperationType": 0,
+    "entityAttributeId": "minecraft:generic.max_health"
+  },
+  "requiredStation": "oritech:simple_augment_station",
+  "requirements": [
+    "oritech:augment/armor"
+  ],
+  "researchCost": [
+    {
+      "count": 128,
+      "ingredient": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    },
+    {
+      "count": 96,
+      "ingredient": {
+        "item": "oritech:biosteel_ingot"
+      }
+    },
+    {
+      "count": 96,
+      "ingredient": {
+        "item": "minecraft:diamond"
+      }
+    },
+    {
+      "count": 96,
+      "ingredient": {
+        "item": "mekanism:hdpe_sheet"
+      }
+    },
+    {
+      "count": 40,
+      "ingredient": {
+        "item": "malum:imitation_flesh"
+      }
+    },
+    {
+      "count": 40,
+      "ingredient": {
+        "item": "mekanism:alloy_reinforced"
+      }
+    },
+    {
+      "count": 20,
+      "ingredient": {
+        "item": "mekanism:electrolytic_separator"
+      }
+    },
+    {
+      "count": 20,
+      "ingredient": {
+        "item": "mekanism:ingot_refined_glowstone"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "oritech:superconductor"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "oritech:overcharged_crystal"
+      }
+    }
+  ],
+  "rfCost": 50000000,
+  "time": 800,
+  "toggleable": false,
+  "uiX": 80,
+  "uiY": 70
+}

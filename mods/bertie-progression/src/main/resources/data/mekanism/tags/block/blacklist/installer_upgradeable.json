@@ -1,0 +1,56 @@
+{
+  "replace": false,
+  "values": [
+    "mekanism:ultimate_chemical_tank",
+    "mekanism:ultimate_fluid_tank",
+    "mekanism:ultimate_energy_cube",
+    {
+      "id": "mekanism_extras:absolute_chemical_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:absolute_energy_cube",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:absolute_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:cosmic_chemical_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:cosmic_energy_cube",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:cosmic_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:infinite_chemical_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:infinite_energy_cube",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:infinite_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:supreme_chemical_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:supreme_energy_cube",
+      "required": false
+    },
+    {
+      "id": "mekanism_extras:supreme_fluid_tank",
+      "required": false
+    }
+  ]
+}

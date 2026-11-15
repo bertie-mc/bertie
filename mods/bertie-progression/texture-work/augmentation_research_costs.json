@@ -1,0 +1,628 @@
+{
+  "research": [
+    {
+      "id": "oritech:augment/attackdamage",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "oritech:fluxite"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "berlordscarving:steel_big_slate"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "anvilcraft:royal_steel_ingot"
+          }
+        },
+        {
+          "count": 4,
+          "ingredient": {
+            "item": "l2complements:eternium_ingot"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/speedboost",
+      "researchCost": [
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "oritech:biosteel_ingot"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "mekanism:hdpe_sheet"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "malum:imitation_flesh"
+          }
+        },
+        {
+          "count": 24,
+          "ingredient": {
+            "item": "oritech:motor"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/armor",
+      "researchCost": [
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "anvilcraft:sturdy_deepslate"
+          }
+        },
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "bertieprogression:steel_sheet"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "mekanism:alloy_reinforced"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:duratium_ingot"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "minecraft:diamond_block"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/hpboost",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "oritech:biosteel_ingot"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "mekanism:alloy_reinforced"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "mekanism:hdpe_rod"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "malum:imitation_flesh"
+          }
+        },
+        {
+          "count": 8,
+          "ingredient": {
+            "item": "oritech:duratium_ingot"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/waterbreath",
+      "researchCost": [
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "oritech:biosteel_ingot"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "forbidden_arcanus:rune"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "mekanism:electrolytic_core"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "minecraft:turtle_scute"
+          }
+        },
+        {
+          "count": 8,
+          "ingredient": {
+            "item": "l2complements:poseidite_ingot"
+          }
+        },
+        {
+          "count": 8,
+          "ingredient": {
+            "item": "minecraft:heart_of_the_sea"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/dwarf",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "create:brass_ingot"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "anvilcraft:cursed_gold_ingot"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "cognition:cognitive_alloy"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "oritech:processing_unit"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "oritech:flux_gate"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/giant",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "quark:moss_paste"
+          }
+        },
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "create:tree_fertilizer"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "anvilcraft:uranium_block"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "magitech:mana_charged_fluorite"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "forbidden_arcanus:rune"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "anvilcraft:cursed_gold_ingot"
+          }
+        },
+        {
+          "count": 8,
+          "ingredient": {
+            "item": "minecraft:echo_shard"
+          }
+        },
+        {
+          "count": 4,
+          "ingredient": {
+            "item": "oritech:unholy_intelligence"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/miningspeed",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "minecraft:quartz"
+          }
+        },
+        {
+          "count": 40,
+          "ingredient": {
+            "item": "bertieprogression:platinum_coil"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:basic_battery"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "mekanism:hdpe_rod"
+          }
+        },
+        {
+          "count": 12,
+          "ingredient": {
+            "item": "oritech:motor"
+          }
+        },
+        {
+          "count": 4,
+          "ingredient": {
+            "item": "deeperdarker:reinforced_echo_shard"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/hpboostmore",
+      "researchCost": [
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 96,
+          "ingredient": {
+            "item": "oritech:biosteel_ingot"
+          }
+        },
+        {
+          "count": 96,
+          "ingredient": {
+            "item": "minecraft:diamond"
+          }
+        },
+        {
+          "count": 96,
+          "ingredient": {
+            "item": "mekanism:hdpe_sheet"
+          }
+        },
+        {
+          "count": 40,
+          "ingredient": {
+            "item": "malum:imitation_flesh"
+          }
+        },
+        {
+          "count": 40,
+          "ingredient": {
+            "item": "mekanism:alloy_reinforced"
+          }
+        },
+        {
+          "count": 20,
+          "ingredient": {
+            "item": "mekanism:electrolytic_separator"
+          }
+        },
+        {
+          "count": 20,
+          "ingredient": {
+            "item": "mekanism:ingot_refined_glowstone"
+          }
+        },
+        {
+          "count": 4,
+          "ingredient": {
+            "item": "oritech:superconductor"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/autofeeder",
+      "researchCost": [
+        {
+          "count": 48,
+          "ingredient": {
+            "item": "oritech:processing_unit"
+          }
+        },
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "minecraft:golden_apple"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "mekanism:hdpe_rod"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "malum:imitation_flesh"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "minecraft:enchanted_golden_apple"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "mekanism:nutritional_paste_bucket"
+          }
+        },
+        {
+          "count": 12,
+          "ingredient": {
+            "item": "apothic_enchanting:warden_tendril"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/betterarmor",
+      "researchCost": [
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "oritech:energite_ingot"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "mekanism:hdpe_sheet"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "mekanism:ingot_refined_glowstone"
+          }
+        },
+        {
+          "count": 40,
+          "ingredient": {
+            "item": "oritech:flux_gate"
+          }
+        },
+        {
+          "count": 40,
+          "ingredient": {
+            "item": "anvilcraft:magnetoelectric_core"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "bertieprogression:electric_coil"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:basic_battery"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "oritech:silicon_wafer"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oritech:augment/blockreach",
+      "researchCost": [
+        {
+          "count": 256,
+          "ingredient": {
+            "item": "oritech:biosteel_ingot"
+          }
+        },
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        },
+        {
+          "count": 128,
+          "ingredient": {
+            "item": "mekanism:hdpe_rod"
+          }
+        },
+        {
+          "count": 96,
+          "ingredient": {
+            "item": "deeperdarker:lite"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "oritech:motor"
+          }
+        },
+        {
+          "count": 64,
+          "ingredient": {
+            "item": "malum:imitation_flesh"
+          }
+        },
+        {
+          "count": 48,
+          "ingredient": {
+            "item": "mekanism:ingot_refined_obsidian"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "anvilcraft:void_matter_block"
+          }
+        },
+        {
+          "count": 32,
+          "ingredient": {
+            "item": "darkermagic:warden_stick"
+          }
+        },
+        {
+          "count": 16,
+          "ingredient": {
+            "item": "mekanism:ingot_refined_glowstone"
+          }
+        },
+        {
+          "count": 1,
+          "ingredient": {
+            "item": "oritech:overcharged_crystal"
+          }
+        }
+      ]
+    }
+  ]
+}

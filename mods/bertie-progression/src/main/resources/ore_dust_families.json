@@ -1,0 +1,355 @@
+[
+  {
+    "material": "arcane_crystal",
+    "ores": [
+      "forbidden_arcanus:arcane_crystal_ore",
+      "forbidden_arcanus:deepslate_arcane_crystal_ore"
+    ],
+    "dusts": [
+      "forbidden_arcanus:arcane_crystal_dust"
+    ]
+  },
+  {
+    "material": "bloody",
+    "ores": [
+      "armageddon_mod:bloody_ore"
+    ],
+    "dusts": [
+      "bertieprogression:bloody_dust"
+    ]
+  },
+  {
+    "material": "coal",
+    "ores": [
+      "antarchy:myrmite_coal_ore",
+      "deeperdarker:gloomslate_coal_ore",
+      "deeperdarker:sculk_stone_coal_ore",
+      "minecraft:coal_ore",
+      "minecraft:deepslate_coal_ore",
+      "pastel:blackslag_coal_ore",
+      "stellaris:venus_coal_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_coal"
+    ]
+  },
+  {
+    "material": "copper",
+    "ores": [
+      "deeperdarker:gloomslate_copper_ore",
+      "deeperdarker:sculk_stone_copper_ore",
+      "minecraft:copper_ore",
+      "minecraft:deepslate_copper_ore",
+      "pastel:blackslag_copper_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_copper"
+    ]
+  },
+  {
+    "material": "corronium",
+    "ores": [
+      "stellaris:venus_corronium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:corronium_dust"
+    ]
+  },
+  {
+    "material": "desh",
+    "ores": [
+      "stellaris:moon_desh_ore"
+    ],
+    "dusts": [
+      "bertieprogression:desh_dust"
+    ]
+  },
+  {
+    "material": "diamond",
+    "ores": [
+      "born_in_chaos_v1:infected_deepslate_diamond_ore",
+      "born_in_chaos_v1:infected_diamond_ore",
+      "deeperdarker:gloomslate_diamond_ore",
+      "deeperdarker:sculk_stone_diamond_ore",
+      "ditr:obsidian_diamond_ore",
+      "explodetomine:cracked_deepslate_diamond_ore",
+      "explodetomine:cracked_diamond_ore",
+      "minecraft:deepslate_diamond_ore",
+      "minecraft:diamond_ore",
+      "pastel:blackslag_diamond_ore",
+      "stellaris:mars_diamond_ore",
+      "stellaris:venus_diamond_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_diamond"
+    ]
+  },
+  {
+    "material": "eezo",
+    "ores": [
+      "bertieprogression:eezo_ore"
+    ],
+    "dusts": [
+      "bertieprogression:eezo_dust"
+    ]
+  },
+  {
+    "material": "elvenite",
+    "ores": [
+      "armageddon_mod:elvenite_ore"
+    ],
+    "dusts": [
+      "bertieprogression:elvenite_dust"
+    ]
+  },
+  {
+    "material": "emerald",
+    "ores": [
+      "deeperdarker:gloomslate_emerald_ore",
+      "deeperdarker:sculk_stone_emerald_ore",
+      "minecraft:deepslate_emerald_ore",
+      "minecraft:emerald_ore",
+      "pastel:blackslag_emerald_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_emerald"
+    ]
+  },
+  {
+    "material": "fluorite",
+    "ores": [
+      "mekanism:deepslate_fluorite_ore",
+      "mekanism:fluorite_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_fluorite"
+    ]
+  },
+  {
+    "material": "gold",
+    "ores": [
+      "deeperdarker:gloomslate_gold_ore",
+      "deeperdarker:sculk_stone_gold_ore",
+      "malum:cthonic_gold_ore",
+      "minecraft:deepslate_gold_ore",
+      "minecraft:gold_ore",
+      "minecraft:nether_gold_ore",
+      "pastel:blackslag_gold_ore",
+      "stellaris:venus_gold_ore"
+    ],
+    "dusts": [
+      "oritech:gold_dust"
+    ]
+  },
+  {
+    "material": "iron",
+    "ores": [
+      "deeperdarker:gloomslate_iron_ore",
+      "deeperdarker:sculk_stone_iron_ore",
+      "minecraft:deepslate_iron_ore",
+      "minecraft:iron_ore",
+      "pastel:blackslag_iron_ore",
+      "stellaris:mars_iron_ore",
+      "stellaris:mercury_iron_ore",
+      "stellaris:moon_iron_ore"
+    ],
+    "dusts": [
+      "oritech:iron_dust"
+    ]
+  },
+  {
+    "material": "lapis",
+    "ores": [
+      "deeperdarker:gloomslate_lapis_ore",
+      "deeperdarker:sculk_stone_lapis_ore",
+      "minecraft:deepslate_lapis_ore",
+      "minecraft:lapis_ore",
+      "pastel:blackslag_lapis_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_lapis_lazuli"
+    ]
+  },
+  {
+    "material": "lead",
+    "ores": [
+      "mekanism:deepslate_lead_ore",
+      "mekanism:lead_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_lead"
+    ]
+  },
+  {
+    "material": "naquadah",
+    "ores": [
+      "mekanism_extras:end_naquadah_ore",
+      "mekanism_extras:naquadah_ore"
+    ],
+    "dusts": [
+      "mekanism_extras:dust_naquadah"
+    ]
+  },
+  {
+    "material": "neptunium",
+    "ores": [
+      "stellaris:venus_neptunium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:neptunium_dust"
+    ]
+  },
+  {
+    "material": "nickel",
+    "ores": [
+      "oritech:deepslate_nickel_ore",
+      "oritech:nickel_ore"
+    ],
+    "dusts": [
+      "oritech:nickel_dust"
+    ]
+  },
+  {
+    "material": "osmium",
+    "ores": [
+      "mekanism:deepslate_osmium_ore",
+      "mekanism:osmium_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_osmium"
+    ]
+  },
+  {
+    "material": "platinum",
+    "ores": [
+      "oritech:deepslate_platinum_ore",
+      "oritech:endstone_platinum_ore"
+    ],
+    "dusts": [
+      "oritech:platinum_dust"
+    ]
+  },
+  {
+    "material": "plutonium",
+    "ores": [
+      "stellaris:mars_plutonium_ore"
+    ],
+    "dusts": [
+      "oritech:plutonium_dust"
+    ]
+  },
+  {
+    "material": "quartz",
+    "ores": [
+      "malum:blazing_quartz_ore",
+      "malum:deepslate_quartz_ore",
+      "malum:natural_quartz_ore",
+      "minecraft:nether_quartz_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_quartz"
+    ]
+  },
+  {
+    "material": "redstone",
+    "ores": [
+      "deeperdarker:gloomslate_redstone_ore",
+      "deeperdarker:sculk_stone_redstone_ore",
+      "minecraft:deepslate_redstone_ore",
+      "minecraft:redstone_ore",
+      "pastel:blackslag_redstone_ore"
+    ],
+    "dusts": [
+      "minecraft:redstone"
+    ]
+  },
+  {
+    "material": "silver",
+    "ores": [
+      "anvilcraft:deepslate_silver_ore",
+      "iceandfire:silver_ore"
+    ],
+    "dusts": [
+      "bertieprogression:silver_dust"
+    ]
+  },
+  {
+    "material": "solerium",
+    "ores": [
+      "stellaris:mercury_solerium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:solerium_dust"
+    ]
+  },
+  {
+    "material": "tharsite",
+    "ores": [
+      "stellaris:mars_tharsite_ore"
+    ],
+    "dusts": [
+      "bertieprogression:tharsite_dust"
+    ]
+  },
+  {
+    "material": "tin",
+    "ores": [
+      "mekanism:deepslate_tin_ore",
+      "mekanism:tin_ore"
+    ],
+    "dusts": [
+      "mekanism:dust_tin"
+    ]
+  },
+  {
+    "material": "titanium",
+    "ores": [
+      "antarchy:broodstone_titanium_ore",
+      "antarchy:titanium_ore",
+      "anvilcraft:deepslate_titanium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:titanium_dust"
+    ]
+  },
+  {
+    "material": "tungsten",
+    "ores": [
+      "anvilcraft:deepslate_tungsten_ore"
+    ],
+    "dusts": [
+      "bertieprogression:tungsten_dust"
+    ]
+  },
+  {
+    "material": "uranium",
+    "ores": [
+      "antarchy:broodstone_uranium_ore",
+      "mekanism:uranium_ore",
+      "oritech:deepslate_uranium_ore",
+      "stellaris:mercury_uranium_ore"
+    ],
+    "dusts": [
+      "oritech:uranium_dust"
+    ]
+  },
+  {
+    "material": "voiderite",
+    "ores": [
+      "armageddon_mod:voiderite_ore"
+    ],
+    "dusts": [
+      "bertieprogression:voiderite_dust"
+    ]
+  },
+  {
+    "material": "zinc",
+    "ores": [
+      "anvilcraft:deepslate_zinc_ore",
+      "create:zinc_ore"
+    ],
+    "dusts": [
+      "bertieprogression:zinc_dust"
+    ]
+  }
+]

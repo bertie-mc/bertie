@@ -1,22 +1,16 @@
 {
-  "type": "mekanism:mek_data",
-  "key": {
-    "C": {
-      "tag": "mekanism_extras:alloys/thermonuclear"
-    },
-    "O": {
-      "item": "bertieprogression:osmium_sheet"
-    },
-    "P": {
-      "item": "mekanism_extras:absolute_chemical_tank"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "pattern": [
-    "COC",
-    "OPO",
-    "COC"
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
   ],
   "result": {
-    "id": "mekanism_extras:supreme_chemical_tank"
+    "id": "minecraft:stone"
   }
 }

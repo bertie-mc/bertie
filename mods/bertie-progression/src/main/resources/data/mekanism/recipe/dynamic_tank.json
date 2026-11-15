@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "S": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SBS",
+    " S "
+  ],
+  "result": {
+    "count": 4,
+    "id": "mekanism:dynamic_tank"
+  }
+}

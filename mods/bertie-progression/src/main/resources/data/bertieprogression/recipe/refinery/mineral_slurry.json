@@ -1,0 +1,20 @@
+{
+  "type": "oritech:refinery",
+  "ingredients": [
+    {
+      "tag": "bertieprogression:ore_material_dusts"
+    }
+  ],
+  "fluidInput": {
+    "fluid": "oritech:still_sulfuric_acid",
+    "amount": 50
+  },
+  "results": [],
+  "fluidOutputs": [
+    {
+      "fluid": "oritech:still_mineral_slurry",
+      "amount": 100
+    }
+  ],
+  "time": 80
+}

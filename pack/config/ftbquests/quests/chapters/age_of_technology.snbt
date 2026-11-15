@@ -2138,7 +2138,7 @@
 		}
 		{
 			size: 2.0d
-			y: -1.5d
+			y: -3.75d
 			x: 30.0d
 			dependencies: ["5C0000000000009A"]
 			id: "5C0000000000009B"
@@ -2257,62 +2257,6 @@
 			}]
 		}
 		{
-			y: 9.0d
-			x: 21.0d
-			dependencies: ["5C000000000000A2"]
-			id: "5C000000000000A3"
-			icon: { id: "mekanism_extras:absolute_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism_extras:absolute_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 10.5d
-			x: 21.0d
-			dependencies: ["5C000000000000A3"]
-			id: "5C000000000000A4"
-			icon: { id: "mekanism_extras:supreme_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A4"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism_extras:supreme_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 12.0d
-			x: 21.0d
-			dependencies: ["5C000000000000A4"]
-			id: "5C000000000000A5"
-			icon: { id: "mekanism_extras:cosmic_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A5"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism_extras:cosmic_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 13.5d
-			x: 21.0d
-			dependencies: ["5C000000000000A5"]
-			id: "5C000000000000A6"
-			icon: { id: "mekanism_extras:infinite_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A6"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism_extras:infinite_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
 			y: -1.5d
 			x: 24.0d
 			dependencies: ["5C0000000000935E"]
@@ -2342,7 +2286,7 @@
 		}
 		{
 			size: 2.0d
-			y: 0.75d
+			y: -1.5d
 			x: 30.0d
 			dependencies: ["5C00000000000097"]
 			id: "5C000000000000A9"
@@ -2548,6 +2492,27 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "oritech:cooler_block" }
+				type: "item"
+			}]
+		}
+		{
+			y: 0.75d
+			x: 30.0d
+			dependencies: ["5C00000000000098"]
+			id: "5C000000000000B8"
+			icon: { id: "oritech:augment_application_block" }
+			tasks: [{
+				id: "5C000000010000B8"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:augment_application_block" }
+				type: "item"
+			}
+			{
+				id: "5C000000020000B8"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:simple_augment_station" }
 				type: "item"
 			}]
 		}

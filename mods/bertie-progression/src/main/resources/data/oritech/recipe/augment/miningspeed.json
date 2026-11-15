@@ -1,0 +1,70 @@
+{
+  "type": "oritech:augment_data",
+  "applyCost": [
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "oritech:magnetic_coil"
+      }
+    }
+  ],
+  "effect": {
+    "amount": 1.0,
+    "attributeOperationType": 2,
+    "entityAttributeId": "minecraft:player.block_break_speed"
+  },
+  "requiredStation": "oritech:simple_augment_station",
+  "requirements": [
+    "oritech:augment/attackdamage",
+    "oritech:augment/speedboost"
+  ],
+  "researchCost": [
+    {
+      "count": 256,
+      "ingredient": {
+        "item": "minecraft:quartz"
+      }
+    },
+    {
+      "count": 40,
+      "ingredient": {
+        "item": "bertieprogression:platinum_coil"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "oritech:basic_battery"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "mekanism:hdpe_rod"
+      }
+    },
+    {
+      "count": 12,
+      "ingredient": {
+        "item": "oritech:motor"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "deeperdarker:reinforced_echo_shard"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "oritech:overcharged_crystal"
+      }
+    }
+  ],
+  "rfCost": 50000000,
+  "time": 1200,
+  "toggleable": false,
+  "uiX": 30,
+  "uiY": 10
+}

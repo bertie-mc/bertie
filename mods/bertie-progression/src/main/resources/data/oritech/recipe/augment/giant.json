@@ -1,0 +1,82 @@
+{
+  "type": "oritech:augment_data",
+  "applyCost": [
+    {
+      "count": 8,
+      "ingredient": {
+        "item": "oritech:raw_biopolymer"
+      }
+    }
+  ],
+  "effect": {
+    "amount": 1.0,
+    "attributeOperationType": 1,
+    "entityAttributeId": "minecraft:generic.scale"
+  },
+  "requiredStation": "oritech:simple_augment_station",
+  "requirements": [
+    "oritech:augment/dwarf",
+    "oritech:augment/armor"
+  ],
+  "researchCost": [
+    {
+      "count": 256,
+      "ingredient": {
+        "item": "quark:moss_paste"
+      }
+    },
+    {
+      "count": 128,
+      "ingredient": {
+        "item": "create:tree_fertilizer"
+      }
+    },
+    {
+      "count": 64,
+      "ingredient": {
+        "item": "anvilcraft:uranium_block"
+      }
+    },
+    {
+      "count": 64,
+      "ingredient": {
+        "item": "magitech:mana_charged_fluorite"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "forbidden_arcanus:rune"
+      }
+    },
+    {
+      "count": 16,
+      "ingredient": {
+        "item": "anvilcraft:cursed_gold_ingot"
+      }
+    },
+    {
+      "count": 8,
+      "ingredient": {
+        "item": "minecraft:echo_shard"
+      }
+    },
+    {
+      "count": 4,
+      "ingredient": {
+        "item": "oritech:unholy_intelligence"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "oritech:overcharged_crystal"
+      }
+    }
+  ],
+  "rfCost": 40000000,
+  "time": 1600,
+  "toggleable": true,
+  "uiX": 55,
+  "uiY": 90
+}

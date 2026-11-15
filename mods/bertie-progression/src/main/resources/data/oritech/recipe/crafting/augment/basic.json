@@ -1,0 +1,41 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "AAAAB",
+    "ACDEB",
+    "AAFGB",
+    "HACEB",
+    "HAAAB"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:bronze_sheet"
+    },
+    "B": {
+      "item": "mekanism:ingot_refined_obsidian"
+    },
+    "C": {
+      "item": "oritech:unholy_intelligence"
+    },
+    "D": {
+      "item": "minecraft:brewing_stand"
+    },
+    "E": {
+      "item": "magitech:radiant_steel_ingot"
+    },
+    "F": {
+      "item": "mekanism:steel_casing"
+    },
+    "G": {
+      "item": "cognition:cognitive_crystal"
+    },
+    "H": {
+      "item": "oritech:carbon_fibre_strands"
+    }
+  },
+  "result": {
+    "id": "oritech:simple_augment_station",
+    "count": 1
+  }
+}

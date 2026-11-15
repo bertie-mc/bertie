@@ -43,8 +43,13 @@ Bronze Sheets and Platinum Rods/Wires use the established material-form routes.
 Electric and Resonant Coils have Nether Table crafts and Bound Soul variants.
 Dense Coal Charge combines 32 Coal Dust with HDPE Sheet and feeds Carbon Fibre
 Strands. Refining supplies Steam, Sheol Fire and Strange Matter from Lava, with
-Pearl Fragment and End Dust variants. Oritech supplies the canonical Sulfuric
+Pearl Fragment and Levitation Powder Block variants. Oritech supplies the canonical Sulfuric
 Acid liquid; Mekanism's chemical remains available through the Rotary machine.
+
+Cybernetic Augmentation Center and Research Station have Nether Table recipes.
+Twelve research nodes use pack material costs while retaining native energy,
+time, effects and installation costs. [Cybernetics and refining](docs/cybernetics-refining.md)
+documents the material selection and storage policy.
 
 ### Blocks
 

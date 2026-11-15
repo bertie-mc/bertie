@@ -1,0 +1,31 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 3,
+  "pattern": [
+    "       ",
+    "OOAAAOO",
+    "OFFFFFO",
+    "AFVVVFA",
+    "OFFFFFO",
+    "OOAAAOO",
+    "       "
+  ],
+  "key": {
+    "O": {
+      "item": "mekanism:ingot_refined_obsidian"
+    },
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "F": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "V": {
+      "item": "anvilcraft:void_matter"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:empty_reinforced_carbon_sheet",
+    "count": 1
+  }
+}

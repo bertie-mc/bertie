@@ -1,0 +1,69 @@
+{
+  "type": "oritech:augment_data",
+  "applyCost": [
+    {
+      "count": 4,
+      "ingredient": {
+        "tag": "c:silicon"
+      }
+    }
+  ],
+  "effect": {
+    "amount": -0.5,
+    "attributeOperationType": 1,
+    "entityAttributeId": "minecraft:generic.scale"
+  },
+  "requiredStation": "oritech:simple_augment_station",
+  "requirements": [
+    "oritech:augment/hpboost"
+  ],
+  "researchCost": [
+    {
+      "count": 256,
+      "ingredient": {
+        "item": "create:brass_ingot"
+      }
+    },
+    {
+      "count": 64,
+      "ingredient": {
+        "item": "anvilcraft:cursed_gold_ingot"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "item": "cognition:cognitive_alloy"
+      }
+    },
+    {
+      "count": 16,
+      "ingredient": {
+        "item": "oritech:processing_unit"
+      }
+    },
+    {
+      "count": 16,
+      "ingredient": {
+        "item": "oritech:flux_gate"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "oritech:overcharged_crystal"
+      }
+    }
+  ],
+  "rfCost": 20000000,
+  "time": 400,
+  "toggleable": true,
+  "uiX": 30,
+  "uiY": 90
+}

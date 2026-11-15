@@ -450,16 +450,32 @@ public final class AnvilCraftEmiModule {
             } else {
                 drop.anvil(anvil);
             }
-            // The blocks it converts lie beside the one it lands on, so they share the payload deck.
+            collisionInputs(
+                    drop,
+                    id,
+                    blockIn(r.hitBlock()),
+                    r.transformBlocks().stream()
+                            .map(t -> blockIn(t.inputBlock()))
+                            .toList());
             for (BlockTransform t : r.transformBlocks()) {
-                drop.itemMerged(blockIn(t.inputBlock()));
                 drop.out(blockOut(t.outputBlock()));
             }
-            drop.onto(blockIn(r.hitBlock()));
             for (ChanceItemStack o : r.outputItems()) out(drop, o);
             drop.note(Component.literal("Needs the anvil falling at " + r.speed() + " m/tick"));
             reg.addRecipe(new AnvilDropEmiRecipe(cat, id, drop));
         });
+    }
+
+    static void collisionInputs(
+            AnvilDrop drop, ResourceLocation id, EmiIngredient hit, java.util.List<EmiIngredient> transformed) {
+        // Dragonsteel conversion stacks the struck block directly above its elemental base.
+        if (id.getNamespace().equals("bertieprogression") && id.getPath().startsWith("anvil_collision/dragonsteel_")) {
+            drop.onto(hit);
+            for (EmiIngredient input : transformed) drop.onto(input);
+        } else {
+            for (EmiIngredient input : transformed) drop.itemMerged(input);
+            drop.onto(hit);
+        }
     }
 
     /**
