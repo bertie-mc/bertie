@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_thermonuclear"
+    },
+    "P": {
+      "item": "refinedstorage:advanced_processor"
+    },
+    "D": {
+      "tag": "refinedstorage:parts/items/1024k"
+    },
+    "C": {
+      "item": "mekanism_extras:supreme_control_circuit"
+    }
+  },
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "extradisks:4096k_item_storage_part"
+  }
+}

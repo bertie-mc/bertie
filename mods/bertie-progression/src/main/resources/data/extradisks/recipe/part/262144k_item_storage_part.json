@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_shining"
+    },
+    "P": {
+      "item": "extradisks:withering_processor"
+    },
+    "D": {
+      "tag": "refinedstorage:parts/items/65536k"
+    },
+    "C": {
+      "item": "mekanism_extras:cosmic_control_circuit"
+    }
+  },
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "extradisks:262144k_item_storage_part"
+  }
+}

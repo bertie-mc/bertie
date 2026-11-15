@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "key": {
+    "A": {
+      "item": "slag:rose_gold_ingot"
+    },
+    "P": {
+      "item": "refinedstorage:basic_processor"
+    },
+    "D": {
+      "item": "refinedstorage_mekanism_integration:64b_chemical_storage_part"
+    },
+    "C": {
+      "item": "mekanism:basic_control_circuit"
+    }
+  },
+  "result": {
+    "id": "refinedstorage_mekanism_integration:256b_chemical_storage_part"
+  }
+}

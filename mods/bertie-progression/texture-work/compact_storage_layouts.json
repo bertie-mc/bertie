@@ -1,0 +1,201 @@
+[
+  {
+    "id": "compactmachines:personal_shrinking_device",
+    "output": "compactmachines:personal_shrinking_device",
+    "count": 1,
+    "tier": 1,
+    "pattern": [
+      "ABA",
+      "CDE",
+      "FGH"
+    ],
+    "key": {
+      "A": {
+        "item": "oritech:flux_gate"
+      },
+      "B": {
+        "item": "forbidden_arcanus:runic_glass"
+      },
+      "C": {
+        "item": "compactmachines:enlarging_module"
+      },
+      "D": {
+        "item": "l2complements:void_eye"
+      },
+      "E": {
+        "item": "compactmachines:shrinking_module"
+      },
+      "F": {
+        "item": "refinedstorage:construction_core"
+      },
+      "G": {
+        "item": "forbidden_arcanus:quantum_core"
+      },
+      "H": {
+        "item": "refinedstorage:destruction_core"
+      }
+    }
+  },
+  {
+    "id": "forbidden_arcanus:quantum_core",
+    "output": "forbidden_arcanus:quantum_core",
+    "count": 1,
+    "tier": 3,
+    "pattern": [
+      "AAABAAA",
+      "ACADACA",
+      "AAAAAAA",
+      "BDAEADB",
+      "AAAAAAA",
+      "ACADACA",
+      "AAABAAA"
+    ],
+    "key": {
+      "A": {
+        "item": "forbidden_arcanus:rune_block"
+      },
+      "B": {
+        "item": "oritech:flux_gate"
+      },
+      "C": {
+        "item": "mekanism:teleportation_core"
+      },
+      "D": {
+        "item": "anvilcraft:earth_core_shard_block"
+      },
+      "E": {
+        "item": "minecraft:heavy_core"
+      }
+    }
+  },
+  {
+    "id": "compactmachines:enlarging_module",
+    "output": "compactmachines:enlarging_module",
+    "count": 1,
+    "tier": 2,
+    "pattern": [
+      "AAAAA",
+      "ABCBA",
+      "ACDCA",
+      "ABCBA",
+      "AAAAA"
+    ],
+    "key": {
+      "A": {
+        "item": "anvilcraft:frost_metal_ingot"
+      },
+      "B": {
+        "item": "refinedstorage:construction_core"
+      },
+      "C": {
+        "item": "minecraft:sticky_piston"
+      },
+      "D": {
+        "item": "anvilcraft:space_overcompressor"
+      }
+    }
+  },
+  {
+    "id": "compactmachines:shrinking_module",
+    "output": "compactmachines:shrinking_module",
+    "count": 1,
+    "tier": 2,
+    "pattern": [
+      "AAAAA",
+      "ABCBA",
+      "ACDCA",
+      "ABCBA",
+      "AAAAA"
+    ],
+    "key": {
+      "A": {
+        "item": "anvilcraft:ember_metal_ingot"
+      },
+      "B": {
+        "item": "refinedstorage:destruction_core"
+      },
+      "C": {
+        "item": "minecraft:piston"
+      },
+      "D": {
+        "item": "anvilcraft:space_overcompressor"
+      }
+    }
+  },
+  {
+    "id": "compactcrafting:field_projector",
+    "output": "compactcrafting:field_projector",
+    "count": 1,
+    "tier": 3,
+    "pattern": [
+      " AAAAA ",
+      " ABBBA ",
+      " AAAAA ",
+      "  CCC  ",
+      "AAAAAAA",
+      "ADEFGDA",
+      "AAAAAAA"
+    ],
+    "key": {
+      "A": {
+        "item": "compactmachines:wall"
+      },
+      "B": {
+        "item": "oritech:enderic_lens"
+      },
+      "C": {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      "D": {
+        "item": "oritech:flux_gate"
+      },
+      "E": {
+        "item": "compactmachines:shrinking_module"
+      },
+      "F": {
+        "item": "mekanism:steel_casing"
+      },
+      "G": {
+        "item": "compactmachines:enlarging_module"
+      }
+    }
+  },
+  {
+    "id": "compactcrafting:match_proxy",
+    "output": "compactcrafting:match_proxy",
+    "count": 1,
+    "tier": null,
+    "pattern": [
+      "   ",
+      " A ",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:comparator"
+      },
+      "B": {
+        "item": "compactmachines:wall"
+      }
+    }
+  },
+  {
+    "id": "compactcrafting:rescan_proxy",
+    "output": "compactcrafting:rescan_proxy",
+    "count": 1,
+    "tier": null,
+    "pattern": [
+      "   ",
+      " A ",
+      "BBB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:observer"
+      },
+      "B": {
+        "item": "compactmachines:wall"
+      }
+    }
+  }
+]

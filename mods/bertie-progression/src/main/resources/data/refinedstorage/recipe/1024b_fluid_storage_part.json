@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:alloy_infused"
+    },
+    "P": {
+      "item": "refinedstorage:basic_processor"
+    },
+    "D": {
+      "item": "refinedstorage:256b_fluid_storage_part"
+    },
+    "C": {
+      "item": "mekanism:advanced_control_circuit"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:1024b_fluid_storage_part"
+  }
+}

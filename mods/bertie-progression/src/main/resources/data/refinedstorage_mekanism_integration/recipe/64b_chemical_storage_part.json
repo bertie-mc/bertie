@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MSM",
+    "GMG",
+    "SGS"
+  ],
+  "key": {
+    "M": {
+      "item": "mekanism:ingot_osmium"
+    },
+    "S": {
+      "tag": "c:silicon"
+    },
+    "G": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "refinedstorage_mekanism_integration:64b_chemical_storage_part"
+  }
+}

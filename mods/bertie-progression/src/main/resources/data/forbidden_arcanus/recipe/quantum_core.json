@@ -1,0 +1,56 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAABAAA",
+    "ACADACA",
+    "AAAAAAA",
+    "BDAEADB",
+    "AAAAAAA",
+    "ACADACA",
+    "AAABAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "forbidden_arcanus:rune_block"
+    },
+    "B": {
+      "item": "oritech:flux_gate"
+    },
+    "C": {
+      "item": "mekanism:teleportation_core"
+    },
+    "D": {
+      "item": "anvilcraft:earth_core_shard_block"
+    },
+    "E": {
+      "item": "minecraft:heavy_core"
+    }
+  },
+  "result": {
+    "id": "forbidden_arcanus:quantum_core",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

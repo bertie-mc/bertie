@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mekanism_extras:alloy_spectrum"
+    },
+    "P": {
+      "item": "extradisks:withering_processor"
+    },
+    "D": {
+      "tag": "refinedstorage:parts/fluids/1048576b"
+    },
+    "C": {
+      "item": "mekanism_extras:infinite_control_circuit"
+    }
+  },
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "extradisks:infinite_fluid_storage_part"
+  }
+}

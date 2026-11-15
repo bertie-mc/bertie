@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "P": {
+      "item": "refinedstorage:improved_processor"
+    },
+    "D": {
+      "item": "refinedstorage:4096b_fluid_storage_part"
+    },
+    "C": {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  },
+  "pattern": [
+    "APA",
+    "DCD",
+    "PDP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "extradisks:16384b_fluid_storage_part"
+  }
+}

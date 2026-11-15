@@ -1,0 +1,67 @@
+{
+  "type": "anvilcraft:multiblock",
+  "pattern": {
+    "layers": [
+      [
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLLLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLHLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLLLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD"
+      ]
+    ],
+    "symbols": {
+      "D": {
+        "block": "minecraft:polished_deepslate"
+      },
+      "L": {
+        "block": "anvilcraft:levitation_powder_block"
+      },
+      "H": {
+        "block": "anvilcraft:heavy_iron_block"
+      }
+    }
+  },
+  "result": {
+    "id": "compactmachines:wall",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    }
+  ]
+}

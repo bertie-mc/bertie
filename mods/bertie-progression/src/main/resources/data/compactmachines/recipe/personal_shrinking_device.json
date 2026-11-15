@@ -1,0 +1,65 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ABA",
+    "CDE",
+    "FGH"
+  ],
+  "key": {
+    "A": {
+      "item": "oritech:flux_gate"
+    },
+    "B": {
+      "item": "forbidden_arcanus:runic_glass"
+    },
+    "C": {
+      "item": "compactmachines:enlarging_module"
+    },
+    "D": {
+      "item": "l2complements:void_eye"
+    },
+    "E": {
+      "item": "compactmachines:shrinking_module"
+    },
+    "F": {
+      "item": "refinedstorage:construction_core"
+    },
+    "G": {
+      "item": "forbidden_arcanus:quantum_core"
+    },
+    "H": {
+      "item": "refinedstorage:destruction_core"
+    }
+  },
+  "result": {
+    "id": "compactmachines:personal_shrinking_device",
+    "count": 1
+  },
+  "tier": 1,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
+}

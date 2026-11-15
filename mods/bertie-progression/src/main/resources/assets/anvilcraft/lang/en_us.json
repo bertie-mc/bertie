@@ -1,3 +1,5 @@
 {
-  "tooltip.anvilcraft.item.overseer": "Loads 1 chunk, or 9 / 25 / 49 chunks with 1 / 2 / 3 complete 3x3 base layers."
+  "tooltip.anvilcraft.item.overseer": "Loads 1 chunk, or 9 / 25 / 49 chunks with 1 / 2 / 3 complete 3x3 base layers.",
+  "item.anvilcraft.neutronium_ingot": "Gravis Ingot",
+  "item.anvilcraft.charged_neutronium_ingot": "Charged Gravis Ingot"
 }

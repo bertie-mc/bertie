@@ -98,6 +98,8 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
                                 "Build a 3×3×3 cube: Cognitive Crystal Block at its center, Mana-Charged Fluorite Blocks at its 8 corners, Superconductors everywhere else."),
                         Component.literal(
                                 "Cover with a 3×3 layer of Crafting Tables and drop a Giant Anvil onto it. Drops the crystal as an item; no Space Overcompressor needed.")));
+        if (net.neoforged.fml.ModList.get().isLoaded("compactcrafting"))
+            CompactMiniEmi.register(registry, crystalCategory);
         if (net.neoforged.fml.ModList.get().isLoaded("create")) {
             WireAssemblyEmi.register(registry);
         }

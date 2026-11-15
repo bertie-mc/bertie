@@ -1,0 +1,107 @@
+{
+  "type": "anvilcraft:multiblock_conversion",
+  "inputPattern": {
+    "layers": [
+      [
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLLLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLHLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DLLLD",
+        "DLLLD",
+        "DLLLD",
+        "DDDDD"
+      ],
+      [
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD",
+        "DDDDD"
+      ]
+    ],
+    "symbols": {
+      "D": {
+        "block": "minecraft:polished_deepslate"
+      },
+      "L": {
+        "block": "anvilcraft:levitation_powder_block"
+      },
+      "H": {
+        "block": "anvilcraft:heavy_iron_block"
+      }
+    }
+  },
+  "outputPattern": {
+    "layers": [
+      [
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "  W  ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "symbols": {
+      "W": {
+        "block": "compactmachines:wall"
+      }
+    }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    }
+  ]
+}

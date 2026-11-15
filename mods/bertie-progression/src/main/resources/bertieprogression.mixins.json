@@ -56,7 +56,8 @@
     "SturdyLootMixin",
     "FountainCountAccessor",
     "FountainRarityAccessor",
-    "MineralFountainMixin"
+    "MineralFountainMixin",
+    "CompactMachineRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 0

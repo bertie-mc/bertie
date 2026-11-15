@@ -15,7 +15,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
@@ -50,6 +49,10 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
  * or every save holding one would break. It is unobtainable and unseen, not absent.
  */
 public final class RemovedItems {
+
+    private static final ResourceLocation MACHINE = ResourceLocation.parse("compactmachines:new_machine");
+    private static final ResourceLocation ROOM_TEMPLATE = ResourceLocation.parse("compactmachines:room_template");
+    private static final ResourceLocation FARMING = ResourceLocation.parse("compactmachines:farming");
 
     private static Set<ResourceLocation> ids;
     private static Set<ResourceLocation> tabs;
@@ -115,21 +118,7 @@ public final class RemovedItems {
         }
 
         for (ItemStack stack : entries) {
-            if (isRemovedPotion(stack)) {
-                event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            }
-        }
-
-        Set<ResourceLocation> removed = ids();
-        if (removed.isEmpty()) {
-            return;
-        }
-        for (ItemStack stack : entries) {
-            if (stack.isEmpty()) {
-                continue;
-            }
-            Item item = stack.getItem();
-            if (removed.contains(BuiltInRegistries.ITEM.getKey(item))) {
+            if (isRemoved(stack)) {
                 event.remove(stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             }
         }
@@ -137,7 +126,18 @@ public final class RemovedItems {
 
     public static boolean isRemoved(ItemStack stack) {
         return !stack.isEmpty()
-                && (ids().contains(BuiltInRegistries.ITEM.getKey(stack.getItem())) || isRemovedPotion(stack));
+                && (ids().contains(BuiltInRegistries.ITEM.getKey(stack.getItem()))
+                        || isRemovedPotion(stack)
+                        || isRemovedRoomTemplate(stack));
+    }
+
+    /** Room variants share one item; only the withdrawn template leaves creative/EMI lists. */
+    public static boolean isRemovedRoomTemplate(ItemStack stack) {
+        if (!BuiltInRegistries.ITEM.getKey(stack.getItem()).equals(MACHINE)) {
+            return false;
+        }
+        var type = BuiltInRegistries.DATA_COMPONENT_TYPE.get(ROOM_TEMPLATE);
+        return type != null && FARMING.equals(stack.get(type));
     }
 
     /**

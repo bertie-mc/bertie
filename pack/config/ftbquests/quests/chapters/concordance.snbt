@@ -337,8 +337,8 @@
 				item: { count: 1, id: "apotheosis:ender_gem_case" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5B0000000000009A"]
@@ -358,8 +358,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 13.5d
+			y: -1.5d
 		}
 		{
 			hide_until_deps_visible: false
@@ -1241,6 +1241,245 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "oritech:unstable_container" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -4.5d
+			x: 15.0d
+			dependencies: ["5B00000000000096"]
+			id: "5B000000000000CA"
+			icon: { id: "anvilcraft:titanium_ingot" }
+			tasks: [{
+				id: "5B000000010000CA"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:titanium_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: -4.5d
+			x: 16.5d
+			dependencies: ["5B00000000000094"]
+			id: "5B000000000000CB"
+			icon: { id: "anvilcraft:levitation_powder" }
+			tasks: [{
+				id: "5B000000010000CB"
+				count: 64L
+				consume_items: false
+				item: { count: 1 id: "anvilcraft:levitation_powder" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 4.5d
+			x: 21.0d
+			dependencies: ["5B000000000000B6"]
+			id: "5B000000000000CC"
+			icon: { id: "cataclysm:void_eye" }
+			tasks: [{
+				id: "5B000000010000CC"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "cataclysm:void_eye" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 4.5d
+			x: 22.5d
+			dependencies: ["5B000000000000CC"]
+			id: "5B000000000000CD"
+			icon: { id: "minecraft:filled_map" }
+			tasks: [{
+				id: "5B000000010000CD"
+				type: "advancement"
+				advancement: "bertieprogression:quests/ruined_citadel"
+				criterion: ""
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 4.5d
+			x: 24.0d
+			dependencies: ["5B000000000000CD"]
+			id: "5B000000000000CE"
+			icon: { id: "cataclysm:void_core" }
+			tasks: [{
+				id: "5B000000010000CE"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "cataclysm:void_core" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 6.0d
+			x: 22.5d
+			dependencies: ["5B000000000000CD"]
+			id: "5B000000000000CF"
+			icon: { id: "cataclysm:enderite_ingot" }
+			tasks: [{
+				id: "5B000000010000CF"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "cataclysm:enderite_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 18.0d
+			dependencies: ["5B000000000000B6"]
+			id: "5B000000000000D0"
+			icon: { id: "armageddon_mod:titan_insigna" }
+			tasks: [{
+				id: "5B000000010000D0"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:titan_insigna" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 19.5d
+			dependencies: ["5B000000000000D0"]
+			id: "5B000000000000D1"
+			icon: { id: "armageddon_mod:elvenite_paladin_spawn_egg" }
+			tasks: [{
+				id: "5B000000010000D1"
+				type: "kill"
+				entity: "armageddon_mod:elvenite_paladin"
+				value: 1L
+				icon: { id: "armageddon_mod:elvenite_paladin_spawn_egg" }
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 21.0d
+			dependencies: ["5B000000000000D1"]
+			id: "5B000000000000D2"
+			icon: { id: "armageddon_mod:elvenite_ingot" }
+			tasks: [{
+				id: "5B000000010000D2"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:elvenite_ingot" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 22.5d
+			dependencies: ["5B000000000000D2"]
+			id: "5B000000000000D3"
+			icon: { id: "armageddon_mod:wanderers_fallen_shard" }
+			tasks: [{
+				id: "5B000000010000D3"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:wanderers_fallen_shard" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 24.0d
+			dependencies: ["5B000000000000D3"]
+			id: "5B000000000000D4"
+			icon: { id: "armageddon_mod:vaedricthe_fallen_wanderer_spawn_egg" }
+			tasks: [{
+				id: "5B000000010000D4"
+				type: "kill"
+				entity: "armageddon_mod:vaedricthe_fallen_wanderer"
+				value: 1L
+				icon: { id: "armageddon_mod:vaedricthe_fallen_wanderer_spawn_egg" }
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 25.5d
+			dependencies: ["5B000000000000D4"]
+			id: "5B000000000000D5"
+			icon: { id: "armageddon_mod:voiderite" }
+			tasks: [{
+				id: "5B000000010000D5"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:voiderite" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 27.0d
+			dependencies: ["5B000000000000D5"]
+			id: "5B000000000000D6"
+			icon: { id: "armageddon_mod:the_key_of_doom" }
+			tasks: [{
+				id: "5B000000010000D6"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:the_key_of_doom" }
+				type: "item"
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 28.5d
+			dependencies: ["5B000000000000D6"]
+			id: "5B000000000000D7"
+			icon: { id: "armageddon_mod:bringer_of_doom_spawn_egg" }
+			tasks: [{
+				id: "5B000000010000D7"
+				type: "kill"
+				entity: "armageddon_mod:bringer_of_doom_p_2"
+				value: 1L
+				icon: { id: "armageddon_mod:bringer_of_doom_spawn_egg" }
+			}]
+		}
+		{
+			hide_until_deps_visible: false
+			hide_until_deps_complete: false
+			y: 9.0d
+			x: 30.0d
+			dependencies: ["5B000000000000D7"]
+			id: "5B000000000000D8"
+			icon: { id: "armageddon_mod:doom_powder" }
+			tasks: [{
+				id: "5B000000010000D8"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "armageddon_mod:doom_powder" }
 				type: "item"
 			}]
 		}

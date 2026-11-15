@@ -1,0 +1,126 @@
+[
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_wall",
+    "size": 3,
+    "wall": "minecraft:polished_deepslate",
+    "wall_count": 26,
+    "core": null,
+    "catalyst": "anvilcraft:levitation_powder",
+    "output": {
+      "id": "compactmachines:wall",
+      "count": 4
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_tiny",
+    "size": 3,
+    "wall": "compactmachines:wall",
+    "wall_count": 26,
+    "core": "anvilcraft:heavy_iron_block",
+    "catalyst": "mekanism:ingot_steel",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#C95B13",
+        "compactmachines:room_template": "compactmachines:tiny"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_small",
+    "size": 3,
+    "wall": "compactmachines:wall",
+    "wall_count": 26,
+    "core": "magitech:fluorite_block",
+    "catalyst": "irons_spellbooks:arcane_ingot",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#D4D2D2",
+        "compactmachines:room_template": "compactmachines:small"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_normal",
+    "size": 5,
+    "wall": "compactmachines:wall",
+    "wall_count": 98,
+    "core": "malum:block_of_hallowed_gold",
+    "catalyst": "mythsandlegends:bound_soul_ingot",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#FBF236",
+        "compactmachines:room_template": "compactmachines:normal"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_large",
+    "size": 5,
+    "wall": "compactmachines:wall",
+    "wall_count": 98,
+    "core": "cognition:cognitive_crystal_block",
+    "catalyst": "cognition:astute_assembly",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#211B2E",
+        "compactmachines:room_template": "compactmachines:large"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_giant",
+    "size": 7,
+    "wall": "compactmachines:wall",
+    "wall_count": 218,
+    "core": "anvilcraft:overheated_ember_metal_block",
+    "catalyst": "elemental_metals:arcane_infused_netherite_ingot",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#43D6CD",
+        "compactmachines:room_template": "compactmachines:giant"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_colossal",
+    "size": 7,
+    "wall": "compactmachines:wall",
+    "wall_count": 218,
+    "core": "cataclysm:witherite_block",
+    "catalyst": "avaritia:blaze_cube",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#423F42",
+        "compactmachines:room_template": "compactmachines:colossal"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/compact_machine_soaryn",
+    "size": 9,
+    "wall": "compactmachines:wall",
+    "wall_count": 386,
+    "core": "avaritia:neutron",
+    "catalyst": "anvilcraft:charged_neutronium_ingot",
+    "output": {
+      "components": {
+        "compactmachines:machine_color": "#7B2FBE",
+        "compactmachines:room_template": "compactmachines:soaryn"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  }
+]

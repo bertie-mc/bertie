@@ -1,6 +1,6 @@
 # The bertie modlist
 
-## Mods (439)
+## Mods (438)
 
 | Mod |
 |---|
@@ -88,7 +88,6 @@
 | `commandkeys` |
 | `compact-crafting-updated` |
 | `compact-machines` |
-| `compactmachinespor` |
 | `complementary-reimagined` |
 | `controlling` |
 | `convenient-effects` |

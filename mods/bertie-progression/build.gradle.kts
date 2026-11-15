@@ -112,6 +112,8 @@ dependencies {
     testImplementation(deps.mekanism)
     testImplementation(deps.anvilcraft)
     testImplementation(deps.emi)
+    testRuntimeOnly(deps.compactCraftingUpdated)
+    testRuntimeOnly(deps.compactMachines)
 
     compileOnly(deps.pocketDimension1201)
     gametestImplementation(deps.pocketDimension1201)

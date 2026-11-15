@@ -1,0 +1,62 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " AAAAA ",
+    " ABBBA ",
+    " AAAAA ",
+    "  CCC  ",
+    "AAAAAAA",
+    "ADEFGDA",
+    "AAAAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "compactmachines:wall"
+    },
+    "B": {
+      "item": "oritech:enderic_lens"
+    },
+    "C": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "D": {
+      "item": "oritech:flux_gate"
+    },
+    "E": {
+      "item": "compactmachines:shrinking_module"
+    },
+    "F": {
+      "item": "mekanism:steel_casing"
+    },
+    "G": {
+      "item": "compactmachines:enlarging_module"
+    }
+  },
+  "result": {
+    "id": "compactcrafting:field_projector",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

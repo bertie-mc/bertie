@@ -51,6 +51,9 @@ Twelve research nodes use pack material costs while retaining native energy,
 time, effects and installation costs. [Cybernetics and refining](docs/cybernetics-refining.md)
 documents the material selection and storage policy.
 
+[Compact spaces](docs/compact-spaces.md) documents the Wall/room Miniaturization
+recipes, captured machine crafts, native EMI views and revised storage parts.
+
 ### Blocks
 
 Adjacent Negative Matter blocks form a continuous inward-facing shell. The pale pattern

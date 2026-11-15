@@ -1,0 +1,109 @@
+{
+  "type": "compactcrafting:miniaturization",
+  "recipeSize": 3,
+  "craftingTime": 200,
+  "layers": [
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "core",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    }
+  ],
+  "components": {
+    "wall": {
+      "type": "compactcrafting:block",
+      "block": "compactmachines:wall"
+    },
+    "core": {
+      "type": "compactcrafting:block",
+      "block": "magitech:fluorite_block"
+    }
+  },
+  "catalyst": {
+    "id": "irons_spellbooks:arcane_ingot",
+    "count": 1
+  },
+  "outputs": [
+    {
+      "components": {
+        "compactmachines:machine_color": "#D4D2D2",
+        "compactmachines:room_template": "compactmachines:small"
+      },
+      "count": 1,
+      "id": "compactmachines:new_machine"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    }
+  ]
+}

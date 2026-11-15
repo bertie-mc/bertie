@@ -1,0 +1,97 @@
+{
+  "type": "compactcrafting:miniaturization",
+  "recipeSize": 3,
+  "craftingTime": 200,
+  "layers": [
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "-",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ],
+        [
+          "wall",
+          "wall",
+          "wall"
+        ]
+      ]
+    }
+  ],
+  "components": {
+    "wall": {
+      "type": "compactcrafting:block",
+      "block": "minecraft:polished_deepslate"
+    }
+  },
+  "catalyst": {
+    "id": "anvilcraft:levitation_powder",
+    "count": 1
+  },
+  "outputs": [
+    {
+      "id": "compactmachines:wall",
+      "count": 4
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    }
+  ]
+}

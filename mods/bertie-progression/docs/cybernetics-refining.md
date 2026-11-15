@@ -5,7 +5,7 @@ The twelve selected research nodes retain native energy, timing, requirements,
 effects and application costs; only their item research costs change. The exact
 cost arrays are authored in `texture-work/augmentation_research_costs.json`.
 
-Empty Reinforced Carbon Sheet uses the 7×7 End Table. Refinery combines one Empty
+Untreated Reinforced Carbon Sheet uses the 7×7 End Table. Refinery combines one Untreated
 Sheet and 3,000 mB Light Naphtha into one Reinforced Carbon Sheet. Plating crafts
 produce eight blocks, Carbon Plating uses Fibre in the centre, and the four
 Assembler alternatives are disabled.

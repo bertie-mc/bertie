@@ -84,7 +84,6 @@ dependencies {
     packComponents(deps.commandkeys)
     packComponents(deps.compactCraftingUpdated)
     packComponents(deps.compactMachines)
-    packComponents(deps.compactmachinespor)
     packComponents(deps.complementaryReimagined)
     packComponents(deps.convenientEffects)
     packComponents(deps.controlling)

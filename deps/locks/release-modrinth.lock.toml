@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "1a4f2880624187d36454d9ff56a334e22977e446a47fb37a7ff3f15fa2637bcb"
+inputs-hash = "27e316f0edcddbe09634b7a138ba176d1e9e14afce17f3b4494f1f1304930ce3"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -281,10 +281,6 @@ mod = "curseforge:1355698:7077089"
 [components."compact-machines"]
 any = "curseforge:224218:7621553"
 mod = "curseforge:224218:7621553"
-
-[components."compactmachinespor"]
-any = "modrinth:kgPopSTU:VHDEOhC6"
-mod = "modrinth:kgPopSTU:VHDEOhC6"
 
 [components."complementary-reimagined"]
 any = "modrinth:HVnmMxH1:yCCduG44"
@@ -8426,26 +8422,6 @@ version-id = "Jy5V5FNj"
 provides = ["visualworkbench"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.1,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:kgPopSTU:VHDEOhC6"]
-name = "compactmachinespor"
-component = "compactmachinespor"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "kgPopSTU"
-version = "VHDEOhC6"
-filename = "compactmachinespor-0.9.1.jar"
-project-id = "kgPopSTU"
-version-id = "VHDEOhC6"
-provides = ["compactmachinespor"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:224218:7621553", "mod-id" = "compactmachines", "version-range" = "[7.0.81,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

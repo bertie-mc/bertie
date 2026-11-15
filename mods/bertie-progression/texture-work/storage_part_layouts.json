@@ -1,0 +1,825 @@
+{
+  "processor_substitutions": [
+    {
+      "output": "refinedstorage:raw_improved_processor",
+      "replace_silicon_with": "refinedstorage:raw_basic_processor"
+    },
+    {
+      "output": "refinedstorage:raw_advanced_processor",
+      "replace_silicon_with": "refinedstorage:raw_improved_processor"
+    },
+    {
+      "output": "extradisks:raw_withering_processor",
+      "replace_silicon_with": "refinedstorage:raw_advanced_processor"
+    }
+  ],
+  "families": {
+    "fluid": [
+      {
+        "tier": 1,
+        "recipe": "refinedstorage:64b_fluid_storage_part",
+        "output": "refinedstorage:64b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "MSM",
+            "GMG",
+            "SGS"
+          ],
+          "key": {
+            "M": {
+              "item": "refinedstorage:quartz_enriched_copper"
+            },
+            "S": {
+              "tag": "c:silicon"
+            },
+            "G": {
+              "tag": "c:glass_blocks"
+            }
+          }
+        }
+      },
+      {
+        "tier": 2,
+        "recipe": "refinedstorage:256b_fluid_storage_part",
+        "output": "refinedstorage:256b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "slag:rose_gold_ingot"
+            },
+            "P": {
+              "item": "refinedstorage:basic_processor"
+            },
+            "D": {
+              "item": "refinedstorage:64b_fluid_storage_part"
+            },
+            "C": {
+              "item": "mekanism:basic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 3,
+        "recipe": "refinedstorage:1024b_fluid_storage_part",
+        "output": "refinedstorage:1024b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_infused"
+            },
+            "P": {
+              "item": "refinedstorage:basic_processor"
+            },
+            "D": {
+              "item": "refinedstorage:256b_fluid_storage_part"
+            },
+            "C": {
+              "item": "mekanism:advanced_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 4,
+        "recipe": "refinedstorage:4096b_fluid_storage_part",
+        "output": "refinedstorage:4096b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_reinforced"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage:1024b_fluid_storage_part"
+            },
+            "C": {
+              "item": "mekanism:elite_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 5,
+        "recipe": "extradisks:part/16384b_fluid_storage_part",
+        "output": "extradisks:16384b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_atomic"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage:4096b_fluid_storage_part"
+            },
+            "C": {
+              "item": "mekanism:ultimate_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 6,
+        "recipe": "extradisks:part/65536b_fluid_storage_part",
+        "output": "extradisks:65536b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_radiance"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/fluids/16384b"
+            },
+            "C": {
+              "item": "mekanism_extras:absolute_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 7,
+        "recipe": "extradisks:part/262144b_fluid_storage_part",
+        "output": "extradisks:262144b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_thermonuclear"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/fluids/65536b"
+            },
+            "C": {
+              "item": "mekanism_extras:supreme_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 8,
+        "recipe": "extradisks:part/1048576b_fluid_storage_part",
+        "output": "extradisks:1048576b_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_shining"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/fluids/262144b"
+            },
+            "C": {
+              "item": "mekanism_extras:cosmic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 9,
+        "recipe": "extradisks:part/infinite_fluid_storage_part",
+        "output": "extradisks:infinite_fluid_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_spectrum"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/fluids/1048576b"
+            },
+            "C": {
+              "item": "mekanism_extras:infinite_control_circuit"
+            }
+          }
+        }
+      }
+    ],
+    "chemical": [
+      {
+        "tier": 1,
+        "recipe": "refinedstorage_mekanism_integration:64b_chemical_storage_part",
+        "output": "refinedstorage_mekanism_integration:64b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "MSM",
+            "GMG",
+            "SGS"
+          ],
+          "key": {
+            "M": {
+              "item": "mekanism:ingot_osmium"
+            },
+            "S": {
+              "tag": "c:silicon"
+            },
+            "G": {
+              "tag": "c:glass_blocks"
+            }
+          }
+        }
+      },
+      {
+        "tier": 2,
+        "recipe": "refinedstorage_mekanism_integration:256b_chemical_storage_part",
+        "output": "refinedstorage_mekanism_integration:256b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "slag:rose_gold_ingot"
+            },
+            "P": {
+              "item": "refinedstorage:basic_processor"
+            },
+            "D": {
+              "item": "refinedstorage_mekanism_integration:64b_chemical_storage_part"
+            },
+            "C": {
+              "item": "mekanism:basic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 3,
+        "recipe": "refinedstorage_mekanism_integration:1024b_chemical_storage_part",
+        "output": "refinedstorage_mekanism_integration:1024b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_infused"
+            },
+            "P": {
+              "item": "refinedstorage:basic_processor"
+            },
+            "D": {
+              "item": "refinedstorage_mekanism_integration:256b_chemical_storage_part"
+            },
+            "C": {
+              "item": "mekanism:advanced_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 4,
+        "recipe": "refinedstorage_mekanism_integration:8192b_chemical_storage_part",
+        "output": "refinedstorage_mekanism_integration:8192b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_reinforced"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage_mekanism_integration:1024b_chemical_storage_part"
+            },
+            "C": {
+              "item": "mekanism:elite_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 5,
+        "recipe": "extradisks:part/65536b_chemical_storage_part",
+        "output": "extradisks:65536b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_atomic"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage_mekanism_integration:8192b_chemical_storage_part"
+            },
+            "C": {
+              "item": "mekanism:ultimate_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 6,
+        "recipe": "extradisks:part/262144b_chemical_storage_part",
+        "output": "extradisks:262144b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_radiance"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/chemical/65536b"
+            },
+            "C": {
+              "item": "mekanism_extras:absolute_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 7,
+        "recipe": "extradisks:part/1048576b_chemical_storage_part",
+        "output": "extradisks:1048576b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_thermonuclear"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/chemical/262144b"
+            },
+            "C": {
+              "item": "mekanism_extras:supreme_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 8,
+        "recipe": "extradisks:part/8388608b_chemical_storage_part",
+        "output": "extradisks:8388608b_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_shining"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/chemical/1048576b"
+            },
+            "C": {
+              "item": "mekanism_extras:cosmic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 9,
+        "recipe": "extradisks:part/infinite_chemical_storage_part",
+        "output": "extradisks:infinite_chemical_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_spectrum"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/chemical/8388608b"
+            },
+            "C": {
+              "item": "mekanism_extras:infinite_control_circuit"
+            }
+          }
+        }
+      }
+    ],
+    "item": [
+      {
+        "tier": 1,
+        "recipe": "refinedstorage:1k_storage_part",
+        "output": "refinedstorage:1k_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "MSM",
+            "GMG",
+            "SGS"
+          ],
+          "key": {
+            "M": {
+              "item": "refinedstorage:quartz_enriched_iron"
+            },
+            "S": {
+              "tag": "c:silicon"
+            },
+            "G": {
+              "tag": "c:glass_blocks"
+            }
+          }
+        }
+      },
+      {
+        "tier": 2,
+        "recipe": "refinedstorage:4k_storage_part",
+        "output": "refinedstorage:4k_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "slag:rose_gold_ingot"
+            },
+            "P": {
+              "item": "refinedstorage:basic_processor"
+            },
+            "D": {
+              "item": "refinedstorage:1k_storage_part"
+            },
+            "C": {
+              "item": "mekanism:basic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 3,
+        "recipe": "refinedstorage:16k_storage_part",
+        "output": "refinedstorage:16k_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_infused"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage:4k_storage_part"
+            },
+            "C": {
+              "item": "mekanism:advanced_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 4,
+        "recipe": "refinedstorage:64k_storage_part",
+        "output": "refinedstorage:64k_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_reinforced"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage:16k_storage_part"
+            },
+            "C": {
+              "item": "mekanism:elite_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 5,
+        "recipe": "extradisks:part/256k_item_storage_part",
+        "output": "extradisks:256k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism:alloy_atomic"
+            },
+            "P": {
+              "item": "refinedstorage:improved_processor"
+            },
+            "D": {
+              "item": "refinedstorage:64k_storage_part"
+            },
+            "C": {
+              "item": "mekanism:ultimate_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 6,
+        "recipe": "extradisks:part/1024k_item_storage_part",
+        "output": "extradisks:1024k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_radiance"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/256k"
+            },
+            "C": {
+              "item": "mekanism_extras:absolute_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 7,
+        "recipe": "extradisks:part/4096k_item_storage_part",
+        "output": "extradisks:4096k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_thermonuclear"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/1024k"
+            },
+            "C": {
+              "item": "mekanism_extras:supreme_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 8,
+        "recipe": "extradisks:part/16384k_item_storage_part",
+        "output": "extradisks:16384k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_thermonuclear"
+            },
+            "P": {
+              "item": "refinedstorage:advanced_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/4096k"
+            },
+            "C": {
+              "item": "mekanism_extras:supreme_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 9,
+        "recipe": "extradisks:part/65536k_item_storage_part",
+        "output": "extradisks:65536k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_shining"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/16384k"
+            },
+            "C": {
+              "item": "mekanism_extras:cosmic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 10,
+        "recipe": "extradisks:part/262144k_item_storage_part",
+        "output": "extradisks:262144k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_shining"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/65536k"
+            },
+            "C": {
+              "item": "mekanism_extras:cosmic_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 11,
+        "recipe": "extradisks:part/1048576k_item_storage_part",
+        "output": "extradisks:1048576k_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_spectrum"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/262144k"
+            },
+            "C": {
+              "item": "mekanism_extras:infinite_control_circuit"
+            }
+          }
+        }
+      },
+      {
+        "tier": 12,
+        "recipe": "extradisks:part/infinite_item_storage_part",
+        "output": "extradisks:infinite_item_storage_part",
+        "count": 1,
+        "overrides": {
+          "pattern": [
+            "APA",
+            "DCD",
+            "PDP"
+          ],
+          "key": {
+            "A": {
+              "item": "mekanism_extras:alloy_spectrum"
+            },
+            "P": {
+              "item": "extradisks:withering_processor"
+            },
+            "D": {
+              "tag": "refinedstorage:parts/items/1048576k"
+            },
+            "C": {
+              "item": "mekanism_extras:infinite_control_circuit"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

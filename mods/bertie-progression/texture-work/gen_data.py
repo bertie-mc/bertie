@@ -5944,4 +5944,7 @@ _apply_late_processing(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 from cybernetics_refining_recipes import apply as _apply_cybernetics_refining
 _apply_cybernetics_refining(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 
+from compact_storage_recipes import apply as _apply_compact_storage
+_apply_compact_storage(ROOT, _recipe_src, _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

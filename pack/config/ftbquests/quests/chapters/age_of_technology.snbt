@@ -2496,6 +2496,7 @@
 			}]
 		}
 		{
+			size: 2.0d
 			y: 0.75d
 			x: 30.0d
 			dependencies: ["5C00000000000098"]
@@ -2513,6 +2514,20 @@
 				count: 1L
 				consume_items: false
 				item: { count: 1 id: "oritech:simple_augment_station" }
+				type: "item"
+			}]
+		}
+		{
+			y: -4.5d
+			x: 24.0d
+			dependencies: ["5C0000000000935C"]
+			id: "5C000000000000B9"
+			icon: { id: "oritech:target_designator" }
+			tasks: [{
+				id: "5C000000010000B9"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "oritech:target_designator" }
 				type: "item"
 			}]
 		}

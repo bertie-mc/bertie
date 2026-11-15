@@ -1003,3 +1003,17 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.bertieprogression]]
+modId="compactcrafting"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.bertieprogression]]
+modId="powah"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MSM",
+    "GMG",
+    "SGS"
+  ],
+  "key": {
+    "M": {
+      "item": "refinedstorage:quartz_enriched_copper"
+    },
+    "S": {
+      "tag": "c:silicon"
+    },
+    "G": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:64b_fluid_storage_part"
+  }
+}

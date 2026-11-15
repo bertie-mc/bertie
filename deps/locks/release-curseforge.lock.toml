@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "92615806714196c2dc2b40195af0f58fe283f4a7ac2a76468d6bbb37dddd69ea"
+inputs-hash = "4835a0d968c54213a9824ceb6db27d16d6484466a6bf9270ccf0063f381ab06f"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -281,10 +281,6 @@ mod = "curseforge:1355698:7077089"
 [components."compact-machines"]
 any = "curseforge:224218:7621553"
 mod = "curseforge:224218:7621553"
-
-[components."compactmachinespor"]
-any = "curseforge:1534635:8062363"
-mod = "curseforge:1534635:8062363"
 
 [components."complementary-reimagined"]
 any = "curseforge:627557:8123287"
@@ -4386,27 +4382,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:456239:7151100", "namespace" = "easymagic", "reason" = "ships data/easymagic/", "origin" = "archive-data" }]
-
-[artifacts."curseforge:1534635:8062363"]
-name = "compactmachinespor"
-component = "compactmachinespor"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "compactmachinespor-1534635"
-version = "8062363"
-filename = "compactmachinespor-0.9.1.jar"
-project-id = 1534635
-slug = "compactmachinespor"
-file-id = 8062363
-provides = ["compactmachinespor"]
-bundled-provides = []
-required = [{ "artifact" = "curseforge:224218:7621553", "mod-id" = "compactmachines", "version-range" = "[7.0.81,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."curseforge:1544803:8103104"]
 name = "calcmod-neoforged"

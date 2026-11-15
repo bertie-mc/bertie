@@ -1,0 +1,47 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAAAA",
+    "ABCBA",
+    "ACDCA",
+    "ABCBA",
+    "AAAAA"
+  ],
+  "key": {
+    "A": {
+      "item": "anvilcraft:ember_metal_ingot"
+    },
+    "B": {
+      "item": "refinedstorage:destruction_core"
+    },
+    "C": {
+      "item": "minecraft:piston"
+    },
+    "D": {
+      "item": "anvilcraft:space_overcompressor"
+    }
+  },
+  "result": {
+    "id": "compactmachines:shrinking_module",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactmachines"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
+}

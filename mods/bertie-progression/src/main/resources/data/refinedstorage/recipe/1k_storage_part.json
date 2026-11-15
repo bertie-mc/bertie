@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MSM",
+    "GMG",
+    "SGS"
+  ],
+  "key": {
+    "M": {
+      "item": "refinedstorage:quartz_enriched_iron"
+    },
+    "S": {
+      "tag": "c:silicon"
+    },
+    "G": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:1k_storage_part"
+  }
+}
