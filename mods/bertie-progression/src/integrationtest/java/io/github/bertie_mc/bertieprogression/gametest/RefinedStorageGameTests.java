@@ -27,13 +27,14 @@ public final class RefinedStorageGameTests {
         var level = helper.getLevel();
         var pos = helper.absolutePos(new BlockPos(2, 2, 2));
         String[] elements = {"fire", "ice", "lightning"};
+        String[] inputs = {"lightning", "fire", "ice"};
         String[] bases = {
             "anvilcraft:ember_metal_block",
             "anvilcraft:frost_metal_block",
             "elemental_metals:lightning_infused_netherite_block"
         };
         for (int i = 0; i < elements.length; i++) {
-            var target = block("iceandfire:dragonsteel_" + elements[i] + "_block");
+            var target = block("iceandfire:dragonsteel_" + inputs[i] + "_block");
             var base = block(bases[i]);
             for (var anvilBlock : List.of(Blocks.ANVIL, block("anvilcraft:royal_anvil"))) {
                 clearDrops(level, pos);
@@ -67,7 +68,7 @@ public final class RefinedStorageGameTests {
     public static void collisionRejectsWrongSupportsAndLowSpeed(GameTestHelper helper) {
         var level = helper.getLevel();
         var pos = helper.absolutePos(new BlockPos(2, 2, 2));
-        var target = block("iceandfire:dragonsteel_fire_block");
+        var target = block("iceandfire:dragonsteel_lightning_block");
         var base = block("anvilcraft:ember_metal_block");
         for (boolean wrongBase : List.of(true, false)) {
             clearDrops(level, pos);
@@ -92,7 +93,8 @@ public final class RefinedStorageGameTests {
         var level = helper.getLevel();
         var pos = helper.absolutePos(new BlockPos(3, 2, 2));
         clearDrops(level, pos);
-        level.setBlockAndUpdate(pos, block("iceandfire:dragonsteel_fire_block").defaultBlockState());
+        level.setBlockAndUpdate(
+                pos, block("iceandfire:dragonsteel_lightning_block").defaultBlockState());
         level.setBlockAndUpdate(
                 pos.below(), block("anvilcraft:ember_metal_block").defaultBlockState());
         var anvil = FallingBlockEntity.fall(level, pos.west(2), Blocks.ANVIL.defaultBlockState());

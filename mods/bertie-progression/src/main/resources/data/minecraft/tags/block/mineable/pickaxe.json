@@ -146,23 +146,7 @@
       "required": false
     },
     {
-      "id": "oritech:energy_pipe_duct_block",
-      "required": false
-    },
-    {
-      "id": "oritech:energy_pipe",
-      "required": false
-    },
-    {
       "id": "oritech:fertilizer_block",
-      "required": false
-    },
-    {
-      "id": "oritech:fluid_pipe_duct_block",
-      "required": false
-    },
-    {
-      "id": "oritech:fluid_pipe",
       "required": false
     },
     {
@@ -171,22 +155,6 @@
     },
     {
       "id": "oritech:foundry_block",
-      "required": false
-    },
-    {
-      "id": "oritech:fragment_forge_block",
-      "required": false
-    },
-    {
-      "id": "oritech:framed_energy_pipe",
-      "required": false
-    },
-    {
-      "id": "oritech:framed_fluid_pipe",
-      "required": false
-    },
-    {
-      "id": "oritech:framed_item_pipe",
       "required": false
     },
     {
@@ -215,22 +183,6 @@
     },
     {
       "id": "oritech:iron_plating_stairs",
-      "required": false
-    },
-    {
-      "id": "oritech:item_filter_block",
-      "required": false
-    },
-    {
-      "id": "oritech:item_pipe_duct_block",
-      "required": false
-    },
-    {
-      "id": "oritech:item_pipe",
-      "required": false
-    },
-    {
-      "id": "oritech:large_storage_block",
       "required": false
     },
     {
@@ -378,10 +330,6 @@
       "required": false
     },
     {
-      "id": "oritech:pipe_booster_block",
-      "required": false
-    },
-    {
       "id": "oritech:placer_block",
       "required": false
     },
@@ -490,14 +438,6 @@
       "required": false
     },
     {
-      "id": "oritech:spawner_cage_block",
-      "required": false
-    },
-    {
-      "id": "oritech:spawner_controller_block",
-      "required": false
-    },
-    {
       "id": "oritech:steam_boiler_addon",
       "required": false
     },
@@ -523,10 +463,6 @@
     },
     {
       "id": "oritech:tech_lever",
-      "required": false
-    },
-    {
-      "id": "oritech:transparent_item_pipe",
       "required": false
     },
     {
@@ -571,14 +507,6 @@
     },
     {
       "id": "oritech:transparent_item_pipe_connection",
-      "required": false
-    },
-    {
-      "id": "oritech:small_tank_block",
-      "required": false
-    },
-    {
-      "id": "oritech:small_storage_block",
       "required": false
     },
     {
@@ -774,18 +702,6 @@
       "required": false
     },
     {
-      "id": "pastel:topaz_cluster",
-      "required": false
-    },
-    {
-      "id": "pastel:citrine_cluster",
-      "required": false
-    },
-    {
-      "id": "pastel:onyx_cluster",
-      "required": false
-    },
-    {
       "id": "pastel:moonstone_cluster",
       "required": false
     },
@@ -822,23 +738,7 @@
       "required": false
     },
     {
-      "id": "pastel:citrine_block",
-      "required": false
-    },
-    {
-      "id": "pastel:budding_citrine",
-      "required": false
-    },
-    {
       "id": "#pastel:topaz_buds",
-      "required": false
-    },
-    {
-      "id": "pastel:topaz_block",
-      "required": false
-    },
-    {
-      "id": "pastel:budding_topaz",
       "required": false
     },
     {
@@ -847,10 +747,6 @@
     },
     {
       "id": "pastel:onyx_block",
-      "required": false
-    },
-    {
-      "id": "pastel:budding_onyx",
       "required": false
     },
     {
@@ -870,39 +766,7 @@
       "required": false
     },
     {
-      "id": "pastel:cinderhearth",
-      "required": false
-    },
-    {
-      "id": "pastel:crystallarieum",
-      "required": false
-    },
-    {
-      "id": "pastel:color_picker",
-      "required": false
-    },
-    {
-      "id": "pastel:crystal_apothecary",
-      "required": false
-    },
-    {
-      "id": "pastel:potion_workshop",
-      "required": false
-    },
-    {
-      "id": "pastel:spirit_instiller",
-      "required": false
-    },
-    {
       "id": "pastel:memory",
-      "required": false
-    },
-    {
-      "id": "pastel:ender_glass",
-      "required": false
-    },
-    {
-      "id": "pastel:ominous_sapling",
       "required": false
     },
     {
@@ -926,35 +790,7 @@
       "required": false
     },
     {
-      "id": "pastel:fabrication_chest",
-      "required": false
-    },
-    {
       "id": "pastel:ender_dropper",
-      "required": false
-    },
-    {
-      "id": "pastel:ender_hopper",
-      "required": false
-    },
-    {
-      "id": "pastel:radiating_ender",
-      "required": false
-    },
-    {
-      "id": "pastel:shimmerstone_block",
-      "required": false
-    },
-    {
-      "id": "pastel:azurite_block",
-      "required": false
-    },
-    {
-      "id": "pastel:stratine_floatblock",
-      "required": false
-    },
-    {
-      "id": "pastel:paltaeria_floatblock",
       "required": false
     },
     {
@@ -970,27 +806,11 @@
       "required": false
     },
     {
-      "id": "pastel:item_roundel",
-      "required": false
-    },
-    {
-      "id": "pastel:present",
-      "required": false
-    },
-    {
       "id": "pastel:bismuth_block",
       "required": false
     },
     {
       "id": "pastel:malachite_block",
-      "required": false
-    },
-    {
-      "id": "pastel:bloodstone_block",
-      "required": false
-    },
-    {
-      "id": "pastel:enchanter",
       "required": false
     },
     {
@@ -1022,10 +842,6 @@
       "required": false
     },
     {
-      "id": "pastel:black_hole_chest",
-      "required": false
-    },
-    {
       "id": "pastel:ethereal_platform",
       "required": false
     },
@@ -1044,23 +860,16 @@
     {
       "id": "pastel:neolith_block",
       "required": false
-    }
+    },
+    "bertieprogression:sentient_casing"
   ],
   "remove": [
     {
-      "id": "oritech:plastic_block",
+      "id": "anvilcraft:raw_uranium_block",
       "required": false
     },
     {
-      "id": "oritech:raw_uranium_block",
-      "required": false
-    },
-    {
-      "id": "oritech:steel_block",
-      "required": false
-    },
-    {
-      "id": "stellaris:mars_ostrum_ore",
+      "id": "mekanism:block_steel",
       "required": false
     }
   ]

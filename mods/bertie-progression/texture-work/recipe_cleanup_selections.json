@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-16",
+  "status": "Selected specifications for a later implementation batch; no product changes.",
+  "slab_returns": "Preserve existing return recipes/layouts; deduplicate equivalent definitions without changing availability.",
+  "chiseled": {
+    "pattern": [
+      " B ",
+      "BBB",
+      " B "
+    ],
+    "output_count": 5,
+    "brick_inputs": {
+      "antarchy:chiseled_broodstone": "antarchy:broodstone_bricks",
+      "antarchy:chiseled_nyxite": "antarchy:nyxite_bricks",
+      "antarchy:chiseled_shellstone": "antarchy:shellstone_bricks",
+      "cataclysm:chiseled_azure_seastone": "cataclysm:azure_seastone_bricks",
+      "forbidden_arcanus:chiseled_polished_darkstone": "forbidden_arcanus:polished_darkstone_bricks",
+      "iceandfire:dread_stone_bricks_chiseled": "iceandfire:dread_stone_bricks",
+      "malum:chiseled_tainted_rock": "malum:tainted_rock_bricks",
+      "malum:chiseled_twisted_rock": "malum:twisted_rock_bricks",
+      "minecraft:chiseled_cinnabar": "minecraft:cinnabar_bricks",
+      "minecraft:chiseled_deepslate": "minecraft:deepslate_bricks",
+      "minecraft:chiseled_nether_bricks": "minecraft:nether_bricks",
+      "minecraft:chiseled_polished_blackstone": "minecraft:polished_blackstone_bricks",
+      "minecraft:chiseled_quartz_block": "minecraft:quartz_bricks",
+      "minecraft:chiseled_red_sandstone": "quark:red_sandstone_bricks",
+      "minecraft:chiseled_resin_bricks": "minecraft:resin_bricks",
+      "minecraft:chiseled_sandstone": "quark:sandstone_bricks",
+      "minecraft:chiseled_sulfur": "minecraft:sulfur_bricks",
+      "minecraft:chiseled_tuff": "minecraft:tuff_bricks",
+      "stellaris:chiseled_moon_stone": "stellaris:moon_stone_bricks",
+      "stellaris:chiseled_venus_stone": "stellaris:venus_stone_bricks",
+      "armageddon_mod:chiseled_bloody_bricks": "armageddon_mod:bloody_bricks",
+      "armageddon_mod:chiseled_elvenite_bricks": "armageddon_mod:elvenite_bricks",
+      "armageddon_mod:chiseled_helionite_bricks": "armageddon_mod:helionite_bricks",
+      "armageddon_mod:chiseled_voiderite_bricks": "armageddon_mod:voiderite_bricks",
+      "quark:chiseled_andesite_bricks": "quark:andesite_bricks",
+      "quark:chiseled_calcite_bricks": "quark:calcite_bricks",
+      "quark:chiseled_diorite_bricks": "quark:diorite_bricks",
+      "quark:chiseled_dripstone_bricks": "quark:dripstone_bricks",
+      "quark:chiseled_granite_bricks": "quark:granite_bricks",
+      "quark:chiseled_jasper_bricks": "quark:jasper_bricks",
+      "quark:chiseled_limestone_bricks": "quark:limestone_bricks",
+      "quark:chiseled_myalite_bricks": "quark:myalite_bricks",
+      "quark:chiseled_shale_bricks": "quark:shale_bricks"
+    },
+    "fallback_inputs": {
+      "antarchy:chiseled_dream_sandstone": "antarchy:cut_dream_sandstone",
+      "antarchy:chiseled_titanium": "antarchy:cut_titanium",
+      "antarchy:chiseled_uranium": "antarchy:cut_uranium",
+      "dungeonsdelight:chiseled_stained_scrap": "dungeonsdelight:cut_stained_scrap",
+      "forbidden_arcanus:chiseled_arcane_polished_darkstone": "forbidden_arcanus:arcane_polished_darkstone",
+      "minecraft:chiseled_copper": "minecraft:cut_copper",
+      "minecraft:exposed_chiseled_copper": "minecraft:exposed_cut_copper",
+      "minecraft:oxidized_chiseled_copper": "minecraft:oxidized_cut_copper",
+      "minecraft:waxed_chiseled_copper": "minecraft:waxed_cut_copper",
+      "minecraft:waxed_exposed_chiseled_copper": "minecraft:waxed_exposed_cut_copper",
+      "minecraft:waxed_oxidized_chiseled_copper": "minecraft:waxed_oxidized_cut_copper",
+      "minecraft:waxed_weathered_chiseled_copper": "minecraft:waxed_weathered_cut_copper",
+      "minecraft:weathered_chiseled_copper": "minecraft:weathered_cut_copper"
+    }
+  },
+  "mosaics": {
+    "pattern": [
+      " PP",
+      "PPP",
+      "PPP"
+    ],
+    "input_count": 8,
+    "output_count": 8,
+    "inputs": {
+      "burnt:burnt_bamboo_mosaic_planks": "burnt:burnt_bamboo_planks",
+      "dungeonsdelight:wormwood_mosaic": "dungeonsdelight:wormwood_planks",
+      "minecraft:bamboo_mosaic": "minecraft:bamboo_planks",
+      "mynethersdelight:powdery_mosaic": "mynethersdelight:powdery_planks"
+    },
+    "layout_rule": "Eight full planks in a 3x3 square with the top-left corner empty; 8 -> 8, avoiding chest rings."
+  },
+  "pillars": {
+    "pattern": [
+      " P ",
+      " P ",
+      " P "
+    ],
+    "input_count": 3,
+    "output_count": 3,
+    "inputs": {
+      "quark:andesite_pillar": "minecraft:polished_andesite",
+      "quark:diorite_pillar": "minecraft:polished_diorite",
+      "quark:granite_pillar": "minecraft:polished_granite",
+      "quark:calcite_pillar": "pastel:polished_calcite",
+      "quark:dripstone_pillar": "quark:polished_dripstone",
+      "quark:jasper_pillar": "quark:polished_jasper",
+      "quark:limestone_pillar": "quark:polished_limestone",
+      "quark:shale_pillar": "quark:polished_shale",
+      "quark:iron_pillar": "quark:iron_plate",
+      "quark:midori_pillar": "quark:midori_block"
+    },
+    "selection_rule": "Polished matching stone when available; existing full Iron Plate/Midori Block otherwise. Pastel Polished Calcite follows the selected Calcite family."
+  },
+  "shaped_crafts": [
+    {
+      "output": "berlordsfoodsystem:lunchbox",
+      "count": 1,
+      "pattern": [
+        "PPP",
+        "I I",
+        "III"
+      ],
+      "key": {
+        "P": "#minecraft:planks",
+        "I": "minecraft:iron_ingot"
+      }
+    },
+    {
+      "output": "minecraft:quartz_block",
+      "count": 1,
+      "pattern": [
+        "QQQ",
+        "QQQ",
+        "QQQ"
+      ],
+      "key": {
+        "Q": "minecraft:quartz"
+      }
+    },
+    {
+      "output": "minecraft:prismarine",
+      "count": 1,
+      "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+      ],
+      "key": {
+        "S": "minecraft:prismarine_shard"
+      }
+    },
+    {
+      "output": "cataclysm:obsidian_bricks",
+      "count": 8,
+      "pattern": [
+        "OOO",
+        "O O",
+        "OOO"
+      ],
+      "key": {
+        "O": "minecraft:obsidian"
+      }
+    },
+    {
+      "output": "minecraft:iron_bars",
+      "count": 16,
+      "pattern": [
+        "I I",
+        " I ",
+        "I I"
+      ],
+      "key": {
+        "I": "#c:ingots/iron"
+      }
+    },
+    {
+      "output": "minecraft:iron_trapdoor",
+      "count": 2,
+      "pattern": [
+        "III",
+        "III"
+      ],
+      "key": {
+        "I": "#c:ingots/iron"
+      }
+    },
+    {
+      "output": "antarchy:titanium_trapdoor",
+      "count": 2,
+      "pattern": [
+        "TTT",
+        "TTT"
+      ],
+      "key": {
+        "T": "anvilcraft:titanium_ingot"
+      }
+    },
+    {
+      "output": "slag:deep_alloy_bricks",
+      "count": 4,
+      "pattern": [
+        "IS",
+        "IS"
+      ],
+      "key": {
+        "I": "#c:ingots/deep_alloy",
+        "S": "berlordscarving:deep_alloy_slate"
+      }
+    },
+    {
+      "output": "minecraft:amethyst_block",
+      "count": 1,
+      "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+      ],
+      "key": {
+        "A": "minecraft:amethyst_shard"
+      }
+    },
+    {
+      "output": "stellaris:venus_smooth_sandstone",
+      "count": 8,
+      "pattern": [
+        "VVV",
+        "V V",
+        "VVV"
+      ],
+      "key": {
+        "V": "stellaris:venus_sandstone"
+      }
+    }
+  ],
+  "cobblestone_bricks": {
+    "output": "quark:cobblestone_bricks",
+    "method": "stonecutting only",
+    "input": "minecraft:cobblestone",
+    "input_count": 1,
+    "output_count": 1
+  },
+  "amethyst_polishing": {
+    "input": "minecraft:amethyst_block",
+    "output": "pastel:polished_amethyst_block",
+    "method": "smelting",
+    "input_count": 1,
+    "output_count": 1,
+    "remove_direct_shard_craft": true,
+    "remove_crafting_back_to_block_or_shards": true,
+    "boundary": "Remove direct inventory crafting/stonecutting reversals; do not infer a blanket ban on unrelated machine-processing routes."
+  },
+  "storage": {
+    "gunpowder": {
+      "keep": [
+        "anvilcraft:gunpowder_block"
+      ],
+      "retire": [
+        "cratedelight:gunpowder_bag",
+        "quark:gunpowder_sack"
+      ],
+      "appearance": "Retain AnvilCraft ID/class and mechanics; reference cratedelight:block/gunpowder_bag model and its existing textures for block and inventory appearance."
+    },
+    "sugar": {
+      "keep": [
+        "cratedelight:sugar_bag"
+      ],
+      "retire": [
+        "anvilcraft:sugar_block"
+      ]
+    },
+    "rotten_flesh": {
+      "keep": [
+        "frightsdelight:flesh_crate"
+      ],
+      "retire": [
+        "anvilcraft:rotten_flesh_block"
+      ]
+    },
+    "nether_wart": {
+      "keep": [
+        "minecraft:nether_wart_block",
+        "quark:nether_wart_sack"
+      ],
+      "retire": [],
+      "policy": "Explicit exception to one-form policy. Preserve both; no conflict change requested."
+    },
+    "charcoal": {
+      "keep": [
+        "mekanism:block_charcoal"
+      ],
+      "retire": [
+        "quark:charcoal_block"
+      ]
+    },
+    "sweet_berries": {
+      "keep": [
+        "cratedelight:berry_crate"
+      ],
+      "retire": [
+        "quark:berry_sack"
+      ]
+    },
+    "cocoa_beans": {
+      "keep": [
+        "cratedelight:cocoabeans_bag"
+      ],
+      "retire": [
+        "quark:cocoa_beans_sack"
+      ]
+    },
+    "glow_berries": {
+      "keep": [
+        "cratedelight:glowberry_crate"
+      ],
+      "retire": [
+        "quark:glowberry_sack"
+      ]
+    },
+    "plutonium": {
+      "keep": [
+        "anvilcraft:plutonium_block",
+        "stellaris:plutonium_block",
+        "anvilcraft:plutonium_ingot",
+        "stellaris:plutonium_ingot",
+        "anvilcraft:plutonium_nugget",
+        "stellaris:plutonium_nugget"
+      ],
+      "retire": [],
+      "policy": "Defer consolidation and conflicting routes for now. No form is retired by this batch."
+    }
+  },
+  "wood": {
+    "crafting_winner": "Handcrafted pillar trim",
+    "woods": [
+      "acacia",
+      "bamboo",
+      "birch",
+      "cherry",
+      "crimson",
+      "dark_oak",
+      "jungle",
+      "mangrove",
+      "oak",
+      "spruce",
+      "warped"
+    ],
+    "quark_vertical_planks": "Keep items available through woodcutting, 1 matching plank -> 1 vertical plank; remove competing grid crafts.",
+    "generation_requirement": "Explicitly preserve woodcutting availability even if Sawmill derives auto-recipes from the grid crafts being removed."
+  },
+  "calcite": {
+    "keep": [
+      "pastel:calcite_slab",
+      "pastel:calcite_stairs",
+      "pastel:calcite_wall"
+    ],
+    "replace": [
+      "quark:calcite_slab",
+      "quark:calcite_stairs",
+      "quark:calcite_wall"
+    ],
+    "preserve_native_pastel_counts": true
+  },
+  "ironwood_knife": {
+    "action": "Leave unchanged. No new duplicate-knife selection or forced merge.",
+    "evidence_boundary": "Only one obtainable knife is reported. Historical static recipe definitions are not proof of two active obtainable outputs; reproduce a live conflict before changing this case."
+  },
+  "charcoal_to_black_dye": {
+    "disable_recipe": "quark:tweaks/crafting/utility/misc/charcoal_to_black_dye",
+    "keep_malum_charcoal_fragments": true
+  },
+  "pastel_detectors": {
+    "retain_layout": [
+      "BBB",
+      "CQC",
+      "SSS"
+    ],
+    "change_slot": "center Q",
+    "weather_detector": "minecraft:gold_ingot",
+    "item_detector": "minecraft:prismarine",
+    "light_level_detector": "minecraft:quartz",
+    "other_inputs_unchanged": true,
+    "output_count": 1
+  },
+  "malum_runic_walls": {
+    "method": "stonecutting only",
+    "input_count": 1,
+    "output_count": 1,
+    "bases": [
+      "tainted_rock_bricks",
+      "small_tainted_rock_bricks",
+      "tainted_rock_tiles",
+      "twisted_rock_bricks",
+      "small_twisted_rock_bricks",
+      "twisted_rock_tiles"
+    ],
+    "input_rule": "Use the matching ordinary base block from the current recipe; retain any existing additional valid stonecutting paths.",
+    "plain_walls": "Keep ordinary crafting recipes."
+  },
+  "remaining_design_questions": [],
+  "technical_followups": [
+    "Revalidate current 0.49.0 resources; the original audit used 0.48.0.",
+    "Recheck deepslate empty-input observation at runtime rather than populating a nonempty tag.",
+    "Preserve material consumers/loot/quests when retiring forms, avoid compression loops, and do not transfer retired block-specific effects without an explicit spec.",
+    "D5 missing-ingredient cases still require mechanical triage before any material replacement questions."
+  ]
+}

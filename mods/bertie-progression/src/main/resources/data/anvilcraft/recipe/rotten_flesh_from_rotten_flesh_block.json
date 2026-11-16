@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "frightsdelight:flesh_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:rotten_flesh"
+  }
+}

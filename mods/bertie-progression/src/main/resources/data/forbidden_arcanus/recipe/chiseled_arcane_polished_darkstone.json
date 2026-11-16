@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "forbidden_arcanus:arcane_polished_darkstone"
+    }
+  },
+  "result": {
+    "id": "forbidden_arcanus:chiseled_arcane_polished_darkstone",
+    "count": 5
+  }
+}

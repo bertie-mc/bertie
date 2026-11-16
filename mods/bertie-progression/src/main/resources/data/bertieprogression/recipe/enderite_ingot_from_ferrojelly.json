@@ -1,0 +1,49 @@
+{
+  "type": "bertieprogression:reusable_table",
+  "pattern": [
+    "       ",
+    "JJJJJJJ",
+    "JEEEEEJ",
+    "JEJVJEJ",
+    "JEEEEEJ",
+    "JJJJJJJ",
+    "       "
+  ],
+  "key": {
+    "J": {
+      "item": "the_beyond:ferrojelly"
+    },
+    "E": {
+      "item": "magitech:ender_metal_ingot"
+    },
+    "V": {
+      "item": "cataclysm:void_core"
+    }
+  },
+  "tier": 3,
+  "result": {
+    "id": "cataclysm:enderite_ingot",
+    "count": 3
+  },
+  "catalyst": {
+    "item": "cataclysm:void_core"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "the_beyond"
+    }
+  ]
+}

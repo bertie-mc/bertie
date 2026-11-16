@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersdelight:golden_knife"
+  },
+  "addition": {
+    "item": "progression_reborn:rose_ingot"
+  },
+  "result": {
+    "id": "farmersknives:rose_knife"
+  },
+  "template": {
+    "item": "progression_reborn:rose_upgrade_smithing_template"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "progression_reborn"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:rose_knife"
+    }
+  ]
+}

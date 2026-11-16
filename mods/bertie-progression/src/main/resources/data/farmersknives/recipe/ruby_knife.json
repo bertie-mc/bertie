@@ -14,5 +14,11 @@
   },
   "result": {
     "id": "farmersknives:ruby_knife"
-  }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:ruby_knife"
+    }
+  ]
 }

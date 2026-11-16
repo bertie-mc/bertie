@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "cocktailsdelight:kraken_rum"
+    }
+  ],
+  "results": [
+    {
+      "id": "brewinandchewin:tankard"
+    },
+    {
+      "amount": 250,
+      "id": "cocktailsdelight:kraken_rum"
+    }
+  ]
+}

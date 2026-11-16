@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "antarchy:nyxite_bricks"
+    }
+  },
+  "result": {
+    "id": "antarchy:chiseled_nyxite",
+    "count": 5
+  }
+}

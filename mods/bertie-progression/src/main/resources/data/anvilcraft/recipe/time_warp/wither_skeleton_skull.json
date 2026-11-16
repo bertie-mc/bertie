@@ -1,0 +1,17 @@
+{
+  "type": "anvilcraft:time_warp",
+  "ingredients": [
+    {
+      "items": "minecraft:skeleton_skull"
+    },
+    {
+      "items": "minecraft:wither_rose",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:wither_skeleton_skull"
+    }
+  ]
+}

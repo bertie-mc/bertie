@@ -1,0 +1,125 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "quark:andesite_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:blackstone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:blue_nether_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:calcite_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_wall",
+      "required": false
+    },
+    {
+      "id": "quark:cobblestone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:diorite_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:dripstone_block_wall",
+      "required": false
+    },
+    {
+      "id": "quark:dripstone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:granite_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:jasper_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:jasper_wall",
+      "required": false
+    },
+    {
+      "id": "quark:limestone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:limestone_wall",
+      "required": false
+    },
+    {
+      "id": "quark:mossy_cobblestone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:myalite_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:myalite_wall",
+      "required": false
+    },
+    {
+      "id": "quark:netherrack_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:permafrost_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:permafrost_wall",
+      "required": false
+    },
+    {
+      "id": "quark:raw_copper_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:raw_iron_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:red_sandstone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:sandstone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:shale_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:shale_wall",
+      "required": false
+    },
+    {
+      "id": "quark:soul_sandstone_bricks_wall",
+      "required": false
+    },
+    {
+      "id": "quark:soul_sandstone_wall",
+      "required": false
+    }
+  ]
+}

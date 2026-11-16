@@ -16,2518 +16,2824 @@
 				id: "mekanism:steel_casing"
 			}
 			id: "6B0000000000004E"
-			rewards: [
-				{
-					id: "6B0000000200004E"
-					type: "xp"
-					xp: 25
-				}
-			]
-			tasks: [
-				{
-					id: "6B0000000100004E"
-					item: {
-						count: 1
-						id: "mekanism:steel_casing"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6B0000000200004E"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6B0000000100004E"
+				item: { count: 1, id: "mekanism:steel_casing" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 6.0d
-			dependencies: ["5C00000000009303", "5C00000000009312"]
+			dependencies: [
+				"5C00000000009303"
+				"5C00000000009312"
+			]
+			icon: {
+				id: "mekanism:metallurgic_infuser"
+			}
 			id: "5C00000000009000"
-			icon: { id: "mekanism:metallurgic_infuser" }
 			tasks: [{
 				id: "5C00000001009000"
-				count: 1L
-				item: { count: 1 id: "mekanism:metallurgic_infuser" }
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
 				type: "item"
 			}]
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 7.5d
 			dependencies: ["5C00000000009000"]
+			icon: {
+				id: "mekanism:enrichment_chamber"
+			}
 			id: "5C00000000009001"
-			icon: { id: "mekanism:enrichment_chamber" }
 			tasks: [{
 				id: "5C00000001009001"
-				count: 1L
-				item: { count: 1 id: "mekanism:enrichment_chamber" }
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
 				type: "item"
 			}]
+			x: 7.5d
+			y: 0.0d
 		}
 		{
-			y: -1.5d
-			x: 0.0d
 			dependencies: ["6B0000000000004E"]
+			icon: {
+				id: "anvilcraft:power_converter_small"
+			}
 			id: "5C00000000009010"
-			icon: { id: "anvilcraft:power_converter_small" }
 			tasks: [{
 				id: "5C00000001009010"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:power_converter_small" }
+				item: { count: 1, id: "anvilcraft:power_converter_small" }
 				type: "item"
 			}]
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			y: -3.0d
-			x: 0.0d
 			dependencies: ["5C00000000009010"]
+			icon: {
+				id: "anvilcraft:power_converter_middle"
+			}
 			id: "5C00000000009011"
-			icon: { id: "anvilcraft:power_converter_middle" }
 			tasks: [{
 				id: "5C00000001009011"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:power_converter_middle" }
+				item: { count: 1, id: "anvilcraft:power_converter_middle" }
 				type: "item"
 			}]
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			y: -4.5d
-			x: 0.0d
 			dependencies: ["5C00000000009011"]
+			icon: {
+				id: "anvilcraft:power_converter_big"
+			}
 			id: "5C00000000009012"
-			icon: { id: "anvilcraft:power_converter_big" }
 			tasks: [{
 				id: "5C00000001009012"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:power_converter_big" }
+				item: { count: 1, id: "anvilcraft:power_converter_big" }
 				type: "item"
 			}]
+			x: 0.0d
+			y: -4.5d
 		}
 		{
-			y: -1.5d
-			x: 4.5d
 			dependencies: ["5C00000000009000"]
+			icon: {
+				id: "mekanism:basic_control_circuit"
+			}
 			id: "5C00000000009100"
-			icon: { id: "mekanism:basic_control_circuit" }
 			tasks: [{
 				id: "5C00000001009100"
-				count: 1L
-				item: { count: 1 id: "mekanism:basic_control_circuit" }
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -3.0d
-			x: 3.0d
-			dependencies: ["5C00000000009100"]
-			id: "5C00000000009101"
-			icon: { id: "mekanism:basic_control_circuit" }
-			tasks: [{
-				id: "5C00000001009101"
-				count: 64L
-				item: { count: 1 id: "mekanism:basic_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -3.0d
 			x: 4.5d
+			y: -1.5d
+		}
+		{
 			dependencies: ["5C00000000009100"]
+			icon: {
+				id: "mekanism:basic_control_circuit"
+			}
+			id: "5C00000000009101"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009101"
+				item: { count: 1, id: "mekanism:basic_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C00000000009100"]
+			icon: {
+				id: "mekanism:advanced_control_circuit"
+			}
 			id: "5C00000000009102"
-			icon: { id: "mekanism:advanced_control_circuit" }
 			tasks: [{
 				id: "5C00000001009102"
-				count: 1L
-				item: { count: 1 id: "mekanism:advanced_control_circuit" }
+				item: { count: 1, id: "mekanism:advanced_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -4.5d
-			x: 3.0d
-			dependencies: ["5C00000000009102"]
-			id: "5C00000000009103"
-			icon: { id: "mekanism:advanced_control_circuit" }
-			tasks: [{
-				id: "5C00000001009103"
-				count: 64L
-				item: { count: 1 id: "mekanism:advanced_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -4.5d
 			x: 4.5d
+			y: -3.0d
+		}
+		{
 			dependencies: ["5C00000000009102"]
+			icon: {
+				id: "mekanism:advanced_control_circuit"
+			}
+			id: "5C00000000009103"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009103"
+				item: { count: 1, id: "mekanism:advanced_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C00000000009102"]
+			icon: {
+				id: "mekanism:elite_control_circuit"
+			}
 			id: "5C00000000009104"
-			icon: { id: "mekanism:elite_control_circuit" }
 			tasks: [{
 				id: "5C00000001009104"
-				count: 1L
-				item: { count: 1 id: "mekanism:elite_control_circuit" }
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -6.0d
-			x: 3.0d
-			dependencies: ["5C00000000009104"]
-			id: "5C00000000009105"
-			icon: { id: "mekanism:elite_control_circuit" }
-			tasks: [{
-				id: "5C00000001009105"
-				count: 64L
-				item: { count: 1 id: "mekanism:elite_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -6.0d
 			x: 4.5d
+			y: -4.5d
+		}
+		{
 			dependencies: ["5C00000000009104"]
+			icon: {
+				id: "mekanism:elite_control_circuit"
+			}
+			id: "5C00000000009105"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009105"
+				item: { count: 1, id: "mekanism:elite_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C00000000009104"]
+			icon: {
+				id: "mekanism:ultimate_control_circuit"
+			}
 			id: "5C00000000009106"
-			icon: { id: "mekanism:ultimate_control_circuit" }
 			tasks: [{
 				id: "5C00000001009106"
-				count: 1L
-				item: { count: 1 id: "mekanism:ultimate_control_circuit" }
+				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -7.5d
-			x: 3.0d
-			dependencies: ["5C00000000009106"]
-			id: "5C00000000009107"
-			icon: { id: "mekanism:ultimate_control_circuit" }
-			tasks: [{
-				id: "5C00000001009107"
-				count: 64L
-				item: { count: 1 id: "mekanism:ultimate_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -7.5d
 			x: 4.5d
+			y: -6.0d
+		}
+		{
 			dependencies: ["5C00000000009106"]
+			icon: {
+				id: "mekanism:ultimate_control_circuit"
+			}
+			id: "5C00000000009107"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009107"
+				item: { count: 1, id: "mekanism:ultimate_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5C00000000009106"]
+			icon: {
+				id: "mekanism_extras:absolute_control_circuit"
+			}
 			id: "5C00000000009108"
-			icon: { id: "mekanism_extras:absolute_control_circuit" }
 			tasks: [{
 				id: "5C00000001009108"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:absolute_control_circuit" }
+				item: { count: 1, id: "mekanism_extras:absolute_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -9.0d
-			x: 3.0d
-			dependencies: ["5C00000000009108"]
-			id: "5C00000000009109"
-			icon: { id: "mekanism_extras:absolute_control_circuit" }
-			tasks: [{
-				id: "5C00000001009109"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:absolute_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -9.0d
 			x: 4.5d
+			y: -7.5d
+		}
+		{
 			dependencies: ["5C00000000009108"]
+			icon: {
+				id: "mekanism_extras:absolute_control_circuit"
+			}
+			id: "5C00000000009109"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009109"
+				item: { count: 1, id: "mekanism_extras:absolute_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5C00000000009108"]
+			icon: {
+				id: "mekanism_extras:supreme_control_circuit"
+			}
 			id: "5C0000000000910A"
-			icon: { id: "mekanism_extras:supreme_control_circuit" }
 			tasks: [{
 				id: "5C0000000100910A"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:supreme_control_circuit" }
+				item: { count: 1, id: "mekanism_extras:supreme_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -10.5d
-			x: 3.0d
-			dependencies: ["5C0000000000910A"]
-			id: "5C0000000000910B"
-			icon: { id: "mekanism_extras:supreme_control_circuit" }
-			tasks: [{
-				id: "5C0000000100910B"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:supreme_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -10.5d
 			x: 4.5d
+			y: -9.0d
+		}
+		{
 			dependencies: ["5C0000000000910A"]
+			icon: {
+				id: "mekanism_extras:supreme_control_circuit"
+			}
+			id: "5C0000000000910B"
+			tasks: [{
+				count: 64L
+				id: "5C0000000100910B"
+				item: { count: 1, id: "mekanism_extras:supreme_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5C0000000000910A"]
+			icon: {
+				id: "mekanism_extras:cosmic_control_circuit"
+			}
 			id: "5C0000000000910C"
-			icon: { id: "mekanism_extras:cosmic_control_circuit" }
 			tasks: [{
 				id: "5C0000000100910C"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:cosmic_control_circuit" }
+				item: { count: 1, id: "mekanism_extras:cosmic_control_circuit" }
 				type: "item"
 			}]
-		}
-		{
-			y: -12.0d
-			x: 3.0d
-			dependencies: ["5C0000000000910C"]
-			id: "5C0000000000910D"
-			icon: { id: "mekanism_extras:cosmic_control_circuit" }
-			tasks: [{
-				id: "5C0000000100910D"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:cosmic_control_circuit" }
-				type: "item"
-			}]
-		}
-		{
-			y: -12.0d
 			x: 4.5d
+			y: -10.5d
+		}
+		{
 			dependencies: ["5C0000000000910C"]
+			icon: {
+				id: "mekanism_extras:cosmic_control_circuit"
+			}
+			id: "5C0000000000910D"
+			tasks: [{
+				count: 64L
+				id: "5C0000000100910D"
+				item: { count: 1, id: "mekanism_extras:cosmic_control_circuit" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5C0000000000910C"]
+			icon: {
+				id: "mekanism_extras:infinite_control_circuit"
+			}
 			id: "5C0000000000910E"
-			icon: { id: "mekanism_extras:infinite_control_circuit" }
 			tasks: [{
 				id: "5C0000000100910E"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:infinite_control_circuit" }
+				item: { count: 1, id: "mekanism_extras:infinite_control_circuit" }
 				type: "item"
 			}]
+			x: 4.5d
+			y: -12.0d
 		}
 		{
-			y: -13.5d
-			x: 3.0d
 			dependencies: ["5C0000000000910E"]
+			icon: {
+				id: "mekanism_extras:infinite_control_circuit"
+			}
 			id: "5C0000000000910F"
-			icon: { id: "mekanism_extras:infinite_control_circuit" }
 			tasks: [{
-				id: "5C0000000100910F"
 				count: 64L
-				item: { count: 1 id: "mekanism_extras:infinite_control_circuit" }
+				id: "5C0000000100910F"
+				item: { count: 1, id: "mekanism_extras:infinite_control_circuit" }
 				type: "item"
 			}]
+			x: 3.0d
+			y: -13.5d
 		}
 		{
-			y: -1.5d
-			x: 7.5d
 			dependencies: ["5C00000000009000"]
+			icon: {
+				id: "mekanism:alloy_infused"
+			}
 			id: "5C00000000009200"
-			icon: { id: "mekanism:alloy_infused" }
 			tasks: [{
 				id: "5C00000001009200"
-				count: 1L
-				item: { count: 1 id: "mekanism:alloy_infused" }
+				item: { count: 1, id: "mekanism:alloy_infused" }
 				type: "item"
 			}]
-		}
-		{
-			y: -3.0d
-			x: 9.0d
-			dependencies: ["5C00000000009200"]
-			id: "5C00000000009201"
-			icon: { id: "mekanism:alloy_infused" }
-			tasks: [{
-				id: "5C00000001009201"
-				count: 64L
-				item: { count: 1 id: "mekanism:alloy_infused" }
-				type: "item"
-			}]
-		}
-		{
-			y: -3.0d
 			x: 7.5d
+			y: -1.5d
+		}
+		{
 			dependencies: ["5C00000000009200"]
+			icon: {
+				id: "mekanism:alloy_infused"
+			}
+			id: "5C00000000009201"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009201"
+				item: { count: 1, id: "mekanism:alloy_infused" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C00000000009200"]
+			icon: {
+				id: "mekanism:alloy_reinforced"
+			}
 			id: "5C00000000009202"
-			icon: { id: "mekanism:alloy_reinforced" }
 			tasks: [{
 				id: "5C00000001009202"
-				count: 1L
-				item: { count: 1 id: "mekanism:alloy_reinforced" }
+				item: { count: 1, id: "mekanism:alloy_reinforced" }
 				type: "item"
 			}]
-		}
-		{
-			y: -4.5d
-			x: 9.0d
-			dependencies: ["5C00000000009202"]
-			id: "5C00000000009203"
-			icon: { id: "mekanism:alloy_reinforced" }
-			tasks: [{
-				id: "5C00000001009203"
-				count: 64L
-				item: { count: 1 id: "mekanism:alloy_reinforced" }
-				type: "item"
-			}]
-		}
-		{
-			y: -4.5d
 			x: 7.5d
+			y: -3.0d
+		}
+		{
 			dependencies: ["5C00000000009202"]
+			icon: {
+				id: "mekanism:alloy_reinforced"
+			}
+			id: "5C00000000009203"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009203"
+				item: { count: 1, id: "mekanism:alloy_reinforced" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C00000000009202"]
+			icon: {
+				id: "mekanism:alloy_atomic"
+			}
 			id: "5C00000000009204"
-			icon: { id: "mekanism:alloy_atomic" }
 			tasks: [{
 				id: "5C00000001009204"
-				count: 1L
-				item: { count: 1 id: "mekanism:alloy_atomic" }
+				item: { count: 1, id: "mekanism:alloy_atomic" }
 				type: "item"
 			}]
-		}
-		{
-			y: -6.0d
-			x: 9.0d
-			dependencies: ["5C00000000009204"]
-			id: "5C00000000009205"
-			icon: { id: "mekanism:alloy_atomic" }
-			tasks: [{
-				id: "5C00000001009205"
-				count: 64L
-				item: { count: 1 id: "mekanism:alloy_atomic" }
-				type: "item"
-			}]
-		}
-		{
-			y: -6.0d
 			x: 7.5d
+			y: -4.5d
+		}
+		{
 			dependencies: ["5C00000000009204"]
+			icon: {
+				id: "mekanism:alloy_atomic"
+			}
+			id: "5C00000000009205"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009205"
+				item: { count: 1, id: "mekanism:alloy_atomic" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C00000000009204"]
+			icon: {
+				id: "mekanism_extras:alloy_radiance"
+			}
 			id: "5C00000000009206"
-			icon: { id: "mekanism_extras:alloy_radiance" }
 			tasks: [{
 				id: "5C00000001009206"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:alloy_radiance" }
+				item: { count: 1, id: "mekanism_extras:alloy_radiance" }
 				type: "item"
 			}]
-		}
-		{
-			y: -7.5d
-			x: 9.0d
-			dependencies: ["5C00000000009206"]
-			id: "5C00000000009207"
-			icon: { id: "mekanism_extras:alloy_radiance" }
-			tasks: [{
-				id: "5C00000001009207"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:alloy_radiance" }
-				type: "item"
-			}]
-		}
-		{
-			y: -7.5d
 			x: 7.5d
+			y: -6.0d
+		}
+		{
 			dependencies: ["5C00000000009206"]
+			icon: {
+				id: "mekanism_extras:alloy_radiance"
+			}
+			id: "5C00000000009207"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009207"
+				item: { count: 1, id: "mekanism_extras:alloy_radiance" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5C00000000009206"]
+			icon: {
+				id: "mekanism_extras:alloy_thermonuclear"
+			}
 			id: "5C00000000009208"
-			icon: { id: "mekanism_extras:alloy_thermonuclear" }
 			tasks: [{
 				id: "5C00000001009208"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:alloy_thermonuclear" }
+				item: { count: 1, id: "mekanism_extras:alloy_thermonuclear" }
 				type: "item"
 			}]
-		}
-		{
-			y: -9.0d
-			x: 9.0d
-			dependencies: ["5C00000000009208"]
-			id: "5C00000000009209"
-			icon: { id: "mekanism_extras:alloy_thermonuclear" }
-			tasks: [{
-				id: "5C00000001009209"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:alloy_thermonuclear" }
-				type: "item"
-			}]
-		}
-		{
-			y: -9.0d
 			x: 7.5d
+			y: -7.5d
+		}
+		{
 			dependencies: ["5C00000000009208"]
+			icon: {
+				id: "mekanism_extras:alloy_thermonuclear"
+			}
+			id: "5C00000000009209"
+			tasks: [{
+				count: 64L
+				id: "5C00000001009209"
+				item: { count: 1, id: "mekanism_extras:alloy_thermonuclear" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5C00000000009208"]
+			icon: {
+				id: "mekanism_extras:alloy_shining"
+			}
 			id: "5C0000000000920A"
-			icon: { id: "mekanism_extras:alloy_shining" }
 			tasks: [{
 				id: "5C0000000100920A"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:alloy_shining" }
+				item: { count: 1, id: "mekanism_extras:alloy_shining" }
 				type: "item"
 			}]
-		}
-		{
-			y: -10.5d
-			x: 9.0d
-			dependencies: ["5C0000000000920A"]
-			id: "5C0000000000920B"
-			icon: { id: "mekanism_extras:alloy_shining" }
-			tasks: [{
-				id: "5C0000000100920B"
-				count: 64L
-				item: { count: 1 id: "mekanism_extras:alloy_shining" }
-				type: "item"
-			}]
-		}
-		{
-			y: -10.5d
 			x: 7.5d
+			y: -9.0d
+		}
+		{
 			dependencies: ["5C0000000000920A"]
+			icon: {
+				id: "mekanism_extras:alloy_shining"
+			}
+			id: "5C0000000000920B"
+			tasks: [{
+				count: 64L
+				id: "5C0000000100920B"
+				item: { count: 1, id: "mekanism_extras:alloy_shining" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5C0000000000920A"]
+			icon: {
+				id: "mekanism_extras:alloy_spectrum"
+			}
 			id: "5C0000000000920C"
-			icon: { id: "mekanism_extras:alloy_spectrum" }
 			tasks: [{
 				id: "5C0000000100920C"
-				count: 1L
-				item: { count: 1 id: "mekanism_extras:alloy_spectrum" }
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
 				type: "item"
 			}]
+			x: 7.5d
+			y: -10.5d
 		}
 		{
-			y: -12.0d
-			x: 9.0d
 			dependencies: ["5C0000000000920C"]
+			icon: {
+				id: "mekanism_extras:alloy_spectrum"
+			}
 			id: "5C0000000000920D"
-			icon: { id: "mekanism_extras:alloy_spectrum" }
 			tasks: [{
-				id: "5C0000000100920D"
 				count: 64L
-				item: { count: 1 id: "mekanism_extras:alloy_spectrum" }
+				id: "5C0000000100920D"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
 				type: "item"
 			}]
+			x: 9.0d
+			y: -12.0d
 		}
 		{
-			y: 1.5d
-			x: 1.5d
 			dependencies: ["6B0000000000004E"]
+			icon: {
+				id: "bertieprogression:copper_rod"
+			}
 			id: "5C00000000009300"
-			icon: { id: "bertieprogression:copper_rod" }
 			tasks: [{
 				id: "5C00000001009300"
-				count: 1L
-				item: { count: 1 id: "bertieprogression:copper_rod" }
+				item: { count: 1, id: "bertieprogression:copper_rod" }
 				type: "item"
 			}]
+			x: 1.5d
+			y: 1.5d
 		}
 		{
-			y: 3.0d
-			x: 3.0d
 			dependencies: ["5C00000000009300"]
+			icon: {
+				id: "bertieprogression:copper_wire"
+			}
 			id: "5C00000000009301"
-			icon: { id: "bertieprogression:copper_wire" }
 			tasks: [{
 				id: "5C00000001009301"
-				count: 1L
-				item: { count: 1 id: "bertieprogression:copper_wire" }
+				item: { count: 1, id: "bertieprogression:copper_wire" }
 				type: "item"
 			}]
+			x: 3.0d
+			y: 3.0d
 		}
 		{
-			y: 3.0d
-			x: 4.5d
 			dependencies: ["5C00000000009301"]
+			icon: {
+				id: "oritech:magnetic_coil"
+			}
 			id: "5C00000000009302"
-			icon: { id: "oritech:magnetic_coil" }
 			tasks: [{
 				id: "5C00000001009302"
-				count: 1L
-				item: { count: 1 id: "oritech:magnetic_coil" }
+				item: { count: 1, id: "oritech:magnetic_coil" }
 				type: "item"
 			}]
+			x: 4.5d
+			y: 3.0d
 		}
 		{
-			y: 1.5d
-			x: 6.0d
 			dependencies: ["5C00000000009302"]
+			icon: {
+				id: "oritech:motor"
+			}
 			id: "5C00000000009303"
-			icon: { id: "oritech:motor" }
 			tasks: [{
 				id: "5C00000001009303"
-				count: 1L
-				item: { count: 1 id: "oritech:motor" }
+				item: { count: 1, id: "oritech:motor" }
 				type: "item"
 			}]
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			y: 0.0d
-			x: 1.5d
 			dependencies: ["6B0000000000004E"]
+			icon: {
+				id: "anvilcraft:resin"
+			}
 			id: "5C00000000009310"
-			icon: { id: "anvilcraft:resin" }
 			tasks: [{
 				id: "5C00000001009310"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:resin" }
+				item: { count: 1, id: "anvilcraft:resin" }
 				type: "item"
 			}]
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 3.0d
 			dependencies: ["5C00000000009310"]
+			icon: {
+				id: "anvilcraft:hardend_resin"
+			}
 			id: "5C00000000009311"
-			icon: { id: "anvilcraft:hardend_resin" }
 			tasks: [{
 				id: "5C00000001009311"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:hardend_resin" }
+				item: { count: 1, id: "anvilcraft:hardend_resin" }
 				type: "item"
 			}]
+			x: 3.0d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 4.5d
 			dependencies: ["5C00000000009311"]
+			icon: {
+				id: "anvilcraft:circuit_board"
+			}
 			id: "5C00000000009312"
-			icon: { id: "anvilcraft:circuit_board" }
 			tasks: [{
 				id: "5C00000001009312"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:circuit_board" }
+				item: { count: 1, id: "anvilcraft:circuit_board" }
 				type: "item"
 			}]
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 9.0d
 			dependencies: ["5C00000000009001"]
+			icon: {
+				id: "oritech:pulverizer_block"
+			}
 			id: "5C00000000009320"
-			icon: { id: "oritech:pulverizer_block" }
 			tasks: [{
 				id: "5C00000001009320"
-				count: 1L
-				item: { count: 1 id: "oritech:pulverizer_block" }
+				item: { count: 1, id: "oritech:pulverizer_block" }
 				type: "item"
 			}]
+			x: 9.0d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 10.5d
 			dependencies: ["5C00000000009320"]
+			icon: {
+				id: "mekanism:purification_chamber"
+			}
 			id: "5C00000000009321"
-			icon: { id: "mekanism:purification_chamber" }
 			tasks: [{
 				id: "5C00000001009321"
-				count: 1L
-				item: { count: 1 id: "mekanism:purification_chamber" }
+				item: { count: 1, id: "mekanism:purification_chamber" }
 				type: "item"
 			}]
+			x: 9.0d
+			y: 1.5d
 		}
 		{
-			y: 1.5d
-			x: 10.5d
 			dependencies: ["5C00000000009321"]
+			icon: {
+				id: "mekanism:electrolytic_separator"
+			}
 			id: "5C00000000009322"
-			icon: { id: "mekanism:electrolytic_separator" }
 			tasks: [{
 				id: "5C00000001009322"
-				count: 1L
-				item: { count: 1 id: "mekanism:electrolytic_separator" }
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
 				type: "item"
 			}]
+			x: 9.0d
+			y: 3.0d
 		}
 		{
-			y: 0.0d
-			x: 12.0d
 			dependencies: ["5C00000000009322"]
+			icon: {
+				id: "mekanism:pressurized_reaction_chamber"
+			}
 			id: "5C00000000009323"
-			icon: { id: "mekanism:pressurized_reaction_chamber" }
 			tasks: [{
 				id: "5C00000001009323"
-				count: 1L
-				item: { count: 1 id: "mekanism:pressurized_reaction_chamber" }
+				item: { count: 1, id: "mekanism:pressurized_reaction_chamber" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: 3.0d
 		}
 		{
-			y: 1.5d
-			x: 7.5d
 			dependencies: ["5C00000000009001"]
+			icon: {
+				id: "bertieprogression:enriched_zinc"
+			}
 			id: "5C00000000009324"
-			icon: { id: "bertieprogression:enriched_zinc" }
 			tasks: [{
-				id: "5C00000001009324"
-				count: 1L
 				consume_items: false
-				item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "or(item(bertieprogression:enriched_zinc)item(bertieprogression:enriched_amethyst)item(mekanism:enriched_carbon)item(mekanism:enriched_diamond)item(mekanism:enriched_gold)item(mekanism:enriched_redstone)item(mekanism:enriched_refined_obsidian)item(mekanism:enriched_tin))", "minecraft:custom_name": "{\"text\": \"Enriched Material\", \"italic\": false}"}}
+				id: "5C00000001009324"
+				item: { components: { "ftbfiltersystem:filter": "or(item(bertieprogression:enriched_zinc)item(bertieprogression:enriched_amethyst)item(mekanism:enriched_carbon)item(mekanism:enriched_diamond)item(mekanism:enriched_gold)item(mekanism:enriched_redstone)item(mekanism:enriched_refined_obsidian)item(mekanism:enriched_tin))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Enriched Material\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
+			x: 6.5d
+			y: 1.0d
 		}
 		{
-			y: 1.5d
-			x: 9.0d
 			dependencies: ["5C00000000009320"]
+			icon: {
+				id: "oritech:powered_furnace_block"
+			}
 			id: "5C00000000009325"
-			icon: { id: "oritech:powered_furnace_block" }
 			tasks: [{
 				id: "5C00000001009325"
-				count: 1L
-				item: { count: 1 id: "oritech:powered_furnace_block" }
+				item: { count: 1, id: "oritech:powered_furnace_block" }
 				type: "item"
 			}]
+			x: 7.5d
+			y: 1.5d
 		}
 		{
-			y: 1.5d
-			x: 12.0d
 			dependencies: ["5C00000000009323"]
+			icon: {
+				id: "anvilcraft:capacitor_empty"
+			}
 			id: "5C00000000009326"
-			icon: { id: "anvilcraft:capacitor_empty" }
 			tasks: [{
 				id: "5C00000001009326"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:capacitor_empty" }
+				item: { count: 1, id: "anvilcraft:capacitor_empty" }
 				type: "item"
 			}]
+			x: 9.0d
+			y: 4.5d
 		}
 		{
-			y: 3.0d
-			x: 10.5d
 			dependencies: ["5C00000000009326"]
+			icon: {
+				id: "anvilcraft:charger"
+			}
 			id: "5C00000000009327"
-			icon: { id: "anvilcraft:charger" }
 			tasks: [{
 				id: "5C00000001009327"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:charger" }
+				item: { count: 1, id: "anvilcraft:charger" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: 4.5d
 		}
 		{
-			y: 3.0d
-			x: 12.0d
 			dependencies: ["5C00000000009327"]
+			icon: {
+				id: "anvilcraft:capacitor"
+			}
 			id: "5C00000000009328"
-			icon: { id: "anvilcraft:capacitor" }
 			tasks: [{
 				id: "5C00000001009328"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:capacitor" }
+				item: { count: 1, id: "anvilcraft:capacitor" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: 3.0d
 		}
 		{
-			y: 3.0d
-			x: 13.5d
 			dependencies: ["5C00000000009328"]
+			icon: {
+				id: "oritech:basic_generator_block"
+			}
 			id: "5C00000000009329"
-			icon: { id: "oritech:basic_generator_block" }
 			tasks: [{
 				id: "5C00000001009329"
-				count: 1L
-				item: { count: 1 id: "oritech:basic_generator_block" }
+				item: { count: 1, id: "oritech:basic_generator_block" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 3.0d
 		}
 		{
-			y: 4.5d
-			x: 12.0d
 			dependencies: ["5C00000000009329"]
+			icon: {
+				id: "oritech:lava_generator_block"
+			}
 			id: "5C0000000000932A"
-			icon: { id: "oritech:lava_generator_block" }
 			tasks: [{
 				id: "5C0000000100932A"
-				count: 1L
-				item: { count: 1 id: "oritech:lava_generator_block" }
+				item: { count: 1, id: "oritech:lava_generator_block" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: 4.5d
 		}
 		{
-			y: 4.5d
-			x: 18.0d
 			dependencies: ["5C0000000000932C"]
+			icon: {
+				id: "oritech:steam_engine_block"
+			}
 			id: "5C0000000000932B"
-			icon: { id: "oritech:steam_engine_block" }
 			tasks: [{
 				id: "5C0000000100932B"
-				count: 1L
-				item: { count: 1 id: "oritech:steam_engine_block" }
+				item: { count: 1, id: "oritech:steam_engine_block" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: 4.5d
 		}
 		{
-			y: 4.5d
-			x: 16.5d
 			dependencies: ["5C00000000009337"]
+			icon: {
+				id: "oritech:steam_boiler_addon"
+			}
 			id: "5C0000000000932C"
-			icon: { id: "oritech:steam_boiler_addon" }
 			tasks: [{
 				id: "5C0000000100932C"
-				count: 1L
-				item: { count: 1 id: "oritech:steam_boiler_addon" }
+				item: { count: 1, id: "oritech:steam_boiler_addon" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: 4.5d
 		}
 		{
-			y: -3.0d
-			x: 6.0d
 			dependencies: ["5C00000000009200"]
+			icon: {
+				id: "mekanism:advanced_universal_cable"
+			}
 			id: "5C00000000009330"
-			icon: { id: "mekanism:advanced_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009330"
+					item: { count: 1, id: "mekanism:advanced_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:advanced_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009330"
+					item: { count: 1, id: "mekanism:advanced_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:advanced_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009330"
+					item: { count: 1, id: "mekanism:advanced_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:advanced_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009330"
+					item: { count: 1, id: "mekanism:advanced_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:advanced_logistical_transporter", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000005009330"
+					item: { count: 1, id: "mekanism:advanced_thermodynamic_conductor" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:advanced_thermodynamic_conductor", "count": 1}
 				}
 			]
+			x: 6.0d
+			y: -3.0d
 		}
 		{
-			y: -4.5d
-			x: 6.0d
 			dependencies: ["5C00000000009202"]
+			icon: {
+				id: "mekanism:elite_universal_cable"
+			}
 			id: "5C00000000009331"
-			icon: { id: "mekanism:elite_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009331"
+					item: { count: 1, id: "mekanism:elite_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:elite_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009331"
+					item: { count: 1, id: "mekanism:elite_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:elite_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009331"
+					item: { count: 1, id: "mekanism:elite_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:elite_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009331"
+					item: { count: 1, id: "mekanism:elite_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:elite_logistical_transporter", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000005009331"
+					item: { count: 1, id: "mekanism:elite_thermodynamic_conductor" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:elite_thermodynamic_conductor", "count": 1}
 				}
 			]
+			x: 6.0d
+			y: -4.5d
 		}
 		{
-			y: -6.0d
-			x: 6.0d
 			dependencies: ["5C00000000009204"]
+			icon: {
+				id: "mekanism:ultimate_universal_cable"
+			}
 			id: "5C00000000009332"
-			icon: { id: "mekanism:ultimate_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009332"
+					item: { count: 1, id: "mekanism:ultimate_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:ultimate_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009332"
+					item: { count: 1, id: "mekanism:ultimate_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:ultimate_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009332"
+					item: { count: 1, id: "mekanism:ultimate_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:ultimate_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009332"
+					item: { count: 1, id: "mekanism:ultimate_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:ultimate_logistical_transporter", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000005009332"
+					item: { count: 1, id: "mekanism:ultimate_thermodynamic_conductor" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism:ultimate_thermodynamic_conductor", "count": 1}
 				}
 			]
+			x: 6.0d
+			y: -6.0d
 		}
 		{
-			y: -7.5d
-			x: 6.0d
 			dependencies: ["5C00000000009206"]
+			icon: {
+				id: "mekanism_extras:absolute_universal_cable"
+			}
 			id: "5C00000000009333"
-			icon: { id: "mekanism_extras:absolute_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009333"
+					item: { count: 1, id: "mekanism_extras:absolute_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:absolute_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009333"
+					item: { count: 1, id: "mekanism_extras:absolute_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:absolute_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009333"
+					item: { count: 1, id: "mekanism_extras:absolute_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:absolute_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009333"
+					item: { count: 1, id: "mekanism_extras:absolute_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:absolute_logistical_transporter", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000005009333"
+					item: { count: 1, id: "mekanism_extras:absolute_thermodynamic_conductor" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:absolute_thermodynamic_conductor", "count": 1}
 				}
 			]
+			x: 6.0d
+			y: -7.5d
 		}
 		{
-			y: -9.0d
-			x: 6.0d
 			dependencies: ["5C00000000009208"]
+			icon: {
+				id: "mekanism_extras:supreme_universal_cable"
+			}
 			id: "5C00000000009334"
-			icon: { id: "mekanism_extras:supreme_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009334"
+					item: { count: 1, id: "mekanism_extras:supreme_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:supreme_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009334"
+					item: { count: 1, id: "mekanism_extras:supreme_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:supreme_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009334"
+					item: { count: 1, id: "mekanism_extras:supreme_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:supreme_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009334"
+					item: { count: 1, id: "mekanism_extras:supreme_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:supreme_logistical_transporter", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000005009334"
+					item: { count: 1, id: "mekanism_extras:supreme_thermodynamic_conductor" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:supreme_thermodynamic_conductor", "count": 1}
 				}
 			]
+			x: 6.0d
+			y: -9.0d
 		}
 		{
-			y: -10.5d
-			x: 6.0d
 			dependencies: ["5C0000000000920A"]
+			icon: {
+				id: "mekanism_extras:cosmic_universal_cable"
+			}
 			id: "5C00000000009335"
-			icon: { id: "mekanism_extras:cosmic_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009335"
+					item: { count: 1, id: "mekanism_extras:cosmic_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:cosmic_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009335"
+					item: { count: 1, id: "mekanism_extras:cosmic_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:cosmic_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009335"
+					item: { count: 1, id: "mekanism_extras:cosmic_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:cosmic_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009335"
+					item: { count: 1, id: "mekanism_extras:cosmic_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:cosmic_logistical_transporter", "count": 1}
 				}
 				{
-					id: "5C00000005009335"
-					type: "item"
-					count: 8L
 					consume_items: false
-					item: {"id": "mekanism_extras:cosmic_thermodynamic_conductor", "count": 1}
+					count: 8L
+					id: "5C00000005009335"
+					item: { count: 1, id: "mekanism_extras:cosmic_thermodynamic_conductor" }
+					type: "item"
 				}
 			]
+			x: 6.0d
+			y: -10.5d
 		}
 		{
-			y: -12.0d
-			x: 6.0d
 			dependencies: ["5C0000000000920C"]
+			icon: {
+				id: "mekanism_extras:infinite_universal_cable"
+			}
 			id: "5C00000000009336"
-			icon: { id: "mekanism_extras:infinite_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009336"
+					item: { count: 1, id: "mekanism_extras:infinite_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:infinite_universal_cable", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009336"
+					item: { count: 1, id: "mekanism_extras:infinite_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:infinite_mechanical_pipe", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009336"
+					item: { count: 1, id: "mekanism_extras:infinite_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:infinite_pressurized_tube", "count": 1}
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009336"
+					item: { count: 1, id: "mekanism_extras:infinite_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: {"id": "mekanism_extras:infinite_logistical_transporter", "count": 1}
 				}
 				{
-					id: "5C00000005009336"
-					type: "item"
-					count: 8L
 					consume_items: false
-					item: {"id": "mekanism_extras:infinite_thermodynamic_conductor", "count": 1}
+					count: 8L
+					id: "5C00000005009336"
+					item: { count: 1, id: "mekanism_extras:infinite_thermodynamic_conductor" }
+					type: "item"
 				}
 			]
+			x: 6.0d
+			y: -12.0d
 		}
 		{
-			y: 3.0d
-			x: 15.0d
 			dependencies: ["5C00000000009329"]
+			icon: {
+				id: "oritech:adamant_ingot"
+			}
 			id: "5C00000000009337"
-			icon: { id: "oritech:adamant_ingot" }
 			tasks: [{
 				id: "5C00000001009337"
-				count: 1L
-				item: { count: 1 id: "oritech:adamant_ingot" }
+				item: { count: 1, id: "oritech:adamant_ingot" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C00000000009337"]
-			y: 1.5d
-			x: 16.5d
+			icon: {
+				id: "oritech:centrifuge_block"
+			}
 			id: "5C00000000009338"
-			icon: { id: "oritech:centrifuge_block" }
 			tasks: [{
 				id: "5C00000001009338"
-				count: 1L
-				item: { count: 1 id: "oritech:centrifuge_block" }
+				item: { count: 1, id: "oritech:centrifuge_block" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C00000000009337"]
-			y: 3.0d
-			x: 16.5d
+			icon: {
+				id: "mekanism:formulaic_assemblicator"
+			}
 			id: "5C00000000009339"
-			icon: { id: "mekanism:formulaic_assemblicator" }
 			tasks: [{
 				id: "5C00000001009339"
-				count: 1L
-				item: { count: 1 id: "mekanism:formulaic_assemblicator" }
+				item: { count: 1, id: "mekanism:formulaic_assemblicator" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C00000000009339"]
-			y: 3.0d
-			x: 18.0d
+			icon: {
+				id: "oritech:assembler_block"
+			}
 			id: "5C0000000000933A"
-			icon: { id: "oritech:assembler_block" }
 			tasks: [{
 				id: "5C0000000100933A"
-				count: 1L
-				item: { count: 1 id: "oritech:assembler_block" }
+				item: { count: 1, id: "oritech:assembler_block" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C0000000000933A"]
-			y: 1.5d
-			x: 18.0d
+			icon: {
+				id: "bertieprogression:electric_coil"
+			}
 			id: "5C0000000000933B"
-			icon: { id: "bertieprogression:electric_coil" }
 			tasks: [{
 				id: "5C0000000100933B"
-				count: 1L
-				item: { count: 1 id: "bertieprogression:electric_coil" }
+				item: { count: 1, id: "bertieprogression:electric_coil" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5C0000000000933B", "5C00000000009343"]
-			y: 0.0d
-			x: 18.0d
+			dependencies: [
+				"5C0000000000933B"
+				"5C00000000009343"
+			]
+			icon: {
+				id: "oritech:processing_unit"
+			}
 			id: "5C0000000000933C"
-			icon: { id: "oritech:processing_unit" }
 			tasks: [{
 				id: "5C0000000100933C"
-				count: 1L
-				item: { count: 1 id: "oritech:processing_unit" }
+				item: { count: 1, id: "oritech:processing_unit" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C0000000000935D"]
-			y: 1.5d
-			x: 15.0d
+			icon: {
+				id: "mekanism:bio_fuel"
+			}
 			id: "5C0000000000933D"
-			icon: { id: "mekanism:bio_fuel" }
 			tasks: [{
 				id: "5C0000000100933D"
-				count: 1L
-				item: {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "item_tag(c:fuels/bio)", "minecraft:custom_name": "{\"text\": \"Biofuel\", \"italic\": false}"}}
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:fuels/bio)", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Biofuel\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C0000000000933D"]
-			y: 0.0d
-			x: 13.5d
+			icon: {
+				id: "oritech:raw_biopolymer"
+			}
 			id: "5C0000000000933E"
-			icon: { id: "oritech:raw_biopolymer" }
 			tasks: [{
 				id: "5C0000000100933E"
-				count: 1L
-				item: { count: 1 id: "oritech:raw_biopolymer" }
+				item: { count: 1, id: "oritech:raw_biopolymer" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5C00000000009323", "5C0000000000933E"]
-			y: -1.5d
-			x: 12.0d
+			dependencies: [
+				"5C00000000009323"
+				"5C0000000000933E"
+			]
+			icon: {
+				id: "mekanism:substrate"
+			}
 			id: "5C0000000000933F"
-			icon: { id: "mekanism:substrate" }
 			tasks: [{
 				id: "5C0000000100933F"
-				count: 1L
-				item: { count: 1 id: "mekanism:substrate" }
+				item: { count: 1, id: "mekanism:substrate" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C0000000000933F"]
-			y: -1.5d
-			x: 13.5d
+			icon: {
+				id: "mekanism:hdpe_pellet"
+			}
 			id: "5C00000000009340"
-			icon: { id: "mekanism:hdpe_pellet" }
 			tasks: [{
 				id: "5C00000001009340"
-				count: 1L
-				item: { count: 1 id: "mekanism:hdpe_pellet" }
+				item: { count: 1, id: "mekanism:hdpe_pellet" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C00000000009342"]
-			y: -3.0d
-			x: 13.5d
+			icon: {
+				id: "mekanism:hdpe_rod"
+			}
 			id: "5C00000000009341"
-			icon: { id: "mekanism:hdpe_rod" }
 			tasks: [{
 				id: "5C00000001009341"
-				count: 1L
-				item: { count: 1 id: "mekanism:hdpe_rod" }
+				item: { count: 1, id: "mekanism:hdpe_rod" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C00000000009340"]
-			y: -1.5d
-			x: 15.0d
+			icon: {
+				id: "mekanism:hdpe_stick"
+			}
 			id: "5C00000000009342"
-			icon: { id: "mekanism:hdpe_stick" }
 			tasks: [{
 				id: "5C00000001009342"
-				count: 1L
-				item: { count: 1 id: "mekanism:hdpe_stick" }
+				item: { count: 1, id: "mekanism:hdpe_stick" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000009342"]
-			y: -1.5d
-			x: 16.5d
+			icon: {
+				id: "mekanism:hdpe_sheet"
+			}
 			id: "5C00000000009343"
-			icon: { id: "mekanism:hdpe_sheet" }
 			tasks: [{
 				id: "5C00000001009343"
-				count: 1L
-				item: { count: 1 id: "mekanism:hdpe_sheet" }
+				item: { count: 1, id: "mekanism:hdpe_sheet" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000009000"]
-			y: -1.5d
-			x: 6.0d
+			icon: {
+				id: "mekanism:basic_universal_cable"
+			}
 			id: "5C00000000009344"
-			icon: { id: "mekanism:basic_universal_cable" }
 			tasks: [
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000001009344"
+					item: { count: 1, id: "mekanism:basic_universal_cable" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: { id: "mekanism:basic_universal_cable" count: 1 }
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000002009344"
+					item: { count: 1, id: "mekanism:basic_mechanical_pipe" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: { id: "mekanism:basic_mechanical_pipe" count: 1 }
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000003009344"
+					item: { count: 1, id: "mekanism:basic_pressurized_tube" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: { id: "mekanism:basic_pressurized_tube" count: 1 }
 				}
 				{
+					consume_items: false
+					count: 8L
 					id: "5C00000004009344"
+					item: { count: 1, id: "mekanism:basic_logistical_transporter" }
 					type: "item"
-					count: 8L
-					consume_items: false
-					item: { id: "mekanism:basic_logistical_transporter" count: 1 }
 				}
 				{
-					id: "5C00000005009344"
-					type: "item"
-					count: 8L
 					consume_items: false
-					item: { id: "mekanism:basic_thermodynamic_conductor" count: 1 }
+					count: 8L
+					id: "5C00000005009344"
+					item: { count: 1, id: "mekanism:basic_thermodynamic_conductor" }
+					type: "item"
 				}
 			]
+			x: 6.0d
+			y: -1.5d
 		}
 		{
-			y: -1.5d
-			x: 3.0d
 			dependencies: ["5C00000000009312"]
+			icon: {
+				id: "mekanism:logistical_sorter"
+			}
 			id: "5C00000000009345"
-			icon: { id: "mekanism:logistical_sorter" }
 			tasks: [{
 				id: "5C00000001009345"
-				count: 1L
-				item: { count: 1 id: "mekanism:logistical_sorter" }
+				item: { count: 1, id: "mekanism:logistical_sorter" }
 				type: "item"
 			}]
+			x: 3.0d
+			y: -1.5d
 		}
 		{
-			y: 0.0d
-			x: 19.5d
 			dependencies: ["5C0000000000933C"]
+			icon: {
+				id: "oritech:placer_block"
+			}
 			id: "5C00000000009346"
-			icon: { id: "oritech:placer_block" }
 			tasks: [{
 				id: "5C00000001009346"
-				count: 1L
-				item: { count: 1 id: "oritech:placer_block" }
+				item: { count: 1, id: "oritech:placer_block" }
 				type: "item"
 			}]
+			x: 19.5d
+			y: 0.0d
 		}
 		{
-			y: 4.5d
-			x: 15.0d
 			dependencies: ["5C00000000009337"]
+			icon: {
+				id: "oritech:destroyer_block"
+			}
 			id: "5C00000000009347"
-			icon: { id: "oritech:destroyer_block" }
 			tasks: [{
 				id: "5C00000001009347"
-				count: 1L
-				item: { count: 1 id: "oritech:destroyer_block" }
+				item: { count: 1, id: "oritech:destroyer_block" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C000000000000AF"]
-			y: 4.5d
-			x: 9.0d
+			icon: {
+				id: "oritech:treefeller_block"
+			}
 			id: "5C00000000009348"
-			icon: { id: "oritech:treefeller_block" }
 			tasks: [{
 				id: "5C00000001009348"
-				count: 1L
-				item: { count: 1 id: "oritech:treefeller_block" }
+				item: { count: 1, id: "oritech:treefeller_block" }
 				type: "item"
 			}]
+			x: 6.0d
+			y: 4.5d
 		}
 		{
-			y: 4.5d
-			x: 10.5d
 			dependencies: ["5C00000000009348"]
+			icon: {
+				id: "oritech:fertilizer_block"
+			}
 			id: "5C00000000009349"
-			icon: { id: "oritech:fertilizer_block" }
 			tasks: [{
 				id: "5C00000001009349"
-				count: 1L
-				item: { count: 1 id: "oritech:fertilizer_block" }
+				item: { count: 1, id: "oritech:fertilizer_block" }
 				type: "item"
 			}]
+			x: 4.5d
+			y: 4.5d
 		}
 		{
-			y: -1.5d
-			x: 10.5d
 			dependencies: ["5C00000000009320"]
+			icon: {
+				id: "oritech:machine_core_1"
+			}
 			id: "5C0000000000934A"
-			icon: { id: "oritech:machine_core_1" }
 			tasks: [{
 				id: "5C0000000100934A"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_1" }
+				item: { count: 1, id: "oritech:machine_core_1" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -1.5d
 		}
 		{
-			y: -3.0d
-			x: 10.5d
 			dependencies: ["5C0000000000934A"]
+			icon: {
+				id: "oritech:machine_core_2"
+			}
 			id: "5C0000000000934B"
-			icon: { id: "oritech:machine_core_2" }
 			tasks: [{
 				id: "5C0000000100934B"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_2" }
+				item: { count: 1, id: "oritech:machine_core_2" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -3.0d
 		}
 		{
-			y: -4.5d
-			x: 10.5d
 			dependencies: ["5C0000000000934B"]
+			icon: {
+				id: "oritech:machine_core_3"
+			}
 			id: "5C0000000000934C"
-			icon: { id: "oritech:machine_core_3" }
 			tasks: [{
 				id: "5C0000000100934C"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_3" }
+				item: { count: 1, id: "oritech:machine_core_3" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -4.5d
 		}
 		{
-			y: -6.0d
-			x: 10.5d
 			dependencies: ["5C0000000000934C"]
+			icon: {
+				id: "oritech:machine_core_4"
+			}
 			id: "5C0000000000934D"
-			icon: { id: "oritech:machine_core_4" }
 			tasks: [{
 				id: "5C0000000100934D"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_4" }
+				item: { count: 1, id: "oritech:machine_core_4" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -6.0d
 		}
 		{
-			y: -7.5d
-			x: 10.5d
 			dependencies: ["5C0000000000934D"]
+			icon: {
+				id: "oritech:machine_core_5"
+			}
 			id: "5C0000000000934E"
-			icon: { id: "oritech:machine_core_5" }
 			tasks: [{
 				id: "5C0000000100934E"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_5" }
+				item: { count: 1, id: "oritech:machine_core_5" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -7.5d
 		}
 		{
-			y: -9.0d
-			x: 10.5d
 			dependencies: ["5C0000000000934E"]
+			icon: {
+				id: "oritech:machine_core_6"
+			}
 			id: "5C0000000000934F"
-			icon: { id: "oritech:machine_core_6" }
 			tasks: [{
 				id: "5C0000000100934F"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_6" }
+				item: { count: 1, id: "oritech:machine_core_6" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -9.0d
 		}
 		{
-			y: -10.5d
-			x: 10.5d
 			dependencies: ["5C0000000000934F"]
+			icon: {
+				id: "oritech:machine_core_7"
+			}
 			id: "5C00000000009350"
-			icon: { id: "oritech:machine_core_7" }
 			tasks: [{
 				id: "5C00000001009350"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_core_7" }
+				item: { count: 1, id: "oritech:machine_core_7" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: -10.5d
 		}
 		{
-			y: -3.0d
-			x: 16.5d
 			dependencies: ["5C00000000009343"]
+			icon: {
+				id: "oritech:still_oil_bucket"
+			}
 			id: "5C00000000009351"
-			icon: { id: "oritech:still_oil_bucket" }
 			tasks: [{
+				consume_items: false
 				id: "5C00000001009351"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:still_oil_bucket" }
+				item: { count: 1, id: "oritech:still_oil_bucket" }
 				type: "item"
 			}]
-		}
-		{
-			y: -4.5d
 			x: 16.5d
+			y: -3.0d
+		}
+		{
 			dependencies: ["5C00000000009351"]
+			icon: {
+				id: "oritech:pump_block"
+			}
 			id: "5C00000000009352"
-			icon: { id: "oritech:pump_block" }
 			tasks: [{
+				consume_items: false
 				id: "5C00000001009352"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:pump_block" }
+				item: { count: 1, id: "oritech:pump_block" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: -4.5d
 		}
 		{
-			y: -4.5d
-			x: 18.0d
 			dependencies: ["5C00000000009352"]
+			icon: {
+				id: "oritech:refinery_block"
+			}
 			id: "5C00000000009353"
-			icon: { id: "oritech:refinery_block" }
 			tasks: [{
+				consume_items: false
 				id: "5C00000001009353"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:refinery_block" }
+				item: { count: 1, id: "oritech:refinery_block" }
 				type: "item"
 			}]
-		}
-		{
-			y: -4.5d
-			x: 19.5d
-			dependencies: ["5C00000000009353"]
-			id: "5C00000000009354"
-			icon: { id: "oritech:still_diesel_bucket" }
-			tasks: [{
-				id: "5C00000001009354"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:still_diesel_bucket" }
-				type: "item"
-			}]
-		}
-		{
-			y: -4.5d
-			x: 21.0d
-			dependencies: ["5C00000000009354", "5C0000000000935B"]
-			id: "5C00000000009355"
-			icon: { id: "oritech:fuel_generator_block" }
-			tasks: [{
-				id: "5C00000001009355"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:fuel_generator_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 13.5d
-			dependencies: ["5C0000000000933E"]
-			id: "5C00000000009356"
-			icon: { id: "oritech:bio_generator_block" }
-			tasks: [{
-				id: "5C00000001009356"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:bio_generator_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: -1.5d
 			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C00000000009353"]
+			icon: {
+				id: "oritech:still_diesel_bucket"
+			}
+			id: "5C00000000009354"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001009354"
+				item: { count: 1, id: "oritech:still_diesel_bucket" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5C00000000009354"
+				"5C0000000000935B"
+			]
+			icon: {
+				id: "oritech:fuel_generator_block"
+			}
+			id: "5C00000000009355"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001009355"
+				item: { count: 1, id: "oritech:fuel_generator_block" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C00000000000100"]
+			icon: {
+				id: "oritech:bio_generator_block"
+			}
+			id: "5C00000000009356"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001009356"
+				item: { count: 1, id: "oritech:bio_generator_block" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
 			dependencies: ["5C00000000009343"]
+			icon: {
+				id: "mekanism:combiner"
+			}
 			id: "5C00000000009357"
-			icon: { id: "mekanism:combiner" }
 			tasks: [{
 				id: "5C00000001009357"
-				count: 1L
-				item: { count: 1 id: "mekanism:combiner" }
+				item: { count: 1, id: "mekanism:combiner" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -1.5d
 		}
 		{
-			y: -3.0d
-			x: 18.0d
 			dependencies: ["5C00000000009357"]
+			icon: {
+				id: "bertieprogression:coal_dense_charge"
+			}
 			id: "5C00000000009358"
-			icon: { id: "bertieprogression:coal_dense_charge" }
 			tasks: [{
 				id: "5C00000001009358"
-				count: 1L
-				item: { count: 1 id: "bertieprogression:coal_dense_charge" }
+				item: { count: 1, id: "bertieprogression:coal_dense_charge" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -3.0d
 		}
 		{
-			y: -1.5d
-			x: 19.5d
 			dependencies: ["5C00000000009358"]
+			icon: {
+				id: "oritech:carbon_fibre_strands"
+			}
 			id: "5C00000000009359"
-			icon: { id: "oritech:carbon_fibre_strands" }
 			tasks: [{
 				id: "5C00000001009359"
-				count: 1L
-				item: { count: 1 id: "oritech:carbon_fibre_strands" }
+				item: { count: 1, id: "oritech:carbon_fibre_strands" }
 				type: "item"
 			}]
+			x: 19.5d
+			y: -1.5d
 		}
 		{
-			y: -1.5d
-			x: 21.0d
 			dependencies: ["5C00000000009359"]
+			icon: {
+				id: "oritech:enderic_compound"
+			}
 			id: "5C0000000000935A"
-			icon: { id: "oritech:enderic_compound" }
 			tasks: [{
 				id: "5C0000000100935A"
-				count: 1L
-				item: { count: 1 id: "oritech:enderic_compound" }
+				item: { count: 1, id: "oritech:enderic_compound" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: -1.5d
 		}
 		{
-			y: -3.0d
-			x: 22.5d
 			dependencies: ["5C0000000000935A"]
+			icon: {
+				id: "oritech:enderic_lens"
+			}
 			id: "5C0000000000935B"
-			icon: { id: "oritech:enderic_lens" }
 			tasks: [{
 				id: "5C0000000100935B"
-				count: 1L
-				item: { count: 1 id: "oritech:enderic_lens" }
+				item: { count: 1, id: "oritech:enderic_lens" }
 				type: "item"
 			}]
+			x: 22.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C000000000000A8"]
-			y: -1.5d
-			x: 25.5d
+			icon: {
+				id: "oritech:laser_arm_block"
+			}
 			id: "5C0000000000935C"
-			icon: { id: "oritech:laser_arm_block" }
 			tasks: [{
 				id: "5C0000000100935C"
-				count: 1L
-				item: { count: 1 id: "oritech:laser_arm_block" }
+				item: { count: 1, id: "oritech:laser_arm_block" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -1.5d
 		}
 		{
-			y: 0.0d
-			x: 15.0d
 			dependencies: ["5C00000000009338"]
+			icon: {
+				id: "oritech:machine_fluid_addon"
+			}
 			id: "5C0000000000935D"
-			icon: { id: "oritech:machine_fluid_addon" }
 			tasks: [{
 				id: "5C0000000100935D"
-				count: 1L
-				item: { count: 1 id: "oritech:machine_fluid_addon" }
+				item: { count: 1, id: "oritech:machine_fluid_addon" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: 0.0d
 		}
 		{
-			y: -3.0d
-			x: 24.0d
 			dependencies: ["5C0000000000935B"]
+			icon: {
+				id: "mekanism:osmium_compressor"
+			}
 			id: "5C0000000000935E"
-			icon: { id: "mekanism:osmium_compressor" }
 			tasks: [{
 				id: "5C0000000100935E"
-				count: 1L
-				item: { count: 1 id: "mekanism:osmium_compressor" }
+				item: { count: 1, id: "mekanism:osmium_compressor" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: -3.0d
 		}
 		{
-			y: -1.5d
-			x: 27.0d
 			dependencies: ["5C0000000000935C"]
+			icon: {
+				id: "oritech:fluxite"
+			}
 			id: "5C0000000000935F"
-			icon: { id: "oritech:fluxite" }
 			tasks: [{
 				id: "5C0000000100935F"
-				count: 1L
-				item: { count: 1 id: "oritech:fluxite" }
+				item: { count: 1, id: "oritech:fluxite" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: -1.5d
 		}
 		{
-			y: 0.0d
-			x: 25.5d
 			dependencies: ["5C0000000000935F"]
+			icon: {
+				id: "oritech:flux_gate"
+			}
 			id: "5C00000000009360"
-			icon: { id: "oritech:flux_gate" }
 			tasks: [{
 				id: "5C00000001009360"
-				count: 1L
-				item: { count: 1 id: "oritech:flux_gate" }
+				item: { count: 1, id: "oritech:flux_gate" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: 0.0d
 		}
 		{
-			y: 1.5d
-			x: 25.5d
 			dependencies: ["5C00000000009360"]
+			icon: {
+				id: "oritech:foundry_block"
+			}
 			id: "5C00000000009361"
-			icon: { id: "oritech:foundry_block" }
 			tasks: [{
 				id: "5C00000001009361"
-				count: 1L
-				item: { count: 1 id: "oritech:foundry_block" }
+				item: { count: 1, id: "oritech:foundry_block" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: 1.5d
 		}
 		{
-			y: 3.0d
-			x: 27.0d
 			dependencies: ["5C00000000009361"]
+			icon: {
+				id: "oritech:duratium_ingot"
+			}
 			id: "5C00000000009362"
-			icon: { id: "oritech:duratium_ingot" }
 			tasks: [{
 				id: "5C00000001009362"
-				count: 1L
-				item: { count: 1 id: "oritech:duratium_ingot" }
+				item: { count: 1, id: "oritech:duratium_ingot" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: 3.0d
 		}
 		{
-			y: 3.0d
-			x: 24.0d
 			dependencies: ["5C00000000009361"]
+			icon: {
+				id: "oritech:energite_ingot"
+			}
 			id: "5C00000000009363"
-			icon: { id: "oritech:energite_ingot" }
 			tasks: [{
 				id: "5C00000001009363"
-				count: 1L
-				item: { count: 1 id: "oritech:energite_ingot" }
+				item: { count: 1, id: "oritech:energite_ingot" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: 3.0d
 		}
 		{
-			y: -6.0d
-			x: 18.0d
 			dependencies: ["5C00000000009353"]
+			icon: {
+				id: "oritech:still_naphtha_bucket"
+			}
 			id: "5C00000000009364"
-			icon: { id: "oritech:still_naphtha_bucket" }
 			tasks: [{
 				id: "5C00000001009364"
-				count: 1L
-				item: { count: 1 id: "oritech:still_naphtha_bucket" }
+				item: { count: 1, id: "oritech:still_naphtha_bucket" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -6.0d
 		}
 		{
-			y: -6.0d
-			x: 19.5d
 			dependencies: ["5C00000000009364"]
+			icon: {
+				id: "oritech:still_silicon_wash_bucket"
+			}
 			id: "5C00000000009365"
-			icon: { id: "oritech:still_silicon_wash_bucket" }
 			tasks: [{
 				id: "5C00000001009365"
-				count: 1L
-				item: { count: 1 id: "oritech:still_silicon_wash_bucket" }
+				item: { count: 1, id: "oritech:still_silicon_wash_bucket" }
 				type: "item"
 			}]
+			x: 19.5d
+			y: -6.0d
 		}
 		{
-			y: -6.0d
-			x: 21.0d
 			dependencies: ["5C00000000009365"]
+			icon: {
+				id: "oritech:silicon_wafer"
+			}
 			id: "5C00000000009366"
-			icon: { id: "oritech:silicon_wafer" }
 			tasks: [{
 				id: "5C00000001009366"
-				count: 1L
-				item: { count: 1 id: "oritech:silicon_wafer" }
+				item: { count: 1, id: "oritech:silicon_wafer" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: -6.0d
 		}
 		{
-			y: -1.5d
-			x: 1.5d
 			dependencies: ["5C00000000009345"]
+			icon: {
+				id: "anvilcraft:heliostats"
+			}
 			id: "5C00000000009367"
-			icon: { id: "anvilcraft:heliostats" }
 			tasks: [{
 				id: "5C00000001009367"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:heliostats" }
+				item: { count: 1, id: "anvilcraft:heliostats" }
 				type: "item"
 			}]
+			x: 1.5d
+			y: -1.5d
 		}
 		{
-			y: -3.0d
-			x: 12.0d
 			dependencies: ["5C0000000000934A"]
+			icon: {
+				id: "oritech:machine_core_1"
+			}
 			id: "5C0000000000A000"
-			icon: { id: "oritech:machine_core_1" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A000"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_1" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_1" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -3.0d
 		}
 		{
-			y: -4.5d
-			x: 12.0d
 			dependencies: ["5C0000000000934B"]
+			icon: {
+				id: "oritech:machine_core_2"
+			}
 			id: "5C0000000000A001"
-			icon: { id: "oritech:machine_core_2" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A001"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_2" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_2" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -4.5d
 		}
 		{
-			y: -6.0d
-			x: 12.0d
 			dependencies: ["5C0000000000934C"]
+			icon: {
+				id: "oritech:machine_core_3"
+			}
 			id: "5C0000000000A002"
-			icon: { id: "oritech:machine_core_3" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A002"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_3" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_3" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -6.0d
 		}
 		{
-			y: -7.5d
-			x: 12.0d
 			dependencies: ["5C0000000000934D"]
+			icon: {
+				id: "oritech:machine_core_4"
+			}
 			id: "5C0000000000A003"
-			icon: { id: "oritech:machine_core_4" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A003"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_4" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_4" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -7.5d
 		}
 		{
-			y: -9.0d
-			x: 12.0d
 			dependencies: ["5C0000000000934E"]
+			icon: {
+				id: "oritech:machine_core_5"
+			}
 			id: "5C0000000000A004"
-			icon: { id: "oritech:machine_core_5" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A004"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_5" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_5" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -9.0d
 		}
 		{
-			y: -10.5d
-			x: 12.0d
 			dependencies: ["5C0000000000934F"]
+			icon: {
+				id: "oritech:machine_core_6"
+			}
 			id: "5C0000000000A005"
-			icon: { id: "oritech:machine_core_6" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A005"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_6" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_6" }
+				type: "item"
 			}]
-		}
-		{
-			y: -12.0d
 			x: 12.0d
+			y: -10.5d
+		}
+		{
 			dependencies: ["5C00000000009350"]
+			icon: {
+				id: "oritech:machine_core_7"
+			}
 			id: "5C0000000000A006"
-			icon: { id: "oritech:machine_core_7" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A006"
-				count: 64L
-				item: { count: 1 id: "oritech:machine_core_7" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:machine_core_7" }
+				type: "item"
 			}]
+			x: 12.0d
+			y: -12.0d
 		}
 		{
-			y: 1.5d
-			x: 3.0d
 			dependencies: ["5C00000000009312"]
+			icon: {
+				id: "anvilcraft:circuit_board"
+			}
 			id: "5C0000000000A007"
-			icon: { id: "anvilcraft:circuit_board" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A007"
-				count: 64L
-				item: { count: 1 id: "anvilcraft:circuit_board" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "anvilcraft:circuit_board" }
+				type: "item"
 			}]
+			x: 3.0d
+			y: 1.5d
 		}
 		{
-			y: 1.5d
-			x: 4.5d
 			dependencies: ["5C00000000009302"]
+			icon: {
+				id: "oritech:magnetic_coil"
+			}
 			id: "5C0000000000A008"
-			icon: { id: "oritech:magnetic_coil" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A008"
-				count: 64L
-				item: { count: 1 id: "oritech:magnetic_coil" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:magnetic_coil" }
+				type: "item"
 			}]
+			x: 4.5d
+			y: 1.5d
 		}
 		{
-			y: 3.0d
-			x: 6.0d
 			dependencies: ["5C00000000009303"]
+			icon: {
+				id: "oritech:motor"
+			}
 			id: "5C0000000000A009"
-			icon: { id: "oritech:motor" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A009"
-				count: 64L
-				item: { count: 1 id: "oritech:motor" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:motor" }
+				type: "item"
 			}]
+			x: 6.0d
+			y: 3.0d
 		}
 		{
-			y: 0.0d
-			x: 16.5d
 			dependencies: ["5C00000000009343"]
+			icon: {
+				id: "mekanism:hdpe_sheet"
+			}
 			id: "5C0000000000A00A"
-			icon: { id: "mekanism:hdpe_sheet" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A00A"
-				count: 64L
-				item: { count: 1 id: "mekanism:hdpe_sheet" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "mekanism:hdpe_sheet" }
+				type: "item"
 			}]
+			x: 16.5d
+			y: 0.0d
 		}
 		{
-			y: 4.5d
-			x: 13.5d
 			dependencies: ["5C00000000009337"]
+			icon: {
+				id: "oritech:adamant_ingot"
+			}
 			id: "5C0000000000A00B"
-			icon: { id: "oritech:adamant_ingot" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A00B"
-				count: 64L
-				item: { count: 1 id: "oritech:adamant_ingot" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:adamant_ingot" }
+				type: "item"
 			}]
+			x: 13.5d
+			y: 4.5d
 		}
 		{
-			y: 1.5d
-			x: 19.5d
 			dependencies: ["5C0000000000933C"]
+			icon: {
+				id: "oritech:processing_unit"
+			}
 			id: "5C0000000000A00C"
-			icon: { id: "oritech:processing_unit" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A00C"
-				count: 64L
-				item: { count: 1 id: "oritech:processing_unit" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "oritech:processing_unit" }
+				type: "item"
 			}]
+			x: 19.5d
+			y: 1.5d
 		}
 		{
-			y: 3.0d
-			x: 19.5d
 			dependencies: ["5C0000000000933B"]
+			icon: {
+				id: "bertieprogression:electric_coil"
+			}
 			id: "5C0000000000A00D"
-			icon: { id: "bertieprogression:electric_coil" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A00D"
-				count: 64L
-				item: { count: 1 id: "bertieprogression:electric_coil" }
-				consume_items: false type: "item"
+				item: { count: 1, id: "bertieprogression:electric_coil" }
+				type: "item"
 			}]
+			x: 19.5d
+			y: 3.0d
 		}
 		{
-			y: -3.0d
-			x: 19.5d
 			dependencies: ["5C00000000009359"]
+			icon: {
+				id: "oritech:carbon_fibre_strands"
+			}
 			id: "5C0000000000A00E"
-			icon: { id: "oritech:carbon_fibre_strands" }
 			tasks: [{
+				consume_items: false
+				count: 64L
 				id: "5C0000000100A00E"
-				count: 64L
-				item: { count: 1 id: "oritech:carbon_fibre_strands" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
-			y: -3.0d
-			x: 21.0d
-			dependencies: ["5C0000000000935B"]
-			id: "5C0000000000A00F"
-			icon: { id: "oritech:enderic_lens" }
-			tasks: [{
-				id: "5C0000000100A00F"
-				count: 64L
-				item: { count: 1 id: "oritech:enderic_lens" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 24.0d
-			dependencies: ["5C00000000009360"]
-			id: "5C0000000000A010"
-			icon: { id: "oritech:flux_gate" }
-			tasks: [{
-				id: "5C0000000100A010"
-				count: 64L
-				item: { count: 1 id: "oritech:flux_gate" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
-			y: 3.0d
-			x: 22.5d
-			dependencies: ["5C00000000009363"]
-			id: "5C0000000000A011"
-			icon: { id: "oritech:energite_ingot" }
-			tasks: [{
-				id: "5C0000000100A011"
-				count: 64L
-				item: { count: 1 id: "oritech:energite_ingot" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
-			y: 3.0d
-			x: 25.5d
-			dependencies: ["5C00000000009362"]
-			id: "5C0000000000A012"
-			icon: { id: "oritech:duratium_ingot" }
-			tasks: [{
-				id: "5C0000000100A012"
-				count: 64L
-				item: { count: 1 id: "oritech:duratium_ingot" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
-			y: -1.5d
-			x: 9.0d
-			dependencies: ["5C00000000009001"]
-			id: "5C00000000000090"
-			icon: { id: "mekanism:configurator" }
-			tasks: [{
-				id: "5C00000001000090"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:configurator" }
+				item: { count: 1, id: "oritech:carbon_fibre_strands" }
 				type: "item"
 			}]
-		}
-		{
-			y: 4.5d
-			x: 22.5d
-			dependencies: ["5C00000000009363"]
-			id: "5C00000000000091"
-			icon: { id: "mekanismgenerators:solar_panel" }
-			tasks: [{
-				id: "5C00000001000091"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanismgenerators:solar_panel" }
-				type: "item"
-			}]
-		}
-		{
-			y: 4.5d
-			x: 24.0d
-			dependencies: ["5C00000000000091"]
-			id: "5C00000000000092"
-			icon: { id: "mekanismgenerators:solar_generator" }
-			tasks: [{
-				id: "5C00000001000092"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanismgenerators:solar_generator" }
-				type: "item"
-			}]
-		}
-		{
-			y: 4.5d
-			x: 25.5d
-			dependencies: ["5C00000000000092"]
-			id: "5C00000000000093"
-			icon: { id: "oritech:big_solar_panel_block" }
-			tasks: [{
-				id: "5C00000001000093"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:big_solar_panel_block" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["5C00000000009359", "5C0000000000009D"]
-			y: 0.0d
-			x: 21.0d
-			id: "5C00000000000094"
-			icon: { id: "oritech:power_pole_block" }
-			tasks: [{
-				id: "5C00000001000094"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:power_pole_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 27.0d
-			dependencies: ["5C00000000009360"]
-			id: "5C00000000000095"
-			icon: { id: "oritech:dubios_container" }
-			tasks: [{
-				id: "5C00000001000095"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:dubios_container" }
-				type: "item"
-			}]
-		}
-		{
-			y: 0.0d
-			x: 27.0d
-			dependencies: ["5C00000000000095"]
-			id: "5C00000000000096"
-			icon: { id: "oritech:unholy_intelligence" }
-			tasks: [{
-				id: "5C00000001000096"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:unholy_intelligence" }
-				type: "item"
-			}]
-		}
-		{
-			y: 0.0d
-			x: 28.5d
-			dependencies: ["5C00000000000096"]
-			id: "5C00000000000097"
-			icon: { id: "oritech:superconductor" }
-			tasks: [{
-				id: "5C00000001000097"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:superconductor" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 28.5d
-			dependencies: ["5C00000000000097"]
-			id: "5C00000000000098"
-			icon: { id: "oritech:overcharged_crystal" }
-			tasks: [{
-				id: "5C00000001000098"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:overcharged_crystal" }
-				type: "item"
-			}]
-		}
-		{
-			size: 2.0d
-			dependencies: ["5C00000000000098", "5C00000000009362"]
-			y: 3.0d
-			x: 30.0d
-			id: "5C00000000000099"
-			icon: { id: "oritech:deep_drill_block" }
-			tasks: [{
-				id: "5C00000001000099"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:deep_drill_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: -1.5d
-			x: 28.5d
-			dependencies: ["5C0000000000935F"]
-			id: "5C0000000000009A"
-			icon: { id: "mekanism:teleportation_core" }
-			tasks: [{
-				id: "5C0000000100009A"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:teleportation_core" }
-				type: "item"
-			}]
-		}
-		{
-			size: 2.0d
-			y: -3.75d
-			x: 30.0d
-			dependencies: ["5C0000000000009A"]
-			id: "5C0000000000009B"
-			icon: { id: "mekanism:teleporter" }
-			tasks: [{
-				id: "5C0000000100009B"
-				count: 9L
-				consume_items: false
-				item: { count: 1 id: "mekanism:teleporter_frame" }
-				type: "item"
-			}
-			{
-				id: "5C0000000101009B"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:teleporter" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 22.5d
-			dependencies: ["5C00000000009363"]
-			id: "5C0000000000009C"
-			icon: { id: "oritech:basic_battery" }
-			tasks: [{
-				id: "5C0000000100009C"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:basic_battery" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 21.0d
-			dependencies: ["5C0000000000009C"]
-			id: "5C0000000000009D"
-			icon: { id: "mekanism:energy_tablet" }
-			tasks: [{
-				id: "5C0000000100009D"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:energy_tablet" }
-				type: "item"
-			}]
-		}
-		{
-			y: 0.0d
-			x: 22.5d
-			dependencies: ["5C0000000000009D"]
-			id: "5C0000000000009E"
-			icon: { id: "mekanismgenerators:wind_generator" }
-			tasks: [{
-				id: "5C0000000100009E"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanismgenerators:wind_generator" }
-				type: "item"
-			}]
-		}
-		{
-			y: 3.0d
-			x: 21.0d
-			dependencies: ["5C0000000000009D"]
-			id: "5C0000000000009F"
-			icon: { id: "mekanism:basic_energy_cube" }
-			tasks: [{
-				id: "5C0000000100009F"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:basic_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 4.5d
-			x: 21.0d
-			dependencies: ["5C0000000000009F"]
-			id: "5C000000000000A0"
-			icon: { id: "mekanism:advanced_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:advanced_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 6.0d
-			x: 21.0d
-			dependencies: ["5C000000000000A0"]
-			id: "5C000000000000A1"
-			icon: { id: "mekanism:elite_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A1"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:elite_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: 7.5d
-			x: 21.0d
-			dependencies: ["5C000000000000A1"]
-			id: "5C000000000000A2"
-			icon: { id: "mekanism:ultimate_energy_cube" }
-			tasks: [{
-				id: "5C000000010000A2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:ultimate_energy_cube" }
-				type: "item"
-			}]
-		}
-		{
-			y: -1.5d
-			x: 24.0d
-			dependencies: ["5C0000000000935E"]
-			id: "5C000000000000A7"
-			icon: { id: "mekanism:ingot_refined_glowstone" }
-			tasks: [{
-				id: "5C000000010000A7"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:ingot_refined_glowstone" }
-				type: "item"
-			}]
-		}
-		{
-			y: 0.0d
-			x: 24.0d
-			dependencies: ["5C000000000000A7"]
-			id: "5C000000000000A8"
-			icon: { id: "mekanism_extras:dust_radiance" }
-			tasks: [{
-				id: "5C000000010000A8"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism_extras:dust_radiance" }
-				type: "item"
-			}]
-		}
-		{
-			size: 2.0d
-			y: -1.5d
-			x: 30.0d
-			dependencies: ["5C00000000000097"]
-			id: "5C000000000000A9"
-			icon: { id: "oritech:drone_port_block" }
-			tasks: [{
-				id: "5C000000010000A9"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:drone_port_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: -3.0d
-			x: 25.5d
-			dependencies: ["5C0000000000935E"]
-			id: "5C000000000000AA"
-			icon: { id: "mekanism:ingot_refined_obsidian" }
-			tasks: [{
-				id: "5C000000010000AA"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:ingot_refined_obsidian" }
-				type: "item"
-			}]
-		}
-		{
-			y: -3.0d
-			x: 27.0d
-			dependencies: ["5C000000000000AA"]
-			id: "5C000000000000AB"
-			icon: { id: "mekanism:ingot_refined_obsidian" }
-			tasks: [{
-				id: "5C000000010000AB"
-				count: 64L
-				consume_items: false
-				item: { count: 1 id: "mekanism:ingot_refined_obsidian" }
-				type: "item"
-			}]
-		}
-		{
-			y: -4.5d
-			x: 22.5d
-			dependencies: ["5C00000000009366"]
-			id: "5C000000000000AC"
-			icon: { id: "oritech:silicon_wafer" }
-			tasks: [{
-				id: "5C000000010000AC"
-				count: 64L
-				consume_items: false
-				item: { count: 1 id: "oritech:silicon_wafer" }
-				type: "item"
-			}]
-		}
-		{
-			y: -1.5d
-			x: 22.5d
-			dependencies: ["5C000000000000A7"]
-			id: "5C000000000000AD"
-			icon: { id: "mekanism:ingot_refined_glowstone" }
-			tasks: [{
-				id: "5C000000010000AD"
-				count: 64L
-				consume_items: false
-				item: { count: 1 id: "mekanism:ingot_refined_glowstone" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["5C00000000009341"]
-			y: -4.5d
-			x: 15.0d
-			id: "5C000000000000AE"
-			icon: { id: "mekanismgenerators:gas_burning_generator" }
-			tasks: [{
-				id: "5C000000010000AE"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanismgenerators:gas_burning_generator" }
-				type: "item"
-			}]
-		}
-		{
-			y: 3.0d
-			x: 7.5d
-			dependencies: ["5C00000000009303"]
-			id: "5C000000000000AF"
-			icon: { id: "mekanism:precision_sawmill" }
-			tasks: [{
-				id: "5C000000010000AF"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:precision_sawmill" }
-				type: "item"
-			}]
-		}
-		{
-			y: -3.0d
-			x: 15.0d
-			dependencies: ["5C00000000009343"]
-			id: "5C000000000000B0"
-			icon: { id: "mekanism:dimensional_stabilizer" }
-			tasks: [{
-				id: "5C000000010000B0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:dimensional_stabilizer" }
-				type: "item"
-			}]
-		}
-		{
-			y: -6.0d
-			x: 15.0d
-			dependencies: ["5C000000000000AE"]
-			id: "5C000000000000B1"
-			icon: { id: "mekmm:large_gas_burning_generator" }
-			tasks: [{
-				id: "5C000000010000B1"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_gas_burning_generator" }
-				type: "item"
-			}]
-		}
-		{
-			y: 3.0d
-			x: 9.0d
-			dependencies: ["5C00000000009322"]
-			id: "5C000000000000B2"
-			icon: { id: "mekmm:large_electrolytic_separator" }
-			tasks: [{
-				id: "5C000000010000B2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_electrolytic_separator" }
-				type: "item"
-			}]
-		}
-		{
-			y: -4.5d
-			x: 13.5d
-			dependencies: ["5C00000000009341"]
-			id: "5C000000000000B3"
-			icon: { id: "mekanism:pigment_extractor" }
-			tasks: [{
-				id: "5C000000010000B3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:pigment_extractor" }
-				type: "item"
-			}]
-		}
-		{
-			y: -6.0d
-			x: 13.5d
-			dependencies: ["5C000000000000B3"]
-			id: "5C000000000000B4"
-			icon: { id: "mekanism:pigment_mixer" }
-			tasks: [{
-				id: "5C000000010000B4"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:pigment_mixer" }
-				type: "item"
-			}]
-		}
-		{
-			y: -7.5d
-			x: 13.5d
-			dependencies: ["5C000000000000B4"]
-			id: "5C000000000000B5"
-			icon: { id: "mekanism:painting_machine" }
-			tasks: [{
-				id: "5C000000010000B5"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:painting_machine" }
-				type: "item"
-			}]
-		}
-		{
-			y: -7.5d
-			x: 15.0d
-			dependencies: ["5C000000000000B4"]
-			id: "5C000000000000B6"
-			icon: { id: "mekmm:large_pigment_mixer" }
-			tasks: [{
-				id: "5C000000010000B6"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_pigment_mixer" }
-				type: "item"
-			}]
-		}
-		{
-			y: 4.5d
 			x: 19.5d
-			dependencies: ["5C0000000000933A"]
-			id: "5C000000000000B7"
-			icon: { id: "oritech:cooler_block" }
-			tasks: [{
-				id: "5C000000010000B7"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:cooler_block" }
-				type: "item"
-			}]
+			y: -3.0d
 		}
 		{
-			size: 2.0d
-			y: 0.75d
-			x: 30.0d
-			dependencies: ["5C00000000000098"]
-			id: "5C000000000000B8"
-			icon: { id: "oritech:augment_application_block" }
-			tasks: [{
-				id: "5C000000010000B8"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:augment_application_block" }
-				type: "item"
+			dependencies: ["5C0000000000935B"]
+			icon: {
+				id: "oritech:enderic_lens"
 			}
-			{
-				id: "5C000000020000B8"
+			id: "5C0000000000A00F"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C0000000100A00F"
+				item: { count: 1, id: "oritech:enderic_lens" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C00000000009360"]
+			icon: {
+				id: "oritech:flux_gate"
+			}
+			id: "5C0000000000A010"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C0000000100A010"
+				item: { count: 1, id: "oritech:flux_gate" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C00000000009363"]
+			icon: {
+				id: "oritech:energite_ingot"
+			}
+			id: "5C0000000000A011"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C0000000100A011"
+				item: { count: 1, id: "oritech:energite_ingot" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C00000000009362"]
+			icon: {
+				id: "oritech:duratium_ingot"
+			}
+			id: "5C0000000000A012"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C0000000100A012"
+				item: { count: 1, id: "oritech:duratium_ingot" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C00000000009001"]
+			icon: {
+				id: "mekanism:configurator"
+			}
+			id: "5C00000000000090"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000090"
+				item: { count: 1, id: "mekanism:configurator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C00000000009363"]
+			icon: {
+				id: "mekanismgenerators:solar_panel"
+			}
+			id: "5C00000000000091"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000091"
+				item: { count: 1, id: "mekanismgenerators:solar_panel" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C00000000000091"]
+			icon: {
+				id: "mekanismgenerators:solar_generator"
+			}
+			id: "5C00000000000092"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000092"
+				item: { count: 1, id: "mekanismgenerators:solar_generator" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C00000000000092"]
+			icon: {
+				id: "oritech:big_solar_panel_block"
+			}
+			id: "5C00000000000093"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000093"
+				item: { count: 1, id: "oritech:big_solar_panel_block" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5C00000000009359"
+				"5C0000000000009D"
+			]
+			icon: {
+				id: "oritech:power_pole_block"
+			}
+			id: "5C00000000000094"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000094"
+				item: { count: 1, id: "oritech:power_pole_block" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C00000000009360"]
+			icon: {
+				id: "oritech:dubios_container"
+			}
+			id: "5C00000000000095"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000095"
+				item: { count: 1, id: "oritech:dubios_container" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C00000000000095"]
+			icon: {
+				id: "oritech:unholy_intelligence"
+			}
+			id: "5C00000000000096"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000096"
+				item: { count: 1, id: "oritech:unholy_intelligence" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C00000000000096"]
+			icon: {
+				id: "oritech:superconductor"
+			}
+			id: "5C00000000000097"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000097"
+				item: { count: 1, id: "oritech:superconductor" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C00000000000097"]
+			icon: {
+				id: "oritech:overcharged_crystal"
+			}
+			id: "5C00000000000098"
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000098"
+				item: { count: 1, id: "oritech:overcharged_crystal" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5C00000000000098"
+				"5C00000000009362"
+			]
+			icon: {
+				id: "oritech:deep_drill_block"
+			}
+			id: "5C00000000000099"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "5C00000001000099"
+				item: { count: 1, id: "oritech:deep_drill_block" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C0000000000935F"]
+			icon: {
+				id: "mekanism:teleportation_core"
+			}
+			id: "5C0000000000009A"
+			tasks: [{
+				consume_items: false
+				id: "5C0000000100009A"
+				item: { count: 1, id: "mekanism:teleportation_core" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C0000000000009A"]
+			icon: {
+				id: "mekanism:teleporter"
+			}
+			id: "5C0000000000009B"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					count: 9L
+					id: "5C0000000100009B"
+					item: { count: 1, id: "mekanism:teleporter_frame" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5C0000000101009B"
+					item: { count: 1, id: "mekanism:teleporter" }
+					type: "item"
+				}
+			]
+			x: 30.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["5C00000000009363"]
+			icon: {
+				id: "oritech:basic_battery"
+			}
+			id: "5C0000000000009C"
+			tasks: [{
+				consume_items: false
+				id: "5C0000000100009C"
+				item: { count: 1, id: "oritech:basic_battery" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C0000000000009C"]
+			icon: {
+				id: "mekanism:energy_tablet"
+			}
+			id: "5C0000000000009D"
+			tasks: [{
+				consume_items: false
+				id: "5C0000000100009D"
+				item: { count: 1, id: "mekanism:energy_tablet" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C0000000000009D"]
+			icon: {
+				id: "mekanismgenerators:wind_generator"
+			}
+			id: "5C0000000000009E"
+			tasks: [{
+				consume_items: false
+				id: "5C0000000100009E"
+				item: { count: 1, id: "mekanismgenerators:wind_generator" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C0000000000009D"]
+			icon: {
+				id: "mekanism:basic_energy_cube"
+			}
+			id: "5C0000000000009F"
+			tasks: [{
+				consume_items: false
+				id: "5C0000000100009F"
+				item: { count: 1, id: "mekanism:basic_energy_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C0000000000009F"]
+			icon: {
+				id: "mekanism:advanced_energy_cube"
+			}
+			id: "5C000000000000A0"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A0"
+				item: { count: 1, id: "mekanism:advanced_energy_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C000000000000A0"]
+			icon: {
+				id: "mekanism:elite_energy_cube"
+			}
+			id: "5C000000000000A1"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A1"
+				item: { count: 1, id: "mekanism:elite_energy_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5C000000000000A1"]
+			icon: {
+				id: "mekanism:ultimate_energy_cube"
+			}
+			id: "5C000000000000A2"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A2"
+				item: { count: 1, id: "mekanism:ultimate_energy_cube" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5C0000000000935E"]
+			icon: {
+				id: "mekanism:ingot_refined_glowstone"
+			}
+			id: "5C000000000000A7"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A7"
+				item: { count: 1, id: "mekanism:ingot_refined_glowstone" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C000000000000A7"]
+			icon: {
+				id: "mekanism_extras:dust_radiance"
+			}
+			id: "5C000000000000A8"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A8"
+				item: { count: 1, id: "mekanism_extras:dust_radiance" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C00000000000097"]
+			icon: {
+				id: "oritech:drone_port_block"
+			}
+			id: "5C000000000000A9"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000A9"
+				item: { count: 1, id: "oritech:drone_port_block" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C0000000000935E"]
+			icon: {
+				id: "mekanism:ingot_refined_obsidian"
+			}
+			id: "5C000000000000AA"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000AA"
+				item: { count: 1, id: "mekanism:ingot_refined_obsidian" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C000000000000AA"]
+			icon: {
+				id: "mekanism:ingot_refined_obsidian"
+			}
+			id: "5C000000000000AB"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C000000010000AB"
+				item: { count: 1, id: "mekanism:ingot_refined_obsidian" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C00000000009366"]
+			icon: {
+				id: "oritech:silicon_wafer"
+			}
+			id: "5C000000000000AC"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C000000010000AC"
+				item: { count: 1, id: "oritech:silicon_wafer" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C000000000000A7"]
+			icon: {
+				id: "mekanism:ingot_refined_glowstone"
+			}
+			id: "5C000000000000AD"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5C000000010000AD"
+				item: { count: 1, id: "mekanism:ingot_refined_glowstone" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C00000000009341"]
+			icon: {
+				id: "mekanismgenerators:gas_burning_generator"
+			}
+			id: "5C000000000000AE"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000AE"
+				item: { count: 1, id: "mekanismgenerators:gas_burning_generator" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C00000000009303"]
+			icon: {
+				id: "mekanism:precision_sawmill"
+			}
+			id: "5C000000000000AF"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000AF"
+				item: { count: 1, id: "mekanism:precision_sawmill" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C00000000009343"]
+			icon: {
+				id: "mekanism:dimensional_stabilizer"
+			}
+			id: "5C000000000000B0"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B0"
+				item: { count: 1, id: "mekanism:dimensional_stabilizer" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C000000000000AE"]
+			icon: {
+				id: "mekmm:large_gas_burning_generator"
+			}
+			id: "5C000000000000B1"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B1"
+				item: { count: 1, id: "mekmm:large_gas_burning_generator" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C00000000009322"]
+			icon: {
+				id: "mekmm:large_electrolytic_separator"
+			}
+			id: "5C000000000000B2"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B2"
+				item: { count: 1, id: "mekmm:large_electrolytic_separator" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C00000000009341"]
+			icon: {
+				id: "mekanism:pigment_extractor"
+			}
+			id: "5C000000000000B3"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B3"
+				item: { count: 1, id: "mekanism:pigment_extractor" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C000000000000B3"]
+			icon: {
+				id: "mekanism:pigment_mixer"
+			}
+			id: "5C000000000000B4"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B4"
+				item: { count: 1, id: "mekanism:pigment_mixer" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C000000000000B4"]
+			icon: {
+				id: "mekanism:painting_machine"
+			}
+			id: "5C000000000000B5"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B5"
+				item: { count: 1, id: "mekanism:painting_machine" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5C000000000000B4"]
+			icon: {
+				id: "mekmm:large_pigment_mixer"
+			}
+			id: "5C000000000000B6"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B6"
+				item: { count: 1, id: "mekmm:large_pigment_mixer" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5C0000000000933A"]
+			icon: {
+				id: "oritech:cooler_block"
+			}
+			id: "5C000000000000B7"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B7"
+				item: { count: 1, id: "oritech:cooler_block" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C00000000000098"]
+			icon: {
+				id: "oritech:augment_application_block"
+			}
+			id: "5C000000000000B8"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "5C000000010000B8"
+					item: { count: 1, id: "oritech:augment_application_block" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5C000000020000B8"
+					item: { count: 1, id: "oritech:simple_augment_station" }
+					type: "item"
+				}
+			]
+			x: 30.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5C0000000000935C"]
+			icon: {
+				id: "oritech:target_designator"
+			}
+			id: "5C000000000000B9"
+			tasks: [{
+				consume_items: false
+				id: "5C000000010000B9"
+				item: { count: 1, id: "oritech:target_designator" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.5d
+		}
+
+		{
+			dependencies: ["5C0000000000933F"]
+			y: 0.0d
+			x: 12.0d
+			id: "5C00000000000100"
+			icon: { id: "oritech:biosteel_ingot" }
+			tasks: [{
+				id: "5C00000001000100"
 				count: 1L
 				consume_items: false
-				item: { count: 1 id: "oritech:simple_augment_station" }
+				item: { count: 1 id: "oritech:biosteel_ingot" }
 				type: "item"
 			}]
 		}
+
 		{
-			y: -4.5d
-			x: 24.0d
-			dependencies: ["5C0000000000935C"]
-			id: "5C000000000000B9"
-			icon: { id: "oritech:target_designator" }
+			dependencies: ["5C00000000009341"]
+			y: -1.5d
+			x: 13.5d
+			id: "5C00000000000101"
+			icon: { id: "mekanism:nutritional_liquifier" }
 			tasks: [{
-				id: "5C000000010000B9"
+				id: "5C00000001000101"
 				count: 1L
 				consume_items: false
-				item: { count: 1 id: "oritech:target_designator" }
+				item: { count: 1 id: "mekanism:nutritional_liquifier" }
+				type: "item"
+			}]
+		}
+
+		{
+			dependencies: ["5C00000000000101"]
+			y: -1.5d
+			x: 12.0d
+			id: "5C00000000000102"
+			icon: { id: "mekmm:planting_station" }
+			tasks: [{
+				id: "5C00000001000102"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:planting_station" }
+				type: "item"
+			}]
+		}
+
+		{
+			dependencies: ["5C0000000000932A"]
+			y: 6.0d
+			x: 12.0d
+			id: "5C00000000000103"
+			icon: { id: "mekmm:large_heat_generator" }
+			tasks: [{
+				id: "5C00000001000103"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekmm:large_heat_generator" }
 				type: "item"
 			}]
 		}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VVV",
+    "V V",
+    "VVV"
+  ],
+  "key": {
+    "V": {
+      "item": "stellaris:venus_sandstone"
+    }
+  },
+  "result": {
+    "id": "stellaris:venus_smooth_sandstone",
+    "count": 8
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "anvilcraft:time_warp",
+  "ingredients": [
+    {
+      "items": "#minecraft:flowers"
+    }
+  ],
+  "results": [
+    {
+      "count": {
+        "type": "minecraft:binomial",
+        "n": 1.0,
+        "p": 0.01
+      },
+      "id": "minecraft:wither_rose"
+    }
+  ]
+}

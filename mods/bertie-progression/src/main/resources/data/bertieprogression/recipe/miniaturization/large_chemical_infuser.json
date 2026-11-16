@@ -1,0 +1,141 @@
+{
+  "type": "compactcrafting:miniaturization",
+  "recipeSize": 3,
+  "craftingTime": 200,
+  "layers": [
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "H",
+          "H",
+          "F"
+        ],
+        [
+          "E",
+          "I",
+          "F"
+        ],
+        [
+          "H",
+          "H",
+          "F"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "D",
+          "F",
+          "G"
+        ],
+        [
+          "E",
+          "D",
+          "G"
+        ],
+        [
+          "D",
+          "F",
+          "G"
+        ]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "A",
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "A",
+          "A"
+        ],
+        [
+          "A",
+          "A",
+          "C"
+        ]
+      ]
+    }
+  ],
+  "components": {
+    "A": {
+      "type": "compactcrafting:block",
+      "block": "anvilcraft:royal_steel_block"
+    },
+    "B": {
+      "type": "compactcrafting:block",
+      "block": "mekanism:basic_energy_cube"
+    },
+    "C": {
+      "type": "compactcrafting:block",
+      "block": "anvilcraft:titanium_block"
+    },
+    "D": {
+      "type": "compactcrafting:block",
+      "block": "mekanism:ultimate_chemical_tank"
+    },
+    "E": {
+      "type": "compactcrafting:block",
+      "block": "oritech:superconductor"
+    },
+    "F": {
+      "type": "compactcrafting:block",
+      "block": "mekanism:elite_pressurized_tube"
+    },
+    "G": {
+      "type": "compactcrafting:block",
+      "block": "refinedstorage:grid"
+    },
+    "H": {
+      "type": "compactcrafting:block",
+      "block": "mekanism:ultimate_pressurized_tube"
+    },
+    "I": {
+      "type": "compactcrafting:block",
+      "block": "mekanism:chemical_infuser"
+    }
+  },
+  "catalyst": {
+    "id": "anvilcraft:space_overcompressor",
+    "count": 1
+  },
+  "outputs": [
+    {
+      "id": "mekmm:large_chemical_infuser",
+      "count": 1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "compactcrafting"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
+}

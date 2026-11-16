@@ -1,0 +1,21 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "CCC",
+    "CNC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "N": {
+      "item": "avaritia:neutron_nugget"
+    }
+  },
+  "result": {
+    "id": "avaritia:refined_coal",
+    "count": 1
+  },
+  "tier": 1
+}

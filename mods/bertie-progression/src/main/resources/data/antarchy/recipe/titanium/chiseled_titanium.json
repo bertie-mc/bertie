@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "antarchy:cut_titanium"
+    }
+  },
+  "result": {
+    "id": "antarchy:chiseled_titanium",
+    "count": 5
+  }
+}

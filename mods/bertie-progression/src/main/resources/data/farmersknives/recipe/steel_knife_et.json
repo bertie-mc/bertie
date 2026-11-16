@@ -14,5 +14,11 @@
   },
   "result": {
     "id": "farmersknives:steel_knife_et"
-  }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:steel_knife_et"
+    }
+  ]
 }

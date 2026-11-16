@@ -7,6 +7,21 @@
 	chapter.4C00000000000000.title: "Trinkets"
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.5C00000000000000.title: "Age of Technology"
+	chapter.5D00000000000000.title: "Going Deeper"
+	chapter.6100000000000000.quest_desc: [
+		"Optional utility machines form the left block. Energy-production equipment is grouped below."
+		"The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter."
+		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
+	]
+	chapter.6100000000000000.subtitle: "Machines and useful blocks"
+	chapter.6100000000000000.title: "Mekanism"
+	chapter.6200000000000000.quest_desc: [
+		"Optional utility machines form the left block. Energy-production equipment is grouped below."
+		"The main tree contains material-processing and machine-production equipment."
+		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
+	]
+	chapter.6200000000000000.subtitle: "Machines and useful blocks"
+	chapter.6200000000000000.title: "Oritech"
 	chapter.6B00000000000000.title: "To Hell and Back"
 	chapter.6C00000000000000.title: "Fluff"
 	chapter.7B00000000000000.title: "God of War"
@@ -64,11 +79,6 @@
 	quest.1B00000000000033.title: "Tool Upgrade Workbench"
 	quest.1B00000000000034.title: "Flimsy Journal"
 	quest.1B00000000000035.title: "A Spell Scroll"
-	quest.1B00000000000046.title: "Rope"
-	quest.1B00000000000047.title: "A Sleeping Bag"
-	quest.1B00000000000048.title: "A Hammock"
-	quest.1B00000000000049.title: "Corrupted Arcane Crystal"
-	quest.1B0000000000004A.title: "Flimsy Ender Lead"
 	quest.1B00000000000036.title: "Wooden Hook"
 	quest.1B00000000000037.title: "Deep Hook"
 	quest.1B00000000000038.title: "Eccentric Tome"
@@ -85,6 +95,11 @@
 	quest.1B00000000000043.title: "Treated Leather"
 	quest.1B00000000000044.title: "Tanned Leather"
 	quest.1B00000000000045.title: "Backpack"
+	quest.1B00000000000046.title: "Rope"
+	quest.1B00000000000047.title: "A Sleeping Bag"
+	quest.1B00000000000048.title: "A Hammock"
+	quest.1B00000000000049.title: "Corrupted Arcane Crystal"
+	quest.1B0000000000004A.title: "Flimsy Ender Lead"
 	quest.1B0000000000004B.title: "The Upgrade Base"
 	quest.1B0000000000004C.title: "Small Leather Slate"
 	quest.1B0000000000004D.title: "Big Leather Slate"
@@ -130,10 +145,11 @@
 	quest.1C00000000000028.title: "Prismatic Focus Lens"
 	quest.1C00000000000029.title: "Shielding Apparatus"
 	quest.1C0000000000002A.title: "Warping Engine"
-	quest.1C00000000000045.title: "Soulwoven Silk"
 	quest.1C00000000000045.quest_desc: ["At the Spirit Altar, weave 4 Wool with Hex Ash, Spiritual Dust, 5 String and 3 Tanned Leather. Sacred, Aerial and Earthen spirits bind it into one Soulwoven Silk."]
-	quest.1C00000000000046.title: "Arcane Cloth"
+	quest.1C00000000000045.title: "Soulwoven Silk"
 	quest.1C00000000000046.quest_desc: ["Craft 4 Arcane Cloth in a 3x3 grid: Soulwoven Silk across the top and bottom rows, with three Small Arcane Slates across the middle."]
+	quest.1C00000000000046.title: "Arcane Cloth"
+	quest.1C00000000000047.quest_desc: ["Spirit-infuse 2 Arcane Cloth with 2 Soulwoven Silk, 6 Arctic Fur and 12 Phantom Membranes, paid in Sacred, Aerial and Arcane spirits."]
 	quest.1C00000000000047.title: "Astral Weave"
 	quest.1C0000000000004A.title: "Soulstained Steel Scythe"
 	quest.1C0000000000004B.title: "Mechanical Grid"
@@ -152,6 +168,239 @@
 	quest.1C00000000000059.title: "Echo Shard"
 	quest.1C0000000000005A.title: "Sculk Crafting Table"
 	quest.1C0000000000005B.title: "The Altar of Amethyst"
+	quest.1C00000000001004.quest_desc: ["Membranes and webs"]
+	quest.1C00000000001004.title: "Silk Fiber"
+	quest.1C00000000001006.quest_desc: ["Spool weaves"]
+	quest.1C00000000001006.title: "Esoteric Spool"
+	quest.1C00000000001012.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001012.title: "Mithril Weave"
+	quest.1C00000000001013.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001013.title: "Corrupted Cloth"
+	quest.1C00000000001014.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001014.title: "Storm Weave"
+	quest.1C00000000001015.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001015.title: "Cloth of the Flamebearer"
+	quest.1C00000000001016.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001016.title: "Aegis Weave"
+	quest.1C00000000001019.quest_desc: ["Spool weaves"]
+	quest.1C00000000001019.title: "Ancient Weave"
+	quest.1C0000000000101A.quest_desc: ["Spool weaves"]
+	quest.1C0000000000101A.title: "Cornered Weave"
+	quest.1C0000000000101B.quest_desc: ["Spool weaves"]
+	quest.1C0000000000101B.title: "Mechanical Weave V1"
+	quest.1C0000000000101C.quest_desc: ["Spool weaves"]
+	quest.1C0000000000101C.title: "Mechanical Weave V2"
+	quest.1C00000000001020.quest_desc: ["Leather processing"]
+	quest.1C00000000001020.title: "Leather"
+	quest.1C00000000001021.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001021.title: "Rabbit Hide"
+	quest.1C00000000001023.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001023.title: "Hoglin Hide"
+	quest.1C00000000001024.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001024.title: "Kangaroo Hide"
+	quest.1C00000000001025.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001025.title: "Shed Snake Skin"
+	quest.1C00000000001026.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001026.title: "Monster Skin"
+	quest.1C00000000001027.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001027.title: "Ravager Hide"
+	quest.1C00000000001028.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001028.title: "Amarok Hide"
+	quest.1C00000000001029.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001029.title: "Scorched Skin"
+	quest.1C0000000000102A.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C0000000000102A.title: "Soul Sucker Leather"
+	quest.1C0000000000102E.quest_desc: ["Leather processing"]
+	quest.1C0000000000102E.title: "Treated Leather"
+	quest.1C0000000000102F.quest_desc: ["Leather processing"]
+	quest.1C0000000000102F.title: "Tanned Leather"
+	quest.1C00000000001030.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001030.title: "Leather Stripe"
+	quest.1C00000000001035.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001035.title: "Hair of Bear"
+	quest.1C00000000001036.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001036.title: "Bison Fur"
+	quest.1C00000000001037.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001037.title: "Wolf Fur"
+	quest.1C00000000001038.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001038.title: "Arctic Fur"
+	quest.1C00000000001039.quest_desc: ["Leather, hides, skins and fur"]
+	quest.1C00000000001039.title: "Alpha Yeti Fur"
+	quest.1C0000000000103B.quest_desc: ["Leather processing"]
+	quest.1C0000000000103B.title: "Small Leather Slate"
+	quest.1C0000000000103C.quest_desc: ["Leather processing"]
+	quest.1C0000000000103C.title: "Large Leather Slate"
+	quest.1C0000000000103D.quest_desc: ["Feathers"]
+	quest.1C0000000000103D.title: "Feather"
+	quest.1C0000000000103E.quest_desc: ["Feathers"]
+	quest.1C0000000000103E.title: "Emu Feather"
+	quest.1C0000000000103F.quest_desc: ["Feathers"]
+	quest.1C0000000000103F.title: "Roadrunner Feather"
+	quest.1C00000000001040.quest_desc: ["Feathers"]
+	quest.1C00000000001040.title: "Raven Feather"
+	quest.1C00000000001041.quest_desc: ["Feathers"]
+	quest.1C00000000001041.title: "Amphithere Feather"
+	quest.1C00000000001042.quest_desc: ["Feathers"]
+	quest.1C00000000001042.title: "Stymphalian Bird Feather"
+	quest.1C00000000001043.quest_desc: ["Feathers"]
+	quest.1C00000000001043.title: "Stymphalian Bird Feather Bundle"
+	quest.1C00000000001044.quest_desc: ["Feathers"]
+	quest.1C00000000001044.title: "Resonant Feather"
+	quest.1C00000000001045.quest_desc: ["Feathers"]
+	quest.1C00000000001045.title: "Resplendent Feather"
+	quest.1C00000000001047.quest_desc: ["Feathers"]
+	quest.1C00000000001047.title: "Angelic Feather"
+	quest.1C00000000001048.quest_desc: ["Membranes and webs"]
+	quest.1C00000000001048.title: "Phantom Membrane"
+	quest.1C00000000001049.quest_desc: ["Membranes and webs"]
+	quest.1C00000000001049.title: "Enchanted Membrane"
+	quest.1C0000000000104A.quest_desc: ["Membranes and webs"]
+	quest.1C0000000000104A.title: "Membrane of the Sun"
+	quest.1C0000000000104E.quest_desc: ["Membranes and webs"]
+	quest.1C0000000000104E.title: "Cobweb"
+	quest.1C00000000001053.quest_desc: ["Forge materials"]
+	quest.1C00000000001053.title: "Dark Metal Armor Plate"
+	quest.1C00000000001054.quest_desc: ["Forge materials"]
+	quest.1C00000000001054.title: "Silver Scraps"
+	quest.1C00000000001055.quest_desc: ["Cloth, fabric, silk and weave"]
+	quest.1C00000000001055.title: "Alchaefabric"
+	quest.1C00000000002000.quest_desc: ["Armour components"]
+	quest.1C00000000002000.title: "Resonarium Plate"
+	quest.1C00000000002001.quest_desc: ["Armour components"]
+	quest.1C00000000002001.title: "Reinforced Echo Shard"
+	quest.1C00000000002002.quest_desc: ["Armour components"]
+	quest.1C00000000002002.title: "Gilded Plate"
+	quest.1C00000000002003.quest_desc: ["Armour components"]
+	quest.1C00000000002003.title: "Echoing Scrap"
+	quest.1C00000000002004.quest_desc: ["Armour components"]
+	quest.1C00000000002004.title: "Possessed Armor Fragment"
+	quest.1C00000000002006.quest_desc: ["Armour components"]
+	quest.1C00000000002006.title: "Armor Shard Cluster"
+	quest.1C00000000002007.quest_desc: ["Armour components"]
+	quest.1C00000000002007.title: "Mithril Scrap"
+	quest.1C0000000000200D.quest_desc: ["Armour components"]
+	quest.1C0000000000200D.title: "Stained Scrap Fragment"
+	quest.1C0000000000200E.quest_desc: ["Armour materials"]
+	quest.1C0000000000200E.title: "Crocodile Scute"
+	quest.1C0000000000200F.quest_desc: ["Armour materials"]
+	quest.1C0000000000200F.title: "Spiked Scute"
+	quest.1C00000000002010.quest_desc: ["Armour materials"]
+	quest.1C00000000002010.title: "Rocky Shell"
+	quest.1C00000000002011.quest_desc: ["Armour materials"]
+	quest.1C00000000002011.title: "Cave Centipede Leg"
+	quest.1C00000000002012.quest_desc: ["Armour materials"]
+	quest.1C00000000002012.title: "Froststalker Horn"
+	quest.1C00000000002013.quest_desc: ["Armour materials"]
+	quest.1C00000000002013.title: "Nightmare Scale"
+	quest.1C00000000002014.quest_desc: ["Armour materials"]
+	quest.1C00000000002014.title: "Primordial Scute"
+	quest.1C00000000002015.quest_desc: ["Armour materials"]
+	quest.1C00000000002015.title: "Chitin"
+	quest.1C00000000002016.quest_desc: ["Armour materials"]
+	quest.1C00000000002016.title: "Naga Scale"
+	quest.1C00000000002017.quest_desc: ["Armour materials"]
+	quest.1C00000000002017.title: "Steeleaf"
+	quest.1C00000000002018.quest_desc: ["Armour materials"]
+	quest.1C00000000002018.title: "Dragon Scales"
+	quest.1C00000000002024.quest_desc: ["Armour materials"]
+	quest.1C00000000002024.title: "Sea Serpent Scales"
+	quest.1C0000000000202B.quest_desc: ["Armour materials"]
+	quest.1C0000000000202B.title: "Deathworm Chitin"
+	quest.1C0000000000202E.quest_desc: ["Armour materials"]
+	quest.1C0000000000202E.title: "Shiny Scales"
+	quest.1C0000000000202F.quest_desc: ["Armour materials"]
+	quest.1C0000000000202F.title: "Dragon Bone"
+	quest.1C00000000002030.quest_desc: ["Armour materials"]
+	quest.1C00000000002030.title: "Witherbone"
+	quest.1C00000000002031.quest_desc: ["Armour materials"]
+	quest.1C00000000002031.title: "Witherbone Shard"
+	quest.1C00000000002032.quest_desc: ["Armour materials"]
+	quest.1C00000000002032.title: "Warden Carapace"
+	quest.1C00000000002033.quest_desc: ["Armour materials"]
+	quest.1C00000000002033.title: "Sculk Bone"
+	quest.1C00000000002034.quest_desc: ["Armour materials"]
+	quest.1C00000000002034.title: "Amethyst Crab Shell"
+	quest.1C00000000002035.quest_desc: ["Armour materials"]
+	quest.1C00000000002035.title: "Koboleton Bone"
+	quest.1C00000000002037.quest_desc: ["Armour materials"]
+	quest.1C00000000002037.title: "Crystallized Coral Fragments"
+	quest.1C00000000002038.quest_desc: ["Armour materials"]
+	quest.1C00000000002038.title: "Coral Chunk"
+	quest.1C00000000002039.quest_desc: ["Armour materials"]
+	quest.1C00000000002039.title: "Crab Shell"
+	quest.1C0000000000203A.quest_desc: ["Armour materials"]
+	quest.1C0000000000203A.title: "Dragon Scale"
+	quest.1C0000000000203B.quest_desc: ["Armour materials"]
+	quest.1C0000000000203B.title: "Aquatic Dragon Scale"
+	quest.1C0000000000203C.quest_desc: ["Armour materials"]
+	quest.1C0000000000203C.title: "Golden Dragon Scale"
+	quest.1C0000000000203D.quest_desc: ["Armour materials"]
+	quest.1C0000000000203D.title: "Silver Dragon Scale"
+	quest.1C0000000000203E.quest_desc: ["Armour materials"]
+	quest.1C0000000000203E.title: "Spiny Shell"
+	quest.1C0000000000203F.quest_desc: ["Armour materials"]
+	quest.1C0000000000203F.title: "Fused Bone"
+	quest.1C00000000002040.quest_desc: ["Armour materials"]
+	quest.1C00000000002040.title: "Lifestealer Bone"
+	quest.1C00000000002041.quest_desc: ["Armour materials"]
+	quest.1C00000000002041.title: "Shadow Scale"
+	quest.1C00000000002042.quest_desc: ["Armour materials"]
+	quest.1C00000000002042.title: "Arcane Sea Shell"
+	quest.1C00000000002043.quest_desc: ["Armour materials"]
+	quest.1C00000000002043.title: "Overgrown Bone"
+	quest.1C00000000002044.quest_desc: ["Armour materials"]
+	quest.1C00000000002044.title: "Charred Bones"
+	quest.1C00000000002045.quest_desc: ["Armour materials"]
+	quest.1C00000000002045.title: "Elder Guardian Spine"
+	quest.1C00000000002046.quest_desc: ["Armour materials"]
+	quest.1C00000000002046.title: "Permafrost Fragment"
+	quest.1C00000000002048.quest_desc: ["Armour materials"]
+	quest.1C00000000002048.title: "Gargoyle Fragment"
+	quest.1C0000000000204A.quest_desc: ["Armour materials"]
+	quest.1C0000000000204A.title: "Scorched Bone"
+	quest.1C0000000000204B.quest_desc: ["Armour materials"]
+	quest.1C0000000000204B.title: "Ender Dragon Bone"
+	quest.1C0000000000204C.quest_desc: ["Armour materials"]
+	quest.1C0000000000204C.title: "Splintered Bone"
+	quest.1C0000000000204D.quest_desc: ["Armour materials"]
+	quest.1C0000000000204D.title: "Withered Splintered Bone"
+	quest.1C0000000000204E.quest_desc: ["Armour materials"]
+	quest.1C0000000000204E.title: "Wither's Spine"
+	quest.1C0000000000204F.quest_desc: ["Armour materials"]
+	quest.1C0000000000204F.title: "Dragon Bone"
+	quest.1C00000000002050.quest_desc: ["Armour materials"]
+	quest.1C00000000002050.title: "Fin"
+	quest.1C00000000002052.quest_desc: ["Armour materials"]
+	quest.1C00000000002052.title: "Fortress Grouper Plate"
+	quest.1C00000000002053.quest_desc: ["Armour materials"]
+	quest.1C00000000002053.title: "Sea Heart Shell"
+	quest.1C00000000002054.quest_desc: ["Armour materials"]
+	quest.1C00000000002054.title: "Sea Heart Shell Shard"
+	quest.1C00000000002055.quest_desc: ["Armour materials"]
+	quest.1C00000000002055.title: "Hardend Resin"
+	quest.1C00000000002056.title: "Warden Bone Shard"
+	quest.1C00000000002057.quest_desc: ["Armour materials"]
+	quest.1C00000000002057.title: "Frozen Bone"
+	quest.1C00000000002058.quest_desc: ["Armour materials"]
+	quest.1C00000000002058.title: "Icy Fang"
+	quest.1C00000000002059.quest_desc: ["Armour materials"]
+	quest.1C00000000002059.title: "Dragonbone Chunk"
+	quest.1C0000000000205D.quest_desc: ["Armour materials"]
+	quest.1C0000000000205D.title: "Armadillo Scute"
+	quest.1C0000000000205E.quest_desc: ["Armour materials"]
+	quest.1C0000000000205E.title: "Turtle Scute"
+	quest.1C0000000000205F.quest_desc: ["Armour materials"]
+	quest.1C0000000000205F.title: "Shulker Shell"
+	quest.1C00000000002060.quest_desc: ["Armour materials"]
+	quest.1C00000000002060.title: "Nautilus Shell"
+	quest.1C00000000002061.quest_desc: ["Armour linings"]
+	quest.1C00000000002061.title: "Dragonskin"
+	quest.1C00000000002062.quest_desc: ["Armour linings"]
+	quest.1C00000000002062.title: "Elastic Tendon"
+	quest.1C00000000002063.quest_desc: ["Future armour materials"]
+	quest.1C00000000002063.title: "King Scale"
+	quest.1C00000000002064.quest_desc: ["Future armour materials"]
+	quest.1C00000000002064.title: "Queen Scale"
 	quest.2B00000000000001.title: "Zinc from the hills"
 	quest.2B00000000000002.title: "Andesite by the stack"
 	quest.2B00000000000003.title: "Andesite Alloy"
@@ -240,11 +489,6 @@
 	quest.2B0000000000005D.title: "Wrench"
 	quest.2B0000000000005E.title: "Rotational Speed Controller"
 	quest.2B00000000000060.title: "Bound Soul Ingot"
-	quest.2B00000000000072.title: "Diamond Magnum Torch"
-	quest.2B00000000000073.title: "Emerald Magnum Torch"
-	quest.2B00000000000074.title: "Amethyst Magnum Torch"
-	quest.2B00000000000075.title: "Ten Crying Obsidian"
-	quest.2B00000000000076.title: "Into the Nightworld"
 	quest.2B00000000000061.title: "Hallowed Gold Ingot"
 	quest.2B00000000000062.title: "Gold Backpack"
 	quest.2B00000000000063.title: "Obsidiansteel Ingot"
@@ -262,6 +506,11 @@
 	quest.2B0000000000006F.title: "Reinforced Hang Glider"
 	quest.2B00000000000070.title: "Ender Pearl Fragment"
 	quest.2B00000000000071.title: "An Elevator"
+	quest.2B00000000000072.title: "Diamond Magnum Torch"
+	quest.2B00000000000073.title: "Emerald Magnum Torch"
+	quest.2B00000000000074.title: "Amethyst Magnum Torch"
+	quest.2B00000000000075.title: "Ten Crying Obsidian"
+	quest.2B00000000000076.title: "Into the Nightworld"
 	quest.2B00000000000084.title: "Small Diamond Slate"
 	quest.2B00000000000085.title: "Large Diamond Slate"
 	quest.2B00000000000086.title: "Diamond Horseshoes"
@@ -277,6 +526,12 @@
 	quest.2B0000000000008D.title: "Energy Trash Can"
 	quest.2B0000000000008E.quest_desc: ["Final solution..."]
 	quest.2B0000000000008E.title: "Ultimate Trash Can"
+	quest.2B00000000004000.title: "The Basic Bookshelf"
+	quest.2B00000000009000.title: "Brilliant Obelisk"
+	quest.2B00000000009001.title: "Overseer"
+	quest.2B0000000000A000.title: "64 Arcane Ingots"
+	quest.2B0000000000A001.title: "64 Hallowed Gold Ingots"
+	quest.2B0000000000A002.title: "64 Arcane Essence"
 	quest.3B00000000000001.title: "Scroll Forge"
 	quest.3B00000000000002.title: "Exanimate Essence"
 	quest.3B00000000000010.title: "Nerakyss, The Kraken"
@@ -347,6 +602,10 @@
 	quest.3B00000000000076.title: "Legendary Crafting Orb"
 	quest.3B00000000000077.quest_desc: ["Survive Shipbreaker's maw"]
 	quest.3B00000000000077.title: "But how?"
+	quest.3B00000000004000.title: "Abyssal Amethyst"
+	quest.3B00000000009000.title: "Runewood Obelisk"
+	quest.3B0000000000A000.title: "64 Cognitive Alloy"
+	quest.3B0000000000A001.title: "Copper Dust"
 	quest.3C00000000000003.title: "The Experience Obelisk"
 	quest.3C00000000000004.title: "The Experience Fountain"
 	quest.3C00000000000005.title: "The Precision Dispeller"
@@ -363,7 +622,7 @@
 	quest.3C00000000000011.title: "The Library of Alexandria"
 	quest.3C00000000000012.title: "The Infusion Pedestal"
 	quest.3C00000000000013.title: "The Mechanical Fusion Anvil"
-	quest.3C00000000000014.title: "The Gem Case of House Faberg\u00e9"
+	quest.3C00000000000014.title: "The Gem Case of House Faberg00e9"
 	quest.3C00000000000016.title: "The Royal Grindstone"
 	quest.3C00000000000017.title: "The Ember Grindstone"
 	quest.4C00000000000001.title: "Aglet"
@@ -1060,6 +1319,638 @@
 	quest.5B00000000000014.title: "Kill the Dragon"
 	quest.5B00000000000015.title: "Dragon Egg"
 	quest.5B00000000000016.title: "Bucket of Dracolotl"
+	quest.5B00000000000090.title: "Trial Eye"
+	quest.5B00000000000091.title: "Sculk Eye"
+	quest.5B00000000000092.title: "End Stone"
+	quest.5B00000000000093.title: "End Dust"
+	quest.5B00000000000094.title: "Powder of Levitation"
+	quest.5B00000000000095.title: "Titanium Nugget"
+	quest.5B00000000000096.title: "Titanium Ingot"
+	quest.5B00000000000097.title: "Dragon's Breath"
+	quest.5B00000000000098.title: "Infused Dragon's Breath"
+	quest.5B00000000000099.title: "Endshelf"
+	quest.5B0000000000009A.title: "Draconic Endshelf"
+	quest.5B0000000000009C.title: "Find an End City"
+	quest.5B0000000000009D.title: "Shulker Shells"
+	quest.5B0000000000009E.title: "Shulker Box"
+	quest.5B0000000000009F.title: "Nesting Shulker Box"
+	quest.5B000000000000A0.title: "Over-Nesting Shulker Box"
+	quest.5B000000000000A1.title: "Supercritical Nesting Shulker Box"
+	quest.5B000000000000A2.title: "Space Overcompressor"
+	quest.5B000000000000A3.title: "Perturbed Eye"
+	quest.5B000000000000A4.title: "12 Cracked End Portal Frames"
+	quest.5B000000000000A5.title: "12 End Portal Frames"
+	quest.5B000000000000A6.title: "Shulker Bullet in a Bottle"
+	quest.5B000000000000A7.title: "Shulkerate Ingot"
+	quest.5B000000000000A8.title: "64 Shulkerate Ingots"
+	quest.5B000000000000A9.title: "Portable Grid"
+	quest.5B000000000000AA.title: "Wireless Universal Grid"
+	quest.5B000000000000AB.title: "Maggot"
+	quest.5B000000000000AC.title: "Crimson Mosquito Proboscis"
+	quest.5B000000000000AD.title: "Crimson Mosquito Larva"
+	quest.5B000000000000AE.title: "Capsid"
+	quest.5B000000000000AF.quest_desc: ["drop it in the void"]
+	quest.5B000000000000AF.title: "Mysterious Worm"
+	quest.5B000000000000B0.title: "Void Worm Eye"
+	quest.5B000000000000B1.title: "Void Worm Mandible"
+	quest.5B000000000000B2.title: "Abyssal Sacrifice"
+	quest.5B000000000000B3.title: "Block of Levitation Powder"
+	quest.5B000000000000B4.title: "Block of Shulkerate"
+	quest.5B000000000000B5.title: "Abyssal Egg"
+	quest.5B000000000000B6.title: "End Crafting Table"
+	quest.5B000000000000B8.title: "Bedrock"
+	quest.5B000000000000B9.title: "Atomic Forge"
+	quest.5B000000000000BA.title: "Advanced Computing Engine Stage 1"
+	quest.5B000000000000BB.title: "Advanced Computing Engine Stage 2"
+	quest.5B000000000000BC.title: "Advanced Computing Engine Stage 3"
+	quest.5B000000000000BD.title: "Advanced Computing Engine"
+	quest.5B000000000000BE.title: "CNC Stamper"
+	quest.5B000000000000BF.title: "CNC Lathe"
+	quest.5B000000000000C0.title: "CNC Rolling Mill"
+	quest.5B000000000000C1.title: "Energized Smelter"
+	quest.5B000000000000C2.title: "Crusher"
+	quest.5B000000000000C3.title: "Super AI Chip"
+	quest.5B000000000000C4.title: "Chemical Injection Chamber"
+	quest.5B000000000000C5.title: "Chemical Infuser"
+	quest.5B000000000000C6.title: "Thermal Evaporation Block"
+	quest.5B000000000000C7.title: "Thermal Evaporation Valve"
+	quest.5B000000000000C8.title: "Thermal Evaporation Controller"
+	quest.5B000000000000C9.title: "Schr00f6dinger's Safe"
+	quest.5B000000000000CA.title: "64 Titanium Ingots"
+	quest.5B000000000000CB.title: "64 Levitation Powder"
+	quest.5B000000000000CC.title: "Eye of Void"
+	quest.5B000000000000CD.title: "Locate Ruined Citadel"
+	quest.5B000000000000CE.title: "Void Core"
+	quest.5B000000000000CF.title: "Enderite Ingot"
+	quest.5B000000000000D0.title: "Titan's Insignia"
+	quest.5B000000000000D1.title: "Defeat Elvenite Paladin"
+	quest.5B000000000000D2.title: "Elvenite Ingot"
+	quest.5B000000000000D3.title: "Wanderer's Fallen Shard"
+	quest.5B000000000000D4.title: "Defeat Vaedric"
+	quest.5B000000000000D5.title: "Voiderite Ingot"
+	quest.5B000000000000D6.title: "The Key of Doom"
+	quest.5B000000000000D7.title: "Defeat Bringer of Doom"
+	quest.5B000000000000D8.title: "Doom Powder"
+	quest.5C00000000000001.quest_desc: ["Build a Steel Casing to enter the Age of Technology."]
+	quest.5C00000000000001.title: "Age of Technology"
+	quest.5C00000000000090.title: "Configurator"
+	quest.5C00000000000091.title: "Solar Panel"
+	quest.5C00000000000092.title: "Solar Generator"
+	quest.5C00000000000093.title: "Big Solar Panel"
+	quest.5C00000000000094.title: "Energy Transmission Pole"
+	quest.5C00000000000095.title: "Dubious Container"
+	quest.5C00000000000096.title: "Unholy Intelligence"
+	quest.5C00000000000097.title: "Superconductor"
+	quest.5C00000000000098.title: "Overcharged Crystal"
+	quest.5C00000000000099.title: "Bedrock Extractor"
+	quest.5C0000000000009A.title: "Teleportation Core"
+	quest.5C0000000000009B.title: "Teleporter"
+	quest.5C0000000000009C.title: "Basic Battery"
+	quest.5C0000000000009D.title: "Energy Tablet"
+	quest.5C0000000000009E.title: "Wind Generator"
+	quest.5C0000000000009F.title: "Basic Energy Cube"
+	quest.5C000000000000A0.title: "Advanced Energy Cube"
+	quest.5C000000000000A1.title: "Elite Energy Cube"
+	quest.5C000000000000A2.title: "Ultimate Energy Cube"
+	quest.5C000000000000A3.title: "Absolute Energy Cube"
+	quest.5C000000000000A4.title: "Supreme Energy Cube"
+	quest.5C000000000000A5.title: "Cosmic Energy Cube"
+	quest.5C000000000000A6.title: "Infinite Energy Cube"
+	quest.5C000000000000A7.title: "Refined Glowstone Ingot"
+	quest.5C000000000000A8.title: "Radiance Dust"
+	quest.5C000000000000A9.title: "Drone Port"
+	quest.5C000000000000AA.title: "Refined Obsidian Ingot"
+	quest.5C000000000000AB.title: "64 Refined Obsidian Ingots"
+	quest.5C000000000000AC.title: "64 Silicon Wafers"
+	quest.5C000000000000AD.title: "64 Refined Glowstone Ingots"
+	quest.5C000000000000AE.title: "Gas-Burning Generator"
+	quest.5C000000000000AF.title: "Precision Sawmill"
+	quest.5C000000000000B0.title: "Dimensional Stabilizer"
+	quest.5C000000000000B1.title: "Large Gas-Burning Generator"
+	quest.5C000000000000B2.title: "Large Electrolytic Separator"
+	quest.5C000000000000B3.title: "Pigment Extractor"
+	quest.5C000000000000B4.title: "Pigment Mixer"
+	quest.5C000000000000B5.title: "Painting Machine"
+	quest.5C000000000000B6.title: "Large Pigment Mixer"
+	quest.5C000000000000B7.title: "Industrial Chiller"
+	quest.5C000000000000B8.title: "Cybernetics"
+	quest.5C000000000000B9.title: "Target Designator"
+	quest.5C00000000009000.title: "Metallurgic Infuser"
+	quest.5C00000000009001.quest_desc: ["X2"]
+	quest.5C00000000009001.title: "Enrichment Chamber"
+	quest.5C00000000009010.title: "Small Power Converter"
+	quest.5C00000000009011.title: "Medium Power Converter"
+	quest.5C00000000009012.title: "Large Power Converter"
+	quest.5C00000000009100.title: "Basic Control Circuit"
+	quest.5C00000000009101.title: "64 Basic Control Circuits"
+	quest.5C00000000009102.title: "Advanced Control Circuit"
+	quest.5C00000000009103.title: "64 Advanced Control Circuits"
+	quest.5C00000000009104.title: "Elite Control Circuit"
+	quest.5C00000000009105.title: "64 Elite Control Circuits"
+	quest.5C00000000009106.title: "Ultimate Control Circuit"
+	quest.5C00000000009107.title: "64 Ultimate Control Circuits"
+	quest.5C00000000009108.title: "Absolute Control Circuit"
+	quest.5C00000000009109.title: "64 Absolute Control Circuits"
+	quest.5C0000000000910A.title: "Supreme Control Circuit"
+	quest.5C0000000000910B.title: "64 Supreme Control Circuits"
+	quest.5C0000000000910C.title: "Cosmic Control Circuit"
+	quest.5C0000000000910D.title: "64 Cosmic Control Circuits"
+	quest.5C0000000000910E.title: "Infinite Control Circuit"
+	quest.5C0000000000910F.title: "64 Infinite Control Circuits"
+	quest.5C00000000009200.title: "Infused Alloy"
+	quest.5C00000000009201.title: "64 Infused Alloys"
+	quest.5C00000000009202.title: "Reinforced Alloy"
+	quest.5C00000000009203.title: "64 Reinforced Alloys"
+	quest.5C00000000009204.title: "Atomic Alloy"
+	quest.5C00000000009205.title: "64 Atomic Alloys"
+	quest.5C00000000009206.title: "Radiance Alloy"
+	quest.5C00000000009207.title: "64 Radiance Alloys"
+	quest.5C00000000009208.title: "Thermonuclear Alloy"
+	quest.5C00000000009209.title: "64 Thermonuclear Alloys"
+	quest.5C0000000000920A.title: "Shining Alloy"
+	quest.5C0000000000920B.title: "64 Shining Alloys"
+	quest.5C0000000000920C.title: "Spectrum Alloy"
+	quest.5C0000000000920D.title: "64 Spectrum Alloys"
+	quest.5C00000000009300.title: "Copper Rod"
+	quest.5C00000000009301.title: "Copper Wire"
+	quest.5C00000000009302.title: "Magnetic Coil"
+	quest.5C00000000009303.title: "Motor"
+	quest.5C00000000009310.title: "Resin"
+	quest.5C00000000009311.title: "Hardened Resin"
+	quest.5C00000000009312.title: "Circuit Board"
+	quest.5C00000000009320.quest_desc: ["X3"]
+	quest.5C00000000009320.title: "Pulveriser"
+	quest.5C00000000009321.quest_desc: ["X3"]
+	quest.5C00000000009321.title: "Purification Chamber"
+	quest.5C00000000009322.quest_desc: ["X3"]
+	quest.5C00000000009322.title: "Electrolytic Separator"
+	quest.5C00000000009323.title: "Pressurized Reaction Chamber"
+	quest.5C00000000009324.title: "Enriched Materials"
+	quest.5C00000000009325.title: "Electric Furnace"
+	quest.5C00000000009326.title: "Empty Capacitor"
+	quest.5C00000000009327.title: "Charger"
+	quest.5C00000000009328.title: "Capacitor"
+	quest.5C00000000009329.title: "Basic Generator"
+	quest.5C0000000000932A.title: "Lava Generator"
+	quest.5C0000000000932B.title: "Steam Engine"
+	quest.5C0000000000932C.title: "Steam Boiler Addon"
+	quest.5C00000000009330.title: "8 Advanced Transmitters"
+	quest.5C00000000009331.title: "8 Elite Transmitters"
+	quest.5C00000000009332.title: "8 Ultimate Transmitters"
+	quest.5C00000000009333.title: "8 Absolute Transmitters"
+	quest.5C00000000009334.title: "8 Supreme Transmitters"
+	quest.5C00000000009335.title: "8 Cosmic Transmitters"
+	quest.5C00000000009336.title: "8 Infinite Transmitters"
+	quest.5C00000000009337.title: "Adamant Ingot"
+	quest.5C00000000009338.title: "Centrifuge"
+	quest.5C00000000009339.title: "Formulaic Assemblicator"
+	quest.5C0000000000933A.title: "Assembler"
+	quest.5C0000000000933B.title: "Electric Coil"
+	quest.5C0000000000933C.title: "Processing Unit"
+	quest.5C0000000000933D.title: "Biofuel"
+	quest.5C0000000000933E.title: "Raw Biopolymer"
+	quest.5C0000000000933F.title: "Substrate"
+	quest.5C00000000009340.title: "HDPE Pellet"
+	quest.5C00000000009341.title: "HDPE Rod"
+	quest.5C00000000009342.title: "PlaStick"
+	quest.5C00000000009343.title: "HDPE Sheet"
+	quest.5C00000000009344.title: "8 Basic Transmitters"
+	quest.5C00000000009345.title: "Logistical Sorter"
+	quest.5C00000000009346.title: "Block Placer"
+	quest.5C00000000009347.title: "Destroyer"
+	quest.5C00000000009348.title: "Tree Cutter"
+	quest.5C00000000009349.title: "Fertilizer"
+	quest.5C0000000000934A.title: "Primitive Machine Core"
+	quest.5C0000000000934B.title: "Basic Machine Core"
+	quest.5C0000000000934C.title: "Improved Machine Core"
+	quest.5C0000000000934D.title: "Advanced Machine Core"
+	quest.5C0000000000934E.title: "Elite Machine Core"
+	quest.5C0000000000934F.title: "Ultra Machine Core"
+	quest.5C00000000009350.title: "Ultimate Machine Core"
+	quest.5C00000000009351.title: "Crude Oil Bucket"
+	quest.5C00000000009352.title: "Pump"
+	quest.5C00000000009353.title: "Refinery"
+	quest.5C00000000009354.title: "Diesel Bucket"
+	quest.5C00000000009355.title: "Fuel Generator"
+	quest.5C00000000009356.title: "Bio Generator"
+	quest.5C00000000009357.title: "Combiner"
+	quest.5C00000000009358.title: "Dense Coal Charge"
+	quest.5C00000000009359.title: "Carbon Fibre"
+	quest.5C0000000000935A.title: "Enderic Compound"
+	quest.5C0000000000935B.title: "Enderic Lens"
+	quest.5C0000000000935C.title: "Enderic Laser"
+	quest.5C0000000000935D.title: "Fluid Addon"
+	quest.5C0000000000935E.title: "Osmium Compressor"
+	quest.5C0000000000935F.title: "Fluxite"
+	quest.5C00000000009360.title: "Flux Gate"
+	quest.5C00000000009361.title: "Foundry"
+	quest.5C00000000009362.title: "Duratium Ingot"
+	quest.5C00000000009363.title: "Energite Ingot"
+	quest.5C00000000009364.title: "Light Naphtha Bucket"
+	quest.5C00000000009365.title: "Silicon Wash"
+	quest.5C00000000009366.title: "Silicon Wafer"
+	quest.5C00000000009367.title: "Heliostat"
+	quest.5C0000000000A000.title: "64 Primitive Machine Cores"
+	quest.5C0000000000A001.title: "64 Basic Machine Cores"
+	quest.5C0000000000A002.title: "64 Improved Machine Cores"
+	quest.5C0000000000A003.title: "64 Advanced Machine Cores"
+	quest.5C0000000000A004.title: "64 Elite Machine Cores"
+	quest.5C0000000000A005.title: "64 Ultra Machine Cores"
+	quest.5C0000000000A006.title: "64 Ultimate Machine Cores"
+	quest.5C0000000000A007.title: "64 Circuit Boards"
+	quest.5C0000000000A008.title: "64 Magnetic Coils"
+	quest.5C0000000000A009.title: "64 Motors"
+	quest.5C0000000000A00A.title: "64 HDPE Sheets"
+	quest.5C0000000000A00B.title: "64 Adamant Ingots"
+	quest.5C0000000000A00C.title: "64 Processing Units"
+	quest.5C0000000000A00D.title: "64 Electric Coils"
+	quest.5C0000000000A00E.title: "64 Carbon Fibre"
+	quest.5C0000000000A00F.title: "64 Enderic Lenses"
+	quest.5C0000000000A010.title: "64 Flux Gates"
+	quest.5C0000000000A011.title: "64 Energite Ingots"
+	quest.5C0000000000A012.title: "64 Duratium Ingots"
+	quest.5D00000000000001.title: "Royal Smithing Template"
+	quest.5D00000000000002.title: "Royal Grindstone"
+	quest.5D00000000000003.title: "Royal Anvil"
+	quest.5D00000000000004.title: "Cursed Gold Ingot"
+	quest.5D00000000000005.title: "Beacon"
+	quest.5D00000000000006.title: "Corrupted Beacon"
+	quest.5D00000000000007.title: "Impact Pile"
+	quest.5D00000000000008.title: "Sturdy Deepslate"
+	quest.5D00000000000009.title: "Void Matter"
+	quest.5D0000000000000A.title: "Earth Core Shard"
+	quest.5D0000000000000B.title: "Frost Metal Ingot"
+	quest.5D0000000000000C.title: "Ember Metal Ingot"
+	quest.5D0000000000000D.title: "Block of Void Matter"
+	quest.5D0000000000000E.title: "Bottle of Ruin"
+	quest.5D0000000000000F.title: "Bedrock Dust"
+	quest.5D00000000000010.title: "Enter Imbrifer"
+	quest.5D00000000000011.title: "Giant Anvil"
+	quest.5D00000000000012.title: "Acceleration Ring"
+	quest.5D00000000000013.title: "Deflection Ring"
+	quest.5D00000000000014.title: "Ember Metal Upgrade Smithing Template"
+	quest.5D00000000000015.title: "Ember Anvil"
+	quest.5D00000000000016.title: "Warden Carapace"
+	quest.5D00000000000017.title: "Warden Bone Shard"
+	quest.5D00000000000018.title: "Heart of the Deep"
+	quest.5D00000000000019.title: "Enter the Otherside"
+	quest.5D0000000000001B.title: "Nether Star Brilliance"
+	quest.5D0000000000001C.title: "Ender Metal and Crystals"
+	quest.5D0000000000001D.title: "Radiant Steel Ingot"
+	quest.5D00000000000020.title: "Dragon Egg"
+	quest.5D00000000000021.title: "Resonarium"
+	quest.5D00000000000022.title: "Resonarium Plate"
+	quest.5D00000000000023.title: "Lite"
+	quest.5D00000000000024.title: "Enriched Gloomslate Bricks"
+	quest.5D00000000000025.title: "Dragonforge Bricks"
+	quest.5D00000000000026.title: "Dragonforge Parts"
+	quest.5D00000000000027.title: "Hephaestus Forge III"
+	quest.5D00000000000028.title: "Machine Casing"
+	quest.5D00000000000029.title: "Controller"
+	quest.5D0000000000002A.title: "Cable"
+	quest.5D0000000000002B.title: "Basic Processor"
+	quest.5D0000000000002C.title: "Improved Processor"
+	quest.5D0000000000002D.title: "Advanced Processor"
+	quest.5D0000000000002E.title: "64 Basic Processors"
+	quest.5D0000000000002F.title: "64 Improved Processors"
+	quest.5D00000000000030.title: "64 Advanced Processors"
+	quest.5D00000000000031.title: "Construction Core"
+	quest.5D00000000000032.title: "Destruction Core"
+	quest.5D00000000000033.title: "64 Construction Cores"
+	quest.5D00000000000034.title: "64 Destruction Cores"
+	quest.5D00000000000035.title: "Grid"
+	quest.5D00000000000036.title: "Crafting Grid"
+	quest.5D00000000000037.title: "Pattern"
+	quest.5D00000000000038.title: "Pattern Grid"
+	quest.5D00000000000039.title: "External Storage"
+	quest.5D0000000000003A.title: "Importer"
+	quest.5D0000000000003B.title: "Exporter"
+	quest.5D0000000000003C.title: "Constructor"
+	quest.5D0000000000003D.title: "Destructor"
+	quest.5D0000000000003E.title: "Disk Drive"
+	quest.5D0000000000003F.title: "Disk Interface"
+	quest.5D00000000000040.title: "Autocrafter"
+	quest.5D00000000000041.title: "Autocrafter Manager"
+	quest.5D00000000000042.title: "Autocrafting Monitor"
+	quest.5D00000000000043.title: "Elite Autocrafter"
+	quest.5D00000000000044.title: "Ultra Autocrafter"
+	quest.5D00000000000045.title: "Mega Autocrafter"
+	quest.5D00000000000046.title: "Wrench"
+	quest.5D00000000000047.title: "Disk Housing"
+	quest.5D00000000000048.title: "Advanced Storage Housing"
+	quest.5D00000000000060.title: "1k Storage Part"
+	quest.5D00000000000061.title: "4k Storage Part"
+	quest.5D00000000000062.title: "16k Storage Part"
+	quest.5D00000000000063.title: "64k Storage Part"
+	quest.5D00000000000064.title: "256k Storage Part"
+	quest.5D00000000000065.title: "1024k Storage Part"
+	quest.5D00000000000066.title: "4096k Storage Part"
+	quest.5D00000000000067.title: "16384k Storage Part"
+	quest.5D00000000000068.title: "65536k Storage Part"
+	quest.5D00000000000069.title: "262m Storage Part"
+	quest.5D0000000000006A.title: "1048m Storage Part"
+	quest.5D0000000000006B.title: "Infinite Storage Part"
+	quest.5D00000000000070.title: "64B Fluid Storage Part"
+	quest.5D00000000000071.title: "256B Fluid Storage Part"
+	quest.5D00000000000072.title: "1024B Fluid Storage Part"
+	quest.5D00000000000073.title: "4096B Fluid Storage Part"
+	quest.5D00000000000074.title: "16384B Fluid Storage Part"
+	quest.5D00000000000075.title: "65536B Fluid Storage Part"
+	quest.5D00000000000076.title: "262kB Fluid Storage Part"
+	quest.5D00000000000077.title: "1048kB Fluid Storage Part"
+	quest.5D00000000000078.title: "Infinite Fluid Storage Part"
+	quest.5D00000000000080.title: "64B Chemical Storage Part"
+	quest.5D00000000000081.title: "256B Chemical Storage Part"
+	quest.5D00000000000082.title: "1024B Chemical Storage Part"
+	quest.5D00000000000083.title: "8192B Chemical Storage Part"
+	quest.5D00000000000084.title: "65536B Chemical Storage Part"
+	quest.5D00000000000085.title: "262kB Chemical Storage Part"
+	quest.5D00000000000086.title: "1048kB Chemical Storage Part"
+	quest.5D00000000000087.title: "8388kB Chemical Storage Part"
+	quest.5D00000000000088.title: "Infinite Chemical Storage Part"
+	quest.5D00000000000089.title: "Upgrade"
+	quest.5D00000000000090.title: "Ember Smithing Table"
+	quest.5D0000000000A000.title: "64 Patterns"
+	quest.5D0000000000A001.title: "Network Transmitter and Receiver"
+	quest.5D0000000000A002.title: "64 Resonarium Plates"
+	quest.5D0000000000A003.title: "64 Frost Metal Ingots"
+	quest.5D0000000000A004.title: "64 Void Matter"
+	quest.5D0000000000A005.title: "64 Cursed Gold Ingots"
+	quest.5D0000000000A006.title: "64 Ember Metal Ingots"
+	quest.5D0000000000A007.title: "64 Sturdy Deepslate"
+	quest.5D0000000000A008.title: "64 Earth Core Shards"
+	quest.5D0000000000A009.title: "64 Ender Metal Ingots"
+	quest.5D0000000000A00A.title: "64 Royal Steel Ingots"
+	quest.61007F7CC4BF1105.quest_desc: [
+		"part of x3, x4, x5"
+		""
+		"Supplies oxygen for 3x ore processing and hydrogen for fuel and chemical production. Also separates brine into chlorine for the 4x route, and Heavy Water into deuterium for fusion."
+	]
+	quest.61007F7CC4BF1105.title: "Electrolytic Separator"
+	quest.6106455D06842EF3.quest_desc: ["Consumes suitable low-value materials for a chance to produce Scrap. Scrap -> Scrap Boxes -> Empty Crystals is part of the long route to UU Matter and replication."]
+	quest.6106455D06842EF3.title: "Recycler"
+	quest.610CA42C49AAF0B7.quest_desc: [
+		"part of x5"
+		""
+		"Part of 5x ore-block processing: washes dirty slurry from the Dissolution Chamber with water, then sends clean slurry to the Crystallizer."
+	]
+	quest.610CA42C49AAF0B7.title: "Chemical Washer"
+	quest.6110778CB26D622B.quest_desc: ["Power it and use a Seismic Reader to inspect underground block columns for ores. Provides geological information for choosing where to mine."]
+	quest.6110778CB26D622B.title: "Seismic Vibrator"
+	quest.6110D90C91445E34.quest_desc: ["Stores radioactive chemicals while eligible waste decays. Some chemicals do not decay; breaking a filled barrel can release radiation."]
+	quest.6110D90C91445E34.title: "Radioactive Waste Barrel"
+	quest.6111AF01EB8E173D.quest_desc: ["Spends UU Matter and energy to duplicate a selected chemical, subject to the addon's replication rules. A late-game chemical supply option alongside ordinary production chains."]
+	quest.6111AF01EB8E173D.title: "Chemical Replicator"
+	quest.6114E8F45706FC16.quest_desc: ["Improves wood-processing yields and produces sawdust. Sawdust also makes Cardboard Boxes, which can move blocks while preserving their contents."]
+	quest.6114E8F45706FC16.title: "Precision Sawmill"
+	quest.6116BB6B786299A2.quest_desc: [
+		"part of x3, x4, x5"
+		""
+		"Starts the 3x ore-block route using oxygen. Its clumps go through Crusher -> Enrichment Chamber -> smelting; the same machine also processes shards in the 4x and 5x routes."
+	]
+	quest.6116BB6B786299A2.title: "Purification Chamber"
+	quest.6117F652FE47BA1E.title: "Large Pigment Mixer"
+	quest.611D57EA6ACBE225.quest_desc: ["Spends UU Matter and energy to duplicate a selected item, subject to the addon's replication rules. The UU Matter supply comes from the Empty Crystal/antimatter chain."]
+	quest.611D57EA6ACBE225.title: "Replicator"
+	quest.6121186A452C0852.title: "Painting Machine"
+	quest.6122354F5A79C064.quest_desc: ["Converts food into Nutritional Paste for a Canteen or the MekaSuit's Nutritional Injection Unit. Centralizes food supply and supports automatic feeding."]
+	quest.6122354F5A79C064.title: "Nutritional Liquifier"
+	quest.6125CB5DE7D6BCB2.quest_desc: ["Fills packages with Mekanism chemicals for PackagedAuto autocrafting. Enables packaged recipes whose inputs include chemicals as well as items."]
+	quest.6125CB5DE7D6BCB2.title: "Chemical Package Filler"
+	quest.61272BEDD29AB74F.quest_desc: ["Extracts pigments from dyes and colored materials for the Pigment Mixer and Painting Machine. This is the input side of Mekanism's recoloring chain."]
+	quest.61272BEDD29AB74F.title: "Pigment Extractor"
+	quest.61279294059E8A75.quest_desc: ["Uses supplied heat to turn water into steam for an Industrial Turbine. Can connect to a heat source or exchange hot sodium from a sodium-cooled Fission Reactor."]
+	quest.61279294059E8A75.title: "Thermoelectric Boiler"
+	quest.6128446391C69930.quest_desc: ["Consumes huge amounts of electricity to turn polonium into antimatter. Its structure needs plutonium and polonium pellets; the antimatter feeds nucleosynthesis and advanced equipment recipes."]
+	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
+	quest.612C871199A18CFB.quest_desc: ["Creates a player-travel portal linked to another Teleporter on the same frequency, including across dimensions. The receiving destination must remain loaded."]
+	quest.612C871199A18CFB.title: "Teleporter"
+	quest.612EDBA3AB31C717.quest_desc: ["Spends antimatter and large amounts of energy on item transmutation. Also makes UU Matter for Mekanism More Machine's replication chain."]
+	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
+	quest.6132A956584982FD.title: "Dynamic Tank"
+	quest.61344D71EAD2E6D8.quest_desc: ["Transfers items, fluids, chemicals, energy and heat between blocks on the same frequency, including across dimensions. A shared endpoint for remote factories and resource outposts."]
+	quest.61344D71EAD2E6D8.title: "Quantum Entangloporter"
+	quest.613500C40061A8D5.quest_desc: [
+		"part of x4, x5"
+		""
+		"Combines two chemicals. Makes hydrogen chloride for the 4x ore route, sulfuric acid for 5x, and D-T Fuel for fusion."
+	]
+	quest.613500C40061A8D5.title: "Chemical Infuser"
+	quest.61358817E29C9D6B.quest_desc: ["Installs and removes modules in modular equipment such as the MekaSuit and Meka-Tool. This is where their specialized abilities are configured."]
+	quest.61358817E29C9D6B.title: "Modification Station"
+	quest.6137E617014D1DF3.quest_desc: ["Collects fluids and upgrades into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."]
+	quest.6137E617014D1DF3.title: "Advanced Electric Pump"
+	quest.6138E502782D37CD.quest_desc: ["Compatibility machine for rolling metal into wire. Its bundled processing recipes require Immersive Engineering, absent from this pack, so it currently has no enabled processing recipes."]
+	quest.6138E502782D37CD.title: "CNC Rolling Mill"
+	quest.614044B979203D06.quest_desc: ["Converts electricity into a beam for laser networks, block breaking and Fusion Reactor ignition. An Amplifier accumulates the energy needed for the ignition pulse."]
+	quest.614044B979203D06.title: "Laser"
+	quest.614430986DD3DBF3.quest_desc: [
+		"part of x2, x3, x4, x5"
+		""
+		"Upgrades into Mekanism and Mekanism Extras Smelting Factories for bulk throughput. Oritech Powered Furnace covers the earlier smelting stage."
+	]
+	quest.614430986DD3DBF3.title: "Energized Smelter"
+	quest.6146427091E96BE5.title: "Wind Generator"
+	quest.6146E3DCFE0F8BE7.quest_desc: [
+		"part of x5"
+		""
+		"Starts the 5x ore-block route using sulfuric acid. Its dirty slurry goes to the Chemical Washer, then the Crystallizer, before rejoining the shard/clump/dust chain."
+	]
+	quest.6146E3DCFE0F8BE7.title: "Chemical Dissolution Chamber"
+	quest.614B80386DC1A6CE.quest_desc: ["Uses power to collect Unstable Dimensional Gas from the environment. The gas feeds the PRC's Empty Crystal recipe in the UU Matter chain."]
+	quest.614B80386DC1A6CE.title: "Ambient Gas Collector"
+	quest.614C917652DB21F9.quest_desc: ["part of x3, x4, x5"]
+	quest.614C917652DB21F9.title: "Crusher"
+	quest.614CFE12B65761A6.quest_desc: ["Converts steam from a Fission Reactor, Thermoelectric Boiler or water-cooled Fusion Reactor into electricity. Its internal components determine steam throughput and power output."]
+	quest.614CFE12B65761A6.title: "Industrial Turbine"
+	quest.6155A58E8CA9B41B.quest_desc: [
+		"part of x5"
+		""
+		"Turns solid ingredients into chemicals. For example, sulfur dust becomes sulfur dioxide for the 5x ore-processing acid chain; uranium processing also uses it."
+	]
+	quest.6155A58E8CA9B41B.title: "Chemical Oxidizer"
+	quest.6156CDFE543B3C19.quest_desc: ["Compatibility machine for machining parts such as rods. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."]
+	quest.6156CDFE543B3C19.title: "CNC Lathe"
+	quest.6157C1521D2B083E.title: "Bin"
+	quest.61588EDEF3EE4AFB.quest_desc: ["A large portable inventory that can be opened while carried. The security system can restrict who may access it."]
+	quest.61588EDEF3EE4AFB.title: "Personal Storage"
+	quest.6158907C6BBC3D76.quest_desc: [
+		"part of x5"
+		""
+		"Part of 5x ore-block processing: turns washed slurry into crystals, which continue through the Injection Chamber and the clump/dust chain. Also produces lithium dust for Induction Cells and solid antimatter pellets."
+	]
+	quest.6158907C6BBC3D76.title: "Chemical Crystallizer"
+	quest.615BEBFBD1ED7B41.title: "Energy Cube"
+	quest.61618A8488AD0A7B.title: "Large Chemical Infuser"
+	quest.6165D0FF8D53B4F4.quest_desc: ["A large heat-based generator with fuel/lava input and heat-network connections. Early solid-fuel power starts with Oritech Basic Generator."]
+	quest.6165D0FF8D53B4F4.title: "Large Heat Generator"
+	quest.616AB809942229A7.title: "Large Electrolytic Separator"
+	quest.616DCD75B4BB76C4.title: "Chargepad"
+	quest.616ED64305E2CC2D.quest_desc: ["Accumulates and combines incoming laser energy, then releases a controlled high-energy pulse. Especially important for igniting the Fusion Reactor; also redirects laser beams."]
+	quest.616ED64305E2CC2D.title: "Laser Amplifier"
+	quest.616F3150516DABC8.title: "Large Gas-Burning Generator"
+	quest.6170554009D736BD.quest_desc: ["Makes control circuits, alloys and enriched iron for steel using stored infusion materials. The Enrichment Chamber can concentrate many infusion ingredients, reducing their material cost."]
+	quest.6170554009D736BD.title: "Metallurgic Infuser"
+	quest.61709D389BE94093.title: "Large Rotary Condensentrator"
+	quest.6172DCD506EEA2EE.quest_desc: ["Transfers items, fluids, chemicals, energy and heat through configurable wireless connections. Provides remote links to machine sides without running physical pipes between them."]
+	quest.6172DCD506EEA2EE.title: "Wireless Transmission Station"
+	quest.61757D6F0FE96778.quest_desc: ["Combines an item, a fluid and a chemical. Used for substrate and HDPE, plutonium/polonium pellets, and Empty Crystals in the UU Matter chain."]
+	quest.61757D6F0FE96778.title: "Pressurized Reaction Chamber"
+	quest.61780E29D988C7B5.title: "Large Solar Neutron Activator"
+	quest.6181C0BF7FB84CD4.title: "Chemical Tank"
+	quest.6183C60BB3CFEFE9.quest_desc: ["Places supplied fluid into the world and expands through the area being filled. Useful for making pools or filling excavations with actual fluid blocks."]
+	quest.6183C60BB3CFEFE9.title: "Fluidic Plenisher"
+	quest.6185FE15DFBCF018.quest_desc: ["Uses molds for compatibility recipes such as plates or processor parts. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."]
+	quest.6185FE15DFBCF018.title: "CNC Stamper"
+	quest.618738812E241B28.quest_desc: ["Late-game chunk loading with configurable coverage and an energy cost. AnvilCraft Overseer provides earlier loading of up to 49 chunks through base-layer upgrades."]
+	quest.618738812E241B28.title: "Dimensional Stabilizer"
+	quest.618D7E07C30BC538.quest_desc: [
+		"part of x5"
+		""
+		"Recreates ore blocks from raw materials and stone. Check the recipe's material cost when considering ore-block processing loops."
+	]
+	quest.618D7E07C30BC538.title: "Combiner"
+	quest.6198E5DF4A957298.quest_desc: ["Burns gaseous fuels, including ethene from the Pressurized Reaction Chamber chain, to generate electricity. Links chemical processing to renewable power production."]
+	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
+	quest.619ED8397E1651A4.quest_desc: ["Portable fluid storage. Higher Mekanism tank tiers expand capacity."]
+	quest.619ED8397E1651A4.title: "Fluid Tank"
+	quest.61A73EDFBD8EA38A.quest_desc: ["Burns combustible items to produce transferable heat. A fuel-based way to heat machines such as the Thermal Evaporation Plant."]
+	quest.61A73EDFBD8EA38A.title: "Fuelwood Heater"
+	quest.61AA22A6579ECC7F.quest_desc: ["An automatic crafting table using a saved Crafting Formula. Stock Control helps keep ingredients in the correct slots for continuous production."]
+	quest.61AA22A6579ECC7F.title: "Formulaic Assemblicator"
+	quest.61B0C5442DEB7DFB.quest_desc: ["Daylight-dependent step in two late-game chains: nuclear waste -> polonium for pellets/antimatter, and lithium -> tritium for fusion fuel."]
+	quest.61B0C5442DEB7DFB.title: "Solar Neutron Activator"
+	quest.61B1B644F2F1C7B1.quest_desc: ["A portable companion with storage, crafting and smelting, plus item pickup and follow modes. Its Chargepad serves as its home and recharge point."]
+	quest.61B1B644F2F1C7B1.title: "Robit"
+	quest.61B2F5B46C3A879D.quest_desc: ["Redirects laser beams and collects drops from blocks broken by its outgoing beam. Provides an inventory output for automated laser mining."]
+	quest.61B2F5B46C3A879D.title: "Laser Tractor Beam"
+	quest.61B42C128D4734CF.quest_desc: ["Spends UU Matter and energy to duplicate a selected fluid, subject to the addon's replication rules. A late-game alternative source of production fluids."]
+	quest.61B42C128D4734CF.title: "Fluid Replicator"
+	quest.61BE905EDDB94833.quest_desc: [
+		"part of x4, x5"
+		""
+		"Starts the 4x ore-block route using hydrogen chloride, producing shards for the Purification Chamber. Also processes crystals coming from the 5x slurry route."
+	]
+	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
+	quest.61BECEE131176E14.title: "Large Antiprotonic Nucleosynthesizer"
+	quest.61C1ECA95D9A4280.quest_desc: ["Generates electricity in daylight. Oritech Big Solar Panel is the larger solar option; dedicated heaters supply evaporation heat."]
+	quest.61C1ECA95D9A4280.title: "Solar Generator"
+	quest.61C6106B8ACA0FE2.quest_desc: ["Charges powered items in nearby players' inventories and equipment slots, including Curios. Useful for keeping carried equipment charged around a base."]
+	quest.61C6106B8ACA0FE2.title: "Wireless Charging Station"
+	quest.61CD6FB9A3418088.quest_desc: ["Consumes fissile fuel, produces nuclear waste, and supplies heat/steam for turbine power. Waste becomes plutonium in the Isotopic Centrifuge or polonium in the Solar Neutron Activator; cooling is essential to prevent a meltdown."]
+	quest.61CD6FB9A3418088.title: "Fission Reactor"
+	quest.61D227C9590B6477.quest_desc: [
+		"part of x5"
+		""
+		"Converts chemicals to liquids and back. Important for water vapor in the sulfuric-acid chain and for turning liquid lithium into the chemical used for tritium or lithium dust."
+	]
+	quest.61D227C9590B6477.title: "Rotary Condensentrator"
+	quest.61D38FD8A0C96143.quest_desc: [
+		"part of x4, x5"
+		""
+		"Converts electricity into transferable heat with an adjustable power draw. Useful for heating a Thermal Evaporation Plant independently of sunlight."
+	]
+	quest.61D38FD8A0C96143.title: "Resistive Heater"
+	quest.61D6479D233254A8.quest_desc: ["Makes fissile fuel from uranium hexafluoride before fission. Afterward, it turns nuclear waste into plutonium, which the PRC makes into pellets for SPS construction."]
+	quest.61D6479D233254A8.title: "Isotopic Centrifuge"
+	quest.61DA1C428DC2A5D1.quest_desc: [
+		"part of x2"
+		""
+		"Starts the 2x ore-block route and cleans dirty dust in the 3x-5x routes. Also enriches infusion ingredients to make them last longer. These tier multipliers refer to ore blocks; raw-ore recipes have different yields."
+	]
+	quest.61DA1C428DC2A5D1.title: "Enrichment Chamber"
+	quest.61E3EA04873C158B.quest_desc: ["Grows crops inside the machine using Nutrient Solution and energy. Provides compact automated farming without maintaining an external field."]
+	quest.61E3EA04873C158B.title: "Planting Station"
+	quest.61E42E122B5D334C.quest_desc: ["Mekanism Extras' separate late-game power reactor, using Nq-U Fuel and Naquadah-specific components. It has its own fuel chain beyond the standard fission/fusion equipment."]
+	quest.61E42E122B5D334C.title: "Naquadah Reactor Controller"
+	quest.61E5CA7CEF5BC9A7.quest_desc: ["Produces power from deuterium and tritium after laser ignition with a fueled Hohlraum. Water cooling can additionally supply steam for an Industrial Turbine."]
+	quest.61E5CA7CEF5BC9A7.title: "Fusion Reactor Controller"
+	quest.61EBF8A4A6E2453C.quest_desc: ["Consumes osmium chemical to make Refined Obsidian and Refined Glowstone ingots. Connect its chemical supply separately from its item inputs."]
+	quest.61EBF8A4A6E2453C.title: "Osmium Compressor"
+	quest.61ED11E1734FFF61.quest_desc: [
+		"part of x4, x5"
+		""
+		"Runs a heated multiblock for water -> brine -> liquid lithium. Brine supplies chlorine for 4x ore processing; lithium leads to fusion fuel and Induction Cells."
+	]
+	quest.61ED11E1734FFF61.title: "Thermal Evaporation Controller"
+	quest.61F223E957195400.quest_desc: ["Extracts items according to filters and can assign transport colors, enforce stack sizes or distribute items round-robin. Connects inventories to Logistical Transporter sorting networks."]
+	quest.61F223E957195400.title: "Logistical Sorter"
+	quest.61F98ABAEE507B7B.quest_desc: ["Selectively mines blocks matching its filters within a configured area. Can replace mined blocks and use Silk Touch; useful for targeted resource gathering without clearing everything."]
+	quest.61F98ABAEE507B7B.title: "Digital Miner"
+	quest.61FCF66321F85454.quest_desc: ["Combines two pigments into another color before painting. Useful when the desired color is easier to synthesize than to extract directly."]
+	quest.61FCF66321F85454.title: "Pigment Mixer"
+	quest.620353FFC9DEFECB.title: "Bio Generator"
+	quest.621129AE3D36DAF2.quest_desc: ["Extracts unlimited resources from special bedrock resource nodes beneath it. Must be powered by Enderic Lasers; ordinary energy cables cannot power it."]
+	quest.621129AE3D36DAF2.title: "Bedrock Extractor"
+	quest.6211FDE7F53E359F.quest_desc: ["Accelerates inserted items along guide rings and collides them to make resources such as overcharged crystals. Collisions also emit tachyons, which nearby Tachyon Absorbers can turn into power."]
+	quest.6211FDE7F53E359F.title: "Particle Accelerator"
+	quest.62151E42D39DA61F.quest_desc: ["Consumes liquid fuels from oil processing to produce electricity. Gives the refinery and fuel-processing chain a direct power-generation use."]
+	quest.62151E42D39DA61F.title: "Fuel Generator"
+	quest.621E38939E05AA74.quest_desc: ["Makes advanced materials and computer components, and can turn processed ore gems into extra dust using Fluxite. Must be charged by Enderic Lasers; each recipe completes when its energy requirement is met."]
+	quest.621E38939E05AA74.title: "Atomic Forge"
+	quest.62213B9DA611D8AD.quest_desc: ["Processes oil and other item/fluid mixtures into products such as fuels and sulfuric acid. Two chamber modules on top unlock its extra fluid outputs; these outputs are extracted from the modules themselves."]
+	quest.62213B9DA611D8AD.title: "Refinery"
+	quest.6230B435795DFCEB.quest_desc: ["Lets you choose equipment enchantments using electricity and souls stored in nearby Arcane Catalysts. Higher levels require more catalysts and souls; the Catalyst itself handles book-based hyper-enchanting."]
+	quest.6230B435795DFCEB.title: "Stabilized Enchanter"
+	quest.623C6424729A6815.quest_desc: ["Monitors a linked Particle Accelerator and emits redstone when particles reach a speed threshold. Can detect the active recipe's required speed automatically or use a manually chosen threshold."]
+	quest.623C6424729A6815.title: "Particle Accelerator Speed Sensor"
+	quest.623C80D163EAF597.quest_desc: ["Moves items between linked ports at least 50 blocks apart, with both ends chunk-loaded. Link them with a Target Designator; Fluid Addons on both ports enable liquid transport."]
+	quest.623C80D163EAF597.title: "Drone Port"
+	quest.6241C0AE0A7AF5E1.quest_desc: ["Mines blocks at range and harvests amethyst clusters into Fluxite. Also transfers power to machines, including the laser-only Atomic Forge and Bedrock Extractor, and stabilizes arcane devices. Aim it with a Target Designator."]
+	quest.6241C0AE0A7AF5E1.title: "Enderic Laser"
+	quest.6244B13B19677509.quest_desc: ["Boosts crop growth and hydrates farmland beneath a Machine Frame using energy and water. Mineral Slurry and bone meal can strengthen its growth effect."]
+	quest.6244B13B19677509.title: "Fertilizer Block"
+	quest.624BC5B6C71FD915.quest_desc: ["Processes ore clumps into gems and makes components such as carbon fiber. A Fluid Addon enables liquid recipes: water or sulfuric acid increases ore yield, and other recipes support fuel/plastic production."]
+	quest.624BC5B6C71FD915.title: "Centrifuge"
+	quest.625343E9CA0E5C5A.quest_desc: ["An ore-processing upgrade: turns raw ores into clumps with extra material and secondary-metal byproducts. Send clumps to the Centrifuge; a Yield Addon doubles the secondary byproducts."]
+	quest.625343E9CA0E5C5A.title: "Fragment Forge"
+	quest.625BAFC1917D7964.quest_desc: ["Collects souls from nearby deaths to supply the Stabilized Enchanter. Also applies books directly and can exceed normal enchantment levels; laser stabilization is needed when storing souls above its base capacity."]
+	quest.625BAFC1917D7964.title: "Arcane Catalyst"
+	quest.625BF6FAC5C95CAD.quest_desc: ["Controls which items may enter the attached inventory through Oritech item pipes. Supports whitelist/blacklist rules and matching item data, plus FTB Filter System filters."]
+	quest.625BF6FAC5C95CAD.title: "Item Filter"
+	quest.6264043F58BE1F33.title: "Equipment Charger"
+	quest.6275CC3B17B7D2B6.quest_desc: ["Converts steam into electricity and returns water. Multiple engines can be chained in a line; a Boiler Addon on an Oritech generator provides one way to supply steam."]
+	quest.6275CC3B17B7D2B6.title: "Steam Engine"
+	quest.627AF928CDFE3F5E.quest_desc: ["Solidifies fluids into materials such as ice or obsidian. Ice is useful as reactor coolant; cold biomes double this machine's processing speed and improve its energy efficiency."]
+	quest.627AF928CDFE3F5E.title: "Industrial Chiller"
+	quest.627F81216BBEC39C.title: "Pulverizer"
+	quest.6284B6EA8E2482E3.quest_desc: ["Captures a dangerous block to create a large multiblock battery; the contained block determines its base capacity. Enderic Lasers raise its storage capacity while firing at it, instead of charging the battery."]
+	quest.6284B6EA8E2482E3.title: "SchrÃ¶dinger's Safe"
+	quest.628B454043ECDE97.quest_desc: ["Makes progression alloys more efficiently than hand crafting. Also melts processed ore gems into ingots, forming the end of an ore-refining route."]
+	quest.628B454043ECDE97.title: "Foundry"
+	quest.628B75F6213677F9.quest_desc: ["Attaches to the Cybernetic Augmentation Center and researches body upgrades. Higher station tiers unlock more advanced augments; extra stations allow research projects to run in parallel."]
+	quest.628B75F6213677F9.title: "Research Station"
+	quest.628D16AD0A6579CA.quest_desc: ["Breaks blocks beneath a Machine Frame; Crop Filter and Quarry Addons adapt it for harvesting or deeper excavation."]
+	quest.628D16AD0A6579CA.title: "Destroyer Block"
+	quest.6291C0C75463BCE6.quest_desc: ["Cuts whole trees from the bottom, collecting their drops. Pair with a Placer Block for replanting when building an automated wood farm."]
+	quest.6291C0C75463BCE6.title: "Tree Cutter"
+	quest.629D84D74F39C289.quest_desc: ["Produces solar power, with output depending on the quality of the machine cores used to assemble it. Better cores increase generation."]
+	quest.629D84D74F39C289.title: "Big Solar Panel"
+	quest.629F225F3D608734.title: "Basic Generator"
+	quest.62A217A8A877BABD.title: "Lava Generator"
+	quest.62A30922B71AED75.quest_desc: ["A magically altered Refinery using the same recipes with power-scaled speed. Nearby sculk blocks improve yield and arcane blocks improve energy efficiency; it keeps only the selected fluid output."]
+	quest.62A30922B71AED75.title: "Tainted Refinery"
+	quest.62A48C1DFCC52A6E.title: "Powered Furnace"
+	quest.62A8F5342B5D078E.quest_desc: ["Transmits electricity over long distances through linked poles. Connect them with a Target Designator; green markers are inputs and red markers are outputs."]
+	quest.62A8F5342B5D078E.title: "Energy Transmission Pole"
+	quest.62B056E48F4E932E.quest_desc: ["Helps high-speed particles negotiate tighter turns, allowing more compact accelerators. Place it inside the ring and link it to the controller with an Advanced Target Designator."]
+	quest.62B056E48F4E932E.title: "Accelerator Magnetic Field"
+	quest.62B2E1ADCC22B9B7.quest_desc: ["Runs a customizable nuclear reactor using fuel rods, reflectors and cooling components. Generates electricity from nuclear fuel; the internal layout determines heat management, efficiency and meltdown risk."]
+	quest.62B2E1ADCC22B9B7.title: "Nuclear Reactor Controller"
+	quest.62C0FE899228BF70.quest_desc: ["Captures the first mob that walks over it in a cage below, then spends souls from nearby deaths to spawn that mob type. The cage size depends on the captured mob."]
+	quest.62C0FE899228BF70.title: "Spawner Controller"
+	quest.62CB138F26BC4EDF.quest_desc: ["Consumes connected machine addons and combines their supported effects into one Heart of the Machine. The resulting addon must be installed alone; interactive addons such as Redstone or Inventory Proxy cannot be spliced."]
+	quest.62CB138F26BC4EDF.title: "Addon Splicer"
+	quest.62D72BBD32A6CEFF.quest_desc: ["Researches and installs player augmentations such as extra health, movement abilities and ore vision. Uses attached Research Stations; installed augments do not need continuous power and can be toggled or removed."]
+	quest.62D72BBD32A6CEFF.title: "Cybernetic Augmentation Center"
+	quest.62E6C820F71BEDAE.quest_desc: ["Catches tachyons emitted by Particle Accelerator collisions and converts them into electricity. Surround the collision area with absorbers to capture particles traveling in different directions."]
+	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
+	quest.62EAC8800B926619.quest_desc: ["Drains connected fluid bodies using a downward extraction trunk."]
+	quest.62EAC8800B926619.title: "Pump"
+	quest.62EB2969EF64354C.quest_desc: ["Produces machine components such as motors, coils and circuits using powered assembly recipes. Many components cost fewer materials here than when crafted by hand."]
+	quest.62EB2969EF64354C.title: "Assembler"
+	quest.62F43E7EF07E2B23.quest_desc: ["Places blocks, seeds or saplings beneath a Machine Frame, sharing the frame area with other gantry machines."]
+	quest.62F43E7EF07E2B23.title: "Placer Block"
 	quest.6B00000000000001.title: "Enter the Nether"
 	quest.6B00000000000002.title: "Eye of Monstrous"
 	quest.6B00000000000003.title: "The Netherite Monstrosity"
@@ -1107,11 +1998,6 @@
 	quest.6B0000000000004F.title: "Corrupti Dust"
 	quest.6B00000000000050.title: "Dark Matter"
 	quest.6B00000000000051.title: "Witness a Black Hole"
-	quest.6B00000000000064.title: "Nether Chest"
-	quest.6B00000000000065.title: "The Soulbinding Brazier"
-	quest.6B0000000000006F.title: "Corrupted Wart"
-	quest.6C00000000000006.title: "The Chipped Station"
-	quest.6C00000000000007.title: "The Chisel"
 	quest.6B0000000000005C.title: "Blazing Hook"
 	quest.6B0000000000005D.title: "Wither Skull"
 	quest.6B0000000000005E.title: "Fiery Wither Skull"
@@ -1120,6 +2006,48 @@
 	quest.6B00000000000061.title: "Eye, Sugar and Mushroom"
 	quest.6B00000000000062.title: "Brewing Stand"
 	quest.6B00000000000063.title: "Alchemical Fire Pit"
+	quest.6B00000000000064.title: "Nether Chest"
+	quest.6B00000000000065.title: "The Soulbinding Brazier"
+	quest.6B0000000000006F.title: "Corrupted Wart"
+	quest.6B00000000006100.title: "Creative Blaze Cake"
+	quest.6B00000000006200.title: "Anvil"
+	quest.6B00000000006201.title: "Anvil Hammer"
+	quest.6B00000000006202.title: "Stamping Platform"
+	quest.6B00000000006203.title: "Crushing Table"
+	quest.6B00000000006204.title: "Scaffolding"
+	quest.6B00000000006205.title: "Cauldron"
+	quest.6B00000000006206.title: "Cinerite"
+	quest.6B00000000006207.title: "Quartz Sand"
+	quest.6B00000000006208.title: "Nether Dust"
+	quest.6B00000000006209.title: "Resin"
+	quest.6B0000000000620A.title: "Hardened Resin"
+	quest.6B0000000000620B.title: "Tungsten Nugget"
+	quest.6B0000000000620C.title: "Geode"
+	quest.6B0000000000620D.title: "Ruby, Topaz and Sapphire"
+	quest.6B0000000000620E.title: "Lightning Rod"
+	quest.6B0000000000620F.title: "Block of Nickel"
+	quest.6B00000000006210.quest_desc: ["Use topaz on lightning rod above the nickel blocks."]
+	quest.6B00000000006210.title: "Hollow Magnet Block"
+	quest.6B00000000006300.title: "Explorer's Compass"
+	quest.6B00000000009000.title: "Piezoelectric Crystal"
+	quest.6B00000000009001.title: "Charge Collector"
+	quest.6B00000000009002.title: "Transmission Pole"
+	quest.6B00000000009003.title: "Heater"
+	quest.6B00000000009004.title: "Royal Steel"
+	quest.6B00000000009010.title: "Mechanical Drill"
+	quest.6B00000000009011.title: "Block Breaker"
+	quest.6B00000000009012.title: "Block Devourer"
+	quest.6B0000000000A000.title: "64 Magnet Ingots"
+	quest.6B0000000000A001.title: "64 Nickel Ingots"
+	quest.6B0000000000A002.title: "64 Netherite Ingots"
+	quest.6B0000000000A003.title: "64 Malignant Pewter Ingots"
+	quest.6C00000000000006.title: "The Chipped Station"
+	quest.6C00000000000007.title: "The Chisel"
+	quest.6C0000000000000A.title: "Spider Mech"
+	quest.6C0000000000000B.title: "Dragonfly"
+	quest.6C00000000006100.title: "Omni Wrench"
+	quest.6C00000000006101.title: "Recovery Pearl"
+	quest.6C00000000006102.title: "Block Flooder"
 	quest.7B00000000000001.title: "Flimsy Journal"
 	quest.7B00000000000006.title: "Book of Steel"
 	quest.7B00000000000007.title: "Rotten Spell Book"
@@ -1247,6 +2175,7 @@
 	quest.7B00000000000090.title: "Garments Of The First Flamebearer Set"
 	quest.7B00000000000091.title: "Giorno Giovanna Set"
 	quest.7B00000000000092.title: "Glassweaver Set"
+	quest.7B00000000000093.title: "Hazel Set"
 	quest.7B00000000000094.title: "Herta Puppet Set"
 	quest.7B00000000000097.title: "Infestation Set"
 	quest.7B00000000000098.title: "Iron431 Set"
@@ -1259,6 +2188,7 @@
 	quest.7B0000000000009F.title: "Masked Fool Set"
 	quest.7B000000000000A1.title: "Miner Set"
 	quest.7B000000000000A2.title: "Mithril Battlemage Set"
+	quest.7B000000000000A3.title: "Mothic Witch Set"
 	quest.7B000000000000A4.title: "Mycelium Guardian Set"
 	quest.7B000000000000A5.title: "Nautilus Knight Set"
 	quest.7B000000000000A6.title: "Radiant Crystal Set"
@@ -1802,6 +2732,19 @@
 	quest.7B000000000002E8.title: "Longbow of the Heavens"
 	quest.7B000000000002E9.title: "Crossbow of the Inferno"
 	quest.7B000000000002EA.title: "Infinity Mace"
+	quest.7B00000000000300.title: "Tier 0"
+	quest.7B00000000000301.title: "Tier 1"
+	quest.7B00000000000302.title: "Tier 2"
+	quest.7B00000000000303.title: "Tier 3"
+	quest.7B00000000000304.title: "Tier 4"
+	quest.7B00000000000305.title: "Tier 5"
+	quest.7B00000000000306.title: "Penultimate tier"
+	quest.7B00000000000307.title: "Final tier"
+	quest.7B00000000000308.title: "Tier 6"
+	quest.7B00000000000309.title: "Tier 7"
+	quest.7B0000000000030A.title: "Tier 8"
+	quest.7B0000000000030B.title: "Tier 9"
+	quest.7B0000000000030C.title: "Tier 10"
 	quest.7B0000000000030D.title: "Fletching Table"
 	quest.7B0000000000030E.title: "Feather"
 	quest.7B0000000000030F.title: "Phantom Membrane"
@@ -1840,6 +2783,42 @@
 	quest.7B00000000000330.title: "Fire Charge"
 	quest.7B00000000000331.title: "Firework Star"
 	quest.7B00000000000332.title: "Firework Rocket"
+	quest.7B00000000005002.title: "Emu Feather"
+	quest.7B00000000005003.title: "Raven Feather"
+	quest.7B00000000005004.title: "Roadrunner Feather"
+	quest.7B00000000005006.title: "Stymphalian Bird Feather"
+	quest.7B00000000005007.title: "Amphithere Feather"
+	quest.7B00000000005008.title: "Resplendent Feather"
+	quest.7B00000000005009.title: "Membrane of the Sun"
+	quest.7B0000000000500A.title: "Resonant Feather"
+	quest.7B0000000000500B.title: "Neutronium Wheat"
+	quest.7B00000000005011.title: "Dark Rod"
+	quest.7B00000000005016.title: "Dielectric Rod"
+	quest.7B00000000005017.title: "Ender Rod"
+	quest.7B00000000005019.title: "Shark Tooth"
+	quest.7B00000000005020.title: "Gargoyle Shard"
+	quest.7B00000000005021.title: "Permafrost Shard"
+	quest.7B00000000005022.title: "Star Fragment"
+	quest.7B00000000005024.title: "Mnemonic Fragment"
+	quest.7B00000000005025.title: "Abyssal Amethyst"
+	quest.7B00000000005026.title: "Onyx Shard"
+	quest.7B00000000005028.title: "Moonstone Shard"
+	quest.7B0000000000502A.title: "Dragon Egg"
+	quest.7B0000000000502B.title: "Reinforced Echo Shard"
+	quest.7B0000000000502D.title: "Divine Soulshard"
+	quest.7B0000000000502E.title: "Eldritch Soulshard"
+	quest.7B00000000005034.title: "Sea Heart Shell Shard"
+	quest.7B00000000005038.title: "Tnt"
+	quest.7B00000000005039.title: "Fragment of the Earth"
+	quest.7B0000000000503A.title: "Sponge"
+	quest.7B0000000000503B.title: "Dread Shard"
+	quest.7B0000000000503C.title: "Bottle o' Lightning"
+	quest.7B0000000000503D.title: "Blood Vial"
+	quest.7B0000000000503E.title: "Fiery Blood"
+	quest.7B0000000000503F.title: "Magnet Ingot"
+	quest.7B00000000005040.title: "Refined Brilliance"
+	quest.7B00000000006000.title: "Block and Chain"
+	quest.7B00000000006001.title: "Skor Gauntlet"
 	quest.7C00000000000001.title: "The Collection"
 	quest.7C00000000000002.title: "Doll Machine"
 	quest.7C00000000000003.title: "Tweaks Tool"
@@ -1958,1148 +2937,22 @@
 	task.2B0000000100001F.title: "Not So Fast"
 	task.5B00000001000001.title: "Placeholder"
 	task.7B0000000100001C.title: "one above all"
-	quest.7B00000000000300.title: "Tier 0"
-	quest.7B00000000000301.title: "Tier 1"
-	quest.7B00000000000302.title: "Tier 2"
-	quest.7B00000000000303.title: "Tier 3"
-	quest.7B00000000000304.title: "Tier 4"
-	quest.7B00000000000305.title: "Tier 5"
-	quest.7B00000000000306.title: "Penultimate tier"
-	quest.7B00000000000307.title: "Final tier"
-	quest.7B00000000000308.title: "Tier 6"
-	quest.7B00000000000309.title: "Tier 7"
-	quest.7B0000000000030A.title: "Tier 8"
-	quest.7B0000000000030B.title: "Tier 9"
-	quest.7B0000000000030C.title: "Tier 10"
-	quest.1C00000000001004.title: "Silk Fiber"
-	quest.1C00000000001004.quest_desc: ["Membranes and webs"]
-	quest.1C00000000001006.title: "Esoteric Spool"
-	quest.1C00000000001006.quest_desc: ["Spool weaves"]
-	quest.1C00000000001012.title: "Mithril Weave"
-	quest.1C00000000001012.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001013.title: "Corrupted Cloth"
-	quest.1C00000000001013.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001014.title: "Storm Weave"
-	quest.1C00000000001014.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001015.title: "Cloth of the Flamebearer"
-	quest.1C00000000001015.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001016.title: "Aegis Weave"
-	quest.1C00000000001016.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000001019.title: "Ancient Weave"
-	quest.1C00000000001019.quest_desc: ["Spool weaves"]
-	quest.1C0000000000101A.title: "Cornered Weave"
-	quest.1C0000000000101A.quest_desc: ["Spool weaves"]
-	quest.1C0000000000101B.title: "Mechanical Weave V1"
-	quest.1C0000000000101B.quest_desc: ["Spool weaves"]
-	quest.1C0000000000101C.title: "Mechanical Weave V2"
-	quest.1C0000000000101C.quest_desc: ["Spool weaves"]
-	quest.1C00000000001020.title: "Leather"
-	quest.1C00000000001020.quest_desc: ["Leather processing"]
-	quest.1C00000000001021.title: "Rabbit Hide"
-	quest.1C00000000001021.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001023.title: "Hoglin Hide"
-	quest.1C00000000001023.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001024.title: "Kangaroo Hide"
-	quest.1C00000000001024.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001025.title: "Shed Snake Skin"
-	quest.1C00000000001025.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001026.title: "Monster Skin"
-	quest.1C00000000001026.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001027.title: "Ravager Hide"
-	quest.1C00000000001027.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001028.title: "Amarok Hide"
-	quest.1C00000000001028.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001029.title: "Scorched Skin"
-	quest.1C00000000001029.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000102A.title: "Soul Sucker Leather"
-	quest.1C0000000000102A.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000102E.title: "Treated Leather"
-	quest.1C0000000000102E.quest_desc: ["Leather processing"]
-	quest.1C0000000000102F.title: "Tanned Leather"
-	quest.1C0000000000102F.quest_desc: ["Leather processing"]
-	quest.1C00000000001030.title: "Leather Stripe"
-	quest.1C00000000001030.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001035.title: "Hair of Bear"
-	quest.1C00000000001035.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001036.title: "Bison Fur"
-	quest.1C00000000001036.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001037.title: "Wolf Fur"
-	quest.1C00000000001037.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001038.title: "Arctic Fur"
-	quest.1C00000000001038.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C00000000001039.title: "Alpha Yeti Fur"
-	quest.1C00000000001039.quest_desc: ["Leather, hides, skins and fur"]
-	quest.1C0000000000103B.title: "Small Leather Slate"
-	quest.1C0000000000103B.quest_desc: ["Leather processing"]
-	quest.1C0000000000103C.title: "Large Leather Slate"
-	quest.1C0000000000103C.quest_desc: ["Leather processing"]
-	quest.1C0000000000103D.title: "Feather"
-	quest.1C0000000000103D.quest_desc: ["Feathers"]
-	quest.1C0000000000103E.title: "Emu Feather"
-	quest.1C0000000000103E.quest_desc: ["Feathers"]
-	quest.1C0000000000103F.title: "Roadrunner Feather"
-	quest.1C0000000000103F.quest_desc: ["Feathers"]
-	quest.1C00000000001040.title: "Raven Feather"
-	quest.1C00000000001040.quest_desc: ["Feathers"]
-	quest.1C00000000001041.title: "Amphithere Feather"
-	quest.1C00000000001041.quest_desc: ["Feathers"]
-	quest.1C00000000001042.title: "Stymphalian Bird Feather"
-	quest.1C00000000001042.quest_desc: ["Feathers"]
-	quest.1C00000000001043.title: "Stymphalian Bird Feather Bundle"
-	quest.1C00000000001043.quest_desc: ["Feathers"]
-	quest.1C00000000001044.title: "Resonant Feather"
-	quest.1C00000000001044.quest_desc: ["Feathers"]
-	quest.1C00000000001045.title: "Resplendent Feather"
-	quest.1C00000000001045.quest_desc: ["Feathers"]
-	quest.1C00000000001047.title: "Angelic Feather"
-	quest.1C00000000001047.quest_desc: ["Feathers"]
-	quest.1C00000000001048.title: "Phantom Membrane"
-	quest.1C00000000001048.quest_desc: ["Membranes and webs"]
-	quest.1C00000000001049.title: "Enchanted Membrane"
-	quest.1C00000000001049.quest_desc: ["Membranes and webs"]
-	quest.1C0000000000104A.title: "Membrane of the Sun"
-	quest.1C0000000000104A.quest_desc: ["Membranes and webs"]
-	quest.1C0000000000104E.title: "Cobweb"
-	quest.1C0000000000104E.quest_desc: ["Membranes and webs"]
-	quest.1C00000000001053.title: "Dark Metal Armor Plate"
-	quest.1C00000000001053.quest_desc: ["Forge materials"]
-	quest.1C00000000001054.title: "Silver Scraps"
-	quest.1C00000000001054.quest_desc: ["Forge materials"]
-	quest.1C00000000001055.title: "Alchaefabric"
-	quest.1C00000000001055.quest_desc: ["Cloth, fabric, silk and weave"]
-	quest.1C00000000000047.quest_desc: ["Spirit-infuse 2 Arcane Cloth with 2 Soulwoven Silk, 6 Arctic Fur and 12 Phantom Membranes, paid in Sacred, Aerial and Arcane spirits."]
-	quest.1C00000000002000.title: "Resonarium Plate"
-	quest.1C00000000002000.quest_desc: ["Armour components"]
-	quest.1C00000000002001.title: "Reinforced Echo Shard"
-	quest.1C00000000002001.quest_desc: ["Armour components"]
-	quest.1C00000000002002.title: "Gilded Plate"
-	quest.1C00000000002002.quest_desc: ["Armour components"]
-	quest.1C00000000002003.title: "Echoing Scrap"
-	quest.1C00000000002003.quest_desc: ["Armour components"]
-	quest.1C00000000002004.title: "Possessed Armor Fragment"
-	quest.1C00000000002004.quest_desc: ["Armour components"]
-	quest.1C00000000002006.title: "Armor Shard Cluster"
-	quest.1C00000000002006.quest_desc: ["Armour components"]
-	quest.1C00000000002007.title: "Mithril Scrap"
-	quest.1C00000000002007.quest_desc: ["Armour components"]
-	quest.1C0000000000200D.title: "Stained Scrap Fragment"
-	quest.1C0000000000200D.quest_desc: ["Armour components"]
-	quest.1C0000000000200E.title: "Crocodile Scute"
-	quest.1C0000000000200E.quest_desc: ["Armour materials"]
-	quest.1C0000000000200F.title: "Spiked Scute"
-	quest.1C0000000000200F.quest_desc: ["Armour materials"]
-	quest.1C00000000002010.title: "Rocky Shell"
-	quest.1C00000000002010.quest_desc: ["Armour materials"]
-	quest.1C00000000002011.title: "Cave Centipede Leg"
-	quest.1C00000000002011.quest_desc: ["Armour materials"]
-	quest.1C00000000002012.title: "Froststalker Horn"
-	quest.1C00000000002012.quest_desc: ["Armour materials"]
-	quest.1C00000000002013.title: "Nightmare Scale"
-	quest.1C00000000002013.quest_desc: ["Armour materials"]
-	quest.1C00000000002014.title: "Primordial Scute"
-	quest.1C00000000002014.quest_desc: ["Armour materials"]
-	quest.1C00000000002015.title: "Chitin"
-	quest.1C00000000002015.quest_desc: ["Armour materials"]
-	quest.1C00000000002016.title: "Naga Scale"
-	quest.1C00000000002016.quest_desc: ["Armour materials"]
-	quest.1C00000000002017.title: "Steeleaf"
-	quest.1C00000000002017.quest_desc: ["Armour materials"]
-	quest.1C00000000002018.title: "Dragon Scales"
-	quest.1C00000000002018.quest_desc: ["Armour materials"]
-	quest.1C00000000002024.title: "Sea Serpent Scales"
-	quest.1C00000000002024.quest_desc: ["Armour materials"]
-	quest.1C0000000000202B.title: "Deathworm Chitin"
-	quest.1C0000000000202B.quest_desc: ["Armour materials"]
-	quest.1C0000000000202E.title: "Shiny Scales"
-	quest.1C0000000000202E.quest_desc: ["Armour materials"]
-	quest.1C0000000000202F.title: "Dragon Bone"
-	quest.1C0000000000202F.quest_desc: ["Armour materials"]
-	quest.1C00000000002030.title: "Witherbone"
-	quest.1C00000000002030.quest_desc: ["Armour materials"]
-	quest.1C00000000002031.title: "Witherbone Shard"
-	quest.1C00000000002031.quest_desc: ["Armour materials"]
-	quest.1C00000000002032.title: "Warden Carapace"
-	quest.1C00000000002032.quest_desc: ["Armour materials"]
-	quest.1C00000000002033.title: "Sculk Bone"
-	quest.1C00000000002033.quest_desc: ["Armour materials"]
-	quest.1C00000000002034.title: "Amethyst Crab Shell"
-	quest.1C00000000002034.quest_desc: ["Armour materials"]
-	quest.1C00000000002035.title: "Koboleton Bone"
-	quest.1C00000000002035.quest_desc: ["Armour materials"]
-	quest.1C00000000002037.title: "Crystallized Coral Fragments"
-	quest.1C00000000002037.quest_desc: ["Armour materials"]
-	quest.1C00000000002038.title: "Coral Chunk"
-	quest.1C00000000002038.quest_desc: ["Armour materials"]
-	quest.1C00000000002039.title: "Crab Shell"
-	quest.1C00000000002039.quest_desc: ["Armour materials"]
-	quest.1C0000000000203A.title: "Dragon Scale"
-	quest.1C0000000000203A.quest_desc: ["Armour materials"]
-	quest.1C0000000000203B.title: "Aquatic Dragon Scale"
-	quest.1C0000000000203B.quest_desc: ["Armour materials"]
-	quest.1C0000000000203C.title: "Golden Dragon Scale"
-	quest.1C0000000000203C.quest_desc: ["Armour materials"]
-	quest.1C0000000000203D.title: "Silver Dragon Scale"
-	quest.1C0000000000203D.quest_desc: ["Armour materials"]
-	quest.1C0000000000203E.title: "Spiny Shell"
-	quest.1C0000000000203E.quest_desc: ["Armour materials"]
-	quest.1C0000000000203F.title: "Fused Bone"
-	quest.1C0000000000203F.quest_desc: ["Armour materials"]
-	quest.1C00000000002040.title: "Lifestealer Bone"
-	quest.1C00000000002040.quest_desc: ["Armour materials"]
-	quest.1C00000000002041.title: "Shadow Scale"
-	quest.1C00000000002041.quest_desc: ["Armour materials"]
-	quest.1C00000000002042.title: "Arcane Sea Shell"
-	quest.1C00000000002042.quest_desc: ["Armour materials"]
-	quest.1C00000000002043.title: "Overgrown Bone"
-	quest.1C00000000002043.quest_desc: ["Armour materials"]
-	quest.1C00000000002044.title: "Charred Bones"
-	quest.1C00000000002044.quest_desc: ["Armour materials"]
-	quest.1C00000000002045.title: "Elder Guardian Spine"
-	quest.1C00000000002045.quest_desc: ["Armour materials"]
-	quest.1C00000000002046.title: "Permafrost Fragment"
-	quest.1C00000000002046.quest_desc: ["Armour materials"]
-	quest.1C00000000002048.title: "Gargoyle Fragment"
-	quest.1C00000000002048.quest_desc: ["Armour materials"]
-	quest.1C0000000000204A.title: "Scorched Bone"
-	quest.1C0000000000204A.quest_desc: ["Armour materials"]
-	quest.1C0000000000204B.title: "Ender Dragon Bone"
-	quest.1C0000000000204B.quest_desc: ["Armour materials"]
-	quest.1C0000000000204C.title: "Splintered Bone"
-	quest.1C0000000000204C.quest_desc: ["Armour materials"]
-	quest.1C0000000000204D.title: "Withered Splintered Bone"
-	quest.1C0000000000204D.quest_desc: ["Armour materials"]
-	quest.1C0000000000204E.title: "Wither's Spine"
-	quest.1C0000000000204E.quest_desc: ["Armour materials"]
-	quest.1C0000000000204F.title: "Dragon Bone"
-	quest.1C0000000000204F.quest_desc: ["Armour materials"]
-	quest.1C00000000002050.title: "Fin"
-	quest.1C00000000002050.quest_desc: ["Armour materials"]
-	quest.1C00000000002052.title: "Fortress Grouper Plate"
-	quest.1C00000000002052.quest_desc: ["Armour materials"]
-	quest.1C00000000002053.title: "Sea Heart Shell"
-	quest.1C00000000002053.quest_desc: ["Armour materials"]
-	quest.1C00000000002054.title: "Sea Heart Shell Shard"
-	quest.1C00000000002054.quest_desc: ["Armour materials"]
-	quest.1C00000000002055.title: "Hardend Resin"
-	quest.1C00000000002055.quest_desc: ["Armour materials"]
-	quest.1C00000000002056.title: "Warden Bone Shard"
-	quest.1C00000000002057.title: "Frozen Bone"
-	quest.1C00000000002057.quest_desc: ["Armour materials"]
-	quest.1C00000000002058.title: "Icy Fang"
-	quest.1C00000000002058.quest_desc: ["Armour materials"]
-	quest.1C00000000002059.title: "Dragonbone Chunk"
-	quest.1C00000000002059.quest_desc: ["Armour materials"]
-	quest.1C0000000000205D.title: "Armadillo Scute"
-	quest.1C0000000000205D.quest_desc: ["Armour materials"]
-	quest.1C0000000000205E.title: "Turtle Scute"
-	quest.1C0000000000205E.quest_desc: ["Armour materials"]
-	quest.1C0000000000205F.title: "Shulker Shell"
-	quest.1C0000000000205F.quest_desc: ["Armour materials"]
-	quest.1C00000000002060.title: "Nautilus Shell"
-	quest.1C00000000002060.quest_desc: ["Armour materials"]
-	quest.1C00000000002061.title: "Dragonskin"
-	quest.1C00000000002061.quest_desc: ["Armour linings"]
-	quest.1C00000000002062.title: "Elastic Tendon"
-	quest.1C00000000002062.quest_desc: ["Armour linings"]
-	quest.1C00000000002063.title: "King Scale"
-	quest.1C00000000002063.quest_desc: ["Future armour materials"]
-	quest.1C00000000002064.title: "Queen Scale"
-	quest.1C00000000002064.quest_desc: ["Future armour materials"]
-	quest.5C00000000000001.title: "Age of Technology"
-	quest.5C00000000000001.quest_desc: ["Build a Steel Casing to enter the Age of Technology."]
-	quest.7B00000000000093.title: "Hazel Set"
-	quest.7B000000000000A3.title: "Mothic Witch Set"
-	quest.2B00000000004000.title: "The Basic Bookshelf"
-	quest.3B00000000004000.title: "Abyssal Amethyst"
-	quest.7B00000000006000.title: "Block and Chain"
-	quest.7B00000000006001.title: "Skor Gauntlet"
-	quest.7B00000000005002.title: "Emu Feather"
-	quest.7B00000000005003.title: "Raven Feather"
-	quest.7B00000000005004.title: "Roadrunner Feather"
-	quest.7B00000000005006.title: "Stymphalian Bird Feather"
-	quest.7B00000000005007.title: "Amphithere Feather"
-	quest.7B00000000005008.title: "Resplendent Feather"
-	quest.7B00000000005009.title: "Membrane of the Sun"
-	quest.7B0000000000500A.title: "Resonant Feather"
-	quest.7B0000000000500B.title: "Neutronium Wheat"
-	quest.7B00000000005011.title: "Dark Rod"
-	quest.7B00000000005016.title: "Dielectric Rod"
-	quest.7B00000000005017.title: "Ender Rod"
-	quest.7B00000000005019.title: "Shark Tooth"
-	quest.7B00000000005020.title: "Gargoyle Shard"
-	quest.7B00000000005021.title: "Permafrost Shard"
-	quest.7B00000000005022.title: "Star Fragment"
-	quest.7B00000000005024.title: "Mnemonic Fragment"
-	quest.7B00000000005025.title: "Abyssal Amethyst"
-	quest.7B00000000005026.title: "Onyx Shard"
-	quest.7B00000000005028.title: "Moonstone Shard"
-	quest.7B0000000000502A.title: "Dragon Egg"
-	quest.7B0000000000502B.title: "Reinforced Echo Shard"
-	quest.7B0000000000502D.title: "Divine Soulshard"
-	quest.7B0000000000502E.title: "Eldritch Soulshard"
-	quest.7B00000000005034.title: "Sea Heart Shell Shard"
-	quest.7B00000000005038.title: "Tnt"
-	quest.7B00000000005039.title: "Fragment of the Earth"
-	quest.7B0000000000503A.title: "Sponge"
-	quest.7B0000000000503B.title: "Dread Shard"
-	quest.7B0000000000503C.title: "Bottle o' Lightning"
-	quest.7B0000000000503D.title: "Blood Vial"
-	quest.7B0000000000503E.title: "Fiery Blood"
-	quest.7B0000000000503F.title: "Magnet Ingot"
-	quest.7B00000000005040.title: "Refined Brilliance"
-	quest.6C00000000006100.title: "Omni Wrench"
-	quest.6B00000000006100.title: "Creative Blaze Cake"
-	quest.6B00000000006200.title: "Anvil"
-	quest.6B00000000006201.title: "Anvil Hammer"
-	quest.6B00000000006202.title: "Stamping Platform"
-	quest.6B00000000006203.title: "Crushing Table"
-	quest.6B00000000006204.title: "Scaffolding"
-	quest.6B00000000006205.title: "Cauldron"
-	quest.6B00000000006206.title: "Cinerite"
-	quest.6B00000000006207.title: "Quartz Sand"
-	quest.6B00000000006208.title: "Nether Dust"
-	quest.6B00000000006209.title: "Resin"
-	quest.6B0000000000620A.title: "Hardened Resin"
-	quest.6B0000000000620B.title: "Tungsten Nugget"
-	quest.6B0000000000620C.title: "Geode"
-	quest.6B0000000000620D.title: "Ruby, Topaz and Sapphire"
-	quest.6B0000000000620E.title: "Lightning Rod"
-	quest.6B0000000000620F.title: "Block of Nickel"
-	quest.6B00000000006210.title: "Hollow Magnet Block"
-	quest.6B00000000006300.title: "Explorer's Compass"
-	quest.6C0000000000000A.title: "Spider Mech"
-	quest.6C0000000000000B.title: "Dragonfly"
-	chapter.6100000000000000.quest_desc: [
-		"Optional utility machines form the left block. Energy-production equipment is grouped below."
-		"The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter."
-		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
-	]
-	chapter.6100000000000000.subtitle: "Machines and useful blocks"
-	chapter.6100000000000000.title: "Mekanism"
-	chapter.6200000000000000.quest_desc: [
-		"Optional utility machines form the left block. Energy-production equipment is grouped below."
-		"The main tree contains material-processing and machine-production equipment."
-		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
-	]
-	chapter.6200000000000000.subtitle: "Machines and useful blocks"
-	chapter.6200000000000000.title: "Oritech"
-	quest.61007F7CC4BF1105.quest_desc: [
-		"part of x3, x4, x5"
-		""
-		"Supplies oxygen for 3x ore processing and hydrogen for fuel and chemical production. Also separates brine into chlorine for the 4x route, and Heavy Water into deuterium for fusion."
-	]
-	quest.61007F7CC4BF1105.title: "Electrolytic Separator"
-	quest.6106455D06842EF3.quest_desc: [
-		"Consumes suitable low-value materials for a chance to produce Scrap. Scrap -> Scrap Boxes -> Empty Crystals is part of the long route to UU Matter and replication."
-	]
-	quest.6106455D06842EF3.title: "Recycler"
-	quest.610CA42C49AAF0B7.quest_desc: [
-		"part of x5"
-		""
-		"Part of 5x ore-block processing: washes dirty slurry from the Dissolution Chamber with water, then sends clean slurry to the Crystallizer."
-	]
-	quest.610CA42C49AAF0B7.title: "Chemical Washer"
-	quest.6110778CB26D622B.quest_desc: [
-		"Power it and use a Seismic Reader to inspect underground block columns for ores. Provides geological information for choosing where to mine."
-	]
-	quest.6110778CB26D622B.title: "Seismic Vibrator"
-	quest.6110D90C91445E34.quest_desc: [
-		"Stores radioactive chemicals while eligible waste decays. Some chemicals do not decay; breaking a filled barrel can release radiation."
-	]
-	quest.6110D90C91445E34.title: "Radioactive Waste Barrel"
-	quest.6111AF01EB8E173D.quest_desc: [
-		"Spends UU Matter and energy to duplicate a selected chemical, subject to the addon's replication rules. A late-game chemical supply option alongside ordinary production chains."
-	]
-	quest.6111AF01EB8E173D.title: "Chemical Replicator"
-	quest.6114E8F45706FC16.quest_desc: [
-		"Improves wood-processing yields and produces sawdust. Sawdust also makes Cardboard Boxes, which can move blocks while preserving their contents."
-	]
-	quest.6114E8F45706FC16.title: "Precision Sawmill"
-	quest.6116BB6B786299A2.quest_desc: [
-		"part of x3, x4, x5"
-		""
-		"Starts the 3x ore-block route using oxygen. Its clumps go through Crusher -> Enrichment Chamber -> smelting; the same machine also processes shards in the 4x and 5x routes."
-	]
-	quest.6116BB6B786299A2.title: "Purification Chamber"
-	quest.611D57EA6ACBE225.quest_desc: [
-		"Spends UU Matter and energy to duplicate a selected item, subject to the addon's replication rules. The UU Matter supply comes from the Empty Crystal/antimatter chain."
-	]
-	quest.611D57EA6ACBE225.title: "Replicator"
-	quest.6121186A452C0852.title: "Painting Machine"
-	quest.6122354F5A79C064.quest_desc: [
-		"Converts food into Nutritional Paste for a Canteen or the MekaSuit's Nutritional Injection Unit. Centralizes food supply and supports automatic feeding."
-	]
-	quest.6122354F5A79C064.title: "Nutritional Liquifier"
-	quest.6125CB5DE7D6BCB2.quest_desc: [
-		"Fills packages with Mekanism chemicals for PackagedAuto autocrafting. Enables packaged recipes whose inputs include chemicals as well as items."
-	]
-	quest.6125CB5DE7D6BCB2.title: "Chemical Package Filler"
-	quest.61272BEDD29AB74F.quest_desc: [
-		"Extracts pigments from dyes and colored materials for the Pigment Mixer and Painting Machine. This is the input side of Mekanism's recoloring chain."
-	]
-	quest.61272BEDD29AB74F.title: "Pigment Extractor"
-	quest.61279294059E8A75.quest_desc: [
-		"Uses supplied heat to turn water into steam for an Industrial Turbine. Can connect to a heat source or exchange hot sodium from a sodium-cooled Fission Reactor."
-	]
-	quest.61279294059E8A75.title: "Thermoelectric Boiler"
-	quest.6128446391C69930.quest_desc: [
-		"Consumes huge amounts of electricity to turn polonium into antimatter. Its structure needs plutonium and polonium pellets; the antimatter feeds nucleosynthesis and advanced equipment recipes."
-	]
-	quest.6128446391C69930.title: "Supercritical Phase Shifter (SPS)"
-	quest.612C871199A18CFB.quest_desc: [
-		"Creates a player-travel portal linked to another Teleporter on the same frequency, including across dimensions. The receiving destination must remain loaded."
-	]
-	quest.612C871199A18CFB.title: "Teleporter"
-	quest.612EDBA3AB31C717.quest_desc: [
-		"Spends antimatter and large amounts of energy on item transmutation. Also makes UU Matter for Mekanism More Machine's replication chain."
-	]
-	quest.612EDBA3AB31C717.title: "Antiprotonic Nucleosynthesizer"
-	quest.6132A956584982FD.title: "Dynamic Tank"
-	quest.61344D71EAD2E6D8.quest_desc: [
-		"Transfers items, fluids, chemicals, energy and heat between blocks on the same frequency, including across dimensions. A shared endpoint for remote factories and resource outposts."
-	]
-	quest.61344D71EAD2E6D8.title: "Quantum Entangloporter"
-	quest.613500C40061A8D5.quest_desc: [
-		"part of x4, x5"
-		""
-		"Combines two chemicals. Makes hydrogen chloride for the 4x ore route, sulfuric acid for 5x, and D-T Fuel for fusion."
-	]
-	quest.613500C40061A8D5.title: "Chemical Infuser"
-	quest.61358817E29C9D6B.quest_desc: [
-		"Installs and removes modules in modular equipment such as the MekaSuit and Meka-Tool. This is where their specialized abilities are configured."
-	]
-	quest.61358817E29C9D6B.title: "Modification Station"
-	quest.6137E617014D1DF3.quest_desc: [
-		"Collects fluids and upgrades into Mekanism Extras Advanced Electric Pump. A Filter Upgrade enables heavy-water collection for fusion."
-	]
-	quest.6137E617014D1DF3.title: "Advanced Electric Pump"
-	quest.6138E502782D37CD.quest_desc: [
-		"Compatibility machine for rolling metal into wire. Its bundled processing recipes require Immersive Engineering, absent from this pack, so it currently has no enabled processing recipes."
-	]
-	quest.6138E502782D37CD.title: "CNC Rolling Mill"
-	quest.614044B979203D06.quest_desc: [
-		"Converts electricity into a beam for laser networks, block breaking and Fusion Reactor ignition. An Amplifier accumulates the energy needed for the ignition pulse."
-	]
-	quest.614044B979203D06.title: "Laser"
-	quest.614430986DD3DBF3.quest_desc: [
-		"part of x2, x3, x4, x5"
-		""
-		"Upgrades into Mekanism and Mekanism Extras Smelting Factories for bulk throughput. Oritech Powered Furnace covers the earlier smelting stage."
-	]
-	quest.614430986DD3DBF3.title: "Energized Smelter"
-	quest.6146427091E96BE5.title: "Wind Generator"
-	quest.6146E3DCFE0F8BE7.quest_desc: [
-		"part of x5"
-		""
-		"Starts the 5x ore-block route using sulfuric acid. Its dirty slurry goes to the Chemical Washer, then the Crystallizer, before rejoining the shard/clump/dust chain."
-	]
-	quest.6146E3DCFE0F8BE7.title: "Chemical Dissolution Chamber"
-	quest.614B80386DC1A6CE.quest_desc: [
-		"Uses power to collect Unstable Dimensional Gas from the environment. The gas feeds the PRC's Empty Crystal recipe in the UU Matter chain."
-	]
-	quest.614B80386DC1A6CE.title: "Ambient Gas Collector"
-	quest.614C917652DB21F9.quest_desc: [
-		"part of x3, x4, x5"
-	]
-	quest.614C917652DB21F9.title: "Crusher"
-	quest.614CFE12B65761A6.quest_desc: [
-		"Converts steam from a Fission Reactor, Thermoelectric Boiler or water-cooled Fusion Reactor into electricity. Its internal components determine steam throughput and power output."
-	]
-	quest.614CFE12B65761A6.title: "Industrial Turbine"
-	quest.6155A58E8CA9B41B.quest_desc: [
-		"part of x5"
-		""
-		"Turns solid ingredients into chemicals. For example, sulfur dust becomes sulfur dioxide for the 5x ore-processing acid chain; uranium processing also uses it."
-	]
-	quest.6155A58E8CA9B41B.title: "Chemical Oxidizer"
-	quest.6156CDFE543B3C19.quest_desc: [
-		"Compatibility machine for machining parts such as rods. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."
-	]
-	quest.6156CDFE543B3C19.title: "CNC Lathe"
-	quest.6157C1521D2B083E.title: "Bin"
-	quest.61588EDEF3EE4AFB.quest_desc: [
-		"A large portable inventory that can be opened while carried. The security system can restrict who may access it."
-	]
-	quest.61588EDEF3EE4AFB.title: "Personal Storage"
-	quest.6158907C6BBC3D76.quest_desc: [
-		"part of x5"
-		""
-		"Part of 5x ore-block processing: turns washed slurry into crystals, which continue through the Injection Chamber and the clump/dust chain. Also produces lithium dust for Induction Cells and solid antimatter pellets."
-	]
-	quest.6158907C6BBC3D76.title: "Chemical Crystallizer"
-	quest.615BEBFBD1ED7B41.title: "Energy Cube"
-	quest.6165D0FF8D53B4F4.quest_desc: [
-		"A large heat-based generator with fuel/lava input and heat-network connections. Early solid-fuel power starts with Oritech Basic Generator."
-	]
-	quest.6165D0FF8D53B4F4.title: "Large Heat Generator"
-	quest.616DCD75B4BB76C4.title: "Chargepad"
-	quest.616ED64305E2CC2D.quest_desc: [
-		"Accumulates and combines incoming laser energy, then releases a controlled high-energy pulse. Especially important for igniting the Fusion Reactor; also redirects laser beams."
-	]
-	quest.616ED64305E2CC2D.title: "Laser Amplifier"
-	quest.6170554009D736BD.quest_desc: [
-		"Makes control circuits, alloys and enriched iron for steel using stored infusion materials. The Enrichment Chamber can concentrate many infusion ingredients, reducing their material cost."
-	]
-	quest.6170554009D736BD.title: "Metallurgic Infuser"
-	quest.6172DCD506EEA2EE.quest_desc: [
-		"Transfers items, fluids, chemicals, energy and heat through configurable wireless connections. Provides remote links to machine sides without running physical pipes between them."
-	]
-	quest.6172DCD506EEA2EE.title: "Wireless Transmission Station"
-	quest.61757D6F0FE96778.quest_desc: [
-		"Combines an item, a fluid and a chemical. Used for substrate and HDPE, plutonium/polonium pellets, and Empty Crystals in the UU Matter chain."
-	]
-	quest.61757D6F0FE96778.title: "Pressurized Reaction Chamber"
-	quest.6181C0BF7FB84CD4.title: "Chemical Tank"
-	quest.6183C60BB3CFEFE9.quest_desc: [
-		"Places supplied fluid into the world and expands through the area being filled. Useful for making pools or filling excavations with actual fluid blocks."
-	]
-	quest.6183C60BB3CFEFE9.title: "Fluidic Plenisher"
-	quest.6185FE15DFBCF018.quest_desc: [
-		"Uses molds for compatibility recipes such as plates or processor parts. Its bundled processing recipes require mods absent from this pack, so it currently has no enabled processing recipes."
-	]
-	quest.6185FE15DFBCF018.title: "CNC Stamper"
-	quest.618738812E241B28.quest_desc: [
-		"Late-game chunk loading with configurable coverage and an energy cost. AnvilCraft Overseer provides earlier loading of up to 49 chunks through base-layer upgrades."
-	]
-	quest.618738812E241B28.title: "Dimensional Stabilizer"
-	quest.618D7E07C30BC538.quest_desc: [
-		"part of x5"
-		""
-		"Recreates ore blocks from raw materials and stone. Check the recipe's material cost when considering ore-block processing loops."
-	]
-	quest.618D7E07C30BC538.title: "Combiner"
-	quest.6198E5DF4A957298.quest_desc: [
-		"Burns gaseous fuels, including ethene from the Pressurized Reaction Chamber chain, to generate electricity. Links chemical processing to renewable power production."
-	]
-	quest.6198E5DF4A957298.title: "Gas-Burning Generator"
-	quest.619ED8397E1651A4.quest_desc: [
-		"Portable fluid storage. Higher Mekanism tank tiers expand capacity."
-	]
-	quest.619ED8397E1651A4.title: "Fluid Tank"
-	quest.61A73EDFBD8EA38A.quest_desc: [
-		"Burns combustible items to produce transferable heat. A fuel-based way to heat machines such as the Thermal Evaporation Plant."
-	]
-	quest.61A73EDFBD8EA38A.title: "Fuelwood Heater"
-	quest.61AA22A6579ECC7F.quest_desc: [
-		"An automatic crafting table using a saved Crafting Formula. Stock Control helps keep ingredients in the correct slots for continuous production."
-	]
-	quest.61AA22A6579ECC7F.title: "Formulaic Assemblicator"
-	quest.61B0C5442DEB7DFB.quest_desc: [
-		"Daylight-dependent step in two late-game chains: nuclear waste -> polonium for pellets/antimatter, and lithium -> tritium for fusion fuel."
-	]
-	quest.61B0C5442DEB7DFB.title: "Solar Neutron Activator"
-	quest.61B1B644F2F1C7B1.quest_desc: [
-		"A portable companion with storage, crafting and smelting, plus item pickup and follow modes. Its Chargepad serves as its home and recharge point."
-	]
-	quest.61B1B644F2F1C7B1.title: "Robit"
-	quest.61B2F5B46C3A879D.quest_desc: [
-		"Redirects laser beams and collects drops from blocks broken by its outgoing beam. Provides an inventory output for automated laser mining."
-	]
-	quest.61B2F5B46C3A879D.title: "Laser Tractor Beam"
-	quest.61B42C128D4734CF.quest_desc: [
-		"Spends UU Matter and energy to duplicate a selected fluid, subject to the addon's replication rules. A late-game alternative source of production fluids."
-	]
-	quest.61B42C128D4734CF.title: "Fluid Replicator"
-	quest.61BE905EDDB94833.quest_desc: [
-		"part of x4, x5"
-		""
-		"Starts the 4x ore-block route using hydrogen chloride, producing shards for the Purification Chamber. Also processes crystals coming from the 5x slurry route."
-	]
-	quest.61BE905EDDB94833.title: "Chemical Injection Chamber"
-	quest.61C1ECA95D9A4280.quest_desc: [
-		"Generates electricity in daylight. Oritech Big Solar Panel is the larger solar option; dedicated heaters supply evaporation heat."
-	]
-	quest.61C1ECA95D9A4280.title: "Solar Generator"
-	quest.61C6106B8ACA0FE2.quest_desc: [
-		"Charges powered items in nearby players' inventories and equipment slots, including Curios. Useful for keeping carried equipment charged around a base."
-	]
-	quest.61C6106B8ACA0FE2.title: "Wireless Charging Station"
-	quest.61CD6FB9A3418088.quest_desc: [
-		"Consumes fissile fuel, produces nuclear waste, and supplies heat/steam for turbine power. Waste becomes plutonium in the Isotopic Centrifuge or polonium in the Solar Neutron Activator; cooling is essential to prevent a meltdown."
-	]
-	quest.61CD6FB9A3418088.title: "Fission Reactor"
-	quest.61D227C9590B6477.quest_desc: [
-		"part of x5"
-		""
-		"Converts chemicals to liquids and back. Important for water vapor in the sulfuric-acid chain and for turning liquid lithium into the chemical used for tritium or lithium dust."
-	]
-	quest.61D227C9590B6477.title: "Rotary Condensentrator"
-	quest.61D38FD8A0C96143.quest_desc: [
-		"part of x4, x5"
-		""
-		"Converts electricity into transferable heat with an adjustable power draw. Useful for heating a Thermal Evaporation Plant independently of sunlight."
-	]
-	quest.61D38FD8A0C96143.title: "Resistive Heater"
-	quest.61D6479D233254A8.quest_desc: [
-		"Makes fissile fuel from uranium hexafluoride before fission. Afterward, it turns nuclear waste into plutonium, which the PRC makes into pellets for SPS construction."
-	]
-	quest.61D6479D233254A8.title: "Isotopic Centrifuge"
-	quest.61DA1C428DC2A5D1.quest_desc: [
-		"part of x2"
-		""
-		"Starts the 2x ore-block route and cleans dirty dust in the 3x-5x routes. Also enriches infusion ingredients to make them last longer. These tier multipliers refer to ore blocks; raw-ore recipes have different yields."
-	]
-	quest.61DA1C428DC2A5D1.title: "Enrichment Chamber"
-	quest.61E3EA04873C158B.quest_desc: [
-		"Grows crops inside the machine using Nutrient Solution and energy. Provides compact automated farming without maintaining an external field."
-	]
-	quest.61E3EA04873C158B.title: "Planting Station"
-	quest.61E42E122B5D334C.quest_desc: [
-		"Mekanism Extras' separate late-game power reactor, using Nq-U Fuel and Naquadah-specific components. It has its own fuel chain beyond the standard fission/fusion equipment."
-	]
-	quest.61E42E122B5D334C.title: "Naquadah Reactor Controller"
-	quest.61E5CA7CEF5BC9A7.quest_desc: [
-		"Produces power from deuterium and tritium after laser ignition with a fueled Hohlraum. Water cooling can additionally supply steam for an Industrial Turbine."
-	]
-	quest.61E5CA7CEF5BC9A7.title: "Fusion Reactor Controller"
-	quest.61EBF8A4A6E2453C.quest_desc: [
-		"Consumes osmium chemical to make Refined Obsidian and Refined Glowstone ingots. Connect its chemical supply separately from its item inputs."
-	]
-	quest.61EBF8A4A6E2453C.title: "Osmium Compressor"
-	quest.61ED11E1734FFF61.quest_desc: [
-		"part of x4, x5"
-		""
-		"Runs a heated multiblock for water -> brine -> liquid lithium. Brine supplies chlorine for 4x ore processing; lithium leads to fusion fuel and Induction Cells."
-	]
-	quest.61ED11E1734FFF61.title: "Thermal Evaporation Controller"
-	quest.61F223E957195400.quest_desc: [
-		"Extracts items according to filters and can assign transport colors, enforce stack sizes or distribute items round-robin. Connects inventories to Logistical Transporter sorting networks."
-	]
-	quest.61F223E957195400.title: "Logistical Sorter"
-	quest.61F98ABAEE507B7B.quest_desc: [
-		"Selectively mines blocks matching its filters within a configured area. Can replace mined blocks and use Silk Touch; useful for targeted resource gathering without clearing everything."
-	]
-	quest.61F98ABAEE507B7B.title: "Digital Miner"
-	quest.61FCF66321F85454.quest_desc: [
-		"Combines two pigments into another color before painting. Useful when the desired color is easier to synthesize than to extract directly."
-	]
-	quest.61FCF66321F85454.title: "Pigment Mixer"
-	quest.620353FFC9DEFECB.title: "Bio Generator"
-	quest.621129AE3D36DAF2.quest_desc: [
-		"Extracts unlimited resources from special bedrock resource nodes beneath it. Must be powered by Enderic Lasers; ordinary energy cables cannot power it."
-	]
-	quest.621129AE3D36DAF2.title: "Bedrock Extractor"
-	quest.6211FDE7F53E359F.quest_desc: [
-		"Accelerates inserted items along guide rings and collides them to make resources such as overcharged crystals. Collisions also emit tachyons, which nearby Tachyon Absorbers can turn into power."
-	]
-	quest.6211FDE7F53E359F.title: "Particle Accelerator"
-	quest.62151E42D39DA61F.quest_desc: [
-		"Consumes liquid fuels from oil processing to produce electricity. Gives the refinery and fuel-processing chain a direct power-generation use."
-	]
-	quest.62151E42D39DA61F.title: "Fuel Generator"
-	quest.621E38939E05AA74.quest_desc: [
-		"Makes advanced materials and computer components, and can turn processed ore gems into extra dust using Fluxite. Must be charged by Enderic Lasers; each recipe completes when its energy requirement is met."
-	]
-	quest.621E38939E05AA74.title: "Atomic Forge"
-	quest.62213B9DA611D8AD.quest_desc: [
-		"Processes oil and other item/fluid mixtures into products such as fuels and sulfuric acid. Two chamber modules on top unlock its extra fluid outputs; these outputs are extracted from the modules themselves."
-	]
-	quest.62213B9DA611D8AD.title: "Refinery"
-	quest.6230B435795DFCEB.quest_desc: [
-		"Lets you choose equipment enchantments using electricity and souls stored in nearby Arcane Catalysts. Higher levels require more catalysts and souls; the Catalyst itself handles book-based hyper-enchanting."
-	]
-	quest.6230B435795DFCEB.title: "Stabilized Enchanter"
-	quest.623C6424729A6815.quest_desc: [
-		"Monitors a linked Particle Accelerator and emits redstone when particles reach a speed threshold. Can detect the active recipe's required speed automatically or use a manually chosen threshold."
-	]
-	quest.623C6424729A6815.title: "Particle Accelerator Speed Sensor"
-	quest.623C80D163EAF597.quest_desc: [
-		"Moves items between linked ports at least 50 blocks apart, with both ends chunk-loaded. Link them with a Target Designator; Fluid Addons on both ports enable liquid transport."
-	]
-	quest.623C80D163EAF597.title: "Drone Port"
-	quest.6241C0AE0A7AF5E1.quest_desc: [
-		"Mines blocks at range and harvests amethyst clusters into Fluxite. Also transfers power to machines, including the laser-only Atomic Forge and Bedrock Extractor, and stabilizes arcane devices. Aim it with a Target Designator."
-	]
-	quest.6241C0AE0A7AF5E1.title: "Enderic Laser"
-	quest.6244B13B19677509.quest_desc: [
-		"Boosts crop growth and hydrates farmland beneath a Machine Frame using energy and water. Mineral Slurry and bone meal can strengthen its growth effect."
-	]
-	quest.6244B13B19677509.title: "Fertilizer Block"
-	quest.624BC5B6C71FD915.quest_desc: [
-		"Processes ore clumps into gems and makes components such as carbon fiber. A Fluid Addon enables liquid recipes: water or sulfuric acid increases ore yield, and other recipes support fuel/plastic production."
-	]
-	quest.624BC5B6C71FD915.title: "Centrifuge"
-	quest.625343E9CA0E5C5A.quest_desc: [
-		"An ore-processing upgrade: turns raw ores into clumps with extra material and secondary-metal byproducts. Send clumps to the Centrifuge; a Yield Addon doubles the secondary byproducts."
-	]
-	quest.625343E9CA0E5C5A.title: "Fragment Forge"
-	quest.625BAFC1917D7964.quest_desc: [
-		"Collects souls from nearby deaths to supply the Stabilized Enchanter. Also applies books directly and can exceed normal enchantment levels; laser stabilization is needed when storing souls above its base capacity."
-	]
-	quest.625BAFC1917D7964.title: "Arcane Catalyst"
-	quest.625BF6FAC5C95CAD.quest_desc: [
-		"Controls which items may enter the attached inventory through Oritech item pipes. Supports whitelist/blacklist rules and matching item data, plus FTB Filter System filters."
-	]
-	quest.625BF6FAC5C95CAD.title: "Item Filter"
-	quest.6264043F58BE1F33.title: "Equipment Charger"
-	quest.6275CC3B17B7D2B6.quest_desc: [
-		"Converts steam into electricity and returns water. Multiple engines can be chained in a line; a Boiler Addon on an Oritech generator provides one way to supply steam."
-	]
-	quest.6275CC3B17B7D2B6.title: "Steam Engine"
-	quest.627AF928CDFE3F5E.quest_desc: [
-		"Solidifies fluids into materials such as ice or obsidian. Ice is useful as reactor coolant; cold biomes double this machine's processing speed and improve its energy efficiency."
-	]
-	quest.627AF928CDFE3F5E.title: "Industrial Chiller"
-	quest.627F81216BBEC39C.title: "Pulverizer"
-	quest.6284B6EA8E2482E3.quest_desc: [
-		"Captures a dangerous block to create a large multiblock battery; the contained block determines its base capacity. Enderic Lasers raise its storage capacity while firing at it, instead of charging the battery."
-	]
-	quest.6284B6EA8E2482E3.title: "SchrÃ¶dinger's Safe"
-	quest.628B454043ECDE97.quest_desc: [
-		"Makes progression alloys more efficiently than hand crafting. Also melts processed ore gems into ingots, forming the end of an ore-refining route."
-	]
-	quest.628B454043ECDE97.title: "Foundry"
-	quest.628B75F6213677F9.quest_desc: [
-		"Attaches to the Cybernetic Augmentation Center and researches body upgrades. Higher station tiers unlock more advanced augments; extra stations allow research projects to run in parallel."
-	]
-	quest.628B75F6213677F9.title: "Research Station"
-	quest.628D16AD0A6579CA.quest_desc: [
-		"Breaks blocks beneath a Machine Frame; Crop Filter and Quarry Addons adapt it for harvesting or deeper excavation."
-	]
-	quest.628D16AD0A6579CA.title: "Destroyer Block"
-	quest.6291C0C75463BCE6.quest_desc: [
-		"Cuts whole trees from the bottom, collecting their drops. Pair with a Placer Block for replanting when building an automated wood farm."
-	]
-	quest.6291C0C75463BCE6.title: "Tree Cutter"
-	quest.629D84D74F39C289.quest_desc: [
-		"Produces solar power, with output depending on the quality of the machine cores used to assemble it. Better cores increase generation."
-	]
-	quest.629D84D74F39C289.title: "Big Solar Panel"
-	quest.629F225F3D608734.title: "Basic Generator"
-	quest.62A217A8A877BABD.title: "Lava Generator"
-	quest.62A30922B71AED75.quest_desc: [
-		"A magically altered Refinery using the same recipes with power-scaled speed. Nearby sculk blocks improve yield and arcane blocks improve energy efficiency; it keeps only the selected fluid output."
-	]
-	quest.62A30922B71AED75.title: "Tainted Refinery"
-	quest.62A48C1DFCC52A6E.title: "Powered Furnace"
-	quest.62A8F5342B5D078E.quest_desc: [
-		"Transmits electricity over long distances through linked poles. Connect them with a Target Designator; green markers are inputs and red markers are outputs."
-	]
-	quest.62A8F5342B5D078E.title: "Energy Transmission Pole"
-	quest.62B056E48F4E932E.quest_desc: [
-		"Helps high-speed particles negotiate tighter turns, allowing more compact accelerators. Place it inside the ring and link it to the controller with an Advanced Target Designator."
-	]
-	quest.62B056E48F4E932E.title: "Accelerator Magnetic Field"
-	quest.62B2E1ADCC22B9B7.quest_desc: [
-		"Runs a customizable nuclear reactor using fuel rods, reflectors and cooling components. Generates electricity from nuclear fuel; the internal layout determines heat management, efficiency and meltdown risk."
-	]
-	quest.62B2E1ADCC22B9B7.title: "Nuclear Reactor Controller"
-	quest.62C0FE899228BF70.quest_desc: [
-		"Captures the first mob that walks over it in a cage below, then spends souls from nearby deaths to spawn that mob type. The cage size depends on the captured mob."
-	]
-	quest.62C0FE899228BF70.title: "Spawner Controller"
-	quest.62CB138F26BC4EDF.quest_desc: [
-		"Consumes connected machine addons and combines their supported effects into one Heart of the Machine. The resulting addon must be installed alone; interactive addons such as Redstone or Inventory Proxy cannot be spliced."
-	]
-	quest.62CB138F26BC4EDF.title: "Addon Splicer"
-	quest.62D72BBD32A6CEFF.quest_desc: [
-		"Researches and installs player augmentations such as extra health, movement abilities and ore vision. Uses attached Research Stations; installed augments do not need continuous power and can be toggled or removed."
-	]
-	quest.62D72BBD32A6CEFF.title: "Cybernetic Augmentation Center"
-	quest.62E6C820F71BEDAE.quest_desc: [
-		"Catches tachyons emitted by Particle Accelerator collisions and converts them into electricity. Surround the collision area with absorbers to capture particles traveling in different directions."
-	]
-	quest.62E6C820F71BEDAE.title: "Tachyon Absorber"
-	quest.62EAC8800B926619.quest_desc: [
-		"Drains connected fluid bodies using a downward extraction trunk."
-	]
-	quest.62EAC8800B926619.title: "Pump"
-	quest.62EB2969EF64354C.quest_desc: [
-		"Produces machine components such as motors, coils and circuits using powered assembly recipes. Many components cost fewer materials here than when crafted by hand."
-	]
-	quest.62EB2969EF64354C.title: "Assembler"
-	quest.62F43E7EF07E2B23.quest_desc: [
-		"Places blocks, seeds or saplings beneath a Machine Frame, sharing the frame area with other gantry machines."
-	]
-	quest.62F43E7EF07E2B23.title: "Placer Block"
-	quest.6B00000000009000.title: "Piezoelectric Crystal"
-	quest.6B00000000009001.title: "Charge Collector"
-	quest.6B00000000009002.title: "Transmission Pole"
-	quest.6B00000000009003.title: "Heater"
-	quest.6B00000000009004.title: "Royal Steel"
-	quest.6B00000000009010.title: "Mechanical Drill"
-	quest.6B00000000009011.title: "Block Breaker"
-	quest.6B00000000009012.title: "Block Devourer"
-	quest.5C00000000009000.title: "Metallurgic Infuser"
-	quest.5C00000000009001.title: "Enrichment Chamber"
-	quest.5C00000000009010.title: "Small Power Converter"
-	quest.5C00000000009011.title: "Medium Power Converter"
-	quest.5C00000000009012.title: "Large Power Converter"
-	quest.5C00000000009100.title: "Basic Control Circuit"
-	quest.5C00000000009101.title: "64 Basic Control Circuits"
-	quest.5C00000000009102.title: "Advanced Control Circuit"
-	quest.5C00000000009103.title: "64 Advanced Control Circuits"
-	quest.5C00000000009104.title: "Elite Control Circuit"
-	quest.5C00000000009105.title: "64 Elite Control Circuits"
-	quest.5C00000000009106.title: "Ultimate Control Circuit"
-	quest.5C00000000009107.title: "64 Ultimate Control Circuits"
-	quest.5C00000000009108.title: "Absolute Control Circuit"
-	quest.5C00000000009109.title: "64 Absolute Control Circuits"
-	quest.5C0000000000910A.title: "Supreme Control Circuit"
-	quest.5C0000000000910B.title: "64 Supreme Control Circuits"
-	quest.5C0000000000910C.title: "Cosmic Control Circuit"
-	quest.5C0000000000910D.title: "64 Cosmic Control Circuits"
-	quest.5C0000000000910E.title: "Infinite Control Circuit"
-	quest.5C0000000000910F.title: "64 Infinite Control Circuits"
-	quest.5C00000000009200.title: "Infused Alloy"
-	quest.5C00000000009201.title: "64 Infused Alloys"
-	quest.5C00000000009202.title: "Reinforced Alloy"
-	quest.5C00000000009203.title: "64 Reinforced Alloys"
-	quest.5C00000000009204.title: "Atomic Alloy"
-	quest.5C00000000009205.title: "64 Atomic Alloys"
-	quest.5C00000000009206.title: "Radiance Alloy"
-	quest.5C00000000009207.title: "64 Radiance Alloys"
-	quest.5C00000000009208.title: "Thermonuclear Alloy"
-	quest.5C00000000009209.title: "64 Thermonuclear Alloys"
-	quest.5C0000000000920A.title: "Shining Alloy"
-	quest.5C0000000000920B.title: "64 Shining Alloys"
-	quest.5C0000000000920C.title: "Spectrum Alloy"
-	quest.5C0000000000920D.title: "64 Spectrum Alloys"
-	quest.2B00000000009000.title: "Brilliant Obelisk"
-	quest.2B00000000009001.title: "Overseer"
-	quest.3B00000000009000.title: "Runewood Obelisk"
-	quest.5C00000000009300.title: "Copper Rod"
-	quest.5C00000000009301.title: "Copper Wire"
-	quest.5C00000000009302.title: "Magnetic Coil"
-	quest.5C00000000009303.title: "Motor"
-	quest.5C00000000009310.title: "Resin"
-	quest.5C00000000009311.title: "Hardened Resin"
-	quest.5C00000000009312.title: "Circuit Board"
-	quest.5C00000000009320.title: "Pulveriser"
-	quest.5C00000000009321.title: "Purification Chamber"
-	quest.5C00000000009322.title: "Electrolytic Separator"
-	quest.5C00000000009323.title: "Pressurized Reaction Chamber"
-	quest.5C00000000009001.quest_desc: ["X2"]
-	quest.5C00000000009320.quest_desc: ["X3"]
-	quest.5C00000000009321.quest_desc: ["X3"]
-	quest.5C00000000009322.quest_desc: ["X3"]
-	quest.5C00000000009324.title: "Enriched Materials"
-	quest.5C00000000009325.title: "Electric Furnace"
-	quest.5C00000000009326.title: "Empty Capacitor"
-	quest.5C00000000009327.title: "Charger"
-	quest.5C00000000009328.title: "Capacitor"
-	quest.5C00000000009329.title: "Basic Generator"
-	quest.5C0000000000932A.title: "Lava Generator"
-	quest.5C0000000000932B.title: "Steam Engine"
-	quest.5C0000000000932C.title: "Steam Boiler Addon"
-	quest.5C00000000009330.title: "8 Advanced Transmitters"
-	quest.5C00000000009331.title: "8 Elite Transmitters"
-	quest.5C00000000009332.title: "8 Ultimate Transmitters"
-	quest.5C00000000009333.title: "8 Absolute Transmitters"
-	quest.5C00000000009334.title: "8 Supreme Transmitters"
-	quest.5C00000000009335.title: "8 Cosmic Transmitters"
-	quest.5C00000000009336.title: "8 Infinite Transmitters"
-	quest.5C00000000009337.title: "Adamant Ingot"
-	quest.5C00000000009338.title: "Centrifuge"
-	quest.5C00000000009339.title: "Formulaic Assemblicator"
-	quest.5C0000000000933A.title: "Assembler"
-	quest.5C0000000000933B.title: "Electric Coil"
-	quest.5C0000000000933C.title: "Processing Unit"
-	quest.5C0000000000933D.title: "Biofuel"
-	quest.5C0000000000933E.title: "Raw Biopolymer"
-	quest.5C0000000000933F.title: "Substrate"
-	quest.5C00000000009340.title: "HDPE Pellet"
-	quest.5C00000000009341.title: "HDPE Rod"
-	quest.5C00000000009342.title: "PlaStick"
-	quest.5C00000000009343.title: "HDPE Sheet"
-	quest.5C00000000009344.title: "8 Basic Transmitters"
-	quest.5C00000000009345.title: "Logistical Sorter"
-	quest.5C00000000009346.title: "Block Placer"
-	quest.5C00000000009347.title: "Destroyer"
-	quest.5C00000000009348.title: "Tree Cutter"
-	quest.5C00000000009349.title: "Fertilizer"
-	quest.5C0000000000934A.title: "Primitive Machine Core"
-	quest.5C0000000000934B.title: "Basic Machine Core"
-	quest.5C0000000000934C.title: "Improved Machine Core"
-	quest.5C0000000000934D.title: "Advanced Machine Core"
-	quest.5C0000000000934E.title: "Elite Machine Core"
-	quest.5C0000000000934F.title: "Ultra Machine Core"
-	quest.5C00000000009350.title: "Ultimate Machine Core"
-	quest.5C00000000009351.title: "Crude Oil Bucket"
-	quest.5C00000000009352.title: "Pump"
-	quest.5C00000000009353.title: "Refinery"
-	quest.5C00000000009354.title: "Diesel Bucket"
-	quest.5C00000000009355.title: "Fuel Generator"
-	quest.5C00000000009356.title: "Bio Generator"
-	quest.5C00000000009357.title: "Combiner"
-	quest.5C00000000009358.title: "Dense Coal Charge"
-	quest.5C00000000009359.title: "Carbon Fibre"
-	quest.5C0000000000935A.title: "Enderic Compound"
-	quest.5C0000000000935B.title: "Enderic Lens"
-	quest.5C0000000000935C.title: "Enderic Laser"
-	quest.5C0000000000935D.title: "Fluid Addon"
-	quest.5C0000000000935E.title: "Osmium Compressor"
-	quest.5C0000000000935F.title: "Fluxite"
-	quest.5C00000000009360.title: "Flux Gate"
-	quest.5C00000000009361.title: "Foundry"
-	quest.5C00000000009362.title: "Duratium Ingot"
-	quest.5C00000000009363.title: "Energite Ingot"
-	quest.5C00000000009364.title: "Light Naphtha Bucket"
-	quest.5C00000000009365.title: "Silicon Wash"
-	quest.5C00000000009366.title: "Silicon Wafer"
-	quest.5C00000000009367.title: "Heliostat"
-	quest.5D00000000000001.title: "Royal Smithing Template"
-	quest.5D00000000000002.title: "Royal Grindstone"
-	quest.5D00000000000003.title: "Royal Anvil"
-	quest.5D00000000000004.title: "Cursed Gold Ingot"
-	quest.5D00000000000005.title: "Beacon"
-	quest.5D00000000000006.title: "Corrupted Beacon"
-	quest.5D00000000000007.title: "Impact Pile"
-	quest.5D00000000000008.title: "Sturdy Deepslate"
-	quest.5D00000000000009.title: "Void Matter"
-	quest.5D0000000000000A.title: "Earth Core Shard"
-	quest.5D0000000000000B.title: "Frost Metal Ingot"
-	quest.5D0000000000000C.title: "Ember Metal Ingot"
-	chapter.5D00000000000000.title: "Going Deeper"
-	quest.5D0000000000000D.title: "Block of Void Matter"
-	quest.5D0000000000000E.title: "Bottle of Ruin"
-	quest.5D0000000000000F.title: "Bedrock Dust"
-	quest.5D00000000000010.title: "Enter Imbrifer"
-	quest.5D00000000000011.title: "Giant Anvil"
-	quest.5D00000000000012.title: "Acceleration Ring"
-	quest.5D00000000000013.title: "Deflection Ring"
-	quest.5D00000000000014.title: "Ember Metal Upgrade Smithing Template"
-	quest.5D00000000000015.title: "Ember Anvil"
-	quest.5D00000000000016.title: "Warden Carapace"
-	quest.5D00000000000017.title: "Warden Bone Shard"
-	quest.5D00000000000018.title: "Heart of the Deep"
-	quest.5D00000000000019.title: "Enter the Otherside"
-	quest.5D0000000000001B.title: "Nether Star Brilliance"
-	quest.5D0000000000001C.title: "Ender Metal and Crystals"
-	quest.5D0000000000001D.title: "Radiant Steel Ingot"
-	quest.5D00000000000020.title: "Dragon Egg"
-	quest.5D00000000000021.title: "Resonarium"
-	quest.5D00000000000022.title: "Resonarium Plate"
-	quest.5D00000000000023.title: "Lite"
-	quest.5D00000000000024.title: "Enriched Gloomslate Bricks"
-	quest.5D00000000000025.title: "Dragonforge Bricks"
-	quest.5D00000000000026.title: "Dragonforge Parts"
-	quest.5D00000000000027.title: "Hephaestus Forge III"
-	quest.5D00000000000028.title: "Machine Casing"
-	quest.5D0000000000002B.title: "Basic Processor"
-	quest.5D0000000000002E.title: "64 Basic Processors"
-	quest.5D0000000000002C.title: "Improved Processor"
-	quest.5D0000000000002F.title: "64 Improved Processors"
-	quest.5D0000000000002D.title: "Advanced Processor"
-	quest.5D00000000000030.title: "64 Advanced Processors"
-	quest.5D00000000000029.title: "Controller"
-	quest.5D0000000000002A.title: "Cable"
-	quest.5D00000000000031.title: "Construction Core"
-	quest.5D00000000000033.title: "64 Construction Cores"
-	quest.5D00000000000032.title: "Destruction Core"
-	quest.5D00000000000034.title: "64 Destruction Cores"
-	quest.5D00000000000035.title: "Grid"
-	quest.5D00000000000036.title: "Crafting Grid"
-	quest.5D00000000000037.title: "Pattern"
-	quest.5D00000000000038.title: "Pattern Grid"
-	quest.5D00000000000039.title: "External Storage"
-	quest.5D0000000000003A.title: "Importer"
-	quest.5D0000000000003B.title: "Exporter"
-	quest.5D0000000000003C.title: "Constructor"
-	quest.5D0000000000003D.title: "Destructor"
-	quest.5D0000000000003E.title: "Disk Drive"
-	quest.5D0000000000003F.title: "Disk Interface"
-	quest.5D00000000000040.title: "Autocrafter"
-	quest.5D00000000000041.title: "Autocrafter Manager"
-	quest.5D00000000000042.title: "Autocrafting Monitor"
-	quest.5D00000000000043.title: "Elite Autocrafter"
-	quest.5D00000000000044.title: "Ultra Autocrafter"
-	quest.5D00000000000045.title: "Mega Autocrafter"
-	quest.5D00000000000046.title: "Wrench"
-	quest.5D00000000000047.title: "Disk Housing"
-	quest.5D00000000000048.title: "Advanced Storage Housing"
-	quest.5D00000000000060.title: "1k Storage Part"
-	quest.5D00000000000061.title: "4k Storage Part"
-	quest.5D00000000000062.title: "16k Storage Part"
-	quest.5D00000000000063.title: "64k Storage Part"
-	quest.5D00000000000064.title: "256k Storage Part"
-	quest.5D00000000000065.title: "1024k Storage Part"
-	quest.5D00000000000066.title: "4096k Storage Part"
-	quest.5D00000000000067.title: "16384k Storage Part"
-	quest.5D00000000000068.title: "65536k Storage Part"
-	quest.5D00000000000069.title: "262m Storage Part"
-	quest.5D0000000000006A.title: "1048m Storage Part"
-	quest.5D0000000000006B.title: "Infinite Storage Part"
-	quest.5D00000000000070.title: "64B Fluid Storage Part"
-	quest.5D00000000000071.title: "256B Fluid Storage Part"
-	quest.5D00000000000072.title: "1024B Fluid Storage Part"
-	quest.5D00000000000073.title: "4096B Fluid Storage Part"
-	quest.5D00000000000074.title: "16384B Fluid Storage Part"
-	quest.5D00000000000075.title: "65536B Fluid Storage Part"
-	quest.5D00000000000076.title: "262kB Fluid Storage Part"
-	quest.5D00000000000077.title: "1048kB Fluid Storage Part"
-	quest.5D00000000000078.title: "Infinite Fluid Storage Part"
-	quest.5D00000000000080.title: "64B Chemical Storage Part"
-	quest.5D00000000000081.title: "256B Chemical Storage Part"
-	quest.5D00000000000082.title: "1024B Chemical Storage Part"
-	quest.5D00000000000083.title: "8192B Chemical Storage Part"
-	quest.5D00000000000084.title: "65536B Chemical Storage Part"
-	quest.5D00000000000085.title: "262kB Chemical Storage Part"
-	quest.5D00000000000086.title: "1048kB Chemical Storage Part"
-	quest.5D00000000000087.title: "8388kB Chemical Storage Part"
-	quest.5D00000000000088.title: "Infinite Chemical Storage Part"
-	quest.5D0000000000A000.title: "64 Patterns"
-	quest.5D0000000000A001.title: "Network Transmitter and Receiver"
-	quest.5D0000000000A002.title: "64 Resonarium Plates"
-	quest.5D0000000000A003.title: "64 Frost Metal Ingots"
-	quest.5D0000000000A004.title: "64 Void Matter"
-	quest.5D0000000000A005.title: "64 Cursed Gold Ingots"
-	quest.5D0000000000A006.title: "64 Ember Metal Ingots"
-	quest.5D0000000000A007.title: "64 Sturdy Deepslate"
-	quest.5D0000000000A008.title: "64 Earth Core Shards"
-	quest.5D0000000000A009.title: "64 Ender Metal Ingots"
-	quest.5D0000000000A00A.title: "64 Royal Steel Ingots"
-	quest.5C0000000000A000.title: "64 Primitive Machine Cores"
-	quest.5C0000000000A001.title: "64 Basic Machine Cores"
-	quest.5C0000000000A002.title: "64 Improved Machine Cores"
-	quest.5C0000000000A003.title: "64 Advanced Machine Cores"
-	quest.5C0000000000A004.title: "64 Elite Machine Cores"
-	quest.5C0000000000A005.title: "64 Ultra Machine Cores"
-	quest.5C0000000000A006.title: "64 Ultimate Machine Cores"
-	quest.5C0000000000A007.title: "64 Circuit Boards"
-	quest.5C0000000000A008.title: "64 Magnetic Coils"
-	quest.5C0000000000A009.title: "64 Motors"
-	quest.5C0000000000A00A.title: "64 HDPE Sheets"
-	quest.5C0000000000A00B.title: "64 Adamant Ingots"
-	quest.5C0000000000A00C.title: "64 Processing Units"
-	quest.5C0000000000A00D.title: "64 Electric Coils"
-	quest.5C0000000000A00E.title: "64 Carbon Fibre"
-	quest.5C0000000000A00F.title: "64 Enderic Lenses"
-	quest.5C0000000000A010.title: "64 Flux Gates"
-	quest.5C0000000000A011.title: "64 Energite Ingots"
-	quest.5C0000000000A012.title: "64 Duratium Ingots"
-	quest.6B0000000000A000.title: "64 Magnet Ingots"
-	quest.6B0000000000A001.title: "64 Nickel Ingots"
-	quest.6B0000000000A002.title: "64 Netherite Ingots"
-	quest.6B0000000000A003.title: "64 Malignant Pewter Ingots"
-	quest.3B0000000000A000.title: "64 Cognitive Alloy"
-	quest.3B0000000000A001.title: "Copper Dust"
-	quest.2B0000000000A000.title: "64 Arcane Ingots"
-	quest.2B0000000000A001.title: "64 Hallowed Gold Ingots"
-	quest.2B0000000000A002.title: "64 Arcane Essence"
-	quest.5D00000000000090.title: "Ember Smithing Table"
-	quest.5B00000000000090.title: "Trial Eye"
-	quest.5B00000000000091.title: "Sculk Eye"
-	quest.5C00000000000090.title: "Configurator"
-	quest.5C00000000000091.title: "Solar Panel"
-	quest.5C00000000000092.title: "Solar Generator"
-	quest.5C00000000000093.title: "Big Solar Panel"
-	quest.5C00000000000094.title: "Energy Transmission Pole"
-	quest.5C00000000000095.title: "Dubious Container"
-	quest.5C00000000000096.title: "Unholy Intelligence"
-	quest.5C00000000000097.title: "Superconductor"
-	quest.5C00000000000098.title: "Overcharged Crystal"
-	quest.5C00000000000099.title: "Bedrock Extractor"
-	quest.5C0000000000009A.title: "Teleportation Core"
-	quest.5C0000000000009B.title: "Teleporter"
-	quest.5C0000000000009C.title: "Basic Battery"
-	quest.5C0000000000009D.title: "Energy Tablet"
-	quest.5C0000000000009E.title: "Wind Generator"
-	quest.5C0000000000009F.title: "Basic Energy Cube"
-	quest.5C000000000000A0.title: "Advanced Energy Cube"
-	quest.5C000000000000A1.title: "Elite Energy Cube"
-	quest.5C000000000000A2.title: "Ultimate Energy Cube"
-	quest.5C000000000000A3.title: "Absolute Energy Cube"
-	quest.5C000000000000A4.title: "Supreme Energy Cube"
-	quest.5C000000000000A5.title: "Cosmic Energy Cube"
-	quest.5C000000000000A6.title: "Infinite Energy Cube"
-	quest.5C000000000000A7.title: "Refined Glowstone Ingot"
-	quest.5C000000000000A8.title: "Radiance Dust"
-	quest.5C000000000000A9.title: "Drone Port"
-	quest.5C000000000000AA.title: "Refined Obsidian Ingot"
-	quest.5C000000000000AB.title: "64 Refined Obsidian Ingots"
-	quest.5C000000000000AC.title: "64 Silicon Wafers"
-	quest.5C000000000000AD.title: "64 Refined Glowstone Ingots"
-	quest.5D00000000000089.title: "Upgrade"
-	quest.5B00000000000092.title: "End Stone"
-	quest.5B00000000000093.title: "End Dust"
-	quest.5B00000000000094.title: "Powder of Levitation"
-	quest.5B00000000000095.title: "Titanium Nugget"
-	quest.5B00000000000096.title: "Titanium Ingot"
-	quest.61BECEE131176E14.title: "Large Antiprotonic Nucleosynthesizer"
-	quest.61618A8488AD0A7B.title: "Large Chemical Infuser"
-	quest.616AB809942229A7.title: "Large Electrolytic Separator"
-	quest.616F3150516DABC8.title: "Large Gas-Burning Generator"
-	quest.6117F652FE47BA1E.title: "Large Pigment Mixer"
-	quest.61709D389BE94093.title: "Large Rotary Condensentrator"
-	quest.61780E29D988C7B5.title: "Large Solar Neutron Activator"
-	quest.5C000000000000AE.title: "Gas-Burning Generator"
-	quest.5B00000000000097.title: "Dragon's Breath"
-	quest.5B00000000000098.title: "Infused Dragon's Breath"
-	quest.5B00000000000099.title: "Endshelf"
-	quest.5B0000000000009A.title: "Draconic Endshelf"
-	quest.5B0000000000009C.title: "Find an End City"
-	quest.5B0000000000009D.title: "Shulker Shells"
-	quest.5B0000000000009E.title: "Shulker Box"
-	quest.5B0000000000009F.title: "Nesting Shulker Box"
-	quest.5B000000000000A0.title: "Over-Nesting Shulker Box"
-	quest.5B000000000000A1.title: "Supercritical Nesting Shulker Box"
-	quest.5B000000000000A2.title: "Space Overcompressor"
-	quest.6C00000000006101.title: "Recovery Pearl"
-	quest.5B000000000000A3.title: "Perturbed Eye"
-	quest.5B000000000000A4.title: "12 Cracked End Portal Frames"
-	quest.5B000000000000A5.title: "12 End Portal Frames"
-	quest.5B000000000000A6.title: "Shulker Bullet in a Bottle"
-	quest.5B000000000000A7.title: "Shulkerate Ingot"
-	quest.5B000000000000A8.title: "64 Shulkerate Ingots"
-	quest.5B000000000000A9.title: "Portable Grid"
-	quest.5B000000000000AA.title: "Wireless Universal Grid"
-	quest.5B000000000000AB.title: "Maggot"
-	quest.5B000000000000AC.title: "Crimson Mosquito Proboscis"
-	quest.5B000000000000AD.title: "Crimson Mosquito Larva"
-	quest.5B000000000000AE.title: "Capsid"
-	quest.5B000000000000AF.title: "Mysterious Worm"
-	quest.5B000000000000B0.title: "Void Worm Eye"
-	quest.5B000000000000B1.title: "Void Worm Mandible"
-	quest.5B000000000000B2.title: "Abyssal Sacrifice"
-	quest.5B000000000000B3.title: "Block of Levitation Powder"
-	quest.5B000000000000B4.title: "Block of Shulkerate"
-	quest.5B000000000000B5.title: "Abyssal Egg"
-	quest.5B000000000000B6.title: "End Crafting Table"
-	quest.5B000000000000AF.quest_desc: ["drop it in the void"]
-	quest.5B000000000000B8.title: "Bedrock"
-	quest.5C000000000000AF.title: "Precision Sawmill"
-	quest.5C000000000000B0.title: "Dimensional Stabilizer"
-	quest.5C000000000000B1.title: "Large Gas-Burning Generator"
-	quest.5C000000000000B2.title: "Large Electrolytic Separator"
-	quest.5C000000000000B3.title: "Pigment Extractor"
-	quest.5C000000000000B4.title: "Pigment Mixer"
-	quest.5C000000000000B5.title: "Painting Machine"
-	quest.5B000000000000B9.title: "Atomic Forge"
-	quest.5B000000000000BA.title: "Advanced Computing Engine Stage 1"
-	quest.5B000000000000BB.title: "Advanced Computing Engine Stage 2"
-	quest.5B000000000000BC.title: "Advanced Computing Engine Stage 3"
-	quest.5B000000000000BD.title: "Advanced Computing Engine"
-	quest.5B000000000000BE.title: "CNC Stamper"
-	quest.5B000000000000BF.title: "CNC Lathe"
-	quest.5B000000000000C0.title: "CNC Rolling Mill"
-	quest.6C00000000006102.title: "Block Flooder"
-	quest.5B000000000000C1.title: "Energized Smelter"
-	quest.5B000000000000C2.title: "Crusher"
-	quest.5B000000000000C3.title: "Super AI Chip"
-	quest.5B000000000000C4.title: "Chemical Injection Chamber"
-	quest.5B000000000000C5.title: "Chemical Infuser"
-	quest.5B000000000000C6.title: "Thermal Evaporation Block"
-	quest.5B000000000000C7.title: "Thermal Evaporation Valve"
-	quest.5B000000000000C8.title: "Thermal Evaporation Controller"
-	quest.5C000000000000B6.title: "Large Pigment Mixer"
-	quest.5C000000000000B7.title: "Industrial Chiller"
-	quest.5C000000000000B8.title: "Cybernetics"
-	quest.5B000000000000C9.title: "Schr\u00f6dinger's Safe"
-	quest.5C000000000000B9.title: "Target Designator"
-	quest.5B000000000000CA.title: "64 Titanium Ingots"
-	quest.5B000000000000CB.title: "64 Levitation Powder"
-	quest.5B000000000000CC.title: "Eye of Void"
-	quest.5B000000000000CD.title: "Locate Ruined Citadel"
-	quest.5B000000000000CE.title: "Void Core"
-	quest.5B000000000000CF.title: "Enderite Ingot"
-	quest.5B000000000000D0.title: "Titan's Insignia"
-	quest.5B000000000000D1.title: "Defeat Elvenite Paladin"
-	quest.5B000000000000D2.title: "Elvenite Ingot"
-	quest.5B000000000000D3.title: "Wanderer's Fallen Shard"
-	quest.5B000000000000D4.title: "Defeat Vaedric"
-	quest.5B000000000000D5.title: "Voiderite Ingot"
-	quest.5B000000000000D6.title: "The Key of Doom"
-	quest.5B000000000000D7.title: "Defeat Bringer of Doom"
-	quest.5B000000000000D8.title: "Doom Powder"
+	quest.5B00000000000100.title: "Ferrojelly"
+	quest.5B00000000000101.title: "Large Chemical Infuser"
+	quest.5B00000000000102.title: "Fuelwood Heater"
+	quest.5B00000000000103.title: "Resistive Heater"
+	quest.5B00000000000104.title: "Quantum Core"
+	quest.5B00000000000105.title: "Atom Enlarging Module"
+	quest.5B00000000000106.title: "Atom Shrinking Module"
+	quest.5B00000000000107.title: "Personal Shrinking Device"
+	quest.5B00000000000108.title: "Compact Machine Wall"
+	quest.5B00000000000109.title: "Field Projector"
+	quest.5B0000000000010A.title: "Field Proxy (Rescan)"
+	quest.5B0000000000010B.title: "Field Proxy (Match)"
+	quest.5B0000000000010C.title: "Any Compact Machine"
+	quest.5B0000000000010D.title: "Quantum Entangloporter"
+	quest.5C00000000000100.title: "Biosteel Ingot"
+	quest.5C00000000000101.title: "Nutritional Liquifier"
+	quest.5C00000000000102.title: "Planting Station"
+	quest.5C00000000000103.title: "Large Heat Generator"
 }

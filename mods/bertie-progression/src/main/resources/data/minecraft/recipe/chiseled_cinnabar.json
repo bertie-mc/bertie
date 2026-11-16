@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:cinnabar_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_cinnabar",
+    "count": 5
+  }
+}

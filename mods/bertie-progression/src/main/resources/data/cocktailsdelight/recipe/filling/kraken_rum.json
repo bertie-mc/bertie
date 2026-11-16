@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "brewinandchewin:tankard"
+    },
+    {
+      "amount": 250,
+      "fluid": "cocktailsdelight:kraken_rum",
+      "type": "fluid_stack"
+    }
+  ],
+  "results": [
+    {
+      "id": "cocktailsdelight:kraken_rum"
+    }
+  ]
+}

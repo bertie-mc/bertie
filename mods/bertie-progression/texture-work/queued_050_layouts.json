@@ -1,0 +1,270 @@
+[
+  {
+    "source_coordinates": [
+      40,
+      -60,
+      26
+    ],
+    "saved_at_utc": "2026-11-16T03:50:09+00:00",
+    "station": "avaritia:nether_crafting_table",
+    "width": 5,
+    "height": 5,
+    "pattern": [
+      "AABAA",
+      "ACDCA",
+      "AEFEA",
+      "BEGEB",
+      "BABAB"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:steel_sheet"
+      },
+      "B": {
+        "item": "bertieprogression:deep_alloy_sheet"
+      },
+      "C": {
+        "item": "anvilcraft:ember_metal_ingot"
+      },
+      "D": {
+        "item": "mekanism:basic_control_circuit"
+      },
+      "E": {
+        "item": "bertieprogression:electric_coil"
+      },
+      "F": {
+        "item": "mekanism:steel_casing"
+      },
+      "G": {
+        "item": "minecraft:furnace"
+      }
+    },
+    "ingredient_counts": {
+      "bertieprogression:steel_sheet": 10,
+      "bertieprogression:deep_alloy_sheet": 6,
+      "anvilcraft:ember_metal_ingot": 2,
+      "mekanism:basic_control_circuit": 1,
+      "bertieprogression:electric_coil": 4,
+      "mekanism:steel_casing": 1,
+      "minecraft:furnace": 1
+    },
+    "output": {
+      "id": "mekanism:fuelwood_heater",
+      "count": 1
+    },
+    "consume_inputs": true,
+    "match_captured_components": false,
+    "replace_existing_acquisition_recipe": true
+  },
+  {
+    "source_coordinates": [
+      39,
+      -60,
+      26
+    ],
+    "saved_at_utc": "2026-11-16T03:50:09+00:00",
+    "station": "avaritia:nether_crafting_table",
+    "width": 5,
+    "height": 5,
+    "pattern": [
+      "ABBBA",
+      "ACDCA",
+      "AEFEA",
+      "AEGEA",
+      "HHHHH"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:steel_sheet"
+      },
+      "B": {
+        "item": "mekanism:ingot_tin"
+      },
+      "C": {
+        "item": "anvilcraft:ember_metal_ingot"
+      },
+      "D": {
+        "item": "mekanism:advanced_control_circuit"
+      },
+      "E": {
+        "item": "bertieprogression:electric_coil"
+      },
+      "F": {
+        "item": "mekanism:fuelwood_heater"
+      },
+      "G": {
+        "item": "mekanism:energy_tablet"
+      },
+      "H": {
+        "item": "bertieprogression:deep_alloy_sheet"
+      }
+    },
+    "ingredient_counts": {
+      "bertieprogression:steel_sheet": 8,
+      "mekanism:ingot_tin": 3,
+      "anvilcraft:ember_metal_ingot": 2,
+      "mekanism:advanced_control_circuit": 1,
+      "bertieprogression:electric_coil": 4,
+      "mekanism:fuelwood_heater": 1,
+      "mekanism:energy_tablet": 1,
+      "bertieprogression:deep_alloy_sheet": 5
+    },
+    "output": {
+      "id": "mekanism:resistive_heater",
+      "count": 1
+    },
+    "consume_inputs": true,
+    "match_captured_components": false,
+    "replace_existing_acquisition_recipe": true
+  },
+  {
+    "source_coordinates": [
+      40,
+      -60,
+      25
+    ],
+    "saved_at_utc": "2026-11-16T05:11:21+00:00",
+    "station": "avaritia:nether_crafting_table",
+    "width": 5,
+    "height": 5,
+    "pattern": [
+      "AAAAA",
+      "BCDCB",
+      "BDEDB",
+      "BFDFB",
+      "GGGGG"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:osmium_sheet"
+      },
+      "B": {
+        "item": "mekanism:hdpe_rod"
+      },
+      "C": {
+        "item": "anvilcraft:circuit_board"
+      },
+      "D": {
+        "item": "minecraft:glass"
+      },
+      "E": {
+        "item": "mekanism:steel_casing"
+      },
+      "F": {
+        "item": "oritech:motor"
+      },
+      "G": {
+        "item": "bertieprogression:deep_alloy_sheet"
+      }
+    },
+    "ingredient_counts": {
+      "bertieprogression:osmium_sheet": 5,
+      "mekanism:hdpe_rod": 6,
+      "anvilcraft:circuit_board": 2,
+      "minecraft:glass": 4,
+      "mekanism:steel_casing": 1,
+      "oritech:motor": 2,
+      "bertieprogression:deep_alloy_sheet": 5
+    },
+    "output": {
+      "id": "mekanism:nutritional_liquifier",
+      "count": 1
+    },
+    "consume_inputs": true,
+    "match_captured_components": false,
+    "replace_existing_acquisition_recipe": true
+  },
+  {
+    "source_coordinates": [
+      39,
+      -60,
+      25
+    ],
+    "saved_at_utc": "2026-11-16T05:11:21+00:00",
+    "station": "avaritia:nether_crafting_table",
+    "width": 5,
+    "height": 5,
+    "pattern": [
+      " AAA ",
+      "ABCBA",
+      "ABDBA",
+      "AEFEA",
+      "GGGGG"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:steel_sheet"
+      },
+      "B": {
+        "item": "mekanism:hdpe_rod"
+      },
+      "C": {
+        "item": "mekanism:bio_fuel"
+      },
+      "D": {
+        "item": "mekanism:steel_casing"
+      },
+      "E": {
+        "item": "mekanism:alloy_reinforced"
+      },
+      "F": {
+        "item": "mekanism:elite_control_circuit"
+      },
+      "G": {
+        "item": "bertieprogression:deep_alloy_sheet"
+      }
+    },
+    "ingredient_counts": {
+      "bertieprogression:steel_sheet": 9,
+      "mekanism:hdpe_rod": 4,
+      "mekanism:bio_fuel": 1,
+      "mekanism:steel_casing": 1,
+      "mekanism:alloy_reinforced": 2,
+      "mekanism:elite_control_circuit": 1,
+      "bertieprogression:deep_alloy_sheet": 5
+    },
+    "output": {
+      "id": "mekmm:planting_station",
+      "count": 1
+    },
+    "consume_inputs": true,
+    "match_captured_components": false,
+    "replace_existing_acquisition_recipe": true
+  },
+  {
+    "id": "bertieprogression:enderite_ingot_from_ferrojelly",
+    "station": "avaritia:end_crafting_table",
+    "tier": 3,
+    "pattern": [
+      "       ",
+      "JJJJJJJ",
+      "JEEEEEJ",
+      "JEJVJEJ",
+      "JEEEEEJ",
+      "JJJJJJJ",
+      "       "
+    ],
+    "key": {
+      "J": {
+        "item": "the_beyond:ferrojelly"
+      },
+      "E": {
+        "item": "magitech:ender_metal_ingot"
+      },
+      "V": {
+        "item": "cataclysm:void_core"
+      }
+    },
+    "output": {
+      "id": "cataclysm:enderite_ingot",
+      "count": 3
+    },
+    "catalyst": "cataclysm:void_core",
+    "catalyst_count": 1,
+    "consumed_inputs": {
+      "the_beyond:ferrojelly": 22,
+      "magitech:ender_metal_ingot": 12
+    },
+    "preserve_existing_block_conversions": true
+  }
+]

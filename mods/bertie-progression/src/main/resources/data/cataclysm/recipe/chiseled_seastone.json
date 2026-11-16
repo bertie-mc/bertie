@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "cataclysm:azure_seastone_bricks"
+    }
+  },
+  "result": {
+    "id": "cataclysm:chiseled_azure_seastone",
+    "count": 5
+  }
+}

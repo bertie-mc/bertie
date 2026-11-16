@@ -7,7 +7,7 @@
 		id: "trashcans:item_trash_can"
 	}
 	id: "6C00000000000000"
-	order_index: 12
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
@@ -52,23 +52,16 @@
 				id: "rustic_engineer:spider_mech_item"
 			}
 			id: "6C0000000000000A"
-			rewards: [
-				{
-					id: "6C0000000200000A"
-					type: "xp"
-					xp: 25
-				}
-			]
-			tasks: [
-				{
-					id: "6C0000000101000A"
-					item: {
-						count: 1
-						id: "rustic_engineer:spider_mech_item"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6C0000000200000A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C0000000101000A"
+				item: { count: 1, id: "rustic_engineer:spider_mech_item" }
+				type: "item"
+			}]
 			x: 7.5d
 			y: 0.0d
 		}
@@ -118,42 +111,45 @@
 			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 3.0d
+			icon: {
+				id: "omnitools:omni_wrench"
+			}
 			id: "6C00000000006100"
-			icon: { id: "omnitools:omni_wrench" }
 			tasks: [{
 				id: "6C00000001006100"
-				count: 1L
-				item: { count: 1 id: "omnitools:omni_wrench" }
+				item: { count: 1, id: "omnitools:omni_wrench" }
 				type: "item"
 			}]
+			x: 3.0d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 13.5d
+			icon: {
+				id: "anvilcraft:recovery_pearl"
+			}
 			id: "6C00000000006101"
-			icon: { id: "anvilcraft:recovery_pearl" }
 			tasks: [{
-				id: "6C00000001006101"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "anvilcraft:recovery_pearl" }
+				id: "6C00000001006101"
+				item: { count: 1, id: "anvilcraft:recovery_pearl" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 0.0d
 		}
 		{
-			y: 0.0d
-			x: 15.0d
+			icon: {
+				id: "pastel:block_flooder"
+			}
 			id: "6C00000000006102"
-			icon: { id: "pastel:block_flooder" }
 			tasks: [{
-				id: "6C00000001006102"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "pastel:block_flooder" }
+				id: "6C00000001006102"
+				item: { count: 1, id: "pastel:block_flooder" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: 0.0d
 		}
 	]
 }

@@ -4,10 +4,6 @@
     {
       "id": "pastel:knowledge_gem",
       "required": false
-    },
-    {
-      "id": "pastel:crafting_tablet",
-      "required": false
     }
   ]
 }

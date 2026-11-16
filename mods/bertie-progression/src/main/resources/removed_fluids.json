@@ -1,5 +1,7 @@
 [
+  "anvilcraft:flowing_oil",
+  "anvilcraft:oil",
   "magitech:sulfuric_acid",
-  "mekanism:sulfuric_acid",
-  "mekanism:flowing_sulfuric_acid"
+  "mekanism:flowing_sulfuric_acid",
+  "mekanism:sulfuric_acid"
 ]

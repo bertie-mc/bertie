@@ -132,7 +132,11 @@
 			dependencies: ["1B00000000000005"]
 			icon: {
 				components: {
-					"magitech:part_material_component": ["magitech:wood", "magitech:wood", "magitech:wood"]
+					"magitech:part_material_component": [
+						"magitech:wood"
+						"magitech:wood"
+						"magitech:wood"
+					]
 				}
 				id: "magitech:pickaxe"
 			}
@@ -1102,6 +1106,14 @@
 		{
 			dependencies: ["1B00000000000035"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 5
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:copper_spell_book"
 			}
 			id: "1B00000000000034"
@@ -1112,7 +1124,7 @@
 			}]
 			tasks: [{
 				id: "1B00000001000034"
-				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 5, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:copper_spell_book" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -1536,7 +1548,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1B00000000000049" "1B00000000000019"]
+			dependencies: [
+				"1B00000000000049"
+				"1B00000000000019"
+			]
 			icon: {
 				id: "apothic_enchanting:flimsy_ender_lead"
 			}
@@ -1646,7 +1661,7 @@
 				item: { count: 1, id: "minecraft:leather_leggings" }
 				type: "item"
 			}]
-			x: 18d
+			x: 18.0d
 			y: -1.5d
 		}
 		{
@@ -1665,8 +1680,8 @@
 				item: { count: 1, id: "minecraft:leather_chestplate" }
 				type: "item"
 			}]
-			x: 18d
-			y: -3d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1B00000000000050"]

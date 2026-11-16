@@ -310,7 +310,7 @@
       "required": false
     },
     {
-      "id": "anvilcraft:sugar_block",
+      "id": "cratedelight:sugar_bag",
       "required": false
     },
     {
@@ -318,7 +318,7 @@
       "required": false
     },
     {
-      "id": "anvilcraft:rotten_flesh_block",
+      "id": "frightsdelight:flesh_crate",
       "required": false
     },
     {
@@ -752,15 +752,15 @@
   ],
   "remove": [
     {
-      "id": "oritech:plastic_block",
+      "id": "mekanism:hdpe_sheet",
       "required": false
     },
     {
-      "id": "oritech:steel_block",
+      "id": "mekanism:block_steel",
       "required": false
     },
     {
-      "id": "oritech:raw_uranium_block",
+      "id": "anvilcraft:raw_uranium_block",
       "required": false
     }
   ]

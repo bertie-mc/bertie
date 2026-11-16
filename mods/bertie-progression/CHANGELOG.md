@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.50.0
+
+- Add fifteen individual spatial Ponders, including five captured large-machine
+  Miniaturization recipes with south-facing previews and distinct catalysts.
+- Add animated Sentient Casing, the four-Projector craft and reusable Void Core
+  in the Enderite recipe; update Heater, Nutritional and Planting crafts.
+- Apply reviewed building/storage recipes, duplicate suppression and native
+  recipe-schema fixes while preserving unresolved material choices.
+- Withdraw selected Sculk shortcuts, Small Clumps, Crafting Tablet, unused
+  spawner/fragment machines and AnvilCraft Oil; revise coal, discs and Time Warp.
+- Extend Compact, heater and biological quest branches through guarded edits
+  that retain existing positions and unrelated live quest properties.
+
 ## 0.49.0
 
 - Add Giant Anvil and Miniaturization Wall routes, seven component-preserving

@@ -1,0 +1,132 @@
+{
+  "values": [
+    {
+      "id": "anvilcraft:magnet_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:royal_steel_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:frost_metal_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ember_metal_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:transcendium_block",
+      "required": false
+    },
+    {
+      "id": "create:zinc_block",
+      "required": false
+    },
+    {
+      "id": "mekanism:block_tin",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:titanium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:tungsten_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lead_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:silver_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:uranium_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:plutonium_block",
+      "required": false
+    },
+    {
+      "id": "mekanism:block_bronze",
+      "required": false
+    },
+    {
+      "id": "create:brass_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:topaz_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:ruby_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sapphire_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:resin_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:amber_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:chocolate_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:black_chocolate_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:white_chocolate_block",
+      "required": false
+    },
+    {
+      "id": "magitech:raw_zinc_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:void_matter_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:earth_core_shard_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:multiphase_matter_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:negative_matter_block",
+      "required": false
+    },
+    {
+      "id": "cratedelight:sugar_bag",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:gunpowder_block",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:flesh_crate",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:flint_block",
+      "required": false
+    }
+  ]
+}

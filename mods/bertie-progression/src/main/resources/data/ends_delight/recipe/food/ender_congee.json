@@ -7,14 +7,17 @@
     {
       "item": "ends_delight:dried_endermite_meat"
     },
-    [
-      {
-        "item": "minecraft:ender_pearl"
-      },
-      {
-        "item": "anvilcraft:ender_pearl_fragment"
-      }
-    ]
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:ender_pearl"
+        },
+        {
+          "item": "anvilcraft:ender_pearl_fragment"
+        }
+      ]
+    }
   ],
   "container": {
     "id": "minecraft:bowl"

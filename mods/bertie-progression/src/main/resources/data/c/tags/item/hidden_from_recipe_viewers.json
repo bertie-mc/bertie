@@ -5340,6 +5340,90 @@
     {
       "id": "powah:thermo_generator_starter",
       "required": false
+    },
+    {
+      "id": "anvilcraft:oil_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:rotten_flesh_block",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:sugar_block",
+      "required": false
+    },
+    {
+      "id": "cratedelight:gunpowder_bag",
+      "required": false
+    },
+    {
+      "id": "oritech:fragment_forge_block",
+      "required": false
+    },
+    {
+      "id": "oritech:small_copper_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_gold_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_iron_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_nickel_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_platinum_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:spawner_cage_block",
+      "required": false
+    },
+    {
+      "id": "oritech:spawner_controller_block",
+      "required": false
+    },
+    {
+      "id": "pastel:crafting_tablet",
+      "required": false
+    },
+    {
+      "id": "quark:berry_sack",
+      "required": false
+    },
+    {
+      "id": "quark:calcite_slab",
+      "required": false
+    },
+    {
+      "id": "quark:calcite_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:calcite_wall",
+      "required": false
+    },
+    {
+      "id": "quark:charcoal_block",
+      "required": false
+    },
+    {
+      "id": "quark:cocoa_beans_sack",
+      "required": false
+    },
+    {
+      "id": "quark:glowberry_sack",
+      "required": false
+    },
+    {
+      "id": "quark:gunpowder_sack",
+      "required": false
     }
   ]
 }

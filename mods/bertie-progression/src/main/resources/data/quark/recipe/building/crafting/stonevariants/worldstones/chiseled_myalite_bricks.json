@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "quark:myalite_bricks"
+    }
+  },
+  "result": {
+    "id": "quark:chiseled_myalite_bricks",
+    "count": 5
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "mynethersdelight:powdery_planks"
+    }
+  },
+  "result": {
+    "id": "mynethersdelight:powdery_mosaic",
+    "count": 8
+  }
+}

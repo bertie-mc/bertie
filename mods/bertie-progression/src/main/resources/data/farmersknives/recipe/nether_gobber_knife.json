@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "gobber2:gobber2_ingot_nether"
+    },
+    "s": {
+      "item": "gobber2:gobber2_rod_nether"
+    }
+  },
+  "result": {
+    "id": "farmersknives:nether_gobber_knife"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "gobber2"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:nether_gobber_knife"
+    }
+  ]
+}

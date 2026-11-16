@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m",
+    "s"
+  ],
+  "key": {
+    "m": {
+      "item": "betterend:thallasium_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "farmersknives:thallasium_knife"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "betterend"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:thallasium_knife"
+    }
+  ]
+}

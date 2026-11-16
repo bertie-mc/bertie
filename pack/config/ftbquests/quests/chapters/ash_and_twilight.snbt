@@ -1762,17 +1762,18 @@
 			y: 7.5d
 		}
 		{
-			y: 4.5d
-			x: -9.0d
 			dependencies: ["3B0000000000006F"]
+			icon: {
+				id: "aquamirae:abyssal_amethyst"
+			}
 			id: "3B00000000004000"
-			icon: { id: "aquamirae:abyssal_amethyst" }
 			tasks: [{
 				id: "3B00000001004000"
-				count: 1L
-				item: { count: 1 id: "aquamirae:abyssal_amethyst" }
+				item: { count: 1, id: "aquamirae:abyssal_amethyst" }
 				type: "item"
 			}]
+			x: -9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3B00000000004000"]
@@ -1794,46 +1795,55 @@
 			y: 4.5d
 		}
 		{
-			y: 3.0d
-			x: 0.0d
 			dependencies: ["3B0000000000002A"]
+			icon: {
+				id: "malum:runewood_obelisk"
+			}
 			id: "3B00000000009000"
-			icon: { id: "malum:runewood_obelisk" }
 			tasks: [{
 				id: "3B00000001009000"
-				count: 1L
-				item: { count: 1 id: "malum:runewood_obelisk" }
+				item: { count: 1, id: "malum:runewood_obelisk" }
 				type: "item"
 			}]
-		}
-		{
-			y: 7.5d
-			x: -7.5d
-			dependencies: ["3B00000000000053"]
-			id: "3B0000000000A000"
-			icon: { id: "cognition:cognitive_alloy" }
-			tasks: [{
-				id: "3B0000000100A000"
-				count: 64L
-				item: { count: 1 id: "cognition:cognitive_alloy" }
-				consume_items: false type: "item"
-			}]
-		}
-		{
+			x: 0.0d
 			y: 3.0d
-			x: -12.0d
-			dependencies: ["1C00000000000059"]
-			id: "3B0000000000A001"
-			icon: { id: "mekanism:dust_copper" }
-			tasks: [{
-				id: "3B0000000100A001"
-				count: 1L
-				item: { count: 1 id: "mekanism:dust_copper" }
-				consume_items: false type: "item"
-			}]
 		}
 		{
-			dependencies: ["3B00000000000054", "3B00000000000055"]
+			dependencies: ["3B00000000000053"]
+			icon: {
+				id: "cognition:cognitive_alloy"
+			}
+			id: "3B0000000000A000"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "3B0000000100A000"
+				item: { count: 1, id: "cognition:cognitive_alloy" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1C00000000000059"]
+			icon: {
+				id: "mekanism:dust_copper"
+			}
+			id: "3B0000000000A001"
+			tasks: [{
+				consume_items: false
+				id: "3B0000000100A001"
+				item: { count: 1, id: "mekanism:dust_copper" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3B00000000000054"
+				"3B00000000000055"
+			]
 			icon: {
 				id: "cognition:precision_dispeller"
 			}

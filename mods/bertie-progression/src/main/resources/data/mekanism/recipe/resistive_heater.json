@@ -1,0 +1,55 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ABBBA",
+    "ACDCA",
+    "AEFEA",
+    "AEGEA",
+    "HHHHH"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "B": {
+      "item": "mekanism:ingot_tin"
+    },
+    "C": {
+      "item": "anvilcraft:ember_metal_ingot"
+    },
+    "D": {
+      "item": "mekanism:advanced_control_circuit"
+    },
+    "E": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "F": {
+      "item": "mekanism:fuelwood_heater"
+    },
+    "G": {
+      "item": "mekanism:energy_tablet"
+    },
+    "H": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "tier": 2,
+  "result": {
+    "id": "mekanism:resistive_heater",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

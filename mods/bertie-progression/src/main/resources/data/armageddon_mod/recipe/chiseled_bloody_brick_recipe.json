@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "armageddon_mod:bloody_bricks"
+    }
+  },
+  "result": {
+    "id": "armageddon_mod:chiseled_bloody_bricks",
+    "count": 5
+  }
+}

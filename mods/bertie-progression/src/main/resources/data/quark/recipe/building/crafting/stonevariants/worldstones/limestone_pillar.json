@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "quark:polished_limestone"
+    }
+  },
+  "result": {
+    "id": "quark:limestone_pillar",
+    "count": 3
+  }
+}

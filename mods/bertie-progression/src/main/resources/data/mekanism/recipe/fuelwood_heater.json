@@ -1,0 +1,52 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AABAA",
+    "ACDCA",
+    "AEFEA",
+    "BEGEB",
+    "BABAB"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:steel_sheet"
+    },
+    "B": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    },
+    "C": {
+      "item": "anvilcraft:ember_metal_ingot"
+    },
+    "D": {
+      "item": "mekanism:basic_control_circuit"
+    },
+    "E": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "F": {
+      "item": "mekanism:steel_casing"
+    },
+    "G": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "tier": 2,
+  "result": {
+    "id": "mekanism:fuelwood_heater",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

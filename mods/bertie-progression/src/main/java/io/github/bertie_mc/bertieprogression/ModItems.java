@@ -85,6 +85,8 @@ public final class ModItems {
     // --- Portals / dimension keys ---
     public static final DeferredItem<BlockItem> POCKET_DIMENSION =
             ITEMS.registerSimpleBlockItem(ModBlocks.POCKET_DIMENSION);
+    public static final DeferredItem<BlockItem> SENTIENT_CASING =
+            ITEMS.registerSimpleBlockItem(ModBlocks.SENTIENT_CASING);
     public static final DeferredItem<PocketWatchItem> POCKET_WATCH = ITEMS.register(
             "pocket_watch",
             () -> new PocketWatchItem(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
@@ -215,6 +217,7 @@ public final class ModItems {
                         out.accept(CRAFTING_LICENSE.get());
                         out.accept(EEZO_ORE.get());
                         out.accept(POCKET_DIMENSION.get());
+                        out.accept(SENTIENT_CASING.get());
                         out.accept(POCKET_WATCH.get());
                         BuiltInRegistries.ITEM
                                 .getOptional(ResourceLocation.fromNamespaceAndPath("cataclysm", "enderite_ingot"))

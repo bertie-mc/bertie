@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cratedelight:cocoabeans_bag",
+      "required": false
+    }
+  ]
+}

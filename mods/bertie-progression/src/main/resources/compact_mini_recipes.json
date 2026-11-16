@@ -122,5 +122,103 @@
       "count": 1,
       "id": "compactmachines:new_machine"
     }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/large_heat_generator",
+    "size": 3,
+    "machine_layout": true,
+    "ingredients": {
+      "mekanism:superheating_element": 10,
+      "anvilcraft:royal_steel_block": 4,
+      "anvilcraft:ember_metal_block": 2,
+      "mekanism:basic_energy_cube": 1,
+      "anvilcraft:titanium_block": 7,
+      "mekanism:ultimate_fluid_tank": 1,
+      "refinedstorage:grid": 2
+    },
+    "catalyst": "anvilcraft:heated_tungsten_block",
+    "output": {
+      "id": "mekmm:large_heat_generator",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/large_gas_burning_generator",
+    "size": 3,
+    "machine_layout": true,
+    "ingredients": {
+      "mekmm:ultimate_max_chemical_tank": 4,
+      "anvilcraft:royal_steel_block": 5,
+      "mekanism:basic_energy_cube": 3,
+      "refinedstorage:grid": 1,
+      "mekanismadditions:black_plastic_stairs": 4,
+      "mekanismgenerators:gas_burning_generator": 1
+    },
+    "catalyst": "mekmm:advanced_electrolysis_core",
+    "output": {
+      "id": "mekmm:large_gas_burning_generator",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/large_pigment_mixer",
+    "size": 3,
+    "machine_layout": true,
+    "ingredients": {
+      "mekanism:basic_energy_cube": 4,
+      "anvilcraft:royal_steel_block": 5,
+      "mekanism:basic_chemical_tank": 4,
+      "mekanism:elite_pressurized_tube": 2,
+      "mekanism:pigment_mixer": 1,
+      "refinedstorage:grid": 1,
+      "oritech:superconductor": 2
+    },
+    "catalyst": "hazennstuff:rose_quartz",
+    "output": {
+      "id": "mekmm:large_pigment_mixer",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/large_chemical_infuser",
+    "size": 3,
+    "machine_layout": true,
+    "ingredients": {
+      "anvilcraft:royal_steel_block": 6,
+      "mekanism:basic_energy_cube": 1,
+      "anvilcraft:titanium_block": 2,
+      "mekanism:ultimate_chemical_tank": 3,
+      "mekanism:elite_pressurized_tube": 5,
+      "refinedstorage:grid": 3,
+      "mekanism:ultimate_pressurized_tube": 4,
+      "mekanism:chemical_infuser": 1,
+      "oritech:superconductor": 2
+    },
+    "catalyst": "anvilcraft:space_overcompressor",
+    "output": {
+      "id": "mekmm:large_chemical_infuser",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:miniaturization/large_electrolytic_separator",
+    "size": 3,
+    "machine_layout": true,
+    "ingredients": {
+      "anvilcraft:royal_steel_block": 6,
+      "mekanism:basic_energy_cube": 1,
+      "anvilcraft:titanium_block": 6,
+      "mekanism:ultimate_chemical_tank": 2,
+      "mekanism:ultimate_fluid_tank": 1,
+      "refinedstorage:grid": 3,
+      "mekanism:electrolytic_separator": 1,
+      "mekanism:ultimate_pressurized_tube": 3,
+      "oritech:superconductor": 1
+    },
+    "catalyst": "mekmm:advanced_electrolysis_core",
+    "output": {
+      "id": "mekmm:large_electrolytic_separator",
+      "count": 1
+    }
   }
 ]

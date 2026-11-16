@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "dungeonsdelight:wormwood_planks"
+    }
+  },
+  "result": {
+    "id": "dungeonsdelight:wormwood_mosaic",
+    "count": 8
+  }
+}

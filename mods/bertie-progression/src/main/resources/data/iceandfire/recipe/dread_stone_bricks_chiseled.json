@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "iceandfire:dread_stone_bricks"
+    }
+  },
+  "result": {
+    "id": "iceandfire:dread_stone_bricks_chiseled",
+    "count": 5
+  }
+}

@@ -1,6 +1,8 @@
 {
   "replace": false,
-  "values": [],
+  "values": [
+    "bertieprogression:sentient_casing"
+  ],
   "remove": [
     "forbidden_arcanus:arcane_crystal_ore",
     "forbidden_arcanus:deepslate_arcane_crystal_ore",

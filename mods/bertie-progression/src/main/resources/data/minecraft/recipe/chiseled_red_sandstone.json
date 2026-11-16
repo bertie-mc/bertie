@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "quark:red_sandstone_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_red_sandstone",
+    "count": 5
+  }
+}

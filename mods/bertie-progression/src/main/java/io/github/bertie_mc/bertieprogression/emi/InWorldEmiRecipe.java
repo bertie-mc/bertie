@@ -26,6 +26,13 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
     private final List<EmiIngredient> recipeCatalysts;
     private final List<EmiStack> itemOutputs;
     private final List<Component> info;
+    private final ResourceLocation guide;
+
+    private static boolean spatial(ResourceLocation id) {
+        return id != null
+                && id.getNamespace().equals("bertieprogression")
+                && (id.getPath().startsWith("miniaturization/") || id.getPath().startsWith("giant_anvil/"));
+    }
 
     InWorldEmiRecipe(
             EmiRecipeCategory category,
@@ -37,12 +44,14 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
         super(
                 category,
                 id,
-                computeWidth(itemInputs, catalysts, itemOutputs, info),
-                computeHeight(itemInputs, catalysts, itemOutputs, info));
+                computeWidth(itemInputs, catalysts, itemOutputs, spatial(id) ? List.of() : info),
+                computeHeight(itemInputs, catalysts, itemOutputs, spatial(id) ? List.of() : info)
+                        + (spatial(id) ? 20 : 0));
         this.itemInputs = List.copyOf(itemInputs);
         this.recipeCatalysts = List.copyOf(catalysts);
         this.itemOutputs = List.copyOf(itemOutputs);
-        this.info = List.copyOf(info);
+        this.info = spatial(id) ? List.of() : List.copyOf(info);
+        this.guide = spatial(id) ? id : null;
         this.inputs = this.itemInputs;
         this.catalysts = this.recipeCatalysts;
         this.outputs = this.itemOutputs;
@@ -106,6 +115,20 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
         }
 
         int textY = y + SLOT + PADDING;
+        if (guide != null && net.neoforged.fml.ModList.get().isLoaded("ponder")) {
+            widgets.addButton(
+                    PADDING,
+                    textY,
+                    18,
+                    18,
+                    0,
+                    0,
+                    () -> true,
+                    (mouseX, mouseY, button) ->
+                            io.github.bertie_mc.bertieprogression.ponder.SpatialPonderPlugin.open(guide));
+            widgets.addText(Component.literal("W"), PADDING + 5, textY + 4, 0xFF404040, false);
+            widgets.addTooltipText(List.of(Component.literal("Ponder")), PADDING, textY, 18, 18);
+        }
         Font font = font();
         int wrapWidth = getDisplayWidth() - PADDING * 2;
         for (Component line : info) {

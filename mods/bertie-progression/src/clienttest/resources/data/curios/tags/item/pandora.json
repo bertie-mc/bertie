@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [],
+  "remove": [
+    "pandora:pandora_necklace",
+    "pandora:pandora_bracelet"
+  ]
+}

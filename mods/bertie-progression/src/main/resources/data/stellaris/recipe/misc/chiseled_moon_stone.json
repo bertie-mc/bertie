@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "stellaris:moon_stone_bricks"
+    }
+  },
+  "result": {
+    "id": "stellaris:chiseled_moon_stone",
+    "count": 5
+  }
+}

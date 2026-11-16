@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "pastel:polished_calcite"
+    }
+  },
+  "result": {
+    "id": "quark:calcite_pillar",
+    "count": 3
+  }
+}

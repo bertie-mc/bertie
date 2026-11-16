@@ -1,0 +1,72 @@
+{
+  "values": [
+    {
+      "id": "anvilcraft:white_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:light_gray_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:gray_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:black_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:brown_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:red_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:orange_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:yellow_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:lime_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:green_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:cyan_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:light_blue_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:blue_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:purple_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:magenta_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:pink_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:melt_gem_bucket",
+      "required": false
+    }
+  ]
+}

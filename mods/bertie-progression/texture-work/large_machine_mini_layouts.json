@@ -1,0 +1,2306 @@
+{
+  "status": "queued_for_next_called_build",
+  "date": "2026-11-16",
+  "layer_order": "bottom_to_top",
+  "row_order": "z_increasing",
+  "column_order": "x_increasing",
+  "recipes": [
+    {
+      "output": {
+        "id": "mekmm:large_heat_generator",
+        "count": 1
+      },
+      "source_centre_xz": [
+        86,
+        24
+      ],
+      "source_min": [
+        85,
+        -60,
+        23
+      ],
+      "source_max": [
+        87,
+        -58,
+        25
+      ],
+      "size": [
+        3,
+        3,
+        3
+      ],
+      "layers": [
+        [
+          "AAA",
+          "BBC",
+          "BBC"
+        ],
+        [
+          "ADA",
+          "EFA",
+          "EEG"
+        ],
+        [
+          "AAA",
+          "EEA",
+          "EEG"
+        ]
+      ],
+      "key": {
+        "A": "mekanism:superheating_element",
+        "B": "anvilcraft:royal_steel_block",
+        "C": "anvilcraft:ember_metal_block",
+        "D": "mekanism:basic_energy_cube",
+        "E": "anvilcraft:titanium_block",
+        "F": "mekanism:ultimate_fluid_tank",
+        "G": "refinedstorage:grid"
+      },
+      "physical_block_counts": {
+        "mekanism:superheating_element": 10,
+        "anvilcraft:royal_steel_block": 4,
+        "anvilcraft:ember_metal_block": 2,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 7,
+        "mekanism:ultimate_fluid_tank": 1,
+        "refinedstorage:grid": 2
+      },
+      "ingredient_block_counts": {
+        "mekanism:superheating_element": 10,
+        "anvilcraft:royal_steel_block": 4,
+        "anvilcraft:ember_metal_block": 2,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 7,
+        "mekanism:ultimate_fluid_tank": 1,
+        "refinedstorage:grid": 2
+      },
+      "physical_cells": [
+        {
+          "relative": [
+            -1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:ember_metal_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:ember_metal_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "active": "false"
+            },
+            "Name": "mekanism:ultimate_fluid_tank"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "active": "false"
+            },
+            "Name": "mekanism:superheating_element"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        }
+      ],
+      "auxiliary_parent_links": [],
+      "catalyst": {
+        "item": "anvilcraft:heated_tungsten_block",
+        "count": 1,
+        "consumed": true
+      },
+      "require_saved_components": false,
+      "ponder_required": true,
+      "ponder_labels": "block names only",
+      "native_multipart_matching_and_consumption_must_be_verified": true,
+      "ponder_view": {
+        "front_face": "south",
+        "camera_from": "+Z",
+        "look_toward": "-Z",
+        "captured_front_z": 25,
+        "preserve_geometry_and_block_facing": true
+      },
+      "source_capture": "local/scratch/large-machine-mini-layouts-20261116/layouts.json",
+      "source_saved_chunks_utc": {
+        "5,1": "2026-11-16T08:20:55+00:00"
+      },
+      "physical_variant_aliases": {
+        "oritech:superconductor_connection": "oritech:superconductor"
+      }
+    },
+    {
+      "output": {
+        "id": "mekmm:large_gas_burning_generator",
+        "count": 1
+      },
+      "source_centre_xz": [
+        90,
+        24
+      ],
+      "source_min": [
+        89,
+        -60,
+        23
+      ],
+      "source_max": [
+        91,
+        -58,
+        25
+      ],
+      "size": [
+        3,
+        3,
+        3
+      ],
+      "layers": [
+        [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        [
+          "CDC",
+          "D.D",
+          "CEC"
+        ],
+        [
+          "CFC",
+          "FGF",
+          "CFC"
+        ]
+      ],
+      "key": {
+        "A": "mekmm:ultimate_max_chemical_tank",
+        "B": "anvilcraft:royal_steel_block",
+        "C": "mekanism:bounding_block",
+        "D": "mekanism:basic_energy_cube",
+        "E": "refinedstorage:grid",
+        "F": "mekanismadditions:black_plastic_stairs",
+        "G": "mekanismgenerators:gas_burning_generator"
+      },
+      "physical_block_counts": {
+        "mekmm:ultimate_max_chemical_tank": 4,
+        "anvilcraft:royal_steel_block": 5,
+        "mekanism:bounding_block": 8,
+        "mekanism:basic_energy_cube": 3,
+        "minecraft:air": 1,
+        "refinedstorage:grid": 1,
+        "mekanismadditions:black_plastic_stairs": 4,
+        "mekanismgenerators:gas_burning_generator": 1
+      },
+      "ingredient_block_counts": {
+        "mekmm:ultimate_max_chemical_tank": 4,
+        "anvilcraft:royal_steel_block": 5,
+        "mekanism:basic_energy_cube": 3,
+        "refinedstorage:grid": 1,
+        "mekanismadditions:black_plastic_stairs": 4,
+        "mekanismgenerators:gas_burning_generator": 1
+      },
+      "physical_cells": [
+        {
+          "relative": [
+            -1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekmm:ultimate_max_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekmm:ultimate_max_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekmm:ultimate_max_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekmm:ultimate_max_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "east"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            0
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "east"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "waterlogged": "false",
+              "half": "bottom",
+              "shape": "straight",
+              "facing": "south",
+              "fluid_logged_extension": "empty"
+            },
+            "Name": "mekanismadditions:black_plastic_stairs"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "waterlogged": "false",
+              "half": "bottom",
+              "shape": "straight",
+              "facing": "east",
+              "fluid_logged_extension": "empty"
+            },
+            "Name": "mekanismadditions:black_plastic_stairs"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south",
+              "active": "false"
+            },
+            "Name": "mekanismgenerators:gas_burning_generator"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "waterlogged": "false",
+              "half": "bottom",
+              "shape": "straight",
+              "facing": "west",
+              "fluid_logged_extension": "empty"
+            },
+            "Name": "mekanismadditions:black_plastic_stairs"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "waterlogged": "false",
+              "half": "bottom",
+              "shape": "straight",
+              "facing": "north",
+              "fluid_logged_extension": "empty"
+            },
+            "Name": "mekanismadditions:black_plastic_stairs"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        }
+      ],
+      "auxiliary_parent_links": [
+        {
+          "part_relative": [
+            -1,
+            1,
+            1
+          ],
+          "parent_relative": [
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "part_relative": [
+            1,
+            1,
+            1
+          ],
+          "parent_relative": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "part_relative": [
+            -1,
+            2,
+            1
+          ],
+          "parent_relative": [
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "part_relative": [
+            1,
+            2,
+            1
+          ],
+          "parent_relative": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "part_relative": [
+            -1,
+            1,
+            -1
+          ],
+          "parent_relative": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "part_relative": [
+            1,
+            1,
+            -1
+          ],
+          "parent_relative": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "part_relative": [
+            -1,
+            2,
+            -1
+          ],
+          "parent_relative": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        {
+          "part_relative": [
+            1,
+            2,
+            -1
+          ],
+          "parent_relative": [
+            1,
+            0,
+            -1
+          ]
+        }
+      ],
+      "catalyst": {
+        "item": "mekmm:advanced_electrolysis_core",
+        "count": 1,
+        "consumed": true
+      },
+      "require_saved_components": false,
+      "ponder_required": true,
+      "ponder_labels": "block names only",
+      "native_multipart_matching_and_consumption_must_be_verified": true,
+      "ponder_view": {
+        "front_face": "south",
+        "camera_from": "+Z",
+        "look_toward": "-Z",
+        "captured_front_z": 25,
+        "preserve_geometry_and_block_facing": true
+      },
+      "source_capture": "local/scratch/large-machine-mini-layouts-20261116/layouts.json",
+      "source_saved_chunks_utc": {
+        "5,1": "2026-11-16T08:20:55+00:00"
+      },
+      "physical_variant_aliases": {
+        "oritech:superconductor_connection": "oritech:superconductor"
+      }
+    },
+    {
+      "output": {
+        "id": "mekmm:large_pigment_mixer",
+        "count": 1
+      },
+      "source_centre_xz": [
+        94,
+        24
+      ],
+      "source_min": [
+        93,
+        -60,
+        23
+      ],
+      "source_max": [
+        95,
+        -58,
+        25
+      ],
+      "size": [
+        3,
+        3,
+        3
+      ],
+      "layers": [
+        [
+          "ABA",
+          "BBB",
+          "ABA"
+        ],
+        [
+          "CDC",
+          "EFE",
+          "CGC"
+        ],
+        [
+          ".H.",
+          ".I.",
+          "..."
+        ]
+      ],
+      "key": {
+        "A": "mekanism:basic_energy_cube",
+        "B": "anvilcraft:royal_steel_block",
+        "C": "mekanism:basic_chemical_tank",
+        "D": "oritech:superconductor_connection",
+        "E": "mekanism:elite_pressurized_tube",
+        "F": "mekanism:pigment_mixer",
+        "G": "refinedstorage:grid",
+        "H": "oritech:superconductor",
+        "I": "mekanism:bounding_block"
+      },
+      "physical_block_counts": {
+        "mekanism:basic_energy_cube": 4,
+        "anvilcraft:royal_steel_block": 5,
+        "mekanism:basic_chemical_tank": 4,
+        "oritech:superconductor_connection": 1,
+        "mekanism:elite_pressurized_tube": 2,
+        "mekanism:pigment_mixer": 1,
+        "refinedstorage:grid": 1,
+        "minecraft:air": 7,
+        "oritech:superconductor": 1,
+        "mekanism:bounding_block": 1
+      },
+      "ingredient_block_counts": {
+        "mekanism:basic_energy_cube": 4,
+        "anvilcraft:royal_steel_block": 5,
+        "mekanism:basic_chemical_tank": 4,
+        "mekanism:elite_pressurized_tube": 2,
+        "mekanism:pigment_mixer": 1,
+        "refinedstorage:grid": 1,
+        "oritech:superconductor": 2
+      },
+      "physical_cells": [
+        {
+          "relative": [
+            -1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "east"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:basic_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "straight": "false",
+              "east": "0",
+              "waterlogged": "false",
+              "south": "1",
+              "north": "0",
+              "west": "0",
+              "up": "1",
+              "down": "0"
+            },
+            "Name": "oritech:superconductor_connection"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:basic_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "facing": "south",
+              "active": "false"
+            },
+            "Name": "mekanism:pigment_mixer"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:basic_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:basic_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            -1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "straight": "false",
+              "east": "0",
+              "waterlogged": "false",
+              "south": "0",
+              "north": "0",
+              "west": "0",
+              "up": "0",
+              "down": "1"
+            },
+            "Name": "oritech:superconductor"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            -1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            0
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:bounding_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            0
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ],
+      "auxiliary_parent_links": [
+        {
+          "part_relative": [
+            0,
+            2,
+            0
+          ],
+          "parent_relative": [
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "catalyst": {
+        "item": "hazennstuff:rose_quartz",
+        "count": 1,
+        "consumed": true
+      },
+      "require_saved_components": false,
+      "ponder_required": true,
+      "ponder_labels": "block names only",
+      "native_multipart_matching_and_consumption_must_be_verified": true,
+      "ponder_view": {
+        "front_face": "south",
+        "camera_from": "+Z",
+        "look_toward": "-Z",
+        "captured_front_z": 25,
+        "preserve_geometry_and_block_facing": true
+      },
+      "source_capture": "local/scratch/large-machine-mini-layouts-20261116/layouts.json",
+      "source_saved_chunks_utc": {
+        "5,1": "2026-11-16T08:20:55+00:00"
+      },
+      "physical_variant_aliases": {
+        "oritech:superconductor_connection": "oritech:superconductor"
+      }
+    },
+    {
+      "output": {
+        "id": "mekmm:large_chemical_infuser",
+        "count": 1
+      },
+      "source_centre_xz": [
+        86,
+        15
+      ],
+      "source_min": [
+        85,
+        -60,
+        14
+      ],
+      "source_max": [
+        87,
+        -58,
+        16
+      ],
+      "source_capture": "local/scratch/large-machine-mini-layouts-20261116/chemical-separator-layouts.json",
+      "source_saved_chunks_utc": {
+        "5,0": "2026-11-16T09:12:27+00:00",
+        "5,1": "2026-11-16T09:10:34+00:00"
+      },
+      "size": [
+        3,
+        3,
+        3
+      ],
+      "layers": [
+        [
+          "ABA",
+          "AAA",
+          "CAC"
+        ],
+        [
+          "DED",
+          "FDF",
+          "GGG"
+        ],
+        [
+          "HEH",
+          "HIH",
+          "FFF"
+        ]
+      ],
+      "key": {
+        "A": "anvilcraft:royal_steel_block",
+        "B": "mekanism:basic_energy_cube",
+        "C": "anvilcraft:titanium_block",
+        "D": "mekanism:ultimate_chemical_tank",
+        "E": "oritech:superconductor_connection",
+        "F": "mekanism:elite_pressurized_tube",
+        "G": "refinedstorage:grid",
+        "H": "mekanism:ultimate_pressurized_tube",
+        "I": "mekanism:chemical_infuser"
+      },
+      "physical_block_counts": {
+        "anvilcraft:royal_steel_block": 6,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 2,
+        "mekanism:ultimate_chemical_tank": 3,
+        "oritech:superconductor_connection": 2,
+        "mekanism:elite_pressurized_tube": 5,
+        "refinedstorage:grid": 3,
+        "mekanism:ultimate_pressurized_tube": 4,
+        "mekanism:chemical_infuser": 1
+      },
+      "ingredient_block_counts": {
+        "anvilcraft:royal_steel_block": 6,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 2,
+        "mekanism:ultimate_chemical_tank": 3,
+        "mekanism:elite_pressurized_tube": 5,
+        "refinedstorage:grid": 3,
+        "mekanism:ultimate_pressurized_tube": 4,
+        "mekanism:chemical_infuser": 1,
+        "oritech:superconductor": 2
+      },
+      "physical_cells": [
+        {
+          "relative": [
+            -1,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:ultimate_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "straight": "true",
+              "east": "0",
+              "waterlogged": "false",
+              "south": "0",
+              "north": "0",
+              "west": "0",
+              "up": "1",
+              "down": "1"
+            },
+            "Name": "oritech:superconductor_connection"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:ultimate_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:ultimate_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "straight": "false",
+              "east": "0",
+              "waterlogged": "false",
+              "south": "1",
+              "north": "0",
+              "west": "0",
+              "up": "0",
+              "down": "1"
+            },
+            "Name": "oritech:superconductor_connection"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south",
+              "active": "false"
+            },
+            "Name": "mekanism:chemical_infuser"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:elite_pressurized_tube"
+          }
+        }
+      ],
+      "auxiliary_parent_links": [],
+      "physical_variant_aliases": {
+        "oritech:superconductor_connection": "oritech:superconductor"
+      },
+      "catalyst": {
+        "item": "anvilcraft:space_overcompressor",
+        "count": 1,
+        "consumed": true
+      },
+      "require_saved_components": false,
+      "ponder_required": true,
+      "ponder_labels": "block names only",
+      "native_multipart_matching_and_consumption_must_be_verified": true,
+      "ponder_view": {
+        "front_face": "south",
+        "camera_from": "+Z",
+        "look_toward": "-Z",
+        "captured_front_z": 16,
+        "preserve_geometry_and_block_facing": true
+      }
+    },
+    {
+      "output": {
+        "id": "mekmm:large_electrolytic_separator",
+        "count": 1
+      },
+      "source_centre_xz": [
+        90,
+        15
+      ],
+      "source_min": [
+        89,
+        -60,
+        14
+      ],
+      "source_max": [
+        91,
+        -58,
+        16
+      ],
+      "source_capture": "local/scratch/large-machine-mini-layouts-20261116/chemical-separator-layouts.json",
+      "source_saved_chunks_utc": {
+        "5,0": "2026-11-16T09:12:27+00:00",
+        "5,1": "2026-11-16T09:10:34+00:00"
+      },
+      "size": [
+        3,
+        3,
+        3
+      ],
+      "layers": [
+        [
+          "ABA",
+          "AAA",
+          "CAC"
+        ],
+        [
+          "CDC",
+          "EFE",
+          "GGG"
+        ],
+        [
+          "CHC",
+          "III",
+          "..."
+        ]
+      ],
+      "key": {
+        "A": "anvilcraft:royal_steel_block",
+        "B": "mekanism:basic_energy_cube",
+        "C": "anvilcraft:titanium_block",
+        "D": "oritech:superconductor_connection",
+        "E": "mekanism:ultimate_chemical_tank",
+        "F": "mekanism:ultimate_fluid_tank",
+        "G": "refinedstorage:grid",
+        "H": "mekanism:electrolytic_separator",
+        "I": "mekanism:ultimate_pressurized_tube"
+      },
+      "physical_block_counts": {
+        "anvilcraft:royal_steel_block": 6,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 6,
+        "oritech:superconductor_connection": 1,
+        "mekanism:ultimate_chemical_tank": 2,
+        "mekanism:ultimate_fluid_tank": 1,
+        "refinedstorage:grid": 3,
+        "mekanism:electrolytic_separator": 1,
+        "mekanism:ultimate_pressurized_tube": 3,
+        "minecraft:air": 3
+      },
+      "ingredient_block_counts": {
+        "anvilcraft:royal_steel_block": 6,
+        "mekanism:basic_energy_cube": 1,
+        "anvilcraft:titanium_block": 6,
+        "mekanism:ultimate_chemical_tank": 2,
+        "mekanism:ultimate_fluid_tank": 1,
+        "refinedstorage:grid": 3,
+        "mekanism:electrolytic_separator": 1,
+        "mekanism:ultimate_pressurized_tube": 3,
+        "oritech:superconductor": 1
+      },
+      "physical_cells": [
+        {
+          "relative": [
+            -1,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "north"
+            },
+            "Name": "mekanism:basic_energy_cube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            0
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:royal_steel_block"
+          }
+        },
+        {
+          "relative": [
+            1,
+            0,
+            1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "straight": "true",
+              "east": "0",
+              "waterlogged": "false",
+              "south": "0",
+              "north": "0",
+              "west": "0",
+              "up": "1",
+              "down": "1"
+            },
+            "Name": "oritech:superconductor_connection"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:ultimate_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "active": "false"
+            },
+            "Name": "mekanism:ultimate_fluid_tank"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south"
+            },
+            "Name": "mekanism:ultimate_chemical_tank"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            0,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            1,
+            1,
+            1
+          ],
+          "state": {
+            "Properties": {
+              "active": "false",
+              "direction": "south"
+            },
+            "Name": "refinedstorage:grid"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            -1
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty",
+              "facing": "south",
+              "active": "false"
+            },
+            "Name": "mekanism:electrolytic_separator"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            -1
+          ],
+          "state": {
+            "Name": "anvilcraft:titanium_block"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            0
+          ],
+          "state": {
+            "Properties": {
+              "fluid_logged": "empty"
+            },
+            "Name": "mekanism:ultimate_pressurized_tube"
+          }
+        },
+        {
+          "relative": [
+            -1,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            0,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "relative": [
+            1,
+            2,
+            1
+          ],
+          "state": {
+            "Name": "minecraft:air"
+          }
+        }
+      ],
+      "auxiliary_parent_links": [],
+      "physical_variant_aliases": {
+        "oritech:superconductor_connection": "oritech:superconductor"
+      },
+      "catalyst": {
+        "item": "mekmm:advanced_electrolysis_core",
+        "count": 1,
+        "consumed": true
+      },
+      "require_saved_components": false,
+      "ponder_required": true,
+      "ponder_labels": "block names only",
+      "native_multipart_matching_and_consumption_must_be_verified": true,
+      "ponder_view": {
+        "front_face": "south",
+        "camera_from": "+Z",
+        "look_toward": "-Z",
+        "captured_front_z": 16,
+        "preserve_geometry_and_block_facing": true
+      }
+    }
+  ],
+  "raw_captures": [
+    "local/scratch/large-machine-mini-layouts-20261116/layouts.json",
+    "local/scratch/large-machine-mini-layouts-20261116/chemical-separator-layouts.json"
+  ],
+  "planned_large_machine_count": 8,
+  "captured_large_machine_count": 5
+}

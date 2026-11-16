@@ -40,6 +40,9 @@ public final class BertieProgression {
             NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.anvil.OverchargedCrystalCrafting.class);
         }
         ModRecipes.SERIALIZERS.register(modBus);
+        if (ModList.get().isLoaded("avaritia")) {
+            io.github.bertie_mc.bertieprogression.recipe.ReusableTableRecipe.register(modBus);
+        }
         ModRecipes.INGREDIENTS.register(modBus);
         io.github.bertie_mc.bertieprogression.ender.EnderEyeIntegration.register(modBus);
         if (ModList.get().isLoaded("refinedstorage")) {

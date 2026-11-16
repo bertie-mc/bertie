@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IS",
+    "IS"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:ingots/deep_alloy"
+    },
+    "S": {
+      "item": "berlordscarving:deep_alloy_slate"
+    }
+  },
+  "result": {
+    "id": "slag:deep_alloy_bricks",
+    "count": 4
+  }
+}

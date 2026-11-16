@@ -41,8 +41,11 @@ Assembler → Electric Coil → Processing Unit. The plastic item chain requires
 Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.
 HDPE Pellets lead to PlaStick, which branches into Rods and Sheets. Gas-Burning
 Generator requires HDPE Rod. HDPE Sheet continues through Crude Oil Bucket → Pump → Refinery → Diesel
-Bucket → Fuel Generator. Bio Generator branches directly below Raw Biopolymer
-and requires it. Basic Transmitters requires eight of all five transmitter families.
+Bucket → Fuel Generator. Substrate leads through Biosteel to Bio Generator.
+HDPE Rod also leads to Nutritional Liquifier and Planting Station. Large Heat
+Generator requires Lava Generator. Basic Transmitters requires eight of all five
+transmitter families. Reviewed quest updates preserve every unselected live field;
+the current live layout is adopted into the authored book before delivery.
 
 ## Dependency model
 

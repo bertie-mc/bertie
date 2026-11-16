@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:sulfur_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_sulfur",
+    "count": 5
+  }
+}

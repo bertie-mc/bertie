@@ -1,0 +1,40 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 3,
+  "pattern": [
+    "TTOOOTT",
+    "TUADAUT",
+    "OACCCAO",
+    "ODCXCDO",
+    "OACCCAO",
+    "TUADAUT",
+    "TTOOOTT"
+  ],
+  "key": {
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "O": {
+      "item": "mekanism:ingot_refined_obsidian"
+    },
+    "U": {
+      "item": "oritech:unholy_intelligence"
+    },
+    "A": {
+      "item": "oritech:super_ai_chip"
+    },
+    "D": {
+      "item": "oritech:duratium_ingot"
+    },
+    "C": {
+      "item": "oritech:reinforced_carbon_sheet"
+    },
+    "X": {
+      "item": "oritech:overcharged_crystal"
+    }
+  },
+  "result": {
+    "id": "bertieprogression:sentient_casing",
+    "count": 1
+  }
+}

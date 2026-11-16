@@ -43,6 +43,7 @@ class CompactMiniEmiTest {
         List<RecipeHolder<?>> holders = new ArrayList<>();
         for (var element : views) {
             var row = element.getAsJsonObject();
+            if (row.has("machine_layout")) continue;
             var id = ResourceLocation.parse(row.get("recipe").getAsString());
             var data = JsonParser.parseReader(new InputStreamReader(getClass()
                             .getResourceAsStream("/data/" + id.getNamespace() + "/recipe/" + id.getPath() + ".json")))

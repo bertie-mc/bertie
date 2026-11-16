@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersknives:netherite_iron_knife"
+  },
+  "addition": {
+    "item": "advancednetherite:netherite_gold_ingot"
+  },
+  "result": {
+    "id": "farmersknives:netherite_gold_knife"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "advancednetherite"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:netherite_gold_knife"
+    }
+  ]
+}

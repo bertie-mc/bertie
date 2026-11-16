@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:waxed_weathered_cut_copper"
+    }
+  },
+  "result": {
+    "id": "minecraft:waxed_weathered_chiseled_copper",
+    "count": 5
+  }
+}

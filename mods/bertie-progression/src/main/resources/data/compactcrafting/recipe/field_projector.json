@@ -26,7 +26,7 @@
       "item": "compactmachines:shrinking_module"
     },
     "F": {
-      "item": "mekanism:steel_casing"
+      "item": "bertieprogression:sentient_casing"
     },
     "G": {
       "item": "compactmachines:enlarging_module"
@@ -34,7 +34,7 @@
   },
   "result": {
     "id": "compactcrafting:field_projector",
-    "count": 1
+    "count": 4
   },
   "tier": 3,
   "neoforge:conditions": [

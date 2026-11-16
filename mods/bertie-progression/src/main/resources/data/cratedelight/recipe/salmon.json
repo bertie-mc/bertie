@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "crabbersdelight:salmon_barrel"
+      "type": "neoforge:false"
     }
-  ],
-  "result": {
-    "count": 9,
-    "id": "minecraft:salmon"
-  }
+  ]
 }

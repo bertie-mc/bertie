@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "burnt:burnt_bamboo_planks"
+    }
+  },
+  "result": {
+    "id": "burnt:burnt_bamboo_mosaic_planks",
+    "count": 8
+  }
+}

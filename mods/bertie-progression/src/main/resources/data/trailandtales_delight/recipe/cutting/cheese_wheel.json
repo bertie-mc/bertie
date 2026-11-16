@@ -1,19 +1,7 @@
 {
-  "type": "farmersdelight:cutting",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "brewinandchewin:flaxen_cheese_wheel"
+      "type": "neoforge:false"
     }
-  ],
-  "result": [
-    {
-      "item": {
-        "count": 4,
-        "id": "brewinandchewin:flaxen_cheese_wedge"
-      }
-    }
-  ],
-  "tool": {
-    "tag": "c:tools/knife"
-  }
+  ]
 }

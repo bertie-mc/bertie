@@ -7,7 +7,7 @@
 		id: "minecraft:totem_of_undying"
 	}
 	id: "4C00000000000000"
-	order_index: 11
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
@@ -2664,12 +2664,15 @@
 		}
 		{
 			icon: {
-				id: "magic_coins:prosperity_amulet"
+				components: {
+					"ftbquests:missing_item": "magic_coins:prosperity_amulet"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "4C000000000000D1"
 			tasks: [{
 				id: "4C000000010000D1"
-				item: { count: 1, id: "magic_coins:prosperity_amulet" }
+				item: { components: { "ftbquests:missing_item": "magic_coins:prosperity_amulet" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -4614,12 +4617,25 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "darkdoppelganger:doppel_portal"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "darkdoppelganger:doppelganger_ring"
 			}
 			id: "4C0000000000016C"
 			tasks: [{
 				id: "4C0000000100016C"
-				item: { count: 1, id: "darkdoppelganger:doppelganger_ring" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "darkdoppelganger:doppel_portal", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "darkdoppelganger:doppelganger_ring" }
 				type: "item"
 			}]
 			x: 43.0d
@@ -5082,12 +5098,15 @@
 		}
 		{
 			icon: {
-				id: "irons_spellbooks:enchanted_ward_amulet"
+				components: {
+					"ftbquests:missing_item": "irons_spellbooks:enchanted_ward_amulet"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "4C00000000000190"
 			tasks: [{
 				id: "4C00000001000190"
-				item: { count: 1, id: "irons_spellbooks:enchanted_ward_amulet" }
+				item: { components: { "ftbquests:missing_item": "irons_spellbooks:enchanted_ward_amulet" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -5329,12 +5348,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 1b
+					}
+				}
 				id: "aces_spell_utils:example_imbue_curio"
 			}
 			id: "4C000000000001A8"
 			tasks: [{
 				id: "4C000000010001A8"
-				item: { count: 1, id: "aces_spell_utils:example_imbue_curio" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "aces_spell_utils:example_imbue_curio" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -5342,12 +5369,25 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "irons_spellbooks:raise_dead"
+							index: 0
+							level: 10
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "aces_spell_utils:example_curio"
 			}
 			id: "4C000000000001A9"
 			tasks: [{
 				id: "4C000000010001A9"
-				item: { count: 1, id: "aces_spell_utils:example_curio" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "irons_spellbooks:raise_dead", index: 0, level: 10, locked: 1b }], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "aces_spell_utils:example_curio" }
 				type: "item"
 			}]
 			x: 50.0d
@@ -5459,12 +5499,25 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "discerning_the_eldritch:conjure_gaoler"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:amulet_of_sculk_treasure"
 			}
 			id: "4C000000000001B2"
 			tasks: [{
 				id: "4C000000010001B2"
-				item: { count: 1, id: "discerning_the_eldritch:amulet_of_sculk_treasure" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "discerning_the_eldritch:conjure_gaoler", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:amulet_of_sculk_treasure" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -5914,12 +5967,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:netherite_spell_book"
 			}
 			id: "4C000000000001D7"
 			tasks: [{
 				id: "4C000000010001D7"
-				item: { count: 1, id: "irons_spellbooks:netherite_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:netherite_spell_book" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -5927,12 +5988,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 8
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
 			id: "4C000000000001D8"
 			tasks: [{
 				id: "4C000000010001D8"
-				item: { count: 1, id: "irons_spellbooks:gold_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:gold_spell_book" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -5940,12 +6009,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:blaze_spell_book"
 			}
 			id: "4C000000000001D9"
 			tasks: [{
 				id: "4C000000010001D9"
-				item: { count: 1, id: "irons_spellbooks:blaze_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:blaze_spell_book" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -5953,12 +6030,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:dragonskin_spell_book"
 			}
 			id: "4C000000000001DA"
 			tasks: [{
 				id: "4C000000010001DA"
-				item: { count: 1, id: "irons_spellbooks:dragonskin_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:dragonskin_spell_book" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -5966,12 +6051,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:druidic_spell_book"
 			}
 			id: "4C000000000001DB"
 			tasks: [{
 				id: "4C000000010001DB"
-				item: { count: 1, id: "irons_spellbooks:druidic_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:druidic_spell_book" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -5979,12 +6072,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:diamond_spell_book"
 			}
 			id: "4C000000000001DC"
 			tasks: [{
 				id: "4C000000010001DC"
-				item: { count: 1, id: "irons_spellbooks:diamond_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:diamond_spell_book" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -5992,12 +6093,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 5
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:copper_spell_book"
 			}
 			id: "4C000000000001DD"
 			tasks: [{
 				id: "4C000000010001DD"
-				item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 5, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:copper_spell_book" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -6005,12 +6114,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:ice_spell_book"
 			}
 			id: "4C000000000001DE"
 			tasks: [{
 				id: "4C000000010001DE"
-				item: { count: 1, id: "irons_spellbooks:ice_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:ice_spell_book" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -6018,12 +6135,39 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [
+							{
+								id: "irons_spellbooks:fang_strike"
+								index: 0
+								level: 6
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:fang_ward"
+								index: 1
+								level: 4
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:summon_vex"
+								index: 2
+								level: 4
+								locked: 1b
+							}
+						]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:evoker_spell_book"
 			}
 			id: "4C000000000001DF"
 			tasks: [{
 				id: "4C000000010001DF"
-				item: { count: 1, id: "irons_spellbooks:evoker_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:fang_strike", index: 0, level: 6, locked: 1b }, { id: "irons_spellbooks:fang_ward", index: 1, level: 4, locked: 1b }, { id: "irons_spellbooks:summon_vex", index: 2, level: 4, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:evoker_spell_book" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -6031,12 +6175,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 6
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:iron_spell_book"
 			}
 			id: "4C000000000001E0"
 			tasks: [{
 				id: "4C000000010001E0"
-				item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 6, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:iron_spell_book" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -6044,12 +6196,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:legendary_spell_book"
 			}
 			id: "4C000000000001E1"
 			tasks: [{
 				id: "4C000000010001E1"
-				item: { count: 1, id: "irons_spellbooks:legendary_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:legendary_spell_book" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -6057,12 +6217,50 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:raise_dead": 2
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [
+							{
+								id: "irons_spellbooks:blood_slash"
+								index: 0
+								level: 5
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:blood_step"
+								index: 1
+								level: 5
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:ray_of_siphoning"
+								index: 2
+								level: 5
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:blaze_storm"
+								index: 3
+								level: 5
+								locked: 1b
+							}
+						]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:necronomicon_spell_book"
 			}
 			id: "4C000000000001E2"
 			tasks: [{
 				id: "4C000000010001E2"
-				item: { count: 1, id: "irons_spellbooks:necronomicon_spell_book" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:raise_dead": 2 } }, "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:blood_slash", index: 0, level: 5, locked: 1b }, { id: "irons_spellbooks:blood_step", index: 1, level: 5, locked: 1b }, { id: "irons_spellbooks:ray_of_siphoning", index: 2, level: 5, locked: 1b }, { id: "irons_spellbooks:blaze_storm", index: 3, level: 5, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:necronomicon_spell_book" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -6070,12 +6268,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 8
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:rotten_spell_book"
 			}
 			id: "4C000000000001E3"
 			tasks: [{
 				id: "4C000000010001E3"
-				item: { count: 1, id: "irons_spellbooks:rotten_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:rotten_spell_book" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -6083,12 +6289,26 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:blood_slash": 1
+							"irons_spellbooks:blood_step": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:cursed_doll_spell_book"
 			}
 			id: "4C000000000001E4"
 			tasks: [{
 				id: "4C000000010001E4"
-				item: { count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:blood_slash": 1, "irons_spellbooks:blood_step": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:cursed_doll_spell_book" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -6096,12 +6316,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:villager_spell_book"
 			}
 			id: "4C000000000001E5"
 			tasks: [{
 				id: "4C000000010001E5"
-				item: { count: 1, id: "irons_spellbooks:villager_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:villager_spell_book" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -6109,12 +6337,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 0
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "irons_spellbooks:wimpy_spell_book"
 			}
 			id: "4C000000000001E6"
 			tasks: [{
 				id: "4C000000010001E6"
-				item: { count: 1, id: "irons_spellbooks:wimpy_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 0, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:wimpy_spell_book" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -6122,12 +6358,51 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [
+							{
+								id: "irons_spellbooks:sculk_tentacles"
+								index: 0
+								level: 3
+								locked: 1b
+							}
+							{
+								id: "discerning_the_eldritch:conjure_forsaken_aid"
+								index: 1
+								level: 3
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:sonic_boom"
+								index: 2
+								level: 3
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:counterspell"
+								index: 3
+								level: 1
+								locked: 1b
+							}
+							{
+								id: "irons_spellbooks:abyssal_shroud"
+								index: 4
+								level: 2
+								locked: 1b
+							}
+						]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:black_book_spellbook"
 			}
 			id: "4C000000000001E7"
 			tasks: [{
 				id: "4C000000010001E7"
-				item: { count: 1, id: "discerning_the_eldritch:black_book_spellbook" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "irons_spellbooks:sculk_tentacles", index: 0, level: 3, locked: 1b }, { id: "discerning_the_eldritch:conjure_forsaken_aid", index: 1, level: 3, locked: 1b }, { id: "irons_spellbooks:sonic_boom", index: 2, level: 3, locked: 1b }, { id: "irons_spellbooks:counterspell", index: 3, level: 1, locked: 1b }, { id: "irons_spellbooks:abyssal_shroud", index: 4, level: 2, locked: 1b } ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:black_book_spellbook" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -6135,12 +6410,27 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"discerning_the_eldritch:blades_of_rancor": 1
+							"discerning_the_eldritch:vein_ripper": 1
+							"irons_spellbooks:acupuncture": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:diary_of_decay"
 			}
 			id: "4C000000000001E8"
 			tasks: [{
 				id: "4C000000010001E8"
-				item: { count: 1, id: "discerning_the_eldritch:diary_of_decay" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "discerning_the_eldritch:blades_of_rancor": 1, "discerning_the_eldritch:vein_ripper": 1, "irons_spellbooks:acupuncture": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:diary_of_decay" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -6148,12 +6438,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 8
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:frozen_folio"
 			}
 			id: "4C000000000001E9"
 			tasks: [{
 				id: "4C000000010001E9"
-				item: { count: 1, id: "discerning_the_eldritch:frozen_folio" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:frozen_folio" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -6161,12 +6459,25 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "discerning_the_eldritch:guardians_gaze"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:guardian_guidebook"
 			}
 			id: "4C000000000001EA"
 			tasks: [{
 				id: "4C000000010001EA"
-				item: { count: 1, id: "discerning_the_eldritch:guardian_guidebook" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "discerning_the_eldritch:guardians_gaze", index: 0, level: 1, locked: 1b }], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:guardian_guidebook" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -6174,12 +6485,26 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:thunderstorm": 1
+							"irons_spellbooks:volt_strike": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:tempestuous_tome"
 			}
 			id: "4C000000000001EB"
 			tasks: [{
 				id: "4C000000010001EB"
-				item: { count: 1, id: "discerning_the_eldritch:tempestuous_tome" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:thunderstorm": 1, "irons_spellbooks:volt_strike": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:tempestuous_tome" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -6187,12 +6512,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 13
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "discerning_the_eldritch:the_apocrypha_spellbook"
 			}
 			id: "4C000000000001EC"
 			tasks: [{
 				id: "4C000000010001EC"
-				item: { count: 1, id: "discerning_the_eldritch:the_apocrypha_spellbook" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 13, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:the_apocrypha_spellbook" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -6200,12 +6533,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 14
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:abyss_spell_book"
 			}
 			id: "4C000000000001ED"
 			tasks: [{
 				id: "4C000000010001ED"
-				item: { count: 1, id: "cataclysm_spellbooks:abyss_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 14, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:abyss_spell_book" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -6213,12 +6554,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:codex_of_malice_spell_book"
 			}
 			id: "4C000000000001EE"
 			tasks: [{
 				id: "4C000000010001EE"
-				item: { count: 1, id: "cataclysm_spellbooks:codex_of_malice_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:codex_of_malice_spell_book" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -6226,12 +6575,51 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [
+							{
+								id: "cataclysm_spellbooks:monolith_crash"
+								index: 0
+								level: 5
+								locked: 1b
+							}
+							{
+								id: "cataclysm_spellbooks:desert_winds"
+								index: 1
+								level: 3
+								locked: 1b
+							}
+							{
+								id: "cataclysm_spellbooks:sandstorm"
+								index: 2
+								level: 3
+								locked: 1b
+							}
+							{
+								id: "cataclysm_spellbooks:thoths_witness"
+								index: 3
+								level: 1
+								locked: 1b
+							}
+							{
+								id: "cataclysm_spellbooks:pharaohs_wrath"
+								index: 4
+								level: 3
+								locked: 1b
+							}
+						]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:desert_spell_book"
 			}
 			id: "4C000000000001EF"
 			tasks: [{
 				id: "4C000000010001EF"
-				item: { count: 1, id: "cataclysm_spellbooks:desert_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "cataclysm_spellbooks:monolith_crash", index: 0, level: 5, locked: 1b }, { id: "cataclysm_spellbooks:desert_winds", index: 1, level: 3, locked: 1b }, { id: "cataclysm_spellbooks:sandstorm", index: 2, level: 3, locked: 1b }, { id: "cataclysm_spellbooks:thoths_witness", index: 3, level: 1, locked: 1b }, { id: "cataclysm_spellbooks:pharaohs_wrath", index: 4, level: 3, locked: 1b } ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:desert_spell_book" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -6239,12 +6627,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:disc_driver"
 			}
 			id: "4C000000000001F0"
 			tasks: [{
 				id: "4C000000010001F0"
-				item: { count: 1, id: "cataclysm_spellbooks:disc_driver" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:disc_driver" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -6252,12 +6648,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:ignis_spell_book"
 			}
 			id: "4C000000000001F1"
 			tasks: [{
 				id: "4C000000010001F1"
-				item: { count: 1, id: "cataclysm_spellbooks:ignis_spell_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:ignis_spell_book" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -6265,12 +6669,33 @@
 		}
 		{
 			icon: {
+				components: {
+					"azurelib:az_id": [I;
+						1216333717
+						-1322564333
+						-1580429012
+						-1826877100
+					]
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:shockwave": 1
+							"irons_spellbooks:thunderstorm": 1
+							"irons_spellbooks:volt_strike": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:energized_core_spellbook"
 			}
 			id: "4C000000000001F2"
 			tasks: [{
 				id: "4C000000010001F2"
-				item: { count: 1, id: "hazennstuff:energized_core_spellbook" }
+				item: { components: { "azurelib:az_id": [I; -890149638, -152156742, -2082411364, 1146231502 ], "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:shockwave": 1, "irons_spellbooks:thunderstorm": 1, "irons_spellbooks:volt_strike": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 10, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:energized_core_spellbook" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -6278,12 +6703,30 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"hazennstuff:golden_shower": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "hazennstuff:golden_shower"
+							index: 0
+							level: 3
+							locked: 1b
+						}]
+						maxSpells: 8
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:golden_shower_spellbook"
 			}
 			id: "4C000000000001F3"
 			tasks: [{
 				id: "4C000000010001F3"
-				item: { count: 1, id: "hazennstuff:golden_shower_spellbook" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "hazennstuff:golden_shower": 1 } }, "irons_spellbooks:spell_container": { data: [{ id: "hazennstuff:golden_shower", index: 0, level: 3, locked: 1b }], maxSpells: 8, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:golden_shower_spellbook" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -6291,12 +6734,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "aces_spell_utils:example_passive_ability_spellbook"
 			}
 			id: "4C000000000001F4"
 			tasks: [{
 				id: "4C000000010001F4"
-				item: { count: 1, id: "aces_spell_utils:example_passive_ability_spellbook" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "aces_spell_utils:example_passive_ability_spellbook" }
 				type: "item"
 			}]
 			x: 1.0d
@@ -6304,12 +6755,26 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:sculk_tentacles": 1
+							"irons_spellbooks:sonic_boom": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "darkermagic:volume_of_the_deep"
 			}
 			id: "4C000000000001F5"
 			tasks: [{
 				id: "4C000000010001F5"
-				item: { count: 1, id: "darkermagic:volume_of_the_deep" }
+				item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:sculk_tentacles": 1, "irons_spellbooks:sonic_boom": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "darkermagic:volume_of_the_deep" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -6317,12 +6782,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "ice_and_fire_spellbooks:dragonmancers_oathbook"
 			}
 			id: "4C000000000001F6"
 			tasks: [{
 				id: "4C000000010001F6"
-				item: { count: 1, id: "ice_and_fire_spellbooks:dragonmancers_oathbook" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "ice_and_fire_spellbooks:dragonmancers_oathbook" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -6330,12 +6803,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 13
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "magic_of_color:bedrock_book"
 			}
 			id: "4C000000000001F7"
 			tasks: [{
 				id: "4C000000010001F7"
-				item: { count: 1, id: "magic_of_color:bedrock_book" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 13, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "magic_of_color:bedrock_book" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -8098,12 +8579,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"azurelib:az_id": [I;
+						-1218224643
+						1257916427
+						-1641874934
+						1712204977
+					]
+				}
 				id: "hazennstuff:arbitrium_wings"
 			}
 			id: "4C00000000000283"
 			tasks: [{
 				id: "4C00000001000283"
-				item: { count: 1, id: "hazennstuff:arbitrium_wings" }
+				item: { components: { "azurelib:az_id": [I; -1622236996, -1696512226, -1932661297, -668689506 ] }, count: 1, id: "hazennstuff:arbitrium_wings" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -8488,12 +8977,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"azurelib:az_id": [I;
+						339488057
+						-813021765
+						-1495123632
+						691176581
+					]
+				}
 				id: "discerning_the_eldritch:kings_effigy"
 			}
 			id: "4C000000000002A7"
 			tasks: [{
 				id: "4C000000010002A7"
-				item: { count: 1, id: "discerning_the_eldritch:kings_effigy" }
+				item: { components: { "azurelib:az_id": [I; 17826703, 872040320, -1499214712, 1125422286 ] }, count: 1, id: "discerning_the_eldritch:kings_effigy" }
 				type: "item"
 			}]
 			x: 41.0d

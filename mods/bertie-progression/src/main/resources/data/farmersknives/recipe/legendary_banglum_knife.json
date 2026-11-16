@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "farmersknives:banglum_knife"
+  },
+  "addition": {
+    "item": "mythicmetals:banglum_chunk"
+  },
+  "result": {
+    "id": "farmersknives:legendary_banglum_knife"
+  },
+  "template": {
+    "item": "mythicmetals:legendary_banglum_smithing_template"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythicmetals"
+    },
+    {
+      "type": "neoforge:item_exists",
+      "item": "farmersknives:legendary_banglum_knife"
+    }
+  ]
+}

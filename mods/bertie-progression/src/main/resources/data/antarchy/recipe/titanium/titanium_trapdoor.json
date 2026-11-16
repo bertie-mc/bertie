@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "redstone",
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
   "key": {
-    "#": {
+    "T": {
       "item": "anvilcraft:titanium_ingot"
     }
   },
-  "pattern": [
-    "##",
-    "##"
-  ],
   "result": {
-    "id": "antarchy:titanium_trapdoor"
+    "id": "antarchy:titanium_trapdoor",
+    "count": 2
   }
 }

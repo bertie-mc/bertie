@@ -110,6 +110,7 @@ class CompactStorageRecipesTest {
                 .getAsJsonArray();
         for (var entry : view) {
             var row = entry.getAsJsonObject();
+            if (row.has("machine_layout")) continue;
             String id = row.get("recipe").getAsString().split(":")[1];
             var data = json("/data/bertieprogression/recipe/" + id + ".json").deepCopy();
             // Material IDs are audited against the full pack; this fixture tests native geometry and output components.

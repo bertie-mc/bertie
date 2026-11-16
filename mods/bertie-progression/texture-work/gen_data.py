@@ -5947,4 +5947,7 @@ _apply_cybernetics_refining(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 from compact_storage_recipes import apply as _apply_compact_storage
 _apply_compact_storage(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 
+from reviewed_progression_recipes import apply as _apply_reviewed_progression
+_apply_reviewed_progression(ROOT, _recipe_src, _Path(INSTANCE_MODS))
+
 print(f"Wrote {len(written)} files under {RES}")

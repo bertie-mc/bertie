@@ -1,0 +1,253 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "quark:ancient_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:andesite_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:blackstone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:black_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:blue_nether_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:blue_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:brown_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:calcite_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "pastel:calcite_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:cobblestone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:cyan_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:diorite_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:dirt_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:dripstone_block_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:dripstone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:duskbound_block_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:granite_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:gray_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:green_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:iron_plate_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:jasper_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:jasper_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:light_blue_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:light_gray_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:limestone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:limestone_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:lime_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:magenta_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:midori_block_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:mossy_cobblestone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:myalite_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:myalite_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:netherrack_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:orange_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:permafrost_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:permafrost_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:pink_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_calcite_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_dripstone_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_jasper_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_limestone_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_myalite_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:polished_shale_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:purple_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:raw_copper_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:raw_gold_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:raw_iron_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:red_sandstone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:red_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:rusty_iron_plate_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:sandstone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:shale_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:shale_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:smooth_soul_sandstone_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:soul_sandstone_bricks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:soul_sandstone_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:thatch_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:white_shingles_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:yellow_shingles_stairs",
+      "required": false
+    }
+  ]
+}

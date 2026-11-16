@@ -1,16 +1,15 @@
 {
-	icon: "avaritia:end_crafting_table"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "concordance"
 	group: ""
 	id: "5B00000000000000"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:nether_eye"
 			}
@@ -29,8 +28,8 @@
 			y: -4.627d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:cold_eye"
 			}
@@ -49,8 +48,8 @@
 			y: -5.5d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:old_eye"
 			}
@@ -69,8 +68,8 @@
 			y: -3.602d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:magical_eye"
 			}
@@ -89,8 +88,8 @@
 			y: -2.285d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:lost_eye"
 			}
@@ -109,8 +108,8 @@
 			y: 0.783d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:cursed_eye"
 			}
@@ -129,8 +128,8 @@
 			y: 2.285d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:corrupted_eye"
 			}
@@ -149,8 +148,8 @@
 			y: 4.627d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:exotic_eye"
 			}
@@ -169,8 +168,8 @@
 			y: 3.602d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:cryptic_eye"
 			}
@@ -189,8 +188,8 @@
 			y: 5.277d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "endrem:evil_eye"
 			}
@@ -209,9 +208,22 @@
 			y: 5.5d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: [
+				"5B00000000000002"
+				"5B00000000000003"
+				"5B00000000000004"
+				"5B00000000000007"
+				"5B00000000000009"
+				"5B0000000000000B"
+				"5B0000000000000D"
+				"5B0000000000000E"
+				"5B00000000000010"
+				"5B00000000000011"
+				"5B00000000000090"
+				"5B00000000000091"
+			]
 			hide_until_deps_complete: false
-			dependencies: ["5B00000000000002", "5B00000000000003", "5B00000000000004", "5B00000000000007", "5B00000000000009", "5B0000000000000B", "5B0000000000000D", "5B0000000000000E", "5B00000000000010", "5B00000000000011", "5B00000000000090", "5B00000000000091"]
+			hide_until_deps_visible: false
 			icon: {
 				id: "minecraft:end_portal_frame"
 			}
@@ -233,10 +245,15 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B00000000000012"]
-			icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "minecraft:textures/entity/end_portal.png"}}
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				components: {
+					"ftbquests:icon": "minecraft:textures/entity/end_portal.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "5B00000000000013"
 			rewards: [{
 				id: "5B00000002000013"
@@ -245,7 +262,12 @@
 			}]
 			tasks: [{
 				dimension: "minecraft:the_end"
-				icon: {"id": "ftbquests:custom_icon", "components": {"ftbquests:icon": "minecraft:textures/entity/end_portal.png"}}
+				icon: {
+					components: {
+						"ftbquests:icon": "minecraft:textures/entity/end_portal.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
 				id: "5B00000001000013"
 				type: "dimension"
 			}]
@@ -253,9 +275,9 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B00000000000013"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "minecraft:dragon_head"
 			}
@@ -278,9 +300,9 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B00000000000014"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "minecraft:dragon_egg"
 			}
@@ -299,9 +321,9 @@
 			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B00000000000015"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "dracolotl:bucket_of_dracolotl"
 			}
@@ -321,8 +343,8 @@
 		}
 		{
 			dependencies: ["5B0000000000009A"]
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "apotheosis:ender_gem_case"
 			}
@@ -342,8 +364,8 @@
 		}
 		{
 			dependencies: ["5B0000000000009A"]
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "apothic_enchanting:ender_library"
 			}
@@ -362,278 +384,305 @@
 			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -5.277d
-			x: 5.95d
+			hide_until_deps_visible: false
+			icon: {
+				id: "endrem:trial_eye"
+			}
 			id: "5B00000000000090"
-			icon: { id: "endrem:trial_eye" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000090"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "endrem:trial_eye" }
+				item: { count: 1, id: "endrem:trial_eye" }
 				type: "item"
 			}]
+			x: 5.95d
+			y: -5.277d
 		}
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -0.783d
-			x: 2.056d
+			hide_until_deps_visible: false
+			icon: {
+				id: "endrem:sculk_eye"
+			}
 			id: "5B00000000000091"
-			icon: { id: "endrem:sculk_eye" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000091"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "endrem:sculk_eye" }
+				item: { count: 1, id: "endrem:sculk_eye" }
 				type: "item"
 			}]
+			x: 2.056d
+			y: -0.783d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -1.5d
-			x: 12.0d
 			dependencies: ["5B00000000000014"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:end_stone"
+			}
 			id: "5B00000000000092"
-			icon: { id: "minecraft:end_stone" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000092"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "minecraft:end_stone" }
+				item: { count: 1, id: "minecraft:end_stone" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -3.0d
-			x: 13.5d
 			dependencies: ["5B00000000000092"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:end_dust"
+			}
 			id: "5B00000000000093"
-			icon: { id: "anvilcraft:end_dust" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000093"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:end_dust" }
+				item: { count: 1, id: "anvilcraft:end_dust" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5B00000000000095"]
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: -3.0d
-			x: 16.5d
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:levitation_powder"
+			}
 			id: "5B00000000000094"
-			icon: { id: "anvilcraft:levitation_powder" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000094"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:levitation_powder" }
+				item: { count: 1, id: "anvilcraft:levitation_powder" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
+			x: 16.5d
 			y: -3.0d
-			x: 15.0d
+		}
+		{
 			dependencies: ["5B00000000000093"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:titanium_nugget"
+			}
 			id: "5B00000000000095"
-			icon: { id: "anvilcraft:titanium_nugget" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000095"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:titanium_nugget" }
+				item: { count: 1, id: "anvilcraft:titanium_nugget" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -1.5d
-			x: 16.5d
-			dependencies: ["5B00000000000095"]
-			id: "5B00000000000096"
-			icon: { id: "anvilcraft:titanium_ingot" }
-			tasks: [{
-				id: "5B00000001000096"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:titanium_ingot" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000014"]
-			y: 1.5d
-			x: 12.0d
-			id: "5B00000000000097"
-			icon: { id: "minecraft:dragon_breath" }
-			tasks: [{
-				id: "5B00000001000097"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "minecraft:dragon_breath" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000097"]
-			y: 1.5d
-			x: 13.5d
-			id: "5B00000000000098"
-			icon: { id: "apothic_enchanting:infused_breath" }
-			tasks: [{
-				id: "5B00000001000098"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "apothic_enchanting:infused_breath" }
-				type: "item"
-			}]
-		}
-		{
-			dependencies: ["5B00000000000098", "5B00000000000092"]
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -1.5d
-			x: 13.5d
-			id: "5B0000000000009A"
-			icon: { id: "apothic_enchanting:draconic_endshelf" }
-			tasks: [{
-				id: "5B0000000100009A"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "apothic_enchanting:draconic_endshelf" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000014"]
-			y: 1.5d
-			x: 9.0d
-			id: "5B0000000000009C"
-			icon: { id: "minecraft:purpur_block" }
-			tasks: [{
-				id: "5B0000000100009C"
-				type: "structure"
-				structure: "minecraft:end_city"
-				icon: { id: "minecraft:purpur_block" }
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B0000000000009C"]
-			y: 3.0d
-			x: 10.5d
-			id: "5B0000000000009D"
-			icon: { id: "minecraft:shulker_shell" }
-			tasks: [{
-				id: "5B0000000100009D"
-				count: 2L
-				consume_items: false
-				item: { count: 1 id: "minecraft:shulker_shell" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B0000000000009D"]
-			y: 4.5d
-			x: 10.5d
-			id: "5B0000000000009E"
-			icon: { id: "minecraft:shulker_box" }
-			tasks: [{
-				id: "5B0000000100009E"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "minecraft:shulker_box" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B0000000000009E"]
-			y: 6.0d
-			x: 12.0d
-			id: "5B0000000000009F"
-			icon: { id: "anvilcraft:nesting_shulker_box" }
-			tasks: [{
-				id: "5B0000000100009F"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:nesting_shulker_box" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B0000000000009F"]
-			y: 7.5d
-			x: 13.5d
-			id: "5B000000000000A0"
-			icon: { id: "anvilcraft:over_nesting_shulker_box" }
-			tasks: [{
-				id: "5B000000010000A0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:over_nesting_shulker_box" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A0"]
-			y: 7.5d
 			x: 15.0d
-			id: "5B000000000000A1"
-			icon: { id: "anvilcraft:supercritical_nesting_shulker_box" }
-			tasks: [{
-				id: "5B000000010000A1"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:supercritical_nesting_shulker_box" }
-				type: "item"
-			}]
+			y: -3.0d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B00000000000095"]
 			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A1"]
-			y: 7.5d
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:titanium_ingot"
+			}
+			id: "5B00000000000096"
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000096"
+				item: { count: 1, id: "anvilcraft:titanium_ingot" }
+				type: "item"
+			}]
 			x: 16.5d
-			id: "5B000000000000A2"
-			icon: { id: "anvilcraft:space_overcompressor" }
-			tasks: [{
-				id: "5B000000010000A2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:space_overcompressor" }
-				type: "item"
-			}]
+			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B00000000000014"]
 			hide_until_deps_complete: false
-			dependencies: ["3C00000000000014", "3C00000000000011"]
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:dragon_breath"
+			}
+			id: "5B00000000000097"
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000097"
+				item: { count: 1, id: "minecraft:dragon_breath" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000097"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "apothic_enchanting:infused_breath"
+			}
+			id: "5B00000000000098"
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000098"
+				item: { count: 1, id: "apothic_enchanting:infused_breath" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5B00000000000098"
+				"5B00000000000092"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "apothic_enchanting:draconic_endshelf"
+			}
+			id: "5B0000000000009A"
+			tasks: [{
+				consume_items: false
+				id: "5B0000000100009A"
+				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000014"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:purpur_block"
+			}
+			id: "5B0000000000009C"
+			tasks: [{
+				icon: {
+					id: "minecraft:purpur_block"
+				}
+				id: "5B0000000100009C"
+				structure: "minecraft:end_city"
+				type: "structure"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B0000000000009C"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:shulker_shell"
+			}
+			id: "5B0000000000009D"
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "5B0000000100009D"
+				item: { count: 1, id: "minecraft:shulker_shell" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B0000000000009D"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:shulker_box"
+			}
+			id: "5B0000000000009E"
+			tasks: [{
+				consume_items: false
+				id: "5B0000000100009E"
+				item: { count: 1, id: "minecraft:shulker_box" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B0000000000009E"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:nesting_shulker_box"
+			}
+			id: "5B0000000000009F"
+			tasks: [{
+				consume_items: false
+				id: "5B0000000100009F"
+				item: { count: 1, id: "anvilcraft:nesting_shulker_box" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B0000000000009F"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:over_nesting_shulker_box"
+			}
+			id: "5B000000000000A0"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000A0"
+				item: { count: 1, id: "anvilcraft:over_nesting_shulker_box" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5B000000000000A0"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:supercritical_nesting_shulker_box"
+			}
+			id: "5B000000000000A1"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000A1"
+				item: { count: 1, id: "anvilcraft:supercritical_nesting_shulker_box" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5B000000000000A1"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:space_overcompressor"
+			}
+			id: "5B000000000000A2"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000A2"
+				item: { count: 1, id: "anvilcraft:space_overcompressor" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3C00000000000014"
+				"3C00000000000011"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
 			icon: {
 				id: "apothic_enchanting:raven_enchanting_table"
 			}
@@ -652,834 +701,1082 @@
 			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B00000000000094"]
-			y: -3.0d
-			x: 18.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "pastel:perturbed_eye"
+			}
 			id: "5B000000000000A3"
-			icon: { id: "pastel:perturbed_eye" }
 			tasks: [{
+				consume_items: false
 				id: "5B000000010000A3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "pastel:perturbed_eye" }
+				item: { count: 1, id: "pastel:perturbed_eye" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A3"]
-			y: -4.5d
 			x: 18.0d
-			id: "5B000000000000A4"
-			icon: { id: "pastel:cracked_end_portal_frame" }
-			tasks: [{
-				id: "5B000000010000A4"
-				count: 12L
-				consume_items: false
-				item: { count: 1 id: "pastel:cracked_end_portal_frame" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A4"]
 			y: -3.0d
-			x: 19.5d
-			id: "5B000000000000A5"
-			icon: { id: "minecraft:end_portal_frame" }
+		}
+		{
+			dependencies: ["5B000000000000A3"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "pastel:cracked_end_portal_frame"
+			}
+			id: "5B000000000000A4"
 			tasks: [{
-				id: "5B000000010000A5"
+				consume_items: false
 				count: 12L
-				consume_items: false
-				item: { count: 1 id: "minecraft:end_portal_frame" }
+				id: "5B000000010000A4"
+				item: { count: 1, id: "pastel:cracked_end_portal_frame" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -4.5d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B000000000000A4"]
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "5B000000000000A5"
+			tasks: [{
+				consume_items: false
+				count: 12L
+				id: "5B000000010000A5"
+				item: { count: 1, id: "minecraft:end_portal_frame" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -3.0d
+		}
+		{
 			dependencies: ["5B0000000000009D"]
-			y: 6.0d
-			x: 13.5d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "l2complements:captured_shulker_bullet"
+			}
 			id: "5B000000000000A6"
-			icon: { id: "l2complements:captured_shulker_bullet" }
 			tasks: [{
+				consume_items: false
 				id: "5B000000010000A6"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "l2complements:captured_shulker_bullet" }
+				item: { count: 1, id: "l2complements:captured_shulker_bullet" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 6.0d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
 			dependencies: ["5B000000000000A6"]
-			y: 6.0d
-			x: 18.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "l2complements:shulkerate_ingot"
+			}
 			id: "5B000000000000A7"
-			icon: { id: "l2complements:shulkerate_ingot" }
 			tasks: [{
+				consume_items: false
 				id: "5B000000010000A7"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "l2complements:shulkerate_ingot" }
+				item: { count: 1, id: "l2complements:shulkerate_ingot" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A7"]
-			y: 7.5d
 			x: 18.0d
-			id: "5B000000000000A8"
-			icon: { id: "l2complements:shulkerate_ingot" }
-			tasks: [{
-				id: "5B000000010000A8"
-				count: 64L
-				consume_items: false
-				item: { count: 1 id: "l2complements:shulkerate_ingot" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A2"]
-			y: 9.0d
-			x: 16.5d
-			id: "5B000000000000A9"
-			icon: { id: "refinedstorage:portable_grid" }
-			tasks: [{
-				id: "5B000000010000A9"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "refinedstorage:portable_grid" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A2"]
-			y: 9.0d
-			x: 15.0d
-			id: "5B000000000000AA"
-			icon: { id: "universalgrid:wireless_universal_grid" }
-			tasks: [{
-				id: "5B000000010000AA"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "universalgrid:wireless_universal_grid" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000014"]
-			y: 1.5d
-			x: 10.5d
-			id: "5B000000000000AB"
-			icon: { id: "alexsmobs:maggot" }
-			tasks: [{
-				id: "5B000000010000AB"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:maggot" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AB"]
-			y: 3.0d
-			x: 12.0d
-			id: "5B000000000000AC"
-			icon: { id: "alexsmobs:mosquito_proboscis" }
-			tasks: [{
-				id: "5B000000010000AC"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:mosquito_proboscis" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AC"]
-			y: 4.5d
-			x: 13.5d
-			id: "5B000000000000AD"
-			icon: { id: "alexsmobs:mosquito_larva" }
-			tasks: [{
-				id: "5B000000010000AD"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:mosquito_larva" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AD"]
-			y: 3.0d
-			x: 13.5d
-			id: "5B000000000000AE"
-			icon: { id: "alexsmobs:capsid" }
-			tasks: [{
-				id: "5B000000010000AE"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:capsid" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AE"]
-			y: 3.0d
-			x: 15.0d
-			id: "5B000000000000AF"
-			icon: { id: "alexsmobs:mysterious_worm" }
-			tasks: [{
-				id: "5B000000010000AF"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:mysterious_worm" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AF"]
-			y: 3.0d
-			x: 16.5d
-			id: "5B000000000000B0"
-			icon: { id: "alexsmobs:void_worm_eye" }
-			tasks: [{
-				id: "5B000000010000B0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:void_worm_eye" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000AF"]
-			y: 4.5d
-			x: 15.0d
-			id: "5B000000000000B1"
-			icon: { id: "alexsmobs:void_worm_mandible" }
-			tasks: [{
-				id: "5B000000010000B1"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "alexsmobs:void_worm_mandible" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000B1"]
-			y: 4.5d
-			x: 16.5d
-			id: "5B000000000000B2"
-			icon: { id: "cataclysm:abyssal_sacrifice" }
-			tasks: [{
-				id: "5B000000010000B2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "cataclysm:abyssal_sacrifice" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B00000000000094"]
-			y: -1.5d
-			x: 18.0d
-			id: "5B000000000000B3"
-			icon: { id: "anvilcraft:levitation_powder_block" }
-			tasks: [{
-				id: "5B000000010000B3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:levitation_powder_block" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5B000000000000A7"]
 			y: 6.0d
-			x: 19.5d
-			id: "5B000000000000B4"
-			icon: { id: "l2complements:shulkerate_block" }
-			tasks: [{
-				id: "5B000000010000B4"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "l2complements:shulkerate_block" }
-				type: "item"
-			}]
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B000000000000A7"]
 			hide_until_deps_complete: false
-			dependencies: ["5B000000000000B2"]
-			y: 4.5d
+			hide_until_deps_visible: false
+			icon: {
+				id: "l2complements:shulkerate_ingot"
+			}
+			id: "5B000000000000A8"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5B000000010000A8"
+				item: { count: 1, id: "l2complements:shulkerate_ingot" }
+				type: "item"
+			}]
 			x: 18.0d
-			id: "5B000000000000B5"
-			icon: { id: "cataclysm:abyssal_egg" }
-			tasks: [{
-				id: "5B000000010000B5"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "cataclysm:abyssal_egg" }
-				type: "item"
-			}]
+			y: 7.5d
 		}
 		{
-			dependencies: ["5B000000000000A5", "5B000000000000B3", "5B000000000000B4", "5B000000000000B5", "5B000000000000B0", "5B00000000000098", "5B000000000000B8"]
-			hide_until_deps_visible: false
+			dependencies: ["5B000000000000A2"]
 			hide_until_deps_complete: false
-			size: 2.0d
-			y: 1.5d
-			x: 19.5d
-			id: "5B000000000000B6"
-			icon: { id: "avaritia:end_crafting_table" }
+			hide_until_deps_visible: false
+			icon: {
+				id: "refinedstorage:portable_grid"
+			}
+			id: "5B000000000000A9"
 			tasks: [{
-				id: "5B000000010000B6"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "avaritia:end_crafting_table" }
+				id: "5B000000010000A9"
+				item: { count: 1, id: "refinedstorage:portable_grid" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			dependencies: ["5D0000000000000F"]
-			y: 0.0d
 			x: 16.5d
-			id: "5B000000000000B8"
-			icon: { id: "minecraft:bedrock" }
-			tasks: [{
-				id: "5B000000010000B8"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "minecraft:bedrock" }
-				type: "item"
-			}]
+			y: 9.0d
 		}
 		{
-			y: 1.5d
-			x: 21.0d
-			dependencies: ["5B000000000000B6"]
-			id: "5B000000000000B9"
-			icon: { id: "oritech:atomic_forge_block" }
-			tasks: [{
-				id: "5B000000010000B9"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:atomic_forge_block" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 22.5d
-			dependencies: ["5B000000000000B9"]
-			id: "5B000000000000BA"
-			icon: { id: "bertieprogression:advanced_computing_engine_stage_1" }
-			tasks: [{
-				id: "5B000000010000BA"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "bertieprogression:advanced_computing_engine_stage_1" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 24.0d
-			dependencies: ["5B000000000000BA"]
-			id: "5B000000000000BB"
-			icon: { id: "bertieprogression:advanced_computing_engine_stage_2" }
-			tasks: [{
-				id: "5B000000010000BB"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "bertieprogression:advanced_computing_engine_stage_2" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 25.5d
-			dependencies: ["5B000000000000BB"]
-			id: "5B000000000000BC"
-			icon: { id: "bertieprogression:advanced_computing_engine_stage_3" }
-			tasks: [{
-				id: "5B000000010000BC"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "bertieprogression:advanced_computing_engine_stage_3" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 27.0d
-			dependencies: ["5B000000000000BC"]
-			id: "5B000000000000BD"
-			icon: { id: "oritech:advanced_computing_engine" }
-			tasks: [{
-				id: "5B000000010000BD"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:advanced_computing_engine" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 28.5d
-			dependencies: ["5B000000000000BD"]
-			id: "5B000000000000BE"
-			icon: { id: "mekmm:cnc_stamper" }
-			tasks: [{
-				id: "5B000000010000BE"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:cnc_stamper" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 30.0d
-			dependencies: ["5B000000000000BE"]
-			id: "5B000000000000BF"
-			icon: { id: "mekmm:cnc_lathe" }
-			tasks: [{
-				id: "5B000000010000BF"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:cnc_lathe" }
-				type: "item"
-			}]
-		}
-		{
-			y: 1.5d
-			x: 31.5d
-			dependencies: ["5B000000000000BF"]
-			id: "5B000000000000C0"
-			icon: { id: "mekmm:cnc_rolling_mill" }
-			tasks: [{
-				id: "5B000000010000C0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:cnc_rolling_mill" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
+			dependencies: ["5B000000000000A2"]
 			hide_until_deps_complete: false
-			y: 0.0d
-			x: 27.0d
-			dependencies: ["5B000000000000BD"]
-			id: "5B000000000000C1"
-			icon: { id: "mekanism:energized_smelter" }
+			hide_until_deps_visible: false
+			icon: {
+				id: "universalgrid:wireless_universal_grid"
+			}
+			id: "5B000000000000AA"
 			tasks: [{
-				id: "5B000000010000C1"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "mekanism:energized_smelter" }
+				id: "5B000000010000AA"
+				item: { count: 1, id: "universalgrid:wireless_universal_grid" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -1.5d
-			x: 27.0d
-			dependencies: ["5B000000000000C1"]
-			id: "5B000000000000C2"
-			icon: { id: "mekanism:crusher" }
-			tasks: [{
-				id: "5B000000010000C2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:crusher" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 27.0d
-			dependencies: ["5B000000000000BD"]
-			id: "5B000000000000C3"
-			icon: { id: "oritech:super_ai_chip" }
-			tasks: [{
-				id: "5B000000010000C3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:super_ai_chip" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 28.5d
-			dependencies: ["5B000000000000C3"]
-			id: "5B000000000000C4"
-			icon: { id: "mekanism:chemical_injection_chamber" }
-			tasks: [{
-				id: "5B000000010000C4"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:chemical_injection_chamber" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 30.0d
-			dependencies: ["5B000000000000C4"]
-			id: "5B000000000000C5"
-			icon: { id: "mekanism:chemical_infuser" }
-			tasks: [{
-				id: "5B000000010000C5"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:chemical_infuser" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 31.5d
-			dependencies: ["5B000000000000C5"]
-			id: "5B000000000000C6"
-			icon: { id: "mekanism:thermal_evaporation_block" }
-			tasks: [{
-				id: "5B000000010000C6"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:thermal_evaporation_block" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 33.0d
-			dependencies: ["5B000000000000C6"]
-			id: "5B000000000000C7"
-			icon: { id: "mekanism:thermal_evaporation_valve" }
-			tasks: [{
-				id: "5B000000010000C7"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:thermal_evaporation_valve" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 3.0d
-			x: 34.5d
-			dependencies: ["5B000000000000C7"]
-			id: "5B000000000000C8"
-			icon: { id: "mekanism:thermal_evaporation_controller" }
-			tasks: [{
-				id: "5B000000010000C8"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:thermal_evaporation_controller" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 4.5d
-			x: 27.0d
-			dependencies: ["5B000000000000C3"]
-			id: "5B000000000000C9"
-			icon: { id: "oritech:unstable_container" }
-			tasks: [{
-				id: "5B000000010000C9"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "oritech:unstable_container" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: -4.5d
 			x: 15.0d
-			dependencies: ["5B00000000000096"]
-			id: "5B000000000000CA"
-			icon: { id: "anvilcraft:titanium_ingot" }
-			tasks: [{
-				id: "5B000000010000CA"
-				count: 64L
-				consume_items: false
-				item: { count: 1 id: "anvilcraft:titanium_ingot" }
-				type: "item"
-			}]
+			y: 9.0d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B00000000000014"]
 			hide_until_deps_complete: false
-			y: -4.5d
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:maggot"
+			}
+			id: "5B000000000000AB"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000AB"
+				item: { count: 1, id: "alexsmobs:maggot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000AB"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:mosquito_proboscis"
+			}
+			id: "5B000000000000AC"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000AC"
+				item: { count: 1, id: "alexsmobs:mosquito_proboscis" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000AC"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:mosquito_larva"
+			}
+			id: "5B000000000000AD"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000AD"
+				item: { count: 1, id: "alexsmobs:mosquito_larva" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B000000000000AD"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:capsid"
+			}
+			id: "5B000000000000AE"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000AE"
+				item: { count: 1, id: "alexsmobs:capsid" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000AE"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:mysterious_worm"
+			}
+			id: "5B000000000000AF"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000AF"
+				item: { count: 1, id: "alexsmobs:mysterious_worm" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000AF"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:void_worm_eye"
+			}
+			id: "5B000000000000B0"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B0"
+				item: { count: 1, id: "alexsmobs:void_worm_eye" }
+				type: "item"
+			}]
 			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000AF"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "alexsmobs:void_worm_mandible"
+			}
+			id: "5B000000000000B1"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B1"
+				item: { count: 1, id: "alexsmobs:void_worm_mandible" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B000000000000B1"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:abyssal_sacrifice"
+			}
+			id: "5B000000000000B2"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B2"
+				item: { count: 1, id: "cataclysm:abyssal_sacrifice" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 4.5d
+		}
+		{
 			dependencies: ["5B00000000000094"]
-			id: "5B000000000000CB"
-			icon: { id: "anvilcraft:levitation_powder" }
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:levitation_powder_block"
+			}
+			id: "5B000000000000B3"
 			tasks: [{
-				id: "5B000000010000CB"
-				count: 64L
 				consume_items: false
-				item: { count: 1 id: "anvilcraft:levitation_powder" }
+				id: "5B000000010000B3"
+				item: { count: 1, id: "anvilcraft:levitation_powder_block" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B000000000000A7"]
 			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "l2complements:shulkerate_block"
+			}
+			id: "5B000000000000B4"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B4"
+				item: { count: 1, id: "l2complements:shulkerate_block" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B000000000000B2"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:abyssal_egg"
+			}
+			id: "5B000000000000B5"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B5"
+				item: { count: 1, id: "cataclysm:abyssal_egg" }
+				type: "item"
+			}]
+			x: 18.0d
 			y: 4.5d
-			x: 21.0d
+		}
+		{
+			dependencies: [
+				"5B000000000000A5"
+				"5B000000000000B3"
+				"5B000000000000B4"
+				"5B000000000000B5"
+				"5B000000000000B0"
+				"5B00000000000098"
+				"5B000000000000B8"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "avaritia:end_crafting_table"
+			}
+			id: "5B000000000000B6"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B6"
+				item: { count: 1, id: "avaritia:end_crafting_table" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D0000000000000F"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:bedrock"
+			}
+			id: "5B000000000000B8"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000B8"
+				item: { count: 1, id: "minecraft:bedrock" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
 			dependencies: ["5B000000000000B6"]
-			id: "5B000000000000CC"
-			icon: { id: "cataclysm:void_eye" }
+			icon: {
+				id: "oritech:atomic_forge_block"
+			}
+			id: "5B000000000000B9"
 			tasks: [{
-				id: "5B000000010000CC"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "cataclysm:void_eye" }
+				id: "5B000000010000B9"
+				item: { count: 1, id: "oritech:atomic_forge_block" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: 1.5d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 4.5d
-			x: 22.5d
-			dependencies: ["5B000000000000CC"]
-			id: "5B000000000000CD"
-			icon: { id: "minecraft:filled_map" }
+			dependencies: ["5B000000000000B9"]
+			icon: {
+				id: "bertieprogression:advanced_computing_engine_stage_1"
+			}
+			id: "5B000000000000BA"
 			tasks: [{
-				id: "5B000000010000CD"
-				type: "advancement"
+				consume_items: false
+				id: "5B000000010000BA"
+				item: { count: 1, id: "bertieprogression:advanced_computing_engine_stage_1" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000BA"]
+			icon: {
+				id: "bertieprogression:advanced_computing_engine_stage_2"
+			}
+			id: "5B000000000000BB"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000BB"
+				item: { count: 1, id: "bertieprogression:advanced_computing_engine_stage_2" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000BB"]
+			icon: {
+				id: "bertieprogression:advanced_computing_engine_stage_3"
+			}
+			id: "5B000000000000BC"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000BC"
+				item: { count: 1, id: "bertieprogression:advanced_computing_engine_stage_3" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000BC"]
+			icon: {
+				id: "oritech:advanced_computing_engine"
+			}
+			id: "5B000000000000BD"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000BD"
+				item: { count: 1, id: "oritech:advanced_computing_engine" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000BD"]
+			icon: {
+				id: "mekmm:cnc_stamper"
+			}
+			id: "5B000000000000BE"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000BE"
+				item: { count: 1, id: "mekmm:cnc_stamper" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B000000000000BE"]
+			icon: {
+				id: "mekmm:cnc_lathe"
+			}
+			id: "5B000000000000BF"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000BF"
+				item: { count: 1, id: "mekmm:cnc_lathe" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B000000000000BF"]
+			icon: {
+				id: "mekmm:cnc_rolling_mill"
+			}
+			id: "5B000000000000C0"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C0"
+				item: { count: 1, id: "mekmm:cnc_rolling_mill" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B000000000000BD"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:energized_smelter"
+			}
+			id: "5B000000000000C1"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C1"
+				item: { count: 1, id: "mekanism:energized_smelter" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B000000000000C1"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:crusher"
+			}
+			id: "5B000000000000C2"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C2"
+				item: { count: 1, id: "mekanism:crusher" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B000000000000BD"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "oritech:super_ai_chip"
+			}
+			id: "5B000000000000C3"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C3"
+				item: { count: 1, id: "oritech:super_ai_chip" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B000000000000C3"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:chemical_injection_chamber"
+			}
+			id: "5B000000000000C4"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C4"
+				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000C4"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:chemical_infuser"
+			}
+			id: "5B000000000000C5"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C5"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000C5"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:thermal_evaporation_block"
+			}
+			id: "5B000000000000C6"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C6"
+				item: { count: 1, id: "mekanism:thermal_evaporation_block" }
+				type: "item"
+			}]
+			x: 31.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000C6"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:thermal_evaporation_valve"
+			}
+			id: "5B000000000000C7"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C7"
+				item: { count: 1, id: "mekanism:thermal_evaporation_valve" }
+				type: "item"
+			}]
+			x: 33.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000C7"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:thermal_evaporation_controller"
+			}
+			id: "5B000000000000C8"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C8"
+				item: { count: 1, id: "mekanism:thermal_evaporation_controller" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000C3"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "oritech:unstable_container"
+			}
+			id: "5B000000000000C9"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000C9"
+				item: { count: 1, id: "oritech:unstable_container" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B00000000000095"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:titanium_ingot"
+			}
+			id: "5B000000000000CA"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5B000000010000CA"
+				item: { count: 1, id: "anvilcraft:titanium_ingot" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B00000000000094"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "anvilcraft:levitation_powder"
+			}
+			id: "5B000000000000CB"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5B000000010000CB"
+				item: { count: 1, id: "anvilcraft:levitation_powder" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B000000000000B6"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:void_eye"
+			}
+			id: "5B000000000000CC"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000CC"
+				item: { count: 1, id: "cataclysm:void_eye" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000CC"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "5B000000000000CD"
+			tasks: [{
 				advancement: "bertieprogression:quests/ruined_citadel"
 				criterion: ""
+				id: "5B000000010000CD"
+				type: "advancement"
 			}]
+			x: 22.5d
+			y: 3.0d
 		}
 		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 4.5d
-			x: 24.0d
 			dependencies: ["5B000000000000CD"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:void_core"
+			}
 			id: "5B000000000000CE"
-			icon: { id: "cataclysm:void_core" }
 			tasks: [{
+				consume_items: false
 				id: "5B000000010000CE"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "cataclysm:void_core" }
+				item: { count: 1, id: "cataclysm:void_core" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 6.0d
-			x: 22.5d
-			dependencies: ["5B000000000000CD"]
-			id: "5B000000000000CF"
-			icon: { id: "cataclysm:enderite_ingot" }
-			tasks: [{
-				id: "5B000000010000CF"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "cataclysm:enderite_ingot" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
-			x: 18.0d
-			dependencies: ["5B000000000000B6"]
-			id: "5B000000000000D0"
-			icon: { id: "armageddon_mod:titan_insigna" }
-			tasks: [{
-				id: "5B000000010000D0"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "armageddon_mod:titan_insigna" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
-			x: 19.5d
-			dependencies: ["5B000000000000D0"]
-			id: "5B000000000000D1"
-			icon: { id: "armageddon_mod:elvenite_paladin_spawn_egg" }
-			tasks: [{
-				id: "5B000000010000D1"
-				type: "kill"
-				entity: "armageddon_mod:elvenite_paladin"
-				value: 1L
-				icon: { id: "armageddon_mod:elvenite_paladin_spawn_egg" }
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
-			x: 21.0d
-			dependencies: ["5B000000000000D1"]
-			id: "5B000000000000D2"
-			icon: { id: "armageddon_mod:elvenite_ingot" }
-			tasks: [{
-				id: "5B000000010000D2"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "armageddon_mod:elvenite_ingot" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
-			x: 22.5d
-			dependencies: ["5B000000000000D2"]
-			id: "5B000000000000D3"
-			icon: { id: "armageddon_mod:wanderers_fallen_shard" }
-			tasks: [{
-				id: "5B000000010000D3"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "armageddon_mod:wanderers_fallen_shard" }
-				type: "item"
-			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
 			x: 24.0d
-			dependencies: ["5B000000000000D3"]
-			id: "5B000000000000D4"
-			icon: { id: "armageddon_mod:vaedricthe_fallen_wanderer_spawn_egg" }
-			tasks: [{
-				id: "5B000000010000D4"
-				type: "kill"
-				entity: "armageddon_mod:vaedricthe_fallen_wanderer"
-				value: 1L
-				icon: { id: "armageddon_mod:vaedricthe_fallen_wanderer_spawn_egg" }
-			}]
+			y: 3.0d
 		}
 		{
-			hide_until_deps_visible: false
+			dependencies: ["5B00000000000100"]
 			hide_until_deps_complete: false
-			y: 9.0d
-			x: 25.5d
-			dependencies: ["5B000000000000D4"]
-			id: "5B000000000000D5"
-			icon: { id: "armageddon_mod:voiderite" }
+			hide_until_deps_visible: false
+			icon: {
+				id: "cataclysm:enderite_ingot"
+			}
+			id: "5B000000000000CF"
 			tasks: [{
-				id: "5B000000010000D5"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "armageddon_mod:voiderite" }
+				id: "5B000000010000CF"
+				item: { count: 1, id: "cataclysm:enderite_ingot" }
 				type: "item"
 			}]
-		}
-		{
-			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
 			x: 27.0d
-			dependencies: ["5B000000000000D5"]
-			id: "5B000000000000D6"
-			icon: { id: "armageddon_mod:the_key_of_doom" }
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B000000000000B6"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:titan_insigna"
+			}
+			id: "5B000000000000D0"
 			tasks: [{
+				consume_items: false
+				id: "5B000000010000D0"
+				item: { count: 1, id: "armageddon_mod:titan_insigna" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B000000000000D0"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:elvenite_ingot"
+			}
+			id: "5B000000000000D2"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000D2"
+				item: { count: 1, id: "armageddon_mod:elvenite_ingot" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B000000000000D2"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:wanderers_fallen_shard"
+			}
+			id: "5B000000000000D3"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000D3"
+				item: { count: 1, id: "armageddon_mod:wanderers_fallen_shard" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B000000000000D3"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:voiderite"
+			}
+			id: "5B000000000000D5"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000D5"
+				item: { count: 1, id: "armageddon_mod:voiderite" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B000000000000D5"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:the_key_of_doom"
+			}
+			id: "5B000000000000D6"
+			tasks: [{
+				consume_items: false
 				id: "5B000000010000D6"
+				item: { count: 1, id: "armageddon_mod:the_key_of_doom" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5B000000000000D6"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "armageddon_mod:doom_powder"
+			}
+			id: "5B000000000000D8"
+			tasks: [{
+				consume_items: false
+				id: "5B000000010000D8"
+				item: { count: 1, id: "armageddon_mod:doom_powder" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: 6.0d
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B000000000000CE"]
+			y: -1.5d
+			x: 24.0d
+			id: "5B00000000000100"
+			icon: { id: "the_beyond:ferrojelly" }
+			tasks: [{
+				id: "5B00000001000100"
 				count: 1L
 				consume_items: false
-				item: { count: 1 id: "armageddon_mod:the_key_of_doom" }
+				item: { count: 1 id: "the_beyond:ferrojelly" }
 				type: "item"
 			}]
 		}
+
 		{
-			hide_until_deps_visible: false
 			hide_until_deps_complete: false
-			y: 9.0d
-			x: 28.5d
-			dependencies: ["5B000000000000D6"]
-			id: "5B000000000000D7"
-			icon: { id: "armageddon_mod:bringer_of_doom_spawn_egg" }
-			tasks: [{
-				id: "5B000000010000D7"
-				type: "kill"
-				entity: "armageddon_mod:bringer_of_doom_p_2"
-				value: 1L
-				icon: { id: "armageddon_mod:bringer_of_doom_spawn_egg" }
-			}]
-		}
-		{
 			hide_until_deps_visible: false
-			hide_until_deps_complete: false
-			y: 9.0d
-			x: 30.0d
-			dependencies: ["5B000000000000D7"]
-			id: "5B000000000000D8"
-			icon: { id: "armageddon_mod:doom_powder" }
+			dependencies: ["5B000000000000C5"]
+			y: 1.5d
+			x: 31.5d
+			id: "5B00000000000101"
+			icon: { id: "mekmm:large_chemical_infuser" }
 			tasks: [{
-				id: "5B000000010000D8"
+				id: "5B00000001000101"
 				count: 1L
 				consume_items: false
-				item: { count: 1 id: "armageddon_mod:doom_powder" }
+				item: { count: 1 id: "mekmm:large_chemical_infuser" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B000000000000C8"]
+			y: 3.0d
+			x: 36.0d
+			id: "5B00000000000102"
+			icon: { id: "mekanism:fuelwood_heater" }
+			tasks: [{
+				id: "5B00000001000102"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:fuelwood_heater" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000102"]
+			y: 3.0d
+			x: 37.5d
+			id: "5B00000000000103"
+			icon: { id: "mekanism:resistive_heater" }
+			tasks: [{
+				id: "5B00000001000103"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:resistive_heater" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B000000000000B6"]
+			y: -11.5d
+			x: 7.5d
+			id: "5B00000000000104"
+			icon: { id: "forbidden_arcanus:quantum_core" }
+			tasks: [{
+				id: "5B00000001000104"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "forbidden_arcanus:quantum_core" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000104"]
+			y: -12.25d
+			x: 9.0d
+			id: "5B00000000000105"
+			icon: { id: "compactmachines:enlarging_module" }
+			tasks: [{
+				id: "5B00000001000105"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactmachines:enlarging_module" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000104"]
+			y: -10.75d
+			x: 9.0d
+			id: "5B00000000000106"
+			icon: { id: "compactmachines:shrinking_module" }
+			tasks: [{
+				id: "5B00000001000106"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactmachines:shrinking_module" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000105", "5B00000000000106"]
+			y: -11.5d
+			x: 10.5d
+			id: "5B00000000000107"
+			icon: { id: "compactmachines:personal_shrinking_device" }
+			tasks: [{
+				id: "5B00000001000107"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactmachines:personal_shrinking_device" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000107"]
+			y: -11.5d
+			x: 12.0d
+			id: "5B00000000000108"
+			icon: { id: "compactmachines:wall" }
+			tasks: [{
+				id: "5B00000001000108"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactmachines:wall" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000108"]
+			y: -11.5d
+			x: 13.5d
+			id: "5B00000000000109"
+			icon: { id: "compactcrafting:field_projector" }
+			tasks: [{
+				id: "5B00000001000109"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactcrafting:field_projector" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000109"]
+			y: -13.0d
+			x: 15.0d
+			id: "5B0000000000010A"
+			icon: { id: "compactcrafting:rescan_proxy" }
+			tasks: [{
+				id: "5B0000000100010A"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactcrafting:rescan_proxy" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000109"]
+			y: -10.0d
+			x: 15.0d
+			id: "5B0000000000010B"
+			icon: { id: "compactcrafting:match_proxy" }
+			tasks: [{
+				id: "5B0000000100010B"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "compactcrafting:match_proxy" }
+				type: "item"
+			}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000109"]
+			y: -11.5d
+			x: 15.0d
+			id: "5B0000000000010C"
+			icon: { id: "compactmachines:new_machine" }
+			tasks: [{"id": "5B0000000100010C", "count": 1, "consume_items": false, "item": {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "or(item(compactmachines:new_machine)item(compactmachines:machine))", "minecraft:custom_name": "{\"text\": \"Any Compact Machine\", \"italic\": false}"}}, "type": "item"}]
+		}
+
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B0000000000010C"]
+			y: -11.5d
+			x: 16.5d
+			id: "5B0000000000010D"
+			icon: { id: "mekanism:quantum_entangloporter" }
+			tasks: [{
+				id: "5B0000000100010D"
+				count: 1L
+				consume_items: false
+				item: { count: 1 id: "mekanism:quantum_entangloporter" }
 				type: "item"
 			}]
 		}

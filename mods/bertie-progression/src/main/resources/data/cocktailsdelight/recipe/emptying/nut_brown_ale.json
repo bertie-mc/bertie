@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "cocktailsdelight:nut_brown_ale"
+    }
+  ],
+  "results": [
+    {
+      "id": "brewinandchewin:tankard"
+    },
+    {
+      "amount": 250,
+      "id": "cocktailsdelight:nut_brown_ale"
+    }
+  ]
+}

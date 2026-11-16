@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "antarchy:shellstone_bricks"
+    }
+  },
+  "result": {
+    "id": "antarchy:chiseled_shellstone",
+    "count": 5
+  }
+}

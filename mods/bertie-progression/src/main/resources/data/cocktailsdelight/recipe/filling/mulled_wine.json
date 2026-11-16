@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 250,
+      "fluid": "cocktailsdelight:mulled_wine",
+      "type": "fluid_stack"
+    }
+  ],
+  "results": [
+    {
+      "id": "cocktailsdelight:mulled_wine"
+    }
+  ]
+}

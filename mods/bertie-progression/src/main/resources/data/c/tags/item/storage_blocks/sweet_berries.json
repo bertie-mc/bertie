@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cratedelight:berry_crate",
+      "required": false
+    }
+  ]
+}

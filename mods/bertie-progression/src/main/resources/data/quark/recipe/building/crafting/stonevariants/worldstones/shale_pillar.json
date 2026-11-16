@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "quark:polished_shale"
+    }
+  },
+  "result": {
+    "id": "quark:shale_pillar",
+    "count": 3
+  }
+}

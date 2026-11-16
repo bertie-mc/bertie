@@ -1,0 +1,11 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ],
+  "result": {
+    "id": "cataclysm:azure_seastone_wall",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " P ",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:polished_andesite"
+    }
+  },
+  "result": {
+    "id": "quark:andesite_pillar",
+    "count": 3
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "quark:blue_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:lavender_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:orange_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:yellow_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:red_blossom_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:oak_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:spruce_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:birch_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:jungle_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:acacia_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:dark_oak_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:mangrove_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:cherry_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:flowering_azalea_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:blue_blossom_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:lavender_blossom_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:orange_blossom_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:yellow_blossom_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:red_blossom_leaf_carpet",
+      "required": false
+    },
+    {
+      "id": "quark:thatch",
+      "required": false
+    },
+    {
+      "id": "quark:thatch_slab",
+      "required": false
+    },
+    {
+      "id": "quark:thatch_vertical_slab",
+      "required": false
+    },
+    {
+      "id": "quark:thatch_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:sugar_cane_block",
+      "required": false
+    },
+    {
+      "id": "quark:cactus_block",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_crate",
+      "required": false
+    },
+    {
+      "id": "cratedelight:cocoabeans_bag",
+      "required": false
+    },
+    {
+      "id": "quark:nether_wart_sack",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:gunpowder_block",
+      "required": false
+    },
+    {
+      "id": "cratedelight:berry_crate",
+      "required": false
+    },
+    {
+      "id": "cratedelight:glowberry_crate",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_leaves",
+      "required": false
+    },
+    {
+      "id": "quark:water_pink_petals",
+      "required": false
+    }
+  ]
+}

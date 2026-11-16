@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "malum:twisted_rock_bricks"
+    }
+  },
+  "result": {
+    "id": "malum:chiseled_twisted_rock",
+    "count": 5
+  }
+}

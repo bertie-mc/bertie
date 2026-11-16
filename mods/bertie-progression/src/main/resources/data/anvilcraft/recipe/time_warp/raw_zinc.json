@@ -1,14 +1,7 @@
 {
-  "type": "anvilcraft:time_warp",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "items": "#c:storage_blocks/zinc"
-    }
-  ],
-  "results": [
-    {
-      "count": 3,
-      "id": "magitech:raw_zinc"
+      "type": "neoforge:false"
     }
   ]
 }

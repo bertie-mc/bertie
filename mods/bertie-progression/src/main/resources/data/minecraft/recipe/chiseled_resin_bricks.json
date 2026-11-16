@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:resin_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_resin_bricks",
+    "count": 5
+  }
+}

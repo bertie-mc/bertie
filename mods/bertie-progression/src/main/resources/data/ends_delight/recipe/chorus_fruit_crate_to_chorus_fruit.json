@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "endersdelight:chorus_crate"
+      "type": "neoforge:false"
     }
-  ],
-  "result": {
-    "id": "minecraft:chorus_fruit",
-    "count": 9
-  }
+  ]
 }

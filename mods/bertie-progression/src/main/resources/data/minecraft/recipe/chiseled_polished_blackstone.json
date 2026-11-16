@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:polished_blackstone_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_polished_blackstone",
+    "count": 5
+  }
+}

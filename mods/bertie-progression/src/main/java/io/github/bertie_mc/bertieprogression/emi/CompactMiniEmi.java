@@ -64,10 +64,17 @@ final class CompactMiniEmi {
                 if (manager.byKey(id).isEmpty()) continue;
                 int size = row.get("size").getAsInt();
                 var ingredients = new ArrayList<EmiIngredient>();
-                ingredients.add(stack(
-                        row.get("wall").getAsString(), row.get("wall_count").getAsInt()));
+                if (row.has("machine_layout")) {
+                    for (var material : row.getAsJsonObject("ingredients").entrySet()) {
+                        ingredients.add(
+                                stack(material.getKey(), material.getValue().getAsInt()));
+                    }
+                } else {
+                    ingredients.add(stack(
+                            row.get("wall").getAsString(), row.get("wall_count").getAsInt()));
+                }
                 String core = null;
-                if (!row.get("core").isJsonNull()) {
+                if (row.has("core") && !row.get("core").isJsonNull()) {
                     core = row.get("core").getAsString();
                     ingredients.add(stack(core, 1));
                 }

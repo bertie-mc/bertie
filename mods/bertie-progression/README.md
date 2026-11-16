@@ -53,6 +53,10 @@ documents the material selection and storage policy.
 
 [Compact spaces](docs/compact-spaces.md) documents the Wall/room Miniaturization
 recipes, captured machine crafts, native EMI views and revised storage parts.
+[Spatial crafting](docs/spatial-progression.md) adds individual Ponder guides,
+the five large-machine structures, Sentient Casing and the reusable Enderite
+catalyst. [Reviewed recipe policy](docs/reviewed-recipe-cleanup.md) records the
+building-form selections, compatibility repairs and utility acquisition changes.
 
 ### Blocks
 

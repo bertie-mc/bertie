@@ -1,12 +1,7 @@
 {
-  "type": "pastel:midnight_solution_converting",
-  "ingredient": [
+  "neoforge:conditions": [
     {
-      "item": "pastel:exposed_polished_shale_clay_slab"
+      "type": "neoforge:false"
     }
-  ],
-  "result": {
-    "id": "pastel:weathered_polished_shale_clay_slab",
-    "count": 1
-  }
+  ]
 }

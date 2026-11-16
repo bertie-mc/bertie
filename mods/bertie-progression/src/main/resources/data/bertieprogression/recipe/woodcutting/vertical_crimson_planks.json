@@ -1,0 +1,10 @@
+{
+  "type": "sawmill:woodcutting",
+  "ingredient": {
+    "item": "minecraft:crimson_planks"
+  },
+  "result": {
+    "id": "quark:vertical_crimson_planks",
+    "count": 1
+  }
+}

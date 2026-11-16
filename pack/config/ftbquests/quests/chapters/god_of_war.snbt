@@ -15,7 +15,7 @@
 		id: "cataclysm_spellbooks:abyss_spell_book"
 	}
 	id: "7B00000000000000"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -1219,7 +1219,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["7B00000000000079", "7B000000000000AD"]
+			dependencies: [
+				"7B00000000000079"
+				"7B000000000000AD"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1499,7 +1502,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B000000000000A3", "7B000000000002BB"]
+			dependencies: [
+				"7B000000000000A3"
+				"7B000000000002BB"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1688,7 +1694,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B000000000000A7", "7B00000000000085"]
+			dependencies: [
+				"7B000000000000A7"
+				"7B00000000000085"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -1743,7 +1752,10 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["7B0000000000008B", "7B00000000000055"]
+			dependencies: [
+				"7B0000000000008B"
+				"7B00000000000055"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -1782,7 +1794,13 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["7B00000000000090", "7B0000000000008F", "7B00000000000069", "7B0000000000005D", "7B0000000000007B"]
+			dependencies: [
+				"7B00000000000090"
+				"7B0000000000008F"
+				"7B00000000000069"
+				"7B0000000000005D"
+				"7B0000000000007B"
+			]
 			icon: {
 				id: "enigmaticlegacyplus:etherium_chestplate"
 			}
@@ -1813,7 +1831,10 @@
 			y: 26.0d
 		}
 		{
-			dependencies: ["7B00000000000072", "7B000000000000A9"]
+			dependencies: [
+				"7B00000000000072"
+				"7B000000000000A9"
+			]
 			icon: {
 				id: "fantasy_armor:chess_board_knight_chestplate"
 			}
@@ -1844,7 +1865,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B00000000000037", "7B0000000000003B"]
+			dependencies: [
+				"7B00000000000037"
+				"7B0000000000003B"
+			]
 			icon: {
 				id: "fantasy_armor:dark_cover_chestplate"
 			}
@@ -1875,7 +1899,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B00000000000064", "7B00000000000056"]
+			dependencies: [
+				"7B00000000000064"
+				"7B00000000000056"
+			]
 			icon: {
 				id: "fantasy_armor:dark_lord_chestplate"
 			}
@@ -1906,7 +1933,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B00000000000060", "7B00000000000082"]
+			dependencies: [
+				"7B00000000000060"
+				"7B00000000000082"
+			]
 			icon: {
 				id: "fantasy_armor:dead_gladiator_chestplate"
 			}
@@ -1937,7 +1967,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B0000000000006E", "7B00000000000087"]
+			dependencies: [
+				"7B0000000000006E"
+				"7B00000000000087"
+			]
 			icon: {
 				id: "fantasy_armor:dragonslayer_chestplate"
 			}
@@ -1999,7 +2032,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000063", "7B00000000000078"]
+			dependencies: [
+				"7B00000000000063"
+				"7B00000000000078"
+			]
 			icon: {
 				id: "fantasy_armor:evening_ghost_chestplate"
 			}
@@ -2030,7 +2066,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B0000000000007C", "7B0000000000005E"]
+			dependencies: [
+				"7B0000000000007C"
+				"7B0000000000005E"
+			]
 			icon: {
 				id: "fantasy_armor:flesh_of_the_feaster_chestplate"
 			}
@@ -2123,7 +2162,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B0000000000006D", "7B0000000000007E"]
+			dependencies: [
+				"7B0000000000006D"
+				"7B0000000000007E"
+			]
 			icon: {
 				id: "fantasy_armor:gilded_hunt_chestplate"
 			}
@@ -2154,7 +2196,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B00000000000065", "7B0000000000003B"]
+			dependencies: [
+				"7B00000000000065"
+				"7B0000000000003B"
+			]
 			icon: {
 				id: "fantasy_armor:golden_execution_chestplate"
 			}
@@ -2185,7 +2230,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B000000000002C3", "7B00000000000062"]
+			dependencies: [
+				"7B000000000002C3"
+				"7B00000000000062"
+			]
 			icon: {
 				id: "fantasy_armor:golden_horns_chestplate"
 			}
@@ -2216,7 +2264,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B0000000000006C", "7B000000000002BF"]
+			dependencies: [
+				"7B0000000000006C"
+				"7B000000000002BF"
+			]
 			icon: {
 				id: "fantasy_armor:grave_sentinel_chestplate"
 			}
@@ -2247,7 +2298,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B0000000000006A", "7B00000000000037"]
+			dependencies: [
+				"7B0000000000006A"
+				"7B00000000000037"
+			]
 			icon: {
 				id: "fantasy_armor:hero_chestplate"
 			}
@@ -2278,7 +2332,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B000000000002EB", "7B000000000000A3"]
+			dependencies: [
+				"7B000000000002EB"
+				"7B000000000000A3"
+			]
 			icon: {
 				id: "fantasy_armor:lady_maria_chestplate"
 			}
@@ -2309,7 +2366,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B00000000000068", "7B000000000002C4"]
+			dependencies: [
+				"7B00000000000068"
+				"7B000000000002C4"
+			]
 			icon: {
 				id: "fantasy_armor:malenia_chestplate"
 			}
@@ -2371,7 +2431,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B0000000000006F", "7B0000000000007D"]
+			dependencies: [
+				"7B0000000000006F"
+				"7B0000000000007D"
+			]
 			icon: {
 				id: "fantasy_armor:ornstein_chestplate"
 			}
@@ -2433,7 +2496,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000071", "7B000000000000D8"]
+			dependencies: [
+				"7B00000000000071"
+				"7B000000000000D8"
+			]
 			icon: {
 				id: "fantasy_armor:ronin_chestplate"
 			}
@@ -2464,7 +2530,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B00000000000066", "7B0000000000009E"]
+			dependencies: [
+				"7B00000000000066"
+				"7B0000000000009E"
+			]
 			icon: {
 				id: "fantasy_armor:silver_knight_chestplate"
 			}
@@ -2495,7 +2564,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B00000000000067", "7B000000000002BB"]
+			dependencies: [
+				"7B00000000000067"
+				"7B000000000002BB"
+			]
 			icon: {
 				id: "fantasy_armor:spark_of_dawn_chestplate"
 			}
@@ -2526,7 +2598,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B0000000000005A", "7B00000000000055"]
+			dependencies: [
+				"7B0000000000005A"
+				"7B00000000000055"
+			]
 			icon: {
 				id: "fantasy_armor:sunset_wings_chestplate"
 			}
@@ -2588,7 +2663,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000061", "7B000000000000DD"]
+			dependencies: [
+				"7B00000000000061"
+				"7B000000000000DD"
+			]
 			icon: {
 				id: "fantasy_armor:twinned_chestplate"
 			}
@@ -2619,7 +2697,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B000000000000D4", "7B00000000000074"]
+			dependencies: [
+				"7B000000000000D4"
+				"7B00000000000074"
+			]
 			icon: {
 				id: "fantasy_armor:wandering_wizard_chestplate"
 			}
@@ -2681,7 +2762,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000053", "7B000000000000E7"]
+			dependencies: [
+				"7B00000000000053"
+				"7B000000000000E7"
+			]
 			icon: {
 				id: "forbidden_arcanus:draco_arcanus_chestplate"
 			}
@@ -2866,7 +2950,10 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["7B00000000000088", "7B00000000000092"]
+			dependencies: [
+				"7B00000000000088"
+				"7B00000000000092"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -2905,7 +2992,10 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["7B000000000000CD", "7B000000000000C8"]
+			dependencies: [
+				"7B000000000000CD"
+				"7B000000000000C8"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3200,7 +3290,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["7B0000000000008E", "7B000000000002C4"]
+			dependencies: [
+				"7B0000000000008E"
+				"7B000000000002C4"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3278,7 +3371,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["7B000000000002BE", "7B000000000000AB"]
+			dependencies: [
+				"7B000000000002BE"
+				"7B000000000000AB"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3323,7 +3419,10 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B0000000000007D", "7B00000000000056"]
+			dependencies: [
+				"7B0000000000007D"
+				"7B00000000000056"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:affinity_data": {
@@ -3451,7 +3550,10 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["7B00000000000044", "7B000000000002C3"]
+			dependencies: [
+				"7B00000000000044"
+				"7B000000000002C3"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3541,7 +3643,11 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B0000000000007C", "7B000000000002BE", "7B000000000002BF"]
+			dependencies: [
+				"7B0000000000007C"
+				"7B000000000002BE"
+				"7B000000000002BF"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -3706,7 +3812,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B0000000000007A", "7B000000000000A2"]
+			dependencies: [
+				"7B0000000000007A"
+				"7B000000000000A2"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -3906,7 +4015,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000046", "7B0000000000008E"]
+			dependencies: [
+				"7B00000000000046"
+				"7B0000000000008E"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4071,7 +4183,7 @@
 				}
 				{
 					id: "7B00000001040099"
-					item: { count: 1, id: "hazennstuff:legacy_fireblossom_crown" }
+					item: { components: { "azurelib:az_id": [I; 2052510852, 785861802, -2124778568, 1570194644 ] }, count: 1, id: "hazennstuff:legacy_fireblossom_crown" }
 					type: "item"
 				}
 			]
@@ -4196,7 +4308,10 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["7B000000000000A8", "7B00000000000080"]
+			dependencies: [
+				"7B000000000000A8"
+				"7B00000000000080"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4397,7 +4512,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B000000000000CE", "7B000000000000CD"]
+			dependencies: [
+				"7B000000000000CE"
+				"7B000000000000CD"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4475,7 +4593,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B00000000000082", "7B00000000000084"]
+			dependencies: [
+				"7B00000000000082"
+				"7B00000000000084"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4514,7 +4635,10 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["7B00000000000081", "7B00000000000092"]
+			dependencies: [
+				"7B00000000000081"
+				"7B00000000000092"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4553,7 +4677,10 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["7B000000000002BB", "7B000000000002BE"]
+			dependencies: [
+				"7B000000000002BB"
+				"7B000000000002BE"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4592,7 +4719,11 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["7B0000000000004C", "7B000000000000AE", "7B00000000000079"]
+			dependencies: [
+				"7B0000000000004C"
+				"7B000000000000AE"
+				"7B00000000000079"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4637,7 +4768,10 @@
 			y: 22.0d
 		}
 		{
-			dependencies: ["7B00000000000079", "7B00000000000078"]
+			dependencies: [
+				"7B00000000000079"
+				"7B00000000000078"
+			]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -4764,7 +4898,10 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B0000000000009F", "7B00000000000094"]
+			dependencies: [
+				"7B0000000000009F"
+				"7B00000000000094"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -4893,7 +5030,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["7B00000000000086", "7B000000000000D6"]
+			dependencies: [
+				"7B00000000000086"
+				"7B000000000000D6"
+			]
 			icon: {
 				components: {
 					"azurelib:az_id": [I;
@@ -12184,6 +12324,14 @@
 		{
 			dependencies: ["7B000000000000CE"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:bishop_of_deceit_chestplate"
 			}
 			id: "7B000000000002BB"
@@ -12195,7 +12343,7 @@
 				}
 				{
 					id: "7B000000010102BB"
-					item: { count: 1, id: "hazennstuff:bishop_of_deceit_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:bishop_of_deceit_chestplate" }
 					type: "item"
 				}
 				{
@@ -12215,28 +12363,42 @@
 		{
 			dependencies: ["7B0000000000008A"]
 			icon: {
+				components: {
+					"azurelib:az_id": [I;
+						-164626876
+						-1919795126
+						-1632899442
+						1440034926
+					]
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:fireblossom_battlemage_chestplate"
 			}
 			id: "7B000000000002BC"
 			tasks: [
 				{
 					id: "7B000000010002BC"
-					item: { count: 1, id: "hazennstuff:fireblossom_battlemage_helmet" }
+					item: { components: { "azurelib:az_id": [I; 1135330932, -399424038, -1177648301, 1414841000 ] }, count: 1, id: "hazennstuff:fireblossom_battlemage_helmet" }
 					type: "item"
 				}
 				{
 					id: "7B000000010102BC"
-					item: { count: 1, id: "hazennstuff:fireblossom_battlemage_chestplate" }
+					item: { components: { "azurelib:az_id": [I; 617803952, -789035295, -1397127439, 1357698375 ], "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:fireblossom_battlemage_chestplate" }
 					type: "item"
 				}
 				{
 					id: "7B000000010202BC"
-					item: { count: 1, id: "hazennstuff:fireblossom_battlemage_leggings" }
+					item: { components: { "azurelib:az_id": [I; 1757419906, 329272421, -1986436845, 809996204 ] }, count: 1, id: "hazennstuff:fireblossom_battlemage_leggings" }
 					type: "item"
 				}
 				{
 					id: "7B000000010302BC"
-					item: { count: 1, id: "hazennstuff:fireblossom_battlemage_boots" }
+					item: { components: { "azurelib:az_id": [I; -340642591, 1405570943, -1098285210, -1327240217 ] }, count: 1, id: "hazennstuff:fireblossom_battlemage_boots" }
 					type: "item"
 				}
 			]
@@ -12246,6 +12408,14 @@
 		{
 			dependencies: ["7B000000000000C8"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:nameless_one_chestplate"
 			}
 			id: "7B000000000002BE"
@@ -12257,7 +12427,7 @@
 				}
 				{
 					id: "7B000000010102BE"
-					item: { count: 1, id: "hazennstuff:nameless_one_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:nameless_one_chestplate" }
 					type: "item"
 				}
 				{
@@ -12277,6 +12447,14 @@
 		{
 			dependencies: ["7B000000000000C8"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:necromancer_chestplate"
 			}
 			id: "7B000000000002BF"
@@ -12288,7 +12466,7 @@
 				}
 				{
 					id: "7B000000010102BF"
-					item: { count: 1, id: "hazennstuff:necromancer_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:necromancer_chestplate" }
 					type: "item"
 				}
 				{
@@ -12308,28 +12486,41 @@
 		{
 			dependencies: ["7B0000000000008D"]
 			icon: {
+				components: {
+					"irons_spellbooks:affinity_data": {
+						bonuses: {
+							"irons_spellbooks:frostbite": 1
+						}
+					}
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:permafrost_prince_chestplate"
 			}
 			id: "7B000000000002C0"
 			tasks: [
 				{
 					id: "7B000000010002C0"
-					item: { count: 1, id: "hazennstuff:permafrost_prince_helmet" }
+					item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:frostbite": 1 } } }, count: 1, id: "hazennstuff:permafrost_prince_helmet" }
 					type: "item"
 				}
 				{
 					id: "7B000000010102C0"
-					item: { count: 1, id: "hazennstuff:permafrost_prince_chestplate" }
+					item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:frostbite": 1 } }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:permafrost_prince_chestplate" }
 					type: "item"
 				}
 				{
 					id: "7B000000010202C0"
-					item: { count: 1, id: "hazennstuff:permafrost_prince_leggings" }
+					item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:frostbite": 1 } } }, count: 1, id: "hazennstuff:permafrost_prince_leggings" }
 					type: "item"
 				}
 				{
 					id: "7B000000010302C0"
-					item: { count: 1, id: "hazennstuff:permafrost_prince_boots" }
+					item: { components: { "irons_spellbooks:affinity_data": { bonuses: { "irons_spellbooks:frostbite": 1 } } }, count: 1, id: "hazennstuff:permafrost_prince_boots" }
 					type: "item"
 				}
 			]
@@ -12370,6 +12561,14 @@
 		{
 			dependencies: ["7B000000000000CB"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:pyrium_battlemage_chestplate"
 			}
 			id: "7B000000000002C2"
@@ -12381,7 +12580,7 @@
 				}
 				{
 					id: "7B000000010102C2"
-					item: { count: 1, id: "hazennstuff:pyrium_battlemage_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:pyrium_battlemage_chestplate" }
 					type: "item"
 				}
 				{
@@ -12401,6 +12600,14 @@
 		{
 			dependencies: ["7B000000000000D0"]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:pyromancer_brute_chestplate"
 			}
 			id: "7B000000000002C3"
@@ -12412,7 +12619,7 @@
 				}
 				{
 					id: "7B000000010102C3"
-					item: { count: 1, id: "hazennstuff:pyromancer_brute_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:pyromancer_brute_chestplate" }
 					type: "item"
 				}
 				{
@@ -12430,8 +12637,19 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["7B0000000000009C", "7B0000000000009B"]
+			dependencies: [
+				"7B0000000000009C"
+				"7B0000000000009B"
+			]
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "hazennstuff:soul_legionnaire_ruler_chestplate"
 			}
 			id: "7B000000000002C4"
@@ -12443,7 +12661,7 @@
 				}
 				{
 					id: "7B000000010102C4"
-					item: { count: 1, id: "hazennstuff:soul_legionnaire_ruler_chestplate" }
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "hazennstuff:soul_legionnaire_ruler_chestplate" }
 					type: "item"
 				}
 				{
@@ -12535,12 +12753,20 @@
 		}
 		{
 			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
 				id: "cataclysm_spellbooks:monstrous_wizard_hat"
 			}
 			id: "7B000000000002D2"
 			tasks: [{
 				id: "7B000000010002D2"
-				item: { count: 1, id: "cataclysm_spellbooks:monstrous_wizard_hat" }
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:monstrous_wizard_hat" }
 				type: "item"
 			}]
 			x: -36.0d
@@ -12830,13 +13056,11 @@
 				id: "aquamirae:dagger_of_greed"
 			}
 			id: "7B000000000002EE"
-			tasks: [
-				{
-					id: "7B000000010002EE"
-					item: { count: 1, id: "aquamirae:dagger_of_greed" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002EE"
+				item: { count: 1, id: "aquamirae:dagger_of_greed" }
+				type: "item"
+			}]
 			x: 24.0d
 			y: 5.0d
 		}
@@ -12845,13 +13069,11 @@
 				id: "aquamirae:dreadwake"
 			}
 			id: "7B000000000002EF"
-			tasks: [
-				{
-					id: "7B000000010002EF"
-					item: { count: 1, id: "aquamirae:dreadwake" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002EF"
+				item: { count: 1, id: "aquamirae:dreadwake" }
+				type: "item"
+			}]
 			x: 25.0d
 			y: 5.0d
 		}
@@ -12860,13 +13082,11 @@
 				id: "aquamirae:jawbreaker"
 			}
 			id: "7B000000000002F0"
-			tasks: [
-				{
-					id: "7B000000010002F0"
-					item: { count: 1, id: "aquamirae:jawbreaker" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F0"
+				item: { count: 1, id: "aquamirae:jawbreaker" }
+				type: "item"
+			}]
 			x: 26.0d
 			y: 5.0d
 		}
@@ -12875,13 +13095,11 @@
 				id: "aquamirae:remnant_saber"
 			}
 			id: "7B000000000002F1"
-			tasks: [
-				{
-					id: "7B000000010002F1"
-					item: { count: 1, id: "aquamirae:remnant_saber" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F1"
+				item: { count: 1, id: "aquamirae:remnant_saber" }
+				type: "item"
+			}]
 			x: 27.0d
 			y: 5.0d
 		}
@@ -12890,13 +13108,11 @@
 				id: "aquamirae:shatterblade"
 			}
 			id: "7B000000000002F2"
-			tasks: [
-				{
-					id: "7B000000010002F2"
-					item: { count: 1, id: "aquamirae:shatterblade" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F2"
+				item: { count: 1, id: "aquamirae:shatterblade" }
+				type: "item"
+			}]
 			x: 24.0d
 			y: 6.0d
 		}
@@ -12905,13 +13121,11 @@
 				id: "aquamirae:shatterspike"
 			}
 			id: "7B000000000002F3"
-			tasks: [
-				{
-					id: "7B000000010002F3"
-					item: { count: 1, id: "aquamirae:shatterspike" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F3"
+				item: { count: 1, id: "aquamirae:shatterspike" }
+				type: "item"
+			}]
 			x: 25.0d
 			y: 6.0d
 		}
@@ -12920,13 +13134,11 @@
 				id: "aquamirae:tempest_trident"
 			}
 			id: "7B000000000002F4"
-			tasks: [
-				{
-					id: "7B000000010002F4"
-					item: { count: 1, id: "aquamirae:tempest_trident" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F4"
+				item: { count: 1, id: "aquamirae:tempest_trident" }
+				type: "item"
+			}]
 			x: 26.0d
 			y: 6.0d
 		}
@@ -12935,13 +13147,11 @@
 				id: "aquamirae:terrible_blade"
 			}
 			id: "7B000000000002F5"
-			tasks: [
-				{
-					id: "7B000000010002F5"
-					item: { count: 1, id: "aquamirae:terrible_blade" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F5"
+				item: { count: 1, id: "aquamirae:terrible_blade" }
+				type: "item"
+			}]
 			x: 27.0d
 			y: 6.0d
 		}
@@ -12950,13 +13160,11 @@
 				id: "aquamirae:terrible_chakram"
 			}
 			id: "7B000000000002F6"
-			tasks: [
-				{
-					id: "7B000000010002F6"
-					item: { count: 1, id: "aquamirae:terrible_chakram" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F6"
+				item: { count: 1, id: "aquamirae:terrible_chakram" }
+				type: "item"
+			}]
 			x: 24.0d
 			y: 7.0d
 		}
@@ -12965,13 +13173,11 @@
 				id: "aquamirae:terrible_cleaver"
 			}
 			id: "7B000000000002F7"
-			tasks: [
-				{
-					id: "7B000000010002F7"
-					item: { count: 1, id: "aquamirae:terrible_cleaver" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F7"
+				item: { count: 1, id: "aquamirae:terrible_cleaver" }
+				type: "item"
+			}]
 			x: 25.0d
 			y: 7.0d
 		}
@@ -12980,13 +13186,11 @@
 				id: "aquamirae:terrible_fang"
 			}
 			id: "7B000000000002F8"
-			tasks: [
-				{
-					id: "7B000000010002F8"
-					item: { count: 1, id: "aquamirae:terrible_fang" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F8"
+				item: { count: 1, id: "aquamirae:terrible_fang" }
+				type: "item"
+			}]
 			x: 26.0d
 			y: 7.0d
 		}
@@ -12995,13 +13199,11 @@
 				id: "aquamirae:tidepiercer"
 			}
 			id: "7B000000000002F9"
-			tasks: [
-				{
-					id: "7B000000010002F9"
-					item: { count: 1, id: "aquamirae:tidepiercer" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7B000000010002F9"
+				item: { count: 1, id: "aquamirae:tidepiercer" }
+				type: "item"
+			}]
 			x: 27.0d
 			y: 7.0d
 		}
@@ -13216,28 +13418,30 @@
 			y: -5.25d
 		}
 		{
-			y: 22.0d
-			x: 17.5d
+			icon: {
+				id: "twilightforest:block_and_chain"
+			}
 			id: "7B00000000006000"
-			icon: { id: "twilightforest:block_and_chain" }
 			tasks: [{
 				id: "7B00000001006000"
-				count: 1L
-				item: { count: 1 id: "twilightforest:block_and_chain" }
+				item: { count: 1, id: "twilightforest:block_and_chain" }
 				type: "item"
 			}]
+			x: 17.5d
+			y: 22.0d
 		}
 		{
-			y: 5.0d
-			x: 43.5d
+			icon: {
+				id: "block_factorys_bosses:ice_gauntlet"
+			}
 			id: "7B00000000006001"
-			icon: { id: "block_factorys_bosses:ice_gauntlet" }
 			tasks: [{
 				id: "7B00000001006001"
-				count: 1L
-				item: { count: 1 id: "block_factorys_bosses:ice_gauntlet" }
+				item: { count: 1, id: "block_factorys_bosses:ice_gauntlet" }
 				type: "item"
 			}]
+			x: 43.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13256,8 +13460,8 @@
 			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000030E"
 			rewards: [{
 				id: "7B0000000200030E"
@@ -13273,50 +13477,53 @@
 			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 13.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "alexsmobs:emu_feather"
+			}
 			id: "7B00000000005002"
-			icon: { id: "alexsmobs:emu_feather" }
 			tasks: [{
 				id: "7B00000001005002"
-				count: 1L
-				item: { count: 1 id: "alexsmobs:emu_feather" }
+				item: { count: 1, id: "alexsmobs:emu_feather" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 15.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "twilightforest:raven_feather"
+			}
 			id: "7B00000000005003"
-			icon: { id: "twilightforest:raven_feather" }
 			tasks: [{
 				id: "7B00000001005003"
-				count: 1L
-				item: { count: 1 id: "twilightforest:raven_feather" }
+				item: { count: 1, id: "twilightforest:raven_feather" }
 				type: "item"
 			}]
+			x: 15.0d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 16.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "alexsmobs:roadrunner_feather"
+			}
 			id: "7B00000000005004"
-			icon: { id: "alexsmobs:roadrunner_feather" }
 			tasks: [{
 				id: "7B00000001005004"
-				count: 1L
-				item: { count: 1 id: "alexsmobs:roadrunner_feather" }
+				item: { count: 1, id: "alexsmobs:roadrunner_feather" }
 				type: "item"
 			}]
+			x: 16.5d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000030F"
 			rewards: [{
 				id: "7B0000000200030F"
@@ -13332,74 +13539,79 @@
 			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 19.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "iceandfire:stymphalian_bird_feather"
+			}
 			id: "7B00000000005006"
-			icon: { id: "iceandfire:stymphalian_bird_feather" }
 			tasks: [{
 				id: "7B00000001005006"
-				count: 1L
-				item: { count: 1 id: "iceandfire:stymphalian_bird_feather" }
+				item: { count: 1, id: "iceandfire:stymphalian_bird_feather" }
 				type: "item"
 			}]
+			x: 19.5d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 21.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "iceandfire:amphithere_feather"
+			}
 			id: "7B00000000005007"
-			icon: { id: "iceandfire:amphithere_feather" }
 			tasks: [{
 				id: "7B00000001005007"
-				count: 1L
-				item: { count: 1 id: "iceandfire:amphithere_feather" }
+				item: { count: 1, id: "iceandfire:amphithere_feather" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 24.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "l2complements:sun_membrane"
+			}
 			id: "7B00000000005009"
-			icon: { id: "l2complements:sun_membrane" }
 			tasks: [{
 				id: "7B00000001005009"
-				count: 1L
-				item: { count: 1 id: "l2complements:sun_membrane" }
+				item: { count: 1, id: "l2complements:sun_membrane" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 25.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "l2complements:resonant_feather"
+			}
 			id: "7B0000000000500A"
-			icon: { id: "l2complements:resonant_feather" }
 			tasks: [{
 				id: "7B0000000100500A"
-				count: 1L
-				item: { count: 1 id: "l2complements:resonant_feather" }
+				item: { count: 1, id: "l2complements:resonant_feather" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -7.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -7.5d
-			x: 27.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "avaritia_delight:neutronium_wheat"
+			}
 			id: "7B0000000000500B"
-			icon: { id: "avaritia_delight:neutronium_wheat" }
 			tasks: [{
 				id: "7B0000000100500B"
-				count: 1L
-				item: { count: 1 id: "avaritia_delight:neutronium_wheat" }
+				item: { count: 1, id: "avaritia_delight:neutronium_wheat" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13418,8 +13630,8 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000316"
 			rewards: [{
 				id: "7B00000002000316"
@@ -13435,8 +13647,8 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000317"
 			rewards: [{
 				id: "7B00000002000317"
@@ -13452,8 +13664,8 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000314"
 			rewards: [{
 				id: "7B00000002000314"
@@ -13469,8 +13681,8 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000313"
 			rewards: [{
 				id: "7B00000002000313"
@@ -13486,22 +13698,23 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -6.0d
-			x: 18.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "born_in_chaos_v1:dark_rod"
+			}
 			id: "7B00000000005011"
-			icon: { id: "born_in_chaos_v1:dark_rod" }
 			tasks: [{
 				id: "7B00000001005011"
-				count: 1L
-				item: { count: 1 id: "born_in_chaos_v1:dark_rod" }
+				item: { count: 1, id: "born_in_chaos_v1:dark_rod" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000312"
 			rewards: [{
 				id: "7B00000002000312"
@@ -13517,8 +13730,8 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000315"
 			rewards: [{
 				id: "7B00000002000315"
@@ -13534,32 +13747,34 @@
 			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -6.0d
-			x: 25.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "powah:dielectric_rod"
+			}
 			id: "7B00000000005016"
-			icon: { id: "powah:dielectric_rod" }
 			tasks: [{
 				id: "7B00000001005016"
-				count: 1L
-				item: { count: 1 id: "powah:dielectric_rod" }
+				item: { count: 1, id: "powah:dielectric_rod" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -6.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -6.0d
-			x: 27.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "enigmaticlegacyplus:ender_rod"
+			}
 			id: "7B00000000005017"
-			icon: { id: "enigmaticlegacyplus:ender_rod" }
 			tasks: [{
 				id: "7B00000001005017"
-				count: 1L
-				item: { count: 1 id: "enigmaticlegacyplus:ender_rod" }
+				item: { count: 1, id: "enigmaticlegacyplus:ender_rod" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13578,22 +13793,23 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 12.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "alexsmobs:shark_tooth"
+			}
 			id: "7B00000000005019"
-			icon: { id: "alexsmobs:shark_tooth" }
 			tasks: [{
 				id: "7B00000001005019"
-				count: 1L
-				item: { count: 1 id: "alexsmobs:shark_tooth" }
+				item: { count: 1, id: "alexsmobs:shark_tooth" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000031E"
 			rewards: [{
 				id: "7B0000000200031E"
@@ -13609,8 +13825,8 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000319"
 			rewards: [{
 				id: "7B00000002000319"
@@ -13626,8 +13842,8 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000031A"
 			rewards: [{
 				id: "7B0000000200031A"
@@ -13643,8 +13859,8 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000320"
 			rewards: [{
 				id: "7B00000002000320"
@@ -13660,8 +13876,8 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000031C"
 			rewards: [{
 				id: "7B0000000200031C"
@@ -13677,8 +13893,8 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000031D"
 			rewards: [{
 				id: "7B0000000200031D"
@@ -13694,36 +13910,38 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 22.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "mythsandlegends:gargoyle_shard"
+			}
 			id: "7B00000000005020"
-			icon: { id: "mythsandlegends:gargoyle_shard" }
 			tasks: [{
 				id: "7B00000001005020"
-				count: 1L
-				item: { count: 1 id: "mythsandlegends:gargoyle_shard" }
+				item: { count: 1, id: "mythsandlegends:gargoyle_shard" }
 				type: "item"
 			}]
+			x: 22.5d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 24.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "irons_spellbooks:permafrost_shard"
+			}
 			id: "7B00000000005021"
-			icon: { id: "irons_spellbooks:permafrost_shard" }
 			tasks: [{
 				id: "7B00000001005021"
-				count: 1L
-				item: { count: 1 id: "irons_spellbooks:permafrost_shard" }
+				item: { count: 1, id: "irons_spellbooks:permafrost_shard" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000321"
 			rewards: [{
 				id: "7B00000002000321"
@@ -13739,50 +13957,53 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 28.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "malum:mnemonic_fragment"
+			}
 			id: "7B00000000005024"
-			icon: { id: "malum:mnemonic_fragment" }
 			tasks: [{
 				id: "7B00000001005024"
-				count: 1L
-				item: { count: 1 id: "malum:mnemonic_fragment" }
+				item: { count: 1, id: "malum:mnemonic_fragment" }
 				type: "item"
 			}]
+			x: 28.5d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 30.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "aquamirae:abyssal_amethyst"
+			}
 			id: "7B00000000005025"
-			icon: { id: "aquamirae:abyssal_amethyst" }
 			tasks: [{
 				id: "7B00000001005025"
-				count: 1L
-				item: { count: 1 id: "aquamirae:abyssal_amethyst" }
+				item: { count: 1, id: "aquamirae:abyssal_amethyst" }
 				type: "item"
 			}]
+			x: 30.0d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 31.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "pastel:onyx_shard"
+			}
 			id: "7B00000000005026"
-			icon: { id: "pastel:onyx_shard" }
 			tasks: [{
 				id: "7B00000001005026"
-				count: 1L
-				item: { count: 1 id: "pastel:onyx_shard" }
+				item: { count: 1, id: "pastel:onyx_shard" }
 				type: "item"
 			}]
+			x: 31.5d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000031B"
 			rewards: [{
 				id: "7B0000000200031B"
@@ -13798,22 +14019,23 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 34.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "pastel:moonstone_shard"
+			}
 			id: "7B00000000005028"
-			icon: { id: "pastel:moonstone_shard" }
 			tasks: [{
 				id: "7B00000001005028"
-				count: 1L
-				item: { count: 1 id: "pastel:moonstone_shard" }
+				item: { count: 1, id: "pastel:moonstone_shard" }
 				type: "item"
 			}]
+			x: 34.5d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000322"
 			rewards: [{
 				id: "7B00000002000322"
@@ -13829,36 +14051,38 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 37.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
 			id: "7B0000000000502A"
-			icon: { id: "minecraft:dragon_egg" }
 			tasks: [{
 				id: "7B0000000100502A"
-				count: 1L
-				item: { count: 1 id: "minecraft:dragon_egg" }
+				item: { count: 1, id: "minecraft:dragon_egg" }
 				type: "item"
 			}]
+			x: 37.5d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 39.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "deeperdarker:reinforced_echo_shard"
+			}
 			id: "7B0000000000502B"
-			icon: { id: "deeperdarker:reinforced_echo_shard" }
 			tasks: [{
 				id: "7B0000000100502B"
-				count: 1L
-				item: { count: 1 id: "deeperdarker:reinforced_echo_shard" }
+				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
 				type: "item"
 			}]
+			x: 39.0d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000323"
 			rewards: [{
 				id: "7B00000002000323"
@@ -13874,32 +14098,34 @@
 			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 42.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "irons_spellbooks:divine_soulshard"
+			}
 			id: "7B0000000000502D"
-			icon: { id: "irons_spellbooks:divine_soulshard" }
 			tasks: [{
 				id: "7B0000000100502D"
-				count: 1L
-				item: { count: 1 id: "irons_spellbooks:divine_soulshard" }
+				item: { count: 1, id: "irons_spellbooks:divine_soulshard" }
 				type: "item"
 			}]
+			x: 42.0d
+			y: -4.5d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -4.5d
-			x: 43.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "discerning_the_eldritch:eldritch_soul_shard"
+			}
 			id: "7B0000000000502E"
-			icon: { id: "discerning_the_eldritch:eldritch_soul_shard" }
 			tasks: [{
 				id: "7B0000000100502E"
-				count: 1L
-				item: { count: 1 id: "discerning_the_eldritch:eldritch_soul_shard" }
+				item: { count: 1, id: "discerning_the_eldritch:eldritch_soul_shard" }
 				type: "item"
 			}]
+			x: 43.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["7B0000000000030D"]
@@ -13918,8 +14144,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000327"
 			rewards: [{
 				id: "7B00000002000327"
@@ -13935,8 +14161,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000328"
 			rewards: [{
 				id: "7B00000002000328"
@@ -13952,8 +14178,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B00000000000329"
 			rewards: [{
 				id: "7B00000002000329"
@@ -13969,8 +14195,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000032B"
 			rewards: [{
 				id: "7B0000000200032B"
@@ -13986,22 +14212,23 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 18.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "anvilcraft:sea_heart_shell_shard"
+			}
 			id: "7B00000000005034"
-			icon: { id: "anvilcraft:sea_heart_shell_shard" }
 			tasks: [{
 				id: "7B00000001005034"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:sea_heart_shell_shard" }
+				item: { count: 1, id: "anvilcraft:sea_heart_shell_shard" }
 				type: "item"
 			}]
+			x: 18.0d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000032D"
 			rewards: [{
 				id: "7B0000000200032D"
@@ -14017,8 +14244,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000032E"
 			rewards: [{
 				id: "7B0000000200032E"
@@ -14034,8 +14261,8 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
+			hide_dependency_lines: true
 			id: "7B0000000000032F"
 			rewards: [{
 				id: "7B0000000200032F"
@@ -14051,130 +14278,139 @@
 			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 24.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:tnt"
+			}
 			id: "7B00000000005038"
-			icon: { id: "minecraft:tnt" }
 			tasks: [{
 				id: "7B00000001005038"
-				count: 1L
-				item: { count: 1 id: "minecraft:tnt" }
+				item: { count: 1, id: "minecraft:tnt" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 25.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "enigmaticlegacyplus:earth_heart_fragment"
+			}
 			id: "7B00000000005039"
-			icon: { id: "enigmaticlegacyplus:earth_heart_fragment" }
 			tasks: [{
 				id: "7B00000001005039"
-				count: 1L
-				item: { count: 1 id: "enigmaticlegacyplus:earth_heart_fragment" }
+				item: { count: 1, id: "enigmaticlegacyplus:earth_heart_fragment" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 27.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:sponge"
+			}
 			id: "7B0000000000503A"
-			icon: { id: "minecraft:sponge" }
 			tasks: [{
 				id: "7B0000000100503A"
-				count: 1L
-				item: { count: 1 id: "minecraft:sponge" }
+				item: { count: 1, id: "minecraft:sponge" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 28.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "iceandfire:dread_shard"
+			}
 			id: "7B0000000000503B"
-			icon: { id: "iceandfire:dread_shard" }
 			tasks: [{
 				id: "7B0000000100503B"
-				count: 1L
-				item: { count: 1 id: "iceandfire:dread_shard" }
+				item: { count: 1, id: "iceandfire:dread_shard" }
 				type: "item"
 			}]
+			x: 28.5d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 30.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "irons_spellbooks:lightning_bottle"
+			}
 			id: "7B0000000000503C"
-			icon: { id: "irons_spellbooks:lightning_bottle" }
 			tasks: [{
 				id: "7B0000000100503C"
-				count: 1L
-				item: { count: 1 id: "irons_spellbooks:lightning_bottle" }
+				item: { count: 1, id: "irons_spellbooks:lightning_bottle" }
 				type: "item"
 			}]
+			x: 30.0d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 31.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "irons_spellbooks:blood_vial"
+			}
 			id: "7B0000000000503D"
-			icon: { id: "irons_spellbooks:blood_vial" }
 			tasks: [{
 				id: "7B0000000100503D"
-				count: 1L
-				item: { count: 1 id: "irons_spellbooks:blood_vial" }
+				item: { count: 1, id: "irons_spellbooks:blood_vial" }
 				type: "item"
 			}]
+			x: 31.5d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 33.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "twilightforest:fiery_blood"
+			}
 			id: "7B0000000000503E"
-			icon: { id: "twilightforest:fiery_blood" }
 			tasks: [{
 				id: "7B0000000100503E"
-				count: 1L
-				item: { count: 1 id: "twilightforest:fiery_blood" }
+				item: { count: 1, id: "twilightforest:fiery_blood" }
 				type: "item"
 			}]
+			x: 33.0d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 34.5d
+			hide_dependency_lines: true
+			icon: {
+				id: "anvilcraft:magnet_ingot"
+			}
 			id: "7B0000000000503F"
-			icon: { id: "anvilcraft:magnet_ingot" }
 			tasks: [{
 				id: "7B0000000100503F"
-				count: 1L
-				item: { count: 1 id: "anvilcraft:magnet_ingot" }
+				item: { count: 1, id: "anvilcraft:magnet_ingot" }
 				type: "item"
 			}]
+			x: 34.5d
+			y: -3.0d
 		}
 		{
-			hide_dependency_lines: true
 			dependencies: ["7B0000000000030D"]
-			y: -3.0d
-			x: 36.0d
+			hide_dependency_lines: true
+			icon: {
+				id: "malum:refined_brilliance"
+			}
 			id: "7B00000000005040"
-			icon: { id: "malum:refined_brilliance" }
 			tasks: [{
 				id: "7B00000001005040"
-				count: 1L
-				item: { count: 1 id: "malum:refined_brilliance" }
+				item: { count: 1, id: "malum:refined_brilliance" }
 				type: "item"
 			}]
+			x: 36.0d
+			y: -3.0d
 		}
 	]
 }

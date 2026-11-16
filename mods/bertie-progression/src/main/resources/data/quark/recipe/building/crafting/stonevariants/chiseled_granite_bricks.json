@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "quark:granite_bricks"
+    }
+  },
+  "result": {
+    "id": "quark:chiseled_granite_bricks",
+    "count": 5
+  }
+}

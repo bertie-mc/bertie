@@ -1,19 +1,7 @@
 {
-  "type": "farmersdelight:cutting",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "item": "antarchy:raw_venison"
+      "type": "neoforge:false"
     }
-  ],
-  "result": [
-    {
-      "item": {
-        "count": 2,
-        "id": "twilightdelight:raw_venison_rib"
-      }
-    }
-  ],
-  "tool": {
-    "tag": "c:tools/knife"
-  }
+  ]
 }

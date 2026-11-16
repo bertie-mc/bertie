@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "antarchy:broodstone_bricks"
+    }
+  },
+  "result": {
+    "id": "antarchy:chiseled_broodstone",
+    "count": 5
+  }
+}
