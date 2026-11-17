@@ -1,0 +1,46 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "     ",
+    "A    ",
+    "BCCCC",
+    "BDDDC",
+    "EEEEE"
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:steel_casing"
+    },
+    "B": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "C": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "D": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "E": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "result": {
+    "id": "mekanism:chargepad",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

@@ -1,9 +1,26 @@
 # Cybernetics and refining
 
 The Augmentation Center and basic Research Station use 5×5 Nether Table recipes.
-The twelve selected research nodes retain native energy, timing, requirements,
-effects and application costs; only their item research costs change. The exact
+The twelve selected research nodes retain native energy, timing and application
+costs. Living Fortress and Flight exchange their tree positions and dependency
+roles, retaining their identities, effects, station requirements and costs.
+Auto-Feeder becomes Adaptive Immune System: its saved identity and costs remain,
+while its effect protects against Unbound's vacuum instead of consuming food.
+Disabled or removed immunity restores native vacuum behavior. The exact
 cost arrays are authored in `texture-work/augmentation_research_costs.json`.
+
+The Mechanical Adapter powers only the Augmentation Center. Form the center with
+ten placed Create Copper Casings. Stack two more Copper Casings at its rear,
+two blocks behind the controller, and use a Create Wrench on the lower Casing.
+The two rear shaft sockets must both be driven in the same direction; equal RPM
+is unnecessary. Each input applies eight stress units per RPM. Charging is
+32 RF per tick per RPM of the slower input, without a minimum speed threshold.
+These defaults do not change existing research energy costs. External RF input
+and extraction remain closed through both controller and multiblock ports.
+Stopping or removing the adapter retains stored energy and research progress.
+Research-station construction and controller/research/application recipes remain
+unchanged. The combined entry quest moves into C2 after Electron Tube and
+Precision Mechanism.
 
 Untreated Reinforced Carbon Sheet uses the 7×7 End Table. Refinery combines one Untreated
 Sheet and 3,000 mB Light Naphtha into one Reinforced Carbon Sheet. Plating crafts
@@ -27,7 +44,7 @@ Cubes are withdrawn. Native Basic through Ultimate storage remains. Mekanism's
 native Installer blacklist stops Ultimate storage entering the retired tiers and
 stops existing retired storage upgrading further; factory Installer uses remain.
 Naquadah Reactor Controller uses an Ultimate Chemical Tank. Dynamic Tank uses
-four Steel Sheets and a Bucket to produce four blocks.
+four Steel Sheets and a Bucket to produce one block.
 
 Schrödinger's Safe uses the captured 7×7 End Table recipe. Confined Energy Anvilon
 is an accepted high-capacity contained core, added to Oritech's native high tag.

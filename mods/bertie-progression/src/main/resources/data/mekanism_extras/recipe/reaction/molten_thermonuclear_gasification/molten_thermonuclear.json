@@ -11,7 +11,7 @@
     "chemical": "mekanism:superheated_sodium"
   },
   "item_input": {
-    "item": "l2complements:sculkium_ingot",
+    "item": "iceandfire:dragonsteel_fire_ingot",
     "count": 1
   },
   "chemical_output": {
@@ -21,7 +21,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "l2complements"
+      "modid": "iceandfire"
     },
     {
       "type": "neoforge:mod_loaded",

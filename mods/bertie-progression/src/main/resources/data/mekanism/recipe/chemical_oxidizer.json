@@ -18,9 +18,14 @@
     "C": {
       "item": "mekanism:ultimate_control_circuit"
     },
-    "D": {
-      "item": "mekanism:personal_barrel"
-    },
+    "D": [
+      {
+        "item": "mekanism:personal_barrel"
+      },
+      {
+        "item": "mekanism:personal_chest"
+      }
+    ],
     "E": {
       "item": "mekanism:steel_casing"
     },

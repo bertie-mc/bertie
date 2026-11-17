@@ -1,0 +1,55 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAAAA  ",
+    "AABA   ",
+    "ABCAD  ",
+    "AAAEED ",
+    "A DEEED",
+    "   DEED",
+    "  F DD "
+  ],
+  "key": {
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "B": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "C": {
+      "item": "mekanism:energy_tablet"
+    },
+    "D": {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    "E": {
+      "item": "oritech:motor"
+    },
+    "F": {
+      "item": "oritech:carbon_fibre_strands"
+    }
+  },
+  "result": {
+    "id": "oritech:hand_drill",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

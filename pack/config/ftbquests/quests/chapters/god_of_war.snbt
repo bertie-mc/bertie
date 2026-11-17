@@ -12865,32 +12865,6 @@
 		}
 		{
 			icon: {
-				id: "rustic_engineer:rustic_glider_chestplate"
-			}
-			id: "7B000000000002E3"
-			tasks: [{
-				id: "7B000000010002E3"
-				item: { count: 1, id: "rustic_engineer:rustic_glider_chestplate" }
-				type: "item"
-			}]
-			x: -22.0d
-			y: -6.0d
-		}
-		{
-			icon: {
-				id: "rustic_engineer:rustic_glider_speed_chestplate"
-			}
-			id: "7B000000000002E4"
-			tasks: [{
-				id: "7B000000010002E4"
-				item: { count: 1, id: "rustic_engineer:rustic_glider_speed_chestplate" }
-				type: "item"
-			}]
-			x: -22.0d
-			y: -5.0d
-		}
-		{
-			icon: {
 				id: "avaritia:blaze_bow"
 			}
 			id: "7B000000000002E6"

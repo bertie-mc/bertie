@@ -1,0 +1,46 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "     ",
+    " A A ",
+    " BBB ",
+    "BCDCB",
+    "EEEEE"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:electric_coil"
+    },
+    "B": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "C": {
+      "item": "oritech:basic_battery"
+    },
+    "D": {
+      "item": "mekanism:steel_casing"
+    },
+    "E": {
+      "item": "bertieprogression:steel_sheet"
+    }
+  },
+  "result": {
+    "id": "oritech:charger_block",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

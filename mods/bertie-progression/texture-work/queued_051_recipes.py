@@ -80,7 +80,8 @@ def apply(module, native):
     rid = 'mekanism_extras:reaction/molten_thermonuclear_gasification/molten_thermonuclear'
     value = copy.deepcopy(effective[rid])
     old = value['item_input']
-    assert old.get('tag') == 'c:ingots/netherite' or old.get('item') == 'l2complements:sculkium_ingot'
+    assert old.get('tag') == 'c:ingots/netherite' or old.get('item') in {
+        'l2complements:sculkium_ingot', 'iceandfire:dragonsteel_fire_ingot'}
     value['item_input'] = {'item':'l2complements:sculkium_ingot','count':old['count']}
     value['neoforge:conditions'] = conditions(['mekanism:reaction','mekanism_extras:molten_thermonuclear','l2complements:sculkium_ingot'])
     write(rid, value)

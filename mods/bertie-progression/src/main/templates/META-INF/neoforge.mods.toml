@@ -1101,3 +1101,10 @@ type="optional"
 versionRange="[0,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="unbound"
+type="optional"
+versionRange="[0.15.4,)"
+ordering="AFTER"
+side="BOTH"

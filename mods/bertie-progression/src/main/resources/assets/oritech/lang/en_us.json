@@ -1,3 +1,7 @@
 {
-  "item.oritech.raw_silicon": "Charge Mix"
+  "item.oritech.raw_silicon": "Charge Mix",
+  "oritech.text.augment.autofeeder": "Adaptive Immune System",
+  "oritech.text.augment.autofeeder.desc.1": "Deploys nanobots to protect from dangers of space.",
+  "oritech.text.augment.autofeeder.desc.2": "Prevents negative effects of vacuum",
+  "oritech.text.augment.autofeeder.desc": "Deploys nanobots to protect from dangers of space."
 }

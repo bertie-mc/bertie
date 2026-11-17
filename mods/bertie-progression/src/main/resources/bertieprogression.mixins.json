@@ -6,6 +6,8 @@
   "refmap": "bertieprogression.refmap.json",
   "plugin": "io.github.bertie_mc.bertieprogression.compat.ProgressionMixinPlugin",
   "mixins": [
+    "AugmentationCenterMixin",
+    "UnboundVacuumMixin",
     "ArmageddonOreLootMixin",
     "AltarOfAmethystAccessor",
     "AltarOfAmethystMixin",
@@ -37,6 +39,9 @@
     "RemovedTippedArrowMixin",
     "RefinedFortuneMixin",
     "EndRemNativeSourcesMixin",
+    "EndRemCodecAliasMixin",
+    "OwoSidedCodecAccessor",
+    "OwoNetworkCodecMixin",
     "MagicalEyeCastMixin",
     "EyeArchaeologyMixin",
     "EyeEnchantingMixin",

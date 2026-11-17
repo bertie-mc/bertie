@@ -1,0 +1,59 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "    AAA",
+    "   ABBA",
+    "  ABBBA",
+    "CDDEBA ",
+    "DFFDA  ",
+    "FFFD   ",
+    "FFDC   "
+  ],
+  "key": {
+    "A": {
+      "item": "anvilcraft:earth_core_shard"
+    },
+    "B": {
+      "item": "mekanism_extras:alloy_radiance"
+    },
+    "C": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "D": {
+      "item": "oritech:adamant_ingot"
+    },
+    "E": {
+      "item": "mekanism:energy_tablet"
+    },
+    "F": {
+      "item": "oritech:motor"
+    }
+  },
+  "result": {
+    "id": "oritech:chainsaw",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "anvilcraft"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

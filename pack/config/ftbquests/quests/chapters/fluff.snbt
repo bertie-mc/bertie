@@ -49,39 +49,6 @@
 		}
 		{
 			icon: {
-				id: "rustic_engineer:spider_mech_item"
-			}
-			id: "6C0000000000000A"
-			rewards: [{
-				id: "6C0000000200000A"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6C0000000101000A"
-				item: { count: 1, id: "rustic_engineer:spider_mech_item" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
-		}
-		{
-			id: "6C0000000000000D"
-			rewards: [{
-				id: "6C0000000200000D"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "6C0000000100000D"
-				item: { count: 1, id: "minecraft:elytra" }
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			icon: {
 				id: "mekanism:jetpack"
 			}
 			id: "6C0000000000000E"

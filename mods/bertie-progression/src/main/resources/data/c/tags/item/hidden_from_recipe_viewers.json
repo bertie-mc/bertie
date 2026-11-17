@@ -5424,6 +5424,9 @@
     {
       "id": "quark:gunpowder_sack",
       "required": false
-    }
+    },
+    "rustic_engineer:rustic_glider_chestplate",
+    "rustic_engineer:rustic_glider_speed_chestplate",
+    "rustic_engineer:speed_booster"
   ]
 }

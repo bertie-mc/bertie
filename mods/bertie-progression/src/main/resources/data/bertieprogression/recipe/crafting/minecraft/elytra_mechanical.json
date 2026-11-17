@@ -1,0 +1,71 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " A   A ",
+    "ABACABA",
+    "ADEFEDA",
+    "GDEHEDG",
+    "GIE EIG",
+    " GJ JG ",
+    " J   J "
+  ],
+  "key": {
+    "A": {
+      "item": "l2complements:sun_membrane"
+    },
+    "B": {
+      "item": "l2complements:storm_core"
+    },
+    "C": {
+      "item": "mythsandlegends:bound_soul_ingot"
+    },
+    "D": {
+      "item": "l2complements:captured_wind"
+    },
+    "E": {
+      "item": "curseofpandora:evil_spine"
+    },
+    "F": {
+      "item": "curseofpandora:evil_stone"
+    },
+    "G": {
+      "item": "berlordscarving:echo_slate"
+    },
+    "H": {
+      "item": "l2complements:life_essence"
+    },
+    "I": {
+      "item": "l2complements:explosion_shard"
+    },
+    "J": {
+      "item": "l2complements:resonant_feather"
+    }
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "berlordscarving"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "curseofpandora"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mythsandlegends"
+    }
+  ]
+}

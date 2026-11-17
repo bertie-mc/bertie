@@ -65,6 +65,7 @@ configurations.named("clienttestRuntimeOnly") {
 
 dependencies {
     clienttestRuntimeOnly(deps.sodium)
+    clienttestRuntimeOnly(deps.slagNEmbers)
     clienttestRuntimeOnly(deps.apexArcana)
     clienttestRuntimeOnly(deps.archaion)
     clienttestRuntimeOnly(deps.diorama)
@@ -77,6 +78,7 @@ dependencies {
     compileOnly(deps.universalSawmill)
     compileOnly(deps.pastelMod)
     compileOnly(deps.mekanism)
+    compileOnly(deps.oritech)
     compileOnly(deps.refinedStorage)
     compileOnly(deps.reAvaritia)
     jarJarCompileOnly(deps.l2Complements)
@@ -149,6 +151,7 @@ dependencies {
     "integrationtestImplementation"(deps.iceandfireCe)
     "integrationtestImplementation"(deps.forbiddenArcanus)
     "integrationtestImplementation"(deps.oritech)
+    "integrationtestImplementation"(deps.unbound)
     "integrationtestRuntimeOnly"(deps.pastelMod)
     "integrationtestImplementation"(deps.refinedStorage)
     "integrationtestImplementation"(deps.ironsSpellsNSpellbooks)

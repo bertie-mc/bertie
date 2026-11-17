@@ -861,7 +861,8 @@
       "id": "pastel:neolith_block",
       "required": false
     },
-    "bertieprogression:sentient_casing"
+    "bertieprogression:sentient_casing",
+    "bertieprogression:mechanical_adapter"
   ],
   "remove": [
     {

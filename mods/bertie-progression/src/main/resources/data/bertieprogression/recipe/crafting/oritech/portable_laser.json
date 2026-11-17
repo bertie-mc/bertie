@@ -1,0 +1,51 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " ABBA  ",
+    "BBCCCCC",
+    "BDEFFFF",
+    "BBCCCCC",
+    " ABBA  ",
+    "AAA    ",
+    "AA     "
+  ],
+  "key": {
+    "A": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "B": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "C": {
+      "item": "oritech:superconductor"
+    },
+    "D": {
+      "item": "mekanism:energy_tablet"
+    },
+    "E": {
+      "item": "oritech:laser_arm_block"
+    },
+    "F": {
+      "item": "mekanism:pellet_plutonium"
+    }
+  },
+  "result": {
+    "id": "oritech:portable_laser",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

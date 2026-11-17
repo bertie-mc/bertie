@@ -1,0 +1,48 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "   AAB ",
+    "   AAAB",
+    "   CDAA",
+    "  CECAA",
+    " CEC AA",
+    "CEC   A",
+    "BC     "
+  ],
+  "key": {
+    "A": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "B": {
+      "item": "oritech:reinforced_carbon_sheet"
+    },
+    "C": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "D": {
+      "item": "mekanism:energy_tablet"
+    },
+    "E": {
+      "item": "mekanism:alloy_atomic"
+    }
+  },
+  "result": {
+    "id": "mekanism:atomic_disassembler",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

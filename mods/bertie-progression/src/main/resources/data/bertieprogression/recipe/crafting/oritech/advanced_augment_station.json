@@ -1,0 +1,67 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "AAAAB",
+    "ACDEB",
+    "AAFGB",
+    "HACEB",
+    "HAAAB"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:titanium_sheet"
+    },
+    "B": {
+      "item": "cognition:cognitive_alloy"
+    },
+    "C": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "D": {
+      "item": "forbidden_arcanus:quantum_core"
+    },
+    "E": {
+      "item": "oritech:super_ai_chip"
+    },
+    "F": {
+      "item": "bertieprogression:sentient_casing"
+    },
+    "G": {
+      "item": "deeperdarker:reinforced_echo_shard"
+    },
+    "H": {
+      "item": "oritech:superconductor"
+    }
+  },
+  "result": {
+    "id": "oritech:advanced_augment_station",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cognition"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deeperdarker"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

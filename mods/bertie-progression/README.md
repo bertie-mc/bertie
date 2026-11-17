@@ -47,9 +47,13 @@ Pearl Fragment and Levitation Powder Block variants. Oritech supplies the canoni
 Acid liquid; Mekanism's chemical remains available through the Rotary machine.
 
 Cybernetic Augmentation Center and Research Station have Nether Table recipes.
-Twelve research nodes use pack material costs while retaining native energy,
-time, effects and installation costs. [Cybernetics and refining](docs/cybernetics-refining.md)
+Twelve research nodes use pack material costs. The Create-only Mechanical Adapter
+powers the center through two rear shafts; Adaptive Immune System replaces
+Auto-Feeder with Unbound vacuum protection. Research energy and installation
+costs remain. [Cybernetics and refining](docs/cybernetics-refining.md)
 documents the material selection and storage policy.
+[Powered equipment](docs/powered-equipment.md) covers the captured tools,
+charging stations and Elytra alternatives.
 
 [Compact spaces](docs/compact-spaces.md) documents the Wall/room Miniaturization
 recipes, captured machine crafts, native EMI views and revised storage parts.

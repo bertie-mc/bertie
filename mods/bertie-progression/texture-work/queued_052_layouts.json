@@ -1,0 +1,441 @@
+[
+  {
+    "recipe": "bertieprogression:crafting/mekanism/atomic_disassembler",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      "   AAB ",
+      "   AAAB",
+      "   CDAA",
+      "  CECAA",
+      " CEC AA",
+      "CEC   A",
+      "BC     "
+    ],
+    "key": {
+      "A": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "B": {
+        "item": "oritech:reinforced_carbon_sheet"
+      },
+      "C": {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      "D": {
+        "item": "mekanism:energy_tablet"
+      },
+      "E": {
+        "item": "mekanism:alloy_atomic"
+      }
+    },
+    "result": {
+      "id": "mekanism:atomic_disassembler",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/charger_block",
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "pattern": [
+      "     ",
+      " A A ",
+      " BBB ",
+      "BCDCB",
+      "EEEEE"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:electric_coil"
+      },
+      "B": {
+        "item": "mekanism:hdpe_sheet"
+      },
+      "C": {
+        "item": "oritech:basic_battery"
+      },
+      "D": {
+        "item": "mekanism:steel_casing"
+      },
+      "E": {
+        "item": "bertieprogression:steel_sheet"
+      }
+    },
+    "result": {
+      "id": "oritech:charger_block",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/mekanism/chargepad",
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "pattern": [
+      "     ",
+      "A    ",
+      "BCCCC",
+      "BDDDC",
+      "EEEEE"
+    ],
+    "key": {
+      "A": {
+        "item": "mekanism:steel_casing"
+      },
+      "B": {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      "C": {
+        "item": "mekanism:hdpe_sheet"
+      },
+      "D": {
+        "item": "bertieprogression:electric_coil"
+      },
+      "E": {
+        "item": "bertieprogression:steel_sheet"
+      }
+    },
+    "result": {
+      "id": "mekanism:chargepad",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/mekmm/wireless_charging_station",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      " ABBBA ",
+      " AACAA ",
+      " ADEDA ",
+      "  DFD  ",
+      " DDGDD ",
+      " DHIHD ",
+      " DDDDD "
+    ],
+    "key": {
+      "A": {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      "B": {
+        "item": "mekanism:hdpe_sheet"
+      },
+      "C": {
+        "item": "anvilcraft:remote_transmission_pole"
+      },
+      "D": {
+        "item": "bertieprogression:titanium_sheet"
+      },
+      "E": {
+        "item": "mekanism:teleportation_core"
+      },
+      "F": {
+        "item": "mekanism:hdpe_rod"
+      },
+      "G": [
+        {
+          "item": "mekanism:chargepad"
+        },
+        {
+          "item": "oritech:charger_block"
+        }
+      ],
+      "H": {
+        "item": "oritech:basic_battery"
+      },
+      "I": {
+        "item": "mekanism:advanced_energy_cube"
+      }
+    },
+    "result": {
+      "id": "mekmm:wireless_charging_station",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/chainsaw",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      "    AAA",
+      "   ABBA",
+      "  ABBBA",
+      "CDDEBA ",
+      "DFFDA  ",
+      "FFFD   ",
+      "FFDC   "
+    ],
+    "key": {
+      "A": {
+        "item": "anvilcraft:earth_core_shard"
+      },
+      "B": {
+        "item": "mekanism_extras:alloy_radiance"
+      },
+      "C": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "D": {
+        "item": "oritech:adamant_ingot"
+      },
+      "E": {
+        "item": "mekanism:energy_tablet"
+      },
+      "F": {
+        "item": "oritech:motor"
+      }
+    },
+    "result": {
+      "id": "oritech:chainsaw",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/electric_mace",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      " A B A ",
+      " ACCCA ",
+      " ACDCA ",
+      " ACCCA ",
+      " AEFEA ",
+      "  GFG  ",
+      "  GFG  "
+    ],
+    "key": {
+      "A": {
+        "item": "oritech:adamant_ingot"
+      },
+      "B": {
+        "item": "mekanism_extras:alloy_radiance"
+      },
+      "C": {
+        "item": "minecraft:heavy_core"
+      },
+      "D": {
+        "item": "mekanism:energy_tablet"
+      },
+      "E": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "F": {
+        "item": "oritech:motor"
+      },
+      "G": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    },
+    "result": {
+      "id": "oritech:electric_mace",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/hand_drill",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      "AAAAA  ",
+      "AABA   ",
+      "ABCAD  ",
+      "AAAEED ",
+      "A DEEED",
+      "   DEED",
+      "  F DD "
+    ],
+    "key": {
+      "A": {
+        "item": "oritech:adamant_ingot"
+      },
+      "B": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "C": {
+        "item": "mekanism:energy_tablet"
+      },
+      "D": {
+        "item": "anvilcraft:earth_core_shard"
+      },
+      "E": {
+        "item": "oritech:motor"
+      },
+      "F": {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    },
+    "result": {
+      "id": "oritech:hand_drill",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/portable_laser",
+    "type": "avaritia:shaped_table",
+    "tier": 3,
+    "pattern": [
+      " ABBA  ",
+      "BBCCCCC",
+      "BDEFFFF",
+      "BBCCCCC",
+      " ABBA  ",
+      "AAA    ",
+      "AA     "
+    ],
+    "key": {
+      "A": {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      "B": {
+        "item": "mekanism:alloy_atomic"
+      },
+      "C": {
+        "item": "oritech:superconductor"
+      },
+      "D": {
+        "item": "mekanism:energy_tablet"
+      },
+      "E": {
+        "item": "oritech:laser_arm_block"
+      },
+      "F": {
+        "item": "mekanism:pellet_plutonium"
+      }
+    },
+    "result": {
+      "id": "oritech:portable_laser",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/oritech/advanced_augment_station",
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "pattern": [
+      "AAAAB",
+      "ACDEB",
+      "AAFGB",
+      "HACEB",
+      "HAAAB"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:titanium_sheet"
+      },
+      "B": {
+        "item": "cognition:cognitive_alloy"
+      },
+      "C": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "D": {
+        "item": "forbidden_arcanus:quantum_core"
+      },
+      "E": {
+        "item": "oritech:super_ai_chip"
+      },
+      "F": {
+        "item": "bertieprogression:sentient_casing"
+      },
+      "G": {
+        "item": "deeperdarker:reinforced_echo_shard"
+      },
+      "H": {
+        "item": "oritech:superconductor"
+      }
+    },
+    "result": {
+      "id": "oritech:advanced_augment_station",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/minecraft/elytra_mechanical",
+    "type": "create:mechanical_crafting",
+    "tier": 3,
+    "pattern": [
+      " A   A ",
+      "ABACABA",
+      "ADEFEDA",
+      "GDEHEDG",
+      "GIE EIG",
+      " GJ JG ",
+      " J   J "
+    ],
+    "key": {
+      "A": {
+        "item": "l2complements:sun_membrane"
+      },
+      "B": {
+        "item": "l2complements:storm_core"
+      },
+      "C": {
+        "item": "mythsandlegends:bound_soul_ingot"
+      },
+      "D": {
+        "item": "l2complements:captured_wind"
+      },
+      "E": {
+        "item": "curseofpandora:evil_spine"
+      },
+      "F": {
+        "item": "curseofpandora:evil_stone"
+      },
+      "G": {
+        "item": "berlordscarving:echo_slate"
+      },
+      "H": {
+        "item": "l2complements:life_essence"
+      },
+      "I": {
+        "item": "l2complements:explosion_shard"
+      },
+      "J": {
+        "item": "l2complements:resonant_feather"
+      }
+    },
+    "result": {
+      "id": "minecraft:elytra",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "bertieprogression:crafting/minecraft/elytra_nether",
+    "type": "avaritia:shaped_table",
+    "tier": 2,
+    "pattern": [
+      "ABCBA",
+      "BDEDB",
+      "BFAFB",
+      "GF FG",
+      "AG GA"
+    ],
+    "key": {
+      "A": {
+        "item": "l2complements:blackstone_core"
+      },
+      "B": {
+        "item": "avaritia:blaze_cube"
+      },
+      "C": {
+        "item": "curseofpandora:dried_brain"
+      },
+      "D": {
+        "item": "irons_spellbooks:divine_soulshard"
+      },
+      "E": {
+        "item": "curseofpandora:dried_spine"
+      },
+      "F": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "G": {
+        "item": "l2complements:soul_flame"
+      }
+    },
+    "result": {
+      "id": "minecraft:elytra",
+      "count": 1
+    }
+  }
+]

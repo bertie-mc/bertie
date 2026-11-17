@@ -28,23 +28,5 @@
 			x: -6.0d
 			y: 4.5d
 		}
-		{
-			icon: {
-				id: "cataclysm:mechanical_fusion_anvil"
-			}
-			id: "3C00000000000013"
-			rewards: [{
-				id: "3C00000002000013"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000013"
-				item: { count: 1, id: "cataclysm:mechanical_fusion_anvil" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 7.5d
-		}
 	]
 }

@@ -809,10 +809,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"2B00000000000029"
-				"2B00000000000058"
-			]
+			dependencies: ["2B00000000000029"]
 			icon: {
 				id: "slag:melter"
 			}
@@ -1190,10 +1187,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"2B00000000000058"
-				"2B0000000000002F"
-			]
+			dependencies: ["2B0000000000002F"]
 			icon: {
 				id: "create:spout"
 			}
@@ -2017,26 +2011,6 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2B00000000000037"]
-			icon: {
-				id: "bertieprogression:copper_sheet"
-			}
-			id: "2B00000000000058"
-			rewards: [{
-				id: "2B00000002000058"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				count: 8L
-				id: "2B00000001000058"
-				item: { count: 1, id: "bertieprogression:copper_sheet" }
-				type: "item"
-			}]
-			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -3212,6 +3186,46 @@
 				type: "item"
 			}]
 			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2B00000000000060"]
+			id: "6C0000000000000D"
+			rewards: [{
+				id: "6C0000000200000D"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "6C0000000100000D"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B00000000000014", "2B00000000000041"]
+			icon: {
+				id: "oritech:augment_application_block"
+			}
+			id: "5C000000000000B8"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "5C000000010000B8"
+					item: { count: 1, id: "oritech:augment_application_block" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5C000000020000B8"
+					item: { count: 1, id: "oritech:simple_augment_station" }
+					type: "item"
+				}
+			]
+			x: 10.5d
 			y: -1.5d
 		}
 	]

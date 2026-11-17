@@ -1,0 +1,58 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    " A B A ",
+    " ACCCA ",
+    " ACDCA ",
+    " ACCCA ",
+    " AEFEA ",
+    "  GFG  ",
+    "  GFG  "
+  ],
+  "key": {
+    "A": {
+      "item": "oritech:adamant_ingot"
+    },
+    "B": {
+      "item": "mekanism_extras:alloy_radiance"
+    },
+    "C": {
+      "item": "minecraft:heavy_core"
+    },
+    "D": {
+      "item": "mekanism:energy_tablet"
+    },
+    "E": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "F": {
+      "item": "oritech:motor"
+    },
+    "G": {
+      "item": "oritech:carbon_fibre_strands"
+    }
+  },
+  "result": {
+    "id": "oritech:electric_mace",
+    "count": 1
+  },
+  "tier": 3,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

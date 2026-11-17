@@ -2727,30 +2727,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5C00000000000098"]
-			icon: {
-				id: "oritech:augment_application_block"
-			}
-			id: "5C000000000000B8"
-			size: 2.0d
-			tasks: [
-				{
-					consume_items: false
-					id: "5C000000010000B8"
-					item: { count: 1, id: "oritech:augment_application_block" }
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "5C000000020000B8"
-					item: { count: 1, id: "oritech:simple_augment_station" }
-					type: "item"
-				}
-			]
-			x: 30.0d
-			y: 0.75d
-		}
-		{
 			dependencies: ["5C0000000000935C"]
 			icon: {
 				id: "oritech:target_designator"

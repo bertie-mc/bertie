@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.52.0
+
+- Add the two-input Create Mechanical Adapter and Copper Casing construction for
+  the Augmentation Center; close its external RF charging and export routes.
+- Replace Auto-Feeder with Adaptive Immune System for Unbound vacuum protection;
+  exchange Living Fortress and Flight in the research tree.
+- Apply the captured powered-tool, charging-station, Quantum Research Station
+  and two Elytra recipes; move Mechanical Fusion Anvil to anvil compression.
+- Use Titanium Sheets in Quantum Entangloporter and Fire Dragonsteel in
+  thermonuclear production; accept either personal container in Chemical Oxidizer.
+- Retire the two Rustic Gliders and Speed Booster; add the selected bulk/material
+  quest links and relocate the selected entries while preserving live layouts.
+- Keep End Remastered loot-codec aliases and owo's sided networking compatible
+  with the NeoForge version required by Unbound.
+
 ## 0.51.0
 
 - Repair the EMI Ponder button; add material-icon step navigation, name tooltips

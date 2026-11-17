@@ -1617,7 +1617,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5B000000000000B6"]
+			dependencies: ["5B00000000000302"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
@@ -1773,7 +1773,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5B0000000000010C"]
+			dependencies: ["5B0000000000010C", "5B00000000000204"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
@@ -1978,6 +1978,36 @@
 			}]
 			x: 33.0d
 			y: 0.0d
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B000000000000B6"]
+			y: -6.0d
+			x: 18.0d
+			id: "5B00000000000300"
+			icon: { id: "bertieprogression:empty_reinforced_carbon_sheet" }
+			tasks: [{"id": "5B00000001000300", "type": "item", "count": 1, "consume_items": false, "item": {"id": "bertieprogression:empty_reinforced_carbon_sheet", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000300"]
+			y: -4.5d
+			x: 19.5d
+			id: "5B00000000000301"
+			icon: { id: "oritech:reinforced_carbon_sheet" }
+			tasks: [{"id": "5B00000001000301", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:reinforced_carbon_sheet", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000301"]
+			y: -3.0d
+			x: 21.0d
+			id: "5B00000000000302"
+			icon: { id: "bertieprogression:sentient_casing" }
+			tasks: [{"id": "5B00000001000302", "type": "item", "count": 1, "consume_items": false, "item": {"id": "bertieprogression:sentient_casing", "count": 1}}]
 		}
 	]
 }

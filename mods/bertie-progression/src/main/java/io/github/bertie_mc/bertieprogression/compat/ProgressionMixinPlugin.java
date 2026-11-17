@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.fml.loading.FMLLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -11,7 +12,17 @@ import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 public final class ProgressionMixinPlugin implements IMixinConfigPlugin {
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+        if (mixinClassName.endsWith("AugmentationCenterMixin")) {
+            return loaded("oritech") && loaded("create");
+        }
+        if (mixinClassName.endsWith("UnboundVacuumMixin")) {
+            return loaded("oritech") && loaded("unbound");
+        }
         return !mixinClassName.endsWith("WardenModelMixin") || FMLEnvironment.dist == Dist.CLIENT;
+    }
+
+    private static boolean loaded(String id) {
+        return FMLLoader.getLoadingModList().getModFileById(id) != null;
     }
 
     @Override

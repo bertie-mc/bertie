@@ -3,7 +3,10 @@
 Chemical Oxidizer has the captured 5×5 Nether Table recipe. Quantum Entangloporter
 uses the revised full 7×7 End Table layout and produces two. Exact layouts live in
 `texture-work/queued_051_layouts.json`; the selected post-pass is
-`texture-work/queued_051_recipes.py`.
+`texture-work/queued_051_recipes.py`, followed by `queued_052_recipes.py`.
+The Oxidizer accepts either a Personal Barrel or Personal Chest in its storage
+slot. Entangloporter uses twelve Titanium Sheets, replacing its four Plutonium
+Pellets; its quest also requires Enriched Thermonuclear.
 
 Arcane Anvil is a Spirit Altar operation: one Anvil, sixteen Amethyst Blocks,
 four Large Diamond Slates and four Polished Deepslate, with sixteen Arcane,
@@ -12,7 +15,7 @@ Spirit registry identifiers retain the `malum:` namespace.
 
 Pigment Extractor and Mixer use the red Infused Alloy in place of Thermonuclear
 Alloy, preserving the other ingredients and counts. Molten Thermonuclear's PRC
-operation uses one Sculkium Ingot in place of Netherite; fluids, chemical amounts,
+operation uses one Fire Dragonsteel Ingot; fluids, chemical amounts,
 duration and energy remain unchanged.
 
 The five large machines with native Miniaturization routes no longer have their

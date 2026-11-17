@@ -1,0 +1,60 @@
+{
+  "type": "avaritia:shaped_table",
+  "pattern": [
+    "ABCBA",
+    "BDEDB",
+    "BFAFB",
+    "GF FG",
+    "AG GA"
+  ],
+  "key": {
+    "A": {
+      "item": "l2complements:blackstone_core"
+    },
+    "B": {
+      "item": "avaritia:blaze_cube"
+    },
+    "C": {
+      "item": "curseofpandora:dried_brain"
+    },
+    "D": {
+      "item": "irons_spellbooks:divine_soulshard"
+    },
+    "E": {
+      "item": "curseofpandora:dried_spine"
+    },
+    "F": {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    "G": {
+      "item": "l2complements:soul_flame"
+    }
+  },
+  "result": {
+    "id": "minecraft:elytra",
+    "count": 1
+  },
+  "tier": 2,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "curseofpandora"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "irons_spellbooks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    }
+  ]
+}

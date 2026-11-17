@@ -281,5 +281,7 @@
   "item.bertieprogression.lead_sheet": "Lead Sheet",
   "item.bertieprogression.dirty_mithril_scrap": "Dirty Mithril Scrap",
   "item.bertieprogression.empty_reinforced_carbon_sheet": "Untreated Reinforced Carbon Sheet",
-  "block.bertieprogression.sentient_casing": "Sentient Casing"
+  "block.bertieprogression.sentient_casing": "Sentient Casing",
+  "block.bertieprogression.mechanical_adapter": "Mechanical Adapter",
+  "item.bertieprogression.mechanical_adapter": "Mechanical Adapter"
 }
