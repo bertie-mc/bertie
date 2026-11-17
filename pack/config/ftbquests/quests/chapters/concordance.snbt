@@ -1790,9 +1790,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["5B000000000000C3"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B000000000000C3"]
 			y: -1.5d
 			x: 33.0d
 			id: "5B00000000000200"
@@ -1800,9 +1800,9 @@
 			tasks: [{"id": "5B00000001000200", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:chemical_dissolution_chamber", "count": 1}}]
 		}
 		{
+			dependencies: ["5B00000000000200"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000200"]
 			y: -1.5d
 			x: 34.5d
 			id: "5B00000000000201"
@@ -1810,9 +1810,9 @@
 			tasks: [{"id": "5B00000001000201", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:isotopic_centrifuge", "count": 1}}]
 		}
 		{
+			dependencies: ["5B00000000000201"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000201"]
 			y: -1.5d
 			x: 36.0d
 			id: "5B00000000000202"
@@ -1820,9 +1820,9 @@
 			tasks: [{"id": "5B00000001000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_casing", "count": 1}}, {"id": "5B00000002000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_port", "count": 1}}, {"id": "5B00000003000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_fuel_assembly", "count": 1}}, {"id": "5B00000004000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:control_rod_assembly", "count": 1}}, {"id": "5B00000005000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_logic_adapter", "count": 1}}, {"id": "5B00000006000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:reactor_glass", "count": 1}}]
 		}
 		{
+			dependencies: ["5B00000000000202"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000202"]
 			y: -3.0d
 			x: 36.0d
 			id: "5B00000000000203"
@@ -1830,9 +1830,9 @@
 			tasks: [{"id": "5B00000001000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_casing", "count": 1}}, {"id": "5B00000002000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_valve", "count": 1}}, {"id": "5B00000003000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_vent", "count": 1}}, {"id": "5B00000004000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_rotor", "count": 1}}, {"id": "5B00000005000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:electromagnetic_coil", "count": 1}}, {"id": "5B00000006000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:rotational_complex", "count": 1}}, {"id": "5B00000007000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:saturating_condenser", "count": 1}}, {"id": "5B00000008000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:pressure_disperser", "count": 1}}, {"id": "5B00000009000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:structural_glass", "count": 1}}, {"id": "5B0000000A000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_blade", "count": 1}}]
 		}
 		{
+			dependencies: ["5B00000000000202"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000202"]
 			y: -3.0d
 			x: 37.5d
 			id: "5B00000000000204"
@@ -1840,9 +1840,9 @@
 			tasks: [{"id": "5B00000001000204", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism_extras:enriched_thermonuclear", "count": 1}}]
 		}
 		{
+			dependencies: ["5B00000000000202"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000202"]
 			y: -1.5d
 			x: 37.5d
 			id: "5B00000000000205"

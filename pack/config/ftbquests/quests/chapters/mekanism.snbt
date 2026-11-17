@@ -133,20 +133,6 @@
 			y: -3.0d
 		}
 		{
-			icon: {
-				id: "mekanism_extras:advanced_electric_pump"
-			}
-			id: "6137E617014D1DF3"
-			tasks: [{
-				consume_items: false
-				id: "61861159C170BF07"
-				item: { count: 1, id: "mekanism_extras:advanced_electric_pump" }
-				type: "item"
-			}]
-			x: -11.5d
-			y: 3.0d
-		}
-		{
 			dependencies: ["61DA1C428DC2A5D1"]
 			id: "61007F7CC4BF1105"
 			shape: "hexagon"
@@ -263,20 +249,6 @@
 			y: -3.0d
 		}
 		{
-			icon: {
-				id: "mekanism:robit"
-			}
-			id: "61B1B644F2F1C7B1"
-			tasks: [{
-				consume_items: false
-				id: "61E2CF114889F7B2"
-				item: { count: 1, id: "mekanism:robit" }
-				type: "item"
-			}]
-			x: -11.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["61ED11E1734FFF61"]
 			icon: {
 				id: "mekanism:rotary_condensentrator"
@@ -361,46 +333,6 @@
 			y: 6.0d
 		}
 		{
-			icon: {
-				id: "mekanism_extras:naquadah_reactor_controller"
-			}
-			id: "61E42E122B5D334C"
-			tasks: [
-				{
-					consume_items: false
-					id: "61D599C3F0D54717"
-					item: { count: 1, id: "mekanism_extras:naquadah_reactor_controller" }
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "61DB7F6271D402F6"
-					item: { count: 1, id: "mekanism_extras:naquadah_reactor_casing" }
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "61802122F508AF92"
-					item: { count: 1, id: "mekanism_extras:naquadah_reactor_port" }
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "61959F164E7A3235"
-					item: { count: 1, id: "mekanism_extras:naquadah_reactor_logic_adapter" }
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "61B9667588487C2B"
-					item: { count: 1, id: "mekanism_extras:lead_coated_laser_focus_matrix" }
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: 17.0d
-		}
-		{
 			dependencies: ["61D6479D233254A8"]
 			icon: {
 				id: "mekanismgenerators:fission_reactor_casing"
@@ -409,15 +341,6 @@
 			tasks: [{"id": "616B3C155FE5B067", "type": "checkmark"}]
 			x: 11.25d
 			y: 0.0d
-		}
-		{
-			id: "61C1ECA95D9A4280"
-			tasks: [{
-				id: "61FF9407BEDBF3C5"
-				type: "checkmark"
-			}]
-			x: 4.5d
-			y: 15.0d
 		}
 		{
 			dependencies: ["61007F7CC4BF1105"]
