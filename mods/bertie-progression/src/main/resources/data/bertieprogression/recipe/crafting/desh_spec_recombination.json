@@ -1,20 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SSS",
-    "SDS",
-    "SSS"
-  ],
-  "key": {
-    "S": {
-      "item": "bertieprogression:desh_spec"
-    },
-    "D": {
-      "item": "bertieprogression:desh_dirty_dust"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "result": {
-    "id": "bertieprogression:desh_dirty_dust",
-    "count": 2
-  }
+  ]
 }

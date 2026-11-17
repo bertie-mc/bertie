@@ -97,22 +97,6 @@
       "id": "#simplyswords:stormyx",
       "required": false
     },
-    {
-      "id": "stellaris:steel_axe",
-      "required": false
-    },
-    {
-      "id": "stellaris:steel_shovel",
-      "required": false
-    },
-    {
-      "id": "stellaris:steel_pickaxe",
-      "required": false
-    },
-    {
-      "id": "stellaris:steel_hoe",
-      "required": false
-    },
     "#minecraft:axes",
     "#minecraft:hoes",
     "#minecraft:pickaxes",

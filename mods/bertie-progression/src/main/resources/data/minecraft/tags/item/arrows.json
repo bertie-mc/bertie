@@ -40,10 +40,6 @@
     {
       "id": "dungeonsdelight:gunk_arrow",
       "required": false
-    },
-    {
-      "id": "stellaris:ice_shard_arrow",
-      "required": false
     }
   ]
 }

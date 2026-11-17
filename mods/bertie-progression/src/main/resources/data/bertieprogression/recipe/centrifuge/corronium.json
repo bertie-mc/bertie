@@ -1,23 +1,7 @@
 {
-  "type": "oritech:centrifuge_fluid",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "tag": "c:dirty_dusts/corronium"
+      "type": "neoforge:false"
     }
-  ],
-  "results": [
-    {
-      "id": "bertieprogression:corronium_gem",
-      "count": 1
-    },
-    {
-      "id": "bertieprogression:tharsite_spec",
-      "count": 3
-    }
-  ],
-  "time": 100,
-  "fluidInput": {
-    "fluid": "oritech:still_sheol_fire",
-    "amount": 100
-  }
+  ]
 }

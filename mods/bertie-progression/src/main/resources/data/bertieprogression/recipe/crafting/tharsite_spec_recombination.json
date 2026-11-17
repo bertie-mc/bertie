@@ -1,20 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SSS",
-    "SDS",
-    "SSS"
-  ],
-  "key": {
-    "S": {
-      "item": "bertieprogression:tharsite_spec"
-    },
-    "D": {
-      "item": "bertieprogression:tharsite_dirty_dust"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
     }
-  },
-  "result": {
-    "id": "bertieprogression:tharsite_dirty_dust",
-    "count": 2
-  }
+  ]
 }

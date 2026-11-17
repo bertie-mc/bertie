@@ -2,14 +2,9 @@
   "replace": false,
   "values": [
     "bertieprogression:bloody_dust",
-    "bertieprogression:corronium_dust",
-    "bertieprogression:desh_dust",
     "bertieprogression:eezo_dust",
     "bertieprogression:elvenite_dust",
-    "bertieprogression:neptunium_dust",
     "bertieprogression:silver_dust",
-    "bertieprogression:solerium_dust",
-    "bertieprogression:tharsite_dust",
     "bertieprogression:titanium_dust",
     "bertieprogression:tungsten_dust",
     "bertieprogression:voiderite_dust",
@@ -31,7 +26,6 @@
     "oritech:iron_dust",
     "oritech:nickel_dust",
     "oritech:platinum_dust",
-    "oritech:plutonium_dust",
     "oritech:uranium_dust"
   ]
 }

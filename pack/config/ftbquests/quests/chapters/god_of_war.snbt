@@ -12680,66 +12680,6 @@
 		}
 		{
 			icon: {
-				id: "stellaris:jet_suit_chestplate"
-			}
-			id: "7B000000000002CB"
-			tasks: [
-				{
-					id: "7B000000010002CB"
-					item: { count: 1, id: "stellaris:jet_suit_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102CB"
-					item: { count: 1, id: "stellaris:jet_suit_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202CB"
-					item: { count: 1, id: "stellaris:jet_suit_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302CB"
-					item: { count: 1, id: "stellaris:jet_suit_boots" }
-					type: "item"
-				}
-			]
-			x: -17.0d
-			y: -3.0d
-		}
-		{
-			icon: {
-				id: "stellaris:space_suit_chestplate"
-			}
-			id: "7B000000000002CC"
-			tasks: [
-				{
-					id: "7B000000010002CC"
-					item: { count: 1, id: "stellaris:space_suit_helmet" }
-					type: "item"
-				}
-				{
-					id: "7B000000010102CC"
-					item: { count: 1, id: "stellaris:space_suit_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7B000000010202CC"
-					item: { count: 1, id: "stellaris:space_suit_leggings" }
-					type: "item"
-				}
-				{
-					id: "7B000000010302CC"
-					item: { count: 1, id: "stellaris:space_suit_boots" }
-					type: "item"
-				}
-			]
-			x: -15.0d
-			y: -4.0d
-		}
-		{
-			icon: {
 				id: "antarchy:moggles"
 			}
 			id: "7B000000000002D1"

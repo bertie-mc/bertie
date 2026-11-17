@@ -3205,7 +3205,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2B00000000000014", "2B00000000000041"]
+			dependencies: ["2B00000000000041"]
 			icon: {
 				id: "oritech:augment_application_block"
 			}

@@ -178,14 +178,6 @@
       "required": false
     },
     {
-      "id": "stellaris:space_suit_chestplate",
-      "required": false
-    },
-    {
-      "id": "stellaris:jet_suit_chestplate",
-      "required": false
-    },
-    {
       "id": "minecraft:leather_chestplate",
       "required": false
     },

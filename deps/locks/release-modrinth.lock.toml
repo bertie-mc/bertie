@@ -1,5 +1,5 @@
 profile = "release-modrinth"
-inputs-hash = "413aeb2872a868f94fd8532b19580253f01c533572fcc3ba6b9d9657443c8c25"
+inputs-hash = "6277f0a257ef68ce8bbb15377707fc83d6f53edee8327a2b612e690dfc8f47f8"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -1085,10 +1085,6 @@ mod = "modrinth:nU0bVIaL:BIogJv2D"
 any = "modrinth:CU0PAyzb:CLZfFbCx"
 mod = "modrinth:CU0PAyzb:CLZfFbCx"
 
-[components."per-spatium"]
-any = "modrinth:IHyWDPnp:6tlFwckH"
-mod = "modrinth:IHyWDPnp:6tlFwckH"
-
 [components."pick-up-notifier"]
 any = "modrinth:ZX66K16c:5NZounJc"
 mod = "modrinth:ZX66K16c:5NZounJc"
@@ -1243,10 +1239,6 @@ mod = "modrinth:TxIuhIFo:PPVE16f7"
 [components."stellaris"]
 any = "modrinth:ItTQpuBn:3OXCvg6r"
 mod = "modrinth:ItTQpuBn:3OXCvg6r"
-
-[components."stellaris-stellarview-compatibility"]
-any = "modrinth:SrNny2Go:yn1ptBI4"
-mod = "modrinth:SrNny2Go:yn1ptBI4"
 
 [components."stylish-effects"]
 any = "modrinth:onDuQF5e:qaONmJ9G"
@@ -4623,26 +4615,6 @@ incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:7Jy4rK9m:zSD21doG", "namespace" = "aces_spell_utils", "reason" = "ships data/aces_spell_utils/", "origin" = "archive-data" }, { "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
 
-[artifacts."modrinth:IHyWDPnp:6tlFwckH"]
-name = "per-spatium"
-component = "per-spatium"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "IHyWDPnp"
-version = "6tlFwckH"
-filename = "perspatium-1.21.1-1.1.0.jar"
-project-id = "IHyWDPnp"
-version-id = "6tlFwckH"
-provides = ["perspatium"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:IKARgflD:bgR1e0O5"]
 name = "diagonal-fences"
 component = "diagonal-fences"
@@ -4659,25 +4631,6 @@ provides = ["diagonalfences"]
 bundled-provides = ["diagonalblocks"]
 required = [{ "artifact" = "modrinth:QAGBst4M:PRF4qcdp", "mod-id" = "puzzleslib", "version-range" = "[21.1.15,)", "side" = "both", "origin" = "archive" }]
 optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:Iairjv0A:QD13LaRR"]
-name = "stellarview"
-provider = "modrinth"
-kind = "mod"
-side = "client"
-group = "maven.modrinth"
-module = "Iairjv0A"
-version = "QD13LaRR"
-filename = "Stellar View-1.21.1-0.5.2-NeoForge.jar"
-project-id = "Iairjv0A"
-version-id = "QD13LaRR"
-provides = ["stellarview"]
-bundled-provides = []
-required = []
-optional = [{ "missing" = "enhancedcelestials", "mod-id" = "enhancedcelestials", "version-range" = "[1.21.1-6.0.2.0,)", "side" = "both", "origin" = "archive" }, { "missing" = "lunar", "mod-id" = "lunar", "version-range" = "[0.2.6,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -6047,26 +6000,6 @@ version-id = "1OFYdaiQ"
 provides = ["rsinfinitybooster"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:KDvYkUg3:lHHiI26k", "mod-id" = "refinedstorage", "version-range" = "[1.13.0-beta.4,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:SrNny2Go:yn1ptBI4"]
-name = "stellaris-stellarview-compatibility"
-component = "stellaris-stellarview-compatibility"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "SrNny2Go"
-version = "yn1ptBI4"
-filename = "stellaris_stellarview_compatibility-1.0.0-neoforge.jar"
-project-id = "SrNny2Go"
-version-id = "yn1ptBI4"
-provides = ["stellaris_stellarview_compatibility"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:ItTQpuBn:3OXCvg6r", "mod-id" = "stellaris", "version-range" = "[1.4.20,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:gJ5LPGfO:HbYYFasr", "mod-id" = "stellarview_mixin_renderer", "version-range" = "[2.0.1,)", "side" = "client", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -7799,25 +7732,6 @@ optional = []
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }, { "artifact" = "modrinth:jgzwYsAN:BIbVs1fo", "namespace" = "malum", "reason" = "ships data/malum/", "origin" = "archive-data" }]
-
-[artifacts."modrinth:gJ5LPGfO:HbYYFasr"]
-name = "stellar-view-mixin-renderer"
-provider = "modrinth"
-kind = "mod"
-side = "client"
-group = "maven.modrinth"
-module = "gJ5LPGfO"
-version = "HbYYFasr"
-filename = "stellarview_mixin_renderer-2.1.0-neoforge.jar"
-project-id = "gJ5LPGfO"
-version-id = "HbYYFasr"
-provides = ["stellarview_mixin_renderer"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."modrinth:gbJLUhZP:H0rFJIiC"]
 name = "distraction-free-recipes"

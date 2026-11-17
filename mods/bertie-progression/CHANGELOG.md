@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.53.0
+
+- Retire Stellaris and its dedicated addons, removing the five exclusive metal
+  processing families, 45 custom items and ten slurry registrations.
+- Preserve shared metals and fuels; remove obsolete processing routes and dust
+  eligibility whose only ore provider was Stellaris.
+- Add the charging/tool quest branches and one combined C3 Station Seed/emitter
+  quest; remove Cybernetics' Electron Tube prerequisite while preserving live layouts.
+
 ## 0.52.1
 
 - Resolve Forgified Fabric API's dynamic packet codec on newer NeoForge return

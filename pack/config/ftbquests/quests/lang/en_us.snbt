@@ -2960,4 +2960,12 @@
 	quest.5B00000000000301.title: "Reinforced Carbon Sheet"
 	quest.5B00000000000302.title: "Sentient Casing"
 	quest.5C000000000000B8.description: ["Use a Create Wrench on two Copper Casings stacked behind the center to form its Mechanical Adapter.", "Power both rear shaft sockets in the same direction. The center uses Copper Casings instead of Machine Cores."]
+	quest.5B00000000000400.title: "Equipment Charger or Chargepad"
+	quest.5B00000000000401.title: "Wireless Charging Station"
+	quest.5B00000000000402.title: "Chainsaw"
+	quest.5B00000000000403.title: "Hand Drill"
+	quest.5B00000000000404.title: "Atomic Disassembler"
+	quest.5B00000000000405.title: "Electric Mace"
+	quest.5B00000000000406.title: "Enderic Railgun"
+	quest.3B00000000000400.title: "Station Seed and Emitter"
 }

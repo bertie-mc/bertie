@@ -26,8 +26,7 @@
       "deeperdarker:sculk_stone_coal_ore",
       "minecraft:coal_ore",
       "minecraft:deepslate_coal_ore",
-      "pastel:blackslag_coal_ore",
-      "stellaris:venus_coal_ore"
+      "pastel:blackslag_coal_ore"
     ],
     "dusts": [
       "mekanism:dust_coal"
@@ -47,24 +46,6 @@
     ]
   },
   {
-    "material": "corronium",
-    "ores": [
-      "stellaris:venus_corronium_ore"
-    ],
-    "dusts": [
-      "bertieprogression:corronium_dust"
-    ]
-  },
-  {
-    "material": "desh",
-    "ores": [
-      "stellaris:moon_desh_ore"
-    ],
-    "dusts": [
-      "bertieprogression:desh_dust"
-    ]
-  },
-  {
     "material": "diamond",
     "ores": [
       "born_in_chaos_v1:infected_deepslate_diamond_ore",
@@ -76,9 +57,7 @@
       "explodetomine:cracked_diamond_ore",
       "minecraft:deepslate_diamond_ore",
       "minecraft:diamond_ore",
-      "pastel:blackslag_diamond_ore",
-      "stellaris:mars_diamond_ore",
-      "stellaris:venus_diamond_ore"
+      "pastel:blackslag_diamond_ore"
     ],
     "dusts": [
       "mekanism:dust_diamond"
@@ -134,8 +113,7 @@
       "minecraft:deepslate_gold_ore",
       "minecraft:gold_ore",
       "minecraft:nether_gold_ore",
-      "pastel:blackslag_gold_ore",
-      "stellaris:venus_gold_ore"
+      "pastel:blackslag_gold_ore"
     ],
     "dusts": [
       "oritech:gold_dust"
@@ -148,10 +126,7 @@
       "deeperdarker:sculk_stone_iron_ore",
       "minecraft:deepslate_iron_ore",
       "minecraft:iron_ore",
-      "pastel:blackslag_iron_ore",
-      "stellaris:mars_iron_ore",
-      "stellaris:mercury_iron_ore",
-      "stellaris:moon_iron_ore"
+      "pastel:blackslag_iron_ore"
     ],
     "dusts": [
       "oritech:iron_dust"
@@ -191,15 +166,6 @@
     ]
   },
   {
-    "material": "neptunium",
-    "ores": [
-      "stellaris:venus_neptunium_ore"
-    ],
-    "dusts": [
-      "bertieprogression:neptunium_dust"
-    ]
-  },
-  {
     "material": "nickel",
     "ores": [
       "oritech:deepslate_nickel_ore",
@@ -227,15 +193,6 @@
     ],
     "dusts": [
       "oritech:platinum_dust"
-    ]
-  },
-  {
-    "material": "plutonium",
-    "ores": [
-      "stellaris:mars_plutonium_ore"
-    ],
-    "dusts": [
-      "oritech:plutonium_dust"
     ]
   },
   {
@@ -274,24 +231,6 @@
     ]
   },
   {
-    "material": "solerium",
-    "ores": [
-      "stellaris:mercury_solerium_ore"
-    ],
-    "dusts": [
-      "bertieprogression:solerium_dust"
-    ]
-  },
-  {
-    "material": "tharsite",
-    "ores": [
-      "stellaris:mars_tharsite_ore"
-    ],
-    "dusts": [
-      "bertieprogression:tharsite_dust"
-    ]
-  },
-  {
     "material": "tin",
     "ores": [
       "mekanism:deepslate_tin_ore",
@@ -326,8 +265,7 @@
     "ores": [
       "antarchy:broodstone_uranium_ore",
       "mekanism:uranium_ore",
-      "oritech:deepslate_uranium_ore",
-      "stellaris:mercury_uranium_ore"
+      "oritech:deepslate_uranium_ore"
     ],
     "dusts": [
       "oritech:uranium_dust"

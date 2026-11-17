@@ -1575,11 +1575,19 @@
 		}
 		{
 			dependencies: ["6B0000000000620B"]
-			y: -4.5d
-			x: 4.5d
+			icon: {
+				id: "anvilcraft:tungsten_ingot"
+			}
 			id: "6B00000000000300"
-			icon: { id: "anvilcraft:tungsten_ingot" }
-			tasks: [{"id": "6B00000001000300", "type": "item", "count": 64, "consume_items": false, "item": {"id": "anvilcraft:tungsten_ingot", "count": 1}}]
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "6B00000001000300"
+				item: { count: 1, id: "anvilcraft:tungsten_ingot" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
 		}
 	]
 }

@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "345ee46dc38d04cf2867ba911cc87d5e37efe36977b184da80331f9dfa26a422"
+inputs-hash = "196db129a0b6d362330db73d830edcd3bf9e18d0a522ad1374ac3c8d4bf822ec"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -1085,10 +1085,6 @@ mod = "curseforge:306770:7730942"
 any = "curseforge:1015157:6485740"
 mod = "curseforge:1015157:6485740"
 
-[components."per-spatium"]
-any = "curseforge:1164846:6210685"
-mod = "curseforge:1164846:6210685"
-
 [components."pick-up-notifier"]
 any = "curseforge:351441:6409785"
 mod = "curseforge:351441:6409785"
@@ -1243,10 +1239,6 @@ mod = "curseforge:1284599:6707544"
 [components."stellaris"]
 any = "curseforge:1036270:8154670"
 mod = "curseforge:1036270:8154670"
-
-[components."stellaris-stellarview-compatibility"]
-any = "curseforge:1482048:7735743"
-mod = "curseforge:1482048:7735743"
 
 [components."stylish-effects"]
 any = "curseforge:543661:7239283"
@@ -2644,27 +2636,6 @@ file-id = 5940871
 provides = ["combat_effects"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:P1Kv5EAO:4iO8Tbfj", "mod-id" = "necronomicon", "version-range" = ">=1.6.0", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."curseforge:1164846:6210685"]
-name = "per-spatium"
-component = "per-spatium"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "per-spatium-1164846"
-version = "6210685"
-filename = "perspatium-1.21.1-1.1.0.jar"
-project-id = 1164846
-slug = "per-spatium"
-file-id = 6210685
-provides = ["perspatium"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []
@@ -4327,27 +4298,6 @@ optional = [{ "missing" = "entity_texture_features", "mod-id" = "entity_texture_
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:1415721:7528193", "namespace" = "alexsmobs", "reason" = "ships data/alexsmobs/", "origin" = "archive-data" }, { "missing" = "atmospheric", "namespace" = "atmospheric", "reason" = "ships data/atmospheric/", "origin" = "archive-data" }, { "missing" = "autumnity", "namespace" = "autumnity", "reason" = "ships data/autumnity/", "origin" = "archive-data" }, { "missing" = "biomesoplenty", "namespace" = "biomesoplenty", "reason" = "ships data/biomesoplenty/", "origin" = "archive-data" }, { "missing" = "bloomingnature", "namespace" = "bloomingnature", "reason" = "ships data/bloomingnature/", "origin" = "archive-data" }, { "missing" = "caverns_and_chasms", "namespace" = "caverns_and_chasms", "reason" = "ships data/caverns_and_chasms/", "origin" = "archive-data" }, { "missing" = "crittersandcompanions", "namespace" = "crittersandcompanions", "reason" = "ships data/crittersandcompanions/", "origin" = "archive-data" }, { "missing" = "environmental", "namespace" = "environmental", "reason" = "ships data/environmental/", "origin" = "archive-data" }, { "artifact" = "curseforge:398521:8083481", "namespace" = "farmersdelight", "reason" = "ships data/farmersdelight/", "origin" = "archive-data" }, { "missing" = "neapolitan", "namespace" = "neapolitan", "reason" = "ships data/neapolitan/", "origin" = "archive-data" }, { "missing" = "nomansland", "namespace" = "nomansland", "reason" = "ships data/nomansland/", "origin" = "archive-data" }, { "artifact" = "curseforge:243121:8146177", "namespace" = "quark", "reason" = "ships data/quark/", "origin" = "archive-data" }, { "missing" = "supplementaries", "namespace" = "supplementaries", "reason" = "ships data/supplementaries/", "origin" = "archive-data" }, { "missing" = "windswept", "namespace" = "windswept", "reason" = "ships data/windswept/", "origin" = "archive-data" }]
-
-[artifacts."curseforge:1482048:7735743"]
-name = "stellaris-stellarview-compatibility"
-component = "stellaris-stellarview-compatibility"
-provider = "curseforge"
-kind = "mod"
-side = "both"
-group = "curse.maven"
-module = "stellaris-stellarview-compatibility-1482048"
-version = "7735743"
-filename = "stellaris_stellarview_compatibility-1.0.0-neoforge.jar"
-project-id = 1482048
-slug = "stellaris-stellarview-compatibility"
-file-id = 7735743
-provides = ["stellaris_stellarview_compatibility"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:1036270:8154670", "mod-id" = "stellaris", "version-range" = "[1.4.20,)", "side" = "client", "origin" = "archive" }, { "artifact" = "modrinth:gJ5LPGfO:HbYYFasr", "mod-id" = "stellarview_mixin_renderer", "version-range" = "[2.0.1,)", "side" = "client", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
 
 [artifacts."curseforge:1504802:8613871"]
 name = "antarchy"
@@ -9516,25 +9466,6 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."modrinth:Iairjv0A:QD13LaRR"]
-name = "stellarview"
-provider = "modrinth"
-kind = "mod"
-side = "client"
-group = "maven.modrinth"
-module = "Iairjv0A"
-version = "QD13LaRR"
-filename = "Stellar View-1.21.1-0.5.2-NeoForge.jar"
-project-id = "Iairjv0A"
-version-id = "QD13LaRR"
-provides = ["stellarview"]
-bundled-provides = []
-required = []
-optional = [{ "missing" = "enhancedcelestials", "mod-id" = "enhancedcelestials", "version-range" = "[1.21.1-6.0.2.0,)", "side" = "both", "origin" = "archive" }, { "missing" = "lunar", "mod-id" = "lunar", "version-range" = "[0.2.6,)", "side" = "both", "origin" = "archive" }]
-incompatible = []
-bundled = []
-integrations = []
-
 [artifacts."modrinth:J9pKOkxP:EEjnSxLK"]
 name = "potentials"
 provider = "modrinth"
@@ -10089,25 +10020,6 @@ version-id = "iEE85X0w"
 provides = ["searchables"]
 bundled-provides = []
 required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:gJ5LPGfO:HbYYFasr"]
-name = "stellar-view-mixin-renderer"
-provider = "modrinth"
-kind = "mod"
-side = "client"
-group = "maven.modrinth"
-module = "gJ5LPGfO"
-version = "HbYYFasr"
-filename = "stellarview_mixin_renderer-2.1.0-neoforge.jar"
-project-id = "gJ5LPGfO"
-version-id = "HbYYFasr"
-provides = ["stellarview_mixin_renderer"]
-bundled-provides = []
-required = [{ "artifact" = "modrinth:Iairjv0A:QD13LaRR", "mod-id" = "stellarview", "version-range" = "[0.5.2,)", "side" = "client", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

@@ -402,10 +402,6 @@
       "required": false
     },
     {
-      "id": "stellaris:radiations",
-      "required": false
-    },
-    {
       "id": "terra_curio:star_cloak",
       "required": false
     },

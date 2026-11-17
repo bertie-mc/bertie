@@ -65,6 +65,7 @@ configurations.named("clienttestRuntimeOnly") {
 
 dependencies {
     clienttestRuntimeOnly(deps.sodium)
+    clienttestRuntimeOnly(project(":mods:bertie-emi"))
     clienttestRuntimeOnly(deps.doABarrelRoll)
     clienttestRuntimeOnly(deps.slagNEmbers)
     clienttestRuntimeOnly(deps.apexArcana)

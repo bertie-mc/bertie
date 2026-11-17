@@ -4970,10 +4970,6 @@
       "required": false
     },
     {
-      "id": "stellaris:mars_ostrum_ore",
-      "required": false
-    },
-    {
       "id": "betterend:aeternium_forged_plate",
       "required": false
     },

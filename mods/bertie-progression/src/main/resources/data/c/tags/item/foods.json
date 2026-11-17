@@ -870,14 +870,6 @@
       "required": false
     },
     {
-      "id": "stellaris:mars_fruit",
-      "required": false
-    },
-    {
-      "id": "stellaris:moon_fruit",
-      "required": false
-    },
-    {
       "id": "#c:foods/jerky",
       "required": false
     },

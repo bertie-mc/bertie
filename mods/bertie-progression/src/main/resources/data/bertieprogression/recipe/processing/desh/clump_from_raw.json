@@ -1,16 +1,7 @@
 {
-  "type": "mekanism:purifying",
-  "chemical_input": {
-    "amount": 1,
-    "chemical": "mekanism:oxygen"
-  },
-  "per_tick_usage": true,
-  "item_input": {
-    "count": 2,
-    "item": "stellaris:raw_desh_ingot"
-  },
-  "output": {
-    "id": "bertieprogression:desh_clump",
-    "count": 5
-  }
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ]
 }

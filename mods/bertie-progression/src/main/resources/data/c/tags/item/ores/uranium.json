@@ -16,10 +16,6 @@
     {
       "id": "immersiveengineering:deepslate_ore_uranium",
       "required": false
-    },
-    {
-      "id": "stellaris:mercury_uranium_ore",
-      "required": false
     }
   ]
 }

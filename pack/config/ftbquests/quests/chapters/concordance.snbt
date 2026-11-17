@@ -1773,7 +1773,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5B0000000000010C", "5B00000000000204"]
+			dependencies: [
+				"5B0000000000010C"
+				"5B00000000000204"
+			]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
 			icon: {
@@ -1980,34 +1983,125 @@
 			y: 0.0d
 		}
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B000000000000B6"]
-			y: -6.0d
-			x: 18.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "bertieprogression:empty_reinforced_carbon_sheet"
+			}
 			id: "5B00000000000300"
-			icon: { id: "bertieprogression:empty_reinforced_carbon_sheet" }
-			tasks: [{"id": "5B00000001000300", "type": "item", "count": 1, "consume_items": false, "item": {"id": "bertieprogression:empty_reinforced_carbon_sheet", "count": 1}}]
-		}
-		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
-			dependencies: ["5B00000000000300"]
-			y: -4.5d
-			x: 19.5d
-			id: "5B00000000000301"
-			icon: { id: "oritech:reinforced_carbon_sheet" }
-			tasks: [{"id": "5B00000001000301", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:reinforced_carbon_sheet", "count": 1}}]
-		}
-		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
-			dependencies: ["5B00000000000301"]
-			y: -3.0d
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000300"
+				item: { count: 1, id: "bertieprogression:empty_reinforced_carbon_sheet" }
+				type: "item"
+			}]
 			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B00000000000300"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "oritech:reinforced_carbon_sheet"
+			}
+			id: "5B00000000000301"
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000301"
+				item: { count: 1, id: "oritech:reinforced_carbon_sheet" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B00000000000301"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "bertieprogression:sentient_casing"
+			}
 			id: "5B00000000000302"
-			icon: { id: "bertieprogression:sentient_casing" }
-			tasks: [{"id": "5B00000001000302", "type": "item", "count": 1, "consume_items": false, "item": {"id": "bertieprogression:sentient_casing", "count": 1}}]
+			tasks: [{
+				consume_items: false
+				id: "5B00000001000302"
+				item: { count: 1, id: "bertieprogression:sentient_casing" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000205"]
+			y: 0.0d
+			x: 34.5d
+			id: "5B00000000000400"
+			icon: { id: "oritech:charger_block" }
+			tasks: [{"id": "5B00000001000400", "type": "item", "count": 1, "consume_items": false, "item": {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "or(item(oritech:charger_block)item(mekanism:chargepad))", "minecraft:custom_name": "{\"text\":\"Equipment Charger or Chargepad\",\"italic\":false}"}}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000400"]
+			y: 0.0d
+			x: 36.0d
+			id: "5B00000000000401"
+			icon: { id: "mekmm:wireless_charging_station" }
+			tasks: [{"id": "5B00000001000401", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekmm:wireless_charging_station", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000400"]
+			y: -1.5d
+			x: 34.5d
+			id: "5B00000000000402"
+			icon: { id: "oritech:chainsaw" }
+			tasks: [{"id": "5B00000001000402", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:chainsaw", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000402"]
+			y: -1.5d
+			x: 36.0d
+			id: "5B00000000000403"
+			icon: { id: "oritech:hand_drill" }
+			tasks: [{"id": "5B00000001000403", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:hand_drill", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000403"]
+			y: -1.5d
+			x: 37.5d
+			id: "5B00000000000404"
+			icon: { id: "mekanism:atomic_disassembler" }
+			tasks: [{"id": "5B00000001000404", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:atomic_disassembler", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000400"]
+			y: 1.5d
+			x: 34.5d
+			id: "5B00000000000405"
+			icon: { id: "oritech:electric_mace" }
+			tasks: [{"id": "5B00000001000405", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:electric_mace", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000405"]
+			y: 1.5d
+			x: 36.0d
+			id: "5B00000000000406"
+			icon: { id: "oritech:portable_laser" }
+			tasks: [{"id": "5B00000001000406", "type": "item", "count": 1, "consume_items": false, "item": {"id": "oritech:portable_laser", "count": 1}}]
 		}
 	]
 }

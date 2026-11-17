@@ -400,34 +400,6 @@
     {
       "id": "pastel:onyx_shard",
       "required": false
-    },
-    {
-      "id": "stellaris:corronium_ingot",
-      "required": false
-    },
-    {
-      "id": "stellaris:desh_ingot",
-      "required": false
-    },
-    {
-      "id": "stellaris:heavy_metal_ingot",
-      "required": false
-    },
-    {
-      "id": "stellaris:neptunium_ingot",
-      "required": false
-    },
-    {
-      "id": "stellaris:plutonium_ingot",
-      "required": false
-    },
-    {
-      "id": "stellaris:solerium",
-      "required": false
-    },
-    {
-      "id": "stellaris:tharsite_ingot",
-      "required": false
     }
   ]
 }

@@ -1,11 +1,7 @@
 {
-  "type": "mekanism:crystallizing",
-  "input": {
-    "amount": 200,
-    "chemical": "bertieprogression:clean_solerium"
-  },
-  "output": {
-    "id": "bertieprogression:solerium_crystal",
-    "count": 1
-  }
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ]
 }

@@ -266,10 +266,6 @@
       "required": false
     },
     {
-      "id": "stellaris:oxygen",
-      "required": false
-    },
-    {
       "id": "twilightdelight:thorn_rose_tea",
       "required": false
     },

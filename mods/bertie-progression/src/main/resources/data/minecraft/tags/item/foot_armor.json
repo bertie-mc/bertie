@@ -146,14 +146,6 @@
       "required": false
     },
     {
-      "id": "stellaris:space_suit_boots",
-      "required": false
-    },
-    {
-      "id": "stellaris:jet_suit_boots",
-      "required": false
-    },
-    {
       "id": "minecraft:leather_boots",
       "required": false
     },

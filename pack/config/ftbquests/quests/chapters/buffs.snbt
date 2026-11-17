@@ -9,24 +9,22 @@
 	id: "3C00000000000000"
 	order_index: 9
 	quest_links: [ ]
-	quests: [
-		{
-			icon: {
-				id: "cognition:experience_fountain"
-			}
-			id: "3C00000000000004"
-			rewards: [{
-				id: "3C00000002000004"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000004"
-				item: { count: 1, id: "cognition:experience_fountain" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 4.5d
+	quests: [{
+		icon: {
+			id: "cognition:experience_fountain"
 		}
-	]
+		id: "3C00000000000004"
+		rewards: [{
+			id: "3C00000002000004"
+			type: "xp"
+			xp: 25
+		}]
+		tasks: [{
+			id: "3C00000001000004"
+			item: { count: 1, id: "cognition:experience_fountain" }
+			type: "item"
+		}]
+		x: -6.0d
+		y: 4.5d
+	}]
 }

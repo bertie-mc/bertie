@@ -1,23 +1,7 @@
 {
-  "type": "oritech:centrifuge_fluid",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "tag": "c:dirty_dusts/desh"
+      "type": "neoforge:false"
     }
-  ],
-  "results": [
-    {
-      "id": "bertieprogression:desh_gem",
-      "count": 1
-    },
-    {
-      "id": "bertieprogression:eezo_spec",
-      "count": 3
-    }
-  ],
-  "time": 100,
-  "fluidInput": {
-    "fluid": "oritech:still_sheol_fire",
-    "amount": 100
-  }
+  ]
 }

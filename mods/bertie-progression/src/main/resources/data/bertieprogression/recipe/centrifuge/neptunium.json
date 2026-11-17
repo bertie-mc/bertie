@@ -1,23 +1,7 @@
 {
-  "type": "oritech:centrifuge_fluid",
-  "ingredients": [
+  "neoforge:conditions": [
     {
-      "tag": "c:dirty_dusts/neptunium"
+      "type": "neoforge:false"
     }
-  ],
-  "results": [
-    {
-      "id": "bertieprogression:neptunium_gem",
-      "count": 1
-    },
-    {
-      "id": "bertieprogression:tharsite_spec",
-      "count": 3
-    }
-  ],
-  "time": 100,
-  "fluidInput": {
-    "fluid": "oritech:still_sheol_fire",
-    "amount": 100
-  }
+  ]
 }

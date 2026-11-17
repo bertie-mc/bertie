@@ -1,6 +1,6 @@
 # Ore intermediates
 
-`ore_materials.json` lists the canonical forms for 23 metals, the missing item
+`ore_materials.json` lists the canonical forms for 18 metals, the missing item
 registrations, slurry registrations, texture hashes and processing recipe IDs.
 Existing items retain their IDs. This includes Oritech's six native metal Gems.
 Plutonium is excluded from the added family.
@@ -19,13 +19,13 @@ three-Raw-to-2000-Slurry ratio. Intermediate
 conversions retain their native 1:1 quantities; crystallization uses 200 Slurry.
 Ore-block recipes, Fortune and mining drops are unchanged.
 
-Each of the 23 metal Centrifuge routes consumes one matching Dirty Dust and
+Each of the 18 metal Centrifuge routes consumes one matching Dirty Dust and
 100 mB Sheol Fire, producing one matching Gem and three secondary Specs. The
 Fluid Addon is required. Water/Acid Clump-to-Gem alternatives are disabled.
 The current byproducts are listed in `ore_materials.json`; no self-material
-placeholders remain. Uranium, Elvenite and Solerium have no secondary source.
-Neptunium is the sole unresolved coverage gap. Planet and Armageddon materials
-can only be secondary outputs of higher tiers in their own progression.
+placeholders remain. Uranium and Elvenite intentionally have no secondary source;
+every other remaining material has one. Armageddon materials can only be secondary
+outputs of higher tiers in their own progression.
 
 Eight matching Specs surrounding one matching Dirty Dust craft two Dirty Dust.
 The centre is consumed normally.
@@ -36,7 +36,7 @@ native Mithril Scrap. Like the existing Ancient Debris → Dirty Netherite Scrap
 route, dirty-scrap production is Crusher-only. Clibano's Netherite residue chance
 is 15%, retaining its existing fire eligibility and one-Scrap primary result.
 
-All 23 metal Gems have a 1:1 Mekanism Crusher route into matching Dust.
+All 18 metal Gems have a 1:1 Mekanism Crusher route into matching Dust.
 Existing Atomic Forge routes remain; Gem alloying, cooking, heated mixing
 and thermal compatibility finishing are disabled. Crystal chemical processing
 and component uses such as Uranium Pellet assembly are separate and retained.
@@ -45,10 +45,13 @@ Raw Voiderite and Raw Bloody use the supplied provisional
 artwork. They have ordinary smelting/blasting links, but mining drops are not
 redirected to them. Their existence does not select a world-generation design.
 
-Ostrum is withdrawn: installed Stellaris provides only the ore, without an ingot
-or useful consumers. Its added placeholder forms, recipes and slurry registrations
-are removed, and ore generation is disabled. Neptunium returns Tharsite Specs to
-retain a byproduct from the previous planet.
+Stellaris and its dedicated addons are withdrawn. Desh, Neptunium, Tharsite,
+Corronium and Solerium lose their 45 custom items and ten custom slurry registrations,
+processing routes and generated assets. Ostrum's earlier withdrawal remains.
+Existing providers' Uranium, Plutonium fuel/dust and Aquaculture's distinct Neptunium
+content remain. A dust loses Mineral Slurry eligibility when Stellaris supplied
+its only ore form. Distinctive Stellaris artwork is archived outside the pack;
+the retired materials are not re-registered.
 
 Resonant Coil retains the `platinum_coil` item ID and uses Platinum Wire with
 Malignant Pewter at the top/bottom and Cognitive Alloy in its centre column.
