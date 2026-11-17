@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "c37721e356974c94874851d7391e684565c122a42d80a90864c43c4e5b5e1f02"
+inputs-hash = "345ee46dc38d04cf2867ba911cc87d5e37efe36977b184da80331f9dfa26a422"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -372,6 +372,10 @@ mod = "curseforge:1143065:7469786"
 [components."distraction-free-recipes"]
 any = "curseforge:1167848:6110175"
 mod = "curseforge:1167848:6110175"
+
+[components."do-a-barrel-roll"]
+any = "modrinth:6FtRfnLg:Zj604q5O"
+mod = "modrinth:6FtRfnLg:Zj604q5O"
 
 [components."does-it-tick"]
 any = "curseforge:543308:6353650"
@@ -9200,6 +9204,7 @@ integrations = []
 
 [artifacts."modrinth:6FtRfnLg:Zj604q5O"]
 name = "do-a-barrel-roll"
+component = "do-a-barrel-roll"
 provider = "modrinth"
 kind = "mod"
 side = "both"

@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "6ffe6cb6319fff1fedf4afe92ad415320383c25c3bacf4d3e126bdf22b7aa295"
+inputs-hash = "afd41bc108c322b17612351f9c9ea39ff1d95a323c05be8fb61df6c406cd0a7d"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -372,6 +372,10 @@ mod = "modrinth:bA1tmmcv:DZOuNCHD"
 [components."distraction-free-recipes"]
 any = "modrinth:gbJLUhZP:H0rFJIiC"
 mod = "modrinth:gbJLUhZP:H0rFJIiC"
+
+[components."do-a-barrel-roll"]
+any = "modrinth:6FtRfnLg:Zj604q5O"
+mod = "modrinth:6FtRfnLg:Zj604q5O"
 
 [components."does-it-tick"]
 any = "modrinth:vmg6jaPW:LxZKFbNR"
@@ -2828,6 +2832,7 @@ integrations = [{ "artifact" = "modrinth:vvuO3ImH:yohfFbgD", "namespace" = "curi
 
 [artifacts."modrinth:6FtRfnLg:Zj604q5O"]
 name = "do-a-barrel-roll"
+component = "do-a-barrel-roll"
 provider = "modrinth"
 kind = "mod"
 side = "both"

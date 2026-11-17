@@ -1,6 +1,11 @@
 # Cybernetics and refining
 
 The Augmentation Center and basic Research Station use 5×5 Nether Table recipes.
+
+The NeoForge version required by Unbound needs compatibility hooks for older
+owo and Forgified Fabric API packet registration. Packet codecs are resolved
+using their registered connection phase and direction, including Do a Barrel
+Roll's configuration synchronization. Existing resolved codecs are preserved.
 The twelve selected research nodes retain native energy, timing and application
 costs. Living Fortress and Flight exchange their tree positions and dependency
 roles, retaining their identities, effects, station requirements and costs.

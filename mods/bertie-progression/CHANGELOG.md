@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.52.1
+
+- Resolve Forgified Fabric API's dynamic packet codec on newer NeoForge return
+  branches, fixing Do a Barrel Roll configuration sync disconnects during world join.
+
 ## 0.52.0
 
 - Add the two-input Create Mechanical Adapter and Copper Casing construction for
