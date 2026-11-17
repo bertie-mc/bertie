@@ -1,0 +1,91 @@
+[
+  {
+    "recipe": "mekanism:chemical_oxidizer",
+    "station": "avaritia:nether_crafting_table",
+    "tier": 2,
+    "pattern": [
+      "AAAAA",
+      "ABCBA",
+      "ADEFA",
+      "AGHGA",
+      "IIIII"
+    ],
+    "key": {
+      "A": {
+        "item": "bertieprogression:osmium_sheet"
+      },
+      "B": {
+        "item": "oritech:processing_unit"
+      },
+      "C": {
+        "item": "mekanism:ultimate_control_circuit"
+      },
+      "D": {
+        "item": "mekanism:personal_barrel"
+      },
+      "E": {
+        "item": "mekanism:steel_casing"
+      },
+      "F": {
+        "item": "mekmm:ultimate_mid_chemical_tank"
+      },
+      "G": {
+        "item": "mekanism:alloy_atomic"
+      },
+      "H": {
+        "item": "oritech:motor"
+      },
+      "I": {
+        "item": "bertieprogression:deep_alloy_sheet"
+      }
+    },
+    "result": {
+      "id": "mekanism:chemical_oxidizer",
+      "count": 1
+    }
+  },
+  {
+    "recipe": "mekanism:quantum_entangloporter",
+    "station": "avaritia:end_crafting_table",
+    "tier": 3,
+    "pattern": [
+      "AABBBAA",
+      "ACDEDCA",
+      "BDFGFDB",
+      "BEGHGEB",
+      "BDFGFDB",
+      "ACDEDCA",
+      "AABBBAA"
+    ],
+    "key": {
+      "A": {
+        "item": "magitech:ender_metal_ingot"
+      },
+      "B": {
+        "item": "l2complements:shulkerate_ingot"
+      },
+      "C": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "D": {
+        "item": "bertieprogression:titanium_sheet"
+      },
+      "E": {
+        "item": "mekanism:teleportation_core"
+      },
+      "F": {
+        "item": "mekanism_extras:supreme_control_circuit"
+      },
+      "G": {
+        "item": "oritech:super_ai_chip"
+      },
+      "H": {
+        "item": "forbidden_arcanus:quantum_core"
+      }
+    },
+    "result": {
+      "id": "mekanism:quantum_entangloporter",
+      "count": 2
+    }
+  }
+]

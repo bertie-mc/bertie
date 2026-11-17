@@ -12,24 +12,6 @@
 	quests: [
 		{
 			icon: {
-				id: "irons_spellbooks:arcane_anvil"
-			}
-			id: "7B00000000000005"
-			rewards: [{
-				id: "7B00000002000005"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "7B00000001000005"
-				item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			icon: {
 				id: "cognition:experience_fountain"
 			}
 			id: "3C00000000000004"
@@ -63,42 +45,6 @@
 			}]
 			x: 6.0d
 			y: 7.5d
-		}
-		{
-			icon: {
-				id: "anvilcraft:royal_grindstone"
-			}
-			id: "3C00000000000016"
-			rewards: [{
-				id: "3C00000002000016"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000016"
-				item: { count: 1, id: "anvilcraft:royal_grindstone" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "anvilcraft:ember_grindstone"
-			}
-			id: "3C00000000000017"
-			rewards: [{
-				id: "3C00000002000017"
-				type: "xp"
-				xp: 25
-			}]
-			tasks: [{
-				id: "3C00000001000017"
-				item: { count: 1, id: "anvilcraft:ember_grindstone" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 4.5d
 		}
 	]
 }

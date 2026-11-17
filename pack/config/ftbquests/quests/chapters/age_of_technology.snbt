@@ -692,21 +692,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5C00000000009001"]
-			icon: {
-				id: "bertieprogression:enriched_zinc"
-			}
-			id: "5C00000000009324"
-			tasks: [{
-				consume_items: false
-				id: "5C00000001009324"
-				item: { components: { "ftbfiltersystem:filter": "or(item(bertieprogression:enriched_zinc)item(bertieprogression:enriched_amethyst)item(mekanism:enriched_carbon)item(mekanism:enriched_diamond)item(mekanism:enriched_gold)item(mekanism:enriched_redstone)item(mekanism:enriched_refined_obsidian)item(mekanism:enriched_tin))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Enriched Material\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
 			dependencies: ["5C00000000009320"]
 			icon: {
 				id: "oritech:powered_furnace_block"
@@ -760,7 +745,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C00000000009328"]
@@ -774,7 +759,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C00000000009329"]
@@ -788,7 +773,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C0000000000932C"]
@@ -1194,7 +1179,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C0000000000933A"]
@@ -1208,7 +1193,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1225,7 +1210,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C0000000000935D"]
@@ -1239,7 +1224,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C0000000000933D"]
@@ -1298,7 +1283,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000009340"]
@@ -1326,7 +1311,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C00000000009000"]
@@ -1400,7 +1385,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000009337"]
@@ -1555,7 +1540,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C00000000009351"]
@@ -1570,7 +1555,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5C00000000009352"]
@@ -1585,7 +1570,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5C00000000009353"]
@@ -1633,7 +1618,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C00000000009343"]
@@ -1647,7 +1632,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C00000000009357"]
@@ -1660,7 +1645,7 @@
 				item: { count: 1, id: "bertieprogression:coal_dense_charge" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: -3.0d
 		}
 		{
@@ -1674,7 +1659,7 @@
 				item: { count: 1, id: "oritech:carbon_fibre_strands" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 21.0d
 			y: -1.5d
 		}
 		{
@@ -1689,7 +1674,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C0000000000935A"]
@@ -1703,7 +1688,7 @@
 				type: "item"
 			}]
 			x: 22.5d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C000000000000A8"]
@@ -1730,7 +1715,7 @@
 				item: { count: 1, id: "oritech:machine_fluid_addon" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
@@ -1786,7 +1771,7 @@
 				item: { count: 1, id: "oritech:foundry_block" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 27.0d
 			y: 1.5d
 		}
 		{
@@ -1800,7 +1785,7 @@
 				item: { count: 1, id: "oritech:duratium_ingot" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 28.5d
 			y: 3.0d
 		}
 		{
@@ -1814,7 +1799,7 @@
 				item: { count: 1, id: "oritech:energite_ingot" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 25.5d
 			y: 3.0d
 		}
 		{
@@ -1828,7 +1813,7 @@
 				item: { count: 1, id: "oritech:still_naphtha_bucket" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: -6.0d
 		}
 		{
@@ -1842,7 +1827,7 @@
 				item: { count: 1, id: "oritech:still_silicon_wash_bucket" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 21.0d
 			y: -6.0d
 		}
 		{
@@ -1856,7 +1841,7 @@
 				item: { count: 1, id: "oritech:silicon_wafer" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.5d
 			y: -6.0d
 		}
 		{
@@ -2047,7 +2032,7 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000009337"]
@@ -2062,8 +2047,8 @@
 				item: { count: 1, id: "oritech:adamant_ingot" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.5d
+			x: 15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C0000000000933C"]
@@ -2079,7 +2064,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C0000000000933B"]
@@ -2095,7 +2080,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C00000000009359"]
@@ -2110,7 +2095,7 @@
 				item: { count: 1, id: "oritech:carbon_fibre_strands" }
 				type: "item"
 			}]
-			x: 19.5d
+			x: 22.5d
 			y: -3.0d
 		}
 		{
@@ -2126,8 +2111,8 @@
 				item: { count: 1, id: "oritech:enderic_lens" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: -3.0d
+			x: 24.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C00000000009360"]
@@ -2158,8 +2143,8 @@
 				item: { count: 1, id: "oritech:energite_ingot" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: 4.5d
+			x: 25.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C00000000009362"]
@@ -2174,7 +2159,7 @@
 				item: { count: 1, id: "oritech:duratium_ingot" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 27.0d
 			y: 3.0d
 		}
 		{
@@ -2219,7 +2204,7 @@
 				item: { count: 1, id: "mekanismgenerators:solar_generator" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 22.5d
 			y: 4.5d
 		}
 		{
@@ -2234,8 +2219,8 @@
 				item: { count: 1, id: "oritech:big_solar_panel_block" }
 				type: "item"
 			}]
-			x: 27.0d
-			y: 4.5d
+			x: 22.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -2268,7 +2253,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C00000000000095"]
@@ -2282,8 +2267,8 @@
 				item: { count: 1, id: "oritech:unholy_intelligence" }
 				type: "item"
 			}]
-			x: 27.0d
-			y: 0.0d
+			x: 28.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5C00000000000096"]
@@ -2347,7 +2332,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C0000000000009A"]
@@ -2386,7 +2371,7 @@
 				item: { count: 1, id: "oritech:basic_battery" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 24.0d
 			y: 3.0d
 		}
 		{
@@ -2401,7 +2386,7 @@
 				item: { count: 1, id: "mekanism:energy_tablet" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 22.5d
 			y: 1.5d
 		}
 		{
@@ -2416,7 +2401,7 @@
 				item: { count: 1, id: "mekanismgenerators:wind_generator" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 21.0d
 			y: 1.5d
 		}
 		{
@@ -2446,8 +2431,8 @@
 				item: { count: 1, id: "mekanism:advanced_energy_cube" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: 4.5d
+			x: 19.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C000000000000A0"]
@@ -2461,8 +2446,8 @@
 				item: { count: 1, id: "mekanism:elite_energy_cube" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: 6.0d
+			x: 19.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C000000000000A1"]
@@ -2477,7 +2462,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C0000000000935E"]
@@ -2495,7 +2480,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5C000000000000A7"]
+			dependencies: ["5C000000000000A7", "5C00000000000200"]
 			icon: {
 				id: "mekanism_extras:dust_radiance"
 			}
@@ -2554,7 +2539,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C00000000009366"]
@@ -2569,8 +2554,8 @@
 				item: { count: 1, id: "oritech:silicon_wafer" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -4.5d
+			x: 24.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5C000000000000A7"]
@@ -2601,7 +2586,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C00000000009303"]
@@ -2630,7 +2615,7 @@
 				item: { count: 1, id: "mekanism:dimensional_stabilizer" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 18.0d
 			y: -3.0d
 		}
 		{
@@ -2646,7 +2631,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C00000000009322"]
@@ -2676,7 +2661,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C000000000000B3"]
@@ -2691,7 +2676,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5C000000000000B4"]
@@ -2706,7 +2691,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: -7.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5C000000000000B4"]
@@ -2721,7 +2706,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -7.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5C0000000000933A"]
@@ -2735,8 +2720,8 @@
 				item: { count: 1, id: "oritech:cooler_block" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 4.5d
+			x: 18.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C00000000000098"]
@@ -2774,68 +2759,76 @@
 				item: { count: 1, id: "oritech:target_designator" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: -1.5d
+			x: 27.0d
+			y: -3.0d
 		}
-
 		{
 			dependencies: ["5C0000000000933F"]
-			y: 0.0d
-			x: 12.0d
+			icon: {
+				id: "oritech:biosteel_ingot"
+			}
 			id: "5C00000000000100"
-			icon: { id: "oritech:biosteel_ingot" }
 			tasks: [{
-				id: "5C00000001000100"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "oritech:biosteel_ingot" }
+				id: "5C00000001000100"
+				item: { count: 1, id: "oritech:biosteel_ingot" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: 0.0d
 		}
-
 		{
 			dependencies: ["5C00000000009341"]
-			y: -1.5d
-			x: 13.5d
+			icon: {
+				id: "mekanism:nutritional_liquifier"
+			}
 			id: "5C00000000000101"
-			icon: { id: "mekanism:nutritional_liquifier" }
 			tasks: [{
-				id: "5C00000001000101"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "mekanism:nutritional_liquifier" }
+				id: "5C00000001000101"
+				item: { count: 1, id: "mekanism:nutritional_liquifier" }
 				type: "item"
 			}]
+			x: 12.0d
+			y: -1.5d
 		}
-
 		{
 			dependencies: ["5C00000000000101"]
-			y: -1.5d
-			x: 12.0d
+			icon: {
+				id: "mekmm:planting_station"
+			}
 			id: "5C00000000000102"
-			icon: { id: "mekmm:planting_station" }
 			tasks: [{
-				id: "5C00000001000102"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "mekmm:planting_station" }
+				id: "5C00000001000102"
+				item: { count: 1, id: "mekmm:planting_station" }
 				type: "item"
 			}]
+			x: 10.5d
+			y: 0.0d
 		}
-
 		{
 			dependencies: ["5C0000000000932A"]
-			y: 6.0d
-			x: 12.0d
+			icon: {
+				id: "mekmm:large_heat_generator"
+			}
 			id: "5C00000000000103"
-			icon: { id: "mekmm:large_heat_generator" }
 			tasks: [{
-				id: "5C00000001000103"
-				count: 1L
 				consume_items: false
-				item: { count: 1 id: "mekmm:large_heat_generator" }
+				id: "5C00000001000103"
+				item: { count: 1, id: "mekmm:large_heat_generator" }
 				type: "item"
 			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C0000000000935E"]
+			y: -1.5d
+			x: 24.0d
+			id: "5C00000000000200"
+			icon: { id: "mekanism:chemical_oxidizer" }
+			tasks: [{"id": "5C00000001000200", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:chemical_oxidizer", "count": 1}}]
 		}
 	]
 }

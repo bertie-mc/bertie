@@ -1,0 +1,62 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 2,
+  "pattern": [
+    "AAAAA",
+    "ABCBA",
+    "ADEFA",
+    "AGHGA",
+    "IIIII"
+  ],
+  "key": {
+    "A": {
+      "item": "bertieprogression:osmium_sheet"
+    },
+    "B": {
+      "item": "oritech:processing_unit"
+    },
+    "C": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "D": {
+      "item": "mekanism:personal_barrel"
+    },
+    "E": {
+      "item": "mekanism:steel_casing"
+    },
+    "F": {
+      "item": "mekmm:ultimate_mid_chemical_tank"
+    },
+    "G": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "H": {
+      "item": "oritech:motor"
+    },
+    "I": {
+      "item": "bertieprogression:deep_alloy_sheet"
+    }
+  },
+  "result": {
+    "id": "mekanism:chemical_oxidizer",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

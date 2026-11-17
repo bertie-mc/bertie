@@ -5950,4 +5950,7 @@ _apply_compact_storage(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 from reviewed_progression_recipes import apply as _apply_reviewed_progression
 _apply_reviewed_progression(ROOT, _recipe_src, _Path(INSTANCE_MODS))
 
+from queued_051_recipes import apply as _apply_queued_051
+_apply_queued_051(ROOT, _recipe_src)
+
 print(f"Wrote {len(written)} files under {RES}")

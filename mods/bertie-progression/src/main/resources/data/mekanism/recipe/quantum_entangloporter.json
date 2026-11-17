@@ -1,0 +1,73 @@
+{
+  "type": "avaritia:shaped_table",
+  "tier": 3,
+  "pattern": [
+    "AABBBAA",
+    "ACDEDCA",
+    "BDFGFDB",
+    "BEGHGEB",
+    "BDFGFDB",
+    "ACDEDCA",
+    "AABBBAA"
+  ],
+  "key": {
+    "A": {
+      "item": "magitech:ender_metal_ingot"
+    },
+    "B": {
+      "item": "l2complements:shulkerate_ingot"
+    },
+    "C": {
+      "item": "mekanism:pellet_plutonium"
+    },
+    "D": {
+      "item": "bertieprogression:titanium_sheet"
+    },
+    "E": {
+      "item": "mekanism:teleportation_core"
+    },
+    "F": {
+      "item": "mekanism_extras:supreme_control_circuit"
+    },
+    "G": {
+      "item": "oritech:super_ai_chip"
+    },
+    "H": {
+      "item": "forbidden_arcanus:quantum_core"
+    }
+  },
+  "result": {
+    "id": "mekanism:quantum_entangloporter",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "avaritia"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "l2complements"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "magitech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism_extras"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ]
+}

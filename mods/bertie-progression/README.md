@@ -57,6 +57,8 @@ recipes, captured machine crafts, native EMI views and revised storage parts.
 the five large-machine structures, Sentient Casing and the reusable Enderite
 catalyst. [Reviewed recipe policy](docs/reviewed-recipe-cleanup.md) records the
 building-form selections, compatibility repairs and utility acquisition changes.
+[Chemical progression](docs/chemical-progression.md) covers the captured machine
+crafts, Spirit Altar anvil, material substitutions and grouped reactor quests.
 
 ### Blocks
 

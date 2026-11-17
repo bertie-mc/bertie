@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.51.0
+
+- Repair the EMI Ponder button; add material-icon step navigation, name tooltips
+  and angled previews through both EMI and the normal Ponder shortcut.
+- Flatten Sentient Casing faces while retaining animated purple emissive materials.
+- Move Arcane Anvil acquisition to Spirit Altar; add the captured Chemical Oxidizer
+  and two-output Quantum Entangloporter crafts.
+- Use Sculkium for thermonuclear production and Infused Alloy for both pigment
+  machines; remove the five large-machine crafting shortcuts covered by Mini recipes.
+- Add the chemical/fission/turbine/material quest branches, relocate Arcane Anvil
+  to C2 and remove selected Buffs and optional machine-catalogue entries.
+- Preserve manually arranged quest positions through guarded field-level updates.
+
 ## 0.50.0
 
 - Add fifteen individual spatial Ponders, including five captured large-machine

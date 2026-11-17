@@ -4,11 +4,13 @@ Giant Anvil and Miniaturization entries open an individual Ponder from their EMI
 button. The scenes assemble the structure, show its final catalyst or falling
 anvil, and reveal the output. Labels name the blocks rather than describing the
 construction in prose. Output items also expose the guides through Ponder's
-normal item entry point.
+normal item entry point. Both entry points expose the same material-icon strip
+below the timeline: click an icon to seek to that stage, or hover it for the
+material name. Native chapter navigation remains available between alternatives.
 
 The catalogue includes two Giant Anvil guides and thirteen Miniaturization guides:
 the Wall, seven Compact Machine templates, and five large Mekanism machines.
-The five machine previews face south toward the viewer. Their structures remain
+The previews use a three-quarter angle with the south face still toward the viewer. Their structures remain
 in the captured orientation; camera rotation does not change the recipe.
 
 ## Large machine Miniaturization
@@ -41,7 +43,9 @@ as lookup keys.
 ## Sentient Casing
 
 Sentient Casing is a placeable iron-tool-tier metal block with the approved
-16-pixel materials and animated purple emissive surfaces. Its End Table recipe
+16-pixel materials and animated purple emissive surfaces. Its body, frame and
+emissive materials now share flat full-cube faces, without inset or raised
+geometry. Texture animation and the existing palette are retained. Its End Table recipe
 combines Titanium, Refined Obsidian, Duratium, Unholy Intelligence, Super AI Chips,
 Reinforced Carbon Sheets and an Overcharged Crystal. It replaces the single
 Steel Casing in the Field Projector recipe, which produces four Projectors.

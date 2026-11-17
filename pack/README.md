@@ -33,10 +33,11 @@ Multiblock components stay in their structure quest. Links follow the nearest ma
 machine in the original construction recipes, with recycling loops and transitive duplicates
 excluded. Independent blocks sit outside the linked branches.
 
-Machines promoted to Age of Technology retain their explanatory reference nodes
-as checkmarks. MekMM Large machines have separate objectives, each depending only
-on its smaller counterpart; the retained Large Heat Generator is independent
-because its small counterpart is retired. Adamant branches into Centrifuge and Formulaic Assemblicator →
+The reference chapters retain processing and resource-production progression;
+optional utility/fluff and energy-option catalogues are removed. Integrated
+processing objectives use checkmarks. Large processing machines retain separate
+objectives linked to their smaller counterpart where those catalogue nodes remain.
+Adamant branches into Centrifuge and Formulaic Assemblicator →
 Assembler → Electric Coil → Processing Unit. The plastic item chain requires
 Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.
 HDPE Pellets lead to PlaStick, which branches into Rods and Sheets. Gas-Burning

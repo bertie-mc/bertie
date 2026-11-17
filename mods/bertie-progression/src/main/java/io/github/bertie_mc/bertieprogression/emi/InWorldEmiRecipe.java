@@ -116,18 +116,8 @@ final class InWorldEmiRecipe extends BasicEmiRecipe {
 
         int textY = y + SLOT + PADDING;
         if (guide != null && net.neoforged.fml.ModList.get().isLoaded("ponder")) {
-            widgets.addButton(
-                    PADDING,
-                    textY,
-                    18,
-                    18,
-                    0,
-                    0,
-                    () -> true,
-                    (mouseX, mouseY, button) ->
-                            io.github.bertie_mc.bertieprogression.ponder.SpatialPonderPlugin.open(guide));
-            widgets.addText(Component.literal("W"), PADDING + 5, textY + 4, 0xFF404040, false);
-            widgets.addTooltipText(List.of(Component.literal("Ponder")), PADDING, textY, 18, 18);
+            widgets.add(new SpatialPonderButton(PADDING, textY, guide));
+            widgets.addTooltipText(List.of(Component.literal("Ponder")), PADDING, textY, 58, 18);
         }
         Font font = font();
         int wrapWidth = getDisplayWidth() - PADDING * 2;

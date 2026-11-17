@@ -8,18 +8,10 @@
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.5C00000000000000.title: "Age of Technology"
 	chapter.5D00000000000000.title: "Going Deeper"
-	chapter.6100000000000000.quest_desc: [
-		"Optional utility machines form the left block. Energy-production equipment is grouped below."
-		"The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter."
-		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
-	]
+	chapter.6100000000000000.quest_desc: ["Processing and resource-production machines; optional utility and energy catalogues are omitted.", "The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
 	chapter.6100000000000000.subtitle: "Machines and useful blocks"
 	chapter.6100000000000000.title: "Mekanism"
-	chapter.6200000000000000.quest_desc: [
-		"Optional utility machines form the left block. Energy-production equipment is grouped below."
-		"The main tree contains material-processing and machine-production equipment."
-		"Capacity tiers share objectives. Multiblock components are grouped in their structure quest."
-	]
+	chapter.6200000000000000.quest_desc: ["Processing and resource-production machines; optional utility and energy catalogues are omitted.", "The main tree contains material-processing and machine-production equipment.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
 	chapter.6B00000000000000.title: "To Hell and Back"
@@ -2955,4 +2947,12 @@
 	quest.5C00000000000101.title: "Nutritional Liquifier"
 	quest.5C00000000000102.title: "Planting Station"
 	quest.5C00000000000103.title: "Large Heat Generator"
+	quest.7B00000000000005.title: "Arcane Anvil"
+	quest.5C00000000000200.title: "Chemical Oxidizer"
+	quest.5B00000000000200.title: "Chemical Dissolution Chamber"
+	quest.5B00000000000201.title: "Isotopic Centrifuge"
+	quest.5B00000000000202.title: "Fission Reactor"
+	quest.5B00000000000203.title: "Turbine Parts"
+	quest.5B00000000000204.title: "Enriched Thermonuclear"
+	quest.5B00000000000205.title: "Plutonium Pellet"
 }

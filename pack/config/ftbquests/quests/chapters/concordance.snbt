@@ -1156,7 +1156,7 @@
 				item: { count: 1, id: "mekmm:cnc_stamper" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 27.0d
 			y: 0.0d
 		}
 		{
@@ -1171,7 +1171,7 @@
 				item: { count: 1, id: "mekmm:cnc_lathe" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 25.5d
 			y: 0.0d
 		}
 		{
@@ -1186,7 +1186,7 @@
 				item: { count: 1, id: "mekmm:cnc_rolling_mill" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
@@ -1203,7 +1203,7 @@
 				item: { count: 1, id: "mekanism:energized_smelter" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 28.5d
 			y: 0.0d
 		}
 		{
@@ -1221,7 +1221,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5B000000000000BD"]
@@ -1548,237 +1548,306 @@
 			x: 28.5d
 			y: 6.0d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B000000000000CE"]
-			y: -1.5d
-			x: 24.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "the_beyond:ferrojelly"
+			}
 			id: "5B00000000000100"
-			icon: { id: "the_beyond:ferrojelly" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000100"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "the_beyond:ferrojelly" }
+				item: { count: 1, id: "the_beyond:ferrojelly" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: 3.0d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B000000000000C5"]
-			y: 1.5d
-			x: 31.5d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekmm:large_chemical_infuser"
+			}
 			id: "5B00000000000101"
-			icon: { id: "mekmm:large_chemical_infuser" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000101"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekmm:large_chemical_infuser" }
+				item: { count: 1, id: "mekmm:large_chemical_infuser" }
 				type: "item"
 			}]
+			x: 31.5d
+			y: 1.5d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B000000000000C8"]
-			y: 3.0d
-			x: 36.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:fuelwood_heater"
+			}
 			id: "5B00000000000102"
-			icon: { id: "mekanism:fuelwood_heater" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000102"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:fuelwood_heater" }
+				item: { count: 1, id: "mekanism:fuelwood_heater" }
 				type: "item"
 			}]
-		}
-
-		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
-			dependencies: ["5B00000000000102"]
+			x: 36.0d
 			y: 3.0d
-			x: 37.5d
+		}
+		{
+			dependencies: ["5B00000000000102"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:resistive_heater"
+			}
 			id: "5B00000000000103"
-			icon: { id: "mekanism:resistive_heater" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000103"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:resistive_heater" }
+				item: { count: 1, id: "mekanism:resistive_heater" }
 				type: "item"
 			}]
+			x: 37.5d
+			y: 3.0d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B000000000000B6"]
-			y: -11.5d
-			x: 7.5d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "forbidden_arcanus:quantum_core"
+			}
 			id: "5B00000000000104"
-			icon: { id: "forbidden_arcanus:quantum_core" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000104"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "forbidden_arcanus:quantum_core" }
+				item: { count: 1, id: "forbidden_arcanus:quantum_core" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: 0.0d
 		}
-
 		{
+			dependencies: ["5B00000000000104"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000104"]
-			y: -12.25d
-			x: 9.0d
+			icon: {
+				id: "compactmachines:enlarging_module"
+			}
 			id: "5B00000000000105"
-			icon: { id: "compactmachines:enlarging_module" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000105"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactmachines:enlarging_module" }
+				item: { count: 1, id: "compactmachines:enlarging_module" }
 				type: "item"
 			}]
+			x: 21.0d
+			y: -1.5d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B00000000000104"]
-			y: -10.75d
-			x: 9.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "compactmachines:shrinking_module"
+			}
 			id: "5B00000000000106"
-			icon: { id: "compactmachines:shrinking_module" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000106"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactmachines:shrinking_module" }
+				item: { count: 1, id: "compactmachines:shrinking_module" }
 				type: "item"
 			}]
+			x: 22.5d
+			y: 0.0d
 		}
-
 		{
+			dependencies: [
+				"5B00000000000105"
+				"5B00000000000106"
+			]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000105", "5B00000000000106"]
-			y: -11.5d
-			x: 10.5d
+			icon: {
+				id: "compactmachines:personal_shrinking_device"
+			}
 			id: "5B00000000000107"
-			icon: { id: "compactmachines:personal_shrinking_device" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000107"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactmachines:personal_shrinking_device" }
+				item: { count: 1, id: "compactmachines:personal_shrinking_device" }
 				type: "item"
 			}]
+			x: 22.5d
+			y: -1.5d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B00000000000107"]
-			y: -11.5d
-			x: 12.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "compactmachines:wall"
+			}
 			id: "5B00000000000108"
-			icon: { id: "compactmachines:wall" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000108"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactmachines:wall" }
+				item: { count: 1, id: "compactmachines:wall" }
 				type: "item"
 			}]
+			x: 24.0d
+			y: -1.5d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B00000000000108"]
-			y: -11.5d
-			x: 13.5d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "compactcrafting:field_projector"
+			}
 			id: "5B00000000000109"
-			icon: { id: "compactcrafting:field_projector" }
 			tasks: [{
+				consume_items: false
 				id: "5B00000001000109"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactcrafting:field_projector" }
+				item: { count: 1, id: "compactcrafting:field_projector" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -1.5d
 		}
-
 		{
+			dependencies: ["5B00000000000109"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000109"]
-			y: -13.0d
-			x: 15.0d
+			icon: {
+				id: "compactcrafting:rescan_proxy"
+			}
 			id: "5B0000000000010A"
-			icon: { id: "compactcrafting:rescan_proxy" }
 			tasks: [{
+				consume_items: false
 				id: "5B0000000100010A"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactcrafting:rescan_proxy" }
+				item: { count: 1, id: "compactcrafting:rescan_proxy" }
 				type: "item"
 			}]
+			x: 27.0d
+			y: -3.0d
 		}
-
 		{
+			dependencies: ["5B00000000000109"]
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B00000000000109"]
-			y: -10.0d
-			x: 15.0d
+			icon: {
+				id: "compactcrafting:match_proxy"
+			}
 			id: "5B0000000000010B"
-			icon: { id: "compactcrafting:match_proxy" }
 			tasks: [{
+				consume_items: false
 				id: "5B0000000100010B"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "compactcrafting:match_proxy" }
+				item: { count: 1, id: "compactcrafting:match_proxy" }
 				type: "item"
 			}]
+			x: 25.5d
+			y: -3.0d
 		}
-
 		{
-			hide_until_deps_complete: false
-			hide_until_deps_visible: false
 			dependencies: ["5B00000000000109"]
-			y: -11.5d
-			x: 15.0d
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "compactmachines:new_machine"
+			}
 			id: "5B0000000000010C"
-			icon: { id: "compactmachines:new_machine" }
-			tasks: [{"id": "5B0000000100010C", "count": 1, "consume_items": false, "item": {"id": "ftbfiltersystem:smart_filter", "count": 1, "components": {"ftbfiltersystem:filter": "or(item(compactmachines:new_machine)item(compactmachines:machine))", "minecraft:custom_name": "{\"text\": \"Any Compact Machine\", \"italic\": false}"}}, "type": "item"}]
+			tasks: [{
+				consume_items: false
+				id: "5B0000000100010C"
+				item: { components: { "ftbfiltersystem:filter": "or(item(compactmachines:new_machine)item(compactmachines:machine))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Any Compact Machine\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: -1.5d
 		}
-
+		{
+			dependencies: ["5B0000000000010C"]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "mekanism:quantum_entangloporter"
+			}
+			id: "5B0000000000010D"
+			tasks: [{
+				consume_items: false
+				id: "5B0000000100010D"
+				item: { count: 1, id: "mekanism:quantum_entangloporter" }
+				type: "item"
+			}]
+			x: 28.5d
+			y: -3.0d
+		}
 		{
 			hide_until_deps_complete: false
 			hide_until_deps_visible: false
-			dependencies: ["5B0000000000010C"]
-			y: -11.5d
-			x: 16.5d
-			id: "5B0000000000010D"
-			icon: { id: "mekanism:quantum_entangloporter" }
-			tasks: [{
-				id: "5B0000000100010D"
-				count: 1L
-				consume_items: false
-				item: { count: 1 id: "mekanism:quantum_entangloporter" }
-				type: "item"
-			}]
+			dependencies: ["5B000000000000C3"]
+			y: -1.5d
+			x: 33.0d
+			id: "5B00000000000200"
+			icon: { id: "mekanism:chemical_dissolution_chamber" }
+			tasks: [{"id": "5B00000001000200", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:chemical_dissolution_chamber", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000200"]
+			y: -1.5d
+			x: 34.5d
+			id: "5B00000000000201"
+			icon: { id: "mekanism:isotopic_centrifuge" }
+			tasks: [{"id": "5B00000001000201", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:isotopic_centrifuge", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000201"]
+			y: -1.5d
+			x: 36.0d
+			id: "5B00000000000202"
+			icon: { id: "mekanismgenerators:fission_reactor_casing" }
+			tasks: [{"id": "5B00000001000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_casing", "count": 1}}, {"id": "5B00000002000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_port", "count": 1}}, {"id": "5B00000003000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_fuel_assembly", "count": 1}}, {"id": "5B00000004000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:control_rod_assembly", "count": 1}}, {"id": "5B00000005000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:fission_reactor_logic_adapter", "count": 1}}, {"id": "5B00000006000202", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:reactor_glass", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000202"]
+			y: -3.0d
+			x: 36.0d
+			id: "5B00000000000203"
+			icon: { id: "mekanismgenerators:turbine_casing" }
+			tasks: [{"id": "5B00000001000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_casing", "count": 1}}, {"id": "5B00000002000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_valve", "count": 1}}, {"id": "5B00000003000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_vent", "count": 1}}, {"id": "5B00000004000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_rotor", "count": 1}}, {"id": "5B00000005000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:electromagnetic_coil", "count": 1}}, {"id": "5B00000006000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:rotational_complex", "count": 1}}, {"id": "5B00000007000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:saturating_condenser", "count": 1}}, {"id": "5B00000008000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:pressure_disperser", "count": 1}}, {"id": "5B00000009000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:structural_glass", "count": 1}}, {"id": "5B0000000A000203", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanismgenerators:turbine_blade", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000202"]
+			y: -3.0d
+			x: 37.5d
+			id: "5B00000000000204"
+			icon: { id: "mekanism_extras:enriched_thermonuclear" }
+			tasks: [{"id": "5B00000001000204", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism_extras:enriched_thermonuclear", "count": 1}}]
+		}
+		{
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			dependencies: ["5B00000000000202"]
+			y: -1.5d
+			x: 37.5d
+			id: "5B00000000000205"
+			icon: { id: "mekanism:pellet_plutonium" }
+			tasks: [{"id": "5B00000001000205", "type": "item", "count": 1, "consume_items": false, "item": {"id": "mekanism:pellet_plutonium", "count": 1}}]
 		}
 	]
 }
