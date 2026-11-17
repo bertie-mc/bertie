@@ -33,10 +33,10 @@ Multiblock components stay in their structure quest. Links follow the nearest ma
 machine in the original construction recipes, with recycling loops and transitive duplicates
 excluded. Independent blocks sit outside the linked branches.
 
-The reference chapters retain processing and resource-production progression;
-optional utility/fluff and energy-option catalogues are removed. Integrated
-processing objectives use checkmarks. Large processing machines retain separate
-objectives linked to their smaller counterpart where those catalogue nodes remain.
+The reference chapters retain unintegrated machines and options. Main-quest
+coverage and earlier explicit integration marks remove completed entries;
+whole utility or energy categories are never swept away. Large machines retain
+separate objectives while their remaining reference prerequisites are available.
 Adamant branches into Centrifuge and Formulaic Assemblicator →
 Assembler → Electric Coil → Processing Unit. The plastic item chain requires
 Biofuel for Raw Biopolymer, and both PRC and Raw Biopolymer for Substrate.

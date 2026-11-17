@@ -8,10 +8,10 @@
 	chapter.5B00000000000000.title: "Concordance"
 	chapter.5C00000000000000.title: "Age of Technology"
 	chapter.5D00000000000000.title: "Going Deeper"
-	chapter.6100000000000000.quest_desc: ["Processing and resource-production machines; optional utility and energy catalogues are omitted.", "The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
+	chapter.6100000000000000.quest_desc: ["Unintegrated machines and options; already-integrated entries are covered by the main quests.", "The main tree follows processing and resource production, including fission waste, plutonium, polonium and antimatter.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
 	chapter.6100000000000000.subtitle: "Machines and useful blocks"
 	chapter.6100000000000000.title: "Mekanism"
-	chapter.6200000000000000.quest_desc: ["Processing and resource-production machines; optional utility and energy catalogues are omitted.", "The main tree contains material-processing and machine-production equipment.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
+	chapter.6200000000000000.quest_desc: ["Unintegrated machines and options; already-integrated entries are covered by the main quests.", "The main tree contains material-processing and machine-production equipment.", "Capacity tiers share objectives. Multiblock components are grouped in their structure quest."]
 	chapter.6200000000000000.subtitle: "Machines and useful blocks"
 	chapter.6200000000000000.title: "Oritech"
 	chapter.6B00000000000000.title: "To Hell and Back"

@@ -11,10 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"628B454043ECDE97"
-				"62EB2969EF64354C"
-			]
 			icon: {
 				id: "oritech:accelerator_controller"
 			}
@@ -50,49 +46,6 @@
 			y: 4.5d
 		}
 		{
-			id: "62EB2969EF64354C"
-			tasks: [{
-				id: "621CFA9F9DD33F32"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"624BC5B6C71FD915"
-				"628B454043ECDE97"
-				"62EB2969EF64354C"
-			]
-			id: "621E38939E05AA74"
-			shape: "hexagon"
-			tasks: [{
-				id: "62DA4EF4694F7337"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			id: "624BC5B6C71FD915"
-			shape: "hexagon"
-			tasks: [{
-				id: "62700DE726FF8701"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -7.5d
-		}
-		{
-			id: "621129AE3D36DAF2"
-			tasks: [{
-				id: "62031E1E15D94EA8"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: -3.0d
-		}
-		{
 			icon: {
 				id: "oritech:enchantment_catalyst_block"
 			}
@@ -107,56 +60,6 @@
 			y: 0.0d
 		}
 		{
-			id: "628B454043ECDE97"
-			tasks: [{
-				id: "62819B06C76D379F"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"624BC5B6C71FD915"
-				"62EB2969EF64354C"
-			]
-			id: "6241C0AE0A7AF5E1"
-			tasks: [{
-				id: "6284B6923A321D9D"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: -1.5d
-		}
-		{
-			id: "627F81216BBEC39C"
-			tasks: [{
-				id: "62B18F8E87B14893"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["624BC5B6C71FD915"]
-			id: "62213B9DA611D8AD"
-			tasks: [
-				{
-					id: "625E90DDF3943F82"
-					type: "checkmark"
-				}
-				{
-					consume_items: false
-					id: "62ABF7CEDF9C2E3C"
-					item: { count: 1, id: "oritech:refinery_module_block" }
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["62213B9DA611D8AD"]
 			icon: {
 				id: "oritech:tainted_refinery_block"
 			}
@@ -169,6 +72,166 @@
 			}]
 			x: 6.0d
 			y: -7.5d
+		}
+		{
+			icon: {
+				id: "oritech:charger_block"
+			}
+			id: "6264043F58BE1F33"
+			tasks: [{
+				consume_items: false
+				id: "62CBE9D6F1DEA714"
+				item: { count: 1, id: "oritech:charger_block" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -6.0d
+		}
+		{
+			icon: {
+				id: "oritech:enchanter_block"
+			}
+			id: "6230B435795DFCEB"
+			tasks: [{
+				consume_items: false
+				id: "62A49E4EE7E1D503"
+				item: { count: 1, id: "oritech:enchanter_block" }
+				type: "item"
+			}]
+			x: -9.25d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "oritech:shrinker_block"
+			}
+			id: "62CB138F26BC4EDF"
+			tasks: [{
+				consume_items: false
+				id: "62E4F43C615C20A7"
+				item: { count: 1, id: "oritech:shrinker_block" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "oritechthings:particle_accelerator_speed_sensor"
+			}
+			id: "623C6424729A6815"
+			tasks: [{
+				consume_items: false
+				id: "62037AB9CED240ED"
+				item: { count: 1, id: "oritechthings:particle_accelerator_speed_sensor" }
+				type: "item"
+			}]
+			x: -13.75d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "oritechthings:accelerator_magnetic_field"
+			}
+			id: "62B056E48F4E932E"
+			tasks: [{
+				consume_items: false
+				id: "628246B199D36FEC"
+				item: { count: 1, id: "oritechthings:accelerator_magnetic_field" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "oritech:reactor_controller"
+			}
+			id: "62B2E1ADCC22B9B7"
+			tasks: [
+				{
+					consume_items: false
+					id: "6220801E99407427"
+					item: { count: 1, id: "oritech:reactor_controller" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "62E9E5E1F1E89AE1"
+					item: { count: 1, id: "oritech:reactor_wall" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6240B44A6B814D9A"
+					item: { components: { "ftbfiltersystem:filter": "or(item(oritech:reactor_rod)item(oritech:reactor_double_rod)item(oritech:reactor_quad_rod))", "minecraft:custom_name": "{\"italic\":false,\"text\":\"Reactor Rod\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "627ACA76626A9B73"
+					item: { count: 1, id: "oritech:reactor_heat_pipe" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "62FA0E410B29BB47"
+					item: { count: 1, id: "oritech:reactor_vent" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "623D8D612D582CB5"
+					item: { count: 1, id: "oritech:reactor_reflector" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "62FCD6C7A7DDFF02"
+					item: { count: 1, id: "oritech:reactor_condenser" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6241909B8E21788E"
+					item: { count: 1, id: "oritech:reactor_fuel_port" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "62A3C50275D50C8C"
+					item: { count: 1, id: "oritech:reactor_energy_port" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6267EEC5B5EE9DCD"
+					item: { count: 1, id: "oritech:reactor_absorber_port" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "62E84680D825D032"
+					item: { count: 1, id: "oritech:reactor_redstone_port" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 9.75d
+		}
+		{
+			icon: {
+				id: "oritech:particle_collector_block"
+			}
+			id: "62E6C820F71BEDAE"
+			tasks: [{
+				consume_items: false
+				id: "6293AAB4C3B5E1FD"
+				item: { count: 1, id: "oritech:particle_collector_block" }
+				type: "item"
+			}]
+			x: 6.75d
+			y: 9.75d
 		}
 	]
 }

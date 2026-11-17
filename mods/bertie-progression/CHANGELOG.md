@@ -10,7 +10,7 @@
 - Use Sculkium for thermonuclear production and Infused Alloy for both pigment
   machines; remove the five large-machine crafting shortcuts covered by Mini recipes.
 - Add the chemical/fission/turbine/material quest branches, relocate Arcane Anvil
-  to C2 and remove selected Buffs and optional machine-catalogue entries.
+  to C2 and remove selected Buffs and already-integrated reference entries.
 - Preserve manually arranged quest positions through guarded field-level updates.
 
 ## 0.50.0

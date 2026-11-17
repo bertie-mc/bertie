@@ -29,6 +29,7 @@ each of its ten native construction components.
 
 Arcane Anvil is in C2 above Arcane Ingot, requiring Spirit Altar. Buffs no longer
 contains its old entry or either special grindstone. Enriched Materials is removed.
-Mekanism/Oritech reference tabs retain processing progression; optional utility
-and energy-option catalogues are withdrawn. Integrated processing objectives use
-checkmarks. Main progression quests and all unselected live positions remain.
+Mekanism/Oritech reference tabs retain unintegrated processing, utility and energy
+options. Entries already covered by main quests or explicitly marked integrated
+are removed individually. Main progression quests and all unselected live
+positions remain. The catalogue is never filtered by whole categories.
