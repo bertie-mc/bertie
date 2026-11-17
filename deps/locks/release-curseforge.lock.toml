@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "4835a0d968c54213a9824ceb6db27d16d6484466a6bf9270ccf0063f381ab06f"
+inputs-hash = "c37721e356974c94874851d7391e684565c122a42d80a90864c43c4e5b5e1f02"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -614,8 +614,8 @@ any = "curseforge:1005914:7568897"
 mod = "curseforge:1005914:7568897"
 
 [components."geckolib"]
-any = "curseforge:388172:7707149"
-mod = "curseforge:388172:7707149"
+any = "curseforge:388172:8893490"
+mod = "curseforge:388172:8893490"
 
 [components."gensokyo-delight-youkais-feasts"]
 any = "curseforge:1309991:8004770"
@@ -1352,6 +1352,10 @@ mod = "curseforge:1227052:6341110"
 any = "modrinth:j6YEKDZd:bnFmuIDZ"
 mod = "modrinth:j6YEKDZd:aGfAC8xt"
 
+[components."unbound"]
+any = "curseforge:1750057:9652410"
+mod = "curseforge:1750057:9652410"
+
 [components."universal-grid"]
 any = "curseforge:536160:8145488"
 mod = "curseforge:536160:8145488"
@@ -1963,7 +1967,7 @@ slug = "rustic-engineer"
 file-id = 7121058
 provides = ["rustic_engineer"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.4]", "side" = "both", "origin" = "correction:rustic-engineer:curseforge-mod:geckolib-is-required" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.8.4]", "side" = "both", "origin" = "correction:rustic-engineer:curseforge-mod:geckolib-is-required" }]
 optional = [{ "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
@@ -2005,7 +2009,7 @@ slug = "oritech"
 file-id = 8211754
 provides = ["oritech"]
 bundled-provides = ["grandpower"]
-required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:b1ZV3DIJ:dJgL278E", "mod-id" = "athena", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:419699:5786327", "mod-id" = "architectury", "version-range" = "[13.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:b1ZV3DIJ:dJgL278E", "mod-id" = "athena", "side" = "client", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "side" = "both", "origin" = "archive" }]
 optional = [{ "missing" = "oracle_index", "mod-id" = "oracle_index", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
@@ -2194,7 +2198,7 @@ slug = "oh-the-biomes-weve-gone"
 file-id = 7745142
 provides = ["biomeswevegone"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "[4.1.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:ziOp6EO8:nqrTa84r", "mod-id" = "corgilib", "version-range" = "[5.0.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:962544:8096180", "mod-id" = "ohthetreesyoullgrow", "version-range" = "[5.0.10,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.6,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "[4.1.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:ziOp6EO8:nqrTa84r", "mod-id" = "corgilib", "version-range" = "[5.0.0.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:962544:8096180", "mod-id" = "ohthetreesyoullgrow", "version-range" = "[5.0.10,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.6,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -2299,8 +2303,8 @@ slug = "wither-spawn-animation"
 file-id = 7638136
 provides = ["wither_spawn_animation"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -2425,8 +2429,8 @@ slug = "armageddon"
 file-id = 7045393
 provides = ["armageddon_mod"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:lOOpEntO:TyNITLDY", "mod-id" = "attributefix", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
-optional = [{ "missing" = "curios_api", "mod-id" = "curios_api", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:lOOpEntO:TyNITLDY", "mod-id" = "attributefix", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "missing" = "curios_api", "mod-id" = "curios_api", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = [{ "artifact" = "curseforge:309927:6529130", "namespace" = "curios", "reason" = "ships data/curios/", "origin" = "archive-data" }]
@@ -2446,7 +2450,7 @@ slug = "dark-doppelganger"
 file-id = 7759880
 provides = ["darkdoppelganger"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:855414:8202148", "mod-id" = "irons_spellbooks", "version-range" = "[1.21.1-3.15.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "[2.0.1+1.21.1,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:855414:8202148", "mod-id" = "irons_spellbooks", "version-range" = "[1.21.1-3.15.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "[2.0.1+1.21.1,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -2572,7 +2576,7 @@ slug = "myths-and-legends"
 file-id = 8104549
 provides = ["mythsandlegends"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.5.1,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.5.1,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -3327,7 +3331,7 @@ slug = "twilight-forest-final-boss-remake"
 file-id = 7273092
 provides = ["twilight_forest_final_boss"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:227639:7797302", "mod-id" = "twilightforest", "version-range" = "[4.6,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:227639:7797302", "mod-id" = "twilightforest", "version-range" = "[4.6,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -3621,7 +3625,7 @@ slug = "bossesrise"
 file-id = 8123167
 provides = ["block_factorys_bosses"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.2,5)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.8.2,5)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -4356,7 +4360,7 @@ slug = "antarchy"
 file-id = 8613871
 provides = ["antarchy"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:V6fKbpBN:cKHoMnZX", "mod-id" = "integrated_api", "version-range" = "[1.6.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:lgD8igI0:vkS4djbn", "mod-id" = "sizeable_foliage", "version-range" = "*", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:V6fKbpBN:cKHoMnZX", "mod-id" = "integrated_api", "version-range" = "[1.6.2,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "*", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:lgD8igI0:vkS4djbn", "mod-id" = "sizeable_foliage", "version-range" = "*", "side" = "both", "origin" = "archive" }]
 optional = [{ "missing" = "infinity", "mod-id" = "infinity", "version-range" = "(,2.7.2)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
@@ -4484,6 +4488,27 @@ provides = ["diorama"]
 bundled-provides = []
 required = []
 optional = []
+incompatible = []
+bundled = []
+integrations = []
+
+[artifacts."curseforge:1750057:9652410"]
+name = "unbound"
+component = "unbound"
+provider = "curseforge"
+kind = "mod"
+side = "both"
+group = "curse.maven"
+module = "unbound-1750057"
+version = "9652410"
+filename = "unbound-neoforge-1.21.1-0.15.4.jar"
+project-id = 1750057
+slug = "unbound"
+file-id = 9652410
+provides = ["unbound"]
+bundled-provides = ["unbound_pack"]
+required = [{ "mod-id" = "geckolib", "version-range" = "[4.9.3,)", "side" = "both", "origin" = "archive", "artifact" = "curseforge:388172:8893490" }]
+optional = [{ "mod-id" = "jei", "version-range" = "*", "side" = "both", "origin" = "archive", "missing" = "jei" }, { "mod-id" = "jade", "version-range" = "*", "side" = "both", "origin" = "archive", "artifact" = "modrinth:nvQzSEkH:yd8FKCmx" }, { "mod-id" = "roughlyenoughitems", "version-range" = "*", "side" = "both", "origin" = "archive", "missing" = "roughlyenoughitems" }, { "mod-id" = "curios", "version-range" = "*", "side" = "both", "origin" = "archive", "artifact" = "curseforge:309927:6529130" }, { "mod-id" = "trinkets_updated", "version-range" = "*", "side" = "both", "origin" = "archive", "missing" = "trinkets_updated" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -5580,7 +5605,7 @@ incompatible = []
 bundled = []
 integrations = []
 
-[artifacts."curseforge:388172:7707149"]
+[artifacts."curseforge:388172:8893490"]
 name = "geckolib"
 component = "geckolib"
 provider = "curseforge"
@@ -5588,16 +5613,16 @@ kind = "mod"
 side = "both"
 group = "curse.maven"
 module = "geckolib-388172"
-version = "7707149"
-filename = "geckolib-neoforge-1.21.1-4.8.4.jar"
+version = "8893490"
+filename = "geckolib-neoforge-1.21.1-4.9.3.jar"
 project-id = 388172
 slug = "geckolib"
-file-id = 7707149
+file-id = 8893490
 provides = ["geckolib"]
 bundled-provides = []
 required = []
 optional = []
-incompatible = []
+incompatible = [{ "missing" = "geckoanimfix", "mod-id" = "geckoanimfix", "side" = "both", "origin" = "archive" }]
 bundled = []
 integrations = []
 
@@ -6831,7 +6856,7 @@ slug = "creeper-overhaul"
 file-id = 6051279
 provides = ["creeperoverhaul"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.5.5,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:714059:6467772", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.5.5,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:714059:6467772", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -6894,7 +6919,7 @@ slug = "enderman-overhaul"
 file-id = 7661859
 provides = ["endermanoverhaul"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:G1hIVOrD:x99nCLTm", "mod-id" = "resourcefullib", "version-range" = "[3.0.11,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:714059:6467772", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.7,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:G1hIVOrD:x99nCLTm", "mod-id" = "resourcefullib", "version-range" = "[3.0.11,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:714059:6467772", "mod-id" = "resourcefulconfig", "version-range" = "[3.0.7,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -6915,7 +6940,7 @@ slug = "cognition"
 file-id = 8127023
 provides = ["cognition"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }]
 optional = [{ "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.4.0+1.21.1,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[19.21.0.247,)", "side" = "client", "origin" = "archive" }]
 incompatible = []
 bundled = []
@@ -7251,7 +7276,7 @@ slug = "ribbits"
 file-id = 7355196
 provides = ["ribbits"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:Ua7DFN59:ZB22DE9q", "mod-id" = "yungsapi", "version-range" = "[1.21.1-NeoForge-5.1.5,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:Ua7DFN59:ZB22DE9q", "mod-id" = "yungsapi", "version-range" = "[1.21.1-NeoForge-5.1.5,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -7714,7 +7739,7 @@ file-id = 7917953
 provides = ["born_in_chaos_v1"]
 bundled-provides = []
 required = []
-optional = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
+optional = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }, { "missing" = "jei", "mod-id" = "jei", "version-range" = "[0,)", "side" = "both", "origin" = "archive" }]
 incompatible = []
 bundled = []
 integrations = []
@@ -8112,7 +8137,7 @@ slug = "irons-spells-n-spellbooks"
 file-id = 8202148
 provides = ["irons_spellbooks"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "[2.0.1+1.21.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.0.5+1.21.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:9nfaJPtX:sRMMFgei", "mod-id" = "irons_lib", "version-range" = "[1.21.1-1,1.21.1-2)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.7.5.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "[2.0.1+1.21.1,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "[9.0.5+1.21.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:9nfaJPtX:sRMMFgei", "mod-id" = "irons_lib", "version-range" = "[1.21.1-1,1.21.1-2)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -9323,7 +9348,7 @@ project-id = "9nfaJPtX"
 version-id = "sRMMFgei"
 provides = ["irons_lib"]
 bundled-provides = []
-required = [{ "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "4.7.5.1", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "4.7.5.1", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -10235,7 +10260,7 @@ project-id = "k23mNPhZ"
 version-id = "iUPJ8ziU"
 provides = ["aquamirae"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:49C5QgTK:fbGohly4", "mod-id" = "fragmentum", "version-range" = "[5.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:49C5QgTK:fbGohly4", "mod-id" = "fragmentum", "version-range" = "[5.0.0,)", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "[4.8.0,)", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []
@@ -10332,7 +10357,7 @@ project-id = "mJ7yWnrA"
 version-id = "rpgkSjm0"
 provides = ["magitech"]
 bundled-provides = []
-required = [{ "artifact" = "modrinth:692GClaE:Uw0AZJKz", "mod-id" = "modonomicon", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:Aqlf1Shp:7nHK7hMg", "mod-id" = "fabric_api", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:7707149", "mod-id" = "geckolib", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:532610:6785734", "mod-id" = "owo", "version-range" = "TODO", "side" = "both", "origin" = "archive" }]
+required = [{ "artifact" = "modrinth:692GClaE:Uw0AZJKz", "mod-id" = "modonomicon", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:Aqlf1Shp:7nHK7hMg", "mod-id" = "fabric_api", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:388172:8893490", "mod-id" = "geckolib", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:309927:6529130", "mod-id" = "curios", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:gedNE4y2:HJZB6bmA", "mod-id" = "playeranimator", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "modrinth:kkmrDlKT:6e8GCrLb", "mod-id" = "terrablender", "version-range" = "TODO", "side" = "both", "origin" = "archive" }, { "artifact" = "curseforge:532610:6785734", "mod-id" = "owo", "version-range" = "TODO", "side" = "both", "origin" = "archive" }]
 optional = []
 incompatible = []
 bundled = []

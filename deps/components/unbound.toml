@@ -1,0 +1,7 @@
+[distributions.curseforge-mod]
+provider = "curseforge"
+kind = "mod"
+slug = "unbound"
+project-id = 1750057
+file-id = 9652410
+filename = "unbound-neoforge-1.21.1-0.15.4.jar"

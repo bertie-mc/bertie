@@ -331,6 +331,7 @@ dependencies {
     packComponents(deps.twilightForestFinalBossRemake)
     packComponents(deps.twilightTreehouses)
     packComponents(deps.typewriterDaycounter)
+    packComponents(deps.unbound)
     packComponents(deps.universalGrid)
     packComponents(deps.universalSawmill)
     packComponents(deps.upgradedMobs)
