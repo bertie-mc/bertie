@@ -1,34 +1,66 @@
 {
   "variants": {
-    "facing=north,half=lower": {
+    "facing=north,half=lower,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_lower",
       "y": 0
     },
-    "facing=north,half=upper": {
+    "facing=north,half=lower,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_lower",
+      "y": 0
+    },
+    "facing=north,half=upper,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_upper",
       "y": 0
     },
-    "facing=east,half=lower": {
+    "facing=north,half=upper,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_upper",
+      "y": 0
+    },
+    "facing=east,half=lower,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_lower",
       "y": 90
     },
-    "facing=east,half=upper": {
+    "facing=east,half=lower,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_lower",
+      "y": 90
+    },
+    "facing=east,half=upper,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_upper",
       "y": 90
     },
-    "facing=south,half=lower": {
+    "facing=east,half=upper,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_upper",
+      "y": 90
+    },
+    "facing=south,half=lower,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_lower",
       "y": 180
     },
-    "facing=south,half=upper": {
+    "facing=south,half=lower,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_lower",
+      "y": 180
+    },
+    "facing=south,half=upper,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_upper",
       "y": 180
     },
-    "facing=west,half=lower": {
+    "facing=south,half=upper,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_upper",
+      "y": 180
+    },
+    "facing=west,half=lower,assembled=true": {
       "model": "bertieprogression:block/mechanical_adapter_lower",
       "y": 270
     },
-    "facing=west,half=upper": {
+    "facing=west,half=lower,assembled=false": {
+      "model": "bertieprogression:block/mechanical_adapter_lower",
+      "y": 270
+    },
+    "facing=west,half=upper,assembled=true": {
+      "model": "bertieprogression:block/mechanical_adapter_upper",
+      "y": 270
+    },
+    "facing=west,half=upper,assembled=false": {
       "model": "bertieprogression:block/mechanical_adapter_upper",
       "y": 270
     }

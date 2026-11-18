@@ -23,6 +23,15 @@ public final class MechanicalAdapterRegistry {
             () -> new MechanicalAdapterBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)
                     .noOcclusion()
                     .pushReaction(net.minecraft.world.level.material.PushReaction.BLOCK)));
+    public static final DeferredBlock<CopperCoreBlock> COPPER_CORE = BLOCKS.register(
+            "assembled_copper_core",
+            () -> new CopperCoreBlock(
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK).noOcclusion()));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperCoreBlock.CoreEntity>>
+            COPPER_CORE_ENTITY = ENTITIES.register(
+                    "assembled_copper_core",
+                    () -> BlockEntityType.Builder.of(CopperCoreBlock.CoreEntity::new, COPPER_CORE.get())
+                            .build(null));
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MechanicalAdapterBlockEntity>> ENTITY =
             ENTITIES.register(
                     "mechanical_adapter",

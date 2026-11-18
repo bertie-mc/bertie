@@ -94,6 +94,7 @@ public final class ModItems {
 
     // --- Avaritia ---
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
+    public static final DeferredItem<Item> BOTTLE_OF_NOTHING = simple("bottle_of_nothing", 64);
     public static final DeferredItem<Item> SCALE_INGOT = simple("scale_ingot", 64);
 
     public static final DeferredItem<Item> IRON_SHEET = simple("iron_sheet", 64);

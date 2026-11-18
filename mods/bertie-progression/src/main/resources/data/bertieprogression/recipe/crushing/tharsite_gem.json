@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:tharsite_gem"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_dust",
+    "count": 1
+  },
+  "neoforge:conditions": []
 }

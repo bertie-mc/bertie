@@ -1,7 +1,17 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:purifying",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:oxygen"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 2,
+    "item": "bertieprogression:raw_tharsite"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_clump",
+    "count": 5
+  },
+  "neoforge:conditions": []
 }

@@ -18,7 +18,7 @@ public final class StellarisRetirementClientTests {
                 if (!ModList.get().isLoaded("bertieemi"))
                     throw new AssertionError("Optional EMI integration must be present in this fixture");
                 var chemicals = server.registryAccess().registryOrThrow(MekanismAPI.CHEMICAL_REGISTRY_NAME);
-                for (String material : List.of("desh", "neptunium", "tharsite")) {
+                for (String material : List.of("desh", "neptunium")) {
                     for (String form : List.of(
                             "dust",
                             "dirty_dust",

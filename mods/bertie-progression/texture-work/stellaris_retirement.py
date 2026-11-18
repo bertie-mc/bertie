@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-MATERIALS = {'desh', 'neptunium', 'tharsite'}
+MATERIALS = {'desh', 'neptunium'}
 REMOVED_PROVIDERS = {'stellaris', 'perspatium', 'stellaris_stellarview_compatibility'}
 OFF = {'neoforge:conditions': [{'type': 'neoforge:false'}]}
 
@@ -22,7 +22,7 @@ def apply(module):
         retired_items.update(i for i in row['items'].values() if i.startswith('bertieprogression:'))
         retired_chemicals.update(row['slurries'].values())
     retired = retired_items | retired_chemicals
-    assert len(retired_items) == 27 and len(retired_chemicals) == 6, (len(retired_items),len(retired_chemicals))
+    assert len(retired_items) == 18 and len(retired_chemicals) == 4, (len(retired_items),len(retired_chemicals))
     changed, deleted = [], []
 
     def write(path, value):

@@ -19,45 +19,35 @@ def apply(module):
     model['textures'] = {key: 'bertieprogression:block/mechanical_adapter' for key in model['textures']}
     model['textures']['particle'] = 'bertieprogression:block/mechanical_adapter'
     write(Path('assets/bertieprogression/models/block/mechanical_adapter_full.json'), model)
-    for name, low, high in [('lower',0,16), ('upper',16,32)]:
-        part = copy.deepcopy(model)
-        part['elements'] = []
-        for original in model['elements']:
-            if original['to'][1] <= low or original['from'][1] >= high:
-                continue
-            element = copy.deepcopy(original)
-            bottom, top = max(low, original['from'][1]), min(high, original['to'][1])
-            height = original['to'][1] - original['from'][1]
-            if height > 0:
-                for face in ('north','south','east','west'):
-                    if face in element.get('faces',{}) and 'uv' in element['faces'][face]:
-                        uv = element['faces'][face]['uv']
-                        rate = (uv[3]-uv[1])/height
-                        uv[1] += (original['to'][1]-top)*rate
-                        uv[3] -= (bottom-original['from'][1])*rate
-            if top < original['to'][1]:
-                element['faces'].pop('up',None)
-            if bottom > original['from'][1]:
-                element['faces'].pop('down',None)
-            element['from'][1], element['to'][1] = bottom-low, top-low
-            if 'rotation' in element:
-                element['rotation']['origin'][1] -= low
-            part['elements'].append(element)
-        write(Path(f'assets/bertieprogression/models/block/mechanical_adapter_{name}.json'), part)
+    for half in ('lower','upper'):
+        for kind in ('body','shaft'):
+            data=json.loads((source/f'mechanical_adapter_{kind}_{half}.json').read_text())
+            data['textures']={key:'bertieprogression:block/mechanical_adapter' for key in data['textures']}
+            data['textures']['particle']='bertieprogression:block/mechanical_adapter'
+            name=f'mechanical_adapter_{half}' if kind=='body' else f'mechanical_adapter_shaft_{half}'
+            write(Path(f'assets/bertieprogression/models/block/{name}.json'),data)
     write(Path('assets/bertieprogression/blockstates/mechanical_adapter.json'), {'variants': {
-        f'facing={direction},half={half}': {'model':f'bertieprogression:block/mechanical_adapter_{half}', 'y':angle}
-        for direction,angle in [('north',0),('east',90),('south',180),('west',270)] for half in ('lower','upper')}})
-    write(Path('assets/bertieprogression/models/item/mechanical_adapter.json'), {
-        'parent':'bertieprogression:block/mechanical_adapter_full',
-        'display': {'gui': {'rotation':[30,225,0], 'translation':[0,-4,0], 'scale':[0.42,0.42,0.42]}}})
+        f'facing={direction},half={half},assembled={formed}': {'model':f'bertieprogression:block/mechanical_adapter_{half}', 'y':angle}
+        for direction,angle in [('north',0),('east',90),('south',180),('west',270)]
+        for half in ('lower','upper') for formed in ('true','false')}})
+    write(Path('assets/bertieprogression/models/item/mechanical_adapter.json'),json.loads((source/'mechanical_adapter_item.json').read_text()))
     target = resources/'assets/bertieprogression/textures/block/mechanical_adapter.png'
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source/'albedo.png',target)
+    entries=[]
+    for half,item in [('lower','bertieprogression:mechanical_adapter'),('upper','create:copper_casing')]:
+        entries.append({'rolls':1,'entries':[{'type':'minecraft:item','name':item}],
+            'conditions':[{'condition':'minecraft:survives_explosion'},
+                {'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':half}}]})
     write(Path('data/bertieprogression/loot_table/blocks/mechanical_adapter.json'), {
-        'type':'minecraft:block', 'pools':[{'rolls':1,'entries':[{
-            'type':'minecraft:item','name':'create:copper_casing',
-            'functions':[{'function':'minecraft:set_count','count':2}]}],
+        'type':'minecraft:block', 'pools':[{'rolls':1,'entries':[
+            {'type':'minecraft:item','name':'bertieprogression:mechanical_adapter','conditions':[{'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':'lower'}}]},
+            {'type':'minecraft:item','name':'create:copper_casing','conditions':[{'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':'upper'}}]}],
             'conditions':[{'condition':'minecraft:survives_explosion'}]}]})
+    write(Path('assets/bertieprogression/blockstates/assembled_copper_core.json'), {'variants':{'':{'model':'create:block/copper_casing'}}})
+    write(Path('data/bertieprogression/loot_table/blocks/assembled_copper_core.json'), {
+        'type':'minecraft:block','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'create:copper_casing'}],
+        'conditions':[{'condition':'minecraft:survives_explosion'}]}]})
     lang_path = resources/'assets/bertieprogression/lang/en_us.json'
     lang = json.loads(lang_path.read_text(encoding='utf-8'))
     lang['block.bertieprogression.mechanical_adapter'] = 'Mechanical Adapter'

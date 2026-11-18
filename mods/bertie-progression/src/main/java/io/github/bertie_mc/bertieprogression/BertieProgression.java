@@ -27,6 +27,9 @@ public final class BertieProgression {
         ModItems.ITEMS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
         RetainedMaterials.register(modBus);
+        if (ModList.get().isLoaded("unbound")) {
+            NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.item.VacuumBottling.class);
+        }
         if (ModList.get().isLoaded("oritech")) {
             modBus.addListener(io.github.bertie_mc.bertieprogression.cybernetics.AdaptiveImmuneSystem::setup);
             if (ModList.get().isLoaded("create")) {

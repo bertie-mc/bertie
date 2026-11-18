@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 200,
+    "chemical": "bertieprogression:clean_tharsite"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_crystal",
+    "count": 1
+  },
+  "neoforge:conditions": []
 }

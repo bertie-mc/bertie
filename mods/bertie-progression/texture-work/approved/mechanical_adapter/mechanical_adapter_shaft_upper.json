@@ -1,0 +1,257 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Bertie custom asset",
+  "texture_size": [
+    128,
+    128
+  ],
+  "textures": {
+    "0": "bertieprogression:block/mechanical_adapter",
+    "particle": "bertieprogression:block/mechanical_adapter"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.11177,
+        -1.44889
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.11177,
+        -1.44889
+      ],
+      "scale": [
+        0.1875,
+        0.1875,
+        0.1875
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        -1.6,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "translation": [
+        0,
+        -1.6,
+        0
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "gui": {
+      "rotation": [
+        25,
+        -135,
+        0
+      ],
+      "translation": [
+        0,
+        -4,
+        0
+      ],
+      "scale": [
+        0.42,
+        0.42,
+        0.42
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "upper_shaft_key",
+      "from": [
+        5.75,
+        5.75,
+        1.75
+      ],
+      "to": [
+        10.25,
+        10.25,
+        3
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          2.375
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            13,
+            4.375,
+            13.5625,
+            4.9375
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            14.75,
+            4.375,
+            14.90625,
+            4.9375
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            13.875,
+            4.375,
+            14.4375,
+            4.9375
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            14.75,
+            4.375,
+            14.90625,
+            4.9375
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            13.375,
+            6.5,
+            13.9375,
+            6.65625
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            13.375,
+            6.5,
+            13.9375,
+            6.65625
+          ],
+          "texture": "#0"
+        }
+      }
+    },
+    {
+      "name": "upper_shaft_input",
+      "from": [
+        6,
+        6,
+        0
+      ],
+      "to": [
+        10,
+        10,
+        1.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          0.875
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15.25,
+            4.375,
+            15.75,
+            4.875
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            1.875,
+            5.75,
+            2.09375,
+            6.25
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            0.125,
+            5.75,
+            0.625,
+            6.25
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            1.875,
+            5.75,
+            2.09375,
+            6.25
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            0.875,
+            7,
+            1.375,
+            7.21875
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            0.875,
+            7,
+            1.375,
+            7.21875
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ]
+}

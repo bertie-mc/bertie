@@ -36,7 +36,7 @@ public final class RetainedMaterialsClientTests {
                                 "Retained item has wrong owner");
                     }
                 var chemicals = server.registryAccess().registryOrThrow(MekanismAPI.CHEMICAL_REGISTRY_NAME);
-                for (String m : List.of("corronium", "solerium")) {
+                for (String m : List.of("tharsite", "corronium", "solerium")) {
                     for (String form : List.of(
                             "dust",
                             "dirty_dust",
@@ -93,7 +93,7 @@ public final class RetainedMaterialsClientTests {
                                     .isPresent(),
                             "Retained recipe failed native loading: " + recipe.getAsString());
                 }
-                for (String material : List.of("solerium", "corronium")) {
+                for (String material : List.of("tharsite", "solerium", "corronium")) {
                     var ore = BuiltInRegistries.BLOCK.get(id(material + "_ore"));
                     var drops = Block.getDrops(
                             ore.defaultBlockState(),
@@ -113,8 +113,8 @@ public final class RetainedMaterialsClientTests {
                                             server.overworld())
                                     && r.value()
                                             .getResultItem(server.registryAccess())
-                                            .is(BuiltInRegistries.ITEM.get(
-                                                    id(material.equals("solerium") ? "solerium" : "corronium_ingot"))))
+                                            .is(BuiltInRegistries.ITEM.get(id(
+                                                    material.equals("solerium") ? "solerium" : material + "_ingot"))))
                             .findFirst();
                     check(holder.isPresent(), "Raw retained material cannot be smelted");
                 }

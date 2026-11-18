@@ -45,6 +45,7 @@ public final class MechanicalAdapterBlockEntity extends KineticBlockEntity {
         super.tick();
         if (level == null
                 || level.isClientSide
+                || !getBlockState().getValue(MultiblockMachine.ASSEMBLED)
                 || getBlockState().getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER) return;
         Direction rear = getBlockState().getValue(BlockStateProperties.HORIZONTAL_FACING);
         if (!(level.getBlockEntity(worldPosition.above()) instanceof MechanicalAdapterBlockEntity upper)
@@ -59,6 +60,7 @@ public final class MechanicalAdapterBlockEntity extends KineticBlockEntity {
                 || center.getBlockState().getValue(BlockStateProperties.HORIZONTAL_FACING) != rear.getOpposite()
                 || !center.getBlockState().getValue(MultiblockMachine.ASSEMBLED)
                 || !CopperAugmentation.intact(center)) return;
-        ((CenterEnergyAccess) center).bertieprogression$internalEnergy().insert(charge, false);
+        if (((CenterEnergyAccess) center).bertieprogression$internalEnergy().insert(charge, false) > 0)
+            center.setChanged();
     }
 }

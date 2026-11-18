@@ -15,8 +15,11 @@ Disabled or removed immunity restores native vacuum behavior. The exact
 cost arrays are authored in `texture-work/augmentation_research_costs.json`.
 
 The Mechanical Adapter powers only the Augmentation Center. Form the center with
-ten placed Create Copper Casings. Stack two more Copper Casings at its rear,
-two blocks behind the controller, and use a Create Wrench on the lower Casing.
+ten placed Create Copper Casings. They become linked, invisible core parts when
+assembled and return to ordinary Casings on dismantling. Place a Mechanical
+Adapter controller two blocks behind the center, add one Copper Casing above it,
+and right-click the controller to form it. The two visible inserts rotate with
+their individual Create inputs; the housing stays still.
 The two rear shaft sockets must both be driven in the same direction; equal RPM
 is unnecessary. Each input applies eight stress units per RPM. Charging is
 32 RF per tick per RPM of the slower input, without a minimum speed threshold.
@@ -24,8 +27,7 @@ These defaults do not change existing research energy costs. External RF input
 and extraction remain closed through both controller and multiblock ports.
 Stopping or removing the adapter retains stored energy and research progress.
 Research-station construction and controller/research/application recipes remain
-unchanged. The combined entry quest moves into C2 after Electron Tube and
-Precision Mechanism.
+unchanged. The combined entry quest retains its current main-quest position and Precision Mechanism prerequisite.
 
 Untreated Reinforced Carbon Sheet uses the 7×7 End Table. Refinery combines one Untreated
 Sheet and 3,000 mB Light Naphtha into one Reinforced Carbon Sheet. Plating crafts

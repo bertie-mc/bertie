@@ -14,6 +14,10 @@ recipe changes used to connect the pack's exploration, technology and magic syst
 
 ### Items
 
+Bottle of Nothing is collected by using a Glass Bottle in Unbound vacuum, outside
+pressurized zones and sealed cabins. Its exterior particles drift toward the cap.
+
+
 | Item | Role |
 |---|---|
 | `crafting_license` | the gate token â€” carrying it is what unlocks gated recipes |

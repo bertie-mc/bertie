@@ -5,8 +5,6 @@ import com.simibubi.create.content.kinetics.base.KineticBlock;
 import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -16,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import rearth.oritech.block.base.block.MultiblockMachine;
 
 public final class MechanicalAdapterBlock extends KineticBlock implements IBE<MechanicalAdapterBlockEntity> {
     private static final MapCodec<MechanicalAdapterBlock> CODEC = simpleCodec(MechanicalAdapterBlock::new);
@@ -24,6 +23,7 @@ public final class MechanicalAdapterBlock extends KineticBlock implements IBE<Me
         super(properties);
         registerDefaultState(defaultBlockState()
                 .setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH)
+                .setValue(MultiblockMachine.ASSEMBLED, false)
                 .setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
     }
 
@@ -34,26 +34,19 @@ public final class MechanicalAdapterBlock extends KineticBlock implements IBE<Me
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.HORIZONTAL_FACING, BlockStateProperties.DOUBLE_BLOCK_HALF);
+        builder.add(
+                BlockStateProperties.HORIZONTAL_FACING,
+                BlockStateProperties.DOUBLE_BLOCK_HALF,
+                MultiblockMachine.ASSEMBLED);
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        if (context.getClickedPos().getY() >= context.getLevel().getMaxBuildHeight() - 1
-                || !context.getLevel()
-                        .getBlockState(context.getClickedPos().above())
-                        .canBeReplaced(context)) return null;
+        if (context.getClickedPos().getY() >= context.getLevel().getMaxBuildHeight() - 1) return null;
         return defaultBlockState()
                 .setValue(
                         BlockStateProperties.HORIZONTAL_FACING,
                         context.getHorizontalDirection().getOpposite());
-    }
-
-    @Override
-    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        super.setPlacedBy(level, pos, state, placer, stack);
-        level.setBlockAndUpdate(
-                pos.above(), state.setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER));
     }
 
     @Override
@@ -63,12 +56,16 @@ public final class MechanicalAdapterBlock extends KineticBlock implements IBE<Me
         BlockPos other = state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.LOWER
                 ? pos.above()
                 : pos.below();
-        if (level.getBlockState(other).is(this)) level.removeBlock(other, false);
+        if (level.isClientSide || !level.getBlockState(other).is(this)) return;
+        if (state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.LOWER)
+            level.destroyBlock(other, true);
+        else level.setBlockAndUpdate(other, level.getBlockState(other).setValue(MultiblockMachine.ASSEMBLED, false));
     }
 
     @Override
     public boolean hasShaftTowards(LevelReader level, BlockPos pos, BlockState state, Direction face) {
-        return face == state.getValue(BlockStateProperties.HORIZONTAL_FACING);
+        return state.getValue(MultiblockMachine.ASSEMBLED)
+                && face == state.getValue(BlockStateProperties.HORIZONTAL_FACING);
     }
 
     @Override

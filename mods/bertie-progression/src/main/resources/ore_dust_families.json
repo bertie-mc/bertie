@@ -300,21 +300,21 @@
     ]
   },
   {
-    "material": "plutonium",
-    "ores": [
-      "bertieprogression:plutonium_ore"
-    ],
-    "dusts": [
-      "oritech:plutonium_dust"
-    ]
-  },
-  {
     "material": "solerium",
     "ores": [
       "bertieprogression:solerium_ore"
     ],
     "dusts": [
       "bertieprogression:solerium_dust"
+    ]
+  },
+  {
+    "material": "tharsite",
+    "ores": [
+      "bertieprogression:tharsite_ore"
+    ],
+    "dusts": [
+      "bertieprogression:tharsite_dust"
     ]
   }
 ]

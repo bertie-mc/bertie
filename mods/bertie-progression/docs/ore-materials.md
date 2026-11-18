@@ -1,6 +1,6 @@
 # Ore intermediates
 
-`ore_materials.json` lists the canonical forms for 20 metals, the missing item
+`ore_materials.json` lists the canonical forms for 21 metals, the missing item
 registrations, slurry registrations, texture hashes and processing recipe IDs.
 Existing items retain their IDs. This includes Oritech's six native metal Gems.
 Plutonium is excluded from the added family.
@@ -19,7 +19,7 @@ three-Raw-to-2000-Slurry ratio. Intermediate
 conversions retain their native 1:1 quantities; crystallization uses 200 Slurry.
 Ore-block recipes, Fortune and mining drops are unchanged.
 
-Each of the 20 metal Centrifuge routes consumes one matching Dirty Dust and
+Each of the 21 metal Centrifuge routes consumes one matching Dirty Dust and
 100 mB Sheol Fire, producing one matching Gem and three secondary Specs. The
 Fluid Addon is required. Water/Acid Clump-to-Gem alternatives are disabled.
 The current byproducts are listed in `ore_materials.json`; no self-material
@@ -36,7 +36,7 @@ native Mithril Scrap. Like the existing Ancient Debris → Dirty Netherite Scrap
 route, dirty-scrap production is Crusher-only. Clibano's Netherite residue chance
 is 15%, retaining its existing fire eligibility and one-Scrap primary result.
 
-All 20 metal Gems have a 1:1 Mekanism Crusher route into matching Dust.
+All 21 metal Gems have a 1:1 Mekanism Crusher route into matching Dust.
 Existing Atomic Forge routes remain; Gem alloying, cooking, heated mixing
 and thermal compatibility finishing are disabled. Crystal chemical processing
 and component uses such as Uranium Pellet assembly are separate and retained.
@@ -45,20 +45,14 @@ Raw Voiderite and Raw Bloody use the supplied provisional
 artwork. They have ordinary smelting/blasting links, but mining drops are not
 redirected to them. Their existence does not select a world-generation design.
 
-Stellaris and its dedicated addons are withdrawn. Desh, Neptunium and Tharsite
-lose their 27 custom items and six slurry registrations. Ostrum's earlier
-withdrawal remains. Existing Uranium, Plutonium fuel/dust and Aquaculture's distinct
-Neptunium remain.
-
-Solerium, Corronium and the cube-shaped Plutonium family are hosted under
-Bertie Progression with their original artwork. Twelve native item forms,
-including three ores and the Plutonium Block, are retained; Corronium and Solerium
-also regain eighteen processing forms and four slurries. Former Stellaris item
-and block IDs alias to the new entries. Native ore drops, smelting and Plutonium
-small-unit/block conversions remain. No new ore-generation locations are assigned.
-Corronium produces Eezo Specs, contracting its former Tharsite → Desh → Eezo
-byproduct chain; Solerium still produces Corronium Specs. Original licensed assets
-and namespace adaptations are credited in NOTICE and the provenance manifest.
+Stellaris and its dedicated addons are withdrawn. Desh and Stellaris Neptunium
+are retired. Tharsite, Solerium and Corronium remain under Bertie Progression,
+with their native ingot/raw/ore forms, 27 processing forms and six slurries.
+Former Stellaris IDs alias to these entries. Corronium returns Tharsite Specs;
+Tharsite returns Eezo Specs, skipping retired Desh. Solerium returns Corronium.
+Native ore drops and smelting remain. No ore-generation locations are assigned.
+The extra Plutonium registrations are removed; existing Mekanism/Oritech fuels
+remain. Original licensed assets are credited in NOTICE and the provenance file.
 
 Resonant Coil retains the `platinum_coil` item ID and uses Platinum Wire with
 Malignant Pewter at the top/bottom and Cognitive Alloy in its centre column.

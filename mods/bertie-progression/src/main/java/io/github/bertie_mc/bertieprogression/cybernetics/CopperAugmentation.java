@@ -9,6 +9,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import rearth.oritech.block.base.block.MultiblockMachine;
+import rearth.oritech.block.blocks.processing.MachineCoreBlock;
+import rearth.oritech.block.entity.MachineCoreEntity;
 import rearth.oritech.block.entity.augmenter.AugmentApplicationEntity;
 import rearth.oritech.util.Geometry;
 
@@ -27,16 +29,31 @@ public final class CopperAugmentation {
         var level = center.getLevel();
         return level != null
                 && supports(center).stream()
-                        .allMatch(p ->
-                                level.hasChunkAt(p) && level.getBlockState(p).is(casing()));
+                        .allMatch(p -> level.hasChunkAt(p)
+                                && level.getBlockState(p).is(MechanicalAdapterRegistry.COPPER_CORE.get())
+                                && level.getBlockState(p).getValue(MachineCoreBlock.USED)
+                                && level.getBlockEntity(p) instanceof MachineCoreEntity core
+                                && core.getControllerPos().equals(center.getBlockPos()));
     }
 
     public static boolean form(AugmentApplicationEntity center, BlockState state) {
         var level = center.getLevel();
-        if (level == null || !intact(center)) return false;
+        if (level == null) return false;
+        if (intact(center)) return true;
+        if (!supports(center).stream()
+                .allMatch(p -> level.hasChunkAt(p) && level.getBlockState(p).is(casing()))) return false;
         if (!level.isClientSide) {
             center.getConnectedCores().clear();
-            center.getConnectedCores().addAll(supports(center));
+            for (var pos : supports(center)) {
+                level.setBlockAndUpdate(
+                        pos,
+                        MechanicalAdapterRegistry.COPPER_CORE
+                                .get()
+                                .defaultBlockState()
+                                .setValue(MachineCoreBlock.USED, true));
+                ((MachineCoreEntity) level.getBlockEntity(pos)).setControllerPos(center.getBlockPos());
+                center.getConnectedCores().add(pos);
+            }
             center.setCoreQuality(1);
             if (!state.getValue(MultiblockMachine.ASSEMBLED)) {
                 level.setBlockAndUpdate(center.getBlockPos(), state.setValue(MultiblockMachine.ASSEMBLED, true));
@@ -62,8 +79,9 @@ public final class CopperAugmentation {
         if (supports(center).stream().anyMatch(p -> !level.hasChunkAt(p))) return;
         var state = center.getBlockState();
         if (state.getValue(MultiblockMachine.ASSEMBLED) && !intact(center)) {
-            level.setBlockAndUpdate(center.getBlockPos(), state.setValue(MultiblockMachine.ASSEMBLED, false));
-            center.getConnectedCores().clear();
+            // Convert old assembled centers without charging for the same casings twice.
+            if (form(center, state)) return;
+            center.onCoreBroken(center.getBlockPos());
             center.setChanged();
         }
     }

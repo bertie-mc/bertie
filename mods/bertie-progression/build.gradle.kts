@@ -95,6 +95,7 @@ dependencies {
     compileOnly(variantOf(deps.create) { classifier("slim") }) {
         isTransitive = false
     }
+    compileOnly(libs.flywheel) { isTransitive = false }
     compileOnly(libs.ponder) {
         isTransitive = false
     }

@@ -6,11 +6,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create:copper_casing",
-          "functions": [
+          "name": "bertieprogression:mechanical_adapter",
+          "conditions": [
             {
-              "function": "minecraft:set_count",
-              "count": 2
+              "condition": "minecraft:block_state_property",
+              "block": "bertieprogression:mechanical_adapter",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:copper_casing",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "bertieprogression:mechanical_adapter",
+              "properties": {
+                "half": "upper"
+              }
             }
           ]
         }

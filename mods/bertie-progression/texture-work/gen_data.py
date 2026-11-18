@@ -5962,4 +5962,7 @@ _retire_stellaris(ROOT)
 from retained_stellaris_materials import apply as _restore_retained_stellaris
 _restore_retained_stellaris(ROOT)
 
+from vacuum_content import apply as _apply_vacuum_content
+_apply_vacuum_content(ROOT)
+
 print(f"Wrote {len(written)} files under {RES}")

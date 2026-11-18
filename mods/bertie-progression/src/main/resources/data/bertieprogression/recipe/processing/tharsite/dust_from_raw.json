@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:raw_tharsite"
+  },
+  "output": {
+    "id": "bertieprogression:tharsite_dust",
+    "count": 2
+  },
+  "neoforge:conditions": []
 }

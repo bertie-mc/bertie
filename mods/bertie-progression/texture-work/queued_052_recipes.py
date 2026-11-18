@@ -103,8 +103,8 @@ def apply(module, native):
     lang = json.loads(lang_path.read_text(encoding='utf-8')) if lang_path.exists() else {}
     lang['oritech.text.augment.autofeeder'] = 'Adaptive Immune System'
     lang['oritech.text.augment.autofeeder.desc'] = 'Deploys nanobots to protect from dangers of space.'
-    lang['oritech.text.augment.autofeeder.desc.1'] = 'Deploys nanobots to protect from dangers of space.'
-    lang['oritech.text.augment.autofeeder.desc.2'] = 'Prevents negative effects of vacuum'
+    lang['oritech.text.augment.autofeeder.desc.1'] = 'Prevents negative effects of vacuum'
+    lang['oritech.text.augment.autofeeder.desc.2'] = ''
     write('assets/oritech/lang/en_us.json', lang)
 
     removed = set(json.loads((resources / 'removed_items.json').read_text(encoding='utf-8')))

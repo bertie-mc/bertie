@@ -412,6 +412,10 @@
     {
       "id": "bertieprogression:solerium",
       "required": false
+    },
+    {
+      "id": "bertieprogression:tharsite_ingot",
+      "required": false
     }
   ]
 }

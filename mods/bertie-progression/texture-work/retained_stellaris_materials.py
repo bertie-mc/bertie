@@ -43,8 +43,9 @@ def apply(module):
     for relative in plan['recipes']:
         parts=Path(relative).parts;rid=parts[1]+':'+ '/'.join(parts[3:])[:-5]
         if rid not in meta['recipes']:meta['recipes'].append(rid)
-    meta['retained_stellaris_families']=['corronium','solerium','plutonium']
-    meta['corronium_byproduct']='eezo; former Tharsite -> Desh -> Eezo chain contracted'
+    meta['retained_stellaris_families']=['tharsite','corronium','solerium']
+    meta['corronium_byproduct']='tharsite'
+    meta['tharsite_byproduct']='eezo; retired Desh tier skipped'
     write('ore_materials.json',meta)
     java=module/'src/main/java/io/github/bertie_mc/bertieprogression/OreMaterials.java'
     items=',\n'.join('            '+json.dumps(name) for name in meta['new_items'])
@@ -59,10 +60,11 @@ def apply(module):
     eligibility_path='ore_dust_families.json'
     eligible=json.loads((resources/eligibility_path).read_text(encoding='utf-8'))
     names={r['material'] for r in plan['eligibility']}
-    eligible=[r for r in eligible if r['material'] not in names]+plan['eligibility']
+    eligible=[r for r in eligible if r['material'] not in names and r['material']!='plutonium']+plan['eligibility']
     write(eligibility_path,eligible)
     dust_tag='data/bertieprogression/tags/item/ore_material_dusts.json'
     tag=json.loads((resources/dust_tag).read_text(encoding='utf-8'))
+    tag['values']=[v for v in tag['values'] if v!='oritech:plutonium_dust']
     for row in plan['eligibility']:
         for item in row['dusts']:
             if item not in tag['values']:tag['values'].append(item)

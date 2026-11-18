@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.54.0
+
+- Add Bottle of Nothing, collected with a Glass Bottle in exposed Unbound vacuum,
+  with faint animated particles approaching the cap.
+- Retain Tharsite, Solerium and Corronium; replace the extra Plutonium family.
+- Remove the repeated Adaptive Immune System tooltip sentence.
+- Form the Mechanical Adapter from its controller and one Copper Casing; link
+  hidden Copper core parts to the Augmentation Center and restore them on removal.
+- Apply the approved dark Oritech palette, animated shaft inserts and held size.
+
 ## 0.53.1
 
 - Keep Solerium, Corronium and cube-shaped Plutonium usable under Bertie

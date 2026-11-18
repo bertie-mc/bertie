@@ -138,7 +138,12 @@ public final class CyberneticsClientTests {
                 }
                 internal.setAmount(0);
                 var rear = pos.south(2);
-                level.setBlockAndUpdate(rear, CopperAugmentation.casing().defaultBlockState());
+                level.setBlockAndUpdate(
+                        rear,
+                        MechanicalAdapterRegistry.BLOCK
+                                .get()
+                                .defaultBlockState()
+                                .setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH));
                 level.setBlockAndUpdate(
                         rear.above(), CopperAugmentation.casing().defaultBlockState());
                 var player = server.getPlayerList().getPlayers().getFirst();
@@ -155,7 +160,7 @@ public final class CyberneticsClientTests {
                                 && level.getBlockState(rear).is(MechanicalAdapterRegistry.BLOCK.get())
                                 && level.getBlockState(rear.above()).getValue(BlockStateProperties.DOUBLE_BLOCK_HALF)
                                         == DoubleBlockHalf.UPPER,
-                        "Wrench did not form the rear adapter from two Copper Casings");
+                        "Controller and one Copper Casing did not form the rear adapter");
                 level.setBlockAndUpdate(
                         new BlockPos(4, 64, 4), CopperAugmentation.casing().defaultBlockState());
                 for (var socket : List.of(rear, rear.above())) {

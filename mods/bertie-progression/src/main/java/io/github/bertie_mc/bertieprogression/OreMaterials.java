@@ -90,6 +90,15 @@ public final class OreMaterials {
             "voiderite_spec",
             "voiderite_dense_charge",
             "voiderite_activated_crystal",
+            "tharsite_dust",
+            "tharsite_dirty_dust",
+            "tharsite_clump",
+            "tharsite_gem",
+            "tharsite_shard",
+            "tharsite_crystal",
+            "tharsite_spec",
+            "tharsite_dense_charge",
+            "tharsite_activated_crystal",
             "corronium_dust",
             "corronium_dirty_dust",
             "corronium_clump",
@@ -150,7 +159,8 @@ public final class OreMaterials {
             Map.entry("bloody", 0x70032B),
             Map.entry("elvenite", 0xD99B4C),
             Map.entry("corronium", 0x876F53),
-            Map.entry("solerium", 0xFFDF2E));
+            Map.entry("solerium", 0xFFDF2E),
+            Map.entry("tharsite", 0xFD6416));
 
     private OreMaterials() {}
 }
