@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bertieprogression:corronium_dust"
+  },
+  "result": {
+    "id": "bertieprogression:corronium_ingot"
+  },
+  "experience": 0.1,
+  "cookingtime": 100,
+  "neoforge:conditions": []
 }

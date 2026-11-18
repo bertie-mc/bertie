@@ -1,7 +1,21 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SDS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "bertieprogression:corronium_spec"
+    },
+    "D": {
+      "item": "bertieprogression:corronium_dirty_dust"
     }
-  ]
+  },
+  "result": {
+    "id": "bertieprogression:corronium_dirty_dust",
+    "count": 2
+  },
+  "neoforge:conditions": []
 }

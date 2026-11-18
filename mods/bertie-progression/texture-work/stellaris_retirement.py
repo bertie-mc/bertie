@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-MATERIALS = {'desh', 'neptunium', 'tharsite', 'corronium', 'solerium'}
+MATERIALS = {'desh', 'neptunium', 'tharsite'}
 REMOVED_PROVIDERS = {'stellaris', 'perspatium', 'stellaris_stellarview_compatibility'}
 OFF = {'neoforge:conditions': [{'type': 'neoforge:false'}]}
 
@@ -15,14 +15,14 @@ def apply(module):
     table = json.loads(table_path.read_text(encoding='utf-8'))
     rows = [r for r in table['materials'] if r['name'] in MATERIALS]
     previous = table.get('retired_stellaris_materials', {})
-    retired_items = set(previous.get('items', []))
-    retired_chemicals = set(previous.get('chemicals', []))
+    retired_items = {i for i in previous.get('items', []) if i.split(':',1)[1].split('_',1)[0] in MATERIALS}
+    retired_chemicals = {i for i in previous.get('chemicals', []) if i.rsplit('_',1)[-1] in MATERIALS}
     for row in rows:
         assert row['ingot'].startswith('stellaris:'), row
         retired_items.update(i for i in row['items'].values() if i.startswith('bertieprogression:'))
         retired_chemicals.update(row['slurries'].values())
     retired = retired_items | retired_chemicals
-    assert len(retired_items) == 45 and len(retired_chemicals) == 10, (len(retired_items),len(retired_chemicals))
+    assert len(retired_items) == 27 and len(retired_chemicals) == 6, (len(retired_items),len(retired_chemicals))
     changed, deleted = [], []
 
     def write(path, value):

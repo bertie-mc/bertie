@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "plutonium",
+  "ingredient": {
+    "item": "bertieprogression:plutonium_ore"
+  },
+  "result": {
+    "id": "bertieprogression:plutonium_ingot"
+  }
+}

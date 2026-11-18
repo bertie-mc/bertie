@@ -218,6 +218,8 @@ public final class ModItems {
                         out.accept(EEZO_ORE.get());
                         out.accept(POCKET_DIMENSION.get());
                         out.accept(SENTIENT_CASING.get());
+                        RetainedMaterials.creativeItems().forEach(out::accept);
+                        RetainedMaterials.creativeItems().forEach(out::accept);
                         BuiltInRegistries.ITEM
                                 .getOptional(ResourceLocation.parse("bertieprogression:mechanical_adapter"))
                                 .ifPresent(out::accept);

@@ -1,5 +1,11 @@
 {
   "replace": false,
-  "values": [],
+  "values": [
+    {
+      "id": "bertieprogression:plutonium_ore",
+      "required": false
+    },
+    "bertieprogression:plutonium_ore"
+  ],
   "remove": []
 }

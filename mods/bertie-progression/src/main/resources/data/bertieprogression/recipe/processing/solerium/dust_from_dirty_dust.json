@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:enriching",
+  "input": {
+    "count": 1,
+    "tag": "c:dirty_dusts/solerium"
+  },
+  "output": {
+    "id": "bertieprogression:solerium_dust",
+    "count": 1
+  },
+  "neoforge:conditions": []
 }

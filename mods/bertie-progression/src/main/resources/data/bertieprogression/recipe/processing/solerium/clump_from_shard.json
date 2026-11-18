@@ -1,7 +1,17 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:purifying",
+  "chemical_input": {
+    "amount": 1,
+    "chemical": "mekanism:oxygen"
+  },
+  "per_tick_usage": true,
+  "item_input": {
+    "count": 1,
+    "tag": "c:shards/solerium"
+  },
+  "output": {
+    "id": "bertieprogression:solerium_clump",
+    "count": 1
+  },
+  "neoforge:conditions": []
 }

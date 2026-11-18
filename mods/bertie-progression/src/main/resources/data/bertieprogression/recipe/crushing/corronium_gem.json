@@ -1,7 +1,12 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:false"
-    }
-  ]
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "bertieprogression:corronium_gem"
+  },
+  "output": {
+    "id": "bertieprogression:corronium_dust",
+    "count": 1
+  },
+  "neoforge:conditions": []
 }

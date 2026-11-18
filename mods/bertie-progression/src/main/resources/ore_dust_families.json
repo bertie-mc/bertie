@@ -289,5 +289,32 @@
     "dusts": [
       "bertieprogression:zinc_dust"
     ]
+  },
+  {
+    "material": "corronium",
+    "ores": [
+      "bertieprogression:corronium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:corronium_dust"
+    ]
+  },
+  {
+    "material": "plutonium",
+    "ores": [
+      "bertieprogression:plutonium_ore"
+    ],
+    "dusts": [
+      "oritech:plutonium_dust"
+    ]
+  },
+  {
+    "material": "solerium",
+    "ores": [
+      "bertieprogression:solerium_ore"
+    ],
+    "dusts": [
+      "bertieprogression:solerium_dust"
+    ]
   }
 ]

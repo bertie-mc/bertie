@@ -23,6 +23,18 @@ the file has to live here. Magitech is by Stln and is distributed under
 CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/), which permits the
 copy provided attribution travels with it and derivatives share alike.
 
+The selected Solerium, Corronium and Plutonium resources listed in
+retained_stellaris_asset_provenance.json originate in Stellaris 1.4.23 by The
+Stellaris Team (https://github.com/st0x0ef/Stellaris). They retain the declared
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence:
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The original pixels are unchanged. Model, loot, tag and recipe namespace references
+are adapted to Bertie Progression. The corresponding source bundle under
+texture-work/retained_stellaris and native-material recipes/loot tables retain
+that same licence and are excluded from the code's public-domain dedication.
+Original Bertie processing artwork retains its existing licence.
+
 The following assets are not original and are not covered by the dedication:
 
   assets/youkaisfeasts/textures/item/crops/black_grape.png

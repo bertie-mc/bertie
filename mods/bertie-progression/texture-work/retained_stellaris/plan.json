@@ -1,0 +1,1624 @@
+{
+  "rows": [
+    {
+      "name": "corronium",
+      "items": {
+        "dust": "bertieprogression:corronium_dust",
+        "dirty_dust": "bertieprogression:corronium_dirty_dust",
+        "clump": "bertieprogression:corronium_clump",
+        "gem": "bertieprogression:corronium_gem",
+        "shard": "bertieprogression:corronium_shard",
+        "crystal": "bertieprogression:corronium_crystal",
+        "spec": "bertieprogression:corronium_spec",
+        "dense_charge": "bertieprogression:corronium_dense_charge",
+        "activated_crystal": "bertieprogression:corronium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_corronium",
+        "clean": "bertieprogression:clean_corronium"
+      },
+      "ingot": "bertieprogression:corronium_ingot",
+      "byproduct": "eezo",
+      "placeholder": false
+    },
+    {
+      "name": "solerium",
+      "items": {
+        "dust": "bertieprogression:solerium_dust",
+        "dirty_dust": "bertieprogression:solerium_dirty_dust",
+        "clump": "bertieprogression:solerium_clump",
+        "gem": "bertieprogression:solerium_gem",
+        "shard": "bertieprogression:solerium_shard",
+        "crystal": "bertieprogression:solerium_crystal",
+        "spec": "bertieprogression:solerium_spec",
+        "dense_charge": "bertieprogression:solerium_dense_charge",
+        "activated_crystal": "bertieprogression:solerium_activated_crystal"
+      },
+      "slurries": {
+        "dirty": "bertieprogression:dirty_solerium",
+        "clean": "bertieprogression:clean_solerium"
+      },
+      "ingot": "bertieprogression:solerium",
+      "byproduct": "corronium",
+      "placeholder": false
+    }
+  ],
+  "items": [
+    "corronium_dust",
+    "corronium_dirty_dust",
+    "corronium_clump",
+    "corronium_gem",
+    "corronium_shard",
+    "corronium_crystal",
+    "corronium_spec",
+    "corronium_dense_charge",
+    "corronium_activated_crystal",
+    "solerium_dust",
+    "solerium_dirty_dust",
+    "solerium_clump",
+    "solerium_gem",
+    "solerium_shard",
+    "solerium_crystal",
+    "solerium_spec",
+    "solerium_dense_charge",
+    "solerium_activated_crystal"
+  ],
+  "slurries": {
+    "corronium": 8875859,
+    "solerium": 16768814
+  },
+  "copied": [
+    {
+      "material": "corronium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/corronium_dust.png",
+      "sha256": "e2ab7e554f37b9b0d6b5e3feb04d3101cc95fa70639d04e20b36a2d1899a2062"
+    },
+    {
+      "material": "corronium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/corronium_dirty_dust.png",
+      "sha256": "946802d95902f988c903836704bb2be7c2a2b0fdf588c3225cec662b0229defa"
+    },
+    {
+      "material": "corronium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/corronium_clump.png",
+      "sha256": "257c839020c55453a7cbcb6cf39b9cc11b103779093f0b765ce6546d39917400"
+    },
+    {
+      "material": "corronium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/corronium_gem.png",
+      "sha256": "98274dec7e5d69c535c1135a310356b71cf473ea5f017b126382df84b8669383"
+    },
+    {
+      "material": "corronium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/corronium_shard.png",
+      "sha256": "04d3814b8980442944eac1dbda0730dd78efbfd51132a297106b00168e8cef11"
+    },
+    {
+      "material": "corronium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/corronium_crystal.png",
+      "sha256": "3d7460caaa9fec01a8237cab5fef0232eabb505a25e129d0a9757df37b8719a5"
+    },
+    {
+      "material": "corronium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/corronium_spec.png",
+      "sha256": "b8741e2a40183b847e557e432a34a0fe5d72e3ec6438005b59a547e5e7674b87"
+    },
+    {
+      "material": "corronium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/corronium_dense_charge.png",
+      "sha256": "6d396e97a9eec9561485191716c90728e5a284c312e441f2cae3486168622ea9"
+    },
+    {
+      "material": "corronium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/corronium_activated_crystal.png",
+      "sha256": "7ed41f4e555558a034eb4cc2eaf10468b9dfdc7fc61bad22853545d904878b86"
+    },
+    {
+      "material": "corronium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_corronium.png",
+      "sha256": "d06a682a7262b470f9c91898e16343bfbeb9f04fd1e9280a7d4ad74f946afd15"
+    },
+    {
+      "material": "corronium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_corronium.png",
+      "sha256": "289edd10c72044f0b42fc6443798ffb4a0136f0a1f9af9bbfa164526ae27c018"
+    },
+    {
+      "material": "solerium",
+      "form": "dust",
+      "path": "assets/bertieprogression/textures/item/solerium_dust.png",
+      "sha256": "347f5fedf7cc4bf329d9dc49ecac0fb6afa34170f91d0823cdb267e6575a4c80"
+    },
+    {
+      "material": "solerium",
+      "form": "dirty_dust",
+      "path": "assets/bertieprogression/textures/item/solerium_dirty_dust.png",
+      "sha256": "5c9adaaeab232602598b482ddf7b8df8de3dc2f0aea5d8f36508b0feb11f4ca5"
+    },
+    {
+      "material": "solerium",
+      "form": "clump",
+      "path": "assets/bertieprogression/textures/item/solerium_clump.png",
+      "sha256": "66e1552e9860afdd3c6158cfeed400580eebaa7ad152a288af5358d8725a7e9a"
+    },
+    {
+      "material": "solerium",
+      "form": "gem",
+      "path": "assets/bertieprogression/textures/item/solerium_gem.png",
+      "sha256": "b4fd0b5a756361e5b7f16a4e2293a11bc4b2dba4e502bb36c26b6263581693b5"
+    },
+    {
+      "material": "solerium",
+      "form": "shard",
+      "path": "assets/bertieprogression/textures/item/solerium_shard.png",
+      "sha256": "9254a2fdceb5c8448c6057bdf8823029ccd3cf1884d7a0261270ebd78cef6b3d"
+    },
+    {
+      "material": "solerium",
+      "form": "crystal",
+      "path": "assets/bertieprogression/textures/item/solerium_crystal.png",
+      "sha256": "e05180e7b446b17f3717edfc670da4ae1aa9c46427f604afe2f6fdc2c9f0faf0"
+    },
+    {
+      "material": "solerium",
+      "form": "spec",
+      "path": "assets/bertieprogression/textures/item/solerium_spec.png",
+      "sha256": "249fa1b29a29d203532f5594d0a5ff3ed2156fe52557354346f1572245c52cab"
+    },
+    {
+      "material": "solerium",
+      "form": "dense_charge",
+      "path": "assets/bertieprogression/textures/item/solerium_dense_charge.png",
+      "sha256": "2a75dc578f15a290fe02cd246b091dee19a86f62976f326d5aba7746102a63df"
+    },
+    {
+      "material": "solerium",
+      "form": "activated_crystal",
+      "path": "assets/bertieprogression/textures/item/solerium_activated_crystal.png",
+      "sha256": "a0226039a758735701bb67980846e336a8269f192c042b4350daaea6c949b3ea"
+    },
+    {
+      "material": "solerium",
+      "form": "dirty_slurry",
+      "path": "assets/bertieprogression/textures/chemical/dirty_solerium.png",
+      "sha256": "8a07d186040546b8236afe0eb815fc35da094c5a648e508545b6773b7397107a"
+    },
+    {
+      "material": "solerium",
+      "form": "clean_slurry",
+      "path": "assets/bertieprogression/textures/chemical/clean_solerium.png",
+      "sha256": "fb10d8919d721a6e390e4f8ea44d9d1b8994c4887d8ca6ed2f12887465d57ead"
+    }
+  ],
+  "old_item_order": [
+    "iron_spec",
+    "iron_dense_charge",
+    "iron_activated_crystal",
+    "copper_spec",
+    "copper_dense_charge",
+    "copper_activated_crystal",
+    "gold_spec",
+    "gold_dense_charge",
+    "gold_activated_crystal",
+    "uranium_spec",
+    "uranium_dense_charge",
+    "uranium_activated_crystal",
+    "osmium_gem",
+    "osmium_spec",
+    "osmium_dense_charge",
+    "osmium_activated_crystal",
+    "tin_gem",
+    "tin_spec",
+    "tin_dense_charge",
+    "tin_activated_crystal",
+    "lead_gem",
+    "lead_spec",
+    "lead_dense_charge",
+    "lead_activated_crystal",
+    "naquadah_gem",
+    "naquadah_spec",
+    "naquadah_dense_charge",
+    "naquadah_activated_crystal",
+    "nickel_dirty_dust",
+    "nickel_shard",
+    "nickel_crystal",
+    "nickel_spec",
+    "nickel_dense_charge",
+    "nickel_activated_crystal",
+    "platinum_dirty_dust",
+    "platinum_shard",
+    "platinum_crystal",
+    "platinum_spec",
+    "platinum_dense_charge",
+    "platinum_activated_crystal",
+    "zinc_dust",
+    "zinc_dirty_dust",
+    "zinc_clump",
+    "zinc_gem",
+    "zinc_shard",
+    "zinc_crystal",
+    "zinc_spec",
+    "zinc_dense_charge",
+    "zinc_activated_crystal",
+    "silver_dust",
+    "silver_dirty_dust",
+    "silver_clump",
+    "silver_gem",
+    "silver_shard",
+    "silver_crystal",
+    "silver_spec",
+    "silver_dense_charge",
+    "silver_activated_crystal",
+    "titanium_dust",
+    "titanium_dirty_dust",
+    "titanium_clump",
+    "titanium_gem",
+    "titanium_shard",
+    "titanium_crystal",
+    "titanium_spec",
+    "titanium_dense_charge",
+    "titanium_activated_crystal",
+    "tungsten_dust",
+    "tungsten_dirty_dust",
+    "tungsten_clump",
+    "tungsten_gem",
+    "tungsten_shard",
+    "tungsten_crystal",
+    "tungsten_spec",
+    "tungsten_dense_charge",
+    "tungsten_activated_crystal",
+    "voiderite_dust",
+    "voiderite_dirty_dust",
+    "voiderite_clump",
+    "voiderite_gem",
+    "voiderite_shard",
+    "voiderite_crystal",
+    "voiderite_spec",
+    "voiderite_dense_charge",
+    "voiderite_activated_crystal",
+    "desh_dust",
+    "desh_dirty_dust",
+    "desh_clump",
+    "desh_gem",
+    "desh_shard",
+    "desh_crystal",
+    "desh_spec",
+    "desh_dense_charge",
+    "desh_activated_crystal",
+    "neptunium_dust",
+    "neptunium_dirty_dust",
+    "neptunium_clump",
+    "neptunium_gem",
+    "neptunium_shard",
+    "neptunium_crystal",
+    "neptunium_spec",
+    "neptunium_dense_charge",
+    "neptunium_activated_crystal",
+    "tharsite_dust",
+    "tharsite_dirty_dust",
+    "tharsite_clump",
+    "tharsite_gem",
+    "tharsite_shard",
+    "tharsite_crystal",
+    "tharsite_spec",
+    "tharsite_dense_charge",
+    "tharsite_activated_crystal",
+    "corronium_dust",
+    "corronium_dirty_dust",
+    "corronium_clump",
+    "corronium_gem",
+    "corronium_shard",
+    "corronium_crystal",
+    "corronium_spec",
+    "corronium_dense_charge",
+    "corronium_activated_crystal",
+    "solerium_dust",
+    "solerium_dirty_dust",
+    "solerium_clump",
+    "solerium_gem",
+    "solerium_shard",
+    "solerium_crystal",
+    "solerium_spec",
+    "solerium_dense_charge",
+    "solerium_activated_crystal",
+    "eezo_dust",
+    "eezo_dirty_dust",
+    "eezo_clump",
+    "eezo_gem",
+    "eezo_shard",
+    "eezo_crystal",
+    "eezo_spec",
+    "eezo_dense_charge",
+    "eezo_activated_crystal",
+    "bloody_dust",
+    "bloody_dirty_dust",
+    "bloody_clump",
+    "bloody_gem",
+    "bloody_shard",
+    "bloody_crystal",
+    "bloody_spec",
+    "bloody_dense_charge",
+    "bloody_activated_crystal",
+    "elvenite_dust",
+    "elvenite_dirty_dust",
+    "elvenite_clump",
+    "elvenite_gem",
+    "elvenite_shard",
+    "elvenite_crystal",
+    "elvenite_spec",
+    "elvenite_dense_charge",
+    "elvenite_activated_crystal",
+    "raw_voiderite",
+    "raw_bloody"
+  ],
+  "registration": {
+    "items": [
+      "solerium",
+      "raw_solerium",
+      "corronium_ingot",
+      "raw_corronium",
+      "plutonium_ingot",
+      "plutonium_nugget",
+      "plutonium_piece",
+      "plutonium_grain"
+    ],
+    "blocks": [
+      "solerium_ore",
+      "corronium_ore",
+      "plutonium_ore",
+      "plutonium_block"
+    ],
+    "item_aliases": {
+      "stellaris:solerium": "bertieprogression:solerium",
+      "stellaris:raw_solerium": "bertieprogression:raw_solerium",
+      "stellaris:mercury_solerium_ore": "bertieprogression:solerium_ore",
+      "stellaris:corronium_ingot": "bertieprogression:corronium_ingot",
+      "stellaris:raw_corronium": "bertieprogression:raw_corronium",
+      "stellaris:venus_corronium_ore": "bertieprogression:corronium_ore",
+      "stellaris:plutonium_ingot": "bertieprogression:plutonium_ingot",
+      "stellaris:plutonium_nugget": "bertieprogression:plutonium_nugget",
+      "stellaris:plutonium_piece": "bertieprogression:plutonium_piece",
+      "stellaris:plutonium_grain": "bertieprogression:plutonium_grain",
+      "stellaris:mars_plutonium_ore": "bertieprogression:plutonium_ore",
+      "stellaris:plutonium_block": "bertieprogression:plutonium_block"
+    },
+    "block_aliases": {
+      "stellaris:mercury_solerium_ore": "bertieprogression:solerium_ore",
+      "stellaris:venus_corronium_ore": "bertieprogression:corronium_ore",
+      "stellaris:mars_plutonium_ore": "bertieprogression:plutonium_ore",
+      "stellaris:plutonium_block": "bertieprogression:plutonium_block"
+    }
+  },
+  "recipes": {
+    "data/bertieprogression/recipe/blasting/corronium_dust.json": {
+      "type": "minecraft:blasting",
+      "ingredient": {
+        "item": "bertieprogression:corronium_dust"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      },
+      "experience": 0.1,
+      "cookingtime": 100,
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/blasting/solerium_dust.json": {
+      "type": "minecraft:blasting",
+      "ingredient": {
+        "item": "bertieprogression:solerium_dust"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      },
+      "experience": 0.1,
+      "cookingtime": 100,
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/centrifuge/corronium.json": {
+      "type": "oritech:centrifuge_fluid",
+      "ingredients": [
+        {
+          "tag": "c:dirty_dusts/corronium"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:corronium_gem",
+          "count": 1
+        },
+        {
+          "id": "bertieprogression:eezo_spec",
+          "count": 3
+        }
+      ],
+      "time": 100,
+      "fluidInput": {
+        "fluid": "oritech:still_sheol_fire",
+        "amount": 100
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/centrifuge/solerium.json": {
+      "type": "oritech:centrifuge_fluid",
+      "ingredients": [
+        {
+          "tag": "c:dirty_dusts/solerium"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:solerium_gem",
+          "count": 1
+        },
+        {
+          "id": "bertieprogression:corronium_spec",
+          "count": 3
+        }
+      ],
+      "time": 100,
+      "fluidInput": {
+        "fluid": "oritech:still_sheol_fire",
+        "amount": 100
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/crafting/corronium_spec_recombination.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SDS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "bertieprogression:corronium_spec"
+        },
+        "D": {
+          "item": "bertieprogression:corronium_dirty_dust"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:corronium_dirty_dust",
+        "count": 2
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/crafting/solerium_spec_recombination.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SDS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "bertieprogression:solerium_spec"
+        },
+        "D": {
+          "item": "bertieprogression:solerium_dirty_dust"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:solerium_dirty_dust",
+        "count": 2
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/crushing/corronium_gem.json": {
+      "type": "mekanism:crushing",
+      "input": {
+        "count": 1,
+        "item": "bertieprogression:corronium_gem"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/crushing/solerium_gem.json": {
+      "type": "mekanism:crushing",
+      "input": {
+        "count": 1,
+        "item": "bertieprogression:solerium_gem"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/clean_slurry.json": {
+      "type": "mekanism:washing",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "bertieprogression:dirty_corronium"
+      },
+      "fluid_input": {
+        "amount": 5,
+        "tag": "minecraft:water"
+      },
+      "output": {
+        "amount": 1,
+        "id": "bertieprogression:clean_corronium"
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/clump_from_raw.json": {
+      "type": "mekanism:purifying",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:oxygen"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 2,
+        "item": "bertieprogression:raw_corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_clump",
+        "count": 5
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/clump_from_shard.json": {
+      "type": "mekanism:purifying",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:oxygen"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "tag": "c:shards/corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_clump",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/crystal_from_slurry.json": {
+      "type": "mekanism:crystallizing",
+      "input": {
+        "amount": 200,
+        "chemical": "bertieprogression:clean_corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_crystal",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/dirty_dust_from_clump.json": {
+      "type": "mekanism:crushing",
+      "input": {
+        "count": 1,
+        "tag": "c:clumps/corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_dirty_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/dust_from_dirty_dust.json": {
+      "type": "mekanism:enriching",
+      "input": {
+        "count": 1,
+        "tag": "c:dirty_dusts/corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/dust_from_raw.json": {
+      "type": "mekanism:enriching",
+      "input": {
+        "count": 1,
+        "item": "bertieprogression:raw_corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_dust",
+        "count": 2
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/shard_from_crystal.json": {
+      "type": "mekanism:injecting",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:hydrogen_chloride"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "tag": "c:crystals/corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_shard",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/shard_from_raw.json": {
+      "type": "mekanism:injecting",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:hydrogen_chloride"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "item": "bertieprogression:raw_corronium"
+      },
+      "output": {
+        "id": "bertieprogression:corronium_shard",
+        "count": 4
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/corronium/slurry_from_raw.json": {
+      "type": "mekanism:dissolution",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:sulfuric_acid"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 3,
+        "item": "bertieprogression:raw_corronium"
+      },
+      "output": {
+        "amount": 2000,
+        "id": "bertieprogression:dirty_corronium"
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/clean_slurry.json": {
+      "type": "mekanism:washing",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "bertieprogression:dirty_solerium"
+      },
+      "fluid_input": {
+        "amount": 5,
+        "tag": "minecraft:water"
+      },
+      "output": {
+        "amount": 1,
+        "id": "bertieprogression:clean_solerium"
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/clump_from_raw.json": {
+      "type": "mekanism:purifying",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:oxygen"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 2,
+        "item": "bertieprogression:raw_solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_clump",
+        "count": 5
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/clump_from_shard.json": {
+      "type": "mekanism:purifying",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:oxygen"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "tag": "c:shards/solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_clump",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/crystal_from_slurry.json": {
+      "type": "mekanism:crystallizing",
+      "input": {
+        "amount": 200,
+        "chemical": "bertieprogression:clean_solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_crystal",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/dirty_dust_from_clump.json": {
+      "type": "mekanism:crushing",
+      "input": {
+        "count": 1,
+        "tag": "c:clumps/solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_dirty_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/dust_from_dirty_dust.json": {
+      "type": "mekanism:enriching",
+      "input": {
+        "count": 1,
+        "tag": "c:dirty_dusts/solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_dust",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/dust_from_raw.json": {
+      "type": "mekanism:enriching",
+      "input": {
+        "count": 1,
+        "item": "bertieprogression:raw_solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_dust",
+        "count": 2
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/shard_from_crystal.json": {
+      "type": "mekanism:injecting",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:hydrogen_chloride"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "tag": "c:crystals/solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_shard",
+        "count": 1
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/shard_from_raw.json": {
+      "type": "mekanism:injecting",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:hydrogen_chloride"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 1,
+        "item": "bertieprogression:raw_solerium"
+      },
+      "output": {
+        "id": "bertieprogression:solerium_shard",
+        "count": 4
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/processing/solerium/slurry_from_raw.json": {
+      "type": "mekanism:dissolution",
+      "chemical_input": {
+        "amount": 1,
+        "chemical": "mekanism:sulfuric_acid"
+      },
+      "per_tick_usage": true,
+      "item_input": {
+        "count": 3,
+        "item": "bertieprogression:raw_solerium"
+      },
+      "output": {
+        "amount": 2000,
+        "id": "bertieprogression:dirty_solerium"
+      },
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/smelting/corronium_dust.json": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "bertieprogression:corronium_dust"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      },
+      "experience": 0.1,
+      "cookingtime": 200,
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/smelting/solerium_dust.json": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "bertieprogression:solerium_dust"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      },
+      "experience": 0.1,
+      "cookingtime": 200,
+      "neoforge:conditions": []
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/corronium_ingot_from_blasting_raw_corronium.json": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:raw_corronium"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/corronium_ingot_from_blasting_venus_corronium_ore.json": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:corronium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/corronium_ingot_from_smelting_raw_corronium.json": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:raw_corronium"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/corronium_ingot_from_smelting_venus_corronium_ore.json": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:corronium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:corronium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_block.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "tag": "c:ingots/plutonium"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_block"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_from_blasting.json": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "group": "plutonium",
+      "ingredient": {
+        "item": "bertieprogression:plutonium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_from_smelting.json": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "group": "plutonium",
+      "ingredient": {
+        "item": "bertieprogression:plutonium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_ingot"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_grain.json": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "bertieprogression:plutonium_piece"
+        }
+      ],
+      "result": {
+        "id": "bertieprogression:plutonium_grain",
+        "count": 9
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_ingot.json": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "c:storage_blocks/plutonium"
+        }
+      ],
+      "result": {
+        "id": "bertieprogression:plutonium_ingot",
+        "count": 9
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_ingot_from_nugget.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "tag": "c:nuggets/plutonium"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_ingot",
+        "count": 1
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_nugget.json": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "c:ingots/plutonium"
+        }
+      ],
+      "result": {
+        "id": "bertieprogression:plutonium_nugget",
+        "count": 9
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_nugget_from_piece.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "bertieprogression:plutonium_piece"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_nugget",
+        "count": 1
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_piece.json": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "c:nuggets/plutonium"
+        }
+      ],
+      "result": {
+        "id": "bertieprogression:plutonium_piece",
+        "count": 9
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/plutonium_piece_from_grain.json": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "bertieprogression:plutonium_grain"
+        }
+      },
+      "result": {
+        "id": "bertieprogression:plutonium_piece",
+        "count": 1
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/solerium_from_blasting_mercury_solerium_ore.json": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:solerium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/solerium_from_blasting_raw_solerium.json": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:raw_solerium"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/solerium_from_smelting_mercury_solerium_ore.json": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:solerium_ore"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      }
+    },
+    "data/bertieprogression/recipe/retained_stellaris/native/misc/solerium_from_smelting_raw_solerium.json": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.7,
+      "ingredient": {
+        "item": "bertieprogression:raw_solerium"
+      },
+      "result": {
+        "id": "bertieprogression:solerium"
+      }
+    }
+  },
+  "tags": {
+    "data/bertieprogression/tags/item/ore_material_dusts.json": [
+      "bertieprogression:corronium_dust",
+      "bertieprogression:solerium_dust"
+    ],
+    "data/bertietoolcraft/tags/item/tool_material/noslate.json": [
+      {
+        "id": "bertieprogression:corronium_ingot",
+        "required": false
+      },
+      {
+        "id": "bertieprogression:plutonium_ingot",
+        "required": false
+      },
+      {
+        "id": "bertieprogression:solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/block/ores.json": [
+      {
+        "id": "bertieprogression:plutonium_ore",
+        "required": false
+      },
+      "bertieprogression:plutonium_ore"
+    ],
+    "data/c/tags/item/activated_crystals.json": [
+      {
+        "id": "#c:activated_crystals/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:activated_crystals/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/activated_crystals/corronium.json": [
+      "bertieprogression:corronium_activated_crystal"
+    ],
+    "data/c/tags/item/activated_crystals/solerium.json": [
+      "bertieprogression:solerium_activated_crystal"
+    ],
+    "data/c/tags/item/clumps.json": [
+      {
+        "id": "#c:clumps/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:clumps/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/clumps/corronium.json": [
+      "bertieprogression:corronium_clump"
+    ],
+    "data/c/tags/item/clumps/solerium.json": [
+      "bertieprogression:solerium_clump"
+    ],
+    "data/c/tags/item/crystals.json": [
+      {
+        "id": "#c:crystals/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:crystals/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/crystals/corronium.json": [
+      "bertieprogression:corronium_crystal"
+    ],
+    "data/c/tags/item/crystals/solerium.json": [
+      "bertieprogression:solerium_crystal"
+    ],
+    "data/c/tags/item/dense_charges.json": [
+      {
+        "id": "#c:dense_charges/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:dense_charges/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/dense_charges/corronium.json": [
+      "bertieprogression:corronium_dense_charge"
+    ],
+    "data/c/tags/item/dense_charges/solerium.json": [
+      "bertieprogression:solerium_dense_charge"
+    ],
+    "data/c/tags/item/dirty_dusts.json": [
+      {
+        "id": "#c:dirty_dusts/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:dirty_dusts/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/dirty_dusts/corronium.json": [
+      "bertieprogression:corronium_dirty_dust"
+    ],
+    "data/c/tags/item/dirty_dusts/solerium.json": [
+      "bertieprogression:solerium_dirty_dust"
+    ],
+    "data/c/tags/item/dusts.json": [
+      {
+        "id": "#c:dusts/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:dusts/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/dusts/corronium.json": [
+      "bertieprogression:corronium_dust"
+    ],
+    "data/c/tags/item/dusts/solerium.json": [
+      "bertieprogression:solerium_dust"
+    ],
+    "data/c/tags/item/gems.json": [
+      {
+        "id": "#c:gems/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:gems/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/gems/corronium.json": [
+      "bertieprogression:corronium_gem"
+    ],
+    "data/c/tags/item/gems/solerium.json": [
+      "bertieprogression:solerium_gem"
+    ],
+    "data/c/tags/item/ingots.json": [
+      {
+        "id": "#c:ingots/plutonium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/nuggets.json": [
+      {
+        "id": "#c:nuggets/plutonium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/ores.json": [
+      {
+        "id": "#c:ores/plutonium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/raw_materials.json": [
+      {
+        "id": "#c:raw_materials/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:raw_materials/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/raw_materials/corronium.json": [
+      {
+        "id": "bertieprogression:raw_corronium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/raw_materials/solerium.json": [
+      {
+        "id": "bertieprogression:raw_solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/shards.json": [
+      {
+        "id": "#c:shards/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:shards/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/shards/corronium.json": [
+      "bertieprogression:corronium_shard"
+    ],
+    "data/c/tags/item/shards/solerium.json": [
+      "bertieprogression:solerium_shard"
+    ],
+    "data/c/tags/item/specs.json": [
+      {
+        "id": "#c:specs/corronium",
+        "required": false
+      },
+      {
+        "id": "#c:specs/solerium",
+        "required": false
+      }
+    ],
+    "data/c/tags/item/specs/corronium.json": [
+      "bertieprogression:corronium_spec"
+    ],
+    "data/c/tags/item/specs/solerium.json": [
+      "bertieprogression:solerium_spec"
+    ],
+    "data/c/tags/item/ingots/plutonium.json": [
+      "bertieprogression:plutonium_ingot"
+    ],
+    "data/c/tags/item/nuggets/plutonium.json": [
+      "bertieprogression:plutonium_nugget"
+    ],
+    "data/c/tags/item/ores/plutonium.json": [
+      "bertieprogression:plutonium_ore"
+    ],
+    "data/c/tags/item/storage_blocks/plutonium.json": [
+      "bertieprogression:plutonium_block"
+    ],
+    "data/minecraft/tags/block/mineable/pickaxe.json": [
+      "bertieprogression:plutonium_ore",
+      "bertieprogression:solerium_ore",
+      "bertieprogression:corronium_ore",
+      "bertieprogression:plutonium_block"
+    ],
+    "data/minecraft/tags/block/needs_diamond_tool.json": [
+      "bertieprogression:plutonium_ore"
+    ],
+    "data/minecraft/tags/block/needs_iron_tool.json": [
+      "bertieprogression:solerium_ore",
+      "bertieprogression:corronium_ore",
+      "bertieprogression:plutonium_block"
+    ]
+  },
+  "loot": {
+    "data/bertieprogression/loot_table/blocks/plutonium_ore.json": {
+      "type": "minecraft:block",
+      "pools": [
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:plutonium_ore",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:plutonium_piece",
+                  "functions": [
+                    {
+                      "function": "minecraft:apply_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops"
+                    },
+                    {
+                      "function": "minecraft:explosion_decay"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "random_sequence": "minecraft:blocks/diamond_ore"
+    },
+    "data/bertieprogression/loot_table/blocks/solerium_ore.json": {
+      "type": "minecraft:block",
+      "pools": [
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:solerium_ore",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:raw_solerium",
+                  "functions": [
+                    {
+                      "function": "minecraft:apply_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops"
+                    },
+                    {
+                      "function": "minecraft:explosion_decay"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "random_sequence": "minecraft:blocks/diamond_ore"
+    },
+    "data/bertieprogression/loot_table/blocks/plutonium_block.json": {
+      "type": "minecraft:block",
+      "pools": [
+        {
+          "bonus_rolls": 0.0,
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ],
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "bertieprogression:plutonium_block"
+            }
+          ],
+          "rolls": 1.0
+        }
+      ]
+    },
+    "data/bertieprogression/loot_table/blocks/corronium_ore.json": {
+      "type": "minecraft:block",
+      "pools": [
+        {
+          "rolls": 1,
+          "bonus_rolls": 0,
+          "entries": [
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:corronium_ore",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "bertieprogression:raw_corronium",
+                  "functions": [
+                    {
+                      "function": "minecraft:apply_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops"
+                    },
+                    {
+                      "function": "minecraft:explosion_decay"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "random_sequence": "minecraft:blocks/diamond_ore"
+    }
+  },
+  "lang": {
+    "item.bertieprogression.corronium_dust": "Corronium Dust",
+    "item.bertieprogression.corronium_dirty_dust": "Dirty Corronium Dust",
+    "item.bertieprogression.corronium_clump": "Corronium Clump",
+    "item.bertieprogression.corronium_gem": "Corronium Gem",
+    "item.bertieprogression.corronium_shard": "Corronium Shard",
+    "item.bertieprogression.corronium_crystal": "Corronium Crystal",
+    "item.bertieprogression.corronium_spec": "Corronium Spec",
+    "item.bertieprogression.corronium_dense_charge": "Dense Corronium Charge",
+    "item.bertieprogression.corronium_activated_crystal": "Activated Corronium Crystal",
+    "chemical.bertieprogression.dirty_corronium": "Dirty Corronium Slurry",
+    "chemical.bertieprogression.clean_corronium": "Clean Corronium Slurry",
+    "item.bertieprogression.solerium_dust": "Solerium Dust",
+    "item.bertieprogression.solerium_dirty_dust": "Dirty Solerium Dust",
+    "item.bertieprogression.solerium_clump": "Solerium Clump",
+    "item.bertieprogression.solerium_gem": "Solerium Gem",
+    "item.bertieprogression.solerium_shard": "Solerium Shard",
+    "item.bertieprogression.solerium_crystal": "Solerium Crystal",
+    "item.bertieprogression.solerium_spec": "Solerium Spec",
+    "item.bertieprogression.solerium_dense_charge": "Dense Solerium Charge",
+    "item.bertieprogression.solerium_activated_crystal": "Activated Solerium Crystal",
+    "chemical.bertieprogression.dirty_solerium": "Dirty Solerium Slurry",
+    "chemical.bertieprogression.clean_solerium": "Clean Solerium Slurry",
+    "block.bertieprogression.plutonium_ore": "Mars Plutonium Ore",
+    "block.bertieprogression.corronium_ore": "Venus Corronium Ore",
+    "block.bertieprogression.solerium_ore": "Mercury Solerium Ore",
+    "block.bertieprogression.plutonium_block": "Plutonium Block",
+    "item.bertieprogression.plutonium_ingot": "Plutonium Ingot",
+    "item.bertieprogression.corronium_ingot": "Corronium Ingot",
+    "item.bertieprogression.solerium": "Solerium",
+    "item.bertieprogression.raw_corronium": "Raw Corronium",
+    "item.bertieprogression.raw_solerium": "Raw Solerium",
+    "item.bertieprogression.plutonium_nugget": "Plutonium Nugget",
+    "item.bertieprogression.plutonium_piece": "Plutonium Piece",
+    "item.bertieprogression.plutonium_grain": "Plutonium Grain"
+  },
+  "eligibility": [
+    {
+      "material": "corronium",
+      "ores": [
+        "bertieprogression:corronium_ore"
+      ],
+      "dusts": [
+        "bertieprogression:corronium_dust"
+      ]
+    },
+    {
+      "material": "plutonium",
+      "ores": [
+        "bertieprogression:plutonium_ore"
+      ],
+      "dusts": [
+        "oritech:plutonium_dust"
+      ]
+    },
+    {
+      "material": "solerium",
+      "ores": [
+        "bertieprogression:solerium_ore"
+      ],
+      "dusts": [
+        "bertieprogression:solerium_dust"
+      ]
+    }
+  ],
+  "native_assets": [
+    "assets/bertieprogression/blockstates/corronium_ore.json",
+    "assets/bertieprogression/blockstates/plutonium_block.json",
+    "assets/bertieprogression/blockstates/plutonium_ore.json",
+    "assets/bertieprogression/blockstates/solerium_ore.json",
+    "assets/bertieprogression/models/block/corronium_ore.json",
+    "assets/bertieprogression/models/block/plutonium_block.json",
+    "assets/bertieprogression/models/block/plutonium_ore.json",
+    "assets/bertieprogression/models/block/solerium_ore.json",
+    "assets/bertieprogression/models/item/corronium_ingot.json",
+    "assets/bertieprogression/models/item/corronium_ore.json",
+    "assets/bertieprogression/models/item/plutonium_block.json",
+    "assets/bertieprogression/models/item/plutonium_grain.json",
+    "assets/bertieprogression/models/item/plutonium_ingot.json",
+    "assets/bertieprogression/models/item/plutonium_nugget.json",
+    "assets/bertieprogression/models/item/plutonium_ore.json",
+    "assets/bertieprogression/models/item/plutonium_piece.json",
+    "assets/bertieprogression/models/item/raw_corronium.json",
+    "assets/bertieprogression/models/item/raw_solerium.json",
+    "assets/bertieprogression/models/item/solerium.json",
+    "assets/bertieprogression/models/item/solerium_ore.json",
+    "assets/bertieprogression/textures/block/corronium_ore.png",
+    "assets/bertieprogression/textures/block/plutonium_block.png",
+    "assets/bertieprogression/textures/block/plutonium_ore.png",
+    "assets/bertieprogression/textures/block/solerium_ore.png",
+    "assets/bertieprogression/textures/item/corronium_ingot.png",
+    "assets/bertieprogression/textures/item/plutonium_grain.png",
+    "assets/bertieprogression/textures/item/plutonium_ingot.png",
+    "assets/bertieprogression/textures/item/plutonium_nugget.png",
+    "assets/bertieprogression/textures/item/plutonium_piece.png",
+    "assets/bertieprogression/textures/item/raw_corronium.png",
+    "assets/bertieprogression/textures/item/raw_solerium.png",
+    "assets/bertieprogression/textures/item/solerium.png"
+  ],
+  "source": {
+    "mod": "Stellaris",
+    "version": "1.4.23",
+    "authors": "The Stellaris Team",
+    "license": "CC BY-NC-SA 4.0",
+    "url": "https://github.com/st0x0ef/Stellaris",
+    "jar_sha256": "c201124207c358981c2c43d62b12f74c61faecf6bdf939ca394f543ac927a2cc"
+  }
+}

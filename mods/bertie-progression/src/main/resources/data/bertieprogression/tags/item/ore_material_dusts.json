@@ -26,6 +26,9 @@
     "oritech:iron_dust",
     "oritech:nickel_dust",
     "oritech:platinum_dust",
-    "oritech:uranium_dust"
+    "oritech:uranium_dust",
+    "bertieprogression:corronium_dust",
+    "bertieprogression:solerium_dust",
+    "oritech:plutonium_dust"
   ]
 }

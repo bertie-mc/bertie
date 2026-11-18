@@ -90,6 +90,24 @@ public final class OreMaterials {
             "voiderite_spec",
             "voiderite_dense_charge",
             "voiderite_activated_crystal",
+            "corronium_dust",
+            "corronium_dirty_dust",
+            "corronium_clump",
+            "corronium_gem",
+            "corronium_shard",
+            "corronium_crystal",
+            "corronium_spec",
+            "corronium_dense_charge",
+            "corronium_activated_crystal",
+            "solerium_dust",
+            "solerium_dirty_dust",
+            "solerium_clump",
+            "solerium_gem",
+            "solerium_shard",
+            "solerium_crystal",
+            "solerium_spec",
+            "solerium_dense_charge",
+            "solerium_activated_crystal",
             "eezo_dust",
             "eezo_dirty_dust",
             "eezo_clump",
@@ -130,7 +148,9 @@ public final class OreMaterials {
             Map.entry("voiderite", 0xD654DD),
             Map.entry("eezo", 0x7C7C7C),
             Map.entry("bloody", 0x70032B),
-            Map.entry("elvenite", 0xD99B4C));
+            Map.entry("elvenite", 0xD99B4C),
+            Map.entry("corronium", 0x876F53),
+            Map.entry("solerium", 0xFFDF2E));
 
     private OreMaterials() {}
 }

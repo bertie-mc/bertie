@@ -26,6 +26,7 @@ public final class BertieProgression {
         NeoForge.EVENT_BUS.register(io.github.bertie_mc.bertieprogression.combat.MagicOrigins.class);
         ModItems.ITEMS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
+        RetainedMaterials.register(modBus);
         if (ModList.get().isLoaded("oritech")) {
             modBus.addListener(io.github.bertie_mc.bertieprogression.cybernetics.AdaptiveImmuneSystem::setup);
             if (ModList.get().isLoaded("create")) {

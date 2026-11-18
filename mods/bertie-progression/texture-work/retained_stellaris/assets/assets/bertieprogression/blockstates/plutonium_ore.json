@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bertieprogression:block/plutonium_ore"
+    }
+  }
+}

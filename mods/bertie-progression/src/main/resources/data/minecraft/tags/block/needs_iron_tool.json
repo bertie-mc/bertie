@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "bertieprogression:sentient_casing"
+    "bertieprogression:sentient_casing",
+    "bertieprogression:solerium_ore",
+    "bertieprogression:corronium_ore",
+    "bertieprogression:plutonium_block"
   ],
   "remove": [
     "forbidden_arcanus:arcane_crystal_ore",

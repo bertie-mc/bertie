@@ -5959,4 +5959,7 @@ _apply_queued_052(ROOT, _recipe_src)
 from stellaris_retirement import apply as _retire_stellaris
 _retire_stellaris(ROOT)
 
+from retained_stellaris_materials import apply as _restore_retained_stellaris
+_restore_retained_stellaris(ROOT)
+
 print(f"Wrote {len(written)} files under {RES}")

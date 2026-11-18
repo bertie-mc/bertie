@@ -862,7 +862,11 @@
       "required": false
     },
     "bertieprogression:sentient_casing",
-    "bertieprogression:mechanical_adapter"
+    "bertieprogression:mechanical_adapter",
+    "bertieprogression:plutonium_ore",
+    "bertieprogression:solerium_ore",
+    "bertieprogression:corronium_ore",
+    "bertieprogression:plutonium_block"
   ],
   "remove": [
     {

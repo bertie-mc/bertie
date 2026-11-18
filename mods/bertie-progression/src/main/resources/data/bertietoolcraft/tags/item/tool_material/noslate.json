@@ -400,6 +400,18 @@
     {
       "id": "pastel:onyx_shard",
       "required": false
+    },
+    {
+      "id": "bertieprogression:corronium_ingot",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:plutonium_ingot",
+      "required": false
+    },
+    {
+      "id": "bertieprogression:solerium",
+      "required": false
     }
   ]
 }

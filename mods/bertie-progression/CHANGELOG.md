@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.53.1
+
+- Keep Solerium, Corronium and cube-shaped Plutonium usable under Bertie
+  Progression, with their native item/ore/block forms and licensed artwork.
+- Restore Corronium/Solerium processing forms, slurries and recipes while keeping
+  Desh, Neptunium and Tharsite retired. Corronium's former byproduct chain contracts to Eezo.
+- Alias former Stellaris material IDs to the new entries for surviving saved
+  stacks and blocks; Stellaris and its addons remain removed.
+
 ## 0.53.0
 
 - Retire Stellaris and its dedicated addons, removing the five exclusive metal
