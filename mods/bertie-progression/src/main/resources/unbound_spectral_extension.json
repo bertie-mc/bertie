@@ -1,0 +1,1006 @@
+{
+  "refs": [
+    {
+      "id": "ag",
+      "symbol": "Ag",
+      "color": "DCE4ED",
+      "lines": [
+        {
+          "nm": 520.9078,
+          "strength": 3,
+          "label": "Ag",
+          "width": 0.0
+        },
+        {
+          "nm": 546.5497,
+          "strength": 3,
+          "label": "Ag",
+          "width": 0.0
+        },
+        {
+          "nm": 768.7772,
+          "strength": 2,
+          "label": "Ag",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "al",
+      "symbol": "Al",
+      "color": "BDD8F2",
+      "lines": [
+        {
+          "nm": 394.4006,
+          "strength": 2,
+          "label": "Al",
+          "width": 0.0
+        },
+        {
+          "nm": 396.152,
+          "strength": 3,
+          "label": "Al",
+          "width": 0.0
+        },
+        {
+          "nm": 669.6015,
+          "strength": 2,
+          "label": "Al",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "arc",
+      "symbol": "Ac",
+      "color": "B064F5",
+      "lines": [
+        {
+          "nm": 454.5,
+          "strength": 3,
+          "label": "Ac",
+          "width": 0.0
+        },
+        {
+          "nm": 602.0,
+          "strength": 2,
+          "label": "Ac",
+          "width": 0.0
+        },
+        {
+          "nm": 746.0,
+          "strength": 3,
+          "label": "Ac",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "symbol": "B",
+      "color": "C5BD92",
+      "lines": [
+        {
+          "nm": 412.1933,
+          "strength": 3,
+          "label": "B",
+          "width": 0.0
+        },
+        {
+          "nm": 419.4792,
+          "strength": 2,
+          "label": "B",
+          "width": 0.0
+        },
+        {
+          "nm": 608.044,
+          "strength": 2,
+          "label": "B",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "symbol": "F",
+      "color": "B4E694",
+      "lines": [
+        {
+          "nm": 623.9651,
+          "strength": 2,
+          "label": "F",
+          "width": 0.0
+        },
+        {
+          "nm": 685.603,
+          "strength": 3,
+          "label": "F",
+          "width": 0.0
+        },
+        {
+          "nm": 703.7469,
+          "strength": 3,
+          "label": "F",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "symbol": "Pt",
+      "color": "D5CDE5",
+      "lines": [
+        {
+          "nm": 381.86874,
+          "strength": 3,
+          "label": "Pt",
+          "width": 0.0
+        },
+        {
+          "nm": 444.255,
+          "strength": 2,
+          "label": "Pt",
+          "width": 0.0
+        },
+        {
+          "nm": 530.102,
+          "strength": 2,
+          "label": "Pt",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "sn",
+      "symbol": "Sn",
+      "color": "C7CDD8",
+      "lines": [
+        {
+          "nm": 380.1011,
+          "strength": 3,
+          "label": "Sn",
+          "width": 0.0
+        },
+        {
+          "nm": 452.4734,
+          "strength": 2,
+          "label": "Sn",
+          "width": 0.0
+        },
+        {
+          "nm": 563.1676,
+          "strength": 2,
+          "label": "Sn",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "u",
+      "symbol": "U",
+      "color": "91A268",
+      "lines": [
+        {
+          "nm": 381.19911,
+          "strength": 3,
+          "label": "U",
+          "width": 0.0
+        },
+        {
+          "nm": 394.38161,
+          "strength": 2,
+          "label": "U",
+          "width": 0.0
+        },
+        {
+          "nm": 591.5385,
+          "strength": 2,
+          "label": "U",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "w",
+      "symbol": "W",
+      "color": "B0AAB8",
+      "lines": [
+        {
+          "nm": 400.875,
+          "strength": 3,
+          "label": "W",
+          "width": 0.0
+        },
+        {
+          "nm": 407.436,
+          "strength": 2,
+          "label": "W",
+          "width": 0.0
+        },
+        {
+          "nm": 429.461,
+          "strength": 2,
+          "label": "W",
+          "width": 0.0
+        }
+      ]
+    },
+    {
+      "id": "zn",
+      "symbol": "Zn",
+      "color": "9ABACB",
+      "lines": [
+        {
+          "nm": 468.01359,
+          "strength": 2,
+          "label": "Zn",
+          "width": 0.0
+        },
+        {
+          "nm": 472.21569,
+          "strength": 2,
+          "label": "Zn",
+          "width": 0.0
+        },
+        {
+          "nm": 481.05321,
+          "strength": 3,
+          "label": "Zn",
+          "width": 0.0
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bertie_uranium",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "u"
+      ],
+      "items": [
+        "anvilcraft:raw_uranium",
+        "anvilcraft:uranium_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_osmium",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "os"
+      ],
+      "items": [
+        "mekanism:ingot_osmium",
+        "mekanism:raw_osmium"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_tin",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "sn"
+      ],
+      "items": [
+        "anvilcraft:raw_tin",
+        "mekanism:ingot_tin"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_naquadah",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "u",
+        "si",
+        "arc"
+      ],
+      "items": [
+        "mekanism_extras:ingot_naquadah",
+        "mekanism_extras:raw_naquadah"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_nickel",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ni"
+      ],
+      "items": [
+        "oritech:nickel_ingot",
+        "oritech:raw_nickel"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_platinum",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "pt"
+      ],
+      "items": [
+        "oritech:platinum_ingot",
+        "oritech:raw_platinum"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_zinc",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "zn"
+      ],
+      "items": [
+        "magitech:raw_zinc",
+        "magitech:zinc_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_silver",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ag"
+      ],
+      "items": [
+        "anvilcraft:raw_silver",
+        "anvilcraft:silver_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_tungsten",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "w"
+      ],
+      "items": [
+        "anvilcraft:raw_tungsten",
+        "anvilcraft:tungsten_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_voiderite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "w",
+        "os",
+        "arc"
+      ],
+      "items": [
+        "armageddon_mod:voiderite",
+        "bertieprogression:raw_voiderite"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_eezo",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "bi",
+        "si",
+        "arc"
+      ],
+      "items": [
+        "bertieprogression:eezo_ingot",
+        "bertieprogression:raw_eezo"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_bloody",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "fe",
+        "c2",
+        "arc"
+      ],
+      "items": [
+        "armageddon_mod:bloody_ingot",
+        "bertieprogression:raw_bloody"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_elvenite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "au",
+        "ag",
+        "arc"
+      ],
+      "items": [
+        "armageddon_mod:elvenite_ingot",
+        "armageddon_mod:raw_elvenite"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_netherite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "au",
+        "w",
+        "c2",
+        "ir"
+      ],
+      "items": [
+        "minecraft:netherite_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_netherite_ore",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "w",
+        "c2",
+        "ir"
+      ],
+      "items": [
+        "minecraft:netherite_scrap"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_bluestone",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "cu",
+        "s",
+        "h",
+        "arc"
+      ],
+      "items": [
+        "antarchy:bluestone"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_etherium",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "pt",
+        "ir",
+        "arc"
+      ],
+      "items": [
+        "enigmaticlegacyplus:etherium_ingot",
+        "enigmaticlegacyplus:raw_etherium"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_arcane_crystal",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "si",
+        "arc"
+      ],
+      "items": [
+        "forbidden_arcanus:arcane_crystal"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_runic",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "al",
+        "si",
+        "arc"
+      ],
+      "items": [
+        "forbidden_arcanus:rune"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_stellarite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "be",
+        "al",
+        "arc"
+      ],
+      "items": [
+        "forbidden_arcanus:stellarite_piece"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_mithril",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ti",
+        "al",
+        "cu",
+        "zn",
+        "arc"
+      ],
+      "items": [
+        "irons_spellbooks:mithril_ingot"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_mithril_ore",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ti",
+        "al",
+        "arc"
+      ],
+      "items": [
+        "irons_spellbooks:raw_mithril"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_tourmaline",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "na",
+        "li",
+        "al",
+        "b",
+        "si"
+      ],
+      "items": [
+        "magitech:tourmaline"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_cthonic_gold",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "au",
+        "arc"
+      ],
+      "items": [
+        "malum:cthonic_gold"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_soulstone",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "fe",
+        "si",
+        "c2",
+        "arc"
+      ],
+      "items": [
+        "malum:refined_soulstone"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_soulstone_ore",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "fe",
+        "si",
+        "arc"
+      ],
+      "items": [],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_brilliance",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ca",
+        "p",
+        "f",
+        "arc"
+      ],
+      "items": [
+        "malum:refined_brilliance"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_fluorite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ca",
+        "f"
+      ],
+      "items": [
+        "mekanism:fluorite_gem"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_uraninite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "u"
+      ],
+      "items": [
+        "powah:uraninite"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_malachite",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "cu"
+      ],
+      "items": [
+        "pastel:raw_malachite"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_moonstone",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "k",
+        "al",
+        "si"
+      ],
+      "items": [
+        "pastel:moonstone_shard"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bertie_solar_core",
+      "kind": "sample",
+      "emission": true,
+      "refs": [
+        "ca",
+        "w",
+        "arc"
+      ],
+      "items": [
+        "hazennstuff:solar_core"
+      ],
+      "marks": [],
+      "z": [
+        0,
+        0
+      ]
+    }
+  ],
+  "aliases": {
+    "iron": [
+      "minecraft:iron_ingot",
+      "minecraft:raw_iron"
+    ],
+    "copper": [
+      "minecraft:copper_ingot",
+      "minecraft:raw_copper"
+    ],
+    "gold": [
+      "minecraft:gold_ingot",
+      "minecraft:raw_gold"
+    ],
+    "lead": [
+      "anvilcraft:lead_ingot",
+      "anvilcraft:raw_lead"
+    ],
+    "titanium": [
+      "anvilcraft:raw_titanium",
+      "anvilcraft:titanium_ingot"
+    ],
+    "smoke": [
+      "minecraft:coal"
+    ],
+    "redstone": [
+      "minecraft:redstone"
+    ],
+    "lapis": [
+      "minecraft:lapis_lazuli"
+    ],
+    "diamond": [
+      "minecraft:diamond"
+    ],
+    "emerald": [
+      "minecraft:emerald"
+    ],
+    "quartz": [
+      "malum:blazing_quartz",
+      "minecraft:quartz"
+    ],
+    "amethyst": [
+      "minecraft:amethyst_shard"
+    ],
+    "bismuth": [
+      "pastel:bismuth_flake"
+    ]
+  },
+  "ores": {
+    "deeperdarker:gloomslate_iron_ore": "iron",
+    "deeperdarker:sculk_stone_iron_ore": "iron",
+    "minecraft:deepslate_iron_ore": "iron",
+    "minecraft:iron_ore": "iron",
+    "pastel:blackslag_iron_ore": "iron",
+    "deeperdarker:gloomslate_copper_ore": "copper",
+    "deeperdarker:sculk_stone_copper_ore": "copper",
+    "minecraft:copper_ore": "copper",
+    "minecraft:deepslate_copper_ore": "copper",
+    "pastel:blackslag_copper_ore": "copper",
+    "unbound:seafloor_sulfide_ore": "copper",
+    "deeperdarker:gloomslate_gold_ore": "gold",
+    "deeperdarker:sculk_stone_gold_ore": "gold",
+    "minecraft:deepslate_gold_ore": "gold",
+    "minecraft:gold_ore": "gold",
+    "minecraft:nether_gold_ore": "gold",
+    "pastel:blackslag_gold_ore": "gold",
+    "unbound:r_gold_ore": "gold",
+    "antarchy:broodstone_uranium_ore": "bertie_uranium",
+    "mekanism:uranium_ore": "bertie_uranium",
+    "oritech:deepslate_uranium_ore": "bertie_uranium",
+    "unbound:r_uranium_ore": "bertie_uranium",
+    "mekanism:deepslate_osmium_ore": "bertie_osmium",
+    "mekanism:osmium_ore": "bertie_osmium",
+    "mekanism:deepslate_tin_ore": "bertie_tin",
+    "mekanism:tin_ore": "bertie_tin",
+    "mekanism:deepslate_lead_ore": "lead",
+    "mekanism:lead_ore": "lead",
+    "unbound:galena_ore": "lead",
+    "mekanism_extras:end_naquadah_ore": "bertie_naquadah",
+    "mekanism_extras:naquadah_ore": "bertie_naquadah",
+    "oritech:deepslate_nickel_ore": "bertie_nickel",
+    "oritech:nickel_ore": "bertie_nickel",
+    "oritech:deepslate_platinum_ore": "bertie_platinum",
+    "oritech:endstone_platinum_ore": "bertie_platinum",
+    "anvilcraft:deepslate_zinc_ore": "bertie_zinc",
+    "create:zinc_ore": "bertie_zinc",
+    "anvilcraft:deepslate_silver_ore": "bertie_silver",
+    "iceandfire:silver_ore": "bertie_silver",
+    "antarchy:broodstone_titanium_ore": "titanium",
+    "antarchy:titanium_ore": "titanium",
+    "anvilcraft:deepslate_titanium_ore": "titanium",
+    "unbound:ilmenite_ore": "titanium",
+    "anvilcraft:deepslate_tungsten_ore": "bertie_tungsten",
+    "armageddon_mod:voiderite_ore": "bertie_voiderite",
+    "bertieprogression:eezo_ore": "bertie_eezo",
+    "armageddon_mod:bloody_ore": "bertie_bloody",
+    "armageddon_mod:elvenite_ore": "bertie_elvenite",
+    "antarchy:myrmite_coal_ore": "smoke",
+    "deeperdarker:gloomslate_coal_ore": "smoke",
+    "deeperdarker:sculk_stone_coal_ore": "smoke",
+    "minecraft:coal_ore": "smoke",
+    "minecraft:deepslate_coal_ore": "smoke",
+    "pastel:blackslag_coal_ore": "smoke",
+    "deeperdarker:gloomslate_redstone_ore": "redstone",
+    "deeperdarker:sculk_stone_redstone_ore": "redstone",
+    "minecraft:deepslate_redstone_ore": "redstone",
+    "minecraft:redstone_ore": "redstone",
+    "pastel:blackslag_redstone_ore": "redstone",
+    "deeperdarker:gloomslate_lapis_ore": "lapis",
+    "deeperdarker:sculk_stone_lapis_ore": "lapis",
+    "minecraft:deepslate_lapis_ore": "lapis",
+    "minecraft:lapis_ore": "lapis",
+    "pastel:blackslag_lapis_ore": "lapis",
+    "born_in_chaos_v1:infected_deepslate_diamond_ore": "diamond",
+    "born_in_chaos_v1:infected_diamond_ore": "diamond",
+    "deeperdarker:gloomslate_diamond_ore": "diamond",
+    "deeperdarker:sculk_stone_diamond_ore": "diamond",
+    "ditr:obsidian_diamond_ore": "diamond",
+    "explodetomine:cracked_deepslate_diamond_ore": "diamond",
+    "explodetomine:cracked_diamond_ore": "diamond",
+    "minecraft:deepslate_diamond_ore": "diamond",
+    "minecraft:diamond_ore": "diamond",
+    "pastel:blackslag_diamond_ore": "diamond",
+    "unbound:diamond_hail_ore": "diamond",
+    "deeperdarker:gloomslate_emerald_ore": "emerald",
+    "deeperdarker:sculk_stone_emerald_ore": "emerald",
+    "minecraft:deepslate_emerald_ore": "emerald",
+    "minecraft:emerald_ore": "emerald",
+    "pastel:blackslag_emerald_ore": "emerald",
+    "malum:blazing_quartz_ore": "quartz",
+    "malum:deepslate_quartz_ore": "quartz",
+    "malum:natural_quartz_cluster": "quartz",
+    "malum:natural_quartz_ore": "quartz",
+    "minecraft:nether_quartz_ore": "quartz",
+    "minecraft:ancient_debris": "bertie_netherite_ore",
+    "minecraft:budding_amethyst": "amethyst",
+    "pastel:amethyst_ore": "amethyst",
+    "pastel:blackslag_amethyst_ore": "amethyst",
+    "pastel:deepslate_amethyst_ore": "amethyst",
+    "antarchy:bluestone_ore": "bertie_bluestone",
+    "enigmaticlegacyplus:etherium_ore": "bertie_etherium",
+    "forbidden_arcanus:arcane_crystal_ore": "bertie_arcane_crystal",
+    "forbidden_arcanus:deepslate_arcane_crystal_ore": "bertie_arcane_crystal",
+    "forbidden_arcanus:runic_darkstone": "bertie_runic",
+    "forbidden_arcanus:runic_deepslate": "bertie_runic",
+    "forbidden_arcanus:runic_stone": "bertie_runic",
+    "forbidden_arcanus:stella_arcanum": "bertie_stellarite",
+    "irons_spellbooks:deepslate_mithril_ore": "bertie_mithril_ore",
+    "irons_spellbooks:mithril_ore": "bertie_mithril_ore",
+    "magitech:deepslate_tourmaline_ore": "bertie_tourmaline",
+    "magitech:tourmaline_ore": "bertie_tourmaline",
+    "malum:cthonic_gold_ore": "bertie_cthonic_gold",
+    "malum:deepslate_soulstone_ore": "bertie_soulstone_ore",
+    "malum:soulstone_ore": "bertie_soulstone_ore",
+    "malum:brilliant_deepslate": "bertie_brilliance",
+    "malum:brilliant_stone": "bertie_brilliance",
+    "mekanism:deepslate_fluorite_ore": "bertie_fluorite",
+    "mekanism:fluorite_ore": "bertie_fluorite",
+    "powah:deepslate_uraninite_ore": "bertie_uraninite",
+    "powah:deepslate_uraninite_ore_dense": "bertie_uraninite",
+    "powah:deepslate_uraninite_ore_poor": "bertie_uraninite",
+    "powah:uraninite_ore": "bertie_uraninite",
+    "powah:uraninite_ore_dense": "bertie_uraninite",
+    "powah:uraninite_ore_poor": "bertie_uraninite",
+    "pastel:blackslag_malachite_ore": "bertie_malachite",
+    "pastel:deepslate_malachite_ore": "bertie_malachite",
+    "pastel:malachite_ore": "bertie_malachite",
+    "pastel:blackslag_moonstone_ore": "bertie_moonstone",
+    "pastel:budding_moonstone": "bertie_moonstone",
+    "pastel:deepslate_moonstone_ore": "bertie_moonstone",
+    "pastel:moonstone_block": "bertie_moonstone",
+    "pastel:moonstone_cluster": "bertie_moonstone",
+    "pastel:moonstone_ore": "bertie_moonstone",
+    "hazennstuff:solar_core_blackstone_ore": "bertie_solar_core",
+    "pastel:large_bismuth_bud": "bismuth",
+    "pastel:small_bismuth_bud": "bismuth",
+    "unbound:bismuth_ore": "bismuth"
+  }
+}

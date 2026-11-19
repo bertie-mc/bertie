@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "M": {
+      "item": "unbound:moonstone"
+    },
+    "F": {
+      "item": "unbound:air_filter"
+    },
+    "K": {
+      "item": "unbound:compressor"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    "GMG",
+    "FKF",
+    "PCP"
+  ],
+  "result": {
+    "id": "unbound:oxygen_dome_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

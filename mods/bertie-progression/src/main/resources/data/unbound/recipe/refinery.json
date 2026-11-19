@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "V": {
+      "item": "unbound:valve"
+    },
+    "F": {
+      "item": "minecraft:blast_furnace"
+    },
+    "C": {
+      "item": "unbound:combustion_chamber"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "VFV",
+    "PCP"
+  ],
+  "result": {
+    "id": "unbound:refinery"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

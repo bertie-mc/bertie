@@ -6,6 +6,7 @@ plugins {
 }
 
 dependencies {
+    compileOnly(libs.ponder) { isTransitive = false }
     compileOnly(deps.emi)
     compileOnly(deps.slagNEmbers)
     compileOnly(variantOf(deps.create) { classifier("slim") }) {

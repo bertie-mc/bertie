@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "unbound:ship_frame"
+    },
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "C": {
+      "item": "unbound:helium_canister"
+    }
+  },
+  "pattern": [
+    "FHF",
+    "WCW",
+    "FHF"
+  ],
+  "result": {
+    "id": "unbound:station_kit_dock"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

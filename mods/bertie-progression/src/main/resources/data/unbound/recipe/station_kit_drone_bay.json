@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "unbound:ship_frame"
+    },
+    "D": {
+      "item": "unbound:cargo_drone"
+    },
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "FDF",
+    "HCH",
+    "FWF"
+  ],
+  "result": {
+    "id": "unbound:station_kit_drone_bay"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "LLL",
+    "WSW"
+  ],
+  "result": {
+    "id": "unbound:solar_cell",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

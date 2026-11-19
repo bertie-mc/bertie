@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "unbound:navigation_crystal"
+    },
+    "M": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "S": {
+      "item": "unbound:stardust"
+    }
+  },
+  "pattern": [
+    "MSM",
+    "SXS",
+    "MSM"
+  ],
+  "result": {
+    "id": "unbound:ship_module_jump_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

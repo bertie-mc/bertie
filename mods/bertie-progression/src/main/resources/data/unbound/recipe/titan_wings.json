@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "P": {
+      "item": "unbound:polymer_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "TWT",
+    "PTP",
+    "P P"
+  ],
+  "result": {
+    "id": "unbound:titan_wings"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

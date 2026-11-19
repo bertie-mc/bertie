@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "unbound:prism_glass"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "V": {
+      "item": "unbound:void_shard"
+    },
+    "E": {
+      "item": "unbound:archon_prism"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "PEP",
+    "VWV"
+  ],
+  "result": {
+    "id": "unbound:module_glass_armour"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

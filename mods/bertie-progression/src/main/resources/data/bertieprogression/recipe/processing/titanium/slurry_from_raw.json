@@ -7,7 +7,7 @@
   "per_tick_usage": true,
   "item_input": {
     "count": 3,
-    "item": "anvilcraft:raw_titanium"
+    "tag": "bertieprogression:raw_titanium_processing"
   },
   "output": {
     "amount": 2000,

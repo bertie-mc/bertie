@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "F": {
+      "item": "unbound:air_filter"
+    },
+    "G": {
+      "item": "unbound:copper_gear"
+    },
+    "K": {
+      "item": "unbound:compressor"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "PFP",
+    "GKG",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:oxygen_vent_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

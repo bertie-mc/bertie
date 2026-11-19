@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "unbound:polished_lens"
+    },
+    "M": {
+      "item": "unbound:moonstone_lens"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "R": {
+      "item": "unbound:resonator"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    "LML",
+    "ERE",
+    "PCP"
+  ],
+  "result": {
+    "id": "unbound:jump_pad_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

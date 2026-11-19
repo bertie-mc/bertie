@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "S": {
+      "item": "unbound:stardust"
+    }
+  },
+  "pattern": [
+    "OPO",
+    "PSP",
+    "OPO"
+  ],
+  "result": {
+    "id": "unbound:gate_frame",
+    "count": 4
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

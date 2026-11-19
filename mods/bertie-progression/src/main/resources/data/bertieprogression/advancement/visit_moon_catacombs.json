@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "visit": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "structures": "unbound:moon_deeps"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "visit"
+    ]
+  ]
+}

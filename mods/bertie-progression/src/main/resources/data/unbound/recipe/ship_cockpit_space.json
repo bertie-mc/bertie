@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "unbound:impact_glass"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "N": {
+      "item": "unbound:navigation_crystal"
+    },
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "ANA",
+    "TWT"
+  ],
+  "result": {
+    "id": "unbound:ship_cockpit"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

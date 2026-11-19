@@ -1,0 +1,92 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "transitional_item": {
+    "id": "bertieprogression:incomplete_copper_gear"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_gear"
+        },
+        {
+          "item": "bertieprogression:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_gear"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_gear"
+        },
+        {
+          "item": "bertieprogression:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_gear"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_gear"
+        },
+        {
+          "item": "bertieprogression:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_gear"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bertieprogression:incomplete_copper_gear"
+        },
+        {
+          "item": "bertieprogression:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "bertieprogression:incomplete_copper_gear"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "unbound:copper_gear",
+      "count": 1
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

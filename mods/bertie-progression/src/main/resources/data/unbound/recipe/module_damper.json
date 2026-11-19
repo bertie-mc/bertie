@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "unbound:mycel_felt"
+    },
+    "C": {
+      "item": "unbound:soul_cinder"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "E": {
+      "item": "unbound:deep_ember"
+    },
+    "B": {
+      "item": "unbound:giant_marrow"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "CBC",
+    "EPE"
+  ],
+  "result": {
+    "id": "unbound:module_damper"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

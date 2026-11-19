@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "unbound:nozzle"
+    },
+    "V": {
+      "item": "unbound:valve"
+    },
+    "M": {
+      "item": "anvilcraft:titanium_ingot"
+    }
+  },
+  "pattern": [
+    "M M",
+    "NVN",
+    "M M"
+  ],
+  "result": {
+    "id": "unbound:ship_module_thrusters_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

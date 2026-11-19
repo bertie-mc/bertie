@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "unbound:shulker_chitin"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "R": {
+      "item": "unbound:resonant_shard"
+    }
+  },
+  "pattern": [
+    "CPC",
+    "R R",
+    "CPC"
+  ],
+  "result": {
+    "id": "unbound:ship_frame",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

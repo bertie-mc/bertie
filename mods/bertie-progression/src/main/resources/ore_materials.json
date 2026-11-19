@@ -270,7 +270,7 @@
         "clean": "bertieprogression:clean_titanium"
       },
       "ingot": "anvilcraft:titanium_ingot",
-      "byproduct": "tungsten",
+      "byproduct": "iron",
       "placeholder": false
     },
     {

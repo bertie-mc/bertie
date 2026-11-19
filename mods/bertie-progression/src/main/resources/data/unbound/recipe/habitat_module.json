@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "S": {
+      "item": "unbound:reactor_shielding"
+    },
+    "B": {
+      "tag": "minecraft:beds"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "SBS",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:habitat_module"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

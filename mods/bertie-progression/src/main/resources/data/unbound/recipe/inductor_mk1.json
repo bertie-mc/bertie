@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "K": {
+      "item": "unbound:wire_coil"
+    },
+    "B": {
+      "item": "unbound:battery"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    " S ",
+    "KBK",
+    "PCP"
+  ],
+  "result": {
+    "id": "unbound:inductor_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

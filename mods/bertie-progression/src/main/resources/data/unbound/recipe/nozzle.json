@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "unbound:heat_tile"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    " T ",
+    "P P",
+    "P P"
+  ],
+  "result": {
+    "id": "unbound:nozzle"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

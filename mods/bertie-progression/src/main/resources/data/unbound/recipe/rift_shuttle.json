@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "L": {
+      "item": "unbound:void_lens"
+    },
+    "V": {
+      "item": "unbound:void_plating"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "ALA",
+    "PVP"
+  ],
+  "result": {
+    "id": "unbound:rift_shuttle"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

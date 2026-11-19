@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "unbound:serpent_fang"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "PPP"
+  ],
+  "result": {
+    "id": "unbound:cryo_lining",
+    "count": 9
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

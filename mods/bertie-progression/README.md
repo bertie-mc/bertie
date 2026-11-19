@@ -24,7 +24,6 @@ pressurized zones and sealed cabins. Its exterior particles drift toward the cap
 | `descent_anchor` | descent gating |
 | `weeping_eye` | locator for the weeping structures |
 | `finder` / `locator` | structure-finding items |
-| `pocket_watch` | consume once to permanently unlock Pocket Dimension's Open Portal key |
 | `green_plushie_token` / `yellow_plushie_token` / `purple_plushie_token` | Doll Machine tokens for the green, yellow and purple gift boxes; four of one colour craft one of the next |
 
 Plus the current material chain â€” dragonbone frames and braces, ignitium struts and lattices,
@@ -85,25 +84,9 @@ Crystal Block at its center, the existing Magitech Block of Mana Charged Fluorit
 elsewhere. Cover it with nine Crafting Tables. The
 result drops as an item without a Space Overcompressor; particle collision remains.
 
-`pocket_dimension` uses Pocket Dimension's animated Pocket Block texture. It has beacon
-mining properties and drops itself even when mined by hand. Stand on it and crouch to
-enter the existing pocket dimension without consuming a watch. The original return
-portal, cooldown and shared/separate plot configuration remain in use. Neither the block nor
-the Open Portal key lets a player in for ten seconds after they take a hit; a refused attempt
-shows "Combat Cooldown: X sec" in the middle of the screen.
-
-Pocket Watch takes 1.6 seconds to consume, works at full hunger, and unlocks the original
-Open Portal key for that player permanently, including after death and reconnecting.
-Locked key presses do nothing silently. An already unlocked player cannot waste another
-watch. The block and watch are in the Bertie Progression creative tab; recipes and
-loot sources are not assigned yet.
-
-The watch has a fixed clock hand over a clockwise purple swirl. Its animation uses
-sixteen 16Ã—16 frames, advancing every two ticks (a 1.6-second loop). The case and
-hand share the same pixel grid, with nine flat colors and fully opaque or transparent pixels.
-
-The Pocket Dimension integration targets version 2.9 and loads only when that mod is
-present. Its block model is referenced at runtime; no third-party texture is bundled.
+Pocket Dimension and the custom Pocket Watch travel route are retired. C3's
+space branch starts with the Refractor Telescope and Coal Generator and leads
+through lunar exploration to an orbital emitter. Native station mechanics remain.
 
 `eezo_ore` supplies the pack's Eezo material chain.
 
@@ -439,10 +422,11 @@ Run these from the monorepo root inside `nix develop`. The JAR lands in
 `gradle :mods:bertie-progression:test` validates every JSON resource and local model texture reference, the current Brick
 Forge bed table, and catalyst recipe remainder behavior.
 
-GameTests exercise Pocket Dimension 2.9 with the new block, locked and unlocked key
-travel, return travel, hand mining, watch consumption and unlock persistence. Their
-flat-world preset explicitly includes a void pocket dimension because Minecraft's
-GameTest server otherwise omits dimensions supplied outside the preset.
+Unbound integration tests cover recipe loading, canonical material replacements,
+Spectral Lab samples, scanner bindings and native journal dependencies. Client tests
+exercise the placed Mechanical Adapter, repair aliases and assembly Ponder controls.
+Two inert legacy biome/type definitions preserve existing save references after
+Pocket Dimension is removed; no new dimension or travel route is registered.
 
 Toolchain is the shared Bertie harness: NeoForge `21.1.235`, ModDevGradle `2.0.134`,
 Gradle `8.14.4` from Nixpkgs.

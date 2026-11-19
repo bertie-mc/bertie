@@ -1,0 +1,17 @@
+{
+  "type": "unbound:crushing",
+  "ingredient": {
+    "item": "bertieprogression:copper_rod"
+  },
+  "result": {
+    "id": "unbound:copper_dust",
+    "count": 2
+  },
+  "time": 480,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

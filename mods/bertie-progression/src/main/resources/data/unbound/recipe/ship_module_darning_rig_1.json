@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "unbound:scar_thread"
+    },
+    "Y": {
+      "item": "unbound:sargasso_yarn"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    },
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    "TYT",
+    "WCW",
+    "THT"
+  ],
+  "result": {
+    "id": "unbound:ship_module_darning_rig_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

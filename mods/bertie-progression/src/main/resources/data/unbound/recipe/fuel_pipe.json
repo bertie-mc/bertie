@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "unbound:heat_tile"
+    },
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "TTT",
+    "HHH"
+  ],
+  "result": {
+    "id": "unbound:fuel_pipe",
+    "count": 6
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

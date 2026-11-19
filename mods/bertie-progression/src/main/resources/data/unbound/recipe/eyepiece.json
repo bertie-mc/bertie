@@ -1,0 +1,40 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EDE"
+  ],
+  "key": {
+    "A": {
+      "item": "create:brass_ingot"
+    },
+    "B": {
+      "item": "unbound:polished_lens"
+    },
+    "C": {
+      "item": "twilightforest:tanned_leather"
+    },
+    "D": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "E": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "result": {
+    "id": "unbound:eyepiece",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

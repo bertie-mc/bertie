@@ -27,7 +27,6 @@
     "ForgeBEMixin",
     "HeadTrinketSlotMixin",
     "LightningMagnetInputMixin",
-    "PocketOpenKeyMixin",
     "PotionBrewingBuilderMixin",
     "ProcessingRecipeWireOutputMixin",
     "RemovedEffectsMixin",
@@ -64,7 +63,11 @@
     "MineralFountainMixin",
     "CompactMachineRecipeMixin",
     "MiniSuperconductorComponentMixin",
-    "MiniRecipeScanPositionsMixin"
+    "MiniRecipeScanPositionsMixin",
+    "UnboundResourceMixin",
+    "UnboundJournalMixin",
+    "UnboundRepairMixin",
+    "UnboundMixingCapacityMixin"
   ],
   "injectors": {
     "defaultRequire": 0

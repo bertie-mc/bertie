@@ -1592,22 +1592,16 @@
 		}
 		{
 			dependencies: ["3B0000000000002A"]
-			icon: {
-				id: "bertieprogression:pocket_dimension"
-			}
+			icon: {"id": "unbound:refractor_telescope"}
 			id: "3B0000000000006E"
 			rewards: [{
 				id: "3B0000000200006E"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "3B0000000100006E"
-				item: { count: 1, id: "bertieprogression:pocket_dimension" }
-				type: "item"
-			}]
+			tasks: [{"id": "3B0000000100006E", "type": "item", "item": {"id": "unbound:refractor_telescope", "count": 1}, "count": 1, "consume_items": false}]
 			x: 0.0d
-			y: -1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3B0000000000005C"]
@@ -1693,22 +1687,16 @@
 		}
 		{
 			dependencies: ["3B0000000000006E"]
-			icon: {
-				id: "bertieprogression:pocket_watch"
-			}
+			icon: {"id": "unbound:coal_generator_mk1"}
 			id: "3B00000000000073"
 			rewards: [{
 				id: "3B00000002000073"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "3B00000001000073"
-				item: { count: 1, id: "bertieprogression:pocket_watch" }
-				type: "item"
-			}]
+			tasks: [{"id": "3B00000001000073", "type": "item", "item": {"id": "unbound:coal_generator_mk1", "count": 1}, "count": 1, "consume_items": false}]
 			x: 1.5d
-			y: -1.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["3B0000000000002A"]
@@ -1881,12 +1869,188 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["3B00000000000073"]
-			y: -1.5d
-			x: 3.0d
+			dependencies: ["3B00000000005515"]
+			icon: {"id": "unbound:station_seed"}
 			id: "3B00000000000400"
-			icon: { id: "unbound:station_seed" }
-			tasks: [{"id": "3B00000001000400", "type": "item", "count": 1, "consume_items": false, "item": {"id": "unbound:station_seed", "count": 1}}, {"id": "3B00000002000400", "type": "item", "count": 1, "consume_items": false, "item": {"id": "unbound:orbital_pylon", "count": 1}}, {"id": "3B00000003000400", "type": "item", "count": 1, "consume_items": false, "item": {"id": "unbound:orbital_heart", "count": 1}}, {"id": "3B00000004000400", "type": "item", "count": 1, "consume_items": false, "item": {"id": "unbound:orbital_plate", "count": 1}}]
+			tasks: [{"id": "3B00000001000400", "type": "item", "item": {"id": "unbound:station_seed", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000002000400", "type": "item", "item": {"id": "unbound:orbital_heart", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000003000400", "type": "item", "item": {"id": "unbound:orbital_plate", "count": 1}, "count": 48, "consume_items": false}, {"id": "3B00000004000400", "type": "item", "item": {"id": "unbound:orbital_pylon", "count": 1}, "count": 12, "consume_items": false}]
+			x: -15.0d
+			y: -10.5d
 		}
-	]
+			{
+			dependencies: ["3B00000000000073"]
+			y: -10.5d
+			x: 3.0d
+			id: "3B00000000005500"
+			icon: {"id": "unbound:tuner"}
+			tasks: [{"id": "3B00000001005500", "type": "item", "item": {"id": "unbound:tuner", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005500"]
+			y: -10.5d
+			x: 4.5d
+			id: "3B00000000005501"
+			icon: {"id": "unbound:spectral_lab_mk1"}
+			tasks: [{"id": "3B00000001005501", "type": "item", "item": {"id": "unbound:spectral_lab_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005501"]
+			y: -10.5d
+			x: 6.0d
+			id: "3B00000000005502"
+			icon: {"id": "unbound:ore_scanner"}
+			tasks: [{"id": "3B00000001005502", "type": "item", "item": {"id": "unbound:ore_scanner", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000000073"]
+			y: -9.0d
+			x: 1.5d
+			id: "3B00000000005503"
+			icon: {"id": "unbound:battery_mk1"}
+			tasks: [{"id": "3B00000001005503", "type": "item", "item": {"id": "unbound:battery_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005503"]
+			y: -9.0d
+			x: 3.0d
+			id: "3B00000000005504"
+			icon: {"id": "unbound:drone_nest_mk1"}
+			tasks: [{"id": "3B00000001005504", "type": "item", "item": {"id": "unbound:drone_nest_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005503"]
+			y: -7.5d
+			x: 1.5d
+			id: "3B00000000005505"
+			icon: {"id": "unbound:bioreactor_mk1"}
+			tasks: [{"id": "3B00000001005505", "type": "item", "item": {"id": "unbound:bioreactor_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005505"]
+			y: -7.5d
+			x: 3.0d
+			id: "3B00000000005506"
+			icon: {"id": "unbound:oxygen_tank_mk1"}
+			tasks: [{"id": "3B00000001005506", "type": "item", "item": {"id": "unbound:oxygen_tank_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005506"]
+			y: -7.5d
+			x: 4.5d
+			id: "3B00000000005507"
+			icon: {"id": "unbound:spacesuit_helmet"}
+			tasks: [{"id": "3B00000001005507", "type": "item", "item": {"id": "unbound:spacesuit_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000002005507", "type": "item", "item": {"id": "unbound:spacesuit_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000003005507", "type": "item", "item": {"id": "unbound:spacesuit_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000004005507", "type": "item", "item": {"id": "unbound:spacesuit_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000000073"]
+			y: -12.0d
+			x: 1.5d
+			id: "3B00000000005508"
+			icon: {"id": "unbound:charging_station"}
+			tasks: [{"id": "3B00000001005508", "type": "item", "item": {"id": "unbound:charging_station", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005508"]
+			y: -12.0d
+			x: 0.0d
+			id: "3B00000000005509"
+			icon: {"id": "unbound:battery"}
+			tasks: [{"id": "3B00000001005509", "type": "item", "item": {"id": "unbound:battery", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005509"]
+			y: -12.0d
+			x: -1.5d
+			id: "3B0000000000550A"
+			icon: {"id": "unbound:charged_battery"}
+			tasks: [{"id": "3B0000000100550A", "type": "item", "item": {"id": "unbound:charged_battery", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B0000000000550A"]
+			y: -12.0d
+			x: -3.0d
+			id: "3B0000000000550B"
+			icon: {"id": "unbound:charging_gantry_mk1"}
+			tasks: [{"id": "3B0000000100550B", "type": "item", "item": {"id": "unbound:charging_gantry_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000000073"]
+			y: -10.5d
+			x: 0.0d
+			id: "3B0000000000550C"
+			icon: {"id": "unbound:fuel_depot_mk1"}
+			tasks: [{"id": "3B0000000100550C", "type": "item", "item": {"id": "unbound:fuel_depot_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B0000000000550C"]
+			y: -10.5d
+			x: -1.5d
+			id: "3B0000000000550D"
+			icon: {"id": "anvilcraft:uranium_ingot"}
+			tasks: [{"id": "3B0000000100550D", "type": "item", "item": {"id": "anvilcraft:uranium_ingot", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B0000000000550D"]
+			y: -10.5d
+			x: -3.0d
+			id: "3B0000000000550E"
+			icon: {"id": "unbound:fuel_canister"}
+			tasks: [{"id": "3B0000000100550E", "type": "item", "item": {"id": "unbound:fuel_canister", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B0000000000550E"]
+			y: -10.5d
+			x: -4.5d
+			id: "3B0000000000550F"
+			icon: {"id": "unbound:launch_gantry_mk1"}
+			tasks: [{"id": "3B0000000100550F", "type": "item", "item": {"id": "unbound:launch_gantry_mk1", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B0000000000550F", "3B0000000000550B"]
+			y: -10.5d
+			x: -6.0d
+			id: "3B00000000005510"
+			icon: {"id": "unbound:launch_pad"}
+			tasks: [{"id": "3B00000001005510", "type": "item", "item": {"id": "unbound:launch_pad", "count": 1}, "count": 9, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005510"]
+			y: -10.5d
+			x: -7.5d
+			id: "3B00000000005511"
+			icon: {"id": "unbound:lunar_rocket"}
+			tasks: [{"id": "3B00000001005511", "type": "item", "item": {"id": "unbound:lunar_rocket", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005511"]
+			y: -10.5d
+			x: -9.0d
+			id: "3B00000000005512"
+			icon: {"id": "unbound:rocket_engine"}
+			tasks: [{"id": "3B00000001005512", "type": "item", "item": {"id": "unbound:rocket_engine", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000002005512", "type": "item", "item": {"id": "unbound:fuel_tank", "count": 1}, "count": 2, "consume_items": false}, {"id": "3B00000003005512", "type": "item", "item": {"id": "unbound:rocket_hull", "count": 1}, "count": 1, "consume_items": false}, {"id": "3B00000004005512", "type": "item", "item": {"id": "unbound:rocket_fin", "count": 1}, "count": 4, "consume_items": false}, {"id": "3B00000005005512", "type": "item", "item": {"id": "unbound:nose_cone", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: ["3B00000000005512"]
+			y: -10.5d
+			x: -10.5d
+			id: "3B00000000005513"
+			icon: {"id": "unbound:lunar_rocket"}
+			tasks: [{"id": "3B00000001005513", "type": "dimension", "dimension": "unbound:moon"}]
+		}
+		{
+			dependencies: ["3B00000000005513"]
+			y: -10.5d
+			x: -12.0d
+			id: "3B00000000005514"
+			icon: {"id": "unbound:moon_rock_bricks"}
+			tasks: [{"id": "3B00000001005514", "type": "advancement", "advancement": "bertieprogression:visit_moon_catacombs"}]
+		}
+		{
+			dependencies: ["3B00000000005514"]
+			y: -10.5d
+			x: -13.5d
+			id: "3B00000000005515"
+			icon: {"id": "unbound:selenite_heart"}
+			tasks: [{"id": "3B00000001005515", "type": "kill", "entity": "unbound:selenite_colossus", "value": 1}]
+		}
+]
 }

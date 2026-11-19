@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "F": {
+      "item": "minecraft:flint_and_steel"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "PFP",
+    "PTP"
+  ],
+  "result": {
+    "id": "unbound:combustion_chamber"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

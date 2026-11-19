@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "unbound:charging_gantry_mk2"
+    },
+    {
+      "item": "unbound:machine_core_mk3"
+    },
+    {
+      "item": "bertieprogression:iron_sheet"
+    },
+    {
+      "item": "bertieprogression:iron_sheet"
+    }
+  ],
+  "result": {
+    "id": "unbound:charging_gantry_mk3"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

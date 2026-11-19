@@ -18,14 +18,6 @@ public final class ModAttachments {
                     .copyOnDeath()
                     .build());
 
-    /** Pocket Watch unlocks the travel key permanently, including after death. */
-    public static final Supplier<AttachmentType<Boolean>> POCKET_UNLOCKED = ATTACHMENTS.register(
-            "pocket_unlocked",
-            () -> AttachmentType.builder(() -> Boolean.FALSE)
-                    .serialize(Codec.BOOL)
-                    .copyOnDeath()
-                    .build());
-
     /**
      * Set once the player consumes a Crafting License. Persists through death and dimension change,
      * so the 3x3 grid is a permanent, earned milestone rather than a place you must return to
@@ -62,18 +54,6 @@ public final class ModAttachments {
                     .serialize(Codec.BOOL)
                     .copyOnDeath()
                     .build());
-
-    /**
-     * Game time of the last hit a player took. Not serialized: the Pocket Dimension combat cooldown
-     * lasts ten seconds, so a relog clearing it costs nothing.
-     */
-    public static final Supplier<AttachmentType<Long>> LAST_HURT_TIME = ATTACHMENTS.register(
-            "last_hurt_time", () -> AttachmentType.builder(() -> Long.MIN_VALUE).build());
-
-    /** Game time the combat-cooldown notice was last sent, so holding crouch does not flood titles. */
-    public static final Supplier<AttachmentType<Long>> COOLDOWN_NOTICE_TIME = ATTACHMENTS.register(
-            "cooldown_notice_time",
-            () -> AttachmentType.builder(() -> Long.MIN_VALUE).build());
 
     private ModAttachments() {}
 }

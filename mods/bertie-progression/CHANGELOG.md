@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.55.0
+
+- Replace Pocket Dimension and Pocket Watch travel with C3's Unbound lunar/station
+  quest tree; add Unbound armor sets beside the existing God of War armor group.
+- Apply selected Unbound optical-component, mechanical-wall and processing recipes.
+  Raw Ilmenite smelts to Iron and uses Titanium's higher-processing chain, whose
+  Centrifuge byproduct becomes Iron Specs. Retire the selected redundant machines.
+- Extend Spectral Lab recognition and Ore Scanner bindings for the 42 selected
+  ore families, with real-element references plus Ac and distinct ore/sample phases.
+- Remove retired machine entries from the native Star Journal and reconnect it.
+- Correct the Mechanical Adapter's placed-model property to `machine_assembled`.
+
 ## 0.54.0
 
 - Add Bottle of Nothing, collected with a Glass Bottle in exposed Unbound vacuum,

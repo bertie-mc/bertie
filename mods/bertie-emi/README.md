@@ -54,3 +54,8 @@ Arcanus and joins a world, failing unless the production plugin completes integr
 ## License
 
 Released into the public domain under **The Unlicense** — see [UNLICENSE](UNLICENSE). Third-party assets and dependencies are carved out in [NOTICE](NOTICE).
+
+Unbound integration includes ore drops/distribution, mob loot, Fuel Plant ratios,
+battery charging, accepted spectral specimens and Zero-G Forge recipes. Assembly
+Ponders read the six rocket patterns and orbital emitter directly from Unbound's
+validators; material buttons seek through the guide. Unknown spectra stay hidden.

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "H": {
+      "item": "minecraft:leather"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "AHA",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:lunar_rocket"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

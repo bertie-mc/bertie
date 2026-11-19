@@ -14326,5 +14326,165 @@
 			x: 36.0d
 			y: -3.0d
 		}
-	]
+			{
+			dependencies: []
+			y: -4.0d
+			x: -44.0d
+			id: "7B00000000005500"
+			icon: {"id": "unbound:abyssal_armor_helmet"}
+			tasks: [{"id": "7B00000001005500", "type": "item", "item": {"id": "unbound:abyssal_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005500", "type": "item", "item": {"id": "unbound:abyssal_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005500", "type": "item", "item": {"id": "unbound:abyssal_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005500", "type": "item", "item": {"id": "unbound:abyssal_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -4.0d
+			x: -45.5d
+			id: "7B00000000005501"
+			icon: {"id": "unbound:chitin_mail_helmet"}
+			tasks: [{"id": "7B00000001005501", "type": "item", "item": {"id": "unbound:chitin_mail_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005501", "type": "item", "item": {"id": "unbound:chitin_mail_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005501", "type": "item", "item": {"id": "unbound:chitin_mail_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005501", "type": "item", "item": {"id": "unbound:chitin_mail_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -4.0d
+			x: -47.0d
+			id: "7B00000000005502"
+			icon: {"id": "unbound:cloud_fleece_helmet"}
+			tasks: [{"id": "7B00000001005502", "type": "item", "item": {"id": "unbound:cloud_fleece_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005502", "type": "item", "item": {"id": "unbound:cloud_fleece_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005502", "type": "item", "item": {"id": "unbound:cloud_fleece_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005502", "type": "item", "item": {"id": "unbound:cloud_fleece_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -2.5d
+			x: -44.0d
+			id: "7B00000000005503"
+			icon: {"id": "unbound:crater_carapace_helmet"}
+			tasks: [{"id": "7B00000001005503", "type": "item", "item": {"id": "unbound:crater_carapace_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005503", "type": "item", "item": {"id": "unbound:crater_carapace_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005503", "type": "item", "item": {"id": "unbound:crater_carapace_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005503", "type": "item", "item": {"id": "unbound:crater_carapace_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -2.5d
+			x: -45.5d
+			id: "7B00000000005504"
+			icon: {"id": "unbound:crucible_plate_helmet"}
+			tasks: [{"id": "7B00000001005504", "type": "item", "item": {"id": "unbound:crucible_plate_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005504", "type": "item", "item": {"id": "unbound:crucible_plate_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005504", "type": "item", "item": {"id": "unbound:crucible_plate_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005504", "type": "item", "item": {"id": "unbound:crucible_plate_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -2.5d
+			x: -47.0d
+			id: "7B00000000005505"
+			icon: {"id": "unbound:cyan_down_helmet"}
+			tasks: [{"id": "7B00000001005505", "type": "item", "item": {"id": "unbound:cyan_down_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005505", "type": "item", "item": {"id": "unbound:cyan_down_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005505", "type": "item", "item": {"id": "unbound:cyan_down_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005505", "type": "item", "item": {"id": "unbound:cyan_down_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -1.0d
+			x: -44.0d
+			id: "7B00000000005506"
+			icon: {"id": "unbound:dense_armor_helmet"}
+			tasks: [{"id": "7B00000001005506", "type": "item", "item": {"id": "unbound:dense_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005506", "type": "item", "item": {"id": "unbound:dense_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005506", "type": "item", "item": {"id": "unbound:dense_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005506", "type": "item", "item": {"id": "unbound:dense_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -1.0d
+			x: -45.5d
+			id: "7B00000000005507"
+			icon: {"id": "unbound:faceted_lats_helmet"}
+			tasks: [{"id": "7B00000001005507", "type": "item", "item": {"id": "unbound:faceted_lats_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005507", "type": "item", "item": {"id": "unbound:faceted_lats_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005507", "type": "item", "item": {"id": "unbound:faceted_lats_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005507", "type": "item", "item": {"id": "unbound:faceted_lats_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: -1.0d
+			x: -47.0d
+			id: "7B00000000005508"
+			icon: {"id": "unbound:glider_pelt_helmet"}
+			tasks: [{"id": "7B00000001005508", "type": "item", "item": {"id": "unbound:glider_pelt_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005508", "type": "item", "item": {"id": "unbound:glider_pelt_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005508", "type": "item", "item": {"id": "unbound:glider_pelt_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005508", "type": "item", "item": {"id": "unbound:glider_pelt_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 0.5d
+			x: -44.0d
+			id: "7B00000000005509"
+			icon: {"id": "unbound:grazer_shroud_helmet"}
+			tasks: [{"id": "7B00000001005509", "type": "item", "item": {"id": "unbound:grazer_shroud_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005509", "type": "item", "item": {"id": "unbound:grazer_shroud_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005509", "type": "item", "item": {"id": "unbound:grazer_shroud_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005509", "type": "item", "item": {"id": "unbound:grazer_shroud_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 0.5d
+			x: -45.5d
+			id: "7B0000000000550A"
+			icon: {"id": "unbound:hematite_lats_helmet"}
+			tasks: [{"id": "7B0000000100550A", "type": "item", "item": {"id": "unbound:hematite_lats_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550A", "type": "item", "item": {"id": "unbound:hematite_lats_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550A", "type": "item", "item": {"id": "unbound:hematite_lats_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550A", "type": "item", "item": {"id": "unbound:hematite_lats_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 0.5d
+			x: -47.0d
+			id: "7B0000000000550B"
+			icon: {"id": "unbound:lead_armor_helmet"}
+			tasks: [{"id": "7B0000000100550B", "type": "item", "item": {"id": "unbound:lead_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550B", "type": "item", "item": {"id": "unbound:lead_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550B", "type": "item", "item": {"id": "unbound:lead_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550B", "type": "item", "item": {"id": "unbound:lead_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 2.0d
+			x: -44.0d
+			id: "7B0000000000550C"
+			icon: {"id": "unbound:meteoric_plate_helmet"}
+			tasks: [{"id": "7B0000000100550C", "type": "item", "item": {"id": "unbound:meteoric_plate_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550C", "type": "item", "item": {"id": "unbound:meteoric_plate_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550C", "type": "item", "item": {"id": "unbound:meteoric_plate_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550C", "type": "item", "item": {"id": "unbound:meteoric_plate_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 2.0d
+			x: -45.5d
+			id: "7B0000000000550D"
+			icon: {"id": "unbound:mirror_scale_helmet"}
+			tasks: [{"id": "7B0000000100550D", "type": "item", "item": {"id": "unbound:mirror_scale_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550D", "type": "item", "item": {"id": "unbound:mirror_scale_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550D", "type": "item", "item": {"id": "unbound:mirror_scale_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550D", "type": "item", "item": {"id": "unbound:mirror_scale_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 2.0d
+			x: -47.0d
+			id: "7B0000000000550E"
+			icon: {"id": "unbound:mycelial_armor_helmet"}
+			tasks: [{"id": "7B0000000100550E", "type": "item", "item": {"id": "unbound:mycelial_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550E", "type": "item", "item": {"id": "unbound:mycelial_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550E", "type": "item", "item": {"id": "unbound:mycelial_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550E", "type": "item", "item": {"id": "unbound:mycelial_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 3.5d
+			x: -44.0d
+			id: "7B0000000000550F"
+			icon: {"id": "unbound:rib_armor_helmet"}
+			tasks: [{"id": "7B0000000100550F", "type": "item", "item": {"id": "unbound:rib_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000200550F", "type": "item", "item": {"id": "unbound:rib_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000300550F", "type": "item", "item": {"id": "unbound:rib_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B0000000400550F", "type": "item", "item": {"id": "unbound:rib_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 3.5d
+			x: -45.5d
+			id: "7B00000000005510"
+			icon: {"id": "unbound:slag_armor_helmet"}
+			tasks: [{"id": "7B00000001005510", "type": "item", "item": {"id": "unbound:slag_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005510", "type": "item", "item": {"id": "unbound:slag_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005510", "type": "item", "item": {"id": "unbound:slag_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005510", "type": "item", "item": {"id": "unbound:slag_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 3.5d
+			x: -47.0d
+			id: "7B00000000005511"
+			icon: {"id": "unbound:spacesuit_helmet"}
+			tasks: [{"id": "7B00000001005511", "type": "item", "item": {"id": "unbound:spacesuit_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005511", "type": "item", "item": {"id": "unbound:spacesuit_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005511", "type": "item", "item": {"id": "unbound:spacesuit_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005511", "type": "item", "item": {"id": "unbound:spacesuit_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 5.0d
+			x: -44.0d
+			id: "7B00000000005512"
+			icon: {"id": "unbound:storm_armor_helmet"}
+			tasks: [{"id": "7B00000001005512", "type": "item", "item": {"id": "unbound:storm_armor_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005512", "type": "item", "item": {"id": "unbound:storm_armor_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005512", "type": "item", "item": {"id": "unbound:storm_armor_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005512", "type": "item", "item": {"id": "unbound:storm_armor_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+		{
+			dependencies: []
+			y: 5.0d
+			x: -45.5d
+			id: "7B00000000005513"
+			icon: {"id": "unbound:warp_shroud_helmet"}
+			tasks: [{"id": "7B00000001005513", "type": "item", "item": {"id": "unbound:warp_shroud_helmet", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000002005513", "type": "item", "item": {"id": "unbound:warp_shroud_chestplate", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000003005513", "type": "item", "item": {"id": "unbound:warp_shroud_leggings", "count": 1}, "count": 1, "consume_items": false}, {"id": "7B00000004005513", "type": "item", "item": {"id": "unbound:warp_shroud_boots", "count": 1}, "count": 1, "consume_items": false}]
+		}
+]
 }

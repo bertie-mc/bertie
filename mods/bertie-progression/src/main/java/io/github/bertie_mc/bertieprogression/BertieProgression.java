@@ -6,8 +6,6 @@ import io.github.bertie_mc.bertieprogression.forge.PedestalFormationHandler;
 import io.github.bertie_mc.bertieprogression.gate.CraftingGateHandler;
 import io.github.bertie_mc.bertieprogression.gate.PlankSplitHandler;
 import io.github.bertie_mc.bertieprogression.hooks.HookIntegration;
-import io.github.bertie_mc.bertieprogression.pocket.PocketCombatCooldown;
-import io.github.bertie_mc.bertieprogression.pocket.PocketTravelHandler;
 import io.github.bertie_mc.bertieprogression.recipe.ModRecipes;
 import io.github.bertie_mc.bertieprogression.torch.MagnumTorchHandler;
 import net.neoforged.bus.api.IEventBus;
@@ -75,10 +73,6 @@ public final class BertieProgression {
         // guarded because the whole class references hooked's Kotlin types directly.
         if (ModList.get().isLoaded("hooked")) {
             HookIntegration.init(modBus);
-        }
-        if (ModList.get().isLoaded("pocket_dimension")) {
-            NeoForge.EVENT_BUS.register(PocketTravelHandler.class);
-            NeoForge.EVENT_BUS.register(PocketCombatCooldown.class);
         }
         // BuildCreativeModeTabContentsEvent is a MOD-bus event, not a game-bus one.
         modBus.register(RemovedItems.class);

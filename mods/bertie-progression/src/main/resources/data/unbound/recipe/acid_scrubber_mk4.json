@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "unbound:acid_scrubber_mk3"
+    },
+    {
+      "item": "unbound:machine_core_mk4"
+    },
+    {
+      "item": "bertieprogression:iron_sheet"
+    },
+    {
+      "item": "bertieprogression:iron_sheet"
+    }
+  ],
+  "result": {
+    "id": "unbound:acid_scrubber_mk4"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

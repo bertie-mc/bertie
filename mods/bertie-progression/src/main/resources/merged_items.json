@@ -183,5 +183,10 @@
   "youkaisfeasts:grilled_venison_slice": "twilightdelight:cooked_venison_rib",
   "youkaisfeasts:raw_venison": "antarchy:raw_venison",
   "youkaisfeasts:raw_venison_slice": "twilightdelight:raw_venison_rib",
-  "youkaisfeasts:wild_cucumber": "slavic_delight:wild_cucumbers"
+  "youkaisfeasts:wild_cucumber": "slavic_delight:wild_cucumbers",
+  "unbound:copper_sheet": "bertieprogression:copper_sheet",
+  "unbound:copper_tube": "bertieprogression:copper_rod",
+  "unbound:hull_plate": "bertieprogression:iron_sheet",
+  "unbound:titanium_ingot": "anvilcraft:titanium_ingot",
+  "unbound:titanium_dust": "bertieprogression:titanium_dust"
 }

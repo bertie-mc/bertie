@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "unbound:chorus_wax"
+    },
+    "F": {
+      "item": "unbound:fulgurite"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "V": {
+      "item": "unbound:void_shard"
+    },
+    "E": {
+      "item": "unbound:queen_jelly"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "FEF",
+    "VPV"
+  ],
+  "result": {
+    "id": "unbound:module_eyelid"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

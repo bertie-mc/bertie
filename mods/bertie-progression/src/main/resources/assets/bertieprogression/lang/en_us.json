@@ -1,6 +1,5 @@
 {
   "itemGroup.bertieprogression": "Bertie Progression",
-  "block.bertieprogression.pocket_dimension": "Pocket Dimension",
   "item.bertieprogression.opening_mallet": "Opening Mallet",
   "item.bertieprogression.weeping_eye": "Weeping Eye",
   "item.bertieprogression.kinetic_vane": "Structural Beam",
@@ -19,7 +18,6 @@
   "item.bertieprogression.null_blaze_cube": "Null Blaze Cube",
   "item.bertieprogression.scale_ingot": "Scale Ingot",
   "item.bertieprogression.innocent_soul": "Innocent Soul",
-  "item.bertieprogression.pocket_watch": "Pocket Watch",
   "item.bertieprogression.green_plushie_token": "Green Plushie Token",
   "item.bertieprogression.yellow_plushie_token": "Yellow Plushie Token",
   "item.bertieprogression.purple_plushie_token": "Purple Plushie Token",
@@ -271,5 +269,6 @@
   "block.bertieprogression.tharsite_ore": "Mars Tharsite Ore",
   "item.bertieprogression.tharsite_ingot": "Tharsite Ingot",
   "item.bertieprogression.raw_tharsite": "Raw Tharsite",
-  "item.bertieprogression.bottle_of_nothing": "Bottle of Nothing"
+  "item.bertieprogression.bottle_of_nothing": "Bottle of Nothing",
+  "item.bertieprogression.incomplete_copper_gear": "Incomplete Copper Gear"
 }

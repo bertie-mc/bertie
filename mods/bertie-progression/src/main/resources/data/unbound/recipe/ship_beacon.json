@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "K": {
+      "item": "unbound:wire_coil"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "N": {
+      "item": "unbound:navigation_crystal"
+    }
+  },
+  "pattern": [
+    " K ",
+    "WAW",
+    "PNP"
+  ],
+  "result": {
+    "id": "unbound:ship_beacon"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

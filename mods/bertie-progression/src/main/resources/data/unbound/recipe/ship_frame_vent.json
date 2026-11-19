@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "unbound:adamant_ingot"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "D": {
+      "item": "unbound:wraith_iron_ingot"
+    }
+  },
+  "pattern": [
+    "APA",
+    "D D",
+    "APA"
+  ],
+  "result": {
+    "id": "unbound:ship_frame",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

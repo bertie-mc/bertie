@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "M": {
+      "item": "unbound:hematite_heart"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "R": {
+      "item": "unbound:interplanetary_rocket"
+    },
+    "H": {
+      "item": "unbound:heat_shield"
+    },
+    "E": {
+      "item": "unbound:caustic_heart"
+    }
+  },
+  "pattern": [
+    "PMP",
+    "ARA",
+    "HEH"
+  ],
+  "result": {
+    "id": "unbound:heavy_rocket"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

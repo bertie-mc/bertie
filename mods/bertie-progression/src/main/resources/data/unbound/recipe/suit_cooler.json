@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "I": {
+      "item": "minecraft:packed_ice"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "K": {
+      "item": "unbound:compressor"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    "SIS",
+    "WKW",
+    "SCS"
+  ],
+  "result": {
+    "id": "unbound:suit_cooler"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

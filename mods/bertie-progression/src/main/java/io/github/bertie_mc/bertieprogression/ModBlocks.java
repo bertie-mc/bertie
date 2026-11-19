@@ -11,9 +11,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public final class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(BertieProgression.MODID);
 
-    public static final DeferredBlock<Block> POCKET_DIMENSION =
-            BLOCKS.registerSimpleBlock("pocket_dimension", BlockBehaviour.Properties.ofFullCopy(Blocks.BEACON));
-
     public static final DeferredBlock<Block> SENTIENT_CASING =
             BLOCKS.registerSimpleBlock("sentient_casing", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));
 

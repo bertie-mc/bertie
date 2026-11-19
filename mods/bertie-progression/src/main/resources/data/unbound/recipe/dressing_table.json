@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "unbound:copper_gear"
+    },
+    "W": {
+      "item": "unbound:station_window"
+    },
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "L": {
+      "item": "unbound:wiring"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    "GWG",
+    "TLT",
+    "PPP"
+  ],
+  "result": {
+    "id": "unbound:dressing_table"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  ABC",
+    " ABDB",
+    "ABCBA",
+    "BDBA ",
+    "CBA  "
+  ],
+  "key": {
+    "A": {
+      "item": "create:brass_ingot"
+    },
+    "B": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "C": {
+      "item": "unbound:polished_lens"
+    },
+    "D": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "id": "unbound:optical_tube",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

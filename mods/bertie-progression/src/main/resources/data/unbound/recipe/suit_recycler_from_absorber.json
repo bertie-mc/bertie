@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "F": {
+      "item": "unbound:air_filter"
+    },
+    "L": {
+      "item": "unbound:selenite_shard"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    "SFS",
+    "FLF",
+    "SCS"
+  ],
+  "result": {
+    "id": "unbound:suit_recycler"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

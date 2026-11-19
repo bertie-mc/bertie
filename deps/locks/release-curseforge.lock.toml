@@ -1,5 +1,5 @@
 profile = "release-curseforge"
-inputs-hash = "196db129a0b6d362330db73d830edcd3bf9e18d0a522ad1374ac3c8d4bf822ec"
+inputs-hash = "c6e1f3fef6e22f48a49435f8bf4b44f65a849214dc9a9e969a142adf4f199789"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -1104,10 +1104,6 @@ mod = "modrinth:tCkE8p2N:kb8pGRQR"
 [components."plonk"]
 any = "curseforge:345779:6343120"
 mod = "curseforge:345779:6343120"
-
-[components."pocket-dimension-1-20-1"]
-any = "modrinth:bHr7Oesy:CrhflvIg"
-mod = "modrinth:bHr7Oesy:CrhflvIg"
 
 [components."powah"]
 any = "curseforge:633483:8011715"
@@ -9903,26 +9899,6 @@ filename = "athena-neoforge-1.21.1-4.0.6.jar"
 project-id = "b1ZV3DIJ"
 version-id = "dJgL278E"
 provides = ["athena"]
-bundled-provides = []
-required = []
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:bHr7Oesy:CrhflvIg"]
-name = "pocket-dimension-1-20-1"
-component = "pocket-dimension-1-20-1"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "bHr7Oesy"
-version = "CrhflvIg"
-filename = "pocket_dimension-2.9-neoforge-1.21.1.jar"
-project-id = "bHr7Oesy"
-version-id = "CrhflvIg"
-provides = ["pocket_dimension"]
 bundled-provides = []
 required = []
 optional = []

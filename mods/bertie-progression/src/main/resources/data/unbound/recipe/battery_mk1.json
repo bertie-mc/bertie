@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "B": {
+      "item": "unbound:battery"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    "PWP",
+    "BBB",
+    "PRP"
+  ],
+  "result": {
+    "id": "unbound:battery_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

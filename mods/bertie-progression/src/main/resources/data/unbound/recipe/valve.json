@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "RCR"
+  ],
+  "key": {
+    "V": {
+      "item": "create:copper_valve_handle"
+    },
+    "R": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "C": {
+      "item": "unbound:copper_gear"
+    }
+  },
+  "result": {
+    "id": "unbound:valve",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

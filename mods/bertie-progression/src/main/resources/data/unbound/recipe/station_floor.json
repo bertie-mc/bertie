@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    "DPD",
+    "PDP",
+    "DPD"
+  ],
+  "result": {
+    "id": "unbound:station_floor",
+    "count": 12
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "L": {
+      "item": "unbound:polished_lens"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "R": {
+      "item": "unbound:beam_prism"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    }
+  },
+  "pattern": [
+    "TLT",
+    "SRS",
+    " G "
+  ],
+  "result": {
+    "id": "unbound:spectrograph"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "unbound:heat_tile"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "F": {
+      "item": "unbound:air_filter"
+    }
+  },
+  "pattern": [
+    "HSH",
+    "SFS",
+    "HSH"
+  ],
+  "result": {
+    "id": "unbound:suit_coating"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

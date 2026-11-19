@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    "T": {
+      "item": "minecraft:smithing_table"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    },
+    "S": {
+      "item": "minecraft:stonecutter"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "HAH",
+    "TCS",
+    "HWH"
+  ],
+  "result": {
+    "id": "unbound:station_kit_workshop"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

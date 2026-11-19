@@ -1,0 +1,16 @@
+{
+  "type": "unbound:crushing",
+  "ingredient": {
+    "item": "unbound:raw_ilmenite"
+  },
+  "result": {
+    "id": "bertieprogression:titanium_dust",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

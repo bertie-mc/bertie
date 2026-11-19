@@ -271,7 +271,6 @@ dependencies {
     packComponents(deps.piglinProliferation)
     packComponents(deps.pingWheel)
     packComponents(deps.plonk)
-    packComponents(deps.pocketDimension1201)
     packComponents(deps.powah)
     packComponents(deps.qliphothAwakening)
     packComponents(deps.quark)

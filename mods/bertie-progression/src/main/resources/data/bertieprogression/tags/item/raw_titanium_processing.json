@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:raw_materials/titanium",
+      "required": false
+    },
+    {
+      "id": "anvilcraft:raw_titanium",
+      "required": false
+    },
+    "unbound:raw_ilmenite"
+  ]
+}

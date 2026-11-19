@@ -27,7 +27,7 @@ def apply(module):
             name=f'mechanical_adapter_{half}' if kind=='body' else f'mechanical_adapter_shaft_{half}'
             write(Path(f'assets/bertieprogression/models/block/{name}.json'),data)
     write(Path('assets/bertieprogression/blockstates/mechanical_adapter.json'), {'variants': {
-        f'facing={direction},half={half},assembled={formed}': {'model':f'bertieprogression:block/mechanical_adapter_{half}', 'y':angle}
+        f'facing={direction},half={half},machine_assembled={formed}': {'model':f'bertieprogression:block/mechanical_adapter_{half}', 'y':angle}
         for direction,angle in [('north',0),('east',90),('south',180),('west',270)]
         for half in ('lower','upper') for formed in ('true','false')}})
     write(Path('assets/bertieprogression/models/item/mechanical_adapter.json'),json.loads((source/'mechanical_adapter_item.json').read_text()))

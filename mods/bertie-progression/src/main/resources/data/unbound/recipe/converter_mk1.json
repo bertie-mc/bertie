@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    },
+    "B": {
+      "item": "unbound:battery"
+    }
+  },
+  "pattern": [
+    "PWP",
+    "CBC",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:converter_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

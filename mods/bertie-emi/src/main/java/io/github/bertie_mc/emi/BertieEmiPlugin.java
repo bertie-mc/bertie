@@ -72,6 +72,13 @@ public class BertieEmiPlugin implements EmiPlugin {
         success &= run("avaritia_delight", () -> AvaritiaDelightEmiModule.register(registry));
         success &= run("farmerspizzeria", () -> FarmersPizzeriaEmiModule.register(registry));
         success &= run("youkaisfeasts", () -> YoukaisFeastsEmiModule.register(registry));
+        success &= run("unbound", () -> {
+            try {
+                io.github.bertie_mc.emi.integration.unbound.UnboundEmiModule.register(registry);
+            } catch (Exception e) {
+                throw new IllegalStateException(e);
+            }
+        });
         success &= run("cognition", () -> CognitionEmiModule.register(registry));
         success &= run("stellaris", () -> StellarisEmiModule.register(registry));
         success &= run("twilightdelight", () -> TwilightDelightEmiModule.register(registry));

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "T": {
+      "item": "unbound:tetrataenite_ingot"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "WGW",
+    "PTP"
+  ],
+  "result": {
+    "id": "unbound:orbital_plate",
+    "count": 8
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

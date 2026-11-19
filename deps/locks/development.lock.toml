@@ -1,5 +1,5 @@
 profile = "development"
-inputs-hash = "3b8de79b1a1e2de4b07dfd3ac9254d4027baf92894722e4f6113726bcbc8918a"
+inputs-hash = "774dfbd2cba3ab810bc4731ed6c458f9a5b45e84142face37144ea7ceef02da2"
 relationships = [{ "source" = "isleweaver", "target" = "the-beyond", "kind" = "optional-addon-for" }, { "source" = "sparkles", "target" = "incendium", "kind" = "optional-addon-for" }]
 
 [components."aaa-particles"]
@@ -1104,10 +1104,6 @@ mod = "modrinth:tCkE8p2N:kb8pGRQR"
 [components."plonk"]
 any = "modrinth:EUmBPkQn:Y8aicJfZ"
 mod = "modrinth:EUmBPkQn:Y8aicJfZ"
-
-[components."pocket-dimension-1-20-1"]
-any = "modrinth:bHr7Oesy:CrhflvIg"
-mod = "modrinth:bHr7Oesy:CrhflvIg"
 
 [components."powah"]
 any = "modrinth:KZO4S4DO:1prWLuga"
@@ -6853,26 +6849,6 @@ version-id = "ZVKlC4b9"
 provides = ["extendedbonemeal"]
 bundled-provides = []
 required = [{ "artifact" = "modrinth:e0M1UDsY:IocRsdQH", "mod-id" = "collective", "version-range" = "[7.91,)", "side" = "both", "origin" = "archive" }]
-optional = []
-incompatible = []
-bundled = []
-integrations = []
-
-[artifacts."modrinth:bHr7Oesy:CrhflvIg"]
-name = "pocket-dimension-1-20-1"
-component = "pocket-dimension-1-20-1"
-provider = "modrinth"
-kind = "mod"
-side = "both"
-group = "maven.modrinth"
-module = "bHr7Oesy"
-version = "CrhflvIg"
-filename = "pocket_dimension-2.9-neoforge-1.21.1.jar"
-project-id = "bHr7Oesy"
-version-id = "CrhflvIg"
-provides = ["pocket_dimension"]
-bundled-provides = []
-required = []
 optional = []
 incompatible = []
 bundled = []

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "unbound:sphinx_mask"
+    },
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "J": {
+      "item": "unbound:jewel_setting"
+    }
+  },
+  "pattern": [
+    " M ",
+    "TJT"
+  ],
+  "result": {
+    "id": "unbound:sleepless_ring"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

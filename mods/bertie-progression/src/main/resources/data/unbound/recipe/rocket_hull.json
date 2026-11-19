@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    }
+  },
+  "pattern": [
+    "PWP",
+    "PAP",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:rocket_hull"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

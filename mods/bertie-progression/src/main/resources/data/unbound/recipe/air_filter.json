@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " WW ",
+    "CCCC",
+    "OOOO",
+    "CCCC"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "C": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "O": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "result": {
+    "id": "unbound:air_filter",
+    "count": 1
+  },
+  "accept_mirrored": false,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

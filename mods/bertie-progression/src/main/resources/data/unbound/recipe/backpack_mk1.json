@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "H": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "LWL",
+    "SHS",
+    "LLL"
+  ],
+  "result": {
+    "id": "unbound:backpack_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

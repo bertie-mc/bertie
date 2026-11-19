@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:firework_rocket"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "V": {
+      "item": "unbound:valve"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    },
+    "M": {
+      "item": "anvilcraft:titanium_ingot"
+    }
+  },
+  "pattern": [
+    "MRM",
+    "GVG",
+    "MCM"
+  ],
+  "result": {
+    "id": "unbound:ship_module_flares_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

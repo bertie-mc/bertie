@@ -4,12 +4,10 @@ import com.mojang.serialization.Codec;
 import io.github.bertie_mc.bertieprogression.item.CraftingLicenseItem;
 import io.github.bertie_mc.bertieprogression.item.FinderItem;
 import io.github.bertie_mc.bertieprogression.item.NetherlyMealItem;
-import io.github.bertie_mc.bertieprogression.item.PocketWatchItem;
 import io.github.bertie_mc.bertieprogression.item.WeepingEyeItem;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
-import net.minecraft.core.GlobalPos;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -31,13 +29,6 @@ public final class ModItems {
             DeferredRegister.create(Registries.DATA_COMPONENT_TYPE, BertieProgression.MODID);
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BertieProgression.MODID);
-
-    public static final Supplier<DataComponentType<GlobalPos>> RETURN_POS = DATA_COMPONENTS.register(
-            "return_pos",
-            () -> DataComponentType.<GlobalPos>builder()
-                    .persistent(GlobalPos.CODEC)
-                    .networkSynchronized(GlobalPos.STREAM_CODEC)
-                    .build());
 
     /**
      * Set by {@link FinderItem#onCraftedBy} and consumed by its inventoryTick. It is the only signal
@@ -83,17 +74,13 @@ public final class ModItems {
             () -> new CraftingLicenseItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     // --- Portals / dimension keys ---
-    public static final DeferredItem<BlockItem> POCKET_DIMENSION =
-            ITEMS.registerSimpleBlockItem(ModBlocks.POCKET_DIMENSION);
     public static final DeferredItem<BlockItem> SENTIENT_CASING =
             ITEMS.registerSimpleBlockItem(ModBlocks.SENTIENT_CASING);
-    public static final DeferredItem<PocketWatchItem> POCKET_WATCH = ITEMS.register(
-            "pocket_watch",
-            () -> new PocketWatchItem(new Item.Properties().stacksTo(16).rarity(Rarity.RARE)));
     public static final DeferredItem<Item> TWILIGHT_CONCORD = simple("twilight_concord", 16);
 
     // --- Avaritia ---
     public static final DeferredItem<Item> NULL_BLAZE_CUBE = simple("null_blaze_cube", 64);
+    public static final DeferredItem<Item> INCOMPLETE_COPPER_GEAR = simple("incomplete_copper_gear", 64);
     public static final DeferredItem<Item> BOTTLE_OF_NOTHING = simple("bottle_of_nothing", 64);
     public static final DeferredItem<Item> SCALE_INGOT = simple("scale_ingot", 64);
 
@@ -217,14 +204,12 @@ public final class ModItems {
                         out.accept(YETI_HIDEOUT_MAP.get());
                         out.accept(CRAFTING_LICENSE.get());
                         out.accept(EEZO_ORE.get());
-                        out.accept(POCKET_DIMENSION.get());
                         out.accept(SENTIENT_CASING.get());
                         RetainedMaterials.creativeItems().forEach(out::accept);
                         RetainedMaterials.creativeItems().forEach(out::accept);
                         BuiltInRegistries.ITEM
                                 .getOptional(ResourceLocation.parse("bertieprogression:mechanical_adapter"))
                                 .ifPresent(out::accept);
-                        out.accept(POCKET_WATCH.get());
                         BuiltInRegistries.ITEM
                                 .getOptional(ResourceLocation.fromNamespaceAndPath("cataclysm", "enderite_ingot"))
                                 .ifPresent(out::accept);

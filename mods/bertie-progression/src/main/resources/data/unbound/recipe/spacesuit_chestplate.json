@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "K": {
+      "item": "unbound:compressor"
+    },
+    "V": {
+      "item": "unbound:valve"
+    }
+  },
+  "pattern": [
+    "P P",
+    "PKP",
+    "PVP"
+  ],
+  "result": {
+    "id": "unbound:spacesuit_chestplate"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

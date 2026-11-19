@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "W": {
+      "item": "unbound:wire_coil"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    }
+  },
+  "pattern": [
+    " I ",
+    "RWR",
+    "SSS"
+  ],
+  "result": {
+    "id": "unbound:pack_magnet"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

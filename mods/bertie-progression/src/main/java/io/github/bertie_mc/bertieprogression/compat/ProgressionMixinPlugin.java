@@ -15,6 +15,10 @@ public final class ProgressionMixinPlugin implements IMixinConfigPlugin {
         if (mixinClassName.endsWith("AugmentationCenterMixin")) {
             return loaded("oritech") && loaded("create");
         }
+        if (mixinClassName.endsWith("UnboundMixingCapacityMixin")) return loaded("unbound") && loaded("create");
+        if (mixinClassName.endsWith("UnboundResourceMixin")
+                || mixinClassName.endsWith("UnboundJournalMixin")
+                || mixinClassName.endsWith("UnboundRepairMixin")) return loaded("unbound");
         if (mixinClassName.endsWith("UnboundVacuumMixin")) {
             return loaded("oritech") && loaded("unbound");
         }

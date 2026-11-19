@@ -1,0 +1,2042 @@
+{
+  "status": "Ore Scanner integration plan; exact canonical input and target bindings, not runtime implementation.",
+  "scope": {
+    "primary_use": "Calibrate the Ore Scanner through the Spectral Laboratory.",
+    "additional_subjects": "Ore/mineral families only. Metal inputs are raw plus ingot/refined metal; gem/mineral inputs use one main retained gem/drop. No processing-chain intermediates.",
+    "hazennstuff_allowlist": [
+      "hazennstuff:solar_core_blackstone_ore"
+    ],
+    "native_sources_preserved": true,
+    "scanner_radius_changed": false,
+    "fictional_component_policy": "Real chemical elements only, with Ac = Arcane as the sole new fictional component. Native pre-existing references are preserved.",
+    "material_exclusions_for_now": [
+      "Corronium",
+      "Solerium",
+      "Tharsite"
+    ],
+    "formula_document": "21-spectral-ore-chemistry.md"
+  },
+  "families": [
+    {
+      "id": "iron",
+      "name": "Iron",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:iron_ingot",
+        "minecraft:raw_iron"
+      ],
+      "diagnostic_refs": [
+        "fe"
+      ],
+      "sample_source": "iron",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_iron_ore",
+        "deeperdarker:sculk_stone_iron_ore",
+        "minecraft:deepslate_iron_ore",
+        "minecraft:iron_ore",
+        "pastel:blackslag_iron_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Fe",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:iron_ingot": {
+          "formula": "Fe",
+          "diagnostic_refs": [
+            "fe"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "minecraft:raw_iron": {
+          "formula": "Fe",
+          "diagnostic_refs": [
+            "fe"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "iron"
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:copper_ingot",
+        "minecraft:raw_copper"
+      ],
+      "diagnostic_refs": [
+        "cu"
+      ],
+      "sample_source": "copper",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_copper_ore",
+        "deeperdarker:sculk_stone_copper_ore",
+        "minecraft:copper_ore",
+        "minecraft:deepslate_copper_ore",
+        "pastel:blackslag_copper_ore",
+        "unbound:seafloor_sulfide_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Cu",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:copper_ingot": {
+          "formula": "Cu",
+          "diagnostic_refs": [
+            "cu"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "minecraft:raw_copper": {
+          "formula": "Cu",
+          "diagnostic_refs": [
+            "cu"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "copper"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:gold_ingot",
+        "minecraft:raw_gold"
+      ],
+      "diagnostic_refs": [
+        "au"
+      ],
+      "sample_source": "gold",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_gold_ore",
+        "deeperdarker:sculk_stone_gold_ore",
+        "minecraft:deepslate_gold_ore",
+        "minecraft:gold_ore",
+        "minecraft:nether_gold_ore",
+        "pastel:blackslag_gold_ore",
+        "unbound:r_gold_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Au",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:gold_ingot": {
+          "formula": "Au",
+          "diagnostic_refs": [
+            "au"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "minecraft:raw_gold": {
+          "formula": "Au",
+          "diagnostic_refs": [
+            "au"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "gold"
+    },
+    {
+      "id": "uranium",
+      "name": "Uranium",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:raw_uranium",
+        "anvilcraft:uranium_ingot"
+      ],
+      "diagnostic_refs": [
+        "u"
+      ],
+      "sample_source": "bertie_uranium",
+      "scanner_targets": [
+        "antarchy:broodstone_uranium_ore",
+        "mekanism:uranium_ore",
+        "oritech:deepslate_uranium_ore",
+        "unbound:r_uranium_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "U",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:raw_uranium": {
+          "formula": "U",
+          "diagnostic_refs": [
+            "u"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "anvilcraft:uranium_ingot": {
+          "formula": "U",
+          "diagnostic_refs": [
+            "u"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_uranium"
+    },
+    {
+      "id": "osmium",
+      "name": "Osmium",
+      "status": "active_deposit",
+      "sample_items": [
+        "mekanism:ingot_osmium",
+        "mekanism:raw_osmium"
+      ],
+      "diagnostic_refs": [
+        "os"
+      ],
+      "sample_source": "bertie_osmium",
+      "scanner_targets": [
+        "mekanism:deepslate_osmium_ore",
+        "mekanism:osmium_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Os",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "mekanism:ingot_osmium": {
+          "formula": "Os",
+          "diagnostic_refs": [
+            "os"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "mekanism:raw_osmium": {
+          "formula": "Os",
+          "diagnostic_refs": [
+            "os"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_osmium"
+    },
+    {
+      "id": "tin",
+      "name": "Tin",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:raw_tin",
+        "mekanism:ingot_tin"
+      ],
+      "diagnostic_refs": [
+        "sn"
+      ],
+      "sample_source": "bertie_tin",
+      "scanner_targets": [
+        "mekanism:deepslate_tin_ore",
+        "mekanism:tin_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Sn",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:raw_tin": {
+          "formula": "Sn",
+          "diagnostic_refs": [
+            "sn"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "mekanism:ingot_tin": {
+          "formula": "Sn",
+          "diagnostic_refs": [
+            "sn"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_tin"
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:lead_ingot",
+        "anvilcraft:raw_lead"
+      ],
+      "diagnostic_refs": [
+        "pb"
+      ],
+      "sample_source": "lead",
+      "scanner_targets": [
+        "mekanism:deepslate_lead_ore",
+        "mekanism:lead_ore",
+        "unbound:galena_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Pb",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:lead_ingot": {
+          "formula": "Pb",
+          "diagnostic_refs": [
+            "pb"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "anvilcraft:raw_lead": {
+          "formula": "Pb",
+          "diagnostic_refs": [
+            "pb"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "lead"
+    },
+    {
+      "id": "naquadah",
+      "name": "Naquadah",
+      "status": "active_deposit",
+      "sample_items": [
+        "mekanism_extras:ingot_naquadah",
+        "mekanism_extras:raw_naquadah"
+      ],
+      "diagnostic_refs": [
+        "u",
+        "si",
+        "arc"
+      ],
+      "sample_source": "bertie_naquadah",
+      "scanner_targets": [
+        "mekanism_extras:end_naquadah_ore",
+        "mekanism_extras:naquadah_ore"
+      ],
+      "notes": "Arcane-modified uranium silicide; a real dense nuclear-fuel host.",
+      "chemical_formula": "U3Si2·Ac",
+      "formula_basis": "Arcane-modified uranium silicide; a real dense nuclear-fuel host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "mekanism_extras:ingot_naquadah": {
+          "formula": "U3Si2·Ac",
+          "diagnostic_refs": [
+            "u",
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "mekanism_extras:raw_naquadah": {
+          "formula": "U3Si2·Ac",
+          "diagnostic_refs": [
+            "u",
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_naquadah"
+    },
+    {
+      "id": "nickel",
+      "name": "Nickel",
+      "status": "active_deposit",
+      "sample_items": [
+        "oritech:nickel_ingot",
+        "oritech:raw_nickel"
+      ],
+      "diagnostic_refs": [
+        "ni"
+      ],
+      "sample_source": "bertie_nickel",
+      "scanner_targets": [
+        "oritech:deepslate_nickel_ore",
+        "oritech:nickel_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Ni",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "oritech:nickel_ingot": {
+          "formula": "Ni",
+          "diagnostic_refs": [
+            "ni"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "oritech:raw_nickel": {
+          "formula": "Ni",
+          "diagnostic_refs": [
+            "ni"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_nickel"
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "status": "active_deposit",
+      "sample_items": [
+        "oritech:platinum_ingot",
+        "oritech:raw_platinum"
+      ],
+      "diagnostic_refs": [
+        "pt"
+      ],
+      "sample_source": "bertie_platinum",
+      "scanner_targets": [
+        "oritech:deepslate_platinum_ore",
+        "oritech:endstone_platinum_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Pt",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "oritech:platinum_ingot": {
+          "formula": "Pt",
+          "diagnostic_refs": [
+            "pt"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "oritech:raw_platinum": {
+          "formula": "Pt",
+          "diagnostic_refs": [
+            "pt"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_platinum"
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "status": "active_deposit",
+      "sample_items": [
+        "magitech:raw_zinc",
+        "magitech:zinc_ingot"
+      ],
+      "diagnostic_refs": [
+        "zn"
+      ],
+      "sample_source": "bertie_zinc",
+      "scanner_targets": [
+        "anvilcraft:deepslate_zinc_ore",
+        "create:zinc_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Zn",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "magitech:raw_zinc": {
+          "formula": "Zn",
+          "diagnostic_refs": [
+            "zn"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "magitech:zinc_ingot": {
+          "formula": "Zn",
+          "diagnostic_refs": [
+            "zn"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_zinc"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:raw_silver",
+        "anvilcraft:silver_ingot"
+      ],
+      "diagnostic_refs": [
+        "ag"
+      ],
+      "sample_source": "bertie_silver",
+      "scanner_targets": [
+        "anvilcraft:deepslate_silver_ore",
+        "iceandfire:silver_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Ag",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:raw_silver": {
+          "formula": "Ag",
+          "diagnostic_refs": [
+            "ag"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "anvilcraft:silver_ingot": {
+          "formula": "Ag",
+          "diagnostic_refs": [
+            "ag"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_silver"
+    },
+    {
+      "id": "titanium",
+      "name": "Titanium",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:raw_titanium",
+        "anvilcraft:titanium_ingot"
+      ],
+      "diagnostic_refs": [
+        "ti"
+      ],
+      "sample_source": "titanium",
+      "scanner_targets": [
+        "antarchy:broodstone_titanium_ore",
+        "antarchy:titanium_ore",
+        "anvilcraft:deepslate_titanium_ore",
+        "unbound:ilmenite_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "Ti",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:raw_titanium": {
+          "formula": "Ti",
+          "diagnostic_refs": [
+            "ti"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "anvilcraft:titanium_ingot": {
+          "formula": "Ti",
+          "diagnostic_refs": [
+            "ti"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "titanium"
+    },
+    {
+      "id": "tungsten",
+      "name": "Tungsten",
+      "status": "active_deposit",
+      "sample_items": [
+        "anvilcraft:raw_tungsten",
+        "anvilcraft:tungsten_ingot"
+      ],
+      "diagnostic_refs": [
+        "w"
+      ],
+      "sample_source": "bertie_tungsten",
+      "scanner_targets": [
+        "anvilcraft:deepslate_tungsten_ore"
+      ],
+      "notes": "Use canonical raw and refined forms from Bertie material/tag data.",
+      "chemical_formula": "W",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "anvilcraft:raw_tungsten": {
+          "formula": "W",
+          "diagnostic_refs": [
+            "w"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "anvilcraft:tungsten_ingot": {
+          "formula": "W",
+          "diagnostic_refs": [
+            "w"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_tungsten"
+    },
+    {
+      "id": "voiderite",
+      "name": "Voiderite",
+      "status": "active_deposit",
+      "sample_items": [
+        "armageddon_mod:voiderite",
+        "bertieprogression:raw_voiderite"
+      ],
+      "diagnostic_refs": [
+        "w",
+        "os",
+        "arc"
+      ],
+      "sample_source": "bertie_voiderite",
+      "scanner_targets": [
+        "armageddon_mod:voiderite_ore"
+      ],
+      "notes": "Nominal 1:2 tungsten/osmium alloy, arcane-modified; no Void element.",
+      "chemical_formula": "WOs2·Ac",
+      "formula_basis": "Nominal 1:2 tungsten/osmium alloy, arcane-modified; no Void element.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "armageddon_mod:voiderite": {
+          "formula": "WOs2·Ac",
+          "diagnostic_refs": [
+            "w",
+            "os",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "bertieprogression:raw_voiderite": {
+          "formula": "WOs2·Ac",
+          "diagnostic_refs": [
+            "w",
+            "os",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_voiderite"
+    },
+    {
+      "id": "eezo",
+      "name": "Eezo",
+      "status": "active_deposit",
+      "sample_items": [
+        "bertieprogression:eezo_ingot",
+        "bertieprogression:raw_eezo"
+      ],
+      "diagnostic_refs": [
+        "bi",
+        "si",
+        "arc"
+      ],
+      "sample_source": "bertie_eezo",
+      "scanner_targets": [
+        "bertieprogression:eezo_ore"
+      ],
+      "notes": "Arcane-modified sillenite-type bismuth silicate; electro-optic host, not Element Zero.",
+      "chemical_formula": "Bi12SiO20·Ac",
+      "formula_basis": "Arcane-modified sillenite-type bismuth silicate; electro-optic host, not Element Zero.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "bertieprogression:eezo_ingot": {
+          "formula": "Bi12SiO20·Ac",
+          "diagnostic_refs": [
+            "bi",
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "bertieprogression:raw_eezo": {
+          "formula": "Bi12SiO20·Ac",
+          "diagnostic_refs": [
+            "bi",
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_eezo"
+    },
+    {
+      "id": "bloody",
+      "name": "Bloody",
+      "status": "active_deposit",
+      "sample_items": [
+        "armageddon_mod:bloody_ingot",
+        "bertieprogression:raw_bloody"
+      ],
+      "diagnostic_refs": [
+        "fe",
+        "c2",
+        "arc"
+      ],
+      "sample_source": "bertie_bloody",
+      "scanner_targets": [
+        "armageddon_mod:bloody_ore"
+      ],
+      "notes": "Arcane-modified cementite/iron-carbide phase; a ferrous material rather than a Blood element.",
+      "chemical_formula": "Fe3C·Ac",
+      "formula_basis": "Arcane-modified cementite/iron-carbide phase; a ferrous material rather than a Blood element.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "armageddon_mod:bloody_ingot": {
+          "formula": "Fe3C·Ac",
+          "diagnostic_refs": [
+            "fe",
+            "c2",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "bertieprogression:raw_bloody": {
+          "formula": "Fe3C·Ac",
+          "diagnostic_refs": [
+            "fe",
+            "c2",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_bloody"
+    },
+    {
+      "id": "elvenite",
+      "name": "Elvenite",
+      "status": "active_deposit",
+      "sample_items": [
+        "armageddon_mod:elvenite_ingot",
+        "armageddon_mod:raw_elvenite"
+      ],
+      "diagnostic_refs": [
+        "au",
+        "ag",
+        "arc"
+      ],
+      "sample_source": "bertie_elvenite",
+      "scanner_targets": [
+        "armageddon_mod:elvenite_ore"
+      ],
+      "notes": "Nominal gold/silver alloy with arcane modification; matches the golden refined material.",
+      "chemical_formula": "AuAg2·Ac",
+      "formula_basis": "Nominal gold/silver alloy with arcane modification; matches the golden refined material.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "armageddon_mod:elvenite_ingot": {
+          "formula": "AuAg2·Ac",
+          "diagnostic_refs": [
+            "au",
+            "ag",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "armageddon_mod:raw_elvenite": {
+          "formula": "AuAg2·Ac",
+          "diagnostic_refs": [
+            "au",
+            "ag",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_elvenite"
+    },
+    {
+      "id": "coal",
+      "name": "Coal",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:coal"
+      ],
+      "diagnostic_refs": [
+        "co2"
+      ],
+      "sample_source": "smoke",
+      "scanner_targets": [
+        "antarchy:myrmite_coal_ore",
+        "deeperdarker:gloomslate_coal_ore",
+        "deeperdarker:sculk_stone_coal_ore",
+        "minecraft:coal_ore",
+        "minecraft:deepslate_coal_ore",
+        "pastel:blackslag_coal_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": null,
+      "formula_basis": "Variable carbonaceous mixture: no honest unique molecular formula. Preserve the native combustion CO2 reference.",
+      "formula_status": "existing_native_mixture",
+      "sample_profiles": {
+        "minecraft:coal": {
+          "formula": null,
+          "diagnostic_refs": [
+            "co2"
+          ],
+          "minimum_instrument_tier": 2
+        }
+      },
+      "scanner_source": "smoke"
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:redstone"
+      ],
+      "diagnostic_refs": [
+        "rs"
+      ],
+      "sample_source": "redstone",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_redstone_ore",
+        "deeperdarker:sculk_stone_redstone_ore",
+        "minecraft:deepslate_redstone_ore",
+        "minecraft:redstone_ore",
+        "pastel:blackslag_redstone_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": null,
+      "formula_basis": "Existing native Redstone reference retained; no new fictional reference is introduced by this extension.",
+      "formula_status": "existing_native_reference",
+      "sample_profiles": {
+        "minecraft:redstone": {
+          "formula": null,
+          "diagnostic_refs": [
+            "rs"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "redstone"
+    },
+    {
+      "id": "lapis",
+      "name": "Lapis Lazuli",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:lapis_lazuli"
+      ],
+      "diagnostic_refs": [
+        "na",
+        "ca",
+        "s"
+      ],
+      "sample_source": "lapis",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_lapis_ore",
+        "deeperdarker:sculk_stone_lapis_ore",
+        "minecraft:deepslate_lapis_ore",
+        "minecraft:lapis_ore",
+        "pastel:blackslag_lapis_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": "Na6Ca2Al6Si6O24S2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:lapis_lazuli": {
+          "formula": "Na6Ca2Al6Si6O24S2",
+          "diagnostic_refs": [
+            "na",
+            "ca",
+            "s"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "lapis"
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:diamond"
+      ],
+      "diagnostic_refs": [
+        "c2"
+      ],
+      "sample_source": "diamond",
+      "scanner_targets": [
+        "born_in_chaos_v1:infected_deepslate_diamond_ore",
+        "born_in_chaos_v1:infected_diamond_ore",
+        "deeperdarker:gloomslate_diamond_ore",
+        "deeperdarker:sculk_stone_diamond_ore",
+        "ditr:obsidian_diamond_ore",
+        "explodetomine:cracked_deepslate_diamond_ore",
+        "explodetomine:cracked_diamond_ore",
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:diamond_ore",
+        "pastel:blackslag_diamond_ore",
+        "unbound:diamond_hail_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": "C",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:diamond": {
+          "formula": "C",
+          "diagnostic_refs": [
+            "c2"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "diamond"
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:emerald"
+      ],
+      "diagnostic_refs": [
+        "be",
+        "si"
+      ],
+      "sample_source": "emerald",
+      "scanner_targets": [
+        "deeperdarker:gloomslate_emerald_ore",
+        "deeperdarker:sculk_stone_emerald_ore",
+        "minecraft:deepslate_emerald_ore",
+        "minecraft:emerald_ore",
+        "pastel:blackslag_emerald_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": "Be3Al2Si6O18",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "minecraft:emerald": {
+          "formula": "Be3Al2Si6O18",
+          "diagnostic_refs": [
+            "be",
+            "si"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "emerald"
+    },
+    {
+      "id": "quartz",
+      "name": "Quartz",
+      "status": "active_deposit",
+      "sample_items": [
+        "malum:blazing_quartz",
+        "minecraft:quartz"
+      ],
+      "diagnostic_refs": [
+        "si"
+      ],
+      "sample_source": "quartz",
+      "scanner_targets": [
+        "malum:blazing_quartz_ore",
+        "malum:deepslate_quartz_ore",
+        "malum:natural_quartz_cluster",
+        "malum:natural_quartz_ore",
+        "minecraft:nether_quartz_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": "SiO2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "malum:blazing_quartz": {
+          "formula": "SiO2",
+          "diagnostic_refs": [
+            "si"
+          ],
+          "minimum_instrument_tier": 1
+        },
+        "minecraft:quartz": {
+          "formula": "SiO2",
+          "diagnostic_refs": [
+            "si"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "quartz"
+    },
+    {
+      "id": "netherite",
+      "name": "Netherite",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_scrap"
+      ],
+      "diagnostic_refs": [
+        "w",
+        "c2",
+        "ir"
+      ],
+      "sample_source": "bertie_netherite",
+      "scanner_targets": [
+        "minecraft:ancient_debris"
+      ],
+      "notes": "Ore/scrap phase: tungsten carbide with an iridium binder. Gold belongs to the refined ingot, not Ancient Debris.",
+      "chemical_formula": "(WC)2Ir",
+      "formula_basis": "Ore/scrap phase: tungsten carbide with an iridium binder. Gold belongs to the refined ingot, not Ancient Debris.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "minecraft:netherite_ingot": {
+          "formula": "Au(WC)2Ir",
+          "diagnostic_refs": [
+            "au",
+            "w",
+            "c2",
+            "ir"
+          ],
+          "basis": "Gold added to the carbide/iridium scrap phase; 1:1 gold/scrap nominal unit ratio follows the scrap/gold route.",
+          "minimum_instrument_tier": 3
+        },
+        "minecraft:netherite_scrap": {
+          "formula": "(WC)2Ir",
+          "diagnostic_refs": [
+            "w",
+            "c2",
+            "ir"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_netherite_ore",
+      "profile_policy": "Use the ore profile for scanner targets; sample-specific added ingredients must not become ore targets. All item forms still share the ore-family calibration."
+    },
+    {
+      "id": "amethyst",
+      "name": "Amethyst",
+      "status": "active_deposit",
+      "sample_items": [
+        "minecraft:amethyst_shard"
+      ],
+      "diagnostic_refs": [
+        "si",
+        "fe"
+      ],
+      "sample_source": "amethyst",
+      "scanner_targets": [
+        "minecraft:budding_amethyst",
+        "pastel:amethyst_ore",
+        "pastel:blackslag_amethyst_ore",
+        "pastel:deepslate_amethyst_ore"
+      ],
+      "notes": "Extend the native ore family across registered stone/deepslate/dimension variants; the sample list uses primary drops or material forms.",
+      "chemical_formula": "SiO2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "trace_elements": [
+        "Fe"
+      ],
+      "sample_profiles": {
+        "minecraft:amethyst_shard": {
+          "formula": "SiO2",
+          "diagnostic_refs": [
+            "si",
+            "fe"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "amethyst"
+    },
+    {
+      "id": "bluestone",
+      "name": "Bluestone",
+      "status": "active_deposit",
+      "sample_items": [
+        "antarchy:bluestone"
+      ],
+      "diagnostic_refs": [
+        "cu",
+        "s",
+        "h",
+        "arc"
+      ],
+      "sample_source": "bertie_bluestone",
+      "scanner_targets": [
+        "antarchy:bluestone_ore"
+      ],
+      "notes": "Arcane-modified chalcanthite/copper-sulfate hydrate; a real blue crystal host.",
+      "chemical_formula": "CuSO4·5H2O·Ac",
+      "formula_basis": "Arcane-modified chalcanthite/copper-sulfate hydrate; a real blue crystal host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "antarchy:bluestone": {
+          "formula": "CuSO4·5H2O·Ac",
+          "diagnostic_refs": [
+            "cu",
+            "s",
+            "h",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_bluestone"
+    },
+    {
+      "id": "etherium",
+      "name": "Etherium",
+      "status": "active_deposit",
+      "sample_items": [
+        "enigmaticlegacyplus:etherium_ingot",
+        "enigmaticlegacyplus:raw_etherium"
+      ],
+      "diagnostic_refs": [
+        "pt",
+        "ir",
+        "arc"
+      ],
+      "sample_source": "bertie_etherium",
+      "scanner_targets": [
+        "enigmaticlegacyplus:etherium_ore"
+      ],
+      "notes": "Nominal platinum/iridium alloy carrying arcane energy; a dense solid noble-metal host.",
+      "chemical_formula": "Pt3Ir·Ac",
+      "formula_basis": "Nominal platinum/iridium alloy carrying arcane energy; a dense solid noble-metal host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "enigmaticlegacyplus:etherium_ingot": {
+          "formula": "Pt3Ir·Ac",
+          "diagnostic_refs": [
+            "pt",
+            "ir",
+            "arc"
+          ],
+          "minimum_instrument_tier": 2
+        },
+        "enigmaticlegacyplus:raw_etherium": {
+          "formula": "Pt3Ir·Ac",
+          "diagnostic_refs": [
+            "pt",
+            "ir",
+            "arc"
+          ],
+          "minimum_instrument_tier": 2
+        }
+      },
+      "scanner_source": "bertie_etherium"
+    },
+    {
+      "id": "arcane_crystal",
+      "name": "Arcane Crystal",
+      "status": "active_deposit",
+      "sample_items": [
+        "forbidden_arcanus:arcane_crystal"
+      ],
+      "diagnostic_refs": [
+        "si",
+        "arc"
+      ],
+      "sample_source": "bertie_arcane_crystal",
+      "scanner_targets": [
+        "forbidden_arcanus:arcane_crystal_ore",
+        "forbidden_arcanus:deepslate_arcane_crystal_ore"
+      ],
+      "notes": "Arcane-modified silica crystal, rather than pure Arcane substance.",
+      "chemical_formula": "SiO2·Ac",
+      "formula_basis": "Arcane-modified silica crystal, rather than pure Arcane substance.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "forbidden_arcanus:arcane_crystal": {
+          "formula": "SiO2·Ac",
+          "diagnostic_refs": [
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_arcane_crystal"
+    },
+    {
+      "id": "runic",
+      "name": "Rune",
+      "status": "active_deposit",
+      "sample_items": [
+        "forbidden_arcanus:rune"
+      ],
+      "diagnostic_refs": [
+        "al",
+        "si",
+        "arc"
+      ],
+      "sample_source": "bertie_runic",
+      "scanner_targets": [
+        "forbidden_arcanus:runic_darkstone",
+        "forbidden_arcanus:runic_deepslate",
+        "forbidden_arcanus:runic_stone"
+      ],
+      "notes": "Arcane-modified refractory aluminosilicate glyph carrier.",
+      "chemical_formula": "Al2SiO5·Ac",
+      "formula_basis": "Arcane-modified refractory aluminosilicate glyph carrier.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "forbidden_arcanus:rune": {
+          "formula": "Al2SiO5·Ac",
+          "diagnostic_refs": [
+            "al",
+            "si",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_runic"
+    },
+    {
+      "id": "stellarite",
+      "name": "Stellarite",
+      "status": "active_deposit",
+      "sample_items": [
+        "forbidden_arcanus:stellarite_piece"
+      ],
+      "diagnostic_refs": [
+        "be",
+        "al",
+        "arc"
+      ],
+      "sample_source": "bertie_stellarite",
+      "scanner_targets": [
+        "forbidden_arcanus:stella_arcanum"
+      ],
+      "notes": "Arcane-modified chrysoberyl-type beryllium aluminate; hard crystalline host.",
+      "chemical_formula": "BeAl2O4·Ac",
+      "formula_basis": "Arcane-modified chrysoberyl-type beryllium aluminate; hard crystalline host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "forbidden_arcanus:stellarite_piece": {
+          "formula": "BeAl2O4·Ac",
+          "diagnostic_refs": [
+            "be",
+            "al",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_stellarite"
+    },
+    {
+      "id": "mithril",
+      "name": "Mithril",
+      "status": "active_deposit",
+      "sample_items": [
+        "irons_spellbooks:mithril_ingot",
+        "irons_spellbooks:raw_mithril"
+      ],
+      "diagnostic_refs": [
+        "ti",
+        "al",
+        "arc"
+      ],
+      "sample_source": "bertie_mithril",
+      "scanner_targets": [
+        "irons_spellbooks:deepslate_mithril_ore",
+        "irons_spellbooks:mithril_ore"
+      ],
+      "notes": "Arcane-modified titanium aluminide primary phase; a light metallic host.",
+      "chemical_formula": "Ti3Al·Ac",
+      "formula_basis": "Arcane-modified titanium aluminide primary phase; a light metallic host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "irons_spellbooks:mithril_ingot": {
+          "formula": "(Ti3Al)7(CuZn)2·Ac",
+          "diagnostic_refs": [
+            "ti",
+            "al",
+            "cu",
+            "zn",
+            "arc"
+          ],
+          "basis": "Nominal 7:2 main-phase/binder ratio follows the seven scraps plus two brass-derived Arcane Ingots. Recipe item counts do not establish real molar masses; this is the chosen pack ratio.",
+          "minimum_instrument_tier": 3
+        },
+        "irons_spellbooks:raw_mithril": {
+          "formula": "Ti3Al·Ac",
+          "diagnostic_refs": [
+            "ti",
+            "al",
+            "arc"
+          ],
+          "minimum_instrument_tier": 3
+        }
+      },
+      "scanner_source": "bertie_mithril_ore",
+      "profile_policy": "Use the ore profile for scanner targets; sample-specific added ingredients must not become ore targets. All item forms still share the ore-family calibration."
+    },
+    {
+      "id": "tourmaline",
+      "name": "Tourmaline",
+      "status": "active_deposit",
+      "sample_items": [
+        "magitech:tourmaline"
+      ],
+      "diagnostic_refs": [
+        "na",
+        "li",
+        "al",
+        "b",
+        "si"
+      ],
+      "sample_source": "bertie_tourmaline",
+      "scanner_targets": [
+        "magitech:deepslate_tourmaline_ore",
+        "magitech:tourmaline_ore"
+      ],
+      "notes": "Primary ore/mineral material. Gem, crystal or Rune substitutes for an ingot where the family has no metal forms.",
+      "chemical_formula": "Na(Li1.5Al1.5)Al6(BO3)3Si6O18(OH)4",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "magitech:tourmaline": {
+          "formula": "Na(Li1.5Al1.5)Al6(BO3)3Si6O18(OH)4",
+          "diagnostic_refs": [
+            "na",
+            "li",
+            "al",
+            "b",
+            "si"
+          ],
+          "minimum_instrument_tier": 3
+        }
+      },
+      "scanner_source": "bertie_tourmaline"
+    },
+    {
+      "id": "cthonic_gold",
+      "name": "Cthonic Gold",
+      "status": "active_deposit",
+      "sample_items": [
+        "malum:cthonic_gold"
+      ],
+      "diagnostic_refs": [
+        "au",
+        "arc"
+      ],
+      "sample_source": "bertie_cthonic_gold",
+      "scanner_targets": [
+        "malum:cthonic_gold_ore"
+      ],
+      "notes": "Gold modified by arcana, explicitly supported by Malum lore.",
+      "chemical_formula": "Au·Ac",
+      "formula_basis": "Gold modified by arcana, explicitly supported by Malum lore.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "malum:cthonic_gold": {
+          "formula": "Au·Ac",
+          "diagnostic_refs": [
+            "au",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_cthonic_gold"
+    },
+    {
+      "id": "soulstone",
+      "name": "Soulstone",
+      "status": "active_deposit",
+      "sample_items": [
+        "malum:refined_soulstone"
+      ],
+      "diagnostic_refs": [
+        "fe",
+        "si",
+        "arc"
+      ],
+      "sample_source": "bertie_soulstone",
+      "scanner_targets": [
+        "malum:deepslate_soulstone_ore",
+        "malum:soulstone_ore"
+      ],
+      "notes": "Ore phase: arcane-modified fayalite/iron silicate. Soul is not a separate component.",
+      "chemical_formula": "Fe2SiO4·Ac",
+      "formula_basis": "Ore phase: arcane-modified fayalite/iron silicate. Soul is not a separate component.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "malum:refined_soulstone": {
+          "formula": "(Fe2SiO4+C)·Ac",
+          "diagnostic_refs": [
+            "fe",
+            "si",
+            "c2",
+            "arc"
+          ],
+          "basis": "Refined specimen includes the diamond/carbon added by the current Bertie recipe. That added C is not an ore constituent.",
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_soulstone_ore",
+      "profile_policy": "Use the ore profile for scanner targets; sample-specific added ingredients must not become ore targets. All item forms still share the ore-family calibration."
+    },
+    {
+      "id": "brilliance",
+      "name": "Brilliance",
+      "status": "active_deposit",
+      "sample_items": [
+        "malum:refined_brilliance"
+      ],
+      "diagnostic_refs": [
+        "ca",
+        "p",
+        "f",
+        "arc"
+      ],
+      "sample_source": "bertie_brilliance",
+      "scanner_targets": [
+        "malum:brilliant_deepslate",
+        "malum:brilliant_stone"
+      ],
+      "notes": "Arcane-modified fluorapatite; a real luminescent phosphate host for condensed experience.",
+      "chemical_formula": "Ca5(PO4)3F·Ac",
+      "formula_basis": "Arcane-modified fluorapatite; a real luminescent phosphate host for condensed experience.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "malum:refined_brilliance": {
+          "formula": "Ca5(PO4)3F·Ac",
+          "diagnostic_refs": [
+            "ca",
+            "p",
+            "f",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_brilliance"
+    },
+    {
+      "id": "fluorite",
+      "name": "Fluorite",
+      "status": "active_deposit",
+      "sample_items": [
+        "mekanism:fluorite_gem"
+      ],
+      "diagnostic_refs": [
+        "ca",
+        "f"
+      ],
+      "sample_source": "bertie_fluorite",
+      "scanner_targets": [
+        "mekanism:deepslate_fluorite_ore",
+        "mekanism:fluorite_ore"
+      ],
+      "notes": "Primary ore/mineral material. Gem, crystal or Rune substitutes for an ingot where the family has no metal forms.",
+      "chemical_formula": "CaF2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "mekanism:fluorite_gem": {
+          "formula": "CaF2",
+          "diagnostic_refs": [
+            "ca",
+            "f"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_fluorite"
+    },
+    {
+      "id": "uraninite",
+      "name": "Uraninite",
+      "status": "active_deposit",
+      "sample_items": [
+        "powah:uraninite"
+      ],
+      "diagnostic_refs": [
+        "u"
+      ],
+      "sample_source": "bertie_uraninite",
+      "scanner_targets": [
+        "powah:deepslate_uraninite_ore",
+        "powah:deepslate_uraninite_ore_dense",
+        "powah:deepslate_uraninite_ore_poor",
+        "powah:uraninite_ore",
+        "powah:uraninite_ore_dense",
+        "powah:uraninite_ore_poor"
+      ],
+      "notes": "Primary ore/mineral material. Gem, crystal or Rune substitutes for an ingot where the family has no metal forms.",
+      "chemical_formula": "UO2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "powah:uraninite": {
+          "formula": "UO2",
+          "diagnostic_refs": [
+            "u"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_uraninite"
+    },
+    {
+      "id": "malachite",
+      "name": "Malachite",
+      "status": "active_deposit",
+      "sample_items": [
+        "pastel:raw_malachite"
+      ],
+      "diagnostic_refs": [
+        "cu"
+      ],
+      "sample_source": "bertie_malachite",
+      "scanner_targets": [
+        "pastel:blackslag_malachite_ore",
+        "pastel:deepslate_malachite_ore",
+        "pastel:malachite_ore"
+      ],
+      "notes": "Primary ore/mineral material. Gem, crystal or Rune substitutes for an ingot where the family has no metal forms.",
+      "chemical_formula": "Cu2CO3(OH)2",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "pastel:raw_malachite": {
+          "formula": "Cu2CO3(OH)2",
+          "diagnostic_refs": [
+            "cu"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_malachite"
+    },
+    {
+      "id": "moonstone",
+      "name": "Moonstone",
+      "status": "active_deposit",
+      "sample_items": [
+        "pastel:moonstone_shard"
+      ],
+      "diagnostic_refs": [
+        "k",
+        "al",
+        "si"
+      ],
+      "sample_source": "bertie_moonstone",
+      "scanner_targets": [
+        "pastel:blackslag_moonstone_ore",
+        "pastel:budding_moonstone",
+        "pastel:deepslate_moonstone_ore",
+        "pastel:moonstone_block",
+        "pastel:moonstone_cluster",
+        "pastel:moonstone_ore"
+      ],
+      "notes": "Primary ore/mineral material. Gem, crystal or Rune substitutes for an ingot where the family has no metal forms.",
+      "chemical_formula": "KAlSi3O8",
+      "formula_basis": "Selected ideal real mineral phase; native diagnostic reference simplifications remain where already defined.",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "pastel:moonstone_shard": {
+          "formula": "KAlSi3O8",
+          "diagnostic_refs": [
+            "k",
+            "al",
+            "si"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_moonstone"
+    },
+    {
+      "id": "solar_core",
+      "name": "Solar Core",
+      "status": "active_deposit",
+      "sample_items": [
+        "hazennstuff:solar_core"
+      ],
+      "diagnostic_refs": [
+        "ca",
+        "w",
+        "arc"
+      ],
+      "sample_source": "bertie_solar_core",
+      "scanner_targets": [
+        "hazennstuff:solar_core_blackstone_ore"
+      ],
+      "notes": "Arcane-modified scheelite/calcium tungstate; a real luminescent mineral host.",
+      "chemical_formula": "CaWO4·Ac",
+      "formula_basis": "Arcane-modified scheelite/calcium tungstate; a real luminescent mineral host.",
+      "formula_status": "proposed_pack_definition",
+      "sample_profiles": {
+        "hazennstuff:solar_core": {
+          "formula": "CaWO4·Ac",
+          "diagnostic_refs": [
+            "ca",
+            "w",
+            "arc"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bertie_solar_core"
+    },
+    {
+      "id": "bismuth",
+      "name": "Bismuth",
+      "status": "active_deposit",
+      "sample_items": [
+        "pastel:bismuth_flake"
+      ],
+      "diagnostic_refs": [
+        "bi"
+      ],
+      "sample_source": "bismuth",
+      "scanner_targets": [
+        "pastel:large_bismuth_bud",
+        "pastel:small_bismuth_bud",
+        "unbound:bismuth_ore"
+      ],
+      "notes": "Include naturally generated Bismuth buds/crystals, not just ordinary ore blocks. Reuse native Bi.",
+      "chemical_formula": "Bi",
+      "formula_basis": "Elemental material",
+      "formula_status": "real_element_or_ideal_mineral",
+      "sample_profiles": {
+        "pastel:bismuth_flake": {
+          "formula": "Bi",
+          "diagnostic_refs": [
+            "bi"
+          ],
+          "minimum_instrument_tier": 1
+        }
+      },
+      "scanner_source": "bismuth"
+    }
+  ],
+  "native_sample_aliases": [],
+  "explicit_exclusions": {
+    "anvilcraft:void_stone": "Void Matter remains excluded; no natural placement was established.",
+    "bertieprogression:plutonium_ore": "Stale optional ore tag; current retained-material registration contains no Plutonium ore.",
+    "twilightforest:liveroot_block": "Underground biological root, outside this ore-material expansion.",
+    "anvilcraft:earth_core_shard_ore": "No natural generation; explicitly excluded from the scanner plan.",
+    "pastel:blackslag_onyx_ore": "No natural generation; Onyx is explicitly excluded.",
+    "pastel:deepslate_onyx_ore": "No natural generation; Onyx is explicitly excluded.",
+    "pastel:onyx_ore": "No natural generation; Onyx is explicitly excluded.",
+    "bertieprogression:tharsite_ore": "Excluded from this lab/scanner expansion for now by explicit selection.",
+    "bertieprogression:corronium_ore": "Excluded from this lab/scanner expansion for now by explicit selection.",
+    "bertieprogression:solerium_ore": "Excluded from this lab/scanner expansion for now by explicit selection."
+  },
+  "discarded_scope": [
+    "Non-ore biological/chemical experiments",
+    "Manufactured alloys without an ore deposit",
+    "Dragon Breath and sulfuric-acid expansion",
+    "Confinement and Mutable fields",
+    "Hazennstuff ores other than Solar Core"
+  ],
+  "reuse_native_reference_ids": [
+    "au",
+    "be",
+    "bi",
+    "c2",
+    "ca",
+    "co2",
+    "cu",
+    "fe",
+    "h",
+    "ir",
+    "k",
+    "li",
+    "na",
+    "ni",
+    "os",
+    "p",
+    "pb",
+    "rs",
+    "s",
+    "si",
+    "ti"
+  ],
+  "reference_definitions_to_import": [
+    {
+      "id": "ag",
+      "name": "Silver",
+      "symbol": "Ag",
+      "color": "DCE4ED",
+      "lines": [
+        {
+          "nm": 520.9078,
+          "strength": 3,
+          "label": "Ag",
+          "width": 0.0
+        },
+        {
+          "nm": 546.5497,
+          "strength": 3,
+          "label": "Ag",
+          "width": 0.0
+        },
+        {
+          "nm": 768.7772,
+          "strength": 2,
+          "label": "Ag",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/silvertable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "al",
+      "name": "Aluminium",
+      "symbol": "Al",
+      "color": "BDD8F2",
+      "lines": [
+        {
+          "nm": 394.4006,
+          "strength": 2,
+          "label": "Al",
+          "width": 0.0
+        },
+        {
+          "nm": 396.152,
+          "strength": 3,
+          "label": "Al",
+          "width": 0.0
+        },
+        {
+          "nm": 669.6015,
+          "strength": 2,
+          "label": "Al",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/aluminumtable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "arc",
+      "name": "Arcane",
+      "symbol": "Ac",
+      "color": "B064F5",
+      "lines": [
+        {
+          "nm": 454.5,
+          "strength": 3,
+          "label": "Ac",
+          "width": 0.0
+        },
+        {
+          "nm": 602.0,
+          "strength": 2,
+          "label": "Ac",
+          "width": 0.0
+        },
+        {
+          "nm": 746.0,
+          "strength": 3,
+          "label": "Ac",
+          "width": 0.0
+        }
+      ],
+      "basis": "The only newly allowed fictional component. Ac denotes Arcane in this pack, not actinium.",
+      "origin": "Authored fictional Arcane reference"
+    },
+    {
+      "id": "b",
+      "name": "Boron",
+      "symbol": "B",
+      "color": "C5BD92",
+      "lines": [
+        {
+          "nm": 412.1933,
+          "strength": 3,
+          "label": "B",
+          "width": 0.0
+        },
+        {
+          "nm": 419.4792,
+          "strength": 2,
+          "label": "B",
+          "width": 0.0
+        },
+        {
+          "nm": 608.044,
+          "strength": 2,
+          "label": "B",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/borontable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "f",
+      "name": "Fluorine",
+      "symbol": "F",
+      "color": "B4E694",
+      "lines": [
+        {
+          "nm": 623.9651,
+          "strength": 2,
+          "label": "F",
+          "width": 0.0
+        },
+        {
+          "nm": 685.603,
+          "strength": 3,
+          "label": "F",
+          "width": 0.0
+        },
+        {
+          "nm": 703.7469,
+          "strength": 3,
+          "label": "F",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/fluorinetable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "pt",
+      "name": "Platinum",
+      "symbol": "Pt",
+      "color": "D5CDE5",
+      "lines": [
+        {
+          "nm": 381.86874,
+          "strength": 3,
+          "label": "Pt",
+          "width": 0.0
+        },
+        {
+          "nm": 444.255,
+          "strength": 2,
+          "label": "Pt",
+          "width": 0.0
+        },
+        {
+          "nm": 530.102,
+          "strength": 2,
+          "label": "Pt",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/platinumtable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "sn",
+      "name": "Tin",
+      "symbol": "Sn",
+      "color": "C7CDD8",
+      "lines": [
+        {
+          "nm": 380.1011,
+          "strength": 3,
+          "label": "Sn",
+          "width": 0.0
+        },
+        {
+          "nm": 452.4734,
+          "strength": 2,
+          "label": "Sn",
+          "width": 0.0
+        },
+        {
+          "nm": 563.1676,
+          "strength": 2,
+          "label": "Sn",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/tintable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "u",
+      "name": "Uranium",
+      "symbol": "U",
+      "color": "91A268",
+      "lines": [
+        {
+          "nm": 381.19911,
+          "strength": 3,
+          "label": "U",
+          "width": 0.0
+        },
+        {
+          "nm": 394.38161,
+          "strength": 2,
+          "label": "U",
+          "width": 0.0
+        },
+        {
+          "nm": 591.5385,
+          "strength": 2,
+          "label": "U",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/uraniumtable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "w",
+      "name": "Tungsten",
+      "symbol": "W",
+      "color": "B0AAB8",
+      "lines": [
+        {
+          "nm": 400.875,
+          "strength": 3,
+          "label": "W",
+          "width": 0.0
+        },
+        {
+          "nm": 407.436,
+          "strength": 2,
+          "label": "W",
+          "width": 0.0
+        },
+        {
+          "nm": 429.461,
+          "strength": 2,
+          "label": "W",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/tungstentable2.htm",
+      "origin": "NIST"
+    },
+    {
+      "id": "zn",
+      "name": "Zinc",
+      "symbol": "Zn",
+      "color": "9ABACB",
+      "lines": [
+        {
+          "nm": 468.01359,
+          "strength": 2,
+          "label": "Zn",
+          "width": 0.0
+        },
+        {
+          "nm": 472.21569,
+          "strength": 2,
+          "label": "Zn",
+          "width": 0.0
+        },
+        {
+          "nm": 481.05321,
+          "strength": 3,
+          "label": "Zn",
+          "width": 0.0
+        }
+      ],
+      "basis": "https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable2.htm",
+      "origin": "NIST"
+    }
+  ],
+  "reference_definitions_required": [],
+  "diagnostic_policy": "Bulk material formulas are defined using real atoms plus Ac. The lab uses selected diagnostic lines, following native Unbound; bound oxygen is not the atmospheric O2 reference. Raw-ore markers exclude ingredients added during refining.",
+  "activation_policy": "Corronium, Solerium and Tharsite are excluded from the active expansion. Onyx and Earth Core remain excluded for no natural generation.",
+  "implementation_requirements": [
+    "Load the supplied nine real-element definitions and sole new fictional reference Ac. Remove the previous material-specific/Soul placeholder references from this extension.",
+    "Use sample_profiles when a raw/ingot/refined sample has a different formula. Use scanner_source and the ore diagnostic_refs for block targets; preserve one ore-family calibration.",
+    "Register the accepted item IDs in Spectra sample lookup; defining only tags will not make the machine accept them.",
+    "Extend Uses ore-block mappings; lab recognition alone does not extend scanner coverage.",
+    "Reuse native references and source flags only where the subject is the same material; preserve existing native recipes and creature-discovery flags.",
+    "Do not assume a resource-pack override changes assets/unbound/spectral.json: native code reads it via the classloader. Use a Bertie integration hook or equivalent verified startup extension.",
+    "Keep ore aliases/forms in one calibration, not separate sample-discovery chores.",
+    "Evaluate scannability against active ore targets so future-only families do not add empty scanner bands."
+  ],
+  "coverage": {
+    "families": 42,
+    "family_statuses": {
+      "active_deposit": 42
+    },
+    "unique_target_blocks": 128,
+    "sample_item_ids": 64,
+    "audit_non_native_candidates": 103,
+    "unmapped_candidates": [],
+    "duplicate_target_assignments": [],
+    "hazennstuff_targets": [
+      "hazennstuff:solar_core_blackstone_ore"
+    ],
+    "omitted_uninstalled_compat_targets": [],
+    "unresolved_sample_assets": [],
+    "new_sample_item_ids": 51
+  },
+  "evidence": [
+    "ore_materials.json: 21 canonical metal families",
+    "ore_dust_families.json and conventional raw/ingot/ore tags",
+    "Installed resource/feature/loot audit plus current Progression overrides",
+    "retained_stellaris_materials.json: three restored space ores",
+    "Current SolarPoolOreFeature and its biome modifier",
+    "Native Spectra.sample, Uses.blocks and Uses.scannable"
+  ],
+  "chemical_formula_conventions": {
+    "Ac": "Arcane, not actinium. The dot-Ac suffix marks arcane modification, not a measured molar loading.",
+    "alloys": "Subscripts are nominal elemental/phase ratios, not a claim of a discrete molecular species.",
+    "raw_materials": "Formulas describe the selected material phase, not every gangue grain or surface oxide.",
+    "oxygen": "Bound O remains in formulas; native atmospheric O2 is not substituted for it.",
+    "sources": "Fictional assignments are authored Bertie definitions grounded in real host materials and available recipe/lore evidence; they are not reported mod canon."
+  },
+  "chemistry_validation": {
+    "all_added_reference_symbols": [
+      "Ac",
+      "Ag",
+      "Al",
+      "B",
+      "F",
+      "Pt",
+      "Sn",
+      "U",
+      "W",
+      "Zn"
+    ],
+    "only_new_fictional_reference": "Ac",
+    "diagnostic_references_grounded_in_formula": true,
+    "accepted_samples_checked": 64,
+    "permanently_unresolvable_samples": [],
+    "required_references_reachable_at_mk4": true,
+    "formula_elements": [
+      "Ac",
+      "Ag",
+      "Al",
+      "Au",
+      "B",
+      "Be",
+      "Bi",
+      "C",
+      "Ca",
+      "Cu",
+      "F",
+      "Fe",
+      "H",
+      "Ir",
+      "K",
+      "Li",
+      "Na",
+      "Ni",
+      "O",
+      "Os",
+      "P",
+      "Pb",
+      "Pt",
+      "S",
+      "Si",
+      "Sn",
+      "Ti",
+      "U",
+      "W",
+      "Zn"
+    ],
+    "added_ingredient_profiles": [
+      "Mithril Ingot",
+      "Netherite Ingot",
+      "Refined Soulstone"
+    ]
+  }
+}

@@ -1,0 +1,3311 @@
+{
+  "ores": [
+    {
+      "ore": "unbound:ilmenite_ore",
+      "world": "moon",
+      "tool": "iron",
+      "attempts": 9,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      },
+      "drop": "unbound:raw_ilmenite",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:selenite_ore",
+      "world": "moon",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 6
+        },
+        "max_inclusive": {
+          "absolute": 40
+        }
+      },
+      "drop": "unbound:selenite_shard",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:cinnabar_ore",
+      "world": "mercury",
+      "tool": "stone",
+      "attempts": 8,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      },
+      "drop": "unbound:raw_cinnabar",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:iridium_ore",
+      "world": "mercury",
+      "tool": "diamond",
+      "attempts": 3,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 6
+        },
+        "max_inclusive": {
+          "absolute": 40
+        }
+      },
+      "drop": "unbound:raw_iridium",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:galena_ore",
+      "world": "venus",
+      "tool": "iron",
+      "attempts": 8,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 50
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:raw_galena",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:bismuth_ore",
+      "world": "venus",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      },
+      "drop": "unbound:bismuth_crystal",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:brimstone_ore",
+      "world": "venus",
+      "tool": "stone",
+      "attempts": 10,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      },
+      "drop": "unbound:sulfur",
+      "min": 2,
+      "max": 4,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:perchlorate_ore",
+      "world": "mars",
+      "tool": "stone",
+      "attempts": 9,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      },
+      "drop": "unbound:perchlorate_salt",
+      "min": 2,
+      "max": 3,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:olivine_ore",
+      "world": "mars",
+      "tool": "iron",
+      "attempts": 3,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 6
+        },
+        "max_inclusive": {
+          "absolute": 40
+        }
+      },
+      "drop": "unbound:peridot",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:ammonia_crystal_ore",
+      "world": "jupiter",
+      "tool": "stone",
+      "attempts": 6,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 130
+        },
+        "max_inclusive": {
+          "absolute": 240
+        }
+      },
+      "drop": "unbound:ammonia_crystal",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:phosphorus_cloud_ore",
+      "world": "jupiter",
+      "tool": "stone",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 60
+        },
+        "max_inclusive": {
+          "absolute": 240
+        }
+      },
+      "drop": "unbound:red_phosphorus",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:helium_pearl_ore",
+      "world": "saturn",
+      "tool": "stone",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 50
+        },
+        "max_inclusive": {
+          "absolute": 200
+        }
+      },
+      "drop": "unbound:helium_pearl",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:tholin_amber_ore",
+      "world": "saturn",
+      "tool": "stone",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 60
+        },
+        "max_inclusive": {
+          "absolute": 230
+        }
+      },
+      "drop": "unbound:tholin_amber",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:diamond_hail_ore",
+      "world": "uranus",
+      "tool": "iron",
+      "attempts": 3,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 60
+        },
+        "max_inclusive": {
+          "absolute": 200
+        }
+      },
+      "drop": "minecraft:diamond",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:methane_clathrate_ore",
+      "world": "uranus",
+      "tool": "stone",
+      "attempts": 6,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 60
+        },
+        "max_inclusive": {
+          "absolute": 200
+        }
+      },
+      "drop": "unbound:methane_crystal",
+      "min": 1,
+      "max": 2,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:black_diamond_ore",
+      "world": "neptune",
+      "tool": "diamond",
+      "attempts": 3,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 50
+        },
+        "max_inclusive": {
+          "absolute": 180
+        }
+      },
+      "drop": "unbound:black_diamond",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:superionic_ice_ore",
+      "world": "neptune",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 50
+        },
+        "max_inclusive": {
+          "absolute": 200
+        }
+      },
+      "drop": "unbound:superionic_shard",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:resonant_ore",
+      "world": "facet",
+      "tool": "iron",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 140
+        }
+      },
+      "drop": "unbound:resonant_shard",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:lumen_ore",
+      "world": "facet",
+      "tool": "stone",
+      "attempts": 6,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 140
+        }
+      },
+      "drop": "unbound:lumen_dust",
+      "min": 1,
+      "max": 3,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:hive_amber_ore",
+      "world": "hive",
+      "tool": "stone",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:hive_amber",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:chitin_ore",
+      "world": "hive",
+      "tool": "iron",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:shulker_chitin",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:storm_glass_ore",
+      "world": "breath",
+      "tool": "iron",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 150
+        },
+        "max_inclusive": {
+          "absolute": 240
+        }
+      },
+      "drop": "unbound:charged_glass",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:vapour_pearl_ore",
+      "world": "breath",
+      "tool": "stone",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 150
+        },
+        "max_inclusive": {
+          "absolute": 240
+        }
+      },
+      "drop": "unbound:vapour_pearl",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:lens_crystal_ore",
+      "world": "eye",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:lens_crystal",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:pigment_ore",
+      "world": "eye",
+      "tool": "stone",
+      "attempts": 6,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:iris_pigment",
+      "min": 2,
+      "max": 4,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:adamant_ore",
+      "world": "forge",
+      "tool": "diamond",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 100
+        }
+      },
+      "drop": "unbound:raw_adamant",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:salamander_ore",
+      "world": "forge",
+      "tool": "iron",
+      "attempts": 5,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 100
+        }
+      },
+      "drop": "unbound:salamander_crystal",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:marrow_ore",
+      "world": "ash",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 140
+        }
+      },
+      "drop": "unbound:soul_marrow",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:wraith_iron_ore",
+      "world": "ash",
+      "tool": "iron",
+      "attempts": 7,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:raw_wraith_iron",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:verdigris_ore",
+      "world": "mycelium",
+      "tool": "stone",
+      "attempts": 8,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:raw_verdigris",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:spore_gem_ore",
+      "world": "mycelium",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      },
+      "drop": "unbound:spore_gem",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:dense_iron_ore",
+      "world": "lament",
+      "tool": "iron",
+      "attempts": 6,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 130
+        }
+      },
+      "drop": "unbound:raw_dense_iron",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:sorrow_quartz_ore",
+      "world": "lament",
+      "tool": "iron",
+      "attempts": 4,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 130
+        }
+      },
+      "drop": "unbound:sorrow_quartz",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:tetrataenite_ore",
+      "world": "solar_system",
+      "tool": "iron",
+      "attempts": 30,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -190
+        },
+        "max_inclusive": {
+          "absolute": 190
+        }
+      },
+      "drop": "unbound:raw_tetrataenite",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:osmiridium_ore",
+      "world": "solar_system",
+      "tool": "diamond",
+      "attempts": 24,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -190
+        },
+        "max_inclusive": {
+          "absolute": 190
+        }
+      },
+      "drop": "unbound:raw_osmiridium",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:pallasite_olivine_ore",
+      "world": "solar_system",
+      "tool": "iron",
+      "attempts": 30,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -190
+        },
+        "max_inclusive": {
+          "absolute": 190
+        }
+      },
+      "drop": "unbound:pallasite_olivine",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:natron_ore",
+      "world": "ceres",
+      "tool": "stone",
+      "attempts": 7,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 36
+        },
+        "max_inclusive": {
+          "absolute": 112
+        }
+      },
+      "drop": "unbound:natron",
+      "min": 1,
+      "max": 2,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:seafloor_sulfide_ore",
+      "world": "europa",
+      "tool": "stone",
+      "attempts": 9,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 2
+        },
+        "max_inclusive": {
+          "absolute": 44
+        }
+      },
+      "drop": "minecraft:raw_copper",
+      "min": 2,
+      "max": 4,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:peleite_ore",
+      "world": "io",
+      "tool": "stone",
+      "attempts": 11,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 20
+        },
+        "max_inclusive": {
+          "absolute": 118
+        }
+      },
+      "drop": "unbound:peleite",
+      "min": 1,
+      "max": 2,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:cocrystal_ore",
+      "world": "titan",
+      "tool": "stone",
+      "attempts": 34,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 62
+        },
+        "max_inclusive": {
+          "absolute": 82
+        }
+      },
+      "drop": "unbound:benzene_cocrystal",
+      "min": 1,
+      "max": 2,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:phosphate_rime",
+      "world": "enceladus",
+      "tool": "stone",
+      "attempts": 9,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 56
+        },
+        "max_inclusive": {
+          "absolute": 112
+        }
+      },
+      "drop": "unbound:phosphate_salt",
+      "min": 1,
+      "max": 2,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:chevronite_ore",
+      "world": "miranda",
+      "tool": "stone",
+      "attempts": 7,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 30
+        },
+        "max_inclusive": {
+          "absolute": 300
+        }
+      },
+      "drop": "unbound:chevronite",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:captive_ice_ore",
+      "world": "triton",
+      "tool": "stone",
+      "attempts": 8,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 40
+        },
+        "max_inclusive": {
+          "absolute": 112
+        }
+      },
+      "drop": "unbound:captive_ice",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:heart_ice_ore",
+      "world": "pluto",
+      "tool": "iron",
+      "attempts": 24,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 58
+        },
+        "max_inclusive": {
+          "absolute": 78
+        }
+      },
+      "drop": "unbound:heart_ice",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:condensed_void_ore",
+      "world": "interrift",
+      "tool": "iron",
+      "attempts": 26,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -124
+        },
+        "max_inclusive": {
+          "absolute": 124
+        }
+      },
+      "drop": "unbound:condensed_void",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:chorus_quartz_ore",
+      "world": "interrift",
+      "tool": "iron",
+      "attempts": 22,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -124
+        },
+        "max_inclusive": {
+          "absolute": 124
+        }
+      },
+      "drop": "unbound:chorus_quartz",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    },
+    {
+      "ore": "unbound:ringwoodite_ore",
+      "world": "depths",
+      "tool": "iron",
+      "attempts": 26,
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -124
+        },
+        "max_inclusive": {
+          "absolute": 124
+        }
+      },
+      "drop": "unbound:ringwoodite",
+      "min": 1,
+      "max": 1,
+      "fortune": true
+    }
+  ],
+  "drops": [
+    {
+      "entity": "unbound:abyssal_gale",
+      "item": "unbound:gale_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:abyssal_gale",
+      "item": "unbound:black_diamond",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:acid_matriarch",
+      "item": "unbound:caustic_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:acid_matriarch",
+      "item": "unbound:acid_gland",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:acid_toad",
+      "item": "unbound:acid_gland",
+      "min": 1,
+      "max": 1,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:acid_toad",
+      "item": "unbound:toad_leg",
+      "min": 1,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:ash_wraith",
+      "item": "unbound:soul_ember",
+      "min": 0,
+      "max": 1,
+      "chance": 0.65,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ash_wraith",
+      "item": "unbound:soul_ash",
+      "min": 0,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:azotosome",
+      "item": "unbound:azotosome_film",
+      "min": 1,
+      "max": 2,
+      "chance": 0.9,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:azure_lantern",
+      "item": "unbound:lantern_gel",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:azure_lantern",
+      "item": "minecraft:glow_ink_sac",
+      "min": 0,
+      "max": 1,
+      "chance": 0.2,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:barrow_sphinx",
+      "item": "unbound:sphinx_mask",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:barrow_sphinx",
+      "item": "unbound:moonstone",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:barrow_sphinx",
+      "item": "unbound:stardust",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:bell_watcher",
+      "item": "unbound:bell_tongue",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:bell_watcher",
+      "item": "unbound:sorrow_quartz",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:bell_watcher",
+      "item": "unbound:raw_dense_iron",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:belt_devourer",
+      "item": "unbound:millstone_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:belt_devourer",
+      "item": "unbound:raw_osmiridium",
+      "min": 6,
+      "max": 10,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:belt_devourer",
+      "item": "unbound:pallasite_olivine",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:belt_floater",
+      "item": "unbound:float_bladder",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:belt_floater",
+      "item": "minecraft:string",
+      "min": 1,
+      "max": 2,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:belt_floater",
+      "item": "unbound:belt_slice",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:bone_gnawer",
+      "item": "unbound:gnawer_fang",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:bone_gnawer",
+      "item": "minecraft:bone",
+      "min": 0,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:bone_gnawer",
+      "item": "unbound:soul_marrow",
+      "min": 0,
+      "max": 1,
+      "chance": 0.12,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:bone_gnawer",
+      "item": "unbound:gnawer_ribs",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:cache_angler",
+      "item": "unbound:decoy_lantern",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cairn_chieftain",
+      "item": "unbound:chieftain_torc",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cairn_chieftain",
+      "item": "unbound:wraith_iron_ingot",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cairn_chieftain",
+      "item": "unbound:soul_marrow",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:canyon_roller",
+      "item": "unbound:hematite_plate",
+      "min": 1,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cap_croaker",
+      "item": "unbound:croaker_cap",
+      "min": 0,
+      "max": 1,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cap_croaker",
+      "item": "unbound:croaker_legs",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:chorus_drifter",
+      "item": "unbound:chorus_pod",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cinder_walker",
+      "item": "unbound:cinder_heart",
+      "min": 0,
+      "max": 1,
+      "chance": 0.45,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cinder_walker",
+      "item": "minecraft:magma_cream",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cliffhanger",
+      "item": "unbound:chevronite",
+      "min": 0,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cliffhanger",
+      "item": "unbound:miranda_bright",
+      "min": 0,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cloud_angler",
+      "item": "unbound:angler_lure",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cloud_angler",
+      "item": "unbound:helium_pearl",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cloud_angler",
+      "item": "unbound:tholin_amber",
+      "min": 1,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:cloud_kraken",
+      "item": "unbound:kraken_beak",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cloud_kraken",
+      "item": "unbound:black_diamond",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cloud_kraken",
+      "item": "minecraft:ink_sac",
+      "min": 2,
+      "max": 4,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:comb_drone",
+      "item": "unbound:drone_stinger",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:comb_drone",
+      "item": "unbound:chorus_wax",
+      "min": 0,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:crater_tortoise",
+      "item": "unbound:crater_shell",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:crater_tortoise",
+      "item": "unbound:selenite_shard",
+      "min": 0,
+      "max": 1,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cryo_monarch",
+      "item": "unbound:cryo_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cryo_monarch",
+      "item": "minecraft:diamond",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cryo_monarch",
+      "item": "unbound:cryo_essence",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:cryo_wisp",
+      "item": "unbound:cryo_essence",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:cryo_wisp",
+      "item": "minecraft:packed_ice",
+      "min": 0,
+      "max": 1,
+      "chance": 0.25,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:cyan_puff",
+      "item": "unbound:cyan_down",
+      "min": 0,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dark_spot_maw",
+      "item": "unbound:maw_lure",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dark_spot_maw",
+      "item": "minecraft:prismarine_crystals",
+      "min": 0,
+      "max": 2,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:dawn_rover",
+      "item": "minecraft:iron_nugget",
+      "min": 2,
+      "max": 5,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dawn_rover",
+      "item": "minecraft:copper_ingot",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:dawn_rover",
+      "item": "unbound:core_sample",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:diamond_crab",
+      "item": "unbound:diamond_splinter",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:diamond_crab",
+      "item": "minecraft:diamond",
+      "min": 1,
+      "max": 1,
+      "chance": 0.05,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:diamond_crab",
+      "item": "unbound:crab_claw",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:dune_maw",
+      "item": "unbound:maw_mandible",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dune_maw",
+      "item": "unbound:perchlorate_salt",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:dune_serpent",
+      "item": "unbound:serpent_fang",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dune_serpent",
+      "item": "unbound:tholin_sand",
+      "min": 1,
+      "max": 3,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:dust_devil",
+      "item": "unbound:dust_core",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:dust_devil",
+      "item": "minecraft:red_sand",
+      "min": 1,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:dust_ray",
+      "item": "unbound:dust_sieve",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:elder_nurse",
+      "item": "unbound:nurse_ladle",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:elder_nurse",
+      "item": "unbound:chorus_wax",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:elder_nurse",
+      "item": "minecraft:shulker_shell",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:ember_mouse",
+      "item": "unbound:ember_tuft",
+      "min": 0,
+      "max": 1,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ember_mouse",
+      "item": "minecraft:bone_meal",
+      "min": 0,
+      "max": 1,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:endersmith",
+      "item": "unbound:light_tongs",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:endersmith",
+      "item": "unbound:void_shard",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:endersmith",
+      "item": "minecraft:ender_pearl",
+      "min": 1,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:facet_golem",
+      "item": "unbound:facet_core",
+      "min": 1,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:facet_golem",
+      "item": "unbound:facet_dust",
+      "min": 1,
+      "max": 3,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:fire_bubble",
+      "item": "unbound:fire_pearl",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:firegill_salamander",
+      "item": "unbound:fire_gill",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:firegill_salamander",
+      "item": "unbound:salamander_crystal",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:firegill_salamander",
+      "item": "unbound:deep_ember",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:fledgling",
+      "item": "unbound:fledgling_shell",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:fledgling",
+      "item": "unbound:lens_crystal",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:fledgling",
+      "item": "minecraft:feather",
+      "min": 1,
+      "max": 3,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:frost_kite",
+      "item": "unbound:frost_feather",
+      "min": 0,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:frost_kite",
+      "item": "minecraft:feather",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:frost_kite",
+      "item": "unbound:frost_breast",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:fulgurite_crawler",
+      "item": "unbound:fulgurite_segment",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:fulgurite_crawler",
+      "item": "minecraft:glowstone_dust",
+      "min": 0,
+      "max": 1,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:gale_eel",
+      "item": "unbound:gale_fin",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gale_eel",
+      "item": "minecraft:prismarine_crystals",
+      "min": 0,
+      "max": 1,
+      "chance": 0.25,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:gale_eel",
+      "item": "unbound:eel_cut",
+      "min": 1,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:gatekeeper",
+      "item": "unbound:threshold_key",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gatekeeper",
+      "item": "unbound:heart_ice",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:gatekeeper",
+      "item": "unbound:stardust",
+      "min": 12,
+      "max": 20,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:gaze_watcher",
+      "item": "unbound:watcher_iris",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gaze_watcher",
+      "item": "minecraft:ender_pearl",
+      "min": 0,
+      "max": 1,
+      "chance": 0.25,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:geyser_hopper",
+      "item": "unbound:phosphate_salt",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:geyser_hopper",
+      "item": "minecraft:snowball",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:giant_remnant",
+      "item": "unbound:giant_marrow",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:giant_remnant",
+      "item": "unbound:soul_marrow",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:giant_remnant",
+      "item": "unbound:giant_bone",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:giant_remnant",
+      "item": "minecraft:bone",
+      "min": 6,
+      "max": 12,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:gilded_knight",
+      "item": "unbound:gold_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.55,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gilded_knight",
+      "item": "minecraft:gold_nugget",
+      "min": 3,
+      "max": 7,
+      "chance": 0.9,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:gilded_smith",
+      "item": "unbound:living_gold_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gilded_smith",
+      "item": "unbound:smith_apron",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:gilded_smith",
+      "item": "minecraft:gold_ingot",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:gilded_smith",
+      "item": "minecraft:netherite_scrap",
+      "min": 1,
+      "max": 1,
+      "chance": 0.25,
+      "looting": false,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:glacier_worm",
+      "item": "unbound:heart_ice",
+      "min": 1,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:glacier_worm",
+      "item": "unbound:nitrogen_ice",
+      "min": 1,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:glass_hide",
+      "item": "unbound:glass_quill",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:glass_hide",
+      "item": "unbound:sorrow_quartz",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:glass_hide",
+      "item": "unbound:raw_dense_iron",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:gold_skimmer",
+      "item": "unbound:gold_film",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:gold_skimmer",
+      "item": "minecraft:gold_nugget",
+      "min": 0,
+      "max": 1,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:haze_manta",
+      "item": "unbound:sulfur_membrane",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hematite_tyrant",
+      "item": "unbound:hematite_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hematite_tyrant",
+      "item": "unbound:scorpion_stinger",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:hematite_tyrant",
+      "item": "unbound:hematite_plate",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:hematite_tyrant",
+      "item": "minecraft:raw_iron",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:hexagon_sovereign",
+      "item": "unbound:hexagon_core",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hexagon_sovereign",
+      "item": "minecraft:blue_ice",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:hexagon_sovereign",
+      "item": "unbound:helium_pearl",
+      "min": 1,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:hive_queen",
+      "item": "unbound:queen_jelly",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hive_queen",
+      "item": "unbound:chorus_wax",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:hive_queen",
+      "item": "minecraft:shulker_shell",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:hive_warden",
+      "item": "unbound:warden_plate",
+      "min": 1,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hive_warden",
+      "item": "minecraft:shulker_shell",
+      "min": 0,
+      "max": 1,
+      "chance": 0.15,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:hive_warden",
+      "item": "unbound:chorus_wax",
+      "min": 0,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:hollow_diver",
+      "item": "unbound:diver_visor",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hollow_diver",
+      "item": "unbound:air_filter",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:hollow_diver",
+      "item": "unbound:vapour_pearl",
+      "min": 1,
+      "max": 3,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:hollow_hermit",
+      "item": "unbound:hermit_claw",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hunger_shade",
+      "item": "unbound:shadow_clot",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hypha_strangler",
+      "item": "unbound:hypha_bundle",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:hypha_strangler",
+      "item": "minecraft:string",
+      "min": 0,
+      "max": 2,
+      "chance": 0.45,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:ice_jelly",
+      "item": "unbound:frost_stinger",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ilmenite_borer",
+      "item": "unbound:borer_bit",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ilmenite_borer",
+      "item": "unbound:raw_ilmenite",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:ilmenite_borer",
+      "item": "unbound:titanium_ingot",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:iris_mite",
+      "item": "unbound:mite_lens",
+      "min": 0,
+      "max": 1,
+      "chance": 0.55,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:iris_mite",
+      "item": "minecraft:glowstone_dust",
+      "min": 0,
+      "max": 1,
+      "chance": 0.2,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:last_giant",
+      "item": "unbound:last_ember",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:last_giant",
+      "item": "unbound:suncoal",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:last_giant",
+      "item": "unbound:deep_ember",
+      "min": 16,
+      "max": 24,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:last_giant",
+      "item": "unbound:fire_rose",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:lava_serpent",
+      "item": "unbound:obsidian_fang",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:lava_serpent",
+      "item": "minecraft:magma_cream",
+      "min": 1,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:magma_ray",
+      "item": "unbound:basalt_scute",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:mephisto_worm",
+      "item": "unbound:mephisto_cuticle",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:mirror_beetle",
+      "item": "unbound:mirror_elytron",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:mirror_beetle",
+      "item": "unbound:mirror_coating",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:mirror_beetle",
+      "item": "unbound:optical_glass",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:mist_lamb",
+      "item": "unbound:cloud_wool",
+      "min": 1,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:mist_lamb",
+      "item": "minecraft:string",
+      "min": 0,
+      "max": 1,
+      "chance": 0.2,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:mist_lamb",
+      "item": "unbound:mist_mutton",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:moon_hopper",
+      "item": "unbound:selenite_tuft",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:moon_hopper",
+      "item": "unbound:hopper_haunch",
+      "min": 1,
+      "max": 1,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:obsidian_mite",
+      "item": "unbound:obsidian_scale",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:patera_crawler",
+      "item": "unbound:crawler_plate",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:patera_crawler",
+      "item": "unbound:sulfur",
+      "min": 0,
+      "max": 2,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:plume_eater",
+      "item": "unbound:captive_ice",
+      "min": 0,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:plume_eater",
+      "item": "unbound:plume_dust",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:plume_moth",
+      "item": "unbound:plume_scale",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:plume_moth",
+      "item": "unbound:sulfur",
+      "min": 0,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:pluto_gazer",
+      "item": "unbound:brine_ice",
+      "min": 1,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:pluto_gazer",
+      "item": "unbound:stardust",
+      "min": 1,
+      "max": 2,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:prism_archon",
+      "item": "unbound:archon_prism",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:prism_archon",
+      "item": "unbound:archon_mirror_shard",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:prism_archon",
+      "item": "unbound:resonant_shard",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:prism_archon",
+      "item": "unbound:lumen_dust",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:prism_moth",
+      "item": "unbound:prism_wing",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:quicksilver_lurker",
+      "item": "unbound:quicksilver_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:quicksilver_lurker",
+      "item": "unbound:raw_iridium",
+      "min": 2,
+      "max": 5,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:quicksilver_lurker",
+      "item": "unbound:quicksilver_capsule",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:refractor",
+      "item": "unbound:refractor_lens",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:refractor",
+      "item": "minecraft:glowstone_dust",
+      "min": 1,
+      "max": 2,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:ring_glider",
+      "item": "unbound:glider_fur",
+      "min": 0,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ring_shark",
+      "item": "unbound:ring_tooth",
+      "min": 0,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:ring_shark",
+      "item": "minecraft:packed_ice",
+      "min": 0,
+      "max": 1,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:rockgnawer",
+      "item": "unbound:rockgnawer_tooth",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:runaway_drone",
+      "item": "unbound:drone_wax",
+      "min": 0,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:rust_scorpion",
+      "item": "unbound:scorpion_stinger",
+      "min": 0,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:rust_scorpion",
+      "item": "minecraft:iron_nugget",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:rust_scorpion",
+      "item": "unbound:scorpion_tail",
+      "min": 1,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:sail_moth",
+      "item": "unbound:sail_foil",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:sclera_grazer",
+      "item": "unbound:grazer_hide",
+      "min": 1,
+      "max": 2,
+      "chance": 0.85,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:sclera_grazer",
+      "item": "minecraft:leather",
+      "min": 0,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:sclera_grazer",
+      "item": "unbound:grazer_flank",
+      "min": 1,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:seed_keeper",
+      "item": "unbound:keeper_lamp",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:seed_keeper",
+      "item": "unbound:circuit_board",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:seed_keeper",
+      "item": "minecraft:wheat_seeds",
+      "min": 3,
+      "max": 7,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:selenite_colossus",
+      "item": "unbound:selenite_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:selenite_colossus",
+      "item": "unbound:selenite_core",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:selenite_stalker",
+      "item": "unbound:selenite_core",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:selenite_stalker",
+      "item": "minecraft:bone",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:shard_prowler",
+      "item": "unbound:prowler_fang",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:shard_prowler",
+      "item": "unbound:glass_shards",
+      "min": 0,
+      "max": 2,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:shard_prowler",
+      "item": "unbound:sorrow_quartz",
+      "min": 1,
+      "max": 1,
+      "chance": 0.12,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:shard_prowler",
+      "item": "unbound:prowler_loin",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:skein_weaver",
+      "item": "unbound:weaver_bobbin",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:slag_beetle",
+      "item": "unbound:slag_shell",
+      "min": 0,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:slag_beetle",
+      "item": "minecraft:magma_cream",
+      "min": 0,
+      "max": 1,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:slag_beetle",
+      "item": "unbound:beetle_belly",
+      "min": 1,
+      "max": 1,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:smoker_crab",
+      "item": "unbound:vent_mat",
+      "min": 0,
+      "max": 1,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:spinner",
+      "item": "unbound:spindle",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:spinner",
+      "item": "unbound:condensed_void",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:spinner",
+      "item": "unbound:void_shard",
+      "min": 16,
+      "max": 28,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:spore_mother",
+      "item": "unbound:mother_spore",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:spore_mother",
+      "item": "unbound:spore_dust",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:spore_mother",
+      "item": "unbound:spore_gem",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:spore_puff",
+      "item": "unbound:spore_dust",
+      "min": 1,
+      "max": 2,
+      "chance": 0.85,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:spot_leviathan",
+      "item": "unbound:storm_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:spot_leviathan",
+      "item": "unbound:storm_gland",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:spot_leviathan",
+      "item": "unbound:ammonia_crystal",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:sprite_jelly",
+      "item": "unbound:sprite_core",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:sprite_jelly",
+      "item": "unbound:red_phosphorus",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:sprite_jelly",
+      "item": "unbound:ammonia_crystal",
+      "min": 1,
+      "max": 3,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:starless",
+      "item": "unbound:swallowed_star",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:starless",
+      "item": "unbound:shadow_clot",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:starless",
+      "item": "unbound:stardust",
+      "min": 24,
+      "max": 40,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:storm_ray",
+      "item": "unbound:storm_gland",
+      "min": 0,
+      "max": 1,
+      "chance": 0.65,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:storm_ray",
+      "item": "minecraft:phantom_membrane",
+      "min": 0,
+      "max": 1,
+      "chance": 0.4,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:storm_ray",
+      "item": "unbound:storm_fillet",
+      "min": 1,
+      "max": 2,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:sun_skink",
+      "item": "unbound:mirror_scale",
+      "min": 1,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:tear_drinker",
+      "item": "unbound:tear_drop",
+      "min": 0,
+      "max": 1,
+      "chance": 0.65,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:tear_keeper",
+      "item": "unbound:sorrow_heart",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:tear_keeper",
+      "item": "unbound:sorrow_quartz",
+      "min": 4,
+      "max": 8,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:tear_keeper",
+      "item": "unbound:tear_drop",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:tear_keeper",
+      "item": "unbound:weeping_glass",
+      "min": 3,
+      "max": 6,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 3
+    },
+    {
+      "entity": "unbound:tear_worm",
+      "item": "unbound:worm_lash",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:tear_worm",
+      "item": "unbound:iris_pigment",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:tear_worm",
+      "item": "minecraft:string",
+      "min": 1,
+      "max": 3,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:terminator_warden",
+      "item": "unbound:twilight_core",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:terminator_warden",
+      "item": "minecraft:gold_ingot",
+      "min": 3,
+      "max": 6,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:terminator_warden",
+      "item": "minecraft:blue_ice",
+      "min": 1,
+      "max": 2,
+      "chance": 0.8,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:thawed_specimen",
+      "item": "unbound:specimen_tag",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:thawed_specimen",
+      "item": "unbound:methane_crystal",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:thawed_specimen",
+      "item": "unbound:cryo_lining",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:the_unblinking",
+      "item": "unbound:unblinking_lens",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:the_unblinking",
+      "item": "unbound:lens_crystal",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:underice_whale",
+      "item": "unbound:whale_lumen",
+      "min": 1,
+      "max": 3,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:vapour_drake",
+      "item": "unbound:drake_skull_glass",
+      "min": 0,
+      "max": 2,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:vapour_drake",
+      "item": "minecraft:phantom_membrane",
+      "min": 0,
+      "max": 1,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:vapour_wyrm",
+      "item": "unbound:wyrm_lung",
+      "min": 1,
+      "max": 1,
+      "chance": 0.5,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:vapour_wyrm",
+      "item": "unbound:drake_skull_glass",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:venus_flytrap",
+      "item": "unbound:trap_jaw",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:venus_flytrap",
+      "item": "minecraft:glow_berries",
+      "min": 2,
+      "max": 5,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:venus_flytrap",
+      "item": "minecraft:bone_meal",
+      "min": 2,
+      "max": 4,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:verdigris_beast",
+      "item": "unbound:verdigris_vertebra",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": false,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:verdigris_beast",
+      "item": "unbound:raw_verdigris",
+      "min": 2,
+      "max": 5,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:verdigris_beast",
+      "item": "unbound:spore_gem",
+      "min": 1,
+      "max": 2,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:void_eel",
+      "item": "unbound:void_gland",
+      "min": 1,
+      "max": 1,
+      "chance": 1.0,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:void_moth",
+      "item": "unbound:void_shard",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:void_wyrmling",
+      "item": "unbound:wyrmling_scale",
+      "min": 1,
+      "max": 2,
+      "chance": 0.85,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:void_wyrmling",
+      "item": "unbound:firstshell",
+      "min": 0,
+      "max": 1,
+      "chance": 0.2,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:vortex_nautilus",
+      "item": "unbound:vortex_shell",
+      "min": 0,
+      "max": 1,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:watch_ring",
+      "item": "unbound:ring_spark",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:wax_grub",
+      "item": "unbound:chorus_wax",
+      "min": 0,
+      "max": 2,
+      "chance": 0.6,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:wax_grub",
+      "item": "unbound:grub_cap",
+      "min": 0,
+      "max": 1,
+      "chance": 0.3,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:wax_grub",
+      "item": "unbound:grub_meat",
+      "min": 1,
+      "max": 1,
+      "chance": 0.7,
+      "looting": true,
+      "pool": 2
+    },
+    {
+      "entity": "unbound:weeping_sentinel",
+      "item": "unbound:sentinel_tear",
+      "min": 1,
+      "max": 1,
+      "chance": 0.75,
+      "looting": true,
+      "pool": 0
+    },
+    {
+      "entity": "unbound:weeping_sentinel",
+      "item": "unbound:sorrow_quartz",
+      "min": 0,
+      "max": 1,
+      "chance": 0.25,
+      "looting": true,
+      "pool": 1
+    },
+    {
+      "entity": "unbound:weeping_sentinel",
+      "item": "unbound:weeping_glass",
+      "min": 0,
+      "max": 2,
+      "chance": 0.35,
+      "looting": true,
+      "pool": 2
+    }
+  ]
+}

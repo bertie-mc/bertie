@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "G": {
+      "item": "unbound:optical_glass"
+    },
+    "F": {
+      "item": "unbound:air_filter"
+    },
+    "H": {
+      "item": "unbound:hydroponics"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "FHF",
+    "PCP"
+  ],
+  "result": {
+    "id": "unbound:bioreactor_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

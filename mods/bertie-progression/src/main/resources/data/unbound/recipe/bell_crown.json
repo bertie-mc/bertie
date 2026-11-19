@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "H": {
+      "item": "unbound:heat_tile"
+    },
+    "E": {
+      "item": "unbound:deep_ember"
+    }
+  },
+  "pattern": [
+    "ECE",
+    "GPG",
+    "HPH"
+  ],
+  "result": {
+    "id": "unbound:bell_crown"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

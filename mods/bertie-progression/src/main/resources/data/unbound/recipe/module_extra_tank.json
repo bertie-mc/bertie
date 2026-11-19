@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "unbound:fuel_tank"
+    },
+    {
+      "item": "unbound:valve"
+    },
+    {
+      "item": "bertieprogression:copper_rod"
+    }
+  ],
+  "result": {
+    "id": "unbound:module_extra_tank"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

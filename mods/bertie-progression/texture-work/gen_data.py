@@ -5965,4 +5965,7 @@ _restore_retained_stellaris(ROOT)
 from vacuum_content import apply as _apply_vacuum_content
 _apply_vacuum_content(ROOT)
 
+from unbound_progression import apply as _apply_unbound_progression
+_apply_unbound_progression(ROOT)
+
 print(f"Wrote {len(written)} files under {RES}")

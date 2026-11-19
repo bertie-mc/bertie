@@ -65,7 +65,7 @@ configurations.named("clienttestRuntimeOnly") {
 
 dependencies {
     clienttestRuntimeOnly(deps.sodium)
-    clienttestRuntimeOnly(project(":mods:bertie-emi"))
+    clienttestImplementation(project(":mods:bertie-emi"))
     clienttestRuntimeOnly(deps.doABarrelRoll)
     clienttestRuntimeOnly(deps.slagNEmbers)
     clienttestRuntimeOnly(deps.apexArcana)
@@ -122,8 +122,6 @@ dependencies {
     testRuntimeOnly(deps.compactCraftingUpdated)
     testRuntimeOnly(deps.compactMachines)
 
-    compileOnly(deps.pocketDimension1201)
-    gametestImplementation(deps.pocketDimension1201)
     gametestRuntimeOnly(deps.curios)
     gametestRuntimeOnly(deps.hooked)
     gametestRuntimeOnly(deps.apothicAttributes)
@@ -153,6 +151,8 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.deeperdarker)
     "integrationtestImplementation"(deps.iceandfireCe)
     "integrationtestImplementation"(deps.forbiddenArcanus)
+    "integrationtestRuntimeOnly"(deps.slagNEmbers)
+    "integrationtestRuntimeOnly"(deps.malum)
     "integrationtestImplementation"(deps.oritech)
     "integrationtestImplementation"(deps.unbound)
     "integrationtestRuntimeOnly"(deps.pastelMod)
@@ -180,6 +180,7 @@ dependencies {
     "integrationtestRuntimeOnly"(deps.twilightDelight)
     "integrationtestRuntimeOnly"(deps.aaaParticles)
     "integrationtestRuntimeOnly"(project(":mods:berlords-carving"))
+    "integrationtestRuntimeOnly"(deps.slagNEmbers)
     "integrationtestRuntimeOnly"(deps.malum)
     "integrationtestRuntimeOnly"(deps.mythsAndLegends)
     "integrationtestImplementation"(deps.reAvaritia)
@@ -202,4 +203,24 @@ dependencies {
     gametestRuntimeOnly(deps.gensokyoDelightYoukaisFeasts)
     gametestRuntimeOnly(project(":mods:withering-waver"))
     gametestRuntimeOnly(project(":mods:berlords-better-horses"))
+}
+
+// Archaion registers item predicates during parallel setup; serialize this isolated client fixture.
+tasks.named("runClientTests") {
+    val fixtureFile =
+        layout.buildDirectory
+            .file("minecraft-runs/clienttest/config/fml.toml")
+            .get()
+            .asFile
+    doFirst {
+        fixtureFile.parentFile.mkdirs()
+        val current = if (fixtureFile.exists()) fixtureFile.readText() else ""
+        val updated =
+            if (current.contains(Regex("(?m)^maxThreads\\s*="))) {
+                current.replace(Regex("(?m)^maxThreads\\s*=.*$"), "maxThreads = 1")
+            } else {
+                current + "\nmaxThreads = 1\n"
+            }
+        fixtureFile.writeText(updated)
+    }
 }

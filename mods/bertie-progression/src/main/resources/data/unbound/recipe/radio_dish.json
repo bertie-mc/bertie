@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "TIT"
+  ],
+  "result": {
+    "id": "unbound:radio_dish",
+    "count": 16
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

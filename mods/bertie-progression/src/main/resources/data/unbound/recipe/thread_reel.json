@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "unbound:copper_gear"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "V": {
+      "item": "unbound:void_shard"
+    },
+    "R": {
+      "item": "unbound:end_resonator"
+    }
+  },
+  "pattern": [
+    "GPG",
+    "VRV",
+    "GPG"
+  ],
+  "result": {
+    "id": "unbound:thread_reel"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

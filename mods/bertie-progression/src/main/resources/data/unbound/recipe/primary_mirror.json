@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "unbound:mirror_coating"
+    },
+    "B": {
+      "item": "unbound:lens_blank"
+    },
+    "P": {
+      "item": "unbound:grinding_paste"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    }
+  },
+  "pattern": [
+    " C ",
+    "BPB",
+    " S "
+  ],
+  "result": {
+    "id": "unbound:primary_mirror"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

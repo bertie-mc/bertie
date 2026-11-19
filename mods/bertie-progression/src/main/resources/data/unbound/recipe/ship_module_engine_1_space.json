@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "unbound:combustion_chamber"
+    },
+    "N": {
+      "item": "unbound:nozzle"
+    },
+    "M": {
+      "item": "anvilcraft:titanium_ingot"
+    }
+  },
+  "pattern": [
+    "MCM",
+    "MNM"
+  ],
+  "result": {
+    "id": "unbound:ship_module_engine_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

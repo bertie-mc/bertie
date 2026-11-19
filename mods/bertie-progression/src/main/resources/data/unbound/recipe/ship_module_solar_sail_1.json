@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "L": {
+      "item": "unbound:pallasite_lens"
+    },
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "K": {
+      "item": "unbound:wire_coil"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SLS",
+    "TKT"
+  ],
+  "result": {
+    "id": "unbound:ship_module_solar_sail_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

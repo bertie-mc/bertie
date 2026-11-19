@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "unbound:disk_plasma"
+    },
+    "C": {
+      "item": "unbound:white_dwarf_crystal"
+    },
+    "N": {
+      "item": "unbound:neutron_dust"
+    },
+    "A": {
+      "item": "unbound:avionics"
+    },
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "F": {
+      "item": "unbound:ship_frame"
+    }
+  },
+  "pattern": [
+    "PCP",
+    "NAN",
+    "HFH"
+  ],
+  "result": {
+    "id": "unbound:station_kit_chrono_cell"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

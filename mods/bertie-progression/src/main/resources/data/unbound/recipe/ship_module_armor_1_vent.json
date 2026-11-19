@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "M": {
+      "item": "unbound:adamant_ingot"
+    }
+  },
+  "pattern": [
+    "MPM",
+    "PMP",
+    "MPM"
+  ],
+  "result": {
+    "id": "unbound:ship_module_armor_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

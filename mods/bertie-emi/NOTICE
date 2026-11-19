@@ -10,3 +10,9 @@ licences and none of their content is redistributed in this repository.
 
 Compile-time dependencies are resolved from public mavens (Modrinth, NeoForged,
 Architectury, FTB) at build time. No third-party jar is committed.
+
+UNBOUND INTEGRATION DATA
+Ore heights, drop quantities and identifiers are derived from Unbound 0.15.4 by
+Moltea. Native artwork and models are referenced at runtime and are not bundled.
+Assembly guides query native validators; the blank Ponder templates are authored
+for Bertie EMI. Source: https://www.curseforge.com/minecraft/mc-mods/unbound

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "unbound:circuit_board"
+    },
+    {
+      "item": "unbound:polished_lens"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "bertieprogression:copper_sheet"
+    }
+  ],
+  "result": {
+    "id": "unbound:upgrade_reflector"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

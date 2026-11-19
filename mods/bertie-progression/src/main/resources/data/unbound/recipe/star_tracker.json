@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "unbound:copper_gear"
+    },
+    "C": {
+      "item": "minecraft:clock"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "K": {
+      "item": "minecraft:comparator"
+    },
+    "S": {
+      "item": "bertieprogression:copper_sheet"
+    },
+    "D": {
+      "item": "unbound:stardust"
+    }
+  },
+  "pattern": [
+    "GCG",
+    "RKR",
+    "SDS"
+  ],
+  "result": {
+    "id": "unbound:star_tracker"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "N": {
+      "item": "unbound:navigation_crystal"
+    },
+    "F": {
+      "item": "unbound:fusion_coil"
+    },
+    "B": {
+      "item": "unbound:circuit_board"
+    },
+    "T": {
+      "item": "unbound:tetrataenite_ingot"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    }
+  },
+  "pattern": [
+    " N ",
+    "FBF",
+    "PTP"
+  ],
+  "result": {
+    "id": "unbound:orbital_pylon",
+    "count": 2
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

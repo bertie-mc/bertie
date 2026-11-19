@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "V": {
+      "item": "unbound:valve"
+    },
+    "T": {
+      "item": "bertieprogression:copper_rod"
+    },
+    "K": {
+      "item": "unbound:compressor"
+    },
+    "W": {
+      "item": "unbound:wiring"
+    }
+  },
+  "pattern": [
+    "PVP",
+    "TKT",
+    "PWP"
+  ],
+  "result": {
+    "id": "unbound:suit_station_mk1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "unbound:crater_plate"
+    },
+    "T": {
+      "item": "anvilcraft:titanium_ingot"
+    },
+    "L": {
+      "item": "unbound:armor_lining"
+    }
+  },
+  "pattern": [
+    "P P",
+    "TLT"
+  ],
+  "result": {
+    "id": "unbound:crater_carapace_boots"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

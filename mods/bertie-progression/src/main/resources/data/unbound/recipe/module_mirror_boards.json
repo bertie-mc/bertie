@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "unbound:mirror_coating"
+    },
+    "G": {
+      "item": "unbound:prism_glass"
+    },
+    "P": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "H": {
+      "item": "unbound:copper_gear"
+    },
+    "V": {
+      "item": "unbound:void_shard"
+    },
+    "E": {
+      "item": "unbound:archon_mirror_shard"
+    }
+  },
+  "pattern": [
+    "CGC",
+    "PEP",
+    "VHV"
+  ],
+  "result": {
+    "id": "unbound:module_mirror_boards"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

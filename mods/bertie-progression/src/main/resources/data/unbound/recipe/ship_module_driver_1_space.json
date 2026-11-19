@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "unbound:wire_coil"
+    },
+    "T": {
+      "item": "unbound:tetrataenite_ingot"
+    },
+    "N": {
+      "item": "unbound:nozzle"
+    },
+    "B": {
+      "item": "unbound:battery"
+    },
+    "M": {
+      "item": "anvilcraft:titanium_ingot"
+    }
+  },
+  "pattern": [
+    "KTK",
+    "MNM",
+    "KBK"
+  ],
+  "result": {
+    "id": "unbound:ship_module_driver_1"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "unbound:tetrataenite_ingot"
+    },
+    "A": {
+      "item": "minecraft:anvil"
+    },
+    "C": {
+      "item": "unbound:circuit_board"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    },
+    "H": {
+      "item": "bertieprogression:iron_sheet"
+    },
+    "G": {
+      "item": "unbound:impact_glass"
+    }
+  },
+  "pattern": [
+    "TAT",
+    "CBC",
+    "HGH"
+  ],
+  "result": {
+    "id": "unbound:station_kit_forge"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "unbound"
+    }
+  ]
+}

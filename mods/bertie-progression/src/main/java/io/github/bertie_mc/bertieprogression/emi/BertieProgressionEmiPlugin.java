@@ -42,10 +42,6 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
      */
     private static final String LEGACY_NAMESPACE = "berlordsemi";
 
-    /** Pocket Dimension's own portal block; the pack's route in is Bertie Progression's block. */
-    private static final ResourceLocation POCKET_BLOCK =
-            ResourceLocation.fromNamespaceAndPath("pocket_dimension", "pocket_block");
-
     private static final Set<String> WITHDRAWN_PASTEL_CATEGORIES = Set.of(
             "pedestal_crafting",
             "natures_staff_conversions",
@@ -107,7 +103,6 @@ public final class BertieProgressionEmiPlugin implements EmiPlugin {
             ElectricSmeltingEmi.register(registry);
         }
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isReplacedSlagArmorPart);
-        registry.removeEmiStacks(stack -> POCKET_BLOCK.equals(stack.getId()));
         registry.removeEmiStacks(BertieProgressionEmiPlugin::isRemovedStack);
         registry.removeRecipes(recipe -> isWithdrawnPastelCategory(
                         recipe.getCategory().getId())
