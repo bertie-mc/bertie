@@ -3,8 +3,8 @@ package io.github.bertie_mc.bertieprogression.gametest;
 import com.mojang.authlib.GameProfile;
 import com.simibubi.create.AllBlocks;
 import io.github.bertie_mc.bertieprogression.ModItems;
+import io.github.bertie_mc.bertieprogression.cybernetics.AugmentationCores;
 import io.github.bertie_mc.bertieprogression.cybernetics.CenterEnergyAccess;
-import io.github.bertie_mc.bertieprogression.cybernetics.CopperAugmentation;
 import io.github.bertie_mc.bertieprogression.cybernetics.MechanicalAdapterRegistry;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,7 +84,7 @@ public final class VacuumAdapterGameTests {
     }
 
     @GameTest(template = "empty", timeoutTicks = 140)
-    public static void copperFormationAndRealCreateInputsWorkInFourDirections(GameTestHelper helper) {
+    public static void nativeCoresAndRunningInputsWorkAtRearCornerInFourDirections(GameTestHelper helper) {
         var level = helper.getLevel();
         var centers = new ArrayList<AugmentApplicationEntity>();
         var adapters = new ArrayList<BlockPos>();
@@ -98,23 +98,37 @@ public final class VacuumAdapterGameTests {
             level.setBlockAndUpdate(
                     pos, centerBlock.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, facing));
             var center = (AugmentApplicationEntity) level.getBlockEntity(pos);
-            for (var support : CopperAugmentation.supports(center))
-                level.setBlockAndUpdate(support, CopperAugmentation.casing().defaultBlockState());
+            for (var support : AugmentationCores.supports(center))
+                level.setBlockAndUpdate(support, AugmentationCores.basic().defaultBlockState());
             check(
-                    center.initMultiblock(center.getBlockState()) && CopperAugmentation.intact(center),
-                    "Copper center did not form");
-            for (var support : CopperAugmentation.supports(center)) {
+                    center.initMultiblock(center.getBlockState()) && AugmentationCores.intact(center),
+                    "Native machine cores did not form");
+            for (var support : AugmentationCores.supports(center)) {
                 check(
                         level.getBlockEntity(support) instanceof MachineCoreEntity core
                                 && core.getControllerPos().equals(pos),
                         "Core not linked");
+                check(level.getBlockState(support).is(AugmentationCores.basic()), "Native core block was replaced");
+            }
+            if (i == 1) {
+                center.onControllerBroken();
+                for (var support : AugmentationCores.supports(center)) {
+                    level.setBlockAndUpdate(
+                            support,
+                            MechanicalAdapterRegistry.COPPER_CORE
+                                    .get()
+                                    .defaultBlockState()
+                                    .setValue(rearth.oritech.block.blocks.processing.MachineCoreBlock.USED, true));
+                    ((MachineCoreEntity) level.getBlockEntity(support)).setControllerPos(pos);
+                    center.getConnectedCores().add(support);
+                }
                 check(
-                        !level.getBlockState(support).is(CopperAugmentation.casing()),
-                        "Ordinary casing clips through center");
+                        AugmentationCores.restoreLegacy(center) && AugmentationCores.intact(center),
+                        "Existing Copper assembly did not migrate to native cores");
             }
             var rear = facing.getOpposite();
             level.setChunkForced(pos.getX() >> 4, pos.getZ() >> 4, true);
-            var adapter = pos.relative(rear, 2);
+            var adapter = pos.relative(rear, 2).relative(facing.getClockWise());
             level.setBlockAndUpdate(adapter.below(), Blocks.STONE.defaultBlockState());
             player.setYRot(rear.toYRot() + 180);
             player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(MechanicalAdapterRegistry.BLOCK.get()));
@@ -128,20 +142,6 @@ public final class VacuumAdapterGameTests {
                     level.getBlockState(adapter).is(MechanicalAdapterRegistry.BLOCK.get())
                             && level.getBlockState(adapter.above()).isAir(),
                     "Controller placed both halves");
-            level.setBlockAndUpdate(adapter.above(), CopperAugmentation.casing().defaultBlockState());
-            player.setItemInHand(InteractionHand.MAIN_HAND, ItemStack.EMPTY);
-            var form = new PlayerInteractEvent.RightClickBlock(
-                    player,
-                    InteractionHand.MAIN_HAND,
-                    adapter,
-                    new BlockHitResult(Vec3.atCenterOf(adapter), Direction.UP, adapter, false));
-            NeoForge.EVENT_BUS.post(form);
-            check(
-                    form.isCanceled() && level.getBlockState(adapter).getValue(MultiblockMachine.ASSEMBLED),
-                    "Controller plus one casing did not form");
-            check(
-                    level.getBlockState(adapter).getValue(BlockStateProperties.HORIZONTAL_FACING) == rear,
-                    "Adapter placement facing incorrect");
             for (var socket : List.of(adapter, adapter.above())) {
                 level.setBlockAndUpdate(
                         socket.relative(rear),
@@ -150,18 +150,48 @@ public final class VacuumAdapterGameTests {
                         socket.relative(rear, 2),
                         AllBlocks.CREATIVE_MOTOR.getDefaultState().setValue(BlockStateProperties.FACING, facing));
             }
-            for (var support : CopperAugmentation.supports(center)) {
+            var assemblyCore = i == 1
+                    ? BuiltInRegistries.BLOCK.get(ResourceLocation.parse("oritech:machine_core_2"))
+                    : AugmentationCores.basic();
+            if (i != 1) level.setBlockAndUpdate(adapter.above(), assemblyCore.defaultBlockState());
+            boolean fromHand = i == 1;
+            var form = new PlayerInteractEvent.RightClickBlock(
+                    player,
+                    InteractionHand.MAIN_HAND,
+                    adapter,
+                    new BlockHitResult(Vec3.atCenterOf(adapter), Direction.UP, adapter, false));
+            helper.runAtTickTime(10, () -> {
+                player.setItemInHand(
+                        InteractionHand.MAIN_HAND, fromHand ? new ItemStack(assemblyCore, 2) : ItemStack.EMPTY);
+                NeoForge.EVENT_BUS.post(form);
+                if (fromHand)
+                    check(
+                            player.getMainHandItem().getCount() == 1,
+                            "One-click formation did not consume exactly one core");
+                var upperEntity = (io.github.bertie_mc.bertieprogression.cybernetics.MechanicalAdapterBlockEntity)
+                        level.getBlockEntity(adapter.above());
+                check(
+                        upperEntity.assemblyCore().equals(BuiltInRegistries.BLOCK.getKey(assemblyCore)),
+                        "Adapter lost the assembly core tier");
+                check(
+                        form.isCanceled() && level.getBlockState(adapter).getValue(MultiblockMachine.ASSEMBLED),
+                        "Controller plus one machine core did not form");
+                check(
+                        level.getBlockState(adapter).getValue(BlockStateProperties.HORIZONTAL_FACING) == rear,
+                        "Adapter placement facing incorrect");
+            });
+            for (var support : AugmentationCores.supports(center)) {
                 var core = level.getBlockEntity(support);
                 var saved = core.saveWithFullMetadata(level.registryAccess());
                 check(
-                        saved.getString("id").equals("bertieprogression:assembled_copper_core"),
-                        "Copper core saved with the wrong registry type");
+                        saved.getString("id").equals("oritech:machine_core_entity"),
+                        "Native core saved with the wrong registry type");
                 var restored = net.minecraft.world.level.block.entity.BlockEntity.loadStatic(
                         support, level.getBlockState(support), saved, level.registryAccess());
                 check(
                         restored instanceof MachineCoreEntity nativeCore
                                 && nativeCore.getControllerPos().equals(pos),
-                        "Copper core lost its controller on reload");
+                        "Native core lost its controller on reload");
             }
             centers.add(center);
             adapters.add(adapter);
@@ -175,7 +205,18 @@ public final class VacuumAdapterGameTests {
                                 > 0,
                         "Real dual Create inputs did not charge " + center.getBlockState());
             for (int n = 0; n < adapters.size(); n++) {
-                level.destroyBlock(adapters.get(n).above(), false);
+                level.destroyBlock(adapters.get(n).above(), true);
+                var expectedCore = n == 0
+                        ? BuiltInRegistries.ITEM.get(ResourceLocation.parse("oritech:machine_core_2"))
+                        : AugmentationCores.basic().asItem();
+                check(
+                        level
+                                .getEntitiesOfClass(
+                                        net.minecraft.world.entity.item.ItemEntity.class,
+                                        new net.minecraft.world.phys.AABB(adapters.get(n)).inflate(3))
+                                .stream()
+                                .anyMatch(item -> item.getItem().is(expectedCore)),
+                        "Broken adapter did not return its original core");
                 ((CenterEnergyAccess) centers.get(n))
                         .bertieprogression$internalEnergy()
                         .setAmount(0);
@@ -195,10 +236,10 @@ public final class VacuumAdapterGameTests {
         });
         helper.runAtTickTime(65, () -> {
             for (var center : centers)
-                for (var support : CopperAugmentation.supports(center))
+                for (var support : AugmentationCores.supports(center))
                     check(
-                            level.getBlockState(support).is(CopperAugmentation.casing()),
-                            "Dismantling did not restore Copper Casing");
+                            level.getBlockState(support).is(AugmentationCores.basic()),
+                            "Dismantling lost the native machine cores");
             helper.succeed();
         });
     }

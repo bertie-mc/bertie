@@ -3,13 +3,40 @@ package io.github.bertie_mc.bertieprogression.cybernetics;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import rearth.oritech.block.base.block.MultiblockMachine;
+import rearth.oritech.block.entity.MachineCoreEntity;
 import rearth.oritech.block.entity.augmenter.AugmentApplicationEntity;
 
 public final class MechanicalAdapterBlockEntity extends KineticBlockEntity {
+    private ResourceLocation assemblyCore = ResourceLocation.parse("oritech:machine_core_1");
+
+    public ResourceLocation assemblyCore() {
+        return assemblyCore;
+    }
+
+    public void setAssemblyCore(ResourceLocation core) {
+        assemblyCore = core;
+        setChanged();
+    }
+
+    @Override
+    protected void write(CompoundTag tag, HolderLookup.Provider registries, boolean clientPacket) {
+        super.write(tag, registries, clientPacket);
+        tag.putString("AssemblyCore", assemblyCore.toString());
+    }
+
+    @Override
+    protected void read(CompoundTag tag, HolderLookup.Provider registries, boolean clientPacket) {
+        super.read(tag, registries, clientPacket);
+        if (tag.contains("AssemblyCore")) assemblyCore = ResourceLocation.parse(tag.getString("AssemblyCore"));
+    }
+
     public MechanicalAdapterBlockEntity(BlockPos pos, BlockState state) {
         super(MechanicalAdapterRegistry.ENTITY.get(), pos, state);
     }
@@ -54,12 +81,16 @@ public final class MechanicalAdapterBlockEntity extends KineticBlockEntity {
             return;
         long charge = chargeRate(getSpeed(), upper.getSpeed(), driven(rear), upper.driven(rear));
         if (charge == 0) return;
-        BlockPos centerPos = worldPosition.relative(rear.getOpposite(), 2);
-        if (!level.hasChunkAt(centerPos)
-                || !(level.getBlockEntity(centerPos) instanceof AugmentApplicationEntity center)
+        BlockPos mount = worldPosition.relative(rear.getOpposite());
+        var attached = level.getBlockEntity(mount);
+        var center = attached instanceof MachineCoreEntity core
+                        && core.getCachedController() instanceof AugmentApplicationEntity controller
+                ? controller
+                : attached instanceof AugmentApplicationEntity controller ? controller : null;
+        if (center == null
                 || center.getBlockState().getValue(BlockStateProperties.HORIZONTAL_FACING) != rear.getOpposite()
                 || !center.getBlockState().getValue(MultiblockMachine.ASSEMBLED)
-                || !CopperAugmentation.intact(center)) return;
+                || !AugmentationCores.intact(center)) return;
         if (((CenterEnergyAccess) center).bertieprogression$internalEnergy().insert(charge, false) > 0)
             center.setChanged();
     }

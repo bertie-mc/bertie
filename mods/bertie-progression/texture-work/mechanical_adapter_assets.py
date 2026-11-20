@@ -24,29 +24,37 @@ def apply(module):
             data=json.loads((source/f'mechanical_adapter_{kind}_{half}.json').read_text())
             data['textures']={key:'bertieprogression:block/mechanical_adapter' for key in data['textures']}
             data['textures']['particle']='bertieprogression:block/mechanical_adapter'
+            if kind == 'shaft':
+                for element in data['elements']:
+                    if element['from'][2] == 0:
+                        element['from'][2] = -2
             name=f'mechanical_adapter_{half}' if kind=='body' else f'mechanical_adapter_shaft_{half}'
             write(Path(f'assets/bertieprogression/models/block/{name}.json'),data)
     write(Path('assets/bertieprogression/blockstates/mechanical_adapter.json'), {'variants': {
         f'facing={direction},half={half},machine_assembled={formed}': {'model':f'bertieprogression:block/mechanical_adapter_{half}', 'y':angle}
         for direction,angle in [('north',0),('east',90),('south',180),('west',270)]
         for half in ('lower','upper') for formed in ('true','false')}})
-    write(Path('assets/bertieprogression/models/item/mechanical_adapter.json'),json.loads((source/'mechanical_adapter_item.json').read_text()))
+    item = json.loads((source/'mechanical_adapter_item.json').read_text())
+    item['parent'] = 'bertieprogression:block/mechanical_adapter_lower'
+    item['display']['gui']['translation'] = [0, 0, 0]
+    item['display']['gui']['scale'] = [0.625, 0.625, 0.625]
+    write(Path('assets/bertieprogression/models/item/mechanical_adapter.json'), item)
     target = resources/'assets/bertieprogression/textures/block/mechanical_adapter.png'
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source/'albedo.png',target)
     entries=[]
-    for half,item in [('lower','bertieprogression:mechanical_adapter'),('upper','create:copper_casing')]:
+    for half,item in [('lower','bertieprogression:mechanical_adapter'),('upper','oritech:machine_core_1')]:
         entries.append({'rolls':1,'entries':[{'type':'minecraft:item','name':item}],
             'conditions':[{'condition':'minecraft:survives_explosion'},
                 {'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':half}}]})
     write(Path('data/bertieprogression/loot_table/blocks/mechanical_adapter.json'), {
         'type':'minecraft:block', 'pools':[{'rolls':1,'entries':[
             {'type':'minecraft:item','name':'bertieprogression:mechanical_adapter','conditions':[{'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':'lower'}}]},
-            {'type':'minecraft:item','name':'create:copper_casing','conditions':[{'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':'upper'}}]}],
+            {'type':'minecraft:item','name':'oritech:machine_core_1','conditions':[{'condition':'minecraft:block_state_property','block':'bertieprogression:mechanical_adapter','properties':{'half':'upper'}}]}],
             'conditions':[{'condition':'minecraft:survives_explosion'}]}]})
     write(Path('assets/bertieprogression/blockstates/assembled_copper_core.json'), {'variants':{'':{'model':'create:block/copper_casing'}}})
     write(Path('data/bertieprogression/loot_table/blocks/assembled_copper_core.json'), {
-        'type':'minecraft:block','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'create:copper_casing'}],
+        'type':'minecraft:block','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'oritech:machine_core_1'}],
         'conditions':[{'condition':'minecraft:survives_explosion'}]}]})
     lang_path = resources/'assets/bertieprogression/lang/en_us.json'
     lang = json.loads(lang_path.read_text(encoding='utf-8'))

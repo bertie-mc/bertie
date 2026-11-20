@@ -2,8 +2,8 @@ package io.github.bertie_mc.bertieprogression.clienttest;
 
 import com.simibubi.create.AllBlocks;
 import io.github.bertie_mc.bertieprogression.cybernetics.AdaptiveImmuneSystem;
+import io.github.bertie_mc.bertieprogression.cybernetics.AugmentationCores;
 import io.github.bertie_mc.bertieprogression.cybernetics.CenterEnergyAccess;
-import io.github.bertie_mc.bertieprogression.cybernetics.CopperAugmentation;
 import io.github.bertie_mc.bertieprogression.cybernetics.MechanicalAdapterBlockEntity;
 import io.github.bertie_mc.bertieprogression.cybernetics.MechanicalAdapterRegistry;
 import io.github.bertie_mc.testing.client.ClientTest;
@@ -104,7 +104,8 @@ public final class CyberneticsClientTests {
     }
 
     @ClientTest
-    public static void copperCenterBlocksRfAndUsesBothRearInputs(ClientTestContext context) throws Exception {
+    public static void nativeCenterAndAdapterUseMachineCoresAndVisibleShafts(ClientTestContext context)
+            throws Exception {
         try (var world = context.worldBuilder().create()) {
             var centerRef = new AtomicReference<AugmentApplicationEntity>();
             world.server().runCommand("fill -8 63 -8 12 63 12 minecraft:stone");
@@ -118,9 +119,9 @@ public final class CyberneticsClientTests {
                         block.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH));
                 var center = (AugmentApplicationEntity) level.getBlockEntity(pos);
                 centerRef.set(center);
-                for (var support : CopperAugmentation.supports(center))
-                    level.setBlockAndUpdate(support, CopperAugmentation.casing().defaultBlockState());
-                check(center.initMultiblock(center.getBlockState()), "Center did not form from Copper Casings");
+                for (var support : AugmentationCores.supports(center))
+                    level.setBlockAndUpdate(support, AugmentationCores.basic().defaultBlockState());
+                check(center.initMultiblock(center.getBlockState()), "Center did not form from native cores");
                 var internal = ((CenterEnergyAccess) center).bertieprogression$internalEnergy();
                 internal.setAmount(1000);
                 for (Direction side : Direction.values()) {
@@ -144,8 +145,7 @@ public final class CyberneticsClientTests {
                                 .get()
                                 .defaultBlockState()
                                 .setValue(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH));
-                level.setBlockAndUpdate(
-                        rear.above(), CopperAugmentation.casing().defaultBlockState());
+                level.setBlockAndUpdate(rear.above(), AugmentationCores.basic().defaultBlockState());
                 var player = server.getPlayerList().getPlayers().getFirst();
                 player.setItemInHand(
                         InteractionHand.MAIN_HAND, new ItemStack(com.simibubi.create.AllItems.WRENCH.get()));
@@ -160,9 +160,8 @@ public final class CyberneticsClientTests {
                                 && level.getBlockState(rear).is(MechanicalAdapterRegistry.BLOCK.get())
                                 && level.getBlockState(rear.above()).getValue(BlockStateProperties.DOUBLE_BLOCK_HALF)
                                         == DoubleBlockHalf.UPPER,
-                        "Controller and one Copper Casing did not form the rear adapter");
-                level.setBlockAndUpdate(
-                        new BlockPos(4, 64, 4), CopperAugmentation.casing().defaultBlockState());
+                        "Controller and one Machine Core did not form the rear adapter");
+
                 for (var socket : List.of(rear, rear.above())) {
                     level.setBlockAndUpdate(
                             socket.south(),
@@ -192,6 +191,40 @@ public final class CyberneticsClientTests {
                                             .getAmount()
                                     > 0,
                             200);
+            world.server().runCommand("tp @a 6.7 65.2 8.8 143 15");
+            world.server().runCommand("time set noon");
+            context.runOnClient(client -> {
+                client.options.hideGui = true;
+                client.options.pauseOnLostFocus = false;
+            });
+            world.connection().waitForClientboundPackets();
+            world.connection().waitForChunksRender(false);
+            context.waitTicks(20);
+            context.runOnClient(client -> {
+                var entity = (MechanicalAdapterBlockEntity) client.level.getBlockEntity(new BlockPos(2, 64, 4));
+                check(
+                        client.getBlockEntityRenderDispatcher().getRenderer(entity)
+                                instanceof io.github.bertie_mc.bertieprogression.client.MechanicalAdapterRenderer,
+                        "Adapter rotating renderer is not registered");
+                try {
+                    for (var half : List.of("LOWER", "UPPER")) {
+                        var field = io.github.bertie_mc.bertieprogression.client.MechanicalAdapterRenderer.class
+                                .getDeclaredField(half);
+                        field.setAccessible(true);
+                        var partial = (dev.engine_room.flywheel.lib.model.baked.PartialModel) field.get(null);
+                        check(
+                                partial.get() != client.getModelManager().getMissingModel()
+                                        && partial.get()
+                                                        .getQuads(null, null, net.minecraft.util.RandomSource.create())
+                                                        .size()
+                                                >= 12,
+                                "Missing rotating shaft geometry: " + half);
+                    }
+                } catch (ReflectiveOperationException failure) {
+                    throw new IllegalStateException(failure);
+                }
+            });
+            context.takeScreenshot("mechanical-adapter-native-cores-and-shafts");
             world.server().runOnServer(server -> {
                 var level = server.overworld();
                 level.destroyBlock(new BlockPos(2, 65, 5), false);
@@ -209,16 +242,6 @@ public final class CyberneticsClientTests {
                                             .getAmount()
                                     == stopped,
                             "Disconnected upper input did not stop charging"));
-            world.server().runCommand("tp @a 6.7 65.2 8.8 143 15");
-            world.server().runCommand("time set noon");
-            context.runOnClient(client -> {
-                client.options.hideGui = true;
-                client.options.pauseOnLostFocus = false;
-            });
-            world.connection().waitForClientboundPackets();
-            world.connection().waitForChunksRender(false);
-            context.waitTicks(20);
-            context.takeScreenshot("mechanical-adapter-copper-palette-and-rear-mount");
         }
     }
 

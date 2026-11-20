@@ -1,11 +1,10 @@
 package io.github.bertie_mc.bertieprogression.mixin;
 
+import io.github.bertie_mc.bertieprogression.cybernetics.AugmentationCores;
 import io.github.bertie_mc.bertieprogression.cybernetics.CenterEnergyAccess;
 import io.github.bertie_mc.bertieprogression.cybernetics.ClosedEnergyStorage;
-import io.github.bertie_mc.bertieprogression.cybernetics.CopperAugmentation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Final;
@@ -30,6 +29,9 @@ public abstract class AugmentationCenterMixin implements CenterEnergyAccess {
     @Unique
     private EnergyApi.EnergyStorage bertieprogression$closedEnergy;
 
+    @Unique
+    private boolean bertieprogression$legacyCoresChecked;
+
     @Override
     public EnergyApi.EnergyStorage bertieprogression$internalEnergy() {
         return energyStorage;
@@ -45,17 +47,11 @@ public abstract class AugmentationCenterMixin implements CenterEnergyAccess {
         cir.setReturnValue(bertieprogression$closedEnergy);
     }
 
-    public boolean initMultiblock(BlockState state) {
-        return CopperAugmentation.form((AugmentApplicationEntity) (Object) this, state);
-    }
-
-    public Boolean tryPlaceNextCore(Player player) {
-        return CopperAugmentation.placeNext((AugmentApplicationEntity) (Object) this, player);
-    }
-
     @Inject(method = "serverTick", at = @At("HEAD"))
     private void bertieprogression$validateCasing(
             Level level, BlockPos pos, BlockState state, NetworkedBlockEntity entity, CallbackInfo ci) {
-        CopperAugmentation.validate((AugmentApplicationEntity) (Object) this);
+        if (!bertieprogression$legacyCoresChecked)
+            bertieprogression$legacyCoresChecked =
+                    AugmentationCores.restoreLegacy((AugmentApplicationEntity) (Object) this);
     }
 }

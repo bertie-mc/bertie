@@ -14,12 +14,16 @@ while its effect protects against Unbound's vacuum instead of consuming food.
 Disabled or removed immunity restores native vacuum behavior. The exact
 cost arrays are authored in `texture-work/augmentation_research_costs.json`.
 
-The Mechanical Adapter powers only the Augmentation Center. Form the center with
-ten placed Create Copper Casings. They become linked, invisible core parts when
-assembled and return to ordinary Casings on dismantling. Place a Mechanical
-Adapter controller two blocks behind the center, add one Copper Casing above it,
-and right-click the controller to form it. The two visible inserts rotate with
-their individual Create inputs; the housing stays still.
+The Mechanical Adapter powers only the Augmentation Center. Assemble the center
+with its native Machine Cores. Existing linked Copper substitutes migrate to
+basic Machine Cores. Place one adapter controller against the center's rear core
+wall, add one Machine Core above, and right-click the controller. Right-clicking
+with a held core also places that core and assembles it in one action. An
+assembled upper section returns the original core tier when broken. The item
+and unassembled controller occupy one block; the core completes the upper section.
+Rear corner mounting follows the adjacent core's controller link.
+The two shaft inserts rotate with their individual Create inputs; the housing
+stays still.
 The two rear shaft sockets must both be driven in the same direction; equal RPM
 is unnecessary. Each input applies eight stress units per RPM. Charging is
 32 RF per tick per RPM of the slower input, without a minimum speed threshold.

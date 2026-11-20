@@ -3,8 +3,11 @@ package io.github.bertie_mc.bertieprogression.cybernetics;
 import com.mojang.serialization.MapCodec;
 import com.simibubi.create.content.kinetics.base.KineticBlock;
 import com.simibubi.create.foundation.block.IBE;
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -14,6 +17,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import rearth.oritech.block.base.block.MultiblockMachine;
 
 public final class MechanicalAdapterBlock extends KineticBlock implements IBE<MechanicalAdapterBlockEntity> {
@@ -59,7 +64,15 @@ public final class MechanicalAdapterBlock extends KineticBlock implements IBE<Me
         if (level.isClientSide || !level.getBlockState(other).is(this)) return;
         if (state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.LOWER)
             level.destroyBlock(other, true);
-        else level.setBlockAndUpdate(other, level.getBlockState(other).setValue(MultiblockMachine.ASSEMBLED, false));
+        else {
+            level.setBlockAndUpdate(other, level.getBlockState(other).setValue(MultiblockMachine.ASSEMBLED, false));
+            if (level.getBlockEntity(other) instanceof MechanicalAdapterBlockEntity entity) {
+                entity.detachKinetics();
+                entity.removeSource();
+                entity.setSpeed(0);
+                entity.sendData();
+            }
+        }
     }
 
     @Override
@@ -71,6 +84,15 @@ public final class MechanicalAdapterBlock extends KineticBlock implements IBE<Me
     @Override
     public Direction.Axis getRotationAxis(BlockState state) {
         return state.getValue(BlockStateProperties.HORIZONTAL_FACING).getAxis();
+    }
+
+    @Override
+    protected List<ItemStack> getDrops(BlockState state, LootParams.Builder params) {
+        if (state.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.UPPER
+                && params.getOptionalParameter(LootContextParams.BLOCK_ENTITY)
+                        instanceof MechanicalAdapterBlockEntity entity)
+            return List.of(new ItemStack(BuiltInRegistries.ITEM.get(entity.assemblyCore())));
+        return super.getDrops(state, params);
     }
 
     @Override

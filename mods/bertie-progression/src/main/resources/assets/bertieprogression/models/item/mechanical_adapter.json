@@ -1,5 +1,5 @@
 {
-  "parent": "bertieprogression:block/mechanical_adapter_full",
+  "parent": "bertieprogression:block/mechanical_adapter_lower",
   "display": {
     "gui": {
       "rotation": [
@@ -9,13 +9,13 @@
       ],
       "translation": [
         0,
-        -4,
+        0,
         0
       ],
       "scale": [
-        0.42,
-        0.42,
-        0.42
+        0.625,
+        0.625,
+        0.625
       ]
     },
     "firstperson_righthand": {

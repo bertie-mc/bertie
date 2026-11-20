@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.56.0
+
+- Restore native Machine Core assembly for the Augmentation Center and migrate
+  existing Copper-based core parts.
+- Assemble one Mechanical Adapter controller with one Machine Core; retain the
+  core tier on dismantling and use a one-block controller item model.
+- Charge through linked rear corner cores, connect shafts already running when
+  assembly completes, and expose the rotating shaft inserts.
+
 ## 0.55.1
 
 - Remove the obsolete Pocket Dimension H-forge ritual that prevented world loading

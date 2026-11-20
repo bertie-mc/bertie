@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import rearth.oritech.block.blocks.processing.MachineCoreBlock;
 import rearth.oritech.block.entity.MachineCoreEntity;
 
-/** Copper construction parts follow the linked-core lifecycle while assembled. */
+/** Legacy casing substitutes remain loadable and retire to native Machine Cores. */
 public final class CopperCoreBlock extends MachineCoreBlock {
     public CopperCoreBlock(Properties properties) {
         super(properties, 1);
@@ -36,7 +36,7 @@ public final class CopperCoreBlock extends MachineCoreBlock {
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (!state.getValue(USED))
-            level.setBlockAndUpdate(pos, CopperAugmentation.casing().defaultBlockState());
+            level.setBlockAndUpdate(pos, AugmentationCores.basic().defaultBlockState());
     }
 
     public static final class CoreEntity extends MachineCoreEntity {

@@ -24,6 +24,40 @@ import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 @GameTestHolder("bertieprogression")
 @PrefixGameTestTemplate(false)
 public final class MineralFountainGameTests {
+    @GameTest(template = "empty", batch = "mineral_fountain")
+    public static void storageBlocksBoostSpecialResultsThroughNativeTick(GameTestHelper helper) throws Exception {
+        var level = helper.getLevel();
+        var fountain = BuiltInRegistries.BLOCK.get(ResourceLocation.parse("anvilcraft:mineral_fountain"));
+        for (boolean core : new boolean[] {true, false}) {
+            var pos = helper.absolutePos(new BlockPos(core ? 2 : 8, 2, 2)).atY(level.getMinBuildHeight() + 1);
+            level.setBlockAndUpdate(pos, fountain.defaultBlockState());
+            String material = core ? "earth_core_shard_block" : "void_matter_block";
+            for (var direction : net.minecraft.core.Direction.Plane.HORIZONTAL)
+                level.setBlockAndUpdate(
+                        pos.relative(direction),
+                        MineralFountainRules.block(ResourceLocation.parse("anvilcraft:" + material)));
+            level.setBlockAndUpdate(pos.above(), Blocks.DEEPSLATE.defaultBlockState());
+            long seed = 0;
+            while (true) {
+                var random = net.minecraft.util.RandomSource.create(seed);
+                double first = random.nextDouble(), second = random.nextDouble();
+                if (core ? first > .01 && first < .13 : first > .01 && second > .01 && second < .13) break;
+                seed++;
+            }
+            level.random.setSeed(seed);
+            var entity = level.getBlockEntity(pos);
+            entity.getClass().getMethod("resetTickCount").invoke(entity);
+            var tick = entity.getClass().getMethod("tick");
+            for (int i = 0; i < 20; i++) tick.invoke(entity);
+            var expected = MineralFountainRules.block(
+                    ResourceLocation.parse("anvilcraft:" + (core ? "earth_core_shard_ore" : "void_stone")));
+            helper.assertTrue(
+                    level.getBlockState(pos.above()).is(expected.getBlock()),
+                    "Native tick missed " + material + " booster; result=" + level.getBlockState(pos.above()));
+        }
+        helper.succeed();
+    }
+
     @GameTest(template = "empty", batch = "mineral_fountain", timeoutTicks = 100)
     public static void nativeFountainDefaultsToSturdyWithoutBoosters(GameTestHelper helper) throws Exception {
         var level = helper.getLevel();
