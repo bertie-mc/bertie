@@ -62,6 +62,8 @@ def apply(module):
         p=res/path;data=json.loads(p.read_text());data['variants']={k.replace(',assembled=',',machine_assembled='):v for k,v in data['variants'].items()};write(path,data)
     old_loot=res/'data/bertieprogression/loot_table/blocks/pocket_dimension.json'
     if old_loot.exists():old_loot.unlink()
+    old_ritual=res/'data/bertieprogression/forbidden_arcanus/hephaestus_forge/ritual/pocket_dimension.json'
+    if old_ritual.exists():old_ritual.unlink()
     for base in ['models/item','models/block','blockstates','textures/item','textures/block']:
         for name in ['pocket_dimension','pocket_watch']:
             for p in (res/'assets/bertieprogression'/base).glob(name+'.*'):

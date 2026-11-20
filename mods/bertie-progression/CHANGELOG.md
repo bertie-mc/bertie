@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.55.1
+
+- Remove the obsolete Pocket Dimension H-forge ritual that prevented world loading
+  after its result item was retired.
+
 ## 0.55.0
 
 - Replace Pocket Dimension and Pocket Watch travel with C3's Unbound lunar/station

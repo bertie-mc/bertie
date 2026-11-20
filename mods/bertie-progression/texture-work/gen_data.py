@@ -3531,15 +3531,6 @@ write("data/minecraft/recipe/workbench/alchemy_bench.json",
               "T": "born_in_chaos_v1:transformative_flower"},
              "chipped:alchemy_bench"))
 
-# --- The Pocket Dimension block is the whole Tier-II forge around a Void Eye. ---
-write(f"{RIT}/pocket_dimension.json",
-      ritual("l2complements:void_eye",
-             [("malum:void_salts", 2), ("berlordscarving:echo_big_slate", 2),
-              ("arcaneessenceblock:arcane_essence_block", 2),
-              ("enigmaticlegacyplus:astral_dust", 2)],
-             "bertieprogression:pocket_dimension", 1, tier=2,
-             essences={"aureal": 1000, "blood": 10000, "souls": 10}, xp=1000))
-
 # ================================================================ ARMOUR PROGRESSION
 # Miner armour is assembled around the matching iron piece on Mechanical Crafters.
 _MINER_PATTERNS = {

@@ -27,6 +27,37 @@ class ResourceDataTest {
     }
 
     @Test
+    void forgeRegistriesDoNotReferenceRetiredOwnedItems() throws IOException {
+        Set<String> retired = new HashSet<>();
+        JsonParser.parseString(Files.readString(RESOURCES.resolve("removed_items.json")))
+                .getAsJsonArray()
+                .forEach(value -> {
+                    if (value.getAsString().startsWith("bertieprogression:")) retired.add(value.getAsString());
+                });
+        try (var paths = Files.walk(RESOURCES.resolve("data"))) {
+            for (var path : paths.filter(p -> p.toString().replace('\\', '/').contains("/hephaestus_forge/ritual/")
+                            && p.toString().endsWith(".json"))
+                    .toList()) {
+                Set<String> references = new HashSet<>();
+                itemReferences(JsonParser.parseString(Files.readString(path)), references);
+                references.retainAll(retired);
+                assertTrue(references.isEmpty(), path + " references retired items: " + references);
+            }
+        }
+    }
+
+    private static void itemReferences(JsonElement value, Set<String> references) {
+        if (value.isJsonArray()) value.getAsJsonArray().forEach(element -> itemReferences(element, references));
+        if (!value.isJsonObject()) return;
+        for (var field : value.getAsJsonObject().entrySet()) {
+            if ((field.getKey().equals("item") || field.getKey().equals("id"))
+                    && field.getValue().isJsonPrimitive())
+                references.add(field.getValue().getAsString());
+            else itemReferences(field.getValue(), references);
+        }
+    }
+
+    @Test
     void withdrawnPastelOreDoesNotGenerateAndSelectedResourcesDropAgain() throws IOException {
         JsonObject feature = data("data/pastel/worldgen/configured_feature/shimmerstone_ore.json");
         assertEquals("minecraft:no_op", feature.get("type").getAsString());
